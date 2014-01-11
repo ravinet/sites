@@ -1,0 +1,24 @@
+»HTTPS157.56.232.182"ä
+GET /owa/ HTTP/1.1
+Host: www.outlook.com
+Connection: keep-alive
+TAccept: text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8
+vUser-Agent: Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/31.0.1650.63 Safari/537.36
+$Accept-Encoding: gzip,deflate,sdch
+!Accept-Language: en-US,en;q=0.8
+
+*å
+HTTP/1.1 302 Found
+(Content-Type: text/html; charset=utf-8
+ÙLocation: https://login.live.com/login.srf?wa=wsignin1.0&ct=1389313694&rver=6.1.6206.0&sa=1&ntprob=-1&wp=MBI_SSL_SHARED&wreply=https:%2F%2Fmail.live.com%2F%3Fowa%3D1%26owasuffix%3Dowa%252f&id=64855&snsc=1&cbcxt=mail
+WSet-Cookie: OutlookSession=c9da4d53791b493eb01a90454650290f; path=/; secure; HttpOnly
+kSet-Cookie: exchangecookie=05fb2eaf14634ddbb0515af05ade2436; domain=outlook.com; path=/; secure; HttpOnly
+X-Powered-By: ASP.NET
+X-DiagInfo: BLUPRD0910CA013
+ X-UA-Compatible: IE=EmulateIE7
+%Date: Fri, 10 Jan 2014 00:28:13 GMT
+Content-Length: 358
+è
+<html><head><title>Object moved</title></head><body>
+<h2>Object moved to <a href="https://login.live.com/login.srf?wa=wsignin1.0&amp;ct=1389313694&amp;rver=6.1.6206.0&amp;sa=1&amp;ntprob=-1&amp;wp=MBI_SSL_SHARED&amp;wreply=https:%2F%2Fmail.live.com%2F%3Fowa%3D1%26owasuffix%3Dowa%252f&amp;id=64855&amp;snsc=1&amp;cbcxt=mail">here</a>.</h2>
+</body></html>

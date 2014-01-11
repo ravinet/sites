@@ -1,0 +1,22 @@
+»HTTPS66.117.23.101"Ÿ
+“GET /m2/usbank/mbox/standard?mboxHost=www.usbank.com&mboxSession=1389228644787-843222&mboxPage=1389228644787-843222&screenHeight=1200&screenWidth=1920&browserWidth=937&browserHeight=1051&browserTimeOffset=-300&colorDepth=24&mboxXDomain=enabled&mboxCount=2&mbox=usbank_Homepage_Hero&mboxId=0&mboxTime=1389210645076&mboxURL=https%3A%2F%2Fwww.usbank.com%2Findex.html&mboxReferrer=&mboxVersion=43 HTTP/1.1
+Host: usbank.tt.omtrdc.net
+Connection: keep-alive
+Accept: */*
+vUser-Agent: Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/31.0.1650.63 Safari/537.36
+,Referer: https://www.usbank.com/index.html
+$Accept-Encoding: gzip,deflate,sdch
+!Accept-Language: en-US,en;q=0.8
+MCookie: mboxSession=1389228644787-843222; mboxPC=1389228644787-843222.25_47
+
+*÷
+HTTP/1.1 200 OK
+pragma: no-cache
+$P3P: CP="NOI DSP CURa OUR STP COM"
+„Set-Cookie: mboxPC=1389228644787-843222.25_47; Domain=usbank.tt.omtrdc.net; Expires=Wed, 09-Apr-2014 00:50:32 GMT; Path=/m2/usbank
+2Content-Type: text/javascript;charset=ISO-8859-1
+Content-Length: 2322
+%Date: Thu, 09 Jan 2014 00:50:32 GMT
+Server: Test & Target
+”
+var mboxCurrent=mboxFactories.get('default').get('usbank_Homepage_Hero',0);mboxCurrent.setEventTime('include.start');document.write('<div style="visibility: hidden; display: none" id="mboxImported-default-usbank_Homepage_Hero-0">');document.write('<!-- Offer Id: 216580  --><script type=\"text\/javascript\">\r\n\/***********************************\r\n** DO NOT CHANGE THIS CODE - V1.0 -\r\n** Campaign Name: PRJ 9795 HP Tgt Banner Cam1 Prospects (Live Prod  12/10/2013)\r\n** Recipe Name: NonMob-V1 \r\n** Campaign ID: 52647\r\n** Recipe Name: NonMob-V1 \r\n** Recipe ID: 18\r\n** Mbox PCID: 1389228644787-843222.25_47\r\n** twogroups_of_traffic: GroupA\r\n** MAD_Combined_Product_Code_Combination: \r\n************************************\r\n*\/\r\n<\/script>\r\n\r\n<script  type=\"text\/javascript\" language=\"javascript\">\r\ndocument.write(\"<div class=\'marginTop-OneGutter rounded\' id=\'homeFeature\'><div id=\'homeFeatureBack\'><ul id=\'homeFeatureList\'><li id=\'listItem0\' style=\'display: list-item; background: url(https:\/\/www.usbank.com\/homepage_images\/1213-HP-Area1-Checking.jpg); width:751px;\' alt=\'Easy Checking has the tools you need to manage your money.\' title=\'Easy Checking has the tools you need to manage your money.\'><div class=\'transbox\' style=\'width:375px;height:220px;margin:20px 20px;background-color:white; opacity:0.6;  filter:alpha(opacity=60);\'><\/div><div class=\'bannerBtnBlue IE6minwidth150px floatLeft rounded\' style=\'top:170px;\'><div><a class=\'\' title=\'Open an Account\' href=\'\/redirectcentral.cfm?redirectid=10968\' >Open an Account<\/a><\/div><\/div><div style=\'position: absolute; top: 30px; left: 40px; width: 320px; font:31px Arial,Helvetica,sans-serif; color: #000099\'>Easy Checking has the tools you need to manage your money.<\/div><\/li><\/ul><\/div><\/div>\");\r\n<\/script>\r\n');document.write('<!-- Offer Id: 106877  --><script type=\"text\/javascript\">\r\n\/*TT>SC | v3 ==> Response Plug-ins*\/\r\nwindow.s_tnt=window.s_tnt||\'\',tntVal=\'52647:18:0,\';\r\nif(window.s_tnt.indexOf(tntVal)==-1){window.s_tnt+=tntVal}\r\n<\/script>');document.write('</div>');mboxCurrent.setEventTime('include.end');mboxFactories.get('default').get('usbank_Homepage_Hero',0).loaded();mboxFactories.get('default').getPCId().forceId("1389228644787-843222.25_47");

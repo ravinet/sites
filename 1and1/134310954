@@ -1,0 +1,22 @@
+PHTTP23.209.50.59"Þ
+GET / HTTP/1.1
+Host: www.1and1.com
+Connection: keep-alive
+TAccept: text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8
+vUser-Agent: Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/31.0.1650.63 Safari/537.36
+$Accept-Encoding: gzip,deflate,sdch
+!Accept-Language: en-US,en;q=0.8
+
+*Ù
+ HTTP/1.1 302 Moved Temporarily
+Server: Apache
+(Expires: Mon, 26 Jul 1997 05:00:00 GMT
+Pragma: no-cache
+=Cache-Control: no-cache, no-store, private, must-revalidate
+XLocation: http://www.1and1.com/;jsessionid=A45DE4DDF8EADF89C5BB42678EEB040D.TCpfix243a
+Content-Length: 0
+Content-Type: text/plain
+%Date: Thu, 09 Jan 2014 13:43:22 GMT
+Connection: keep-alive
+VSet-Cookie: JSESSIONID=A45DE4DDF8EADF89C5BB42678EEB040D.TCpfix243a; Path=/; HttpOnly
+

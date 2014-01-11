@@ -1,0 +1,44 @@
+PHTTP23.209.35.235"È
+>GET /comcast/display/xml/ned/NED_Q1_PIIP_728x90.xml HTTP/1.1
+Host: cimage.adobe.com
+Connection: keep-alive
+vUser-Agent: Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/31.0.1650.63 Safari/537.36
+Accept: */*
+$Accept-Encoding: gzip,deflate,sdch
+!Accept-Language: en-US,en;q=0.8
+
+*ç
+HTTP/1.1 200 OK
+Server: Apache
+5ETag: "7274b53e0147dee742868001098b77ed:1388683340"
+.Last-Modified: Thu, 02 Jan 2014 17:22:20 GMT
+Accept-Ranges: bytes
+Content-Length: 1348
+Content-Type: application/xml
+%Date: Thu, 09 Jan 2014 13:48:59 GMT
+Connection: keep-alive
+Æ
+
+<?xml version="1.0" encoding="utf-8" ?>
+<banner-list>
+
+
+	<banner type="child" percent="25">
+		<creative_name>1386801021571_PINA</creative_name> <!-- communicated back to TnT (used to describe which creative was shown) -->
+		<swf>http://cimage.adobe.com/comcast/display/childswfs/1386801021571_COSD399_PerformanceInternet_$29.99x12_NTC_|SIZE|.swf</swf>
+		<landingpage>http://www.comcast.com/internet-service.html?dfaid=4053494&cmp=0&cid=4053494</landingpage>		
+	</banner>
+
+	<banner type="child" percent="50">
+		<creative_name>1382451127421_WIN49</creative_name> <!-- communicated back to TnT (used to describe which creative was shown) -->
+		<swf>http://cimage.adobe.com/comcast/display/childswfs/1382451127421_COSD351_Q4OctoberInternetPlus_Whiplash_49.99x12_|SIZE|.swf</swf>
+		<landingpage>http://www.comcast.com/shop/xfinity-internetplus-ned-nn?dfaid=4053494&cmp=0&cid=4053494</landingpage>		
+	</banner>
+
+		<banner type="child" percent="25">
+		<creative_name>1386801021571_PINB</creative_name> <!-- communicated back to TnT (used to describe which creative was shown) -->
+		<swf>http://cimage.adobe.com/comcast/display/childswfs/1386801021571_COSD399_PerformanceInternet_$29.99x12_NTC_|SIZE|.swf</swf>
+		<landingpage>http://www.comcast.com/shop/xfinity-internetplus-ned-nn?dfaid=4053494&cmp=0&cid=4053494</landingpage>		
+	</banner>
+
+</banner-list>

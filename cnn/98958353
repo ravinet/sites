@@ -1,0 +1,38 @@
+PHTTP157.166.249.204"˜
+
+POST /api/hello HTTP/1.1
+Host: aspen.turner.com
+Connection: keep-alive
+Content-Length: 649
+!Origin: http://z.cdn.turner.com
+vUser-Agent: Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/31.0.1650.63 Safari/537.36
+1Content-Type: application/x-www-form-urlencoded
+Accept: */*
+úReferer: http://z.cdn.turner.com/xslo/cvp/core/base/0/CVPBase.swf?cvpSessionToken=KFQ5PGRQGLteUdpogUuzp4aJp&cbb=845&containerVersion=Container%20v2.0.4.0&profile=desktop&context=tve_prev&domId=cvp_nowPlayingThumbnail&site=cnn&isEmbedContainer=false
+$Accept-Encoding: gzip,deflate,sdch
+!Accept-Language: en-US,en;q=0.8
+‹
+aspenJson=%257B%2522clientThrottled%2522%253Afalse%252C%2522applicationName%2522%253A%2522CVP%2522%252C%2522profile%2522%253A%2522desktop%2522%252C%2522context%2522%253A%2522tve%5Fprev%2522%252C%2522debug%2522%253A%2522false%2522%252C%2522clientThrottle%2522%253A0%252C%2522applicationVersion%2522%253A%25222%2E3%2E6%2E1%2522%252C%2522sessionToken%2522%253A%2522KFQ5PGRQGLteUdpogUuzp4aJp%2522%252C%2522propertyName%2522%253A%2522cnn%5Fpreview%2522%252C%2522platformName%2522%253A%2522flash%2522%252C%2522pageUrl%2522%253A%2522http%253A%2F%2Fwww%2Ecnn%2Ecom%2F%2522%252C%2522protocol%2522%253A%25221%2E0%2522%252C%2522site%2522%253A%2522cnn%2522%257D*å
+HTTP/1.1 200 OK
+%Date: Thu, 09 Jan 2014 00:19:05 GMT
+Server: Apache
+ÜSet-Cookie: aspen_id_KFQ5PGRQGLteUdpogUuzp4aJp_CVP=e6376b7fe9df48b5733aa3102ebb163486d08765|YLHZCS|cnn_preview|yes|50.0|2|87d7e4037a; Domain=aspen.turner.com; expires=Thu, 09-Jan-2014 00:49:05 GMT; Max-Age=1800; Path=/
+ Access-Control-Allow-Origin: *
+0Access-Control-Allow-Methods: GET,POST,OPTIONS
+Connection: close
+Transfer-Encoding: chunked
+ Content-Type: application/json
+Ž
+100
+{ 
+    "throttled" : "yes",
+    "servername" : "aspen.turner.com",
+    "sessionId" : "e6376b7fe9df48b5733aa3102ebb163486d08765",
+    "shortId" : "YLHZCS",
+    "aspenUUID" : "cc2364f5c987ebf85fe50716d811137b45afc799",
+    
+    "timestamp" : 1389226745580
+}
+
+0
+

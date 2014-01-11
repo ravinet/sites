@@ -1,0 +1,30 @@
+PHTTP
+18.7.20.69"Ñ	
+9GET /databox/choices.aspx?tQSZip=02139&type=js HTTP/1.1
+Host: www.nbcnews.com
+Connection: keep-alive
+vUser-Agent: Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/31.0.1650.63 Safari/537.36
+Accept: */*
+"Referer: http://www.nbcnews.com/
+$Accept-Encoding: gzip,deflate,sdch
+!Accept-Language: en-US,en;q=0.8
+èCookie: TZM=-300; optimizelySegments=%7B%22257578318%22%3A%22direct%22%2C%22257578319%22%3A%22gc%22%2C%22257599190%22%3A%22none%22%2C%22257609154%22%3A%22false%22%2C%22258284570%22%3A%22none%22%2C%22258355326%22%3A%22gc%22%2C%22258358316%22%3A%22false%22%2C%22258766453%22%3A%22direct%22%7D; optimizelyEndUserId=oeu1389365756334r0.33341990667395294; optimizelyBuckets=%7B%7D; optimizelyPendingLogEvents=%5B%5D; AUTOREFRESH=Fri%20Jan%2010%202014%2009%3A55%3A56%20GMT-0500%20%28EST%29; s_cc=true; snbc_nr=1389365756667-New; s_sq=%5B%5BB%5D%5D; Q1=02139,cambridge,ma,united states,us; p1Mark=1; __utma=14933801.744160670.1389365757.1389365757.1389365757.1; __utmb=14933801.1.10.1389365757; __utmc=14933801; __utmz=14933801.1389365757.1.1.utmcsr=(direct)|utmccn=(direct)|utmcmd=(none); _cb_ls=1; _chartbeat2=sc158cgy80ozxoxa.1389365756734.1389365756734.1; _chartbeat_uuniq=1
+
+*…
+HTTP/1.1 200 OK
+Content-Length: 22
+.Content-Type: text/javascript; charset=utf-8
+Server: Microsoft-IIS/7.5
+X-AspNet-Version: 2.0.50727
+X-Powered-By: ASP.NET
+ Access-Control-Allow-Origin: *
+(Expires: Fri, 10 Jan 2014 14:55:43 GMT
+.Cache-Control: max-age=0, no-cache, no-store
+Pragma: no-cache
+%Date: Fri, 10 Jan 2014 14:55:43 GMT
+Connection: keep-alive
+Vary: Accept-Encoding
+^Set-Cookie: P2=pi6=02139; domain=.nbcnews.com; expires=Tue, 01-Jan-2030 07:59:59 GMT; path=/
+qSet-Cookie: P1=01||,USMA0066|1||WHDH|||||||; domain=.nbcnews.com; expires=Tue, 01-Jan-2030 07:59:59 GMT; path=/
+
+//set P1 and P2 cookie

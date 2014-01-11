@@ -1,0 +1,25 @@
+PHTTP75.101.154.100"Ù
+pGET /v3/profile.json?callback=TR.load_bizo_callback&api_key=ae81641f8a5b482387ed9712f49b1ca7&3pc=true HTTP/1.1
+Host: api.bizographics.com
+Connection: keep-alive
+Accept: */*
+vUser-Agent: Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/31.0.1650.63 Safari/537.36
+"Referer: http://www.reuters.com/
+$Accept-Encoding: gzip,deflate,sdch
+!Accept-Language: en-US,en;q=0.8
+5Cookie: BizoID=620aa193-c856-4a9e-aa94-3a929b463441
+
+*«
+HTTP/1.1 200 OK
+Cache-Control: no-cache
+ Content-Type: application/json
+%Date: Thu, 09 Jan 2014 00:54:48 GMT
+ZP3P: CP="NON DSP COR CURa ADMo DEVo TAIo PSAo PSDo OUR DELa IND PHY ONL UNI COM NAV DEM"
+Pragma: no-cache
+Server: nginx/1.2.0
+tSet-Cookie: BizoID=620aa193-c856-4a9e-aa94-3a929b463441;Version=0;Domain=.bizographics.com;Path=/;Max-Age=15768000
+çSet-Cookie: BizoData=vipSsUXrfhMAyjSpNgk6T39Qb1MaQBj6W6YbfnhxTis3wqwKPXXDYVmlO9z4XipLmXyedw8IKTXnKSdkf8kozH7KU71isvRbeT6Faj5XcunNcMDa7Re6IGD4lIpne3XXaipQpAd6xyMUDLG5gCh8GmE4wmnnS9ty8xAR0zwQvdHhisgnnwCNICmFKGa6pvfuPrL6gLlop56fA3rHo818ishVohR4NUDvg7btd9Qklv3wQQEmtTnlASvCO9GNE7Da5rXnVeis7qVakHis6aisWrFZOkris1vdQgMUG5quE7j1H2AUlegZZd5ip8Siir5N08Sj4bIddpEGisTfkPzrOvT6G6WiiLdTV8CC4TNipYkdAfcKDTxUXYJQ2LhGX8gIBDAwl0ouPDfgA2Yna3zMsUrkIKQKYisziisisUFQQFsDSqDpxImip8jiiGIspsasYk4rwmb6LAXLDnHii2Cip8QsPMip8WtDDSUrkHb2iiJ7HeWfeGJhipkI3X1gYWgt9k4kSXGp1Iml50ZVMY5XJMzMw5Ol6klR2DC6HtGlNAKmCtbk08lhrXsbsdaDVMxCDodcVm5bwkhvKCxWjuipmdSXGPWHM9vm08xeXIGK2RSvdeUD9xDLOUrETKPqnpBiiyipBisnWb0NrpeKvDEFXGnScisvtbevDPSvXnqpROjE5cmLaumWulAJAT7BX2H8NtaPJbawNLDCe4W2moTMCzii0Bd6WsuqcZQ6sVD2XeDdsnRGwuisv9ii5X8bT4qujjE8RJQR7rm3R4UaMHFipcKz0lXg8MBAcYvQJipLd4ekU1f7MrQxrTtB1Wxn268X1nippoPA1pmisDyii1OiijTzGXiibocZuUhU5yDVfhENLtIz9jZDipxJ2jUNr57SnKJk1kIdBkUTGQ0rsdS0WngHh2VamB2MVPDQO2ipbpAPyXdljTHnfwNqA3iiyIPVpoKbNKIlAryXKRAy7f3qdyRhmXC03is7ONkHiimipV4e0DCistQch1TtSdCipN6mK3CUii1P8SqYDuf5l6s2VHecswGOipuY4ZipqfSQO0C8HtYnNIX2bHrX9I2TLip2iiA3ak57cFhz4031AV314PwAclHYUZ0TPWFhIVtHdyEBTbFa3K8N9diipUq8ovqS7yOlipAKyLwtRy0TzCrlSrfxZMkXjY8SZIK7ZNdH3mvqAJIqgipisdqQYmf1qCisvjlCvmbMqiiCMxH8xii8GvQ96Pv9WsXKTiiyK5VUbFc11LZtgp3u6lWpBisipmv10IotBmMS9dXJZXKAa9DdLgeLHSyEVCqeE9isuWV5mI8umjFN643ORkXZWsIgY2nlF0cYubtiixuo1FnDJVcQboMp2RisySjMfspTvXip9Ft5PoVqPldy6c1wwNrtF7ogYPiiUiimd7dddr5CkB3rHIxQMsbmAKHwaYTjCaedL23LzEBHTPBC90eHipCeVH8XNipcUA3dpkjZVisFzv2WJiscreecN0znEQmGIWorbyXjxltGmoSEFYbWfXVCou50qhAoYARH3VyFBuCj9zavxisWoLipipOUKipZsyqIIzEfzGLwa9D3oipis1axcpOLIrlVRsVzXUtm2Cne7qVakHis6aisXQiiii0GYxL11cllcoBr0N0uB4sdLIRUKp7VUXIcDGcVfT0gisnlb0Z89;Version=0;Domain=.bizographics.com;Path=/;Max-Age=15768000
+Content-Length: 663
+Connection: keep-alive
+™
+TR.load_bizo_callback({"bizographics":{"company_size":{"code":"micro","name":"Micro (1-20)"},"group":[{"code":"business_professional","name":"Business Professional"},{"code":"small_business_professional","name":"Small Business Professional"},{"code":"tech_business_professional","name":"Tech Business Professional"}],"industry":[{"code":"cultural","name":"Cultural"},{"code":"education","name":"Education"},{"code":"education_colleges_universities","name":"Education Colleges & Universities","parent_code":"education"},{"code":"software","name":"Software"}],"location":{"code":"massachusetts","name":"USA - Massachusetts"}},"third_pc_accepted":"true","usage":1});

@@ -1,0 +1,68 @@
+PHTTP208.71.130.253"π
+#GET /j/always_include.js HTTP/1.1
+Host: www.liveleak.com
+Connection: keep-alive
+Accept: */*
+vUser-Agent: Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/31.0.1650.63 Safari/537.36
+#Referer: http://www.liveleak.com/
+$Accept-Encoding: gzip,deflate,sdch
+!Accept-Language: en-US,en;q=0.8
+eCookie: PHPSESSID=2f039ea5414b5c51781e0775e45d0f70; liveleak_safe_mode=1; liveleak_use_old_player=1
+
+*˘
+HTTP/1.1 200 OK
+Server: nginx/1.0.1
+%Date: Wed, 08 Jan 2014 16:50:32 GMT
+(Content-Type: application/x-javascript
+Content-Length: 1791
+.Last-Modified: Wed, 20 Feb 2013 15:04:04 GMT
+Connection: keep-alive
+Accept-Ranges: bytes
+Å
+function load_document_ready_functions()
+{ 
+  $(".top_user_menu_link").mouseover(function()
+  { 
+    $(this).css('background-color','#666'); 
+    $(this).css('cursor','pointer');
+  });
+
+  $(".top_user_menu_link").mouseout(function(){ $(this).css('background-color',''); });
+
+  $(".top_user_menu_link").click(function(e)
+  {
+    if(!$("#top_user_menu").is(':visible'))e.stopPropagation();
+    $('#top_user_menu').show('slow');
+  });
+
+  $(".user_popup_menu_link").click(function(e)
+  {
+    if(!$(this).parent().find(".user_popup_menu").is(':visible'))e.stopPropagation();
+    $(this).parent().find(".user_popup_menu").show('slow');
+  });
+} //end function load_document_ready_functions() { 
+
+
+$(document).click(function (e) {
+  $('#top_user_menu').hide('slow');
+  $(".user_popup_menu").hide('slow');
+});
+
+//async script loading to prevent a script on the cdn from stalling the rest of the page (in case cdn has issues)
+$(document).ready(function(){
+ $.getScript("http://edge.liveleak.com/80281E/u/u/ll2_j/jquery.prettyLoader.js", function(data, textStatus, jqxhr) {
+   $.prettyLoader();
+   $(document).ajaxComplete(function() { $.prettyLoader(); });
+ });
+ $.getScript("http://edge.liveleak.com/80281E/u/u/ll2_j/jquery.prettyPhoto.js", function(data, textStatus, jqxhr) {
+    $("a[rel^='prettyPhoto']").prettyPhoto({allow_resize: false});
+	$(document).ajaxComplete(function() { $("a[rel^='prettyPhoto']").prettyPhoto({allow_resize: false}); });
+ });
+ $.getScript("http://edge.liveleak.com/80281E/u/u/ll2_j/jquery.ba-bbq.min.js", function(data, textStatus, jqxhr) {
+	 if(typeof execute_bbq_code == 'function')execute_bbq_code();
+ });
+
+ load_document_ready_functions();
+});
+
+$(document).ajaxComplete(function() { load_document_ready_functions(); });

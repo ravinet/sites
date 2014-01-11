@@ -1,0 +1,23 @@
+PHTTP178.236.4.122"Ô
+GET /js/gatrack.js HTTP/1.1
+!Host: videosfr.s3.amazonaws.com
+Connection: keep-alive
+Accept: */*
+vUser-Agent: Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/31.0.1650.63 Safari/537.36
+"Referer: http://www.reuters.com/
+$Accept-Encoding: gzip,deflate,sdch
+!Accept-Language: en-US,en;q=0.8
+
+*ø
+HTTP/1.1 200 OK
+Nx-amz-id-2: CjBlX9OKTqMzC7B0LzJoS5qPzq3AMmuAy8X3JU/rHC21PcnGmxrYKI+H3hgvZOlF
+$x-amz-request-id: DDEE95F9F293BE61
+%Date: Thu, 09 Jan 2014 00:54:51 GMT
+.Last-Modified: Thu, 14 Nov 2013 23:25:52 GMT
+*ETag: "28f5836f75c2f8ee3c4f432a3ba3bb35"
+Accept-Ranges: bytes
+(Content-Type: application/octet-stream
+Content-Length: 634
+Server: AmazonS3
+ü
+var p = [];(function(_ttf){if(_ttf && _ttf.length){for(var i in _ttf){if(p === false || (_ttf[i].pid && (new RegExp(_ttf[i].pid, "g")).exec(p.join(',')) !== null)){(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)})(window,document,'script','//www.google-analytics.com/analytics.js','ga');setTimeout(function(){ga('create','UA-25386450-7',{'name':'teadsTracker'});ga('teadsTracker.send','event',_ttf[i].pid, 'call');},350);}}}})(window.parent._ttf);

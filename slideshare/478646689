@@ -1,0 +1,33 @@
+PHTTP174.36.28.11"û
+3GET /account/get_form_authenticity_token HTTP/1.1
+Host: www.slideshare.net
+Connection: keep-alive
+8Accept: application/json, text/javascript, */*; q=0.01
+"X-Requested-With: XMLHttpRequest
+vUser-Agent: Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/31.0.1650.63 Safari/537.36
+%Referer: http://www.slideshare.net/
+$Accept-Encoding: gzip,deflate,sdch
+!Accept-Language: en-US,en;q=0.8
+DCookie: SERVERID=r3|Us3xy|Us3xy; test=1; _smtLastVisitedHost=en-us
+
+*ð
+HTTP/1.1 200 OK
+Server: nginx
+/Content-Type: application/json; charset=utf-8
+Status: 200 OK
+#X-UA-Compatible: IE=Edge,chrome=1
+X-Frame-Options: SAMEORIGIN
+X-Runtime: 0.006523
+X-XSS-Protection: 0
+4X-Bench-Route: account/get_form_authenticity_token
+8P3P: CP="OTI DSP COR CUR ADM DEV PSD IVD CONo OUR IND"
+Dcache-control: no-cache, must-revalidate, private, must-revalidate
+Content-Length: 61
+Accept-Ranges: bytes
+%Date: Thu, 09 Jan 2014 00:48:06 GMT
+X-Varnish: 576453713
+Age: 0
+Via: 1.1 varnish
+Connection: close
+?
+{"auth_token":"8N15ZXpMxqNCyayyn4iQ8+tGUppdP58TzD15Zp0oTws="}

@@ -1,0 +1,23 @@
+PHTTP166.90.142.110"å
+8GET /tap.gif?tap=aiq&haid=7296752069020520979 HTTP/1.1
+Host: beacon.walmart.com
+Connection: keep-alive
+Accept: image/webp,*/*;q=0.8
+vUser-Agent: Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/31.0.1650.63 Safari/537.36
+"Referer: http://www.walmart.com/
+$Accept-Encoding: gzip,deflate,sdch
+!Accept-Language: en-US,en;q=0.8
+êCookie: SSOE=; SSLB=1; SSID=BgDNHB0qAAAAAAC6681Sv5ADDLrrzVIBAAAAAAAAAAAAuuvNUgCg-BcEAAHlYwAAuuvNUgEAnQQAAeZxAAC6681SAQCcBAAB4XEAALrrzVIBAA; SSSC=2.G5966684265633779903.1|1047.25573-1180.29153-1181.29158; com.wm.reflector="reflectorid:0000000000000000000000@lastupd:1389226938777@firstcreate:1389226938777"; RT=; _tap_path=/beacon.gif; s_pers=%20s_v%3DY%7C1389228752095%3B%20gpv_p11%3DHomepage%7C1389228752114%3B%20gpv_p44%3DHomepage%7C1389228752119%3B%20s_vs%3D1%7C1389228752123%3B; s_sess=%20ent%3DHomepage%3B%20cp%3DY%3B%20chan%3Dorg%3B%20v59%3DHomepage%3B%20v54%3DHomepage%3B%20cps%3D1%3B%20s_sq%3D%3B; SSRT=vOvNUgM; SSPV=VIQAAAAAAAMAAAAAAAAAAAAAAAEAAAAAAAA; s_vi=[CS]v1|2966F5DD850787CF-6000010260254B2A[CE]; __gads=ID=0bfd4eb290ab4159:T=1389226940:S=ALNI_MY9AWWm5T0sKxyyrlNS_sbjeeSedg; _tap-triggit=1389226939633:1389226940859:1; _tap-rocketfuel=1389226940859:1389226941020:1; btc=PPZjVl0wiMJukAsPsR-9rE; bsc=PPZjVl0wiMJukAsPsR-9rE; b30msc=PPZjVl0wiMJukAsPsR-9rE; _tap-criteo=1389226941020:1389226941178:1; _tap-aiq=1389226941178:0:1
+
+*è
+HTTP/1.1 302 Found
+4Cache-Control: no-store, no-cache, must-revalidate
+USet-Cookie: btc=PPZjVl0wiMJukAsPsR-9rE;Path=/;Expires=Tue, 09-Jan-2024 12:22:21 GMT
+/Set-Cookie: bsc=PPZjVl0wiMJukAsPsR-9rE;Path=/
+XSet-Cookie: b30msc=PPZjVl0wiMJukAsPsR-9rE;Path=/;Expires=Thu, 09-Jan-2014 00:52:21 GMT
+aSet-Cookie: _tap-aiq=1389226941178:1389226941338:1;Path=/;Expires=Thu, 23-Jan-2014 00:22:21 GMT
+XSet-Cookie: _tap-wmt-dw=1389226941338:0:1;Path=/;Expires=Thu, 23-Jan-2014 00:22:21 GMT
+(Expires: Thu, 01 Jan 1970 00:00:00 GMT
+_Location: http://dw.wmt.co/tap.gif?tap=wmt-dw&r=beacon.walmart.com&btc=PPZjVl0wiMJukAsPsR-9rE
+Content-Length: 0
+

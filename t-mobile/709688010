@@ -1,0 +1,28 @@
+PHTTP74.201.20.84"Ó
+]GET /tagserver/address/resolveIpToHostName?_rand=5n6mxqi0&ip=71.241.253.228&rid=r2 HTTP/1.1
+Host: tmobile-us.inq.com
+Connection: keep-alive
+Accept: */*
+vUser-Agent: Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/31.0.1650.63 Safari/537.36
+6Referer: http://www.t-mobile.com/inqChat.html?IFRAME
+$Accept-Encoding: gzip,deflate,sdch
+!Accept-Language: en-US,en;q=0.8
+0Cookie: pc=1; JSESSIONID=aaaImRRicREJMbYs-G0nu
+
+*’
+HTTP/1.1 200 OK
+Server: TouchCommerce Server
+rP3P: policyref="http://tmobile-us.inq.com/w3c/p3p.xml", CP="NON DSP LAW CUR ADMi TAIi PSAi PSD TELi OUR SAMi IND
+Content-Language: en-US
+.Content-Type: text/javascript; charset=UTF-8
+Content-Length: 221
+%Date: Thu, 09 Jan 2014 01:00:41 GMT
+ß
+
+try {
+	Inq.log("*** Callback: ");
+	Inq.ROM.onRemoteCallback('r2','{"hostAddress":"71.241.253.228","hostName":"pool-71-241-253-228.washdc.fios.verizon.net"}');
+} catch(e) {
+	Inq.log("Remote callback failed."+e);
+}
+/*  */

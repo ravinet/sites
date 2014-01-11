@@ -1,0 +1,21 @@
+PHTTP64.74.101.75"ß
+²GET /services/viewer/federated_f9?&width=592&height=610&flashID=myExperience&bgcolor=%23FFFFFF&playerID=2336131886001&playerKey=AQ~~%2CAAAAAA0Xi_s~%2Cr1xMuE8k5Nypu01odzWAIN68_tQ7KLYE&lineupID=2238060643001&isVid=true&isUI=true&dynamicStreaming=true&autoStart=&debuggerID=&startTime=1389274743225 HTTP/1.1
+Host: c.brightcove.com
+Connection: keep-alive
+vUser-Agent: Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/31.0.1650.63 Safari/537.36
+Accept: */*
+ Referer: http://www.ew.com/ew/
+$Accept-Encoding: gzip,deflate,sdch
+!Accept-Language: en-US,en;q=0.8
+
+*–
+HTTP/1.1 302 Found
+X-BC-Client-IP: 128.30.76.55
+"X-BC-Connecting-IP: 128.30.76.55
+.Last-Modified: Mon, 30 Dec 2013 20:06:58 GMT
+*Cache-Control: must-revalidate,max-age=0
+‡Location: http://admin.brightcove.com/viewer/us20131230.1216/BrightcoveBootloader.swf?playerID=2336131886001&playerKey=AQ%7E%7E%2CAAAAAA0Xi_s%7E%2Cr1xMuE8k5Nypu01odzWAIN68_tQ7KLYE&purl=http%3A%2F%2Fwww.ew.com%2Few%2F&autoStart=&bgcolor=%23FFFFFF&debuggerID=&dynamicStreaming=true&flashID=myExperience&height=610&isUI=true&isVid=true&lineupID=2238060643001&startTime=1389274743225&width=592
+Content-Length: 0
+%Date: Thu, 09 Jan 2014 13:38:50 GMT
+Server: brightcove
+

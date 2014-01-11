@@ -1,0 +1,54 @@
+PHTTP176.32.100.36"¡
+ GET /js/amznUrchin.js HTTP/1.1
+Host: aws.amazon.com
+Connection: keep-alive
+Accept: */*
+vUser-Agent: Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/31.0.1650.63 Safari/537.36
+,Referer: http://aws.amazon.com/cloudfront/
+$Accept-Encoding: gzip,deflate,sdch
+!Accept-Language: en-US,en;q=0.8
+ÈCookie: x-wl-uid=1rJX21O2M8ShS7v+jXpD1SnsatfsJvOhycm9IyFb3OYaj2Rqt0PUrV2OEp6Zyv8UnZ6ibtZANqtY=; aws-ubid-main=178-2787844-0594645; aws-session-id-time=2082758401l; aws-session-id=175-2966859-6786824
+
+*Ç
+HTTP/1.1 200 OK
+%Date: Thu, 09 Jan 2014 21:18:32 GMT
+Server: Server
+X-Frame-Options: SAMEORIGIN
+Nx-amz-id-2: uau5rXfU4iSZ/ifUk+Od4rKYbozxLBjPDUV+JbzeTiXtx1YNGvH6wzL3LSKQDG9J
+$x-amz-request-id: F1363D5C185854E4
+.Last-Modified: Thu, 11 Aug 2011 23:47:02 GMT
+*ETag: "330b46565d38e3dc28d6b5307fd5afb8"
+Accept-Ranges: bytes
+(Content-Type: application/x-javascript
+Content-Length: 970
+"Cache-Control: max-age=0, public
+(Expires: Thu, 09 Jan 2014 21:18:32 GMT
+Vary: User-Agent
+Ì
+var protocol = ('https:' == document.location.protocol ? 'https://' : 'http://');
+(function() {
+    var head = document.getElementsByTagName('HEAD').item(0);
+    var utm = document.createElement('script'); 
+    utm.type = 'text/javascript'; 
+    if (utm.readyState){  // Exploder
+        utm.onreadystatechange = function(){
+            if (utm.readyState == "loaded" ||
+                    utm.readyState == "complete"){
+                utm.onreadystatechange = null;
+                amznUrchinTracker();
+            }
+        };
+    } else {  // Proper browsers
+        utm.onload = function(){ amznUrchinTracker();};
+    }
+
+    utm.src = protocol + 'd36cz9buwru1tt.cloudfront.net/urchin.js'; 
+    head.appendChild(utm);
+})();
+
+function amznUrchinTracker() {
+	_udn="amazon.com";
+    // we give the client the opportunity to override 'page' by setting var __amznUtmPage
+	var page = (typeof __amznUtmPage == 'undefined') ?  null : __amznUtmPage;
+	urchinTracker(page);
+}

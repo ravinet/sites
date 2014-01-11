@@ -1,0 +1,31 @@
+PHTTP216.239.120.45"Ž
+«GET /aws/rest/v2.0/apexTarget?lgnSts=0&regSys=2&regId=0&refUrl=&sId=175&ptId=0&onId=0&asId=0&cId=0&pId=0&nCat=&edId=&t=1389228208060&callback=parseArrowResponse HTTP/1.1
+Host: apex.cbssports.com
+Connection: keep-alive
+Accept: */*
+vUser-Agent: Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/31.0.1650.63 Safari/537.36
+$Referer: http://www.cbssports.com/
+$Accept-Encoding: gzip,deflate,sdch
+!Accept-Language: en-US,en;q=0.8
+.Cookie: last_access=1389228194; surround=a|4
+
+*ç
+HTTP/1.1 200 OK
+%Date: Thu, 09 Jan 2014 00:43:16 GMT
+Server: Apache-Coyote/1.1
+-Content-Type: text/javascript;charset=UTF-8
+uSet-Cookie: tempSessionId=Cg6hJ1LN8KSAHkw3N3c; Domain=.cbssports.com; Expires=Sun, 07-Jan-2024 00:43:16 GMT; Path=/
+iSet-Cookie: apexLat=1389228196173; Domain=.cbssports.com; Expires=Fri, 09-Jan-2015 00:43:16 GMT; Path=/
+]Set-Cookie: apexSpc=1; Domain=.cbssports.com; Expires=Sat, 08-Feb-2014 00:43:16 GMT; Path=/
+DSet-Cookie: JSESSIONID=99471BC95212AA38A17BAE02CA1947FF; Path=/aws
+hSet-Cookie: apexSampleHistory=""; Domain=.cbssports.com; Expires=Thu, 09-Jan-2014 01:13:16 GMT; Path=/
+!Keep-Alive: timeout=15, max=950
+Connection: Keep-Alive
+Transfer-Encoding: chunked
+’
+85
+// no offer available for user
+parseArrowResponse( {"XCLGFbrowser": "", "tempSessionId": "Cg6hJ1LN8KSAHkw3N3c","userBuckets": []} );
+
+0
+

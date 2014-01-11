@@ -1,0 +1,21 @@
+PHTTP123.125.114.101"—
+ƒGET /su?wd=&p=3&sid=4734_1432_4668_4261_4897_4760_4882_4678&cb=jQuery110209736284166574478_1389227691757&_=1389227691758 HTTP/1.1
+Host: suggestion.baidu.com
+Connection: keep-alive
+Accept: */*
+vUser-Agent: Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/31.0.1650.63 Safari/537.36
+ Referer: http://www.baidu.com/
+$Accept-Encoding: gzip,deflate,sdch
+!Accept-Language: en-US,en;q=0.8
+aCookie: BAIDUID=1F09956F710CC07F905D2CED44D3B5E5:FG=1; H_PS_PSSID=4787_1453_4261_4895_4759_4678
+
+*¢
+HTTP/1.1 200 OK
+%Date: Thu, 09 Jan 2014 00:34:40 GMT
+!Server: suggestion.baidu.zbb.df
+Content-Length: 63
+6Content-Type: baiduApp/json; v6.27.2.14; charset=gbk
+Cache-Control: private
+Connection: Keep-Alive
+A
+jQuery110209736284166574478_1389227691757({q:"",p:false,s:[]});

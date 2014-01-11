@@ -1,0 +1,26 @@
+PHTTP184.73.217.68"°
+×GET /event?a=211126830&d=2953003&y=false&s211128852=direct&s211134657=none&s211136666=gc&s211163064=false&n=http%3A%2F%2Fwww.pcmag.com%2F&u=oeu1389231500779r0.7215845899190754&wxhr=true&t=1389231500786&f= HTTP/1.1
+$Host: 211126830.log.optimizely.com
+Connection: keep-alive
+vUser-Agent: Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/31.0.1650.63 Safari/537.36
+Origin: http://www.pcmag.com
+Accept: */*
+ Referer: http://www.pcmag.com/
+$Accept-Encoding: gzip,deflate,sdch
+!Accept-Language: en-US,en;q=0.8
+
+*ú
+HTTP/1.1 200 OK
+(Access-Control-Allow-Credentials: true
+)Access-Control-Allow-Methods: POST, GET
+3Access-Control-Allow-Origin: http://www.pcmag.com
+ Content-Type: application/json
+%Date: Thu, 09 Jan 2014 01:38:08 GMT
+9P3P: CP="IDC DSP COR CURa ADMa OUR IND PHY ONL COM STA"
+Server: nginx/1.2.7
+ŠSet-Cookie: end_user_id=oeu1389231500779r0.7215845899190754; Domain=.211126830.log.optimizely.com; expires=Sun, 07 Jan 2024 01:38:08 GMT
+~Set-Cookie: fixed_external_211126830_end_user_id=; Domain=.optimizely.com; expires=Thu, 01 Jan 1970 00:00:00 GMT; Max-Age=-1
+Content-Length: 2
+Connection: keep-alive
+
+{}

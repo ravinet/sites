@@ -1,0 +1,35 @@
+PHTTP54.225.186.53"º
+%GET /js/trackconversion.js HTTP/1.1
+Host: api.adsymptotic.com
+Connection: keep-alive
+Accept: */*
+vUser-Agent: Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/31.0.1650.63 Safari/537.36
+…Referer: http://img-cdn.mediaplex.com/0/17638/universal.html?page_name=home&home_page=1&mpuid=6be61e73-7a12-11e3-8a2f-7d6a958d8edb;
+$Accept-Encoding: gzip,deflate,sdch
+!Accept-Language: en-US,en;q=0.8
+
+*ã
+HTTP/1.1 200 OK
+Accept-Ranges: bytes
+Cache-Control: max-age=10800
+(Content-Type: application/x-javascript
+%Date: Fri, 10 Jan 2014 16:15:27 GMT
+.Last-Modified: Mon, 06 Jan 2014 16:59:06 GMT
+ Server: Jetty(7.4.2.v20110526)
+Content-Length: 575
+Connection: keep-alive
+Á
+/*sample javascript to parse the data*/
+var drawbridge_img_tag = "<div style=\"display:inline;\" " +
+		"><img height=\"1\" width=\"1\" " +
+		"style=\"border-style:none;\" alt=\"\" " +
+		"src=\"" + location.protocol + "//api.adsymptotic.com/api/s/trackconversion?_pid="+drawbridge_partner_id
+		+ "&_psign=" + drawbridge_partner_sign + "&_aid=" + drawbridge_app_id + "&_lbl=" +
+		drawbridge_label + "&_rand=" + Math.random();
+
+if(window.drawbridge_it)
+  drawbridge_img_tag += "&_it=" + drawbridge_it;
+  
+drawbridge_img_tag += "\"/></div>";
+
+document.write(drawbridge_img_tag);

@@ -1,0 +1,26 @@
+PHTTP54.230.52.56"Þ
+.GET /javascripts/common/ix/forms.js HTTP/1.1
+Host: www.gr-cdn.com
+Connection: keep-alive
+Accept: */*
+vUser-Agent: Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/31.0.1650.63 Safari/537.36
+&Referer: http://www.getresponse.com/
+$Accept-Encoding: gzip,deflate,sdch
+!Accept-Language: en-US,en;q=0.8
+
+*¨	
+HTTP/1.1 200 OK
+(Content-Type: application/x-javascript
+Content-Length: 725
+Connection: keep-alive
+Server: nginx/0.7.67
+%Date: Wed, 10 Jul 2013 23:27:28 GMT
+.Last-Modified: Mon, 08 Aug 2011 09:14:54 GMT
+Cache-Control: public
+Accept-Ranges: bytes
+Age: 83074
+X-Cache: Hit from cloudfront
+GVia: 1.1 a536f7c9dbedc2b462a158901fcd8254.cloudfront.net (CloudFront)
+GX-Amz-Cf-Id: nIx27tuFUmBOY5KgzaFZGd4GIYP0FciwePOUT0TwvIf4W0aFH-Or-A==
+×
+(function(c,b){var a=IX.register;$(function(){var d=b.forms,o=d.length,e,n,g,l,h,f,q,m,k="",p=a.get("placeholder");if(!p){return}f=function(j){var i=j.target;j.preventDefault();if(!i.value){i.value=p[i.name]}else{b.getElementById(i.id+"Hidden").value=i.value}j.stopPropagation()};q=function(j){var i=j.target;if(p[i.name]===i.value){i.value=""}};m=function(t){var j=t.target.elements,s=j.length,r;for(r=0;r<s;r+=1){if(j[r].value===p[j[r].name]){j[r].value=""}}t.stopPropagation()};for(l=0;l<o;l+=1){e=d[l].elements;for(h=0,n=e.length;h<n;h+=1){g=e[h];k=p[g.name];if(!k){continue}$(g).bind("blur",f);$(g).bind("focus",q);if(g.value.length===0||g.value===k){g.value=k}k=""}$(d[l]).bind("submit",m)}})})(window,window.document);

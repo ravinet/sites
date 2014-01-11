@@ -1,0 +1,21 @@
+»HTTPS23.21.53.131" 
+cGET /v1.2/bus/fox-news/channel/new?callback=Backplane.finishInit&rnd=0.38128005038015544 HTTP/1.1
+'Host: backplane1.janrainbackplane.com
+Connection: keep-alive
+Accept: */*
+vUser-Agent: Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/31.0.1650.63 Safari/537.36
+"Referer: http://www.foxnews.com/
+$Accept-Encoding: gzip,deflate,sdch
+!Accept-Language: en-US,en;q=0.8
+
+*»
+HTTP/1.1 200 OK
+-Content-Type: text/javascript;charset=UTF-8
+%Date: Tue, 07 Jan 2014 18:56:44 GMT
+EC2-instance-id: i-eae60390
+Server: Apache-Coyote/1.1
+'X-BP-Instance: BP1-BP_2_0.2013.26_RC2
+Content-Length: 57
+Connection: keep-alive
+;
+Backplane.finishInit("2fcfab8073f67274d22289aac4760c0e");

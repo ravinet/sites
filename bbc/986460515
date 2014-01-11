@@ -1,0 +1,133 @@
+PHTTP
+8.18.45.81"ú
+ƒGET /content/0/18349/MSF_YearEnd_RightNow-GeneralSyria-Flash_DonateNow_728x90.js?mpck=adfarm.mediaplex.com%2Fad%2Fck%2F18349-186920-32866-1%3Fmpt%3D1586951090&mpt=1586951090&mpvc=http://adclick.g.doubleclick.net/aclk%253Fsa%253DL%2526ai%253DBhog-T-_NUs_9OofSlAeVn4HADPLim6xAAAAAEAEgADgAWILgnNFyYMmW7oiEpOwPggEXY2EtcHViLTI5MTcyOTM4Mjg1NzgzMDOyAQ13d3cuYmJjLmNvLnVrugEJZ2ZwX2ltYWdlyAEJ2gEVaHR0cDovL3d3dy5iYmMuY28udWsvmALWDcACAuACAOoCKjQ4MTcvYmJjY29tLmxpdmUuc2l0ZS53d3cvYmJjX2hvbWVwYWdlX2ludPgC-dEekAOkA5gD0AWoAwHgBAGgBhY%2526num%253D0%2526sig%253DAOD64_39FRtLYJ6PdIyEfBAKfjDdE9O67w%2526client%253Dca-pub-2917293828578303%2526adurl%253D HTTP/1.1
+Host: img.mediaplex.com
+Connection: keep-alive
+Accept: */*
+vUser-Agent: Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/31.0.1650.63 Safari/537.36
+ Referer: http://www.bbc.co.uk/
+$Accept-Encoding: gzip,deflate,sdch
+!Accept-Language: en-US,en;q=0.8
+GCookie: svid=471502110283932597; rts=1389227856233; mojo3=18349:32866
+
+*ê;
+HTTP/1.1 200 OK
+%Date: Thu, 09 Jan 2014 00:37:36 GMT
+Server: Apache
+.Last-Modified: Thu, 19 Dec 2013 00:30:00 GMT
+#ETag: "ac2f79-14ce-4edd8430bafdb"
+Accept-Ranges: bytes
+Content-Length: 7284
+ Access-Control-Allow-Origin: *
+(Access-Control-Allow-Credentials: true
+Keep-Alive: timeout=5
+Connection: Keep-Alive
+Content-Type: text/javascript
+ö8
+/* 
+ * Mediaplex Flash template, flash_new
+ * Maintained By: Christopher D. Robison (cdr@cdr2.com) and 
+ * Heath Matthew Kornblum (heathkornblum@gmail.com) 
+ * Last Modified: 10/30/2013 4:06 pm
+ *
+*/
+(function(){
+	var mojopro = window.location.protocol;
+	if (mojopro == "https:") {
+		mojopro = "https://secure.img-cdn.mediaplex.com/0/";
+	}	else  {
+		mojopro = "http://img-cdn.mediaplex.com/0/";
+  	};  
+	var mpvce = '<mpvce/>';
+	mpenhanced = "",
+	mpenhancedurl = "" || "http://www.mediaplex.com/ad-choices";
+	if (mpvce == 1) {
+		mpvclick = encodeURIComponent("http://adclick.g.doubleclick.net/aclk%3Fsa%3DL%26ai%3DBhog-T-_NUs_9OofSlAeVn4HADPLim6xAAAAAEAEgADgAWILgnNFyYMmW7oiEpOwPggEXY2EtcHViLTI5MTcyOTM4Mjg1NzgzMDOyAQ13d3cuYmJjLmNvLnVrugEJZ2ZwX2ltYWdlyAEJ2gEVaHR0cDovL3d3dy5iYmMuY28udWsvmALWDcACAuACAOoCKjQ4MTcvYmJjY29tLmxpdmUuc2l0ZS53d3cvYmJjX2hvbWVwYWdlX2ludPgC-dEekAOkA5gD0AWoAwHgBAGgBhY%26num%3D0%26sig%3DAOD64_39FRtLYJ6PdIyEfBAKfjDdE9O67w%26client%3Dca-pub-2917293828578303%26adurl%3D");
+		mpvc = mpvclick;
+	}
+	else if (mpvce == 2) {
+		mpvclick2 = encodeURIComponent("http://adclick.g.doubleclick.net/aclk%3Fsa%3DL%26ai%3DBhog-T-_NUs_9OofSlAeVn4HADPLim6xAAAAAEAEgADgAWILgnNFyYMmW7oiEpOwPggEXY2EtcHViLTI5MTcyOTM4Mjg1NzgzMDOyAQ13d3cuYmJjLmNvLnVrugEJZ2ZwX2ltYWdlyAEJ2gEVaHR0cDovL3d3dy5iYmMuY28udWsvmALWDcACAuACAOoCKjQ4MTcvYmJjY29tLmxpdmUuc2l0ZS53d3cvYmJjX2hvbWVwYWdlX2ludPgC-dEekAOkA5gD0AWoAwHgBAGgBhY%26num%3D0%26sig%3DAOD64_39FRtLYJ6PdIyEfBAKfjDdE9O67w%26client%3Dca-pub-2917293828578303%26adurl%3D");
+		mpvc = encodeURIComponent(mpvclick2);
+	}
+	else
+  	{
+		mpvc = ("http://adclick.g.doubleclick.net/aclk%253Fsa%253DL%2526ai%253DBhog-T-_NUs_9OofSlAeVn4HADPLim6xAAAAAEAEgADgAWILgnNFyYMmW7oiEpOwPggEXY2EtcHViLTI5MTcyOTM4Mjg1NzgzMDOyAQ13d3cuYmJjLmNvLnVrugEJZ2ZwX2ltYWdlyAEJ2gEVaHR0cDovL3d3dy5iYmMuY28udWsvmALWDcACAuACAOoCKjQ4MTcvYmJjY29tLmxpdmUuc2l0ZS53d3cvYmJjX2hvbWVwYWdlX2ludPgC-dEekAOkA5gD0AWoAwHgBAGgBhY%2526num%253D0%2526sig%253DAOD64_39FRtLYJ6PdIyEfBAKfjDdE9O67w%2526client%253Dca-pub-2917293828578303%2526adurl%253D");
+  	}
+	var mpcke = '<mpcke/>';
+	if (mpcke == 1) {
+		mpcclick = encodeURIComponent("adfarm.mediaplex.com%2Fad%2Fck%2F18349-186920-32866-1%3Fmpt%3D1586951090");
+		mpck = "http://" + mpcclick;
+	}
+	else if (mpcke == 2) {
+		mpcclick2 = encodeURIComponent("adfarm.mediaplex.com%2Fad%2Fck%2F18349-186920-32866-1%3Fmpt%3D1586951090");
+		mpck = "http://" + encodeURIComponent(mpcclick2);
+	}
+	else
+  	{
+		mpck = ("http://adfarm.mediaplex.com%2Fad%2Fck%2F18349-186920-32866-1%3Fmpt%3D1586951090");
+  	}
+	var mp_swver = 0, mp_html = "", mp_crpv = 9 * 1;
+	mp_html += "<div id='mp_wrapper22964854' style='position:relative;display:inline-block;width:728px;height:90px;'>";
+	if( navigator.mimeTypes && navigator.mimeTypes["application/x-shockwave-flash"] && navigator.mimeTypes["application/x-shockwave-flash"].enabledPlugin ) {
+  		if( navigator.plugins && navigator.plugins["Shockwave Flash"] ) {
+    		mp_swver = (navigator.plugins["Shockwave Flash"].description.split( " " ))[2];
+  		}
+	} else if ( navigator.userAgent && navigator.userAgent.indexOf("MSIE") >= 0 && ( navigator.userAgent.indexOf("Windows") >= 0 ) ) {
+		var mp_axo,e;
+  		for( var mp_i = 11; mp_i > 6; mp_i-- ) {
+			try {
+				mp_axo = new ActiveXObject("ShockwaveFlash.ShockwaveFlash." + mp_i );
+				mp_swver = mp_i;
+				break;
+			} catch (e) {}
+		}
+	}
+	if( mp_swver >= mp_crpv ) {
+  		mp_html +=  '<object classid="clsid:D27CDB6E-AE6D-11cf-96B8-444553540000" ';
+  		mp_html += ' codebase="https://download.macromedia.com/pub/shockwave/cabs/flash/swflash.cab#version=6,0,40,0" id="22964854" name="movie22964854" width="728" height="90">';
+  		if( mp_swver > 5 ) {
+			mp_html += '<param name="FlashVars" value="clickTAG=' + mpvc + mpck +'&clickTag=' + mpvc + mpck + '&clickTag1=' + mpvc + mpck + '">';
+			mp_html += '<param name="movie" value="' + mojopro + '18349/MSF_YearEnd_RightNow-GeneralSyria-Flash_DonateNow_728x90.swf">';
+			mp_html += '<param name="wmode" value="opaque">';
+			mp_html += '<param name="allowscriptaccess" value="always">';
+  		} 
+  		else {
+			mp_html += '<param name="movie" value="' + mojopro + '18349/MSF_YearEnd_RightNow-GeneralSyria-Flash_DonateNow_728x90.swf?clickTAG=' + mpvc + mpck +'&clickTag=' + mpvc + mpck + '&clickTag1=' + mpvc + mpck + '">';
+			mp_html += '<param name="wmode" value="opaque">';
+			mp_html += '<param name="allowscriptaccess" value="always">';
+  		}
+  		if( mp_swver > 5 ) {
+			mp_html += '<embed wmode="opaque" allowscriptaccess="always" name="18349/MSF_YearEnd_RightNow-GeneralSyria-Flash_DonateNow_728x90." src="' + mojopro + '18349/MSF_YearEnd_RightNow-GeneralSyria-Flash_DonateNow_728x90.swf" FlashVars="clickTAG=' + mpvc + mpck  +'&clickTag=' + mpvc + mpck  +'&clickTag1=' + mpvc + mpck  + '"';
+		}
+ 		else {
+    		mp_html += '<embed wmode="opaque" allowscriptaccess="always" NAME="18349/MSF_YearEnd_RightNow-GeneralSyria-Flash_DonateNow_728x90." src="' + mojopro + '18349/MSF_YearEnd_RightNow-GeneralSyria-Flash_DonateNow_728x90.swf?clickTAG=' + mpvc + mpck  +'&clickTag=' + mpvc + mpck  +'&clickTag1=' + mpvc + mpck  + '"';
+		}
+ 		mp_html += ' swLiveConnect="false" width="728" height="90" type="application/x-shockwave-flash" pluginspage="">';
+  		mp_html += '</embed>';
+  		mp_html += '</object>';
+  		mp_html += (mpenhanced) ? "<div style='position:absolute;z-index:10500;top:0px;right:1px;width:17px;height15px;z-index:999999;overflow:hidden;' onmouseover='this.style.width = \"75px\";document.getElementById(\"en_sm_22964854\").style.display=\"none\";document.getElementById(\"en_lg_22964854\").style.display=\"inline\";' onmouseout='this.style.width = \"17px\";document.getElementById(\"en_sm_22964854\").style.display=\"inline\";document.getElementById(\"en_lg_22964854\").style.display=\"none\";'><a href='" + mpenhancedurl + "' target='_blank'><img src='" + mojopro + "16179/109012/IconOnlyCollisionMarker.png' border='0'  id='en_sm_22964854'  style='display:inline'/><img src='" + mojopro + "16179/109012/CollisionAdMarker.png' border='0' id='en_lg_22964854'  style='display:none' /></a></div>" : "";
+	
+  		mp_html += '</div>';
+    		document.write( mp_html );
+	} else if( !( navigator.appName && navigator.appName.indexOf("Netscape") >= 0 && navigator.appVersion.indexOf("2.") >= 0 ) ) {
+
+  		document.write('<a href="http://adclick.g.doubleclick.net/aclk%3Fsa%3DL%26ai%3DBhog-T-_NUs_9OofSlAeVn4HADPLim6xAAAAAEAEgADgAWILgnNFyYMmW7oiEpOwPggEXY2EtcHViLTI5MTcyOTM4Mjg1NzgzMDOyAQ13d3cuYmJjLmNvLnVrugEJZ2ZwX2ltYWdlyAEJ2gEVaHR0cDovL3d3dy5iYmMuY28udWsvmALWDcACAuACAOoCKjQ4MTcvYmJjY29tLmxpdmUuc2l0ZS53d3cvYmJjX2hvbWVwYWdlX2ludPgC-dEekAOkA5gD0AWoAwHgBAGgBhY%26num%3D0%26sig%3DAOD64_39FRtLYJ6PdIyEfBAKfjDdE9O67w%26client%3Dca-pub-2917293828578303%26adurl%3Dhttp://adfarm.mediaplex.com/ad/ck/18349-186920-32866-1?mpt=1586951090" target="_blank"><img src="' + mojopro + '18349/MSF_YearEnd_RightNow-GeneralSyria-Flash_DonateNow_728x90.jpg" width="728" height="90" border="0" alt=""></a>');
+	}
+        document.close();
+})();
+
+   function mojo_clickthru() {
+	     var OOBImg = new Image();
+         if (typeof (mpOOBClickTrack) !== 'undefined') {
+            try {
+				OOBImg.src = mpOOBClickTrack;
+			} catch (e) {
+			  if (window.console && window.console.error) {
+				   window.console.error(e.message);
+			  }
+			}
+         }
+   }
+
+//-->
+

@@ -1,0 +1,26 @@
+PHTTP23.202.214.35"†
+UGET /hubspot_public_assets/static-3.224/shared/js/hubspot_public_assets.js HTTP/1.1
+Host: static.hsstatic.net
+Connection: keep-alive
+Accept: */*
+vUser-Agent: Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/31.0.1650.63 Safari/537.36
+"Referer: http://www.hubspot.com/
+$Accept-Encoding: gzip,deflate,sdch
+!Accept-Language: en-US,en;q=0.8
+
+*Å
+HTTP/1.1 200 OK
+Nx-amz-id-2: /29Dt++eMPxe7jaXQOemMzw6hM089bHPMsM7foHbp5kLrgjzmVioBsfvXuTMkWqi
+$x-amz-request-id: 99E461413A83F8D8
+.Last-Modified: Mon, 23 Sep 2013 18:12:25 GMT
+*ETag: "eefe1f2296c79780caad9313f07ef664"
+Accept-Ranges: bytes
+&Content-Type: application/javascript
+Content-Length: 371
+Server: AmazonS3
+!Cache-Control: max-age=31536000
+%Date: Thu, 09 Jan 2014 01:27:07 GMT
+Connection: keep-alive
+Vary: Accept-Encoding
+õ
+((function(){jQuery(function(){var a;return a=jQuery(".hs3-public-header.is-responsive"),a.find(".mobile-nav").click(function(){return $(this).parent().find("ul.hs3-public-header-navigation").slideToggle()})})})).call(this),function(){$(function(){return $("div.hs-public-subnav ul").tinyNav({active:"selected",header:"Jump to..."})})}.call(this),function(){}.call(this);

@@ -1,0 +1,70 @@
+PHTTP192.150.16.64"­
+6GET /etc/designs/dotcom/clientlib/stores.js HTTP/1.1
+Host: www.adobe.com
+Connection: keep-alive
+Accept: */*
+vUser-Agent: Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/31.0.1650.63 Safari/537.36
+ Referer: http://www.adobe.com/
+$Accept-Encoding: gzip,deflate,sdch
+!Accept-Language: en-US,en;q=0.8
+LCookie: mbox=check#true#1389227479|session#1389227418322-215795#1389229279
+
+*ò
+HTTP/1.1 200 OK
+Server: Apache
+X-Adobe-Content: WCMS
+Accept-Ranges: bytes
+Cache-Control: max-age=21600
+Keep-Alive: timeout=2
+(Content-Type: application/x-javascript
+Connection: Keep-Alive
+%Date: Thu, 09 Jan 2014 00:30:06 GMT
+(Expires: Thu, 09 Jan 2014 06:29:59 GMT
+Age: 7      
+Content-Length: 1441
+£
+/***
+ * Copyright 1997-2009 Day Management AG
+ * Barfuesserplatz 6, 4001 Basel, Switzerland
+ * All Rights Reserved.
+ *
+ * This software is the confidential and proprietary information of
+ * Day Management AG, ("Confidential Information"). You shall not
+ * disclose such Confidential Information and shall use it only in
+ * accordance with the terms of the license agreement you entered into
+ * with Day.
+ ***/
+if (!CQ_Analytics.YodaStoreMgr) {    
+    CQ_Analytics.ClientContextUtils.onStoreRegistered("yoda", function(store) {
+    });
+    
+    /**
+     * Yoda JSON store. Gets the userinformation of the current loaded user and renders them.
+     * @singleton
+     */
+    CQ_Analytics.YodaStoreMgr = CQ_Analytics.PersistedJSONStore.registerNewInstance("yoda", {});
+    
+    CQ_Analytics.YodaStoreMgr.loadData = function (obj) {
+        if(!this.data){
+            this.data = {};
+        }
+        for(var key in obj) {
+            this.data[key] = obj[key];
+        }
+       this.fireEvent("update");        
+    }
+    
+    CQ_Analytics.YodaStoreMgr.flushData = function () {
+        var store = new CQ_Analytics.SessionPersistence();
+        store.remove("yoda");        
+        this.data = {};
+        this.initProperty = {};
+        this.fireEvent("update");
+    }
+
+    CQ_Analytics.YodaStoreMgr.init = function () {
+        this.initialized = true;
+        this.fireEvent("initialize",this);
+        this.fireEvent("update");
+    }
+}

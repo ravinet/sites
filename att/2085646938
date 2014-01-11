@@ -1,0 +1,22 @@
+PHTTP166.78.32.1"”
+áGET /api/track?application_id=d4421046-efa2-4b8f-86b0-7cdce9b8067a&url_fbid=cqs6ohS0FOK&parent_fbid=&referrer=&location=http%3A%2F%2Fwww.att.com%2F&url_tag=NOMTAG&jsonp=meteor.json_query_callback(%24json%2C%200)%3B HTTP/1.1
+ Host: cdnt.meteorsolutions.com
+Connection: keep-alive
+Accept: */*
+vUser-Agent: Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/31.0.1650.63 Safari/537.36
+Referer: http://www.att.com/
+$Accept-Encoding: gzip,deflate,sdch
+!Accept-Language: en-US,en;q=0.8
+
+*ü
+HTTP/1.1 200 OK
+Server: Meteor/1.2.7
+%Date: Thu, 09 Jan 2014 00:36:51 GMT
+&Content-Type: application/javascript
+Content-Length: 182
+Connection: keep-alive
+P3P: CP="NID DSP ALL COR"
+‚Set-Cookie: uid=a60740ce-1cd1-4a42-9182-6103e0d03f6b; Domain=.meteorsolutions.com; expires=Fri, 09 Jan 2015 00:36:51 GMT; Path=/
+ñSet-Cookie: meteor_server_d4421046-efa2-4b8f-86b0-7cdce9b8067a=d4421046-efa2-4b8f-86b0-7cdce9b8067a%3C%3Ecqs6ohS0FOK%3C%3E%3C%3E%3C%3Ehttp%253A%2F%2Fwww.att.com%2F; Domain=.meteorsolutions.com; expires=Fri, 09 Jan 2015 00:36:51 GMT; Path=/
+¸
+meteor.json_query_callback({"uid": "a60740ce\\x2D1cd1\\x2D4a42\\x2D9182\\x2D6103e0d03f6b", "parent_id": "", "adconfig": {"invite": false, "appnexus": true}, "id": "cqs6ohS0FOK"}, 0);

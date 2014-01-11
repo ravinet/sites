@@ -1,0 +1,17 @@
+PHTTP23.6.22.140"è
+GET /rightnow/ HTTP/1.1
+Host: www.oracle.com
+Connection: keep-alive
+TAccept: text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8
+vUser-Agent: Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/31.0.1650.63 Safari/537.36
+$Accept-Encoding: gzip,deflate,sdch
+!Accept-Language: en-US,en;q=0.8
+
+*½
+ HTTP/1.1 301 Moved Permanently
+.Location: http://www.oracle.com/us/rightnow/
+Server: BigIP
+Content-Length: 0
+%Date: Thu, 09 Jan 2014 01:25:46 GMT
+Connection: keep-alive
+

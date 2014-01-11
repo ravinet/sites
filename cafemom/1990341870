@@ -1,0 +1,23 @@
+PHTTP173.192.208.195"¦
+GET /rb_match HTTP/1.1
+Host: um.simpli.fi
+Connection: keep-alive
+Accept: image/webp,*/*;q=0.8
+vUser-Agent: Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/31.0.1650.63 Safari/537.36
+uReferer: http://tap2-cdn.rubiconproject.com/partner/scripts/rubicon/emily.html?rtb_ext=1&pc=9262/15958&geo=na&co=us
+$Accept-Encoding: gzip,deflate,sdch
+!Accept-Language: en-US,en;q=0.8
+
+*…
+ HTTP/1.1 302 Moved Temporarily
+Server: nginx
+%Date: Fri, 10 Jan 2014 16:38:56 GMT
+Content-Type: text/plain
+Transfer-Encoding: chunked
+Connection: close
+pSet-Cookie: uid=wtGh40YiK8h87i17VA86pg%3D%3D; path=/; expires=Sat, 10 Jan 2015 16:38:56 GMT; domain=.simpli.fi
+tLocation: http://pixel.rubiconproject.com/tap.php?v=6286&nid=2132&put=E3A1D1C2C82B22467B2DEE7CA63A0F54&expires=365
+iP3P: policyref="http://www.simplifi.com/w3c/Policies.xml", CP="ADMa DEVa PSAa PSDa OUR IND DSP NON COR"
+
+0
+

@@ -1,0 +1,43 @@
+PHTTP23.202.198.218"Š
+AGET /player/ipad/9iNGpyajqzrNJHQHZxYkz0STv15oU6-S.m3u8 HTTP/1.1
+Host: player.ooyala.com
+Connection: keep-alive
+&Accept-Encoding: identity;q=1, *;q=0
+vUser-Agent: Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/31.0.1650.63 Safari/537.36
+Accept: */*
+'Referer: http://www.businessweek.com/
+!Accept-Language: en-US,en;q=0.8
+Range: bytes=0-
+
+*ä
+HTTP/1.1 200 OK
+4Content-Type: application/x-mpegurl; charset=utf-8
+.Last-Modified: Fri, 10 Jan 2014 16:16:05 GMT
+ X-Ooyala-Server-Id: i-7b6d3206
+X-Varnish-IP: 10.118.130.122
+"X-Varnish: 2509058710 2509026442
+X-Varnish-Cache: HIT
+Vary: Accept-Encoding
+$Cache-Control: public, max-age=300
+%Date: Fri, 10 Jan 2014 16:47:57 GMT
+Content-Length: 1360
+Connection: keep-alive
+Ò
+
+#EXTM3U
+#EXT-X-STREAM-INF:PROGRAM-ID=1,BANDWIDTH=888000,RESOLUTION=640x360
+http://player.ooyala.com/player/ipad/9iNGpyajqzrNJHQHZxYkz0STv15oU6-S_700.m3u8?floating_chunks=true
+#EXT-X-STREAM-INF:PROGRAM-ID=1,BANDWIDTH=48000,CODECS="mp4a.40.2,mp4a.40.5"
+http://player.ooyala.com/player/ipad/9iNGpyajqzrNJHQHZxYkz0STv15oU6-S_0.m3u8?floating_chunks=true
+#EXT-X-STREAM-INF:PROGRAM-ID=1,BANDWIDTH=285000,RESOLUTION=240x136
+http://player.ooyala.com/player/ipad/9iNGpyajqzrNJHQHZxYkz0STv15oU6-S_150.m3u8?floating_chunks=true
+#EXT-X-STREAM-INF:PROGRAM-ID=1,BANDWIDTH=386000,RESOLUTION=320x180
+http://player.ooyala.com/player/ipad/9iNGpyajqzrNJHQHZxYkz0STv15oU6-S_240.m3u8?floating_chunks=true
+#EXT-X-STREAM-INF:PROGRAM-ID=1,BANDWIDTH=609000,RESOLUTION=640x360
+http://player.ooyala.com/player/ipad/9iNGpyajqzrNJHQHZxYkz0STv15oU6-S_440.m3u8?floating_chunks=true
+#EXT-X-STREAM-INF:PROGRAM-ID=1,BANDWIDTH=1431000,RESOLUTION=1280x720
+http://player.ooyala.com/player/ipad/9iNGpyajqzrNJHQHZxYkz0STv15oU6-S_1200.m3u8?floating_chunks=true
+#EXT-X-STREAM-INF:PROGRAM-ID=1,BANDWIDTH=2068000,RESOLUTION=1280x720
+http://player.ooyala.com/player/ipad/9iNGpyajqzrNJHQHZxYkz0STv15oU6-S_1800.m3u8?floating_chunks=true
+#EXT-X-STREAM-INF:PROGRAM-ID=1,BANDWIDTH=2708000,RESOLUTION=1280x720
+http://player.ooyala.com/player/ipad/9iNGpyajqzrNJHQHZxYkz0STv15oU6-S_2400.m3u8?floating_chunks=true

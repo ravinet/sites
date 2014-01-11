@@ -1,0 +1,26 @@
+PHTTP212.124.126.26"à
+³GET /ads-async.js?v=1&key=ac2d3eb13a140ea9fb74c4cec869b8bf&ch=&click=&tz=-5&t=1389231374863&cp.position=2&cp.national=false&cp.tobs=&cp.subjectcodes=&cp.bundlecodes=&cp.uri=/&cp.refUrl=http%3A%2F%2Fwww.bbb.org%2F&cp.urlseg=bbborg&tarId=epom-ac2d3eb13a140ea9fb74c4cec869b8bf-SplashPagePromo2&cIds= HTTP/1.1
+Host: bbb.adshostnet.com
+Connection: keep-alive
+Accept: */*
+vUser-Agent: Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/31.0.1650.63 Safari/537.36
+Referer: http://www.bbb.org/
+$Accept-Encoding: gzip,deflate,sdch
+!Accept-Language: en-US,en;q=0.8
+
+*ž
+HTTP/1.1 200 OK
+Server: Apache-Coyote/1.1
+Cache-Control: no-cache
+Pragma: no-cache
+(Expires: Thu, 01 Jan 1970 00:00:00 GMT
+P3P: CP="CAO PSA OUR"
+‚Set-Cookie: epomUUID=669f0320-78ce-11e3-9422-18a905618b3e; Domain=.adshostnet.com; Expires=Wed, 04-Jan-2034 01:36:03 GMT; Path=/
+-Content-Type: text/javascript;charset=UTF-8
+Content-Length: 2927
+%Date: Thu, 09 Jan 2014 01:36:02 GMT
+Connection: close
+ñ
+var el = document.createElement("div"); el.innerHTML = "_" + "<script type=\"text\/javascript\">\n    var EpomAdServer = EpomAdServer || [];\n    EpomAdServer.status = null;\n    EpomAdServer.imgSrc = null;\n    EpomAdServer.acbs = [];\n    EpomAdServer.loadImg = function () {new Image().src = EpomAdServer.imgSrc;EpomAdServer.showBeacons(EpomAdServer.acbs);EpomAdServer.clearStatus();};\n    EpomAdServer.clearStatus = function () {EpomAdServer.status = null;EpomAdServer.imgSrc = null;EpomAdServer.acbs = [];};\n    EpomAdServer.showBeacons = function (acbs) {for(var i=0;i<acbs.length;i++){new Image().src = acbs[i];}};\n    EpomAdServer.mouseDown = function () {if (EpomAdServer.status == \"mouseOver\") {EpomAdServer.status = \"mouseDown\";} else {EpomAdServer.clearStatus();}};\n    EpomAdServer.click = function (d, b, p, ch, c, l, h, acbs, cps) {EpomAdServer.clearStatus();new Image().src = d + \'\/clic\' + \'k.gif?b=\' + b + \'&p=\' + p + \'&ch=\' + ch + \'&cps=\' + cps + \'&c=\' + c + \'&l=\' + l + \'&h=\' + h + \'&t=\' + new Date().getTime();EpomAdServer.showBeacons(acbs);};\n    EpomAdServer.mouseOver = function (d, b, p, ch, c, l, h, acbs, cps) {EpomAdServer.status = \"mouseOver\";EpomAdServer.acbs=acbs;EpomAdServer.imgSrc = d + \'\/clic\' + \'k.gif?b=\' + b + \'&p=\' + p + \'&ch=\' + ch + \'&cps=\' + cps + \'&c=\' + c + \'&l=\' + l + \'&h=\' + h + \'&t=\' + new Date().getTime();};\n    EpomAdServer.windowBlur = function () {if (EpomAdServer.status == \"mouseDown\") {EpomAdServer.loadImg();} else {EpomAdServer.clearStatus();}};\n    EpomAdServer.bindEvent = function (el, eventName, eventHandler) {if (el.addEventListener) {el.addEventListener(eventName, eventHandler, false);} else if (el.attachEvent) {el.attachEvent(\'on\' + eventName, eventHandler);}};\n    EpomAdServer.bindEvent(window, \"blur\", EpomAdServer.windowBlur);\n    EpomAdServer.bindEvent(window, \"unload\", EpomAdServer.windowBlur);\n<\/script><a onclick=\"EpomAdServer.click(\'http:\/\/bbb.adshostnet.com\', 21, 825, \'\', 4, \'US\', \'94e78dc6c5f5e07eaef423c4b5d23324\', [], \'\');\" href=\"http:\/\/www.bbb.org\/council\/\" target=\"_blank\"><img border=\"0\" alt=\"US and Canada Headquarters\" src=\"http:\/\/wac.A164.edgecastcdn.net\/80A164\/bbb-cdn\/files-bbb\/4\/4\/21\/Splash-Promo-2.jpg\" width=\"160\" height=\"80\"><\/a><script type=\"text\/javascript\">new Image().src = \"http:\/\/bbb.adshostnet.com\"+\"\/im\"+\"pressi\"+\"on.gif?b=21\"+\"&p=825&ch=&cps=&c\"+\"=4&l=US\"+\"&h=94e78dc6c5f5e07eaef423c4b5d23324&t=\"+new Date().getTime()+\"&s=8adaea6920c429f0deda100b0b1fcd97\";<\/script>"; el.removeChild(el.firstChild); EpomAdServer.execBodyScripts(el)
+; document.getElementById("epom-ac2d3eb13a140ea9fb74c4cec869b8bf-SplashPagePromo2").innerHTML = "&nbsp;" + el.innerHTML; el.removeChild(el.firstChild); EpomAdServer.testElms("epom-ac2d3eb13a140ea9fb74c4cec869b8bf-SplashPagePromo2")
+; EpomAdServer.addCampaignId(4);

@@ -1,0 +1,24 @@
+PHTTP
+64.4.6.100"è
+GET / HTTP/1.1
+Host: www.microsoftonline.com
+Connection: keep-alive
+TAccept: text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8
+vUser-Agent: Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/31.0.1650.63 Safari/537.36
+$Accept-Encoding: gzip,deflate,sdch
+!Accept-Language: en-US,en;q=0.8
+
+*ï
+HTTP/1.1 302 Found
+Cache-Control: private
+(Content-Type: text/html; charset=utf-8
+ILocation: http://www.microsoft.com/en-us/office365/enterprise-home.aspx
+Server: Microsoft-IIS/7.5
+X-AspNet-Version: 2.0.50727
+X-Powered-By: ASP.NET
+%Date: Thu, 09 Jan 2014 00:59:05 GMT
+Content-Length: 178
+´
+<html><head><title>Object moved</title></head><body>
+<h2>Object moved to <a href="http://www.microsoft.com/en-us/office365/enterprise-home.aspx">here</a>.</h2>
+</body></html>

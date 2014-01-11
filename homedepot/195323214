@@ -1,0 +1,24 @@
+PHTTP68.67.152.50"ü
+\GET /getuid?http://dis.criteo.com/dis/rtb/appnexus/cookiematch.aspx?appnxsid=$UID HTTP/1.1
+Host: ib.adnxs.com
+Connection: keep-alive
+Accept: image/webp,*/*;q=0.8
+vUser-Agent: Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/31.0.1650.63 Safari/537.36
+$Accept-Encoding: gzip,deflate,sdch
+!Accept-Language: en-US,en;q=0.8
+†Cookie: uuid2=6541380133680457123; sess=1; anj=dTM7k!M4.g1IKunF7/.ij3qu#24lxXifH$='l^!75=Pj9++0[mPY3<ml+-KldM]W$/WUTY$-YXK(hikz()7jS
+
+*Ê
+HTTP/1.1 302 Moved
+,Cache-Control: no-store, no-cache, private
+Pragma: no-cache
+(Expires: Sat, 15 Nov 2008 16:00:00 GMT
+†P3P: policyref="http://cdn.adnxs.com/w3c/policy/p3p.xml", CP="NOI DSP COR ADM PSAo PSDo OURo SAMo UNRo OTRo BUS COM NAV DEM STA PRE"
+X-XSS-Protection: 0
+sSet-Cookie: uuid2=6541380133680457123; path=/; expires=Wed, 09-Apr-2014 00:41:23 GMT; domain=.adnxs.com; HttpOnly
+`Set-Cookie: sess=1; path=/; expires=Fri, 10-Jan-2014 00:41:23 GMT; domain=.adnxs.com; HttpOnly
+`Location: http://dis.criteo.com/dis/rtb/appnexus/cookiematch.aspx?appnxsid=6541380133680457123
+%Date: Thu, 09 Jan 2014 00:41:23 GMT
+Content-Length: 0
+-Content-Type: text/html; charset=ISO-8859-1
+

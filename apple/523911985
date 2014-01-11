@@ -1,0 +1,32 @@
+PHTTP
+18.7.20.69"‹
++GET /global/nav/images/reset.svg HTTP/1.1
+Host: images.apple.com
+Connection: keep-alive
+Accept: image/webp,*/*;q=0.8
+vUser-Agent: Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/31.0.1650.63 Safari/537.36
+ Referer: http://www.apple.com/
+$Accept-Encoding: gzip,deflate,sdch
+!Accept-Language: en-US,en;q=0.8
+ Cookie: ccl=DTl/NsUu77rG2CxDVLOJ4RkKWgLBfHhGxoZdAzOXhGw=; geo=US; s_cc=true; s_fid=2C5900105991F4C6-24BAC9CA08F93EBD; s_ppv=apple%2520-%2520index%2Ftab%2520%2528us%2529; s_orientation=%5B%5BB%5D%5D; s_pathLength=homepage%3D1%2C; s_invisit_n2_us=3; s_vnum_n2_us=3%7C1; s_sq=%5B%5BB%5D%5D
+
+*Ñ
+HTTP/1.1 200 OK
+.Last-Modified: Mon, 02 Dec 2013 19:52:56 GMT
+Server: Apache
+Accept-Ranges: bytes
+Content-Length: 619
+Content-Type: image/svg+xml
+Cache-Control: max-age=375
+(Expires: Thu, 09 Jan 2014 00:27:17 GMT
+%Date: Thu, 09 Jan 2014 00:21:02 GMT
+Connection: keep-alive
+3Access-Control-Allow-Origin: http://www.apple.com
+í
+<svg version="1.1" width="11px" height="11px" baseProfile="full" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:ev="http://www.w3.org/2001/xml-events">
+<g>
+	<path fill="#BABABA" stroke="#FFFFFF" stroke-width="0.25" stroke-miterlimit="10" d="M5.5,0.124c2.97,0,5.377,2.407,5.377,5.377c0,2.97-2.407,5.378-5.377,5.378c-2.97,0-5.378-2.408-5.378-5.378C0.122,2.531,2.53,0.124,5.5,0.124z"/>
+	<path fill="#FFFFFF" d="M7.496,2.426l1.063,1.048L3.528,8.576L2.465,7.528L7.496,2.426z"/>
+	<path fill="#FFFFFF" d="M2.447,3.488l1.057-1.054l5.059,5.074L7.506,8.563L2.447,3.488z"/>
+</g>
+</svg>

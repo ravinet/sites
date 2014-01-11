@@ -1,0 +1,119 @@
+PHTTP54.236.189.164"ú
+!GET /nexac.html?na_da: HTTP/1.1
+Host: nexac.demdex.net
+Connection: keep-alive
+TAccept: text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8
+vUser-Agent: Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/31.0.1650.63 Safari/537.36
+8Referer: http://fast.dm.demdex.net/dest4.html?d_nsid=0
+$Accept-Encoding: gzip,deflate,sdch
+!Accept-Language: en-US,en;q=0.8
+ËCookie: demdex=59022978191805159591725722207368783760; DST=; dextp=22-2-1389122118|540-1-1389122131597|843-1-1389122131613|771-1-1389122131652|420-1-1389122131657|288-2-1389122131694|21-2-1389122131737
+
+*¬
+HTTP/1.1 200 OK
+Content-Type: text/html
+4DCS: va6-dcsAS1-10-89-2-190.va6.demdex.com 1.15.34
+.Last-Modified: Wed, 04 Apr 2012 19:46:58 GMT
+cP3P: policyref="/w3c/p3p.xml", CP="NOI NID CURa ADMa DEVa PSAa PSDa OUR SAMa BUS PUR COM NAV INT"
+ Server: Jetty(7.6.8.v20121106)
+Content-Length: 2522
+Connection: keep-alive
+Ü
+<html>
+<head>
+<script type="text/javascript">
+
+var Nexac = {
+	DEMDEX_NET: ".demdex.net",
+	NEXAC_NET: ".nexac.net",
+	demdexSubmit: function(aStr) {
+	   var img = new Image(0,0);
+	   img.onload=function() { }
+	   img.src=aStr
+	},
+	canSetCookie: function() {
+		var csc=false;
+		if(navigator.cookieEnabled) {
+			var ck=this.getCookie("demdex");
+			if(!ck) {
+				 this.setCookie("_dp","1",1,"/",this.DEMDEX_NET, false);
+				ck=this.getCookie("_dp");
+			}
+			if(ck) csc=true;
+		}
+		return csc;
+	},
+ 
+	 getCookie: function(name) {
+            var sPos = document.cookie.indexOf(name + "=");
+            var len = sPos + name.length + 1;
+            if((!sPos) && (name != document.cookie.substring(0, name.length))){
+                return null;
+            }
+            if(sPos == -1){
+                return null;
+            }
+            var ePos = document.cookie.indexOf(';', len);
+            if(ePos == -1) ePos = document.cookie.length;
+            return unescape(document.cookie.substring(len, ePos));
+        },
+
+	setCookie: function(name, value, expires, path, domain, secure){
+            var today = new Date();
+            if(expires){
+                expires = expires * 1000 * 60;
+            }
+            document.cookie = name+'='+value +
+                ((expires) ? ';expires=' + new Date(today.getTime() + expires).toGMTString() : '') +
+                ((path) ? ';path=' + path : '') +
+                ((domain) ? ';domain=' + domain : '') +
+                ((secure) ? ';secure' : '');
+        }, 
+
+	parseQueryString: function(_qs) {
+		var map={};
+		if(_qs) {
+			_qs=_qs.substring(1);
+			var arr= _qs.split("&");
+			for(var i=0; i < arr.length; i++) {
+				var kv=arr[i].split(":");
+				map[kv[0]]=kv[1];
+			}
+		}
+		return map;
+        },
+
+	main: function() {
+		try {
+			var dlc=this.getCookie('na_id');
+			if(dlc!=null) {
+				document.location.href=document.location.protocol+ "//r.nexac.com/e/getdata.xgi?na_id="+dlc+"&dt=br&pkey=cmet59prscq84&ru="+encodeURIComponent("http://nexac.demdex.net/nexac.html?na_da:<na_da>");
+				return;
+			}
+			var _qs=document.location.search.toString();
+			var map=this.parseQueryString(_qs);
+		
+			var na_da=map['na_da'];
+
+			if(na_da) {
+				this.demdexSubmit(document.location.protocol+"//dpm.demdex.net/demdot.jpg?et:dpm|dpid:288|data:"+na_da.replace(/\|/g, "&"));
+			}
+			
+
+		}catch(Err) { 
+			(new Image(0,0)).src = "//error.demdex.net/pixel/14140?logdata:NexacError"+encodeURIComponent(Err);
+		}
+
+	}
+ 
+}
+
+Nexac.main();
+
+
+</script>
+
+</head>
+<body>
+</body>
+</html>

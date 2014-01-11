@@ -1,0 +1,22 @@
+PHTTP166.78.32.1"¤
+êGET /api/track?application_id=bc08a252-0e79-446c-a045-5ce0ead14951&url_fbid=o8ONRVSLNrb&parent_fbid=&referrer=&location=http%3A%2F%2Fwww.xbox.com%2Fen-US%2F&url_tag=NOMTAG&jsonp=meteor.json_query_callback(%24json%2C%200)%3B HTTP/1.1
+ Host: cdnt.meteorsolutions.com
+Connection: keep-alive
+Accept: */*
+vUser-Agent: Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/31.0.1650.63 Safari/537.36
+%Referer: http://www.xbox.com/en-US/
+$Accept-Encoding: gzip,deflate,sdch
+!Accept-Language: en-US,en;q=0.8
+
+*†
+HTTP/1.1 200 OK
+Server: Meteor/1.2.7
+%Date: Thu, 09 Jan 2014 01:43:28 GMT
+&Content-Type: application/javascript
+Content-Length: 183
+Connection: keep-alive
+P3P: CP="NID DSP ALL COR"
+úSet-Cookie: meteor_server_bc08a252-0e79-446c-a045-5ce0ead14951=bc08a252-0e79-446c-a045-5ce0ead14951%3C%3Eo8ONRVSLNrb%3C%3E%3C%3E%3C%3Ehttp%253A%2F%2Fwww.xbox.com%2Fen-US%2F; Domain=.meteorsolutions.com; expires=Fri, 09 Jan 2015 01:43:28 GMT; Path=/
+‚Set-Cookie: uid=48c4a1e4-09f8-493d-9c1a-273dd62d5fd0; Domain=.meteorsolutions.com; expires=Fri, 09 Jan 2015 01:43:28 GMT; Path=/
+¹
+meteor.json_query_callback({"uid": "48c4a1e4\\x2D09f8\\x2D493d\\x2D9c1a\\x2D273dd62d5fd0", "parent_id": "", "adconfig": {"invite": false, "appnexus": false}, "id": "o8ONRVSLNrb"}, 0);

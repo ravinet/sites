@@ -1,0 +1,84 @@
+PHTTP64.94.118.77"⁄
+)GET /resources/js/jq_slider.js HTTP/1.1
+Host: www.authorize.net
+Connection: keep-alive
+Accept: */*
+vUser-Agent: Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/31.0.1650.63 Safari/537.36
+$Referer: http://www.authorize.net/
+$Accept-Encoding: gzip,deflate,sdch
+!Accept-Language: en-US,en;q=0.8
+
+*Å
+HTTP/1.1 200 OK
+%Date: Thu, 09 Jan 2014 13:41:42 GMT
+Server: Apache
+.Last-Modified: Fri, 15 Jun 2012 15:55:24 GMT
+ETag: "b70a-776-4fdb5aec"
+Accept-Ranges: bytes
+Content-Length: 1910
+Connection: close
+&Content-Type: application/javascript
+¯
+$.fn.slider = function(settings) {
+	
+	settings = $.extend({
+		defaultPanelName: 'overview',
+		defaultPanelValue: 1,
+		panels: {'overview': '1','how_it_works': '2','pricing': '3'},
+		slideEaseDuration: 500
+	}, settings);
+	
+	return this.each(function(){
+		var slider = $(this);
+		var panelWidth = slider.find(".panel").width();
+		var panelCount = slider.find(".panel").size();
+		var panelContainerWidth = panelWidth*panelCount;
+		var navClicks = 0;
+		var currentPanelValue = 0;
+		var hash = '';
+		var tabFound = false;
+
+		$(".panel-container", slider).css({ width: panelContainerWidth });
+		
+		if (location.hash) {
+			hash = location.hash.slice(1);
+			jQuery.each(settings.panels, function(k,v) {
+				if (k == hash) {
+					$('ul#slider_tabs .slider_'+hash).addClass('slider_selected');
+					if (hash == 'pricing') {
+						currentPanelValue = settings.panels.pricing;
+					} else if (hash == 'how_it_works') {
+						currentPanelValue = settings.panels.how_it_works;
+					} else {
+						currentPanelValue = settings.panels.overview;
+					}
+					tabFound = true;
+				}
+			});
+		}
+		
+		if (tabFound == false) {
+			$('ul#slider_tabs .slider_'+settings.defaultPanelName).addClass('slider_selected');
+			currentPanelValue = settings.defaultPanelValue;		
+		}
+		
+		if (currentPanelValue != null) {
+			if (currentPanelValue <= panelCount) {
+				var offset = - (panelWidth*(currentPanelValue - 1));
+				$('.panel-container', slider).css({ marginLeft: offset });
+			}
+		}
+		
+		$('#slider_tabs li').each(function(z) {
+			$(this).bind("click", function() {
+				navClicks++;
+				$(this).addClass('slider_selected').parents('ul').find('li').not($(this)).removeClass('slider_selected');
+				offset = - (panelWidth*z);
+				currentPanelValue = z+1;
+				$('.panel-container', slider).animate({ marginLeft: offset }, settings.slideEaseDuration, settings.slideEaseFunction);
+			});
+		});
+		
+		$('.panel', slider).show().end();
+	});
+};

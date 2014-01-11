@@ -1,0 +1,27 @@
+PHTTP8.247.87.252"Õ
+(GET /swflibs/TwitchPlayer.swf HTTP/1.1
+Host: www-cdn.jtvnw.net
+Connection: keep-alive
+vUser-Agent: Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/31.0.1650.63 Safari/537.36
+Accept: */*
+ Referer: http://www.twitch.tv/
+$Accept-Encoding: gzip,deflate,sdch
+!Accept-Language: en-US,en;q=0.8
+
+*É
+ HTTP/1.1 302 Moved Temporarily
+Server: nginx
+Content-Type: text/html
+Content-Length: 154
+gLocation: http://www-cdn.jtvnw.net/swflibs/TwitchPlayer.r04d1a2f8643ade4aa5b69aba9161d1b14ad5e066.swf
+Cache-Control: no-store
+%Date: Thu, 09 Jan 2014 18:13:21 GMT
+Connection: keep-alive
+œ
+<html>
+<head><title>302 Found</title></head>
+<body bgcolor="white">
+<center><h1>302 Found</h1></center>
+<hr><center>nginx</center>
+</body>
+</html>

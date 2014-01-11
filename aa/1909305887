@@ -1,0 +1,87 @@
+PHTTP173.241.242.96"Û
+ÔGET /w/1.0/acj?ai=5d4eefbc-6322-492b-1ac2-ce60b6d899be&o=4942694182&callback=OX_4942694182&ju=http%3A//www.aa.com/homePage.do&jr=&pgid=3734&c.TreatmentCode=null&res=1920x1200x24&plg=swf%2Cqt%2Cwmp%2Cshk%2Cpm&ch=ISO-8859-1&tz=300 HTTP/1.1
+Host: ox-d.aa.com
+Connection: keep-alive
+Accept: */*
+vUser-Agent: Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/31.0.1650.63 Safari/537.36
+(Referer: http://www.aa.com/homePage.do
+$Accept-Encoding: gzip,deflate,sdch
+!Accept-Language: en-US,en;q=0.8
+—Cookie: v1st=7EA5FF02354CAF63; dtCookie=06F4BF3512EFE0A6C157596C94C19D9F|AA.com|1; dtPC=5312511_627#_load_; AX42=CT-USR; mt.v=2.779430393.1389230913754; OX_u=4cc7505c-5c3c-0857-9d1f-edca40f39295_m_1390440501
+
+*°(
+HTTP/1.1 200 OK
+Vary: Accept
+êSet-Cookie: OX_u=4cc7505c-5c3c-0857-9d1f-edca40f39295_m_1390440501; Version=1; Expires=Fri, 09-Jan-2015 01:28:21 GMT; Max-Age=31536000; Path=/
+CServer: MochiWeb/1.1 WebMachine/1.10.0 (never breaks eye contact)
+Pragma: no-cache
+#P3P: CP="CUR ADM OUR NOR STA NID"
+(Expires: Mon, 26 Jul 1997 05:00:00 GMT
+%Date: Thu, 09 Jan 2014 01:28:21 GMT
+ Content-Type: application/json
+Content-Length: 4633
+-Cache-Control: private, max-age=0, no-cache
+Connection: close
+õ$
+OX_4942694182({
+  "ads":{
+    "medium":"w",
+    "record_tmpl":"http://ox-d.aa.com/{medium}/1.0/{rtype}?ts={txn_state}",
+    "adunits" : [
+      {
+        "auid":"34369",
+        "pgid":"3734",
+        "chain":[
+          {
+            "is_fallback":0,
+            
+            "ad_id":"536888897",
+            "width":"236",
+            "height":"60",
+            "html":"<a href='http://ox-d.aa.com/w/1.0/rc?ts=1fHNpZD01Mzg3fHJhaWQ9YTFmODY2MjctZGZlMi00M2Q2LWEyMTAtZDYzOGFmNTQ3ZTMzfGF1aWQ9MzQzNjl8dXI9TW5Zd005VWNDdXxhcz0yMzZ4NjB8cGlkPTM3MzR8YWlkPTUzNjg4ODg5N3xwdWI9NzY3NnxhdW09RE1JRC5XRUJ8bGlkPTUzNjg3OTU5MXx0PTF8cmlkPTg2OThmYjYyLTk3OTctNDZlMy04Y2NiLWQ5YzI0MTNlY2NmNXxvaWQ9MjE3NDJ8Ym09QlVZSU5HLkdVQVJBTlRFRURFWENMVVNJVkV8cD0wfHBjPVVTRHxhYz1VU0R8cG09UFJJQ0lORy5DUE18cnQ9MTM4OTIzMDkwMXxwcj0wfGFkdj03Njc4' target='_blank'><img src='http://ox-i.aa.com/05e/05e096e3-20ce-4b3a-9753-6aa07546bed9/a34/a34c0700a0db3bc5d652ee5a20da9725.png' height='60' width='236' border='0' alt='Reach award travel Faster'></a>\n",
+            "target":"_blank",
+            "ts":"1fHNpZD01Mzg3fHJhaWQ9YTFmODY2MjctZGZlMi00M2Q2LWEyMTAtZDYzOGFmNTQ3ZTMzfGF1aWQ9MzQzNjl8dXI9TW5Zd005VWNDdXxhcz0yMzZ4NjB8cGlkPTM3MzR8YWlkPTUzNjg4ODg5N3xwdWI9NzY3NnxhdW09RE1JRC5XRUJ8bGlkPTUzNjg3OTU5MXx0PTF8cmlkPTg2OThmYjYyLTk3OTctNDZlMy04Y2NiLWQ5YzI0MTNlY2NmNXxvaWQ9MjE3NDJ8Ym09QlVZSU5HLkdVQVJBTlRFRURFWENMVVNJVkV8cD0wfHBjPVVTRHxhYz1VU0R8cG09UFJJQ0lORy5DUE18cnQ9MTM4OTIzMDkwMXxwcj0wfGFkdj03Njc4",
+            "type":"image",
+            "ad_url":"http://ox-i.aa.com/05e/05e096e3-20ce-4b3a-9753-6aa07546bed9/a34/a34c0700a0db3bc5d652ee5a20da9725.png"
+          }
+        ]
+      },
+      {
+        "auid":"34367",
+        "pgid":"3734",
+        "chain":[
+          {
+            "is_fallback":0,
+            
+            "ad_id":"536887799",
+            "width":"236",
+            "height":"60",
+            "html":"<a href='http://ox-d.aa.com/w/1.0/rc?ts=1fHNpZD01Mzg3fHJhaWQ9YTFmODY2MjctZGZlMi00M2Q2LWEyMTAtZDYzOGFmNTQ3ZTMzfGF1aWQ9MzQzNjd8dXI9RmNhYnk0STlMVXxhcz0yMzZ4NjB8cGlkPTM3MzR8YWlkPTUzNjg4Nzc5OXxwdWI9NzY3NnxhdW09RE1JRC5XRUJ8bGlkPTUzNjg3OTAwMHx0PTF8cmlkPTM5ODI0YmQ3LWFiNzMtNDM2Yi05MWZhLThmNmZkZjAwZTllZnxvaWQ9NTM2ODczNTE0fGJtPUJVWUlORy5HVUFSQU5URUVERVhDTFVTSVZFfHA9MHxwYz1VU0R8YWM9VVNEfHBtPVBSSUNJTkcuQ1BNfHJ0PTEzODkyMzA5MDF8cHI9MHxhZHY9MTI4NTQ' target='_blank'><img src='http://ox-i.aa.com/05e/05e096e3-20ce-4b3a-9753-6aa07546bed9/b76/b76a4fbb316655f325a7a32685bf26a6.png' height='60' width='236' border='0' alt='Avis Budget'></a>\n",
+            "target":"_blank",
+            "ts":"1fHNpZD01Mzg3fHJhaWQ9YTFmODY2MjctZGZlMi00M2Q2LWEyMTAtZDYzOGFmNTQ3ZTMzfGF1aWQ9MzQzNjd8dXI9RmNhYnk0STlMVXxhcz0yMzZ4NjB8cGlkPTM3MzR8YWlkPTUzNjg4Nzc5OXxwdWI9NzY3NnxhdW09RE1JRC5XRUJ8bGlkPTUzNjg3OTAwMHx0PTF8cmlkPTM5ODI0YmQ3LWFiNzMtNDM2Yi05MWZhLThmNmZkZjAwZTllZnxvaWQ9NTM2ODczNTE0fGJtPUJVWUlORy5HVUFSQU5URUVERVhDTFVTSVZFfHA9MHxwYz1VU0R8YWM9VVNEfHBtPVBSSUNJTkcuQ1BNfHJ0PTEzODkyMzA5MDF8cHI9MHxhZHY9MTI4NTQ",
+            "type":"image",
+            "ad_url":"http://ox-i.aa.com/05e/05e096e3-20ce-4b3a-9753-6aa07546bed9/b76/b76a4fbb316655f325a7a32685bf26a6.png"
+          }
+        ]
+      },
+      {
+        "auid":"33973",
+        "pgid":"3734",
+        "chain":[
+          {
+            "is_fallback":0,
+            
+            "ad_id":"1303490",
+            "width":"236",
+            "height":"101",
+            "html":"<a href='http://ox-d.aa.com/w/1.0/rc?ts=1fHNpZD01Mzg3fHJhaWQ9YTFmODY2MjctZGZlMi00M2Q2LWEyMTAtZDYzOGFmNTQ3ZTMzfGF1aWQ9MzM5NzN8dXI9QmowM005cXM2bXxhcz0yMzZ4MTAxfHBpZD0zNzM0fGFpZD0xMzAzNDkwfHB1Yj03Njc2fGF1bT1ETUlELldFQnxsaWQ9NDYzMjc0fHQ9MXxyaWQ9NzZhNWQxNGMtMmI1MC00NzFkLWJkODctMjdmN2NiZjhlNmNkfG9pZD0xMzI0MTN8Ym09QlVZSU5HLk5PTkdVQVJBTlRFRURQUkVGRVJSRUR8cD0wfHBjPVVTRHxhYz1VU0R8cG09UFJJQ0lORy5DUE18cnQ9MTM4OTIzMDkwMXxwcj0wfGFkdj0xMjg2OA' target='_self'><img src='http://ox-i.aa.com/05e/05e096e3-20ce-4b3a-9753-6aa07546bed9/334/33465f2838a36156fb71e4a244c1940e.png' height='101' width='236' border='0' alt='footer Plat 30K MasterCard'></a>\n",
+            "target":"_self",
+            "ts":"1fHNpZD01Mzg3fHJhaWQ9YTFmODY2MjctZGZlMi00M2Q2LWEyMTAtZDYzOGFmNTQ3ZTMzfGF1aWQ9MzM5NzN8dXI9QmowM005cXM2bXxhcz0yMzZ4MTAxfHBpZD0zNzM0fGFpZD0xMzAzNDkwfHB1Yj03Njc2fGF1bT1ETUlELldFQnxsaWQ9NDYzMjc0fHQ9MXxyaWQ9NzZhNWQxNGMtMmI1MC00NzFkLWJkODctMjdmN2NiZjhlNmNkfG9pZD0xMzI0MTN8Ym09QlVZSU5HLk5PTkdVQVJBTlRFRURQUkVGRVJSRUR8cD0wfHBjPVVTRHxhYz1VU0R8cG09UFJJQ0lORy5DUE18cnQ9MTM4OTIzMDkwMXxwcj0wfGFkdj0xMjg2OA",
+            "type":"image",
+            "ad_url":"http://ox-i.aa.com/05e/05e096e3-20ce-4b3a-9753-6aa07546bed9/334/33465f2838a36156fb71e4a244c1940e.png"
+          }
+        ]
+      }
+    ]
+  }
+});

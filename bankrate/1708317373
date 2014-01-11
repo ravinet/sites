@@ -1,0 +1,29 @@
+PHTTP173.194.43.51"´
+GET /pagead/drt/ui HTTP/1.1
+Host: www.google.com
+Connection: keep-alive
+TAccept: text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8
+vUser-Agent: Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/31.0.1650.63 Safari/537.36
+FReferer: http://googleads.g.doubleclick.net/pagead/drt/s?v=r20120211
+$Accept-Encoding: gzip,deflate,sdch
+!Accept-Language: en-US,en;q=0.8
+
+*Ô
+HTTP/1.1 302 Found
+sLocation: https://googleads.g.doubleclick.net/pagead/drt/si?p=CAA&ut=AFAKxlQAAAAAUs4CVnYHm-Y84m8pfrkwxk9BsdZOj34Y
+Cache-Control: private
+X-Frame-Options: ALLOWALL
+(Content-Type: text/html; charset=UTF-8
+!X-Content-Type-Options: nosniff
+%Date: Thu, 09 Jan 2014 01:43:46 GMT
+Server: safe
+Content-Length: 304
+!X-XSS-Protection: 1; mode=block
+Alternate-Protocol: 80:quic
+²
+<HTML><HEAD><meta http-equiv="content-type" content="text/html;charset=utf-8">
+<TITLE>302 Moved</TITLE></HEAD><BODY>
+<H1>302 Moved</H1>
+The document has moved
+<A HREF="https://googleads.g.doubleclick.net/pagead/drt/si?p=CAA&amp;ut=AFAKxlQAAAAAUs4CVnYHm-Y84m8pfrkwxk9BsdZOj34Y">here</A>.
+</BODY></HTML>

@@ -1,0 +1,28 @@
+PHTTP208.89.14.135"ß
+®GET /hc/37457093/?&site=37457093&cmd=mTagKnockPage&lpCallId=234405999537-548478708602&protV=20&lpjson=1&id=8331943561&javaSupport=false&visitorStatus=INSITE_STATUS HTTP/1.1
+Host: sales.liveperson.net
+Connection: keep-alive
+Accept: */*
+vUser-Agent: Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/31.0.1650.63 Safari/537.36
+ Referer: http://www.kmart.com/
+$Accept-Encoding: gzip,deflate,sdch
+!Accept-Language: en-US,en;q=0.8
+
+*­
+HTTP/1.1 200 OK
+%Date: Thu, 09 Jan 2014 01:12:14 GMT
+Server: Microsoft-IIS/6.0
+GP3P: CP="NON BUS INT NAV COM ADM CON CUR IVA IVD OTP PSA PSD TEL SAM"
+X-Powered-By: ASP.NET
+ƒSet-Cookie: LivePersonID=LP i=112210144711282,d=1389229933; expires=Fri, 09-Jan-2015 01:12:13 GMT; path=/; domain=.liveperson.net
+BSet-Cookie: HumanClickKEY=3723334160969658334; path=/hc/37457093
+[Set-Cookie: HumanClickACTIVE=1389229933887; expires=Fri, 10-Jan-2014 01:12:13 GMT; path=/
+(Content-Type: application/x-javascript
+Accept-Ranges: bytes
+.Last-Modified: Thu, 09 Jan 2014 01:12:13 GMT
+Cache-Control: no-store
+Pragma: no-cache
+(Expires: Wed, 31 Dec 1969 23:59:59 GMT
+Content-Length: 1509
+ç
+lpConnLib.Process({"ResultSet": {"lpCallId":"234405999537-548478708602","lpCallConfirm":"","lpJS_Execute":[{"code_id": "webServerOverride", "js_code": "if (lpMTagConfig.lpServer != 'sales.liveperson.net') { lpMTag.overrideLPServer('sales.liveperson.net',true); }"},{"code_id": "MTagDef", "js_code": "lpMTagConfig.oemName = 'LivePerson';lpMTagConfig.poweredByURL = 'http://solutions.liveperson.com/ref/lppb.asp';lpMTagConfig.servlet = 'hc/';lpMTagConfig.appletsDirectory = 'applets/v7.8';lpMTagConfig.charSet = 'UTF-8';lpMTagConfig.language = 'ml';lpMTagConfig.credit = 'powered';lpMTagConfig.logoDir = 'icon/lp';lpMTagConfig.useFirstParty = false;lpMTagConfig.allowThirdPartyByServer = true;lpMTagConfig.lpUseSecureCookies =false;lpMTagConfig.lpUseSessionCookies=false;lpMTagConfig.cobrowseEnabled=false;lpMTag.activityMonitor=true;lpMTagConfig.lpSendCookies=false;lpConnLib.postDeleteIfrDelay=3;lpMTagConfig.minimizePost=false;lpMTagConfig.minimizePostMaxGets=3;lpMTagConfig.allowTruncate=false;lpMTagConfig.serverVer='21.8.0.3';lpMTagConfig.serverBuild='33';lpMTagConfig.dbMultipleClickDelay=3;lpMTagConfig.sgpemtAvoidPOST=true;lpMTagConfig.sgpemtMaxUrlLength=500;lpMTagConfig.sgpemtMinUrlLength=100;lpMTagConfig.sgpemtMaxReferLength=300;lpMTagConfig.sgpemtMinReferLength=100;lpMTagConfig.sgpemtMaxTitleLength=100;lpMTagConfig.sgpemtMinTitleLength=50;lpMTagConfig.maxPageWinNameLength=200;lpMTagConfig.sgpemtSplitCookie=false;lpMTagConfig.sgpemtSplitCookieMinDelta=200;lpMTagConfig.LEeventsAPI=false;"}]}});

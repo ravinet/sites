@@ -1,0 +1,27 @@
+PHTTP110.75.114.28"Û
+xGET /getMallBar.htm?_ksTS=1389232739172_189&callback=__mallbarGetMallBar&shopId=&v=1.2.0&_input_charset=UTF-8 HTTP/1.1
+Host: bar.tmall.com
+Connection: keep-alive
+Accept: */*
+vUser-Agent: Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/31.0.1650.63 Safari/537.36
+ Referer: http://www.tmall.com/
+$Accept-Encoding: gzip,deflate,sdch
+!Accept-Language: en-US,en;q=0.8
+8Cookie: mall_fp_ab=2012b; cna=T/BUCwLlri8CAYAeTDcE7xoO
+
+*¢
+HTTP/1.1 200 OK
+Server: Tengine
+%Date: Thu, 09 Jan 2014 01:58:47 GMT
+,Content-Type: application/json;charset=gbk
+Transfer-Encoding: chunked
+Connection: close
+Content-Language: zh-CN
+W
+2
+
+
+43
+__mallbarGetMallBar({"l":"online","q":[],"s":-2,"t":1389232727736})
+0
+

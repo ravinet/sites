@@ -1,0 +1,516 @@
+PHTTP
+18.7.20.69"î
+
+:GET /etc/designs/slate/js/brightcovetracking.js HTTP/1.1
+Host: www.slate.com
+Connection: keep-alive
+Accept: */*
+vUser-Agent: Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/31.0.1650.63 Safari/537.36
+ Referer: http://www.slate.com/
+$Accept-Encoding: gzip,deflate,sdch
+!Accept-Language: en-US,en;q=0.8
+ˆCookie: slate_poe=true; s_pers=%20s_visit%3D1%7C1389230240082%3B%20s_nr%3D1389228440083-New%7C1391820440083%3B%20s_lv%3D1389228440083%7C1483836440083%3B%20s_lv_s%3DFirst%2520Visit%7C1389230240083%3B%20s_vmonthnum%3D1391230800085%2526vn%253D1%7C1391230800085%3B%20s_monthinvisit%3Dtrue%7C1389230240085%3B; s_sess=%20s_cc%3Dtrue%3B%20s_dslv%3DFirst%2520Visit%3B%20s_wp_ep%3Dhomepage%3B%20s._ref%3DDirect-Load%3B%20s_sq%3D%3B; __vrf=1389228440097pzFEJuPvYTypDVLhrvHQ7UD7B7dU5oQG; optimizelySegments=%7B%22301791228%22%3A%22gc%22%2C%22301851147%22%3A%22direct%22%2C%22301880060%22%3A%22false%22%2C%22540560237%22%3A%22none%22%7D; optimizelyEndUserId=oeu1389228440138r0.7728833775036037; optimizelyBuckets=%7B%22389680006%22%3A%220%22%2C%22546320965%22%3A%220%22%2C%22549094815%22%3A%220%22%7D; optimizelyPendingLogEvents=%5B%5D; wapo_vis_id=840dbedc-ab2a-466e-ab01-bf9a30dcae9b; wapo_sess_id=3c140007-fd24-457d-aa2c-05961f6943d8; wapo_last_ip=128.30.76.55; s_vi=[CS]v1|2966F8C585011D85-4000010280058EE5[CE]; wapo_saved_ip=128.30.76.55
+
+*Ó}
+HTTP/1.1 200 OK
+Accept-Ranges: bytes
+Accept-Ranges: bytes
+7Cache-Control: max-age=3600, private, must-revalidate
+&Content-Type: application/javascript
+$ETag: W/"7c5a2-3d16-4ef7e9e253940"
+(Expires: Thu, 09 Jan 2014 01:23:25 GMT
+.Last-Modified: Thu, 09 Jan 2014 00:23:25 GMT
+ Server: Apache/2.2.25 (Amazon)
+X-Varnish: 319973026
+Content-Length: 15638
+%Date: Thu, 09 Jan 2014 00:47:08 GMT
+Connection: keep-alive
+˜z
+var SG_BC = SG_BC || {};
+
+SG_BC.videoSetup = function(window, brightcove, playerId) {
+  var debug = false, // toggle to see console output in your brower's debug tools
+      apiModules = brightcove.api.modules.APIModules,
+      player = brightcove.api.getExperience(playerId),
+      experience = player.getModule(apiModules.EXPERIENCE),
+      videoPlayer = player.getModule(apiModules.VIDEO_PLAYER),
+      advertising = player.getModule(apiModules.ADVERTISING),
+      currentVideo,
+      customVideoID,
+      mediaComplete = true,
+      mediaPaused = false,
+      progressEventCounter = 0,
+      isSeeking = false,
+      milestonesTracked = {
+        MILESTONE_25: false,
+        MILESTONE_50: false,
+        MILESTONE_75: false
+      },
+      experienceID,
+      category, // the category string to be used for all the event tracking
+      timeWatched = 0,
+      currentPosition,
+      previousTimestamp,
+      localStorageAvailable = false,
+      mediaEvents = brightcove.api.events.MediaEvent,
+      adEvents = brightcove.api.events.AdEvent,
+      intPct = 0,
+
+      // Omniture actions
+      actions = {
+        AD_COMPLETE: { code: "event8", comment: "Video Ad complete"},
+        AD_START: { code: "event16", comment: "Video Ad Start"},
+        MEDIA_BEGIN: { code: "event9", comment: "Video start"},
+        MEDIA_COMPLETE: { code: "event13", comment: "Video complete"},
+        MILESTONE_25: { code: "event10", comment: "Video 25% complete"},
+        MILESTONE_50: { code: "event11", comment: "Video 50% complete"},
+        MILESTONE_75: { code: "event12", comment: "Video 75% complete"},
+
+        // no defined omniture events for these actions
+        MEDIA_ABANDONED: { code: "noop", comment: 'Media Abandoned'},
+        MEDIA_ERROR: { code: "noop", comment: 'Media Error'},
+        MEDIA_PAUSE: { code: "noop", comment: 'Media Pause'},
+        MEDIA_RESUME: { code: "noop", comment: 'Media Resume'},
+        PLAYER_LOAD: { code: "noop", comment: 'Player Load'},
+        PLAYER_RESIZED_DOWN: { code: "noop", comment: 'Player Resized Down'},
+        PLAYER_RESIZED_UP: { code: "noop", comment: 'Player Resized Up'},
+        SEEK_BACKWARD: { code: "noop", comment: 'Seeked Backward'},
+        SEEK_FORWARD: { code: "noop", comment: 'Seeked Forward'}
+      };
+
+  //--------------------------------------- HELPER FUNCTIONS
+  var log = function(msg, obj) {
+    if (debug) {
+      var message;
+      if (currentVideo !== undefined) {
+        message = 'log (' + currentVideo.displayName + '): ' + msg;
+      } else {
+        message = 'log (no current video): ' + msg;
+      }
+
+	  if (obj === undefined) {
+		//console.log(message);
+	  } else {
+		//console.log(message, obj);
+	  }
+    }
+  };
+
+  var omnitureEvent = function(actionKey) {
+    if (actionKey.code !== "noop") {
+      var idString = customVideoID;
+      var msg = "(" + idString + ") " + actionKey.code +
+            " - " + actionKey.comment;
+      log(msg);
+      var debugId = $.data(window, "videoDebugId");
+      if (debug && typeof(debugId) === "string") {
+        $(debugId).html(msg + "<br/>" + $(debugId).html());
+      }
+        s.trackVideoEvent(idString, actionKey.code, actionKey.comment);
+    }
+  };
+
+  var resetLocalStorage = function() {
+    log('resetLocalStorage()');
+
+    if (localStorageAvailable) {
+      // empty these since we don't want to track it when someone comes back
+      localStorage.removeItem('abandonedVideo');
+      localStorage.removeItem('abandonedTimeWatched');
+    }
+  };
+
+  var getCustomVideoID = function(theVideo) {
+    log('getCustomVideoID()');
+
+    var videoMin = Math.floor(theVideo.length/1000/60);
+    var videoSec = Math.round((theVideo.length/1000/60 - videoMin) * 60);
+    var videoDuration = videoMin + ":";
+    if (videoSec < 10) {
+      videoDuration += "0"+videoSec;
+    } else {
+      videoDuration += videoSec;
+    }
+    return theVideo.displayName + " (" + videoDuration + ") " + theVideo.id;
+  };
+
+  var resetMilestoneFlags = function() {
+    milestonesTracked.MILESTONE_25 = false;
+    milestonesTracked.MILESTONE_50 = false;
+    milestonesTracked.MILESTONE_75 = false;
+  };
+
+  var updateCurrentVideo = function(callbackFunc) {
+    log('updateCurrentVideo()');
+
+    videoPlayer.getCurrentVideo(function(videoData){
+      currentVideo = videoData;
+      customVideoID = getCustomVideoID(currentVideo);
+
+      if (localStorageAvailable) {
+        localStorage.setItem('abandonedVideo', JSON.stringify(currentVideo));
+      }
+    });
+
+    mediaComplete = true;
+    timeWatched = 0;
+    progressEventCounter = 0;
+    resetMilestoneFlags();
+
+    log('updateCurrentVideo', currentVideo);
+
+    if (callbackFunc) {
+      callbackFunc();
+    }
+  };
+
+  var updateTrackedTime = function() {
+    var currentTimestamp = new Date().getTime();
+    var timeElapsed = (currentTimestamp - previousTimestamp)/1000;
+    previousTimestamp = currentTimestamp;
+
+    // check if it's more than 2 seconds in case the user paused or
+    // changed their local time or something
+    if (timeElapsed < 2) {
+      timeWatched += timeElapsed;
+    }
+
+    // update time watched in case the user bails out before mediaComplete
+    if (!mediaComplete) {
+      // make sure mediaComplete hasn't fired yet, otherwise it gets
+      // set to null and then repopulated: not what we want
+
+      // automatically gets flushed when flash player is closed
+      localStorage.setItem('abandonedTimeWatched', timeWatched);
+    }
+  };
+
+  var isLocalStorageAvailable = function() {
+    if (!(JSON.stringify && JSON.parse)) {
+      return false;
+    }
+
+    try {
+      return 'localStorage' in window && window.localStorage !== null;
+    } catch(err) {
+      return false;
+    }
+  };
+
+  var checkAbandonedVideo = function() {
+    if (localStorageAvailable) {
+      var abandonedVideo = localStorage.getItem('abandonedVideo');
+      var abandonedTimeWatched = localStorage.getItem('abandonedTimeWatched');
+
+      if (abandonedVideo && abandonedTimeWatched) {
+        var customVideoID = getCustomVideoID(JSON.parse(localStorage.abandonedVideo));
+        var timeWatched = Math.round(localStorage.abandonedTimeWatched);
+
+        log("Tracking video that was previously uncompleted: "
+			+ customVideoID + " : " + timeWatched);
+        omnitureEvent(actions.MEDIA_ABANDONED);
+      }
+      resetLocalStorage();
+    }
+  };
+
+
+
+  //----------------------------------------------------------------------
+
+
+
+  //--------------------------------------------- EVENT LISTENERS
+  var onMediaBegin = function(event) {
+	// this log might fire twice because it's also being called from
+	// onMediaPlay, but it should only track once
+    log('onMediaBegin()', event); 
+
+    if (mediaComplete) {
+      omnitureEvent(actions.MEDIA_BEGIN);
+    }
+
+    mediaComplete = false;
+  };
+
+  var onMediaChange = function(event) {
+    log('onMediaChange()', event);
+
+    updateCurrentVideo();
+  };
+
+  var onMediaComplete = function(event) {
+    // this log might fire twice because it's also being called from
+    // onMediaProgress, but it should only track once
+    log('onMediaComplete()', event);
+
+    if (!mediaComplete) {
+      omnitureEvent(actions.MEDIA_COMPLETE);
+    }
+
+    mediaComplete = true;
+  };
+
+  var onMediaError = function(event) {
+    log('onMediaError()', event);
+
+    omnitureEvent(actions.MEDIA_ERROR);
+  };
+
+  var onMediaPlay = function(event) {
+    log('onMediaPlay()', event);
+
+    if (mediaComplete) {
+      onMediaBegin(event);
+    } else {
+      // events that fired during playback of a video
+      // (ie not the first mediaPlay event)
+      if (mediaPaused && !isSeeking)
+      {
+        mediaPaused = false;
+        omnitureEvent(actions.MEDIA_RESUME);
+      }
+    }
+  };
+
+  var onMediaProgress = function(event) {
+    // log('onMediaProgress()', event);
+
+    if (isSeeking) {
+      // must be before currentPosition gets updated because of
+      // the check in here
+      if (progressEventCounter < 3) {
+        // 3 is a magic number - just need a few events before I can
+        // confirm it's actually playing back
+        progressEventCounter = progressEventCounter + 1;
+      } else {
+        if (event.position > currentPosition) {
+          omnitureEvent(actions.SEEK_FORWARD);
+        } else {
+          omnitureEvent(actions.SEEK_BACKWARD);
+        }
+
+        log('setting isSeeking to false');
+        isSeeking = false;
+      }
+    } else {
+      currentPosition = event.position;
+      updateTrackedTime();
+
+      var percent = (event.position * 100)/event.duration;
+      if (Math.floor(percent) > intPct) {
+        intPct = Math.floor(percent);
+        // log('percent ' +  intPct + "%");
+      }
+
+      if ((percent >= 25 && percent < 30) &&
+          !milestonesTracked.MILESTONE_25) {
+        log('Track 25% Milestone');
+        milestonesTracked.MILESTONE_25 = true;
+        omnitureEvent(actions.MILESTONE_25);
+      } else if ((percent >= 50 && percent < 55) &&
+                 !milestonesTracked.MILESTONE_50) {
+        log('Track 50% Milestone');
+        milestonesTracked.MILESTONE_50 = true;
+        omnitureEvent(actions.MILESTONE_50);
+      } else if ((percent >= 75 && percent < 80) &&
+                 !milestonesTracked.MILESTONE_75) {
+        log('Track 75% Milestone');
+        milestonesTracked.MILESTONE_75 = true;
+        omnitureEvent(actions.MILESTONE_75);
+      }
+    }
+    /*
+     This will track the media complete event when the user has
+     watched 98% or more of the video.  Why do it this way and not use
+     the Player API's event? The mediaComplete event will only fire
+     once, so if a video is replayed, it won't fire again. Why 98%? If
+     the video's duration is 3 minutes, it might really be 3 minutes
+     and .145 seconds (as an example). When we track the position
+     here, there's a very high likelihood that the current position
+     will never equal the duration's value, even when the video gets
+     to the very end. We use 98% since short videos may never see 99%:
+     if the position is 15.01 seconds and the video's duration is
+     15.23 seconds, that's just over 98% and that's not an unlikely
+     scenario. If the video is long-form content (let's say an hour),
+     that leaves 1.2 minutes of video to play before the true end of
+     the video. However, most content of that length has credits where
+     a user will drop off anyway, and in most cases content owners
+     want to still track that as a media complete event. Feel free to
+     change this logic as needed, but do it cautiously and test as
+     much as you possibly can!
+     */
+    if (event.position/event.duration > 0.98 && !mediaComplete) {
+      onMediaComplete(event);
+      resetLocalStorage();
+    }
+  };
+
+  var onMediaSeekNotify = function(event) {
+    if (!isSeeking) {
+      log('onMediaSeekNotify()', event);
+    }
+
+    isSeeking = true;
+    progressEventCounter = 0;
+  };
+
+  var onMediaStop = function(event) {
+    log('onMediaStop', event);
+
+    window.setTimeout(function(){
+      if (!mediaComplete && !mediaPaused && !isSeeking) {
+        mediaPaused = true;
+        omnitureEvent(actions.MEDIA_PAUSE);
+      }
+    }, 250);
+  };
+
+  var onAdComplete = function(event) {
+    log(event);
+    omnitureEvent(actions.AD_COMPLETE);
+	var cadDiv = $('#tsg-cad-' + playerId);
+	if(cadDiv.contents()){
+	  cadDiv.slideUp('slow');
+	  cadDiv.empty();
+	}
+  };
+
+  var onAdStart = function(event) {
+    log(event);
+    omnitureEvent(actions.AD_START);
+  };
+  //----------------------------------------------------------------------
+
+
+  //------------------------------------------- INIT
+  var initialize = function() {
+
+    log('initializing for DOM id ' + playerId);
+
+    localStorageAvailable = isLocalStorageAvailable();
+    // Check for abandoned video has to happen before
+    // updateCurrentVideo() is called
+    checkAbandonedVideo(); 
+    updateCurrentVideo();
+    if(localStorageAvailable) {
+        localStorage.setItem('adTriggerId',playerId);
+    }
+
+    // setup event listeners
+    videoPlayer.addEventListener(mediaEvents.BEGIN, onMediaBegin);
+    videoPlayer.addEventListener(mediaEvents.CHANGE, onMediaChange);
+    videoPlayer.addEventListener(mediaEvents.COMPLETE, onMediaComplete);
+    videoPlayer.addEventListener(mediaEvents.ERROR, onMediaError);
+    videoPlayer.addEventListener(mediaEvents.PLAY, onMediaPlay);
+    videoPlayer.addEventListener(mediaEvents.PROGRESS, onMediaProgress);
+    videoPlayer.addEventListener(mediaEvents.SEEK_NOTIFY,
+                                 onMediaSeekNotify);
+    videoPlayer.addEventListener(mediaEvents.STOP, onMediaStop);
+
+    advertising.addEventListener(adEvents.COMPLETE, onAdComplete);
+    advertising.addEventListener(adEvents.START, onAdStart);
+  };
+  //----------------------------------------------------------------------
+
+  experience.getExperienceID(function(expId){
+    experienceID = expId;
+    category = 'Brightcove (' + experienceID + ')';
+  });
+
+  experience.getReady(initialize);
+};
+
+ 
+SG_BC.onTemplateReady= function(video) {
+  var videoDomId = video.target.experience.id;
+  SG_BC.videoSetup(window, window.brightcove, videoDomId);
+};
+
+
+var bcsyncroadblock = function(foo) {
+  var $xml = $($.parseXML(foo));
+  var companionUrl = $xml.find('StaticResource').first().text();
+  var clickThruUrl = $xml.find('CompanionClickThrough').first().text();
+  var a = $(document.createElement('a'));
+  a.attr('href', clickThruUrl);
+  a.attr('target', '_blank');
+  var img = $(document.createElement('img'));
+  img.attr('src', companionUrl);
+  a.append(img);
+  var playerId = localStorage.getItem('adTriggerId');
+
+    //try to find companion ad div checking a few levels up from the parent
+  cadDiv= $('#' + playerId).parent().find('.companion');
+  if(cadDiv.length==0) {
+      cadDiv= $('#' + playerId).parent().parent().find('.companion');
+  }
+  if(cadDiv.length==0) {
+      cadDiv= $('#' + playerId).parent().parent().parent().find('.companion');
+  }
+  if(cadDiv.length!=0) {
+      if(cadDiv.contents()){
+        cadDiv.empty();
+      }
+      cadDiv.append(a);
+      cadDiv.hide();
+      cadDiv.slideDown('slow');
+  }
+
+  a.click(function(){
+	//modVP.pause();
+  });
+};
+
+ 
+var myTemplateLoaded = function(experienceID) {
+    var player = brightcove.api.getExperience(experienceID);
+    var modVP = player.getModule(brightcove.api.modules.APIModules.VIDEO_PLAYER);
+    var modExp = player.getModule(brightcove.api.modules.APIModules.EXPERIENCE);
+    modExp.addEventListener(brightcove.api.events.ExperienceEvent.TEMPLATE_READY, SG_BC.onTemplateReady);
+};
+
+//Note: Brightcove players call this function by name. We can't change it.
+function slateAdHandler(xml, expId){
+	var companionAds = getXMLDoc(xml);
+	var companionUrl = $(companionAds).find('StaticResource').first().text();
+	var clickThruUrl = $(companionAds).find('CompanionClickThrough').first().text();
+	var a = $(document.createElement('a'));
+	a.attr('href', clickThruUrl);
+	a.attr('target', '_blank');
+	var img = $(document.createElement('img'));
+	img.attr('src', companionUrl);
+	a.append(img);
+	var cadDiv = $('#tsg-cad-' + expId);
+	if(cadDiv.contents()){
+		cadDiv.empty();
+	}
+	cadDiv.append(a);
+	cadDiv.slideDown('slow');
+	
+	a.click(function(){
+		modVP.pause();
+	});
+}
+
+function closeAd(expId){
+	var cadDiv = $('#tsg-cad-' + expId);
+	cadDiv.slideUp('slow');
+	cadDiv.empty();
+}
+
+//Util function, code provided by Brightcove
+function getXMLDoc(pXML){
+	var adXML;
+	if (window.ActiveXObject){ //parses the XML for IE browsers
+	   adXML = new ActiveXObject("Microsoft.XMLDOM");
+	   adXML.async = false; 
+	   adXML.loadXML(pXML);
+	} else //parses the XML for Mozilla browsers
+	if (window.XMLHttpRequest) {
+		adXML = (new DOMParser()).parseFromString(pXML, "text/xml");
+	}
+	return adXML;
+}
+
+

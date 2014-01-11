@@ -1,0 +1,23 @@
+PHTTP204.2.197.201"Ò
+(GET /orbserv/hbpix?pixId=9867 HTTP/1.1
+Host: idpix.media6degrees.com
+Connection: keep-alive
+Accept: image/webp,*/*;q=0.8
+vUser-Agent: Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/31.0.1650.63 Safari/537.36
+…Referer: http://as.casalemedia.com/usermatch?s=177754&cb=http%3A%2F%2Frtb.gumgum.com%2Fusersync%3Fb%3Dcas%26i%3D&_1389232549567&C=1
+$Accept-Encoding: gzip,deflate,sdch
+!Accept-Language: en-US,en;q=0.8
+
+*‰
+ HTTP/1.1 302 Moved Temporarily
+Server: Apache-Coyote/1.1
++P3P: CP="COM NAV INT STA NID OUR IND NOI"
+Pragma: no-cache
+Cache-Control: no-cache
+cSet-Cookie: cckz=1mz42op; Domain=media6degrees.com; Expires=Thu, 09-Jan-2014 02:05:37 GMT; Path=/
+cSet-Cookie: cckz=1mz42op; Domain=media6degrees.com; Expires=Tue, 08-Jul-2014 01:55:37 GMT; Path=/
+MLocation: http://idpix.media6degrees.com/orbserv/hbpix?pixId=9867&cckz=true
+Content-Length: 0
+%Date: Thu, 09 Jan 2014 01:55:37 GMT
+Connection: close
+

@@ -1,0 +1,20 @@
+PHTTP70.42.33.241"ˇ
+UGET /adscores/g.js?sid=9201093987&adb=b19218ad-f373-45ce-8903-090aaac8f309 HTTP/1.1
+Host: adadvisor.net
+Connection: keep-alive
+Accept: */*
+vUser-Agent: Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/31.0.1650.63 Safari/537.36
+!Referer: http://www.zulily.com/
+$Accept-Encoding: gzip,deflate,sdch
+!Accept-Language: en-US,en;q=0.8
+
+*ù
+HTTP/1.1 200 OK
+&Date: Thu,  09 Jan 2014 01:10:25 GMT
+Connection: close
+Server: AAWebServer
+DP3P: policyref="http://www.adadvisor.net/w3c/p3p.xml",CP="NOI NID"
+Content-Length: 172
+&Content-Type: application/javascript
+Æ
+document.write( '<scr' + 'ipt type="text/javascript" src="http://pixel.adbuyer.com/targusinfo.js?score=000&zip=&_type=&_goalid=&_amount=&_product=&_id=" ></scr' + 'ipt>' );

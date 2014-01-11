@@ -1,0 +1,19 @@
+PHTTP75.101.154.100"™
+gGET /v3/profile.json?callback=TR.load_bizo_callback&api_key=ae81641f8a5b482387ed9712f49b1ca7 HTTP/1.1
+Host: api.bizographics.com
+Connection: keep-alive
+Accept: */*
+vUser-Agent: Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/31.0.1650.63 Safari/537.36
+"Referer: http://www.reuters.com/
+$Accept-Encoding: gzip,deflate,sdch
+!Accept-Language: en-US,en;q=0.8
+
+*—
+HTTP/1.1 302 Found
+%Date: Thu, 09 Jan 2014 00:54:46 GMT
+ˆLocation: http://api.bizographics.com/v3/profile.json?callback=TR.load_bizo_callback&api_key=ae81641f8a5b482387ed9712f49b1ca7&3pc=true
+Server: nginx/1.2.0
+‚Set-Cookie: BizoID=620aa193-c856-4a9e-aa94-3a929b463441; Domain=.bizographics.com; Expires=Thu, 10-Jul-2014 12:54:46 GMT; Path=/
+Content-Length: 0
+Connection: keep-alive
+

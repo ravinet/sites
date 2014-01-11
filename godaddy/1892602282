@@ -1,0 +1,22 @@
+PHTTP208.109.4.202"�
+cGET /pcjson/currency?currencytype=USD&callback=jQuery151005375876068137586_1389227150339 HTTP/1.1
+Host: gui.godaddy.com
+Connection: keep-alive
+Accept: */*
+vUser-Agent: Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/31.0.1650.63 Safari/537.36
+"Referer: http://www.godaddy.com/
+$Accept-Encoding: gzip,deflate,sdch
+!Accept-Language: en-US,en;q=0.8
+�	Cookie: countrysite1=www; language1=en-US; vistorpromo1=firsttime; SplitValue1=85; SplitTesting1=1138-1=65&1146-1=75&1140-2=61; preferences=currency=USD; preferences1=_sid=&gdshop_currencyType=USD; PCSplitValue1=1; optimizelySegments=%7B%22172584383%22%3A%22direct%22%2C%22172648668%22%3A%22false%22%2C%22172669289%22%3A%22none%22%2C%22172690147%22%3A%22gc%22%7D; optimizelyEndUserId=oeu1389227150374r0.043623570585623384; optimizelyBuckets=%7B%22125723167%22%3A%22125705946%22%7D; optimizelyPendingLogEvents=%5B%5D; pathway=4e6d3e57-7a84-41bb-8f97-1fd387990e99; pagecount=1; fb_sessionpagecount=1; actioncount=; fb_actioncount=; app_pathway=; fb_sessiontraffic=S_TOUCH=01/09/2014 00:25:38&pathway=4e6d3e57-7a84-41bb-8f97-1fd387990e99&V_DATE=01/08/2014 17:25:38; visitor=vid=4e6d3e57-7a84-41bb-8f97-1fd387990e99; traffic=; fbiTrafficSettings=cDepth=24&resX=1920&resY=1200&fMinorVer=9&fMajorVer=11&slMajorVer=-1&slMinorVer=-1; utag_main=_st:1389228951530$ses_id:1389228080823%3Bexp-session$subid:undefined%3Bexp-session$transaction_id:undefined%3Bexp-session$homepage_us:true%3Bexp-1391819151579$yahooRemarketing:true%3Bexp-1391819151580; ATL.SID.GUI=0xtMdM7ub%2fLJ1%2fOWXMmZTHgzrds5gesa0jeHqbjHPlY%3d; gdCassCluster.4LONwlTvUH=2
+
+*�
+HTTP/1.1 200 Success.
+%Cache-Control: private, max-age=300
+.Content-Type: text/javascript; charset=utf-8
+Server: Microsoft-IIS/7.0
+X-AspNet-Version: 4.0.30319
+yP3P: policyref="/w3c/p3p.xml", CP="COM CNT DEM FIN GOV INT NAV ONL PHY PRE PUR STA UNI IDC CAO OTI DSP COR CUR OUR IND"
+%Date: Thu, 09 Jan 2014 00:25:39 GMT
+Content-Length: 2345
+�
+jQuery151005375876068137586_1389227150339([{"currencytype":"USD","symbol":"$","symbolhtml":"$"},{"currencytype":"AED","symbol":"د.إ","symbolhtml":"&#1583;&#46;&#1573;"},{"currencytype":"ARS","symbol":"AR$","symbolhtml":"AR$"},{"currencytype":"AUD","symbol":"A$","symbolhtml":"A$"},{"currencytype":"BRL","symbol":"R$","symbolhtml":"R$"},{"currencytype":"CAD","symbol":"C$","symbolhtml":"C$"},{"currencytype":"CHF","symbol":"CHF","symbolhtml":"CHF"},{"currencytype":"CLP","symbol":"CL$","symbolhtml":"CL$"},{"currencytype":"CNY","symbol":"¥","symbolhtml":"&#165;"},{"currencytype":"COP","symbol":"CO$","symbolhtml":"CO$"},{"currencytype":"DKK","symbol":"kr","symbolhtml":"kr"},{"currencytype":"EGP","symbol":"£","symbolhtml":"&#163;"},{"currencytype":"EUR","symbol":"€","symbolhtml":"&euro;"},{"currencytype":"GBP","symbol":"£","symbolhtml":"&#163;"},{"currencytype":"HKD","symbol":"HK$","symbolhtml":"HK$"},{"currencytype":"IDR","symbol":"Rp","symbolhtml":"Rp"},{"currencytype":"ILS","symbol":"₪","symbolhtml":"&#8362;"},{"currencytype":"INR","symbol":"Rs","symbolhtml":"Rs."},{"currencytype":"JPY","symbol":"¥","symbolhtml":"&#165;"},{"currencytype":"KRW","symbol":"₩","symbolhtml":"&#65510;"},{"currencytype":"MAD","symbol":".د.م","symbolhtml":"&#46;&#1583;&#46;&#1605;"},{"currencytype":"MXN","symbol":"MXN","symbolhtml":"MXN"},{"currencytype":"MYR","symbol":"RM","symbolhtml":"RM"},{"currencytype":"NZD","symbol":"NZ$","symbolhtml":"NZ$"},{"currencytype":"PEN","symbol":"S/.","symbolhtml":"S/."},{"currencytype":"PHP","symbol":"₱","symbolhtml":"&#8369;"},{"currencytype":"PKR","symbol":"₨","symbolhtml":"&#8360;"},{"currencytype":"PLN","symbol":"zł","symbolhtml":"z&#322;"},{"currencytype":"SAR","symbol":"﷼","symbolhtml":"&#65020;"},{"currencytype":"SEK","symbol":"kr","symbolhtml":"kr"},{"currencytype":"SGD","symbol":"SG$","symbolhtml":"SG$"},{"currencytype":"THB","symbol":"฿","symbolhtml":"&#x0E3F;"},{"currencytype":"TRY","symbol":"TL","symbolhtml":"TL"},{"currencytype":"TWD","symbol":"NT$","symbolhtml":"NT$"},{"currencytype":"UAH","symbol":"₴","symbolhtml":"&#8372;"},{"currencytype":"UYU","symbol":"$U","symbolhtml":"&#36;&#85;"},{"currencytype":"VEF","symbol":"Bs.","symbolhtml":"Bs."},{"currencytype":"VND","symbol":"₫","symbolhtml":"&#8363;"},{"currencytype":"ZAR","symbol":"R","symbolhtml":"&#82;"}]);

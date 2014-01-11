@@ -1,0 +1,227 @@
+»HTTPS216.115.210.206"½
+8GET /images/dts/js/at/migration.js?v=20090921 HTTP/1.1
+Host: www.citrixonline.com
+Connection: keep-alive
+Accept: */*
+vUser-Agent: Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/31.0.1650.63 Safari/537.36
+IReferer: http://www.citrixonline.com/collaboration/online_collaboration
+$Accept-Encoding: gzip,deflate,sdch
+!Accept-Language: en-US,en;q=0.8
+©Cookie: webSession=SessionInfo%3D16931373%253A89E2106579E2528; webVisitor=FirstVisit%3D1389229069000%26LastVisit%3D1389229069000; FEC_LOCALE=en_US; __col_first_track_GoToManageRemoteSupport=true; __col_mkt_GoToManageRemoteSupport=FIS_name%3Ddirect%26LST_name%3Ddirect; __col_track_GoToManageRemoteSupport=1; __col_visit=699ca544-d724-4450-817b-af6c52d4f3e4; __utma=125397333.1625236651.1389229082.1389229082.1389229082.1; __utmb=125397333.1.10.1389229082; __utmc=125397333; __utmz=125397333.1389229082.1.1.utmcsr=(direct)|utmccn=(direct)|utmcmd=(none)
+
+*Ý=
+HTTP/1.1 200 OK
+%Date: Thu, 09 Jan 2014 00:57:49 GMT
+Server: Apache
+.Last-Modified: Tue, 31 Dec 2013 18:54:45 GMT
+#ETag: "73000b-1da1-4eed91802e740"
+Accept-Ranges: bytes
+Content-Length: 7585
+ Keep-Alive: timeout=15, max=98
+Connection: Keep-Alive
+(Content-Type: application/x-javascript
+£;
+var _HM=new Object();_HM.O=new Object();
+_HM.D=function(a){try{return(typeof a!="undefined")?1:0}catch(e){_HM.SE("page","_HM.D: "+e)}return 0};
+_HM.E=function(a){try{return (_HM.D(encodeURI))?encodeURI(a):escape(a)}catch(e){_HM.SE("page","_HM.E: "+e)}return ""};
+_HM.L=function(a){try{return _HM.D(a)?a.length:0}catch(e){_HM.SE("page","_HM.L: "+e)}return 0};
+_HM.I=function(a,b,c){try{return (typeof a!="undefined")?a.indexOf(b,c?c:0):-1}catch(e){_HM.SE("page","_HM.I: "+e)}return -1};
+_HM.S=function(a,b,c){try{return b>_HM.L(a)?"":a.substring(b,c!=null?c:_HM.L(a))}catch(e){_HM.SE("page","_HM.S: "+e)}return ""}
+_HM.RQ=function(a,b,c,d,e){try{b=(b==null)?document.URL:b,c=_HM.I(b,"&"+a+"=");c=c<0?_HM.I(b,"?"+a+"="):c;if(c>-1){d=_HM.I(b,'&',c+_HM.L(a)+2);e=_HM.S(b,c+_HM.L(a)+2,d>-1?d:_HM.L(b));return e}}catch(e){_HM.SE("page","_HM.RQ: "+e)}return ""}
+_HM.SC=function(a,b){try{document.cookie=a+"="+b+";path=/; expires=Wed, 1 Jan 2020 00:00:00 GMT"}catch(e){_HM.SE("page","_HM.SC: "+e)}};
+_HM.RC=function(a,b,c,d){try{b=document.cookie;c=_HM.I(b,a+"=");if(c>-1){d=_HM.I(b,";",c+1);d=(d>0)?d:_HM.L(b);return (d>c)?_HM.S(b,c+_HM.L(a)+1,d):""}}catch(e){_HM.SE("page","_HM.RC: "+e)}return ""}
+_HM.EV=function(a,b,c){try{if(a.addEventListener){a.addEventListener(b,c,false)}else if(a.attachEvent){a.attachEvent("on"+b,c)}}catch(e){_HM.SE("page","_HM.EV: "+e)}}
+_HM.LH=function(){try{for(var a=0;a<_HM.L(document.links);a++){_HM.EV(document.links[a],"mousedown",_HM.LT)}}catch(e){_HM.SE("page","_HM.LH: "+e)}}
+_HM.ST=function(a,b){try{if(typeof b!="undefined")ntptAddPair(a,b)}catch(e){_HM.SE("page","_HM.ST: "+e)}}
+_HM.DT=function(a){try{ntptDropPair(a)}catch(e){_HM.SE("page","_HM.DT: "+e)}}
+_HM.SE=function(a,b){try{
+  ntptEventTag("ev=error&etype="+a+"&error="+escape(b))
+  }catch(e){}}
+
+_HM.SP=function(a,b){
+  try{
+    a=(typeof a=="undefined")?_HM.O["pn"]:a;
+    b=(typeof b=="undefined")?_HM.O["mlc"]:b;
+    a=(typeof a=="undefined")?"undefined page name":a;
+    b=(typeof b=="undefined")?"undefined content hierarchy":b;
+    var c=(a.indexOf("/")==0)?b+a:b+"/"+a;
+    _HM.ST("m.page",c);
+    _HM.O["page"]=c;
+    _HM.O["pn"]=a;
+    _HM.ST("m.pn",a);-
+    _HM.ST("m.mlc",(b=="")?"/":b);
+    _HM.O["mlc"]=b; 
+    
+    for(var d=0;d<8;d++){_HM.DT("m.mlc"+d)};
+    
+    c=b.split("/");
+    for(var d=0;d<c.length;d++){
+      _HM.ST("m.mlc"+(d-1),c[d]);
+    }
+  }catch(e){
+    _HM.SE("page","_HM.SP: "+e);    
+  }
+}
+
+_HM.SN=function(a){
+  try{
+    _HM.ni_title=(Lm.config.ni_title)?document.title:_HM.O["page"];
+    _HM.ST("lc",document.URL+((document.URL.indexOf('?')>0)?'&':'?')+'ni_title='+_HM.ni_title);
+    _HM.ST("m.acct",_HM.obj["acct"]);
+    _HM.ST("m.cb",Math.random());
+    
+    try{
+      var vFlag = _HM.RC("NTPT_VFLAG");
+      if(vFlag == ""){
+        document.cookie="NTPT_VFLAG=1; path=/; expires=Thu, 31 Dec 2099 00:00:00 GMT;";
+        _HM.DT("ck");
+      }
+    }catch(e){}
+    
+    ntptEventTag(a);
+  }catch(e){
+    _HM.SE("page","_HM.SN: "+e);
+  }
+}
+
+_HM.LT=function(e){
+  try{
+  if((e.which&&e.which==1)||(e.button&&e.button==1)){var a=document.all?window.event.srcElement:this;var b=[];
+  b.push((typeof a.id!="undefined")?escape(a.id):"");
+  b.push((typeof a.name!="undefined")?escape(a.name):"");
+  if(typeof a.name!="undefined"&&(_HM.I(a.name,"&lid=")>=0||_HM.I(a.name,"&lpos=")>=0))b.push(escape(_HM.RQ("lid",a.name)),escape(_HM.RQ("lpos",a.name)));
+  else b.push("","");
+  var c=a.text?a.text:a.innerText?a.innerText:"",t="null";
+  if(_HM.L(c)>0){
+    t="txt";
+    b.push(escape(c))
+  }else{
+    c=a.innerHTML;
+    eval("var d=/ src\s*=\s*[\"']?([^\"']+)[\"']?/i");
+    d.exec(b);
+    if(RegExp.$1){
+      t="img";
+      b.push(escape(RegExp.$1))
+    }
+  }
+    b.push(t);_HM.SC("tracklink",b.join("||"))}
+  }catch(e){
+    _HM.SE("link","_HM.LT: "+e);
+  }
+}
+
+_HM.INIT=function(obj){
+  try{
+  _HM.obj=obj;
+  var xx=_hbE;if(obj.pn=="PUT+PAGE+NAME+HERE"){if(!_HM.D(obj.pndef)||obj.pndef=="title")obj.pn=document.title;
+else{var a=location.pathname,b=a.lastIndexOf("/");obj.pn=_HM.S(a,b+1,_HM.L(a))}}
+if(obj.mlc=="CONTENT+CATEGORY"){var a,b;if(!_HM.D(obj.ctdef)||obj.ctdef=="full"){a=location.pathname;obj.mlc=_HM.S(a,0,a.lastIndexOf("/"))
+}else{a=location.pathname;b=a.split("/");obj.mlc="/"+b[_HM.L(b)-2]}}
+_HM.SP(obj.pn,obj.mlc);
+
+_HM.RT=new Object();
+for(var a=0;a<_HM.L(xx);a++){
+  var c=xx[a];
+  var d=c._N;
+
+  if(d=="cv"){
+    for(var b in xx[a]){
+      if(typeof xx[a][b]!="function"&&b!="_N"&&b!="_C"){
+        var x=xx[a][b].split("|");
+        _HM.O[d+"."+b+"_d1"]=x[0];
+        if(_HM.L(x[1])>0)_HM.O[d+"."+b+"_d2"]=x[1];
+      }
+    }
+
+  }else if(d!="pv"){
+    var del="";
+    if(d=="cpv"){
+      del="cacct,tz,pr,pc,qn,pv,bd,ca,sr";
+      var d=c["pr"].split(",");
+      _HM.RT["rtv"]=d.join(";");
+      _HM.RT["bd"]=c["bd"];
+      _HM.RT["ca"]=c["ca"];
+      _HM.RT["sr"]=c["sr"];
+      _HM.RT["ev"]="productview";
+     
+    }else if(d=="cac"){
+      del="cacct,tz,pr,pc,qn,pv,bd,ca,sr";
+      var d=c["pr"].split(",");
+      var e=c["qn"].split(",");
+      var f=c["pc"].split(",");
+      var g=new Array();
+      for(var h=0;h<d.length;h++){
+        g.push(d[h]+";"+e[h]+";"+f[h]);
+      }
+      _HM.RT["rta"]=g.join(";");
+      _HM.RT["bd"]=c["bd"];
+      _HM.RT["ca"]=c["ca"];
+      _HM.RT["sr"]=c["sr"];
+      _HM.RT["ev"]="addcart";
+
+    }else if(d=="ord"){
+      del="cacct,tz,oi,pr,pc,qn,st,sp,ds,bd,ca,sr";
+      _HM.RT["bd"]=c["bd"];
+      _HM.RT["ca"]=c["ca"];
+      _HM.RT["sr"]=c["sr"];
+      var rtt = 0;
+      var rtc = "";
+
+      obj.gp=_HM.RC("m.campaign");
+      _HM.SC("m.campaign","");
+      var d=c["pr"].split(",");
+      var e=c["qn"].split(",");
+      var f=c["pc"].split(",");
+      var g=new Array();
+      for(var h=0;h<d.length;h++){
+        g.push(d[h]+";"+e[h]+";"+f[h]);
+        var h=parseFloat(f[h]);
+        if(!isNaN(h))rtt+=h;
+      }
+      rtc=g.join(";")+";";
+    
+      if(c["st"]!=""){
+        rtc+=c["st"]+";1;"+c["sp"]+";";
+        var h=parseFloat(c["sp"]);
+        if(!isNaN(h))rtt+=h;
+      }
+    
+      if(c["ds"]!=""){
+        rtc+="Discount;1;-"+c["ds"]+";";
+        var h=parseFloat(c["ds"]);
+        if(!isNaN(h))rtt-=c["ds"];
+      }
+      _HM.RT["ev"]="order";
+      _HM.RT["rti"]=c["oi"];
+      _HM.RT["rtc"]=rtc;
+      _HM.RT["rtt"]=rtt.toFixed(2);
+    }
+    del=del.split(",");for(var i=0;i<del.length;i++){delete c[del[i]]}
+    for(var b in xx[a]){if(typeof xx[a][b]!="function"&&b!="_N"&&b!="_C")_HM.O[xx[a]._N+"."+b]=xx[a][b]}
+  }
+}
+
+_HM.O.cmp=_HM.L(obj.cmp)?obj.cmp:_HM.RQ(obj.cmpn);
+_HM.O.dcmp=_HM.L(obj.dcmp)?obj.dcmp:_HM.RQ(obj.dcmpn);
+_HM.O.ra=_HM.L(obj.hra)?obj.hra:_HM.RQ(obj.hqsp);
+_HM.O.gn=_HM.L(obj.hcn)?obj.hcn:_HM.RQ(obj.gpn);
+_HM.O.host=location.hostname;
+
+if(_HM.L(_HM.O.cmp)>0)_HM.SC("m.campaign",_HM.O.cmp);
+if(_HM.L(_HM.O.dcmp)>0)_HM.SC("m.campaign",_HM.O.dcmp);
+
+_HM.l=_HM.RC("tracklink");_HM.SC("tracklink","");
+if(_HM.L(_HM.l)>0){var a=_HM.l.split("||"),b=["m.link","m.lname","m.lid","m.lpos","m.lelem","m.ltype"],c=0;
+for(c=0;c<_HM.L(a);c++){_HM.ST(b[c],unescape(a[c]))}}
+
+_HM.i=":_N:_C:vpc:lc:gn:mn:fv:lt:pndef:ctdef:dlf:elf:dft:dcmpn:cmpn:hra:hqsp:";
+for(var a in obj){if(typeof obj[a]!="function"&&_HM.I(_HM.i,":"+a+":")==-1)_HM.O[a]=obj[a]}
+for(var i in _HM.O)if(typeof _HM.O[i]!="function")_HM.ST("m."+i,_HM.O[i]);
+_HM.SN();
+  }catch(e){
+    _HM.SE("page","_HM.INIT: "+e);
+  }
+};
+
+try{_HM.EV(window,"load",_HM.LH)}catch(e){}
+try{Lm.LOAD("migration")}catch(e){} 

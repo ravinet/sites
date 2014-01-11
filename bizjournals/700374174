@@ -1,0 +1,84 @@
+PHTTP199.233.57.41"¤
+qGET /5/c=3620/rand=141128057/pv=y/int=%23OpR%2334452%23BizJournals%20-%20Total%20Site%20Traffic/rt=ifr HTTP/1.1
+Host: bcp.crwdcntrl.net
+Connection: keep-alive
+TAccept: text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8
+vUser-Agent: Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/31.0.1650.63 Safari/537.36
+&Referer: http://www.bizjournals.com/
+$Accept-Encoding: gzip,deflate,sdch
+!Accept-Language: en-US,en;q=0.8
+¶Cookie: _cc_aud=ABR4nGNgYGAIOrdyAgMcAAAdIAJa; _cc_cc="ACN4nGNQsDAyTLEwTLU0t7Q0MjEyMDYwT0kxt0hMSzJMMTYwTTRmAIKgcysnMGABAKQuCqw%3D"; _cc_id=821d81e97992420307dd78afb1d305a3; _cc_dc=0
+
+*ô 
+HTTP/1.1 200 OK
+%Date: Thu, 09 Jan 2014 13:52:17 GMT
+Content-Type: text/html
+Content-Length: 3286
+Connection: keep-alive
+Cache-Control: no-cache
+Pragma: no-cache
+3P3P: CP=NOI DSP COR NID PSAa PSDa OUR UNI COM NAV
+X-Server: 172.21.10.53
+ÃSet-Cookie: _cc_aud="ABR4nGNgYGAIOrdyIgMMcDIwTL4BZukuAFOTb4IpfzYwNT0PTLVB5NrmQ6iFYGrxTyABAOs6DHA%3D";Version=1;Path=/;Domain=crwdcntrl.net;Expires=Mon, 06-Oct-2014 13:52:17 GMT;Max-Age=23328000
+¨Set-Cookie: _cc_cc="ACN4nGNQsDAyTLEwTLU0t7Q0MjEyMDYwT0kxt0hMSzJMMTYwTTRmAIKgcysn%2FgcCBmTAePyxECMDnwoDw39GRgZGoAADD3fCLoQQd8JOBIfzCSuCw9VahuAocz1AcNoFDyM4MnWaCE7BonNIBtQ3IDgbVs5DcPgq4pBNO4%2FgAACgSy6u";Version=1;Path=/;Domain=crwdcntrl.net;Expires=Mon, 06-Oct-2014 13:52:17 GMT;Max-Age=23328000
+wSet-Cookie: _cc_id=821d81e97992420307dd78afb1d305a3;Path=/;Domain=crwdcntrl.net;Expires=Mon, 06-Oct-2014 13:52:17 GMT
+(Expires: Thu, 01 Jan 1970 00:00:00 GMT
+Ø
+<html>
+<body leftmargin='0' topmargin='0' marginwidth='0' marginheight='0' style='background-color:transparent; width: 100%; text-align: center;'>
+<html><body><div><img src="http://cm.g.doubleclick.net/pixel?google_nid=lotame_dmp&google_cm" height="1" width="1"><img src="http://loadm.exelator.com/load/?p=204&g=260&buid=821d81e97992420307dd78afb1d305a3&j=0" height="1" width="1"><img src="http://tags.bluekai.com/site/5907?limit=0&id=607a96093565951893a7456a313bfb22" width=1 height=1><img width="1" height="1" src="http://p.acxiom-online.com/pixel/dap?pid=3011&ord=1000&uid=821d81e97992420307dd78afb1d305a3&ot=pixel&redir=http%3A%2F%2Fbcp.crwdcntrl.net%2F5%2Fc%3D1205%2Fseg%3D%23DATTRIBUTES%23" /><div><img src="http://ib.adnxs.com/getuid?http%3A%2F%2Fbcp.crwdcntrl.net%2Fmap%2Fc=281%2Frand=876939532%2Ftpid%3D%24UID%2Ftp%3DANXS" height="1" width="1"></div><img src="http://lotame.nexac.com/5/c=205/dc=0/pid=821d81e97992420307dd78afb1d305a3/tp=DLGX/tpc=na_id" height="1" width="1"><img src="http://idsync.rlcdn.com/362568.gif?partner_uid=821d81e97992420307dd78afb1d305a3" width="1" height="1"><script id="LOTCC_368" src="http://tags.crwdcntrl.net/c/368/cc.js?ns=lot368"></script>
+<script id="LOTCC_796" src="http://tags.crwdcntrl.net/c/796/cc.js?ns=lot796"></script>
+<script>
+function processTargusData(json)
+{
+   if (json != null) {
+       if (json.targus != null) {
+            var fire = null;
+            if (json.targus.sk != null && json.targus.sk != "") {
+                lot368.add("tp", "TARG");
+                lot368.add("tpid", json.targus.sk);
+                fireIt = "m";
+            }
+            if (json.targus.segment != null && json.targus.segment != "000") {
+                lot368.add("genp","tiaas-" + json.targus.segment);
+                fireIt = "b";
+            }
+            if (json.targus.age != null && json.targus.age != "") {
+                lot368.add("genp", new Date().getFullYear() - json.targus.age);
+                fireIt = "b";
+            }
+            if (json.targus.gender != null && json.targus.gender != "") {
+                lot368.add("genp", "gender - " + json.targus.gender);
+                fireIt = "b";
+            }
+            if (fireIt == "b") {
+                lot368.bcpdpv();
+            } else if (fireIt == "m") {
+                var img = new Image();
+                img.src = "http://bcp.crwdcntrl.net/map/c=368/tp=TARG/tpid=" + json.targus.sk;
+                document.body.appendChild(img);
+            }
+        }
+        if (json.Client1 != null) {
+            var fireIt = false;
+            if (json.Client1.segment != null && json.Client1.segment != "000") {
+                if (json.Client1.segment instanceof Array) {
+                    for(var i =0; i < json.Client1.segment.length; i++) {
+                        lot796.add("genp","tialnt-" + json.Client1.segment[i]);
+                        fireIt = true;
+                    }
+                } else {
+                    lot796.add("genp","tialnt-" + json.Client1.segment);
+                    fireIt = true;
+                }
+            }
+            if (fireIt) {
+                lot796.bcpdpv();
+            }
+        }
+   }
+}
+</script>
+<script src="http://adadvisor.net/adscores/g.json?sid=9202507693"></script></div></body></html>
+</body>
+</html>

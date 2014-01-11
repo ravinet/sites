@@ -1,0 +1,24 @@
+PHTTP50.19.249.172"Å
+GET /i.js HTTP/1.1
+Host: i.kissmetrics.com
+Connection: keep-alive
+Accept: */*
+vUser-Agent: Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/31.0.1650.63 Safari/537.36
+$Referer: http://www.sitescout.com/
+$Accept-Encoding: gzip,deflate,sdch
+!Accept-Language: en-US,en;q=0.8
+
+*¬
+HTTP/1.1 200 OK
+(Cache-Control: max-age=2592000, public
+(Content-Type: application/x-javascript
+%Date: Thu, 09 Jan 2014 01:37:51 GMT
+(Expires: Sat, 08 Feb 2014 01:37:51 GMT
+.Last-Modified: Thu, 09 Jan 2014 00:37:51 GMT
+7P3P: CP="NOI CURa ADMa DEVa TAIa OUR IND UNI NAV INT"
+Server: nginx
+X-whom: id4.kissmetrics.com
+Content-Length: 39
+Connection: keep-alive
+)
+if(typeof(_kmil) == 'function')_kmil();

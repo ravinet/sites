@@ -1,0 +1,27 @@
+PHTTP54.243.159.16"ñ
+ßGET /event?a=192632226&d=192632226&y=false&x452320009=407731472&s192626472=false&s192644331=none&s192777030=direct&s192779037=gc&s5235603788529664=true&s4720675864444928=true&n=http%3A%2F%2Fwww.ning.com%2F&g=4678673231773696,452320009&u=oeu1389231034523r0.9749204786494374&wxhr=true&t=1389231034587&f=317931660,327626668,452320009,531481019 HTTP/1.1
+$Host: 192632226.log.optimizely.com
+Connection: keep-alive
+vUser-Agent: Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/31.0.1650.63 Safari/537.36
+Origin: http://www.ning.com
+Accept: */*
+Referer: http://www.ning.com/
+$Accept-Encoding: gzip,deflate,sdch
+!Accept-Language: en-US,en;q=0.8
+9Cookie: end_user_id=oeu1389231034523r0.9749204786494374
+
+*è
+HTTP/1.1 200 OK
+(Access-Control-Allow-Credentials: true
+)Access-Control-Allow-Methods: POST, GET
+2Access-Control-Allow-Origin: http://www.ning.com
+ Content-Type: application/json
+%Date: Thu, 09 Jan 2014 01:30:22 GMT
+9P3P: CP="IDC DSP COR CURa ADMa OUR IND PHY ONL COM STA"
+Server: nginx/1.2.7
+}Set-Cookie: fixed_external_192632226_bucket_map=; Domain=.optimizely.com; expires=Thu, 01 Jan 1970 00:00:00 GMT; Max-Age=-1
+{Set-Cookie: bucket_map=452320009%3A407731472; Domain=.192632226.log.optimizely.com; expires=Sun, 07 Jan 2024 01:30:22 GMT
+Content-Length: 2
+Connection: keep-alive
+
+{}

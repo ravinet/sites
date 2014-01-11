@@ -1,0 +1,43 @@
+PHTTP129.15.96.11"ê
+4GET /slider/source/coin-slider-styles.css HTTP/1.1
+Host: www.noaa.gov
+Connection: keep-alive
+Accept: text/css,*/*;q=0.1
+vUser-Agent: Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/31.0.1650.63 Safari/537.36
+Referer: http://www.noaa.gov/
+$Accept-Encoding: gzip,deflate,sdch
+!Accept-Language: en-US,en;q=0.8
+
+*Ü
+HTTP/1.0 200 OK
+%Date: Thu, 09 Jan 2014 00:53:52 GMT
+Server: Apache
+.Last-Modified: Thu, 01 Mar 2012 21:58:28 GMT
+$ETag: "e7137760-2de-4ba358f5b4900"
+Accept-Ranges: bytes
+Content-Length: 734
+Cache-Control: max-age=3600
+(Expires: Thu, 09 Jan 2014 01:53:52 GMT
+Content-Type: text/css
+Age: 1462
+Via: 1.0 c7.w3.woc (squid)
+Connection: keep-alive
+à
+/*
+	Coin Slider jQuery plugin CSS styles
+	http://workshop.rs/projects/coin-slider
+*/
+
+
+.coin-slider { overflow: hidden; zoom: 1; position: relative; }
+.coin-slider a{ text-decoration: none; outline: none; border: none; font-size: 1.25em;}
+.coin-slider #overlay {font-size: 1.25em;}
+
+.cs-buttons { font-size: 0px; padding: 10px; float: left; }
+.cs-buttons a { margin-left: 5px; height: 10px; width: 10px; float: left; border: 1px solid #B8C4CF; color: #B8C4CF; text-indent: -1000px; }
+.cs-active { background-color: #B8C4CF; color: #FFFFFF; }
+
+.cs-title { width: 545px; padding: 10px; background-color: #000000; color: #FFFFFF; }
+
+.cs-prev, 
+.cs-next { background-color: #000000; color: #FFFFFF; padding: 0px 10px; }

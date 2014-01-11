@@ -1,0 +1,26 @@
+PHTTP199.255.189.60"Ý
+GET / HTTP/1.1
+Host: www.yelp.com
+Connection: keep-alive
+TAccept: text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8
+vUser-Agent: Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/31.0.1650.63 Safari/537.36
+$Accept-Encoding: gzip,deflate,sdch
+!Accept-Language: en-US,en;q=0.8
+
+*à
+HTTP/1.1 303 See Other
+%Date: Thu, 09 Jan 2014 00:22:39 GMT
+Server: Apache
+X-Node: web49, www_all
+Content-Length: 0
+Cache-Control: private
+ÆSet-Cookie: yuv=dVbsL9o6CQxYRUf1FQirP-qPUJ1oxd-tUFUTBIF1QEn0iuIp3rp7_AT2GfR3sEYx8VkPhWjLV2OWQ3_R0LaT6UnwxOoeHPCc; Domain=.yelp.com; Max-Age=630720000; Path=/; expires=Wed, 04-Jan-2034 00:22:39 GMT
+VSet-Cookie: bse=604f9c6746979b79fdb6be680f38338e; Domain=.yelp.com; Path=/; HttpOnly
+jSet-Cookie: hl=en_US; Domain=.yelp.com; Max-Age=630720000; Path=/; expires=Wed, 04-Jan-2034 00:22:39 GMT
+&Location: http://www.yelp.com/boston
+Vary: User-Agent
+(Content-Type: text/html; charset=UTF-8
+X-Mode: ro
+X-Proxied: lb1
++Set-Cookie: bip-sfo1=sticky_web49; path=/
+

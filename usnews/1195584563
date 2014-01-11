@@ -1,0 +1,41 @@
+PHTTP72.21.214.200"¿
+bGET /vast/42d0afcb-3755-438a-9d9c-cbb9bdc8e319/8e2e3eab-c63a-466c-9520-1a3ff4b32b5c.xml HTTP/1.1
+&Host: oggi-tracking.s3.amazonaws.com
+Connection: keep-alive
+vUser-Agent: Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/31.0.1650.63 Safari/537.36
+Accept: */*
+CReferer: http://embed.newsinc.com/thumbnail/iframe.html?wid=13109
+$Accept-Encoding: gzip,deflate,sdch
+!Accept-Language: en-US,en;q=0.8
+
+*±	
+HTTP/1.1 200 OK
+Nx-amz-id-2: zUeeYHi5HCi8cQKtv/q6EYPONeQOxqnlMZYHHNe/BtAA3MhjqCnPojsezLsnE7L8
+$x-amz-request-id: 6210D2D975203B35
+%Date: Wed, 08 Jan 2014 16:57:00 GMT
+.Last-Modified: Fri, 20 Dec 2013 06:56:15 GMT
+*ETag: "92270749a33972e629fe57991c2ca3f2"
+Accept-Ranges: bytes
+Content-Type: text/xml
+Content-Length: 835
+Server: AmazonS3
+Å
+<VAST version="2.0">
+  <Ad id="8e2e3eab-c63a-466c-9520-1a3ff4b32b5c">
+    <InLine>
+      <AdSystem version="2.0">Ensemble</AdSystem>
+      <AdTitle>Jelly Belly 20130521 Base June (November Cotton Candy) 16x9 Preroll</AdTitle>
+      <Impression />
+      <Creatives>
+        <Creative>
+          <Linear>
+            <Duration>00:00:30</Duration>
+            <MediaFiles>
+              <MediaFile apiFramework="VPAID" width="534" height="300" delivery="progressive" type="application/x-shockwave-flash"><![CDATA[http://raw.oggifinogi.com/GetWidget?campaignId=42d0afcb-3755-438a-9d9c-cbb9bdc8e319&playlistId=8e2e3eab-c63a-466c-9520-1a3ff4b32b5c&widgetId=80de9af3-83a5-4b6d-a9b4-6e9f1dc87d4c]]></MediaFile>
+            </MediaFiles>
+          </Linear>
+        </Creative>
+      </Creatives>
+    </InLine>
+  </Ad>
+</VAST>

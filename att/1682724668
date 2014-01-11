@@ -1,0 +1,25 @@
+»HTTPS23.0.57.145"¤
+YGET /olam/unauth/performAjaxToGetSavedUserId.myworld?null=null&_=1389227879975 HTTP/1.1
+Host: www.att.com
+Connection: keep-alive
+Accept: */*
+vUser-Agent: Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/31.0.1650.63 Safari/537.36
+Referer: http://www.att.com/
+$Accept-Encoding: gzip,deflate,sdch
+!Accept-Language: en-US,en;q=0.8
+£Cookie: akaau=1389228167~id=ff1c959f90c4f8d0725f46f552750a20; __utma=161676899.1225046112.1389227880.1389227880.1389227880.1; __utmb=161676899.1.10.1389227880; __utmc=161676899; __utmz=161676899.1389227880.1.1.utmcsr=(direct)|utmccn=(direct)|utmcmd=(none); TLTSID=4305730278C610785028B5460285FB75; SHOPSESSIONID=R5sPSNvbY201CJqDLpC6vl8v!-765481156; SHOP_USER_ID=4497469491; SHOP_USER_CONFIRM=a28e8acc264c7d9bc3dea8c7e0e5d997; ECOM_GTM=owaln; browserid=A001948844625; svariants=NA; cust_type=new; asto-id-50715-apSHOP_7010=FNOCNBIHGDBL; DL3K=CT-1
+
+*µ
+HTTP/1.1 200 OK
+Content-Length: 44
+ Content-Type: application/json
+$p3p: CP="NON CUR OTPi OUR NOR UNI"
+#x-powered-by: Servlet/2.5 JSP/2.1
+x-frame-options: SAMEORIGIN
+%Date: Thu, 09 Jan 2014 00:37:48 GMT
+Connection: keep-alive
+cSet-Cookie: EDOCSSESSIONID=Gj4GSNvcnhGvNjHWJyS5DRXgp0BZgkd5r9CS1N0XKL5fcpq342hT!731682458; Path=/
+KSet-Cookie: PD_STATEFUL_8301b282-a8de-11e0-9f87-00215ad3a3f0=olam; Path=/
+[Set-Cookie: akaau=1389228168~id=a3b177ff3133bf40c7d4be0b0dd0b29a; path=/; domain=.att.com
+.
+colamCookieResponse({"saveUserIDCheck":"Y"})

@@ -1,0 +1,287 @@
+PHTTP64.94.118.77"ñ
+1GET /resources/css/home.css?v=20130709 HTTP/1.1
+Host: www.authorize.net
+Connection: keep-alive
+Accept: text/css,*/*;q=0.1
+vUser-Agent: Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/31.0.1650.63 Safari/537.36
+$Referer: http://www.authorize.net/
+$Accept-Encoding: gzip,deflate,sdch
+!Accept-Language: en-US,en;q=0.8
+
+*ê-
+HTTP/1.1 200 OK
+%Date: Thu, 09 Jan 2014 13:41:42 GMT
+Server: Apache
+.Last-Modified: Wed, 10 Jul 2013 14:02:12 GMT
+ETag: "bbad-15ec-51dd6964"
+Accept-Ranges: bytes
+Content-Length: 5612
+Connection: close
+Content-Type: text/css
+î+
+h1.pagetitle {
+  color: #ffffff;
+  font-size: 2.5em;
+  line-height: 42px;
+  margin-bottom: 12px;
+  padding: 0 0 0 37px;
+  text-shadow: #000000 2px 2px 2px; 
+}
+.all .container {
+  background: white;
+  margin-top: 0;
+  position: relative; 
+}
+.all .main {
+  float: left;
+  margin: 0;
+  overflow: hidden;
+  position: relative;
+  width: 960px; 
+}
+.credits {
+  background: url("/resources/images/home/gray_credibility.gif") repeat-x scroll 0 0 transparent;
+  clear: both;
+  height: 79px;
+  width: 960px;	
+}
+.credits ul {
+  float: left;
+  margin: 0;
+  padding: 0;
+  width: 960px;	
+}
+.credits ul li {
+  color: #999999;
+  display: inline;
+  float: left;
+  font-size: 1.125em;
+  font-weight: bold;
+  margin: 13px 0 0 0;
+  padding: 0;
+  text-align: center;
+  text-shadow: 0 1px 0 #ffffff;
+  width: 260px;
+}
+.credits ul li div {
+  font-size: 0.75em;
+  font-weight: normal;	
+}
+.credits ul li#cred_about {
+  background: #fff url("/resources/images/home/gray_credibility_text.gif") no-repeat 0 0;
+  height: 79px;
+  margin-top: 0px; 
+  width: 95px;  
+}
+.credits ul li#cred_merchant {
+  border-right: 1px solid #d0d0d0;	
+}
+.credits ul li#cred_satisfaction {
+  border-right: 1px solid #d0d0d0;	
+}
+.hero {
+  background: transparent url("/resources/images/home/slider_bg.jpg") no-repeat 0 0;
+  clear: both;
+  float: left;
+  height: 308px;
+  padding: 25px 0 0 0;
+  width: 960px;	
+}
+.hero .heroleft {
+  float: left;
+  height: 265px;
+  margin: 0;
+  position: relative;
+  width: 360px;
+}
+.hero .gold_button {
+  padding: 11px 33px;
+}
+.hero .heroright {
+  float: right;
+  margin: 0;
+  overflow: hidden;
+  width: 600px;	
+}
+.action_boxes {
+  clear: both;
+  float: left;
+  margin: 25px 12px 75px 12px;
+  width: 936px;	
+}
+.action_boxes .action_box {
+  background: transparent url("/resources/images/home/action_gradient.gif") repeat-x 0 55px;
+  border: 1px solid #bebebe;
+  border-radius: 8px;
+  float: left;
+  height: 150px;
+  margin: 0 24px 0 0;
+  padding: 5px 20px 0 20px;
+  width: 254px;
+}
+.action_boxes .action_box div.more_details {
+  font-size: 0.813em;
+}
+.action_boxes .action_box#developer_action_box {
+  margin-right: 0;	
+}
+.action_boxes .action_box h3 {
+  font-size: 1.125em;
+  margin: 0;
+  padding: 7px 0 5px 27px;	
+}
+.action_boxes .action_box#affiliate_action_box h3 {
+  background: transparent url("/resources/images/home/icon_affiliate.gif") no-repeat 0 7px;	
+}
+.action_boxes .action_box#developer_action_box h3 {
+  background: transparent url("/resources/images/home/icon_developer.gif") no-repeat 0 7px;	
+}
+.action_boxes .action_box#reseller_action_box h3 {
+  background: transparent url("/resources/images/home/icon_reseller.gif") no-repeat 0 7px;	
+}
+.action_boxes .action_box p {
+  font-size: 0.813em;
+  margin: 0;
+  padding: 0;	
+}
+.info_boxes {
+  clear: both;
+  float: left;
+  margin: 34px 0;
+  width: 960px;
+}
+.info_boxes .info_box h2 {
+  color: #448cb5;
+  font-size: 1.375em;
+  margin: 15px 0 7px 0;
+  padding: 0;	
+}
+.info_boxes .info_box p {
+  line-height: 24px;
+  margin: 0;
+  padding: 0;	
+}
+.info_boxes .info_box#first_info_box {
+  float: left;
+  margin: 0 24px 0 32px;
+  width: 436px;
+}
+.info_boxes .info_box#second_info_box {
+  float: left;
+  margin: 0;
+  width: 436px;
+}
+.info_boxes .info_box#second_info_box p {
+  padding: 0 130px 0 0;	
+}
+.info_boxes .info_box#second_info_box img {
+  float: right;
+  padding-top: 20px;
+}
+.partner_shadow {
+  background: url("/resources/images/home/mainbox_footer.gif") repeat-x scroll 0 0 #FFFFFF;
+  clear: both;
+  float: left;
+  height: 12px;
+  width: 960px;	
+}
+.partners {
+  clear: both;
+  height: 36px;
+  padding: 0;
+  width: 960px;
+}
+.panel {
+  float: left;
+  width: 600px;
+}
+.panel p {
+  color: #ffffff;
+  float: left;
+  padding: 10px 10px 0 37px;
+/*  text-shadow: #000000 1px 1px 1px; */
+  width: 253px;
+}
+.panel p a {
+  color: #ffffff;
+  text-decoration: underline;
+}
+.panel p a.white_triangle {
+  background: url("/resources/images/home/white_arrow.png") no-repeat scroll left 2px transparent;
+  display: block;
+  padding: 0 0 0 15px;
+}
+.panel ul {
+  color: #ffffff;
+  float: right;
+  list-style-type: none;
+  margin: 0;
+  padding: 10px 0 0 0;
+  width: 280px;
+}
+.panel ul li {
+  background: url("/resources/images/home/checkmark.png") no-repeat scroll 0 3px transparent;
+  line-height: 18px;
+  margin-bottom: 12px;
+  padding: 0 0 0 27px;	
+/*  text-shadow: #000000 1px 1px 1px; */
+}
+div#signup {
+	position: absolute;
+	left: 681px;
+	top: 239px;
+	*top: 245px;
+	z-index: 100;
+}
+div#slider {
+	position: relative;
+}
+ul#slider_tabs {
+  margin: 10px 0 0 30px;
+  width: 321px; 
+}
+ul#slider_tabs h2 {
+  color: #448cb5;
+  font-family: Verdana, Arial;
+  font-size: 1.125em;
+  font-weight: normal;
+  margin: 0;
+  padding: 14px 0 5px 0;
+}
+ul#slider_tabs p {
+  color: #4b4b4b;
+  font-size: 0.875em;
+  margin: 0;
+  padding: 0;
+}
+ul#slider_tabs li {
+  background: transparent url("/resources/images/home/slider_off.png") no-repeat 0 0;
+  height: 80px;
+  margin: 0 0 12px 0;
+  padding: 0;
+  width: 290px;
+}
+ul#slider_tabs li.slider_selected {
+  background: transparent url("/resources/images/home/slider_on.png") no-repeat 0 0;
+  width: 321px;
+}
+ul#slider_tabs li div {
+  background-repeat: no-repeat;
+  background-position: 10px 10px;
+  padding: 0 0 0 78px;
+  height: 80px;
+  width: 212px;
+}
+ul#slider_tabs li a {
+  outline: none;
+  text-decoration: none;
+}
+ul#slider_tabs li.slider_overview div {
+  background-image: url("/resources/images/home/icon_overview.png");
+}
+ul#slider_tabs li.slider_how_it_works div {
+  background-image: url("/resources/images/home/icon_how.png");
+}
+ul#slider_tabs li.slider_pricing div {
+  background-image: url("/resources/images/home/icon_pricing.png");
+}

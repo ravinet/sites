@@ -1,0 +1,25 @@
+PHTTP64.30.224.172"Á
+GET /anonc.js HTTP/1.1
+Host: dw.cbsi.com
+Connection: keep-alive
+Accept: */*
+vUser-Agent: Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/31.0.1650.63 Safari/537.36
+"Referer: http://www.cbsnews.com/
+$Accept-Encoding: gzip,deflate,sdch
+!Accept-Language: en-US,en;q=0.8
+
+*ƒ
+HTTP/1.1 200 OK
+%Date: Thu, 09 Jan 2014 01:15:42 GMT
+Server: Apache/2.4.3
+pP3P: CP="CAO DSP COR CURa ADMa DEVa PSAa PSDa IVAi IVDi CONi OUR OTRi IND PHY ONL UNI FIN COM NAV INT DEM STA"
+oSet-Cookie: XCLGFbrowser=bFa5xlLN+D6i9dBPMW0; expires=Tue, 09-Jan-2024 01:15:42 GMT; domain=.cbsi.com; path=/
+(Expires: Mon, 05 Jan 1970 12:12:12 GMT
+4Cache-control: private, max-age=43200, s-max-age=0
+&Etag: bFa5xlLN+D6i9dBPMW0.1.dw_anonc
+Content-Length: 73
+Keep-Alive: timeout=5, max=55
+Connection: Keep-Alive
+&Content-Type: application/javascript
+K
+function dw_anonc() {return {"id": "bFa5xlLN+D6i9dBPMW0", "isNew": true}}

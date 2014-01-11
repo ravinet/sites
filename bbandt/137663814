@@ -1,0 +1,40 @@
+PHTTP209.0.146.135"Ö
+&GET /SiteSeal/siteseal2p.js HTTP/1.1
+Host: cyseal.cyveillance.com
+Connection: keep-alive
+Accept: */*
+vUser-Agent: Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/31.0.1650.63 Safari/537.36
+Referer: http://www.bbt.com/
+$Accept-Encoding: gzip,deflate,sdch
+!Accept-Language: en-US,en;q=0.8
+
+*Ú
+HTTP/1.1 200 OK
+%Date: Thu, 09 Jan 2014 13:52:54 GMT
+Server: Apache
+ETag: W/"493-1329770790000"
+.Last-Modified: Mon, 20 Feb 2012 20:46:30 GMT
+Content-Type: text/javascript
+Content-Length: 493
+Connection: close
+ï
+function cyseal(secure)
+{		
+	var part1 = "://cyseal";
+	var part2 = ".cyveillance";
+	var part3 = ".com";	
+	var port = "";
+	var part4 = "/SiteSeal";
+	var part5 = "/cyss.js";
+			
+	if(secure==null)
+		secure=true;
+		
+	if(secure==true)
+		var x = "https" + part1 + part2 + part3 + port + part4 + part5;
+	else
+		var x = "http" + part1 + part2 + part3 + port + part4 + part5;
+		
+	var gt_is=x+'?ref='+window.location.hostname;		
+	document.write("<script src='"+gt_is+"'></script>");
+}

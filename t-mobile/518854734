@@ -1,0 +1,60 @@
+PHTTP207.211.42.79"©
+GET /mpel/mpel.js HTTP/1.1
+Host: es.t-mobile.com
+Connection: keep-alive
+Accept: */*
+vUser-Agent: Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/31.0.1650.63 Safari/537.36
+#Referer: http://www.t-mobile.com/
+$Accept-Encoding: gzip,deflate,sdch
+!Accept-Language: en-US,en;q=0.8
+ÜCookie: TLTSID=391EAA7F4D772265981AF09B8CCC5960; TLTUID=391EAA7F4D772265981AF09B8CCC5960; fsr.a=1389229251645; mbox=check#true#1389229312|session#1389229251541-403877#1389231112|PC#1389229251541-403877.25_04#1390438852
+
+*·
+HTTP/1.1 200 OK
+Content-Length: 1431
+(Content-Type: application/x-javascript
+.Last-Modified: Thu, 14 Nov 2013 21:07:39 GMT
+Accept-Ranges: bytes
+ETag: "5c3efd8c7de1ce1:11d02"
+Server: Microsoft-IIS/6.0
+X-Powered-By: ASP.NET
+%Date: Thu, 09 Jan 2014 01:00:39 GMT
+™
+MpElDs = {
+ 'es.t-mobile.com':'es',
+ 'es.prepaid-phones.t-mobile.com':'es',
+ 'es.business.t-mobile.com':'es',
+ 'es.mobile-broadband.t-mobile.com':'es',
+ 'es.sidekick.t-mobile.com':'es',
+ 'es.support.t-mobile.com':'es',
+ 'es.videos.t-mobile.com':'es',
+ 'es.referral.t-mobile.com':'es',
+ 'es.lifeline.t-mobile.com':'es',
+ 'es.explore.t-mobile.com':'es',
+ 'www.t-mobile.com':'en',
+ 't-mobile.com':'en',
+ 'prepaid-phones.t-mobile.com':'en',
+ 'business.t-mobile.com':'en',
+ 'mobile-broadband.t-mobile.com':'en',
+ 'sidekick.t-mobile.com':'en',
+ 'nxstgwstmb04.internal.t-mobile.com':'en',
+ 'support.t-mobile.com':'en',
+ 'videos.t-mobile.com':'en',
+ 'referral.t-mobile.com':'en',
+ 'lifeline.t-mobile.com':'en',
+ 'explore.t-mobile.com':'en'
+
+};
+if (!RegExp("MP_LANG=" + MpElDs[location.host]).test(document.cookie)) {
+    MpElD = '//es.t-mobile.com';
+    MpL=navigator.browserLanguage;
+                if(!MpL)MpL=navigator.language;
+                var script = document.createElement('script');
+                script.type = 'text/javascript';
+                script.src = MpElD + '/mpel.js?href='+encodeURIComponent(location.href)
+                           + '&ref='+encodeURIComponent(document.referrer)
+                           + '&lang='+MpL;
+                var target = document.getElementsByTagName('script')[0];
+                target.parentNode.insertBefore(script, target);
+           
+};

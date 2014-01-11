@@ -1,0 +1,26 @@
+PHTTP68.99.123.161"Ü
+GET / HTTP/1.1
+Host: www.cox.net
+Connection: keep-alive
+TAccept: text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8
+vUser-Agent: Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/31.0.1650.63 Safari/537.36
+$Accept-Encoding: gzip,deflate,sdch
+!Accept-Language: en-US,en;q=0.8
+
+*ä
+HTTP/1.1 302 Found
+%Date: Wed, 08 Jan 2014 16:33:26 GMT
+Server: Apache
+4Location: http://ww2.cox.com/myconnection/home.cox
+Content-Length: 224
+Keep-Alive: timeout=10
+Connection: Keep-Alive
+-Content-Type: text/html; charset=iso-8859-1
+â
+<!DOCTYPE HTML PUBLIC "-//IETF//DTD HTML 2.0//EN">
+<html><head>
+<title>302 Found</title>
+</head><body>
+<h1>Found</h1>
+<p>The document has moved <a href="http://ww2.cox.com/myconnection/home.cox">here</a>.</p>
+</body></html>

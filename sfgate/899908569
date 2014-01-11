@@ -1,0 +1,31 @@
+PHTTP
+23.74.28.8"Ï
+"GET /Scripts/loadAds.js HTTP/1.1
+Host: aps.hearstnp.com
+Connection: keep-alive
+Accept: */*
+vUser-Agent: Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/31.0.1650.63 Safari/537.36
+!Referer: http://www.sfgate.com/
+$Accept-Encoding: gzip,deflate,sdch
+!Accept-Language: en-US,en;q=0.8
+
+*Ç
+HTTP/1.1 200 OK
+(Content-Type: application/x-javascript
+.Last-Modified: Wed, 11 Dec 2013 16:02:14 GMT
+Accept-Ranges: bytes
+ETag: "503ae15b8af6ce1:0"
+Server: Microsoft-IIS/7.0
+X-Powered-By: ASP.NET
+Content-Length: 457
+Cache-Control: max-age=1800
+(Expires: Fri, 10 Jan 2014 17:04:07 GMT
+%Date: Fri, 10 Jan 2014 16:34:07 GMT
+Connection: keep-alive
+Ë
+ï»¿/*********************** Environment specific variable ***********************/
+var loadAd_UrlLocation = ('https:' == document.location.protocol ? 'https:' : 'http:') + "//aps.hearstnp.com/";
+
+/*********************** Load Main file for serving ads ***********************/
+var mainFile = loadAd_UrlLocation + 'Scripts/loadAdsMain.js';
+document.write('<scr' + 'ipt id="loadAdConfig" type="text/javascript" src="' + mainFile + '"><\/scr' + 'ipt>');

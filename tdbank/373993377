@@ -1,0 +1,27 @@
+PHTTP23.0.58.157"Ý
+2GET /net/m/m.ashx?istablet=1&ismobile=1 HTTP/1.1
+Host: www.tdbank.com
+Connection: keep-alive
+Accept: */*
+vUser-Agent: Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/31.0.1650.63 Safari/537.36
+!Referer: http://www.tdbank.com/
+$Accept-Encoding: gzip,deflate,sdch
+!Accept-Language: en-US,en;q=0.8
+
+*ç
+HTTP/1.1 200 OK
+Content-Length: 52
+(Content-Type: text/html; charset=utf-8
+Server: Microsoft-IIS/7.0
+X-AspNet-Version: 2.0.50727
+=IISExport: This web site was exported using IIS Export v3.0
+X-Powered-By: ASP.NET
+Vary: Accept-Encoding
+(Expires: Thu, 09 Jan 2014 01:47:50 GMT
+.Cache-Control: max-age=0, no-cache, no-store
+Pragma: no-cache
+%Date: Thu, 09 Jan 2014 01:47:50 GMT
+Connection: keep-alive
+6
+var device= {"istablet":"False",
+"ismobile":"False"}

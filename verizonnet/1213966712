@@ -1,0 +1,30 @@
+PHTTP23.45.39.139"€
+GET /central HTTP/1.1
+Host: www.verizon.net
+Connection: keep-alive
+TAccept: text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8
+vUser-Agent: Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/31.0.1650.63 Safari/537.36
+$Accept-Encoding: gzip,deflate,sdch
+!Accept-Language: en-US,en;q=0.8
+–Cookie: ASP.NET_SessionId=32lx2liqau2mtuenaxlwhd45; AkaUTrackingID=C68DEF44BBF0CE0A1A67459B68C0223D; AkaSTrackingID=4C2F271C4E427D39C149663440B917B9
+
+*ã
+ HTTP/1.1 301 Moved Permanently
+Server: Apache
++Location: http://www.verizon.net/central/
+Content-Length: 239
+-Content-Type: text/html; charset=iso-8859-1
+Vary: Accept-Encoding
+(Expires: Thu, 09 Jan 2014 18:20:59 GMT
+.Cache-Control: max-age=0, no-cache, no-store
+Pragma: no-cache
+%Date: Thu, 09 Jan 2014 18:20:59 GMT
+Connection: keep-alive
+ñ
+<!DOCTYPE HTML PUBLIC "-//IETF//DTD HTML 2.0//EN">
+<html><head>
+<title>301 Moved Permanently</title>
+</head><body>
+<h1>Moved Permanently</h1>
+<p>The document has moved <a href="http://www.verizon.net/central/">here</a>.</p>
+</body></html>

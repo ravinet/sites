@@ -1,0 +1,106 @@
+PHTTP208.94.20.12"þ
+)GET /popup/javascript/utils.js HTTP/1.1
+Host: app.bankrate.com
+Connection: keep-alive
+Accept: */*
+vUser-Agent: Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/31.0.1650.63 Safari/537.36
+`Referer: http://app.bankrate.com/popup/signup.cfm?l=213915118&s=weeklyrounduponestep&v=onestep
+$Accept-Encoding: gzip,deflate,sdch
+!Accept-Language: en-US,en;q=0.8
+æ
+Cookie: brmd=%7B%22expiration%22%3A%20%22Fri%2C%2010%20Jan%202014%2001%3A43%3A56%20GMT%22%2C%20%22path%22%3A%20%22/%22%2C%20%22domain%22%3A%20%22.bankrate.com%22%2C%20%22VID%22%3A%20%22f3098a23-10de-432c-b235-157ecd7ffb37%22%2C%20%22SID%22%3A%20%221389231836041%22%7D; brms=%7B%22path%22%3A%20%22/%22%2C%20%22domain%22%3A%20%22.bankrate.com%22%2C%20%22VID%22%3A%20%22f3098a23-10de-432c-b235-157ecd7ffb37%22%2C%20%22SID%22%3A%20%221389231836041%22%7D; op621globalheadergum=a0610c10bb2a19z03y18024fd; op621globalheaderliid=a0610c10bb2a19z03y18024fd; op621homepagegum=a02h05u0bk2a19y0335jz99af; op621homepageliid=a02h05u0bk2a19y0335jz99af; brmp=%7B%22expiration%22%3A%20%22Sun%2C%2007%20Jan%202024%2001%3A43%3A56%20GMT%22%2C%20%22path%22%3A%20%22/%22%2C%20%22domain%22%3A%20%22.bankrate.com%22%2C%20%22VID%22%3A%20%22f3098a23-10de-432c-b235-157ecd7ffb37%22%2C%20%22test%22%3A%20%7B%22name%22%3A%20%22GlobalNavigationTest%22%2C%20%22group%22%3A%20%22br3_b%22%7D%2C%20%22pid%22%3A%20%7B%22t%22%3A%201389231836185%2C%20%22p%22%3A%20%22br3_b%22%2C%20%22at%22%3A%20%5B%22p%22%5D%2C%20%22af%22%3A%20%5B%2231536000000%22%5D%7D%7D; brml=%7B%22expiration%22%3A%20%22Thu%2C%2009%20Jan%202014%2002%3A13%3A57%20GMT%22%2C%20%22path%22%3A%20%22/%22%2C%20%22domain%22%3A%20%22.bankrate.com%22%2C%20%22VID%22%3A%20%22f3098a23-10de-432c-b235-157ecd7ffb37%22%2C%20%22SID%22%3A%20%221389231836041%22%7D
+
+*ü
+HTTP/1.1 200 OK
+%Date: Thu, 09 Jan 2014 01:43:45 GMT
+Server: Apache
+.Last-Modified: Wed, 02 Oct 2013 13:22:59 GMT
+ETag: "b49-4e7c1f7cdb2c1"
+Accept-Ranges: bytes
+Content-Length: 2889
+!Keep-Alive: timeout=30, max=500
+Connection: Keep-Alive
+&Content-Type: application/javascript
+Ë
+
+REGEX_NON_ASCII = new RegExp("[^\\x00-\\x7F]");
+REGEX_EMAIL     = new RegExp("^([^()<>@,;:\\\\\".\\s\\x00-\\x1F\\x7F\\[\\]]+|\"([^\\\\\"\\x0D]|\\\\.)*\")(\\.([^()<>@,;:\\\\\".\\s\\x00-\\x1F\\x7F\\[\\]]+|\"([^\\\\\"\\x0D]|\\\\.)*\"))*@[^()<>@,;:\\\\\".\\s\\x00-\\x1F\\x7F\\[\\]]+(\\.[^()<>@,;:\\\\\".\\s\\x00-\\x1F\\x7F\\[\\]]+)*\\.([^()<>@,;:\\\\\".\\s\\x00-\\x1F\\x7F\\[\\]]{2,4}|museum)$");
+REGEX_LTRIM     = new RegExp("^\\s*(.*)");
+REGEX_RTRIM     = new RegExp("([^\\s]*)\\s*$");
+REGEX_INTEGER   = new RegExp("^\\d+$");
+REGEX_NUMERIC   = new RegExp("^\\d+(\\.\\d*)?$");
+REGEX_INTEGER   = new RegExp("^\\d+$");
+
+function validateEmail(formObject, fieldObject, fieldValue) {
+	return !REGEX_NON_ASCII.test(fieldValue) && REGEX_EMAIL.test(fieldValue);
+}
+
+function validateDateMDY(month, day, year) {
+    if( REGEX_INTEGER.test(month) &&
+        REGEX_INTEGER.test(day) &&
+        REGEX_INTEGER.test(year)) {
+        var d = new Date(year, --month, day);
+        return (d && d.getFullYear()==year && d.getMonth()==month && d.getDate()==day);
+    }
+    return false;
+}
+
+function hasValue(obj, obj_type) {
+	if(!obj) return false;
+	if (obj_type == "TEXT" || obj_type == "PASSWORD") {
+    	return (obj.value.length != 0);
+	} else if (obj_type == "SELECT") {
+        for (i=0; i < obj.length; i++)
+			if (obj.options[i].selected && obj.options[i].value != "") 
+				return true;
+       	return false;
+	} else if (obj_type == "SINGLE_VALUE_RADIO" || obj_type == "SINGLE_VALUE_CHECKBOX") {
+		return obj.checked;
+	} else if (obj_type == "RADIO" || obj_type == "CHECKBOX") {
+        for (i=0; i < obj.length; i++)
+			if (obj[i].checked)
+				return true;
+       	return false;	
+	}
+}
+
+var debounceVal = true;
+function debounce() {
+	if(!debounceVal) return false;
+	debounceVal = false; window.setTimeout("debounceVal=true;", 1000); return true;
+}
+
+function prettify(formfield, type) {
+	var s = trim(formfield.value);
+	if(type) {
+		type = type.toUpperCase();
+		if(type == "TITLECASE") s = smartTitleCase(s);
+		else if(type == "LOWERCASE") s = s.toLowerCase();
+		else if(type == "UPPERCASE") s = s.toUpperCase();
+	}
+	formfield.value = s;
+}
+
+function trim(str) {
+	var reTrim1 = /^\s+/; var reTrim2 = /\s+$/;
+	return str.replace(reTrim1, "").replace(reTrim2, "");
+}
+
+function smartTitleCase(str) {
+	str = titleCase1(str);
+	if(str == str.toUpperCase()) str = titleCase2(str);
+	return str;
+}
+function titleCase1(str) {
+	var atBoundary=true; var retval = "";
+	for(var i=0; i<str.length; i++) {
+		var c = str.charAt(i); retval += (atBoundary)?c.toUpperCase():c; atBoundary = !/\b/.test(c);
+	} return retval;
+}
+function titleCase2(str) {
+	var atBoundary=true; var retval = "";
+	for(var i=0; i<str.length; i++) {
+		var c = str.charAt(i); retval += (atBoundary)?c:c.toLowerCase(); atBoundary = !/\b/.test(c);
+	} return retval;
+}
+

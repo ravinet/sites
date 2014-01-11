@@ -1,0 +1,24 @@
+PHTTP107.22.172.55"“
+˜GET /v0/uncacheable?ids=&key=ab71d33b15d36506acf1e379b0ed07ee&locale=en-US&callback=jQuery171048978402465581894_1389230551652&_=1389230552843 HTTP/1.1
+Host: api.urbandictionary.com
+Connection: keep-alive
+Accept: */*
+vUser-Agent: Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/31.0.1650.63 Safari/537.36
+*Referer: http://www.urbandictionary.com/
+$Accept-Encoding: gzip,deflate,sdch
+!Accept-Language: en-US,en;q=0.8
+ºCookie: __qca=P0-737005636-1389230551601; __gads=ID=76a03cb6aee4be1e:T=1389230539:S=ALNI_MYv5__G9nempGOwO71NoYhTW_qiRA; __utma=246446400.1895483258.1389230552.1389230552.1389230552.1; __utmb=246446400.2.9.1389230552; __utmc=246446400; __utmz=246446400.1389230552.1.1.utmcsr=(direct)|utmccn=(direct)|utmcmd=(none)
+
+*‘
+HTTP/1.1 200 OK
+ Access-Control-Allow-Origin: *
+Cache-Control: private
+4Content-Type: application/javascript;charset=utf-8
+%Date: Thu, 09 Jan 2014 01:22:20 GMT
+¤Set-Cookie: _urban_session=BAh7BkkiD3Nlc3Npb25faWQGOgZFVEkiRWY5NmVjOTAyYjBiYmRmMGZjYzM4%0AYmMwMWEzMTZjMzBmZmQ3MWI5YTdjODNkYWU1YWJmOWY0ODllYWFmN2I2MGMG%0AOwBG%0A--455ced8f66d2aff82d6b588022f4261cea4399ff; domain=.urbandictionary.com; path=/; expires=Tue, 09 Jan 2024 13:22:20 -0000; HttpOnly
+Status: 200 OK
+,X-License: http://api.urbandictionary.com/
+Content-Length: 74
+Connection: keep-alive
+L
+jQuery171048978402465581894_1389230551652({"thumbs":[],"read_only":false})

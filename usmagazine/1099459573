@@ -1,0 +1,19 @@
+PHTTP184.73.252.244"¤
+‘GET /idsync/ex/push?partner_url=http%3A%2F%2Fpixel.rubiconproject.com%2Ftap.php%3Fv%3D18014%26nid%3D2950%26put%3D%24%7BTA_DEVICE_ID%7D HTTP/1.1
+Host: pixel.tapad.com
+Connection: keep-alive
+Accept: image/webp,*/*;q=0.8
+vUser-Agent: Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/31.0.1650.63 Safari/537.36
+vReferer: http://tap2-cdn.rubiconproject.com/partner/scripts/rubicon/emily.html?rtb_ext=1&pc=11244/28454&geo=na&co=us
+$Accept-Encoding: gzip,deflate,sdch
+!Accept-Language: en-US,en;q=0.8
+
+*°
+HTTP/1.1 302 Found
+mLocation: http://pixel.rubiconproject.com/tap.php?v=18014&nid=2950&put=d00bee3e-e20c-428e-910e-7438c909bf92
+“P3P: policyref="http://tapad-taptags.s3.amazonaws.com/policy/p3p.xml", CP="NOI DSP COR ADM PSAo PSDo OURo SAMo UNRo OTRo BUS COM NAV DEM STA PRE"
+cSet-Cookie: TapAd_TS=1389371720643;Expires=Tue, 11 Mar 2014 16:35:20 GMT;Path=/;Domain=.tapad.com
+{Set-Cookie: TapAd_DID=d00bee3e-e20c-428e-910e-7438c909bf92;Expires=Tue, 11 Mar 2014 16:35:20 GMT;Path=/;Domain=.tapad.com
+Content-Length: 0
+Connection: keep-alive
+

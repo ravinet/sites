@@ -1,0 +1,21 @@
+»HTTPS66.117.23.101"ñ
+´GET /m2/usbank/mbox/standard?mboxHost=www.usbank.com&mboxSession=1389228644787-843222&mboxPage=1389228644787-843222&screenHeight=1200&screenWidth=1920&browserWidth=937&browserHeight=1051&browserTimeOffset=-300&colorDepth=24&mboxXDomain=enabled&mboxCount=1&profile.cust_prosp=prospect&mbox=usbank_global_header_test&mboxId=0&mboxTime=1389210644798&mboxURL=https%3A%2F%2Fwww.usbank.com%2Findex.html&mboxReferrer=&mboxVersion=43 HTTP/1.1
+Host: usbank.tt.omtrdc.net
+Connection: keep-alive
+Accept: */*
+vUser-Agent: Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/31.0.1650.63 Safari/537.36
+,Referer: https://www.usbank.com/index.html
+$Accept-Encoding: gzip,deflate,sdch
+!Accept-Language: en-US,en;q=0.8
+
+*®
+HTTP/1.1 302 Found
+$P3P: CP="NOI DSP CURa OUR STP COM"
+ƒSet-Cookie: mboxSession=1389228644787-843222; Domain=usbank.tt.omtrdc.net; Expires=Thu, 09-Jan-2014 01:21:32 GMT; Path=/m2/usbank
+$P3P: CP="NOI DSP CURa OUR STP COM"
+„Set-Cookie: mboxPC=1389228644787-843222.25_47; Domain=usbank.tt.omtrdc.net; Expires=Wed, 09-Apr-2014 00:50:32 GMT; Path=/m2/usbank
+ãLocation: https://usbank.tt.omtrdc.net/m2/usbank/mbox/standard?mboxHost=www.usbank.com&mboxSession=1389228644787-843222&mboxPage=1389228644787-843222&screenHeight=1200&screenWidth=1920&browserWidth=937&browserHeight=1051&browserTimeOffset=-300&colorDepth=24&mboxXDomain=enabled&mboxCount=1&profile.cust_prosp=prospect&mbox=usbank_global_header_test&mboxId=0&mboxTime=1389210644798&mboxURL=https%3A%2F%2Fwww.usbank.com%2Findex.html&mboxReferrer=&mboxVersion=43&mboxXDomainCheck=true
+Content-Length: 0
+%Date: Thu, 09 Jan 2014 00:50:32 GMT
+Server: Test & Target
+

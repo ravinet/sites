@@ -1,0 +1,22 @@
+PHTTP198.203.224.241"ï
+ÃGET /tec/api/uxhome/pvt/campaign/ASAP/asset/webpvt/pvt?recs=6&ver=2&source=kmart&psid=1389229944040&uid=null&callback=jQuery18106807131182868034_1389229943632&shcAJAX=1&_=1389229944051 HTTP/1.1
+Host: semantictec.com
+Connection: keep-alive
+Accept: */*
+vUser-Agent: Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/31.0.1650.63 Safari/537.36
+ Referer: http://www.kmart.com/
+$Accept-Encoding: gzip,deflate,sdch
+!Accept-Language: en-US,en;q=0.8
+
+*›
+HTTP/1.1 200 OK
+iX-Powered-By: Servlet 2.4; JBoss-4.2.3.GA (build: SVNTag=JBoss_4_2_3_GA date=200807181417)/JBossWeb-2.0
+ServerIP: 157.241.136.237
+ElapsedTime: 4ms
+.Content-Type: application/json;charset=UTF-8
+Content-Length: 144
+%Date: Thu, 09 Jan 2014 01:12:10 GMT
+Server: SWS-157.241.136.237-A
+FSet-Cookie: BIGipServerapi-uxhome_8080=3985174941.36895.0000; path=/
+’
+jQuery18106807131182868034_1389229943632({"widgetType":"pvt","message":"Recently Viewed","category":null,"lastBrowsedProduct":null,"items":[]});

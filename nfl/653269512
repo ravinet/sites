@@ -1,0 +1,19 @@
+PHTTP75.101.154.100"«
+bGET /v1/profile.json?api_key=6332f8b7316a4d1284e9c1217a367347&callback=Demdex.parseBizo HTTP/1.1
+Host: api.bizographics.com
+Connection: keep-alive
+Accept: */*
+vUser-Agent: Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/31.0.1650.63 Safari/537.36
+9Referer: http://fast.nfl.demdex.net/dest4.html?d_nsid=0
+$Accept-Encoding: gzip,deflate,sdch
+!Accept-Language: en-US,en;q=0.8
+
+*’
+HTTP/1.1 302 Found
+%Date: Thu, 09 Jan 2014 00:33:42 GMT
+ƒLocation: http://api.bizographics.com/v1/profile.json?api_key=6332f8b7316a4d1284e9c1217a367347&callback=Demdex.parseBizo&3pc=true
+Server: nginx/1.2.0
+‚Set-Cookie: BizoID=3260aba6-9bdb-464f-8fd9-5951cf5a03ea; Domain=.bizographics.com; Expires=Thu, 10-Jul-2014 12:33:42 GMT; Path=/
+Content-Length: 0
+Connection: keep-alive
+

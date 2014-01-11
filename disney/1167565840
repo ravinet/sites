@@ -1,0 +1,20 @@
+PHTTP139.104.188.6"û
+UGET /capmon/GetDE/?set=j&param=countryisocode&param=state&param=connection HTTP/1.1
+Host: tredir.go.com
+Connection: keep-alive
+Accept: */*
+vUser-Agent: Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/31.0.1650.63 Safari/537.36
+Referer: http://disney.com/
+$Accept-Encoding: gzip,deflate,sdch
+!Accept-Language: en-US,en;q=0.8
+
+*Ÿ
+HTTP/1.1 200 OK
+Server: Apache-Coyote/1.1
+%Date: Thu, 09 Jan 2014 01:08:48 GMT
+ Set-Cookie: DE2=dXNhO21hO2NhbWJyaWRnZTticm9hZGJhbmQ7NTs0OzQ7NTA2OzA0Mi4zNjQ7LTA3MS4wODU7ODQwOzIyOzg4OTs2O3VzOw==;Domain=.go.com;Max-Age=10000;Path=/;Version=1
+‡Set-Cookie: DS=bWl0LmVkdTs4MjIxMDE7bWFzc2FjaHVzZXR0cyBpbnN0aXR1dGUgb2YgdGVjaG5vbG9neTs=;Domain=.go.com;Max-Age=10000;Path=/;Version=1
+(Content-Type: application/x-javascript
+Content-Length: 87
+Y
+var countryisocode = "usa"; var state = "massachusetts"; var connection = "broadband"; 

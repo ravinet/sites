@@ -1,0 +1,26 @@
+PHTTP50.18.248.30"Á
+IGET /track/cmf/openx?oxid=f9d9d3d0-532d-7f06-cca2-143bd07325f4 HTTP/1.1
+Host: match.adsrvr.org
+Connection: keep-alive
+Accept: image/webp,*/*;q=0.8
+vUser-Agent: Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/31.0.1650.63 Safari/537.36
+[Referer: http://us-u.openx.net/w/1.0/pd?plm=5&ph=946c394266a4fae6069935c05abcb7b20f9be4d4
+$Accept-Encoding: gzip,deflate,sdch
+!Accept-Language: en-US,en;q=0.8
+
+*é
+HTTP/1.1 302 Found
+2Cache-Control: private,no-cache, must-revalidate
+Content-Type: text/html
+%Date: Thu, 09 Jan 2014 01:12:32 GMT
+]Location: http://match.adsrvr.org/track/cmb/openx?oxid=f9d9d3d0-532d-7f06-cca2-143bd07325f4
+DP3P: CP="NOI DSP COR CUR ADMo DEVo PSAo PSDo OUR SAMo BUS UNI NAV"
+Pragma: no-cache
+Server: Microsoft-IIS/7.5
+zSet-Cookie: TDID=7c50e072-b6aa-4bbd-b110-f6ee33b977bf; domain=.adsrvr.org; expires=Fri, 09-Jan-2015 01:12:33 GMT; path=/
+sSet-Cookie: TDCPM=CAEYBSgCMgsIhJmC3be+rTEQBTgB; domain=.adsrvr.org; expires=Fri, 09-Jan-2015 01:12:33 GMT; path=/
+X-AspNet-Version: 4.0.30319
+Content-Length: 193
+Connection: keep-alive
+Ã
+Redirecting to: <a href="http://match.adsrvr.org/track/cmb/openx?oxid=f9d9d3d0-532d-7f06-cca2-143bd07325f4">http://match.adsrvr.org/track/cmb/openx?oxid=f9d9d3d0-532d-7f06-cca2-143bd07325f4</a>

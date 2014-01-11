@@ -1,0 +1,25 @@
+PHTTP
+23.0.61.41"Ú
+EGET /apps/common/js/jquery/aacom/plugins/aaGenericPopup.js HTTP/1.1
+Host: www.aa.com
+Connection: keep-alive
+Accept: */*
+vUser-Agent: Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/31.0.1650.63 Safari/537.36
+(Referer: http://www.aa.com/homePage.do
+$Accept-Encoding: gzip,deflate,sdch
+!Accept-Language: en-US,en;q=0.8
+äCookie: v1st=7EA5FF02354CAF63; JSESSIONID=4C0F4AAF1B0090AFE3A5001E623C1AE7; dtCookie=06F4BF3512EFE0A6C157596C94C19D9F|AA.com|1; ROUTEID=.P111A01; homeAirport="wGFH1cxVqs0="; COUNTRY_CODE="UCKRRdXdz9w="; saleCity="wGFH1cxVqs0="
+
+*Ñ
+HTTP/1.1 200 OK
+Server: Apache-Coyote/1.1
+X-dynaTrace-JS-Agent: true
+Accept-Ranges: bytes
+ETag: W/"2453-1387316480000"
+.Last-Modified: Tue, 17 Dec 2013 21:41:20 GMT
+&Content-Type: application/javascript
+Content-Length: 2453
+%Date: Thu, 09 Jan 2014 01:28:20 GMT
+Connection: keep-alive
+—
+function aaGenericPopup(paramUrl,paramWindowName,paramSize,paramWidth,paramHeight){this.height=0;this.width=0;this.url="";this.windowObject=null;this.windowName="";this.size="MEDIUM";this.initValues(paramUrl,paramWindowName,paramSize,paramWidth,paramHeight);}aaGenericPopup.initAnchor=function(element,paramSize,paramWidth,paramHeight){if(element){var href=element.href;var id=element.id;element.onclick=function(evt){if(evt){evt.preventDefault();}else{event.returnValue=false;}aaGenericPopup.open(href,"window_"+id.replace(/-/g,"_"),paramSize,paramWidth,paramHeight);return false;};element.target="_blank";}};aaGenericPopup.prototype.initValues=function(paramUrl,paramWindowName,paramSize,paramWidth,paramHeight){if(paramUrl){this.url=paramUrl;}if(paramWindowName){this.windowName=paramWindowName;}if(paramSize){this.size=paramSize;}this.adjustSize(paramSize,paramWidth,paramHeight);};aaGenericPopup.prototype.adjustSize=function(paramSize,paramWidth,paramHeight){if(paramSize){this.size=paramSize.toUpperCase();switch(this.size){case"SMALL":this.width=300;this.height=300;break;case"LARGE":this.width=850;this.height=500;break;case"SCREEN":this.width=screen.availWidth-50;this.height=screen.availHeight-50;break;case"CUSTOM":try{this.width=parseInt(paramWidth);this.height=parseInt(paramHeight);break;}catch(e){}default:this.width=675;this.height=500;}}};aaGenericPopup.prototype.open=function(paramUrl,paramWindowName,paramSize,paramWidth,paramHeight){this.initValues(paramUrl,paramWindowName,paramSize,paramWidth,paramHeight);var localLeft=Math.floor(screen.availWidth/2)-Math.floor(this.width/2);var localTop=Math.floor(screen.availHeight/2)-Math.floor(this.height/2);var windowFeatures=((this.size=="SCREEN")?"location=1, status=1, scrollbars=1, menubar=1, toolbar=1, resizable=1":"location=0, status=0, scrollbars=1, menubar=0, toolbar=0, resizable=1");this.windowObject=window.open(this.url,this.windowName,windowFeatures+",width="+this.width+",height="+this.height+",top="+localTop+",left="+localLeft);if(this.windowObject!==null){this.windowObject.focus();return this.windowObject;}return;};aaGenericPopup.open=function(url,windowName,paramSize,paramWidth,paramHeight){var obj=new aaGenericPopup(url,windowName,paramSize,paramWidth,paramHeight);obj.open();return false;};jQuery.fn.aaGenericPopup=function(paramSize,paramWidth,paramHeight){var i=0;for(i;i<this.length;i++){aaGenericPopup.initAnchor(this[i],paramSize,paramWidth,paramHeight);}};

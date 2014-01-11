@@ -1,0 +1,166 @@
+PHTTP8.27.149.126"Ò
+$GET /js/Topleft_main08.js HTTP/1.1
+Host: vmedia.rivals.com
+Connection: keep-alive
+Accept: */*
+vUser-Agent: Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/31.0.1650.63 Safari/537.36
+!Referer: http://www.rivals.com/
+$Accept-Encoding: gzip,deflate,sdch
+!Accept-Language: en-US,en;q=0.8
+
+*’L
+HTTP/1.1 200 OK
+%Date: Thu, 09 Jan 2014 01:49:55 GMT
+(Expires: Thu, 09 Jan 2014 22:36:32 GMT
+.Last-Modified: Tue, 21 Oct 2008 14:39:09 GMT
+(Content-Type: application/x-javascript
+ETag: "c8793ac78a33c91:480"
+Accept-Ranges: bytes
+Server: Microsoft-IIS/6.0
+X-Powered-By: ASP.NET
+Cache-Control: max-age=86400
+Content-Length: 9386
+¬I
+function GetHomesite()
+{
+	var arg = 'UICookie=';
+	var alen = arg.length;
+	var clen = document.cookie.length;
+	var i = 0;
+	while (i < clen) {
+		var j = i + alen;
+		if (document.cookie.substring(i, j) == arg) {
+			var endstr = document.cookie.indexOf (";", j);
+			if (endstr == -1) {
+				endstr = document.cookie.length;
+			}
+			var sUICookie = unescape(document.cookie.substring(j, endstr));
+			arg = 'HSite=';
+			alen = arg.length
+			clen = sUICookie.length
+			var z = 0;
+			while (z < clen) {
+				var y = z + alen;
+				if (sUICookie.substring(z, y) == arg) {
+					var endstr = sUICookie.indexOf ("~", z);
+					if (endstr == -1) {
+						endstr = sUICookie.length;
+					}
+					return unescape(sUICookie.substring(z+arg.length, endstr));
+				}
+				z = sUICookie.indexOf("~", z) + 1;
+				if (z == 0) {
+					break;
+				}
+			}
+			return null;
+		}
+		i = document.cookie.indexOf(" ", i) + 1;
+		if (i == 0) {
+			break;
+		}
+	}
+	return null;
+}
+
+function getRCookieVal (offset) {
+	var endstr = document.cookie.indexOf (";", offset);
+	if (endstr == -1)
+		endstr = document.cookie.length;
+	return unescape(document.cookie.substring(offset, endstr));
+}
+
+function getRCookie (name) {
+	var arg = name + "=";
+	var alen = arg.length;
+	var clen = document.cookie.length;
+	var i = 0;
+	while (i < clen) {
+		var j = i + alen;
+		if (document.cookie.substring(i, j) == arg)
+			return getRCookieVal (j);
+		i = document.cookie.indexOf(" ", i) + 1;
+		if (i == 0) break;
+	}
+	return null;
+}
+
+function ReplaceJS(aText, aReplace) {}
+
+function AmILoggedIn() {
+	if (getRCookie('UserID') + '' != '' && getRCookie('UserID') != null) {
+		return true;
+	} else {
+		return false;
+	}
+}
+//here to actually write the stuff.
+//badge
+
+function DrawTopLeft() {
+	var sb=parseInt(getRCookie('Subscription'));
+	var sG=parseInt(getRCookie('GoldStatus'));
+	if (!isNaN(sG))
+	{
+		var sI = 'http://vmedia.rivals.com/images/forum/badge/rr' + getRCookie("GoldStatus") + '.gif';
+	} else {
+		var sI = 'http://vmedia.rivals.com/images/templates/7daybadge.gif';
+	}
+	if(!isNaN(sb))
+	{
+		if(sb==15)
+		{
+			document.write('<a href="http://www.rivals.com/content.asp?SID=1014&CID=149847"><img src="' + sI + '" class="shield"></a>');
+			document.write('<img src="http://vmedia.rivals.com/images/templates/teamsite_arrowrt08.gif">&nbsp;<a href="https://secure.rivals.com/wirelessnssubscribe.asp?sid=1014&plan=4&term=12&up=4:1"><b>Text Alerts</b></a><br>');
+			document.write('<img src="http://vmedia.rivals.com/images/templates/teamsite_arrowrt08.gif">&nbsp;<a href="http://footballrecruiting.rivals.com/"><b>Recruiting Updates</b></a><br>');
+			document.write('<img src="http://vmedia.rivals.com/images/templates/teamsite_arrowrt08.gif">&nbsp;<a href="/rfstart.asp">My Fan Page</a><br>');
+			document.write('<img src="http://vmedia.rivals.com/images/templates/teamsite_arrowrt08.gif">&nbsp;<a href="/content.asp?cid=45867">Member Services</a><br>');
+		}
+		else if(sb==13)
+		{
+			document.write('<a href="http://www.rivals.com/content.asp?SID=1014&CID=149847"><img src="' + sI + '" class="shield"></a>');
+			document.write('<img src="http://vmedia.rivals.com/images/templates/teamsite_arrowrt08.gif">&nbsp;<a href="/nsupgrade.asp"><b>FREE Text Alerts</b></a><br>');
+			document.write('<img src="http://vmedia.rivals.com/images/templates/teamsite_arrowrt08.gif">&nbsp;<a href="/nsupgrade.asp">Upgrade Now!</a><br>');
+			document.write('<img src="http://vmedia.rivals.com/images/templates/teamsite_arrowrt08.gif">&nbsp;<a href="/rfstart.asp">My Fan Page</a><br>');
+			document.write('<img src="http://vmedia.rivals.com/images/templates/teamsite_arrowrt08.gif">&nbsp;<a href="/content.asp?cid=45867">Member Services</a><br>');
+		}
+		else if(sb==5)
+		{
+			if (SiteType != 5)
+			{
+				document.write('<a href=https://secure.rivals.com/subscribe.asp?sid=' + Site + '&strk=urcnew><img src="http://vmedia.rivals.com/images/templates/7daybadge.gif" class="shield" border=0></a><img src=http://vmedia.rivals.com/images/templates/teamsite_arrowrt08.gif> <a href="TopLeftPop.asp?id=1" onclick="window.open (\'TopLeftPop.asp?id=1\',\'new\',\'width=640,height=480\'); return false;">Detailed Recruiting Scoop</a><br>');
+				document.write('<img src=http://vmedia.rivals.com/images/templates/teamsite_arrowrt08.gif> <a href="TopLeftPop.asp?id=2" onclick="window.open (\'TopLeftPop.asp?id=2\',\'new\',\'width=640,height=480\'); return false;">Exclusive Prospect Videos</a><br>');
+				document.write('<img src=http://vmedia.rivals.com/images/templates/teamsite_arrowrt08.gif> <a href="TopLeftPop.asp?id=3" onclick="window.open (\'TopLeftPop.asp?id=3\',\'new\',\'width=640,height=480\'); return false;">Expert Message Boards</a><br>');
+				document.write('<img src=http://vmedia.rivals.com/images/templates/teamsite_arrowrt08.gif> <a href=https://secure.rivals.com/subscribe.asp?sid=' + Site + '&strk=rmastnew><font color=#0A4EA3><b>Subscribe Now!</b></font></a>');
+			} else {
+				document.write('<a href=https://secure.rivals.com/subscribe.asp?sid=' + Site + '&strk=urcnew><img src="http://vmedia.rivals.com/images/templates/7daybadgeexpert.gif" class="shield" border=0></a><img src=http://vmedia.rivals.com/images/templates/teamsite_arrowrt08.gif> <a href="TopLeftPop.asp?id=1" onclick="window.open (\'TopLeftPop.asp?id=1\',\'new\',\'width=640,height=480\'); return false;">Detailed Recruiting Scoop</a><br>');
+				document.write('<img src=http://vmedia.rivals.com/images/templates/teamsite_arrowrt08.gif> <a href="TopLeftPop.asp?id=2" onclick="window.open (\'TopLeftPop.asp?id=2\',\'new\',\'width=640,height=480\'); return false;">Exclusive Prospect Videos</a><br>');
+				document.write('<img src=http://vmedia.rivals.com/images/templates/teamsite_arrowrt08.gif> <a href="TopLeftPop.asp?id=3" onclick="window.open (\'TopLeftPop.asp?id=3\',\'new\',\'width=640,height=480\'); return false;">Expert Message Boards</a><br>');
+				document.write('<img src=http://vmedia.rivals.com/images/templates/teamsite_arrowrt08.gif> <a href=https://secure.rivals.com/subscribe.asp?sid=' + Site + '&strk=rmastnew><font color=#0A4EA3><b>Subscribe Now!</b></font></a>');
+			}
+		}
+		else
+		{
+			document.write('<a href="http://www.rivals.com/content.asp?SID=1014&CID=149847"><img src="' + sI + '" class="shield"></a>');
+			document.write('<img src="http://vmedia.rivals.com/images/templates/teamsite_arrowrt08.gif">&nbsp;<a href="/nsupgrade.asp"><b>FREE Text Alerts</b></a><br>');
+			document.write('<img src="http://vmedia.rivals.com/images/templates/teamsite_arrowrt08.gif">&nbsp;<a href="/nsupgrade.asp">Upgrade Now!</a><br>');
+			document.write('<img src="http://vmedia.rivals.com/images/templates/teamsite_arrowrt08.gif">&nbsp;<a href="/rfstart.asp">My Fan Page</a><br>');
+			document.write('<img src="http://vmedia.rivals.com/images/templates/teamsite_arrowrt08.gif">&nbsp;<a href="/content.asp?cid=45867">Member Services</a><br>');
+		}
+	}
+	else
+	{
+		if (SiteType != 5)
+		{
+			document.write('<a href=https://secure.rivals.com/subscribe.asp?sid=' + Site + '&strk=urcnew><img src="http://vmedia.rivals.com/images/templates/7daybadge.gif" class="shield" border=0></a><img src=http://vmedia.rivals.com/images/templates/teamsite_arrowrt08.gif> <a href="TopLeftPop.asp?id=1" onclick="window.open (\'TopLeftPop.asp?id=1\',\'new\',\'width=640,height=480\'); return false;">Detailed Recruiting Scoop</a><br>');
+			document.write('<img src=http://vmedia.rivals.com/images/templates/teamsite_arrowrt08.gif> <a href="TopLeftPop.asp?id=2" onclick="window.open (\'TopLeftPop.asp?id=2\',\'new\',\'width=640,height=480\'); return false;">Exclusive Prospect Videos</a><br>');
+			document.write('<img src=http://vmedia.rivals.com/images/templates/teamsite_arrowrt08.gif> <a href="TopLeftPop.asp?id=3" onclick="window.open (\'TopLeftPop.asp?id=3\',\'new\',\'width=640,height=480\'); return false;">Expert Message Boards</a><br>');
+			document.write('<img src=http://vmedia.rivals.com/images/templates/teamsite_arrowrt08.gif> <a href=https://secure.rivals.com/subscribe.asp?sid=' + Site + '&strk=rmastnew><font color=#0A4EA3><b>Subscribe Now!</b></font></a>');
+		} else {
+			document.write('<a href=https://secure.rivals.com/subscribe.asp?sid=' + Site + '&strk=urcnew><img src="http://vmedia.rivals.com/images/templates/7daybadgeexpert.gif" class="shield" border=0></a><img src=http://vmedia.rivals.com/images/templates/teamsite_arrowrt08.gif> <a href="TopLeftPop.asp?id=1" onclick="window.open (\'TopLeftPop.asp?id=1\',\'new\',\'width=640,height=480\'); return false;">Detailed Recruiting Scoop</a><br>');
+			document.write('<img src=http://vmedia.rivals.com/images/templates/teamsite_arrowrt08.gif> <a href="TopLeftPop.asp?id=2" onclick="window.open (\'TopLeftPop.asp?id=2\',\'new\',\'width=640,height=480\'); return false;">Exclusive Prospect Videos</a><br>');
+			document.write('<img src=http://vmedia.rivals.com/images/templates/teamsite_arrowrt08.gif> <a href="TopLeftPop.asp?id=3" onclick="window.open (\'TopLeftPop.asp?id=3\',\'new\',\'width=640,height=480\'); return false;">Expert Message Boards</a><br>');
+			document.write('<img src=http://vmedia.rivals.com/images/templates/teamsite_arrowrt08.gif> <a href=https://secure.rivals.com/subscribe.asp?sid=' + Site + '&strk=rmastnew><font color=#0A4EA3><b>Subscribe Now!</b></font></a>');
+		}
+	}
+}

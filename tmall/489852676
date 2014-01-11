@@ -1,0 +1,31 @@
+PHTTP66.102.255.51"Ï
+GET /_blank HTTP/1.1
+Host: www.tmall.com
+Connection: keep-alive
+Accept: image/webp,*/*;q=0.8
+vUser-Agent: Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/31.0.1650.63 Safari/537.36
+ Referer: http://www.tmall.com/
+$Accept-Encoding: gzip,deflate,sdch
+!Accept-Language: en-US,en;q=0.8
+Cookie: mall_fp_ab=2012b
+
+*ù
+HTTP/1.1 302 Found
+Server: Tengine
+%Date: Thu, 09 Jan 2014 01:58:37 GMT
+Content-Type: text/html
+Content-Length: 260
+Connection: keep-alive
+,Location: http://err.tmall.com/error1.html
+(Expires: Fri, 10 Jan 2014 01:58:37 GMT
+Cache-Control: max-age=86400
+Ü
+<!DOCTYPE HTML PUBLIC "-//IETF//DTD HTML 2.0//EN">
+<html>
+<head><title>302 Found</title></head>
+<body bgcolor="white">
+<h1>302 Found</h1>
+<p>The requested resource resides temporarily under a different URI.</p>
+<hr/>Powered by Tengine
+</body>
+</html>

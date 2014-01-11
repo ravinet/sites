@@ -1,0 +1,30 @@
+PHTTP54.240.190.110"Ï
+GET /ci.js HTTP/1.1
+Host: cdn.clickigniter.io
+Connection: keep-alive
+Accept: */*
+vUser-Agent: Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/31.0.1650.63 Safari/537.36
++Referer: http://www.wikihow.com/Main-Page
+$Accept-Encoding: gzip,deflate,sdch
+!Accept-Language: en-US,en;q=0.8
+
+*Á
+HTTP/1.1 200 OK
+&Content-Type: application/javascript
+Content-Length: 2144
+Connection: keep-alive
+%Date: Sun, 08 Dec 2013 05:14:41 GMT
+.Last-Modified: Sun, 08 Dec 2013 05:10:55 GMT
+*ETag: "32bfbc90973e324d7bf7e86dcc0a9349"
+Accept-Ranges: bytes
+Server: AmazonS3
+Age: 69961
+X-Cache: Hit from cloudfront
+GVia: 1.1 8f0e6ba4c9ff544801a4fcd5734dec0a.cloudfront.net (CloudFront)
+GX-Amz-Cf-Id: 4dbdXR1uWig975SwxxTZPzPox1MRl5kfmfpJxU4pvSZQG7RI7UkC_g==
+â
+(function(b,c,l,m,g){function s(a,b,e){if(e){var d=new Date;d.setTime(d.getTime()+864E5*e);e="; expires\x3d"+d.toGMTString()}else e="";c.cookie=a+"\x3d"+b+e+"; path\x3d/"}function t(a){a+="\x3d";for(var b=c.cookie.split(";"),e=0;e<b.a;e++){for(var d=b[e];" "==d.c(0);)d=d.b(1,d.a);if(0==d.d(a))return d.b(a.a,d.a)}return null}function v(a,c){a.addEventListener?a.addEventListener("scroll",c,!1):a.attachEvent("onscroll",function(){return c.call(a,b.event)})}function n(){var a=(new Date).getTime();return"xxxxxxxx-xxxx-4xxx-yxxx-xxxxxxxxxxxx".replace(/[xy]/g,
+function(b){var c=(a+16*g.random())%16|0;a=g.floor(a/16);return("x"==b?c:c&7|8).toString(16)})}function u(){return c&&c.scrollTop||f&&f.scrollTop||0}function w(){var a=u();a>p&&(p=a);a=100*((u()+(b.innerHeight||c.documentElement.clientHeight||f.clientHeight||0))/g.max(f.scrollHeight||0,q.scrollHeight||0,f.offsetHeight||0,q.offsetHeight||0,f.clientHeight||0,q.clientHeight||0));a>r&&(r=g.floor(a))}function x(){b.ci("unbounce")}function y(){b.ci("stuck")}var f=c.body,q=c.documentElement,p=0,r=0,h=t("__cip"),
+k=t("__cit"),z=n();h||(h=n(),s("__cip",h,365));k||(k=n(),s("__cit",k));b.ci=function(a){(new Image).src=b.cigif(a)};b.cigif=function(a){return"http://cs.clickigniter.io/__req.gif?ts\x3d"+encodeURIComponent((new Date).getTime())+"\x26uid\x3d"+encodeURIComponent(h)+"\x26sid\x3d"+encodeURIComponent(k)+"\x26pvid\x3d"+encodeURIComponent(z)+"\x26dc\x3d"+encodeURIComponent(c.cookie)+"\x26ua\x3d"+encodeURIComponent(l.userAgent)+"\x26l\x3d"+encodeURIComponent(l.language)+"\x26os\x3d"+encodeURIComponent(l.platform)+
+"\x26scd\x3d"+encodeURIComponent(m.colorDepth)+"\x26scrh\x3d"+encodeURIComponent(m.height)+"\x26scrw\x3d"+encodeURIComponent(m.width)+"\x26cu\x3d"+encodeURIComponent(b.location.href)+"\x26ref\x3d"+encodeURIComponent(c.referrer)+"\x26sppx\x3d"+encodeURIComponent(p)+"\x26sppc\x3d"+encodeURIComponent(r)+"\x26jsv\x3d"+encodeURIComponent("0.1")+"\x26rs\x3d"+g.random().toString(36).substr(2,16)+"\x26e\x3d"+encodeURIComponent(a)};b.cis=function(){b.setTimeout(x,15E3);b.setTimeout(y,18E4);b.ci("pageview");
+v(b,w)};b.cis()})(window,document,navigator,screen,Math);

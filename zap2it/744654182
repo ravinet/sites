@@ -1,0 +1,36 @@
+»HTTPS70.33.182.206"Ö
+“GET /at.js?sessionid=0f095478-d3df-4d5f-b98f-68dbbdcbf04c&go=240738&xid=&ida=&sb=&osid=1a04b95f-2b54-4af1-a372-2d4a6c509e64&pid=216&id1= HTTP/1.1
+Host: ibeu2.mookie1.com
+Connection: keep-alive
+Accept: */*
+vUser-Agent: Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/31.0.1650.63 Safari/537.36
+IReferer: http://bcp.crwdcntrl.net/px?Yz0yNjUxJnB4aWQ9NTcwMzAsNTU0NDk%3D
+$Accept-Encoding: gzip,deflate,sdch
+!Accept-Language: en-US,en;q=0.8
+éCookie: id=985272520074447; mdata=1|985272520074447|1389367272; OAX=UxXQxVLQD+gAApcs; ibkukiuno=s=781df74c-2342-4dc6-a24d-a583ec48df46&h=&v=0&l=-8588122396112805069&op=0&m=3001023436102239; ibkukinet=2149469239=-8588122396112805069
+
+*Î
+HTTP/1.1 200 OK
+Cache-Control: no-cache
+Pragma: no-cache
+5Content-Type: application/javascript; charset=utf-8
+Expires: -1
+Server: Microsoft-IIS/7.5
+)p3p: CP=\"DSP COR ADM DEV PSA PSD OUR\"
+X-AspNet-Version: 4.0.30319
+ÇSet-Cookie: ibkukiuno=s=781df74c-2342-4dc6-a24d-a583ec48df46&h=&v=0&l=-8588122396112438572&op=0&m=3001023436102239; domain=ibeu2.mookie1.com; expires=Sat, 10-Jan-2015 15:21:14 GMT; path=/; HttpOnly
+?Set-Cookie: ibkukinet=2149469239=-8588122396112438572; path=/
+X-Powered-By: ASP.NET
+'p3p: CP="DSP COR ADM DEV PSA PSD OUR"
+%Date: Fri, 10 Jan 2014 15:21:13 GMT
+Content-Length: 1614
+Ð
+
+({ProcessTags:function(){try{
+this._ixtg('http://uav.tidaltv.com/3PDPHandler.aspx?tpdp=60&segs=');this._ixtg('http://cm.g.doubleclick.net/pixel?google_nid=ibehavior&google_cm&google_sc&pid=220&go=240800&m=');
+(typeof _cb_r==='undefined')||_cb_r();}
+catch(e){}},_cauxtg:function(sc){try{var s=window.document.createElement("script");s.setAttribute("type","text/javascript");s.setAttribute("src",sc);window.document.getElementsByTagName("head")[0].appendChild(s);}
+catch(e){}},_ixtg:function(s){try{if(document.images){var i=new Image(1,1);i.src=s;}}
+catch(e){}},_ifxtg:function(s){try{var d=document.createElement("div"),f=document.createElement("iframe");d.setAttribute("id","_dvR_xT");document.body.insertBefore(d,document.body.childNodes[0]);f.setAttribute("width","0");f.setAttribute("height","0");f.setAttribute("scrolling","no");f.setAttribute("frameborder","0");f.setAttribute("marginheight","0");f.setAttribute("marginwidth","0");f.setAttribute("src",s);d.appendChild(f);}
+catch(e){}},Sknk:function(){try{var ibp=(self.IBPartner)?new IBPartner():null,xid=''||((ibp)?ibp.Xid:''),ida=''||((ibp)?ibp.Ida:''),pid='216'||((ibp)?ibp.Pid:''),s=window.document.createElement('img');s.setAttribute('src','https://ibeu2.mookie1.com/image.ibv?sessionid=781df74c-2342-4dc6-a24d-a583ec48df46&go=240738&xid='+xid+'&ida='+ida+'&pid='+pid+'&osid=1a04b95f-2b54-4af1-a372-2d4a6c509e64&puburl='+encodeURIComponent(document.referrer)+'&advurl='+encodeURIComponent(document.location));s.setAttribute('style','display: none;');window.document.getElementsByTagName('body')[0].appendChild(s);}
+catch(e){}}}).ProcessTags();

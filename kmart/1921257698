@@ -1,0 +1,28 @@
+PHTTP107.23.244.227"â	
+²GET /event?d_nsid=0&d_ld=_ts%3D1389229945345&c_pageName=Homepage%20%3E%20Kmart&c_channel=Homepage&c_prop1=Homepage&c_prop2=Homepage&c_prop3=Homepage&c_prop9=1234567&c_prop13=Homepage&c_eVar17=Not%20Provided&c_prop18=Homepage&c_prop23=Sears%20ASAP%3AHomepage%20%3E%20Kmart&c_eVar23=Other&c_eVar25=Homepage&c_prop27=Homepage&c_prop28=Homepage&c_eVar30=Anonymous&c_prop35=Sears%20ASAP&c_eVar41=Homepage%20%3E%20Homepage&c_eVar45=Anonymous&c_eVar52=nh&c_prop54=D%3Dg&c_prop57=TI%20Points%20NA%2C%20TEC%204%20Box%20NA%2C%20TEC%20Visual%20Nav%20NA&c_eVar57=Sears%20ASAP&c_prop58=1&c_eVar75=Homepage&d_rtbd=json&d_jsonv=1&d_dst=1&d_cts=1&d_cb=demdexRequestCallback_sears_0_1389229945345 HTTP/1.1
+Host: sears.demdex.net
+Connection: keep-alive
+Accept: */*
+vUser-Agent: Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/31.0.1650.63 Safari/537.36
+ Referer: http://www.kmart.com/
+$Accept-Encoding: gzip,deflate,sdch
+!Accept-Language: en-US,en;q=0.8
+€Cookie: demdex=52590699692646912263622898365097752899; sears=52590699692646912263622898365097752899; DexLifeCycle="MA==|NzM1MjM9MToxODM0LDczNTI4PTE6MTgzNCw3NDYwNz0xOjE4MzQsODYyODk9MToxODM0LDI1NjE5MT0xOjE4MzQ=|MA==|MTQ2MTMsMTMzMzIsNDM2MTQ=|MA==|MA==|MA=="
+
+*’
+HTTP/1.1 200 OK
+bCache-Control: no-cache,no-store,must-revalidate,max-age=0,proxy-revalidate,no-transform,private
+4Content-Type: application/javascript;charset=UTF-8
+3DCS: va6-dcsAS1-10-89-2-80.va6.demdex.com 1.15.34
+(Expires: Thu, 01 Jan 2009 00:00:00 GMT
+cP3P: policyref="/w3c/p3p.xml", CP="NOI NID CURa ADMa DEVa PSAa PSDa OUR SAMa BUS PUR COM NAV INT"
+Pragma: no-cache
+ Server: Jetty(7.6.8.v20121106)
+…Set-Cookie: DexLifeCycle="MA==|NzM1MjM9MToxODM0LDczNTI4PTE6MTgzNCw3NDYwNz0xOjE4MzQsODYyODk9MToxODM0LDI1NjE5MT0xOjE4MzQ=|MA==|MTQ2MTMsNzMwNTMsMTMzMzIsNDM2MTQsNzMwNTEsNzMwNTI=|MA==|MA==|MA==";Path=/;Domain=.sears.demdex.net;Expires=Sat, 09-Jan-2016 01:12:13 GMT
+uSet-Cookie: dextp=269-1-1389229933|481-1-1389229933;Path=/;Domain=.demdex.net;Expires=Sat, 09-Jan-2016 01:12:13 GMT
+RSet-Cookie: DST=;Path=/;Domain=.demdex.net;Expires=Sat, 09-Jan-2016 01:12:13 GMT
+	STS: OK
+Content-Length: 599
+Connection: keep-alive
+Ù
+demdexRequestCallback_sears_0_1389229945345({"dests":[],"stuff":[{"cn":"aamsears","cv":"aam=2","ttl":30,"dmn":""}],"ibs":[{"id":"269","ttl":10080,"tag":"img","url":["//sync.mathtag.com/sync/img?mt_exid=10004&mt_exuid=52590699692646912263622898365097752899&redir=http%3A%2F%2Fdpm.demdex.net%2Fibs%3Adpid%3D269%26dpuuid%3D[MM_UUID]%26ddsuuid%3d52590699692646912263622898365097752899"]},{"id":"481","ttl":14400,"tag":"img","url":["//tap.rubiconproject.com/oz/feeds/adobe/tokens?afu=52590699692646912263622898365097752899"]}],"dpcalls":[],"uuid":"52590699692646912263622898365097752899","dcs_region":7})

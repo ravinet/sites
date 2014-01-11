@@ -1,0 +1,34 @@
+PHTTP54.230.53.13"â
+GET /crossdomain.xml HTTP/1.1
+Host: chibis.adotube.com
+Connection: keep-alive
+vUser-Agent: Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/31.0.1650.63 Safari/537.36
+Accept: */*
+5Referer: http://www.worldstarhiphop.com/embed/65971
+$Accept-Encoding: gzip,deflate,sdch
+!Accept-Language: en-US,en;q=0.8
+
+*€
+HTTP/1.1 200 OK
+Content-Type: text/xml
+Content-Length: 205
+Connection: keep-alive
+%Date: Sun, 03 Nov 2013 19:37:41 GMT
+Ax-amz-meta-bucketexplorer-md5: e698d91d297773e3bd863d6792a1a133
+Jx-amz-meta-bucketexplorer-sha1: 79bfcd6f9c2f01c39c76d74d9d58163a4ee922aa
+7x-amz-meta-md5-hash: e698d91d297773e3bd863d6792a1a133
+.Last-Modified: Tue, 02 Jun 2009 23:08:39 GMT
+x-amz-version-id: null
+*ETag: "e698d91d297773e3bd863d6792a1a133"
+Accept-Ranges: bytes
+Server: AmazonS3
+Age: 6867
+X-Cache: Hit from cloudfront
+GVia: 1.1 0b9000fa8338c559b82c68ee02af81cf.cloudfront.net (CloudFront)
+GX-Amz-Cf-Id: nJhePmtqigricLKZRAT_i0eF485gT-QFvWAD5bG9wbWgTw1EtJ5vTQ==
+Ï
+<?xml version="1.0"?>
+<!DOCTYPE cross-domain-policy SYSTEM "http://www.macromedia.com/xml/dtds/cross-domain-policy.dtd">
+<cross-domain-policy>
+   <allow-access-from domain="*" />
+</cross-domain-policy>

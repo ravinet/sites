@@ -1,0 +1,17 @@
+PHTTP66.117.23.106"ç
+µGET /m2/orbitz/mbox/standard?mboxHost=www.orbitz.com&mboxSession=1389275469494-758973&mboxPage=1389275469494-758973&screenHeight=1200&screenWidth=1920&browserWidth=937&browserHeight=1051&browserTimeOffset=-300&colorDepth=24&mboxCount=1&863=647&countryCode=US&visitorType=NonRecognized_NonCookied&locale=en_US&mbox=test_home100&mboxId=0&mboxTime=1389257469507&mboxURL=http%3A%2F%2Fwww.orbitz.com%2F&mboxReferrer=&mboxVersion=39 HTTP/1.1
+Host: orbitz.tt.omtrdc.net
+Connection: keep-alive
+Accept: */*
+vUser-Agent: Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/31.0.1650.63 Safari/537.36
+!Referer: http://www.orbitz.com/
+$Accept-Encoding: gzip,deflate,sdch
+!Accept-Language: en-US,en;q=0.8
+
+*Ê
+HTTP/1.1 200 OK
+Content-Length: 93
+%Date: Thu, 09 Jan 2014 13:50:56 GMT
+Server: Test & Target
+_
+mboxFactories.get('default').get('test_home100',0).setOffer(new mboxOfferDefault()).loaded();

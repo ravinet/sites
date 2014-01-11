@@ -1,0 +1,35 @@
+PHTTP8.12.226.166"˚
+-GET /ps/ps?t=s&tc=240821077&p=1068 HTTP/1.1
+Host: gtag.yieldoptimizer.com
+Connection: keep-alive
+Accept: */*
+vUser-Agent: Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/31.0.1650.63 Safari/537.36
+ Referer: http://www.delta.com/
+$Accept-Encoding: gzip,deflate,sdch
+!Accept-Language: en-US,en;q=0.8
+Cookie: cktst=240821077
+
+*≠
+
+HTTP/1.1 200 OK
+Server: Apache-Coyote/1.1
+Cache-Control: no-cache
+Pragma: no-cache
+(Expires: Thu, 01 Jan 1970 00:00:00 GMT
+CP3P: CP="NON DSP COR TAIo PSAo PSDo HISo OUR BUS UNI INT DEM OTC"
+jSet-Cookie: ckid=202143599954; Domain=.yieldoptimizer.com; Expires=Sat, 09-Jan-2016 01:03:53 GMT; Path=/
+êSet-Cookie: dph=%7B%22t%22%3A%5B44017%5D%2C%22dp%22%3A%5B1068%5D%7D; Domain=.yieldoptimizer.com; Expires=Sat, 09-Jan-2016 01:03:53 GMT; Path=/
+¥Set-Cookie: ph=%7B%22t%22%3A%5B44017%2C44017%2C44017%2C44017%5D%2C%22p%22%3A%5B273%2C39%2C9%2C841%5D%7D; Domain=.yieldoptimizer.com; Expires=Sat, 09-Jan-2016 01:03:53 GMT; Path=/
+Content-Type: text/javascript
+Content-Length: 581
+%Date: Thu, 09 Jan 2014 01:03:53 GMT
+«
+var om_app_pix = new Array();
+om_app_pix[0] = new Image();
+om_app_pix[0].src = "http://ib.adnxs.com/setuid?entity=6&code=202143599954";
+om_app_pix[1] = new Image();
+om_app_pix[1].src = "http://www.googleadservices.com/pagead/conversion/1044284962/?label=PW19CPrOuQIQooz68QM&amp;guid=ON&amp;script=0";
+om_app_pix[2] = new Image();
+om_app_pix[2].src = "http://cm.g.doubleclick.net/pixel?google_nid=yo&google_hm=MjAyMTQzNTk5OTU0&google_sc&google_cm";
+om_app_pix[3] = new Image();
+om_app_pix[3].src = "http://r.openx.net/set?pid=5faa58d8-ff03-b2a6-9681-ce1b62826243&rtb=202143599954";

@@ -1,0 +1,42 @@
+PHTTP192.16.70.73"î
+GET /crossdomain.xml HTTP/1.1
+#Host: video15.jfk01.hls.twitch.tv
+Connection: keep-alive
+vUser-Agent: Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/31.0.1650.63 Safari/537.36
+Accept: */*
+ Referer: http://www.twitch.tv/
+$Accept-Encoding: gzip,deflate,sdch
+!Accept-Language: en-US,en;q=0.8
+•Cookie: language=en; _twitch_session_id=6ff049b46306561cf522b47803f34d07; mp_809576468572134f909dffa6bd0dcfcf_mixpanel=%7B%22distinct_id%22%3A%20%221437835914790-059c37c5c-14281008-232800-14378359148aa9%22%2C%22%24initial_referrer%22%3A%20%22%24direct%22%2C%22%24initial_referring_domain%22%3A%20%22%24direct%22%7D; __qca=P0-1517455926-1389291213160; __utma=165406266.102143833.1389291213.1389291213.1389291213.1; __utmb=165406266.0.10.1389291213; __utmc=165406266; __utmz=165406266.1389291213.1.1.utmcsr=(direct)|utmccn=(direct)|utmcmd=(none); __gads=ID=206b779ce22a397c:T=1389291201:S=ALNI_MYfH5N9IKUN99RRoCpsRV8rIs2DOQ; unique_id=7MeCJtg; feature_bucket=59
+
+*“
+HTTP/1.1 200 OK
+Server: nginx
+%Date: Thu, 09 Jan 2014 18:13:23 GMT
+Content-Type: text/xml
+Content-Length: 1297
+.Last-Modified: Sat, 16 Nov 2013 01:47:52 GMT
+Connection: keep-alive
+Cache-Control: max-age=900
+Accept-Ranges: bytes
+“
+
+<?xml version="1.0"?>
+<!DOCTYPE cross-domain-policy 
+  SYSTEM "http://www.macromedia.com/xml/dtds/cross-domain-policy.dtd">
+<cross-domain-policy>
+  <allow-access-from domain="*.justin.tv" secure="false" to-ports="*" />
+  <allow-access-from domain="*.staging.justin.tv" secure="false" to-ports="*" />
+  <allow-access-from domain="*.jtvnw.net" secure="false" to-ports="*" />
+  <allow-access-from domain="localhost" to-ports="*" />
+  <allow-access-from domain="*.twitch.tv" secure="false" to-ports="*" />
+  <allow-access-from domain="*.staging.twitch.tv" secure="false" to-ports="*" />
+  <allow-access-from domain="*.newjtv.com" secure="false" to-ports="*" />
+  <allow-http-request-headers-from domain="*.justin.tv" secure="false" headers="*" />
+  <allow-http-request-headers-from domain="*.staging.justin.tv" secure="false" headers="*" />
+  <allow-http-request-headers-from domain="*.jtvnw.net" secure="false" headers="*" />
+  <allow-http-request-headers-from domain="localhost" secure="false" headers="*" />
+  <allow-http-request-headers-from domain="*.twitch.tv" secure="false" headers="*" />
+  <allow-http-request-headers-from domain="*.staging.twitch.tv" secure="false" headers="*" />
+  <allow-http-request-headers-from domain="*.newjtv.com" secure="false" headers="*" />
+</cross-domain-policy>

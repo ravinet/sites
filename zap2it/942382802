@@ -1,0 +1,83 @@
+PHTTP54.225.123.241"Ç
+GET /s1.js?d=142 HTTP/1.1
+Host: tag.crsspxl.com
+Connection: keep-alive
+Accept: */*
+vUser-Agent: Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/31.0.1650.63 Safari/537.36
+!Referer: http://www.zap2it.com/
+$Accept-Encoding: gzip,deflate,sdch
+!Accept-Language: en-US,en;q=0.8
+
+*ì
+HTTP/1.1 200 OK
+&Cache-control: no-cache="set-cookie"
+Content-Type: text/javascript
+%Date: Fri, 10 Jan 2014 15:21:11 GMT
+LP3P: CP="IDC DSP COR ADM DEVi TAIi PSA PSD IVAi IVDi CONi HIS OUR IND CNT"
+Server: Apache-Coyote/1.1
+iSet-Cookie: uid=2389153574916817522; Domain=.crsspxl.com; Expires=Sun, 09-Feb-2014 15:21:12 GMT; Path=/
+³Set-Cookie: AWSELB=9913690D08DFC9CCE08CF79DE69908F135176B53EFF42F5BA94B7696209D48BFD3AA20FF182AA72B98D1376090350691A7ACFED32AF8D84C6527B0E7A1C393BBE5F8CC8FD2;PATH=/;MAX-AGE=3600
+Content-Length: 2086
+Connection: keep-alive
+¨
+try {
+   var d = top.document; 
+  function crsspxl(z) {
+           if(d.body == null || typeof d.body == 'undefined'){
+               if(z < 2500){
+                   var rec = function() { crsspxl(z * 2); };
+                   setTimeout(rec, z);
+               }
+           }
+           else {
+               var l = 'http://tag.crsspxl.com/s2.html?d=142',i,j;
+               try {
+                   var e = (top.document) ? top.document.referrer : false;
+                   var a, f, q, r;
+                   if (e) {
+                       a = e.split('?q=');
+                       a = a.length < 2 ? a[0].split('&q=') : a;
+                       a = a.length < 2 ? a[0].split('?p=') : a;
+                       f = a.length > 1 ? a[1].split('&') : '';
+                       q = f.length >= 1 ? f[0] : '';
+                       r = e.split('http://');
+                       r = r.length > 1 ? r[1].split('/') : r[0].split('/');
+                       r = r[0];
+                       if (q && r) {
+                           l += "&q=" + q + "&r=" + r;
+                       }
+                   }
+               } catch(er) {
+           }
+           var u = encodeURIComponent(d.URL);
+           l += "&u=" + u;
+           try {
+               var g=d.getElementById('crsspxl_494810001');
+               if(typeof(g)!='undefined' && g!=null){
+                   g.setAttribute('src', l);
+               }
+               else{
+                   g=d.createElement('IFRAME');
+                   g.width=1;
+                   g.height=1;
+                   g.frameBorder=0;
+                   g.border=0;
+                   g.marginwidth=0;
+                   g.marginheight=0;
+                   g.setAttribute('width', '1');
+                   g.setAttribute('height', '1');
+                   g.setAttribute('style', 'visibility:hidden;position:absolute;border:medium none');
+                   g.setAttribute('src', l);
+                   d.body.appendChild(g);
+               }
+           }catch(er){
+       }
+   }
+}
+
+try {
+   crsspxl(100);
+} catch(er) {
+}
+} catch(er) {
+}

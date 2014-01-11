@@ -1,0 +1,21 @@
+PHTTP54.204.20.157"¡
+îGET /trk/4/s/a-a745af8f/p/nike.com/164808895-0?mr=t1389205781&mi='2.742805471.1389275448877'&mt=!n&cs=!t&e=!(gr,viewPage)&pt=main&cv=(NIKE_COMMERCE_COUNTRY:US,NIKE_COMMERCE_LANG_LOCALE:en_US,disjointGroup:'71',isMobile:false)&r='http://www.nike.com/'&sw=1920&sh=1200&sc=24&j=!t&tg=!(!(26),!(24),!(25))&u='http://www.nike.com/us/en_us/'&fl=!t&hvc=!t&eoq=!t HTTP/1.1
+Host: d.monetate.net
+Connection: keep-alive
+Accept: */*
+vUser-Agent: Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/31.0.1650.63 Safari/537.36
+(Referer: http://www.nike.com/us/en_us/
+$Accept-Encoding: gzip,deflate,sdch
+!Accept-Language: en-US,en;q=0.8
+
+*Â
+HTTP/1.0 200 OK
+Content-Length: 596
+(Expires: Wed, 09 Jan 2013 13:50:36 GMT
+Server: Monetate
+Cache-Control: no-cache
+%Date: Thu, 09 Jan 2014 13:50:36 GMT
+(Content-Type: application/x-javascript
+Connection: close
+Ö
+monetate.r4("164808895-0",[{"args":[{"ref":"280/130178.js"}],"actionId":265372,"op":"jsCreative"},{"args":[{"content":".free-returns.promo-2{display:none !important;}\n\n.free-shipping.promo-1{border-right: 0px !important;}\n\n#registerForm > div.ch4_regColumn + div.ch4_regColumn {display:none;}\n  \n\n\n   ","discriminator":"content","ref":"280/99338.css","type":"css"}],"actionId":196060,"op":"insertCSS"},{"args":[["pw0013-action-ac"]],"op":"sr"},{"eventId":63,"args":["body > div:eq(1) > nav.gnav > div.tier0 > div.search.nav-section > form.search-container.has-focus"],"op":"trackForm"}]);

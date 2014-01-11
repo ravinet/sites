@@ -1,0 +1,306 @@
+PHTTP64.94.118.77"â
+GET / HTTP/1.1
+Host: www.authorize.net
+Connection: keep-alive
+TAccept: text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8
+vUser-Agent: Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/31.0.1650.63 Safari/537.36
+$Accept-Encoding: gzip,deflate,sdch
+!Accept-Language: en-US,en;q=0.8
+
+*¦ª
+HTTP/1.1 200 OK
+%Date: Thu, 09 Jan 2014 13:41:42 GMT
+Server: Apache
+Connection: close
+Transfer-Encoding: chunked
+Content-Type: text/html
+ˆ©
+1000
+<!DOCTYPE html>
+<html>
+<head>
+ <title>Payment Gateway: Accept Online Payments, Credit Card Processing, Fraud Prevention</title>
+ <meta charset="utf-8">
+ <meta name="description" content="Payment gateway enables internet merchants to accept online payments via credit card and e-check.">
+ <meta name="keywords" content="payment gateway, online payments, accept online payments, merchant, merchant services, internet merchant, credit card services, echeck">
+ <meta name="author" content="Authorize.Net">
+ <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+ <meta name="google-site-verification" content="wpvkXBZZhYs2dds8zqmkC8h-GdssBj3NThDdD7c-pqQ">
+ <link rel="stylesheet" href="/resources/css/common.css?v=20131015" type="text/css" media="all" />
+ <link rel="stylesheet" href="/resources/css/home.css?v=20130709" type="text/css" media="all" />
+ <link rel="shortcut icon" type="image/ico" href="/resources/images/favicon.ico" />
+</head>
+<body>
+	<div class="content all">
+		<div id="header">
+			<div id="logo"><a href="/"><img src="/resources/images/authorizenet.png" width="234" height="57" alt="Authorize.Net" /></a></div>
+			<div id="headerright">
+				<div id="headerrightsearch">
+					<div id="headerrighttop"></div>
+					<form action="http://search.cybersource.com/search" enctype="multipart/form-data" id="searchform" method="get"><fieldset class="search"><input class="box" id="q" name="q" onclick="this.value='';" type="text" value="" /><input id="client" name="client" type="hidden" value="www_authorizenet_frontend" /><input id="proxystylesheet" name="proxystylesheet" type="hidden" value="www_authorizenet_frontend" /><input id="site" name="site" type="hidden" value="www_authorizenet" /><input id="output" name="output" type="hidden" value="xml_no_dtd" /></fieldset></form>
+				</div>
+				<div id="headerrightlinks"><img src="/resources/images/header/rd_corner.gif" width="6" height="38" alt="" style="float: left;" />
+					<ul id="topnav">
+						<li class="top" id="topnav_support"><a class="top_link" id="topnav_info" href="https://support.authorize.net/" onClick="_gaq.push(['_trackEvent', 'External Links', 'Support Center']);"><span>SUPPORT</span></a>
+							<div class="sub"><ul>
+								<li><a href="https://support.authorize.net/" onClick="_gaq.push(['_trackEvent', 'External Links', 'Support Center']);">Merchant Support Center</a></li>
+								<li><a href="/solutions/resellersolutions/resellerprogram/resellersupport/">Reseller Support</a></li>
+								<li><a href="http://developer.authorize.net/affiliate/support/" onClick="_gaq.push(['_trackEvent', 'External Links', 'Affiliate Reseller Support']);">Affiliate Reseller Support</a></li>
+							</ul></div>
+						</li>
+						<li class="top" id="topnav_login"><a class="top_link" id="topnav_lock" href="https://account.authorize.net/" onClick="_gaq.push(['_trackEvent', 'External Links', 'Merchant Login']);"><span>ACCOUNT LOGIN</span></a>
+							<div class="sub"><ul>
+								<li><a href="https://account.authorize.net/" onClick="_gaq.push(['_trackEvent', 'External Links', 'Merchant Login']);">Merchant Login</a></li>
+								<li><a href="https://account.authorize.net/interfaces/reseller/frontend/login.aspx" onClick="_gaq.push(['_trackEvent', 'External Links', 'Reseller Login']);">Reseller Login</a></li>
+								<li><a href="https://account.authorize.net/interfaces/reseller/frontend/login.aspx" onClick="_gaq.push(['_trackEvent', 'External Links', 'Affiliate Login']);">Affiliate Login</a></li>
+							</ul></div>
+						</li>
+					</ul>
+				</div>
+				<div id="countrynav"><ul><li class="top"><a class="top_link"><span class="headerFlag us"></span>USA/CANADA<span class="flag_select"></span></a><div class="sub"><ul><li><a href="/en-ANZ/"><span class="headerFlag anz"></span>AUSTRALIA</a></li><li><a href="/es-US/"><span class="headerFlag us" style="width:26px;"></span>EE. UU. (EspaÃ±ol)</a></li><li><a href="/en-GB/"><span class="headerFlag uk"></span>UK/EUROPE</a></li><li><a href="/international/"><span class="headerFlag other"></span>OTHER</a></li></ul></div></li></ul></div>
+			</div>
+			<ul id="mai
+1000
+nnav">
+				<li class="top"><a href="/solutions/merchantsolutions/" class="top_link"><span>ACCEPT PAYMENTS</span></a>
+					<div class="sub">
+						<ul>
+							<li class="heading">WAYS TO ACCEPT PAYMENTS</li>
+							<li><a href="/solutions/merchantsolutions/onlinemerchantaccount/">Online</a></li>
+							<li><a href="/solutions/merchantsolutions/motomerchantaccount/">Mail Order / Telephone Order</a></li>
+							<li><a href="/solutions/merchantsolutions/retailmerchantaccount/">Retail Store</a></li>
+							<li><a href="/solutions/merchantsolutions/mobilemerchantaccount/">Mobile</a></li>
+						</ul>
+						<ul>
+							<li class="heading">VALUE-ADDING PRODUCTS</li>
+							<li><a href="/solutions/merchantsolutions/merchantservices/frauddetectionsuite/">Fraud Prevention</a></li>
+							<li><a href="/solutions/merchantsolutions/merchantservices/automatedrecurringbilling/">Recurring / Subscription Billing</a></li>
+							<li><a href="/solutions/merchantsolutions/merchantservices/cim/">Payment Data Tokenization</a></li>
+							<li><a href="/solutions/merchantsolutions/merchantservices/echeck/">E-check Processing</a></li>
+						</ul>
+						<ul>
+							<li class="heading">GETTING STARTED</li>
+							<li><a href="/solutions/merchantsolutions/pricing/">Pricing</a></li>
+							<li><a href="http://www.youtube.com/user/AuthorizeNet?feature=mhum&amp;v=8SQ3qst0_Pk&amp;rel=0" target="_blank">Credit Card Processing Video <img src="/resources/images/ext_link.png" width="12" height="12" alt="View Credit Card Processing Video on YouTube" /></a></li>
+							<li><a href="/resources/howitworksdiagram/">Credit Card Processing Diagram</a></li>
+							<li><a href="/resources/pcicompliance/">Understanding PCI Compliance</a></li>
+						</ul>
+						<ul>
+							<li class="heading">FEATURES</li>
+							<li><a href="/solutions/merchantsolutions/merchantservices/simplecheckout/">Buy Now Buttons</a></li>
+							<li><a href="/solutions/merchantsolutions/onlinemerchantaccount/seal/">Website Payments Seal</a></li>
+							<li><a href="/solutions/merchantsolutions/merchantservices/virtualpos/">Virtual Point of Sale</a></li>
+							<li><a href="/solutions/merchantsolutions/merchantservices/mobileapp/">mPOS Mobile App</a></li>
+						</ul>
+						<ul>
+							<li class="heading">PARTNER SOLUTIONS</li>
+							<li><a href="/solutions/merchantsolutions/merchantservices/certifiedsolutiondirectory/?type=csstcart">Shopping Carts / Store Builders</a></li>
+							<li><a href="/solutions/merchantsolutions/merchantservices/certifiedsolutiondirectory/?type=csstmobile">Mobile Devices</a></li>
+							<li><a href="/solutions/merchantsolutions/merchantservices/certifiedsolutiondirectory/?type=csstpos">Point-of-Sale Systems / Kiosks</a></li>
+							<li><a href="/solutions/merchantsolutions/merchantservices/certifiedsolutiondirectory/?type=csstmoto">Mail / Telephone Order</a></li>
+						</ul>
+						<ul>
+							<li class="heading">FIND PARTNERS</li>
+							<li><a href="/solutions/merchantsolutions/resellerdirectory/">Reseller Directory</a></li>
+							<li><a href="/solutions/merchantsolutions/merchantservices/certifieddeveloperdirectory/">Certified Developer Directory</a></li>
+							<li><a href="/solutions/merchantsolutions/merchantservices/certifiedsolutiondirectory/">Certified Solution Directory</a></li>
+							<li><a href="/solutions/merchantsolutions/toolbox/">Merchant Toolbox</a></li>
+						</ul>
+					</div>
+				</li>
+				<li class="top"><a href="/solutions/resellersolutions/" class="top_link"><span>RESELLER PROGRAMS</span></a>
+					<ul class="sub">
+						<li><a href="/solutions/resellersolutions/resellerprogram/">Reseller Program</a></li>
+						<li><a href="http://developer.authorize.net/affiliate/" onClick="_gaq.push(['_trackEvent', 'External Links', 'Affiliate Reseller Program']);">Affiliate Reseller Program</a></li>
+					</ul>
+				</li>
+				<li class="top"><a href="http://developer.authorize.net/" class="top_link" onClick="_gaq.push(['_trackEvent', 'External Links', 'Developer Center']);"><span>DEVELOPER CENTER</span></a></li>
+				<li class="top"><a href="#" class="top_link" sty
+1000
+le="cursor: default;"><span>RESOURCES</span></a>
+					<ul class="sub">
+						<li><a href="/resources/howitworksdiagram/">Credit Card Processing Diagram</a></li>
+						<li><a href="/videos/">Video Demos</a></li>
+						<li><a href="/resources/fraudprevention/">Fraud Prevention Center</a></li>
+						<li><a href="/resources/casestudies/">Case Studies</a></li>
+						<li><a href="/resources/documentlibrary/">Document Library</a></li>
+						<li><a href="/resources/glossary/">Glossary</a></li>
+					</ul>
+				</li>
+				<li class="top"><a href="/signupnow/" class="top_link" id="signupnow"><span>SIGN UP NOW</span></a>
+					<ul class="sub">
+						<li id="topnav_phone"><a id="whitePhone" class="phone" href="tel:1.888.323.4289" onclick="return false;"><span class="phoneNumber">1.888.323.4289</span></a></li>
+						<li><a href="/signupnow/">Apply Online</a></li>
+						<li><a href="/solutions/merchantsolutions/merchantinquiryform/">Send Us an Email</a></li>
+						<li><a href="/solutions/merchantsolutions/resellerdirectory/">Find a Reseller</a></li>
+					</ul>
+				</li>
+			</ul>
+		</div> 
+  <div class="container">
+   <div class="main">
+	<div class="hero">
+	 <div id="slider">
+	  <div id="signup"><div class="mainbox_btn"><a href="/signupnow/" class="gold_button">Sign Up Now</a></div></div>
+	  <div class="heroright">
+	   <div class="panel-container" style="width: 1800px; margin-left: 0px;">
+	    <div class="panel" id="panel_overview">
+	     <h1 class="pagetitle">Accept Payments Online<br />or Anywhere</h1><ul class="checkmarks"><li>Credit Card Processing</li><li>Fraud Prevention</li><li>Subscription Billing</li><li>Payment Tokenization</li></ul><p>Authorize.Net makes accepting credit card payments and e-checks safe, easy and affordable.<br /><br /><a href="/solutions/merchantsolutions/" class="white_triangle">Learn More About<br />Accepting Payments</a></p>
+	    </div>
+	    <div class="panel" id="panel_how_it_works">
+	     <h1 class="pagetitle">The Credit Card Process</h1><p>Anytime a customer uses a credit card to pay for purchases&mdash;online, in a store or through a mobile device&mdash;it kicks off a complex process that involves many steps and several parties.<br /><br /><a href="/resources/howitworksdiagram/" class="white_triangle">See All Seven Steps of<br />the Credit Card Process</a></p><img src="/resources/images/home/credit_card_processing.png" width="259" height="202" alt="Credit Card Processing with Authorize.Net" style="padding-left: 20px;" />
+	    </div>
+	    <div class="panel" id="panel_pricing">
+	     <h1 class="pagetitle">Save Time and Money</h1><ul class="checkmarks"><li><span>FREE</span> Mobile App</li><li><span>FREE</span> Website Payments Seal</li><li><span>FREE</span> Award-Winning Support</li><li><span>FREE</span> Fraud Prevention Tools</li></ul><p>Authorize.Net offers affordable, no-contract, month-to-month pricing with a combination of free features and optional add-on products.<br /><br /><a href="/solutions/merchantsolutions/pricing/" class="white_triangle">See Pricing Details</a></p>
+	    </div>
+	   </div>
+	  </div>
+	  <div class="heroleft">
+	   <ul id="slider_tabs">
+	    <li class="slider_overview"><a href="#overview"><div><h2>OVERVIEW</h2><p>About Our Solutions</p></div></a></li>
+	    <li class="slider_how_it_works"><a href="#how_it_works"><div><h2>HOW IT WORKS</h2><p>Credit Card Processing 101</p></div></a></li>
+	    <li class="slider_pricing"><a href="#pricing"><div><h2>PRICING</h2><p>Affordable SMB Solutions</p></div></a></li>
+	   </ul>
+	  </div>
+	 </div>
+    </div>
+	<div class="credits">
+	 <ul>
+	  <li id="cred_about"></li>
+	  <li id="cred_merchant">375,000+<div>Merchant Customers</div></li>
+	  <li id="cred_satisfaction">1996<div>Authorize.Net Founded</div></li>
+	  <li id="cred_processed">$88+ Billion<div>Annual Transacting Volume</div></li>
+	 </ul>
+	</div>
+	<div class="partners slideshow">
+	 <img src="/resources/images/home/partners/1.png" alt="Authorize.Net Partners - Slide 1" />
+	 <img src="/resources/images/home/partners/2.png" alt="Authorize.Net Partners - Slide 2" style="display: none;" />
+	</div>
+	<di
+1000
+v class="info_boxes">
+	 <div class="info_box" id="first_info_box"><h2>What is a Payment Gateway?</h2><p>Connecting a payment application to the credit card processing networks is difficult, expensive and beyond the resources of most businesses. Instead, you can easily connect to the Authorize.Net Payment Gateway, which provides the complex infrastructure and security necessary to ensure secure, fast and reliable transactions.</p><div class="more_details"><a href="/company/whatwedo/">See More Details</a></div></div>
+	 <div class="info_box" id="second_info_box"><img src="/resources/images/home/ace_award.gif" width="90" height="160" alt="Confirmit ACE Award - Achievement in Customer Excellence - 2013" /><h2>Free Award-Winning Support</h2><p>Authorize.Net is pleased to announce its fifth consecutive Achievement in Customer Excellence (ACE) award. ACE awards recognize organizations that have earned superior customer satisfaction ratings.</p></div>
+	</div>
+	<div class="action_boxes">
+	 <div class="action_box" id="reseller_action_box"><h3>Become a Reseller</h3><p>For merchant service providers that provide merchant bank accounts. Earn revenue while offering your merchants reliable payment processing services.</p><div class="more_details"><a href="/solutions/resellersolutions/resellerprogram/">See More Details</a></div></div>
+	 <div class="action_box" id="affiliate_action_box"><h3>Become an Affiliate Reseller</h3><p>For businesses and developers with e-commerce and mobile clients that need a payment solution. Earn revenue for referralsâ€”let us handle the rest.</p><div class="more_details"><a href="http://developer.authorize.net/affiliate/" onClick="_gaq.push(['_trackEvent', 'External Links', 'Affiliate Reseller Program']);">See More Details</a></div></div>
+	 <div class="action_box" id="developer_action_box"><h3>Developer Center</h3><p>Find resources to develop applications for our payment processing service and partner with us to market your business.<br /><br /></p><div class="more_details"><a href="http://developer.authorize.net/" onClick="_gaq.push(['_trackEvent', 'External Links', 'Developer Center']);">Go to Developer Center</a></div></div>
+    </div>
+   </div>
+  </div>
+	<div id="footer">
+		<div id="footer_upper">
+			<ul>
+				<li id="footer_bbb"><div><a id="bbblink" class="ruhzbum" href="http://www.bbb.org/utah/business-reviews/credit-card-processing-companies/authorizenet-a-cybersource-solution-in-american-fork-ut-2009493#bbblogo" title="Authorize.Net, A CyberSource Solution is a BBB Accredited Credit Card Processing Company" style="display: block;position: relative;overflow: hidden; width: 150px; height: 68px; margin: 0px; padding: 0px;"><img style="padding: 0px; border: none;" id="bbblinkimg" src="https://seal-utah.bbb.org/logo/ruhzbum/authorizenet-a-cybersource-solution-2009493.png" width="300" height="68" alt="Authorize.Net, A CyberSource Solution is a BBB Accredited Credit Card Processing Company" /></a></div></li>
+				<li id="footer_trustwave"><a href="#" rel="nofollow"><img src="https://sealserver.trustkeeper.net/compliance/seal.php?code=3EEC6AF828BAF7F483319161DFC61A6E" onClick="javascript:window.open('https://sealserver.trustkeeper.net/compliance/cert.php?code=3EEC6AF828BAF7F483319161DFC61A6E', 'hATW', 'location=no, toolbar=no, resizable=no, scrollbars=yes, directories=no, status=no, width=590, height=499'); return false;" id="TWLogo" alt="Trustwave Seal" style="border: 0;" /></a></li>
+				<li id="footer_eta"><img src="/resources/images/eta_logo.png" width="97" height="50" alt="Member of ETA" id="ETALogo" /></li>
+				<li id="footer_seal"><a href="/solutions/merchantsolutions/onlinemerchantaccount/seal/"><img src="https://verify.authorize.net/anetseal/images/secure90x72.gif" width="90" height="72" alt="Verified Authorize.Net Merchant Seal" id="ANETLogo" /></a></li>
+				<li><div id="footer_ace"></div></li>
+			</ul>
+		</div>
+		<div id="footer_lower">
+			<table>
+				<tr>
+					<th>NEWS AND TIPS</th>
+					<th class="noline"></th>
+					<th>ABOUT US</th>
+					<th class="noline"></th>
+					<th>WEBSITES</th>
+					<th class
+1000
+="noline"></th>
+					<th>POLICIES</th>
+					<th class="noline"></th>
+					<th>SIGN UP NOW</th>
+				</tr>
+				<tr valign="top">
+					<td>
+						<ul class="footer_news">
+							<li id="footer_twitter"><a href="https://twitter.com/authorizenet" target="_blank">Twitter</a></li>
+							<li id="footer_facebook"><a href="https://www.facebook.com/Authorize.Net" target="_blank">Facebook</a></li>
+							<li id="footer_linkedin"><a href="http://www.linkedin.com/company/authorize-net" target="_blank">LinkedIn</a></li>
+							<li id="footer_blog"><a href="http://community.developer.authorize.net/t5/The-Authorize-Net-Developer-Blog/bg-p/DeveloperBlog" target="_blank">Developer Blog</a></li>
+						</ul>
+					</td>
+					<td></td>
+					<td>
+						<ul class="footer_about">
+							<li><a href="/company/aboutus/">About Us</a></li>
+							<li><a href="/support/">Contact Us</a></li>
+							<li><a href="/company/whatwedo/">What We Do</a></li>
+							<li><a href="/company/events/">Events</a></li>
+							<li><a href="/company/careers/">Careers</a></li>
+						</ul>
+					</td>
+					<td></td>
+					<td>
+						<ul class="footer_websites">
+							<li><a href="/sitemap/">Site Map</a></li>
+							<li><a href="http://developer.authorize.net/" onClick="_gaq.push(['_trackEvent', 'External Links', 'Developer Center']);">Developer Center</a></li>
+							<li><a href="http://reseller.authorize.net/" onClick="_gaq.push(['_trackEvent', 'External Links', 'Reseller Toolkit']);">Reseller Toolkit</a></li>
+							<li><a href="http://welcome.authorize.net/" onClick="_gaq.push(['_trackEvent', 'External Links', 'Welcome']);">New Customer Tour</a></li>
+							<li><a href="http://www.cybersource.com/" target="_blank" onClick="_gaq.push(['_trackEvent', 'External Links', 'CyberSource']);">CyberSource.com</a></li>
+						</ul>
+					</td>
+					<td></td>
+					<td>
+						<ul class="footer_policies">
+							<li><a href="/company/terms/">Terms of Use</a></li>
+							<li><a href="/company/privacy/">Privacy</a></li>
+							<li><a href="/company/spampolicy/">Spam Policy</a></li>
+							<li><a href="/company/spamfaqs/">Spam FAQs</a></li>
+							<li class="shorten_text"><a href="/company/aboutus/intellectual_property_rights/">Intellectual Property Rights</a></li>
+						</ul>
+					</td>
+					<td></td>
+					<td>
+						<ul class="footer_signup">
+							<li><strong>1.888.323.4289</strong> toll free</li>
+							<li><a href="/signupnow/">Apply Online</a></li>
+							<li><a href="/solutions/merchantsolutions/merchantinquiryform/">Email</a></li>
+							<li><a href="/solutions/merchantsolutions/resellerdirectory/">Find a Reseller</a></li>
+							<li>&nbsp;</li>
+						</ul>
+					</td>
+				</tr>
+			</table>	
+		</div>
+		<div id="footercopyright">&copy; 2012, 2014. Authorize.Net is a registered trademark of CyberSource, a Visa company. All rights reserved.</div>
+	</div>
+ </div>
+ <script type="text/javascript" src="/resources/js/jquery.js"></script>
+ <script type="text/javascript" src="/resources/js/jq_ui.js"></script>
+ <script type="text/javascript" src="/resources/js/jq_cycle.js"></script>
+ <script type="text/javascript" src="/resources/js/jq_slider.js"></script>
+ <script type='text/javascript'>$(function () {$(".slideshow").cycle({fx: "fade",timeout: 4000});$('#slider').slider({});});var ww_img = $('<img />').attr('src','/resources/images/header/globe_on.gif');$('#countrynav li.top a, #countrynav li.top div.sub').hover(function() { $('#countrynav li.top a span.flag').css('background-image',"url('/resources/images/header/globe_on.gif')"); $('#countrynav li.top a span.flag_select').css('background-image',"url('/resources/images/header/downarrow-on.png')"); },function() { $('#countrynav li.top a span.flag').css('background-image',"url('/resources/images/header/globe_off.gif')"); $('#countrynav li.top a span.flag_select').css('background-image',"url('/resources/images/header/gray_down_arrow.gif')"); });</script>
+ <script type="text/javascript">
+var _gaq = _gaq || [];
+_gaq.push(['_setAccount', 'UA-20120532-1']);
+_gaq.push(['_trackPageview']);
+(function() {
+var ga = document.createElement('script'); ga
+452
+.type = 'text/javascript'; ga.async = true;
+ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+})();
+</script>
+<script type="text/javascript">
+var _elqQ = _elqQ || [];
+_elqQ.push(['elqSetSiteId', '986383348']);
+_elqQ.push(['elqTrackPageView']);
+(function () {
+function async_load() {
+var s = document.createElement('script'); s.type = 'text/javascript'; s.async = true; s.src = '/elqNow/elqCfg.min.js';
+var x = document.getElementsByTagName('script')[0]; x.parentNode.insertBefore
+(s, x);
+}
+if (window.addEventListener) window.addEventListener('DOMContentLoaded', async_load, false); else if (window.attachEvent) window.attachEvent('onload', async_load);
+})();
+</script>
+<script type="text/javascript">var NTPT_NOINITIALTAG = true;</script><script type="text/javascript" src="/resources/js/ntpagetag.js"></script><script type="text/javascript" src="/resources/js/ntautotag.js"></script><script type="text/javascript">ntptEventTag();</script>
+</body>
+</html>
+0
+

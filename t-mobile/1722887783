@@ -1,0 +1,25 @@
+PHTTP206.29.177.10"ù
+VGET /srvspub/latlong2zipcode?lat=42.373616000000005&long=-71.10973299999999 HTTP/1.1
+Host: www.t-mobile.com
+Connection: keep-alive
+8Accept: application/json, text/javascript, */*; q=0.01
+"X-Requested-With: XMLHttpRequest
+vUser-Agent: Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/31.0.1650.63 Safari/537.36
+#Referer: http://www.t-mobile.com/
+$Accept-Encoding: gzip,deflate,sdch
+!Accept-Language: en-US,en;q=0.8
+¢Cookie: TLTSID=391EAA7F4D772265981AF09B8CCC5960; TLTUID=391EAA7F4D772265981AF09B8CCC5960; mbox=check#true#1389229312|session#1389229251541-403877#1389231112|PC#1389229251541-403877.25_04#1390438852; TMobileSpanish=IsSpanishUser=false; MP_LANG=en; TMobileVisitIgnored=true; ShoppingPartner=CART=7b0HYBxJliUmL23Ke39K9UrX4HShCIBgEyTYkEAQ7MGIzeaS7B1pRyMpqyqBymVWZV1mFkDM7Z28995777333nvvvfe6O51OJ/ff/z9cZmQBbPbOStrJniGAqsgfP358Hz8iHk+zuj16fJd//D8*; TMobileCommon=TeaId=3138ca75-38e4-402b-b1a1-a59c5bfc1ff4; fsr.s={"v2":-2,"v1":1,"rid":"d1159f3-80252597-8712-1b65-f3259","cp":{"section_my_tmobile":"N","section_www_tmobile":"N","beta":"N","Upgrade":"N","Add_a_Line":"N"},"to":3}
+
+*ô
+HTTP/1.1 200 OK
+Content-Length: 36
+ Content-Type: application/json
+Server: Microsoft-IIS/7.5
+hostname: 05tmoprod
+X-Powered-By: ASP.NET
+ Access-Control-Allow-Origin: *
+;Access-Control-Allow-Methods: GET,PUT,POST,DELETE,OPTIONS
+,Access-Control-Allow-Headers: Content-Type
+%Date: Thu, 09 Jan 2014 01:00:29 GMT
+&
+{"zipCode":"02138","stateCode":"MA"}

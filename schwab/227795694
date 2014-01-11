@@ -1,0 +1,23 @@
+PHTTP209.200.152.2"ß
+GET / HTTP/1.1
+Host: www.schwab.com
+Connection: keep-alive
+TAccept: text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8
+vUser-Agent: Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/31.0.1650.63 Safari/537.36
+$Accept-Encoding: gzip,deflate,sdch
+!Accept-Language: en-US,en;q=0.8
+
+*ü
+ HTTP/1.1 301 Moved Permanently
+Cache-Control: private
+(Content-Type: text/html; charset=utf-8
+#Location: https://www.schwab.com/
+!X-XSS-Protection: 1; mode=block
+X-Powered-By: ASP.NET
+%Date: Thu, 09 Jan 2014 21:11:33 GMT
+Content-Length: 140
+dSet-Cookie: NSC_dibt-310+311+263+3-91=ffffffffa155c73345525d5f4f58455e445a4a423660;path=/;httponly
+Ž
+<html><head><title>Object moved</title></head><body>
+<h2>Object moved to <a href="https://www.schwab.com/">here</a>.</h2>
+</body></html>

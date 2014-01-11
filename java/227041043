@@ -1,0 +1,18 @@
+PHTTP23.45.38.140"Ý
+GET / HTTP/1.1
+Host: www.java.com
+Connection: keep-alive
+TAccept: text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8
+vUser-Agent: Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/31.0.1650.63 Safari/537.36
+$Accept-Encoding: gzip,deflate,sdch
+!Accept-Language: en-US,en;q=0.8
+
+*Ž
+ HTTP/1.1 302 Moved Temporarily
+(Server: Sun-Java-System-Web-Server/7.0
+#Location: http://www.java.com/en/
+Content-Length: 0
+%Date: Thu, 09 Jan 2014 13:38:11 GMT
+Connection: keep-alive
+ASet-Cookie: JSESSIONID=58ACA0CB766140A1F39563F36CE88047; Path=/
+

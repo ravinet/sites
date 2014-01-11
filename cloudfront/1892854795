@@ -1,0 +1,25 @@
+PHTTP176.32.100.36"ò
+)GET /nav/ddfo/account-console/ HTTP/1.1
+Host: aws.amazon.com
+Connection: keep-alive
+Accept: */*
+vUser-Agent: Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/31.0.1650.63 Safari/537.36
+$Accept-Encoding: gzip,deflate,sdch
+!Accept-Language: en-US,en;q=0.8
+¾Cookie: x-wl-uid=1rJX21O2M8ShS7v+jXpD1SnsatfsJvOhycm9IyFb3OYaj2Rqt0PUrV2OEp6Zyv8UnZ6ibtZANqtY=; __utma=194891197.1175320886.1389302326.1389302326.1389302326.1; __utmb=194891197; __utmc=194891197; __utmz=194891197.1389302326.1.1.utmccn=(direct)|utmcsr=(direct)|utmcmd=(none); pN=0; s_pers=%20s_vnum%3D1391894325563%2526vn%253D1%7C1391894325563%3B%20s_invisit%3Dtrue%7C1389304125563%3B%20s_nr%3D1389302325565-New%7C1397078325565%3B; s_sess=%20s_cc%3Dtrue%3B%20s_sq%3D%3B; aws-ubid-main=178-2787844-0594645; aws-session-id-time=2082758401l; aws-session-id=175-2966859-6786824
+
+*º
+HTTP/1.1 200 OK
+%Date: Thu, 09 Jan 2014 21:18:32 GMT
+Server: Server
+X-Frame-Options: SAMEORIGIN
+.Last-Modified: Wed, 13 Nov 2013 16:17:15 GMT
+ETag: "259-4eb114c5d58c0"
+Accept-Ranges: bytes
+Content-Length: 601
+Cache-Control: max-age=0
+(Expires: Thu, 09 Jan 2014 21:18:32 GMT
+Content-Type: text/html
+Vary: User-Agent
+Û
+displayIn("\r\n  <div class=\"ddfo-l1-skinny\">\r\n  <ul>\r\n    <li><a class=\"ddfo-a-block\" id=\"gtl-console-link\" href=\"https://console.aws.amazon.com/\">AWS Management Console</a></li>\r\n    <li><a class=\"ddfo-a-block\" href=\"https://portal.aws.amazon.com/gp/aws/manageYourAccount\">My Account</a></li>\r\n    <li><a class=\"ddfo-a-block\" href=\"https://console.aws.amazon.com/billing/home\">Billing & Cost Management</a></li>\r\n    <li><a class=\"ddfo-a-block\" href=\"https://console.aws.amazon.com/iam/home?#security_credential\">Security Credentials</a></li>\r\n  </ul>\r\n</div>\r\n")

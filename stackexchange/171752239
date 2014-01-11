@@ -1,0 +1,23 @@
+PHTTP198.252.206.16"ù
++POST /users/login/global/request HTTP/1.1
+Host: stackexchange.com
+Connection: keep-alive
+Content-Length: 0
+8Accept: application/json, text/javascript, */*; q=0.01
+"Origin: http://stackexchange.com
+"X-Requested-With: XMLHttpRequest
+vUser-Agent: Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/31.0.1650.63 Safari/537.36
+$Referer: http://stackexchange.com/
+$Accept-Encoding: gzip,deflate,sdch
+!Accept-Language: en-US,en;q=0.8
+Cookie: gauthed=1
+
+*Ç
+HTTP/1.1 200 OK
+Cache-Control: private
+/Content-Type: application/json; charset=utf-8
+X-Frame-Options: SAMEORIGIN
+%Date: Thu, 09 Jan 2014 00:48:57 GMT
+Content-Length: 135
+‰
+{"token":"QDnPOus6uULPeywcYle2IN9rB5jsQ9h8GajQ8ux++I+/9lsgDhEa6IVkdJs+L5Bp7oin5ziD3O8LnD3+jR1Opg==","nonce":"+fHNUgAAAAAd7hwYRbLhIg=="}

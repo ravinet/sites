@@ -1,0 +1,26 @@
+PHTTP204.77.30.205"Í
+
+-GET /cookie-id.js?fn=eluminate1498 HTTP/1.1
+Host: tmo99.t-mobile.com
+Connection: keep-alive
+Accept: */*
+vUser-Agent: Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/31.0.1650.63 Safari/537.36
+#Referer: http://www.t-mobile.com/
+$Accept-Encoding: gzip,deflate,sdch
+!Accept-Language: en-US,en;q=0.8
+ìCookie: TLTSID=391EAA7F4D772265981AF09B8CCC5960; TLTUID=391EAA7F4D772265981AF09B8CCC5960; mbox=check#true#1389229312|session#1389229251541-403877#1389231112|PC#1389229251541-403877.25_04#1390438852; TMobileSpanish=IsSpanishUser=false; MP_LANG=en; ShoppingPartner=CART=7b0HYBxJliUmL23Ke39K9UrX4HShCIBgEyTYkEAQ7MGIzeaS7B1pRyMpqyqBymVWZV1mFkDM7Z28995777333nvvvfe6O51OJ/ff/z9cZmQBbPbOStrJniGAqsgfP358Hz8iHk+zuj16fJd//D8*; TMobileCommon=TeaId=3138ca75-38e4-402b-b1a1-a59c5bfc1ff4; fsr.s={"v2":-2,"v1":1,"rid":"d1159f3-80252597-8712-1b65-f3259","cp":{"section_my_tmobile":"N","section_www_tmobile":"Y","beta":"N","Upgrade":"N","Add_a_Line":"N"},"to":3,"c":"http://www.t-mobile.com/","pv":1,"lc":{"d11":{"v":1,"s":false}},"cd":11}; TMobileUSLocation=latitude%3D42.373616000000005%26longitude%3D-71.10973299999999%26STATE%3DMA%26ZIP%3D02138; s_fid=7C35147C6C839AA7-0902B891B3A4B27F; gpv_v10=www%2Fhome; s_vispur=1; s_nr=1389229253066-New; s_visit=1; s_cc=true; s_vi=[CS]v1|2966FA5C050787F2-4000010C40278D76[CE]
+
+*ô
+HTTP/1.1 200 OK
+%Date: Thu, 09 Jan 2014 01:00:41 GMT
+Server: Apache
+WP3P: CP="NON DSP COR CUR ADMo DEVo PSAo PSDo OUR IND ONL UNI PUR COM NAV INT DEM STA"
+"Keep-Alive: timeout=300, max=542
+Connection: Keep-Alive
+Transfer-Encoding: chunked
+(Content-Type: application/x-javascript
+G
+39 
+(typeof(eluminate1498) == 'function') && eluminate1498();
+0
+

@@ -1,0 +1,26 @@
+PHTTP107.23.171.85"™
+âGET /identity/public/visitor/create?format=json&jsonp=&jsonp_callback=jQuery17104553062233608216_1389366341552&_=1389366342706 HTTP/1.1
+Host: id.washingtonpost.com
+Connection: keep-alive
+Accept: */*
+vUser-Agent: Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/31.0.1650.63 Safari/537.36
+)Referer: http://www.washingtonpost.com/
+$Accept-Encoding: gzip,deflate,sdch
+!Accept-Language: en-US,en;q=0.8
+„Cookie: de=131; client_region=0; devicetype=0; rpld1=0:mit.edu|20:usa|21:ma|22:cambridge|23:42.363998|24:-71.084999|; mbox=check#true#1389366402|session#1389366341674-752581#1389368202|PC#1389366341674-752581.25_29#1390575942
+
+*ü
+HTTP/1.1 200 OK
+'Content-Type: text/html;charset=utf-8
+%Date: Fri, 10 Jan 2014 15:05:29 GMT
+2Server: GlassFish Server Open Source Edition 3.1
+OSet-Cookie: JSESSIONID=cafc1be875f6cd968e8b36619d79; Path=/identity; HttpOnly
+âSet-Cookie: wapo_sess_id=ee49bf13-1962-4c58-8ec6-9fedde1a7ddc; Domain=washingtonpost.com; Expires=Fri, 10-Jan-2014 16:05:29 GMT; Path=/
+mX-Powered-By: Servlet/3.0 JSP/2.2 (GlassFish Server Open Source Edition 3.1 Java/Sun Microsystems Inc./1.6)
+transfer-encoding: chunked
+Connection: keep-alive
+Å
+74
+jQuery17104553062233608216_1389366341552({"visitors":{"wapoVisitor":{"id":"974757e9-55f4-46e6-84f5-ad76bc89b47b"}}})
+0
+

@@ -1,0 +1,22 @@
+PHTTP54.221.218.114"¶
+GET /sync?ssp=aol HTTP/1.1
+Host: x.bidswitch.net
+Connection: keep-alive
+Accept: image/webp,*/*;q=0.8
+vUser-Agent: Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/31.0.1650.63 Safari/537.36
+$Accept-Encoding: gzip,deflate,sdch
+!Accept-Language: en-US,en;q=0.8
+
+*Î
+ HTTP/1.1 302 Moved Temporarily
+~Set-Cookie: tuuid=00cb2137-f75b-48b2-bfad-2d9edf1fba7f; path=/; expires=Sat, 09-Jan-2016 18:21:01 GMT; domain=.bidswitch.net
+CSet-Cookie: tuuid=; path=/; expires=Mon, 01-Mar-2004 00:00:00 GMT
+PP3P: CP="NOI DSP COR NID CURa ADMa DEVa PSAa PSDa OUR BUS COM INT OTC PUR STA"
+5Location: http://x.bidswitch.net/ul_cb/sync?ssp=aol
+(Content-Type: text/html; charset=UTF-8
+4Cache-Control: no-cache, no-store, must-revalidate
+(Expires: Mon, 26 Jul 1997 05:00:00 GMT
+Pragma: no-cache
+Content-Length: 0
+%Date: Thu, 09 Jan 2014 18:21:01 GMT
+

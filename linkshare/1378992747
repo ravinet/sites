@@ -1,0 +1,371 @@
+PHTTP65.245.193.104"Ð
+GET /scripts/site.js HTTP/1.1
+Host: www.linkshare.com
+Connection: keep-alive
+Accept: */*
+vUser-Agent: Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/31.0.1650.63 Safari/537.36
+$Referer: http://www.linkshare.com/
+$Accept-Encoding: gzip,deflate,sdch
+!Accept-Language: en-US,en;q=0.8
+
+*ÃU
+HTTP/1.1 200 OK
+%Date: Thu, 09 Jan 2014 23:50:01 GMT
+ Server: Apache/2.2.3 (Red Hat)
+.Last-Modified: Tue, 07 Jan 2014 21:54:46 GMT
+#ETag: "167b6c-2977-4ef686cb0b580"
+Accept-Ranges: bytes
+Content-Length: 10615
+Keep-Alive: timeout=5, max=98
+Connection: Keep-Alive
+(Content-Type: application/x-javascript
+ùR
+
+// ---------- Start E-mail a Page ---------- //
+//document.onmousedown = hideEmailThis; //funny
+function showEmailThis(){
+  var email_pop = document.getElementById('email_pop');
+  if ( email_pop ){
+    email_pop.style.display = '';
+  }
+}
+function hideEmailThis(){
+  var email_pop = document.getElementById('email_pop');
+  if ( email_pop ){
+    email_pop.style.display = 'none';
+  }
+}
+function checkEmailForm(email_form,base_url){
+  var valid = true;
+
+  var emailregex = /^[-_a-z0-9\.]+@[-_a-z0-9\.]+\.[-_a-z0-9]+$/;
+
+  if ( email_form.your_first_name.value == '' ){
+    valid = false;
+    alert('Please enter your first name.');
+    email_form.your_first_name.focus();
+  }
+  else if ( email_form.your_last_name.value == '' ){
+    valid = false;
+    alert('Please enter your last name.');
+    email_form.your_last_name.focus();
+  }
+  else if ( !emailregex.test(email_form.your_email.value) ){
+    valid = false;
+    alert('Please enter a valid e-mail address.');
+    email_form.your_email.focus();
+  }
+  else if ( email_form.their_first_name.value == '' ){
+    valid = false;
+    alert('Please enter the recipient\'s first name.');
+    email_form.their_first_name.focus();
+  }
+  else if ( email_form.their_last_name.value == '' ){
+    valid = false;
+    alert('Please enter the recipient\'s last name.');
+    email_form.their_last_name.focus();
+  }
+  else if ( !emailregex.test(email_form.their_email.value) ){
+    valid = false;
+    alert('Please enter a valid e-mail address.');
+    email_form.their_email.focus();
+  }
+
+  if ( valid ){
+    post_response_id = 'email_this_form';
+
+    makePOSTRequest(email_form,base_url+'scripts/email/email_page.php');
+  }
+
+  return false;
+}
+// ---------- End E-mail a Page ---------- //
+
+// ---------- Start Nomination Form Validation ------------- //
+function validateNominationForm(form){
+  var valid = true;
+  var message = "Please fill in the missing fields:";
+  var pre = "\n ";
+
+  if ( form.elements.required_fields && form.elements.required_fields.value != '' ){
+    var fields = form.elements.required_fields.value.split(',');
+    for ( x in fields ){
+      //alert(fields[x]);
+      if ( form.elements[fields[x]] ){
+        //alert (fields[x]+' : '+form.elements[fields[x]].type);
+        if ( form.elements[fields[x]].type == 'text' && form.elements[fields[x]].value == '' ){
+          valid = false;
+          message += pre + fields[x];
+        }else if ( !form.elements[fields[x]].type && form.elements[fields[x]].length ){
+            var sele = valButton(form.elements[fields[x]]);
+            if ( !sele ){
+              valid = false;
+              message += pre + fields[x];
+            }
+          
+        }
+      }else { 
+        valid = false;
+        message += pre + fields[x];
+      }
+    }
+  }
+
+  var name = 'Category';
+  var a;
+  var count = 0;
+  for (a=1;a<=10;a=a+1){
+    if ( form.elements[name+a] ){
+      //alert(name+a);
+      if ( form.elements[name+a].checked ){
+        count += 1;
+      }
+    }
+  }
+  if ( count > 3 ){
+    alert ("Please only select 3 Golden Link Award Categories.");
+    return false;
+  }
+
+  if ( !valid )
+    alert ( message );
+  return valid;
+}
+function valButton(btn) {
+    var cnt = -1;
+    for (var i=btn.length-1; i > -1; i--) {
+        if (btn[i].checked) {cnt = i; i = -1;}
+    }
+    if (cnt > -1) return btn[cnt].value;
+    else return null;
+}
+// ---------- End Nomination Form Validation ------------- //
+
+// ---------- Start Validate Career Form ----------------- //
+function validateCareerForm(form){
+  var valid = true;
+  var message = "Please fill in the missing fields:";
+  var pre = "\n ";
+
+  if ( form.elements.required_fields && form.elements.required_fields.value != '' ){
+    var fields = form.elements.required_fields.value.split(',');
+    for ( x in fields ){
+      //alert(fields[x]);
+      if ( form.elements[fields[x]] ){
+        //alert (fields[x]+' : '+form.elements[fields[x]].type);
+        if ( form.elements[fields[x]].type == 'text' && form.elements[fields[x]].value == '' ){
+          valid = false;
+          message += pre + fields[x];
+        }else if ( form.elements[fields[x]].type == 'select-one' && form.elements[fields[x]].value == '' ){
+          valid = false;
+          message += pre + fields[x];
+        }else if ( !form.elements[fields[x]].type && form.elements[fields[x]].length ){
+            var sele = valButton(form.elements[fields[x]]);
+            if ( !sele ){
+              valid = false;
+              message += pre + fields[x];
+            }
+
+        }
+      }else {
+        valid = false;
+        message += pre + fields[x];
+      }
+    }
+  }
+
+  if ( !valid )
+    alert ( message );
+  return valid;
+}
+// ---------- End Validate Career Form ----------------- //
+
+// ---------- Start Ballot Form Validation ---------- //
+function validateBallotForm(form){
+  var valid = false;
+
+  if ( form.elements.Username.value != '' ){
+    var selection = false;
+    for ( x=0; x<form.elements.vote.length; x++ ){
+      //alert(form.elements.vote[x].value);
+      if ( form.elements.vote[x].checked == true ){
+        selection = true;
+      }
+    }
+    if ( selection )
+      valid = true;
+  }
+
+
+  if ( !valid )
+    alert ( 'Please enter your LinkShare Username and make a selection.' );
+  return valid;
+}
+// ---------- End Ballot Form Validation ---------- //
+
+
+// ---------- Start Navigation Drop Downs ---------- //
+var DropDowns = Array;
+function showDropDown(id){
+  if ( id ){
+    DropDowns[id] = 'open';
+    document.getElementById(id).style.visibility = 'visible';
+  }
+}
+function hideDropDown(id){
+  if ( id && DropDowns[id] && DropDowns[id] == 'open' ){
+    DropDowns[id] = 'closed';
+    //setTimeout('document.getElementById(\''+id+'\').style.visibility = \'hidden\';',500);
+    document.getElementById(id).style.visibility = 'hidden';
+  }
+}
+function hideOpenDropDowns(){
+  for ( x in DropDowns ){
+    hideDropDown(x);
+  }
+}
+// ---------- End Navigation Drop Downs ---------- //
+
+// ---------- Start Homepage Logo Scrolling ---------- // 
+function startLeftScroll(id){
+  var box = document.getElementById(id);
+  var box2 = document.createElement('div');
+  box2.id = id+'_virtual';
+  box2.innerHTML = box.innerHTML;
+  box2.className = 'logo_box';
+  box.parentNode.appendChild(box2);
+  moveABit(id,0);
+}
+function moveABit(id,position){
+    var keepscrolling = true;
+    var box = document.getElementById(id);
+    var other_box = document.getElementById(id+'_virtual');
+    var width = box.offsetWidth;
+    position = position - 1;
+    box.style.left = position+'px';
+    var other_position = position + width;
+    other_box.style.left = other_position +'px';
+     // if main box is completely hidden, move behind virtual
+    var diff = (width) + position;
+    if ( diff <= 1 ){
+      position = 0;
+    }
+    if ( keepscrolling )
+      setTimeout("moveABit('"+id+"','"+position+"');",100);
+}
+// ---------- End Homepage Logo Scrolling ---------- //
+
+
+// ---------- Make POST Request ---------- //
+var post_response_id;
+function makePOSTRequest(obj,url){
+  var poststr = "";
+  var amp = '';
+  var apoststr = '';
+  for( var x=0;  x<obj.length;x++ ){
+    try{
+      if ( obj.elements[x].type && obj.elements[x].name ){
+        apoststr = '';
+        if(obj.elements[x].type == "text" || obj.elements[x].type == "textarea" || obj.elements[x].type == "hidden"){
+          apoststr += amp+obj.elements[x].name+"="+encodeURIComponent(obj.elements[x].value);
+        } else if (obj.elements[x].type == "checkbox") {
+          apoststr += amp+obj.elements[x].name+"="+obj.elements[x].checked;
+        } else if (obj.elements[x].type == "select" || obj.elements[x].type == "select-one") {
+          apoststr += amp+obj.elements[x].name+"="+obj.elements[x].options[obj.elements[x].selectedIndex].value;
+        }
+        amp = '&';
+        poststr += apoststr;
+      }
+    }catch(e){}
+  }
+  executePOSTRequest(url, poststr);
+}
+
+var http_request = false;
+function executePOSTRequest(url, parameters) {
+  http_request = false;
+  if (window.XMLHttpRequest) { // Mozilla, Safari,...
+    http_request = new XMLHttpRequest();
+    if (http_request.overrideMimeType) {
+       // set type accordingly to anticipated content type
+       //http_request.overrideMimeType('text/xml');
+      http_request.overrideMimeType('text/html');
+    }
+  } else if (window.ActiveXObject) { // IE
+    try {
+      http_request = new ActiveXObject("Msxml2.XMLHTTP");
+    } catch (e) {
+      try {
+        http_request = new ActiveXObject("Microsoft.XMLHTTP");
+      } catch (e) {}
+    }
+  }
+  if (!http_request) {
+    alert('Cannot create XMLHTTP instance');
+    return false;
+  }
+
+  http_request.onreadystatechange = alertContents;
+  http_request.open('POST', url, true);
+  http_request.setRequestHeader("Content-type", "application/x-www-form-urlencoded");
+  http_request.setRequestHeader("Content-length", parameters.length);
+  http_request.setRequestHeader("Connection", "close");
+  http_request.send(parameters);
+  return true;
+}
+
+function alertContents() {
+  if (http_request.readyState == 4) {
+    if (http_request.status == 200) {
+       //alert(http_request.responseText);
+      result = http_request.responseText;
+      if ( document.getElementById(post_response_id) ) {
+        document.getElementById(post_response_id).innerHTML = result;
+      }
+    } else {
+      //alert(http_request.status);
+      //alert('There was a problem with the request.');
+    }
+  }
+}
+
+function setCookie(c_name,value,exdays)
+{
+  var exdate=new Date();
+  exdate.setDate(exdate.getDate() + exdays);
+  var c_value=escape(value) + ((exdays==null) ? "" : "; expires="+exdate.toUTCString());
+  document.cookie = c_name + "=" + c_value;
+}
+
+function getCookie(c_name)
+{
+  var i,x,y,ARRcookies=document.cookie.split(";");
+  for (i=0;i<ARRcookies.length;i++) {
+  x=ARRcookies[i].substr(0,ARRcookies[i].indexOf("="));
+  y=ARRcookies[i].substr(ARRcookies[i].indexOf("=")+1);
+  x=x.replace(/^\s+|\s+$/g,"");
+  if (x==c_name)
+    {
+    return unescape(y);
+    }
+  }
+}
+
+  // redirect to country based on code
+  function redirectToCountry(data) {
+    var country_code = data['address']['country_code'];
+    
+    var redirectCountries = new Array();
+    redirectCountries['UK'] = 'linkshare.co.uk';
+    redirectCountries['AU'] = 'au.linkshare.com';
+    
+    var cookie_code = getCookie('country_code');
+    if (cookie_code == undefined || !cookie_code || cookie_code.toLowerCase() != country_code.toLowerCase() ) {
+      // look for country code and redirect
+      for( var code in redirectCountries ) {
+        if (code == country_code) {
+          window.location = 'http://'+redirectCountries[code];     
+        }
+      }
+    }
+  }

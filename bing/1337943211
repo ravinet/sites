@@ -1,0 +1,21 @@
+PHTTP204.79.197.200"œ
+<GET /fd/sa/9_00_0_2434306/WindowsLiveConnect_c.js HTTP/1.1
+Host: www.bing.com
+Connection: keep-alive
+Accept: */*
+vUser-Agent: Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/31.0.1650.63 Safari/537.36
+Referer: http://www.bing.com/
+$Accept-Encoding: gzip,deflate,sdch
+!Accept-Language: en-US,en;q=0.8
+¶Cookie: MUID=069DC9634FB369BD2174CCDE4EAC6954; MUIDB=069DC9634FB369BD2174CCDE4EAC6954; OrigMUID=069DC9634FB369BD2174CCDE4EAC6954%2c7561b2774acd49819defcc2a767f4879; SRCHUID=V=2&GUID=33E5226C955B40A8837DF413D49C59A4; SRCHUSR=AUTOREDIR=0&GEOVAR=&DOB=20140109; SRCHHPGUSR=CW=937&CH=1036; SCRHDN=ASD=0&DURL=#; _SS=SID=6740073B9F95436698BA9C0E13B52C74&C=20&bIm=891; _FS=NU=1; SRCHD=MS=3168016&D=3168016&AF=NOFORM; FBS=WTS=1389226588133&CR=-1
+
+*
+HTTP/1.1 200 OK
+)Cache-Control: public, max-age=15552000
+Content-Length: 280
+(Content-Type: application/x-javascript
+.Last-Modified: Wed, 25 Aug 2010 04:28:21 GMT
+Server: Microsoft-IIS/8.0
+%Date: Thu, 09 Jan 2014 00:16:15 GMT
+š
+(function(n,t,i){var u,e,f,r;n&&Identity&&(u=Identity.popupLoginUrls)&&(e=u.WindowsLiveId)&&(f=Identity.wlProfile)&&f()==null&&(r=_d.createElement("iframe"),r.style.display="none",r.src=e+"&checkda=1",_d.body.appendChild(r),i&&t&&t("WLS","TS",i,0,"/"))})(sj_evt,sj_cook.set,wlc_t)

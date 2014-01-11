@@ -1,0 +1,25 @@
+PHTTP66.235.147.112"õ
+?GET /id?callback=s_c_il%5B0%5D.setAnonymousVisitorID HTTP/1.1
+"Host: adobemcspb.b.sc.omtrdc.net
+Connection: keep-alive
+Accept: */*
+vUser-Agent: Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/31.0.1650.63 Safari/537.36
+ Referer: http://www.adobe.com/
+$Accept-Encoding: gzip,deflate,sdch
+!Accept-Language: en-US,en;q=0.8
+
+*ü
+HTTP/1.1 200 OK
+%Date: Thu, 09 Jan 2014 00:30:07 GMT
+Server: Omniture DC/2.0.0
+ Access-Control-Allow-Origin: *
+‚Set-Cookie: s_vi=[CS]v1|2966F6C785078ED2-6000010E000007E2[CE]; Expires=Sat,  9 Jan 2016 00:30:07 GMT; Domain=.omtrdc.net; Path=/
+X-C: ms-4.7
+MP3P: policyref="/w3c/p3p.xml", CP="NOI DSP COR NID PSA OUR IND COM NAV STA"
+xserver: www112
+Content-Length: 147
+Keep-Alive: timeout=15
+Connection: Keep-Alive
+(Content-Type: application/x-javascript
+•
+if(s_c_il[0].setAnonymousVisitorID)s_c_il[0].setAnonymousVisitorID({"ttl":86400,"id":"2966F6C785078ED2-6000010E000007E2","dpids":{"MCVID":1005}});

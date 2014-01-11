@@ -1,0 +1,407 @@
+PHTTP161.69.13.140"Õ
+ GET /script/widget.js HTTP/1.1
+Host: www.siteadvisor.com
+Connection: keep-alive
+Accept: */*
+vUser-Agent: Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/31.0.1650.63 Safari/537.36
+&Referer: http://www.siteadvisor.com/
+$Accept-Encoding: gzip,deflate,sdch
+!Accept-Language: en-US,en;q=0.8
+
+*„L
+HTTP/1.1 200 OK
+%Date: Thu, 09 Jan 2014 01:44:59 GMT
+Server: Apache
+.Last-Modified: Wed, 09 Jul 2008 02:03:21 GMT
+#ETag: "186f30-24c9-4518db6812c40"
+Accept-Ranges: bytes
+Content-Length: 9417
+!Keep-Alive: timeout=15, max=100
+Connection: Keep-Alive
+&Content-Type: application/javascript
+ËI
+// ----------------------------------------------------------------------------------------------------
+// SPINDOWNS
+
+// spindown functions
+function spindown(e, caller) {
+	if (!caller) caller = this;
+	
+	// get the bottom element
+	var bd = caller.id + "_body";
+	var b = getObject(bd);
+	var slct = getTags(b,'select');
+	
+	// if we have both the top and bottom
+	// set the appropriate styles
+	if (b != null) {
+		if (hasClass(caller, "spdn_open")) {
+			// close it
+			hide(bd)
+			removeClass(caller, "spdn_open");
+			addClass(caller, "spdn_closed");
+			if (slct != null){
+				for(var z=0; z < slct.length; z++){
+					hide(slct[z]);
+				}
+			}		
+		}
+		else {
+			// open it
+			if (b.nodeName == "TR"){
+				showRow(bd);
+			}
+			else{
+				show(bd);
+			}					
+			removeClass(caller, "spdn_closed");
+			addClass(caller, "spdn_open");		
+			if (slct != null){
+				for(var z=0; z < slct.length; z++){
+					show(slct[z]);
+				}
+			}			
+		}
+	}	
+}
+
+function setSpindown(obj) {
+	if (typeof(obj) == "string") obj = getObject(obj);
+
+	if (obj.captureEvents)
+		obj.captureEvents(Event.CLICK);
+	
+	obj.onclick = spindown;
+}
+
+// control all spindowns within a specified container
+function spindownOnly(e, caller) {
+	if (!caller) caller = this;
+	
+	var p = getParent(caller);
+	var c = getChildren(p);
+	var b = getObject(caller.id + '_body');
+	
+	if (b != null){
+		if (hasClass(caller,'spdn_closed')){	
+			for (i = 0; i < c.length; i++){				
+				if (hasClass(c[i],'spdn_open')){
+					hide(c[i].id + '_body');
+					removeClass(c[i],'spdn_open');
+					addClass(c[i],'spdn_closed');
+				}				
+			}
+			show(b);
+			removeClass(caller,'spdn_closed');
+			addClass(caller,'spdn_open');
+		}
+		else{
+			hide(b)
+			removeClass(caller,'spdn_open');
+			addClass(caller,'spdn_closed');
+		}
+	}			
+}
+
+// expand non-table spindown row elements
+function expandAll(obj){
+	if (typeof(obj) == 'string') obj = getObject(obj);		
+	var lnk = getTags(obj, 'a');		
+	for(var i=0; i < lnk.length; i++){
+		var bd = lnk[i].id + '_body';			
+		if (hasClass(lnk[i],'spdn_closed')){				
+			show(bd);			
+			setStyle(bd,'display','');
+			setStyle(bd,'visibility','visible');			
+			removeClass(lnk[i], 'spdn_closed');
+			addClass(lnk[i], 'spdn_open');
+		}
+	}		
+}
+
+// expand spindown rows
+function expandAllRows(obj){
+	if (typeof(obj) == 'string') obj = getObject(obj);
+	
+	var tb = getTags(obj,'tbody');
+	
+	if (hasClass(tb[0],'scrollContent')){
+		removeClass(tb[0],'scrollContent');		
+		var lnk = getTags(obj, 'a');
+		for(var i=0; i < lnk.length; i++){
+			var bd = lnk[i].id + '_body';			
+			if (hasClass(lnk[i],'spdn_closed')){				
+				showRow(bd);	
+				removeClass(lnk[i], 'spdn_closed');
+				addClass(lnk[i], 'spdn_open');
+			}
+		}
+		addClass(tb[0],'scrollContent');
+	}	
+	else{
+		var lnk = getTags(obj, 'a');
+		for(var i=0; i < lnk.length; i++){
+			var bd = lnk[i].id + '_body';			
+			if (hasClass(lnk[i],'spdn_closed')){				
+				showRow(bd);	
+				removeClass(lnk[i], 'spdn_closed');
+				addClass(lnk[i], 'spdn_open');
+			}
+		}
+	}
+	
+	// show any select tags -- they have to be manually hidden b/c they persist in IE
+	var slct = getTags(obj,'select');
+	if (slct != null){
+		for(var z=0; z < slct.length; z++){
+			show(slct[z]);
+		}
+	}
+}
+
+// collapse spindowns
+function collapseAll(obj){
+	if (typeof(obj) == 'string') obj = getObject(obj);		
+	var lnk = getTags(obj, 'a');	
+	
+	for(var i=0; i < lnk.length; i++){
+		var bd = lnk[i].id + '_body';			
+		if (hasClass(lnk[i],'spdn_open')){				
+			hide(bd);
+			removeClass(lnk[i], 'spdn_open');
+			addClass(lnk[i], 'spdn_closed');
+		}
+	}
+	
+	// hide any select tags -- they have to be manually hidden b/c they persist in IE
+	var slct = getTags(obj,'select');
+	if (slct != null){
+		for(var z=0; z < slct.length; z++){
+			hide(slct[z]);
+		}
+	}	
+}
+
+// ----------------------------------------------------------------------------------------------------
+// TABSTRIP
+
+function hideTabs(){
+	// get all divs
+	var alltabs = getTags(document,'div');
+	
+	for (var i = 0; i < alltabs.length; i++){
+	
+		// find all divs with the class "tabs"
+		if (hasClass(alltabs[i],'tabs')){
+		
+			// get the child divs
+			var c = getChildren(alltabs[i]);
+			
+			for (var h = 0; h < c.length; h++){
+				if (hasClass(c[h],'tabcontent')){
+					// hide all of them
+					hide(c[h]);					
+				}
+				// but show the first one
+				show(c[0]);	
+			}
+		}
+	}
+}
+
+// show the tab you've clicked
+function showTab(e, caller){
+	if (!caller) caller = this;			
+	
+	var pt = getParent(caller);
+	var dv = getChildren(pt);
+	var lnk = getTags(pt,'a');
+		
+	for (var i = 0; i < dv.length; i++) {
+		if (hasClass(dv[i],'tabcontent')){
+			// make sure the divs not selected are hidden
+			if (dv[i].id != caller.id + '_body') { hide(dv[i]); }
+			
+			// show the div you selected
+			else { show(dv[i]); }
+		}		
+	}
+	
+	for (var h = 0; h < lnk.length; h++) {
+		// turn off the anchor linking so that it doesn't interfere
+		lnk[h].href = 'javascript://';
+		
+		if (lnk[h].id != caller.id) { 
+			removeClass(lnk[h],'on');
+		}
+		else { addClass(lnk[h],'on'); }
+	}
+}
+
+function setTabs(obj){
+	if (typeof(obj) == "string") obj = getObject(obj);
+
+	if (obj.captureEvents)
+		obj.captureEvents(Event.CLICK);
+	
+	obj.onclick = showTab;
+}
+
+// ----------------------------------------------------------------------------------------------------
+// XMLHttpRequest FUNCTIONS
+
+var xmlhttp=false;
+/*@cc_on @*/
+/*@if (@_jscript_version >= 5)
+try {
+xmlhttp = new ActiveXObject("Msxml2.XMLHTTP"); } catch (e) { try { xmlhttp = new ActiveXObject("Microsoft.XMLHTTP");
+} catch (E) {
+xmlhttp = false;
+}
+}
+@end @*/
+
+if (!xmlhttp && typeof XMLHttpRequest != 'undefined') { xmlhttp = new XMLHttpRequest(); }
+
+function getMyHTML(serverPage, objID, async) {
+	if (async == undefined)
+		async = true;
+	var obj = document.getElementById(objID); 
+	
+	xmlhttp.open("GET", serverPage,async); 
+	xmlhttp.onreadystatechange = function(){ 
+		if (xmlhttp.readyState == 4){
+			try {
+				if(  xmlhttp.status == 200) { 
+					obj.innerHTML = xmlhttp.responseText; 
+				} 
+			} catch(E){
+			}
+		}
+	} 
+	xmlhttp.send(""); 
+} 
+
+// swap content onchange using getMyHTML
+// used briefly for AdoramaPix prototype -- not fully tested
+function switchContent(obj){
+	var d = document.forms[0].displaytype;
+	var c = d.options[d.selectedIndex].value;
+	if (c) getMyHTML(c,obj);
+}
+
+// ----------------------------------------------------------------------------------------------------
+// POPUPS
+
+// custom popup function - parameters passed in with link
+function popup(alink, popup_width, popup_height, scrollbars, toolbars, resize){
+	var url = alink.href;
+	var name = alink.target;
+	
+	var popup_window = window.open(url,name,"toolbar="+toolbars+",directories="+toolbars+",status="+toolbars+",menubar="+toolbars+",location="+toolbars+",scrollbars="+scrollbars+",resizable="+resize+",width="+popup_width+",height="+popup_height);
+	popup_window.focus();
+}
+
+// fixed popup function - parameters set in script which references popup()
+function popupFixed(alink){
+	var popup_window = popup(alink, 300, 200, 1, 0, 0); return false;
+	popup_window.focus();			
+}
+
+// ----------------------------------------------------------------------------------------------------
+// IFRAME FUNCTIONS
+
+// get to the iframes
+function updateFrame(obj,url){
+	if (typeof(obj) == 'string') obj = getObject(obj);
+	//if (obj) obj.location.href = url;	
+	if (obj) obj.src = url;
+}
+
+
+// ----------------------------------------------------------------------------------------------------
+
+// clears the default value in a text input or textarea
+function clearDefaultNote(caller,note){
+	if (!caller) caller = this;	
+	
+	if (caller.value == note){ 
+		caller.value = '';
+	}
+}
+
+function addDefaultNote(caller,note){
+	if (!caller) caller = this;	
+	
+	if (caller.value == ''){
+		caller.value = note;
+	}
+}
+
+// scrambles email address 
+function decode_email_address(prefix,use2) {
+	if (use2 != true)
+	  use2 = false;
+	var encodedsuffix = "s@tiaevdsiroc.mo";
+	var encodedsuffix2 = "m@acef.eocm"
+	var suffix = "";
+	var i = 0;
+	while (i < encodedsuffix2.length) {
+		suffix += encodedsuffix2.charAt(i+1);
+		suffix += encodedsuffix2.charAt(i);
+		i += 2;
+	}
+	if (prefix.indexOf(suffix)>=0){
+	    location.replace("mailto:" + prefix);   
+	} else {
+	    if (use2)
+	        encodedsuffix = encodedsuffix2
+	    suffix = "";
+	    i = 0;
+	    while (i < encodedsuffix.length) {
+	    	suffix += encodedsuffix.charAt(i+1);
+	    	suffix += encodedsuffix.charAt(i);
+	    	i += 2;
+	    }
+	    location.replace("mailto:" + prefix+suffix);
+	}
+}
+
+// show feature content on mouseover
+// used on the new download page for SiteAdvisor Plus
+
+function setFeatureRows() {
+	var c = getTags(document,'td');		
+	for (var i = 0; i < c.length; i++) {		
+		if (hasClass(c[i],'moreInfo')) {
+			if (c[i].addEventListener) {
+				c[i].addEventListener('mouseover',showFeature,false);	
+				c[i].addEventListener('mouseout',hideFeature,false);						
+			}
+			else {
+				c[i].onmouseover = showFeature;
+				c[i].onmouseout = hideFeature;
+			}	
+		}
+	}
+}
+
+function showFeature(e,caller) {
+	if (!caller) caller = this;		
+	var row = getParent(caller);
+	var tbody = getParent(row);
+	var allRows = getChildren(tbody);
+	var nextRow = row.rowIndex;		
+	hideFeature();				
+	addClass(row,'selectedFeature');
+	addClass(allRows[nextRow],'selectedFeature');
+}
+
+function hideFeature() {				
+	var tr = getTags(document,'tr');		
+	for (var i = 0; i < tr.length; i++) {
+		if (hasClass(tr[i],'selectedFeature')) {
+			removeClass(tr[i],'selectedFeature');
+		}
+	}
+}

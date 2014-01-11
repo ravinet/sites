@@ -1,0 +1,30 @@
+PHTTP
+18.7.20.69"Ê
+GET /crossdomain.xml HTTP/1.1
+Host: stats.kaltura.com
+Connection: keep-alive
+vUser-Agent: Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/31.0.1650.63 Safari/537.36
+Accept: */*
+Referer: http://www.tmz.com/
+$Accept-Encoding: gzip,deflate,sdch
+!Accept-Language: en-US,en;q=0.8
+
+*ä
+HTTP/1.1 200 OK
+Server: Apache
+X-Me: pa-stats2
+.Last-Modified: Thu, 21 Nov 2013 09:43:54 GMT
+Content-Length: 392
+ Access-Control-Allow-Origin: *
+Content-Type: application/xml
+(Cache-Control: public, max-age=4793208
+(Expires: Wed, 05 Mar 2014 12:07:52 GMT
+%Date: Thu, 09 Jan 2014 00:41:04 GMT
+Connection: keep-alive
+Š
+<?xml version="1.0" encoding="UTF-8"?>
+<cross-domain-policy xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.adobe.com/xml/schemas/PolicyFile.xsd">
+	<allow-access-from domain="*" to-ports="*" secure="false"/>
+	<site-control permitted-cross-domain-policies="all"/>
+	<allow-http-request-headers-from domain="*" headers="*"/>
+</cross-domain-policy>

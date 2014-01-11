@@ -1,0 +1,26 @@
+PHTTP63.135.172.251"¬
+GET /cm/ HTTP/1.1
+Host: rc2waycm-atl.netmng.com
+Connection: keep-alive
+Accept: image/webp,*/*;q=0.8
+vUser-Agent: Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/31.0.1650.63 Safari/537.36
+uReferer: http://tap2-cdn.rubiconproject.com/partner/scripts/rubicon/emily.html?rtb_ext=1&pc=9262/15958&geo=na&co=us
+$Accept-Encoding: gzip,deflate,sdch
+!Accept-Language: en-US,en;q=0.8
+
+*Ì
+HTTP/1.1 302 Found
+%Date: Fri, 10 Jan 2014 16:38:56 GMT
+Server: Apache/2.2.16
+4Location: http://rc2waycm-atl.netmng.com/blank.gif
+Content-Length: 224
+X-Cnection: close
+-Content-Type: text/html; charset=iso-8859-1
+â
+<!DOCTYPE HTML PUBLIC "-//IETF//DTD HTML 2.0//EN">
+<html><head>
+<title>302 Found</title>
+</head><body>
+<h1>Found</h1>
+<p>The document has moved <a href="http://rc2waycm-atl.netmng.com/blank.gif">here</a>.</p>
+</body></html>

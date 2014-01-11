@@ -1,0 +1,37 @@
+PHTTP65.110.169.132"Ë
+"GET /lib/casaleFlash.js HTTP/1.1
+Host: www.optmd.com
+Connection: keep-alive
+Accept: */*
+vUser-Agent: Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/31.0.1650.63 Safari/537.36
+ Referer: http://www.optmd.com/
+$Accept-Encoding: gzip,deflate,sdch
+!Accept-Language: en-US,en;q=0.8
+
+*¢
+HTTP/1.1 200 OK
+%Date: Thu, 09 Jan 2014 00:39:26 GMT
+Server: Apache
+.Last-Modified: Thu, 18 Oct 2012 22:11:07 GMT
+"ETag: "b80094-54e-4cc5ca9f054c0"
+Accept-Ranges: bytes
+Content-Length: 1358
+GP3P: policyref="/w3c/p3p.xml", CP="NOI DSP COR DEVa TAIa OUR BUS UNI"
+Connection: close
+Content-Type: text/javascript
+Ð
+
+/*Copyright(c) 2003-2006 Casale Media. All Rights Reserved.
+Legal Notice The information contained within this document is confidential, copyrighted and or trade secret. No part of this document may be reproduced or distributed in any form or by any means, in whole or in part, without the prior written permission of Casale Media.*/
+
+function CasaleFlash(width, height, bgColor, src, loop) {
+	document.write('<object classid="clsid:D27CDB6E-AE6D-11cf-96B8-444553540000"');
+	document.write('  codebase="http://download.macromedia.com/pub/shockwave/cabs/flash/swflash.cab#version=5,0,2,0" ');
+	document.write(' id="FLASH_AD" width="'+width+'" height="'+height+'" style="background-color: #'+bgColor+'; display: block">');
+	document.write(' <param name="movie" VALUE="'+src+'"> <param name="quality" value="high"> <param name="wmode" value="transparent"> <param name="bgcolor" value="#'+bgColor+'"> <param name="loop" value="'+loop+'"> ');
+	document.write(' <embed src="'+src+'" quality="high" wmode="transparent" loop="'+loop+'"');
+	document.write(' swLiveConnect="false" width="'+width+'" height="'+height+'" bgcolor="#'+bgColor+'" ');
+	document.write(' type="application/x-shockwave-flash" PLUGINSPAGE="http://www.macromedia.com/shockwave/download/index.cgi?P1_Prod_Version=ShockwaveFlash">');
+	document.write(' </embed>');
+	document.write(' </object>');
+}

@@ -1,0 +1,56 @@
+PHTTP23.6.18.167"•
++GET /_assets/bbbeyond/js/base.js HTTP/1.1
+ Host: www.bedbathandbeyond.com
+Connection: keep-alive
+Accept: */*
+vUser-Agent: Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/31.0.1650.63 Safari/537.36
++Referer: http://www.bedbathandbeyond.com/
+$Accept-Encoding: gzip,deflate,sdch
+!Accept-Language: en-US,en;q=0.8
+∏Cookie: SSLB=1; SSID=BwD76x1GAAAAAADo-M1SroMRGOj4zVIBAAAAAAAAAAAA6PjNUgAh4pYkAAGV_AQA6PjNUgEA5iUAAdIfBQDo-M1SAQD5JAAB3QQFAOj4zVIBAEUkAAHc8wQA6PjNUgEAVSUAASQRBQDo-M1SAQA; SSSC=256.G5966698757055677358.1|9285.324572:9366.326805:9465.328925:9557.332068:9702.335826; SSOD=AEFjAAAAEAB2ZQQAAQAAAOj4zVLo-M1S; BedBathUSLVPrdts=; SFLCookie=; JSESSIONID=62T6SN4LNSGMYXf65MqpY3f5fnJDBSpGQB9J8Qp0NBBLcsRJrN6x!-332805614; BIGipServerWeblogic_Pool=1258427402.22811.0000; TLTSID=E7D7491803CE7083E0C403D8D8A0793B; TLTUID=99816F102C9C68E6E6ED8986D0DBD452; BBBDC=SD01; SSRT=6vjNUgADAQ
+
+*ˇ
+
+HTTP/1.1 200 OK
+Server: Apache
+.Last-Modified: Sat, 26 Oct 2013 06:43:12 GMT
+Accept-Ranges: none
+X-Who-O: AN2001
+Content-Length: 779
+&Content-Type: application/javascript
+X-Who-L: SD2002
+X-Who-R: SD-1.13-80
+5Access-Control-Allow-Origin: *.bedbathandbeyond.com
+/Access-Control-Allow-Origin: *.buybuybaby.com
+4Access-Control-Allow-Origin: *.bedbathandbeyond.ca
+)Access-Control-Allow-Origin: 63.241.7.7
+)Access-Control-Allow-Origin: 63.241.7.9
+&Cache-Control: public, max-age=79160
+(Expires: Thu, 09 Jan 2014 23:17:53 GMT
+%Date: Thu, 09 Jan 2014 01:18:33 GMT
+Connection: keep-alive
+ç
+(function ($, window, document, undefined) {
+    $(function () {
+        if ($("#billingAdd")[0]) {
+            BBB.validationUtils.localizeAndValidate({
+                form: '#billingAdd'
+            });
+        }
+
+        if ($("div.regsitryItem")[0]) {
+            var _fieldMap = {};
+            BBB.fn.rAccord.fieldMap = $.extend({}, fieldMap, _fieldMap);
+
+            if ($('#pageWrapper.updateRegistryInfo')[0]) {
+                BBB.fn.rAccord.init('update');
+            } else {
+                BBB.fn.rAccord.init('create');
+            }
+        }
+
+        // Popular categories height match
+        var popCatHt = $('.homePage .popularCategoryList').height() + 5;
+        $('.homePage #popularCategory ul').height(popCatHt);
+    });
+})(jQuery, this, this.document);

@@ -1,0 +1,28 @@
+PHTTP23.44.194.38"ﬁ
+:GET /account/status?offerLocations=---Select--- HTTP/1.1
+Host: www.hsn.com
+Connection: keep-alive
+8Accept: application/json, text/javascript, */*; q=0.01
+"X-Requested-With: XMLHttpRequest
+vUser-Agent: Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/31.0.1650.63 Safari/537.36
+Referer: http://www.hsn.com/
+$Accept-Encoding: gzip,deflate,sdch
+!Accept-Language: en-US,en;q=0.8
+.Cookie: ABCode=109; .R=; fsr.a=1389372587804
+
+*ı
+HTTP/1.1 200 OK
+*Cache-Control: no-cache, must-revalidate
+Pragma: no-cache
+/Content-Type: application/json; charset=utf-8
+Expires: -1
+ Access-Control-Allow-Origin: *
+%Date: Fri, 10 Jan 2014 16:49:34 GMT
+Content-Length: 270
+Connection: keep-alive
+LSet-Cookie: .S=iedhksggzf0juji5xciveqo0; domain=.hsn.com; path=/; HttpOnly
+ØSet-Cookie: mscssid=id=jt8K3s7LUyPE8%2BgU2ZwnrwImg0C2VP7HqA90yHlO6QUtTXXF6z7CWg%3D%3D&Look_Up_=CE_1; domain=.hsn.com; expires=Tue, 19-Jan-2038 03:14:07 GMT; path=/; HttpOnly
+{Set-Cookie: .P=855f9ae6da22441fa3f8171a73051fb4; domain=.hsn.com; expires=Tue, 19-Jan-2038 03:14:07 GMT; path=/; HttpOnly
+VSet-Cookie: ABCode=9; domain=.hsn.com; expires=Fri, 04-Apr-2014 15:49:35 GMT; path=/
+ê
+{"alerts":0,"bagItems":0,"isAuthenticated":false,"name":null,"session":"855f9ae6da22441fa3f8171a73051fb4","displayEmailCapture":false,"emailCaptureMethod":"modal","arcadeListenEvent":false,"showKashModal":false,"refUrl":"","customerOffers":[],"showMarketingDrawer":true}

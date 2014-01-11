@@ -1,0 +1,49 @@
+»HTTPS205.216.26.171"‚
+GET /mpel/mpel.js HTTP/1.1
+Host: espanol.optimum.net
+Connection: keep-alive
+Accept: */*
+vUser-Agent: Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/31.0.1650.63 Safari/537.36
+#Referer: https://www.optimum.net/
+$Accept-Encoding: gzip,deflate,sdch
+!Accept-Language: en-US,en;q=0.8
+2Cookie: cachekeys=ZIP=02139| CORP=07801| REGION=
+
+*Ñ
+
+HTTP/1.1 200 OK
+(Content-Type: application/x-javascript
+.Last-Modified: Mon, 09 Dec 2013 14:11:13 GMT
+Accept-Ranges: bytes
+ETag: "48a9e984e8f4ce1:0"
+Server: Microsoft-IIS/7.5
+%Date: Thu, 09 Jan 2014 21:06:22 GMT
+Content-Length: 1102
+Ð
+MpElDs = {
+    "espanol.optimum.com": "es",
+    "optimum.com": "en",
+    "www.optimum.com": "en",
+    "optimum.net": "en",
+    "www.optimum.net": "en",
+    "espanol.optimum.net": "es",
+	"www.optimumbusiness.com": "en",
+	"optimumbusiness.com": "en",
+	"espanol.optimumbusiness.com": "es",
+	"getstarted.optimum.net": "en"
+};
+if (!RegExp("MP_LANG=" + MpElDs[location.host]).test(document.cookie)) {
+    
+	if (location.host.toString().indexOf('optimum.com') != -1) {
+       MpElD = "//espanol.optimum.com";
+    } 
+	if  (location.host.toString().indexOf('optimum.net') != -1) {
+       MpElD = "//espanol.optimum.net";
+    }
+	if (location.host.toString().indexOf('optimumbusiness.com') != -1) {
+       MpElD = "//espanol.optimumbusiness.com";
+	}
+    MpL = navigator.browserLanguage;
+    if (!MpL) MpL = navigator.language;
+    document.write(decodeURIComponent("%3Cscript src='") + MpElD + "/mpel.js?href=" + encodeURIComponent(location.href) + "&ref=" + encodeURIComponent(document.referrer) + "&lang=" + MpL + "' type='text/javascript'" + decodeURIComponent("%3E%3C/script%3E"))
+};

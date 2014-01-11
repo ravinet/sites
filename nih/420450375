@@ -1,0 +1,262 @@
+PHTTP137.187.25.43"Ø
+$GET /styles/slideshow.css HTTP/1.1
+Host: www.nih.gov
+Connection: keep-alive
+Accept: text/css,*/*;q=0.1
+vUser-Agent: Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/31.0.1650.63 Safari/537.36
+Referer: http://www.nih.gov/
+$Accept-Encoding: gzip,deflate,sdch
+!Accept-Language: en-US,en;q=0.8
+
+*¦&
+HTTP/1.1 200 OK
+(Server: Sun-Java-System-Web-Server/7.0
+%Date: Thu, 09 Jan 2014 00:45:35 GMT
+Content-type: text/css
+.Last-modified: Fri, 04 Oct 2013 21:58:43 GMT
+Content-length: 4650
+Etag: "122a-524f3a13"
+Accept-ranges: bytes
+¬$
+ /* ---------------------------------------------------- */
+/* SLIDESHOW
+/* ---------------------------------------------------- */
+#slideshow
+{
+		float: left;
+		clear: both;
+		position: relative;
+		width: 616px;
+		height: 335px;
+		padding: 0;
+		padding-bottom: 16px;
+		margin: 0;
+		overflow: hidden;
+		background: #fff url(../images/slideshow-bkgnd2.jpg) no-repeat left top;
+}
+#slideshow h2 {
+ 	position: absolute;
+ 	left: -9000px;
+ 	width: 1px;
+ 	height: 1px;
+ 	overflow: hidden;
+}
+#slideshow h3 {
+	position: absolute;
+	top: 28px;
+	left: 28px;
+	width: 271px;
+	height: 211px;
+	margin-top: 0;
+}
+#slideshow h3 a {
+ 	position: absolute;
+ 	left: -9000px;
+ 	width: 1px;
+ 	height: 1px;
+ 	overflow: hidden;
+}
+#slideshow .description {
+	position: absolute;
+	top: 153px;
+	left: 40px;
+	color: #fff;
+	width: 250px;
+	font: 13px Trebuchet MS, Arial, Helvetica, sans-serif;
+	line-height: 18px;
+	margin-top: 0;
+}
+#slideshow .more {
+	position: absolute;
+	top: 239px;
+	left: 131px;
+	width: 66px;
+	height: 24px;
+	margin-top: 0;
+	background: transparent url(../images/button-more-blue.gif) no-repeat left top;
+}
+#slideshow .more a {
+	display: block;
+	width: 66px;
+	height: 24px;
+}
+#slideshow .more span {
+ 	position: absolute;
+ 	left: -9000px;
+ 	width: 1px;
+ 	height: 1px;
+ 	overflow: hidden;
+}
+#slideshow .photo {
+	position: absolute;
+	top: 20px;
+	left: 308px;
+}
+
+#slideshow ul
+{
+		margin: 0;
+		padding: 0;
+		list-style-type: none;
+		height: 1%; /* IE fix */
+}
+
+#slideshow ul:after
+{
+		content: ".";
+		clear: both;
+		display: block;
+		height: 0;
+		visibility: hidden;
+}
+
+/* ---------------------------------------------------- */
+/* SLIDESHOW > SLIDES
+/* ---------------------------------------------------- */
+#slideshow .slides
+{
+		overflow: hidden;
+		width: 616px;
+		height: 328px;
+		margin: 0;
+		padding: 0;
+}
+
+#slideshow .slides ul
+{
+		margin: 0;
+		padding: 0;
+}
+
+
+#slideshow .slides li {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 616px;
+	height: 328px;
+	/* float: left; */
+	padding: 0;
+	margin: 0;
+	list-style-type: none;
+	line-height: 0%;
+	background: #1b3570 url(../images/slideshow-bkgnd2.jpg) no-repeat left top;
+}
+
+#slideshow .slides li#slide-one { /* Causes the first slide to display and hides the controls if JavasSript is turned off */
+	z-index: 200;
+}
+#slideshow #showallslides {
+	position: absolute;
+	top: 282px;
+	left: 98px;
+	z-index: 90;
+	width: 130px;
+	height: 24px;
+	font-size: 12px;
+	line-height: 1.6em;
+	text-align: center;
+	overflow: hidden;
+}
+#slideshow #showallslides a:link {
+	color: #82b0d2;
+}
+#slideshow #showallslides a:visited {
+	color: #82b0d2;
+}
+
+#slideshow .slides img { border: none; }
+
+/* ---------------------------------------------------- */
+/* SLIDESHOW > NAVIGATION
+/* ---------------------------------------------------- */
+#slideshow .slides-nav
+{
+		background: none;
+		position: absolute;
+		top: 282px;
+		left: 98px;
+		z-index: 100;
+		margin: 0;
+		padding: 0;
+		width: 130px;
+		height: 24px;
+		background-color: #1c3671;
+		border: 1px solid #426ead;
+}
+
+
+#slideshow .slides-nav li
+{
+		list-style: none;
+		float: left;
+		margin: 0;
+		padding: 0;
+}
+
+#slideshow .slides-nav li a
+{
+		float: left;
+		display: block;
+		margin: 0;
+		width: 26px;
+		height: 24px;
+		font-family: Georgia,"Times New Roman",Times,serif;
+		font-size: 18px;
+		line-height: 1em;
+		text-align: center;
+		text-decoration: none;
+		color: #82b0d2;
+		border: none;
+		background: #1c3671 url(../images/slideshow-controlbkgnd.gif) no-repeat top right;
+}
+
+html>body #slideshow .slides-nav li a
+{
+		/*background: transparent url(../images/nhov-bottom.gif) no-repeat bottom right;*/
+}
+
+.js #slideshow .slides-nav li.on
+{
+		/*background: url(../images/nav-top.gif) no-repeat top left;*/
+}
+.js #slideshow .slides-nav li.on a
+{
+		color: #fff;
+		background-color: #426ead;
+		background-image: none;
+		/*background: url(../images/nav-bottom.gif) no-repeat bottom right !important;*/
+}
+
+/* ---------------------------------------------------- */
+/* REPLACE SLIDESHOW WITH SPECIAL ALERT BOX
+/* ---------------------------------------------------- */
+#slideshow .specialnotice {
+	position: absolute;
+	width: 536px;
+	height: 251px;
+	background: #952319 url(../images/specialalert-bkgnd.jpg) no-repeat left top;
+	z-index: 300;
+	padding: 40px;
+	padding-top: 37px;
+}
+#slideshow .specialnotice h2 {
+	font: normal 1.9em/1.2em Georgia, "Times New Roman", Times, serif;
+	color: #fff;
+	text-align: center;
+	text-transform: none;
+	position: static;
+	width: auto;
+	height: auto;
+	margin-top: 0;
+	margin-bottom: 1em;
+}
+#slideshow .specialnotice p {
+	color: #fff;
+	font-size: 1.1em;
+	line-height: 1.4em;
+}
+#slideshow .specialnotice a {
+	color: #fff;
+	text-decoration: underline;
+}

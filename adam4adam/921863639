@@ -1,0 +1,142 @@
+PHTTP173.192.3.189"ô
+@GET /ressources/jquery/jquery.thumbhover_v1.js?v=2762 HTTP/1.1
+Host: images.adam4adam.com
+Connection: keep-alive
+Accept: */*
+vUser-Agent: Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/31.0.1650.63 Safari/537.36
+$Referer: http://www.adam4adam.com/
+$Accept-Encoding: gzip,deflate,sdch
+!Accept-Language: en-US,en;q=0.8
+
+*•
+HTTP/1.1 200 OK
+&Content-Type: application/javascript
+.Last-Modified: Tue, 13 Mar 2012 08:53:13 GMT
+Server: A4A
+Content-Length: 2998
+Accept-Ranges: bytes
+%Date: Thu, 09 Jan 2014 13:42:43 GMT
+"X-Varnish: 1290755350 1286993092
+Age: 1918
+Via: 1.1 varnish
+Connection: keep-alive
+(Expires: Sat, 11 Jan 2014 13:42:43 GMT
+¸
+(function($) {
+	$.fn.thumbPopup = function(options)
+	{
+		//Combine the passed in options with the default settings
+		var settings = jQuery.extend({
+			popupId: "thumbPopup",
+			popupCSS: {'border': '1px solid #c35f01', 'background': '#FFFFFF'},
+			imgSmallFlag: "_t",
+			imgLargeFlag: "_l",
+			cursorTopOffset: 15,
+			cursorLeftOffset: 15,
+			loadingHtml: "<span style='padding: 5px;'>Loading</span>",
+			delay: 0
+		}, options);
+
+		
+		var timeOutCounter;
+		
+		//Create our popup element
+		popup =
+		$("<div />")
+		.css(settings.popupCSS)
+		.attr("id", settings.popupId)
+		.css("position", "absolute")
+		.appendTo("body").hide();
+		
+		//Attach hover events that manage the popup
+		$(this)
+		.mouseover(setPopup)
+		.mousemove(updatePopupPosition)
+		.mouseout(hidePopup);
+		
+		function setPopup(event)
+		{
+
+			var mainEvent = event;
+			
+			var fullImgURL = $(this).attr("src").replace(settings.imgSmallFlag, settings.imgLargeFlag);
+			
+			$(this).data("hovered", true);
+			
+			var evetnObj = this;
+			
+			//Load full image in popup
+			timeOutCounter = setTimeout(ShowPopUp, settings.delay);
+			
+			function ShowPopUp(){
+					
+					$("<img />")
+					.bind("load", {thumbImage: this}, function(event)
+					{
+						//Only display the larger image if the thumbnail is still being hovered
+						if ($(evetnObj).data("hovered") == true) {
+							$(popup).empty().html(this);
+							$(popup).show();
+						}
+						$(evetnObj).data("cached", true);
+						updatePopupPosition(mainEvent);
+					})
+					.attr("src", fullImgURL);
+					
+					updatePopupPosition(mainEvent);
+					
+					//If no image has been loaded yet then place a loading message
+					if ($(evetnObj).data("cached") != true) {
+						$(popup).html($(settings.loadingHtml));
+						$(popup).show();
+					}
+			}
+			
+			updatePopupPosition(event);			
+		}
+		
+		function updatePopupPosition(event)
+		{
+			var windowSize = getWindowSize();
+			var popupSize = getPopupSize();
+
+			if (windowSize.width + windowSize.scrollLeft < event.pageX + popupSize.width + settings.cursorLeftOffset){
+				$(popup).css("left", event.pageX - popupSize.width - settings.cursorLeftOffset);
+			} else {
+				$(popup).css("left", event.pageX + settings.cursorLeftOffset);
+			}
+			if (windowSize.height + windowSize.scrollTop < event.pageY + popupSize.height + settings.cursorTopOffset){
+				$(popup).css("top", event.pageY - popupSize.height - settings.cursorTopOffset);
+			} else {
+				$(popup).css("top", event.pageY + settings.cursorTopOffset);
+			}
+		}
+		
+		function hidePopup(event)
+		{
+			clearTimeout(timeOutCounter);
+			$(this).data("hovered", false);
+			$(popup).empty().hide();
+		}
+		
+		function getWindowSize() {
+			return {
+				scrollLeft: $(window).scrollLeft(),
+				scrollTop: $(window).scrollTop(),
+				width: $(window).width(),
+				height: $(window).height()
+				
+			};
+		}
+		
+		function getPopupSize() {
+			return {
+				width: $(popup).width(),
+				height: $(popup).height()
+			};
+		}
+
+		//Return original selection for chaining
+		return this;
+	};
+})(jQuery);

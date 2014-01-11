@@ -1,0 +1,26 @@
+PHTTP54.243.179.233"º
+×GET /event?a=208152240&d=207348428&y=false&s207957414=direct&s208112617=gc&s208120401=false&n=http%3A%2F%2Fwww.nomorerack.com%2F&u=oeu1389274954271r0.3674774442333728&wxhr=true&t=1389274954274&f=335216554 HTTP/1.1
+$Host: 208152240.log.optimizely.com
+Connection: keep-alive
+vUser-Agent: Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/31.0.1650.63 Safari/537.36
+#Origin: http://www.nomorerack.com
+Accept: */*
+%Referer: http://www.nomorerack.com/
+$Accept-Encoding: gzip,deflate,sdch
+!Accept-Language: en-US,en;q=0.8
+
+*ÿ
+HTTP/1.1 200 OK
+(Access-Control-Allow-Credentials: true
+)Access-Control-Allow-Methods: POST, GET
+8Access-Control-Allow-Origin: http://www.nomorerack.com
+ Content-Type: application/json
+%Date: Thu, 09 Jan 2014 13:42:21 GMT
+9P3P: CP="IDC DSP COR CURa ADMa OUR IND PHY ONL COM STA"
+Server: nginx/1.2.7
+~Set-Cookie: fixed_external_208152240_end_user_id=; Domain=.optimizely.com; expires=Thu, 01 Jan 1970 00:00:00 GMT; Max-Age=-1
+ŠSet-Cookie: end_user_id=oeu1389274954271r0.3674774442333728; Domain=.208152240.log.optimizely.com; expires=Sun, 07 Jan 2024 13:42:21 GMT
+Content-Length: 2
+Connection: keep-alive
+
+{}

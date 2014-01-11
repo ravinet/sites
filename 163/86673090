@@ -1,0 +1,43 @@
+PHTTP38.125.163.139"¢
+5GET /channel4/html/015793_300100_0101.html HTTP/1.1
+Host: img1.126.net
+Connection: keep-alive
+TAccept: text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8
+vUser-Agent: Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/31.0.1650.63 Safari/537.36
+Referer: http://www.163.com/
+$Accept-Encoding: gzip,deflate,sdch
+!Accept-Language: en-US,en;q=0.8
+
+*†
+HTTP/1.1 200 OK
+(Expires: Tue, 08 Apr 2014 13:23:58 GMT
+%Date: Wed, 08 Jan 2014 13:23:58 GMT
+Server: nginx
+Content-Type: text/html
+.Last-Modified: Wed, 01 Jan 2014 02:46:33 GMT
+ Cache-Control: max-age=7776000
+X-Server-ID: S8
+Content-Length: 553
+Accept-Ranges: bytes
+ X-Varnish: 944953308 929422368
+Via: 1.1 varnish
+Age: 43091
+TX-Via: 1.1 lntw50:2 (Cdn Cache Server V2.0), 1.1 mgny141:5 (Cdn Cache Server V2.0)
+Connection: keep-alive
+«
+<html>
+<body>
+<div style="width:300px;height:150px">
+<div style="width:300px; height:100px;">
+<script>
+var mediav_ad_pub = 'Ohs6dq_1023496';
+var mediav_ad_width = '300';
+var mediav_ad_height = '100';
+</script>
+<script type="text/javascript" language="javascript" charset="utf-8"  src="http://static.mediav.com/js/mvf_g2.js"></script>
+</div>
+<div style="width:300px; height:50px;">
+<a href="http://juxiao.mediav.com" target="_blank">
+<img src="http://material.mediav.com/clickurl/jxjx300x50.png" border=0 /></a></div>
+</div>
+</body></html>

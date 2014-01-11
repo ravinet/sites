@@ -1,0 +1,25 @@
+»HTTPS66.220.152.19"™
+iGET /me/likes/5975759948?callback=FB.__globalCallbacks.f29abfd32c&method=get&pretty=0&sdk=joey HTTP/1.1
+Host: graph.facebook.com
+Connection: keep-alive
+Accept: */*
+vUser-Agent: Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/31.0.1650.63 Safari/537.36
+"Referer: http://www.cracked.com/
+$Accept-Encoding: gzip,deflate,sdch
+!Accept-Language: en-US,en;q=0.8
+
+*µ
+HTTP/1.1 200 OK
+ Access-Control-Allow-Origin: *
+Cache-Control: no-store
+/Content-Type: application/json; charset=UTF-8
+(Expires: Sat, 01 Jan 2000 00:00:00 GMT
+Pragma: no-cache
+’WWW-Authenticate: OAuth "Facebook Platform" "invalid_request" "An active access token must be used to query information about the current user."
+X-FB-Rev: 1073774
+:X-FB-Debug: 4DJPC1Wrbo6R0dhqSeZQvgDvA8mUPHOOIEO/9fCebWA=
+%Date: Thu, 09 Jan 2014 01:02:36 GMT
+Connection: keep-alive
+Content-Length: 179
+µ
+/**/ FB.__globalCallbacks.f29abfd32c({"error":{"message":"An active access token must be used to query information about the current user.","type":"OAuthException","code":2500}});

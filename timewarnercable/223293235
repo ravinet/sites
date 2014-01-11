@@ -1,0 +1,55 @@
+PHTTP66.117.23.100"ü
+ˆGET /m2/twcroadrunner/mbox/standard?mboxHost=www.timewarnercable.com&mboxSession=1389275781972-180364&mboxPage=1389275781972-180364&screenHeight=1200&screenWidth=1920&browserWidth=937&browserHeight=1051&browserTimeOffset=-300&colorDepth=24&mboxXDomain=enabled&mboxCount=1&pageName=residential-home&visitorType=prospect&mbox=twc_global&mboxId=0&mboxTime=1389257781975&mboxURL=http%3A%2F%2Fwww.timewarnercable.com%2Fen%2Fresidential-home.html&mboxReferrer=&mboxVersion=41&mboxXDomainCheck=true HTTP/1.1
+#Host: twcroadrunner.tt.omtrdc.net
+Connection: keep-alive
+Accept: */*
+vUser-Agent: Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/31.0.1650.63 Safari/537.36
+BReferer: http://www.timewarnercable.com/en/residential-home.html
+$Accept-Encoding: gzip,deflate,sdch
+!Accept-Language: en-US,en;q=0.8
+MCookie: mboxSession=1389275781972-180364; mboxPC=1389275781972-180364.17_44
+
+*ù
+HTTP/1.1 200 OK
+pragma: no-cache
+$P3P: CP="NOI DSP CURa OUR STP COM"
+íSet-Cookie: mboxPC=1389275781972-180364.17_44; Domain=twcroadrunner.tt.omtrdc.net; Expires=Thu, 23-Jan-2014 13:56:09 GMT; Path=/m2/twcroadrunner
+2Content-Type: text/javascript;charset=ISO-8859-1
+Content-Length: 1706
+%Date: Thu, 09 Jan 2014 13:56:08 GMT
+Server: Test & Target
+¨
+var mboxCurrent=mboxFactories.get('default').get('twc_global',0);mboxCurrent.setEventTime('include.start');document.write('<div style="visibility: hidden; display: none" id="mboxImported-default-twc_global-0">');/* Offer id: 10906*/ 
+
+_mboxDefaultContentOffer = function() {
+  this._onLoad = function() {};
+};
+
+_mboxDefaultContentOffer.prototype.setOnLoad = function(_onLoad) {
+  this._onLoad = _onLoad;
+};
+
+_mboxDefaultContentOffer.prototype.show = function(_mbox) {
+  var _defaultDiv = _mbox.getDefaultDiv();
+  if (_defaultDiv == null) {
+    return 0;
+  }
+  _defaultDiv.onclick = function() {
+    // just use _mbox.getName() when everyone is on mboxVersion >= 21
+    var _mboxName = _mbox.id ? _mbox.id : _mbox.getName();
+    var _clickDiv = document.getElementById('mboxClick-' + _mboxName);
+    if (_clickDiv != null) {
+      _clickDiv.onclick();
+    }
+  };
+  var _result = _mbox.hide();
+  if (_result == 1) {
+    this._onLoad();
+  }
+  return _result;
+};
+
+mboxCurrent.setOffer(new _mboxDefaultContentOffer());
+if (mboxCurrent.getFetcher && mboxCurrent.getFetcher().getType() == 'ajax') {
+  mboxCurrent.show();
+};document.write('<!-- Offer Id: 80563  --><script type=\"text\/javascript\">\r\n\/*T&T to SiteCat v4 ==>Response Plugin*\/\r\nwindow.s_tnt = window.s_tnt || \'\', tntVal = \'164571:0:0,\';\r\nif (window.s_tnt.indexOf(tntVal) == -1) {window.s_tnt+= tntVal;}\r\nif (mboxCurrent.getFetcher().getType() == \'ajax\'  && (window.s && window.s.tl)) {s.tl(\'TnT\', \'o\', \'TnT\');}\r\n<\/script>');document.write('</div>');mboxCurrent.setEventTime('include.end');mboxFactories.get('default').get('twc_global',0).loaded();mboxFactories.get('default').getPCId().forceId("1389275781972-180364.17_44");

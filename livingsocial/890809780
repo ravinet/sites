@@ -1,0 +1,23 @@
+»HTTPS199.91.50.125"Ê
+*POST /services/journal/v1/store HTTP/1.1
+"Host: subscribe.livingsocial.com
+Connection: keep-alive
+Content-Length: 169
+,Origin: https://subscribe.livingsocial.com
+vUser-Agent: Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/31.0.1650.63 Safari/537.36
+ Content-Type: application/json
+Accept: */*
+ªReferer: https://subscribe.livingsocial.com/roadblock?iframeDomain=https%3A%2F%2Fwww.livingsocial.com&_rand=80111&ref=broader_roadblock_dm_none_qt_none&preferred_city=2
+$Accept-Encoding: gzip,deflate,sdch
+!Accept-Language: en-US,en;q=0.8
+ËCookie: ref_code=broader_roadblock_dm_none_qt_none; root_visit=1; preferred_city_id=2; cvo_sid1=Q59YZ7QTU9XU; cvo_tid1=B3EiTDQZMpk|1389199972|1389199972|12; cupcake-iframe-shown=1; living_social_user_id=816ed457-6802-44e0-8d36-8330e013eaef; useracq-data-cookie=ref%3Ebroader_roadblock_dm_none_qt_none%3E1389200272497; seen-roadblock=1; _foundation_session=c1a5127113dc7c7594c4f04cb3ba1d76; __gads=ID=4c3bb6219dc6dd7e:T=1389199972:S=ALNI_MZQbpu68e62VI0xwkrZcEX59Byb3A; __utma=255729687.586920512.1389199984.1389199984.1389199984.1; __utmb=255729687.5.9.1389199986082; __utmc=255729687; __utmz=255729687.1389199984.1.1.utmcsr=(direct)|utmccn=(direct)|utmcmd=(none); __utmv=255729687.|6=NavigationVersion=treatment=1
+«
+[{"bucketId":"landingPages","entityId":"places_organic","variationId":"treatment","userId":"816ed457-6802-44e0-8d36-8330e013eaef","eventId":"fire_presubscriber_pixels"}]*¤
+HTTP/1.1 200 OK
+Server: nginx
+%Date: Wed, 08 Jan 2014 16:52:54 GMT
+ Content-Type: application/json
+Content-Length: 4
+Connection: keep-alive
+
+true

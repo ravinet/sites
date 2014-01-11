@@ -1,0 +1,35 @@
+PHTTP74.205.80.2" 
+GET /crossdomain.xml HTTP/1.1
+Host: services.plymedia.com
+Connection: keep-alive
+vUser-Agent: Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/31.0.1650.63 Safari/537.36
+Accept: */*
+pReferer: http://www.oracle.com/us/solutions/customer-experience/oracle-customer-experience/overview/index.html
+$Accept-Encoding: gzip,deflate,sdch
+!Accept-Language: en-US,en;q=0.8
+
+*œ
+HTTP/1.1 200 OK
+!Cache-Control: max-age=15552000
+Content-Length: 682
+Content-Type: text/xml
+@Content-Location: http://services.plymedia.com/crossdomain.xml
+.Last-Modified: Sun, 12 Oct 2008 12:01:36 GMT
+Accept-Ranges: bytes
+ETag: "d4bdbe46622cc91:69f"
+Server: Microsoft-IIS/6.0
+X-Powered-By: ASP.NET
+%Date: Thu, 09 Jan 2014 01:25:35 GMT
+¬
+<?xml version="1.0"?>
+<!DOCTYPE cross-domain-policy SYSTEM "http://www.macromedia.com/xml/dtds/cross-domain-policy.dtd">
+<cross-domain-policy>
+    <site-control permitted-cross-domain-policies="all"/>
+    <allow-access-from domain="*" /> 
+    <allow-http-request-headers-from domain="*" headers="SOAPAction"/> 
+    <allow-http-request-headers-from domain="www.bubbleply.com" headers="SOAPAction"/>
+    <allow-http-request-headers-from domain="bubbleply.com" headers="SOAPAction"/>
+    <allow-http-request-headers-from domain="*.plymedia.com" headers="SOAPAction"/>
+    <allow-http-request-headers-from domain="82.80.254.38" headers="SOAPAction"/>	
+
+</cross-domain-policy>

@@ -1,0 +1,31 @@
+PHTTP74.125.225.141"ä
+=GET /pixel?google_nid=bluekai&google_cm&google_sc& HTTP/1.1
+Host: cm.g.doubleclick.net
+Connection: keep-alive
+Accept: image/webp,*/*;q=0.8
+vUser-Agent: Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/31.0.1650.63 Safari/537.36
+³Referer: http://tags.bluekai.com/site/4651?dt=0&r=1740524938&sig=2162202714&bkca=KJhkAW2wCe9xhEXBlBCDdQAceCrB6R1h14a1CrT9WtMO1AMX2CqGgCiEoo7XU+IqbHMAGZUPItBnZGLFBWyuKi2b4w8T4U+lZ9l/M7EpzgaYDi5ov/HytZPxxBg0jPkm7pwJE3cYAhpDBj1ZTLaLUQajK75OsuxGXiYVzHH9Ak5OPWZHoPMPvRYpkVUPkVy2+6yFm7rCTOq+Uz2SW68L0hsSkxpbJkGfsGNXEmgIJ/Dw2+kSBSMHQONFHtFL+8mZcHAW0qukBNxfIarNLf3SaUHg5leIcDGR7UFkonjCMbNsAMyq7/fegF+FZz4+h6dtdBr+jU8wigC/4PmA2lAzCP7I9lKQkrG=
+$Accept-Encoding: gzip,deflate,sdch
+!Accept-Language: en-US,en;q=0.8
+PCookie: id=223268e4c501003d||t=1389232536|et=730|cs=002213fd480d0636a8b7257066
+
+*‡
+HTTP/1.1 302 Found
+¥P3P: policyref="http://googleads.g.doubleclick.net/pagead/gcn_p3p_.xml", CP="CURa ADMa DEVa TAIo PSAo PSDo OUR IND UNI PUR INT DEM STA PRE COM NAV OTC NOI DSP COR"
+fLocation: http://tags.bluekai.com/site/2981?id=&google_gid=CAESEEWWJcvLegKUgJAgeuL_rwI&google_cver=1
+%Date: Thu, 09 Jan 2014 01:55:37 GMT
+Pragma: no-cache
+(Expires: Fri, 01 Jan 1990 00:00:00 GMT
+*Cache-Control: no-cache, must-revalidate
+(Content-Type: text/html; charset=UTF-8
+Server: HTTP server (unknown)
+Content-Length: 295
+!X-XSS-Protection: 1; mode=block
+Alternate-Protocol: 80:quic
+©
+<HTML><HEAD><meta http-equiv="content-type" content="text/html;charset=utf-8">
+<TITLE>302 Moved</TITLE></HEAD><BODY>
+<H1>302 Moved</H1>
+The document has moved
+<A HREF="http://tags.bluekai.com/site/2981?id=&amp;google_gid=CAESEEWWJcvLegKUgJAgeuL_rwI&amp;google_cver=1">here</A>.
+</BODY></HTML>

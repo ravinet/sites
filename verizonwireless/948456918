@@ -1,0 +1,20 @@
+PHTTP207.211.42.94"Ì
+TGET /mpel.js?href=http%3A%2F%2Fwww.verizonwireless.com%2F&ref=&lang=en-US HTTP/1.1
+Host: es.verizonwireless.com
+Connection: keep-alive
+Accept: */*
+vUser-Agent: Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/31.0.1650.63 Safari/537.36
+*Referer: http://www.verizonwireless.com/
+$Accept-Encoding: gzip,deflate,sdch
+!Accept-Language: en-US,en;q=0.8
+¹Cookie: GLOBALID=YMpfvPT1T15r3MwjhAWT1ZkSjLzpGzZuPwMQ2vBLdiHZk022fnJwx6g0VWVanS7l; mt.v=2.624195456.1389228128624; mbox=check#true#1389228189|session#1389228128578-45261#1389229989|PC#1389228128578-45261.25_25#1390437729; s_pers=%20s_lastvisit%3D1389228130088%7C1483836130088%3B%20s_nr5%3D1389228130089-New%7C1420764130089%3B; invodoVisitor=A1rkobgmEbVto6Vnkz2nw9; s_vi=[CS]v1|2966F82B05149597-600001816046884C[CE]; fsr.a=1389228130904; s_sess=%20s_cc%3Dtrue%3B%20s_sq%3D%3B%20s_ppv%3D%252Fvzw%252Fhome%252520page%252Fprospect%252C55%252C55%252C1051%3B; fsr.s={"v":1}
+
+*›
+HTTP/1.1 200 OK
+.Cache-Control: max-age=0, no-cache, no-store
+Pragma: no-cache
+Content-Length: 228
+Server: Microsoft-IIS/7.0
+%Date: Thu, 09 Jan 2014 00:41:58 GMT
+æ
+(function(){var domain=(function(a){var b=a.match('[^.]+.(([^.]{2,3}.)?[^.]{2}|[^.]{3,})$');return b==null?a:b[0]})(location.host);document.cookie='MP_LANG=en;domain='+domain+';path=/;expires=Thu, 08 Jan 2015 19:41:59 EST';})();

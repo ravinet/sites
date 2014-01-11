@@ -1,0 +1,139 @@
+PHTTP65.254.51.34"‚
+DGET /wp-content/themes/infowars-standard/styles/reset.css HTTP/1.1
+Host: www.infowars.com
+Connection: keep-alive
+Accept: text/css,*/*;q=0.1
+vUser-Agent: Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/31.0.1650.63 Safari/537.36
+#Referer: http://www.infowars.com/
+$Accept-Encoding: gzip,deflate,sdch
+!Accept-Language: en-US,en;q=0.8
+
+*À
+HTTP/1.1 200 OK
+.Last-Modified: Fri, 30 Mar 2012 21:10:10 GMT
+Content-Type: text/css
+Content-Length: 1998
+Accept-Ranges: bytes
+%Date: Wed, 08 Jan 2014 20:29:44 GMT
+
+Age: 861
+Connection: keep-alive
+X-Cache: cached
+Ð
+/* CSS Document */
+
+/*--------------CSS RESET-------------*/
+
+/* Global Defaults */
+html, body {
+  margin: 0px;
+  padding: 0px;
+  border: 0px;
+}
+
+body {
+  font: 1em/1.25 Arial, Helvetica, sans-serif;
+}
+
+* {
+  outline: 0px;
+}
+
+/* Headlines */
+h1, h2, h3, h4, h5, h6 {
+  margin: 0;
+  padding: 0;
+  font-weight: normal;
+  font-family: Arial, Helvetica, sans-serif;
+  color: #545049;
+}
+
+/* Text Styles */
+p, th, td, li, dd, dt, ul, ol, blockquote, q, acronym, abbr, a, input, select, textarea {
+  margin: 0;
+  padding: 0;
+  font: normal normal normal 1em/1.25;
+}
+
+blockquote {
+  padding: 0 1.25em
+}
+
+q {
+  font-style: italic;
+}
+
+acronym, abbr {
+  cursor: help;
+  border-bottom: 1px dashed;
+}
+
+small {
+  font-size:.85em;
+}
+
+big {
+  font-size:1.2em;
+}
+
+/* Links and Images */
+a, a:link, a:visited, a:active, a:hover {
+  text-decoration: underline;
+  color: #FFF;
+  color: #0066CC;
+}
+
+img {
+  border: none;
+}
+
+/* Tables */
+table {
+  margin: 0;
+  padding: 0;
+  border: none;
+  text-align: left;
+}
+
+/* Forms */
+form {
+  margin: 0;
+  padding: 0;
+  display: inline;
+}
+
+label {
+  cursor: pointer;
+}
+
+/* Common Classes */
+.clear { clear: both; }
+.floatLeft, .alignleft { float: left; }
+.floatRight, .alignright { float: right; }
+.textLeft { text-align: left; }
+.textRight { text-align: right; }
+.textCenter { text-align: center; }
+.textJustify { text-align: justify; }
+.blockCenter { display: block; margin-left: auto; margin-right: auto; } /* remember to set width */
+.bold { font-weight: bold; }
+.italic { font-style: italic; }
+.underline { text-decoration: underline; }
+.noindent { margin-left: 0; padding-left: 0; }
+.nomargin { margin: 0; }
+.nopadding { padding: 0; }
+.nobullet { list-style: none; list-style-image: none; }
+
+ul ,ol {
+  margin-left: 25px;
+  list-style-type: none;
+}
+
+li {
+  list-style-type: none;
+  margin: 0px;
+  padding: 0px;
+}
+
+.post ul, .post ol{
+  margin-bottom: 10px;
+}

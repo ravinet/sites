@@ -1,0 +1,33 @@
+PHTTP173.192.220.64"Ý
+®GET /site/4972?ret=js&phint=rch%3DHome&phint=rco%3DBETAUS&phint=wcntn%3DHome%20-%20Landing&phint=wcnts%3DHome&phint=z0%3Dus.reuters&phint=z1%3Dhome&phint=cc%3DHome&phint=cnt%3DHome&phint=wtc%3Df6ea55e3-3066-4113-bdc9-d492d43d41a8&phint=log%3Dnull&phint=soc%3D&phint=hsh%3Dnull&phint=ref%3D&phint=sea%3D&phint=__bk_t%3DBusiness%20%26%20Financial%20News%2C%20Breaking%20US%20%26%20International%20News%20%7C%20Reuters.com&phint=__bk_k%3DBreaking%20News%2C%20World%20News%2C%20Video%20news%2C%20Investing%2C%20financial%20information%2C%20%20Business%20News%2C%20Rueters%2C%20Roiters&phint=__bk_l%3Dhttp%3A%2F%2Fwww.reuters.com%2F&jscb=saveCategories&bkrid=1690400738&r=47158501 HTTP/1.1
+Host: tags.bluekai.com
+Connection: keep-alive
+Accept: */*
+vUser-Agent: Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/31.0.1650.63 Safari/537.36
+"Referer: http://www.reuters.com/
+$Accept-Encoding: gzip,deflate,sdch
+!Accept-Language: en-US,en;q=0.8
+~Cookie: bkdc=wdc; bklc=0; bkc=KJ0nRsHQmsfJpOe2IVyxA1790zU9Ls1b98yFqzg9L/0qsRUdpoLJCHdeyL9x9KDe9wvqWiW=; bku=spD99aMppPnnpvLy
+
+*“
+HTTP/1.1 200 OK
+%Date: Thu, 09 Jan 2014 00:54:52 GMT
+Server: Apache/2.2.24 (Unix)
+uP3P: CP="NOI DSP COR CUR ADMo DEVo PSAo PSDo OUR SAMo BUS UNI NAV", policyref="http://tags.bluekai.com/w3c/p3p.xml"
+Pragma: no-cache
+(Expires: Thu, 01 Dec 1994 16:00:00 GMT
+.Cache-Control: max-age=0, no-cache, no-store
+ŠSet-Cookie: bkc=KJpnWVjQTWNiRRM84eS/ARsO/x4/w0K10+4+jDqCU2lBC1J4Z/lv7TFsl2U/Q1nUqAekibchxEx04tDm37ZZVSCXA0CD47WTv+XtOJUdpCrPd26mkHdeQg9d9AQz+tHZi/q0mqARscj1jyepZROXSP1sCZUzYcAxctxI1C2AUQuDeyO29PVE; expires=Tue, 08-Jul-2014 00:54:52 GMT; path=/; domain=.bluekai.com
+ƒSet-Cookie: bki1=KJ0nIUytb96p9h1eWc9hsJojsoQRsJQqVy99PELaz9==; expires=Tue, 08-Jul-2014 00:54:52 GMT; path=/; domain=.bluekai.com
+_Set-Cookie: bklc=52cdf35c; expires=Tue, 08-Jul-2014 00:54:52 GMT; path=/; domain=.bluekai.com
+fSet-Cookie: bku=spD99aMppPnnpvLy; expires=Tue, 08-Jul-2014 00:54:52 GMT; path=/; domain=.bluekai.com
+BK-Server: 1f45
+Content-Length: 42
+Content-Type: text/javascript
+,
+saveCategories(
+{
+ "campaigns": [
+ ]
+}
+);

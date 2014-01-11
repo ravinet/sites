@@ -1,0 +1,69 @@
+PHTTP64.62.243.91"ç
+3GET /siteresources/css/tinyurl_style.css HTTP/1.1
+Host: tinyurl.com
+Connection: keep-alive
+Accept: text/css,*/*;q=0.1
+vUser-Agent: Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/31.0.1650.63 Safari/537.36
+Referer: http://tinyurl.com/
+$Accept-Encoding: gzip,deflate,sdch
+!Accept-Language: en-US,en;q=0.8
+
+*¢
+HTTP/1.1 200 OK
+Content-Type: text/css
+Accept-Ranges: bytes
+ETag: "2543579985"
+.Last-Modified: Thu, 06 Jun 2013 20:06:16 GMT
+Content-Length: 808
+Connection: close
+%Date: Wed, 08 Jan 2014 16:23:25 GMT
+Server: TinyURL/1.6
+ª
+body { 
+    font-size : 80%; 
+    margin : 0px 0px 0px 0px; 
+    color : Black;  
+    background-color : White;  
+    font-family : Verdana, Geneva, Arial, Helvetica, sans-serif; 
+} 
+ 
+td { 
+    font-size : 80%; 
+    margin : 0px 0px 0px 0px; 
+    color : Black;  
+    font-family : Verdana, Geneva, Arial, Helvetica, sans-serif; 
+} 
+ 
+ 
+.sidebar { 
+    font-size : 14px;  
+    background-color : #000099; 
+    color : White;
+    border : #000099;
+} 
+ 
+.sidebar a { 
+    color : White; 
+} 
+.sidebar a:hover { 
+    color : White; 
+    background-color : Navy; 
+} 
+.sidebar a:visited { 
+    color : White; 
+} 
+.bgcolor1 { 
+    background-color : #F1F0FF; 
+} 
+.bgcolor2 { 
+    background-color : #FFF0E1; 
+} 
+
+.create-form {
+    background: #E7E7F7;
+}
+
+.create-error {
+    background: #E7E7F7;
+    width: 80%;
+}

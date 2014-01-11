@@ -1,0 +1,25 @@
+PHTTP64.208.138.175"Ô
+mGET /bounce?%2Fgetuid%3Fhttp%253A%252F%252Fimp2.bizographics.com%252Fu%253Fan_user_id%253D%2524UID HTTP/1.1
+Host: b.adnxs.com
+Connection: keep-alive
+Accept: image/webp,*/*;q=0.8
+vUser-Agent: Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/31.0.1650.63 Safari/537.36
+"Referer: http://www.zendesk.com/
+$Accept-Encoding: gzip,deflate,sdch
+!Accept-Language: en-US,en;q=0.8
++Cookie: sess=1; uuid2=1225112371702048425
+
+*³
+HTTP/1.1 302 Moved
+,Cache-Control: no-store, no-cache, private
+Pragma: no-cache
+(Expires: Sat, 15 Nov 2008 16:00:00 GMT
+†P3P: policyref="http://cdn.adnxs.com/w3c/policy/p3p.xml", CP="NOI DSP COR ADM PSAo PSDo OURo SAMo UNRo OTRo BUS COM NAV DEM STA PRE"
+X-XSS-Protection: 0
+sSet-Cookie: uuid2=1225112371702048425; path=/; expires=Wed, 09-Apr-2014 01:11:34 GMT; domain=.adnxs.com; HttpOnly
+`Set-Cookie: sess=1; path=/; expires=Fri, 10-Jan-2014 01:11:34 GMT; domain=.adnxs.com; HttpOnly
+ILocation: http://imp2.bizographics.com/u?an_user_id=1225112371702048425
+%Date: Thu, 09 Jan 2014 01:11:34 GMT
+Content-Length: 0
+-Content-Type: text/html; charset=ISO-8859-1
+

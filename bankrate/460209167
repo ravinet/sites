@@ -1,0 +1,444 @@
+PHTTP208.94.20.12"’
+=GET /popup/javascript/validation.cfm/signupform.js HTTP/1.1
+Host: app.bankrate.com
+Connection: keep-alive
+Accept: */*
+vUser-Agent: Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/31.0.1650.63 Safari/537.36
+`Referer: http://app.bankrate.com/popup/signup.cfm?l=213915118&s=weeklyrounduponestep&v=onestep
+$Accept-Encoding: gzip,deflate,sdch
+!Accept-Language: en-US,en;q=0.8
+æ
+Cookie: brmd=%7B%22expiration%22%3A%20%22Fri%2C%2010%20Jan%202014%2001%3A43%3A56%20GMT%22%2C%20%22path%22%3A%20%22/%22%2C%20%22domain%22%3A%20%22.bankrate.com%22%2C%20%22VID%22%3A%20%22f3098a23-10de-432c-b235-157ecd7ffb37%22%2C%20%22SID%22%3A%20%221389231836041%22%7D; brms=%7B%22path%22%3A%20%22/%22%2C%20%22domain%22%3A%20%22.bankrate.com%22%2C%20%22VID%22%3A%20%22f3098a23-10de-432c-b235-157ecd7ffb37%22%2C%20%22SID%22%3A%20%221389231836041%22%7D; op621globalheadergum=a0610c10bb2a19z03y18024fd; op621globalheaderliid=a0610c10bb2a19z03y18024fd; op621homepagegum=a02h05u0bk2a19y0335jz99af; op621homepageliid=a02h05u0bk2a19y0335jz99af; brmp=%7B%22expiration%22%3A%20%22Sun%2C%2007%20Jan%202024%2001%3A43%3A56%20GMT%22%2C%20%22path%22%3A%20%22/%22%2C%20%22domain%22%3A%20%22.bankrate.com%22%2C%20%22VID%22%3A%20%22f3098a23-10de-432c-b235-157ecd7ffb37%22%2C%20%22test%22%3A%20%7B%22name%22%3A%20%22GlobalNavigationTest%22%2C%20%22group%22%3A%20%22br3_b%22%7D%2C%20%22pid%22%3A%20%7B%22t%22%3A%201389231836185%2C%20%22p%22%3A%20%22br3_b%22%2C%20%22at%22%3A%20%5B%22p%22%5D%2C%20%22af%22%3A%20%5B%2231536000000%22%5D%7D%7D; brml=%7B%22expiration%22%3A%20%22Thu%2C%2009%20Jan%202014%2002%3A13%3A57%20GMT%22%2C%20%22path%22%3A%20%22/%22%2C%20%22domain%22%3A%20%22.bankrate.com%22%2C%20%22VID%22%3A%20%22f3098a23-10de-432c-b235-157ecd7ffb37%22%2C%20%22SID%22%3A%20%221389231836041%22%7D
+
+*­l
+HTTP/1.1 200 OK
+%Date: Thu, 09 Jan 2014 01:43:45 GMT
+Server: Apache
+!Keep-Alive: timeout=30, max=499
+Connection: Keep-Alive
+Transfer-Encoding: chunked
+Content-Type: text/javascript
+âj
+3553
+/**
+ * (c)2002-2004 E-Dialog.com
+ */
+
+
+/**
+ This class (container class really) has functions for doing special validation.
+ */
+ValidationUtil = new Object();
+ValidationUtil.REGEX_NON_ASCII = new RegExp("[^\\x00-\\x7F]");
+ValidationUtil.REGEX_EMAIL     = new RegExp("^([^()<>@,;:\\\\\".\\s\\x00-\\x1F\\x7F\\[\\]]+|\"([^\\\\\"\\x0D]|\\\\.)*\")(\\.([^()<>@,;:\\\\\".\\s\\x00-\\x1F\\x7F\\[\\]]+|\"([^\\\\\"\\x0D]|\\\\.)*\"))*@[^()<>@,;:\\\\\".\\s\\x00-\\x1F\\x7F\\[\\]]+(\\.[^()<>@,;:\\\\\".\\s\\x00-\\x1F\\x7F\\[\\]]+)*\\.([^()<>@,;:\\\\\".\\s\\x00-\\x1F\\x7F\\[\\]]{2,4}|museum)$");
+ValidationUtil.REGEX_LTRIM     = new RegExp("^\\s*(.*)");
+ValidationUtil.REGEX_RTRIM     = new RegExp("([^\\s]*)\\s*$");
+ValidationUtil.REGEX_INTEGER   = new RegExp("^\\d+$");
+ValidationUtil.REGEX_NUMERIC   = new RegExp("^\\d+(\\.\\d*)?$");
+ValidationUtil.isEmail = function(param) {
+    return !ValidationUtil.REGEX_NON_ASCII.test(param) && ValidationUtil.REGEX_EMAIL.test(param);
+}
+ValidationUtil.isDate = function(param) {
+    return (Date.parse(param)) ? true : false;
+}
+ValidationUtil.isDateYMD = function(year, month, day) {
+    return ValidationUtil.isDateMDY(month, day, year);
+}
+ValidationUtil.isDateMDY = function(month, day, year) { 
+    if( ValidationUtil.REGEX_INTEGER.test(month) &&
+        ValidationUtil.REGEX_INTEGER.test(day) &&
+        ValidationUtil.REGEX_INTEGER.test(year)) {
+        var d = new Date(year, --month, day);
+        return (d && d.getFullYear()==year && d.getMonth()==month && d.getDate()==day);
+    }
+    return false;
+}
+ValidationUtil.isInteger = function(param) {
+    return ValidationUtil.REGEX_INTEGER.test(param);
+}
+ValidationUtil.isNumeric = function(param) {
+    return ValidationUtil.REGEX_NUMERIC.test(param);
+}
+ValidationUtil.hasValue = function(param) {
+    if(!param || (typeof param!="string")) return false;
+    param = param.replace(ValidationUtil.REGEX_LTRIM, "$1");
+    param = param.replace(ValidationUtil.REGEX_RTRIM, "$1");
+    return param != "";
+}
+
+
+
+
+
+/**
+ * Adds methods from superObj into obj, a way of doing multiple inheritance.... 
+ * The javascript 'prototype' thing is messed up.
+ */
+function setSuperClass(obj, superObj) {
+    for(var x in superObj) {
+        if(typeof superObj[x]=="function") {
+            obj[x] = superObj[x];
+        }
+    }
+}
+
+
+
+
+/**
+ * 'SuperClass' for all form beans.
+ *
+ * The fieldCollection parameter should be a collection (a Map/'Associative Array') 
+ * with properties that match field names of the form to be validated.
+ *
+ * In client-side javascript, a FORM object should be passed through the
+ * simplifyClientSideFormData() function to extracting values from fields 
+ * appropriately before passing to this function.
+ *
+ * On the server-side there are functions on FormProcessor to do these mappings.
+ */
+function BaseFormBean(fieldCollection) {
+    // private properties
+    var myFieldCollection = fieldCollection;
+    var errors = new Array();
+    var baseErrorMessage = null;
+
+    // private methods/inner classes
+    /** puts together the 'Foo' part of 'getFoo/setFoo' */
+    function buildBaseAccessorMethodName(propName) {
+        if(!propName || (typeof propName!="string") || !/^[a-zA-Z][a-zA-Z0-9_]+$/.test(propName)) return null;
+        return propName.charAt(0).toUpperCase()+propName.substring(1,propName.length);
+    }
+    /** supports getFoo/setFoo */
+    function Accessor(fieldName) {
+        var myFieldName = fieldName;
+        this.getterMethod = function() {
+            return myFieldCollection[myFieldName];
+        }
+        this.setterMethod = function(param) {
+            myFieldCollection[myFieldName] = param;
+        }
+    }
+    // add methods to instances of this object to get field properties. i.e. getFoo()
+    for(var fieldName in fieldCollection) {
+        var baseAccessorMethodName = buildBaseAccessorMethodName(fieldName);
+        if(baseAccessorMethodName!=null) {
+            var accessor = new Accessor(fieldName);
+            this["get"+baseAccessorMethodName] = accessor.getterMethod;
+            this["set"+baseAccessorMethodName] = accessor.setterMethod;
+        }
+    }
+
+    /**
+     * A method to return a property in the field collection by name
+     */
+    this.get = function(param) {
+        var accessorName = buildBaseAccessorMethodName(param);
+        if(!accessorName) return null;
+        var accessorMethod = this["get"+accessorName];
+        return (typeof accessorMethod == "function") ? eval("this.get"+accessorName+"()") : null;
+    }
+    /**
+     * Returns this object's field collection
+     */
+    this.getFieldCollection = function() {
+        return myFieldCollection;
+    }
+
+    /**
+     * Sub-Classes should over-ride this method.
+     */
+    this.validate = function() {
+        return;
+    }
+
+    /**
+     * Runs the validate function, and returns true/false if there were errors.
+     */
+    this.isValid = function() {
+        this.clearErrors();
+        this.validate();
+        return this.getNumErrors()==0;
+    }
+
+    /**
+     * Clears any errors from the error list
+     */
+    this.clearErrors = function() {
+        errorFields = new Array();
+    }
+    /**
+     * Adds a new error to the error list.
+     */
+    this.addError = function(fieldName, fieldDescription) {
+        var o = new Object();
+        o.name = fieldName;
+        o.description = fieldDescription;
+        errors[errors.length] = o;
+    }
+    /**
+     * Returns the number of errors in the error list
+     */
+    this.getNumErrors = function() {
+        return errors.length;
+    }
+    /**
+     * Returns an array of any errors that occured.
+     */
+    this.getErrors = function() {
+        return errors;
+    }
+    /**
+     * Sets the base error message to a new value.
+     */
+    this.setBaseErrorMessage = function(newErrorMessage) {
+        baseErrorMessage = newErrorMessage;
+    }
+    /**
+     * Gets the base error message for this form bean.
+     */
+    this.getBaseErrorMessage = function() {
+        if(baseErrorMessage != null) {
+            return baseErrorMessage;
+        } else {
+            var result = "The following fields are missing or invalid";
+            if(this.get("profanityfiltered") == "true") 
+                result += "\n(some fields may have been filtered for profanity)";
+            return result+":";
+	}
+    }
+
+    /**
+     * Gets a full error message from this form bean using the base error 
+     * message and the individual error fields.
+     */
+    this.getFullErrorMessage = function(beforeFirstError, betweenErrors, afterLastError) {
+        if(typeof beforeFirstError == "undefined") beforeFirstError = " ";
+        if(typeof betweenErrors    == "undefined") betweenErrors    = ", ";
+        if(typeof afterLastError   == "undefined") afterLastError   = "";
+
+        var fullErrorMessage = this.getBaseErrorMessage();
+        fullErrorMessage += beforeFirstError;
+        var errors = this.getErrors();
+        for(var i=0; errors && i<errors.length; i++) {
+            if(i!=0) fullErrorMessage += betweenErrors;
+            fullErrorMessage += errors[i].description;
+        }
+        fullErrorMessage += afterLastError;
+        return fullErrorMessage;
+    }
+}
+
+
+/**
+ * A function, used on a client-side HTML-DOM enabled browser to simplify
+ * a FORM object's values so they can be passed into BaseFormBean.
+ */
+function simplifyClientSideFormData(formObject) {
+    if(!formObject || !formObject.elements) return null;
+    var result = new Object();
+	
+    for(var i=0; i<formObject.elements.length; i++) {
+        var element = formObject[i];
+        var name = element.name;
+        if(name) {
+            var value = simplifyClientSideElementValue(element);
+            if(!result[name])
+                result[name] = value;
+            else if(value) 
+                result[name] = result[name] + "," + value;
+        }
+    }
+    return result;
+}
+
+/**
+ * A function, called by simplifyCientSideFormData
+ */
+function simplifyClientSideElementValue(elementObject) {
+    if(!elementObject) return null;
+
+    var result = "";
+    // handle a single checkbox/radio button
+    if((typeof elementObject.type != "undefined") && elementObject.type!=null && (elementObject.type.toLowerCase()=="checkbox" || elementObject.type.toLowerCase()=="radio")) {
+        if(elementObject.checked) {
+            result = elementObject.value;
+        }
+    // handle text input fields and textareas
+    } else if((typeof elementObject.value != "undefined") && elementObject.value!=null) {
+        result = elementObject.value;
+    // handle a select box
+    } else if(elementObject.options && (typeof elementObject.options.length == "number") && (typeof elementObject.selectedIndex == "number")) {
+        // note that this code does not support:   <option>xxx</option>
+        // the value must be explicitly declared:  <option value="yyy">xxx</option>
+        result = elementObject.options[elementObject.selectedIndex].value;
+    }
+    return result;
+}
+
+
+/**
+ * Client side script called in onSubmit of form tag.
+ *
+ * The form name attribute should match the form's bean class.
+ *
+ */
+function validateClientSideForm(formObject, formName) {
+    if(!formObject) return true;
+    if(!formName) formName = formObject.name;
+    if(!formName) return true;
+
+    var formData = simplifyClientSideFormData(formObject);
+    var formBean = eval("new "+formName+"(formData)");
+
+    if(!formBean.isValid()) {
+        var errorMessage = formBean.getFullErrorMessage("\n    ", "\n    ", "");
+        alert(errorMessage);
+        return false;
+    }
+    return true;
+}
+
+
+//-----------------------
+
+
+/**
+ * Form validation for signupform
+ */
+function signupform(fieldCollection) {
+	setSuperClass(this, new BaseFormBean(fieldCollection));
+	
+	/**
+	 * This function performs the actual validation.
+	 */
+	this.validate = function () {
+		this.clearErrors();
+		
+		var alphaExp = /^[a-zA-Z]+$/;
+		var re = /^\d{5}(?:[-\s]\d{4})?$/;
+		
+		if(!ValidationUtil.hasValue(this.get("firstname")) || this.get("firstname") == 'First Name')
+			this.addError("firstname", "First Name");
+		if(this.get("firstname") != 'First Name' && (this.get("firstname").length<2 || !alphaExp.test(this.get("firstname"))))
+			this.addError("firstname", "First Name (Alpha characters only; Must be more than one.)");
+		if(!ValidationUtil.hasValue(this.get("zip")) || this.get("zip") == 'Zip Code' || !re.test(this.get("zip")))
+			this.addError("zip", "Please enter a valid U.S. zip code.");
+		if(!ValidationUtil.isEmail(this.get("email")) || this.get("email") == 'Email')
+			this.addError("email", "E-mail Address");
+	}
+
+	/**
+	 * This method returns a comma-delimited list of fields
+	 * that should be profanity-filtered.
+	 *
+	 * (server-side only)
+	 */
+	this.getFieldsToRunThroughProfanityFilter = function() {
+		return "";
+	}
+	
+	/**
+	 * This method returns a comma-delimited list of fields
+	 * that should be saved in user profile database.
+	 */
+	this.getProfileFields = function() {
+		var myfields = "";
+		if(ValidationUtil.hasValue(this.get("firstname")))
+		{
+			myfields = myfields + ",firstname";
+		}
+		if(ValidationUtil.hasValue(this.get("zip")))
+		{
+			myfields = myfields + ",zip";
+		}
+		return myfields;
+	 }
+	
+	/**
+	 * This method returns a comma-delimited list of optin list names
+	 * that have been displayed on the form.
+	 * User can be added/removed from these lists based on value of
+	 * 'named_optin' form field.
+	 */
+	this.getAllNamedLists = function() {
+		return "";
+	}
+
+	/**
+	 * Survey name to save survey data under. A default value may be 
+	 * specified in application config.
+	 */
+	/*
+	this.getSurveyName = function() {
+		return "";
+	}
+	*/
+	
+	/**
+	 * This method returns a comma-delimited list of fields
+	 * that should be saved in short answer column of survey table.
+	 */
+	this.getShortSurveyFields = function() {
+		return "";
+	}
+	
+	/**
+	 * This method returns a comma-delimited list of fields
+	 * that should be saved in long answer column of survey table.
+	 */
+	this.getLongSurveyFields = function() {
+		return "";
+	}
+	
+	/**
+	 * This method returns a comma-delimited list of fields
+	 * who's values should be retreived from the from processor 
+	 * after validation.
+	 *
+	 * This allows you to modify form variables in the validation script
+	 * or set default values for fields that may not be present in the form.
+	 *
+	 * (server side only)
+	 */
+	this.getFieldsToReload = function() {
+		return ""; // dob
+	}
+
+	
+	
+	/**
+	 * This is an exmaple function to that pretties up the date fields.
+	 */
+	/*
+	this.getDob = function () {
+		var month = this.get("dob_month");
+		var day   = this.get("dob_day");
+		var year  = this.get("dob_year");
+		if(month!="" && day!="" && year!="") {
+			if(ValidationUtil.isDateMDY(month, day, year)) return month+"/"+day+"/"+year;
+		}
+		return null;
+	}*/
+	
+
+
+	/**
+	 * This method returns a basic error message that will be used
+	 * to create the 'full' error messages that users will see.
+	 *
+	 * In most circumstances, this message will be followed by 
+	 * field-specific messages if an error occurs.
+	 */
+	/*
+	this.getBaseErrorMessage = function() {
+		var result = "The following fields are missing or invalid";
+		if(this.get("profanityfiltered") == "true") 
+			result += "\n(some fields may have been filtered for profanity)";
+		return result+":";
+	}
+	*/
+}
+
+0
+

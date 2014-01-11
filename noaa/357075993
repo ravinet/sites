@@ -1,0 +1,78 @@
+PHTTP129.15.96.11"Á
+GET /explore.js HTTP/1.1
+Host: www.noaa.gov
+Connection: keep-alive
+Accept: */*
+vUser-Agent: Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/31.0.1650.63 Safari/537.36
+Referer: http://www.noaa.gov/
+$Accept-Encoding: gzip,deflate,sdch
+!Accept-Language: en-US,en;q=0.8
+
+*Ú
+HTTP/1.0 200 OK
+.Last-Modified: Wed, 13 Nov 2013 19:00:18 GMT
+Accept-Ranges: bytes
+Content-Length: 1870
+&Content-Type: application/javascript
+%Date: Thu, 09 Jan 2014 01:16:26 GMT
+Server: Apache
+$ETag: "b0ada928-74e-4eb13937a1480"
+(Expires: Thu, 09 Jan 2014 02:16:26 GMT
+Cache-Control: max-age=3600
+
+Age: 108
+Via: 1.0 c7.w3.woc (squid)
+Connection: keep-alive
+Ð
+/** JAVASCRIPT FOR EXPLORE NOAA SUBJECT AREA PORTALS **/
+function assignExploreEvents () {
+	var nodeImage;
+
+	if (document.getElementById("exploreNOAAItems")) {
+		var exploreNodes = document.getElementById("exploreNOAAItems").childNodes;
+		for (var i = 0; i < exploreNodes.length; i++) {
+			if (exploreNodes[i].nodeName == "LI") {
+				nodeImage = exploreNodes[i].getElementsByTagName("img")[0];
+				nodeImage.name = nodeImage.alt.replace(" ","_")
+				nodeImage.name = nodeImage.name.toLowerCase();
+				if (nodeImage.addEventListener) {
+					nodeImage.addEventListener("mouseover", exploreOver, false);
+					nodeImage.addEventListener("focus", exploreOver, false);
+					nodeImage.addEventListener("mouseout", exploreOut, false);
+					nodeImage.addEventListener("blur", exploreOut, false);
+				} else {
+					nodeImage.attachEvent("onmouseover", exploreOver);
+					nodeImage.attachEvent("onfocus", exploreOver);
+					nodeImage.attachEvent("onmouseout", exploreOut);						
+					nodeImage.attachEvent("onblur", exploreOut);						
+				}
+			}
+		}
+	}
+}
+
+function exploreOver (e) {
+	var target = setTarget(e);	
+ 	var src_orig = target.src;
+	var src_swap = target.name + "-over";
+	src_swap = src_orig.substring(0,src_orig.lastIndexOf("/") +1) + src_swap + src_orig.substring(src_orig.lastIndexOf("."));
+	target.src = src_swap;
+}
+function exploreOut (e) {
+	var target = setTarget(e);
+	var src_orig = target.src;
+	var src_swap = target.name;
+	src_swap = src_orig.substring(0,src_orig.lastIndexOf("/") +1) + src_swap + src_orig.substring(src_orig.lastIndexOf("."));
+	target.src = src_swap;
+}
+ 
+function setTarget(event) {
+	if (!event) var event = window.event;
+	if (event.target) {
+		targ = event.target;
+	} else if (event.srcElement) {
+		targ = event.srcElement;
+	}
+	if (targ.nodeType == 3) targ = targ.parentNode;
+	return targ;
+}

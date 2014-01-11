@@ -1,0 +1,52 @@
+PHTTP54.230.55.20"ß
+/GET /js/track.js?0.23541840841062367 HTTP/1.1
+Host: statictk01.bpocdn.com
+Connection: keep-alive
+Accept: */*
+vUser-Agent: Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/31.0.1650.63 Safari/537.36
+Referer: http://www.cnbc.com/
+$Accept-Encoding: gzip,deflate,sdch
+!Accept-Language: en-US,en;q=0.8
+
+*ª	
+HTTP/1.1 200 OK
+(Content-Type: application/x-javascript
+Content-Length: 713
+Connection: keep-alive
+%Date: Mon, 09 Dec 2013 15:33:26 GMT
+.Last-Modified: Mon, 09 Dec 2013 15:28:08 GMT
+*ETag: "8090094ded6a174404f6c1c9f217277a"
+Accept-Ranges: bytes
+Server: AmazonS3
+Age: 1038
+X-Cache: Hit from cloudfront
+GVia: 1.1 dc0a380f1e586beacf41bfdca35373f8.cloudfront.net (CloudFront)
+GX-Amz-Cf-Id: r8UaZXKwa5l3FJvHw2NUTo0x5q50oc8AVC1PJwyfRQL1OzepRvZNtg==
+Ë
+if(typeof jQuery=='undefined'){
+	window.setTimeout(runTracker, 600);   //Run Tracker function after jQuery is loaded
+}else{
+	imp_tk();
+}
+function runTracker(){
+	imp_tk();		
+}  
+function imp_tk(){
+	$(document).ready(function(){
+		var links_url_t_a = $('a[href^="http://tracking.smartclicksystem.com"]');
+		var links_arr_t_l=new Array();        
+			for (var i = 0; i < links_url_t_a.length; i++) {     
+					links_arr_t_l.push($(links_url_t_a[i]).attr('href'));
+			}
+			
+			var _data_info_t = {'details' : links_arr_t_l.join(',')}
+			$.ajax({
+					async:true,
+					url: 'http://tracker.smartclicksystem.com/imp.php',
+					type: 'GET',
+					data:(_data_info_t),
+					dataType: 'jsonp',
+					cache:false
+			});
+	});
+}

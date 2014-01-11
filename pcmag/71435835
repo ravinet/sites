@@ -1,0 +1,24 @@
+PHTTP23.202.198.75"Ë
+GET /js/gurgle.js HTTP/1.1
+Host: cdn.static.zdbb.net
+Connection: keep-alive
+Accept: */*
+vUser-Agent: Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/31.0.1650.63 Safari/537.36
+ Referer: http://www.pcmag.com/
+$Accept-Encoding: gzip,deflate,sdch
+!Accept-Language: en-US,en;q=0.8
+
+*õ
+HTTP/1.1 200 OK
+Nx-amz-id-2: 7TfOCGZNJcYzHVP1wMnaBnsDK8HMEptovhQXkOz2bYzs2tpsl3PF/E0kOM+/A8Yo
+$x-amz-request-id: EF7AEAC381F8B123
+.Last-Modified: Thu, 22 Aug 2013 23:45:31 GMT
+*ETag: "becc62f2351c5ab1eb0efd72b855333c"
+Accept-Ranges: bytes
+&Content-Type: application/javascript
+Content-Length: 351
+Server: AmazonS3
+%Date: Thu, 09 Jan 2014 01:38:09 GMT
+Connection: keep-alive
+á
+(function () { var dc = document.cookie; if (dc.indexOf('_g_m=') == -1) { var dm = window.location.hostname || window.location.host; if (dm !== undefined)dm = dm.split('.').slice(-2).join('.'); var z = "https:" === document.location.protocol ? "https://" : "http://", y = z + "gurgle.zdbb.net/?domain=", x = y + dm; var z = new Image().src = x; }})();

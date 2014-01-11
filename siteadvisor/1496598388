@@ -1,0 +1,76 @@
+PHTTP161.69.13.140"Ø
+#GET /includes/js/tabs.js HTTP/1.1
+Host: www.siteadvisor.com
+Connection: keep-alive
+Accept: */*
+vUser-Agent: Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/31.0.1650.63 Safari/537.36
+&Referer: http://www.siteadvisor.com/
+$Accept-Encoding: gzip,deflate,sdch
+!Accept-Language: en-US,en;q=0.8
+
+*£
+
+HTTP/1.1 200 OK
+%Date: Thu, 09 Jan 2014 01:45:00 GMT
+Server: Apache
+.Last-Modified: Mon, 23 Mar 2009 21:36:40 GMT
+!ETag: "1080d-3eb-465d00fd40a00"
+Accept-Ranges: bytes
+Content-Length: 1003
+ Keep-Alive: timeout=15, max=99
+Connection: Keep-Alive
+&Content-Type: application/javascript
+í
+/* IE6 Background image flicker fix*/
+try {
+  document.execCommand("BackgroundImageCache", false, true);
+} catch(err) {}
+
+
+
+function clearAllGenTabs(ts)
+{
+ for( k=1; k<=ts; k++ )
+	{
+		document.getElementById('link'+k).className='normal';
+		document.getElementById('tab'+k).style.display='none';
+	}
+		document.getElementById('link'+ts).className='t-last';
+}
+
+function selectTab(id)
+{
+var el = document.getElementById("nav-tabs");
+var children = el.childNodes;
+var lis = children.length
+
+if (lis == 9)
+{
+lis = 4;
+}
+else if (lis == 7)
+{
+lis = 3;
+}
+else if (lis == 5)
+{
+lis = 2;
+}
+
+	clearAllGenTabs(lis);
+	document.getElementById('link'+id).className='selected';
+	document.getElementById('tab'+id).style.display='inline';
+}
+
+
+function tabcheck()
+{
+    var x = window.location.search.substring(1)
+    if ( x.indexOf('tid')!=-1 )
+    {
+        var i_array = x.split('=')
+        var tab = i_array[1];
+        selectTab(tab)
+    }
+}
+addLoadEvent(tabcheck);

@@ -1,0 +1,30 @@
+PHTTP71.74.42.231"è
+GET / HTTP/1.1
+Host: www.timewarnercable.com
+Connection: keep-alive
+TAccept: text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8
+vUser-Agent: Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/31.0.1650.63 Safari/537.36
+$Accept-Encoding: gzip,deflate,sdch
+!Accept-Language: en-US,en;q=0.8
+
+*Á
+ HTTP/1.1 301 Moved Permanently
+%Date: Thu, 09 Jan 2014 13:56:08 GMT
+Server: Apache
+CLocation: http://www.timewarnercable.com/en/residential-home.html
+Cache-Control: max-age=1800
+(Expires: Thu, 09 Jan 2014 14:26:08 GMT
+Content-Length: 336
+!Keep-Alive: timeout=60, max=294
+Connection: Keep-Alive
+-Content-Type: text/html; charset=iso-8859-1
+Ò
+<!DOCTYPE HTML PUBLIC "-//IETF//DTD HTML 2.0//EN">
+<html><head>
+<title>301 Moved Permanently</title>
+</head><body>
+<h1>Moved Permanently</h1>
+<p>The document has moved <a href="http://www.timewarnercable.com/en/residential-home.html">here</a>.</p>
+<hr>
+<address>Apache Server at www.timewarnercable.com Port 80</address>
+</body></html>

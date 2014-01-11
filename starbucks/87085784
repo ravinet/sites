@@ -1,0 +1,24 @@
+PHTTP204.238.150.83"ð
+.GET /sysiplocation/localsitemessage HTTP/1.1
+Host: www.starbucks.com
+Connection: keep-alive
+Accept: */*
+"X-Requested-With: XMLHttpRequest
+vUser-Agent: Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/31.0.1650.63 Safari/537.36
+$Referer: http://www.starbucks.com/
+$Accept-Encoding: gzip,deflate,sdch
+!Accept-Language: en-US,en;q=0.8
+êCookie: skin=; optimizelySegments=%7B%22192119771%22%3A%22false%22%2C%22192128716%22%3A%22direct%22%2C%22192132656%22%3A%22gc%22%7D; optimizelyEndUserId=oeu1389372152608r0.6264181847218424; optimizelyBuckets=%7B%7D; optimizelyPendingLogEvents=%5B%5D; __utma=246673883.1095219288.1389372153.1389372153.1389372153.1; __utmb=246673883.1.10.1389372153; __utmc=246673883; __utmz=246673883.1389372153.1.1.utmcsr=(direct)|utmccn=(direct)|utmcmd=(none); ASP.NET_SessionId=43t5lzfqeqyksfrqdt1ikiki
+
+*©
+HTTP/1.1 200 OK
+Cache-Control: private
+Content-Type: text/html
+Server: Microsoft-IIS/7.0
+p3p: CP="CAO PSA OUR"
+WSet-Cookie: ASP.NET_SessionId=43t5lzfqeqyksfrqdt1ikiki; domain=.starbucks.com; path=/
+wSet-Cookie: iplocation=country=US&stateprov=Massachusetts&city=Medford; expires=Sat, 11-Jan-2014 16:43:04 GMT; path=/
+X-Powered-By: ASP.NET
+%Date: Fri, 10 Jan 2014 16:43:04 GMT
+Content-Length: 0
+

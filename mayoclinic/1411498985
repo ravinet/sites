@@ -1,0 +1,115 @@
+PHTTP129.176.217.220"”
++GET /Styles/js/gbs/taginclude.js HTTP/1.1
+Host: www.mayoclinic.org
+Connection: keep-alive
+Accept: */*
+vUser-Agent: Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/31.0.1650.63 Safari/537.36
+%Referer: http://www.mayoclinic.org/
+$Accept-Encoding: gzip,deflate,sdch
+!Accept-Language: en-US,en;q=0.8
+4Cookie: ASP.NET_SessionId=utneflmiwti1lzdwzi1m1rsm
+
+*Ð
+HTTP/1.1 200 OK
+Cache-Control: max-age=604800
+(Content-Type: application/x-javascript
+.Last-Modified: Fri, 03 Jan 2014 19:27:24 GMT
+Accept-Ranges: bytes
+ETag: "f79da0d4b98cf1:0"
+%Date: Thu, 09 Jan 2014 01:39:32 GMT
+Content-Length: 3274
+Ì
+/* Helper Variables */
+window.onsiteDomainMap = {
+    "mayoclinic.com": true,
+    "mayoclinic.org": true,
+    "mayo.edu": true
+};
+
+window.fiveYears = 157356000000;
+
+window.cookieDomain = (function () {
+    var domainPieces = document.domain.split('.'),
+      numPieces = domainPieces.length;
+    return ((numPieces >= 2) ? domainPieces[numPieces - 2] + '.' + domainPieces[numPieces - 1] : document.domain);
+})();
+
+window.parseQueryParameter = function (queryParam) {
+    var queryStringParameters = document.location.search.substring(1).split('&'),
+      i, numParams = queryStringParameters.length;
+    for (i = 0; i < numParams; i++) {
+        currentPair = queryStringParameters[i];
+        if (currentPair.indexOf('=') > -1) {
+            nameValueArray = currentPair.split('=');
+            if (nameValueArray[0] === queryParam) {
+                return nameValueArray[1];
+            }
+        }
+    }
+    return "";
+};
+
+window.downloadFileExts = ["pdf", "xlsx", "docx", "pptx", "xlsm", "vsdx", "doc", "xls", "ppt", "zip", "swf", "wma", "wav", "avi", "mp3", "mp4", "wmv", "mov", "wmf", "flv"];
+
+window.climbToAncestor = function (evt, tag, tagAttr, tagAttrVal) {
+    var e = evt.target || evt.srcElement;
+    while (e.tagName &&
+         !(e.tagName.toLowerCase() === tag.toLowerCase() &&
+           ((typeof tagAttr !== "undefined") ? ((e[tagAttr]) ? e[tagAttr] === tagAttrVal : false) : true))) {
+        e = e.parentElement || e.parentNode;
+    }
+    return e;
+};
+
+window.isDownload = function (filePath, validExts) {
+    var fileExt = filePath.substring(filePath.lastIndexOf('.') + 1).toLowerCase(),
+      numExts = validExts.length, i;
+    for (i = 0; i < numExts; i++) {
+        if (fileExt === validExts[i]) {
+            return true;
+        }
+    }
+    return false;
+};
+
+window.isOffsite = function (linkDomain) {
+    if (linkDomain === document.domain.toLowerCase()) {
+        return false;
+    }
+    return true;
+};
+
+window.cleanString = function (str) {
+    return str.replace(/\<[^\>]*\>/g, '').replace(/^\s+|\s+$|amp;/g, '').replace(/\&nbsp;/g, '');
+};
+
+window.activityTracking = function (evt) {
+    evt = evt || (window.event || "");
+    if (evt !== null && typeof evt !== undefined &&
+    (((typeof (evt.which) === "number") && (evt.which === 1 || evt.which === 2 || evt.which === 3)) ||
+     ((typeof (evt.button) === "number") && (evt.button === 1 || evt.button === 2 || evt.button === 4)))) {
+        /* Insert desired activity tracking here */
+        /* END Insert desired activity tracking here */
+    }
+};
+
+window.bindEvent = function (event, func) {
+    if ((typeof (func) === "function") && document.body) {
+        if (document.body.addEventListener) {
+            document.body.addEventListener(event, func, true);
+        } else if (document.body.attachEvent) {
+            document.body.attachEvent("on" + event, func);
+        }
+    }
+};
+
+window.initializeEvents = function () {
+    if (document.body) {
+        var e = (navigator.appVersion.indexOf("MSIE") !== -1) ? "click" : "mousedown";
+        window.bindEvent(e, window.activityTracking);
+    } else {
+        setTimeout(window.initializeEvents, 250);
+    }
+};
+
+window.initializeEvents();

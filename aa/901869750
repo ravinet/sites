@@ -1,0 +1,25 @@
+PHTTP
+23.0.61.41"Ò
+=GET /apps/common/js/jquery/aacom/plugins/aaTabs.js HTTP/1.1
+Host: www.aa.com
+Connection: keep-alive
+Accept: */*
+vUser-Agent: Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/31.0.1650.63 Safari/537.36
+(Referer: http://www.aa.com/homePage.do
+$Accept-Encoding: gzip,deflate,sdch
+!Accept-Language: en-US,en;q=0.8
+äCookie: v1st=7EA5FF02354CAF63; JSESSIONID=4C0F4AAF1B0090AFE3A5001E623C1AE7; dtCookie=06F4BF3512EFE0A6C157596C94C19D9F|AA.com|1; ROUTEID=.P111A01; homeAirport="wGFH1cxVqs0="; COUNTRY_CODE="UCKRRdXdz9w="; saleCity="wGFH1cxVqs0="
+
+*Ž
+HTTP/1.1 200 OK
+Server: Apache-Coyote/1.1
+X-dynaTrace-JS-Agent: true
+Accept-Ranges: bytes
+ETag: W/"724-1387316480000"
+.Last-Modified: Tue, 17 Dec 2013 21:41:20 GMT
+&Content-Type: application/javascript
+Content-Length: 724
+%Date: Thu, 09 Jan 2014 01:28:20 GMT
+Connection: keep-alive
+Ö
+function aaTabs(tabContainer,contentContainer){this.activeTabClass="is-current";this.tabs=jQuery(tabContainer).find("li").not(".noTab");this.content=jQuery(contentContainer).children("div").not(".noTab");this.content.not(":eq(0)").hide();this.tabs.click(function(e){e.preventDefault();var aaTabs=this.parentNode.aaTabs;aaTabs.tabs.removeClass(aaTabs.activeTabClass);aaTabs.content.hide();jQuery(this).addClass(aaTabs.activeTabClass);try{var ids=this.id.split("%");jQuery("#"+ids[1]).show();}catch(e){alert("aaTabs error: tab ID doesn't contain % mark: "+this.id);}});tabContainer.aaTabs=this;}jQuery.fn.aaTabs=function(contentContainer){var i=0;var tabs;for(i;i<this.length;i++){tabs=new aaTabs(this[i],contentContainer);}};

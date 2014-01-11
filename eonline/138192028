@@ -1,0 +1,120 @@
+PHTTP
+18.7.20.69"„
+3GET /uberblog/includes/js/eol-lib/eol.js HTTP/1.1
+Host: www.eonline.com
+Connection: keep-alive
+Accept: */*
+vUser-Agent: Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/31.0.1650.63 Safari/537.36
+"Referer: http://www.eonline.com/
+$Accept-Encoding: gzip,deflate,sdch
+!Accept-Language: en-US,en;q=0.8
+"Cookie: edition=us; adEdition=us
+
+*Œ
+HTTP/1.1 200 OK
+RServer: Apache/2.2.3 (CentOS) mod_jk/1.2.32 PHP/5.1.6 mod_perl/2.0.4 Perl/v5.8.8
+tX-Powered-By: Servlet 2.4; JBoss-4.3.0.GA_CP04 (build: SVNTag=JBPAPP_4_3_0_GA_CP04 date=200902200048)/JBossWeb-2.0
+ETag: W/"2968-1388703520000"
+.Last-Modified: Thu, 02 Jan 2014 22:58:40 GMT
+Content-Length: 2968
+Content-Type: text/javascript
+Cache-Control: max-age=600
+(Expires: Thu, 09 Jan 2014 01:02:40 GMT
+%Date: Thu, 09 Jan 2014 00:52:40 GMT
+Connection: keep-alive
+š
+
+if ( window._ ) {
+    _.templateSettings = { interpolate: /\<\@\=(.+?)\@\>/gim, evaluate: /\<\@(.+?)\@\>/gim};
+}
+
+window.eol = (function($, undefined) {
+
+    var _s = {
+        "assets" : []
+    };
+    
+    function uattr(attr) {
+        var value = "";
+        if ( typeof(attr) == "number" ) {
+            
+        } else {
+            value = new RegExp("[?|&]" + attr + "=.*?(?=($|&|#))").exec(window.location) || [" "];
+        }
+        return value[0].substring(1).replace(/.*?=/, '') || "";
+    }
+
+    function cookie(key, value, expiration, path) {
+        if ( value === undefined ) {
+            var val = new RegExp("(^|; )"+key+"=.*?(?=($|;))").exec(document.cookie) || [" "];
+            return val[0].substring(1).replace(/.*?=/, '') || "";
+        } else { 
+            var now = new Date();
+            now.setDate(now.getDate() + 365);
+            var cookieStr = key + "=" + value + ( ( expiration == -1 ) ?  "" : "; expires=" + (expiration || now.toUTCString()) ) + "; path=/; domain=.eonline.com";
+            document.cookie = cookieStr;
+                            
+            return cookie(key) || "";
+        }
+    }
+             
+    /**
+       @name require 
+       @methodOf eol
+       @param asset the external file to load
+       @param dataType override asset detection
+    */
+    function require( asset, dataType) {
+        if ( ! _s.assets[asset] ) {
+            _s.assets[asset] = true;
+            $.getScript(asset);
+        }
+    }
+          
+    /**
+        @name create extends the namespace eol with the given name 
+        @methodOf eol
+        @param ns
+        @param module
+        @param context
+    */   
+    function create(ns, module, context) {
+        var o = window;
+        var token = "";
+        var tokens = ("eol."+ns).split(".").reverse();
+
+        while (tokens.length > 1) {
+            token = tokens.pop();
+            o[token] = o[token] || {};
+            o = o[token];
+        }
+        o[tokens.pop()] = (arguments.length > 1) ? module($,context) : {};  
+    }
+
+
+    function thumbnail( img, twidth, theight ) {  
+        if (img) {
+            var r = { "x1" : 0, "y1" : 0, 
+                "x2" : parseInt(img.width,10), "y2" : parseInt(img.width,10),
+                "owidth" : parseInt(img.width,10), "oheight" : parseInt(img.height,10)
+            };                         
+            if (r.oheight < r.owidth) {
+                r.x1 = Math.floor( (r.owidth - r.oheight) / 2 );
+                r.x2 = Math.floor( r.oheight + ((r.owidth - r.oheight) / 2));
+                r.y2 = r.oheight;
+            }
+            return img.host + "/resize/" + twidth + "/" + theight + "/" + r.x1 + "-" + r.y1 + "-" + r.x2 + "-" + r.y2 + img.path;
+        }
+        return "";
+    };    
+
+    return {
+        "thumbnail" : thumbnail,
+        "create": create,
+        "cookie" : cookie,
+        "require" : require,
+        "uattr": uattr,
+        "undefined" : undefined
+    };
+
+})(jQuery.noConflict());

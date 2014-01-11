@@ -1,0 +1,25 @@
+PHTTP168.161.242.106"ˆ
+RGET /tmzlive/lookup/zip/02139?callback=wbShowTimes_tmzlive_onGetByUSZip HTTP/1.1
+$Host: showtimes.telepicturestv.com
+Connection: keep-alive
+Accept: */*
+vUser-Agent: Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/31.0.1650.63 Safari/537.36
+Referer: http://www.tmz.com/
+$Accept-Encoding: gzip,deflate,sdch
+!Accept-Language: en-US,en;q=0.8
+
+*ó
+HTTP/1.1 200 OK
+%Date: Thu, 09 Jan 2014 00:41:04 GMT
+Server: Apache
+<X-Powered-By: Phusion Passenger (mod_rails/mod_rack) 3.0.1
+*ETag: "eef319270e4c525fed7ae501820b8ee2"
+X-Runtime: 7
+Cache-Control: max-age=600
+Content-Length: 374
+Status: 200
+!Keep-Alive: timeout=15, max=100
+Connection: Keep-Alive
+/Content-Type: application/json; charset=utf-8
+ø
+wbShowTimes_tmzlive_onGetByUSZip([{"station":{"logo_original":"//cdn.static.telepixtv.com/showtimes/system/images/stations/10143/original_BOSTON.png?1385590514","logo_thumb":"//cdn.static.telepixtv.com/showtimes/system/images/stations/10143/thumb_BOSTON.png?1385590514","affiliate":"FOX","twitter_handle":"","callsign":"WFXT","showtimes":[{"time":"4:00 PM","day":"M-F"}]}}])

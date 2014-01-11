@@ -1,0 +1,23 @@
+PHTTP
+18.7.20.68"…
+¾GET /b?c1=2&c2=3005403&ns__t=1389227030390&ns_c=UTF-8&c8=The%20New%20York%20Times%20-%20Breaking%20News%2C%20World%20News%20%26%20Multimedia&c7=http%3A%2F%2Fwww.nytimes.com%2F&c9= HTTP/1.1
+Host: b.scorecardresearch.com
+Connection: keep-alive
+Accept: image/webp,*/*;q=0.8
+vUser-Agent: Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/31.0.1650.63 Safari/537.36
+"Referer: http://www.nytimes.com/
+$Accept-Encoding: gzip,deflate,sdch
+!Accept-Language: en-US,en;q=0.8
+
+*Ø
+ HTTP/1.1 302 Moved Temporarily
+Content-Length: 0
+ÚLocation: http://b.scorecardresearch.com/b2?c1=2&c2=3005403&ns__t=1389227030390&ns_c=UTF-8&c8=The%20New%20York%20Times%20-%20Breaking%20News%2C%20World%20News%20%26%20Multimedia&c7=http%3A%2F%2Fwww.nytimes.com%2F&c9=
+%Date: Thu, 09 Jan 2014 00:23:38 GMT
+Connection: keep-alive
+}Set-Cookie: UID=a28cae2-18.7.20.68-1389227018; expires=Wed, 30-Dec-2015 00:23:38 GMT; path=/; domain=.scorecardresearch.com
+kSet-Cookie: UIDR=1389227018; expires=Wed, 30-Dec-2015 00:23:38 GMT; path=/; domain=.scorecardresearch.com
+Pragma: no-cache
+(Expires: Mon, 01 Jan 1990 00:00:00 GMT
+SCache-Control: private, no-cache, no-cache=Set-Cookie, no-store, proxy-revalidate
+

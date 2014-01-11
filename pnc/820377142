@@ -1,0 +1,18 @@
+»HTTPS75.101.154.100"ª
+ŠGET /v1/profile.redirect?api_key=eff06988d5814684997ff16c58dc2e1c&callback_url=https%3A%2F%2Fdts1.raasnet.com%2Fdts%2Fbizo%2Fin HTTP/1.1
+Host: api.bizographics.com
+Connection: keep-alive
+Accept: image/webp,*/*;q=0.8
+vUser-Agent: Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/31.0.1650.63 Safari/537.36
+$Accept-Encoding: gzip,deflate,sdch
+!Accept-Language: en-US,en;q=0.8
+
+*»
+HTTP/1.1 302 Found
+%Date: Thu, 09 Jan 2014 21:24:45 GMT
+¬Location: https://api.bizographics.com/v1/profile.redirect?api_key=eff06988d5814684997ff16c58dc2e1c&callback_url=https%3A%2F%2Fdts1.raasnet.com%2Fdts%2Fbizo%2Fin&3pc=true
+Server: nginx/1.2.0
+‚Set-Cookie: BizoID=eac9ec78-2f76-424d-9b1e-18ed60beb732; Domain=.bizographics.com; Expires=Fri, 11-Jul-2014 09:24:45 GMT; Path=/
+Content-Length: 0
+Connection: keep-alive
+

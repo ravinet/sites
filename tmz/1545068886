@@ -1,0 +1,19 @@
+PHTTP54.225.88.204"Ô
+0GET /broadcast/868/u4pchvpr/websocket HTTP/1.1
+Upgrade: websocket
+Connection: Upgrade
+*Host: ortc-ws3-useast1-s0009.realtime.co
+Origin: http://www.tmz.com
+Pragma: no-cache
+Cache-Control: no-cache
+-Sec-WebSocket-Key: z+COwu3yQYrVGshPoeiHYg==
+Sec-WebSocket-Version: 13
+2Sec-WebSocket-Extensions: x-webkit-deflate-frame
+vUser-Agent: Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/31.0.1650.63 Safari/537.36
+
+*‹
+"HTTP/1.1 101 Switching Protocols
+Upgrade: websocket
+Connection: Upgrade
+4Sec-WebSocket-Accept: 1InTPkrOqpeS8UWP60uqO9XUwXY=
+

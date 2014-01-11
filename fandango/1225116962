@@ -1,0 +1,437 @@
+PHTTP
+18.7.20.70"ò
+<GET /fandango/fandangoSet.js?r=0.6276466813869774 HTTP/1.1
+Host: http.videologygroup.com
+Connection: keep-alive
+Accept: */*
+vUser-Agent: Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/31.0.1650.63 Safari/537.36
+#Referer: http://www.fandango.com/
+$Accept-Encoding: gzip,deflate,sdch
+!Accept-Language: en-US,en;q=0.8
+
+*ÓY
+HTTP/1.1 200 OK
+Server: Apache
+5ETag: "7653e7b18a27aa6d72d931e4ca0a78aa:1389136255"
+.Last-Modified: Tue, 07 Jan 2014 23:10:55 GMT
+Accept-Ranges: bytes
+Content-Length: 11174
+(Content-Type: application/x-javascript
+%Date: Thu, 09 Jan 2014 00:48:27 GMT
+Connection: keep-alive
+¨W
+function makePixels(fv)
+{
+  var segments = ['77247|720','77248|1440','40608|2160'];
+  var conversion = '';
+   
+  if ( fv != undefined && fv != null && fv == 1) {
+      segments.push('20062|336');
+      segments.push('20063|720'); 
+  }
+  
+  
+  //Get meta tag content
+  var genres = '';
+  var ratings = '';
+  var mG = document.getElementsByTagName("meta");
+  for(var i=0; i<mG.length; i++){
+   if(mG[i].getAttribute("itemprop")=="genre"){
+    genres = mG[i].content;
+   }
+   if(mG[i].getAttribute("itemprop")=="contentRating"){
+    ratings = mG[i].content;
+   }
+  } 
+  
+  //Conversion Pixel -- find movie title on conversion page
+  var movieTitle = '';
+  var pD = document.getElementsByTagName("h4");
+  for(var i=0; i<pD.length; i++){
+   if(pD[i].className=="movieTitle"){
+    movieTitle = pD[i].innerHTML;
+   }
+  }
+
+  //Number of tickets purchased
+  var totalTics = 0;
+  var childTics = 0;
+  var tD = document.getElementsByTagName('td');
+  for(var i=0; i<tD.length; i++){
+   if(tD[i].className=="quantity"){
+		var numTics = tD[i].innerHTML;
+		nlTics = numTics.split(" ");
+		var str = nlTics.join();
+		if(sVar(str,'adult') || sVar(str,'senior')){
+			var ta = str.split(",");			
+			totalTics += parseInt(ta[0]);
+		}else if(sVar(str,'child')){
+			var ta = str.split(",");			
+			totalTics += parseInt(ta[0]);
+			childTics += parseInt(ta[0]);
+		}
+    }
+   }
+
+   if(totalTics > 0){
+     if(totalTics == 1){
+       segments.push('79025|1440');
+     }else if(totalTics == 2){
+       segments.push('79026|1440');
+     }else if(totalTics >= 3){
+       segments.push('79027|1440');
+     }
+     if(childTics == 1){
+       segments.push('79028|1440');
+     }else if(childTics == 2){
+       segments.push('79029|1440');
+     }else if(childTics >= 3){
+       segments.push('79030|1440');
+     }
+   }
+
+  
+//==========================================
+ //CUSTOM FANDANGO PIXELX
+ 
+ //Ride Along -- 77858
+   if(sHref('ridealong')){
+    segments.push('77858|1440');
+  }
+ //Lone Survivor -- 77857
+   if(sHref('lonesurvivor')){
+    segments.push('77857|1440');
+  }
+ //47 Ronin -- 77839
+   if(sHref('movietimes') && sHref('47ronin_144848')){
+	conversion = 'https://trk.tidaltv.com/ILogger.aspx?Event=Action&apid=2896';
+  }else if(sHref('47ronin') || sHref('144848')){
+    segments.push('77839|1440');
+	conversion = 'http://trk.tidaltv.com/ILogger.aspx?Event=Action&apid=2895';
+  }else if(((movieTitle == '47 Ronin 3D <span class="movieRating">(PG-13)</span>') || (movieTitle == '47 Ronin <span class="movieRating">(PG-13)</span>')) && sHref('ticketorderconfirmationpage')){
+	conversion = 'https://trk.tidaltv.com/ILogger.aspx?Event=Action&apid=2897';
+  }else if(sHref('47roninmovie.com')){
+	conversion = 'http://trk.tidaltv.com/ILogger.aspx?Event=Action&apid=2894';
+	segments.push('82146|1440');
+  }
+  
+	//Lone Survivor
+   if(sHref('movietimes') && sHref('lonesurvivor_165416')){
+	conversion = 'https://trk.tidaltv.com/ILogger.aspx?Event=Action&apid=2949';
+  }else if(sHref('lonesurvivor') || sHref('165416')){
+    segments.push('77857|1440');
+	conversion = 'http://trk.tidaltv.com/ILogger.aspx?Event=Action&apid=2948';
+  }else if((movieTitle == 'Lone Survivor <span class="movieRating">(R)</span>') && sHref('ticketorderconfirmationpage')){
+	conversion = 'https://trk.tidaltv.com/ILogger.aspx?Event=Action&apid=2950';
+  }else if(sHref('lonesurvivorfilm.com')){
+	conversion = 'http://trk.tidaltv.com/ILogger.aspx?Event=Action&apid=2947';
+  }
+  
+ //Best Man Holiday (164363) - Fandango
+  if(sHref('thebestmanholiday') || sHref('164363')){
+    segments.push('77665|1440');
+    conversion = 'https://trk.tidaltv.com/ILogger.aspx?Event=Action&apid=2830';
+  }else if((movieTitle == 'The Best Man Holiday <span class="movieRating">(R)</span>') && sHref('ticketorderconfirmationpage')){
+	conversion = 'https://trk.tidaltv.com/ILogger.aspx?Event=Action&apid=2829';
+  }
+	//I, Frankenstein -- 81536
+	if(sHref('frankenstein') || sHref('151472')){
+		segments.push('81536|1440');
+	}
+	//Monuments Men -- 81537
+	if(sHref('themonumentsmen') || sHref('161603')){
+		segments.push('81537|1440');
+	}
+	//Thor (The Dark World) -- 81538
+	if(sHref('thor') || sHref('149455')){
+		segments.push('81538|1440,81792|1440');
+	}
+	//Pompeii -- 81539
+	if(sHref('pompeii') || sHref('165418')){
+		segments.push('81539|1440');
+	}
+	//The Hobbit: The Desolation of Smaug
+	if(sHref('thehobbit3athedesolationofsmaug') || sHref('158474') || sHref('thehobbit3athedesolationofsmaugdoublefeature') || sHref('169619')){
+		segments.push('81793|1440');
+	}
+	//The Lego Movie
+	if(sHref('thelegomovie') || sHref('159272')){
+		segments.push('81794|1440');
+	}
+	//Captain America: Winter Soldier
+	if(sHref('captainamerica3athewintersoldier') || sHref('155540')){
+		segments.push('81795|1440');
+	}
+	//The Amazing Spider-Man 2
+	if(sHref('theamazingspiderman2') || sHref('156279')){
+		segments.push('81796|1440');
+	}
+	//X Men: Days of Future Past
+	if(sHref('xmen3adaysoffuturepast') || sHref('159281')){
+		segments.push('81797|1440');
+	}
+	//Guardians of the Galaxy
+	if(sHref('guardiansofthegalaxy') || sHref('157231')){
+		segments.push('81798|1440');
+	}
+	//The Hunger Games
+	if(sHref('thehungergames') || sHref('136944')){
+		segments.push('82371|1440');
+	}
+	//The Hunger Games: Catching Fire
+	if(sHref('thehungergames:catchingfire') || sHref('155962')){
+		segments.push('82372|1440');
+	}
+	//Iron Man 3
+	if(sHref('ironman3') || sHref('147742')){
+		segments.push('82373|1440');
+	}
+	//Captain America: The First Avenger
+	if(sHref('captainamerican:thefirstavenger') || sHref('131284')){
+		segments.push('82374|1440');
+	}
+	//Beautiful Creatures
+	if(sHref('beautifulcreatures') || sHref('155680')){
+		segments.push('82375|1440');
+	}
+	//The Mortal Instruments: City of Bones
+	if(sHref('themortalinstruments:cityofbones') || sHref('160760')){
+		segments.push('82376|1440');
+	}
+	//The Great Gatsby
+	if(sHref('thegreatgatsby') || sHref('149090')){
+		segments.push('82377|1440');
+	}
+	//Vampire Academy
+	if(sHref('vampireacademy') || sHref('163445')){
+		segments.push('82378|1440');
+	}
+	//Anchorman 2: The Legend Continues
+	if(sHref('anchorman23athelegendcontinues') || sHref('169620')){
+		segments.push('82567|1440');
+	}
+	//That Awkward Moment
+	if(sHref('thatawkwardmoment') || sHref('166637')){
+		segments.push('82568|1440');
+	}
+	//About Last Night
+	if(sHref('aboutlastnight') || sHref('162721')){
+		segments.push('82569|1440');
+	}
+
+ 
+//END CUSTOM PIXELS
+//==========================================
+//FANDANGO SITE NAV
+  //Showtime Searcher
+  if(sHref('movietimes')){
+    segments.push('53801|1440');
+  }
+  //End Showtime Searcher
+  
+  //Ticket Buyer
+  if(sHref('ticketorderconfirmationpage')){
+    segments.push('40658|1440');
+  }
+  //End Ticket Buyer
+//END FANDANGO SITE NAV
+
+//========================================== 
+
+  //MOVIE RATINGS
+  if(sVar(ratings,'pg-13')){
+    segments.push('79022|1440');
+  }else if(sVar(ratings,'pg')){
+    segments.push('79021|1440');
+  }else if(sVar(ratings,'g')){
+    segments.push('79020|1440');
+  }else if(sVar(ratings,'r')){
+    segments.push('79023|1440');
+  }else if(sVar(ratings,'nc-17')){
+    segments.push('79024|1440');
+  }
+
+//END MOVIE RATINGS 
+
+//==========================================  
+
+//TICKET BUYER COUNTS
+
+//END TICKET BUYER COUNTS
+
+
+//==========================================  
+
+//MOVIE GENRES
+ 
+ //3D Movies 
+  if(sHref('genrefilter=3d') || sVar(genres,'3d3d')){
+    segments.push('45927|1440');
+  }
+  
+ //Action & Adventure
+  if(sHref('genrefilter=action%2fadventure') || sVar(genres,'action') || sVar(genres,'adventure')) {
+    segments.push('45913|1440');
+  }
+ 
+ //Animated
+  if(sHref('genrefilter=animated') || sVar(genres,'animated')) {
+    segments.push('45918|1440');
+  }
+ 
+ //Art House & Foreign
+  if(sHref('genrefilter=art+house%2fforeign') || sVar(genres,'art+house') || sVar(genres,'foreign')) {
+    segments.push('81324|1440');
+  }
+ 
+ //Biography
+ if(sHref('genrefilter=biography') || sVar(genres,'biography')) {
+    segments.push('45920|1440');
+  }
+ 
+ //Comedy
+  if(sHref('genrefilter=comedy') || sVar(genres,'comedy')) {
+    segments.push('45914|1440');
+  }
+ 
+ //Concerts & Special Events
+  if(sHref('genrefilter=concert%2fspecial+events') || sVar(genres,'concert') || sVar(genres,'special+events')) {
+    segments.push('81323|1440');
+  }
+ 
+ //Documentary
+  if(sHref('genrefilter=documentary') || sVar(genres,'documentary')) {
+    segments.push('81322|1440');
+  }
+ 
+ //Drama
+  if(sHref('genrefilter=drama') || sVar(genres,'drama')) {
+    segments.push('45915|1440');
+  }
+ 
+ //Epic
+  if(sHref('genrefilter=epic') || sVar(genres,'epic')) {
+    segments.push('81321|1440');
+  }
+ 
+ //Family
+  if(sHref('genrefilter=family') || sVar(genres,'family')) {
+    segments.push('45923|1440');
+  }
+ 
+ //Fantasy
+  if(sHref('genrefilter=fantasy') || sVar(genres,'fantasy')) {
+    segments.push('45921|1440');
+  }
+ 
+ //Historical
+  if(sHref('genrefilter=historical+film') || sVar(genres,'history')) {
+    segments.push('45922|1440');
+  }
+ 
+ //Horror
+  if(sHref('genrefilter=horror') || sVar(genres,'horror')) {
+    segments.push('45912|1440');
+  }
+ 
+ //IMAX
+  if(sHref('genrefilter=imax') || sVar(genres,'imax')) {
+    segments.push('81320|1440');
+  }
+
+ //Music & Performing Arts
+  if(sHref('genrefilter=music%2fperforming+arts') || sVar(genres,'music') || sVar(genres,'performing+arts')) {
+    segments.push('81319|1440');
+  }
+ 
+ //Mystery
+  if(sHref('genrefilter=mystery') || sVar(genres,'mystery')) {
+    segments.push('45924|1440');
+  }
+ 
+ //Romance
+  if(sHref('genrefilter=romance') || sVar(genres,'romance')) {
+    segments.push('45917|1440');
+  }
+ 
+ //Sci-Fi Fantasy
+  if(sHref('genrefilter=sci-fi%2ffantasy') || sVar(genres,'sci-fi/fantasy')) {
+    segments.push('45919|1440');
+  }
+ 
+ //Spy
+  if(sHref('genrefilter=spy+film') || sVar(genres,'spy+film')) {
+    segments.push('81318|1440');
+  }
+ 
+ //Thriller
+  if(sHref('genrefilter=suspense%2fthriller') || sVar(genres,'suspense/thriller')) {
+    segments.push('45916|1440');
+  }
+ 
+ //War
+  if(sHref('genrefilter=war') || sVar(genres,'war')) {
+    segments.push('81317|1440');
+  }
+ 
+ //Western
+  if(sHref('genrefilter=western') || sVar(genres,'western')) {
+    segments.push('45926|1440');
+  }
+ 
+ //END MOVIE GENRES
+
+  var img = document.createElement("img");
+  img.src = "https://set.tidaltv.com/Ping.aspx?tids="+segments.join();
+  img.height=1;
+  img.width=1;
+  
+  if(conversion != ""){
+    var img2 = document.createElement("img");
+    img2.src = conversion;
+    img2.height=1;
+    img2.width=1;
+  }
+ }
+
+function sHref(term){
+  if(window.location.href.toLowerCase().indexOf(term) > -1){
+    return 1;	
+  }else{
+    return 0;
+  }
+}
+
+
+function sVar(v,term){
+  if(v.toLowerCase().indexOf(term) > -1){
+    return 1;	
+  }else{
+    return 0;
+  }
+}
+
+
+function vSC(n,v,d) {
+  if (d) {
+    var date = new Date();
+    date.setTime(date.getTime()+(d*24*60*60*1000));
+    var e = "; expires="+date.toGMTString();
+  }
+  else var e = "";
+  document.cookie = n+"="+v+e+"; path=/";
+}
+
+function vGC(n){
+  var re = new RegExp(n + "=([^;]+)");
+  var value = re.exec(document.cookie);
+  return (value != null) ? unescape(value[1]) : 0;
+}
+
+if(vGC("ffv30") == 1 && vGC("ffvS") == 0){
+  makePixels(1);
+}else{
+  makePixels(0);
+}
+vSC("ffv30", "1",30);
+vSC("ffvS", "1");

@@ -1,0 +1,53 @@
+PHTTP199.27.76.129"Ñ
+)GET /assets/javascripts/sso.js HTTP/1.1
+Host: api.kinja.com
+Connection: keep-alive
+Accept: */*
+vUser-Agent: Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/31.0.1650.63 Safari/537.36
+Referer: http://deadspin.com/
+$Accept-Encoding: gzip,deflate,sdch
+!Accept-Language: en-US,en;q=0.8
+
+*™
+HTTP/1.1 200 OK
+.Last-Modified: Wed, 18 Dec 2013 15:35:24 GMT
+2Etag: "add992ab78df74724e4f82d057144ec002bd8912"
+Cache-Control: max-age=3600
+5Content-Type: application/javascript; charset=utf-8
+Content-Length: 1706
+Accept-Ranges: bytes
+%Date: Thu, 09 Jan 2014 01:55:56 GMT
+Via: 1.1 varnish
+Age: 5223
+Connection: keep-alive
+ X-Served-By: cache-jfk1033-JFK
+X-Cache: HIT
+X-Cache-Hits: 5745
+(X-Timer: S1389232556.105589151,VS0,VE0
+Vary: Accept-Encoding
+¬
+/*global window */
+'use strict';
+function hasCookieSupport() {
+	window.document.cookie = "cookieTester=1; expires=Tue, 01 Mar 2033 17:21:05 GMT; path=/";
+	return window.document.cookie.indexOf("cookieTester=1") !== -1;
+}
+
+if (window.location.search.indexOf("nosso=1") === -1) {
+	if (((window.navigator.appVersion.indexOf("Safari/") !== -1 && (window.navigator.appVersion.indexOf('Version/6') !== -1 || window.navigator.appVersion.indexOf('Version/7') !== -1)) && (window.navigator.appVersion.indexOf("Chrome") === -1 && window.navigator.appVersion.indexOf("CriOS") === -1 && window.navigator.appVersion.indexOf("iPad") === -1 && window.navigator.appVersion.indexOf("iPhone") === -1)) || window.navigator.appName === 'Microsoft Internet Explorer') {
+		if (hasCookieSupport()) {
+			if (window.document.cookie.indexOf("KinjaInit=1") === -1) {
+				window.document.cookie = "KinjaInit=1; path=/";
+				window.location.href = window.location.protocol + "//" + (window.location.port === "9000" ? "apilocal.kinja.com:9001" : "api.kinja.com")  + "/api/sso/getSession?redirect=" + window.encodeURIComponent(
+					window.location.protocol + "//" + window.location.host + "/setsession?r=" + encodeURIComponent(window.location.href)
+				);
+			}
+		}
+	}
+}
+if (window.navigator.appVersion.indexOf("Safari/") !== -1 && window.navigator.appVersion.indexOf('Version/5') !== -1 && window.navigator.appVersion.indexOf("Chrome") === -1 && window.navigator.appVersion.indexOf("CriOS") === -1 && window.navigator.appVersion.indexOf("iPad") === -1 && window.navigator.appVersion.indexOf("iPhone") === -1) {
+	// disable sso for safari 5
+	if (window.document.cookie.indexOf("KinjaToken=") === -1) {
+		window.KINJA_NO_SSO = true;
+	}
+}

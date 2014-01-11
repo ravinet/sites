@@ -1,0 +1,51 @@
+PHTTP173.241.242.55"∫
+—GET /w/1.0/acj?cc=1&ai=dd304d74-ec94-463d-6a3f-52c94c2197d9&o=3397957281&callback=OX_3397957281&ju=http%3A//www.bbt.com/&jr=&pgid=14164&res=1920x1200x24&plg=swf%2Cqt%2Cwmp%2Cshk%2Cpm&ch=UTF-8&tz=300 HTTP/1.1
+Host: ox-d.bbt.com
+Connection: keep-alive
+Accept: */*
+vUser-Agent: Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/31.0.1650.63 Safari/537.36
+Referer: http://www.bbt.com/
+$Accept-Encoding: gzip,deflate,sdch
+!Accept-Language: en-US,en;q=0.8
+@Cookie: OX_u=1562e89c-0342-0466-4943-6f796b805821_a_1389275572
+
+*´
+HTTP/1.1 200 OK
+Vary: Accept
+êSet-Cookie: OX_u=1562e89c-0342-0466-4943-6f796b805821_a_1390485174; Version=1; Expires=Fri, 09-Jan-2015 13:52:54 GMT; Max-Age=31536000; Path=/
+CServer: MochiWeb/1.1 WebMachine/1.10.0 (never breaks eye contact)
+Pragma: no-cache
+#P3P: CP="CUR ADM OUR NOR STA NID"
+(Expires: Mon, 26 Jul 1997 05:00:00 GMT
+%Date: Thu, 09 Jan 2014 13:52:54 GMT
+ Content-Type: application/json
+Content-Length: 1827
+-Cache-Control: private, max-age=0, no-cache
+Connection: close
+•
+OX_3397957281({
+  "ads":{
+    "medium":"w",
+    "record_tmpl":"http://ox-d.bbt.com/{medium}/1.0/{rtype}?ts={txn_state}",
+    "adunits" : [
+      {
+        "auid":"325576",
+        "pgid":"14164",
+        "chain":[
+          {
+            "is_fallback":0,
+            
+            "ad_id":"1445176",
+            "width":"794",
+            "height":"472",
+            "html":"<a href='http://ox-d.bbt.com/w/1.0/rc?ts=1fHNpZD00ODk4M3xyYWlkPWIwZTA1ZmZkLWEyZmEtNDViZC1hOTYzLTk0MDUyODZiNDI3NnxhdWlkPTMyNTU3Nnx1cj1Eb1M2MkJVNW9RfGFzPTc5NHg0NzJ8cGlkPTE0MTY0fGFpZD0xNDQ1MTc2fHB1Yj02MjE0N3xsaWQ9NTk3MzkxfGF1bT1ETUlELldFQnx1PTF8dD0xfHJpZD0zNGNkNzM1MC0xNmViLTRmNzktYmNiZC0zODgyOWQ1MTc1OWV8b2lkPTgxNTE3fGJtPUJVWUlORy5HVUFSQU5URUVEU0hBUkVPRlZPSUNFfHA9NDgwMDAwMDAwMHxwYz1VU0R8YWM9VVNEfHBtPVBSSUNJTkcuQ1BBfHNzaWQ9MjI2NTR8cnQ9MTM4OTI3NTU3NHxwcj00ODAwMDAwMDAwfGFkdj02MjAxMg' target='_self'><img src='http://ox-i.bbt.com/ca8/ca8125b3-0851-48c5-b702-cf2d3f4f6533/3be/3be4e0ac26df9fbb1f98757a0a7c44d2.jpg' height='472' width='794' border='0' alt='BB&T Home Mortgage \u2013 Low rates. Flexible terms.  Apply online in less than 20 minutes! Get started.'></a>\n",
+            "target":"_self",
+            "ts":"1fHNpZD00ODk4M3xyYWlkPWIwZTA1ZmZkLWEyZmEtNDViZC1hOTYzLTk0MDUyODZiNDI3NnxhdWlkPTMyNTU3Nnx1cj1Eb1M2MkJVNW9RfGFzPTc5NHg0NzJ8cGlkPTE0MTY0fGFpZD0xNDQ1MTc2fHB1Yj02MjE0N3xsaWQ9NTk3MzkxfGF1bT1ETUlELldFQnx1PTF8dD0xfHJpZD0zNGNkNzM1MC0xNmViLTRmNzktYmNiZC0zODgyOWQ1MTc1OWV8b2lkPTgxNTE3fGJtPUJVWUlORy5HVUFSQU5URUVEU0hBUkVPRlZPSUNFfHA9NDgwMDAwMDAwMHxwYz1VU0R8YWM9VVNEfHBtPVBSSUNJTkcuQ1BBfHNzaWQ9MjI2NTR8cnQ9MTM4OTI3NTU3NHxwcj00ODAwMDAwMDAwfGFkdj02MjAxMg",
+            "type":"image",
+            "ad_url":"http://ox-i.bbt.com/ca8/ca8125b3-0851-48c5-b702-cf2d3f4f6533/3be/3be4e0ac26df9fbb1f98757a0a7c44d2.jpg"
+          }
+        ]
+      }
+    ]
+  }
+});

@@ -1,0 +1,20 @@
+PHTTP54.243.173.167"Ë
+‹GET /identity/public/visitor.json?jsonp_callback=jQuery17104553062233608216_1389366341554&lang=en-us&tags=sunset&_=1389366342774 HTTP/1.1
+"Host: idvisitor.socialreader.com
+Connection: keep-alive
+Accept: */*
+vUser-Agent: Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/31.0.1650.63 Safari/537.36
+)Referer: http://www.washingtonpost.com/
+$Accept-Encoding: gzip,deflate,sdch
+!Accept-Language: en-US,en;q=0.8
+
+*•
+HTTP/1.1 200 OK
+ Content-Type: application/json
+%Date: Fri, 10 Jan 2014 15:05:30 GMT
+Server: nginx/0.7.67
+X-Powered-By: PHP/5.3.3
+Content-Length: 82
+Connection: keep-alive
+T
+jQuery17104553062233608216_1389366341554({"visitors":{"wapoVisitor":{"id":"-1"}}})

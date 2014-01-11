@@ -1,0 +1,67 @@
+»HTTPS216.115.210.206"é
+'GET /images/dts/js/at/hbx.js HTTP/1.1
+Host: www.citrixonline.com
+Connection: keep-alive
+Accept: */*
+vUser-Agent: Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/31.0.1650.63 Safari/537.36
+IReferer: http://www.citrixonline.com/collaboration/online_collaboration
+$Accept-Encoding: gzip,deflate,sdch
+!Accept-Language: en-US,en;q=0.8
+æCookie: webSession=SessionInfo%3D16931373%253A89E2106579E2528; webVisitor=FirstVisit%3D1389229069000%26LastVisit%3D1389229069000; FEC_LOCALE=en_US; __col_first_track_GoToManageRemoteSupport=true; __col_mkt_GoToManageRemoteSupport=FIS_name%3Ddirect%26LST_name%3Ddirect; __col_track_GoToManageRemoteSupport=1; __col_visit=699ca544-d724-4450-817b-af6c52d4f3e4
+
+*¶
+HTTP/1.1 200 OK
+%Date: Thu, 09 Jan 2014 00:57:49 GMT
+Server: Apache
+.Last-Modified: Tue, 31 Dec 2013 18:54:38 GMT
+"ETag: "730008-b7b-4eed917981780"
+Accept-Ranges: bytes
+Content-Length: 2939
+ Keep-Alive: timeout=15, max=97
+Connection: Keep-Alive
+(Content-Type: application/x-javascript
+ý
+var Lm={q:{},l:[],f:{},p:0,o:0,A:function(a,b,c,d){try{if(a.c)this.l.push(a);b=document;if(b.createElement){c="Lm_"+a.a;if(!b.getElementById(c)){try{eval(a.e)}catch(e){};
+d=b.createElement('script');d.language='javascript';d.type='text/javascript';d.src=a.b;d.id=c;b.getElementsByTagName("head")[0].appendChild(d)}}}catch(e){}},
+LOAD:function(a,b,c,d){try{this.f[a]=0;c=this.l.length;for(b=this.p;b<c;b++){d=this.l[b];if(this.f[d.a]==0){this.f[d.a]=++this.p;try{eval(d.d)}catch(e){}}else return;}
+if(this.p==c&&this.o==0)this.o=1}catch(e){}},EV:function(a,b,c,d){try{if(a.addEventListener){a.addEventListener(b,c,false)}else if(a.attachEvent){a.attachEvent(((d==1)?"":"on")+b,c)}}catch(e){}}}
+
+Lm.config={
+  src:"/images/dts/js/at/", //path to JS files, need trailing / , such as 'util/scripts/'
+  lc:"20090921",
+  ni_load:1,	
+  ni_sample:100,
+  ni_title:0,
+  hbx_load:0
+}
+
+if(window.unicaSrc)Lm.config.src=window.unicaSrc+Lm.config.src;
+
+if(Lm.config.ni_load){
+  Lm.A({a:"ntpagetag",b:Lm.config.src+"ntpagetag.js?v="+Lm.config.lc,c:1,e:"NTPT_NOINITIALTAG='true';"});
+  Lm.A({a:"migration",b:Lm.config.src+"migration.js?v="+Lm.config.lc,c:1,d:"_HM.INIT(hbx)"});
+}
+
+Lm.ONLOAD=function(p){}
+  
+if(Lm.config.hbx_load){
+  _hbSendOld=function(c,a,i){a="";_hec++;for(i in _hbA)if(typeof _hbA[i]!=_huf)a+="&"+i+"="+_hbA[i];_Q(_hbq+"&hec="+_hec+a+_hbSendEV());_hbA=_NA()}
+  _hbSetOld=function(a,b,c,d,e){d=_II(_hbq,"&"+a+"=");if(d>-1){e=_II(_hbq,"&",d+1);e=e>d?e:_IL(_hbq);if(a=="n"||a=="vcon"){_hbq=_IS(_hbq,0,d)+"&"+a+"="+b+
+  _IS(_hbq,e);_hec=-1;if(a=="n"){_pn=b}else{_mlc=b}}else{_hbq=_IS(_hbq,0,d)+_IS(_hbq,e)}}if((a!="n")&&(a!="vcon"))_hbA[a]=(c==0)?b:_A(b)}
+}else{
+  _hbSetOld=function(){};
+  _hbSendOld=function(){};
+}
+  
+_hbPageView=function(a,b){try{_HM.SP(a,b);_HM.SN();_hbSetOld("n",a);_hbSetOld("vcon",b);_hbSendOld()}catch(e){}}
+_hbLink=function(a,b){try{_HM.SC("tracklink","||||"+a+"||"+b+"||txt||");_hbSetOld("lid",a);_hbSetOld("lpos",b);_hbSendOld()}catch(e){}}
+_hbExitLink=function(a,b,c){try{_HM.ST("m.el",a);_HM.SP(b,c);_HM.SN("exitlink");_hbSetOld("el",a);_hbSendOld()}catch(e){}}
+_hbDownload=function(a,b,c){try{_HM.ST("m.fn",a);_HM.SP(b,c);_HM.SN("download");_hbSetOld("fn",a);_hbSendOld()}catch(e){}}
+_hbCampaign=function(a,b,c){try{_HM.ST("m.campaign",a);_HM.SP(b,c);_HM.SN();_hbSetOld("cmp",a);_hbSendOld()}catch(e){}}
+_hbGoalPage=function(a,b,c){try{_HM.ST("m.gp",a);_HM.SP(b,c);_HM.SN();_hbSetOld("gp",a);_hbSendOld()}catch(e){}}
+_hbVisitorSeg=function(a,b,c){try{_HM.ST("m.seg",a);_HM.SP(b,c);_HM.SN();_hbSetOld("seg",a);_hbSendOld()}catch(e){}}
+_hbFunnel=function(a,b,c){try{var d=a.split(",");_HM.ST("m.fnl_id",d[0].replace(/\(/,""));_HM.ST("m.fnl_lvl",d[1].replace(/\)/,""));_HM.SP(b,c);_HM.SN();_hbSetOld("fnl",a);_hbSendOld()}catch(e){}}
+_hbSet=function(a,b){try{_HM.ST("m."+a,b);_hbSetOld(a,b)}catch(e){}}
+_hbSend=function(){try{_HM.SP();_HM.SN();_hbSendOld()}catch(e){}}
+
+Lm.EV(document.body,"load",Lm.ONLOAD); 

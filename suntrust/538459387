@@ -1,0 +1,28 @@
+ªHTTPS208.89.14.135"ê
+‹
+GET /hc/75520543/?&visitor=11187045699971&msessionkey=1270131617130691156&siteContainer=STANDALONE&site=75520543&cmd=mTagStartPage&lpCallId=444201445672-787411433877&protV=20&lpjson=1&page=https%3A//www.suntrust.com/PersonalBanking&id=4432778640&javaSupport=false&visitorStatus=INSITE_STATUS&defInvite=chat-personal-sales&activePlugin=none&cobrowse=true&PV%21unit=personal-sales&PV%21Segment=PersonalBanking&PV%21SubSegment=&PV%21Section=&PV%21SubSection=&PV%21Category=&PV%21pageLoadTime=0%20sec&PV%21visitorActive=1&title=Personal%20Banking%20-%20Personal%20Bank%20Accounts%20from%20SunTrust&referrer=https%3A//www.suntrust.com/&cobrowse=true&cookie=BIGipServerst.com%3D497222666.20480.0000%3B%20mbox%3Dcheck%23true%231389274905%7Csession%231389274843383-628947%231389276705%7CPC%231389274843383-628947.17_29%231390484445%3B%20BrandingZone%3DPF%3B%20s_pers%3D%2520s_fid%253D7B2275A01923CAC6-1F3714DBD8058CD9%257C1452346844965%253B%2520s_depth%253D2%257C1389276644966%253B%2520v19%253DSTcom%25257CPersonalBkg%25257CHome%257C1389276644969%253B%3B%20s_sess%3D%2520s_cc%253Dtrue%253B%2520s_sq%253D%253B%3B%20fsr.a%3D1389274844977%3B%20s_vi%3D%5BCS%5Dv1%7C29675368051D0CB9-40000146C0054778%5BCE%5D%3B%20__bocmc637%3D0.38647036510519683%3B%2075520543-VID%3D11187045699971%3B%2075520543-SKEY%3D1270131617130691156%3B%20HumanClickSiteContainerID_75520543%3DSTANDALONE HTTP/1.1
+Host: sales.liveperson.net
+Connection: keep-alive
+Accept: */*
+vUser-Agent: Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/31.0.1650.63 Safari/537.36
+3Referer: https://www.suntrust.com/PersonalBanking
+$Accept-Encoding: gzip,deflate,sdch
+!Accept-Language: en-US,en;q=0.8
+ÌCookie: HumanClickKEY=1270131617130691156; HumanClickSiteContainerID_75520543=STANDALONE; LivePersonID=-11187045699971-1389274833:-1:-1:-1:-1; ASPSESSIONIDSCSARSRS=JIJABLCBMAFFCPHFDMIOPBPA; LivePersonID=LP i=11187045699971,d=1389274833
+
+*á
+HTTP/1.1 200 OK
+%Date: Thu, 09 Jan 2014 13:40:57 GMT
+Server: Microsoft-IIS/6.0
+GP3P: CP="NON BUS INT NAV COM ADM CON CUR IVA IVD OTP PSA PSD TEL SAM"
+X-Powered-By: ASP.NET
+NSet-Cookie: HumanClickSiteContainerID_75520543=STANDALONE; path=/hc/75520543
+(Content-Type: application/x-javascript
+Accept-Ranges: bytes
+.Last-Modified: Thu, 09 Jan 2014 13:40:33 GMT
+Cache-Control: no-store
+Pragma: no-cache
+(Expires: Wed, 31 Dec 1969 23:59:59 GMT
+Content-Length: 2582
+ò
+lpConnLib.Process({"ResultSet": {"lpCallId":"444201445672-787411433877","lpCallConfirm":"","lpJS_Execute":[{"code_id": "SYSTEM!updateButtonStatic_compact.js", "js_code": "function lpUpdateStaticButton(){this.hcDate=function(){var d=new Date();return d.getTime();};this.hcGetImage=function(name){return this.hcFindImage(document,name);};this.hcFindImage=function(doc,name){var i;if(this.hcDOM){var elements=doc.getElementsByTagName('IMG');var collection=[];for(i=0;i<elements.length;i++){if((typeof(elements[i].name)!='undefined')&&(elements[i].name==name)){collection[collection.length]=elements[i];}}if(collection.length==0){return null;}if(collection.length==1){return collection[0];}return collection;}var lays=doc.layers;if(!lays){return doc[name];}for(i=0;i<doc.images.length;i++){if(doc.images[i].name==name){return doc.images[i];}}for(var l=0;l<lays.length;l++){var img=this.hcFindImage(lays[l].document,name);if(img!=null){return img;}}return null;};this.hcDOM=(document.getElementById)?true:false;this.hcimage=this.hcGetImage('hcIcon');this.hcicon=null;var i;if(this.hcimage){if(!(this.hcimage.length)){var temp=this.hcimage;this.hcimage=[];this.hcimage[0]=temp;}this.hcicon=[];for(i=0;i<this.hcimage.length;i++){this.hcicon[i]=this.hcimage[i].src;}}if(this.hcimage){for(i=0;i<this.hcimage.length;i++){this.hcimage[i].src=this.hcicon[i]+'&monitor=1&d='+this.hcDate();}}if(typeof(lpMTagStatic)!='undefined'&&typeof(lpMTagStatic.stateChangeCallbacks)!='undefined'){for(i=0;i<lpMTagStatic.stateChangeCallbacks.length;i++){var tempfunc=lpMTagStatic.stateChangeCallbacks[i];try{tempfunc();if(lpConnLib.DebugDisplay){lpMTagDebug.Display('OK Executing Static button callback function','EXEC-OK');}}catch(hcError){if(lpConnLib.DebugDisplay){lpMTagDebug.Display('ERROR Executing Static button callback function='+tempfunc+' &nbsp #'+hcError+'#','ERROR');}}}}}var lpUpdateStaticButtonObj=new lpUpdateStaticButton();"},{"code_id": "LP_REP_STATE_CHANGED", "js_code": "if(window.lpTag&&window.lpTag.events){window.lpTag.events.trigger('LPChat','LP_REP_STATE_CHANGED',{});}else if(window.lpMTag&&window.lpMTag.events){window.lpMTag.events.publish('LP_REP_STATE_CHANGED',{});}"},{"code_id": "INPAGE-DELAY-10", "js_code": "lpMTag.lpInPageRequestDelay=10;"},{"code_id": "FPCSetVal", "js_code": "lpMTagConfig.useFirstParty = false;lpMTag.lpDeleteCookie(lpMTagConfig.FPC_VID_NAME,'/',lpMTagConfig.FPC_ParentDomain);lpMTag.lpDeleteCookie(lpMTagConfig.FPC_SKEY_NAME, '/',lpMTagConfig.FPC_ParentDomain);lpMTag.lpDeleteCookie(lpMTagConfig.FPC_CONT_NAME, '/',lpMTagConfig.FPC_ParentDomain);"}]}});

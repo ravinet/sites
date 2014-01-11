@@ -1,0 +1,31 @@
+PHTTP173.194.43.58"Í
+AGET /pixel?google_nid=bluekai&google_cm&google_sc&a=1& HTTP/1.1
+Host: cm.g.doubleclick.net
+Connection: keep-alive
+Accept: image/webp,*/*;q=0.8
+vUser-Agent: Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/31.0.1650.63 Safari/537.36
+êReferer: http://tags.bluekai.com/site/3332?dt=0&r=264627809&sig=2486176917&bkca=KJhPDkkFTM9xdMUCguCBG2Ur9yXxNs8UlSGiSvLIGza1LRVw0JTAGg2Ih2MkD/b8Fg7c/X6AsEloon/6LyvGKaMKaydpgm7GtYsg3g/LFNP9AMDd3h2NDElYKYKtQHkcWMNEbxhtL141j3KQv/RHaG7CyoZG0nqBj7FRhnpBGit3zFtw4b2/Gd1c8+bX1AMXaPUeTCvmaIWamY3eNPTuDf9fdMzSxk9iHAvBQygvVHjSbzjy74c9sKAv6KEzAx83C0bhkbJmA+m2tuoQ5rW5f9uWZnA2OAvE/YmxAW05NzgiqqOFsyNJeQbbYmlxy0N0YupWaoW/FRazRB1IJtSC23ZsBwSGKZtKt20shex8WS7i2jugBvBGojwNydPt4h8S636yA1RxWrboPp+Nyghz7m4CMc8lUA445K2+5ZkfwbMO8RnVGpL7iml2OFlJ8YdSbpn7Og8uZCV/FBiVyWK9h6BudWarHggo2x/NnN9u5U0+4spXMr1T8KrSX7ZhBBcvvJgPWpIgbNdldBEd9V0Mb/L=
+$Accept-Encoding: gzip,deflate,sdch
+!Accept-Language: en-US,en;q=0.8
+
+*ƒ
+HTTP/1.1 302 Found
+¥P3P: policyref="http://googleads.g.doubleclick.net/pagead/gcn_p3p_.xml", CP="CURa ADMa DEVa TAIo PSAo PSDo OUR IND UNI PUR INT DEM STA PRE COM NAV OTC NOI DSP COR"
+tSet-Cookie: test_cookie=CheckForPermission; expires=Thu, 09-Jan-2014 01:31:02 GMT; path=/; domain=.doubleclick.net
+eLocation: http://cm.g.doubleclick.net/pixel?google_nid=bluekai&google_cm=&google_sc=&a=1&google_tc=
+%Date: Thu, 09 Jan 2014 01:16:02 GMT
+Pragma: no-cache
+(Expires: Fri, 01 Jan 1990 00:00:00 GMT
+*Cache-Control: no-cache, must-revalidate
+(Content-Type: text/html; charset=UTF-8
+Server: HTTP server (unknown)
+Content-Length: 302
+!X-XSS-Protection: 1; mode=block
+Alternate-Protocol: 80:quic
+°
+<HTML><HEAD><meta http-equiv="content-type" content="text/html;charset=utf-8">
+<TITLE>302 Moved</TITLE></HEAD><BODY>
+<H1>302 Moved</H1>
+The document has moved
+<A HREF="http://cm.g.doubleclick.net/pixel?google_nid=bluekai&amp;google_cm=&amp;google_sc=&amp;a=1&amp;google_tc=">here</A>.
+</BODY></HTML>

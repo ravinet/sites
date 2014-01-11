@@ -1,0 +1,22 @@
+PHTTP
+18.7.20.69"‡
+UGET /v1/beacons/initialize?u=undefined&sg=015756f28e553328b5d358aa09764558 HTTP/1.1
+Host: rma-api.gravity.com
+Connection: keep-alive
+Accept: */*
+vUser-Agent: Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/31.0.1650.63 Safari/537.36
+#Referer: http://www.engadget.com/
+$Accept-Encoding: gzip,deflate,sdch
+!Accept-Language: en-US,en;q=0.8
+
+*£
+HTTP/1.1 200 OK
+Server: ""
+$P3P: CP="NOI DSP COR ADMa OUR NOR"
+-Content-Type: text/javascript;charset=UTF-8
+Content-Length: 87
+%Date: Thu, 09 Jan 2014 01:44:05 GMT
+Connection: keep-alive
+ySet-Cookie: vaguid=18558a85e3929ad072883a331a5ef9a2; Domain=.gravity.com; Expires=Sun, 15-Jan-2068 03:28:10 GMT; Path=/
+Y
+GravityInsights.cc('grvinsights', '18558a85e3929ad072883a331a5ef9a2', '.engadget.com');

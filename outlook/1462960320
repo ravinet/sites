@@ -1,0 +1,20 @@
+»HTTPS157.56.232.182"à
+GET / HTTP/1.1
+Host: www.outlook.com
+Connection: keep-alive
+TAccept: text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8
+vUser-Agent: Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/31.0.1650.63 Safari/537.36
+$Accept-Encoding: gzip,deflate,sdch
+!Accept-Language: en-US,en;q=0.8
+
+*ý
+HTTP/1.1 302 Redirect
+(Content-Type: text/html; charset=UTF-8
+(Location: https://www.outlook.com/owa/
+Server: Microsoft-IIS/7.5
+X-Powered-By: ASP.NET
+%Date: Fri, 10 Jan 2014 00:28:14 GMT
+Content-Length: 151
+™
+<head><title>Document Moved</title></head>
+<body><h1>Object Moved</h1>This document may be found <a HREF="https://www.outlook.com/owa/">here</a></body>

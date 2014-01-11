@@ -1,0 +1,30 @@
+PHTTP184.73.228.80"ý
+KGET /tmobile/prod/code/bldYrAcpcUTkttVYLX9sjA((.js?ruleId=276458 HTTP/1.1
+Host: nexus.ensighten.com
+Connection: keep-alive
+Accept: */*
+vUser-Agent: Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/31.0.1650.63 Safari/537.36
+#Referer: http://www.t-mobile.com/
+$Accept-Encoding: gzip,deflate,sdch
+!Accept-Language: en-US,en;q=0.8
+
+*·
+
+HTTP/1.1 200 OK
+Accept-Ranges: bytes
+"Cache-Control: max-age=315360000
+Cache-Control: public
+7Content-Type: application/x-javascript; charset=utf-8
+%Date: Thu, 09 Jan 2014 01:00:39 GMT
+(Expires: Thu, 31 Dec 2037 23:55:55 GMT
+.Last-Modified: Tue, 07 Jan 2014 00:40:47 GMT
+Server: nginx
+Content-Length: 974
+Connection: keep-alive
+Ð
+
+Bootstrapper.bindDependencyDOMParsed(function(){function setMarqueeTags(){if(typeof cm_ClientID==="undefined"){setTimeout(setMarqueeTags,100);return;}
+var marqueeID=window.ttMETA[1].experience;var campaignElement=document.getElementsByClassName('slide-title hidden-phone')[0];if(campaignElement===undefined){campaignElement=document.getElementsByClassName('slide-image pull-right ')[0];}
+var campaign=campaignElement.getElementsByTagName('img')[0].alt;var cm='HP_MQ-_-'+marqueeID+'-_-'+campaign;href=Bootstrapper.getElementsByClassName('slide-cta',true)[0].getElementsByTagName('a')[0].href+='?cm_sp='+cm;Bootstrapper._cmFireManualImpressionTag(cm,null);$('div.marquee-slide.container.image-slide.target').off();$('div.marquee-slide.container.image-slide.target').click(function(){Bootstrapper._cmFireManualLinkTag(href,cm,Bootstrapper.dataManager.getData().pageId)
+setTimeout(function(){window.location=href},1000);});}
+setMarqueeTags();},276458,[255070],193876,[146386]);

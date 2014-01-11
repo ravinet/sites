@@ -1,0 +1,23 @@
+PHTTP38.126.130.202"â
+/GET /orbserv/hbjs?pixId=11998&pcv=62 HTTP/1.1
+ Host: action.media6degrees.com
+Connection: keep-alive
+Accept: */*
+vUser-Agent: Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/31.0.1650.63 Safari/537.36
+žReferer: http://1268402.fls.doubleclick.net/activityi;src=1268402;type=nflfa363;cat=homep672;ord=3145075831562;~oref=http%3A%2F%2Fwww.nfl.com%2F?&_dc_ck=try
+$Accept-Encoding: gzip,deflate,sdch
+!Accept-Language: en-US,en;q=0.8
+
+*‘
+ HTTP/1.1 302 Moved Temporarily
+Server: Apache-Coyote/1.1
++P3P: CP="COM NAV INT STA NID OUR IND NOI"
+Pragma: no-cache
+Cache-Control: no-cache
+cSet-Cookie: cckz=1mz3yw6; Domain=media6degrees.com; Expires=Thu, 09-Jan-2014 00:43:42 GMT; Path=/
+cSet-Cookie: cckz=1mz3yw6; Domain=media6degrees.com; Expires=Tue, 08-Jul-2014 00:33:42 GMT; Path=/
+ULocation: http://action.media6degrees.com/orbserv/hbjs?pcv=62&pixId=11998&cckz=true
+Content-Length: 0
+%Date: Thu, 09 Jan 2014 00:33:41 GMT
+Connection: close
+

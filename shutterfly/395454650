@@ -1,0 +1,19 @@
+PHTTP66.117.23.103"“
+ÖGET /m2/shutterflycom/mbox/standard?mboxHost=www.shutterfly.com&mboxSession=1389370540590-616169&mboxPage=1389370540590-616169&screenHeight=1200&screenWidth=1920&browserWidth=937&browserHeight=1051&browserTimeOffset=-300&colorDepth=24&mboxCount=1&lastuploaddate=null&lastordercalendar=false&lastorderprint=false&calendarsorderedlifetime=NONE&printsorderedlifetime=NONE&q4buyer=false&registrationdate=null&photogiftsorderedlifetime=NONE&lastorderdate=Prospect&lastorderphotogift=false&newq4buyer=false&tinyprintsuser=false&calendarslastq4=false&pageName=%2Fentry%2Fhome.sfly%3Aprospect&mbox=Shutterfly_Global_Nav&mboxId=0&mboxTime=1389352540592&mboxURL=http%3A%2F%2Fwww.shutterfly.com%2F&mboxReferrer=&mboxVersion=40 HTTP/1.1
+#Host: shutterflycom.tt.omtrdc.net
+Connection: keep-alive
+Accept: */*
+vUser-Agent: Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/31.0.1650.63 Safari/537.36
+%Referer: http://www.shutterfly.com/
+$Accept-Encoding: gzip,deflate,sdch
+!Accept-Language: en-US,en;q=0.8
+
+*½	
+HTTP/1.1 200 OK
+pragma: no-cache
+2Content-Type: text/javascript;charset=ISO-8859-1
+Content-Length: 1029
+%Date: Fri, 10 Jan 2014 16:15:26 GMT
+Server: Test & Target
+‡
+var mboxCurrent=mboxFactories.get('default').get('Shutterfly_Global_Nav',0);mboxCurrent.setEventTime('include.start');document.write('<div style="visibility: hidden; display: none" id="mboxImported-default-Shutterfly_Global_Nav-0">');document.write('<!-- Offer Id: 35627  --><script type=\"text\/javascript\">\r\n\/*mboxHighlight+ (1of2) v1 ==> Response Plugin*\/\r\nwindow.ttMETA=(typeof(window.ttMETA)!=\'undefined\')?window.ttMETA:[];window.ttMETA.push({\'mbox\':\'Shutterfly_Global_Nav\',\'campaign\':\'\',\'experience\':\'\',\'offer\':\'\'});window.ttMBX=function(x){var mbxList=[];for(i=0;i<ttMETA.length;i++){if(ttMETA[i].mbox==x.getName()){mbxList.push(ttMETA[i])}}return mbxList[x.getId()]}\r\n<\/script>');mboxFactories.get('default').get('Shutterfly_Global_Nav',0).setOffer(new mboxOfferDefault()).loaded();document.write('</div>');mboxCurrent.setEventTime('include.end');mboxFactories.get('default').get('Shutterfly_Global_Nav',0).loaded();mboxFactories.get('default').getPCId().forceId("1389370540590-616169.25_25");

@@ -1,0 +1,23 @@
+PHTTP54.208.199.70"…
+ÌGET /event?d_nsid=0&d_ld=_ts%3D1389372648005&c_jsessionid=4EACE99E2815AE03960328725FEEFB4E.pwbap109a&c_referringUrl=&c_lob_path=cms&c_hash=&c_host=www.travelocity.com&c_hostname=www.travelocity.com&c_pathname=&c_protocol=http%3A&d_rtbd=json&d_jsonv=1&d_dst=1&d_cts=1&d_cb=demdexRequestCallback_travelocity_0_1389372648005 HTTP/1.1
+Host: travelocity.demdex.net
+Connection: keep-alive
+Accept: */*
+vUser-Agent: Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/31.0.1650.63 Safari/537.36
+&Referer: http://www.travelocity.com/
+$Accept-Encoding: gzip,deflate,sdch
+!Accept-Language: en-US,en;q=0.8
+
+*’
+HTTP/1.1 302 Found
+bCache-Control: no-cache,no-store,must-revalidate,max-age=0,proxy-revalidate,no-transform,private
+3DCS: va6-dcsAS1-10-89-2-79.va6.demdex.com 1.15.34
+(Expires: Thu, 01 Jan 2009 00:00:00 GMT
+ëLocation: http://travelocity.demdex.net/firstevent?d_nsid=0&d_ld=_ts%3D1389372648005&c_jsessionid=4EACE99E2815AE03960328725FEEFB4E.pwbap109a&c_referringUrl=&c_lob_path=cms&c_hash=&c_host=www.travelocity.com&c_hostname=www.travelocity.com&c_pathname=&c_protocol=http%3A&d_rtbd=json&d_jsonv=1&d_dst=1&d_cts=1&d_cb=demdexRequestCallback_travelocity_0_1389372648005
+cP3P: policyref="/w3c/p3p.xml", CP="NOI NID CURa ADMa DEVa PSAa PSDa OUR SAMa BUS PUR COM NAV INT"
+Pragma: no-cache
+ Server: Jetty(7.6.8.v20121106)
+{Set-Cookie: demdex=49641345395772135360241724613860484009;Path=/;Domain=.demdex.net;Expires=Sun, 10-Jan-2016 16:50:35 GMT
+Content-Length: 0
+Connection: keep-alive
+

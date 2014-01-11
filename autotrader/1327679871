@@ -1,0 +1,28 @@
+PHTTP107.23.244.227"ƒ
+“GET /firstevent?d_px=27815&d_ld=containerid%3D621%26_ts%3D1389231336123&d_rtbd=json&d_dst=1&d_cts=1&d_cb=demdexDestCallback1389231336123 HTTP/1.1
+Host: cam.demdex.net
+Connection: keep-alive
+Accept: */*
+vUser-Agent: Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/31.0.1650.63 Safari/537.36
+%Referer: http://www.autotrader.com/
+$Accept-Encoding: gzip,deflate,sdch
+!Accept-Language: en-US,en;q=0.8
+>Cookie: _dp=1; demdex=36157616328387650041842705686761844869
+
+*â
+HTTP/1.1 200 OK
+bCache-Control: no-cache,no-store,must-revalidate,max-age=0,proxy-revalidate,no-transform,private
+4Content-Type: application/javascript;charset=UTF-8
+3DCS: va6-dcsAS1-10-89-2-14.va6.demdex.com 1.15.34
+(Expires: Thu, 01 Jan 2009 00:00:00 GMT
+cP3P: policyref="/w3c/p3p.xml", CP="NOI NID CURa ADMa DEVa PSAa PSDa OUR SAMa BUS PUR COM NAV INT"
+Pragma: no-cache
+ Server: Jetty(7.6.8.v20121106)
+|Set-Cookie: cam=36157616328387650041842705686761844869;Path=/;Domain=.cam.demdex.net;Expires=Sat, 09-Jan-2016 01:35:23 GMT
+«Set-Cookie: DexLifeCycle="MA==|NzQwNjQ9MToxODM0LDEwODA5PTE6MTgzNCwxMDc4Nz0xOjE4MzQ=|MA==|MjA3NzAsNDg0NTMsMjY3MiwyMDQwNywxODI4LDE3MzQsMzI2MTksMjA0MDYsMjQ0OCwxOTc3LDI1NDcsMzI3MTksMjI4NDEsMjIwNCwxODY0LDI2NzMsMjY3MA==|MA==|MA==|MA==";Path=/;Domain=.cam.demdex.net;Expires=Sat, 09-Jan-2016 01:35:23 GMT
+RSet-Cookie: DST=;Path=/;Domain=.demdex.net;Expires=Sat, 09-Jan-2016 01:35:23 GMT
+	STS: OK
+Content-Length: 762
+Connection: keep-alive
+ü
+demdexDestCallback1389231336123({"dests":[{"id":"44727-1389231323","y":"img","c":"http://r.turn.com/r/beacon?b2=u6yU48k5pxSSyZ5f-56mEGQt07ALoNjxgmKShO-OvcIIHaOURaZTWER3lOjQYn9egf-9z16E_4jw2NmBHQI_mw&cid="},{"id":"46850-1389231323","y":"img","c":"http://segments.adap.tv/data/?p=demdex&type=gif&segid=1052&add=true"},{"id":"46878-1389231323","y":"img","c":"http://r.turn.com/r/beacon?b2=RYBScLFZZPRsBahs7rvmhbOAIy0Zh04fLwybJMybMjMIHaOURaZTWER3lOjQYn9elkKasSEMWOBdEIU5gUKQJQ&cid="}],"dpm":[],"traits":[74064,10809,10787],"segments":[20770,48453,2672,20407,1828,1734,32619,20406,2448,1977,2547,32719,22841,2204,1864,2673,2670],"stuff":[{"cn":"dxatc","cv":"=64,1399","ttl":60,"dmn":".autotrader.com"}],"uuid":"36157616328387650041842705686761844869","dcs_region":7})

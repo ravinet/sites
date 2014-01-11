@@ -1,0 +1,23 @@
+PHTTP166.90.142.112"ñ
+GET /beacon.js HTTP/1.1
+Host: beacon.samsclub.com
+Connection: keep-alive
+Accept: */*
+vUser-Agent: Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/31.0.1650.63 Safari/537.36
+4Referer: http://www.samsclub.com/sams/homepage.jsp
+$Accept-Encoding: gzip,deflate,sdch
+!Accept-Language: en-US,en;q=0.8
+Cookie: dcenv=EDC
+
+*ø
+HTTP/1.1 200 OK
+USet-Cookie: btc=EQKfzXzcmoR9JrSwDszUI8;Path=/;Expires=Tue, 09-Jan-2024 13:45:22 GMT
+/Set-Cookie: bsc=EQKfzXzcmoR9JrSwDszUI8;Path=/
+XSet-Cookie: b30msc=EQKfzXzcmoR9JrSwDszUI8;Path=/;Expires=Thu, 09-Jan-2014 02:15:22 GMT
+&Cache-Control: public, max-age=86400
+(Expires: Fri, 10 Jan 2014 01:45:22 GMT
+.Content-Type: text/javascript; charset=UTF-8
+!X-Content-Type-Options: nosniff
+Content-Length: 2369
+Ã
+var bc=bc||{},_bcq=_bcq||[];bc.options=bc.options||{};bc.options.start_time=bc.options.start_time||new Date().getTime();bc.options.global_context=bc.options.global_context||"";bc.options.autorun=bc.options.hasOwnProperty("autorun")?bc.options.autorun:true;bc.domain=bc.domain||"";bc.utils=bc.utils||{};bc.classes=bc.classes||{};bc.commands=bc.commands||{};var console=console||{};console.log=console.log||function(b){};bc.utils.log=function(b){};bc.utils.urlSerialize=function(f){var e,d=[];for(e in f){d.push(encodeURIComponent(e)+"="+(typeof f[e]==="undefined"?"":encodeURIComponent(f[e])))}return d.join("&")};bc.utils.getPageViewId=function(){return"xxxxxxxx-xxxx-4xxx-yxxx-xxxxxxxxxxxx".replace(/[xy]/g,function(f){var c=Math.random()*16|0,e=f=="x"?c:(c&3|8);return e.toString(16)})};bc.utils.count=function(f){var d=0,e;for(e in f){if(f.hasOwnProperty(e)){++d}}return d};bc.utils.loadScript=function(f,g){var h=document.getElementsByTagName("head")[0],e=document.createElement("script");bc.utils.log("Attemptiong to download script: "+f);e.type="text/javascript";e.src=f;if(typeof g==="function"){e.onreadystatechange=function(){if(this.readyState==="complete"){g()}};e.onload=g}h.appendChild(e)};bc.utils.merge=function(f){var d=1,e;for(d;d<arguments.length;d++){for(e in arguments[d]){if(arguments[d].hasOwnProperty(e)){arguments[0][e]=arguments[d][e]}}}return arguments[0]};(function(){var l,m,j,n,h,i=document.getElementsByTagName("script"),k="rum.js";bc.page_view_id=bc.page_view_id||bc.utils.getPageViewId();for(l in i){if(i[l].nodeType==1&&typeof i[l].src==="string"&&i[l].src.indexOf("beacon.js")!==-1){j=i[l].src;break}}if(j){bc.domain=j.substring(0,j.indexOf("/beacon.js")+1);n=j.substring(j.indexOf("?")+1).split("&");for(m in n){if(typeof n[m]==="string"){h=n[m].split("=");bc.options[h[0]]=h[1]}}if(!bc.options.mode){bc.options.mode="release"}bc.options.domain=bc.options.domain||bc.domain;if(bc.options.mode==="debug"){bc.utils.log=function(a){console.log("--- [Beacon Log] ---");console.log(a);console.log("--------------------")};k="rum.debug.js"}bc.utils.log("Walmart Beacon Bootstrap - Options");bc.utils.log(bc.options);k+="?"+bc.utils.urlSerialize({mode:bc.options.mode,domain:bc.options.domain});bc.utils.loadScript(bc.domain+k);if(!Array.isArray){Array.isArray=function(a){return Object.prototype.toString.call(a)==="[object Array]"}}}})();

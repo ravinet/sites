@@ -1,0 +1,103 @@
+PHTTP192.150.16.64"ë
+–GET /etc/clientcontext/default/content/jcr:content/stores.init.js?path=%2Fcontent%2Fdotcom%2Fen%2Findex&cq_ck=1389227419887&_=1389227419890 HTTP/1.1
+Host: www.adobe.com
+Connection: keep-alive
+Accept: */*
+"X-Requested-With: XMLHttpRequest
+vUser-Agent: Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/31.0.1650.63 Safari/537.36
+ Referer: http://www.adobe.com/
+$Accept-Encoding: gzip,deflate,sdch
+!Accept-Language: en-US,en;q=0.8
+„Cookie: mbox=check#true#1389227479|session#1389227418322-215795#1389229279|PC#1389227418322-215795.25_04#1390437020; JSESSIONID=6928e9d2-a797-41d3-bff3-eddd321d0109; AMCV_adobemcspb=T; fsr.a=1389227419793; SessionPersistence=CLIENTCONTEXT%3A%3DvisitorId%253D
+
+*”
+HTTP/1.1 200 OK
+%Date: Thu, 09 Jan 2014 00:30:07 GMT
+Server: Apache
+X-Adobe-Content: WCMS
+Accept-Ranges: bytes
+Cache-Control: max-age=21600
+(Expires: Thu, 09 Jan 2014 06:30:07 GMT
+Content-Length: 1966
+Keep-Alive: timeout=2
+Connection: Keep-Alive
+(Content-Type: application/x-javascript
+#Vary: Accept-Encoding, User-Agent
+°
+
+if (CQ_Analytics && CQ_Analytics.ProfileDataMgr) {
+    CQ_Analytics.ProfileDataMgr.addListener("update", function(event, property) {
+        var authorizableId = this.getProperty("authorizableId");
+        if (!authorizableId || authorizableId == "anonymous") {
+            $CQ(".cq-cc-profile-not-anonymous").hide();
+            $CQ(".cq-cc-profile-anonymous").show();
+        } else {
+            $CQ(".cq-cc-profile-not-anonymous").show();
+            $CQ(".cq-cc-profile-anonymous").hide();
+        }
+    });
+
+    
+        CQ_Analytics.ProfileDataMgr.loadInitProperties({
+  "avatar": "/etc/designs/default/images/collab/avatar.png",
+  "path": "/home/users/a/anonymous/profile",
+  "isLoggedIn": false,
+  "isLoggedIn_xss": "false",
+  "authorizableId": "anonymous",
+  "authorizableId_xss": "anonymous",
+  "formattedName": "anonymous",
+  "formattedName_xss": "anonymous"
+});
+    
+
+    CQ_Analytics.ProfileDataMgr.init();
+}
+
+
+
+
+
+if( CQ_Analytics && CQ_Analytics.SurferInfoMgr) {
+    CQ_Analytics.SurferInfoMgr.loadInitProperties({
+  "IP": "10.116.70.7",
+  "keywords": ""
+}, true);
+}
+
+
+
+
+
+
+if ( CQ_Analytics && CQ_Analytics.CampaignMgr ) {
+
+
+	var campaigns = [{"path":"/content/campaigns/creativeCloudDemo/creativeCloudOffers","title":"Creative Cloud Offers","id":"content-campaigns-creativeCloudDemo-creativeCloudOffers","experiences":[],"cloudConfiguration":""}];
+	CQ_Analytics.CampaignMgr.addInitProperty('campaigns', campaigns);
+	CQ_Analytics.CampaignMgr.init();
+}
+if( CQ_Analytics && CQ_Analytics.TagCloudMgr) {
+    CQ_Analytics.TagCloudMgr.init([
+]);
+}
+
+
+if( CQ_Analytics && CQ_Analytics.PageDataMgr) {
+    CQ_Analytics.PageDataMgr.loadInitProperties({
+  "hits": 0,
+  "title": "ClientContext",
+  "path": "/etc/clientcontext/default/content",
+  "navTitle": "ClientContext",
+  "tags": "",
+  "description": "",
+  "subsection": "content",
+  "random": "0.03"
+}, true);
+}
+
+/****
+ * initialize yoda store
+ ****/
+if( CQ_Analytics && CQ_Analytics.YodaStoreMgr) {
+    
+}

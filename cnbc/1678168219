@@ -1,0 +1,23 @@
+PHTTP
+18.7.20.68"ù
+µGET /b?c1=2&c2=1000004&ns__t=1389196281263&ns_c=UTF-8&c8=Stock%20Markets%2C%20Business%20News%2C%20Financials%2C%20Earnings%20-%20CNBC&c7=http%3A%2F%2Fwww.cnbc.com%2F&c9= HTTP/1.1
+Host: b.scorecardresearch.com
+Connection: keep-alive
+Accept: image/webp,*/*;q=0.8
+vUser-Agent: Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/31.0.1650.63 Safari/537.36
+Referer: http://www.cnbc.com/
+$Accept-Encoding: gzip,deflate,sdch
+!Accept-Language: en-US,en;q=0.8
+
+*Ï
+ HTTP/1.1 302 Moved Temporarily
+Content-Length: 0
+ÑLocation: http://b.scorecardresearch.com/b2?c1=2&c2=1000004&ns__t=1389196281263&ns_c=UTF-8&c8=Stock%20Markets%2C%20Business%20News%2C%20Financials%2C%20Earnings%20-%20CNBC&c7=http%3A%2F%2Fwww.cnbc.com%2F&c9=
+%Date: Wed, 08 Jan 2014 15:51:09 GMT
+Connection: keep-alive
+}Set-Cookie: UID=9b1df77-18.7.20.68-1389196269; expires=Tue, 29-Dec-2015 15:51:09 GMT; path=/; domain=.scorecardresearch.com
+kSet-Cookie: UIDR=1389196269; expires=Tue, 29-Dec-2015 15:51:09 GMT; path=/; domain=.scorecardresearch.com
+Pragma: no-cache
+(Expires: Mon, 01 Jan 1990 00:00:00 GMT
+SCache-Control: private, no-cache, no-cache=Set-Cookie, no-store, proxy-revalidate
+

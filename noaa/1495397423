@@ -1,0 +1,74 @@
+PHTTP129.15.96.11"Ò
+GET /css/iotd.css HTTP/1.1
+Host: www.noaa.gov
+Connection: keep-alive
+Accept: text/css,*/*;q=0.1
+vUser-Agent: Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/31.0.1650.63 Safari/537.36
+Referer: http://www.noaa.gov/
+$Accept-Encoding: gzip,deflate,sdch
+!Accept-Language: en-US,en;q=0.8
+
+*•	
+HTTP/1.0 200 OK
+.Last-Modified: Wed, 13 Nov 2013 19:00:16 GMT
+Accept-Ranges: bytes
+Content-Length: 792
+Content-Type: text/css
+%Date: Thu, 09 Jan 2014 01:16:25 GMT
+Server: Apache
+$ETag: "e07e8924-318-4eb13935b9000"
+(Expires: Thu, 09 Jan 2014 02:16:25 GMT
+Cache-Control: max-age=3600
+
+Age: 109
+Via: 1.0 c7.w3.woc (squid)
+Connection: keep-alive
+š
+#nnvl_iotd  {
+	position: absolute;	
+	height: 122px ;
+	width: 100%;
+}
+#nnvl_iotd {
+	font-size: .9em;	
+	padding: 6px;
+}
+#nnvl_iotd_img {
+	position: absolute;
+
+}
+#nnvl_iotd_content {
+	position: absolute;
+	bottom: 0px;
+	width: 170px;
+	/*margin-top: 0px;
+	margin-left: 176px;*/
+}
+#nnvl_iotd_content li {
+	
+}
+#nnvl_iotd_content * {
+}
+
+#nnvl_iotd_content ul li a {
+	line-height: 1.4em;	
+	position: absolute;
+	bottom: 0px;	
+	padding: 4px;
+	background-image: url('/images/back_trans.png');
+	width: auto;
+}
+#nnvl_iotd_content a:link, #nnvl_iotd_content a:visited {
+	color: #ffffff;	
+}
+#nnvl_iotd_content a:hover {
+	color: #ffbf00;
+}
+
+#nnvl_iotd_content ul li p {
+	position: relative;
+	top: 30px;
+	margin-left: 176px;	
+	line-height: 1.4em;
+	width: 100px;
+}

@@ -1,0 +1,22 @@
+PHTTP
+8.30.11.13"Þ
+GGET /usersync/mediamath/52cdfe4b-c3db-a49a-a952-66c4fb0d3951 HTTP/1.1
+ Host: sync.zenoviaexchange.com
+Connection: keep-alive
+Accept: image/webp,*/*;q=0.8
+vUser-Agent: Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/31.0.1650.63 Safari/537.36
+$Accept-Encoding: gzip,deflate,sdch
+!Accept-Language: en-US,en;q=0.8
+rCookie: _zdeuuid=%7B%22zde_uuid%22%3A%22XU01v03-d76738ee-72ae-41ac-94d8-e0e8b2dda823%22%2C%22zdxidn%22%3A1406%7D
+
+*—
+ HTTP/1.1 302 Moved Temporarily
+Server: nginx
+%Date: Thu, 09 Jan 2014 01:41:35 GMT
+Content-Type: text/html
+Transfer-Encoding: chunked
+Connection: keep-alive
+_Location: http://rtb.gumgum.com/usersync?b=zen&i=XU01v03-d76738ee-72ae-41ac-94d8-e0e8b2dda823
+
+0
+

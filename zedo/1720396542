@@ -1,0 +1,82 @@
+PHTTP64.41.197.44"‡
+QGET /wp-content/plugins/contact-form-7/includes/css/styles.css?ver=3.6 HTTP/1.1
+Host: www.zedo.com
+Connection: keep-alive
+Accept: text/css,*/*;q=0.1
+vUser-Agent: Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/31.0.1650.63 Safari/537.36
+Referer: http://www.zedo.com/
+$Accept-Encoding: gzip,deflate,sdch
+!Accept-Language: en-US,en;q=0.8
+
+*À
+HTTP/1.1 200 OK
+%Date: Thu, 09 Jan 2014 00:29:25 GMT
+Server: Apache/2.2.22
+.Last-Modified: Thu, 12 Dec 2013 18:05:28 GMT
+!ETag: "3c524-2e4-4ed5a30c68a00"
+Content-Type: text/css
+Content-Length: 740
+"X-Varnish: 1560811195 1560809371
+
+Age: 531
+Via: 1.1 varnish
+ Keep-Alive: timeout=5, max=100
+Connection: Keep-Alive
+æ
+div.wpcf7 {
+	margin: 0;
+	padding: 0;
+}
+
+div.wpcf7-response-output {
+	margin: 2em 0.5em 1em;
+	padding: 0.2em 1em;
+}
+
+div.wpcf7-mail-sent-ok {
+	border: 2px solid #398f14;
+}
+
+div.wpcf7-mail-sent-ng {
+	border: 2px solid #ff0000;
+}
+
+div.wpcf7-spam-blocked {
+	border: 2px solid #ffa500;
+}
+
+div.wpcf7-validation-errors {
+	border: 2px solid #f7e700;
+}
+
+span.wpcf7-form-control-wrap {
+	position: relative;
+}
+
+span.wpcf7-not-valid-tip {
+	color: #f00;
+	font-size: 1em;
+	display: block;
+}
+
+span.wpcf7-list-item {
+	margin-left: 0.5em;
+}
+
+.wpcf7-display-none {
+	display: none;
+}
+
+div.wpcf7 img.ajax-loader {
+	border: none;
+	vertical-align: middle;
+	margin-left: 4px;
+}
+
+div.wpcf7 div.ajax-error {
+	display: none;
+}
+
+div.wpcf7 .placeheld {
+	color: #888;
+}

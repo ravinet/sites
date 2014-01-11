@@ -1,0 +1,62 @@
+PHTTP65.110.169.132"Æ
+GET /lib/optout.js HTTP/1.1
+Host: www.optmd.com
+Connection: keep-alive
+Accept: */*
+vUser-Agent: Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/31.0.1650.63 Safari/537.36
+ Referer: http://www.optmd.com/
+$Accept-Encoding: gzip,deflate,sdch
+!Accept-Language: en-US,en;q=0.8
+
+*Â
+HTTP/1.1 200 OK
+%Date: Thu, 09 Jan 2014 00:39:26 GMT
+Server: Apache
+.Last-Modified: Thu, 18 Oct 2012 22:11:07 GMT
+"ETag: "b80096-46e-4cc5ca9f054c0"
+Accept-Ranges: bytes
+Content-Length: 1134
+GP3P: policyref="/w3c/p3p.xml", CP="NOI DSP COR DEVa TAIa OUR BUS UNI"
+Connection: close
+Content-Type: text/javascript
+ð
+function optOut () {
+	document.location = 'http://system.casalemedia.com/cgi-bin/naiOptout.cgi?action=optout&fromOptmd=1';
+}
+
+function setCookie(name, value, expires, path, domain, secure) {
+	// set time in milliseconds
+	var today = new Date();
+	today.setTime( today.getTime() );
+
+	// expires parameter is in days
+	if ( expires ) {
+		expires = expires * 1000 * 60 * 60 * 24;
+	}
+	var expires_date = new Date( today.getTime() + (expires) );
+
+	var cookieStr = name + '=' + escape(value) +
+		( (domain)	? '; domain=' + domain : '' ) +
+		( (path)	? '; path=' + path : '' ) + 
+		( (expires)	? '; expires=' + expires_date.toGMTString() : '' ) + 
+		( (secure)	? '; secure' : '' );
+	document.cookie = cookieStr;
+
+	// now chceck that the browser accepted the cookie
+	return getCookie(name);
+}
+
+function getCookie(c_name) {
+
+	if (document.cookie.length>0){
+		c_start=document.cookie.indexOf(c_name + "=");
+		if (c_start!=-1){
+			c_start=c_start + c_name.length+1;
+			c_end=document.cookie.indexOf(";",c_start);
+			if (c_end==-1) c_end=document.cookie.length;
+			return unescape(document.cookie.substring(c_start,c_end));
+		}
+	}
+
+	return null;
+}

@@ -1,0 +1,310 @@
+PHTTP161.69.13.140"Ú
+%GET /includes/js/global.js HTTP/1.1
+Host: www.siteadvisor.com
+Connection: keep-alive
+Accept: */*
+vUser-Agent: Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/31.0.1650.63 Safari/537.36
+&Referer: http://www.siteadvisor.com/
+$Accept-Encoding: gzip,deflate,sdch
+!Accept-Language: en-US,en;q=0.8
+
+*­]
+HTTP/1.1 200 OK
+%Date: Thu, 09 Jan 2014 01:45:00 GMT
+Server: Apache
+.Last-Modified: Mon, 23 Mar 2009 21:36:40 GMT
+"ETag: "107f8-2d73-465d00fd40a00"
+Accept-Ranges: bytes
+Content-Length: 11635
+ Keep-Alive: timeout=15, max=98
+Connection: Keep-Alive
+&Content-Type: application/javascript
+õZ
+//  *****************************************************************
+//  *   addLoadEvent                                                *
+//  *****************************************************************
+//  *   Version .01                                                 *
+//  *   Ralph Garcia 3/14/06                                        *
+//  *****************************************************************
+//  *   allows multiple ON LOAD functions to be called              *
+//  *   DO NOT DELETE ------                                        *
+//  *****************************************************************
+function addLoadEvent(func) {
+  var oldonload = window.onload;
+  if (typeof window.onload != 'function') {
+  	window.onload = func;
+  } else {
+  	window.onload = function () {
+		oldonload();
+		func();
+	}
+  }
+}
+
+//  *****************************************************************
+//  *   addClass                                                    *
+//  *****************************************************************
+//  *   Version .01                                                 *
+//  *   Ralph Garcia 3/14/06                                        *
+//  *****************************************************************
+//  *   Lorem Ipsum.........                                        *
+//  *   this function allows you to add a class to an html selector *
+//  *****************************************************************
+function addClass(element,value) {
+  if (!element.className) {
+    element.className = value;
+  } else {
+    newClassName = element.className;
+    newClassName+= " ";
+    newClassName+= value;
+    element.className = newClassName;
+  }
+}
+
+//  *****************************************************************
+//  *   highlightPage                                               *
+//  *****************************************************************
+//  *   Version .01                                                 *
+//  *   Ralph Garcia 3/14/06                                        *
+//  *****************************************************************
+//  *   Lorem Ipsum.........                                        *
+//  *   Hilights Section Navigation on click : Behavior has been    *
+//  *   completely seperated from content and presentation          *
+//  *   uses function addClass created above                        *
+//  *****************************************************************
+/*addLoadEvent(highlightPage);
+function highlightPage() {
+  if (!document.getElementsByTagName) return false;
+  if (!document.getElementById) return false;
+  if (!document.getElementById("nav-section")) return false;
+  var nav = document.getElementById("nav-section");
+  var links = nav.getElementsByTagName("a");
+  for (var i=0; i<links.length; i++) {
+    var linkurl = links[i].getAttribute("href");
+    var currenturl = window.location.href;
+    if (currenturl.indexOf(linkurl) != -1) {
+      links[i].className = "selected";
+      var linktext = links[i].lastChild.nodeValue.toLowerCase();
+      document.body.setAttribute("id",linktext);
+    }
+  }
+}*/
+
+//  *****************************************************************
+//  *   prepare_parent_links                                        *
+//  *****************************************************************
+//  *   Version .01                                                 *
+//  *****************************************************************
+//  *   Standards-friendly pop up window                            *
+//  *   Get links that match class="open_in_child" and on click     *
+//  *   open the link in a new window.                              *
+//  *****************************************************************
+function prepare_parent_links() {
+if( !document.getElementsByTagName ) return false;
+	var links = document.getElementsByTagName( 'a' );
+	for( var i = 0; i < links.length; i++ ) {
+		if ( links[i].className.match( 'open_in_child' ) ) { 
+			links[i].onclick = function() {
+				open_in_child( this.getAttribute( 'href' ) );
+				return false;
+			}
+		}
+	}
+}
+
+//  ****************************************************************
+//  *   open_in_parent                                              *
+//  *****************************************************************
+//  *   Version .01                                                 *
+//  *****************************************************************
+//  *   Lorem Ipsum...                                              *
+//  *****************************************************************
+function open_in_parent( url ) {
+	opener.location.href = url;
+	if ( window.focus ) {
+		opener.focus();
+	}
+	return false;
+}
+
+//  *****************************************************************
+//  *   open_in_child                                               *
+//  *****************************************************************
+//  *   Version .01                                                 *
+//  *****************************************************************
+//  *   Lorem Ipsum...                                              *
+//  *****************************************************************
+function open_in_child( url ) {
+	window.name = 'parent';
+	newwindow = window.open( url, 'child' );
+	if ( window.focus ) {
+		newwindow.focus();
+	}
+	return false;
+}
+
+
+//  *****************************************************************
+//  *   prepare_child_links                                         *
+//  *****************************************************************
+//  *   Version .01                                                 *
+//  *****************************************************************
+//  *   Load in parent window and close current window              *
+//  *   Get links that match class="open_in_parent" and on click    *
+//  *   open the link in the parent window and close itself.        *
+//  *****************************************************************
+function prepare_child_links() {
+if( !document.getElementsByTagName ) return false;
+	var links = document.getElementsByTagName( 'a' );
+	for( var i = 0; i < links.length; i++ ) {
+		if ( links[i].className.match( 'open_in_parent' ) ) { 
+			links[i].onclick = function() {
+				open_in_parent( this.getAttribute( 'href' ) );
+				return false;
+			}
+		}
+	}
+}
+
+//  *****************************************************************
+//  *   Toggle                                                      *
+//  *****************************************************************
+//  *   Version .01                                                 *
+//  *****************************************************************
+//  *   Generic toggle function.  Pass element ID and off it goes!  *
+//  *****************************************************************
+function toggle(obj) 
+{
+    // Virus detail page patch.
+    // We had to toggle all cards off before displaying any of the cards.
+    // Otherwise they would overlap eachother.
+    if (obj == "threat-type" || obj == "threat-subtype" || obj == "threat-date" || obj == "threat-length" || obj == "threat-minimum-dat" || obj == "threat-update-dat" || obj == "threat-minimum-engine" || obj == "threat-description-added" || obj == "threat-description-modified" )
+    {
+        closeCards()
+    }   
+    if ( obj == "threat1" || obj == "threat2" || obj == "threat3" || obj == "threat4" || obj == "threat5")
+    {
+        document.getElementById("legend").style.display="none";
+        document.getElementById("legend-outbreak").style.display="none";
+        document.getElementById("legend-vulnerability").style.display="none";
+        document.getElementById("legend-pups").style.display="none";
+		document.getElementById("legend-learnmore").style.display="none";
+    }
+    var el = document.getElementById(obj);
+	el.style.display = (el.style.display != 'none' ? 'none' : 'block' );
+}
+
+
+
+function closeCards()
+{
+    var myCards = new Array("threat-ty?e","threat-subtype","threat-date","threat-length","threat-minimum-dat","threat-update-dat","threat-minimum-engine","threat-description-added","threat-description-modified","legend-learnmore")
+    var x
+    for ( x in myCards)
+    {
+        document.getElementById(myCards[x]).style.display="none";
+    }
+}
+
+
+//  *****************************************************************
+//  *   Toggle                                                      *
+//  *****************************************************************
+//  *   Version .01                                                 *
+//  *****************************************************************
+//  *   Get links that match class="toggle" and on click call       *
+//  *   function toggleElement().                                   *
+//  *   This function is executed on the pageload event.            *
+//  ***************************************************************** 
+addLoadEvent(prepareToggle)
+function prepareToggle() {
+if (!document.getElementsByTagName) return false;
+	var links = document.getElementsByTagName("a");
+	for (var i=0; i<links.length; i++) {
+	if (links[i].className.match("toggle")) {
+			links[i].onclick = function() {
+			toggleElement(this);
+			return false;
+			}
+		}
+	}
+}
+
+//  *****************************************************************
+//  *   oggleElement                                                *
+//  *****************************************************************
+//  *   Version .01                                                 *
+//  *****************************************************************
+//  *   Toggle wrapper.                                             *
+//  *****************************************************************
+function toggleElement(link) {
+	var elementID = link.getAttribute("href").split("#")[1];
+    toggle(elementID);
+}
+
+//  added for CQ 9141 - Ram
+
+function def_hover(id)
+
+{
+
+e=document.getElementById(id)
+
+                        e.style.display='block'
+
+}
+
+function def_mouseout(id)
+
+{
+
+e=document.getElementById(id)
+
+                        e.style.display='none'
+
+}
+
+/* expand collapse javascript*/
+function showhide(eImg,eDiv)
+{
+	var dt = document.getElementById(eDiv);
+	if (dt.style.display == 'block')
+	{
+		dt.style.display = 'none';
+		eImg.src = '/images/plus.gif';
+	}
+	else
+	{
+		dt.style.display = 'block';
+		eImg.src = '/images/minus.gif';
+	}
+}
+/*---------*/
+
+function redirecthttp()
+{
+var str,str1,str2,intlen;
+str=window.document.location.toString();
+str1= str.substring(0,5);
+intlen=str.lastIndexOf(".") +1 
+str2=str.substring(intlen);
+
+
+if (str1=="https" && str2=="html") 
+{
+	if (str.indexOf("sncqawebdev1:546") >= 0)
+		window.location.replace(str.replace("https://sncqawebdev1:546","http://sncqawebdev1:83"));
+	else if (str.indexOf("sncqawebdev1:547") >= 0)
+		window.location.replace(str.replace("https://sncqawebdev1:547","http://sncqawebdev1:84"));
+	else if (str.indexOf("secure.nai.com") >= 0)
+		window.location.replace(str.replace("https://secure.nai.com","http://www.mcafee.com"));	
+	else if (str.indexOf("www.mcafee.com") >= 0)
+		window.location.replace(str.replace("https","http"));	
+	else if (str.indexOf("mcafee.com") >= 0)
+		window.location.replace(str.replace("https","http"));	
+	else
+		window.location.replace(str.replace("https","http"));	
+}
+}	
+
+redirecthttp();

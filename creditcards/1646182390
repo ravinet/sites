@@ -1,0 +1,20 @@
+»HTTPS66.117.23.103"Ø
+•GET /m2/citicorpcreditservic/ubox/image?mbox=citi_bluekai_userid&mboxDefault=https://cimage.adobe.com/onepixel.gif&bkid=QmBPvCQ%2F99OyO12u HTTP/1.1
+*Host: citicorpcreditservic.tt.omtrdc.net
+Connection: keep-alive
+Accept: image/webp,*/*;q=0.8
+vUser-Agent: Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/31.0.1650.63 Safari/537.36
+DReferer: https://www.citi.com/credit-cards/creditcards/CitiHome.do
+$Accept-Encoding: gzip,deflate,sdch
+!Accept-Language: en-US,en;q=0.8
+MCookie: mboxSession=1389312105112-767536; mboxPC=1389312105112-767536.25_30
+
+*ë
+HTTP/1.1 302 Found
+$P3P: CP="NOI DSP CURa OUR STP COM"
+ Set-Cookie: mboxPC=1389312105112-767536.25_30; Domain=citicorpcreditservic.tt.omtrdc.net; Expires=Fri, 24-Jan-2014 00:01:32 GMT; Path=/m2/citicorpcreditservic
+1Location: https://cimage.adobe.com/onepixel.gif
+Content-Length: 0
+%Date: Fri, 10 Jan 2014 00:01:32 GMT
+Server: Test & Target
+

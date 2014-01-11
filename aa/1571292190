@@ -1,0 +1,25 @@
+PHTTP
+23.0.61.41"Ñ
+#GET /home/js/homeUtil.js HTTP/1.1
+Host: www.aa.com
+Connection: keep-alive
+Accept: */*
+vUser-Agent: Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/31.0.1650.63 Safari/537.36
+(Referer: http://www.aa.com/homePage.do
+$Accept-Encoding: gzip,deflate,sdch
+!Accept-Language: en-US,en;q=0.8
+ýCookie: v1st=7EA5FF02354CAF63; JSESSIONID=4C0F4AAF1B0090AFE3A5001E623C1AE7; dtCookie=06F4BF3512EFE0A6C157596C94C19D9F|AA.com|1; ROUTEID=.P111A01; homeAirport="wGFH1cxVqs0="; COUNTRY_CODE="UCKRRdXdz9w="; saleCity="wGFH1cxVqs0="; dtPC=5312511_627#_load_
+
+*Œ
+HTTP/1.1 200 OK
+Server: Apache-Coyote/1.1
+X-dynaTrace-JS-Agent: true
+Accept-Ranges: bytes
+ETag: W/"466-1387316482000"
+.Last-Modified: Tue, 17 Dec 2013 21:41:22 GMT
+&Content-Type: application/javascript
+Content-Length: 466
+%Date: Thu, 09 Jan 2014 01:28:20 GMT
+Connection: keep-alive
+Ô
+var viewReservationList=function(){HomePageMyReservationsAjaxAction.viewReservationsList({timeout:30000,callback:viewList});};var viewReservationListLogin=function(){HomePageMyReservationsAjaxAction.viewReservationsListLogin({timeout:30000,callback:viewList});};var viewList=function(callback){DWRUtil.setValue(callback.id,callback.body,{escapeHtml:false});jQuery(".aa-link-faq").aaGenericPopup("CUSTOM",675,500);jQuery("#findReservationForm\\.firstName").focus();};

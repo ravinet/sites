@@ -1,0 +1,27 @@
+PHTTP207.223.6.19"å
+eGET /applications/cnbc.com/resources/files/2013/07/12/badge-ad-css-update.js?vn=1386587276 HTTP/1.1
+Host: fm.cnbc.com
+Connection: keep-alive
+Accept: */*
+vUser-Agent: Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/31.0.1650.63 Safari/537.36
+Referer: http://www.cnbc.com/
+$Accept-Encoding: gzip,deflate,sdch
+!Accept-Language: en-US,en;q=0.8
+×Cookie: fsr.a=suspended; __utma=35821554.134675219.1389196281.1389196281.1389196281.1; __utmb=35821554.1.10.1389196281; __utmc=35821554; __utmz=35821554.1389196281.1.1.utmcsr=(direct)|utmccn=(direct)|utmcmd=(none)
+
+*ê
+HTTP/1.1 200 OK
+%Date: Tue, 07 Jan 2014 12:03:39 GMT
+ Server: Apache/2.2.15 (CentOS)
+Content-Type: text/javascript
+Via: 1.1 C aicache6
+Content-Length: 193
+X-Aicache-OS: 10.10.1.33:80
+Connection: Keep-Alive
+Keep-Alive: max=20
+(Expires: Tue, 14 Jan 2014 12:03:39 GMT
+Ã
+ï»¿$(window).load(function () {
+    $('.cols2 .col2 .badge-ad + .module-header').css("margin-top", "-20px");
+    $('.topic-section .badge-ad + .module-header').css("margin-top", "-6px");
+});

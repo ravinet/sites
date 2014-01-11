@@ -1,0 +1,36 @@
+PHTTP64.188.63.57"Î
+AGET /tag.jsp?pid=3F901BFB9A&w=300&h=250&rnd=1823759158 HTTP/1.1
+Host: 5tips.sitescout.com
+Connection: keep-alive
+Accept: */*
+vUser-Agent: Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/31.0.1650.63 Safari/537.36
+$Accept-Encoding: gzip,deflate,sdch
+!Accept-Language: en-US,en;q=0.8
+
+*„
+HTTP/1.1 200 OK
+Server: Apache-Coyote/1.1
+,Cache-Control: max-age=0,no-cache,no-store
+Pragma: no-cache
+(Expires: Tue, 11 Oct 1977 12:34:56 GMT
+6Content-Type: application/x-javascript;charset=UTF-8
+Content-Length: 365
+%Date: Wed, 08 Jan 2014 17:07:19 GMT
+ï
+
+
+
+
+
+var myRand=parseInt(Math.random()*99999999);
+
+var pUrl = "http://5tips.sitescout.com/disp?pid=3F901BFB9A&rw=1&rand=" + myRand;
+
+var strCreative=''
+ + '<IFRAME SRC="'
+ + pUrl
+ + '" WIDTH="300" HEIGHT="250" MARGINWIDTH=0 MARGINHEIGHT=0 HSPACE=0 VSPACE=0 FRAMEBORDER=0 SCROLLING=no BORDERCOLOR="#000000">\n'
+ + '</IFRAME>\n'
+ + '\n'
+;
+document.write(strCreative);

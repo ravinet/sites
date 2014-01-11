@@ -1,0 +1,29 @@
+PHTTP
+64.4.11.42"˜
+NGET /click/services/Tracking/Impression.ashx?CR_CC=200243830&o=1&r= HTTP/1.1
+Host: www.microsoft.com
+Connection: keep-alive
+Accept: */*
+vUser-Agent: Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/31.0.1650.63 Safari/537.36
+qReferer: http://office.microsoft.com/en-us/business/office-365-enterprise-e3-business-software-FX103030346.aspx
+$Accept-Encoding: gzip,deflate,sdch
+!Accept-Language: en-US,en;q=0.8
+ÉCookie: MUID=34397B8377CD6E7A1B787E3E73CD6CB5; MC1=GUID=e9174bd61a22534f9593d7e1be9fed80&HASH=d64b&LV=20141&V=4&LU=1389229148350; MS0=e2c0dd68bcba4e058795b6f8d6ce467a; A=I&I=AxUFAAAAAAAPBwAA1VDhVtlML4cFTmylm4dMfw!!&V=4; WT_FPC=id=2b201af53ebf5b89e991389218360504:lv=1389218360645:ss=1389218360504; R=200243830-1/8/2014 19:59:21
+
+*Ö
+HTTP/1.1 200 OK
+Cache-Control: private
+Content-Length: 0
+Server: Microsoft-IIS/8.0
+uP3P: CP="ALL IND DSP COR ADM CONo CUR CUSo IVAo IVDo PSA PSD TAI TELo OUR SAMo CNT COM INT NAV ONL PHY PRE PUR UNI"
+mSet-Cookie: RioTracking.SessionASID=AxUFAAAAAAAPBwAA1VDhVtlML4cFTmylm4dMfw!!; domain=.microsoft.com; path=/
+KSet-Cookie: RioTracking.CellCode=200243830; domain=.microsoft.com; path=/
+BSet-Cookie: RioTracking.Organic=1; domain=.microsoft.com; path=/
+MSet-Cookie: OnlineTrackingV2.0=CTC=200243830; domain=.microsoft.com; path=/
+X-AspNet-Version: 2.0.50727
+VTag: 279964730600000000
+X-Powered-By: ASP.NET
+X-Powered-By: ARR/2.5
+X-Powered-By: ASP.NET
+%Date: Thu, 09 Jan 2014 00:59:08 GMT
+

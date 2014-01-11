@@ -1,0 +1,26 @@
+PHTTP23.74.28.10"â
+GET / HTTP/1.1
+Host: www.homedepot.com
+Connection: keep-alive
+TAccept: text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8
+vUser-Agent: Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/31.0.1650.63 Safari/537.36
+$Accept-Encoding: gzip,deflate,sdch
+!Accept-Language: en-US,en;q=0.8
+
+*Ð
+ HTTP/1.1 302 Moved Temporarily
+Server: nginx
+Content-Type: text/plain
+Content-Length: 0
+rLocation: http://www.homedepot.com/b/webapp/catalog/servlet/HomePageView?storeId=10051&catalogId=10053&langId=-1
+Content-Language: en-US
+Vary: Accept-Encoding
+(Expires: Fri, 10 Jan 2014 15:07:29 GMT
+.Cache-Control: max-age=0, no-cache, no-store
+Pragma: no-cache
+%Date: Fri, 10 Jan 2014 15:07:29 GMT
+Connection: keep-alive
+`Set-Cookie: WCSBSESSIONID=0000aJLjP1xHDab3wjpYQ8KUg_C:167utkcm9; Path=/; Domain=.homedepot.com
+aSet-Cookie: Coradiantuserid=1996effd-d843-1258-9678-00e0ed0ed026; Path=/; Domain=.homedepot.com
+JSet-Cookie: akaau=1389366749~id=bad660de88924d7b8bce46cf8397965c; path=/
+

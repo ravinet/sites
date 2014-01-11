@@ -1,0 +1,50 @@
+PHTTP173.241.242.96"´
+ßGET /w/1.0/acj?mi=4927c6bf-7cf2-436d-0a4c-876a35b52c4c&mn=1&mc=1&cc=1&ai=5d4eefbc-6322-492b-1ac2-ce60b6d899be&o=4574244389&callback=OX_4574244389&ju=http%3A//www.aa.com/homePage.do&jr=&auid=34371&res=1920x1200x24&plg=swf%2Cqt%2Cwmp%2Cshk%2Cpm&ch=ISO-8859-1&tz=300&c.TreatmentCode=null HTTP/1.1
+Host: ox-d.aa.com
+Connection: keep-alive
+Accept: */*
+vUser-Agent: Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/31.0.1650.63 Safari/537.36
+(Referer: http://www.aa.com/homePage.do
+$Accept-Encoding: gzip,deflate,sdch
+!Accept-Language: en-US,en;q=0.8
+—Cookie: v1st=7EA5FF02354CAF63; dtCookie=06F4BF3512EFE0A6C157596C94C19D9F|AA.com|1; dtPC=5312511_627#_load_; AX42=CT-USR; OX_u=e729c789-017e-06af-852b-31ec2645fc5a_a_1390440501; mt.v=2.779430393.1389230913754
+
+*¿
+HTTP/1.1 200 OK
+Vary: Accept
+êSet-Cookie: OX_u=4cc7505c-5c3c-0857-9d1f-edca40f39295_m_1390440501; Version=1; Expires=Fri, 09-Jan-2015 01:28:21 GMT; Max-Age=31536000; Path=/
+CServer: MochiWeb/1.1 WebMachine/1.10.0 (never breaks eye contact)
+Pragma: no-cache
+#P3P: CP="CUR ADM OUR NOR STA NID"
+(Expires: Mon, 26 Jul 1997 05:00:00 GMT
+%Date: Thu, 09 Jan 2014 01:28:21 GMT
+ Content-Type: application/json
+Content-Length: 1592
+-Cache-Control: private, max-age=0, no-cache
+Connection: close
+∫
+OX_4574244389({
+  "ads":{
+    "medium":"w",
+    "record_tmpl":"http://ox-d.aa.com/{medium}/1.0/{rtype}?ts={txn_state}",
+    "adunits" : [
+      {
+        "auid":"34371",
+        "chain":[
+          {
+            "is_fallback":0,
+            
+            "ad_id":"536899709",
+            "width":"580",
+            "height":"227",
+            "html":"<a href='http://ox-d.aa.com/w/1.0/rc?ts=1fHNpZD01Mzg3fHJhaWQ9OWNkOGZlNDItZTNjNy00NmM5LTg2NTctZWUzY2ZkOTdjZjMwfGF1aWQ9MzQzNzF8dXI9RFNBSVpVTHZSVnxhcz01ODB4MjI3fGFpZD01MzY4OTk3MDl8cHViPTc2NzZ8YXVtPURNSUQuV0VCfGxpZD01MzY4ODQ4MTZ8dT0xfHQ9MXxyaWQ9MmRiODBkZWUtNDgwZS00ZWVhLTgwZDMtZWQ2NmI3NmYwNjRjfG9pZD0xMzE3NTJ8Ym09QlVZSU5HLkhPVVNFfHA9MHxwYz1VU0R8YWM9VVNEfHBtPVBSSUNJTkcuQ1BNfHJ0PTEzODkyMzA5MDF8cHI9MHxhZHY9MTI4Njg' target='_blank'><img src='http://ox-i.aa.com/05e/05e096e3-20ce-4b3a-9753-6aa07546bed9/f3d/f3dfa01433bc4da4970eff63f4b3cde8.jpg' height='227' width='580' border='0' alt='Building the New American. Together.'></a>\n",
+            "target":"_blank",
+            "ts":"1fHNpZD01Mzg3fHJhaWQ9OWNkOGZlNDItZTNjNy00NmM5LTg2NTctZWUzY2ZkOTdjZjMwfGF1aWQ9MzQzNzF8dXI9RFNBSVpVTHZSVnxhcz01ODB4MjI3fGFpZD01MzY4OTk3MDl8cHViPTc2NzZ8YXVtPURNSUQuV0VCfGxpZD01MzY4ODQ4MTZ8dT0xfHQ9MXxyaWQ9MmRiODBkZWUtNDgwZS00ZWVhLTgwZDMtZWQ2NmI3NmYwNjRjfG9pZD0xMzE3NTJ8Ym09QlVZSU5HLkhPVVNFfHA9MHxwYz1VU0R8YWM9VVNEfHBtPVBSSUNJTkcuQ1BNfHJ0PTEzODkyMzA5MDF8cHI9MHxhZHY9MTI4Njg",
+            "type":"image",
+            "ad_url":"http://ox-i.aa.com/05e/05e096e3-20ce-4b3a-9753-6aa07546bed9/f3d/f3dfa01433bc4da4970eff63f4b3cde8.jpg"
+          }
+        ]
+      }
+    ]
+  }
+});

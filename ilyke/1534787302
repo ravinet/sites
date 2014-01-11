@@ -1,0 +1,22 @@
+PHTTP74.217.253.60"‹
+GET /r1/bcm/p23 HTTP/1.1
+Host: rs.gwallet.com
+Connection: keep-alive
+TAccept: text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8
+vUser-Agent: Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/31.0.1650.63 Safari/537.36
+ Referer: http://www.ilyke.net/
+$Accept-Encoding: gzip,deflate,sdch
+!Accept-Language: en-US,en;q=0.8
+
+*½
+HTTP/1.1 200 OK
+Content-Length: 0
+Server: radiumone/1.2
+ICache-control: private, no-cache, no-cache=Set-Cookie, proxy-revalidate
+(Expires: Tue, 29 Oct 2002 19:50:44 GMT
+Pragma: no-cache
+)P3p: CP="PSAo PSDo OUR BUS DSP NON COR"
+gSet-cookie: ra1_sid=138; Expires=Fri, 09-Jan-2015 01:41:32 GMT; Path=/; Domain=gwallet.com; Version=1
+wSet-cookie: ra1_uid=5234368722113414976; Expires=Fri, 09-Jan-2015 01:41:32 GMT; Path=/; Domain=gwallet.com; Version=1
+`Set-Cookie: RA1balancer=MTAuMTAyLjIuNDkgODg4OA==;expires=Thu, 11-Oct-2018 04:21:32 GMT;path=/;
+

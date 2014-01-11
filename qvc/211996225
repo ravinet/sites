@@ -1,0 +1,115 @@
+PHTTP74.121.134.233"Ã
+$GET /at/rules_90040260.js HTTP/1.1
+Host: data.qvc.com
+Connection: keep-alive
+Accept: */*
+vUser-Agent: Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/31.0.1650.63 Safari/537.36
+Referer: http://www.qvc.com/
+$Accept-Encoding: gzip,deflate,sdch
+!Accept-Language: en-US,en;q=0.8
+wCookie: dtPC=5177485_904#_load_; mt.v=2.331746750.1389230777545; akaau=1389231065~id=b631559ec8bb5643703c7edad85986fe
+
+*ù
+HTTP/1.1 200 OK
+%Date: Thu, 09 Jan 2014 01:26:05 GMT
+Server: Apache
+Cache-Control: max-age=1800
+(Expires: Thu, 09 Jan 2014 01:56:05 GMT
+WP3P: CP="NON DSP COR CUR ADMo DEVo PSAo PSDo OUR IND ONL UNI PUR COM NAV INT DEM STA"
+.Last-Modified: Thu, 09 Jan 2014 01:13:17 GMT
+ETag: "7fc17-9a2-52cdf7ad"
+Accept-Ranges: bytes
+Content-Length: 2466
+"Keep-Alive: timeout=300, max=736
+Connection: Keep-Alive
+&Content-Type: application/javascript
+¤
+ï»¿_cmPartnerUtils.setContactRule({cid:90040260,version:1,partners:[
+{pid:1101,type:'S',url:'http://a248.g.akamai.net/7/248/14564/20080403/dotomi.download.akamai.com/14564/cm/2320/dtm_cm.js',surl:'https://a248.e.akamai.net/7/248/14564/20080403/dotomi.download.akamai.com/14564/cm/2320/dtm_cm.js',key:'dtm_cid=2320;dtm_cmagic=\\"a70dc4\\";'}
+],tags:[
+[
+1 
+,
+2 
+,
+3 
+,
+4 
+,
+5 
+,
+6 
+]
+],segmentRules:[
+{id: 1,fn: function (cm, tp) { return (((tp.refurl && _cmPartnerUtils.contains(tp.refurl, 'GOOGLE.COM')) || (tp.refurl && _cmPartnerUtils.contains(tp.refurl, 'SEARCH.YAHOO.COM')) || (tp.refurl && _cmPartnerUtils.contains(tp.refurl, 'BING.COM/SEARCH')) || (tp.refurl && _cmPartnerUtils.contains(tp.refurl, 'ASK.COM')) || (tp.refurl && _cmPartnerUtils.contains(tp.refurl, 'SEARCH.AOL.COM')) || (tp.refurl && _cmPartnerUtils.contains(tp.refurl, 'SEARCH')))) }}
+,
+{id: 2,fn: function (cm, tp) { return (((tp.mkv && tp.mkv.toUpperCase() == 'NEWSLETTER' ) || (tp.mkv && tp.mkv.toUpperCase() == 'POSTCARD' ) || (tp.mkv && tp.mkv.toUpperCase() == 'TARGETED' ) || (tp.mkv && tp.mkv.toUpperCase() == 'APTSV' ) || (tp.mkv && tp.mkv.toUpperCase() == 'DAILYTSV' ) || (tp.mkv && tp.mkv.toUpperCase() == 'REMINDERS' ))) }}
+,
+{id: 3,fn: function (cm, tp) { return (((tp.mkv && tp.mkv.toUpperCase() == 'CJ' ) || (tp.mkv && tp.mkv.toUpperCase() == 'JELLYFISHFEED' ))) }}
+,
+{id: 4,fn: function (cm, tp) { return (((tp.mkv && _cmPartnerUtils.contains(tp.mkv, 'FEED')) || (tp.mkv && tp.mkv.toUpperCase() == 'GOOGLEBASE' ))) }}
+,
+{id: 5,fn: function (cm, tp) { return (((tp.mkv && tp.mkv.toUpperCase() == 'DOTOMI' ))) }}
+,
+{id: 6,fn: function (cm, tp) { return ((cm.tid=="14" && cm.cat=="2") && ((cm.ccid && cm.ccid.toUpperCase() == 'NEW NAMES' ))) }}
+,
+{id: 7,fn: function (cm, tp) { return (((tp.mkchnl && tp.mkchnl.toUpperCase() == 'DIRECT LOAD' ))) }}
+,
+{id: 8,fn: function (cm, tp) { return (((tp.mkchnl && tp.mkchnl.toUpperCase() == 'REFERRING SITES' ))) }}
+,
+{id: 9,fn: function (cm, tp) { return (((tp.n_r && tp.n_r.toUpperCase() == 'NEW' ))) }}
+],segments: [
+{id: 601,p: [
+0
+],rules: [
+1
+]}
+,
+{id: 621,p: [
+0
+],rules: [
+2
+]}
+,
+{id: 623,p: [
+0
+],rules: [
+3
+]}
+,
+{id: 624,p: [
+0
+],rules: [
+4
+]}
+,
+{id: 625,p: [
+0
+],rules: [
+5
+]}
+,
+{id: 961,p: [
+0
+],rules: [
+6
+]}
+,
+{id: 981,p: [
+0
+],rules: [
+7
+]}
+,
+{id: 982,p: [
+0
+],rules: [
+8
+]}
+,
+{id: 99900006,p: [
+0
+],rules: [
+9
+]}
+],usesNewRepeat: true});

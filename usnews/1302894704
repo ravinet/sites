@@ -1,0 +1,151 @@
+PHTTP63.140.35.208"≈
+èPOST /adserver?u=97df6f8f08d8730261d4b44204353b4c&u=69832e95d26ae65e69ac72002a0be78c&z=52500&l=20140108115708&of=1.4&tm=15&g=1000003 HTTP/1.1
+Host: ad.auditude.com
+Connection: keep-alive
+Content-Length: 205
+#Origin: http://assets.newsinc.com
+vUser-Agent: Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/31.0.1650.63 Safari/537.36
+1Content-Type: application/x-www-form-urlencoded
+Accept: */*
+mReferer: http://assets.newsinc.com/[[IMPORT]]/ndn.cdn.auditude.com/flash/modules/ndn-1.0/AuditudeAdUnit.swf
+$Accept-Encoding: gzip,deflate,sdch
+!Accept-Language: en-US,en;q=0.8
+œ
+dpid=90080
+sitesection=usnews_hom_non_fro
+sec=hom
+sub=non
+adtype=1
+wgt=1
+fp=0
+width=300
+height=250
+external_url=http%3A//www.usnews.com/
+descriptionUrl=http%253A%252F%252Fwww.usnews.com%252F
+aud_ua=chrome
+*√0
+HTTP/1.1 200 OK
+Content-type: text/xml
+ Access-Control-Allow-Origin: *
+zSet-Cookie: UID=TgQ8P8m-S6COMduz9KA_Qg; Domain=.ad.auditude.com; expires=Sat, 06-Jan-2024 16:56:56 GMT; Path=/; HttpOnly
+Transfer-Encoding: chunked
+%Date: Wed, 08 Jan 2014 16:56:56 GMT
+Server: lighttpd/1.4.28
+ï.
+1706
+<?xml version="1.0"?>
+<response version="1.4">
+  <smil>
+    <head>
+      <state>
+        <data>
+          <uid>TgQ8P8m-S6COMduz9KA_Qg</uid>
+          <cid>721884034</cid>
+          <s>b6013403</s>
+          <u>97df6f8f08d8730261d4b44204353b4c</u>
+          <z>52500</z>
+          <l>1389182228</l>
+          <t>1389200216</t>
+        </data>
+      </state>
+      <submission id="podprogress" action="http://ad.auditude.com/adserver/e?type=podprogress" method="get"/>
+      <submission id="playererror" action="http://ad.auditude.com/adserver/e?type=playererror" method="get"/>
+      <submission id="playerdebug" action="http://ad.auditude.com/adserver/e?type=playerdebug" method="get"/>
+    </head>
+    <body>
+      <seq>
+        <meta name="ctype" content="linear"/>
+        <meta name="dur" content="45"/>
+        <meta name="count" content="1"/>
+        <meta name="ptype" content="p"/>
+        <setvalue ref="br" value="1"/>
+        <setvalue ref="pod" value="id:1,ctype:l,ptype:p,dur:45,lot:1,cpos:1"/>
+        <send submission="podprogress"/>
+        <par>
+          <setvalue ref="sq" value="1"/>
+          <setvalue ref="ax" value="0,0,107382,0"/>
+          <meta name="priority" content="2"/>
+          <ref src="urn:ad:287239#1"/>
+        </par>
+        <par>
+          <setvalue ref="sq" value="2"/>
+          <setvalue ref="ax" value="0,0,107382,0"/>
+          <meta name="priority" content="1"/>
+          <ref src="urn:ad:278364#1"/>
+        </par>
+      </seq>
+      <seq>
+        <meta name="ctype" content="nonlinear"/>
+        <meta name="dur" content="10000"/>
+        <meta name="count" content="4"/>
+        <setvalue ref="br" value="2"/>
+        <setvalue ref="pod" value="id:2,ctype:n,dur:10000,lot:4,cpos:1"/>
+        <send submission="podprogress"/>
+      </seq>
+    </body>
+  </smil>
+  <ad id="287239">
+    <wrapper adSystem="VAST" adTagURI="http://lps.newsinc.com/api/v1/vasttranslator?external_url=[external_url]&amp;continuousplay=[cp]&amp;dpid=[dpid]&amp;sitesection=[sitesection]&amp;section=[sec]&amp;subsection=[sub]&amp;playertype=[plt]&amp;launchertype=[wgt]&amp;fp=[fp]&amp;height=[height]&amp;width=[width]&amp;playerbehavior=[pb]&amp;sound=[snd]&amp;descriptionUrl=[descriptionUrl]&amp;ua=[aud_ua]&amp;vid=[vid]&amp;ppos=[ppos]&amp;scor=[scor]&amp;ciu_szs=[ciu_szs]"/>
+    <inLine adTitle="***NDN RON TAG"/>
+    <submission id="impression" action="http://ad.auditude.com/adserver/e?type=adimp&amp;a=287239&amp;w=17" method="get"/>
+    <smil>
+      <excl>
+        <par id="1" order="1">
+          <ref asset="287239.105"/>
+          <ref asset="287239.103"/>
+        </par>
+      </excl>
+    </smil>
+    <asset id="105" contentType="linear" parameters="daisy_chaining=always&amp;campaign_id=20284">
+      <mediaFile src="http://"/>
+      <submission id="creativeView" action="http://ad.auditude.com/adserver/i/a1=105;a=287239;w=17/c0x0" method="get"/>
+      <send submission="creativeProgress" begin="0%;25%;50%;75%;100%"/>
+      <submission id="creativeProgress" action="http://ad.auditude.com/adserver/e?type=AD_PROGRESS&amp;a=287239&amp;a1=105&amp;ref=urn:asset:287239:105" method="get"/>
+      <click id="1" href="http://" title="http://">
+        <submission id="click" action="http://ad.auditude.com/adserver/l/v=0%3Ba=287239%3Ba1=105%3Ba2=1" method="get"/>
+      </click>
+    </asset>
+    <asset id="103" contentType="companion" parameters="campaign_id=20284">
+      <mediaFile src="http://ad.auditude.com/adserver/c/z=52500;l=1389182228;u=97df6f8f08d8730261d4b44204353b4c;uid=TgQ8P8m-S6COMduz9KA_Qg;cid=721884034;s=b6013403;t=1389200216;w=17;a=287239;a1=103/c0x0">
+        <src>http://</src>
+      </mediaFile>
+      <click id="1" href="http://ad.auditude.com/adserver/l/a=287239%3Ba1=103%3Ba2=1%3Bz=52500%3Bl=1389182228%3Bu=97df6f8f08d8730261d4b44204353b4c%3Bcid=721884034%3Bs=b6013403%3Buid=TgQ8P8m-S6COMduz9KA_Qg%3Bt=1389200216" title="http://"/>
+    </asset>
+  </ad>
+  <ad id="278364">
+    <wrapper adSystem="VAST" adTagURI="http://search.spotxchange.com/vast/2.00/75776?VPAID=1&amp;content_page_url=[external_url]&amp;cb=[timestamp]"/>
+    <inLine adTitle="SpotXchange - Auto RON Excluding ATF"/>
+    <submission id="impression" action="http://ad.auditude.com/adserver/e?type=adimp&amp;a=278364&amp;w=619" method="get"/>
+    <smil>
+      <excl>
+        <par id="1" order="1">
+          <ref asset="278364.105"/>
+          <ref asset="278364.103"/>
+        </par>
+      </excl>
+    </smil>
+    <asset id="105" contentType="linear" parameters="daisy_chaining=always&amp;campaign_id=4045">
+      <mediaFile src="http://"/>
+      <submission id="creativeView" action="http://ad.auditude.com/adserver/i/a1=105;a=278364;w=619/c0x0" method="get"/>
+      <send submission="creativeProgress" begin="0%;25%;50%;75%;100%"/>
+      <submission id="creativeProgress" action="http://ad.auditude.com/adserver/e?type=AD_PROGRESS&amp;a=278364&amp;a1=105&amp;ref=urn:asset:278364:105" method="get"/>
+      <click id="1" href="http://" title="http://">
+        <submission id="click" action="http://ad.auditude.com/adserver/l/v=0%3Ba=278364%3Ba1=105%3Ba2=1" method="get"/>
+      </click>
+    </asset>
+    <asset id="103" contentType="companion" parameters="campaign_id=4045">
+      <mediaFile src="http://ad.auditude.com/adserver/c/z=52500;l=1389182228;u=97df6f8f08d8730261d4b44204353b4c;uid=TgQ8P8m-S6COMduz9KA_Qg;cid=721884034;s=b6013403;t=1389200216;w=619;a=278364;a1=103/c0x0">
+        <src>http://</src>
+      </mediaFile>
+      <click id="1" href="http://ad.auditude.com/adserver/l/a=278364%3Ba1=103%3Ba2=1%3Bz=52500%3Bl=1389182228%3Bu=97df6f8f08d8730261d4b44204353b4c%3Bcid=721884034%3Bs=b6013403%3Buid=TgQ8P8m-S6COMduz9KA_Qg%3Bt=1389200216" title="http://"/>
+    </asset>
+    <Extensions>
+      <Extension type="Behavior">
+        <Behavior type="scr">~2~BF6FFE1487419209CF3384D910731E6E</Behavior>
+      </Extension>
+    </Extensions>
+  </ad>
+</response>
+
+0
+

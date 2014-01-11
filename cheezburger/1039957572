@@ -1,0 +1,24 @@
+PHTTP184.73.135.14"Ë
+6GET /clicksense/user?p=9ce688505699aefa&r=1 HTTP/1.1
+Host: user.lucidmedia.com
+Connection: keep-alive
+Accept: image/webp,*/*;q=0.8
+vUser-Agent: Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/31.0.1650.63 Safari/537.36
+uReferer: http://tap2-cdn.rubiconproject.com/partner/scripts/rubicon/emily.html?rtb_ext=1&pc=8428/13642&geo=na&co=us
+$Accept-Encoding: gzip,deflate,sdch
+!Accept-Language: en-US,en;q=0.8
+
+*Ž
+ HTTP/1.1 302 Moved Temporarily
+Server: Apache-Coyote/1.1
+#Cache-control: no-cache, no-store
+Pragma: no-cache
+%Date: Wed, 08 Jan 2014 16:55:51 GMT
+(Expires: Wed, 08 Jan 2014 16:55:52 GMT
+P3P: CP="NOI ADM DEV CUR"
+$X-Handled-By: usvalurh20/127.0.0.1
+jSet-Cookie: lm_userid=4Bmm1RrmbK9; Domain=.lucidmedia.com; Expires=Thu, 08-Jan-2015 16:55:52 GMT; Path=/
+fLocation: http://pixel.rubiconproject.com/tap.php?v=7206&nid=1197&put=4860166951005746569&expires=30
+Content-Length: 0
+Connection: close
+

@@ -1,0 +1,30 @@
+PHTTP
+23.15.7.98"£
+DGET /kissy/k/1.4.0/event/dom/shake-min.js?t=3618293126.js HTTP/1.1
+Host: g.tbcdn.cn
+Connection: keep-alive
+Accept: */*
+vUser-Agent: Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/31.0.1650.63 Safari/537.36
+YReferer: http://www.tmall.com/go/act/stp-1_1_0.php?__mui_xd_token=1389232729879se3Qzqxm
+$Accept-Encoding: gzip,deflate,sdch
+!Accept-Language: en-US,en;q=0.8
+
+*Ê
+HTTP/1.1 200 OK
+Server: Tengine
+(Content-Type: application/x-javascript
+Content-Length: 641
+.Last-Modified: Mon, 25 Nov 2013 03:58:08 GMT
+0Cache-Control: max-age=315360000,s-maxage=3600
+ Access-Control-Allow-Origin: *
+Accept-Ranges: bytes
+%Date: Thu, 09 Jan 2014 01:58:37 GMT
+Connection: keep-alive
+ƒ
+/*
+Copyright 2013, KISSY v1.40dev
+MIT Licensed
+build time: Sep 18 00:20
+*/
+KISSY.add("event/dom/shake",function(d,k,f){function l(a){var b=a.accelerationIncludingGravity,a=b.x,d=b.y,b=b.z,g;c!==f&&(g=n(h(a-c),h(d-i),h(b-j)),g>o&&m(),g>p&&(e=1));c=a;i=d;j=b}var q=k.Special,o=5,p=20,e=0,c,i,j,n=Math.max,h=Math.abs,a=d.Env.host,m=d.buffer(function(){e&&(k.fireHandler(a,"shake",{accelerationIncludingGravity:{x:c,y:i,z:j}}),c=f,e=0)},250);q.shake={setup:function(){this==a&&a.addEventListener("devicemotion",l,!1)},tearDown:function(){this==a&&(m.stop(),c=f,e=0,a.removeEventListener("devicemotion",
+l,!1))}}},{requires:["event/dom/base"]});

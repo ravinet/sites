@@ -1,0 +1,29 @@
+PHTTP93.184.216.169"ò
+GET /crossdomain.xml HTTP/1.1
+Host: ndn.cdn.auditude.com
+Connection: keep-alive
+vUser-Agent: Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/31.0.1650.63 Safari/537.36
+Accept: */*
+CReferer: http://embed.newsinc.com/thumbnail/iframe.html?wid=13109
+$Accept-Encoding: gzip,deflate,sdch
+!Accept-Language: en-US,en;q=0.8
+
+*Þ
+HTTP/1.1 200 OK
+Accept-Ranges: bytes
+Cache-Control: max-age=345600
+*Content-Type: text/x-cross-domain-policy
+%Date: Wed, 08 Jan 2014 16:56:55 GMT
+Etag: "1376296382"
+(Expires: Sun, 12 Jan 2014 16:56:55 GMT
+.Last-Modified: Wed, 19 May 2010 16:53:13 GMT
+Server: ECS (mdw/124C)
+X-Cache: HIT
+Content-Length: 265
+‹
+<?xml version="1.0"?>
+<!DOCTYPE cross-domain-policy SYSTEM "http://www.macromedia.com/xml/dtds/cross-domain-policy.dtd">
+<cross-domain-policy>
+  <site-control permitted-cross-domain-policies="master-only" />
+  <allow-access-from domain="*" />
+</cross-domain-policy>

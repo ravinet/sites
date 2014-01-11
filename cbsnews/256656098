@@ -1,0 +1,195 @@
+PHTTP216.239.120.193"¹
+mGET /pageservices/social/oauth/proxy?xdm_e=http%3A%2F%2Fwww.cbsnews.com&xdm_c=ursundefined&xdm_p=1 HTTP/1.1
+Host: urs.cbsnews.com
+Connection: keep-alive
+TAccept: text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8
+vUser-Agent: Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/31.0.1650.63 Safari/537.36
+"Referer: http://www.cbsnews.com/
+$Accept-Encoding: gzip,deflate,sdch
+!Accept-Language: en-US,en;q=0.8
+ÕCookie: fly_device=desktop; MAD_SESSION=c; s_cc=true; s_fid=4EC44800FBAD148D-29690E43DA4501F5; s_vnum=1391822154332%26vn%3D1; s_invisit=true; s_getNewRepeat=1389230154333-New; s_lv_cbsnews=1389230154334; s_lv_cbsnews_s=First%20Visit; s_sq=%5B%5BB%5D%5D; __gads=ID=82cd959029b9d2d6:T=1389230142:S=ALNI_MYy0fmKKVy-9tLj9DRqbIlM9csQXw; tempSessionId=Cg6hLVLN+D6AHkw3hPg; apexLat=1389230142486; apexSpc=1; apexSampleHistory=""; __utmb=37725042; __utmc=37725042; __utma=37725042.975194139.1389230154.1389230154.1389230154.1; __utmz=37725042.1389230155.1.1.utmccn=(direct)|utmcsr=(direct)|utmcmd=(none)
+
+*†)
+HTTP/1.1 200 OK
+Server: nginx
+(Content-Type: text/html; charset=UTF-8
+Transfer-Encoding: chunked
+Connection: keep-alive
+X-Powered-By: PHP/5.3.17
+cache-control: no-cache
+%date: Thu, 09 Jan 2014 01:15:43 GMT
+Ÿ'
+1390
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+
+
+
+    <script type="text/javascript" src="/pageservices/js/fef1df7.js"> </script>
+
+    
+    <script type="text/javascript" src="/pageservices/js/379558c.js"> </script>
+    
+
+    <script type="text/javascript">
+        var AudEng = {};
+
+        AudEng.utils = {
+            easyXDM : easyXDM.noConflict("AudEng.utils")
+        };
+
+        /**
+        * Request the use of the JSON object
+         */
+        AudEng.utils.easyXDM.DomHelper.requiresJSON("/pageservices/js/58e91e3.js");
+    </script>
+
+
+
+
+<script type="text/javascript">
+
+    /** IE fix for no console available */
+    if (typeof window.console == "undefined") {
+        window.console = { log: function (msg) { } };
+    }
+      var  maxWaitMs = 300000, //5 mins
+        intervalWaitMs = 500,    //500 ms
+        popupClosed  = false;
+
+
+    var openTab = function(url) {
+        var a = document.createElement('a');
+        a.setAttribute("href", url);
+        a.setAttribute("target", "_blank");
+
+        var dispatch = document.createEvent("HTMLEvents");
+        dispatch.initEvent("click", true, true);
+        a.dispatchEvent(dispatch);
+    };
+
+    var userAgentLower = window.navigator.userAgent.toLowerCase(),
+
+        IE = {
+            isIE7 : userAgentLower.indexOf("msie 7.") !== -1,
+            isIE8 : userAgentLower.indexOf("msie 8.") !== -1,
+            isIE9 : userAgentLower.indexOf("msie 9.") !== -1,
+            isIE10OrGreater : userAgentLower.match(/msie\s+[1-9][0-9]\./) !== null
+        };
+
+    var remoteapp; // reference to the popups window
+//    console.log("Setting up proxy now...");
+    var proxy = new AudEng.utils.easyXDM.Rpc(/** The configuration */{
+        //local: "../name.html",
+                swf: "/pageservices/images/e35fc49.swf"
+        }, {
+        local: {
+            makeRequest : function (url, callback) {
+                if (IE.isIE7) {
+                    var request = new XMLHttpRequest(), DONE = 4, SUCCESS = 200;
+
+                    request.onreadystatechange = function () {
+                        if (request.readyState === DONE && request.status === SUCCESS) {
+                            callback(request.responseText);
+                        }
+                    };
+
+                    request.open('GET', url);
+                    request.send();
+                }
+            },
+            closeWindow : function() {
+                if(remoteapp != null && !remoteapp.closed) {
+                    remoteapp.close();
+                }
+                popupClosed = true;
+            }
+        },
+        remote: {
+            postMessage: {} ,
+            setAccessCredentials: {} ,
+            generalError: {},
+            popupBlocked : {}
+        }
+    });
+
+    function pollResponse(tryCount, appId) {
+        //tryCount = tryCount || 0;
+        var text = utils.cookie.read(mobileMessageCookieName, false, true);
+        if(!utils.common.isEmpty(text)) {
+            utils.cookie.remove(mobileMessageCookieName);
+            process(text, appId);
+        }  else if(intervalWaitMs * tryCount >= maxWaitMs) {
+            generalError(JSON.stringify(getGeneralErrorResponse()), appId);
+        } else {
+            setTimeout(pollResponse, intervalWaitMs, tryCount+1, appId);
+        }
+    }
+
+    function process(text, appId) {
+        try {
+            var jsonMessage = JSON.parse(text);
+        } catch(ignore) {}
+        if(!utils.common.isEmpty(jsonMessage)) {
+            if(!utils.common.isEmpty(jsonMessage.error)) {
+                return generalError(JSON.stringify(jsonMessage.error), appId);
+            } else {
+                var response, extras, msgAppId;
+                try {
+                   response = jsonMessage.response;
+                    extras = jsonMessage.extras;
+                    msgAppId = jsonMessage.appId;
+                    return setAccessCredentials(response, extras, msgAppId);
+                } catch(ignore) {
+                }
+            }
+        }
+        return generalError(JSON.stringify(getGeneralErrorResponse()), appId);
+    }
+
+
+
+    /**
+     * The popup must use this window to register itself
+     * @param {DOMWindow} app The window object of the popup
+     */
+    function setApp(app){
+        remoteapp = app;
+    }
+
+    /**
+     * The popup must use this method to send data. This clones the object in order to
+     * work around a but in IE
+     * @param {Object} data The data to send
+     */
+    function sendData(data){
+        var copy = {};
+        // copy the object in order to avoid the JSON serialization bug
+        AudEng.utils.easyXDM.apply(copy, data);
+        proxy.postMessage(copy);
+    }
+
+    function setAccessCredentials(response, extras, appId) {
+        proxy.setAccessCredentials(response, extras, appId);
+    }
+
+    function generalError(response, appId) {
+        proxy.generalError(response, appId);
+    }
+
+    function popupBlockedNotification(appId) {
+        proxy.popupBlocked(appId);
+    }
+
+
+
+
+
+
+</script>
+</head>
+</html>
+0
+

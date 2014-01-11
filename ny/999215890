@@ -1,0 +1,495 @@
+PHTTP170.123.237.62"€
+GET / HTTP/1.1
+Host: www.ny.gov
+Connection: keep-alive
+TAccept: text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8
+vUser-Agent: Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/31.0.1650.63 Safari/537.36
+$Accept-Encoding: gzip,deflate,sdch
+!Accept-Language: en-US,en;q=0.8
+
+*—ÿ
+HTTP/1.1 200 OK
+%Date: Thu, 09 Jan 2014 01:28:39 GMT
+ Server: Apache/2.2.3 (Red Hat)
+.Last-Modified: Fri, 02 Aug 2013 20:52:47 GMT
+"ETag: "8a096-6ae4-4e2fd241805c0"
+Accept-Ranges: bytes
+Content-Length: 27364
+Cache-Control: max-age=60
+(Expires: Thu, 09 Jan 2014 01:29:39 GMT
+Connection: close
+(Content-Type: text/html; charset=UTF-8
+Ê’
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+<html>
+<head>
+<title>WWW.NY.GOV</title>
+<meta name="Keywords" content="New York State, Government, New York State Services">
+<meta name="Copyright" content="Copyright 2007 - New York State Department of Information Services - All rights reserved.">
+<meta name="Description" content="Locate New York State Government information and services available on the Web">
+<meta name="Author" content="New York State Department of Information Services">
+<script type="text/javascript" language="JavaScript" src="/nysbanner.js"></script>
+
+<style TYPE="text/css">
+blockquote { 
+	margin: 5;
+	padding: 3;
+	border: 5;
+	}
+	div#headwrap TABLE {font-size: 12px; font-family:arial; font-weight:bold; color: #000066; 
+	line-height: 16px;
+	margin-top: 0;
+	padding-top: 0;
+	}
+	
+
+	
+</style>
+
+
+
+<link rel="STYLESHEET" type="text/css" href="/nysbanner.css" media="screen" />
+<link rel="STYLESHEET" type="text/css" href="/wireframe.css" media="screen" />
+
+<link rel="STYLESHEET" type="text/css" href="/nysbanner_howdoi_linkchange.css" media="screen" />	
+<link rel="STYLESHEET" type="text/css" href="/nystate_css.css" media="screen" />
+
+<script type="text/javascript" language="JavaScript" src="/imagerollover_two.js"></script>
+<script type="text/javascript" language="JavaScript" src="/buttons.js"></script>
+
+<script type="text/javascript">
+var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
+document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
+</script>
+<script type="text/javascript">
+try {
+var pageTracker = _gat._getTracker("UA-1481478-55");
+pageTracker._trackPageview();
+} catch(err) {}</script>
+
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+</head>
+
+
+<body bgcolor="#003463" leftmargin="0" topmargin="0" marginwidth="0" marginheight="0" onLoad="preloadImages();">
+	<a style="position:absolute;top:-1000px" href="#leftnavBM" title="skip banner and go to navigation">skip banner and go to navigation</a>
+	<a style="position:absolute;top:-1000px" href="#contentBM" title="skip banner and go to content">skip banner and go to content</a>
+    <!--THIS DIV TAG ALIGNS WHOLE BODY-->
+    <div align="center">
+    <br>
+<!-- NEW BANNER-->
+<div style="height: 28px; background-color: #003366;border:#999 1px solid;width:754px ">
+   <a href="http://www.ny.gov"><img style="float: left; border:none;" src="/nysbannerpics/banner_img1.png" alt="NY.gov Portal" /></a>
+   <a href="http://www.nysegov.com/citGuide.cfm?superCat=102&amp;cat=449&amp;content=main"><img style="float: left;border:none;" src="/nysbannerpics/banner_img2.png" alt="State Agency Listing" /></a>
+   <!-- search graphic-->
+   <a href="#" onClick="document.getElementById('sw_searchbox').style.visibility= 'visible'; document.getElementById('searchgraphic').style.visibility= 'hidden';document.getElementById('searchbox').focus();"><img id="searchgraphic" style="float: right; border:none;visibility: hidden;" src="/nysbannerpics/banner_img3.png" alt="Search all of NY.gov" /></a>
+    <!--state wide search box-->
+      <form id="sw_searchbox" style="float: right; position: relative; top: 2px; left: 155px; visibility: background: transparent;"action="http://www.search.cio.ny.gov/search" method="get">
+          <input value="date:D:L:d1" name="sort" type="hidden" />
+          <input value="xml_no_dtd" name="output" type="hidden" />
+          <input value="UTF-8" name="ie" type="hidden" />
+          <input value="UTF-8" name="oe" type="hidden" />
+          <input value="default_frontend" name="client" type="hidden" />
+          <input value="default_frontend" name="proxystylesheet" type="hidden"/>
+          <input value="default_collection" name="site" type="hidden" />
+             
+                    <label for="searchbox"><input style="cursor: pointer;" type="text" size="15" name="q" maxlength="256" id="searchbox" title="Search" /></label>
+                   <label for="searchbutton"><input type="submit" style="width: 110px;" id="searchbutton" value="Search NY.GOV" /></label>
+             
+      </form>
+   <!--end wide search box-->
+       <script type="text/javascript">
+              // If JavaScript is on, manipulate search control objects.  
+              // Otherwise this will be ignored and search controls will be shown by default
+              document.getElementById('sw_searchbox').style.visibility = 'hidden';
+              document.getElementById('searchgraphic').style.visibility= 'visible';         
+       </script>   
+</div>
+<!-- END NEW BANNER-->   
+<br style="clear:both">
+
+
+<!--THIS TABLE IS THE TABLE FOR THE ENTIRE BODY OF CONTENT / TO VIEW THE BODY AREA THAT THIS TABLE SURROUNDS,CHANGE THE BORDER TO 1-->
+
+<table border=0 cellpadding=0 cellspacing=0 summary="New York State"><tr><td>
+
+
+<!--THIS TABLE ENCUMPASSES THE THE FIRST CELL OF A TWO CELL TABLE WHICH IS THE WHOLE BODY/ TO VIEW THE BODY AREA THAT THIS TABLE SURROUNDS,CHANGE THE BORDER TO 1-->
+
+
+
+<table border=0 cellpadding=0 cellspacing=0 background="/images_2/bk1.gif" summary="New York State"><tr><td valign="top">
+
+
+
+<!--THIS TABLE IS THE ENTIRE LEFT SIDE OF A TWO ROW TABLE THIS TABLE INCLUDEING ALL BUTTONS, TOPICS OF INTEREST AND SEARCH -->
+
+
+
+<table width="188" border="0" cellpadding="0" cellspacing="0"><tr><td valign="top" summary="New York State"><img alt="Navigate NYS" src="/images_2/pg2slice_01.gif" width="188" height="70" border="0"></td></tr>
+			 <a name="leftnavBM"></a>
+             <tr>
+               
+                <td>
+
+    					<a a href="http://www.nysegov.com/citGuide.cfm?superCat=28"
+           onmouseup="quickChange(menuItem1,'/images/pg2slice_03-over.gif')"
+           onmousedown="quickChange(menuItem1,'/images/pg2slice_03-over.gif')"
+           onmouseover="quickChange(menuItem1,'/images/pg2slice_03-over.gif')"
+           onmouseout="quickChange(menuItem1,'/images/pg2slice_03.gif')"><img
+              id="menuItem1"
+              src="/images/pg2slice_03.gif"
+              height="19"
+              width="188"
+              alt="Business"
+              border="0" /></a></td></tr><tr><td><a href="http://www.nysegov.com/citGuide.cfm?superCat=64"
+           onmouseup="quickChange(menuItem2,'/images/pg2slice_04-over.gif')"
+           onmousedown="quickChange(menuItem2,'/images/pg2slice_04-over.gif')"
+           onmouseover="quickChange(menuItem2,'/images/pg2slice_04-over.gif')"
+           onmouseout="quickChange(menuItem2,'/images/pg2slice_04.gif')"><img
+              id="menuItem2"
+              src="/images/pg2slice_04.gif"
+              height="18"
+              width="188"
+              alt="Education"
+              border="0" /></a></td></tr><tr><td><a href="http://www.nysegov.com/citGuide.cfm?superCat=82"
+           onmouseup="quickChange(menuItem3,'/images/pg2slice_05-over.gif')"
+           onmousedown="quickChange(menuItem3,'/images/pg2slice_05-over.gif')"
+           onmouseover="quickChange(menuItem3,'/images/pg2slice_05-over.gif')"
+           onmouseout="quickChange(menuItem3,'/images/pg2slice_05.gif')"><img
+              id="menuItem3"
+              src="/images/pg2slice_05.gif"
+              height="19"
+              width="188"
+              alt="Family"
+              border="0" /></a></td></tr><tr><td><a href="http://www.nysegov.com/citGuide.cfm?superCat=106"
+           onmouseup="quickChange(menuItem4,'/images/pg2slice_06-over.gif')"
+           onmousedown="quickChange(menuItem4,'/images/pg2slice_06-over.gif')"
+           onmouseover="quickChange(menuItem4,'/images/pg2slice_06-over.gif')"
+           onmouseout="quickChange(menuItem4,'/images/pg2slice_06.gif')"><img
+              id="menuItem4"
+              src="/images/pg2slice_06.gif"
+              height="16"
+              width="188"
+              alt="Health"
+              border="0" /></a></td></tr><tr><td><a href="http://www.nysegov.com/citGuide.cfm?superCat=129"
+           onmouseup="quickChange(menuItem5,'/images/pg2slice_09-over.gif')"
+           onmousedown="quickChange(menuItem5,'/images/pg2slice_09-over.gif')"
+           onmouseover="quickChange(menuItem5,'/images/pg2slice_09-over.gif')"
+           onmouseout="quickChange(menuItem5,'/images/pg2slice_09.gif')"><img
+              id="menuItem5"
+              src="/images/pg2slice_09.gif"
+              height="18"
+              width="188"
+              alt="Law and Order"
+              border="0" /></a></td></tr><tr><td><a href="http://www.nysegov.com/citGuide.cfm?superCat=245"
+           onmouseup="quickChange(menuItem6,'/images/pg2slice_10-over.gif')"
+           onmousedown="quickChange(menuItem6,'/images/pg2slice_10-over.gif')"
+           onmouseover="quickChange(menuItem6,'/images/pg2slice_10-over.gif')"
+           onmouseout="quickChange(menuItem6,'/images/pg2slice_10.gif')"><img
+              id="menuItem6"
+              src="/images/pg2slice_10.gif"
+              height="19"
+              width="188"
+              alt="Consumer Info"
+              border="0" /></a></td></tr><tr><td><a href="http://www.nysegov.com/citGuide.cfm?superCat=396"
+           onmouseup="quickChange(menuItem22,'/images/pg2slice_11-over.gif')"
+           onmousedown="quickChange(menuItem22,'/images/pg2slice_11-over.gif')"
+           onmouseover="quickChange(menuItem22,'/images/pg2slice_11-over.gif')"
+           onmouseout="quickChange(menuItem22,'/images/pg2slice_11.gif')"><img
+              id="menuItem22"
+              src="/images/pg2slice_11.gif"
+              height="18"
+              width="188"
+              alt="Environment"
+              border="0" /></a></td></tr><tr><td><a href="http://www.nysegov.com/citGuide.cfm?superCat=102"
+           onmouseup="quickChange(menuItem7,'/images/pg2slice_12-over.gif')"
+           onmousedown="quickChange(menuItem7,'/images/pg2slice_12-over.gif')"
+           onmouseover="quickChange(menuItem7,'/images/pg2slice_12-over.gif')"
+           onmouseout="quickChange(menuItem7,'/images/pg2slice_12.gif')"><img
+              id="menuItem7"
+              src="/images/pg2slice_12.gif"
+              height="18"
+              width="188"
+              alt="Government"
+              border="0" /></a></td></tr><tr><td><a href="http://www.nysegov.com/citGuide.cfm?superCat=119"
+           onmouseup="quickChange(menuItem8,'/images/pg2slice_13-over.gif')"
+           onmousedown="quickChange(menuItem8,'/images/pg2slice_13-over.gif')"
+           onmouseover="quickChange(menuItem8,'/images/pg2slice_13-over.gif')"
+           onmouseout="quickChange(menuItem8,'/images/pg2slice_13.gif')"><img
+              id="menuItem8"
+              src="/images/pg2slice_13.gif"
+              height="18"
+              width="188"
+              alt="Housing"
+              border="0" /></a></td></tr><tr><td><a href="http://www.nysegov.com/citGuide.cfm?superCat=219"
+           onmouseup="quickChange(menuItem9,'/images/pg2slice_14-over.gif')"
+           onmousedown="quickChange(menuItem9,'/images/pg2slice_14-over.gif')"
+           onmouseover="quickChange(menuItem9,'/images/pg2slice_14-over.gif')"
+           onmouseout="quickChange(menuItem9,'/images/pg2slice_14.gif')"><img
+              id="menuItem9"
+              src="/images/pg2slice_14.gif"
+              height="18"
+              width="188"
+              alt="Transportation"
+              border="0" /></a></td></tr><tr><td><a href="http://www.nysegov.com/citGuide.cfm?superCat=36"
+           onmouseup="quickChange(menuItem10,'/images/pg2slice_15-over.gif')"
+           onmousedown="quickChange(menuItem10,'/images/pg2slice_15-over.gif')"
+           onmouseover="quickChange(menuItem10,'/images/pg2slice_15-over.gif')"
+           onmouseout="quickChange(menuItem10,'/images/pg2slice_15.gif')"><img
+              id="menuItem10"
+              src="/images/pg2slice_15.gif"
+              height="18"
+              width="188"
+              alt="Career / Employment"
+              border="0" /></a></td></tr><tr><td><a href="http://www.nysegov.com/citGuide.cfm?superCat=142"
+           onmouseup="quickChange(menuItem11,'/images/pg2slice_16-over.gif')"
+           onmousedown="quickChange(menuItem11,'/images/pg2slice_16-over.gif')"
+           onmouseover="quickChange(menuItem11,'/images/pg2slice_16-over.gif')"
+           onmouseout="quickChange(menuItem11,'/images/pg2slice_16.gif')"><img
+              id="menuItem11"
+              src="/images/pg2slice_16.gif"
+              height="17"
+              width="188"
+              alt="Licenses & Credentials"
+              border="0" /></a></td></tr><tr><td><a href="http://www.nysegov.com/citGuide.cfm?superCat=178"
+           onmouseup="quickChange(menuItem12,'/images/pg2slice_17-over.gif')"
+           onmousedown="quickChange(menuItem12,'/images/pg2slice_17-over.gif')"
+           onmouseover="quickChange(menuItem12,'/images/pg2slice_17-over.gif')"
+           onmouseout="quickChange(menuItem12,'/images/pg2slice_17.gif')"><img
+              id="menuItem12"
+              src="/images/pg2slice_17.gif"
+              height="20"
+              width="188"
+              alt="Recreation / Tourism"
+              border="0" /></a></td></tr><tr><td><a href="http://www.nysegov.com/citGuide.cfm?superCat=212"
+           onmouseup="quickChange(menuItem13,'/images/pg2slice_18-over.gif')"
+           onmousedown="quickChange(menuItem13,'/images/pg2slice_18-over.gif')"
+           onmouseover="quickChange(menuItem13,'/images/pg2slice_18-over.gif')"
+           onmouseout="quickChange(menuItem13,'/images/pg2slice_18.gif')"><img
+              id="menuItem13"
+              src="/images/pg2slice_18.gif"
+              height="19"
+              width="188"
+              alt="Tax Information"
+              border="0" /></a></td></tr><tr><td><a href="/howdoi/index.html"
+           onmouseup="quickChange(menuItem14,'/images/pg2slice_18b-over.gif')"
+           onmousedown="quickChange(menuItem14,'/images/pg2slice_18b-over.gif')"
+           onmouseover="quickChange(menuItem14,'/images/pg2slice_18b-over.gif')"
+           onmouseout="quickChange(menuItem14,'/images/pg2slice_18a.gif')"><img
+              id="menuItem14"
+              src="/images/pg2slice_18a.gif"
+              height="19"
+              width="188"
+              alt="How Do I?"
+              border="0" /></a></td></tr>
+			  <tr><td><a href="http://www.nysegov.com/webcast.cfm"
+           onmouseup="quickChange(menuItem15,'/images/webCastLink_over.gif')"
+           onmousedown="quickChange(menuItem15,'/images/webCastLink_over.gif')"
+           onmouseover="quickChange(menuItem15,'/images/webCastLink_over.gif')"
+           onmouseout="quickChange(menuItem15,'/images/webCastLink.gif')"><img
+              id="menuItem15"
+              src="/images/webCastLink.gif"
+              height="19"
+              width="188"
+              alt="Open Meeting Webcasts"
+              border="0" /></a></td></tr><tr>
+      <td><img src="/images/btmifrm.gif" alt="layout image" border="0"></td>
+         </tr>
+ <tr><td><table BORDER=0 CELLPADDING=0 CELLSPACING=0><tr><td VALIGN="TOP" summary="New York State"><img src="/images_2/pg2slice_23b.gif" alt="image" height="50" border="0"></td><td VALIGN="TOP">
+
+<table border=0 cellpadding=0 cellspacing=0 summary="New York State">
+<tr>
+    <td>
+         <form action="http://www.search.cio.ny.gov/search" method="GET" name="gs">
+        
+            <input value="date:D:L:d1" name="sort" type="hidden">
+            <input value="xml_no_dtd" name="output" type="hidden">
+            <input value="UTF-8" name="ie" type="hidden">
+            <input value="UTF-8" name="oe" type="hidden">
+            <input value="default_frontend" name="client" type="hidden">
+            <input value="default_frontend" name="proxystylesheet" type="hidden">
+            <input value="default_collection" name="site" type="hidden">	<div class="searchArea">	
+                <img src="/images/search_2005.gif" alt="Image" width="128" height="11" border="0"><br />
+                &nbsp;<input type="Text" size="20" name="q" maxlength="256" title="Search">
+                <input type="submit" value="GO"><br />
+                <a class="menuLink" href="http://www.search.cio.ny.gov/search?access=p&sort=date%3AD%3AL%3Ad1&output=xml_no_dtd&site=default_collection&client=nystate_frontend&proxystylesheet=nystate_frontend&proxycustom=<ADVANCED/>" title="Advanced Search"><img src="/images/advancesearch_2005.gif" width="101" height="11" alt="Image" border="0"></a><a  class="menuLink" title="Help" href="http://www.nysegov.com/searchtips.cfm"><img src="/images/advancesearchhelp_2005.gif" width="27" height="11" alt="advanced search" border="0"></a>        
+            </div>		                 
+        </form>
+    
+    </td>
+</tr>
+<tr>
+<td>
+                        
+                                <div class="rightbox">
+                                    <p align="center"><a href="http://www.nyfirst.ny.gov/" target="blank"><img alt="NY First" src="/images/NYFirst.jpg" border="0" /></a>¬†</p>
+
+
+<p align="center"><a href="http://my.ny.gov" target="blank"><img alt="MY NY" src="/images/image001.png" border="0" /></a> </p>
+
+<p align="center"><a title="511NY is New York State's official traffic and travel info source." href="http://511ny.org/" target="blank"><img title="511NY is New York State's official traffic and travel info source." alt="511NY is New York State's official traffic and travel info source." src="/images/511ny.jpg" border="0" /></a>¬†</p>
+
+
+<p align="center"><a title="Broadband Program Office" href="http://nysbroadband.ny.gov/"><img title="Broadband Program Office" alt="Broadband Program Office" src="/images/broadbandlogocear.PNG" border="0" /></a>¬†</p>
+                                     </div>
+                             
+ 
+</td></tr>
+</table>
+</td></tr></table>
+				
+				</td></tr>			
+								
+		</table>
+				</td><td  valign="top">
+				
+				
+<!-- begin second cell tables-->
+<table border=0 cellpadding=0 cellspacing=0><tr><td valign="top" summary="New York State">
+
+
+
+<!-- BEGIN TOP PICTURE ROTATING-->
+<script LANGUAGE="JavaScript">
+<!-- Begin
+showImage();
+//  End -->
+</script>
+</td></tr>
+<tr><td width=500>
+                             
+
+		</td>
+      </tr><a name="contentBM"></a>
+      <tr>
+      <td valign="top">
+       <!-- MAIN BODY TABLE - State Capitol picture and helpful links.-->
+      <table border=0 summary="New York State">
+                            <a name="Content">    </a>  
+
+
+
+
+<tr><td>
+
+<div id="pagecontainer">
+
+<div id="space">
+	<div class="home_pic">
+    	<div class="home_pic_inner">
+ 				<p><a href="http://nysandyhelp.ny.gov/"><img style="MARGIN-LEFT: 7px" border="0" alt="NY Sandy Help website" src="/images/nyrising.png" width="228" height="212" /></a><br /><span class="press_teaser"><a href="/assets/documents/CDBGActionPlan.pdf">NYS Action Plan for Community Development Block Grant Disaster Recovery (CDBG-DR) Funding for Hurricane Sandy, Hurricane Irene &amp; Tropical Storm Lee</a></span><p></p>
+<p><a href="http://www.iloveny.com/"><img border="0" alt="I Love NY Logo" align="right" src="/images/lovenylogo.jpg" /></a>¬†<br /><a href="http://www.iloveny.com/MapsRegions.aspx">Regions</a> &gt;&gt;<br /><a href="http://www.nysegov.com/map-NY.cfm">Counties</a>&gt;&gt;<br /><a href="http://www.nysegov.com/citguide.cfm?context=citguide&amp;content=munibyalpha">Cities &amp; Towns</a></p>
+<p></p> </p>
+        </div>
+     </div>
+     <div class="home_links_right">
+     
+		<div class="exec_jud_leg_header">Executive
+  			<div class="exec_jud_leg_container">
+        		<div class="homepage_links">
+                	 
+  						<a href="http://www.governor.ny.gov" title="Governor Cuomo">Governor Cuomo</a><br>
+                     
+  						<a href="http://www.osc.state.ny.us" title="Comptroller DiNapoli ">Comptroller DiNapoli </a><br>
+                     
+  						<a href="http://www.oag.state.ny.us" title="Attorney General Schneiderman">Attorney General Schneiderman</a><br>
+                     
+  						<a href="http://www.nysegov.com/citguide.cfm?displaymode=normal&fontsize=100&contrast=lod&superCat=102&cat=449&content=main" title="Listing of State Agencies ">Listing of State Agencies </a><br>
+                     
+	            </div>
+  			</div>
+    	</div>
+       
+		<div class="exec_jud_leg_header">Legislative
+  			<div class="exec_jud_leg_container">
+        		<div class="homepage_links">
+                	 
+  						<a href="http://www.nysenate.gov" title="New York State Senate">New York State Senate</a><br>
+                     
+  						<a href="http://assembly.state.ny.us" title="New York State Assembly">New York State Assembly</a><br>
+                     
+  						<a href="/congress_delegation.html" title="New York State Congressional Delegation">New York State Congressional Delegation</a><br>
+                     
+	            </div>
+  			</div>
+    	</div>
+       
+		<div class="exec_jud_leg_header">Judicial
+  			<div class="exec_jud_leg_container">
+        		<div class="homepage_links">
+                	 
+  						<a href="http://www.courts.state.ny.us/home.htm" title="New York State Unified Court System">New York State Unified Court System</a><br>
+                     
+  						<a href="http://www.nycourts.gov/ctapps" title="Court of Appeals">Court of Appeals</a><br>
+                     
+	            </div>
+  			</div>
+    	</div>
+        
+     
+     </div>
+     <br />
+     <br />
+     <br />
+     <br />
+     <br />
+      
+ 	<hr>   
+    	<div class="press_teaser_copy" align="center"><a href="http://taste.ny.gov/"><img border="0" alt="Taste NY" src="/images/taste-ny-logo.png" width="175" height="76" /></a><br /><a href="http://otda.ny.gov/workingfamilies/"><img title="Resources for Working Families" border="0" alt="Resources for Working Families" vspace="1" align="left" src="/images/gov_home_news/workingfamilies_thumb_ny.jpg" /></a><a class="press_teaser" href="http://otda.ny.gov/workingfamilies/">Resources for Working Families</a></div><p><span class="press_teaser_copy">New York State agencies and departments have many resources available to help working families make ends meet. Click here to see <a href="http://otda.ny.gov/workingfamilies/">Working Families Resources &gt;&gt;</a>¬†</span></p>
+     
+ 	<hr>   
+    	<div class="press_teaser_copy" align="center"><a class="press_teaser" href="http://www.recovery.ny.gov/">New York's Guide to the 2009 American Recovery and Reinvestment Act</a></div><br /><a href="http://www.recovery.ny.gov/"><img title="Economic Recovery" border="0" alt="Economic Recovery" vspace="1" align="left" src="/images/gov_home_news/economic-recovery-ny.jpg" /></a><span class="press_teaser_copy">The American Recovery and Reinvestment Act of 2009 is expected to provide $24.6 billion in additional funding for Medicaid, Education, Infrastructure and ‚Äúshovel-ready‚Äù projects throughout New York State. In the legislation Congress put a premium on transparency and accountability and as a result New York State has launched economicrecovery.ny.gov to allow New Yorkers to track how federal dollars are being spent. Go to<br /><a href="http://www.recovery.ny.gov/">recovery.ny.gov to learn more &gt;&gt;&#160;</a><br /></span>
+  
+  <br>
+  <br>
+  <br>
+  <div class="quicklinks_header">Quick Information</div>
+    <div id="quicklinks_container">
+    	<div id="quicklink_container_left">
+			<div class="homepage_links">
+            <a href="http://www.health.state.ny.us/vital_records/">Birth Certificates and Vital Records</a> &gt;&gt; <br /><a href="http://www.nys-permits.org/">Business Permits and Licensing</a> &gt;&gt;<br /><a href="http://www.nyhealth.gov/nysdoh/chplus/">Child Health Plus</a> &gt;&gt;<br /><a href="https://newyorkchildsupport.com/child_support_services.html">Child Support Services</a> &gt;&gt;<br /><a href="http://www.dos.ny.gov/corps/index.html">Corporations in New York</a> &gt;&gt; <br /><a href="http://www.dos.ny.gov/corps/index.html">Do Not Call Lists</a> &gt;&gt;<br /><a href="http://www.dmv.ny.gov/transact.htm">Drivers Licenses and Non-Driver ID's</a> &gt;&gt; <br /><a href="http://www.e-zpassny.com/">E-Z Passes</a> &gt;&gt; <br /><a href="http://www.dec.ny.gov/63.html">Fishing/Hunting Licenses</a> &gt;&gt; <br /><a href="http://www.health.ny.gov/health_care/">Health Insurance</a> &gt;&gt;<br /><a href="http://www.nylottery.org/index.php">Lottery Results</a> &gt;&gt; <br />
+            </div>
+        </div>
+     	<div id="quicklink_container_right">
+        	<div class="homepage_links">    
+            <a href="https://www.mybenefits.ny.gov/">myBenefits</a> &gt;&gt;<br /><a href="http://www.nydoctorprofile.com/welcome.jsp">Physician Profiles</a> &gt;&gt;<br /><a href="http://www.health.ny.gov/health_care/epic/">Prescription Drug Programs For Seniors</a> &gt;&gt;<br /><a href="http://nysaves.uii.upromise.com/">Saving for College</a> &gt;&gt;<br /><a href="http://www.cs.ny.gov/">State Employment</a> &gt;&gt;<br /><a href="http://public.leginfo.state.ny.us/menugetf.cgi?COMMONQUERY=LAWS">State Laws</a> &gt;&gt; <br /><a href="http://www.tax.ny.gov/">Taxes and E-Filing</a> &gt;&gt; <br /><a href="http://www.osc.state.ny.us/ouf/index.htm">Unclaimed Funds</a> &gt;&gt; <br /><a href="http://www.labor.state.ny.us/ui/ui_index.shtm">Unemployment Benefits</a> &gt;&gt; <br /><a href="http://www.dmv.ny.gov/transact.htm">Vehicle Registration Information</a> &gt;&gt; <br /><a title="Voter Registration" href="http://www.elections.ny.gov/">Voter Registration</a> &gt;&gt;<br />
+            </div>
+        </div>
+   </div>     
+</div>
+</td>
+        </tr></table>
+          <!--end button rollover-->
+        </td>
+        </tr></table>
+      </td>
+      </tr></table>
+
+    </td>
+  </tr><tr>
+    <td><table border=0 cellpadding=0 cellspacing=0 summary="New York State">
+        <tr>
+          <td><table border=0 cellpadding=0 cellspacing=0 summary="New York State">
+              <tr>
+                <td><img src="/images/pg2slice_25.gif" alt="layout bottom left" width="188" height="1" border="0"></td>
+              </tr><tr>
+                <td><img src="/images/pg2slice_27.gif" alt="layout bottom left" width="188" height="104" border="0"></td>
+              </tr></table></td>
+          <td><table border=0 cellpadding=0 cellspacing=0 summary="New York State">
+              <tr>
+                <td><img src="/images/pg2slice_26.gif" alt="layout image" width="558" height="71" border="0"></td>
+              </tr><tr>
+                <td valign="top"><map name="28">
+                  	<area alt="Accessiblity" coords="135,7,234,28" href="/contactus/accessibility.html">
+                    <area alt="Contact Us" coords="244,8,311,28" href="/contactus/index.html">
+                    <area alt="Privacy Policy" coords="322,8,408,28" href="/privacy/index.html">
+                    <area alt="Disclaimer" coords="418,7,485,29" href="/disclaimer/index.html">
+                  </map>
+                  <img src="/images/pg2slice_28.gif" alt="NYS Home Footer" width="558" height="34" border="0" usemap="#28"></td>
+              </tr></table></td>
+        </tr></table></td>
+  </tr></table>
+</div>
+</body>
+</html>

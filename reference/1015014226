@@ -1,0 +1,23 @@
+PHTTP64.94.107.11"…
+QGET /api/segments.json?a=p-51zXP5Cc9sxvQ&callback=qc_results&ttl=86400 HTTP/1.1
+Host: pixel.quantserve.com
+Connection: keep-alive
+Accept: */*
+vUser-Agent: Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/31.0.1650.63 Safari/537.36
+$Referer: http://www.reference.com/
+$Accept-Encoding: gzip,deflate,sdch
+!Accept-Language: en-US,en;q=0.8
+
+*è
+HTTP/1.1 200 OK
+Connection: close
+(Content-Type: application/x-javascript
+rSet-Cookie: mc=52cc50fd-7468d-64061-a4bea; expires=Thu, 09-Jul-2015 19:09:49 GMT; path=/; domain=.quantserve.com
+IP3P: CP="NOI DSP COR NID CURa ADMa DEVa PSAo PSDo OUR SAMa IND COM NAV"
+5Cache-Control: private, no-transform, max-age=86400
+(Expires: Wed, 08 Jan 2014 19:09:49 GMT
+Content-Length: 39
+%Date: Tue, 07 Jan 2014 19:09:49 GMT
+Server: QS
+)
+qc_results({"segments":[{"id":"D"}]});

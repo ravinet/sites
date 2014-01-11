@@ -1,0 +1,25 @@
+PHTTP209.104.58.249"ô
+
+‹GET /js.ng/site=tm&pagepos=555&adsize=1680x800&page=home&dmaid=235&bgcolor=ffffff&cceclassid=0&lang=en-us&brand=0&tid=5471592387 HTTP/1.1
+&Host: ads.as4x.tmcs.ticketmaster.com
+Connection: keep-alive
+Accept: */*
+vUser-Agent: Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/31.0.1650.63 Safari/537.36
+'Referer: http://www.ticketmaster.com/
+$Accept-Encoding: gzip,deflate,sdch
+!Accept-Language: en-US,en;q=0.8
+¤Cookie: GEORAN=1; SID=e8XBGp1ufU8_1X4VL94Nrk63EBDNtsdTXr3ObZAJ11kLWMU0uQG65_nP0NYASoKWnD7gXuybnqdiX9ic; BID=9jB1BhjEaMJ2Jqv8PkxHlhlo-fyK2vrxymgWfGCH-50LTVa8HGT-0RuiygJmgb-lmz4v7I0cSE8RPjtbCT2b; NPDMA=235; GEO_OMN=in; NDMA=235; __cs_rr=1; mmcore.tst=0.029; mmid=-766483578%7CAQAAAArTZpdsBQoAAA%3D%3D; mmcore.pd=142139395%7CAQAAAAoBQtNml2wFCoBWG5sBABZjk/rt2tBIAAwAAAAWY5P67drQSAAAAAD/////AP//////////AAZEaXJlY3QBBQoBAAAAAAABAAAAAAD///////////////8AAAAAAAFF; mmcore.srv=cg3.use; NGUserID=a4a7c27-17502-1686716677-1389229510; NSC_ebsu_iuuq=ffffffff0942623645525d5f4f58455e445a4a423660; s_pers=%20gpv1%3DTM_US%253A%2520Home%7C1389231323386%3B%20s_vs%3D1%7C1389231323388%3B%20gpv%3DTM_US%253A%2520Home%7C1389231323394%3B%20s_vnum%3D1391821523398%2526vn%253D1%7C1391821523398%3B%20s_invisit%3Dtrue%7C1389231323398%3B%20s_visit%3D1%7C1389231323400%3B; s_sess=%20cpcbrate%3D1%3B%20s_cc%3Dtrue%3B%20s_ria%3Dflash%252011%257C%3B%20s_sq%3D%3B
+
+*Ý
+HTTP/1.1 200 OK
+%Date: Thu, 09 Jan 2014 01:05:11 GMT
+Server: Apache
+.AdServer: svr11.dart.ads1.websys.tmcs:9691:1
+ÅP3P: policyref="http://ads.as4x.tmcs.net/w3c/p3p.xml", CP="NOI DSP LAW NID PSA ADM OUR IND NAV COM", policyref="http://ads.as4x.tmcs.net/w3c/p3p.xml", CP="NOI DSP LAW NID PSA ADM OUR IND NAV COM"
+Pragma: no-cache
+Cache-Control: no-cache
+Content-Length: 143
+Cneonction: close
+(Content-Type: application/x-javascript
+‘
+document.write('<style type=\"text/css\">\n#contentWrap { background-image: url(http://creatives.as4x.tmcs.net/defaultImage.gif); } </style>');

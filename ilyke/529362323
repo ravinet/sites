@@ -1,0 +1,23 @@
+PHTTP204.2.197.211"Á
+(GET /orbserv/hbpix?pixId=8696 HTTP/1.1
+Host: idpix.media6degrees.com
+Connection: keep-alive
+Accept: image/webp,*/*;q=0.8
+vUser-Agent: Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/31.0.1650.63 Safari/537.36
+ôReferer: http://gslbeacon.lijit.com/beacon?viewId=1026339104_710b942ac1e142a084fc3bf27aafd437&rand=5404&uri=http://www.lijit.com/users/ilyke&informer=10369079&type=fpads&loc=http%3A%2F%2Fwww.ilyke.net%2F&v=1.0&rr=http%3A%2F%2Fwww.ilyke.net%2F
+$Accept-Encoding: gzip,deflate,sdch
+!Accept-Language: en-US,en;q=0.8
+
+*‰
+ HTTP/1.1 302 Moved Temporarily
+Server: Apache-Coyote/1.1
++P3P: CP="COM NAV INT STA NID OUR IND NOI"
+Pragma: no-cache
+Cache-Control: no-cache
+cSet-Cookie: cckz=1mz4218; Domain=media6degrees.com; Expires=Thu, 09-Jan-2014 01:51:32 GMT; Path=/
+cSet-Cookie: cckz=1mz4218; Domain=media6degrees.com; Expires=Tue, 08-Jul-2014 01:41:32 GMT; Path=/
+MLocation: http://idpix.media6degrees.com/orbserv/hbpix?pixId=8696&cckz=true
+Content-Length: 0
+%Date: Thu, 09 Jan 2014 01:41:32 GMT
+Connection: close
+

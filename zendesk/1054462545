@@ -1,0 +1,26 @@
+PHTTP50.19.211.101"¨
+ËGET /event?a=112699136&d=112699136&y=false&s173198522=direct&s173561528=gc&s173810184=false&n=http%3A%2F%2Fwww.zendesk.com%2F&u=oeu1389229904666r0.2813230964820832&wxhr=true&t=1389229904669&f= HTTP/1.1
+$Host: 112699136.log.optimizely.com
+Connection: keep-alive
+vUser-Agent: Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/31.0.1650.63 Safari/537.36
+ Origin: http://www.zendesk.com
+Accept: */*
+"Referer: http://www.zendesk.com/
+$Accept-Encoding: gzip,deflate,sdch
+!Accept-Language: en-US,en;q=0.8
+
+*ü
+HTTP/1.1 200 OK
+(Access-Control-Allow-Credentials: true
+)Access-Control-Allow-Methods: POST, GET
+5Access-Control-Allow-Origin: http://www.zendesk.com
+ Content-Type: application/json
+%Date: Thu, 09 Jan 2014 01:11:32 GMT
+9P3P: CP="IDC DSP COR CURa ADMa OUR IND PHY ONL COM STA"
+Server: nginx/1.2.7
+~Set-Cookie: fixed_external_112699136_end_user_id=; Domain=.optimizely.com; expires=Thu, 01 Jan 1970 00:00:00 GMT; Max-Age=-1
+ŠSet-Cookie: end_user_id=oeu1389229904666r0.2813230964820832; Domain=.112699136.log.optimizely.com; expires=Sun, 07 Jan 2024 01:11:32 GMT
+Content-Length: 2
+Connection: keep-alive
+
+{}

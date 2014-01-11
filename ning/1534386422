@@ -1,0 +1,63 @@
+PHTTP208.82.16.81"œ
+QGET /wp-content/plugins/sitepress-multilingual-cms/res/js/sitepress.js HTTP/1.1
+Host: www.ning.com
+Connection: keep-alive
+Accept: */*
+vUser-Agent: Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/31.0.1650.63 Safari/537.36
+Referer: http://www.ning.com/
+$Accept-Encoding: gzip,deflate,sdch
+!Accept-Language: en-US,en;q=0.8
+"Cookie: _icl_current_language=en
+
+*Í
+
+HTTP/1.1 200 OK
+%Date: Thu, 09 Jan 2014 01:30:22 GMT
+ Server: Apache/2.2.22 (Ubuntu)
+.Last-Modified: Mon, 16 Dec 2013 19:54:24 GMT
+"ETag: "162bc1-3d3-4edac2db77c00"
+Accept-Ranges: bytes
+Content-Length: 979
+Vary: Accept-Encoding
+&Content-Type: application/javascript
+Via: 1.1 www.ning.com
+ Keep-Alive: timeout=30, max=98
+Connection: Keep-Alive
+Õ
+function addLoadEvent(func) {
+  var oldonload = window.onload;
+  if (typeof window.onload != 'function') {
+    window.onload = func;
+  } else {
+    window.onload = function() {
+      if (oldonload) {
+        oldonload();
+      }
+      func();
+    }
+  }
+}
+addLoadEvent(function(){
+    var lhid = document.createElement('input');
+    lhid.setAttribute('type','hidden');
+    lhid.setAttribute('name','lang');
+    lhid.setAttribute('value',icl_lang);
+    src = document.getElementById('searchform');
+    if(src){
+        src.appendChild(lhid);
+        src.action=icl_home;
+    }
+});
+
+function icl_retry_mtr(a){
+    var id = a.getAttribute('id');
+    spl = id.split('_');
+    var loc = location.href.replace(/#(.*)$/,'').replace(/(&|\?)(retry_mtr)=([0-9]+)/g,'').replace(/&nonce=([0-9a-z]+)(&|$)/g,'');
+    if(-1 == loc.indexOf('?')){
+        url_glue='?';
+    }else{
+        url_glue='&';
+    }
+    location.href=loc+url_glue+'retry_mtr='+spl[3]+'&nonce='+spl[4];
+    return false;
+}

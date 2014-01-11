@@ -1,0 +1,164 @@
+PHTTP129.15.96.11"€
+%GET /css/theme_archive.css HTTP/1.1
+Host: www.noaa.gov
+Connection: keep-alive
+Accept: text/css,*/*;q=0.1
+vUser-Agent: Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/31.0.1650.63 Safari/537.36
+Referer: http://www.noaa.gov/
+$Accept-Encoding: gzip,deflate,sdch
+!Accept-Language: en-US,en;q=0.8
+
+*ê
+HTTP/1.0 200 OK
+.Last-Modified: Wed, 13 Nov 2013 19:00:15 GMT
+Accept-Ranges: bytes
+Content-Length: 2706
+Content-Type: text/css
+%Date: Thu, 09 Jan 2014 01:16:25 GMT
+Server: Apache
+$ETag: "e70dcfa5-a92-4eb13934c4dc0"
+(Expires: Thu, 09 Jan 2014 02:16:25 GMT
+Cache-Control: max-age=3600
+
+Age: 109
+Via: 1.0 c7.w3.woc (squid)
+Connection: keep-alive
+î
+/* CSS Document */
+#arch_protect {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 1em;
+	width: 600px;
+	float: none;
+	background-image: url(/images/bg_protecting.png);
+	background-repeat: repeat;
+	}
+	
+	#arch_protectList {
+	margin-top: 0px;
+	margin-right: 20px;
+	}
+	
+	#arch_protectList a:link { color: #0057A5; }
+
+	#arch_protectList a:visited {
+	color: #0057A5;
+	font-weight: bold;
+	}
+
+	#arch_protectList li {
+	margin-bottom: 6px;
+	color: #0057A5;
+	list-style: none;
+	width: auto;
+	height:  20px;
+	padding-right: 5px;
+	margin-right: 40px;
+	padding-left: 5px;
+	}
+	#arch_protectList p {
+		display: inline;
+	}
+#arch_promote {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 1em;
+	width: 600px;
+	float: none;
+	background-image: url(/images/bg_promo.png);
+	background-repeat: repeat;
+	background-position: bottom;
+	}
+	#arch_promote img{
+	position: relative;
+	top: -12px;
+	}
+	#arch_promoteList {
+	margin-top: 0px;
+	margin-right: 20px;
+	}
+#arch_promoteList li {
+	margin-bottom: 6px;
+	color: #0057A5;
+	list-style: none;
+	width: auto;
+	height:  20px;
+	padding-right: 5px;
+	margin-right: 40px;
+	padding-left: 5px;
+}	
+	#arch_promoteList a:link { color: #0057A5; }
+	#arch_promoteList a:visited {
+	color: #0057A5;
+	font-weight: bold;
+	}
+	#arch_promoteList p {
+		display: inline;
+	}
+#arch_conserv {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 1em;
+	width: 600px;
+	float: none;
+	background-image: url(/images/bg_conserv.png);
+	background-repeat: repeat;
+	}
+	#arch_conservList {
+	margin-top: 0px;
+	margin-right: 20px;
+	}
+	#arch_conservList a:link { color: #0057A5; }
+	#arch_conservList a:visited {
+	color: #0057A5;
+	font-weight: bold;
+	}
+#arch_conservList li {
+	margin-bottom: 6px;
+	color: #0057A5;
+	list-style: none;
+	width: auto;
+	height:  20px;
+	padding-right: 5px;
+	margin-right: 40px;
+	padding-left: 5px;
+}
+	#arch_conservList p {
+		display: inline;
+	}
+#arch_conserv img {
+	position: relative;
+	top: -12px;
+}
+#arch_monitor {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 1em;
+	width: 600px;
+	float: none;
+	background-image: url(/images/bg_monitoring.png);
+	background-repeat: repeat;
+	}
+#arch_monitorList {
+	margin-top: 0px;
+	margin-right: 20px;
+	}
+#arch_monitorList  a:link { color: #0057A5; }
+#arch_monitorList  a:visited {
+	color: #0057A5;
+	font-weight: bold;
+	}
+#arch_monitorList  li {
+	margin-bottom: 6px;
+	color: #0057A5;
+	list-style: none;
+	width: auto;
+	height:  20px;
+	padding-right: 5px;
+	margin-right: 40px;
+	padding-left: 5px;
+}
+#arch_monitorList  p {
+		display: inline;
+	}
+#arch_monitor  img {
+	position: relative;
+	top: -12px;
+}

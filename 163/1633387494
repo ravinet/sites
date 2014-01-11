@@ -1,0 +1,29 @@
+PHTTP180.153.97.13"¡
+PGET /s?showid=Ohs6dq&type=1&of=1&uid=13892305427302564818740252036197 HTTP/1.1
+Host: show.g.mediav.com
+Connection: keep-alive
+Accept: */*
+vUser-Agent: Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/31.0.1650.63 Safari/537.36
+DReferer: http://img1.126.net/channel4/html/015793_300100_0101.html
+$Accept-Encoding: gzip,deflate,sdch
+!Accept-Language: en-US,en;q=0.8
+
+*Ë
+HTTP/1.1 200 OK
+Server: MWS/0.8.54
+%Date: Thu, 09 Jan 2014 01:22:11 GMT
+Content-Type: text/html
+Content-Length: 552
+Connection: keep-alive
+mSet-Cookie: v=coAgFLzA`MB=0cHmSZAZ; expires=Wednesday, 02-Nov-2099 00:00:00 GMT; path=/; domain=.mediav.com
+^Set-Cookie: hideme=1; expires=Thursday, 09-Jan-2014 01:22:11 GMT; path=/; domain=.mediav.com
+Connection: Close
+Pragma: no-cache
+\P3P: CP="CURa ADMa DEVa PSAo PSDo OUR BUS UNI PUR INT DEM STA PRE COM NAV OTC NOI DSP COR"
+*Cache-Control: no-cache, must-revalidate
+ª
+mvas_10735907=1023496;mv_acquire=1;mv_bid=10735907;
+mvcu_10735907='http://show.g.mediav.com/c?type=2&oimpid=su0IbE34aBI_&pub=111695_513416_1023496&cus=23939_127688_1158027_10735907_0&fee=b6UUUUZUUUJ5&pinfo=&ref=http%3A%2F%2Fimg1.126.net%2Fchannel4%2Fhtml%2F015793_300100_0101.html&url=http://www.dotdotbuy.com/account/sign/registernew?tag=tag013.1.2.3';
+mvctype_10735907=1;
+
+eval('mediav_fini'+mvas_10735907+'=1');mediav.makeImage("http://material.mediav.com/galileo/20131206/add7e209fb0e5e262618b351c93e205e.jpg", mvcu_10735907, 300, 100, "10735907");

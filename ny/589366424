@@ -1,0 +1,77 @@
+PHTTP170.123.237.62"½
+GET /buttons.js HTTP/1.1
+Host: www.ny.gov
+Connection: keep-alive
+Accept: */*
+vUser-Agent: Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/31.0.1650.63 Safari/537.36
+Referer: http://www.ny.gov/
+$Accept-Encoding: gzip,deflate,sdch
+!Accept-Language: en-US,en;q=0.8
+
+*ª
+HTTP/1.1 200 OK
+%Date: Thu, 09 Jan 2014 01:28:39 GMT
+ Server: Apache/2.2.3 (Red Hat)
+.Last-Modified: Tue, 19 Jan 2010 15:42:32 GMT
+!ETag: "896a8-740-47d86516c8a00"
+Accept-Ranges: bytes
+Content-Length: 1856
+Cache-Control: max-age=60
+(Expires: Thu, 09 Jan 2014 01:29:39 GMT
+Connection: close
+(Content-Type: application/x-javascript
+Â
+
+
+
+
+
+<!--
+
+function newImage(arg) {
+	if (document.images) {
+		rslt = new Image();
+		rslt.src = arg;
+		return rslt;
+	}
+}
+
+function changeImages() {
+	if (document.images && (preloadFlag == true)) {
+		for (var i=0; i<changeImages.arguments.length; i+=2) {
+			document[changeImages.arguments[i]].src = changeImages.arguments[i+1];
+		}
+	}
+}
+
+var preloadFlag = false;
+function preloadImages() {
+	if (document.images) {
+		slice2_03_over = newImage("/images/slice2_03-over.gif");
+		slice2_04_over = newImage("/images/slice2_04-over.gif");
+		slice2_05_over = newImage("/images/slice2_05-over.gif");
+		slice2_06_over = newImage("/images/slice2_06-over.gif");
+		slice2_14_over = newImage("/images/slice2_14-over.gif");
+		slice2_15_over = newImage("/images/slice2_15-over.gif");
+		slice2_16_over = newImage("/images/slice2_16-over.gif");
+		slice2_17_over = newImage("/images/slice2_17-over.gif");
+		slice2_18_over = newImage("/images/slice2_18-over.gif");
+		slice2_29_over = newImage("/images/slice2_29-over.gif");
+		slice2_30_over = newImage("/images/slice2_30-over.gif");
+		slice2_32_over = newImage("/images/slice2_32-over.gif");
+		slice2_36_over = newImage("/images/slice2_36-over.gif");
+		slice2_37_over = newImage("/images/slice2_37-over.gif");
+		slice2_43_over = newImage("/images/slice2_43-over.gif");
+		slice2_44_over = newImage("/images/slice2_44-over.gif");
+		slice2_45_over = newImage("/images/slice2_45-over.gif");
+		slice2_46_over = newImage("/images/slice2_46-over.gif");
+		slice2_47_over = newImage("/images/slice2_47-over.gif");
+		slice2_48_over = newImage("/images/slice2_48-over.gif");
+		slice2_49_over = newImage("/images/slice2_49-over.gif");
+		slice2_50_over = newImage("/images/morenybtn._on.gif");
+	slice2_51_over = newImage("/images/slice2_31_bon.gif");
+		preloadFlag = true;
+	}
+}
+
+// -->

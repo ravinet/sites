@@ -1,0 +1,25 @@
+PHTTP
+18.7.20.70"Ÿ	
+OGET /feeds/poll/4132577/json?callback=FOXAFF1CB4132577&cb=2014171411 HTTP/1.1
+Host: www.foxnews.com
+Connection: keep-alive
+pAccept: text/javascript, application/javascript, application/ecmascript, application/x-ecmascript, */*; q=0.01
+"X-Requested-With: XMLHttpRequest
+vUser-Agent: Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/31.0.1650.63 Safari/537.36
+1Content-Type: application/x-www-form-urlencoded
+"Referer: http://www.foxnews.com/
+$Accept-Encoding: gzip,deflate,sdch
+!Accept-Language: en-US,en;q=0.8
+æCookie: FXN_w_ckbt_2=1; FXN_w_locinfo=10108; mbox=check#true#1389121076|session#1389121015623-413027#1389122876; surround=undefined; s_pers=%20s_vnum%3D1391713015836%2526vn%253D1%7C1391713015836%3B%20s_invisit%3Dtrue%7C1389122815836%3B%20omtr_lv%3D1389121015837%7C1483729015837%3B%20omtr_lv_s%3DFirst%2520Visit%7C1389122815837%3B%20s_nr%3D1389121015838%7C1391713015838%3B; s_sess=%20s_cc%3Dtrue%3B%20SC_LINKS%3D%3B%20s_sq%3D%3B; aam_did=28089507057557353080503497862082067037; __vrf=1389121015999IVyfFabsHp4Dc9XO2ti2N1CrdntlbqRE; fndfp=aam%3Dc_hp; fngpt=aam%3Dc_hp; aam_did=28089507057557353080503497862082067037
+
+*´
+HTTP/1.1 200 OK
+Server: Apache
+Content-Length: 314
+.Content-Type: application/json;charset=UTF-8
+Cache-Control: max-age=300
+(Expires: Tue, 07 Jan 2014 19:01:44 GMT
+%Date: Tue, 07 Jan 2014 18:56:44 GMT
+Connection: keep-alive
+¼
+FOXAFF1CB4132577({"response":{"numFound":1,"start":0,"docs":[{"title":"Should lawmakers extend jobless benefits?","date":"2014-01-06T12:32:21Z","secondary_id":"4132577","taxonomy_path":["/affiliate/3379509/primary"],"url":["http://nation.foxnews.com/poll/2014/01/06/should-lawmakers-extend-jobless-benefits/"]}]}})

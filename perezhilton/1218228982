@@ -1,0 +1,23 @@
+PHTTP64.94.107.64"ƒ
+QGET /api/segments.json?a=p-3eluKTTuZoTCU&callback=qc_results&ttl=14400 HTTP/1.1
+Host: pixel.quantserve.com
+Connection: keep-alive
+Accept: */*
+vUser-Agent: Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/31.0.1650.63 Safari/537.36
+"Referer: http://perezhilton.com/
+$Accept-Encoding: gzip,deflate,sdch
+!Accept-Language: en-US,en;q=0.8
+
+*è
+HTTP/1.1 200 OK
+Connection: close
+(Content-Type: application/x-javascript
+rSet-Cookie: mc=52ce00f6-f3aac-cf32b-b580d; expires=Sat, 11-Jul-2015 01:52:54 GMT; path=/; domain=.quantserve.com
+IP3P: CP="NOI DSP COR NID CURa ADMa DEVa PSAo PSDo OUR SAMa IND COM NAV"
+5Cache-Control: private, no-transform, max-age=14400
+(Expires: Thu, 09 Jan 2014 05:52:54 GMT
+Content-Length: 39
+%Date: Thu, 09 Jan 2014 01:52:54 GMT
+Server: QS
+)
+qc_results({"segments":[{"id":"D"}]});

@@ -1,0 +1,233 @@
+PHTTP209.234.234.124"²
+0GET /Content/Scripts/modulesCommon.js HTTP/1.1
+Host: washpost.bloomberg.com
+Connection: keep-alive
+TAccept: text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8
+vUser-Agent: Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/31.0.1650.63 Safari/537.36
+)Referer: http://www.washingtonpost.com/
+$Accept-Encoding: gzip,deflate,sdch
+!Accept-Language: en-US,en;q=0.8
+
+*Ë0
+HTTP/1.1 200 OK
+%Date: Fri, 10 Jan 2014 15:05:31 GMT
+Content-Length: 5932
+(Content-Type: application/x-javascript
+.Last-Modified: Fri, 09 Jul 2010 17:06:32 GMT
+Accept-Ranges: bytes
+ETag: "b2e6f14891fcb1:292fe"
+Server: Microsoft-IIS/6.0
+X-Powered-By: ASP.NET
+®.
+ï»¿wsodModulesCommon_class = function() {
+	$(".companySearch").keyup($.setContext(this.companySearch, this));
+
+	$(".companySearch").focus(function() {
+		$(this).val("");
+	});
+
+	$(".companySearch").blur(function() {
+		if ($(this).val() == "") {
+			$(this).val($(this).attr("defaultText") || "");
+		}
+	});
+}
+
+wsodModulesCommon_class.prototype.ajaxCount = 0;
+
+wsodModulesCommon_class.prototype.companySearch = function(evt, el) {
+	var keyCode = "";
+	var elParent = $(el).parent(".search")[0];
+
+	if (evt) {
+		keyCode = evt.keyCode;
+	}
+
+	this.$selected = this.$selected || $("table", elParent);
+
+	switch (keyCode) {
+		case 13: // ENTER
+			var $a = this.$selected.find("strong:first");
+
+			if (!$a.html() || ($a.parent(".companySearchPopup").css("display") == "none")) { // if we hit enter faster than the results table shows up
+				$a = $(".companySearch", elParent);
+				$(el).val($a.val().toUpperCase());
+			} else {
+				$(el).val($a.html().toUpperCase());
+			}
+
+			$(el).parents(".module").removeClass("onTop");
+
+			$(".companySearchPopup", elParent).slideUp("fast");
+
+			$(".companySearchBtn", elParent).click();
+
+			break;
+		case 27: // ESC
+			$(el).parents(".module").removeClass("onTop")
+			;
+			$(".companySearchPopup", elParent).slideUp("fast");
+			break;
+		case 40: // DOWN
+			var $next = this.$selected.next("tr");
+
+			// Get the first one if we've reached the end
+			if (!$next.length) {
+				$next = $(".companySearchPopup").find("tr:first");
+			}
+
+			this.$selected.removeClass("highlight");
+			$next.addClass("highlight");
+
+			this.$selected = $next;
+
+			break;
+		case 38: // UP
+			var $next = this.$selected.prev("tr");
+
+			// Get the last one if we've reached the beginning
+			if (!$next.length) {
+				$next = $(".companySearchPopup").find("tr:last");
+			}
+
+			this.$selected.removeClass("highlight");
+			$next.addClass("highlight");
+
+			this.$selected = $next;
+
+			break;
+		default:
+			var searchValue = $(el).val();
+			var self = this;
+
+			if (searchValue.length > 0) {
+				try {
+					window.stop(); // not supported by ie
+				} catch (e) {
+					try {
+						document.execCommand("Stop"); // supported by ie
+					} catch (e) {
+						// hopeless
+					}
+				}
+
+				wsodcommon.showAjaxLoader($(".companySearchPopup"));
+
+				this.request = $.ajax({
+					url: wsod_getPath() + "AutoSuggest/SymbolLookupResults",
+					data: { SearchValue: searchValue },
+					success: function(data) {
+						var elParent = $(el).parent(".search")[0];
+
+						wsodcommon.hideAjaxLoader($(".companySearchPopup", elParent));
+
+						// in IE6/7 this results div draws behind the other modules (Economic Calendar), so let's bump our container module's
+						// z-index up, which will result in this div being on top
+						$(el).parents(".module").addClass("onTop");
+
+						$(".companySearchPopup", elParent).html(data).slideDown("slow");
+
+						wsodcommon.$selected = $(".companySearchPopup", elParent).find(".searchResultCompany:first");
+
+						$(".companySearchPopup", elParent).css("left", $(el).position().left + 5);
+						$(".companySearchPopup", elParent).css("top", $(el).position().top + $(el).height() + 2);
+
+						$(".wsod .companySearchPopup tr").mouseover(function() {
+							$(this).addClass("highlight");
+							$(this).css("cursor", "pointer");
+						});
+
+						$(".wsod .companySearchPopup tr").mouseout(function() {
+							$(this).removeClass("highlight");
+						});
+
+						$(".wsod .companySearchPopup tr").click(function() {
+							wsodcommon.setCompanySymbol(el, $(this).attr("symbol"));
+							$(".companySearchBtn", elParent).click();
+						});
+					},
+					error: function() {
+						wsodcommon.hideAjaxLoader($(".companySearchPopup", elParent));
+					},
+					dataType: "jsonp"
+				});
+
+			} else {
+				$(el).parents(".module").removeClass("onTop");
+			
+				$(".companySearchPopup", elParent).slideUp("fast");
+			}
+
+			break;
+	}
+}
+
+wsodModulesCommon_class.prototype.setCompanySymbol = function(el, symbol) {
+	var elParent = $(el).parent(".search");
+
+	$(el).val(symbol.toUpperCase());
+
+	$(el).parents(".module").removeClass("onTop");
+
+	$(".companySearchPopup", elParent).slideUp("fast");
+}
+
+wsodModulesCommon_class.prototype.showAjaxLoader = function(el) {
+    $(el).css("opacity", ".25");
+    $(el).css("filter", "alpha(opacity=25)");
+
+    var top = $(el).attr("offsetTop") + ($(el).height() / 2) - 40;
+    var left = $(el).attr("offsetLeft") + ($(el).width() / 2) - 20;
+
+    $("#ajax-loader").css("top", top + "px");
+    $("#ajax-loader").css("left", left + "px");
+    $("#ajax-loader").show();
+}
+
+wsodModulesCommon_class.prototype.hideAjaxLoader = function(el) {
+    $("#ajax-loader").hide();
+    $(el).css("filter", "alpha(opacity=100)");
+    $(el).css("opacity", "1.0");
+}
+
+wsodModulesCommon_class.prototype.isEmpty = function(s) {
+	return ((s == null) || (s.length == 0));
+}
+
+wsodModulesCommon_class.prototype.isWhitespace = function(s) {
+	var whitespace = " \t\n\r";
+	var i;
+
+	if (this.isEmpty(s)) {
+		return true;
+	}
+
+	for (i = 0; i < s.length; i++) {
+		var c = s.charAt(i);
+
+		if (whitespace.indexOf(c) == -1) {
+			return false;
+		}
+	}
+
+	return true;
+}
+
+$.setContext = function(/* fn, context, arg1, arg2, ... */) {
+    var args = $.makeArray(arguments),
+               fn = args.shift(),
+               context = args.shift();
+    return function() { fn.apply(context, $.makeArray(arguments).concat([this].concat(args))); };
+};
+
+wsodcommon = new wsodModulesCommon_class();
+
+$(document.body).click(function(event) {
+    var click = $(event.target);
+
+    if (!click.is('.companySearch') && !click.is('.companySearchPopup, .companySearchPopup td, .companySearchPopup a')) {
+    	$(".companySearchPopup").parents(".module").removeClass("onTop");
+    	
+        $(".companySearchPopup").slideUp("fast");
+    }
+});

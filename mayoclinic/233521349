@@ -1,0 +1,130 @@
+PHTTP129.176.217.220"Ê
+*GET /styles/js/gbs/globalNav.js HTTP/1.1
+Host: www.mayoclinic.org
+Connection: keep-alive
+Accept: */*
+vUser-Agent: Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/31.0.1650.63 Safari/537.36
+%Referer: http://www.mayoclinic.org/
+$Accept-Encoding: gzip,deflate,sdch
+!Accept-Language: en-US,en;q=0.8
+kCookie: ASP.NET_SessionId=utneflmiwti1lzdwzi1m1rsm; OAX=gB5MN1LN/dYAACQh; UnicaNIODID=u2js59xYxmI-YcZUJ4S
+
+*Ó
+HTTP/1.1 200 OK
+Cache-Control: max-age=604800
+(Content-Type: application/x-javascript
+.Last-Modified: Fri, 03 Jan 2014 19:27:24 GMT
+Accept-Ranges: bytes
+ETag: "6f1897d4b98cf1:0"
+%Date: Thu, 09 Jan 2014 01:39:33 GMT
+Content-Length: 3533
+Ï
+// cache ORIGINAL states from page load.
+var $topnav = $('#mayo-header,#headerMobile'),
+$menuLink = $topnav.find('a:contains("Menu")'),
+$searchLink = $topnav.find('a:contains("Search")').eq(0),
+$mobileSearch = $topnav.find('div.search-form'),
+$topNavNav = $topnav.find('nav.nav-both'),
+$topNavUl = $topnav.find('ul.nav'),
+$topNavQt = $topnav.find('ul.quick-task'),
+$topNavLi = $topNavUl.children('li'),
+$topNavTop = $topNavNav.find('a').eq(0),
+$topNavOuter = $topNavLi.not($topNavTop),
+$topNavCurrent = $topNavOuter.filter('.current'),
+$topNavNotCurrent = $topNavOuter.not($topNavCurrent),
+$topNavDiv = $topNavOuter.find('div'),
+$topNavInner = $topNavOuter.find('li'),
+$topNavInnerA = $topNavInner.find('a'),
+$mo = $('<div>', {
+    "class": "mobile-only hidden-by-default"
+}).appendTo($topNavNav),
+$nd = $('.nav-dynamic').clone().appendTo($mo),
+$ng0 = $topnav.find('.nav-global'),
+$ng1 = $('<ul>', {
+    "class": "nav-global"
+}).appendTo($mo),
+$signIn = $ng0.find('>li').eq(0).clone().appendTo($ng1),
+$translatedContent = $ng0.find('ul>li').clone().appendTo($ng1),
+$sm = $('.socialmedia').clone().appendTo($mo),
+$tna = $topnav.find('*');
+
+// 4.1.2 Menu link restores menu to initial state and toggles visibility
+$menuLink.unbind('click.pull');
+$menuLink.on('click', function (evt) {
+    "use strict";
+    evt.preventDefault();
+    evt.stopPropagation();
+    if (MayoApp.isMobile) {
+        $topNavNav.removeClass('show-all-topics');
+        $topNavCurrent.addClass('current');
+        $topNavNotCurrent.removeClass('current');
+        $mobileSearch.hide();
+        $topNavNav.toggle();
+        $topNavQt.hide();
+    } else {
+        $tna.removeAttr('style'); // shouldn't happen
+    }
+});
+
+// 4.1.3 Search link toggles search form visibility
+$searchLink.unbind('click.pull');
+$searchLink.on('click', function (evt) {
+    "use strict";
+    evt.preventDefault();
+    evt.stopPropagation();
+    if (MayoApp.isMobile) {
+        $mobileSearch.toggle();
+        $topNavNav.hide();
+        $topNavQt.hide();
+    } else {
+        $tna.removeAttr('style');
+    }
+});
+
+// 4.2.1 make top-level global navigation links visible
+$topNavTop.unbind('click.pull');
+$topNavTop.on('click', function (evt) {
+    "use strict";
+    if (MayoApp.isMobile) {
+        evt.preventDefault();
+        evt.stopPropagation();
+        $mobileSearch.hide();
+        $topNavNav.addClass('show-all-topics');
+        $topNavQt.show();
+        $topNavOuter.removeClass('current').addClass('no-click-through');
+        return false;
+    } else {
+        $tna.removeAttr('style');
+        return true;
+    }
+});
+
+// 4.2.2
+$topNavOuter.unbind('click.pull');
+$topNavOuter.on('click', function (evt) {
+    "use strict";
+    if (MayoApp.isMobile) {
+        // if user wants menu to expand
+        if ($topNavNav.hasClass('show-all-topics')) {
+            $topNavNav.removeClass('show-all-topics');
+            $topNavOuter.removeClass('no-click-through');
+            $topNavOuter.not(this).removeClass('current');
+            $(this).addClass('current');
+            $mobileSearch.hide();
+            $topNavQt.hide();
+            evt.preventDefault();
+            evt.stopPropagation();
+            return false;
+        }
+    } else {
+        $tna.removeAttr('style');
+    }
+    return true;
+});
+
+// 4.2.3
+$topNavInnerA.unbind('click.pull');
+$topNavInnerA.on('click', function (evt) {
+    "use strict";
+    evt.stopPropagation(); // prevent other click events
+});

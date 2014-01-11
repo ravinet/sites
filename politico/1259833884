@@ -1,0 +1,27 @@
+PHTTP75.101.132.152"´
+6GET /GenericUserSync.ashx?dpid=48noredirect HTTP/1.1
+Host: sync.tidaltv.com
+Connection: keep-alive
+Accept: image/webp,*/*;q=0.8
+vUser-Agent: Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/31.0.1650.63 Safari/537.36
+àReferer: http://tag.crsspxl.com/s2.html?d=1442&t=Politics%2C%20Political%20News%20-%20POLITICO.com&u=http%3A%2F%2Fwww.politico.com%2F&m=Politics%2C%20Political%20News%2C%20Campaign%202012%2C%20Election%202012%2C%20Presidential%20Candidates%2C%20Candidate%20News%2C%20Congress%20news%20POLITICO%20covers%20political%20news%20with%20a%20focus%20on%20national%20politics%2C%20Congress%2C%20Capitol%20Hill%2C%20lobbying%2C%20advocacy%2C%20and%20more.%20%20POLITICO's%20in-depth%20coverage%20includes%20video%20features%2C%20regular%20blogs%2C%20photo%20galleries%2C%20cartoons%2C%20and%20political%20forums.%20
+$Accept-Encoding: gzip,deflate,sdch
+!Accept-Language: en-US,en;q=0.8
+
+*•
+HTTP/1.1 302 Found
+Cache-Control: private
+(Content-Type: text/html; charset=utf-8
+%Date: Fri, 10 Jan 2014 16:57:37 GMT
+RLocation: http://tag.crsspxl.com/m.gif?vdid=4578f815-97e4-455a-8d88-426edd408ac5
+Server: Microsoft-IIS/7.0
+ôSet-Cookie: ptc=%7b%22UserSyncItems%22%3a%5b%7b%22PartnerId%22%3a%2248noredirect%22%2c%22PartnerUserId%22%3anull%2c%22TimeStamp%22%3a%2201%2f10%2f2014+16%3a57%3a37%22%7d%5d%7d; domain=tidaltv.com; expires=Sun, 10-Jan-2016 16:57:37 GMT; path=/
+€Set-Cookie: tidal_ttid=4578f815-97e4-455a-8d88-426edd408ac5; domain=tidaltv.com; expires=Sun, 10-Jan-2016 16:57:37 GMT; path=/
+X-AspNet-Version: 4.0.30319
+X-Powered-By: ASP.NET
+Content-Length: 187
+Connection: keep-alive
+½
+<html><head><title>Object moved</title></head><body>
+<h2>Object moved to <a href="http://tag.crsspxl.com/m.gif?vdid=4578f815-97e4-455a-8d88-426edd408ac5">here</a>.</h2>
+</body></html>

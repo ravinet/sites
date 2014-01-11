@@ -1,0 +1,19 @@
+PHTTP66.117.23.107"ª
+ÉGET /m2/searsholdings/mbox/standard?mboxHost=www.sears.com&mboxSession=1389228168679-581314&mboxPage=1389228168679-581314&screenHeight=1200&screenWidth=1920&browserWidth=937&browserHeight=1051&browserTimeOffset=-300&colorDepth=24&mboxCount=1&mbox=sears_homepage_top_recommended&mboxId=0&mboxTime=1389210168751&mboxURL=http%3A%2F%2Fwww.sears.com%2F&mboxReferrer=&mboxVersion=41 HTTP/1.1
+#Host: searsholdings.tt.omtrdc.net
+Connection: keep-alive
+Accept: */*
+vUser-Agent: Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/31.0.1650.63 Safari/537.36
+ Referer: http://www.sears.com/
+$Accept-Encoding: gzip,deflate,sdch
+!Accept-Language: en-US,en;q=0.8
+
+*∑
+HTTP/1.1 200 OK
+pragma: no-cache
+2Content-Type: text/javascript;charset=ISO-8859-1
+Content-Length: 1919
+%Date: Thu, 09 Jan 2014 00:42:36 GMT
+Server: Test & Target
+Å
+var mboxCurrent=mboxFactories.get('default').get('sears_homepage_top_recommended',0);mboxCurrent.setEventTime('include.start');document.write('<div style="visibility: hidden; display: none" id="mboxImported-default-sears_homepage_top_recommended-0">');document.write('<div id=\"mboxClick-sears_homepage_top_recommended\" onclick=\"mboxFactories.get(\'default\').getSignaler().signal(\'click\', \'sears_homepage_top_recommended-clicked\', \'mboxTarget=50013.184594\')\">');document.write('<!-- Offer Id: 93472  --><script type=\"text\/javascript\">CQ_Analytics.TestTarget.pull(\'\/content\/campaigns\/sears\/homepage\/Curated_vs_Machine\/Machine\/_jcr_content\/par.html\');<\/script>');document.write('<\/div>');document.write('<!-- Offer Id: 61544  --><script type=\"text\/javascript\">window.ttMETA=(typeof(window.ttMETA)!=\'undefined\')?window.ttMETA:[];window.ttMETA.push({\'mbox\':\'sears_homepage_top_recommended\',\'campaign\':\'2013.12.19 Sears Homepage - Machine Dynamic Content vs Curated 80:10:10 (Prod)\',\'experience\':\'Machine 2\',\'offer\':\'content-campaigns-sears-homepage-Curated_vs_Machine-Machine\'});window.ttMBX=function(x){var mbxList=[];for(i=0;i<ttMETA.length;i++){if(ttMETA[i].mbox==x.getName()){mbxList.push(ttMETA[i])}}return mbxList[x.getId()]}<\/script>');document.write('<!-- Offer Id: 47750  --><script type=\"text\/javascript\">\r\n\/*T&T to SiteCat v4 ==>Response Plugin*\/\r\nwindow.s_tnt = window.s_tnt || \'\', tntVal = \'50013:2:0,\';\r\nif (window.s_tnt.indexOf(tntVal) == -1) {\r\n    window.s_tnt += tntVal\r\n}\r\nif (mboxCurrent.getFetcher().getType() == \'ajax\'  && (window.s && window.s.tl)) {\r\n    s.tl(\'TnT\', \'o\', \'TnT\');\r\n}\r\n<\/script>');document.write('</div>');mboxCurrent.setEventTime('include.end');mboxFactories.get('default').get('sears_homepage_top_recommended',0).loaded();mboxFactories.get('default').getPCId().forceId("1389228168679-581314.25_06");

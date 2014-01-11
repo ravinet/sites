@@ -1,0 +1,183 @@
+PHTTP54.235.184.158"¤
+/GET /thumbnail/iframe.html?wid=13109 HTTP/1.1
+Host: embed.newsinc.com
+Connection: keep-alive
+TAccept: text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8
+vUser-Agent: Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/31.0.1650.63 Safari/537.36
+!Referer: http://www.usnews.com/
+$Accept-Encoding: gzip,deflate,sdch
+!Accept-Language: en-US,en;q=0.8
+
+*Â7
+HTTP/1.1 200 OK
+=Cache-Control: no-cache,private, no-store, proxy-revalidate
+(Content-Type: text/html; charset=utf-8
+%Date: Wed, 08 Jan 2014 21:58:35 GMT
+Expires: -1
+NDN-Server: PS-EMBED-ED04
+NDN-Services-Ver: 121126
+P3P: CP="CAO PSA OUR"
+Pragma: no-cache
+Server: Microsoft-IIS/7.0
+X-AspNet-Version: 4.0.30319
+X-AspNetMvc-Version: 2.0
+X-Powered-By: ASP.NET
+Content-Length: 6658
+Connection: keep-alive
+„4
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html>
+<head>
+<meta charset="utf-8"/>
+<title>Main HTML Thumbnail Launcher </title>
+<link href="http://assets.newsinc.com/launchers/20130214/thumbLauncher4.css" rel="stylesheet" type="text/css">
+<script type="text/javascript" language="javascript">
+    pathtobumper = 'http://assets.newsinc.com/launchers/20130214/';
+    function getUrlVars() {
+        var vars = {};
+        var parts = 'http://assets.newsinc.com/launchers/20130214/thumbnailLauncher5.html?wid=13109&freewheel=90080&sitesection=usnews_hom_non_fro&width=300&height=250&thumbid=slider&zoneid=52500&ga=false'.replace(/[?&]+([^=&]+)=([^&]*)/gi, function (m, key, value) {
+            if (value.charAt(value.length - 1) == "#") {
+                value = value.substring(0, value.length - 1);
+            }
+            vars[key.toLowerCase()] = value;
+        });
+        return vars;
+    }
+</script>
+</head>
+<body style="margin:0px;">
+<div id="ndn_container" style="overflow:hidden;v-align:top;">
+    <div id="ndn_placeholder" class="ndn_placeholder"></div>
+	<div id="ndn_adbox"></div>
+	<div id="ndn_thumbContainer" class="ndn_thumbContainer"> 
+		<div id="ndn_thumbScroller" class="ndn_thumbScroller"></div>
+		<div id="ndn_thumbScroller2" class="ndn_thumbScroller2"></div>
+		<div id="ndn_thumbScroller3" class="ndn_thumbScroller"></div>
+		<div id="ndn_thumbScroller4" class="ndn_thumbScroller2"></div>
+	</div>
+	<div id="ndn_selector" class="ndn_selector" style="visibility:hidden"><select class="ndn_playlistSelector" id="ndn_playlistSelector" onChange="getPlaylist();"> </select></div>
+	<div id="ndn_thumbControls" class="ndn_thumbControls"></div>
+    <div id="ndn_adchoice" class="ndn_adchoice" style="visibility:hidden;left:0px;z-index:80;position:relative;"><a href="http://assets.newsinc.com/info/adchoices.html" target="_blank"><div id="admarker" border="0"></div></a></div>
+    <div id="ndn_thumb_ad" class="ndn_thumb_ad" style="visibility:hidden;z-index:80;position:relative;"></div>
+	<div id="ndn_countdown" class="ndn_countdown">Advertisement countdown</div>
+</div>
+<iframe name="swfviewFRM" id="swfviewFRM" width="0" height="0" frameborder="0"></iframe> 
+<!-- Start Quantcast tag -->
+<script type="text/javascript">
+    _qoptions = {
+        qacct: "p-573scDfDoUH6o"
+    };
+</script>
+<script type="text/javascript" src="http://edge.quantserve.com/quant.js"></script>
+<noscript>
+    <img src="http://pixel.quantserve.com/pixel/p-573scDfDoUH6o.gif" style="display: none;" border="0" height="1" width="1" alt="Quantcast" />
+</noscript>
+<!-- End Quantcast tag -->
+<script type="text/javascript">    document.write(unescape("%3Cscript src='" +
+
+(document.location.protocol == "https:" ? "https://sb" : "http://b") +
+".scorecardresearch.com/beacon.js' %3E%3C/script%3E"));</script>
+<script data-main="http://assets.newsinc.com/launchers/20130214/scripts/main" src="http://assets.newsinc.com/launchers/20130214/scripts/require-jquery.js"></script>
+
+<!-- Start GOOGLE  -->
+<script type="text/javascript">
+    /// Set up
+    function getUrlVarsg() {
+        //alert("hello ");
+        var vars = {};
+        var parts = window.location.href.replace(/[?&]+([^=&]+)=([^&]*)/gi, function (m, key, value) {
+            if (value.charAt(value.length - 1) == "#") {
+                value = value.substring(0, value.length - 1);
+            }
+            vars[key.toLowerCase()] = value;
+        });
+        return vars;
+    }
+    //console.log ( 'start');
+    var dpid;
+
+    var external_url = document.referrer;
+    if (external_url == "") {
+        external_url = window.location.href.split('?')[0];
+    }
+    var siteSectionG;
+    var widg;
+    //dpid
+
+    var urlvars;
+    fng = window["getUrlVars"];
+    fngExists = typeof fng === 'function';
+    if (fngExists) {
+        urlvars = eval('getUrlVars()');
+    } else {
+        urlvars = getUrlVarsg();
+    }
+
+    if (urlvars["freewheel"] == undefined || urlvars["freewheel"] == "") {
+        dpid = "undefined-freewheel";
+    } else {
+        dpid = urlvars["freewheel"];
+    }
+
+    //sitesection
+    if (urlvars["sitesection"] == undefined || urlvars["sitesection"] == "") {
+        siteSectionG = "undefined";
+    } else {
+        siteSectionG = urlvars["sitesection"];
+    }
+    //widg
+    if (urlvars["wid"] == undefined || urlvars["wid"] == "") {
+        widg = "undefined";
+    } else {
+        widg = urlvars["wid"];
+    }
+    ///Google
+    var _gaq = _gaq || [];
+    _gaq.push(['_setAccount', 'UA-35606174-1']); // GA Account ID for NDN Widget Tracking 
+    _gaq.push(['_setDomainName', 'newsinc.com']);
+    _gaq.push(['_setAllowLinker', true]);
+    _gaq.push(['_setCustomVar',
+      1, // This custom var is set to slot #1. Required parameter. 
+      'partnerId', // This the is custom field name to track the partner id, aka dpid. Required parameter. 
+      dpid, // This is the partner id field to be passed in. Required parameter. 
+      3 // Sets the scope to page-level. 
+   ]);
+    _gaq.push(['_setCustomVar',
+      2, // This custom var is set to slot #2. Required parameter. 
+      'widgetURL', // This is the custom field name to track url of the partner page the widget is on, not the url of the widget. Required parameter. 
+      external_url, // This value of the url variable to be passed in. Required parameter. 
+      3 // Sets the scope to page-level. 
+   ]);
+    _gaq.push(['_setCustomVar',
+      3,
+      'siteSection',
+      siteSectionG,
+      3
+   ]);
+    _gaq.push(['_setCustomVar',
+      4, // This custom var is set to slot #4. Required parameter. 
+      'widgetID', // This is the custom field name to track widget id. Required parameter. 
+      widg, // This value of the wid variable to be passed in. Required parameter. 
+      3 // Sets the scope to page-level. 
+   ]);
+    _gaq.push(['_trackPageview']);
+
+
+    (function () {
+        var doGA;
+        if (urlvars["ga"] == undefined || urlvars["ga"] == "") {
+            doGA = "undefined";
+        } else {
+            doGA = urlvars["ga"];
+        }
+        if (doGA == "true") {
+            var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+            ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+            var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+        }
+    })();
+    //console.log ( 'end');
+</script>
+</body>
+</html>

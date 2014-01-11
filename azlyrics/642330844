@@ -1,0 +1,31 @@
+PHTTP85.17.159.246"Ê
+GET /external.js HTTP/1.1
+Host: www.azlyrics.com
+Connection: keep-alive
+Accept: */*
+vUser-Agent: Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/31.0.1650.63 Safari/537.36
+#Referer: http://www.azlyrics.com/
+$Accept-Encoding: gzip,deflate,sdch
+!Accept-Language: en-US,en;q=0.8
+
+*Õ
+HTTP/1.1 200 OK
+Server: nginx
+%Date: Wed, 08 Jan 2014 17:02:57 GMT
+(Content-Type: application/x-javascript
+Content-Length: 354
+.Last-Modified: Wed, 09 Mar 2011 17:49:20 GMT
+Connection: keep-alive
+Accept-Ranges: bytes
+ä
+function externalLinks() {
+ if (!document.getElementsByTagName) return;
+ var anchors = document.getElementsByTagName("a");
+ for (var i=0; i<anchors.length; i++) {
+   var anchor = anchors[i];
+   if (anchor.getAttribute("href") &&
+       anchor.getAttribute("rel") == "external")
+     anchor.target = "_blank";
+ }
+}
+window.onload = externalLinks;

@@ -1,0 +1,23 @@
+PHTTP64.94.107.35"û
+HGET /api/segments.json?a=p-7bhLrd63bC8jI&callback=qc_callback HTTP/1.1
+Host: pixel.quantserve.com
+Connection: keep-alive
+Accept: */*
+vUser-Agent: Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/31.0.1650.63 Safari/537.36
+#Referer: http://www.politico.com/
+$Accept-Encoding: gzip,deflate,sdch
+!Accept-Language: en-US,en;q=0.8
+
+*ç
+HTTP/1.1 200 OK
+Connection: close
+(Content-Type: application/x-javascript
+rSet-Cookie: mc=52d0267f-c0696-97f8a-4a78d; expires=Sun, 12-Jul-2015 16:57:35 GMT; path=/; domain=.quantserve.com
+IP3P: CP="NOI DSP COR NID CURa ADMa DEVa PSAo PSDo OUR SAMa IND COM NAV"
+3Cache-Control: private, no-transform, max-age=600
+(Expires: Fri, 10 Jan 2014 17:07:35 GMT
+Content-Length: 40
+%Date: Fri, 10 Jan 2014 16:57:35 GMT
+Server: QS
+*
+qc_callback({"segments":[{"id":"D"}]});

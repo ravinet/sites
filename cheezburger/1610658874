@@ -1,0 +1,23 @@
+PHTTP207.198.117.146"Â
+-GET /dmp/pixelSync?network=Rubicon HTTP/1.1
+Host: pixel.sitescout.com
+Connection: keep-alive
+Accept: image/webp,*/*;q=0.8
+vUser-Agent: Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/31.0.1650.63 Safari/537.36
+uReferer: http://tap2-cdn.rubiconproject.com/partner/scripts/rubicon/emily.html?rtb_ext=1&pc=8428/13642&geo=na&co=us
+$Accept-Encoding: gzip,deflate,sdch
+!Accept-Language: en-US,en;q=0.8
+
+*ï
+HTTP/1.1 302 Found
+,Cache-Control: max-age=0,no-cache,no-store
+Pragma: no-cache
+(Expires: Tue, 11 Oct 1977 12:34:56 GMT
+CP3P: CP="NON DEVa PSAa PSDa OUR NOR NAV",policyref="/w3c/p3p.xml"
+|Set-Cookie: ssi=d4dca706-5caa-4cea-a4e6-21129b24d201; Domain=.sitescout.com; Expires=Sat, 03-Jan-2015 16:55:36 GMT; Path=/
+]Set-Cookie: _ssum=e30; Domain=.sitescout.com; Expires=Wed, 22-Jan-2014 16:55:36 GMT; Path=/
+xLocation: http://pixel.rubiconproject.com/tap.php?v=7430&nid=2238&put=d4dca706-5caa-4cea-a4e6-21129b24d201&expires=360
+Content-Length: 0
+%Date: Wed, 08 Jan 2014 16:55:36 GMT
+Server: AC1.1
+

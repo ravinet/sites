@@ -1,0 +1,30 @@
+PHTTP23.6.16.161"å
+GET / HTTP/1.1
+Host: www.discovercard.com
+Connection: keep-alive
+TAccept: text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8
+vUser-Agent: Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/31.0.1650.63 Safari/537.36
+$Accept-Encoding: gzip,deflate,sdch
+!Accept-Language: en-US,en;q=0.8
+
+*Ý
+ HTTP/1.1 301 Moved Permanently
+%Location: https://www.discover.com/
+Content-Length: 233
+-Content-Type: text/html; charset=iso-8859-1
+(Expires: Thu, 09 Jan 2014 01:04:49 GMT
+.Cache-Control: max-age=0, no-cache, no-store
+Pragma: no-cache
+%Date: Thu, 09 Jan 2014 01:04:49 GMT
+Connection: keep-alive
+Vary: Accept-Encoding
+WSet-Cookie: TS7b9fc8=f15f1d638b9b74c2419883e534d8b27bc9917567d918ca4252cdf5b1; Path=/
+=Set-Cookie: DCID=www21; path=/; domain=www.discovercard.com
+ë
+<!DOCTYPE HTML PUBLIC "-//IETF//DTD HTML 2.0//EN">
+<html><head>
+<title>301 Moved Permanently</title>
+</head><body>
+<h1>Moved Permanently</h1>
+<p>The document has moved <a href="https://www.discover.com/">here</a>.</p>
+</body></html>

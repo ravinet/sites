@@ -1,0 +1,17 @@
+PHTTP50.31.164.192"«
+ÐGET /1/aee2091659?a=1573422&be=1282&qt=0&ap=22&dc=366&fe=2711&to=NgRSYxQAVxECUExZXA9OcWQ2TloPEENZV1YSTkBYFBVYDhdWVUBfABVVGQcSSRo%3D&tt=30EBE8FA43E44A9E&v=42&jsonp=NREUM.setToken&perf=%7B%22timing%22%3A%7B%22of%22%3A1389231458693%2C%20%22n%22%3A0%2C%20%22dl%22%3A499%2C%20%22di%22%3A1648%2C%20%22ds%22%3A1648%2C%20%22de%22%3A1713%2C%20%22dc%22%3A3990%2C%20%22l%22%3A3990%2C%20%22le%22%3A3993%2C%20%22f%22%3A20%2C%20%22dn%22%3A21%2C%20%22dne%22%3A93%2C%20%22c%22%3A93%2C%20%22ce%22%3A93%2C%20%22rq%22%3A93%2C%20%22rp%22%3A483%2C%20%22rpe%22%3A499%7D%2C%20%22navigation%22%3A%7B%7D%7D HTTP/1.1
+Host: beacon-6.newrelic.com
+Connection: keep-alive
+Accept: */*
+vUser-Agent: Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/31.0.1650.63 Safari/537.36
+"Referer: http://www.newsmax.com/
+$Accept-Encoding: gzip,deflate,sdch
+!Accept-Language: en-US,en;q=0.8
+%Cookie: JSESSIONID=985adf6a748a9a8e
+
+*v
+HTTP/1.1 200 OK
+2Content-Type: text/javascript;charset=ISO-8859-1
+Content-Length: 21
+
+NREUM.setToken(null)

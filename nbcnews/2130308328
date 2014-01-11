@@ -1,0 +1,24 @@
+PHTTP138.108.7.20"¸
+oGET /cgi-bin/m?ci=us-505401h&cg=0&cc=1&si=http%3A//www.nbcnews.com/&rp=&ts=compact&rnd=1389365756583 HTTP/1.1
+"Host: secure-us.imrworldwide.com
+Connection: keep-alive
+Accept: image/webp,*/*;q=0.8
+vUser-Agent: Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/31.0.1650.63 Safari/537.36
+"Referer: http://www.nbcnews.com/
+$Accept-Encoding: gzip,deflate,sdch
+!Accept-Language: en-US,en;q=0.8
+
+*Œ
+HTTP/1.1 302 Found
+Server: nginx
+%Date: Fri, 10 Jan 2014 14:55:43 GMT
+Content-Length: 0
+Connection: keep-alive
+Keep-Alive: timeout=20
+ŽSet-Cookie: IMRID=776375aa-44f5-4528-9770-ef568f266c08;Path=/;Domain=imrworldwide.com;Expires=Sun, 10-Jan-2016 14:55:43 GMT;Max-Age=63072000
+(Expires: Thu, 01 Dec 1994 16:00:00 GMT
+’Location: http://secure-us.imrworldwide.com/cgi-bin/m?ci=us-505401h&cg=0&cc=1&si=http%3A//www.nbcnews.com/&rp=&ts=compact&rnd=1389365756583&ja=1
+Pragma: no-cache
+Cache-Control: no-cache
+pP3P: P3P policyref="http://www.imrworldwide.com/w3c/p3p.xml", CP="NOI DSP COR NID PSA ADM OUR IND UNI NAV COM"
+

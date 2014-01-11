@@ -1,0 +1,21 @@
+PHTTP216.157.106.164"©
+!GET /signup/cookies.js HTTP/1.1
+Host: rtb.sitescout.com
+Connection: keep-alive
+Accept: */*
+vUser-Agent: Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/31.0.1650.63 Safari/537.36
+$Referer: http://www.sitescout.com/
+$Accept-Encoding: gzip,deflate,sdch
+!Accept-Language: en-US,en;q=0.8
+ÔCookie: __utma=146799926.1914204848.1389232462.1389232462.1389232462.1; __utmb=146799926.1.10.1389232462; __utmc=146799926; __utmz=146799926.1389232462.1.1.utmcsr=(direct)|utmccn=(direct)|utmcmd=(none); ssi=8f4244b9-1ec6-41a9-9738-34a1711271e2; kvcd=1389232462483; km_ai=fu8LFr0rbXXRHTtmMlA0XzQ3%2BYg%3D; km_vs=1; km_lv=1389232462; km_uq=
+
+*‘
+ HTTP/1.1 302 Moved Temporarily
+Server: Apache-Coyote/1.1
+Pragma: No-cache
+Cache-Control: no-cache
+(Expires: Wed, 31 Dec 1969 19:00:00 EST
+7Location: https://rtb.sitescout.com/signup/cookies.js
+Content-Length: 0
+%Date: Thu, 09 Jan 2014 01:54:10 GMT
+

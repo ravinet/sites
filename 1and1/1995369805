@@ -1,0 +1,54 @@
+»HTTPS74.119.118.82"ç
+CGET /event?a=11029&v=2.0.0&p0=e%3Dvh%26si%3D2&p1=e%3Ddis HTTP/1.1
+Host: sslwidget.criteo.com
+Connection: keep-alive
+Accept: */*
+vUser-Agent: Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/31.0.1650.63 Safari/537.36
+“Referer: https://ad2.adfarm1.adition.com/track?co=1&descr=&itemno=&orderid=&price=0.00&quantity=&sid=7586&tid=2266&total=0.00&type=html&clickurl=
+$Accept-Encoding: gzip,deflate,sdch
+!Accept-Language: en-US,en;q=0.8
+
+*µ
+HTTP/1.1 200 OK
+Cache-Control: no-cache
+Pragma: no-cache
+7Content-Type: application/x-javascript; charset=utf-8
+Expires: -1
+Server: Microsoft-IIS/7.5
+4P3P: CP="NON DSP COR CURa PSA PSD OUR BUS NAV STA"
+ySet-Cookie: uid=7a59d0bc-ced6-4595-9c65-5405453a6afb; domain=.criteo.com; expires=Fri, 09-Jan-2015 13:43:25 GMT; path=/
+ySet-Cookie: uid=7a59d0bc-ced6-4595-9c65-5405453a6afb; domain=.criteo.com; expires=Fri, 09-Jan-2015 13:43:25 GMT; path=/
+—Set-Cookie: uic=*1DK4ok2eOGAa7efybl4vYvwcSeTNnBLjMiF0jUbsdJ3fcyMtJ%2fIVPsgj7byxvslgYrLdD2x3FV4fIKKjQ9vcjlF4MsCMG8f6MWxTOZeOa7PEmCvsY42t%2fe5Hvxiz9lunHQ2Nd5YUD3k9TtyWwDvcy2SqerXYTrLvrx%2boDC%2b7rwqK%2b1wJc%2f5Aa9e1RcBpaVJ320PhmTyuQQ7AFxGgLGdZqOk5sh3nEVOLMlU3nBiA9%2bFLRix%2ftfV7pwmQizngu6rq0pwZ25Oe8%2bM2jWANq9izhiXz8SQ4VtcrynJqhmPq0ROU%3d; domain=.criteo.com; expires=Wed, 09-Jul-2014 12:43:25 GMT; path=/
+wSet-Cookie: udc=*1AjVT%2bgfw%2f8PyH2Istroh8g%3d%3d; domain=.criteo.com; expires=Wed, 09-Jul-2014 12:43:25 GMT; path=/
+sSet-Cookie: udi=*1KkJzeKUljlP2kig5KmQkpA%3d%3d; domain=.criteo.com; expires=Fri, 10-Jan-2014 13:43:25 GMT; path=/
+%Date: Thu, 09 Jan 2014 13:43:25 GMT
+Content-Length: 919
+™
+/*<!--*/(function() {
+var qss = '&cb=' + Math.floor(Math.random() * 99999999999);
+try {
+    qss += '&ref=' + encodeURIComponent(document.referrer);
+} catch (e) { }
+try {
+    qss += '&sc_r=' + encodeURIComponent(screen.width + 'x' + screen.height);
+} catch (e) { }
+try {
+    qss += '&sc_d=' + encodeURIComponent(screen.colorDepth);
+} catch (e) { }
+
+var callDis = function(pid, domain) {
+    var qr = (document.location.protocol == 'https:' ? 'https:' : 'http:') + '//' + domain + '/dis/dis.aspx';
+    var p = document.createElement('iframe');
+    p.width = p.height = '0';
+    p.style.display = 'none';
+    p.src = (qr + '?p=' + pid + qss).substring(0, 2000);
+
+    var c = document.getElementById('criteoTagsContainer');
+    if (c) {
+        c.appendChild(p);
+    } else {
+        criteo_q.push({ event: 'appendTag', element: p });
+    }
+};
+callDis(11029, 'dis.sv.us.criteo.com');
+})();/*-->*/

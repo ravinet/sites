@@ -1,0 +1,136 @@
+PHTTP
+18.7.20.70"ý
+lGET /prod/assets/themes/magazines/SUBS/templates/velocity/site/ew-downloadnow-ros/tout-premium.js HTTP/1.1
+"Host: subscription-assets.ew.com
+Connection: keep-alive
+Accept: */*
+vUser-Agent: Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/31.0.1650.63 Safari/537.36
+ Referer: http://www.ew.com/ew/
+$Accept-Encoding: gzip,deflate,sdch
+!Accept-Language: en-US,en;q=0.8
+ØCookie: TI_PREFS=default; s_cc=true; s_vnum_d=1389330000630%26vn%3D1; sinvisit_d=true; s_vnum_w=1389502800631%26vn%3D1; sinvisit_w=true; s_vnum_m=1391230800631%26vn%3D1; sinvisit_m=true; s_ppv=0; gpv_p35=ew%7Chome; TICM_omni=c16%3Dhome%7Ec11%3D; s_sq=%5B%5BB%5D%5D; __gads=ID=57e1d66462b56525:T=1389274729:S=ALNI_MZl02QXgYsrDKB9-3PT-v5krlFAAQ
+
+*„'
+HTTP/1.1 200 OK
+Server: Apache
+.Last-Modified: Tue, 03 Dec 2013 15:43:27 GMT
+ETag: "11da-4eca3285005c0"
+Accept-Ranges: bytes
+Content-Length: 4570
+”P3P: CP="PHY ONL UNI PUR FIN COM NAV INT DEM CNT STA PRE CUR ADMa DEVa TAIo PSAo PSDo IVAo IVDo CONo TELo OTPi OUR UNRo PUBi OTRo IND DSP CAO COR"
+(Content-Type: application/x-javascript
+%Date: Thu, 09 Jan 2014 13:38:50 GMT
+Connection: keep-alive
+Ü#
+var tcmAds = tcmAds || {};
+tcmAds.createHeaderTout = function (adVars){	
+	if (typeof adVars.name == "undefined") { throw "You must supply a name for this tout"; }
+    var ad = {
+	channels:{ "dflt" : ["https://subscription.ew.com/storefront/subscribe-to-entertainment-weekly/link/1018745.html",
+			     "https://subscription.ew.com/storefront/site/ew-digitalmagazine/login.html?CGI-App-Id=com.time.ew.web&CGI-Site=ew-digitalmagazine&storeCode=SUBS&xid=upperrighttout" ]
+		 },
+	detectIfInIframe : function(){
+	    try{
+		if(window.frameElement){
+		    this.iFrame = window.frameElement;
+		    return true;
+		}
+	    }catch(error){}
+	    return false;
+	},
+
+	formatForDoubleClick : function(url){
+            var tcm_dfpGet = adVars.clickTracking.dartGet,
+            extra_qs = "",
+            qs_param, qs_val;
+	    
+            if (tcm_dfpGet != "%c") {
+                url = tcm_dfpGet + url.replace("://","%3a%2f%2f");
+            }
+
+            for (qs_param in adVars.subs3Tracking) {
+                qs_val = adVars.subs3Tracking[qs_param];
+		
+                if (/^%%PATTERN/.test(qs_val) || /^%s$/.test(qs_val)) qs_val = "0000";
+                if (qs_val == "") qs_val = "null";
+
+                extra_qs += "&" + qs_param + "=" + qs_val;
+            }
+
+            // the first "&" should be a "?"
+            if(!/\?/.test(url)){extra_qs = extra_qs.replace("&", "?");}
+
+            return url + extra_qs;
+	},
+	drawTout: function() {
+	    var marginTop = "62px";
+	    var mT = "-8px"
+	    if(this.detectIfInIframe()){
+		marginTop = "0px";
+		mT = "0px"
+		this.iFrame.width = "200";
+		this.iFrame.height = "86";
+		this.iFrame.style.marginTop = "-13px";
+	    }
+	    document.write('<div style="height: 90px;width: 198px;visibility: visible;z-index: auto;margin-top:'+marginTop+';	border: #666;  background-color: #FFFFFF; border-width:thin;"><a href="'+this.clickThroughUrl1+'" target="_blank"><img border="0" src="http://subscription-assets.timeinc.com/current/2332_top1.jpg" style="margin-top:'+mT+';width:65px;height:86px;"></a><div style="margin-left: 68px;	margin-top: -70px;	width: 128px;	height: 29px;"><a href="'+this.clickThroughUrl1+'" target="_blank"><img src="//subscription-assets.timeinc.com/prod/assets/themes/magazines/SUBS/templates/velocity/site/ew-downloadnow-ros/resources/images/v2_subscribe.gif" style="width:128px;height:29px;border:0"/></a></div><div style="margin-left: 68px;	margin-top: 10px;width: 128px;height: 29px;"><a href="'+this.clickThroughUrl2+'" target="_blank"><img src="//subscription-assets.timeinc.com/prod/assets/themes/magazines/SUBS/templates/velocity/site/ew-downloadnow-ros/resources/images/v2_download.gif" style="width:128px;height:29px;border:0"/></a></div></div>');
+	},
+
+	setCorrectEnv : function(URL) {
+	    var flatFile = false,
+	    loc = window.location,
+	    host = window.location.host;
+	    if(/themes\/magazines\/SUBS\//.test(URL)){flatFile = true;}
+
+
+	    if(flatFile){
+
+		if(/ecom-dev01-app\.usdlls2\.savvis\.net:10400|file:\/\/\//.test(loc)){
+		    URL = URL.replace(/\/\/subscription-assets\.timeinc\.com\/(prod|qa)\/assets/,'//ecom-dev01-app.usdlls2.savvis.net:10400/');
+		}else if (/qa\/assets/.test(loc)){
+		    if(/ecom-dev01-app\.usdlls2\.savvis\.net:10400/.test(URL)){
+			URL = URL.replace('//ecom-dev01-app.usdlls2.savvis.net:10400/','//subscription-assets.timeinc.com/qa/assets/');
+		    }else{
+			URL=URL.replace('.com/prod/assets/','.com/qa/assets/');
+		    }
+		}else if(/prod\/assets/.test(loc)){
+		    if(/ecom-dev01-app\.usdlls2\.savvis\.net:10400/.test(URL)){
+			URL = URL.replace('//ecom-dev01-app.usdlls2.savvis.net:10400/','//subscription-assets.timeinc.com/prod/assets/');
+		    }else{
+			URL=URL.replace('.com/qa/assets/','.com/prod/assets/');
+		    }
+		}
+
+
+
+		// dealing with microsite URL
+	    }else{
+	
+
+		if(/savvis/.test(host)){
+		    URL=URL.replace(/\/\/(qa-)?subscription/,"//cmdev-subscription");
+		}else if (/qa-/.test(host) || /\/qa\//.test(loc) ) {
+		    URL=URL.replace(/\/\/(cmdev-)?subscription/,"//qa-subscription");
+		}else if( /\/\/subscription\./.test(host) || /\/prod\//.test(loc) ){
+		    URL=URL.replace(/\/\/(cmdev|qa)-subscription/,"//subscription");
+		}	    
+
+	    }
+
+	    return URL;
+
+	},
+
+	build: function(){
+	    this.clickThroughUrl1 = this.formatForDoubleClick(this.setCorrectEnv(this.channels[adVars.channel][0]));
+	    this.clickThroughUrl2 = this.formatForDoubleClick(this.setCorrectEnv(this.channels[adVars.channel][1]));
+	    this.drawTout();
+	}
+    }
+    ad.build();
+    return ad;
+};
+
+tcmAds.createHeaderTout(tcmAds['ew-downloadnow-ros.config']);
+
+
+	

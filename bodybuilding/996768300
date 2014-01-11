@@ -1,0 +1,25 @@
+PHTTP206.207.84.82"ý
+tGET /api-proxy/personal/assets?machineid=38C33C8B-3C0B-4B28-A9BE-91331A138614&zoneid=Site-Index-Messaging HTTP/1.1
+Host: api.bodybuilding.com
+Connection: keep-alive
+8Accept: application/json, text/javascript, */*; q=0.01
+%Origin: http://www.bodybuilding.com
+vUser-Agent: Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/31.0.1650.63 Safari/537.36
+'Referer: http://www.bodybuilding.com/
+$Accept-Encoding: gzip,deflate,sdch
+!Accept-Language: en-US,en;q=0.8
+
+*–
+HTTP/1.1 200 OK
+Server: Apache-Coyote/1.1
+:Access-Control-Allow-Origin: http://www.bodybuilding.com
+(Access-Control-Allow-Credentials: true
+Cache-Control: no-cache
+(Expires: Thu, 01 Jan 1970 00:00:00 GMT
+Pragma: no-cache
+Connection: close
+(Content-Type: text/plain;charset=utf-8
+Content-Length: 39
+%Date: Thu, 09 Jan 2014 01:10:37 GMT
+)
+{"err_msg":"","ret_code":200,"data":""}

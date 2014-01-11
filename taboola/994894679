@@ -1,0 +1,25 @@
+PHTTP166.78.85.179"à
+GET / HTTP/1.1
+Host: www.taboola.com
+Connection: keep-alive
+TAccept: text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8
+vUser-Agent: Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/31.0.1650.63 Safari/537.36
+$Accept-Encoding: gzip,deflate,sdch
+!Accept-Language: en-US,en;q=0.8
+
+*Ê
+ HTTP/1.1 301 Moved Permanently
+7X-Pantheon-Styx-Hostname: styx1560bba9.chios.panth.io
+server: nginx
+content-type: text/html
+$location: https://www.taboola.com/
+;x-pantheon-endpoint: ae2a6ba3-df3f-4c44-8bc8-00e099162d7e
+&Cache-Control: public, max-age=86400
+Content-Length: 0
+Accept-Ranges: bytes
+%Date: Thu, 09 Jan 2014 23:52:16 GMT
+"X-Varnish: 3713655587 3705137443
+Age: 19440
+Via: 1.1 varnish
+Connection: keep-alive
+

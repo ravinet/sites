@@ -1,0 +1,33 @@
+PHTTP
+18.7.20.69"¥
+wGET /j?s=136825&a=4&id=359871961&p=11&v=2&inif=0&l=0&t=0&w=1920&h=1152&z=300&u=http%3A%2F%2Fwww.bbc.co.uk%2F HTTP/1.1
+Host: as.casalemedia.com
+Connection: keep-alive
+Accept: */*
+vUser-Agent: Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/31.0.1650.63 Safari/537.36
+ Referer: http://www.bbc.co.uk/
+$Accept-Encoding: gzip,deflate,sdch
+!Accept-Language: en-US,en;q=0.8
+
+*Å
+ HTTP/1.1 302 Moved Temporarily
+Server: Apache
+GP3P: policyref="/w3c/p3p.xml", CP="NOI DSP COR DEVa TAIa OUR BUS UNI"
+‘Location: http://as.casalemedia.com/j?s=136825&a=4&id=359871961&p=11&v=2&inif=0&l=0&t=0&w=1920&h=1152&z=300&u=http%3A%2F%2Fwww.bbc.co.uk%2F&C=1
+Content-Length: 365
+-Content-Type: text/html; charset=iso-8859-1
+(Expires: Thu, 09 Jan 2014 00:37:37 GMT
+.Cache-Control: max-age=0, no-cache, no-store
+Pragma: no-cache
+%Date: Thu, 09 Jan 2014 00:37:37 GMT
+Connection: keep-alive
+oSet-Cookie: CMID=0PZONEFuq6QAADXMVbsAAABK;domain=casalemedia.com;path=/;expires=Fri, 09 Jan 2015 00:37:37 GMT
+ZSet-Cookie: CMPS=128;domain=casalemedia.com;path=/;expires=Wed, 09 Apr 2014 00:37:37 GMT
+ï
+<!DOCTYPE HTML PUBLIC "-//IETF//DTD HTML 2.0//EN">
+<html><head>
+<title>302 Found</title>
+</head><body>
+<h1>Found</h1>
+<p>The document has moved <a href="http://as.casalemedia.com/j?s=136825&amp;a=4&amp;id=359871961&amp;p=11&amp;v=2&amp;inif=0&amp;l=0&amp;t=0&amp;w=1920&amp;h=1152&amp;z=300&amp;u=http%3A%2F%2Fwww.bbc.co.uk%2F&amp;C=1">here</a>.</p>
+</body></html>

@@ -1,0 +1,56 @@
+PHTTP208.94.20.12"à
+MGET /popup/signup.cfm?l=213915118&s=weeklyrounduponestep&v=onestep HTTP/1.1
+Host: app.bankrate.com
+Connection: keep-alive
+TAccept: text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8
+vUser-Agent: Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/31.0.1650.63 Safari/537.36
+#Referer: http://www.bankrate.com/
+$Accept-Encoding: gzip,deflate,sdch
+!Accept-Language: en-US,en;q=0.8
+š
+Cookie: brmd=%7B%22expiration%22%3A%20%22Fri%2C%2010%20Jan%202014%2001%3A43%3A56%20GMT%22%2C%20%22path%22%3A%20%22/%22%2C%20%22domain%22%3A%20%22.bankrate.com%22%2C%20%22VID%22%3A%20%22f3098a23-10de-432c-b235-157ecd7ffb37%22%2C%20%22SID%22%3A%20%221389231836041%22%7D; brms=%7B%22path%22%3A%20%22/%22%2C%20%22domain%22%3A%20%22.bankrate.com%22%2C%20%22VID%22%3A%20%22f3098a23-10de-432c-b235-157ecd7ffb37%22%2C%20%22SID%22%3A%20%221389231836041%22%7D; brmp=%7B%22expiration%22%3A%20%22Sun%2C%2007%20Jan%202024%2001%3A43%3A56%20GMT%22%2C%20%22path%22%3A%20%22/%22%2C%20%22domain%22%3A%20%22.bankrate.com%22%2C%20%22VID%22%3A%20%22f3098a23-10de-432c-b235-157ecd7ffb37%22%2C%20%22test%22%3A%20%7B%22name%22%3A%20%22GlobalNavigationTest%22%2C%20%22group%22%3A%20%22br3_b%22%7D%2C%20%22pid%22%3A%20%7B%22t%22%3A%201389231836185%2C%20%22p%22%3A%20%22br3_b%22%7D%7D; brml=%7B%22expiration%22%3A%20%22Thu%2C%2009%20Jan%202014%2002%3A13%3A56%20GMT%22%2C%20%22path%22%3A%20%22/%22%2C%20%22domain%22%3A%20%22.bankrate.com%22%2C%20%22VID%22%3A%20%22f3098a23-10de-432c-b235-157ecd7ffb37%22%2C%20%22SID%22%3A%20%221389231836041%22%7D; op621globalheadergum=a0610c10bb2a19z03y18024fd; op621globalheaderliid=a0610c10bb2a19z03y18024fd; op621homepagegum=a02h05u0bk2a19y0335jz99af; op621homepageliid=a02h05u0bk2a19y0335jz99af
+
+*›
+HTTP/1.1 200 OK
+%Date: Thu, 09 Jan 2014 01:43:45 GMT
+Server: Apache
+!Keep-Alive: timeout=30, max=500
+Connection: Keep-Alive
+Transfer-Encoding: chunked
+(Content-Type: text/html; charset=UTF-8
+Ç
+739
+
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+<html>
+<head>
+<title>Signup</title>
+<script language="JavaScript" src="javascript/validation.cfm/signupform.js"></script>
+<script language="JavaScript" src="javascript/utils.js"></script>
+<link rel="stylesheet" type="text/css" href="http://www.bankrate.com/system/story/newsletter-signup.css" />
+
+</head><body>
+
+
+<form method="POST" name="signupform" action="signup.cfm" onSubmit="return (validateClientSideForm(this, 'signupform') && debounce());">
+
+	<input type="hidden" name="action"        value="signup1">
+	<input type="hidden" name="original_ecid" value="">
+	<input type="hidden" name="source_list"   value="213915118">
+	<input type="hidden" name="extra_lists"   value="">
+	<input type="hidden" name="dob"   		  value="">
+    <input type="hidden" name="version"   	  value="onestep">
+    <input type="hidden" name="source"   		  value="weeklyrounduponestep">
+    <input type="hidden" name="nlname"   		  value="Weekly Roundup">
+<input class="first-name-field" name="firstname" value="First Name" onfocus="if(this.value == 'First Name') { this.value = ''; }" onblur="if(this.value == '') { this.value = 'First Name'; }" type="text">  <input class="zip-field" name="zip" value="Zip Code" onfocus="if(this.value == 'Zip Code') { this.value = ''; }" onblur="if(this.value == '') { this.value = 'Zip Code'; }" type="text"> <input class="email-field" name="email" value="Email" onfocus="if(this.value == 'Email') { this.value = ''; }" onblur="if(this.value == '') { this.value = 'Email'; }" type="text"> 
+	<div class="news-promo-disclaimer">*Your data will not be shared with others and you can unsubscribe at any time.</div>
+	<input type="image" src="images/orange-signup-button.jpg" name="submit" class="news-signup-button">
+
+
+
+</form>
+</body>
+</html>
+
+0
+

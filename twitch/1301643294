@@ -1,0 +1,24 @@
+PHTTP176.32.101.129"Á
+GET /DayZ.jpg HTTP/1.1
+*Host: ttv-backgroundart.s3.amazonaws.com
+Connection: keep-alive
+Accept: image/webp,*/*;q=0.8
+vUser-Agent: Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/31.0.1650.63 Safari/537.36
+ Referer: http://www.twitch.tv/
+$Accept-Encoding: gzip,deflate,sdch
+!Accept-Language: en-US,en;q=0.8
+
+*Å
+HTTP/1.1 403 Forbidden
+$x-amz-request-id: DA76747EC88AA4E0
+Nx-amz-id-2: D1oEfQN12rBMzwoO/YzRStDBJ0RIBXoc9yXwL0LZvMagDzyZoU532EjaJwLmbflX
+Content-Type: application/xml
+Transfer-Encoding: chunked
+%Date: Thu, 09 Jan 2014 18:13:20 GMT
+Server: AmazonS3
+Ù
+e7
+<?xml version="1.0" encoding="UTF-8"?>
+<Error><Code>AccessDenied</Code><Message>Access Denied</Message><RequestId>DA76747EC88AA4E0</RequestId><HostId>D1oEfQN12rBMzwoO/YzRStDBJ0RIBXoc9yXwL0LZvMagDzyZoU532EjaJwLmbflX</HostId></Error>
+0
+

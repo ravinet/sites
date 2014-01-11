@@ -1,0 +1,25 @@
+PHTTP54.204.46.233"ã
+3GET /tag?site=MWKB9CB&H=-2o7peq&cf=59143 HTTP/1.1
+Host: s.thebrighttag.com
+Connection: keep-alive
+Accept: */*
+vUser-Agent: Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/31.0.1650.63 Safari/537.36
+"Referer: http://www.sephora.com/
+$Accept-Encoding: gzip,deflate,sdch
+!Accept-Language: en-US,en;q=0.8
+
+*ý
+HTTP/1.1 200 OK
+)Cache-Control: private, must-revalidate
+Pragma: no-cache
+(Expires: Thu, 01 Jan 1970 00:00:00 GMT
+(ETag: eab21d7e113d8b98572ec5271c332a06
+Content-Type: text/javascript
+Content-Length: 300
+%Date: Thu, 09 Jan 2014 13:57:42 GMT
+Connection: close
+Server: Jimmy/1.0
+P3P: CP="NOI DSP COR NID"
+®
+try { BrightTag.instance.appendContent('\x3cimg src\x3d\x22//ad.doubleclick.net/activity;src\x3d3994169;type\x3dlp;cat\x3dsepho740;ord\x3d'+eval('Math.random()*10000000000000')+'?\x22 width\x3d\x221\x22 height\x3d\x221\x22 alt\x3d\x22\x22/\x3e',{tagId:59143});
+} catch(e) { bt_handle_exception(e); }

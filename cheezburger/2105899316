@@ -1,0 +1,21 @@
+PHTTP208.115.118.115"›
+åGET /Rating/Scores?callback=jQuery190097258943435736_1389200145588&section=3&assetIds=149765&assetIds=7992631808&assetIds=7990563328&assetIds=57460737&assetIds=7991006976&assetIds=150277&assetIds=148997&_=1389200145589 HTTP/1.1
+Host: app.cheezburger.com
+Connection: keep-alive
+Accept: */*
+vUser-Agent: Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/31.0.1650.63 Safari/537.36
+&Referer: http://www.cheezburger.com/
+$Accept-Encoding: gzip,deflate,sdch
+!Accept-Language: en-US,en;q=0.8
+
+* 
+HTTP/1.1 200 OK
+Server: nginx/1.0.15
+%Date: Wed, 08 Jan 2014 16:55:33 GMT
+7Content-Type: application/x-javascript; charset=utf-8
+Connection: keep-alive
+Cache-Control: private
+'P3P: CP="CUR ADM OUR NOR STA NID STA"
+Content-Length: 284
+ž
+jQuery190097258943435736_1389200145588({"149765":{"Wins":479,"Fails":61},"7992631808":{"Wins":60,"Fails":1},"7990563328":{"Wins":621,"Fails":18},"57460737":{"Wins":110,"Fails":5},"7991006976":{"Wins":152,"Fails":5},"150277":{"Wins":915,"Fails":35},"148997":{"Wins":1170,"Fails":176}})

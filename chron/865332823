@@ -1,0 +1,118 @@
+PHTTP66.179.73.25"¬
+EGET /app/localedgemedia/resources/js/jquery.placeholder.js HTTP/1.1
+Host: static.localedge.com
+Connection: keep-alive
+Accept: */*
+vUser-Agent: Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/31.0.1650.63 Safari/537.36
+WReferer: http://www.localedgemedia.com/website-analysis-partner-simple?referrer=chron
+$Accept-Encoding: gzip,deflate,sdch
+!Accept-Language: en-US,en;q=0.8
+
+*¼
+HTTP/1.1 200 OK
+%Date: Fri, 10 Jan 2014 16:04:19 GMT
+$Server: Apache/2.2.26 (Unix) DAV/2
+.Last-Modified: Thu, 02 Jan 2014 21:56:16 GMT
+"ETag: "58014c-b25-4ef03dcd92000"
+Accept-Ranges: bytes
+Content-Length: 2853
+Cache-Control: max-age=86400
+(Expires: Sat, 11 Jan 2014 16:04:19 GMT
+ Keep-Alive: timeout=5, max=100
+Connection: Keep-Alive
+&Content-Type: application/javascript
+§
+/*!
+ * HTML5 Placeholder jQuery Plugin v1.8
+ * @link http://github.com/mathiasbynens/Placeholder-jQuery-Plugin
+ * @author Mathias Bynens <http://mathiasbynens.be/>
+ */
+;(function($) {
+
+	var isInputSupported = 'placeholder' in document.createElement('input'),
+	    isTextareaSupported = 'placeholder' in document.createElement('textarea');
+	if (isInputSupported && isTextareaSupported) {
+		$.fn.placeholder = function() {
+			return this;
+		};
+	} else {
+		$.fn.placeholder = function() {
+			return this.filter((isInputSupported ? 'textarea' : ':input') + '[placeholder]')
+				.bind('focus.placeholder', clearPlaceholder)
+				.bind('blur.placeholder', setPlaceholder)
+			.trigger('blur.placeholder').end();
+		};
+	}
+
+	function args(elem) {
+		// Return an object of element attributes
+		var newAttrs = {},
+		    rinlinejQuery = /^jQuery\d+$/;
+		$.each(elem.attributes, function(i, attr) {
+			if (attr.specified && !rinlinejQuery.test(attr.name)) {
+				newAttrs[attr.name] = attr.value;
+			}
+		});
+		return newAttrs;
+	}
+
+	function clearPlaceholder() {
+		var $input = $(this);
+		if ($input.val() === $input.attr('placeholder') && $input.hasClass('placeholder')) {
+			if ($input.data('placeholder-password')) {
+				$input.hide().next().show().focus();
+			} else {
+				$input.val('').removeClass('placeholder');
+			}
+		}
+	}
+
+	function setPlaceholder(elem) {
+		var $replacement,
+		    $input = $(this),
+		    $origInput = $input,
+		    isInitialized = $input.data('placeholder-init');
+		if ($input.val() === '' || (!isInitialized && $input.val() === $input.attr('placeholder'))) {
+			if ($input.is(':password')) {
+				if (!$input.data('placeholder-textinput')) {
+					try {
+						$replacement = $input.clone().attr({ type: 'text' });
+					} catch(e) {
+						$replacement = $('<input>').attr($.extend(args($input[0]), { type: 'text' }));
+					}
+					$replacement
+						.removeAttr('name')
+						.data('placeholder-password', true)
+						.bind('focus.placeholder', clearPlaceholder);
+					$input
+						.data('placeholder-textinput', $replacement)
+						.before($replacement);
+				}
+				$input = $input.hide().prev().show();
+			}
+			$input.addClass('placeholder').val($input.attr('placeholder'));
+		} else {
+			$input.removeClass('placeholder');
+		}
+		if (!isInitialized) {
+ 		$origInput.data('placeholder-init', true);
+ 	}
+	}
+
+	$(function() {
+		// Look for forms
+		$('form').bind('submit.placeholder', function() {
+			// Clear the placeholder values so they donï¿½t get submitted
+			var $inputs = $('.placeholder', this).each(clearPlaceholder);
+			setTimeout(function() {
+				$inputs.each(setPlaceholder);
+			}, 10);
+		});
+	});
+
+	// Clear placeholder values upon page reload
+	$(window).bind('unload.placeholder', function() {
+		$('.placeholder').val('');
+	});
+
+}(jQuery));

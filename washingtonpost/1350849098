@@ -1,0 +1,25 @@
+PHTTP
+18.7.20.70"É
+‘GET /posttv/feature/externals/js?features=posttv-methode-carousel-small,posttv-methode-player-full&callback=pb_ext_mod_externals_jsonp HTTP/1.1
+Host: www.washingtonpost.com
+Connection: keep-alive
+pAccept: text/javascript, application/javascript, application/ecmascript, application/x-ecmascript, */*; q=0.01
+"X-Requested-With: XMLHttpRequest
+vUser-Agent: Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/31.0.1650.63 Safari/537.36
+)Referer: http://www.washingtonpost.com/
+$Accept-Encoding: gzip,deflate,sdch
+!Accept-Language: en-US,en;q=0.8
+òCookie: de=131; client_region=0; rpld1=0:mit.edu|20:usa|21:ma|22:cambridge|23:42.363998|24:-71.084999|; mbox=check#true#1389366402|session#1389366341674-752581#1389368202|PC#1389366341674-752581.25_29#1390575942; wpni_poe=true; devicetype=0
+
+*½
+HTTP/1.1 200 OK
+ Access-Control-Allow-Origin: *
+Cache-Control: max-age 86400
+Server: nginx
+Content-Length: 31
+%Date: Fri, 10 Jan 2014 15:05:29 GMT
+Connection: keep-alive
+mSet-Cookie: X-WP-Split=X;Expires=Thursday, 01-January-1970 00:00:00 GMT; path=/; domain=.washingtonpost.com
+lSet-Cookie: devicetype=0;Expires=Monday, 10-February-2014 01:34:29 GMT; path=/; domain=.washingtonpost.com
+!
+pb_ext_mod_externals_jsonp([]);

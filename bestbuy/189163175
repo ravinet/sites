@@ -1,0 +1,25 @@
+PHTTP54.243.36.168"ß
+®GET /service/api?method=liveclicker.slideshow.getList&account_id=1937&include_slides=true&slideshow_id=110682&slideshow=true&format=json&var=liveclicker.api_res[0] HTTP/1.1
+Host: sv.liveclicker.net
+Connection: keep-alive
+Accept: */*
+vUser-Agent: Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/31.0.1650.63 Safari/537.36
+"Referer: http://www.bestbuy.com/
+$Accept-Encoding: gzip,deflate,sdch
+!Accept-Language: en-US,en;q=0.8
+
+*–
+HTTP/1.1 200 OK
+&Cache-control: no-cache="set-cookie"
+.Content-Type: application/json;charset=utf-8
+%Date: Thu, 09 Jan 2014 00:26:15 GMT
+Server: Apache-Coyote/1.1
+²Set-Cookie: AWSELB=E35D377F1049E705C8DC13194D085AFDF92790B503479DDCD6648744795057B7A053A11735C1961089BA02561B93802EF44586723F1AC3137E538E19BE4950E7603F4F4597;PATH=/;MAX-AGE=600
+Vary: Accept-Encoding
+transfer-encoding: chunked
+Connection: keep-alive
+Þ
+7d0
+liveclicker.api_res[0] = { "slideshows" : { "slideshow" : [ { "slideshow_id" : "110682", "title" : "Homepage Slideshow - DO NOT DELETE ", "views" : "0", "rating" : "0", "slides" : { "slide" : [ { "photo_number" : "1", "photo_location" : "http://ecdn.liveclicker.net/0079A8/cdn/images/client/1937/slideshows/-1319900949.jpg", "text" : "widget", "link" : "", "description" : "<p>Deals of the Week 12/29</p>", "creationDate" : "2013-12-28 12:27:38.0", "modificationDate" : "2014-01-03 18:37:08.0", "product_links" : { "product_link" : [  ] } }, { "photo_number" : "2", "photo_location" : "http://ecdn.liveclicker.net/0079A8/cdn/images/client/1937/slideshows/-1210525504.jpg", "text" : "widget", "link" : "", "description" : "<p>Deals of the Week 1/5/2014</p>", "creationDate" : "2014-01-03 18:48:09.0", "modificationDate" : "2014-01-04 20:30:14.0", "product_links" : { "product_link" : [  ] } }, { "photo_number" : "3", "photo_location" : "http://ecdn.liveclicker.net/0079A8/cdn/images/client/1937/slideshows/-1188559421.jpg", "text" : "widget", "link" : "", "description" : "<p>Picking a Carrier &amp; Plan: 3 Things to Know</p>", "creationDate" : "2014-01-03 18:48:54.0", "modificationDate" : "2014-01-04 20:30:52.0", "product_links" : { "product_link" : [  ] } }, { "photo_number" : "4", "photo_location" : "http://ecdn.liveclicker.net/0079A8/cdn/images/client/1937/slideshows/-1844120229.jpg", "text" : "widget", "link" : "", "description" : "<p>Things to Know Before Buying a Tablet</p>", "creationDate" : "2014-01-03 18:49:27.0", "modificationDate" : "2014-01-04 20:30:52.0", "product_links" : { "product_link" : [  ] } }, { "photo_number" : "5", "photo_location" : "http://ecdn.liveclicker.net/0079A8/cdn/images/client/1937/slideshows/-1746077152.jpg", "text" : "widget", "link" : "", "description" : "<p>Things to Know Before Buying: TV Types</p>", "creationDate" : "2014-01-03 18:49:54.0", "modificationDate" : "2014-01-04 20:30:52.0", "product_links" : { "product_link" : [  ] } } ] } } ] } };
+0
+

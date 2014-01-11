@@ -1,0 +1,26 @@
+PHTTP68.67.152.74"µ
+2GET /a_usersync?c=7&cbfn=ANX_async_load HTTP/1.1
+Host: ib.adnxs.com
+Connection: keep-alive
+Accept: */*
+vUser-Agent: Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/31.0.1650.63 Safari/537.36
+!Referer: http://us.weibo.com/gb
+$Accept-Encoding: gzip,deflate,sdch
+!Accept-Language: en-US,en;q=0.8
+×Cookie: icu=ChII0LcDEAoYASABKAEwnOa3lgUQnOa3lgUYAA..; anj=dTM7k!M4.g1IKvihK:9V[+9f#Abz#5Z8>#V-^@!KG9XLO4444Nh^'qDN96WGVA^>ZrBQLTM4iHqO.b'ksz%_-st`*n?$'/5TNGI00<@SQ0@a/3!9CO.ub*=t; uuid2=7534894523098518793; sess=1
+
+*Ù
+HTTP/1.1 200 OK
+,Cache-Control: no-store, no-cache, private
+Pragma: no-cache
+(Expires: Sat, 15 Nov 2008 16:00:00 GMT
+†P3P: policyref="http://cdn.adnxs.com/w3c/policy/p3p.xml", CP="NOI DSP COR ADM PSAo PSDo OURo SAMo UNRo OTRo BUS COM NAV DEM STA PRE"
+X-XSS-Protection: 0
+sSet-Cookie: uuid2=7534894523098518793; path=/; expires=Wed, 09-Apr-2014 00:53:49 GMT; domain=.adnxs.com; HttpOnly
+`Set-Cookie: sess=1; path=/; expires=Fri, 10-Jan-2014 00:53:49 GMT; domain=.adnxs.com; HttpOnly
+àSet-Cookie: anj=dTM7k!M4.g1IKv%hK:9V[+9f#Abz#5Z8>#V-^@!KG9XLO4444Nh^'qDN96WGAg0JorBQLTM4iHqO.b'ksz%_-sqSu/OHEd0.JK4C7vw=GaF2/5!z'(7$-YXK(hgi8.96H'; path=/; expires=Wed, 09-Apr-2014 00:53:49 GMT; domain=.adnxs.com; HttpOnly
+Content-Type: text/javascript
+%Date: Thu, 09 Jan 2014 00:53:49 GMT
+Content-Length: 156
+ž
+ANX_async_load({"url":"http://ad.yieldmanager.com/cms/v1?esig=1~17e68b1b86afcfd8436104fe567484ccc2161b0f&nwid=10000602235&sigv=1", "c":6, "tagtype":"img"});

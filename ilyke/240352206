@@ -1,0 +1,29 @@
+PHTTP108.170.199.174"í
+ZGET /set_partner_uid?partnerID=402&sscs_active=1&partnerUID=2581377494078463609 HTTP/1.1
+%Host: segment-pixel.invitemedia.com
+Connection: keep-alive
+Accept: image/webp,*/*;q=0.8
+vUser-Agent: Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/31.0.1650.63 Safari/537.36
+çReferer: http://cdn.turn.com/server/ddc.htm?uid=2581377494078463609&mktid=571&mpid=5179754&fpid=13&rnd=2994869732424556153&nu=n&sp=n&ctid=1
+$Accept-Encoding: gzip,deflate,sdch
+!Accept-Language: en-US,en;q=0.8
+
+*ˆ	
+HTTP/1.1 302 Found
+%Date: Thu, 09 Jan 2014 01:41:32 GMT
+zSet-Cookie: uid=9df091f1-3055-4f00-b296-220c9270c8e2;Path=/;Domain=invitemedia.com;Expires=Fri, 09-Jan-2015 01:41:32 GMT
+(Expires: Thu, 01 Jan 1970 00:00:00 GMT
+∫Set-Cookie: partnerUID="eyI0MDIiOlsiMjU4MTM3NzQ5NDA3ODQ2MzYwOSIsdHJ1ZSwxMzg5MjMxNjkyXX0=";Version=1;Path=/;Domain=invitemedia.com;Expires=Fri, 09-Jan-2015 01:41:32 GMT;Max-Age=31536000
+Pragma: no-cache
+ÄP3P: policyref="/w3c/p3p.xml", CP="OTI DSP COR ADMo TAIo PSAo PSDo CONo OUR SAMo OTRo STP UNI PUR COM NAV INT DEM STA PRE LOC"
+Cache-Control: no-cache
+{Location: http://cm.g.doubleclick.net/pixel?google_sc&google_nid=invitemedia&google_cm&google_hm=nfCR8TBVTwCyliIMknDI4g==
+Content-Length: 0
+Connection: close
+ Server: Jetty(7.3.1.v20110307)
+^Set-Cookie: impressions=;Path=/;Domain=invitemedia.com;Expires=Thu, 01-Jan-1970 00:00:01 GMT
+YSet-Cookie: clicks=;Path=/;Domain=invitemedia.com;Expires=Thu, 01-Jan-1970 00:00:01 GMT
+[Set-Cookie: segments=;Path=/;Domain=invitemedia.com;Expires=Thu, 01-Jan-1970 00:00:01 GMT
+\Set-Cookie: frequency=;Path=/;Domain=invitemedia.com;Expires=Thu, 01-Jan-1970 00:00:01 GMT
+_Set-Cookie: io_frequency=;Path=/;Domain=invitemedia.com;Expires=Thu, 01-Jan-1970 00:00:01 GMT
+

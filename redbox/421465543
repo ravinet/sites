@@ -1,0 +1,35 @@
+PHTTP208.52.173.198"÷
+GET /?aid=2818 HTTP/1.1
+Host: rbox.netmng.com
+Connection: keep-alive
+Accept: */*
+vUser-Agent: Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/31.0.1650.63 Safari/537.36
+!Referer: http://www.redbox.com/
+$Accept-Encoding: gzip,deflate,sdch
+!Accept-Language: en-US,en;q=0.8
+0Cookie: u=b4a5cc40-793f-4bcb-a5eb-bb07b9871879
+
+*Ã	
+HTTP/1.1 200 OK
+%Date: Fri, 10 Jan 2014 16:55:50 GMT
+Server: Apache/2.2.16
+KP3P: policyref="/w3c/p3p.xml", CP="NOI DSP COR DEVa PSAa OUR BUS COM NAV"
+(Expires: Wed, 08 Jan 2014 16:55:50 GMT
+.Last-Modified: Wed, 08 Jan 2014 16:55:50 GMT
+4Cache-Control: no-store, no-cache, must-revalidate
+*Cache-Control: post-check=0, pre-check=0
+Pragma: no-cache
+±Access-Control-Allow-Origin: https://www.youtube.com http://www.youtube.com https://s0.2mdn.net http://s0.2mdn.net https://static.doubleclick.net http://static.doubleclick.net
+ÊSet-Cookie: evo5=hucffecp4uv33%7CkmFjLhWD612ycmd2BvhnqXAShteH9EDYm92pbI%2BUhErkjPstfeS20HuhNL03jI%2FVPjIgtk7nmfh55gt3tHbyFQjQe%2FJGiaAllwe6RR7vYucP4CONJja5mI6345NngBWJPA7U06ylQPAQ5nZUnMdgCJ6cVooIyjqVtDzOq78DlQ0uGm1oEKj4uq%2BcFRG0jKmpjLqQs4KsLB3bh8FccqPn4Q%3D%3D; expires=Sat, 12-Jul-2014 16:55:50 GMT; path=/; domain=.netmng.com
+Content-Length: 241
+X-Cnection: close
+.Content-Type: text/javascript; charset=UTF-8
+ó
+
+			if (document.createElement && document.body) {
+				var nm_script = document.createElement('SCRIPT');
+				nm_script.src = document.location.protocol + '//rbox.netmng.com/?aid=2818&cch';
+				document.body.appendChild(nm_script);
+			}
+		
+ 

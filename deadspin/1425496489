@@ -1,0 +1,27 @@
+»HTTPS66.220.152.19"É
+ÖGET /connect/ping?client_id=49024928184&domain=deadspin.com&origin=1&redirect_uri=http%3A%2F%2Fstatic.ak.facebook.com%2Fconnect%2Fxd_arbiter.php%3Fversion%3D28%23cb%3Df39c046fc8%26domain%3Ddeadspin.com%26origin%3Dhttp%253A%252F%252Fdeadspin.com%252Ffec422634%26relation%3Dparent&response_type=token%2Csigned_request%2Ccode&sdk=joey HTTP/1.1
+Host: www.facebook.com
+Connection: keep-alive
+TAccept: text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8
+vUser-Agent: Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/31.0.1650.63 Safari/537.36
+Referer: http://deadspin.com/
+$Accept-Encoding: gzip,deflate,sdch
+!Accept-Language: en-US,en;q=0.8
+
+*Ð
+
+HTTP/1.1 302 forced.302
+=Cache-Control: private, no-cache, no-store, must-revalidate
+ÓContent-Security-Policy: default-src *;script-src https://*.facebook.com http://*.facebook.com https://*.fbcdn.net http://*.fbcdn.net *.facebook.net *.google-analytics.com *.virtualearth.net *.google.com 127.0.0.1:* *.spotilocal.com:* chrome-extension://lifbcibllhkdhoafpjfnlhfpfgnpldfl 'unsafe-inline' 'unsafe-eval' https://*.akamaihd.net http://*.akamaihd.net *.atlassolutions.com;style-src * 'unsafe-inline';connect-src https://*.facebook.com http://*.facebook.com https://*.fbcdn.net http://*.fbcdn.net *.facebook.net *.spotilocal.com:* https://*.akamaihd.net ws://*.facebook.com:* http://*.akamaihd.net https://fb.scanandcleanlocal.com:* *.atlassolutions.com http://attachment.fbsbx.com https://attachment.fbsbx.com;
+(Expires: Sat, 01 Jan 2000 00:00:00 GMT
+½Location: http://static.ak.facebook.com/connect/xd_arbiter.php?version=28#cb=f39c046fc8&domain=deadspin.com&origin=http%3A%2F%2Fdeadspin.com%2Ffec422634&relation=parent&error=unknown_user
+Pragma: no-cache
+&Strict-Transport-Security: max-age=0
+!X-Content-Type-Options: nosniff
+X-XSS-Protection: 0
+(Content-Type: text/html; charset=utf-8
+:X-FB-Debug: 9qIy017OMP42nxBdJy+DHE0+mUaUcR6z2u9fKuy1N2w=
+%Date: Thu, 09 Jan 2014 01:55:58 GMT
+Connection: keep-alive
+Content-Length: 0
+

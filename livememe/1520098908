@@ -1,0 +1,2068 @@
+PHTTP75.126.10.195"А
+GET / HTTP/1.1
+Host: www.livememe.com
+Connection: keep-alive
+TAccept: text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8
+vUser-Agent: Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/31.0.1650.63 Safari/537.36
+$Accept-Encoding: gzip,deflate,sdch
+!Accept-Language: en-US,en;q=0.8
+
+*со
+HTTP/1.1 200 OK
+X-Powered-By: PHP/5.5.3
+Content-type: text/html
+Transfer-Encoding: chunked
+%Date: Thu, 09 Jan 2014 01:53:06 GMT
+Server: Apache 1.3.29
+╗н
+4ac8
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+  	<meta name="description" content="get the best memes at livememe.com" />
+  	<meta property="og:description" content="get the best memes at livememe.com" />
+    <meta property="og:type" content="article" />
+    <meta property="og:site_name" content="livememe" />
+
+    <style type="text/css">
+
+a.searcha:link {text-decoration: none; color:#000000;}
+a.searcha:visited {text-decoration: none; color:#000000;}
+a.searcha:active {text-decoration: none; color:#000000;}
+a.searcha:hover {text-decoration: none; color:#000000;}
+
+A:visited { color: #800080; }
+A:link { color: #000080; }
+
+input::-webkit-input-placeholder {
+    color:    #808080;
+}
+input:-moz-placeholder {
+    color:    #808080;
+}
+input:-ms-input-placeholder {
+    color:    #808080;
+}
+
+</style>
+
+
+<script type="text/javascript" src="//ajax.googleapis.com/ajax/libs/jquery/1.7.0/jquery.min.js"></script>
+<script type="text/javascript">
+var server_count = 1;
+
+var template_sid = 0;
+var template_id = 0;
+
+
+var func_load_time = new Date().getTime();
+
+
+function base36bytesToInt (s) {
+  var v = 0;
+  for (var i = 0; i<s.length; i++) {
+    var ch = s.charCodeAt(i);
+    if (ch>=0x61 && ch<=0x7a) {
+      v = (v*36) + ch + 10-0x61;
+    } else if (ch>=0x41 && ch<=0x5a) {
+      v = (v*36) + ch + 10-0x41; 
+    } else if (ch>=0x30 && ch<=0x39) {
+      v = (v*36) + ch - 0x30;
+    }
+  }
+  return v;
+}
+
+
+function base36intToBytes (a) {
+  if (a == 0) {
+   return "0";
+  }
+  var s = "";
+  var j = 8;
+  var v;
+  while (a > 0 && j > 0) {
+   v = a%36;
+   j--;
+   if (v <= 9) {
+    s = String.fromCharCode(0x30 + v) + s;
+   } else {
+    s = String.fromCharCode(0x61 + v - 10) + s;
+   }
+   a -= v;
+   a /= 36;
+  }
+  return s;
+}
+
+function loadScript (u) {
+  var o = document.createElement("script");
+	o.src = u;
+	o.type = "text/javascript";
+	document.getElementsByTagName("head")[0].appendChild(o);
+}
+
+  function toURLvar (v) {
+   return encodeURI((""+v).split("\\").join("\\\\").split("/").join("\\-")).split("#").join("%23");
+  }
+
+var elem = document.createElement('canvas');
+var cis = !!(elem.getContext && elem.getContext('2d'));
+
+
+
+
+
+var ldbtns = [];
+
+function getBtnByProperty (prop, targ) {
+  var o;
+  for (var i = ldbtns.length-1; i>=0; i--) {
+    o = ldbtns[i];
+    if (o[prop] == targ) {
+      return o;
+    }
+  }
+}
+
+var btrdo = {};
+btrdo.rd_iv = -1;
+btrdo.btns = [];
+
+function btnRedrawLoop () {
+  for (var i = btrdo.btns.length-1; i>=0; i--) {
+    var o = btrdo.btns[i];
+    o.rdto ++;
+    //ctx.clearRect(0, 0, canvas.width, canvas.height);
+    var av = .32;
+    if (o.rdto >= 100) {
+      av = 1;
+      btrdo.btns.splice(i, 1);
+      o.redrawing = false;
+     }
+    o.internalRedraw(av);
+  }
+  if (btrdo.btns.length == 0) {
+    clearInterval(btrdo.rd_iv);
+    btrdo.rd_iv = -1;
+  }
+ }
+
+function makeBtn (pdiv, u, ww, hh, cmx, cmy, cmw, cmh) {
+  var div = document.createElement('div');
+  div.style.position = 'absolute';
+  div.style.left = cmx+'px';
+  div.style.top = cmy+'px';
+  div.style.width = cmw+'px';
+  div.style.height = cmh+'px';
+  if (cis) {
+    div.style.background = 'rgba(0, 0, 0, 0)';
+    div.style.opacity = '0.0';
+  }
+  
+  var ii = new Image();
+  var o = {};
+  o.onclick = function () {};
+  o.onload = function () {};
+  o.u = u;
+  o.div = div;
+  o.ww = ww;
+  o.hh = hh;
+  o.cmx = cmx;
+  o.cmy = cmy;
+  o.cmw = cmw;
+  o.cmh = cmh;
+  o.ii = ii;
+  o.redrawing = false;
+  /*
+  o.ppdiv = ppdiv;
+  var pdiv = document.createElement('div');
+  ppdiv.appendChild(pdiv);
+  */
+  $(pdiv).css({position: 'relative', width: ww+'px', height: hh+'px', 'margin-left': 'auto', 'margin-right': 'auto', opacity: 0});
+  o.pdiv = pdiv;
+  o.pda = 0;
+  
+  if (cis) {
+    var canvas,ctx;
+    canvas = document.createElement('canvas');
+    canvas.width = ww;
+    canvas.height = hh;
+    ctx = canvas.getContext('2d');
+    o.canvas = canvas;
+    $(canvas).css({position: 'absolute', left: '0px', top: '0px'});
+    o.ctx = ctx;
+    
+    var buf_canvas,buf_ctx;
+    buf_canvas = document.createElement('canvas');
+    buf_canvas.width = ww;
+    buf_canvas.height = hh;
+    buf_ctx = buf_canvas.getContext('2d');
+    o.buf_canvas = buf_canvas;
+    o.buf_ctx = buf_ctx;
+    pdiv.appendChild(canvas);
+  }
+  pdiv.appendChild(div);
+  o.div = div;
+  ldbtns.push(o);
+  ii.onload = function () {
+    var o = getBtnByProperty('ii', this);
+    var u = o.u;
+    var div = o.div;
+    var pdiv = o.pdiv;
+    var canvas = o.canvas;
+    if (cis) {
+     o.ctx.globalAlpha = 1;
+     o.ctx.clearRect(0, 0, canvas.width, canvas.height);
+     //o.buf_ctx.drawImage(o.ii, 0, 3 * o.hh, o.ww, o.hh, 0, 0, o.ww, o.hh);
+     o.buf_ctx.drawImage(o.ii, 0, 0, o.ww, o.hh, 0, 0, o.ww, o.hh);
+     o.ctx.drawImage(o.buf_canvas, 0, 0);
+    } else {
+     pdiv.style.background = 'url("'+u+'")';
+    }
+    pdiv.style.width = o.ww+'px';
+    pdiv.style.height = o.hh+'px';
+    pdiv.style.backgroundPosition = '0px 0px';
+    div.style.cursor = 'pointer';
+    o.mo = false;
+    o.md = false;
+    o.dis = false;
+    o.bsha = 0;
+    o.redraw = function () {
+     o.rdto = 0;
+     o.addToRedrawArray();
+    }
+   
+   o.addToRedrawArray = function () {
+     if (btrdo.rd_iv == -1) {
+      btrdo.rd_iv = setInterval('btnRedrawLoop()', 35);
+     }
+     if (!this.redrawing) {
+      this.redrawing = true;
+      btrdo.btns.push(this); 
+     }
+   }
+   
+   o.internalRedraw = function (av) {
+      var sy = 0;
+      if (this.md) { 
+        sy = (2 * this.hh);
+      } else if (this.mo) {
+        sy = this.hh;
+      }
+     if (cis) {
+       var buf_canvas = this.buf_canvas;
+       var buf_ctx = this.buf_ctx;
+       buf_ctx.globalAlpha = av;
+       buf_ctx.drawImage(this.ii, 0, sy, this.ww, this.hh, 0, 0, this.ww, this.hh);
+       
+       var canvas = this.canvas;
+       var ctx = this.ctx;
+       
+       var dbsha;
+       if ((!this.dis) && (this.mo)) {
+        dbsha = 1;
+       } else {
+        dbsha = 0.2;
+       }
+       
+       if (this.bsha < dbsha) {
+        this.bsha += .05;
+        if (this.bsha >= dbsha) {
+         this.bsha = dbsha;
+        }
+       } else {
+        this.bsha -= .05;
+        if (this.bsha <= dbsha) {
+         this.bsha = dbsha;
+        }
+       }
+       
+       ctx.globalAlpha = 1;
+       ctx.clearRect(0, 0, canvas.width, canvas.height);
+       
+       ctx.globalAlpha = this.bsha;
+       ctx.drawImage(this.ii, 0, 3 * this.hh, this.ww, this.hh, 0, 0, this.ww, this.hh);
+
+       ctx.globalAlpha = 1;
+       ctx.drawImage(buf_canvas, 0, 0);
+     } else {
+       this.pdiv.style.backgroundPosition = '0px '+((sy>0)?(-sy):0)+'px';
+     }
+     var dpda = this.dis?.25:1;
+     this.pda += (dpda - this.pda) * .15;
+     if (Math.abs(this.dpda - this.pda) < .1) {
+      this.pda = this.dpda; 
+     }
+     this.pdiv.style.opacity = this.pda;
+   }
+
+    o.setEnabled = function (e) {
+      o.dis = !e;
+      o.redraw();
+      if (e) { 
+       o.div.style.cursor = 'pointer';
+      } else {
+       o.mo = false;
+       o.md = false;
+       o.pdiv.style.backgroundPosition = '0px 0px';
+       o.div.style.cursor = 'auto';
+      }
+    }
+    $(div).mouseover(function () {
+      var o = getBtnByProperty('div', this);
+      if (!o.dis) {
+       o.mo = true;
+       o.redraw();
+      }
+    });
+    $(div).mouseout(function () {
+      var o = getBtnByProperty('div', this);
+      if (!o.dis) {
+       o.mo = false;
+       o.redraw();
+       //o.pdiv.style.backgroundPosition = '0px 0px';
+      }
+    });
+    $(div).mousedown(function () {
+      var o = getBtnByProperty('div', this);
+      if (!o.dis) {
+       o.md = true;
+       o.redraw();
+       //o.pdiv.style.backgroundPosition = '0px -'+(2 * o.hh)+'px';
+      }
+    });
+    $(div).mouseup(function () {
+      var o = getBtnByProperty('div', this);
+      if (!o.dis) {
+       o.internalRedraw(1);
+       o.md = false;
+       o.redraw();
+       //o.pdiv.style.backgroundPosition = '0px 0px'; 
+      }
+    });
+    $(window).mouseup(function () {
+      for (var i = ldbtns.length-1; i>=0; i--) {
+        var o = ldbtns[i];
+        if (o.md) {
+         o.md = false;
+         o.redraw();
+        }
+      }
+    });
+    $(div).click(function () {
+      var o = getBtnByProperty('div', this);
+      if (!o.dis) {
+       o.onclick();
+      }
+    });
+    o.redraw();
+    o.onload();
+  }
+  ii.src = u;
+  return o;
+}
+
+var memes = [
+{n:"Confession Bear", ph:"old p was qi94poh", d: "p:vhfkku9, a:gzley81, female:t3rnjj5, dangling:562mgn5, sunglasses:fvpdt4x, cat:lm3f9oh, redditor:ksx6co1, happy:dcus0xt"},
+{n:"Angry Walter - Am I The Only One Around Here?", d: "p:26gji81, shaved:3juy5d, grumpy cat:22iqe5d"},
+{n:"Good Guy Greg", d:"p:fj2k5nl, smoke-free:kvpa4ch, animated smoke:2b003q9, vomiting joints eternally:l0hc2ld, female version:hzvjh41, male morphing into female:9fqr25d, bad luck:6t5g9t, scumbag:jmaggqp, bad luck scumbag:llivie9, reddit:nj309z5, cat:jw4h681"},
+{n:"Redditor's Wife", d:"p:k2ruh8h"},
+{n:"Skeptical Fry", d:"a:mkq8roh, p:doret1d, female version:slo2a8x, bart:rijgvhd, robot:hzgcx4x, reddtor:9jre0wx"},
+{n:"Bad Joke Eel", d:"p:ouvswch"},
+{n:"Annoyed Picard", d:"p:h71295t, dramatic zoom:nt60url, original episode footage:s2dw0pt, borg queen:9gp7ayp, creepy reddit alien version:ravhbc1, female version:lwuu9, zoidberg:ldzco8x"},
+{n:"One Does Not Simply", d:"p:p2mv9b5"},
+{n:"Downvoting Roman", d:"p:o84gs75, a:u9spba9, original movie footage:u6zasyp"},
+{n:"Scumbag Steve", d:"p:puvjwh, canadian:sl59r29"},
+{n:"Success Kid", d:"p:myayb5t, fist pump:oeawroh, beard:nesajr5, wolverine claws:jobgc8x, link (from zelda):2o86nfl, forever alone:amote1t, redditor:v9qh8pt, paranoid:fc43y69, muslim:cqlzo8x"},
+{n:"Lazy College Senior", d:"p:2sy1zi9"},
+{n:"Insanity Wolf", d:"p:jm70e75, canadian:ib1m6sh"},
+{n:"Actual Advice Mallard", d:"p:eowikf5, a:577w2kh, malicious advice:v2o1k01, angry advice:e9wmitd, paranoid advice:tja9fsx, slowpoke:vau8h9d"},
+{n:"Malicious Advice Mallard", d:"p:v2o1k01, actual advice:eowikf5, angry advice:e9wmitd, paranoid advice:tja9fsx, slowpoke:vau8h9d"},
+{n:"First World Problems", d:"p:1ii9cip, animated tear of sorrow:hf2nmdd"},
+{n:"Socially Awkward Penguin", d:"p:9wdsu0x, walking:k6g5fdt, guitar:t2sguyp"},
+{n:"Good Girl Gina", d:"p:dtyj1j5, a:9k98ukh"},
+{n:"Look At All The", d:"p:8894oox, a:itffsch"},
+{n:"Sudden Clarity Clarence", d:"p:3giakh, a:6kqpf7l"},
+{n:"Office Space Lumbergh", d:"p:so3gwu9"},
+{n:"Grumpy Cat", d:"p:gui940x"},
+{n:"Socially Awesome Awkward Penguin", d:"p:66mlp7l, wavy:i40umyp"},
+{n:"Slowpoke", d:"p:7pi5xvl, fastpoke:g6vulup"},
+{n:"Scumbag Brain", d:"p:5t0yrtt"},
+{n:"Foul Bachelor Frog", d:"p:3c0j6wx"},
+{n:"Matrix Morpheus", d:"p:fgtk0gx, female version:ojf0wjl, cat:3y64eqp"},
+{n:"Socially Awkward Awesome Penguin", d:"p:uzj9dpd, wavy:9y1s8u9"},
+{n:"Fuck Me, Right?", d:"p:94pwe81"},
+{n:"Third World Success Kid", d:"p:br4lrcx"},
+{n:"10 Guy", d:"p:3r9hjdt"},
+{n:"Tough Spongebob", d:"p:gfy539d"},
+{n:"Condescending Wonka", d:"p:knqle75"},
+{n:"Pepperidge Farm Remembers", d:"p:ayg3dwh"},
+{n:"Schrute Facts", d:"p:mf04ig1"},
+{n:"Overly Attached Girlfriend", d:"p:fapexwh"},
+{n:"Too Damn High", d:"p:ug1iysh, animated stoner version:921bgwx"},
+{n:"Brace Yourselves", d:"p:fjt0lcx, shaved:p22fi75, female version:ebe148x"},
+{n:"Captain Hindsight", d:"p:it71vz5, female version:gks0a69"},
+{n:"Sophisticated Cat", d:"p:uoleydd, grumpy:8mkfs1"},
+{n:"Aaaand It's Gone", d:"p:d6u5vkx, female version:h0ava5d"},
+{n:"Dating Site Murderer", d:"p:4ap9ow1"},
+{n:"Scumbag Stacy", d:"p:a4d3sgx, gone with spinning hat:ux4ewzl"},
+{n:"Bad Luck Brian", d:"p:mu1qxi9"},
+{n:"Zoidberg", d:"p:9khve8x, eating cake:7fo95ep"},
+{n:"Super Cool Ski Instructor", d:"p:ei5nsv5, female version:5sc3a3l, cat version:c542n4x, drug-induced animation:82hhush"},
+{n:"Sheltering Suburban Mom", d:"p:vgu0foh"},
+{n:"Scumbag Teacher", d:"p:irquo8x"},
+{n:"Mad Karma with Jim Cramer", d:"p:34arekh"},
+{n:"American Eagle", d:"p:30og01, waving flag:azsghj5"},
+{n:"I Don't Know What To Do", d:"p:ld1vaxt"},
+{n:"Lame Pun Coon", d:"p:qpudfq9"},
+{n:"Pickup Line Scientist", d:"p:unkzy75"},
+{n:"The Most Interesting Man In The World", d:"p:mwzsty9, underwater:rfr78w1"},
+{n:"Scumbag College Liberal", d:"p:a5gzsrl"},
+{n:"Toy Story Everywhere", d:"p:l8hg3oh, a:c9g5l41"},
+{n:"Overly Manly Man", d:"p:40whs69"},
+{n:"Ain't Nobody Got Time For That", d:"p:svzje81"},
+{n:"So Much Room For Activities", d:"p:acckt7l"},
+{n:"Redditor's Husband", d:"p:tjusvhd"},
+{n:"Pickup-Line Panda", d:"p:6zw7ixt"},
+{n:"Upvoting Obama", d:"p:bmb99dt"},
+{n:"Desk Spiderman", d:"p:ugpbsrl"},
+{n:"Anti-Joke Chicken", d:"p:8meklk1"},
+{n:"Fuck It Bill Murray", d:"p:njm7std"},
+{n:"Philosoraptor", d:"p:id60czl"},
+{n:"Grandma Finds the Internet", d:"p:jfbx68x"},
+{n:"Paranoid Parrot", d:"p:pwr796p"},
+{n:"Misunderstood Douchebag", d:"p:r3w843l"},
+{n:"Fuck It Bill O'Reilly", d:"p:gabnbxd, a:1gsdu4h"},
+{n:"Today Was A Good Day", d:"p:qoy5uwx"},
+{n:"Live Dangerously Austin Powers", d:"p:nzoc82p"},
+{n:"Gordon Ramsay", d:"p:e72f3xd"},
+{n:"Would Be So Happy", d:"p:3dvnitd"},
+{n:"Evil Plotting Raccoon", d:"p:nz22wrl, creepy human hands:neh0ls1"},
+{n:"Courage Wolf", d:"p:im3k4u9, a:it7mpvl"},
+{n:"Annoying Facebook Girl", d:"p:7i9zs5d"},
+{n:"Sexually Oblivious Rhino", d:"p:jvp2wap"},
+{n:"It's Not Going to Happen", d:"p:ak4xj7l"},
+{n:"Joker Mind Loss", d:"p:c21pjvl"},
+{n:"Confession Kid", d:"p:r9k6m4h"},
+{n:"Almost Politically Correct Redneck", d:"p:r7kildt"},
+{n:"Conspiracy Keanu", d:"p:en3zoyp"},
+{n:"Musically Oblivious 8th Grader", d:"p:ai52va9"},
+{n:"Give Me Karma", d:"p:tf4f7cx"},
+{n:"Good Guy Boss", d:"p:ct8mj9d"},
+{n:"Milton", d:"p:d5kih8h"},
+{n:"What Really Grinds My Gears", d:"p:v79cu4h, female version:v85cxa9, brian the dog:kkxbtlt"},
+{n:"Skeptical Third World Kid", d:"p:gsw11kx"},
+{n:"Scumbag Parents", d:"p:qdvvidd"},
+{n:"What Year Is It (Jumanji)", d:"p:3wblnoh"},
+{n:"And Then I Told Them", d:"p:ki0t9q9"},
+{n:"Helpful Tyler Durden", d:"p:jz79phd"},
+{n:"First Day on the Internet Kid", d:"p:56kx68x"},
+{n:"Disaster Girl", d:"p:sd2jptt"},
+{n:"Scumbag Redditor", d:"p:5kprcjl"},
+{n:"Obi Wan Chosen One", d:"p:ij0zukh"},
+{n:"Scumbag Driver", d:"p:tl9kt5t"},
+{n:"I Will Find You (Liam Neeson)", d:"p:3qkyv4x"},
+{n:"Forever Alone", d:"p:2jdy9wh"},
+{n:"Socially Awkward Couple", d:"p:ghatrj5"},
+{n:"Successful Black Man", d:"p:2qnmnq9"},
+{n:"Annoying Childhood Friend", d:"p:65pk3dt, creepy smile:sgoq2sh"},
+{n:"Oblivious Suburban Mom", d:"p:c35xhwh"},
+{n:"All The Things", d:"a:feal941, creepy redditor version:tzvbxwh"},
+{n:"Martin Luther King - I Have A Dream", d:"p:gcsof7l"},
+{n:"Business Cat", d:"p:c06p7nl"},
+{n:"Advice Dog", d:"p:bbs240x"},
+{n:"Overeducated Problems", d:"p:1unjgh"},
+{n:"Hypnotoad", d:"p:jygoggx"},
+{n:"Drunk Baby", d:"p:1i6eyo1"},
+{n:"Pick-up Line Michael Cera", d:"p:e08wbep"},
+{n:"Princess Leia Only Hope", d:"p:ijqoi8x"},
+{n:"Scumbag Body", d:"p:p8zgm69"},
+{n:"Forrest Gump - I Am Not A Smart Man", d:"p:8b7yxnl"},
+{n:"The Dude - You're Not Wrong, You're Just An Asshole", d:"p:eb5djfl"},
+{n:"Confused Gandalf - I Have No Memory Of This Place", d:"p:6mpczdt"},
+{n:"Scumbag God", d:"p:c87nuv5"},
+{n:"So You're Telling Me There's a Chance", d:"p:u520kbl"},
+{n:"Y U NO", d:"p:pc80lep"},
+{n:"Vengenace Dad", d:"p:5ldf3hd"},
+{n:"Bane - Batman", d:"p:adq02wx"},
+{n:"Hipster Kitty", d:"p:cbhz6ld"},
+{n:"Drew Carey Whose Line Is It Anyway", d:"p:pit348x"},
+{n:"Socially Awesome Penguin", d:"p:bqi468x"},
+{n:"Aliens Guy", d:"p:t5qeeg1"},
+{n:"Don't Remember Asking You A Goddamn Thing", d:"p:34nace9"},
+{n:"I Double Dare You", d:"p:ns7g4ip"},
+{n:"Lois Griffin", d:"p:3ilbnr5"},
+{n:"Things Are Getting Pretty Serious", d:"p:6641rq9"},
+{n:"Blackjack Bender - I'll Make My Own", d:"p:k5ks5i9"},
+{n:"Household Magician", d:"p:ejh0kjl"},
+{n:"Bill Murray - So I Got That Going For Me, Which is Nice", d:"p:n1qoqtd"},
+{n:"Technologically Impaired Duck", d:"p:srg31pd"},
+{n:"Foul Bachelorette Frog", d:"p:1o5iu69"},
+{n:"Joseph Ducreux", d:"p:2v6ep4x"},
+{n:"Aristocat", d:"p:psqmgxt"},
+{n:"Old Money Dog", d:"p:tn3lqpt"},
+{n:"Ridiculously Photogenic Guy", d:"p:f2am8m9"},
+{n:"High Expectations Asian Father", d:"p:35lec3l"},
+{n:"Zoidberg - You Should Feel Bad", d:"p:t36fazl"},
+{n:"1990s Problems", d:"p:6ogmvq9"},
+{n:"Inappropriate Joke Bill Clinton", d:"p:7kbuxq9"},
+{n:"What Is This, For Ants?", d:"p:rrpd9hd"},
+{n:"Emperor Palpatine - Good, Good, Let The Hate Flow Through You", d:"p:2fp0ish"},
+{n:"PTSD Clarinet Kid", d:"p:qnhgaxt"},
+{n:"Karate Kyle", d:"p:dkvzee9"},
+{n:"Lawyer Dog", d:"p:cg4zqch"},
+{n:"Maximus - Are You Not Entertained?", d:"p:b2juosh"},
+{n:"Sexual Picard", d:"p:f10xu9t"},
+{n:"It Wasn't Like The Pornos At All!", d:"p:ny2oykh"},
+{n:"Rich Raven", d:"p:rut51s1"},
+{n:"Unpopular Opinion Puffin", d:"p:hvlajq9"},
+{n:"I Guarantee It", d:"p:ibi0dj5"},
+{n:"Seductive Dog", d:"p:jxg9tpd"},
+{n:"Bad Guy Boss / Scumbag Boss", d:"p:ppaeao1"},
+{n:"Ordinary Muslim Man", d:"p:4v78dvl"},
+{n:"Sexually Oblivious Female", d:"p:9iaunkx"},
+{n:"Oh My God, Who The Hell Cares?", d:"p:8sk0km9"},
+{n:"Successful White Man", d:"p:qny10rl"},
+{n:"Forgetful Fish Dory", d:"p:wz0l9d"},
+{n:"Unhelpful Helpful Guy", d:"p:2z9km2p"},
+{n:"Ridiculously Photogenic Prison Inmate", d:"p:nwk9w8x"},
+{n:"Scumbag Genetics", d:"p:g5ciiv5"},
+{n:"Skyrim", d:"p:52lskpt"},
+{n:"Scumbag Toddler", d:"p:6idecw1"},
+{n:"College Freshman", d:"p:taphx4x"},
+{n:"Viggo Explains Reddit", d:"p:e7t8ww1"},
+{n:"Fashion Advice Mallard (actually a Mandarin)", d:"p:7k26v5t"},
+{n:"Maury Determined That Was a Lie", d:"p:aopt10h"},
+{n:"It's a Trap", d:"p:tvoz5k1"},
+{n:"Inigo Montoya Sees You Keep Using That Word And He Doesn't Think It Means What You Think It Means", d:"p:328mqm9"},
+{n:"Back In My Day", d:"p:a5jt9fl"},
+{n:"Push It Somewhere Else Patrick", d:"p:hcu2t35"},
+{n:"Angry Advice Mallard", d:"p:e9wmitd"},
+{n:"Life Lesson Leopard", d:"p:op7dlhd"},
+{n:"Vindictive Girls", d:"p:5v11uo1"},
+{n:"Scumbag Christian", d:"p:97dirsx"},
+{n:"Scumbag Sean", d:"p:gjiwxup"},
+{n:"Don't Be a Dumbass Dolphin", d:"p:34puox"},
+{n:"Overlord Manatee", d:"p:4ayme2p"},
+{n:"That's My Secret", d:"p:qbsajcx"},
+{n:"You Have No Power Here", d:"p:2yh28wx"},
+{n:"Scumbag Congress / Scumbag Government", d:"p:88gf75t"},
+{n:"Jesse Pinkman - Yeah, Science Bitch!", d:"p:jbbckpt"},
+{n:"Actually, I'm Not Even Mad; That's Amazing", d:"p:rwihl9d"},
+{n:"Dr. Evil \"Quotation Marks\"", d:"p:8yc0ejl"},
+{n:"Overly Suave IT Guy", d:"p:3vktyip"},
+{n:"Small Fact Frog", d:"p:8pocach"},
+{n:"Cable Guy Rubbing His Own Nipples", d:"p:5wex3s1"},
+{n:"Hagrid Shouldn't Have Done That, He Should Not Have Done That", d:"p:jpzw0td"},
+{n:"Priority Peter", d:"p:4d1lftt"},
+{n:"Scumbag Couple", d:"p:jme3qkh"},
+{n:"We've Got Dodgson Over Here", d:"p:hstv3a9"},
+{n:"Rafiki The Wise", d:"p:24mnbdt"},
+{n:"Scumbag Student", d:"p:sprvxhd"},
+{n:"Popular Opinion Polar Bear", d:"p:rb0724h"},
+{n:"Obi Wan Kenobi - Now, That's a Name I've Not Heard in a Long Time", d:"p:qvgo3sx"},
+{n:"Xerxes - I Am A Generous God", d:"p:exfcqv5"},
+{n:"Butthurt Dweller", d:"p:p5mu6v5"},
+{n:"Sorry I Annoyed You With My Friendship", d:"p:2mdcegx"},
+{n:"Baby Insanity Wolf", d:"p:coxce0x"}
+];
+
+</
+1ff8
+script>
+
+    <title>livememe.com</title><script type='text/javascript'>var album_name = "LiveMeme";</script><meta name="title" content="livememe.com" /><meta property="og:title" content="livememe.com" /><meta property="og:url" content="http://www.livememe.com/" /><meta name="keywords" content="livememe easily create the most popular memes and share them on reddit" />
+    
+    
+    <script type="text/javascript">
+
+      var template_sid = 0;
+      var template_id = 0;
+
+      var album_sid = 0;
+      var album_id = 0;
+
+	  var advanimexto_target_url = '';
+	  var advanimexto_radio_d = '';
+	  var advanimexto_cur_radio = 0;
+      
+      
+    </script>
+    
+	</head>
+	
+ 	<body style="background: #FFFFFF url(http://static.livememe.com/ibg.png) top repeat; margin: 0px; height: 100%;">
+  	  <!--<script type="text/javascript" src="http://static.livememe.com/notify.js"></script>-->
+	  
+	<!--
+	<div id="fb-root"></div>
+	<script>(function(d, s, id) {
+	  var js, fjs = d.getElementsByTagName(s)[0];
+	  if (d.getElementById(id)) return;
+	  js = d.createElement(s); js.id = id;
+	  js.src = "//connect.facebook.net/en_US/all.js#xfbml=1&appId=350908678298746";
+	  fjs.parentNode.insertBefore(js, fjs);
+	}(document, 'script', 'facebook-jssdk'));</script>
+	  -->
+	
+	<div id="memeTooltip" style="z-index: 556;">
+	</div>
+	  
+  	  <div id="memeTypesHolder" style="position: absolute; left: 0px; top: 0px; margin: 0px; width: 100%; height: 32px; overflow: hidden; z-index: 555; text-align: center;">
+  	      <div id="memeTypes" style='position: relative; margin-left: auto; margin-right: auto;'>
+  	          
+          </div>
+          <script type='text/javascript'>
+
+			var mt_w = 1;
+			var mt_x = 0;
+			var mt_vx = 0;
+			var mt_xm = 0;
+			var mt_ym = 31337;
+			var mt_o = {};
+			var mt_wa = 0;
+			var mt_mm_cv = "lolz";
+			var mt_current = undefined;
+			var mt_pfr = 0;
+			
+			
+			
+			for (var i = memes.length-1; i>=0; i--) {
+				var o = memes[i];
+				o.alpha = .3;
+				o.pos = i;
+				o.ln = o.n.toLowerCase();
+			}
+			
+			function tryShowMemeTypes () {
+				if (got_top && got_ishad) {
+				 resizeMemeTypes();
+			     repaintMemeTypes(true);
+				 $(memeTypes_canvas).show();//fadeIn(500);
+				}
+			}
+			
+			function resizeMemeTypes () {
+			  var wv = 2 + $(window).width();
+			  var canvas = memeTypes_canvas;
+		      canvas.width = wv;
+		      canvas.height = 32;
+			  mt_w = wv;
+		      repaintMemeTypes(true);
+			}
+			
+			function repaintMemeTypes (really_paint) {
+		        var canvas = memeTypes_canvas;
+				var context = canvas.getContext('2d');
+				//context.fillStyle = '#FFFFFF';
+				//context.globalAlpha = 1;
+				if (really_paint) {
+				 context.clearRect(0, 0, mt_w, 32);
+				}
+				var ml = memes.length;
+				var ml32 = ml*32;
+				var fx,fy;
+				var wd32 = Math.round(iitm.width/32);
+				var prev_current = mt_current;
+				mt_current = undefined;
+				var within = false;
+				var want_death = true;
+				
+				var llo = undefined;
+				var lc = 0;
+				for (var i = ml-1; i>=0; i--) {
+					var o = memes[i];
+					if (o.lit) {
+						want_death = false;
+						llo = o;
+						lc++;
+					}
+				}
+				if (really_paint) {
+					mt_pfr++;
+					mt_pfr %= 16;
+					if (got_00 && ((mt_ym >= 0) && (mt_ym <= 32) && (mt_xm >= 0) && (mt_xm <= mt_w))) {
+					 within = true;
+					 var v = (mt_xm - (mt_w/2)) / (mt_w/2);
+					 var sign = (v >= 0)?(-1):(1);
+					 v = Math.abs(v);
+					 v = Math.pow(v, 3.3);
+					 v -= .2;
+					 if (v <= 0) {
+					  v = 0;
+					 }
+					 v *= 1/(1-.2);
+					 mt_vx = 20*v*sign;
+					}
+					if (lc == 1) {
+						if (!within) {
+							within = true;
+						}
+					}
+					mt_x += mt_vx;
+					mt_vx *= .85;
+					if (mt_x <= 0) {
+						mt_x += ml32;
+					}
+					if (mt_x >= ml32) {
+					 mt_x -= ml32;
+					}
+				}
+				if (within && (mt_wa != .3)) {
+					want_death = false;
+					if (really_paint) {
+						if (mt_wa == 0) {
+							$(mt_tt).css({display: 'inline'});
+						}
+						mt_wa += .08;
+						if (mt_wa >= .3) {
+						 mt_wa = .3;
+						}
+						$(mt_tt).css({opacity: mt_wa*.8/.3});
+					}
+				} else if ((!within) && (mt_wa != 0)) {
+					want_death = false;
+					if (really_paint) {
+						mt_wa -= .03;
+						if (mt_wa <= 0) {
+							mt_wa = 0;
+							$(mt_tt).css({display: 'none'});
+						}
+						$(mt_tt).css({opacity: mt_wa*.8/.3});
+					}
+				}
+				for (var i = ml-1; i>=0; i--) {
+					fx = (i+1)%wd32;
+					fy = (i+1-fx)/wd32;
+					var o = memes[i];
+					if (got_00 && ((mt_xm >= ((mt_x + i*32)%ml32)) && (mt_ym >= 0) && (mt_xm <= ((mt_x + (i+1)*32)%ml32)) && (mt_ym <= 32) && (mt_current == undefined))) {
+						if (really_paint) {
+						 o.alpha += (1 - o.alpha) * .3;
+						}
+						mt_current = o;
+						want_death = false;
+					} else {
+						if (really_paint) {
+						 o.alpha -= .05;//(.25 - o.alpha) * .1;
+						}
+						if (o.alpha <= .3) {
+							o.alpha = .3;
+						} else {
+							want_death = false;
+						}
+					}
+					if (really_paint) {
+						context.globalCompositeOperation = 'source-over';
+						context.globalAlpha = o.alpha + (1 - o.alpha) * mt_wa;
+						try {
+						 context.drawImage(iitm,fx*32,fy*32, 32,32, Math.floor(mt_x + i*32),0,32,32);
+						 context.drawImage(iitm,fx*32,fy*32, 32,32, Math.floor(mt_x + (i-ml)*32),0,32,32);
+						} catch (e) { }
+						if (o.lit || (o == mt_current)) {
+							var pla = Math.cos(2*Math.PI*mt_pfr/16);
+							if (pla > 0) {
+								context.globalCompositeOperation = 'lighter';
+								context.globalAlpha = pla * .2;
+						        context.fillStyle = "#FFFFFF";
+							} else {
+								context.globalCompositeOperation = 'darker';
+								context.globalAlpha = Math.abs(pla) * .2;
+						        context.fillStyle = "#000000";
+							}
+					        context.fillRect(Math.floor(mt_x + i*32),0, 32,32);
+					        context.fillRect(Math.floor(mt_x + (i-ml)*32),0, 32,32);
+						}
+						//context.drawImage(iitm,fx*32,fy*32, 32,32, Math.floor(mt_x + i*32),0,32,32);
+						//context.drawImage(iitm,fx*32,fy*32, 32,32, Math.floor(mt_x + (i-ml)*32),0,32,32);
+					}
+				}
+				if (lc == 1) {
+					if (mt_current == undefined) {
+						mt_current = llo;
+						var dx1 = ml32*2 + (mt_w/2) - llo.pos*32 - 16;
+						while (dx1 >= 0) {
+							dx1 -= ml32;
+						}
+						var dx2 = dx1 + ml32;
+						if (Math.abs(mt_x - dx2) < Math.abs(mt_x - dx1)) {
+							dx1 = dx2;
+						}
+						mt_x += (dx1 - mt_x) * .1;
+ 						var cx = mt_x + (llo.pos + .5)*32 - ml32*4;
+						var bcx = 0;
+						var bcd = 99999999;
+						for (var i = 10; i>=0; i--) {
+							var cd = Math.abs(cx - mt_w/2);
+							if (cd < bcd) {
+								bcd = cd;
+								bcx = cx;
+							}
+							cx += ml32;
+						}
+						$(mt_tt).css({left: Math.min(mt_w - 140, Math.max(0, (bcx-120/2) ))+'px', top: (16+21)+'px'});
+					}
+				}
+				if (really_paint) {
+				 context.globalCompositeOperation = 'source-over';
+				 context.globalAlpha = .25;
+				 context.drawImage(iish,0,0,iish.width,iish.height,0,0,mt_w,iish.height);
+				}
+				if (mt_current != undefined) {
+					if (prev_current != mt_current) {
+					  mt_chc++;
+					  mt_tt.removeChild(mt_tn);
+					  mt_tn = document.createTextNode(mt_current.n);
+					  mt_tt.appendChild(mt_tn);
+					}
+				}
+				if (want_death) {
+		          if (mt_mm_cv != "lolz") {
+					clearInterval(mt_mm_cv);
+					mt_mm_cv = "lolz";
+			      }
+				} else if (mt_mm_cv == "lolz") {
+				  mt_mm_cv = setInterval("mt_mm()", 33);
+				}
+			}
+
+			var got_top = false;
+			var got_ishad = false;
+			
+			var got_00 = false;
+
+			
+			var memeTypesHolder = document.getElementById('memeTypesHolder');
+			var memeTypes = document.getElementById('memeTypes');
+	        var canvas = document.createElement('canvas');
+			var memeTypes_canvas = canvas;
+			$(canvas).hide();
+		    memeTypes.appendChild(canvas);
+
+			var mt_tt = document.getElementById('memeTooltip');
+			var mt_tn = undefined;
+			
+			$(mt_tt).css({position: 'absolute', 'font-family': "Verdana, sans-serif", 'font-size': '12px', 'text-align': 'center', 'font-weight': 'bold', margin: '0px', padding: '8px', width: '120px', height: 'auto', color: '#000000', 'background-color': '#FFFFFF', opacity: 0, border: '2px', 'border-radius': '25px'});
+	        mt_tn = document.createTextNode("le tooltip");
+	        mt_tt.appendChild(mt_tn);
+		
+			 var iish = new Image();
+			 iish.
+908
+onload = function () {
+				got_ishad = true;
+				tryShowMemeTypes();
+			 }
+			 iish.src = 'http://i.lvme.me/ishad9.png';
+		     
+			 var iitm = new Image();
+			 iitm.onload = function () {
+				 got_top = true;
+				 tryShowMemeTypes();
+		     }
+			 iitm.src = 'http://i.lvme.me/topmemes.jpg';
+			
+			
+			function mt_mm () {
+				repaintMemeTypes(true);
+			}
+			
+			$(memeTypes).mousemove(function (e) {
+				mt_xm = e.pageX;
+				mt_ym = e.pageY;
+				$(mt_tt).css({left: Math.min(mt_w - 140, Math.max(0, (mt_xm-120/2) ))+'px', top: (mt_ym+21)+'px'});
+				if (mt_xm == 0 && mt_ym == 0) {
+				 if (!got_00) {
+				  got_00 = true;	
+				  mt_ym = 31337;
+				 }
+				} else {
+				 got_00 = true;	
+				}
+				repaintMemeTypes();
+			});
+
+	        memeTypes.onmouseover = function () {
+	         if (!mt_o.dis) {
+	          mt_o.mo = true;
+	          repaintMemeTypes();
+	         }
+	        }
+	        memeTypes.onmouseout = function () {
+	         if (!mt_o.dis) {
+	          mt_o.mo = false;
+			  mt_ym = 31337;
+	          repaintMemeTypes();
+	         }
+	        }
+	        memeTypes.onmousedown = function () {
+	         if (!mt_o.dis) {
+	          mt_o.md = true;
+	          repaintMemeTypes();
+	         }
+	        }
+	        memeTypes.onmouseup = function () {
+	         if (!mt_o.dis) {
+	          mt_o.md = false;
+	          repaintMemeTypes();
+	         }
+	        }
+	        memeTypes.onclick = function () {
+				var o = mt_current;
+				if (o != undefined) {
+					if (surtch.value != "") {
+						surtch.value = "";
+						searchLoop();
+					}
+					//alert(o.n);
+					var dz = o.d.split(', ');
+					var sdz = dz[0].split(":");
+					advanimexto_target_url = "http://www.livememe.com/"+sdz[1];
+					advanimexto_radio_d = o.d;
+					advanimexto_cur_radio = 0;
+				    showEditor();
+				}
+				return false;
+	        }
+			repaintMemeTypes();
+			
+			
+			
+			
+			
+			
+		
+		</script>
+
+      </div>
+      
+	    
+  	  <div style="position: absolute; left: 0px; top: 0px; width: 100%; height: 500px; overflow: hidden; z-index: 0; text-align: center;">
+  	    <img id="ishad1" style="width: 1400px; height: 532px;" src="http://i.lvme.me/ishad9.png" border=0 />
+      </div>
+
+		<div id="dinkdiv" style="position: absolute; left: 0px; top: 154px; z-index: 888888; display: block; margin-left: auto; margin-right: auto;">
+          
+7330
+<script type='text/javascript'>var dinks = []; dinks.push({i: "q47fdr"}); dinks.push({i: "8223cr"}); dinks.push({i: "uppkjg"}); dinks.push({i: "s50a83"}); dinks.push({i: "co9rv7"}); dinks.push({i: "mz4b56"}); dinks.push({i: "u2ixhk"}); dinks.push({i: "put6e2"}); dinks.push({i: "hczeeg"}); dinks.push({i: "164w55"}); dinks.push({i: "s940zg"}); dinks.push({i: "dvfxg6"}); dinks.push({i: "rm3e3u"}); dinks.push({i: "9sps9u"}); dinks.push({i: "koc0zf"}); dinks.push({i: "seqqiz"}); </script>      </div>
+
+<script type='text/javascript'>
+
+
+if (typeof(dinks) != 'undefined') {
+	if (cis) {
+		var dinkdiv = document.getElementById('dinkdiv');
+		dinkdiv.style.display = 'none';
+		var dinko = {ac: 0, lc: 0};
+		for (var i = 0; i<dinks.length; i++) {
+			var o = dinks[i];
+			o.fi = base36intToBytes(base36bytesToInt(o.i)*32 + 1);
+			o.href = "http://www.livememe.com/"+o.fi;
+			o.src = "http://i.lvme.me/"+o.fi+"_2.jpg";
+			var img = document.createElement('img');
+			o.img = img;
+			$.data(img, 'o', o);
+			img.onload = function () {
+			 var o = $.data(this, 'o');
+			 var nw = this.width;
+			 var nh = this.height;
+			 if ((nw <= 2) || (nh <= 2)) {
+			  return;
+			 }
+			 if ((nw > 83) || (nh > 83)) {
+			  var sc = Math.min(83/nw, 83/nh);
+			  nw *= sc;
+			  nh *= sc;
+			  nw = Math.round(nw);
+			  nh = Math.round(nh);
+			  this.width = nw;
+			  this.height = nh;
+			 }
+			 o.width = nw;
+			 o.height = nh;
+			 o.loaded = true;
+			 dinko.lc++;
+			 tryLoadDinks();
+			}
+			dinko.ac++;
+			img.border = 0;
+			img.src = o.src;
+			if (i >= 16) break;
+		}
+
+		function tryLoadDinks () {
+		 if (dinko.ac == dinko.lc) {
+			
+
+		    $(window).mouseup(function () {
+		      for (var i = dinks.length-1; i>=0; i--) {
+		        var o = dinks[i];
+		        if (o.loaded) {
+				 if (o.md) {
+			         o.md = false;
+			         o.redraw();
+				 }
+		        }
+		      }
+		    });
+
+			
+		  var curw = 0;
+		  for (var i = 0; i<dinks.length; i++) {
+		   var o = dinks[i];
+		   if (o.loaded) {
+			var mrdiv = document.createElement('div');
+			o.mrdiv = mrdiv;
+			mrdiv.style.position = 'absolute';
+			mrdiv.style.width = o.width+'px';
+			mrdiv.style.height = o.height+'px';
+			mrdiv.style.cursor = 'pointer';
+			
+			var mhc = document.createElement('canvas');
+			mhc.width = o.width;
+			mhc.height = o.height;
+			mrdiv.appendChild(mhc); // need to do this to give 'substance' to the div which IE idiotically requires. Without this, IE ignores the div width and height. Someone please go back in time and euthanize Bill Gates' parents before he was conceived.
+
+			var canvas = document.createElement('canvas');
+			canvas.style.position = 'absolute';
+			canvas.width = o.width+16;
+			canvas.height = o.height+16;
+			var ctx = canvas.getContext('2d');
+			o.canvas = canvas;
+			o.ctx = ctx;
+			
+			
+			
+
+			mrdiv.style.left = (curw+8)+'px';
+			mrdiv.style.top = (8 + Math.round(80 - (o.height/2)))+'px';
+			
+			canvas.style.left = curw+'px';
+			canvas.style.top = Math.round(80 - (o.height/2))+'px';
+			
+			o.x = curw;
+			
+			curw += o.width + 8;
+			
+			
+
+	        var shc = document.createElement('canvas');
+			shc.width = o.width+16;
+			shc.height = o.height+16;
+			var sctx = shc.getContext('2d');
+
+		    sctx.shadowOffsetX = 0;
+		    sctx.shadowOffsetY = 2;
+		    sctx.shadowBlur = 8;
+		    sctx.shadowColor = "black";
+
+		    sctx.fillStyle = "#FFFFFF";
+
+			sctx.fillRect(8, 8, o.width, o.height);
+
+
+			o.shadow = shc;
+			
+			dinkdiv.appendChild(canvas);
+			dinkdiv.appendChild(mrdiv);
+			
+			
+			o.onclick = function () {
+			 window.location = this.href;
+			}
+			
+			o.redraw = function () {
+			 var ctx = this.ctx;
+			 var canvas = this.canvas;
+			 ctx.globalAlpha = 1;
+			 ctx.clearRect(0,0,this.width+16,this.height+16);
+			 ctx.globalAlpha = .5;
+			 ctx.drawImage(this.shadow, 0, 0);
+			 ctx.globalAlpha = 1;
+			 try {
+				ctx.drawImage(this.img, 8, 8, this.width, this.height);
+			 } catch (e) { alert('wtf '+e); }
+			 if (this.md) {
+			  ctx.globalCompositeOperation = 'darker';
+			  ctx.globalAlpha = .3;
+			  ctx.fillStyle = '#000000';
+			  ctx.fillRect(8, 8, this.width, this.height);
+			  canvas.style.opacity = 1;
+			 } else if (this.mo) {
+				/*
+			  ctx.globalCompositeOperation = 'lighter';
+			  ctx.globalAlpha = .15;
+			  ctx.fillStyle = '#FFFFFF';
+			  ctx.fillRect(8, 8, this.width, this.height);
+			*/
+			  canvas.style.opacity = 1;
+			 } else {
+			  canvas.style.opacity = .6;
+			 }
+			 ctx.globalCompositeOperation = 'source-over';
+			}
+			
+			$.data(mrdiv, 'o', o);
+			
+			$(mrdiv).mouseover(function () {
+		      var o = $.data(this, 'o');
+		      if (!o.dis) {
+		       o.mo = true;
+		       o.redraw();
+		      }
+		    });
+		    $(mrdiv).mouseout(function () {
+		      var o = $.data(this, 'o');
+		      if (!o.dis) {
+		       o.mo = false;
+		       o.redraw();
+		       //o.pdiv.style.backgroundPosition = '0px 0px';
+		      }
+		    });
+		    $(mrdiv).mousedown(function () {
+		      var o = $.data(this, 'o');
+		      if (!o.dis) {
+		       o.md = true;
+		       o.redraw();
+		       //o.pdiv.style.backgroundPosition = '0px -'+(2 * o.hh)+'px';
+		      }
+		    });
+		    $(mrdiv).mouseup(function () {
+		      var o = $.data(this, 'o');
+		      if (!o.dis) {
+		       o.md = false;
+		       o.redraw();
+		       //o.pdiv.style.backgroundPosition = '0px 0px'; 
+		      }
+		    });
+		    $(mrdiv).click(function () {
+		      var o = $.data(this, 'o');
+		      if (!o.dis) {
+		       o.onclick();
+		      }
+		    });
+		    
+		    o.redraw();
+		   }
+		  }
+		  resizeDinks();
+		 }
+		}
+		
+		
+		function resizeDinks () {
+		 dinkdiv.style.display = 'inline';
+		 var wv = $(window).width();
+		 var fw = 0;
+		 
+		 for (var i = 0; i<dinks.length; i++) {
+		  o = dinks[i];
+		  if (o.loaded) {
+		   if ((o.x + o.width) >= (wv - 64)) {
+			for (var j = i-1; j>=0; j--) {
+			 o = dinks[j];
+			 o.mrdiv.style.left = (o.x+8)+'px';
+			 o.canvas.style.left = (o.x)+'px';
+			 o.mrdiv.style.display = 'inline';
+			 o.canvas.style.display = 'inline';
+			}
+			for (var j = i; j<dinks.length; j++) {
+			 o = dinks[j];
+			 o.mrdiv.style.display = 'none';
+			 o.canvas.style.display = 'none';
+			}
+			break;
+		   }
+		   fw = o.x + o.width;
+		  }
+		 }
+		
+		 dinkdiv.style.left = Math.floor((wv-fw)/2)+'px';
+		}
+		
+
+	    $(window).resize(function () {
+	     if (doc_ready) {
+	      resizeDinks();
+	     }
+	    });
+
+		
+	}
+}
+
+</script>
+
+
+
+<div style="position: fixed; right: 8px; bottom: 5px; z-index: 1999999;">
+<!--<div id="fblikebox" class="fb-like" data-href="http://www.facebook.com/livememeDOTcom" data-send="false" data-layout="button_count" data-width="70" data-show-faces="false" data-colorscheme="light" data-font="lucida grande"></div>-->
+<iframe src="//www.facebook.com/plugins/like.php?href=http%3A%2F%2Ffacebook.com%2FlivememeDOTcom&amp;width=83&amp;height=21&amp;colorscheme=light&amp;layout=button_count&amp;action=like&amp;show_faces=false&amp;send=false&amp;appId=350908678298746" scrolling="no" frameborder="0" style="border:none; overflow:hidden; width:83px; height:21px;" allowTransparency="true"></iframe>
+</div>
+      
+
+
+  	  <div id="searchholder" style="position: absolute; right: 0px; top: 24px; z-index: 100;">
+  	    
+  	  </div>
+
+
+  	  <script type="text/javascript">
+    
+	div = document.createElement("div");
+	var surtch = document.createElement("input");
+	surtch.id = "surtch";
+	surtch.placeholder = "search for a meme";
+	surtch.style.outline = 'none';
+	$(surtch).css({width:'172px',height:'18px', position: 'absolute', right: '168px', top: '32px', 'font-family': "Verdana, sans-serif"});
+	div.appendChild(surtch);
+	$(surtch).hide();
+	
+    
+	var uliodivh = document.createElement('div');
+	$(uliodivh).css({position:'absolute', right: '23px', top: '25px', 'z-index': 669});
+	
+	var uliodiv = document.createElement('div');
+	uliodivh.appendChild(uliodiv);
+	var ulio = makeBtn(uliodiv, 'http://static.lvme.me/uploadimage.png', 116, 40, 6, 7, 105, 25);
+	ulio.onclick = function () {
+	  this.setEnabled(false);
+	  setTimeout("ulioEnable()", 2500);
+	  window.location = "http://www.livememe.com/edit";
+    }
+    
+	function ulioEnable () {
+	 ulio.setEnabled(true); 
+	}
+	
+
+	//$(div).css({position:'absolute', top: '18px', right: '120px'});//'margin-left':'24px', 'margin-top':'12px'});
+	var searchholder = document.getElementById("searchholder");
+	$(searchholder).css({width: '500px', height: '230px'});
+	if (cis) {
+	  $(surtch).css({background: 'transparent url(http://static.livememe.com/search2.png) right no-repeat', border: 'none'});
+	  var canvas,context;
+	  canvas = document.createElement('canvas');
+	  canvas.width = 500;
+	  canvas.height = 230;
+	  context = canvas.getContext('2d');
+	  context.shadowOffsetX = 0;
+	  context.shadowOffsetY = 2;
+	  context.shadowBlur = 150;
+	  context.shadowColor = "black";
+
+      context.globalAlpha = 1;
+	  context.fillStyle = "#FFFFFF";
+	  
+	  var xx = ((500-172)-168) - 4;
+	  var yy = 32 - 1;
+	  
+   	  for (var i=1; i<=2; i++) {
+
+   		  context.beginPath();
+   		  context.arc(xx + 5, yy+23/2, 23/2, Math.PI/2, Math.PI*3/2);
+   		  context.lineTo(xx + 170, yy);
+   		  context.arc(xx + 170, yy+23/2, 23/2, Math.PI*3/2, Math.PI*5/2);
+   		  context.lineTo(xx + 5, yy+23);
+   		  context.fill();
+
+   		  if (i == 1) {
+   			context.shadowBlur = 0;
+   			context.shadowOffsetY = 0;
+   		  }
+   	  }
+
+	  canvas.style.opacity = .25;
+	  searchholder.appendChild(canvas);
+	} else {
+	  $(surtch).css({background: '#eeeeee url(http://static.livememe.com/search.png) right no-repeat'});
+	}
+	searchholder.appendChild(div);
+	searchholder.appendChild(uliodivh);
+
+	$(function () {
+	  $(surtch).show();
+	  $(ulio).show();
+	});
+
+
+
+	var want_search_mtm = 0;
+	var last_search_text = "";
+
+
+
+
+
+	var mt_chc = 0;
+	
+	function searchLoop () {
+	  var mtm = new Date().getTime();
+	  want_search_mtm = mtm;
+	  var t = ""+surtch.value;
+	  var going = false;
+	  if (t != last_search_text) {
+	    var valid = false;
+	    for (var i = t.length-1; i>=0; i--) {
+	      var v = t.charCodeAt(i);
+	      if (v > 0x20) {
+	       valid = true;
+	       break; 
+	      }
+	    }
+	    if (!valid) {
+	      t = "";
+	    }
+	    last_search_text = t;
+		mt_chc = 0;
+		going = true;
+	  }
+	  if (mt_chc >= 5) {
+		t = "";
+		going = true;
+	  }
+	  if (going) {
+		t = t.trim();
+		var wrp = false;
+	    for (var i = memes.length-1; i>=0; i--) {
+			var o = memes[i];
+			o.lit = false;
+			if (o.ln == t) {
+				o.lit = true;
+				wrp = true;
+				break;
+			}
+		}
+		if (!wrp) {
+		    for (var i = memes.length-1; i>=0; i--) {
+				var o = memes[i];
+				o.lit = false;
+				if (t.length > 0) {
+					var ln = o.ln;
+					if (ln.indexOf(t) >= 0) {
+						o.lit = true;
+						wrp = true;
+					}
+				}
+			}
+		}
+		var any_lit = false;
+	    for (var i = memes.length-1; i>=0; i--) {
+			var o = memes[i];
+			if (o.lit) {
+				any_lit = true;
+				break;
+			}
+		}
+		if (!any_lit) {
+			for (var i = memes.length-1; i>=0; i--) {
+				var o = memes[i];
+				if (o.has_big_btn) {
+					if (!o.big_btn.div_shown) {
+						o.big_btn.div_shown = true;
+						$(o.big_btn.div).show();
+					}
+				}
+			}
+		} else {
+			for (var i = memes.length-1; i>=0; i--) {
+				var o = memes[i];
+				if (o.has_big_btn) {
+					if (o.lit && (!o.big_btn.div_shown)) {
+						o.big_btn.div_shown = true;
+						$(o.big_btn.div).show();
+					} else if ((!o.lit) && o.big_btn.div_shown) {
+						o.big_btn.div_shown = false;
+						$(o.big_btn.div).hide();
+					}
+				}
+			}
+		}
+		if (wrp) {
+			repaintMemeTypes(false);
+		}
+	  }
+	}
+
+
+	var searchloop_iv = -1;
+
+	surtch.onfocus = function () {
+	 if (searchloop_iv == -1) {
+	  searchloop_iv = setInterval('searchLoop()', 100);
+	 } 
+	}
+
+	surtch.onblur = function () {
+	 if (searchloop_iv != -1) {
+	   clearInterval(searchloop_iv);
+	   searchloop_iv = -1;
+	 } 
+	}
+	
+
+	</script>
+
+
+    
+      
+      <div id="logo" style="width: 100%; height: 250px; position: absolute; top: 0px; z-index: 31;"></div>
+      <!--<div id="albuminfo" style="width: 100%; height: 40px; text-align: center; margin: 0px; margin-top: 6px;"></div>-->
+
+    
+				<div id="menuHolder" style="position: absolute; width: 100%; left: 0px; top: 304px; z-index: 432; color: #404040; font-family: Verdana, sans-serif; font-size: 11px; text-align: center;">
+					
+				</div>
+        
+		<style type="text/css">
+		a.rpl:link {text-decoration: none; color:#000080;}
+		a.rpl:visited {text-decoration: none; color:#000080;}
+		a.rpl:hover {text-decoration: none; color:#400080;}
+		a.rpl:active {text-decoration: none; color:#000000;}
+		</style>
+        
+		<script type="text/javascript">
+		    
+			var mpil = 0;
+			
+			var menu = null;
+			
+			var menu_btns = [];
+			
+			function resizeMenu () {
+				if (menu != null) {
+					var wv = 2 + $(window).width();
+					
+				}
+			}
+			
+			var menu_btn_shadow = null;
+			
+			function loadMenu () {
+				var menuHolder = document.getElementById('menuHolder');
+				menu = document.createElement('div');
+				var fmx = 128;
+				var fmy = 0;
+				
+		        var shc = document.createElement('canvas');
+				shc.width = 150;
+				shc.height = 150;
+				var ctx = shc.getContext('2d');
+				
+		
+			  ctx.shadowOffsetX = 0;
+			  ctx.shadowOffsetY = 2;
+			  ctx.shadowBlur = 8;
+			  ctx.shadowColor = "black";
+
+			  ctx.fillStyle = "#FFFFFF";
+
+			ctx.fillRect((150-128)/2, (150-128)/2, 128, 128);
+		
+				
+				menu_btn_shadow = shc;
+				
+				for (var i = 0; i<memes.length; i++) {
+					var div = document.createElement('div');
+			        var canvas = document.createElement('canvas');
+					canvas.width = 150;
+					canvas.height = 150;
+					var ctx = canvas.getContext('2d');
+					
+					var o = {};
+					o.meme = memes[i];
+					memes[i].big_btn = o;
+					memes[i].has_big_btn = true;
+					var mrdiv = document.createElement('div'); // mouse region div
+					div.style.position = 'relative';
+					o.mrdiv = mrdiv;
+					mrdiv.style.position = 'absolute';
+					mrdiv.style.left = ((150-128)/2)+'px';
+					mrdiv.style.top = ((150-128)/2)+'px';
+					mrdiv.style.width = '128px';
+					mrdiv.style.height = '128px';
+					mrdiv.style.cursor = 'pointer';
+
+					var mhc = document.createElement('canvas');
+					mhc.width = 128;
+					mhc.height = 128;
+					mrdiv.appendChild(mhc); // need to do this to give 'substance' to the div which IE idiotically requires. Without this, IE ignores the div width and height. Someone please go back in time and euthanize Bill Gates' parents before he was conceived.
+					
+					o.div = div;
+					o.div_shown = true;
+					o.canvas = canvas;
+					o.ctx = ctx;
+					o.fmx = fmx;
+					o.fmy = fmy;
+					div.appendChild(canvas);
+					div.appendChild(mrdiv);
+					
+					menu_btns.push(o);
+					
+					o.onclick = function () {
+						var o = this.meme;
+						var dz = o.d.split(', ');
+						var sdz = dz[0].split(":");
+						advanimexto_target_url = "http://www.livememe.com/"+sdz[1];
+						advanimexto_radio_d = o.d;
+						advanimexto_cur_radio = 0;
+					    showEditor();
+					}
+					o.redraw = function () {
+					   var ctx = this.ctx;
+					
+					
+					ctx.globalAlpha = 1;
+					ctx.clearRect(0, 0, 150, 150);
+					
+					ctx.globalAlpha = .5;
+					ctx.drawImage(menu_btn_shadow, 0, 0);
+					
+						ctx.globalAlpha = 1;
+						
+						try {
+					   ctx.drawImage(tmbi, this.fmx, this.fmy, 128, 128, (150-128)/2, (150-128)/2, 128, 128);
+					} catch (e) { }
+					
+					   if (this.md) {	
+						ctx.globalCompositeOperation = 'darker';
+						ctx.globalAlpha = .3;
+				        ctx.fillStyle = "#000000";
+						ctx.fillRect((150-128)/2, (150-128)/2, 128, 128);
+						} else if (this.mo) {
+							ctx.globalCompositeOperation = 'lighter';
+							ctx.globalAlpha = .15;
+					        ctx.fillStyle = "#FFFFFF";
+							ctx.fillRect((150-128)/2, (150-128)/2, 128, 128);
+						}
+						ctx.globalCompositeOperation = 'source-over';
+					}
+					$.data(mrdiv, 'o', o);
+					
+					$(mrdiv).mouseover(function () {
+				      var o = $.data(this, 'o');
+				      if (!o.dis) {
+				       o.mo = true;
+				       o.redraw();
+				      }
+				    });
+				    $(mrdiv).mouseout(function () {
+				      var o = $.data(this, 'o');
+				      if (!o.dis) {
+				       o.mo = false;
+				       o.redraw();
+				       //o.pdiv.style.backgroundPosition = '0px 0px';
+				      }
+				    });
+				    $(mrdiv).mousedown(function () {
+				      var o = $.data(this, 'o');
+				      if (!o.dis) {
+				       o.md = true;
+				       o.redraw();
+				       //o.pdiv.style.backgroundPosition = '0px -'+(2 * o.hh)+'px';
+				      }
+				    });
+				    $(mrdiv).mouseup(function () {
+				      var o = $.data(this, 'o');
+				      if (!o.dis) {
+				       o.md = false;
+				       o.redraw();
+				       //o.pdiv.style.backgroundPosition = '0px 0px'; 
+				      }
+				    });
+				    $(mrdiv).click(function () {
+				      var o = $.data(this, 'o');
+				      if (!o.dis) {
+				       o.onclick();
+				      }
+				    });
+					
+					
+					fmx += 128;
+					if (fmx >= tmbi.width) {
+						fmx = 0;
+						fmy += 128;
+					}
+					div.style.display = 'inline-block';
+					menu.appendChild(div);
+					
+					o.redraw();
+				}
+				menuHolder.appendChild(menu);
+				resizeMenu();
+			}
+		
+		    var tmbi = document.createElement('img');
+			tmbi.onload = function () {
+				loadMenu();
+			}
+			tmbi.src = 'http://i.lvme.me/topmemesbig.jpg';
+		    
+			
+		    $(window).mouseup(function () {
+		      for (var i = menu_btns.length-1; i>=0; i--) {
+		        var o = menu_btns[i];
+		        if (o.md) {
+		         o.md = false;
+		         o.redraw();
+		        }
+		      }
+		    });
+		
+			$('#logo').css({background: 'url(http://static.livememe.com/logo6.png) no-repeat top center'});
+			
+		var doc_ready = false;
+		
+		
+		var ishad_iv = undefined;
+		var ishad_a = 0;
+		//var got_shad = false;
+		//var got_bg = false;
+		
+		var ishad1 = document.getElementById('ishad1');
+		//$('#ishad1').css({opacity: 0});
+		/*
+		$('#ishad1').load(function () {
+		 got_shad = true;
+		 tryShow();
+	 });
+	*/
+	    //ishad1.src = "http://static.livememe.com/ishad9.png";
+	 
+	/*
+	 var ii = new Image();
+	 ii.onload = function () {
+		 got_bg = true;
+		 tryShow();
+  }
+	 ii.src = 'http://static.livememe.com/ibg.png';
+	 */
+	
+	/*
+	 function tryShow () {
+	  if (got_shad && got_bg) {		
+		if (typeof(r_pl) != 'undefined') {
+			$('#redditInfoHolder').fadeIn(333);
+		}
+	   if (ishad_iv == undefined) {
+  		 ishad_iv = setInterval(function () {
+  		    ishad_a += .12;
+  		    if (ishad_a >= 1) {
+  		     ishad_a = 1;
+  		     clearInterval(ishad_iv);
+  	        }
+  	        var tisa = .5 * (1 - Math.cos(Math.PI*ishad_a));
+  		    $('#ishad1').css({opacity: tisa});
+  		    var c = '00';
+  		    c += ''+(Math.round(0x9f + (tisa * 0x60)).toString(16));
+  		    c = c.substr(c.length-2, 2);
+  		    $(document.body).css({background: '#'+c+c+c+' url(http://static.livememe.com/ibg.png) top repeat'});
+  	      }, 30);
+ 	   }
+	  }
+	 }
+	*/
+	
+		
+		function resizeContent () {
+		 if (doc_ready) {
+		  var wv = 2 + $(window).width();
+		  //var hv = Math.round($(window).height() - 1);
+		  //$(document.body).css({'min-height': hv+'px'});
+		  //var lv = 0;
+		  //if (wv < 1400) {
+		  //  lv = -Math.round((1400-wv)/2);
+	    //}
+	    $('#ishad1').css({width: wv+'px'});
+		resizeMemeTypes();
+		resizeMenu();
+	
+		 } 
+	  }
+		
+		var gifpngX = 0;
+		var gifpngY = 0;
+		var gifpngFr = 0;
+			function moveGif () {
+				var gif = document.getElementById('gifpng');
+				gifpngFr++;
+				gifpngX -= 2;
+				gifpngY = Math.cos(gifpngFr/10)*20;
+			$(gif).css({left: gifpngX+'px', top: Math.round(280+gifpngY)+'px'});
+			}
+			
+		$(function () {
+		  doc_ready = true;
+		  resizeContent();
+
+		if (template_id == 'snrl67') {
+			var jim = document.createElement('div');
+			var aa = document.createElement('a');
+			aa.href = 'http://www.amazon.com/gp/product/B0095R6206/ref=as_li_qf_sp_asin_il_tl?ie=UTF8&camp=1789&creative=9325&creativeASIN=B0095R6206&linkCode=as2&tag=wwwhypahcom-20';
+			var ii = new Image();
+			aa.appendChild(ii);
+			ii.src = "http://static.livememe.com/halpert.png";
+			jim.appendChild(aa);
+			$(jim).css({position: 'fixed', right: '0px', bottom: '0px', 'z-index': 511});
+			document.body.appendChild(jim);
+		} else if (template_id == 'fc4xtg') {
+			$(document.body).css({"background": "url(http://static.livememe.com/flag2.gif)"});
+		}
+
+	  });
+	  
+    $(window).resize(function () {
+     if (doc_ready) {
+      resizeContent();
+     }
+    });
+
+    
+
+      
+      
+      
+  		  </script>
+  		  
+  		  <div style="display: none; visibility: hidden;" id="odio"></div>
+  		  
+  		  
+  		  <div id="btnz" style="position: relative; width: 100%; z-index: 666; margin-top: 20px; text-align: center;">
+  		  <div id="post2reddit" style="width: 100%; z-index: 667; margin-top: 0px; text-align: center; display: inline-block;"></div>
+  		  <div id="addcaptions" style="width: 100%; z-index: 668; margin-top: 0px; text-align: center; display: inline-block;">
+  		    <div id="spinholda" style="position: absolute; left: 157px; top: 10px; display: inline-block; width: 25px; height: 26px; visibility: hidden; opacity: 0;"></div>
+  		  </div>
+<!--
+  		  <br>
+		  <div style="width: 100%; z-index: 669; margin-top: 0px; text-align: center; display: block;">
+           <div id="fb_divh">
+		      
+	       </div>
+	      </div>
+
+	        <script type="text/javascript">
+		      var fb_div = document.createElement("div");
+		      var ifb = document.createElement("div");
+		      //$(ifb).css({'margin-left': 'auto', 'margin-right': 'auto', 'text-align': 'center'});
+		      ifb["data-href"] = "http://www.livememe.com/" + base36intToBytes(base36bytesToInt(template_id)*32 + template_sid);
+		      ifb["data-send"] = "true";
+		      //ifb["data-layout"] = "button_count";
+		      ifb["data-width"] = "225";
+		      ifb["data-show-faces"] = "false";
+		      ifb["data-font"] = "lucida grande";
+		      ifb.className = "fb-like";
+		      fb_div.appendChild(ifb);
+
+		      $(fb_div).css({'margin-left': 'auto', 'margin-right': 'auto', 'text-align': 'center', width:'225px'});
+		      $(fb_div).hide();
+		      $(fb_div).fadeIn(500);
+		
+		      var fb_divh = document.getElementById('fb_divh');
+			  fb_divh.appendChild(fb_div);
+            </script>
+-->
+		    </div>
+		
+		
+		
+		
+		
+    
+    
+	  
+	  <div id="greybg" style="position: fixed; left: 0px; top: 0px; width: 100%; height: 100%; background-color: #000000; display: none; z-index: 999998; opacity: 0.6;"></div>
+	  <div id="winderholder" style="position: fixed; left: 0px; top: 0px; width: 100%; height: 100%; display: none; z-index: 999999;">
+	  <div style="position: absolute; left: 0px; top: 0px; width: 100%; height: 100%; background-color: #000000; opacity: 0.5;"></div>
+  <div id="datderewinder" style="position: relative; width: 780px; margin-left: auto; margin-right: auto; margin-top: 100px; padding-left: 25px; padding-top: 5px; border-radius:16px; border: 2px solid #000000; background-color: #eeeeee; visibility: visible;">
+    <div class="entry unvoted" style="display: none;">
+      <p class="title">
+        <a class="title loggedin " id="urlme" href="#" >
+          
+        </a>
+      </p>
+      <ul>
+        <li class="share">
+      
+        </li>
+      </ul>
+    </div>
+    <div id="editordiv" style="font-family: Verdana; font-size: 12px;">
+      <!-- contains the editor -->
+    </div>
+  </div>
+  </div>
+		
+		
+		
+	<script type="text/javascript">
+	  var a = document.getElementById('urlme');
+	  a.href = 'http://www.livememe.com/'+base36intToBytes(base36bytesToInt(template_id)*32 + template_sid);
+	  
+	  want_advanimexto = true;
+	</script>
+		
+	  
+    
+	  
+	  
+		<script type="text/javascript">
+		
+   	var shbi;
+   	var shbfr = 0;
+   	
+   	var spi_iv = -1;
+   	var spfr = 0;
+   	var spa = 0;
+   	var spsh = false;
+
+	var gbg_iv = -1;
+	var gbgfr = 0;
+
+   	function spinna () {
+     var spinholda = document.getElementById('spinholda');
+   	 spfr++;
+   	 if (spfr >= 24) {
+   	  spfr = 0; 
+ 	   }
+ 	   if (spsh) {
+  	   spa += .07;
+  	   if (spa >= .7) {
+  	    spa = .7;
+      }
+       } else {
+      spa -= .05;
+      if (spa <= 0) {
+       spa = 0;
+       //clearInterval(spi_iv);
+       spinholda.style.visibility = 'hidden';
+       spi_iv = -1;
+      }
+     }
+     spinholda.style.backgroundPosition = '-'+(spfr*25)+'px 0px';
+     spinholda.style.opacity = spa;
+  }
+
+
+function gbgfi () {
+ gbgfr++;
+if (gbgfr >= 7) {
+ gbgfr = 7;
+ clearInterval(gbg_iv);
+ gbg_iv = -1;
+}
+ var gbg = document.getElementById('greybg');
+ gbg.style.opacity = 0.3 * gbgfr/7;
+}
+
+		
+		
+  	var cbtn = undefined;
+  	var cbo = {};
+  	
+
+
+var wofx = 0;
+var dcac = false;
+  	
+    
+    
+		var div = document.getElementById('post2reddit');
+		
+		if (typeof(r_pl) != 'undefined') {
+		    div.style.display = 'none';
+		} else {
+		
+		    function myUrl () {
+		     return "http://www.livememe.com/"+base36intToBytes(base36bytesToInt(template_id)*32 + template_sid);
+		    }
+		
+	    }
+    
+    
+    
+    
+    
+	var loaded_current = false;
+    
+    function showEditor () {
+	 if (typeof(advanimexto) != 'undefined') {
+	    showAdvAnim();
+	 } else if (!loaded_current) {
+	    dcac = true;
+		loaded_current = true;
+		loadScript("http://i.lvme.me/cur.js");
+	 }
+	}
+    
+    
+    
+    function advanimScriptLoaded () {
+      if (dcac) {
+        dcac = false;
+        showAdvAnim();
+      }
+    }
+    
+    function showAdvAnim () {
+	/*
+   	 if (spi_iv == -1) {
+   	  spi_iv = setInterval('spinna()', 33);
+ 	   }
+*/
+   	 spsh = true;
+/*
+     var sphd = document.getElementById('spinholda');
+     sphd.style.visibility = 'visible';
+     sphd.style.backgroundImage = 'url(http://static.lvme.me/spinna4.png)';
+*/
+     
+     
+     
+
+   	 if (cbtn == undefined) {
+     	 var winder = document.getElementById('datderewinder');
+        cbtn = document.createElement('div');
+        winder.appendChild(cbtn);
+        cbtn.style.position = 'absolute';
+        cbtn.style.left = '766px';
+        cbtn.style.top = '8px';
+        cbtn.style.background = 'url("http://static.lvme.me/close.png")';
+        cbtn.style.width = '31px';
+        cbtn.style.height = '31px';
+        cbtn.style.cursor = 'pointer';
+        cbo.mo = false;
+        cbo.md = false;
+        cbo.dis = false;
+
+        cbtn.onmouseover = function () {
+         if (!cbo.dis) {
+          cbo.mo = true;
+          this.style.backgroundPosition = '0px -31px';
+         }
+        }
+        cbtn.onmouseout = function () {
+         if (!cbo.dis) {
+          cbo.mo = false; 
+          this.style.backgroundPosition = '0px 0px';
+         }
+        }
+        cbtn.onmousedown = function () {
+         if (!cbo.dis) {
+          cbo.md = true;
+          this.style.backgroundPosition = '0px -62px';
+         }
+        }
+        cbtn.onmouseup = function () {
+         if (!cbo.dis) {
+          cbo.md = false;
+          this.style.backgroundPosition = '0px 0px';
+         }
+        }
+        cbtn.onclick = function () {
+         var winder = document.getElementById('datderewinder');
+         winder.style.visibility = 'hidden';
+         var wh = document.getElementById('winderholder');
+         wh.style.display = 'none';
+		 var gbg = document.getElementById('greybg');
+		 gbg.style.display = 'none';
+         //start_mdh = 0;
+         smwfr = 0;
+         advanimexto.last_generated_captioner.onclick(); // like clicking "cancel" which used to say "add captions"
+         return false;
+        }
+      }
+
+   	 advanimexto.extraInputCallback = function () {
+       var winder = document.getElementById('datderewinder');
+       var wh = document.getElementById('winderholder');
+       winder.style.visibility = 'visible';
+       smw_iv = setInterval('showMemeWin()', 33);
+
+       
+       wofx = advanimexto.nw-450;
+       winder.style.width = (780 + wofx)+'px';
+       cbtn.style.left = (766 + wofx)+'px';
+/*
+   	  if (spi_iv == -1) {
+   	   spi_iv = setInterval('spinna()', 33);
+ 	    }
+*/
+   	  spsh = false;
+ 	   }
+      var wh = document.getElementById('winderholder');
+      wh.style.display = 'inline';
+	  var gbg = document.getElementById('greybg');
+	  gbg.style.display = 'inline';
+      wh.style.opacity = 0;
+	  gbg.style.opacity = 0;
+	  gbgfr = 0;
+   	  if (gbg_iv == -1) {
+   	   gbg_iv = setInterval('gbgfi()', 33);
+ 	    }
+
+      advanimexto.submit_to_reddit = false;
+      advanimexto.hide_loadie = true;
+      advanimexto.last_generated_captioner.onclick();
+      //btn.style.display = 'none';
+ 	   return false;
+	  }
+	  
+	
+	
+	function clickedAdvAnimRadio (val) {
+		if (advanimexto_radio_d.length > 0) {
+			var dds = advanimexto_radio_d.split(", ");
+			for (var qq = 0; qq<dds.length; qq++) {
+				if (qq == val) {
+					advanimexto_cur_radio = val;
+					var cdds = dds[qq].split(":");
+					smwfr = 0;
+					advanimexto.preserve_captions = true;
+					advanimexto.last_generated_captioner.onclick(); // like clicking "cancel" which used to say "add captions"
+					advanimexto_target_url = "http://www.livememe.com/"+cdds[1];
+					showEditor();
+				}
+			}
+		}
+	}
+	  
+	  
+    
+    
+   var smwfr = 0;
+   var smw_iv = '';
+   var smfrs = 6;
+   function showMemeWin () {
+     smwfr++;
+      if (smwfr >= smfrs) {
+	    smwfr = smfrs;
+	  }
+      var winder = document.getElementById('datderewinder');
+      var wh = document.getElementById('winderholder');
+      var amt = (1 - Math.cos((smwfr/smfrs)*Math.PI))/2;
+      wh.style.opacity = amt;
+      //if (navigator.userAgent.toLowerCase().indexOf('chrome') == -1) { // Remarkably, chrome's 3d css actually renders rather poorly
+       //winder.style['-webkit-transform'] = winder.style['-moz-transform'] = winder.style.MozTransform = 'perspective(1600px) rotateX('+(-Math.round(32 * (1 - amt) * 100)/100)+'deg)'; // Safari, FF, and Chrome
+      //}
+      if (smwfr >= smfrs) {
+	    smwfr = smfrs;
+        clearInterval(smw_iv);
+      }
+    }
+
+
+
+
+		
+		</script>
+    
+    
+    
+	  
+	</body>
+</
+5
+html>
+0
+

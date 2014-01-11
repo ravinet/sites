@@ -1,0 +1,31 @@
+PHTTP206.29.177.10"ƒ
+FPOST /Services/Activation/ActivationService.svc/deviceprice HTTP/1.1
+Host: www.t-mobile.com
+Connection: keep-alive
+Content-Length: 185
+8Accept: application/json, text/javascript, */*; q=0.01
+!Origin: http://www.t-mobile.com
+"X-Requested-With: XMLHttpRequest
+vUser-Agent: Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/31.0.1650.63 Safari/537.36
+ Content-Type: application/json
+#Referer: http://www.t-mobile.com/
+$Accept-Encoding: gzip,deflate,sdch
+!Accept-Language: en-US,en;q=0.8
+¦Cookie: TLTSID=391EAA7F4D772265981AF09B8CCC5960; TLTUID=391EAA7F4D772265981AF09B8CCC5960; fsr.a=1389229251645; mbox=check#true#1389229312|session#1389229251541-403877#1389231112|PC#1389229251541-403877.25_04#1390438852; TMobileSpanish=IsSpanishUser=false; MP_LANG=en; TMobileVisitIgnored=true
+»
+{"DeviceID":"d1eec2db-0514-4891-ace2-96468d176a86,9408371c-d11b-41c5-b8fa-f5f36f2617ab,d01c4dc8-99d8-4fda-ab0f-e6217116fc4f","State":"undefined","CreditClass":"A","ZIPCode":"undefined"}*Ä
+HTTP/1.1 200 OK
+Cache-Control: private
+/Content-Type: application/json; charset=utf-8
+Server: Microsoft-IIS/7.5
+X-AspNet-Version: 2.0.50727
+dSet-Cookie: TMobileCommon=TeaId=3138ca75-38e4-402b-b1a1-a59c5bfc1ff4; domain=.t-mobile.com; path=/
+hostname: 18tmoprod
+X-Powered-By: ASP.NET
+ Access-Control-Allow-Origin: *
+;Access-Control-Allow-Methods: GET,PUT,POST,DELETE,OPTIONS
+,Access-Control-Allow-Headers: Content-Type
+%Date: Thu, 09 Jan 2014 01:00:29 GMT
+Content-Length: 1987
+Å
+{"IsEIPEligible":true,"CustomerState":"","IsCreditCheckDone":false,"Device":[{"DeviceID":"d1eec2db-0514-4891-ace2-96468d176a86","FullPrice":396.0000,"SuggestedPrice":396.0000,"InstantDiscount":0,"WebOnlyDiscount":0,"OfferDiscountAmount":0,"MailInRebate":0,"MailInRebateInfo":"","HasPromotions":false,"WebOnlyPrice":"396.0000","IsOutOfStock":false,"InventoryCount":483,"RefurbishedDiscount":0,"EIP":{"MonthlyPayment":"16.50","NumberOfInstallments":"24","TotalCost":"396.0000","DownPayment":"0","IsDeviceEIPEligible":true},"SSK":{"SKU":"TM6760V2","ID":"fbf73058-4736-42f9-956a-e76eda7e5d5d","Name":"SIM Starter Kit","Price":10.0000,"ApplySSK":true},"ManufacturerName":"Google","IsBackOrderAllowed":true},{"DeviceID":"9408371c-d11b-41c5-b8fa-f5f36f2617ab","FullPrice":600.0000,"SuggestedPrice":600.0000,"InstantDiscount":0,"WebOnlyDiscount":0,"OfferDiscountAmount":0,"MailInRebate":0,"MailInRebateInfo":"","HasPromotions":false,"WebOnlyPrice":"600.0000","IsOutOfStock":false,"InventoryCount":63803,"RefurbishedDiscount":0,"EIP":{"MonthlyPayment":"25.00","NumberOfInstallments":"24","TotalCost":"600.0000","DownPayment":"0","IsDeviceEIPEligible":true},"SSK":{"SKU":"TM6760V2","ID":"fbf73058-4736-42f9-956a-e76eda7e5d5d","Name":"SIM Starter Kit","Price":10.0000,"ApplySSK":true},"ManufacturerName":"Apple","IsBackOrderAllowed":true},{"DeviceID":"d01c4dc8-99d8-4fda-ab0f-e6217116fc4f","FullPrice":624.0000,"SuggestedPrice":624.0000,"InstantDiscount":0,"WebOnlyDiscount":0,"OfferDiscountAmount":0,"MailInRebate":0,"MailInRebateInfo":"","HasPromotions":false,"WebOnlyPrice":"624.0000","IsOutOfStock":false,"InventoryCount":27580,"RefurbishedDiscount":0,"EIP":{"MonthlyPayment":"26.00","NumberOfInstallments":"24","TotalCost":"624.0000","DownPayment":"0","IsDeviceEIPEligible":true},"SSK":{"SKU":"TM6760V2","ID":"fbf73058-4736-42f9-956a-e76eda7e5d5d","Name":"SIM Starter Kit","Price":10.0000,"ApplySSK":true},"ManufacturerName":"Samsung","IsBackOrderAllowed":true}],"IsNPI":true,"WCFErrors":null}

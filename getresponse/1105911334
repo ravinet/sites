@@ -1,0 +1,32 @@
+»HTTPS207.8.198.26"¶
+GET /user.css HTTP/1.1
+Host: app.getresponse.com
+Connection: keep-alive
+Accept: text/css,*/*;q=0.1
+vUser-Agent: Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/31.0.1650.63 Safari/537.36
+&Referer: http://www.getresponse.com/
+$Accept-Encoding: gzip,deflate,sdch
+!Accept-Language: en-US,en;q=0.8
+XCookie: marketing=3muuf3qajpg3pqgel4oh2fjpa3; allow_for_mobile=1; timeout=logout_43200
+
+*É
+HTTP/1.1 200 OK
+Server: nginx
+%Date: Fri, 10 Jan 2014 16:05:19 GMT
+Content-Type: text/css
+Content-Length: 282
+Connection: keep-alive
+NSet-Cookie: core=flen68fu77g1rfr43vb6p0pn34; path=/; domain=.getresponse.com
+(Expires: Thu, 19 Nov 1981 08:52:00 GMT
+Cache-Control: no-cache
+Pragma: no-cache
+iSet-Cookie: timeout=logout_43200; expires=Sat, 11-Jan-2014 04:05:19 GMT; path=/; domain=getresponse.com
+œ
+.userLoggedIn_B {display:none !important;}
+.userLoggedOut_B {display:block !important;}
+
+.userLoggedIn_I {display:none !important;}
+.userLoggedOut_I {display:inline !important;}
+
+.userLoggedIn_IB {display:none !important;}
+.userLoggedOut_IB {display:inline-block !important;}

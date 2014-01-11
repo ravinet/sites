@@ -1,0 +1,50 @@
+PHTTP173.241.242.99"–
+ÙGET /w/1.0/acj?cc=1&ai=0cec60e8-31b8-475b-069e-fa440d0335e1&o=909493637&callback=OX_909493637&ju=http%3A//www.myfitnesspal.com/&jr=&auid=480832&res=1920x1200x24&plg=swf%2Cqt%2Cwmp%2Cshk%2Cpm&ch=UTF-8&tz=300 HTTP/1.1
+Host: us-ads.openx.net
+Connection: keep-alive
+Accept: */*
+vUser-Agent: Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/31.0.1650.63 Safari/537.36
+$Accept-Encoding: gzip,deflate,sdch
+!Accept-Language: en-US,en;q=0.8
+0Cookie: i=db5d9e27-1133-74a3-f01e-03822f22e8bf
+
+*ù
+HTTP/1.1 200 OK
+Vary: Accept
+“Set-Cookie: i=db5d9e27-1133-74a3-f01e-03822f22e8bf; Version=1; Expires=Fri, 09-Jan-2015 13:44:04 GMT; Max-Age=31536000; Domain=.openx.net; Path=/
+CServer: MochiWeb/1.1 WebMachine/1.10.0 (never breaks eye contact)
+Pragma: no-cache
+#P3P: CP="CUR ADM OUR NOR STA NID"
+(Expires: Mon, 26 Jul 1997 05:00:00 GMT
+%Date: Thu, 09 Jan 2014 13:44:04 GMT
+ Content-Type: application/json
+Content-Length: 1262
+-Cache-Control: private, max-age=0, no-cache
+Connection: close
+ð	
+OX_909493637({
+  "ads":{
+    "medium":"w",
+    "record_tmpl":"http://us-ads.openx.net/{medium}/1.0/{rtype}?ts={txn_state}",
+    "pixels":"http://us-u.openx.net/w/1.0/pd?plm=5&ph=94ef58655625200a8cfc5b15afcd0b94ad52d590",
+    "adunits" : [
+      {
+        "auid":"480832",
+        "chain":[
+          {
+            "is_fallback":1,
+            
+            "ad_id":"0",
+            "width":"728",
+            "height":"90",
+            "html":"<iframe src=\"http://www.myfitnesspal.com/ads/display/diaries_728x90/openxtier1sup\" width=\"728\" height=\"90\" frameborder=\"0\" scrolling=\"no\" marginwidth=\"0\" marginheight=\"0\" style=\"border: 0pt none;\"></iframe>",
+            "target":"_blank",
+            "ts":"1fHJhaWQ9ZDgwZGVlNTYtYmU0Yy00YzRiLTg0ZmUtM2NiOWE2M2E5MDI0fHNpZD0xMDM2NDF8YXVtPURNSUQuV0VCfHU9MXxhdWlkPTQ4MDgzMnxyaWQ9NThlYWQzMjktZjY5ZS00MjkwLWFjZmUtY2E0MmVmMGZiYmYzfHBjPVVTRHx1cj1kTzI2VzR2YUNxfHJ0PTEzODkyNzUwNDR8cHViPTY1ODg2",
+            "type":"html",
+            "ad_url":"<iframe src=\"http://www.myfitnesspal.com/ads/display/diaries_728x90/openxtier1sup\" width=\"728\" height=\"90\" frameborder=\"0\" scrolling=\"no\" marginwidth=\"0\" marginheight=\"0\" style=\"border: 0pt none;\"></iframe>"
+          }
+        ]
+      }
+    ]
+  }
+});

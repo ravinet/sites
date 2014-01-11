@@ -1,0 +1,32 @@
+PHTTP
+23.74.28.9"¾
+kGET /usermatch?s=175407&cb=http%3A%2F%2Fums.adtechus.com%2Fmapuser%3Fproviderid%3D1010%3Buserid= HTTP/1.1
+Host: ip.casalemedia.com
+Connection: keep-alive
+TAccept: text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8
+vUser-Agent: Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/31.0.1650.63 Safari/537.36
+$Accept-Encoding: gzip,deflate,sdch
+!Accept-Language: en-US,en;q=0.8
+
+*…
+ HTTP/1.1 302 Moved Temporarily
+Server: Apache
+GP3P: policyref="/w3c/p3p.xml", CP="NOI DSP COR DEVa TAIa OUR BUS UNI"
+…Location: http://as.casalemedia.com/usermatch?s=175407&cb=http%3A%2F%2Fums.adtechus.com%2Fmapuser%3Fproviderid%3D1010%3Buserid=&C=1
+Content-Length: 313
+-Content-Type: text/html; charset=iso-8859-1
+(Expires: Thu, 09 Jan 2014 18:21:02 GMT
+.Cache-Control: max-age=0, no-cache, no-store
+Pragma: no-cache
+%Date: Thu, 09 Jan 2014 18:21:02 GMT
+Connection: keep-alive
+oSet-Cookie: CMID=rAG2NUFuq5gAAGDBt60AAAAN;domain=casalemedia.com;path=/;expires=Fri, 09 Jan 2015 18:21:02 GMT
+ZSet-Cookie: CMPS=097;domain=casalemedia.com;path=/;expires=Wed, 09 Apr 2014 18:21:02 GMT
+»
+<!DOCTYPE HTML PUBLIC "-//IETF//DTD HTML 2.0//EN">
+<html><head>
+<title>302 Found</title>
+</head><body>
+<h1>Found</h1>
+<p>The document has moved <a href="http://as.casalemedia.com/usermatch?s=175407&amp;cb=http%3A%2F%2Fums.adtechus.com%2Fmapuser%3Fproviderid%3D1010%3Buserid=&amp;C=1">here</a>.</p>
+</body></html>

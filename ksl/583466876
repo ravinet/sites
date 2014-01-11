@@ -1,0 +1,26 @@
+PHTTP50.18.248.30"Å
+1GET /track/cmf/generic?ttd_pid=bluekai HTTP/1.1
+Host: match.adsrvr.org
+Connection: keep-alive
+Accept: image/webp,*/*;q=0.8
+vUser-Agent: Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/31.0.1650.63 Safari/537.36
+$Accept-Encoding: gzip,deflate,sdch
+!Accept-Language: en-US,en;q=0.8
+wCookie: TDID=7c50e072-b6aa-4bbd-b110-f6ee33b977bf; TDCPM=CAESFAoFb3BlbngSCwjUwfGwob6tMRAFGAUgASgCMgsIhJmC3be+rTEQBTgB
+
+*’
+HTTP/1.1 302 Found
+2Cache-Control: private,no-cache, must-revalidate
+Content-Type: text/html
+%Date: Thu, 09 Jan 2014 01:12:33 GMT
+ULocation: http://tags.bluekai.com/site/5386?id=7c50e072-b6aa-4bbd-b110-f6ee33b977bf
+DP3P: CP="NOI DSP COR CUR ADMo DEVo PSAo PSDo OUR SAMo BUS UNI NAV"
+Pragma: no-cache
+Server: Microsoft-IIS/7.5
+zSet-Cookie: TDID=7c50e072-b6aa-4bbd-b110-f6ee33b977bf; domain=.adsrvr.org; expires=Fri, 09-Jan-2015 01:12:33 GMT; path=/
+³Set-Cookie: TDCPM=CAESFAoFb3BlbngSCwjUwfGwob6tMRAFEhYKB2JsdWVrYWkSCwjM8pyyob6tMRAFGAUgAigCMgsIhJmC3be+rTEQBTgB; domain=.adsrvr.org; expires=Fri, 09-Jan-2015 01:12:33 GMT; path=/
+X-AspNet-Version: 4.0.30319
+Content-Length: 177
+Connection: keep-alive
+³
+Redirecting to: <a href="http://tags.bluekai.com/site/5386?id=7c50e072-b6aa-4bbd-b110-f6ee33b977bf">http://tags.bluekai.com/site/5386?id=7c50e072-b6aa-4bbd-b110-f6ee33b977bf</a>

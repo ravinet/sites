@@ -1,0 +1,19 @@
+PHTTP66.117.23.104"¨	
+˘GET /m2/webmdcom/mbox/standard?mboxHost=www.webmd.com&mboxSession=1389228228155-204552&mboxPage=1389228228155-204552&screenHeight=1200&screenWidth=1920&browserWidth=937&browserHeight=1051&browserTimeOffset=-300&colorDepth=24&mboxCount=1&m1=Nav%20-%20Home%20Page&m5=WebMD%20Information%20Page&m6=Home%20Page&m7=homepage&m11=1728&entity.pageUrl=http%3A%2F%2Fwww.webmd.com%2F&entity.id=WebMD%20-%20Better%20information.%20Better%20health.&entity.categoryId=&entity.sponsoredRec=false&entity.sponsoredProgram=&entity.pageType=Nav%20-%20Home%20Page&entity.channelMini=&entity.channelSuper=&entity.pubSource=WebMD%20Information%20Page&entity.packageName=Home%20Page&entity.packageType=homepage&entity.s_sponsor_brand=&entity.topicID=1728&entity.pageName=www.webmd.com%2F&mbox=WebMDMbox&mboxId=0&mboxTime=1389210228218&mboxURL=http%3A%2F%2Fwww.webmd.com%2F&mboxReferrer=&mboxVersion=39 HTTP/1.1
+Host: webmdcom.tt.omtrdc.net
+Connection: keep-alive
+Accept: */*
+vUser-Agent: Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/31.0.1650.63 Safari/537.36
+ Referer: http://www.webmd.com/
+$Accept-Encoding: gzip,deflate,sdch
+!Accept-Language: en-US,en;q=0.8
+
+*¬
+HTTP/1.1 200 OK
+pragma: no-cache
+2Content-Type: text/javascript;charset=ISO-8859-1
+Content-Length: 907
+%Date: Thu, 09 Jan 2014 00:43:35 GMT
+Server: Test & Target
+ç
+var mboxCurrent=mboxFactories.get('default').get('WebMDMbox',0);mboxCurrent.setEventTime('include.start');document.write('<div style="visibility: hidden; display: none" id="mboxImported-default-WebMDMbox-0">');document.write('<!-- Offer Id: 77730  --><script type=\"text\/javascript\">window.ttMETA=(typeof(window.ttMETA)!=\'undefined\')?window.ttMETA:[];window.ttMETA.push({\'mbox\':\'WebMDMbox\',\'campaign\':\'\',\'experience\':\'\',\'offer\':\'\'});window.ttMBX=function(x){var mbxList=[];for(i=0;i<ttMETA.length;i++){if(ttMETA[i].mbox==x.getName()){mbxList.push(ttMETA[i])}}return mbxList[x.getId()]}<\/script>');mboxFactories.get('default').get('WebMDMbox',0).setOffer(new mboxOfferDefault()).loaded();document.write('</div>');mboxCurrent.setEventTime('include.end');mboxFactories.get('default').get('WebMDMbox',0).loaded();mboxFactories.get('default').getPCId().forceId("1389228228155-204552.25_50");

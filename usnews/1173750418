@@ -1,0 +1,36 @@
+PHTTP216.52.92.23"Ó
+¦GET /a/h/HuqeLZgU_XY2bjL5TLUjvGsqgINiPqcVVSDKbzDbQD7p_TJHJeqwqw==?cb=bafefeffa67ccbbe352df1127848f730&pet=preroll&pageUrl=http%3A%2F%2Fwww.usnews.com%2F&description=VIDEO_DESCRIPTION&duration=VIDEO_DURATION&id=VIDEO_ID&keywords=VIDEO_KEYWORDS&title=VIDEO_TITLE&url=VIDEO_URL&injectCompanionDummy=true&eov=eov&a.sdk=adaptv&a.hasAppInfo=true&a.rid=&a.d.pageUrl=http%3A%2F%2Fembed.newsinc.com%2Fthumbnail%2Fiframe.html%3Fwid%3D13109&companionId=&a.sdkType=flash&p.vw.viewable=-1&p.vw.domId=ndn_adbox&p.vw.active=1&p.vw.area=75000&p.vw.psize=1 HTTP/1.1
+Host: ads.adap.tv
+Connection: keep-alive
+vUser-Agent: Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/31.0.1650.63 Safari/537.36
+Accept: */*
+CReferer: http://embed.newsinc.com/thumbnail/iframe.html?wid=13109
+$Accept-Encoding: gzip,deflate,sdch
+!Accept-Language: en-US,en;q=0.8
+ßCookie: adaptv_unique_user_cookie="4335081223023565348__TIME__2014-01-08+08%3A57%3A00"; redundant_unique_user_cookie="4023270364020283940__TIME__2014-01-08+08%3A57%3A00"; rtbData0="key=USERSync20:value=1:expiresAt=Fri+Feb+07+08%3A57%3A00+PST+2014:32-Compatible=true,key=USERSync22:value=1:expiresAt=Fri+Feb+07+08%3A57%3A00+PST+2014:32-Compatible=true,key=USERSync23:value=1:expiresAt=Mon+Jan+13+08%3A57%3A00+PST+2014:32-Compatible=true,key=USERSync24:value=1:expiresAt=Fri+Feb+07+08%3A57%3A00+PST+2014:32-Compatible=true,key=USERSync29:value=1:expiresAt=Fri+Feb+07+08%3A57%3A00+PST+2014:32-Compatible=true,key=USERSync30:value=1:expiresAt=Fri+Feb+07+08%3A57%3A00+PST+2014:32-Compatible=true,key=USERSync35:value=1:expiresAt=Fri+Feb+07+08%3A57%3A00+PST+2014:32-Compatible=true,key=USERSync36:value=1:expiresAt=Fri+Feb+07+08%3A57%3A00+PST+2014:32-Compatible=true"
+
+*§
+HTTP/1.1 200 OK
+Server: adaptv/1.0
+Content-Type: text/xml
+Connection: Keep-Alive
+4Cache-Control: no-cache, no-store, must-revalidate
+Pragma: no-cache
+Expires: 0
+ Access-Control-Allow-Origin: *
+™Set-Cookie: adaptv_unique_user_cookie="4335081223023565348__TIME__2014-01-08+08%3A57%3A02";Path=/;Domain=.adap.tv;Expires=Fri, 08-Jan-2016 16:57:02 GMT
+œSet-Cookie: redundant_unique_user_cookie="4023270364020283940__TIME__2014-01-08+08%3A57%3A02";Path=/;Domain=.adap.tv;Expires=Fri, 07-Feb-2014 16:57:02 GMT
+ýSet-Cookie: rtbData0="key=USERSync20:value=1:expiresAt=Fri+Feb+07+08%3A57%3A00+PST+2014:32-Compatible=true,key=USERSync22:value=1:expiresAt=Fri+Feb+07+08%3A57%3A00+PST+2014:32-Compatible=true,key=USERSync23:value=1:expiresAt=Mon+Jan+13+08%3A57%3A00+PST+2014:32-Compatible=true,key=USERSync24:value=1:expiresAt=Fri+Feb+07+08%3A57%3A00+PST+2014:32-Compatible=true,key=USERSync29:value=1:expiresAt=Fri+Feb+07+08%3A57%3A00+PST+2014:32-Compatible=true,key=USERSync30:value=1:expiresAt=Fri+Feb+07+08%3A57%3A00+PST+2014:32-Compatible=true,key=USERSync35:value=1:expiresAt=Fri+Feb+07+08%3A57%3A00+PST+2014:32-Compatible=true,key=USERSync36:value=1:expiresAt=Fri+Feb+07+08%3A57%3A00+PST+2014:32-Compatible=true";Path=/;Domain=.adap.tv;Expires=Fri, 08-Jan-2016 16:57:02 GMT
+Content-Length: 249
+û
+<?xml version="1.0" encoding="UTF-8"?>
+
+<VAST version="2.0">
+	<Error>	</Error>
+
+	<Extensions>
+		<Extension type="adaptv_error">
+			<Error code="2"><![CDATA[No ad could be found matching this request.]]></Error>
+		</Extension>
+	</Extensions>
+</VAST>

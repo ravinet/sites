@@ -1,0 +1,68 @@
+PHTTP192.150.16.64"°
+*GET /apps/dotcom/ag-widgets.css HTTP/1.1
+Host: www.adobe.com
+Connection: keep-alive
+Accept: text/css,*/*;q=0.1
+vUser-Agent: Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/31.0.1650.63 Safari/537.36
+ Referer: http://www.adobe.com/
+$Accept-Encoding: gzip,deflate,sdch
+!Accept-Language: en-US,en;q=0.8
+LCookie: mbox=check#true#1389227479|session#1389227418322-215795#1389229279
+
+*Ã
+HTTP/1.1 200 OK
+%Date: Thu, 09 Jan 2014 00:30:06 GMT
+Server: Apache
+X-Adobe-Content: WCMS
+Accept-Ranges: bytes
+Cache-Control: max-age=900
+(Expires: Thu, 09 Jan 2014 00:45:06 GMT
+Content-Length: 1263
+Keep-Alive: timeout=2
+Connection: Keep-Alive
+Content-Type: text/css
+#Vary: Accept-Encoding, User-Agent
+ñ	
+#CQ .cq-editbar-livestatus-right-lock-protected {
+    background: url("content/locked-protected.png") no-repeat !important;
+}
+
+#CQ .cq-editrollover-livestatus-right-lock-protected {
+    background: url("content/locked-protected.png") no-repeat 50% 2px !important;
+    border-right: 2px solid #b9db52;
+}
+
+#CQ .cq-dialog-edit-lock-protected {
+	display:block;
+	width:16px;
+	height:16px;
+	text-decoration:none;	
+	background: url("content/locked-protected.png") no-repeat !important;
+}
+
+#CQ .cq-editrollover-livestatus-right-lock-protected {
+    background: url("content/locked-protected.png") no-repeat 50% 2px !important;
+    border-right: 2px solid #b9db52;
+}
+
+#CQ .x-html-editor-tb .x-edit-seokeywordtext {
+    background: url("content/seo-button.gif") center no-repeat !important;
+    width: 16px !important;
+    height: 16px !important;
+}
+
+#CQ .dialog_height_100 {
+	min-height: 100px;
+}
+
+#apps .locwizard {
+    background: url("ag-widgets/resources/images/sprite.png") no-repeat scroll 0 -2px transparent;
+}
+
+#apps .l10ntagadmin {
+    background: url("ag-widgets/resources/images/sprite.png") no-repeat scroll -294px -2px transparent;
+}
+
+#apps .gridadmin {
+    background: url("ag-widgets/resources/images/sprite.png") no-repeat scroll -84px -2px transparent;
+}

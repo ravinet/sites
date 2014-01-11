@@ -1,0 +1,34 @@
+PHTTP216.52.92.23"‚
+
+VGET /applist?placementId=123655&hostname=embed.newsinc.com&pubkey=&orgId=-2 HTTP/1.1
+Host: ads.adap.tv
+Connection: keep-alive
+vUser-Agent: Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/31.0.1650.63 Safari/537.36
+Accept: */*
+CReferer: http://embed.newsinc.com/thumbnail/iframe.html?wid=13109
+$Accept-Encoding: gzip,deflate,sdch
+!Accept-Language: en-US,en;q=0.8
+ßCookie: adaptv_unique_user_cookie="4335081223023565348__TIME__2014-01-08+08%3A57%3A02"; redundant_unique_user_cookie="4023270364020283940__TIME__2014-01-08+08%3A57%3A02"; rtbData0="key=USERSync20:value=1:expiresAt=Fri+Feb+07+08%3A57%3A00+PST+2014:32-Compatible=true,key=USERSync22:value=1:expiresAt=Fri+Feb+07+08%3A57%3A00+PST+2014:32-Compatible=true,key=USERSync23:value=1:expiresAt=Mon+Jan+13+08%3A57%3A00+PST+2014:32-Compatible=true,key=USERSync24:value=1:expiresAt=Fri+Feb+07+08%3A57%3A00+PST+2014:32-Compatible=true,key=USERSync29:value=1:expiresAt=Fri+Feb+07+08%3A57%3A00+PST+2014:32-Compatible=true,key=USERSync30:value=1:expiresAt=Fri+Feb+07+08%3A57%3A00+PST+2014:32-Compatible=true,key=USERSync35:value=1:expiresAt=Fri+Feb+07+08%3A57%3A00+PST+2014:32-Compatible=true,key=USERSync36:value=1:expiresAt=Fri+Feb+07+08%3A57%3A00+PST+2014:32-Compatible=true"
+
+*•
+HTTP/1.1 200 OK
+Server: adaptv/1.0
+Content-Type: text/xml
+Connection: Keep-Alive
+Content-Length: 284
+ž
+<?xml version="1.0" encoding="UTF-8"?>
+
+<AppList>
+	<App>
+		<Id><![CDATA[16]]></Id>
+
+		<Name><![CDATA[Viewability]]></Name>
+
+		<ShortName><![CDATA[vw]]></ShortName>
+
+		<Scripts>
+			<URL><![CDATA[classpath://tv.adap.apps.viewability.Viewability]]></URL>
+		</Scripts>
+	</App>
+</AppList>

@@ -1,0 +1,21 @@
+PHTTP66.150.102.78"–
+çGET /services/viewer/federated_f9?&width=287&height=210&flashID=kmart_test_myExperience2&bgcolor=%23FFFFFF&playerID=2866497299001&playerKey=AQ~~%2CAAABmf2u2tk~%2CdQiiKlVFx1c-NoZxot575uQduaRHRtcE&isVid=true&isUI=true&dynamicStreaming=true&includeAPI=true&templateLoadHandler=kmart_test_myTemplateLoaded&autoStart=&debuggerID=&startTime=1389371950056 HTTP/1.1
+Host: c.brightcove.com
+Connection: keep-alive
+vUser-Agent: Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/31.0.1650.63 Safari/537.36
+Accept: */*
+"Referer: http://www.cafemom.com/
+$Accept-Encoding: gzip,deflate,sdch
+!Accept-Language: en-US,en;q=0.8
+
+*Ë
+HTTP/1.1 302 Found
+X-BC-Client-IP: 128.30.76.55
+"X-BC-Connecting-IP: 128.30.76.55
+.Last-Modified: Thu, 09 Jan 2014 17:42:47 GMT
+*Cache-Control: must-revalidate,max-age=0
+¼Location: http://admin.brightcove.com/viewer/us20140108.2039/BrightcoveBootloader.swf?playerID=2866497299001&playerKey=AQ%7E%7E%2CAAABmf2u2tk%7E%2CdQiiKlVFx1c-NoZxot575uQduaRHRtcE&purl=http%3A%2F%2Fwww.cafemom.com%2F&autoStart=&bgcolor=%23FFFFFF&debuggerID=&dynamicStreaming=true&flashID=kmart_test_myExperience2&height=210&includeAPI=true&isUI=true&isVid=true&startTime=1389371950056&templateLoadHandler=kmart_test_myTemplateLoaded&width=287
+Content-Length: 0
+%Date: Fri, 10 Jan 2014 16:38:56 GMT
+Server: brightcove
+

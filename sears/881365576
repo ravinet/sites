@@ -1,0 +1,28 @@
+PHTTP
+23.0.63.23"ˆ
+NGET /segments/sears-site-assets.js?callback=cq5DataLoaded&shcAJAX=1 HTTP/1.1
+Host: nav.shld.net
+Connection: keep-alive
+Accept: */*
+vUser-Agent: Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/31.0.1650.63 Safari/537.36
+ Referer: http://www.sears.com/
+$Accept-Encoding: gzip,deflate,sdch
+!Accept-Language: en-US,en;q=0.8
+
+*‚
+HTTP/1.1 200 OK
+Server: nginx
+.Content-Type: text/javascript; charset=utf-8
+Status: 200 OK
+#X-UA-Compatible: IE=Edge,chrome=1
+*ETag: "fca32c0900d119868c171f00fa6de722"
+0X-Request-Id: 935e1f07337127f272a74e3d80f567d6
+X-Runtime: 0.020626
+X-Rack-Cache: miss
+Content-Length: 651
+8Cache-Control: private, must-revalidate, max-age=83570
+(Expires: Thu, 09 Jan 2014 23:55:27 GMT
+%Date: Thu, 09 Jan 2014 00:42:37 GMT
+Connection: keep-alive
+ç
+cq5DataLoaded({"domain":null,"name":"Sears Site Assets","pieces":[{"behavior":"","brand":"sears","position":"asset","type":"tree","menu_items":[{"child_menu_items":[{"child_menu_items":[{"url":"ue/home/autofill-distributer.v-110-z","name":"Prod"},{"url":"ue/home/autofill-distributer.v-110-z","name":"Beta"},{"url":"ue/home/autofill-distributer.v-103-z","name":"Qa"}],"name":"js"},{"child_menu_items":[{"url":"ue/home/af-prod.v-3.2.20-z","name":"Prod"},{"url":"ue/home/af-prod.v-3.2.20-z","name":"Beta"},{"url":"ue/home/af-prod.v-3.2.18-z","name":"Qa"}],"name":"css"}],"name":"AutoFill"}],"_slugs":"sears-asset-tree"}],"_slugs":"sears-site-assets"});

@@ -1,0 +1,18 @@
+PHTTP66.117.23.101"ð	
+¤GET /m2/marriottinternationa/sc/standard?mboxHost=www.marriott.com&mboxSession=1389232786779-974551&mboxPage=1389232786779-974551&screenHeight=1200&screenWidth=1920&browserWidth=937&browserHeight=1051&browserTimeOffset=-300&colorDepth=24&mboxCount=3&mbox=SiteCatalyst%3A%20event&mboxId=0&mboxTime=1389214787230&charSet=UTF-8&cookieDomainPeriods=2&pageName=www.marriott.com%2Fdefault.mi&resolution=1920x1200&trackDownloadLinks=true&trackExternalLinks=true&trackInlineStats=true&linkLeaveQueryString=false&linkTrackVars=None&linkTrackEvents=None&prop5=US&prop8=Weekday%20%3A%20Wednesday%20%3A%208%3A30PM&eVar15=Weekday%20%3A%20Wednesday%20%3A%208%3A30PM&eVar20=Page%20Loaded%20on%20864w%3A%20Portrait&eVar35=First%20Visit&eVar41=US&eVar47=g10&prop56=Vp52Ox3vj_-UtYkeOhlnqc5%7C0000Vp52Ox3vj_-UtYkeOhlnqc5%3A172o295sr&eVar59=81&mboxURL=http%3A%2F%2Fwww.marriott.com%2Fdefault.mi&mboxReferrer=&mboxVersion=41&scPluginVersion=1 HTTP/1.1
+*Host: marriottinternationa.tt.omtrdc.net
+Connection: keep-alive
+Accept: */*
+vUser-Agent: Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/31.0.1650.63 Safari/537.36
+-Referer: http://www.marriott.com/default.mi
+$Accept-Encoding: gzip,deflate,sdch
+!Accept-Language: en-US,en;q=0.8
+
+*‚
+HTTP/1.1 200 OK
+2Content-Type: text/javascript;charset=ISO-8859-1
+Content-Length: 223
+%Date: Thu, 09 Jan 2014 01:59:33 GMT
+Server: Test & Target
+á
+if (typeof(mboxFactories) !== 'undefined') {mboxFactories.get('default').getPCId().forceId("1389232786779-974551.25_12");mboxFactories.get('default').get('SiteCatalyst: event', 0).setOffer(new mboxOfferDefault()).loaded();}

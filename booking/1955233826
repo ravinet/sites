@@ -1,0 +1,33 @@
+PHTTP23.209.47.139"Í
+GET /en_US/fp.js HTTP/1.1
+Host: connect.facebook.net
+Connection: keep-alive
+Accept: */*
+vUser-Agent: Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/31.0.1650.63 Safari/537.36
+"Referer: http://www.booking.com/
+$Accept-Encoding: gzip,deflate,sdch
+!Accept-Language: en-US,en;q=0.8
+
+*ó	
+HTTP/1.1 200 OK
+'Content-MD5: /PEirMmoeMcVW2QHKC4Bmg==
+7Content-Type: application/x-javascript; charset=utf-8
+*ETag: "1c7b42a4850117cf33a359bbc35aaf43"
+Timing-Allow-Origin: *
+:X-FB-Debug: dqN+QYHD6HTkiD3I3KahmTTAYH/IXcZZ0lDN1s/gxN8=
+Content-Length: 846
+%Cache-Control: public, max-age=1200
+(Expires: Thu, 09 Jan 2014 14:03:04 GMT
+%Date: Thu, 09 Jan 2014 13:43:04 GMT
+Connection: keep-alive
+Ð
+/*1389274801,180804167,JIT Construction: v1073774,en_US*/
+
+/**
+ * Copyright Facebook Inc.
+ *
+ * Licensed under the Apache License, Version 2.0
+ * http://www.apache.org/licenses/LICENSE-2.0
+ */
+try {
+(function(){if(typeof fb_param!='undefined'&&fb_param.pixel_id){var a='https://www.facebook.com/offsite_event.php',b=a+'?id='+fb_param.pixel_id;if(fb_param.value)b+='&value='+encodeURIComponent(fb_param.value);if(fb_param.currency)b+='&currency='+encodeURIComponent(fb_param.currency);var c=new Image();c.src=b;}})();} catch (e) {new Image().src="http:\/\/www.facebook.com\/" + 'common/scribe_endpoint.php?c=jssdk_error&m='+encodeURIComponent('{"error":"LOAD", "extra": {"name":"'+e.name+'","line":"'+(e.lineNumber||e.line)+'","script":"'+(e.fileName||e.sourceURL||e.script)+'","stack":"'+(e.stackTrace||e.stack)+'","message":"'+e.message+'"}}');}

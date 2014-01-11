@@ -1,0 +1,21 @@
+PHTTP204.79.197.200"À
+5GET /s/as/1031200425/Rewards/RewardsBep.js HTTP/1.1
+Host: www.bing.com
+Connection: keep-alive
+Accept: */*
+vUser-Agent: Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/31.0.1650.63 Safari/537.36
+Referer: http://www.bing.com/
+$Accept-Encoding: gzip,deflate,sdch
+!Accept-Language: en-US,en;q=0.8
+áCookie: _FS=NU=1; MUID=069DC9634FB369BD2174CCDE4EAC6954; MUIDB=069DC9634FB369BD2174CCDE4EAC6954; OrigMUID=069DC9634FB369BD2174CCDE4EAC6954%2c7561b2774acd49819defcc2a767f4879; SRCHD=D=3168016&MS=3168016&AF=NOFORM; SRCHUID=V=2&GUID=33E5226C955B40A8837DF413D49C59A4; SRCHUSR=AUTOREDIR=0&GEOVAR=&DOB=20140109; _SS=SID=6740073B9F95436698BA9C0E13B52C74&C=20
+
+*¨
+HTTP/1.1 200 OK
+)Cache-Control: public, max-age=15552000
+Content-Length: 1455
+(Content-Type: application/x-javascript
+.Last-Modified: Sun, 31 Oct 2010 20:04:25 GMT
+Server: Microsoft-IIS/8.0
+%Date: Thu, 09 Jan 2014 00:16:15 GMT
+±
+var bepns=bepns||function(){function b(){var c=_ge("id_l"),l=_ge("id_lt"),w,b,d,k,u,s;n=_ge("bep"),i=_ge("bepfo"),t=_ge("bep_cnt"),r=!1,c&&n&&(r=n.className=="bephpoff",w=c.parentNode,b=n.parentNode,b!=w&&(r&&l&&b!=l?(d=l.insertCell(0),d.appendChild(n)):(w.insertBefore(n,c.nextSibling),sb_st(y,500)),k=_ge("id_d_u"),k&&(u=sj_ce("div"),u.className=k.className,u.id="beparrow",n.insertBefore(u,n.firstChild),s=_ge("id_p"),s&&s.style&&s.style.display=="none"&&(u.style.left="65px")),r||h(n)),sj_be(n,o,p,0),sj_evt.bind(a,function(n){n[1]!=v&&f()}),sj_evt.fire("bepready",e))}function h(n){n.className="bepidon"}function y(){var n=_ge("id_h"),t;n&&n.style.pixelLeft>0&&n.clientWidth>0&&n.clientWidth<=240&&(t=50,n.style.left=n.style.pixelLeft-t+l,n.style.width=n.clientWidth+t+l)}function p(n){i&&(i.style.display!="block"?w(n):f(n))}function u(n){n&&(n.style.display="none")}function s(n){n&&(n.style.display="block")}function e(i){r&&!c&&(h(n),c=!0),(!i||i<=0)&&(i="");var u=_ge("bep_gleam"),f=i?"gleamon":"gleamoff";t&&u&&(t.innerHTML=i,i&&(t.className="cnton"),u.className=f)}function w(r){var h=_ge("bepfm");h&&(h.src="/rewardsapp/bepflyoutpage"),s(i),s(_ge("beparrow")),n&&(n.className="openfo"),t&&t.firstChild&&e(),sj_sp(r),sj_be(_d,o,f,0),sj_evt.fire(a,v),u(_ge("id_d")),u(_ge("id_d_u")),u(_ge("id_d_uc"))}function f(n){u(i),u(_ge("beparrow")),sj_ue(_d,o,f),n&&sj_sp(n)}var v="bepfo",a="onPopTR",n,i,t,o="click",l="px",r=!1,c=!1;return b(),{sg:e}}()

@@ -1,0 +1,22 @@
+PHTTP216.23.166.110"Ý
+eGET /data?p=2bd124e1-4a83-4778-9730-acafc1209717&anon=28d183f0-035a-40ed-822e-75e8723bb024 HTTP/1.1
+Host: clients.bluecava.com
+Connection: keep-alive
+TAccept: text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8
+vUser-Agent: Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/31.0.1650.63 Safari/537.36
+!Referer: http://www.orbitz.com/
+$Accept-Encoding: gzip,deflate,sdch
+!Accept-Language: en-US,en;q=0.8
+
+*ý
+ HTTP/1.1 301 Moved Permanently
+(Content-Type: text/html; charset=UTF-8
+~Location: http://clients.bluecava.com/data/?p=2bd124e1-4a83-4778-9730-acafc1209717&anon=28d183f0-035a-40ed-822e-75e8723bb024
+Server: Microsoft-IIS/7.5
+X-Powered-By: ASP.NET
+EP3P: CP="NON DSP LAW PSAo PSDo IVAo IVDo OTPo OUR SAMo BUS UNI PRE"
+%Date: Thu, 09 Jan 2014 13:50:57 GMT
+Content-Length: 241
+ó
+<head><title>Document Moved</title></head>
+<body><h1>Object Moved</h1>This document may be found <a HREF="http://clients.bluecava.com/data/?p=2bd124e1-4a83-4778-9730-acafc1209717&amp;anon=28d183f0-035a-40ed-822e-75e8723bb024">here</a></body>

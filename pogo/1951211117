@@ -1,0 +1,114 @@
+PHTTP159.153.236.12"º
+7GET /v/GIv25Q/include/js/shared/RequireJS.js HTTP/1.1
+Host: www.pogo.com
+Connection: keep-alive
+Accept: */*
+vUser-Agent: Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/31.0.1650.63 Safari/537.36
+Referer: http://www.pogo.com/
+$Accept-Encoding: gzip,deflate,sdch
+!Accept-Language: en-US,en;q=0.8
+ZCookie: prod.JID=49A7278FE4645146C5D180E013537465.000272; com.pogo.unid=6712084695971357
+
+*¼
+HTTP/1.1 200 OK
+Age: 277792    
+%Date: Tue, 07 Jan 2014 04:50:06 GMT
+(Expires: Sun, 06 Jan 2019 10:26:26 GMT
+#Cache-Control: max-age=157680000 
+Connection: Keep-Alive
+Via: POGO-EDGE
+ETag: W/"2609-1358554253000"
+Server: Apache-Coyote/1.1
+Accept-Ranges: bytes
+.Last-Modified: Sat, 19 Jan 2013 00:10:53 GMT
+Content-Type: text/javascript
+Content-Length: 2609
+³
+/////////////////////////////////////////////////////////////////////////////////
+//
+// File: RequireJS.js
+// Description: load javascript dynamically from javascript
+// Updated Date: 2012-04-26
+// Copyright (c) 2012 by Electronic Arts. All rights reserved. 
+/////////////////////////////////////////////////////////////////////////////////
+
+window.Pogo = window.Pogo || {
+	__javascriptsToLoad : [],
+	__loadedJavascripts : {}
+};
+
+Pogo.__loadedJavascripts = Pogo.__loadedJavascripts || {};
+Pogo.__javascriptsToLoad = Pogo.__javascriptsToLoad || [];
+
+if (!Pogo.requireJS) {
+	Pogo.requireJS = function(jsUrl, callback) {
+		function postProcess(task, next) {
+			Pogo.__loadedJavascripts[task.src] = true;
+			try {
+				if (task.callback) task.callback();
+			} finally {
+				if (next) next();
+			}
+		};
+		
+		function processQueue(loadTaskQueue, idx) {
+			if (idx >= loadTaskQueue.length) {
+				return;
+			}
+			var task = loadTaskQueue[idx];
+			if (Pogo.__loadedJavascripts[task.src]) {
+				postProcess(task, function () {
+					processQueue(loadTaskQueue, idx + 1);		
+				});
+			} else {
+				var d = document, head = d.getElementsByTagName("head")[0],script = d.createElement("script");
+				script.type = "text/javascript";
+				script.src = task.src;
+				head.appendChild(script);				
+				if (script.readyState){
+					script.onreadystatechange = function () {
+						if (script.readyState == "loaded" || script.readyState == "complete"){
+							postProcess(task, function () {
+								processQueue(loadTaskQueue, idx + 1);		
+							});
+						}
+					}
+				} else {
+					script.onload = function () {
+						postProcess(task, function () {
+							processQueue(loadTaskQueue, idx + 1);		
+						});
+					};
+				}
+			}
+		};
+		
+		function loadJavascripts() {
+			// check static script first
+			var scripts = document.getElementsByTagName("script"); 
+			for (var i = 0 ; i < scripts.length; i++) {
+				if (scripts[i].src) {
+					Pogo.__loadedJavascripts[scripts[i].src] = true;
+				}
+			}
+			// dynamiclly load javascripts
+			processQueue(Pogo.__javascriptsToLoad, 0);
+			Pogo.__javascriptsToLoad = []; 
+		};
+
+		// start the processing
+		if (document.readyState == "complete") {
+			// called after dom ready
+			processQueue([{src:jsUrl, callback:callback}], 0);
+		} else {
+			Pogo.__javascriptsToLoad[Pogo.__javascriptsToLoad.length] = {src: jsUrl, callback: callback};
+			if (Pogo.__javascriptsToLoad.length == 1) {
+				if (document.all) {
+					document.attachEvent( "onreadystatechange", loadJavascripts);
+				} else {
+					document.addEventListener("DOMContentLoaded", loadJavascripts, false);
+				}					
+			}		
+		}
+	};
+}

@@ -1,0 +1,27 @@
+PHTTP208.89.14.135"Í
+ÜGET /hc/11390142/?&visitor=112710164807152&msessionkey=862923234997248110&siteContainer=STANDALONE&site=11390142&cmd=mTagStartPage&lpCallId=833732320926-279974985402&protV=20&lpjson=1&page=http%3A//www.att.com/%23fbid%3Dcqs6ohS0FOK&id=7090669849&javaSupport=false&visitorStatus=INSITE_STATUS&defInvite=chat-supern22-english&activePlugin=none&cobrowse=true&pageWindowName=1389227880562&PV%21unit=supern22&PV%21visitorType=RET&PV%21applicationName=&PV%21departmentName=&PV%21errorName=&PV%21ChatEligibility=Off&PV%21orderType=POSTPAID&PV%21categoryName=&PV%21conversionStage=&PV%21configureStage=&PV%21cartTotal=0&PV%21cartTotalRMR=0&PV%21checkoutStage=&PV%21visitorActive=1&SV%21language=english&SV%21clickAction=&VV%21visitorId=R5sPSNvbY201CJqDLpC6vl8v%21-765481156%211389227867470&VV%21customerType=RET&VV%21customerName=&VV%21customerZip=&VV%21customerCity=&VV%21customerState=&VV%21customerAccountInfo=&VV%21customerItemsOwned=&VV%21customerQualification=&VV%21customerLocalization=&title=AT%26T%20-%204G%20LTE%2C%20Cell%20Phones%2C%20U-verse%2C%20TV%2C%20Internet%20%26%20Phone%20Service&cobrowse=true HTTP/1.1
+Host: sales.liveperson.net
+Connection: keep-alive
+Accept: */*
+vUser-Agent: Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/31.0.1650.63 Safari/537.36
+Referer: http://www.att.com/
+$Accept-Encoding: gzip,deflate,sdch
+!Accept-Language: en-US,en;q=0.8
+¿Cookie: HumanClickKEY=862923234997248110; HumanClickSiteContainerID_11390142=STANDALONE; LivePersonID=-112710164807152-1389227868:-1:-1:-1:-1; LivePersonID=LP i=112710164807152,d=1389227868
+
+*‡
+HTTP/1.1 200 OK
+%Date: Thu, 09 Jan 2014 00:37:48 GMT
+Server: Microsoft-IIS/6.0
+GP3P: CP="NON BUS INT NAV COM ADM CON CUR IVA IVD OTP PSA PSD TEL SAM"
+X-Powered-By: ASP.NET
+NSet-Cookie: HumanClickSiteContainerID_11390142=STANDALONE; path=/hc/11390142
+(Content-Type: application/x-javascript
+Accept-Ranges: bytes
+.Last-Modified: Thu, 09 Jan 2014 00:37:48 GMT
+Cache-Control: no-store
+Pragma: no-cache
+(Expires: Wed, 31 Dec 1969 23:59:59 GMT
+Content-Length: 2582
+˜
+lpConnLib.Process({"ResultSet": {"lpCallId":"833732320926-279974985402","lpCallConfirm":"","lpJS_Execute":[{"code_id": "SYSTEM!updateButtonStatic_compact.js", "js_code": "function lpUpdateStaticButton(){this.hcDate=function(){var d=new Date();return d.getTime();};this.hcGetImage=function(name){return this.hcFindImage(document,name);};this.hcFindImage=function(doc,name){var i;if(this.hcDOM){var elements=doc.getElementsByTagName('IMG');var collection=[];for(i=0;i<elements.length;i++){if((typeof(elements[i].name)!='undefined')&&(elements[i].name==name)){collection[collection.length]=elements[i];}}if(collection.length==0){return null;}if(collection.length==1){return collection[0];}return collection;}var lays=doc.layers;if(!lays){return doc[name];}for(i=0;i<doc.images.length;i++){if(doc.images[i].name==name){return doc.images[i];}}for(var l=0;l<lays.length;l++){var img=this.hcFindImage(lays[l].document,name);if(img!=null){return img;}}return null;};this.hcDOM=(document.getElementById)?true:false;this.hcimage=this.hcGetImage('hcIcon');this.hcicon=null;var i;if(this.hcimage){if(!(this.hcimage.length)){var temp=this.hcimage;this.hcimage=[];this.hcimage[0]=temp;}this.hcicon=[];for(i=0;i<this.hcimage.length;i++){this.hcicon[i]=this.hcimage[i].src;}}if(this.hcimage){for(i=0;i<this.hcimage.length;i++){this.hcimage[i].src=this.hcicon[i]+'&monitor=1&d='+this.hcDate();}}if(typeof(lpMTagStatic)!='undefined'&&typeof(lpMTagStatic.stateChangeCallbacks)!='undefined'){for(i=0;i<lpMTagStatic.stateChangeCallbacks.length;i++){var tempfunc=lpMTagStatic.stateChangeCallbacks[i];try{tempfunc();if(lpConnLib.DebugDisplay){lpMTagDebug.Display('OK Executing Static button callback function','EXEC-OK');}}catch(hcError){if(lpConnLib.DebugDisplay){lpMTagDebug.Display('ERROR Executing Static button callback function='+tempfunc+' &nbsp #'+hcError+'#','ERROR');}}}}}var lpUpdateStaticButtonObj=new lpUpdateStaticButton();"},{"code_id": "LP_REP_STATE_CHANGED", "js_code": "if(window.lpTag&&window.lpTag.events){window.lpTag.events.trigger('LPChat','LP_REP_STATE_CHANGED',{});}else if(window.lpMTag&&window.lpMTag.events){window.lpMTag.events.publish('LP_REP_STATE_CHANGED',{});}"},{"code_id": "INPAGE-DELAY-10", "js_code": "lpMTag.lpInPageRequestDelay=10;"},{"code_id": "FPCSetVal", "js_code": "lpMTagConfig.useFirstParty = false;lpMTag.lpDeleteCookie(lpMTagConfig.FPC_VID_NAME,'/',lpMTagConfig.FPC_ParentDomain);lpMTag.lpDeleteCookie(lpMTagConfig.FPC_SKEY_NAME, '/',lpMTagConfig.FPC_ParentDomain);lpMTag.lpDeleteCookie(lpMTagConfig.FPC_CONT_NAME, '/',lpMTagConfig.FPC_ParentDomain);"}]}});

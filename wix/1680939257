@@ -1,0 +1,25 @@
+PHTTP
+18.7.20.69"…
+PGET /services/wix-users/2.333.0/login-dialog/locale/messages_en.jsonp HTTP/1.1
+Host: static.wix.com
+Connection: keep-alive
+Accept: */*
+vUser-Agent: Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/31.0.1650.63 Safari/537.36
+Referer: http://www.wix.com/
+$Accept-Encoding: gzip,deflate,sdch
+!Accept-Language: en-US,en;q=0.8
+ŠCookie: _wixUIDX=null-user-id; _wixCIDX=6f7409a5-ae2b-4187-8ef0-3b0596c6e127; _wix_browser_sess=80c4ae3b-f152-496b-a31f-e83ff4bfb389; _wixAB2=21271#2751#2014-11-18T15-33-00.000-0600; __utma=41622436.1832745584.1389229800.1389229800.1389229800.1; __utmb=41622436.1.10.1389229800; __utmc=41622436; __utmz=41622436.1389229800.1.1.utmcsr=(direct)|utmccn=(direct)|utmcmd=(none); userType=ANONYMOUS
+
+*ú 
+HTTP/1.1 200 OK
+X-Seen-By: s10.aus_pp
+.ETag: "caedf3b71e1323dd3c201cf0df9cc0a63835"
+(Content-Type: application/octet-stream
+Cache-Control: max-age=604800
+Content-Length: 3835
+Server: s10.aus
+%Date: Thu, 09 Jan 2014 01:09:47 GMT
+eX-Cache: TCP_HIT from a18-7-20-65.deploy.akamaitechnologies.com (AkamaiGHost/6.14.0.1-11778834) (-)
+Connection: keep-alive
+ý
+LoginDialog.setLocaleMessages({"login_title":"Sign In","label_email":"Email","description_email":"e.g. yourname@gmail.com","label_password":"Password","label_new_user":"I'm a new user","label_existing_user":"I'm an existing user","label_button_go":"GO","label_remember_me":"Remember me","forgot_password":"Forgot Password?","sign_up_title":"Sign Up","sign_up_title_email":"My email address is","label_validate_email":"Type your email again","label_validate_password":"Type your password again","sign_up_title_password":"Enter a password","sign_up_terms_start":"* By signing up, you agree to our","sign_up_terms_end":"and to receive Wix emails, newsletters & updates.","sign_up_user_terms_url":"http://www.wix.com/about/terms-of-use","sign_up_user_terms_link":"Terms of Use","sign_up_privacy_terms_url":"http://www.wix.com/about/privacy","sign_up_privacy_terms_link":"Privacy","error_0":"OK","error_100":"Oops, Something went wrong! Please try again","error_101":"Password must be between ${0} and ${1} characters","error_2012":"General validation error","error_9964":"User name already exists","error_9966":"Unregistered email address","error_9968":"Email already verified","error_9969":"User is deleted or blocked","error_9970":"Username cannot match password","error_9971":"Unregistered email address","error_99711":"Invalid email address","error_9972":"Wrong password","error_99721":"Invalid password","error_9973":"Field cannot be empty","error_99731":"Invalid user","error_9974":"Invalid email address (must be at least ${0} and less than ${1} chars)","error_9975":"Communication error. Please try again in a few seconds.","error_9976":"Password must be between ${0} and ${1} characters.","error_9990":"Email is similar to password, please choose a different password","error_9967":"Email already exists","error_9960":"The email or password you entered is incorrect.","error_9980":"<b>We are sorry...</b>\n<br/>\nWix.com services are unavailable from your location due to regulations imposed by the United States Department of State.\n<br/>\nPlease <a href=\"http://www.state.gov/j/ct/\">click here</a> for more information.\n","error_102":"Emails don't match","error_103":"Passwords don't match","forgot_password_title":"Forgot Password?","forgot_password_description":"Enter your Email address and we'll send you a link to reset your password","sign_up_button":"Sign Up","back_to_login":"Back to Sign In","forgot_password_done":"Email with a reset password link has been sent to you.","done":"Done","account_verify_title":"Account Verification","account_verify_description":"is the same email address used for your Wix account.","label_password_verify":"Enter your Wix password here","google_sign_in_desc":"Click below to sign in using your social account","google_sign_in_button":"Sign in with Google","social_sign_in_seperator":"or","set_password_title":"Set Your Password","set_password_description":"In order to update your settings you need to first set your Wix password:","label_set_password":"Enter your new password","facebook_sign_in_button":"Sign in with Facebook","merge_title":"Already have a Wix account?","merge_description":"If you've previously created a Wix account, you can use your {socialNetwork} login with your existing wix account.","merge_description_bold":"To log in to your existing account with {socialNetwork}, please enter your Email Address and Password.","label_button_no":"No, Thanks","label_button_ok":"OK","facebook":"Facebook","google":"Google+","account_verify_description_b":"Please confirm that both accounts belong to you by entering your Wix password below:","skip_login":"Skip login","facebook_not_loaded":"Facebook is not responding. Please try again later.","google_not_loaded":"Google+ is not responding. Please try again later.","get_email_title":"Please enter your email below:"});

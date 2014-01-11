@@ -1,0 +1,18 @@
+PHTTP64.215.255.16"ú
+#GET /red/pixel?pid=11112 HTTP/1.1
+Host: addthis.mathtag.com
+Connection: keep-alive
+Accept: image/webp,*/*;q=0.8
+vUser-Agent: Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/31.0.1650.63 Safari/537.36
+7Referer: http://ct1.addthis.com/static/r07/sh142.html
+$Accept-Encoding: gzip,deflate,sdch
+!Accept-Language: en-US,en;q=0.8
+
+*·
+HTTP/1.1 302 Found
+%Date: Thu, 09 Jan 2014 13:49:57 GMT
+.Cache-Control: max-age=0, no-cache, no-store
+Pragma: no-cache
+šLocation: http://sync.mathtag.com/sync/img?mt_exid=10025&redir=http%3A%2F%2Fsu.addthis.com%2Fred%2Fusync%3Fpid%3D11112%26ssrc%3D4%26puid%3D%5BMM_UUID%5D
+Connection: close
+

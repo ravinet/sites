@@ -1,0 +1,41 @@
+PHTTP69.25.24.26"Û
+FGET /partner/agent/rubicon/channels.js?cb=oz_onPixelsLoaded HTTP/1.1
+Host: tap.rubiconproject.com
+Connection: keep-alive
+Accept: */*
+vUser-Agent: Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/31.0.1650.63 Safari/537.36
+uReferer: http://tap2-cdn.rubiconproject.com/partner/scripts/rubicon/emily.html?rtb_ext=1&pc=9673/17653&geo=na&co=us
+$Accept-Encoding: gzip,deflate,sdch
+!Accept-Language: en-US,en;q=0.8
+‹Cookie: ruid=591e6e0552cd7426801e4c372a74f6^1^1389196326^2149469239; rsid=C8+RQy3/opJVHvT6YQYEzrJxZbOI0QgrrOiWDk+w9yxJAt2YdR/5IMJfHKV89ZpgsrNOp3FzqHqnco4tdeVZVP8dzd1qdnqwN5iZvZeCF+xgPIt0ol6+G1VZ; rdk=9673/17653; rdk15=0; ses15=17653^1; vis15=17653^1; csi15=; csc15=
+
+*‘
+HTTP/1.1 200 OK
+%Date: Wed, 08 Jan 2014 15:52:07 GMT
+Server: TRP Apache-Coyote/1.1
+4Cache-Control: no-store, no-cache, must-revalidate
+-Content-Type: text/javascript;charset=UTF-8
+Content-Length: 535
+Cache-control: private
+FSet-Cookie: SERVERID=; Expires=Thu, 01-Jan-1970 00:00:01 GMT; path=/
+ Keep-Alive: timeout=5, max=155
+Connection: Keep-Alive
+™
+
+
+
+var oo_profile={
+ tokenType : "",
+ tracking : "",
+ tags : "",
+ tagcloud : [
+  ],
+ pixels : [
+  { url: "http://pixel.rubiconproject.com/di.php?v=2372|0||2373||2374|0||&r=3761|0,3169,3578,3577,2110,2195,2196,2197,2579,2198,4134,3734,2199,2364,2362,2363,2200,3810,2111,2494,2201,3513,2202,2496,2202,2496,2203,2204,2189,2112,2497,2205,2355,2495,5838,3811,3512,2109,3812,2239,2190,2206,2113,2206,2113,4552,2765,6184,2240,4105,4193,2372,2373,2374,2375,"}
+  ]
+};
+
+
+try {
+oz_onPixelsLoaded(oo_profile);
+} catch(ignore) {}

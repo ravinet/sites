@@ -1,0 +1,207 @@
+PHTTP68.71.212.116"ß
+GET /client-error HTTP/1.1
+Host: disney.go.com
+Connection: keep-alive
+vUser-Agent: Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/31.0.1650.63 Safari/537.36
+Origin: http://disney.com
+Accept: */*
+Referer: http://disney.com/
+$Accept-Encoding: gzip,deflate,sdch
+!Accept-Language: en-US,en;q=0.8
+
+*ÄG
+HTTP/1.1 404 Not Found
+-Content-Type: text/html; charset=iso-8859-1
+Server: barista/3.3.6
+Content-Length: 8670
+Accept-Ranges: bytes
+%Date: Thu, 09 Jan 2014 01:08:50 GMT
+"X-Varnish: 1276276597 1276276125
+	Age: 22
+Via: 1.1 varnish
+Connection: keep-alive
+X-Served-By: n7dolvarnish02
+X-Backend: home
+X-Cache: HIT
+X-Cache-Hits: 33
+*X-LB_VirtualServer: vs-DOL_DISNEY.GO.COM
+$X-LB_Pool: pool-DOL_SHARED_VARNISH
+!X-LB_Server: 10.198.64.217:6081
+àC
+<!DOCTYPE html
+    PUBLIC '-//W3C//DTD XHTML 1.0 Transitional//EN'
+    'http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd'>
+<html xmlns='http://www.w3.org/1999/xhtml' xml:lang='en' lang='en'>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<meta name="verify-v1" content="EP0KWZ2MLrV0OzwqRt9YtEd2OG5U6URBIAF224DrE9M=" />
+<meta name="msvalidate.01" content="73A4B2DF91A340B19F6168847BA68354" />
+<meta name="y_key" content="9b79779a21598fe7" />
+<meta name="verify-v1" content="ZWdd8ocoPfTM5h8F9TTbp/MwvvgRjFQxcSi3XH5cZcc=" />
+<meta name="y_key" content="d3b33abbef1cd699" />		
+<title>Disney.com</title>
+<meta name="Description" content="my description" />
+<meta name="Keywords" content="key1 key2 key3" />
+
+<script type="text/javascript" src="http://a.dolimg.com/en-US/dcom/js/swfobject_v2.js"></script>
+<script language="Javascript" src="http://tredir.go.com/capmon/GetDE/?set=j&param=connection&param=metrocode&param=domain&param=country"></script>
+<script type="text/javascript" src="http://a.dolimg.com/en-US/dcom/js/guestservices/guestservices.js"></script>
+<script type="text/javascript" src="http://cdn.dolimg.com/en-US/globalelements/age.js"></script>
+<script type="text/javascript" src="https://globalregsession.go.com/globalregsession/session?as=setUserObj"></script>
+<script type='text/javascript'>
+        var googletag = googletag || {};
+        googletag.cmd = googletag.cmd || [];
+        (function() {
+        var gads = document.createElement('script');
+        gads.async = true;
+        gads.type = 'text/javascript';
+        var useSSL = 'https:' == document.location.protocol;
+        gads.src = (useSSL ? 'https:' : 'http:') +
+        '//www.googletagservices.com/tag/js/gpt.js';
+        var node = document.getElementsByTagName('script')[0];
+        node.parentNode.insertBefore(gads, node);
+        })();
+        </script>
+
+
+		
+		
+		
+<script type='text/javascript'>
+        googletag.cmd.push(function() {
+
+		googletag.pubads().setTargeting("age", userObj.ageBand);
+		googletag.defineSlot('/7046/dcom/guestservices:page_not_found', [728, 90], 'div-gpt-ad-leaderboard1').addService(googletag.pubads()).setTargeting('position', ['atf']);
+		googletag.defineSlot('/7046/dcom/guestservices:page_not_found', [300, 250], 'div-gpt-ad-rectangle1').addService(googletag.pubads()).setTargeting('position', ['atf']);
+		googletag.defineSlot('/7046/dcom/guestservices:page_not_found', [160, 600], 'div-gpt-ad-skyscraper1').addService(googletag.pubads()).setTargeting('position', ['atf']);
+		
+		googletag.defineSlot('/7046/dcom/guestservices:page_not_found', [180, 150], 'div-gpt-ad-promoBottom1').addService(googletag.pubads()).setTargeting('promo', ['promoBottom1']).setTargeting('position', ['btf']);
+		
+		
+
+		googletag.pubads().setTargeting('contentType', ['dcore']);
+		googletag.pubads().setTargeting('pageName', ['errorPage']);
+		googletag.pubads().setTargeting('siteSection', ['guestservices:page_not_found']);
+		googletag.pubads().setTargeting('unit', ['']);
+		googletag.pubads().setTargeting('property', ['gsrv']);
+		googletag.pubads().collapseEmptyDivs();
+        googletag.enableServices();
+
+        });
+</script>
+
+
+
+<link href="/guestservices/css/guestservices.css" media="screen" rel="stylesheet" type="text/css" />
+
+
+<style>
+.midCol{ width:600px; }
+.midCol a{ text-decoration:none; }
+#p404icons td{ vertical-align:bottom; text-align:center; }
+.p404title{ font:bold 14px arial; }
+</style>
+</head>
+<body>
+
+<div class="mChrome">
+	<script src="http://a.dilcdn.com/g/us/homepage/full-shim.js"></script>
+</div>
+
+<div class="topLeaderboardAd">
+	<div id="region_category_leaderboard_ad">
+		<div id="div-gpt-ad-leaderboard1" class="adtile">
+			<script type='text/javascript'>
+				googletag.cmd.push(function() { googletag.display('div-gpt-ad-leaderboard1'); });
+			</script>
+		</div>
+	</div>
+</div>
+
+<div id="layout">
+	<div style="clear:both;padding:20px 0px;height:300px;">
+		<div style="float:left;width:682px;height:300px;background-image:url(http://a.dolimg.com/en-US/dcom/media/guestservices/404/404-background.png);text-align:left;">
+
+					<img src="http://a.dolimg.com/en-US/dcom/media/guestservices/404/404-phineasandferb.png" style="position:absolute;border:none;margin:0px 0px 0px 480px;" alt="Phineas and Ferb" />
+
+						<a href="http://disney.go.com/games/#/games/all/">
+
+					<img src="http://a.dolimg.com/en-US/dcom/media/guestservices/404/404_button-games.png" style="position:absolute;border:none;margin:145px 0px 0px 50px;" alt="GAMES" />
+
+						</a>
+
+						<a href="http://video.disney.com">
+
+					<img src="http://a.dolimg.com/en-US/dcom/media/guestservices/404/404_button-videos.png" style="position:absolute;border:none;margin:145px 0px 0px 146px;" alt="VIDEO" />
+
+						</a>
+
+						<a href="http://disney.go.com/create/">
+
+					<img src="http://a.dolimg.com/en-US/dcom/media/guestservices/404/404_button-create.png" style="position:absolute;border:none;margin:145px 0px 0px 245px;" alt="CREATE" />
+
+						</a>
+
+		</div>
+		<div style="float:left;width:312px;">
+			<!-- TOWER AD -->
+			<div class="topRightAlbumAd">
+				<div id="region_category_top_right_ad">
+					<div id="div-gpt-ad-rectangle1" class="adtile w300 h260">
+						<script type='text/javascript'>
+							googletag.cmd.push(function() { googletag.display('div-gpt-ad-rectangle1'); });
+						</script>
+					</div>
+				</div>
+			</div>
+			<!-- / TOWER AD -->
+		</div>
+	</div>
+	<!-- BOTTOM ADS -->
+	<div class="tilePackStylePromo">
+		<div class="tilePack">
+			<div class="tiles">
+<table border="0" cellspacing="0" cellpadding="0" style="margin-left:40px;"><tr><td width="250" align="center"><div class="tile w180"><div class="tileImage"><a href="http://disneyparks.disney.go.com/special-offers-deals-discounts/?CMP=AFC-DPFY13Q1DIENT0114G" class="tileImage"><img src="http://a.dolimg.com/media/en-US/property/pagenotfound/pro_disneyparks_180.jpg" alt="null" width="180" height="150" class="tileImage" border="0"/></a></div></div></td><td width="250" align="center"><div class="tile w180"><div class="tileImage"><a href="http://www.disneystore.com/transfer/280559/tink-s-treasure/mn/1001232/?cmp=OTL-Dcom&att=Dcom_404_tinkstreasure_180x150 " class="tileImage"><img src="http://a.dolimg.com/media/en-US/property/pagenotfound/180x150_tinkstreasure_20120411.jpg" alt="null" width="180" height="150" class="tileImage" border="0"/></a></div></div></td><td width="250" align="center"><div class="tile w180"><div class="tileImage"><a href="http://blogs.disney.com/insider/" class="tileImage"><img src="http://a.dolimg.com/media/en-US/property/pagenotfound/pro_insider_180x150.jpg" alt="null" width="180" height="150" class="tileImage" border="0"/></a></div></div></td><td width="250" align="center"><div class="tile w180"><div class="tileImage"><a href="http://disneyrewards.com/apply/disney-rewards-credit-card?CELL=64XW19" class="tileImage"><img src="http://a.dolimg.com/media/en-US/dcom/guestservices/evergreen_promos/visa_q2.jpg" alt="null" width="180" height="150" class="tileImage" border="0"/></a></div></div></td><td width="250" align="center"><div class="tile w180"><div class="tileImage"><a href="http://disneyparks.disney.go.com/special-offers-deals-discounts/?CMP=AFC-DPFY13Q1DIENT0146G" class="tileImage"><img src="http://a.dolimg.com/media/en-US/property/pagenotfound/pro_disneyparks_180.jpg" alt="null" width="180" height="150" class="tileImage" border="0"/></a></div></div></td></tr></table>
+			</div>
+		</div>
+	</div>
+	<!-- / BOTTOM ADS -->
+	<div class="clearBoth"><br><br><br><br><br></div>
+	<!-- GLOBAL FOOTER -->
+	<div id="global_footer">
+		<script language='javascript' type='text/javascript' src="http://ahome.disney.go.com/globalelements/footer.js"></script>
+	</div>
+</div>
+<div class="hidden"><div id="maincontainerright" class="maincontainerright"><div class="maincontainerleft"><div class="shadowholder"><div class="innercontainer"></div></div></div></div></div>
+
+
+<!-- BEGIN DOL Web Analytics 1.0 -->
+<script language="JavaScript" src="http://aglobal.go.com/stat/dolWebAnalytics.js"></script>
+<script language="JavaScript">
+	cto=new CTO();
+	cto.account='guestservices';
+	cto.category='dcore';
+	cto.site='dcom';
+	cto.siteSection='guestservices:page_not_found';
+	cto.pageName='errorPage';
+	cto.contentType='Regular';
+	cto.brandSegment='dol';
+	cto.property='gsrv';
+	cto.region='';
+	cto.country='';
+	cto.unit='';
+	cto.siteType='';
+
+	if (typeof intAB != "null" && typeof intAB != "undefined") {
+		cto.abTest = intAB;
+	}
+	if (typeof ctoAssetId != "null" && typeof ctoAssetId != "undefined") {
+		cto.assetId = ctoAssetId;
+		cto.assetStart = ctoAssetId;
+	}
+	cto.track();
+</script>
+<!-- END DOL Web Analytics 1.0 -->
+
+</body>
+</html>

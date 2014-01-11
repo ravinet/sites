@@ -1,0 +1,28 @@
+»HTTPS108.170.199.176"æ
+>GET /pixel?pixelID=161539&partnerID=548&key=segment HTTP/1.1
+%Host: segment-pixel.invitemedia.com
+Connection: keep-alive
+Accept: image/webp,*/*;q=0.8
+vUser-Agent: Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/31.0.1650.63 Safari/537.36
+$Accept-Encoding: gzip,deflate,sdch
+!Accept-Language: en-US,en;q=0.8
+
+*Š	
+HTTP/1.1 302 Found
+Server: nginx/0.7.65
+%Date: Thu, 09 Jan 2014 21:24:03 GMT
+Connection: close
+zSet-Cookie: uid=9d2ddf91-690b-4d7e-bda6-e432c918f01f;Path=/;Domain=invitemedia.com;Expires=Fri, 09-Jan-2015 21:24:45 GMT
+(Expires: Thu, 01 Jan 1970 00:00:00 GMT
+—Set-Cookie: segments_p1="eJzj4uJofsepMHf5nmmsABdeBFI=";Version=1;Path=/;Domain=invitemedia.com;Expires=Fri, 09-Jan-2015 21:24:45 GMT;Max-Age=31536000
+Pragma: no-cache
+€P3P: policyref="/w3c/p3p.xml", CP="OTI DSP COR ADMo TAIo PSAo PSDo CONo OUR SAMo OTRo STP UNI PUR COM NAV INT DEM STA PRE LOC"
+Cache-Control: no-cache
+<Location: https://ad.yieldmanager.com/pixel?id=2387765&t=2
+Content-Length: 0
+^Set-Cookie: impressions=;Path=/;Domain=invitemedia.com;Expires=Thu, 01-Jan-1970 00:00:01 GMT
+YSet-Cookie: clicks=;Path=/;Domain=invitemedia.com;Expires=Thu, 01-Jan-1970 00:00:01 GMT
+[Set-Cookie: segments=;Path=/;Domain=invitemedia.com;Expires=Thu, 01-Jan-1970 00:00:01 GMT
+\Set-Cookie: frequency=;Path=/;Domain=invitemedia.com;Expires=Thu, 01-Jan-1970 00:00:01 GMT
+_Set-Cookie: io_frequency=;Path=/;Domain=invitemedia.com;Expires=Thu, 01-Jan-1970 00:00:01 GMT
+

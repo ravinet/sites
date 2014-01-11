@@ -1,0 +1,19 @@
+PHTTP216.52.92.23"¦
+GET /crossdomain.xml HTTP/1.1
+Host: u-ads.adap.tv
+Connection: keep-alive
+vUser-Agent: Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/31.0.1650.63 Safari/537.36
+Accept: */*
+CReferer: http://embed.newsinc.com/thumbnail/iframe.html?wid=13109
+$Accept-Encoding: gzip,deflate,sdch
+!Accept-Language: en-US,en;q=0.8
+¸Cookie: adaptv_unique_user_cookie="4335081223023565348__TIME__2014-01-08+08%3A56%3A58"; redundant_unique_user_cookie="4023270364020283940__TIME__2014-01-08+08%3A56%3A58"; rtbData0=""
+
+*Ê
+HTTP/1.1 200 OK
+Server: adaptv/1.0
+Content-Type: text/xml
+Connection: Keep-Alive
+Content-Length: 209
+Ó
+<?xml version="1.0"?><!DOCTYPE cross-domain-policy SYSTEM "http://www.macromedia.com/xml/dtds/cross-domain-policy.dtd"><cross-domain-policy><allow-access-from domain="*" secure="false" /></cross-domain-policy>

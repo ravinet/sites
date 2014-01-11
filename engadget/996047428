@@ -1,0 +1,53 @@
+PHTTP23.3.13.113"ƒ
+KGET /z/CES2014_1@114455/manifest.f4m?hdcore=2.9.5&g=UGIRKKDIRSDS HTTP/1.1
+!Host: aolhdshls-lh.akamaihd.net
+Connection: keep-alive
+vUser-Agent: Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/31.0.1650.63 Safari/537.36
+Accept: */*
+#Referer: http://www.engadget.com/
+$Accept-Encoding: gzip,deflate,sdch
+!Accept-Language: en-US,en;q=0.8
+
+*ò
+HTTP/1.1 200 OK
+Server: AkamaiGHost
+Mime-Version: 1.0
+Content-Type: video/f4m
+Content-Length: 3642
+.Last-Modified: Wed, 08 Jan 2014 18:20:08 GMT
+(Expires: Thu, 09 Jan 2014 01:44:08 GMT
+$Cache-Control: max-age=0, no-cache
+Pragma: no-cache
+%Date: Thu, 09 Jan 2014 01:44:08 GMT
+Connection: keep-alive
+jSet-Cookie: _alid_=HH0awrW263BI2wVCqYnnqw==; path=/z/CES2014_1@114455/; domain=aolhdshls-lh.akamaihd.net
+¼
+<?xml version="1.0" encoding="UTF-8"?>
+<manifest xmlns="http://ns.adobe.com/f4m/1.0" xmlns:akamai="uri:akamai.com/f4m/1.0">
+  <akamai:version>2.0</akamai:version>
+  <akamai:bw>5000</akamai:bw>
+  <id>CES2014_1</id>
+  <streamType>live</streamType>
+  <akamai:streamType>live</akamai:streamType>
+  <dvrInfo beginOffset="0" endOffset="0"/>
+  <bootstrapInfo profile="named" id="bootstrap_300" url="300_5251965f8a3e58fb-p.bootstrap"/>
+  <bootstrapInfo profile="named" id="bootstrap_800" url="800_5251965f8a3e58fb-p.bootstrap"/>
+  <bootstrapInfo profile="named" id="bootstrap_1200" url="1200_5251965f8a3e58fb-p.bootstrap"/>
+  <bootstrapInfo profile="named" id="bootstrap_1600" url="1600_5251965f8a3e58fb-p.bootstrap"/>
+  <bootstrapInfo profile="named" id="bootstrap_2000" url="2000_5251965f8a3e58fb-p.bootstrap"/>
+  <media bitrate="396" url="300_5251965f8a3e58fb-p_" bootstrapInfoId="bootstrap_300">
+    <metadata>AgAKb25NZXRhRGF0YQMABXdpZHRoAEB5AAAAAAAAAAZoZWlnaHQAQGwAAAAAAAAACWZyYW1lcmF0ZQBAPfhR64UeuAAXdmlkZW9rZXlmcmFtZV9mcmVxdWVuY3kAQAgGJnA9gGMADGF1ZGlvY29kZWNpZAIABG1wNGEADWF1ZGlvZGF0YXJhdGUAQFgAAAAAAAAAD2F1ZGlvc2FtcGxlcmF0ZQBA53AAAAAAAAANYXVkaW9jaGFubmVscwBAAAAAAAAAAAALYXVkaW9kZXZpY2UCABtFbGVtZW50YWwgVGVjaG5vbG9naWVzIExpdmUAC3ZpZGVvZGV2aWNlAgAbRWxlbWVudGFsIFRlY2hub2xvZ2llcyBMaXZlAAx2aWRlb2NvZGVjaWQCAARhdmMxAA12aWRlb2RhdGFyYXRlAEBywAAAAAAAAAAJ</metadata>
+  </media>
+  <media bitrate="896" url="800_5251965f8a3e58fb-p_" bootstrapInfoId="bootstrap_800">
+    <metadata>AgAKb25NZXRhRGF0YQMABXdpZHRoAECEAAAAAAAAAAZoZWlnaHQAQHaAAAAAAAAACWZyYW1lcmF0ZQBAPfhR64UeuAAXdmlkZW9rZXlmcmFtZV9mcmVxdWVuY3kAQAgGJnA9gGMADGF1ZGlvY29kZWNpZAIABG1wNGEADWF1ZGlvZGF0YXJhdGUAQFgAAAAAAAAAD2F1ZGlvc2FtcGxlcmF0ZQBA53AAAAAAAAANYXVkaW9jaGFubmVscwBAAAAAAAAAAAALYXVkaW9kZXZpY2UCABtFbGVtZW50YWwgVGVjaG5vbG9naWVzIExpdmUAC3ZpZGVvZGV2aWNlAgAbRWxlbWVudGFsIFRlY2hub2xvZ2llcyBMaXZlAAx2aWRlb2NvZGVjaWQCAARhdmMxAA12aWRlb2RhdGFyYXRlAECJAAAAAAAAAAAJ</metadata>
+  </media>
+  <media bitrate="1296" url="1200_5251965f8a3e58fb-p_" bootstrapInfoId="bootstrap_1200">
+    <metadata>AgAKb25NZXRhRGF0YQMABXdpZHRoAECOAAAAAAAAAAZoZWlnaHQAQIDgAAAAAAAACWZyYW1lcmF0ZQBAPfhR64UeuAAXdmlkZW9rZXlmcmFtZV9mcmVxdWVuY3kAQAgGJnA9gGMADGF1ZGlvY29kZWNpZAIABG1wNGEADWF1ZGlvZGF0YXJhdGUAQFgAAAAAAAAAD2F1ZGlvc2FtcGxlcmF0ZQBA53AAAAAAAAANYXVkaW9jaGFubmVscwBAAAAAAAAAAAALYXVkaW9kZXZpY2UCABtFbGVtZW50YWwgVGVjaG5vbG9naWVzIExpdmUAC3ZpZGVvZGV2aWNlAgAbRWxlbWVudGFsIFRlY2hub2xvZ2llcyBMaXZlAAx2aWRlb2NvZGVjaWQCAARhdmMxAA12aWRlb2RhdGFyYXRlAECSwAAAAAAAAAAJ</metadata>
+  </media>
+  <media bitrate="1696" url="1600_5251965f8a3e58fb-p_" bootstrapInfoId="bootstrap_1600">
+    <metadata>AgAKb25NZXRhRGF0YQMABXdpZHRoAECUAAAAAAAAAAZoZWlnaHQAQIaAAAAAAAAACWZyYW1lcmF0ZQBAPfhR64UeuAAXdmlkZW9rZXlmcmFtZV9mcmVxdWVuY3kAQAgGJnA9gGMADGF1ZGlvY29kZWNpZAIABG1wNGEADWF1ZGlvZGF0YXJhdGUAQFgAAAAAAAAAD2F1ZGlvc2FtcGxlcmF0ZQBA53AAAAAAAAANYXVkaW9jaGFubmVscwBAAAAAAAAAAAALYXVkaW9kZXZpY2UCABtFbGVtZW50YWwgVGVjaG5vbG9naWVzIExpdmUAC3ZpZGVvZGV2aWNlAgAbRWxlbWVudGFsIFRlY2hub2xvZ2llcyBMaXZlAAx2aWRlb2NvZGVjaWQCAARhdmMxAA12aWRlb2RhdGFyYXRlAECZAAAAAAAAAAAJ</metadata>
+  </media>
+  <media bitrate="2096" url="2000_5251965f8a3e58fb-p_" bootstrapInfoId="bootstrap_2000">
+    <metadata>AgAKb25NZXRhRGF0YQMABXdpZHRoAECUAAAAAAAAAAZoZWlnaHQAQIaAAAAAAAAACWZyYW1lcmF0ZQBAPfhR64UeuAAXdmlkZW9rZXlmcmFtZV9mcmVxdWVuY3kAQAgGJnA9gGMADGF1ZGlvY29kZWNpZAIABG1wNGEADWF1ZGlvZGF0YXJhdGUAQFgAAAAAAAAAD2F1ZGlvc2FtcGxlcmF0ZQBA53AAAAAAAAANYXVkaW9jaGFubmVscwBAAAAAAAAAAAALYXVkaW9kZXZpY2UCABtFbGVtZW50YWwgVGVjaG5vbG9naWVzIExpdmUAC3ZpZGVvZGV2aWNlAgAbRWxlbWVudGFsIFRlY2hub2xvZ2llcyBMaXZlAAx2aWRlb2NvZGVjaWQCAARhdmMxAA12aWRlb2RhdGFyYXRlAECfQAAAAAAAAAAJ</metadata>
+  </media>
+</manifest>

@@ -1,0 +1,26 @@
+PHTTP176.32.100.36"…
+#GET /css/orbit-1.2.3.css HTTP/1.1
+Host: aws.amazon.com
+Connection: keep-alive
+Accept: text/css,*/*;q=0.1
+vUser-Agent: Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/31.0.1650.63 Safari/537.36
+!Referer: http://aws.amazon.com/
+$Accept-Encoding: gzip,deflate,sdch
+!Accept-Language: en-US,en;q=0.8
+¥Cookie: x-wl-uid=1sXq9FIpLO9d4iVeqFQRlsK1MIDCHduCzm8yjecnSt6smrD5gcOKBNqlHBWHIinvdW/qXL6dQ3m4=; aws-session-id-time=2082758401l; aws-session-id=187-3581872-5464619
+
+*Ï
+HTTP/1.1 200 OK
+%Date: Thu, 09 Jan 2014 00:35:35 GMT
+Server: Server
+X-Frame-Options: SAMEORIGIN
+.Last-Modified: Fri, 03 Jan 2014 22:56:25 GMT
+ETag: "9e6-4ef18d1cd7840"
+Accept-Ranges: bytes
+Content-Length: 2534
+"Cache-Control: max-age=0, public
+(Expires: Thu, 09 Jan 2014 00:35:35 GMT
+Content-Type: text/css
+Vary: User-Agent
+è
+#featured{width:940px;height:450px;overflow:hidden;}#featured>img,#featured>div,#featured>a{display:none;}div.orbit-wrapper{width:1px;height:1px;position:relative;}div.orbit{width:1px;height:1px;position:relative;overflow:hidden;}div.orbit>img{position:absolute;top:0;left:0;display:none;}div.orbit>a{position:absolute;top:0;left:0;display:none;}.orbit>div{position:absolute;top:0;left:0;width:100%;height:100%;}div.timer{width:40px;height:40px;overflow:hidden;position:absolute;top:10px;right:10px;opacity:.6;cursor:pointer;z-index:1001;}span.rotator{display:block;width:40px;height:40px;position:absolute;top:0;left:-20px;z-index:3;}span.mask{display:block;width:20px;height:40px;position:absolute;top:0;right:0;z-index:2;overflow:hidden;}span.rotator.move{left:0;}span.mask.move{width:40px;left:0;}span.pause{display:block;width:40px;height:40px;position:absolute;top:0;left:0;z-index:4;opacity:0;}span.pause.active{;}div.timer:hover span.pause,span.pause.active{opacity:1;}.orbit-caption{display:none;font-family:"HelveticaNeue","Helvetica-Neue",Helvetica,Arial,sans-serif;}.orbit-wrapper .orbit-caption{background:#000;background:rgba(0,0,0,.6);z-index:1000;color:#fff;text-align:center;padding:7px 0;font-size:13px;position:absolute;right:0;bottom:0;width:100%;}div.slider-nav{display:block;}div.slider-nav span{width:40px;height:36px;text-indent:-9999px;position:absolute;z-index:1000;bottom:0;cursor:pointer;}div.slider-nav span.right{background:url(//d36cz9buwru1tt.cloudfront.net/hero/orbit-directional-arrows-3.png) right top no-repeat;right:20px;}div.slider-nav span.right:hover{background-position:right center;cursor:pointer;}div.slider-nav span.right:active{background-position:right bottom;}div.slider-nav span.left{background:url(//d36cz9buwru1tt.cloudfront.net/hero/orbit-directional-arrows-3.png) left top no-repeat;right:59px;}div.slider-nav span.left:hover{background-position:left center;cursor:pointer;}div.slider-nav span.left:active{background-position:left bottom;}.orbit-bullets{position:absolute;z-index:1000;list-style:none;bottom:20px;right:20px;margin:0;padding:0;}.orbit-bullets li{float:left;margin:0 0 0 5px;cursor:pointer;color:#999;text-indent:-9999px;background:url(//d36cz9buwru1tt.cloudfront.net/sm-bullets.png) no-repeat 0 0;width:8px;height:10px;padding:0;overflow:hidden;}.orbit-bullets li.active{color:#222;background-position:-11px 0;}.orbit-bullets li.has-thumb{background:none;width:100px;height:75px;}.orbit-bullets li.active.has-thumb{background-position:0 0;border-top:2px solid #000;}

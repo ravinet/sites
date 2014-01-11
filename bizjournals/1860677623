@@ -1,0 +1,23 @@
+PHTTP184.27.45.44"Ô
+GET /crossdomain.xml HTTP/1.1
+Host: cp76677.edgefcs.net
+Connection: keep-alive
+vUser-Agent: Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/31.0.1650.63 Safari/537.36
+Accept: */*
+&Referer: http://www.bizjournals.com/
+$Accept-Encoding: gzip,deflate,sdch
+!Accept-Language: en-US,en;q=0.8
+
+*Ú
+HTTP/1.1 200 OK
+Cache-Control: no-cache
+Connection: Keep-Alive
+Content-Length: 187
+Server: FlashCom/4.5.2
+Content-Type: application/xml
+½
+<?xml version="1.0" encoding="utf-8" ?>
+<cross-domain-policy>
+    <allow-access-from domain="*"/>
+    <site-control permitted-cross-domain-policies="master-only"/>
+</cross-domain-policy>

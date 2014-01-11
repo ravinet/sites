@@ -1,0 +1,24 @@
+PHTTP107.21.99.24"ù
+*GET /cm/g/out?google_nid=adroll HTTP/1.1
+Host: d.adroll.com
+Connection: keep-alive
+Accept: image/webp,*/*;q=0.8
+vUser-Agent: Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/31.0.1650.63 Safari/537.36
+%Referer: http://www.nomorerack.com/
+$Accept-Encoding: gzip,deflate,sdch
+!Accept-Language: en-US,en;q=0.8
+3Cookie: __adroll=50ec042e87b545e194d5d50e8d36ca2f
+
+*é
+ HTTP/1.1 302 Moved Temporarily
+4Cache-Control: no-store, no-cache, must-revalidate
+%Date: Thu, 09 Jan 2014 13:42:25 GMT
+{Location: http://cm.g.doubleclick.net/pixel?google_sc&google_nid=artb&google_hm=UOwELoe1ReGU1dUOjTbKLw&google_ula=1535926
+4P3P: CP="NON DSP COR CURa PSA PSD OUR BUS NAV STA"
+Pragma: no-cache
+Server: nginx/1.4.2
+ÑSet-Cookie: __adroll=50ec042e87b545e194d5d50e8d36ca2f; Version=1; Expires=Fri, 01-Jan-2021 00:00:00 GMT; Max-Age=432000000; Path=/
+Content-Length: 117
+Connection: keep-alive
+w
+Go to http://cm.g.doubleclick.net/pixel?google_sc&google_nid=artb&google_hm=UOwELoe1ReGU1dUOjTbKLw&google_ula=1535926

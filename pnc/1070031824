@@ -1,0 +1,48 @@
+»HTTPS8.30.199.67"Ó
+¼GET /partners/universal/in?redirect=1&t=s&ts=1389302697687&ndl=https%3A%2F%2Fwww.pnc.com%2Fwebapp%2Funsec%2FHomepage.do%3FsiteArea%3D%2FPNCCorp%2FPNC%2FHome%2FPersonal&pid=85519 HTTP/1.1
+Host: p.raasnet.com
+Connection: keep-alive
+Accept: */*
+vUser-Agent: Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/31.0.1650.63 Safari/537.36
+$Accept-Encoding: gzip,deflate,sdch
+!Accept-Language: en-US,en;q=0.8
+Cookie: o=0
+
+*Ã"
+HTTP/1.1 200 OK
+P3P: policyref="/w3c/p3p.xml", CP="NON NID CURa ADMo DEVo PSAo PSDo HISo OUR IND UNI PUR COM NAV INT DEM CNT STA POL HEA PRE"
+Pragma: no-cache
+4Cache-Control: no-cache, no-store, must-revalidate
+Expires: 0
+dSet-Cookie: u=199810470820385; path=/; domain=.raasnet.com; expires=Fri, 09-Jan-2015 21:24:45 GMT;
+VSet-Cookie: o=0; path=/; domain=.raasnet.com; expires=Fri, 09-Jan-2015 21:24:45 GMT;
+\Set-Cookie: lpp=85519; path=/; domain=.raasnet.com; expires=Thu, 09-Jan-2014 21:26:45 GMT;
+Content-Type: text/javascript
+Content-Length: 3724
+%Date: Thu, 09 Jan 2014 21:24:44 GMT
+Connection: close
+3Server: nj_pip1/CNJIOpip-01.prod.coreaudience.com
+Ž
+try {
+adroll_adv_id = "A3RVKFJNDJCXZJF63ANVJP";
+adroll_pix_id = "AXD3YVULJFDD5CGAR7OEQJ";
+(function () {
+var oldonload = window.onload;
+window.onload = function(){
+   __adroll_loaded=true;
+   var scr = document.createElement("script");
+   var host = (("https:" == document.location.protocol) ? "https://s.adroll.com" : "http://a.adroll.com");
+   scr.setAttribute('async', 'true');
+   scr.type = "text/javascript";
+   scr.src = host + "/j/roundtrip.js";
+   ((document.getElementsByTagName('head') || [null])[0] ||
+    document.getElementsByTagName('script')[0].parentNode).appendChild(scr);
+   if(oldonload){oldonload()}};
+}());
+} catch(ex) {}(function(){var pbTag = '<img src="https://ads.bluelithium.com/pixel?id=2445871&t=2" width="1" height="1" />'; var scripts = document.getElementsByTagName('script'); var node = scripts[scripts.length-1].parentNode;if(!!node.insertAdjacentHTML) node.insertAdjacentHTML('beforeend', pbTag); else {var range = document.createRange();node.appendChild(range.createContextualFragment(pbTag));}})();
+(function(){var pbTag = '<img src="https://segment-pixel.invitemedia.com/pixel?pixelID=161539&partnerID=548&key=segment" width="1" height="1" />'; var scripts = document.getElementsByTagName('script'); var node = scripts[scripts.length-1].parentNode;if(!!node.insertAdjacentHTML) node.insertAdjacentHTML('beforeend', pbTag); else {var range = document.createRange();node.appendChild(range.createContextualFragment(pbTag));}})();
+(function(){var pbTag = '<img width="1" height="1" border="0" src="https://loadm.exelator.com/load/?p=204&g=032&j=0&buid=199810470820385"/>'; var scripts = document.getElementsByTagName('script'); var node = scripts[scripts.length-1].parentNode;if(!!node.insertAdjacentHTML) node.insertAdjacentHTML('beforeend', pbTag); else {var range = document.createRange();node.appendChild(range.createContextualFragment(pbTag));}})();
+(function(){var pbTag = '<img width="1" height="1" border="0" src="https://cm.g.doubleclick.net/pixel?google_nid=coreaudience_dmp&google_cm"/>'; var scripts = document.getElementsByTagName('script'); var node = scripts[scripts.length-1].parentNode;if(!!node.insertAdjacentHTML) node.insertAdjacentHTML('beforeend', pbTag); else {var range = document.createRange();node.appendChild(range.createContextualFragment(pbTag));}})();
+(function(){var pbTag = '<img width="1" height="1" border="0" src="https://s.ixiaa.com/digi/4CE7F4BE-9AB6-4F9F-BD40-E8FFE107D06B/a.gif?redirect=https%3A%2F%2Fdts1.raasnet.com%2Fdts%2Fixi%2Fin%3Fexchange%3D18"/>'; var scripts = document.getElementsByTagName('script'); var node = scripts[scripts.length-1].parentNode;if(!!node.insertAdjacentHTML) node.insertAdjacentHTML('beforeend', pbTag); else {var range = document.createRange();node.appendChild(range.createContextualFragment(pbTag));}})();
+(function(){var pbTag = '<img width="1" height="1" border="0" src="https://adadvisor.net/adscores/g.pixel?sid=9201009708"/>'; var scripts = document.getElementsByTagName('script'); var node = scripts[scripts.length-1].parentNode;if(!!node.insertAdjacentHTML) node.insertAdjacentHTML('beforeend', pbTag); else {var range = document.createRange();node.appendChild(range.createContextualFragment(pbTag));}})();
+(function(){var pbTag = '<img width="1" height="1" border="0" src="https://api.bizographics.com/v1/profile.redirect?api_key=eff06988d5814684997ff16c58dc2e1c&callback_url=https%3A%2F%2Fdts1.raasnet.com%2Fdts%2Fbizo%2Fin"/>'; var scripts = document.getElementsByTagName('script'); var node = scripts[scripts.length-1].parentNode;if(!!node.insertAdjacentHTML) node.insertAdjacentHTML('beforeend', pbTag); else {var range = document.createRange();node.appendChild(range.createContextualFragment(pbTag));}})();

@@ -1,0 +1,18 @@
+PHTTP66.117.23.102"³
+ýGET /m2/fandango/mbox/standard?mboxHost=www.fandango.com&mboxSession=1389228517880-100244&mboxPage=1389228517880-100244&screenHeight=1200&screenWidth=1920&browserWidth=937&browserHeight=1051&browserTimeOffset=-300&colorDepth=24&mboxCount=2&profile.DMA=&mbox=profileSet&mboxId=0&mboxTime=1389210518605&mboxURL=http%3A%2F%2Fwww.fandango.com%2F&mboxReferrer=&mboxVersion=40 HTTP/1.1
+Host: fandango.tt.omtrdc.net
+Connection: keep-alive
+Accept: */*
+vUser-Agent: Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/31.0.1650.63 Safari/537.36
+#Referer: http://www.fandango.com/
+$Accept-Encoding: gzip,deflate,sdch
+!Accept-Language: en-US,en;q=0.8
+
+*Ë
+HTTP/1.1 200 OK
+2Content-Type: text/javascript;charset=ISO-8859-1
+Content-Length: 168
+%Date: Thu, 09 Jan 2014 00:48:25 GMT
+Server: Test & Target
+ª
+mboxFactories.get('default').get('profileSet',0).setOffer(new mboxOfferDefault()).loaded();mboxFactories.get('default').getPCId().forceId("1389228517880-100244.25_36");

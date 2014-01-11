@@ -1,0 +1,30 @@
+PHTTP74.125.192.95"¯
+%GET /css?family=Roboto:300 HTTP/1.1
+Host: fonts.googleapis.com
+Connection: keep-alive
+Accept: text/css,*/*;q=0.1
+vUser-Agent: Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/31.0.1650.63 Safari/537.36
+kReferer: http://www.vistaprint.com/vp/ns/default.aspx?GP=1%2f8%2f2014+8%3a18%3a54+PM&GPS=3071162827&GNF=0
+$Accept-Encoding: gzip,deflate,sdch
+!Accept-Language: en-US,en;q=0.8
+
+*ù
+HTTP/1.1 200 OK
+Content-Type: text/css
+Timing-Allow-Origin: *
+(Expires: Thu, 09 Jan 2014 01:18:55 GMT
+%Date: Thu, 09 Jan 2014 01:18:55 GMT
+'Cache-Control: private, max-age=86400
+Content-Length: 265
+!X-Content-Type-Options: nosniff
+X-Frame-Options: SAMEORIGIN
+!X-XSS-Protection: 1; mode=block
+Server: GSE
+Alternate-Protocol: 80:quic
+‹
+@font-face {
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 300;
+  src: local('Roboto Light'), local('Roboto-Light'), url(http://themes.googleusercontent.com/static/fonts/roboto/v10/Hgo13k-tfSpn0qi1SFdUfT8E0i7KZn-EPnyo3HZu7kw.woff) format('woff');
+}

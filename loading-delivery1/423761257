@@ -1,0 +1,17 @@
+PHTTP141.0.172.75"ê
+GET / HTTP/1.1
+!Host: www.loading-delivery1.com
+Connection: keep-alive
+TAccept: text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8
+vUser-Agent: Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/31.0.1650.63 Safari/537.36
+$Accept-Encoding: gzip,deflate,sdch
+!Accept-Language: en-US,en;q=0.8
+
+* 
+HTTP/1.1 404 Not Found
+Server: nginx
+%Date: Thu, 09 Jan 2014 01:00:59 GMT
+Content-Type: text/html
+Connection: keep-alive
+Content-Length: 0
+

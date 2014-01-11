@@ -1,0 +1,44 @@
+PHTTP209.177.88.10"Ÿ
+.GET /css/2010tianrun/webdig_test.js HTTP/1.1
+Host: www.people.com.cn
+Connection: keep-alive
+Accept: */*
+vUser-Agent: Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/31.0.1650.63 Safari/537.36
+$Referer: http://www.people.com.cn/
+$Accept-Encoding: gzip,deflate,sdch
+!Accept-Language: en-US,en;q=0.8
+>Cookie: _weather_ip_c_code=72509; ALLYESID4=07912991D9F90F98
+
+*é
+HTTP/1.0 200 OK
+Content-Length: 561
+X-Cache: MISS varnish09
+(Content-Type: application/x-javascript
+Server: RMW
+.Last-Modified: Thu, 26 Apr 2012 07:53:50 GMT
+ETag: "4f98ff0e-231"
+Accept-Ranges: bytes
+%Date: Thu, 09 Jan 2014 00:39:29 GMT
+-Powered-By-ChinaCache: MISS from 06001093SM
+(Expires: Thu, 09 Jan 2014 01:39:29 GMT
+Age: 1056
+,Powered-By-ChinaCache: HIT from 26060113T7
+Connection: keep-alive
+³
+document.write(unescape("%3Cscript id='tr_statobj' src='http://cl2.webterren.com/webdig.js?z=15' type='text/javascript'%3E%3C/script%3E"));
+
+var obj=document.getElementById("tr_statobj");
+if(window.ActiveXObject){
+	run();
+}
+else
+	document.write(unescape("%3Cscript type='text/javascript'%3E wd_paramtracker('_wdxid=000000000000000000000000000000000000000000');%3C/script%3E"));
+
+function run(){
+	if(obj.readyState=='complete'){
+		wd_paramtracker('_wdxid=000000000000000000000000000000000000000000');
+	}
+	else{
+		window.setTimeout(run,50);
+	}
+}

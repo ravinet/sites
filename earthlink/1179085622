@@ -1,0 +1,25 @@
+PHTTP199.15.226.67"á
+3GET /s/css/js/www.earthlink.net/15017.js HTTP/1.1
+Host: f.fontdeck.com
+Connection: keep-alive
+Accept: */*
+vUser-Agent: Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/31.0.1650.63 Safari/537.36
+$Referer: http://www.earthlink.net/
+$Accept-Encoding: gzip,deflate,sdch
+!Accept-Language: en-US,en;q=0.8
+
+*¶
+HTTP/1.1 200 OK
+%Date: Wed, 08 Jan 2014 02:16:47 GMT
+Server: FontdeckServer/2.1
+%Cache-Control: public; no-transform
+(ETag: 4c10bd261475183709bd83a9a6d21481
+Cache-Control: max-age=86400
+(Expires: Thu, 09 Jan 2014 02:16:47 GMT
+Content-Length: 1494
+&Content-Type: application/javascript
+Age: 83173
+Connection: keep-alive
+Ø
+(function(g,d){var b={"domain":"www.earthlink.net","cssurl":"http://f.fontdeck.com/s/css/SHL1Q62RRv8EROgGSyefc+MAifY/www.earthlink.net/15017.css","project":15017,"cssbase":"http://f.fontdeck.com/s/css/SHL1Q62RRv8EROgGSyefc+MAifY","fonts":[{"font_family":"'Futura Medium', 'Gill Sans', Arial, 'Helvetica Neue', Helvetica, sans-serif","font_size_adjust":0.48,"name":"Futura Medium","style":"normal","weight":"normal","font_urls":{"eot":"http://f.fontdeck.com/f/1/NkxOWURrWjQAA7EGSq0GQo1F9gPQaV6Q5sVRTxcaShWTWeFB3MHeC+2wOQWctTLFFaM.eot","ttf":"http://f.fontdeck.com/f/1/NkxOWURrWjQAA7EGSq0GQo1F9gPQaV6Q5sVRTxcaShWTWeFB3MHeC+2wOQWctTLFFaM.ttf","woff":"http://f.fontdeck.com/f/1/NkxOWURrWjQAA7EGSq0GQo1F9gPQaV6Q5sVRTxcaShWTWeFB3MHeC+2wOQWctTLFFaM.woff"},"id":389}]};return{a:function(e){for(var c="",a=0,f=b.fonts.length;a<f;++a)c+="@font-face {font-family:'"+b.fonts[a].name+"';src:url('"+b.fonts[a].font_urls.eot+"');src:url('"+b.fonts[a].font_urls.eot+"?')format('embedded-opentype'),url('"+b.fonts[a].font_urls.woff+"')format('woff'),url('"+b.fonts[a].font_urls.ttf+
+"')format('opentype'),url('"+b.fonts[a].font_urls.svg+"')format('svg');font-weight:"+b.fonts[a].weight+";font-style:"+b.fonts[a].style+";}";a=d.createElement("style");a.type="text/css";d.getElementsByTagName("head")[0].appendChild(a);a.styleSheet?a.styleSheet.cssText=c:a.innerHTML=c;if(e&&"function"===typeof __webfontfontdeckmodule__[b.project])__webfontfontdeckmodule__[b.project](!0,b)}}})(this,document).a(window.WebFont);

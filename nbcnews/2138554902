@@ -1,0 +1,365 @@
+PHTTP209.208.224.15"
+9GET /ads/display_ads.php?CBV=0.630037352675572 HTTP/1.1
+Host: jmp.clickbooth.com
+Connection: keep-alive
+Accept: */*
+vUser-Agent: Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/31.0.1650.63 Safari/537.36
+HReferer: http://cbcpc.sitescout.com/disp?pid=2C8EB53A32&rnd=1704332411
+$Accept-Encoding: gzip,deflate,sdch
+!Accept-Language: en-US,en;q=0.8
+
+*È:
+HTTP/1.1 200 OK
+%Date: Fri, 10 Jan 2014 14:55:44 GMT
+Server: Apache
+Content-Length: 7337
+Connection: close
+Content-Type: text/javascript
+«9
+var server_client_id;
+var server_ad_style;
+var server_media_types;
+var server_integrate_media_types;
+var server_code_version;
+var server_ad_color_border;
+var server_ad_color_background;
+var server_ad_color_headline;
+var server_ad_color_body;
+var server_ad_color_url;
+var server_ad_random;
+var server_ad_channel;
+var server_publisher_channels;
+var server_compete;
+var server_alternate_ad_url;
+var server_sem_url;
+var server_target;
+var server_ad_filter1;
+var server_ad_filter2;
+var server_ad_filter3;
+var server_ignore_frameset;
+var server_ads_by;
+var server_ad_color_rollover_start;
+var server_ad_color_rollover_end;
+var server_ad_color_rollover_fallback;
+var server_ad_color_rollover_title;
+var server_ad_color_rollover_description;
+var server_ad_color_rollover_url;
+var server_ad_color_rollover_border;
+var style_as;
+var w;
+var h;
+var server_img_rounding;
+var server_protocol;
+var server_title;
+var server_title_color;
+var server_adsby_title;
+var server_body_color;
+var server_hover_opacity;
+var server_hover_color;
+var server_font_family;
+var server_hide_icon;
+var server_widget_id;
+var server_house;
+var wt = -1;
+var server_user_choice;
+var server_brand_show;
+var server_display_url_company;
+
+if(server_target == "1"){
+    wt = 1;
+} else if (server_target == "0") {
+    wt = 0;
+}
+
+var sr = '';
+if(server_ad_random) {
+    sr = server_ad_random;
+}
+
+var ac = '';
+if(server_ad_channel) {
+    ac = server_ad_channel;
+}
+
+var pi = '';
+if (server_publisher_channels) {
+    pi = server_publisher_channels;
+}
+
+var mt = '';
+if (server_media_types) {
+    mt = server_media_types;
+}
+
+var cb = '';
+if(server_ad_color_border) {
+    cb = server_ad_color_border;
+}
+
+var cd = '';
+if(server_ad_color_background) {
+    cd = server_ad_color_background;
+}
+
+var ch = '';
+if(server_ad_color_headline) {
+    ch = server_ad_color_headline;
+}
+
+var co = '';
+if(server_ad_color_body) {
+    co = server_ad_color_body;
+}
+
+var cu = '';
+if(server_ad_color_url) {
+    cu = server_ad_color_url;
+}
+
+var cv = '';
+if(server_code_version) {
+    cv = server_code_version;
+}
+
+var ci = '';
+if(server_client_id) {
+    ci = server_client_id;
+}
+
+var as = '';
+if(server_ad_style) {
+    as = server_ad_style;
+}
+
+var t = '';
+if(server_title) {
+    t = server_title;
+} else {
+    t = '';
+}
+
+var tc = '';
+if (server_title_color) {
+    tc = server_title_color;
+}
+
+var at = '';
+if (server_adsby_title) {
+    at = server_adsby_title;
+} else {
+    at = '';
+}
+
+var bc = '';
+if(server_body_color) {
+    bc = server_body_color;
+} else {
+    bc = '';
+}
+
+var rs = '';
+if(server_ad_color_rollover_start) {
+    rs = server_ad_color_rollover_start;
+}
+
+var re = '';
+if(server_ad_color_rollover_end) {
+    re = server_ad_color_rollover_end;
+}
+
+var rf = '';
+if(server_ad_color_rollover_fallback) {
+    rf = server_ad_color_rollover_fallback;
+}
+
+var rt = '';
+if(server_ad_color_rollover_title) {
+    rt = server_ad_color_rollover_title;
+}
+
+var rd = '';
+if(server_ad_color_rollover_description) {
+    rd = server_ad_color_rollover_description;
+}
+
+var ru = '';
+if(server_ad_color_rollover_url) {
+    ru = server_ad_color_rollover_url;
+}
+
+var rb = '';
+if(server_ad_color_rollover_border) {
+    rb = server_ad_color_rollover_border;
+}
+
+var si = '';
+if(server_hide_icon) {
+    si = server_hide_icon;
+}
+
+var sb = '';
+if(server_brand_show) {
+    sb = server_brand_show;
+}
+
+var mt = '';
+if (server_integrate_media_types != undefined && mt != "" && server_integrate_media_types == 0) {
+    var media_types = mt.split(',');
+
+    if (media_types.length > 1) {
+        var index = Math.floor(Math.random() * 2);
+        mt = media_types[index];
+    }
+}
+
+switch (as) {
+    case 'rectangle':
+        as = "300x250_as";
+        break;
+    case 'tower':
+        as = "120x600_as";
+        break;
+    case 'banner':
+        as = "468x60_as";
+        break;
+    case 'leaderboard':
+        as = "728x90_as";
+        break;
+}
+
+if (as != '') {
+    var style_as = as.replace('_as', '').split('x');
+
+    var w = style_as[0];
+    var h = style_as[1];
+}
+
+var pu = '';
+if (document.URL) {
+    pu = document.URL;
+}
+
+if (!server_ignore_frameset) {
+    try {
+        pu = top.location.href;
+
+        if (typeof(pu) == "undefined") {
+            throw "undefined";
+        }
+    } catch(exception) {
+        pu = document.referrer;
+        if (pu == "" || typeof(pu) == "undefined") {
+            pu = document.URL;
+        }
+    }
+}
+pu = pu.substr(0, 700);
+
+var ab = '';
+if(server_ads_by) {
+    ab = server_ads_by;
+}
+
+var ir = '';
+if(server_img_rounding == 'yes') {
+    ir = 'yes';
+} else {
+    ir = 'no';
+}
+
+var CBV = "0.630037352675572";
+
+var sm = '';
+if(server_sem_url) {
+    sm = server_sem_url;
+}
+
+var ip = '';
+if(server_protocol) {
+    ip = server_protocol;
+}
+
+var ho = '';
+if (server_hover_opacity) {
+    ho = server_hover_opacity;
+}
+
+var hc = '';
+if (server_hover_color) {
+    hc = server_hover_color;
+}
+
+var ff = '';
+if (server_font_family) {
+    ff = server_font_family;
+}
+
+var sw = '';
+if(server_widget_id) {
+    sw = server_widget_id;
+}
+
+var sh = '';
+if(server_house) {
+    sh = server_house;
+}
+
+var uc = '';
+if(server_user_choice) {
+    uc = server_user_choice;
+}
+
+var du = '';
+if(server_display_url_company) {
+    du = server_display_url_company;
+}
+
+if (ip == '1' || "0" == "1") {
+    var iu = 'https://jmp.clickbooth.com/ads/flexad_iframe.php';
+    ip    = 1;
+} else {
+    var iu = 'http://jmp.clickbooth.com/ads/flexad_iframe.php';
+}
+
+document.write("<IFRAME src='" + iu + "?CBV=" + CBV + "&ho=" + ho + "&sb=" + sb + "&tc=" + tc + "&hc=" + hc + "&ff=" + ff + "&uc=" + uc + "&si=" + si + "&sr=" + sr + "&ac=" + ac + "&pi=" + pi + "&mt=" + mt + "&cb=" + cb + "&cd=" + cd + "&ch=" + ch + "&co=" + co + "&cu=" + cu + "&cv=" + cv + "&ci=" + ci + "&at=" + at + "&t=" + escape(t) + "&bc=" + bc + "&rs=" + rs + "&re=" + re + "&rf=" + rf + "&rt=" + rt + "&rd=" + rd + "&ru=" + ru + "&rb=" + rb + "&ab=" + ab + "&ir=" + ir + "&as=" + as + "&wt=" + wt + "&sw=" + sw + "&sh=" + sh + "&du=" + escape(du) + "&pu=" + escape(pu) + "&sm=" + escape(sm) + "&ip=" + ip + "' marginwidth='0' marginheight='0' vspace='0' hspace='0' allowtransparency='true' frameborder='0' scrolling='no' height='" + h + "' width='" + w + "'></IFRAME>");
+
+var ac = undefined;
+var sr = undefined;
+var rs = undefined;
+var re = undefined;
+var rf = undefined;
+var rt = undefined;
+var rd = undefined;
+var wt = undefined;
+var as = undefined;
+var ir = undefined;
+var ho = undefined;
+var hc = undefined;
+var ff = undefined;
+var at = undefined;
+var tc = undefined;
+var sw = undefined;
+var sh = undefined;
+var server_title_color = undefined;
+var server_adsby_title = undefined;
+var server_hover_opacity = undefined;
+var server_hover_color = undefined;
+var server_font_family = undefined;
+var server_alternate_ad_url = undefined;
+var server_ad_style = undefined;
+var server_media_types = undefined;
+var server_ads_by = undefined;
+var server_ad_color_rollover_start = undefined;
+var server_ad_color_rollover_end = undefined;
+var server_ad_color_rollover_fallback = undefined;
+var server_ad_color_rollover_title = undefined;
+var server_ad_color_rollover_description = undefined;
+var server_ad_color_rollover_border = undefined;
+var server_img_rounding = undefined;
+var server_sem_url = undefined;
+var server_title = undefined;
+var server_body_color = undefined;
+var w = undefined;
+var h = undefined;
+var server_widget_id = undefined;
+var server_house = undefined;

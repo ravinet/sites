@@ -1,0 +1,20 @@
+PHTTP54.236.69.87"É
+ GET /config/slate.com HTTP/1.1
+Host: c.parsely.com
+Connection: keep-alive
+Accept: */*
+vUser-Agent: Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/31.0.1650.63 Safari/537.36
+ Referer: http://www.slate.com/
+$Accept-Encoding: gzip,deflate,sdch
+!Accept-Language: en-US,en;q=0.8
+
+*ä
+HTTP/1.1 200 OK
+Content-Type: text/javascript
+%Date: Thu, 09 Jan 2014 00:47:08 GMT
+xSet-Cookie: parsely_network_uuid=36f4adee-b0fd-4683-9fe1-8f4977f293c3; expires=Wed, 30 Dec 2037 23:55:55 GMT; httpOnly
+X-Powered-By: Express
+Content-Length: 192
+Connection: keep-alive
+Â
+PARSELY.pInit({"apikey":"slate.com","customizations":null,"bundle":"/code/slim_v04.js","settings":{"debug":false,"widget":false,"tracker":true},"uuid":"36f4adee-b0fd-4683-9fe1-8f4977f293c3"});

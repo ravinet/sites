@@ -1,0 +1,123 @@
+PHTTP
+23.6.26.10"ù
+KGET /en-us/css/0443e8947b4ad8601676d11956a1801c/tm/spotlight.css HTTP/1.1
+Host: media.ticketmaster.com
+Connection: keep-alive
+Accept: text/css,*/*;q=0.1
+vUser-Agent: Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/31.0.1650.63 Safari/537.36
+'Referer: http://www.ticketmaster.com/
+$Accept-Encoding: gzip,deflate,sdch
+!Accept-Language: en-US,en;q=0.8
+ãCookie: GEORAN=1; SID=e8XBGp1ufU8_1X4VL94Nrk63EBDNtsdTXr3ObZAJ11kLWMU0uQG65_nP0NYASoKWnD7gXuybnqdiX9ic; BID=9jB1BhjEaMJ2Jqv8PkxHlhlo-fyK2vrxymgWfGCH-50LTVa8HGT-0RuiygJmgb-lmz4v7I0cSE8RPjtbCT2b; NPDMA=235; GEO_OMN=in; NDMA=235
+
+*ÿ
+HTTP/1.1 200 OK
+Server: Apache
+.Last-Modified: Fri, 03 Aug 2012 22:12:45 GMT
+ETag: "cdc-d3d73140"
+Accept-Ranges: bytes
+Content-Length: 3292
+Content-Type: text/css
+$Cache-Control: public, max-age=239
+%Date: Thu, 09 Jan 2014 01:05:10 GMT
+Connection: keep-alive
+Þ
+/* $Id: tm_spotlight.css 196932 2010-12-15 09:00:44Z jzhou $ */  
+ 
+#list-spotlight { 
+  list-style-type:none;
+  margin:0;
+  padding:0;
+  position:relative;
+  overflow:hidden;
+  width:475px;
+  height:260px;
+  border:1px solid #000;  
+}
+#list-spotlight li { 
+  padding:0;
+  position:absolute;
+  width:475px;
+  height:260px;  
+  background-repeat:no-repeat;
+  background-position:0 0; 
+}
+#spotlight-button-anchor { position:relative; width:475px; height:260px; word-wrap:break-word; }
+ul#spotlight-buttons { position:absolute; bottom:5px; right:1px; overflow:hidden; z-index:9999; margin:0; padding:0; height:23px;}
+ul#spotlight-buttons li { float:left; display:block; margin-right:3px;  width:24px; height:23px; overflow:hidden }
+ul#spotlight-buttons a { 
+ display:block;
+ width:24px; 
+ height:23px; 
+ background:url('img/sys/spotlight/spotlight_buttons.gif') 0 0 no-repeat; 
+ text-indent:-99999px;
+ overflow:hidden;
+ outline:none;
+} 
+
+ul#spotlight-buttons a#rs-btn1 { background-position:0 0; }
+ul#spotlight-buttons a#rs-btn1:hover,  
+ul#spotlight-buttons li.selected a#rs-btn1 { background-position:right 0; }
+
+ul#spotlight-buttons a#rs-btn2 { background-position:0 -23px; }
+ul#spotlight-buttons a#rs-btn2:hover,  
+ul#spotlight-buttons li.selected a#rs-btn2 { background-position:right -23px; }
+
+ul#spotlight-buttons a#rs-btn3 { background-position:0 -46px; }
+ul#spotlight-buttons a#rs-btn3:hover, 
+ul#spotlight-buttons li.selected a#rs-btn3 { background-position:right -46px; }
+
+ul#spotlight-buttons a#rs-btn4 { background-position:0 -69px; }
+ul#spotlight-buttons a#rs-btn4:hover,
+ul#spotlight-buttons li.selected a#rs-btn4 { background-position:right -69px; }
+
+ul#spotlight-buttons a#rs-prev { background-position:0 -92px;  }
+ul#spotlight-buttons a#rs-prev:hover { background-position:right -92px; }
+
+ul#spotlight-buttons a#rs-next { background-position:0 -115px; }
+ul#spotlight-buttons a#rs-next:hover { background-position:right -115px; }
+
+.shade-module { position:absolute; bottom:32px; display:block; height:75px; width:475px; overflow:hidden }
+.shade-overflow {  display:block; height:75px; width:475px; overflow:hidden  }
+.shade-module b { position:absolute; display:block; background-color:#000; height:75px; opacity:0.75; filter:alpha(opacity=75); -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=75)"; width:475px; }
+.shade-module .shade-text { 
+  position:absolute; 
+  top:8px;
+  left:10px;
+  z-index:3; 
+  width:335px; 
+  height:60px;
+  display:block; 
+  overflow:hidden; 
+  line-height:18px; 
+  
+  color:#fff;
+  font-size:12px;  
+}
+.shade-module .shade-text span { display:block; margin-bottom:5px;  }
+.shade-module .shade-text a { color:#fff; font-size:25px; text-decoration:none; }
+.shade-module .shade-text a.shade-description { font-size:12px; }
+.shade-module .shade-text a:hover { text-decoration:none; }
+.shade-module a.shade-button {
+  position:absolute;
+  right:10px;
+  top:30px;
+  display:block;
+  height:28px;
+  width:116px;
+  background:url('img/sys/spotlight/findTix_noText.png') no-repeat; 
+  overflow:hidden;
+  color:#fff;
+  font-size:12px;
+  text-decoration:none;
+  font-weight:bold;
+  line-height:28px;
+  text-align:center
+}
+
+.single-item ul#spotlight-buttons {  display:none; }
+.single-item .shade-module { bottom:0; }
+.rs_zindex {
+	z-index: 5;
+}
+

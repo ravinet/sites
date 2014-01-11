@@ -1,0 +1,21 @@
+PHTTP70.42.33.241"½
+.GET /adscores/g.json?sid=9202507693 HTTP/1.1
+Host: adadvisor.net
+Connection: keep-alive
+Accept: */*
+vUser-Agent: Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/31.0.1650.63 Safari/537.36
+…Referer: http://bcp.crwdcntrl.net/5/c=3620/rand=141128057/pv=y/int=%23OpR%2334452%23BizJournals%20-%20Total%20Site%20Traffic/rt=ifr
+$Accept-Encoding: gzip,deflate,sdch
+!Accept-Language: en-US,en;q=0.8
+
+*×
+HTTP/1.1 200 OK
+&Date: Thu,  09 Jan 2014 13:52:17 GMT
+Connection: close
+Server: AAWebServer
+DP3P: policyref="http://www.adadvisor.net/w3c/p3p.xml",CP="NOI NID"
+Content-Length: 103
+ Content-Type: application/json
+ƒSet-Cookie: ab=0001%3ARa77FqZmYU1m1oB6TLcIM4NJ%2FK%2B6x39N; Domain=.adadvisor.net; Expires=Thu,  09 Jan 2015 13:52:17 GMT; Path=/
+i
+processTargusData({"targus": { "segment" : "000", "zip" : "", "age" : "", "gender" : "", "sk" : "" }});

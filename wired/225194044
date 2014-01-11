@@ -1,0 +1,29 @@
+PHTTP54.209.233.191"µ
+ËGET /firstevent?d_nsid=0&d_ld=_ts%3D1389372020130&c_pageName=http%3A%2F%2Fwww.wired.com&c_events=event82%3D0%2Cevent2&c_eVar2=http%3A%2F%2Fwww.wired.com&c_prop5=homepage&c_eVar5=homepage&c_prop6=homepage&c_eVar6=homepage&c_prop11=11%3A00AM&c_eVar11=11%3A00AM&c_prop12=Friday&c_eVar12=Friday&c_prop13=Weekday&c_eVar13=Weekday&c_prop23=New&c_eVar23=New&c_prop51=Non-Mobile&d_rtbd=json&d_jsonv=1&d_dst=1&d_cts=1&d_cb=demdexRequestCallback1389372020130 HTTP/1.1
+Host: condenast.demdex.net
+Connection: keep-alive
+Accept: */*
+vUser-Agent: Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/31.0.1650.63 Safari/537.36
+ Referer: http://www.wired.com/
+$Accept-Encoding: gzip,deflate,sdch
+!Accept-Language: en-US,en;q=0.8
+7Cookie: demdex=56928094346746469573482416352562882048
+
+*÷
+HTTP/1.1 200 OK
+bCache-Control: no-cache,no-store,must-revalidate,max-age=0,proxy-revalidate,no-transform,private
+4Content-Type: application/javascript;charset=UTF-8
+4DCS: va6-dcsAS1-10-89-0-250.va6.demdex.com 1.15.34
+(Expires: Thu, 01 Jan 2009 00:00:00 GMT
+cP3P: policyref="/w3c/p3p.xml", CP="NOI NID CURa ADMa DEVa PSAa PSDa OUR SAMa BUS PUR COM NAV INT"
+Pragma: no-cache
+ Server: Jetty(7.6.8.v20121106)
+ˆSet-Cookie: condenast=56928094346746469573482416352562882048;Path=/;Domain=.condenast.demdex.net;Expires=Sun, 10-Jan-2016 16:40:07 GMT
+õSet-Cookie: DexLifeCycle="MA==|Mzk2OTk4PTE6MTgzNSwzNjYyNzE9MToxODM1LDM2NjI3ND0xOjE4MzUsMzE5NzkyPTE6MTgzNSwyMjY4MjA9MToxODM1|MA==|NTMzNDIsMzkxMTgsMTg1MDI=|MA==|MA==|MA==";Path=/;Domain=.condenast.demdex.net;Expires=Sun, 10-Jan-2016 16:40:07 GMT
+úSet-Cookie: dextp=477-1-1389372007|21-2-1389372007|352-1-1389372007|22-2-1389372007|420-1-1389372007|60-1-1389372007|269-1-1389372007|540-1-1389372007|771-1-1389372007|358-1-1389372007;Path=/;Domain=.demdex.net;Expires=Sun, 10-Jan-2016 16:40:07 GMT
+RSet-Cookie: DST=;Path=/;Domain=.demdex.net;Expires=Sun, 10-Jan-2016 16:40:07 GMT
+	STS: OK
+Content-Length: 2361
+Connection: keep-alive
+»
+demdexRequestCallback1389372020130({"dests":[],"stuff":[{"cn":"aam_sc","cv":"sc=375012","ttl":0,"dmn":""},{"cn":"aam_tnt","cv":"aamStuff=375012:226821","ttl":0,"dmn":""},{"cn":"aam_tntv2","cv":"aamStuff=375012","ttl":0,"dmn":""},{"cn":"aamconde","cv":"conde=sv","ttl":90,"dmn":""}],"ibs":[{"id":"477","ttl":14400,"tag":"img","url":["//rd.rlcdn.com/rd?type=redir&site=109018&partner_uid=56928094346746469573482416352562882048&url=http%3A%2F%2Fdpm.demdex.net%2Fibs%3Adpid%3D477"]},{"id":"352","ttl":30240,"tag":"img","url":["//adadvisor.net/adscores/g.pixel?sid=9211132908&aam=56928094346746469573482416352562882048"]},{"id":"420","ttl":14400,"tag":"img","url":["//su.addthis.com/red/usync?pid=16&puid=56928094346746469573482416352562882048&url=http%3A%2F%2Fdpm.demdex.net%2Fibs%3Adpid%3D420%26dpuuid%3D%7B%7Buid%7D%7D"]},{"id":"60","ttl":14400,"tag":"img","url":["//p.acxiom-online.com/pixel/rci?pid=3017&uid=56928094346746469573482416352562882048&redir=http%3A%2F%2Fdpm.demdex.net%2Fibs%3Adpid%3D60%26dpuuid%3D%23COOKIEID%23"]},{"id":"269","ttl":10080,"tag":"img","url":["//sync.mathtag.com/sync/img?mt_exid=10004&mt_exuid=56928094346746469573482416352562882048&redir=http%3A%2F%2Fdpm.demdex.net%2Fibs%3Adpid%3D269%26dpuuid%3D[MM_UUID]%26ddsuuid%3d56928094346746469573482416352562882048"]},{"id":"540","ttl":1440,"tag":"img","url":["//pixel.tapad.com/idsync/ex/receive?partner_id=ADB&partner_url=http%3A%2F%2Fdpm.demdex.net%2Fibs%3Adpid%3D540%26dpuuid%3D%24%7BTA_DEVICE_ID%7D&partner_device_id=56928094346746469573482416352562882048"]},{"id":"771","ttl":20160,"tag":"img","url":["//cm.g.doubleclick.net/pixel?google_nid=adobe_dmp&google_cm"]},{"id":"358","ttl":10080,"tag":"img","url":["//ib.adnxs.com/getuid?http%3A%2F%2Fdpm.demdex.net%2Fibs%3Adpid%3D358%26dpuuid%3D%24UID"]}],"dpcalls":[{"id":"21","ttl":14400,"tag":"js","url":["//adadvisor.net/adscores/g.json?sid=9233633946"],"callback":{"obj":"Targus","fn":"parseInfo","key":"targus","tag":"img","url":"//dpm.demdex.net/demdot.jpg?et:dpm|dpid:21|data:"}},{"id":"22","ttl":14400,"tag":"js","url":["//api.bizographics.com/v1/profile.json?api_key=6332f8b7316a4d1284e9c1217a367347&callback=Demdex.parseBizo"],"callback":{"obj":"Demdex","fn":"parseBizo","key":"bizographics","tag":"img","url":"//dpm.demdex.net/demdot.jpg?et:dpm|dpid:22|data:"}}],"uuid":"56928094346746469573482416352562882048","dcs_region":7})

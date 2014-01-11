@@ -1,0 +1,25 @@
+PHTTP
+23.0.61.41"ò
+DGET /apps/common/js/jquery/aacom/plugins/aaPlaceHolder.js HTTP/1.1
+Host: www.aa.com
+Connection: keep-alive
+Accept: */*
+vUser-Agent: Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/31.0.1650.63 Safari/537.36
+(Referer: http://www.aa.com/homePage.do
+$Accept-Encoding: gzip,deflate,sdch
+!Accept-Language: en-US,en;q=0.8
+ýCookie: v1st=7EA5FF02354CAF63; JSESSIONID=4C0F4AAF1B0090AFE3A5001E623C1AE7; dtCookie=06F4BF3512EFE0A6C157596C94C19D9F|AA.com|1; ROUTEID=.P111A01; homeAirport="wGFH1cxVqs0="; COUNTRY_CODE="UCKRRdXdz9w="; saleCity="wGFH1cxVqs0="; dtPC=5312511_627#_load_
+
+*£
+HTTP/1.1 200 OK
+Server: Apache-Coyote/1.1
+X-dynaTrace-JS-Agent: true
+Accept-Ranges: bytes
+ETag: W/"2535-1387316480000"
+.Last-Modified: Tue, 17 Dec 2013 21:41:20 GMT
+&Content-Type: application/javascript
+Content-Length: 2535
+%Date: Thu, 09 Jan 2014 01:28:20 GMT
+Connection: keep-alive
+é
+(function($){$.fn.aaPlaceHolder=function(params){var self=this,defaults={labelSelector:"label",classLabelInline:"inline",classLabelNormal:"inactive",classLabelSelected:"active"},settings=$.extend({},defaults,params),labelSelector=settings.labelSelector,inlineClass=settings.classLabelInline,inactiveClass=settings.classLabelNormal,activeClass=settings.classLabelSelected;var _activateLabel=function(label){label.removeClass(inactiveClass).addClass(activeClass);};var _deactivateLabel=function(label){label.removeClass(activeClass).addClass(inactiveClass);};var _getValue=function(input){return input.val();};var _isNullValue=function(select){var id=$(select).attr("id"),regex=/travelerType/,regex1=/month/,value=$(select).val(),index=select.selectedIndex;if(id.search(regex)!=-1){return false;}else{if(id.search(regex1)!=-1){return(value==""||value<0||value=="U");}else{return(value==""||value<0||(value==0&&index==0)||value=="U");}}};return this.each(function(){$(labelSelector,this).each(function(){var activeLabel=$(this),activeLabelText=$("span.value",activeLabel),activeInput=$("input, select",activeLabel),activeValue=activeInput.val(),activeIndex=activeInput.attr("selectedIndex");activeLabel.addClass(inlineClass);if(activeIndex==undefined){if(activeValue==""){activeLabelText.show();_deactivateLabel(activeLabel);}else{activeLabelText.hide();}activeInput.focus(function(){_activateLabel(activeLabel);});activeInput.blur(function(){_deactivateLabel(activeLabel);if($(this).val()==""){activeLabelText.show();}else{if(!$(this).val().match(/\S/)){$(this).val("");activeLabelText.show();}else{activeLabelText.hide();}}});activeInput.keypress(function(){activeLabelText.hide();});activeInput.keyup(function(){if($(this).val()==""){activeLabelText.show();}else{activeLabelText.hide();}});activeInput.bind("paste,focus",function(){var pasted_value=setTimeout(_getValue($(this)),100);if(pasted_value==""){activeLabelText.show();}else{activeLabelText.hide();}});}else{activeLabelText.hide();if(_isNullValue(activeInput)){_deactivateLabel(activeLabel);}else{_activateLabel(activeLabel);}activeInput.bind("mouseenter focus",function(e){_activateLabel(activeLabel);});activeInput.focus(function(){$(this).unbind("mouseleave");});activeInput.blur(function(){$(this).mouseleave(function(){if(_isNullValue(this)){_deactivateLabel(activeLabel);}else{_activateLabel(activeLabel);}});});activeInput.bind("mouseleave blur",function(e){if(_isNullValue(this)){_deactivateLabel(activeLabel);}else{_activateLabel(activeLabel);}});}});});};})(jQuery);

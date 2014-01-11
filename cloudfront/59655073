@@ -1,0 +1,21 @@
+PHTTP72.21.207.218"ö
+ GET /x.png?interval=3 HTTP/1.1
+%Host: cloudfront-labs.amazonaws.com
+Connection: keep-alive
+Accept: image/webp,*/*;q=0.8
+vUser-Agent: Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/31.0.1650.63 Safari/537.36
+,Referer: http://aws.amazon.com/cloudfront/
+$Accept-Encoding: gzip,deflate,sdch
+!Accept-Language: en-US,en;q=0.8
+
+*¿
+HTTP/1.1 302 Found
+Pragma: No-cache
+Cache-Control: no-cache
+(Expires: Thu, 01 Jan 1970 00:00:00 UTC
+ Access-Control-Allow-Origin: *
+ZLocation: http://aadc69a8fe7198641225c30abe9c50523.profile.hkg50.cloudfront.net/test.png
+Content-Length: 0
+%Date: Thu, 09 Jan 2014 21:18:32 GMT
+Server: Server
+

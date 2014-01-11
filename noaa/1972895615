@@ -1,0 +1,72 @@
+PHTTP129.15.96.11"Ô
+GET /css/topNav.css HTTP/1.1
+Host: www.noaa.gov
+Connection: keep-alive
+Accept: text/css,*/*;q=0.1
+vUser-Agent: Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/31.0.1650.63 Safari/537.36
+Referer: http://www.noaa.gov/
+$Accept-Encoding: gzip,deflate,sdch
+!Accept-Language: en-US,en;q=0.8
+
+*ž
+
+HTTP/1.0 200 OK
+.Last-Modified: Fri, 15 Nov 2013 21:59:15 GMT
+Accept-Ranges: bytes
+Content-Length: 929
+Content-Type: text/css
+%Date: Thu, 09 Jan 2014 01:16:25 GMT
+Server: Apache
+$ETag: "e70dcfa1-3a1-4eb3e4f2272c0"
+(Expires: Thu, 09 Jan 2014 02:16:25 GMT
+Cache-Control: max-age=3600
+
+Age: 109
+Via: 1.0 c7.w3.woc (squid)
+Connection: keep-alive
+£
+	/** TOP NAVIGATION **/
+	#topNav {
+		background: url('/images/top_nav_stamp.png') no-repeat right center;
+		background-color: #AAAAAA;
+		border-bottom: 1px solid #888888;
+		height: 21px;
+		width: 100%;
+		position: relative;
+		top: 0px; 
+		left: 0px; 
+		display: block;
+		padding: 0px;
+		
+	}
+	#header.dotGovSub #topNav { 
+		background-image: none; 
+	} 
+	#header.dotGovSub #topNavStamp {
+		display: none;
+	}
+	#topNav a:link , #topNav a:visited { color: #FFFFFF; text-decoration: none;}
+	#topNav a:hover { color: #AEDBF4; }
+	#topNavElements {
+		display: inline;
+		padding-left: 0px;
+		margin-left: 10px;
+	}
+	#topNavElements li {
+		list-style: none;
+		font-family: Arial, Helvetica, sans-serif;
+		font-weight: bold;
+		color: #ffffff;
+		font-size: .7em;
+		margin-right: 9px;
+		display: inline;
+	}
+	#topNavStamp {
+		display: inline;
+		position: absolute;
+		right: 0px;
+		padding: 0px;
+		margin: 0px;
+		width: 100px;
+		height: 22px;
+	}

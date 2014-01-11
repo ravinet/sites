@@ -1,0 +1,31 @@
+PHTTP176.32.100.36"é
+GET /cloudfront HTTP/1.1
+Host: aws.amazon.com
+Connection: keep-alive
+TAccept: text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8
+vUser-Agent: Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/31.0.1650.63 Safari/537.36
+$Accept-Encoding: gzip,deflate,sdch
+!Accept-Language: en-US,en;q=0.8
+
+*Ê
+HTTP/1.1 301 MovedPermanently
+%Date: Thu, 09 Jan 2014 21:18:32 GMT
+Server: Server
+"x-amz-id-1: 0Y09A7F92YXG45NHKJFV
+:x-amz-id-2: PdzMOvDmeJDhr+35u6NIJoXAbwhZjZsesv768Ac40EM=
+X-Frame-Options: SAMEORIGIN
+-Location: http://aws.amazon.com/cloudfront/
+Cache-Control: max-age=0
+(Expires: Thu, 09 Jan 2014 21:18:32 GMT
+(Content-Type: text/html; charset=UTF-8
+§Set-cookie: x-wl-uid=1rJX21O2M8ShS7v+jXpD1SnsatfsJvOhycm9IyFb3OYaj2Rqt0PUrV2OEp6Zyv8UnZ6ibtZANqtY=; path=/; domain=.amazon.com; expires=Tue, 01-Jan-2036 00:00:01 GMT
+pSet-cookie: aws-session-id-time=2082758401l; path=/; domain=.amazon.com; expires=Tue, 01-Jan-2036 00:00:01 GMT
+sSet-cookie: aws-session-id=175-2966859-6786824; path=/; domain=.amazon.com; expires=Tue, 01-Jan-2036 00:00:01 GMT
+Vary: User-Agent
+Transfer-Encoding: chunked
+
+1
+
+
+0
+

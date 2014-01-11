@@ -1,0 +1,104 @@
+PHTTP205.251.242.190"þ
+&GET /css/partner-widget.css HTTP/1.1
+Host: www.powerjobs.com
+Connection: keep-alive
+Accept: text/css,*/*;q=0.1
+vUser-Agent: Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/31.0.1650.63 Safari/537.36
+<Referer: http://www.powerjobs.com/partner-widget/jobs.html
+$Accept-Encoding: gzip,deflate,sdch
+!Accept-Language: en-US,en;q=0.8
+
+*Ç$
+HTTP/1.1 200 OK
+Nx-amz-id-2: 657BJDPTU2ySIej8MyJ1X48OloY25918bwRTUfRzT39k9L1R4uwyvYIZQYOcxv4N
+$x-amz-request-id: C6017E2C8F48C75B
+%Date: Fri, 10 Jan 2014 16:57:37 GMT
+.Last-Modified: Thu, 30 May 2013 16:54:30 GMT
+*ETag: "5ce65cdfe1668832816ba08561e23ef3"
+Content-Type: text/css
+Content-Length: 4336
+Server: AmazonS3
+ò!
+/*
+PowerJobs Partner Widget Stylesheet
+Author: Michael Marcialis
+Contact Email: mmarcialis@politico.com
+*/
+
+
+/* ============================================================================
+RESET
+=============================================================================== */
+
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video {margin: 0; padding: 0; border: 0; font-size: 100%; font: inherit; vertical-align: baseline;}
+article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section {display: block;}
+body {line-height: 1;}
+ol, ul {list-style: none;}
+blockquote, q {quotes: none;}
+blockquote:before, blockquote:after, q:before, q:after {content: ''; content: none;}
+table {border-collapse: collapse; border-spacing: 0;}
+
+/* ============================================================================
+GENERAL STYLES
+=============================================================================== */
+
+body {font:normal 62.5% 'Helvetica Neue', Helvetica, Arial, sans-serif; color:#000; background:transparent; min-width:300px;}
+
+a {text-decoration:none; font-weight:bold; color:#0860b8;
+    -webkit-transition:color 0.25s ease;
+    -moz-transition:color 0.25s ease;
+    -o-transition:color 0.25s ease;
+    transition:color 0.25s ease;
+}
+a:hover {text-decoration:underline; color:#004b95;}
+
+.widget {margin:0 auto; border:1px solid #999; background:#fff;
+    -webkit-box-shadow:0 1px 2px rgba(0,0,0,.15);
+    -moz-box-shadow:0 1px 2px rgba(0,0,0,.15);
+    box-shadow:0 1px 2px rgba(0,0,0,.15);
+}
+
+/* ============================================================================
+WIDGET HEADER
+=============================================================================== */
+
+.widget-header {background:#000 url(/images/partner-widget/skyline-v2.jpg) no-repeat center top;}
+.widget-header h1 a {display:block; height:70px; text-indent:-9999px; background:url(/images/partner-widget/logo-v2.png) no-repeat center center;}
+
+/*HEADER TAGLINE----------------------------*/
+
+.widget-header .tagline {background:#000; background:rgba(0,0,0,.8); padding:6px 10px;}
+.widget-header .tagline p {font-size:12px; text-align:center; line-height:16px; color:#fff; text-shadow:0 1px 0 #000;}
+.widget-header .tagline a {color:#fff;}
+
+/* ============================================================================
+WIDGET CONTENT
+=============================================================================== */
+
+/*CONTENT TITLE----------------------------*/
+
+.widget-content-title {overflow:hidden; background:#f5f5f5; padding:8px 10px;}
+.widget-content-title h2, .widget-content-title .more-info {font-size:12px; line-height:12px;}
+.widget-content-title h2 {color:#b70000; text-transform:uppercase; float:left; font-weight:bold;}
+.widget-content-title .more-info {float:right; font-weight:normal;}
+
+/*COMPANY LIST MODULE----------------------------*/
+
+.widget-company-list {overflow:hidden; background:transparent url(/images/partner-widget/vertical-divider.gif) repeat-y center top;}
+.ie6 .widget-company-list {height:1%;}
+.widget-company-list .company-post {width:50%; float:left; border-top:1px solid #e5e5e5;}
+.ie7 .widget-company-list .company-post, .ie6 .widget-company-list .company-post {width:49.9%;}
+.widget-company-list .company-post a {display:block; height:45px; width:auto; overflow:hidden; padding:10px 20px; text-align:center; line-height:35px;}
+.widget-company-list .company-post img {max-width:100%; max-height:100%; vertical-align:middle;
+    -ms-interpolation-mode:bicubic;
+}
+.ie6 .widget-company-list .company-post img {width:100%;}
+
+/*JOBS LIST MODULE----------------------------*/
+
+.widget-jobs-list .job-post {padding:10px; border-top:1px solid #e8e8e8;}
+.widget-jobs-list .job-post h3, .widget-jobs-list .job-post p {font-size:12px; line-height:14px; white-space:nowrap; overflow:hidden; text-overflow:ellipsis;}
+.widget-jobs-list .job-post p {color:#666;}
+
+
+

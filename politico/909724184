@@ -1,0 +1,23 @@
+PHTTP199.233.57.41"×
+(GET /5/c=1851/pe=y/var=ccauds HTTP/1.1
+Host: ad.crwdcntrl.net
+Connection: keep-alive
+Accept: */*
+vUser-Agent: Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/31.0.1650.63 Safari/537.36
+#Referer: http://www.politico.com/
+$Accept-Encoding: gzip,deflate,sdch
+!Accept-Language: en-US,en;q=0.8
+
+*à
+HTTP/1.1 200 OK
+%Date: Fri, 10 Jan 2014 16:57:35 GMT
+&Content-Type: application/javascript
+Content-Length: 61
+Connection: keep-alive
+Cache-Control: no-cache
+Expires: 0
+Pragma: no-cache
+3P3P: CP=NOI DSP COR NID PSAa PSDa OUR UNI COM NAV
+X-Server: 172.22.10.162
+?
+ccauds={"Profile": {"tpid":"","Audiences": {"Audience":[]}}};

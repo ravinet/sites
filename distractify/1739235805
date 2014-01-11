@@ -1,0 +1,26 @@
+PHTTP107.21.255.128"©
+ÌGET /event?a=540060182&d=409850150&y=false&s548640155=gc&s551020096=false&s554300100=direct&n=http%3A%2F%2Fdistractify.com%2F&u=oeu1389275529276r0.43620110116899014&wxhr=true&t=1389275529283&f= HTTP/1.1
+$Host: 540060182.log.optimizely.com
+Connection: keep-alive
+vUser-Agent: Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/31.0.1650.63 Safari/537.36
+ Origin: http://distractify.com
+Accept: */*
+"Referer: http://distractify.com/
+$Accept-Encoding: gzip,deflate,sdch
+!Accept-Language: en-US,en;q=0.8
+
+*ý
+HTTP/1.1 200 OK
+(Access-Control-Allow-Credentials: true
+)Access-Control-Allow-Methods: POST, GET
+5Access-Control-Allow-Origin: http://distractify.com
+ Content-Type: application/json
+%Date: Thu, 09 Jan 2014 13:51:56 GMT
+9P3P: CP="IDC DSP COR CURa ADMa OUR IND PHY ONL COM STA"
+Server: nginx/1.2.7
+~Set-Cookie: fixed_external_540060182_end_user_id=; Domain=.optimizely.com; expires=Thu, 01 Jan 1970 00:00:00 GMT; Max-Age=-1
+‹Set-Cookie: end_user_id=oeu1389275529276r0.43620110116899014; Domain=.540060182.log.optimizely.com; expires=Sun, 07 Jan 2024 13:51:56 GMT
+Content-Length: 2
+Connection: keep-alive
+
+{}

@@ -1,0 +1,25 @@
+»HTTPS50.19.251.124"©
+GET /crossdomain.xml HTTP/1.1
+Host: www.attracto.com
+Connection: keep-alive
+vUser-Agent: Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/31.0.1650.63 Safari/537.36
+Accept: */*
+$Accept-Encoding: gzip,deflate,sdch
+!Accept-Language: en-US,en;q=0.8
+
+*ç
+HTTP/1.1 200 OK
+Accept-Ranges: bytes
+Content-Type: application/xml
+%Date: Fri, 10 Jan 2014 17:01:37 GMT
+ ETag: "254ee-da-4df95e75c27cf"
+.Last-Modified: Thu, 20 Jun 2013 13:27:11 GMT
+Server: Apache
+Content-Length: 218
+Connection: keep-alive
+Ü
+<?xml version="1.0"?>
+<!DOCTYPE cross-domain-policy SYSTEM "http://www.macromedia.com/xml/dtds/cross-domain-policy.dtd">
+<cross-domain-policy>
+<allow-access-from domain="*" secure="false"/>
+</cross-domain-policy>

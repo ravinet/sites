@@ -1,0 +1,31 @@
+PHTTP98.138.81.73"½
+(POST /netsvs/ulw/getwssid.php HTTP/1.1
+Host: att.yahoo.com
+Connection: keep-alive
+Content-Length: 0
+Origin: http://att.yahoo.com
+"X-Requested-With: XMLHttpRequest
+vUser-Agent: Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/31.0.1650.63 Safari/537.36
+(Content-Type: text/plain;charset=UTF-8
+Accept: */*
+ Referer: http://att.yahoo.com/
+$Accept-Encoding: gzip,deflate,sdch
+!Accept-Language: en-US,en;q=0.8
+æCookie: B=fr9dr999cs0kt&b=3&s=r6; ypcdb=4157ad599804a2950deea3823d87b719; WT_FPC=id=99d3be04-215d-4adf-8700-159616152616:lv=1389222011439:ss=1389222011439; IU=d=wQp1tN0ebZhPDVmbgOHJLFXG70Lg&v=1; fsr.a=1389232811546; fsr.paused=1
+
+*•
+HTTP/1.1 200 OK
+%Date: Thu, 09 Jan 2014 02:00:01 GMT
+ØP3P: policyref="http://info.yahoo.com/w3c/p3p.xml", CP="CAO DSP COR CUR ADM DEV TAI PSA PSD IVAi IVDi CONi TELo OTPi OUR DELi SAMi OTRi UNRi PUBi IND PHY ONL UNI PUR FIN COM NAV INT DEM CNT STA POL HEA PRE LOC GOV"
+/Content-Type: application/json; charset=utf-8
+Cache-Control: private
+Age: 5
+›Via: http/1.1 yts18.global.media.bf1.yahoo.com (ApacheTrafficServer/3.2.0 [cMsSf ]), http/1.1 r06.ycpi.ne1.yahoo.net (ApacheTrafficServer/4.0.2 [cMsSf ])
+Server: ATS/4.0.2
+Transfer-Encoding: chunked
+Connection: keep-alive
+>
+000002c
+{"wssid":"SMW5v2E3\/g9","guid":"logged_out"}
+0
+

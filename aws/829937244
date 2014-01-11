@@ -1,0 +1,107 @@
+PHTTP176.32.100.36"‡
+%GET /css/marchitecture.css HTTP/1.1
+Host: aws.amazon.com
+Connection: keep-alive
+Accept: text/css,*/*;q=0.1
+vUser-Agent: Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/31.0.1650.63 Safari/537.36
+!Referer: http://aws.amazon.com/
+$Accept-Encoding: gzip,deflate,sdch
+!Accept-Language: en-US,en;q=0.8
+¥Cookie: x-wl-uid=1sXq9FIpLO9d4iVeqFQRlsK1MIDCHduCzm8yjecnSt6smrD5gcOKBNqlHBWHIinvdW/qXL6dQ3m4=; aws-session-id-time=2082758401l; aws-session-id=187-3581872-5464619
+
+*™
+HTTP/1.1 200 OK
+%Date: Thu, 09 Jan 2014 00:35:35 GMT
+Server: Server
+X-Frame-Options: SAMEORIGIN
+.Last-Modified: Fri, 03 Jan 2014 22:56:25 GMT
+ETag: "630-4ef18d1cd7840"
+Accept-Ranges: bytes
+Content-Length: 1584
+"Cache-Control: max-age=0, public
+(Expires: Thu, 09 Jan 2014 00:35:35 GMT
+Content-Type: text/css
+Vary: User-Agent
+²
+.marc-wrapper {
+	background: #f9f9f9;
+	padding-top:22px;
+	color: #414042;
+	width:910px;
+        line-height: normal;
+}
+
+        .marc-wrapper table {
+          width: 575px;
+        }
+	.marc-wrapper a:hover {
+		text-decoration: underline;
+                cursor: pointer;
+	}
+	.marc-wrapper td {
+		padding: 0;
+		vertical-align: top;
+	}
+	.marc-wrapper td td {
+		text-align: center;
+		vertical-align: top;
+		font-size: 12px;
+		padding: 7px;
+	}
+.grey1 {
+	background:#1B1E20;
+	height:70px;
+	vertical-align: top; 
+}
+.grey2 {
+	background: #F5F5F5;
+        padding: 7px 0 7px 7px !important;
+        border-right: 1px solid #fff;
+        border-left: 1px solid #fff;
+}
+.grey3 {
+	background:#EDEDED;
+        padding: 7px 0 7px 7px !important;
+        border-right: 1px solid #fff;
+        border-left: 1px solid #fff;
+}
+.grey4 {
+	background:#E3E4E5;
+        padding: 7px 0 7px 7px !important;
+        border-right: 1px solid #fff;
+        border-left: 1px solid #fff;
+}
+.grey5 {
+	background:#33cc99;
+	text-align: center;
+	font-weight: bold;
+}
+  .grey5 a {
+    color: #fff;
+  }
+.marc-heading {
+	font-size:14px;
+	text-align:right;
+	padding:7px 7px 0 0; 
+	width: 120px; 
+	vertical-align: top;
+	color: #414042;
+}
+.marc-replace-content {
+	width:179px;
+	margin:68px 0 0 0;
+	float:right;
+        text-align: left;
+	font-size:12px;
+	padding:7px 4px 0 0;
+}
+.marc-content-box {
+	display:none;
+}
+	.marc-content-box a:link {
+		font-weight: bold;
+		text-decoration: underline;
+	}
+.marc-orange {
+  color: #E17A26 !important;
+}

@@ -1,0 +1,19 @@
+PHTTP184.73.252.244"ö
+≈GET /idsync/ex/receive?partner_id=ADB&partner_url=http%3A%2F%2Fdpm.demdex.net%2Fibs%3Adpid%3D540%26dpuuid%3D%24%7BTA_DEVICE_ID%7D&partner_device_id=71997193958442436523163916207514906657 HTTP/1.1
+Host: pixel.tapad.com
+Connection: keep-alive
+Accept: image/webp,*/*;q=0.8
+vUser-Agent: Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/31.0.1650.63 Safari/537.36
+8Referer: http://fast.dm.demdex.net/dest4.html?d_nsid=0
+$Accept-Encoding: gzip,deflate,sdch
+!Accept-Language: en-US,en;q=0.8
+
+*ù
+HTTP/1.1 302 Found
+ZLocation: http://dpm.demdex.net/ibs:dpid=540&dpuuid=9b10a9b3-f7d6-4a9f-9c5d-470241e6f497
+ìP3P: policyref="http://tapad-taptags.s3.amazonaws.com/policy/p3p.xml", CP="NOI DSP COR ADM PSAo PSDo OURo SAMo UNRo OTRo BUS COM NAV DEM STA PRE"
+cSet-Cookie: TapAd_TS=1389229357024;Expires=Mon, 10 Mar 2014 01:02:37 GMT;Path=/;Domain=.tapad.com
+{Set-Cookie: TapAd_DID=9b10a9b3-f7d6-4a9f-9c5d-470241e6f497;Expires=Mon, 10 Mar 2014 01:02:37 GMT;Path=/;Domain=.tapad.com
+Content-Length: 0
+Connection: keep-alive
+

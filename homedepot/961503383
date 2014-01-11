@@ -1,0 +1,27 @@
+PHTTP208.89.14.135"è
+—GET /hc/57386690/?&visitor=112290100679956&msessionkey=6988828142591795108&siteContainer=Secondary3&site=57386690&cmd=mTagInPage&lpCallId=81672138534-418777038110&protV=20&lpjson=1&page=http%3A//www.homedepot.com/b/webapp/catalog/servlet/HomePageView%3FstoreId%3D10051%26catalogId%3D10053%26langId%3D-1&id=8509160668&javaSupport=false&visitorStatus=INSITE_STATUS&defInvite=chat-global-english&activePlugin=none&cobrowse=true&pageWindowName=&cobrowse=true HTTP/1.1
+Host: sales.liveperson.net
+Connection: keep-alive
+Accept: */*
+vUser-Agent: Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/31.0.1650.63 Safari/537.36
+qReferer: http://www.homedepot.com/b/webapp/catalog/servlet/HomePageView?storeId=10051&catalogId=10053&langId=-1
+$Accept-Encoding: gzip,deflate,sdch
+!Accept-Language: en-US,en;q=0.8
+πCookie: HumanClickKEY=6988828142591795108; HumanClickSiteContainerID_57386690=Secondary3; ASPSESSIONIDCASCSRST=AOFNJJCBGMNIJDGMDANDNPCD; LivePersonID=LP i=112290100679956,d=1389366452
+
+*˜
+HTTP/1.1 200 OK
+%Date: Fri, 10 Jan 2014 15:07:30 GMT
+Server: Microsoft-IIS/6.0
+GP3P: CP="NON BUS INT NAV COM ADM CON CUR IVA IVD OTP PSA PSD TEL SAM"
+X-Powered-By: ASP.NET
+NSet-Cookie: HumanClickSiteContainerID_57386690=Secondary3; path=/hc/57386690
+(Content-Type: application/x-javascript
+Accept-Ranges: bytes
+.Last-Modified: Fri, 10 Jan 2014 15:07:32 GMT
+Cache-Control: no-store
+Pragma: no-cache
+(Expires: Wed, 31 Dec 1969 23:59:59 GMT
+Content-Length: 519
+â
+lpConnLib.Process({"ResultSet": {"lpCallId":"81672138534-418777038110","lpCallConfirm":"","lpJS_Execute":[{"code_id": "INPAGE-DELAY-10", "js_code": "lpMTag.lpInPageRequestDelay=10;"},{"code_id": "send_script_segments", "js_code": "if(window.lpTag&&window.lpTag.events){window.lpTag.events.trigger('LPChat','SEGMENTS_LIST',{'segments':['8bfee3bbddf2236b619e6ec932727f']});}else if(window.lpMTag&&window.lpMTag.events){window.lpMTag.events.publish('SEGMENTS_LIST',{'segments':['8bfee3bbddf2236b619e6ec932727f']});}"}]}});

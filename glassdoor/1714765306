@@ -1,0 +1,29 @@
+PHTTP67.192.222.18"±
+"POST /util/ajax/bwl.htm HTTP/1.1
+Host: www.glassdoor.com
+Connection: keep-alive
+Content-Length: 74
+8Accept: application/json, text/javascript, */*; q=0.01
+"Origin: http://www.glassdoor.com
+"X-Requested-With: XMLHttpRequest
+vUser-Agent: Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/31.0.1650.63 Safari/537.36
+@Content-Type: application/x-www-form-urlencoded; charset=UTF-8
+-Referer: http://www.glassdoor.com/index.htm
+$Accept-Encoding: gzip,deflate,sdch
+!Accept-Language: en-US,en;q=0.8
+½Cookie: JSESSIONID=B2F85105C57D3F3F99D9BA0094335AA1; ARPNTS=MTkyLjE2OC4xMDEuMjQ4; gdId=600030fa-a3fa-4866-9b15-63f31a3d5772; __utma=88367261.1702190681.1389230612.1389230612.1389230612.1; __utmb=88367261.1.10.1389230612; __utmc=88367261; __utmz=88367261.1389230612.1.1.utmcsr=(direct)|utmccn=(direct)|utmcmd=(none); RT=dm=glassdoor.com&si=de3bf6ab-fb0e-4e52-a671-66675ad2719a&ss=1389230611661&sl=1&tt=1593&obo=0&bcn=%2F%2F36f11203.mpstat.us%2F
+L
+bwl=88e68958f06435d0d2e6ec16028ba3be&guid=000001437498ad86b51cbe138d80dbcc*„
+HTTP/1.1 200 OK
+Server: Apache-Coyote/1.1
+Accept-Charset: UTF-8
+#X-UA-Compatible: IE=edge,chrome=1
+LP3P: CP="IDC DSP COR ADM DEVi TAIi PSA PSD IVAi IVDi CONi HIS OUR IND CNT"
+2Cache-Control: no-cache,no-store,must-revalidate
+Pragma: no-cache
+Expires: 0
+.Content-Type: application/json;charset=UTF-8
+Content-Length: 2
+%Date: Thu, 09 Jan 2014 01:23:20 GMT
+
+{}

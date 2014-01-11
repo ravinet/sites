@@ -1,0 +1,28 @@
+PHTTP8.247.87.252"‹
+JGET /ttv-boxart/Don't%20Starve:%20Console%20Edition-138x190.jpg HTTP/1.1
+Host: static-cdn.jtvnw.net
+Connection: keep-alive
+Accept: image/webp,*/*;q=0.8
+vUser-Agent: Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/31.0.1650.63 Safari/537.36
+ Referer: http://www.twitch.tv/
+$Accept-Encoding: gzip,deflate,sdch
+!Accept-Language: en-US,en;q=0.8
+
+*Ø
+ HTTP/1.1 302 Moved Temporarily
+Server: nginx
+Content-Type: text/html
+Content-Length: 154
+ILocation: http://static-cdn.jtvnw.net/ttv-static/404_boxart-138x190.jpg
+(Expires: Thu, 09 Jan 2014 18:24:37 GMT
+Cache-Control: max-age=900
+%Date: Thu, 09 Jan 2014 18:13:21 GMT
+Connection: keep-alive
+œ
+<html>
+<head><title>302 Found</title></head>
+<body bgcolor="white">
+<center><h1>302 Found</h1></center>
+<hr><center>nginx</center>
+</body>
+</html>

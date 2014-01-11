@@ -1,0 +1,57 @@
+PHTTP72.21.91.19"í
+HGET /wp-content/themes/worldnet-theme/_/js/mobile.js?ver=16f3 HTTP/1.1
+Host: www.wnd.com
+Connection: keep-alive
+Accept: */*
+vUser-Agent: Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/31.0.1650.63 Safari/537.36
+Referer: http://www.wnd.com/
+$Accept-Encoding: gzip,deflate,sdch
+!Accept-Language: en-US,en;q=0.8
+
+*¶
+HTTP/1.1 200 OK
+Accept-Ranges: bytes
+Cache-Control: max-age=1800
+Content-Type: text/javascript
+%Date: Wed, 08 Jan 2014 17:07:17 GMT
+Etag: "281269051"
+(Expires: Wed, 08 Jan 2014 17:37:07 GMT
+.Last-Modified: Tue, 26 Feb 2013 05:58:24 GMT
+Server: ECS (jfk/25CC)
+Vary: Accept-Encoding
+Via: 1.1 varnish
+X-Cache: HIT
+X-Node: ch-sc-shield1
+ X-Varnish: 537088163 537088006
+Content-Length: 1670
+ˆ
+var agent = navigator.userAgent.toLowerCase();
+var devices = ['android','iphone','ipod','blackberry','vnd.wap.xhtml+xml', 'sony', 'symbian', 'nokia', 'samsung', 'mobile', 'windows ce', 'epoc', 'opera mini', 'nitro', 'j2me', 'midp-', 'cldc-', 'netfront', 'mot', 'up.browser', 'up.link', 'audiovox', 'ericsson', 'panasonic', 'philips', 'sanyo', 'sharp', 'sie-', 'portalmmm', 'blazer', 'avantgo', 'danger', 'palm', 'series60', 'palmsource', 'pocketpc', 'smartphone', 'rover', 'ipaq', 'au-mic', 'alcatel', 'ericy', 'vodafone', 'wap1', 'wap2', 'teleca', 'playstation', 'lge', 'lg-', 'htc', 'dream', 'webos', 'bolt', 'nintendo'];
+
+var referringURL = document.referrer;
+var hostname = location.hostname;
+var isMobile = false;
+// We don't want ipad or android tablets to go to mobile
+if (agent.indexOf('ipad') != -1 || (agent.indexOf('android') != -1 && agent.indexOf('mobile') == -1)) {
+	 //It's an ipad or google tablet
+} else {
+	for (var i in devices) {
+		if (agent.indexOf(devices[i]) != -1) {
+			isMobile = true;	
+			break; // for eficiency
+		}
+	}
+}
+if (! referringURL || ! referringURL.match(/\.wnd\.com/)) {
+	if (isMobile && ! hostname.match(/^mobile.*\.wnd\.com$/)) {
+		// We're making this flexible so it will work in dev and on the live and any other subdomains	
+		if (hostname.match("^ww")) {
+                        //location.replace(hostname,location.protocol + "//mobile.wnd.com");
+			location.replace(location.href.replace(hostname, "mobile.wnd.com"));
+		}
+		else if (hostname.match("\.wnd\.com$")) {
+			//location.replace(hostname,location.protocol + "//mobile." + hostname);
+			location.replace(location.href.replace(hostname, "mobile." + hostname));
+		}
+	}
+}

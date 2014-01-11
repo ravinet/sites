@@ -1,0 +1,25 @@
+»HTTPS167.181.46.143"’
+(POST /WebSvcs/Login/echo.aspx HTTP/1.1
+Host: www.suntrust.com
+Connection: keep-alive
+Content-Length: 7
+"Origin: https://www.suntrust.com
+vUser-Agent: Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/31.0.1650.63 Safari/537.36
+1Content-Type: application/x-www-form-urlencoded
+Accept: */*
+\Referer: https://www.suntrust.com/imageserver/plumtree/common/custom/Multifactor/pmfso.swf
+$Accept-Encoding: gzip,deflate,sdch
+!Accept-Language: en-US,en;q=0.8
+ŒCookie: BIGipServerst.com=497222666.20480.0000; mbox=check#true#1389274905|session#1389274843383-628947#1389276705|PC#1389274843383-628947.17_29#1390484445; BrandingZone=PF; s_pers=%20s_fid%3D7B2275A01923CAC6-1F3714DBD8058CD9%7C1452346844965%3B%20s_depth%3D2%7C1389276644966%3B%20v19%3DSTcom%257CPersonalBkg%257CHome%7C1389276644969%3B; s_sess=%20s_cc%3Dtrue%3B%20s_sq%3D%3B; fsr.a=1389274844977; ASP.NET_SessionId=xzkzk3snvoc3yuc3k3lmpt5f; s_vi=[CS]v1|29675368051D0CB9-40000146C0054778[CE]; __bocmc637=0.38647036510519683
+	
+pmdata=*®
+HTTP/1.1 200 OK
+%Date: Thu, 09 Jan 2014 13:40:33 GMT
+Server: Microsoft-IIS/6.0
+Host-Name: P12E
+X-Powered-By: ASP.NET
+)Set-Cookie: SunTrustFlashToken=; path=/
+Cache-Control: private
+Content-Length: 0
+KSet-Cookie: BIGipServerwww.suntrust.com-pvic=950141962.20480.0000; path=/
+

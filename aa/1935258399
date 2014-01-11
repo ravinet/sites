@@ -1,0 +1,25 @@
+PHTTP
+23.0.61.41"ù
+@GET /apps/common/js/jquery/aacom/utilities/aaUtils.js HTTP/1.1
+Host: www.aa.com
+Connection: keep-alive
+Accept: */*
+vUser-Agent: Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/31.0.1650.63 Safari/537.36
+(Referer: http://www.aa.com/homePage.do
+$Accept-Encoding: gzip,deflate,sdch
+!Accept-Language: en-US,en;q=0.8
+ˆCookie: v1st=7EA5FF02354CAF63; JSESSIONID=4C0F4AAF1B0090AFE3A5001E623C1AE7; dtCookie=06F4BF3512EFE0A6C157596C94C19D9F|AA.com|1; ROUTEID=.P111A01; homeAirport="wGFH1cxVqs0="; COUNTRY_CODE="UCKRRdXdz9w="; saleCity="wGFH1cxVqs0="; dtPC=5312511_627#_load_; AX42=CT-USR; sessionLocale=en_US; OX_plg=swf|qt|wmp|shk|pm; mt.memberLevel=REGULAR; mt.treatmentCode=null; mt.v=2.779430393.1389230913754
+
+*ä
+HTTP/1.1 200 OK
+Server: Apache-Coyote/1.1
+X-dynaTrace-JS-Agent: true
+Accept-Ranges: bytes
+ETag: W/"1576-1387316480000"
+.Last-Modified: Tue, 17 Dec 2013 21:41:20 GMT
+&Content-Type: application/javascript
+Content-Length: 1576
+%Date: Thu, 09 Jan 2014 01:28:21 GMT
+Connection: keep-alive
+ª
+jQuery.aaFormFieldEffects=function(){var self=this;self.forms=jQuery("form");self.fieldsets=jQuery(self.forms).find("fieldset");self.inputs=jQuery(self.forms).find("input");self.fieldsets.click(function(e){self.resetFocus();self.focusFieldset(jQuery(this));});self.inputs.focus(function(e){self.resetFocus();self.focusFieldset(jQuery(this).closest("fieldset"));});self.resetFocus=function(){self.fieldsets.parents("div:not(.aa-no-focus)").removeClass("active");};self.focusFieldset=function(fieldset){fieldset.parents("div:not(.aa-no-focus)").addClass("active");};};jQuery.stripeTables=function(table){jQuery("tbody tr",table).hover(function(){jQuery(this).addClass("aa-hoverRow");},function(){jQuery(this).removeClass("aa-hoverRow");});jQuery("tbody tr:even",table).addClass("aa-altRow");};jQuery.tableToLinks=function(table,link){jQuery("tbody tr",table).each(function(i,item){var url=jQuery(link,item).attr("href");if(url!=undefined){jQuery(item).css("cursor","pointer").hover(function(){jQuery(this).toggleClass("hover");jQuery(item).unbind("click");jQuery(item).bind("click",url,function(e){e.preventDefault;window.location=e.data;});},function(){jQuery(this).toggleClass("hover");});jQuery("a",item).each(function(index){var dealUrl=jQuery(link,item).attr("href");if(jQuery(this).attr("class")!=jQuery(link,item).attr("class")){jQuery(this).hover(function(){jQuery(item).toggleClass("hover");jQuery(item).unbind("click");},function(){jQuery(item).toggleClass("hover");jQuery(item).bind("click",dealUrl,function(e){e.preventDefault;window.location=e.data;});});}});}});};

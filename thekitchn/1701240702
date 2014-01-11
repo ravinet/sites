@@ -1,0 +1,26 @@
+PHTTP68.67.152.197"û
+"GET /seg?add=875876&t=1 HTTP/1.1
+Host: ib.adnxs.com
+Connection: keep-alive
+Accept: */*
+vUser-Agent: Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/31.0.1650.63 Safari/537.36
+$Referer: http://www.thekitchn.com/
+$Accept-Encoding: gzip,deflate,sdch
+!Accept-Language: en-US,en;q=0.8
++Cookie: uuid2=1860804112458330845; sess=1
+
+*‚
+HTTP/1.1 200 OK
+,Cache-Control: no-store, no-cache, private
+Pragma: no-cache
+(Expires: Sat, 15 Nov 2008 16:00:00 GMT
+†P3P: policyref="http://cdn.adnxs.com/w3c/policy/p3p.xml", CP="NOI DSP COR ADM PSAo PSDo OURo SAMo UNRo OTRo BUS COM NAV DEM STA PRE"
+X-XSS-Protection: 0
+sSet-Cookie: uuid2=1860804112458330845; path=/; expires=Thu, 10-Apr-2014 17:01:36 GMT; domain=.adnxs.com; HttpOnly
+`Set-Cookie: sess=1; path=/; expires=Sat, 11-Jan-2014 17:01:36 GMT; domain=.adnxs.com; HttpOnly
+®Set-Cookie: anj=dTM7k!M4.g1IKunF7/.ij3qu#24lxXifH$='l^!75=Pj9++.D0vPu((VQDLr$Y^yX/Zykz!P!Pk4Glsu; path=/; expires=Thu, 10-Apr-2014 17:01:36 GMT; domain=.adnxs.com; HttpOnly
+Content-Type: text/javascript
+%Date: Fri, 10 Jan 2014 17:01:36 GMT
+Content-Length: 120
+z
+document.write('<img src="http://ads.captifymedia.com/seg?add=891082&t=2" style="display:none" width="1" height="1"/>');

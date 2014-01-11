@@ -1,0 +1,43 @@
+PHTTP
+23.0.54.19"—
+
+RGET /ad/adInfo.htm?contentType=video&contentId=10302602&_=1389231564770 HTTP/1.1
+Host: www.babycenter.com
+Connection: keep-alive
+8Accept: application/json, text/javascript, */*; q=0.01
+"X-Requested-With: XMLHttpRequest
+vUser-Agent: Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/31.0.1650.63 Safari/537.36
+%Referer: http://www.babycenter.com/
+$Accept-Encoding: gzip,deflate,sdch
+!Accept-Language: en-US,en;q=0.8
+ÀCookie: JSESSIONID=F6393B80B56F2D71E7056DD78AC42BF0.880345; optimizelySegments=%7B%22184625176%22%3A%22direct%22%2C%22184691661%22%3A%22gc%22%2C%22185375329%22%3A%22none%22%2C%22185401408%22%3A%22false%22%7D; optimizelyEndUserId=oeu1389231564973r0.5426190183497965; optimizelyBuckets=%7B%7D; optimizelyPendingLogEvents=%5B%5D; __ybotb=57aa; __ybotu=hq7clsj2h62l1dp2mn; __ybotv=1389231565742; __ybots=hq7clsj3l3z0j5lnle.1.hq7clsj28mmhxcc48a.1; __ybotc=http%3A//ads-useast1n.yldbt.com/m/; __ybota=728x90; __qca=P0-1286396530-1389231566039; s_cc=true; s_nr=1389231566093; s_sq=%5B%5BB%5D%5D; s_vi=[CS]v1|2966FEE10501017E-40000117600434C3[CE]; GED_PLAYLIST_ACTIVITY=[{"u":"5NPi","t":1389231567,"ed":"_tt1_bs10_it3","nv":0,"pl":1}]; QSI_HistorySession=http%3A%2F%2Fwww.babycenter.com%2F~1389231566981; BC_BANDWIDTH=1389231576238X145568
+
+*½
+HTTP/1.1 200 OK
+Server: Apache
+Content-Language: en-US
+Content-Length: 360
+\Cache-Control: no-cache, proxy-revalidate, must-revalidate, no-cache="Set-Cookie", private
+(Expires: Thu, 09 Jan 2014 01:39:14 GMT
+.Content-Type: application/json;charset=UTF-8
+%Date: Thu, 09 Jan 2014 01:39:14 GMT
+Connection: keep-alive
+ê
+
+
+	
+	
+		
+		
+			
+				
+				{ 
+					"keywords": "tp=bc20preghealth;tp=bc20pregfetaldev;tp=bc20pregfetaldevfirst;tp=bc20pregnancy;us=uru;rel=fetal develop;rel=pregnanc;sg=bc20preghealth;sg=bc20pregfetaldev;sg=bc20pregfetaldevfirst;sg=bc20pregnancy",
+					"site": "preg",
+					"zone": "bc20pregfetaldev",
+					"id": "10302602",
+					"tid": "1513005"
+				}
+			
+		
+	

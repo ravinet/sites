@@ -1,0 +1,30 @@
+PHTTP23.202.206.26"Ä
+VGET /FileResource/themes/projects/eonline/shared/js/config/e_us_config.json HTTP/1.1
+Host: eonline.ramp.com
+Connection: keep-alive
++Accept: application/json, text/plain, */*
+ Origin: http://www.eonline.com
+vUser-Agent: Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/31.0.1650.63 Safari/537.36
+"Referer: http://www.eonline.com/
+$Accept-Encoding: gzip,deflate,sdch
+!Accept-Language: en-US,en;q=0.8
+
+*‹
+HTTP/1.1 200 OK
+Server: Apache
+.Last-Modified: Fri, 20 Sep 2013 17:37:03 GMT
+#ETag: "2236f6a-101-4e6d41e523058"
+Accept-Ranges: bytes
+Content-Length: 257
+ Access-Control-Allow-Origin: *
+;Access-Control-Allow-Methods: GET,POST,OPTIONS,DELETE,PUT
+ Content-Type: application/json
+%Date: Thu, 09 Jan 2014 00:52:44 GMT
+Connection: keep-alive
+Edge-Control: no-store
+ƒ
+ { "apiKey" : "TBD",
+  "autoCompleteAPI" : "http://eonline.ramp.com/autocomplete",
+  "searchUrl" : "http://www.eonline.com/search/?query=",
+  "templateUrl" : "http://eonline.ramp.com/FileResource/themes/projects/eonline/shared/js/tpl/e_autocomplete.html"
+}

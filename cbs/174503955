@@ -1,0 +1,34 @@
+PHTTP64.30.228.49"ó
+,POST /tracking/tealium/map/home/1 HTTP/1.1
+Host: www.cbs.com
+Connection: keep-alive
+Content-Length: 0
+0Accept: application/json, text/javascript, */*
+Origin: http://www.cbs.com
+"X-Requested-With: XMLHttpRequest
+vUser-Agent: Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/31.0.1650.63 Safari/537.36
+(Content-Type: text/plain;charset=UTF-8
+Referer: http://www.cbs.com/
+$Accept-Encoding: gzip,deflate,sdch
+!Accept-Language: en-US,en;q=0.8
+|Cookie: phpab-ishd=ishd; CBS_ADV_VAL=c%3Bpage%3Dcbshome; LDCLGFbrowser=dd865adc-34b8-40c8-92cc-326859b46dc9; s_tagEnv=live
+
+*˜
+HTTP/1.1 200 OK
+Server: Apache/2.4.3 (Unix)
+Cache-Control: no-cache
+(Expires: Sat, 26 Jul 1997 05:00:00 GMT
+aSet-Cookie: phpab-ishd=ishd; expires=Fri, 09-Jan-2015 01:16:02 GMT; path=/; domain=.www.cbs.com
+ Content-Type: application/json
+X-Real-Server: ws39
+Content-Length: 438
+Accept-Ranges: bytes
+%Date: Thu, 09 Jan 2014 01:16:02 GMT
+X-Varnish: 2423958333
+Age: 0
+Via: 1.1 varnish
+Connection: keep-alive
+X-Cache: MISS
+X-Hit-Count: 0
+¸
+{"success":true,"map":"{\"marquee\":{\"selector\":\"#cbs-marquee-wrapper a.nivo-imageLink\",\"event\":\"click\",\"event_type\":\"hp_marquee\",\"varPairs\":[{\"key\":\"track_click_item\",\"value\":\"CarouselTapped\"},{\"key\":\"rsid\",\"value\":\"cbsicbsapp\"},{\"key\":\"site_type\",\"value\":\"native app\"},{\"key\":\"user_agent\",\"value\":\"f:return navigator.userAgent\"},{\"key\":\"edition\",\"value\":\"us\"}],\"callback\":\"\"}}"}

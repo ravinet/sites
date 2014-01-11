@@ -1,0 +1,30 @@
+PHTTP23.0.60.166"ß
+GET / HTTP/1.1
+Host: www.united.com
+Connection: keep-alive
+TAccept: text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8
+vUser-Agent: Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/31.0.1650.63 Safari/537.36
+$Accept-Encoding: gzip,deflate,sdch
+!Accept-Language: en-US,en;q=0.8
+
+*Î
+ HTTP/1.1 302 Moved Temporarily
+,Cache-Control: private,no-cache=Set-Cookie
+(Content-Type: text/html; charset=utf-8
+(Expires: Thu, 01 Dec 1994 16:00:00 GMT
+*Location: /web/en-US/default.aspx?root=1
+X-AspNet-Version: 2.0.50727
+$Server: Continental Airlines, Inc.
+Content-Length: 157
+%Date: Thu, 09 Jan 2014 01:01:36 GMT
+Connection: keep-alive
+Vary: Accept-Encoding
+$Set-Cookie: VanityURL=Null; path=/
+QSet-Cookie: TLTSID=7443158B4A246804B913589B6AEAA18C; Path=/; Domain=.united.com
+wSet-Cookie: TLTUID=7443158B4A246804B913589B6AEAA18C; Path=/; Domain=.united.com; expires=Thu, 09-01-2024 01:01:36 GMT
+fSet-Cookie: v1st=ABC6744B23AE68F6; path=/; expires=Wed, 19 Feb 2020 14:28:00 GMT; domain=.united.com
+JSet-Cookie: akaau=1389229596~id=fe580987baeef5349f2410f0e91a7e2c; path=/
+Ÿ
+<html><head><title>Object moved</title></head><body>
+<h2>Object moved to <a href="%2fweb%2fen-US%2fdefault.aspx%3froot%3d1">here</a>.</h2>
+</body></html>

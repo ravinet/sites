@@ -1,0 +1,43 @@
+PHTTP
+23.0.61.41"ç
+
+FPOST /dwr/call/plaincall/HomePageUtils.reportImpression.dwr HTTP/1.1
+Host: www.aa.com
+Connection: keep-alive
+Content-Length: 535
+Origin: http://www.aa.com
+vUser-Agent: Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/31.0.1650.63 Safari/537.36
+Content-Type: text/plain
+Accept: */*
+(Referer: http://www.aa.com/homePage.do
+$Accept-Encoding: gzip,deflate,sdch
+!Accept-Language: en-US,en;q=0.8
+ˆCookie: v1st=7EA5FF02354CAF63; JSESSIONID=4C0F4AAF1B0090AFE3A5001E623C1AE7; dtCookie=06F4BF3512EFE0A6C157596C94C19D9F|AA.com|1; ROUTEID=.P111A01; homeAirport="wGFH1cxVqs0="; COUNTRY_CODE="UCKRRdXdz9w="; saleCity="wGFH1cxVqs0="; dtPC=5312511_627#_load_; AX42=CT-USR; sessionLocale=en_US; OX_plg=swf|qt|wmp|shk|pm; mt.memberLevel=REGULAR; mt.treatmentCode=null; mt.v=2.779430393.1389230913754
+™
+callCount=1
+page=/homePage.do
+httpSessionId=
+scriptSessionId=85994B81E2D14BD0A1D7EB27491D0A14464
+c0-scriptName=HomePageUtils
+c0-methodName=reportImpression
+c0-id=0
+c0-e1=boolean:false
+c0-e2=string:HomePageHero1
+c0-e3=string:http%253A%252F%252Fwww.aa.com%252Farriving
+c0-e4=string:American%20US%20Airways%20merger
+c0-e5=string:en_US
+c0-param0=Object_Object:{flash:reference:c0-e1, reportedLocation:reference:c0-e2, reportedTarget:reference:c0-e3, reportedTitle:reference:c0-e4, locale:reference:c0-e5}
+c0-param1=boolean:false
+batchId=1
+*¨
+HTTP/1.1 200 OK
+Server: Apache-Coyote/1.1
+X-dynaTrace-JS-Agent: true
+2Content-Type: text/javascript;charset=ISO-8859-1
+Content-Length: 75
+%Date: Thu, 09 Jan 2014 01:28:22 GMT
+Connection: keep-alive
+M
+//#DWR-INSERT
+//#DWR-REPLY
+dwr.engine._remoteHandleCallback('1','0',null);

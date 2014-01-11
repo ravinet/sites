@@ -1,0 +1,24 @@
+PHTTP209.167.231.15"ê
+PGET /visitor/v200/svrGP?pps=3&siteid=2761&ref2=elqNone&tzo=300&ms=932 HTTP/1.1
+Host: now.eloqua.com
+Connection: keep-alive
+Accept: image/webp,*/*;q=0.8
+vUser-Agent: Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/31.0.1650.63 Safari/537.36
+%Referer: http://www.salesforce.com/
+$Accept-Encoding: gzip,deflate,sdch
+!Accept-Language: en-US,en;q=0.8
+
+*≥
+HTTP/1.1 302 Found
+Cache-Control: private
+(Content-Type: text/html; charset=utf-8
+sLocation: http://now.eloqua.com/visitor/v200/svrGP.aspx?pps=3&siteid=2761&ref2=elqNone&tzo=300&ms=932&elqCookie=1
+áSet-Cookie: ELOQUA=GUID=8FD1C07C65FF4107871FF99F3C904AF5; domain=.eloqua.com; expires=Sat, 09-Jan-2016 00:32:42 GMT; path=/; HttpOnly
+]Set-Cookie: ELQSTATUS=OK; domain=.eloqua.com; expires=Sat, 09-Jan-2016 00:32:42 GMT; path=/
+FP3P: CP="IDC DSP COR DEVa TAIa OUR BUS PHY ONL UNI COM NAV CNT STA",
+%Date: Thu, 09 Jan 2014 00:32:42 GMT
+Content-Length: 240
+Ú
+<html><head><title>Object moved</title></head><body>
+<h2>Object moved to <a href="http://now.eloqua.com/visitor/v200/svrGP.aspx?pps=3&amp;siteid=2761&amp;ref2=elqNone&amp;tzo=300&amp;ms=932&amp;elqCookie=1">here</a>.</h2>
+</body></html>

@@ -1,0 +1,22 @@
+PHTTP66.155.40.249"â
+GET / HTTP/1.1
+Host: www.wordpress.org
+Connection: keep-alive
+TAccept: text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8
+vUser-Agent: Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/31.0.1650.63 Safari/537.36
+$Accept-Encoding: gzip,deflate,sdch
+!Accept-Language: en-US,en;q=0.8
+
+*¬
+ HTTP/1.1 301 Moved Permanently
+Server: nginx
+%Date: Thu, 09 Jan 2014 00:29:47 GMT
+(Content-Type: text/html; charset=UTF-8
+Transfer-Encoding: chunked
+Connection: keep-alive
+-X-Pingback: http://wordpress.org/xmlrpc.php
+!Location: http://wordpress.org/
+X-nc: HIT lax 249
+
+0
+

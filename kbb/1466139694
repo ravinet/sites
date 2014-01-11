@@ -1,0 +1,30 @@
+PHTTP23.0.50.233"‘
+
+ŽGET /jsdata/2.2.59.3_45496/_makes?vehicleclass=NewCar&filterbycpo=false&filter=&priceMin=&priceMax=&categoryId=0&hasNCBBPrice=false HTTP/1.1
+Host: www.kbb.com
+Connection: keep-alive
+Accept: */*
+"X-Requested-With: XMLHttpRequest
+ADRUM: isAjax:true
+vUser-Agent: Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/31.0.1650.63 Safari/537.36
+Referer: http://www.kbb.com/
+$Accept-Encoding: gzip,deflate,sdch
+!Accept-Language: en-US,en;q=0.8
+ Cookie: ASP.NET_SessionId=zvsfsrt3sff0ljfrz3fajjs2; VisitorId=6746549f-617e-4685-827c-aa61b5d74760; mbox=check#true#1389232065|session#1389232004593-641899#1389233865; LANDING_DOMAIN=www.kbb.com; SessionId=6bab5575f2bb4c27a911fdd26bb7f9e2; Referer=kbb.com; BIGipServerpool_kbb-A=835249162.20480.0000; s_ria=flash%2011%7C; s_sv_sid=630675111551; dxkbb=remove%20me%3D123; aam_uuid=14055844715247874064395761113631700717; __utma=168253307.1583192779.1389232006.1389232006.1389232006.1; __utmb=168253307.1.10.1389232006; __utmc=168253307; __utmz=168253307.1389232006.1.1.utmcsr=(direct)|utmccn=(direct)|utmcmd=(none); rsi_segs=B05500_12435|B05500_0; s_vi=[CS]v1|2966FFBC851607A7-40000181E001B200[CE]; __CT_Data=gpv=1&apv_59_www12=1; WRUID=0; fsr.a=1389232006193; s_cc=true; s_fbsr=1; s_sq=%5B%5BB%5D%5D
+
+*¹
+HTTP/1.1 200 OK
+(Cache-Control: public, max-age=2592000
+/Content-Type: application/json; charset=utf-8
+.Last-Modified: Thu, 09 Jan 2014 01:46:21 GMT
+Server: Microsoft-IIS/7.5
+X-AspNetMvc-Version: 4.0
+X-AspNet-Version: 4.0.30319
+X-Powered-By: ASP.NET
+Accept-Ranges: bytes
+(Expires: Sat, 08 Feb 2014 01:46:21 GMT
+Content-Length: 1162
+%Date: Thu, 09 Jan 2014 01:46:34 GMT
+Connection: keep-alive
+Œ	
+[{"Id":2,"Name":"Acura"},{"Id":54,"Name":"Aston Martin"},{"Id":4,"Name":"Audi"},{"Id":57,"Name":"Bentley"},{"Id":5,"Name":"BMW"},{"Id":7,"Name":"Buick"},{"Id":8,"Name":"Cadillac"},{"Id":9,"Name":"Chevrolet"},{"Id":10,"Name":"Chrysler"},{"Id":13,"Name":"Dodge"},{"Id":397,"Name":"Ferrari"},{"Id":430,"Name":"FIAT"},{"Id":15,"Name":"Ford"},{"Id":16,"Name":"GMC"},{"Id":18,"Name":"Honda"},{"Id":20,"Name":"Hyundai"},{"Id":21,"Name":"Infiniti"},{"Id":23,"Name":"Jaguar"},{"Id":24,"Name":"Jeep"},{"Id":25,"Name":"Kia"},{"Id":59,"Name":"Lamborghini"},{"Id":26,"Name":"Land Rover"},{"Id":27,"Name":"Lexus"},{"Id":28,"Name":"Lincoln"},{"Id":55,"Name":"Lotus"},{"Id":61,"Name":"Maserati"},{"Id":30,"Name":"Mazda"},{"Id":799,"Name":"McLaren"},{"Id":31,"Name":"Mercedes-Benz"},{"Id":29,"Name":"MINI"},{"Id":34,"Name":"Mitsubishi"},{"Id":35,"Name":"Nissan"},{"Id":41,"Name":"Porsche"},{"Id":783,"Name":"Ram"},{"Id":58,"Name":"Rolls-Royce"},{"Id":45,"Name":"Scion"},{"Id":507,"Name":"smart"},{"Id":849,"Name":"SRT"},{"Id":47,"Name":"Subaru"},{"Id":48,"Name":"Suzuki"},{"Id":834,"Name":"Tesla"},{"Id":49,"Name":"Toyota"},{"Id":50,"Name":"Volkswagen"},{"Id":51,"Name":"Volvo"}]

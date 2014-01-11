@@ -1,0 +1,45 @@
+PHTTP129.15.96.11"Ÿ
+#GET /css/exploreNOAA.css HTTP/1.1
+Host: www.noaa.gov
+Connection: keep-alive
+Accept: text/css,*/*;q=0.1
+vUser-Agent: Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/31.0.1650.63 Safari/537.36
+Referer: http://www.noaa.gov/
+$Accept-Encoding: gzip,deflate,sdch
+!Accept-Language: en-US,en;q=0.8
+
+*ê
+HTTP/1.0 200 OK
+.Last-Modified: Wed, 13 Nov 2013 19:00:00 GMT
+Accept-Ranges: bytes
+Content-Length: 403
+Content-Type: text/css
+%Date: Thu, 09 Jan 2014 01:16:25 GMT
+Server: Apache
+$ETag: "e70dcf99-193-4eb1392676c00"
+(Expires: Thu, 09 Jan 2014 02:16:25 GMT
+Cache-Control: max-age=3600
+
+Age: 109
+Via: 1.0 c7.w3.woc (squid)
+Connection: keep-alive
+ï
+/** Explore NOAA **/
+	#exploreNOAA { 
+		width: 100%;
+	}
+	#exploreNOAAItems {
+		list-style-type: none;
+		background: url('/images/back_explore.png') repeat-x;
+		margin: 0px;
+		padding: 4px; 
+		border-top:1px solid  #83C696;
+		border-left: 1px solid #CAF9CA;
+		border-right: 1px solid #CAF9CA;
+	}
+	#exploreNOAAItems li {
+		display: inline;
+	}
+	#exploreNOAAItems img {
+		border: 0px;
+	}

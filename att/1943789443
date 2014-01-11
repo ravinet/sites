@@ -1,0 +1,33 @@
+PHTTP208.89.14.135"Ý
+®GET /hc/11390142/?&site=11390142&cmd=mTagKnockPage&lpCallId=956839497200-445908932015&protV=20&lpjson=1&id=7090669849&javaSupport=false&visitorStatus=INSITE_STATUS HTTP/1.1
+Host: sales.liveperson.net
+Connection: keep-alive
+Accept: */*
+vUser-Agent: Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/31.0.1650.63 Safari/537.36
+Referer: http://www.att.com/
+$Accept-Encoding: gzip,deflate,sdch
+!Accept-Language: en-US,en;q=0.8
+
+*Ø%
+HTTP/1.1 200 OK
+%Date: Thu, 09 Jan 2014 00:37:48 GMT
+Server: Microsoft-IIS/6.0
+GP3P: CP="NON BUS INT NAV COM ADM CON CUR IVA IVD OTP PSA PSD TEL SAM"
+X-Powered-By: ASP.NET
+ƒSet-Cookie: LivePersonID=LP i=112710164807152,d=1389227868; expires=Fri, 09-Jan-2015 00:37:48 GMT; path=/; domain=.liveperson.net
+ŠSet-Cookie: LivePersonID=-112710164807152-1389227868:0; expires=Fri, 09-Jan-2015 00:37:48 GMT; path=/hc/11390142; domain=.liveperson.net
+ƒSet-Cookie: LivePersonID=LP i=112710164807152,d=1389227868; expires=Fri, 09-Jan-2015 00:37:48 GMT; path=/; domain=.liveperson.net
+ASet-Cookie: HumanClickKEY=862923234997248110; path=/hc/11390142
+ASet-Cookie: HumanClickKEY=862923234997248110; path=/hc/11390142
+(Content-Type: application/x-javascript
+Accept-Ranges: bytes
+.Last-Modified: Thu, 09 Jan 2014 00:37:48 GMT
+NSet-Cookie: HumanClickSiteContainerID_11390142=STANDALONE; path=/hc/11390142
+”Set-Cookie: LivePersonID=-112710164807152-1389227868:-1:-1:-1:-1; expires=Fri, 09-Jan-2015 00:37:48 GMT; path=/hc/11390142; domain=.liveperson.net
+ƒSet-Cookie: LivePersonID=LP i=112710164807152,d=1389227868; expires=Fri, 09-Jan-2015 00:37:48 GMT; path=/; domain=.liveperson.net
+Cache-Control: no-store
+Pragma: no-cache
+(Expires: Wed, 31 Dec 1969 23:59:59 GMT
+Content-Length: 3499
+­
+lpConnLib.Process({"ResultSet": {"lpCallId":"956839497200-445908932015","lpCallConfirm":"","lpJS_Execute":[{"code_id": "webServerOverride", "js_code": "if (lpMTagConfig.lpServer != 'sales.liveperson.net') { lpMTag.overrideLPServer('sales.liveperson.net',true); }"},{"code_id": "MTagDef", "js_code": "lpMTagConfig.oemName = 'LivePerson';lpMTagConfig.poweredByURL = 'http://solutions.liveperson.com/ref/lppb.asp';lpMTagConfig.servlet = 'hc/';lpMTagConfig.appletsDirectory = 'applets/v7.8';lpMTagConfig.charSet = 'UTF-8';lpMTagConfig.language = 'ml';lpMTagConfig.credit = 'powered';lpMTagConfig.logoDir = 'icon/lp';lpMTagConfig.useFirstParty = true;lpMTagConfig.allowThirdPartyByServer = true;lpMTagConfig.lpUseSecureCookies =false;lpMTagConfig.lpUseSessionCookies=false;lpMTagConfig.cobrowseEnabled=false;lpMTag.activityMonitor=true;lpMTagConfig.lpSendCookies=true;lpConnLib.postDeleteIfrDelay=3;lpMTagConfig.minimizePost=false;lpMTagConfig.minimizePostMaxGets=3;lpMTagConfig.allowTruncate=false;lpMTagConfig.serverVer='21.8.0.3';lpMTagConfig.serverBuild='33';lpMTagConfig.dbMultipleClickDelay=3;lpMTagConfig.sgpemtAvoidPOST=true;lpMTagConfig.sgpemtMaxUrlLength=500;lpMTagConfig.sgpemtMinUrlLength=100;lpMTagConfig.sgpemtMaxReferLength=300;lpMTagConfig.sgpemtMinReferLength=100;lpMTagConfig.sgpemtMaxTitleLength=100;lpMTagConfig.sgpemtMinTitleLength=50;lpMTagConfig.maxPageWinNameLength=200;lpMTagConfig.sgpemtSplitCookie=false;lpMTagConfig.sgpemtSplitCookieMinDelta=200;lpMTagConfig.LEeventsAPI=true;if(typeof(lpMTagStatic)!='undefined'){if(typeof(lpMTagStatic.onInitMonitor)!='undefined'){for(var i=0;i<lpMTagStatic.onInitMonitor.length;i++){var tempfunc=lpMTagStatic.onInitMonitor[i];try{tempfunc();lpConnLib.log('OK ONLoad fn','EXEC-OK','STATIC-BUTTON')}catch(e){lpConnLib.log('ERROR ONLoad fn='+tempfunc+' &nbsp #'+e+'#','ERROR','STATIC-BUTTON')}}lpMTagStatic.onInitMonitor=[]}}"},{"code_id": "FPCookie", "js_code": "lpMTagConfig.FPC_VID_NAME='11390142-VID'; lpMTagConfig.FPC_VID='112710164807152'; lpMTagConfig.FPC_SKEY_NAME='11390142-SKEY'; lpMTagConfig.FPC_SKEY='862923234997248110';lpMTagConfig.FPC_CONT_NAME='HumanClickSiteContainerID_11390142'; lpMTagConfig.FPC_CONT='STANDALONE'"},{"code_id": "SYSTEM!firstpartycookies_compact.js", "js_code": "function lpFirstPartyCookieSupport(){this.testCookieName='lpFPCtest';this.date=new Date();this.curTime=this.date.getTime();this.newD=new Date(this.curTime+(1000*10));this.expirydate=lpMTagConfig.lpUseSessionCookies?null:this.newD.toGMTString();}lpFirstPartyCookieSupport.prototype.addFirstPartyCookies=function(){lpMTag.lpSetCookie(this.testCookieName,new String(this.curTime),this.expirydate);var value=lpMTag.lpGetCookie(this.testCookieName);if(value!=null&&value==new String(this.curTime)){lpMTag.lpDeleteCookie(this.testCookieName);var expirydate=lpMTagConfig.lpUseSessionCookies?null:365;lpMTag.lpSetCookie(lpMTagConfig.FPC_VID_NAME,lpMTagConfig.FPC_VID,expirydate,'/',lpMTagConfig.FPC_ParentDomain);lpMTag.lpSetCookie(lpMTagConfig.FPC_SKEY_NAME,lpMTagConfig.FPC_SKEY,null,'/',lpMTagConfig.FPC_ParentDomain);lpMTag.lpSetCookie(lpMTagConfig.FPC_CONT_NAME,lpMTagConfig.FPC_CONT,null,'/',lpMTagConfig.FPC_ParentDomain);}else{lpMTag.stopMTag=true;if(lpConnLib.DebugDisplay){lpMTagDebug.Display('FPC - can not set the test cookie name='+this.testCookieName+' value ='+value+' - STOPING THE MT','ERROR');}}};lpMTagConfig.firstPartyCookieSolution=new lpFirstPartyCookieSupport();lpMTagConfig.firstPartyCookieSolution.addFirstPartyCookies();"}]}});

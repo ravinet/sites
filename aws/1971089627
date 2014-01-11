@@ -1,0 +1,54 @@
+PHTTP176.32.100.36"ó
+ GET /js/amznUrchin.js HTTP/1.1
+Host: aws.amazon.com
+Connection: keep-alive
+Accept: */*
+vUser-Agent: Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/31.0.1650.63 Safari/537.36
+!Referer: http://aws.amazon.com/
+$Accept-Encoding: gzip,deflate,sdch
+!Accept-Language: en-US,en;q=0.8
+¥Cookie: x-wl-uid=1sXq9FIpLO9d4iVeqFQRlsK1MIDCHduCzm8yjecnSt6smrD5gcOKBNqlHBWHIinvdW/qXL6dQ3m4=; aws-session-id-time=2082758401l; aws-session-id=187-3581872-5464619
+
+*Ç
+HTTP/1.1 200 OK
+%Date: Thu, 09 Jan 2014 00:35:35 GMT
+Server: Server
+X-Frame-Options: SAMEORIGIN
+Nx-amz-id-2: wV1v/t+dlDykjrr9cXJyHTw9nXm63OgIj79Sx4P+HbnWlXFuozN2b6IGmva4Waxa
+$x-amz-request-id: E8BDC8407D477C00
+.Last-Modified: Thu, 11 Aug 2011 23:47:02 GMT
+*ETag: "330b46565d38e3dc28d6b5307fd5afb8"
+Accept-Ranges: bytes
+(Content-Type: application/x-javascript
+Content-Length: 970
+"Cache-Control: max-age=0, public
+(Expires: Thu, 09 Jan 2014 00:35:35 GMT
+Vary: User-Agent
+Ì
+var protocol = ('https:' == document.location.protocol ? 'https://' : 'http://');
+(function() {
+    var head = document.getElementsByTagName('HEAD').item(0);
+    var utm = document.createElement('script'); 
+    utm.type = 'text/javascript'; 
+    if (utm.readyState){  // Exploder
+        utm.onreadystatechange = function(){
+            if (utm.readyState == "loaded" ||
+                    utm.readyState == "complete"){
+                utm.onreadystatechange = null;
+                amznUrchinTracker();
+            }
+        };
+    } else {  // Proper browsers
+        utm.onload = function(){ amznUrchinTracker();};
+    }
+
+    utm.src = protocol + 'd36cz9buwru1tt.cloudfront.net/urchin.js'; 
+    head.appendChild(utm);
+})();
+
+function amznUrchinTracker() {
+	_udn="amazon.com";
+    // we give the client the opportunity to override 'page' by setting var __amznUtmPage
+	var page = (typeof __amznUtmPage == 'undefined') ?  null : __amznUtmPage;
+	urchinTracker(page);
+}

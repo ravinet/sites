@@ -1,0 +1,44 @@
+PHTTP173.192.220.64"Å
+ÈGET /site/5006?ret=html&phint=v1%3Dhttp%3A%2F%2Fwww.marriott.com%2Fdefault.mi&phint=tm_criteobk%3D1&phint=tm_otherbk%3D1&phint=__bk_t%3DMarriott%20Hotel%20Reservations%20%7C%20Find%20Your%20Perfect%20Hotel%20Room&phint=__bk_k%3Dhotel%20rooms%2C%20hotel%20reservations%2C%20hotel%20reservation%20%20&limit=6&r=14172035 HTTP/1.1
+Host: tags.bluekai.com
+Connection: keep-alive
+TAccept: text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8
+vUser-Agent: Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/31.0.1650.63 Safari/537.36
+-Referer: http://www.marriott.com/default.mi
+$Accept-Encoding: gzip,deflate,sdch
+!Accept-Language: en-US,en;q=0.8
+zCookie: bkdc=wdc; bklc=0; bkc=KJ0nRsHQmsfJpBes5YT/0sEQ8sJQter59zbUBsBQDaBAHrWgGdaMVOQRV3aX9eaCemT=; bku=sER99/DYpknmFqOD
+
+*Ë
+
+HTTP/1.1 200 OK
+%Date: Thu, 09 Jan 2014 01:59:34 GMT
+Server: Apache/2.2.24 (Unix)
+uP3P: CP="NOI DSP COR CUR ADMo DEVo PSAo PSDo OUR SAMo BUS UNI NAV", policyref="http://tags.bluekai.com/w3c/p3p.xml"
+Pragma: no-cache
+(Expires: Thu, 01 Dec 1994 16:00:00 GMT
+.Cache-Control: max-age=0, no-cache, no-store
+¶Set-Cookie: bkc=KJpgWtjQWv+CRZCMmC4W01e9694AhTVMXo+2D4Ahn9hy4QuxmsfJem5pzMWyfJtmAJz6RtOxDtHsTurMXDcZ+Dn89sOzsJ1=; expires=Tue, 08-Jul-2014 01:59:34 GMT; path=/; domain=.bluekai.com
+_Set-Cookie: bklc=52ce0286; expires=Tue, 08-Jul-2014 01:59:34 GMT; path=/; domain=.bluekai.com
+wSet-Cookie: bkp1=KJ0pjsJQbOBZRsCMmC4W0999WBLYCQ==; expires=Tue, 08-Jul-2014 01:59:34 GMT; path=/; domain=.bluekai.com
+fSet-Cookie: bku=sER99/DYpknmFqOD; expires=Tue, 08-Jul-2014 01:59:34 GMT; path=/; domain=.bluekai.com
+BK-Server: 786e
+Content-Length: 455
+Content-Type: text/html
+É
+<html>
+<head>
+<script type="text/javascript" >
+var bkObj = {  clearDiv: function(divId) {  try {  var divRef = document.getElementById(divId) ; divRef.innerHTML='' ;  }  catch (e) {}  }  };  setTimeout("bkObj.clearDiv('bk_pl_569')",1000); </script></head>
+<body>
+<div id="bk_exchange">
+
+</div>
+<div id="bk_pl_569">
+<img height="1" width="1" src="http://www.marriott.com/partner/setCookie.mi?bk_uuid=%2FqbyPwRN99O39z8u&colo=wdc">
+
+</div>
+
+
+</body>
+</html>

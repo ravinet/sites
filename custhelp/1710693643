@@ -1,0 +1,24 @@
+PHTTP205.251.243.105"§
+–GET /initialize/ahr0cdovl2xpbmsuynjpz2h0y292zs5jb20vc2vydmljzxmvcgxhewvyl2jjcglknjaymjayotg1mdaxp2jjdglkptiyntmwmzuwmzqwmde=?nocache=205627 HTTP/1.1
+,Host: static.plymedia.com.s3.amazonaws.com
+Connection: keep-alive
+vUser-Agent: Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/31.0.1650.63 Safari/537.36
+Accept: */*
+pReferer: http://www.oracle.com/us/solutions/customer-experience/oracle-customer-experience/overview/index.html
+$Accept-Encoding: gzip,deflate,sdch
+!Accept-Language: en-US,en;q=0.8
+
+*°
+HTTP/1.1 200 OK
+Nx-amz-id-2: TZJRT+V6aWP/WNQ/J7hnLlV5dWPSv5naw2eebbSY7KDyY/OX9N7OSbfYxUlvruHL
+$x-amz-request-id: 847561E50B75D405
+%Date: Thu, 09 Jan 2014 01:25:49 GMT
+.Cache-Control: public, max-age=5, s-maxage=5
+.Last-Modified: Thu, 09 Jan 2014 00:01:24 GMT
+*ETag: "57ecb8d24160ff4d56dc2057a5da00ed"
+Accept-Ranges: bytes
+'Content-Type: text/xml; charset=utf-8
+Content-Length: 131
+Server: AmazonS3
+…
+<Error>The process cannot access the file 'C:\PLYmedia\logs\staticInit.oracle' because it is being used by another process.</Error>

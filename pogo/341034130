@@ -1,0 +1,19 @@
+PHTTP64.215.255.48"×
+#GET /red/pixel?pid=11112 HTTP/1.1
+Host: addthis.mathtag.com
+Connection: keep-alive
+Accept: image/webp,*/*;q=0.8
+vUser-Agent: Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/31.0.1650.63 Safari/537.36
+7Referer: http://ct1.addthis.com/static/r07/sh142.html
+$Accept-Encoding: gzip,deflate,sdch
+!Accept-Language: en-US,en;q=0.8
+[Cookie: uuid=52d018ae-8ab8-b8ea-0dbf-55d55fb9b912; HRL8=CT-USR; mt_mop=; mt_misc=mt_bt:1/
+
+*‚
+HTTP/1.1 302 Found
+%Date: Fri, 10 Jan 2014 15:58:39 GMT
+.Cache-Control: max-age=0, no-cache, no-store
+Pragma: no-cache
+fLocation: http://su.addthis.com/red/usync?pid=11112&puid=52d018ae-8ab8-b8ea-0dbf-55d55fb9b912&ssrc=2
+Connection: close
+

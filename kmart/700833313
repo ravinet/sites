@@ -1,0 +1,28 @@
+PHTTP
+23.0.63.23"ö
+NGET /segments/kmart-site-assets.js?callback=cq5DataLoaded&shcAJAX=1 HTTP/1.1
+Host: nav.shld.net
+Connection: keep-alive
+Accept: */*
+vUser-Agent: Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/31.0.1650.63 Safari/537.36
+ Referer: http://www.kmart.com/
+$Accept-Encoding: gzip,deflate,sdch
+!Accept-Language: en-US,en;q=0.8
+
+*ˆ
+HTTP/1.1 200 OK
+Server: nginx
+.Content-Type: text/javascript; charset=utf-8
+Status: 200 OK
+#X-UA-Compatible: IE=Edge,chrome=1
+*ETag: "5a0a37e1c6880df0960f367ffcb95d26"
+0X-Request-Id: 366116a0d009e77410de1f22fc8235ca
+X-Runtime: 0.020200
+X-Rack-Cache: miss
+Content-Length: 433
+8Cache-Control: private, must-revalidate, max-age=81885
+(Expires: Thu, 09 Jan 2014 23:56:56 GMT
+%Date: Thu, 09 Jan 2014 01:12:11 GMT
+Connection: keep-alive
+³
+cq5DataLoaded({"domain":null,"name":"Kmart Site Assets","pieces":[{"behavior":"","brand":"kmart","position":"asset","type":"tree","menu_items":[{"child_menu_items":[{"child_menu_items":[{"url":"ue/home/autofill-distributer.v-101-z","name":"Prod"}],"name":"js"},{"child_menu_items":[{"url":"ue/home/k-af-prod.v-3.2.15-z","name":"Prod"}],"name":"css"}],"name":"AutoFill"}],"_slugs":"kmart-asset-tree"}],"_slugs":"kmart-site-assets"});

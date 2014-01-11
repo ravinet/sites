@@ -1,0 +1,17 @@
+PHTTP23.6.22.140"´
+:GET /ocom/resources/sitestudio/ssajax/ssajax.js HTTP/1.1
+Host: www.oracle.com
+Connection: keep-alive
+Accept: */*
+vUser-Agent: Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/31.0.1650.63 Safari/537.36
+pReferer: http://www.oracle.com/us/solutions/customer-experience/oracle-customer-experience/overview/index.html
+$Accept-Encoding: gzip,deflate,sdch
+!Accept-Language: en-US,en;q=0.8
+
+*~
+HTTP/1.1 200 OK
+Server: BigIP
+Content-Length: 0
+%Date: Thu, 09 Jan 2014 01:25:46 GMT
+Connection: keep-alive
+

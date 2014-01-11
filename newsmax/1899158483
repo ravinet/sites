@@ -1,0 +1,71 @@
+PHTTP64.135.21.3"¥
+'GET /js/SponsoredHeadline.js HTTP/1.1
+Host: www.newsmax.com
+Connection: keep-alive
+Accept: */*
+vUser-Agent: Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/31.0.1650.63 Safari/537.36
+"Referer: http://www.newsmax.com/
+$Accept-Encoding: gzip,deflate,sdch
+!Accept-Language: en-US,en;q=0.8
+OCookie: CMSPreferredCulture=en-US; ASP.NET_SessionId=yt4ckeewnwjrcw3z4yqjxmu2
+
+*ì
+HTTP/1.1 200 OK
+Cache-Control: public
+(Content-Type: application/x-javascript
+.Last-Modified: Thu, 13 Dec 2012 17:45:06 GMT
+Accept-Ranges: bytes
+ETag: "93b45c9659d9cd1:0"
+Server: Microsoft-IIS/7.5
+X-Powered-By: ASP.NET
+%Date: Thu, 09 Jan 2014 01:37:26 GMT
+Content-Length: 1591
+¹
+ï»¿function LoadSponsoredHeadlines(arrHL) {
+    var j = 0;
+    var count = 0;
+  
+    // Assign randoms.
+    for (var i = 0; i < arrHL.Headlines.length; i++) {
+        var intRandNum = Math.floor(Math.random() * 30);
+        arrHL.Headlines[i].RandNum = intRandNum;
+    }
+    arrHL.Headlines.sort(NumSort);
+    var dvSponsorTop = jQuery('div.sponsors[data-count]');
+   
+    if (dvSponsorTop.length > 0) {
+        for (var i = 0; i < dvSponsorTop.length; i++) {
+            try {
+                count += parseInt(dvSponsorTop[i].attributes["data-count"].value);
+            }
+            catch (ex) { count += 5; }
+            for (; (j < count) && (arrHL.Headlines.length > j); j++) {
+                dvSponsorTop[i].innerHTML += "<li><a class=\"sponsors_link\" onClick='javascript:pageTracker._trackPageview(\"/ext_jump/sponsors/" + arrHL.Headlines[j].SponsorName + "\");' href=\"" + arrHL.Headlines[j].URL + "\" >" + arrHL.Headlines[j].Headline + "</a></li>";
+            }
+        }
+    }
+    function NumSort(a, b) {
+        return b.RandNum - a.RandNum;  // descending
+    }
+}
+
+function AjaxFailed(result) {
+    if (result.status == 200) {
+        var o = eval('(' + result.responseText + ')');
+        LoadSponsoredHeadlines(o);
+    }
+}
+
+function LoadArticles() {
+    jQuery.ajax({
+        url: '/cmspages/newsmax/handlers/sponsoredheadline.ashx',
+        success: function(result) {
+            LoadSponsoredHeadlines(result);
+        },
+        error: AjaxFailed
+    });
+}
+
+jQuery(document).ready(function($) {
+    LoadArticles();
+});

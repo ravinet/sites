@@ -1,0 +1,29 @@
+ªHTTPS
+23.0.63.23"Ç
+íGET /shccas/shcLogin?sourceSiteId=null&service=https://www.sears.com:443/shc/s/CASSEOLogon?storeId=10153%26cas_redirection=true%26CAS%5fSERVICE%5fKEY=http%3A%2F%2Fc%252eshld%252enet%2F12302200%2Fimg%252Ficons%252Fno%255fimage%252ejpg&userAgent=Mozilla%2F5.0%20(X11%3B%20Linux%20x86_64)%20AppleWebKit%2F537.36%20(KHTML%2C%20like%20Gecko)%20Chrome%2F31.0.1650.63%20Safari%2F537.36&gateway=true HTTP/1.1
+Host: sso.shld.net
+Connection: keep-alive
+TAccept: text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8
+vUser-Agent: Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/31.0.1650.63 Safari/537.36
+ Referer: http://www.sears.com/
+$Accept-Encoding: gzip,deflate,sdch
+!Accept-Language: en-US,en;q=0.8
+
+*ç
+ HTTP/1.1 302 Moved Temporarily
+Server: Apache
+hX-Powered-By: Servlet 2.4; JBoss-4.3.0.GA (build: SVNTag=JBPAPP_4_3_0_GA date=200801031548)/Tomcat-5.5
+Pragma: no-cache
+(Expires: Thu, 01 Jan 1970 00:00:00 GMT
+Cache-Control: no-cache
+Cache-Control: no-store
+=Location: http://c.shld.net/12302200/img/icons/no_image.jpg
+Content-Language: en-US
+Content-Length: 0
+,Content-Type: text/html;charset=ISO-8859-1
+Vary: Accept-Encoding
+%Date: Thu, 09 Jan 2014 00:42:37 GMT
+Connection: keep-alive
+SSet-Cookie: JSESSIONID=7F3454F0F7A0D05697CC0E2F6DAE046A.cas1app01; Path=/; Secure
+)Set-Cookie: CASDOM=10153AATTAATThttps:/
+

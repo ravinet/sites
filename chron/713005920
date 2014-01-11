@@ -1,0 +1,131 @@
+PHTTP66.179.73.25"Â
+LGET /app/localedgemedia/resources/css/website-analysis-common.css HTTP/1.1
+Host: static.localedge.com
+Connection: keep-alive
+Accept: text/css,*/*;q=0.1
+vUser-Agent: Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/31.0.1650.63 Safari/537.36
+WReferer: http://www.localedgemedia.com/website-analysis-partner-simple?referrer=chron
+$Accept-Encoding: gzip,deflate,sdch
+!Accept-Language: en-US,en;q=0.8
+
+*’
+HTTP/1.1 200 OK
+%Date: Fri, 10 Jan 2014 16:04:19 GMT
+$Server: Apache/2.2.26 (Unix) DAV/2
+.Last-Modified: Thu, 02 Jan 2014 21:56:14 GMT
+"ETag: "30004d-70a-4ef03dcba9b80"
+Accept-Ranges: bytes
+Content-Length: 1802
+Cache-Control: max-age=86400
+(Expires: Sat, 11 Jan 2014 16:04:19 GMT
+Keep-Alive: timeout=5, max=34
+Connection: Keep-Alive
+Content-Type: text/css
+Œ
+/* CSS RESET */
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, font, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	outline: 0;
+	font-size: 100%;
+	vertical-align: baseline;
+	background: transparent;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+
+/* remember to define focus styles! */
+:focus {
+	outline: 0;
+}
+
+/* remember to highlight inserts somehow! */
+ins {
+	text-decoration: none;
+}
+del {
+	text-decoration: line-through;
+}
+
+/* tables still need 'cellspacing="0"' in the markup */
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+/* END CSS RESET */
+
+.SE-logos {
+	padding-top:8px;
+	padding-bottom:5px;
+	text-align: center;
+}
+
+#form-contents {
+	font-size: 10pt;
+	color: #737373;
+}
+
+#form-contents tr td {
+	padding-bottom:8px;
+	padding:2px;
+	vertical-align: top;
+}
+
+.row-footnote {
+	text-align: right;
+	font-size: 7pt;
+}
+
+input[type="submit"] {
+	width: 260px;
+}
+
+.submit-button {
+	text-align: center;
+}
+
+.error {
+	font-size: 7pt;
+	color: red;
+	text-align: left;
+}
+
+.thank-you {
+	border: 1px solid #CDCDCD;
+	text-align: center;
+	padding-top: 30px;
+	color: #737373;
+	margin: 0px 15px 0px 15px;
+	padding-bottom: 5px;
+}
+
+.thank-you-submitted {
+	text-align: center;
+	padding-top: 30px;
+	color: #737373;
+	padding-bottom: 5px;
+	margin: 0px 15px 0px 15px;
+	font-size: 10pt;
+}

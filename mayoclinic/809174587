@@ -1,0 +1,680 @@
+PHTTP129.176.217.220"”
++GET /styles/js/gbs/plugins-v2.js HTTP/1.1
+Host: www.mayoclinic.org
+Connection: keep-alive
+Accept: */*
+vUser-Agent: Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/31.0.1650.63 Safari/537.36
+%Referer: http://www.mayoclinic.org/
+$Accept-Encoding: gzip,deflate,sdch
+!Accept-Language: en-US,en;q=0.8
+4Cookie: ASP.NET_SessionId=utneflmiwti1lzdwzi1m1rsm
+
+*§¿
+HTTP/1.1 200 OK
+Cache-Control: max-age=604800
+(Content-Type: application/x-javascript
+.Last-Modified: Fri, 03 Jan 2014 19:27:24 GMT
+Accept-Ranges: bytes
+ETag: "953c9ed4b98cf1:0"
+%Date: Thu, 09 Jan 2014 01:39:31 GMT
+Content-Length: 24223
+¡½
+/**
+* 
+* @author Daniel J. Post <geek@danieljpost.info>
+*
+*/
+;
+// one variable to contain a lot of v2 behaviors - DJP
+var MayoApp = (function () {
+    "use strict";
+    var uid = ['0', '0', '0'],
+    // $isMobile = $("#isMobile"), // only works if plugins-v2.js is at end of document.
+    MayoApp = {
+        checkMobile: function () {
+            MayoApp.isMobile = $("#isMobile").is(':visible');
+            return MayoApp.isMobile;
+        },
+        isMobile: false,
+        isModern: $.fn.jquery >= "2.0.0",
+        resizeTimer: false,
+        moveAuto: function () {
+            var $auto = $('.auto');
+            var $autoMobile = $('.auto-mobile');
+            if (MayoApp.isMobile) {
+                $auto.each(function (i, j) { $(j).contents().appendTo($autoMobile.eq(i)); j.innerHTML = ''; });
+            } else {
+                $autoMobile.each(function (i, j) { $(j).contents().appendTo($auto.eq(i)); j.innerHTML = ''; });
+            }
+        },
+        resizeMenus: function () {
+            MayoApp.updateGlobalNav();
+            if (MayoApp.isMobile) {
+                // use mobile behaviors
+                $menu.addClass('topnav-v2-mobile').removeClass('topnav-v2');
+                // $menu.hide();
+                $holder.hide();
+            } else {
+                // use desktop behaviors
+                if ($menu.is(':hidden')) {
+                    $menu.removeAttr('style');
+                }
+                if ($holder.is(':hidden')) {
+                    $holder.removeAttr('style');
+                }
+                $menu.addClass('topnav-v2').removeClass('topnav-v2-mobile');
+            }
+        },
+        uniqid: function () {
+            var index = uid.length,
+            digit;
+            while (index) {
+                index--;
+                digit = uid[index].charCodeAt(0);
+                if (digit === 57 /*'9'*/) {
+                    uid[index] = 'A';
+                    return uid.join('');
+                }
+                if (digit === 90  /*'Z'*/) {
+                    uid[index] = '0';
+                } else {
+                    uid[index] = String.fromCharCode(digit + 1);
+                    return uid.join('');
+                }
+            }
+            uid.unshift('0');
+            return uid.join('');
+        },
+        updateGlobalNav: function () {
+            // var $topnav = ('undefined' === typeof $topnav)?$('#header,#headerMobile'):$topnav;
+            var $topnav = $('#mayo-header,#headerMobile');
+            if (MayoApp.checkMobile()) {
+                // mobile view and behavior.
+                if ('mayo-header' === $topnav.attr('id')) {
+                    $topnav.attr('id', 'headerMobile');
+                }
+                // always hide global navigation by default
+                $topnav.find('.nav-both').hide();
+            } else {
+                // desktop view and behavior.
+                if ('headerMobile' === $topnav.attr('id')) {
+                    $topnav.attr('id', 'mayo-header');
+                }
+                // override styles added previously by jQuery
+                $topnav.find('*').removeAttr('style');
+            }
+        }
+    };
+    return MayoApp;
+})();
+
+// Avoid `console` errors in browsers that lack a console.
+(function () {
+    "use strict";
+    var method, noop = function () { }, methods = [
+        'assert', 'clear', 'count', 'debug', 'dir', 'dirxml', 'error',
+        'exception', 'group', 'groupCollapsed', 'groupEnd', 'info', 'log',
+        'markTimeline', 'profile', 'profileEnd', 'table', 'time', 'timeEnd',
+        'timeStamp', 'trace', 'warn'
+    ], length = methods.length, console = (window.console = window.console || {});
+    while (length--) {
+        method = methods[length];
+        // Only stub undefined methods.
+        if (!console[method]) {
+            console[method] = noop;
+        }
+    }
+} ());
+
+// FS-251 See Also List with "show more" links
+(function ($) {
+    "use strict";
+    var Mayo_ = $.show_more = function (el, options) {
+        Mayo_.options = $.extend({}, Mayo_.defaults, options);
+        el.each(Mayo_.init);
+    };
+    $.extend(Mayo_, {
+        defaults: {
+            n: 7,
+            more: '.more',
+            less: '.less',
+            on: 'on',
+            off: 'off',
+            evtNs: 'click.seealso'
+        },
+        init: function (idx, el) {
+            var o = Mayo_.options,
+            $t = $(el),
+            $more = $t.find(o.more).unbind('click').addClass(o.on),
+            $less = $t.find(o.less).unbind('click');
+            $less.on(o.evtNs, function (evt) {
+                // $t.find(o.more).show();
+                // $t.find(o.less).hide();
+                $t.find(o.more).addClass(o.on);
+                $t.find(o.less).removeClass(o.on);
+                evt.preventDefault();
+                evt.stopPropagation();
+                Mayo_.showLess($t, o);
+            });
+            $more.on(o.evtNs, function (evt) {
+                // $t.find(o.more).hide();
+                // $t.find(o.less).show();
+                $t.find(o.more).removeClass(o.on);
+                $t.find(o.less).addClass(o.on); ;
+                evt.preventDefault();
+                evt.stopPropagation();
+                Mayo_.showMore($t, o);
+            });
+            Mayo_.showLess($t, o);
+        },
+        showLess: function (el, options) {
+            var o = $.extend({}, Mayo_.options, options),
+            n = $(el).data('show_n') || o.n,
+            $li = $(el).find('li');
+            if ($li.length <= n) {
+                $li.removeClass(o.off);
+                el.find([o.more, o.less].join(',')).removeClass(o.on);
+            } else {
+                $li.each(function (i) {
+                    // if (i<n) // was show selected elements - hidden by default
+                    //     $(this).show();
+                    if (i >= n) { // now hide selected elements - shown by default
+                        $(this).addClass(o.off);
+                    } else {
+                        // $(this).removeAttr('style');
+                        $(this).removeClass(o.off);
+                    }
+                });
+                el.find(o.more).addClass(o.on);
+            }
+        },
+        showMore: function (el) {
+            var o = Mayo_.options;
+            // $(el).find('li').show();
+            $(el).find('li').removeClass(o.off);
+        },
+        open: function (el) {
+            Mayo_.init(el);
+        }
+    });
+    $.fn.show_more = function (options) {
+        var $this = $(this);
+        Mayo_.options = $.extend({}, Mayo_.defaults, options);
+        $this.each(Mayo_.init);
+    };
+})(jQuery);
+
+// FS-247 See Also List with "toggle-open" links
+(function ($) {
+    "use strict";
+    var Mayo_ = $.toggle_open = function (el, options) {
+        Mayo_.options = $.extend({}, Mayo_.defaults, options);
+        el.each(Mayo_.init);
+    };
+    $.extend(Mayo_, {
+        defaults: {
+            open: 'open',
+            control: 'a.toggle-open',
+            evtNs: 'click.toggle_open',
+            fx: function (el, cls) {
+                el.toggleClass(cls);
+            }
+        },
+        init: function (idx, el) {
+            var o = Mayo_.options,
+            $t = $(el),
+            $control = $t.find(o.control)
+            .unbind('click')
+            .on(o.evtNs, function (evt) {
+                o.fx($t, o.open);
+                evt.stopPropagation();
+                evt.preventDefault();
+                return false;
+            });
+        }
+    });
+    $.fn.toggle_open = function (options) {
+        var $this = $(this);
+        Mayo_.options = $.extend({}, Mayo_.defaults, options);
+        $this.each(Mayo_.init);
+    };
+})(jQuery);
+
+// FS-210
+(function ($) {
+    "use strict";
+    var Mayo_ = $.slide_show = function (el, options) {
+        Mayo_.options = $.extend({}, Mayo_.defaults, options);
+        el.each(Mayo_.init);
+    };
+
+    $.extend(Mayo_, {
+        defaults: {
+            img: 'img',
+            thmb: '',
+            all: 'a',
+            fIn: 'fadeIn',
+            fOut: 'fadeOut',
+            finDur: 500,
+            foutDur: 500,
+            fEase: 'swing',
+            sDur: 333,
+            thumbWidth: 140, // pixels width of each thumbnail <li> in scroll bar
+            gutterWidth: 24, // gutter between <li> in scroll bar
+            prev: 'a.slide-prev',
+            next: 'a.slide-next',
+            cntr: 'span.slide-counter',
+            current: 'li.on',
+            slide: '.slide',
+            scroll: '.scroll',
+            scrollPrev: 'a.scroll-prev',
+            scrollNext: 'a.scroll-next',
+            evtNs: 'click.slide_show',
+            st: '.slide-title',
+            sc: '.slide-caption',
+            hidden: 'hidden',
+            on: 'on',
+            off: 'off'
+        },
+        timers: [],
+        disableClick: function ($el) {
+            $el.data('disableClick', true);
+        },
+        enableClick: function ($el) {
+            $el.data('disableClick', false);
+        },
+        timedEnableClick: function ($el) {
+            var $cmd = '$.slide_show.enableClick($("#' + Mayo_.uniqueId($el) + '"))';
+            Mayo_.timers[Mayo_.timers.length] = setTimeout($cmd, Mayo_.options.finDur + Mayo_.options.foutDur + 100);
+        },
+        init: function (idx, el) {
+            var o = Mayo_.options,
+            $el = $(el),
+            $slide = $el.find(o.slide),
+            $scroll = $el.find(o.scroll),
+            $next = $el.find(o.next),
+            $prev = $el.find(o.prev),
+            $snext = $el.find(o.scrollNext),
+            $sprev = $el.find(o.scrollPrev),
+            $lis = $scroll.find('li'),
+            $anchors = $lis.find('a'),
+            $current = $lis.index($lis.find(o.current));
+            if ($current === -1) {
+                $current = 0;
+                $lis.eq(0).addClass(o.on);
+                $prev.addClass(o.off);
+                $sprev.addClass(o.off);
+            }
+            $el.data('current', $current);
+            // activate the links.
+            $el.find(o.all).unbind('click');
+            $next.on(o.evtNs, function (evt) {
+                return Mayo_.next($el, evt);
+            });
+            $prev.on(o.evtNs, function (evt) {
+                return Mayo_.prev($el, evt);
+            });
+            $snext.on(o.evtNs, function (evt) {
+                return Mayo_.snext($el, evt);
+            });
+            $sprev.on(o.evtNs, function (evt) {
+                return Mayo_.sprev($el, evt);
+            });
+            $anchors.on(o.evtNs, function (evt) {
+                return Mayo_.allowed($el, evt) && Mayo_.replace($el, $(this));
+            });
+            Mayo_.initScrolling($el, $lis.size());
+            // force correct proportions of image container on load
+            var $img = $slide.find('img');
+            $('<img />', {
+                src: $img.attr('src')
+            })
+            .load(function (evt) {
+                var img = evt.currentTarget;
+                if (img.height) {
+                    var ratio = img.height / img.width;
+                    var displayHeight = $el.width() * ratio;
+                    $img.height(displayHeight).closest('div').height(displayHeight);
+                }
+            });
+        },
+        initScrolling: function ($el, count) {
+            var o = Mayo_.options,
+            pages = 0,
+            pagesize = 3,
+            colSize = $el.attr('class').match(/\d+/) || 0;
+            $el.data('curpage', 0);
+            $el.data('count', count);
+            if (colSize == 6) {
+                pagesize = 3;
+            } else if (colSize == 8) {
+                pagesize = 4;
+            } else if (colSize < 6) {
+                // undefined in spec... DJP 20130705
+                pagesize = 3; // assumed.
+            }
+            pages = count / pagesize;
+            if (pages < 1) {
+                $el.find(o.scrollNext).hide();
+                $el.find(o.scrollPrev).hide();
+            } else {
+                pages = Math.ceil(pages);
+            }
+            $el.data('pages', pages)
+            .data('pagesize', pagesize)
+            .data('pagewidth', o.thumbWidth * pagesize + o.gutterWidth * pagesize);
+            Mayo_.updateNav($el);
+        },
+        go: function ($el, evt, add) {
+            evt.stopPropagation();
+            evt.preventDefault();
+            var o = Mayo_.options,
+            $li = $el.find(o.current),
+            $ul = $li.parent(),
+            $lis = $ul.find('li'),
+            $n = $lis.index($li) + add;
+            if ($n >= $lis.size()) {
+                $n = 0;
+            }
+            return $lis.eq($n).find('a').click();
+        },
+        replace: function ($el, $a) {
+            Mayo_.disableClick($el);
+            $el.data('lastclick', 'nav');
+            var o = Mayo_.options,
+            $s = $el.find('.slide'),
+            $li = $a.closest('li'),
+            $ul = $li.parent(),
+            $img = $s.find(o.img),
+            $lis = $ul.find('li'),
+            title = $a.data('title'),
+            caption = $a.data('caption'),
+            ratio = 1,
+            $div = $img.closest('div').addClass('loading'),
+            $overlay = $div.find('.overlay').show(),
+            elWidth = $el.width();
+            $li.addClass('on').siblings().removeClass('on');
+            if ($img.get(0).height) {
+                ratio = ($img.get(0).height / $img.get(0).width) || 1;
+                $div.css('height', elWidth * ratio);
+            }
+            $s.find(o.st).html(title);
+            $s.find(o.sc).html(caption);
+            $.when(
+                $('<img />', {
+                    src: $a.attr('href'),
+                    alt: title
+                }).load().promise(),
+                $img.addClass('faded').delay(o.foutDur).promise()
+                ).done(function ($ni, $oi) {
+                    var oiWidth = $oi.get(0).width || 1,
+                oiHeight = $oi.get(0).height || 1,
+                niWidth = $ni.get(0).width || 1,
+                niHeight = $ni.get(0).height || 1,
+                oratio = oiHeight / oiWidth || 1,
+                nratio = niHeight / niWidth || 1,
+                newHeight = Math.floor(elWidth * nratio);
+                    $ni.height(oiHeight).appendTo($div);
+                    $oi.animate({
+                        height: newHeight
+                    }, {
+                        duration: o.finDur
+                    });
+                    $ni.animate({
+                        height: newHeight
+                    }, {
+                        duration: o.finDur
+                    });
+                    $div.removeClass('loading')
+                .animate({
+                    height: newHeight
+                }, {
+                    duration: o.finDur,
+                    complete: function () {
+                        $overlay.hide();
+                        $oi.remove();
+                    }
+                });
+                });
+            $el.data('current', $lis.index($li));
+            return Mayo_.updateNav($el);
+        },
+        scroll: function (l, i) {
+            l.data('lastclick', 'scroll');
+            l.data('curpage', l.data('curpage') + i);
+            return Mayo_.updateNav(l);
+        },
+        updateNav: function ($el) {
+            var o = Mayo_.options,
+            $lis = $el.find('li'),
+            $li = $lis.filter('.' + o.on),
+            n = $lis.size(),
+            i = $lis.index($li),
+            $prev = $el.find(o.prev),
+            $next = $el.find(o.next),
+            $both = $el.find(o.prev).add(o.next),
+            $sprev = $el.find(o.scrollPrev),
+            $snext = $el.find(o.scrollNext),
+            $scroller = $el.find('.scroll').find('ul'),
+            nextX,
+            cntrhtml;
+            // update N of M
+            cntrhtml = parseInt(1 + $el.data('current'), 10) + ' of ' + $el.data('count');
+            $el.find(o.cntr).html(cntrhtml);
+            // handle "next", "prev"
+            if (n === 0) {
+                $both.addClass(o.hidden);
+            } else if (i === 0 || 0 == $el.data('current')) {
+                // disable Prev if on first li
+                $prev.addClass(o.off);
+                $next.removeClass(o.off);
+            } else if (i + 1 === n) {
+                // disable Next if on last li
+                $prev.removeClass(o.off);
+                $next.addClass(o.off);
+            } else {
+                // enable Prev and Next
+                $prev.removeClass(o.off);
+                $next.removeClass(o.off);
+            }
+            // update scrollbar status if needed.
+            if ('nav' === $el.data('lastclick')) {
+                // we might need to scroll. update.
+                var crnt = $el.data('current') || 0,
+                newpage = Math.floor(parseInt($el.data('current'), 10) / $el.data('pagesize'));
+                $el.data('curpage', newpage);
+            }
+            // scroll to correct frame.
+            nextX = $el.data('pagewidth') * $el.data('curpage');
+            $scroller.animate({
+                left: -nextX
+            }, o.sDur);
+            // handle "scrollnext", "scrollprev"
+
+            if (n === 0) {
+                $el.find(o.scrollPrev).add(o.scrollNext).addClass(o.hidden);
+            } else if ($el.data('curpage') === 0) {
+                $el.find(o.scrollPrev).addClass(o.off);
+                $el.find(o.scrollNext).removeClass(o.off);
+            } else if ($el.data('curpage') + 1 === $el.data('pages')) {
+                $el.find(o.scrollPrev).removeClass(o.off);
+                $el.find(o.scrollNext).addClass(o.off);
+            } else {
+                $el.find(o.scrollPrev).add(o.scrollNext).removeClass(o.off);
+            }
+            Mayo_.timedEnableClick($el);
+            return false;
+        },
+        allowed: function (el, evt) {
+            return !$(el).data('disableClick') && !$(evt.currentTarget).hasClass(Mayo_.options.off);
+        },
+        prev: function (el, evt) {
+            return Mayo_.allowed(el, evt) && Mayo_.go(el, evt, -1);
+        },
+        next: function (el, evt) {
+            return Mayo_.allowed(el, evt) && Mayo_.go(el, evt, 1);
+        },
+        sprev: function (el, evt) {
+            return Mayo_.allowed(el, evt) && Mayo_.scroll(el, -1);
+        },
+        snext: function (el, evt) {
+            return Mayo_.allowed(el, evt) && Mayo_.scroll(el, 1);
+        },
+        uniqueId: function ($el) {
+            if (!$el.attr('id')) {
+                $el.attr('id', 'Mayo_id_' + MayoApp.uniqid());
+            }
+            return $el.attr('id');
+        }
+    });
+    $.fn.slide_show = function (options) {
+        Mayo_.options = $.extend({}, Mayo_.defaults, options);
+        $(this).each(Mayo_.init);
+    };
+})(jQuery);
+
+// FS-211
+(function ($) {
+    "use strict";
+    var Mayo_ = $.slide_show,
+    Mayo_e_ = $.slide_show_enlarge = function (el, options) {
+        Mayo_.options = $.extend({}, Mayo_.defaults, Mayo_e_.defaults, options);
+        el.each(Mayo_e_.init);
+    };
+
+    $.extend(Mayo_e_, {
+        defaults: {
+            el: '.enlarge-link',
+            cl: '.close-link'
+        },
+        init_e: function (idx, el) {
+            var o = Mayo_.options,
+            $el = $(el),
+            $s = $el.find(o.et);
+            Mayo_.init(idx, $el);
+            $el.find(o.el).on('click.expand', function (evt) {
+                evt.stopPropagation();
+                evt.preventDefault();
+                var oldClasses = [];
+                $.each('right,left,cols3,cols2,cols4'.split(','), function (i, c) {
+                    if ($el.hasClass(c)) {
+                        $el.removeClass(c);
+                        oldClasses.push(c);
+                    }
+                });
+                $el.data('oldClasses', oldClasses);
+                $el.removeClass('enlarge-image').addClass('enlarged');
+                $el.find(o.scroll).find('a').eq(0).trigger(o.evtNs);
+            });
+            $el.find(o.cl).on('click.close', function (evt) {
+                evt.stopPropagation();
+                evt.preventDefault();
+                $.each($el.data('oldClasses'), function (i, c) {
+                    $el.addClass(c);
+                });
+                $el.addClass('enlarge-image').removeClass('enlarged');
+            });
+        }
+    });
+
+    $.fn.slide_show_enlarge = function (options) {
+        Mayo_.options = $.extend({}, Mayo_.defaults, Mayo_e_.defaults, options);
+        $(this).each(Mayo_e_.init_e);
+    };
+})(jQuery);
+
+// custom plugin for FS-227 News Ticker
+(function ($) {
+    "use strict";
+    var Mayo_ = $.newsticker = function () {
+        Mayo_.open.apply(this, arguments);
+    },
+    NT = {
+        defaults: {
+            duration: 10000
+        },
+        cache: [],
+        init: function (idx, el) {
+            var $el = $(el);
+            $el.addClass('initialized');
+            $el.addClass('newstickeridx' + idx);
+            $el.unbind('mouseenter');
+            $el.on('mouseenter.mayoApp', Mayo_.pause);
+            $el.on('mouseleave.mayoApp', Mayo_.resume);
+            var rando = MayoApp.uniqid();
+            $el.data('timerId', rando);
+            Mayo_.cache[Mayo_.cache.length] = {
+                rdo: rando,
+                el: $el,
+                timer: null,
+                duration: $.newsticker.options.duration
+            };
+            Mayo_.setTimer($el);
+        },
+        pause: function (evt) {
+            Mayo_.clearTimer($(evt.currentTarget));
+        },
+        resume: function (evt) {
+            Mayo_.setTimer($(evt.currentTarget));
+        },
+        next: function ($el) {
+            var a = $el.find('ul.news-ticker-display'),
+            n = a.find('.show').index(),
+            collection = a.find('li');
+            if (MayoApp.isMobile) {
+                collection.removeClass('show');
+            } else {
+                if (MayoApp.isModern) {
+                    collection.eq(n++).removeClass('show');
+                    collection.eq(n % collection.length).addClass('show');
+                } else {
+                    collection.eq(n++).removeClass('show').animate({ opacity: 0 }, 1500);
+                    collection.eq(n % collection.length).addClass('show').animate({ opacity: 1 }, 1500);
+                }
+            }
+            Mayo_.setTimer($el);
+        },
+        rotate: function (rdo) {
+            var $el = false;
+            $.each(Mayo_.cache, function () {
+                if (rdo === this.rdo) {
+                    $el = this.el;
+                }
+            });
+            $el && Mayo_.next($el);
+        },
+        fetchTimer: function ($el) {
+            var rdo = $el.data('timerId');
+            var c = null;
+            $.each(Mayo_.cache, function (i) {
+                if (rdo === this.rdo) {
+                    this.modified = true;
+                    c = i;
+                    return false;
+                }
+            });
+            return Mayo_.cache[c];
+        },
+        clearTimer: function ($el) {
+            var vich = this.fetchTimer($el);
+            clearTimeout(vich.timer);
+        },
+        setTimer: function ($el) {
+            var vich = this.fetchTimer($el);
+            clearTimeout(vich.timer);
+            vich.timer = setTimeout('$.newsticker.rotate("' + vich.rdo + '")', vich.duration);
+        },
+        open: function (el) {
+            Mayo_.init(el);
+        }
+    };
+    $.extend(Mayo_, NT);
+
+    $.fn.newsticker = function (options) {
+        var $this = $(this);
+        Mayo_.options = $.extend({}, Mayo_.defaults, options);
+        $this.each(Mayo_.init);
+    };
+
+})(jQuery);
+

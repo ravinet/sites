@@ -1,0 +1,26 @@
+ªHTTPS66.220.152.19"ç	
+‡GET /fql?callback=FB.__globalCallbacks.f2a278b15c&method=get&pretty=0&q=%7B%22index_link_stat_url%22%3A%22select%20url%2Ccommentsbox_count%20from%20link_stat%20where%20url%20in%20(%5C%22http%3A%2F%2Fnfl.com%2Fgoto%3Fid%3D0ap2000000310887%5C%22%2C%5C%22http%3A%2F%2Fnfl.com%2Fgoto%3Fid%3D0ap2000000310751%5C%22%2C%5C%22http%3A%2F%2Fnfl.com%2Fgoto%3Fid%3D0ap2000000310899%5C%22%2C%5C%22http%3A%2F%2Fnfl.com%2Fgoto%3Fid%3D0ap2000000310871%5C%22%2C%5C%22http%3A%2F%2Fnfl.com%2Fgoto%3Fid%3D0ap2000000310716%5C%22%2C%5C%22http%3A%2F%2Fnfl.com%2Fgoto%3Fid%3D0ap2000000310705%5C%22%2C%5C%22http%3A%2F%2Fnfl.com%2Fgoto%3Fid%3D0ap2000000310841%5C%22%2C%5C%22http%3A%2F%2Fnfl.com%2Fgoto%3Fid%3D0ap2000000310669%5C%22%2C%5C%22http%3A%2F%2Fnfl.com%2Fgoto%3Fid%3D0ap2000000310519%5C%22%2C%5C%22http%3A%2F%2Fnfl.com%2Fgoto%3Fid%3D0ap2000000310660%5C%22)%22%7D&sdk=joey HTTP/1.1
+Host: graph.facebook.com
+Connection: keep-alive
+Accept: */*
+vUser-Agent: Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/31.0.1650.63 Safari/537.36
+Referer: http://www.nfl.com/
+$Accept-Encoding: gzip,deflate,sdch
+!Accept-Language: en-US,en;q=0.8
+
+*£
+
+HTTP/1.1 200 OK
+ Access-Control-Allow-Origin: *
+=Cache-Control: private, no-cache, no-store, must-revalidate
+/Content-Type: application/json; charset=UTF-8
+2ETag: "f967faf0cde739d56de901b870f354eabd340a30"
+(Expires: Sat, 01 Jan 2000 00:00:00 GMT
+Pragma: no-cache
+X-FB-Rev: 1073774
+:X-FB-Debug: m5qu4EcgrAQYYudd52ZI13zvEx2kqOANG5TLvzV+hVI=
+%Date: Thu, 09 Jan 2014 00:33:43 GMT
+Connection: keep-alive
+Content-Length: 862
+‡
+/**/ FB.__globalCallbacks.f2a278b15c({"data":[{"name":"index_link_stat_url","fql_result_set":[{"url":"http:\/\/nfl.com\/goto?id=0ap2000000310887","commentsbox_count":36},{"url":"http:\/\/nfl.com\/goto?id=0ap2000000310751","commentsbox_count":95},{"url":"http:\/\/nfl.com\/goto?id=0ap2000000310899","commentsbox_count":153},{"url":"http:\/\/nfl.com\/goto?id=0ap2000000310871","commentsbox_count":1},{"url":"http:\/\/nfl.com\/goto?id=0ap2000000310716","commentsbox_count":640},{"url":"http:\/\/nfl.com\/goto?id=0ap2000000310705","commentsbox_count":593},{"url":"http:\/\/nfl.com\/goto?id=0ap2000000310841","commentsbox_count":80},{"url":"http:\/\/nfl.com\/goto?id=0ap2000000310669","commentsbox_count":50},{"url":"http:\/\/nfl.com\/goto?id=0ap2000000310519","commentsbox_count":954},{"url":"http:\/\/nfl.com\/goto?id=0ap2000000310660","commentsbox_count":54}]}]});

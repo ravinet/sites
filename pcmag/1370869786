@@ -1,0 +1,24 @@
+PHTTP23.202.198.75"Ù
+)GET /js/zdcc/1.0.0/zdcc.min.js HTTP/1.1
+Host: static.ziffdavis.com
+Connection: keep-alive
+Accept: */*
+vUser-Agent: Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/31.0.1650.63 Safari/537.36
+ Referer: http://www.pcmag.com/
+$Accept-Encoding: gzip,deflate,sdch
+!Accept-Language: en-US,en;q=0.8
+
+*Œ
+HTTP/1.1 200 OK
+Nx-amz-id-2: 3zwL/Lwz7ZvKMkkvqvGcXk23eBZF9hcn/Y0lcxVyZlIBbH1ULXGanujS8/kbQL5V
+$x-amz-request-id: 82858A27327AA716
+.Last-Modified: Fri, 01 Nov 2013 20:27:33 GMT
+*ETag: "a02385f67c0c26bba5607f36c49d3bf9"
+Accept-Ranges: bytes
+&Content-Type: application/javascript
+Content-Length: 2037
+Server: AmazonS3
+%Date: Thu, 09 Jan 2014 01:38:08 GMT
+Connection: keep-alive
+÷
+var ZDXI={CookieKey:"_USERCOUNTRY6",CookieValue:"US",SetCookie:function(e,t,n){var r=new Date;var i=n;r.setTime(r.getTime()+i*24*60*60*1e3);document.cookie=e+"="+escape(t)+"; path=/"+(r==null?"":"; expires="+r.toGMTString())},GetCookie:function(e){var t=e+"=";if(document.cookie.length>0){offset=document.cookie.indexOf(t);if(offset!=-1){offset+=t.length;end=document.cookie.indexOf(";",offset);if(end==-1){end=document.cookie.length}return unescape(document.cookie.substring(offset,end))}}},AreCookiesEnabled:function(){var e=navigator.cookieEnabled?true:false;if(typeof navigator.cookieEnabled=="undefined"&&!e){document.cookie="testcookie";e=document.cookie.indexOf("testcookie")!=-1?true:false}return e},SetCountryFromServer:function(e){var t="US";var n="";var r;var i=1;var s=false;n="http://geo.ziffdavis.com/loc/country.php"+e;this.SetCookie(this.CookieKey,t,i);if(window.XMLHttpRequest){r=new XMLHttpRequest;if("withCredentials"in r){s=true;try{r.open("GET",n,false);r.send(null);if(r.status==200){if(r.responseText.length==2){i=90;t=r.responseText}}}catch(o){}this.SetCookie(this.CookieKey,t,i);this.CookieValue=t}}if(s==false){if(window.XDomainRequest){r=new XDomainRequest;r.onload=function(){if(r.responseText.length==2){i=90;t=r.responseText;ZDXI.SetCookie(ZDXI.CookieKey,t,i);ZDXI.CookieValue=t}};try{r.open("GET",n);r.send(null)}catch(o){}}}},LoadCountry:function(){var e;var t="";var n;var r="";t=unescape(window.location.search).substring(1).toLowerCase();n=t.split("&");for(var i=0;i<n.length;i++){var s=n[i].split("=");if(s[0]=="ip"){r="?ip="+s[1]}}if(r.length>0){this.SetCountryFromServer(r)}else{if(this.AreCookiesEnabled()){e=this.GetCookie(this.CookieKey);if(typeof e=="undefined"){this.SetCountryFromServer(r)}else{this.CookieValue=e}}}},IsUSA:function(){this.LoadCountry();return this.CookieValue==="US"},IsIntl:function(){return this.IsUSA()==false},Country:function(){this.LoadCountry();return this.CookieValue},OnCountryRedirect:function(e,t){if(this.Country()===e.toUpperCase()){window.location.replace(t)}}}

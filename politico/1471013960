@@ -1,0 +1,26 @@
+PHTTP
+18.7.20.70"û
+OGET /includes/xml/widgetPromoCarousel.xml?cachebuster=20140101636001 HTTP/1.1
+Host: www.politico.com
+Connection: keep-alive
+Accept: */*
+"X-Requested-With: XMLHttpRequest
+vUser-Agent: Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/31.0.1650.63 Safari/537.36
+#Referer: http://www.politico.com/
+$Accept-Encoding: gzip,deflate,sdch
+!Accept-Language: en-US,en;q=0.8
+ÖCookie: optimizelySegments=%7B%22536712581%22%3A%22direct%22%2C%22538992278%22%3A%22gc%22%2C%22539001624%22%3A%22none%22%2C%22553840423%22%3A%22false%22%7D; optimizelyEndUserId=oeu1389373068874r0.9293693001382053; optimizelyBuckets=%7B%22554811171%22%3A%220%22%7D; ctopo=; optimizelyPendingLogEvents=%5B%5D; __qca=P0-622512693-1389373070594
+
+*ì
+HTTP/1.1 200 OK
+Nx-amz-id-2: ld6LxntSNmX/hx+CW2atQTqbIlqk0+/+3G4uqTrFEdwZ9bfB3WDt0XYF2i2AIoSP
+$x-amz-request-id: D993713F4072D23E
+.Last-Modified: Fri, 10 Jan 2014 16:07:00 GMT
+*ETag: "2a3db88ae53c58646dd8494ff9732aab"
+Content-Type: text/xml
+Content-Length: 1147
+Server: AmazonS3
+%Date: Fri, 10 Jan 2014 16:57:37 GMT
+Connection: keep-alive
+ý
+<?xml version="1.0" encoding="UTF-8"?><home><inc divid="widgetPromoCarousel"><![CDATA[ <div class="widget-header more-info"> <h4>POLITICO Presents</h4> </div> <div class="widget-content"> <div class="infinite-carousel"> <div class="wrapper"> <ul> <li> <a href="http://www.politico.com/energy-tweet-hub/?ml=pr"><img src="http://images.politico.com/global/2013/11/12/chevron_carousel_v8.jpg" alt="energy-tweet-hub" width="335" height="168" /></a> </li> <li> <a href="http://www.politico.com/events/?ml=pr"><img src="http://images.politico.com/global/2012/07/carousel-eventslaunch.jpg" alt="politico-events" width="335" height="168" /></a> </li> <li> <a href="http://www.politico.com/driving-the-day/?ml=pr"><img src="http://images.politico.com/global/2014/01/06/dtd_carousel_v5_03.jpg" alt="politico-driving-the-day" width="335" height="168" /></a> </li> <li> <a href="https://www.politicopro.com/login/?ml=pr"><img src="http://images.politico.com/global/2014/01/07/pro_nowlive_carousel.jpg" alt="POLITICO Pro now live" width="335" height="168" /></a> </li> </ul> </div><!--/.coda-slider--> </div><!--/.coda-slider-wrapper--> </div> ]]></inc></home>

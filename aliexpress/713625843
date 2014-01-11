@@ -1,0 +1,29 @@
+»HTTPS205.204.112.94"…
+QGET /api/havana_top.js?site=4&callback=getUserLoginMsg&_=1389229120141 HTTP/1.1
+Host: passport.alipay.com
+Connection: keep-alive
+Accept: */*
+vUser-Agent: Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/31.0.1650.63 Safari/537.36
+%Referer: http://www.aliexpress.com/
+$Accept-Encoding: gzip,deflate,sdch
+!Accept-Language: en-US,en;q=0.8
+
+*˜
+HTTP/1.1 200 OK
+Server: Tengine
+%Date: Thu, 09 Jan 2014 00:58:28 GMT
+.Content-Type: text/javascript; charset=UTF-8
+Transfer-Encoding: chunked
+Connection: keep-alive
+Content-Language: zh-CN
+Pragma: no-cache
+Cache-Control: no-cache
+(Expires: Thu, 01 Jan 1970 00:00:01 GMT
+Pragma: no-cache
+Cache-Control: no-store
+>
+31
+(function(){ getUserLoginMsg({"code":200});})();
+
+0
+

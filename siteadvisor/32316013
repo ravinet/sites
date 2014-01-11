@@ -1,0 +1,78 @@
+PHTTP161.69.13.140"Õ
+ GET /script/submit.js HTTP/1.1
+Host: www.siteadvisor.com
+Connection: keep-alive
+Accept: */*
+vUser-Agent: Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/31.0.1650.63 Safari/537.36
+&Referer: http://www.siteadvisor.com/
+$Accept-Encoding: gzip,deflate,sdch
+!Accept-Language: en-US,en;q=0.8
+
+*Œ
+HTTP/1.1 200 OK
+%Date: Thu, 09 Jan 2014 01:44:59 GMT
+Server: Apache
+.Last-Modified: Thu, 12 Dec 2013 14:07:32 GMT
+!ETag: "10838-853-4ed56dddc1100"
+Accept-Ranges: bytes
+Content-Length: 2131
+!Keep-Alive: timeout=15, max=100
+Connection: Keep-Alive
+&Content-Type: application/javascript
+Õ
+function submitLookupFormSubmit(f){
+        var r = "/&lt;(\/|)(\w*)(\ |)(\w*)([\\\=]*)(?|(\")\"&quot;\"|)(?|(.*)?&quot;(\")|)([\ ]?)(\/|)&gt;/i";
+	f.q.value = f.q.value.replace(r,"");
+        if (f.q.value == 'Par exemple, yahoo.com.') {
+            alert("Entrez un nom de site dans la zone de recherche.");
+            f.q.value = '';
+            return false;
+        }
+        if (f.q.value == 'es. yahoo.com') {
+            alert("Immettere il nome di un sito nella casella di ricerca.");
+            f.q.value = '';
+            return false;
+        }
+	if (f.q.value == 'e.g. yahoo.com' || f.q.value == 'Enter a Web site address (yahoo.com)' || f.q.value == 'Enter a site address (e.g. yahoo.com)' || f.q.value == '' || f.q.value == 'e.g. Verizon.com') {
+		alert("Please enter a site name in the lookup box.");	
+		f.q.value = '';
+		return false;
+	}
+	f.submit();
+	return true;
+}
+
+function submitLookupForm(name){
+	var f = document.forms[name];
+	return submitLookupFormSubmit(f);
+}
+
+function submitLookupFormHiddenDiv(){
+	var f;
+	if (document.getElementById('currentPanel').document != undefined )
+		f = document.getElementById('currentPanel').document.forms.item(1);
+	else
+		f = document.forms['lookupFormReviewerOverview'];
+	return submitLookupFormSubmit(f);
+}
+
+function submitForm(name){
+	document.forms[name].submit();
+}
+
+function openDownloadSuggestionPopup(url,domain,section,form,returnWindow){
+    dlHtml = "<b>Type or paste the download URL you'd like us to check.</b><br/><br/>" +
+            "<form name=downloadSuggestion action='/sites/domain/writeComments?domain="+domain+"&amp;' method=post>"+
+            "<input type=hidden name=section value='downloadSuggestion'>"+
+            "<input type=text name=comments><br/><br/>"+
+            "<input type=submit value='Submit download for review'>"+
+            "</form>";
+    OpenWindow=window.open('', "newwin", "height=250, width=450,toolbar=no,scrollbars,menubar=no");
+    if (window.focus) {OpenWindow.focus()}
+    OpenWindow.document.write(dlHtml);
+    OpenWindow.document.close();
+    if (returnWindow) {
+        return OpenWindow;
+    }
+    return false;
+}

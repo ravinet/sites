@@ -1,0 +1,24 @@
+PHTTP141.0.172.75"®
+GET /favicon.ico HTTP/1.1
+!Host: www.loading-delivery1.com
+Connection: keep-alive
+Accept: */*
+vUser-Agent: Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/31.0.1650.63 Safari/537.36
+$Accept-Encoding: gzip,deflate,sdch
+!Accept-Language: en-US,en;q=0.8
+
+*ˆ
+HTTP/1.1 404 Not Found
+Server: nginx
+%Date: Thu, 09 Jan 2014 01:00:59 GMT
+-Content-Type: text/html; charset=iso-8859-1
+Connection: keep-alive
+Content-Length: 209
+Ó
+<!DOCTYPE HTML PUBLIC "-//IETF//DTD HTML 2.0//EN">
+<html><head>
+<title>404 Not Found</title>
+</head><body>
+<h1>Not Found</h1>
+<p>The requested URL /favicon.ico was not found on this server.</p>
+</body></html>

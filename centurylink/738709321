@@ -1,0 +1,29 @@
+PHTTP159.78.72.30"Æ
+6GET /images/ui-bg_flat_75_ffffff_40x100.png HTTP/1.1
+Host: www.centurylink.com
+Connection: keep-alive
+Accept: image/webp,*/*;q=0.8
+vUser-Agent: Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/31.0.1650.63 Safari/537.36
+&Referer: http://www.centurylink.com/
+$Accept-Encoding: gzip,deflate,sdch
+!Accept-Language: en-US,en;q=0.8
+ÇCookie: TLTSID=179510CA793310790020D1C8C98E69CF; mbox=check#true#1389274684|session#1389274623078-967473#1389276484|PC#1389274623078-967473.17_38#1390484224; TLTHID=18644D9A793310790027DFDE6A9E446C
+
+*Û
+HTTP/1.1 302 Found
+%Date: Thu, 09 Jan 2014 13:36:51 GMT
+Server: Apache
+VSet-Cookie: TLTHID=1873EE26793310790017EAC0543C33EA; Path=/; Domain=.centurylink.com
+@Location: http://www.centurylink.com/Pages/Errors/404Error.jsp
+Content-Length: 236
+Keep-Alive: timeout=5, max=93
+Connection: Keep-Alive
+-Content-Type: text/html; charset=iso-8859-1
+î
+<!DOCTYPE HTML PUBLIC "-//IETF//DTD HTML 2.0//EN">
+<html><head>
+<title>302 Found</title>
+</head><body>
+<h1>Found</h1>
+<p>The document has moved <a href="http://www.centurylink.com/Pages/Errors/404Error.jsp">here</a>.</p>
+</body></html>

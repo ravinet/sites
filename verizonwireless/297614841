@@ -1,0 +1,55 @@
+PHTTP66.117.23.101"¶
+¥GET /m2/verizonwireless/mbox/standard?mboxHost=www.verizonwireless.com&mboxSession=1389228128578-45261&mboxPage=1389228128578-45261&screenHeight=1200&screenWidth=1920&browserWidth=937&browserHeight=1051&browserTimeOffset=-300&colorDepth=24&mboxXDomain=enabled&mboxCount=10&mbox=prospects_Carousel_Tab1&mboxId=0&mboxTime=1389210129273&mboxURL=http%3A%2F%2Fwww.verizonwireless.com%2F&mboxReferrer=&mboxVersion=41 HTTP/1.1
+%Host: verizonwireless.tt.omtrdc.net
+Connection: keep-alive
+Accept: */*
+vUser-Agent: Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/31.0.1650.63 Safari/537.36
+*Referer: http://www.verizonwireless.com/
+$Accept-Encoding: gzip,deflate,sdch
+!Accept-Language: en-US,en;q=0.8
+KCookie: mboxSession=1389228128578-45261; mboxPC=1389228128578-45261.25_25
+
+*´ 
+HTTP/1.1 200 OK
+pragma: no-cache
+$P3P: CP="NOI DSP CURa OUR STP COM"
+•Set-Cookie: mboxPC=1389228128578-45261.25_25; Domain=verizonwireless.tt.omtrdc.net; Expires=Thu, 23-Jan-2014 00:41:57 GMT; Path=/m2/verizonwireless
+2Content-Type: text/javascript;charset=ISO-8859-1
+Content-Length: 3774
+%Date: Thu, 09 Jan 2014 00:41:56 GMT
+Server: Test & Target
+À
+var mboxCurrent=mboxFactories.get('default').get('prospects_Carousel_Tab1',0);mboxCurrent.setEventTime('include.start');document.write('<div style="visibility: hidden; display: none" id="mboxImported-default-prospects_Carousel_Tab1-0">');/* Offer id: 19749*/ 
+
+_mboxDefaultContentOffer = function() {
+  this._onLoad = function() {};
+};
+
+_mboxDefaultContentOffer.prototype.setOnLoad = function(_onLoad) {
+  this._onLoad = _onLoad;
+};
+
+_mboxDefaultContentOffer.prototype.show = function(_mbox) {
+  var _defaultDiv = _mbox.getDefaultDiv();
+  if (_defaultDiv == null) {
+    return 0;
+  }
+  _defaultDiv.onclick = function() {
+    // just use _mbox.getName() when everyone is on mboxVersion >= 21
+    var _mboxName = _mbox.id ? _mbox.id : _mbox.getName();
+    var _clickDiv = document.getElementById('mboxClick-' + _mboxName);
+    if (_clickDiv != null) {
+      _clickDiv.onclick();
+    }
+  };
+  var _result = _mbox.hide();
+  if (_result == 1) {
+    this._onLoad();
+  }
+  return _result;
+};
+
+mboxCurrent.setOffer(new _mboxDefaultContentOffer());
+if (mboxCurrent.getFetcher && mboxCurrent.getFetcher().getType() == 'ajax') {
+  mboxCurrent.show();
+};document.write('<!-- Offer Id: 26753  --><script type=\"text\/javascript\">\r\n\/*T&T to SiteCat v4.1 ==>Response Plugin*\/\r\nwindow.s_tnt = window.s_tnt || \'\', tntVal = \'51093:0:0,\';\r\nif (window.s_tnt.indexOf(tntVal) == -1) {\r\n    window.s_tnt += tntVal\r\n}\r\nif (typeof mboxCurrent != \'undefined\' && mboxCurrent.getFetcher().getType() == \'ajax\'  && (window.s && window.s.tl)) {\r\n   var ltv = s.linkTrackVars;\r\n   var lte = s.linkTrackEvents;\r\n   s.linkTrackVars = \'None\';\r\n   s.linkTrackEvents = \'None\';\r\n   s.tl(\'TnT\', \'o\', \'TnT\');\r\n   s.linkTrackVars = ltv;\r\n   s.linkTrackEvents = lte;\r\n}\r\n\r\n\/******old version ************\/\r\n\/\/if (typeof(s_tnt) == \'undefined\') {\r\n\/\/var s_tnt = \'\';\r\n\/\/}\r\n\/\/s_tnt += \'51093:0:0,\';\r\n\/********************\/\r\n\r\n\/\/------\r\n\/\/You are in this campaign  = BK Monitoring: Homepage  2013_10_16;\r\n\/\/You are in this recipe = A: Control;\r\n\/\/user.VisitedCorePage     = ;\r\n\/\/user.geocountry              = ;\r\n<\/script>\r\n<script type=\"text\/javascript\">\r\n\/*mboxHighlight+ (1of2) v1 ==> Response Plugin*\/\r\nwindow.ttMETA=(typeof(window.ttMETA)!=\'undefined\')?window.ttMETA:[];window.ttMETA.push({\'mbox\':\'prospects_Carousel_Tab1\',\'campaign\':\'BK Monitoring: Homepage  2013_10_16\',\'experience\':\'A: Control\',\'offer\':\'Default Content\'});window.ttMBX=function(x){var mbxList=[];for(i=0;i<ttMETA.length;i++){if(ttMETA[i].mbox==x.getName()){mbxList.push(ttMETA[i])}}return mbxList[x.getId()]}\r\n<\/script>\r\n<script>\r\n\r\nfunction readCookie(name) {\r\n        var nameEQ = name + \"=\";\r\n        var ca = document.cookie.split(\';\');\r\n        for (var i = 0; i < ca.length; i++) {\r\n          var c = ca[i];\r\n          while (c.charAt(0) == \' \') c = c.substring(1, c.length);\r\n          if (c.indexOf(nameEQ) == 0) return c.substring(nameEQ.length, c.length);\r\n        }\r\n        return null;\r\n      } \r\n \r\nfunction tntForesee()\r\n  {\r\n    var foreseeCookie = readCookie(\'fsr.s\');\r\n    if (foreseeCookie && FSR && FSR.CPPS) {   \r\n      \/\/ <![CDATA[\r\n    \/\/\'BK Monitoring: Homepage  2013_10_16:A: Control\';\r\n    FSR.CPPS.set(\'campaign_name\',\'BK Monitoring: Homepage  2013_10_16\');\r\n    FSR.CPPS.set(\'campaign_recipe_name\',\'A: Control\');\r\n    \/\/ ]]>\r\n    }\r\n  }\r\n  \/\/window.onload=tntForesee;\r\n\r\n<\/script>\r\n');document.write('</div>');mboxCurrent.setEventTime('include.end');mboxFactories.get('default').get('prospects_Carousel_Tab1',0).loaded();mboxFactories.get('default').getPCId().forceId("1389228128578-45261.25_25");

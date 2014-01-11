@@ -1,0 +1,17 @@
+PHTTP66.117.23.103"¡
+ïGET /m2/redbox/mbox/standard?mboxHost=www.redbox.com&mboxSession=1389372962521-928778&mboxPage=1389372962521-928778&screenHeight=1200&screenWidth=1920&browserWidth=937&browserHeight=1051&browserTimeOffset=-300&colorDepth=24&mboxCount=6&mbox=HPSlideShowAnon&mboxId=0&mboxTime=1389354962803&mboxURL=http%3A%2F%2Fwww.redbox.com%2F&mboxReferrer=&mboxVersion=41 HTTP/1.1
+Host: redbox.tt.omtrdc.net
+Connection: keep-alive
+Accept: */*
+vUser-Agent: Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/31.0.1650.63 Safari/537.36
+!Referer: http://www.redbox.com/
+$Accept-Encoding: gzip,deflate,sdch
+!Accept-Language: en-US,en;q=0.8
+
+*Í
+HTTP/1.1 200 OK
+Content-Length: 96
+%Date: Fri, 10 Jan 2014 16:55:49 GMT
+Server: Test & Target
+b
+mboxFactories.get('default').get('HPSlideShowAnon',0).setOffer(new mboxOfferDefault()).loaded();

@@ -1,0 +1,44 @@
+PHTTP108.170.192.5"”
+YGET /pixel?pixelID=79152&partnerID=340&clientID=6481&key=segment&returnType=js HTTP/1.1
+%Host: segment-pixel.invitemedia.com
+Connection: keep-alive
+Accept: */*
+vUser-Agent: Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/31.0.1650.63 Safari/537.36
+"Referer: http://www.shopify.com/
+$Accept-Encoding: gzip,deflate,sdch
+!Accept-Language: en-US,en;q=0.8
+
+*º
+HTTP/1.1 200 OK
+%Date: Thu, 09 Jan 2014 13:56:48 GMT
+zSet-Cookie: uid=9c3235aa-5b18-4ece-a09b-98cdaf876b8d;Path=/;Domain=invitemedia.com;Expires=Fri, 09-Jan-2015 13:56:48 GMT
+(Expires: Thu, 01 Jan 1970 00:00:00 GMT
+‚Set-Cookie: segments_p1=eJzjEuDY8IpFYMHiqbNYFRZc3TWNFQA8Zwcy;Path=/;Domain=invitemedia.com;Expires=Fri, 09-Jan-2015 13:56:48 GMT
+Pragma: no-cache
+Content-Type: text/javascript
+€P3P: policyref="/w3c/p3p.xml", CP="OTI DSP COR ADMo TAIo PSAo PSDo CONo OUR SAMo OTRo STP UNI PUR COM NAV INT DEM STA PRE LOC"
+Cache-Control: no-cache
+Content-Length: 344
+Connection: close
+ Server: Jetty(7.3.1.v20110307)
+^Set-Cookie: impressions=;Path=/;Domain=invitemedia.com;Expires=Thu, 01-Jan-1970 00:00:01 GMT
+YSet-Cookie: clicks=;Path=/;Domain=invitemedia.com;Expires=Thu, 01-Jan-1970 00:00:01 GMT
+[Set-Cookie: segments=;Path=/;Domain=invitemedia.com;Expires=Thu, 01-Jan-1970 00:00:01 GMT
+\Set-Cookie: frequency=;Path=/;Domain=invitemedia.com;Expires=Thu, 01-Jan-1970 00:00:01 GMT
+_Set-Cookie: io_frequency=;Path=/;Domain=invitemedia.com;Expires=Thu, 01-Jan-1970 00:00:01 GMT
+Ú
+makePixelRequest("http://ad.yieldmanager.com/pixel?id=1536818&t=2","image");
+
+function makePixelRequest(pixelURL,pixelType){
+
+    if(pixelType == "javascript")
+    {
+        document.write('<script src="'+pixelURL+'" type="text\/javascript"><\/script>');
+    }
+    else
+    {
+        var img = new Image();
+        img.src = pixelURL;
+    }
+}
+

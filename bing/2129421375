@@ -1,0 +1,24 @@
+PHTTP65.52.108.11"¶
+GET /c.gif?DI=15074&CtsSyncId=4677554F298C484B911A10DC09F7443C&RedC=c.bing.com&MXFR=069DC9634FB369BD2174CCDE4EAC6954 HTTP/1.1
+Host: c.atdmt.com
+Connection: keep-alive
+Accept: image/webp,*/*;q=0.8
+vUser-Agent: Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/31.0.1650.63 Safari/537.36
+Referer: http://www.bing.com/
+$Accept-Encoding: gzip,deflate,sdch
+!Accept-Language: en-US,en;q=0.8
+
+*‡
+HTTP/1.1 302 Redirect
+>Cache-Control: private, no-cache, proxy-revalidate, no-store
+Pragma: no-cache
+}Location: http://c.bing.com/c.gif?DI=15074&CtsSyncId=4677554F298C484B911A10DC09F7443C&MUID=069DC9634FB369BD2174CCDE4EAC6954
+Server: Microsoft-IIS/8.0
+X-Powered-By: ASP.NET
+7P3P: CP="BUS CUR CONo FIN IVDo ONL OUR PHY SAMo TELo"
+vSet-Cookie: MUID=069DC9634FB369BD2174CCDE4EAC6954; domain=.atdmt.com; expires=Sat, 09-Jan-2016 00:16:16 GMT; path=/;
+xSet-Cookie: SRM_A=069DC9634FB369BD2174CCDE4EAC6954; domain=c.atdmt.com; expires=Sat, 09-Jan-2016 00:16:16 GMT; path=/;
+xSet-Cookie: SRM_B=069DC9634FB369BD2174CCDE4EAC6954; domain=c.atdmt.com; expires=Sat, 09-Jan-2016 00:16:16 GMT; path=/;
+%Date: Thu, 09 Jan 2014 00:16:16 GMT
+Content-Length: 0
+

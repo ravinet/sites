@@ -1,0 +1,29 @@
+PHTTP212.58.246.93"›
+GET /wwscripts/flag HTTP/1.1
+Host: www.bbc.co.uk
+Connection: keep-alive
+Accept: */*
+vUser-Agent: Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/31.0.1650.63 Safari/537.36
+ Referer: http://www.bbc.co.uk/
+$Accept-Encoding: gzip,deflate,sdch
+!Accept-Language: en-US,en;q=0.8
+ÑCookie: BBC-UID=35825c0d3e2f641e16a1db69f1c6439fe6bf1c44547491ceca21b454787402f00Mozilla/5.0%20(X11%3b%20Linux%20x86_64)%20AppleWebKit/537.36%20(KHTML%2c%20like%20Gecko)%20Chrome/31.0.1650.63%20Safari/537.36
+
+*¸
+HTTP/1.1 200 OK
+Server: Apache
+Cache-Control: max-age=120
+Content-Type: text/javascript
+(Expires: Thu, 09 Jan 2014 00:39:27 GMT
+*Etag: "46b4decb62a093032c3e470c90df141f"
+'X-PAL-Host: pal053.cwwtf.bbc.co.uk:80
+Content-Length: 24
+%Date: Thu, 09 Jan 2014 00:37:35 GMT
+Connection: keep-alive
+X-Cache-Action: HIT
+X-Cache-Hits: 82
+X-Cache-Age: 8
+X-LB-NoCache: true
+Vary: X-CDN
+
+bbcdotcom.flag={a:1,s:0}

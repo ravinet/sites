@@ -1,0 +1,17 @@
+PHTTP67.67.5.144"ƒ
+;GET /clients/chicagotribune/staticMaps/10681.png HTTP/1.1
+Host: weather.wdtinc.com
+Connection: keep-alive
+Accept: image/webp,*/*;q=0.8
+vUser-Agent: Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/31.0.1650.63 Safari/537.36
+)Referer: http://www.chicagotribune.com/
+$Accept-Encoding: gzip,deflate,sdch
+!Accept-Language: en-US,en;q=0.8
+
+*­
+HTTP/1.0 302 Found
+QLocation: http://content.wdtinc.com/clients/chicagotribune/staticMaps/10681.png
+Server: BigIP
+Connection: Keep-Alive
+Content-Length: 0
+

@@ -1,0 +1,27 @@
+PHTTP23.21.40.202"£
+6GET /GenericUserSync.ashx?dpid=48noredirect HTTP/1.1
+Host: sync.tidaltv.com
+Connection: keep-alive
+Accept: image/webp,*/*;q=0.8
+vUser-Agent: Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/31.0.1650.63 Safari/537.36
+PReferer: http://tag.crsspxl.com/s2.html?d=142&u=http%3A%2F%2Fwww.zap2it.com%2F
+$Accept-Encoding: gzip,deflate,sdch
+!Accept-Language: en-US,en;q=0.8
+
+*•
+HTTP/1.1 302 Found
+Cache-Control: private
+(Content-Type: text/html; charset=utf-8
+%Date: Fri, 10 Jan 2014 15:21:11 GMT
+RLocation: http://tag.crsspxl.com/m.gif?vdid=4e8e16d1-49f3-42c5-ba58-66781b46d075
+Server: Microsoft-IIS/7.0
+ôSet-Cookie: ptc=%7b%22UserSyncItems%22%3a%5b%7b%22PartnerId%22%3a%2248noredirect%22%2c%22PartnerUserId%22%3anull%2c%22TimeStamp%22%3a%2201%2f10%2f2014+15%3a21%3a12%22%7d%5d%7d; domain=tidaltv.com; expires=Sun, 10-Jan-2016 15:21:12 GMT; path=/
+€Set-Cookie: tidal_ttid=4e8e16d1-49f3-42c5-ba58-66781b46d075; domain=tidaltv.com; expires=Sun, 10-Jan-2016 15:21:12 GMT; path=/
+X-AspNet-Version: 4.0.30319
+X-Powered-By: ASP.NET
+Content-Length: 187
+Connection: keep-alive
+½
+<html><head><title>Object moved</title></head><body>
+<h2>Object moved to <a href="http://tag.crsspxl.com/m.gif?vdid=4e8e16d1-49f3-42c5-ba58-66781b46d075">here</a>.</h2>
+</body></html>

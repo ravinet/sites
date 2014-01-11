@@ -1,0 +1,25 @@
+PHTTP72.21.210.29"ã
+GET / HTTP/1.1
+Host: www.cloudfront.com
+Connection: keep-alive
+TAccept: text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8
+vUser-Agent: Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/31.0.1650.63 Safari/537.36
+$Accept-Encoding: gzip,deflate,sdch
+!Accept-Language: en-US,en;q=0.8
+
+*µ
+HTTP/1.1 302 Found
+%Date: Thu, 09 Jan 2014 21:18:32 GMT
+Server: Server
+,Location: http://aws.amazon.com/cloudfront
+Content-Length: 216
+nnCoection: close
+-Content-Type: text/html; charset=iso-8859-1
+Ú
+<!DOCTYPE HTML PUBLIC "-//IETF//DTD HTML 2.0//EN">
+<html><head>
+<title>302 Found</title>
+</head><body>
+<h1>Found</h1>
+<p>The document has moved <a href="http://aws.amazon.com/cloudfront">here</a>.</p>
+</body></html>

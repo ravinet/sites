@@ -1,0 +1,24 @@
+PHTTP64.215.255.65"ï
+MGET /red/usync?pid=11112&puid=52cdf18c-a5e8-e643-4676-9c67817d5e6b HTTP/1.1
+Host: su.addthis.com
+Connection: keep-alive
+Accept: image/webp,*/*;q=0.8
+vUser-Agent: Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/31.0.1650.63 Safari/537.36
+ Referer: http://www.slate.com/
+$Accept-Encoding: gzip,deflate,sdch
+!Accept-Language: en-US,en;q=0.8
+eCookie: di="%7B%2211112%22%3A%2252cdf18c-a5e8-e643-4676-9c67817d5e6b%22%7D.."; uid=52cdf1908b4d10ed
+
+*
+HTTP/1.1 204 No Content
+%Date: Thu, 09 Jan 2014 00:47:12 GMT
+.Cache-Control: max-age=0, no-cache, no-store
+Pragma: no-cache
+cSet-Cookie: uid=52cdf1908b4d10ed;Path=/;Domain=.addthis.com;Expires=Sat, 09-Jan-2016 00:47:12 GMT
+(Expires: Thu, 01 Jan 1970 00:00:00 GMT
+Content-Type: image/png
+AP3P: policyref="/w3c/p3p.xml", CP="NON ADM OUR DEV IND COM STA"
+>Set-Cookie: di=deleted;Expires=Thu, 01-Jan-1970 00:00:00 GMT
+?Set-Cookie: uid=deleted;Expires=Thu, 01-Jan-1970 00:00:00 GMT
+Connection: close
+

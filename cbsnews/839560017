@@ -1,0 +1,22 @@
+PHTTP216.239.120.193"ª
+lGET /api/v2.1/urs/applications/search?view=json&appId=1501&docDomain=http%3A%2F%2Fwww.cbsnews.com HTTP/1.1
+Host: urs.cbsnews.com
+Connection: keep-alive
+vUser-Agent: Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/31.0.1650.63 Safari/537.36
+ Origin: http://www.cbsnews.com
+Accept: */*
+"Referer: http://www.cbsnews.com/
+$Accept-Encoding: gzip,deflate,sdch
+!Accept-Language: en-US,en;q=0.8
+
+*π
+HTTP/1.1 200 OK
+Server: nginx
+%Date: Thu, 09 Jan 2014 01:15:43 GMT
+.Content-Type: application/json;charset=utf-8
+Content-Length: 127
+Connection: keep-alive
+5Access-Control-Allow-Origin: http://www.cbsnews.com
+PSet-Cookie: JSESSIONID=6E2EC1AA48B272DCA1283CDCB21C7C4D; Path=/rest/; HttpOnly
+Å
+{"version":"2.1","status":{"state":"processed","timestamp":"2014-01-09 01:15:43 +0000"},"applications":[{"site":{"siloId":1}}]}

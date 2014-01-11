@@ -1,0 +1,148 @@
+PHTTP161.69.13.140"ÿ
+#GET /includes/js/menu.js HTTP/1.1
+Host: www.siteadvisor.com
+Connection: keep-alive
+Accept: */*
+vUser-Agent: Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/31.0.1650.63 Safari/537.36
+&Referer: http://www.siteadvisor.com/
+$Accept-Encoding: gzip,deflate,sdch
+!Accept-Language: en-US,en;q=0.8
+
+*Å
+HTTP/1.1 200 OK
+%Date: Thu, 09 Jan 2014 01:44:59 GMT
+Server: Apache
+.Last-Modified: Thu, 06 May 2010 10:26:38 GMT
+!ETag: "107fe-d49-485ea60b29380"
+Accept-Ranges: bytes
+Content-Length: 3401
+ Keep-Alive: timeout=15, max=98
+Connection: Keep-Alive
+&Content-Type: application/javascript
+À
+/*menuHover = function() {
+	
+	if (!document.getElementsByTagName) return false;
+	var menuEls = document.getElementById("segment-navigation").getElementsByTagName("li");
+	for (var i=0; i<menuEls.length; i++) {
+		menuEls[i].onmouseover=function() {
+			this.className+=" menuhover";
+		}
+		menuEls[i].onmouseout=function() {
+			this.className=this.className.replace(new RegExp(" menuhover\\b"), "");
+		}
+	}
+}
+*/
+uHover = function() {
+	if (!document.getElementsByTagName) return false;
+        if (document.getElementById("utility-navigation")) {
+    	    var uEls = document.getElementById("utility-navigation").getElementsByTagName("li");
+    	    for (var i=0; i<uEls.length; i++) {
+		uEls[i].onmouseover=function() {
+			this.className+=" uhover";
+		}
+		uEls[i].onmouseout=function() {
+			this.className=this.className.replace(new RegExp(" uhover\\b"), "");
+		}
+            }
+	}
+}
+//if (window.attachEvent) window.attachEvent("onload", menuHover);
+if (window.attachEvent) window.attachEvent("onload", uHover);
+
+
+//Menu flip to avoid the submenus going outside stage
+
+function getElementPosition(elemID){
+	var offsetTrail = document.getElementById(elemID);
+	var offsetLeft = 0;
+	var offsetTop = 0;
+	
+	while (offsetTrail){
+		offsetLeft += offsetTrail.offsetLeft;
+		offsetTop += offsetTrail.offsetTop;
+		offsetTrail = offsetTrail.offsetParent;
+	}
+	
+	if (navigator.userAgent.indexOf('Mac') != -1 && typeof document.body.leftMargin != 'undefined'){
+		offsetLeft += document.body.leftMargin;
+		offsetTop += document.body.topMargin;
+	}
+	
+	return {left:offsetLeft,top:offsetTop};
+}
+
+function FlipSection()
+{
+	if(getElementPosition('par').left > 735)
+	{
+
+		var firstElement = getElementPosition('hho');
+		var Pos = document.getElementById('par');
+		var extraPixelToReduce = window.screen.availWidth - document.body.clientWidth;
+		var newWidth = getElementPosition('par').left + Pos.offsetWidth - 276 - (firstElement.left - extraPixelToReduce) + 'px';
+		document.getElementById('segment-par').style.left = newWidth;
+	}
+} 
+
+
+var useSearchKeyword = false;
+
+function onSearchSetFocus()
+{
+	var searchField = document.getElementById('global-search-field');
+	searchField.style.color = 'black';
+	
+	if(searchField.value == 'Search')
+	{
+		searchField.value = '';
+	}
+	
+	useSearchKeyword = true;
+}
+
+function onSearchLostFocus()
+{
+	var searchField = document.getElementById('global-search-field');
+		
+	if(searchField.value == '')
+	{
+		searchField.style.color = 'gray';
+		searchField.value = 'Search';
+		useSearchKeyword = false;
+	}
+}
+
+function setSearchString()
+{
+	if(useSearchKeyword == false)
+	{
+		var searchField = document.getElementById('global-search-field');
+		searchField.value = '';
+	}
+}
+
+function breadCrumbPos(){
+	
+	var firstElement = getElementPosition('hho');
+	if(document.getElementById('breadcrumb')){
+
+	document.getElementById('breadcrumb').style.left = firstElement.left + 'px';
+	document.getElementById('breadcrumb').style.display = 'block'
+        }
+	if(document.getElementById('hacker-safe')){
+	document.getElementById('hacker-safe').style.left =  firstElement.left + 888 + 'px';
+	document.getElementById('hacker-safe').style.display = 'block'
+        }
+	
+}
+
+
+
+function bodyload(){
+	breadCrumbPos();
+	//FlipSection();
+}
+window.onload = bodyload;
+window.onresize = breadCrumbPos;

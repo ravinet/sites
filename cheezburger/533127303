@@ -1,0 +1,31 @@
+PHTTP
+8.18.45.90"ª
+†GET /w/get.media?sid=48833&tp=5&d=j&t=n&vcm_acv=1.1&version=1.4&c=0.4972742001991719&vcm_ifr=1&vcm_xy=-1..-1&vcm_vv=true&vcm_vm=false&vcm_pr=&vcm_tr=http://www.cheezburger.com/&vcm_cr=&vcpdid=AQEHih2q01MitAEBAQErAQEBAQE&no_cj_c=1&ccs_status=0&status=0 HTTP/1.1
+Host: media.fastclick.net
+Connection: keep-alive
+Accept: */*
+vUser-Agent: Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/31.0.1650.63 Safari/537.36
+$Accept-Encoding: gzip,deflate,sdch
+!Accept-Language: en-US,en;q=0.8
+Cookie: cttutcid=1
+
+*Ô
+
+HTTP/1.1 200 OK
+%Date: Wed, 08 Jan 2014 16:55:35 GMT
+7Server: Apache/2.2.4 (Unix) mod_apreq2-20090110/2.7.1
+Cache-Control: no-cache
+Pragma: no-cache
+Expires: 0
+Content-Length: 742
+(Content-Type: application/x-javascript
+^Set-Cookie: cttutcid=|; domain=.fastclick.net; path=/; expires=Thu, 21-Dec-1972 00:00:00 GMT
+oSet-Cookie: pluto=471502110283932597|v1; domain=.fastclick.net; path=/; expires=Fri, 08-Jan-2016 16:55:35 GMT
+gP3P: policyref="/w3c/p3p.xml", CP="NOI NID DEVo TAIo PSAo HISo OTPo OUR DELo BUS COM NAV INT DSP COR"
+"Keep-Alive: timeout=5, max=19991
+Connection: Keep-Alive
+è
+{var dz=document;
+dz.writeln("<SCRIPT language='JavaScript1.1' SRC=\"http://ad.doubleclick.net/adj/N9037.150800.VALUECLICK/B7972148.29;sz=728x90;click=http://media.fastclick.net/w/click.here?cid=543109&mid=1039946&m=1&sid=48833&c=0&tp=5&UD=iAHKvD_QAYWTIZgBwf0CoAEBqAEF8AEA&upsid=471502110283932597&forced_click=;ord=20140108165535?\">");
+dz.writeln("<\/script><script type=\"text/javascript\">(function(){document.write('<span id=\"te-clearads-js-1915118528_5_1039946\"><sc'+'ript type=\"text/javascript\" src=\"'+((\"https:\"==document.location.protocol)?\"https\":\"http\")+'://choices.truste.com/ca?pid=valueclick01&aid=valueclick01&cid=1&c=1915118528_5_1039946&w=728&h=90&plc=tr\"></scr'+'ipt></span>');}());<\/script>");
+dz.writeln("");}

@@ -1,0 +1,18 @@
+PHTTP75.101.137.100"…
+°GET /rest/application/v1/advertisement/gpt?callback=adSetup&adSlot=div-gpt-narrowTopBanner&adSlot=div-gpt-pushdownBanner&adSlot=div-gpt-sponsorLink-1&adSlot=div-gpt-sponsorLink-2&adSlot=div-gpt-sponsorLink-3&adSlot=div-gpt-sponsorLink-4&adSlot=div-gpt-rightBanner&adSlot=div-gpt-rightBannerLower&adSlot=div-gpt-tertiarySquare&adSlot=div-gpt-bottomBanner&adSlot=div-gpt-interstitial&apikey=1337bfbf269f8f9c3ef092cea6a8df56 HTTP/1.1
+Host: api.bhg.com
+Connection: keep-alive
+Accept: */*
+vUser-Agent: Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/31.0.1650.63 Safari/537.36
+MReferer: http://www.agriculture.com/?ordersrc=P023brand&psrc=ADM_2843539867
+$Accept-Encoding: gzip,deflate,sdch
+!Accept-Language: en-US,en;q=0.8
+
+*Ø
+HTTP/1.1 200 OK
+/Content-Type: application/json; charset=UTF-8
+%Date: Sun, 05 Jan 2014 04:14:58 GMT
+Content-Length: 1590
+Connection: keep-alive
+¸
+adSetup({"gptAds":{"adSlots":[{"slotContainer":"div-gpt-narrowTopBanner","slotType":"topBanner","slotSizes":["728x90"],"slotTargetingValues":{"tile":1},"yieldbotable":true,"gwdId":"LVQOWj"},{"slotContainer":"div-gpt-rightBanner","slotType":"rightBanner","slotSizes":["300x250","300x600","300x1050"],"slotTargetingValues":{"tile":2},"yieldbotable":true,"gwdId":"By9ITp"},{"slotContainer":"div-gpt-pushdownBanner","slotType":"pushdownBanner","slotSizes":["970x66","970x90","970x250"],"yieldbotable":false},{"slotContainer":"div-gpt-sponsorLink-1","slotType":"sponsorLink","slotSizes":["2x2"],"slotTargetingValues":{"group":"spnLnk","tile":10},"yieldbotable":false},{"slotContainer":"div-gpt-sponsorLink-2","slotType":"sponsorLink","slotSizes":["2x2"],"slotTargetingValues":{"group":"spnLnk","tile":11},"yieldbotable":false},{"slotContainer":"div-gpt-sponsorLink-3","slotType":"sponsorLink","slotSizes":["2x2"],"slotTargetingValues":{"group":"spnLnk","tile":12},"yieldbotable":false},{"slotContainer":"div-gpt-sponsorLink-4","slotType":"sponsorLink","slotSizes":["2x2"],"slotTargetingValues":{"group":"spnLnk","tile":13},"yieldbotable":false},{"slotContainer":"div-gpt-rightBannerLower","slotType":"rightBannerLower","slotSizes":["300x250"],"slotTargetingValues":{"tile":3},"yieldbotable":false},{"slotContainer":"div-gpt-tertiarySquare","slotType":"tertiarySquare","slotSizes":["300x250"],"slotTargetingValues":{"tile":6},"yieldbotable":false},{"slotContainer":"div-gpt-bottomBanner","slotType":"bottomBanner","slotSizes":["728x90"],"slotTargetingValues":{"tile":4},"yieldbotable":false}]}});

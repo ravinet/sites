@@ -1,0 +1,41 @@
+PHTTP23.44.122.120"‡
+GET / HTTP/1.1
+Host: www.verizon.com
+Connection: keep-alive
+TAccept: text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8
+vUser-Agent: Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/31.0.1650.63 Safari/537.36
+$Accept-Encoding: gzip,deflate,sdch
+!Accept-Language: en-US,en;q=0.8
+
+*©
+ HTTP/1.1 302 Moved Temporarily
+'Server: Oracle-iPlanet-Web-Server/7.0
+JLocation: http://www.verizon.com/home/verizonglobalhome/ghp_landing.aspx
+#X-Powered-By: Servlet/2.5 JSP/2.1
+(Expires: Thu, 09 Jan 2014 18:15:11 GMT
+.Cache-Control: max-age=0, no-cache, no-store
+%Date: Thu, 09 Jan 2014 18:15:11 GMT
+Transfer-Encoding: chunked
+Connection: keep-alive
+Connection: Transfer-Encoding
+qSet-Cookie: ONECMS_JSESSIONID=JynQSTnPxXRwVBB3gqdYxG7W1TS3VgJCWG2Snvjn7ghFdwybX6sr!-428333557; path=/; HttpOnly
+âSet-Cookie: GlobalSessionID=NESbFfGkR68mr%2FKjhvkUj4oKQ%3D%3D; domain=.verizon.com; expires=Wednesday, 09-Apr-2014 18:15:11 GMT; path=/
+åSet-Cookie: GlobalSessionID=NESbFfGkR68mr%2FKjhvkUj4oKQ%3D%3D; domain=www.verizon.com; expires=Wednesday, 09-Apr-2014 18:15:11 GMT; path=/
+êSet-Cookie: GlobalSessionID=NESbFfGkR68mr%2FKjhvkUj4oKQ%3D%3D; domain=www.verizonfios.com; expires=Wednesday, 09-Apr-2014 18:15:11 GMT; path=/
+<Set-Cookie: HBXInitialVisit=Y; domain=.verizon.com; path=/
+XSet-Cookie: ReferenceSessionCookie=01/09/2014 01:15:11 PM; domain=.verizon.com; path=/
+_Set-Cookie: ReferenceSessionCookie=01/09/2014 01:15:11 PM; domain=www.verizonfios.com; path=/
+^Set-Cookie: NSC_xxx22_tmbti_mcw=ffffffff8f6412b545525d5f4f58455e445a4a423660;path=/;httponly
+]Set-Cookie: ak-sf=false; expires=Thu, 09-Jan-2014 18:20:11 GMT; path=//; domain=verizon.com
+ÄSet-Cookie: AkaUTrackingID=FCD214E0F5DB0DC41A801D870A7BEA4B; expires=Tue, 12-Jan-2021 18:15:11 GMT; path=/; domain=verizon.com
+YSet-Cookie: AkaSTrackingID=B8DBFC02613792D41ED97C845159645A; path=/; domain=verizon.com
+Ÿ
+0000013F
+<html><head><title>302 Moved Temporarily</title></head>
+<body bgcolor="#FFFFFF">
+<p>This document you requested has moved temporarily.</p>
+<p>It's now at <a href="http://www.verizon.com/home/verizonglobalhome/ghp_landing.aspx">http://www.verizon.com/home/verizonglobalhome/ghp_landing.aspx</a>.</p>
+</body></html>
+
+00000000
+

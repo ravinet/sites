@@ -1,0 +1,30 @@
+PHTTP
+18.7.20.68"È
+GET /crossdomain.xml HTTP/1.1
+Host: cdn.kaltura.com
+Connection: keep-alive
+vUser-Agent: Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/31.0.1650.63 Safari/537.36
+Accept: */*
+Referer: http://www.tmz.com/
+$Accept-Encoding: gzip,deflate,sdch
+!Accept-Language: en-US,en;q=0.8
+
+*è
+HTTP/1.1 200 OK
+Server: Apache
+X-Me: ny-front-api1
+.Last-Modified: Wed, 23 Oct 2013 12:41:08 GMT
+Content-Length: 392
+ Access-Control-Allow-Origin: *
+Content-Type: application/xml
+(Cache-Control: public, max-age=1762190
+(Expires: Wed, 29 Jan 2014 10:10:53 GMT
+%Date: Thu, 09 Jan 2014 00:41:03 GMT
+Connection: keep-alive
+Š
+<?xml version="1.0" encoding="UTF-8"?>
+<cross-domain-policy xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.adobe.com/xml/schemas/PolicyFile.xsd">
+	<allow-access-from domain="*" to-ports="*" secure="false"/>
+	<site-control permitted-cross-domain-policies="all"/>
+	<allow-http-request-headers-from domain="*" headers="*"/>
+</cross-domain-policy>

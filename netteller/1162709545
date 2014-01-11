@@ -1,0 +1,21 @@
+PHTTP216.116.87.222"ë
+GET /netteller HTTP/1.1
+Host: www.jackhenry.com
+Connection: keep-alive
+TAccept: text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8
+vUser-Agent: Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/31.0.1650.63 Safari/537.36
+$Accept-Encoding: gzip,deflate,sdch
+!Accept-Language: en-US,en;q=0.8
+
+*Ø
+ HTTP/1.1 301 Moved Permanently
+Content-Length: 189
+Content-Type: text/html
+NLocation: http://www.jackhenrybanking.com/products/InternetBanking/NetTeller
+Server: Microsoft-IIS/6.0
+X-Powered-By: ASP.NET
+%Date: Fri, 10 Jan 2014 00:18:33 GMT
+Connection: close
+¿
+<head><title>Document Moved</title></head>
+<body><h1>Object Moved</h1>This document may be found <a HREF="http://www.jackhenrybanking.com/products/InternetBanking/NetTeller">here</a></body>

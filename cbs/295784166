@@ -1,0 +1,28 @@
+PHTTP216.239.120.45"»
+“GET /aws/rest/v1.0/offerScript?refUrl=&sId=164&ptId=2000&onId=1&asId=0&cId=0&pId=0&nCat=&edId=&regSys=0&regId=0&lgnSts=0&t=1389230176865 HTTP/1.1
+Host: apex.cbsi.com
+Connection: keep-alive
+Accept: */*
+vUser-Agent: Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/31.0.1650.63 Safari/537.36
+Referer: http://www.cbs.com/
+$Accept-Encoding: gzip,deflate,sdch
+!Accept-Language: en-US,en;q=0.8
+~Cookie: XCLGFbrowser=KWFY0FLN+FJfNhA23zQ; s_vi=[CS]v1|2966FC2905078B4A-40000101002692BB[CE]; MAD_BK=31234&BK39677&1467618443
+
+*æ
+HTTP/1.1 200 OK
+%Date: Thu, 09 Jan 2014 01:16:04 GMT
+Server: Apache-Coyote/1.1
+dSet-Cookie: apexLat=1389230164697; Domain=.cbsi.com; Expires=Fri, 09-Jan-2015 01:16:04 GMT; Path=/
+XSet-Cookie: apexSpc=1; Domain=.cbsi.com; Expires=Sat, 08-Feb-2014 01:16:04 GMT; Path=/
+DSet-Cookie: JSESSIONID=A788617E5B9F699307AE0FFD2F459AB1; Path=/aws
+cSet-Cookie: apexSampleHistory=""; Domain=.cbsi.com; Expires=Thu, 09-Jan-2014 01:46:04 GMT; Path=/
+!Keep-Alive: timeout=15, max=773
+Connection: Keep-Alive
+Transfer-Encoding: chunked
+Content-Type: text/plain
++
+1e
+// no offer available for user
+0
+

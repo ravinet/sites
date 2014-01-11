@@ -1,0 +1,24 @@
+PHTTP50.17.211.79"Ω
+âGET /max_log.js?a=7881f43af0&lv=9:9&v=&h=www.nbcnews.com&cs=&sr=1&fl=www.nbcnews.com%7C&fr=9&fd=5&fk=sports&ft=1&fp=3&fb=4&fs= HTTP/1.1
+Host: ping.crowdscience.com
+Connection: keep-alive
+Accept: */*
+vUser-Agent: Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/31.0.1650.63 Safari/537.36
+"Referer: http://www.nbcnews.com/
+$Accept-Encoding: gzip,deflate,sdch
+!Accept-Language: en-US,en;q=0.8
+
+*ë
+HTTP/1.1 200 OK
+ Access-Control-Allow-Origin: *
+Content-Type: text/javascript
+%Date: Fri, 10 Jan 2014 14:55:46 GMT
+JP3P: CP="NOI DSP COR NID DEVa PSAi OUR STP OTC",policyref="/w3c/p3p.xml"
+Server: Apache
+nSet-Cookie: __csmv=815494932265fba1; Domain=.crowdscience.com; expires=Thu, 10 Apr 2014 14:55:46 GMT; Path=/
+ÅSet-Cookie: __csgeo=deg.19752_deg5.818_deg10.211_cc.US; Domain=.crowdscience.com; expires=Sun, 09 Feb 2014 14:55:46 GMT; Path=/
+Content-Length: 268
+Connection: keep-alive
+é
+    document.cookie = '__csgeo=deg.19752_deg5.818_deg10.211_cc.US;path=/;expires=' + new Date(new Date().getTime() + 259200000).toGMTString();
+    document.cookie = '__csmv=815494932265fba1;path=/;expires=' + new Date(new Date().getTime() + 7776000000).toGMTString();

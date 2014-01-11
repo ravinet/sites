@@ -1,0 +1,525 @@
+PHTTP
+18.7.20.69"‰
+8GET /uberblog/includes/js/eol-lib/eol.page.js HTTP/1.1
+Host: www.eonline.com
+Connection: keep-alive
+Accept: */*
+vUser-Agent: Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/31.0.1650.63 Safari/537.36
+"Referer: http://www.eonline.com/
+$Accept-Encoding: gzip,deflate,sdch
+!Accept-Language: en-US,en;q=0.8
+"Cookie: edition=us; adEdition=us
+
+*ðŸ
+HTTP/1.1 200 OK
+RServer: Apache/2.2.3 (CentOS) mod_jk/1.2.32 PHP/5.1.6 mod_perl/2.0.4 Perl/v5.8.8
+tX-Powered-By: Servlet 2.4; JBoss-4.3.0.GA_CP04 (build: SVNTag=JBPAPP_4_3_0_GA_CP04 date=200902200048)/JBossWeb-2.0
+ETag: W/"19961-1388703520000"
+.Last-Modified: Thu, 02 Jan 2014 22:58:40 GMT
+Content-Length: 19961
+Content-Type: text/javascript
+Cache-Control: max-age=600
+(Expires: Thu, 09 Jan 2014 01:02:40 GMT
+%Date: Thu, 09 Jan 2014 00:52:40 GMT
+Connection: keep-alive
+û›
+/**
+    @namespace eol.page
+    @extends eol
+    @name page    
+    @description Common features/behaviors to assist in page building.
+*/
+
+if (typeof(eol) === 'undefined') { var eol = {}; }
+eol.create("page", function($) {
+    
+    if ( eol.uattr("adEdition")) {
+        eol.cookie("adEdition", eol.uattr("adEdition"));
+    }
+	
+    var _s = {
+        "context" : {
+            "user" : { 
+                "loggedIn" : false,
+                "name" : "",
+                "id" : ""
+            },
+            "locale" : { 
+                "edition" : eol.uattr("ed") || ( eol.cookie("edition") || "us" ).replace(/^.*?_/,"").toLowerCase(),
+                "advertisements" : eol.uattr("adEdition") || eol.cookie("adEdition") || "us" 
+            },
+            "server" : {
+                "dateTime" : 0
+            },
+            "legacy" : true, //deprecated
+            "fixedLayout" : true //page is fixed to 3 columns
+        },
+        "dart" :  { 
+            "site" : "home",
+            "zone" : "home", 
+            "networkId" : "",
+            "zone2" : "", 
+            "keywords" : "", 
+            "wid" : "",
+            "sz" : "",
+            "pos" : 1, 
+            "tile" : 1,
+            "ord" : "", 
+            "notCategory" : "default",
+            "type" : "adj",
+            "remoteScript" : "/uberblog/includes/adxsite.html"
+        },
+        "extended" : null
+    };
+        
+    /**
+        @description Determine if the user is logged in; if so get public information about the user
+    */
+    function getUser() {
+        var userAttributes = eol.cookie("eolMember").match(/^(\d+)~(\w+)(?=~)/) || []; 
+        
+        if ( userAttributes.length === 3 ) {
+            _s.context.user.id = parseInt(userAttributes[1],10);
+            _s.context.user.name = userAttributes[2];
+            _s.context.user.loggedIn = true;
+        }
+    }
+    
+
+    function gmt( locale ) {
+        return new Date(locale.getTime() + ( locale.getTimezoneOffset() * 60000 ));
+    }
+
+    function time( systemTime ) {
+        _s.context.server.dateTime = _s.context.server.dateTime || systemTime;
+        return gmt(_s.context.server.dateTime);
+    }
+    
+    //deprecated
+    function legacyContext( isLegacy ) {
+    	_s.context.legacy = isLegacy;
+    }
+    
+    //deprecated
+    function getLegacy() {
+    	return _s.context.legacy;
+    }
+    
+    function fixedLayoutContext( isFixed ) {
+    	_s.context.fixedLayout = isFixed;
+    }
+    
+    function getFixedLayout() {
+    	return _s.context.fixedLayout;
+    }
+
+    /***********************************************
+    Advertisements     
+    ***********************************************/
+    /**
+        @name dartInit
+        @methodOf page
+    */
+    function dartInit( props ) {
+        var adLayoutScan;
+        $.extend(_s.dart, props);
+        _s.dart.keywords = _s.dart.keywords.replace(/(\[|\])/g,"");
+        $(document).ready(function(){ 
+            dartRefresh();                
+            $("div.advertisement[rel=1]").each(function(){                        
+                if ( $(this).outerWidth() < 740 || $(this).is(":not(.ad-ignore)") ) {
+                    $("div#headerSpot,div#header_promo").css({
+                        "display":"block"
+                    });
+                } else { 
+                    $(this).css({
+                        "padding-right": Math.floor((980 - $(this).outerWidth()) / 2)+"px"
+                        });
+                }
+            });
+        });       
+    }    
+    
+    /**
+        @name dartOrd
+        @methodOf page
+    */
+    function dartOrd( force ) {
+        if ( force ) {
+            window.dartOrd = Math.floor(Math.random() * 9999999999999999);
+        } else {
+            window.dartOrd = window.dartOrd || Math.floor(Math.random() * 9999999999999999);
+        }
+        return  window.dartOrd;
+    }
+    
+    /**
+        @name dartInject
+        @methodOf page
+        @param $filter Elements to insert advertisements into
+    */
+    function dartInject( $filter ) {
+        if ( ! _s.dart ) {
+            return;
+        }
+        var ord =  dartOrd();
+        var tile = 1;
+        var adSize = [];
+        var dUrl;
+       
+        $filter.each( function() {
+            adSize = $(this).attr("class").match(/(\d+x\d+-?)+/) || [];
+            if ( adSize.length >= 1 ) {
+                currentTile = parseInt($(this).attr("rel"),10) || tile;
+                adSize = adSize[0].split("-");
+                    
+                dUrl = dartUrl( { 
+                    "tile" : currentTile, 
+                    "ord" : ord, 
+                    "sz" : adSize.join(","), 
+                    "pos" : currentTile + "_" + adSize[0] 
+                });   
+                if(!(_s.dart.keywords === "" && $(this).hasClass("ad-sponsor"))){
+					if($("body").attr("id")==="gallery"){
+						var divAdHeight = $("div.advertisement").height();
+					//    $("#ad-iframe-1").height(divAdHeight);
+						$(this).attr("rel",currentTile).html( '<iframe class="advertisement-iframe" id="ad-iframe-'+currentTile+'" scrolling="no" allowtransparency="true" frameborder="0" src="' + _s.dart.remoteScript + '?target=ad-iframe-'+currentTile+'&url='+encodeURI(dUrl)+'" height="'+divAdHeight+'"></iframe>');
+					}else{
+						$(this).attr("rel",currentTile).html( '<iframe class="advertisement-iframe" id="ad-iframe-'+currentTile+'" scrolling="no" allowtransparency="true" frameborder="0" src="' + _s.dart.remoteScript + '?target=ad-iframe-'+currentTile+'&url='+encodeURI(dUrl)+'"></iframe>');	
+					}                                    	
+                    tile++;	
+                }
+            }
+        });     
+    }
+         
+    function dartUpdateLayout(target, height ) {
+      if($("body").attr("id") === "gallery"){
+        galIframeHeight = $("#ad-iframe-1").contents().find("html").height();
+        $("#ad-iframe-1").height(galIframeHeight);
+      }else{
+        $("iframe#"+target).height(parseInt(height,10));
+      }
+    }
+    
+    /**
+        @description 
+        @methodOf page
+        @param tile 
+    */
+    function dartUrl( tile ) {
+        var advertisement = [];
+        var retVal;
+        var dart = $.extend({}, _s.dart, tile );
+        if(eol.uattr("akw").length > 0) {
+            dart.keywords = eol.uattr("akw") + "," + dart.keywords;
+        }
+		      
+        dart.ord =  dart.ord || dartOrd();
+        dart.zone = (dart.zone2.length > 0 ) ? dart.zone + "/" + dart.zone2 : dart.zone;
+        dart.domain = dart.domain || "eonline";
+
+        var adEdition = _s.context.locale.advertisements;
+        var edition = _s.context.locale.edition;
+        
+        if(adEdition == "us") {
+        	dart.networkId = "N2620";
+        } else {
+        	dart.networkId = "N4295";
+        }
+       
+        if( !(dart.type || "").match(/^pfadx$/) || (adEdition === "us") ) { 
+	        //not used for pfadx ad calls unless the adEdition is us, ca, OR nz
+        	advertisement.push("http://ad.doubleclick.net" + "/" + (dart.networkId.length > 0 ? dart.networkId + "/" : "") + dart.type + "/" + dart.site + "." + adEdition + "." + dart.domain + "/" + dart.zone );
+	        if ( parseInt(dart.tile,10) === 1 ) {
+	            advertisement.push("dcopt=ist");
+	        }         
+	        advertisement.push("tile="+ dart.tile);        
+	        advertisement.push("pos=" + dart.pos || ( dart.tile + "_" + dart.sz.split(",")[0] ));
+	        advertisement.push("sz=" + dart.sz );
+	        
+	        advertisement.push("akw=" + dart.keywords.replace(" ","").split(",").join(";akw="));
+	        advertisement.push("wid=" + dart.wid);
+	        advertisement.push("!category=" + dart.notCategory.split(",").join(";!category=") );
+	        if ( window.__nbcudigitaladops_dtparams ) {
+	            advertisement.push( window.__nbcudigitaladops_dtparams );
+	        }
+
+	        advertisement.push("ord=" + dart.ord);
+	        retVal = advertisement.join(";").replace(/\;\;/,";") + "?";
+        } else if (adEdition === "ca") {
+        	advertisement.push("http://pubads.g.doubleclick.net/gampad/ads?sz=1x1&iu=/5479/ctv.eonline.ca/test&ciu_szs=300x250&impl=s&gdfp_req=1&env=vp&output=xml_vast2&unviewed_position_start=1&url=[referrer_url]&correlator=[timestamp]");
+        	retVal = advertisement.join(";").replace(/\;\;/,";");
+        } else if (adEdition === "au") {
+        	var publisherId = "7293";
+
+        	advertisement.push("http://cdn-static.liverail.com/swf/v4/plugins/pdk/LiveRailPlugin446.swf|LR_PUBLISHER_ID=" + publisherId + "|LR_SCHEMA=vast2|LR_VERTICALS="+dart.domain);
+        	retVal = advertisement.join(";").replace(/\;\;/,";");
+        } else if (adEdition === "za") {
+        	advertisement.push("http://adserver.adtech.de/?advideo/3.0/567.1/4334495/0//cc=2;vidAS=pre_roll;vidRT=VAST;vidRTV=2.0");
+        	retVal = advertisement.join(";").replace(/\;\;/,";");
+        } else if (adEdition === "it") {
+        	advertisement.push("http://video.bal.ad.dotandad.com/mediamond.jsp?mpo=vast_eonline&mpt=nbc_eo_vid_art&rnd=%n");
+        	retVal = advertisement.join(";").replace(/\;\;/,";");
+        } else if (adEdition === "nz") {
+        	advertisement.push("http://pubads.g.doubleclick.net/gampad/ads?sz=480x360&iu=/3595/NZ_Entertainment_EOnline&ciu_szs&impl=s&gdfp_req=1&env=vp&output=xml_vast2&unviewed_position_start=1&url=[referrer_url]&correlator=[timestamp]");
+        	retVal = advertisement.join(";").replace(/\;\;/,";");
+        } else if (adEdition === "uk") {
+        	advertisement.push("http://a.collective-media.net/pfadx/wtv.eent/video;sz=1x1;contx=Entertainment;cmu=http://www.eent.co.uk/;cmn=cnu;ord=" + dart.ord);
+        	retVal = advertisement.join(";").replace(/\;\;/,";");
+        } else if (adEdition === "fr") {
+        	advertisement.push("http://fr-himedia.videoplaza.tv/proxy/distributor/v2?s=de709e55-3f7f-4bf0-a3c6-1fdcac2a4b90&tt=p&rt=vast_2.0&rnd="+dart.ord+"&pf=fl_11");
+        	retVal = advertisement.join(";").replace(/\;\;/,";");
+        }
+        else {
+        	if(adEdition === "ooc" && edition === "uk") {
+        		advertisement.push("http://ima3vpaid.appspot.com/?adTagUrl=http%3A%2F%2Fgoogleads.g.doubleclick.net%2Fpagead%2Fads%3Fclient%3Dca-video-pub-9162676083297313%26slotname%3D8677868090%26description_url%3Dhttp%3A%2F%2Feonline.com");
+        	} else {
+            	advertisement.push("http://a.collective-media.net/pfadx/wtv.eent/video");
+            	advertisement.push("sz=1x1");
+            	advertisement.push("ord=" + dart.ord);
+            	advertisement.push("dcmt=text/xml");
+            }
+            retVal = advertisement.join(";").replace(/\;\;/,";");
+        }
+        return retVal;
+    }
+    
+    /**
+        @methodOf page
+        @param name
+        @param definition
+        @param context
+    */
+    function create(page, definition ) {
+        _s.extended = definition;
+    }
+        
+    function load( args ) {       
+        $(document).ready( function() { 
+            if ( _s.extended ) {
+                _s.extended = new _s.extended( $, _s.context);
+                _s.extended.load( args );
+            }
+        }); 
+    }
+    
+    /**
+        @name dartRenderNow
+        @methodOf page
+    */
+    function dartRender( advertisement ) {
+        var output = [];
+        
+        var dimensions = advertisement.dimensions.match(/(\d+x\d+)/g) || [];
+                
+        $.each(advertisement, function(key,value){
+            if ( $.type(value) === "string" ) {
+                advertisement[key] = ( value.indexOf("+=") === 0 ) ? (_s.dart[key] || "") + value.substr(2) : value;
+            }
+        });        
+        //var url = dartUrl( $.extend({},advertisement,{ "pos" : advertisement.tile + "_" + dimensions[0], "sz" : dimensions.join(",")}) );
+        advertisement.pos = advertisement.pos || advertisement.tile + "_" + dimensions[0];
+        var url = dartUrl( $.extend({},advertisement,{
+            "sz" : dimensions.join(",")
+            }) );
+        
+        var maxWidth = 0;
+        var maxHeight = 0;
+        $.each(dimensions,function(n,value){
+            maxWidth = Math.max(maxWidth, parseInt(value.replace(/x^\d+$/,""),10)) || 0;
+            maxHeight = Math.max(maxHeight, parseInt(value.replace(/^\d+x/,""),10)) || 0;
+        });
+        
+        if ( (advertisement.type || "").match(/^(pfadx|ad|adi|adj)$/) ) {
+            output = url;        
+        } else if ( ! $("body").is(".ad-refresh") ) {
+            output.push('<div class="advertisement ad-ignore ad-' + dimensions.join("-") + ' reset" rel="' + advertisement.tile + '" ><!-- -->');
+            output.push('<script src="' + url +'" type="text/javascript"><\/script>');
+            output.push('</div>');
+            output.reverse();
+        } else { 
+            output.push('<div class="advertisement ad-' + dimensions.join("-") + ' reset" rel="' + advertisement.tile + '" ></div>');
+        }
+        return output;
+    }
+
+    /**
+        @name dartRefresh
+        @methodOf page
+    */    
+    function dartRefresh(){
+        dartOrd(true);
+        dartInject( $("body").find("div.advertisement.reset:not(.ad-ignore)") );
+    }
+    
+    /**
+        @methodOf page
+    */
+    function origin( properties ) {
+        if ( properties === eol.undefined ) {
+            return _s.context.origin;
+        } else {
+            $.extend(_s.context.server, properties );
+        }
+    }
+
+    function modal( overlay ){
+        var defaults = {
+            show : true, 
+            html : ""
+        };
+
+        $.extend(defaults, ( typeof(overlay) == "object" ) ? overlay : {
+            html: overlay
+        });
+
+        $(document).ready(function() {
+            $("div.eol-modalwrap, div.eol-modaldropshadow").remove();
+            if ( defaults.show ) {
+                $("body").append("<div class='eol-modaldropshadow'>&nbsp;</div><div class='eol-modalwrap' >" + defaults.html + "</div>");
+                        
+                $("div.eol-modaldropshadow").css({
+                    height: $(document).height() + "px"
+                }).one("click",function(e){
+                    modal({
+                        show:false
+                    });
+                });
+            }
+        });
+    }
+
+    
+    (function init(){
+        getUser();
+    })();
+    
+    return {
+        "load" : load,
+        "origin" : origin,
+        "create" : create,
+        "dartInit" : dartInit,
+        "dartUrl" : dartUrl,
+        "legacyContext" : legacyContext,
+        "getLegacy" : getLegacy,
+        "fixedLayoutContext" : fixedLayoutContext,
+        "getFixedLayout" : getFixedLayout,
+        "modal" : modal,
+        "dartRender" : dartRender,
+        "dartRefresh" : dartRefresh,
+        "dartOrd" : dartOrd,
+        "dartUpdateLayout" : dartUpdateLayout,
+        "context" : _s.context,
+        "time" : time,
+        "gmt" : gmt
+    };
+
+});
+
+
+(function($){
+    /**
+        @name dartUpdateLayout
+    */
+    window.dartUpdateLayout = function(target, height ) {
+        $(document).ready(function() {
+            eol.page.dartUpdateLayout(target, height );
+        });
+    };
+    
+    /**
+        This will be called by a rich media template
+        @args json object
+    */
+    window.dartUpdate = function( args ) {	
+        args = args || {};
+        args.config = args.config || {
+            "headerSpot" : "", 
+            "click" : "", 
+            "skinScroll" : ""
+        };
+        if ( args.config.headerSpot.toLowerCase() === "no" ) {
+            $("div#headerSpot,div#header_promo").remove();
+        }
+        if(eol.page.getFixedLayout()) {
+	        $("html,body").css($.extend({},(args.css || args ),{
+	            "background-repeat":"no-repeat",
+	            "background-attachment" : ( args.config.skinScroll === "scroll" ? "scroll" : "fixed" ), 
+	            "background-position" : "center top"
+	        }));
+	        
+	        if ( $.trim(args.config.click || "").length > 0 ) {
+	            var target = ( ( args.config.clickWindow || "").indexOf("same_window") >= 0 ) ? "_self" : "_blank";
+	            if ( $.browser.msie && $.browser.version.indexOf("6") >= 0 ) {
+	                $("body").prepend('<a style="position: absolute; left:0; top:0; width: 100%; height: 100%;" target="' + target + '" href="' + args.config.click + '"><img style=" border: none; " width="100%" height="100%" src="http://www.eonline.com/static/uberblog/images/space.gif"></a>');
+	            } else {
+	                $("body").prepend('<a style="position: fixed; left:0; top:0; width: 100%; height: 100%;" target="' + target + '" href="' + args.config.click + '"><img style=" border: none; " width="100%" height="100%" src="http://www.eonline.com/static/uberblog/images/space.gif"></a>');
+	            }
+	        }
+        } else {
+        	$('#HHeader').append('<div id="Skin_Left" class="split_skin ' + args.config.skinScroll + '"></div><div id="Skin_Right" class="split_skin ' + args.config.skinScroll + '"></div>');
+        	if(args.config.skinScroll === "fixed"){
+        		$('body').css('overflow-x','hidden');
+        		$('#Skin_Left').css({'position':'fixed','margin-left':'-260px','top':'0'})	
+        		$('#Skin_Right').css({'position':'fixed','top':'0'});
+        	}else{
+        		$('body').css('overflow-x','hidden');
+        		$('#Skin_Left').css({'position':'absolute','top':'0','left':'-260px'});
+        		$('#Skin_Right').css({'position':'absolute','top':'0','right':'-260px'});
+
+        	}
+			$("html,body,#HHeader").css($.extend({}, {
+	        	"background-color":args.css["background-color"]
+	        }));
+	        $("div#Skin_Left").css($.extend({},(args.css || args), {
+	        	"background-repeat":"no-repeat",
+	            "background-position" : "left top"
+	        }));
+	        $("div#Skin_Right").css($.extend({},(args.css || args), {
+	        	"background-repeat":"no-repeat",
+	            "background-position" : "right top"
+	        }));
+	        if ( $.trim(args.config.click || "").length > 0 ) {
+	        	var target = ( ( args.config.clickWindow || "").indexOf("same_window") >= 0 ) ? "_self" : "_blank";
+	        	$("div#Skin_Left").prepend('<a style="position: absolute; left:0; top:0; width: 100%; height: 100%;" target="' + target + '" href="' + args.config.click + '"><img style=" border: none; " width="100%" height="100%" src="http://www.eonline.com/static/uberblog/images/space.gif"></a>');
+	        	$("div#Skin_Right").prepend('<a style="position: absolute; left:0; top:0; width: 100%; height: 100%;" target="' + target + '" href="' + args.config.click + '"><img style=" border: none; " width="100%" height="100%" src="http://www.eonline.com/static/uberblog/images/space.gif"></a>');
+	        }
+	        if(!navigator.userAgent.match(/(iPhone|iPod|iPad|Android|Blackberry)/i)) {
+	        	$(".split_skin").show();
+	        }
+	        lp_global.viewport_margins=140;
+	        lp_global.AdjustLayout(true);
+        }
+        
+        
+    };
+    
+    
+    
+    window.tasks = function() {            
+        $("body.edition_us").each(function(){                    
+                /* Tipline in footer */
+        		if (! window.tipped) {
+                        $("#HFooter a.eol-tipline").bind("click",function(e){
+                                window.tipped = true;
+                                e.preventDefault();
+                                $(e.currentTarget).addClass("override");
+                                eol.page.modal("<div class='tipline-wrap'><a class='tipline-close'><span>CLOSE</span></a><iframe frameborder='0' scrolling='no' class='eol-tipline' src='" + $(e.currentTarget).attr("href") + "'></iframe></div>");
+                                $("a.tipline-close").unbind("click").bind("click", function(){eol.page.modal({show:false});});
+                            });
+                    }
+        });
+
+    }
+    
+    window.closeLB = function() {$("div#LightBox").hide();}
+
+    var scanInterval = setTimeout(tasks, 1000 );
+    $(document).ready(tasks);
+    $(window).load(function(){tasks();clearTimeout(scanInterval);});
+
+
+    
+})(jQuery);
+

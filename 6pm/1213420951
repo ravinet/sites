@@ -1,0 +1,30 @@
+PHTTP173.194.43.57"›
+|GET /pixel?google_nid=cus&google_sc&google_ula=140602&google_cm&CriteoUserId=7e0d378c-31a1-4231-b75f-7fe3758f10f7 HTTP/1.1
+Host: cm.g.doubleclick.net
+Connection: keep-alive
+Accept: image/webp,*/*;q=0.8
+vUser-Agent: Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/31.0.1650.63 Safari/537.36
+$Accept-Encoding: gzip,deflate,sdch
+!Accept-Language: en-US,en;q=0.8
+
+*€	
+HTTP/1.1 302 Found
+¥P3P: policyref="http://googleads.g.doubleclick.net/pagead/gcn_p3p_.xml", CP="CURa ADMa DEVa TAIo PSAo PSDo OUR IND UNI PUR INT DEM STA PRE COM NAV OTC NOI DSP COR"
+tSet-Cookie: test_cookie=CheckForPermission; expires=Thu, 09-Jan-2014 22:01:52 GMT; path=/; domain=.doubleclick.net
+¡Location: http://cm.g.doubleclick.net/pixel?google_nid=cus&google_sc=&google_ula=140602&google_cm=&CriteoUserId=7e0d378c-31a1-4231-b75f-7fe3758f10f7&google_tc=
+%Date: Thu, 09 Jan 2014 21:46:52 GMT
+Pragma: no-cache
+(Expires: Fri, 01 Jan 1990 00:00:00 GMT
+*Cache-Control: no-cache, must-revalidate
+(Content-Type: text/html; charset=UTF-8
+Server: HTTP server (unknown)
+Content-Length: 366
+!X-XSS-Protection: 1; mode=block
+Alternate-Protocol: 80:quic
+ð
+<HTML><HEAD><meta http-equiv="content-type" content="text/html;charset=utf-8">
+<TITLE>302 Moved</TITLE></HEAD><BODY>
+<H1>302 Moved</H1>
+The document has moved
+<A HREF="http://cm.g.doubleclick.net/pixel?google_nid=cus&amp;google_sc=&amp;google_ula=140602&amp;google_cm=&amp;CriteoUserId=7e0d378c-31a1-4231-b75f-7fe3758f10f7&amp;google_tc=">here</A>.
+</BODY></HTML>

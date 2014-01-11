@@ -1,0 +1,23 @@
+PHTTP64.215.255.88"æ
+MGET /red/usync?pid=11112&puid=52cdfe4b-c3db-a49a-a952-66c4fb0d3951 HTTP/1.1
+Host: su.addthis.com
+Connection: keep-alive
+Accept: image/webp,*/*;q=0.8
+vUser-Agent: Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/31.0.1650.63 Safari/537.36
+$Accept-Encoding: gzip,deflate,sdch
+!Accept-Language: en-US,en;q=0.8
+
+*¤
+HTTP/1.1 204 No Content
+%Date: Thu, 09 Jan 2014 01:41:36 GMT
+.Cache-Control: max-age=0, no-cache, no-store
+Pragma: no-cache
+”Set-Cookie: di="%7B%2211112%22%3A%2252cdfe4b-c3db-a49a-a952-66c4fb0d3951%22%7D..";Path=/;Domain=.addthis.com;Expires=Sat, 09-Jan-2016 01:41:36 GMT
+cSet-Cookie: uid=52cdfe50823842fc;Path=/;Domain=.addthis.com;Expires=Sat, 09-Jan-2016 01:41:36 GMT
+(Expires: Thu, 01 Jan 1970 00:00:00 GMT
+Content-Type: image/png
+AP3P: policyref="/w3c/p3p.xml", CP="NON ADM OUR DEV IND COM STA"
+>Set-Cookie: di=deleted;Expires=Thu, 01-Jan-1970 00:00:00 GMT
+?Set-Cookie: uid=deleted;Expires=Thu, 01-Jan-1970 00:00:00 GMT
+Connection: close
+

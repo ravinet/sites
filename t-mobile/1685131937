@@ -1,0 +1,52 @@
+PHTTP66.117.23.104"Ê
+•GET /m2/tmobile/mbox/standard?mboxHost=www.t-mobile.com&mboxSession=1389229251541-403877&mboxPage=1389229251541-403877&screenHeight=1200&screenWidth=1920&browserWidth=937&browserHeight=1051&browserTimeOffset=-300&colorDepth=24&loggedin=&zipcode=&rememberme=&mboxCount=3&mbox=hp_marquee_clover&mboxId=0&mboxTime=1389211251960&mboxURL=http%3A%2F%2Fwww.t-mobile.com%2F&mboxReferrer=&mboxVersion=41 HTTP/1.1
+Host: tmobile.tt.omtrdc.net
+Connection: keep-alive
+Accept: */*
+vUser-Agent: Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/31.0.1650.63 Safari/537.36
+#Referer: http://www.t-mobile.com/
+$Accept-Encoding: gzip,deflate,sdch
+!Accept-Language: en-US,en;q=0.8
+
+*»
+HTTP/1.1 200 OK
+pragma: no-cache
+2Content-Type: text/javascript;charset=ISO-8859-1
+Content-Length: 2307
+%Date: Thu, 09 Jan 2014 01:00:39 GMT
+Server: Test & Target
+…
+var mboxCurrent=mboxFactories.get('default').get('hp_marquee_clover',0);mboxCurrent.setEventTime('include.start');document.write('<div style="visibility: hidden; display: none" id="mboxImported-default-hp_marquee_clover-0">');/* Offer id: 5687*/ 
+
+_mboxDefaultContentOffer = function() {
+  this._onLoad = function() {};
+};
+
+_mboxDefaultContentOffer.prototype.setOnLoad = function(_onLoad) {
+  this._onLoad = _onLoad;
+};
+
+_mboxDefaultContentOffer.prototype.show = function(_mbox) {
+  var _defaultDiv = _mbox.getDefaultDiv();
+  if (_defaultDiv == null) {
+    return 0;
+  }
+  _defaultDiv.onclick = function() {
+    // just use _mbox.getName() when everyone is on mboxVersion >= 21
+    var _mboxName = _mbox.id ? _mbox.id : _mbox.getName();
+    var _clickDiv = document.getElementById('mboxClick-' + _mboxName);
+    if (_clickDiv != null) {
+      _clickDiv.onclick();
+    }
+  };
+  var _result = _mbox.hide();
+  if (_result == 1) {
+    this._onLoad();
+  }
+  return _result;
+};
+
+mboxCurrent.setOffer(new _mboxDefaultContentOffer());
+if (mboxCurrent.getFetcher && mboxCurrent.getFetcher().getType() == 'ajax') {
+  mboxCurrent.show();
+};document.write('<!-- Offer Id: 70086  --><script type=\"text\/javascript\">\r\n\/*mboxHighlight+ (1of2) v1 ==> Response Plugin*\/\r\nwindow.ttMETA=(typeof(window.ttMETA)!=\'undefined\')?window.ttMETA:[];window.ttMETA.push({\'mbox\':\'hp_marquee_clover\',\'campaign\':\'TMO HP: Marquee PROSPECTS CES Uncarrier 4.0 (LIVE 01\/08\/2014)\',\'experience\':\'A1\',\'offer\':\'Default Content\'});window.ttMBX=function(x){var mbxList=[];for(i=0;i<ttMETA.length;i++){if(ttMETA[i].mbox==x.getName()){mbxList.push(ttMETA[i])}}return mbxList[x.getId()]}\r\n<\/script>');document.write('<!-- Offer Id: 83780  --><script type=\"text\/javascript\">\r\n\/*T&T to SiteCat v4 ==>Response Plugin*\/\r\nwindow.s_tnt = window.s_tnt || \'\', tntVal = \'47446:2:0,\';\r\nif (window.s_tnt.indexOf(tntVal) == -1) {\r\n    window.s_tnt += tntVal\r\n}\r\nif (mboxCurrent.getFetcher().getType() == \'ajax\'  && (window.s && window.s.tl)) {\r\n    s.tl(\'TnT\', \'o\', \'TnT\');\r\n}\r\n<\/script>');document.write('</div>');mboxCurrent.setEventTime('include.end');mboxFactories.get('default').get('hp_marquee_clover',0).loaded();mboxFactories.get('default').getPCId().forceId("1389229251541-403877.25_04");

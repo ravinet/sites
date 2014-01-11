@@ -1,0 +1,63 @@
+PHTTP
+23.6.26.10"…
+fGET /en-us/js/0443e8947b4ad8601676d11956a1801c/libs/jquery/plugins/jquery.bgiframe-2.1.2.js HTTP/1.1
+Host: media.ticketmaster.com
+Connection: keep-alive
+Accept: */*
+vUser-Agent: Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/31.0.1650.63 Safari/537.36
+'Referer: http://www.ticketmaster.com/
+$Accept-Encoding: gzip,deflate,sdch
+!Accept-Language: en-US,en;q=0.8
+ãCookie: GEORAN=1; SID=e8XBGp1ufU8_1X4VL94Nrk63EBDNtsdTXr3ObZAJ11kLWMU0uQG65_nP0NYASoKWnD7gXuybnqdiX9ic; BID=9jB1BhjEaMJ2Jqv8PkxHlhlo-fyK2vrxymgWfGCH-50LTVa8HGT-0RuiygJmgb-lmz4v7I0cSE8RPjtbCT2b; NPDMA=235; GEO_OMN=in; NDMA=235
+
+*î
+HTTP/1.1 200 OK
+Server: Apache
+.Last-Modified: Fri, 03 Aug 2012 22:11:59 GMT
+ETag: "6bc-d11949c0"
+Accept-Ranges: bytes
+Content-Length: 1724
+(Content-Type: application/x-javascript
+#Cache-Control: public, max-age=60
+%Date: Thu, 09 Jan 2014 01:05:10 GMT
+Connection: keep-alive
+¾
+/*! Copyright (c) 2010 Brandon Aaron (http://brandonaaron.net)
+ * Licensed under the MIT License (LICENSE.txt).
+ *
+ * Version 2.1.2
+ */
+
+(function($){
+
+$.fn.bgiframe = ($.browser.msie && /msie 6\.0/i.test(navigator.userAgent) ? function(s) {
+    s = $.extend({
+        top     : 'auto', // auto == .currentStyle.borderTopWidth
+        left    : 'auto', // auto == .currentStyle.borderLeftWidth
+        width   : 'auto', // auto == offsetWidth
+        height  : 'auto', // auto == offsetHeight
+        opacity : true,
+        src     : 'javascript:false;'
+    }, s);
+    var html = '<iframe class="bgiframe"frameborder="0"tabindex="-1"src="'+s.src+'"'+
+                   'style="display:block;position:absolute;z-index:-1;'+
+                       (s.opacity !== false?'filter:Alpha(Opacity=\'0\');':'')+
+                       'top:'+(s.top=='auto'?'expression(((parseInt(this.parentNode.currentStyle.borderTopWidth)||0)*-1)+\'px\')':prop(s.top))+';'+
+                       'left:'+(s.left=='auto'?'expression(((parseInt(this.parentNode.currentStyle.borderLeftWidth)||0)*-1)+\'px\')':prop(s.left))+';'+
+                       'width:'+(s.width=='auto'?'expression(this.parentNode.offsetWidth+\'px\')':prop(s.width))+';'+
+                       'height:'+(s.height=='auto'?'expression(this.parentNode.offsetHeight+\'px\')':prop(s.height))+';'+
+                '"/>';
+    return this.each(function() {
+        if ( $(this).children('iframe.bgiframe').length === 0 )
+            this.insertBefore( document.createElement(html), this.firstChild );
+    });
+} : function() { return this; });
+
+// old alias
+$.fn.bgIframe = $.fn.bgiframe;
+
+function prop(n) {
+    return n && n.constructor === Number ? n + 'px' : n;
+}
+
+})(jQuery);

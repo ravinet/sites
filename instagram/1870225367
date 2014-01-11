@@ -1,0 +1,41 @@
+PHTTP54.230.52.67"ô
+;GET /bluebar/31e59dc/scripts/public/slideshow.js HTTP/1.1
+%Host: d36xtkk24g8jdx.cloudfront.net
+Connection: keep-alive
+Accept: */*
+vUser-Agent: Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/31.0.1650.63 Safari/537.36
+ Referer: http://instagram.com/
+$Accept-Encoding: gzip,deflate,sdch
+!Accept-Language: en-US,en;q=0.8
+
+*‹
+HTTP/1.1 200 OK
+&Content-Type: application/javascript
+Content-Length: 512
+Connection: keep-alive
+%Date: Mon, 06 Jan 2014 21:43:40 GMT
+(Expires: Sun, 17-Jan-2038 19:14:07 GMT
+.Last-Modified: Mon, 06 Jan 2014 20:16:41 GMT
+*ETag: "f26b7dc51edb35aad453bb6efc7871e8"
+Accept-Ranges: bytes
+Server: AmazonS3
+Age: 182186
+X-Cache: Hit from cloudfront
+GVia: 1.1 787ade4cc63a9175d250ad43d0d3ee3b.cloudfront.net (CloudFront)
+GX-Amz-Cf-Id: bkmOYaOIwZJ3bPofS6WsCRbk5ODiNoB-NM792bj3OVj55qHM_uJ0gg==
+‚
+function next_slide() {
+    var active = $('#iphone-overlay img.active');
+    if (active.length == 0) active = $('#iphone-overlay img:last');
+    var next = active.next().length ? active.next() : $('#iphone-overlay img:first');
+    active.addClass('last-active');
+    next.css({opacity: 0.0}).addClass('active').animate({opacity: 1.0}, 1500, function() {
+        active.removeClass('active last-active');
+    });
+    setTimeout("next_slide()", 5000);
+}
+
+$(function() {
+    setTimeout("next_slide()", 5000);
+});
+

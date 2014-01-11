@@ -1,0 +1,170 @@
+PHTTP54.230.53.27"¿
+9GET /modules/www.people.com/global_footer.html HTTP/1.1
+$Host: timeseg.modules.jumptime.com
+Connection: keep-alive
+TAccept: text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8
+vUser-Agent: Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/31.0.1650.63 Safari/537.36
+(Referer: http://www.people.com/people/
+$Accept-Encoding: gzip,deflate,sdch
+!Accept-Language: en-US,en;q=0.8
+
+*√K
+HTTP/1.1 200 OK
+(Content-Type: text/html; charset=utf-8
+Content-Length: 8937
+Connection: keep-alive
+%Date: Wed, 08 Jan 2014 15:21:10 GMT
+1x-amz-meta-author: Whitney_Little@peoplemag.com
+&x-amz-meta-note: [1,37,44],[1,39,49]
+x-amz-meta-updateserver:  
+.Cache-Control: public,max-age=30,s-maxage=60
+Content-Encoding: utf-8
+.Last-Modified: Wed, 08 Jan 2014 15:20:11 GMT
+4x-amz-version-id: 7ZlGJSL1FnMnqVZgbZz5gzstDrcetPPv
+*ETag: "5846a978c54441835aa10c5003c1c3c8"
+Accept-Ranges: bytes
+Server: AmazonS3
+	Age: 22
+X-Cache: Hit from cloudfront
+GVia: 1.1 3b3125c366699840d823c35d0a51ff51.cloudfront.net (CloudFront)
+GX-Amz-Cf-Id: kZGE3KgOM3Ix63lQAKeKXkXi55dYz6VwXHLPEhmKz9mWiqHUHk02qg==
+ÎE
+<head>
+<title>Global Footer Module</title>
+<link href="http://img2-short.timeinc.net/people/static/c/jumptime/footer.css" rel="stylesheet">
+</head>
+<body style="background-color: white; background-image: none; min-height: 0px; opacity: 1;">
+    <div id="container">
+      <div id="wrapper">
+        <div id="main">
+        
+          <!-- Begin: From Our Partners -->
+          <div id="fromourpartners">
+            <div id="partnertouts">
+              <div id="partners123">
+                <script>
+                  var WIDTH = 150, HEIGHT = 113, RATIO = 150 / 113;
+                  function ir(img) {
+                      if (!img) { return; }
+                      var w = img.width, h = img.height;
+                      if ( (w/h) <= RATIO) { img.width = WIDTH; img.height = Math.round((h * WIDTH)/w); }
+                      else { img.height = HEIGHT; img.width = Math.round((w * HEIGHT)/h); }
+                      var wrapper = document.createElement("div");
+                      wrapper.style.display = "inline-block";
+                      wrapper.style.overflow = "hidden";
+                      wrapper.style.width = "150px";
+                      wrapper.style.height = "113px";
+                      var parent = img.parentNode;
+                      parent.insertBefore(wrapper, img);
+                      wrapper.appendChild(img);
+                  }
+                  function logo(img) {
+                    var alt = img.alt.toLowerCase();
+                    if (!alt) return;
+                    switch(alt){
+                    case "allyou":
+                        img.src = "http://img4.allyou.com/static/i/logo-150x15.png";
+                        break;
+                    case "essence":
+                       	// ACR - 2012-07-02 - Image dissapeared from server, were instructed to point to new one
+                        // img.src = "http://rc-www.cfessence.com/assets/cacheimg/logos/essence_com_jumptime_logo_150x15.v2012_05_08_105242.png";
+                        img.src = "http://img2.timeinc.net/people/static/i/misc/partners/jumptime/essence-logo-150x15.png";
+                        break;
+                    case "ew":
+                        img.src = "http://img2-1.timeinc.net/ew/static/i/ew_com_jumptime_logo_150x15.png";
+                        break;
+                    case "health":
+                        img.src = "http://img2.timeinc.net/health/static/i/jt_health_logo_150x15.png";
+                        break;
+                    case "instyle":
+                        img.src = "http://img2.timeinc.net/instyle/static/i/logo_150x15.png";
+                        break;
+                    case "myrecipes":
+                        img.src = "http://img4.myrecipes.com/static/i/logo-150x15.png";
+                        break;
+                    case "realsimple":
+                        img.src = "http://img4.realsimple.com/static/i/real_simple_jumptime_150x15.gif";
+                        break;
+                    case "travelandleisure":
+                        img.src = "http://www.travelandleisure.com/assets/images/TLlogo150x15.png";
+                        break;
+                    case "foodandwine":
+                        img.src = "http://www.foodandwine.com/assets/images/FWlogo150x15.png";
+                        break;
+                    }
+                  }
+                </script>
+                <div class="tout t1" data-drop="true" id="pos1">
+                  <p class="photo">
+<a data-bind="{attr : {href: { value: pos1.url, appendUrlParameter: 'xid=jt_footer'}}}" href="http://www.realsimple.com/work-life/technology/balanced-life-00100000115152/index.html?xid=jt_footer" shape="rect" target="_top">
+<div style="display: inline-block; overflow: hidden; width: 150px; height: 113px;"><img border="0" data-bind="{attr: {src: pos1.imageurl} }" height="154" onload="ir(this)" src="http://img4.realsimple.com/images/work-life/technology/1312/poll-results_160.jpg" style="margin-left: 0px; margin-top: -35px;" width="150"></div>
+</a>
+</p>
+                  <div class="text">
+                    <p class="logo">
+                      <a data-bind="{attr: { href: { value: pos1.url, appendUrlParameter: 'xid=jt_footer'}, title: { value: pos1.sup},  } }" href="http://www.realsimple.com/work-life/technology/balanced-life-00100000115152/index.html?xid=jt_footer" shape="rect" target="_top" title="Realsimple">
+                        <img alt="Realsimple" border="0" data-bind="{attr: { alt: { value: pos1.sup},  } }" logo="true" src="http://img4.realsimple.com/static/i/real_simple_jumptime_150x15.gif">
+                      </a>
+                    </p>
+                    <h4>
+<a data-bind="{ attr: { href: { value: pos1.url, appendUrlParameter: 'xid=jt_footer'}}, text: pos1.headline }" href="http://www.realsimple.com/work-life/technology/balanced-life-00100000115152/index.html?xid=jt_footer" shape="rect" target="_top">Finding Balance in a Wired World</a>
+</h4>
+                  </div>
+                </div>
+          
+                <div class="tout t2" data-drop="true" id="pos2">
+                  <p class="photo">
+<a data-bind="{attr : {href: { value: pos2.url, appendUrlParameter: 'xid=jt_footer'}}}" href="http://www.health.com/health/gallery/0,,20309924,00.html?xid=jt_footer" shape="rect" target="_top">
+<div style="display: inline-block; overflow: hidden; width: 150px; height: 113px;"><img border="0" data-bind="{attr: {src: pos2.imageurl} }" height="150" onload="ir(this)" src="http://img2.timeinc.net/health/images/gallery/eating/muffin-fibro-122.jpg" style="margin-left: 0px; margin-top: -25px;" width="150"></div>
+</a>
+</p>
+                  <div class="text">
+                    <p class="logo">
+                      <a data-bind="{attr: { href: { value: pos2.url, appendUrlParameter: 'xid=jt_footer'}, title: { value: pos2.sup},  } }" href="http://www.health.com/health/gallery/0,,20309924,00.html?xid=jt_footer" shape="rect" target="_top" title="Health">
+                        <img alt="Health" border="0" data-bind="{attr: { alt: { value: pos2.sup},  } }" logo="true" src="http://img2.timeinc.net/health/static/i/jt_health_logo_150x15.png">
+                      </a>
+                    </p>
+                    <h4>
+<a data-bind="{ attr: { href: { value: pos2.url, appendUrlParameter: 'xid=jt_footer'}}, text: pos2.headline }" href="http://www.health.com/health/gallery/0,,20309924,00.html?xid=jt_footer" shape="rect" target="_top">10 Food Rules for Pain Patients</a>
+</h4>
+                  </div>
+                </div>
+          
+                <div class="tout t3" data-drop="true" id="pos3">
+                  <p class="photo">
+<a data-bind="{attr : {href: { value: pos3.url, appendUrlParameter: 'xid=jt_footer'}}}" href="http://www.ew.com/ew/gallery/0,,20669091,00.html?xid=jt_footer" shape="rect" target="_top">
+<div style="display: inline-block; overflow: hidden; width: 150px; height: 113px;"><img border="0" data-bind="{attr: {src: pos3.imageurl} }" height="113" onload="ir(this)" src="http://img2-3.timeinc.net/ew/i/2013/01/29/30-ROCK-JAMES-FRANCO_320x240.jpg" style="margin-left: 0px;" width="151"></div>
+</a>
+</p>
+                  <div class="text">
+                    <p class="logo">
+                      <a data-bind="{attr: { href: { value: pos3.url, appendUrlParameter: 'xid=jt_footer'}, title: { value: pos3.sup},  } }" href="http://www.ew.com/ew/gallery/0,,20669091,00.html?xid=jt_footer" shape="rect" target="_top" title="EW">
+                        <img alt="EW" border="0" data-bind="{attr: { alt: { value: pos3.sup},  } }" logo="true" src="http://img2-1.timeinc.net/ew/static/i/ew_com_jumptime_logo_150x15.png">
+                      </a>
+                    </p>
+                    <h4>
+<a data-bind="{ attr: { href: { value: pos3.url, appendUrlParameter: 'xid=jt_footer'}}, text: pos3.headline }" href="http://www.ew.com/ew/gallery/0,,20669091,00.html?xid=jt_footer" shape="rect" target="_top">'30 Rock': YOU Rank the Guest Stars</a>
+</h4>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <script>
+              var imgs = document.getElementsByTagName("img");
+              for (var i = 0; i < imgs.length; i++) {
+            	  if (!imgs[i].getAttribute("logo")) continue;
+            	  logo(imgs[i]);
+              }
+            </script>
+
+            <!-- Beacon -->
+            <img src="http://timeseg.jump-time.net/timeseg.gif?url=http://timeseg.modules.jumptime.com/modules/www.people.com/global_footer.html&amp;proj=timeseg&amp;title=Global%20Footer%20Module&amp;sup=jumptime.com&amp;sec=global-footer&amp;ct=JumpTime%20Module" style="display: none;">
+          </div>
+          <!-- End: From Our Partners -->
+        
+        </div>
+      </div>
+    </div>
+  
+
+</body>

@@ -1,0 +1,57 @@
+PHTTP
+18.7.20.68"ö
+AGET /fly/bundles/cbsnewscore/js/components/outbrain.js HTTP/1.1
+Host: cbsnews1.cbsistatic.com
+Connection: keep-alive
+Accept: */*
+vUser-Agent: Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/31.0.1650.63 Safari/537.36
+"Referer: http://www.cbsnews.com/
+$Accept-Encoding: gzip,deflate,sdch
+!Accept-Language: en-US,en;q=0.8
+
+*¼
+HTTP/1.1 200 OK
+(Content-Type: application/x-javascript
+.Last-Modified: Wed, 18 Dec 2013 20:32:57 GMT
+Content-Length: 756
+Accept-Ranges: bytes
+%Date: Thu, 09 Jan 2014 01:15:41 GMT
+Connection: keep-alive
+dSet-Cookie: fly_device=desktop; expires=Thu, 16-Jan-2014 01:15:41 GMT; path=/; domain=.cbsnews.com
+ö
+define([
+    'jquery',
+    'version!fly/components/base'
+], function($) {
+    $.widget( 'cbsnews.outbrain', $.fly.base, {
+
+        /**
+         * Optional data configuration
+         * @define {object}
+         */
+        options: {
+            siteDomain: '',
+            pageUrl: '',
+            widgetId: '',
+            articleId: '',
+            pageType: '',
+            template: ''
+        },
+
+        /**
+         * Instantiate nrelate
+         * @constructor
+         */
+        _create: function() {
+
+            var o = this.options,
+                self = this;
+
+            // Call base setup method
+            this._setup();
+
+            // Initialize the nrelate js.
+            require(['outbrain'], function() {});
+        }
+    });
+});

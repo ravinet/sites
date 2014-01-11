@@ -1,0 +1,49 @@
+PHTTP192.150.16.64"Ç
+nGET /content/dotcom/en/index/_jcr_content/contentbody/caroslider/par/layersref_1.js?_=1389227419380 HTTP/1.1
+Host: www.adobe.com
+Connection: keep-alive
+pAccept: text/javascript, application/javascript, application/ecmascript, application/x-ecmascript, */*; q=0.01
+"X-Requested-With: XMLHttpRequest
+vUser-Agent: Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/31.0.1650.63 Safari/537.36
+ Referer: http://www.adobe.com/
+$Accept-Encoding: gzip,deflate,sdch
+!Accept-Language: en-US,en;q=0.8
+¦Cookie: mbox=check#true#1389227479|session#1389227418322-215795#1389229279|PC#1389227418322-215795.25_04#1390437020; JSESSIONID=1f8d2969-362b-486a-9266-bbce10a8ccbd
+
+*³
+HTTP/1.1 200 OK
+%Date: Thu, 09 Jan 2014 00:30:07 GMT
+Server: Apache
+X-Adobe-Content: WCMS
+OSet-Cookie: JSESSIONID=ea0cca7d-8858-4ae4-813a-3144c1f0cf53; Path=/; HttpOnly
+.Last-Modified: Wed, 08 Jan 2014 22:37:34 GMT
+Cache-Control: max-age=21600
+(Expires: Thu, 09 Jan 2014 06:30:07 GMT
+Content-Length: 531
+Keep-Alive: timeout=2
+Connection: Keep-Alive
+Content-Type: text/javascript
+•
+
+(function($,a) {
+    var head = $("head")[0];
+
+    if(!$ || !a || !a.dom || !a.dom.CSSStyleSheet || !head) {
+        return;
+    }
+    
+    function initTargetPoster($) {
+        if($ == undefined) {
+            return;
+        }
+        var els = $("#index-contentbody-caroslider-par-layersref-1");
+        if (els.length) {
+        
+            $(".sitenav > div.LayoutPTop").toggleClass("SiteHeaderUserItemInvert SiteHeaderCartInvert", true);
+        
+        }
+    }
+
+    $(initTargetPoster);
+
+})(window.jQuery,window.adobe);

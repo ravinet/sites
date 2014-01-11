@@ -1,0 +1,22 @@
+PHTTP54.243.78.169"¿
+NGET /meter-echo.js?callback=NYT_meterBackupCallback&_=1389227030975 HTTP/1.1
+Host: meter-svc.nytimes.com
+Connection: keep-alive
+Accept: */*
+vUser-Agent: Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/31.0.1650.63 Safari/537.36
+"Referer: http://www.nytimes.com/
+$Accept-Encoding: gzip,deflate,sdch
+!Accept-Language: en-US,en;q=0.8
+»Cookie: RMID=007f01001c2352cdec08002e; adxcs=-; nyt-recommend=1; nyt5_disable=true; nyt-a=8cb87218249bcbe2e18a5091c1ab2d8b; tagx-l=sessionIndex%3D1%26sessionStart%3D1389227018316%26isNewSession%3D1%26lastRequest%3D1389227018316%26prevRequest%3D0%26firstReferrer%3D%26firstLanding%3Dhttp%253A%252F%252Fwww.nytimes.com%252F%26firstSeen%3D1389227018316%26browserSession%3D1; tagx-s=referrer%3D%26landing%3Dhttp%253A%252F%252Fwww.nytimes.com%252F%26start%3D1389227018316%26isNew%3D1%26pageIndex%3D1; tagx-p=prevPage%3D%26currPage%3Dhttp%253A%252F%252Fwww.nytimes.com%252F; WT_FPC=id=9b26ab87-5509-4f87-8b99-79257363fdc5:lv=1389227030899:ss=1389227030899; nyt-m=44AFE8AFA3D99AD9ECE1BF09EDFEBA1E&e=i.1391230800&t=i.10&v=i.0&l=l.25.-1.-1.-1.-1.-1.-1.-1.-1.-1.-1.-1.-1.-1.-1.-1.-1.-1.-1.-1.-1.-1.-1.-1.-1.-1&n=i.2&g=i.0&rc=i.0&er=i.1389227018&vr=l.4.0.0.0.0&pr=l.4.1.0.0.0&vp=i.0&gf=l.10.-1.-1.-1.-1.-1.-1.-1.-1.-1.-1&ft=i.0&fv=i.0&gl=l.5.-1.-1.-1.-1.-1&cav=i.0&imu=i.1&igu=i.1&prt=i.5&ica=i.0&iue=i.0&ier=i.0&iub=i.0&ifv=i.0&igd=i.0&iga=i.0&imv=i.0&igf=i.0&iru=i.0&ird=i.0&ira=i.0&iir=i.1
+
+*É
+HTTP/1.1 200 OK
+Cache-Control: max-age=300
+(Content-Type: application/x-javascript
+%Date: Thu, 09 Jan 2014 00:23:38 GMT
+(Expires: Thu, 09-Jan-2014 00:28:38 GMT
+Server: nginx/1.0.0
+Content-Length: 464
+Connection: keep-alive
+Ò
+NYT_meterBackupCallback({"nyt-m":"44AFE8AFA3D99AD9ECE1BF09EDFEBA1E&e=i.1391230800&t=i.10&v=i.0&l=l.25.-1.-1.-1.-1.-1.-1.-1.-1.-1.-1.-1.-1.-1.-1.-1.-1.-1.-1.-1.-1.-1.-1.-1.-1.-1&n=i.2&g=i.0&rc=i.0&er=i.1389227018&vr=l.4.0.0.0.0&pr=l.4.1.0.0.0&vp=i.0&gf=l.10.-1.-1.-1.-1.-1.-1.-1.-1.-1.-1&ft=i.0&fv=i.0&gl=l.5.-1.-1.-1.-1.-1&cav=i.0&imu=i.1&igu=i.1&prt=i.5&ica=i.0&iue=i.0&ier=i.0&iub=i.0&ifv=i.0&igd=i.0&iga=i.0&imv=i.0&igf=i.0&iru=i.0&ird=i.0&ira=i.0&iir=i.1"});

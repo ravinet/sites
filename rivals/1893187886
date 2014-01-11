@@ -1,0 +1,350 @@
+PHTTP8.27.149.126"Ï
+!GET /js/teammenus08.js HTTP/1.1
+Host: vmedia.rivals.com
+Connection: keep-alive
+Accept: */*
+vUser-Agent: Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/31.0.1650.63 Safari/537.36
+!Referer: http://www.rivals.com/
+$Accept-Encoding: gzip,deflate,sdch
+!Accept-Language: en-US,en;q=0.8
+
+*ØB
+HTTP/1.1 200 OK
+%Date: Thu, 09 Jan 2014 01:49:58 GMT
+(Expires: Thu, 09 Jan 2014 16:20:44 GMT
+.Last-Modified: Tue, 23 Sep 2008 05:58:42 GMT
+(Content-Type: application/x-javascript
+ETag: "9b5bf96e411dc91:480"
+Accept-Ranges: bytes
+Server: Microsoft-IIS/6.0
+X-Powered-By: ASP.NET
+Cache-Control: max-age=86400
+Content-Length: 8176
+ò?
+
+var sClassHorz			= "MenuItem";
+var sClassVert			= "MenuItemDropdown";
+var sClassHorzSelected	= "MenuItemSelected";
+var sClassVertSelected	= "MenuItemDropdownSelected";
+var sClassVertSelected2	= "MenuItemDropdownSelectedNoUnderline";
+var sClassHide			= "MenuItemHide";
+var sClassShow			= "MenuItemShow";
+var sMenuHorz			= "Menus";
+var sMenuVert			= "Dropdown";
+var bDOM 				= (document.getElementById) ? true : false;
+var bNS4				= (document.layers) ? true : false;
+var bIE 				= (document.all) ? true : false;
+var bIE4 				= bIE && !bDOM;
+var bMac 				= (navigator.appVersion.indexOf("Mac") != -1);
+var bIE4M	 			= bIE4 && bMac;
+var bIE5M				= bIE && bMac;
+var bIE5W				= bIE && !bMac;
+var bNS6				= (navigator.vendor == ("Netscape6") || navigator.product == ("Gecko"));
+
+function mouseOverItem(obj)
+{
+	var strAttr = "";
+	if (bIE)
+		strAttr = "className";
+	else
+		strAttr = "class";
+
+	var strClass = obj.getAttribute(strAttr);
+	if (SiteID == 1014 || SiteID == 1185) {
+		if (strClass == sClassHorz)
+		{
+			obj.setAttribute(strAttr, sClassHorzSelected, true);
+			if (isArray(sMenuHorz))
+			{
+				var arrDivs = eval(sMenuHorz);
+				var sID = obj.id;
+				var arrName = sID.split("_");
+				if (arrName.length >= 2 && !isNaN(arrName[1]))
+				{
+					var index = parseInt(arrName[1]);
+					if (arrDivs.length > index)
+					{
+						var div = document.getElementById(arrDivs[index][0]);
+						if (div != null)
+						{
+							arrDivs[index][1] = true;
+							div.setAttribute(strAttr, sClassShow, true);
+							if (index >= 5) {
+								if (bIE) {
+									var iTop = getAbsPos(obj,"Top") + obj.offsetHeight;
+								} else {
+									var iTop = getAbsPos(obj,"Top") + obj.offsetHeight + 10;
+								}
+							} else {
+								var iTop = getAbsPos(obj,"Top") + obj.offsetHeight + 7;
+							}
+							if (sID == 'menu_3') {
+								var iLeft = getAbsPos(obj,"Left") - 160;
+							} else if (sID == 'menu_4') {
+								var iLeft = getAbsPos(obj,"Left") - 185;
+							} else if (sID == 'menu_1') {
+								var iLeft = getAbsPos(obj,"Left") - 9;
+							} else if (sID == 'menu_2') {
+								var iLeft = getAbsPos(obj,"Left") - 8;
+							} else {
+								var iLeft = getAbsPos(obj,"Left");
+							}
+							setMenuStyle(div, iLeft, iTop);
+						}
+					}
+				}
+			}
+		}
+		else if(strClass == sClassVert)
+		{
+			obj.setAttribute(strAttr, sClassVertSelected, true);
+			var sID = obj.id;
+			if (sID == 'menu_3_14' || sID == 'menu_3_15' || sID == 'menu_3_16' || sID == 'menu_3_17') {
+				obj.setAttribute(strAttr, sClassVertSelected2, true);
+			} else {
+				obj.setAttribute(strAttr, sClassVertSelected, true);
+			}
+			var arrName = sID.split("_");
+			if (arrName.length >= 2)
+			{
+				var arrDivs = eval(sMenuHorz)
+				var index = parseInt(arrName[1]);
+				if (arrDivs.length > index)
+				{
+					arrDivs[index][2] = true;
+				}
+				strName = sMenuVert;
+				for( i = 1; i < arrName.length - 1; ++i)
+				{
+					strName += "_" + arrName[i];
+				}
+				if (isArray(strName))
+				{
+					arrDivs = eval(strName);
+					index = parseInt(arrName[arrName.length - 1]);
+					if (arrDivs.length > index)
+					{
+						var div = document.getElementById(arrDivs[index][0]);
+						if (div != null)
+						{
+							arrDivs[index][1] = true;
+							div.setAttribute(strAttr, sClassShow, true);
+							var iTop = getAbsPos(obj,"Top"); obj.offsetHeight;
+							var iLeft = getAbsPos(obj,"Left") + obj.offsetWidth;
+							setMenuStyle(div, iLeft, iTop);
+						}
+					}
+				}
+			}
+		}
+	} else {
+		if (strClass == sClassHorz)
+		{
+			obj.setAttribute(strAttr, sClassHorzSelected, true);
+			if (isArray(sMenuHorz))
+			{
+				var arrDivs = eval(sMenuHorz);
+				var sID = obj.id;
+				var arrName = sID.split("_");
+				if (arrName.length >= 2 && !isNaN(arrName[1]))
+				{
+					var index = parseInt(arrName[1]);
+					if (arrDivs.length > index)
+					{
+						var div = document.getElementById(arrDivs[index][0]);
+						if (div != null)
+						{
+							arrDivs[index][1] = true;
+							div.setAttribute(strAttr, sClassShow, true);
+							var iTop = getAbsPos(obj,"Top") + obj.offsetHeight + 9;
+							var iLeft = getAbsPos(obj,"Left");
+							setMenuStyle(div, iLeft, iTop);
+						}
+					}
+				}
+			}
+		}
+		else if(strClass == sClassVert)
+		{
+			obj.setAttribute(strAttr, sClassVertSelected, true);
+			var sID = obj.id;
+			var arrName = sID.split("_");
+			if (arrName.length >= 2)
+			{
+				var arrDivs = eval(sMenuHorz)
+				var index = parseInt(arrName[1]);
+				if (arrDivs.length > index)
+				{
+					arrDivs[index][2] = true;
+				}
+				strName = sMenuVert;
+				for( i = 1; i < arrName.length - 1; ++i)
+				{
+					strName += "_" + arrName[i];
+				}
+				if (isArray(strName))
+				{
+					arrDivs = eval(strName);
+					index = parseInt(arrName[arrName.length - 1]);
+					if (arrDivs.length > index)
+					{
+						var div = document.getElementById(arrDivs[index][0]);
+						if (div != null)
+						{
+							arrDivs[index][1] = true;
+							div.setAttribute(strAttr, sClassShow, true);
+							var iTop = getAbsPos(obj,"Top"); obj.offsetHeight;
+							var iLeft = getAbsPos(obj,"Left") + obj.offsetWidth;
+							setMenuStyle(div, iLeft, iTop);
+						}
+					}
+				}
+			}
+		}
+	}
+	/*
+	alert(obj.id);
+	alert(obj.offsetWidth);
+	alert(obj.offsetHeight);
+	*/
+}
+
+function mouseOutItem(obj)
+{
+	if (bIE)
+		strAttr = "className";
+	else
+		strAttr = "class";
+	var strClass = obj.getAttribute(strAttr);
+	if (strClass == sClassHorzSelected)
+	{
+		obj.setAttribute(strAttr, sClassHorz, true);
+		if (isArray(sMenuHorz))
+		{
+			var arrDivs = eval(sMenuHorz);
+			var sID = obj.id
+			var arrName = sID.split("_");
+			if (arrName.length >= 2 && !isNaN(arrName[1]))
+			{
+				var index = parseInt(arrName[1]);
+				if (arrDivs.length > index)
+				{
+					if (arrDivs[index][2] == false)
+					{
+						var div = document.getElementById(arrDivs[index][0]);
+						if (div != null)
+						{
+							arrDivs[index][1] = false;
+							setTimeout("hideMenus()",10)
+						}
+					}
+				}
+			}
+		}
+	}
+	else if(strClass == sClassVertSelected)
+	{
+		obj.setAttribute(strAttr, sClassVert, true);
+		var sID = obj.id;
+		var arrName = sID.split("_");
+		var bHide = false;
+		if (arrName.length >= 2 && !isNaN(arrName[1]))
+		{
+			var arrDivs = eval(sMenuHorz)
+			var index = parseInt(arrName[1]);
+			if (arrDivs.length > index)
+			{
+				arrDivs[index][2] = false;
+				bHide = true;
+			}
+			strName = sMenuVert;
+			for( i = 1; i < arrName.length - 1; ++i)
+			{
+				strName += "_" + arrName[i];
+			}
+			if (isArray(strName))
+			{
+				arrDivs = eval(strName);
+				index = parseInt(arrName[arrName.length - 1]);
+				if (arrDivs.length > index)
+				{
+					var div = document.getElementById(arrDivs[index][0]);
+					if (div != null)
+					{
+						arrDivs[index][2] = false;
+						bHide = true;
+					}
+				}
+			}
+		}
+		if (bHide == true)
+			setTimeout("hideMenus()",10)
+	}
+}
+
+function resetMenus()
+{
+	var arrDivs = eval(sMenuHorz);
+	for (i = 0; i < arrDivs.length; ++i)
+	{
+		arrDivs[i][1] = false;
+		arrDivs[i][2] = false;
+	}
+	hideMenus();
+
+}
+
+function openUrl(sURL)
+{
+	resetMenus();
+	window.location = sURL;
+}
+
+function hideMenus()
+{
+	var arrDivs = eval(sMenuHorz);
+	for (i = 0; i < arrDivs.length; ++i)
+	{
+		if (arrDivs[i][1] == false)
+		{
+			if (arrDivs[i][2] == false)
+			{
+				var div = document.getElementById(arrDivs[i][0]);
+				if (div != null)
+				{
+					div.setAttribute(strAttr, sClassHide, true);
+					setMenuStyle(div, -100, -100);
+				}
+			}
+		}
+	}
+
+}
+
+function setMenuStyle(obj, ileft, itop)
+{
+	if (bIE)
+	{
+		obj.style.top = itop;
+		obj.style.left = (ileft - 4);
+	}
+	else
+	{
+		obj.setAttribute("style", "left:" + (ileft - 4) + "px; top: " + itop + "px; position:absolute;",true);
+	}
+
+}
+function getAbsPos(elt,which)
+{
+	iPos = 0;
+	while (elt != null)
+	{
+		iPos += elt["offset" + which];
+		elt = elt.offsetParent;
+	}
+	return iPos;
+}
+function isArray(arrayname)
+{
+	return ((typeof eval("window." + arrayname) == "object") && (eval(arrayname).length >= 1))
+}

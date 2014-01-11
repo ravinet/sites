@@ -1,0 +1,26 @@
+PHTTP69.20.31.45"Ù
+GET /crossdomain.xml HTTP/1.1
+Host: search.spotxchange.com
+Connection: keep-alive
+vUser-Agent: Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/31.0.1650.63 Safari/537.36
+Accept: */*
+CReferer: http://embed.newsinc.com/thumbnail/iframe.html?wid=13109
+$Accept-Encoding: gzip,deflate,sdch
+!Accept-Language: en-US,en;q=0.8
+
+*Ì
+HTTP/1.1 200 OK
+%Date: Wed, 08 Jan 2014 16:56:58 GMT
+@Server: Apache/2.2.23 (Unix) mod_ssl/2.2.23 OpenSSL/1.0.0-fips
+.Last-Modified: Thu, 02 Jan 2014 22:52:43 GMT
+!ETag: "1406c4-8b-4ef04a6baa4c0"
+Accept-Ranges: bytes
+Content-Length: 139
+"Keep-Alive: timeout=60, max=9995
+Connection: Keep-Alive
+Content-Type: application/xml
+ç
+<cross-domain-policy>
+    <site-control permitted-cross-domain-policies="all"/>
+    <allow-access-from domain="*"/>
+</cross-domain-policy>

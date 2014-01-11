@@ -1,0 +1,30 @@
+PHTTP204.79.197.200"Ç
+%GET /Passport.aspx?popup=1 HTTP/1.1
+Host: www.bing.com
+Connection: keep-alive
+TAccept: text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8
+vUser-Agent: Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/31.0.1650.63 Safari/537.36
+Referer: http://www.bing.com/
+$Accept-Encoding: gzip,deflate,sdch
+!Accept-Language: en-US,en;q=0.8
+ÏCookie: MUIDB=069DC9634FB369BD2174CCDE4EAC6954; OrigMUID=069DC9634FB369BD2174CCDE4EAC6954%2c7561b2774acd49819defcc2a767f4879; SRCHUID=V=2&GUID=33E5226C955B40A8837DF413D49C59A4; SRCHUSR=AUTOREDIR=0&GEOVAR=&DOB=20140109; SRCHHPGUSR=CW=937&CH=1036; SCRHDN=ASD=0&DURL=#; _FS=NU=1; SRCHD=MS=3168016&D=3168016&AF=NOFORM; FBS=WTS=1389226588133&CR=-1; WLS=TS=63524823375; _SS=SID=6740073B9F95436698BA9C0E13B52C74&C=20&bIm=891776; MUID=069DC9634FB369BD2174CCDE4EAC6954&TUID=1; _HOP=I=1&TS=1389226576
+
+*è
+HTTP/1.1 200 OK
+Cache-Control: no-cache
+Transfer-Encoding: chunked
+(Content-Type: text/html; charset=utf-8
+Server: Microsoft-IIS/8.0
+?P3P: CP="NON UNI COM NAV STA LOC CURa DEVa PSAa PSDa OUR IND"
+-Set-Cookie: _HOP=; domain=.bing.com; path=/
+Edge-control: no-store
+ÉX-MSEdge-Ref: Ref A: 1B40603AAF7D4FCCB13184B21B6E9A9B Ref B: 9D934021EA0B5852C915B4C7C36B71B6 Ref C: Wed Jan 08 16:16:16 2014 PST
+%Date: Thu, 09 Jan 2014 00:16:15 GMT
+¬
+1b4
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html><head><title>Bing</title></head><body>Loading...<script type="text/javascript">//<![CDATA[
+var _w = window;var o = _w.opener;var mainWindow;(mainWindow = o) || (mainWindow = _w.parent);if (mainWindow){mainWindow.sj_evt && mainWindow.sj_evt.fire("wl:cancel");};if (o) _w.close();;
+//]]></script></body></html>
+0
+

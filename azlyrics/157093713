@@ -1,0 +1,22 @@
+PHTTP85.17.159.246"É
+GET /new/rec.js HTTP/1.1
+Host: www.azlyrics.com
+Connection: keep-alive
+Accept: */*
+vUser-Agent: Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/31.0.1650.63 Safari/537.36
+#Referer: http://www.azlyrics.com/
+$Accept-Encoding: gzip,deflate,sdch
+!Accept-Language: en-US,en;q=0.8
+
+*¶
+HTTP/1.1 200 OK
+Server: nginx
+%Date: Wed, 08 Jan 2014 17:02:57 GMT
+(Content-Type: application/x-javascript
+Content-Length: 835
+.Last-Modified: Sat, 05 May 2012 19:52:19 GMT
+Connection: keep-alive
+Accept-Ranges: bytes
+Å
+var dz=document;
+dz.write("<a href=\"http://www.top100lyrics.com/in/?id=216\" target=\"_blank\">Top100Lyrics.com</a><br><a href=\"http://www.seeklyrics.com\" target=\"_blank\">SeekLyrics.com</a><br><a href=\"http://www.lyricstop.com\" target=\"_blank\">LyricsTop.com</a><br><a href=\"http://www.alivelyrics.com\" target=\"_blank\" >Alive Lyrics</a><br><a href=\"http://www.oldielyrics.com\" target=\"_blank\" >OldieLyrics.com</a><br><a href=\"http://www.starpulse.com\" target=\"_blank\" >StarPulse.com</a><br><a href=\"http://www.jango.com/\" target=\"_blank\" >Jango.com</a><br><a href=\"http://www.artistdirect.com/\" target=\"_blank\" >ArtistDirect.com</a><br><a href=\"http://www.urbanlyrics.com/\" target=\"_blank\">UrbanLyrics.com</a><br><a href=\"http://www.gotchamovies.com\" target=\"_blank\">GotchaMovies.com</a><br><br>");

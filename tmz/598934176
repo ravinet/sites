@@ -1,0 +1,57 @@
+PHTTP54.240.190.132"É
+(GET /qcpix0.html?cid=WS-TMZ00 HTTP/1.1
+Host: www.webspectator.com
+Connection: keep-alive
+TAccept: text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8
+vUser-Agent: Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/31.0.1650.63 Safari/537.36
+Referer: http://www.tmz.com/
+$Accept-Encoding: gzip,deflate,sdch
+!Accept-Language: en-US,en;q=0.8
+*Cookie: webspectracking=2d8dc6dd45a9a652
+
+*´
+HTTP/1.1 200 OK
+Content-Type: text/html
+Content-Length: 1120
+Connection: keep-alive
+%Date: Wed, 11 Dec 2013 18:54:31 GMT
+.Last-Modified: Wed, 11 Dec 2013 18:45:47 GMT
+*ETag: "c18a1420ed86baa9f4a1d038c1c36371"
+Accept-Ranges: bytes
+Server: AmazonS3
+Age: 20793
+X-Cache: Hit from cloudfront
+GVia: 1.1 302732daa4ff2a8f50315b6b462b9c64.cloudfront.net (CloudFront)
+GX-Amz-Cf-Id: VGpbJbVp9vXAyuZJmtGKQVOLHWRh_vaa_jwbEdQUGnG8hQODgaNyOw==
+â
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8" />
+        <title>..::qc pixel::..</title>
+    </head>
+    <body style="margin: 0; padding: 0;">
+        <!-- Quantcast Tag -->
+        <script type="text/javascript">
+            var _qevents = _qevents || [];
+            (function() {
+            var elem = document.createElement('script');
+            elem.src = (document.location.protocol == "https:" ? "https://secure" : "http://edge") + ".quantserve.com/quant.js";
+            elem.async = true;
+            elem.type = "text/javascript";
+            var scpt = document.getElementsByTagName('script')[0];
+            scpt.parentNode.insertBefore(elem, scpt);
+            })();
+            _qevents.push({
+            qacct:"p-HGAVM7nQJ_sep"
+            });
+        </script>
+
+        <noscript>
+            <div style="display:none;">
+                <img src="//pixel.quantserve.com/pixel/p-HGAVM7nQJ_sep.gif" border="0" height="1" width="1" alt="Quantcast" />
+            </div>
+        </noscript>
+        <!-- End Quantcast tag -->
+    </body>
+</html>

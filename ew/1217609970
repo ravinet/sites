@@ -1,0 +1,36 @@
+PHTTP
+18.7.20.69"ß
+GET /crossdomain.xml HTTP/1.1
+,Host: timeinc.brightcove.com.edgesuite.net
+Connection: keep-alive
+vUser-Agent: Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/31.0.1650.63 Safari/537.36
+Accept: */*
+ Referer: http://www.ew.com/ew/
+$Accept-Encoding: gzip,deflate,sdch
+!Accept-Language: en-US,en;q=0.8
+
+*þ
+HTTP/1.1 200 OK
+Server: Apache
+5ETag: "a658088938234a8105b92a1baa25555f:1336146176"
+.Last-Modified: Fri, 04 May 2012 15:42:56 GMT
+Accept-Ranges: bytes
+Content-Length: 512
+Content-Type: application/xml
+:Access-Control-Allow-Origin: http://admin.brightcove.com
+0Access-Control-Allow-Headers: X-Requested-With
+%Date: Thu, 09 Jan 2014 13:38:53 GMT
+Connection: keep-alive
+:Access-Control-Allow-Origin: http://admin.brightcove.com
+0Access-Control-Allow-Headers: X-Requested-With
+‚
+<?xml version="1.0"?>
+<cross-domain-policy>
+	<!-- Note: secure=false is confusing, but basically its saying
+	        to allow SSL connections.  Their reasoning is something
+	        about SSL content being made less secure somehow.  Go
+	        look it up if you want to know more than this. -->
+	<allow-access-from domain="*.brightcove.co.jp" secure="false" />
+	<allow-access-from domain="*.brightcove.com" secure="false" />
+	<allow-access-from domain="*.brightcove.tv" secure="false" />
+</cross-domain-policy>

@@ -1,0 +1,34 @@
+PHTTP173.194.43.58"ö
+=GET /pixel?google_nid=pubmatic&google_cm&google_sc HTTP/1.1
+Host: cm.g.doubleclick.net
+Connection: keep-alive
+TAccept: text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8
+vUser-Agent: Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/31.0.1650.63 Safari/537.36
+8Referer: http://ads.pubmatic.com/AdServer/js/showad.js
+$Accept-Encoding: gzip,deflate,sdch
+!Accept-Language: en-US,en;q=0.8
+(Cookie: test_cookie=CheckForPermission
+
+*‚
+
+HTTP/1.1 302 Found
+¥P3P: policyref="http://googleads.g.doubleclick.net/pagead/gcn_p3p_.xml", CP="CURa ADMa DEVa TAIo PSAo PSDo OUR IND UNI PUR INT DEM STA PRE COM NAV OTC NOI DSP COR"
+œSet-Cookie: id=22945bcc7e0200e2||t=1389388798|et=730|cs=002213fd4856289efb259f9e5a; expires=Sun, 10-Jan-2016 21:19:58 GMT; path=/; domain=.doubleclick.net
+mSet-Cookie: test_cookie=; domain=.doubleclick.net; path=/; Max-Age=0; expires=Mon, 21 Jul 2008 23:59:00 GMT
+œLocation: http://image2.pubmatic.com/AdServer/Pug?vcode=bz0yJnR5cGU9MSZjb2RlPTIxNzcmdGw9MTI5NjAw&piggybackCookie=CAESEHIrJ_hRapFaKofv6lM--Gc&google_cver=1
+%Date: Fri, 10 Jan 2014 21:19:58 GMT
+Pragma: no-cache
+(Expires: Fri, 01 Jan 1990 00:00:00 GMT
+*Cache-Control: no-cache, must-revalidate
+(Content-Type: text/html; charset=UTF-8
+Server: HTTP server (unknown)
+Content-Length: 349
+!X-XSS-Protection: 1; mode=block
+Alternate-Protocol: 80:quic
+ß
+<HTML><HEAD><meta http-equiv="content-type" content="text/html;charset=utf-8">
+<TITLE>302 Moved</TITLE></HEAD><BODY>
+<H1>302 Moved</H1>
+The document has moved
+<A HREF="http://image2.pubmatic.com/AdServer/Pug?vcode=bz0yJnR5cGU9MSZjb2RlPTIxNzcmdGw9MTI5NjAw&amp;piggybackCookie=CAESEHIrJ_hRapFaKofv6lM--Gc&amp;google_cver=1">here</A>.
+</BODY></HTML>

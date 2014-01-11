@@ -1,0 +1,29 @@
+PHTTP23.75.81.207"¡
+ìGET /cg/v5us/?fv=dmn%3Djcpenney.com%3Bref%3D%3Burl%3Dhttp%253A%252F%252Fwww.jcpenney.com%252F%3Bscrw%3D1920%3Bscrh%3D1200%3Bclrd%3D24%3Bcok%3D1%3B&uat=PaidSearch%3DFalse%3B&tst=0.983&jsver=5.13&mmid=196154076%7CAQAAAAoODvudBQoAAA%3D%3D&pd=884723206%7CAQAAAAoBQg4O%2B50FCsQZNXIBAOCrSC7t2tBIAAwAAADgq0gu7drQSAAAAAD%2F%2F%2F%2F%2FAP%2F%2F%2F%2F%2F%2F%2F%2F%2F%2FAAZEaXJlY3QBBQoBAAAAAAABAAAAAAD%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F8AAAAAAAFF&srv=cg6.use&pageid=mmpers&ri=2&rul= HTTP/1.1
+Host: service.maxymiser.net
+Connection: keep-alive
+Accept: */*
+vUser-Agent: Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/31.0.1650.63 Safari/537.36
+#Referer: http://www.jcpenney.com/
+$Accept-Encoding: gzip,deflate,sdch
+!Accept-Language: en-US,en;q=0.8
+
+*¬
+HTTP/1.1 200 OK
+Server: nginx
+.Content-Type: text/javascript; charset=utf-8
+Content-Length: 630
+NCache-Control: no-store, no-cache, must-revalidate,post-check=0, pre-check=0
+Pragma: no-cache
+(Expires: Sun, 06 Jan 1980 01:00:00 GMT
+$Last-Modified: 01/09/2014 00:59:28
+'P3P: CP="DEV IND NOI OTC OUR PSA PSD"
+X-Node: cg6.use
+X-Node: node2.use
+%Date: Thu, 09 Jan 2014 00:59:27 GMT
+Connection: keep-alive
+ø
+mmcore.SetCookie('mmid','1311861737|AgAAAAoODvudBQoAAA==',365,1);mmcore.SetCookie('pd','-1877621611|AgAAAAoBQg4O+50FCsQZNXIBANSScy7t2tBIAAwAAADgq0gu7drQSAAAAAD/////AP//////////AAZEaXJlY3QBBQoBAAAAAAABAAAAAAD///////////////8AAAAAAAFF',365);mmcore.SetCookie('srv','cg6.use',365);(function(){if(typeof(mmcore.GenInfo)!='object')mmcore.GenInfo={};mmcore.EH=function(e){var s=e.message+'\r\n';if(!window.mm_error)window.mm_error=s;else window.mm_error+=s;};
+if(typeof mmcore._callback=='object'&&typeof mmcore._callback[2]=='function'){try{mmcore._callback[2]();}catch(err){mmcore.EH(err);}
+finally{mmcore._callback[2]=null;}}
+})();

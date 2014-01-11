@@ -1,0 +1,26 @@
+PHTTP184.73.172.240"Î
+ïGET /event?a=553701075&d=553701075&y=false&s536712581=direct&s538992278=gc&s539001624=none&s553840423=false&n=http%3A%2F%2Fwww.politico.com%2F&u=oeu1389373068874r0.9293693001382053&wxhr=true&t=1389373068879&f=544371399,554811171 HTTP/1.1
+$Host: 553701075.log.optimizely.com
+Connection: keep-alive
+vUser-Agent: Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/31.0.1650.63 Safari/537.36
+!Origin: http://www.politico.com
+Accept: */*
+#Referer: http://www.politico.com/
+$Accept-Encoding: gzip,deflate,sdch
+!Accept-Language: en-US,en;q=0.8
+
+*ý
+HTTP/1.1 200 OK
+(Access-Control-Allow-Credentials: true
+)Access-Control-Allow-Methods: POST, GET
+6Access-Control-Allow-Origin: http://www.politico.com
+ Content-Type: application/json
+%Date: Fri, 10 Jan 2014 16:57:35 GMT
+9P3P: CP="IDC DSP COR CURa ADMa OUR IND PHY ONL COM STA"
+Server: nginx/1.2.7
+ŠSet-Cookie: end_user_id=oeu1389373068874r0.9293693001382053; Domain=.553701075.log.optimizely.com; expires=Mon, 08 Jan 2024 16:57:35 GMT
+~Set-Cookie: fixed_external_553701075_end_user_id=; Domain=.optimizely.com; expires=Thu, 01 Jan 1970 00:00:00 GMT; Max-Age=-1
+Content-Length: 2
+Connection: keep-alive
+
+{}

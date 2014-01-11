@@ -1,0 +1,29 @@
+PHTTP107.21.44.119"¼
+×GET /firstevent?d_nsid=0&d_ld=_ts%3D1389229367990&c_valid=false&c_name=&c_keywords=&c_envr=&c_ugc=0&c_twig=0&c_rating=pg&d_rtbd=json&d_jsonv=1&d_dst=1&d_cts=1&d_cb=demdexRequestCallback_dm_0_1389229367990 HTTP/1.1
+Host: dm.demdex.net
+Connection: keep-alive
+Accept: */*
+vUser-Agent: Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/31.0.1650.63 Safari/537.36
+"Referer: http://www.cracked.com/
+$Accept-Encoding: gzip,deflate,sdch
+!Accept-Language: en-US,en;q=0.8
+7Cookie: demdex=71997193958442436523163916207514906657
+
+*“
+HTTP/1.1 200 OK
+bCache-Control: no-cache,no-store,must-revalidate,max-age=0,proxy-revalidate,no-transform,private
+4Content-Type: application/javascript;charset=UTF-8
+4DCS: va6-dcsAS1-10-89-2-241.va6.demdex.com 1.15.34
+(Expires: Thu, 01 Jan 2009 00:00:00 GMT
+cP3P: policyref="/w3c/p3p.xml", CP="NOI NID CURa ADMa DEVa PSAa PSDa OUR SAMa BUS PUR COM NAV INT"
+Pragma: no-cache
+ Server: Jetty(7.6.8.v20121106)
+zSet-Cookie: dm=71997193958442436523163916207514906657;Path=/;Domain=.dm.demdex.net;Expires=Sat, 09-Jan-2016 01:02:35 GMT
+†Set-Cookie: DexLifeCycle="MA==|MjUwNTkzPTE6MTgzNCwxODY4MD0xOjE4MzQsNjUyODk9MToxODM0|MA==|NTU1NzEsMjEzNzcsNTU0MDMsNTU0MTIsNTU0MTEsMzk0OTksMjE0MywyMTQ1NSw1NTQxNCw1NTQzNSwyMTQxMA==|MA==|MA==|MA==";Path=/;Domain=.dm.demdex.net;Expires=Sat, 09-Jan-2016 01:02:35 GMT
+ÈSet-Cookie: dextp=288-2-1389229355|540-1-1389229355|843-1-1389229355|771-1-1389229355|420-1-1389229355|21-2-1389229355|22-2-1389229355;Path=/;Domain=.demdex.net;Expires=Sat, 09-Jan-2016 01:02:35 GMT
+RSet-Cookie: DST=;Path=/;Domain=.demdex.net;Expires=Sat, 09-Jan-2016 01:02:35 GMT
+	STS: OK
+Content-Length: 1669
+Connection: keep-alive
+‡
+demdexRequestCallback_dm_0_1389229367990({"dests":[],"stuff":[{"cn":"aam_dm","cv":"test=success","ttl":90,"dmn":""},{"cn":"gpt_aam","cv":"dx=99252","ttl":90,"dmn":""}],"ibs":[{"id":"540","ttl":1440,"tag":"img","url":["//pixel.tapad.com/idsync/ex/receive?partner_id=ADB&partner_url=http%3A%2F%2Fdpm.demdex.net%2Fibs%3Adpid%3D540%26dpuuid%3D%24%7BTA_DEVICE_ID%7D&partner_device_id=71997193958442436523163916207514906657"]},{"id":"843","ttl":20160,"tag":"img","url":["//e.nexac.com/e/demdex_sync.xgi?na_exid=71997193958442436523163916207514906657"]},{"id":"771","ttl":20160,"tag":"img","url":["//cm.g.doubleclick.net/pixel?google_nid=adobe_dmp&google_cm"]},{"id":"420","ttl":14400,"tag":"img","url":["//su.addthis.com/red/usync?pid=16&puid=71997193958442436523163916207514906657&url=http%3A%2F%2Fdpm.demdex.net%2Fibs%3Adpid%3D420%26dpuuid%3D%7B%7Buid%7D%7D"]}],"dpcalls":[{"id":"288","ttl":14400,"tag":"iframe","url":["//r.nexac.com/e/getdata.xgi?dt=br&pkey=cmet59prscq84&ru=http%3A%2F%2Fnexac.demdex.net%2Fnexac.html%3Fna_da%3A%3Cna_da%3E"],"callback":{"obj":"","fn":"","key":"","tag":"","url":""}},{"id":"21","ttl":14400,"tag":"js","url":["//adadvisor.net/adscores/g.json?sid=9233633946"],"callback":{"obj":"Targus","fn":"parseInfo","key":"targus","tag":"img","url":"//dpm.demdex.net/demdot.jpg?et:dpm|dpid:21|data:"}},{"id":"22","ttl":14400,"tag":"js","url":["//api.bizographics.com/v1/profile.json?api_key=6332f8b7316a4d1284e9c1217a367347&callback=Demdex.parseBizo"],"callback":{"obj":"Demdex","fn":"parseBizo","key":"bizographics","tag":"img","url":"//dpm.demdex.net/demdot.jpg?et:dpm|dpid:22|data:"}}],"uuid":"71997193958442436523163916207514906657","dcs_region":9})

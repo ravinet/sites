@@ -1,0 +1,263 @@
+»HTTPS206.46.232.195"æ
+ßGET /sso/VOLPortalLogin?loginType=ghlogin&module=AIAW&source=http%3A%2F%2Fentertainment.verizon.com%2F&goto=https%253a%252f%252fsignin.verizon.com%252fsso%252fProcessLoginServlet%253ftarget%253dhttps%25253a%25252f%25252fwww.verizon.com%25252fforyourhome%25252fmyaccount%25252fngen%25252fpr%25252fcommon%25252fergcon.aspx%25253fTarget%25253d HTTP/1.1
+Host: signin.verizon.com
+Connection: keep-alive
+TAccept: text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8
+vUser-Agent: Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/31.0.1650.63 Safari/537.36
+,Referer: http://entertainment.verizon.com/
+$Accept-Encoding: gzip,deflate,sdch
+!Accept-Language: en-US,en;q=0.8
+‚Cookie: session=dedbc878d9a5e403b33e6cfb17ee3c4ce1602951-1389291659; AkaUTrackingID=ED9E74DB6C6A85739B059B0E3CDD66B7; AkaSTrackingID=0ED0E8BF0EBE5531153FA26810C834DF; V347=CT-USR; __gads=ID=bed5a7a4fa048928:T=1389291661:S=ALNI_MZzhy8rrCtbr9TeE7xu7nV8OlLmzQ
+
+*ù`
+HTTP/1.1 200 OK
+%Date: Thu, 09 Jan 2014 18:21:02 GMT
+Server: Apache
+Cache-Control: no-cache
+Pragma: no-cache
+Content-Length: 11876
+Expires: 0
+uSet-Cookie: VZSSOCOM_SESSIONID=TRPJSTyTV56CGkYpHh5TS0LyX6pYV0MDYRB687gHxFCD3bdKhrhD!-1804426425!-1906757055; path=/
+#X-Powered-By: Servlet/2.5 JSP/2.1
+iP3P: policyref="/p3p/w3c/p3p.xml", CP="CAO DSP COR CUR ADM TAI PSD IVAi IVDi OTPi OTRi STP PHY ONL UNI"
+!Keep-Alive: timeout=15, max=100
+Connection: Keep-Alive
+(Content-Type: text/html; charset=UTF-8
+æ\
+
+
+
+
+
+		
+
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+<!-- Instance name: comsso7a -->
+<title>Sign In</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<!--  Start SiteCatalyst -->
+<script type="text/javascript" src="//nexus.ensighten.com/verizon/Bootstrap.js"></script>
+<!--  End SiteCatalyst -->
+<link href="/sso/resources/css/iframe_ghp.css" rel="stylesheet" type="text/css">
+
+<script type="text/javascript" src="https://auth.verizon.com/bharosa_web/js/AC_OETags.js"></script>
+
+<script type="text/javascript" src="/sso/resources/js/iframe_ghp.js"></script>
+
+
+
+<script language="javascript">
+function popupPwdTip(){
+				var popupURL = 'https://signin.verizon.com/sso/resources/html/passwordhint.html';
+				window.open(popupURL,'passwordHint','width=450,height=200:,left=300,top=250,menubar=no,location=no,resizable=yes,scrollbars=no,status=yes');
+			}
+			
+function Validate()
+{
+	
+	var objSignInPW;
+	var objSignInUID = document.signinghp.IDToken1;
+	var stl=document.getElementById("stlValue").value;		
+	if(stl!='Y'){
+	 objSignInPW = document.signinghp.IDToken2;
+	}
+	if(objSignInUID.value.length == 0){
+		alert('Please enter your User ID.');
+		objSignInUID.focus();
+		return false;
+	}else if(objSignInUID.value.length > 50){
+		alert('User ID can not be longer than 50 characters.');
+		objSignInUID.focus();
+		return false;
+	}else if(!(/^[A-Za-z0-9.\-_@]{1,100}$/.test(objSignInUID.value))){
+		alert('You have entered a User ID with invalid characters. \nPlease enter a User ID using letters, numbers or dots. \nCharacters such as &, $, %, / or space may not be used.');
+		objSignInUID.focus();
+		return false;
+	}else if(stl!='Y' && objSignInPW.value.length == 0){
+		alert('Please enter your Password.');
+		objSignInPW.focus();
+		return false;
+	}else if(stl!='Y' && objSignInPW.value.length < 6){
+		alert('Password must contain at least 6 characters.');
+		objSignInPW.focus();
+		return false;
+	}else if(stl!='Y' && objSignInPW.value.length > 24){
+		alert('Password must contain less than 24 characters.');
+		objSignInPW.focus();
+		return false;
+	}
+
+  	if(document.signinghp.destination != null && document.signinghp.destination.value != null) {
+	  	var strUrl = document.signinghp.amLoginUrl.value;
+	  	var strSuffix = "ergcon.aspx%253fTarget%253d";
+	  	var strEncoded = "ergcon.aspx%25253fTarget%25253d";
+
+	  	if(document.signinghp.destination.value == 'second') {
+		  	if((strUrl.indexOf(strSuffix, strUrl.length - strSuffix.length) != -1) || (strUrl.indexOf(strEncoded, strUrl.length - strEncoded.length) != -1)) {
+			  	document.signinghp.amLoginUrl.value = strUrl + "http%2525253A%2525252F%2525252Fentertainment.verizon.com";				  
+		  	} else {
+				 if((strUrl.indexOf(strSuffix) != -1) || (strUrl.indexOf(strEncoded) != -1)) {
+					 var splitTarget = null;
+					 if(strUrl.indexOf(strSuffix) != -1) {
+						 splitTarget = strUrl.split(strSuffix);
+					 } else if(strUrl.indexOf(strEncoded) != -1) {
+						 splitTarget = strUrl.split(strEncoded);
+					 }
+				 	 document.signinghp.amLoginUrl.value = strUrl.replace(splitTarget[1], "http%2525253A%2525252F%2525252Fentertainment.verizon.com");
+				 }
+		  	}
+	  	}
+	  	if(document.signinghp.destination.value == 'third') {
+		  	if((strUrl.indexOf(strSuffix, strUrl.length - strSuffix.length) != -1) || (strUrl.indexOf(strEncoded, strUrl.length - strEncoded.length) != -1)) {
+			  	document.signinghp.amLoginUrl.value = strUrl + "https%2525253A%2525252F%2525252Fwww22.verizon.com%2525252FForYourHome%2525252Febillpay%2525252Fcode%2525252FMyVerizon2%2525252FCode%2525252FPaymentOptions.aspx";	  
+		  	} else {
+			 	if((strUrl.indexOf(strSuffix) != -1) || (strUrl.indexOf(strEncoded) != -1)) {
+					var splitTarget = null;
+				 	if(strUrl.indexOf(strSuffix) != -1) {
+						splitTarget = strUrl.split(strSuffix);
+				 	} else if(strUrl.indexOf(strEncoded) != -1) {
+						splitTarget = strUrl.split(strEncoded);
+				 	}
+				 	document.signinghp.amLoginUrl.value = strUrl.replace(splitTarget[1], "https%2525253A%2525252F%2525252Fwww22.verizon.com%2525252FForYourHome%2525252Febillpay%2525252Fcode%2525252FMyVerizon2%2525252FCode%2525252FPaymentOptions.aspx");
+			 	}
+		  	}
+	  	}
+	  	if(document.signinghp.destination.value == 'fourth') {
+		  	if((strUrl.indexOf(strSuffix, strUrl.length - strSuffix.length) != -1) || (strUrl.indexOf(strEncoded, strUrl.length - strEncoded.length) != -1)) {
+			  	document.signinghp.amLoginUrl.value = strUrl + "https%2525253A%2525252F%2525252Fwww22.verizon.com%2525252Fforyourhome%2525252Fmyaccount%2525252Fngen%2525252Fpr%2525252Fsvcs%2525252Fhome.aspx";				  
+		  	} else {
+				 if((strUrl.indexOf(strSuffix) != -1) || (strUrl.indexOf(strEncoded) != -1)) {
+					 var splitTarget = null;
+					 if(strUrl.indexOf(strSuffix) != -1) {
+						 splitTarget = strUrl.split(strSuffix);
+					 } else if(strUrl.indexOf(strEncoded) != -1) {
+						 splitTarget = strUrl.split(strEncoded);
+					 }
+				 	document.signinghp.amLoginUrl.value = strUrl.replace(splitTarget[1], "https%2525253A%2525252F%2525252Fwww22.verizon.com%2525252Fforyourhome%2525252Fmyaccount%2525252Fngen%2525252Fpr%2525252Fsvcs%2525252Fhome.aspx");
+			 	}
+		  	}
+	  	}
+	  	if(document.signinghp.destination.value == 'fifth') {
+		  	if((strUrl.indexOf(strSuffix, strUrl.length - strSuffix.length) != -1) || (strUrl.indexOf(strEncoded, strUrl.length - strEncoded.length) != -1)) {
+			  	document.signinghp.amLoginUrl.value = strUrl + "https%2525253A%2525252F%2525252Fwww22.verizon.com%2525252FFORYOURHOME%2525252FGOFLOW%2525252FMyVerizon%2525252FRegistrationBridge.aspx%2525253FFlowRoute%2525253DUPGRADE-RENEW%25252526URCSource%2525253DSSOiFrame%25252526Client%2525253DMYVER";				  
+		  	} else {
+				 if((strUrl.indexOf(strSuffix) != -1) || (strUrl.indexOf(strEncoded) != -1)) {
+					 var splitTarget = null;
+					 if(strUrl.indexOf(strSuffix) != -1) {
+						 splitTarget = strUrl.split(strSuffix);
+					 } else if(strUrl.indexOf(strEncoded) != -1) {
+						 splitTarget = strUrl.split(strEncoded);
+					 }
+				 	document.signinghp.amLoginUrl.value = strUrl.replace(splitTarget[1], "https%2525253A%2525252F%2525252Fwww22.verizon.com%2525252FFORYOURHOME%2525252FGOFLOW%2525252FMyVerizon%2525252FRegistrationBridge.aspx%2525253FFlowRoute%2525253DUPGRADE-RENEW%25252526URCSource%2525253DSSOiFrame%25252526Client%2525253DMYVER");
+			 	}
+		  	}
+	  	}
+	  	document.signinghp.action = document.signinghp.amLoginUrl.value;
+	}
+ 	
+  	// Parent or Referrer URL from GHP
+	if(document.signinghp.parentURL != null && document.signinghp.parentURL.value != '' && document.signinghp.parentURL.value != 'null') {
+  	  	if(document.signinghp.destination != null && (document.signinghp.destination.value == '' || document.signinghp.destination.value == 'first')) {
+  	  		document.signinghp.amLoginUrl.value = document.signinghp.amLoginUrl.value + encodeURIComponent(encodeURIComponent(encodeURIComponent(encodeURIComponent(document.signinghp.parentURL.value))));
+  	  	}  		
+	}
+
+  	if (document.signinghp.RemMe.checked == 1){
+		document.signinghp.action = document.signinghp.amLoginUrl.value + "%26RememberMe=true";
+	} else {
+		document.signinghp.action = document.signinghp.amLoginUrl.value;
+	}
+  	
+  	document.getElementById('scbResSignInBtn').click();
+	document.signinghp.submit();
+	return false;
+}
+</script>
+
+</head>
+
+<body onload="putFocus();">
+
+<!-- <object><embed src="%=cfg.getProperty("iframe.oaam.bharosa.swf")%>" width="0" height="0"></embed></object>-->
+<!-- Retrieve DB values - Start -->
+
+
+
+<div style="display: block;" id="signin_ws2012">
+	
+	<div style="display: block; right: 5000px;" id="menu-signin2012">
+	
+	<form name="signinghp" id="signinghp" method="post">
+	
+		<input type="hidden" name="amLoginUrl" value=https://auth.verizon.com/amserver/UI/Login?realm=dotcom&module=AIAW&clientId=ghlogin&top=yes&goto=https://signin.verizon.com/sso/authsso/loginProcess.jsp?target=https%253a%252f%252fsignin.verizon.com%252fsso%252fProcessLoginServlet%253ftarget%253dhttps%25253a%25252f%25252fwww.verizon.com%25252fforyourhome%25252fmyaccount%25252fngen%25252fpr%25252fcommon%25252fergcon.aspx%25253fTarget%25253d>
+		<input type="hidden" name="clientId" value=ghlogin>
+		<input type="hidden" name="parentURL" value=http://entertainment.verizon.com/>
+		 	
+		<input type="hidden" name="stl" value="N" id="stlValue"/>	
+			
+		<fieldset id="nSignedIn">
+			<div style="width:200px;">
+				<div class="middle">
+					<div class="title">
+						Sign In
+					</div>					
+					
+
+					<div class="userid_section">
+						<label id="userid_label2012" for="IDToken1"> User ID </label>
+						<input type="text" style="width:190px" name="IDToken1" id="IDToken1" autocomplete="off"  value=""  />
+					</div>
+					
+					<div class="pswd_section">
+						<label id="pswd_label2012" for="IDToken2">Password</label>
+						<input type="password" style="width:190px;" name="IDToken2" id="IDToken2" value="" autocomplete="off" />
+					</div>
+					<div style="height:12px;" class="fixer">&nbsp;</div>									
+					
+
+			<input type="hidden" name="destination" id="destination" value="" />
+						<div id="ssoWhereToDIV" style="" class="scbressprite" onclick="ssoToggleWhereTo();">
+							<div id="ssoWhereToText" style="" class="scbressprite">
+                   	Where To?
+               	</div>
+			</div>
+			<div style="position:relative;">
+               	<div id="ssoWhereToOptions" style="display:none;">
+                    <div><a id="ssoWTopt1" class="selected" href="javascript:void(0);" onclick="ssoWTChoose(1);">Where To?</a></div>
+                    <div><a id="ssoWTopt2" class="" href="javascript:void(0);" onclick="ssoWTChoose(2);">Email, News, & TV</a></div>
+                    <div><a id="ssoWTopt3" class="" href="javascript:void(0);" onclick="ssoWTChoose(3);">Pay My Bill</a></div>
+                    <div><a id="ssoWTopt4" class="" href="javascript:void(0);" onclick="ssoWTChoose(4);">My Services</a></div>
+                    <div><a id="ssoWTopt5" class="" href="javascript:void(0);" onclick="ssoWTChoose(5);">Add or Change Services</a></div>
+               	</div>
+			</div>
+					<div style="height:10px;" class="fixer">&nbsp;</div>
+					<div style="margin:8px 0 0 0;float:left;">
+						<input type="checkbox" name="RemMe"  id="RemMe" style="margin-top:0;">
+						<label for="RemMe">Keep me signed in</label>
+					</div>
+					<button type="submit" class="button fr" onclick="return Validate();"><span class="red_cta"><span><span>Sign&nbsp;In</span></span></span></button>
+					<div style="height:10px;" class="fixer">&nbsp;</div>
+					<p style="float:left;">Do not check if a public computer.</p>
+					<a href="#" onclick="javascript:window.open('/sso/resources/html/ghpkmsi.html','','width=655,height=422');" class="scbressprite scbressignintip"><span class="scbhidden">show keep me signed in information</span></a>
+					<div style="height:12px;" class="fixer">&nbsp;</div>
+					<a name="&amp;lid=//myvz//register" href="https://www22.verizon.com/foryourhome/registration/ngen/regstarted.aspx" target="_parent">Register a new account</a>
+					<div style="height:6px;" class="fixer">&nbsp;</div>
+					<a name="&amp;lid=//myvz//forgotuipw" href="https://signin.verizon.com/sso/forgotflows" target="_parent">Forgot User ID or Password?</a>
+					<div style="height:6px;" class="fixer">&nbsp;</div>
+					<div>
+						Business or Government <a name="&amp;lid=//myvz//signinbusgov" href="https://www22.verizon.com/home/verizonglobalhome/ghp_business.aspx" target="_parent">Sign&nbsp;In</a> Page
+					</div>
+					<div style="height:10px;" class="fixer">&nbsp;</div>
+				</div>
+			</div>
+		</fieldset>
+			<input type="hidden" name="gotoOnFail" id="gotoOnFail">
+			<input type="hidden" value="" name="targetId" id="targetId">
+			<a name="&amp;lid=myvzssosignin_wt_whereto" id="scbResSignInBtn" href="javascript:void(0);"></a>
+		</form>
+	</div>
+</div>
+</body>
+</html>

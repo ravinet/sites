@@ -1,0 +1,21 @@
+PHTTP66.117.23.100"ð
+ÇGET /m2/twcroadrunner/mbox/standard?mboxHost=www.timewarnercable.com&mboxSession=1389275781972-180364&mboxPage=1389275781972-180364&screenHeight=1200&screenWidth=1920&browserWidth=937&browserHeight=1051&browserTimeOffset=-300&colorDepth=24&mboxXDomain=enabled&mboxCount=2&pageName=residential-home&mbox=twc_hp&mboxId=0&mboxTime=1389257782226&mboxURL=http%3A%2F%2Fwww.timewarnercable.com%2Fen%2Fresidential-home.html&mboxReferrer=&mboxVersion=41 HTTP/1.1
+#Host: twcroadrunner.tt.omtrdc.net
+Connection: keep-alive
+Accept: */*
+vUser-Agent: Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/31.0.1650.63 Safari/537.36
+BReferer: http://www.timewarnercable.com/en/residential-home.html
+$Accept-Encoding: gzip,deflate,sdch
+!Accept-Language: en-US,en;q=0.8
+MCookie: mboxSession=1389275781972-180364; mboxPC=1389275781972-180364.17_44
+
+*‚
+HTTP/1.1 200 OK
+$P3P: CP="NOI DSP CURa OUR STP COM"
+’Set-Cookie: mboxPC=1389275781972-180364.17_44; Domain=twcroadrunner.tt.omtrdc.net; Expires=Thu, 23-Jan-2014 13:56:09 GMT; Path=/m2/twcroadrunner
+2Content-Type: text/javascript;charset=ISO-8859-1
+Content-Length: 164
+%Date: Thu, 09 Jan 2014 13:56:08 GMT
+Server: Test & Target
+¦
+mboxFactories.get('default').get('twc_hp',0).setOffer(new mboxOfferDefault()).loaded();mboxFactories.get('default').getPCId().forceId("1389275781972-180364.17_44");

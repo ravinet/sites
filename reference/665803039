@@ -1,0 +1,35 @@
+»HTTPS
+8.18.45.90"û
+MGET /w/tre?ad_id=25355;evt=18970;cat1=24436;cat2=24437;rand=xSTAMP HTTP/1.1
+Host: secure.fastclick.net
+Connection: keep-alive
+Accept: image/webp,*/*;q=0.8
+vUser-Agent: Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/31.0.1650.63 Safari/537.36
+ŒReferer: http://googleads.g.doubleclick.net/pagead/ads?client=ca-pub-9477833578068495&output=html&h=250&slotname=3497878245&adk=326577153&w=300&ea=0&flash=11.9.900&url=www.reference.com&dt=1389121805832&bpp=5&bdt=57&shv=r20131210&cbv=r20131209&saldr=sa&correlator=1389121805890&frm=24&ga_vid=573295077.1389121806&ga_sid=1389121806&ga_hid=1703679204&ga_fc=0&u_tz=-300&u_his=2&u_java=1&u_h=1200&u_w=1920&u_ah=1152&u_aw=1920&u_cd=24&u_nplug=11&u_nmime=54&dff=times%20new%20roman&dfs=16&adx=0&ady=0&biw=-12245933&bih=-12245933&isw=300&ish=250&ifk=578645385&eid=317150312&oid=3&loc=http%3A%2F%2Fwww.reference.com%2F&rs=0&jp=2&vis=1&fu=0&ifi=1&pfi=0&dtd=68
+$Accept-Encoding: gzip,deflate,sdch
+!Accept-Language: en-US,en;q=0.8
+
+*‡	
+HTTP/1.1 302 Found
+%Date: Tue, 07 Jan 2014 19:09:54 GMT
+7Server: Apache/2.2.4 (Unix) mod_apreq2-20090110/2.7.1
+gSet-Cookie: pluto2=559622432033; domain=.fastclick.net; path=/; expires=Thu, 07-Jan-2016 19:09:54 GMT
+}Location: https://www.googleadservices.com/pagead/conversion/1032669722/?label=DOc2CLbJ6AIQmpS17AM&amp;guid=ON&amp;script=0
+Cache-Control: no-cache
+Pragma: no-cache
+Expires: 0
+Content-Length: 305
+-Content-Type: text/html; charset=iso-8859-1
+\Set-Cookie: pluto2=|; domain=.fastclick.net; path=/; expires=Thu, 21-Dec-1972 00:00:00 GMT
+iSet-Cookie: pluto=559622432033|v1; domain=.fastclick.net; path=/; expires=Thu, 07-Jan-2016 19:09:54 GMT
+gP3P: policyref="/w3c/p3p.xml", CP="NOI NID DEVo TAIo PSAo HISo OTPo OUR DELo BUS COM NAV INT DSP COR"
+"Keep-Alive: timeout=5, max=19153
+Connection: Keep-Alive
+³
+<!DOCTYPE HTML PUBLIC "-//IETF//DTD HTML 2.0//EN">
+<html><head>
+<title>302 Found</title>
+</head><body>
+<h1>Found</h1>
+<p>The document has moved <a href="https://www.googleadservices.com/pagead/conversion/1032669722/?label=DOc2CLbJ6AIQmpS17AM&amp;amp;guid=ON&amp;amp;script=0">here</a>.</p>
+</body></html>

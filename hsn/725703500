@@ -1,0 +1,22 @@
+PHTTP208.71.122.27"Â
+@GET /RealMedia/ads/adstream.cap/123?c=crtg&va=1&e=30d HTTP/1.1
+"Host: oascentral.yellowpages.com
+Connection: keep-alive
+Accept: image/webp,*/*;q=0.8
+vUser-Agent: Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/31.0.1650.63 Safari/537.36
+$Accept-Encoding: gzip,deflate,sdch
+!Accept-Language: en-US,en;q=0.8
+
+*ç
+HTTP/1.1 302 Found
+%Date: Fri, 10 Jan 2014 16:49:36 GMT
+ Server: Apache/2.2.3 (Red Hat)
+NP3P: CP="NON NID PSAa PSDa OUR IND UNI COM NAV STA",policyref="/w3c/p3p.xml"
+ZSet-Cookie: crtg=1; path=/; expires=Sun, 09-Feb-14 16:49:36 GMT; domain=.yellowpages.com
+6Location: /RealMedia/ads/Creatives/default/empty.gif
+Content-Length: 0
+Keep-Alive: timeout=60
+Connection: Keep-Alive
+Content-Type: text/plain
+_Set-Cookie: NSC_d12efm_qppm_iuuq=ffffffff09419e4145525d5f4f58455e445a4a423660;path=/;httponly
+

@@ -1,0 +1,87 @@
+PHTTP157.166.226.207"ù
+ôGET /html.ng/site=cnn&cnn_pagetype=main&cnn_position=300x100_bot2&cnn_rollup=homepage&page.allowcompete=no&params.styles=fs&Params.User.UserID=52cdeaf8075f790a3c71ba092304ba18&transactionID=1389226756929713736384512&tile=3426576229843&domId=9019f94d395ac7c4&kxid=&kxseg= HTTP/1.1
+Host: ads.cnn.com
+Connection: keep-alive
+TAccept: text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8
+vUser-Agent: Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/31.0.1650.63 Safari/537.36
+Referer: http://www.cnn.com/
+$Accept-Encoding: gzip,deflate,sdch
+!Accept-Language: en-US,en;q=0.8
+îCookie: optimizelySegments=%7B%22170962340%22%3A%22false%22%2C%22171657961%22%3A%22gc%22%2C%22172148679%22%3A%22none%22%2C%22172265329%22%3A%22direct%22%7D; optimizelyEndUserId=oeu1389226756822r0.26353155612014234; optimizelyBuckets=%7B%7D; optimizelyPendingLogEvents=%5B%5D
+
+*Ú
+HTTP/1.1 200 OK
+%Date: Thu, 09 Jan 2014 00:19:04 GMT
+Server: Apache
+AdServer: ad3ad11:9678:1
+%P3P: CP="NOI DEVa TAIa OUR BUS UNI"
+-Cache-Control: max-age=0, no-cache, private
+(Expires: Thu, 09 Jan 2014 00:19:04 GMT
+Pragma: no-cache
+Content-Length: 3331
+Keep-Alive: timeout=5, max=14
+Connection: Keep-Alive
+Content-Type: text/html
+Ö
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+<head>
+
+<script>
+        function cnnad_getTld (hostname)
+        {
+               var data = hostname.split(".");
+               if (data.length >= 2)
+               {
+                       return (data[data.length-2] + "." + data[data.length-1]);
+               }
+               return(null);
+        }
+ 
+        var cnnDocDomain = cnnad_getTld(location.hostname);
+        if(cnnDocDomain) {document.domain = cnnDocDomain;}
+
+	function cnnGetId(query) {
+		var keyValPairs = query.split('&');
+		if(!keyValPairs) {
+			keyValPairs = new Array();
+			keyValPairs[keyValPairs.length]=query;
+		}
+		for(var counter=0; counter < keyValPairs.length;counter++) {
+			var keyVal = keyValPairs[counter].split('=');
+			if(keyVal[0]=='domId') {
+				//alert("returning id: " + keyVal[1]);
+				return keyVal[1];
+			}
+		}
+	}
+			
+	function cnnSendData2() {
+		var docId = cnnGetId(decodeURIComponent(location.pathname.substring(9)));
+		var height = 100;
+		var width = 300;
+		var targetWindow = top;
+		try
+		{
+			if(parent.cnnad_showAd)
+			{
+				targetWindow = parent;
+			}
+		} catch(err) {} 
+		targetWindow.cnnad_showAd(docId);
+		if ((height > 0)&&(width > 0))
+		{
+			targetWindow.cnnad_setAdSize(docId,height,width);
+		}
+	}
+</script> 
+</head>
+
+<body STYLE="background-color:transparent" onload="cnnSendData2()">
+<!--FlightID: 579947-->
+<IFRAME SRC="http://ad.doubleclick.net/adi/N3175.8535.CNNNETWORK1/B4640114.15;sz=300x100;click0=http://ads.cnn.com/event.ng/Type=click&FlightID=579947&AdID=783933&TargetID=83483&Values=1588&Redirect=;ord=bvAizWf,bjmIAxygWvWji?" WIDTH=300 HEIGHT=100 MARGINWIDTH=0 MARGINHEIGHT=0 HSPACE=0 VSPACE=0 FRAMEBORDER=0 SCROLLING=no BORDERCOLOR='#000000'>
+<SCRIPT language='JavaScript1.1' SRC="http://ad.doubleclick.net/adj/N3175.8535.CNNNETWORK1/B4640114.15;abr=!ie;sz=300x100;click0=http://ads.cnn.com/event.ng/Type=click&FlightID=579947&AdID=783933&TargetID=83483&Values=1588&Redirect=;ord=bvAizWf,bjmIAxygWvWji?">
+</SCRIPT></IFRAME><!-- 26273 -->
+<div style="position:absolute;visibility:hidden;"><img src="http://ads.cnn.com:80/event.ng/Type=count&ClientType=2&ASeg=&AMod=&AOpt=0&AdID=783933&FlightID=579947&TargetID=83483&SiteID=1588&EntityDefResetFlag=0&Segments=730,2247,3285,4134,9496,9779,9781,9853,10381,16113,18517,18982,19419,29793,30363,30550,30582,30708,31777,32594,32749,32822,33852,35605,36376,39416,40253,41850,46694,50742,51962,54897,56802,57125,58197,59467,64667,65113,66311,66499,66501,66615,67029,70329,71288,72858,72984,76849,77230,77483,77689,78122,78367,78545,78650,79522,79686,80441,80857,80947,81082,81289,81321,81377,81379,81514,81588,81750,81762,82123,82366,82531,82615,82641,82647,82696,82724,82759,82817&Targets=82806,83483,192013,82549,77028,192008,192009,192010,165654,188142,191865&Values=62,77,83,100,150,917,972,1285,1588,1711,1822,2677,2746,4448,5017,48213,51449,52897,56058,56872,57005,58570,58702,59474,59986,61089,61263,63528,120875,133354,153947,158387,158914,159052,159543,160031,160032&RawValues=NGUSERID%252C52cdeaf8075f790a3c71ba092304ba18%252CKXID%252C%252CTID%252C1389226756929713736384512%252CTIL%252C3426576229843&random=bvAizWf,bjmIAxygWvWji&Params.tag.transactionid=1389226756929713736384512&Params.User.UserID=52cdeaf8075f790a3c71ba092304ba18" width="1" height="1" border="0" /></div>
+</body>
+</html>

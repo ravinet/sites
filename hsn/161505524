@@ -1,0 +1,99 @@
+PHTTP23.44.194.38"æ
+1GET /images/prod/prodcard/Homepage.css HTTP/1.1
+Host: img.hsni.com
+Connection: keep-alive
+Accept: text/css,*/*;q=0.1
+vUser-Agent: Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/31.0.1650.63 Safari/537.36
+Referer: http://www.hsn.com/
+$Accept-Encoding: gzip,deflate,sdch
+!Accept-Language: en-US,en;q=0.8
+
+*û
+HTTP/1.1 200 OK
+Content-Length: 1455
+Content-Type: text/css
+.Last-Modified: Fri, 27 Sep 2013 19:36:57 GMT
+Accept-Ranges: bytes
+ETag: "691961edb8bbce1:5106"
+Server: Microsoft-IIS/6.0
+X-Powered-By: ASP.NET
+!Cache-Control: max-age=31286083
+%Date: Fri, 10 Jan 2014 16:49:34 GMT
+Connection: keep-alive
+±
+.CarouselCard {
+	width: 242px;
+	height: 394px;
+	background-color: #ffffff;
+	border-radius: 6px;
+	-moz-border-radius: 6px;
+	-webkit-border-radius: 6px;
+	position: relative;
+	overflow: hidden;
+	z-index: 100;
+}
+
+.CardImage {
+	width: 215px;
+	height: 215px;
+	margin: 16px 0 0 13px;
+	
+	overflow: hidden;
+	border-radius: 6px;
+	-moz-border-radius: 6px;
+	-webkit-border-radius: 6px;
+}
+
+.cell-main-x {
+	margin-bottom: 22px;
+	height: 246px;
+	
+	overflow: hidden;
+	border-top-left-radius: 6px;
+	-webkit-border-top-left-radius: 6px;
+	-moz-border-radius-topleft: 6px;
+	
+	border-top-right-radius: 6px;
+	-webkit-border-top-right-radius: 6px;
+	-moz-border-radius-topright: 6px;
+}
+
+.cell-header-x {
+	text-align: center;
+	padding: 0px 10px;
+	height: 100px;
+}
+
+.header1-link-x, .header1-link-x:hover {
+	color: #6b6b6b;
+	font-family: AvalonBook;
+	font-size: 18px;
+	line-height: 20px;
+	text-decoration: none;
+	text-transform: uppercase;
+}
+
+.header1-link-x b {
+	font-family: AvalonBold;
+	font-weight: normal;
+}
+
+.cell-link-x {
+	text-align: center;
+	background-color: #ffffff;
+	height: 26px;
+	overflow: hidden;
+	
+	border-bottom-left-radius: 6px;
+	-webkit-border-bottom-left-radius: 6px;
+	-moz-border-radius-bottomleft: 6px;
+	
+	border-bottom-right-radius: 6px;
+	-webkit-border-bottom-right-radius: 6px;
+	-moz-border-radius-bottomright: 6px;
+}
+
+.cell-linker-x {
+	font-size: 12px;
+	font-family: AvalonBold;
+}

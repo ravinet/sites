@@ -1,0 +1,184 @@
+PHTTP176.32.102.65"í
+*GET /Live/js/dbg.live625x352.js HTTP/1.1
+*Host: player.production.s3.amazonaws.com
+Connection: keep-alive
+Accept: */*
+vUser-Agent: Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/31.0.1650.63 Safari/537.36
+%Referer: http://www.usmagazine.com/
+$Accept-Encoding: gzip,deflate,sdch
+!Accept-Language: en-US,en;q=0.8
+
+*ð)
+HTTP/1.1 200 OK
+Nx-amz-id-2: 3VnsgVM2XLDzw8hiv+2MyDYXGPPmDlTAMQwXzMDoe+gh1Su252T17pSIoBxjugrn
+$x-amz-request-id: CF8F5F704910E762
+%Date: Fri, 10 Jan 2014 16:35:20 GMT
+;x-amz-meta-cb-modifiedtime: Tue, 18 Sep 2012 17:54:09 GMT
+.Last-Modified: Tue, 18 Sep 2012 17:55:49 GMT
+*ETag: "2076e2f9e7a42df90a17e391f2febc77"
+Accept-Ranges: bytes
+(Content-Type: application/x-javascript
+Content-Length: 4916
+Server: AmazonS3
+¶&
+/**
+ * Digital Broadcasting Group.
+ */
+var _gaq = _gaq || [];
+var dbgPlayer = (function()
+{
+    /**
+     * Private Variables
+     */
+    var iframeHeight = 352;
+    var iframeWidth = 625;
+    var jsLoadDateTime = new Date().toString("MM-dd-yy HH:mm:ss");
+    var commonContextRoot = "http://clients.dbgroup.tv.s3.amazonaws.com/";
+    var videoContextRoot = "usweekly/";
+    var videoPlayerWrapper = "usweekly_launchpage_625X352_iframe.html";
+    var locationDomain = "";
+
+    if( typeof applicationConstants != 'undefined' )
+    {
+		videoContextRoot = applicationConstants['videoContextRoot'];
+		commonContextRoot = applicationConstants['commonContextRoot'];
+		videoPlayerWrapper = applicationConstants['videoPlayerWrapper'];
+    }
+
+    if( typeof customConstants != 'undefined' )
+    {
+    	iframeHeight = customConstants['iframeHeight'];
+    	iframeWidth = customConstants['iframeWidth'];
+    }
+
+	/**
+     * Private Method to load an external script.
+     * @param script url
+	 * @param call back method
+     */
+	function loadScript(url, callback)
+	{
+		var script = document.createElement("script")
+		script.type = "text/javascript";
+
+		if (script.readyState){  //IE
+			script.onreadystatechange = function(){
+				if (script.readyState == "loaded" ||
+						script.readyState == "complete"){
+					script.onreadystatechange = null;
+					callback();
+				}
+			};
+		} else {  //Others
+			script.onload = function(){
+				callback();
+			};
+		}
+
+		script.src = url;
+
+        var hasScriptAlready = false;
+		var header = document.getElementsByTagName("body")[0];
+        for(var i=0; i < header.childNodes.length;i++) {
+            var node = header.childNodes[i];
+            if(node.src && node.src.indexOf(url) > -1){
+                hasScriptAlready = true;
+            }
+        }
+
+        if(!hasScriptAlready){
+            header.appendChild(script);
+        }
+        else {
+            callback();
+        }
+	}
+
+	   function setClientDT()
+	    {
+		   jsLoadDateTime = new Date().toString("MM-dd-yy:HH:mm:ss");
+	    }
+
+	   function getLocDomain()
+	   {
+		   return top.location.href;
+	   }
+
+    /**
+     * Private Method to create the google analytics.
+     * @param publisherID
+     */
+    function trackPlayer(publisherID)
+    {
+      _gaq.push(function()
+      {
+           var pageTracker = _gat._createTracker('UA-2526960-16', 'axnTracker');
+          pageTracker._trackEvent('Loaded with URL - JS', publisherID, document.location.href);
+      });
+
+      (function()
+      {
+          var ga = document.createElement('script');
+          ga.type = 'text/javascript';
+          ga.async = true;
+          ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+          var s = document.getElementsByTagName('script')[0];
+          s.parentNode.insertBefore(ga, s);
+      })();
+    }
+
+    /**
+     * Creates an iframe dom object.
+     * @param widgetID
+     * @param publisherID
+     */
+    function createIFrame(width, height)
+    {
+		//http://clients.dbgroup.tv.s3.amazonaws.com/usweekly/usweekly_launchpage_445X250_iframe.html
+        var iframe = document.createElement('iframe');
+
+        videoPlayerWrapper = commonContextRoot + videoContextRoot + videoPlayerWrapper;
+
+  		iframe.src = videoPlayerWrapper;
+
+        iframe.setAttribute('frameBorder', 0);
+        iframe.setAttribute('border', 0);
+        iframe.setAttribute('align', 'top,left');
+        iframe.setAttribute('hspace', 0);
+        iframe.setAttribute('vspace', 0);
+        iframe.setAttribute('marginheight', 0);
+        iframe.setAttribute('marginwidth', 0);
+        iframe.setAttribute('scrolling', 'no');
+        iframe.setAttribute('width', width);
+        iframe.setAttribute('height', height);
+
+        return iframe;
+    }
+
+    return {
+
+        /**
+         * Public Method to create the video player.
+         * @param widgetID
+         * @param publisherID
+         */
+         create: function (publisherID, width, height)
+        {
+
+        	var div;
+            //Track Google Analytics
+            trackPlayer(publisherID);
+            //Inject the iframe
+             div = document.getElementById('dbg_live_' + publisherID);
+             loadScript('http://player.production.s3.amazonaws.com/html/fullpage/js/date.js', function(){
+            	setClientDT() ;
+                     if(div){
+                        div.appendChild(createIFrame(width, height));
+                    	  var img = new Image();
+                    	  img.src = 'http://107.22.156.48/request6/image6.gif?eventType=JS_LIVE_SCRIPT&eventName=JS_USWEEKLY_EVENT&clientDT='+jsLoadDateTime+'&publisherID='+publisherID+'&widgetID=BCSMARTPLAYER&locationDomain='+getLocDomain();
+                    }
+            });
+
+        }
+  };
+})();

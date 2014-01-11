@@ -1,0 +1,65 @@
+PHTTP129.15.96.11"Ç
+ GET /includes/exit.js HTTP/1.1
+Host: www.noaa.gov
+Connection: keep-alive
+Accept: */*
+vUser-Agent: Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/31.0.1650.63 Safari/537.36
+Referer: http://www.noaa.gov/
+$Accept-Encoding: gzip,deflate,sdch
+!Accept-Language: en-US,en;q=0.8
+
+* 
+HTTP/1.0 200 OK
+.Last-Modified: Wed, 13 Nov 2013 19:00:18 GMT
+Accept-Ranges: bytes
+Content-Length: 1172
+&Content-Type: application/javascript
+%Date: Thu, 09 Jan 2014 01:16:04 GMT
+Server: Apache
+$ETag: "c093e210-494-4eb13937a1480"
+(Expires: Thu, 09 Jan 2014 02:16:04 GMT
+Cache-Control: max-age=3600
+
+Age: 130
+Via: 1.0 c7.w3.woc (squid)
+Connection: keep-alive
+–	
+/* exit URL wrapper */
+
+window.onload = function() {
+	wrapExitLinks();
+}
+
+function wrapExitLinks() {
+	var whiteList = "^gov^mil^us^";
+	var exitURL = document.location.protocol + "//" + document.location.host + "/exit.html";
+	var currentBaseURL = document.location.protocol + "//" + document.location.host + document.location.pathname;
+	var links = document.getElementsByTagName("a");
+
+	var linkDest;
+	var linkTLD;
+	var govTLD;
+	if  (currentBaseURL != exitURL) {
+		for (var i in links) {
+			if (linkDest = links[i].hostname) {
+				// Do not wrap addThis links
+				if ((links[i].className.indexOf("addthis_") == -1) && (links[i].className.indexOf("bypass") == -1)) {			
+					linkTLD = linkDest.substr(linkDest.lastIndexOf(".") + 1);
+					if (whiteList.indexOf("^" + linkTLD + "^") == -1) {
+							links[i].href = exitURL + "?" + encodeURIComponent(links[i].href);
+					}
+				}
+			}	
+		}
+	} else {
+		confirmExit();	
+	}
+	
+}
+
+function confirmExit() {
+	var linkDest = decodeURIComponent(document.location.search.substring(1));
+	var exitLink = document.getElementById("exitLink");
+	exitLink.href = linkDest;
+	exitLink.innerHTML = linkDest;
+}

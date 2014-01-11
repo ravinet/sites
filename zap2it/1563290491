@@ -1,0 +1,65 @@
+PHTTP54.230.54.73"Þ
+/GET /allwebhosts/zap2itcom/script.js HTTP/1.1
+Host: script.crsspxl.com
+Connection: keep-alive
+Accept: */*
+vUser-Agent: Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/31.0.1650.63 Safari/537.36
+!Referer: http://www.zap2it.com/
+$Accept-Encoding: gzip,deflate,sdch
+!Accept-Language: en-US,en;q=0.8
+
+*Ö
+
+HTTP/1.1 200 OK
+Content-Type: text/javascript
+Content-Length: 812
+Connection: keep-alive
+%Date: Sat, 07 Dec 2013 18:55:56 GMT
+!Cache-Control: max-age=31536000
+*Expires: Sat, 15 Dec 2012 20:27:39 +0000
+.Last-Modified: Fri, 16 Dec 2011 20:27:40 GMT
+*ETag: "cf385c87deca815aa4b15ee2ad62fb0a"
+Accept-Ranges: bytes
+Server: AmazonS3
+Age: 2924716
+X-Cache: Hit from cloudfront
+GVia: 1.1 fa4c212dab9b7a66f990106c9c360704.cloudfront.net (CloudFront)
+GX-Amz-Cf-Id: oWJcu4V1T1sy3xTatmkYwdKbWReA41bWn5BCuvvjINnFFXL1N4UC3Q==
+®
+try {
+			function crsspxl_trip(t) {
+				var d = document;
+				if (d.body === null || typeof d.body == 'undefined') {
+					if (t < 2500) {
+						var rec = function() {
+							crsspxl_trip(t * 2);
+						};
+						setTimeout(rec, t);
+					}
+				}
+				else {
+					var i = 142;
+					try {
+						var l = d.createElement('script');
+						l.setAttribute('src', 'http://tag.crsspxl.com/s1.js?d=' + i);
+						d.body.appendChild(l);
+					}
+					catch(e) {
+						try {
+							var v = 'http://elmo.crsspxl.com/m.gif?';
+							var x = d.createElement('IMG');
+							x.setAttribute('src', v + 'ec=0&em=' + encodeURIComponent(e) + '&s=' + i);
+							d.body.appendChild(x);
+						} catch(z) {
+						}
+					}
+				}
+			}
+
+			try {
+				crsspxl_trip(100);
+			} catch(e) {
+			}
+		}
+		catch(er) {
+		}

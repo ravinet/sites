@@ -1,0 +1,28 @@
+»HTTPS70.33.182.206"ý
+;GET /ibiview.js?go=240738&xid=&pid=216&ida=&id1= HTTP/1.1
+Host: ibeu2.mookie1.com
+Connection: keep-alive
+Accept: */*
+vUser-Agent: Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/31.0.1650.63 Safari/537.36
+IReferer: http://bcp.crwdcntrl.net/px?Yz0yNjUxJnB4aWQ9NTcwMzAsNTU0NDk%3D
+$Accept-Encoding: gzip,deflate,sdch
+!Accept-Language: en-US,en;q=0.8
+éCookie: id=985272520074447; mdata=1|985272520074447|1389367272; OAX=UxXQxVLQD+gAApcs; ibkukiuno=s=781df74c-2342-4dc6-a24d-a583ec48df46&h=&v=0&l=-8588122396112805069&op=0&m=3001023436102239; ibkukinet=2149469239=-8588122396112805069
+
+*Ë
+
+HTTP/1.1 200 OK
+Cache-Control: no-cache
+Pragma: no-cache
+5Content-Type: application/javascript; charset=utf-8
+Expires: -1
+Server: Microsoft-IIS/7.5
+X-AspNet-Version: 4.0.30319
+X-Powered-By: ASP.NET
+'p3p: CP="DSP COR ADM DEV PSA PSD OUR"
+%Date: Fri, 10 Jan 2014 15:21:13 GMT
+Content-Length: 1025
+ƒ
+
+(function(){try{var ibp=(self.IBPartner)?new IBPartner():null,go='240738'||((self._ibgo&&self._ibgo!=='${SELLER_LINE_ITEM_CODE}')?_ibgo:((ibp)?ibp.Go:'')),id1=''||((ibp)?ibp.Xid:''),xid=''||((ibp)?ibp.Xid:''),ida=''||((ibp)?ibp.Ida:''),pid='216'||((ibp)?ibp.Pid:''),bqzmisa=((self._ibisb&&self._ibisb!=='')?((!ibp)?_ibisb:''):'');if(go!==''&&go!=='iblx'&&go!=='ibcx'){var s=window.document.createElement("script");s.setAttribute('type','text/javascript');s.setAttribute('src','https://ibeu2.mookie1.com/at.js?sessionid=0f095478-d3df-4d5f-b98f-68dbbdcbf04c&go='+go+'&xid='+xid+'&ida='+ida+'&sb='+bqzmisa+'&osid=1a04b95f-2b54-4af1-a372-2d4a6c509e64'+'&pid='+pid+'&id1='+id1);window.document.getElementsByTagName("head")[0].appendChild(s);}}catch(e){}})();function ViewSetup(){}
+function ViewOrigin(){this.Timestamp='1/10/2014 3:21:14 PM';this.Name='iBehavior.Interactive.Web.Templates.ViewSetup.min.js';this.Id='1a04b95f-2b54-4af1-a372-2d4a6c509e64';this.HostPage='px';this.SessionId='0f095478-d3df-4d5f-b98f-68dbbdcbf04c';}

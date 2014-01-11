@@ -1,0 +1,347 @@
+PHTTP
+18.7.20.70"ˆ
+sGET /posttv/feature/resource/render.js?features=posttv-methode-carousel-small,posttv-methode-player-full HTTP/1.1
+Host: www.washingtonpost.com
+Connection: keep-alive
+Accept: */*
+vUser-Agent: Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/31.0.1650.63 Safari/537.36
+)Referer: http://www.washingtonpost.com/
+$Accept-Encoding: gzip,deflate,sdch
+!Accept-Language: en-US,en;q=0.8
+×Cookie: de=131; client_region=0; rpld1=0:mit.edu|20:usa|21:ma|22:cambridge|23:42.363998|24:-71.084999|; mbox=check#true#1389366402|session#1389366341674-752581#1389368202|PC#1389366341674-752581.25_29#1390575942; wpni_poe=true; wapo_vis_id=974757e9-55f4-46e6-84f5-ad76bc89b47b; wapo_sess_id=ee49bf13-1962-4c58-8ec6-9fedde1a7ddc; devicetype=0
+
+*¢F
+HTTP/1.1 200 OK
+ Access-Control-Allow-Origin: *
+Cache-Control: max-age 86400
+Server: nginx
+Content-Length: 8798
+%Date: Fri, 10 Jan 2014 15:05:29 GMT
+Connection: keep-alive
+àD
+$(function() {
+	$('.pb-mod-posttv-methode-carousel-small').each(function(i,el) {
+		var root = $(el);
+		var slidesEl = root.find('.carousel-slides');
+		var prevEl = root.find('.control-left');
+		var nextEl = root.find('.control-right');
+		var titleEl = root.find('.video-headline');
+		var captionEl = root.find('.video-caption');
+		var videoTextEl = root.find('.video-text');
+		var paginationDots = root.find('.carousel-pagination-dots').children();
+		var numSlides = slidesEl.children().length;
+		var currentIndex = 0;
+		var autoTime = 8000;
+		var autoTimeout = null;
+		var doAuto = (typeof slidesEl.attr('data-autoplay') == 'undefined' || slidesEl.attr('data-autoplay') != 'false');
+		
+		var doTrack = function(type) {
+			if(!!window.s && typeof s.sendDataToOmniture == 'function') {
+				s.sendDataToOmniture('carousel-interaction','event80',{'eVar49':'hp_small_carousel'});
+			}
+		};
+
+		var gotoSlide = function() {
+			slidesEl.css('margin-left',(currentIndex*-100)+'%');
+
+			paginationDots.removeClass('active');
+			paginationDots.eq(currentIndex).addClass('active');
+
+			setVideoText();
+			
+			if(autoTimeout != null) {
+				clearTimeout(autoTimeout);
+				autoTimeout = setTimeout(nextSlide,autoTime);
+			}			
+		};
+		
+		var setVideoText = function() {
+			var newSlide = slidesEl.children().eq(currentIndex);
+			titleEl.html(newSlide.attr('data-title'));
+			titleEl.attr('href',newSlide.attr('href'));
+			captionEl.html(newSlide.attr('data-caption'));
+		}
+		
+		var nextSlide = function(event) {
+			if(currentIndex < numSlides-1) {
+				currentIndex++;
+			}
+			else {
+				currentIndex = 0;
+			}
+			gotoSlide();
+			
+			if(typeof event != 'undefined') {
+				doTrack();
+			}
+		};
+
+		var prevSlide = function(event) {
+			if(currentIndex > 0) {
+				currentIndex--;
+			}
+			else {
+				currentIndex = numSlides-1;
+			}
+			gotoSlide();
+
+			if(typeof event != 'undefined') {
+				doTrack();
+			}
+		};
+		
+		var dotClicked = function(event) {
+			var jqEl = $(event.currentTarget);
+			currentIndex = jqEl.index();
+			console.log(currentIndex);
+			gotoSlide();
+		};
+		
+		var setTextAreaHeight = function() {
+			var maxHeight = videoTextEl.height();
+			for(var a=1; a<numSlides; a++) {
+				currentIndex = a;
+				setVideoText();
+				if(videoTextEl.height() > maxHeight) {
+					maxHeight = videoTextEl.height();
+				}
+			}
+			videoTextEl.css('height',maxHeight+'px');
+			currentIndex = 0;
+			setVideoText();
+		}
+		
+		var init = function() {
+			prevEl.click(prevSlide);
+			nextEl.click(nextSlide);
+			setTextAreaHeight();
+			paginationDots.click(dotClicked);
+			if(doAuto) {
+				autoTimeout = setTimeout(nextSlide,autoTime);
+			}
+		};
+		
+		if(prevEl.length > 0) {
+			init();
+		}
+	});
+});
+$(function() {
+	var extScripts = [
+		"http://player.ooyala.com/v3/b7011b24c7aa4da0901ec2ebf8ece42c?platform=html5-fallback&version=e282123e8e61f475e3549a68c7ddf5c3f3c7eea1",
+		"http://www.washingtonpost.com/posttv/static/js/posttv/ooyala/plugin.ooyala.postTvScrubber-1.0.0.min.js",
+		"http://www.washingtonpost.com/posttv/static/js/posttv/ooyala/ooyala-player.js",
+		"http://www.washingtonpost.com/posttv/static/js/posttv/ooyala/ooyala-companion-ads.js"
+	];
+	
+	$('.pb-mod-posttv-methode-player-full').each(function(i,el) {
+		var root = $(el);
+		if(root.attr('data-initialized')) {
+			return;
+		}
+		var moduleId = root.attr('id');
+		var moduleType = root.attr('data-pb-name');
+		
+		var playlistEls = root.find('.nav-playlist');
+		var slidesEl = root.find('.carousel-slides');
+		var itemEls = root.find('.carousel-slide-item');
+		var headlineEl = root.find('.video-headline');
+		var tweetEl = root.find('.video-tweet');
+		
+		var prevEl = root.find('.control-left');
+		var nextEl = root.find('.control-right');
+		var playerContainer = root.find('#posttv-player-ooyala');
+		var player = null;
+		
+		var currentSlide = 0;
+		var numSlides = slidesEl.children().length;
+		var currentItem = itemEls.first();
+		
+		var doTrack = function(type) {
+			if(!!window.s && typeof s.sendDataToOmniture == 'function') {
+				s.sendDataToOmniture('carousel-interaction','event80',{'eVar49':'hp_full_module'});
+			}
+		};
+		
+		var playNextVideo = function() {
+			if(currentItem.next()) {
+				currentItem = currentItem.next();
+				playVideo();
+			}
+		}
+		
+		var playVideo = function() {
+			var videoJSON = $.parseJSON(currentItem.attr('data-video-json'));
+			
+			headlineEl.html(videoJSON.contentConfig.title);
+			headlineEl.attr('href',videoJSON.contentConfig.permaLinkURL);
+			
+			itemEls.removeClass('active');
+			currentItem.addClass('active');
+
+			if(player == null) {
+				initPlayer(videoJSON);
+			}
+			else {
+				player.update(videoJSON,{autoplay: 1});
+//				player.play();
+			}
+		};
+		
+		var gotoSlide = function() {
+			slidesEl.css('margin-left',(currentSlide*-100)+'%');
+
+			prevEl.removeClass('disabled');
+			nextEl.removeClass('disabled');
+			if(currentSlide == 0) {
+				prevEl.addClass('disabled');
+			}
+			else if(currentSlide == numSlides-1) {
+				nextEl.addClass('disabled');
+			}
+			
+			doTrack();
+		};
+		
+		var nextSlide = function() {
+			if(currentSlide < numSlides-1) {
+				currentSlide++;
+				gotoSlide();
+			}
+		};
+
+		var prevSlide = function() {
+			if(currentSlide > 0) {
+				currentSlide--;
+				gotoSlide();
+			}
+		};
+				
+		var videoClicked = function(event) {
+			var newVideo = $(event.currentTarget);
+			if(!newVideo.hasClass('active')) {
+				currentItem = newVideo;
+				playVideo();
+			}
+		};
+		
+		var initPlaylist = function(playlistEl) {
+			slidesEl.html(playlistEl.data('slidesHTML'));
+			slidesEl.find('.carousel-slide-item').click(videoClicked);
+			itemEls = slidesEl.find('.carousel-slide-item');
+			currentItem = itemEls.first();
+			playVideo();
+			currentSlide = 0;
+			numSlides = slidesEl.children().length;
+			gotoSlide();
+			slidesEl.removeClass('loading');
+		};
+		
+		var loadPlaylist = function(playlistEl) {
+			var data = {
+				module:JSON.stringify({
+					moduleType:moduleType,
+					displayProps:{}
+				}),
+				playlistPath:playlistEl.attr('data-playlist-path')
+			};
+			$.ajax({
+				url:'http://www.washingtonpost.com/posttv/content/'+moduleId+'/',
+				cache:true,
+				data:data,
+				success:function(data) {
+					var slideEls = $(data.html).children().unwrap();
+					playlistEl.data('slidesHTML',slideEls);					
+					initPlaylist(playlistEl);
+				}
+			});
+		};
+		
+		var playlistClicked = function(event) {
+			var jqEl = $(event.currentTarget);
+			if(!jqEl.hasClass('active')) {
+				playlistEls.removeClass('active');
+				jqEl.addClass('active');
+				slidesEl.addClass('loading');
+				if(jqEl.data('slidesHTML')) {
+					initPlaylist(jqEl);
+				}
+				else {
+					loadPlaylist(jqEl);
+				}
+			}
+		};
+		
+		var tweetClicked = function() {
+			window.open('https://twitter.com/share?url='+encodeURIComponent(currentItem.attr('data-share-url'))+'&via=PostTV&text=' + encodeURIComponent(currentItem.attr('data-video-title')),'_blank','width=550,height=450');
+			if(!!window.s && typeof s.sendDataToOmniture == 'function') {
+				s.sendDataToOmniture('carousel-interaction','event6',{'eVar49':'hp_full_module','eVar17':'video','eVar27':'twitter'});
+			}
+		};
+		
+		var enableHPRefresh = function() {
+			if (!!window.TWP && !!TWP.hpRefreshTests) {
+				TWP.hpRefreshTests['posttv_methode_player_full'] = function () {
+					return false;
+				};
+			}			
+		};
+		
+		var disableHPRefresh = function() {
+			if (!!window.TWP && !!TWP.hpRefreshTests && !!TWP.hpRefreshTests['posttv_methode_player_full']) {
+				delete TWP.hpRefreshTests['posttv_methode_player_full'];
+			}			
+		};
+		
+		var videoPlay = function() {
+			enableHPRefresh();
+		};
+		
+		var videoPause = function() {
+			disableHPRefresh();						
+		};
+		
+		var videoEnd = function() {
+			disableHPRefresh();						
+			playNextVideo();
+		};
+
+		var initPlayer = function(videoJSON) {			
+			playerContainer.parent().addClass('initialized')
+									.css('background-image','')
+									.off('click');
+			
+			if(typeof LazyLoad != 'undefined') {
+				LazyLoad.js(extScripts, function() {
+					player = new TWP.PostTV.Player({
+						json: videoJSON,
+						playerContainerId: playerContainer.attr('id'),
+						playerType: 'hp_full_module',
+						autoplay: 1,
+						hide: 'all'
+					});
+					player.create();
+					OO.ready(function () {
+						player.mb.subscribe(OO.EVENTS.PLAYED, 'postTvModulePlayer', videoEnd);
+						player.mb.subscribe(OO.EVENTS.PLAY, 'postTvModulePlayer', videoPlay);
+		                player.mb.subscribe(OO.EVENTS.PAUSE, 'postTvModulePlayer', videoPause);
+					});
+				});
+			}						
+		};
+
+		var init = function() {
+			root.attr('data-initialized','true');
+			
+			playerContainer.parent().click(playVideo);
+			prevEl.click(prevSlide);
+			nextEl.click(nextSlide);
+			playlistEls.click(playlistClicked);
+			playlistEls.first().data('slidesHTML',slidesEl.children());
+			itemEls.click(videoClicked);
+			tweetEl.click(tweetClicked);
+		};
+		
+		init();
+	});
+});

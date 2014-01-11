@@ -1,0 +1,46 @@
+PHTTP23.45.37.109"Ú
+ GET /event/iframe?01AD=3L2zle_gnLDAX_9qydqBsC1CrhCBhgrQzrur8_LHA_FKZCSPBG3A-kg&01RI=5D0262C7B713833&01NA=na&mt_id=202292&mt_adid=110308&mm_bnc&mm_bct HTTP/1.1
+Host: pixel.mathtag.com
+Connection: keep-alive
+TAccept: text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8
+vUser-Agent: Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/31.0.1650.63 Safari/537.36
+%Referer: http://www.nomorerack.com/
+$Accept-Encoding: gzip,deflate,sdch
+!Accept-Language: en-US,en;q=0.8
+>Cookie: uuid=52cea740-f11e-8460-6dd8-028a45fd92e6; HRL8=CT-1
+
+*‘	
+HTTP/1.1 200 OK
+Content-Type: text/html
+Content-Length: 553
+\Server: mt2/2.9.1+aeb51e0 2.9.1.release Nov 15 2013 16:25:34 ewr-pixel-x1 pid 0x4ab4 19124
+(Expires: Thu, 09 Jan 2014 13:42:24 GMT
+.Cache-Control: max-age=0, no-cache, no-store
+Pragma: no-cache
+%Date: Thu, 09 Jan 2014 13:42:24 GMT
+Connection: keep-alive
+Vary: Accept-Encoding
+]Set-Cookie: HRL8=CT-USR; expires=Thu, 06-Feb-2014 13:42:24 GMT; path=/; domain=.mathtag.com
+ZSet-Cookie: mt_misc=; domain=.mathtag.com; path=/; expires=Sat, 08-Feb-2014 13:42:24 GMT
+;P3P: CP="NON DSP ADM DEV PSD OUR IND STP PHY PRE NAV UNI"
+«
+<html><body><script type='text/javascript'>
+	/*
+	http://pixel.mathtag.com/event/img?mstech=1
+	*/
+
+	var mm_ri = String( Math.random() );
+	mm_ri = mm_ri.replace( /0\./g,'' );
+	
+	var mm_protocol = location.protocol;
+	if ( mm_protocol != 'http:' && mm_protocol != 'https:' ){ mm_protocol = 'http:'; }
+	
+	var mm_el0 = document.createElement('img');
+	var url0 = 'pixel.mathtag.com/event/img?mstech=1';
+	url0 = url0.replace("\[RANDOM_NUMBER\]", mm_ri);
+	mm_el0.width = 1;
+	mm_el0.height = 1;
+	mm_el0.src = mm_protocol + '//' + url0;
+	
+
+</script></body></html>

@@ -1,0 +1,24 @@
+»HTTPS69.171.247.29"ò
+½GET /restserver.php?api_key=249141081161&callback=FB.__globalCallbacks.fb3bc7bdc&format=json-strings&method=fql.query&pretty=0&query=SELECT%20total_count%20FROM%20link_stat%20WHERE%20url%20%3D%20'http%3A%2F%2Fwww.sbnation.com%2Flookit%2F2014%2F1%2F10%2F5295082%2Fspike-lee-fresh-prince-mom-knicks'&sdk=joey HTTP/1.1
+Host: api-read.facebook.com
+Connection: keep-alive
+Accept: */*
+vUser-Agent: Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/31.0.1650.63 Safari/537.36
+#Referer: http://www.sbnation.com/
+$Accept-Encoding: gzip,deflate,sdch
+!Accept-Language: en-US,en;q=0.8
+
+*È
+HTTP/1.1 200 OK
+ Access-Control-Allow-Origin: *
+=Cache-Control: private, no-cache, no-store, must-revalidate
+-Content-Type: text/javascript;charset=utf-8
+(Expires: Sat, 01 Jan 2000 00:00:00 GMT
+Pragma: no-cache
+X-FB-Rev: 1075417
+:X-FB-Debug: Gmn/ktm2gQFWDXeqRWKimVByG1sLHoSuEcA+Hlg3Al8=
+%Date: Fri, 10 Jan 2014 15:24:06 GMT
+Connection: keep-alive
+Content-Length: 59
+=
+/**/ FB.__globalCallbacks.fb3bc7bdc([{"total_count":"6"}]);

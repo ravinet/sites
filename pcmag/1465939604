@@ -1,0 +1,153 @@
+»HTTPS205.251.243.194"µ
+9GET /themes.rbl.ms/theme_5460.css?v=1389152160 HTTP/1.1
+Host: s3.amazonaws.com
+Connection: keep-alive
+Accept: text/css,*/*;q=0.1
+vUser-Agent: Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/31.0.1650.63 Safari/537.36
+aReferer: https://www.rebelmouse.com/embed/elite/PCMagCES?referrer=http%3A%2F%2Fwww.pcmag.com%2F
+$Accept-Encoding: gzip,deflate,sdch
+!Accept-Language: en-US,en;q=0.8
+
+*Û*
+HTTP/1.1 200 OK
+Nx-amz-id-2: bWspNIWVe0xJiGsGCfTQ564zgKtHRm0JEORV7luhYZA3ucFAlJxhTQD2MOdaK9id
+$x-amz-request-id: EA2F9A46C7E682B0
+%Date: Thu, 09 Jan 2014 01:38:10 GMT
+.Last-Modified: Wed, 08 Jan 2014 03:36:01 GMT
+*ETag: "159e78bea8368c516db1a2009ecdc75e"
+Accept-Ranges: bytes
+Content-Type: text/css
+Content-Length: 5100
+Server: AmazonS3
+î'
+@font-face{font-family:'source_sans_prosemibold';src:url('http://www.pcmag.com/fonts/sourcesanspro-semibold-webfont.eot');src:url('http://www.pcmag.com/fonts/sourcesanspro-semibold-webfont.eot?#iefix') format('embedded-opentype'),url('http://www.pcmag.com/fonts/sourcesanspro-semibold-webfont.woff') format('woff'),url('http://www.pcmag.com/fonts/sourcesanspro-semibold-webfont.ttf') format('truetype'),url('http://www.pcmag.com/fonts/sourcesanspro-semibold-webfont.svg#source_sans_prosemibold') format('svg');font-weight:normal;font-style:normal}
+@font-face{font-family:'source_sans_proregular';src:url('http://www.pcmag.com/fonts/sourcesanspro-regular-webfont.eot');src:url('http://www.pcmag.com/fonts/sourcesanspro-regular-webfont.eot?#iefix') format('embedded-opentype'),url('http://www.pcmag.com/fonts/sourcesanspro-regular-webfont.woff') format('woff'),url('http://www.pcmag.com/fonts/sourcesanspro-regular-webfont.ttf') format('truetype'),url('http://www.pcmag.com/fonts/sourcesanspro-regular-webfont.svg#source_sans_proregular') format('svg');font-weight:normal;font-style:normal}
+@font-face{font-family:'source_sans_probold';src:url('http://www.pcmag.com/fonts/sourcesanspro-bold-webfont.eot');src:url('http://www.pcmag.com/fonts/sourcesanspro-bold-webfont.eot?#iefix') format('embedded-opentype'),url('http://www.pcmag.com/fonts/sourcesanspro-bold-webfont.woff') format('woff'),url('http://www.pcmag.com/fonts/sourcesanspro-bold-webfont.ttf') format('truetype'),url('http://www.pcmag.com/fonts/sourcesanspro-bold-webfont.svg#source_sans_probold') format('svg');font-weight:normal;font-style:normal}
+@font-face{font-family:'source_sans_problack';src:url('http://www.pcmag.com/fonts/sourcesanspro-black-webfont.eot');src:url('http://www.pcmag.com/fonts/sourcesanspro-black-webfont.eot?#iefix') format('embedded-opentype'),url('http://www.pcmag.com/fonts/sourcesanspro-black-webfont.woff') format('woff'),url('http://www.pcmag.com/fonts/sourcesanspro-black-webfont.ttf') format('truetype'),url('http://www.pcmag.com/fonts/sourcesanspro-black-webfont.svg#source_sans_problack') format('svg');font-weight:normal;font-style:normal}
+
+/* Change body background */
+body {
+    background-color: #ffffff;
+    background-attachment: fixed;
+}
+ /* Change sitename style */
+.hdr h1, .hdr h1 a {
+    color: #29466B;
+    font: bold 24pt/26pt Tahoma,sans-serif;
+}
+ /* Change default headlines */
+.main .widget .headline {
+    color: #e20309;
+    font: bold 16px/18px Tahoma,sans-serif;
+}
+ /* Change Rebel Navigation */
+.subpage-menu {
+    height: 32px;
+}
+.subpage-menu .go-home.active,.subpage-menu .go-home:hover {
+    background: #FAFAFA;
+    border-bottom-color: #FAFAFA;
+    color: #145A7C;
+    height: 24px;
+}
+.nav-menu li .title {
+    background: #fff;
+    border: 1px solid #DDDDDD;
+    color: #757575;
+    font: bold 12px/16px Tahoma,sans-serif;
+    height: 23px;
+    padding: 7px 15px 0;
+}
+.nav-menu li .title.private {
+    border: 1px dashed #DDDDDD;
+    color: #999999;
+}
+ /* Change first line of headline */
+.main .widget .headline:first-line {
+    color: #e20309;
+    font: bold 16px/18px Tahoma,sans-serif;
+}
+ /* Change splash headline */
+.main .splash .widget .headline,
+.main .splash .widget .headline:first-line {
+   color: #e20309;
+   font: bold 25px/28px Tahoma,sans-serif;
+}
+ /* Change giant splash headline */
+.main .giant-splash .widget .headline {
+   color: #e20309;
+   font: bold 48px/55px  Tahoma, Arial, sans-serif;
+}
+.main .giant-splash .widget .headline:first-line {
+   color: #e20309;
+   font: bold 55px/60px Tahoma,sans-serif;
+}
+ /* Change post headline */
+.main .article-content h1, 
+.main .article-content h1 a {
+    color: #145A7C;
+    font: bold 36px/39px Tahoma,sans-serif;
+}
+ /* Change post body font */
+.article-body, 
+.article-body p {
+    color: #4D4D4D;
+    font: bold 15px/21px Tahoma,sans-serif;
+}
+ /* Change Twitter header */
+.author-head .user .name  {
+    color: #5C5C5C;
+    font: 10px/10px Tahoma,sans-serif;
+}
+ .author-head .user .name .screen {
+    color: #B9B9B9;
+    font: 10px/12px Tahoma,sans-serif;
+}
+.widget:hover .widget-details .widget-date, .widget:hover .user .name .screen {
+    color: #505050;
+}
+ .widget-details .widget-date {
+    color: #B9B9B9;
+}
+.embedded_widget .widget .image-link{
+    margin-bottom:16px !important;
+}
+.embedded_widget .widget .widget-details.tweet-action {
+padding: 0 0 15px;
+}
+.embedded_widget .more-reactions img {
+display:none;
+}
+
+.embedded_widget .subject {
+    background: url('http://www.pcmag.com/img/stack_header.png') no-repeat 0 0;
+    padding-left: 27px;
+    padding: 0;
+    margin: 0;
+    border: none;
+}
+
+.embedded_widget .subject a {
+    font: 32px/38px 'source_sans_probold',sans-serif;
+    text-transform: uppercase;
+    color: #FFF;
+    letter-spacing: .7px;
+    padding: 0 0 0 35px;
+}
+
+/* The "@" on the driver's subject */
+.embedded_widget .subject a span {
+font-size: 24px;
+display: inline-block;
+position: relative;
+top: -4px;
+right: -1px;
+}
+
+.embedded_widget .widget .widget-details.tweet-action {
+    padding-bottom: 24px;
+}
+.widget .original-source {
+    padding: 12px 0 0;
+    margin-bottom: 6px;
+}

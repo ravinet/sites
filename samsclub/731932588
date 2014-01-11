@@ -1,0 +1,27 @@
+PHTTP23.209.44.55"ø
+ÑGET /sams/shop/product/ajax/richRelevanceProductData.jsp?&product=135327%2Cprod30002%2Cprod30006%2Cprod11990121%2Cprod7980013%2Cprod8110125%2Cprod4170211%2Cprod30008%2Cprod11370267%2C183038%2C186775%2Cprod5280616%2Cprod30004%2Cprod11440717%2Cprod3960103%2Cprod7510185%2Cprod2720095%2C196038%2C156274%2Cprod9090067&callback=%3F HTTP/1.1
+Host: www.samsclub.com
+Connection: keep-alive
+8Accept: application/json, text/javascript, */*; q=0.01
+"X-Requested-With: XMLHttpRequest
+vUser-Agent: Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/31.0.1650.63 Safari/537.36
+4Referer: http://www.samsclub.com/sams/homepage.jsp
+$Accept-Encoding: gzip,deflate,sdch
+!Accept-Language: en-US,en;q=0.8
+”Cookie: akaau_P3=1389233721~id=74322847d08e3521a277a01ed6ccf3ea; dcenv=EDC; s_cc=true; s_cmdl=1; s_cm=DirectDirectundefined; s_ev51=%5B%5B'Direct'%2C'1389231934918'%5D%5D; s_nr=1389231934919-New; gpv_p6=Homepage; s_ppv=-; productnum=1; prop_9=Not%20Logged%20In; evar_19=Not%20Logged%20In; s_sq=%5B%5BB%5D%5D; fsr.a=suspended; __gads=ID=789126bae77377fb:T=1389231922:S=ALNI_MZy4Qbgav4qz_zXTWQbgIHmp8WR8A
+
+*ê
+HTTP/1.1 200 OK
+Server: Apache
+SamsHeader: NDC
+forcelegacy: false
+X-Powered-By: JBOSS TomCat
+Content-Length: 1619
+,Content-Type: text/json;charset=ISO-8859-1
+%Date: Thu, 09 Jan 2014 01:45:22 GMT
+Connection: keep-alive
+JSet-Cookie: JSESSIONID=96E3CE6918B605D0CFDADE9F61CC072A.4107-ps3; Path=/
+hSet-Cookie: samsVisitor=432716462; Domain=.samsclub.com; Expires=Sat, 09-Jan-2016 01:45:22 GMT; Path=/
+gSet-Cookie: samsHubbleSession=96E3CE6918B605D0CFDADE9F61CC072A.4107-ps3; Domain=.samsclub.com; Path=/
+Õ
+{"prod2720095":{"clubStock":false,"showPrice":true,"onlinePrice":549,"onlineStock":true},"prod30004":{"clubStock":false,"onlineStock":false},"156274":{"clubStock":false,"showPrice":true,"onlinePrice":27.78,"onlineStock":true},"prod11990121":{"clubStock":false,"showPrice":true,"onlinePrice":228.88,"onlineStock":true},"prod3960103":{"clubStock":false,"showPrice":true,"onlinePrice":129.98,"onlineStock":true},"prod4170211":{"clubStock":false,"showPrice":true,"onlinePrice":16.98,"onlineStock":true},"135327":{"clubStock":false,"showPrice":true,"onlinePrice":10,"onlineStock":true},"prod7510185":{"clubStock":false,"showPrice":true,"onlinePrice":16.98,"onlineStock":true},"prod5280616":{"clubStock":false,"showPrice":true,"onlinePrice":18.98,"onlineStock":true},"prod30006":{"clubStock":false,"onlineStock":false},"prod11440717":{"clubStock":false,"showPrice":true,"onlinePrice":379,"onlineStock":true},"prod30002":{"clubStock":false,"onlineStock":false},"196038":{"clubStock":false,"showPrice":true,"onlinePrice":11.98,"onlineStock":true},"prod11370267":{"clubStock":false,"showPrice":true,"onlinePrice":248,"onlineStock":true},"prod30008":{"clubStock":false,"onlineStock":false},"prod9090067":{"clubStock":false,"showPrice":true,"onlinePrice":16.48,"onlineStock":true},"186775":{"clubStock":false,"showPrice":true,"onlinePrice":19.62,"onlineStock":true},"prod7980013":{"clubStock":false,"showPrice":true,"onlinePrice":94.64,"onlineStock":true},"prod8110125":{"clubStock":false,"showPrice":true,"onlinePrice":31.88,"onlineStock":true},"183038":{"clubStock":false,"showPrice":true,"onlinePrice":9.98,"onlineStock":true}}

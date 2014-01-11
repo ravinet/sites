@@ -1,0 +1,25 @@
+PHTTP
+18.7.20.68"ù
+RGET /?callback=jQuery17107696348044555634_1389371783468&_=1389371784375 HTTP/1.1
+Host: geo.nbcsports.com
+Connection: keep-alive
+Accept: */*
+vUser-Agent: Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/31.0.1650.63 Safari/537.36
+$Referer: http://www.nbcsports.com/
+$Accept-Encoding: gzip,deflate,sdch
+!Accept-Language: en-US,en;q=0.8
+óCookie: s_cc=true; s_fid=05DA50B99F0CDE2C-34D3AC1EAF9372C9; s_ppv=-; s_lv=1389371784189; s_lv_s=First%20Visit; s_nr=1389371784190; s_sq=%5B%5BB%5D%5D
+
+*Ä
+HTTP/1.1 200 OK
+Content-Type: text/html
+Content-Length: 332
+(Expires: Fri, 10 Jan 2014 16:36:11 GMT
+.Cache-Control: max-age=0, no-cache, no-store
+Pragma: no-cache
+%Date: Fri, 10 Jan 2014 16:36:11 GMT
+Connection: keep-alive
+Vary: Accept-Encoding
+ Content-Type: application/json
+Œ
+jQuery17107696348044555634_1389371783468({"continent" : "NA", "country_code" : "US", "region_code" : "MA", "city" : "CAMBRIDGE", "dma" : "506", "msa" : "1122", "pmsa" : "1120", "areacode" : "617", "lat" : "42.3933", "long" : "-71.1333", "county" : "MIDDLESEX", "timezone" : "EST", "zip" : "02138-02142+02238", "military" : "false"})

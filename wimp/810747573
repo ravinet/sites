@@ -1,0 +1,258 @@
+PHTTP208.43.68.142"Ý
+GET / HTTP/1.1
+Host: www.wimp.com
+Connection: keep-alive
+TAccept: text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8
+vUser-Agent: Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/31.0.1650.63 Safari/537.36
+$Accept-Encoding: gzip,deflate,sdch
+!Accept-Language: en-US,en;q=0.8
+
+*ïr
+HTTP/1.1 200 OK
+X-Powered-By: PHP/5.2.17
+USet-Cookie: goog=1; expires=Fri, 10-Jan-2014 05:00:00 GMT; path=/; domain=.wimp.com
+mSet-Cookie: server=benjamin.sisko.wimp.com; expires=Thu, 09-Jan-2014 14:46:41 GMT; path=/; domain=.wimp.com
+2Set-Cookie: country=US; path=/; domain=.wimp.com
+TSet-Cookie: dsk=1; expires=Sat, 08-Feb-2014 13:46:41 GMT; path=/; domain=.wimp.com
+rSet-Cookie: ua=113b8ea79b600d9e3f532ca400c62ae8; expires=Sat, 08-Feb-2014 13:46:41 GMT; path=/; domain=.wimp.com
+Content-type: text/html
+Transfer-Encoding: chunked
+%Date: Thu, 09 Jan 2014 13:46:41 GMT
+Server: lighttpd/1.4.28
+þm
+1e09
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<html xmlns:fb="http://ogp.me/ns/fb#" xmlns:og="http://opengraphprotocol.org/schema/">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>Best Online Videos | Wimp.com</title> 
+<link rel="shortcut icon" href="http://www.wimp.com/favicon.ico" />
+<style type="text/css"><!--
+body {
+	font-family: Arial; font-size: 13px;  
+}
+a { color: #000; }
+a.b:link {color: #000000; text-decoration: none;}
+a.b:visited {color: #800080;}
+a.b:hover {color: #0000CC; text-decoration: underline;}
+.c {color: #0000CC; text-decoration: underline;}
+.video_date {color: #840000;}
+.observe {display: none;}
+#player { position: relative; z-index: 1; }
+.sharetop{margin:20px 0;}
+a.bfacebook{border-radius:4px;-webkit-border-radius:4px;-moz-border-radius:4px;background-color:#3b5898;color:#ffffff;font-weight:bold;font-size:15px;padding:10px 85px 10px 85px;text-decoration: none;}
+a.bfacebook:hover{background-color: #294582;}
+
+.post-to-wall { text-align: center; height: 34px; width: 150px; }
+.like-button { text-align: center; width: 45px; margin: 5px auto 90px auto; height: 60px; }
+
+--></style>
+<script type="text/javascript" src="/js/swfobject.js"></script>
+<script type="text/javascript" src="/js/prototype.js"></script>
+<script type="text/javascript" src="/js/lxUtil.js"></script>
+
+<script type="text/javascript">
+function SelectAll(id)
+{
+    document.getElementById(id).focus();
+    document.getElementById(id).select();
+}
+function search() {
+        var q = $('query').getValue();
+        window.location = 'http://www.wimp.com/search/' + q.replace(" ", "+");
+}
+document.observe("dom:loaded", function() {
+	if($('query')) $('query').observe('keypress', function(event){
+	    if(event.keyCode == Event.KEY_RETURN) {
+		search();
+	        // stop processing the event
+	        Event.stop(event);
+	    }
+	});
+});
+
+</script>
+
+<script language="javascript" type="text/javascript">
+function showHide(shID) {
+   if (document.getElementById(shID)) {
+      if (document.getElementById(shID+'-information').style.display != 'none') {
+         document.getElementById(shID+'-information').style.display = 'none';
+         document.getElementById(shID).style.display = 'block';
+      }
+      else {
+         document.getElementById(shID+'-information').style.display = 'inline';
+         document.getElementById(shID).style.display = 'none';
+      }
+   }
+}
+</script>
+
+<script type="text/javascript" src="/js/jwplayer.js"></script>
+
+<link rel="alternate" type="application/rss+xml" title="Wimp.com | Best Online Videos" href="http://www.wimp.com/rss/" />
+
+
+<meta name="description" content="A collection of the best online videos. Our editors make sure clips added are family friendly." />
+<meta name="keywords" content="videos, clips" />
+<meta name="distribution" content="global" />
+<meta name="classification" content="Videos" />
+<meta name="copyright" content="Wimp.com" />
+<meta name="robots" content="index, follow" />
+
+<meta property="fb:admins" content="100000514339840" /> <meta property="fb:app_id" content="1390201474568235" /></head>
+<body bgcolor="#999999" text="#000000">
+
+<!-- START - ADVERTISEMENT -->
+
+
+<div align="center">
+<script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+<!-- Wimp.com All Pages, 728x90, created 3/3/10 -->
+<ins class="adsbygoogle"
+     style="display:inline-block;width:728px;height:90px"
+     data-ad-client="ca-pub-3396281701261122"
+     data-ad-slot="3344689141"></ins>
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+</div>
+
+<!-- END - ADVERTISEMENT -->
+<br>
+<table border="0" bordercolordark="#CCCCCC" bgcolor="#CCCCCC" bordercolorlight="#CCCCCC" cellpadding="1" cellspacing="2" align="center" width="96%" style="width:1190px;">
+  <tr> 
+    <td width="100%"> 
+      <div align="center"><a target="_self" href="http://www.wimp.com"><font size="7" color="#000000">wimp.com</font></a> 
+      </div>
+    </td>
+  </tr>
+</table>
+<br>
+<table border="0" bordercolordark="#CCCCCC" bgcolor="#CCCCCC" bordercolorlight="#CCCCCC" cellpadding="1" cellspacing="2" align="center" width="96%" style="width:1190px;">
+  <tr> 
+    <td colspan="2"> 
+      <center>
+        <b>Updated Daily</b><br />
+<br /><div id="About">Best videos on the Web. Suitable for all ages.</div><br />
+<b><a href="http://upload.wimp.com/">upload a video / read our FAQ</a></b><br /><br />
+<input id="query" type="text" value="" size="30" style="background-color: #CCCCCC" /> <input type="button" value="Search" onclick="search();" />
+      </center>
+    </td>
+  </tr>
+  <tr> 
+    <td valign="top" bgcolor="#CCCCCC" width="73%" style="padding: 6px; line-height: 18px;"><br>
+      <div align="left"> 
+        <p>
+				        	<span class="video_date">Jan 8</span> - <a class="b" href="/cleverplay/">   Arkansas State runs a clever trick play.</a><br/>
+				        	<span class="video_date">Jan 8</span> - <a class="b" href="/apartmentcontainers/">   An NYC apartment that's made out of shipping containers.</a><br/>
+				        	<span class="video_date">Jan 8</span> - <a class="b" href="/dancelight/">   Japanese troupe &quot;Enra&quot; combines dance and light.</a><br/>
+				        	<span class="video_date">Jan 8</span> - <a class="b" href="/bernardkitten/">   St. Bernard dog plays with a kitten.</a><br/>
+				        	<span class="video_date">Jan 8</span> - <a class="b" href="/hitscake/">   Japanese soccer player hits wedding cake topper with a free kick.</a><br/>
+				<br/>        	<span class="video_date">Jan 7</span> - <a class="b" href="/artpaper/">   Li Hongbo: Making art out of paper.</a><br/>
+				        	<span class="video_date">Jan 7</span> - <a class="b" href="/barbershopshow/">   Barbershop quartet puts on a show while on vacation in Disneyland.</a><br/>
+				        	<span class="video_date">Jan 7</span> - <a class="b" href="/dogsiren/">   Dog imitates a siren.</a><br/>
+				        	<span class="video_date">Jan 7</span> - <a class="b" href="/womangym/">   Woman goes to the gym for 100 days and makes this timelapse video.</a><br/>
+				        	<span class="video_date">Jan 7</span> - <a class="b" href="/fluffyhairball/">   Soft, fluffy hairball is not what it seems...</a><br/>
+				<br/>        	<span class="video_date">Jan 6</span> - <a class="b" href="/coupledances/">   &quot;Elderly&quot; couple dances to Bob Marley's &quot;Is This Love&quot;.</a><br/>
+				        	<span class="video_date">Jan 6</span> - <a class="b" href="/greyhoundsnow/">   Greyhound in Batman pajamas plays in the snow.</a><br/>
+				        	<span class="video_date">Jan 6</span> - <a class="b" href="/homelessbackpack/">   $20 homeless backpack care kit.</a><br/>
+				        	<span class="video_date">Jan 6</span> - <a class="b" href="/lochness/">   &quot;Loch Ness&quot; monster from Russia.</a><br/>
+				        	<span class="video_date">Jan 6</span> - <a class="b" href="/sprintermarathoner/">   Sprinter vs. Marathoner.</a><br/>
+				<br/>        	<span class="video_date">Jan 5</span> - <a class="b" href="/slothcarrots/">   Sloth just wants carrots.</a><br/>
+				        	<span class="video_date">Jan 5</span> - <a class="b" href="/newtable/">   Making a new table from 100-year-old wood.</a><br/>
+				        	<span class="video_date">Jan 5</span> - <a class="b" href="/musicalteeth/">   Musical teeth.</a><br/>
+				        	<span class="video_date">Jan 5</span> - <a class="b" href="/surprisesfamily/">   Guy loses 130 pounds, surprises family with reveal.</a><br/>
+				        	<span class="video_date">Jan 5</span> - <a class="b" href="/fathergames/">   Meet Ralph Baer, the father of video games.</a><br/>
+				<br/>     
+18de
+   	<span class="video_date">Jan 4</span> - <a class="b" href="/meetsnow/">   Meet Mr. Snow White.</a><br/>
+				        	<span class="video_date">Jan 4</span> - <a class="b" href="/acousticmanipulation/">   Three-dimensional mid-air acoustic manipulation.</a><br/>
+				        	<span class="video_date">Jan 4</span> - <a class="b" href="/inexplicablygood/">   Snoop Dogg is inexplicably good at The Price Is Right.</a><br/>
+				        	<span class="video_date">Jan 4</span> - <a class="b" href="/awesomeskateboarder/">   There are no words to describe how awesome this skateboarder is.</a><br/>
+				        	<span class="video_date">Jan 4</span> - <a class="b" href="/mashupstyle/">   2013 music mashup in one take done in postmodern style.</a><br/>
+				<br/>        	<span class="video_date">Jan 3</span> - <a class="b" href="/weatherwater/">   -40 degree Celsius weather with boiling water shot out of a water gun.</a><br/>
+				        	<span class="video_date">Jan 3</span> - <a class="b" href="/driverstar/">   1950s F1 driver Stirling Moss meets current F1 star Lewis Hamilton.</a><br/>
+				        	<span class="video_date">Jan 3</span> - <a class="b" href="/teamhistory/">   NBA team makes history by hitting over 20 three-pointers.</a><br/>
+				        	<span class="video_date">Jan 3</span> - <a class="b" href="/voicedoppelganger/">   Man finds his voice doppelganger in a bar.</a><br/>
+				        	<span class="video_date">Jan 3</span> - <a class="b" href="/singsstars/">   Christina Grimmie sings &quot;Counting Stars&quot; by OneRepublic.</a><br/>
+				<br/>        	<span class="video_date">Jan 2</span> - <a class="b" href="/crewpranks/">   The Price Is Right crew pranks Drew Carey.</a><br/>
+				        	<span class="video_date">Jan 2</span> - <a class="b" href="/shadowdance/">   A touching shadow dance about the loss of a mother.</a><br/>
+				        	<span class="video_date">Jan 2</span> - <a class="b" href="/elephantcuddling/">   Baby elephant loves cuddling.</a><br/>
+				        	<span class="video_date">Jan 2</span> - <a class="b" href="/guitarfan/">   John Mayer takes guitar from fan mid-solo and finishes with it.</a><br/>
+				        	<span class="video_date">Jan 2</span> - <a class="b" href="/beingcold/">   Does being cold give you a cold?</a><br/>
+				<br/>        	<span class="video_date">Jan 1</span> - <a class="b" href="/backwardspiano/">   Backwards piano player.</a><br/>
+				        	<span class="video_date">Jan 1</span> - <a class="b" href="/physicsants/">   The incredible physics of ants.</a><br/>
+				        	<span class="video_date">Jan 1</span> - <a class="b" href="/mansmooth/">   This man is smooth.</a><br/>
+				        	<span class="video_date">Jan 1</span> - <a class="b" href="/processyuzen/">   Japanese process of Yuzen: Hand dyeing material for Kimonos.</a><br/>
+				        	<span class="video_date">Jan 1</span> - <a class="b" href="/guyice/">   Guy falls on ice... responds like a champ.</a><br/>
+				<br/>        	<span class="video_date">Dec 31</span> - <a class="b" href="/behindback/">   Behind the back three point buzzer beater.</a><br/>
+				        	<span class="video_date">Dec 31</span> - <a class="b" href="/yorkiepuppy/">   A cute and smart Yorkie puppy.</a><br/>
+				        	<span class="video_date">Dec 31</span> - <a class="b" href="/sequencegenome/">   How to sequence the human genome.</a><br/>
+				        	<span class="video_date">Dec 31</span> - <a class="b" href="/lovelysong/">   A lovely original song by Lucy Spraggan on The X Factor UK.</a><br/>
+				        	<span class="video_date">Dec 31</span> - <a class="b" href="/groceriesstrangers/">   A mother unable to pay for groceries gets help from strangers.</a><br/>
+		<br/>
+	<a href="/archives/">See Older Entries</a>
+       </div>
+    </td>
+    <td valign="top" style="padding: 24px 6px 6px 6px">
+		<br>
+		<table cellpadding="0" cellspacing="0">
+<tr><td align="left" style="height: 25px; border: 1px solid; border-color: #244588; background-color: #3b5998;"><img style="padding-left: 6px; padding-top: 4px;" src="http://www.wimp.com/images/facebook.jpg" border="0" /></td></tr>
+<tr><td style="border: 1px solid; background-color: #eceff5; border-color: #94a3c4;">
+<iframe src="http://www.facebook.com/plugins/likebox.php?id=270212045657&amp;width=292&amp;connections=0&amp;stream=false&amp;header=true&amp;height=62" scrolling="no" frameborder="0" style="border:none; overflow:hidden; width:298px; height:59px;" allowTransparency="true"></iframe>
+</td></tr>
+</table>
+    </td>
+  </tr>
+</table>
+<br>
+<table border="0" bordercolordark="#CCCCCC" bgcolor="#CCCCCC" bordercolorlight="#CCCCCC" cellpadding="1" cellspacing="2" width="96%" align="center" style="width:1190px;">
+  <tr> 
+    <td bgcolor="#CCCCCC" align="center" width="100%" height="22"> 
+      <table width="100%" border="0" cellspacing="2" cellpadding="2">
+        <tr> 
+          <td> 
+            <center>
+<a target="_self" href="http://upload.wimp.com/">upload</a> | <a target="_self" href="/copyright/">copyright</a> | <a target="_self" href="/privacy/">privacy</a> | <a target="_self" href="/contact/">contact</a> | <a target="_self" href="/terms/">terms</a> | <a target="_self" href="/rss/">rss</a> | <a target="_self" href="http://m.wimp.com/?nord">mobile</a> | <a target="_blank" href="http://www.facebook.com/Wimpcom">facebook</a>
+            </center>
+          </td>
+        </tr>
+      </table>
+    </td>
+  </tr>
+</table>
+
+<script type="text/javascript">
+var sc_project=3877174;
+var sc_invisible=1;
+var sc_partition=47;
+var sc_click_stat=1;
+var sc_security="73977320";
+</script>
+
+<script type="text/javascript"
+src="http://www.statcounter.com/counter/counter.js"></script><noscript><div
+class="statcounter"><a href="http://www.statcounter.com/"
+target="_blank"><img class="statcounter"
+src="http://c.statcounter.com/3877174/0/73977320/1/"></a></div></noscript>
+
+<script type="text/javascript">
+
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-18580995-2']);
+  _gaq.push(['_trackPageview']);
+
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+
+</script>
+
+</body>
+</html>
+
+0
+

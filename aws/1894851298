@@ -1,0 +1,2933 @@
+PHTTP176.32.100.36"ﬂ
+GET / HTTP/1.1
+Host: aws.amazon.com
+Connection: keep-alive
+TAccept: text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8
+vUser-Agent: Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/31.0.1650.63 Safari/537.36
+$Accept-Encoding: gzip,deflate,sdch
+!Accept-Language: en-US,en;q=0.8
+
+*áü
+HTTP/1.1 200 OK
+%Date: Thu, 09 Jan 2014 00:35:35 GMT
+Server: Server
+"x-amz-id-1: 0GSKDS0JA1TP2RZZJY75
+:x-amz-id-2: MfTp/c2ynkdrwodT3Y59k4mfrVPrwirbONw9FXEtqsA=
+X-Frame-Options: SAMEORIGIN
+Cache-Control: max-age=0
+(Expires: Thu, 09 Jan 2014 00:35:35 GMT
+(Content-Type: text/html; charset=UTF-8
+ßSet-cookie: x-wl-uid=1sXq9FIpLO9d4iVeqFQRlsK1MIDCHduCzm8yjecnSt6smrD5gcOKBNqlHBWHIinvdW/qXL6dQ3m4=; path=/; domain=.amazon.com; expires=Tue, 01-Jan-2036 00:00:01 GMT
+pSet-cookie: aws-session-id-time=2082758401l; path=/; domain=.amazon.com; expires=Tue, 01-Jan-2036 00:00:01 GMT
+sSet-cookie: aws-session-id=187-3581872-5464619; path=/; domain=.amazon.com; expires=Tue, 01-Jan-2036 00:00:01 GMT
+Vary: User-Agent
+Transfer-Encoding: chunked
+Öô
+2dd
+
+
+  <!DOCTYPE html>
+
+
+
+<!--[if lt IE 7]>      <html class="no-js lt-ie10 lt-ie9 lt-ie8 lt-ie7 lang-en" lang="en"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie10 lt-ie9 lt-ie8 lang-en" lang="en"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie10 lt-ie9 lang-en" lang="en"> <![endif]-->
+<!--[if IE 9]>         <html class="no-js lt-ie10 lang-en" lang="en"> <![endif]-->
+<!--[if gt IE 9]><!--> <html class="no-js lang-en" lang="en"> <!--<![endif]-->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">                                 
+  <meta name="viewport" content="width=device-width">                                            
+  <meta name=
+b68
+"description" content="Amazon Web Services (AWS) delivers a set of services that together form a reliable, scalable, and inexpensive computing platform ‚Äúin the cloud‚Äù. These pay-as-you-use cloud computing services include Also" /><meta name="keywords" content="Amazon Web Services, AWS, S3, EC2, Amazon Simple Storage Service, Amazon Elastic Compute Cloud, Cloud Computing, Web Hosting, Grid Computing, Utility Computing, Amazon Mechanical Turk, Simple Queue Se" />
+  <meta name="google-site-verification" content="XHghG81ulgiW-3EylGcF48sG28tBW5EH0bNUhgo_DrU" /> 
+  <meta name="msvalidate.01" content="6F92E52A288E266E30C2797ECB5FCCF3" />                       
+
+  <link rel="icon" type="image/ico" href="//d36cz9buwru1tt.cloudfront.net/favicon.ico">                  
+  <link rel="shortcut icon" type="image/ico" href="//d36cz9buwru1tt.cloudfront.net/favicon.ico">         
+  <link rel="apple-touch-icon" sizes="57x57" href="//d36cz9buwru1tt.cloudfront.net/touch-icon-iphone-114-precomposed.png">       
+  <link rel="apple-touch-icon" sizes="72x72" href="//d36cz9buwru1tt.cloudfront.net/touch-icon-ipad-144-precomposed.png">         
+  <link rel="apple-touch-icon" sizes="114x114" href="//d36cz9buwru1tt.cloudfront.net/touch-icon-iphone-114-precomposed.png">     
+  <link rel="apple-touch-icon" sizes="144x144" href="//d36cz9buwru1tt.cloudfront.net/touch-icon-ipad-144-precomposed.png">       
+
+  <title>Amazon Web Services, Cloud Computing: Compute, Storage, Database </title>
+
+  
+
+  <link rel="stylesheet" href="/css/all.css" type="text/css" />
+
+  
+    
+
+<link rel="stylesheet" href="/css/awsHome2.css" type="text/css" />
+<link rel="stylesheet" href="/css/marchitecture.css" type="text/css" />
+
+
+<style type="text/css">
+
+.box-ad-whats-new {
+  background: url(//d36cz9buwru1tt.cloudfront.net/homepage-bnr-startup.png) no-repeat;
+  float: right;
+  height: 110px;
+  width: 301px;
+}
+
+a.ad-link:hover {
+  text-decoration: none;
+  cursor: pointer;
+}
+
+a.ad-link .box-ad-whats-new .non-link {
+    width: 288px;
+    padding: 51px 0 0px 12px;
+    display: block;
+    font-size: 14px;
+    color: #000;
+}
+
+a.ad-link .box-ad-whats-new .link-text {
+    color: #004B91;
+    width: 288px;
+    padding: 0px 0 12px 12px;
+    display: block;
+    font-size: 14px;
+    font-weight: bold;
+}
+  
+a.ad-link:hover .box-ad-whats-new:hover .link-text {
+    text-decoration: underline;
+    color: #e47911;
+  }
+
+.buttonblurb {
+  position: absolute;
+  margin-top: 6px;
+}
+.smallgreyblurb {
+font-size:12px;
+color:#4a4a4a;
+}
+.box-hpCTA:hover .button, .box-hpCTA:hover a.button {
+  background-color:#f49d00;
+  background:-moz-linear-gradient(top,#fd8 30%,#f49d00 100%);
+  background:-webkit-gradient(linear,left top,left bottom,color-stop(30%,#fd8),color-stop(100%,#f49d00));
+  background:-webkit-linear-gradient(top,#fd8 30%,#f49d00 100%);
+  background:-o-linear-gradient(top,#fd8 30%,#f49d00 100%);
+  background:-ms-linear-gradient(top,#fd8 30%,#
+b68
+f49d00 100%);
+  background:linear-gradient(top,#fd8 30%,#f49d00 100%);
+}
+
+#recentNews .cal {
+  float: left;
+  width: 39px;
+  height: 39px;
+  margin: 1px 10px 0 0;
+  background: transparent url(//d36cz9buwru1tt.cloudfront.net/flat_calendar_39.png) no-repeat top left;
+  text-align: center;
+  font-family: Arial;
+}
+
+#recentNews .eventList li {
+  width: 303px;
+  padding-top: 7px;
+}
+
+#recentNews .eventList li a {
+  width: 254px;
+  font-size: 86.6%;
+  line-height: 19.5px;
+}
+
+#recentNews .viewPort {
+  height: 227px;
+  width: auto;
+  border-right: none;
+  border-bottom: none;
+}
+
+#recentNews {
+width: 303px;
+}
+
+#mediacoverage .scrollit .viewPort {
+width: auto;
+height: 342px;
+}
+
+#mediacoverage .scrollit ul {
+margin-top:3px;
+}
+
+h2.homeHeadline {
+  color: black;
+  font-size: 20px;
+  font-weight: bold;
+  margin: 0 0 10px;
+  padding: 0 0 2px;
+  border-bottom: 1px solid #666;
+}
+  h2.homeHeadline a {
+    font-size: 14px;
+    line-height: 19.6px;
+    font-weight: normal;
+    display: block;
+  }
+
+.js .tabs .pane h3 {
+  display: none;
+}
+.box-ad-support {
+  background: url(//d36cz9buwru1tt.cloudfront.net/AWS-support.png) 10px 10px no-repeat;
+  float: right;
+}
+  .box-ad-support a {
+    width: 200px;
+    height: 23px;
+    padding-top: 17px;
+    padding-left: 102px;
+    padding-bottom: 60px;
+    padding-right: 0px;
+
+    display: block;
+    font-size: 12px;
+  }
+.box-ad-mkplc {
+  background: url(//d36cz9buwru1tt.cloudfront.net/logo-aws-mp.png) 12px 14px no-repeat;
+  float: right;
+}
+  .box-ad-mkplc a {
+    width: 288px;
+    height: 30px;
+    padding: 58px 0 12px 12px;
+    display: block;
+    font-size: 13px;
+    line-height: 1.3;
+  }
+
+.box-ad-gartner {
+  background: url(//d36cz9buwru1tt.cloudfront.net/homepage/Gartner_mini_ad_notext.png) 12px 14px no-repeat;
+  float: right;
+}
+  .box-ad-gartner a {
+    width: 288px;
+    height: 30px;
+    padding: 58px 0 12px 12px;
+    display: block;
+    font-size: 13px;
+    line-height: 1.3;
+  }
+
+
+/* CSS for Bottom Banner  */
+.redhatBanner:hover { text-decoration: none; cursor: pointer; }
+  .redhatBanner:hover span { text-decoration: underline; }
+
+
+.hero-hp {
+  font-family: Arial, "Helvetica Neue", Helvetica, sans-serif !important;
+  width: 950px;
+  margin: -30px 0 40px;
+  position: relative;
+}
+  .hero-hp a {
+    color: #000;
+  }
+  .hero-hp a:hover {
+    text-decoration: none;
+  }
+  .hero-hp .large {
+    font-size: 28px;
+    line-height: 32px;
+  }
+/*
+.hero-fade {
+  background-image: url(//d36cz9buwru1tt.cloudfront.net/hero-fade.png);
+  background-repeat: repeat-y;
+  background-color: transparent;
+  position: absolute;
+  width: 20px;
+  height: 410px;
+  pointer-events: none;
+  z-index: 9000;
+}
+  .hero-fade#hero-fade-left {
+    background-position: -20px 0;
+    left: 0;
+  }
+  .hero-fade#hero-fade-right {
+    background-position: 0 0;
+    right: 0;
+  }
+*/
+</style>
+<link rel="stylesheet" href="/css/orbit-1.2.3.css" type="text/css" />
+<style type='text/css'>
+
+
+div.sli
+653
+der-nav span {
+   width:30px;
+   height:52px;
+}
+div.slider-nav span.left {
+   background: transparent url(//d36cz9buwru1tt.cloudfront.net/homepage/carousel_arrows_hover.png) no-repeat 0 -52px;
+   bottom:145px;
+   right:auto;
+   left:-16px;
+}
+div.slider-nav span.right {
+   background: transparent url(//d36cz9buwru1tt.cloudfront.net/homepage/carousel_arrows_hover.png) no-repeat 0 0;
+   bottom:145px;
+   right:-16px;
+}
+div.slider-nav span.left:hover {
+   background-position:0 -156px;
+   cursor:pointer;
+}
+div.slider-nav span.right:hover {
+   background-position:0 -104px;
+   cursor:pointer;
+}
+
+#hero-featureSwap {
+  height: 340px;
+  width: 950px;
+  background: #FFF;
+  overflow: hidden;
+  z-index: 10;
+}
+  #hero-featureSwap > img,
+  #hero-featureSwap > div,
+  #hero-featureSwap > a { display: none; }
+
+.featuredSwap-content {
+  height: 340px;
+  width: 950px;
+  position: relative;
+}
+.contentContainer {
+  width: 290px;
+  float: right;
+  margin: 0 20px 0 0;
+}
+  .contentContainer p {
+    font-weight: bold;
+    font-size: 16px;
+    line-height: 25px;
+  }
+  .contentContainer .quoteAuthor {
+    font-size: 14px;
+    line-height: 21px;
+    margin: 0 0 20px;
+  }
+  .contentContainer .logo {
+    margin: 0 0 20px;
+  }
+  .contentContainer .readStory {
+    padding: 5px 0 5px;
+    font-size: 14px;
+    font-weight: bold;
+    color: #515151;
+  }
+  .contentContainer .playVideo {
+    background: url(//d36cz9buwru1tt.cloudfront.net/hero/hero-play-arrow.jpg) no-repeat;
+    padding: 5px 0 5px 38px;
+    font-size: 14px;
+    font-weight: bold;
+    color: #515151;
+  }
+.heading-startup-success {
+  background: url(//d36cz9buwru1tt
+1075
+.cloudfront.net/hero/hero-startup-success.png);
+  width: 771px;
+  height: 39px;
+  margin: 0 0 50px 20px;
+}
+.heading-enterprise-innovation {
+  background: url(//d36cz9buwru1tt.cloudfront.net/hero/hero-enterprise-innovation.png);
+  width: 863px;
+  height: 39px;
+  margin: 0 0 50px 19px;
+}
+
+#featuredSwap-lambo {
+  background: #fff url(//d36cz9buwru1tt.cloudfront.net/hero/customers/lamborghini_image2.jpg) 5px bottom no-repeat;
+  height: 410px;
+  width: 950px;
+}
+#featuredSwap-shazam {
+  background: #fff url(//d36cz9buwru1tt.cloudfront.net/hero/customers/shazam_image.jpg) 19px bottom no-repeat;
+  height: 410px;
+  width: 950px;
+}
+#featuredSwap-netflix {
+  background: #fff url(//d36cz9buwru1tt.cloudfront.net/hero/customers/netflix_image.jpg) 6px bottom no-repeat;
+  height: 410px;
+  width: 950px;
+}
+#featuredSwap-whycustomersadopting {
+  background: #fff url(//d36cz9buwru1tt.cloudfront.net/hero/customers/whyarecustomersadoptingaws.png) left bottom no-repeat;
+  height: 410px;
+  width: 950px;
+}
+#featuredSwap-ofa {
+  background: #fff url(//d36cz9buwru1tt.cloudfront.net/homepage/Obama-bg.png) left bottom no-repeat;  
+  height: 410px;
+  width: 950px;
+}
+
+#featuredSwap-trustedAdvisor-c,
+#featuredSwap-trustedAdvisor-nc {
+  background: #fff url(//d36cz9buwru1tt.cloudfront.net/homepage/AWS-Trusted-Advisor-BG.png) left bottom no-repeat;  
+  height: 410px;
+  width: 950px;
+}
+
+#featuredSwap-RDS-Provisioned-c {
+  background: #fff url(//d36cz9buwru1tt.cloudfront.net/homepage/RDS-Provisioned-IOPS-BG.png) left bottom no-repeat;  
+  height: 410px;
+  width: 950px;
+}
+
+  .RDS-Provisioned-blurb {
+    position: absolute;
+    left: 20px;
+    top: 50px;
+    font-size: 20px;
+    line-height: 25px;
+    width: 780px;
+  }
+
+#featuredSwap-SAP-nc {
+  background: #fff url(//d36cz9buwru1tt.cloudfront.net/homepage/SAP-BG-v3.png) left bottom no-repeat;  
+  height: 410px;
+  width: 950px;
+}
+
+  .SAP-blurb {
+    position: absolute;
+    left: 20px;
+    top: 50px;
+    font-size: 20px;
+    line-height: 25px;
+    width: 780px;
+  }
+
+#featuredSwap-ebsOptimized-c {
+  background: #fff url(//d36cz9buwru1tt.cloudfront.net/homepage/Hero-EBS-bg.png) left bottom no-repeat;  
+  height: 410px;
+  width: 950px;
+}
+
+  .ebsOptimized-blurb {
+    position: absolute;
+    left: 20px;
+    top: 115px;
+    font-size: 20px;
+    line-height: 35px;
+    width: 780px;
+  }
+
+
+#featuredSwap-ec2Reserved {
+  background: #fff url(//d36cz9buwru1tt.cloudfront.net/homepage/ec2-price-reduction-bg2.png) left bottom no-repeat;  
+  height: 410px;
+  width: 950px;
+}
+#featuredSwap-ec2-focus {
+  background: #fff url(//d36cz9buwru1tt.cloudfront.net/hero/hp/hero-hp-EC2_focus.png) left bottom no-repeat;  
+  height: 410px;
+  width: 950px;
+}
+#featuredSwap-amiCopy {
+  background: #fff url(//d36cz9buwru1tt.cloudfront.net/homepage/AMI-Copy-BG2.png) left bottom no-repeat;  
+  height: 410px;
+  width: 950px;
+}
+#featuredSwap-elasticBeanstalk {
+  background: #fff url(//d36cz9buwru1tt.cloudfront.net/homepage/Elastic-BeanStalk-BG.png) left bottom no-repeat;  
+  height: 410px;
+  width: 950px;
+}
+#featuredSwap-hotStartups {
+  background: #fff url(//d36cz9buwru1tt.cloudfront.net/homepage/Start-Ups-On-AWS-BG.png) left bottom no-repeat;  
+  height: 410px;
+  width: 950px;
+}
+#featuredSwap-reInvent {
+  background: #fff url(//d36cz9buwru1tt.cloudfront.net/hero/hp/hero-hp-reinvent-v2.jpg) left bottom no-repeat;
+/*  *zoom: 1; */
+  height: 410px;
+  width: 950px;
+}
+#featuredSwap-reInvent2 {
+  background: #fff url(//d36cz9buwru1tt.cloudfront.net/hero/hp/hero-hp-reinvent-v2.jpg) left bottom no-repeat;
+  *zoom: 1;
+  height: 410px;
+  width: 950px;
+}
+
+#featuredSwap-dynamoDB {
+  background: #fff url(//d36cz9buwru1tt.cloudfront.net/homepage/Dynamo-DB-Price-Reduction-BG.png) left bottom no-repeat;  
+  height: 410px;
+  width: 950px;
+}
+#featuredSwap-summit-nc,
+#featuredSwap-summit-c {
+  background: #fff url(//d36cz9buwru1tt.cloudfront.net/homepage/Summit-Hero-bg.jpg) left bottom no-repeat;
+  *zoom: 1;
+  height: 410px;
+  width: 950px;
+}
+#featuredSwap-marketplace, 
+#featuredSwap-marketplace-nc {
+  background: #fff url(//d36cz9buwru1tt.cloudfront.net/hero/hp/hero-hp-marketplace.jpg) left bottom no-repeat;
+  height: 410px;
+  width: 950px;
+}
+#featuredSwap-rds {
+  background: #f
+f8b
+ff url(//d36cz9buwru1tt.cloudfront.net/hero/hp/hero-hp-rds.png) left bottom no-repeat;
+  height: 410px;
+  width: 950px;
+}
+#featuredSwap-ri {
+  background: #fff url(//d36cz9buwru1tt.cloudfront.net/hero/hp/hero-hp-ri2.png) left bottom no-repeat;
+  height: 410px;
+  width: 950px;
+}
+#featuredSwap-transcoder {
+  background: #fff url(//d36cz9buwru1tt.cloudfront.net/hero/hp/hero-hp-Transcoder_update2.png) left bottom no-repeat;
+  height: 410px;
+  width: 950px;
+}
+  .transcoder-blurb {
+    position: absolute;
+    left: 15px;
+    top: 55px;
+    font-size: 18px;
+    line-height: 25px; 
+    width: 800px;
+  }
+
+#featuredSwap-m3 {
+  background: #fff url(//d36cz9buwru1tt.cloudfront.net/hero/hp/hero-hp-m3.png) left bottom no-repeat;
+  height: 410px;
+  width: 950px;
+}
+#featuredSwap-rdspricing {
+  background: #fff url(//d36cz9buwru1tt.cloudfront.net/hero/hp/hero-hp-rds-pricing.png) left bottom no-repeat;
+  height: 410px;
+  width: 950px;
+}
+#featuredSwap-earthnetworks {
+  background: #fff url(//d36cz9buwru1tt.cloudfront.net/hero/hp/hero-hp-earth-networks2.png) left bottom no-repeat;
+  height: 410px;
+  width: 950px;
+}
+#featuredSwap-redshift, #featuredSwap-redshift2 {
+  background: #fff url(//d36cz9buwru1tt.cloudfront.net/Redshift-black.png) -2px -1px no-repeat;
+  height: 410px;
+  width: 950px;
+}
+
+
+.box-hpCTA {
+    background-color:#F2F2F2;
+    color: #000000;
+    font-size: 16px;
+    font-weight: bold;
+    padding: 13px 20px;
+    position: relative;
+}
+
+</style>
+
+<style type="text/css">
+#rdsbanner {
+  background: #fff url(//d36cz9buwru1tt.cloudfront.net/bnr-sql-server.jpg) 24px center no-repeat;
+  padding-left: 145px;
+  width:467px;
+  height: 76px;
+  float: left;
+  zoom: 1;
+}
+  #rdsbanner div p,#sharepoint_banner {
+    color:#000;
+  }
+#sharepoint_banner {
+  background: #fff url(//d36cz9buwru1tt.cloudfront.net/homepage/SharePoint_bottom_banner.png) left center no-repeat;
+  padding-left: 245px;
+  padding-top: 20px;
+  width:367px;
+  height: 68px;
+  float: left;
+  zoom: 1;
+}
+</style>
+
+<style type="text/css">
+.ri-regBanner {
+background: #3f3f3f url(//d36cz9buwru1tt.cloudfront.net/bnr-reinvent-homepage.jpg) right no-repeat;
+padding: 18px;
+}
+.ri-registerNow {
+display: block;
+padding: 8px;
+background: #3C9;
+color: #3f3f3f;
+font-weight: bold;
+font-size: 14px;
+text-align: center;
+margin: 10px 0 0;
+}
+.ri-registerNow:hover {
+cursor: pointer;
+color: #3f3f3f;
+}
+</style>
+
+
+
+<style type="text/css">
+.box-mp-company {}
+.mp-company {
+  background: #f2f2f2;
+  border: 1px solid #ccc;
+  -webkit-border-radius: 4px;
+  -moz-border-radius: 4px;
+  border-radius: 4px;
+  float: left;
+  width: 160px;
+  padding: 15px;
+  display: block;
+  margin-left: 40px;
+  position: relative;
+}
+.mp-company3 {
+margin-left:50px;
+}
+  .box-mp-company > .mp-company:first-child {
+    margin-left: 0;
+  }
+  .box-mp-company > .mp-company3:first-child {
+    margin-left: 80px;
+  }
+  .mp-company > .top {
+    height: 90px;
+    padding: 0 0 10px;
+    border-bottom: 1px solid #ccc;
+    text-align: center;
+  }
+  .mp-company > .bottom {
+    padding: 10px 0 0;
+    height: 90px;
+    border-top: 1px solid #fff;
+  }
+    .mp-company > .bottom h4 {
+      margin: 0;
+      height: 38px;
+      overflow: hidden;
+    }
+.marketplace-thumb-box2 .mp-company > .bottom h4 {
+  text-align:center;
+}
+    .mp-company > .bottom p {
+      font-size: 11px;
+      color: #999;
+      margin: 0 0 3px;
+      line-height: 12px;
+      margin-top: 8px; 
+      margin-bottom: 8px;
+    }
+    .mp-company > .bottom .hlp-linkText {
+      padding-left: 28px;
+      background: url(//d36cz9buwru1tt.cloudfront.net/icon-marketplace-32.png) left center no-repeat
+    }
+
+/* styles for weblabs */
+p.lowerColHead {
+    margin-bottom:0;
+}
+p.lowerColHead a {
+    font-size:12px;
+    color:#888888;
+    text-decoration:none;
+    font-weight:bold;
+}
+p.midColDate {
+  font-size:12px;
+  color:#888888;
+  font-weight:bold;
+    margin-bottom:0;
+}
+p.midColDate a {
+  color:#888888;
+  text-decoration:none;
+}
+
+p.lowerColHead a:hover,h2.lowerColSubHead a:h
+fad
+over, a.midColLink:hover, .midColHead a:hover, h2.whatsNewHeadLink a:hover {
+    color:#FF9933;
+    text-decoration:underline;
+}
+h2.lowerColSubHead, h2.midColHead {
+  font-size:19px;
+}
+h2.lowerColSubHead a,h2.midColHead a, h2.whatsNewHeadLink a {
+  text-decoration:none;
+  color:#000000;
+}
+
+.whatsNewAllLink{text-align:right;margin:0 0 -20px;font-size:86.67%;}
+.whatsNewAllLink a{text-decoration:none;}
+
+/* weblab styles - indicators */
+.orbit-bullets {
+  right:425px;
+  bottom:10px;
+}
+
+.orbit-bullets li {
+  background: transparent url(//d36cz9buwru1tt.cloudfront.net/homepage/carousel_indicators.png) no-repeat 0 -10px;
+  height:10px;
+  width:10px;
+  margin:0 0 0 10px;
+}
+.orbit-bullets li.active {
+  background-position:0 0;
+}
+</style>
+
+<style type="text/css">
+
+  div.marketplace-banner {
+    position: absolute;
+    left: 20px;
+    top: 54px;
+    font-size: 20px;
+    line-height: 26px;
+  }
+    div#mp-subbanner {
+    position: absolute;
+    left: 0px;
+    top: 260px;
+    font-size: 20px;
+    line-height: 26px;
+  }
+  div.marketplace-thumb-box {
+    position: absolute;
+    left: 31px;
+    top: 125px;
+  }
+  div.marketplace-thumb-box2 {
+    position: absolute;
+    left: 31px;
+    top: 110px;
+  }
+  .redshift-corner-red {
+    position: absolute;
+    top: -6px;
+    right: -6px;
+  }
+  
+  
+
+  .hotStartups-blurb {
+    position: absolute;
+    left: 20px;
+    top: 50px;
+    font-size: 20px;
+    line-height: 35px;
+    width: 780px;
+  }
+
+  .summit-blurb {
+    position: absolute;
+    left: 16px;
+    top: 50px;
+    font-size: 20px;
+    line-height: 26px;
+    width: 840px;
+  }
+  
+  .why-cloud-computing-blurb {
+    position: absolute;
+    left: 20px;
+    top: 230px;
+    font-size: 20px;
+    line-height: 26px;
+    width: 500px;
+  }
+  
+  .ofa-blurb {
+    position: absolute;
+    left: 20px;
+    top: 100px;
+    font-size: 20px;
+    line-height: 26px;
+    width: 550px;
+  }
+
+  .amiCopy-blurb {
+    position: absolute;
+    left: 20px;
+    top: 50px;
+    font-size: 20px;
+    line-height: 26px;
+    width: 800px;
+  }
+
+  .elasticBeanstalk-blurb {
+    position: absolute;
+    left: 20px;
+    top: 70px;
+    font-size: 20px;
+    line-height: 26px;
+    width: 500px;
+  }
+
+  .trusted-advisor-blurb {
+    position: absolute;
+    left: 20px;
+    top: 60px;
+    font-size: 20px;
+    line-height: 26px;
+    width: 500px;
+  }
+
+  .ec2-reserved-blurb {
+    position: absolute;
+    left: 393px;
+    top: 200px;
+    font-size: 20px;
+    line-height: 26px;
+    width: 500px;
+  }
+.ec2-focus-blurb {
+    position: absolute;
+    left: 40px;
+    top: 190px;
+    font-size: 20px;
+    line-height: 26px;
+    width: 500px;
+}
+  .dynamodb-blurb {
+    position: absolute;
+    left: 393px;
+    top: 200px;
+    font-size: 20px;
+    line-height: 26px;
+    width: 500px;
+  }
+
+  .re-invent-blurb {
+    position: absolute; 
+    top: 275px; 
+    left: 35px; 
+    color: #fff;
+    width: 350px;
+    font-size: 18px;
+    line-height: 25px;
+  }
+
+  .m3-blurb {
+    position: absolute;
+    left: 20px;
+    top: 110px;
+    font-size: 20px;
+    line-height: 26px;
+    width: 550px;
+  }
+
+  .jaspersoft-placement {
+    margin-top: 25px;
+  }
+
+  .citrix-placement {
+    margin-top: 8px;
+  }
+  .nuodb-placement {
+    margin-top: 0;
+  }
+  .lampstack-placement {
+    margin-top: 0px;
+  }
+
+  .mongodb-placement {
+    margin-top: 18px;
+  }
+  .mongodb2-placement {
+    margin-top: 28px;
+  }
+ .centos-placement {
+    margin-top: 18px;
+  }
+
+  .coldfusion-placement {
+    margin-top: 5px;
+  }
+
+  .sap-placement {
+    margin-top: 14px;
+  }
+  .orangefs-placement {
+    margin-top: 29px;
+  }
+  .wordpress-placement {
+    margin-top: 2px;
+  }
+
+  .visit-aws {
+    font-size: 20px;
+    position: absolute;
+    left: 20px;
+    top: 250px;
+  }
+
+  .earth-networks-blurb {
+    position: absolute;
+    left: 20px;top: 80px;
+    font-size: 18px;
+    line-height: 30px;
+    width: 400px;
+  }
+
+  .opsworks-blurb {
+    position: absolute;
+    left: 20px;
+    top: 90px;
+    font-size: 20px;
+    line-height: 30px; 
+    width: 500px;
+  }
+
+#featuredSwap-what-is-CC {
+  background: #ff
+1053
+f url(//d36cz9buwru1tt.cloudfront.net/homepage/what-is-cloud-computing.png) left bottom no-repeat;  
+  height: 410px;
+  width: 950px;
+}
+
+  .what-is-CC-blurb {
+    position: absolute;
+    left: 40px;
+    top: 190px;
+    font-size: 20px;
+    line-height: 35px;
+    width: 780px;
+  }
+
+#featuredSwap-redshift-final {
+  background: #fff url(//d36cz9buwru1tt.cloudfront.net/homepage/redshift.jpg) left bottom no-repeat;  
+  height: 410px;
+  width: 950px;
+}
+
+  .redshift-blurb {
+    position: absolute;
+    left: 15px;
+    top: 60px;
+    font-size: 20px;
+    line-height: 26px; 
+    width: 800px;
+  }
+
+
+#featuredSwap-opsworks-c {
+  background: #fff url(//d36cz9buwru1tt.cloudfront.net/homepage/opsworks.png) left bottom no-repeat;
+  height: 410px;
+  width: 950px;
+}
+
+#featuredSwap-nyc-live-stream {
+  background: #fff url(//d36cz9buwru1tt.cloudfront.net/homepage/nyc-live-stream.jpg) left bottom no-repeat;  
+  height: 410px;
+  width: 950px;
+}
+
+  .nyc-live-stream-blurb {
+    position: absolute;
+    left: 15px;
+    top: 205px;
+    font-size: 18px;
+    line-height: 25px; 
+    width: 800px;
+  }
+
+
+#featuredSwap-support-sales-apn {
+  background: #fff url(//d36cz9buwru1tt.cloudfront.net/homepage/support-sales-apn/base.png) left bottom no-repeat;
+  height: 410px;
+  width: 950px;
+}
+
+div.support-sales-apn-banner {
+    position: absolute;
+    left: 20px;
+    top: 54px;
+    font-size: 20px;
+    line-height: 26px;
+  }
+  
+  div.support-sales-apn-thumb-box {
+    position: absolute;
+    left: 25px;
+    top: 75px;
+  }
+
+.box-support-sales-apn {}
+.support-sales-apn-section {
+  float: left;
+  width: 240px;
+  padding: 15px;
+  display: block;
+  margin-left: 40px;
+  position: relative;
+}
+  .box-support-sales-apn > .support-sales-apn-section:first-child {
+    margin-left: 0;
+  }
+  .support-sales-apn-section > .top {
+    height: 90px;
+    padding: 0 0 10px;
+    text-align: center;
+  }
+  .support-sales-apn-section > .bottom {
+    padding: 98px 0 0;
+    height: 90px;
+    text-align: center;
+    line-height: 1.4;
+  }
+    .support-sales-apn-title {
+      margin: 0;
+      height: 38px;
+      overflow: hidden;
+      font-size: 21px;
+      line-height: 1.8;
+    }
+
+    .support-sales-apn-section > .bottom p {
+      font-size: 11px;
+      color: #999;
+      margin: 0 0 3px;
+      line-height: 12px;
+      margin-top: 8px; 
+      margin-bottom: 8px;
+    }
+
+  .support-sales-apn-section > .bottom > .hlp-linkText {
+  font-size: 16px;
+  }
+
+
+#featuredSwap-data-driven {
+  background: #fff url(//d36cz9buwru1tt.cloudfront.net/homepage/data-driven-pipeline.png) left bottom no-repeat;  
+  height: 410px;
+  width: 950px;
+}
+
+  .data-driven-blurb {
+    position: absolute;
+    left: 15px;
+    top: 65px;
+    font-size: 18px;
+    line-height: 25px; 
+    width: 800px;
+  }
+
+#featuredSwap-nc-free-tier {
+  background: #fff url(//d36cz9buwru1tt.cloudfront.net/homepage/nc-free-tier/nc-free-tier.png) left bottom no-repeat;
+  height: 410px;
+  width: 950px;
+}
+
+div.nc-free-tier-banner {
+    position: absolute;
+    left: 20px;
+    top: 54px;
+    font-size: 20px;
+    line-height: 26px;
+  }
+  
+  div.nc-free-tier-thumb-box {
+    position: absolute;
+    left: 0px;
+    top: 144px;
+  }
+
+.box-nc-free-tier {}
+.nc-free-tier-section {
+  float: left;
+  width: 240px;
+  padding: 15px;
+  display: block;
+  margin-left: 40px;
+  position: relative;
+}
+  .box-nc-free-tier > .nc-free-tier-section:first-child {
+    margin-left: 0;
+  }
+  .nc-free-tier-section > .top {
+    height: 140px;
+    padding: 0 0 10px;
+    text-align: center;
+  }
+
+.learn-more-free-tier {
+    font-size: 18px;
+    position: absolute;
+    left: 20px;
+    top: 185px;
+}
+
+.free-tier-gray {
+    font-size: 15px;
+    position: absolute;
+    right: 20px;
+    top: 185px;
+}
+
+#featuredSwap-sf-live-stream {
+  background: #fff url(//d36cz9buwru1tt.cloudfront.net/homepage/SF-live-stream.png) left bottom no-repeat;  
+  height: 410px;
+  width: 950px;
+}
+
+  .sf-live-stream-blurb {
+    position: absolute;
+    left: 15px;
+    top: 205px;
+    font-size: 18px;
+    line-height: 25px; 
+    width: 800px;
+  }
+
+#featuredSwap-save-the-date {
+  background: #fff url(//d36cz9buwru1tt.cloudfront.net/homepage/save-the-date-2.jpg) left bottom no-repeat;  
+  height: 41
+ee5
+0px;
+  width: 950px;
+}
+
+  .save-the-date-blurb {
+    position: absolute;
+    left: 497px;
+    top: 250px;
+    font-size: 18px;
+    line-height: 25px; 
+    width: 800px;
+    color: #a4d7f9!important;
+  }
+
+.save-the-date-blurb .hlp-linkText {
+    color: #a4d7f9!important;
+}
+
+#featuredSwap-free-tier-sales {
+  background: #fff url(//d36cz9buwru1tt.cloudfront.net/homepage/free-tier-sales-apn/base.png) left bottom no-repeat;
+  height: 410px;
+  width: 950px;
+}
+
+div.free-tier-sales-banner {
+    position: absolute;
+    left: 20px;
+    top: 54px;
+    font-size: 20px;
+    line-height: 26px;
+  }
+  
+  div.free-tier-sales-thumb-box {
+    position: absolute;
+    left: 25px;
+    top: 75px;
+  }
+
+.box-free-tier-sales {}
+.free-tier-sales-section {
+  float: left;
+  width: 240px;
+  padding: 15px;
+  display: block;
+  margin-left: 40px;
+  position: relative;
+}
+  .box-free-tier-sales > .free-tier-sales-section:first-child {
+    margin-left: 0;
+  }
+  .free-tier-sales-section > .top {
+    height: 90px;
+    padding: 0 0 10px;
+    text-align: center;
+  }
+  .free-tier-sales-section > .bottom {
+    padding: 98px 0 0;
+    height: 90px;
+    text-align: center;
+    line-height: 1.4;
+  }
+    .free-tier-sales-title {
+      margin: 0;
+      height: 38px;
+      overflow: hidden;
+      font-size: 21px;
+      line-height: 1.8;
+    }
+
+    .free-tier-sales-section > .bottom p {
+      font-size: 11px;
+      color: #999;
+      margin: 0 0 3px;
+      line-height: 12px;
+      margin-top: 8px; 
+      margin-bottom: 8px;
+    }
+
+  .free-tier-sales-section > .bottom > .hlp-linkText {
+  font-size: 16px;
+  }
+
+#featuredSwap-govcloud {
+  background: #fff url(//d36cz9buwru1tt.cloudfront.net/homepage/GovCloud-base2.png) left bottom no-repeat;  
+  height: 410px;
+  width: 950px;
+}
+
+  .govcloud-blurb {
+    position: absolute;
+    left: 15px;
+    top: 205px;
+    font-size: 18px;
+    line-height: 25px; 
+    width: 800px;
+  }
+
+#featuredSwap-sf-summit {
+  background: #fff url(//d36cz9buwru1tt.cloudfront.net/homepage/sf-summit.png) left bottom no-repeat;  
+  height: 410px;
+  width: 950px;
+}
+
+  .sf-summit-blurb {
+    position: absolute;
+    left: 15px;
+    top: 205px;
+    font-size: 18px;
+    line-height: 25px; 
+    width: 800px;
+  }
+
+#featuredSwap-global-certification {
+  background: #fff url(//d36cz9buwru1tt.cloudfront.net/homepage/AWS-Global-Certification-Program-bg.png) left bottom no-repeat;  
+  height: 410px;
+  width: 950px;
+}
+
+  .global-certification-blurb {
+    position: absolute;
+    left: 15px;
+    top: 205px;
+    font-size: 18px;
+    line-height: 25px; 
+    width: 800px;
+  }
+
+#featuredSwap-ec2-ri {
+  background: #fff url(//d36cz9buwru1tt.cloudfront.net/homepage/EC2-RI-bg.png) left bottom no-repeat;  
+  height: 410px;
+  width: 950px;
+}
+
+  .ec2-ri-blurb {
+    position: absolute;
+    left: 15px;
+    top: 58px;
+    font-size: 18px;
+    line-height: 25px; 
+    width: 915px;
+  }
+
+#featuredSwap-what-is-AWS {
+  background: #fff url(//d36cz9buwru1tt.cloudfront.net/homepage/What-Is-Cloud-Computing_weblab_notext.png) left bottom no-repeat;  
+  height: 340px;
+  width: 950px;
+}
+
+  .what-is-AWS-blurb {
+    position: absolute;
+    left: 20px;
+    top: 200px;
+    font-size: 20px;
+    line-height: 25px;
+    width: 780px;
+  }
+#featuredSwap-whitepaper-devtest {
+  background: #fff url(//d36cz9buwru1tt.cloudfront.net/homepage/hero-whitepaper.png) left bottom no-repeat;  
+  height: 410px;
+  width: 950px;
+}
+
+  .whitepaper-devtest-blurb {
+    position: absolute;
+    left: 40px;
+    top: 200px;
+    font-size: 20px;
+    line-height: 25px;
+    width: 780px;
+  }
+
+#featuredSwap-opswork-ud {
+  background: #fff url(//d36cz9buwru1tt.cloudfront.net/homepage/hero_hp_awsOpsworks_update.png) left bottom no-repeat;  
+  height: 410px;
+  width: 950px;
+}
+
+  .opswork-ud-blurb {
+    position: absolute;
+    left: 40px;
+    top: 200px;
+  
+5f0
+  font-size: 20px;
+    line-height: 25px;
+    width: 780px;
+  }
+#featuredSwap-choose-platform {
+  background: #fff url(//d36cz9buwru1tt.cloudfront.net/homepage/hero-Choosing-Cloud-Platform1.png) left bottom no-repeat;  
+  height: 410px;
+  width: 950px;
+}
+
+  .choose-platform-blurb {
+    position: absolute;
+    left: 20px;
+    top: 190px;
+    font-size: 20px;
+    line-height: 25px;
+    width: 780px;
+  }
+#featuredSwap-dynamodb_pricedrop {
+  background: #fff url(//d36cz9buwru1tt.cloudfront.net/homepage/hero-hp-Price_drop_final.png) left bottom no-repeat;  
+  height: 410px;
+  width: 950px;
+}
+
+  .dynamodb_pricedrop-blurb {
+    position: absolute;
+    left: 394px;
+    top: 250px;
+    font-size: 20px;
+    line-height: 25px;
+    width: 780px;
+  }
+
+#featuredSwap-aws-support {
+  background: #fff url(//d36cz9buwru1tt.cloudfront.net/homepage/hero_hp_AWS-Support-Generic.png) left bottom no-repeat;  
+  height: 410px;
+  width: 950px;
+}
+
+  .aws-support-blurb {
+    position: absolute;
+    left: 30px;
+    top: 190px;
+    font-size: 20px;
+    line-height: 25px;
+    width: 780px;
+  }
+
+#featuredSwap-mktpl-focused {
+  background: #fff url(//d36cz9buwru1tt.cloudfront.net/homepage/hero_hp_mktplc_focused1.jpg) left bottom no-repeat;  
+  height: 410px;
+  width: 950px;
+}
+
+  .mktpl-focused-blurb {
+    position: absolute;
+    left: 30px;
+    top: 210px;
+    font-size: 20px;
+    line-height: 25px;
+    width: 780px;
+  }
+#featuredSwap-sharepoint-aws {
+  background: #fff url(//d36cz9buwru1tt.cloudfront.net/homepage/hero-hp-Get_S
+b2b
+tarted_With_Sharepoint.png) left bottom no-repeat;  
+  height: 410px;
+  width: 950px;
+}
+
+  .sharepoint-aws-blurb {
+    position: absolute;
+    left: 43px;
+    top: 195px;
+    font-size: 20px;
+    line-height: 25px;
+    width: 780px;
+  }
+#featuredSwap-trusted-advisor-redesign {
+  background: #fff url(//d36cz9buwru1tt.cloudfront.net/homepage/hero-hp-Trusted_Advisor-redesign.png) left bottom no-repeat;  
+  height: 410px;
+  width: 950px;
+}
+
+  .trusted-advisor-redesign-blurb {
+    position: absolute;
+    left: 30px;
+    top: 200px;
+    font-size: 20px;
+    line-height: 25px;
+    width: 780px;
+  }
+
+#featuredSwap-free-tier-redesign {
+  background: #fff url(//d36cz9buwru1tt.cloudfront.net/homepage/Free_Tier_Redesign_weblab_notext1.png) left bottom no-repeat;  
+  height: 340px;
+  width: 950px;
+}
+
+  .free-tier-redesign-blurb {
+    position: absolute;
+    left: 56px;
+    top: 120px;
+    font-size: 20px;
+    line-height: 25px;
+    width: 780px;
+  }
+
+#featuredSwap-aws-partner-network {
+  background: #fff url(//d36cz9buwru1tt.cloudfront.net/homepage/hero-hp-AWS-Partner-Network-bg.png) left bottom no-repeat;  
+  height: 410px;
+  width: 950px;
+}
+
+  .aws-partner-network-blurb {
+    position: absolute;
+    left: 20px;
+    top: 130px;
+    font-size: 20px;
+    line-height: 25px;
+    width: 780px;
+  }
+
+
+
+#featuredSwap-rds-for-free {
+  background: #fff url(//d36cz9buwru1tt.cloudfront.net/homepage/hero-hp-Amazon_RDS_for_free.png) left bottom no-repeat;  
+  height: 410px;
+  width: 950px;
+}
+
+  .rds-for-free-blurb {
+    position: absolute;
+    left: 48px;
+    top: 210px;
+    font-size: 20px;
+    line-height: 25px;
+    width: 780px;
+  }
+/*********************************************/
+
+#featuredSwap-startups-redesign {
+  background: #fff url(//d36cz9buwru1tt.cloudfront.net/homepage/hero-hp-Start-ups-on-AWS_redesign1.png) left bottom no-repeat;  
+  height: 410px;
+  width: 950px;
+}
+
+  .startups-redesign-blurb {
+    position: absolute;
+    left: 34px;
+    top: 200px;
+    font-size: 20px;
+    line-height: 25px;
+    width: 780px;
+  }
+
+#featuredSwap-try_RHEL {
+  background: #fff url(//d36cz9buwru1tt.cloudfront.net/homepage/hero-hp-Try_RHEL.png) left bottom no-repeat;  
+  height: 410px;
+  width: 950px;
+}
+
+  .try_RHEL-blurb {
+    position: absolute;
+    left: 45px;
+    top: 210px;
+    font-size: 20px;
+    line-height: 25px;
+    width: 780px;
+  }
+
+#featuredSwap-RDS_Price_Drop {
+  background: #fff url(//d36cz9buwru1tt.cloudfront.net/homepage/hero-hp_RDS_Price_Drop.png) left bottom no-repeat;  
+  height: 410px;
+  width: 950px;
+}
+
+  .RDS_Price_Drop-blurb {
+    position: absolute;
+    left: 65px;
+    top: 210px;
+    font-size: 20px;
+    line-height: 25px;
+    width: 780px;
+  }
+#featuredSwap-cloudfront-wsd {
+  background: #fff url(//d36cz9buwru1tt.cloudfront.net/homepage/hero-hp-CloudFront-WSD.png) left bottom no-repeat;  
+  height: 410px;
+  width: 
+140d
+950px;
+}
+
+  .cloudfront-wsd-blurb {
+    position: absolute;
+    left: 34px;
+    top: 240px;
+    font-size: 20px;
+    line-height: 25px;
+    width: 780px;
+  }
+#featuredSwap-dynamodb-video {
+  background: #fff url(//d36cz9buwru1tt.cloudfront.net/homepage/hero-hp-DynamoDB_Video.png) left bottom no-repeat;  
+  height: 410px;
+  width: 950px;
+}
+
+  .dynamodb-video-blurb {
+    position: absolute;
+    left: 45px;
+    top: 210px;
+    font-size: 20px;
+    line-height: 25px;
+    width: 780px;
+  }
+
+#featuredSwap-SAP-test-drive {
+  background: #fff url(//d36cz9buwru1tt.cloudfront.net/homepage/hero-hp-SAP_Test_Drive.png) left bottom no-repeat;  
+  height: 410px;
+  width: 950px;
+}
+
+  .SAP-test-drive-blurb {
+    position: absolute;
+    left: 45px;
+    top: 210px;
+    font-size: 20px;
+    line-height: 25px;
+    width: 780px;
+  }
+#featuredSwap-ec2-rds-resource-level {
+  background: #fff url(//d36cz9buwru1tt.cloudfront.net/homepage/hero-hp-EC2-RDS.png) left bottom no-repeat;  
+  height: 410px;
+  width: 950px;
+}
+
+  .ec2-rds-resource-level-blurb {
+    position: absolute;
+    left: 42px;
+    top: 270px;
+    font-size: 20px;
+    line-height: 25px;
+    width: 780px;
+  }
+
+#featuredSwap-RDS_Price_Drop1 {
+  background: #fff url(//d36cz9buwru1tt.cloudfront.net/homepage/hero-hp_RDS_Price_Drop1.png) left bottom no-repeat;  
+  height: 410px;
+  width: 950px;
+}
+
+  .RDS_Price_Drop1-blurb {
+    position: absolute;
+    left: 63px;
+    top: 180px;
+    font-size: 20px;
+    line-height: 25px;
+    width: 780px;
+  }
+#featuredSwap-reinvent-save-date-updated {
+  background: #fff url(//d36cz9buwru1tt.cloudfront.net/homepage/hero-hp-save-the-date-updated.jpg) left bottom no-repeat;  
+  height: 410px;
+  width: 950px;
+}
+
+#featuredSwap-reinvent-mark-calendar {
+  background: #fff url(//d36cz9buwru1tt.cloudfront.net/homepage/hero-hp-Mark-your-calendar-bg.jpg) left bottom no-repeat;  
+  height: 410px;
+  width: 950px;
+}
+
+  .reinvent-mark-calendar-blurb {
+    position: absolute;
+    left: 0;
+    top: 283px;
+    font-size: 20px;
+    line-height: 25px;
+    width: 950px;
+    text-align:center;
+  }
+#featuredSwap-windows-server-free {
+  background: #fff url(//d36cz9buwru1tt.cloudfront.net/homepage/hero-hp-Windows_Server_Free_Tier.png) left bottom no-repeat;  
+  height: 410px;
+  width: 950px;
+}
+
+  .windows-server-free-blurb {
+    position: absolute;
+    left: 38px;
+    top: 210px;
+    font-size: 20px;
+    line-height: 25px;
+    width: 780px;
+  }
+
+#featuredSwap-reinvent-register-now {
+  background: #fff url(//d36cz9buwru1tt.cloudfront.net/homepage/reInvent2013-Register-Now_weblab_notext.jpg) left bottom no-repeat;  
+  height: 340px;
+  width: 950px;
+}
+
+  .reinvent-register-now-blurb {
+    position: absolute;
+    left: 0;
+    top: 278px;
+    font-size: 20px;
+    line-height: 25px;
+    width: 950px;
+    text-align:center;
+  }
+#featuredSwap-new-elastic-beanstalk {
+  background: #fff url(//d36cz9buwru1tt.cloudfront.net/homepage/hero-hp-new-Elastic_Beanstalk.png) left bottom no-repeat;  
+  height: 410px;
+  width: 950px;
+}
+
+  .new-elastic-beanstalk-blurb {
+    position: absolute;
+    left: 56px;
+    top: 200px;
+    font-size: 20px;
+    line-height: 25px;
+    width: 780px;
+  }
+
+#featuredSwap-web-id-federation {
+  background: #fff url(//d36cz9buwru1tt.cloudfront.net/homepage/Federated_Web_Id_weblab_notext.png) left bottom no-repeat;  
+  height: 340px;
+  width: 950px;
+}
+
+  .web-id-federation-blurb {
+    position: absolute;
+    left: 51px;
+    top: 165px;
+    font-size: 20px;
+    line-height: 25px;
+    width: 780px;
+  }
+/*styles for 8.2.13 rotation */
+#featuredSwap-intro-webinars {
+  background: #fff url(//d36cz9buwru1tt.cloudfront.net/homepage/webinar_101_weblab_notext.png) left bottom no-repeat;  
+  height: 340px;
+  width: 950px;
+}
+
+  .intro-webinars-blurb {
+    position: absolute;
+    left: 53px;
+    top: 180px;
+    font-size: 20px;
+    line-height: 25px;
+    width: 780px;
+  }
+
+#featuredSwap-marketplace-magic-quadrant {
+  background: #fff url(//d36cz9buwru1tt.cloudfront.net/homepage/MP_Magic_Quadrant_weblab_notext.png) left bottom no-repeat;  
+  height: 340px;
+  width: 950px;
+}
+
+  .marketplace-magic-quadrant-blurb {
+    position: absolute;
+    left: 46px;
+    top: 185px;
+    font-size: 20px;
+    line-height: 25px;
+    width: 780px;
+  }
+
+
+#featuredSwap-swf-flow-for-ruby {
+  background: #fff url(//d36cz9buwru1tt.cloudfront.net/homepage/SWF_flow_framework_ruby_weblab_notext.png) left bottom no-repeat;  
+  height: 340px;
+  width: 950px;
+}
+
+  .swf-flow-for-ruby-blurb {
+    position: absolute;
+    left: 49px;
+    top: 180px;
+    font-size: 20px;
+    line-height: 25px;
+    width: 780px;
+  }
+
+#featuredSwap-global-content-delivery {
+  background: #fff url(//d36cz9buwru1tt.cloudfront.net/homepage/Global_Content_Delivery_weblab_notext.png) left bottom no-repeat;  
+  height: 340px;
+  width: 950px;
+}
+
+  .global-content-delivery-blurb {
+    position: absolute;
+    left: 53px;
+    top: 180px;
+    font-size: 20px;
+    line-height: 25px;
+    width: 780px;
+  }
+#featuredSwap-what-is-AWS-updated {
+  background: #fff url(//d36cz9buwru1tt.cloudfront.net/homepage/hero-hp-What-Is-Cloud-Computing_update2.png) left bottom no-repea
+bf3
+t;  
+  height: 340px;
+  width: 950px;
+}
+
+  .what-is-AWS-updated-blurb {
+    position: absolute;
+    left: 45px;
+    top: 175px;
+    font-size: 20px;
+    line-height: 25px;
+    width: 780px;
+  }
+
+#featuredSwap-running-websites-on-aws {
+  background: #fff url(//d36cz9buwru1tt.cloudfront.net/homepage/hero-hp-web_apps_running_your_website.png) left bottom no-repeat;  
+  height: 340px;
+  width: 950px;
+}
+
+  .running-websites-on-aws-blurb {
+    position: absolute;
+    left: 35px;
+    top: 180px;
+    font-size: 20px;
+    line-height: 25px;
+    width: 780px;
+  }
+
+#featuredSwap-reinvent-main-stage {
+  background: #fff url(//d36cz9buwru1tt.cloudfront.net/homepage/hero-hp-reInvent2013_non-customer_main-stage.jpg) left bottom no-repeat;  
+  height: 340px;
+  width: 950px;
+}
+
+  .reinvent-main-stage-blurb {
+    position: absolute;
+    left: 0;
+    top: 123px;
+    font-size: 20px;
+    line-height: 25px;
+    width: 950px;
+    text-align:center;
+  }
+
+#featuredSwap-reinvent-175-plus {
+  background: #fff url(//d36cz9buwru1tt.cloudfront.net/homepage/hero-hp-reInvent2013_customer_175plus.jpg) left bottom no-repeat;  
+  height: 340px;
+  width: 950px;
+}
+
+  .reinvent-175-plus-blurb {
+    position: absolute;
+    left: 36px;
+    top: 190px;
+    font-size: 20px;
+    line-height: 25px;
+    width: 780px;
+  }
+
+#featuredSwap-sns-push-notifications {
+  background: #fff url(//d36cz9buwru1tt.cloudfront.net/homepage/hero-hp-SNS_mobile_push_notifications.png) left bottom no-repeat;  
+  height: 340px;
+  width: 950px;
+}
+
+  .sns-push-notifications-blurb {
+    position: absolute;
+    left: 45px;
+    top: 165px;
+    font-size: 20px;
+    line-height: 25px;
+    width: 780px;
+  }
+
+#featuredSwap-free-tier-new-to-aws {
+  background: #fff url(//d36cz9buwru1tt.cloudfront.net/homepage/hero-hp-Free_Tier_Redesign_update.png) left bottom no-repeat;  
+  height: 340px;
+  width: 950px;
+}
+
+  .free-tier-new-to-aws-blurb {
+    position: absolute;
+    left: 57px;
+    top: 140px;
+    font-size: 20px;
+    line-height: 25px;
+    width: 780px;
+  }
+#featuredSwap-ms-exchange-server-aws {
+  background: #fff url(//d36cz9buwru1tt.cloudfront.net/homepage/hero-hp-MS_Exchange_Server.png) left bottom no-repeat;  
+  height: 340px;
+  width: 950px;
+}
+
+  .ms-exchange-server-aws-blurb {
+    position: absolute;
+    left: 36px;
+    top: 196px;
+    font-size: 20px;
+    line-height: 25px;
+    width: 780px;
+  }
+
+#featuredSwap-gartner-magic-quadrant-2013 {
+  background: #fff url(//d36cz9buwru1tt.cloudfront.net/homepage/hero-hp-Gartner.png) left bottom no-repeat;  
+  height: 340px;
+  width: 950px;
+}
+
+  .gartner-magic-quadrant-2013-blurb {
+    position: absolute;
+    left: 41px;
+    top: 140px;
+    font-size: 20px;
+    line-height: 25px;
+    width: 780px;
+  }
+#featuredSwap-opsworks-supports-vpc {
+  background: #fff url(//d36cz9buwru1tt.cloudfront.net/homepage/hero-hp-OpsWorks_Amazon_VPC.png) left bottom no-repeat;  
+  height: 340px;
+  width: 950px;
+}
+
+  .opsworks-supports-vpc-blurb {
+    position: absolute;
+    left: 34px;
+    top: 168px;
+    font-size: 20px;
+    line-height: 25px;
+    wid
+1345
+th: 780px;
+  }
+
+#featuredSwap-cloudformation-available-for-govcloud {
+  background: #fff url(//d36cz9buwru1tt.cloudfront.net/homepage/hero-hp-Govcloud-Cloudformation.png) left bottom no-repeat;  
+  height: 340px;
+  width: 950px;
+}
+
+  .cloudformation-available-for-govcloud-blurb {
+    position: absolute;
+    left: 36px;
+    top: 137px;
+    font-size: 20px;
+    line-height: 25px;
+    width: 780px;
+  }
+#featuredSwap-elasticache-for-redis {
+  background: #fff url(//d36cz9buwru1tt.cloudfront.net/homepage/hero-hp-ElastiCache_Redis.png) left bottom no-repeat;  
+  height: 340px;
+  width: 950px;
+}
+  .elasticache-for-redis-blurb {
+    position: absolute;
+    left: 45px;
+    top: 179px;
+    font-size: 20px;
+    line-height: 25px;
+    width: 780px;
+  }
+
+#featuredSwap-suse-linux-free-tier {
+  background: #fff url(//d36cz9buwru1tt.cloudfront.net/homepage/hero-hp-Free_Tier_SUSE.png) left bottom no-repeat;  
+  height: 340px;
+  width: 950px;
+}
+
+  .suse-linux-free-tier-blurb {
+    position: absolute;
+    left: 30px;
+    top: 149px;
+    font-size: 20px;
+    line-height: 25px;
+    width: 780px;
+  }
+
+#featuredSwap-big-data-on-aws {
+  background: #fff url(//d36cz9buwru1tt.cloudfront.net/homepage/hero-hp-big_data.png) left bottom no-repeat;  
+  height: 340px;
+  width: 950px;
+}
+  .big-data-on-aws-blurb {
+    position: absolute;
+    left: 45px;
+    top: 160px;
+    font-size: 20px;
+    line-height: 25px;
+    width: 780px;
+  }
+
+#featuredSwap-reinvent-boot-camp-2013 {
+  background: #fff url(//d36cz9buwru1tt.cloudfront.net/homepage/hero-hp-re-Invent_Bootcamp_Focus.png) left bottom no-repeat;  
+  height: 340px;
+  width: 950px;
+}
+  .reinvent-boot-camp-2013-blurb {
+    position: absolute;
+    left: 54px;
+    top: 177px;
+    font-size: 20px;
+    line-height: 25px;
+    width: 780px;
+  }
+#featuredSwap-webapps-on-aws {
+  background: #fff url(//d36cz9buwru1tt.cloudfront.net/homepage/hero-hp-Webapps_promo_video.png) left bottom no-repeat;  
+  height: 340px;
+  width: 950px;
+}
+  .webapps-on-aws-blurb {
+    position: absolute;
+    left: 45px;
+    top: 140px;
+    font-size: 20px;
+    line-height: 25px;
+    width: 780px;
+  }
+#featuredSwap-aws-console-for-mobile {
+  background: #fff url(//d36cz9buwru1tt.cloudfront.net/homepage/hero-hp-Console_Mobile_App.png) left bottom no-repeat;  
+  height: 340px;
+  width: 950px;
+}
+  .aws-console-for-mobile-blurb {
+    position: absolute;
+    left: 46px;
+    top: 177px;
+    font-size: 20px;
+    line-height: 25px;
+    width: 780px;
+  }
+#featuredSwap-marketplace-customer-reviews {
+  background: #fff url(//d36cz9buwru1tt.cloudfront.net/homepage/hero-hp-Customer_Reviews.png) left bottom no-repeat;  
+  height: 340px;
+  width: 950px;
+}
+  .marketplace-customer-reviews-blurb {
+    position: absolute;
+    left: 31px;
+    top: 180px;
+    font-size: 20px;
+    line-height: 25px;
+    width: 780px;
+  }
+#featuredSwap-aws-activate {
+  background: #fff url(//d36cz9buwru1tt.cloudfront.net/homepage/hero-hp-AWS_Activate_update.png) left bottom no-repeat;  
+  height: 340px;
+  width: 950px;
+}
+  .aws-activate-blurb {
+    position: absolute;
+    left: 31px;
+    top: 180px;
+    font-size: 20px;
+    line-height: 25px;
+    width: 780px;
+  }
+#featuredSwap-enterprise-innovation {
+  background: #fff url(//d36cz9buwru1tt.cloudfront.net/homepage/hero-hp-Customer_Story_Enterprise.png) left bottom no-repeat;  
+  height: 340px;
+  width: 950px;
+}
+  .enterprise-innovation-blurb {
+    position: absolute;
+    left: 36px;
+    top: 160px;
+    font-size: 20px;
+    line-height: 25px;
+    width: 780px;
+  }
+#featuredSwap-cloudformation-launch-update {
+  background: #fff url(//d36cz9buwru1tt.cloudfront.net/homepage/hero-hp-Cloudformation_Launch_update.png) left bottom no-repeat;  
+  height: 340px;
+  width: 950px;
+}
+  .cloudformation-launch-update-blurb {
+    position: absolute;
+    left: 36px;
+    top: 160px;
+    font-size: 20px;
+    line-height: 25px;
+    width: 780px;
+  }
+
+#featuredSwap-cloudfront-post-put {
+  background: #fff url(//d36cz9buwru1tt.cloudfront.net/homepage/hero-hp-Cloudfront_Post_Put.png) left bottom no-repeat;  
+  height: 340px;
+  width: 950px;
+}
+  .cloudfront-post-put-blurb {
+    position: absolute;
+    left: 41px;
+    top: 160px;
+    font-size: 20px;
+    line-height: 25px;
+    width: 780px;
+  }
+#featuredSwap-big-data-case-study {
+  background: #fff url(//d36cz9buwru1tt.cloudfront.net/homepage/hero-hp-big_data_case_studies.png) left bottom no-repeat;  
+  height: 340px;
+  width: 950px;
+}
+  .big-data-case-study-blurb {
+    position: absolute;
+    left: 41px;
+    top: 160px;
+    font-size: 20px;
+    line-height: 25px;
+    width: 780px;
+  }
+#featuredSwap-reinvent-live-stream {
+  background: #fff url(//d36cz9buwru1tt.cloudfront.net/homepage/hero-hp-reInvent_Livestream.png) left bottom no-repeat;  
+  height: 340px;
+  width: 950px;
+}
+  .reinvent-live-stream-blurb {
+    position: absolute;
+    left: 0;
+    top: 208px;
+    font-size: 25px;
+    line-height: 25px;
+    width: 950px;
+    
+cbb
+text-align:center;
+  }
+.reinventOrangeLink {
+   font-weight:bold;
+   color:#e47911 !important;
+   text-decoration:none !important;
+}
+a:hover .reinventOrangeLink:hover {
+   color:#e47911 !important;
+   text-decoration:underline !important;
+}
+
+#featuredSwap-storage-gateway-virtual-tape {
+  background: #fff url(//d36cz9buwru1tt.cloudfront.net/homepage/hero-hp-StorageGateway_VTL.png) left bottom no-repeat;  
+  height: 340px;
+  width: 950px;
+}
+  .storage-gateway-virtual-tape-blurb {
+    position: absolute;
+    left: 33px;
+    top: 160px;
+    font-size: 20px;
+    line-height: 25px;
+    width: 780px;
+  }
+#featuredSwap-g2-2-xlarge-instance {
+  background: #fff url(//d36cz9buwru1tt.cloudfront.net/homepage/hero-hp-G2_Launch.jpg) left bottom no-repeat;  
+  height: 340px;
+  width: 950px;
+}
+  .g2-2-xlarge-instance-blurb {
+    position: absolute;
+    left: 42px;
+    top: 184px;
+    font-size: 20px;
+    line-height: 25px;
+    width: 780px;
+  }
+#featuredSwap-reinvent-live-stream-signup-11-11 {
+  background: #fff url(//d36cz9buwru1tt.cloudfront.net/homepage/hero-hp-reInvent-Keynote-email_v2.png) left bottom no-repeat;  
+  height: 340px;
+  width: 950px;
+}
+  .reinvent-live-stream-signup-11-11-blurb {
+    position: absolute;
+    left: 41px;
+    top: 204px;
+    font-size: 20px;
+    line-height: 25px;
+    width: 780px;
+  }
+  .reinvent-live-stream-signup-11-11-blurb input[type='text'] {
+    border:1px solid #ff9933;
+    border-collapse: separate;
+    border-radius: 2.55px 2.55px 2.55px 2.55px;
+    color: #414042;
+    cursor: auto;
+    font: normal 14px/16px Arial,Helvetica,sans-serif;
+    height: 18px;
+    letter-spacing: normal;
+    margin-top: 8px;
+    padding: 6px 2px;
+    text-indent: 0;
+    text-shadow: none;
+    text-transform: none;
+    width: 202px;
+    word-spacing: 0;
+}
+
+#email {
+  -webkit-appearance: none;
+  outline: none;
+}
+  #email:focus {
+    -webkit-box-shadow: 0px 0px 6px rgba(255, 153, 51, 0.85);
+    -moz-box-shadow:    0px 0px 6px rgba(255, 153, 51, 0.85);
+    box-shadow:         0px 0px 6px rgba(255, 153, 51, 0.85);
+    -webkit-appearance: none;
+  }
+  #email::-webkit-input-placeholder { color: #B3B3B3; }
+  #email::-moz-placeholder { color: #B3B3B3; } /* firefox 19+ */
+  #email:-ms-input-placeholder { color: #B3B3B3; } /* ie */
+  input#email:-moz-placeholder { color: #B3B3B3; }
+
+.email_submit{
+-moz-border-bottom-colors: none;
+    -moz-border-left-colors: none;
+    -moz-border-right-colors: none;
+    -moz-border-top-colors: none;
+    background: linear-gradient(#FFBE5D 0%, #ED9220 100%) repeat scroll 0 0 #ED9220;
+    border-color: #BE751A #A56616 #9A5F15;
+    border-image: none;
+    border-radius: 3px 3px 3px 3px;
+    border-style: solid;
+    border-width: 1px;
+    box-shadow: 0 1px 0 rgba(255, 255, 255, 0.6) inset;
+    color: #333333;
+    cursor: pointer;
+    display: inline-block;
+    font-size: 14px;
+    font-weight: bold;
+    line-height: 1.6em;
+    margin: 2px 0 0 !important;
+    max-width: 100%;
+    outline: 0 none;
+    padding: 2px 15px;
+    text-align: center;
+    text-decoration: none !important;
+    vertical-align: middle;
+}
+
+  .lt-ie10 .email_submit {
+    background-color: #FD8;
+  }
+
+.reinvent-live-stream-header {
+   font-size:24px;
+}
+
+.reInventFormWrapper {
+  height: 40px;
+}
+  .reInventFormWrap
+127d
+per p {
+    margin-top: 20px;
+  }
+
+#liveStreamSignUp, .smallgreyblurb {
+  display: none;
+}
+#featuredSwap-reinvent-jassy-keynote-2013 {
+  background: #fff url(//d36cz9buwru1tt.cloudfront.net/homepage/hero-hp-reInvent_Pre_Andy.png) left bottom no-repeat;  
+  height: 340px;
+  width: 950px;
+}
+  .reinvent-jassy-keynote-2013-blurb {
+    position: absolute;
+    left: 41px;
+    top: 270px;
+    font-size: 20px;
+    line-height: 25px;
+    width: 780px;
+  }
+#featuredSwap-intro-appstream {
+  background: #fff url(//d36cz9buwru1tt.cloudfront.net/homepage/hero-hp-AWS_AppStream_compressed.png) left bottom no-repeat;  
+  height: 340px;
+  width: 950px;
+}
+  .intro-appstream-blurb {
+    position: absolute;
+    left: 36px;
+    top: 170px;
+    font-size: 20px;
+    line-height: 25px;
+    width: 780px;
+  }
+#featuredSwap-announcing-kinesis {
+  background: #fff url(//d36cz9buwru1tt.cloudfront.net/homepage/hero-hp-AWS_Kinesis.png) left bottom no-repeat;  
+  height: 340px;
+  width: 950px;
+}
+  .announcing-kinesis-blurb {
+    position: absolute;
+    left: 46px;
+    top: 173px;
+    font-size: 20px;
+    line-height: 25px;
+    width: 780px;
+  }
+#featuredSwap-introducing-workspaces {
+  background: #fff url(//d36cz9buwru1tt.cloudfront.net/homepage/hero-hp-AWS_WorkSpaces.png) left bottom no-repeat;  
+  height: 340px;
+  width: 950px;
+}
+  .introducing-workspaces-blurb {
+    position: absolute;
+    left: 34px;
+    top: 170px;
+    font-size: 20px;
+    line-height: 25px;
+    width: 780px;
+  }
+#featuredSwap-introducing-cloudtrail {
+  background: #fff url(//d36cz9buwru1tt.cloudfront.net/homepage/hero-hp-AWS_CloudTrail.png) left bottom no-repeat;  
+  height: 340px;
+  width: 950px;
+}
+  .introducing-cloudtrail-blurb {
+    position: absolute;
+    left: 44px;
+    top: 179px;
+    font-size: 20px;
+    line-height: 25px;
+    width: 780px;
+  }
+#featuredSwap-new-c3-instance-type {
+  background: #fff url(//d36cz9buwru1tt.cloudfront.net/homepage/hero-hp-C3_Instances.png) left bottom no-repeat;  
+  height: 340px;
+  width: 950px;
+}
+  .new-c3-instance-type-blurb {
+    position: absolute;
+    left: 43px;
+    top: 186px;
+    font-size: 20px;
+    line-height: 25px;
+    width: 780px;
+  }
+#red-cross-ad {
+    background: url("//d36cz9buwru1tt.cloudfront.net/Red_Cross_Logo.png") no-repeat scroll 173px 0 transparent;
+    font-size: 18px;
+    color:#000000;
+    height: 37px;
+    margin-bottom: 20px;
+    padding: 18px 0 0 425px;
+}
+#featuredSwap-watch-keynotes-reinvent-2013 {
+  background: #fff url(//d36cz9buwru1tt.cloudfront.net/homepage/hero-hp-reinvent-keynotes-2013-banner.jpg) left bottom no-repeat;  
+  height: 340px;
+  width: 950px;
+}
+  .watch-keynotes-reinvent-2013-blurb {
+    position: absolute;
+    left: 25px;
+    top: 190px;
+    font-size: 20px;
+    line-height: 25px;
+    width: 780px;
+  }
+
+#featuredSwap-introducing-rds-for-postgresql {
+  background: #fff url(//d36cz9buwru1tt.cloudfront.net/homepage/hero-hp-RDS_Postgres.png) left bottom no-repeat;  
+  height: 340px;
+  width: 950px;
+}
+  .introducing-rds-for-postgresql-blurb {
+    position: absolute;
+    left: 44px;
+    top: 170px;
+    font-size: 20px;
+    line-height: 25px;
+    width: 780px;
+  }
+
+#featuredSwap-rds-cross-region-read-replicas {
+  background: #fff url(//d36cz9buwru1tt.cloudfront.net/homepage/hero-hp-Cross-regional_Read_Replicas.png) left bottom no-repeat;  
+  height: 340px;
+  width: 950px;
+}
+  .rds-cross-region-read-replicas-blurb {
+    position: absolute;
+    left: 46px;
+    top: 200px;
+    font-size: 20px;
+    line-height: 25px;
+    width: 780px;
+  }
+
+#featuredSwap-launching-a-virtual-machine {
+  background: #fff url(//d36cz9buwru1tt.cloudfront.net/homepage/launch-virtual-machine.png) left bottom no-repeat;  
+  height: 340px;
+  width: 950px;
+}
+  .launching-a-virtual-machine-blurb {
+    position: absolute;
+    left: 40px;
+    top: 160px;
+    font-size: 20px;
+    line-height: 35px;
+    width: 780px;
+  }
+
+#featuredSwap-change-resource-permissions {
+  background: #fff url(//d36cz9buwru1tt.cloudfront.net/homepage/opsworks-resource-permissions.png) left bottom no-repeat;  
+  height: 340px;
+  width: 950px;
+}
+  .change-resource-permissions-blurb {
+    position: absolute;
+    left: 46px;
+    top: 200px;
+    font-size: 20px;
+    line-height: 25px;
+    width: 780px;
+  }
+#featuredSwap-new-i2-instances {
+  background: #fff url(//d36cz9buwru1tt.cloudfront.net/homepage/hero-hp-AWS_HI2.png) left bottom no-repeat;  
+  height: 340px;
+  width: 950px;
+}
+  .new-i2-instances-blurb {
+    position: absolute;
+    left: 55px;
+    top: 180px;
+    font-size: 20px;
+    line-height: 25px;
+    width: 780px;
+  }
+
+#featuredSwap-new-query-capable-dynamodb {
+  background: #fff url(//d36cz9buwru1tt.cloudfront.net/homepage/hero-hp-DynamoDB_GSI.png) left bottom no-repeat;  
+  
+d83
+height: 340px;
+  width: 950px;
+}
+  .new-query-capable-dynamodb-blurb {
+    position: absolute;
+    left: 43px;
+    top: 175px;
+    font-size: 20px;
+    line-height: 25px;
+    width: 780px;
+  }
+
+#featuredSwap-roundtable_launch {
+  background: #fff url(//d36cz9buwru1tt.cloudfront.net/homepage/hero-hp-China_hero_shorter.png) left bottom no-repeat;  
+  height: 340px;
+  width: 950px;
+}
+  .roundtable_launch-blurb {
+    position: absolute;
+    left:50px;
+    top: 172px;
+    font-size: 20px;
+    line-height: 25px;
+    width: 780px;
+  }
+
+#featuredSwap-kinesis-beta-launch {
+  background: #fff url(//d36cz9buwru1tt.cloudfront.net/homepage/hero-hp-AWS_Kinesis_public_beta.png) left bottom no-repeat;  
+  height: 340px;
+  width: 950px;
+}
+  .kinesis-beta-launch-blurb {
+    position: absolute;
+    left: 45px;
+    top: 148px;
+    font-size: 20px;
+    line-height: 25px;
+    width: 780px;
+  }
+
+#featuredSwap-new-cloudfront-pops-1213 {
+  background: #fff url(//d36cz9buwru1tt.cloudfront.net/homepage/hero-hp-Cloudfront_POP.png) left bottom no-repeat;  
+  height: 340px;
+  width: 950px;
+}
+  .new-cloudfront-pops-1213-blurb {
+    position: absolute;
+    left: 43px;
+    top: 149px;
+    font-size: 20px;
+    line-height: 25px;
+    width: 780px;
+  }
+#featuredSwap-marketplace-1click-vpc {
+  background: #fff url(//d36cz9buwru1tt.cloudfront.net/homepage/hero-hp-Marketplace_VPCt.png) left bottom no-repeat;  
+  height: 340px;
+  width: 950px;
+}
+  .marketplace-1click-vpc-blurb {
+    position: absolute;
+    left: 49px;
+    top: 182px;
+    font-size: 20px;
+    line-height: 25px;
+    width: 780px;
+  }
+
+#featuredSwap-trusted-advisor-email-notifications {
+  background: #fff url(//d36cz9buwru1tt.cloudfront.net/homepage/hero-hp-TA_Email_Notification.png) left bottom no-repeat;  
+  height: 340px;
+  width: 950px;
+}
+  .trusted-advisor-email-notifications-blurb {
+    position: absolute;
+    left: 43px;
+    top: 182px;
+    font-size: 20px;
+    line-height: 25px;
+    width: 780px;
+  }
+
+#featuredSwap-what-is-AWS-products {
+  background: #fff url(//d36cz9buwru1tt.cloudfront.net/homepage/hero-hp-AWS_Products_Video.png) left bottom no-repeat;  
+  height: 340px;
+  width: 950px;
+}
+
+  .what-is-AWS-products-blurb {
+    position: absolute;
+    left: 45px;
+    top: 164px;
+    font-size: 20px;
+    line-height: 25px;
+    width: 780px;
+  }
+</style>
+  
+
+  <script src="/js/all_3.js" type="text/javascript"></script>
+
+  <script type="text/javascript">
+  __amznUtmPage = "/";
+</script>
+<script src="/js/amznUrchin.js" type="text/javascript"></script> 
+</head>
+
+<body id="top">
+
+
+<!-- SiteCatalyst code version: H.25.1.
+Copyright 1996-2012 Adobe, Inc. All Rights Reserved
+More info available at http://www.omniture.com -->
+<script language="JavaScript" type="text/javascript" src="https://d36cz9buwru1tt.cloudfront.net/js/sitecatalyst/s_code.min.js"></script>
+
+<script language="JavaScript" type="text/javascript"><!--
+/************* DO NOT ALTER ANYTHING BELOW THIS LINE ! **************/
+var s_code=s.t();if(s_code)document.write(s_code)//--></script>
+<script language="JavaScript" type="text/javascript"><!--
+if(navigator.appVersion.indexOf('MSIE')>=0)document.write(unescape('%3C')+'\!-'+'-')
+//--></script><noscript><img src="//amazonwebservices.d2.sc.omtrdc.net/b/ss/awsamazondev/1/H.25.1--NS/0"
+height="1" width="1" border="0" alt="" /></noscript><!--/DO NOT REMOVE/-->
+<!-- End SiteCatalyst code version: H.25.1. -->
+
+  
+  <!-- layout one_column -->
+  <div class="wrapper">
+    <
+6c5
+header id="hd" class="header">
+      
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <!-- header -->
+
+<div id="main-nav" class="nav-lang-en">
+  <a href="//aws.amazon.com/" id="nav-aws-logo" class="nav-sprite" title="Amazon Web Services"><span>Amazon Web Services</span></a>
+
+  <div id="nav-bar" class="nav-sprite">
+    <a id="nav-dd-products-solutions" class="nav-link" href="//aws.amazon.com/products-solutions/">
+      <strong>AWS Products</strong> &amp; <strong>Solutions</strong>
+    </a>
+
+    <form id="nav-search-form" method="get" action="//aws.amazon.com/search">
+      <div id="nav-searchfield-outer" class="nav-sprite">
+        <div id="nav-searchfield-inner" class="nav-sprite">
+          <div id="nav-searchfield-width">
+            <input id="nav-searchfield" name="searchQuery"></input>
+          </div>
+        </div>
+      </div>
+
+      <span id="nav-search-in" class="nav-sprite">
+        <span id="nav-search-in-content">Search In</span>
+        <span class="nav-down-arrow nav-sprite"></span>
+        <select name="searchPath" id="nav-search-dropdown"></select>
+      </span>
+
+      <div id="nav-search-button" class="nav-sprite">
+        <input type="image" alt="Search" id="nav-search-button-inner" title="Search" src="//d36cz9buwru1tt.cloudfront.net/nav/transparent_pixel.gif">
+      </div>
+    </form>
+
+    <a id="nav-dd-developers" class="nav-link" href="//aws.amazon.com/developers/">
+      <strong>Developers</strong>
+    </a>
+
+    <a id="nav-dd-support" class="nav-link" href="//aws.amazon.com/support/">
+      <strong>Support</strong>
+    </a>
+  </div>
+
+  <div id="global-top-links">
+    <a href="https://portal.aws.amazon.com/gp/aws/developer/registration/index.html" id="gtl-sign-up">Sign Up</a>
+    <a href="https://console.aws.amazo
+193b
+n.com/" id="gtl-dd-account-console">My Account / Console</a>
+  </div>
+</div>
+
+
+
+<noscript>
+  <!--#if expr="${LANG_NOT_FOUND}" -->
+    <div id="pageNotTranslated">
+      <!--#include virtual="/errors/untranslated/$LANG_NOT_FOUND/index.html" -->
+    </div>
+  <!--#endif -->
+</noscript>
+
+
+<script type="text/javascript">
+  if ( ! window.AWSGlobalNav ) {
+      AWSGlobalNav = {};
+  }
+
+  // This has to be set early (before the onload handlers execute)
+  AWSGlobalNav.acceptLanguage = '<!--#echo var="ACCEPT_LANGUAGE_HEADER" -->';
+  AWSGlobalNav.contentBaseURL = '//aws.amazon.com';
+</script>
+
+<!-- /header -->
+
+
+    </header>
+
+    <article id="bd" class="content">
+      <div class="hero-hp">
+
+
+<div id="hero-featureSwap"> 
+
+  
+
+
+
+  
+
+  <a href="/free/?sc_ichannel=HA&sc_ipage=homepage&sc_iplace=hero1&sc_isegment=nc&sc_icampaigntype=free_tier&sc_icampaign=ha_free_tier_ec2_s3_dynamodb&sc_icountry=US" onClick="javascript:urchinTracker('/clicktrack/homepage/display/nc/hero1/free_tier/ha_free_tier_ec2_s3_dynamodb');" data-customer-status="prospect" data-analytics="/clicktrack/homepage/nc/hero1/free_tier/ha_free_tier_ec2_s3_dynamodb">
+    <div id="featuredSwap-free-tier-redesign" class="featuredSwap-content">
+      <div class="hlp-ir">AWS Free Tier</div>
+      <div class="free-tier-redesign-blurb">
+        Launch new applications, test existing<br />applications in the cloud, or simply gain<br />hands-on experience with AWS.<br /><br />
+        <span class="hlp-linkText">Get started with AWS for Free &raquo;</span><br /><br /><br /><span class='smallgreyblurb'>*Visit aws.amazon.com/free for full offer details</span>
+      </div>
+    </div>
+  </a>
+
+
+
+  <a class="fancybox fancybox.iframe" href="//www.youtube.com/embed/mZ5H8sn_2ZI?rel=0;hd=1;autoplay=1" onClick="javascript:urchinTracker('/clicktrack/homepage/nc/hero2/general_info/ha_what_is_aws_video');" data-customer-status="prospect" data-analytics="/clicktrack/homepage/display/nc/hero2/general_info/ha_what_is_aws_video">
+    <div id="featuredSwap-what-is-AWS-products" class="featuredSwap-content">
+      <div class="hlp-ir">What is Amazon Web Services?</div>
+      <div class="what-is-AWS-products-blurb">
+        Learn about the Amazon Web Services<br />platform, products and services. <br /><br />
+      <span class="hlp-linkText" style='padding-left:115px;'>Watch the 3 minute video &raquo;</span>
+      </div>
+
+    </div>
+  </a>
+
+
+
+  <a class="fancybox fancybox.iframe" href="//youtube.com/embed/jOhbTAU4OPI?rel=0;hd=1;autoplay=1" onClick="javascript:urchinTracker('/clicktrack/homepage/nc/hero3/general_info/ha_what_is_cloud_computing_video_thumb');" data-customer-status="prospect" data-analytics="/clicktrack/homepage/display/nc/hero3/general_info/ha_what_is_cloud_computing_video_thumb">
+    <div id="featuredSwap-what-is-AWS-updated" class="featuredSwap-content">
+      <div class="hlp-ir">What is Cloud Computing with AWS?</div>
+      <div class="what-is-AWS-updated-blurb">
+        Learn about the benefits<br />of Cloud Computing with AWS. <br /><br />
+      <span class="hlp-linkText" style='padding-left:115px;'>Watch the 3 minute video &raquo;</span>
+      </div>
+
+    </div>
+  </a>
+
+ 
+
+  <a href="https://aws.amazon.com/marketplace/help/201280870/ref=mkt_ste_hp_car_nc_hourly?sc_ichannel=HA&sc_ipage=homepage&sc_iplace=hero4&sc_isegment=nc&sc_icampaigntype=marketplace&sc_icampaign=ha_marketplace_pay_by_the_hour&sc_icountry=US" onClick="javascript:urchinTracker('/clicktrack/homepage/nc/hero4/marketplace/ha_marketplace_pay_by_the_hour');" data-customer-status="prospect" data-analytics="/clicktrack/homepage/display/nc/hero4/marketplace/ha_marketplace_pay_by_the_hour">
+    <div id="featuredSwap-marketplace-magic-quadrant" class="featuredSwap-content">
+      <div class="hlp-ir">AWS Marketplace</div>
+      <div class="marketplace-magic-quadrant-blurb">
+        Leading software available, <br>pay only for what you use.<br /><br />
+        <span class="hlp-linkText">View hourly-priced software &raquo;</span>
+      </div>
+    </div>
+  </a>
+
+  
+
+  <a class="fancybox fancybox.iframe" href="//www.youtube.com/embed/SKM0BB0F02Q?rel=0;hd=1;autoplay=1" onClick="javascript:urchinTracker('/clicktrack/homepage/nc/hero5/general_info/ha_launching_a_virtual_machine_video_2013_12');" data-customer-status="prospect" data-analytics="/clicktrack/homepage/display/nc/hero5/general_info/ha_launching_a_virtual_machine_video_2013_12">
+    <div id="featuredSwap-launching-a-virtual-machine" class="featuredSwap-content">
+      <div class="hlp-ir">Launching a Virtual Machine</div>
+      <div class="launching-a-virtual-machine-blurb">
+        Learn how to launch a virtual machine <br />with Amazon EC2 in just four minutes.<br /><br />
+      <span class="hlp-linkText" style='padding-left:120px;'>Watch the 4 minute video &raquo;</span>
+      </div>
+    </div>
+  </a>
+
+
+  
+
+ 
+
+  <a href="/free/?sc_ichannel=HA&sc_ipage=homepage&sc_iplace=hero1&sc_isegment=c&sc_icampaigntype=free_tier&sc_icampaign=ha_free_tier_customers&sc_icountry=US" onClick="javascript:urchinTracker('/clicktrack/homepage/c/hero1/free_tier/ha_free_tier_customers');" data-customer-status="customer" data-analytics="/clicktrack/homepage/display/c/hero1/free_tier/ha_free_tier_customers">
+    <div id="featuredSwap-free-tier-new-to-aws" class="featuredSwap-content">
+      <div class="hlp-ir">New to AWS?</div>
+      <div class="free-tier-new-to-aws-blurb">
+        Customers are eligible for the<br />AWS Free Tier for their first 12 months.<br /><br />
+        <span class="hlp-linkText">View Free Tier Details &raquo;</span><br /><br /><br />
+        <span class='smallgreyblurb'>* Visit aws.amazon.com/free for full offer details</span>
+      </div>
+    </div>
+  </a>
+
+ 
+
+  <a href="/activate/?sc_ichannel=ha&sc_ipage=homepage&sc_iplace=hero2&sc_isegment=c&sc_icampaigntype=startups&sc_icampaign=ha_aws_activate_2013&sc_icountry=US" onClick="javascript:urchinTracker('/clicktrack/homepage/c/hero2/startups/ha_aws_activate_2013');" data-customer-status="customer" data-analytics="/clicktrack/homepage/display/c/hero2/startups/ha_aws_activate_2013">
+    <div id="featuredSwap-aws-activate" class="featuredSwap-content">
+      <div class="hlp-ir">Introducing a new global program for startups</div>
+      <div class="aws-activate-blurb">
+        All of the resources you need<br>to easily get started on AWS.<br /><br>
+        <span class="hlp-linkText">Learn more &amp; sign up &raquo;</span>
+      </div>
+
+    </d
+5fd
+iv>
+  </a>
+
+ 
+
+  <a href="/about-aws/whats-new/2013/12/18/introducing-aws-trusted-advisor-notifications-new-dashboard-improvements/?sc_ichannel=ha&sc_ipage=homepage&sc_iplace=hero3&sc_isegment=c&sc_icampaigntype=support&sc_icampaign=ha_trusted_advisor_notifications_2013_12&sc_icountry=us" onClick="javascript:urchinTracker('/clicktrack/homepage/c/hero3/support/ha_trusted_advisor_notifications_2013_12');" data-customer-status="customer" data-analytics="/clicktrack/homepage/display/c/hero3/support/ha_trusted_advisor_notifications_2013_12">
+    <div id="featuredSwap-trusted-advisor-email-notifications" class="featuredSwap-content">
+      <div class="hlp-ir">AWS Trusted Advisor email notifications</div>
+      <div class="trusted-advisor-email-notifications-blurb">
+        Now it is much easier to stay up-to-date<br>with your AWS usage.<br /><br />
+        <span class="hlp-linkText">Find out more &raquo;</span>
+      </div>
+    </div>
+  </a>
+
+ 
+
+  <a href="/about-aws/whats-new/2013/12/19/announcing-the-next-generation-of-amazon-ec2-high-i/o-instance/?sc_ichannel=HA&sc_ipage=homepage&sc_iplace=hero4&sc_isegment=c&sc_icampaigntype=product_launch&sc_icampaign=ha_i2_instances_2013_12&sc_icategory=compute_network&sc_iproduct=ec2&sc_icountry=US" onClick="javascript:urchinTracker('/clicktrack/homepage/c/hero4/product_launch/ha_i2_instances_2013_12');" data-customer-status="customer" data-analytics="/clicktrack/homepage/display/c/hero4/product_launch/ha_i2_instances_2013_12">
+    <div id="featuredSwap-new-i2-instances" cl
+1a03
+ass="featuredSwap-content">
+      <div class="hlp-ir">Introducing I2 Instances</div>
+      <div class="new-i2-instances-blurb">
+        Up to 365,000 IOPS and SSD<br>storage for I/O intensive applications.<br /><br />
+        <span class="hlp-linkText">Learn more &raquo;</span>
+      </div>
+    </div>
+  </a>
+
+ 
+
+  <a href="https://aws.amazon.com/marketplace/help/201280870/ref=mkt_ste_hp_car_c_hourly?sc_ichannel=HA&sc_ipage=homepage&sc_iplace=hero5&sc_isegment=c&sc_icampaigntype=marketplace&sc_icampaign=ha_marketplace_pay_by_the_hour&sc_icountry=US" onClick="javascript:urchinTracker('/clicktrack/homepage/c/hero5/marketplace/ha_marketplace_pay_by_the_hour');" data-customer-status="customer" data-analytics="/clicktrack/homepage/display/c/hero5/marketplace/ha_marketplace_pay_by_the_hour">
+    <div id="featuredSwap-marketplace-magic-quadrant" class="featuredSwap-content">
+      <div class="hlp-ir">AWS Marketplace</div>
+      <div class="marketplace-magic-quadrant-blurb">
+        Leading software available, <br>pay only for what you use.<br /><br />
+        <span class="hlp-linkText">View hourly-priced software &raquo;</span>
+      </div>
+    </div>
+  </a>
+
+
+<!-- /hero-featureswap -->
+</div>
+
+  <a href="https://portal.aws.amazon.com/gp/aws/developer/registration/index.html" style="cursor: pointer;" onclick="javascript:urchinTracker('/clicktrack/homepage/hero_cta_en/free/');"> 
+  <div class="box-hpCTA hlp-border">
+     <span class="button" style="cursor: pointer; margin-right: 10px;">Get Started for Free &raquo;</span> <span class="buttonblurb">Launch virtual machines and apps in minutes.</span>
+  </div>
+</div>
+</a>
+
+
+
+
+  <div class="row">
+
+    
+    <div class="grid_4">
+      <a href="/free/?sc_ichannel=HA&sc_ipage=homepage&sc_iplace=editorial_r1_left_banner&sc_icampaigntype=free_tier&sc_icampaign=ha_free_tier_compute&sc_icountry=US" onclick="javascript:urchinTracker('/clicktrack/homepage/editorial_r1_left/banner/free_tier/ha_free_tier_compute');"><img width="301" src="//d36cz9buwru1tt.cloudfront.net/homepage/C3.png" class="hlp-border" alt="AWS Free Tier" title="AWS Free Tier" style="margin: 0 0 10px"></a>
+      <p class="lowerColHead"><a href="/free/?sc_ichannel=HA&sc_ipage=homepage&sc_iplace=editorial_r1_left_header&sc_icampaigntype=free_tier&sc_icampaign=ha_free_tier_compute&sc_icountry=US" onclick="javascript:urchinTracker('/clicktrack/homepage/editorial_r1_left/header/free_tier/ha_free_tier_compute');">AWS FREE TIER</a></p>
+      <h2 class="lowerColSubHead"><a href="/free/?sc_ichannel=HA&sc_ipage=homepage&sc_iplace=editorial_r1_left_subheader&sc_icampaigntype=free_tier&sc_icampaign=ha_free_tier_compute&sc_icountry=US" onclick="javascript:urchinTracker('/clicktrack/homepage/editorial_r1_left/subheader/free_tier/ha_free_tier_compute');">Get 750hrs of Linux and Windows Micro Instances Free</a></h2>
+    </div>
+
+
+    
+    <div class="grid_4">
+      <a class="fancybox fancybox.iframe" href="//www.youtube.com/embed/mZ5H8sn_2ZI?rel=0;hd=1;autoplay=1" onclick="javascript:urchinTracker('/clicktrack/homepage/editorial_r1_center/banner/general_info/ha_what_is_aws_video
+');"><img width="301" src="//d36cz9buwru1tt.cloudfront.net/homepage/AWS_Products_alt-mini.png" class="hlp-border" alt="" title="" style="margin: 0 0 10px"></a>
+      <p class="lowerColHead"><a href="/what-is-cloud-computing/?sc_ichannel=ha&sc_ipage=homepage&sc_iplace=editorial_r1_center_header&sc_icampaigntype=general_info&sc_icampaign=ha_what_is_aws_video&sc_icountry=us" onclick="javascript:urchinTracker('/clicktrack/homepage/editorial_r1_center/header/general_info/ha_what_is_aws_video');">WHAT IS AMAZON WEB SERVICES?</a></p>
+      <h2 class="lowerColSubHead"><a class="fancybox fancybox.iframe" href="//www.youtube.com/embed/mZ5H8sn_2ZI?rel=0;hd=1;autoplay=1" onclick="javascript:urchinTracker('/clicktrack/homepage/editorial_r1_center/subheader/general_info/ha_what_is_aws_video');">Learn about the AWS platform, products and services</a></h2>
+    </div>
+
+    
+    <div class="grid_4">
+     <a class="fancybox fancybox.iframe" href="//youtube.com/embed/jOhbTAU4OPI?rel=0;hd=1;autoplay=1" onclick="javascript:urchinTracker('/clicktrack/homepage/editorial_r1_right/banner/general_info/ha_what_is_cloud_computing_video');"><img width="301" src="//d36cz9buwru1tt.cloudfront.net/what_is_aws.png" class="hlp-border" alt="AWS Marchitecture" title="AWS Marchitecture" style="margin: 0 0 10px"></a>
+      <p class="lowerColHead"><a href="/what-is-cloud-computing/?sc_ichannel=HA&sc_ipage=homepage&sc_iplace=editorial_r1_right_header&sc_icampaigntype=general_info&sc_icampaign=ha_what_is_cloud_computing_video&sc_icountry=US" onclick="javascript:urchinTracker('/clicktrack/homepage/editorial_r1_right/header/general_info/ha_what_is_cloud_computing_video');">WHAT IS CLOUD COMPUTING?</a></p>
+      <h2 class="lowerColSubHead"><a class="fancybox fancybox.iframe" href="//youtube.com/embed/jOhbTAU4OPI?rel=0;hd=1;autoplay=1" onclick="javascript:urchinTracker('/clicktrack/homepage/editorial_r1_right/subheader/general_info/ha_what_is_cloud_computing_video');">Learn the benefits of Cloud Computing with AWS</a></h2>
+    </div>
+
+  </div>
+<hr size='1' noshade>
+
+
+    <h2 class="whatsNewHeadLink"><a href="/about-aws/whats-new/">What's New with Amazon Web Services</a></h2>
+  <div class="row">
+
+    
+    <div class="grid_4">
+     <a href="/about-aws/whats-new/2013/12/15/announcing-new-edge-locations-manila-marseille-warsaw-for-cloudfront-route53/?sc_ichannel=HA&sc_ipage=homepage&sc_iplace=editorial_r2_left_banner&sc_icampaigntype=product_launch&sc_icampaign=ha_cloudfront_manila_marseille_warsaw&sc_icategory=storage_cdn&sc_iproduct=cloudfront&sc_icountry=US" onclick="javascript:urchinTracker('/clicktrack/homepage/editorial_r2_left/banner/product_launch/ha_cloudfront_manila_marseille_warsaw');"><img width="301" src="//d36cz9buwru1tt.cloudfront.net/homepage/CloudFront_POP-mini.png" class="hlp-border" alt="" title="" style="margin: 0 0 10px"></a>
+      <p class="midColDate">Dec 15, 2013 | <a href="/cloudfront/?sc_ichannel=HA&sc_ipage=homepage&sc_iplace=editorial_r2_left_header&sc_icampaigntype=product_launch&sc_icampaign=ha_cloudfront_manila_marseille_warsaw&sc_icategory=storage_cdn&sc_iproduct=cloudfront&sc_icountry=US" onclick="javascript:urchinTracker('/clicktrack/homepage/editorial_r2_left/header/product_launch/ha_cloudfront_manila_marseille_warsaw');" class='midColLink'>AMAZON CLOUDFRONT</a></p>
+      <h2 class="midColHead"><a href="/about-aws/whats-new/2013/12/15/announcing-new-edge-locations-manila-marseille-warsaw-for-cloudfront-route53/?sc_ichannel=HA&sc_ipage=homepage&sc_iplace=editorial_r2_left_subheader&sc_icampaigntype=
+535
+product_launch&sc_icampaign=ha_cloudfront_manila_marseille_warsaw&sc_icategory=storage_cdn&sc_iproduct=cloudfront&sc_icountry=US" onclick="javascript:urchinTracker('/clicktrack/homepage/editorial_r2_left/subheader/product_launch/ha_cloudfront_manila_marseille_warsaw');">New Edge Locations - Manila, Marseille, Warsaw</a></h2>
+    </div>
+
+    
+    <div class="grid_4">
+     <a href="/about-aws/whats-new/2013/12/12/announcing-amazon-dynamodb-global-secondary-indexes/?sc_ichannel=HA&sc_ipage=homepage&sc_iplace=editorial_r2_center_banner&sc_icampaigntype=product_launch&sc_icampaign=ha_dynamodb_gsi_2013_12&sc_icategory=database&sc_iproduct=dynamodb&sc_icountry=US" onclick="javascript:urchinTracker('/clicktrack/homepage/editorial_r2_center/banner/product_launch/ha_dynamodb_gsi_2013_12');"><img width="301" src="//d36cz9buwru1tt.cloudfront.net/homepage/dynamodb_secondary_indexes-mini.png" class="hlp-border" alt="" title="" style="margin: 0 0 10px"></a>
+      <p class="midColDate">Dec 12, 2013 | <a href="/dynamodb/?sc_ichannel=HA&sc_ipage=homepage&sc_iplace=editorial_r2_center_header&sc_icampaigntype=product_launch&sc_icampaign=ha_dynamodb_gsi_2013_12&sc_icategory=database&sc_iproduct=dynamodb&sc_icountry=US" onclick="javascript:urchinTracker('/clicktrack/homepage/editorial_r2_center/header/product_launch/ha_dynamodb_gsi_2
+1acb
+013_12');" class='midColLink'>AMAZON DYNAMODB</a></p>
+      <h2 class="midColHead"><a href="/about-aws/whats-new/2013/12/12/announcing-amazon-dynamodb-global-secondary-indexes/?sc_ichannel=HA&sc_ipage=homepage&sc_iplace=editorial_r2_center_subheader&sc_icampaigntype=product_launch&sc_icampaign=ha_dynamodb_gsi_2013_12&sc_icategory=database&sc_iproduct=dynamodb&sc_icountry=US" onclick="javascript:urchinTracker('/clicktrack/homepage/editorial_r2_center/subheader/product_launch/ha_dynamodb_gsi_2013_12');">Global Secondary Indexes enable queries on any field</a></h2>
+    </div>
+
+  
+    
+    <div class="grid_4">
+     <a href="http://aws.typepad.com/aws/2013/12/new-resource-level-permissions-for-aws-opsworks.html?sc_ichannel=HA&sc_ipage=homepage&sc_iplace=editorial_r2_right_banner&sc_icampaigntype=product_launch&sc_icampaign=ha_opsworks_resource_permissions_2013_12_05&sc_icategory=deploy_manage&sc_iproduct=opsworks&sc_icountry=US" onclick="javascript:urchinTracker('/clicktrack/homepage/editorial_r2_right/banner/product_launch/ha_opsworks_resource_permissions_2013_12_05');"><img width="301" src="//d36cz9buwru1tt.cloudfront.net/homepage/OpsWorks_Permissions-mini.png" class="hlp-border" alt="" title="" style="margin: 0 0 10px"></a>
+      <p class="midColDate">Dec 5, 2013 | <a href="/opsworks/?sc_ichannel=HA&sc_ipage=homepage&sc_iplace=editorial_r2_right_header&sc_icampaigntype=product_launch&sc_icampaign=ha_opsworks_resource_permissions_2013_12_05&sc_icategory=deploy_manage&sc_iproduct=opsworks&sc_icountry=US" onclick="javascript:urchinTracker('/clicktrack/homepage/editorial_r2_right/header/product_launch/ha_opsworks_resource_permissions_2013_12_05');" class='midColLink'>AMAZON OPSWORKS</a></p>
+      <h2 class="midColHead"><a href="http://aws.typepad.com/aws/2013/12/new-resource-level-permissions-for-aws-opsworks.html?sc_ichannel=HA&sc_ipage=homepage&sc_iplace=editorial_r2_right_subheader&sc_icampaigntype=product_launch&sc_icampaign=ha_opsworks_resource_permissions_2013_12_05&sc_icategory=deploy_manage&sc_iproduct=opsworks&sc_icountry=US" onclick="javascript:urchinTracker('/clicktrack/homepage/editorial_r2_right/subheader/product_launch/ha_opsworks_resource_permissions_2013_12_05');">Manage user permissions on a per stack basis</a></h2>
+    </div>
+
+
+<!-- /.row -->
+  </div>
+<div class="whatsNewAllLink">
+  <a href="/about-aws/whats-new/?sc_ichannel=HA&sc_ipage=homepage&sc_iplace=editorial_r2_text_link&sc_icampaigntype=whats_new&sc_icampaign=ha_view_all_announcements&sc_icountry=US" onclick="javascript:urchinTracker('/clicktrack/homepage/editorial_r2/text_link/ha_view_all_announcements');">View all announcements &raquo;</a>
+</div>
+
+<hr size='1' noshade>
+
+
+  <div class="row">
+
+    
+
+    <div class="grid_4">
+     <a href="/marketplace/ref=mkt_ste_hp_btf_blk?sc_ichannel=HA&sc_ipage=homepage&sc_iplace=editorial_r3_left_banner&sc_icampaigntype=partners&sc_icampaign=ha_marketplace_1click&sc_icountry=US" onclick="javascript:urchinTracker('/clicktrack/homepage/editorial_r3_left/banner/partners/ha_marketplace_1click');" target="_blank"><img width="301" src="//d36cz9buwru1tt.cloudfront.net/homepage/Marketplace-mini.png" class="hlp-border" alt="Launch popular software for AWS with 1-Click" style="margin: 0 0 10px"></a>
+      <p class="lowerColHead"><a href="/marketplace/ref=mkt_ste_hp_btf_blk?sc_ichannel=HA&sc_ipage=homepage&sc_iplace=editorial_r3_left_header&sc_icampaigntype=partners&sc_icampaign=ha_marketplace_1click&sc_icountry=US" onclick="javascript:urchinTracker('/clicktrack/homepage/editorial_r3_left/header/partners/ha_marketplace_1click');">AWS MARKETPLACE</a></p>
+      <h2 class="lowerColSubHead"><a href="/marketplace/ref=mkt_ste_hp_btf_blk?sc_ichannel=HA&sc_ipage=homepage&sc_iplace=editorial_r3_left_subheader&sc_icampaigntype=partners&sc_icampaign=ha_marketplace_1click&sc_icountry=US" onclick="javascript:urchinTracker('/clicktrack/homepage/editorial_r3_left/subheader/partners/ha_marketplace_1click');">Launch popular software for AWS with 1-Click</a></h2>
+    </div>
+
+
+    
+    <div class="grid_4">
+     <a href="/resources/analyst-reports/?sc_ichannel=HA&sc_ipage=homepage&sc_iplace=editorial_r3_center_banner&sc_icampaigntype=general_info&sc_icampaign=ha_gartner_iaas_mq_2013&sc_icountry=US" onclick="javascript:urchinTracker('/clicktrack/homepage/editorial_r3_center/banner/general_info/ha_gartner_iaas_mq_2013');"><img width="301" src="//d36cz9buwru1tt.cloudfront.net/homepage/Gartner_editorial.png" class="hlp-border" alt="Gartner" style="margin: 0 0 10px"></a>
+      <p class="lowerColHead"><a href="/resources/analyst-reports/?sc_ichannel=HA&sc_ipage=homepage&sc_iplace=editorial_r3_center_header&sc_icampaigntype=partners&sc_icampaign=ha_marketplace_1click&sc_icountry=US" onclick="javascript:urchinTracker('/clicktrack/homepage/editorial_r3_center/header/general_info/ha_analysts_reports');">ANALYST REPORTS</a></p>
+      <h2 class="lowerColSubHead"><a href="/resources/analyst-reports/?sc_ichannel=HA&sc_ipage=homepage&sc_iplace=editorial_r3_center_subheader&sc_isegment=c&sc_icampaigntype=general_info&sc_icampaign=ha_gartner_iaas_mq_2013&sc_icountry=US" onclick="javascript:urchinTracker('/clicktrack/homepage/editorial_r3_center/subheader/general_info/ha_gartner_iaas_mq_2013');">AWS positioned in ‚ÄúLeaders‚Äù Quadrant for Cloud IaaS</a></h2>
+    </div>
+
+
+    
+    <div class="grid_4">
+     <a href="http://www.powerof60.com/?utm_source=AWSHP&utm_medium=banner&utm_campaign=BA_AWSHP_IntelAWS&utm_content=GenericAWS&00N500000026nJd=BA_AWSHP_IntelAWS_Generic&sc_ichannel=HA&sc_ipage=homepage&sc_iplace=editorial_r3_right_banner&sc_icampaigntype=partners&sc_icampaign=ha_intel_power_of_60&sc_icountry=US" onclick="javascript:urchinTracker('/clicktrack/homepage/editorial_r3_right/banner/partners/ha_intel_power_of_60');" target="_blank"><img width="301" src="//d36cz9buwru1tt.cloudfront.net/homepage/Intel-Power_of_sixty-mini.png" class="hlp-border" alt="What's New" title="What's New" style="margin: 0 0 10px"></a>
+      <p class="lowerColHead"><a href="/big-data/?sc_ichannel=HA&sc_ipage=homepage&sc_iplace=editorial_r3_right_header&sc_icampaigntype=use_case&sc_icampaign=ha_big_data&sc_icountry=US" onclick="javascript:urchinTracker('/clicktrack/homepage/editorial_r3_right/header/use_case/ha_big_data');">BIG DATA ON AWS</a></p>
+      <h2 class="lowerColSubHead"><a href="http://www.powerof60.com/?utm_source=AWSHP&utm_medium=banner&utm_campaign=BA_AWSHP_IntelAWS&utm_content=GenericAWS&00N500000026nJd=BA_AWSHP_IntelAWS_Generic&sc_ichannel=HA&sc_ipage=homepage&sc_iplace=editorial_r3_right_subheader&sc_icampaigntype=partners&sc_icampaign=ha_intel_power_of_60&sc_icountry=US" onclick="javascript:urchinTracker('/clicktrack/homepage/editorial_r3_right/subheader/partners/ha_intel_power_of_60');" target="_blank">Learn how customers benefit from Big Data analysis</a></h2>
+    </div>
+
+
+46e
+
+  </div>
+
+
+    </article>
+
+    <footer id="ft" class="footer">
+      
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <div style="border-top: 1px solid #ccc; margin-bottom: 12px; margin-top: 10px; padding-top: 2px;">
+  <ul class="h_bar">
+    <li class="first">
+      <a href="http://aws.typepad.com/" target="_blank">AWS Blog <img src="//d36cz9buwru1tt.cloudfront.net/icon_offsite.gif" width="15" height="13" border="0" alt="This link will launch a new browser window or tab."></a>
+    </li>
+    <li><a href="http://phx.corporate-ir.net/phoenix.zhtml?c=176060&p=irol-InfoReq">Press Inquiries</a></li>
+    <li><a href="/careers/">Careers at AWS</a></li>
+    <li><a href="/contact-us/">Contact Us</a></li>
+    <li><a href="/privacy/">Privacy Policy</a></li>
+    <li><a href="/terms/">Terms of Use</a></li>
+  </ul>
+  <div class="grey666">&#169;2013, Amazon Web Services, Inc. or its affiliates. All rights reserved.</div>
+  <img src="//d36cz9buwru1tt.cloudfront.net/awsmedia/logo_an_amazon_company.gif" width="160" height="21" vspace="8">
+</div>
+
+    </footer>
+  </div>
+
+
+  
+    <script src="/js/jquery.cookie.js" type="text/javascript"></script>
+<script>
+// Accessed 
+759
+console or has logged in
+if( !$.cookie('aws-x-main') ) {
+  $('a[data-customer-status="customer"], div[data-customer-status="customer"]').remove();
+} else {
+  $('a[data-customer-status="prospect"], div[data-customer-status="prospect"]').remove();
+}
+</script>
+
+<script src="/js/jquery.orbit-1.2.3.min.js" type="text/javascript"></script>
+<script type="text/javascript">
+  $(window).load(function() {
+    $('#hero-featureSwap').orbit({
+     animation: 'horizontal-push',
+     animationSpeed: 1000,
+     advanceSpeed: 5500,
+     pauseOnHover: true,
+     startClockOnMouseOut: true,
+     startClockOnMouseOutAfter: 1000,
+     directionalNav: true,
+     captions: false,
+     bullets: true,
+     afterSlideChange: function(){
+      var visibleTile = $(this).data('analytics');
+      urchinTracker(visibleTile);
+     } 
+    });
+    if( !$.cookie('aws-x-main') ) {
+      urchinTracker('/clicktrack/homepage/non-customer/');
+      urchinTracker($('#hero-featureSwap').children().first().data('analytics'));
+    } else {
+      urchinTracker('/clicktrack/homepage/customer/');
+      urchinTracker($('#hero-featureSwap').children().first().data('analytics'));
+    }
+  });
+</script>
+
+<script src="/js/jquery-ui-1.9.2.min.js" type="text/javascript"></script>
+<script type="text/javascript">
+$(document).ready(function() {
+  $('.marc-container').on('click', '.marc-swap-link', function() {
+    var $this = $(this);
+    // Remove old boxes/colors
+    $('.marc-orange').removeClass('marc-orange');
+    $('.marc-content-box:visible').fadeOut('fast', function() {
+      // Select the new box, change link color
+      var boxID = $this.attr('id');
+      $('#marc-'+boxID).fadeIn('fast');
+      $this.addClass('marc-orange');
+    });
+  });
+
+  // Activate jQuery UI's tabs on the homepage
+  $('.tabs').tabs();
+
+  // Activate Fancybox
+  $('.fancybox').fancybox();
+});
+</script>
+
+
+  
+
+</body>
+
+</html>
+
+
+
+
+0
+

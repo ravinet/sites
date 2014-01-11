@@ -1,0 +1,24 @@
+PHTTP50.17.211.79"≤
+ÅGET /max_log.js?a=7881f43af0&lv=9:9&v=&h=www.cnbc.com&cs=&sr=1&fl=www.cnbc.com%7C&fr=9&fd=3&fk=view&ft=1&fp=3&fb=4&fs= HTTP/1.1
+Host: ping.crowdscience.com
+Connection: keep-alive
+Accept: */*
+vUser-Agent: Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/31.0.1650.63 Safari/537.36
+Referer: http://www.cnbc.com/
+$Accept-Encoding: gzip,deflate,sdch
+!Accept-Language: en-US,en;q=0.8
+
+*ë
+HTTP/1.1 200 OK
+ Access-Control-Allow-Origin: *
+Content-Type: text/javascript
+%Date: Wed, 08 Jan 2014 15:51:11 GMT
+JP3P: CP="NOI DSP COR NID DEVa PSAi OUR STP OTC",policyref="/w3c/p3p.xml"
+Server: Apache
+nSet-Cookie: __csmv=6f86ed81685156c9; Domain=.crowdscience.com; expires=Tue, 08 Apr 2014 15:51:11 GMT; Path=/
+ÅSet-Cookie: __csgeo=deg.19752_deg5.818_deg10.211_cc.US; Domain=.crowdscience.com; expires=Fri, 07 Feb 2014 15:51:11 GMT; Path=/
+Content-Length: 268
+Connection: keep-alive
+é
+    document.cookie = '__csgeo=deg.19752_deg5.818_deg10.211_cc.US;path=/;expires=' + new Date(new Date().getTime() + 259200000).toGMTString();
+    document.cookie = '__csmv=6f86ed81685156c9;path=/;expires=' + new Date(new Date().getTime() + 7776000000).toGMTString();

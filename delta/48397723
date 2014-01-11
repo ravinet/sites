@@ -1,0 +1,127 @@
+PHTTP23.209.56.216"Ì
+êGET /libs/cq/personalization/components/clickstreamcloud/content/config.json?path=%2Fcontent%2Fwww%2Fen_US%2Fhome&cq_ck=1389229445851 HTTP/1.1
+Host: www.delta.com
+Connection: keep-alive
+Accept: */*
+"X-Requested-With: XMLHttpRequest
+vUser-Agent: Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/31.0.1650.63 Safari/537.36
+ Referer: http://www.delta.com/
+$Accept-Encoding: gzip,deflate,sdch
+!Accept-Language: en-US,en;q=0.8
+åCookie: TLTSID=E780EBE878C91078B59BF5AFD87619BB; mobile=N; JSESSIONID=0000uraVf4gDKdRjnW6vOzokobF:-1; JROUTE=jela; IBMSessionHandle_session=69; IBMID=uraVf4gDKdRjnW6vOzokobF; TLTHID=E826AB6478C9107803BBB3C1795B55FE; mbox=check#true#1389229506|session#1389229445227-557816#1389231306|PC#1389229445227-557816.25_36#1390439046; fsr.a=1389229445579; pref=en-us; MPEL=MPEL; MP_LANG=en; MP_COUNTRY=us
+
+*ƒ
+HTTP/1.1 200 OK
+Server: Delta Airlines
+Content-Length: 2230
+.Content-Type: application/json;charset=utf-8
+X-frame-options: SAMEORIGIN
+6Access-control-allow-origin: http://author.delta.com
+(Access-control-allow-credentials: true
+%Date: Thu, 09 Jan 2014 01:03:53 GMT
+Connection: keep-alive
+PSet-Cookie: TLTHID=E8850BF078C91078CF37B8726552B861; Path=/; Domain=.delta.com
+∏
+{
+  "data": {
+    "profile": {
+    },
+    "pagedata": {
+      "hits": 0,
+      "title": "Airline Tickets and Flights to Worldwide Destinations - Delta Air Lines",
+      "path": "/content/www/en_US/home",
+      "navTitle": "Airline Tickets and Flights to Worldwide Destinations - Delta Air Lines",
+      "template": "/apps/delta/www/templates/homepage",
+      "random": "0.18"
+    },
+    "tagcloud": {
+      "tags": [
+      ]
+    },
+    "surferinfo": {
+      "IP": "10.240.2.52",
+      "keywords": ""
+    }
+  },
+  "ui": {
+    "target": "clickstreamcloud-gui",
+    "version": "light"
+  },
+  "configs": {
+    "surferinfo": {
+      "ui": {
+        "title": "Surfer information",
+        "mode": "textfield",
+        "jcr:primaryType": "nt:unstructured"
+      },
+      "store": {
+        "excludedFromStats": [
+          "mouse X",
+          "mouse Y"
+        ],
+        "jcr:primaryType": "nt:unstructured"
+      }
+    },
+    "mouseposition": {
+      "store": {
+        "stats": "false",
+        "jcr:primaryType": "nt:unstructured"
+      }
+    },
+    "segments": {
+      "ui": {
+        "title": "Resolved segments",
+        "mode": "link",
+        "jcr:primaryType": "nt:unstructured"
+      }
+    },
+    "eventdata": {
+      "ui": {
+        "title": "Events",
+        "mode": "textfield",
+        "jcr:primaryType": "nt:unstructured"
+      },
+      "store": {
+        "stats": "false",
+        "jcr:primaryType": "nt:unstructured"
+      }
+    },
+    "pagedata": {
+      "ui": {
+        "title": "Page data",
+        "mode": "textfield",
+        "jcr:primaryType": "nt:unstructured"
+      },
+      "store": {
+        "excludedFromStats": [
+          "random"
+        ],
+        "jcr:primaryType": "nt:unstructured",
+        "invisible": [
+          "path"
+        ]
+      }
+    },
+    "tagcloud": {
+      "ui": {
+        "title": "Tag cloud",
+        "mode": "textfield",
+        "jcr:primaryType": "nt:unstructured"
+      }
+    },
+    "profile": {
+      "ui": {
+        "title": "Profile",
+        "mode": "textfield",
+        "jcr:primaryType": "nt:unstructured"
+      },
+      "store": {
+        "stats": "false",
+        "jcr:primaryType": "nt:unstructured",
+        "invisible": [
+          "path"
+        ]
+      }
+    }
+  }
+}

@@ -1,0 +1,25 @@
+PHTTP69.175.59.91"æ
+8GET /custom-script/1.0/www-lotterypost-com.js HTTP/1.1
+Host: js.nrcdn.com
+Connection: keep-alive
+Accept: */*
+vUser-Agent: Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/31.0.1650.63 Safari/537.36
+$Accept-Encoding: gzip,deflate,sdch
+!Accept-Language: en-US,en;q=0.8
+
+*Å
+HTTP/1.1 200 OK
+Server: nginx/1.4.3
+Content-Type: text/javascript
+.Last-Modified: Thu, 28 Mar 2013 16:04:43 GMT
+X-SE-OCDN-Debug: NRJS-Default
+Cache-Control: max-age=600
+Content-Length: 17
+%Date: Fri, 10 Jan 2014 17:11:26 GMT
+Connection: keep-alive
+age: 0
+X-SE-Edge-Cache: Hit
+X-SE-Edge-Hits: 449
+ X-SE-Edge-Server: 69.175.59.91
+
+nRelate.acs({});

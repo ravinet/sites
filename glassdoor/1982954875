@@ -1,0 +1,20 @@
+PHTTP67.192.222.18"â
+GET / HTTP/1.1
+Host: www.glassdoor.com
+Connection: keep-alive
+TAccept: text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8
+vUser-Agent: Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/31.0.1650.63 Safari/537.36
+$Accept-Encoding: gzip,deflate,sdch
+!Accept-Language: en-US,en;q=0.8
+
+*Ô
+ HTTP/1.1 301 Moved Permanently
+Server: Apache-Coyote/1.1
+KSet-Cookie: JSESSIONID=B2F85105C57D3F3F99D9BA0094335AA1; Path=/; HttpOnly
+Location: index.htm
+X-Cnection: close
+'Content-Type: text/html;charset=UTF-8
+Content-Length: 0
+%Date: Thu, 09 Jan 2014 01:23:18 GMT
+1Set-Cookie: ARPNTS=MTkyLjE2OC4xMDEuMjQ4;path=/;
+

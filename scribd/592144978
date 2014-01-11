@@ -1,0 +1,21 @@
+PHTTP173.192.64.45"¯
+‹GET /2/getvid.jsonp?callback=jsonp113124&l=Imh0dHA6Ly93d3cuc2NyaWJkLmNvbS8i&r=bnVsbA%3D%3D&ea=eyJkb2NfaWQiOm51bGwsInVzZXJfaWQiOm51bGx9&ubtc=InU9YzM1YzgwMjAtNWI2My0wMTMxLWYyZWUtMDAyNTkwMmRlNjU4Jmg9dTR3YldGdkFQa2FaR3NITFVZZGo0TGpUb1gxTW04YnFTaWlyRFI4Q1Fmdz0i HTTP/1.1
+Host: rs1.scribd.com
+Connection: keep-alive
+Accept: */*
+vUser-Agent: Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/31.0.1650.63 Safari/537.36
+!Referer: http://www.scribd.com/
+$Accept-Encoding: gzip,deflate,sdch
+!Accept-Language: en-US,en;q=0.8
+õCookie: _scribd_session=BAh7BiIPc2Vzc2lvbl9pZCIlM2U3ZTcwMzA2MzJkYWE3Y2MzYzNlZjdhZGEwNDJhNDA%3D--0e7470db3afdddddb819720a0d35bbb801125913; scribd_ubtc=u%3Dc35c8020-5b63-0131-f2ee-0025902de658%26h%3Du4wbWFvAPkaZGsHLUYdj4LjToX1Mm8bqSiirDR8CQfw%3D
+
+*Ã
+HTTP/1.1 200 OK
+%Date: Thu, 09 Jan 2014 13:56:29 GMT
+/Content-Type: text/javascript; charset=UTF-8"
+Content-Length: 81
+Connection: keep-alive
+2Etag: "a34095090f957bef6ab8766a3bf754060f518347"
+Server: TornadoServer/3.1.1
+S
+jsonp113124([{"status": "success", "logTimeoutLen": 30000.0, "vid": 1673706103}])

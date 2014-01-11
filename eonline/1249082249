@@ -1,0 +1,190 @@
+PHTTP
+18.7.20.69"
+>GET /uberblog/includes/js/eol-blog/eol.page.blog.js HTTP/1.1
+Host: www.eonline.com
+Connection: keep-alive
+Accept: */*
+vUser-Agent: Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/31.0.1650.63 Safari/537.36
+"Referer: http://www.eonline.com/
+$Accept-Encoding: gzip,deflate,sdch
+!Accept-Language: en-US,en;q=0.8
+"Cookie: edition=us; adEdition=us
+
+*Ò^
+HTTP/1.1 200 OK
+RServer: Apache/2.2.3 (CentOS) mod_jk/1.2.32 PHP/5.1.6 mod_perl/2.0.4 Perl/v5.8.8
+tX-Powered-By: Servlet 2.4; JBoss-4.3.0.GA_CP04 (build: SVNTag=JBPAPP_4_3_0_GA_CP04 date=200902200048)/JBossWeb-2.0
+ETag: W/"11612-1388703520000"
+.Last-Modified: Thu, 02 Jan 2014 22:58:40 GMT
+Content-Length: 11612
+Content-Type: text/javascript
+Cache-Control: max-age=600
+(Expires: Thu, 09 Jan 2014 01:02:41 GMT
+%Date: Thu, 09 Jan 2014 00:52:41 GMT
+Connection: keep-alive
+ÞZ
+(function($){
+        
+        window.demoloaded = false;
+        window.tasks = function() {            
+
+
+            $("body.edition_us").each(function(){
+                    if ( ! window.lvcvablog ) {
+                            $("#blog_roll div.entry_content").find("span.lvcvapgblog").each(function(){
+                                    window.lvcvablog = true;
+                                    $(this).parents(".entry_container").find("h1,h2").first().css({"width":"400px"}).after("<iframe frameborder='0' scrolling='no' class='ad-blogpost' src='"+eol.page.dartRender({type:"adi",keywords:"lvcvapgblog",tile: "9", dimensions : "120x60"})+"' ></iframe>");
+                                    $(this).remove();
+                                });
+                        }
+
+
+
+                    if ( ! window.fashion_week_fall_2012 ) {                        
+                        if ( eol.page.time() >= eol.page.gmt(new Date("02/09/2012")) && eol.page.time() <= eol.page.gmt(new Date("02/17/2012")) ) {
+                            $("div.blog_entry").each(function(i){
+                                    window.fashion_week_spring_2012 = true;
+                                    if ( $(this).find("div.entry_footer a").map(function(){return ( $(this).text().toLowerCase() == "fashion week fall 2012" ) ? true : null;}).size() > 0 || 
+                                        $(this).find(".entry_title").text().toLowerCase().indexOf("fashion week fall 2012") >= 0 ) {
+                                    	$(this).find("h1,h2").first().css({"width":"400px"}).after("<a class='ad-blogpost' href='http:\/\/www.covergirl.com\/collections\/tru-collection' target='_blank'><img src='http:\/\/images.eonline.com\/static\/sponsor\/covergirl\/images\/2012_fall_fashion_sponsor_logo.gif' \/><\/a>");
+                                    }
+                                });
+                        }
+                    }
+                    
+                    if ( ! window.lvcva ) {                        
+                        if ( eol.page.time() >= eol.page.gmt(new Date("05/18/2012")) && eol.page.time() <= eol.page.gmt(new Date("5/24/2012")) ) {
+                            $("div.blog_entry").each(function(i){
+                                    window.lvcva = true;
+                                    if ( $(this).find("div.entry_footer a").map(function(){return ( $(this).text().toLowerCase() == "lvcva" ) ? true : null;}).size() > 0 || 
+                                        $(this).find(".entry_title").text().toLowerCase().indexOf("lvcva") >= 0 ) {
+                                            $(this).find("h1,h2").first().css({"width":"400px"}).after("<iframe frameborder='0' scrolling='no' class='ad-blogpost' src='"+eol.page.dartRender({type:"adi",keywords:"lvcva",tile: (9+i).toString(), dimensions : "120x60"})+"' ></iframe>");
+                                    }
+                                });
+                        }
+                    }
+
+                    if ( ! window.vegas_report ) {                        
+                        if ( eol.page.time() >= eol.page.gmt(new Date("05/21/2012")) && eol.page.time() <= eol.page.gmt(new Date("05/03/2112")) ) {
+                            $("div.blog_entry").each(function(i){
+                                    window.vegas_report = true;
+                                    if ( $(this).find("div.entry_footer a").map(function(){return ( $(this).text().toLowerCase() == "vegas report" ) ? true : null;}).size() > 0 || 
+                                        $(this).find(".entry_title").text().toLowerCase().indexOf("vegas_report") >= 0 ) {
+                                            $(this).find("h1,h2").first().css({"width":"400px"}).after("<iframe frameborder='0' scrolling='no' class='ad-blogpost' src='"+eol.page.dartRender({type:"adi",keywords:"vegas_report",tile: (9+i).toString(), dimensions : "120x60"})+"' ></iframe>");
+                                    }
+                                });
+                        }
+                    }
+                                        
+                                        
+
+                    if ( ! window.daily_dish ) {                        
+                        if ( eol.page.time() >= eol.page.gmt(new Date("09/25/2011")) && eol.page.time() <= eol.page.gmt(new Date("10/11/2011")) ) {
+                            $("div.blog_entry").each(function(i){
+                                    window.daily_dish = true;
+                                    if ( $(this).find("div.entry_footer a").map(function(){return ( $(this).text().toLowerCase() == "daily dish" ) ? true : null;}).size() > 0 || 
+                                        $(this).find(".entry_title").text().toLowerCase().indexOf("daily dish") >= 0 ) {
+                                            $(this).find("h1,h2").first().css({"width":"400px"}).after("<iframe frameborder='0' scrolling='no' class='ad-blogpost' src='"+eol.page.dartRender({type:"adi",keywords:"daily_dish",tile: (9+i).toString(), dimensions : "120x60"})+"' ></iframe>");
+                                    }
+                                });
+                        }
+                    }
+                    
+                    if ( ! window.harry_potter ) {                        
+                        if ( eol.page.time() >= eol.page.gmt(new Date("11/04/2011")) && eol.page.time() <= eol.page.gmt(new Date("11/14/2011")) ) {
+                            $("div.blog_entry").each(function(i){
+                                    window.harry_potter = true;
+                                    if ( $(this).find("div.entry_footer a").map(function(){return ( $(this).text().toLowerCase() == "harry potter" ) ? true : null;}).size() > 0 || 
+                                        $(this).find(".entry_title").text().toLowerCase().indexOf("harry potter") >= 0 ) {
+                                            $(this).find("h1,h2").first().css({"width":"400px"}).after("<a class='ad-blogpost' href='http:\/\/ad.doubleclick.net\/click;h=v2|3E8D|0|0|%2a|p;248317888;0-0;0;74092897;31-1|1;44920569|44938357|1;;;pc=[TPAS_ID]%3fhttp:\/\/harrypotter.warnerbros.com\/harrypotterandthedeathlyhallows\/mainsite\/dvd\/' target='_blank'><img src='http:\/\/images.eonline.com\/static\/sponsor\/harry_potter\/wb_hp_120x60.jpg' \/><\/a><img src='http:\/\/ad.doubleclick.net\/imp;v1;f;248317888;0-0;0;74092897;1|1;44920569|44938357|1;;cs=l;pc=[TPAS_ID];%3fhttp:\/\/ad.doubleclick.net\/dot.gif?%n'\/>");
+                                    }
+                                });
+                        }
+                    }
+                    
+                    if ( ! window.save_one_show ) {                        
+                        if ( eol.page.time() >= eol.page.gmt(new Date("04/09/2012")) && eol.page.time() <= eol.page.gmt(new Date("04/30/2012")) ) {
+                            $("div.blog_entry").each(function(i){
+                                    window.save_one_show = true;
+                                    if ( $(this).find("div.entry_footer a").map(function(){return ( $(this).text().toLowerCase() == "save one show" ) ? true : null;}).size() > 0 || 
+                                        $(this).find(".entry_title").text().toLowerCase().indexOf("save one show") >= 0 ) {
+                                            $(this).find("h1,h2").first().css({"width":"400px"}).after("<a class='ad-blogpost' href='http:\/\/ad.doubleclick.net\/clk;255407973;78668512;y;pc=[TPAS_ID]%3fhttp:\/\/www.cars.com?BAC=EONspSlog' target='_blank'><img src='http:\/\/images.eonline.com\/static\/sponsor\/2012\/cars\/120x60.jpg' \/><\/a><img src='http:\/\/ad.doubleclick.net\/ad\/N5688.3021.EONLINE\/B6367658.65;sz=1x1;pc=[TPAS_ID];ord=%n' border=0 width=1 height=1 \/>");
+                                    }
+                                });
+                        }
+                    }
+                        
+
+            });
+
+        }
+        
+        window.closeLB = function() { 
+            $("div#LightBox").hide();
+        }
+
+        var scanInterval = setTimeout(tasks, 1000 );
+        $(document).ready(tasks);
+        $(window).load(function(){tasks();clearTimeout(scanInterval);});
+
+        window.dartUpdateToggleSkinDance = function() {
+            
+            var scanner = setInterval( function() {
+                    if ( $("#header_interior").offset().left + $("#header_interior").outerWidth() > 500 ) {
+                            $("body").prepend('<ol class="skin-choices"><li><a id="choice-2">rustic</a></li><li><a id="choice-3">urban</a></li><li><a id="choice-1">pizazz</a></li></ol>');
+        	            dartUpdateToggledSkin({skins : [ {skinUrl : "/static/skins/us/images/shermanwilliams/bkg.pizazz.jpg", color: "#cbc5e9"}, {skinUrl : "/static/skins/us/images/shermanwilliams/bkg.rustic.jpg", color: "#9ea474"}, {skinUrl : "/static/skins/us/images/shermanwilliams/bkg.urban.jpg", color: "#8daaae"} ]}); 
+                            clearInterval(scanner);
+                    }
+                }, 1000 );
+        }
+
+        window.dartUpdateToggledSkin = function( args ) {
+            		
+        	function setSkin( id ) {
+                        var selected = args.skins[id] || {};
+                        
+                        sTrackWidgetClick("skins:sherman-williams:choice:" + $("ol.skin-choices a#choice-id").text() );
+            		$("body").css( {"background-image" : "url("+selected.skinUrl+")", "background-color" : selected.color, "background-repeat":"no-repeat","background-attachment" : "fixed", "background-position" : "center top"});
+            		eol.cookie("skinchoicesw", id + 1);            		
+            		$("ol.skin-choices li a").css({"opacity" : "1"}).removeClass("active").eq(id).addClass("active").css({"opacity" : ".3"});
+                    }
+/*        	        	            
+                $("ol.skin-choices a").hover(function(){
+                                $(this).css({"opacity" : "1"}).addClass("peek");
+            		},function(e){
+            			$(this).removeClass("peek");
+            			if ( $(e.target).is(".active") ) {
+            				$(this).css({"opacity" : ".3"});
+            			}
+                    });
+                    */
+                $("ol.skin-choices a").bind("click", function(e) {
+                    var index = parseInt( $(e.target).attr("id").replace(/^\w+-/, "") || "-1", 10);
+
+                    if ( parseInt( ( eol.cookie("skinchoice") || "-1" ) ) != index ) {              
+                        e.stopPropagation();
+                        e.preventDefault();
+                        setSkin( index - 1 );
+                        sTrackWidgetClick("skins:sherman-williams:change:" + $(this).text() );
+                    } 
+            });
+            
+            function positionOptions() {
+            	var picker = $("#header_interior").offset().left + $("#header_interior").outerWidth() + 5;
+            	$("ol.skin-choices").css({"left": picker + "px"});            	
+            }
+            setSkin( parseInt( eol.cookie("skinchoicesw") || "1") -1 );
+            $(window).bind("resize", positionOptions );
+            setTimeout( function(){positionOptions();}, 1000 );
+        };
+
+        $(window).load(function(){
+            if($.browser.msie && (parseInt($.browser.version.charAt(0),10) < 8)){
+            	$("li.google-plus").remove();
+            }
+        });
+        
+        
+
+        
+})(jQuery);

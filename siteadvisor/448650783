@@ -1,0 +1,634 @@
+PHTTP161.69.13.140"Ó
+GET /script/core.js HTTP/1.1
+Host: www.siteadvisor.com
+Connection: keep-alive
+Accept: */*
+vUser-Agent: Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/31.0.1650.63 Safari/537.36
+&Referer: http://www.siteadvisor.com/
+$Accept-Encoding: gzip,deflate,sdch
+!Accept-Language: en-US,en;q=0.8
+
+*¾u
+HTTP/1.1 200 OK
+%Date: Thu, 09 Jan 2014 01:44:59 GMT
+Server: Apache
+.Last-Modified: Wed, 09 Jul 2008 02:03:21 GMT
+#ETag: "137aff-3982-4518db6812c40"
+Accept-Ranges: bytes
+Content-Length: 14722
+!Keep-Alive: timeout=15, max=100
+Connection: Keep-Alive
+&Content-Type: application/javascript
+„s
+// ----------------------------------------------------------------------------------------------------
+// GET OBJECTS, TAGS, CHILD / PARENT ELEMENTS 
+
+// get the object with the specified id
+function getObject(id){
+	if (document.getElementById){
+		return document.getElementById(id);
+	}
+	else if (document.all){
+		return  document.all[id];
+	}
+	else if (document.layers){
+		return getObjectNN4(document, id);
+	}
+	else{
+		return null;
+	}
+}
+
+// helper function for getObject
+// get object in Netscape 4
+function getObjectNN4(obj,name){
+	var x = obj.layers;
+	var foundLayer;
+	for (var i=0;i<x.length;i++){
+		if (x[i].id == name)
+			foundLayer = x[i];
+		else if (x[i].layers.length)
+			var tmp = getObjectNN4(x[i],name);
+		if (tmp) foundLayer = tmp;
+	}
+	return foundLayer;
+}
+
+// this replaces getElementsWithTagName
+// works in IE4+, NS6+
+function getTags(obj, tagName){
+	// we can take in an id string or an object pointer
+	// if it's a string, just use getObject on the id
+	if (typeof(obj) == 'string') obj = getObject(obj);
+	
+	if (obj.getElementsByTagName){
+		return obj.getElementsByTagName(tagName);
+	}
+	else if (document.all){
+		if (tagName == "*"){
+			return obj.all;
+		}
+		else{
+			// IE4 (and maybe some other browsers) support this method
+			// but tagname must be in uppercase
+			tagName = tagName.toUpperCase();
+			return obj.all.tags(tagName);
+		}
+	}
+	else{
+	// we can't get the tags, so we'll return nothing
+	return null;
+	}
+}
+
+// return the object's parent
+// this does not work in NS 4.x
+function getParent(obj){
+	// we can take in an id string or an object pointer
+	// if it's a string, just use getObject on the id
+	if (typeof(obj) == 'string') obj = getObject(obj);
+	
+	if (obj.parentNode){
+		return obj.parentNode;
+	}
+	else if (obj.parentElement){
+		return obj.parentElement;
+	}
+	else if (obj.parentLayer){
+		return obj.parentLayer;
+	}
+	else{
+		// we can't get the parent, so return null
+		return null;
+	}
+}
+
+// this is a more compatible version of element.childNodes
+// works in IE4+, NS6+
+// moz/opera count whitespace nodes, but IE does not
+function getChildren(obj){
+	// we can take in an id string or an object pointer
+	// if it's a string, just use getObject on the id
+	if (typeof(obj) == 'string') obj = getObject(obj);
+	
+	if (obj.childNodes){
+		// for non IE browsers, we need to clean out the whitespace nodes
+		// for consistency
+		var nonWhitespace = new Array();
+	
+		for (var i = 0; i < obj.childNodes.length; i++){
+			if (obj.childNodes[i].tagName != null && obj.childNodes[i].tagName != "!"){
+				nonWhitespace[nonWhitespace.length] = obj.childNodes[i];
+			}
+		}
+		return nonWhitespace;
+	}
+	else if (obj.children){	
+		var nonWhitespace = new Array();
+	
+		// don't include comment tags (tags that have a tagName of !)
+		for (var i = 0; i < obj.children.length; i++){
+			if (obj.children[i].tagName != "!"){
+				nonWhitespace[nonWhitespace.length] = obj.children[i];
+			}
+		}
+		return nonWhitespace;
+	}
+	else if (obj.layers){
+		return obj.layers;
+	}
+	else{
+	// we can't get the tags, so we'll return nothing
+	return null;
+	}
+}
+
+// ----------------------------------------------------------------------------------------------------
+// MANIPULATE STYLES, CLASSES
+
+// set the style for an object
+function setStyle(obj, styleTag, value){
+	// we can take in an id string or an object pointer
+	// if it's a string, just use getObject on the id
+	if (typeof(obj) == 'string') obj = getObject(obj);
+	
+	// get the style object
+	var style;
+	if (document.getElementById){
+		style = obj.style;
+	}
+	else if (document.all){
+		style = obj.style;
+	}
+	else if (document.layers){
+		style = obj;
+	} 
+	else{
+		// we can't get the style, so return
+		return false;
+	}	
+	// now, set the style
+	style[styleTag] = value;
+}
+
+// check to see if an element has a particular attribute value
+function hasAttr(obj,attribute){
+	if (typeof(obj) == 'string') obj = getObject(obj);
+	var attr = false;
+	if (obj.getAttributeNode(attribute) != null){
+		attr = obj.getAttributeNode(attribute);
+		return attr;
+	}
+	else{
+		// no attribute so 
+		return null;
+	}	
+}
+
+// returns true if the object has the specified class
+function hasClass(obj, className){
+	// we can take in an id string or an object pointer
+	// if it's a string, just use getObject on the id
+	if (typeof(obj) == 'string') obj = getObject(obj);
+	
+	if (obj.className){
+		var classes = obj.className.split(" ");
+		for (var i = 0; i < classes.length; i++){
+			if (classes[i]	== className){
+				return true;
+			}
+		}
+		return false;
+	}
+	else{
+		return false;
+	}
+}
+
+// add the CSS class to the object
+function addClass(obj, className){
+	// we can take in an id string or an object pointer
+	// if it's a string, just use getObject on the id
+	if (typeof(obj) == 'string') obj = getObject(obj);
+	
+	if (!hasClass(obj, className)){
+		if (obj.className == null || obj.className == ""){
+			obj.className = className;
+		}
+		else{
+			// append this to the list of existing classes
+			obj.className = obj.className + " " + className;
+		}
+	}
+}
+
+// remove the CSS class (if it exists)
+function removeClass(obj, className){
+	// we can take in an id string or an object pointer
+	// if it's a string, just use getObject on the id
+	if (typeof(obj) == 'string') obj = getObject(obj);
+	
+	var classes = obj.className.split(" ");
+	var newClasses = new Array();
+	
+	for (var i = 0; i < classes.length; i++){
+		if (classes[i]	!= className){
+			newClasses[newClasses.length] = classes[i];
+		}
+	}
+	
+	var newClassString = newClasses.join(" ");
+	obj.className = newClassString; 
+}
+
+// toggle the CSS class
+// if its there, remove it
+// if it isn't, add it
+function toggleClass(obj, className){
+	if (hasClass(obj, className)){
+		removeClass(obj, className);
+	}
+	else{
+		addClass(obj, className);
+	}
+}
+
+// highlight a specific object in a group
+function hiLite(obj,par,tag,className){
+	if (typeof(obj) == 'string') obj = getObject(obj);
+	if (typeof(par) == 'string') par = getObject(par);
+	
+	var c = getTags(par,tag);
+	
+	for(var i=0; i < c.length; i++){
+		if(hasClass(c[i],className)){
+			removeClass(c[i],className);
+		}
+		addClass(obj,className);
+	}
+}
+
+// ----------------------------------------------------------------------------------------------------
+// SHOW / HIDE OBJECTS
+
+// show an element
+// unless you specify a display type, the default of "block" is used
+function show(obj, displayType){
+	// we can take in an id string or an object pointer
+	// if it's a string, just use getObject on the id
+	if (typeof(obj) == 'string') obj = getObject(obj);
+	
+	if (document.layers){
+		obj.visibility  = "show";
+		if (displayType != null){
+			obj.display = displayType;
+		}
+		else{
+		obj.display = "block";
+		}
+	}
+	else if (obj.style){
+		obj.style.visibility  = "visible";
+		if (displayType != null){
+			obj.style.display = displayType;
+		}
+		else{
+			obj.style.display = "block";
+		}
+	}
+	else{
+		return false;
+	}
+}
+
+// hide all objects in a container
+// then show the other one
+function showOnly(obj){
+	if (typeof(obj) == "string") obj = getObject(obj);
+	show(obj);
+	
+	var container = getParent(obj);	
+	var children = getChildren(container);
+	
+	for (var i = 0; i < children.length; i++){
+		if (children[i] != obj){
+			hide(children[i]);
+			//hide(children[i]);
+		}
+	}
+}
+
+// hide an object
+// note that objects set display: none are inaccessible
+// in the NN4.x DOM. If this matters, use hide instead
+function hide(obj){
+	// we can take in an id string or an object pointer
+	// if it's a string, just use getObject on the id
+	if (typeof(obj) == 'string') obj = getObject(obj);
+	
+	if (document.layers){
+		obj.visibility  = "hidden";
+		obj.display = "none";
+	}
+	else if (obj.style){
+		obj.style.visibility  = "hidden";
+		obj.style.display = "none";
+	}
+	else{
+		return false;
+	}
+}
+
+// hide the object by setting visibility: hidden
+// objects hidden with this function will remain in
+// the document flow
+function hideVisibility(obj){
+	// we can take in an id string or an object pointer
+	// if it's a string, just use getObject on the id
+	if (typeof(obj) == 'string') obj = getObject(obj);
+	
+	if (document.layers){
+		obj.visibility  = "hidden";
+	}
+	else if (obj.style){
+		obj.style.visibility  = "hidden";
+	}
+	else{
+		return false;
+	}
+}
+
+// ----------------------------------------------------------------------------------------------------
+// GET DIMENSIONS AND PLACEMENT
+
+// get the document / body width
+function getBodyWidth(){
+	var x,y;
+	
+	if (document.getElementsByTagName){
+		var bd = document.getElementsByTagName("body").item(0);
+		x = getWidth(bd);
+	}	
+	return x;
+}
+
+function getBodyHeight(){
+	var x,y;
+	
+	if (document.getElementsByTagName){
+		var bd = document.getElementsByTagName("body").item(0);
+		y = getHeight(bd);
+	}	
+	return y;
+}
+
+// get the browser width
+function getScreenWidth(){
+	var x,y;
+	
+	// all except Explorer
+	if (self.innerHeight){
+		x = self.innerWidth;
+	}
+	// Explorer 6 Strict Mode
+	else if (document.documentElement && document.documentElement.clientHeight){
+		x = document.documentElement.clientWidth;
+	}
+	// other Explorers
+	else if (document.body){
+		x = document.body.clientWidth;
+	}
+	return x;
+}
+
+// get the browser height
+function getScreenHeight(){
+	var x,y;
+	
+	// all except Explorer
+	if (self.innerHeight){
+		y = self.innerHeight;
+	}
+	// Explorer 6 Strict Mode
+	else if (document.documentElement && document.documentElement.clientHeight){
+		y = document.documentElement.clientHeight;
+	}
+	// other Explorers
+	else if (document.body){
+		y = document.body.clientHeight;
+	}
+	return y;
+}
+
+// get the vertical scroll
+function getScrollTop(){
+   var scrollTop = 0;
+   if (self.pageYOffset){
+      scrollTop = self.pageYOffset;
+   }
+   else if (document.documentElement && document.documentElement.scrollTop){
+      scrollTop = document.body.scrollTop;
+   }
+   else if (document.body){
+      scrollTop = document.body.scrollTop;
+   }
+   return scrollTop;
+}
+
+// get the horizontal scroll
+function getScrollLeft(){
+   var scrollLeft = 0;
+   if (self.pageXOffset){
+      scrollLeft = self.pageXOffset;
+   }
+   else if (document.documentElement && document.documentElement.scrollLeft){
+      scrollLeft = document.body.scrollLeft;
+   }
+   else if (document.body){
+      scrollLeft = document.body.scrollLeft;
+   }
+   return scrollLeft;
+}
+
+// get the height of an element
+function getHeight(obj){
+	if (typeof(obj) == 'string') obj = getObject(obj);		
+	return obj.offsetHeight;
+}
+
+// get the width
+function getWidth(obj){
+	if (typeof(obj) == 'string') obj = getObject(obj);		
+	return obj.offsetWidth;
+}
+
+// Returns the horizontal center coordinate. This is just the left scroll offset + browser width/2.
+function getCenterX(){
+	return ((getScrollLeft() + getScreenWidth())/2);
+}
+
+//  Returns the vertical center coordinate. This is just the top scroll offset + browser height/2.
+function getCenterY(){
+	return ((getScrollTop() + getScreenHeight())/2);
+}
+
+// will this object fit in the document horizontally?
+function fitHorizontal(obj, xpos){
+	return (xpos + getWidth(obj) <= getScreenWidth() + getScrollLeft() && xpos - getScrollLeft() >= 0);
+}
+
+function fitVertical(obj, ypos){
+	return (ypos + getHeight(obj) <= getScreenHeight() + getScrollTop() && ypos - getScrollTop() >= 0);
+}
+
+// cribbed from quirksmode.org
+// ms browsers (surprise!) have some quirks here
+// find the horizontal offset
+function findPosX(obj){
+	var curleft = 0;
+	if (obj.offsetParent){
+		while (obj.offsetParent){
+			curleft += obj.offsetLeft
+			obj = obj.offsetParent;
+		}
+	}
+	else if (obj.x)
+		curleft += obj.x;
+	return curleft;
+}
+
+// find the vertical offset
+function findPosY(obj){
+	var curtop = 0;
+	if (obj.offsetParent){
+		while (obj.offsetParent){
+			curtop += obj.offsetTop
+			obj = obj.offsetParent;
+		}
+	}
+	else if (obj.y)
+		curtop += obj.y;
+	return curtop;
+}
+
+// resize object (stretch) functions
+function stretchWidth(obj, offset){
+	if (typeof(obj) == 'string') obj = getObject(obj);
+	var w = getScreenWidth();
+	obj.style.width = (w - offset) + "px";
+}
+
+function stretchHeight(obj, offset){
+	if (typeof(obj) == 'string') obj = getObject(obj);
+	var h = getScreenHeight();
+	obj.style.height = (h - offset) + "px";
+}
+
+
+// sets browser cookie for this domain
+function SetCookie(cookieName,cookieValue,nDays) {
+  var today = new Date();
+  var expire = new Date();
+  if (nDays==null || nDays==0) nDays=1;
+  //expire.setTime(today.getTime() + 3600000*24*nDays);
+//  document.cookie = cookieName+"="+escape(cookieValue)
+//  + "; Path=/; expires="+expire.toGMTString();
+  document.cookie = cookieName+"="+escape(cookieValue)
+    + "; Path=/;";// expires="+expire.toGMTString();
+}
+
+function setAffIdCIdFromCookie(defaultcid,addCid,addQMark){
+    var affid = "";
+    var DEFAULT_CID = "";
+    var cid="";
+
+    if (addQMark == undefined)
+        addQMark = true;
+
+    if (addCid == undefined)
+	addCid = true;
+
+    if (addCid && defaultcid == undefined){
+	DEFAULT_CID="20209";
+    }else{
+	DEFAULT_CID=defaultcid;
+    }
+    
+    var query = window.location.search.substring(1);
+    var vars = query.split("&");
+    var date = new Date();
+    date.setTime(date.getTime()+(30*24*60*60*1000));
+    var expires = "; expires="+date.toGMTString();
+    for (var i=0;i<vars.length;i++) {
+      var pair = vars[i].split("=");
+      if (pair[0] == 'affid') {
+        affid = pair[1];
+	document.cookie = "affid="+affid+";path=/;"+expires;
+      }
+      if (pair[0] == 'aff_id') {
+        affid = pair[1];
+	document.cookie = "affid="+affid+";path=/;"+expires;
+      }
+      if (pair[0] == 'cid') {
+        cid = pair[1];
+	document.cookie = "cid="+cid+";path=/;"+expires;
+      }
+    } 
+
+    var x = document.cookie.match(/affid=([^;]*)/);
+    var x1 = document.cookie.match(/aff_id=([^;]*)/);
+    var y = document.cookie.match(/cid=([^;]*)/);
+    var out = "";
+    if (affid == ""){
+      if (x1!=null && x1.length>1){
+        affid = x1[1];
+      }
+      if (affid == ""){
+        if (x!=null && x.length>1){
+          affid = x[1];
+        }
+      }
+    }
+    if (addCid && cid == ""){
+      if (y!=null&&y.length>1){
+        cid = y[1];
+        if (cid == ''){  
+      	cid = DEFAULT_CID;
+        }
+      } else {
+        cid = DEFAULT_CID;
+      }
+    }
+
+    if (affid != ''){
+	if (addQMark)
+	  out = out + "?";
+	else
+	  out = out + "&";
+
+        out = out + "affid="+affid;
+    }
+
+    if (out.length==0 && addCid && addQMark)
+       out = out + "?";
+    else 
+       out = out + "&";
+    if (addCid)
+	out = out +  "cid="+cid;
+
+    if (out.length>1 && out[out.length-1] == '&')
+	out = out.substring(0,out.length-1)
+    if (out.length==1 && out == '&')
+        out = '';
+    return out;
+}
+setAffIdCIdFromCookie();
+
+// added this empty function in case there are references to it in any of the foreign language string files.
+function adcomPixelCall(){
+}
+
+function clearStatus(win){
+ window.status=''
+ return true
+}

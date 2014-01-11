@@ -1,0 +1,37 @@
+PHTTP180.153.97.13"≈
+PGET /s?showid=iPWt67&type=1&of=1&uid=13892305427297719022008286432935 HTTP/1.1
+Host: show.g.mediav.com
+Connection: keep-alive
+Accept: */*
+vUser-Agent: Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/31.0.1650.63 Safari/537.36
+hReferer: http://g.163.com/r?site=netease&affiliate=homepage&cat=homepage&type=column960x130&location=1
+$Accept-Encoding: gzip,deflate,sdch
+!Accept-Language: en-US,en;q=0.8
+
+*ô
+HTTP/1.1 200 OK
+Server: MWS/0.8.54
+%Date: Thu, 09 Jan 2014 01:22:11 GMT
+Content-Type: text/html
+Content-Length: 1166
+Connection: keep-alive
+mSet-Cookie: v=ce#NbIDBu?B=0cH2Ykhf; expires=Wednesday, 02-Nov-2099 00:00:00 GMT; path=/; domain=.mediav.com
+^Set-Cookie: hideme=1; expires=Thursday, 09-Jan-2014 01:22:11 GMT; path=/; domain=.mediav.com
+eSet-Cookie: ckmts=UrPPlLet; expires=Saturday, 08-Feb-2014 09:22:11 CST; path=/; domain=.mediav.com;
+Connection: Close
+Pragma: no-cache
+\P3P: CP="CURa ADMa DEVa PSAo PSDo OUR BUS UNI PUR INT DEM STA PRE COM NAV OTC NOI DSP COR"
+*Cache-Control: no-cache, must-revalidate
+ê	
+mvas_10873503=1023530;mv_acquire=1;mv_bid=10873503;
+mvcu_10873503='http://show.g.mediav.com/c?type=2&oimpid=su2XlORzAWAM&pub=118_2620_1023530&cus=9_129898_1182547_10873503_0&fee=ngWeJG-UUUUV&pinfo=&ref=http%3A%2F%2Fg.163.com%2Fr%3Fsite%3Dnetease%26affiliate%3Dhomepage%26cat%3Dhomepage%26type%3Dcolumn960x130%26location%3D1&url=http://www.jd.com';
+mvctype_10873503=3;
+
+eval('mediav_fini'+mvas_10873503+'=1');document.write("<script>\n");
+document.write("document.getElementById(\"mvdiv_\" + window['mvas_'+ mv_bid] +\"_holder\").style.display = \"none\";\n");
+document.write("var mediav_ad_ref = document.referrer;\n");
+document.write("var mediav_ad_pub = '8rcwsG_1023635';\n");
+document.write("var mediav_ad_width = '960';\n");
+document.write("var mediav_ad_height = '130';\n");
+document.write("</scr"+"ipt>\n");
+document.write("<script type=\"text/javascript\" language=\"javascript\" charset=\"utf-8\"  src=\"http://material.mediav.com/clickurl/jd/mvf_g3.js\"></scr"+"ipt>");document.write('<iframe style="display:none" src="http://material.mediav.com/ckmap.htm#prefix=http://m.wrating.com/m.gif?a=&c=860010-2370010102&mcookie=7MtZcg0ZPkPUw4BC0o58Rr"></iframe>');

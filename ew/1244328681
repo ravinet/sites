@@ -1,0 +1,29 @@
+PHTTP23.209.43.46"Ø
+GET /crossdomain.xml HTTP/1.1
+%Host: ma156-r.analytics.edgekey.net
+Connection: keep-alive
+vUser-Agent: Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/31.0.1650.63 Safari/537.36
+Accept: */*
+ Referer: http://www.ew.com/ew/
+$Accept-Encoding: gzip,deflate,sdch
+!Accept-Language: en-US,en;q=0.8
+
+*¨
+HTTP/1.1 200 OK
+Server: Apache
+5ETag: "395b43144c73b74f1aac3805bb7f07b2:1369336302"
+.Last-Modified: Thu, 23 May 2013 19:11:42 GMT
+Accept-Ranges: bytes
+Content-Length: 119
+Content-Type: application/xml
+(Expires: Thu, 09 Jan 2014 13:38:53 GMT
+.Cache-Control: max-age=0, no-cache, no-store
+Pragma: no-cache
+%Date: Thu, 09 Jan 2014 13:38:53 GMT
+Connection: keep-alive
+ Access-Control-Allow-Origin: *
+y
+<?xml version="1.0" encoding="UTF-8"?>
+<cross-domain-policy>
+    <allow-access-from domain="*"/>
+</cross-domain-policy>

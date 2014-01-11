@@ -1,0 +1,159 @@
+PHTTP66.179.73.25"Â
+LGET /app/localedgemedia/resources/css/website-analysis-simple.css HTTP/1.1
+Host: static.localedge.com
+Connection: keep-alive
+Accept: text/css,*/*;q=0.1
+vUser-Agent: Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/31.0.1650.63 Safari/537.36
+WReferer: http://www.localedgemedia.com/website-analysis-partner-simple?referrer=chron
+$Accept-Encoding: gzip,deflate,sdch
+!Accept-Language: en-US,en;q=0.8
+
+*û
+HTTP/1.1 200 OK
+%Date: Fri, 10 Jan 2014 16:04:19 GMT
+$Server: Apache/2.2.26 (Unix) DAV/2
+.Last-Modified: Thu, 02 Jan 2014 21:56:14 GMT
+"ETag: "580052-9f3-4ef03dcba9b80"
+Accept-Ranges: bytes
+Content-Length: 2547
+Cache-Control: max-age=86400
+(Expires: Sat, 11 Jan 2014 16:04:19 GMT
+Keep-Alive: timeout=5, max=77
+Connection: Keep-Alive
+Content-Type: text/css
+õ
+.container {
+	font-family: Helvetica,Arial,sans-serif;
+    font-size: 11px;
+    height: 300px;
+    width: 300px;
+    margin-left: 5px;
+    position: relative;
+}
+.header {
+	margin-top: 5px;
+	font-weight: bold;
+	font-size: 16px;
+}
+.footer {
+	margin-top: 20px;
+	width: 100%;
+}
+.footer .formButton {
+	position: absolute;
+	right: 15px;
+}
+.formButton {
+	cursor:pointer;
+	display: inline-block;
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#565656), color-stop(100%,#2a2a2a));
+    background: -moz-linear-gradient(center top, #565656 0%, #2a2a2a 100%);
+    background: #393939;
+    padding: 5px 15px;
+    display: inline-block;
+    border-color: #000000;
+    border-width: 1px;
+    border-style: solid;
+    font-family: Arial;
+    font-size: 12px;
+    color: #ffffff;
+    font-weight: bold;
+}
+div.formRow {
+	margin-bottom: 15px;
+}
+div.formLeft {
+	display: inline-block;
+	zoom:1;
+	*display:inline;	
+	margin-right: 10px;
+	margin-left: 1px;
+}
+div.formRight {
+	display: inline-block;
+	zoom:1;
+	*display:inline;
+}
+img.floatLeft { 
+	position: relative;
+	top: -3px;
+	float: left; 
+    margin: 4px; 
+}
+
+.description {
+	padding-top: 20px;
+	width: 300px;
+	font-family: Helvetica, Arial, sans-serif;
+	font-size: 12px;
+	text-align: left;
+	color: #000000;
+	padding-bottom: 10px;
+}
+
+.description2 {
+	padding-top: 20px;
+	padding-bottom: 15px;
+	width: 300px;
+	font-family: Helvetica, Arial, sans-serif;
+	font-size: 12px;
+	text-align: left;
+	color: #000000;
+}
+
+#form-contents-simple input {
+	border: 1px solid #CDCDCD;
+	font-family: Helvetica, Arial, sans-serif;
+	font-size: 11px;
+	width: 135px;
+	height: 20px;
+}
+
+#form-contents-simple {
+	font-family: Helvetica, Arial, sans-serif;
+	font-size: 11px;
+	color: #000000;
+	width: 98%;
+	margin: 2px;
+}
+
+#form-contents-simple tr td {
+	font-family: Helvetica, Arial, sans-serif;
+	font-size: 11px;
+	padding-bottom:8px;
+	padding:2px;
+	vertical-align: top;
+}
+
+.thank-you-image {
+	text-align: center;
+	padding-top: 25px;
+	padding-bottom: 15px;
+	color: #000000;
+}
+
+.thank-you-submitted-simple {
+	text-align: center;
+	padding-top: 16px;
+	color: #000000;
+	font-size: 14px;
+	padding-bottom: 5px;
+	margin: 0px 15px 0px 15px;
+}
+
+.row-footnote-simple {
+	text-align: right;
+	font-size: 10px;
+	color: #990000;
+}
+
+.error-simple {
+	text-align: left;
+	font-family: Helvetica, Arial, sans-serif;
+	font-size: 10px;
+	color: #990000;
+}
+
+.submit-button-simple {
+	text-align: right;
+}

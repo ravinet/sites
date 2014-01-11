@@ -1,0 +1,99 @@
+PHTTP208.49.182.165"·
+>GET /website-analysis-partner-simple?referrer=chron HTTP/1.1
+Host: www.localedgemedia.com
+Connection: keep-alive
+TAccept: text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8
+vUser-Agent: Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/31.0.1650.63 Safari/537.36
+ Referer: http://www.chron.com/
+$Accept-Encoding: gzip,deflate,sdch
+!Accept-Language: en-US,en;q=0.8
+
+*¹
+HTTP/1.0 200 OK
+%Date: Fri, 10 Jan 2014 15:42:15 GMT
+<Server: Apache/2.2.10 (Unix) DAV/2 PHP/5.2.6 mod_jk/1.2.30
+Pragma: no-cache
+(Expires: Thu, 01 Jan 1970 00:00:00 GMT
+Cache-Control: no-cache
+Cache-Control: no-store
+Content-Language: en-US
+Content-Length: 3283
+,Content-Type: text/html;charset=ISO-8859-1
+Age: 1323
+/Warning: 110 squid/3.1.11 "Response is stale"
+X-Cache: HIT from wd-44
+Via: 1.0 wd-44 (squid/3.1.11)
+Connection: keep-alive
+Õ
+
+
+
+
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+	<head>
+		<link rel="stylesheet" type="text/css"
+		      href="http://static.localedge.com/app/localedgemedia/resources/css/website-analysis-common.css" />
+		<link rel="stylesheet" type="text/css"
+		      href="http://static.localedge.com/app/localedgemedia/resources/css/website-analysis-simple.css" />
+		<script type="text/javascript" src="http://static.localedge.com/common/js/lib/jquery/jquery-1.4.2.min.js"></script>
+		<script type="text/javascript" src="http://static.localedge.com/app/localedgemedia/resources/js/jquery.placeholder.js"></script>
+		<script type="text/javascript" src="http://static.localedge.com/app/localedgemedia/resources/js/website-analysis-simple.js"></script>
+	<script type="text/javascript">var NREUMQ=NREUMQ||[];NREUMQ.push(["mark","firstbyte",new Date().getTime()])</script></head>
+	<body>
+		<div class="container">
+			<div class="header">
+				Drive New Customers To Your Website
+			</div>
+			<div class="description">
+				Maximize your exposure with <span style='color:#111111;font-weight:bold'>FREE</span> registration on the top search engines:
+			</div>
+			
+			<div class="SE-logos"><img src="http://static.localedge.com/app/localedgemedia/resources/image/website-analysis/Form/hearst-widget-v3-se_logos.png"></div>
+			
+			<div class="description2">
+				Fill out this form and get started today.
+			</div>
+		
+			<form id="lem-web-analysis-simple-form" action="website-analysis-partner-simple" method="get">
+				<div id="form-contents-simple">
+					<div class="formRow">
+						<div class="formLeft">
+							<input id="name" name="name" type="text" value=""/>
+							<div class="error-simple" id="nameError">
+								
+							</div>
+						</div>
+						<div class="formRight">
+							<input id="email" name="email" type="text" value=""/>
+							<div class="error-simple">
+								
+							</div>
+						</div>
+					</div>
+					<div class="formRow">
+						<div class="formLeft">
+							<input id="phone" name="phone" type="text" value=""/>
+							<div class="error-simple">
+								
+							</div>
+						</div>
+						<div class="formRight">
+							<input id="website" name="website" type="text" value=""/>
+							<div class="error-simple">
+								
+							</div>
+						</div>
+					</div>
+					<input id="referrer" name="referrer" type="hidden" value="chron"/>
+				</div>
+			</form>
+			
+			<div class="footer">
+				<img src="http://static.localedge.com/app/localedgemedia/resources/image/website-analysis/Form/hms-logo.png">
+				<div class="formButton" id="simpleSubmit">Submit</div>
+			</div>
+		</div>
+
+	<script type="text/javascript">if (!NREUMQ.f) { NREUMQ.f=function() {NREUMQ.push(["load",new Date().getTime()]);var e=document.createElement("script");e.type="text/javascript";e.src=(("http:"===document.location.protocol)?"http:":"https:") + "//" + "js-agent.newrelic.com/nr-100.js";document.body.appendChild(e);if(NREUMQ.a)NREUMQ.a();};NREUMQ.a=window.onload;window.onload=NREUMQ.f;};NREUMQ.push(["nrfj","beacon-1.newrelic.com","af06238595","731407","MQEEZUdTC0ZUUkYPVwhLLGJlHTJwdxx7KH5JDhVBGl4AWEJUUBVREgEHX1ReHEZcQlQJSgsXD1xFXgAbX0JC",0,13,new Date().getTime(),"","","","",""]);</script></body>
+</html>

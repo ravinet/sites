@@ -1,0 +1,30 @@
+PHTTP74.122.143.73"½
+LGET /segmentChecked.aspx?sid=096f67ad-6a83-40ba-aebe-24ee7f10074e HTTP/1.1
+Host: idcs.interclick.com
+Connection: keep-alive
+Accept: image/webp,*/*;q=0.8
+vUser-Agent: Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/31.0.1650.63 Safari/537.36
+BReferer: http://www.timewarnercable.com/en/residential-home.html
+$Accept-Encoding: gzip,deflate,sdch
+!Accept-Language: en-US,en;q=0.8
+Cookie: T=1
+
+*Ì
+HTTP/1.1 302 Found
+Cache-Control: no-cache
+Pragma: no-cache
+(Content-Type: text/html; charset=utf-8
+Expires: -1
+<Location: https://ad.yieldmanager.com/pixel?id=2445923&t=2
+Server: Microsoft-IIS/7.5
+X-AspNet-Version: 4.0.30319
+Set-Cookie: uid=u=5a559f35-2c7a-4bea-a953-b36ff8711fb7; domain=.interclick.com; expires=Sat, 09-Jan-2044 13:56:11 GMT; path=/
+eSet-Cookie: sgm=37930=735241; domain=.interclick.com; expires=Tue, 09-Jan-2024 13:56:11 GMT; path=/
+X-Powered-By: ASP.NET
+eP3P: policyref="http://www.interclick.com/w3c/p3p.xml",CP="NON DSP ADM DEV PSD OUR IND PRE NAV UNI"
+%Date: Thu, 09 Jan 2014 13:56:11 GMT
+Content-Length: 169
+«
+<html><head><title>Object moved</title></head><body>
+<h2>Object moved to <a href="https://ad.yieldmanager.com/pixel?id=2445923&amp;t=2">here</a>.</h2>
+</body></html>

@@ -1,0 +1,3594 @@
+PHTTP54.225.129.21"à
+1GET /script2/scripts_20131210155124.js HTTP/1.1
+Host: nmr.allcdn.net
+Connection: keep-alive
+Accept: */*
+vUser-Agent: Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/31.0.1650.63 Safari/537.36
+%Referer: http://www.nomorerack.com/
+$Accept-Encoding: gzip,deflate,sdch
+!Accept-Language: en-US,en;q=0.8
+
+*×Ø
+HTTP/1.1 200 OK
+Accept-Ranges: bytes
+Age: 47654
+Cache-Control: max-age=86400
+(Content-Type: application/x-javascript
+%Date: Thu, 09 Jan 2014 13:42:21 GMT
+.Last-Modified: Wed, 11 Dec 2013 00:32:54 GMT
+Server: nginx/1.0.15
+Via: 1.1 varnish
+X-Varnish: HIT
+Content-Length: 125701
+Connection: keep-alive
+‡Ö
+
+/* START build/jquery.ie8-xdomain-fix.js */
+
+// jQuery.XDomainRequest.js
+// Author: Jason Moon - @JSONMOON
+// IE8+
+if (!jQuery.support.cors && window.XDomainRequest) {
+  var httpRegEx = /^https?:\/\//i;
+  var getOrPostRegEx = /^get|post$/i;
+  var sameSchemeRegEx = new RegExp('^'+location.protocol, 'i');
+  var xmlRegEx = /\/xml/i;
+
+  // ajaxTransport exists in jQuery 1.5+
+  jQuery.ajaxTransport('text html xml json', function(options, userOptions, jqXHR){
+    // XDomainRequests must be: asynchronous, GET or POST methods, HTTP or HTTPS protocol, and same scheme as calling page
+    if (options.crossDomain && options.async && getOrPostRegEx.test(options.type) && httpRegEx.test(userOptions.url) && sameSchemeRegEx.test(userOptions.url)) {
+      var xdr = null;
+      var userType = (userOptions.dataType||'').toLowerCase();
+      return {
+        send: function(headers, complete){
+          xdr = new XDomainRequest();
+          if (/^\d+$/.test(userOptions.timeout)) {
+            xdr.timeout = userOptions.timeout;
+          }
+          xdr.ontimeout = function(){
+            complete(500, 'timeout');
+          };
+          xdr.onload = function(){
+            var allResponseHeaders = 'Content-Length: ' + xdr.responseText.length + '\r\nContent-Type: ' + xdr.contentType;
+            var status = {
+              code: 200,
+              message: 'success'
+            };
+            var responses = {
+              text: xdr.responseText
+            };
+            /*
+             if (userType === 'html') {
+             responses.html = xdr.responseText;
+             } else
+             */
+            try {
+              if (userType === 'json') {
+                try {
+                  responses.json = JSON.parse(xdr.responseText);
+                } catch(e) {
+                  status.code = 500;
+                  status.message = 'parseerror';
+                  //throw 'Invalid JSON: ' + xdr.responseText;
+                }
+              } else if ((userType === 'xml') || ((userType !== 'text') && xmlRegEx.test(xdr.contentType))) {
+                var doc = new ActiveXObject('Microsoft.XMLDOM');
+                doc.async = false;
+                try {
+                  doc.loadXML(xdr.responseText);
+                } catch(e) {
+                  doc = undefined;
+                }
+                if (!doc || !doc.documentElement || doc.getElementsByTagName('parsererror').length) {
+                  status.code = 500;
+                  status.message = 'parseerror';
+                  throw 'Invalid XML: ' + xdr.responseText;
+                }
+                responses.xml = doc;
+              }
+            } catch(parseMessage) {
+              throw parseMessage;
+            } finally {
+              complete(status.code, status.message, responses, allResponseHeaders);
+            }
+          };
+          xdr.onerror = function(){
+            complete(500, 'error', {
+              text: xdr.responseText
+            });
+          };
+          xdr.open(options.type, options.url);
+          //xdr.send(userOptions.data);
+          xdr.send();
+        },
+        abort: function(){
+          if (xdr) {
+            xdr.abort();
+          }
+        }
+      };
+    }
+  });
+}
+/* END build/jquery.ie8-xdomain-fix.js */
+
+
+/* START build/jquery.countdown.pack.js */
+
+/* http://keith-wood.name/countdown.html
+   Countdown for jQuery v1.5.9.
+   Written by Keith Wood (kbwood{at}iinet.com.au) January 2008.
+   Dual licensed under the GPL (http://dev.jquery.com/browser/trunk/jquery/GPL-LICENSE.txt) and 
+   MIT (http://dev.jquery.com/browser/trunk/jquery/MIT-LICENSE.txt) licenses. 
+   Please attribute the author if you use it. */
+eval(function(p,a,c,k,e,r){e=function(c){return(c<a?'':e(parseInt(c/a)))+((c=c%a)>35?String.fromCharCode(c+29):c.toString(36))};if(!''.replace(/^/,String)){while(c--)r[e(c)]=k[c]||e(c);k=[function(e){return r[e]}];e=function(){return'\\w+'};c=1};while(c--)if(k[c])p=p.replace(new RegExp('\\b'+e(c)+'\\b','g'),k[c]);return p}('(B($){B 1i(){8.1D=[];8.1D[\'\']={1j:[\'2C\',\'2D\',\'2E\',\'2F\',\'2G\',\'2H\',\'2I\'],2J:[\'2K\',\'2L\',\'2M\',\'2N\',\'2O\',\'2P\',\'2Q\'],1k:[\'y\',\'m\',\'w\',\'d\'],1u:E,1E:\':\',1V:Q};8.1g={1W:E,1X:E,1Y:E,1Z:E,20:\'2R\',1l:\'\',21:Q,1v:0,1F:\'\',22:\'\',23:\'\',25:Q,26:E,27:E,28:1};$.1m(8.1g,8.1D[\'\']);8.1n=[]}x w=\'G\';x Y=0;x O=1;x W=2;x D=3;x H=4;x M=5;x S=6;$.1m(1i.29,{1o:\'2S\',2T:2U(B(){$.G.2a()},2V),19:[],2W:B(a){8.1G(8.1g,a);1H(8.1g,a||{})},1I:B(a,b,c,e,f,g,h,i){A(1p b==\'2X\'&&b.2Y==P){i=b.1J();h=b.1K();g=b.1L();f=b.1M();e=b.T();c=b.17();b=b.18()}x d=K P();d.2Z(b);d.2b(1);d.31(c||0);d.2b(e||1);d.33(f||0);d.34((g||0)-(U.35(a)<30?a*1a:a));d.36(h||0);d.37(i||0);F d},2c:B(a){F a[0]*38+a[1]*39+a[2]*2d+a[3]*2e+a[4]*2f+a[5]*1a+a[6]},3a:B(a,b){A(!b){F $.G.1g}x c=$.X(a,w);F(b==\'3b\'?c.Z:c.Z[b])},2g:B(a,b){x c=$(a);A(c.2h(8.1o)){F}c.3c(8.1o);x d={Z:$.1m({},b),z:[0,0,0,0,0,0,0]};$.X(a,w,d);8.2i(a)},1N:B(a){A(!8.1O(a)){8.19.2j(a)}},1O:B(a){F($.3d(a,8.19)>-1)},1w:B(b){8.19=$.3e(8.19,B(a){F(a==b?E:a)})},2a:B(){V(x i=8.19.1x-1;i>=0;i--){8.1q(8.19[i])}},1q:B(a,b){x c=$(a);b=b||$.X(a,w);A(!b){F}c.3f(8.2k(b));c[(8.C(b,\'1V\')?\'3g\':\'3h\')+\'3i\'](\'3j\');x d=8.C(b,\'27\');A(d){x e=b.R!=\'2l\'?b.z:8.1y(b,b.11,8.C(b,\'1v\'),K P());x f=8.C(b,\'28\');A(f==1||8.2c(e)%f==0){d.1r(a,[e])}}x g=b.R!=\'1s\'&&(b.I?b.1b.L()<b.I.L():b.1b.L()>=b.13.L());A(g&&!b.1P){b.1P=1Q;A(8.1O(a)||8.C(b,\'25\')){8.1w(a);x h=8.C(b,\'26\');A(h){h.1r(a,[])}x i=8.C(b,\'23\');A(i){x j=8.C(b,\'1l\');b.Z.1l=i;8.1q(a,b);b.Z.1l=j}x k=8.C(b,\'22\');A(k){3k.3l=k}}b.1P=Q}1c A(b.R==\'1s\'){8.1w(a)}$.X(a,w,b)},2i:B(a,b,c){b=b||{};A(1p b==\'1R\'){x d=b;b={};b[d]=c}x e=$.X(a,w);A(e){8.1G(e.Z,b);1H(e.Z,b);8.2m(a,e);$.X(a,w,e);x f=K P();A((e.I&&e.I<f)||(e.13&&e.13>f)){8.1N(a)}8.1q(a,e)}},1G:B(a,b){x c=Q;V(x n 1S b){A(n!=\'1u\'&&n.N(/[2n]2o/)){c=1Q;14}}A(c){V(x n 1S a){A(n.N(/[2n]2o[0-9]/)){a[n]=E}}}},2m:B(a,b){x c;x d=8.C(b,\'1Z\');x e=0;x f=E;V(x i=0;i<8.1n.1x;i++){A(8.1n[i][0]==d){f=8.1n[i][1];14}}A(f!=E){e=(d?f:0);c=K P()}1c{x g=(d?d.1r(a,[]):E);c=K P();e=(g?c.L()-g.L():0);8.1n.2j([d,e])}x h=8.C(b,\'1Y\');h=(h==E?-c.3m():h);b.I=8.C(b,\'1X\');A(b.I!=E){b.I=8.1I(h,8.1z(b.I,E));A(b.I&&e){b.I.1A(b.I.1J()+e)}}b.13=8.1I(h,8.1z(8.C(b,\'1W\'),c));A(e){b.13.1A(b.13.1J()+e)}b.11=8.2p(b)},3n:B(a){x b=$(a);A(!b.2h(8.1o)){F}8.1w(a);b.3o(8.1o).3p();$.3q(a,w)},3r:B(a){8.R(a,\'1s\')},3s:B(a){8.R(a,\'2l\')},3t:B(a){8.R(a,E)},R:B(a,b){x c=$.X(a,w);A(c){A(c.R==\'1s\'&&!b){c.z=c.2q;x d=(c.I?\'-\':\'+\');c[c.I?\'I\':\'13\']=8.1z(d+c.z[0]+\'y\'+d+c.z[1]+\'o\'+d+c.z[2]+\'w\'+d+c.z[3]+\'d\'+d+c.z[4]+\'h\'+d+c.z[5]+\'m\'+d+c.z[6]+\'s\');8.1N(a)}c.R=b;c.2q=(b==\'1s\'?c.z:E);$.X(a,w,c);8.1q(a,c)}},3u:B(a){x b=$.X(a,w);F(!b?E:(!b.R?b.z:8.1y(b,b.11,8.C(b,\'1v\'),K P())))},C:B(a,b){F(a.Z[b]!=E?a.Z[b]:$.G.1g[b])},1z:B(k,l){x m=B(a){x b=K P();b.2r(b.L()+a*15);F b};x n=B(a){a=a.3v();x b=K P();x c=b.18();x d=b.17();x e=b.T();x f=b.1M();x g=b.1L();x h=b.1K();x i=/([+-]?[0-9]+)\\s*(s|m|h|d|w|o|y)?/g;x j=i.2s(a);3w(j){3x(j[2]||\'s\'){1d\'s\':h+=1e(j[1],10);14;1d\'m\':g+=1e(j[1],10);14;1d\'h\':f+=1e(j[1],10);14;1d\'d\':e+=1e(j[1],10);14;1d\'w\':e+=1e(j[1],10)*7;14;1d\'o\':d+=1e(j[1],10);e=U.1B(e,$.G.1h(c,d));14;1d\'y\':c+=1e(j[1],10);e=U.1B(e,$.G.1h(c,d));14}j=i.2s(a)}F K P(c,d,e,f,g,h,0)};x o=(k==E?l:(1p k==\'1R\'?n(k):(1p k==\'3y\'?m(k):k)));A(o)o.1A(0);F o},1h:B(a,b){F 32-K P(a,b,32).T()},1T:B(a){F a},2k:B(c){x d=8.C(c,\'1v\');c.z=(c.R?c.z:8.1y(c,c.11,d,K P()));x e=Q;x f=0;x g=d;x h=$.1m({},c.11);V(x i=Y;i<=S;i++){e|=(c.11[i]==\'?\'&&c.z[i]>0);h[i]=(c.11[i]==\'?\'&&!e?E:c.11[i]);f+=(h[i]?1:0);g-=(c.z[i]>0?1:0)}x j=[Q,Q,Q,Q,Q,Q,Q];V(x i=S;i>=Y;i--){A(c.11[i]){A(c.z[i]){j[i]=1Q}1c{j[i]=g>0;g--}}}x k=8.C(c,\'21\');x l=8.C(c,\'1l\');x m=(k?8.C(c,\'1k\'):8.C(c,\'1j\'));x n=8.C(c,\'1u\')||8.1T;x o=8.C(c,\'1E\');x p=8.C(c,\'1F\')||\'\';x q=B(a){x b=$.G.C(c,\'1k\'+n(c.z[a]));F(h[a]?c.z[a]+(b?b[a]:m[a])+\' \':\'\')};x r=B(a){x b=$.G.C(c,\'1j\'+n(c.z[a]));F((!d&&h[a])||(d&&j[a])?\'<16 1t="3z"><16 1t="2t">\'+c.z[a]+\'</16><3A/>\'+(b?b[a]:m[a])+\'</16>\':\'\')};F(l?8.2u(c,h,l,k,d,j):((k?\'<16 1t="1U 2t\'+(c.R?\' 2v\':\'\')+\'">\'+q(Y)+q(O)+q(W)+q(D)+(h[H]?8.J(c.z[H],2):\'\')+(h[M]?(h[H]?o:\'\')+8.J(c.z[M],2):\'\')+(h[S]?(h[H]||h[M]?o:\'\')+8.J(c.z[S],2):\'\'):\'<16 1t="1U 3B\'+(d||f)+(c.R?\' 2v\':\'\')+\'">\'+r(Y)+r(O)+r(W)+r(D)+r(H)+r(M)+r(S))+\'</16>\'+(p?\'<16 1t="1U 3C">\'+p+\'</16>\':\'\')))},2u:B(c,d,e,f,g,h){x j=8.C(c,(f?\'1k\':\'1j\'));x k=8.C(c,\'1u\')||8.1T;x l=B(a){F($.G.C(c,(f?\'1k\':\'1j\')+k(c.z[a]))||j)[a]};x m=B(a,b){F U.1C(a/b)%10};x o={3D:8.C(c,\'1F\'),3E:8.C(c,\'1E\'),3F:l(Y),3G:c.z[Y],3H:8.J(c.z[Y],2),3I:8.J(c.z[Y],3),3J:m(c.z[Y],1),3K:m(c.z[Y],10),3L:m(c.z[Y],1f),3M:m(c.z[Y],15),3N:l(O),3O:c.z[O],3P:8.J(c.z[O],2),3Q:8.J(c.z[O],3),3R:m(c.z[O],1),3S:m(c.z[O],10),3T:m(c.z[O],1f),3U:m(c.z[O],15),3V:l(W),3W:c.z[W],3X:8.J(c.z[W],2),3Y:8.J(c.z[W],3),3Z:m(c.z[W],1),40:m(c.z[W],10),41:m(c.z[W],1f),42:m(c.z[W],15),43:l(D),44:c.z[D],45:8.J(c.z[D],2),46:8.J(c.z[D],3),47:m(c.z[D],1),48:m(c.z[D],10),49:m(c.z[D],1f),4a:m(c.z[D],15),4b:l(H),4c:c.z[H],4d:8.J(c.z[H],2),4e:8.J(c.z[H],3),4f:m(c.z[H],1),4g:m(c.z[H],10),4h:m(c.z[H],1f),4i:m(c.z[H],15),4j:l(M),4k:c.z[M],4l:8.J(c.z[M],2),4m:8.J(c.z[M],3),4n:m(c.z[M],1),4o:m(c.z[M],10),4p:m(c.z[M],1f),4q:m(c.z[M],15),4r:l(S),4s:c.z[S],4t:8.J(c.z[S],2),4u:8.J(c.z[S],3),4v:m(c.z[S],1),4w:m(c.z[S],10),4x:m(c.z[S],1f),4y:m(c.z[S],15)};x p=e;V(x i=Y;i<=S;i++){x q=\'4z\'.4A(i);x r=K 2w(\'\\\\{\'+q+\'<\\\\}(.*)\\\\{\'+q+\'>\\\\}\',\'g\');p=p.2x(r,((!g&&d[i])||(g&&h[i])?\'$1\':\'\'))}$.2y(o,B(n,v){x a=K 2w(\'\\\\{\'+n+\'\\\\}\',\'g\');p=p.2x(a,v)});F p},J:B(a,b){a=\'\'+a;A(a.1x>=b){F a}a=\'4B\'+a;F a.4C(a.1x-b)},2p:B(a){x b=8.C(a,\'20\');x c=[];c[Y]=(b.N(\'y\')?\'?\':(b.N(\'Y\')?\'!\':E));c[O]=(b.N(\'o\')?\'?\':(b.N(\'O\')?\'!\':E));c[W]=(b.N(\'w\')?\'?\':(b.N(\'W\')?\'!\':E));c[D]=(b.N(\'d\')?\'?\':(b.N(\'D\')?\'!\':E));c[H]=(b.N(\'h\')?\'?\':(b.N(\'H\')?\'!\':E));c[M]=(b.N(\'m\')?\'?\':(b.N(\'M\')?\'!\':E));c[S]=(b.N(\'s\')?\'?\':(b.N(\'S\')?\'!\':E));F c},1y:B(c,d,e,f){c.1b=f;c.1b.1A(0);x g=K P(c.1b.L());A(c.I){A(f.L()<c.I.L()){c.1b=f=g}1c{f=c.I}}1c{g.2r(c.13.L());A(f.L()>c.13.L()){c.1b=f=g}}x h=[0,0,0,0,0,0,0];A(d[Y]||d[O]){x i=$.G.1h(f.18(),f.17());x j=$.G.1h(g.18(),g.17());x k=(g.T()==f.T()||(g.T()>=U.1B(i,j)&&f.T()>=U.1B(i,j)));x l=B(a){F(a.1M()*1a+a.1L())*1a+a.1K()};x m=U.4D(0,(g.18()-f.18())*12+g.17()-f.17()+((g.T()<f.T()&&!k)||(k&&l(g)<l(f))?-1:0));h[Y]=(d[Y]?U.1C(m/12):0);h[O]=(d[O]?m-h[Y]*12:0);f=K P(f.L());x n=(f.T()==i);x o=$.G.1h(f.18()+h[Y],f.17()+h[O]);A(f.T()>o){f.2z(o)}f.4E(f.18()+h[Y]);f.4F(f.17()+h[O]);A(n){f.2z(o)}}x p=U.1C((g.L()-f.L())/15);x q=B(a,b){h[a]=(d[a]?U.1C(p/b):0);p-=h[a]*b};q(W,2d);q(D,2e);q(H,2f);q(M,1a);q(S,1);A(p>0&&!c.I){x r=[1,12,4.4G,7,24,1a,1a];x s=S;x t=1;V(x u=S;u>=Y;u--){A(d[u]){A(h[s]>=t){h[s]=0;p=1}A(p>0){h[u]++;p=0;s=u;t=1}}t*=r[u]}}A(e){V(x u=Y;u<=S;u++){A(e&&h[u]){e--}1c A(!e){h[u]=0}}}F h}});B 1H(a,b){$.1m(a,b);V(x c 1S b){A(b[c]==E){a[c]=E}}F a}$.4H.G=B(a){x b=4I.29.4J.4K(4L,1);A(a==\'4M\'||a==\'4N\'){F $.G[\'2A\'+a+\'1i\'].1r($.G,[8[0]].2B(b))}F 8.2y(B(){A(1p a==\'1R\'){$.G[\'2A\'+a+\'1i\'].1r($.G,[8].2B(b))}1c{$.G.2g(8,a)}})};$.G=K 1i()})(4O);',62,299,'||||||||this|||||||||||||||||||||||||var||_periods|if|function|_get||null|return|countdown||_since|_minDigits|new|getTime||match||Date|false|_hold||getDate|Math|for||data||options||_show||_until|break|1000|span|getMonth|getFullYear|_timerTargets|60|_now|else|case|parseInt|100|_defaults|_getDaysInMonth|Countdown|labels|compactLabels|layout|extend|_serverSyncs|markerClassName|typeof|_updateCountdown|apply|pause|class|whichLabels|significant|_removeTarget|length|_calculatePeriods|_determineTime|setMilliseconds|min|floor|regional|timeSeparator|description|_resetExtraLabels|extendRemove|UTCDate|getMilliseconds|getSeconds|getMinutes|getHours|_addTarget|_hasTarget|_expiring|true|string|in|_normalLabels|countdown_row|isRTL|until|since|timezone|serverSync|format|compact|expiryUrl|expiryText||alwaysExpire|onExpiry|onTick|tickInterval|prototype|_updateTargets|setUTCDate|periodsToSeconds|604800|86400|3600|_attachCountdown|hasClass|_changeCountdown|push|_generateHTML|lap|_adjustSettings|Ll|abels|_determineShow|_savePeriods|setTime|exec|countdown_amount|_buildLayout|countdown_holding|RegExp|replace|each|setDate|_|concat|Years|Months|Weeks|Days|Hours|Minutes|Seconds|labels1|Year|Month|Week|Day|Hour|Minute|Second|dHMS|hasCountdown|_timer|setInterval|980|setDefaults|object|constructor|setUTCFullYear||setUTCMonth||setUTCHours|setUTCMinutes|abs|setUTCSeconds|setUTCMilliseconds|31557600|2629800|_settingsCountdown|all|addClass|inArray|map|html|add|remove|Class|countdown_rtl|window|location|getTimezoneOffset|_destroyCountdown|removeClass|empty|removeData|_pauseCountdown|_lapCountdown|_resumeCountdown|_getTimesCountdown|toLowerCase|while|switch|number|countdown_section|br|countdown_show|countdown_descr|desc|sep|yl|yn|ynn|ynnn|y1|y10|y100|y1000|ol|on|onn|onnn|o1|o10|o100|o1000|wl|wn|wnn|wnnn|w1|w10|w100|w1000|dl|dn|dnn|dnnn|d1|d10|d100|d1000|hl|hn|hnn|hnnn|h1|h10|h100|h1000|ml|mn|mnn|mnnn|m1|m10|m100|m1000|sl|sn|snn|snnn|s1|s10|s100|s1000|yowdhms|charAt|0000000000|substr|max|setFullYear|setMonth|3482|fn|Array|slice|call|arguments|getTimes|settings|jQuery'.split('|'),0,{}))
+/* END build/jquery.countdown.pack.js */
+
+
+/* START build/jquery.ajaxed.js */
+
+$(function () {
+	
+	jQuery.fn.extend({
+		ajaxed: function () {
+	
+			this.bind('submit', function() {
+				
+				var form = $(this);
+					
+				if (!form.attr('action'))
+					return false;
+				
+				if (!form.attr('method'))
+					return false;
+		
+				try {
+					var sequence = Math.floor(Math.random()*100000);
+					
+          $.ajax({
+            type: form.attr('method'),
+            url: form.attr('action'),
+            async: false,
+            dataType: 'json',
+            data: ({
+              ajax: true,
+              sequence: sequence,
+              form: form.serialize()
+            }),
+
+            success: function(response) {
+
+              // Response should be returned in JSON, parse it
+              this.response = response;
+
+              // Sequence does not match, chances are an invalid page was returned
+              if (this.response.sequence != sequence)
+                return false;
+
+
+              $('.element_error').remove();
+
+              try {
+                // Messages support
+                if (this.response.messages) {
+
+                  // Clear out previous messages
+                  $('.messages', form).remove();
+
+                  // Success
+                  if (this.response.messages.success) {
+                    if ($('.messages', form).length == 0) {
+                      ul = $('<ul>').addClass('messages').addClass('success');
+
+                      $.each(this.response.messages.success, function (index, value) {
+                        $('<li>').html(value.message).prependTo(ul);
+                      });
+
+                      ul.fadeIn(400).prependTo(form);
+                    }
+                  }
+
+                  // Error
+                  if (this.response.messages.error) {
+                    if ($('.messages', form).length == 0) {
+                      ul = $('<ul>').addClass('messages').addClass('error');
+
+                      $.each(this.response.messages.error, function (index, value) {
+                        wat = $('<li>').html(value.message).prependTo(ul);
+                      });
+
+                      ul.fadeIn(400).prependTo(form);
+                    }
+                  }
+
+                  // Notice
+                  if (this.response.messages.notice) {
+                    if ($('.messages', form).length == 0) {
+                      $('<ul>').addClass('messages').addClass('notice').prependTo(form);
+
+                      $.each(this.response.messages.notice, function (index, value) {
+                        wat = $('<li>').html(value.message).prependTo($('.messages', form));
+                      });
+                    }
+                  }
+                }
+              } catch (err) {
+
+              }
+
+              if (this.response.error) {
+
+                // Form errors, fun times -- Lets update the form
+                if (this.response.error.form) {
+
+                  $('[state]', form).each(function (index, value) {
+                    $(value).attr('state', 'valid');
+                  });
+
+                  /*
+                   // Setup messages container
+                   if ($('.messages', form).length == 0) {
+                   $('<ul>').addClass('messages').addClass('error').prependTo(form);
+                   } else {
+                   // Clear previously existing messages
+                   $('.messages li', form).remove();
+                   }
+                   */
+
+                  $.each(this.response.error.form, function (group, group_fields) {
+                    $.each(group_fields, function (field, field_data) {
+                      element = $('#' + group + '_' + field);
+                      element.attr('state', 'invalid');
+
+                      $("<div class='element_error'></div>").html(field_data.message).appendTo(element.parent());
+
+                    });
+                    //$('<li>').html(value.message).appendTo($('.messages', form));
+                  });
+
+                  return false;
+                }
+              }
+              if (this.response.success) {
+                form.attr('completed', true);
+              }
+            }
+          });
+				} catch (err) {
+			}
+			return false;
+			
+			});
+			
+			return this;
+		}
+	});
+
+});
+/* END build/jquery.ajaxed.js */
+
+
+/* START build/jquery.placeholder.js */
+
+/**
+	jQuery placeholder plugin.
+	
+	Makes browsers that does not support HTML5 placeholder attribute, preform as a modern browser.
+	
+	Created by:
+		Lasse SÃƒÂ¸berg
+		06.04.2011
+		
+**/
+(function($) {
+	var native_support = ('placeholder' in document.createElement('input'));
+	$.fn.placeholder = function(command) {
+		if(!native_support) {
+			if(command) {
+				switch(command) {
+					case 'clear':
+						this.each(function() {
+							var el = $(this)
+							if(el.data('isEmpty') || el.val() == el.attr('placeholder')) {
+								el.val('');
+							}
+						});
+					break;
+				}
+				return this;
+			}
+
+			this.each(function() {
+				if(!$(this).data('gotPlaceholder')) {
+					$(this).focus(function() {
+						var el = $(this);
+						if(el.data('isEmpty')) {
+							el.val('').removeClass('placeholder');
+						}
+					}).blur(function() {
+						var el = $(this);
+						if(el.data('isEmpty') || !el.val().length) {
+							el.val(el.attr('placeholder')).addClass('placeholder');
+						}
+					}).keyup(function() {
+						var el = $(this);
+						el.data('isEmpty', (el.val().length == 0));
+					}).data('gotPlaceholder', true);
+					
+					if(!$(this).val().length || $(this).val() == $(this).attr('placeholder')) {
+						$(this).val($(this).attr('placeholder')).addClass('placeholder').data('isEmpty', true);
+					}
+				}
+			});
+		}
+		
+		return this;
+	}
+})(jQuery);
+/* END build/jquery.placeholder.js */
+
+
+/* START build/jquery.appear.min.js */
+
+/*
+ * jQuery.appear
+ * http://code.google.com/p/jquery-appear/
+ *
+ * Copyright (c) 2009 Michael Hixson
+ * Licensed under the MIT license (http://www.opensource.org/licenses/mit-license.php)
+*/
+(function($){$.fn.appear=function(f,o){var s=$.extend({one:true},o);return this.each(function(){var t=$(this);t.appeared=false;if(!f){t.trigger('appear',s.data);return;}var w=$(window);var c=function(){if(!t.is(':visible')){t.appeared=false;return;}var a=w.scrollLeft();var b=w.scrollTop();var o=t.offset();var x=o.left;var y=o.top;if(y+t.height()>=b&&y<=b+w.height()&&x+t.width()>=a&&x<=a+w.width()){if(!t.appeared)t.trigger('appear',s.data);}else{t.appeared=false;}};var m=function(){t.appeared=true;if(s.one){w.unbind('scroll',c);var i=$.inArray(c,$.fn.appear.checks);if(i>=0)$.fn.appear.checks.splice(i,1);}f.apply(this,arguments);};if(s.one)t.one('appear',s.data,m);else t.bind('appear',s.data,m);w.scroll(c);$.fn.appear.checks.push(c);(c)();});};$.extend($.fn.appear,{checks:[],timeout:null,checkAll:function(){var l=$.fn.appear.checks.length;if(l>0)while(l--)($.fn.appear.checks[l])();},run:function(){if($.fn.appear.timeout)clearTimeout($.fn.appear.timeout);$.fn.appear.timeout=setTimeout($.fn.appear.checkAll,20);}});$.each(['append','prepend','after','before','attr','removeAttr','addClass','removeClass','toggleClass','remove','css','show','hide'],function(i,n){var u=$.fn[n];if(u){$.fn[n]=function(){var r=u.apply(this,arguments);$.fn.appear.run();return r;}}});})(jQuery);
+	
+
+/* END build/jquery.appear.min.js */
+
+
+/* START build/handlebars-runtime.js */
+
+/*!
+
+ handlebars v1.1.2
+
+Copyright (C) 2011 by Yehuda Katz
+
+Permission is hereby granted, free of charge, to any person obtaining a copy
+of this software and associated documentation files (the "Software"), to deal
+in the Software without restriction, including without limitation the rights
+to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+copies of the Software, and to permit persons to whom the Software is
+furnished to do so, subject to the following conditions:
+
+The above copyright notice and this permission notice shall be included in
+all copies or substantial portions of the Software.
+
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN
+THE SOFTWARE.
+
+@license
+*/
+var Handlebars = (function() {
+// handlebars/safe-string.js
+var __module3__ = (function() {
+  "use strict";
+  var __exports__;
+  // Build out our basic SafeString type
+  function SafeString(string) {
+    this.string = string;
+  }
+
+  SafeString.prototype.toString = function() {
+    return "" + this.string;
+  };
+
+  __exports__ = SafeString;
+  return __exports__;
+})();
+
+// handlebars/utils.js
+var __module2__ = (function(__dependency1__) {
+  "use strict";
+  var __exports__ = {};
+  var SafeString = __dependency1__;
+
+  var escape = {
+    "&": "&amp;",
+    "<": "&lt;",
+    ">": "&gt;",
+    '"': "&quot;",
+    "'": "&#x27;",
+    "`": "&#x60;"
+  };
+
+  var badChars = /[&<>"'`]/g;
+  var possible = /[&<>"'`]/;
+
+  function escapeChar(chr) {
+    return escape[chr] || "&amp;";
+  }
+
+  function extend(obj, value) {
+    for(var key in value) {
+      if(value.hasOwnProperty(key)) {
+        obj[key] = value[key];
+      }
+    }
+  }
+
+  __exports__.extend = extend;var toString = Object.prototype.toString;
+  __exports__.toString = toString;
+  // Sourced from lodash
+  // https://github.com/bestiejs/lodash/blob/master/LICENSE.txt
+  var isFunction = function(value) {
+    return typeof value === 'function';
+  };
+  // fallback for older versions of Chrome and Safari
+  if (isFunction(/x/)) {
+    isFunction = function(value) {
+      return typeof value === 'function' && toString.call(value) === '[object Function]';
+    };
+  }
+  var isFunction;
+  __exports__.isFunction = isFunction;
+  var isArray = Array.isArray || function(value) {
+    return (value && typeof value === 'object') ? toString.call(value) === '[object Array]' : false;
+  };
+  __exports__.isArray = isArray;
+
+  function escapeExpression(string) {
+    // don't escape SafeStrings, since they're already safe
+    if (string instanceof SafeString) {
+      return string.toString();
+    } else if (!string && string !== 0) {
+      return "";
+    }
+
+    // Force a string conversion as this will be done by the append regardless and
+    // the regex test will do this transparently behind the scenes, causing issues if
+    // an object's to string has escaped characters in it.
+    string = "" + string;
+
+    if(!possible.test(string)) { return string; }
+    return string.replace(badChars, escapeChar);
+  }
+
+  __exports__.escapeExpression = escapeExpression;function isEmpty(value) {
+    if (!value && value !== 0) {
+      return true;
+    } else if (isArray(value) && value.length === 0) {
+      return true;
+    } else {
+      return false;
+    }
+  }
+
+  __exports__.isEmpty = isEmpty;
+  return __exports__;
+})(__module3__);
+
+// handlebars/exception.js
+var __module4__ = (function() {
+  "use strict";
+  var __exports__;
+
+  var errorProps = ['description', 'fileName', 'lineNumber', 'message', 'name', 'number', 'stack'];
+
+  function Exception(/* message */) {
+    var tmp = Error.prototype.constructor.apply(this, arguments);
+
+    // Unfortunately errors are not enumerable in Chrome (at least), so `for prop in tmp` doesn't work.
+    for (var idx = 0; idx < errorProps.length; idx++) {
+      this[errorProps[idx]] = tmp[errorProps[idx]];
+    }
+  }
+
+  Exception.prototype = new Error();
+
+  __exports__ = Exception;
+  return __exports__;
+})();
+
+// handlebars/base.js
+var __module1__ = (function(__dependency1__, __dependency2__) {
+  "use strict";
+  var __exports__ = {};
+  /*globals Exception, Utils */
+  var Utils = __dependency1__;
+  var Exception = __dependency2__;
+
+  var VERSION = "1.1.2";
+  __exports__.VERSION = VERSION;var COMPILER_REVISION = 4;
+  __exports__.COMPILER_REVISION = COMPILER_REVISION;
+  var REVISION_CHANGES = {
+    1: '<= 1.0.rc.2', // 1.0.rc.2 is actually rev2 but doesn't report it
+    2: '== 1.0.0-rc.3',
+    3: '== 1.0.0-rc.4',
+    4: '>= 1.0.0'
+  };
+  __exports__.REVISION_CHANGES = REVISION_CHANGES;
+  var isArray = Utils.isArray,
+      isFunction = Utils.isFunction,
+      toString = Utils.toString,
+      objectType = '[object Object]';
+
+  function HandlebarsEnvironment(helpers, partials) {
+    this.helpers = helpers || {};
+    this.partials = partials || {};
+
+    registerDefaultHelpers(this);
+  }
+
+  __exports__.HandlebarsEnvironment = HandlebarsEnvironment;HandlebarsEnvironment.prototype = {
+    constructor: HandlebarsEnvironment,
+
+    logger: logger,
+    log: log,
+
+    registerHelper: function(name, fn, inverse) {
+      if (toString.call(name) === objectType) {
+        if (inverse || fn) { throw new Exception('Arg not supported with multiple helpers'); }
+        Utils.extend(this.helpers, name);
+      } else {
+        if (inverse) { fn.not = inverse; }
+        this.helpers[name] = fn;
+      }
+    },
+
+    registerPartial: function(name, str) {
+      if (toString.call(name) === objectType) {
+        Utils.extend(this.partials,  name);
+      } else {
+        this.partials[name] = str;
+      }
+    }
+  };
+
+  function registerDefaultHelpers(instance) {
+    instance.registerHelper('helperMissing', function(arg) {
+      if(arguments.length === 2) {
+        return undefined;
+      } else {
+        throw new Error("Missing helper: '" + arg + "'");
+      }
+    });
+
+    instance.registerHelper('blockHelperMissing', function(context, options) {
+      var inverse = options.inverse || function() {}, fn = options.fn;
+
+      if (isFunction(context)) { context = context.call(this); }
+
+      if(context === true) {
+        return fn(this);
+      } else if(context === false || context == null) {
+        return inverse(this);
+      } else if (isArray(context)) {
+        if(context.length > 0) {
+          return instance.helpers.each(context, options);
+        } else {
+          return inverse(this);
+        }
+      } else {
+        return fn(context);
+      }
+    });
+
+    instance.registerHelper('each', function(context, options) {
+      var fn = options.fn, inverse = options.inverse;
+      var i = 0, ret = "", data;
+
+      if (isFunction(context)) { context = context.call(this); }
+
+      if (options.data) {
+        data = createFrame(options.data);
+      }
+
+      if(context && typeof context === 'object') {
+        if (isArray(context)) {
+          for(var j = context.length; i<j; i++) {
+            if (data) {
+              data.index = i;
+              data.first = (i === 0)
+              data.last  = (i === (context.length-1));
+            }
+            ret = ret + fn(context[i], { data: data });
+          }
+        } else {
+          for(var key in context) {
+            if(context.hasOwnProperty(key)) {
+              if(data) { data.key = key; }
+              ret = ret + fn(context[key], {data: data});
+              i++;
+            }
+          }
+        }
+      }
+
+      if(i === 0){
+        ret = inverse(this);
+      }
+
+      return ret;
+    });
+
+    instance.registerHelper('if', function(conditional, options) {
+      if (isFunction(conditional)) { conditional = conditional.call(this); }
+
+      // Default behavior is to render the positive path if the value is truthy and not empty.
+      // The `includeZero` option may be set to treat the condtional as purely not empty based on the
+      // behavior of isEmpty. Effectively this determines if 0 is handled by the positive path or negative.
+      if ((!options.hash.includeZero && !conditional) || Utils.isEmpty(conditional)) {
+        return options.inverse(this);
+      } else {
+        return options.fn(this);
+      }
+    });
+
+    instance.registerHelper('unless', function(conditional, options) {
+      return instance.helpers['if'].call(this, conditional, {fn: options.inverse, inverse: options.fn, hash: options.hash});
+    });
+
+    instance.registerHelper('with', function(context, options) {
+      if (isFunction(context)) { context = context.call(this); }
+
+      if (!Utils.isEmpty(context)) return options.fn(context);
+    });
+
+    instance.registerHelper('log', function(context, options) {
+      var level = options.data && options.data.level != null ? parseInt(options.data.level, 10) : 1;
+      instance.log(level, context);
+    });
+  }
+
+  var logger = {
+    methodMap: { 0: 'debug', 1: 'info', 2: 'warn', 3: 'error' },
+
+    // State enum
+    DEBUG: 0,
+    INFO: 1,
+    WARN: 2,
+    ERROR: 3,
+    level: 3,
+
+    // can be overridden in the host environment
+    log: function(level, obj) {
+      if (logger.level <= level) {
+        var method = logger.methodMap[level];
+        if (typeof console !== 'undefined' && console[method]) {
+          console[method].call(console, obj);
+        }
+      }
+    }
+  };
+  __exports__.logger = logger;
+  function log(level, obj) { logger.log(level, obj); }
+
+  __exports__.log = log;var createFrame = function(object) {
+    var obj = {};
+    Utils.extend(obj, object);
+    return obj;
+  };
+  __exports__.createFrame = createFrame;
+  return __exports__;
+})(__module2__, __module4__);
+
+// handlebars/runtime.js
+var __module5__ = (function(__dependency1__, __dependency2__, __dependency3__) {
+  "use strict";
+  var __exports__ = {};
+  /*global Utils */
+  var Utils = __dependency1__;
+  var Exception = __dependency2__;
+  var COMPILER_REVISION = __dependency3__.COMPILER_REVISION;
+  var REVISION_CHANGES = __dependency3__.REVISION_CHANGES;
+
+  function checkRevision(compilerInfo) {
+    var compilerRevision = compilerInfo && compilerInfo[0] || 1,
+        currentRevision = COMPILER_REVISION;
+
+    if (compilerRevision !== currentRevision) {
+      if (compilerRevision < currentRevision) {
+        var runtimeVersions = REVISION_CHANGES[currentRevision],
+            compilerVersions = REVISION_CHANGES[compilerRevision];
+        throw new Error("Template was precompiled with an older version of Handlebars than the current runtime. "+
+              "Please update your precompiler to a newer version ("+runtimeVersions+") or downgrade your runtime to an older version ("+compilerVersions+").");
+      } else {
+        // Use the embedded version info since the runtime doesn't know about this revision yet
+        throw new Error("Template was precompiled with a newer version of Handlebars than the current runtime. "+
+              "Please update your runtime to a newer version ("+compilerInfo[1]+").");
+      }
+    }
+  }
+
+  // TODO: Remove this line and break up compilePartial
+
+  function template(templateSpec, env) {
+    if (!env) {
+      throw new Error("No environment passed to template");
+    }
+
+    var invokePartialWrapper;
+    if (env.compile) {
+      invokePartialWrapper = function(partial, name, context, helpers, partials, data) {
+        // TODO : Check this for all inputs and the options handling (partial flag, etc). This feels
+        // like there should be a common exec path
+        var result = invokePartial.apply(this, arguments);
+        if (result) { return result; }
+
+        var options = { helpers: helpers, partials: partials, data: data };
+        partials[name] = env.compile(partial, { data: data !== undefined }, env);
+        return partials[name](context, options);
+      };
+    } else {
+      invokePartialWrapper = function(partial, name /* , context, helpers, partials, data */) {
+        var result = invokePartial.apply(this, arguments);
+        if (result) { return result; }
+        throw new Exception("The partial " + name + " could not be compiled when running in runtime-only mode");
+      };
+    }
+
+    // Just add water
+    var container = {
+      escapeExpression: Utils.escapeExpression,
+      invokePartial: invokePartialWrapper,
+      programs: [],
+      program: function(i, fn, data) {
+        var programWrapper = this.programs[i];
+        if(data) {
+          programWrapper = program(i, fn, data);
+        } else if (!programWrapper) {
+          programWrapper = this.programs[i] = program(i, fn);
+        }
+        return programWrapper;
+      },
+      merge: function(param, common) {
+        var ret = param || common;
+
+        if (param && common && (param !== common)) {
+          ret = {};
+          Utils.extend(ret, common);
+          Utils.extend(ret, param);
+        }
+        return ret;
+      },
+      programWithDepth: programWithDepth,
+      noop: noop,
+      compilerInfo: null
+    };
+
+    return function(context, options) {
+      options = options || {};
+      var namespace = options.partial ? options : env,
+          helpers,
+          partials;
+
+      if (!options.partial) {
+        helpers = options.helpers;
+        partials = options.partials;
+      }
+      var result = templateSpec.call(
+            container,
+            namespace, context,
+            helpers,
+            partials,
+            options.data);
+
+      if (!options.partial) {
+        checkRevision(container.compilerInfo);
+      }
+
+      return result;
+    };
+  }
+
+  __exports__.template = template;function programWithDepth(i, fn, data /*, $depth */) {
+    var args = Array.prototype.slice.call(arguments, 3);
+
+    var prog = function(context, options) {
+      options = options || {};
+
+      return fn.apply(this, [context, options.data || data].concat(args));
+    };
+    prog.program = i;
+    prog.depth = args.length;
+    return prog;
+  }
+
+  __exports__.programWithDepth = programWithDepth;function program(i, fn, data) {
+    var prog = function(context, options) {
+      options = options || {};
+
+      return fn(context, options.data || data);
+    };
+    prog.program = i;
+    prog.depth = 0;
+    return prog;
+  }
+
+  __exports__.program = program;function invokePartial(partial, name, context, helpers, partials, data) {
+    var options = { partial: true, helpers: helpers, partials: partials, data: data };
+
+    if(partial === undefined) {
+      throw new Exception("The partial " + name + " could not be found");
+    } else if(partial instanceof Function) {
+      return partial(context, options);
+    }
+  }
+
+  __exports__.invokePartial = invokePartial;function noop() { return ""; }
+
+  __exports__.noop = noop;
+  return __exports__;
+})(__module2__, __module4__, __module1__);
+
+// handlebars.runtime.js
+var __module0__ = (function(__dependency1__, __dependency2__, __dependency3__, __dependency4__, __dependency5__) {
+  "use strict";
+  var __exports__;
+  var base = __dependency1__;
+
+  // Each of these augment the Handlebars object. No need to setup here.
+  // (This is done to easily share code between commonjs and browse envs)
+  var SafeString = __dependency2__;
+  var Exception = __dependency3__;
+  var Utils = __dependency4__;
+  var runtime = __dependency5__;
+
+  // For compatibility and usage outside of module systems, make the Handlebars object a namespace
+  var create = function() {
+    var hb = new base.HandlebarsEnvironment();
+
+    Utils.extend(hb, base);
+    hb.SafeString = SafeString;
+    hb.Exception = Exception;
+    hb.Utils = Utils;
+
+    hb.VM = runtime;
+    hb.template = function(spec) {
+      return runtime.template(spec, hb);
+    };
+
+    return hb;
+  };
+
+  var Handlebars = create();
+  Handlebars.create = create;
+
+  __exports__ = Handlebars;
+  return __exports__;
+})(__module1__, __module3__, __module4__, __module2__, __module5__);
+
+  return __module0__;
+})();
+
+/* END build/handlebars-runtime.js */
+
+
+/* START HANDLEBAR TEMPLATES */
+
+(function() {
+  var template = Handlebars.template, templates = Handlebars.templates = Handlebars.templates || {};
+templates['cart-items-template'] = template(function (Handlebars,depth0,helpers,partials,data) {
+  this.compilerInfo = [4,'>= 1.0.0'];
+helpers = this.merge(helpers, Handlebars.helpers); data = data || {};
+  var buffer = "", stack1, functionType="function", escapeExpression=this.escapeExpression, helperMissing=helpers.helperMissing, self=this, blockHelperMissing=helpers.blockHelperMissing;
+
+function program1(depth0,data) {
+  
+  var buffer = "", stack1, stack2, options;
+  buffer += "\n    <tr class=\"item-row";
+  options = {hash:{},data:data};
+  buffer += escapeExpression(((stack1 = helpers.cartItemRowClass || depth0.cartItemRowClass),stack1 ? stack1.call(depth0, depth0.cart_item_id, options) : helperMissing.call(depth0, "cartItemRowClass", depth0.cart_item_id, options)))
+    + "\" data-cart-item-id=\"";
+  if (stack2 = helpers.cart_item_id) { stack2 = stack2.call(depth0, {hash:{},data:data}); }
+  else { stack2 = depth0.cart_item_id; stack2 = typeof stack2 === functionType ? stack2.apply(depth0) : stack2; }
+  buffer += escapeExpression(stack2)
+    + "\">\n      <td class=\"quantity\">\n        <form class=\"update_item\" action=\"/shopping_carts/update_item\" method=\"post\">\n          <input type=\"hidden\" name=\"product_id\" value=\"";
+  if (stack2 = helpers.product_id) { stack2 = stack2.call(depth0, {hash:{},data:data}); }
+  else { stack2 = depth0.product_id; stack2 = typeof stack2 === functionType ? stack2.apply(depth0) : stack2; }
+  buffer += escapeExpression(stack2)
+    + "\">\n          <input type=\"hidden\" name=\"price\" value=\"";
+  if (stack2 = helpers.price) { stack2 = stack2.call(depth0, {hash:{},data:data}); }
+  else { stack2 = depth0.price; stack2 = typeof stack2 === functionType ? stack2.apply(depth0) : stack2; }
+  buffer += escapeExpression(stack2)
+    + "\">\n          <input type=\"hidden\" name=\"product_item_id\" value=\"";
+  if (stack2 = helpers.item_id) { stack2 = stack2.call(depth0, {hash:{},data:data}); }
+  else { stack2 = depth0.item_id; stack2 = typeof stack2 === functionType ? stack2.apply(depth0) : stack2; }
+  buffer += escapeExpression(stack2)
+    + "\">\n          <input type=\"hidden\" name=\"daily_deal_item_id\" value=\"";
+  if (stack2 = helpers.daily_deal_id) { stack2 = stack2.call(depth0, {hash:{},data:data}); }
+  else { stack2 = depth0.daily_deal_id; stack2 = typeof stack2 === functionType ? stack2.apply(depth0) : stack2; }
+  buffer += escapeExpression(stack2)
+    + "\">\n          <input type=\"hidden\" name=\"cart_item_id\" value=\"";
+  if (stack2 = helpers.cart_item_id) { stack2 = stack2.call(depth0, {hash:{},data:data}); }
+  else { stack2 = depth0.cart_item_id; stack2 = typeof stack2 === functionType ? stack2.apply(depth0) : stack2; }
+  buffer += escapeExpression(stack2)
+    + "\">\n          <select type=\"select\" name=\"quantity\" value=\"";
+  if (stack2 = helpers.quantity) { stack2 = stack2.call(depth0, {hash:{},data:data}); }
+  else { stack2 = depth0.quantity; stack2 = typeof stack2 === functionType ? stack2.apply(depth0) : stack2; }
+  buffer += escapeExpression(stack2)
+    + "\">\n            ";
+  options = {hash:{},inverse:self.noop,fn:self.program(2, program2, data),data:data};
+  if (stack2 = helpers.qty_options) { stack2 = stack2.call(depth0, options); }
+  else { stack2 = depth0.qty_options; stack2 = typeof stack2 === functionType ? stack2.apply(depth0) : stack2; }
+  if (!helpers.qty_options) { stack2 = blockHelperMissing.call(depth0, stack2, options); }
+  if(stack2 || stack2 === 0) { buffer += stack2; }
+  buffer += "\n          </select>\n          <input type=\"button\" value=\"Remove\" class=\"button remove gradient grey hover-red dark\">\n        </form>\n      </td>\n      <td class=\"image\">\n        <img src=\"";
+  if (stack2 = helpers.item_image) { stack2 = stack2.call(depth0, {hash:{},data:data}); }
+  else { stack2 = depth0.item_image; stack2 = typeof stack2 === functionType ? stack2.apply(depth0) : stack2; }
+  buffer += escapeExpression(stack2)
+    + "\" height=\"80\" width=\"80\" alt=\"";
+  if (stack2 = helpers.product_name) { stack2 = stack2.call(depth0, {hash:{},data:data}); }
+  else { stack2 = depth0.product_name; stack2 = typeof stack2 === functionType ? stack2.apply(depth0) : stack2; }
+  buffer += escapeExpression(stack2)
+    + "\" />\n      </td>\n      <td class=\"details\">\n        <div class=\"name\">\n          <a href=\"";
+  if (stack2 = helpers.item_link) { stack2 = stack2.call(depth0, {hash:{},data:data}); }
+  else { stack2 = depth0.item_link; stack2 = typeof stack2 === functionType ? stack2.apply(depth0) : stack2; }
+  buffer += escapeExpression(stack2)
+    + "\" target=\"_blank\">";
+  if (stack2 = helpers.product_name) { stack2 = stack2.call(depth0, {hash:{},data:data}); }
+  else { stack2 = depth0.product_name; stack2 = typeof stack2 === functionType ? stack2.apply(depth0) : stack2; }
+  buffer += escapeExpression(stack2)
+    + "</a>\n        </div>\n        <div class=\"attr\">\n          ";
+  options = {hash:{},inverse:self.noop,fn:self.program(4, program4, data),data:data};
+  if (stack2 = helpers.attributes) { stack2 = stack2.call(depth0, options); }
+  else { stack2 = depth0.attributes; stack2 = typeof stack2 === functionType ? stack2.apply(depth0) : stack2; }
+  if (!helpers.attributes) { stack2 = blockHelperMissing.call(depth0, stack2, options); }
+  if(stack2 || stack2 === 0) { buffer += stack2; }
+  buffer += "\n          <div><strong class=\"savings\">You Save: ";
+  options = {hash:{},data:data};
+  buffer += escapeExpression(((stack1 = helpers.formatSavingsWithValue || depth0.formatSavingsWithValue),stack1 ? stack1.call(depth0, depth0.savings, options) : helperMissing.call(depth0, "formatSavingsWithValue", depth0.savings, options)))
+    + " (";
+  if (stack2 = helpers.percent) { stack2 = stack2.call(depth0, {hash:{},data:data}); }
+  else { stack2 = depth0.percent; stack2 = typeof stack2 === functionType ? stack2.apply(depth0) : stack2; }
+  buffer += escapeExpression(stack2)
+    + " %)</strong></div>\n        </div>\n      </td>\n      <td class=\"price\">";
+  options = {hash:{},data:data};
+  buffer += escapeExpression(((stack1 = helpers.formatCurrencyWithValue || depth0.formatCurrencyWithValue),stack1 ? stack1.call(depth0, depth0.price, options) : helperMissing.call(depth0, "formatCurrencyWithValue", depth0.price, options)))
+    + "</td>\n      <td class=\"shipping\">";
+  options = {hash:{},data:data};
+  buffer += escapeExpression(((stack1 = helpers.formatCurrencyWithValue || depth0.formatCurrencyWithValue),stack1 ? stack1.call(depth0, depth0.shipping, options) : helperMissing.call(depth0, "formatCurrencyWithValue", depth0.shipping, options)))
+    + "</td>\n      <td class=\"total\">";
+  options = {hash:{},data:data};
+  buffer += escapeExpression(((stack1 = helpers.formatCurrencyWithValue || depth0.formatCurrencyWithValue),stack1 ? stack1.call(depth0, depth0.total, options) : helperMissing.call(depth0, "formatCurrencyWithValue", depth0.total, options)))
+    + "</td>\n    </tr>\n    ";
+  return buffer;
+  }
+function program2(depth0,data) {
+  
+  var buffer = "", stack1;
+  buffer += "\n            <option value=\"";
+  if (stack1 = helpers.option) { stack1 = stack1.call(depth0, {hash:{},data:data}); }
+  else { stack1 = depth0.option; stack1 = typeof stack1 === functionType ? stack1.apply(depth0) : stack1; }
+  buffer += escapeExpression(stack1)
+    + "\"";
+  if (stack1 = helpers.selected) { stack1 = stack1.call(depth0, {hash:{},data:data}); }
+  else { stack1 = depth0.selected; stack1 = typeof stack1 === functionType ? stack1.apply(depth0) : stack1; }
+  buffer += escapeExpression(stack1)
+    + ">";
+  if (stack1 = helpers.option) { stack1 = stack1.call(depth0, {hash:{},data:data}); }
+  else { stack1 = depth0.option; stack1 = typeof stack1 === functionType ? stack1.apply(depth0) : stack1; }
+  buffer += escapeExpression(stack1)
+    + "</option>\n            ";
+  return buffer;
+  }
+
+function program4(depth0,data) {
+  
+  var buffer = "", stack1;
+  buffer += "\n          <div><strong>";
+  if (stack1 = helpers.attribute) { stack1 = stack1.call(depth0, {hash:{},data:data}); }
+  else { stack1 = depth0.attribute; stack1 = typeof stack1 === functionType ? stack1.apply(depth0) : stack1; }
+  buffer += escapeExpression(stack1)
+    + "</strong>: ";
+  if (stack1 = helpers.value) { stack1 = stack1.call(depth0, {hash:{},data:data}); }
+  else { stack1 = depth0.value; stack1 = typeof stack1 === functionType ? stack1.apply(depth0) : stack1; }
+  buffer += escapeExpression(stack1)
+    + "</div>\n          ";
+  return buffer;
+  }
+
+  buffer += "<div class='items_container'>\n  <table id=\"cart-items-table\" class='items layout' cellpadding='0' cellspacing='0'>\n    <thead>\n    <tr>\n      <th class=\"quantity\">Quantity</th>\n      <th class=\"image\">&nbsp;</th>\n      <th class=\"details\">Details</th>\n      <th class=\"price\">Unit Price</th>\n      <th class=\"shipping\">Shipping</th>\n      <th class=\"total\">Total</th>\n    </tr>\n    </thead>\n    <tbody>\n    ";
+  stack1 = helpers.each.call(depth0, depth0.items, {hash:{},inverse:self.noop,fn:self.program(1, program1, data),data:data});
+  if(stack1 || stack1 === 0) { buffer += stack1; }
+  buffer += "\n    </tbody>\n  </table>\n</div>\n";
+  return buffer;
+  });
+})();
+(function() {
+  var template = Handlebars.template, templates = Handlebars.templates = Handlebars.templates || {};
+templates['cart-summary-template'] = template(function (Handlebars,depth0,helpers,partials,data) {
+  this.compilerInfo = [4,'>= 1.0.0'];
+helpers = this.merge(helpers, Handlebars.helpers); data = data || {};
+  var buffer = "", stack1, options, helperMissing=helpers.helperMissing, escapeExpression=this.escapeExpression;
+
+
+  buffer += "<h4>Summary</h4>\n<div class=\"messages notice\" style=\"margin-bottom:10px;display:none;\">Your first item ships free</div>\n<table id=\"cart-summary\" class=\"totals\" cellpadding=\"0\" cellspacing=\"0\">\n  <tbody>\n  <tr>\n    <td>Sub Total</td>\n    <td class=\"sub_total amount\">";
+  options = {hash:{},data:data};
+  buffer += escapeExpression(((stack1 = helpers.formatCurrencyWithValue || depth0.formatCurrencyWithValue),stack1 ? stack1.call(depth0, depth0.sub_total, options) : helperMissing.call(depth0, "formatCurrencyWithValue", depth0.sub_total, options)))
+    + "</td>\n  </tr>\n  <tr>\n    <td>Shipping</td>\n    <td class=\"shipping amount\">";
+  options = {hash:{},data:data};
+  buffer += escapeExpression(((stack1 = helpers.formatCurrencyWithValue || depth0.formatCurrencyWithValue),stack1 ? stack1.call(depth0, depth0.shipping, options) : helperMissing.call(depth0, "formatCurrencyWithValue", depth0.shipping, options)))
+    + "</td>\n  </tr>\n  <tr class=\"credit-applied\">\n    <td>Credit</td>\n    <td class=\"credit amount\">";
+  options = {hash:{},data:data};
+  buffer += escapeExpression(((stack1 = helpers.formatCredit || depth0.formatCredit),stack1 ? stack1.call(depth0, depth0.credit_applied, options) : helperMissing.call(depth0, "formatCredit", depth0.credit_applied, options)))
+    + "</td>\n  </tr>\n  <tr class=\"sales-tax\">\n    <td>Sales Tax</td>\n    <td class=\"sales_tax amount\">";
+  options = {hash:{},data:data};
+  buffer += escapeExpression(((stack1 = helpers.formatCurrencyWithValue || depth0.formatCurrencyWithValue),stack1 ? stack1.call(depth0, depth0.sales_tax, options) : helperMissing.call(depth0, "formatCurrencyWithValue", depth0.sales_tax, options)))
+    + "</td>\n  </tr>\n  <tr class=\"your-total\">\n    <td>Your Total</td>\n    <td class=\"your_total amount\">";
+  options = {hash:{},data:data};
+  buffer += escapeExpression(((stack1 = helpers.formatCurrencyWithValue || depth0.formatCurrencyWithValue),stack1 ? stack1.call(depth0, depth0.total, options) : helperMissing.call(depth0, "formatCurrencyWithValue", depth0.total, options)))
+    + "</td>\n  </tr>\n  </tbody>\n</table>";
+  return buffer;
+  });
+})();
+(function() {
+  var template = Handlebars.template, templates = Handlebars.templates = Handlebars.templates || {};
+templates['login-modal-template'] = template(function (Handlebars,depth0,helpers,partials,data) {
+  this.compilerInfo = [4,'>= 1.0.0'];
+helpers = this.merge(helpers, Handlebars.helpers); data = data || {};
+  
+
+
+  return "<div class=\"header\">\n  <a href=\"#\" id=\"show-register-modal\" class=\"account\" data-modal-class=\"register-modal\">Not a member?<span>REGISTER</span></a>\n</div>\n<div id=\"login-form\">\n  <h1>Log In</h1>\n  <div class=\"form-container\">\n    <form class=\"form\" action=\"/customers/login\" method=\"post\">\n      <div class=\"form-row\">\n        <label>Email:</label>\n        <input class=\"txt\" type=\"text\" id=\"login_email_address\" name=\"login[email_address]\"/>\n      </div>\n      <div class=\"form-row\">\n        <label>Password:</label>\n        <input class=\"txt\" type=\"password\" name=\"login[password]\"/>\n      </div>\n      <div class=\"form-row login-btn-container\">\n        <span class=\"submit-btn-wrapper\">\n          <input type=\"submit\" value=\"LOGIN\" />\n        </span>\n        <span>\n          <a href=\"/customers/forgot_pass\" class=\"forgot-pwd-link\">Forgot your password?</a>\n          <a href=\"/info/privacy_policy\" class=\"privacy-link\">Privacy Policy</a>\n        </span>\n      </div>\n      <div class=\"form-row\" id=\"fb-connect-login\">\n        - or - <br />\n        <a class=\"fb-login\" href=\"#\">&nbsp;</a>\n      </div>\n    </form>\n  </div>\n</div>\n<div id=\"forgot-pwd\" class=\"forgot-pwd\">\n  <h3>Forgot your password?</h3>\n  <p>Enter your email address to reset your password.</p>\n  <div>\n    <form method=\"post\" enctype=\"application/x-www-form-urlencoded\" action=\"/customers/forgot_pass\">\n      <input type=\"input\" validate=\"email_address\" required=\"required\" id=\"password_reset_email_address\" name=\"password_reset[email_address]\" maxlength=\"64\" placeholder=\"Enter your email address\" size=\"30\" />\n      <input type=\"submit\" value=\"Reset\">\n    </form>\n  </div>\n  <div>\n    - or - <br />\n    <a class=\"fb-login\" href=\"#\">&nbsp;</a>\n  </div>\n</div>\n";
+  });
+})();
+(function() {
+  var template = Handlebars.template, templates = Handlebars.templates = Handlebars.templates || {};
+templates['register-modal-template'] = template(function (Handlebars,depth0,helpers,partials,data) {
+  this.compilerInfo = [4,'>= 1.0.0'];
+helpers = this.merge(helpers, Handlebars.helpers); data = data || {};
+  
+
+
+  return "<div class=\"header\">\n  <a href=\"#\" id=\"show-login-modal\" class=\"account\" data-modal-class=\"login-modal\">Already a member?<span>Login</span></a>\n</div>\n<div class=\"form-container\">\n  <form class=\"form\" action=\"/customers/register\" method=\"post\">\n    <div class=\"form-row\">\n      <label>Email:</label>\n      <input class=\"txt\" type=\"text\" name=\"register[email_address]\" autocomplete=\"off\"/>\n    </div>\n    <div class=\"form-row\">\n      <label>Password:</label>\n      <input class=\"txt\" type=\"password\" name=\"register[password]\" autocomplete=\"off\" />\n    </div>\n    <div class=\"form-row login-btn-container no-label\">\n      <input type=\"hidden\" name=\"register[skip_password_verify]\" value=\"1\" />\n      <input type=\"hidden\" name=\"ioBB\" id=\"ioBB\" value=\"\" />\n      <span class=\"submit-btn-wrapper\">\n        <input type=\"submit\" value=\"JOIN\" />\n      </span>\n      <span>\n        <a href=\"/info/privacy_policy\" class=\"privacy-link\">Privacy Policy</a>\n      </span>\n    </div>\n    <div class=\"form-row\" style=\"padding-left:13px;margin-top:23px;\">\n      - or -\n      <a class=\"fb-login\" href=\"#\">&nbsp;</a>\n    </div>\n  </form>\n</div>\n\n";
+  });
+})();
+
+/* END HANDLEBAR TEMPLATES */
+
+
+/* START build/core.js */
+
+/*
+
+	NO MORE RACK
+	
+	GENERAL JS FUNCTIONS
+	
+	CREATED BY RYAN ILG
+	HTTP://RYANILG.COM
+	CREATIVE@RYANILG.COM
+		
+	CREATED: Fri Mar  4 19:32:26 PST 2011
+	LAST UPDATE: Sat Jun 11 17:47:43 PDT 2011
+	
+*/
+
+
+$(document).ready( function() {
+  // Country Dropdown Code
+  $("#country_menu a").click(function() {
+    $("#country .title").html( $(this).html() );
+    // reload here
+  });
+
+  $("#country").hover(
+    function () {
+      var size = $(this).parent().size();
+      $("#country_menu").css( {'display': 'block'} );
+      $("#country a").addClass("sel");
+    },
+    function () {
+      $("#country_menu").css( {'display': 'none'} );
+      $("#country a").removeClass("sel");
+    }
+  );
+
+  // Nav Stick
+
+  var section_nav_dock_y = 164;
+  $(window).scroll(function(e){
+    //$el = $('#section_nav_new');
+    $el = $('#head_cat_nav');
+    if ($(this).scrollTop() > section_nav_dock_y){
+      $el.addClass('docked');
+    } else {
+      $el.removeClass('docked');
+    }
+  });
+
+  $.fn.show_more = function() {
+    var self = $(this);
+    self.appear(function () {
+      $.ajax({
+        url: document.location.protocol + '//' + document.location.hostname + '/daily_deals/get_items_jxhrq',
+        data: { section: self.attr('section'), max: self.attr('max'), current: self.attr('current') },
+        async: true,
+        dataType: 'html',
+        success: function(content) {
+          self.hide();
+          content = $(content);
+          content.hide();
+          self.before(content);
+          content.fadeIn('slow', function () {})
+          self.attr('current', parseInt(self.attr('current')) + parseInt(self.attr('max')));
+          if (parseInt(self.attr('current')) < parseInt(self.attr('total'))) {
+            self.show_more();
+            self.fadeIn('slow');
+          }
+          $('body').attach_countdown();
+        },
+        error: function(http, message, exc) {  }
+      });
+    });
+  }
+
+  $('.show_more').each(function () {
+    $(this).show_more();
+  });
+
+  $('#section_nav_new > .insanity_deals').click(function () {
+    $('#insanitydeals_info_popup').dialog({minWidth: 870,height:500,resizable: false,title:'Welcome To Insanity Deals',modal: true}).first().scrollTop(0);$('.ui-widget-overlay').click(function() { $('#insanitydeals_info_popup').dialog('close'); });
+  });
+
+  // Global server time
+  if (countdown_time == undefined) {
+    var countdown_time = null;
+  }
+
+  $.fn.setup_countdown = function() {
+    var countdown = $('.countdown', this);
+    var elem = $('.time', countdown);
+    var dt = new Date(parseInt(countdown.attr('expires_on')));
+
+    elem.countdown({
+      until: dt,
+      format: 'DHMS',
+      layout: "<span class='days'><strong>{dnn}</strong><div>Days</div></span><span class='hours'><strong>{hnn}</strong><div>Hours</div></span><span class='minutes'><strong>{mnn}</strong><div>Mins</div></span>",
+      serverSync: function() {
+        if (countdown_time == null) {
+          var time = new Date();
+
+          $.ajax({url: document.location.protocol + '//' + document.location.hostname + '/info/server_time_jxhrq',
+            async: false, dataType: 'text',
+            success: function(text) { time = new Date(text); },
+            error: function(http, message, exc) { time = new Date(); }
+          });
+
+          countdown_time = time;
+        }
+        return countdown_time;
+      }
+    });
+  };
+
+  $.fn.attach_countdown = function () {
+    // Loop through elements to generate countdown (if applicable)
+    $('.deals.events > .event, .deal', this).each(function () {
+      $(this).setup_countdown();
+    });
+  };
+  $('body').attach_countdown();
+});
+
+
+function create_overlays(from, set_pos) {
+		if (from == undefined) {
+			from = $('body');
+		}
+		if (set_pos == undefined) {
+			set_pos = false;
+		}
+		$(from).find('a.overlay, .overlay a').click(function(e) {
+			trigger_overlay(this.href + '_jxhrq', set_pos);
+			e.preventDefault();
+		});
+	}
+
+	function trigger_overlay(selector, set_pos, post) {
+		on_complete = function() {
+			$('#overlay').data('overlay').load();
+			if (set_pos) {
+				$('#overlay').css({ left: (($(window).width() / 2) - ($('#overlay .content').width() / 2)) + 'px' });
+			}
+			if ($('.reload_javascript').size() > 0) {
+				eval($('.reload_javascript').html());
+			}
+			reload_overlays();
+		};
+		if (post == undefined) {
+			$('#overlay .content').empty().load(selector, on_complete);
+
+		} else {
+			$('#overlay .content').empty().load(selector, post, on_complete);
+		}
+	}
+
+	function reload_overlays() {
+		bb_info = ioGetBlackbox();
+		$('#ioBB').attr('value', bb_info.blackbox);
+		create_overlays('#overlay', true);
+		create_form_feedback();
+	}
+
+	$(function() {
+		$('body').addClass('js').removeClass('no-js');
+		
+		/* FORMS 
+		+ + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + */
+			create_form_feedback();
+						
+			// ADD PLACEHOLDER SUPPORT FOR OLDER BROWSERS
+			$('[placeholder]').placeholder();
+			$('form').submit(function() {$('[placeholder]').placeholder('clear');});
+			$('.form-submit').click(function(){$('[placeholder]').placeholder('clear');});
+
+
+		/* SCROLLABLES 
+		+ + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + */
+			
+			// APPLY SCROLLABLE
+			$('.scrollable').scrollable().navigator({ navi: '.scrollable-nav' });
+
+
+		/* ACCORDIONS 
+		+ + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + */
+			
+			// CREATE A NEW SLIDE EFFECT FOR THE ACCORDION
+			$.tools.tabs.addEffect('accordion', function(i, done) {
+				this.getPanes().slideUp()
+				this.getPanes().eq(i).slideDown(function() { done.call(); });
+			});
+			
+			// APPLY TO ALL ACCORDION LISTS
+			$('.accordion').tabs('.accordion dd', { tabs: 'dt', effect: 'accordion' });
+
+
+		/* OVERLAYS 
+		+ + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + */
+
+			$('#overlay').overlay({
+				close: '.overlay-close', 
+				fixed: false, 
+				mask: { color: '#000', opacity: 0.8 }, 
+				load: false, 
+				target: '#overlay'
+			});
+
+			$('#new_visitor_overlay').overlay({
+				close: '#new_visitor_overlay_close',
+				fixed: false,
+				mask: { color: '#000', opacity: 0.8 },
+				load: true,
+				target: '#new_visitor_overlay',
+				closeOnClick: false
+			});
+			$('#no_exit').overlay({
+				fixed: true,
+				mask: { color: '#000', opacity: 0.8 },
+				load: true,
+				target: '#no_exit',
+				closeOnClick: false,
+				closeOnEsc: false,
+				left: "center"
+			}).css({left: $(window).width() / 2 - $('#no_exit').width() / 2 + 'px'});
+
+			create_overlays();
+
+			if ($('#initial_overlay').size() > 0) {
+				if ($('#initial_overlay').hasClass('transparent')) {
+					$('#overlay').css('background-color', 'transparent');
+					$('.overlay-close').css({
+						'margin-top': '20px',
+						'margin-right': '20px'
+					});
+				}
+				$('#overlay .content').empty().html($('#initial_overlay').html());
+				$('#overlay').data('overlay').load();
+				create_overlays('#overlay', true);
+				//$.getScript(_root+ 'scripts/fonts.js');
+				if ($('.reload_javascript').size() > 0) {
+					eval($('.reload_javascript').html());
+				}
+			}
+
+		/* PRODUCTS 
+		+ + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + */
+			$('#adfeedback').click(function(e){
+				window.location = 'mailto:adfeedback@nomorerack.com';
+				e.stopPropagation();
+			});
+                        $('.grid .deal, .raw_grid .deal').live('click', function() {
+                                var hidden = $(this).find('.hide_deal');
+                                if (hidden.length && hidden.css('display') != 'none') return false;
+                                window.location = $(this).find('.image a').attr('href');
+                        });
+
+			$('.grid .deal .image.delayed').each(function(deal) {
+				var url = $(this).find('.image_url').html();
+				$(this).find('.image_tag').html('<img src="' + url + '" width="200" height="200" />');
+			});
+			
+			/*
+			 * Login and Register Forms
+			 */	
+				$('#overlay #sign_in').live("click",function(){
+					$('#overlay').overlay().close();
+					trigger_overlay("/customers/login #referral_user_popup_login");
+					return false;
+				});
+				$('#overlay #register').live("click",function(){
+					$('#overlay').overlay().close();
+					trigger_overlay("/customers/register #referral_user_popup");
+					return false;
+				});
+				$('#sign_in_no_exit, #no_exit #sign_in').live("click",function(){
+					$('#no_exit').empty().load("/customers/login #referral_user_popup_login");
+					return false;
+				});
+				$('#no_exit #register').live("click",function(){
+					$('#no_exit').empty().load("/customers/register #referral_user_popup");
+					return false;
+				});
+				function validate_email(element) {
+					$this = $(element);
+					if($this.val() != 'Enter an email address'){
+						$.ajax({
+							type: 'post',
+							url: '/promotions/validate_email_address_jxhrq',
+							data: {email:$(element).val()},
+							success: function(msg){
+								var resp = jQuery.parseJSON(msg);
+								if(resp.messages.error){
+									$this.wrap('<div class="callout-outer"/>');
+									$this.parent().append('<div class="callout border-callout">' + resp.messages.error.message + '<b class="border-notch notch"></b><b class="notch"></b></div>');
+									return true;
+								}else{
+									if($this.parent().hasClass('callout-outer')){ 
+										$this.unwrap().next('.callout').remove();
+									}
+									return false;
+								}
+							}
+						});
+					}
+				}
+				$('.email_txt').live('load',function(){
+					$(this).val('Enter an email address');
+				});
+				$('.email_txt').live('focus',function(){
+					if($(this).val() == 'Enter an email address'){
+						$(this).val('');
+					}
+				});
+				$('.email_txt').live("blur", function(){
+					var $this = $(this);
+					if($(this).val().length){
+						validate_email(this);
+					}else{
+						$(this).val('Enter an email address');
+					}
+				});
+				$('#submit_ref').live("click",function(){
+					var hasError = false;
+					$this = $(this);
+					$this.closest('form').children('.email_txt').each(function(){
+						if($(this).val().length > 0){
+							hasError = hasError || validate_email(this);
+						}
+					});
+					if(hasError != true){
+						$.ajax({
+							type: 'post',
+							url: '/promotions/send_invites',
+							data: $(this).closest('form').serialize(),
+							success: function(msg){
+								var resp = jQuery.parseJSON(msg);
+								if(resp.messages.error){
+									if($this.closest('form').find('.error').length == 0){
+										$this.closest('form').prepend("<ul class='messages_ref error'><li>" + resp.messages.error.message + "</li></ul>");
+									}
+								}else{
+									if($('#submit_ref').attr('alt').length){
+										trigger_overlay("/promotions/" + $('#submit_ref').attr('alt'));
+									}else{
+										trigger_overlay("/promotions/friend_thank_you");
+									}
+								}
+							}
+						});
+					}
+					return false;
+				});
+				
+				$(window).bind("scroll",function(){
+					if($(window).scrollTop() > 1000){
+						$('#totop').show();
+					}else{
+						$('#totop').hide();
+					}
+				});
+	}); /* END DOC READY */
+
+
+function create_form_feedback(match, change) {
+  if (!match || match == undefined) {
+    match = $('form');
+  }
+  if (!change || change == undefined) {
+    change = false;
+  }
+  $(match).find('.form-current-replace .form-edit-current').each(function(index) {
+    $(this).append('<small>(<span class="underline">Change</span>)</small>');
+  });
+  $(match).find('.form-current-replace .form-edit-current small').click(function() {
+    $(this).parent().animate({ top: ($(this).height()/-1)-15 }, 200)
+      .siblings('.form-edit-replace').animate({ bottom: 5 }, 200);
+  });
+  if (change) {
+    $(match).find('.form-current-replace .form-edit-current small').parent().animate({ top: ($(this).height()/-1)-15  }, 200)
+      .siblings('.form-edit-replace').animate({ bottom: 5 }, 200);
+  }
+}
+/* END build/core.js */
+
+
+/* START build/nmr.js */
+
+window.NMR = {
+  init: function(options){
+    //global loader
+
+    this.is_authenticated = options.is_authenticated;
+    this.is_checkout_page = options.is_checkout_page;
+    this.is_product_page = options.is_product_page;
+    this.is_facebook_connected = false;
+
+    $('body').addClass('js').removeClass('no-js');
+
+    this.create_form_feedback();
+
+    $('[placeholder]').placeholder();
+
+    $('form').submit(function() {
+      $('[placeholder]').placeholder('clear');
+    });
+
+    $('.form-submit').click(function(){
+      $('[placeholder]').placeholder('clear');
+    });
+
+    ///$('.scrollable').scrollable().navigator({ navi: '.scrollable-nav' });
+
+    /* PRODUCTS
+     + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + */
+    $('#adfeedback').click(function(e){
+      window.location = 'mailto:adfeedback@nomorerack.com';
+      e.stopPropagation();
+    });
+
+    $(document).on('.grid .deal, .raw_grid .deal', 'click', function() {
+      var hidden = $(this).find('.hide_deal');
+      if (hidden.length && hidden.css('display') != 'none') return false;
+      window.location = $(this).find('.image a').attr('href');
+    });
+
+    $('.grid .deal .image.delayed').each(function(deal) {
+      var url = $(this).find('.image_url').html();
+      $(this).find('.image_tag').html('<img src="' + url + '" width="200" height="200" />');
+    });
+  },
+
+  create_form_feedback: function (match, change) {
+    if (!match || match == undefined) {
+      match = $('form');
+    }
+    if (!change || change == undefined) {
+      change = false;
+    }
+    $(match).find('.form-current-replace .form-edit-current').each(function(index) {
+      $(this).append('<small>(<span class="underline">Change</span>)</small>');
+    });
+    $(match).find('.form-current-replace .form-edit-current small').click(function() {
+      $(this).parent().animate({ top: ($(this).height()/-1)-15 }, 200)
+        .siblings('.form-edit-replace').animate({ bottom: 5 }, 200);
+    });
+    if (change) {
+      $(match).find('.form-current-replace .form-edit-current small').parent().animate({ top: ($(this).height()/-1)-15  }, 200)
+        .siblings('.form-edit-replace').animate({ bottom: 5 }, 200);
+    }
+
+    $(window).bind("scroll",function(){
+      if($(window).scrollTop() > 1000){
+        $('#totop').show();
+      }else{
+        $('#totop').hide();
+      }
+    });
+  },
+
+  fb_login: function() {
+    var self = this;
+    FB.login(function(response) {
+      if (response.authResponse) {
+        FB.api('/me', function(fbuser) {
+          self.fb_connect(fbuser).done(function(result){
+            if(result.status == 0){
+              if(result.redirect  == "/"){
+                window.location.href = window.location.href;
+              }else{
+                window.location.href = result.redirect;
+              }
+            }
+          }).fail(function(){
+            self.updateCreditMessage('An error occurred when trying to update your cart', 'error');
+          });
+        });
+      }
+    }, {scope: 'email,publish_stream'});
+  },
+
+  fb_connect: function(fbuser){
+    return $.ajax({
+      url: "/customers/facebook_connect",
+      type: "POST",
+      data: fbuser
+    });
+  }
+};
+/* END build/nmr.js */
+
+
+/* START build/nmr.handlebar-helpers.js */
+
+Handlebars.registerHelper("formatCurrencyWithValue", function(str) {
+  return '$' + parseFloat(str).toFixed(2);
+});
+
+Handlebars.registerHelper("formatCredit", function(str) {
+
+  if(parseFloat(str, 10) == 0){
+    return '$0.00';
+  }
+  return '-$' + str.toFixed(2);
+});
+
+Handlebars.registerHelper("formatSavingsWithValue", function(str) {
+  var savings = parseFloat(str, 10);
+  if(savings <= 0){
+    return '$0.00';
+  }
+  return '$' + savings.toFixed(2);
+});
+
+Handlebars.registerHelper("cartItemRowClass", function(cart_item_id) {
+  var clss = "";
+  if(cart_item_id == 0){
+    clss += " newly-added-item";
+  }
+  return clss;
+});
+
+Handlebars.registerHelper("debug", function(optionalValue) {
+  console.log("Current Context");
+  console.log("====================");
+  console.log(this);
+
+  if (optionalValue) {
+    console.log("Value");
+    console.log("====================");
+    console.log(optionalValue);
+  }
+});
+/* END build/nmr.handlebar-helpers.js */
+
+
+/* START build/nmr.customer.js */
+
+NMR.customer = {
+  authenticated: false,
+  init: function(customer){
+    if(customer){
+      this.authenticated = true;
+      for(key in customer){
+        if(!this.hasOwnProperty(key)){
+          this[key] = customer[key];
+        }
+      }
+    }
+    delete(this.init);
+  }
+};
+/* END build/nmr.customer.js */
+
+
+/* START build/nmr.cart.js */
+
+NMR.cart = {
+  init: function(cart) {
+
+    this.is_modal = false;
+    this.tax_rate = 0;
+    this.minimum_purchase_amount = 30;
+
+    this.items = cart.items;
+    this.summary = cart.summary;
+
+    //shipping
+    this.free_shipping_all_items = cart.free_shipping_all_items;
+    this.free_shipping_first_item = cart.free_shipping_first_item;
+    this.shipping_fee = cart.shipping_fee
+
+    this.credit = {
+      available: cart.credit_available,
+      applied: cart.summary.credit_applied
+    };
+
+    this.header_cart_link = $("#header-cart-link");
+
+    this.cart_modal_template = Handlebars.templates['cart-items-template'];
+    this.cart_summary_template = Handlebars.templates['cart-summary-template'];
+
+    this.modal = $("#cart-modal");
+    this.modal_content = $("#cart-modal-content");
+    this.summary_content = $("#shopping_cart_summary");
+
+    this.credit_amount = $('#credit-amount');
+    this.credit_message = $("#credit-message");
+    this.credit_form = $("#apply_credit");
+    this.cart_credit = $("#cart-credit");
+    this.checkout_btn = $("#checkout-btn");
+    this.redeem_form = $("#redeem_code");
+
+    this.promo_code_loader = $('#promo-code-loader');
+    this.promo_code_form_wrapper = $('#promocode-form-wrapper');
+    this.continue_shopping_btn = $("#continue-shopping");
+
+    this.renderTemplate();
+    this.configureDialog();
+    this.bindEvents();
+  },
+
+  configureDialog: function() {
+    var self = this;
+    this.modal.dialog({
+      closeOnEscape: true,
+      draggable: false,
+      dialogClass: "no-title-bar cart-modal",
+      modal: true,
+      autoOpen: false,
+      resizable: false,
+      position: ['center', 110],
+      width: "900px",
+      height: "auto",
+      open: function() {
+        self.is_modal = true;
+        if(self.sales_tax == 0){
+          self.cart_summary.find(".sales-tax").hide();
+        }
+      },
+      close: function() {
+        self.resetDialog();
+      }
+    });
+  },
+
+  resetDialog: function() {
+    this.credit_message.html('');
+  },
+
+  renderTemplate: function() {
+
+    if(this.itemCount() == 0) {
+      this.modal_content.html("<h2>Your Shopping cart is empty</h2>");
+      this.checkout_btn.hide();
+      this.cart_credit.hide();
+    }else{
+      this.modal_content.html(this.cart_modal_template({items:this.items}));
+      this.summary_content.html(this.cart_summary_template(this.summary));
+
+      if(this.free_shipping_first_item){
+        this.summary_content.find('.messages.notice').show();
+      }else{
+        this.summary_content.find('.messages.notice').hide();
+      }
+
+      this.cart_credit.show();
+      this.checkout_btn.show();
+    }
+
+    this.promo_code_form = $("#promo_code_form");
+    this.cart_summary = $("#cart-summary");
+    this.credit_section = $("#credit-section");
+
+    this.apply_credit_form_wrapper = $('#apply-credit-form-wrapper');
+    this.apply_credit_loader = $('#apply-credit-loader');
+
+
+    if(NMR.customer.authenticated){
+      this.promo_code_form.show();
+      if(this.credit.available > 0) {
+        this.credit_section.show();
+      }
+    }
+
+    this.updateAvailableCredit();
+    this.updateSummary();
+    this.bindRowItemForm();
+  },
+
+  bindEvents: function() {
+
+    var self = this;
+    this.header_cart_link.attr("href", "/shopping_carts/view");
+
+    $(".cart.overlay").on('click', function(){
+      self.modal.dialog('open');
+      return false;
+    });
+
+    this.continue_shopping_btn.click(function() {
+      if(self.itemCount() == 0){
+        self.modal.dialog('close');
+        return false
+      }
+    });
+
+    this.bindCreditForm();
+    this.bindRedeemForm();
+  },
+
+  bindRowItemForm: function() {
+    var self = this;
+    this.modal_content.find('.update_item').each(function(){
+      var form = $(this);
+      form.find('select').change(function(evt){
+        self.changeQuantity(evt);
+      });
+      form.find('.remove').click(function(evt){
+        self.removeRow(evt);
+      });
+    });
+  },
+
+  changeQuantity: function(evt) {
+    var self = this;
+    var form = $(evt.target.form);
+    var row = form.closest('tr');
+    var cart_item_id = form.find('input[name="cart_item_id"]').val();
+
+    var item = this.items[cart_item_id];
+    item.quantity = parseInt($(evt.target).val(),10);
+
+    if(this.shouldSkipShipping(item)){
+      item.shipping = 0;
+    }else{
+      if(item.exempt_from_free_shipping || this.free_shipping_all_items == false){
+        item.shipping = item.quantity * this.shipping_fee;
+      }else{
+        item.shipping = 0;
+      }
+    }
+
+    item.total = (item.quantity * item.price) + item.shipping;
+    item.savings = (item.retail_price - item.price) * item.quantity;
+
+    this.items[cart_item_id] = item;
+
+    row.find('.total').text('$' + item.total.toFixed(2));
+    row.find('.shipping').text('$' + item.shipping.toFixed(2));
+
+    if(this.itemHasSavings(item)){
+      row.find('.savings').text('You Save: $' + item.savings.toFixed(2) + ' (' + item.percent + '%)');
+    }
+
+    this.credit_message.empty().hide();
+
+    row.animate({backgroundColor: "#F0FFD5"}, 'fast', function(){
+      $(this).animate({backgroundColor: "transparent"}, 1500);
+    });
+
+    this.updateCartLinkCount();
+    this.validateMinimumCart();
+
+    if(this.free_shipping_first_item){
+      var first_row = this.modal_content.find('.item-row').eq(0);
+      var cart_item_id = first_row.data('cart-item-id');
+      if(this.items[cart_item_id].shipping > 0){
+        this.items[cart_item_id].shipping -= this.shipping_fee;
+        this.items[cart_item_id].total -= this.shipping_fee;
+        first_row.find('.shipping').text('$' + this.items[cart_item_id].shipping.toFixed(2));
+        first_row.find('.total').text('$' + this.items[cart_item_id].total.toFixed(2));
+      }
+    }
+
+    this.updateSummary();
+
+    var post = form.serialize();
+    var shipping_address_id = $("#one_click_shipping_address_id");
+    if(shipping_address_id.length == 1){
+      post += '&address_id=' + shipping_address_id.val();
+    }
+
+    this.updateQuantity(post).done(function(result){
+      self.updateSummaryAfterChange(result);
+    }).fail(function(){
+      self.updateCreditMessage('An error occurred when trying to update your cart', 'error');
+    });
+  },
+
+  itemIsTaxExempt: function(item) {
+    return item.product_type == 'gift_card';
+  },
+
+  itemHasSavings: function(item) {
+    return item.product_type != 'gift_card';
+  },
+
+  shouldSkipShipping: function(item) {
+    return item.product_type == 'gift_card';
+  },
+
+  updateSummaryAfterChange: function(result) {
+
+    if(result.status == 1){
+      return;
+    }
+
+    this.credit = {
+      available: result.available,
+      applied: result.applied
+    };
+
+    this.summary = {
+      credit_applied: result.applied,
+      shipping: result.shipping,
+      sales_tax: result.sales_tax
+    };
+
+    this.updateAvailableCredit();
+    this.updateSummary();
+    this.updateUDO('view');
+  },
+
+  updateQuantity: function(post) {
+    return $.ajax({
+      url: "/shopping_carts/update_item",
+      type: "POST",
+      dataType: "json",
+      data: post
+    });
+  },
+
+  updateCartLinkCount: function(){
+    var item_count = 0, k;
+    for(k in this.items){
+      item_count += parseInt(this.items[k].quantity, 10);
+    }
+    this.header_cart_link.html('<span class="shadow">My Cart (' + item_count +')</span>');
+  },
+
+  removeRow: function(evt) {
+
+    if(confirm('Are you sure you want to remove this item from your cart?')){
+      var self = this;
+      var form = $(evt.target.form);
+      var item_id = $(evt.target).closest('tr').data('cart-item-id');
+
+      $(evt.target).closest('tr').fadeOut({duration: 500, complete: function(){
+
+        self.removeItem(item_id);
+        self.validateMinimumCart();
+
+        var post = self.formFieldsToObj(form);
+            post.quantity = 0; //update qty to 0 for removed item
+
+        self.updateQuantity(post).done(function(result) {
+          self.updateSummaryAfterChange(result);
+        }).fail(function(){
+          self.updateCreditMessage('An error occurred when trying to remove this item from your cart', 'error');
+        });
+      }});
+    }
+  },
+
+  removeItem: function(item_id) {
+    delete(this.items[item_id]);
+
+    if(this.itemCount() == 0){
+      this.items = {};
+      this.resetSummary();
+    }
+
+    this.updateCartLinkCount();
+  },
+
+  validateMinimumCart: function() {
+    var summary = this.calculateSummary();
+    if(summary.sub_total < this.minimum_purchase_amount){
+      this.credit.available += this.credit.applied;
+      this.credit.applied = 0;
+      this.updateAvailableCredit();
+      this.updateSummary();
+    }
+  },
+
+  formFieldsToObj: function(form) {
+    var post = {}, i;
+    var fields = form.serializeArray();
+    for(i=0;i<fields.length;i++){
+      post[fields[i].name] = fields[i].value;
+    }
+    return post;
+  },
+
+  itemCount: function() {
+    var count = 0, c;
+    for (c in this.items) {
+      count++;
+    }
+    return count;
+  },
+
+  resetSummary: function() {
+    this.toggleTax(this.summary.sales_tax);
+    this.credit_message.show().html('');
+    this.cart_summary.find('.sub_total').text('$0.00');
+    this.cart_summary.find('.shipping').text('$0.00');
+    this.cart_summary.find('.credit').text('$0.00');
+    this.cart_summary.find('.sales-tax').text('$0.00');
+    this.cart_summary.find('.your_total').text('$0.00');
+  },
+
+  updateSummary: function() {
+    var credit_applied;
+    var summary = this.calculateSummary();
+
+    this.credit_form.find("input[type='submit']").prop('disabled', (this.credit.available == 0));
+
+    if(summary.credit == 0){
+      credit_applied = '$' + summary.credit.toFixed(2);
+    }else{
+      credit_applied = '-$' + summary.credit.toFixed(2);
+    }
+
+    this.toggleTax(summary.sales_tax);
+
+    this.cart_summary.find('.credit').text(credit_applied);
+    this.cart_summary.find('.sub_total').text('$' + parseFloat(summary.sub_total).toFixed(2));
+    this.cart_summary.find('.shipping').text('$' + parseFloat(summary.shipping_total).toFixed(2));
+    this.cart_summary.find('.sales_tax').text('$' + parseFloat(summary.sales_tax).toFixed(2));
+    this.cart_summary.find('.your_total').text('$' + parseFloat(summary.total).toFixed(2));
+
+    this.summary.sub_total = summary.sub_total;
+    this.summary.shipping = summary.shipping_total;
+    this.summary.credit_applied = summary.credit;
+    this.summary.sales_tax = summary.sales_tax;
+    this.summary.total = summary.total;
+  },
+
+  toggleTax: function(tax) {
+    if(tax == 0){
+      this.cart_summary.find(".sales-tax").hide();
+    }else{
+      this.cart_summary.find(".sales-tax").show();
+    }
+  },
+
+  overrideCartTax: function(response) {
+    this.tax_rate = response.tax_rate;
+    this.toggleTax(response.sales_tax);
+    this.cart_summary.find('.sales_tax.amount').text('$' + parseFloat(response.sales_tax).toFixed(2));
+    this.cart_summary.find('.your_total.amount').text('$' + parseFloat(response.total).toFixed(2));
+  },
+
+  calculateSummary: function() {
+    var k, qty, summary, sub, non_taxed = 0;
+
+    summary = {
+      sub_total: 0,
+      total: 0,
+      shipping_total: 0,
+      credit: this.credit.applied
+    };
+
+    for(k in this.items){
+      qty = parseInt(this.items[k].quantity, 10);
+      sub = qty * parseInt(this.items[k].price, 10);
+
+      if(this.itemIsTaxExempt(this.items[k])){
+        non_taxed += sub;
+      }
+
+      summary.sub_total += sub;
+      summary.shipping_total += parseFloat(this.items[k].shipping);
+    }
+
+    summary.total = summary.shipping_total + summary.sub_total;
+    summary.sales_tax = (summary.total - non_taxed) * this.tax_rate;
+
+    if(this.credit.applied > 0){
+      if(this.credit.applied > summary.total){
+        summary.total = 0;
+      }else{
+        summary.total -= this.credit.applied;
+      }
+    }
+
+    summary.total += summary.sales_tax;
+
+    return summary;
+  },
+
+  applyCredit: function() {
+    return $.ajax({
+      url: '/customer_credits/apply_credit',
+      data: { apply_credit: true },
+      type: "POST",
+      dataType: "json"
+    });
+  },
+
+  validatePromoCode: function(promo_code) {
+    if(/[^a-zA-Z0-9]/.test(promo_code)) {
+      this.updateCreditMessage('Invalid code entered!', "error");
+      return false;
+    }
+
+    if(promo_code.length != 8){
+      this.updateCreditMessage('Invalid code entered!', "error");
+      return false;
+    }
+    return true;
+  },
+
+  updateCreditMessage: function(message, clas) {
+    this.credit_message.show().html('<ul class="messages ' + clas +'"><li>'+ message +'</li></ul>');
+  },
+
+  redeemCode: function(promo_code) {
+    return $.ajax({
+      type: "POST",
+      url: '/partner_promotions/redeem_promo_code',
+      data: {"redeem_code[code]": promo_code },
+      dataType: "json"
+    });
+  },
+
+  bindRedeemForm: function(){
+    var self = this;
+    this.redeem_form.submit(function(){
+
+      var submit_btn = $(this).find('input[type="submit"]');
+      var code_input = $(this).find('input[type="text"]');
+      var promo_code = code_input.val();
+
+      submit_btn.prop('disabled', true);
+
+      self.promo_code_loader.show();
+      self.promo_code_form_wrapper.hide();
+
+      if(self.validatePromoCode(promo_code) == false){
+        self.promo_code_loader.hide();
+        self.promo_code_form_wrapper.show();
+        return false;
+      }
+
+      self.redeemCode(promo_code).done(function(result){
+        if(result.status == 0){
+          self.updateCreditMessage(result.message, 'success');
+          code_input.val("");
+          self.credit_section.show();
+          self.credit.available = parseInt(result.credit_available, 10);
+          self.updateAvailableCredit();
+          self.credit_form.find("input[type='submit']").prop('disabled', false);
+        }else{
+          self.updateCreditMessage(result.message, 'error');
+        }
+      }).fail(function(){
+        self.updateCreditMessage('A problem occurred when trying to redeem your code.', 'error');
+      }).always(function(){
+        submit_btn.prop('disabled', false);
+        code_input.prop('disabled', false);
+        self.promo_code_loader.hide();
+        self.promo_code_form_wrapper.show();
+      })
+
+      return false;
+    });
+
+    this.redeem_form.find('input[type="text"]').keyup(function(){
+      var code_entered = $.trim($(this).val());
+      self.redeem_form.find('input[type="submit"]').prop('disabled', (code_entered == ""));
+    });
+  },
+
+  bindCreditForm: function() {
+    var self = this;
+
+    if(self.credit.available > 0){
+      this.credit_form.find("input[type='submit']").prop('disabled', false);
+    }
+
+    this.credit_form.submit(function(){
+
+      self.apply_credit_form_wrapper.hide();
+      self.apply_credit_loader.show();
+
+      self.applyCredit().done(function(data){
+        self.apply_credit_form_wrapper.show();
+        self.apply_credit_loader.hide();
+
+        if(data.status == 1){
+          self.updateCreditMessage(data.message, 'error');
+          return;
+        }
+
+        self.updateCreditMessage(data.message, 'success');
+
+        if(data.type == "credit"){
+          self.credit.available = data.available;
+          self.credit.applied = data.applied;
+          self.updateAvailableCredit();
+        }
+
+        self.updateSummary();
+      });
+
+      return false;
+    });
+  },
+
+  updateAvailableCredit:function() {
+    this.credit_section.show();
+    this.credit_amount.text('$' + this.credit.available.toFixed(2));
+  },
+
+  /* action = view | link */
+  updateUDO: function(action) {
+    var cart_data  = this.getCartData();
+    cart_data.page_type = this.is_modal ? "Checkout - Modal" : "Checkout - Page";
+
+    if(typeof utag == 'undefined'){
+      setTimeout(function() {
+        if(typeof utag != 'undefined'){
+          utag[action](cart_data);
+        }
+      }, 2000);
+    }else{
+      utag[action](cart_data);
+    }
+  },
+
+  getCartData: function() {
+    var udo = {
+      site_region: "us",
+      site_currency: "usd",
+      page_name: "Cart",
+      page_type: "Cart",
+      customer_email: NMR.customer.email,
+      customer_firstName: NMR.customer.first_name,
+      customer_lastName: NMR.customer.last_name,
+      is_logged_in: NMR.customer.authenticated,
+      orders_purchased: NMR.customer.purchase_count,
+      product_id: [],
+      product_sku: [],
+      product_name: [],
+      product_category: [],
+      product_unit_price: [],
+      product_list_price: [],
+      product_quantity: []
+    }
+
+    for(var i in this.items){
+      udo.product_id.push(this.items[i].product_id);
+      udo.product_sku.push(this.items[i].product_sku);
+      udo.product_name.push(this.items[i].product_name);
+      udo.product_category.push(this.items[i].product_category);
+      udo.product_unit_price.push(this.items[i].price);
+      udo.product_list_price.push(this.items[i].retail_price);
+      udo.product_quantity.push(this.items[i].quantity);
+    }
+
+    return udo;
+  }
+};
+/* END build/nmr.cart.js */
+
+
+/* START build/nmr.add-item.js */
+
+NMR.addItem = {
+  init: function(new_item, attribute_item_ids) {
+
+    if(typeof(new_item) == "undefined"){
+      return;
+    }
+
+    this.image_map = {attribute: {}, sequence: {}};
+
+    if(new_item.image_map){
+      this.image_map = new_item.image_map;
+      delete new_item['image_map'];
+    }
+
+    this.cart = NMR.cart;
+    this.new_item = new_item;
+
+    this.slideshow_index = 0;
+    this.attributeSelectors = NMR.attributeSelectors;
+
+    this.registerElements();
+    this.bindElements();
+  },
+
+  registerElements: function() {
+    this.context = $('#products_view');
+    this.add_item_form = $('#add_item');
+    this.add_item_feedback = $("#add-item-feedback");
+    this.add_item_message = $("#add-item-message");
+    this.add_item_submit_button = this.add_item_form.find('input[type=submit]');
+    this.quantity_selector = $("#add_item_quantity");
+    this.product_item_id = $('#add_item_product_item_id');
+    this.zoom_view = this.context.find('.images .zoom');
+  },
+
+  openCart: function() {
+
+    if(this.cart.itemCount() == 0){
+      this.cart.items = {"new_item": this.new_item};
+    }else{
+      this.cart.items["new_item"] = this.new_item;
+    }
+
+    this.generateQtyOptions(this.quantity_selector.val());
+    this.setAttributesForRow();
+    this.calculateTotalForRow();
+
+    this.cart.renderTemplate();
+    this.cart.updateSummary();
+    this.cart.modal.dialog('open');
+  },
+
+  bindElements: function() {
+    this.bindAddItemButton();
+    this.bindAddItemForm();
+    this.bindQuantitySelector();
+    this.bindImageSlideshow();
+    this.bindImageHover();
+  },
+
+  bindImageSlideshow: function(){
+    var self = this;
+    this.main_image = $(".main");
+    this.image_modal = $("#pdp-image-modal");
+    this.img_container = this.image_modal.find("#pdp-imgs-lg");
+    this.img_count = 0;
+
+    $(".thumbs img").each(function(){
+      self.img_count++;
+      $("<img/>", {
+        src: $(this).attr('src').replace('tn','lg'),
+        style: 'display: none; max-height: 640px; max-width: 640px;'
+      }).appendTo(self.img_container);
+    });
+
+    var nextBtn = this.image_modal.find(".next");
+    var backBtn = this.image_modal.find(".back");
+
+    nextBtn.click(function(){
+      if(self.slideshow_index == (self.img_count -1)){
+        return;
+      }
+      self.slideshow_index++;
+      self.img_container.find("img").hide().eq(self.slideshow_index).show();
+
+      if(self.slideshow_index == (self.img_count -1)){
+        nextBtn.prop('disabled', true);
+      }
+      backBtn.prop('disabled', false);
+    });
+
+    backBtn.click(function(){
+      if(self.slideshow_index == 0){
+        backBtn.prop('disabled', true);
+        return;
+      }
+      self.slideshow_index--;
+      self.img_container.find("img").hide().eq(self.slideshow_index).show();
+
+      if(self.slideshow_index == 0){
+        backBtn.prop('disabled', true);
+      }
+      nextBtn.prop('disabled', false);
+    });
+
+    this.image_modal.dialog({
+      closeOnEscape: true,
+      draggable: false,
+      dialogClass: "no-title-bar pdp-image-modal",
+      modal: true,
+      autoOpen: false,
+      resizable: false,
+      position: ['center', 110],
+      width: "660px",
+      height: "auto",
+      open: function() {
+
+        if(self.slideshow_index == 0){
+          backBtn.prop('disabled', true);
+          nextBtn.prop('disabled', false);
+        }
+
+        if(self.slideshow_index == (self.img_container.find("img").length -1)){
+          backBtn.prop('disabled', false);
+          nextBtn.prop('disabled', true);
+        }
+
+        self.img_container.find("img").hide().eq(self.slideshow_index).show();
+      }
+    });
+
+    this.main_image.click(function(){
+      self.image_modal.dialog('open');
+    });
+  },
+
+  bindAddItemButton: function() {
+    var self = this;
+    this.add_item_submit_button.click(function(){
+      if(!self.attributeSelectors.validate()){
+        return false;
+      }
+      if(!self.attributeSelectors.checkAvailability()){
+        return false;
+      }
+
+      self.attributeSelectors.setProductItemIdFromSelectedAttributes();
+
+      self.openCart();
+    });
+  },
+
+  bindAddItemForm: function() {
+    var self = this;
+    this.add_item_form.submit(function(){
+      self.submitAddItem($(this));
+      return false;
+    });
+  },
+
+  submitAddItem: function(form) {
+    var self = this;
+    var sequence = Math.floor(Math.random()*100000);
+
+    $.ajax({
+      type: form.attr('method'),
+      url: form.attr('action'),
+      async: false,
+      dataType: 'json',
+      data: {
+        ajax: true,
+        sequence: sequence,
+        form: form.serialize()
+      },
+
+      success: function(response) {
+        if (response.error) {
+          self.cart.modal.dialog('close');
+          self.displayMessage('error', response.messages.error[0].message);
+
+          self.cart.modal.find('.item-row').each(function(){
+            var row = $(this);
+            if(row.data('cart-item-id') == 0){
+              row.remove();
+              self.cart.removeItem('new_item');
+            }
+          });
+          return;
+        }
+
+        if (response.success){
+          self.displayMessage('success', response.messages.success[0].message);
+          self.cart.updateCartLinkCount();
+          self.reconcilePDPItem(response.messages.success[0].item);
+        }
+      }
+    });
+
+    return false;
+  },
+
+  bindQuantitySelector: function() {
+    var self = this;
+    this.quantity_selector.change(function() {
+      //update newly added item's quantity
+      //so that it updates the cart total when the modal is opened
+      self.generateQtyOptions($(this).val());
+      self.calculateTotalForRow();
+      self.cart.updateSummary();
+    });
+  },
+
+  reconcilePDPItem: function(pdp_item) {
+    delete this.cart.items.new_item;
+
+    if(this.cart.itemCount() == 0){
+      this.cart.items = {};
+    }
+
+    this.cart.items[pdp_item.cart_item_id] = pdp_item;
+    this.cart.renderTemplate();
+    this.cart.updateSummary();
+  },
+
+  setAttributesForRow: function() {
+    var self = this;
+    this.attributeSelectors.selectors.each(function(){
+      self.new_item.attributes.push({
+        attribute: $(this).attr('name'),
+        value: $(this).val()
+      });
+    });
+  },
+
+  generateQtyOptions: function(newQty) {
+    var i,l = this.new_item.qty_options.length;
+    var options = [], selected = "";
+    for(i=1;i<=l;i++){
+      selected = (i == newQty) ? ' selected = "selected"' : '';
+      options.push({option: i, selected:selected});
+    }
+    this.new_item.qty_options = options;
+    this.new_item.quantity = parseInt(newQty, 10);
+  },
+
+  calculateTotalForRow: function() {
+    this.new_item.shipping = this.cart.shipping_fee * this.new_item.quantity;
+    this.new_item.total = this.new_item.shipping + (this.new_item.price * this.new_item.quantity);
+    this.new_item.savings = this.new_item.savings * this.new_item.quantity;
+  },
+
+  displayMessage: function(klass, msg) {
+    this.add_item_feedback.removeClass('error success').addClass(klass).show();
+    this.add_item_message.text(msg);
+  },
+
+  resetMessage: function() {
+    this.attributeSelectors.selectors.removeClass('error');
+    this.add_item_feedback.removeClass('error success').hide();
+    this.add_item_message.text("");
+  },
+
+  bindImageHover: function() {
+    var self = this;
+    var loaded_images = {}, lsrc;
+
+    this.context.find('.images .thumbs img').each(function(){
+      var src = $(this).attr('src');
+      if (loaded_images[src] == undefined) {
+        var img = new Image();
+        img.src = src.replace(/-tn/g, '-lg');
+        $(img).bind("load",function(){
+          lsrc = src.split('/');
+          loaded_images[lsrc.pop()] = img.width;
+        });
+      }
+    });
+
+    // Thumbnail replacement
+    this.context.find('.images .thumbs img').click(function () {
+      self.clickThumbnail($(this));
+    });
+
+    // Zooom'n
+    this.context.find('.images .main').mouseover(function() {
+
+      self.zoom_view.css({
+        backgroundImage: "url('" + $('img', this).prop('src').replace(/-rg/g, '-lg') + "')",
+        backgroundRepeat: 'no-repeat'
+      }).fadeIn(400).show();
+
+      $(this).mousemove(function (event) {
+        var ofs = $(this).offset();
+
+        var ofl = event.pageX-ofs.left
+        var oft = event.pageY-ofs.top
+
+        var src = $('img', this).prop('src').replace(/-rg/g, '-tn').split('/');
+
+        var large = loaded_images[src.pop()];
+        var view_size = 300;
+        var scaleW = $('img', this).width();
+        var scaleH = $('img', this).height();
+        var left_pos = (((large/scaleW)*ofl)-view_size/2);
+
+        var top_pos = (((large/scaleH)*oft)-view_size/2);
+            top_pos = (top_pos < 0) ? 0 : top_pos;
+
+        var left_pos = (left_pos < 0) ? 0 : left_pos;
+
+        self.zoom_view.css({
+          backgroundPosition: '-' + left_pos  + 'px -' + top_pos + 'px'
+        });
+      });
+    }).mouseout(function () {
+      $(this).unbind('mousemove');
+      self.zoom_view.fadeOut(200);
+    });
+  },
+
+  clickThumbnail: function(thumbnail) {
+
+    if (thumbnail.hasClass('selected')){
+      return;
+    }
+
+    this.selectImage(thumbnail);
+    if(this.attributeSelectors.singleAttributeWithSingleOption()){
+      return;
+    }
+
+    this.resetMessage();
+    this.attributeSelectors.selectAttributesByImageSequence(this.slideshow_index);
+  },
+
+  selectImage: function(thumbnail) {
+    var main = this.context.find('.images .main img');
+    var new_src = main.prop('src').replace(/-\d.*-rg/g, '-' + thumbnail.attr('index') + '-rg');
+    main.fadeOut(200, function() {
+      main.prop('src', new_src);
+    }).fadeIn(500);
+
+    this.context.find('.images .thumbs img').removeClass('selected');
+    thumbnail.addClass('selected');
+
+    this.slideshow_index = thumbnail.attr('index');
+  },
+
+  shouldSelectImage: function(select) {
+    //has no mapped images. do nothing.
+    if(!this.image_map){
+      return false;
+    }
+    if(typeof(this.attributeSelectors.selected_attributes[select.attr('name')]) == 'undefined'){
+      return false;
+    }
+    return (typeof(this.image_map['attribute'][this.attributeSelectors.selected_attributes[select.attr('name')]]) != 'undefined');
+  },
+
+  hasNoImageMapped: function(seq) {
+    return typeof(this.image_map.sequence[seq]) == 'undefined';
+  },
+
+  getAttributesForImage: function(seq) {
+    return this.image_map.sequence[seq];
+  }
+};
+/* END build/nmr.add-item.js */
+
+
+/* START build/nmr.attribute-selectors.js */
+
+NMR.attributeSelectors = {
+
+  selects: [],
+  selected_attributes: {},
+
+  init: function(attributes) {
+
+    this.item_ids = attributes;
+    this.addItem = NMR.addItem;
+
+    this.registerElements();
+    this.prepareAttributes();
+    this.bindSelectors();
+    this.setDefaultAttributes();
+  },
+
+  registerElements: function() {
+    this.context = $('#products_view .select-cascade');
+    this.selectors = this.context.find('select');
+    this.product_item_id = $('#add_item_product_item_id');
+  },
+
+  setDefaultAttributes: function() {
+    var self = this;
+    this.selectors.each(function(){
+      if(self.hasOneOption($(this))){
+        self.selectFirstOption($(this));
+      }
+    });
+
+    if(this.allAttributesSelected()){
+      this.setProductItemIdFromSelectedAttributes();
+      this.checkAvailability();
+    }
+  },
+
+  bindSelectors: function() {
+    var self = this;
+    this.selectors.change(function() {
+      self.selectAttribute($(this));
+    });
+  },
+
+  selectAttribute: function(select) {
+
+    this.addItem.resetMessage();
+
+    this.setCurrentAttribute(select);
+    this.prepareNextSelector(select);
+
+    if(this.addItem.shouldSelectImage(select)){
+      this.selectImageByAttribute(select);
+    }
+
+    if(this.allAttributesSelected()){
+      this.setProductItemIdFromSelectedAttributes();
+      this.checkAvailability();
+    }else{
+      this.setProductItemId('');
+    }
+  },
+
+  prepareNextSelector: function(select) {
+    var self = this, next, key, attribute, ids, i;
+    var select_ids = this.itemIdsFromAttribute(select);
+
+    if (select.prev('select').length == 1) {
+      select_ids = this.getSelectIDs(select.prev('select'));
+    }
+
+    if(select.next('select').length == 1){
+      next = select.next('select');
+      key = next.attr('name');
+      next.prop('disabled', false).find('option').not(':first').prop('disabled', true).each(function() {
+
+        attribute = $(this).text();
+        ids = self.item_ids[key][attribute];
+
+        for(i=0;i<ids.length;i++){
+          //enable options that are available
+          if ($.inArray(ids[i], select_ids) !== -1){
+            $(this).prop('disabled', false);
+          }
+          if(typeof self.selected_attributes[key] != 'undefined' && attribute == self.selected_attributes[key]){
+            $(this).prop('selected', 'selected');
+          }
+        }
+      });
+    }
+  },
+
+  findGroupByAttributeName: function(attribute){
+    var group, attr;
+    for(group in this.item_ids){
+      for(attr in this.item_ids[group]){
+        if(attr == attribute){
+          return group;
+        }
+      }
+    }
+    return false;
+  },
+
+  selectAttributeOption: function(group, attribute) {
+    var k, option;
+    var select = this.context.find("select[name="+group+"]");
+    for(k in this.item_ids[group]){
+      option = select.prop('disabled', false).find('option:contains("'+ attribute +'")');
+      if(attribute == k){
+        select.prop('disabled', false);
+        option.prop('selected', 'selected');
+        select.prop('selectedIndex', option.index());
+        this.selected_attributes[select.attr('name')] = attribute;
+      }
+    }
+  },
+
+  selectAttributesByImageSequence: function(seq) {
+    var k, group, attributes;
+
+    if(this.addItem.hasNoImageMapped(seq)){
+      this.resetAttributes(this.selectors);
+      this.setProductItemId('');
+      return;
+    }
+
+    attributes = this.addItem.getAttributesForImage(seq);
+
+    for(k=0;k<attributes.length;k++){
+      group = this.findGroupByAttributeName(attributes[k]);
+      if(group){
+        this.selectAttributeOption(group, attributes[k]);
+      }else{
+        //bad mapping or doesn't exist
+        this.resetAttributes(this.selectors);
+        this.setProductItemId('');
+      }
+    }
+
+    if(this.allAttributesSelected()){
+      this.setProductItemIdFromSelectedAttributes();
+    }
+  },
+
+  allAttributesSelected: function() {
+    var i, is_complete = true;
+    for(i=0;i<this.selectors.length;i++){
+      if($(this.selectors[i]).val() == ""){
+        is_complete = false;
+        break;
+      }
+    }
+    return is_complete;
+  },
+
+  validate: function(){
+    for (var i=0;i<this.selectors.length;i++){
+      var select = $(this.selectors[i]);
+      if(select.val() == ""){
+        select.addClass('error').prop('disabled', false).focus();
+        this.addItem.displayMessage('error', 'Please make a selection');
+        return false;
+      }
+    }
+    return true;
+  },
+
+  checkAvailability: function(){
+    var is_valid = true;
+    var self = this;
+    this.selectors.each(function(){
+      var select = $(this);
+      select.find('option').each(function(){
+        if($(this).prop('selected') && $(this).prop('disabled')){
+          select.addClass('error').prop('disabled', false).focus();
+          self.addItem.displayMessage('error', $(this).text() + ' is sold out');
+          is_valid = false;
+          return false;
+        }
+      });
+    });
+    return is_valid;
+  },
+
+
+  setProductItemId: function(item_id) {
+    this.addItem.product_item_id.val(item_id);
+    this.addItem.new_item.item_id = item_id
+  },
+
+  itemIdsFromAttribute: function(select) {
+    var attribute = select.attr('name');
+    var key = select.find('option:selected').val();
+    if(typeof(this.item_ids[attribute][key]) !== 'undefined'){
+      return this.item_ids[attribute][key];
+    }
+    return [];
+  },
+
+  getSelectIDs: function(select) {
+
+    var i, idx;
+    var ids = this.itemIdsFromAttribute(select);
+    var count = ids.length;
+
+    for(i=0;i<count;i++){
+      idx = $.inArray(ids[i], ids);
+      if (idx == -1) {
+        ids.splice(idx, 1);
+      }
+    }
+
+    return ids;
+  },
+
+  selectImageByAttribute: function() {
+    var i, k, d, j, select, hit, idx, idxs, selected_idx = false, key, map = {}, sorted_idx = [];
+    var thumb;
+
+    for (i=0;i<this.selectors.length;i++){
+      select = $(this.selectors[i]);
+      key = this.selected_attributes[select.attr('name')];
+      if(key != "" && typeof this.addItem.image_map.attribute[select.val()] !== 'undefined') {
+        idxs = this.addItem.image_map.attribute[select.val()];
+        for(j=0;j<idxs.length;j++){
+          idx = parseInt(idxs[j], 10);
+          if(typeof map[idx] != 'undefined'){
+            map[idx]++;
+          }else{
+            map[idx] = 0;
+          }
+        }
+      }
+    }
+
+    if(this.objCount(map) == 1){
+      for(var o in map){
+        selected_idx = o;
+        break;
+      }
+    }else{
+      for(k in map){
+        sorted_idx.push(map[k]);
+      }
+      hit = sorted_idx.sort(function(a,b){return a-b}).pop();
+      if(hit > 0){
+        for (d in map){
+          if(map[d] == hit){
+            selected_idx = d;
+            break;
+          }
+        }
+      }
+    }
+
+    if(selected_idx !== false){
+      thumb = this.addItem.context.find('.images .thumbs img[index='+ selected_idx + ']');
+      if(!thumb.hasClass('selected')){
+        this.addItem.selectImage(thumb);
+      }
+    }
+  },
+
+  setProductItemIdFromSelectedAttributes: function() {
+    var i, k, values, id, idx, hit;
+    var id_map = {}, sorted_ids = [];
+
+    for(k in this.selected_attributes){
+      values = this.item_ids[k][this.selected_attributes[k]];
+      for(i=0;i<values.length;i++){
+        idx = parseInt(values[i], 10);
+        if(typeof id_map[idx] != 'undefined'){
+          id_map[idx]++;
+        }else{
+          id_map[idx] = 0;
+        }
+      }
+    }
+
+    if(this.objCount(id_map) == 1){
+      for(id in id_map){
+        this.setProductItemId(id);
+        return;
+      }
+    }
+
+    for(id in id_map){
+      sorted_ids.push(id_map[id]);
+    }
+
+    hit = sorted_ids.sort(function(a,b){return a-b}).pop();
+    if(hit > 0){
+      for (var item_id in id_map){
+        if(id_map[item_id] == hit){
+          this.setProductItemId(item_id);
+          return;
+        }
+      }
+    }
+
+    this.setProductItemId('');
+  },
+
+  prepareAttributes: function() {
+    for(var i=0;i<this.selectors.length;i++){
+      this.selected_attributes[$(this.selectors[i]).attr('name')] = '';
+    }
+  },
+
+  resetAttributes: function(selects) {
+    var select, attribute;
+    for (var i=0;i<selects.length;i++){
+      select = $(selects[i]).prop({disabled: false, selectedIndex:0});
+      attribute = select.attr('name');
+      this.selected_attributes[attribute] = '';
+    }
+    this.setProductItemId('');
+  },
+
+  setCurrentAttribute: function(select) {
+    this.selected_attributes[select.attr('name')] = select.val();
+  },
+
+  hasOneOption: function(select) {
+    return select.find('option').length == 2;
+  },
+
+  selectFirstOption: function(select) {
+    select.prop('selectedIndex', 1);
+    select.find('option').eq(1).prop('selected', 'selected');
+    this.setCurrentAttribute(select);
+  },
+
+  singleAttributeWithSingleOption: function() {
+    return (this.selectors.length == 1) && (this.selectors.eq(0).find('option').length == 2);
+  },
+
+  objCount: function(obj) {
+    var c = 0, o;
+    for (o in obj) {
+      c++;
+    }
+    return c;
+  }
+};
+/* END build/nmr.attribute-selectors.js */
+
+
+/* START build/nmr.checkout.js */
+
+NMR.checkout = {
+  init: function(options) {
+
+    this.billing_address_list = options.billing_addresses;
+    this.shipping_address_list = options.shipping_addresses;
+    this.credit_card_list = options.credit_cards;
+
+    this.submit_order_clicks = 0;
+
+    this.registerHandles();
+    this.decorateRows();
+    this.bindEvents();
+    this.updateCartTax();
+
+    if(!this.alternate.is(':checked')) {
+      this.shipping.find(':input').not('#shipping_address_alternate').prop('readonly', true).prop('disabled', true);
+      this.shipping_layout.addClass('disabled');
+    }
+
+    this.updateCreditCardDisplay(this.one_click_credit_card);
+    this.changePaymentMethod(0);
+
+    if(this.one_click_billing.find('option').length > 1) {
+      this.one_click_billing.parent().parent().show();
+    }
+
+    if (this.one_click_shipping.find('option').length > 1) {
+      this.one_click_shipping.parent().parent().show();
+    }
+
+    if (this.one_click_credit_card.find('option').length > 1) {
+      this.one_click_credit_card.parent().parent().show();
+    }
+
+    NMR.cart.updateUDO('link');
+  },
+
+  registerHandles: function() {
+
+    this.checkout = $('#checkout');
+
+    this.billing = this.checkout.find('.address .billing');
+    this.shipping = this.checkout.find('.address .shipping');
+    this.shipping_layout = this.shipping.find(".layout");
+    this.alternate = $('#shipping_address_alternate');
+
+    this.one_click_checkbox = $("#one-click-checkbox");
+    this.one_click_billing = $('#one_click_billing_address_id');
+    this.one_click_shipping = $('#one_click_shipping_address_id');
+    this.one_click_store_this = $('#one_click_store_this');
+    this.one_click_credit_card = $('#one_click_credit_card_id');
+    this.no_canadian_shipping = $("#no-canadian-shipping");
+
+    this.billing_state = $("#billing_address_state").removeAttr('required');
+    this.billing_postal_code = $("#billing_address_postal_code");
+
+    this.shipping_state = $("#shipping_address_state").removeAttr('required');
+    this.shipping_postal_code = $("#shipping_address_postal_code");
+
+    //credit card section
+    this.cvv = $('#payment_information_cvv2');
+    this.expiry_month = $('#payment_information_expiry_month');
+    this.expiry_year = $('#payment_information_expiry_year');
+
+    this.input_credit_card = $('#input_credit_card');
+    this.input_paypal_checkout = $('#input_paypal_checkout');
+
+    this.payment_information_number = $('#payment_information_number');
+    this.payment_information_card_association_id = $('#payment_information_card_association_id');
+    this.payment_method_credit_card = $('#payment_method_credit_card');
+    this.payment_method_paypal_cc = $('#payment_method_paypal_cc');
+    this.payment_method_paypal_checkout = $('#payment_method_paypal_checkout');
+    this.payment_method_container = $("#payment_method_container");
+
+    this.submit_order = $("#submit_order");
+    this.submit_order_button = $('#submit_order_button');
+  },
+
+  bindEvents: function() {
+    var self = this;
+    this.billing_postal_code.bind('paste', function(e){
+      var input = $(e.target);
+      setTimeout(function() {
+        self.performAutoFill(input);
+      }, 100);
+    }).blur(function() {
+      self.performAutoFill($(this));
+    });
+
+    this.shipping_postal_code.bind('keyup', function() {
+      if($(this).val().length >= 5){
+        self.performAutoFill($(this));
+      }
+    });
+
+    this.billing.find(':input').bind('keyup change', function() {
+      if (!$(this).attr('id').match(/^one_click/)) {
+        self.one_click_billing.val(0);
+      }
+      if (!self.alternate.is(':checked')) {
+        self.one_click_shipping.val(0);
+        self.cloneAddress(self.billing, self.shipping, $(this));
+      }
+    });
+
+    this.shipping.find(':input').bind('keyup change', function () {
+      // Reset one click to prevent using existing address, when modifications have been made
+      if (self.alternate.is(':checked') && !$(this).attr('id').match(/^one_click/)) {
+        self.one_click_shipping.val(0);
+      }
+    });
+
+    this.one_click_billing.change(function() {
+      self.updateAddressDisplay($(this));
+
+      if($(this).val() == '' && !self.alternate.is(':checked')){
+        self.handleShippingAddress();
+        return;
+      }
+
+      if($(this).val() == self.one_click_shipping.val()){
+        self.alternate.prop('checked', false);
+        self.handleShippingAddress();
+        return;
+      }
+
+      if(!self.alternate.is(':checked')){
+        if(self.shipping_address_list[$(this).val()]){
+          self.cloneAddress(self.billing, self.shipping);
+        }else{
+          self.alternate.prop('checked', true);
+          self.handleShippingAddress();
+        }
+      }
+    });
+
+    this.one_click_shipping.change(function () {
+      self.updateAddressDisplay($(this));
+      if($(this).val() != '' && $(this).val() == self.one_click_billing.val()){
+        self.alternate.prop('checked', false);
+        self.handleShippingAddress();
+      }else if(self.alternate.is(':checked')) {
+        self.updateTax();
+      }
+    });
+
+    this.alternate.click(function() {
+      self.handleShippingAddress();
+    });
+
+    this.one_click_credit_card.change(function () {
+      self.updateCreditCardDisplay($(this));
+      self.payment_information_number.focus();
+    });
+
+    if(this.one_click_credit_card.find('option').length <= 1) {
+      this.one_click_store_this.prop('disabled', false).parents('div').css({display: 'block'});
+    }
+
+    this.payment_method_container.find('input[type="radio"]').change(function() {
+      self.changePaymentMethod(1);
+    });
+
+    this.input_credit_card.find('.credit_card_img').click(function(){
+      self.resetCreditCardSelection();
+      $(this).css({border: "1px solid #8DC63F"});
+    });
+
+    //Auto select credit card type
+    this.payment_information_number.bind('keyup',function(){
+      self.selectCardType($(this));
+    });
+
+    this.submit_order.submit(function () {
+      self.submitOrder();
+    });
+  },
+
+  checkPaymentInput: function(idx) {
+    $('input[name=payment_information\\[card_association_id\\]]:eq('+ idx+')').prop('checked', true).prev().children('img').css({border: "1px solid #8DC63F"});
+  },
+
+  selectCardType: function(elem) {
+    if(elem.val().length && elem.val().length == 1){
+      this.resetCreditCardSelection();
+      switch(elem.val().charAt(0)){
+        case "4":
+          this.checkPaymentInput(0);
+          break;
+        case "5":
+          this.checkPaymentInput(1);
+          break;
+        case "3":
+          this.checkPaymentInput(2);
+          break;
+        case "6":
+          this.checkPaymentInput(3);
+          break;
+        default:
+          break;
+      }
+    }
+  },
+
+  resetCreditCardSelection: function() {
+    this.input_credit_card.find('.credit_card_img').css({border: "1px solid #F7F7F7"});
+  },
+
+  decorateRows: function() {
+    $('.layout').each(function () {
+      $('> div:odd', this).removeClass('even').addClass('odd');
+      $('> div:even', this).removeClass('odd').addClass('even');
+      $('> tbody > tr:odd', this).removeClass('even').addClass('odd');
+      $('> tbody > tr:even', this).removeClass('odd').addClass('even');
+    });
+  },
+
+  performAutoFill: function(elem) {
+
+    var zip = elem.val().toUpperCase();
+    var address_type =  (elem.attr('id') == "billing_address_postal_code") ? "billing" : "shipping";
+
+    if(zip.length >= 5){
+      if(/^\d{5}(-\d{4})?$/.test(zip)){
+        this.one_click_checkbox.show();
+        this.no_canadian_shipping.hide();
+        this.autoFillAddressFields("US", zip, address_type);
+      }else if(/^[ABCEGHJKLMNPRSTVXY]\d[ABCEGHJKLMNPRSTVWXYZ]( )?\d[ABCEGHJKLMNPRSTVWXYZ]\d$/i.test(zip)){
+        this.alternate.prop('checked', true);
+        this.one_click_checkbox.hide();
+        this.no_canadian_shipping.show();
+        this.autoFillAddressFields("CA", zip, address_type);
+      }
+
+      if(address_type == "billing_address_postal_code"){
+        this.handleShippingAddress();
+      }
+    }
+  },
+
+  autoFillAddressFields: function(countryCode, zip, addressType) {
+    var self = this;
+    var countryData = { "CA": 124, "US": 840 };
+    var state_select = $("#" + addressType + "_address_state");
+
+    $("#" + addressType + "_address_country").val(countryData[countryCode]).change();
+
+    $.ajax({
+      url: "/shopping_carts/ziptastic",
+      data: { countryCode: countryCode, zip:zip },
+      dataType: "json",
+      type: "GET",
+      success: function(data) {
+
+        if(!data){
+          return;
+        }
+
+        if(data.city){
+          $("#" + addressType + "_address_city").val(data.city);
+        }
+
+        if(data.state){
+          state_select.find('option').each(function(idx, option){
+            if(option.text == data.state){
+              state_select.val(option.value);
+              $(option).prop('selected', true);
+              return false;
+            }
+          });
+        }
+
+        if(countryCode == "US"){
+          if(addressType == "billing" && !self.alternate.is(":checked")){
+            self.cloneAddress(self.billing, self.shipping);
+          }else if(addressType == "shipping"){
+            self.updateTax();
+          }
+        }
+      },
+      error: function(jqXHR){
+        if(jqXHR.status == "404"){
+          //alert("Could not find a location for " + zip);
+        }
+        self.resetAutoFillableAddressFields(addressType);
+      }
+    });
+  },
+
+  cloneAddress: function (from, to, field) {
+    var self = this;
+    // Loop through inputs
+    from.find(':input:not([id*="temp"])').each(function (index, elem) {
+      var from_field = $(elem), to_field;
+      var field_name = from_field.attr('id').split('_address_')[1];
+
+      if (field_name == 'id') {
+        to_field = self.one_click_shipping;
+      }else {
+        to_field = $('#shipping_address_' + field_name);
+      }
+
+      // If field is specified, only update the field
+      if (field && field.attr('id') != from_field.attr('id')) {
+        return true;
+      }
+
+      // If both fields are present, clone value
+      if (from_field && to_field) {
+        $(to_field).val($(from_field).val());
+        if(field_name == 'state') {
+          self.updateTax();
+        }
+      }
+    });
+  },
+
+  updateTax: function() {
+    if(this.shipping_postal_code.val().length >= 5) {
+      this.updateCartTax();
+      $.ajax({
+        type: 'POST',
+        data: 'state=' + this.shipping_state.val() + '&zip=' + this.shipping_postal_code.val(),
+        url: '/shopping_carts/get_sales_tax_jxhrq',
+        success: function(result) {
+          NMR.cart.overrideCartTax(result);
+        }
+      });
+    }
+  },
+
+  updateCartTax: function() {
+    var address_id = this.one_click_shipping.val();
+    if(address_id){
+      NMR.cart.tax_rate = this.shipping_address_list[address_id]['tax_rate'];
+    }else{
+      NMR.cart.tax_rate = 0;
+    }
+
+    NMR.cart.updateSummary();
+  },
+
+  resetAutoFillableAddressFields: function(addressType) {
+    $("#" + addressType + "_address_state").val("");
+    $("#" + addressType + "_address_city").val("");
+    $("#" + addressType + "_address_country").val("");
+  },
+
+  handleShippingAddress: function() {
+    if(this.alternate.is(':checked')) {
+      this.shipping.find(':input').not('#shipping_address_alternate').removeAttr('readonly').removeAttr('disabled').val('');
+      this.shipping_layout.removeClass('disabled');
+    }else{
+      // Clone Billing fields to Shipping while disabled, for consistency
+      this.cloneAddress(this.billing, this.shipping);
+      this.shipping.find(':input').not('#shipping_address_alternate').prop('readonly', true).prop('disabled', true);
+      this.shipping_layout.addClass('disabled');
+    }
+  },
+
+  updateAddressDisplay: function (elem) {
+    var element = $(elem), address;
+
+    if(element.attr('id') == 'one_click_billing_address_id'){
+      address = this.billing_address_list[element.val()];
+    }else{
+      address = this.shipping_address_list[element.val()];
+    }
+
+    var layout = element.parents('.layout');
+    $.each(['first_name', 'last_name', 'street', 'street_cont', 'city', 'state', 'country', 'postal_code', 'phone_number'], function (index, field) {
+      var f = $('[id$="' + field + '"]', layout);
+      if (address) {
+        if (f.length && address[field]) {
+          f.val(address[field]);
+        }
+      } else {
+        f.val('');
+      }
+    });
+  },
+
+  updateCreditCardDisplay: function(element) {
+
+    var top = element.parent().parent().parent();
+    var credit_card = this.credit_card_list[element.val()];
+
+    if (credit_card) {
+      this.expiry_month.val(credit_card['expiry_month']);
+      this.expiry_year.val(credit_card['expiry_year']);
+    } else if (!this.expiry_month.val() && !this.expiry_year.val()) {
+      this.expiry_month.val('');
+      this.expiry_year.val('');
+    }
+
+    if (element.length > 1 || element.val() > 0) {
+      this.one_click_store_this.prop('disabled', true);
+      $(top).find('.cc-hide').hide();
+    } else {
+      this.one_click_store_this.prop('disabled', false);
+      $(top).find('.cc-hide').show();
+      // Only show CVV box for authnet transaction
+      if (element.val() > 835907) {
+        $('.credit_card .cvv').hide();
+      }
+    }
+  },
+
+  changePaymentMethod: function(payment_method) {
+
+    if(this.payment_method_credit_card.is(':checked')) {
+      this.input_credit_card.show();
+      this.input_credit_card.find('.input_one_click_store').show();
+      this.input_paypal_checkout.hide();
+      this.payment_information_card_association_id.find('option[value=""]').prop('selected', true);
+      this.updateCreditCardDisplay(this.one_click_credit_card);
+
+      if(typeof(payment_method)==='undefined'){
+        payment_method = 0;
+      }
+
+      if(payment_method == 1) {
+        this.payment_information_number.focus();
+      }
+
+    } else if (this.payment_method_paypal_cc.is(':checked')) {
+      $('#input_credit_card, #input_credit_card div.layout div').show();
+      this.input_paypal_checkout.hide();
+      this.input_paypal_checkout.find('.input_one_click_store').hide();
+      this.one_click_store_this.prop('disabled', true);
+      this.payment_information_card_association_id.find('option[value=""]').prop('selected', true);
+    } else if (this.payment_method_paypal_checkout.is(':checked')) {
+      this.input_credit_card.hide();
+      this.input_paypal_checkout.show();
+    }
+  },
+
+  submitOrder: function() {
+    if (this.submit_order_clicks > 1 || this.submit_order_button.prop('disabled')){
+      return false;
+    }
+
+    this.submit_order_clicks++;
+    this.submit_order_button.prop('disabled', true);
+
+    if(this.billing_state.val() == ""){
+      //hack for IE's lack of <optgroup> support when using 'required' attribute
+      this.submit_order_clicks = 0;
+      alert('Please select a region');
+      this.submit_order_button.prop('disabled', false);
+      this.billing_state.focus().click();
+      return false;
+    }
+
+    if(this.shipping_state.val() == ""){
+      //hack for IE's lack of <optgroup> support when using 'required' attribute
+      this.submit_order_clicks = 0;
+      alert('Please select a region');
+      this.submit_order_button.prop('disabled', false);
+      this.shipping_state.focus().click();
+      return false;
+    }
+
+    var processing = $('<div id="processing"><h1>Your order is processing...</h1></div>').appendTo('body');
+    processing.overlay({
+      top: 100,
+      mask: {
+        color: '#444444',
+        load: true,
+        loadSpeed: 600,
+        opacity: .4
+      },
+      closeOnClick: false,
+      closeOnEsc: false,
+      load: true
+    });
+  }
+};
+/* END build/nmr.checkout.js */
+
+
+/* START build/nmr.auth-modal.js */
+
+NMR.authModal = {
+  init: function(should_display_popup) {
+
+    this.modal = $("#auth-modal");
+    this.modal_content = $("#auth-modal-content");
+
+    this.login_modal_template = Handlebars.templates['login-modal-template'];
+    this.register_modal_template = Handlebars.templates['register-modal-template'];
+
+    this.auth_templates = {
+      "login-modal": this.login_modal_template,
+      "register-modal": this.register_modal_template
+    };
+
+    this.configureDialog();
+    this.bindClicks();
+
+    //daily popups
+    if(should_display_popup){
+      this.open('register-modal');
+    }
+  },
+
+  configureDialog: function() {
+    var self = this;
+    this.modal.dialog({
+      closeOnEscape: true,
+      draggable: false,
+      dialogClass: "no-title-bar",
+      modal: true,
+      autoOpen: false,
+      resizable: false,
+      width: 555
+    });
+  },
+
+  bindClicks: function() {
+
+    var self = this;
+
+    $(".account.overlay").click(function(){
+      self.open($(this).data('modal-class'));
+      if($(this).hasClass('forgotpwd')){
+        self.showForgotPassword();
+      }
+      return false;
+    });
+
+    this.modal.on('click', '.account', function(){
+      self.open($(this).data('modal-class'));
+      return false;
+    });
+
+    this.modal.on('click', '.forgot-pwd-link', function(){
+      self.showForgotPassword();
+      return false;
+    });
+
+    this.modal.on('click', '.fb-login', function(){
+      FB.login(function(){}, {scope: 'email, publish_stream'});
+      return false;
+    });
+  },
+
+  showForgotPassword: function(){
+    this.modal.find("#login-form").hide();
+    this.modal.find("#forgot-pwd").show();
+    var typed_email = $("#login_email_address", self.modal).val();
+    var reset_email_field = $("#password_reset_email_address", self.modal);
+    if(typed_email != ""){
+      reset_email_field.val(typed_email);
+    }
+    reset_email_field.focus();
+  },
+
+  open: function(modalClass) {
+    this.modal.dialog('option', 'dialogClass', modalClass);
+
+    if(modalClass == 'register-modal'){
+      this.modal.dialog('option', 'height', 515);
+    }else{
+      this.modal.dialog('option', 'height', 470);
+    }
+
+    this.modal_content.html(this.auth_templates[modalClass]());
+    this.modal.dialog('open');
+    return false;
+  }
+};
+
+/* END build/nmr.auth-modal.js */
+
+
+/* START build/nmr.social.js */
+
+NMR.social = {
+
+  init: function(options){
+
+    this.authenticated = options.authenticated;
+    this.fbconnected = false;
+
+    if(!this.authenticated){
+      this.bindLogin();
+    }
+
+    this.bindLoginStatusChange();
+    this.bindClicks();
+  },
+
+  bindClicks: function() {
+    $(".fb-logout").click(function() {
+      SL.push(['getFacebookLoginStatus', function(response, signature) {
+        if (typeof response != 'undefined') {
+          SL.push(['logUserOutOfFacebook', function() {
+            window.location.href = "/customers/logout";
+          }]);
+        }else{
+          window.location.href = "/customers/logout";
+        }
+      }]);
+      return false;
+    });
+  },
+
+  bindLogin: function(){
+
+    var self = this;
+
+    SL.push(['onFacebookLogin', function (response, sig_base64) {
+
+      if (typeof response == 'undefined' || typeof sig_base64 == 'undefined') {
+        return;
+      }
+      $.ajax({
+        url: "/customers/facebook_connect",
+        type: "POST",
+        data: {
+          payload: response,
+          signature: sig_base64
+        },
+        success: function (result) {
+          if(result.status == 0 && !self.authenticated){
+            if(result.redirect  == "/"){
+              window.location.href = window.location.href;
+            }else{
+              window.location.href = result.redirect;
+            }
+          }
+        }
+      });
+    }]);
+  },
+
+  bindLoginStatusChange: function(){
+    var self = this;
+    SL.push(['getFacebookLoginStatus', function (response, sig_base64) {
+
+      if (typeof response == 'undefined' || typeof sig_base64 == 'undefined' || self.authenticated) {
+        return;
+      }
+
+      $.ajax({
+        url: "/customers/facebook_connect",
+        type: "POST",
+        data: {
+          payload: response,
+          signature: sig_base64
+        },
+        success: function (result) {
+          if(result.status == 0 && !self.authenticated){
+            if(result.redirect == "/"){
+              window.location.href = window.location.href;
+            }else{
+              window.location.href = result.redirect;
+            }
+          }
+        }
+      });
+    }]);
+  }
+};
+/* END build/nmr.social.js */
+

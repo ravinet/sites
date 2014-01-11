@@ -1,0 +1,20 @@
+PHTTP66.117.23.100"í
+µGET /m2/wpni/mbox/standard?mboxHost=www.washingtonpost.com&mboxSession=1389366341674-752581&mboxPage=1389366341674-752581&screenHeight=1200&screenWidth=1920&browserWidth=937&browserHeight=1051&browserTimeOffset=-300&colorDepth=24&mboxCount=1&loggedIn=false&pageType=&subSection=washingtonpost.com&pageName=&mbox=global&mboxId=0&mboxTime=1389348341990&mboxURL=http%3A%2F%2Fwww.washingtonpost.com%2F&mboxReferrer=&mboxVersion=44 HTTP/1.1
+Host: wpni.tt.omtrdc.net
+Connection: keep-alive
+Accept: */*
+vUser-Agent: Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/31.0.1650.63 Safari/537.36
+)Referer: http://www.washingtonpost.com/
+$Accept-Encoding: gzip,deflate,sdch
+!Accept-Language: en-US,en;q=0.8
+
+*£
+
+HTTP/1.1 200 OK
+pragma: no-cache
+2Content-Type: text/javascript;charset=ISO-8859-1
+Content-Length: 1131
+%Date: Fri, 10 Jan 2014 15:05:28 GMT
+Server: Test & Target
+í
+var mboxCurrent=mboxFactories.get('default').get('global',0);mboxCurrent.setEventTime('include.start');document.write('<div style="visibility: hidden; display: none" id="mboxImported-default-global-0">');document.write('<!-- Offer Id: 67755  --><script type=\"text\/javascript\">\r\n\/*T&T to SiteCat v4.1 ==>Response Plugin*\/\r\nwindow.s_tnt = window.s_tnt || \'\', tntVal = \'::,\';\r\nif (window.s_tnt.indexOf(tntVal) == -1) {\r\n    window.s_tnt += tntVal\r\n}\r\nif (typeof mboxCurrent != \'undefined\' && mboxCurrent.getFetcher().getType() == \'ajax\'  && (window.s && window.s.tl)) {\r\n   var ltv = s.linkTrackVars;\r\n   var lte = s.linkTrackEvents;\r\n   s.linkTrackVars = \'None\';\r\n   s.linkTrackEvents = \'None\';\r\n   s.tl(\'TnT\', \'o\', \'TnT\');\r\n   s.linkTrackVars = ltv;\r\n   s.linkTrackEvents = lte;\r\n}\r\n<\/script>');mboxFactories.get('default').get('global',0).setOffer(new mboxOfferDefault()).loaded();document.write('</div>');mboxCurrent.setEventTime('include.end');mboxFactories.get('default').get('global',0).loaded();mboxFactories.get('default').getPCId().forceId("1389366341674-752581.25_29");

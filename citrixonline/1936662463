@@ -1,0 +1,24 @@
+PHTTP209.167.231.15"Î
+jGET /visitor/v200/svrGP.aspx?pps=3&siteid=607&ref2=http%3A//www.citrixonline.com/&tzo=300&ms=98 HTTP/1.1
+Host: now.eloqua.com
+Connection: keep-alive
+Accept: image/webp,*/*;q=0.8
+vUser-Agent: Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/31.0.1650.63 Safari/537.36
+IReferer: http://www.citrixonline.com/collaboration/online_collaboration
+$Accept-Encoding: gzip,deflate,sdch
+!Accept-Language: en-US,en;q=0.8
+
+*Þ
+HTTP/1.1 302 Found
+Cache-Control: private
+(Content-Type: text/html; charset=utf-8
+ˆLocation: http://now.eloqua.com/visitor/v200/svrGP.aspx?pps=3&siteid=607&ref2=http%3A//www.citrixonline.com/&tzo=300&ms=98&elqCookie=1
+‡Set-Cookie: ELOQUA=GUID=CAC729C908BE4DA7A4FB828CE426278A; domain=.eloqua.com; expires=Sat, 09-Jan-2016 00:57:49 GMT; path=/; HttpOnly
+]Set-Cookie: ELQSTATUS=OK; domain=.eloqua.com; expires=Sat, 09-Jan-2016 00:57:49 GMT; path=/
+FP3P: CP="IDC DSP COR DEVa TAIa OUR BUS PHY ONL UNI COM NAV CNT STA",
+%Date: Thu, 09 Jan 2014 00:57:49 GMT
+Content-Length: 261
+‡
+<html><head><title>Object moved</title></head><body>
+<h2>Object moved to <a href="http://now.eloqua.com/visitor/v200/svrGP.aspx?pps=3&amp;siteid=607&amp;ref2=http%3A//www.citrixonline.com/&amp;tzo=300&amp;ms=98&amp;elqCookie=1">here</a>.</h2>
+</body></html>

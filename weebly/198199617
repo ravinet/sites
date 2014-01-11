@@ -1,0 +1,27 @@
+PHTTP23.202.207.180"ß
+!GET /rt/425551?p=49811 HTTP/1.1
+ Host: www.adreadytractions.com
+Connection: keep-alive
+Accept: */*
+vUser-Agent: Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/31.0.1650.63 Safari/537.36
+©Referer: http://www.weebly.com/editor/apps/tracking_frame_static.php?tracking_type=static&tracking_extra=0&transaction_id=0&amount=0&service_id=0&period=0&trigger=home
+$Accept-Encoding: gzip,deflate,sdch
+!Accept-Language: en-US,en;q=0.8
+
+*ý
+HTTP/1.1 200 OK
+&Cache-Control: max-age=43200, public
+.Content-Type: text/javascript; charset=utf-8
+*ETag: "9493d418bc2549b1e63bf7f5dbde2480"
+éP3P: policyref="http://www.adreadytractions.com/w3c/p3p.xml", CP="NOI DEVa PSAa PSDa IVAa IVDa OTPa OUR OTRa IND OTC", policyref="http://www.adreadytractions.com/w3c/p3p.xml", CP="NOI DEVa PSAa PSDa IVAa IVDa OTPa OUR OTRa IND OTC"
+Server: Apache
+Status: 304 Not Modified
+Vary: X-Forwarded-Proto
+X-Runtime: 14
+Content-Length: 323
+%Date: Thu, 09 Jan 2014 00:44:38 GMT
+Connection: keep-alive
+Å
+document.writeln("<img src=\"http://ads.yahoo.com/pixel?id=2376089&t=2\" width=\"1\" height=\"1\" />");
+document.writeln("<img src=\"http://ads.yahoo.com/pixel?id=2379118&t=2\" width=\"1\" height=\"1\" />");
+document.writeln("<img src=\"http://a.adready.com/beacon.php?r=49811\" height=\"1\" width=\"1\" border=\"0\" />");

@@ -1,0 +1,25 @@
+PHTTP199.27.72.129"à
+GET / HTTP/1.1
+Host: www.gizmodo.com
+Connection: keep-alive
+TAccept: text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8
+vUser-Agent: Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/31.0.1650.63 Safari/537.36
+$Accept-Encoding: gzip,deflate,sdch
+!Accept-Language: en-US,en;q=0.8
+
+*ù
+ HTTP/1.1 301 Moved Permanently
+Location: http://gizmodo.com/
+x-cdn-fetch: mantle-default
+Content-Length: 0
+Accept-Ranges: bytes
+%Date: Thu, 09 Jan 2014 01:13:41 GMT
+Via: 1.1 varnish
+	Age: 16
+Connection: keep-alive
+X-Served-By: cache-v43-ASH
+X-Cache: HIT
+X-Cache-Hits: 2
+(X-Timer: S1389230021.812003136,VS0,VE0
+x-cdn-view: mantle-root
+

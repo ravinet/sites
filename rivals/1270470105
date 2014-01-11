@@ -1,0 +1,39 @@
+PHTTP8.27.149.126"É
+GET /js/IEObj.js HTTP/1.1
+Host: vmedia.rivals.com
+Connection: keep-alive
+Accept: */*
+vUser-Agent: Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/31.0.1650.63 Safari/537.36
+!Referer: http://www.rivals.com/
+$Accept-Encoding: gzip,deflate,sdch
+!Accept-Language: en-US,en;q=0.8
+
+*ç
+
+HTTP/1.1 200 OK
+%Date: Thu, 09 Jan 2014 01:49:55 GMT
+(Expires: Thu, 09 Jan 2014 02:53:12 GMT
+.Last-Modified: Wed, 07 Jun 2006 19:46:19 GMT
+(Content-Type: application/x-javascript
+ETag: "dbe17c6b8ac61:37d"
+Accept-Ranges: bytes
+Server: Microsoft-IIS/6.0
+X-Powered-By: ASP.NET
+Cache-Control: max-age=86400
+Content-Length: 1025
+ƒ
+function RunObj(Poll)
+{
+document.write ('<object classid="clsid:d27cdb6e-ae6d-11cf-96b8-444553540000"  codebase="http://fpdownload.macromedia.com/pub/shockwave/cabs/flash/swflash.cab#version=6,0,0,0" width="240" height="260" id="channels_fballpoll" align="middle">\n');
+document.write ('<param name="allowScriptAccess" value="sameDomain" />\n');
+document.write ('<param name="movie" value="http://vmedia.rivals.com/images/rivalschannel/www_poll.swf' + Poll + '"/>\n');
+document.write ('<param name="quality" value="high" />\n');
+document.write ('<param name="bgcolor" value="#ffffff" />\n');
+document.write ('<embed src="http://vmedia.rivals.com/images/rivalschannel/www_poll.swf' + Poll + '" quality="high" bgcolor="#ffffff" width="240" height="260" name="channels_fballpoll" align="middle" allowScriptAccess="sameDomain" type="application/x-shockwave-flash" pluginspage="http://www.macromedia.com/go/getflashplayer" />\n');
+document.write ('</object>\n');
+}
+
+function RunGenObj(txt)
+{
+	document.write (txt);
+}

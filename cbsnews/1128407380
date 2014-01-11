@@ -1,0 +1,29 @@
+PHTTP
+18.7.20.68"Â
+’GET /ngbuzz//buzz.ashx?zip=10001&buzzId=187594&apiToken=18E45DF08C414168B99ADDF208CBBAFE&load=LoadBuzz&_dsrId=ngLoadBuzzSettings_187594 HTTP/1.1
+Host: nmp.newsgator.com
+Connection: keep-alive
+Accept: */*
+vUser-Agent: Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/31.0.1650.63 Safari/537.36
+"Referer: http://www.cbsnews.com/
+$Accept-Encoding: gzip,deflate,sdch
+!Accept-Language: en-US,en;q=0.8
+
+*¤
+HTTP/1.1 200 OK
+.Content-Type: text/javascript; charset=utf-8
+.Last-Modified: Sun, 20 Oct 2013 14:07:52 GMT
+ETag: 635178748728604783
+Server: Microsoft-IIS/8.0
+X-AspNet-Version: 4.0.30319
+X-Powered-By: ASP.NET
+Content-Length: 3388
+$Cache-Control: public, max-age=600
+%Date: Thu, 09 Jan 2014 01:15:42 GMT
+Connection: keep-alive
+¾
+try{var buzzStyles_187594="";}catch(e){}
+
+var buzzScript_187594 = "";
+
+try{var buzzTemplate_187594="<!-- Container element for the widget -->\n<div id=\"ngWidgetBox_${BuzzId}\" class=\"ng_buzzContainer\"></div>\n\n\n<!-- The following is the template for most of the actual widget -->\n{stringify PostsHtml}\n{var FirstPost = Data[0]}\n\n\t<ul class=\"localNews\">\n\t{for Post in Data}\n\t\t{if (Post_index == 0)}\n\t\t<li class=\"first\">\n\t\t<div class=\"image60\" style=\"background-image:url('http://i.i.cbsi.com/cnwk.1d/i/cbs/cbsnews/localNewsFD2012.jpg');\"></div>\n\t\t         <a class=\"leadImageHeadline\" href=\"${Post.HtmlUrl|html}\" title=\"${Post.FeedName|html}\" onclick=\"${AttentionClickJS(Post)}\">${Post.Title}</a>\n\t\t</li>\n\t\t\t{else}\n\t\t<li>\n\t\t\t<a href=\"${Post.HtmlUrl|html}\" title=\"${Post.FeedName|html}\" onclick=\"${AttentionClickJS(Post)}\">${Post.Title}</a>\n\t\t</li>\n\t\t{/if}\n\t{/for}\n\t</ul>\n\n\nPostsHtml\n<!-- End widget template -->\n\n\n<!-- Define functions for loading/display zip data -->\n{eval}\n//Display data for a zip code (eg, 80205)\nBuzzObj.showDataForZip = function(zipCode){\n\tvar requestArgs = {\n\t\tbuzzId : BuzzId,\n\t\tapiToken : ApiToken,\n\t\tC_ : \"NGBuzz.Classes.BuzzAPI,NGBuzz\",\n\t\tM_ : \"LookupDMA\",\n\t\tzipCode : zipCode\n\t};\n\t\n\t\n\tfunction callback(success, response){\n\t\tvar dma = response.result.DMAName;\n\t\tBuzzObj.showDataForDma(dma);\n\t}\n\t\n\tng.dsr.bind(BuzzAppUrl + \"/gateway.ashx/ngdsr/\", requestArgs, callback, null, \"zip_\" + zipCode);\n};\n\n//Display data for a DMA by name (eg, Denver). Note you must have a widget by the same name\nBuzzObj.showDataForDma = function(dmaName){\n\tBuzzObj.displayedDma = dmaName; //save this away so we can show it in the widget\n\tdmaName = dmaName.replace(/\\-/g, \" \");\n\t\n\tvar requestArgs = {\n\t\tbuzzId : dmaName,\n\t\tapiToken : ApiToken,\n\t\tload : \"data\",\n\t\tmaxPosts : 5 //optional, force number of posts for all DMAs\n\t};\n\n\tfunction callback(success, response){\n\t\tBuzzObj.showData(response.Data);\t\t\n\t};\n\n\tng.dsr.bind(BuzzAppUrl + \"/buzz.ashx\", requestArgs, callback, null, \"data_\" + dmaName);\n};\n\n//Render template for a set of posts and display\nBuzzObj.showData = function(posts){\n\tif(posts.length > 0) {\n\t\tvar html = BuzzObj.renderTemplate(PostsHtml, posts);\n\t\tdocument.getElementById(\"ngWidgetBox_\" + BuzzId).innerHTML = html;\n\t}\n};\n\n//Could load the Zip/DMA from the page, from ExtraArgs, or elsewhere\nAddPostRenderCallback(function(){\n\tBuzzObj.showDataForZip(ExtraArgs.zip || \"76371\");\n\nloadFavicons(Data);\n\n});\n\n//bind some of these functions into the window, so they can be called from other code if needed\nwindow.ng_showDataForZip = function(zipCode){\n\tBuzzObj.showDataForZip(zipCode);\n}\n\nwindow.ng_showDataForDma = function(dmaCode){\n\tBuzzObj.showDataForDma(dmaCode);\n}\n{/eval}\n";}catch(e){}window.ng_scriptload({id:'ngLoadBuzzSettings_187594',status:200,statusText:'200 OK',response:{apiToken:'18E45DF08C414168B99ADDF208CBBAFE',buzzAppUrl:'http://nmp.newsgator.com/NGBuzz/',extraArgs:{zip:'10001'},templateId:'buzzTemplate_187594',name:'Zip Code Widget',buzzId:187594,targetId:null,orgCode:'CBSLN',buzzTracking:{parentTrackingId:null,myTrackingId:null},analytics:{ngAcct:'UA-130916-2'},scriptCtx:'window',directUrl:'http://hosted.newsgator.com/'}});

@@ -1,0 +1,227 @@
+PHTTP216.115.210.206"Ÿ
+/GET /collaboration/scripts/common.js HTTP/1.1
+Host: www.citrixonline.com
+Connection: keep-alive
+Accept: */*
+vUser-Agent: Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/31.0.1650.63 Safari/537.36
+IReferer: http://www.citrixonline.com/collaboration/online_collaboration
+$Accept-Encoding: gzip,deflate,sdch
+!Accept-Language: en-US,en;q=0.8
+”Cookie: webSession=SessionInfo%3D16931373%253A89E2106579E2528; webVisitor=FirstVisit%3D1389229069000%26LastVisit%3D1389229069000; FEC_LOCALE=en_US
+
+*Ê?
+HTTP/1.1 200 OK
++Server: CouchDB/1.2.2 (Erlang OTP/R15B01)
+"ETag: "ch4Su1w5smxE/jqCc6P3FA=="
+%Date: Thu, 09 Jan 2014 00:57:49 GMT
+(Content-Type: application/x-javascript
+'Content-MD5: ch4Su1w5smxE/jqCc6P3FA==
+Content-Length: 7829
+ Cache-Control: must-revalidate
+Accept-Ranges: bytes
+—=
+/* Add per-project common javascript functions. */
+function getParameterByNameFromURL(name, url) {
+	name = name.replace(/[\[]/, "\\\[").replace(/[\]]/, "\\\]");
+	var regexS = "[\\?&]" + name + "=([^&#]*)";
+	var regex = new RegExp(regexS);
+	var results = regex.exec(url || window.location.href);
+	if (results == null) {
+		return "";
+	}
+	else {
+		return results[1];
+	}
+}
+jQuery(document).ready(function(){
+	if( jQuery(".roundCornerSelect").length > 0 || jQuery(".roundCornerSelect_large").length > 0 || jQuery(".roundCornerSelect_small").length > 0) {
+		jQuery(".roundCornerSelect").msDropDown({mainCSS:'customSelect'});
+		jQuery(".roundCornerSelect_large").msDropDown({mainCSS:'customSelect ddLarge'});
+		jQuery(".roundCornerSelect_small").msDropDown({mainCSS:'customSelect ddSmall'});
+		var isDDExpanded;
+		jQuery(".customSelect").click(function(){
+			var obj = jQuery(this).attr('id');
+			jQuery(".customSelect").each(function(){
+				if(jQuery(this).attr('id')!= obj){
+					jQuery(this).removeClass("expanded");
+				}
+			})
+			jQuery(this).toggleClass("expanded");
+			isDDExpanded = true;
+		});
+		jQuery("body").click(function(){
+			if(!isDDExpanded){
+				jQuery(".customSelect").removeClass("expanded");
+			}
+			isDDExpanded = false;
+		});
+	}
+	if( jQuery("#menu").length > 0 ) {
+		menuSprite = new Image();
+		menuSprite.src = "/collaboration/images/nav/nav_sprite.png";
+		var ieCatch = jQuery.browser.msie + jQuery.browser.version;
+		if (ieCatch.indexOf("true7") != -1) {
+			jQuery(".ddChild").each(function(){
+				if(jQuery(this).children().length > 7){
+						jQuery(this).addClass("scroll");
+				}
+			})
+		}
+		jQuery('#menuNoScript').removeAttr('id').ptMenu();
+		jQuery('#slider-stage').carousel('#next','#previous');
+	}
+	try{
+		pageReadyFunction();
+	}catch(e){}
+
+	var productArr = ["external", "popup", "winPopup", "close"];
+	jQuery.each( productArr, function(i) {
+		switch (i) {
+			case 0 : jQuery("a[rel='external']").click(function() {
+							var externalURL = jQuery(this).attr("href");
+							if( document.URL.indexOf("www.citrixonline.com") != -1 ) {
+								externalLinkTrack(externalURL, jQuery(this));
+							}
+							window.open(externalURL);
+							return false;
+						});
+						break;
+			case 1 : jQuery("a[rel='popup']").each(function() {
+							var h = parseInt(getParameterByNameFromURL('height', this.href));
+							var w = parseInt(getParameterByNameFromURL('width', this.href));
+							var checkPopup = getParameterByNameFromURL('popup', this.href);
+							if (!h) { h = 670; }
+							if (!w) { w = 870; }
+							var trackURL = jQuery(this).attr("href");
+							if (!checkPopup) {
+								trackURL = jQuery(this).attr("href");
+								var delim = (this.href.indexOf('?') >= 0) ? '&' : '?';
+								trackURL = trackURL+delim+"popup=true";
+							}
+							jQuery(this).fancybox({width: w, height: h, href: trackURL}).click(function(){ //{width: 870, height: 670} is applicable only for class="iframe"
+								if(typeof utEvtTag == 'function') {
+									utEvtTag('ev=lightbox_open&evdetail=' + escape(trackURL));
+								}
+							})
+						});
+						break;
+			case 2 : jQuery("a[rel='winPopup']").click(function() {
+							var delim = (this.href.indexOf('?') >= 0) ? '&' : '?';
+							var h = parseInt(getParameterByNameFromURL('height', this.href));
+							var w = parseInt(getParameterByNameFromURL('width',  this.href));
+							if (!h) { h = 400; }
+							if (!w) { w = 500; }
+							var features = "height=" + h + ",width=" + w + ",menubar=0,status=0,location=0,toolbar=0,scrollbars=yes,resizable=yes";
+							window.open(this.href , 'newPopup', features);
+							return false;
+						});
+						break;
+			case 3 : jQuery("span[rel='close']").click(function() {
+							window.close();
+						});
+						break;
+			default :
+		}
+	});
+
+	// rounded corner select reset functionality fix
+	jQuery("input[type=reset]").click(function(){
+		var webForm = jQuery(this).parents("form");
+		var comboBoxes = jQuery(webForm).find(".customSelect");
+		jQuery(comboBoxes).each(function(){
+			var defaultTxt = jQuery(this).find(".ddChild:eq(0) a:first-child").text();
+			jQuery(this).find(".ddTitleText:eq(0) .ddTitleText:eq(0)").text(defaultTxt);
+		})
+		jQuery(webForm).find("input[type=hidden]").val("");
+	})
+	// Unica tracking for PDFs and Video opens
+
+	jQuery(".printAction").click(function() {
+		window.print();
+	});
+	jQuery("a.trackPDF").click(function() {
+		if(typeof utEvtTag == 'function') {
+			utEvtTag('ev=pdf_open&evdetail=' + escape(location.protocol + "//" + document.domain + jQuery(this).attr('href')));
+		}
+	});
+	jQuery("a.trackVideo").click(function() {
+		if(typeof utEvtTag == 'function') {
+			utEvtTag('ev=video_open&evdetail=' + escape(location.protocol + "//" + document.domain + jQuery(this).attr('href')));
+		}
+	});
+})
+function utEvtTag(sEvt) {
+	try {
+		mylc = escape(document.URL+((document.URL.indexOf('?')>0)?'&':'?')+'ni_title='+_HM.ni_title);
+		ntptEventTag('lc=' + mylc + '&' +sEvt);
+	}catch (e) {}
+}
+function externalLinkTrack(externalURL, currentObj) {
+	/*
+		Affiliate Program page external page tracking
+	*/
+	if( document.URL.indexOf("affiliate_program") != -1 ) {
+		if( externalURL.indexOf("https://signup.cj.com/member/brandedPublisherSignUp.do?air_refmerchantid=736742") != -1 && currentObj.hasClass("applyNow") ) {
+			_gaq.push(['_trackPageview', '/outgoinglink/Affiliate/CJ-G2MyPC-ApplyNow']);
+		}
+		else if( externalURL.indexOf("https://signup.cj.com/member/brandedPublisherSignUp.do?air_refmerchantid=736742") != -1 && currentObj.hasClass("signUp") ) {
+			_gaq.push(['_trackPageview', '/outgoinglink/Affiliate/CJ-G2MyPC-SignUp']);
+		}
+		else if( externalURL.indexOf("https://signup.cj.com/member/brandedPublisherSignUp.do?air_refmerchantid=1428276") != -1 && currentObj.hasClass("applyNow") ) {
+			_gaq.push(['_trackPageview', '/outgoinglink/Affiliate/ApplyNow/CJ-G2MW-ApplyNow']);
+		}
+		else if( externalURL.indexOf("https://signup.cj.com/member/brandedPublisherSignUp.do?air_refmerchantid=1428276") != -1 && currentObj.hasClass("signUp") ) {
+			_gaq.push(['_trackPageview', '/outgoinglink/Affiliate/ApplyNow/CJ-G2MW-SignUp']);
+		}
+	}
+	/*
+		Careers page external page tracking
+	*/
+	else if( document.URL.indexOf("careers") != -1 ) {
+		var socialMediaType;
+		if( externalURL.indexOf("twitter.com/CitrixOnlineJob") != -1 ) {
+			socialMediaType = "CareerTwitter";
+		}
+		else if( externalURL.indexOf("linkedin.com/companies/citrix-online") != -1 ) {
+			socialMediaType = "CareerLinkedIn";
+		}
+		_gaq.push(['_trackEvent', 'SocialMediaLinks', socialMediaType, 'CareerPage']);
+	}
+	/*
+		General product site tracking
+	*/
+	var productName = "";
+	if( externalURL.indexOf("www.gotomypc.com") != -1 ) {
+		productName = "GoToMyPC";
+	}
+	else if( externalURL.indexOf("www.gotomeeting.com/fec/online_meeting") != -1 ) {
+		productName = "GoToMeeting";
+	}
+	else if( externalURL.indexOf("www.gotomeeting.com/fec/webinar") != -1 ) {
+		productName = "GoToWebinar";
+	}
+	else if( externalURL.indexOf("www.gotomeeting.com/fec/online_training") != -1 ) {
+		productName = "GoToTraining";
+	}
+	else if( externalURL.indexOf("www.gotoassist.com") != -1 ) {
+		productName = "GoToAssist";
+	}
+	else if( externalURL.indexOf("www.gotomanage.com") != -1 ) {
+		productName = "GoToManage";
+	}
+	else if( externalURL.indexOf("www.goview.com") != -1 ) {
+		productName = "GoView";
+	}
+	else if( externalURL.indexOf("www.hidefcorporate.com") != -1 ) {
+		productName = "HiDefCorporate";
+	}
+	if( productName != "" ) {
+		_gaq.push(['_trackPageview', '/outgoinglink/' + productName]);
+	}
+}
+jQuery(function() {
+	jQuery('.pullLink').removeClass('hiddenLink');
+});
+jQuery(function() {
+	jQuery('.hideLink').addClass('hiddenLink');
+});

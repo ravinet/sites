@@ -1,0 +1,21 @@
+PHTTP220.181.124.108"À
+MGET /pv.gif?uigs_productid=web&uigs_t=1389232529039578&uigs_refer= HTTP/1.1
+Host: pb.sogou.com
+Connection: keep-alive
+Accept: image/webp,*/*;q=0.8
+vUser-Agent: Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/31.0.1650.63 Safari/537.36
+Referer: http://www.soso.com/
+$Accept-Encoding: gzip,deflate,sdch
+!Accept-Language: en-US,en;q=0.8
+9Cookie: IPLOC=US; SUID=374C1E802524920A0000000052CE0183
+
+*å
+HTTP/1.1 200 OK
+Server: nginx
+%Date: Thu, 09 Jan 2014 01:55:17 GMT
+Content-Type: text/xml
+Content-Length: 0
+Connection: close
+rSet-Cookie: SUV=0082585F801E4C3752CE01855EE24312; expires=Sun, 07-Jan-24 01:55:17 GMT; domain=.sogou.com; path=/
+\P3P: CP="CURa ADMa DEVa PSAo PSDo OUR BUS UNI PUR INT DEM STA PRE COM NAV OTC NOI DSP COR"
+

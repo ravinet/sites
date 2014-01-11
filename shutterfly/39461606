@@ -1,0 +1,36 @@
+PHTTP8.21.32.164"ü
+@GET /invitations/invitationsJS/107/s107864/gateway.js HTTP/1.1
+#Host: ips-invite.iperceptions.com
+Connection: keep-alive
+Accept: */*
+vUser-Agent: Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/31.0.1650.63 Safari/537.36
+%Referer: http://www.shutterfly.com/
+$Accept-Encoding: gzip,deflate,sdch
+!Accept-Language: en-US,en;q=0.8
+
+*à
+HTTP/1.1 200 OK
+(Content-Type: application/x-javascript
+.Last-Modified: Thu, 03 Oct 2013 15:44:33 GMT
+Accept-Ranges: bytes
+ETag: "91b9b3744fc0ce1:0"
+Server: Microsoft-IIS/7.0
+X-Powered-By: ASP.NET
+X-Srv-By: IPS-INVITE02
+%Date: Fri, 10 Jan 2014 16:18:43 GMT
+Content-Length: 555
+­
+(function() {
+    function inject(sID) {
+        var w = window,
+            d = document,
+            fjs = d.getElementsByTagName("script")[0],  
+            js = d.createElement("script"); 
+
+        //****MAKE SURE TO UPDATE SURVEY ID HERE ****/
+        js.src = w.location.protocol + "//ips-invite.iperceptions.com/webValidator.aspx?sdfc=007d25b3-107864-02835e41-0026-4df5-a07b-b1cfcfcb323d&lID=1&loc=STUDY&cD=90&rF=False&iType=1&domainname=0&source=91787";
+        fjs.parentNode.insertBefore(js, fjs) 
+    }
+
+    inject(107864);
+})();

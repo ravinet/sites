@@ -1,0 +1,48 @@
+PHTTP98.175.77.106"•
+ëGET /js.ng/adsize=970x66&params.styles=slykhtmlopen,slykimgopen,slykfb&site=ntl&page=homepage&ord=fMTxc9Ribo&zip=02138&state=MA&dma=BOSTON&region=BOSTON4&alphazone=BOSTON_NO&make=none&class_series=&model=none&language=en&bodystyle=none&category=&subcategory=&type=&start_year=&end_year=&from_price=&to_price=&owner_id=&yearrange=&certified=n&tile=52535787&search=control&flip=a&listing_type=&partner=atc&page_instance=835031372372571622&Log=0&specialVehicle=&ifid=homepageBannerAd HTTP/1.1
+ Host: adserving.autotrader.com
+Connection: keep-alive
+Accept: */*
+vUser-Agent: Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/31.0.1650.63 Safari/537.36
+6Referer: http://www.autotrader.com/inc/ad.html?Log=0
+$Accept-Encoding: gzip,deflate,sdch
+!Accept-Language: en-US,en;q=0.8
+]Cookie: v1st=EB16B0ED3FFB2F9D; ATC_ID=128.30.76.55.1389231321571319; sevoTandT12=controlSIP
+
+*Å
+HTTP/1.1 200 OK
+%Date: Thu, 09 Jan 2014 01:35:22 GMT
+Server: Apache
+oSet-Cookie: NGUserID=ae08626-31921-1625554896-1389231322; expires=Wednesday, 30-Dec-2037 16:00:00 GMT; path=/
+AdServer: padsrv7002:9678:1
+Cache-Control: max-age=0
+(Expires: Thu, 09 Jan 2014 01:35:22 GMT
+Content-Length: 2822
+Connection: close
+(Content-Type: application/x-javascript
+?Set-Cookie: BIGipServeradserving=646373386.42015.0000; path=/
+ˆ
+document.write('');
+var ifID='homepageBannerAd';if(ifID){parent.Ads.expandAd(ifID);parent.Ads.resizeAdIframe(ifID,{width:970,height:66});}if(typeof setAdIds=='function'){setAdIds('3041487','1357277');}document.write('<META HTTP-EQUIV=\"Content-type\" CONTENT=\"text/html;charset=ISO-8859-1\"><\/script><!-- vendorName=PointRoll; v.1 --><!-- COrigA=\"{1}\" -->\r\n');
+function pr_swfver(){var osf,osfd,i,axo=1,v=0,nv=navigator;
+if(nv.plugins&&nv.mimeTypes.length){osf=nv.plugins["Shockwave Flash"];if(osf&&osf.description){osfd=osf.description;v=osfd.substring(osfd.indexOf(".")-2,osfd.indexOf(".")+2)}}
+else{try{try{v=new ActiveXObject("ShockwaveFlash.ShockwaveFlash").getVariable('$version').match(/[0-9]+.[0-9]/gi)[0].replace(/,/,".");}catch(f){for(i=5;axo!=null;i++){axo=new ActiveXObject("ShockwaveFlash.ShockwaveFlash."+i);v=i}}}catch(e){}}
+return v;}
+var pr_d=new Date();pr_d=pr_d.getDay()+"|"+pr_d.getHours()+":"+pr_d.getMinutes()+"|"+-pr_d.getTimezoneOffset()/60;
+var pr_postal="02138";
+var pr_data="";
+var pr_ies="";
+var prinif=((window!=top)?1:0);
+var pr_redir="http://adserving.autotrader.com/event.ng/Type%3Dclick%26FlightID%3D1357277%26AdID%3D3041487%26TargetID%3D366092%26Targets%3D363840,346714,346715,270356,303136,338290,301023,336256,366092,367459,367261%26Values%3D352,523,754,1626,1638,1686,1720,2016,2760,2796,2799,4690,7941,7942,10209,10242,10339,11866,19959,34058,35455,36543,36879,37549,39052,39471,42434,42492,42493,43920,48314,65622%26RawValues%3DPAGE_INSTANCEID%252C835031372372571622%252CTIMEID%252C1389231322%26Redirect%3D$CTURL$";
+var pr_nua=navigator.userAgent.toLowerCase();
+var prHost=(("https:"==document.location.protocol)?"https://":"http://");var pr_sec=((prHost=='https://')?'&secure=1':'');
+var pr_pos="",pr_inif=(window!=top);
+if(pr_inif){try{pr_pos=(typeof(parent.document)!="unknown")?(((typeof(inDapIF)!="undefined")&&(inDapIF))||(parent.document.domain==document.domain))?"&pos=s":"&pos=x":"&pos=x";}
+catch(e){pr_pos="&pos=x";}if(pr_pos=="&pos=x"){var pr_u=new RegExp("[A-Za-z]+:[/][/][A-Za-z0-9.-]+");var pr_t=this.window.document.referrer;
+var pr_m=pr_t.match(pr_u);if(pr_m!=null){pr_pos+="&dom="+pr_m[0];}}else{if(((typeof(inDapMgrIf)!="undefined")&&(inDapMgrIf))||((typeof(isAJAX)!="undefined")&&(isAJAX))){pr_pos+="&ajx=1"}}}
+if(pr_postal!=""){var przipmatch=/^\d{5}$/;if(przipmatch.test(pr_postal)){pr_pos+="&postal="+pr_postal;}}
+if((pr_data!="")&&(pr_data.indexOf("&")<0)){pr_pos+="&data="+pr_data;}
+if((pr_ies!="")&&(pr_ies.indexOf("&")<0)){pr_pos+="&ies="+pr_ies;}
+var pr_s="ads.pointroll.com/PortalServe/?pid=2199271B83820131218202605&flash="+pr_swfver()+"&time="+pr_d+"&redir="+pr_redir+pr_pos+pr_sec+"&inif="+prinif+"&r="+Math.random();
+document.write("<scr"+"ipt type='text/javascript' src='"+prHost+pr_s+"'></scr"+"ipt>");
+document.write('');

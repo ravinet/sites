@@ -1,0 +1,21 @@
+PHTTP12.129.242.40"Þ
+GET / HTTP/1.1
+Host: us.battle.net
+Connection: keep-alive
+TAccept: text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8
+vUser-Agent: Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/31.0.1650.63 Safari/537.36
+$Accept-Encoding: gzip,deflate,sdch
+!Accept-Language: en-US,en;q=0.8
+
+*Ð
+HTTP/1.1 302 Found
+%Date: Thu, 09 Jan 2014 13:40:09 GMT
+Server: Apache
+X-Frame-Options: SAMEORIGIN
+8Set-Cookie: login.cookies=1; Domain=battle.net; Path=/
+$Location: http://us.battle.net/en/
+Content-Length: 0
+"Keep-Alive: timeout=10, max=4000
+Connection: Keep-Alive
+)Content-Type: text/plain; charset=UTF-8
+

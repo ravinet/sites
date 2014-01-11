@@ -1,0 +1,25 @@
+PHTTP107.22.234.205"Ÿ
+RGET /united/prod/code/4797650089c1aabf7cd56ac1456a4880.js?ruleId=259182 HTTP/1.1
+Host: nexus.ensighten.com
+Connection: keep-alive
+Accept: */*
+vUser-Agent: Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/31.0.1650.63 Safari/537.36
+>Referer: http://www.united.com/web/en-US/default.aspx?root=1
+$Accept-Encoding: gzip,deflate,sdch
+!Accept-Language: en-US,en;q=0.8
+
+*­	
+HTTP/1.1 200 OK
+Accept-Ranges: bytes
+"Cache-Control: max-age=315360000
+Cache-Control: public
+7Content-Type: application/x-javascript; charset=utf-8
+%Date: Thu, 09 Jan 2014 01:01:37 GMT
+(Expires: Thu, 31 Dec 2037 23:55:55 GMT
+.Last-Modified: Fri, 20 Dec 2013 17:50:15 GMT
+Server: nginx
+Content-Length: 836
+Connection: keep-alive
+Æ
+Bootstrapper.bindDependencyImmediate(function(){var Bootstrapper=window["Bootstrapper"];var ensightenOptions=Bootstrapper.ensightenOptions;Bootstrapper.bindDOMParsed(function(){Bootstrapper.dataObject.setGlobalVars()},20185);Bootstrapper.dataObject.global.campaign=Bootstrapper.dataObject.global.campaign||{};var campaignParams="utm_source,utm_medium,utm_campaign,utm_term,utm_content,utm_partner_category,utm_partner_name,asset_type,asset_position,promo_code,targeting,launch_date,";var keyVals=document.location.search.slice(1).split("\x26");
+if(keyVals.length>0)for(i=0;i<keyVals.length;i++)if(keyVals[i].length>0&&keyVals[i].indexOf("\x3d")>0){var pair=keyVals[i].split("\x3d");if(pair[1].length>0)if(campaignParams.indexOf(pair[0]+",")>-1)Bootstrapper.dataObject.global.campaign[pair[0]]=pair[1]}},259182,[260003],202670,[202660]);

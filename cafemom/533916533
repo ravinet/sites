@@ -1,0 +1,23 @@
+PHTTP204.2.197.201"‘
+0GET /orbserv/hbpix?pixId=16873&pcv=70 HTTP/1.1
+Host: idpix.media6degrees.com
+Connection: keep-alive
+Accept: image/webp,*/*;q=0.8
+vUser-Agent: Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/31.0.1650.63 Safari/537.36
+=Referer: http://fast.cafemom.demdex.net/dest4.html?d_nsid=0
+$Accept-Encoding: gzip,deflate,sdch
+!Accept-Language: en-US,en;q=0.8
+
+*‘
+ HTTP/1.1 302 Moved Temporarily
+Server: Apache-Coyote/1.1
++P3P: CP="COM NAV INT STA NID OUR IND NOI"
+Pragma: no-cache
+Cache-Control: no-cache
+cSet-Cookie: cckz=1mz728x; Domain=media6degrees.com; Expires=Fri, 10-Jan-2014 16:48:57 GMT; Path=/
+cSet-Cookie: cckz=1mz728x; Domain=media6degrees.com; Expires=Wed, 09-Jul-2014 16:38:57 GMT; Path=/
+ULocation: http://idpix.media6degrees.com/orbserv/hbpix?pixId=16873&pcv=70&cckz=true
+Content-Length: 0
+%Date: Fri, 10 Jan 2014 16:38:57 GMT
+Connection: close
+

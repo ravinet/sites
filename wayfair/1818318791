@@ -1,0 +1,32 @@
+PHTTP209.202.142.13"û
+
+9GET /v/account/previously_viewed_products/feed HTTP/1.1
+Host: www.wayfair.com
+Connection: keep-alive
+8Accept: application/json, text/javascript, */*; q=0.01
+"X-Requested-With: XMLHttpRequest
+vUser-Agent: Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/31.0.1650.63 Safari/537.36
+"Referer: http://www.wayfair.com/
+$Accept-Encoding: gzip,deflate,sdch
+!Accept-Language: en-US,en;q=0.8
+ÃCookie: SSAF=1|ss%5fpt1444987%5fhide%5f2nd%5ftier%5fnav:sstest%5fpt1424083%5fginm%5flocation%5fhidetopblock:ss%5fpt1345074%5fgrey%5fbackground:ss%5fpt1212854; SSID=BgAOJx04AAAAAADdAM5SBNMGB90AzlIBAAAAAAAAAAAA3QDOUgBpKr0CAAFCNgAA3QDOUgEAuwIAATw2AADdAM5SAQC0AgABIjYAAN0AzlIBALwCAAE_NgAA3QDOUgEA; SSSC=27.G5966707505618146052.1|692.13858:699.13884:700.13887:701.13890; SSRT=3QDOUgM; SSPV=4fAAAAAAAAQAAAAAAAAAAAAAAAEAAAAAAAA; ABTestVariations=criteo_tellapart_test_v1=control; CSNUtId=ac101911-52ce-00dd-71ce-4780e97d5602; WFSID=s3frm746t6c61adbcq4fpld4m2; CSN=g_zip=02139; serverUAInfo=%7B%22browser%22%3A%22Google+Chrome%22%2C%22browserVersion%22%3A31.0165063%2C%22OS%22%3A%22Linux%22%2C%22OSVersion%22%3Afalse%2C%22isMobile%22%3Afalse%2C%22isTablet%22%3Afalse%7D; CSNBrief=Search=; dtr=1; WfTracking=NAN_PID=NULL; Server_80=BOWEB20155; SS_80=BOSS06|Us4A5|Us4A5; __qca=P0-1731733355-1389232366637; featureDetect={"isTouch":false,"hasMQ":true}; fsr.a=1389232367008
+
+*…
+HTTP/1.1 200 OK
+Server: nginx
+%Date: Thu, 09 Jan 2014 01:52:35 GMT
+/Content-Type: application/json; charset=utf-8
+Transfer-Encoding: chunked
+Connection: keep-alive
+zSet-Cookie: SSPV=4fAAAAAAAAQAAAAAAAAAAAAAAAEAAAAAAAA; path=/; domain=.wayfair.com; expires=Fri, 09-Jan-2015 01:52:34 GMT
+(Expires: Fri, 12 Jul 2013 13:56:35 GMT
+=Cache-Control: must-revalidate, proxy-revalidate, max-age=0
+Pragma: no-cache
+Vary: Accept-Encoding
+Server_Id: bo3.20.155
+WFR: SSNX
+
+b
+{"html":""}
+0
+

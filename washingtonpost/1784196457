@@ -1,0 +1,28 @@
+PHTTP23.23.147.255"ö
+‹GET /user_data/segments/3?pubid=415dda7b-13ba-40f3-9a60-eb3ba310f160&technographics=1&callback=Krux.ns._default.kxjsonp_userData HTTP/1.1
+Host: apiservices.krxd.net
+Connection: keep-alive
+Accept: */*
+vUser-Agent: Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/31.0.1650.63 Safari/537.36
+)Referer: http://www.washingtonpost.com/
+$Accept-Encoding: gzip,deflate,sdch
+!Accept-Language: en-US,en;q=0.8
+/Cookie: ServedBy=beacon-a038; _kuid_=I2mkL5kT
+
+*ì
+HTTP/1.1 200 OK
+Accept-Ranges: bytes
+Cache-Control: max-age=1800
+Content-Type: text/javascript
+%Date: Fri, 10 Jan 2014 15:05:31 GMT
+2Etag: "79b1dec167d3d90ba163e831ede5392adc8fbfd7"
+
+X-Age: 0
+X-Cache: MISS
+X-Cache-Hits: 0
+X-Request-Backend: user_data
+(X-Served-By: apiservices-a006.krxd.net
+Content-Length: 246
+Connection: keep-alive
+ø
+Krux.ns._default.kxjsonp_userData({"status": "200", "body": {"technographics": {"device": "Computer", "manufacturer": "Other", "os": "Linux", "browser": "Chrome"}, "segments": [], "code": "no_data", "kuid_long": "n25i0bx5h", "kuid": "I2mkL5kT"}})

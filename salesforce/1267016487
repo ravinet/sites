@@ -1,0 +1,74 @@
+PHTTP8.20.172.179"Ω
+MGET /resources/smartbutton/6302/II3_Rules.js?src=ii3&ts=1389227574 HTTP/1.1
+Host: rs.instantservice.com
+Connection: keep-alive
+Accept: */*
+vUser-Agent: Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/31.0.1650.63 Safari/537.36
+%Referer: http://www.salesforce.com/
+$Accept-Encoding: gzip,deflate,sdch
+!Accept-Language: en-US,en;q=0.8
+8Cookie: BIGipServerchat_resource=2308496906.22528.0000
+
+*çX
+HTTP/1.1 200 OK
+%Date: Thu, 09 Jan 2014 00:32:43 GMT
+Server: Apache
+.Last-Modified: Sat, 07 Dec 2013 21:24:09 GMT
+ETag: "2a7c-4ecf86221358a"
+Accept-Ranges: bytes
+Content-Length: 10876
+Cache-Control: max-age=300
+(Expires: Thu, 09 Jan 2014 00:37:43 GMT
+-P3P: CP="NOI DSP COR DEVa TAIa OUR BUS UNI"
+Vary: User-Agent
+Connection: close
+Content-Type: text/javascript
+˛T
+// Copyright (C) 2008 InstantService.com, Inc. All rights reserved.
+var ii_jsvar = new Object();
+ii_Var.publishversion = '1386451449';
+
+ii_Var.scrinc = '';
+
+ii_Var.stringTypes = [0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0];
+ii_Var.stringNoContain = [0,1,5,7,10,18,25];
+ii_Var.urlStrings = ['www.salesforce.com/dreamforce, www.salesforce.com/salesforceadvantage','/form/','http://opencms-auth.soma.salesforce.com/crm/editions-pricing.jsp, http://opencms-auth.soma.salesforce.com/crm/products.jsp, salesforce.com/reactive-chat-test.jsp','http://www.salesforce.com/crm/editions-pricing.jsp,www.salesforce.com/crm/editions-pricing.jsp, www.salesforce.com/crm/editions-pricing_alt.jsp, http://www.salesforce.com/crm/editions-pricing-service.jsp, http://www.salesforce.com/crm/editions-social-enterprise.jsp, http://www.salesforce.com/chatter/editions-pricing.jsp, http://www.salesforce.com/platform/platform-edition/index.jsp','www.salesforce.com/crm, salesforce.com/cloudcomputing, salesforce.com/mobile/lite','www.salesforce.com/crm/editions-pricing.jsp, /crm/products.jsp, crm/editions-pricing_alt.jsp, www.salesforce.com/crm/editions-pricing_alt.jsp, www.salesforce.com/crm/sales-force-automation/jigsaw-data-management/, www.salesforce.com/dreamforce/DF10/networking/, www.salesforce.com/salesforceadvantage','salesforce.com/platform/it.jsp, salesforce.com/platform/platform-edition/home.jsp, salesforce.com/platform/','http://www.salesforce.com/platform/platform-edition/, http://www.salesforce.com/platform/platform-edition/index_alt.jsp','salesforce.com/smallbusinesscenter, http://www.salesforce.com/small-business-center/why-salesforce/','salesforce.com/resource_center, salesforce.com/customers','http://www.salesforce.com/customers/?viewType=summary&Industry=industry-nonprofit','salesforce.com/demos/','salesforce.com/industries/, http://www.salesforce.com/solutions/','salesforce.com/form/signup/conf/freetrial-error.jsp, salesforce.com/form/signup/conf/freetrial-error-smb.jsp, salesforce.com/form/conf/pricing_sfge_99_yr.jsp, salesforce.com/form/signup/conf/freetrial-conf.jsp','rd1-cms3-1-sfm.ops.sfdc.net:8081/opencms/crm/sales-force-automation/, opencms-stg.soma.salesforce.com/crm/sales-force-automation/, http://opencms-auth.soma.salesforce.com/platform/cloud-platform/sites.jsp, http://opencms-auth.soma.salesforce.com/platform/innovators/ , http://opencms-auth.soma.salesforce.com/mobile/lite/, http://opencms-auth.soma.salesforce.com/customers/success_stories.jsp, http://rd1-cms3-1-sfm.ops.sfdc.net:8081/crm/editions-pricing.jsp','http://opencms-auth.soma.salesforce.com/uk/crm/editions-pricing.jsp','eu/crm/editions-pricing.jsp','uk/crm/, uk/resource_center/, uk/servicecloud/, uk/products/democenter-landing.jsp, uk/company/, uk/customers/, eu/crm, eu/resource_center, eu/servicecloud, eu/customers,  uk/platform/, eu/platform','http://www.salesforce.com/uk/crm/sales-force-automation/, http://www.salesforce.com/uk/company/, http://www.salesforce.com/uk/demos/, http://www.salesforce.com/uk/crm/sales.jsp, http://www.salesforce.com/uk/crm/customer-service-support/, http://www.salesforce.com/uk/crm/editions-pricing.jsp, http://www.salesforce.com/uk/company/careers/, http://www.salesforce.com/uk/crm/products.jsp, http://www.salesforce.com/uk/platform/, http://www.salesforce.com/uk/crm/sales-force-automation/online-contact-management/, http://www.salesforce.com/uk/crm/service.jsp, http://www.salesforce.com/uk/platform/cloud-infrastructure/, http://www.salesforce.com/uk/crm/marketing.jsp, http://www.salesforce.com/eu/','salesforce.com/crm/editions-pricing.jsp','salesforce.com/customers, salesforce.com/crm, salesforce.com/cloudcomputing, salesforce.com/mobile/lite, salesforce.com/platform/','/fr/crm/editions-pricing.jsp','fr/crm, fr/resource_center, fr/servicecloud, fr/products/democenter-landing.jsp, fr/company, fr/customers, fr/platform','http://opencms-auth.soma.salesforce.com/de/crm/editions-pricing.jsp','de/crm/, de/resource_center/, de/servicecloud/, de/products/democenter-landing.jsp, de/company/, de/customers/, de/platform','http://www.salesforce.com/de/crm/sales-force-automation/, http://www.salesforce.com/de/crm/customer-service-support/, http://www.salesforce.com/de/company/, http://www.salesforce.com/de/crm/editions-pricing.jsp, http://www.salesforce.com/de/demos/, http://www.salesforce.com/de/demos/index2.jsp'];
+
+var ii_Inv = [
+[11867,'SR AMER',1,'','invitelayer',2,5,10,2,0,'http://www.salesforce.com/assets/images/products/chat/invite_bg.gif',320,270,26,114,'http://www.salesforce.com/assets/images/products/chat/invite_button_accept.gif','','http://www.salesforce.com/products/instaservice_form.html?d=70130000000FWj1',1,500,320,26,183,'http://www.salesforce.com/assets/images/products/chat/invite_button_decline.gif','','','','','','','','','',''],
+[11888,'Button Invitation Test',1,'','invitelayer',3,3,99999,3,1,'https://www.instantservice.com/custom/sfdc/button_invite.gif',205,53,0,0,'https://www.instantservice.com/custom/sfdc/button_invite.gif','','http://www.salesforce.com/products/instaservice_form.html',1,500,320,0,0,'https://www.instantservice.com/img/shim.gif','','','','','','','','','',''],
+[17140,'SR UK',1,'','invitelayer',2,5,10,2,0,'http://www.salesforce.com/assets/images/products/chat/invite_bg.gif',320,270,26,114,'http://www.salesforce.com/assets/images/products/chat/invite_button_accept.gif','','http://www.salesforce.com/products/emea_instaservice_form.html',1,500,320,26,183,'http://www.salesforce.com/assets/images/products/chat/invite_button_decline.gif','','','','','','','','','',''],
+[32620,'SR FR',1,'','invitelayer',2,5,10,2,0,'http://www.salesforce.com/fr/assets/images/products/chat/invite_bg.gif',320,270,26,114,'http://www.salesforce.com/fr/assets/images/products/chat/invite_button_accept.gif','','http://www.salesforce.com/fr/products/emea_instaservice_form.html',1,500,320,26,183,'http://www.salesforce.com/fr/assets/images/products/chat/invite_button_decline.gif','','','','','','','','','',''],
+[32621,'SR DE',1,'','invitelayer',2,5,10,2,1,'http://opencms-auth.soma.salesforce.com/de/assets/images/products/chat/invite_bg.gif',320,270,26,114,'http://www.salesforce.com/de/assets/images/products/chat/invite_button_accept.gif','','http://www.salesforce.com/de/products/emea_instaservice_form.html',1,500,320,26,183,'http://www.salesforce.com/de/assets/images/products/chat/invite_button_decline.gif','','','','','','','','','',''],
+[35980,'SR Training',1,'','invitelayer',2,5,10,2,0,'http://www.salesforce.com/assets/images/products/chat/invite_bg.gif',320,270,26,114,'http://www.salesforce.com/assets/images/products/chat/invite_button_accept.gif','','http://www.salesforce.com/products/instaservice_practice_form.html',1,500,320,26,183,'http://www.salesforce.com/assets/images/products/chat/invite_button_decline.gif','','','','','','','','','',''],
+[56860,'SR AMER Demandbase',1,'','invitelayer',2,5,10,2,0,'http://www.salesforce.com/assets/images/products/chat/invite_bg.gif',320,270,26,114,'http://www.salesforce.com/assets/images/products/chat/invite_button_accept.gif','','http://www.salesforce.com/products/instaservice_form_demandbase.html?d=70130000000FWj1',1,500,320,26,183,'http://www.salesforce.com/assets/images/products/chat/invite_button_decline.gif','','','','','','','','','','']
+];
+
+var ii_Rules = [
+[82880,1,56860,0,'DemandBase targeting rule (2nd page)',['90`vp.activityData.db.size`0`0`fs,gb`7`0','91`vp.activityData.pv`0`0`2`1`0','50`4`6`0``0`0','31`CA,US`7`0``0`0','4`0`8`0`1`6`0','4`1`8`0`1`6`0'],1,1,'24183',0,'','',''],
+[39340,1,35980,0,'SR Global Training Phase 2',['4`2`7`0`1`6`0'],1,1,'39319',0,'','',''],
+[82900,1,56860,0,'DemandBase targeting rule (6th page)',['90`vp.activityData.db.size`0`0`gb,fs`7`0','91`vp.activityData.pv`0`0`6`1`0','50`4`6`0``0`0','31`CA,US`7`0``0`0','4`0`8`0`1`6`0','4`1`8`0`1`6`0'],1,1,'24183',0,'','',''],
+[18160,1,11867,0,'Edition Comparison Page (Aloha)',['4`3`7`0`1`6`0','50`5`6`0``0`0','75`180`5`0``5`0','31`CA,US`1`0``0`0','30`salesforce.com`8`0``0`0'],1,1,'24183',0,'','',''],
+[18161,1,11867,0,'Invite Product Page (Aloha)',['4`4`7`0`1`6`0','50`7`6`0``0`0','75`180`5`0``5`0','71``0`0``0`0','31`CA,US`1`0``0`0','4`5`8`0`1`6`0'],1,1,'24183',0,'','',''],
+[18162,1,11867,0,'Platform Rules (Aloha)',['4`6`7`0`1`6`0','50`7`6`0``0`0','75`180`5`0``5`0','71``0`0``0`0','31`CA,US`1`0``0`0','4`7`8`0`1`6`0'],1,1,'24183',0,'','',''],
+[13936,1,11867,0,'SMB Rule',['4`8`7`0`1`6`0','50`5`6`0``0`0','75`180`5`0``5`0','71``0`0``0`0','31`CA,US`1`0``0`0'],1,1,'24183',0,'','',''],
+[13938,1,11867,0,'Resource & Customer Cases Center',['4`9`7`0`1`6`0','75`180`5`0``5`0','71``0`0``0`0','31`CA,US`1`0``0`0','4`10`8`0`1`6`0'],1,1,'24183',0,'','',''],
+[13939,1,11867,0,'Demo Center',['4`11`7`0`1`6`0','50`90`6`0``0`0','75`180`5`0``5`0','71``0`0``0`0','31`CA,US`1`0``0`0'],1,1,'24183',0,'','',''],
+[42380,1,11867,0,'Industries Pages',['4`12`7`0`1`6`0','31`us, ca`1`0``0`0','71``0`0``0`0','75`180`5`0``5`0','50`5`6`0``0`0'],1,1,'24183',0,'','',''],
+[19941,1,11867,0,'Chats after Campaigns and Error pages',['4`13`7`0`1`6`0','31`CA, US`1`0``0`0'],1,1,'24183',0,'','',''],
+[18280,0,11867,0,'Test of Aloha Dev Servers',['4`14`7`0`1`6`0','50`5`6`0``0`0'],1,1,'24183',0,'','',''],
+[20440,0,17140,0,'UK Test Aloha',['4`15`7`0`1`6`0'],1,1,'25244',0,'','',''],
+[21180,0,17140,0,'UK Edition Comparison Page (Aloha)',['4`16`7`0`1`6`0','50`5`6`0``0`0','75`180`5`0``5`0','31`gb, ie`1`0``0`0'],1,1,'25244',0,'','',''],
+[21181,1,17140,0,'UK Invite Product & Platform Pages (Aloha)',['4`17`7`0`1`6`0','50`5`6`0``0`0','75`180`5`0``5`0','71``0`0``0`0','31`gb, ie`1`0``0`0','4`18`8`0`1`6`0'],1,1,'25244',0,'','',''],
+[21538,0,17140,0,'US Edition Comparison Page for UK chatters(Aloha)',['4`19`7`0`1`6`0','50`5`6`0``0`0','74`180`5`0``5`0','71``0`0``0`0','31`GB, IE`1`0``0`0'],1,1,'25244',0,'','',''],
+[21539,1,17140,0,'US Invite Product & Platform Pages for UK Chat (Aloha)',['4`20`7`0`1`6`0','50`5`6`0``0`0','75`180`5`0``5`0','71``0`0``0`0','31`GB, IE`1`0``0`0'],1,1,'25244',0,'','',''],
+[39920,0,32620,0,'FR Edition Comparison Page (Aloha)',['4`21`7`0`1`6`0','50`5`6`0``0`0','75`180`5`0``5`0'],1,1,'38421',0,'','',''],
+[39921,1,32620,0,'FR  Invite Product & Platform Pages (Aloha)',['4`22`7`0`1`6`0','50`5`6`0``0`0','75`180`5`0``5`0','71``0`0``0`0'],1,1,'38421',0,'','',''],
+[49840,1,32621,0,'DE Traing Page',['4`23`7`0`1`6`0'],1,1,'38422',0,'','',''],
+[53640,1,32621,0,'DE Product Page',['4`24`7`0`1`6`0','31`DE`1`0``0`0','71``0`0``0`0','50`5`6`0``0`0','75`180`5`0``5`0','4`25`8`0`1`6`0'],1,1,'38422',0,'','','']
+];
+
+ii_Var.CustomOfferedJS = 'if(typeof(s.tl) ==\u0027function\u0027){s.dynamicCTAs=\u0027;70130000000FWj1AAG;;;event19=1\u0027; s.tl(true, \u0027o\u0027, \u0027Chat invite presented\u0027);}';
+ii_Var.CustomAcceptedJS = 'document.cookie=\u0027ii_Accepted=true\u0027;';
+ii_Var.CustomDeclinedJS = '';
+ii_Var.CustomTriggeredJS = '';

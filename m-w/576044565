@@ -1,0 +1,37 @@
+PHTTP208.185.238.250"ê
+-GET /word/content/daily/active.xml HTTP/1.1
+Host: www.merriam-webster.com
+Connection: keep-alive
+vUser-Agent: Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/31.0.1650.63 Safari/537.36
+Accept: */*
+*Referer: http://www.merriam-webster.com/
+$Accept-Encoding: gzip,deflate,sdch
+!Accept-Language: en-US,en;q=0.8
+
+*Á
+HTTP/1.1 200 OK
+ Server: Apache/2.2.22 (Ubuntu)
+.Last-Modified: Fri, 10 Jan 2014 06:01:01 GMT
+"ETag: "603a4a-442-4ef977356a140"
+Accept-Ranges: bytes
+Content-Type: application/xml
+Content-Length: 1090
+Accept-Ranges: bytes
+%Date: Fri, 10 Jan 2014 16:01:30 GMT
+X-Varnish: 561247037
+Age: 0
+Via: 1.1 varnish
+Connection: keep-alive
+X-Cache: MISS
+Ä
+<?xml version="1.0"?>
+<wod>
+	<pub-date>01/10/2014</pub-date>
+	<headword>nonchalant</headword>
+	<pronunc>nahn-shuh-LAHNT</pronunc>
+	<function>adjective</function>
+	<short><![CDATA[Having an air of easy unconcern]]></short>
+	<audio>/cgi-bin/audio.pl?noncha02.wav=nonchalant</audio>
+	<facts><![CDATA[Since &quot;nonchalant&quot; ultimately comes from words meaning &quot;not&quot; and &quot;be warm,&quot; it's no surprise that the word is all about keeping one's cool. The French word &quot;nonchalant,&quot; which English speakers borrowed around 1730, has essentially the same meaning as our word. It was derived in Old French from the verb &quot;nonchaloir&quot; (&quot;to disregard&quot;) and can be traced back to Latin &quot;non&quot; (&quot;not&quot;) and &quot;cal&#275;re,&quot; meaning &quot;to be warm.&quot; &quot;Unconcerned&quot; is one synonym of &quot;nonchalant,&quot; along with &quot;casual,&quot; &quot;complacent,&quot; and &quot;insouciant.&quot;]]></facts>
+	<definition><![CDATA[ <strong>:</strong> having an air of easy unconcern or indifference]]></definition>
+</wod>

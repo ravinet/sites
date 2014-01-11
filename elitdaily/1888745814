@@ -1,0 +1,82 @@
+PHTTP108.60.149.204"Û
+}GET /?sid=NUEmXTQIGysjUmdVVwcqPl4SByo7UixcfQNQPjIFcQAAX3h1DUFEJmUDfg1%2BXQRnfg5pBAtQf3UPQkYmZgF3F2BdG314GXwBT1s%3D HTTP/1.1
+,Host: 10455-570-101-2579303.ampxchange.com
+Connection: keep-alive
+TAccept: text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8
+vUser-Agent: Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/31.0.1650.63 Safari/537.36
+wReferer: http://infomash.org/search_1.php?subid=4100&ts=1078_DMHL_ADMP_RON0&k=Elite+Daily&adid=15501&azx=302208654077
+$Accept-Encoding: gzip,deflate,sdch
+!Accept-Language: en-US,en;q=0.8
+
+*±$
+HTTP/1.1 200 OK
+%Date: Thu, 09 Jan 2014 13:49:55 GMT
+ Server: Apache/2.2.15 (CentOS)
+X-Powered-By: PHP/5.3.3
+Content-Length: 4415
+Keep-Alive: timeout=15
+Connection: Keep-Alive
+(Content-Type: text/html; charset=UTF-8
+Á"
+
+<html>
+<head>
+<title>Page Loading...</title>
+<meta http-equiv="cache-control" content="no-cache" >
+<meta http-equiv="pragma" content="no-cache" >
+<meta http-equiv="refresh" content="1;url=http://bridge.ame.admarketplace.net/bounce?click_id=2843539867" >
+</head>
+<body>
+<div style="height:300px"><a href="http://bridge.ame.admarketplace.net/bounce?click_id=2843539867&isaction=5" id="redirect" style="color: #FFFFFF">click here!</a></div>
+<script type="text/javascript">
+function screenSizeParameters() { if (window.screen !== undefined) { return '&m_width=' + window.screen.width + '&m_height=' + window.screen.height; } else if (window.java !== undefined) { var oScreen = ava.awt.Toolkit.getDefaultToolkit().getScreenSize().screen; return '&m_width=' + oScreen.width + '&m_height=' + oScreen.height; } else { return '&m_width=&m_height='; }};
+function docSizeParameters() { var doc = window.document; if (typeof window.innerWidth === 'number') { return '&b_width=' + window.innerWidth + '&b_height=' + window.innerHeight;} else if (doc.documentElement !== undefined && doc.documentElement.clientWidth !== undefined && doc.documentElement.clientWidth !== 0) { return '&b_width=' + doc.documentElement.clientWidth + '&b_height=' + doc.documentElement.clientHeight; } else if (doc.body !== undefined && doc.body.clientWidth !== undefined) { return '&b_width=' + doc.body.clientWidth + '&b_height=' + doc.body.clientHeight; } else { return '&b_width=&b_height=';}}; 
+function winPositionParameters() { if (typeof window.screenLeft === 'number') { return '&b_top=' + window.screenTop + '&b_left=' + window.screenLeft; } else if (window.screenX !== undefined) { return '&b_top=' + window.screenY + '&b_left=' + window.screenX; } else { return '&b_top=&b_left=';}};
+function isInIframeParameters() { var isInIframe = '0'; if(window.top !== window.self) { isInIframe = '1'; } return '&in_iframe=' + isInIframe}
+
+function createCookie(name, value, days) { var date, expires; if (days) { date = new Date(); date.setTime(date.getTime()+(days*24*60*60*1000)); expires = "; expires="+date.toGMTString(); } else { expires = ""; } document.cookie = name+"="+value+expires+"; path=/";}
+function readCookie(name) {	var nameEQ = name + "=", ca = document.cookie.split(';'), i, c;	for(i=0;i < ca.length;i++) { c = ca[i]; while (c.charAt(0)==' ') c = c.substring(1,c.length); if (c.indexOf(nameEQ) == 0) return c.substring(nameEQ.length,c.length); } return null;}
+function eraseCookie(name) { createCookie(name,"",-1);}
+
+window.onload = function() {
+	var redirectLinkElement,
+	referrerUrl = "http://infomash.org/search_1.php?subid=4100&ts=1078_DMHL_ADMP_RON0&k=Elite+Daily&adid=15501&azx=302208654077",
+	windowName = window.name,
+	cookieName = "ampclick_2843539867",
+	clickId = "2843539867",
+	url = "http://bridge.ame.admarketplace.net/bounce?click_id=2843539867" + screenSizeParameters() + docSizeParameters() + winPositionParameters() + isInIframeParameters();
+	// IE doesn't pass the referrer url with window.location redirection; that is why we use the click() function
+	if (/MSIE (\d+\.\d+);/.test(navigator.userAgent) && document.getElementById && document.getElementById('redirect').click) {  // IE
+		if(referrerUrl !== '' && (windowName === 'ampclick_blank' || windowName === 'ampclick_self')) {   // back button click
+			window.name = 'ampclick_none';
+			if(windowName === 'ampclick_self') {   // same window
+				window.location.replace(referrerUrl);
+			} else {   // new window
+				window.location.replace(referrerUrl);   // no back history send it back to referrer
+			}
+		} else {   // normal click
+			if(window.name !== '' && window.name !== 'ampclick_none') {   // has window name set
+				if(readCookie(cookieName)) {   // cookie exists
+					eraseCookie(cookieName);
+					referrerUrl !== '' ? window.location.replace(referrerUrl) : window.history.back();
+					return;
+				} else {
+					createCookie(cookieName, clickId);
+				}
+			} else {
+				window.name = window.history.length === 0 ? 'ampclick_blank' : 'ampclick_self';
+			}
+			redirectLinkElement= document.getElementById('redirect');
+			redirectLinkElement.href = url;
+			redirectLinkElement.click();
+		}
+	} else if (window.location && typeof window.location.replace === 'function'){   // other browsers
+		window.location.replace(url);
+	} else {
+		window.location = url;
+	}
+};
+
+</script>
+</body>
+</html>

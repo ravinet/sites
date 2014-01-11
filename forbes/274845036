@@ -1,0 +1,27 @@
+PHTTP
+18.7.20.70"ù
+WGET /ismedianet.js?cid=8CU2T3HV4&fpurl=http%3A%2F%2Fwww.forbes.com%2F&frurl= HTTP/1.1
+Host: contextual.media.net
+Connection: keep-alive
+Accept: */*
+vUser-Agent: Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/31.0.1650.63 Safari/537.36
+6Referer: http://www.forbes.com/fdc/welcome_mjx.shtml
+$Accept-Encoding: gzip,deflate,sdch
+!Accept-Language: en-US,en;q=0.8
+
+*∞
+HTTP/1.1 200 OK
+ Server: Apache/2.2.3 (Red Hat)
+Content-Length: 368
+Content-Type: text/javascript
+X-Powered-By: PHP/5.3.21
+Vary: Accept-Encoding
+X-MNET-H: E
+Cache-Control: max-age=1971
+(Expires: Thu, 09 Jan 2014 01:05:14 GMT
+%Date: Thu, 09 Jan 2014 00:32:23 GMT
+Connection: keep-alive
+Ú
+var _mNAds = {};
+_mNAds.getAds = function () {
+forbes_dart.ad('welcome', '300x250,640x480');if(Math.floor(Math.random() * (100) + 1) <= 10){var imgHth = new Image();imgHth.src = 'http://search.media.net/__media__/js/trans.gif?requrl='+encodeURIComponent(window.medianet_requrl)+'&refurl='+encodeURIComponent(window.medianet_refurl)+'&r=' + new Date().getTime();};	};

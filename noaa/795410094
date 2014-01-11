@@ -1,0 +1,96 @@
+PHTTP129.15.96.11"Ú
+$GET /css/newsReleases.css HTTP/1.1
+Host: www.noaa.gov
+Connection: keep-alive
+Accept: text/css,*/*;q=0.1
+vUser-Agent: Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/31.0.1650.63 Safari/537.36
+Referer: http://www.noaa.gov/
+$Accept-Encoding: gzip,deflate,sdch
+!Accept-Language: en-US,en;q=0.8
+
+*ø
+HTTP/1.0 200 OK
+.Last-Modified: Wed, 13 Nov 2013 19:00:00 GMT
+Accept-Ranges: bytes
+Content-Length: 1658
+Content-Type: text/css
+%Date: Thu, 09 Jan 2014 01:16:04 GMT
+Server: Apache
+$ETag: "e0b7292b-67a-4eb1392676c00"
+(Expires: Thu, 09 Jan 2014 02:16:04 GMT
+Cache-Control: max-age=3600
+
+Age: 130
+Via: 1.0 c7.w3.woc (squid)
+Connection: keep-alive
+ü
+/** Right-side News Releases **/
+	#newsReleases {
+		margin-top: 10px;
+		width: 100%; 
+		font-family: Arial, Helvetica, sans-serif;
+		margin-bottom: 0px;
+	}
+
+/*	#newsReleases a:link { color: #00a3e3; }
+	#newsReleases a:visited { color: #0057A5;	}
+	#newsReleases a:hover { color: #ffbf00;	}*/
+	#newsReleaseArchive { 
+		font-weight: normal;
+		float: right;
+		font-size: .8em;
+	}
+	#newsReleasesList {
+		font-family: Arial, Helvetica, sans-serif;
+		font-size: .9em;
+		/* font-weight: bold; */
+		list-style-type: none;
+		padding-left: 0px;
+		margin: 0px; 
+		background: url('/images/back_stories.png') repeat-x;
+		border-top:1px solid  #AEDBF4;
+		border-left: 1px solid #E3F6FF;
+		border-right: 1px solid #E3F6FF; 
+	}
+	
+	#newsReleasesList li {
+		background: url('/images/feature_stories_bullet.png') no-repeat;
+		padding: 4px 4px 4px 21px;
+		border-bottom:  1px dotted #dddddd;
+		font-weight: bold;
+		line-height: 1.25em;
+	}
+	
+	li#subscribeReleases  * { vertical-align: middle;  font-weight: normal;}
+	li#subscribeReleases  {
+		background: none;
+		border-bottom: none;
+		text-align: right;
+		padding-top: 1px;
+	}
+
+	
+
+	.rssFeed #subscribeReleases  * { vertical-align: middle;  font-weight: normal; font-size: .9em;}
+	.rssFeed #subscribeReleases  {
+		position: relative;
+		top: -20px;
+		background: none;
+		border-bottom: none;
+		text-align: right;
+		margin-right: 6px;
+		margin-bottom: 0px;
+	}
+
+.rssBody ul { 
+	list-style-type: none;
+	margin-left: 0px;
+	padding-left: 0px;
+	margin-top: 0px;
+	margin-bottom:2px;
+	padding-bottom: 20px;
+}
+.rssBody li {
+	line-height: 18px;
+	padding-bottom: 4px;	
+}

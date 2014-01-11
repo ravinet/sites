@@ -1,0 +1,29 @@
+PHTTP65.55.227.140"û
+&GET /redir/FX103030346.aspx HTTP/1.1
+Host: office.microsoft.com
+Connection: keep-alive
+TAccept: text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8
+vUser-Agent: Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/31.0.1650.63 Safari/537.36
+$Accept-Encoding: gzip,deflate,sdch
+!Accept-Language: en-US,en;q=0.8
+
+*Ó
+ HTTP/1.1 301 Moved Permanently
+Cache-Control: no-cache
+Pragma: no-cache
+Expires: -1
+rLocation: http://office.microsoft.com/en-us/business/office-365-enterprise-e3-business-software-FX103030346.aspx
+Server: Microsoft-IIS/7.5
+FP3P: CP="ADM CAO CONi COR CUR DEV DSP IND OTRi OUR PSA PUBi STA STP"
+ASet-Cookie: lc=en-US+US:99; domain=office.microsoft.com; path=/
+9Set-Cookie: log=98; domain=office.microsoft.com; path=/
+bSet-Cookie: queryid=; domain=office.microsoft.com; expires=Wed, 09-Jan-2013 00:59:06 GMT; path=/
+jSet-Cookie: _DetectCookies=Y; domain=office.microsoft.com; expires=Tue, 09-Jan-2024 00:59:06 GMT; path=/
+X-UA-Compatible: IE=10
+X-LLCC: en-US
+X-Machine: BLUREN172
+X-Powered-By: ASP.NET
+.MicrosoftSharePointTeamServices: 14.0.0.6114
+%Date: Thu, 09 Jan 2014 00:59:06 GMT
+Content-Length: 0
+

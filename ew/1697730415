@@ -1,0 +1,23 @@
+PHTTP74.125.225.123"Ô
+TGET /adj/N2434.EW.com/B7871179.4;sz=300x250;pc=[TPAS_ID];ord=[timestamp]? HTTP/1.1
+Host: ad.doubleclick.net
+Connection: keep-alive
+Accept: */*
+vUser-Agent: Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/31.0.1650.63 Safari/537.36
+ Referer: http://www.ew.com/ew/
+$Accept-Encoding: gzip,deflate,sdch
+!Accept-Language: en-US,en;q=0.8
+PCookie: id=2208c89e7e02006f||t=1389274730|et=730|cs=002213fd4873f2a34651589219
+
+*Ö
+HTTP/1.1 200 OK
+Server: DCLK-AdSvr
+(Content-Type: application/x-javascript
+Content-Length: 328
+Cache-Control: no-cache
+Pragma: no-cache
+%Date: Thu, 09 Jan 2014 13:38:50 GMT
+(Expires: Thu, 09 Jan 2014 13:38:50 GMT
+Alternate-Protocol: 80:quic
+Ê
+document.write('<a target="_blank" href="http://ad.doubleclick.net/click;h=v8/3ed2/0/0/%2a/l;278795944;0-0;0;105566974;4307-300/250;56850215/56739403/1;;~okv=;pc=[TPAS_ID];;~sscs=%3fhttp://www.darknessbecomesyou.com/"><img src="http://s0.2mdn.net/viewad/1234407/HBO_TD_300x250_SPSUNDAY.jpg" border=0 alt="Advertisement"></a>');

@@ -1,0 +1,26 @@
+PHTTP67.192.222.18"Ë
+.GET /Job/listRecentSearchesAjax.htm HTTP/1.1
+Host: www.glassdoor.com
+Connection: keep-alive
+Accept: */*
+"X-Requested-With: XMLHttpRequest
+vUser-Agent: Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/31.0.1650.63 Safari/537.36
+-Referer: http://www.glassdoor.com/index.htm
+$Accept-Encoding: gzip,deflate,sdch
+!Accept-Language: en-US,en;q=0.8
+¼Cookie: JSESSIONID=B2F85105C57D3F3F99D9BA0094335AA1; ARPNTS=MTkyLjE2OC4xMDEuMjQ4; gdId=600030fa-a3fa-4866-9b15-63f31a3d5772; __utma=88367261.1702190681.1389230612.1389230612.1389230612.1; __utmb=88367261.1.10.1389230612; __utmc=88367261; __utmz=88367261.1389230612.1.1.utmcsr=(direct)|utmccn=(direct)|utmcmd=(none)
+
+*›
+HTTP/1.1 200 OK
+Server: Apache-Coyote/1.1
+Accept-Charset: UTF-8
+#X-UA-Compatible: IE=edge,chrome=1
+LP3P: CP="IDC DSP COR ADM DEVi TAIi PSA PSD IVAi IVDi CONi HIS OUR IND CNT"
+2Cache-Control: no-cache,no-store,must-revalidate
+Pragma: no-cache
+Expires: 0
+.Content-Type: application/json;charset=UTF-8
+Content-Length: 24
+%Date: Thu, 09 Jan 2014 01:23:19 GMT
+
+{"recentJobSearches":{}}

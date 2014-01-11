@@ -1,0 +1,1879 @@
+PHTTP65.254.51.34"�
+GET / HTTP/1.1
+Host: www.infowars.com
+Connection: keep-alive
+TAccept: text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8
+vUser-Agent: Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/31.0.1650.63 Safari/537.36
+$Accept-Encoding: gzip,deflate,sdch
+!Accept-Language: en-US,en;q=0.8
+
+*��
+HTTP/1.1 200 OK
+(Content-Type: text/html; charset=UTF-8
+Content-Length: 124704
+Accept-Ranges: bytes
+%Date: Wed, 08 Jan 2014 20:29:44 GMT
+
+Age: 854
+Connection: keep-alive
+X-Cache: cached
+��
+<!DOCTYPE html>
+
+<html lang="en-US">
+
+<head>
+  <meta charset="UTF-8" />
+  
+  <title> Alex Jones&#039; Infowars: There&#039;s a war on for your mind!</title>
+  <meta name="description" content="Infowars.com the home of the #1 Internet News Show in the World." />
+  <meta property="fb:admins" content="6499393458" />
+  <link rel="profile" href="http://gmpg.org/xfn/11" />
+  <link rel="stylesheet" href="http://www.infowars.com/wp-content/themes/infowars-standard/style.css" type="text/css" media="screen" />
+  <!--
+  <link rel="pingback" href="" />
+  -->
+
+  
+  <!-- TJV: start wordpress generated document header -->
+  <link rel='stylesheet' id='wp-email-css'  href='http://www.infowars.com/wp-content/plugins/wp-email/email-css.css' type='text/css' media='all' />
+<link rel='stylesheet' id='wp-polls-css'  href='http://www.infowars.com/wp-content/plugins/wp-polls/polls-css.css' type='text/css' media='all' />
+<link rel='stylesheet' id='jquery.fancybox-1.3.4-css'  href='http://www.infowars.com/wp-content/themes/infowars-standard/js/fancybox/jquery.fancybox-1.3.4.css' type='text/css' media='all' />
+<script type='text/javascript' src='http://www.infowars.com/wp-includes/js/jquery/jquery.js'></script>
+<script type='text/javascript' src='http://www.infowars.com/wp-includes/js/jquery/jquery-migrate.min.js'></script>
+<script type='text/javascript' src='http://www.infowars.com/wp-content/themes/infowars-standard/js/fancybox/jquery.fancybox-1.3.4.pack.js'></script>
+<script type='text/javascript' src='http://www.infowars.com/wp-content/themes/infowars-standard/js/call_fanceybox.js'></script>
+
+<!-- Dynamic Content Gallery plugin version 3.3.5 www.studiograsshopper.ch  Begin scripts -->
+<link type="text/css" rel="stylesheet" href="http://www.infowars.com/wp-content/plugins/dynamic-content-gallery-plugin/js-mootools/css/jd.gallery.css" />
+<script type="text/javascript" src="http://www.infowars.com/wp-content/plugins/dynamic-content-gallery-plugin/js-mootools/scripts/mootools-1.2.4-core-jm.js"></script>
+<script type="text/javascript" src="http://www.infowars.com/wp-content/plugins/dynamic-content-gallery-plugin/js-mootools/scripts/mootools-1.2.4.4-more.js"></script>
+<script type="text/javascript" src="http://www.infowars.com/wp-content/plugins/dynamic-content-gallery-plugin/js-mootools/scripts/jd.gallery_1_2_4_4.js"></script>
+<script type="text/javascript" src="http://www.infowars.com/wp-content/plugins/dynamic-content-gallery-plugin/js-mootools/scripts/jd.gallery.transitions_1_2_4_4.js"></script>
+<script type="text/javascript">
+   function startGallery() {
+      var myGallery = new gallery($("myGallery"), {
+	  showArrows: true,
+	  showCarousel: false,
+	  showInfopane: true,
+	  timed: true,
+	  delay: 9000,
+	  defaultTransition: "fade",
+	  slideInfoZoneOpacity: .7,
+	  slideInfoZoneSlide: true,
+	  textShowCarousel: "More Articles"
+      });
+   }
+   window.addEvent("domready",startGallery);
+</script>
+
+
+
+<style type="text/css">
+
+.imageElement {
+	visibility: hidden;
+	}
+	
+#myGallery, #myGallerySet, #flickrGallery {
+	background: #000 url('http://www.infowars.com/wp-content/plugins/dynamic-content-gallery-plugin/js-mootools/css/img/loading-bar-black.gif') no-repeat center;
+	border: 0px solid #1B2944;
+	height: 320px;
+	width: 620px;
+	}
+
+.jdGallery .slideInfoZone {
+	background-color: #000015 !important;
+	height: 75px;
+	}
+	
+.jdGallery .slideInfoZone h2 {
+	color: #FFFFFF !important;
+	font-size: 30px !important;
+	font-weight: normal !important;
+	margin: 2px 5px !important;
+	padding: 0px 0px !important;
+	 font-family:'LeagueGothicRegular',"Lucida Sans Unicode",Arial;
+	text-transform:uppercase;
+	/*font-family:Arial, Helvetica, sans-serif;*/
+	/*font-family:Verdana, Geneva, sans-serif;*/
+	/*font-family:Tahoma, Geneva, sans-serif;*/
+	/*font-family:"Arial Black", Gadget, sans-serif;*/
+	/*font-family:"Lucida Console", Monaco, monospace;*/
+	}
+
+.jdGallery .slideInfoZone p {
+	color: #FFFFFF !important;
+	font-size: 11px !important;
+	line-height: 14px !important;
+	margin: 2px 5px !important;
+	padding: 0px 0px !important;
+	}
+
+.jdGallery .slideInfoZone p a, .jdGallery .slideInfoZone p a:link, .jdGallery .slideInfoZone p a:visited {
+	color: #FFFFFF !important;
+	font-weight:normal !important;
+	}
+
+.jdGallery .slideInfoZone p a:hover {
+	color: #FFFFFF !important;
+	font-weight:bold !important;
+	}
+	
+.jdGallery .slideElement {
+	background-color: #1B2944;
+	}
+
+</style>
+<!-- End of Dynamic Content Gallery scripts -->
+
+<style type="text/css">
+.wp-polls .pollbar {
+	margin: 1px;
+	font-size: 8px;
+	line-height: 10px;
+	height: 10px;
+	background-image: url('http://www.infowars.com/wp-content/plugins/wp-polls/images/default_gradient/pollbg.gif');
+	border: 1px solid #c8c8c8;
+}
+</style>
+    
+	<style type="text/css">
+        #rss0,#rss4,#rss8,#rss12,#rss16 {display:none;}
+        #rss_pptv0,#rss_pptv4,#rss_pptv8,#rss_pptv12,#rss_pptv16 {display:none;}
+
+        #link_rss0,#link_rss4,#link_rss8,#link_rss12,#link_rss16 {
+        	width:12px;
+			padding:3px;
+			border:1px solid gray;
+			margin:0px; 
+			
+        	}
+        
+        
+       #rss_pptvbox ul {
+		    list-style-type: none;
+		    margin-left: 0px;
+		}
+        
+        
+        .rss_list {
+        float: left;
+        
+        min-height: 67px;
+	    margin: 0 5px 5px;
+	    overflow: hidden;
+	    width: 130px;
+        
+        }
+        
+        .rss_link img {
+        	float: left;
+        	margin-right:5px;
+        }
+        
+        
+        
+        
+        .rssbutton {
+	    background: none repeat scroll 0 0 #4C8FFC;
+	    border: 0.5px solid #3079ED !important;
+	    border-radius: 3px 3px 3px 3px;
+	    float: left;
+	    height: 20px;
+	    margin-right: 3px;
+	    text-align: center;
+	    width: 20px;
+	    
+	    
+	    	border:none!important;
+		color:white;
+		cursor:pointer;
+		line-height:20px;
+		text-align:center;
+		font-weight:bold;
+	}
+        
+        
+        
+        
+        
+        
+    </style>
+    
+    
+    
+    
+    <script type="text/javascript">
+jQuery("document").ready(function() {	
+	// Feeds:
+	jQuery("#link_rss0").click(function() {
+		jQuery("#rssbox").html("");
+		jQuery("#rssbox").html(jQuery("#rss0").html());	
+	});	
+	
+	jQuery("#link_rss4").click(function() {
+		jQuery("#rssbox").html("");
+		jQuery("#rssbox").html(jQuery("#rss4").html());	
+	});
+	
+	jQuery("#link_rss8").click(function() {
+		jQuery("#rssbox").html("");
+		jQuery("#rssbox").html(jQuery("#rss8").html());
+	});
+
+	jQuery("#link_rss12").click(function() {
+		jQuery("#rssbox").html("");
+		jQuery("#rssbox").html(jQuery("#rss12").html());	
+	});
+	
+	jQuery("#link_rss16").click(function() {
+		jQuery("#rssbox").html("");
+		jQuery("#rssbox").html(jQuery("#rss16").html());
+	});
+
+
+});
+</script>
+
+
+
+<script type="text/javascript">
+	function replace(divid, content) {
+		jQuery(divid).html("");
+		jQuery(divid).html(jQuery(content).html());
+}
+</script>
+
+    
+       
+  <!-- TJV: end -->
+
+
+
+<!-- NEW AD SYSTEM -->
+ 
+<meta http-equiv="refresh" content="3600">
+
+<script type='text/javascript'>
+var googletag = googletag || {};
+googletag.cmd = googletag.cmd || [];
+(function() {
+var gads = document.createElement('script');
+gads.async = true;
+gads.type = 'text/javascript';
+var useSSL = 'https:' == document.location.protocol;
+gads.src = (useSSL ? 'https:' : 'http:') +
+'//www.googletagservices.com/tag/js/gpt.js';
+var node = document.getElementsByTagName('script')[0];
+node.parentNode.insertBefore(gads, node);
+})();
+</script>
+
+<script type='text/javascript'>
+googletag.cmd.push(function() {
+
+googletag.defineSlot('/7831363/infowars/IW-HomePage/IW-HP-HOUSE-300x250-1', [300, 250], 'div-gpt-ad-1358357970364-3').addService(googletag.pubads());
+googletag.defineSlot('/7831363/infowars/IW-HomePage/IW-HP-HOUSE-300x250-2', [300, 250], 'div-gpt-ad-1358357970364-4').addService(googletag.pubads());
+
+
+googletag.defineSlot('/7831363/infowars/IW-HomePage/IW-HP-TOP-620', [620, 100], 'div-gpt-ad-1358357970364-7').addService(googletag.pubads());
+
+googletag.defineSlot('/7831363/infowars/IW-HomePage/IW-HP-FEATURED-TXT', [500, 40], 'div-gpt-ad-1359996156134-0').addService(googletag.pubads());
+
+<!-- new stuff -->
+/*
+googletag.defineSlot('/7831363/infowars/IW-HomePage/IW-HP-EFOODS-300x80', [300, 80], 'div-gpt-ad-1363985578957-0').addService(googletag.pubads());
+*/
+
+googletag.defineSlot('/7831363/infowars/IW-HomePage/IW-HP-2nd-620', [620, 100], 'div-gpt-ad-1361825940700-1').addService(googletag.pubads());
+googletag.defineSlot('/7831363/infowars/IW-HomePage/IW-HP-AD-300x250-1', [300, 250], 'div-gpt-ad-1361825940700-2').addService(googletag.pubads());
+googletag.defineSlot('/7831363/infowars/IW-HomePage/IW-HP-AD-300x250-2', [300, 250], 'div-gpt-ad-1361825940700-3').addService(googletag.pubads());
+googletag.defineSlot('/7831363/infowars/IW-HomePage/IW-HP-AD-300x250-3', [300, 250], 'div-gpt-ad-1361825940700-4').addService(googletag.pubads());
+
+/* text links */
+googletag.defineSlot('/7831363/infowars/IW-HomePage/IW-HP-TXT-1', [270, 40], 'div-gpt-ad-1363721375312-0').addService(googletag.pubads());
+googletag.defineSlot('/7831363/infowars/IW-HomePage/IW-HP-TXT-2', [270, 40], 'div-gpt-ad-1363721401486-0').addService(googletag.pubads());
+googletag.defineSlot('/7831363/infowars/IW-HomePage/IW-HP-TXT-3', [270, 40], 'div-gpt-ad-1363721427501-0').addService(googletag.pubads());
+googletag.defineSlot('/7831363/infowars/IW-HomePage/IW-HP-TXT-4', [270, 40], 'div-gpt-ad-1363721449256-0').addService(googletag.pubads());
+
+
+function detect_function() {
+                var is_safari = navigator.userAgent.toLowerCase().indexOf('safari/') > -1;
+                if (is_safari)
+                        {    
+                        }
+                        else
+                        {
+                        googletag.pubads().enableSingleRequest();
+                        }
+}
+detect_function();
+googletag.enableServices();
+});
+</script>
+
+
+
+<!-- END NEW AD SYSTEM -->
+<script type="text/JavaScript">
+<!--
+function timedRefresh(timeoutPeriod) {
+	setTimeout("location.reload(true);",timeoutPeriod);
+}
+timedRefresh(9000000);
+//   -->
+</script>
+
+<!-- Analytics -->
+<script type="text/javascript">
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-6888464-2']);
+  _gaq.push(['_trackPageview']);
+
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+</script>
+
+
+</head>
+
+<body class="home blog">
+
+<div id="nContainer"><!-- TJV: start nContainer div closing in footer.php -->
+
+<div id="nHeader">
+
+  <div id="nHeaderLogo">
+<!-- new stuff -->
+        
+      <div style="background:url(http://static.infowars.com/2010/templateimages/header4.jpg) no-repeat center top; width:995px; height:188px;">
+
+<!--
+   	<div id="paul_contest" style="padding-right:5px; padding-top:20px; float:right;">
+    <a href="http://www.infowars.com/b" target="_self" title="Bilderberg Broadcast">
+    <img src="http://static.infowars.com/images/listen-coveragewhite2.png" style="border:0px; width:172px;"  />
+    </a>
+    </div>
+-->
+      	
+      	
+    <a href="http://www.infowars.com" target="_self" title="Infowars.com Home Page" style="float:left; width:772px; height:86px; padding-top:16px; padding-left:40px;"></a>
+</div>
+
+
+  </div>
+  <div id="nHeaderNavigation">
+    <div class="menu-header"><ul id="menu-navigation-header" class="menu"><li id="menu-item-52414" class="menu-item menu-item-type-custom menu-item-object-custom current-menu-item current_page_item menu-item-home menu-item-52414"><a title="Home" href="http://www.infowars.com/">Home</a></li>
+<li id="menu-item-52415" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-52415"><a title="Alex Jones Radio Show" href="http://www.infowars.com/watch-alex-jones-show">Alex Jones Radio Show</a>
+<ul class="sub-menu">
+	<li id="menu-item-52416" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-52416"><a title="Listen Live" href="http://www.infowars.com/stream.pls">Listen Live</a></li>
+	<li id="menu-item-66532" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-66532"><a href="http://www.infowars.com/infowars.asx">Listen Windows Media</a></li>
+	<li id="menu-item-52417" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-52417"><a href="http://www.infowars.com/listen-on-the-internet/">Listen On The Internet</a></li>
+	<li id="menu-item-52418" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-52418"><a href="http://www.infowars.com/about-alex-jones/">About Alex Jones</a></li>
+	<li id="menu-item-80076" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-80076"><a href="http://www.infowars.com/listen-to-the-radio-show-archive/">Radio Show Archive</a></li>
+	<li id="menu-item-80077" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-80077"><a href="http://www.infowars.com/newsletter-sign-up/">Newsletter Sign Up</a></li>
+</ul>
+</li>
+<li id="menu-item-52419" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-52419"><a title="News">News</a>
+<ul class="sub-menu">
+	<li id="menu-item-52430" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-52430"><a href="http://www.infowars.com/category/us-news/">U.S. News</a></li>
+	<li id="menu-item-52433" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-52433"><a href="http://www.infowars.com/category/world-news/">World News</a></li>
+	<li id="menu-item-52423" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-52423"><a href="http://www.infowars.com/category/economic-crisis/">Economic Crisis</a></li>
+	<li id="menu-item-52432" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-52432"><a href="http://www.infowars.com/category/world-at-war/">World at War</a></li>
+	<li id="menu-item-52420" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-52420"><a href="http://www.infowars.com/category/big-brother/">Big Brother</a></li>
+	<li id="menu-item-87948" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-87948"><a href="http://www.infowars.com/category/planet-infowars/">Planet infowars</a></li>
+	<li id="menu-item-52427" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-52427"><a href="http://www.infowars.com/category/police-state/">Police State</a></li>
+	<li id="menu-item-52428" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-52428"><a href="http://www.infowars.com/category/science-technology/">Science &#038; Technology</a></li>
+	<li id="menu-item-52426" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-52426"><a href="http://www.infowars.com/category/medical-tyranny/">Medical Tyranny</a></li>
+	<li id="menu-item-52422" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-52422"><a href="http://www.infowars.com/category/constitution/">Constitution</a></li>
+	<li id="menu-item-52421" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-52421"><a href="http://www.infowars.com/category/border-control-illegal-immigration/">Border Control &#038; Illegal Immigration</a></li>
+	<li id="menu-item-52431" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-52431"><a href="http://www.infowars.com/category/war-on-terror/">War on Terror</a></li>
+	<li id="menu-item-52424" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-52424"><a href="http://www.infowars.com/category/hot-news/">Hot News</a></li>
+</ul>
+</li>
+<li id="menu-item-52434" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-52434"><a title="Multimedia">Multimedia</a>
+<ul class="sub-menu">
+	<li id="menu-item-69613" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-69613"><a title="Photos" href="https://twitter.com/#!/RealAlexJones/media/grid">Photos</a></li>
+	<li id="menu-item-52435" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-52435"><a href="http://prisonplanet.tv">Movies/Shows/Reports</a></li>
+	<li id="menu-item-52438" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-52438"><a title="YouTube Video Clips" href="http://www.youtube.com/user/TheAlexJonesChannel">Video Clips</a></li>
+</ul>
+</li>
+<li id="menu-item-52439" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-52439"><a title="Forum" href="http://www.infowars.com/prison-planet-forum/">Forum</a></li>
+<li id="menu-item-52441" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-52441"><a href="http://www.infowarsshop.com/"><span style="color:red;">Store</span></a>
+<ul class="sub-menu">
+	<li id="menu-item-52442" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-52442"><a title="Infowars Main Store" href="http://www.infowarsshop.com/">Infowars Main Store</a></li>
+	<li id="menu-item-52443" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-52443"><a href="http://infowars-shop.stores.yahoo.net/index.html">Infowars Classic Store</a></li>
+</ul>
+</li>
+<li id="menu-item-58015" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-58015"><a title="Support Tickets" href="http://www.infowars.com/support-tickets/">Contact</a>
+<ul class="sub-menu">
+	<li id="menu-item-52445" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-52445"><a title="Support Tickets" href="http://www.infowars.com/support-tickets/">Support Tickets</a></li>
+	<li id="menu-item-52457" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-52457"><a href="http://www.infowars.com/writers/">Writers</a></li>
+	<li id="menu-item-72079" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-72079"><a href="http://www.infowars.com/advertise-with-infowars/">Advertise</a></li>
+	<li id="menu-item-88618" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-88618"><a href="http://www.infowars.com/whistleblower/">Whistleblowers</a></li>
+</ul>
+</li>
+<li id="menu-item-70390" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-70390"><a href="http://www.infowars.com/category/featured-stories/">Top Stories</a></li>
+<li id="menu-item-70411" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-70411"><a href="http://www.infowars.com/rss"><span style="color:red;">Breaking News</span></a></li>
+<li id="menu-item-52446" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-52446"><a title="Search" href="http://www.infowars.com/search-page/">Search</a></li>
+<li id="menu-item-75196" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-75196"><a href="http://www.infowars.com/advertise-with-infowars/">Advertise</a></li>
+</ul></div>  </div>    
+</div>
+
+<div id="nBody">
+  <div id="nBodyLeft" class="floatLeft">
+    <div style="background-color: #EEEEEE; padding-bottom: 15px; padding-left: 20px; padding-top: 15px;">
+      <div class="sliderNew">
+        <div id="nNewsSlide">
+          
+<div id="myGallery"><!-- Start of Dynamic Content Gallery output -->
+
+<div class="imageElement"><!-- DCG Image #1 -->
+	<h3><a href="http://www.infowars.com/reporters-confirm-radiation-levels-1200-higher-than-normal-on-cali-beach/" title="Read More">Reporters Confirm Radiation Levels 1200% Higher Than Normal on Cali. Beach</a></h3>
+	<p></p>
+	<a href="http://www.infowars.com/reporters-confirm-radiation-levels-1200-higher-than-normal-on-cali-beach/" title="Read More" class="open"></a>
+	<img src="http://static.infowars.com/slideshow/010814reading.jpg" alt="Reporters Confirm Radiation Levels 1200% Higher Than Normal on Cali. Beach" class="dfcg-metabox full" />
+	<img class="dfcg-thumb-legacy thumbnail" src="http://static.infowars.com/slideshow/010814reading.jpg" alt="Reporters Confirm Radiation Levels 1200% Higher Than Normal on Cali. Beach" />
+</div>
+
+<div class="imageElement"><!-- DCG Image #2 -->
+	<h3><a href="http://www.infowars.com/government-media-cover-up-fukushima-radiation-wave-hitting-us/" title="Read More">Government, Media Cover Up Fukushima Radiation Wave Hitting US</a></h3>
+	<p></p>
+	<a href="http://www.infowars.com/government-media-cover-up-fukushima-radiation-wave-hitting-us/" title="Read More" class="open"></a>
+	<img src="http://static.infowars.com/slideshow/010814fukushimawave.jpg" alt="Government, Media Cover Up Fukushima Radiation Wave Hitting US" class="dfcg-metabox full" />
+	<img class="dfcg-thumb-legacy thumbnail" src="http://static.infowars.com/slideshow/010814fukushimawave.jpg" alt="Government, Media Cover Up Fukushima Radiation Wave Hitting US" />
+</div>
+
+<div class="imageElement"><!-- DCG Image #3 -->
+	<h3><a href="http://www.infowars.com/record-high-numbers-believe-no-matter-how-bad-things-are-congress-will-make-them-worse/" title="Read More">Record High Numbers Believe &#8220;No Matter How Bad Things Are, Congress Will Make Them Worse&#8221;</a></h3>
+	<p></p>
+	<a href="http://www.infowars.com/record-high-numbers-believe-no-matter-how-bad-things-are-congress-will-make-them-worse/" title="Read More" class="open"></a>
+	<img src="http://static.prisonplanet.com/slideshow/020114tile3.jpg" alt="Record High Numbers Believe &#8220;No Matter How Bad Things Are, Congress Will Make Them Worse&#8221;" class="dfcg-metabox full" />
+	<img class="dfcg-thumb-legacy thumbnail" src="http://static.prisonplanet.com/slideshow/020114tile3.jpg" alt="Record High Numbers Believe &quot;No Matter How Bad Things Are, Congress Will Make Them Worse&quot;" />
+</div>
+
+<div class="imageElement"><!-- DCG Image #4 -->
+	<h3><a href="http://www.infowars.com/al-qaeda-natos-timeless-tool/" title="Read More">Al-Qaeda, NATO’s Timeless Tool</a></h3>
+	<p></p>
+	<a href="http://www.infowars.com/al-qaeda-natos-timeless-tool/" title="Read More" class="open"></a>
+	<img src="http://static.infowars.com/slideshow/aq.jpg" alt="Al-Qaeda, NATO’s Timeless Tool" class="dfcg-metabox full" />
+	<img class="dfcg-thumb-legacy thumbnail" src="http://static.infowars.com/slideshow/aq.jpg" alt="Al-Qaeda, NATO’s Timeless Tool" />
+</div>
+
+<div class="imageElement"><!-- DCG Image #5 -->
+	<h3><a href="http://www.infowars.com/farmers-file-lawsuit-to-protect-themselves-against-monsanto/" title="Read More">Farmers File Lawsuit to Protect Themselves Against Monsanto</a></h3>
+	<p></p>
+	<a href="http://www.infowars.com/farmers-file-lawsuit-to-protect-themselves-against-monsanto/" title="Read More" class="open"></a>
+	<img src="http://static.infowars.com/slideshow/010814cornfield.jpg" alt="Farmers File Lawsuit to Protect Themselves Against Monsanto" class="dfcg-metabox full" />
+	<img class="dfcg-thumb-legacy thumbnail" src="http://static.infowars.com/slideshow/010814cornfield.jpg" alt="Farmers File Lawsuit to Protect Themselves Against Monsanto" />
+</div>
+
+<div class="imageElement"><!-- DCG Image #6 -->
+	<h3><a href="http://www.infowars.com/obama-to-prevent-dangerous-people-from-owning-guns/" title="Read More">Obama to Prevent &#8220;Dangerous&#8221; People From Owning Guns</a></h3>
+	<p></p>
+	<a href="http://www.infowars.com/obama-to-prevent-dangerous-people-from-owning-guns/" title="Read More" class="open"></a>
+	<img src="http://static.infowars.com/slideshow/obamarifle.jpg" alt="Obama to Prevent &#8220;Dangerous&#8221; People From Owning Guns" class="dfcg-metabox full" />
+	<img class="dfcg-thumb-legacy thumbnail" src="http://static.infowars.com/slideshow/obamarifle.jpg" alt="Obama to Prevent &quot;Dangerous&quot; People From Owning Guns " />
+</div>
+
+<div class="imageElement"><!-- DCG Image #7 -->
+	<h3><a href="http://www.infowars.com/thyroid-cancer-rates-on-the-rise-in-japanese-children-experts-warn-residents-to-evacuate/" title="Read More">Thyroid cancer rates on the rise in Japanese children, experts warn residents to evacuate</a></h3>
+	<p></p>
+	<a href="http://www.infowars.com/thyroid-cancer-rates-on-the-rise-in-japanese-children-experts-warn-residents-to-evacuate/" title="Read More" class="open"></a>
+	<img src="http://static.infowars.com/slideshow/010814fukushima.jpg" alt="Thyroid cancer rates on the rise in Japanese children, experts warn residents to evacuate" class="dfcg-metabox full" />
+	<img class="dfcg-thumb-legacy thumbnail" src="http://static.infowars.com/slideshow/010814fukushima.jpg" alt="Thyroid cancer rates on the rise in Japanese children, experts warn residents to evacuate" />
+</div>
+
+<div class="imageElement"><!-- DCG Image #8 -->
+	<h3><a href="http://www.infowars.com/chinas-e-commerce-giant-alibaba-bans-bitcoin/" title="Read More">China&#8217;s E-Commerce Giant Alibaba Bans Bitcoin</a></h3>
+	<p></p>
+	<a href="http://www.infowars.com/chinas-e-commerce-giant-alibaba-bans-bitcoin/" title="Read More" class="open"></a>
+	<img src="http://static.infowars.com/slideshow/010814bitcoins.jpg" alt="China&#8217;s E-Commerce Giant Alibaba Bans Bitcoin" class="dfcg-metabox full" />
+	<img class="dfcg-thumb-legacy thumbnail" src="http://static.infowars.com/slideshow/010814bitcoins.jpg" alt="China&#039;s E-Commerce Giant Alibaba Bans Bitcoin" />
+</div>
+
+<div class="imageElement"><!-- DCG Image #9 -->
+	<h3><a href="http://www.infowars.com/italian-unemployment-hits-37-year-high/" title="Read More">Italian Unemployment Hits 37-Year High</a></h3>
+	<p></p>
+	<a href="http://www.infowars.com/italian-unemployment-hits-37-year-high/" title="Read More" class="open"></a>
+	<img src="http://static.infowars.com/slideshow/010814unemployed.jpg" alt="Italian Unemployment Hits 37-Year High" class="dfcg-metabox full" />
+	<img class="dfcg-thumb-legacy thumbnail" src="http://static.infowars.com/slideshow/010814unemployed.jpg" alt="Italian Unemployment Hits 37-Year High" />
+</div>
+
+<div class="imageElement"><!-- DCG Image #10 -->
+	<h3><a href="http://www.infowars.com/the-great-inequality-debate/" title="Read More">The Great Inequality Debate</a></h3>
+	<p></p>
+	<a href="http://www.infowars.com/the-great-inequality-debate/" title="Read More" class="open"></a>
+	<img src="http://static.infowars.com/slideshow/eattherich.jpg" alt="The Great Inequality Debate" class="dfcg-metabox full" />
+	<img class="dfcg-thumb-legacy thumbnail" src="http://static.infowars.com/slideshow/eattherich.jpg" alt="The Great Inequality Debate" />
+</div>
+
+<div class="imageElement"><!-- DCG Image #11 -->
+	<h3><a href="http://www.infowars.com/the-beginning-phase-of-the-economic-collapse-is-over-the-collapse-is-next/" title="Read More">The Beginning Phase Of The Economic Collapse Is Over. The Collapse Is Next</a></h3>
+	<p></p>
+	<a href="http://www.infowars.com/the-beginning-phase-of-the-economic-collapse-is-over-the-collapse-is-next/" title="Read More" class="open"></a>
+	<img src="http://static.infowars.com/bindnfocom/2014/01/collapse.jpg" alt="The Beginning Phase Of The Economic Collapse Is Over. The Collapse Is Next" class="dfcg-metabox full" />
+	<img class="dfcg-thumb-legacy thumbnail" src="http://static.infowars.com/bindnfocom/2014/01/collapse.jpg" alt="The Beginning Phase Of The Economic Collapse Is Over. The Collapse Is Next" />
+</div>
+
+<div class="imageElement"><!-- DCG Image #12 -->
+	<h3><a href="http://www.infowars.com/no-james-madison-did-not-reject-nullification/" title="Read More">No, James Madison did not Reject Nullification</a></h3>
+	<p></p>
+	<a href="http://www.infowars.com/no-james-madison-did-not-reject-nullification/" title="Read More" class="open"></a>
+	<img src="http://static.infowars.com/bindnfocom/2014/01/jamesmadison.jpg" alt="No, James Madison did not Reject Nullification" class="dfcg-metabox full" />
+	<img class="dfcg-thumb-legacy thumbnail" src="http://static.infowars.com/bindnfocom/2014/01/jamesmadison.jpg" alt="No, James Madison did not Reject Nullification" />
+</div>
+
+<div class="imageElement"><!-- DCG Image #13 -->
+	<h3><a href="http://www.infowars.com/saxo-bank-ceo-warns-of-collapse-into-totalitarian-society/" title="Read More">Saxo Bank CEO Warns of Collapse Into &#8220;Totalitarian&#8221; Society</a></h3>
+	<p></p>
+	<a href="http://www.infowars.com/saxo-bank-ceo-warns-of-collapse-into-totalitarian-society/" title="Read More" class="open"></a>
+	<img src="http://static.prisonplanet.com/slideshow/080114saxo.jpg" alt="Saxo Bank CEO Warns of Collapse Into &#8220;Totalitarian&#8221; Society" class="dfcg-metabox full" />
+	<img class="dfcg-thumb-legacy thumbnail" src="http://static.prisonplanet.com/slideshow/080114saxo.jpg" alt="Saxo Bank CEO Warns of Collapse Into &quot;Totalitarian&quot; Society" />
+</div>
+
+<div class="imageElement"><!-- DCG Image #14 -->
+	<h3><a href="http://www.infowars.com/obamacare-designed-to-deny-seniors-healthcare/" title="Read More">Obamacare: Designed to Deny Seniors Healthcare</a></h3>
+	<p></p>
+	<a href="http://www.infowars.com/obamacare-designed-to-deny-seniors-healthcare/" title="Read More" class="open"></a>
+	<img src="http://static.infowars.com/bindnfocom/2014/01/obseniors.jpg" alt="Obamacare: Designed to Deny Seniors Healthcare" class="dfcg-metabox full" />
+	<img class="dfcg-thumb-legacy thumbnail" src="http://static.infowars.com/bindnfocom/2014/01/obseniors.jpg" alt="Obamacare: Designed to Deny Seniors Healthcare" />
+</div>
+
+<div class="imageElement"><!-- DCG Image #15 -->
+	<h3><a href="http://www.infowars.com/1400-radiation-hot-spot-found-on-san-francisco-beach/" title="Read More">1400% Radiation Hot Spot Found on San Francisco Beach</a></h3>
+	<p></p>
+	<a href="http://www.infowars.com/1400-radiation-hot-spot-found-on-san-francisco-beach/" title="Read More" class="open"></a>
+	<img src="http://static.prisonplanet.com/slideshow/080114rad.jpg" alt="1400% Radiation Hot Spot Found on San Francisco Beach" class="dfcg-metabox full" />
+	<img class="dfcg-thumb-legacy thumbnail" src="http://static.prisonplanet.com/slideshow/080114rad.jpg" alt="1400% Radiation Hot Spot Found on San Francisco Beach" />
+</div>
+
+<div class="imageElement"><!-- DCG Image #16 -->
+	<h3><a href="http://www.infowars.com/rand-paul-obama-welfare-state-is-small-brained-policy/" title="Read More">Rand Paul: Obama Welfare State Is &#8220;Small-Brained&#8221; Policy</a></h3>
+	<p></p>
+	<a href="http://www.infowars.com/rand-paul-obama-welfare-state-is-small-brained-policy/" title="Read More" class="open"></a>
+	<img src="http://static.prisonplanet.com/slideshow/080114tile.jpg" alt="Rand Paul: Obama Welfare State Is &#8220;Small-Brained&#8221; Policy" class="dfcg-metabox full" />
+	<img class="dfcg-thumb-legacy thumbnail" src="http://static.prisonplanet.com/slideshow/080114tile.jpg" alt="Rand Paul: Obama Welfare State Is &quot;Small-Brained&quot; Policy" />
+</div>
+
+<div class="imageElement"><!-- DCG Image #17 -->
+	<h3><a href="http://www.infowars.com/never-before-seen-conjoined-gray-whale-calves-discovered-off-west-coast/" title="Read More">Never Before Seen Conjoined Gray Whale Calves Discovered Off West Coast</a></h3>
+	<p></p>
+	<a href="http://www.infowars.com/never-before-seen-conjoined-gray-whale-calves-discovered-off-west-coast/" title="Read More" class="open"></a>
+	<img src="http://static.prisonplanet.com/p/images/january2014/080114whale.jpg" alt="Never Before Seen Conjoined Gray Whale Calves Discovered Off West Coast" class="dfcg-metabox full" />
+	<img class="dfcg-thumb-legacy thumbnail" src="http://static.prisonplanet.com/p/images/january2014/080114whale.jpg" alt="Never Before Seen Conjoined Gray Whale Calves Discovered Off West Coast" />
+</div>
+
+<div class="imageElement"><!-- DCG Image #18 -->
+	<h3><a href="http://www.infowars.com/employment-recovery-1600-workers-apply-for-just-36-jobs-at-an-ice-cream-plant-in-maryland/" title="Read More">Employment Recovery? 1,600 Workers Apply For Just 36 Jobs At An Ice Cream Plant In Maryland</a></h3>
+	<p></p>
+	<a href="http://www.infowars.com/employment-recovery-1600-workers-apply-for-just-36-jobs-at-an-ice-cream-plant-in-maryland/" title="Read More" class="open"></a>
+	<img src="http://static.prisonplanet.com/p/images/january2014/080114cream.jpg" alt="Employment Recovery? 1,600 Workers Apply For Just 36 Jobs At An Ice Cream Plant In Maryland" class="dfcg-metabox full" />
+	<img class="dfcg-thumb-legacy thumbnail" src="http://static.prisonplanet.com/p/images/january2014/080114cream.jpg" alt="Employment Recovery? 1,600 Workers Apply For Just 36 Jobs At An Ice Cream Plant In Maryland" />
+</div>
+
+<div class="imageElement"><!-- DCG Image #19 -->
+	<h3><a href="http://www.infowars.com/12-signs-of-extreme-social-decay-in-america-that-are-almost-too-horrible-to-talk-about/" title="Read More">12 Signs Of Extreme Social Decay In America That Are Almost Too Horrible To Talk About</a></h3>
+	<p></p>
+	<a href="http://www.infowars.com/12-signs-of-extreme-social-decay-in-america-that-are-almost-too-horrible-to-talk-about/" title="Read More" class="open"></a>
+	<img src="http://static.prisonplanet.com/p/images/january2014/080114flag.jpg" alt="12 Signs Of Extreme Social Decay In America That Are Almost Too Horrible To Talk About" class="dfcg-metabox full" />
+	<img class="dfcg-thumb-legacy thumbnail" src="http://static.prisonplanet.com/p/images/january2014/080114flag.jpg" alt="12 Signs Of Extreme Social Decay In America That Are Almost Too Horrible To Talk About" />
+</div>
+
+<div class="imageElement"><!-- DCG Image #20 -->
+	<h3><a href="http://www.infowars.com/weve-known-for-some-time-that-the-nsa-is-spying-on-congress/" title="Read More">We’ve Known for Some Time that the NSA Is Spying On Congress</a></h3>
+	<p></p>
+	<a href="http://www.infowars.com/weve-known-for-some-time-that-the-nsa-is-spying-on-congress/" title="Read More" class="open"></a>
+	<img src="http://static.prisonplanet.com/p/images/january2014/080114congress.jpg" alt="We’ve Known for Some Time that the NSA Is Spying On Congress" class="dfcg-metabox full" />
+	<img class="dfcg-thumb-legacy thumbnail" src="http://static.prisonplanet.com/p/images/january2014/080114congress.jpg" alt="We’ve Known for Some Time that the NSA Is Spying On Congress" />
+</div>
+
+</div><!-- End of Dynamic Content Gallery output -->
+
+        </div>     
+      </div>
+      
+      <div class="clear"></div>
+    </div>   
+    <div class="nBannerAd">
+       <!-- infowars/IW-HomePage/IW-HP-TOP-620 -->
+        <div id='div-gpt-ad-1358357970364-7' style='width:620px; height:100px;'>
+        <script type='text/javascript'>
+        googletag.cmd.push(function() { googletag.display('div-gpt-ad-1358357970364-7'); });
+        </script>
+        </div>
+    </div> 
+  
+    <div id="nFeaturedStories">
+      <p class="nFeaturedStoriesHeadline">FEATURED STORIES</p>
+      <div id="nFeaturedStoriesContent">
+      
+        <img class="nFeaturedStoriesImage" src="http://static.prisonplanet.com/slideshow/080114top3.jpg"  />
+
+
+
+    
+
+
+
+
+
+
+
+
+
+
+                
+
+                
+        <h2 class="nFeaturedStoriesTitle">
+                
+          <a href=" http://www.infowars.com/reporters-confirm-radiation-levels-1200-higher-than-normal-on-cali-beach/ " rel="bookmark" style="color: #024384 " title="Permanent Link to Reporters Confirm Radiation Levels 1200% Higher Than Normal on Cali. Beach">
+            Reporters Confirm Radiation Levels 1200% Higher Than Normal on Cali. Beach          </a> 
+        </h2>
+        
+                
+        <div class="nFeaturedStoriesExcerpt">
+          <p><strong>Infowars.com</strong> | On a beach outside San Francisco, the Infowars crew make a startling discovery.</p>
+        </div>
+        
+        <div class="nFeaturedStoriesComments">
+          <img src="http://www.infowars.com/images/commentballoon.png" width="16" height="14" />
+          
+			<a href=" http://www.infowars.com/reporters-confirm-radiation-levels-1200-higher-than-normal-on-cali-beach/#disqus_thread" rel="bookmark" style="color: #024384 " title="Permanent Link to Reporters Confirm Radiation Levels 1200% Higher Than Normal on Cali. Beach">
+                      </a>
+        
+
+
+        </div>
+                        
+        <h2 class="nFeaturedStoriesTitle">
+                
+          <a href=" http://www.infowars.com/government-media-cover-up-fukushima-radiation-wave-hitting-us/ " rel="bookmark" style="color: #024384 " title="Permanent Link to Government, Media Cover Up Fukushima Radiation Wave Hitting US">
+            Government, Media Cover Up Fukushima Radiation Wave Hitting US          </a> 
+        </h2>
+        
+                
+        <div class="nFeaturedStoriesExcerpt">
+          <p><strong>Anthony Gucciardi</strong> | As radiation levels spike and mutated wildlife washes ashore, government and media promote delusion. </p>
+        </div>
+        
+        <div class="nFeaturedStoriesComments">
+          <img src="http://www.infowars.com/images/commentballoon.png" width="16" height="14" />
+          
+			<a href=" http://www.infowars.com/government-media-cover-up-fukushima-radiation-wave-hitting-us/#disqus_thread" rel="bookmark" style="color: #024384 " title="Permanent Link to Government, Media Cover Up Fukushima Radiation Wave Hitting US">
+                      </a>
+        
+
+
+        </div>
+                        
+        <h2 class="nFeaturedStoriesTitle">
+                
+          <a href=" http://www.infowars.com/record-high-numbers-believe-no-matter-how-bad-things-are-congress-will-make-them-worse/ " rel="bookmark" style="color: #024384 " title="Permanent Link to Record High Numbers Believe &#8220;No Matter How Bad Things Are, Congress Will Make Them Worse&#8221;">
+            Record High Numbers Believe &#8220;No Matter How Bad Things Are, Congress Will Make Them Worse&#8221;          </a> 
+        </h2>
+        
+                
+        <div class="nFeaturedStoriesExcerpt">
+          <p><b>Steve Watson </b>| Poll finds Independent voters at an all time high.</p>
+        </div>
+        
+        <div class="nFeaturedStoriesComments">
+          <img src="http://www.infowars.com/images/commentballoon.png" width="16" height="14" />
+          
+			<a href=" http://www.infowars.com/record-high-numbers-believe-no-matter-how-bad-things-are-congress-will-make-them-worse/#disqus_thread" rel="bookmark" style="color: #024384 " title="Permanent Link to Record High Numbers Believe &#8220;No Matter How Bad Things Are, Congress Will Make Them Worse&#8221;">
+                      </a>
+        
+
+
+        </div>
+                        
+        <h2 class="nFeaturedStoriesTitle">
+                
+          <a href=" http://www.infowars.com/saxo-bank-ceo-warns-of-collapse-into-totalitarian-society/ " rel="bookmark" style="color: #024384 " title="Permanent Link to Saxo Bank CEO Warns of Collapse Into &#8220;Totalitarian&#8221; Society">
+            Saxo Bank CEO Warns of Collapse Into &#8220;Totalitarian&#8221; Society          </a> 
+        </h2>
+        
+                
+        <div class="nFeaturedStoriesExcerpt">
+          <p><strong>Paul Joseph Watson</strong> | The political class is using Ayn Rand&#8217;s Atlas Shrugged as an instruction manual.</p>
+        </div>
+        
+        <div class="nFeaturedStoriesComments">
+          <img src="http://www.infowars.com/images/commentballoon.png" width="16" height="14" />
+          
+			<a href=" http://www.infowars.com/saxo-bank-ceo-warns-of-collapse-into-totalitarian-society/#disqus_thread" rel="bookmark" style="color: #024384 " title="Permanent Link to Saxo Bank CEO Warns of Collapse Into &#8220;Totalitarian&#8221; Society">
+                      </a>
+        
+
+
+        </div>
+                        
+        <h2 class="nFeaturedStoriesTitle">
+                
+          <a href=" http://www.infowars.com/obamacare-designed-to-deny-seniors-healthcare/ " rel="bookmark" style="color: #024384 " title="Permanent Link to Obamacare: Designed to Deny Seniors Healthcare">
+            Obamacare: Designed to Deny Seniors Healthcare          </a> 
+        </h2>
+        
+                
+        <div class="nFeaturedStoriesExcerpt">
+          <p><strong>Kurt Nimmo</strong> | It&#8217;s difficult to not conclude Obamacare is a slick eugenics program. </p>
+        </div>
+        
+        <div class="nFeaturedStoriesComments">
+          <img src="http://www.infowars.com/images/commentballoon.png" width="16" height="14" />
+          
+			<a href=" http://www.infowars.com/obamacare-designed-to-deny-seniors-healthcare/#disqus_thread" rel="bookmark" style="color: #024384 " title="Permanent Link to Obamacare: Designed to Deny Seniors Healthcare">
+                      </a>
+        
+
+
+        </div>
+                        
+        <h2 class="nFeaturedStoriesTitle">
+                
+          <a href=" http://www.infowars.com/1400-radiation-hot-spot-found-on-san-francisco-beach/ " rel="bookmark" style="color: #024384 " title="Permanent Link to 1400% Radiation Hot Spot Found on San Francisco Beach">
+            1400% Radiation Hot Spot Found on San Francisco Beach          </a> 
+        </h2>
+        
+                
+        <div class="nFeaturedStoriesExcerpt">
+          <p><strong>Paul Joseph Watson</strong> | Experts say no link to Fukushima.</p>
+        </div>
+        
+        <div class="nFeaturedStoriesComments">
+          <img src="http://www.infowars.com/images/commentballoon.png" width="16" height="14" />
+          
+			<a href=" http://www.infowars.com/1400-radiation-hot-spot-found-on-san-francisco-beach/#disqus_thread" rel="bookmark" style="color: #024384 " title="Permanent Link to 1400% Radiation Hot Spot Found on San Francisco Beach">
+                      </a>
+        
+
+
+        </div>
+                        
+        <h2 class="nFeaturedStoriesTitle">
+                
+          <a href=" http://www.infowars.com/rand-paul-obama-welfare-state-is-small-brained-policy/ " rel="bookmark" style="color: #024384 " title="Permanent Link to Rand Paul: Obama Welfare State Is &#8220;Small-Brained&#8221; Policy">
+            Rand Paul: Obama Welfare State Is &#8220;Small-Brained&#8221; Policy          </a> 
+        </h2>
+        
+                
+        <div class="nFeaturedStoriesExcerpt">
+          <p><b>Steve Watson </b>| Senator responds to Obama unemployment benefits smackdown.</p>
+        </div>
+        
+        <div class="nFeaturedStoriesComments">
+          <img src="http://www.infowars.com/images/commentballoon.png" width="16" height="14" />
+          
+			<a href=" http://www.infowars.com/rand-paul-obama-welfare-state-is-small-brained-policy/#disqus_thread" rel="bookmark" style="color: #024384 " title="Permanent Link to Rand Paul: Obama Welfare State Is &#8220;Small-Brained&#8221; Policy">
+                      </a>
+        
+
+
+        </div>
+                        
+        <h2 class="nFeaturedStoriesTitle">
+                
+          <a href=" http://www.infowars.com/never-before-seen-conjoined-gray-whale-calves-discovered-off-west-coast/ " rel="bookmark" style="color: #024384 " title="Permanent Link to Never Before Seen Conjoined Gray Whale Calves Discovered Off West Coast">
+            Never Before Seen Conjoined Gray Whale Calves Discovered Off West Coast          </a> 
+        </h2>
+        
+                
+        <div class="nFeaturedStoriesExcerpt">
+          <p><b>Infowars.com </b>| Fukushima fallout?</p>
+        </div>
+        
+        <div class="nFeaturedStoriesComments">
+          <img src="http://www.infowars.com/images/commentballoon.png" width="16" height="14" />
+          
+			<a href=" http://www.infowars.com/never-before-seen-conjoined-gray-whale-calves-discovered-off-west-coast/#disqus_thread" rel="bookmark" style="color: #024384 " title="Permanent Link to Never Before Seen Conjoined Gray Whale Calves Discovered Off West Coast">
+                      </a>
+        
+
+
+        </div>
+                              
+      
+      <div class="nSectionContent"> 
+    	<br />
+          <p><strong><a href="http://www.infowars.com/category/featured-stories/" title="Featured Stories Archive" style="font-family: Georgia, Times, serif; font-size:13px;">FEATURED STORIES ARCHIVE</a></strong></p>      
+        </div>
+      </div>
+    </div>
+    
+    <div class="nBannerAd">
+       <!-- infowars/IW-HomePage/IW-HP-2nd-620 -->
+        <div id='div-gpt-ad-1361825940700-1' style='width:620px; height:100px;'>
+        <script type='text/javascript'>
+        googletag.cmd.push(function() { googletag.display('div-gpt-ad-1361825940700-1'); });
+        </script>
+        </div>
+    </div>
+    
+    <div id="nFeaturedCategories">
+  <div id="nSectionLeft" class="floatLeft">
+      <!-- US news begin-->
+      <div style="border-style: solid; border-width: 1px; border-color: #c4c4c4; margin-bottom: 20px;">
+      <ul>
+        <li>
+        <div class="nSectionHeadLine">
+          <p class="cat-headline">U.S. NEWS</p>
+        </div>
+        
+        <div class="nSectionContent">
+                              <div>
+            <a href="http://www.infowars.com/nbc-skips-big-win-for-second-amendment-hypes-bigfoot-reality-show-instead/" rel="bookmark" title="Permanent Link to NBC Skips Big Win for Second Amendment, Hypes Bigfoot Reality Show Instead">NBC Skips Big Win for Second Amendment, Hypes Bigfoot Reality Show Instead</a>
+          </div>
+                        <p><strong>Newsbusters</strong> | Other networks only covered victory for a combined 31 seconds.</p>
+            <br />
+            <img src="http://static.infowars.com/images/commentballoon.png" width="16" height="14" />
+            <a href="http://www.infowars.com/nbc-skips-big-win-for-second-amendment-hypes-bigfoot-reality-show-instead/#respond" title="Comment on NBC Skips Big Win for Second Amendment, Hypes Bigfoot Reality Show Instead"><span class="dsq-postid" rel="97495 http://www.infowars.com/?p=97495">No Comments</span></a>                                <div>
+            <a href="http://www.infowars.com/never-before-seen-conjoined-gray-whale-calves-discovered-off-west-coast/" rel="bookmark" title="Permanent Link to Never Before Seen Conjoined Gray Whale Calves Discovered Off West Coast">Never Before Seen Conjoined Gray Whale Calves Discovered Off West Coast</a>
+          </div>
+                        <p><b>Infowars.com </b>| Fukushima fallout?</p>
+            <br />
+            <img src="http://static.infowars.com/images/commentballoon.png" width="16" height="14" />
+            <a href="http://www.infowars.com/never-before-seen-conjoined-gray-whale-calves-discovered-off-west-coast/#respond" title="Comment on Never Before Seen Conjoined Gray Whale Calves Discovered Off West Coast"><span class="dsq-postid" rel="97447 http://www.infowars.com/?p=97447">No Comments</span></a>                                <div>
+            <a href="http://www.infowars.com/12-signs-of-extreme-social-decay-in-america-that-are-almost-too-horrible-to-talk-about/" rel="bookmark" title="Permanent Link to 12 Signs Of Extreme Social Decay In America That Are Almost Too Horrible To Talk About">12 Signs Of Extreme Social Decay In America That Are Almost Too Horrible To Talk About</a>
+          </div>
+                        <p><b>Michael Snyder </b>| Hearts in America are getting colder even faster than the weather is. </p>
+            <br />
+            <img src="http://static.infowars.com/images/commentballoon.png" width="16" height="14" />
+            <a href="http://www.infowars.com/12-signs-of-extreme-social-decay-in-america-that-are-almost-too-horrible-to-talk-about/#respond" title="Comment on 12 Signs Of Extreme Social Decay In America That Are Almost Too Horrible To Talk About"><span class="dsq-postid" rel="97445 http://www.infowars.com/?p=97445">No Comments</span></a>                                          <!-- infowars/IW-HomePage/IW-HP-TXT-1 -->
+            <div id='div-gpt-ad-1363721375312-0' style='width:270px; height:40px;'>
+            <script type='text/javascript'>
+            googletag.cmd.push(function() { googletag.display('div-gpt-ad-1363721375312-0'); });
+            </script>
+            </div>
+          <p style="margin-top:0px;"><strong><a href="index.php?cat=32">U.S. NEWS ARCHIVE</a></strong></p>            
+        </div>
+        </li>
+      </ul>
+      </div>
+      <!-- US news end-->
+      
+      <!-- Police State news begin-->
+      <div style="border-style: solid; border-width: 1px; border-color: #c4c4c4; margin-bottom: 20px;">
+      <ul>
+        <li>
+        <div class="nSectionHeadLine">
+          <p class="cat-headline">ECONOMIC CRISIS</p>
+        </div>
+        
+        <div class="nSectionContent">
+                              <div>
+            <a href="http://www.infowars.com/the-great-inequality-debate/" rel="bookmark" title="Permanent Link to The Great Inequality Debate">The Great Inequality Debate</a>
+          </div>
+          
+                        <p><strong>A. Barton Hinkle </strong> | All of this has the liberal commentariat rapturous.</p>
+            <br />
+            <img src="http://static.infowars.com/images/commentballoon.png" width="16" height="14" />
+            <a href="http://www.infowars.com/the-great-inequality-debate/#respond" title="Comment on The Great Inequality Debate"><span class="dsq-postid" rel="97460 http://www.infowars.com/?p=97460">No Comments</span></a>                                <div>
+            <a href="http://www.infowars.com/the-beginning-phase-of-the-economic-collapse-is-over-the-collapse-is-next/" rel="bookmark" title="Permanent Link to The Beginning Phase Of The Economic Collapse Is Over. The Collapse Is Next">The Beginning Phase Of The Economic Collapse Is Over. The Collapse Is Next</a>
+          </div>
+          
+                        <p><strong>Infowars.com</strong> | It will end in the bankruptcy of the US and all nations; and, as Bucky Fuller said, their collapse will make possible a world of peace.</p>
+            <br />
+            <img src="http://static.infowars.com/images/commentballoon.png" width="16" height="14" />
+            <a href="http://www.infowars.com/the-beginning-phase-of-the-economic-collapse-is-over-the-collapse-is-next/#respond" title="Comment on The Beginning Phase Of The Economic Collapse Is Over. The Collapse Is Next"><span class="dsq-postid" rel="97457 http://www.infowars.com/?p=97457">No Comments</span></a>                                <div>
+            <a href="http://www.infowars.com/employment-recovery-1600-workers-apply-for-just-36-jobs-at-an-ice-cream-plant-in-maryland/" rel="bookmark" title="Permanent Link to Employment Recovery? 1,600 Workers Apply For Just 36 Jobs At An Ice Cream Plant In Maryland">Employment Recovery? 1,600 Workers Apply For Just 36 Jobs At An Ice Cream Plant In Maryland</a>
+          </div>
+          
+                        <p><b>Michael Snyder </b>| The stock market may be soaring to unprecedented heights, but things just continue to get even tougher for the middle class.</p>
+            <br />
+            <img src="http://static.infowars.com/images/commentballoon.png" width="16" height="14" />
+            <a href="http://www.infowars.com/employment-recovery-1600-workers-apply-for-just-36-jobs-at-an-ice-cream-plant-in-maryland/#respond" title="Comment on Employment Recovery? 1,600 Workers Apply For Just 36 Jobs At An Ice Cream Plant In Maryland"><span class="dsq-postid" rel="97446 http://www.infowars.com/?p=97446">No Comments</span></a>                                        <!-- infowars/IW-HomePage/IW-HP-TXT-3 -->
+        <div id='div-gpt-ad-1363721427501-0' style='width:270px; height:40px;'>
+        <script type='text/javascript'>
+        googletag.cmd.push(function() { googletag.display('div-gpt-ad-1363721427501-0'); });
+        </script>
+        </div>
+
+       
+          <p><strong><a href="index.php?cat=26">ECONOMIC CRISIS ARCHIVE</a></strong></p>                      
+        </div>
+        </li>
+      </ul>
+      </div>
+      <!-- Police State news end-->
+      
+      <!-- Big Brother news begin-->
+      <div style="border-style: solid; border-width: 1px; border-color: #c4c4c4; margin-bottom: 20px;">
+      <ul>
+        <li>
+        <div class="nSectionHeadLine">
+          <p class="cat-headline">BIG BROTHER</p>
+        </div>
+        
+        <div class="nSectionContent">
+                              <div>
+            <a href="http://www.infowars.com/the-nsa-is-collecting-too-much-information/" rel="bookmark" title="Permanent Link to The NSA is collecting too much information">The NSA is collecting too much information</a>
+          </div>
+          
+                        <p><strong> Eugene Robinson</strong> | Practice was sanctioned by secret court rulings that stretched the words of the Constitution and the Patriot Act beyond recognition.</p>
+            <br />
+            <img src="http://static.infowars.com/images/commentballoon.png" width="16" height="14" />
+            <a href="http://www.infowars.com/the-nsa-is-collecting-too-much-information/#respond" title="Comment on The NSA is collecting too much information"><span class="dsq-postid" rel="97508 http://www.infowars.com/?p=97508">No Comments</span></a>                                <div>
+            <a href="http://www.infowars.com/its-not-paranoia-nsa-is-spying-on-everyone/" rel="bookmark" title="Permanent Link to It’s not paranoia — NSA is spying on everyone">It’s not paranoia — NSA is spying on everyone</a>
+          </div>
+          
+                        <p><strong>Eugene Robinson</strong> | Obama should go further and ask why the agency needs to assemble all that information in the first place</p>
+            <br />
+            <img src="http://static.infowars.com/images/commentballoon.png" width="16" height="14" />
+            <a href="http://www.infowars.com/its-not-paranoia-nsa-is-spying-on-everyone/#respond" title="Comment on It’s not paranoia — NSA is spying on everyone"><span class="dsq-postid" rel="97503 http://www.infowars.com/?p=97503">No Comments</span></a>                                <div>
+            <a href="http://www.infowars.com/weve-known-for-some-time-that-the-nsa-is-spying-on-congress/" rel="bookmark" title="Permanent Link to We’ve Known for Some Time that the NSA Is Spying On Congress">We’ve Known for Some Time that the NSA Is Spying On Congress</a>
+          </div>
+          
+                        <p><b>Washington&#8217;s Blog </b>| What It Really Means.</p>
+            <br />
+            <img src="http://static.infowars.com/images/commentballoon.png" width="16" height="14" />
+            <a href="http://www.infowars.com/weve-known-for-some-time-that-the-nsa-is-spying-on-congress/#respond" title="Comment on We’ve Known for Some Time that the NSA Is Spying On Congress"><span class="dsq-postid" rel="97444 http://www.infowars.com/?p=97444">No Comments</span></a>                                          <br /><br />
+          <p><strong><a href="index.php?cat=6">BIG BROTHER ARCHIVE</a></strong></p>                      
+        </div>
+        </li>
+      </ul>
+      </div>
+      <!-- Big Brother news end-->
+      
+      <!-- War On Terror news begin-->
+      <div style="border-style: solid; border-width: 1px; border-color: #c4c4c4; margin-bottom: 20px;">
+      <ul>
+        <li>
+        <div class="nSectionHeadLine">
+          <p class="cat-headline">SCI-TECH</p>
+        </div>
+        
+        <div class="nSectionContent">
+                              <div>
+            <a href="http://www.infowars.com/sunspot-goes-wild-x-class-solar-flare-blasts-in-our-direction/" rel="bookmark" title="Permanent Link to Sunspot goes wild! X-class solar flare blasts in our direction">Sunspot goes wild! X-class solar flare blasts in our direction</a>
+          </div>
+          
+                        <p><strong>NBC News</strong> | X-class flares are from the strongest category of sunbursts.</p>
+            <br />
+            <img src="http://static.infowars.com/images/commentballoon.png" width="16" height="14" />
+            <a href="http://www.infowars.com/sunspot-goes-wild-x-class-solar-flare-blasts-in-our-direction/#respond" title="Comment on Sunspot goes wild! X-class solar flare blasts in our direction"><span class="dsq-postid" rel="97497 http://www.infowars.com/?p=97497">No Comments</span></a>                                <div>
+            <a href="http://www.infowars.com/newly-discovered-celestial-object-defies-categories-is-it-a-new-kind-of-planet-or-a-rare-kind-of-failed-star/" rel="bookmark" title="Permanent Link to Newly Discovered Celestial Object Defies Categories: Is It a New Kind of Planet or a Rare Kind of Failed Star?">Newly Discovered Celestial Object Defies Categories: Is It a New Kind of Planet or a Rare Kind of Failed Star?</a>
+          </div>
+          
+                        <p><strong>sciencedaily.com</strong> | Object discovered by astrophysicists may challenge traditional understandings about how planets and stars form.</p>
+            <br />
+            <img src="http://static.infowars.com/images/commentballoon.png" width="16" height="14" />
+            <a href="http://www.infowars.com/newly-discovered-celestial-object-defies-categories-is-it-a-new-kind-of-planet-or-a-rare-kind-of-failed-star/#respond" title="Comment on Newly Discovered Celestial Object Defies Categories: Is It a New Kind of Planet or a Rare Kind of Failed Star?"><span class="dsq-postid" rel="97496 http://www.infowars.com/?p=97496">No Comments</span></a>                                <div>
+            <a href="http://www.infowars.com/sun-goes-wild-noaa-issues-alert-earth-directed-x-class-flare-is-on-its-way-chance-of-more/" rel="bookmark" title="Permanent Link to Sun Goes Wild: NOAA Issues Alert: Earth Directed X-Class Flare Is On Its Way; Chance Of More">Sun Goes Wild: NOAA Issues Alert: Earth Directed X-Class Flare Is On Its Way; Chance Of More</a>
+          </div>
+          
+                        <p><b>Mac Salvo </b>| The biggest sun spot in recent history has been identified on the sun and it has moved into position facing earth.</p>
+            <br />
+            <img src="http://static.infowars.com/images/commentballoon.png" width="16" height="14" />
+            <a href="http://www.infowars.com/sun-goes-wild-noaa-issues-alert-earth-directed-x-class-flare-is-on-its-way-chance-of-more/#respond" title="Comment on Sun Goes Wild: NOAA Issues Alert: Earth Directed X-Class Flare Is On Its Way; Chance Of More"><span class="dsq-postid" rel="97442 http://www.infowars.com/?p=97442">No Comments</span></a>                                          <br /><br />
+          <p><strong><a href="index.php?cat=10">SCI-TECH ARCHIVE</a></strong></p>
+        </div>
+        </li>
+      </ul>
+      </div>
+      <!-- War On Terror news end-->
+      
+      <!-- HEALTH news begin-->
+      <div style="border-style: solid; border-width: 1px; border-color: #c4c4c4; margin-bottom: 20px;">
+      <ul>
+        <li>
+        <div class="nSectionHeadLine">
+          <p class="cat-headline">CONSTITUTION & LAW</p>
+        </div>
+        
+        <div class="nSectionContent">
+                              <div>
+            <a href="http://www.infowars.com/co-lawmaker-arapahoe-school-shooting-validated-the-need-for-armed-staff/" rel="bookmark" title="Permanent Link to CO lawmaker: Arapahoe school shooting ‘validated’ the need for armed staff">CO lawmaker: Arapahoe school shooting ‘validated’ the need for armed staff</a>
+          </div>
+          
+                        <p><strong>Guns.com</strong> | State senator introduces bill to allow teachers and staff to carry.</p>
+            <br />
+            <img src="http://static.infowars.com/images/commentballoon.png" width="16" height="14" />
+            <a href="http://www.infowars.com/co-lawmaker-arapahoe-school-shooting-validated-the-need-for-armed-staff/#respond" title="Comment on CO lawmaker: Arapahoe school shooting ‘validated’ the need for armed staff"><span class="dsq-postid" rel="97485 http://www.infowars.com/?p=97485">No Comments</span></a>                                <div>
+            <a href="http://www.infowars.com/obama-to-prevent-dangerous-people-from-owning-guns/" rel="bookmark" title="Permanent Link to Obama to Prevent &#8220;Dangerous&#8221; People From Owning Guns">Obama to Prevent &#8220;Dangerous&#8221; People From Owning Guns</a>
+          </div>
+          
+                        <p><strong> Joe Wolverton, II, J.D.</strong> | Article I, Section 1 of the Constitution grants federal lawmaking power exclusively to the Congress.</p>
+            <br />
+            <img src="http://static.infowars.com/images/commentballoon.png" width="16" height="14" />
+            <a href="http://www.infowars.com/obama-to-prevent-dangerous-people-from-owning-guns/#respond" title="Comment on Obama to Prevent &#8220;Dangerous&#8221; People From Owning Guns"><span class="dsq-postid" rel="97479 http://www.infowars.com/?p=97479">No Comments</span></a>                                <div>
+            <a href="http://www.infowars.com/no-james-madison-did-not-reject-nullification/" rel="bookmark" title="Permanent Link to No, James Madison did not Reject Nullification">No, James Madison did not Reject Nullification</a>
+          </div>
+          
+                        <p><strong>Mike Maharrey</strong> | Madison supported nullification as a “natural right.”</p>
+            <br />
+            <img src="http://static.infowars.com/images/commentballoon.png" width="16" height="14" />
+            <a href="http://www.infowars.com/no-james-madison-did-not-reject-nullification/#respond" title="Comment on No, James Madison did not Reject Nullification"><span class="dsq-postid" rel="97455 http://www.infowars.com/?p=97455">No Comments</span></a>                                          <br /><br />
+          <p><strong><a href="index.php?cat=128">CONSTITUTION & LAW ARCHIVE</a></strong></p>            
+        </div>
+        </li>
+      </ul>
+      </div>
+      <!-- HEALTH news end-->
+      
+      <!-- Border Control & Illegal Immigration news begin-->
+      <div style="border-style: solid; border-width: 1px; border-color: #c4c4c4; margin-bottom: 20px;">
+      <ul>
+        <li>
+        <div class="nSectionHeadLine">
+          <p class="cat-headline">WAR ON TERROR</p>
+        </div>
+        
+        <div class="nSectionContent">
+                              <div>
+            <a href="http://www.infowars.com/al-qaida-rebels-leave-mass-grave-behind-as-they-desert-base-in-syria/" rel="bookmark" title="Permanent Link to Al Qaida rebels leave mass grave behind as they desert base in Syria">Al Qaida rebels leave mass grave behind as they desert base in Syria</a>
+          </div>
+          
+                        <p><strong>Roy Gutman</strong> | Rebels found the mass grave when they searched the base.</p>
+            <br />
+            <img src="http://static.infowars.com/images/commentballoon.png" width="16" height="14" />
+            <a href="http://www.infowars.com/al-qaida-rebels-leave-mass-grave-behind-as-they-desert-base-in-syria/#respond" title="Comment on Al Qaida rebels leave mass grave behind as they desert base in Syria"><span class="dsq-postid" rel="97489 http://www.infowars.com/?p=97489">No Comments</span></a>                                <div>
+            <a href="http://www.infowars.com/afghans-bombed-by-nato-less-supportive-of-occupation/" rel="bookmark" title="Permanent Link to Afghans Bombed by NATO Less Supportive of Occupation">Afghans Bombed by NATO Less Supportive of Occupation</a>
+          </div>
+          
+                        <p><strong>washingtonpost.com</strong> | Afghans who experience violence at the hands of the Taliban don’t react nearly as strongly against the Taliban.</p>
+            <br />
+            <img src="http://static.infowars.com/images/commentballoon.png" width="16" height="14" />
+            <a href="http://www.infowars.com/afghans-bombed-by-nato-less-supportive-of-occupation/#respond" title="Comment on Afghans Bombed by NATO Less Supportive of Occupation"><span class="dsq-postid" rel="97487 http://www.infowars.com/?p=97487">No Comments</span></a>                                <div>
+            <a href="http://www.infowars.com/al-qaeda-natos-timeless-tool/" rel="bookmark" title="Permanent Link to Al-Qaeda, NATO’s Timeless Tool">Al-Qaeda, NATO’s Timeless Tool</a>
+          </div>
+          
+                        <p><strong>Thierry Meyssan</strong> | Discovery of links connecting Prime Minister Recep Tayyip Erdoğan and Al- Qaeda is upsetting Turkish politics.</p>
+            <br />
+            <img src="http://static.infowars.com/images/commentballoon.png" width="16" height="14" />
+            <a href="http://www.infowars.com/al-qaeda-natos-timeless-tool/#respond" title="Comment on Al-Qaeda, NATO’s Timeless Tool"><span class="dsq-postid" rel="97484 http://www.infowars.com/?p=97484">No Comments</span></a>                                          <br /><br />
+          <p><strong><a href="index.php?cat=16">WAR ON TERROR ARCHIVE</a></strong></p>                         
+        </div>
+        </li>
+      </ul>
+      </div>
+      <!-- Border Control & Illegal Immigration news end-->
+      
+      <!-- Border Control & Illegal Immigration news begin-->
+      <div style="border-style: solid; border-width: 1px; border-color: #c4c4c4; margin-bottom: 20px;">
+      <ul>
+        <li>
+        <div class="nSectionHeadLine">
+          <p class="cat-headline">HOT NEWS</p>
+        </div>
+        
+        <div class="nSectionContent">
+                              <div>
+            <a href="http://www.infowars.com/record-high-numbers-believe-no-matter-how-bad-things-are-congress-will-make-them-worse/" rel="bookmark" title="Permanent Link to Record High Numbers Believe &#8220;No Matter How Bad Things Are, Congress Will Make Them Worse&#8221;">Record High Numbers Believe &#8220;No Matter How Bad Things Are, Congress Will Make Them Worse&#8221;</a>
+          </div>
+          
+                        <p><b>Steve Watson </b>| Poll finds Independent voters at an all time high.</p>
+            <br />
+            <img src="http://static.infowars.com/images/commentballoon.png" width="16" height="14" />
+            <a href="http://www.infowars.com/record-high-numbers-believe-no-matter-how-bad-things-are-congress-will-make-them-worse/#respond" title="Comment on Record High Numbers Believe &#8220;No Matter How Bad Things Are, Congress Will Make Them Worse&#8221;"><span class="dsq-postid" rel="97488 http://www.infowars.com/?p=97488">No Comments</span></a>                                <div>
+            <a href="http://www.infowars.com/obamacare-designed-to-deny-seniors-healthcare/" rel="bookmark" title="Permanent Link to Obamacare: Designed to Deny Seniors Healthcare">Obamacare: Designed to Deny Seniors Healthcare</a>
+          </div>
+          
+                        <p><strong>Kurt Nimmo</strong> | It&#8217;s difficult to not conclude Obamacare is a slick eugenics program. </p>
+            <br />
+            <img src="http://static.infowars.com/images/commentballoon.png" width="16" height="14" />
+            <a href="http://www.infowars.com/obamacare-designed-to-deny-seniors-healthcare/#respond" title="Comment on Obamacare: Designed to Deny Seniors Healthcare"><span class="dsq-postid" rel="97450 http://www.infowars.com/?p=97450">No Comments</span></a>                                <div>
+            <a href="http://www.infowars.com/1400-radiation-hot-spot-found-on-san-francisco-beach/" rel="bookmark" title="Permanent Link to 1400% Radiation Hot Spot Found on San Francisco Beach">1400% Radiation Hot Spot Found on San Francisco Beach</a>
+          </div>
+          
+                        <p><strong>Paul Joseph Watson</strong> | Experts say no link to Fukushima.</p>
+            <br />
+            <img src="http://static.infowars.com/images/commentballoon.png" width="16" height="14" />
+            <a href="http://www.infowars.com/1400-radiation-hot-spot-found-on-san-francisco-beach/#respond" title="Comment on 1400% Radiation Hot Spot Found on San Francisco Beach"><span class="dsq-postid" rel="97449 http://www.infowars.com/?p=97449">No Comments</span></a>                                          <br /><br />
+          <p><strong><a href="index.php?cat=272">HOT NEWS ARCHIVE</a></strong></p>                         
+        </div>
+        </li>
+      </ul>
+      </div>
+      <!-- Border Control & Illegal Immigration news end-->      
+  </div>
+  
+  <div id="nSectionRight" class="floatRight">
+      <!-- World news begin-->
+      <div style="border-style: solid; border-width: 1px; border-color: #c4c4c4; margin-bottom: 20px;">
+      <ul>
+        <li>
+        <div class="nSectionHeadLine">
+          <p class="cat-headline">WORLD NEWS</p>
+        </div>
+        
+        <div class="nSectionContent">
+                              <div>
+            <a href="http://www.infowars.com/police-want-water-cannon-ready-to-use-in-britain-by-summer/" rel="bookmark" title="Permanent Link to Police want water cannon ready to use in Britain by summer">Police want water cannon ready to use in Britain by summer</a>
+          </div>
+          
+                        <p><strong>The Guardian</strong> | Water cannon would be used against rioters.</p>
+            <br />
+            <img src="http://static.infowars.com/images/commentballoon.png" width="16" height="14" />
+            <a href="http://www.infowars.com/police-want-water-cannon-ready-to-use-in-britain-by-summer/#respond" title="Comment on Police want water cannon ready to use in Britain by summer"><span class="dsq-postid" rel="97500 http://www.infowars.com/?p=97500">No Comments</span></a>                                <div>
+            <a href="http://www.infowars.com/hamburgs-plan-to-eliminate-cars-in-20-years/" rel="bookmark" title="Permanent Link to Hamburg’s Plan to Eliminate Cars in 20 Years">Hamburg’s Plan to Eliminate Cars in 20 Years</a>
+          </div>
+          
+                        <p><strong>Arch Daily</strong> | Agenda 21 enters new phase.</p>
+            <br />
+            <img src="http://static.infowars.com/images/commentballoon.png" width="16" height="14" />
+            <a href="http://www.infowars.com/hamburgs-plan-to-eliminate-cars-in-20-years/#respond" title="Comment on Hamburg’s Plan to Eliminate Cars in 20 Years"><span class="dsq-postid" rel="97491 http://www.infowars.com/?p=97491">No Comments</span></a>                                <div>
+            <a href="http://www.infowars.com/back-to-iraq-you-bet/" rel="bookmark" title="Permanent Link to Back to Iraq? You Bet!">Back to Iraq? You Bet!</a>
+          </div>
+          
+                        <p><b>Lew Rockwell Blog </b>| Sounds like Vietnam over again, perhaps even worse than 2003.</p>
+            <br />
+            <img src="http://static.infowars.com/images/commentballoon.png" width="16" height="14" />
+            <a href="http://www.infowars.com/back-to-iraq-you-bet/#respond" title="Comment on Back to Iraq? You Bet!"><span class="dsq-postid" rel="97443 http://www.infowars.com/?p=97443">No Comments</span></a>                                        <!-- infowars/IW-HomePage/IW-HP-TXT-2 -->
+        <div id='div-gpt-ad-1363721401486-0' style='width:270px; height:40px;'>
+        <script type='text/javascript'>
+        googletag.cmd.push(function() { googletag.display('div-gpt-ad-1363721401486-0'); });
+        </script>
+        </div>
+          <p><strong><a href="index.php?cat=36">WORLD NEWS ARCHIVE</a></strong></p>                       
+        </div>
+        </li>
+      </ul>
+      </div>
+      <!-- World news end-->
+      
+      <!-- World at War news begin-->
+      <div style="border-style: solid; border-width: 1px; border-color: #c4c4c4; margin-bottom: 20px;">
+      <ul>
+        <li>
+        <div class="nSectionHeadLine">
+          <p class="cat-headline">WORLD AT WAR</p>
+        </div>
+        
+        <div class="nSectionContent">
+                              <div>
+            <a href="http://www.infowars.com/stretched-thin-syrian-extremists-are-pressured/" rel="bookmark" title="Permanent Link to Stretched thin, Syrian extremists are pressured">Stretched thin, Syrian extremists are pressured</a>
+          </div>
+          
+                        <p><strong> Loveday Morris</strong> | Just a week ago, al-Qaeda-linked rebels in Syria enjoyed an arc of dominance across the country’s north and east, ruling with brutality.</p>
+            <br />
+            <img src="http://static.infowars.com/images/commentballoon.png" width="16" height="14" />
+            <a href="http://www.infowars.com/stretched-thin-syrian-extremists-are-pressured/#respond" title="Comment on Stretched thin, Syrian extremists are pressured"><span class="dsq-postid" rel="97509 http://www.infowars.com/?p=97509">No Comments</span></a>                                <div>
+            <a href="http://www.infowars.com/robert-gates-former-defense-secretary-offers-harsh-critique-of-obamas-leadership-in-duty/" rel="bookmark" title="Permanent Link to Robert Gates, former defense secretary, offers harsh critique of Obama’s leadership in ‘Duty’">Robert Gates, former defense secretary, offers harsh critique of Obama’s leadership in ‘Duty’</a>
+          </div>
+          
+                        <p><strong>The Washington Post</strong> | Gates says that the Obama administration is &#8220;poisoning the well&#8221; against military leadership.</p>
+            <br />
+            <img src="http://static.infowars.com/images/commentballoon.png" width="16" height="14" />
+            <a href="http://www.infowars.com/robert-gates-former-defense-secretary-offers-harsh-critique-of-obamas-leadership-in-duty/#respond" title="Comment on Robert Gates, former defense secretary, offers harsh critique of Obama’s leadership in ‘Duty’"><span class="dsq-postid" rel="97498 http://www.infowars.com/?p=97498">No Comments</span></a>                                <div>
+            <a href="http://www.infowars.com/fifty-us-senators-line-up-behind-new-iran-sanctions-bill/" rel="bookmark" title="Permanent Link to Fifty US senators line up behind new Iran sanctions bill">Fifty US senators line up behind new Iran sanctions bill</a>
+          </div>
+          
+                        <p><strong>jpost.com</strong> | Support among Senate members for new Iran sanctions bill has doubled since the measure was introduced last month.</p>
+            <br />
+            <img src="http://static.infowars.com/images/commentballoon.png" width="16" height="14" />
+            <a href="http://www.infowars.com/fifty-us-senators-line-up-behind-new-iran-sanctions-bill/#respond" title="Comment on Fifty US senators line up behind new Iran sanctions bill"><span class="dsq-postid" rel="97486 http://www.infowars.com/?p=97486">No Comments</span></a>                                			<!-- infowars/IW-HomePage/IW-HP-TXT-4 -->
+            <div id='div-gpt-ad-1363721449256-0' style='width:270px; height:40px;'>
+            <script type='text/javascript'>
+            googletag.cmd.push(function() { googletag.display('div-gpt-ad-1363721449256-0'); });
+            </script>
+            </div>
+          <p><strong><a href="index.php?cat=22">WORLD AT WAR ARCHIVE</a></strong></p>                      
+        </div>
+        </li>
+      </ul>
+      </div>
+      <!-- World at War news end-->
+      
+      <!-- September 11 news begin-->
+      <div style="border-style: solid; border-width: 1px; border-color: #c4c4c4; margin-bottom: 20px;">
+      <ul>
+        <li>
+        <div class="nSectionHeadLine">
+          <p class="cat-headline">POLICE STATE</p>
+        </div>
+        
+        <div class="nSectionContent">
+                              <div>
+            <a href="http://www.infowars.com/muscatine-county-bars-drive-stun-taser-use-on-inmates/" rel="bookmark" title="Permanent Link to Muscatine County bars &#8216;drive-stun&#8217; Taser use on inmates">Muscatine County bars &#8216;drive-stun&#8217; Taser use on inmates</a>
+          </div>
+          
+                        <p><strong>Jason Clayworth</strong> | Technique inflicts pain on subjects, doesn&#8217;t immobilize</p>
+            <br />
+            <img src="http://static.infowars.com/images/commentballoon.png" width="16" height="14" />
+            <a href="http://www.infowars.com/muscatine-county-bars-drive-stun-taser-use-on-inmates/#respond" title="Comment on Muscatine County bars &#8216;drive-stun&#8217; Taser use on inmates"><span class="dsq-postid" rel="97507 http://www.infowars.com/?p=97507">No Comments</span></a>            
+                    <div>
+            <a href="http://www.infowars.com/review-antagonize-and-other-fancy-words-never-to-say-to-a-cop/" rel="bookmark" title="Permanent Link to Review: Antagonize, and Other Fancy Words Never to Say to a Cop">Review: Antagonize, and Other Fancy Words Never to Say to a Cop</a>
+          </div>
+          
+                        <p><strong>Pete Eyre</strong> | It is indisputable that police employees today do not face the same repercussions when they violate the rights of another. </p>
+            <br />
+            <img src="http://static.infowars.com/images/commentballoon.png" width="16" height="14" />
+            <a href="http://www.infowars.com/review-antagonize-and-other-fancy-words-never-to-say-to-a-cop/#respond" title="Comment on Review: Antagonize, and Other Fancy Words Never to Say to a Cop"><span class="dsq-postid" rel="97506 http://www.infowars.com/?p=97506">No Comments</span></a>            
+                    <div>
+            <a href="http://www.infowars.com/electronic-surveillance-of-private-citizens-subversive-of-constitutional-government-was-one-of-the-articles-of-impeachment-against-nixon/" rel="bookmark" title="Permanent Link to “Electronic Surveillance Of Private Citizens … Subversive Of Constitutional Government” Was One Of The Articles Of Impeachment Against Nixon">“Electronic Surveillance Of Private Citizens … Subversive Of Constitutional Government” Was One Of The Articles Of Impeachment Against Nixon</a>
+          </div>
+          
+                        <p><strong>washingtonsblog.com</strong> | Where is America’s immune system?</p>
+            <br />
+            <img src="http://static.infowars.com/images/commentballoon.png" width="16" height="14" />
+            <a href="http://www.infowars.com/electronic-surveillance-of-private-citizens-subversive-of-constitutional-government-was-one-of-the-articles-of-impeachment-against-nixon/#respond" title="Comment on “Electronic Surveillance Of Private Citizens … Subversive Of Constitutional Government” Was One Of The Articles Of Impeachment Against Nixon"><span class="dsq-postid" rel="97499 http://www.infowars.com/?p=97499">No Comments</span></a>            
+                              <br /><br />
+          <p><strong><a href="index.php?cat=4">POLICE STATE ARCHIVE</a></strong></p>                       
+        </div>
+        </li>
+      </ul>
+      </div>
+      <!-- September 11 news end-->
+
+      <!-- Constitution & Law news begin-->
+      <div style="border-style: solid; border-width: 1px; border-color: #c4c4c4; margin-bottom: 20px;">
+      <ul>
+        <li>
+        <div class="nSectionHeadLine">
+          <p class="cat-headline">HEALTH</p>
+        </div>
+        
+        <div class="nSectionContent">
+                              <div>
+            <a href="http://www.infowars.com/the-incredibly-flat-world-of-monsanto/" rel="bookmark" title="Permanent Link to The Incredibly Flat World of Monsanto">The Incredibly Flat World of Monsanto</a>
+          </div>
+          
+                        <p><strong>farmwars.info</strong> | Biotech proponents routinely denigrate opponents as flatworlders, Luddites, and against science.</p>
+            <br />
+            <img src="http://static.infowars.com/images/commentballoon.png" width="16" height="14" />
+            <a href="http://www.infowars.com/the-incredibly-flat-world-of-monsanto/#respond" title="Comment on The Incredibly Flat World of Monsanto"><span class="dsq-postid" rel="97505 http://www.infowars.com/?p=97505">No Comments</span></a>                                <div>
+            <a href="http://www.infowars.com/government-media-cover-up-fukushima-radiation-wave-hitting-us/" rel="bookmark" title="Permanent Link to Government, Media Cover Up Fukushima Radiation Wave Hitting US">Government, Media Cover Up Fukushima Radiation Wave Hitting US</a>
+          </div>
+          
+                        <p><strong>Anthony Gucciardi</strong> | As radiation levels spike and mutated wildlife washes ashore, government and media promote delusion. </p>
+            <br />
+            <img src="http://static.infowars.com/images/commentballoon.png" width="16" height="14" />
+            <a href="http://www.infowars.com/government-media-cover-up-fukushima-radiation-wave-hitting-us/#respond" title="Comment on Government, Media Cover Up Fukushima Radiation Wave Hitting US"><span class="dsq-postid" rel="97502 http://www.infowars.com/?p=97502">No Comments</span></a>                                <div>
+            <a href="http://www.infowars.com/mindfulness-meditation-can-help-relieve-anxiety-and-depression/" rel="bookmark" title="Permanent Link to Mindfulness Meditation Can Help Relieve Anxiety And Depression">Mindfulness Meditation Can Help Relieve Anxiety And Depression</a>
+          </div>
+          
+                        <p><strong>NPR</strong> | Evidence also suggest it helps with pain as well.</p>
+            <br />
+            <img src="http://static.infowars.com/images/commentballoon.png" width="16" height="14" />
+            <a href="http://www.infowars.com/mindfulness-meditation-can-help-relieve-anxiety-and-depression/#respond" title="Comment on Mindfulness Meditation Can Help Relieve Anxiety And Depression"><span class="dsq-postid" rel="97493 http://www.infowars.com/?p=97493">No Comments</span></a>                                          <br /><br />
+          <p><strong><a href="index.php?cat=270">HEALTH ARCHIVE</a></strong></p>                       
+        </div>
+        </li>
+      </ul>
+      </div>
+      <!-- Constitution & Law news end-->
+      
+      <!-- Science & Technology news begin-->
+      <div style="border-style: solid; border-width: 1px; border-color: #c4c4c4; margin-bottom: 20px;">
+      <ul>
+        <li>
+        <div class="nSectionHeadLine">
+          <p class="cat-headline">BORDER CONTROL</p>
+        </div>
+        
+        <div class="nSectionContent">
+                              <div>
+            <a href="http://www.infowars.com/migrant-deaths-in-mexico-47000-die-at-hands-of-crime-in-last-6-years-on-way-through-country/" rel="bookmark" title="Permanent Link to Migrant Deaths In Mexico: 47,000 Die At Hands Of Crime In Last 6 Years On Way Through Country">Migrant Deaths In Mexico: 47,000 Die At Hands Of Crime In Last 6 Years On Way Through Country</a>
+          </div>
+          
+                        <p><strong>latintimes.com</strong> | It’s not known how many migrants head through Mexico on their way to the United States.</p>
+            <br />
+            <img src="http://static.infowars.com/images/commentballoon.png" width="16" height="14" />
+            <a href="http://www.infowars.com/migrant-deaths-in-mexico-47000-die-at-hands-of-crime-in-last-6-years-on-way-through-country/#respond" title="Comment on Migrant Deaths In Mexico: 47,000 Die At Hands Of Crime In Last 6 Years On Way Through Country"><span class="dsq-postid" rel="97492 http://www.infowars.com/?p=97492">No Comments</span></a>                                <div>
+            <a href="http://www.infowars.com/nafta-hurt-workers-on-both-sides-of-the-border/" rel="bookmark" title="Permanent Link to NAFTA Hurt Workers on Both Sides of the Border">NAFTA Hurt Workers on Both Sides of the Border</a>
+          </div>
+          
+                        <p><strong>newamericamedia.org</strong> | This week marks the 20th anniversary of the implementation of the North American Free Trade Agreement. </p>
+            <br />
+            <img src="http://static.infowars.com/images/commentballoon.png" width="16" height="14" />
+            <a href="http://www.infowars.com/nafta-hurt-workers-on-both-sides-of-the-border/#respond" title="Comment on NAFTA Hurt Workers on Both Sides of the Border"><span class="dsq-postid" rel="97490 http://www.infowars.com/?p=97490">No Comments</span></a>                                <div>
+            <a href="http://www.infowars.com/shock-video-border-agent-acknowledges-constitution-at-checkpoint-traffic-stop/" rel="bookmark" title="Permanent Link to Shock Video: Border Agent Acknowledges Constitution At Checkpoint">Shock Video: Border Agent Acknowledges Constitution At Checkpoint</a>
+          </div>
+          
+                        <p><strong>Mikael Thalen</strong> | Border agent praises group for exercising right to refuse checkpoint questions.</p>
+            <br />
+            <img src="http://static.infowars.com/images/commentballoon.png" width="16" height="14" />
+            <a href="http://www.infowars.com/shock-video-border-agent-acknowledges-constitution-at-checkpoint-traffic-stop/#respond" title="Comment on Shock Video: Border Agent Acknowledges Constitution At Checkpoint"><span class="dsq-postid" rel="97440 http://www.infowars.com/?p=97440">No Comments</span></a>                                 
+          <br /><br />
+          <p><strong><a href="index.php?cat=14">BORDER CONTROL ARCHIVE</a></strong></p>                        
+        </div>
+        </li>
+      </ul>
+      </div>
+      <!-- Science & Technology news end-->
+      
+      <!-- US news begin-->
+      <div style="border-style: solid; border-width: 1px; border-color: #c4c4c4; margin-bottom: 20px;">
+      <ul>
+        <li>
+        <div class="nSectionHeadLine">
+          <p class="cat-headline">FROM PLANETINFOWARS.COM</p>
+        </div>
+        
+        <div class="nSectionContent">
+                              <div>
+            <a href="http://www.infowars.com/canadas-war-on-the-family/" rel="bookmark" title="Permanent Link to Canada’s war on the family">Canada’s war on the family</a>
+          </div>
+          
+                        <p><b>Planet Infowars</b> | Canadian bill attempts to remove parents&#8217; rights.</p>
+            <br />
+            <img src="http://static.infowars.com/images/commentballoon.png" width="16" height="14" />
+            <a href="http://www.infowars.com/canadas-war-on-the-family/#respond" title="Comment on Canada’s war on the family"><span class="dsq-postid" rel="97437 http://www.infowars.com/?p=97437">No Comments</span></a>                                <div>
+            <a href="http://www.infowars.com/fukushima-out-of-control-january-2014/" rel="bookmark" title="Permanent Link to Fukushima Out of Control January &#8211; 2014">Fukushima Out of Control January &#8211; 2014</a>
+          </div>
+          
+                        <p><b>Planet Infowars</b> | The World is at a critical crossroads.</p>
+            <br />
+            <img src="http://static.infowars.com/images/commentballoon.png" width="16" height="14" />
+            <a href="http://www.infowars.com/fukushima-out-of-control-january-2014/#respond" title="Comment on Fukushima Out of Control January &#8211; 2014"><span class="dsq-postid" rel="97388 http://www.infowars.com/?p=97388">No Comments</span></a>                                <div>
+            <a href="http://www.infowars.com/cold-weather-brown-outs/" rel="bookmark" title="Permanent Link to Cold Weather Brown Outs">Cold Weather Brown Outs</a>
+          </div>
+          
+                        <p><b>Planet Infowars</b> | I work for a large electric utility company. The office building I work in is currently operating on half power.</p>
+            <br />
+            <img src="http://static.infowars.com/images/commentballoon.png" width="16" height="14" />
+            <a href="http://www.infowars.com/cold-weather-brown-outs/#respond" title="Comment on Cold Weather Brown Outs"><span class="dsq-postid" rel="97387 http://www.infowars.com/?p=97387">No Comments</span></a>                                          <br /><br />
+          <p><strong><a href="index.php?cat=412">PLANETINFOWARS ARCHIVE</a></strong></p>                         
+        </div>
+        </li>
+      </ul>
+      </div>
+      
+      <!-- Science & Technology news end-->                             
+      <div style="border-style: solid; border-width: 1px; border-color: #c4c4c4; margin-bottom: 20px;">
+      <ul>
+        <li>
+        <div class="nSectionHeadLine">
+          <p class="cat-headline">GLOBAL CRISIS</p>
+        </div>
+        
+        <div class="nSectionContent">
+                              <div>
+            <a href="http://www.infowars.com/reporters-confirm-radiation-levels-1200-higher-than-normal-on-cali-beach/" rel="bookmark" title="Permanent Link to Reporters Confirm Radiation Levels 1200% Higher Than Normal on Cali. Beach">Reporters Confirm Radiation Levels 1200% Higher Than Normal on Cali. Beach</a>
+          </div>
+          
+                        <p><strong>Infowars.com</strong> | On a beach outside San Francisco, the Infowars crew make a startling discovery.</p>
+            <br />
+            <img src="http://static.infowars.com/images/commentballoon.png" width="16" height="14" />
+            <a href="http://www.infowars.com/reporters-confirm-radiation-levels-1200-higher-than-normal-on-cali-beach/#respond" title="Comment on Reporters Confirm Radiation Levels 1200% Higher Than Normal on Cali. Beach"><span class="dsq-postid" rel="97511 http://www.infowars.com/?p=97511">No Comments</span></a>                                <div>
+            <a href="http://www.infowars.com/government-media-cover-up-fukushima-radiation-wave-hitting-us/" rel="bookmark" title="Permanent Link to Government, Media Cover Up Fukushima Radiation Wave Hitting US">Government, Media Cover Up Fukushima Radiation Wave Hitting US</a>
+          </div>
+          
+                        <p><strong>Anthony Gucciardi</strong> | As radiation levels spike and mutated wildlife washes ashore, government and media promote delusion. </p>
+            <br />
+            <img src="http://static.infowars.com/images/commentballoon.png" width="16" height="14" />
+            <a href="http://www.infowars.com/government-media-cover-up-fukushima-radiation-wave-hitting-us/#respond" title="Comment on Government, Media Cover Up Fukushima Radiation Wave Hitting US"><span class="dsq-postid" rel="97502 http://www.infowars.com/?p=97502">No Comments</span></a>                                <div>
+            <a href="http://www.infowars.com/thyroid-cancer-rates-on-the-rise-in-japanese-children-experts-warn-residents-to-evacuate/" rel="bookmark" title="Permanent Link to Thyroid cancer rates on the rise in Japanese children, experts warn residents to evacuate">Thyroid cancer rates on the rise in Japanese children, experts warn residents to evacuate</a>
+          </div>
+          
+                        <p><B>Natural News</b> | Leaders believe that it&#8217;s time to evacuate the city of Koriyama.</p>
+            <br />
+            <img src="http://static.infowars.com/images/commentballoon.png" width="16" height="14" />
+            <a href="http://www.infowars.com/thyroid-cancer-rates-on-the-rise-in-japanese-children-experts-warn-residents-to-evacuate/#respond" title="Comment on Thyroid cancer rates on the rise in Japanese children, experts warn residents to evacuate"><span class="dsq-postid" rel="97474 http://www.infowars.com/?p=97474">No Comments</span></a>                                          <br /><br />
+          <p><strong><a href="index.php?cat=279">GLOBAL CRISIS ARCHIVE</a></strong></p>                         
+        </div>
+        </li>
+      </ul>
+      </div>
+
+  </div>
+  
+  <div class="clear"></div>
+
+</div>
+  </div>
+  
+  <div id="nBodyRight" class="floatRight">
+    <a onclick="Popup=window.open('http://prisonplanet.tv/news/watch_free/free_to_look_audio.php','audio','width=470,height=350')" href="#">
+<img width="300" border="0" src="http://static.infowars.com/flashplayer/stream/6.jpg">
+<br>
+</a><div class="sidebarbox">
+  <div class="boxheader">TODAY ON THE ALEX JONES SHOW</div>
+  <ul class="sidebarphotobox">
+    <li><img src="http://static.infowars.com/bindnfocom/2011/01/010814poison.jpg" /></li>
+    <li><strong>Poison <BR>Surrounds Us</strong></li>
+  </ul>
+  
+  <p>On this Wednesday, January 8 edition of the Alex Jones Show, Infowars Nightly News host David Knight breaks down the latest in radiation leaks, mass fluoridation and the government's poisonous atmosphere of distrust. Former Secretary of Defense Robert Gates now admits that the Obama administration has been "poisoning the well" against military leadership, often showing condescending attitudes towards senior officers.  In other news, an electrical engineer simply waved his Geiger counter around at a beach near San Francisco and got a startling reading: <a href='http://www.infowars.com/1400-radiation-hot-spot-found-on-san-francisco-beach/' target="_blank">14 times the normal level of radiation</a>.  <strong>Paul Joseph Watson</strong> joins the show to discuss this discovery and the latest developments on the Fukushima radiation leaks.  <strong>Jakari Jackson</strong> and the Infowars field crew give a report on the radiation levels from outside San Francisco.  <strong>Lee Ann McAdoo</strong> also joins the show from Austin City Hall where two patriots continue their hunger strike in protest of Austin's forced fluoridation of the water supply.</p>
+  
+  <p>&nbsp;</p>
+
+  
+  <p style="background-color:#ECECEC; padding:3px;" class="listen_options"> 
+   <img src="http://static.infowars.com/2010/templateimages/listennow.png" alt="Listen now" width="12" height="12" />
+    <a href=" http://www.infowars.com/stream.pls" rel="nofollow" style="font-size:11px;">Listen Now</a> 
+    &nbsp;&nbsp;
+    <img src="http://static.infowars.com/2010/templateimages/icon_wm.gif" alt="Windows Media" width="12" height="12" /> 
+    <a href="http://www.infowars.com/infowars.asx" target="_blank" rel="nofollow" style="font-size:11px;">Windows Media</a>
+    &nbsp;&nbsp;
+    <img src="http://static.infowars.com/2010/templateimages/podcast.png" alt="Podcast" width="12" height="12" /> 
+    <a href="http://xml.nfowars.net/Alex.rss" target="_blank" rel="nofollow" style="color:red;font-size:11px;" >Podcast</a>
+  </p>
+  <p style="background-color:#ECECEC; padding:3px; margin-top:3px; text-align:center;" class="social_media_options">
+  <span style="color: #024384; font-size:11px; font-weight:bold;">Follow us:</span><br/>
+  <a href="http://planetinfowars.com/" target="_self" title="Planet Infowars"><img src="http://static.infowars.com/images/planet_infowars.jpg" border="0" width="20" height="20" /> </a>
+  <a href="http://www.facebook.com/AlexanderEmerickJones" target="_self" title="Facebook"><img src="http://static.infowars.com/images/facebook.jpg" border="0" width="20" height="20" /> </a>
+  <a href="https://pinterest.com/realalexjones/" target="_self" title="Pinterest"><img src="http://static.infowars.com/images/pinterest.jpg" border="0" width="20" height="20" /> </a>
+  <a href="http://twitter.com/#!/realalexjones" target="_self" title="Twitter"><img src="http://static.infowars.com/images/twitter.jpg" border="0" width="20" height="20" /> </a>
+  <a href="http://www.youtube.com/user/TheAlexJonesChannel" target="_self" title="YouTube"><img src="http://static.infowars.com/images/youtube.jpg" border="0" width="20" height="20" /> </a>
+  <a href="http://infowars.com/rss" target="_self" title="RSS Feed"><img src="http://static.infowars.com/images/rss.jpg" border="0" width="20" height="20" /> </a>
+   </p>
+</div>			<div class="textwidget"><!-- infowars/IW-HomePage/IW-HP-AD-300x250-1 -->
+
+<div id='div-gpt-ad-1361825940700-2' style='width:300px; height:250px;'>
+<script type='text/javascript'>
+googletag.cmd.push(function() { googletag.display('div-gpt-ad-1361825940700-2'); });
+</script>
+</div>
+</div>
+		<script type='text/javascript'>
+jQuery.get('rsspptv/disqus_content.html', function(data) {
+jQuery('#mostpopular1').html(data);
+});
+</script>
+<div id="mostpopular1"></div>			<div class="textwidget"><a href="http://www.infowarsshop.com/Survival-Shield--Nascent-Iodine_p_1104.html" ><img src="http://static.infowars.com/ads/SurvivalShield_300X250_FINAL-FINAL.gif"> </a></div>
+					<div class="textwidget"><!--JavaScript Tag  // Tag for network 5235: Intermarkets // Website: InfoWars // Page: 
+
+InfoWars - Home // Placement: Infowars_Home_Remnant_300x250 (2563033) // created at: Oct 
+
+4, 2012 10:12:32 AM-->
+<!--
+<div id="2563033" align="center" style="width:300px;padding:0px;margin:0px;overflow:visible">
+<script type="text/javascript" src="http://cdn.intermarkets.net/u/Intermarkets/Infowars/InfoWars_targeting.js"></script>
+<script type="text/javascript" src="http://cdn.intermarkets.net/u/Intermarkets/Infowars/Infowars_Home_Remnant_300x250.js"></script>
+<noscript><a href="http://adserver.adtechus.com/adlink/3.0/5235/2563033/0/170/ADTECH;cookie=info;loc=300;key=key1+key2+key3+key4;grp=49792" target="_blank">
+<img src="http://adserver.adtechus.com/adserv/3.0/5235/2563033/0/170/ADTECH;cookie=info;loc=300;key=key1+key2+key3+key4;grp=49792" border="0" width="300" height="250"></a></noscript>
+</div>
+-->
+<!-- End of JavaScript Tag --></div>
+					<div class="textwidget"><!-- newsletter sign up -->
+<a href="http://www.infowars.com/newsletter-sign-up/" target="_self" title="Sign up for our newsletter" style="padding-top:4px; padding-bottom:4px;"><img src="http://static.infowars.com/images/magazine_300x104-2.jpg" border="0" width="300" /></a></div>
+					<div class="textwidget"><!-- archives -->
+<a href="http://www.infowars.com/listen-to-the-radio-show-archive/" target="_self" title="Alex Jones Show Archives">
+<img src="http://static.infowars.com/ads/archive_radio_300x104.jpg" border="0" width="300" />
+</a></div>
+					<div class="textwidget"><!-- infowars/IW-HomePage/IW-HP-AD-300x250-2 -->
+<div id='div-gpt-ad-1361825940700-3' style='width:300px; height:250px;'>
+<script type='text/javascript'>
+googletag.cmd.push(function() { googletag.display('div-gpt-ad-1361825940700-3'); });
+</script>
+</div>
+
+<!-- infowars/IW-HomePage -->
+<!--
+<div id='div-gpt-ad-1358357970364-9'  style='width:300px; height:250px;padding-top:3px; padding-bottom:3px;'>
+<script type='text/javascript'>
+googletag.cmd.push(function() { googletag.display('div-gpt-ad-1358357970364-9'); });
+</script>
+</div>
+--></div>
+		<div class="sidebarbox">
+  <div class="boxheader">RSS FEEDS</div>
+ <strong><a href="http://www.infowars.com/feed">RSS</a><br />
+    <a href="http://xml.nfowars.net/Alex.rss">Alex Jones podcast</a></strong>  
+</div>			<div class="textwidget"><!-- infowars/IW-HomePage/IW-HP-AD-300x250-3 -->
+<div id='div-gpt-ad-1361825940700-4' style='width:300px; height:250px;'>
+<script type='text/javascript'>
+googletag.cmd.push(function() { googletag.display('div-gpt-ad-1361825940700-4'); });
+</script>
+</div>
+
+<!-- infowars/IW-HomePage -->
+<!--
+<div id='div-gpt-ad-1358357970364-10' style='width:300px; height:250px;padding-top:3px; padding-bottom:3px;'>
+<script type='text/javascript'>
+googletag.cmd.push(function() { googletag.display('div-gpt-ad-1358357970364-10'); });
+</script>
+</div>
+--></div>
+		<style type="text/css">
+#rss_pptvbox ul {
+		margin-left:0!important;
+	}
+	
+	#rss_pptvbox ul li {
+		width:272px;
+		margin-bottom:5px;
+		overflow:hidden;
+		border-top:solid thin #CCC;
+		padding:5px 0px;
+	}
+	
+.button_subscribe2 {
+	width:103px;
+	height:30px;
+	float:right;
+	margin-right:8px;
+	padding-top:3px;
+}
+
+ul.links_lists li {
+	float:left;
+	width:20px;
+	height:20px;
+	margin-right:3px;
+	background:#4C8FFC;
+	border:solid 0.5px #3079ED!important;
+	-moz-border-radius: 3px;
+	-webkit-border-radius: 3px;
+	border-radius: 3px; 
+	-khtml-border-radius: 3px;
+	text-align:center;
+}
+
+ul.links_lists li:hover {
+	background:#DC4B39;
+	border: solid 0.5px #C93423!important;
+}
+
+.links_container {
+	float:right;
+	margin-top:5px;
+	width:155px;
+	height:32px;
+}
+
+.rssbutton {
+	    background: none repeat scroll 0 0 #4C8FFC;
+	    border: 0.5px solid #3079ED !important;
+	    border-radius: 3px 3px 3px 3px;
+	    float: left;
+	    height: 20px;
+	    margin-right: 3px;
+	    text-align: center;
+	    width: 20px;
+	    border:none!important;
+		color:white;
+		cursor:pointer;
+		line-height:20px;
+		text-align:center;
+		font-weight:bold;
+	}
+        
+span.button_nav { color:white;
+	cursor:pointer;
+	line-height:20px;
+	text-align:center;
+	font-weight:bold; }  
+  
+  
+  
+	img.attachment-rss-thumb, img.breaking_image {
+		border:0;
+		padding-right:4px;
+		padding-bottom:4px;
+		margin:0;
+		width:70px;
+		height:50px;
+		float:left;
+		min-height:55px;
+	}
+	
+	.rss_list {
+		background:#FFF;
+		border:none;
+	}
+	
+	
+   
+.button_subscribe {
+	width:92px;
+	height:22px;
+	float:right;
+	padding-right:6px;
+	padding-top:7.5px;
+}
+
+
+.bottom_container {
+	background:#F0F0F0;
+	width:286px;
+	height:32px;
+	overflow:hidden;
+}
+
+.button_nav {
+	border:none!important;
+	color:white;
+	cursor:pointer;
+	line-height:20px;
+	text-align:center;
+	font-weight:bold;
+}
+
+
+ul.links_lists li {
+	float:left;
+	width:20px;
+	height:20px;
+	margin-right:3px;
+	background:#4C8FFC;
+	border:solid 0.5px #3079ED!important;
+	-moz-border-radius: 3px;
+	-webkit-border-radius: 3px;
+	border-radius: 3px; 
+	-khtml-border-radius: 3px;
+	text-align:center;
+	background: -webkit-gradient(linear, left top, left bottom, from(#3e779d), to(#4583ad));
+   background: -webkit-linear-gradient(top, #3e779d, #4583ad);
+   background: -moz-linear-gradient(top, #3e779d, #4583ad);
+   background: -ms-linear-gradient(top, #3e779d, #4583ad);
+   background: -o-linear-gradient(top, #3e779d, #4583ad);
+}
+
+ul.links_lists li:hover {
+	background:#CB1D03;
+	border: solid 0.5px #C93423!important;
+}
+
+.links_container {
+	float:right;
+	margin-top:5px;
+	width:155px;
+	height:32px;
+}
+
+.textsize {
+	float:left;
+	padding-left:8px;
+}
+
+div.widget {
+    -moz-border-bottom-colors: none;
+    -moz-border-left-colors: none;
+    -moz-border-right-colors: none;
+    -moz-border-top-colors: none;
+    border-color: #333333 #CCCCCC #CCCCCC;
+    border-image: none;
+    border-right: 1px solid #CCCCCC;
+    border-style: solid;
+    border-width: 4px 1px 1px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    margin: 25px 0;
+	width:282px;
+	background:white!important;
+}
+
+
+.rss_link {
+	text-transform:uppercase;
+}  
+		
+</style>
+<div class="sidebarbox widget" >
+<h3>Watch the News</h3>
+<div style="clear:both"></div>
+<div id="rss_pptv0"><ul>
+		 <li class="rss_list" ><a href="http://prisonplanet.tv/index/display/id/5309"   class="rss_link" target="_blank"><img alt="watch" src="http://static.infowars.com/pptv/images/2014-01-08LiveShow_1_08_14.jpg"  class="breaking_image" />Wednesday: The Alex Jones Show. Infowars Crew Record Radiation Levels Close To 10x The "Normal" Level On West Coast Beach Of Infamous Viral Video.</a><div style="clear:both"></div></li>
+	
+		 <li class="rss_list" ><a href="http://prisonplanet.tv/index/display/id/5306"   class="rss_link" target="_blank"><img alt="watch" src="http://static.infowars.com/pptv/images/2014-01-07NN_1_7_14.jpg"  class="breaking_image" />Tuesday: The Infowars Nightly News. Matt Drudge: I’ve Opted Out Of Obamacare For Life. Plus, We Speak With Dr. Richard C. Davis, M.D. On The Dangers Of Radiation On The West Coast.</a><div style="clear:both"></div></li>
+	
+		 <li class="rss_list" ><a href="http://prisonplanet.tv/index/display/id/5307"   class="rss_link" target="_blank"><img alt="watch" src="http://static.infowars.com/pptv/images/2014-01-07LiveShow_1_07_14.jpg"  class="breaking_image" />Tuesday: The Alex Jones Show. Fukushima Radiation Dangers On The Rise. Plus, The Federal Reserve Is An Organized Criminal Mafia.</a><div style="clear:both"></div></li>
+	
+		 <li class="rss_list" ><a href="http://prisonplanet.tv/index/display/id/5305"   class="rss_link" target="_blank"><img alt="watch" src="http://static.infowars.com/pptv/images/2014-01-06NN_1_6_14_B.jpg"  class="breaking_image" />Monday: The Infowars Nightly News. The Dire Implications Of The Fukushima Nuclear Disaster Are Here! The Story The Main Stream Media Isn't Covering Refuses To Cover.</a><div style="clear:both"></div></li>
+	</ul></div><div id="rss_pptv4"><ul>
+		 <li class="rss_list" ><a href="http://prisonplanet.tv/index/display/id/5304"   class="rss_link" target="_blank"><img alt="watch" src="http://static.infowars.com/pptv/images/2014-01-06LiveShow_1_06_14.jpg"  class="breaking_image" />Monday: The Alex Jones Show. Has Fukushima’s Radioactive Wave Already Hit California? Pls, Health Officials: ‘No Concern’ Over 500% Increase In Radiation Levels On Cali. Beach.</a><div style="clear:both"></div></li>
+	
+		 <li class="rss_list" ><a href="http://prisonplanet.tv/index/display/id/5303"   class="rss_link" target="_blank"><img alt="watch" src="http://static.infowars.com/pptv/images/2014-01-05Range_shooter2.jpg"  class="breaking_image" />Sunday: The Alex Jones Show. Obamacare's Backdoor Into Our Second Amendment Rights.</a><div style="clear:both"></div></li>
+	
+		 <li class="rss_list" ><a href="http://prisonplanet.tv/index/display/id/5301"   class="rss_link" target="_blank"><img alt="watch" src="http://static.infowars.com/pptv/images/2014-01-03NN_1_3_14.jpg"  class="breaking_image" />Friday: The Infowars Nightly News. NSA Seeks To Build Quantum Computer That Could Crack Most Types Of Encryption. Plus, Rand Paul Leads Class Action Lawsuit Against Obama For NSA Spying Scandal.</a><div style="clear:both"></div></li>
+	
+		 <li class="rss_list" ><a href="http://prisonplanet.tv/index/display/id/5300"   class="rss_link" target="_blank"><img alt="watch" src="http://static.infowars.com/pptv/images/2014-01-03LiveShow_1_03_14.jpg"  class="breaking_image" />Friday: The Alex Jones Show. Record Breaking Low Temperatures As Another Severe Winter Storm Sweeps The Nation. Plus, Charlotte Iserbyt On The Perils Of Common Core.</a><div style="clear:both"></div></li>
+	</ul></div><div id="rss_pptv8"><ul>
+		 <li class="rss_list" ><a href="http://prisonplanet.tv/index/display/id/5297"   class="rss_link" target="_blank"><img alt="watch" src="http://static.infowars.com/pptv/images/2014-01-02NN_1_2_14.jpg"  class="breaking_image" />Thursday: The Infowars Nightly News. Email Confirms Bank Of America’s ‘Social Media Trolling’ Spy Team. Plus, The Great Italian Auto Bailout — Courtesy of U.S. Taxpayers.</a><div style="clear:both"></div></li>
+	
+		 <li class="rss_list" ><a href="http://prisonplanet.tv/index/display/id/5298"   class="rss_link" target="_blank"><img alt="watch" src="http://static.infowars.com/pptv/images/2014-01-02LiveShow_1_02_14.jpg"  class="breaking_image" />Thursday: The Alex Jones Show. Brain Eating Vaccines To Induce Spiritual Lobotomies. Plus, Congressman Introduces Resolution To Declassify 9/11 Documents.</a><div style="clear:both"></div></li>
+	
+		 <li class="rss_list" ><a href="http://prisonplanet.tv/index/display/id/5302"   class="rss_link" target="_blank"><img alt="watch" src="http://static.infowars.com/pptv/images/2014-01-02NSAzombies-THM"  class="breaking_image" />NSA Calls Americans Zombies</a><div style="clear:both"></div></li>
+	
+		 <li class="rss_list" ><a href="http://prisonplanet.tv/index/display/id/5295"   class="rss_link" target="_blank"><img alt="watch" src="http://static.infowars.com/pptv/images/alex.jpg"  class="breaking_image" />Wednesday:  The Infowars Nightly News.</a><div style="clear:both"></div></li>
+	</ul></div><div id="rss_pptv12"><ul>
+		 <li class="rss_list" ><a href="http://prisonplanet.tv/index/display/id/5296"   class="rss_link" target="_blank"><img alt="watch" src="http://static.infowars.com/pptv/images/2014-01-01Amygdala_Decety.jpg"  class="breaking_image" />Wednesday: The Alex Jones Show. The Government is Hoarding Iodine....Should You? Plus, The Death of Empathy.</a><div style="clear:both"></div></li>
+	
+		 <li class="rss_list" ><a href="http://prisonplanet.tv/index/display/id/5294"   class="rss_link" target="_blank"><img alt="watch" src="http://static.infowars.com/pptv/images/2013-12-31NN_12_31_13.jpg"  class="breaking_image" />Tuesday: The Infowars Nightly News. Connecticut Gun Owners Rush To Registrater Weapons As Deadline Looms. Plus, Google's Illuminati Themed New Years Eve.</a><div style="clear:both"></div></li>
+	
+		 <li class="rss_list" ><a href="http://prisonplanet.tv/index/display/id/5293"   class="rss_link" target="_blank"><img alt="watch" src="http://static.infowars.com/pptv/images/2013-12-31LiveShow_12_31_13.jpg"  class="breaking_image" />Tuesday: The Alex Jones Show. On The Last Broadcast Of 2013, We Reflect On the Major Issues Of Our Time & Contemplate The Path Ahead In 2014.</a><div style="clear:both"></div></li>
+	
+		 <li class="rss_list" ><a href="http://prisonplanet.tv/index/display/id/5292"   class="rss_link" target="_blank"><img alt="watch" src="http://static.infowars.com/pptv/images/2013-12-30NN_12_30_13.jpg"  class="breaking_image" />Monday: The Infowars Nightly News. Volgograd Trolley Blast: Terror Attack Hits Southern Russia Day After Railway Station Bombing. Plus, ‘Media Spotlight’ Shifting to Positive Obamacare Stories, ‘Rabble Rousers’ Won’t Get Attention.</a><div style="clear:both"></div></li>
+	</ul></div><div id="rss_pptv16"><ul>
+		 <li class="rss_list" ><a href="http://prisonplanet.tv/index/display/id/5291"   class="rss_link" target="_blank"><img alt="watch" src="http://static.infowars.com/pptv/images/2013-12-30LiveShow_12_30_13_B.jpg"  class="breaking_image" />Monday: The Alex Jones Show. Suicide bomber kills 16 in Russia’s Volgograd & We Continue Our Review Of The Biggest News Stories Of 2013.</a><div style="clear:both"></div></li>
+	
+		 <li class="rss_list" ><a href="http://prisonplanet.tv/index/display/id/5299"   class="rss_link" target="_blank"><img alt="watch" src="http://static.infowars.com/pptv/images/2013-12-30PPTVTHM-2013-12-30-Bidondijpg"  class="breaking_image" />Most Memorable Stories From 2013 According to Sheeple</a><div style="clear:both"></div></li>
+	
+		 <li class="rss_list" ><a href="http://prisonplanet.tv/index/display/id/5290"   class="rss_link" target="_blank"><img alt="watch" src="http://static.infowars.com/pptv/images/2013-12-29LiveShow_12_29_13.jpg"  class="breaking_image" />Sunday: The Alex Jones Show. The Infowars Year End Review. Today We Cover The Biggest Stories Of 2013 and Analyze Their Impact On The World.</a><div style="clear:both"></div></li>
+	
+		 <li class="rss_list" ><a href="http://prisonplanet.tv/index/display/id/5287"   class="rss_link" target="_blank"><img alt="watch" src="http://static.infowars.com/pptv/images/2013-12-27NN_12_27_13.jpg"  class="breaking_image" />Friday: The Infowars Nightly News. Shoppers Stock Up On Rifles, Shotguns Before California Long Gun Registry Begins. Plus, EPA Pushes Gun Control Through Green Ammo Mandate.</a><div style="clear:both"></div></li>
+	</ul></div><div  id="rss_pptvbox"><ul id="rss_pptv00">
+		 <li class="rss_list" ><a href="http://prisonplanet.tv/index/display/id/5309"   class="rss_link" target="_blank"><img alt="watch" src="http://static.infowars.com/pptv/images/2014-01-08LiveShow_1_08_14.jpg"  class="breaking_image" />Wednesday: The Alex Jones Show. Infowars Crew Record Radiation Levels Close To 10x The "Normal" Level On West Coast Beach Of Infamous Viral Video.</a><div style="clear:both"></div></li>
+	
+		 <li class="rss_list" ><a href="http://prisonplanet.tv/index/display/id/5306"   class="rss_link" target="_blank"><img alt="watch" src="http://static.infowars.com/pptv/images/2014-01-07NN_1_7_14.jpg"  class="breaking_image" />Tuesday: The Infowars Nightly News. Matt Drudge: I’ve Opted Out Of Obamacare For Life. Plus, We Speak With Dr. Richard C. Davis, M.D. On The Dangers Of Radiation On The West Coast.</a><div style="clear:both"></div></li>
+	
+		 <li class="rss_list" ><a href="http://prisonplanet.tv/index/display/id/5307"   class="rss_link" target="_blank"><img alt="watch" src="http://static.infowars.com/pptv/images/2014-01-07LiveShow_1_07_14.jpg"  class="breaking_image" />Tuesday: The Alex Jones Show. Fukushima Radiation Dangers On The Rise. Plus, The Federal Reserve Is An Organized Criminal Mafia.</a><div style="clear:both"></div></li>
+	
+		 <li class="rss_list" ><a href="http://prisonplanet.tv/index/display/id/5305"   class="rss_link" target="_blank"><img alt="watch" src="http://static.infowars.com/pptv/images/2014-01-06NN_1_6_14_B.jpg"  class="breaking_image" />Monday: The Infowars Nightly News. The Dire Implications Of The Fukushima Nuclear Disaster Are Here! The Story The Main Stream Media Isn't Covering Refuses To Cover.</a><div style="clear:both"></div></li>
+	</ul></div>
+<div style="clear:both"></div>
+<div class="bottom_container">
+
+<div class="links_container">
+        	<ul class="links_lists">
+                <li><span onclick="replace('#rss_pptvbox', '#rss_pptv0')" class="button_nav"> 1 </span></li>
+                <li><span onclick="replace('#rss_pptvbox', '#rss_pptv4')" class="button_nav"> 2 </span></li>
+                <li><span onclick="replace('#rss_pptvbox', '#rss_pptv8')" class="button_nav"> 3 </span></li>
+                <li><span onclick="replace('#rss_pptvbox', '#rss_pptv12')" class="button_nav"> 4 </span></li>
+                <li><span onclick="replace('#rss_pptvbox', '#rss_pptv16')" class="button_nav"> 5 </span></li>
+            </ul>
+</div>
+    
+
+
+
+
+</div>
+</div>			<div class="textwidget"><!-- infowars/IW-HomePage/IW-HP-HOUSE-300x250-1 -->
+<div id='div-gpt-ad-1358357970364-3' style='width:300px; height:250px;padding-top:3px; padding-bottom:3px;' >
+<script type='text/javascript'>
+googletag.cmd.push(function() { googletag.display('div-gpt-ad-1358357970364-3'); });
+</script>
+</div></div>
+		<div class="sidebarbox">
+  <div class="boxheader">FEATURED VIDEOS</div>
+  <div class="video"><iframe class="youtube-player" width="280" height="205" src="
+http://www.youtube.com/embed/wZta3HRe2YY
+" ></iframe></div><div class="videotitle"><strong>Will You Swallow Google's Edible Microchip?</strong> See the rest on the <a href="http://www.youtube.com/user/TheAlexJonesChannel" target="_blank">Alex Jones YouTube channel</a>.</div><br /><div class="video"><iframe class="youtube-player" width="280" height="205" src="
+http://www.youtube.com/embed/iKM0olvL__Q
+" ></iframe></div><div class="videotitle"><strong>Whistleblower: Government Caught Smuggling Red-Handed </strong> See the rest on the <a href="http://www.youtube.com/user/TheAlexJonesChannel" target="_blank">Alex Jones YouTube channel</a>.</div><br />
+
+</div>			<div class="textwidget"><!-- infowars/IW-HomePage/IW-HP-HOUSE-300x250-2 -->
+<div id='div-gpt-ad-1358357970364-4' style='width:300px; height:250px;padding-top:3px; padding-bottom:3px;'>
+<script type='text/javascript'>
+googletag.cmd.push(function() { googletag.display('div-gpt-ad-1358357970364-4'); });
+</script>
+</div></div>
+		<div class="sidebarbox">
+  <div class="boxheader">POLITICAL ILLUSTRATION</div>
+  <a class="single_image" rel="group1" href="http://static.infowars.com/politicalsidebarimage/jump_large.jpg">
+<img src="http://static.infowars.com/politicalsidebarimage/jump.jpg"  width="283"/>  </a>
+  <a href="http://static.infowars.com/politicalsidebarimage/mother_large.jpg" style="display:none;"   class="single_image" rel="group1"></a>
+<a href="http://static.infowars.com/politicalsidebarimage/ahead_large.jpg" style="display:none;"   class="single_image" rel="group1"></a>
+<a href="http://static.infowars.com/politicalsidebarimage/walmart2_large.jpg" style="display:none;"   class="single_image" rel="group1"></a>
+<a href="http://static.infowars.com/politicalsidebarimage/surcartoon_large.jpg" style="display:none;"   class="single_image" rel="group1"></a>
+<a href="http://static.infowars.com/politicalsidebarimage/prisonplanet_large.jpg" style="display:none;"   class="single_image" rel="group1"></a>
+<a href="http://static.infowars.com/politicalsidebarimage/jobs_large.jpg" style="display:none;"   class="single_image" rel="group1"></a>
+<a href="http://static.infowars.com/politicalsidebarimage/rudolph_large.jpg" style="display:none;"   class="single_image" rel="group1"></a>
+<a href="http://static.infowars.com/politicalsidebarimage/obamafolly_large.jpg" style="display:none;"   class="single_image" rel="group1"></a>
+<a href="http://static.infowars.com/politicalsidebarimage/owaiver_large.jpg" style="display:none;"   class="single_image" rel="group1"></a>
+</div><div class="sidebarbox">
+    <div class="boxheader">INFOWARS POLLS</div>
+      <div style="padding: 3px;">
+        <div id="polls-274" class="wp-polls">
+	<form id="polls_form_274" class="wp-polls-form" action="/" method="post">
+		<p style="display: none;"><input type="hidden" id="poll_274_nonce" name="wp-polls-nonce" value="a0a1d1f999" /></p>
+		<p style="display: none;"><input type="hidden" name="poll_id" value="274" /></p>
+		<p style="text-align: left;">Do you think Fukushima radiation is a threat to the United States?</p><div id="polls-274-ans" class="wp-polls-ans"><ul class="wp-polls-ul">
+		<li><input type="radio" id="poll-answer-722" name="poll_274" value="722" /> <label for="poll-answer-722">Yes</label></li>
+		<li><input type="radio" id="poll-answer-723" name="poll_274" value="723" /> <label for="poll-answer-723">No</label></li>
+		<li><input type="radio" id="poll-answer-724" name="poll_274" value="724" /> <label for="poll-answer-724">I don't know</label></li>
+		</ul><p style="text-align: center;"><input type="button" name="vote" value="   Vote   " class="Buttons" onclick="poll_vote(274);" onkeypress="poll_result(274);" /></p><p style="text-align: center;"><a href="#ViewPollResults" onclick="poll_result(274); return false;" onkeypress="poll_result(274); return false;" title="View Results Of This Poll">View Results</a></p></div>
+	</form>
+</div>
+      </div>
+    </div>
+ 			<div class="textwidget"><!-- Alex Jones App -->
+<a href="http://www.infowars.com/watch-alex-jones-show" title="Alex Jones Show" target="_new">
+<img src="http://static.infowars.com/images/iphone_300X250.jpg" width="300" border="0" /></a></div>
+		  
+  </div>
+  
+  <div class="clear"></div>
+</div>
+
+<script type="text/javascript">
+/* * * disqus comments count * * */
+var disqus_shortname = 'nfocom'; 
+(function () {
+var s = document.createElement('script'); s.async = true;
+s.type = 'text/javascript';
+s.src = 'http://' + disqus_shortname + '.disqus.com/count.js';
+(document.getElementsByTagName('HEAD')[0] || document.getElementsByTagName('BODY')[0]).appendChild(s);
+}());
+</script> 
+
+</div>
+
+<div id="nFooter">
+  <div id="nFooterNavigationCopyright">
+    <p style="color: white;">&copy;<strong> 2013 Infowars.com</strong> is a <strong>Free Speech Systems, LLC company</strong>. All rights reserved. <a href="http://www.infowars.com/dmca.html" style="color: white;">Digital Millennium Copyright Act Notice</a>.</p>
+  </div>
+  <div id="nFooterNavigation">
+    <div class="menu-header"><ul id="menu-navigation-footer" class="menu"><li id="menu-item-52449" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-52449"><a href="http://www.infowars.com/digital-millennium-copyright-act/">Digital Millennium Copyright Act</a></li>
+<li id="menu-item-52450" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-52450"><a href="http://www.infowars.com/advertise-with-infowars/">Advertise</a></li>
+<li id="menu-item-52458" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-52458"><a href="http://www.infowars.com/writers/">Writers</a></li>
+<li id="menu-item-81450" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-81450"><a href="http://www.infowars.com/terms-of-service/">Terms of service</a></li>
+</ul></div>  </div>
+  <div class="clear"></div>
+</div>
+
+    <script type="text/javascript">
+    // <![CDATA[
+        var disqus_shortname = 'nfocom';
+        (function () {
+            var nodes = document.getElementsByTagName('span');
+            for (var i = 0, url; i < nodes.length; i++) {
+                if (nodes[i].className.indexOf('dsq-postid') != -1) {
+                    nodes[i].parentNode.setAttribute('data-disqus-identifier', nodes[i].getAttribute('rel'));
+                    url = nodes[i].parentNode.href.split('#', 1);
+                    if (url.length == 1) url = url[0];
+                    else url = url[1]
+                    nodes[i].parentNode.href = url + '#disqus_thread';
+                }
+            }
+            var s = document.createElement('script'); s.async = true;
+            s.type = 'text/javascript';
+            s.src = '//' + 'disqus.com/forums/' + disqus_shortname + '/count.js';
+            (document.getElementsByTagName('HEAD')[0] || document.getElementsByTagName('BODY')[0]).appendChild(s);
+        }());
+    //]]>
+    </script>
+<script type='text/javascript'>
+/* <![CDATA[ */
+var emailL10n = {"ajax_url":"http:\/\/www.infowars.com\/wp-admin\/admin-ajax.php","max_allowed":"5","text_error":"The Following Error Occurs:","text_name_invalid":"- Your Name is empty\/invalid","text_email_invalid":"- Your Email is empty\/invalid","text_remarks_invalid":"- Your Remarks is invalid","text_friend_names_empty":"- Friend Name(s) is empty","text_friend_name_invalid":"- Friend Name is empty\/invalid: ","text_max_friend_names_allowed":"- Maximum 5 Friend Names allowed","text_friend_emails_empty":"- Friend Email(s) is empty","text_friend_email_invalid":"- Friend Email is invalid: ","text_max_friend_emails_allowed":"- Maximum 5 Friend Emails allowed","text_friends_tally":"- Friend Name(s) count does not tally with Friend Email(s) count","text_image_verify_empty":"- Image Verification is empty"};
+/* ]]> */
+</script>
+<script type='text/javascript' src='http://www.infowars.com/wp-content/plugins/wp-email/email-js.js'></script>
+<script type='text/javascript'>
+/* <![CDATA[ */
+var pollsL10n = {"ajax_url":"http:\/\/www.infowars.com\/wp-admin\/admin-ajax.php","text_wait":"Your last request is still being processed. Please wait a while ...","text_valid":"Please choose a valid poll answer.","text_multiple":"Maximum number of choices allowed: ","show_loading":"0","show_fading":"0"};
+/* ]]> */
+</script>
+<script type='text/javascript' src='http://www.infowars.com/wp-content/plugins/wp-polls/polls-js.js'></script>
+<!-- X -->
+  <script type="text/javascript">
+  <!--
+  function MM_jumpMenu(targ,selObj,restore){ //v3.0
+    eval(targ+".location='"+selObj.options[selObj.selectedIndex].value+"'");
+    if (restore) selObj.selectedIndex=0;
+  }
+  //-->
+  </script>
+<!-- function for comment rules pop up -->
+<script type="text/JavaScript">
+<!--
+function MM_openBrWindow(theURL,winName,features) { //v2.0
+  window.open(theURL,winName,features);
+  return false;
+}
+//-->
+</script>
+
+<!-- crazy egg -->
+<script type="text/javascript">
+setTimeout(function(){var a=document.createElement("script");
+var b=document.getElementsByTagName("script")[0];
+a.src=document.location.protocol+"//dnn506yrbagrg.cloudfront.net/pages/scripts/0013/0336.js?"+Math.floor(new Date().getTime()/3600000);
+a.async=true;a.type="text/javascript";b.parentNode.insertBefore(a,b)}, 1);
+</script>
+
+
+<!-- open x single call -->
+<!--
+-->
+</body>
+
+</html>

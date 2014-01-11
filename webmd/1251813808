@@ -1,0 +1,21 @@
+PHTTP63.251.249.49"®
+.GET /adscores/g.json?sid=9202507693 HTTP/1.1
+Host: adadvisor.net
+Connection: keep-alive
+Accept: */*
+vUser-Agent: Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/31.0.1650.63 Safari/537.36
+Referer: http://bcp.crwdcntrl.net/5/c=932/rand=873328438/pv=y/int=%23OpR%2316093%23s_topic%20%3A%201728/int=%23OpR%2316095%23s_channel_health%20%3A%20/int=%23OpR%2316281%23s_channel_super_portal%20%3A%20/int=%23OpR%2316285%23s_channel%20%3A%20/int=%23OpR%2316291%23s_site%20%3A%20core/int=%23OpR%2316426%23s_sponsor_brand%20%3A%20/int=%23OpR%2316428%23s_sponsor_program%20%3A%201728%20-%20/int=%23OpR%2316430%23s_package_type%20%3A%20homepage%20-%20nosp/int=%23OpR%2316432%23s_package_name%20%3A%20Home%20Page/int=%23OpR%2317827%23s_stage_condition%20%3A%20%20%3A%201728/int=%23OpR%2317829%23s_mrt%20%3A%20%20%3A%201728/srch=%23OpR%2333474%23Referrer%20Search%20%3A%20/dem=%23OpR%2316287%23s_intended_demographics%20%3A%20__/p=3151/p=3152/dp=y/rt=ifr
+$Accept-Encoding: gzip,deflate,sdch
+!Accept-Language: en-US,en;q=0.8
+
+*’
+HTTP/1.1 200 OK
+&Date: Thu,  09 Jan 2014 00:43:37 GMT
+Connection: close
+Server: AAWebServer
+DP3P: policyref="http://www.adadvisor.net/w3c/p3p.xml",CP="NOI NID"
+Content-Length: 103
+ Content-Type: application/json
+ÅSet-Cookie: ab=0001%3Am6M7vup4%2BxsME7w8l1pVX4Aj4YETxIUj; Domain=.adadvisor.net; Expires=Thu,  09 Jan 2015 00:43:37 GMT; Path=/
+i
+processTargusData({"targus": { "segment" : "000", "zip" : "", "age" : "", "gender" : "", "sk" : "" }});

@@ -1,0 +1,24 @@
+PHTTP199.233.57.41"î
+GET /crossdomain.xml HTTP/1.1
+Host: ad.crwdcntrl.net
+Connection: keep-alive
+vUser-Agent: Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/31.0.1650.63 Safari/537.36
+Accept: */*
+CReferer: http://embed.newsinc.com/thumbnail/iframe.html?wid=13109
+$Accept-Encoding: gzip,deflate,sdch
+!Accept-Language: en-US,en;q=0.8
+
+*Œ
+HTTP/1.1 200 OK
+%Date: Wed, 08 Jan 2014 16:56:55 GMT
+Content-Type: text/xml
+Content-Length: 186
+.Last-Modified: Wed, 23 Jan 2013 21:12:25 GMT
+Connection: keep-alive
+Accept-Ranges: bytes
+¼
+<?xml version="1.0"?>
+<cross-domain-policy>
+        <site-control   permitted-cross-domain-policies="master-only" />
+        <allow-access-from      domain="*" />
+</cross-domain-policy>

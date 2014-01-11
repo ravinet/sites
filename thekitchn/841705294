@@ -1,0 +1,57 @@
+»HTTPS108.161.189.192"Ã
+,GET /davidandgoliath/xml/3053.xml HTTP/1.1
+%Host: servedbyy-ssmb.netdna-ssl.com
+Connection: keep-alive
+vUser-Agent: Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/31.0.1650.63 Safari/537.36
+Accept: */*
+$Accept-Encoding: gzip,deflate,sdch
+!Accept-Language: en-US,en;q=0.8
+
+*¿
+
+HTTP/1.1 200 OK
+%Date: Fri, 10 Jan 2014 17:01:37 GMT
+Content-Type: application/xml
+Content-Length: 920
+Connection: keep-alive
+Nx-amz-id-2: hvKZu116gR962nXHgLT0J9vlfPBvSNVxDNCUqeXqk+wVsNL9p7PlRXlgsg6wIoTV
+$x-amz-request-id: A2AB3BD019212CAC
+.Last-Modified: Thu, 02 Jan 2014 19:50:12 GMT
+*ETag: "b9e3a11908e9866f7c18a74695eb4378"
+Server: NetDNA-cache/2.2
+X-Cache: HIT
+Accept-Ranges: bytes
+š
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<root updated="140102.1445">
+	<image>
+		<id>001</id>
+		<url>https://servedbyy-ssmb.netdna-ssl.com/davidandgoliath/playground/300x250/01.swf</url>
+		<mult>1</mult>
+		<lander>7923</lander>
+	</image>
+	<image>
+		<id>002</id>
+		<url>https://servedbyy-ssmb.netdna-ssl.com/davidandgoliath/playground/300x250/02.swf</url>
+		<mult>1</mult>
+		<lander>7919</lander>
+	</image>
+	<image>
+		<id>003</id>
+		<url>https://servedbyy-ssmb.netdna-ssl.com/davidandgoliath/playground/300x250/03.swf</url>
+		<mult>1</mult>
+		<lander>7920</lander>
+	</image>
+	<image>
+		<id>004</id>
+		<url>https://servedbyy-ssmb.netdna-ssl.com/davidandgoliath/playground/300x250/04.swf</url>
+		<mult>1</mult>
+		<lander>7922</lander>
+	</image>
+	<image>
+		<id>005</id>
+		<url>https://servedbyy-ssmb.netdna-ssl.com/davidandgoliath/playground/300x250/05.swf</url>
+		<mult>1</mult>
+		<lander>7921</lander>
+	</image>
+</root>

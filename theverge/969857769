@@ -1,0 +1,31 @@
+PHTTP173.194.46.121"¶
+:GET /pixel?google_nid=openx&google_cm&google_sc HTTP/1.1
+Host: cm.g.doubleclick.net
+Connection: keep-alive
+Accept: image/webp,*/*;q=0.8
+vUser-Agent: Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/31.0.1650.63 Safari/537.36
+[Referer: http://us-u.openx.net/w/1.0/pd?plm=5&ph=0238cbd0c099a74a0f401d17ffde973b8e941e1d
+$Accept-Encoding: gzip,deflate,sdch
+!Accept-Language: en-US,en;q=0.8
+
+*ó
+HTTP/1.1 302 Found
+¥P3P: policyref="http://googleads.g.doubleclick.net/pagead/gcn_p3p_.xml", CP="CURa ADMa DEVa TAIo PSAo PSDo OUR IND UNI PUR INT DEM STA PRE COM NAV OTC NOI DSP COR"
+tSet-Cookie: test_cookie=CheckForPermission; expires=Thu, 09-Jan-2014 02:12:16 GMT; path=/; domain=.doubleclick.net
+_Location: http://cm.g.doubleclick.net/pixel?google_nid=openx&google_cm=&google_sc=&google_tc=
+%Date: Thu, 09 Jan 2014 01:57:16 GMT
+Pragma: no-cache
+(Expires: Fri, 01 Jan 1990 00:00:00 GMT
+*Cache-Control: no-cache, must-revalidate
+(Content-Type: text/html; charset=UTF-8
+Server: HTTP server (unknown)
+Content-Length: 292
+!X-XSS-Protection: 1; mode=block
+Alternate-Protocol: 80:quic
+¦
+<HTML><HEAD><meta http-equiv="content-type" content="text/html;charset=utf-8">
+<TITLE>302 Moved</TITLE></HEAD><BODY>
+<H1>302 Moved</H1>
+The document has moved
+<A HREF="http://cm.g.doubleclick.net/pixel?google_nid=openx&amp;google_cm=&amp;google_sc=&amp;google_tc=">here</A>.
+</BODY></HTML>

@@ -1,0 +1,57 @@
+PHTTP129.176.217.220"¥
+-GET /styles/css/gbs/globalsize.css HTTP/1.1
+Host: www.mayoclinic.org
+Connection: keep-alive
+Accept: text/css,*/*;q=0.1
+vUser-Agent: Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/31.0.1650.63 Safari/537.36
+%Referer: http://www.mayoclinic.org/
+$Accept-Encoding: gzip,deflate,sdch
+!Accept-Language: en-US,en;q=0.8
+4Cookie: ASP.NET_SessionId=utneflmiwti1lzdwzi1m1rsm
+
+*Ü
+HTTP/1.1 200 OK
+Cache-Control: max-age=604800
+Content-Type: text/css
+.Last-Modified: Fri, 03 Jan 2014 19:27:16 GMT
+Accept-Ranges: bytes
+ETag: "7b7096cfb98cf1:0"
+%Date: Thu, 09 Jan 2014 01:39:31 GMT
+Content-Length: 615
+é
+ï»¿#wrapper #header ul.nav li:nth-child(1) a
+{
+    width: 75px;
+}
+#wrapper #header ul.nav li:nth-child(2) a
+{
+    width: 100px;
+}
+#wrapper #header ul.nav li:nth-child(3) a
+{
+    width: 95px;
+}
+#wrapper #header ul.nav li:nth-child(4) a
+{
+    width: 120px;
+}
+#wrapper #header ul.nav li:nth-child(5) a
+{
+    width: 90px;
+}
+#wrapper #header ul.nav li:nth-child(6) a
+{
+    width: 125px;
+}
+#wrapper #header ul.nav li:nth-child(7) a
+{
+    width: 95px;
+}
+#wrapper #header ul.nav li:nth-child(5) div
+{
+    left: -355px;
+}
+#wrapper #header ul.nav li:nth-child(6) div
+{
+    left: -320px;
+}

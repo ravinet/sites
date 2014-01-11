@@ -1,0 +1,19 @@
+PHTTP66.117.23.101"ä
+ß
+GET /m2/homedepot/sc/standard?mboxHost=www.homedepot.com&mboxSession=1389228094452-423987&mboxPage=1389228094452-423987&screenHeight=1200&screenWidth=1920&browserWidth=937&browserHeight=1051&browserTimeOffset=-300&colorDepth=24&mboxCount=2&mbox=SiteCatalyst%3A%20event&mboxId=0&mboxTime=1389210094830&charSet=ISO-8859-1&visitorNamespace=homedepot&pageName=homepage&currencyCode=USD&channel=homepage&resolution=1920x1200&javascriptVersion=1.6&javaEnabled=Y&cookiesEnabled=Y&trackDownloadLinks=true&trackExternalLinks=true&trackInlineStats=false&linkLeaveQueryString=false&linkDownloadFileTypes=exe%2Czip%2Cwav%2Cmp3%2Cmov%2Cmpg%2Cavi%2Cwmv%2Cdoc%2Cpdf%2Cxls&linkInternalFilters=%23localizationModalContent%2Cqa73.%2C.homedepotdev.com%2Cjavascript%3A%2Chomedepot.com%2Chomedepotrents.com%2Chomedepot.shoplocal.com%2Chomedepot.bighammersoftware.com%2Clocalhost%2Cvendaria.com&linkTrackVars=None&linkTrackEvents=None&prop1=homepage&prop2=homepage&prop13=new&eVar14=auto&eVar17=D%3DpageName&prop19=homepage&prop24=h.26.2013.12.17.13.21.01&eVar25=consumer&eVar26=guest&eVar27=2602&prop30=homepage&prop33=home%3Aversion%3Agen2&eVar35=7%3A30pm%7Cwednesday%7Cweekday&eVar69=first%20visit&mboxURL=http%3A%2F%2Fwww.homedepot.com%2Fb%2Fwebapp%2Fcatalog%2Fservlet%2FHomePageView%3FstoreId%3D10051%26catalogId%3D10053%26langId%3D-1&mboxReferrer=&mboxVersion=41&scPluginVersion=1 HTTP/1.1
+Host: homedepot.tt.omtrdc.net
+Connection: keep-alive
+Accept: */*
+vUser-Agent: Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/31.0.1650.63 Safari/537.36
+qReferer: http://www.homedepot.com/b/webapp/catalog/servlet/HomePageView?storeId=10051&catalogId=10053&langId=-1
+$Accept-Encoding: gzip,deflate,sdch
+!Accept-Language: en-US,en;q=0.8
+
+*‡
+HTTP/1.1 200 OK
+2Content-Type: text/javascript;charset=ISO-8859-1
+Content-Length: 101
+%Date: Thu, 09 Jan 2014 00:41:21 GMT
+Server: Test & Target
+g
+mboxFactories.get('default').get('SiteCatalyst: event', 0).setOffer(new mboxOfferDefault()).loaded();

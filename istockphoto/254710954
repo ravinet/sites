@@ -1,0 +1,20 @@
+PHTTP74.119.118.94"„
+ŒGET /dis/dis.aspx?&t1=sendEvent&c=2&p=3128&p1=v%3D2%26wi%3D7713947%26pt1%3D0%26pt2%3D1&cb=94539377744&ref=&sc_r=1920x1200&sc_d=24 HTTP/1.1
+Host: dis.criteo.com
+Connection: keep-alive
+TAccept: text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8
+vUser-Agent: Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/31.0.1650.63 Safari/537.36
+&Referer: http://www.istockphoto.com/
+$Accept-Encoding: gzip,deflate,sdch
+!Accept-Language: en-US,en;q=0.8
+
+*Ä
+HTTP/1.1 302 Found
+¡Location: http://dis.eu.criteo.com/dis/dis.aspx?&t1=sendEvent&c=2&p=3128&p1=v%3D2%26wi%3D7713947%26pt1%3D0%26pt2%3D1&cb=94539377744&ref=&sc_r=1920x1200&sc_d=24
+Server: Microsoft-IIS/7.5
+%Date: Fri, 10 Jan 2014 16:33:14 GMT
+Content-Length: 298
+¬
+<html><head><title>Object moved</title></head><body>
+<h2>Object moved to <a href="http://dis.eu.criteo.com/dis/dis.aspx?&amp;t1=sendEvent&amp;c=2&amp;p=3128&amp;p1=v%3D2%26wi%3D7713947%26pt1%3D0%26pt2%3D1&amp;cb=94539377744&amp;ref=&amp;sc_r=1920x1200&amp;sc_d=24">here</a>.</h2>
+</body></html>

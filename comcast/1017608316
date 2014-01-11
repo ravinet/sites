@@ -1,0 +1,27 @@
+PHTTP23.202.220.81"¤
++GET /~/Media/error/404.aspx.ashx HTTP/1.1
+Host: cdn.comcast.com
+Connection: keep-alive
+Accept: text/css,*/*;q=0.1
+vUser-Agent: Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/31.0.1650.63 Safari/537.36
+"Referer: http://www.comcast.com/
+$Accept-Encoding: gzip,deflate,sdch
+!Accept-Language: en-US,en;q=0.8
+ºCookie: SHS=0; BSD=1; PSC=VA=1025&UCID=be32b6ef-5702-4ff3-87a7-b27c3e93bab1&CTY=Cambridge&ST=MA&Z=02139&EX=False&RC.MKT=3550; SC=RC.USID=bf831455-a5a1-432c-aa38-e173b8c41e6e&RC.SEG=4%3d1%7c64%3d0%7c66%3d0%7c71%3d0%7c81%3d0%7c80%3d0%7c70%3d0%7c68%3d0%7c78%3d0%7c44%3d0%7c13%3d0%7c3%3d0%7c&EX=False&GEO=True&L1ID=11599&RC.AGT=520&RC.BIL=CSG&RC.CRPN=0&RC.FRCHN=0&RC.LOC=-9223372036854775808&RC.MGMTA=0&RC.MKT=3550&RC.PRIN=2100&RC.SYS=8993&RC.CORP=512&RC.FRCH=15090&L2ID=2238&L3ID=2239&L4ID=3489&RC.IFL=N; mbox=check#true#1389228539|session#1389228478572-945794#1389230339
+
+*Ô
+ HTTP/1.1 302 Moved Temporarily
+(Content-Type: text/html; charset=utf-8
+	ETag:  
+Location: /error/404.aspx
+Server: Microsoft-IIS/7.5
+X-AspNet-Version: 4.0.30319
+Content-Length: 132
+(Cache-Control: private, max-age=604800
+%Date: Thu, 09 Jan 2014 00:47:46 GMT
+Connection: keep-alive
+Vary: Accept-Encoding
+†
+<html><head><title>Object moved</title></head><body>
+<h2>Object moved to <a href="/error/404.aspx">here</a>.</h2>
+</body></html>

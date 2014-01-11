@@ -1,0 +1,18 @@
+PHTTP66.117.23.106"Å
+∂GET /m2/avgtechnologiescyltd/mbox/standard?mboxHost=www.avg.com&mboxSession=1389227899937-831906&mboxPage=1389227899937-831906&screenHeight=1200&screenWidth=1920&browserWidth=937&browserHeight=1051&browserTimeOffset=-300&colorDepth=24&mboxCount=2&mbox=content-AVG2013R2-us-en-homepage-homepagecontentpar-start_21ca&mboxId=0&mboxTime=1389209900083&mboxURL=http%3A%2F%2Fwww.avg.com%2Fus-en%2Fhomepage&mboxReferrer=&mboxVersion=41 HTTP/1.1
+*Host: avgtechnologiescyltd.tt.omtrdc.net
+Connection: keep-alive
+Accept: */*
+vUser-Agent: Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/31.0.1650.63 Safari/537.36
+,Referer: http://www.avg.com/us-en/homepage
+$Accept-Encoding: gzip,deflate,sdch
+!Accept-Language: en-US,en;q=0.8
+
+*ˇ
+HTTP/1.1 200 OK
+2Content-Type: text/javascript;charset=ISO-8859-1
+Content-Length: 220
+%Date: Thu, 09 Jan 2014 00:38:07 GMT
+Server: Test & Target
+ﬁ
+mboxFactories.get('default').get('content-AVG2013R2-us-en-homepage-homepagecontentpar-start_21ca',0).setOffer(new mboxOfferDefault()).loaded();mboxFactories.get('default').getPCId().forceId("1389227899937-831906.25_45");

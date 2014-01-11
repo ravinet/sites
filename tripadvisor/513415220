@@ -1,0 +1,55 @@
+PHTTP74.119.118.89"Ì
+hGET /event?a=4653&v=2.0.0&p0=e%3Dexd%26si%3D6&p1=e%3Dexd%26site_type%3Dd&p2=e%3Dvh&p3=e%3Ddis HTTP/1.1
+Host: widget.criteo.com
+Connection: keep-alive
+Accept: */*
+vUser-Agent: Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/31.0.1650.63 Safari/537.36
+xReferer: http://c1.tacdn.com/uvpages/page_moniker_criteo_v5.html?category=Home&subcategory=&checkindate=&checkoutdate=
+$Accept-Encoding: gzip,deflate,sdch
+!Accept-Language: en-US,en;q=0.8
+
+*∆
+HTTP/1.1 200 OK
+Cache-Control: no-cache
+Pragma: no-cache
+7Content-Type: application/x-javascript; charset=utf-8
+Expires: -1
+Server: Microsoft-IIS/7.5
+4P3P: CP="NON DSP COR CURa PSA PSD OUR BUS NAV STA"
+ySet-Cookie: uid=d3642bb5-ffc0-4c02-9bba-4c5e816a5d04; domain=.criteo.com; expires=Fri, 09-Jan-2015 00:42:20 GMT; path=/
+ySet-Cookie: uid=d3642bb5-ffc0-4c02-9bba-4c5e816a5d04; domain=.criteo.com; expires=Fri, 09-Jan-2015 00:42:20 GMT; path=/
+èSet-Cookie: uic=*1UOkEeHze0UAIgiQESgD4b%2boakTErOCx6PQswju2gKHlRBmxX2UxFaDbzRG3YGmbe4PshhV94DUV3qkAi3SO%2bLSxdq1rMd1yWEsWrtUXFgdh3OJXAc9K2UiD1a3r7SPjuA%2fzaY8z6QF6zuddMEOSSeKTPLiym3dyN47Y2cMeU6P3hpzmX%2bERokI3jP2JQG9wR8rAbKuK05rj%2bCLeDU2WkHiCrWlhj2TRpnXsKrt7iTPQmUK8NNQb76NxPXWJoSRBFAd1rdciV00FsPF6NVpNwdJ0rXjOfiqxnMnxQQafQQGk%3d; domain=.criteo.com; expires=Tue, 08-Jul-2014 23:42:20 GMT; path=/
+wSet-Cookie: udc=*1AjVT%2bgfw%2f8PyH2Istroh8g%3d%3d; domain=.criteo.com; expires=Tue, 08-Jul-2014 23:42:20 GMT; path=/
+uSet-Cookie: udi=*1%2b2uajr69RiP31WuWcmG8wg%3d%3d; domain=.criteo.com; expires=Fri, 10-Jan-2014 00:42:20 GMT; path=/
+%Date: Thu, 09 Jan 2014 00:42:20 GMT
+Content-Length: 942
+∞
+/*<!--*/(function() {
+var qss = '&cb=' + Math.floor(Math.random() * 99999999999);
+try {
+    qss += '&ref=' + encodeURIComponent(document.referrer);
+} catch (e) { }
+try {
+    qss += '&sc_r=' + encodeURIComponent(screen.width + 'x' + screen.height);
+} catch (e) { }
+try {
+    qss += '&sc_d=' + encodeURIComponent(screen.colorDepth);
+} catch (e) { }
+
+var callDis = function(pid, domain) {
+    var qr = (document.location.protocol == 'https:' ? 'https:' : 'http:') + '//' + domain + '/dis/dis.aspx';
+    var p = document.createElement('iframe');
+    p.width = p.height = '0';
+    p.style.display = 'none';
+    p.src = (qr + '?p=' + pid + qss).substring(0, 2000);
+
+    var c = document.getElementById('criteoTagsContainer');
+    if (c) {
+        c.appendChild(p);
+    } else {
+        criteo_q.push({ event: 'appendTag', element: p });
+    }
+};
+qss += '&site_type=d';
+callDis(4653, 'dis.ny.us.criteo.com');
+})();/*-->*/

@@ -1,0 +1,37 @@
+PHTTP64.41.197.44"ª
+TGET /wp-content/plugins/dynamic-to-top/js/dynamic.to.top.min.js?ver=3.4.2 HTTP/1.1
+Host: www.zedo.com
+Connection: keep-alive
+Accept: */*
+vUser-Agent: Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/31.0.1650.63 Safari/537.36
+Referer: http://www.zedo.com/
+$Accept-Encoding: gzip,deflate,sdch
+!Accept-Language: en-US,en;q=0.8
+ΩCookie: FFgeo=1971884; ZFFBbh=1835B826,20|1969_1#0; ZCBC=1; FFcat=187,280,91; FFad=0; FFgb=1971884_B; ZEDOIDA=KZ3T4xMWR3u-J7lXeTzZUQ**~010914; FFIDA=KZ3T4xMWR3u-J7lXeTzZUQ**~010914; aps=1
+
+*ê
+HTTP/1.1 200 OK
+%Date: Thu, 09 Jan 2014 00:29:27 GMT
+Server: Apache/2.2.22
+.Last-Modified: Wed, 17 Jul 2013 07:04:38 GMT
+!ETag: "40779-4a8-4e1afb4f00d80"
+&Content-Type: application/javascript
+Content-Length: 1192
+"X-Varnish: 1560811241 1560811140
+Age: 6
+Via: 1.1 varnish
+Keep-Alive: timeout=5, max=88
+Connection: Keep-Alive
+™	
+/*
+ * Dynamic To Top Plugin
+ * http://www.mattvarone.com
+ *
+ * By Matt Varone
+ * @sksmatt
+ *
+ */
+var mv_dynamic_to_top;(function($,mv_dynamic_to_top){jQuery.fn.DynamicToTop=function(options){var defaults={text:mv_dynamic_to_top.text,min:parseInt(mv_dynamic_to_top.min,10),fade_in:600,fade_out:400,speed:parseInt(mv_dynamic_to_top.speed,10),easing:mv_dynamic_to_top.easing,version:mv_dynamic_to_top.version,id:'dynamic-to-top'},settings=$.extend(defaults,options);if(settings.version===""||settings.version==='0'){settings.text='<span>&nbsp;</span>';}
+if(!$.isFunction(settings.easing)){settings.easing='linear';}
+var $toTop=$('<a href=\"#\" id=\"'+settings.id+'\"></a>').html(settings.text);$toTop.hide().appendTo('body').click(function(){$('html, body').stop().animate({scrollTop:0},settings.speed,settings.easing);return false;});$(window).scroll(function(){var sd=jQuery(window).scrollTop();if(typeof document.body.style.maxHeight==="undefined"){$toTop.css({'position':'absolute','top':sd+$(window).height()-mv_dynamic_to_top.margin});}
+if(sd>settings.min){$toTop.fadeIn(settings.fade_in);}else{$toTop.fadeOut(settings.fade_out);}});};$('body').DynamicToTop();})(jQuery,mv_dynamic_to_top);

@@ -1,0 +1,24 @@
+PHTTP23.209.32.134"¡
+GET /lottery HTTP/1.1
+Host: www.macys.com
+Connection: keep-alive
+vUser-Agent: Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/31.0.1650.63 Safari/537.36
+"X-Requested-With: XMLHttpRequest
+Accept: */*
+ Referer: http://www.macys.com/
+$Accept-Encoding: gzip,deflate,sdch
+!Accept-Language: en-US,en;q=0.8
+ºCookie: shippingCountry=US; SignedIn=0; PPP=24; BypassAkamai=false; GCs=CartItem1_92_03_87_UserName1_92_4_02_; PlatformName=OT; BrowserName=SF; BrowserVersion=6X; akaau=1389229784~id=f2bfb7e3c619efcd4d76660a016fe7ce; mt.v=2.1176447118.1389227997091; mbox=check#true#1389228058|session#1389227997151-697115#1389229858; cmTPSet=Y; CoreM_State=9~-1~-1~-1~-1~3~3~5~3~3~7~7~|~~|~~|~~|~||||||~|~~|~~|~~|~~|~~|~~|~~|~; CoreM_State_Content=6~|~~|~|
+
+*Ï
+HTTP/1.1 200 OK
+Server: BigIP
+Content-Length: 89
+%Date: Thu, 09 Jan 2014 00:39:45 GMT
+Connection: keep-alive
+TSet-Cookie: SL=1; expires=Sun, 23-Feb-2014 00:42:47 GMT; path=/; domain=.macys.com
+]Set-Cookie: akaau=1389229785~id=dfa8454e3b6382a8aef038ef56cc9c45; path=/; domain=.macys.com
+*Access-Control-Allow-Origin: m.macys.com
+X-Macys-Device: PC
+[
+<HTML><HEAD><TITLE>Post mode</TITLE></HEAD><BODY>Post mode cookie value set</BODY></HTML>

@@ -1,0 +1,39 @@
+PHTTP129.15.96.11"Ó
+8GET /images/extreme_banner/extreme_banner.css HTTP/1.1
+Host: www.noaa.gov
+Connection: keep-alive
+Accept: text/css,*/*;q=0.1
+vUser-Agent: Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/31.0.1650.63 Safari/537.36
+Referer: http://www.noaa.gov/
+$Accept-Encoding: gzip,deflate,sdch
+!Accept-Language: en-US,en;q=0.8
+
+*ù
+HTTP/1.0 200 OK
+%Date: Thu, 09 Jan 2014 01:09:22 GMT
+Server: Apache
+.Last-Modified: Mon, 09 Apr 2012 17:18:27 GMT
+$ETag: "8721072a-120-4bd4231bffec0"
+Accept-Ranges: bytes
+Content-Length: 288
+Cache-Control: max-age=3600
+(Expires: Thu, 09 Jan 2014 02:09:22 GMT
+Content-Type: text/css
+
+Age: 532
+Via: 1.0 c7.w3.woc (squid)
+Connection: keep-alive
+¢
+@charset "UTF-8";
+/* Stylesheet for the "Earth Day" Banner */
+
+.extreme_banner h1{
+	text-indent:-100000px;
+	background:url('../../images/extreme_banner/earthday_banner.jpg') no-repeat;
+	width:960px;
+	height:95px;
+	position:relative; 
+	margin-bottom:10px; 
+	cursor:pointer;
+	
+}

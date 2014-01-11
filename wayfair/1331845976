@@ -1,0 +1,35 @@
+PHTTP209.202.142.13"ý
+,POST /v/account/tracking/referrer HTTP/1.1
+Host: www.wayfair.com
+Connection: keep-alive
+Content-Length: 101
+8Accept: application/json, text/javascript, */*; q=0.01
+ Origin: http://www.wayfair.com
+"X-Requested-With: XMLHttpRequest
+vUser-Agent: Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/31.0.1650.63 Safari/537.36
+@Content-Type: application/x-www-form-urlencoded; charset=UTF-8
+"Referer: http://www.wayfair.com/
+$Accept-Encoding: gzip,deflate,sdch
+!Accept-Language: en-US,en;q=0.8
+ò
+Cookie: SSAF=1|ss%5fpt1444987%5fhide%5f2nd%5ftier%5fnav:sstest%5fpt1424083%5fginm%5flocation%5fhidetopblock:ss%5fpt1345074%5fgrey%5fbackground:ss%5fpt1212854; SSID=BgAOJx04AAAAAADdAM5SBNMGB90AzlIBAAAAAAAAAAAA3QDOUgBpKr0CAAFCNgAA3QDOUgEAuwIAATw2AADdAM5SAQC0AgABIjYAAN0AzlIBALwCAAE_NgAA3QDOUgEA; SSSC=27.G5966707505618146052.1|692.13858:699.13884:700.13887:701.13890; SSRT=3QDOUgM; SSPV=4fAAAAAAAAQAAAAAAAAAAAAAAAEAAAAAAAA; ABTestVariations=criteo_tellapart_test_v1=control; CSNUtId=ac101911-52ce-00dd-71ce-4780e97d5602; WFSID=s3frm746t6c61adbcq4fpld4m2; CSN=g_zip=02139; serverUAInfo=%7B%22browser%22%3A%22Google+Chrome%22%2C%22browserVersion%22%3A31.0165063%2C%22OS%22%3A%22Linux%22%2C%22OSVersion%22%3Afalse%2C%22isMobile%22%3Afalse%2C%22isTablet%22%3Afalse%7D; CSNBrief=Search=; dtr=1; WfTracking=NAN_PID=NULL; Server_80=BOWEB20155; SS_80=BOSS06|Us4A5|Us4A5; __qca=P0-1731733355-1389232366637; featureDetect={"isTouch":false,"hasMQ":true}; fsr.a=1389232367008; _br_uid_1=uid%3D4013449510094; _br_uid_2=uid%3D4013449510094%3Av%3D11.5%3Ats%3D1389232367175%3Ahc%3D1; _br_dlp_query=; _br_dlp_U_0=; _br_dlp_U_1=; _br_dlp_U_2=; _br_dlp_prstatus=; _br_dlp_urstatus=; _br_ref_url=; _br_router_algorithm=; _br_is_whitelist_hit=; _br_has_personalized_results=; _br_bl_landing_url=; _br_pr_url=; _br_bl_request_id=; CSNPersist=clip_first_auto_expand%3D0%26clipbar_num_items%3D0%26clip_collapse_msg%3D1
+g
+page=http%3A%2F%2Fwww.wayfair.com%2F&referrer=&sku=&category=&class=&collection=&marketing_category=6*þ
+HTTP/1.1 200 OK
+Server: nginx
+%Date: Thu, 09 Jan 2014 01:52:35 GMT
+/Content-Type: application/json; charset=utf-8
+Transfer-Encoding: chunked
+Connection: keep-alive
+zSet-Cookie: SSPV=4fAAAAAAAAQAAAAAAAAAAAAAAAEAAAAAAAA; path=/; domain=.wayfair.com; expires=Fri, 09-Jan-2015 01:52:34 GMT
+(Expires: Fri, 12 Jul 2013 13:56:35 GMT
+=Cache-Control: must-revalidate, proxy-revalidate, max-age=0
+Pragma: no-cache
+Vary: Accept-Encoding
+Server_Id: bo3.20.155
+WFR: SSNX
+
+4
+true
+0
+

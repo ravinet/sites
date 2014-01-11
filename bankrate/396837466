@@ -1,0 +1,29 @@
+PHTTP23.0.54.233"ï
+KGET /RedirectCookieModel.ajx?JSON=%7B%22p%22%3A%20%22br3_b%22%7D HTTP/1.1
+Host: www.bankrate.com
+Connection: keep-alive
+DAccept: text/javascript, text/html, application/xml, text/xml, */*
+X-Prototype-Version: 1.6.0.3
+"X-Requested-With: XMLHttpRequest
+vUser-Agent: Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/31.0.1650.63 Safari/537.36
+#Referer: http://www.bankrate.com/
+$Accept-Encoding: gzip,deflate,sdch
+!Accept-Language: en-US,en;q=0.8
+÷Cookie: OAS_SC1=1389231836033; brmd=%7B%22expiration%22%3A%20%22Fri%2C%2010%20Jan%202014%2001%3A43%3A56%20GMT%22%2C%20%22path%22%3A%20%22/%22%2C%20%22domain%22%3A%20%22.bankrate.com%22%2C%20%22VID%22%3A%20%22f3098a23-10de-432c-b235-157ecd7ffb37%22%2C%20%22SID%22%3A%20%221389231836041%22%7D; brms=%7B%22path%22%3A%20%22/%22%2C%20%22domain%22%3A%20%22.bankrate.com%22%2C%20%22VID%22%3A%20%22f3098a23-10de-432c-b235-157ecd7ffb37%22%2C%20%22SID%22%3A%20%221389231836041%22%7D; brml=%7B%22expiration%22%3A%20%22Thu%2C%2009%20Jan%202014%2002%3A13%3A56%20GMT%22%2C%20%22path%22%3A%20%22/%22%2C%20%22domain%22%3A%20%22.bankrate.com%22%2C%20%22VID%22%3A%20%22f3098a23-10de-432c-b235-157ecd7ffb37%22%2C%20%22SID%22%3A%20%221389231836041%22%7D; brmp=%7B%22expiration%22%3A%20%22Sun%2C%2007%20Jan%202024%2001%3A43%3A56%20GMT%22%2C%20%22path%22%3A%20%22/%22%2C%20%22domain%22%3A%20%22.bankrate.com%22%2C%20%22VID%22%3A%20%22f3098a23-10de-432c-b235-157ecd7ffb37%22%2C%20%22test%22%3A%20%7B%22name%22%3A%20%22GlobalNavigationTest%22%2C%20%22group%22%3A%20%22br3_b%22%7D%2C%20%22pid%22%3A%20%7B%22t%22%3A%201389231836049%2C%20%22p%22%3A%20%22br3_b%22%7D%7D
+
+*ä	
+HTTP/1.1 200 OK
+(Content-Type: text/json; charset=utf-8
+Server: Microsoft-IIS/7.5
+X-AspNet-Version: 4.0.30319
+X-Powered-By: ASP.NET
+X-Servername: engpwebv32
+Content-Length: 850
+(Expires: Thu, 09 Jan 2014 01:43:43 GMT
+.Cache-Control: max-age=0, no-cache, no-store
+Pragma: no-cache
+%Date: Thu, 09 Jan 2014 01:43:43 GMT
+Connection: keep-alive
+Vary: Accept-Encoding
+Ô
+{"Status":"SUCCESS","AllErrors":[],"Timestamp":new Date(1389213823459),"Response":"{\"Status\":\"200 OK\",\"StatusCode\":200,\"StatusDescription\":\"OK\",\"Charset\":\"utf-8\",\"ContentType\":\"text/json\",\"ContentEncoding\":{\"BodyName\":\"utf-8\",\"EncodingName\":\"Unicode (UTF-8)\",\"HeaderName\":\"utf-8\",\"WebName\":\"utf-8\",\"WindowsCodePage\":1200,\"IsBrowserDisplay\":true,\"IsBrowserSave\":true,\"IsMailNewsDisplay\":true,\"IsMailNewsSave\":true,\"IsSingleByte\":false,\"EncoderFallback\":{\"DefaultString\":\"ï¿½\",\"MaxCharCount\":1},\"DecoderFallback\":{\"DefaultString\":\"ï¿½\",\"MaxCharCount\":1},\"IsReadOnly\":true,\"CodePage\":65001},\"Expires\":0,\"ExpiresAbsolute\":new Date(-59011459200000),\"RedirectLocation\":null,\"IsRequestBeingRedirected\":false,\"Cookies\":[],\"Buffer\":\"{\\\"Valid\\\":[\\\"true\\\"]}\"}","User":""}

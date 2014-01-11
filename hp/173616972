@@ -1,0 +1,31 @@
+PHTTP173.192.220.64"ž
+ÿGET /site/4234?dt=0&r=1689547066&sig=124325052&bkca=KJh2DDNFyM91dEUCiB3DMlcGRuoembYOTnOMaR3CsVAuJxTPdlfmP3oVA0jP35IpdVvdm1eX02zTLqUDZBIpksUg2p6gmc+2RppjUub0AAJHKJx/2swnQLb+LsQLORPoqWOy7Fc/gXc4vBsCFuwHw7zW5hXOVxsCHmQp7RNh6WNHk35q3Vixs+s0fJUheUN+t68gmbN1xb90xSBfDOH/RQ1bHkVL9ADP1vthDD18bdfPKIfwjNHtCsLesZZGeyMGhawG7AHli+NClh1FHshOmOllmJAxZXQI7+MHbrgcgQbzHh88BW8zGfwK3/eubY8HvHwm4tAd5OcicUuPC0fpStAhqCLTcWszWVLRFIfQpEdC8mZ+7prZzKZgxsMaGf5oHjpxwjTFYOduH5RUHYnTUiBYz+ouE07NhD0DqYEZbUpiXLP37ixpFFysYkfuVQ== HTTP/1.1
+Host: tags.bluekai.com
+Connection: keep-alive
+Accept: */*
+vUser-Agent: Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/31.0.1650.63 Safari/537.36
+:Referer: http://www.hp.com/country/us/en/uc/welcome.html
+$Accept-Encoding: gzip,deflate,sdch
+!Accept-Language: en-US,en;q=0.8
+VCookie: bkc=KJpgWZOQisaCRwMyfVyx9h999YvIO99=; bkdc=wdc; bklc=0; bku=iC999mMtpPvzL7uK
+
+*Ã
+
+HTTP/1.1 200 OK
+%Date: Thu, 09 Jan 2014 01:10:06 GMT
+Server: Apache/2.2.24 (Unix)
+uP3P: CP="NOI DSP COR CUR ADMo DEVo PSAo PSDo OUR SAMo BUS UNI NAV", policyref="http://tags.bluekai.com/w3c/p3p.xml"
+Pragma: no-cache
+(Expires: Thu, 01 Dec 1994 16:00:00 GMT
+.Cache-Control: max-age=0, no-cache, no-store
+šSet-Cookie: bkc=KJpgWZOQisaCRwMyfVyx/y1exyuxmsfJpw9m0rXY0F1ZLSeypyZMX7PfD5P4lztWykIRMz34iXq4Nzi9y+5rxmVnG4aOBen4ezN2R7ZGfkk4MVg4sMHIK0x3w6D5kuIrCL3dv/cvFdKSWRPdWTNdORNdsR7w0zU9Lc1b372R23sSw8APkzd0OBDX5NDWcyeDz/np; expires=Tue, 08-Jul-2014 01:10:06 GMT; path=/; domain=.bluekai.com
+wSet-Cookie: bkp1=KJhf0zp96YU9ywert2AQHQR9/UDWiy==; expires=Tue, 08-Jul-2014 01:10:06 GMT; path=/; domain=.bluekai.com
+fSet-Cookie: bku=iC999mMtpPvzL7uK; expires=Tue, 08-Jul-2014 01:10:06 GMT; path=/; domain=.bluekai.com
+BK-Server: 3634
+Content-Length: 438
+Content-Type: text/javascript
+¸
+if ( BKTAG != 'undefined' && BKTAG.htmlToDom ) {
+  BKTAG.htmlToDom('<script type="text/javascript" > var bkObj = {  clearDiv: function(divId) {  try {  var divRef = document.getElementById(divId) ; divRef.innerHTML=\'\' ;  }  catch (e) {}  }  };  setTimeout("bkObj.clearDiv(\'bk_js_1001\')",15000); </script><div id="bk_js_1001"> <script type="text/javascript"> var _bluekai_guid = "a3J67Q9999Oi8LNu"; </script>   </div> ', document);
+}
+

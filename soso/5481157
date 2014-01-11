@@ -1,0 +1,26 @@
+PHTTP218.30.103.111"Ò
+GET /favicon.ico HTTP/1.1
+Host: www.soso.com
+Connection: keep-alive
+Accept: */*
+vUser-Agent: Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/31.0.1650.63 Safari/537.36
+$Accept-Encoding: gzip,deflate,sdch
+!Accept-Language: en-US,en;q=0.8
+/Cookie: SUID=374C1E807E23900A0000000052CE0182
+
+*þ
+ HTTP/1.1 302 Moved Temporarily
+Server: nginx
+%Date: Thu, 09 Jan 2014 01:55:18 GMT
+Content-Type: text/html
+Content-Length: 154
+Connection: keep-alive
+7Location: http://www.soso.com/soso/images/favicon.ico
+œ
+<html>
+<head><title>302 Found</title></head>
+<body bgcolor="white">
+<center><h1>302 Found</h1></center>
+<hr><center>nginx</center>
+</body>
+</html>

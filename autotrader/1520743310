@@ -1,0 +1,29 @@
+PHTTP66.151.153.11"Ç
+‹GET /baynote/tags3/policy?customerId=autotrader&code=www&subdomain=&userId=UNASSIGNED&userPolicyRequested=true&dataFormat=script HTTP/1.1
+"Host: autotrader-www.baynote.net
+Connection: keep-alive
+Accept: */*
+vUser-Agent: Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/31.0.1650.63 Safari/537.36
+%Referer: http://www.autotrader.com/
+$Accept-Encoding: gzip,deflate,sdch
+!Accept-Language: en-US,en;q=0.8
+
+*ž
+
+HTTP/1.1 200 OK
+Server: BNServer
+%Cache-Control: public,max-age=86400
+-Content-Type: text/javascript;charset=UTF-8
+Content-Length: 1117
+%Date: Thu, 09 Jan 2014 01:35:23 GMT
+ß
+
+
+
+
+
+
+var basePolicyJSON = '{\"guide\":{\"fmt\":\"results-xsl\",\"ok\":true},\"baynoteObserver\":{\"dt\":30,\"so\":true,\"uhd\":false,\"cds\":true,\"eec\":true,\"cdt\":true,\"hn\":\"handler2.js\",\"ec\":true,\"uca\":\"315360000000\",\"alt\":true,\"om\":2,\"ub\":false,\"ep\":50,\"sv\":true,\"sdl\":false,\"ok\":true,\"st\":true},\"search\":{\"ok\":true},\"customScript\":{\"hn\":\"custom-script.js\"},\"trail\":{\"tl\":5,\"so\":false,\"ok\":false},\"GuideSet\":{\"eids\":[\"BN_homepage\",\"RelatedTerms\",\"BN_RelatedTerms\",\"BN_AlgoFallbackExample\",\"BN_Contextual1\",\"BN_Contextual2\",\"BN_homepage_content\",\"BN_homepage_inventory_context\",\"BN_homepage_inventory_noncontext\"]},\"inf\":{\"dt\":\"Thu Dec 19 20:19:52 PST 2013\",\"exp\":86400,\"u\":\"ANONYMOUS\",\"cn\":\"autotrader\",\"ve\":\"V1\",\"cc\":\"www\",\"cd\":\"d&g&s\"},\"baynoteGuide\":{\"ok\":true},\"guidePro\":{\"ok\":true}}';
+var userPolicyJSON = '{\"dir\":{\"au\":true},\"inf\":{\"dt\":\"Wed Jan 08 17:35:24 PST 2014\",\"u\":\"6924953726270964209\",\"ve\":\"V1\",\"cd\":\"d&g&s\"}}';
+bnPolicy.registerPolicy(basePolicyJSON, userPolicyJSON);
+

@@ -1,0 +1,158 @@
+PHTTP
+18.7.20.70"Ç
+<GET /partners/js/wiredHomepageTakeOverSept2012.js HTTP/1.1
+Host: www.wired.com
+Connection: keep-alive
+Accept: */*
+vUser-Agent: Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/31.0.1650.63 Safari/537.36
+ Referer: http://www.wired.com/
+$Accept-Encoding: gzip,deflate,sdch
+!Accept-Language: en-US,en;q=0.8
+`Cookie: mbox=check#true#1389372079|session#1389372018999-295280#1389373879; original_referrer=
+
+*ø&
+HTTP/1.1 200 OK
+ Server: Apache/2.2.25 (Amazon)
+.Last-Modified: Tue, 22 Oct 2013 19:30:09 GMT
+#ETag: "442b17-1257-4e9596dc178ce"
+Accept-Ranges: bytes
+Content-Length: 4695
+Content-Type: text/javascript
+%Date: Fri, 10 Jan 2014 16:40:06 GMT
+Connection: keep-alive
+Ù$
+//////////////////////////////////////////////////////////////////////////////////////////////////////////
+//  This JS include was written by Justin Alcon for The Studio at Conde Nast.  This code is intended to //
+//  be shipped to production on Wired.com to take over the homepage for Samsung         //////////////////
+//////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+
+//set a cookie with a name, value and number of days till it expires (w3c schools copy paste)
+function setCookie(c_name,value,exdays){
+	var exdate=new Date();
+	exdate.setDate(exdate.getDate() + exdays);
+	var c_value=escape(value) + ((exdays==null) ? "" : "; expires="+exdate.toUTCString());
+	document.cookie=c_name + "=" + c_value;
+}
+
+//get a cookie that has been previously set by passing it's name (w3c school's copy paste)
+function getCookie(c_name){
+	var i,x,y,ARRcookies=document.cookie.split(";");
+	for (i=0;i<ARRcookies.length;i++){
+  		x=ARRcookies[i].substr(0,ARRcookies[i].indexOf("="));
+  		y=ARRcookies[i].substr(ARRcookies[i].indexOf("=")+1);
+  		x=x.replace(/^\s+|\s+$/g,"");
+  		if (x==c_name){
+    			return unescape(y);
+    		}
+  	}
+}
+
+//set the background image based on the 'ID' (there are only 3 imagez, and a placeholder)
+function setBackground(imageID){
+	//default
+	var imageURL = "none";
+        if(imageID == 1){
+                imageURL = "https://s3.amazonaws.com/WiredTakeoverImages/wallpaper_01.jpg";
+        }
+	else if(imageID == 2){
+                imageURL = "https://s3.amazonaws.com/WiredTakeoverImages/wallpaper_02.jpg";
+	}
+	else if(imageID == 3){
+                imageURL = "https://s3.amazonaws.com/WiredTakeoverImages/wallpaper_03.jpg";
+	}
+	jQuery('.home').css("background","url("+imageURL+") no-repeat center center fixed");
+	jQuery('.home').css("-webkit-background-size","cover");
+	jQuery('.home').css("background-size","cover");
+	jQuery('.home').css("-moz-background-size","cover");
+	jQuery('.home').css("-o-background-size","cover");
+	//erase the background cookie
+	setCookie("wired-background","",-1);
+	//create teh backgorund cookie
+	setCookie("wired-background",imageID,1);
+}
+
+//sets the page back to the visitor's last settings
+function setFromCookies(){
+	var imageID = getCookie("wired-background");
+	if(imageID > 0){
+		setBackground(imageID);
+	}
+	var navColor = getCookie("wired-nav-bar");
+	if(navColor){
+		setNavBarColor(navColor);
+	}
+	var logoColor = getCookie("wired-logo-color");
+	if(logoColor){
+		setLogoColor(logoColor);
+	}
+	var headlineFontColor = getCookie("wired-headline-font");
+	if(headlineFontColor){
+		setFontColor(headlineFontColor);
+	}
+}
+
+//set the name bar background color to the hex value that is passed
+function setNavBarColor(color){
+	jQuery('#nav-wrap nav').css("background-color",color);
+	jQuery('#nav-wrap').css("background-color",color);
+	if(color == "#00B6F4"){
+		jQuery('#primary-nav .secondary h2 a').css("color","black");
+	}
+	else {
+		jQuery('#primary-nav .secondary h2 a').css("color","#00AEEF");
+	}
+	//erase the nav bar cookie color
+	setCookie("wired-nav-bar","",-1);
+	//set the nav bar color cookie
+	setCookie("wired-nav-bar",color,1);
+}
+
+//set the color of the font in the nav bar
+function setFontColor(color){
+	jQuery('.headline h5').css("color",color);
+        //erase the nav bar cookie color
+        setCookie("wired-headline-font","",-1);
+        //set the nav bar color cookie
+        setCookie("wired-headline-font",color,1);
+}
+
+//set the color of the logo
+function setLogoColor(color){
+	//DEFAULT
+	var logo = "/images/home/wired_logo.gif";
+	console.log(color);
+	if(color === "#00B6F4"){
+		logo = "https://s3.amazonaws.com/WiredTakeoverImages/WIRED_00b6f1.gif";
+	}
+	else if(color == "#FF8100"){
+		logo = "https://s3.amazonaws.com/WiredTakeoverImages/WIRED_fd8000.gif";
+	}
+	else if(color === "#2DC57E"){
+		logo = "https://s3.amazonaws.com/WiredTakeoverImages/WIRED_32c682.gif";
+	}
+	else if(color === "#C129FF"){
+		logo = "https://s3.amazonaws.com/WiredTakeoverImages/WIRED_c30bff.gif";
+	}
+
+	jQuery('#logo_home').attr("src",logo);
+        //erase the logo cookie color
+        setCookie("wired-logo-color","",-1);
+        //set the logo color cookie
+        setCookie("wired-logo-color",color,1);
+}
+
+function reset(){
+	setLogoColor("DEFAULT");
+	setFontColor("#000000");
+	setNavBarColor("#000000");
+	setBackground(27);//27 isjust a random number that I know is not valid
+}
+
+//when the document is ready this funciton will check for cookies and set the page to the user's last setting
+jQuery(document).ready(
+	function(){
+		setFromCookies();
+	}	
+
+);

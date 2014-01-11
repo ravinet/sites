@@ -1,0 +1,286 @@
+PHTTP98.136.61.55"Ú
+ GET /css/national.css HTTP/1.1
+Host: www.rivals.com
+Connection: keep-alive
+Accept: text/css,*/*;q=0.1
+vUser-Agent: Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/31.0.1650.63 Safari/537.36
+!Referer: http://www.rivals.com/
+$Accept-Encoding: gzip,deflate,sdch
+!Accept-Language: en-US,en;q=0.8
+
+*Ì'
+HTTP/1.1 200 OK
+)Content-Type: text/plain; charset=utf-8
+.Last-Modified: Thu, 26 Apr 2007 20:54:00 GMT
+Accept-Ranges: bytes
+ETag: "024ba34588c71:331"
+Server: YTS/1.20.10
+X-Powered-By: ASP.NET
+%Date: Thu, 09 Jan 2014 01:49:54 GMT
+Age: 1
+Transfer-Encoding: chunked
+Connection: keep-alive
+VVia: HTTP/1.1 yts2.rivals.sports.sp1.yahoo.com (YahooTrafficServer/1.20.10 [cMsSf ])
+µ$
+a35
+TABLE.toptable {
+	width: 980px;
+	border: 0px;
+    margin: 0px 0px 0px 0px;
+    padding: 0px 0px 0px 0px;
+}
+
+TD.headerinfo {
+    padding-left:10px;
+    width: 99%;
+    height: 90px;
+    background-color: #FFFFFF;
+    background-image: url(http://vmedia.rivals.com/images/templates/teamsite_horizfade.gif); 
+    background-repeat: repeat-y; 
+    font-size: 7.5pt;
+	text-align: left; 
+	vertical-align: middle;
+}
+
+TD.headerinfo img {
+	float: left;
+	padding: 2px;
+}
+
+TD.headerinfo P {
+	padding: 6px 6px 0 6px; 
+	margin: 0;
+}
+
+TD.headerinfo P IMG {float: none;}
+
+TD.headerinfo img.shield {float: left;}
+
+TD.headerad {
+    width: 1%;
+    height: 90px;
+    text-align: right;
+    background-color: #FFFFFF;
+}
+
+TD.headerleftlinks {
+	width: 90%;
+    padding-left: 20px;
+	text-align: left;
+	vertical-align: middle;
+	font-weight: bold;
+    border-bottom: solid 1px #666666;
+	font-size: 7.5pt;
+	color: #666666;
+}
+
+TD.headerleftlinks TD {
+	font-size: 7.5pt;
+	color: #000000;
+	font-weight: bold;
+}
+
+TD.headerleftlinks DIV {
+	font-size: 7.5pt;
+	color: #666666;
+	font-weight: bold;
+	vertical-align: middle;
+}
+
+TD.headerleftlinks A {
+	color: #666666;
+	font-size: 7.5pt;
+	text-decoration: none;
+	font-weight: bold;
+}
+
+TD.headerleftlinks A:link {color: #666666;}
+
+TD.headerleftlinks A:visited {color: #666666;}
+
+TD.headerleftlinks A:hover {
+    color: #666666;
+    text-decoration: underline;
+}
+
+TD.headerleftlinks A:active {color: #666666;}
+
+TD.headerleftlinks IMG {vertical-align: middle;}
+
+TD.headerrightlinks {
+	width: 10%;
+    padding-top: 6px;
+    padding-bottom: 10px;
+	text-align: right;
+	vertical-align: middle;
+	font-weight: bold;
+	color: #666666;
+    border-bottom: solid 1px #666666;
+	font-size: 7.5pt;
+}
+
+TD.headerrightlinks TD {font-size: 7.5pt;}
+
+TD.headerrightlinks TD.subscribelinks {
+	font-size: 7.5pt;
+	vertical-align: bottom;
+	padding-left: 5px;
+	padding-right: 5px;
+}
+
+TD.headerrightlinks TD.rsslogo {vertical-align: bottom;}
+
+TD.headerrightlinks TD.rsslogo IMG {margin-bottom: -2px;}
+
+TD.headerrightlinks TD.rivalslogo {
+	font-size:7.5pt;
+	vertical-align:bottom;
+}
+
+TD.headerrightlinks A {
+	color:#666666;
+	text-decoration: none;
+}
+
+TD.headerrightlinks A:link {color: #666666;}
+
+TD.headerrightlinks A:visited {color: #666666;}
+
+TD.headerrightlinks A:hover {
+    color: #666666;
+    text-decoration: underline;
+}
+
+TD.headerrightlinks A:active {
+    color: #666666;
+}
+
+TD.headerrightlinks IMG {
+	margin-left: 5px;
+	margin-right: 5px;
+}
+
+DIV.trivia365
+{
+	margin-left:20px;
+	
+7eb
+margin-right:20px;
+	width:186px;
+	text-align:left;
+	font-weight:bold;
+	font-size:8pt;
+	color: #cfc8b6;
+	height:75px;
+	padding-top:5px;
+}
+DIV#trivia365Question
+{
+	font-size:7.5pt;
+	cursor:default;
+	cursor:hand;
+	color: #FFFFFF;
+}
+DIV#trivia365Question IMG
+{
+	float:right;
+	margin-top:5px;
+}
+DIV#trivia365Answer
+{
+	font-size:7.5pt;
+	cursor:default;
+	cursor:hand;
+	color: #FFFFFF;
+}
+DIV.newsrotater
+{
+    POSITION: relative;
+	top:20px;
+	font-size:8pt;
+	color: #cfc8b6;
+	width:240px;
+	font-weight:bold;
+	height:30px;
+	padding-top:5px;
+}
+DIV.newsrotater A
+{
+	font-size:7.5pt;
+	color: #FFFFFF;
+}
+DIV.newsrotater A:link
+{
+    COLOR: #FFFFFF
+}
+DIV.newsrotater A:visited
+{
+    COLOR: #FFFFFF
+}
+DIV.newsrotater A:hover
+{
+    COLOR: #FFFFFF
+}
+DIV.newsrotater A:active
+{
+    COLOR: #FFFFFF
+}
+
+DIV.MoreNav
+{
+	margin-left:5px;
+	width:50px;
+	cursor:default;
+}
+DIV.MoreNavSelected
+{
+	margin-left:5px;
+	width:50px;
+	cursor:default;
+}
+DIV.MoreLinkDropdown
+{
+    BORDER-RIGHT: #000000 1px solid;
+    FONT-WEIGHT: bold;
+    FONT-SIZE: 7.5pt;
+    MARGIN: 0px;
+    VERTICAL-ALIGN: middle;
+    BORDER-LEFT: #000000 1px solid;
+    CURSOR: default;
+    COLOR: #000000;
+    BORDER-BOTTOM: #000000 1px solid;
+	BORDER-TOP: #000000 1px solid;
+    BACKGROUND-COLOR: #ECE9E2;
+    TEXT-ALIGN: left;
+    TEXT-DECORATION: none;
+    PADDING-RIGHT: 4px;
+    PADDING-LEFT: 4px;
+    PADDING-BOTTOM: 4px;
+    PADDING-TOP: 4px;
+    height: 12px;
+}
+DIV.MoreLinkDropdownSelected
+{
+    BORDER-RIGHT: #000000 1px solid;
+    FONT-WEIGHT: bold;
+    FONT-SIZE: 7.5pt;
+    MARGIN: 0px;
+    VERTICAL-ALIGN: middle;
+    BORDER-LEFT: #000000 1px solid;
+    CURSOR: default;
+    COLOR: #ffffff;
+    BORDER-TOP: #000000 1px solid;
+    BORDER-BOTTOM: #000000 1px solid;
+    BACKGROUND-COLOR: #0A4EA1;
+    TEXT-ALIGN: left;
+    TEXT-DECORATION: none;
+    PADDING-RIGHT: 4px;
+    PADDING-LEFT: 4px;
+    PADDING-BOTTOM: 4px;
+    PADDING-TOP: 4px;
+    height: 12px;
+}
+
+
+0
+

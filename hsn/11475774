@@ -1,0 +1,121 @@
+PHTTP23.44.194.38"Ö
+0GET /images/prod/prodcard/Homepage.js HTTP/1.1
+Host: img.hsni.com
+Connection: keep-alive
+Accept: */*
+vUser-Agent: Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/31.0.1650.63 Safari/537.36
+Referer: http://www.hsn.com/
+$Accept-Encoding: gzip,deflate,sdch
+!Accept-Language: en-US,en;q=0.8
+
+*’
+HTTP/1.1 200 OK
+Content-Length: 2743
+(Content-Type: application/x-javascript
+.Last-Modified: Fri, 11 Oct 2013 21:53:34 GMT
+Accept-Ranges: bytes
+ETag: "d5eab55ccc6ce1:5106"
+Server: Microsoft-IIS/6.0
+X-Powered-By: ASP.NET
+!Cache-Control: max-age=31286137
+%Date: Fri, 10 Jan 2014 16:49:34 GMT
+Connection: keep-alive
+¹
+// Load database as needed
+if (!window.xData)
+{
+	var v = Math.round(Math.random() * 100000000);
+	document.write("<script type='text/javascript' src='http://img.hsni.com/images/prod/prodcard/ProdCardData.js?v=" + v + "'><\/" + "script>")
+}
+
+function CreateProductCard()
+{
+	var CardContainer = $("#PromoCardHere")
+	var CurCoremetricStart = "Spotlight-_-"
+	var CurCoremetricEnd = "-_-ShopNow"
+	
+	var Brief = CardContainer.data("brief");
+	var Cur = GetCarouselBrief(Brief);
+	
+	var IsPresale = (Brief.toString().indexOf("_Presale") >= 0)
+	
+	// Defaults
+	var CurText = Cur.Text;
+	var CurColor = Cur.Color;
+	var LinkText = "SHOP NOW";
+	
+	// Presale Adjustments
+	if (IsPresale)
+	{
+		// Remove current bold tags, add new text (todays special presale), replace color
+		CurText = CurText.replace("<b>", "").replace("</b>", "")
+		CurText = "<span style='color: #eb0303;'><b>Today's Special</b> Presale:</span> " + CurText;
+		CurColor = "#eb0303";
+	}
+	
+	// Do we have custom link text?
+	if (Cur.LinkText)
+		LinkText = Cur.LinkText
+	
+	// Create Card
+	var NewCard = $("<div>")
+		.append($("<div>")
+			.addClass("CarouselCard")
+			
+			.append($("<div>")
+				.addClass("cell-main-x")
+				.css("backgroundColor", CurColor)
+				
+				.append($("<a>")
+					.attr("href", Cur.DesktopLink)
+					.attr("manual_cm_re", CurCoremetricStart + Cur.Coremetric + CurCoremetricEnd)
+					.attr("manual_cm_sp", CurCoremetricStart + Cur.Coremetric + CurCoremetricEnd)
+					
+					.append($("<img>")
+						.addClass("CardImage")
+						.attr("src", Cur.Image)
+					)
+				)
+			)
+			
+			.append($("<div>")
+				.addClass("cell-header-x")
+				
+				.append($("<a>")
+					.addClass("header1-link-x")
+					.attr("href", Cur.DesktopLink)
+					.attr("manual_cm_re", CurCoremetricStart + Cur.Coremetric + CurCoremetricEnd)
+					.attr("manual_cm_sp", CurCoremetricStart + Cur.Coremetric + CurCoremetricEnd)
+					.html(CurText)
+				)
+			)
+			
+			.append($("<div>")
+				.addClass("cell-link-x")
+				
+				.append($("<a>")
+					.addClass("cell-linker-x")
+					.attr("href", Cur.DesktopLink)
+					.attr("manual_cm_re", CurCoremetricStart + Cur.Coremetric + CurCoremetricEnd)
+					.attr("manual_cm_sp", CurCoremetricStart + Cur.Coremetric + CurCoremetricEnd)
+					.html(LinkText)
+					.css("color", "#6b6b6b")
+				)
+				
+				.append($("<img>")
+					.attr("src", "http://img.hsni.com/images/prod/alpha/bullet/arrow/lg/6b6b6b.png")
+					.css("margin", "-1px 0 0 5px")
+				)
+			)
+		)
+	
+	CardContainer.append(NewCard)
+	
+	// Trash the ID
+	var RandID = "PromoCardHere" + Math.round(Math.random() * 10000000)
+	CardContainer.attr("id", RandID)
+}
+
+jQuery(document).ready(function ($) {
+	CreateProductCard()
+});

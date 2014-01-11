@@ -1,0 +1,31 @@
+PHTTP209.177.88.10"ø
+6GET /img/2013people/images/copyright_bg.jpg HTTP/1.1
+Host: www.people.com.cn
+Connection: keep-alive
+Accept: image/webp,*/*;q=0.8
+vUser-Agent: Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/31.0.1650.63 Safari/537.36
+$Referer: http://www.people.com.cn/
+$Accept-Encoding: gzip,deflate,sdch
+!Accept-Language: en-US,en;q=0.8
+
+*õ
+ HTTP/1.0 302 Moved Temporarily
+Server: RMW
+Content-Type: text/html
+1Location: http://www.people.com.cn/404/404.html
+Content-Length: 152
+Accept-Ranges: bytes
+%Date: Thu, 09 Jan 2014 00:54:13 GMT
+
+Age: 170
+,Powered-By-ChinaCache: HIT from 06001093SM
+-Powered-By-ChinaCache: MISS from 26060113T7
+Connection: keep-alive
+š
+<html>
+<head><title>302 Found</title></head>
+<body bgcolor="white">
+<center><h1>302 Found</h1></center>
+<hr><center>RMW</center>
+</body>
+</html>

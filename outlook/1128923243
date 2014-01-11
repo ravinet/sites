@@ -1,0 +1,19 @@
+ªHTTPS66.117.23.102"«	
+πGET /m2/windowslive/mbox/standard?mboxHost=sc.imp.live.com&mboxSession=1389313708644-423902&mboxPage=1389313708644-423902&screenHeight=1200&screenWidth=1920&browserWidth=475&browserHeight=490&browserTimeOffset=-300&colorDepth=24&mboxCount=1&profile.ANID=00000000000000000000000000000000&profile.mrkt=en-us&mbox=PROD-outlook_signin&mboxId=0&mboxTime=1389295708824&mboxURL=https%3A%2F%2Fsc.imp.live.com%2Fcontent%2Fdam%2Fimp%2Fsurfaces%2Fmail_signin%2Fv3%2Fmail%2FEN-US.html%3Fid%3D64855%26mkt%3DEN-US%26cbcxt%3Dmail&mboxReferrer=https%3A%2F%2Flogin.live.com%2Flogin.srf%3Fwa%3Dwsignin1.0%26ct%3D1389313694%26rver%3D6.1.6206.0%26sa%3D1%26ntprob%3D-1%26wp%3DMBI_SSL_SHARED%26wreply%3Dhttps%3A%252F%252Fmail.live.com%252F%253Fowa%253D1%2526owasuffix%253Dowa%25252f%26id%3D64855%26snsc%3D1%26cbcxt%3Dmail&mboxVersion=41 HTTP/1.1
+!Host: windowslive.tt.omtrdc.net
+Connection: keep-alive
+Accept: */*
+vUser-Agent: Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/31.0.1650.63 Safari/537.36
+xReferer: https://sc.imp.live.com/content/dam/imp/surfaces/mail_signin/v3/mail/EN-US.html?id=64855&mkt=EN-US&cbcxt=mail
+$Accept-Encoding: gzip,deflate,sdch
+!Accept-Language: en-US,en;q=0.8
+
+*”
+HTTP/1.1 200 OK
+pragma: no-cache
+2Content-Type: text/javascript;charset=ISO-8859-1
+Content-Length: 2075
+%Date: Fri, 10 Jan 2014 00:28:16 GMT
+Server: Test & Target
+ù
+var mboxCurrent=mboxFactories.get('default').get('PROD-outlook_signin',0);mboxCurrent.setEventTime('include.start');document.write('<div style="visibility: hidden; display: none" id="mboxImported-default-PROD-outlook_signin-0">');document.write('<!-- Offer Id: 68742  -->\r\n<div id=\"offer\"  class=\"normal outlook\">\r\n   <div class=\"logo-null\"><\/div>\r\n    <img id =\"hero\" src=\"https:\/\/sc.imp.live.com\/content\/dam\/imp\/surfaces\/mail_signin\/v3\/images\/Outlook_SISU Refresh_SkyDrive Device_SISU_JPEG_ENUS_475x340.jpg\"\/>\r\n    <div id=\"text\" >\r\n         <h1><font size = 5>Lots of sharing. No attachments.<\/font size><\/h1>\r\n         <p>Share an entire photo album without sending any files.<\/p>\r\n         <a id=\"button\" href=\"http:\/\/windows.microsoft.com\/en-us\/windows\/outlook-sharing-with-skydrive\" target=\"_blank\" onclick=\"TnTClick(this.href);\">Learn more<\/a>\r\n    <\/div>\r\n<\/div>\r\n<link rel=\"stylesheet\" type=\"text\/css\" href=\"https:\/\/sc.imp.live.com\/content\/dam\/imp\/surfaces\/mail_signin\/v3\/css\/style.css\">\r\n<link rel=\"stylesheet\" type=\"text\/css\" href=\"https:\/\/sc.imp.live.com\/content\/dam\/imp\/surfaces\/mail_signin\/v3\/css\/style_win8.css\">\r\nblank.gif');document.write('<!-- Offer Id: 32903  --><script type=\"text\/javascript\">\r\nadobeCallSensor(\"https:\/\/s.imp.microsoft.com\/zag.gif?Log=1\", \"1389313708644-423902.25_34\", \"00000000000000000000000000000000\", \"1389313708644-423902\", \"80106\", \"Experiment 1?c000029524|et01|3B5FB85E\", \"68742\", \"en US OL SISU Evergreen Refresh Fall 13 SD Device?o00000063457|F2AABC7B\", mboxCurrent.getName(), \"9\", \"EE10?ee10|BA986F94\", \"en-us\",\"true\", \"0\", mboxFactoryDefault.getPageId(), \"united states\", \"massachusetts\", \"boston (manchester)\",\"\", \"\", \"1920\", \"1200\",\"475\",\"490\");\r\n<\/script>');document.write('</div>');mboxCurrent.setEventTime('include.end');mboxFactories.get('default').get('PROD-outlook_signin',0).loaded();mboxFactories.get('default').getPCId().forceId("1389313708644-423902.25_34");

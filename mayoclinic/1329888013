@@ -1,0 +1,91 @@
+PHTTP129.176.217.220"•
+,GET /styles/js/gbs/gconversion.js HTTP/1.1
+Host: www.mayoclinic.org
+Connection: keep-alive
+Accept: */*
+vUser-Agent: Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/31.0.1650.63 Safari/537.36
+%Referer: http://www.mayoclinic.org/
+$Accept-Encoding: gzip,deflate,sdch
+!Accept-Language: en-US,en;q=0.8
+4Cookie: ASP.NET_SessionId=utneflmiwti1lzdwzi1m1rsm
+
+*Á
+HTTP/1.1 200 OK
+Cache-Control: max-age=604800
+(Content-Type: application/x-javascript
+.Last-Modified: Fri, 03 Jan 2014 19:27:24 GMT
+Accept-Ranges: bytes
+ETag: "d17999d4b98cf1:0"
+%Date: Thu, 09 Jan 2014 01:39:32 GMT
+Content-Length: 2619
+½
+// Google adWord conversions
+function setCookie(cookieName, cookieValue, cookiePath, cookieExpires) {
+    cookieValue = escape(cookieValue);
+    if (cookieExpires == "") {
+        var nowDate = new Date();
+        nowDate.setMonth(nowDate.getMonth() + 12);
+        cookieExpires = nowDate.toGMTString();
+    }
+    document.cookie = cookieName + "=" + cookieValue + ";expires=" + cookieExpires + ";path=/";
+}
+
+function getCookieValue(cookieName) {
+    var cookieValue = document.cookie;
+    var cookieStartsAt = cookieValue.indexOf(" " + cookieName + "=");
+    if (cookieStartsAt == -1) {
+        cookieStartsAt = cookieValue.indexOf(cookieName + "=");
+    }
+
+    if (cookieStartsAt == -1) { // The cookie does not exist
+        cookieValue = null;
+    }
+
+    else { // The cookie exists at the very beginning of the string 
+        cookieStartsAt = cookieValue.indexOf("=", cookieStartsAt) + 1;
+        var cookieEndsAt = cookieValue.indexOf(";", cookieStartsAt);
+        if (cookieEndsAt == -1) {
+            cookieEndsAt = cookieValue.length;
+        }
+        cookieValue = unescape(cookieValue.substring(cookieStartsAt, cookieEndsAt));
+    }
+    return cookieValue;
+}
+if (document.URL.indexOf("mc_id=") > -1) {
+    //if (document.URL.indexOf("mc_id=google") > -1 || document.URL.indexOf("mc_id=msn") > -1 || document.URL.indexOf("mc_id=Yahoo") > -1)   {
+    // alert("g");
+    var cookieDate = new Date();
+    var referrerString = document.referrer;
+    var landingString = document.URL;
+    if (document.referrer == '') {
+        referrerString = "DIRECT: " + document.URL;
+    }
+    setCookie("ClickDate", cookieDate, "", "");
+    setCookie("FullRef", referrerString, "", "");
+    setCookie("LandingURL", landingString, "", "");
+
+}
+
+// if (document.referrer != '') {
+// Look for identifier 
+//	var googleString = "mc_id=google";
+//	var referrerString = document.referrer;
+//	if (referrerString.indexOf(googleString) != -1) { // User clicked through an ad to this page. Set cookie. 
+//		var cookieDate = new Date();
+//		setCookie("ClickDate", cookieDate, "", "");
+//		setCookie("FullRef", referrerString, "", "");		
+//	}
+//}
+
+if (document.URL.indexOf("killcookie") != -1) { // Kill cookies
+    var pastDate = new Date();
+    pastDate.setMonth(pastDate.getMonth() - 12);
+    pastDate = pastDate.toGMTString();
+    setCookie("ClickDate", cookieDate, "", pastDate);
+    setCookie("FullRef", referrerString, "", pastDate);
+    setCookie("LandingURL", landingURL, "", pastDate);
+}
+
+else {
+    // document.write(document.URL.indexOf("killcookie"));
+} 

@@ -1,0 +1,32 @@
+PHTTP85.17.159.246"Ë
+GET /bot_az.js HTTP/1.1
+Host: images.azlyrics.com
+Connection: keep-alive
+Accept: */*
+vUser-Agent: Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/31.0.1650.63 Safari/537.36
+#Referer: http://www.azlyrics.com/
+$Accept-Encoding: gzip,deflate,sdch
+!Accept-Language: en-US,en;q=0.8
+
+*é
+HTTP/1.1 200 OK
+Server: nginx
+%Date: Wed, 08 Jan 2014 17:02:57 GMT
+(Content-Type: application/x-javascript
+Content-Length: 502
+.Last-Modified: Thu, 13 Dec 2012 09:56:40 GMT
+Connection: keep-alive
+Accept-Ranges: bytes
+ø
+var dz=document;
+dz.writeln("<script type=\"text/javascript\"><!--");
+dz.writeln("google_ad_client = \"ca-pub-0306128000163392\";");
+dz.writeln("/* AZLyrics links */");
+dz.writeln("google_ad_slot = \"0725246191\";");
+dz.writeln("google_ad_width = 728;");
+dz.writeln("google_ad_height = 15;");
+dz.writeln("//-->");
+dz.writeln("</script>");
+dz.writeln("<script type=\"text/javascript\"");
+dz.writeln("src=\"http://pagead2.googlesyndication.com/pagead/show_ads.js\">");
+dz.writeln("</script>");

@@ -1,0 +1,102 @@
+»HTTPS23.44.121.28"Ü
+JGET /content/dam/imp/surfaces/mail_signin/v3/css/style_win8.css HTTP/1.1
+Host: sc.imp.live.com
+Connection: keep-alive
+Accept: text/css,*/*;q=0.1
+vUser-Agent: Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/31.0.1650.63 Safari/537.36
+xReferer: https://sc.imp.live.com/content/dam/imp/surfaces/mail_signin/v3/mail/EN-US.html?id=64855&mkt=EN-US&cbcxt=mail
+$Accept-Encoding: gzip,deflate,sdch
+!Accept-Language: en-US,en;q=0.8
+
+*û
+HTTP/1.1 200 OK
+Content-Type: text/css
+.Last-Modified: Thu, 01 Nov 2012 10:29:02 GMT
+Accept-Ranges: bytes
+ETag: "06bf5b51bb8cd1:0"
+Server: Microsoft-IIS/7.5
+X-Powered-By: ASP.NET
+Content-Length: 1622
+%Date: Fri, 10 Jan 2014 00:28:15 GMT
+Connection: keep-alive
+Ø
+ï»¿
+div.logo-windows {
+    background-image: url('../images/W8NOO_SignOut_Intro_WinLogo.png');
+    background-repeat: no-repeat;
+    padding-bottom:0px;
+    z-index:1;
+    height:19px;
+    width:90px;
+    margin-left:0px;
+    margin-top :0px;
+    position:relative;
+    top:30px;
+    left:30px;
+}
+div.logo-windows8 {
+    background-image: url('../images/W8NOO_SignOut_Intro_Win8Logo.png');
+    background-repeat: no-repeat;
+    padding-bottom:0px;
+    z-index:1;
+    height:19px;
+    width:100px;
+    margin-left:0px;
+    margin-top :0px;
+    position:relative;
+    top:30px;
+    left:30px;
+}
+div.logo-outlookBlue {
+    background-image: url('../images/W8NOO_SignIn_Intro_OutlookBlueLogo.png');
+    background-repeat: no-repeat;
+    padding-bottom:0px;
+    z-index:1;
+    height:30px;
+    width:120px;
+    margin-left:0px;
+    margin-top :0px;
+    position:relative;
+    top:50px;
+    left:20px;
+}
+div.logo-IE {
+    background-image: url('../images/W8NOO_SignOut_Intro_IELogo.png');
+    background-repeat: no-repeat;
+    padding-bottom:0px;
+    z-index:1;
+    height:20px;
+    width:150px;
+    margin-left:0px;
+    margin-top :0px;
+    position:relative;
+    top:20px;
+    left:20px;
+}
+#hero
+{
+    position:relative;
+}
+div#offer
+{
+    width:475px;
+    height:490px;
+    overflow:hidden;
+}
+div#offer img
+{
+    height:340px;
+    width:475px;
+    border:none;
+    display:block;
+    position:absolute;
+    top: 0px;
+}
+div#offer div#text
+{
+    height:150px;
+    width:413px;
+    padding:15px 31px 25px 31px;
+    position:absolute;
+    top:340px;
+}

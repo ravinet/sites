@@ -1,0 +1,26 @@
+PHTTP123.126.62.210"�
+9GET /ad/www?callback=recommendad&boardid=12760 HTTP/1.1
+Host: api.pr.163.com
+Connection: keep-alive
+Accept: */*
+vUser-Agent: Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/31.0.1650.63 Safari/537.36
+Referer: http://www.163.com/
+$Accept-Encoding: gzip,deflate,sdch
+!Accept-Language: en-US,en;q=0.8
+
+*�
+HTTP/1.1 200 OK
+Server: nginx
+%Date: Thu, 09 Jan 2014 01:22:09 GMT
+0Content-Type: application/json;; charset=utf-8
+Transfer-Encoding: chunked
+Connection: keep-alive
+(Expires: Thu, 09 Jan 2014 01:21:46 GMT
+Cache-Control: max-age=60
+via: yz_proxy1
+�
+
+56a
+recommendad([{"id":"102046","title":"预约武魂尊享三大特权","link":"http://g.163.com/c?AID=102046&FlightID=1426&Values=1129591488&Redirect=http://wh.163.com/hi/"},{"id":"102031","title":"揭秘“车险”优惠妙招","link":"http://g.163.com/c?AID=102031&FlightID=1426&Values=3289576103&Redirect=http://popme.163.com/link/dianshang_0608_7456.html"},{"id":"102041","title":"超给力优惠券免费领","link":"http://g.163.com/c?AID=102041&FlightID=1426&Values=1396700881&Redirect=http://popme.163.com/link/textlink_0319_2806.html"},{"id":"102048","title":"为散落相片找个家吧","link":"http://g.163.com/c?AID=102048&FlightID=1426&Values=594605680&Redirect=http://photo.163.com/cloudphotos/"},{"id":"102043","title":"手机停机？快来充值","link":"http://g.163.com/c?AID=102043&FlightID=1426&Values=2286001942&Redirect=http://mall.163.com/mobile/fill.html"},{"id":"102045","title":"热门搭配一网打尽","link":"http://g.163.com/c?AID=102045&FlightID=1426&Values=2785502510&Redirect=http://istyle.163.com/?from163Service"},{"id":"103042","title":"网易彩票 安全专业","link":"http://g.163.com/c?AID=103042&FlightID=1426&Values=4030695158&Redirect=http://popme.163.com/link/cp_0407_5801.html"},{"id":"106411","title":"优质单身男女都在这里","link":"http://g.163.com/c?AID=106411&FlightID=1426&Values=4105611714&Redirect=http://love.163.com"}]);
+0
+

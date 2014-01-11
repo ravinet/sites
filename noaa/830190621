@@ -1,0 +1,62 @@
+PHTTP129.15.96.11"Ô
+GET /css/footer.css HTTP/1.1
+Host: www.noaa.gov
+Connection: keep-alive
+Accept: text/css,*/*;q=0.1
+vUser-Agent: Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/31.0.1650.63 Safari/537.36
+Referer: http://www.noaa.gov/
+$Accept-Encoding: gzip,deflate,sdch
+!Accept-Language: en-US,en;q=0.8
+
+* 
+HTTP/1.0 200 OK
+.Last-Modified: Fri, 15 Nov 2013 21:59:00 GMT
+Accept-Ranges: bytes
+Content-Length: 675
+Content-Type: text/css
+%Date: Thu, 09 Jan 2014 01:16:25 GMT
+Server: Apache
+$ETag: "e0607a0c-2a3-4eb3e4e3d9100"
+(Expires: Thu, 09 Jan 2014 02:16:25 GMT
+Cache-Control: max-age=3600
+
+Age: 109
+Via: 1.0 c7.w3.woc (squid)
+Connection: keep-alive
+¥
+/** FOOTER **/
+#footer  {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: .7em;
+	text-align: center;
+	margin-top: 5px;
+	margin-bottom: 5px;
+}
+#footer a {
+	margin-left: 3px;
+	margin-right: 3px;
+}
+
+#footer a:link { color: #0057A5; }
+#footer a:visited { color: #0057A5; }
+#footer a:hover { color: #00A0E1; }
+
+body.home #footer {
+	margin: 20px auto 40px; 
+	color: #5BA7DF; 
+}
+
+body.home #footer a,
+body.home #footer a:link,
+body.home #footer a:visited { 
+	color: #FFF;
+	margin: 0 3px;
+	text-decoration: none;
+	text-shadow: 0px 1px 2px #000;
+	filter: dropshadow(color=#000, offx=0, offy=1); 
+}
+
+body.home #footer a:hover { 
+	color: #8DDBFA;
+	text-decoration: underline; 
+}

@@ -1,0 +1,26 @@
+PHTTP
+8.18.45.80"ú
+HGET /ad/js/12309-191309-1358-26?mpt=2014.01.09.00.23.36&mpvc= HTTP/1.1
+Host: adfarm.mediaplex.com
+Connection: keep-alive
+Accept: */*
+vUser-Agent: Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/31.0.1650.63 Safari/537.36
+"Referer: http://www.nytimes.com/
+$Accept-Encoding: gzip,deflate,sdch
+!Accept-Language: en-US,en;q=0.8
+
+*‹	
+HTTP/1.1 200 OK
+Server: Apache-Coyote/1.1
+Cache-Control: no-store
+Pragma: no-cache
+Expires: 0
+OP3P: policyref="/w3c/p3p.xml", CP="NOI DSP COR PSAo PSDo OUR IND UNI COM NAV"
+kSet-Cookie: svid=471502110283932597; expires=Sun, 8-Jan-2017 17:56:50 GMT; path=/; domain=.mediaplex.com;
+XSet-Cookie: rts=; expires=Sun, 8-Jan-2017 17:56:50 GMT; path=/; domain=.mediaplex.com;
+dSet-Cookie: mojo3=12309:1358; expires=Fri, 8-Jan-2016 17:56:50 GMT; path=/; domain=.mediaplex.com;
+Content-Type: text/html
+Content-Length: 578
+%Date: Thu, 09 Jan 2014 00:23:36 GMT
+Ä
+document.write('<a target="_blank" href="http://adfarm.mediaplex.com/ad/ck/12309-191309-1358-26?mpt=2014.01.09.00.23.36&mpvc=" onclick="mplx.send_oob();"><img ismap border=0 src="http://img-cdn.mediaplex.com/0/12309/191309/144008_US_BR_NA_FY14Q4_BracketsTA_184x90_dell.jpg" ></a><script language="javascript" type="text/javascript">var mplx = new Object();mplx.oob_img = new Image();mplx.oob_var = (window.mpOOBClickTrack != undefined) ? window.mpOOBClickTrack : "#";mplx.send_oob = function(e) {if (mplx.oob_var.charAt(0) != "#") {mplx.oob_img.src = mplx.oob_var;}}</script>');

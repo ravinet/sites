@@ -1,0 +1,24 @@
+PHTTP138.108.7.20"Æ
+vGET /cgi-bin/m?ci=us-400338h&cg=0&cc=1&si=http%3A//www.chicagotribune.com/&rp=&ts=compact&rnd=1389370450897 HTTP/1.1
+"Host: secure-us.imrworldwide.com
+Connection: keep-alive
+Accept: image/webp,*/*;q=0.8
+vUser-Agent: Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/31.0.1650.63 Safari/537.36
+)Referer: http://www.chicagotribune.com/
+$Accept-Encoding: gzip,deflate,sdch
+!Accept-Language: en-US,en;q=0.8
+
+*“
+HTTP/1.1 302 Found
+Server: nginx
+%Date: Fri, 10 Jan 2014 16:13:57 GMT
+Content-Length: 0
+Connection: keep-alive
+Keep-Alive: timeout=20
+ŽSet-Cookie: IMRID=7881d879-d7f4-4e6e-85e2-433cc8fef671;Path=/;Domain=imrworldwide.com;Expires=Sun, 10-Jan-2016 16:13:57 GMT;Max-Age=63072000
+(Expires: Thu, 01 Dec 1994 16:00:00 GMT
+™Location: http://secure-us.imrworldwide.com/cgi-bin/m?ci=us-400338h&cg=0&cc=1&si=http%3A//www.chicagotribune.com/&rp=&ts=compact&rnd=1389370450897&ja=1
+Pragma: no-cache
+Cache-Control: no-cache
+pP3P: P3P policyref="http://www.imrworldwide.com/w3c/p3p.xml", CP="NOI DSP COR NID PSA ADM OUR IND UNI NAV COM"
+

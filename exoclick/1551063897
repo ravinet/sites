@@ -1,0 +1,22 @@
+PHTTP54.230.54.64"ê
+XGET /privacy-seal/Exoclick,-S-L-/asc?rid=3edd7082-fa6c-4578-a122-d0c0acb908d4 HTTP/1.1
+!Host: privacy-policy.truste.com
+Connection: keep-alive
+Accept: */*
+vUser-Agent: Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/31.0.1650.63 Safari/537.36
+#Referer: http://www.exoclick.com/
+$Accept-Encoding: gzip,deflate,sdch
+!Accept-Language: en-US,en;q=0.8
+
+*”
+HTTP/1.1 200 OK
+Content-Length: 19
+Connection: keep-alive
+%Date: Wed, 08 Jan 2014 21:50:02 GMT
+Server: TRUSTe
+Age: 57360
+X-Cache: Hit from cloudfront
+GVia: 1.1 1252d70d90887b63de07f3186b2e80c7.cloudfront.net (CloudFront)
+GX-Amz-Cf-Id: ecqWjxoP82MO7rHCsEBMp927aAcBUSJ_S822Bi4i9gGmBmCFpREnzg==
+
+function tds() {}

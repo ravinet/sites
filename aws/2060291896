@@ -1,0 +1,26 @@
+PHTTP176.32.100.36"∑
+!GET /nav/ddfo/support/ HTTP/1.1
+Host: aws.amazon.com
+Connection: keep-alive
+Accept: */*
+vUser-Agent: Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/31.0.1650.63 Safari/537.36
+!Referer: http://aws.amazon.com/
+$Accept-Encoding: gzip,deflate,sdch
+!Accept-Language: en-US,en;q=0.8
+ËCookie: x-wl-uid=1sXq9FIpLO9d4iVeqFQRlsK1MIDCHduCzm8yjecnSt6smrD5gcOKBNqlHBWHIinvdW/qXL6dQ3m4=; aws-session-id-time=2082758401l; aws-session-id=187-3581872-5464619; pN=0; s_pers=%20s_vnum%3D1391819748401%2526vn%253D1%7C1391819748401%3B%20s_invisit%3Dtrue%7C1389229548401%3B%20s_nr%3D1389227748403-New%7C1397003748403%3B; s_sess=%20s_cc%3Dtrue%3B%20s_sq%3D%3B
+
+*ù	
+HTTP/1.1 200 OK
+%Date: Thu, 09 Jan 2014 00:35:36 GMT
+Server: Server
+X-Frame-Options: SAMEORIGIN
+.Last-Modified: Thu, 13 Dec 2012 00:52:56 GMT
+ETag: "33c-4d0b155e98a00"
+Accept-Ranges: bytes
+Content-Length: 828
+Cache-Control: max-age=0
+(Expires: Thu, 09 Jan 2014 00:35:36 GMT
+Content-Type: text/html
+Vary: User-Agent
+æ
+displayIn("\r\n  <div class=\"ddfo-l1\">\r\n  <ul>\r\n    <li><a class=\"ddfo-a-block\" href=\"//aws.amazon.com/support/\">Support Center</a></li>\r\n  </ul>\r\n\r\n  <ul class=\"ddfo-ul-divider-above\">\r\n    <li><a class=\"ddfo-a-block\" href=\"https://forums.aws.amazon.com/\">Forums</a></li>\r\n    <li><a class=\"ddfo-a-block\" href=\"//aws.amazon.com/documentation/\">Documentation</a></li>\r\n    <li><a class=\"ddfo-a-block\" href=\"//aws.amazon.com/faqs/\">Technical FAQs</a></li>\r\n    <li><a class=\"ddfo-a-block\" href=\"http://status.aws.amazon.com/\">Service Health Dashboard</a></li>\r\n    <li><a class=\"ddfo-a-block\" href=\"//aws.amazon.com/premiumsupport/\">AWS Support Plans</a></li>\r\n    <li><a class=\"ddfo-a-block\" href=\"//aws.amazon.com/contact-us/\">Contact Us</a></li>\r\n  </ul>\r\n</div>\r\n")

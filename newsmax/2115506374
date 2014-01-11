@@ -1,0 +1,223 @@
+PHTTP64.135.21.3"ã
+GET /live/TVwidget/ HTTP/1.1
+Host: www.newsmax.com
+Connection: keep-alive
+TAccept: text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8
+vUser-Agent: Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/31.0.1650.63 Safari/537.36
+"Referer: http://www.newsmax.com/
+$Accept-Encoding: gzip,deflate,sdch
+!Accept-Language: en-US,en;q=0.8
+OCookie: CMSPreferredCulture=en-US; ASP.NET_SessionId=yt4ckeewnwjrcw3z4yqjxmu2
+
+*Ö:
+HTTP/1.1 200 OK
+3Cache-Control: private, no-store, must-revalidate
+(Content-Type: text/html; charset=utf-8
+Server: Microsoft-IIS/7.5
+X-AspNet-Version: 4.0.30319
+X-Powered-By: ASP.NET
+%Date: Thu, 09 Jan 2014 01:37:27 GMT
+Content-Length: 7243
+Í8
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head id="Head1"><title>
+	NewsmaxTVWidget
+</title><meta http-equiv="content-type" content="text/html; charset=UTF-8" /> 
+<meta http-equiv="pragma" content="no-cache" /> 
+<meta http-equiv="content-style-type" content="text/css" /> 
+<meta http-equiv="content-script-type" content="text/javascript" /> 
+<link type="text/css" rel="stylesheet" href="/CMSPages/GetCSS.aspx?stylesheetname=Newsmax" /> 
+<style type="text/css">
+#nmtvWidget, #nmtvWidget_BoxTop, #nmtvWidget_BoxBtm {
+background:url("/App_Themes/NewsmaxNew/images/TVwidget/nmTvWidget_BoxSprite.png") center 0 no-repeat;
+}
+#nmtvWidget {
+	background-repeat: repeat-y;
+	overflow: hidden;
+	width: 300px;
+}
+#nmtvWidget_BoxTop {
+	background-position: left top;
+	padding: 4px 0 0;
+}
+#nmtvWidget_BoxBtm {
+	background-position: right bottom;
+	padding: 0 0 14px;
+}
+#nmtvWidget_LogoSm {
+	background: url("/App_Themes/NewsmaxNew/images/TVwidget/nmtv_LogoSm.png") 0 0 no-repeat;
+	float: left;
+	width: 121px;
+	height: 20px;
+	display: block;
+	margin: 5px 0 7px 8px;
+}
+.nmtvWidget_LogoSmLink {
+	width: 121px;
+	height: 20px;
+        display:block;
+}
+
+#nmtvWidget_FullSc {
+	float: right;
+	margin: 8px 8px 0 0;
+}
+#nmtvWidget_FullSc a {
+	color: #0459ac;
+	font: bold 12px/10px Arial, "Times New Roman", Times, serif;
+        text-decoration:underline;
+}
+#nmtvWidget_BoxTv {
+	padding: 9px 8px;
+	clear: both;
+	background: url("/App_Themes/NewsmaxNew/images/TVwidget/nmtvWidget_BoxTv.gif") 0 0 no-repeat;
+	height: 178px;
+}
+#nmtvWidget_showInfo {
+	padding: 0 15px;
+	margin: 0;
+}
+#nmtvWidget_showInfo li {
+	display: block;
+	padding: 0;
+	margin: 0;
+	list-style-type: none;
+	overflow: hidden;
+}
+#nmtvWidget_showInfo strong {
+	float: left;
+	width: 100px;
+}
+#nmtvWidget_showInfo strong span {
+	background: #c32824;
+	padding: 4px 5px 3px;
+	color: #fff;
+	font: 100 12px/20px Arial, Helvetica, Sans-serif;
+}
+#nmtvWidget_showInfo p {
+	font: 14px/18px Georgia, "Times New Roman", Serif;
+	padding: 0 0 5px;
+	margin: 0 0 0 70px;
+	overflow: hidden;
+}
+/* .nmtvWidget_BtmHR {
+	border-bottom: 1px solid #8db8db;
+	padding: 0 0 10px!important;
+	margin: 0 0 10px!important;
+} */
+.nmtvWidget_showInfo_blue {
+	background: #0459ac!important;
+}
+
+.nmtvWidget_link a {
+	color: #0459ac;
+	font: bold 13px/10px Georgia, "Times New Roman", Times, serif;
+	line-height:17px;
+}
+iframe {
+border:0px;
+}
+
+#NMTVplayerWrapper .innerWrapper {
+    background: none repeat scroll 0 0 #000000;
+-ms-overflow-style: none;
+}
+</style> 
+<script type="text/javascript">var NREUMQ=NREUMQ||[];NREUMQ.push(["mark","firstbyte",new Date().getTime()]);</script></head>
+<body class="LTR Gecko537 ENUS" >
+    <form method="post" action="/live/TVwidget/" id="form1">
+<div>
+<input type="hidden" name="__EVENTTARGET" id="__EVENTTARGET" value="" />
+<input type="hidden" name="__EVENTARGUMENT" id="__EVENTARGUMENT" value="" />
+<input type="hidden" name="__VIEWSTATE" id="__VIEWSTATE" value="/wEPDwUJNTg2MzA2MjY5ZBgJBRpkYmdFbGVtJGxvZ1NRTCRncmlkUXVlcmllcw9nZAUbZGJnRWxlbSRsb2dTdGF0ZSRncmlkU3RhdGVzD2dkBRlkYmdFbGVtJGxvZ01hYyRncmlkTWFjcm9zD2dkBSRkYmdFbGVtJGxvZ1JlcXVlc3QkdGJsVmFsJGdyaWRWYWx1ZXMPZ2QFJWRiZ0VsZW0kbG9nUmVxdWVzdCR0YmxSZXFDJGdyaWRWYWx1ZXMPZ2QFGmRiZ0VsZW0kbG9nQ2FjaGUkZ3JpZENhY2hlD2dkBRxkYmdFbGVtJGxvZ1JlcXVlc3QkZ3JpZENhY2hlD2dkBSVkYmdFbGVtJGxvZ1JlcXVlc3QkdGJsUmVzQyRncmlkVmFsdWVzD2dkBRZkYmdFbGVtJGxvZ1NlYyRncmlkU2VjD2dk" />
+</div>
+
+<script type="text/javascript">
+//<![CDATA[
+var theForm = document.forms['form1'];
+if (!theForm) {
+    theForm = document.form1;
+}
+function __doPostBack(eventTarget, eventArgument) {
+    if (!theForm.onsubmit || (theForm.onsubmit() != false)) {
+        theForm.__EVENTTARGET.value = eventTarget;
+        theForm.__EVENTARGUMENT.value = eventArgument;
+        theForm.submit();
+    }
+}
+//]]>
+</script>
+
+
+<script src="/WebResource.axd?d=wNP9qNthD245Wn8QKoMP4ffdVzCZp_ce5CmZJ5qarvbWBcqTu_B9UuQpThsrSxumMKTJW2lbET9PUqqM17Hf2DTn1hg1&amp;t=635179931085865991" type="text/javascript"></script>
+
+<div><input type="hidden" name="lng" id="lng" value="en-US" />
+</div><script type="text/javascript">
+//<![CDATA[
+
+//]]>
+</script>
+<script src="/ScriptResource.axd?d=_G6SQS1xyMOKReXjiCugqrWWdnWlkIuzerkkwB1xRfkgehVIDiDudAn7dOazKqXMl-lGZOY5XoZsQJf7Em1N3Hptcn7VY_LHyGmZT8yp_f08R-f1OVYZjxbI6BmV5z8uIWPVwhcZCuU7gnnlgAkXL2Zc9NU1&amp;t=4fd3f051" type="text/javascript"></script>
+<script src="/ScriptResource.axd?d=STTTeT8wwBUyX0LNCsHhHQiDj3ZtRS5eB-kl5P9hVKbBtykSFGJJPnO-TxrplcEdZFVC8tiwhx5lN8y6vBCPRtAHBFZiZGvCPj9IijCQ6PzIWZ-Aa-WYLbHa7Fyh2j3nSADh42tMCrv9qCAq2IWccQbIukvVecKUUcjm9MIZQ4XjqtYS0&amp;t=4fd3f051" type="text/javascript"></script>
+<div>
+
+	<input type="hidden" name="__SCROLLPOSITIONX" id="__SCROLLPOSITIONX" value="0" />
+	<input type="hidden" name="__SCROLLPOSITIONY" id="__SCROLLPOSITIONY" value="0" />
+</div>
+        <div id="manPortal">
+
+</div><script type="text/javascript">
+//<![CDATA[
+Sys.WebForms.PageRequestManager._initialize('manScript', 'form1', [], [], [], 90, '');
+//]]>
+</script>
+
+        <div id="videoForm"><div id="nmtvWidget">
+<div id="nmtvWidget_BoxTop">
+<div id="nmtvWidget_BoxBtm">
+<div id="nmtvWidget_LogoSm">&nbsp;</div>
+<div id="nmtvWidget_FullSc"><a href="http://www.newsmaxtv.com" target="_blank" onclick="NMTVPlayer.pause();">View Live Show</a></div>
+<div id="nmtvWidget_BoxTv"><script src='http://player.ooyala.com/v3/22e179b044a24e9b909bb2ae6fbf7c1f'>
+</script>
+<div id="NMTVplayerWrapper">&nbsp;</div>
+<script>
+var NMTVPlayer = OO.Player.create('NMTVplayerWrapper', 'RqcGJ4YzqP1btsdPQA-BnlWDUpdtiLMD', {
+  width: 284, height: 160,
+});
+
+//sets volume to 42% after waiting 3 seconds
+setTimeout(setVolume, 3000);
+
+function setVolume() {
+                NMTVPlayer.setVolume(.42);
+}              
+
+//sets fullscreen
+
+
+</script></div>
+<ul id="nmtvWidget_showInfo">
+    <li class="nmtvWidget_BtmHR">
+    <p class="nmtvWidget_link"><a href="http://www.newsmaxtv.com" onclick="NMTVPlayer.pause();" target="_blank"><img width="132" height="29" src="http://www.newsmax.com/App_Themes/NewsmaxNew/images/TVwidget/WatchNowbutton.png" alt="" /></a></p>
+    </li>
+</ul>
+</div>
+</div>
+</div></div> 
+        
+    
+
+<script type="text/javascript">
+//<![CDATA[
+
+theForm.oldSubmit = theForm.submit;
+theForm.submit = WebForm_SaveScrollPositionSubmit;
+
+theForm.oldOnSubmit = theForm.onsubmit;
+theForm.onsubmit = WebForm_SaveScrollPositionOnSubmit;
+//]]>
+</script>
+</form>
+<script type="text/javascript"> if (!NREUMQ.f) {NREUMQ.f=function() {NREUMQ.push(["load",new Date().getTime()]);var e=document.createElement("script"); e.type="text/javascript"; e.src=(("http:"===document.location.protocol)?"http:":"https:") + "//" + "js-agent.newrelic.com/nr-100.js"; document.body.appendChild(e);if(NREUMQ.a)NREUMQ.a();};NREUMQ.a=window.onload;window.onload=NREUMQ.f;};NREUMQ.push(["nrfj","beacon-6.newrelic.com","aee2091659","1573422","NgRSYxQAVxECUExZXA9OcWQ2TloPEENZV1YSTkBYFBVYDhdWVUBfABVVGQcSSRo=",0,31,new Date().getTime(),"9FDE385F1DA309F4","","","",""]);</script></body>
+</html>

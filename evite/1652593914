@@ -1,0 +1,46 @@
+PHTTP
+18.7.20.70"ß
+4GET /assets/1389205433/js-c/home/index.js HTTP/1.1
+Host: g0.evitecdn.com
+Connection: keep-alive
+Accept: */*
+vUser-Agent: Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/31.0.1650.63 Safari/537.36
+ Referer: http://www.evite.com/
+$Accept-Encoding: gzip,deflate,sdch
+!Accept-Language: en-US,en;q=0.8
+
+*ß
+HTTP/1.1 200 OK
+.Last-Modified: Wed, 08 Jan 2014 18:24:16 GMT
+*ETag: "d5c0abdda6abcc0291667059bdead314"
+%x-goog-generation: 1389205456837000
+x-goog-metageneration: 1
+*x-goog-stored-content-encoding: identity
+#x-goog-stored-content-length: 195
+&Content-Type: application/javascript
+Content-Language: en
+x-goog-hash: crc32c=V2EqeA==
++x-goog-hash: md5=1cCr3aarzAKRZnBZverTFA==
+Vary: Accept-Encoding
+Accept-Ranges: bytes
+Content-Length: 195
+ Access-Control-Allow-Origin: *
+"Access-Control-Expose-Headers: *
+FServer: HTTP Upload Server Built on Jan 1 2014 15:49:23 (1388620163)
+Alternate-Protocol: 80:quic
+%Cache-Control: public, max-age=3600
+(Expires: Thu, 09 Jan 2014 14:47:58 GMT
+%Date: Thu, 09 Jan 2014 13:47:58 GMT
+Connection: keep-alive
+Å
+(function() {
+
+  $(document).ready(function() {
+    return LegacyRouter.check_hash();
+  });
+
+  $(window).on('hashchange', function() {
+    return LegacyRouter.check_hash();
+  });
+
+}).call(this);

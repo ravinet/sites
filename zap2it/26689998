@@ -1,0 +1,27 @@
+PHTTP
+18.7.20.68"„
+GET /crossdomain.xml HTTP/1.1
+Host: pvp.trb.com
+Connection: keep-alive
+vUser-Agent: Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/31.0.1650.63 Safari/537.36
+Accept: */*
+!Referer: http://www.zap2it.com/
+$Accept-Encoding: gzip,deflate,sdch
+!Accept-Language: en-US,en;q=0.8
+;Cookie: s_vi=[CS]v1|296807F4051D3DA8-6000014BE000381A[CE]
+
+*•
+HTTP/1.1 200 OK
+Server: Apache
+5ETag: "428855a2d6b918a7b32e6f95ab442ab5:1326308314"
+.Last-Modified: Wed, 11 Jan 2012 18:58:34 GMT
+Accept-Ranges: bytes
+Content-Length: 116
+Content-Type: application/xml
+%Date: Fri, 10 Jan 2014 15:21:15 GMT
+Connection: keep-alive
+v
+<?xml version="1.0"?>
+<cross-domain-policy>
+	<allow-access-from domain="*" secure="false" />
+</cross-domain-policy>

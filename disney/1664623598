@@ -1,0 +1,37 @@
+PHTTP68.71.212.116"â
+GET / HTTP/1.1
+Host: www.disney.go.com
+Connection: keep-alive
+TAccept: text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8
+vUser-Agent: Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/31.0.1650.63 Safari/537.36
+$Accept-Encoding: gzip,deflate,sdch
+!Accept-Language: en-US,en;q=0.8
+
+*«
+ HTTP/1.1 301 Moved Permanently
+ Server: Apache/2.2.3 (Red Hat)
+Location: http://disney.com/
+-Content-Type: text/html; charset=iso-8859-1
+Content-Length: 309
+Accept-Ranges: bytes
+%Date: Thu, 09 Jan 2014 01:08:47 GMT
+X-Varnish: 804874614
+Age: 0
+Via: 1.1 varnish
+Connection: keep-alive
+X-Served-By: n7dolvarnish05
+X-Backend: dcom
+X-Cache: dcom
+*X-LB_VirtualServer: vs-DOL_DISNEY.GO.COM
+$X-LB_Pool: pool-DOL_SHARED_VARNISH
+!X-LB_Server: 10.198.64.219:6081
+·
+<!DOCTYPE HTML PUBLIC "-//IETF//DTD HTML 2.0//EN">
+<html><head>
+<title>301 Moved Permanently</title>
+</head><body>
+<h1>Moved Permanently</h1>
+<p>The document has moved <a href="http://disney.com/">here</a>.</p>
+<hr>
+<address>Apache/2.2.3 (Red Hat) Server at www.disney.go.com Port 80</address>
+</body></html>

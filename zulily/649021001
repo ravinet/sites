@@ -1,0 +1,25 @@
+PHTTP107.20.202.70"¸
+TGET /targusinfo.js?score=000&zip=&_type=&_goalid=&_amount=&_product=&_id= HTTP/1.1
+Host: pixel.adbuyer.com
+Connection: keep-alive
+Accept: */*
+vUser-Agent: Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/31.0.1650.63 Safari/537.36
+!Referer: http://www.zulily.com/
+$Accept-Encoding: gzip,deflate,sdch
+!Accept-Language: en-US,en;q=0.8
+³Cookie: UID=CookieId=b19218ad-f373-45ce-8903-090aaac8f309; RTBGoogleID=CookieId=1786c759-ca9e-46c0-9726-236a37f97e2a; RTBAppNexusID=CookieId=5fbfc4f6-f0d4-4c65-9087-3a4b2fa9147f
+
+* 
+HTTP/1.1 200 OK
+4Cache-Control: no-cache, no-store, must-revalidate
+%Date: Thu, 09 Jan 2014 01:10:36 GMT
+Expires: -1
+}p3p: policyref="http://www.soothware.com/w3c/p3p.xml",CP="IDC DSP COR ADM DEVi TAIi PSA PSD IVAi IVDi CONi HIS OUR IND CNT"
+Pragma: no-cache
+Server: Microsoft-IIS/8.0
+ƒSet-Cookie: UID=CookieId=b19218ad-f373-45ce-8903-090aaac8f309; domain=.adbuyer.com; expires=Fri, 09-Jan-2015 01:10:36 GMT; path=/
+X-AspNet-Version: 4.0.30319
+X-Powered-By: ASP.NET
+Content-Length: 0
+Connection: keep-alive
+

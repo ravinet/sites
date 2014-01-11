@@ -1,0 +1,27 @@
+PHTTP69.197.137.58"à
+0GET /jsonp?callback=redirectToCountry HTTP/1.1
+Host: api.wipmania.com
+Connection: keep-alive
+Accept: */*
+vUser-Agent: Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/31.0.1650.63 Safari/537.36
+$Referer: http://www.linkshare.com/
+$Accept-Encoding: gzip,deflate,sdch
+!Accept-Language: en-US,en;q=0.8
+
+*Û
+HTTP/1.1 200 OK
+Server: nginx
+%Date: Thu, 09 Jan 2014 23:50:01 GMT
+(Content-Type: application/x-javascript
+Transfer-Encoding: chunked
+Connection: keep-alive
+Keep-Alive: timeout=20
+?Cache-Control: no-cache, no-store, max-age=0, must-revalidate
+Pragma: no-cache
+(Expires: Fri, 01 Jan 1990 00:00:00 GMT
+5Content-Type: application/javascript; charset=utf-8
+Û
+ce
+redirectToCountry({"latitude":"44.9718","longitude":"-113.3405","zoom":3,"address":{"continent":"North America","continent_code":"NA","city":"-","country":"United States","country_code":"US","region":"-"}})
+0
+

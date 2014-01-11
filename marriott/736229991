@@ -1,0 +1,29 @@
+»HTTPS173.192.220.67"æ
+TGET /site/13849?dt=0&r=622207843&sig=4144691048&bkca=KJyguithpuGs99C89ZR= HTTP/1.1
+Host: stags.bluekai.com
+Connection: keep-alive
+Accept: */*
+vUser-Agent: Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/31.0.1650.63 Safari/537.36
+-Referer: http://www.marriott.com/default.mi
+$Accept-Encoding: gzip,deflate,sdch
+!Accept-Language: en-US,en;q=0.8
+VCookie: bkc=KJ0EBsBQisaCRsCkmC4W99x9WIGYPy==; bkdc=wdc; bklc=0; bku=sER99/DYpknmFqOD
+
+*»
+HTTP/1.1 200 OK
+%Date: Thu, 09 Jan 2014 01:59:34 GMT
+Server: Apache/2.2.24 (Unix)
+uP3P: CP="NOI DSP COR CUR ADMo DEVo PSAo PSDo OUR SAMo BUS UNI NAV", policyref="http://tags.bluekai.com/w3c/p3p.xml"
+Pragma: no-cache
+(Expires: Thu, 01 Dec 1994 16:00:00 GMT
+.Cache-Control: max-age=0, no-cache, no-store
+šSet-Cookie: bkc=KJ0nRsHQmsfJpBes5YT/0sEQ8sJQter59zbUBsBQDaBAHrWgGdaMVOQRV3aX9eaCemT=; expires=Tue, 08-Jul-2014 01:59:34 GMT; path=/; domain=.bluekai.com
+fSet-Cookie: bku=sER99/DYpknmFqOD; expires=Tue, 08-Jul-2014 01:59:34 GMT; path=/; domain=.bluekai.com
+BK-Server: d7ba
+Content-Length: 41
+Content-Type: text/javascript
++
+var bk_results = {
+ "campaigns": [
+ ]
+};

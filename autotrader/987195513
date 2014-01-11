@@ -1,0 +1,31 @@
+PHTTP
+18.7.20.70"ó
+9GET /adServer/adServerESI.aspx?bannerID=200111 HTTP/1.1
+!Host: core.insightexpressai.com
+Connection: keep-alive
+Accept: */*
+vUser-Agent: Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/31.0.1650.63 Safari/537.36
+%Referer: http://www.autotrader.com/
+$Accept-Encoding: gzip,deflate,sdch
+!Accept-Language: en-US,en;q=0.8
+
+*ä
+HTTP/1.1 200 OK
+Server: Microsoft-IIS/7.0
+Content-Length: 0
+.Content-Type: text/javascript; charset=utf-8
+nSet-Cookie: DW=989c23b1389231323; expires=Wed, 04-Jan-2034 01:35:23 GMT; path=/; domain=insightexpressai.com
+tSet-Cookie: IXAIBannerCounter200111=1; domain=.insightexpressai.com; expires=Tue, 08-Jan-2019 12:00:00 GMT; path=/
+sSet-Cookie: IXAIControlCounter3520=1; domain=.insightexpressai.com; expires=Tue, 08-Jan-2019 12:00:00 GMT; path=/
+qSet-Cookie: IXAIBanners3520=200111; domain=.insightexpressai.com; expires=Tue, 08-Jan-2019 12:00:00 GMT; path=/
+lSet-Cookie: DW_Time=1389231323; expires=Wed, 04-Jan-2034 01:35:23 GMT; path=/; domain=insightexpressai.com
+KP3P: CP="OTI DSP COR CUR ADMi DEVi TAI PSA PSD IVD CONi TELi OUR BUS STA"
+runtimevalue: jody
+Vary: Accept-Encoding
+X-Powered-By: ASP.NET
+(Expires: Thu, 09 Jan 2014 01:35:23 GMT
+Pragma: no-cache
+%Date: Thu, 09 Jan 2014 01:35:23 GMT
+Connection: keep-alive
+Cache-Control: no-store
+

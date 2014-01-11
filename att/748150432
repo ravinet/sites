@@ -1,0 +1,29 @@
+PHTTP66.151.153.11"Â
+ŒGET /baynote/tags3/policy?customerId=attwireless&code=www&subdomain=&userId=UNASSIGNED&userPolicyRequested=true&dataFormat=script HTTP/1.1
+#Host: attwireless-www.baynote.net
+Connection: keep-alive
+Accept: */*
+vUser-Agent: Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/31.0.1650.63 Safari/537.36
+Referer: http://www.att.com/
+$Accept-Encoding: gzip,deflate,sdch
+!Accept-Language: en-US,en;q=0.8
+
+*Ø
+
+HTTP/1.1 200 OK
+Server: BNServer
+%Cache-Control: public,max-age=86400
+2Content-Type: text/javascript;charset=ISO-8859-1
+Content-Length: 1170
+%Date: Thu, 09 Jan 2014 00:37:47 GMT
+”	
+
+
+
+
+
+
+var basePolicyJSON = '{\"guide\":{\"fmt\":\"results-xsl\",\"ok\":true},\"baynoteObserver\":{\"dt\":45,\"sue\":168,\"so\":true,\"uhd\":false,\"cds\":true,\"eec\":true,\"cdt\":true,\"ioi\":true,\"sup\":\"bnec\",\"hn\":\"handler2.js\",\"ec\":true,\"uca\":\"315360000000\",\"alt\":true,\"om\":2,\"ep\":50,\"ub\":false,\"sv\":true,\"sdl\":false,\"ok\":true,\"st\":true},\"search\":{\"ok\":true},\"customScript\":{\"hn\":\"custom-script.js\"},\"trail\":{\"tl\":5,\"so\":false,\"ok\":false},\"GuideSet\":{\"eids\":[\"BN_EmailDefaultGuideT\",\"BN_EmailTargetGuideT\",\"BN_PopularDevicesT\",\"bn_pdp_similar\",\"BN_AccessoriesGuideT\",\"bn_accessory_guide\",\"BN_SimilarDevices\",\"BN_SimilarDevicesT\",\"bn_pdp_popular\",\"BN_bnTest_AGT\"]},\"inf\":{\"dt\":\"Thu Dec 19 20:19:53 PST 2013\",\"exp\":86400,\"u\":\"ANONYMOUS\",\"cn\":\"attwireless\",\"ve\":\"V1\",\"cc\":\"www\",\"cd\":\"d&g&s\"},\"baynoteGuide\":{\"ok\":true},\"guidePro\":{\"ok\":true}}';
+var userPolicyJSON = '{\"dir\":{\"au\":true},\"inf\":{\"dt\":\"Wed Jan 08 16:37:48 PST 2014\",\"u\":\"6924953668288913951\",\"ve\":\"V1\",\"cd\":\"d&g&s\"}}';
+bnPolicy.registerPolicy(basePolicyJSON, userPolicyJSON);
+

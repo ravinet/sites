@@ -1,0 +1,23 @@
+PHTTP
+18.7.20.70"‘
+ËGET /b?c1=7&c2=6036462&c3=60000&ns__t=1389367284955&ns_c=ISO-8859-1&c8=TV%20Listings%20Guide%2C%20TV%20Ratings%2C%20TV%20News%2C%20TV%20Shows%20-%20Zap2it&c7=http%3A%2F%2Fwww.zap2it.com%2F&c9= HTTP/1.1
+Host: b.scorecardresearch.com
+Connection: keep-alive
+Accept: image/webp,*/*;q=0.8
+vUser-Agent: Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/31.0.1650.63 Safari/537.36
+!Referer: http://www.zap2it.com/
+$Accept-Encoding: gzip,deflate,sdch
+!Accept-Language: en-US,en;q=0.8
+
+*å
+ HTTP/1.1 302 Moved Temporarily
+Content-Length: 0
+çLocation: http://b.scorecardresearch.com/b2?c1=7&c2=6036462&c3=60000&ns__t=1389367284955&ns_c=ISO-8859-1&c8=TV%20Listings%20Guide%2C%20TV%20Ratings%2C%20TV%20News%2C%20TV%20Shows%20-%20Zap2it&c7=http%3A%2F%2Fwww.zap2it.com%2F&c9=
+%Date: Fri, 10 Jan 2014 15:21:11 GMT
+Connection: keep-alive
+}Set-Cookie: UID=abf815b-18.7.20.70-1389367271; expires=Thu, 31-Dec-2015 15:21:11 GMT; path=/; domain=.scorecardresearch.com
+kSet-Cookie: UIDR=1389367271; expires=Thu, 31-Dec-2015 15:21:11 GMT; path=/; domain=.scorecardresearch.com
+Pragma: no-cache
+(Expires: Mon, 01 Jan 1990 00:00:00 GMT
+SCache-Control: private, no-cache, no-cache=Set-Cookie, no-store, proxy-revalidate
+

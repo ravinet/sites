@@ -1,0 +1,25 @@
+PHTTP
+23.0.61.41"æ
+-GET /apps/common/js/airportcode.js HTTP/1.1
+Host: www.aa.com
+Connection: keep-alive
+Accept: */*
+vUser-Agent: Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/31.0.1650.63 Safari/537.36
+(Referer: http://www.aa.com/homePage.do
+$Accept-Encoding: gzip,deflate,sdch
+!Accept-Language: en-US,en;q=0.8
+ˆCookie: v1st=7EA5FF02354CAF63; JSESSIONID=4C0F4AAF1B0090AFE3A5001E623C1AE7; dtCookie=06F4BF3512EFE0A6C157596C94C19D9F|AA.com|1; ROUTEID=.P111A01; homeAirport="wGFH1cxVqs0="; COUNTRY_CODE="UCKRRdXdz9w="; saleCity="wGFH1cxVqs0="; dtPC=5312511_627#_load_; AX42=CT-1
+
+*¤
+HTTP/1.1 200 OK
+Server: Apache-Coyote/1.1
+X-dynaTrace-JS-Agent: true
+Accept-Ranges: bytes
+ETag: W/"1128-1387316480000"
+.Last-Modified: Tue, 17 Dec 2013 21:41:20 GMT
+&Content-Type: application/javascript
+Content-Length: 1128
+%Date: Thu, 09 Jan 2014 01:28:20 GMT
+Connection: keep-alive
+ê
+function launchAirportCode(fieldName,formName,nohref){var modal_window_width;var modal_window_height;var width;var height;var leftdist;var topdist;width=screen.width;height=screen.height;modal_window_width=750;modal_window_height=500;leftdist=Math.round((width-modal_window_width)/2);topdist=Math.round((height-modal_window_height)/2);var newParam="?jspEntry='yes'";if(nohref){var newParam="?nohref='yes';";}eval("document.getElementById('"+formName+"').currentCodeForm.value = fieldName");eval("document.getElementById('"+formName+"').currentCalForm.value = formName");trackEvent("Airport lookup event requested");var codeWin=eval(window.open("/reservation/airportLookup.do"+newParam,formName,"width="+modal_window_width+",height="+modal_window_height+",top="+topdist+",left="+leftdist+",scrollbars=yes,menu=no"));}var formReturn=window.name;function setAirportCode(code){preField=eval("window.opener.document.getElementById('"+formReturn+"').currentCodeForm.value");window.opener.document.getElementById(formReturn+"."+preField).value=code;window.opener.jQuery("[name="+preField+"]").prev("span.value").hide();window.close();}

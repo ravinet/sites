@@ -1,0 +1,21 @@
+PHTTP139.104.188.6"Œ
+™GET /capmon/GetDE?set=j&param=country&param=countryisocode&param=state&param=metro&param=metrocode&param=postcode&param=offset&param=dst&xhr=1 HTTP/1.1
+Host: tredir.go.com
+Connection: keep-alive
+Accept: */*
+vUser-Agent: Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/31.0.1650.63 Safari/537.36
+"Referer: http://www.espn.go.com/
+$Accept-Encoding: gzip,deflate,sdch
+!Accept-Language: en-US,en;q=0.8
+ÄCookie: SWID=77B492A5-D303-41BD-9F09-EE2555F99B85; optimizelySegments=%7B%22310954789%22%3A%22none%22%2C%22311043393%22%3A%22false%22%2C%22311047346%22%3A%22gc%22%2C%22311052307%22%3A%22direct%22%7D; optimizelyEndUserId=oeu1389226768554r0.23969452967867255; optimizelyBuckets=%7B%7D; optimizelyPendingLogEvents=%5B%22n%3Dhttp%253A%252F%252Fwww.espn.go.com%252F%26u%3Doeu1389226768554r0.23969452967867255%26wxhr%3Dtrue%26t%3D1389226768556%26f%3D%22%5D
+
+*˜
+HTTP/1.1 200 OK
+Server: Apache-Coyote/1.1
+%Date: Thu, 09 Jan 2014 00:19:15 GMT
+ Set-Cookie: DE2=dXNhO21hO2NhbWJyaWRnZTticm9hZGJhbmQ7NTs0OzQ7NTA2OzA0Mi4zNjQ7LTA3MS4wODU7ODQwOzIyOzg4OTs2O3VzOw==;Domain=.go.com;Max-Age=10000;Path=/;Version=1
+‡Set-Cookie: DS=bWl0LmVkdTs4MjIxMDE7bWFzc2FjaHVzZXR0cyBpbnN0aXR1dGUgb2YgdGVjaG5vbG9neTs=;Domain=.go.com;Max-Age=10000;Path=/;Version=1
+(Content-Type: application/x-javascript
+Content-Length: 206
+Ð
+var country = "united states"; var countryisocode = "usa"; var state = "massachusetts"; var metro = "boston (manchester)"; var metrocode = "506"; var postcode = "02139"; var offset = "-500"; var dst = "n"; 

@@ -1,0 +1,22 @@
+PHTTP65.52.108.11"Í
+&GET /c.gif?DI=4050&did=1&t= HTTP/1.1
+Host: c1.microsoft.com
+Connection: keep-alive
+TAccept: text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8
+vUser-Agent: Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/31.0.1650.63 Safari/537.36
+qReferer: http://office.microsoft.com/en-us/business/office-365-enterprise-e3-business-software-FX103030346.aspx
+$Accept-Encoding: gzip,deflate,sdch
+!Accept-Language: en-US,en;q=0.8
+
+*¿
+HTTP/1.1 302 Redirect
+>Cache-Control: private, no-cache, proxy-revalidate, no-store
+Pragma: no-cache
+ùLocation: http://c1.atdmt.com/c.gif?DI=4050&did=1&t=&CtsSyncId=704FD90D5E1146C3A7DA7AEE6EC960C7&RedC=c1.microsoft.com&MXFR=18D10CC796D560B73FEA097A92D566DB
+Server: Microsoft-IIS/8.0
+X-Powered-By: ASP.NET
+7P3P: CP="BUS CUR CONo FIN IVDo ONL OUR PHY SAMo TELo"
+ÅSet-Cookie: MUID=18D10CC796D560B73FEA097A92D566DB&TUID=1; domain=.microsoft.com; expires=Sat, 09-Jan-2016 00:59:07 GMT; path=/;
+%Date: Thu, 09 Jan 2014 00:59:06 GMT
+Content-Length: 0
+

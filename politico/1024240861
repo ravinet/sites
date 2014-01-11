@@ -1,0 +1,26 @@
+PHTTP
+18.7.20.70"ö
+JGET /includes/xml/widgetAllBlogs.xml?cachebuster=20140101636001 HTTP/1.1
+Host: www.politico.com
+Connection: keep-alive
+Accept: */*
+"X-Requested-With: XMLHttpRequest
+vUser-Agent: Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/31.0.1650.63 Safari/537.36
+#Referer: http://www.politico.com/
+$Accept-Encoding: gzip,deflate,sdch
+!Accept-Language: en-US,en;q=0.8
+ÖCookie: optimizelySegments=%7B%22536712581%22%3A%22direct%22%2C%22538992278%22%3A%22gc%22%2C%22539001624%22%3A%22none%22%2C%22553840423%22%3A%22false%22%7D; optimizelyEndUserId=oeu1389373068874r0.9293693001382053; optimizelyBuckets=%7B%22554811171%22%3A%220%22%7D; ctopo=; optimizelyPendingLogEvents=%5B%5D; __qca=P0-622512693-1389373070594
+
+*¨
+HTTP/1.1 200 OK
+Nx-amz-id-2: OlGjwtttgA/k40xMJlsJpi0/qqdS5kkoVgeRx++ckilPAD1bhopmNtwsRVwkvJaj
+$x-amz-request-id: 200828A326514FA2
+.Last-Modified: Fri, 10 Jan 2014 16:21:14 GMT
+*ETag: "af5f3c47f1ace1b6f4df6fafc2adcf38"
+Content-Type: text/xml
+Content-Length: 1079
+Server: AmazonS3
+%Date: Fri, 10 Jan 2014 16:57:37 GMT
+Connection: keep-alive
+¹
+<?xml version="1.0" encoding="UTF-8"?><home><inc divid="widgetAllBlogs"><![CDATA[ <div class="widget-header"> <h4>POLITICO Blogs</h4> </div> <div class="widget-content"> <ul class="story-list"> <li class="blog-dylan-byers"> <h5><a href="http://www.politico.com/blogs/media?ml=bl_db">Dylan Byers <b>on Media</b></a></h5> <a href="http://www.politico.com/blogs/media?ml=bl_db"><img width="40" height="40" src="http://www.politico.com/design/widgets/x.gif" alt="Dylan Byers" class="thumbnail" /></a> <h6><a href="http://www.politico.com/blogs/media?ml=bl_db">The year ABC went Disney</a></h6> </li> <li class="blog-josh-gerstein"> <h5><a href="http://www.politico.com/blogs/under-the-radar?ml=bl_jg">Josh Gerstein <b>on the Courts</b></a></h5> <a href="http://www.politico.com/blogs/under-the-radar?ml=bl_jg"><img width="40" height="40" src="http://www.politico.com/design/widgets/x.gif" alt="Josh Gerstein" class="thumbnail" /></a> <h6><a href="http://www.politico.com/blogs/under-the-radar?ml=bl_jg">FBI warns on intel reforms, Snowden</a></h6> </li> </ul> </div> ]]></inc></home>

@@ -1,0 +1,25 @@
+PHTTP23.202.214.35"ß
+‹GET /happy-tweets/ex/followers.json?callback=followersCallback&callback=jQuery17103142009994480759_1389230839252&_=1389230839745 HTTP/1.1
+Host: static2cdn.hubspot.com
+Connection: keep-alive
+Accept: */*
+vUser-Agent: Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/31.0.1650.63 Safari/537.36
+"Referer: http://www.hubspot.com/
+$Accept-Encoding: gzip,deflate,sdch
+!Accept-Language: en-US,en;q=0.8
+œCookie: _ga=GA1.2.1252330966.1389230840; mp_d446a72c79710c1ff563ce3bc715de7f_mixpanel=%7B%22distinct_id%22%3A%20%22143749c577529d-0580961c4-14281008-232800-143749c577633d%22%2C%22%24initial_referrer%22%3A%20%22%24direct%22%2C%22%24initial_referring_domain%22%3A%20%22%24direct%22%7D
+
+*‡
+HTTP/1.1 200 OK
+Nx-amz-id-2: Da0uvCvn+r8Kc0XLpmnU8CMMGADaR3FuzI/T9h04NzaKDMzy8Z0yGBe+OPE8UxFd
+$x-amz-request-id: 00140A25CBEA8AB0
+.Last-Modified: Thu, 09 Jan 2014 01:01:03 GMT
+*ETag: "43781abd658c4cebe97ec7056a779872"
+Accept-Ranges: bytes
+ Content-Type: application/json
+Content-Length: 120
+Server: AmazonS3
+%Date: Thu, 09 Jan 2014 01:27:07 GMT
+Connection: keep-alive
+z
+followersCallback({"twitter":{"followers_count":348743},"facebook":{"likes":619324},"linkedin":{"numFollowers":54170}});

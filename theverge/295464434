@@ -1,0 +1,69 @@
+PHTTP173.241.242.12"¨
+πGET /w/1.0/acj?mi=c4f67c6a-7dea-4a49-6e22-8b516d171fc5&mn=1&mc=1&cc=1&ai=f64363df-c912-47df-5278-27eb25d2e3a1&o=355614591&callback=OX_355614591&ju=http%3A//www.theverge.com/&jr=&tid=16&pgid=9986&auid=252368%2C252368%2C252370%2C252370%2C463319%2C496834%2C0%2C299737%2C299737%2C321091%2C364262%2C364262&c.browser_width=large-medium&c.device_type=desktop&c.network=verge&res=1920x1200x24&plg=swf%2Cqt%2Cwmp%2Cshk%2Cpm&ch=UTF-8&tz=300 HTTP/1.1
+Host: ox-d.sbnation.com
+Connection: keep-alive
+Accept: */*
+vUser-Agent: Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/31.0.1650.63 Safari/537.36
+#Referer: http://www.theverge.com/
+$Accept-Encoding: gzip,deflate,sdch
+!Accept-Language: en-US,en;q=0.8
+@Cookie: OX_u=69446d29-558c-7fbd-ef4a-664ca244ef52_a_1390442235
+
+*øC
+HTTP/1.1 200 OK
+Vary: Accept
+êSet-Cookie: OX_u=f5c44a52-49df-7d71-5f12-ba6458262bf0_m_1390442235; Version=1; Expires=Fri, 09-Jan-2015 01:57:15 GMT; Max-Age=31536000; Path=/
+CServer: MochiWeb/1.1 WebMachine/1.10.0 (never breaks eye contact)
+Pragma: no-cache
+#P3P: CP="CUR ADM OUR NOR STA NID"
+(Expires: Mon, 26 Jul 1997 05:00:00 GMT
+%Date: Thu, 09 Jan 2014 01:57:15 GMT
+ Content-Type: application/json
+Content-Length: 8140
+-Cache-Control: private, max-age=0, no-cache
+Œ?
+OX_355614591({
+  "ads":{
+    "medium":"w",
+    "record_tmpl":"http://ox-d.sbnation.com/{medium}/1.0/{rtype}?ts={txn_state}",
+    "pixels":"http://us-u.openx.net/w/1.0/pd?plm=5&ph=0238cbd0c099a74a0f401d17ffde973b8e941e1d",
+    "adunits" : [
+      {
+        "auid":"96674",
+        "pgid":"9986",
+        "chain":[
+          {
+            "is_fallback":0,
+            
+            "ad_id":"1626477",
+            "width":"300",
+            "height":"250",
+            "html":"<SCRIPT language='JavaScript1.1' SRC=\"http://ad.doubleclick.net/adj/N7657.138033.SBNATION.COM/B7914361.9;sz=300x250;click1=http://ox-d.sbnation.com/w/1.0/rc?ts=1fHNpZD05MjMxfHJhaWQ9MTJlZDc3MzEtYTY4Mi00MmIxLThhMmMtYjRkNzA0NDE3YTY2fGF1aWQ9OTY2NzR8dXI9WUZkcUVCUmd0Unxhcz0zMDB4MjUwfHBpZD05OTg2fGFpZD0xNjI2NDc3fHB1Yj04OTQxfGxpZD05NTI4MTl8YXVtPURNSUQuV0VCfHU9MXx0PTV8cmlkPWEzZWRlNWM3LTQyN2QtNDMzMC04ZTQxLTY0ZDczYjk1NThiN3xvaWQ9MjY3NDE2fGJtPUJVWUlORy5HVUFSQU5URUVEVk9MVU1FR09BTHxwPTI1MDAwfHBjPVVTRHxhYz1VU0R8cG09UFJJQ0lORy5DUE18cnQ9MTM4OTIzMjYzNXxwcj0yNTAwMHxhZHY9NDQ5MA&r=;ord=YFdqEBRgtR?\">\n</SCRIPT>\n<NOSCRIPT>\n<a href=\"http://ox-d.sbnation.com/w/1.0/rc?ts=1fHNpZD05MjMxfHJhaWQ9MTJlZDc3MzEtYTY4Mi00MmIxLThhMmMtYjRkNzA0NDE3YTY2fGF1aWQ9OTY2NzR8dXI9WUZkcUVCUmd0Unxhcz0zMDB4MjUwfHBpZD05OTg2fGFpZD0xNjI2NDc3fHB1Yj04OTQxfGxpZD05NTI4MTl8YXVtPURNSUQuV0VCfHU9MXx0PTV8cmlkPWEzZWRlNWM3LTQyN2QtNDMzMC04ZTQxLTY0ZDczYjk1NThiN3xvaWQ9MjY3NDE2fGJtPUJVWUlORy5HVUFSQU5URUVEVk9MVU1FR09BTHxwPTI1MDAwfHBjPVVTRHxhYz1VU0R8cG09UFJJQ0lORy5DUE18cnQ9MTM4OTIzMjYzNXxwcj0yNTAwMHxhZHY9NDQ5MA&r=http://ad.doubleclick.net/jump/N7657.138033.SBNATION.COM/B7914361.9;sz=300x250;ord=YFdqEBRgtR?\">\n<IMG SRC=\"http://ad.doubleclick.net/ad/N7657.138033.SBNATION.COM/B7914361.9;sz=300x250;ord=YFdqEBRgtR?\" BORDER=0 WIDTH=300 HEIGHT=250 ALT=\"Advertisement\"></A>\n</NOSCRIPT>\n",
+            "target":"_blank",
+            "ts":"1fHNpZD05MjMxfHJhaWQ9MTJlZDc3MzEtYTY4Mi00MmIxLThhMmMtYjRkNzA0NDE3YTY2fGF1aWQ9OTY2NzR8dXI9WUZkcUVCUmd0Unxhcz0zMDB4MjUwfHBpZD05OTg2fGFpZD0xNjI2NDc3fHB1Yj04OTQxfGxpZD05NTI4MTl8YXVtPURNSUQuV0VCfHU9MXx0PTV8cmlkPWEzZWRlNWM3LTQyN2QtNDMzMC04ZTQxLTY0ZDczYjk1NThiN3xvaWQ9MjY3NDE2fGJtPUJVWUlORy5HVUFSQU5URUVEVk9MVU1FR09BTHxwPTI1MDAwfHBjPVVTRHxhYz1VU0R8cG09UFJJQ0lORy5DUE18cnQ9MTM4OTIzMjYzNXxwcj0yNTAwMHxhZHY9NDQ5MA",
+            "type":"thirdparty",
+            "ad_url":"<SCRIPT language='JavaScript1.1' SRC=\"http://ad.doubleclick.net/adj/N7657.138033.SBNATION.COM/B7914361.9;sz=300x250;click1=http://ox-d.sbnation.com/w/1.0/rc?ts=1fHNpZD05MjMxfHJhaWQ9MTJlZDc3MzEtYTY4Mi00MmIxLThhMmMtYjRkNzA0NDE3YTY2fGF1aWQ9OTY2NzR8dXI9WUZkcUVCUmd0Unxhcz0zMDB4MjUwfHBpZD05OTg2fGFpZD0xNjI2NDc3fHB1Yj04OTQxfGxpZD05NTI4MTl8YXVtPURNSUQuV0VCfHU9MXx0PTV8cmlkPWEzZWRlNWM3LTQyN2QtNDMzMC04ZTQxLTY0ZDczYjk1NThiN3xvaWQ9MjY3NDE2fGJtPUJVWUlORy5HVUFSQU5URUVEVk9MVU1FR09BTHxwPTI1MDAwfHBjPVVTRHxhYz1VU0R8cG09UFJJQ0lORy5DUE18cnQ9MTM4OTIzMjYzNXxwcj0yNTAwMHxhZHY9NDQ5MA&r=;ord=YFdqEBRgtR?\">\n</SCRIPT>\n<NOSCRIPT>\n<a href=\"http://ox-d.sbnation.com/w/1.0/rc?ts=1fHNpZD05MjMxfHJhaWQ9MTJlZDc3MzEtYTY4Mi00MmIxLThhMmMtYjRkNzA0NDE3YTY2fGF1aWQ9OTY2NzR8dXI9WUZkcUVCUmd0Unxhcz0zMDB4MjUwfHBpZD05OTg2fGFpZD0xNjI2NDc3fHB1Yj04OTQxfGxpZD05NTI4MTl8YXVtPURNSUQuV0VCfHU9MXx0PTV8cmlkPWEzZWRlNWM3LTQyN2QtNDMzMC04ZTQxLTY0ZDczYjk1NThiN3xvaWQ9MjY3NDE2fGJtPUJVWUlORy5HVUFSQU5URUVEVk9MVU1FR09BTHxwPTI1MDAwfHBjPVVTRHxhYz1VU0R8cG09UFJJQ0lORy5DUE18cnQ9MTM4OTIzMjYzNXxwcj0yNTAwMHxhZHY9NDQ5MA&r=http://ad.doubleclick.net/jump/N7657.138033.SBNATION.COM/B7914361.9;sz=300x250;ord=YFdqEBRgtR?\">\n<IMG SRC=\"http://ad.doubleclick.net/ad/N7657.138033.SBNATION.COM/B7914361.9;sz=300x250;ord=YFdqEBRgtR?\" BORDER=0 WIDTH=300 HEIGHT=250 ALT=\"Advertisement\"></A>\n</NOSCRIPT>\n"
+          }
+        ]
+      },
+      {
+        "auid":"277814",
+        "pgid":"9986",
+        "chain":[
+          {
+            "is_fallback":0,
+            
+            "ad_id":"1614721",
+            "width":"300",
+            "height":"250",
+            "html":"<SCRIPT language='JavaScript1.1' SRC=\"http://ad.doubleclick.net/adj/N3016.896837.THEVERGE.COM/B7968913.19;sz=300x250;click1=http://ox-d.sbnation.com/w/1.0/rc?ts=1fHNpZD05MjMxfHJhaWQ9MTJlZDc3MzEtYTY4Mi00MmIxLThhMmMtYjRkNzA0NDE3YTY2fGF1aWQ9Mjc3ODE0fHVyPUdoV3lXR28yVUl8YXM9MzAweDI1MHxwaWQ9OTk4NnxhaWQ9MTYxNDcyMXxwdWI9ODk0MXxsaWQ9OTQ1Mzk5fGF1bT1ETUlELldFQnx1PTF8dD01fHJpZD1lYWQyYWIyYi0wZTE3LTQ0YjgtODVkMy1lMjA0Mzc1Y2VkOGJ8b2lkPTI2MjcwNnxibT1CVVlJTkcuR1VBUkFOVEVFRFZPTFVNRUdPQUx8cD0yNTAwMHxwYz1VU0R8YWM9VVNEfHBtPVBSSUNJTkcuQ1BNfHJ0PTEzODkyMzI2MzV8cHI9MjUwMDB8YWR2PTIxMDY3&r=;ord=GhWyWGo2UI?\">\n\n</SCRIPT>\n\n<NOSCRIPT>\n\n<a href=\"http://ox-d.sbnation.com/w/1.0/rc?ts=1fHNpZD05MjMxfHJhaWQ9MTJlZDc3MzEtYTY4Mi00MmIxLThhMmMtYjRkNzA0NDE3YTY2fGF1aWQ9Mjc3ODE0fHVyPUdoV3lXR28yVUl8YXM9MzAweDI1MHxwaWQ9OTk4NnxhaWQ9MTYxNDcyMXxwdWI9ODk0MXxsaWQ9OTQ1Mzk5fGF1bT1ETUlELldFQnx1PTF8dD01fHJpZD1lYWQyYWIyYi0wZTE3LTQ0YjgtODVkMy1lMjA0Mzc1Y2VkOGJ8b2lkPTI2MjcwNnxibT1CVVlJTkcuR1VBUkFOVEVFRFZPTFVNRUdPQUx8cD0yNTAwMHxwYz1VU0R8YWM9VVNEfHBtPVBSSUNJTkcuQ1BNfHJ0PTEzODkyMzI2MzV8cHI9MjUwMDB8YWR2PTIxMDY3&r=http://ad.doubleclick.net/jump/N3016.896837.THEVERGE.COM/B7968913.19;sz=300x250;ord=GhWyWGo2UI?\">\n\n<IMG SRC=\"http://ad.doubleclick.net/ad/N3016.896837.THEVERGE.COM/B7968913.19;sz=300x250;ord=GhWyWGo2UI?\" BORDER=0 WIDTH=300 HEIGHT=250 ALT=\"Advertisement\"></A>\n\n</NOSCRIPT>\n<noscript class=\"MOAT-voxmedia4590538913?moatClientLevel1=21067&amp;moatClientLevel2=262706&amp;moatClientLevel3=945399&amp;moatClientLevel4=1614721&amp;moatClientSlicer1=8941&amp;moatClientSlicer2=277814\"></noscript>\n<script src=\"http://js.moatads.com/voxmedia4590538913/moatad.js#moatClientLevel1=21067&moatClientLevel2=262706&moatClientLevel3=945399&moatClientLevel4=1614721&moatClientSlicer1=8941&moatClientSlicer2=277814\" type=\"text/javascript\"></script>",
+            "target":"_blank",
+            "ts":"1fHNpZD05MjMxfHJhaWQ9MTJlZDc3MzEtYTY4Mi00MmIxLThhMmMtYjRkNzA0NDE3YTY2fGF1aWQ9Mjc3ODE0fHVyPUdoV3lXR28yVUl8YXM9MzAweDI1MHxwaWQ9OTk4NnxhaWQ9MTYxNDcyMXxwdWI9ODk0MXxsaWQ9OTQ1Mzk5fGF1bT1ETUlELldFQnx1PTF8dD01fHJpZD1lYWQyYWIyYi0wZTE3LTQ0YjgtODVkMy1lMjA0Mzc1Y2VkOGJ8b2lkPTI2MjcwNnxibT1CVVlJTkcuR1VBUkFOVEVFRFZPTFVNRUdPQUx8cD0yNTAwMHxwYz1VU0R8YWM9VVNEfHBtPVBSSUNJTkcuQ1BNfHJ0PTEzODkyMzI2MzV8cHI9MjUwMDB8YWR2PTIxMDY3",
+            "type":"thirdparty",
+            "ad_url":"<SCRIPT language='JavaScript1.1' SRC=\"http://ad.doubleclick.net/adj/N3016.896837.THEVERGE.COM/B7968913.19;sz=300x250;click1=http://ox-d.sbnation.com/w/1.0/rc?ts=1fHNpZD05MjMxfHJhaWQ9MTJlZDc3MzEtYTY4Mi00MmIxLThhMmMtYjRkNzA0NDE3YTY2fGF1aWQ9Mjc3ODE0fHVyPUdoV3lXR28yVUl8YXM9MzAweDI1MHxwaWQ9OTk4NnxhaWQ9MTYxNDcyMXxwdWI9ODk0MXxsaWQ9OTQ1Mzk5fGF1bT1ETUlELldFQnx1PTF8dD01fHJpZD1lYWQyYWIyYi0wZTE3LTQ0YjgtODVkMy1lMjA0Mzc1Y2VkOGJ8b2lkPTI2MjcwNnxibT1CVVlJTkcuR1VBUkFOVEVFRFZPTFVNRUdPQUx8cD0yNTAwMHxwYz1VU0R8YWM9VVNEfHBtPVBSSUNJTkcuQ1BNfHJ0PTEzODkyMzI2MzV8cHI9MjUwMDB8YWR2PTIxMDY3&r=;ord=GhWyWGo2UI?\">\n\n</SCRIPT>\n\n<NOSCRIPT>\n\n<a href=\"http://ox-d.sbnation.com/w/1.0/rc?ts=1fHNpZD05MjMxfHJhaWQ9MTJlZDc3MzEtYTY4Mi00MmIxLThhMmMtYjRkNzA0NDE3YTY2fGF1aWQ9Mjc3ODE0fHVyPUdoV3lXR28yVUl8YXM9MzAweDI1MHxwaWQ9OTk4NnxhaWQ9MTYxNDcyMXxwdWI9ODk0MXxsaWQ9OTQ1Mzk5fGF1bT1ETUlELldFQnx1PTF8dD01fHJpZD1lYWQyYWIyYi0wZTE3LTQ0YjgtODVkMy1lMjA0Mzc1Y2VkOGJ8b2lkPTI2MjcwNnxibT1CVVlJTkcuR1VBUkFOVEVFRFZPTFVNRUdPQUx8cD0yNTAwMHxwYz1VU0R8YWM9VVNEfHBtPVBSSUNJTkcuQ1BNfHJ0PTEzODkyMzI2MzV8cHI9MjUwMDB8YWR2PTIxMDY3&r=http://ad.doubleclick.net/jump/N3016.896837.THEVERGE.COM/B7968913.19;sz=300x250;ord=GhWyWGo2UI?\">\n\n<IMG SRC=\"http://ad.doubleclick.net/ad/N3016.896837.THEVERGE.COM/B7968913.19;sz=300x250;ord=GhWyWGo2UI?\" BORDER=0 WIDTH=300 HEIGHT=250 ALT=\"Advertisement\"></A>\n\n</NOSCRIPT>\n<noscript class=\"MOAT-voxmedia4590538913?moatClientLevel1=21067&amp;moatClientLevel2=262706&amp;moatClientLevel3=945399&amp;moatClientLevel4=1614721&amp;moatClientSlicer1=8941&amp;moatClientSlicer2=277814\"></noscript>\n<script src=\"http://js.moatads.com/voxmedia4590538913/moatad.js#moatClientLevel1=21067&moatClientLevel2=262706&moatClientLevel3=945399&moatClientLevel4=1614721&moatClientSlicer1=8941&moatClientSlicer2=277814\" type=\"text/javascript\"></script>"
+          }
+        ]
+      }
+    ]
+  }
+});

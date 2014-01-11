@@ -1,0 +1,51 @@
+PHTTP68.71.216.172"ð
+`GET /espn3/auth/watchespn/userData?format=xml&rand=1389226771128&key=ZXNwbi5nby5jb20= HTTP/1.1
+Host: broadband.espn.go.com
+Connection: keep-alive
+vUser-Agent: Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/31.0.1650.63 Safari/537.36
+Accept: */*
+"Referer: http://www.espn.go.com/
+$Accept-Encoding: gzip,deflate,sdch
+!Accept-Language: en-US,en;q=0.8
+ÚCookie: SWID=77B492A5-D303-41BD-9F09-EE2555F99B85; optimizelySegments=%7B%22310954789%22%3A%22none%22%2C%22311043393%22%3A%22false%22%2C%22311047346%22%3A%22gc%22%2C%22311052307%22%3A%22direct%22%7D; optimizelyEndUserId=oeu1389226768554r0.23969452967867255; optimizelyBuckets=%7B%7D; userAB=5; mbox=check#true#1389226829|session#1389226768633-19074#1389228629|level#20#1391818769|disable#limited%20by%20traffic#1389230369; optimizelyPendingLogEvents=%5B%5D; broadbandAccess=espn3-true%2Cnetworks-false; DE2=dXNhO21hO2NhbWJyaWRnZTticm9hZGJhbmQ7NTs0OzQ7NTA2OzA0Mi4zNjQ7LTA3MS4wODU7ODQwOzIyOzg4OTs2O3VzOw==; DS=bWl0LmVkdTs4MjIxMDE7bWFzc2FjaHVzZXR0cyBpbnN0aXR1dGUgb2YgdGVjaG5vbG9neTs=; CRBLM=CBLM-001:; CRBLM_LAST_UPDATE=1389226757:77B492A5-D303-41BD-9F09-EE2555F99B85; s_pers=%20s_c24%3D1389226769893%7C1483834769893%3B%20s_c24_s%3DFirst%2520Visit%7C1389228569893%3B%20s_gpv_pn%3Despn%253Ahome%253Afrontpage%7C1389228569896%3B; grvinsights=6f8545b8dd018255d90bae9437c246fa; s_vi=[CS]v1|2966F58285148399-400001A7E0008F34[CE]; pluginCheck=true; s_sess=%20s_cc%3Dtrue%3B%20s_omni_lid%3D%3B%20s_sq%3D%3B%20s_ppv%3D44%3B
+
+*î
+HTTP/1.1 200 OK
+Cache-Control: no-cache
+Connection: Keep-Alive
+Content-Length: 863
+&Content-Type: text/xml;charset=UTF-8
+Server: barista/3.3.6
+hSet-Cookie: espnAffiliate=college_auto; expires=Thu, 09-Jan-2014 16:59:20 GMT; path=/; domain=.go.com;
+á
+<?xml version="1.0" encoding="UTF-8"?>
+
+	<user>
+		<affiliate>
+			<name>college</name>
+			<imageUrl><![CDATA[http://a.espncdn.com/espn360/images/affiliates/null]]></imageUrl>
+			<websiteUrl><![CDATA[null]]></websiteUrl>
+			<localAdAccountId>null</localAdAccountId>
+			<filterESPN3>true</filterESPN3>
+		</affiliate>
+
+		<location>
+			<ip>128.30.76.55</ip>
+			<country>united states</country>
+			<city>cambridge</city>
+			<state>massachusetts</state>
+			<continent>na</continent>
+			<dma>7</dma>
+			<zipCode></zipCode>
+			<domain>mit.edu</domain>
+			<timeZone>America/New_York</timeZone>
+			<locationAuthorized>true</locationAuthorized>
+		</location>
+
+		<personalization loginStatus="Anonymous Guest" swid="{77B492A5-D303-41BD-9F09-EE2555F99B85}">
+			<username></username>
+			<affinity></affinity>
+		</personalization>
+		<domainAllowed>true</domainAllowed>
+	</user>
+	

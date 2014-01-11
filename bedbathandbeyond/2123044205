@@ -1,0 +1,119 @@
+PHTTP54.230.53.164"ù
+/GET /scripts/client/64/bannerBBB.css HTTP/1.1
+Host: edge.liveclicker.net
+Connection: keep-alive
+Accept: text/css,*/*;q=0.1
+vUser-Agent: Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/31.0.1650.63 Safari/537.36
++Referer: http://www.bedbathandbeyond.com/
+$Accept-Encoding: gzip,deflate,sdch
+!Accept-Language: en-US,en;q=0.8
+
+*½
+HTTP/1.1 200 OK
+Content-Type: text/css
+Content-Length: 2455
+Connection: keep-alive
+%Date: Mon, 04 Nov 2013 04:50:27 GMT
+!x-amz-meta-s3fox-filesize: 2455
+.x-amz-meta-s3fox-modifiedtime: 1321465892321
+.Last-Modified: Wed, 16 Nov 2011 18:00:35 GMT
+*ETag: "d3fc757b0fb473dcbfc70b74efe94d90"
+Accept-Ranges: bytes
+Server: AmazonS3
+Age: 73560
+X-Cache: Hit from cloudfront
+GVia: 1.1 415cd8a2a93f09d277a7045267557d8f.cloudfront.net (CloudFront)
+GX-Amz-Cf-Id: qEpUduYk8NhQUC0DVxdCn06tXacNObeXkQFaTyR0HHX5XaI1Oi6F1A==
+™
+            .lcplaylist {
+                float:left;
+                height:320px;
+                left:0px;
+                overflow-x:hidden;
+                overflow-y:auto;
+                position:relative;
+                top:40px;
+                width:460px;
+            }
+
+            .widgetblock {
+                cursor:pointer;
+                padding:8px;
+                width:430px;
+                height:90px;
+                margin-bottom:0px;
+            }
+
+
+
+            .thumbnail {
+                float:left;
+                height:90px;
+                position:relative;
+                width:120px;
+                left:0px !important;
+                left:-2px;
+            }
+
+            img.thumbnailimg {
+                width:60px;
+                height:45px;
+            }
+
+
+
+            .videoinformation {
+                float:left;
+                position:relative;
+                text-align:left;
+                top:0;
+                left:10px;
+                width:310px;
+            }
+
+            .videometa {
+                float: left;
+                left: 0px;
+                font-family: Arial,Helvetica,sans-serif;
+                font-size: 12px;
+                color:#666666;
+                position: relative;
+                text-align: justify;
+                top: 8px;
+                width: 300px;
+            }
+
+
+            a.widgetlink {
+                text-decoration:none;
+                color:#5460A0;
+                font-family: Arial,Helvetica,sans-serif;
+                font-size: 12px;
+                font-weight:bold;
+                position: relative;
+                top: 10%;
+                text-align: left;
+            }
+
+
+            .lcplaybtn {
+                -moz-background-clip:border;
+                -moz-background-inline-policy:continuous;
+                -moz-background-origin:padding;
+                background:transparent url(http://liveclicker.net/vms/images/PlayButton.png) no-repeat scroll 0 0;
+                height:38px;
+                left:42px;
+                position:absolute;
+                top:29px;
+                width:37px;
+                z-index:100;
+            }
+
+
+
+            .thumbnailcontainer {
+                float:left;
+                height:95px;
+                position:relative;
+                width:120px;
+            }

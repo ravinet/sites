@@ -1,0 +1,122 @@
+PHTTP129.15.96.11"Ù
+#GET /css/socialmedia.css HTTP/1.1
+Host: www.noaa.gov
+Connection: keep-alive
+Accept: text/css,*/*;q=0.1
+vUser-Agent: Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/31.0.1650.63 Safari/537.36
+Referer: http://www.noaa.gov/
+$Accept-Encoding: gzip,deflate,sdch
+!Accept-Language: en-US,en;q=0.8
+
+*ø
+HTTP/1.0 200 OK
+%Date: Thu, 09 Jan 2014 00:53:52 GMT
+Server: Apache
+.Last-Modified: Wed, 18 Jan 2012 19:43:27 GMT
+$ETag: "e70dcfb0-6f9-4b6d2a952b5c0"
+Accept-Ranges: bytes
+Content-Length: 1785
+Cache-Control: max-age=3600
+(Expires: Thu, 09 Jan 2014 01:53:52 GMT
+Content-Type: text/css
+Age: 1462
+Via: 1.0 c7.w3.woc (squid)
+Connection: keep-alive
+û
+/** Features **/
+	#socialmedia { 
+		width: 100%;
+		margin-top: 10px;
+	}
+	#socialmediaItems {
+		position: relative;
+		width: auto;
+		/* height: 109px; */
+		list-style-type: none;
+		background: url('/images/back_stories.png') repeat-x;
+		text-align:center;
+		margin: 0px;
+		padding: 4px;
+		border-top:1px solid  #AEDBF4;
+		border-left: 1px solid #E3F6FF;
+		border-right: 1px solid #E3F6FF; 
+	}
+	
+	#socialmediaItems li {
+		font-family: Arial, Helvetica, sans-serif;
+		font-size: .9em;
+		/* border-bottom:  1px dotted #dddddd; */
+		margin-bottom: 4px;
+		padding: 8px;
+		display:inline;
+	}
+	
+	#socialmediaItems li img {
+		margin:4px 0px;
+	}
+	
+	li#smallSocialMediaTop, li#smallSocialMediaBottom {
+		width: 114px;
+		height: 44px;
+		padding-left: 36px;
+		background-position: left center;
+		background-repeat: no-repeat;
+	}
+	
+	li#smallSocialMediaFullWidth {
+		width: auto;
+		padding: 10px 10px 10px 36px;
+		display: block;
+		background-position: left center;
+		background-repeat: no-repeat;
+	}
+	#socialmediaItems li  a:link {
+		font-weight: bold;
+		color: #FF7F00;
+	}
+
+	#socialmediaItems li a:visited {
+		font-weight: bold;
+		color: #FF7F00;
+	}
+	
+	#socialmediaItems li a:hover  {  
+		color: #FFBF00;
+	}
+	#socialmediaItems li { 
+		background-repeat: no-repeat;
+		line-height: 1.2em;
+	}
+	#largeSocialMedia {
+		position: absolute;
+		top: 4px;
+		right: 4px;
+		height: 104px;
+		width: 112px;
+	}
+	#largeSocialMedia img { 
+		float: right;
+	}
+
+	#socialmediaViewAll {
+		width: auto;
+		list-style-type: none;
+		text-align:center;
+		margin: 0px;
+		padding: 8px 4px;
+		border:1px solid  #E3F6FF;
+	}
+	
+	#socialmediaViewAll a:link {
+		font-weight: bold;
+		color: #0058a6;
+	}
+
+	#socialmediaViewAll a:visited {
+		font-weight: bold;
+		color: #0058a6;
+	}
+	
+	#socialmediaViewAll a:hover  {  
+		color: #FF7F00;
+	}

@@ -1,0 +1,19 @@
+PHTTP66.117.23.104"Ÿ
+²GET /m2/adobe/sc/standard?mboxHost=www.adobe.com&mboxSession=1389227418322-215795&mboxPage=1389227418322-215795&screenHeight=1200&screenWidth=1920&browserWidth=937&browserHeight=1051&browserTimeOffset=-300&colorDepth=24&mboxCount=5&mbox=SiteCatalyst%3A%20event&mboxId=2&mboxTime=1389209420682&charSet=UTF-8&visitorNamespace=adobecorp&pageName=adobe.com&channel=Adobe.com%20Homepage&events=event19&linkName=Genesis%3A%20Demandbase%20event&linkType=o&resolution=1920x1200&javascriptVersion=1.6&javaEnabled=Y&cookiesEnabled=Y&pe=lnk_o&pev2=Genesis%253A%2520Demandbase%2520event&trackDownloadLinks=true&trackExternalLinks=true&trackInlineStats=true&linkLeaveQueryString=false&linkDownloadFileTypes=exe%2Czip%2Cwav%2Cmp3%2Cmov%2Cmpg%2Cavi%2Cdoc%2Cpdf%2Cxls%2Chqx%2Cdmg%2Cmxp%2Cbin%2Cjar%2Cadpp%2Cair%2Cmsi%2Czxp%2Cflv%2Cxml%2Ccptx&linkInternalFilters=javascript%3A%2Cadobe.%2Cadobesystems.%2Cmacromedia.%2Cacrobat.com%2C..%2F&linkTrackVars=eVar56%2CeVar50%2CeVar51%2CeVar52%2CeVar53&lnk=true&prop1=Adobe.com%20Home%20Page%20Template&prop3=www.adobe.com&prop4=en_us&prop5=en_us%3Aadobe.com%3Acom&prop12=adobe.com&prop14=com&eVar16=adobe.com&eVar18=New&prop20=D%3Doid&prop21=D%3Dpid&eVar22=Wednesday%20-%204%3A00PM&eVar28=www.adobe.com%2F&eVar37=D%3Doid&eVar38=D%3Dpid&eVar50=MIT&eVar51=Education%3A%3AUniversity&eVar52=Enterprise&eVar53=%241B%20-%20%242.5B&eVar56=4131&mboxURL=http%3A%2F%2Fwww.adobe.com%2F&mboxReferrer=&mboxVersion=40&scPluginVersion=1 HTTP/1.1
+Host: adobe.tt.omtrdc.net
+Connection: keep-alive
+Accept: */*
+vUser-Agent: Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/31.0.1650.63 Safari/537.36
+ Referer: http://www.adobe.com/
+$Accept-Encoding: gzip,deflate,sdch
+!Accept-Language: en-US,en;q=0.8
+;Cookie: s_vi=[CS]v1|2966F6C785078ED2-6000010E000007E2[CE]
+
+*‚
+HTTP/1.1 200 OK
+2Content-Type: text/javascript;charset=ISO-8859-1
+Content-Length: 223
+%Date: Thu, 09 Jan 2014 00:30:08 GMT
+Server: Test & Target
+á
+if (typeof(mboxFactories) !== 'undefined') {mboxFactories.get('default').getPCId().forceId("1389227418322-215795.25_04");mboxFactories.get('default').get('SiteCatalyst: event', 2).setOffer(new mboxOfferDefault()).loaded();}

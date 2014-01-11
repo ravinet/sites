@@ -1,0 +1,162 @@
+PHTTP
+23.74.28.9"®
+,GET /css/HomepageCustomizable.css HTTP/1.1
+Host: extras.sfgate.com
+Connection: keep-alive
+Accept: text/css,*/*;q=0.1
+vUser-Agent: Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/31.0.1650.63 Safari/537.36
+!Referer: http://www.sfgate.com/
+$Accept-Encoding: gzip,deflate,sdch
+!Accept-Language: en-US,en;q=0.8
+ÂCookie: s_pers=%20s_fid%3D608D7884A543F651-3932BD060B2B8079%7C1452443660625%3B%20s_nr%3D1389371660626-New%7C1391963660626%3B; s_sess=%20s_cc%3Dtrue%3B%20SC_LINKS%3D%3B%20s_sq%3D%3B; __utma=31427709.992118527.1389371661.1389371661.1389371661.1; __utmb=31427709.1.10.1389371661; __utmc=31427709; __utmz=31427709.1389371661.1.1.utmcsr=(direct)|utmccn=(direct)|utmcmd=(none); __gads=ID=d6f58018bf36b34a:T=1389371647:S=ALNI_MYYJWnUre17OZNmpzMrU8fj3RA2JQ
+
+*·
+HTTP/1.1 200 OK
+ Server: Apache/2.2.3 (Red Hat)
+.Last-Modified: Mon, 06 Aug 2012 21:31:04 GMT
+"ETag: "138b0c-b4d-4c69f984b1600"
+Accept-Ranges: bytes
+Content-Length: 2893
+Content-Type: text/css
+%Cache-Control: private, max-age=300
+(Expires: Fri, 10 Jan 2014 16:39:09 GMT
+%Date: Fri, 10 Jan 2014 16:34:09 GMT
+Connection: keep-alive
+Ï
+/* /css/home/customize.css */
+.sfg_hp_custom p,
+.sfg_hp_custom ul,
+.sfg_hp_custom li,
+.sfg_hp_custom form {
+margin: 0;
+padding: 0;
+}
+
+.sfg_hp_custom {
+clear: both;
+font: 11px Verdana,sans-serif;
+}
+
+.sfg_hp_custom {
+background: #d3d4a6 url('http://www.sfgate.com/graphics/home/customize/sfg_hp_custom_corner1.gif') no-repeat scroll left top;
+height:1%;
+}
+
+.sfg_hp_custom .corner2 {
+background: transparent url('http://www.sfgate.com/graphics/home/customize/sfg_hp_custom_corner2.gif') no-repeat scroll right top;
+}
+
+.sfg_hp_custom .corner3 {
+background: transparent url('http://www.sfgate.com/graphics/home/customize/sfg_hp_custom_corner3.gif') no-repeat scroll right bottom;
+}
+
+.sfg_hp_custom .corner4 {
+background: transparent url('http://www.sfgate.com/graphics/home/customize/sfg_hp_custom_corner4.gif') no-repeat scroll left bottom;
+padding: 6px 7px 6px 11px;
+}
+
+.sfg_hp_custom .content_controler img {
+border: 0;
+margin-left: 1px;
+}
+
+.sfg_hp_custom div.console {
+width: 609px;
+}
+
+.sfg_hp_custom ul.your_content,
+.sfg_hp_custom div.handle,
+.sfg_hp_custom img.your_content,
+.sfg_hp_custom div.console_form {
+display: inline;
+float: left;
+}
+
+.sfg_hp_custom ul.your_content {
+list-style: none;
+width: 245px;
+border: 1px solid #a8aa89;
+margin: 7px 0 5px 0;
+background: #e2e5c6 url('http://www.sfgate.com/graphics/home/customize/dotted_tile.gif');
+}
+
+.sfg_hp_custom li.your_content {
+width:  232px;
+height: 20px;
+padding: 1px 0 1px 13px;
+text-indent: none;
+margin-bottom: 1px;
+color: #111;
+cursor: move;
+}
+
+* html             .sfg_hp_custom li.your_content { margin-left: -1.42em; }
+*:first-child+html .sfg_hp_custom li.your_content { margin-left: -1.42em; }
+
+.sfg_hp_custom li.firstrow img.moveup,
+.sfg_hp_custom li.lastrow img.movedown { visibility: hidden; }
+.sfg_hp_custom li.lastrow { margin-bottom: 0; }
+
+.sfg_hp_custom li.alt {
+padding: 0 0 0 13px;
+border-top: 1px solid #a8aa89;
+background: #fff;
+color: #900;
+border-bottom: 1px solid #a8aa89;
+filter:alpha(opacity=85);
+-moz-opacity:0.85;
+-khtml-opacity: 0.85;
+opacity: 0.85;
+}
+
+.sfg_hp_custom div.handle {
+width: 170px;
+height: 20px;
+line-height: 20px;
+padding-left: 17px;
+}
+
+.sfg_hp_custom img.your_content {
+vertical-align: bottom;
+cursor: pointer;
+margin-right: 1px;
+}
+
+.sfg_hp_custom div.console_form {
+width: 330px;
+background: #d3d4a6;
+padding: 11px 0 0 20px;
+}
+
+.sfg_hp_custom div.console_form p {
+line-height: 16px;
+margin-bottom: 12px;
+}
+
+.sfg_hp_custom div.console_form  #reorder_content_form {
+padding: 3px 0 29px 0;
+}
+
+.sfg_hp_custom div.console_form  #sfg_img_save {
+margin-right: 10px;
+}
+#your_content .up_clear {
+    display:none;
+}
+#your_content .down_clear {
+    display:none;
+}
+#your_content .top .up {
+    display:none;
+}
+#your_content .top .up_clear {
+    display:block;
+}
+#your_content .bottom .down {
+    display:none;
+}
+#your_content .bottom .down_clear {
+    display:block;
+}
+/* end /css/home/customize.css */
+

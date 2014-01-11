@@ -1,0 +1,38 @@
+PHTTP192.16.70.73"¼	
+ìGET /hls17/lirik_8164433504_52855586/source/index.m3u8?token=id=1256385318270388228,bid=8164433504,exp=1389377602,node=video15-1.jfk01.hls.justin.tv,nname=video15.jfk01,fmt=source&sig=3e644868686cebb6721f8ae48367c622d3170cc9& HTTP/1.1
+#Host: video15.jfk01.hls.twitch.tv
+Connection: keep-alive
+vUser-Agent: Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/31.0.1650.63 Safari/537.36
+Accept: */*
+ Referer: http://www.twitch.tv/
+$Accept-Encoding: gzip,deflate,sdch
+!Accept-Language: en-US,en;q=0.8
+•Cookie: language=en; _twitch_session_id=6ff049b46306561cf522b47803f34d07; mp_809576468572134f909dffa6bd0dcfcf_mixpanel=%7B%22distinct_id%22%3A%20%221437835914790-059c37c5c-14281008-232800-14378359148aa9%22%2C%22%24initial_referrer%22%3A%20%22%24direct%22%2C%22%24initial_referring_domain%22%3A%20%22%24direct%22%7D; __qca=P0-1517455926-1389291213160; __utma=165406266.102143833.1389291213.1389291213.1389291213.1; __utmb=165406266.0.10.1389291213; __utmc=165406266; __utmz=165406266.1389291213.1.1.utmcsr=(direct)|utmccn=(direct)|utmcmd=(none); __gads=ID=206b779ce22a397c:T=1389291201:S=ALNI_MYfH5N9IKUN99RRoCpsRV8rIs2DOQ; unique_id=7MeCJtg; feature_bucket=59
+
+*˜
+HTTP/1.1 200 OK
+Server: nginx
+%Date: Thu, 09 Jan 2014 18:13:33 GMT
+-Content-Type: application/vnd.apple.mpegurl
+Content-Length: 190
+Connection: keep-alive
+.Last-Modified: Thu, 09 Jan 2014 18:13:30 GMT
+(Expires: Thu, 09 Jan 2014 18:13:32 GMT
+,Cache-Control: no-cache, no-store, private
+Accept-Ranges: bytes
+Age: 2
+À
+#EXTM3U
+#EXT-X-VERSION:3
+#EXT-X-TARGETDURATION:5
+#EXT-X-MEDIA-SEQUENCE:221
+#EXTINF:5,
+index221.ts
+#EXTINF:4,
+index222.ts
+#EXTINF:4,
+index223.ts
+#EXTINF:4,
+index224.ts
+#EXTINF:4,
+index225.ts

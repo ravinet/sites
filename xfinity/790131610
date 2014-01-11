@@ -1,0 +1,19 @@
+»HTTPS69.252.205.24"Ò
+†GET /login?s=xfinitytv&ipAddrAuthn=1&passive=1&continue=http%3A%2F%2Fxfinity.comcast.net%2Fiframe_auth%3Fts%3D1389227285302 HTTP/1.1
+Host: login.comcast.net
+Connection: keep-alive
+TAccept: text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8
+vUser-Agent: Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/31.0.1650.63 Safari/537.36
+*Referer: http://xfinity.comcast.net/tt2/
+$Accept-Encoding: gzip,deflate,sdch
+!Accept-Language: en-US,en;q=0.8
+ÊCookie: userZip=02138; cn=n; mbox=check#true#1389227343|session#1389227282398-291545#1389229143|PC#1389227282398-291545.25_26#1390436883; OAX=rqBxyVLN7QYABv2n; usp_v=1389227282948; s_lastVisit=0%2F2014; s_cc=true; __vrf=1389227283047N3OMPzTrC5mNttOSsUMAxPNQz5FDj0w9; __qca=P0-13952271-1389227283053; s_sq=%5B%5BB%5D%5D; r_ck=1389227283293,0; fsr.s={"cp":{"Home_B":"TT2"},"v":1,"rid":"d1159f3-80283464-b667-e8a4-c861f","r":"xfinity.comcast.net","to":3,"c":"http://xfinity.comcast.net/tt2/","pv":1,"lc":{"d2":{"v":1,"s":false}},"cd":2}; s_vi=[CS]v1|2966F68385012BDF-6000010E20051A4E[CE]
+
+*á
+HTTP/1.0 302 Found
+œLocation: https://login.comcast.net/login?s=xfinitytv&ipAddrAuthn=1&passive=1&continue=http%3A%2F%2Fxfinity.comcast.net%2Fiframe_auth%3Fts%3D1389227285302
+fSet-Cookie: cookie-monster=24d1f3250aa617ba86781a02dfa7430d4a227c0b6acb7dd21813b01e9b58125c; path=/;
+Server: BigIP
+Connection: Keep-Alive
+Content-Length: 0
+

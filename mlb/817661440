@@ -1,0 +1,31 @@
+PHTTP173.194.46.121"¬
+eGET /pixel?google_nid=mybuys&google_ula=610524&google_sc&google_hm=AoLzi3Gnkl-QCLXzAg82HEU HTTP/1.1
+Host: cm.g.doubleclick.net
+Connection: keep-alive
+Accept: image/webp,*/*;q=0.8
+vUser-Agent: Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/31.0.1650.63 Safari/537.36
+ÓReferer: http://ads.p.veruta.com/adserver/track?merchantid=14218145796&category=&cmid=82F38B71-A792-5F90-08B5-F3020F361C45&did=DEE67327.C885.53B1.0971.570FBD465863&itemid=&eventid=0&ifmode=1&pvts=1389232091395
+$Accept-Encoding: gzip,deflate,sdch
+!Accept-Language: en-US,en;q=0.8
+PCookie: id=22e3ee757e02009e||t=1389232090|et=730|cs=002213fd48e9469382848f24cd
+
+*õ
+HTTP/1.1 302 Found
+¥P3P: policyref="http://googleads.g.doubleclick.net/pagead/gcn_p3p_.xml", CP="CURa ADMa DEVa TAIo PSAo PSDo OUR IND UNI PUR INT DEM STA PRE COM NAV OTC NOI DSP COR"
+_Location: http://google-cm.p.veruta.com/adserver/cookiematch?pnid=3000000&google_ula=610524,0
+%Date: Thu, 09 Jan 2014 01:48:11 GMT
+Pragma: no-cache
+(Expires: Fri, 01 Jan 1990 00:00:00 GMT
+*Cache-Control: no-cache, must-revalidate
+(Content-Type: text/html; charset=UTF-8
+Server: HTTP server (unknown)
+Content-Length: 284
+!X-XSS-Protection: 1; mode=block
+Alternate-Protocol: 80:quic
+ž
+<HTML><HEAD><meta http-equiv="content-type" content="text/html;charset=utf-8">
+<TITLE>302 Moved</TITLE></HEAD><BODY>
+<H1>302 Moved</H1>
+The document has moved
+<A HREF="http://google-cm.p.veruta.com/adserver/cookiematch?pnid=3000000&amp;google_ula=610524,0">here</A>.
+</BODY></HTML>

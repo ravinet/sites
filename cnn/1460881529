@@ -1,0 +1,133 @@
+PHTTP
+8.18.45.81"è
+×GET /content/0/18916/133472/LT_101813_Purchase_HomePriceBlack_300x250.js?mpck=altfarm.mediaplex.com%2Fad%2Fck%2F18916-133472-21252-0%3Fmpt%3DclywNAA%2CbjmIAxygWvWjf&mpt=clywNAA,bjmIAxygWvWjf&mpvc=http://ads.cnn.com/event.ng/Type%3dclick%2526FlightID%3d580759%2526AdID%3d784682%2526TargetID%3d191983%2526Values%3d1588%2526Redirect%3d HTTP/1.1
+Host: img.mediaplex.com
+Connection: keep-alive
+Accept: */*
+vUser-Agent: Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/31.0.1650.63 Safari/537.36
+¦Referer: http://ads.cnn.com/html.ng/site=cnn&cnn_pagetype=main&cnn_position=300x250_rgt&cnn_rollup=homepage&page.allowcompete=no&params.styles=fs&Params.User.UserID=52cdeaf8075f790a3c71ba092304ba18&transactionID=1389226756929713736384512&tile=3426576229835&domId=6f4501668a5e9d58&kxid=&kxseg=
+$Accept-Encoding: gzip,deflate,sdch
+!Accept-Language: en-US,en;q=0.8
+ZCookie: mojo1=s/189161573263840/1/40110; svid=471502110283932597; rts=; mojo3=24753:2007
+
+*è2
+HTTP/1.1 200 OK
+%Date: Thu, 09 Jan 2014 00:19:05 GMT
+Server: Apache
+.Last-Modified: Mon, 21 Oct 2013 17:55:25 GMT
+#ETag: "ac656e-1504-4e943fd21caed"
+Accept-Ranges: bytes
+Content-Length: 6130
+ Access-Control-Allow-Origin: *
+(Access-Control-Allow-Credentials: true
+Keep-Alive: timeout=5
+Connection: Keep-Alive
+Content-Type: text/javascript
+ô/
+/* 
+ * Mediaplex Flash template, flash_new
+ * Maintained By: Christopher D. Robison (cdr@cdr2.com) and 
+ * Heath Matthew Kornblum (heathkornblum@gmail.com) 
+ * Last Modified: 9/27/2013 11:10 am
+ *
+*/
+(function(){
+	var mojopro = window.location.protocol;
+	if (mojopro == "https:") {
+		mojopro = "https://secure.img-cdn.mediaplex.com/0/";
+	}	else  {
+		mojopro = "http://img-cdn.mediaplex.com/0/";
+  	};  
+	var mpvce = '<mpvce/>';
+	mpenhanced = "",
+	mpenhancedurl = "" || "http://www.mediaplex.com/ad-choices";
+	if (mpvce == 1) {
+		mpvclick = encodeURIComponent("http://ads.cnn.com/event.ng/Type=click%26FlightID=580759%26AdID=784682%26TargetID=191983%26Values=1588%26Redirect=");
+		mpvc = mpvclick;
+	}
+	else if (mpvce == 2) {
+		mpvclick2 = encodeURIComponent("http://ads.cnn.com/event.ng/Type=click%26FlightID=580759%26AdID=784682%26TargetID=191983%26Values=1588%26Redirect=");
+		mpvc = encodeURIComponent(mpvclick2);
+	}
+	else
+  	{
+		mpvc = ("http://ads.cnn.com/event.ng/Type%3dclick%2526FlightID%3d580759%2526AdID%3d784682%2526TargetID%3d191983%2526Values%3d1588%2526Redirect%3d");
+  	}
+	var mpcke = '<mpcke/>';
+	if (mpcke == 1) {
+		mpcclick = encodeURIComponent("altfarm.mediaplex.com%2Fad%2Fck%2F18916-133472-21252-0%3Fmpt%3DclywNAA%2CbjmIAxygWvWjf");
+		mpck = "http://" + mpcclick + "%2526mpcr%253D18945705";
+	}
+	else if (mpcke == 2) {
+		mpcclick2 = encodeURIComponent("altfarm.mediaplex.com%2Fad%2Fck%2F18916-133472-21252-0%3Fmpt%3DclywNAA%2CbjmIAxygWvWjf");
+		mpck = "http://" + encodeURIComponent(mpcclick2) + "%252526mpcr%25253D18945705";
+	}
+	else
+  	{
+		mpck = ("http://altfarm.mediaplex.com%2Fad%2Fck%2F18916-133472-21252-0%3Fmpt%3DclywNAA%2CbjmIAxygWvWjf%26mpcr%3D18945705");
+  	}
+	var mp_swver = 0, mp_html = "", mp_crpv = 9 * 1;
+	mp_html += "<div id='mp_wrapper18945705' style='position:relative;display:inline-block;width:300px;height:250px;'>";
+	if( navigator.mimeTypes && navigator.mimeTypes["application/x-shockwave-flash"] && navigator.mimeTypes["application/x-shockwave-flash"].enabledPlugin ) {
+  		if( navigator.plugins && navigator.plugins["Shockwave Flash"] ) {
+    		mp_swver = (navigator.plugins["Shockwave Flash"].description.split( " " ))[2];
+  		}
+	} else if ( navigator.userAgent && navigator.userAgent.indexOf("MSIE") >= 0 && ( navigator.userAgent.indexOf("Windows") >= 0 ) ) {
+		var mp_axo,e;
+  		for( var mp_i = 11; mp_i > 6; mp_i-- ) {
+			try {
+				mp_axo = new ActiveXObject("ShockwaveFlash.ShockwaveFlash." + mp_i );
+				mp_swver = mp_i;
+				break;
+			} catch (e) {}
+		}
+	}
+	if( mp_swver >= mp_crpv ) {
+  		mp_html +=  '<object classid="clsid:D27CDB6E-AE6D-11cf-96B8-444553540000" ';
+  		mp_html += ' codebase="https://download.macromedia.com/pub/shockwave/cabs/flash/swflash.cab#version=6,0,40,0" id="18945705" name="movie18945705" width="300" height="250">';
+  		if( mp_swver > 5 ) {
+			mp_html += '<param name="FlashVars" value="clickTAG=' + mpvc + mpck +'&clickTag=' + mpvc + mpck + '&clickTag1=' + mpvc + mpck + '">';
+			mp_html += '<param name="movie" value="' + mojopro + '18916/133472/LT_101813_Purchase_HomePriceBlack_300x250.swf">';
+			mp_html += '<param name="wmode" value="opaque">';
+			mp_html += '<param name="allowscriptaccess" value="always">';
+  		} 
+  		else {
+			mp_html += '<param name="movie" value="' + mojopro + '18916/133472/LT_101813_Purchase_HomePriceBlack_300x250.swf?clickTAG=' + mpvc + mpck +'&clickTag=' + mpvc + mpck + '&clickTag1=' + mpvc + mpck + '">';
+			mp_html += '<param name="wmode" value="opaque">';
+			mp_html += '<param name="allowscriptaccess" value="always">';
+  		}
+  		if( mp_swver > 5 ) {
+			mp_html += '<embed wmode="opaque" allowscriptaccess="always" name="18916/133472/LT_101813_Purchase_HomePriceBlack_300x250." src="' + mojopro + '18916/133472/LT_101813_Purchase_HomePriceBlack_300x250.swf" FlashVars="clickTAG=' + mpvc + mpck  +'&clickTag=' + mpvc + mpck  +'&clickTag1=' + mpvc + mpck  + '"';
+		}
+ 		else {
+    		mp_html += '<embed wmode="opaque" allowscriptaccess="always" NAME="18916/133472/LT_101813_Purchase_HomePriceBlack_300x250." src="' + mojopro + '18916/133472/LT_101813_Purchase_HomePriceBlack_300x250.swf?clickTAG=' + mpvc + mpck  +'&clickTag=' + mpvc + mpck  +'&clickTag1=' + mpvc + mpck  + '"';
+		}
+ 		mp_html += ' swLiveConnect="false" width="300" height="250" type="application/x-shockwave-flash" pluginspage="">';
+  		mp_html += '</embed>';
+  		mp_html += '</object>';
+  		mp_html += (mpenhanced) ? "<div style='position:absolute;z-index:10500;top:0px;right:1px;width:17px;height15px;z-index:999999;overflow:hidden;' onmouseover='this.style.width = \"75px\";document.getElementById(\"en_sm_18945705\").style.display=\"none\";document.getElementById(\"en_lg_18945705\").style.display=\"inline\";' onmouseout='this.style.width = \"17px\";document.getElementById(\"en_sm_18945705\").style.display=\"inline\";document.getElementById(\"en_lg_18945705\").style.display=\"none\";'><a href='" + mpenhancedurl + "' target='_blank'><img src='" + mojopro + "16179/109012/IconOnlyCollisionMarker.png' border='0'  id='en_sm_18945705'  style='display:inline'/><img src='" + mojopro + "16179/109012/CollisionAdMarker.png' border='0' id='en_lg_18945705'  style='display:none' /></a></div>" : "";
+	
+  		mp_html += '</div>';
+    		document.write( mp_html );
+	} else if( !( navigator.appName && navigator.appName.indexOf("Netscape") >= 0 && navigator.appVersion.indexOf("2.") >= 0 ) ) {
+
+  		document.write('<a href="http://ads.cnn.com/event.ng/Type=click%26FlightID=580759%26AdID=784682%26TargetID=191983%26Values=1588%26Redirect=http://altfarm.mediaplex.com/ad/ck/18916-133472-21252-0?mpt=clywNAA,bjmIAxygWvWjf&mpcr=18945705" target="_blank"><img src="http://img-cdn.mediaplex.com/0/18916/133472/LT_101813_Purchase_HomePriceBlack_300x250.jpg" width="300" height="250" border="0" alt=""></a>');
+	}
+        document.close();
+})();
+
+   function mojo_clickthru() {
+	     var OOBImg = new Image();
+         if (typeof (mpOOBClickTrack) !== 'undefined') {
+            try {
+				OOBImg.src = mpOOBClickTrack;
+			} catch (e) {
+			  if (window.console && window.console.error) {
+				   window.console.error(e.message);
+			  }
+			}
+         }
+   }
+
+//-->
+

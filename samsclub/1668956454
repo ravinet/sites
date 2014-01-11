@@ -1,0 +1,21 @@
+PHTTP166.90.142.112"ý
+NGET /rum.js?mode=release&domain=http%3A%2F%2Fbeacon.samsclub.com%2F HTTP/1.1
+Host: beacon.samsclub.com
+Connection: keep-alive
+Accept: */*
+vUser-Agent: Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/31.0.1650.63 Safari/537.36
+4Referer: http://www.samsclub.com/sams/homepage.jsp
+$Accept-Encoding: gzip,deflate,sdch
+!Accept-Language: en-US,en;q=0.8
+jCookie: dcenv=EDC; btc=EQKfzXzcmoR9JrSwDszUI8; bsc=EQKfzXzcmoR9JrSwDszUI8; b30msc=EQKfzXzcmoR9JrSwDszUI8
+
+*¼
+HTTP/1.1 302 Found
+USet-Cookie: btc=EQKfzXzcmoR9JrSwDszUI8;Path=/;Expires=Tue, 09-Jan-2024 13:45:22 GMT
+/Set-Cookie: bsc=EQKfzXzcmoR9JrSwDszUI8;Path=/
+XSet-Cookie: b30msc=EQKfzXzcmoR9JrSwDszUI8;Path=/;Expires=Thu, 09-Jan-2014 02:15:22 GMT
+4Cache-Control: no-store, no-cache, must-revalidate
+(Expires: Thu, 01 Jan 1970 00:00:00 GMT
+ILocation: http://beacon.samsclub.com/rum.js;J_DzBT8BRTyJmmOtUWU-hgL2i-w
+Content-Length: 0
+

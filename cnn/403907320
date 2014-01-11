@@ -1,0 +1,27 @@
+PHTTP
+8.18.45.80"–
+ÝGET /ad/js/24753-179529-2007-3?mpt=btonAkc,bjmIAxygWvWje&mpvc=http://ads.cnn.com/event.ng/Type%3dclick%2526FlightID%3d581767%2526AdID%3d785590%2526TargetID%3d191865%2526Values%3d1588%2526RawValues%3dNGUSERID%252C52cdeaf8075f790a3c71ba092304ba18%252CKXID%252C%252CTID%252C1389226756929713736384512%252CTIL%252C3426576229843%2526Redirect%3d HTTP/1.1
+Host: adfarm.mediaplex.com
+Connection: keep-alive
+Accept: */*
+vUser-Agent: Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/31.0.1650.63 Safari/537.36
+§Referer: http://ads.cnn.com/html.ng/site=cnn&cnn_pagetype=main&cnn_position=300x100_bot1&cnn_rollup=homepage&page.allowcompete=no&params.styles=fs&Params.User.UserID=52cdeaf8075f790a3c71ba092304ba18&transactionID=1389226756929713736384512&tile=3426576229843&domId=1d590e2e0f3c830b&kxid=&kxseg=
+$Accept-Encoding: gzip,deflate,sdch
+!Accept-Language: en-US,en;q=0.8
+
+*Õ
+
+HTTP/1.1 200 OK
+Server: Apache-Coyote/1.1
+Cache-Control: no-store
+Pragma: no-cache
+Expires: 0
+OP3P: policyref="/w3c/p3p.xml", CP="NOI DSP COR PSAo PSDo OUR IND UNI COM NAV"
+kSet-Cookie: svid=471502110283932597; expires=Sun, 8-Jan-2017 18:01:50 GMT; path=/; domain=.mediaplex.com;
+XSet-Cookie: rts=; expires=Sun, 8-Jan-2017 18:01:50 GMT; path=/; domain=.mediaplex.com;
+dSet-Cookie: mojo3=24753:2007; expires=Fri, 8-Jan-2016 18:01:50 GMT; path=/; domain=.mediaplex.com;
+Content-Type: text/html
+Content-Length: 780
+%Date: Thu, 09 Jan 2014 00:19:04 GMT
+Ž
+document.write('<a target="_blank" href="http://ads.cnn.com/event.ng/Type=click%26FlightID=581767%26AdID=785590%26TargetID=191865%26Values=1588%26RawValues=NGUSERID%2C52cdeaf8075f790a3c71ba092304ba18%2CKXID%2C%2CTID%2C1389226756929713736384512%2CTIL%2C3426576229843%26Redirect=http://adfarm.mediaplex.com/ad/ck/24753-179529-2007-3?mpt=btonAkc,bjmIAxygWvWje" onclick="mplx.send_oob();"><img ismap border=0 src="http://img-cdn.mediaplex.com/0/24753/081513_webAd2_300x100px.jpg" ></a><script language="javascript" type="text/javascript">var mplx = new Object();mplx.oob_img = new Image();mplx.oob_var = (window.mpOOBClickTrack != undefined) ? window.mpOOBClickTrack : "#";mplx.send_oob = function(e) {if (mplx.oob_var.charAt(0) != "#") {mplx.oob_img.src = mplx.oob_var;}}</script>');

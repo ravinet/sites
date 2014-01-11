@@ -1,0 +1,38 @@
+»HTTPS64.188.48.246"™
+åGET /tag.jsp?pid=619094274A&w=300&h=250&rnd=1960346566&sid=TWC&cm=http://adclick.g.doubleclick.net/aclk%253Fsa%253DL%2526ai%253DBJBhMXfvNUpWnOtCklge2j4HQDP_txckEAAAAEAEgADgAWNev5e9-YMmW7oiEpOwPggEXY2EtcHViLTc5MTU4MTk2MTY5ODQ4NzmyAQp3d3cucnIuY29tugEJZ2ZwX2ltYWdlyAEJ2gESaHR0cDovL3d3dy5yci5jb20vmAKsG8ACAuACAOoCDjQ1MjgvdHdyci5ob21l-AL50R6QA6QDmAOkA6gDAeAEAaAGFg%2526num%253D0%2526sig%253DAOD64_3LTw-7oqcpnPEG09wtqmnUMzFNBw%2526client%253Dca-pub-7915819616984879%2526adurl%253D HTTP/1.1
+"Host: monk.sitescoutadserver.com
+Connection: keep-alive
+Accept: */*
+vUser-Agent: Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/31.0.1650.63 Safari/537.36
+Referer: http://www.rr.com/
+$Accept-Encoding: gzip,deflate,sdch
+!Accept-Language: en-US,en;q=0.8
+
+*¹
+HTTP/1.1 200 OK
+Server: Apache-Coyote/1.1
+,Cache-Control: max-age=0,no-cache,no-store
+Pragma: no-cache
+(Expires: Tue, 11 Oct 1977 12:34:56 GMT
+6Content-Type: application/x-javascript;charset=UTF-8
+Content-Length: 802
+%Date: Thu, 09 Jan 2014 01:29:01 GMT
+¤
+
+
+
+
+
+
+var myRand=parseInt(Math.random()*99999999);
+
+var pUrl = "https://monk.sitescoutadserver.com/disp?pid=619094274A&sid=TWC&cm=http%3A%2F%2Fadclick.g.doubleclick.net%2Faclk%253Fsa%253DL%2526ai%253DBJBhMXfvNUpWnOtCklge2j4HQDP_txckEAAAAEAEgADgAWNev5e9-YMmW7oiEpOwPggEXY2EtcHViLTc5MTU4MTk2MTY5ODQ4NzmyAQp3d3cucnIuY29tugEJZ2ZwX2ltYWdlyAEJ2gESaHR0cDovL3d3dy5yci5jb20vmAKsG8ACAuACAOoCDjQ1MjgvdHdyci5ob21l-AL50R6QA6QDmAOkA6gDAeAEAaAGFg%2526num%253D0%2526sig%253DAOD64_3LTw-7oqcpnPEG09wtqmnUMzFNBw%2526client%253Dca-pub-7915819616984879%2526adurl%253D&rw=1&rand=" + myRand;
+
+var strCreative=''
+ + '<IFRAME SRC="'
+ + pUrl
+ + '" WIDTH="300" HEIGHT="250" MARGINWIDTH=0 MARGINHEIGHT=0 HSPACE=0 VSPACE=0 FRAMEBORDER=0 SCROLLING=no BORDERCOLOR="#000000">\n'
+ + '</IFRAME>\n'
+ + '\n'
+;
+document.write(strCreative);

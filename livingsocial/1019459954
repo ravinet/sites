@@ -1,0 +1,26 @@
+PHTTP23.209.65.51"å
+GET / HTTP/1.1
+Host: www.livingsocial.com
+Connection: keep-alive
+TAccept: text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8
+vUser-Agent: Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/31.0.1650.63 Safari/537.36
+$Accept-Encoding: gzip,deflate,sdch
+!Accept-Language: en-US,en;q=0.8
+
+*¡
+ HTTP/1.1 301 Moved Permanently
+Server: nginx
+Content-Type: text/html
+Content-Length: 178
+)Location: https://www.livingsocial.com/
+%Date: Wed, 08 Jan 2014 16:52:51 GMT
+Connection: keep-alive
+Vary: Accept-Encoding
+´
+<html>
+<head><title>301 Moved Permanently</title></head>
+<body bgcolor="white">
+<center><h1>301 Moved Permanently</h1></center>
+<hr><center>nginx</center>
+</body>
+</html>

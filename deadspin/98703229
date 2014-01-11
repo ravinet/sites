@@ -1,0 +1,20 @@
+PHTTP54.208.244.225"Ë
+#GET /config/deadspin.com HTTP/1.1
+Host: c.parsely.com
+Connection: keep-alive
+Accept: */*
+vUser-Agent: Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/31.0.1650.63 Safari/537.36
+Referer: http://deadspin.com/
+$Accept-Encoding: gzip,deflate,sdch
+!Accept-Language: en-US,en;q=0.8
+
+*ç
+HTTP/1.1 200 OK
+Content-Type: text/javascript
+%Date: Thu, 09 Jan 2014 01:55:57 GMT
+xSet-Cookie: parsely_network_uuid=b0122deb-d39d-4209-9dac-d184c7bdba7a; expires=Wed, 30 Dec 2037 23:55:55 GMT; httpOnly
+X-Powered-By: Express
+Content-Length: 195
+Connection: keep-alive
+Å
+PARSELY.pInit({"apikey":"deadspin.com","customizations":null,"bundle":"/code/slim_v04.js","settings":{"debug":false,"widget":false,"tracker":true},"uuid":"b0122deb-d39d-4209-9dac-d184c7bdba7a"});

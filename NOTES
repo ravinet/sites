@@ -1,0 +1,40 @@
+verizon.com and verizon.net --> store in different folders so we manually put one in verizoncom and verizonnet
+google.com and google.com.hk--> store in googlehk and google
+verizon.net --> verizonnet
+
+
+
+
+
+
+ISSUES WITH EITHER RECORDING OR REPLAYING***
+
+1. www.nhl.com- no data received during recording (page didnt load during record) 
+2. www.gotomeeting.com- replay would not start browser (apache issue)
+3. www.breitbart.com- takes forever to load during record and then replay had issues starting
+4. www.dailymail.co.uk- never stops in record so replay has issue
+5. www.nydailynews- record keeps spinning and replay fails to start
+6. www.bitly.com- record seems fine but replay still says redirect issue
+7. www.cox.com- record fails to load page
+8. www.nbc.com fails to load replay
+9. www.nbcnews.com- fails to replay load
+
+Other sites that failed to start replay:
+10. fool.com
+11. wsj.com
+12. newegg.com
+13. wikia.com
+14. target.com
+15. nbcnews.com
+16. theatlantic.com
+17. hollywoodreporter.com
+18. indiatimes.com
+19. directv.com
+20. fool.com
+21. cars.com
+22. thechive.com
+23. legacy.com
+24. boston.com
+25. rantsports.com
+26. drudgereport.com
+27. hilton

@@ -1,0 +1,35 @@
+PHTTP208.52.173.198"û
+GET /?aid=2020 HTTP/1.1
+Host: atrd.netmng.com
+Connection: keep-alive
+Accept: */*
+vUser-Agent: Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/31.0.1650.63 Safari/537.36
+%Referer: http://www.autotrader.com/
+$Accept-Encoding: gzip,deflate,sdch
+!Accept-Language: en-US,en;q=0.8
+0Cookie: u=f30746a4-260d-4a62-8592-e2b0afacdfc2
+
+*Á	
+HTTP/1.1 200 OK
+%Date: Thu, 09 Jan 2014 01:35:23 GMT
+Server: Apache/2.2.16
+KP3P: policyref="/w3c/p3p.xml", CP="NOI DSP COR DEVa PSAa OUR BUS COM NAV"
+(Expires: Tue, 07 Jan 2014 01:35:23 GMT
+.Last-Modified: Tue, 07 Jan 2014 01:35:23 GMT
+4Cache-Control: no-store, no-cache, must-revalidate
+*Cache-Control: post-check=0, pre-check=0
+Pragma: no-cache
+±Access-Control-Allow-Origin: https://www.youtube.com http://www.youtube.com https://s0.2mdn.net http://s0.2mdn.net https://static.doubleclick.net http://static.doubleclick.net
+ÈSet-Cookie: evo5=lybpvrcesg8l6%7CvAyjZRZ6NVorWLF2Tsc7IPf6POwpdztDZMh4hKRs1OcwL1Esx8EpmWyaS8%2By2vVQWY1jPGsQQrdtvJnmzBfSQgexmRqA37FlF1LTEfihnKsFS%2FioJVj0JLdNpLO17p2YU%2FQ2IFHe7YrIEfLbzuZ6PLahxwxCPuCIqk6JtPKoWKUyngPKjUjgLG4ZegKMzVUgpN17QRG8q2wrn5ccDIcjNg%3D%3D; expires=Fri, 11-Jul-2014 01:35:23 GMT; path=/; domain=.netmng.com
+Content-Length: 241
+X-Cnection: close
+.Content-Type: text/javascript; charset=UTF-8
+ó
+
+			if (document.createElement && document.body) {
+				var nm_script = document.createElement('SCRIPT');
+				nm_script.src = document.location.protocol + '//atrd.netmng.com/?aid=2020&cch';
+				document.body.appendChild(nm_script);
+			}
+		
+ 

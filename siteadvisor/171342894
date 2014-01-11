@@ -1,0 +1,534 @@
+PHTTP161.69.13.140"ü
+8GET /includes/stylesheets/exceptions/form.css HTTP/1.1
+Host: www.siteadvisor.com
+Connection: keep-alive
+Accept: text/css,*/*;q=0.1
+vUser-Agent: Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/31.0.1650.63 Safari/537.36
+&Referer: http://www.siteadvisor.com/
+$Accept-Encoding: gzip,deflate,sdch
+!Accept-Language: en-US,en;q=0.8
+
+*‚V
+HTTP/1.1 200 OK
+%Date: Thu, 09 Jan 2014 01:45:00 GMT
+Server: Apache
+.Last-Modified: Thu, 12 Dec 2013 14:07:12 GMT
+"ETag: "a0151-29d6-4ed56dcaae400"
+Accept-Ranges: bytes
+Content-Length: 10710
+ Keep-Alive: timeout=15, max=99
+Connection: Keep-Alive
+Content-Type: text/css
+ØS
+/*
+	Copyright 2006-2008 McAfee, Inc. All Rights Reserved. 
+	Author: Premkumar Balakrishnan, Manikandan Rajasekaran, Ramanand Yadwadkar
+*/
+
+form.styled fieldset {
+	margin: 6px;
+	}
+fieldset {
+	border: none;
+	}
+form.styled div {
+	/*border: 1px solid orange;*/
+	/*margin: 0;
+	clear: both;*/
+	}
+
+form.styled legend {
+	font: bold 130%  Verdana, Arial, Helvetica, sans-serif;
+	color: #aa0828;
+	padding: 6px;		
+	margin: 10px 0 5px 0;
+}
+
+form.styled div label {
+	float: left;
+	width: 35%;
+	text-align: right;
+	vertical-align: middle;
+	margin: 3px 0.5em 0 0;		
+	color: #7b7e7d;
+}
+
+form.styled div.required label {
+  font-weight: bold;
+  }
+  
+form.styled div.required p {
+  font-weight: bold;
+  }
+  
+form.styled fieldset input {
+	width: 18em; /* Width for modern browsers */
+	vertical-align: none;
+	padding: 0.1em;
+	border: 1px solid #d1cfcb;
+	margin: 3px 0 3px 0;
+        font: 11px Verdana; 
+	}
+
+form.styled fieldset textarea, password {
+	border: 1px solid #d1cfcb;
+	margin: 3px 0 3px 0;
+        border-radius: 5px 5px 5px 5px;
+        background: none repeat scroll 0 0 #F3F3F3;
+        border: 1px solid #999999;
+        color: #555555;
+        font-family: Verdana,Arial,Helvetica,sans-serif;
+        font-size: 11px;
+        padding: 6px;
+	}
+
+
+form.styled input.checkbox, form.styled input.radio {
+	width: auto;
+	border: none;
+	margin-top: 3px;
+	_margin-top: 0px;
+	vertical-align: middle;
+	}
+form.styled input.radio {
+	width: auto;
+	}
+form.styled ul.options li {
+	list-style-type: none;
+	margin-left: 33.5%;
+	}
+	
+form.styled ul.options label {
+	float: none;
+	width: auto;
+	text-align: left;
+	font-weight: normal;
+	display: inline;
+	}
+	
+div#content-main form.styled ul.answers {
+	margin-left: 33.5%;
+	display:block;
+			}
+	
+form.styled ul.answers li {
+	list-style-type: none;
+	margin-left: 10px;
+	display: inline;
+	}
+	
+form.styled ul.answers label {
+	float: none;
+	width: auto;
+	text-align: left;
+	font-weight: normal;
+	display: inline;
+	}
+
+form.styled_ select {
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-size : 100%;
+	width: 18em; /* Width for modern browsers */
+	/*border : 1px solid #000;*/
+	height: auto;
+	padding : 1px;
+        margin: 3px 0 3px 0;
+	}
+
+form.styled select {
+        font-family: Verdana, Arial, Helvetica, sans-serif;
+        font-size : 100%;
+        width: 22em; /* Width for modern browsers */
+        border : 1px solid #999;
+        height: auto;
+        padding : 2px;
+        margin: 3px 0 3px 0;
+        background: none repeat scroll 0 0 #F3F3F3;
+        color:#555;
+        font-size:11px;
+        }
+
+form.styled select option {
+        padding : 1px;
+        }
+
+
+	
+form.styled input#submit {
+/*	margin-left: 36%;
+	_margin-left: 37%;*/
+	margin-left: 35.6%;
+	*margin-left: 34.1%;
+	}
+form.styled input#_submit {
+/*      margin-left: 36%;
+        _margin-left: 37%;*/
+        margin-left: 35.6%;
+        *margin-left: 34.1%;
+        }
+
+form.styled .buttoncenter {
+	margin-left: 35.6% !important;
+	*margin-left: 34.1%;
+	}
+form.styled .tblleft{
+	font-weight:bold;
+	margin-bottom:5px;
+
+}
+form.styled .tblright{
+	margin-left:5px; 
+}
+
+body#sma-professionalservices-mcafeesupport_se form.styled input#submit {
+	 margin-left: 35.7%;
+     *margin-left: 34.5%;
+     _margin-left: 34.8%;
+
+	}
+	
+
+/* Tables */
+div#content-main form.styled table {
+	/*margin-left:14%;
+	_margin-left:15%;*/
+	margin-top:5px;
+	width:62%;
+	_width:61.5%;
+}
+div#content-main form.styled table caption{
+	display:none;
+}
+div#content-main form.styled table th {
+	padding:5px 0;
+}
+
+div#content-main form.styled table td {
+	text-align:right;
+	padding-right:6px;
+	}
+div#content-main form.styled tbody td input{
+	margin-right: expression(this.type=="checkbox" ? '2em': '');
+	width: expression(this.type=="checkbox" ? '': '15em');
+	border : expression(this.type=="checkbox" ? '':'1px solid #aaa');
+	vertical-align: middle;
+}
+div#content-main form.styled div.optional table {
+	margin-left:15.5%;
+	_margin-left:15%;
+	margin-top:2px;
+	width:65%;
+	}
+div#content-main form.styled div.optional tbody td input{
+	margin-right:0;
+	vertical-align: middle;
+	padding: 0.1em;
+}
+/* Firefox */
+div#content-main form.styled tbody td input[type="checkbox"]{
+	margin-right: 2em;
+	vertical-align: middle;
+}
+div#content-main form.styled tbody td input[type="text"]{
+	width: 15em;
+	border: 1px solid #aaa;
+	vertical-align: middle;
+}
+
+.output {
+margin:0;
+padding:3px 0 0 0;
+}
+
+body#ent-downloads-products form.styled input#submit {
+	_margin-left: 34%;
+	}
+
+/* TC Dispute form*/
+div#content-main form.styled ul.groups {
+	margin-left: 35.2%;
+	padding:0;
+	display:block;
+
+	}
+form.styled ul.groups li {
+	list-style-type: none;
+	display:block !important;
+	*margin:0;
+	*float:left;
+	width:100%;
+	}
+form.styled ul.groups label {
+	float: none;
+	width: auto;
+	text-align: left;
+	font-weight: normal;
+	display: inline;
+	}
+div.hiddenboxes{
+	margin-left: 35.2% !important;
+	border-top:0px solid #ccc;
+	border-bottom:1px solid #ccc;
+	border-left:1px solid #ccc;
+	border-right:1px solid #ccc;
+	width:25%;
+	padding:5px;
+}
+div.hiddenboxes ul.groups{
+	margin:0 !important; 
+	}
+div.hiddenboxes label{
+	float: none !important;
+	display:block;
+	text-align:left !important;
+	width:auto !important;
+}					
+
+div#content #submit, div#content button, div#content input.button {
+	color: #7b7e7d;
+	min-height: .75em;
+        background: url(/images/button-new-red-arrow.gif) no-repeat center left;
+	font: bold 0.85em Verdana, Arial, Helvetica, sans-serif;
+	cursor: pointer;
+	width: 137px;
+	height: 24px;
+	text-align: left;	
+	padding-left: 8px !important;
+	border: none !important;	
+}
+
+div#content #_submit, div#content bigbutton, div#content input.bigbutton {
+        border: none;
+        color: #7b7e7d;
+        min-height: .8em;
+        background: url(/images/button-red-big-arrow.gif) no-repeat center left;
+        font: bold 0.85em Verdana, Arial, Helvetica, sans-serif;
+        cursor: pointer;
+        width: 270px;
+        height: 26px;
+        text-align: left;
+        padding-left: 4px !important;
+}
+	
+.betabutton {
+	border: none;
+	color: #7b7e7d;
+	min-height: .8em;
+        background: url(/images/button-red-big-arrow.gif) no-repeat center left;
+	font: bold 0.85em Verdana, Arial, Helvetica, sans-serif;
+	cursor: pointer;
+	width: 270px;
+	height: 26px;
+	text-align: left;	
+	padding-left: 4px !important;
+}
+fieldset label{	
+	vertical-align: middle;
+	}		
+
+/*Find a partner*/
+div.controls {
+	margin: 7px 0px 0px 0px;
+ 	text-align: left;
+	font-weight: normal;
+	padding: 0px;
+	height: 18px;
+}
+div.controls div.counter{
+	margin: 0px 0px 0px 12px;
+
+}
+div.controls div {
+	float: left;
+}
+div.controls div.pagecontrols {
+	float: right;
+}
+div.pagecontrols a {
+	margin-left: 0px;
+	margin-right: 0px;
+	display: block;
+	float: left;
+	height: 18px;
+	width: 20px;
+}
+div.pagecontrols a.first {
+	background: url('/images/page_first.gif') no-repeat 0px 2px;
+}
+div.pagecontrols a.previous {
+	background: url('/images/page_previous.gif') no-repeat 0px 2px;
+}
+div.pagecontrols a.next {
+	background: url('/images/page_next.gif') no-repeat 0px 2px;
+}
+div.pagecontrols a.last {
+	background: url('/images/page_last.gif') no-repeat 0px 2px;
+}
+div.pagecontrols a span {
+	font-size: 1px;
+	margin-left: -12345px;
+}
+div.pagecontrols span.pagecount {
+	margin-right: 10px;
+	height: 18px;
+	display: block;
+	float: left;
+	padding: 0;
+
+}
+div.pagecontrols form {
+	height: 18px;
+	display: block;
+	float: left;
+	padding: 0;
+	margin: 0;
+}
+div.pagecontrols label.pagecount {
+	margin-right: 5px;
+	height: 18px;
+	display: block;
+	float: left;
+	padding: 0;
+}
+div.pagecontrols form input {
+	width: 28px;
+	height: 17px;
+	display: block;
+	float: left;
+	font-size: inherit;
+	margin: -2px 0px 0px 0px;
+	_margin-top: 0px;
+}
+div.pagecontrols form button {
+	font-size: 11px;
+	margin: -2px 5px 0px 5px;
+	_margin-top: 0px;
+	padding: 0;
+	display: block;
+	float: left;
+}
+table.styled caption.findpartnerresult{
+	display: none;
+}
+/*become a partner page*/
+body#par-becomepartner ul.options{
+	margin-bottom:10px;
+	margin-top:5px;
+	margin-left:35.5%;
+	width:60%;
+}
+body#par-becomepartner form.styled ul.options li {
+	list-style-type: none;
+	margin-left:0;
+
+	}
+	
+body#par-becomepartner form.styled ul.options label {
+	float: none;
+	width: auto;
+	text-align: left;
+	font-weight: normal;
+	display: inline;
+	}
+	
+body#par-becomepartner div#content-main form.styled ul.answers {
+	margin-left: 33.5%;
+	display:block;
+	}
+	
+body#par-becomepartner form.styled ul.answers li {
+	list-style-type: none;
+	margin-left: 10px;
+	display: inline;
+	}
+	
+body#par-becomepartner form.styled ul.answers label {
+	float: none;
+	width: auto;
+	text-align: left;
+	font-weight: normal;
+	display: inline;
+	}
+body#par-becomepartner form.styled div.rightrequired{
+	margin-left:35.5%;
+}
+body#par-becomepartner form.styled div.rightrequired label{
+	float: none;
+	width: auto;
+	text-align: left;
+	vertical-align: middle;
+	margin: 3px 0.5em 0 0;		
+	color: #7b7e7d;
+}
+.radiotbl{
+	width:50%;
+	margin-left:35.5% !important;
+	margin-top:-25px !important;
+}
+.radiotbl td input{
+	float:left;
+	width:auto !important;
+	border:none !important;
+}
+.radiotbl td label{
+	font-weight:normal !important;
+	margin:0;
+	width:auto !important;
+}
+
+body#plat_sup #form1 fieldset {
+margin: 0 !important;
+padding: 0 !important;
+}
+
+body#plat_sup h3 p {
+padding-left: 0 !important;
+}
+
+body#plat_sup #form1 #btnsubmit {
+margin-left: 84px !important;
+}
+
+form.styled a {
+	color:#37556a; 
+	text-decoration:underline;
+	}
+
+form.styled a:hover {
+	color:#aa0828; 
+	text-decoration:none;
+	}
+
+body.par .buttoncenter {
+	margin-left: 35.6% !important;
+	*margin-left: 34.1%;
+     _margin-left: 35.8% !important; /* IE-6 fix */	
+}
+
+fieldset div.emphasis p{	
+	*padding: 10px !important;
+}	
+
+body#abo-piracy-enduserpiracyreport-corporate_piracy_form div.emphasis, body#abo-websitefeedback-web_feedback_form div.emphasis{
+	margin-top:0 !important;
+	*padding-bottom:10px !important;
+}
+
+body#ent-downloads-my_products .button{
+height: 19px !important;
+}	
+
+body#par-findpartner .buttoncenter {
+	 *margin-left: 34.6% !important;	 
+     	_margin-left: 34.6% !important; 
+	 *margin-right: 4px;
+	_margin-right: 4px;
+}
+
+form.styled div label.labels{
+        text-align: right;
+        vertical-align: middle;
+        margin: 3px 0.5em 0 0;
+        color: #7b7e7d;
+        width: auto;
+}

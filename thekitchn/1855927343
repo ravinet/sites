@@ -1,0 +1,28 @@
+»HTTPS108.161.189.192"¶
+GET /crossdomain.xml HTTP/1.1
+%Host: servedbyy-ssmb.netdna-ssl.com
+Connection: keep-alive
+vUser-Agent: Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/31.0.1650.63 Safari/537.36
+Accept: */*
+$Accept-Encoding: gzip,deflate,sdch
+!Accept-Language: en-US,en;q=0.8
+
+*¡
+HTTP/1.1 200 OK
+%Date: Fri, 10 Jan 2014 17:01:37 GMT
+Content-Type: application/xml
+Content-Length: 117
+Connection: keep-alive
+Nx-amz-id-2: yJS4DTC4JqQMHF4Xoh8YJVIgrx5MiLyHO32fkRGF54S+wOwXTHBzyJULr66VllFO
+$x-amz-request-id: 3ACB3CE33BB30B46
+ƒx-amz-meta-s3cmd-attrs: uid:1003/gname:www-data/uname:deploy/gid:33/mode:33204/mtime:1340639248/atime:1347372833/ctime:1347455912
+.Last-Modified: Wed, 12 Sep 2012 13:48:52 GMT
+*ETag: "ce3378b8ab938fd705f96faa97fd2388"
+Server: NetDNA-cache/2.2
+X-Cache: HIT
+Accept-Ranges: bytes
+w
+<?xml version="1.0"?>
+<cross-domain-policy>
+  <allow-access-from domain="*" secure="false" />
+</cross-domain-policy>

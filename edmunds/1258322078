@@ -1,0 +1,358 @@
+PHTTP216.241.219.198"Ý
+#GET /t/latest/cbltpix.js HTTP/1.1
+$Host: traffic.prod.cobaltgroup.com
+Connection: keep-alive
+Accept: */*
+vUser-Agent: Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/31.0.1650.63 Safari/537.36
+"Referer: http://www.edmunds.com/
+$Accept-Encoding: gzip,deflate,sdch
+!Accept-Language: en-US,en;q=0.8
+
+*Ól
+HTTP/1.1 200 OK
+%Date: Thu, 09 Jan 2014 13:54:13 GMT
+@Server: Apache/2.2.3 (Oracle) DAV/2 mod_perl/2.0.4 Perl/v5.8.8
+fSet-Cookie: click_tracker=128.30.76.55.1389275653814194; path=/; expires=Sat, 09-Jan-16 13:54:13 GMT
+¸P3P: policyref=\"http://traffic.prod.cobaltgroup.com/w3c/policy.xml\", CP=\"CAO DSP COR CUR ADM DEV TAI PSA PSD IV A IVD CON TEL OTP OUR SAM UNR PUB OTR IND UNI COM NAV INT STA PRE\"
+AMF-Ver: 4.02
+.Last-Modified: Fri, 18 Jan 2013 20:56:43 GMT
+Accept-Ranges: bytes
+Content-Length: 13125
+ZCache-Control: max-age=0, no-cache, no-store, must-revalidate, post-check=0, pre-check=0
+Pragma: no-cache
+(Expires: Thu, 01 Jan 1970 00:00:00 GMT
+Connection: close
+(Content-Type: application/x-javascript
+X-Origin-Id: adp-ds-tukwila
+Çf
+var cbltpix = function() {
+    function PixelTag(program, channel, site) {
+		this._pixelProtocol = 'http';
+        this.site = site || window.location.host;
+        this._traffic_host = "traffic.prod.cobaltgroup.com";
+        this._filename = "websites.gif";
+        this._uid_timeouts = { // All values in minutes
+        		'session' : 30,
+        		'visitor' : 5256000,  // 10 years
+        		'_default' : 5
+        };
+        this._required_fields = [ // Fields required by all tag types
+                                 'header_event_id',
+                                 'header_session_id',
+                                 'header_visitor_id',
+                                 'header_request_domain',
+                                 'header_request_uri',
+                                 'header_site_id',
+                                 'header_page_name',
+                                 'header_page_label',
+                                 'header_page_layout'
+                                 ];
+        this._debug = false;
+        this._passed_session_id = undefined;
+        this._passed_visitor_id = undefined;
+        if (window.location.search && window.location.search.indexOf('cbltpix=debug') > 0) {
+        	this._debug = true;
+        }
+    }
+    PixelTag.prototype = {
+    	set_debug : function() {
+    		this._debug = true;
+    	},
+    	set_pixelProtocol : function(protocol) {
+    		this._pixelProtocol = protocol;
+    	},
+	set_session_id : function(session_id) {
+            this._passed_session_id = session_id;
+        },
+    set_visitor_id : function(visitor_id) {
+    	this._passed_visitor_id = visitor_id;
+    },
+    	_log : function(message) {
+    		if (this._debug && window.console) {
+    			window.console.log(message);
+    		}
+    	},
+        _generateUid : function() {
+            var i; var unit = 4, length=44, st = "";
+            // determine # of iterations - each unit is 4 chars
+            var count = Math.ceil(length / unit);
+            for (i = 1; i <= count; i++) {
+                st += (((1 + Math.random()) * 0x10000) | 0).toString(16).substring(1);
+            }
+            return st.substr(0, length);
+        },
+      _get_domain : function() {
+        // Return the top-level domain for the current site ('vw.com' for 'dealer.vw.com')
+        // Returns an empty string if the domain doesn't match \w+\.\w+
+        var match = window.location.hostname.toLowerCase().match(/\w+\.[a-z]+$/);
+        var val = match ? match[0] : "";
+        return val;
+      },
+
+	    _URLEncode : function(str){
+            // The Javascript escape and unescape functions do not correspond
+            // with what browsers actually do...
+            var SAFECHARS = "0123456789" + // Numeric
+            "ABCDEFGHIJKLMNOPQRSTUVWXYZ" + // Alphabetic
+            "abcdefghijklmnopqrstuvwxyz" +
+            "-_.!~*'()"                  + // RFC2396 Mark characters
+            ":";                           // Our keys include colons- I want to be 
+                                           // able to encode the key, but the colon
+                                           // needs to remain unscathed.
+            var HEX = "0123456789ABCDEF";
+            
+            var encoded = "";
+            for (var i = 0; i < str.length; i++) {
+                var ch = str.charAt(i);
+                if (ch == " ") {
+                    encoded += "+"; // x-www-urlencoded, rather than %20
+                } else if (SAFECHARS.indexOf(ch) != -1) {
+                    encoded += ch;
+                } else {
+                    var charCode = ch.charCodeAt(0);
+                    if (charCode > 255) {
+                        encoded += "+";
+                    } else {
+                        encoded += "%";
+                        encoded += HEX.charAt((charCode >> 4) & 0xF);
+                        encoded += HEX.charAt(charCode & 0xF);
+                    }
+                }
+            } // for
+            return encoded;
+        },
+        _build_query_string : function(args) {
+            var queryparts = [];
+            for (var i in args) {
+                queryparts.push(this._URLEncode(i) + '=' + this._URLEncode(args[i]));   
+            }
+            return queryparts.length > 0 ? queryparts.join('&') : " ";
+        },
+        _build_url : function(domain, path, query) {
+            var url = this._pixelProtocol + "://" + domain;
+            url = url + (path.charAt(0) == '/' ? path : '/' + path);
+            url = url + '?' + this._build_query_string(query);
+            return url;
+        },
+        _set_cookie : function(name, value, hours) {
+        	var protocookie = 'cblt_' + escape(name) + '=' + escape(value);
+        	var date_string = new Date(new Date().getTime() + 1000 * 60 * hours).toUTCString();
+          var domainstring = this._get_domain() ? "; domain=" + this._get_domain() : "";
+          var cookiestring = protocookie + "; expires=" + date_string + "; path=/" + domainstring;
+        	this._log("setting cookie: " + cookiestring);
+          document.cookie = cookiestring;
+        },
+        _get_cookies : function() {
+        	var cookiestring = document.cookie;
+        	var regex = /cblt_([^=]+)=([^;]+);?\s*/g;
+        	var pair;
+        	var cookiejar = {};
+        	while (pair = regex.exec(cookiestring)) {
+        		cookiejar[unescape(pair[1])] = unescape(pair[2]);
+        	}
+        	this._log("Retrieved cookie:");
+        	this._log(cookiejar);
+        	return cookiejar;
+        },
+        _get_cookie : function(key) {
+        	return this._get_cookies()[key]; 
+        },
+        _parse_url : function(referrer) {
+			var r = /(\w+:\/\/)?([\w\.\-]+)(:\d+)?(\/.*)?/,
+			 	urlparts = r.exec(referrer),
+				retval = {'host' : 'undefined', 'port' : 'undefined', 'location' : 'undefined'};				
+			if(urlparts != null && referrer != null){
+				retval = {'host' : urlparts[2], 'port' : urlparts[3], 'location' : urlparts[4]};
+			}
+          	return retval;
+        },
+        _getUID : function(uidname, default_value) {
+        	var timeout = (this._uid_timeouts[uidname] || this._uid_timeouts['_default']);
+        	var uid = (this._get_cookie(uidname) || default_value || this._generateUid());
+        	this._set_cookie(uidname, uid, timeout);
+        	return uid;
+        },
+        _get_referrer : function() {
+          return document.referrer;
+        },
+        _build_parameters : function(params) {
+        	var pagename_matcher = /(.*\/)?(\w+)(\.\w+)/;
+        	var pagename_parts = pagename_matcher.exec(window.location.pathname);
+        	var pagename = window.location.pathname;
+        	if (pagename_parts) {
+        		pagename = pagename_parts[2];
+        	}
+            // visitor_id defaults to same as session for new/returning determination
+            var session_id = this._passed_session_id || this._getUID('session');
+            var visitor_id = this._passed_visitor_id || this._getUID('visitor', session_id);
+            var args = {
+                     'header_site_id'     		: this.site,
+                     'header_event_id'			: this._generateUid(),
+                     'header_session_id'		: session_id,
+                     'header_visitor_id'		: visitor_id,
+                     'header_request_domain'	: window.location.hostname,
+                     'header_request_uri'		: this._parse_url(window.location.href).location,
+                     'header_page_name'			: pagename,
+                     'header_page_label'		: pagename,
+                     'header_page_layout'		: pagename
+                     };
+            // Override and add params
+            if (params && typeof params == 'object') {
+                for (var i in params) {
+                    args[i] = params[i];
+                }
+            }
+            var referrer_bits = this._parse_url(this._get_referrer());
+            if (referrer_bits && (referrer_bits.host != window.location.hostname)) {
+            	args['header_referrer_domain'] = referrer_bits.host;
+            	args['header_referrer_uri'] = this._URLEncode(referrer_bits.location);
+            }
+            // Ensure that we don't have any null values, remove if we do
+            for (var arg in args) {
+            	if (typeof args[arg] == 'undefined' || typeof args[arg] == 'object') {
+            		this._log("Ignoring parameter '" + arg + "': undefined value");
+            		delete args[arg];
+            	}
+            }
+            this._log("Creating pixeltag with args: ");
+            this._log(args);
+            return args;
+        },
+        _build_pixeltag_url : function(params) {
+            return this._build_url(this._traffic_host, this._filename, params); 
+            
+        },
+        _validate : function(args) {
+    		for (var i=0; i<this._required_fields.length; i++) {
+    			if (!args[this._required_fields[i]]) { // This includes values of '0'
+    				this._log("Pixel tag failed validation.  Missing field '" + this._required_fields[i] + "'.");
+    				return false;
+    			}
+    		}
+    		return true;
+        },
+        _fire_pixel_tag : function(params) {
+        	args = this._build_parameters(params);
+        	if (this._validate(args)) {
+        	    
+	           var pt = new Image(1,1);
+	           pt.src = this._build_pixeltag_url(args);
+	           //need this onload for consistent IE 6 performance, inspired by http://breckman.com/entry.php?id=30
+	           pt.onload = function() { pt.onload = null; };
+	           this._log("Fired pixel tag with URL: " + pt.src);
+	           return pt;
+        	}
+        }     
+    };
+
+    var tag = new PixelTag();
+    return {
+    	set_debug : function() {
+    		tag.set_debug(); 
+    	},
+    	set_pixelProtocol : function(protocol) {
+    		tag.set_pixelProtocol(protocol); 
+    	},		
+        page_render:  function(siteid, page_name, vin) { // siteid can be a hash or a site_id string
+        	args = {};
+        	if (siteid && typeof siteid == 'object') {
+        		args = siteid;
+        	}
+            if (siteid && typeof siteid == 'string') {
+                args['header_site_id'] = siteid;
+            } 
+            if (page_name && typeof page_name == 'string') {
+            	args['header_page_name'] = page_name;
+            }
+            if (vin && typeof vin == 'string') {
+            	args['cs:i:vin'] = vin;
+            }
+        	return tag._fire_pixel_tag(args); 
+        },
+        inventory_search:  function(site_id, page_name, search_type, make, model) {
+            var args = {};
+            if (typeof site_id == 'object') {
+            	args = site_id;
+            } else {
+            	if (site_id) {
+            		args['header_site_id'] = site_id;
+            	}
+            	if (page_name) {
+	        		args['header_page_name'] = page_name;
+            	}
+        		args['inventory_search_type'] = search_type;
+        		args['inventory_make'] = make;
+        		args['inventory_model'] = model;
+            }
+            // Only send pixel tag if we have all information
+            if (args['inventory_search_type'] && args['inventory_make'] && args['inventory_model']) {
+            	return tag._fire_pixel_tag(args);
+            } else {
+            	tag._log("Skipping pixel tag.  Missing search_type, make, or model");
+            }
+        },
+        email_lead:  function(site_id, page_name, lead_id, vin) {
+        	var args = {};
+        	if (typeof site_id == 'object') {
+        		args = site_id;
+        	} else {
+	        	if (site_id) {
+	        		args['header_site_id'] = site_id;
+	        	} 
+	        	if (page_name) {
+	        		args['header_page_name'] = page_name;
+	        	} 
+	        	if (vin) {
+	        		args['cs:i:vin'] = vin;
+	        	}
+	        	args['lead_id'] = lead_id;
+        	}
+        	if (!args['lead_id']) { // Don't send anything without a lead_id
+        		args['lead_id'] = tag._generateUid();
+        	}
+       		return tag._fire_pixel_tag(args);
+        },
+        third_party_lead:  function(site_id, page_name, web_id, lead_id, vin) {
+        	var args = {};
+        	if (typeof site_id == 'object') {
+        		args = site_id;
+        	} else {
+	        	if (site_id) {
+	        		args['header_site_id'] = site_id;
+	        	} 
+	        	if (page_name) {
+	        		args['header_page_name'] = page_name;
+	        	} 
+
+	        	if (web_id) {
+	        		args['cs:s'] = web_id;
+	        	} else {
+              tag._log("Skipping pixel tag.  Missing web_id information");
+              return undefined;
+            }
+
+	        	if (vin) {
+	        		args['cs:i:vin'] = vin;
+	        	}
+	        	args['lead_id'] = lead_id;
+        	}
+        	if (!args['lead_id']) { // Don't send anything without a lead_id
+        		args['lead_id'] = tag._generateUid();
+        	}
+       		return tag._fire_pixel_tag(args);
+        },
+        set_session_id: function(session_id) {
+            tag.set_session_id(session_id);
+            return tag;
+        },
+        set_visitor_id: function(visitor_id) {
+        	tag.set_visitor_id(visitor_id);
+        	return tag;
+        },
+        _test_obj: tag,
+        _reset_tag: function() {
+            tag = new PixelTag();
+        }
+    };
+}();
+

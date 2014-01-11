@@ -1,0 +1,31 @@
+PHTTP198.84.60.134"¡
+GET /crossdomain.xml HTTP/1.1
+Host: www.worldstarhiphop.com
+Connection: keep-alive
+vUser-Agent: Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/31.0.1650.63 Safari/537.36
+Accept: */*
+5Referer: http://www.worldstarhiphop.com/embed/66029
+$Accept-Encoding: gzip,deflate,sdch
+!Accept-Language: en-US,en;q=0.8
+·Cookie: __qca=P0-533506130-1389303149307; __utma=85259423.1454618324.1389303149.1389303149.1389303149.1; __utmb=85259423.1.10.1389303149; __utmc=85259423; __utmz=85259423.1389303149.1.1.utmcsr=(direct)|utmccn=(direct)|utmcmd=(none); __gads=ID=aaacf46b457d255f:T=1389303136:S=ALNI_Maoxc3j7LS6shERmt-GuPSYiAa_Mg
+
+*¢
+HTTP/1.1 200 OK
+Server: Apache/2.2.22
+.Last-Modified: Wed, 17 Mar 2010 18:17:22 GMT
+"ETag: "10f43d7-ca-48203201b1080"
+Content-Type: application/xml
+Content-Length: 202
+Accept-Ranges: bytes
+%Date: Thu, 09 Jan 2014 21:31:02 GMT
+"X-Varnish: 1587446046 1587445265
+Age: 5
+Via: 1.1 varnish
+Connection: keep-alive
+Ì
+<?xml version="1.0"?>
+<!DOCTYPE cross-domain-policy SYSTEM 
+"http://www.macromedia.com/xml/dtds/cross-domain-policy.dtd">
+<cross-domain-policy>
+   <allow-access-from domain="*" />
+</cross-domain-policy>

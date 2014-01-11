@@ -1,0 +1,25 @@
+PHTTP54.213.181.64"Ý
+POST /v1/t HTTP/1.1
+Host: api2.segment.io
+Connection: keep-alive
+Content-Length: 184
+"Origin: http://www.leadpages.net
+vUser-Agent: Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/31.0.1650.63 Safari/537.36
+Content-Type: text/plain
+Accept: */*
+-Referer: http://www.leadpages.net/products/
+$Accept-Encoding: gzip,deflate,sdch
+!Accept-Language: en-US,en;q=0.8
+º
+{"userId":null,"sessionId":"92210f301c6c5219","event":"Load Products Page","properties":{},"context":{"language":"en-US","library":"segment.js"},"apiKey":"qp5tf589x6","callbackId":752}*Ò
+HTTP/1.1 200 OK
+0Access-Control-Allow-Headers: X-Requested-With
+ Access-Control-Allow-Origin: *
+#Cache-Control: no-cache, no-store
+/Content-Type: application/json; charset=utf-8
+%Date: Thu, 09 Jan 2014 01:57:35 GMT
+X-Powered-By: Express
+Content-Length: 33
+Connection: keep-alive
+#
+{"success":true,"callbackId":752}

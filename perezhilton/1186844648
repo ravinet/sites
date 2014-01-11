@@ -1,0 +1,19 @@
+PHTTP107.6.110.252"ä
+GET / HTTP/1.1
+Host: www.perezhilton.com
+Connection: keep-alive
+TAccept: text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8
+vUser-Agent: Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/31.0.1650.63 Safari/537.36
+$Accept-Encoding: gzip,deflate,sdch
+!Accept-Language: en-US,en;q=0.8
+
+*Ò
+ HTTP/1.1 301 Moved Permanently
+#Location: http://perezhilton.com/
+%Date: Thu, 09 Jan 2014 01:52:54 GMT
+X-Varnish: 410628707
+Age: 0
+Connection: close
+Via: varnish ph13
+Vary: User-Agent
+

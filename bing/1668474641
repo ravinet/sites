@@ -1,0 +1,27 @@
+»HTTPS131.253.61.82"§
+¶GET /login.srf?wa=wsignin1.0&rpsnv=12&ct=1389226575&rver=6.0.5286.0&wp=MBI&wreply=https:%2F%2Fssl.bing.com%2Fsecure%2FPassport.aspx%3Fpopup%3D1&lc=1033&id=264960&checkda=1 HTTP/1.1
+Host: login.live.com
+Connection: keep-alive
+TAccept: text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8
+vUser-Agent: Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/31.0.1650.63 Safari/537.36
+Referer: http://www.bing.com/
+$Accept-Encoding: gzip,deflate,sdch
+!Accept-Language: en-US,en;q=0.8
+
+*«
+HTTP/1.1 302 Found
+Cache-Control: no-cache
+Pragma: no-cache
+Content-Length: 0
+(Content-Type: text/html; charset=utf-8
+(Expires: Thu, 09 Jan 2014 00:15:16 GMT
+=Location: https://ssl.bing.com/secure/Passport.aspx?popup=1
+Server: Microsoft-IIS/7.5
+)P3P: CP="DSP CUR OTPi IND OTRi ONL FIN"
+X-XSS-Protection: 0
+!X-Content-Type-Options: nosniff
+NSet-Cookie: MSPRequ=lt=1389226576&co=1&id=264960; path=/;HTTPOnly=;version=1
+*PPServer: PPV: 30 H: BAYIDSLGN2C018 V: 0
+%Date: Thu, 09 Jan 2014 00:16:15 GMT
+Connection: close
+

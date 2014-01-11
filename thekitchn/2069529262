@@ -1,0 +1,32 @@
+PHTTP209.126.235.136"Ý
+ÜGET /community_proxy/comments/counts?ids%5B%5D=198723&ids%5B%5D=198685&ids%5B%5D=198639&ids%5B%5D=198785&ids%5B%5D=198907&ids%5B%5D=198832&ids%5B%5D=198790&ids%5B%5D=186818&ids%5B%5D=30731&type=MovableTypePost HTTP/1.1
+Host: www.thekitchn.com
+Connection: keep-alive
+8Accept: application/json, text/javascript, */*; q=0.01
+"X-Requested-With: XMLHttpRequest
+vUser-Agent: Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/31.0.1650.63 Safari/537.36
+$Referer: http://www.thekitchn.com/
+$Accept-Encoding: gzip,deflate,sdch
+!Accept-Language: en-US,en;q=0.8
+
+*ú
+HTTP/1.1 200 OK
+Server: nginx/1.4.2
+%Date: Fri, 10 Jan 2014 17:01:35 GMT
+/Content-Type: application/json; charset=UTF-8
+Content-Length: 101
+Connection: keep-alive
+Status: 200 OK
+(Expires: Fri, 01 Jan 1990 00:00:00 GMT
+#X-UA-Compatible: IE=Edge,chrome=1
+0X-Request-Id: 7c83891222cf9d921f9578a72dd14af7
+X-Runtime: 0.005463
+4Cache-Control: private, max-age=0, must-revalidate
+Pragma: no-cache
+Accept-Ranges: bytes
+"X-Varnish: 2383682713 2383681814
+Age: 6
+Via: 1.1 varnish
+X-Cache: HIT
+g
+{"30731":1,"186818":3,"198790":10,"198907":10,"198723":0,"198685":0,"198639":0,"198785":0,"198832":0}

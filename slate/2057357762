@@ -1,0 +1,117 @@
+PHTTP23.6.21.109"÷
+‰GET /sync/js?01AD=3mrYyD3jlOQZOj0KzbEidnSr6-Th9RAsEVFK7WyhLR8cMPvb3-7KUtQ&01RI=AEBA9FC8F3ED827&01NA=na&sync=auto&mm_bnc&mm_bct HTTP/1.1
+Host: pixel.mathtag.com
+Connection: keep-alive
+Accept: */*
+vUser-Agent: Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/31.0.1650.63 Safari/537.36
+ Referer: http://www.slate.com/
+$Accept-Encoding: gzip,deflate,sdch
+!Accept-Language: en-US,en;q=0.8
+>Cookie: uuid=52cdf18c-a5e8-e643-4676-9c67817d5e6b; HRL8=CT-1
+
+*±7
+HTTP/1.1 200 OK
+Content-Type: text/javascript
+Content-Length: 6491
+\Server: mt2/2.9.1+aeb51e0 2.9.1.release Nov 15 2013 16:25:34 ord-pixel-x5 pid 0x3340 13120
+(Expires: Thu, 09 Jan 2014 00:47:08 GMT
+.Cache-Control: max-age=0, no-cache, no-store
+Pragma: no-cache
+%Date: Thu, 09 Jan 2014 00:47:08 GMT
+Connection: keep-alive
+]Set-Cookie: HRL8=CT-USR; expires=Thu, 06-Feb-2014 00:47:08 GMT; path=/; domain=.mathtag.com
+ZSet-Cookie: mt_misc=; domain=.mathtag.com; path=/; expires=Sat, 08-Feb-2014 00:47:08 GMT
+;P3P: CP="NON DSP ADM DEV PSD OUR IND STP PHY PRE NAV UNI"
+Ý2
+var mm_ri = String( Math.random() );
+mm_ri = mm_ri.replace( /0\./g,'' );
+
+var mm_protocol = location.protocol;
+if ( mm_protocol != 'http:' && mm_protocol != 'https:' ){ mm_protocol = 'http:'; }
+
+
+var sync_4815162342 = function()
+{
+this.urls = [
+"http://pixel.mathtag.com/misc/img?mt_id=0&mt_adid=0&mop_seq=0:32&mt_cb=822091&mop_top=",
+"http://cm.g.doubleclick.net/pixel?google_nid=mediamath&google_cm&google_hm=Us3xjKXo5kNGdpxngX1eaw",
+"http://pixel.mathtag.com/misc/img?mt_id=0&mt_adid=0&mop_seq=1:32&mt_cb=959533&mop_top=4:1388018848|",
+"http://www.facebook.com/fr/u.php?p=418865601488577&m=52cdf18c-a5e8-e643-4676-9c67817d5e6b",
+"http://pixel.mathtag.com/misc/img?mt_id=0&mt_adid=0&mop_seq=2:32&mt_cb=180860&mop_top=4:1388018848|23:1388018848|",
+"http://pixel.rubiconproject.com/tap.php?v=4222&nid=1512&put=52cdf18c-a5e8-e643-4676-9c67817d5e6b",
+"http://ib.adnxs.com/getuid?http://sync.mathtag.com/sync/img?mt_exid=13&mt_mminit=1&mt_exuid=$UID",
+"http://image2.pubmatic.com/AdServer/Pug?vcode=bz0yJnR5cGU9MSZjb2RlPTM2MiZ0bD00MzIwMA==&piggybackCookie=uid:52cdf18c-a5e8-e643-4676-9c67817d5e6b",
+"http://r.openx.net/set?pid=0b83a084-dd0b-4bfe-9e2e-ab3706fc9955&rtb=uuid%3D52cdf18c-a5e8-e643-4676-9c67817d5e6b",
+"http://tag.admeld.com/pixel?admeld_adprovider_id=296&custom_uuid=52cdf18c-a5e8-e643-4676-9c67817d5e6b&expiration=28days",
+"http://r.casalemedia.com/rum?cm_dsp_id=3&external_user_id=52cdf18c-a5e8-e643-4676-9c67817d5e6b",
+"http://tags.bluekai.com/site/2948?id=52cdf18c-a5e8-e643-4676-9c67817d5e6b",
+"http://tags.bluekai.com/site/4448?id=52cdf18c-a5e8-e643-4676-9c67817d5e6b",
+"http://pixel.mathtag.com/misc/img?mt_id=0&mt_adid=0&mop_seq=10:32&mt_cb=957064&mop_top=4:1388018848|23:1388018848|9:1388018848|13:1388018848|3:1388018848|5:1388018848|2:1388018848|15:1388018848|10002:1388018848|10010:1388018848|",
+"http://loadm.exelator.com/load/?p=204&g=101&buid=52cdf18c-a5e8-e643-4676-9c67817d5e6b&j=0",
+"http://e.nexac.com/e/media_math_sync.xgi?na_exid=52cdf18c-a5e8-e643-4676-9c67817d5e6b",
+"http://beacon.krxd.net/usermatch.gif?partner=mediamath&_kdpid=8dd53e69-ae3f-4829-8f12-05cc5b57b288&mmuuid=52cdf18c-a5e8-e643-4676-9c67817d5e6b",
+"http://bh.contextweb.com/bh/rtset?do=add&pid=530739&ev=52cdf18c-a5e8-e643-4676-9c67817d5e6b",
+"http://ad.yieldmanager.com/pixel?id=2172018&t=2&piggyback=http%3A%2F%2Fad.yieldmanager.com%2Fcms%2Fv1%3Fesig%3D1~444de053567fa80a3054a1981c8febcf1176dd9d%26nwid%3D10000355603%26sigv%3D1",
+"http://sync.zenoviaexchange.com/usersync/mediamath/52cdf18c-a5e8-e643-4676-9c67817d5e6b",
+"http://ad.360yield.com/match?publisher_dsp_id=5&external_user_id=52cdf18c-a5e8-e643-4676-9c67817d5e6b",
+"http://dis.criteo.com/pump/match.aspx?c=2&uid=52cdf18c-a5e8-e643-4676-9c67817d5e6b",
+"http://ce.lijit.com/merge?pid=3&3pid=52cdf18c-a5e8-e643-4676-9c67817d5e6b",
+"http://www.burstnet.com/user/2/bidder_id=77161&bidder_user_id=52cdf18c-a5e8-e643-4676-9c67817d5e6b",
+"http://pixel.mathtag.com/misc/img?mt_id=0&mt_adid=0&mop_seq=20:32&mt_cb=598688&mop_top=4:1388018848|23:1388018848|9:1388018848|13:1388018848|3:1388018848|5:1388018848|2:1388018848|15:1388018848|10002:1388018848|10010:1388018848|10008:1388018848|10011:1388018848|10031:1388018848|11:1388018848|10:1388018848|28:1388018848|16:1388018848|20:1388018848|17:1388018848|25:1388018848|",
+"http://delivery.swid.switchads.com/adserver/info.php?action=STORE&info=MMTH:52cdf18c-a5e8-e643-4676-9c67817d5e6b",
+"http://ums.adtechus.com/mapuser?providerid=1005;userid=52cdf18c-a5e8-e643-4676-9c67817d5e6b",
+"http://pix.btrll.com/353806.png",
+"http://sync.adap.tv/sync?type=gif&key=mediamathinc&uid=52cdf18c-a5e8-e643-4676-9c67817d5e6b",
+"http://y.one.impact-ad.jp/cs?d=70&uid=52cdf18c-a5e8-e643-4676-9c67817d5e6b&tg=2&et=30&r=no",
+"http://ih.adscale.de/adscale-ih/tpui?tpid=39&tpuid=52cdf18c-a5e8-e643-4676-9c67817d5e6b&cburl=http%3A%2F%2Fcotads.adscale.de%2Fads%2Fpixel%2F1by1.png",
+"http://rtb-csync.smartadserver.com/redir/?partnerid=25&partneruserid=52cdf18c-a5e8-e643-4676-9c67817d5e6b",
+"http://idsync.rlcdn.com/361087.gif?partner_uid=52cdf18c-a5e8-e643-4676-9c67817d5e6b",
+"http://p.acxiom-online.com/pixel/ddp?pid=3006&ord=1000&uid=52cdf18c-a5e8-e643-4676-9c67817d5e6b&ot=pixel&redir=http%3A%2F%2Fpixel.mathtag.com%2Fload%2Fimg%3Fmt_segld2%3D%23DATTRIBUTES%23%26mt_exid%3D10018%26mt_pi%3Dax%26mt_exuid%3D%23COOKIEID%23",
+"http://adadvisor.net/adscores/g.pixel?sid=9211132948&_ri=1359442172",
+"http://pixel.mathtag.com/misc/img?mt_id=0&mt_adid=0&mop_seq=30:32&mt_cb=745986&mop_top=4:1388018848|23:1388018848|9:1388018848|13:1388018848|3:1388018848|5:1388018848|2:1388018848|15:1388018848|10002:1388018848|10010:1388018848|10008:1388018848|10011:1388018848|10031:1388018848|11:1388018848|10:1388018848|28:1388018848|16:1388018848|20:1388018848|17:1388018848|25:1388018848|29:1388018848|21:1388018848|32:1388018848|31:1388018848|35:1388018848|26:1388018848|39:1388018848|10017:1388018848|10018:1388018848|10009:1388018848|",
+"http://su.addthis.com/red/usync?pid=11112&puid=52cdf18c-a5e8-e643-4676-9c67817d5e6b",
+"http://d.agkn.com/pixel/2184/?sync=615&che=1359442172&uuid=52cdf18c-a5e8-e643-4676-9c67817d5e6b",
+"http://pixel.mathtag.com/misc/img?mt_id=0&mt_adid=0&mop_seq=32:32&mt_cb=577709&check=52cdf18c-a5e8-e643-4676-9c67817d5e6b&mop_top=4:1388018848|23:1388018848|9:1388018848|13:1388018848|3:1388018848|5:1388018848|2:1388018848|15:1388018848|10002:1388018848|10010:1388018848|10008:1388018848|10011:1388018848|10031:1388018848|11:1388018848|10:1388018848|28:1388018848|16:1388018848|20:1388018848|17:1388018848|25:1388018848|29:1388018848|21:1388018848|32:1388018848|31:1388018848|35:1388018848|26:1388018848|39:1388018848|10017:1388018848|10018:1388018848|10009:1388018848|10025:1388018848|10013:1388018848|",
+]
+
+   this.progress = 0;
+
+   var self = this;
+
+   this.sync = function(url)
+   {
+      var e = new Image();
+      e.src = url;
+   }
+
+   this.batch = function()
+   {
+      for (var i = self.progress; i < self.urls.length; ++i)
+      {
+          self.sync(self.urls[i]);
+      }
+   }
+
+   this.final = function()
+   {
+      self.sync(self.urls[self.urls.length-1]+"&final");
+   }
+
+   this.some = function(howmany)
+   {
+      var count = 0;
+      for (var i = self.progress; i < self.urls.length && count < howmany; ++i)
+      {
+         self.sync(self.urls[self.progress++]);
+         count++;
+      }
+   }
+}
+
+
+var s_4815162342 = new sync_4815162342();
+s_4815162342.some(1);
+setTimeout('s_4815162342.some(2)', 1000);
+setTimeout(s_4815162342.batch, 3000);
+setTimeout(s_4815162342.final, 10000);
+

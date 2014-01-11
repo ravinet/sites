@@ -1,0 +1,80 @@
+PHTTP93.184.215.223"Ò
+,GET /80281E/u/u/ll2_css/reset.css HTTP/1.1
+Host: edge.liveleak.com
+Connection: keep-alive
+Accept: text/css,*/*;q=0.1
+vUser-Agent: Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/31.0.1650.63 Safari/537.36
+#Referer: http://www.liveleak.com/
+$Accept-Encoding: gzip,deflate,sdch
+!Accept-Language: en-US,en;q=0.8
+eCookie: PHPSESSID=2f039ea5414b5c51781e0775e45d0f70; liveleak_safe_mode=1; liveleak_use_old_player=1
+
+*Ý
+
+HTTP/1.1 200 OK
+Accept-Ranges: bytes
+*Cache-Control: public, max-age=788400000
+Content-Type: text/css
+%Date: Wed, 08 Jan 2014 16:50:32 GMT
+Etag: "3bb733-403-4dab5e06"
+(Expires: Mon, 14 Jul 1902 06:35:00 GMT
+.Last-Modified: Sun, 17 Apr 2011 21:39:18 GMT
+Server: ECAcc (mdw/12C7)
+X-Cache: HIT
+Content-Length: 1027
+…
+/* v1.0 | 20080212 */
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, font, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	outline: 0;
+	font-size: 100%;
+	/*vertical-align: baseline;*/ /*removed after alignment issues 17-6-2010*/
+	/*background: transparent;*/
+}
+
+body {
+	line-height: normal;
+}
+
+
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+
+/* remember to define focus styles! */
+:focus {
+	outline: 0;
+}
+
+/* remember to highlight inserts somehow! */
+ins {
+	text-decoration: none;
+}
+del {
+	text-decoration: line-through;
+}
+
+/* tables still need 'cellspacing="0"' in the markup */
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}

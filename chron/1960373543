@@ -1,0 +1,29 @@
+PHTTP74.201.80.25"Í
+ GET /partner_json/featured_events?spn_limit=1&advq=true&sponsored=true&ssrss=0&srss=3&fields=event.id%2Cevent.name%2Cevent.zurl%2Cevent.starttime%2Cevent.images%2Cevent.venue_id%2Cvenue.id%2Cvenue.name%2Cvenue.city%2Cvenue.zurl&image_size=thumb&rand_spn=5&st=event&jsonsp=jsp_0 HTTP/1.1
+Host: events.29-95.com
+Connection: keep-alive
+Accept: */*
+vUser-Agent: Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/31.0.1650.63 Safari/537.36
+ Referer: http://www.chron.com/
+$Accept-Encoding: gzip,deflate,sdch
+!Accept-Language: en-US,en;q=0.8
+
+*à	
+ HTTP/1.1 301 Moved Permanently
+Server: nginx/1.0.15
+%Date: Fri, 10 Jan 2014 16:04:19 GMT
+(Content-Type: text/html; charset=utf-8
+Transfer-Encoding: chunked
+Connection: keep-alive
+Status: 301 Moved Permanently
+X-Rack-Cache: miss
+"X-HTTP_CLIENT_IP_O: 128.30.76.55
+´Location: http://events.chron.com/partner_json/featured_events?advq=true&fields=event.id%2Cevent.name%2Cevent.zurl%2Cevent.starttime%2Cevent.images%2Cevent.venue_id%2Cvenue.id%2Cvenue.name%2Cvenue.city%2Cvenue.zurl&image_size=thumb&jsonsp=jsp_0&rand_spn=5&spn_limit=1&sponsored=true&srss=3&ssrss=0&st=event
+X-Runtime: 3
+Cache-Control: no-cache
+¾Set-Cookie: _zsess=BAh7BjoPc2Vzc2lvbl9pZCIlZGMxNDdmMmEyZGUyODkwZWRiYTExMzY2MmUwZTU5NjI%3D--cfe6dd5d51130e3c73d0a18a17b9f1bca4c7d3e5; path=/; expires=Thu, 10-Apr-2014 16:04:19 GMT; HttpOnly
+œ
+18e
+<html><body>You are being <a href="http://events.chron.com/partner_json/featured_events?advq=true&amp;fields=event.id%2Cevent.name%2Cevent.zurl%2Cevent.starttime%2Cevent.images%2Cevent.venue_id%2Cvenue.id%2Cvenue.name%2Cvenue.city%2Cvenue.zurl&amp;image_size=thumb&amp;jsonsp=jsp_0&amp;rand_spn=5&amp;spn_limit=1&amp;sponsored=true&amp;srss=3&amp;ssrss=0&amp;st=event">redirected</a>.</body></html>
+0
+

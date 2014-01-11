@@ -1,0 +1,55 @@
+PHTTP
+18.7.20.70"È
+>GET /assets/1389205433/js-lib/jquery.parseparams.js HTTP/1.1
+Host: g0.evitecdn.com
+Connection: keep-alive
+Accept: */*
+vUser-Agent: Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/31.0.1650.63 Safari/537.36
+ Referer: http://www.evite.com/
+$Accept-Encoding: gzip,deflate,sdch
+!Accept-Language: en-US,en;q=0.8
+
+*™
+HTTP/1.1 200 OK
+.Last-Modified: Wed, 08 Jan 2014 18:24:13 GMT
+*ETag: "0fc10298c5a2113f7ff5485a05f63f4b"
+%x-goog-generation: 1389205453121000
+x-goog-metageneration: 1
+*x-goog-stored-content-encoding: identity
+#x-goog-stored-content-length: 654
+&Content-Type: application/javascript
+Content-Language: en
+x-goog-hash: crc32c=JEi41w==
++x-goog-hash: md5=D8ECmMWiET9/9UhaBfY/Sw==
+Vary: Accept-Encoding
+Accept-Ranges: bytes
+Content-Length: 654
+ Access-Control-Allow-Origin: *
+"Access-Control-Expose-Headers: *
+FServer: HTTP Upload Server Built on Jan 1 2014 15:49:23 (1388620163)
+Alternate-Protocol: 80:quic
+%Cache-Control: public, max-age=3600
+(Expires: Thu, 09 Jan 2014 14:47:58 GMT
+%Date: Thu, 09 Jan 2014 13:47:58 GMT
+Connection: keep-alive
+ê
+/**
+ * $.parseParams - parse query string paramaters into an object.
+ */
+(function($) {
+var re = /([^&=]+)=?([^&]*)/g;
+var decodeRE = /\+/g;  // Regex for replacing addition symbol with a space
+var decode = function (str) {return decodeURIComponent( str.replace(decodeRE, " ") );};
+$.parseParams = function(query) {
+    var params = {}, e;
+    while ( e = re.exec(query) ) { 
+        var k = decode( e[1] ), v = decode( e[2] );
+        if (k.substring(k.length - 2) === '[]') {
+            k = k.substring(0, k.length - 2);
+            (params[k] || (params[k] = [])).push(v);
+        }
+        else params[k] = v;
+    }
+    return params;
+};
+})(jQuery);

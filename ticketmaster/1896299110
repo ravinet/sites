@@ -1,0 +1,45 @@
+»HTTPS108.170.199.172"Œ
+UGET /pixel?pixelID=102808&partnerID=9&clientID=2226&key=conv&returnType=js HTTP/1.1
+(Host: conversion-pixel.invitemedia.com
+Connection: keep-alive
+Accept: */*
+vUser-Agent: Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/31.0.1650.63 Safari/537.36
+šReferer: http://2036857.fls.doubleclick.net/activityi;src=2036857;type=gener779;cat=ticke902;u1=2966FAE38507A763-40000107E027FB6F;ord=1192796456161.8865
+$Accept-Encoding: gzip,deflate,sdch
+!Accept-Language: en-US,en;q=0.8
+
+*æ
+HTTP/1.1 200 OK
+Server: nginx/0.7.65
+%Date: Thu, 09 Jan 2014 01:04:28 GMT
+Content-Type: text/javascript
+Connection: close
+zSet-Cookie: uid=aaff58b3-d294-4341-b3f1-8d173113ea8e;Path=/;Domain=invitemedia.com;Expires=Fri, 09-Jan-2015 01:05:13 GMT
+(Expires: Thu, 01 Jan 1970 00:00:00 GMT
+’Set-Cookie: conversions="{\"102808\":1389229513}";Version=1;Path=/;Domain=invitemedia.com;Expires=Fri, 09-Jan-2015 01:05:13 GMT;Max-Age=31536000
+—Set-Cookie: segments_p1="eJzj4uKYsZhN4eTr7dNYAReLBIQ=";Version=1;Path=/;Domain=invitemedia.com;Expires=Fri, 09-Jan-2015 01:05:13 GMT;Max-Age=31536000
+Pragma: no-cache
+€P3P: policyref="/w3c/p3p.xml", CP="OTI DSP COR ADMo TAIo PSAo PSDo CONo OUR SAMo OTRo STP UNI PUR COM NAV INT DEM STA PRE LOC"
+Cache-Control: no-cache
+Content-Length: 356
+^Set-Cookie: impressions=;Path=/;Domain=invitemedia.com;Expires=Thu, 01-Jan-1970 00:00:01 GMT
+YSet-Cookie: clicks=;Path=/;Domain=invitemedia.com;Expires=Thu, 01-Jan-1970 00:00:01 GMT
+[Set-Cookie: segments=;Path=/;Domain=invitemedia.com;Expires=Thu, 01-Jan-1970 00:00:01 GMT
+\Set-Cookie: frequency=;Path=/;Domain=invitemedia.com;Expires=Thu, 01-Jan-1970 00:00:01 GMT
+_Set-Cookie: io_frequency=;Path=/;Domain=invitemedia.com;Expires=Thu, 01-Jan-1970 00:00:01 GMT
+æ
+makePixelRequest("https://ad.yieldmanager.com/pixel?id=1781576&id=1781577&t=2","image");
+
+function makePixelRequest(pixelURL,pixelType){
+
+    if(pixelType == "javascript")
+    {
+        document.write('<script src="'+pixelURL+'" type="text\/javascript"><\/script>');
+    }
+    else
+    {
+        var img = new Image();
+        img.src = pixelURL;
+    }
+}
+

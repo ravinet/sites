@@ -1,0 +1,40 @@
+PHTTP58.68.146.92"
+UGET /main/s?user=people|homepage|2013juxing06&db=people&border=0&local=yes HTTP/1.1
+Host: pmm.people.com.cn
+Connection: keep-alive
+TAccept: text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8
+vUser-Agent: Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/31.0.1650.63 Safari/537.36
+$Referer: http://www.people.com.cn/
+$Accept-Encoding: gzip,deflate,sdch
+!Accept-Language: en-US,en;q=0.8
+>Cookie: _weather_ip_c_code=72509; ALLYESID4=07912991D9F90F98
+
+*ÿ
+HTTP/1.1 200 OK
+%Date: Thu, 09 Jan 2014 00:57:56 GMT
+Server: Apache/2.2.22 (Unix)
+P3P: CP="OTI PSA OUR"
+#Cache-Control: no-store, no-cache
+Expires: -1
+Content-Length: 908
+Connection: close
+Content-Type: text/html
+Ž
+<html><head><meta http-equiv="cache-control" content="no-cache"></head><body style="BACKGROUND-COLOR:transparent">
+<SCRIPT LANGUAGE="Javascript">
+ADFHOST4853="http://pmm.people.com.cn";
+ADFCID4853=1058;
+ADFBID4853=4853;
+ADFUSER4853="http://pmm.people.com.cn/c?d=people&i=z1058,237132,4853&k=&p=0&v=76936659&rf=http%3A%2F%2Fwww%2Epeople%2Ecom%2Ecn%2F&u=";
+</SCRIPT>
+<script type="text/javascript">
+     document.write('<a style="display:none!important" id="tanx-a-mm_26632241_3327350_13656507"></a>');
+     tanx_s = document.createElement("script");
+     tanx_s.type = "text/javascript";
+     tanx_s.charset = "gbk";
+     tanx_s.id = "tanx-s-mm_26632241_3327350_13656507";
+     tanx_s.async = true;
+     tanx_s.src = "http://p.tanx.com/ex?i=mm_26632241_3327350_13656507";
+     tanx_h = document.getElementsByTagName("head")[0];
+     if(tanx_h)tanx_h.insertBefore(tanx_s,tanx_h.firstChild);
+</script>

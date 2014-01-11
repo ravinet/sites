@@ -1,0 +1,31 @@
+PHTTP72.21.214.200"ü
+GET /crossdomain.xml HTTP/1.1
+&Host: oggi-tracking.s3.amazonaws.com
+Connection: keep-alive
+vUser-Agent: Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/31.0.1650.63 Safari/537.36
+Accept: */*
+CReferer: http://embed.newsinc.com/thumbnail/iframe.html?wid=13109
+$Accept-Encoding: gzip,deflate,sdch
+!Accept-Language: en-US,en;q=0.8
+
+*’
+HTTP/1.1 200 OK
+Nx-amz-id-2: uYQqtESBB59CJVxKSLyH4f4Tobo1i5jIT+9cxcmZn7Qf6BMC9qRWF6RXSVnpJiAZ
+$x-amz-request-id: C637C83EAC964667
+%Date: Wed, 08 Jan 2014 16:57:00 GMT
+ x-amz-meta-s3fox-filesize: 305
+.x-amz-meta-s3fox-modifiedtime: 1307517100595
+Cache-Control: max-age=259200
+.Last-Modified: Wed, 08 Jun 2011 07:12:40 GMT
+*ETag: "5f1faa7b4ebf5aff68b48c39331bb0f0"
+Accept-Ranges: bytes
+Content-Type: text/xml
+Content-Length: 305
+Server: AmazonS3
+³
+<!DOCTYPE cross-domain-policy SYSTEM "http://www.macromedia.com/xml/dtds/cross-domain-policy.dtd">
+<cross-domain-policy>
+	<site-control permitted-cross-domain-policies="master-only" />
+	<allow-access-from domain="*" />
+	<allow-http-request-headers-from domain="*" headers="*"/>
+</cross-domain-policy>

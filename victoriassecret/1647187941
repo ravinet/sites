@@ -1,0 +1,55 @@
+PHTTP74.119.118.89"‹
+TGET /event?a=3573&v=2.0.0&p0=e%3Dexd%26site_type%3Dd&p1=e%3Dvh&p2=e%3Ddis HTTP/1.1
+Host: widget.criteo.com
+Connection: keep-alive
+Accept: */*
+vUser-Agent: Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/31.0.1650.63 Safari/537.36
+*Referer: http://www.victoriassecret.com/
+$Accept-Encoding: gzip,deflate,sdch
+!Accept-Language: en-US,en;q=0.8
+
+*â
+HTTP/1.1 200 OK
+Cache-Control: no-cache
+Pragma: no-cache
+7Content-Type: application/x-javascript; charset=utf-8
+Expires: -1
+Server: Microsoft-IIS/7.5
+4P3P: CP="NON DSP COR CURa PSA PSD OUR BUS NAV STA"
+ySet-Cookie: uid=56d0e37c-672f-49ae-b416-4bd407395612; domain=.criteo.com; expires=Fri, 09-Jan-2015 01:29:43 GMT; path=/
+ySet-Cookie: uid=56d0e37c-672f-49ae-b416-4bd407395612; domain=.criteo.com; expires=Fri, 09-Jan-2015 01:29:43 GMT; path=/
+­Set-Cookie: uic=*1w9W7fYGb1g6r%2bzYBsnuGakNc%2fk%2fOaTT0EGo5s8CIVEu6%2frJc48uQXLslCw51X3uAYGpYQvXRE%2b%2fR52m5%2fo48uLK47UfCmJKsfyqKOKrQJQ6%2fXF2tpMja%2f3Zj8BaY%2bmmDcSUjCQAGWht%2f2HxFRigx6DezNCpyg9l9S8R%2fBHH4FxyPv%2fqHsdCG%2fnc2zuNPM7rUN%2fIpva40w%2fcymiFocBxS2BOrGhHKjqs5VYS0q0Zsdr7pvN5qoolxeW92cb94iSNIN0IjmzW%2b2zwykbXNHSpb%2bC0p5nW7q4%2bCEqvrvb1%2fNZ4%3d; domain=.criteo.com; expires=Wed, 09-Jul-2014 00:29:44 GMT; path=/
+wSet-Cookie: udc=*1AjVT%2bgfw%2f8PyH2Istroh8g%3d%3d; domain=.criteo.com; expires=Wed, 09-Jul-2014 00:29:44 GMT; path=/
+sSet-Cookie: udi=*1McrBivjzmLrrhQQdCr4RHg%3d%3d; domain=.criteo.com; expires=Fri, 10-Jan-2014 01:29:44 GMT; path=/
+%Date: Thu, 09 Jan 2014 01:29:44 GMT
+Content-Length: 942
+°
+/*<!--*/(function() {
+var qss = '&cb=' + Math.floor(Math.random() * 99999999999);
+try {
+    qss += '&ref=' + encodeURIComponent(document.referrer);
+} catch (e) { }
+try {
+    qss += '&sc_r=' + encodeURIComponent(screen.width + 'x' + screen.height);
+} catch (e) { }
+try {
+    qss += '&sc_d=' + encodeURIComponent(screen.colorDepth);
+} catch (e) { }
+
+var callDis = function(pid, domain) {
+    var qr = (document.location.protocol == 'https:' ? 'https:' : 'http:') + '//' + domain + '/dis/dis.aspx';
+    var p = document.createElement('iframe');
+    p.width = p.height = '0';
+    p.style.display = 'none';
+    p.src = (qr + '?p=' + pid + qss).substring(0, 2000);
+
+    var c = document.getElementById('criteoTagsContainer');
+    if (c) {
+        c.appendChild(p);
+    } else {
+        criteo_q.push({ event: 'appendTag', element: p });
+    }
+};
+qss += '&site_type=d';
+callDis(3573, 'dis.sv.us.criteo.com');
+})();/*-->*/

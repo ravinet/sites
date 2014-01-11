@@ -1,0 +1,28 @@
+PHTTP216.136.229.72"á
+GET / HTTP/1.1
+Host: www.rightnow.com
+Connection: keep-alive
+TAccept: text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8
+vUser-Agent: Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/31.0.1650.63 Safari/537.36
+$Accept-Encoding: gzip,deflate,sdch
+!Accept-Language: en-US,en;q=0.8
+
+*Ê
+ HTTP/1.1 301 Moved Permanently
+%Date: Thu, 09 Jan 2014 01:25:46 GMT
+Server: Apache
++Location: http://www.oracle.com/rightnow/
+ Cache-Control: max-age=2592000
+(Expires: Sat, 08 Feb 2014 01:25:46 GMT
+Content-Length: 239
+ Keep-Alive: timeout=15, max=56
+Connection: Keep-Alive
+-Content-Type: text/html; charset=iso-8859-1
+ñ
+<!DOCTYPE HTML PUBLIC "-//IETF//DTD HTML 2.0//EN">
+<html><head>
+<title>301 Moved Permanently</title>
+</head><body>
+<h1>Moved Permanently</h1>
+<p>The document has moved <a href="http://www.oracle.com/rightnow/">here</a>.</p>
+</body></html>

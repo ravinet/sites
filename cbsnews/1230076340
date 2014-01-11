@@ -1,0 +1,30 @@
+PHTTP
+18.7.20.69"½
+3POST /feedfiles/breakingnews.desktop.xml HTTP/1.1
+Host: www.cbsnews.com
+Connection: keep-alive
+Content-Length: 0
+Accept: */*
+ Origin: http://www.cbsnews.com
+"X-Requested-With: XMLHttpRequest
+vUser-Agent: Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/31.0.1650.63 Safari/537.36
+"Referer: http://www.cbsnews.com/
+$Accept-Encoding: gzip,deflate,sdch
+!Accept-Language: en-US,en;q=0.8
+ÿCookie: fly_device=desktop; cbsnews_ad=%7B%22region%22%3A%22aw%22%2C%22type%22%3A%22gpt%22%2C%22session%22%3A%22c%22%7D; MAD_SESSION=c; s_cc=true; s_fid=4EC44800FBAD148D-29690E43DA4501F5; s_vnum=1391822154332%26vn%3D1; s_invisit=true; s_getNewRepeat=1389230154333-New; s_lv_cbsnews=1389230154334; s_lv_cbsnews_s=First%20Visit; s_sq=%5B%5BB%5D%5D; fly_img=%7B%22pixelRatio%22%3A1%7D
+
+*‘
+HTTP/1.1 200 OK
+.Last-Modified: Wed, 08 Jan 2014 19:50:41 GMT
+!ETag: "ca199e-50-4ef7acece344a"
+Accept-Ranges: bytes
+Content-Length: 80
+Content-Type: application/xml
+Cache-Control: max-age=60
+(Expires: Thu, 09 Jan 2014 01:16:42 GMT
+%Date: Thu, 09 Jan 2014 01:15:42 GMT
+Connection: keep-alive
+R
+<?xml version="1.0"?>
+<cbsNewsTicker active="0" version="1.0">
+</cbsNewsTicker>

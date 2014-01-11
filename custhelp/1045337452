@@ -1,0 +1,28 @@
+PHTTP
+18.7.20.70"›
+GET /crossdomain.xml HTTP/1.1
+Host: sun.edgeboss.net
+Connection: keep-alive
+vUser-Agent: Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/31.0.1650.63 Safari/537.36
+Accept: */*
+pReferer: http://www.oracle.com/us/solutions/customer-experience/oracle-customer-experience/overview/index.html
+$Accept-Encoding: gzip,deflate,sdch
+!Accept-Language: en-US,en;q=0.8
+
+*í
+HTTP/1.1 200 OK
+Server: Apache
+5ETag: "d0b18a74a766b676d0e4f88778e5da99:1368735980"
+.Last-Modified: Thu, 16 May 2013 20:26:20 GMT
+Accept-Ranges: bytes
+Content-Length: 203
+Content-Type: application/xml
+%Date: Thu, 09 Jan 2014 01:25:47 GMT
+Connection: keep-alive
+Í
+<?xml version="1.0"?>
+<!DOCTYPE cross-domain-policy SYSTEM
+"http://www.adobe.com/xml/dtds/cross-domain-policy.dtd">
+<cross-domain-policy>
+	        <allow-access-from domain="*" />
+</cross-domain-policy>

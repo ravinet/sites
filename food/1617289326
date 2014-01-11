@@ -1,0 +1,127 @@
+PHTTP72.21.91.19"à
+9GET /ct/ct-e15eb83a70f4461b9851b45d9b2566b3.js HTTP/1.1
+Host: cti.w55c.net
+Connection: keep-alive
+Accept: */*
+vUser-Agent: Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/31.0.1650.63 Safari/537.36
+Referer: http://www.food.com/
+$Accept-Encoding: gzip,deflate,sdch
+!Accept-Language: en-US,en;q=0.8
+
+*¸
+HTTP/1.1 200 OK
+Accept-Ranges: bytes
+*Cache-Control: no-cache, must-revalidate
+Content-Type: text/javascript
+%Date: Thu, 09 Jan 2014 01:29:24 GMT
+Etag: "127558259"
+(Expires: Fri, 01 Jan 1990 00:00:00 GMT
+.Last-Modified: Tue, 09 Aug 2011 15:37:08 GMT
+xP3P: policyref="https://cts.w55c.net/ct/p3p_policy_ref.xml", CP="UNI PUR COM INT STA OTC STP OUR CUR TAIo COR DSP NOI"
+Pragma: no-cache
+Server: ECS (lax/45A5)
+X-Cache: HIT
+Content-Length: 3285
+×
+
+function w55cTagClass(){
+        this.links=[
+        { 'href' : 'http://tags.w55c.net/rs?id=e15eb83a70f4461b9851b45d9b2566b3&t=homepage', 'type' : 'IMG' },
+        { 'href' : 'http://ad.yieldmanager.com/pixel?adv=461396&code=0ASczZkhj7&t=2', 'type' : 'IMG' }
+        ];
+        this.imgs=new Array();
+        this.args=new Array();
+        this.process();
+}
+
+w55cTagClass.prototype.addImg=function(href){
+    var img=document.createElement('img');
+    img.src=href;
+    this.imgs.push(img);
+};
+
+w55cTagClass.prototype.addJsSrc=function(href){
+    var script=document.createElement('script'),
+        head=document.getElementsByTagName('head')[0],
+        body=document.getElementsByTagName('body')[0];
+    script.type='text/javascript';
+    script.src=href;
+    if (head==null){
+        head=document.createElement('head');
+        body.parentNode.insertBefore(head,body);
+    }
+    head.appendChild(script);
+};
+
+w55cTagClass.prototype.mergeParams=function(curLink){
+    var paramIter,
+        argsIter,
+        argCount=0,
+        curParam,
+        curArg,
+        params;
+    if (curLink.indexOf('?')>=0){
+        params=curLink.split('?');
+        curLink=params[0]+'?';
+        params=params[1].split('&');                
+        for (paramIter=0;paramIter<params.length;paramIter++){
+            curParam=params[paramIter];
+            if (curParam.indexOf('$')>=0){
+                for (argsIter=0;argsIter<this.args.length;argsIter++){
+                    curArg=this.args[argsIter];
+                    if (curArg.regex.test(curParam)){
+                        curParam=curParam.replace(curArg.regex,curArg.val);
+                        argCount++;
+                    }                    
+                }
+                if (!argCount){
+                    curParam=curParam.replace(/[=].+/,'=');
+                }
+            }
+            curLink+=curParam+'&';
+        }
+        curLink=curLink.replace(/[&]$/,'');
+    }
+    return curLink
+};
+
+w55cTagClass.prototype.processLinks=function(){
+    var linkIter,
+        paramIter,
+        curLink,
+        curParam,
+        params,
+        target;
+    for (linkIter=0;linkIter<this.links.length;linkIter++){
+        curLink=this.links[linkIter].href;
+        curLink=this.mergeParams(curLink)
+        switch(this.links[linkIter].type){
+            case 'JS_SRC' : this.addJsSrc(curLink);
+                            break;
+            case 'IMG'    : this.addImg(curLink);
+                            break;
+            default       : break;
+        }
+    }
+};
+
+w55cTagClass.prototype.process=function(){
+    var iter,
+        argsArray=new Array(),
+        argsTmp,
+        target=new RegExp("^http://cti.w55c.net/ct/ct-e15eb83a70f4461b9851b45d9b2566b3.js([?]|$)","i"),
+        scripts=document.getElementsByTagName('script');
+    for (iter=0;iter<scripts.length;iter++){
+        if (target.test(scripts[iter].src)){
+            argsArray=scripts[iter].src.replace(/^[^?]+[?]/,'').split('&');
+            break;
+        }
+    }
+    for (iter=0;iter<argsArray.length;iter++){
+        argsTmp=argsArray[iter].split('=');
+        this.args.push({ 'regex': new RegExp('[=][$]'+decodeURI(argsTmp[0])+'$'), 'val': '='+argsTmp[1]});
+    }     
+    this.processLinks();
+};
+                   
+var w55cTag=new w55cTagClass();

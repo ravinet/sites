@@ -1,0 +1,99 @@
+PHTTP69.59.149.117"Ê
+GET /trackalyze.js HTTP/1.1
+Host: t2.trackalyzer.com
+Connection: keep-alive
+Accept: */*
+vUser-Agent: Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/31.0.1650.63 Safari/537.36
+Referer: http://www.zedo.com/
+$Accept-Encoding: gzip,deflate,sdch
+!Accept-Language: en-US,en;q=0.8
+
+*³
+HTTP/1.1 200 OK
+Content-Length: 1343
+(Content-Type: application/x-javascript
+.Last-Modified: Wed, 09 Mar 2011 05:44:45 GMT
+Accept-Ranges: bytes
+ETag: "986387181ddecb1:5fc"
+Server: Microsoft-IIS/6.0
+TP3P: policyref="http://trackalyzer.com/w3c/p3p.xml", CP="NON DSP COR CURa OUR NOR"
+X-Powered-By: ASP.NET
+%Date: Thu, 09 Jan 2014 00:29:24 GMT
+Á
+
+var i;
+var llactid;
+var myid;
+
+myid = 1;
+mypage = escape(location.href);
+myref = escape(document.referrer);
+myip = escape(location.hostaddress);
+
+if (i!="undefined")
+    {
+	if (i>10000)
+	{
+        myid = i;
+	}
+    }
+
+if  (llactid!="undefined")
+    {
+	if (llactid>10000)
+	{
+        myid = llactid;
+	}
+    }
+
+
+
+if (myref=="")
+    {
+     myref="None";
+    }
+if (mypage=="")
+    {
+    mypage="Unavailable";
+    }
+var linkreefer = "http://t2.trackalyzer.com/trackalyze.asp?r=" + myref + "&p=" + mypage + "&i=" + myid;
+document.write ("<img src='" + linkreefer + "'>");
+
+
+
+function Trackalyzer (myid, page)
+{
+	var currentpage = (location.href);
+	var mypage = escape(location.href);
+	var myref = escape(document.referrer);
+	var myip = escape(location.hostaddress);
+	var forward = false;
+if (page!=null)
+	{
+	mypage=page;
+	forward=true;
+	};
+if (myref=="")
+    {
+     myref="None";
+    };
+if (mypage=="")
+    {
+    mypage="Unavailable";
+    };
+var linkreefer = "http://t2.trackalyzer.com/trackalyze.asp?i=" + myid + "&r=" + myref + "&p=" + mypage + "&f=" + forward;
+document.write ("<img src='" + linkreefer + "'>");
+
+if (forward==true)
+	{
+	if (myid = 16228)
+		{
+		window.location.href = (mypage);
+		}
+	else
+		{
+		window.location = (currentpage);
+		window.open(mypage)
+		}
+	};
+}

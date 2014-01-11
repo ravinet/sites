@@ -1,0 +1,73 @@
+PHTTP216.52.92.23"ï
+çGET /a/h/BH7nnRsPXqmkNC7fRcj1zKviQ2ZsjUcSoOt0lqLFswM=?cb=bafefeffa67ccbbe352df1127848f730&pageUrl=http%3A%2F%2Fwww.usnews.com%2F&description=VIDEO_DESCRIPTION&duration=VIDEO_DURATION&id=VIDEO_ID&keywords=VIDEO_KEYWORDS&title=VIDEO_TITLE&url=VIDEO_URL&eov=eov HTTP/1.1
+Host: u-ads.adap.tv
+Connection: keep-alive
+vUser-Agent: Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/31.0.1650.63 Safari/537.36
+Accept: */*
+CReferer: http://embed.newsinc.com/thumbnail/iframe.html?wid=13109
+$Accept-Encoding: gzip,deflate,sdch
+!Accept-Language: en-US,en;q=0.8
+∏Cookie: adaptv_unique_user_cookie="4335081223023565348__TIME__2014-01-08+08%3A56%3A58"; redundant_unique_user_cookie="4023270364020283940__TIME__2014-01-08+08%3A56%3A58"; rtbData0=""
+
+*æ
+HTTP/1.1 200 OK
+Server: adaptv/1.0
+Content-Type: text/xml
+Connection: Keep-Alive
+4Cache-Control: no-cache, no-store, must-revalidate
+Pragma: no-cache
+Expires: 0
+ Access-Control-Allow-Origin: *
+Content-Length: 2122
+Ã
+<?xml version="1.0" encoding="UTF-8"?>
+
+<VAST version="2.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="oxml.xsd">
+	<Ad id="1">
+		<InLine>
+			<AdSystem version="1.0">Adap.tv</AdSystem>
+
+			<AdTitle><![CDATA[Adaptv Ad]]></AdTitle>
+
+			<Impression>			</Impression>
+
+			<Creatives>
+				<Creative>
+					<Linear>
+						<Duration><![CDATA[00:00:30]]></Duration>
+
+						<MediaFiles>
+							<MediaFile delivery="progressive" width="400" height="300" type="application/x-shockwave-flash" apiFramework="VPAID"><![CDATA[http://redir.adap.tv/redir/plugins3/AppInfoShim.swf?adTagUrl=http%3A%2F%2Fads.adap.tv%2Fa%2Fh%2FBH7nnRsPXqmkNC7fRcj1zKviQ2ZsjUcSoOt0lqLFswM%3D%3Fcb%3Dbafefeffa67ccbbe352df1127848f730%26pageUrl%3Dhttp%253A%252F%252Fwww.usnews.com%252F%26description%3DVIDEO_DESCRIPTION%26duration%3DVIDEO_DURATION%26id%3DVIDEO_ID%26keywords%3DVIDEO_KEYWORDS%26title%3DVIDEO_TITLE%26url%3DVIDEO_URL%26eov%3Deov&injectCompanionDummy=&companionId=&cpmPassback=&pauseOnClick=&placementId=107829&orgId=5047&a.rid=&a.pvt=0]]></MediaFile>
+						</MediaFiles>
+					</Linear>
+				</Creative>
+
+				<Creative>
+					<CompanionAds>
+						<Companion width="300" height="250">
+							<HTMLResource><![CDATA[<div id="adaptvCompanion300x250" style="display:none;"></div>]]></HTMLResource>
+						</Companion>
+
+						<Companion width="300" height="60">
+							<HTMLResource><![CDATA[<div id="adaptvCompanion300x60" style="display:none;"></div>]]></HTMLResource>
+						</Companion>
+
+						<Companion width="300" height="100">
+							<HTMLResource><![CDATA[<div id="adaptvCompanion300x100" style="display:none;"></div>]]></HTMLResource>
+						</Companion>
+
+						<Companion width="468" height="60">
+							<HTMLResource><![CDATA[<div id="adaptvCompanion468x60" style="display:none;"></div>]]></HTMLResource>
+						</Companion>
+
+						<Companion width="728" height="90">
+							<HTMLResource><![CDATA[<div id="adaptvCompanion728x90" style="display:none;"></div>]]></HTMLResource>
+						</Companion>
+					</CompanionAds>
+				</Creative>
+			</Creatives>
+
+			<Extensions>			</Extensions>
+		</InLine>
+	</Ad>
+</VAST>

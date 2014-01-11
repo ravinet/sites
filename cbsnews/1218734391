@@ -1,0 +1,27 @@
+PHTTP
+18.7.20.68"â
+²GET /NGBuzz//gateway.ashx/ngdsr/?buzzId=187594&apiToken=18E45DF08C414168B99ADDF208CBBAFE&C_=NGBuzz.Classes.BuzzAPI%2CNGBuzz&M_=LookupDMA&zipCode=10001&_dsrId=zip_10001 HTTP/1.1
+Host: nmp.newsgator.com
+Connection: keep-alive
+Accept: */*
+vUser-Agent: Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/31.0.1650.63 Safari/537.36
+"Referer: http://www.cbsnews.com/
+$Accept-Encoding: gzip,deflate,sdch
+!Accept-Language: en-US,en;q=0.8
+
+*î
+HTTP/1.1 200 OK
+.Content-Type: text/javascript; charset=utf-8
+Server: Microsoft-IIS/8.0
+X-AspNet-Version: 4.0.30319
+X-Powered-By: ASP.NET
+Content-Length: 168
+%Cache-Control: private, max-age=600
+(Expires: Thu, 09 Jan 2014 01:25:42 GMT
+%Date: Thu, 09 Jan 2014 01:15:42 GMT
+Connection: keep-alive
+ª
+window.ng_scriptload({"id":'zip_10001',
+"status":200,
+"statusText":"OK",
+"response":{"error":"","result":{"ZipCode":10001,"DMAName":"NEW YORK","City":"","State":""}}});

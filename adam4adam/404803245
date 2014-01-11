@@ -1,0 +1,131 @@
+PHTTP173.192.3.189"Â
+1GET /ressources/rjava/general.js?v=276 HTTP/1.1
+Host: images.adam4adam.com
+Connection: keep-alive
+Accept: */*
+vUser-Agent: Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/31.0.1650.63 Safari/537.36
+$Referer: http://www.adam4adam.com/
+$Accept-Encoding: gzip,deflate,sdch
+!Accept-Language: en-US,en;q=0.8
+
+*ç
+HTTP/1.1 200 OK
+&Content-Type: application/javascript
+.Last-Modified: Wed, 21 Nov 2012 13:43:06 GMT
+Server: A4A
+Content-Length: 2478
+Accept-Ranges: bytes
+%Date: Thu, 09 Jan 2014 13:42:43 GMT
+"X-Varnish: 1290755252 1286993103
+Age: 1918
+Via: 1.1 varnish
+Connection: keep-alive
+(Expires: Sat, 11 Jan 2014 13:42:43 GMT
+∞
+function myConfirm(message, callback){
+	//show fallr only for desktop users
+	if(onDesktop == 1){
+		$.fallr('show', {
+		    buttons : {
+		        button1 : {text: 'Yes', onclick: function(){
+	                $.fallr('hide'); 
+	                if(callback == undefined)
+	                	return true;
+	                else
+	                	callback(true);
+	            }},
+		        button2 : {text: 'Cancel', onclick: function(){
+	                $.fallr('hide'); 
+	                if(callback == undefined)
+	                	return false;
+	                else
+	                	callback(false);
+	            }}
+		    },
+		    content : '<p>'+message+'</p>',
+		    icon    : 'question',
+		    closeKey: true,
+		    position: 'top',
+		    useOverlay: false
+		});
+	}
+	else{
+		var strippedMessage = message.replace(/(<([^>]+)>)/ig,"");
+		if(confirm(strippedMessage)){
+			if(callback == undefined)
+				return true;
+			else
+				callback(true);
+		}
+		else{
+			if(callback == undefined)
+				return false;
+			else
+				callback(false);
+		}
+	}
+}
+
+function myConfirmHref(message,target) {
+	myConfirm(message, function (result){
+		if(result == true)
+			document.location = target;
+	});
+
+}
+
+function myMessage(message, type){
+	if(onDesktop == 1){
+		$.fallr('show', {
+		    content     : '<p>'+message+'</p>',
+		    autoclose   : 3500,
+		    icon        : 'info',
+		    position	: 'top',
+		    useOverlay : false
+		});
+	}
+	else{
+		alert(message);
+	}
+	
+}
+
+function myErrorMessage(message, type){
+	if(onDesktop == 1){
+		$.fallr('show', {
+		    content     : '<p>'+message+'</p>',
+		    autoclose   : 3500,
+		    icon        : 'warning',
+		    position	: 'top',
+		    useOverlay : false
+		});
+	}
+	else{
+		alert(message);
+	}
+}
+
+function openProfile(target){
+	var screenHeight = screen.height;
+	var windowHeight;
+	
+	if(screenHeight == undefined || screenHeight >= 785 || screenHeight == 0)
+		windowHeight = 785;
+	else if(screenHeight < 785)
+		windowHeight = screenHeight;
+		
+	newWin = window.open(target, 'profile', 'height='+windowHeight+',width=700,scrollbars=1,toolbar=0,resizable');
+	newWin.focus();
+	return false;
+}
+
+function generateRandomString(n)
+{
+    var text = "";
+    var possible = "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789";
+
+    for( var i=0; i < n; i++ )
+        text += possible.charAt(Math.floor(Math.random() * possible.length));
+
+    return text;
+}

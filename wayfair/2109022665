@@ -1,0 +1,27 @@
+PHTTP54.230.54.18"Ü
+!GET /?advertiser_id=39 HTTP/1.1
+%Host: d3iwjrnl4m67rd.cloudfront.net
+Connection: keep-alive
+Accept: */*
+vUser-Agent: Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/31.0.1650.63 Safari/537.36
+"Referer: http://www.wayfair.com/
+$Accept-Encoding: gzip,deflate,sdch
+!Accept-Language: en-US,en;q=0.8
+
+*û$
+HTTP/1.1 200 OK
+(Content-Type: application/x-javascript
+Content-Length: 4217
+Connection: keep-alive
+%Date: Sun, 04 Aug 2013 22:22:02 GMT
+Cache-Control: max-age=14400
+.Last-Modified: Sun, 04 Aug 2013 22:18:00 GMT
+*ETag: "6e246e5ac9ae546569677078465f832c"
+Accept-Ranges: bytes
+Server: AmazonS3
+Age: 5229
+X-Cache: Hit from cloudfront
+GVia: 1.1 39a2ccfa8f9c99bc1b56abaf61577f5b.cloudfront.net (CloudFront)
+GX-Amz-Cf-Id: l9k6g953_4gNSC-5tMkyEewNlIfhlCVuZyrkORYpLuf-EDLFckWXKQ==
+û 
+(function(e){function r(){var e=t.getElementsByTagName("script");for(var n=0;n<e.length;n++){var r=e[n].src;if(r.match("d3iwjrnl4m67rd.cloudfront.net")||r.match("tag.triplelift.com")){if(e[n].id==1){return true}else{e[n].id=1;return false}}}}function i(){var e=t.getElementsByTagName("script");for(var n=0;n<e.length;n++){var r=e[n].src;if(r.match("d3iwjrnl4m67rd.cloudfront.net")||r.match("tag.triplelift.com")){var i=r.split("?");return i[1].slice(14)}}}function o(e){var t=o.options,n=t.parser[t.strictMode?"strict":"loose"].exec(e),r={},i=14;while(i--)r[t.key[i]]=n[i]||"";r[t.q.name]={};r[t.key[12]].replace(t.q.parser,function(e,n,i){if(n)r[t.q.name][n]=i});return r}function a(e,t){if(!e.match(/^http/))e="http://"+e;var n=Object.keys(t);if(!n.length)return e;if(e.indexOf("?")===e.length-1){e=e.slice(0,e.length-1)}var r="?";var i,s;for(i=0,s=n.length;i<s;i++){if(i===s-1){r+=n[i]+"="+t[n[i]]}else{r+=n[i]+"="+t[n[i]]+"&"}}return e+r}function f(e){var r=t.createElement("img");var i=a(n+"/slp",e);r.setAttribute("src",i);r.setAttribute("width",0);r.setAttribute("height",0);r.onload=function(){t.body.removeChild(r)};t.body.appendChild(r);return}function l(n){var r={},s,a,l;var c;var h=e.event?e.event.srcElement:n.target;if(!h.match)h=n.target?n.target:n.srcElement;if(h&&h.className&&typeof h.className.match==="function"&&h.className.match("PIN")&&h.attributes["data-pin-media"]&&h.attributes["data-pin-url"]){c=h.getAttribute("data-pin-media");r.id=i();r.domain=u;r.img=encodeURIComponent(c);r.button="false";r.referrer=encodeURIComponent(t.URL);r.original_referrer=encodeURIComponent(t.referrer);return f(r)}else if(h&&h.href&&/pinterest.com\/pin\/create/.exec(h.href)||h&&h.getAttribute&&h.getAttribute("data-href")&&/pinterest.com\/pin\/create/.exec(h.getAttribute("data-href"))){if(h.href&&h.href.match("pinterest.com/pin/create/button/")){s=h.href}else{s=h.getAttribute("data-href")}a=o(s);l=a.queryKey;r.button="true";r.id=i();r.domain=u;r.img=l.media;r.referrer=encodeURIComponent(t.URL);return f(r)}}function c(){var e=t.createElement("img");e.setAttribute("height",0);e.setAttribute("width",0);var r="";var s={};s.referrer=encodeURIComponent(t.URL);s.domain=encodeURIComponent(u);s.pin_referrer=encodeURIComponent(t.referrer);s.id=i();r=a(n+"/slc",s);e.setAttribute("src",r);e.onload=function(){t.body.removeChild(e)};t.body.appendChild(e)}var t=e.document;var n="";if(e.location.protocol==="https:")n="https:/eb.3lift.com";else if(e.location.protocol==="http:")n="http://eb.3lift.com";else n="http://eb.3lift.com";if(r()){return}var s=false;if(!Array.prototype.indexOf){Array.prototype.indexOf=function(e){if(this==null){throw new TypeError}var t=Object(this);var n=t.length>>>0;if(n===0){return-1}var r=0;if(arguments.length>0){r=Number(arguments[1]);if(r!=r){r=0}else if(r!=0&&r!=Infinity&&r!=-Infinity){r=(r>0||-1)*Math.floor(Math.abs(r))}}if(r>=n){return-1}var i=r>=0?r:Math.max(n-Math.abs(r),0);for(;i<n;i++){if(i in t&&t[i]===e){return i}}return-1}}Object.keys=Object.keys||function(e){var t=[];for(var n in e){if(e.hasOwnProperty(n))t.push(n)}return t};o.options={strictMode:false,key:["source","protocol","authority","userInfo","user","password","host","port","relative","path","directory","file","query","anchor"],q:{name:"queryKey",parser:/(?:^|&)([^&=]*)=?([^&]*)/g},parser:{strict:/^(?:([^:\/?#]+):)?(?:\/\/((?:(([^:@]*)(?::([^:@]*))?)?@)?([^:\/?#]*)(?::(\d*))?))?((((?:[^?#\/]*\/)*)([^?#]*))(?:\?([^#]*))?(?:#(.*))?)/,loose:/^(?:(?![^:@]+:[^:@\/]*@)([^:\/?#.]+):)?(?:\/\/)?((?:(([^:@]*)(?::([^:@]*))?)?@)?([^:\/?#]*)(?::(\d*))?)(((\/(?:[^?#](?![^?#\/]*\.[^?#\/.]+(?:[?#]|$)))*\/?)?([^?#\/]*))(?:\?([^#]*))?(?:#(.*))?)/}};var u=o(t.URL).host;(function(){var n=o(t.referrer).host;if(n.match("pinterest.com")){c()}if(n.match("adpinr.com")){c()}})();if(t.addEventListener){t.addEventListener("click",l,false)}if(t.attachEvent&&!t.addEventListener){t.attachEvent("onclick",l)}(function(){var n={};var r=Math.round(Math.random()*1e3);var s="";var f=t.createElement("img");if(r===1){n.id=i();n.type="publift";n.domain=u;n.referrer=o(t.referrer).host;if(n.referrer===""){n.referrer="direct"}s=a("http://eb.3lift.com/imp",n);f.src=s;f.width=0;f.height=0;t.body.appendChild(f)}})()})(window)

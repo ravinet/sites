@@ -1,0 +1,87 @@
+PHTTP4.27.18.254"€
+LGET /incl_/thirdparty/vendor_cleanup_images-v12161641710001751.js HTTP/1.1
+Host: cdn9.staticsfly.com
+Connection: keep-alive
+Accept: */*
+vUser-Agent: Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/31.0.1650.63 Safari/537.36
+%Referer: http://www.shutterfly.com/
+$Accept-Encoding: gzip,deflate,sdch
+!Accept-Language: en-US,en;q=0.8
+
+*Å
+HTTP/1.1 200 OK
+%Date: Fri, 10 Jan 2014 16:15:27 GMT
+(Expires: Tue, 06 Jan 2015 15:20:04 GMT
+.Last-Modified: Tue, 15 Jul 2008 23:22:51 GMT
+!Cache-Control: max-age=31536000
+Content-Type: text/javascript
+ETag: "6d7-452184966a8c0"
+Accept-Ranges: bytes
+BServer: Apache/2.2.15 (CentOS) mod_ssl/2.2.15 OpenSSL/1.0.0-fips
+Content-Length: 1751
+Ù
+
+var oneTimeImageIds = new Array();
+oneTimeImageIds[0] = "hbx_hbi";
+oneTimeImageIds[1] = "hbx_hbs";
+oneTimeImageIds[2] = "optimostImage";
+oneTimeImageIds[3] = "optimostImage_2";
+oneTimeImageIds[4] = "optimostImage_3";
+oneTimeImageIds[5] = "optimostImage_4";
+oneTimeImageIds[6] = "optimostImage_5";
+oneTimeImageIds[7] = "avenueA";
+
+
+var repeatImageIds = new Array();
+repeatImageIds[0] = "LPButtonImpressionImage";
+repeatImageIds[1] = "LPSendRequest";
+
+function clearRepeatImages() {
+
+    for( var index = 0; index < repeatImageIds.length; index++ ) {
+        var imageId = repeatImageIds[index];
+
+        resetImage( imageId );
+    }
+
+    //Do this again in X seconds, since these images will be downloaded again soon
+    setTimeout ( "clearRepeatImages()", 20000 );
+}
+
+function clearOneTimeImages() {
+    for( var index = 0; index < oneTimeImageIds.length; index++ ) {
+        var imageId = oneTimeImageIds[index];
+
+        resetImage( imageId );
+    }
+}
+
+
+function resetImage( name ) {    
+    var domCheck = (document.getElementById) ? true : false;    
+    var image;
+
+    if (domCheck) {
+        image = document.getElementsByTagName("IMG")[name];
+    } 
+    else if (typeof(document.getElementById)!="undefined") {
+        image =  document.getElementById(name);
+    } 
+    else {
+        for (var i = 0; i < document.images.length; i++) {
+            image =  document.images[i];
+            if (document.images[i].name == name) {
+                image =  document.images[i];
+                break;
+            }
+        }
+    }    
+
+    if( typeof(image) != "undefined" ) {
+        image.src="http://web1.shutterfly.com/img_/misc/sp.gif";
+    }
+}		
+		
+
+setTimeout ( "clearOneTimeImages()", 15000 );
+setTimeout ( "clearRepeatImages()", 20000 );

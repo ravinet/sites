@@ -1,0 +1,23 @@
+PHTTP23.6.21.109"ë
+!GET /sync/js?sync=auto HTTP/1.1
+Host: pixel.mathtag.com
+Connection: keep-alive
+Accept: */*
+vUser-Agent: Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/31.0.1650.63 Safari/537.36
+$Accept-Encoding: gzip,deflate,sdch
+!Accept-Language: en-US,en;q=0.8
+=Cookie: uuid=52cdfe4b-c3db-a49a-a952-66c4fb0d3951; mt_misc=
+
+*Ï
+ HTTP/1.1 302 Moved Temporarily
+Server: AkamaiGHost
+Content-Length: 0
+±Location: http://ak1.abmr.net/is/pixel.mathtag.com?U=/sync/js&V=3-NPPMgdQJc5ucn4+Nn8xFl+nACteBizJYV40gBPcPReNuLIk2TEzOYQ%3d%3d&I=4E1D39B99714E9D&D=mathtag.com&01AD=1&sync=auto
+(Expires: Thu, 09 Jan 2014 01:41:32 GMT
+.Cache-Control: max-age=0, no-cache, no-store
+Pragma: no-cache
+%Date: Thu, 09 Jan 2014 01:41:32 GMT
+Connection: keep-alive
+[Set-Cookie: HRL8=CT-1; expires=Thu, 06-Feb-2014 01:41:32 GMT; path=/; domain=.mathtag.com
+;P3P: CP="NON DSP ADM DEV PSD OUR IND STP PHY PRE NAV UNI"
+

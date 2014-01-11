@@ -1,0 +1,34 @@
+PHTTP199.27.76.184"ô
+ÌGET /chorus_page/optimally_sized_images?imgkeys=26570299%3Astandard%3A18%3A194x130%2C26542173%3Astandard%3A18%3A194x130%2C26538467%3Astandard%3A18%3A194x130%2C26494017%3Astandard%3A19%3A194x130 HTTP/1.1
+Host: www.sbnation.com
+Connection: keep-alive
+8Accept: application/json, text/javascript, */*; q=0.01
+"X-Requested-With: XMLHttpRequest
+vUser-Agent: Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/31.0.1650.63 Safari/537.36
+ Content-Type: application/json
+#Referer: http://www.sbnation.com/
+$Accept-Encoding: gzip,deflate,sdch
+!Accept-Language: en-US,en;q=0.8
+„Cookie: OX_plg=swf|qt|wmp|shk|pm; umbel_api_key=rhrdgrjixmwngtzk; mp_8011cdf805326d986548057a0aff6a3b_mixpanel=%7B%22distinct_id%22%3A%20%221437cc0f896466-0156fed02-14281008-232800-1437cc0f897939%22%2C%22%24initial_referrer%22%3A%20%22%24direct%22%2C%22%24initial_referring_domain%22%3A%20%22%24direct%22%7D; umbel_browser_id=819b53ab-e156-471a-97ee-9340a2dd5b5a; umbel1-d0=daily.unique%3D2014-0-10; umbel1-v0=app.user_agent%3DMozilla%252F5.0%2520%28X11%253B%2520Linux%2520x86_64%29%2520AppleWebKit%252F537.36%2520%28KHTML%252C%2520like%2520Gecko%29%2520Chrome%252F31.0.1650.63%2520Safari%252F537.36; __utma=165043965.854982074.1389367458.1389367458.1389367458.1; __utmb=165043965.1.10.1389367458; __utmc=165043965; __utmz=165043965.1389367458.1.1.utmcsr=(direct)|utmccn=(direct)|utmcmd=(none); __utma=1.947687521.1389367458.1389367458.1389367458.1; __utmb=1.1.10.1389367458; __utmc=1; __utmz=1.1389367458.1.1.utmcsr=(direct)|utmccn=(direct)|utmcmd=(none); __qca=P0-604460554-1389367458080; _first_pageview=1; _jsuid=760197569
+
+*Ü
+HTTP/1.1 200 OK
+Server: nginx
+/Content-Type: application/json; charset=utf-8
+Status: 200 OK
+4Cache-Control: private, max-age=0, must-revalidate
+*ETag: "030fa096f26fe372211b142169c1a8d4"
+X-Runtime: 21
+]P3P: CP="CAO DSP COR CURa ADMa DEVa PSAa PSDa CONi OUR IND PHY ONL UNI COM NAV INT CNT STA"
+Content-Length: 543
+Accept-Ranges: bytes
+%Date: Fri, 10 Jan 2014 15:24:05 GMT
+Via: 1.1 varnish
+Age: 0
+Connection: keep-alive
+ X-Served-By: cache-jfk1029-JFK
+X-Cache: MISS
+X-Cache-Hits: 0
+)X-Timer: S1389367445.474031210,VS0,VE88
+¡
+{"urls":{"26538467:standard:18:194x130":"http://cdn2.sbnation.com/uploads/chorus_image/image/26538513/20140108_pjc_sx3_405.0_standard_207.0.jpg","26494017:standard:19:194x130":"http://cdn0.sbnation.com/uploads/chorus_image/image/26495847/ufs_050_03.0_standard_207.0.jpg","26542173:standard:18:194x130":"http://cdn1.sbnation.com/uploads/chorus_image/image/26542303/kid.0_standard_207.0.png","26570299:standard:18:194x130":"http://cdn2.sbnation.com/uploads/chorus_image/image/26570573/screen_shot_2014-01-09_at_3.33.54_pm.0_standard_207.0.png"}}

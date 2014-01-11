@@ -1,0 +1,87 @@
+PHTTP205.251.242.190"Ÿ
+(GET /partner-widget/jobs.html HTTP/1.1
+Host: www.powerjobs.com
+Connection: keep-alive
+TAccept: text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8
+vUser-Agent: Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/31.0.1650.63 Safari/537.36
+#Referer: http://www.politico.com/
+$Accept-Encoding: gzip,deflate,sdch
+!Accept-Language: en-US,en;q=0.8
+
+*®
+HTTP/1.1 200 OK
+Nx-amz-id-2: 25157NUKH6APuCygPB3HggpWIiXlxrHehY2WdJkMLndS1APxBIoNJCcUzfeOl4fm
+$x-amz-request-id: 0976E8B6B01821DE
+%Date: Fri, 10 Jan 2014 16:57:37 GMT
+.Last-Modified: Thu, 30 May 2013 17:32:59 GMT
+*ETag: "2bf1b144a5614cbe3a357a94a6259548"
+Content-Type: text/html
+Content-Length: 3158
+Server: AmazonS3
+Ø
+<!doctype html>
+<!--[if lt IE 7]> <html class="ie6 oldie" lang="en"> <![endif]-->
+<!--[if IE 7]>    <html class="ie7 oldie" lang="en"> <![endif]-->
+<!--[if IE 8]>    <html class="ie8 oldie" lang="en"> <![endif]-->
+<!--[if gt IE 8]><!--> <html lang="en"> <!--<![endif]-->
+
+<head>
+	<meta charset="utf-8" />
+	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+
+    <title>POWERJobs.com</title>
+	<meta name="description" content="" />
+    <meta name="keywords" content="" />
+    <meta name="author" content="POWERJobs" />
+
+	<link rel="stylesheet" href="/css/partner-widget.css" />
+    
+    <link rel="shortcut icon" type="image/x-icon" href="/favicon.ico" />
+    <link rel="apple-touch-icon-precomposed" sizes="144Ã—144" href="/apple-touch-icon-144x144-precomposed.png" />
+    <link rel="apple-touch-icon-precomposed" sizes="114Ã—114" href="/apple-touch-icon-114x114-precomposed.png" />
+    <link rel="apple-touch-icon-precomposed" sizes="72Ã—72" href="/apple-touch-icon-72x72-precomposed.png" />
+    <link rel="apple-touch-icon-precomposed" sizes="57Ã—57" href="/apple-touch-icon-57x57-precomposed.png" />
+    
+    <!--Adicio Scripts-->
+    <script type="text/javascript" src="http://slb.adicio.com/js/xmlScrollView1.2.js"></script> <!--All Adicio Widgets-->
+    <script type="text/javascript" src="http://Jobs.powerjobs.com/jobs/search/results?radius=50&amp;location=20005&amp;IsFeatured=N&amp;upgrades=spotlight&amp;Sort=random&amp;rows=3&amp;format=jsxml&amp;stringVar=widgetJobsListXML&amp;nopageview=1&amp;nouniquevisitor=1"></script> <!--Jobs Widget-->
+</head>
+
+<body>
+
+	<div class="widget-jobs widget">
+        <div class="widget-header">
+            <h1><a href="http://www.powerjobs.com/index.html?cid=wi" target="_blank">POWERJobs</a></h1>
+        </div>
+        <div class="widget-content">
+            <div class="widget-content-title">
+                <h2>Featured Opportunities</h2>
+                <a href="http://www.powerjobs.com/index.html?cid=wi" target="_blank" class="more-info">View All Jobs &raquo;</a>
+            </div>
+            <div id="widgetJobsList" class="widget-jobs-list"></div>
+        </div>
+    </div><!--/.widget-jobs-->
+    
+    <!--Adicio Function Calls-->
+	<script>
+	<!--
+		
+		//Jobs Widget Function
+        var featuredJobsWidget = new xmlScrollView();
+        featuredJobsWidget.setOutPutElement('widgetJobsList');
+        featuredJobsWidget.setItemRoot('Job');
+        featuredJobsWidget.declareVariable('JobTitle', '%jobTitle%');
+        featuredJobsWidget.declareVariable('Company', '%jobEmployer%');
+        featuredJobsWidget.declareVariable('City', '%jobCity%');
+        featuredJobsWidget.declareVariable('State', '%jobState%');
+        featuredJobsWidget.declareVariable('Url', '%jobLink%');
+        featuredJobsWidget.setTemplate('<div class="job-post"><h3><a href="%jobLink%" target="_blank">%jobTitle%</a></h3><p class="meta"><span class="meta-company">%jobEmployer%</span> | <span class="meta-location">%jobCity%, %jobState%</span></p></div>');
+        featuredJobsWidget.disableScroll();
+        featuredJobsWidget.outputFromString(widgetJobsListXML);
+
+	-->
+    </script>
+
+</body>
+
+</html>

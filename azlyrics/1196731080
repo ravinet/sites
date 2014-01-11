@@ -1,0 +1,61 @@
+PHTTP
+18.7.20.68"™
+iGET /clients/nissan/masteroffer/get.ashx?dma=506&region=North&year=2013&offertype=apr&model=LF HTTP/1.1
+Host: smq.pointroll.com
+Connection: keep-alive
+vUser-Agent: Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/31.0.1650.63 Safari/537.36
+Accept: */*
+#Referer: http://www.azlyrics.com/
+$Accept-Encoding: gzip,deflate,sdch
+!Accept-Language: en-US,en;q=0.8
+
+*…
+HTTP/1.1 200 OK
+Server: Microsoft-IIS/6.0
+-P3P: CP="NOI DSP COR PSAo PSDo OUR BUS OTC"
+X-Powered-By: ASP.NET
+X-AspNet-Version: 2.0.50727
+(Content-Type: text/html; charset=utf-8
+Content-Length: 1814
+$Cache-Control: public, max-age=511
+(Expires: Wed, 08 Jan 2014 17:11:30 GMT
+%Date: Wed, 08 Jan 2014 17:02:59 GMT
+Connection: keep-alive
+˜
+<nissan>
+  <status text="success">0</status>
+  <offers>
+    <offer model="LF" year="2013" offertype="apr" region="North" dma="506">
+      <offertypetemplate>apr</offertypetemplate>
+      <modelcode>LF</modelcode>
+      <region>Central,Florida,Midwest,Northeast,Southeast,West</region>
+      <apr_1>0.0</apr_1>
+      <cashbackaprcopy1></cashbackaprcopy1>
+      <aprterm1></aprterm1>
+      <aprtermcopy1>For Well-Qualified Buyers[1]</aprtermcopy1>
+      <aprtermcopy2></aprtermcopy2>
+      <cashbackoperatorcopy1></cashbackoperatorcopy1>
+      <cashbackamount></cashbackamount>
+      <cashbackcopy1></cashbackcopy1>
+      <leasecost1></leasecost1>
+      <leaseterm1></leaseterm1>
+      <leaseterm2></leaseterm2>
+      <offercopy></offercopy>
+      <offercopy1></offercopy1>
+      <offercopy2></offercopy2>
+      <offercopy3></offercopy3>
+      <offercopy4></offercopy4>
+      <offermsrp1></offermsrp1>
+      <msrpcopy1></msrpcopy1>
+      <offernetpricecopy></offernetpricecopy>
+      <offernetprice1></offernetprice1>
+      <offerprice1></offerprice1>
+      <offerprice2></offerprice2>
+      <offerprice3></offerprice3>
+      <offerprice4></offerprice4>
+      <asshowndisclaimer></asshowndisclaimer>
+      <offerrollover>[1]Subject to residency restrictions. Financing is subject to NMAC Tier 1 through Tier 3 credit approval. $27.78 per month per $1,000 financed at 0.0% for 36 months, $17.05 per month per $1,000 financed at 0.9% for 60 months, $14.71 per month per $1,000 financed at 1.9% for 72 months, on all new above-noted vehicles in dealer stock. Down payment may be required. See dealer for details. Must purchase from new dealer stock. Offers end 01/31/2014.</offerrollover>
+      <gendisclaimer>*More Loan Information</gendisclaimer>
+    </offer>
+  </offers>
+</nissan>

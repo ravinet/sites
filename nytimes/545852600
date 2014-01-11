@@ -1,0 +1,20 @@
+PHTTP54.235.188.185"Ñ
+ÆGET /?subject=page&url=http%3A%2F%2Fwww.nytimes.com%2F&assetUrl=http%3A%2F%2Fwww.nytimes.com%2F&referrer=&impressions=&totalTime=0&sourceApp=nyt4&callback=NYTD.EventTracker.cb0&pageMetaData=%7B%22PT%22%3A%22Homepage%22%2C%22CG%22%3A%22Homepage%22%2C%22SCG%22%3A%22%22%2C%22byl%22%3A%22%22%2C%22tom%22%3A%22%22%2C%22hdl%22%3A%22%22%2C%22ptime%22%3A%22%22%2C%22cre%22%3A%22%22%2C%22articleid%22%3A%22%22%7D&additionalClientData=%7B%22ul%22%3A%22en-US%22%2C%22js%22%3A%22Yes%22%2C%22jv%22%3A%221.5%22%2C%22fi%22%3A%22Yes%22%2C%22tz%22%3A-5%2C%22bh%22%3A19%2C%22cd%22%3A24%2C%22sr%22%3A%221920x1200%22%2C%22bs%22%3A%22937x1051%22%2C%22jo%22%3A%22Yes%22%2C%22fv%22%3A%2211.9%22%2C%22or%22%3A%22port%22%7D HTTP/1.1
+Host: et.nytimes.com
+Connection: keep-alive
+Accept: */*
+vUser-Agent: Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/31.0.1650.63 Safari/537.36
+"Referer: http://www.nytimes.com/
+$Accept-Encoding: gzip,deflate,sdch
+!Accept-Language: en-US,en;q=0.8
+\Cookie: RMID=007f01001c2352cdec08002e; adxcs=-; nyt-m=; nyt-recommend=1; nyt5_disable=true
+
+*‚
+HTTP/1.1 200 OK
+&Content-Type: application/javascript
+%Date: Thu, 09 Jan 2014 00:23:38 GMT
+xSet-Cookie: nyt-a=8cb87218249bcbe2e18a5091c1ab2d8b; Domain=.nytimes.com; Path=/; Expires=Fri, 09 Jan 2015 00:23:38 GMT
+Content-Length: 113
+Connection: keep-alive
+s
+NYTD.EventTracker.cb0({"datumId":"bad9e92a47733bea","agentId":"8cb87218249bcbe2e18a5091c1ab2d8b","status":"OK"});

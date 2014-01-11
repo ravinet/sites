@@ -1,0 +1,24 @@
+PHTTP205.203.139.53"€
+2GET /bg/api/Pickup.ashx?_=1389196337168 HTTP/1.1
+Host: www.marketwatch.com
+Connection: keep-alive
+8Accept: application/json, text/javascript, */*; q=0.01
+"X-Requested-With: XMLHttpRequest
+vUser-Agent: Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/31.0.1650.63 Safari/537.36
+MX-BGD: c={"c":"270d8f569eaf4a18a3d5d0686a50585b","s":"10.240.178.139"}&m=[]
+&Referer: http://www.marketwatch.com/
+$Accept-Encoding: gzip,deflate,sdch
+!Accept-Language: en-US,en;q=0.8
+øCookie: kayla=g=dd334b4c573d4cb898ccd2d63c32ea7c; mw5_loc={"Country":"US","Region":"MA","City":"CAMBRIDGE","Continent":"NA","County":["MIDDLESEX"]}; mw5_prefs=tmox=1/8/2014&mox=False&tth=False&exp=1/8/2016; __g_c=w%3A1%7Cb%3A2%7Cc%3A313213237331210%7Cd%3A1%7Ca%3A0%7Ce%3A0.01%7Cf%3A0; __g_u=313213237331210_1_0.01_0_5_1389628337279; s_cc=true; s_vnum=1391788337544%26vn%3D1; s_invisit=true; gpv_pn=MW_Home; s_sq=%5B%5BB%5D%5D; refresh=off; utag_main=_st:1389198138194$ses_id:1389196930440%3Bexp-session
+
+*©
+HTTP/1.1 200 OK
+Cache-Control: private
+ Content-Type: application/json
+Server: Microsoft-IIS/7.5
+X-Powered-By: ASP.NET
+X-MACHINE: secdbgowebp03
+%Date: Wed, 08 Jan 2014 15:52:12 GMT
+Content-Length: 3652
+Æ
+[{"h":{"t":"\/quotes\/zigman\/629063\/realtime","a":"broadcast","s":"SEC","n":3152172338},"b":{"z":"\/Date(1389196328000)\/","t":"629063","l":2472.03,"v":0,"c":7.29,"y":"normal","e":-5,"b":null,"a":null,"em":0}},{"h":{"t":"\/quotes\/nls\/ge","a":"broadcast","s":"SEC81","n":3657293},"b":{"z":"\/Date(1389196330277)\/","t":"ge","l":27.3,"v":null,"c":0.01,"y":"normal","e":-5,"b":null,"a":null}},{"h":{"t":"\/quotes\/zigman\/9159480\/realtime","a":"broadcast","s":"SEC","n":3152172514},"b":{"z":"\/Date(1389195730000)\/","t":"9159480","l":1221,"v":94991,"c":-8.6,"y":"normal","e":-5,"b":null,"a":null,"em":0}},{"h":{"t":"\/quotes\/nls\/c","a":"broadcast","s":"SEC81","n":3657475},"b":{"z":"\/Date(1389196330754)\/","t":"c","l":54.8607,"v":null,"c":0.6807,"y":"normal","e":-5,"b":null,"a":null}},{"h":{"t":"\/quotes\/nls\/bp","a":"broadcast","s":"SEC81","n":3657612},"b":{"z":"\/Date(1389196331020)\/","t":"bp","l":48.815,"v":null,"c":0.265,"y":"normal","e":-5,"b":null,"a":null}},{"h":{"t":"\/quotes\/zigman\/627449\/realtime","a":"broadcast","s":"SEC","n":3152180409},"b":{"z":"\/Date(1389196331000)\/","t":"627449","l":16464.68,"v":22564357,"c":-66.26,"y":"normal","e":-5,"b":null,"a":null,"em":0}},{"h":{"t":"\/quotes\/zigman\/2196836\/realtime","a":"broadcast","s":"SEC","n":3152181763},"b":{"z":"\/Date(1389195731000)\/","t":"2196836","l":93.04,"v":83327,"c":-0.63,"y":"normal","e":-5,"b":null,"a":null,"em":0}},{"h":{"t":"\/quotes\/zigman\/3870025\/realtime","a":"broadcast","s":"SEC","n":3152184973},"b":{"z":"\/Date(1389196332000)\/","t":"3870025","l":1838.15,"v":131368145,"c":0.27,"y":"normal","e":-5,"b":null,"a":null,"em":0}},{"h":{"t":"\/quotes\/zigman\/68270\/delayed","a":"broadcast","s":"SEC","n":3152190949},"b":{"z":"\/Date(1389195432849)\/","t":"68270","l":545.1,"v":3147244,"c":5.0625,"y":"normal","e":-5,"b":null,"a":null,"em":0}},{"h":{"t":"\/quotes\/nls\/f","a":"broadcast","s":"SEC81","n":3658591},"b":{"z":"\/Date(1389196333457)\/","t":"f","l":15.58,"v":null,"c":0.20,"y":"normal","e":-5,"b":null,"a":null}},{"h":{"t":"\/quotes\/nls\/t","a":"broadcast","s":"SEC81","n":3658608},"b":{"z":"\/Date(1389196333502)\/","t":"t","l":34.455,"v":null,"c":-0.495,"y":"normal","e":-5,"b":null,"a":null}},{"h":{"t":"\/quotes\/nls\/fb","a":"broadcast","s":"SEC81","n":3658662},"b":{"z":"\/Date(1389196333647)\/","t":"fb","l":58.085,"v":null,"c":0.165,"y":"normal","e":-5,"b":null,"a":null}},{"h":{"t":"\/quotes\/zigman\/66924\/delayed","a":"broadcast","s":"SEC","n":3152191444},"b":{"z":"\/Date(1389195432958)\/","t":"66924","l":29.12,"v":953537,"c":-0.08,"y":"normal","e":-5,"b":null,"a":null,"em":0}},{"h":{"t":"\/quotes\/zigman\/12772\/delayed","a":"broadcast","s":"SEC","n":3152191566},"b":{"z":"\/Date(1389195433761)\/","t":"12772","l":17.874,"v":3444175,"c":-0.396,"y":"normal","e":-5,"b":null,"a":null,"em":0}},{"h":{"t":"\/quotes\/nls\/bac","a":"broadcast","s":"SEC81","n":3658700},"b":{"z":"\/Date(1389196333688)\/","t":"bac","l":16.628,"v":null,"c":0.128,"y":"normal","e":-5,"b":null,"a":null}},{"h":{"t":"\/quotes\/nls\/aapl","a":"broadcast","s":"SEC81","n":3658702},"b":{"z":"\/Date(1389196333699)\/","t":"aapl","l":544.35,"v":null,"c":4.3125,"y":"normal","e":-5,"b":null,"a":null}},{"h":{"t":"\/quotes\/zigman\/23556538\/delayed","a":"broadcast","s":"SEC","n":3152191860},"b":{"z":"\/Date(1389195433764)\/","t":"23556538","l":60.8001,"v":11706043,"c":-0.6599,"y":"normal","e":-5,"b":null,"a":null,"em":0}},{"h":{"t":"\/quotes\/zigman\/12633936\/realtime","a":"broadcast","s":"SEC","n":3152192663},"b":{"z":"\/Date(1389196333000)\/","t":"12633936","l":4167.189314,"v":0,"c":14.007901,"y":"normal","e":-5,"b":null,"a":null,"em":0}}]

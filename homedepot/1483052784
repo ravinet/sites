@@ -1,0 +1,22 @@
+PHTTP54.243.162.144"›
+‹GET /homedepot/prod/serverComponent.php?r=7807.922738138586&ClientID=20&PageID=http%3A%2F%2Fwww.homedepot.com%2Fb%2Fwebapp%2Fcatalog%2Fservlet%2FHomePageView%3FstoreId%3D10051%26catalogId%3D10053%26langId%3D-1 HTTP/1.1
+Host: nexus.ensighten.com
+Connection: keep-alive
+Accept: */*
+vUser-Agent: Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/31.0.1650.63 Safari/537.36
+qReferer: http://www.homedepot.com/b/webapp/catalog/servlet/HomePageView?storeId=10051&catalogId=10053&langId=-1
+$Accept-Encoding: gzip,deflate,sdch
+!Accept-Language: en-US,en;q=0.8
+
+*ç
+HTTP/1.1 200 OK
+Cache-Control: no-cache
+Cache-Control: public
+Content-Type: text/javascript
+%Date: Fri, 10 Jan 2014 15:07:30 GMT
+Server: nginx
+Content-Length: 567
+Connection: keep-alive
+π
+
+Bootstrapper._serverTime = '2014-01-10 15:07:30'; Bootstrapper._clientIP = '128.30.76.55'; var psj0 = 'http://nexus.ensighten.com/homedepot/prod/code/dbd4b0607e9a5544e8851e6a1837cc7e.js?ruleId=162551';Bootstrapper.insertScript(psj0);var psj1 = 'http://nexus.ensighten.com/homedepot/prod/code/4dd11ebf283c312b0ea0a6b40c24cfbc.js?ruleId=260093';Bootstrapper.insertScript(psj1);var psj2 = 'http://nexus.ensighten.com/homedepot/prod/code/f08c6d0f3400936b8420c19239297941.js?ruleId=148842';Bootstrapper.loadScriptCallback(psj2, Bootstrapper.callOnPageSpecificCompletion);

@@ -1,0 +1,25 @@
+PHTTP66.117.23.104"Á
+GET /crossdomain.xml HTTP/1.1
+0Host: comcastresidentialservices.tt.omtrdc.net
+Connection: keep-alive
+vUser-Agent: Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/31.0.1650.63 Safari/537.36
+Accept: */*
+$Accept-Encoding: gzip,deflate,sdch
+!Accept-Language: en-US,en;q=0.8
+
+*À
+HTTP/1.1 200 OK
+Accept-Ranges: bytes
+ETag: W/"201-1384827694000"
+.Last-Modified: Tue, 19 Nov 2013 02:21:34 GMT
+Content-Type: application/xml
+Content-Length: 201
+%Date: Thu, 09 Jan 2014 13:48:58 GMT
+Server: Test & Target
+Ë
+<?xml version="1.0"?>
+<!DOCTYPE cross-domain-policy SYSTEM "http://www.macromedia.com/xml/dtds/cross-domain-policy.dtd">
+<cross-domain-policy>
+ <allow-access-from domain="*" />
+</cross-domain-policy>
+

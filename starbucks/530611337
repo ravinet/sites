@@ -1,0 +1,292 @@
+PHTTP
+18.7.20.70"Â
+GET /crossdomain.xml HTTP/1.1
+Host: bcassets.starbucks.com
+Connection: keep-alive
+vUser-Agent: Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/31.0.1650.63 Safari/537.36
+Accept: */*
+$Referer: http://www.starbucks.com/
+$Accept-Encoding: gzip,deflate,sdch
+!Accept-Language: en-US,en;q=0.8
+êCookie: skin=; optimizelySegments=%7B%22192119771%22%3A%22false%22%2C%22192128716%22%3A%22direct%22%2C%22192132656%22%3A%22gc%22%7D; optimizelyEndUserId=oeu1389372152608r0.6264181847218424; optimizelyBuckets=%7B%7D; optimizelyPendingLogEvents=%5B%5D; __utma=246673883.1095219288.1389372153.1389372153.1389372153.1; __utmb=246673883.1.10.1389372153; __utmc=246673883; __utmz=246673883.1389372153.1.1.utmcsr=(direct)|utmccn=(direct)|utmcmd=(none); ASP.NET_SessionId=43t5lzfqeqyksfrqdt1ikiki
+
+*Ý
+HTTP/1.1 200 OK
+Server: Apache
+5ETag: "1bb33d6bbc417ac845ae6b61c688e402:1317762929"
+.Last-Modified: Tue, 04 Oct 2011 21:15:28 GMT
+Accept-Ranges: bytes
+Content-Length: 16057
+Content-Type: application/xml
+%Date: Fri, 10 Jan 2014 16:42:21 GMT
+Connection: keep-alive
+»}
+<?xml version="1.0" ?>
+<!DOCTYPE cross-domain-policy SYSTEM
+"http://www.adobe.com/xml/dtds/cross-domain-policy.dtd">
+<cross-domain-policy>
+	<site-control permitted-cross-domain-policies="all" />
+	<allow-http-request-headers-from domain="*" headers="*" />
+	<allow-access-from domain="*" secure="false" />
+	<allow-access-from domain="*.starbucks.com" secure="false" />
+	<allow-access-from domain="*.starbucks.net" secure="false" />
+	<allow-access-from domain="*.starbucks.ca" secure="false" />
+	<allow-access-from domain="*.starbucks.de" secure="false" />
+	<allow-access-from domain="*.starbucks.fr" secure="false" />
+	<allow-access-from domain="*.starbucks.co.uk" />
+	<allow-access-from domain="*.brightcove.com" secure="false"/>
+	<allow-access-from domain="*.plymedia.com" secure="false"/>
+	<allow-access-from domain="*.subply.com" secure="false"/>
+	<allow-access-from domain="*.sbweb.prod" />
+	<allow-access-from domain="localhost" />
+	<allow-access-from domain="*.tazo.com" />
+	<allow-access-from domain="dev101.zaaz.com" />
+
+	<allow-access-from domain="*.zaaz.com" />
+	<allow-access-from domain="66.150.7.162" />
+	<allow-access-from domain="216.26.171.116" />
+	<allow-access-from domain="216.70.126.141" />
+	<allow-access-from domain="216.128.18.110" />
+	<allow-access-from domain="v027u06pye.maximumasp.com" />
+	<allow-access-from domain="*.nytimes.com" />
+	<allow-access-from domain="*.hearmusic.com" />
+	<allow-access-from domain="*.starbucksentertainment.com" />
+
+	<allow-access-from domain="oasis.nn4mretail.co.uk" secure="false" />
+	<allow-access-from domain="216.24.136.148" secure="false" />
+	<allow-access-from domain="fox.threemelons.com" secure="false" />
+	<allow-access-from domain="79.125.13.25" secure="false" />
+	<allow-access-from domain="*.agriculture.com" secure="false" />
+	<allow-access-from domain="*.airlock.net" secure="false" />
+	<allow-access-from domain="*.allmybands.de" secure="false" />
+	<allow-access-from domain="*.americanprinter.com" secure="false" />
+	<allow-access-from domain="*.americanprinter.tv" secure="false" />
+	<allow-access-from domain="*.amfam.com" secure="false" />
+	<allow-access-from domain="*.amfamlatino.com" secure="false" />
+	<allow-access-from domain="*.arn.com" secure="false" />
+	<allow-access-from domain="*.astramedia.com" secure="false" />
+	<allow-access-from domain="*.azm.nl" secure="false" />
+	<allow-access-from domain="*.babytv.com.br" secure="false" />
+	<allow-access-from domain="*.babytvla.tv" secure="false" />
+	<allow-access-from domain="*.barrons.com" secure="false" />
+	<allow-access-from domain="*.beavercreek.com" secure="false" />
+	<allow-access-from domain="*.bemsimples.com" secure="false" />
+	<allow-access-from domain="*.biensimple.com" secure="false" />
+	<allow-access-from domain="*.blacktreeproductions.com" secure="false" />
+	<allow-access-from domain="*.borders.co.uk" secure="false" />
+	<allow-access-from domain="*.bornready.tv" secure="false" />
+	<allow-access-from domain="*.boston.com" secure="false" />
+	<allow-access-from domain="*.breckenridge.com" secure="false" />
+	<allow-access-from domain="*.brightcove.co.jp" secure="false" />
+	<allow-access-from domain="*.brightcove.com" secure="false" />
+	<allow-access-from domain="*.brightcove.tv" secure="false" />
+	<allow-access-from domain="*.btwholesale-inspire.com" secure="false" />
+	<allow-access-from domain="*.c4news.com" secure="false" />
+	<allow-access-from domain="*.canalfox.com" secure="false" />
+	<allow-access-from domain="*.canalfox.com.br" secure="false" />
+	<allow-access-from domain="*.canalfx.com.br" secure="false" />
+	<allow-access-from domain="*.canalfx.tv" secure="false" />
+	<allow-access-from domain="*.canalspeed.com.br" secure="false" />
+	<allow-access-from domain="*.canalspeed.tv" secure="false" />
+	<allow-access-from domain="*.canoe.ca" secure="false" />
+	<allow-access-from domain="*.canoe.com" secure="false" />
+	<allow-access-from domain="*.carnival.com" secure="false" />
+	<allow-access-from domain="*.celebtv.com" secure="false" />
+	<allow-access-from domain="*.chron.com" secure="false" />
+	<allow-access-from domain="*.cinesport.com" secure="false" />
+	<allow-access-from domain="*.citrix.com" secure="false" />
+	<allow-access-from domain="*.cityhunters.com.br" secure="false" />
+	<allow-access-from domain="*.cityhunters.tv" secure="false" />
+	<allow-access-from domain="*.clearspring.com" secure="false" />
+	<allow-access-from domain="*.columbiarecords.com" secure="false" />
+	<allow-access-from domain="*.constructionequipment.com" secure="false" />
+	<allow-access-from domain="*.controleng.com" secure="false" />
+	<allow-access-from domain="*.cooliris.com" secure="false" />
+	<allow-access-from domain="*.coresecure.net" secure="false" />
+	<allow-access-from domain="*.corsis.com" secure="false" />
+	<allow-access-from domain="*.createthe.com" secure="false" />
+	<allow-access-from domain="*.dalealplay.com" secure="false" />
+	<allow-access-from domain="*.diagonal-view.com" secure="false" />
+	<allow-access-from domain="*.dowjonesonline.com" secure="false" />
+	<allow-access-from domain="*.edmunds.com" secure="false" />
+	<allow-access-from domain="*.eonetwork.org" secure="false" />
+	<allow-access-from domain="*.eonetwork.tv" secure="false" />
+	<allow-access-from domain="*.eonline.com" secure="false" />
+	<allow-access-from domain="*.escn.tv" secure="false" />
+	<allow-access-from domain="*facebook.com" secure="false" />
+	<allow-access-from domain="*.facebook.com" secure="false" />
+	<allow-access-from domain="*.ficfiles.com" secure="false" />
+	<allow-access-from domain="*.fourmusic.com" secure="false" />
+	<allow-access-from domain="*.fourmusic.de" secure="false" />
+	<allow-access-from domain="*.fourmusicstore.com" secure="false" />
+	<allow-access-from domain="*.fox.com.tr" secure="false" />
+	<allow-access-from domain="*.foxafrica.com" secure="false" />
+	<allow-access-from domain="*.foxafrica.tv" secure="false" />
+	<allow-access-from domain="*.foxchannels.com.br" secure="false" />
+	<allow-access-from domain="*.foxchannels.tv" secure="false" />
+	<allow-access-from domain="*.foxcrime.in" secure="false" />
+	<allow-access-from domain="*.foxcrimeafrica.com" secure="false" />
+	<allow-access-from domain="*.foxcrimeasia.com" secure="false" />
+	<allow-access-from domain="*.foxinc.com" secure="false" />
+	<allow-access-from domain="*.foxlife.com.br" secure="false" />
+	<allow-access-from domain="*.foxlife.com.tr" secure="false" />
+	<allow-access-from domain="*.foxlife.tv" secure="false" />
+	<allow-access-from domain="*.foxlifeafrica.com" secure="false" />
+	<allow-access-from domain="*.foxmental.com" secure="false" />
+	<allow-access-from domain="*.foxtv.es" secure="false" />
+	<allow-access-from domain="*.foxtv.it" secure="false" />
+	<allow-access-from domain="*.freedom.com" secure="false" />
+	<allow-access-from domain="*.fueltvafrica.com" secure="false" />
+	<allow-access-from domain="*.fueltvafrica.tv" secure="false" />
+	<allow-access-from domain="*.fxafrica.tv" secure="false" />
+	<allow-access-from domain="*.fxbrasil.com.br" secure="false" />
+	<allow-access-from domain="*.fxhduk.com" secure="false" />
+	<allow-access-from domain="*.fxtv.co.in" secure="false" />
+	<allow-access-from domain="*.fxtv.com.tr" secure="false" />
+	<allow-access-from domain="*.fxtvasia.com" secure="false" />
+	<allow-access-from domain="*.fxuk.com" secure="false" />
+	<allow-access-from domain="*.fxuk.tv" secure="false" />
+	<allow-access-from domain="*.g4tv.com" secure="false" />
+	<allow-access-from domain="*.geenkaas.com" secure="false" />
+	<allow-access-from domain="*.gigya.s3.amazonaws.com" secure="false" />
+	<allow-access-from domain="*.gigyahosting1.com" secure="false" />
+	<allow-access-from domain="*.go.com" secure="false" />
+	<allow-access-from domain="*.graphicartsonline.com" secure="false" />
+	<allow-access-from domain="*.hollywood.com" secure="false" />
+	<allow-access-from domain="*.housingzone.com" secure="false" />
+	<allow-access-from domain="*.hub-sales.fr" secure="false" />
+	<allow-access-from domain="*.imhomedia.com" secure="false" />
+	<allow-access-from domain="*.imoentertainment.com" secure="false" />
+	<allow-access-from domain="*.inspiringinterns.co.uk" secure="false" />
+	<allow-access-from domain="*.inspiringinterns.com" secure="false" />
+	<allow-access-from domain="*.intro.de" secure="false" />
+	<allow-access-from domain="*.intuit.com" secure="false" />
+	<allow-access-from domain="*.intuit.net" secure="false" />
+	<allow-access-from domain="*.kbb.com" secure="false" />
+	<allow-access-from domain="*.keystone.com" secure="false" />
+	<allow-access-from domain="*.keystoneresort.com" secure="false" />
+	<allow-access-from domain="*.keystoneresorts.com" secure="false" />
+	<allow-access-from domain="*.kolamap.com" secure="false" />
+	<allow-access-from domain="*.kolamapproductions.com" secure="false" />
+	<allow-access-from domain="*.laut.de" secure="false" />
+	<allow-access-from domain="*.legacyrecordings.com" secure="false" />
+	<allow-access-from domain="*.lindseyisepic.com" secure="false" />
+	<allow-access-from domain="*.liveminis.com" secure="false" />
+	<allow-access-from domain="*.lulladev.com" secure="false" />
+	<allow-access-from domain="*.marketwatch.com" secure="false" />
+	<allow-access-from domain="*.marksandspencer.com" secure="false" />
+	<allow-access-from domain="*.mmh.com" secure="false" />
+	<allow-access-from domain="*.mundofox.com" to-ports="*" secure="false" />
+	<allow-access-from domain="*.mundofox.com.br" to-ports="*" secure="false" />
+	<allow-access-from domain="*.musicbox.de" secure="false" />
+	<allow-access-from domain="*.myfox.tv" secure="false" />
+	<allow-access-from domain="*.mystyle.com" secure="false" />
+	<allow-access-from domain="*.natgeo.com.br" secure="false" />
+	<allow-access-from domain="*.natgeo.tv" secure="false" />
+	<allow-access-from domain="*.natgeoeeu.com.br" secure="false" />
+	<allow-access-from domain="*.natgeoyyo.tv" secure="false" />
+	<allow-access-from domain="*.nesola.de" secure="false" />
+	<allow-access-from domain="*.ngcasia.com" secure="false" />
+	<allow-access-from domain="*.nn4mretail.co.uk" secure="false"/>
+	<allow-access-from domain="*.nytimes.com" secure="false" />
+	<allow-access-from domain="*.o2online.ie" secure="false" />
+	<allow-access-from domain="*.oasis-stores.com" secure="false" />
+	<allow-access-from domain="*.officeminis.com" secure="false" />
+	<allow-access-from domain="*.officeweekly.tv" secure="false" />
+	<allow-access-from domain="*.oralb.digitas.com" secure="false" />
+	<allow-access-from domain="*.oralbredesign.digitas.com" secure="false" />
+	<allow-access-from domain="*.ovp01.com.ar" secure="false" />
+	<allow-access-from domain="*.packagingdigest.com" secure="false" />
+	<allow-access-from domain="*.philips.com" secure="false" />
+	<allow-access-from domain="*.philips.com.cn" secure="false" />
+	<allow-access-from domain="*.playboy.com" secure="false" />
+	<allow-access-from domain="*.powerhousestg.digitas.com" secure="false" />
+	<allow-access-from domain="*.prettysimple.com" secure="false" />
+	<allow-access-from domain="*.rapp-digital.net" secure="false"/>
+	<allow-access-from domain="*.rcarecords.com" secure="false" />
+	<allow-access-from domain="*.redinkmusic.de" secure="false" />
+	<allow-access-from domain="*.reebok.com" secure="false" />
+	<allow-access-from domain="*.rockresorts.com" secure="false" />
+	<allow-access-from domain="*.scifibrasil.com" secure="false" />
+	<allow-access-from domain="*.scifila.com" secure="false" />
+	<allow-access-from domain="development.sidlee.com" secure="false"/>
+	<allow-access-from domain="*.simplemedia.tv" secure="false" />
+	<allow-access-from domain="*.simply.tv" secure="false" />
+	<allow-access-from domain="*.sirupprojekte.de" secure="false" />
+	<allow-access-from domain="*.skiheavenly.com" secure="false" />
+	<allow-access-from domain="*.sky.it " secure="false" />
+	<allow-access-from domain="*.skylife.it " secure="false" />
+	<allow-access-from domain="*.slate.com" secure="false" />
+	<allow-access-from domain="*.slatev.com" secure="false" />
+	<allow-access-from domain="*.slide.com" secure="false" />
+	<allow-access-from domain="*.snow.com" secure="false" />
+	<allow-access-from domain="*.socgen.tv" secure="false" />
+	<allow-access-from domain="*.sonybmg.at" secure="false" />
+	<allow-access-from domain="*.sonybmg.ch" secure="false" />
+	<allow-access-from domain="*.sonybmg.com" secure="false" />
+	<allow-access-from domain="*.sonybmg.de" secure="false" />
+	<allow-access-from domain="*.sonymusic.com" secure="false" />
+	<allow-access-from domain="*.speedafrica.tv" secure="false" />
+	<allow-access-from domain="*.spinlets.com" secure="false" />
+	<allow-access-from domain="*.spygames.tv" secure="false" />
+	<allow-access-from domain="*.starwave.com" secure="false" />
+	<allow-access-from domain="*.stream.ne.jp" secure="false" />
+	<allow-access-from domain="*.t36.eu" secure="false" />
+	<allow-access-from domain="*.tbgadserver.com" secure="false" />
+	<allow-access-from domain="*.telegraph.co.uk" secure="false" />
+	<allow-access-from domain="*.the-n.com" secure="false" />
+	<allow-access-from domain="*.thecell.com.pt" secure="false" />
+	<allow-access-from domain="*.thecell.es" secure="false" />
+	<allow-access-from domain="*.thecell.pt" secure="false" />
+	<allow-access-from domain="*.thecell.tv" secure="false" />
+	<allow-access-from domain="*.thedenofthieves.com" secure="false" />
+	<allow-access-from domain="*.thenetworks.com" secure="false" />
+	<allow-access-from domain="*.thestreet.com" secure="false" />
+	<allow-access-from domain="*.time.com" secure="false" />
+	<allow-access-from domain="*.truveo.com" secure="false" />
+	<allow-access-from domain="*.umusic.com" secure="false" />
+	<allow-access-from domain="*.union-street.de" secure="false" />
+	<allow-access-from domain="*.universalchannel.com.br" secure="false" />
+	<allow-access-from domain="*.universalchannel.tv" secure="false" />
+	<allow-access-from domain="*.uol.com.br" secure="false" />
+	<allow-access-from domain="*.utilisima.com" secure="false" />
+	<allow-access-from domain="*.vail.com" secure="false" />
+	<allow-access-from domain="*.vailresorts.com" secure="false" />
+	<allow-access-from domain="*.variety.com" secure="false" />
+	<allow-access-from domain="*.virginmedia.com" secure="false" />
+	<allow-access-from domain="*.virtualchangingroom.com" secure="false"/>
+	<allow-access-from domain="*.visions.de" secure="false" />
+	<allow-access-from domain="*.warehouse.co.uk" secure="false"/>
+	<allow-access-from domain="*.warnermusic.ca" secure="false"/>
+	<allow-access-from domain="*.warnermusic.fi" secure="false"/>
+	<allow-access-from domain="*.warnermusic.no" secure="false"/>
+	<allow-access-from domain="*.warnermusic.se" secure="false"/>
+	<allow-access-from domain="*.wearevi.com" secure="false" />
+	<allow-access-from domain="*.web.de" secure="false" />
+	<allow-access-from domain="*.websitevideocenter.com" secure="false" />
+	<allow-access-from domain="*.wmg.com" secure="false" />
+	<allow-access-from domain="*.workerbee.tv" secure="false" />
+	<allow-access-from domain="*.wsj.com" secure="false" />
+	<allow-access-from domain="*.yomama.de" secure="false" />
+	<allow-access-from domain="*.yourminis.com" secure="false" />
+	<allow-access-from domain="*.zuidlimburg.nl" secure="false" />
+	<!--  starbucks.ca earthday promo -->
+	<allow-access-from domain="*.bbc.co.uk" />
+	<allow-access-from domain="*.facebook.ca" />
+	<allow-access-from domain="*.facebook.com" />
+	<allow-access-from domain="*.macleans.ca" />
+	<allow-access-from domain="*.msn.ca" />
+	<allow-access-from domain="*.msn.com" />
+	<allow-access-from domain="*.dartmotif.com" />
+	<allow-access-from domain="*.2mdn.net" />
+
+	<allow-access-from domain="*.doubleclick.net" />
+	<allow-access-from domain="*.doubleclick.com" />
+	<allow-access-from domain="*.adcdn.com" />
+	<allow-access-from domain="*.starbucks.ca" />
+	<allow-access-from domain="*.straight.com" />
+	<allow-access-from domain="*.theglobeandmail.com" />
+	<allow-access-from domain="*.yahoo.ca" />
+	<allow-access-from domain="*.yahoo.com" />
+</cross-domain-policy>
+

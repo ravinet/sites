@@ -1,0 +1,24 @@
+PHTTP23.44.198.152"Ì
+LGET /vs/client%20page%20load/front%20door/hotels/ms/472?action=vs HTTP/1.1
+Host: www.kayak.com
+Connection: keep-alive
+Accept: */*
+"X-Requested-With: XMLHttpRequest
+vUser-Agent: Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/31.0.1650.63 Safari/537.36
+ Referer: http://www.kayak.com/
+$Accept-Encoding: gzip,deflate,sdch
+!Accept-Language: en-US,en;q=0.8
+°Cookie: Apache=gB5MNw-AAABQ30DkdI-9f-cPntVQ; kayak=o8ATDVcfG4vOGkp22cVo; p1.med.sid=5-5$6UeB43GR4Ff3moxRkTy; p1.med._hmc=Z-eyv2PSDddNmOpJropjKf8hRi4; p1.med.admin=false; p1.med.token=me24YynsvUV1zMWfpqF_5R; cluster=5; p1.med.bsc=qeqV2IowdX7$; NSC_q5-tqbslmf=ffffffff09892a3d45525d5f4f58455e445a4a422a59
+
+*ò
+HTTP/1.1 204 No Content
+Server: Apache-Coyote/1.1
+Vary: Accept-Encoding
+QP3P: CP="ALL DSP LAW CUR ADM DEVi TAI PSA PSD IVA IVD CONi OUR SAM LEG UNI PUR"
+Content-Length: 0
+)Content-Type: text/plain; charset=UTF-8
+%Date: Fri, 10 Jan 2014 16:37:03 GMT
+Connection: keep-alive
+FSet-Cookie: cluster=5; Expires=Fri, 10-Jan-2014 17:22:03 GMT; Path=/
+Set-Cookie: NSC_q5-tqbslmf=ffffffff09892a3d45525d5f4f58455e445a4a422a59;expires=Fri, 10-Jan-2014 16:57:03 GMT;path=/;httponly
+

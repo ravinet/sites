@@ -1,0 +1,22 @@
+PHTTP69.25.201.71"Ì
+GET /idswap/?imp=1 HTTP/1.1
+Host: l2.visiblemeasures.com
+Connection: keep-alive
+Accept: image/webp,*/*;q=0.8
+vUser-Agent: Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/31.0.1650.63 Safari/537.36
+&Referer: http://www.bizjournals.com/
+$Accept-Encoding: gzip,deflate,sdch
+!Accept-Language: en-US,en;q=0.8
+dCookie: uid=BB91954156AC5699EDF61B3A0F9730376C32C135; sid=35214F582258350668088828A62D09B87CB3C195
+
+*’
+HTTP/1.1 302 Found
+%Date: Thu, 09 Jan 2014 13:52:17 GMT
+ƒSet-Cookie: uid=BB91954156AC5699EDF61B3A0F9730376C32C135;Path=/;Domain=.visiblemeasures.com;Expires=Fri, 09-Jan-2015 13:52:17 GMT
+]Set-Cookie: sid=35214F582258350668088828A62D09B87CB3C195;Path=/;Domain=.visiblemeasures.com
+(Expires: Thu, 16 Jan 2014 13:52:17 GMT
+.Last-Modified: Thu, 09 Jan 2014 13:52:17 GMT
+ZLocation: http://tags.bluekai.com/site/15242?id=BB91954156AC5699EDF61B3A0F9730376C32C135
+Content-Length: 0
+Server: Jetty(8.y.z-SNAPSHOT)
+

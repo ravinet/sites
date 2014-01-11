@@ -1,0 +1,26 @@
+PHTTP23.15.129.170"é
+POST /tracky HTTP/1.1
+Host: www.groupon.com
+Connection: keep-alive
+Content-Length: 860
+ Origin: http://www.groupon.com
+"X-Requested-With: XMLHttpRequest
+vUser-Agent: Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/31.0.1650.63 Safari/537.36
+ Content-Type: application/json
+Accept: */*
+<Referer: http://www.groupon.com/app/subscriptions/new_zip?
+$Accept-Encoding: gzip,deflate,sdch
+!Accept-Language: en-US,en;q=0.8
+¬Cookie: locale=en_US; s=125f8b84-78c6-11e3-a359-de26511e3812; priority=true; b=e3bec468-3118-0bb2-6b97-ab7fa5e0f5bb; bucket=194; division=boston; visited=1; pageId=125f8b84-78c6-11e3-a359-de26511e3812-1389227786766-TH0; subscription_flow.sid=s%3ArdvXbg2pGcVwffyz5jPeZ7vF.KtTwBxxqGuAq6ywX7K0YMFq19bZdnwTu5RK2qvXsxCw; s=125f8b84-78c6-11e3-a359-de26511e3812; bh-last-page-id=125f8b84-78c6-11e3-a359-de26511e3812-1389227799358-TH0
+Þ
+{"session":{"id":"125f8b84-78c6-11e3-a359-de26511e3812","referral":{"source":"direct"}},"page":{"parentEventId":null,"parentPageId":null,"url":"http%3A%2F%2Fwww.groupon.com%2Fapp%2Fsubscriptions%2Fnew_zip%3F","type":"subscriptions/itier/local-zip","division":"boston","country":"USA","channel":"main","id":"125f8b84-78c6-11e3-a359-de26511e3812-1389227799358-TH0"},"user":{"userAgent":"Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/31.0.1650.63 Safari/537.36","browser":"Chrome","browserVersion":"31.0","os":"Linux","device":"Other","consumerId":null,"loggedIn":false,"permalink":null,"browserId":"e3bec468-3118-0bb2-6b97-ab7fa5e0f5bb","scid":null,"visit":"1"},"event_name":"tracking-init","event_client_timestamp":"2014-01-09T00:36:39.358Z","event_id":"f50e8b85-c06e-8b35-754b-a854cc8fc3fc-125f8b84-78c6-11e3-a359-de26511e3812"}*á
+HTTP/1.1 200 OK
+Server: nginx/1.2.9
+(Content-Type: application/octet-stream
+Content-Length: 3
+%Date: Thu, 09 Jan 2014 00:36:27 GMT
+Connection: keep-alive
+X-Treatment-Name: OUT
+X-Bucket-Value: 194
+
+OK

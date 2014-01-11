@@ -1,0 +1,30 @@
+PHTTP54.230.53.69"Ê
+GET /vop/t.js HTTP/1.1
+Host: cdn1-res.sundaysky.com
+Connection: keep-alive
+Accept: */*
+vUser-Agent: Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/31.0.1650.63 Safari/537.36
+ŸReferer: http://intercept.cox.com/dispatch/7053741196904428188/intercept.cox?lob=residential&s=filter&dest=http%3A%2F%2Fww2.cox.com%2Fmyconnection%2Fhome.cox
+$Accept-Encoding: gzip,deflate,sdch
+!Accept-Language: en-US,en;q=0.8
+
+*ˆ
+HTTP/1.1 200 OK
+&Content-Type: application/javascript
+Content-Length: 2090
+Connection: keep-alive
+Accept-Ranges: bytes
+%Date: Mon, 06 Jan 2014 19:39:16 GMT
+ETag: W/"2090-1388966534000"
+.Last-Modified: Mon, 06 Jan 2014 00:02:14 GMT
+Server: Apache-Coyote/1.1
+Age: 75250
+X-Cache: Hit from cloudfront
+GVia: 1.1 7afde15c0b063d72207bf3d31ab50d72.cloudfront.net (CloudFront)
+GX-Amz-Cf-Id: K2tw4C96ORu9N0ODCQ6Ytr0fMcvBGy98XxDhecEJlQLhDAzhvGBlBg==
+¬
+(function(i,k){i.SSKY=i.SSKY||[];if(void 0===i.SSKY.sskyinit){var l=function(){var h=encodeURIComponent,g=function(b,a){var d=a.account,e=a.profile;if(!(void 0==d||""==d||void 0==e||""==e||"conv"!=b&&"atc"!=b&&"uui"!=b&&"cart"!=b)){var d=("https:"==k.location.protocol?"https://s-":"http://")+"vop.sundaysky.com/t/v1/i?a="+h(d)+"&ap="+h(e)+"&m="+b,c;void 0!=a.user_id&&""!=a.user_id&&(d+="&xu="+h(a.user_id));"conv"==b&&(void 0!=a.order_id&&""!=a.order_id)&&(d+="&el="+h(a.order_id));"conv"==b&&(void 0!=
+a.order_value&&""!=a.order_value)&&(d+="&ev="+h(a.order_value));"cart"==b&&(void 0!=a.cart_value&&""!=a.cart_value)&&(d+="&ev="+h(a.cart_value));var e=a.attrs,f,g,j,i="";if(void 0==e)c="";else{for(c in e)if(f=e[c],/^[a-z][a-z0-9]*$/.test(c)&&void 0!=f){g="";"string"==typeof f&&(f=[f]);if(f instanceof Array)for(j=0;j<f.length;++j)"string"==typeof f[j]&&/^[a-zA-Z0-9_\-. !\$%&\*\(\)\?\/:]+$/.test(f[j])&&(g+=(""==g?"":",")+f[j].replace(/([\\,;])/g,"\\$1"));""!=g&&(i+=(""==i?"~":";~")+c+"/"+g)}c=i}d+=
+"&udt=~segment/visitor"+("conv"==b?",buyer":"")+("atc"==b?",atc":"")+("cart"==b?",cart":"")+(""!=c?";"+c:"");c=k.createElement("iframe");c.setAttribute("frameborder","0");c.setAttribute("scrolling","no");e=(e=c.getAttribute("style"))&&"undefined"!=typeof e.cssText?e:c.style;e.cssText="position:absolute;top:-9999em;width:10px;height:10px";c.src=d;(d=k.body)&&d.appendChild(c)}};return{browse:function(b){g("uui",b)},addToCart:function(b){g("atc",b)},conversion:function(b){g("conv",b)},cartView:function(b){g("cart",
+b)}}}();i.SSKY=new function(h){this.sskyinit=!0;var g={t:l};this.push=function(a){if(!a)throw"No call spec provided in call to push";if(!(a instanceof Array)||1>a.length||"string"!=typeof a[0])throw"Argument to 'push' must be array of length at least 1, and first item must be a string specifying a method";for(var b=2>a.length?{}:a[1],a=a[0].split("."),e=null,c=g,f=0;f<a.length;++f)if(e=c,c=c[a[f]],void 0===c)throw"No property '"+a[f]+"'";c.apply(e,[b])};if(void 0!==h&&h instanceof Array)for(var b=
+0;b<h.length;++b)this.push(h[b])}(i.SSKY)}})(window,document);

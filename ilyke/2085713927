@@ -1,0 +1,27 @@
+PHTTP54.235.175.28"„
+8GET /GenericUserSync.ashx?dpid=turnnoredirect HTTP/1.1
+Host: sync.tidaltv.com
+Connection: keep-alive
+Accept: image/webp,*/*;q=0.8
+vUser-Agent: Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/31.0.1650.63 Safari/537.36
+çReferer: http://cdn.turn.com/server/ddc.htm?uid=2581377494078463609&mktid=571&mpid=5179754&fpid=13&rnd=2994869732424556153&nu=n&sp=n&ctid=1
+$Accept-Encoding: gzip,deflate,sdch
+!Accept-Language: en-US,en;q=0.8
+
+*Ω
+HTTP/1.1 302 Found
+Cache-Control: private
+(Content-Type: text/html; charset=utf-8
+%Date: Thu, 09 Jan 2014 01:41:32 GMT
+_Location: http://r.turn.com/r/bd?ddc=1&pid=64&cver=1&uid=b87ce649-5310-48b3-84fd-d42a20537eaf
+Server: Microsoft-IIS/7.0
+ˆSet-Cookie: ptc=%7b%22UserSyncItems%22%3a%5b%7b%22PartnerId%22%3a%22turnnoredirect%22%2c%22PartnerUserId%22%3anull%2c%22TimeStamp%22%3a%2201%2f09%2f2014+01%3a41%3a32%22%7d%5d%7d; domain=tidaltv.com; expires=Sat, 09-Jan-2016 01:41:32 GMT; path=/
+ÄSet-Cookie: tidal_ttid=b87ce649-5310-48b3-84fd-d42a20537eaf; domain=tidaltv.com; expires=Sat, 09-Jan-2016 01:41:32 GMT; path=/
+X-AspNet-Version: 4.0.30319
+X-Powered-By: ASP.NET
+Content-Length: 212
+Connection: keep-alive
+÷
+<html><head><title>Object moved</title></head><body>
+<h2>Object moved to <a href="http://r.turn.com/r/bd?ddc=1&amp;pid=64&amp;cver=1&amp;uid=b87ce649-5310-48b3-84fd-d42a20537eaf">here</a>.</h2>
+</body></html>

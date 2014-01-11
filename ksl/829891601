@@ -1,0 +1,22 @@
+PHTTP50.57.4.218"Í
+GET /p1.js HTTP/1.1
+Host: p1cluster.cxense.com
+Connection: keep-alive
+Accept: */*
+vUser-Agent: Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/31.0.1650.63 Safari/537.36
+(Referer: http://cdn.cxense.com/p1.html
+$Accept-Encoding: gzip,deflate,sdch
+!Accept-Language: en-US,en;q=0.8
+
+*Š
+HTTP/1.1 200 OK
+%Date: Thu, 09 Jan 2014 01:12:35 GMT
+(Expires: Fri, 09 Jan 2015 01:12:35 GMT
+.Last-Modified: Tue, 09 Jul 2013 01:12:35 GMT
+*Cache-Control: private, proxy-revalidate
+(ETag: 6ad67683d53edd39f370f0a19fb8def6
+-Content-Type: text/javascript;charset=UTF-8
+Content-Length: 53
+ Server: Jetty(9.0.5.v20130815)
+7
+cX.library.onP1('6ad67683d53edd39f370f0a19fb8def6');

@@ -1,0 +1,74 @@
+PHTTP204.238.150.83"š
+9GET /static/js/shared/sb.googleAutocomplete.js HTTP/1.1
+Host: www.starbucks.com
+Connection: keep-alive
+Accept: */*
+vUser-Agent: Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/31.0.1650.63 Safari/537.36
+$Referer: http://www.starbucks.com/
+$Accept-Encoding: gzip,deflate,sdch
+!Accept-Language: en-US,en;q=0.8
+­Cookie: skin=; ASP.NET_SessionId=43t5lzfqeqyksfrqdt1ikiki; optimizelySegments=%7B%22192119771%22%3A%22false%22%2C%22192128716%22%3A%22direct%22%2C%22192132656%22%3A%22gc%22%7D; optimizelyEndUserId=oeu1389372152608r0.6264181847218424; optimizelyBuckets=%7B%7D; optimizelyPendingLogEvents=%5B%22n%3Dhttp%253A%252F%252Fwww.starbucks.com%252F%26u%3Doeu1389372152608r0.6264181847218424%26wxhr%3Dtrue%26t%3D1389372152612%26f%3D%22%5D
+
+*ó
+HTTP/1.1 200 OK
+(Content-Type: application/x-javascript
+(Expires: Wed, 01 Apr 2020 00:00:00 GMT
+.Last-Modified: Thu, 09 Jan 2014 23:38:47 GMT
+Accept-Ranges: bytes
+ETag: "ec4eebf093dcf1:0"
+Server: Microsoft-IIS/7.0
+p3p: CP="CAO PSA OUR"
+X-Powered-By: ASP.NET
+%Date: Fri, 10 Jan 2014 16:43:03 GMT
+Content-Length: 1429
+—
+ï»¿/*
+	sb.googleAutocomplete is a facade for instantiating google autocomplete on
+	the utility search input, using jqueru ui's autocomplete widget.
+
+	Test partner/engine ids:
+		en-CA Search engine unique ID:	015296957820465757838:sehukvapxpy
+		fr-CA Search engine unique ID:	015296957820465757838:awqdhqvdzf4
+		en-US Search engine unique ID:	015296957820465757838:whakofqfgxi 
+		sample: 	017769575368669631555:c2qwdkjaxqq
+*/
+
+sb.googleAutocomplete = (function($){
+	return {
+		
+		init: function(engineId, language){
+			// instantite a jquery ui autocomplete instance on the utility search.
+			$('#searchbox').autocomplete({
+				appendTo: '#search',
+				source: function( request, response ) {
+					$.ajax({
+						url: "http://clients1.google.com/complete/search",
+						dataType: "jsonp",
+						data: {
+							style: "basic",
+							maxRows: 12,
+							q: request.term,
+							hl: language,
+							//hl: sb.i18n.culture.toISOString(),
+							client: "partner",
+							"source": "gcsc",
+							partnerid: engineId,
+							ds:"cse"
+						},
+						success: function( data ) {
+							sb.console.log('autocompletions', data[1]);
+							response(data[1].map(function(v,i,a){ return v[0];}));
+						}
+					});
+				},
+
+				select: function( event, ui ) {
+					if(ui.item){
+					    $(this).val(ui.item.value);
+						$(this).closest('form').submit();
+					}
+				}
+			});
+		}
+	};
+})(jQuery);

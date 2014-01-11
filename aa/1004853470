@@ -1,0 +1,25 @@
+PHTTP
+23.0.61.41"ÿ
+FGET /apps/common/js/jquery/aacom/plugins/aaDropdownPanel.js HTTP/1.1
+Host: www.aa.com
+Connection: keep-alive
+Accept: */*
+vUser-Agent: Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/31.0.1650.63 Safari/537.36
+(Referer: http://www.aa.com/homePage.do
+$Accept-Encoding: gzip,deflate,sdch
+!Accept-Language: en-US,en;q=0.8
+ˆCookie: v1st=7EA5FF02354CAF63; JSESSIONID=4C0F4AAF1B0090AFE3A5001E623C1AE7; dtCookie=06F4BF3512EFE0A6C157596C94C19D9F|AA.com|1; ROUTEID=.P111A01; homeAirport="wGFH1cxVqs0="; COUNTRY_CODE="UCKRRdXdz9w="; saleCity="wGFH1cxVqs0="; dtPC=5312511_627#_load_; AX42=CT-1
+
+*¥
+HTTP/1.1 200 OK
+Server: Apache-Coyote/1.1
+X-dynaTrace-JS-Agent: true
+Accept-Ranges: bytes
+ETag: W/"2665-1387316480000"
+.Last-Modified: Tue, 17 Dec 2013 21:41:20 GMT
+&Content-Type: application/javascript
+Content-Length: 2665
+%Date: Thu, 09 Jan 2014 01:28:20 GMT
+Connection: keep-alive
+ë
+(function($){var $dropdowns=$([]);$(document).bind("click",function(e){if(($(e.target).parents('[data-behavior~="dropdown"]').length==0)&&(!$(e.target).is('[data-behavor~="dropdown-trigger"]'))){$dropdowns.find('[data-behavior~="dropdown-panel"]:visible').hide();$dropdowns.find('[data-behavior~="dropdown-trigger"]:visible').removeClass("is-active");}e.stopPropagation();});var methods={init:function(options){$dropdowns=$dropdowns.add(this);$dropdowns.find('[data-behavior~="dropdown-panel"]:visible').hide();var settings=$.extend({},options);return this.each(function(){var $this=$(this);if(settings.width){$this.find('[data-behavior~="dropdown-panel"]').css("min-width",settings.width);$this.find('[data-behavior~="dropdown-panel"]').css("width",settings.width);}if(settings.maxHeight){$this.find('[data-behavior~="dropdown-panel"]').css("max-height",settings.maxHeight);}if($this.data("initialized")){return;}else{$this.data("initialized",true);}var $trigger=$this.find('[data-behavior~="dropdown-trigger"]'),$panel=$this.find('[data-behavior~="dropdown-panel"]'),$close=$this.find('[data-behavior~="dropdown-close"]');$trigger.addClass("js-dropdown-trigger").parents('[data-behavior~="dropdown-wrapper"]').addClass("js-dropdown-wrapper").parents('[data-behavior~="dropdown"]').addClass("js-dropdown");$panel.addClass("js-dropdown-panel");$close.addClass("js-dropdown-close");$trigger.click(function(e){e.stopPropagation();e.preventDefault();$dropdowns.not($this).find('[data-behavior~="dropdown-panel"]:visible').hide();$dropdowns.not($this).find('[data-behavior~="dropdown-trigger"]').removeClass("is-active");$trigger.toggleClass("is-active");$panel.toggle();});$close.click(function(e){e.preventDefault();$this.find('[data-behavior~="dropdown-trigger"]').removeClass("is-active");$this.find('[data-behavior~="dropdown-panel"]').hide();});});},show:function(){return this.each(function(){$(this).find('[data-behavior~="dropdown-panel"]:hidden').show();});},hide:function(){return this.each(function(){$(this).find('[data-behavior~="dropdown-panel"]:visible').hide();});},toggle:function(){return this.each(function(){$(this).find('[data-behavior~="dropdown-panel"]').toggle().css("z-index","9999");alert($(this).css("z-index"));});}};$.fn.dropdown=function(method){if($("html").hasClass("lt-ie8")){return;}if(methods[method]){return methods[method].apply(this,Array.prototype.slice.call(arguments,1));}else{if(typeof method==="object"||!method){return methods.init.apply(this,arguments);}else{$.error("Method "+method+" does not exist on jQuery.dropdown");}}};})(jQuery);jQuery(document).ready(function(){jQuery('[data-behavior~="dropdown"]').dropdown();});

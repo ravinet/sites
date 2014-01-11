@@ -1,0 +1,20 @@
+PHTTP54.225.139.135"ç
+GET / HTTP/1.1
+Host: www.bleacherreport.com
+Connection: keep-alive
+TAccept: text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8
+vUser-Agent: Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/31.0.1650.63 Safari/537.36
+$Accept-Encoding: gzip,deflate,sdch
+!Accept-Language: en-US,en;q=0.8
+
+*¬
+ HTTP/1.1 301 Moved Permanently
+Content-Type: text/html
+&Location: http://bleacherreport.com/
+0Server: nginx/1.2.6 + Phusion Passenger 3.0.19
+Status: 301
+Vary: User-Agent
+=X-Powered-By: Phusion Passenger (mod_rails/mod_rack) 3.0.19
+Content-Length: 0
+Connection: keep-alive
+

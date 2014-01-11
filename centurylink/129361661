@@ -1,0 +1,25 @@
+PHTTP208.89.14.135"‘
+ù	GET /hc/86584264/?&visitor=11295057335290&msessionkey=7654161189565763075&siteContainer=STANDALONE&site=86584264&cmd=mTagStartPage&lpCallId=821250633103-890233013312&protV=20&lpjson=1&page=http%3A//www.centurylink.com/&id=4676267425&javaSupport=false&visitorStatus=INSITE_STATUS&defInvite=chat-residentialenglish&activePlugin=none&cobrowse=true&PV%21unit=residential&PV%21visitorActive=1&SV%21language=english&SV%21lpDomain=www.centurylink.com&title=CenturyLink%20%7C%20Local%20Provider%20of%20High%20Speed%20Internet%2C%20Phone%2C%20Mobile%20%26%20TV%20Services&cookie=TLTSID%3D179510CA793310790020D1C8C98E69CF%3B%20mbox%3Dcheck%23true%231389274684%7Csession%231389274623078-967473%231389276484%7CPC%231389274623078-967473.17_38%231390484224%3B%20s_cc%3Dtrue%3B%20s_nr%3D1389274625244-New%3B%20eVar61%3Dctl%257Chome_page%3B%20s_sq%3D%255B%255BB%255D%255D%3B%20TLTHID%3D197BDE46793310790018EAC0543C33EA%3B%20JSESSIONID%3D366D0157581B62BFE8B90C657A6797A66CC5565874.dotcomprd2%3B%20s_vi%3D%5BCS%5Dv1%7C296752FA85161E6F-60000182E0012B8A%5BCE%5D%3B%2086584264-VID%3D11295057335290%3B%2086584264-SKEY%3D7654161189565763075%3B%20HumanClickSiteContainerID_86584264%3DSTANDALONE HTTP/1.1
+Host: sales.liveperson.net
+Connection: keep-alive
+Accept: */*
+vUser-Agent: Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/31.0.1650.63 Safari/537.36
+&Referer: http://www.centurylink.com/
+$Accept-Encoding: gzip,deflate,sdch
+!Accept-Language: en-US,en;q=0.8
+
+*π
+HTTP/1.1 200 OK
+%Date: Thu, 09 Jan 2014 13:37:17 GMT
+Server: Microsoft-IIS/6.0
+GP3P: CP="NON BUS INT NAV COM ADM CON CUR IVA IVD OTP PSA PSD TEL SAM"
+X-Powered-By: ASP.NET
+(Content-Type: application/x-javascript
+Accept-Ranges: bytes
+.Last-Modified: Thu, 09 Jan 2014 13:36:53 GMT
+Cache-Control: no-store
+Pragma: no-cache
+(Expires: Wed, 31 Dec 1969 23:59:59 GMT
+Content-Length: 2328
+ö
+lpConnLib.Process({"ResultSet": {"lpCallId":"821250633103-890233013312","lpCallConfirm":"","lpJS_Execute":[{"code_id": "SYSTEM!updateButtonStatic_compact.js", "js_code": "function lpUpdateStaticButton(){this.hcDate=function(){var d=new Date();return d.getTime();};this.hcGetImage=function(name){return this.hcFindImage(document,name);};this.hcFindImage=function(doc,name){var i;if(this.hcDOM){var elements=doc.getElementsByTagName('IMG');var collection=[];for(i=0;i<elements.length;i++){if((typeof(elements[i].name)!='undefined')&&(elements[i].name==name)){collection[collection.length]=elements[i];}}if(collection.length==0){return null;}if(collection.length==1){return collection[0];}return collection;}var lays=doc.layers;if(!lays){return doc[name];}for(i=0;i<doc.images.length;i++){if(doc.images[i].name==name){return doc.images[i];}}for(var l=0;l<lays.length;l++){var img=this.hcFindImage(lays[l].document,name);if(img!=null){return img;}}return null;};this.hcDOM=(document.getElementById)?true:false;this.hcimage=this.hcGetImage('hcIcon');this.hcicon=null;var i;if(this.hcimage){if(!(this.hcimage.length)){var temp=this.hcimage;this.hcimage=[];this.hcimage[0]=temp;}this.hcicon=[];for(i=0;i<this.hcimage.length;i++){this.hcicon[i]=this.hcimage[i].src;}}if(this.hcimage){for(i=0;i<this.hcimage.length;i++){this.hcimage[i].src=this.hcicon[i]+'&monitor=1&d='+this.hcDate();}}if(typeof(lpMTagStatic)!='undefined'&&typeof(lpMTagStatic.stateChangeCallbacks)!='undefined'){for(i=0;i<lpMTagStatic.stateChangeCallbacks.length;i++){var tempfunc=lpMTagStatic.stateChangeCallbacks[i];try{tempfunc();if(lpConnLib.DebugDisplay){lpMTagDebug.Display('OK Executing Static button callback function','EXEC-OK');}}catch(hcError){if(lpConnLib.DebugDisplay){lpMTagDebug.Display('ERROR Executing Static button callback function='+tempfunc+' &nbsp #'+hcError+'#','ERROR');}}}}}var lpUpdateStaticButtonObj=new lpUpdateStaticButton();"},{"code_id": "LP_REP_STATE_CHANGED", "js_code": "if(window.lpTag&&window.lpTag.events){window.lpTag.events.trigger('LPChat','LP_REP_STATE_CHANGED',{});}else if(window.lpMTag&&window.lpMTag.events){window.lpMTag.events.publish('LP_REP_STATE_CHANGED',{});}"},{"code_id": "INPAGE-DELAY-10", "js_code": "lpMTag.lpInPageRequestDelay=10;"},{"code_id": "FPCSetVal", "js_code": "lpMTagConfig.useFirstParty = true;"}]}});

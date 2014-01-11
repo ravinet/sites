@@ -1,0 +1,145 @@
+PHTTP129.176.217.220" 
+*GET /styles/js/gbs/_fancybox.js HTTP/1.1
+Host: www.mayoclinic.org
+Connection: keep-alive
+Accept: */*
+vUser-Agent: Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/31.0.1650.63 Safari/537.36
+%Referer: http://www.mayoclinic.org/
+$Accept-Encoding: gzip,deflate,sdch
+!Accept-Language: en-US,en;q=0.8
+kCookie: ASP.NET_SessionId=utneflmiwti1lzdwzi1m1rsm; OAX=gB5MN1LN/dYAACQh; UnicaNIODID=u2js59xYxmI-YcZUJ4S
+
+*ì%
+HTTP/1.1 200 OK
+Cache-Control: max-age=604800
+(Content-Type: application/x-javascript
+.Last-Modified: Fri, 03 Jan 2014 19:27:24 GMT
+Accept-Ranges: bytes
+ETag: "db794d4b98cf1:0"
+%Date: Thu, 09 Jan 2014 01:39:33 GMT
+Content-Length: 4494
+ê#
+/**
+resize fancybox when doing previous and next
+@see http://jsfiddle.net/PwMjP/
+*/
+(function ($, F) {
+    F.transitions.resizeIn = function () {
+        var previous = F.previous,
+            current = F.current,
+            startPos = previous.wrap.stop(true).position(),
+            endPos = $.extend({ opacity: 1 }, current.pos);
+
+        startPos.width = previous.wrap.width();
+        startPos.height = previous.wrap.height();
+
+        previous.wrap.stop(true).trigger('onReset').remove();
+
+        delete endPos.position;
+
+        current.inner.hide();
+
+        current.wrap.css(startPos).animate(endPos, {
+            duration: current.nextSpeed,
+            easing: current.nextEasing,
+            step: F.transitions.step,
+            complete: function () {
+                F._afterZoomIn();
+
+                current.inner.fadeIn("fast");
+            }
+        });
+    };
+
+    F.keyup = function (evt) {
+        var keyCode = e.keyCode || e.which;
+
+        if (keyCode == 9) {
+            e.preventDefault();
+            // call custom function here
+        }
+    }
+
+    // FS-204 image gallery with FancyBox
+    $('.image-gallery').each(function (i, j) {
+        var $this = $(this),
+            $a = $this.find('a'),
+            $li = $this.find('li');
+        $a.attr('rel', 'gallery' + i)
+                .addClass('fancybox');
+        $img = $a.find('img');
+        $img.wrap('<div class="image-gallery-overlay-wrap">').before('<div class="image-gallery-hover-overlay">');
+    });
+
+    $gallery_items = $('.image-gallery').find('a');
+    $gallery_items.fancybox({
+        // nextMethod: MayoApp.isMobile&&"resizeIn"||"none",
+        beforeLoad: function () {
+            var $el = $(this.element),
+                cap = $el.data('caption') || "",
+                tit = $el.data('title') || "";
+            // construct custom Title based on FS-204 2.3, 2.4
+            this.title = '';
+            if (tit) {
+                this.title += "<span class='title'>" + tit + "</span>";
+            }
+            if (cap) {
+                this.title += "<span class='caption'>" + cap + "</span>";
+            }
+            this.title = this.title || "<div class='title empty'></div>";
+            F.first = $('a:first');
+            F.last = $('a:last');
+        },
+        beforeClose: function () {
+            F.current.element.focus();
+        },
+        afterLoad: function () {
+            var $el = $(this.element),
+                rel = $el.attr('rel') || "",
+                cnt = $gallery_items.filter('[rel=' + rel + ']').length,
+                idx = this.index + 1;
+            // add {n} of {m} based on FS-204 2.7
+            // construct "[Current image number] of [Total number of images in gallery]"
+            if (cnt > 1) {
+                ctContents = '<div class="fancybox-counter">{idx} of {cnt}</div>'.replace('{idx}', idx).replace('{cnt}', cnt);
+                this.outer.append(ctContents);
+                //  href="javascript:;"
+            }
+        },
+        afterShow: function () {
+            // lock keyboard user into the fancybox.
+            var $fba = this.skin.find('a'),
+                startover = function () {
+                    //$fba.get(1).focus();
+                };
+            $fba.on('focus', function (e) {
+                // console.log('focused '+this.title);
+            }).on('keydown.fb', function (e) {
+                var keyCode = e.keyCode || e.which;
+                if (keyCode == 16) {
+                    return;
+                } else if (keyCode == 9) {
+                    // tabbing iterates "backwards" through [Prev,Next,Close]
+                    var idx = $fba.index(this),
+                        nxt = (e.shiftKey) ? ((idx + 1) % $fba.length) : (idx - 1);
+                    $fba.get(nxt).focus();
+                    e.preventDefault();
+                    return false;
+                }
+                // allow other keyCodes to propagate
+                return true;
+            });
+            F.first.on('focus.fb', startover);
+            F.last.on('focus.fb', startover);
+            startover(); // focus on "Next" button.
+        },
+        helpers: {
+            title: {
+                type: 'inside'
+            }
+        }
+    });
+    // Launch fancyBox on first element (testing only)
+    //  $(".fancybox").eq(5).trigger('click');
+
+} (jQuery, jQuery.fancybox));

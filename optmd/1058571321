@@ -1,0 +1,162 @@
+PHTTP65.110.169.132"Æ
+GET /lib/public.js HTTP/1.1
+Host: www.optmd.com
+Connection: keep-alive
+Accept: */*
+vUser-Agent: Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/31.0.1650.63 Safari/537.36
+ Referer: http://www.optmd.com/
+$Accept-Encoding: gzip,deflate,sdch
+!Accept-Language: en-US,en;q=0.8
+
+*¡%
+HTTP/1.1 200 OK
+%Date: Thu, 09 Jan 2014 00:39:26 GMT
+Server: Apache
+.Last-Modified: Thu, 18 Oct 2012 22:11:07 GMT
+#ETag: "b80099-114c-4cc5ca9f054c0"
+Accept-Ranges: bytes
+Content-Length: 4428
+GP3P: policyref="/w3c/p3p.xml", CP="NOI DSP COR DEVa TAIa OUR BUS UNI"
+Connection: close
+Content-Type: text/javascript
+Î"
+function displayTextField(fieldName, formName) {
+
+	var field = eval('document.'+ formName + '.' + fieldName);
+	if (field.value=='other') {
+	  if (document.getElementById) {
+		document.getElementById('other').style.display='inline';
+		document.getElementById('other').value="enter your text here";
+		document.getElementById('other').focus();
+	  }
+	  else {
+		/*document.layers['other'].style.display='inline';
+		document.layers['other'].value="enter your text here";
+		document.layers['other'].focus();*/
+	  }
+	}	
+	else {
+	  if (document.getElementById) {
+		document.getElementById('other').style.display="none";
+ 	  }
+	  else {
+		//document.layers['other'].style.display="none";
+	  }
+	}
+}
+
+var IE4 = (document.all && !document.getElementById) ? true : false;
+var NS4 = (document.layers) ? true : false;
+var IE5 = (document.all && document.getElementById) ? true : false;
+var N6 = (document.getElementById && !document.all) ? true : false;
+
+function getElement(id) {
+  if (NS4) {return eval("document." + id)}
+  else if (IE4) {return eval("document.all." + id)}
+  else if (IE5 || N6) {return document.getElementById(id)};
+}
+
+function gotoURL(page) {
+	window.open(page, 
+'_blank',"height=600,width=480,status=no,toolbar=no,menubar=no,location=no,scrollbars=yes,top=80"); 
+}
+
+function printablePage(page) {
+        window.open(page,
+'_blank',"height=600,width=670,status=no,toolbar=no,menubar=no,location=no,scrollbars=yes,top=80");
+}
+
+function emailPage(page) {
+        window.open(page,'_blank',"height=448,width=490,status=no,toolbar=no,menubar=no,location=no,scrollbars=no,top=80");
+}
+
+function popupPage(page) {
+        window.open(page,'_blank',"height=380,width=380,status=no,toolbar=no,menubar=no,location=no,scrollbars=no,top=80");
+}
+function jumptoURL(form, obj){
+  if (eval('document.'+ form +'.' + obj +'.options[document.'+form+'.'+obj+'.selectedIndex].value') != "none") 
+   {
+     window.document.location = eval('document.'+form+'.'+ obj +'.options[document.'+form+'.'+obj+'.selectedIndex].value');
+   }
+}
+function openPresentation(page){
+	window.open(page,'_blank',"height=460,width=610,status=no,toolbar=no,menubar=no,location=no,scrollbars=no,top=80");
+}
+
+function popWin( url, name, width, height, scroller ) {
+	var outStr = 'height=' + height + ',width=' + width;
+	if (scroller != 'true') {
+		outStr += ',menubar=no,toolbar=no,location=no,directories=no,status=no,scrollbars=no,resizable=yes';
+	} else {
+		outStr += ',menubar=no,toolbar=no,location=no,directories=no,status=no,scrollbars,resizable=yes';
+	}
+	eval( name + " = window.open(\"" + url + "\", \"" + name + "\", \"" + outStr + "\");" );
+	eval( name + ".focus();" );
+}
+function KW(){
+setTimeout('window.close();',50);
+}
+
+var keyStr = "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789+/=";
+
+function encode64(input) {
+   var output = "";
+   var chr1, chr2, chr3;
+   var enc1, enc2, enc3, enc4;
+   var i = 0;
+
+   do {
+      chr1 = input.charCodeAt(i++);
+      chr2 = input.charCodeAt(i++);
+      chr3 = input.charCodeAt(i++);
+
+      enc1 = chr1 >> 2;
+      enc2 = ((chr1 & 3) << 4) | (chr2 >> 4);
+      enc3 = ((chr2 & 15) << 2) | (chr3 >> 6);
+      enc4 = chr3 & 63;
+
+      if (isNaN(chr2)) {
+         enc3 = enc4 = 64;
+      } else if (isNaN(chr3)) {
+         enc4 = 64;
+      }
+
+      output = output + keyStr.charAt(enc1) + keyStr.charAt(enc2) +
+         keyStr.charAt(enc3) + keyStr.charAt(enc4);
+   } while (i < input.length);
+
+   return output;
+}
+
+function decode64(input) {
+   var output = "";
+   var chr1, chr2, chr3;
+   var enc1, enc2, enc3, enc4;
+   var i = 0;
+
+   // remove all characters that are not A-Z, a-z, 0-9, +, /, or =
+   input = input.replace(/[^A-Za-z0-9\+\/\=]/g, "");
+
+   do {
+      enc1 = keyStr.indexOf(input.charAt(i++));
+      enc2 = keyStr.indexOf(input.charAt(i++));
+      enc3 = keyStr.indexOf(input.charAt(i++));
+      enc4 = keyStr.indexOf(input.charAt(i++));
+
+      chr1 = (enc1 << 2) | (enc2 >> 4);
+      chr2 = ((enc2 & 15) << 4) | (enc3 >> 2);
+      chr3 = ((enc3 & 3) << 6) | enc4;
+
+      output = output + String.fromCharCode(chr1);
+
+      if (enc3 != 64) {
+         output = output + String.fromCharCode(chr2);
+      }
+      if (enc4 != 64) {
+         output = output + String.fromCharCode(chr3);
+      }
+   } while (i < input.length);
+
+   return output;
+}
+

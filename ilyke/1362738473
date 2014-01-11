@@ -1,0 +1,22 @@
+PHTTP
+8.30.11.13"¾
+ GET /usersync2/sonobi HTTP/1.1
+'Host: sync.sonobi.zenoviaexchange.com
+Connection: keep-alive
+Accept: image/webp,*/*;q=0.8
+vUser-Agent: Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/31.0.1650.63 Safari/537.36
+$Accept-Encoding: gzip,deflate,sdch
+!Accept-Language: en-US,en;q=0.8
+rCookie: _zdeuuid=%7B%22zde_uuid%22%3A%22XU01v03-d76738ee-72ae-41ac-94d8-e0e8b2dda823%22%2C%22zdxidn%22%3A1406%7D
+
+*ù
+ HTTP/1.1 302 Moved Temporarily
+Server: nginx
+%Date: Thu, 09 Jan 2014 01:41:33 GMT
+Content-Type: text/html
+Transfer-Encoding: chunked
+Connection: keep-alive
+ÀLocation: http://zenovia-match.dotomi.com/zenovia/match?redir=http%3A%2F%2Fsync2.dist.us-east.zenoviaexchange.com%2Fusersync3%2Fdotomi%2F1418%2Fpartner%3Fzderedir%3D%26zcc%3D1%26partnerid%3D
+
+0
+

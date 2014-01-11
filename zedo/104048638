@@ -1,0 +1,59 @@
+PHTTP64.41.197.44"¬
+EGET /wp-content/plugins/jetpack/modules/wpgroho.js?ver=3.8 HTTP/1.1
+Host: www.zedo.com
+Connection: keep-alive
+Accept: */*
+vUser-Agent: Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/31.0.1650.63 Safari/537.36
+Referer: http://www.zedo.com/
+$Accept-Encoding: gzip,deflate,sdch
+!Accept-Language: en-US,en;q=0.8
+½Cookie: FFgeo=1971884; ZFFBbh=1835B826,20|1969_1#0; ZCBC=1; FFcat=187,280,91; FFad=0; FFgb=1971884_B; ZEDOIDA=KZ3T4xMWR3u-J7lXeTzZUQ**~010914; FFIDA=KZ3T4xMWR3u-J7lXeTzZUQ**~010914; aps=1
+
+*‰
+
+HTTP/1.1 200 OK
+%Date: Thu, 09 Jan 2014 00:29:27 GMT
+Server: Apache/2.2.22
+.Last-Modified: Thu, 12 Dec 2013 01:24:33 GMT
+!ETag: "44362-3a2-4ed4c3537f640"
+&Content-Type: application/javascript
+Content-Length: 930
+"X-Varnish: 1560811239 1560811138
+Age: 7
+Via: 1.1 varnish
+Keep-Alive: timeout=5, max=91
+Connection: Keep-Alive
+¤
+WPGroHo = jQuery.extend( {
+	my_hash: '',
+	data: {},
+	renderers: {},
+	syncProfileData: function( hash, id ) {
+		if ( !WPGroHo.data[hash] ) {
+			WPGroHo.data[hash] = {};
+			a = jQuery( 'div.grofile-hash-map-' + hash + ' span' ).each( function() {
+				WPGroHo.data[hash][this.className] = jQuery( this ).text();
+			} );
+		}
+
+		WPGroHo.appendProfileData( WPGroHo.data[hash], hash, id );
+	},
+	appendProfileData: function( data, hash, id ) {
+		for ( var key in data ) {
+			if ( jQuery.isFunction( WPGroHo.renderers[key] ) ) {
+				return WPGroHo.renderers[key]( data[key], hash, id, key );
+			}
+
+			jQuery( '#' + id ).find( 'h4' ).after( jQuery( '<p class="grav-extra ' + key + '" />' ).html( data[key] ) );
+		}
+	}
+}, WPGroHo );
+
+jQuery( document ).ready( function( $ ) {
+	Gravatar.profile_cb = function( h, d ) {
+		WPGroHo.syncProfileData( h, d );
+	};
+
+	Gravatar.my_hash = WPGroHo.my_hash;
+	Gravatar.init( 'body', '#wpadminbar' );
+} );

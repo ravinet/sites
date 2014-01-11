@@ -1,0 +1,25 @@
+PHTTP
+18.7.20.70"¹
+_GET /feeds/poll/affiliate/3379509/json?callback=FOXPollOfTheDay&rows=1&cb=2014171411 HTTP/1.1
+Host: www.foxnews.com
+Connection: keep-alive
+pAccept: text/javascript, application/javascript, application/ecmascript, application/x-ecmascript, */*; q=0.01
+"X-Requested-With: XMLHttpRequest
+vUser-Agent: Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/31.0.1650.63 Safari/537.36
+1Content-Type: application/x-www-form-urlencoded
+"Referer: http://www.foxnews.com/
+$Accept-Encoding: gzip,deflate,sdch
+!Accept-Language: en-US,en;q=0.8
+qCookie: FXN_w_ckbt_2=1; FXN_w_locinfo=10108; mbox=check#true#1389121076|session#1389121015623-413027#1389122876
+
+*µ
+HTTP/1.1 200 OK
+Server: Apache
+Content-Length: 315
+.Content-Type: application/json;charset=UTF-8
+Cache-Control: max-age=168
+(Expires: Tue, 07 Jan 2014 18:59:31 GMT
+%Date: Tue, 07 Jan 2014 18:56:43 GMT
+Connection: keep-alive
+½
+FOXPollOfTheDay({"response":{"numFound":141,"start":0,"docs":[{"title":"Should lawmakers extend jobless benefits?","date":"2014-01-06T12:32:21Z","secondary_id":"4132577","taxonomy_path":["/affiliate/3379509/primary"],"url":["http://nation.foxnews.com/poll/2014/01/06/should-lawmakers-extend-jobless-benefits/"]}]}})

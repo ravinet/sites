@@ -1,0 +1,44 @@
+PHTTP107.22.238.190"‚
+ÑGET /?LR_PUBLISHER_ID=15352&LR_SCHEMA=vast2-vpaid&LR_FORMAT=application/javascript&LR_VERTICALS=Wired-Owned&LR_TAGS=Web&LR_AUTOPLAY=0&LR_MUTED=0&LR_CONTENT=6&LR_COMPANIONS=300:60:my_companion_300x60 HTTP/1.1
+Host: ad4.liverail.com
+Connection: keep-alive
+0Accept: application/xml, text/xml, */*; q=0.01
+#Origin: http://player.cnevids.com
+vUser-Agent: Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/31.0.1650.63 Safari/537.36
+\Referer: http://player.cnevids.com/embed/52af261eee3ec9855200000c/51799c3f68f9da5d48000002
+$Accept-Encoding: gzip,deflate,sdch
+!Accept-Language: en-US,en;q=0.8
+
+*…
+HTTP/1.1 200 OK
+(Access-Control-Allow-Credentials: true
+8Access-Control-Allow-Origin: http://player.cnevids.com
+?Cache-Control: no-store, no-cache, must-revalidate, max-age=0
+'Content-type: text/xml; charset=UTF-8
+%Date: Fri, 10 Jan 2014 16:40:07 GMT
+(Expires: Tue, 29 May 1984 15:00:00 GMT
+Pragma: no-cache
+aSet-Cookie: lr_uid=74990523; expires=Tue, 28-May-2041 16:40:07 GMT; path=/; domain=liverail.com
+Content-Length: 934
+Connection: keep-alive
+¨
+<?xml version="1.0" encoding="utf-8"?>
+<VAST version="2.0">
+    <Ad id="VPAID">
+    	<InLine>
+    		<AdSystem version="3.1">LiveRail</AdSystem>
+            <AdTitle>VPAID Ad Manager</AdTitle>
+            <Impression></Impression>
+			<Creatives>
+				<Creative sequence="1">
+            		<Linear>
+            			<Duration>00:00:15</Duration>
+                        <MediaFiles>
+        				    					        					<MediaFile delivery="progressive" width="640" height="480" scalable="1" type="application/javascript" apiFramework="VPAID"><![CDATA[http://cdn-static.liverail.com/js/LiveRail.AdManager-1.0.js?LR_PUBLISHER_ID=15352&LR_FORMAT=application/javascript&LR_VERTICALS=Wired-Owned&LR_TAGS=Web&LR_AUTOPLAY=0&LR_MUTED=0&LR_CONTENT=6&LR_COMPANIONS=300:60:my_companion_300x60]]></MediaFile>
+        				        				</MediaFiles>
+    				</Linear>
+    			</Creative>
+    		</Creatives>
+    	</InLine>
+    </Ad>
+</VAST>

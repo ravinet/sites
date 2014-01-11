@@ -1,0 +1,103 @@
+PHTTP170.123.237.62"¿
+GET /nysbanner.js HTTP/1.1
+Host: www.ny.gov
+Connection: keep-alive
+Accept: */*
+vUser-Agent: Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/31.0.1650.63 Safari/537.36
+Referer: http://www.ny.gov/
+$Accept-Encoding: gzip,deflate,sdch
+!Accept-Language: en-US,en;q=0.8
+
+*²
+HTTP/1.1 200 OK
+%Date: Thu, 09 Jan 2014 01:28:39 GMT
+ Server: Apache/2.2.3 (Red Hat)
+.Last-Modified: Tue, 23 Feb 2010 17:22:38 GMT
+!ETag: "896dd-d48-48047cbdaf380"
+Accept-Ranges: bytes
+Content-Length: 3400
+Cache-Control: max-age=60
+(Expires: Thu, 09 Jan 2014 01:29:39 GMT
+Connection: close
+(Content-Type: application/x-javascript
+Ê
+	<!--
+	
+	function getNYSBannerPics() { 
+	
+		numberOfBannerPics = 4;                                 // how many pictures in banner
+		aBannerPics=new Array(numberOfBannerPics);  // this will store the 4 randomized images
+		numberOfAvailablePics = 50;                           // how many pictures available in pool
+		folderName = "/nysbannerpics";                        // sub folder name where banner pictures live (pool)
+		cnt = 0;                                                       // keep count of selected graphics
+				
+		while (cnt < numberOfBannerPics) {               // keep looping until we have all unique pictures 
+			rnd= Math.round(Math.random()*(numberOfAvailablePics - 1));  // get a random number between 0 and number of pics minus 1
+			picExists = false;                                       // initialize pic found boolean
+			for (ii=0;ii<cnt;ii++) {                             // scan array to see if picture exists
+				if (aBannerPics[ii] == rnd) {                 // if pic already selected, set boolean to true
+					picExists = true;
+				}
+			}
+			if (!picExists) { 										// if the picture has not been selected yet, then select it
+				aBannerPics[cnt] = rnd;                      // assign random number
+				img = eval("pic" + cnt);                     // create handle to image tag
+				img.src = folderName + "/" + rnd + ".gif"; // assign graphic to image source
+				cnt++;				                                // up the counter by one				
+			}
+		}
+  }
+//-->
+
+<!-- Begin LARGE PIC
+// Set up the image files to be used.
+var theImages = new Array() // do not change this
+// To add more image files, continue with the
+// pattern below, adding to the array.
+
+theImages[0] = '/nyslrgbannerpics/2leveltop_1.gif'
+theImages[1] = '/nyslrgbannerpics/2leveltop_2.gif'
+theImages[2] = '/nyslrgbannerpics/2leveltop_3.gif'
+theImages[3] = '/nyslrgbannerpics/2leveltop_4.gif'
+theImages[4] = '/nyslrgbannerpics/2leveltop_5.gif'
+theImages[5] = '/nyslrgbannerpics/2leveltop_6.gif'
+theImages[6] = '/nyslrgbannerpics/2leveltop_7.gif'
+theImages[7] = '/nyslrgbannerpics/2leveltop_8.gif'
+theImages[8] = '/nyslrgbannerpics/2leveltop_9.gif'
+theImages[9] = '/nyslrgbannerpics/2leveltop_10.gif'
+theImages[10] = '/nyslrgbannerpics/2leveltop_11.gif'
+theImages[11] = '/nyslrgbannerpics/2leveltop_12.gif'
+theImages[12] = '/nyslrgbannerpics/2leveltop_13.gif'
+theImages[13] = '/nyslrgbannerpics/2leveltop_14.gif'
+theImages[14] = '/nyslrgbannerpics/2leveltop_15.gif'
+theImages[15] = '/nyslrgbannerpics/2leveltop_16.gif'
+theImages[16] = '/nyslrgbannerpics/2leveltop_17.gif'
+theImages[17] = '/nyslrgbannerpics/2leveltop_18.gif'
+theImages[18] = '/nyslrgbannerpics/2leveltop_19.gif'
+theImages[19] = '/nyslrgbannerpics/2leveltop_20.gif'
+theImages[20] = '/nyslrgbannerpics/2leveltop_21.gif'
+theImages[21] = '/nyslrgbannerpics/2leveltop_22.gif'
+theImages[22] = '/nyslrgbannerpics/2leveltop_23.gif'
+
+
+// do not edit anything below this line
+
+var j = 0
+var p = theImages.length;
+var preBuffer = new Array()
+for (i = 0; i < p; i++){
+   preBuffer[i] = new Image()
+   preBuffer[i].src = theImages[i]
+}
+var whichImage = Math.round(Math.random()*(p-1));
+function showImage(){
+document.write('<img src="'+theImages[whichImage]+'">');
+}
+
+//  End -->
+
+
+           function quickChange(e,i) {
+                       e.src = i;
+           }
+

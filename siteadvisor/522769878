@@ -1,0 +1,141 @@
+PHTTP161.69.13.140"Ü
+'GET /includes/js/menutabs.js HTTP/1.1
+Host: www.siteadvisor.com
+Connection: keep-alive
+Accept: */*
+vUser-Agent: Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/31.0.1650.63 Safari/537.36
+&Referer: http://www.siteadvisor.com/
+$Accept-Encoding: gzip,deflate,sdch
+!Accept-Language: en-US,en;q=0.8
+
+*ì
+HTTP/1.1 200 OK
+%Date: Thu, 09 Jan 2014 01:45:00 GMT
+Server: Apache
+.Last-Modified: Thu, 01 Oct 2009 15:50:12 GMT
+!ETag: "107ff-8b4-474e19a4c5500"
+Accept-Ranges: bytes
+Content-Length: 2228
+ Keep-Alive: timeout=15, max=96
+Connection: Keep-Alive
+&Content-Type: application/javascript
+¶
+function clearAllTabs(ts)
+{
+
+ for( k=1; k<=ts; k++ )
+	{
+                if (document.getElementById('menulink'+k)) {
+                    document.getElementById('menulink'+k).className='normal';
+                }
+		//document.getElementById('menutab'+k).style.display='none';
+	}
+                if (document.getElementById('menulink'+ts)) {
+                    document.getElementById('menulink'+ts).className='t-last';
+                }
+}
+
+
+function clearSelectedTab(disableId,ignoreId){
+  
+	for( k=1; k<=disableId; k++ ){
+		if ( k != ignoreId){
+			document.getElementById('menulink'+k).className='normal';
+			//document.getElementById('menutab'+k).style.display='none';
+		}
+	}
+}
+
+
+
+function menuSelectTab(id)
+{
+var el = document.getElementById("segment-navigation");
+var children = el.childNodes;
+var lis = children.length;
+	
+if(window.navigator.appName == "Netscape")
+{
+ 	if (lis == 13)
+	{
+	lis = 6;
+	}
+	else if (lis == 11)
+	{
+	lis = 5;
+	}
+	else if (lis == 9)
+	{
+	lis = 4;
+	}
+	else if (lis == 5)
+	{
+	lis = 2;
+	}
+	else if (lis == 7)
+	{
+	lis = 3;
+	}
+}
+	clearAllTabs(lis);
+     
+        if (document.getElementById('menulink'+id)) { 
+	    document.getElementById('menulink'+id).className='select';
+        }
+	//document.getElementById('menutab'+id).style.display='inline';
+}
+
+
+var time=null;
+var selectdelay = 0;
+var deselectdelay = 0;
+var clearTabs = false;
+function delay(t,id) {
+      
+	if(t) {
+		clearTabs = false;
+		time = setTimeout("menuSelectTab("+id+")",selectdelay);
+	}else{
+		if(time) {
+			clearTabs = true;
+			setTimeout("clearAll()",deselectdelay);
+			clearTimeout(time);
+			time=null;
+		}
+	}
+}
+
+
+
+
+function clearAll() {
+ if ( clearTabs ) clearAllTabs(6);
+}
+
+function tabsOut (){
+	clearTabs=true;
+	setTimeout('clearAll()',deselectdelay)
+}
+
+
+/* IE6 Background image flicker fix
+try {
+  document.execCommand("BackgroundImageCache", false, true);
+} catch(err) {}*/
+
+
+
+
+
+
+function tabcheck()
+{
+    var x = window.location.search.substring(1)
+    if ( x.indexOf('tid')!=-1 )
+    {
+        var i_array = x.split('=')
+        var tab = i_array[1];
+        selectTab(tab)
+    }
+}
+addLoadEvent(tabcheck);

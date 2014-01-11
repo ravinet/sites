@@ -1,0 +1,156 @@
+PHTTP
+23.6.26.10"ø
+JGET /en-us/css/0443e8947b4ad8601676d11956a1801c/tm/carousel.css HTTP/1.1
+Host: media.ticketmaster.com
+Connection: keep-alive
+Accept: text/css,*/*;q=0.1
+vUser-Agent: Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/31.0.1650.63 Safari/537.36
+'Referer: http://www.ticketmaster.com/
+$Accept-Encoding: gzip,deflate,sdch
+!Accept-Language: en-US,en;q=0.8
+ãCookie: GEORAN=1; SID=e8XBGp1ufU8_1X4VL94Nrk63EBDNtsdTXr3ObZAJ11kLWMU0uQG65_nP0NYASoKWnD7gXuybnqdiX9ic; BID=9jB1BhjEaMJ2Jqv8PkxHlhlo-fyK2vrxymgWfGCH-50LTVa8HGT-0RuiygJmgb-lmz4v7I0cSE8RPjtbCT2b; NPDMA=235; GEO_OMN=in; NDMA=235
+
+*½
+HTTP/1.1 200 OK
+Server: Apache
+.Last-Modified: Sat, 17 Nov 2012 05:02:03 GMT
+ETag: "79a-c8f2e8c0"
+Accept-Ranges: bytes
+Content-Length: 1946
+Content-Type: text/css
+$Cache-Control: public, max-age=290
+%Date: Thu, 09 Jan 2014 01:05:10 GMT
+Connection: keep-alive
+œ
+.sliderViewport {
+	position: relative;
+	width: 408px;
+	overflow: hidden;
+}
+
+.sliderViewport .nextButton,
+.sliderViewport .prevButton {
+	cursor: hand;
+}
+
+.sliderViewport .nextButton {
+	right: 0px;
+}
+
+.sliderViewport .prevButton {
+	left: 0px;
+}
+
+.sliderViewport .sliderElement{
+	width: 10000px;
+}
+
+.sliderViewport div.sliderPane {
+	margin: 0px;
+	padding: 0px;
+	position: relative;
+	width: 136px;
+	float: left;
+}
+
+.sliderViewport ul {
+	margin: 0px;
+	padding: 8px;
+	list-style-type: none;
+}
+
+.sliderViewport ul li {
+	position: relative;
+	margin: 15px;
+	float: left;
+}
+
+.sliderViewport ul li div.picture {
+	position: relative;
+	width: 100px;
+	height: 100px;
+
+}
+
+.sliderViewport ul li h1 {
+	margin: 0px;
+	padding: 0px;
+	font-size: 10pt;
+	font-weight: normal;
+}
+
+/* new for recently viewed rebrand */
+.sliderViewport_rv {
+	position: relative;
+	width: 610px;
+	overflow: hidden;
+}
+
+.sliderViewport_rv .nextButton,
+.sliderViewport_rv .prevButton {
+	cursor: hand;
+}
+
+.sliderViewport_rv .nextButton {
+	right: 0px;
+}
+
+.sliderViewport_rv .prevButton {
+	left: 0px;
+}
+
+.sliderViewport_rv .sliderElement{
+	width: 10000px;
+}
+
+.sliderViewport_rv .recoWrap {
+ 	width: 122px;
+}
+
+.sliderViewport_rv .recoWrap a span.top_recommend {
+    padding: 5px 11px 0 11px;
+}
+
+.sliderViewport_rv .recoWrap a span.top_recommend_txt {
+    margin: 0 11px;    
+}
+.sliderViewport_rv .recoWrap a span.top_recommend_rate {
+    margin: 1px 19px 5px 11px;
+}
+
+.sliderViewport_rv div.sliderPane {
+    margin: 0px;
+    padding: 0px;
+	position: relative;
+	width: 122px;
+	float: left;
+}
+
+.sliderViewport_rv ul {
+	margin: 0px;
+	padding: 8px;
+	list-style-type: none;
+}
+
+.sliderViewport_rv ul li {
+	position: relative;
+	margin: 15px;
+	float: left;
+}
+
+.sliderViewport_rv ul li div.picture {
+	position: relative;
+	width: 100px;
+	height: 100px;
+
+}
+
+.sliderViewport_rv ul li h1 {
+	margin: 0px;
+	padding: 0px;
+	font-size: 10pt;
+	font-weight: normal;
+}
+.svBot div.sliderPane {
+width:122px !important;
+}

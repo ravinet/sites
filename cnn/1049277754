@@ -1,0 +1,264 @@
+PHTTP8.254.55.126"É
+GET /crossdomain.xml HTTP/1.1
+Host: i.cdn.turner.com
+Connection: keep-alive
+vUser-Agent: Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/31.0.1650.63 Safari/537.36
+Accept: */*
+Referer: http://www.cnn.com/
+$Accept-Encoding: gzip,deflate,sdch
+!Accept-Language: en-US,en;q=0.8
+
+*Ûl
+HTTP/1.1 200 OK
+%Date: Thu, 09 Jan 2014 00:19:05 GMT
+(Expires: Thu, 09 Jan 2014 00:23:20 GMT
+.Last-Modified: Tue, 07 Jan 2014 19:17:14 GMT
+Cache-Control: max-age=300
+Content-Type: application/xml
+Accept-Ranges: bytes
+Server: Apache
+Content-Length: 13632
+Âj
+<?xml version="1.0"?>
+<!DOCTYPE cross-domain-policy
+  SYSTEM "http://www.macromedia.com/xml/dtds/cross-domain-policy.dtd"> 
+<cross-domain-policy>
+  <site-control permitted-cross-domain-policies="all"/>
+  <allow-access-from domain="*.cnn.com"/>
+  <allow-access-from domain="*.turner.com"/>
+  <allow-access-from domain="*.tnt.tv"/>
+  <allow-access-from domain="*.tntdrama.com"/>
+  <allow-access-from domain="*.fallingskies.com"/>
+  <allow-access-from domain="*.tntla.com"/>
+  <allow-access-from domain="*.quizbug.com"/>
+  <allow-access-from domain="*.tbs.com"/>
+  <allow-access-from domain="*.teamcoco.com"/>
+  <allow-access-from domain="cdn.teamcococdn.com"/>
+  <allow-access-from domain="*.theflamingc.com"/>
+  <allow-access-from domain="*.lopeztonight.com"/>
+  <allow-access-from domain="*.tbshumorstudy.com"/>
+  <allow-access-from domain="*.turnersouth.com"/>
+  <allow-access-from domain="*.turnerentertainmentpr.com"/>
+  <allow-access-from domain="*.trutv.com"/>
+  <allow-access-from domain="*.thesmokinggun.com"/>
+  <allow-access-from domain="*.cnn.net"/>
+  <allow-access-from domain="*.akamaihd.net"/>
+  <allow-access-from domain="*.ireport.com"/>
+  <allow-access-from domain="ar.atwola.com"/>
+  <allow-access-from domain="*.nascar.com"/>
+  <allow-access-from domain="*.nascar.com.edgesuite.net"/>
+  <allow-access-from domain="*.nascarmediagroup.com"/>
+  <allow-access-from domain="*.sapient.com"/>
+  <allow-access-from domain="test.sapient.com"/>
+  <allow-access-from domain="*.engagedfan.com"/>
+  <allow-access-from domain="*.hlntv.com"/>
+  <allow-access-from domain="*.golf.com"/>
+  <allow-access-from domain="*.sportvision.com"/>
+  <allow-access-from domain="*.doubleclick.net"/>
+  <allow-access-from domain="ad.doubleclick.net"/>
+  <allow-access-from domain="adserver.adtech.de"/>
+  <allow-access-from domain="*.i-traffic.com"/>
+  <allow-access-from domain="creatives.doubleclick.net"/>
+  <allow-access-from domain="*.dartmotif.net" secure="true"/>
+  <allow-access-from domain="*.dartmotif.net" secure="false"/>
+  <allow-access-from domain="*.doubleclick.com" secure="true"/>
+  <allow-access-from domain="*.doubleclick.com" secure="false"/>
+  <allow-access-from domain="*.cdn.uc.atwola.com"/>
+  <allow-access-from domain="*.aol.com"/>
+  <allow-access-from domain="*.huffingtonpost.com"/>
+  <allow-access-from domain="*.gstatic.com" secure="false"/>
+  <allow-access-from domain="m.2mdn.net"/>
+  <allow-access-from domain="m2.2mdn.net"/>
+  <allow-access-from domain="*.2mdn.net"/>
+  <allow-access-from domain="*.playonsports.tv"/>
+  <allow-access-from domain="*.pgatour.com"/>
+  <allow-access-from domain="*.worldgolfchampionships.com"/>
+  <allow-access-from domain="*.majorschampionships.com"/>
+  <allow-access-from domain="*.rtm.com"/>
+  <allow-access-from domain="*.rtmweb.rtm.com"/>
+  <allow-access-from domain="reportcard.cnn.com"/>
+  <allow-access-from domain="*.rydercup.com"/>
+  <allow-access-from domain="*.prizelogic.com"/>
+  <allow-access-from domain="*.superdeluxe.com"/>
+  <allow-access-from domain="staging.cartoonnetwork.com" secure="true"/>
+  <allow-access-from domain="aud-ite.cartoonnetwork.com" secure="true"/>
+  <allow-access-from domain="mmstage.cartoonnetwork.com" secure="true"/>
+  <allow-access-from domain="redesign.cartoonnetwork.com" secure="false"/> 
+  <allow-access-from domain="aud-ite.fusionfall.com" secure="true"/>
+  <allow-access-from domain="www.atomicarts.net"/>
+  <allow-access-from domain="www.cartoonnetworkarabic.com"/>
+  <allow-access-from domain="s.cnn.net" secure="true"/>
+  <allow-access-from domain="*.cnn.com" secure="true"/>
+  <allow-access-from domain="*.cnn.net" secure="true"/>
+  <allow-access-from domain="*.cnnchallenge.com"/>
+  <allow-access-from domain="*.cartoonnetwork.com" secure="true"/>
+  <allow-access-from domain="i.cartoonnetwork.com" secure="true"/>
+  <allow-access-from domain="minimatch.cartoonnetwork.com" secure="true"/>
+  <allow-access-from domain="www.fusionfall.com" />
+  <allow-access-from domain="staging.fusionfall.com" />
+  <allow-access-from domain="fusionfall.com" />
+  <allow-access-from domain="*.adultswim.com" />
+  <allow-access-from domain="*.adultswim.co.uk" />
+  <allow-access-from domain="*.adultswim.fr" />
+  <allow-access-from domain="*.adultswim.es" />
+  <allow-access-from domain="*.adultswim.de" />
+  <allow-access-from domain="*.adultswim.it" />
+  <allow-access-from domain="*.thingx.tv"/>
+  <allow-access-from domain="*.robotchickenonwheels.com" />
+  <allow-access-from domain="mastercontrol.cartoonnetwork.com" />
+  <allow-access-from domain="*.toonix.com" secure="true" />
+  <allow-access-from domain="*.boomerangtv.co.uk" secure="true" />
+  <allow-access-from domain="*.boomerangla.com" secure="true" />
+  <allow-access-from domain="*.cartoonnetworkya.com" secure="true" />
+  <allow-access-from domain="*.cartoonnetwork.com.ar" secure="true" />
+  <allow-access-from domain="*.cartoonnetwork.com.br" secure="true" />
+  <allow-access-from domain="*.cartoonnetwork.cl" secure="true" />
+  <allow-access-from domain="*.cartoonnetwork.com.mx" secure="true" />
+  <allow-access-from domain="*.cartoonnetwork.com.ve" secure="true" />
+  <allow-access-from domain="*.cartoonnetworkla.com" secure="true" />
+  <allow-access-from domain="*.cartoonnetworkasia.com" secure="true" />
+  <allow-access-from domain="*.cartoonnetwork.co.uk"/>
+  <allow-access-from domain="*.cartoonnetwork.fr"/>
+  <allow-access-from domain="*.cartoonnetwork.it"/>
+  <allow-access-from domain="*.cartoonnetwork.de"/>
+  <allow-access-from domain="*.cartoonnetwork.se"/>
+  <allow-access-from domain="*.cartoonnetwork.no"/>
+  <allow-access-from domain="*.cartoonnetwork.es"/>
+  <allow-access-from domain="*.cartoonnetwork.pl"/>
+  <allow-access-from domain="*.cartoonnetwork.ro"/>
+  <allow-access-from domain="*.cartoonnetwork.hu"/>
+  <allow-access-from domain="*.cartoonnetwork.nl"/>
+  <allow-access-from domain="*.cartoonnetwork.bg"/>
+  <allow-access-from domain="*.cartoonnetwork.ru"/>
+  <allow-access-from domain="*.cartoonnetworkarabic.com"/>
+  <allow-access-from domain="*.cartoonnetworkhq.net"/>
+  <allow-access-from domain="*.cartoonnetwork.com.au"/>
+  <allow-access-from domain="*.cartoonnetworkindia.com"/>
+  <allow-access-from domain="*.cartoonnetwork.com.tw"/>
+  <allow-access-from domain="*.cartoonnetwork.co.nz"/>
+  <allow-access-from domain="*.cartoonnetwork.com.ph"/>
+  <allow-access-from domain="*.cartoonnetwork.co.th"/>
+  <allow-access-from domain="*.cartoonnetwork.vn"/>
+  <allow-access-from domain="*.cartoonnetwork.com.pk"/>
+  <allow-access-from domain="*.cartoonnetworkkorea.com"/>
+  <allow-access-from domain="*.cartoon.co.jp"/>
+  <allow-access-from domain="*.cartoonnetwork.com.cn"/>
+  <allow-access-from domain="*.91kt.com"/>
+  <allow-access-from domain="*.gwen10.com"/>
+  <allow-access-from domain="*.boomerangtv.com.au"/>
+  <allow-access-from domain="*.pogo.tv"/>
+  <allow-access-from domain="*.itsonwb.com"/>
+  <allow-access-from domain="*.galligallisimsim.com"/>
+  <allow-access-from domain="*.fusionfall.asia"/>
+  <allow-access-from domain="*.turnerclassicmovies.com.au"/>
+  <allow-access-from domain="*.trutv.asia"/>
+  <allow-access-from domain="*.cartoonnetwork.asia"/>
+  <allow-access-from domain="shop.tcm.com" />
+  <allow-access-from domain="*.tcm.com" />
+  <allow-access-from domain="*injaus.com"/>
+  <allow-access-from domain="*injausdev.com"/>
+  <allow-access-from domain="*.tdala.com" secure="true" />
+  <allow-access-from domain="*.tdaonline.com.br" secure="true" />
+  <allow-access-from domain="*.amocinemabrasil.com" />
+  <allow-access-from domain="*.amoocinema.com.br" />
+  <allow-access-from domain="*.amoocinema.com" />
+  <allow-access-from domain="*.amocinema.com" />
+  <allow-access-from domain="*.amocinema.tv.br" />
+  <allow-access-from domain="*.amoelcine.com" />
+  <allow-access-from domain="*.amoelcine.com.mx" />
+  <allow-access-from domain="*.amoelcine.com.ve" />
+  <allow-access-from domain="*.cnmovil.com" secure="true" />
+  <allow-access-from domain="*.mensualidadcartoon.com.ar" secure="true" />
+  <allow-access-from domain="*.tcmla.com" secure="true" />
+  <allow-access-from domain="*.tntla.com" secure="true" />
+  <allow-access-from domain="cnngo.com" secure="true" />
+  <allow-access-from domain="*.cnngo.com" secure="true" />
+  <allow-access-from domain="cnn.vo.llnwd.net"/>
+  <allow-access-from domain=" cnn-0.vo.llnwd.net" secure="true" />
+  <allow-access-from domain=" cnn-1.vo.llnwd.net" secure="true" />
+  <allow-access-from domain=" cnn-2.vo.llnwd.net" secure="true" />
+  <allow-access-from domain=" cnn-3.vo.llnwd.net" secure="true" />
+  <allow-access-from domain=" cnn-4.vo.llnwd.net" secure="true" />
+  <allow-access-from domain=" cnn-5.vo.llnwd.net" secure="true" />
+  <allow-access-from domain=" cnn-6.vo.llnwd.net" secure="true" />
+  <allow-access-from domain=" cnn-7.vo.llnwd.net" secure="true" />
+  <allow-access-from domain=" cnn-8.vo.llnwd.net" secure="true" />
+  <allow-access-from domain=" cnn-9.vo.llnwd.net" secure="true" />
+  <allow-access-from domain=" http-trd-ak.cdn.turner.com" secure="true" />
+  <allow-access-from domain=" http-trd-l3.cdn.turner.com" secure="true" />
+  <allow-access-from domain="pga-livescoring.chester.contentproject.com" />
+  <allow-access-from domain="*.peachtreetv.com" />
+  <allow-access-from domain="*.pga.com" />
+  <allow-access-from domain="*.nba.com" />
+  <allow-access-from domain="*.wnba.com" />
+  <allow-access-from domain="*.ncaa.com" />
+  <allow-access-from domain="*.yahoo.com" />
+  <allow-access-from domain="*.yahoo.net" secure="true"/> 
+  <allow-access-from domain="*.yimg.com" secure="true"/> 
+  <allow-access-from domain="*.newsgator.com" />
+  <allow-access-from domain="*.1trickpony.com" />
+  <allow-access-from domain="*.tr1ck.net" />
+  <allow-access-from domain="*.kickapps.com" />
+  <allow-access-from domain="*.boomixla.com" secure="true"/>
+  <allow-access-from domain="*.boomix.cl" secure="true"/>
+  <allow-access-from domain="*.boomix.com.mx" secure="true"/>
+  <allow-access-from domain="*.boomix.com.ve" secure="true"/>
+  <allow-access-from domain="*.miboomix.com.ar" secure="true"/>
+  <allow-access-from domain="*.boomerang.com.mx" secure="true"/>
+  <allow-access-from domain="*.boomerang.com.ve" secure="true"/>
+  <allow-access-from domain="*.copatoon.com" secure="true" />
+  <allow-access-from domain="*.copatoon.com.ar" secure="true" /> 
+  <allow-access-from domain="*.copatoon.com.mx" secure="true" /> 
+  <allow-access-from domain="*.copatoon.com.br" secure="true" />
+  <allow-access-from domain="*.fwmrm.net" secure="false"/>
+  <allow-access-from domain="*.adinterax.com"/>
+  <allow-access-from domain="*.yimg.com" />
+  <allow-access-from domain="*.msn.com"/>
+  <allow-access-from domain="*.google.com"/>
+  <allow-access-from domain="*.brightcove.com" secure="false"/>
+  <allow-access-from domain="*.powervideosuite.com" secure="true" />
+  <allow-access-from domain="*.digitalsmiths.com" secure="true" />
+  <allow-access-from domain="*.gotuit.com" secure="true" />
+  <allow-access-from domain="*.thoughtequity.com" secure="true" />
+  <allow-access-from domain="*.yamago.biz"/>
+  <allow-access-from domain="*.dyndns.tv"/>
+  <allow-access-from domain="*.serving-sys.com"/>
+  <allow-access-from domain="*.veryfunnyads.com"/>
+  <allow-access-from domain="veryfunnyads.com"/>
+  <allow-access-from domain="*.funnyordie.com"/>
+  <allow-access-from domain="*.ordienetworks.com"/>
+  <allow-access-from domain="*.dallastnt.com"/>
+  <allow-access-from domain="dallastnt.com"/>
+  <allow-access-from domain="*.nbahooptroop.com"/>
+  <allow-access-from domain="*tmp-ref.vgtf.net" />
+  <allow-access-from domain="*tmp-dev.vgtf.net" />
+  <allow-access-from domain="media.adrcdn.com"/>
+  <allow-access-from domain="clients.adrime.com"/>
+  <allow-access-from domain="*.myomnitrix.com"/>
+  <allow-access-from domain="d432n4bv07rfb.cloudfront.net"/>
+  <allow-access-from domain="xgraves.com"/>
+  <allow-access-from domain="*adtechus.com" />
+  <allow-access-from domain="*teletoon.com" />
+  <allow-access-from domain="*cartoonnetwork.ca" />
+  <allow-access-from domain="*.usabasketball.com" />
+  <allow-access-from domain="mavs.wpengine.com" />
+  <allow-access-from domain="mavs.pixeljar.com" />
+  <allow-access-from domain="mavs.com" />
+  <allow-access-from domain="*.vgtf.net" />
+  <allow-access-from domain="mediapm.edgesuite.net" />
+  <allow-access-from domain="*.upwave.com" />
+  <allow-access-from domain="upwave.com" />
+  <allow-access-from domain="*.peteholmes.com" />
+  <allow-access-from domain="turnerpressroom.turner.com" secure="true"/>
+  <allow-http-request-headers-from domain="*.cartoonnetwork.com" headers="*" secure="false" />
+  <allow-http-request-headers-from domain="*.turner.com" headers="*" secure="false" />
+  <allow-http-request-headers-from domain="gamecreator.cartoonnetwork.com" headers="*" secure="false" />
+  <allow-http-request-headers-from domain="theclonewars.cartoonnetwork.com" headers="*" secure="false"/>
+  <allow-http-request-headers-from domain="staging.cartoonnetwork.com" headers="*" secure="false"/>
+  <allow-http-request-headers-from domain="clonewarssvc1.cartoonnetwork.com" headers="*" secure="false"/>
+  <allow-http-request-headers-from domain="clonewarssvc2.cartoonnetwork.com" headers="*" secure="false"/>
+  <allow-http-request-headers-from domain="redesign.cartoonnetwork.com" headers="*" secure="false"/>
+  <allow-http-request-headers-from domain="cnn.vo.llnwd.net" headers="*" secure="false" />
+  <allow-http-request-headers-from domain="*tmp-ref.vgtf.net" headers="*" secure="false" />
+  <allow-http-request-headers-from domain="*tmp-dev.vgtf.net" headers="*" secure="false" />
+</cross-domain-policy>

@@ -1,0 +1,27 @@
+PHTTP23.74.28.11"æ	
+4POST /qos/load_track?cb=1389227503420_782 HTTP/1.1
+Host: t2.hulu.com
+Connection: keep-alive
+Content-Length: 279
+Origin: http://www.hulu.com
+vUser-Agent: Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/31.0.1650.63 Safari/537.36
+1Content-Type: application/x-www-form-urlencoded
+Accept: */*
+Referer: http://www.hulu.com/
+$Accept-Encoding: gzip,deflate,sdch
+!Accept-Language: en-US,en;q=0.8
+ˆCookie: guid=AEA24FAB7BA6F5D4A15DCBCF159A8F6D; _session_referrer=; _ue=1389227493; locale=en; _rcsources=homepage%7C%7Cblank%7Creferral%7C%7C; hic=1; __utma=155684772.1587713029.1389227494.1389227494.1389227494.1; __utmb=155684772.5.7.1389227495346; __utmc=155684772; __utmz=155684772.1389227494.1.1.utmcsr=(direct)|utmccn=(direct)|utmcmd=(none); __utmv=155684772.|1=login%20status=anonymous=1^3=h2o-treatment=control=1^6=DonutTreatment=control=1; sid=8B825A0E479C7AEFFF133BA23EC0BE28; beacon_seq=0; site_beacon_seq=16
+™
+{"session":"1E458008C5648DDC63E7211EBD14C23E","beaconevent":"load_track","device_id":"","content_id":"","distro":"","flash_version":"LNX 11,9,900,170","browser":"Chrome 31","distro_platform":"","player_version":205842,"os":"Linux","player_loaded":1,"region":"US","language":"en"}*À
+HTTP/1.1 200 OK
+Server: nginx/0.7.67
+X-Mycroft-Sink:  
+,X-Mycroft-Time: 2014-01-09 00:31:31.323193
+Content-Length: 0
+X-N: S
+(Expires: Thu, 09 Jan 2014 00:31:31 GMT
+.Cache-Control: max-age=0, no-cache, no-store
+Pragma: no-cache
+%Date: Thu, 09 Jan 2014 00:31:31 GMT
+Connection: keep-alive
+

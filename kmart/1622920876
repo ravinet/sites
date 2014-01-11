@@ -1,0 +1,27 @@
+PHTTP208.71.121.19"Ä
+MGET /RealMedia/ads/adstream_sx.ads/kmart.com/index/homepage@Bottom HTTP/1.1
+Host: oascentral.sears.com
+Connection: keep-alive
+TAccept: text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8
+vUser-Agent: Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/31.0.1650.63 Safari/537.36
+ Referer: http://www.kmart.com/
+$Accept-Encoding: gzip,deflate,sdch
+!Accept-Language: en-US,en;q=0.8
+
+*ö
+HTTP/1.1 200 OK
+%Date: Thu, 09 Jan 2014 01:12:11 GMT
+ Server: Apache/2.2.3 (Red Hat)
+bSet-Cookie: OAX=gB5MN1LN92sADHcu; path=/; expires=Sat, 09-Jan-16 01:12:11 GMT; domain=.sears.com
+NP3P: CP="NON NID PSAa PSDa OUR IND UNI COM NAV STA",policyref="/w3c/p3p.xml"
+Pragma: no-cache
+(Expires: Fri, 30 Oct 1998 14:19:41 GMT
+*Cache-Control: no-cache,no-store,private
+Content-Length: 304
+Keep-Alive: timeout=60
+Connection: Keep-Alive
+Content-Type: text/html
+_Set-Cookie: NSC_d18efm_qppm_iuuq=ffffffff09499ebb45525d5f4f58455e445a4a423660;path=/;httponly
+²
+<!-- lb.kmart/homepage -->
+<iframe src="http://ad.doubleclick.net/N5705/adi/lb.kmart/homepage;site=kmart;page=homepage;!category=retailer;!category=kmart;sz=728x90;ord=[timestamp]?" width="728" height="90" marginwidth="0" marginheight="0" hspace="0" vspace="0" frameborder="0" scrolling="no"></iframe>

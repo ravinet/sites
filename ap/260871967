@@ -1,0 +1,136 @@
+PHTTP
+18.7.20.69"Ü
+*GET /Content/grid_framework.css HTTP/1.1
+Host: www.ap.org
+Connection: keep-alive
+Accept: text/css,*/*;q=0.1
+vUser-Agent: Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/31.0.1650.63 Safari/537.36
+Referer: http://www.ap.org/
+$Accept-Encoding: gzip,deflate,sdch
+!Accept-Language: en-US,en;q=0.8
+
+*¼
+HTTP/1.1 200 OK
+Content-Type: text/css
+.Last-Modified: Thu, 24 Oct 2013 14:29:14 GMT
+Accept-Ranges: bytes
+ETag: "80c6d969c5d0ce1:0"
+Server: Microsoft-IIS/7.5
+X-Powered-By: ASP.NET
+Content-Length: 1686
+%Date: Thu, 09 Jan 2014 13:37:35 GMT
+Connection: keep-alive
+˜
+/* CSS Resets */
+
+html,body,div,span,object,iframe,h1,h2,h3,h4,h5,h6,p,blockquote,pre,a,abbr,address,cite,code,del,dfn,em,img,ins,q,small,strong,sub,sup,dl,dt,dd,ol,ul,li,fieldset,form,label,legend,table,caption,tbody,tfoot,thead,tr,th,td{border:0;margin:0;padding:0}article,aside,figure,figure img,figcaption,hgroup,footer,header,nav,section,video,object{display:block}a img{border:0}figure{position:relative}figure img{width:100%}
+
+a:focus {
+outline:0px;
+}
+
+.container {
+padding-left: 20px;
+padding-right: 20px;
+}
+
+.row {
+width: 1140px;
+margin: 0 auto;
+overflow:hidden;
+}
+
+.onecol, .twocol, .threecol, .fourcol, .fivecol, .sixcol, .sevencol, .eightcol, .ninecol, .tencol, .elevencol, .twelvecol {
+margin-right: 0.88%;
+margin-left: 0.88%;
+float: left;
+min-height: 1px;
+}
+
+.row .onecol {
+width: 6.58%;
+}
+
+.row .twocol {
+width: 13.92%;
+}
+
+.row .twocol.last {
+width: 15.8%;
+}
+
+.row .threecol {
+width: 23.25%;
+}
+
+.row .fourcol {
+width: 31.57%;
+}
+
+.row .fivecol {
+width: 39.91%;
+}
+
+.row .sixcol {
+width: 48.25%;
+}
+
+.row .sevencol {
+width: 56.58%;
+}
+
+.row .eightcol {
+width: 64.91%;
+}
+
+.row .ninecol {
+width: 73.24%;
+}
+
+.row .tencol {
+width: 81.58%;
+}
+
+.row .elevencol {
+width: 89.91%;
+}
+
+.row .twelvecol {
+width: 98.24%;
+float: left;
+}
+
+.last {
+margin-right: 0px;
+border: 0px!important;
+}
+.displayInline {
+display:inline!important;
+}
+img, object, embed {
+max-width: 100%;
+}
+
+img {
+	height: auto;
+}
+
+/* Smaller screens */
+
+@media only screen and (max-width: 1023px) {
+
+	/*body {
+	
+	}*/
+	
+}
+
+/* Mobile */
+
+@media handheld, only screen and (max-width: 767px) {
+
+	/*body {
+	
+	}*/
+
+}

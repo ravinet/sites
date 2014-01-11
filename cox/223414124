@@ -1,0 +1,24 @@
+PHTTP54.225.223.189"†
+ÅGET /t/v1/t?v=1.0.0&cb=333665589&pb=f&sp=http%3A%2F%2Fintercept.cox.com%2Fdispatch%2F5951618303210597740%2Fintercept.cox%3Flob%3Dresidential%26s%3Dfilter%26dest%3Dhttp%253A%252F%252Fww2.cox.com%252Fmyconnection%252Fhome.cox&a=cox&ap=1&m=uui&udt=~segment/visitor;~pn/corp:dispatch:intercept;~bu/corp;~ct/unknown-ZIP HTTP/1.1
+Host: vop.sundaysky.com
+Connection: keep-alive
+Accept: image/webp,*/*;q=0.8
+vUser-Agent: Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/31.0.1650.63 Safari/537.36
+…Referer: http://vop.sundaysky.com/t/v1/i?a=cox&ap=1&m=uui&udt=~segment/visitor;~pn/corp:dispatch:intercept;~bu/corp;~ct/unknown-ZIP
+$Accept-Encoding: gzip,deflate,sdch
+!Accept-Language: en-US,en;q=0.8
+Cookie: testpermission=1
+
+*Œ
+HTTP/1.1 302 Found
+eCache-control: private, no-cache, no-cache=Set-Cookie, must-revalidate, proxy-revalidate, max-age=0
+%Date: Thu, 09 Jan 2014 01:26:24 GMT
+'Expires: Sat, 1 Apr 2000 00:00:00 GMT
+áLocation: http://vop.sundaysky.com/t/v1/t?v=1.0.0&cb=333665589&pb=f&sp=http%3A%2F%2Fintercept.cox.com%2Fdispatch%2F5951618303210597740%2Fintercept.cox%3Flob%3Dresidential%26s%3Dfilter%26dest%3Dhttp%253A%252F%252Fww2.cox.com%252Fmyconnection%252Fhome.cox&a=cox&ap=1&m=uui&udt=~segment/visitor;~pn/corp:dispatch:intercept;~bu/corp;~ct/unknown-ZIP&_cvt=t
+wP3P: policyref="/w3c/p3p.xml", CP="NOI DSP COR CURa ADMa DEVa TAIa PSAa PSDa OUR IND UNI PUR COM NAV INT DEM STA PRE"
+Pragma: no-cache
+Server: Apache-Coyote/1.1
+|Set-Cookie: sskyu=g.fa249d00d2cd4fae8dce0dfedfe963ea; Domain=.sundaysky.com; Expires=Sat, 09-Jan-2016 01:26:25 GMT; Path=/
+Content-Length: 0
+Connection: keep-alive
+

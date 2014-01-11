@@ -1,0 +1,29 @@
+PHTTP74.125.225.132"ä
+GET / HTTP/1.1
+Host: www.doubleclick.com
+Connection: keep-alive
+TAccept: text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8
+vUser-Agent: Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/31.0.1650.63 Safari/537.36
+$Accept-Encoding: gzip,deflate,sdch
+!Accept-Language: en-US,en;q=0.8
+
+*ü
+ HTTP/1.1 301 Moved Permanently
+.Location: http://www.google.com/doubleclick/
+(Content-Type: text/html; charset=UTF-8
+!X-Content-Type-Options: nosniff
+%Date: Thu, 09 Jan 2014 15:41:28 GMT
+(Expires: Sat, 08 Feb 2014 15:41:28 GMT
+Server: sffe
+Content-Length: 231
+!X-XSS-Protection: 1; mode=block
+(Cache-Control: public, max-age=2592000
+Age: 8990
+Alternate-Protocol: 80:quic
+é
+<HTML><HEAD><meta http-equiv="content-type" content="text/html;charset=utf-8">
+<TITLE>301 Moved</TITLE></HEAD><BODY>
+<H1>301 Moved</H1>
+The document has moved
+<A HREF="http://www.google.com/doubleclick/">here</A>.
+</BODY></HTML>

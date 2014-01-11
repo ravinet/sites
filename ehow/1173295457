@@ -1,0 +1,24 @@
+PHTTP205.251.251.82"ƒ
+GET /oa/www/images/ HTTP/1.1
+%Host: d3o2u40t42oy1r.cloudfront.net
+Connection: keep-alive
+Accept: image/webp,*/*;q=0.8
+vUser-Agent: Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/31.0.1650.63 Safari/537.36
+ºReferer: http://adsw.esm1.net/oa/www/delivery/afr.php?bannerid=598101&eid=1389122119242_0c1eafbc-77d0-11e3-bfdd-27426d9ae6e9_ACT_B_598101_S_1005_EUIDS_NIL_EUIDE_EXCHG_4&l=ehow.com&g=US|US-MA|CAMBRIDGE|506|02139|null&ct0=http%3A%2F%2Fads%2Eyahoo%2Ecom%2Fclk%3F3%2CeJydjV0LgjAYhf%2DQiNt0m4wuNlahaFbMgt35VeZHQUbiv69U%2EAGdi%2EM%2DcN7DAYgRkCCYE3iBBc3yBDNgI1xAgLHrGBZjDLiE2NShFBrdwDn31cCvIn2aFh8l7Dy6TsjH6028pz%2DX0iliMcdr2Nxm3Hb13P9P0bNfz%2Ejdw3fnLW1OtnGZ1qFYvqSowvOp1K1fBSpDWvJXqDZNOICbbo91oDy0kx7Usim10k10WJorwyjKR29mj%2EYDIJxSBw%3D%3D%2C&cb=3171897&WINNING_PRICE=2.6250
+$Accept-Encoding: gzip,deflate,sdch
+!Accept-Language: en-US,en;q=0.8
+
+*ü
+HTTP/1.1 404 Not Found
+Content-Type: application/xml
+Content-Length: 273
+Connection: keep-alive
+%Date: Tue, 07 Jan 2014 19:14:42 GMT
+Server: AmazonS3
+	Age: 36
+ X-Cache: Error from cloudfront
+GVia: 1.1 be49611042e39f84872b1bb24e71891c.cloudfront.net (CloudFront)
+GX-Amz-Cf-Id: g145csOCeE22lp_bVh1V3bKlX37T-ot6MvEIiai0KRg_TaRqAfed3A==
+“
+<?xml version="1.0" encoding="UTF-8"?>
+<Error><Code>NoSuchKey</Code><Message>The specified key does not exist.</Message><Key>oa/www/images/</Key><RequestId>EA66DD8B3DEE18A9</RequestId><HostId>zg3AEIQPOSGJloeqdWDsjyVJMi038XAR66wkTnWl0JttSb5LuDez120zh4zzw2a0</HostId></Error>

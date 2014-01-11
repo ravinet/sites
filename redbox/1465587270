@@ -1,0 +1,60 @@
+PHTTP208.52.184.100"ö
+KGET /si/CM/Tracking/ClickTracking.aspx?siclientid=8844&jscript=1 HTTP/1.1
+Host: dms.netmng.com
+Connection: keep-alive
+Accept: */*
+vUser-Agent: Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/31.0.1650.63 Safari/537.36
+!Referer: http://www.redbox.com/
+$Accept-Encoding: gzip,deflate,sdch
+!Accept-Language: en-US,en;q=0.8
+
+*Ä
+HTTP/1.1 200 OK
+Cache-Control: private
+Content-Length: 1279
+(Content-Type: text/html; charset=utf-8
+Server: Microsoft-IIS/7.5
+X-AspNet-Version: 4.0.30319
+wSet-Cookie: u=b4a5cc40-793f-4bcb-a5eb-bb07b9871879; domain=.netmng.com; expires=Sun, 10-Jan-2016 16:55:50 GMT; path=/
+X-Powered-By: ASP.NET
+ZP3P: policyref="/w3c/p3p.xml", CP="CURa ADMa DEVa PSAa PSDa OUR LEG DSP NON COR COM NAV"
+%Date: Fri, 10 Jan 2014 16:55:50 GMT
+
+
+window.onerror = function( ) { return true; }
+var sirefurl = top.document.referrer;
+var sipageurl = new String( top.document.URL );
+if(sirefurl != '' ||sipageurl.search(/sisearchengine=/i)>=0  ){ if((sipageurl.split('/')[2] != sirefurl.split('/')[2])){ 
+var url = '//dms.netmng.com/si/CM/Tracking/ClickTracking.aspx?siclientid=8844&jscript=0';
+var proto = window.location.protocol.toLowerCase();
+if(proto=='https:') url = proto + url;
+else url = 'http:' + url;
+var now = new Date();
+url += '&timecode=' + now.getTime();
+if(sirefurl!=null) url += '&sirefurl=' + escape(sirefurl);
+if(sipageurl!=null) url += '&sipageurl=' + escape(sipageurl);
+var siimage = new Image( );
+siimage.src = url;
+}}
+
+//Begin 3rd party tracking scripts
+
+ function DeliverThirdPartyPixels(){
+ var si_pageurl = new String( top.document.URL ).toLowerCase();
+if (si_pageurl.indexOf('sitrackingid') > 0){
+ }else{
+if( si_pageurl.indexOf('sisearchengine') > 0){ 
+}else{
+};
+};
+}
+DeliverThirdPartyPixels();
+if (document.createElement && document.body) 
+{ 
+  var nm_script1 = document.createElement('SCRIPT'); 
+  nm_script1.src = document.location.protocol + '//rbox.netmng.com/?aid=2818'; 
+  document.getElementsByTagName('head')[0].appendChild(nm_script1); 
+}
+
+//End 3rd party tracking scripts
+

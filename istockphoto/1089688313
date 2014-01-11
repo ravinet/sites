@@ -1,0 +1,27 @@
+PHTTP23.45.45.175"â
+1GET /static/1389311478/js/namespace.js HTTP/1.1
+Host: i.istockimg.com
+Connection: keep-alive
+Accept: */*
+vUser-Agent: Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/31.0.1650.63 Safari/537.36
+&Referer: http://www.istockphoto.com/
+$Accept-Encoding: gzip,deflate,sdch
+!Accept-Language: en-US,en;q=0.8
+
+*‡
+HTTP/1.1 200 OK
+Server: Apache
+0Last-Modified: Fri, 15 Nov 2013 21:12:49 +0000
+(ETag: 13455f7e629f8cfa33cfefd634181f98
+Content-Length: 271
+X-Cnection: close
+Content-Type: text/javascript
+Cache-Control: max-age=544673
+(Expires: Thu, 16 Jan 2014 23:51:07 GMT
+%Date: Fri, 10 Jan 2014 16:33:14 GMT
+Connection: keep-alive
+Vary: Accept-Encoding
+‘
+
+namespacing={init:function(namespace){var spaces=[];namespace.split('.').each(function(space){var curSpace=window,i;spaces.push(space);for(i=0;i<spaces.length;i++){if(typeof curSpace[spaces[i]]==='undefined'){curSpace[spaces[i]]={};}
+curSpace=curSpace[spaces[i]];}});}};

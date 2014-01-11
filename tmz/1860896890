@@ -1,0 +1,21 @@
+PHTTP107.21.188.38"Å
+SGET /server/2.1/?guid=01a64417-ca7c-4c49-7e86-3d9b9007cd75&appkey=Q1siLe HTTP/1.1
+Host: ortc-prd.realtime.co
+Connection: keep-alive
+Accept: */*
+vUser-Agent: Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/31.0.1650.63 Safari/537.36
+Referer: http://www.tmz.com/
+$Accept-Encoding: gzip,deflate,sdch
+!Accept-Language: en-US,en;q=0.8
+
+*‹
+HTTP/1.1 200 OK
+X-Powered-By: Express
+ Access-Control-Allow-Origin: *
+Content-Type: text/javascript
+Transfer-Encoding: chunked
+M
+40
+var SOCKET_SERVER = "http://ortc-ws3-useast1-S0009.realtime.co";
+0
+

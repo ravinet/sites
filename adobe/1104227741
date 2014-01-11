@@ -1,0 +1,43 @@
+PHTTP192.150.16.64"⁄
+TGET /etc/designs/dotcom/layout/grid/composite/homepagepanel.769345128.css HTTP/1.1
+Host: www.adobe.com
+Connection: keep-alive
+Accept: text/css,*/*;q=0.1
+vUser-Agent: Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/31.0.1650.63 Safari/537.36
+ Referer: http://www.adobe.com/
+$Accept-Encoding: gzip,deflate,sdch
+!Accept-Language: en-US,en;q=0.8
+LCookie: mbox=check#true#1389227479|session#1389227418322-215795#1389229279
+
+*…	
+HTTP/1.1 200 OK
+Server: Apache
+X-Adobe-Content: WCMS
+Accept-Ranges: bytes
+Cache-Control: max-age=900
+Keep-Alive: timeout=2
+Content-Type: text/css
+Connection: Keep-Alive
+%Date: Thu, 09 Jan 2014 00:30:06 GMT
+(Expires: Thu, 09 Jan 2014 00:44:54 GMT
+Age: 12     
+Content-Length: 907
+ç
+.FixedPanelFrom960 {width:940px;padding-left:10px;padding-right:10px}
+.FixedPanelFrom960:after {clear:both;content:" ";display:block;height:0}
+.FixedPanelFrom960Col {float: left;margin-left:0px}
+.FixedPanelFrom960Break {clear: left;margin-left:0}
+.FixedPanelFrom960Span-1 {width:940px}
+@media screen and (max-width:960px) {
+.FluidPanelTo960 {width:98.4%;padding-left:0.8%;padding-right:0.8%}
+.FluidPanelTo960:after {clear:both;content:" ";display:block;height:0}
+.FluidPanelTo960Col {float: left;margin-left:0%}
+.FluidPanelTo960Break {clear: left;margin-left:0}
+.FluidPanelTo960Span-1 {width:100%}
+}@media screen and (max-width:480px) {
+.FluidPanelTo480 {width:100%;padding-left:0%;padding-right:0%}
+.FluidPanelTo480:after {clear:both;content:" ";display:block;height:0}
+.FluidPanelTo480Col {float: left;margin-left:0%}
+.FluidPanelTo480Break {clear: left;margin-left:0}
+.FluidPanelTo480Span-1 {width:100%}
+}

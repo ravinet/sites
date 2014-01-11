@@ -1,0 +1,23 @@
+PHTTP
+18.7.20.70"’
+ÃGET /b?c1=2&c2=6035486&c3=&c4=&c5=&c6=&c15=&ns__t=1389369703300&ns_c=UTF-8&c8=Dictionary%20and%20Thesaurus%20-%20Merriam-Webster%20Online&c7=http%3A%2F%2Fwww.merriam-webster.com%2F&c9= HTTP/1.1
+Host: b.scorecardresearch.com
+Connection: keep-alive
+Accept: image/webp,*/*;q=0.8
+vUser-Agent: Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/31.0.1650.63 Safari/537.36
+*Referer: http://www.merriam-webster.com/
+$Accept-Encoding: gzip,deflate,sdch
+!Accept-Language: en-US,en;q=0.8
+
+*Ý
+ HTTP/1.1 302 Moved Temporarily
+Content-Length: 0
+ßLocation: http://b.scorecardresearch.com/b2?c1=2&c2=6035486&c3=&c4=&c5=&c6=&c15=&ns__t=1389369703300&ns_c=UTF-8&c8=Dictionary%20and%20Thesaurus%20-%20Merriam-Webster%20Online&c7=http%3A%2F%2Fwww.merriam-webster.com%2F&c9=
+%Date: Fri, 10 Jan 2014 16:01:30 GMT
+Connection: keep-alive
+}Set-Cookie: UID=ac63f1d-18.7.20.70-1389369690; expires=Thu, 31-Dec-2015 16:01:30 GMT; path=/; domain=.scorecardresearch.com
+kSet-Cookie: UIDR=1389369690; expires=Thu, 31-Dec-2015 16:01:30 GMT; path=/; domain=.scorecardresearch.com
+Pragma: no-cache
+(Expires: Mon, 01 Jan 1990 00:00:00 GMT
+SCache-Control: private, no-cache, no-cache=Set-Cookie, no-store, proxy-revalidate
+

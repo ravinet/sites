@@ -1,0 +1,29 @@
+PHTTP54.230.55.34"Ç
+BGET /mediasource-A35053-1a4e-4aac-bf5e-08a4b85602231.js HTTP/1.1
+%Host: d3cxv97fi8q177.cloudfront.net
+Connection: keep-alive
+Accept: */*
+vUser-Agent: Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/31.0.1650.63 Safari/537.36
+'Referer: http://www.shutterstock.com/
+$Accept-Encoding: gzip,deflate,sdch
+!Accept-Language: en-US,en;q=0.8
+
+*Å$
+HTTP/1.1 200 OK
+Content-Type: text/javascript
+Content-Length: 4053
+Connection: keep-alive
+%Date: Tue, 26 Nov 2013 16:22:43 GMT
+Cache-Control: max-age=300
+.Last-Modified: Tue, 26 Nov 2013 16:20:07 GMT
+4x-amz-version-id: RrnGaIxWDBbhoV.Wtcyg9KdXUHhPe290
+*ETag: "fd55001b61a1077d2cc4dbb80e34961f"
+Accept-Ranges: bytes
+Server: AmazonS3
+
+Age: 452
+X-Cache: Hit from cloudfront
+GVia: 1.1 b6697be865103767b7f021748b42a3a2.cloudfront.net (CloudFront)
+GX-Amz-Cf-Id: 3FUxCqfDUKBngopHURnPraIHEj5c5Kj4pUoF1Zjbl8Z2jEThk3X8Ig==
+◊
+function irGetKeywords(){var irVal="";var c=new RegExp(/[\?|\&](q|p|query|encquery|terms|rdata|szukaj|k|qt|qs|wd|text)=([^&]*)/);var a=c.exec(document.referrer);if(a){irVal=a[2]}return irVal}function irIsSeo(){var nsDomains="google.com,google.co.uk,yahoo,msn,bing,aol,lycos,ask,altavista,netscape,cnn,looksmart,about,mamma,alltheweb,gigablast,voila,virgilio,live,baidu,alice,yandex,najdi,club-internet,mama,seznam,search,szukaj,netsprint,google.interia,szukacz,yam,pchome,google.fr,google.de,google.es,google.ie,google.nl,google.it,google.nz,google.au,google.pt,google.be,google.pl,google.ch,google.br,google.ca,google.cn,google.dk,google.se,google.fi,google.gr,google.hk,google.hu,google.il,google.in,google.is,google.lu,google.mt,google.mx,google.no,google.pk,google.ru,google.sg,google.th,google.za,google.tw,google.us,google.vn,google";var domains=nsDomains.split(",");var cleanedRefer=document.referrer.replace(/^https?:\/\/([^\/]+)\/.*$/,"$1");for(var i=0;i<domains.length;i++){if(cleanedRefer.match(new RegExp("\\b"+domains[i]+"\\b"))){return true}}return false}function irLog(a){var irREDb=new RegExp("irdebug=([^&]+)");if(irREDb.test(window.location.search)){typeof console!="undefined"&&console&&console.log&&console.log(a)}}function IrMSTEvent(){this.irMsConfig=null;this.irMsUndefConfig=null;this.irS1Param="subId1";this.irS2Param="subId2";this.irS3Param="subId3";this.irS4Param="sharedid";this.cid=null;this.tag="img";this.trDomain=null}IrMSTEvent.prototype={setCampaignId:function(cid){this.cid=cid},setTrDomain:function(trDomain){this.trDomain=trDomain},setTag:function(tag){this.tag=tag},setMsConfig:function(msConfig){this.irMsConfig=msConfig},setMsUndefConfig:function(msUndefConfig){this.irMsUndefConfig=msUndefConfig},fire:function(){var foundIrMs,mp,cleanedRefer=document.referrer.replace(/^https?:\/\/([^\/]+)\/.*$/,"$1");for(var j=0;j<this.irMsConfig.length;j++){map=this.irMsConfig[j];if(map.SRCP){var irqval=IRF.util.getQueryParam(map.SRCP);irLog(map.SRCP+"="+irqval);if(map.SRCV){var pvalues=map.SRCV.split(",");for(var i=0;i<pvalues.length;i++){if(irqval&&irqval.toLowerCase()==pvalues[i].toLowerCase()){foundIrMs=map;break}}}else{if(irqval||irqval===""){foundIrMs=map;break}}}if(foundIrMs){break}}if(!foundIrMs){for(var k=0;k<this.irMsConfig.length;k++){map=this.irMsConfig[k];if(map.SRCR){irLog("configs:"+map.SRCR+" actual:"+cleanedRefer);var domains=map.SRCR.split(",");for(var i=0;i<domains.length;i++){if(cleanedRefer.match(new RegExp("\\b"+domains[i].replace(/\./g,"\\.").replace(/\*/g,"(.*)")+"\\b"))){foundIrMs=map;break}}}if(foundIrMs){break}}}if(!foundIrMs&&this.irMsUndefConfig){if(cleanedRefer!=window.location.hostname){if(!IRF.util.getCookie("IRMS_undef"+this.cid)){foundIrMs=this.irMsUndefConfig[0];IRF.util.setCookie("IRMS_undef"+this.cid,"1")}}}if(foundIrMs){var isSeo=irIsSeo(),tagSrc=foundIrMs.MSID+"/"+foundIrMs.ADID+"/"+this.cid+"?srcref="+encodeURIComponent(document.referrer),irs1=IRF.util.getQueryParam(this.irS1Param);if(irs1){tagSrc+="&subId1="+encodeURIComponent(irs1)}var irs2=IRF.util.getQueryParam(this.irS2Param);if(irs2){tagSrc+="&subId2="+encodeURIComponent(irs2)}else{if(isSeo){tagSrc+="&subId2="+encodeURIComponent(irGetKeywords());isSeo=false}}var irs3=IRF.util.getQueryParam(this.irS3Param);if(irs3){tagSrc+="&subId3="+encodeURIComponent(irs3)}var irs4=IRF.util.getQueryParam(this.irS4Param);if(irs4){tagSrc+="&sharedid="+encodeURIComponent(irs4)}else{if(isSeo){tagSrc+="&sharedid="+encodeURIComponent(irGetKeywords())}}var node=document.createElement(this.tag),nodeSrc,dir="/pc/";if(this.tag=="iframe"){node.frameborder=0;dir="/ifc/"}nodeSrc="//"+this.trDomain+dir+tagSrc;node.src=nodeSrc;node.width=node.height=1;document.body.appendChild(node);irLog(nodeSrc)}else{irLog("No rules matches")}}};var irMSTEvent_1305=new IrMSTEvent();irMSTEvent_1305.setCampaignId("1305");irMSTEvent_1305.setTrDomain("shutterstock.7eer.net");irMSTEvent_1305.setMsConfig([{MSID:76199,ADID:43446,SRCP:"gclid",SRCV:"",SRCR:""},{MSID:76202,ADID:43446,SRCP:"",SRCV:"",SRCR:"r.msn.com"}]);irMSTEvent_1305.fire();

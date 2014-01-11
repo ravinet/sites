@@ -1,0 +1,171 @@
+PHTTP129.176.217.220"ê
+'GET /styles/js/gbs/app-v2.js HTTP/1.1
+Host: www.mayoclinic.org
+Connection: keep-alive
+Accept: */*
+vUser-Agent: Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/31.0.1650.63 Safari/537.36
+%Referer: http://www.mayoclinic.org/
+$Accept-Encoding: gzip,deflate,sdch
+!Accept-Language: en-US,en;q=0.8
+4Cookie: ASP.NET_SessionId=utneflmiwti1lzdwzi1m1rsm
+
+*·*
+HTTP/1.1 200 OK
+Cache-Control: max-age=604800
+(Content-Type: application/x-javascript
+.Last-Modified: Fri, 03 Jan 2014 19:27:24 GMT
+Accept-Ranges: bytes
+ETag: "6f1897d4b98cf1:0"
+%Date: Thu, 09 Jan 2014 01:39:32 GMT
+Content-Length: 5211
+›(
+// BEHAVIORS THAT CAN HAPPEN AS SOON AS THIS FILE IS PARSED.
+// re-runs resizeMenus on window resize.
+$(window).resize(MayoApp.resizeMenus);
+// moves some content from "above the fold" to "below the fold" in mobile view.
+$(window).resize(MayoApp.moveAuto);
+
+// BEHAVIORS THAT CAN HAPPEN ON DOCUMENT.READY
+$(function () {
+    MayoApp.updateGlobalNav();
+    MayoApp.moveAuto();
+    $('.slide-show').slide_show();
+    $('.enlarge-image').slide_show_enlarge();
+    $('.show-more').show_more();
+    // $('.show-more').eq(0).show_more(); // use default behavior
+    // $('.show-more').eq(1).show_more(); // use default behavior
+    // $('.show-more').eq(2).show_more(); // overridden by data-show=7
+    // FS-247 default namespace with CSS-only behavior, closed by default
+    $('.expandable').toggle_open();
+    // FS-247 default namespace with CSS-only behavior, open by default
+    // $.toggle_open($('.expandable').eq(1));
+
+    // FS-255 et al.
+    $holder = $('#filter').find('.holder'),
+    $pull = $('.mobilePull'),
+    // $menu = $('.topnav-v2, #tertiary-nav');
+    $menu = $('.topnav-v2');
+
+    var toggleNext = function (e) {
+        "use strict";
+        e.preventDefault();
+        e.stopPropagation();
+        // don't care if link is next to <div>, <ul> or <ol>
+        // $(this).next().slideToggle();
+        $(this).next().toggle();
+        return this;
+    };
+
+    $pull.on('click.pull', toggleNext);
+
+
+
+    // does slightly fewer resizes per second
+    /*
+    $(window).resize(function () {
+    "use strict";
+    clearTimeout(MayoApp.resizeTimer);
+    MayoApp.resizeTimer = setTimeout('MayoApp.resizeMenus()', 10);
+    });
+    */
+
+    // add an extra anchor to search results pages if page is mobile.
+    $('#filter').find('.holder').each(function () {
+        "use strict";
+        // add an anchor before the item for JavaScript to make clickable.
+        var $this = $(this);
+        var $text = $this.find('h2').text();
+        var $a = $('<a>').attr('href', '#').html($text).addClass('mobilePull');
+        $a.on('click.pull', toggleNext);
+        $this.before($a);
+    });
+
+
+    // FS-244. @author Daniel J. Post
+    // show forms if they contain errors
+    var $forms = $('.form');
+    $forms.each(function (i, f) {
+        "use strict";
+        var $f = $(f);
+        if ($f.find('.error').length) {
+            $f.find('.popup').addClass('show').find('h2').eq(0).focus();
+        }
+    });
+    // show/hide "email this article" or similar form
+    $forms.find('.showpopup').on('click.popup', function (e) {
+        "use strict";
+        e.preventDefault();
+        $(this).closest('.form').find('.popup').toggleClass('show');
+    });
+    // hides all .form .popup.show
+    var closeE = function () {
+        "use strict";
+        $forms.each(function (i, f) {
+            var $f = $(f);
+            $f.find('.popup').removeClass('show');
+        });
+    };
+    // capture <ESC> key.
+    $(document).on('keyup.popup', function (e) {
+        "use strict";
+        if (e.keyCode === 27) {
+            closeE();
+        }
+    });
+    // hide forms when click [x]
+    $('.closeform').on('click.popup', closeE);
+
+    $newsticker = $('.news-ticker');
+    $newsticker_content = $newsticker.find('li');
+    if ($newsticker_content.length) {
+        /* this block was for demo purposes. - DJP
+
+        $newsticker.eq(0).newsticker({
+        timeout:10000
+        });
+        $newsticker.eq(1).newsticker({
+        timeout:5000
+        });
+        $newsticker.eq(2).newsticker({
+        timeout:3000
+        });
+        // $newsticker.newsticker({timeout:5000});
+        */
+        // do all news tickers on the page with default behavior
+        $newsticker.newsticker();
+    }
+
+    // Keyboard navigation for top nav - tabbing 
+    $('nav.resizable ul.topnav-v2 > li > a').focus(function () {
+        $(this).parent('li').siblings().find('div').removeClass('on');
+        $(this).next('div').addClass('on');
+    });
+    $('nav.resizable ul.topnav-v2 a:last').blur(function () {
+        $('nav.resizable ul.topnav-v2 div').removeClass('on');
+    });
+
+    // add data-title attributes to td elements, to be displayed in mobile view.
+    $('table.standard').each(function () {
+        "use strict";
+        var th = [], $table = $(this), $tr = $table.find('tr');
+        $table.find('th').each(function () { th.push(this.innerHTML); });
+        $tr.each(function () {
+            $(this).find('td').each(function (i, j) {
+                $(j).attr('data-title', th[i]);
+            });
+        });
+    });
+    // If IE8 and after page load, fix heights on slide-show initial images [FS-210]
+    if (!MayoApp.isModern) {
+        $slideshow = $('.slide-show');
+        $slideshow.each(function (i, el) {
+            var $el = $(el),
+                $img = $el.find('.slide').find('img');
+            if ($img.height()) {
+                var ratio = $img.height() / $img.width();
+                var displayHeight = $el.width() * ratio;
+                $img.height(displayHeight).closest('div').height(displayHeight);
+            }
+        });
+    }
+});

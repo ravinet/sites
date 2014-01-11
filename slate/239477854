@@ -1,0 +1,23 @@
+PHTTP107.21.100.82"
+
+çGET /identity/public/visitor/ip_address.json?jsonp_callback=jQuery1102051738052489236_1389228439851&wapo_saved_ip=&_=1389228439857 HTTP/1.1
+Host: id.slate.com
+Connection: keep-alive
+Accept: */*
+vUser-Agent: Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/31.0.1650.63 Safari/537.36
+ Referer: http://www.slate.com/
+$Accept-Encoding: gzip,deflate,sdch
+!Accept-Language: en-US,en;q=0.8
+∑Cookie: JSESSIONID=4778ac04c84cbd38a223a5ded6b3; s_pers=%20s_visit%3D1%7C1389230240082%3B%20s_nr%3D1389228440083-New%7C1391820440083%3B%20s_lv%3D1389228440083%7C1483836440083%3B%20s_lv_s%3DFirst%2520Visit%7C1389230240083%3B%20s_vmonthnum%3D1391230800085%2526vn%253D1%7C1391230800085%3B%20s_monthinvisit%3Dtrue%7C1389230240085%3B; s_sess=%20s_cc%3Dtrue%3B%20s_dslv%3DFirst%2520Visit%3B%20s_wp_ep%3Dhomepage%3B%20s._ref%3DDirect-Load%3B%20s_sq%3D%3B; __vrf=1389228440097pzFEJuPvYTypDVLhrvHQ7UD7B7dU5oQG; optimizelySegments=%7B%22301791228%22%3A%22gc%22%2C%22301851147%22%3A%22direct%22%2C%22301880060%22%3A%22false%22%2C%22540560237%22%3A%22none%22%7D; optimizelyEndUserId=oeu1389228440138r0.7728833775036037; optimizelyBuckets=%7B%22389680006%22%3A%220%22%2C%22546320965%22%3A%220%22%2C%22549094815%22%3A%220%22%7D; wapo_sess_id=3c140007-fd24-457d-aa2c-05961f6943d8; optimizelyPendingLogEvents=%5B%5D; wapo_vis_id=840dbedc-ab2a-466e-ab01-bf9a30dcae9b
+
+*¯
+HTTP/1.1 200 OK
+'Content-Type: text/html;charset=utf-8
+%Date: Thu, 09 Jan 2014 00:47:07 GMT
+Server: GlassFish v3
+hSet-Cookie: wapo_last_ip=128.30.76.55; Domain=slate.com; Expires=Thu, 09-Jan-2014 01:47:08 GMT; Path=/
+X-Powered-By: Servlet/3.0
+Content-Length: 66
+Connection: keep-alive
+D
+jQuery1102051738052489236_1389228439851({"retVal":"128.30.76.55"})

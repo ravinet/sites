@@ -1,0 +1,79 @@
+PHTTP23.6.22.140"õ
+&GET /us/rightnow/index.html HTTP/1.1
+Host: www.oracle.com
+Connection: keep-alive
+TAccept: text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8
+vUser-Agent: Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/31.0.1650.63 Safari/537.36
+$Accept-Encoding: gzip,deflate,sdch
+!Accept-Language: en-US,en;q=0.8
+
+*Ú
+ HTTP/1.1 301 Moved Permanently
+\Location: /us/solutions/customer-experience/oracle-customer-experience/overview/index.html
+Status: 301 Moved Permanently
+#X-Powered-By: Servlet/2.5 JSP/2.1
+(Content-Type: text/html; charset=utf-8
+Content-Language: en
+&X-Oracle-DMS-ECID: 27509111848999150
+yServer: Oracle-Application-Server-11g Oracle-Web-Cache-11g/11.1.1.6.0 (M;max-age=60+0;age=0;ecid=27509111848999150,0:1)
+Content-Length: 1720
+%Date: Thu, 09 Jan 2014 01:25:46 GMT
+Connection: keep-alive
+Vary: Accept-Encoding
+º
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html>
+<head><meta http-equiv="Content-Type" content="text/html; charset=utf-8" />		
+<script type="text/javascript">
+   var _U = "undefined";
+   var g_HttpRelativeWebRoot = "/ocom/";
+   var SSContributor = false;
+   var SSForceContributor = false;
+   var SSHideContributorUI = false;
+   var ssUrlPrefix = "/us/";
+   var ssUrlType = "2";
+   
+   var g_navNode_Path = new Array();
+       g_navNode_Path[0] = '8';
+       g_navNode_Path[1] = 'ocomen_rightnow';
+   var g_ssSourceNodeId = "ocomen_rightnow";
+   var g_ssSourceSiteId = "ocomen";
+</script>
+<script id="SSNavigationFunctionsScript" type="text/javascript" src="/ocom/websites/ocomen/sitenavigationfunctions.js"></script>
+<script id="SSNavigationScript" type="text/javascript" src="/ocom/websites/ocomen/sitenavigation.js"></script>
+
+<script type="text/javascript">
+	var g_strLanguageId = "en";
+</script>
+	<script type="text/javascript" src="/ocom/resources/wcm/sitestudio/wcm.toggle.js"></script>
+	<script type="text/javascript" src="/ocom/resources/sitestudio/ssajax/ssajax.js"></script>
+
+
+  <script id="ssInfo" type="text/xml" warning="DO NOT MODIFY!">
+  <ssinfo>
+    <fragmentinstance id="fragment3" fragmentid="UniversalRedirect" library="server:UNIVERSAL-FRAGMENTS"></fragmentinstance>
+  </ssinfo>
+  </script>
+  
+  <meta content="MSHTML 6.00.6000.17098" name="GENERATOR" />
+<!--SS_BEGIN_SNIPPET(fragment3,0)-->
+				
+			<!--SS_END_SNIPPET(fragment3,0)-->
+
+
+
+</head>
+
+<body>
+  
+<!--SS_BEGIN_SNIPPET(fragment3,1)-->				 
+	 
+ 
+
+
+ 
+			<!--SS_END_SNIPPET(fragment3,1)-->
+ &nbsp;
+</body>
+</html>

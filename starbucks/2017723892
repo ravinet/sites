@@ -1,0 +1,29 @@
+»HTTPS108.170.199.177"”
+JGET /pixel?pixelID=17854&partnerID=73&clientID=3178&key=segment HTTP/1.1
+%Host: segment-pixel.invitemedia.com
+Connection: keep-alive
+Accept: image/webp,*/*;q=0.8
+vUser-Agent: Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/31.0.1650.63 Safari/537.36
+ŸReferer: http://2206715.fls.doubleclick.net/activityi;src=2206715;type=starb723;cat=starb998;ord=58117237;~oref=http%3A%2F%2Fwww.starbucks.com%2F?&_dc_ck=try
+$Accept-Encoding: gzip,deflate,sdch
+!Accept-Language: en-US,en;q=0.8
+
+*“	
+HTTP/1.1 302 Found
+Server: nginx/0.7.65
+%Date: Fri, 10 Jan 2014 16:41:30 GMT
+Connection: close
+zSet-Cookie: uid=782546df-9fb8-4533-9a0f-dd4335015e6b;Path=/;Domain=invitemedia.com;Expires=Sat, 10-Jan-2015 16:42:20 GMT
+(Expires: Thu, 01 Jan 1970 00:00:00 GMT
+—Set-Cookie: segments_p1="eJzj4uLY182o8ObogWmsABgwBJM=";Version=1;Path=/;Domain=invitemedia.com;Expires=Sat, 10-Jan-2015 16:42:20 GMT;Max-Age=31536000
+Pragma: no-cache
+€P3P: policyref="/w3c/p3p.xml", CP="OTI DSP COR ADMo TAIo PSAo PSDo CONo OUR SAMo OTRo STP UNI PUR COM NAV INT DEM STA PRE LOC"
+Cache-Control: no-cache
+ELocation: https://ad.yieldmanager.com/pixel?id=907939&id=950264&t=2
+Content-Length: 0
+^Set-Cookie: impressions=;Path=/;Domain=invitemedia.com;Expires=Thu, 01-Jan-1970 00:00:01 GMT
+YSet-Cookie: clicks=;Path=/;Domain=invitemedia.com;Expires=Thu, 01-Jan-1970 00:00:01 GMT
+[Set-Cookie: segments=;Path=/;Domain=invitemedia.com;Expires=Thu, 01-Jan-1970 00:00:01 GMT
+\Set-Cookie: frequency=;Path=/;Domain=invitemedia.com;Expires=Thu, 01-Jan-1970 00:00:01 GMT
+_Set-Cookie: io_frequency=;Path=/;Domain=invitemedia.com;Expires=Thu, 01-Jan-1970 00:00:01 GMT
+

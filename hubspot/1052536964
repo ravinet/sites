@@ -1,0 +1,25 @@
+»HTTPS54.243.181.139"á
+”GET /content/api/v2/landing-pages/413550736/has-permission?portal_id=53&callback=jQuery17103142009994480759_1389230839253&_=1389230839769 HTTP/1.1
+Host: app.hubspot.com
+Connection: keep-alive
+Accept: */*
+vUser-Agent: Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/31.0.1650.63 Safari/537.36
+"Referer: http://www.hubspot.com/
+$Accept-Encoding: gzip,deflate,sdch
+!Accept-Language: en-US,en;q=0.8
+œCookie: _ga=GA1.2.1252330966.1389230840; mp_d446a72c79710c1ff563ce3bc715de7f_mixpanel=%7B%22distinct_id%22%3A%20%22143749c577529d-0580961c4-14281008-232800-143749c577633d%22%2C%22%24initial_referrer%22%3A%20%22%24direct%22%2C%22%24initial_referring_domain%22%3A%20%22%24direct%22%7D
+
+*ª
+HTTP/1.1 403 FORBIDDEN
+)Access-Control-Allow-Credentials: false
+Cache-control: No-store
+&Cache-control: no-cache="set-cookie"
+ Content-Type: application/json
+%Date: Thu, 09 Jan 2014 01:27:07 GMT
+qP3P: P3P: policyref="http://www.hubspot.com/w3c/p3p.xml", CP="CURa ADMa DEVa TAIa PSAa PSDa OUR IND DSP NON COR
+Server: gunicorn/0.17.2
+²Set-Cookie: AWSELB=E5FB451710AD61AC07247264D1797D1E97EB8C8B0491F6FC68C40151465BB1954D8AD639F5DD6E800C740A8EE4946D90BA95161B3FE8CE6C086ED4415E676D406720163B8D;PATH=/;MAX-AGE=300
+Content-Length: 98
+Connection: keep-alive
+d
+{"message": "You are not authenticated to access this resource", "errors": [], "succeeded": false}

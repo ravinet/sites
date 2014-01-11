@@ -1,0 +1,63 @@
+PHTTP54.230.53.16"í
+<GET /ansn-creative/dynads/ServeS3.ashx/autotag.js HTTP/1.1
+Host: dynads.adextent.com
+Connection: keep-alive
+Accept: */*
+vUser-Agent: Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/31.0.1650.63 Safari/537.36
+"Referer: http://www.babylon.com/
+$Accept-Encoding: gzip,deflate,sdch
+!Accept-Language: en-US,en;q=0.8
+
+*é
+HTTP/1.1 200 OK
+&Content-Type: application/javascript
+Content-Length: 1403
+Connection: keep-alive
+Cache-Control: public
+%Date: Thu, 09 Jan 2014 13:14:11 GMT
+(Expires: Thu, 09 Jan 2014 13:31:49 GMT
+.Last-Modified: Thu, 09 Jan 2014 12:31:49 GMT
+Lp3p: CP="IDC DSP COR ADM DEVi TAIi PSA PSD IVAi IVDi CONi HIS OUR IND CNT"
+Server: Microsoft-IIS/7.0
+X-AspNet-Version: 4.0.30319
+X-Powered-By: ASP.NET
+Age: 2574
+X-Cache: Hit from cloudfront
+GVia: 1.1 98b4bc12064822dc3a250395636360e8.cloudfront.net (CloudFront)
+GX-Amz-Cf-Id: tusBptWa-srxXq5HD4q6oixEBuCYJI6qcjsgpIaCAgPZAl_H8ednQg==
+ý
+
+(function(){
+    var domain;
+    try{
+        if(window.top && window.top.location && window.top.location.host)
+            domain = window.top.location.host;
+        else
+            domain = (window.self === window.top ? location.host : document.referrer.split("/")[2]);
+    }
+    catch(err){
+        domain = (window.self === window.top ? location.host : document.referrer.split("/")[2]);
+    }
+    if(!domain)
+        return;
+	domain = domain.replace("www.","");
+	var dynadshost = (("https:" == document.location.protocol) ? "https://ssl." : "http://dynads.");
+
+    var autotagScript;
+    var scripts = document.getElementsByTagName('script');
+    for (var i = 0; i < scripts.length; ++i) {
+        if(scripts[i].src.indexOf("/dynads/ServeS3.ashx/autotag") != -1 ||
+            scripts[i].src.indexOf("/dynads/ServeS3.ashx/a/autotag") != -1 ||
+            scripts[i].src.indexOf("dyau9xqp8gzji.cloudfront.net/autotag.js") != -1){
+            autotagScript = scripts[i];
+            break;
+        }
+    }
+    var parent = autotagScript ? autotagScript.parentElement : document.getElementsByTagName('body')[0];
+    if(!parent)
+        return;
+	var script = document.createElement('script');
+	script.type = 'text/javascript';
+	script.src = dynadshost + 'adextent.com/ansn-creative/dynads/ServeS3.ashx/a/autotag.' + domain + '.js';
+    parent.appendChild(script);
+})();

@@ -1,0 +1,30 @@
+PHTTP66.235.141.144"‹
+GET /crossdomain.xml HTTP/1.1
+Host: timeinc.122.2o7.net
+Connection: keep-alive
+vUser-Agent: Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/31.0.1650.63 Safari/537.36
+Accept: */*
+ Referer: http://www.ew.com/ew/
+$Accept-Encoding: gzip,deflate,sdch
+!Accept-Language: en-US,en;q=0.8
+;Cookie: s_vi=[CS]v1|29675334851D2527-6000013580018813[CE]
+
+*¯
+HTTP/1.1 200 OK
+%Date: Thu, 09 Jan 2014 13:38:53 GMT
+Server: Omniture DC/2.0.0
+xserver: www533
+Keep-Alive: timeout=15
+Connection: Keep-Alive
+Transfer-Encoding: chunked
+Content-Type: text/html
+Õ
+c8
+<cross-domain-policy>
+<allow-access-from domain="*" />
+<allow-http-request-headers-from domain="*" headers="*" />
+<site-control permitted-cross-domain-policies="master-only" />
+</cross-domain-policy>
+
+0
+

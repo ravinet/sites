@@ -1,0 +1,29 @@
+PHTTP199.181.132.249"•
+POST /client-error HTTP/1.1
+Host: disney.com
+Connection: keep-alive
+Content-Length: 350
+Origin: http://disney.com
+vUser-Agent: Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/31.0.1650.63 Safari/537.36
+@Content-Type: application/x-www-form-urlencoded; charset=UTF-8
+Accept: */*
+Referer: http://disney.com/
+$Accept-Encoding: gzip,deflate,sdch
+!Accept-Language: en-US,en;q=0.8
+à
+m[]=TypeError%3A%20Cannot%20read%20property%20'identity'%20of%20null&l[]=&r=http%3A%2F%2Fdisney.com%2F&u=Mozilla%2F5.0%20(X11%3B%20Linux%20x86_64)%20AppleWebKit%2F537.36%20(KHTML%2C%20like%20Gecko)%20Chrome%2F31.0.1650.63%20Safari%2F537.36&w=922&h=1051&s[]=dolWebAnalytics.js&s[]=head-c4ada365ef7d.js&s[]=jquery.min.js&s[]=application-f01e3fe3364c.js*Û
+ HTTP/1.1 301 Moved Permanently
+%Date: Thu, 09 Jan 2014 01:08:49 GMT
+Server: Apache
+-Location: http://disney.go.com/client-error
+Content-Length: 241
+X-Cnection: close
+-Content-Type: text/html; charset=iso-8859-1
+ó
+<!DOCTYPE HTML PUBLIC "-//IETF//DTD HTML 2.0//EN">
+<html><head>
+<title>301 Moved Permanently</title>
+</head><body>
+<h1>Moved Permanently</h1>
+<p>The document has moved <a href="http://disney.go.com/client-error">here</a>.</p>
+</body></html>

@@ -1,0 +1,41 @@
+PHTTP64.41.197.44"„
+NGET /wp-content/plugins/flexi-quote-rotator/styles/narrow-plain.css HTTP/1.1
+Host: www.zedo.com
+Connection: keep-alive
+Accept: text/css,*/*;q=0.1
+vUser-Agent: Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/31.0.1650.63 Safari/537.36
+Referer: http://www.zedo.com/
+$Accept-Encoding: gzip,deflate,sdch
+!Accept-Language: en-US,en;q=0.8
+
+*ý
+HTTP/1.1 200 OK
+%Date: Thu, 09 Jan 2014 00:29:25 GMT
+Server: Apache/2.2.22
+.Last-Modified: Tue, 23 Jul 2013 13:30:59 GMT
+!ETag: "3cc3a-122-4e22dcdae4ac0"
+Content-Type: text/css
+Content-Length: 290
+"X-Varnish: 1560811200 1560810368
+
+Age: 239
+Via: 1.1 varnish
+Keep-Alive: timeout=5, max=98
+Connection: Keep-Alive
+¤
+#quotearea {
+   background: #ffffff;
+   width: 240px;
+   /*height: 100px;
+   padding: 20px 30px 20px 30px;*/
+   margin: 15px auto;
+}
+#quoterotator {
+   line-height: 135%;
+}
+#quoteauthor {
+   display: block;
+   text-align: right;
+   font-weight: bold;
+   font-style: italic;
+}

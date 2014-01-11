@@ -1,0 +1,45 @@
+PHTTP58.68.146.92"
+UGET /main/s?user=people|homepage|2013juxing01&db=people&border=0&local=yes HTTP/1.1
+Host: pmm.people.com.cn
+Connection: keep-alive
+TAccept: text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8
+vUser-Agent: Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/31.0.1650.63 Safari/537.36
+$Referer: http://www.people.com.cn/
+$Accept-Encoding: gzip,deflate,sdch
+!Accept-Language: en-US,en;q=0.8
+>Cookie: _weather_ip_c_code=72509; ALLYESID4=07912991D9F90F98
+
+*â
+HTTP/1.1 200 OK
+%Date: Thu, 09 Jan 2014 00:57:56 GMT
+Server: Apache/2.2.22 (Unix)
+P3P: CP="OTI PSA OUR"
+#Cache-Control: no-store, no-cache
+Expires: -1
+Content-Length: 1262
+Connection: close
+Content-Type: text/html
+ð	
+<html><head><meta http-equiv="cache-control" content="no-cache"></head><body style="BACKGROUND-COLOR:transparent">
+<SCRIPT LANGUAGE="Javascript">
+ADFHOST5881="http://pmm.people.com.cn";
+ADFCID5881=1047;
+ADFBID5881=5881;
+ADFUSER5881="http://pmm.people.com.cn/c?d=people&i=z1047,241230,5881&k=&p=0&v=76486394&rf=http%3A%2F%2Fwww%2Epeople%2Ecom%2Ecn%2F&u=http://luhua.tmall.com";
+</SCRIPT>
+<script language=javascript src="http://pmm.people.com.cn/bnnr/alysxc_v01.js"></script>
+<script language="javascript">
+var flash_fl14010608255963=1;
+var flash_wid14010608255963=280;
+var flash_hei14010608255963=90;
+var flash_adr14010608255963="http://www.people.com.cn/adv/luhua280900103.swf";
+var flash_trasparent14010608255963 = 1;
+var clickdiv14010608255963=0;
+var flashparam14010608255963="CLKURL";
+var flashClkTag14010608255963=0;</script>
+<SCRIPT LANGUAGE="JavaScript">
+function alysxcf(u,w,h,p){if(!p)p=0;var d="xc"+Math.ceil(Math.random()*1000000);document.write("<div id="+d+"></div>");
+p=(flash_trasparent14010608255963)?null:1;
+alysxc(u,w,h,p,d,"","588114010608255963",clickdiv14010608255963,0,ADFUSER5881,flashClkTag14010608255963,flashparam14010608255963);}
+alysxcf(flash_adr14010608255963,flash_wid14010608255963,flash_hei14010608255963);
+</SCRIPT>

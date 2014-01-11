@@ -1,0 +1,26 @@
+PHTTP68.67.152.230"ê
+2GET /a_usersync?c=4&cbfn=ANX_async_load HTTP/1.1
+Host: ib.adnxs.com
+Connection: keep-alive
+Accept: */*
+vUser-Agent: Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/31.0.1650.63 Safari/537.36
+;Referer: http://cdn.optmd.com/V2/225965/628409/index.html
+$Accept-Encoding: gzip,deflate,sdch
+!Accept-Language: en-US,en;q=0.8
+òCookie: icu=ChIIrLYHEAoYASABKAEw3LLAlgUQ3LLAlgUYAA..; uuid2=1508740299618309148; sess=1; anj=dTM7k!M4.g1IKuvF7TGmj3qu#24lxXifH$='l^!75=Pj9++.D<oJx:210>V%hV*B#-#8TTGl@1I$f5v^-P6<2'D*>7cc3)Q:VUx6lNViIK/#T2o^5Bd'lxT1jl.=4t+f/%upqLowqyVC)Vqmh.15QE'+Y[in)X8p*'-p6U`tL>47w193J:ey2o7D]
+
+*˛
+HTTP/1.1 200 OK
+,Cache-Control: no-store, no-cache, private
+Pragma: no-cache
+(Expires: Sat, 15 Nov 2008 16:00:00 GMT
+ÜP3P: policyref="http://cdn.adnxs.com/w3c/policy/p3p.xml", CP="NOI DSP COR ADM PSAo PSDo OURo SAMo UNRo OTRo BUS COM NAV DEM STA PRE"
+X-XSS-Protection: 0
+sSet-Cookie: uuid2=1508740299618309148; path=/; expires=Thu, 10-Apr-2014 16:01:33 GMT; domain=.adnxs.com; HttpOnly
+`Set-Cookie: sess=1; path=/; expires=Sat, 11-Jan-2014 16:01:33 GMT; domain=.adnxs.com; HttpOnly
+°Set-Cookie: anj=dTM7k!M4.g1IKuUF7TGmj3qu#24lxXifH$='l^!75=Pj9++.D<oJx:210>c*hV*B#-#8TTGl@1I$f5v^-P6<2'D*>7cc3)Q:VUx6lNVhP7!JSEMm?Y^W_+.`Il]bDPT9>)GH(1Xv44YQM+X:uMvNi3%=zxr()X8`$6#qrsAh8v%QU!>gN790VHG0ZUnrI@f`0.4; path=/; expires=Thu, 10-Apr-2014 16:01:33 GMT; domain=.adnxs.com; HttpOnly
+Content-Type: text/javascript
+%Date: Fri, 10 Jan 2014 16:01:33 GMT
+Content-Length: 128
+Ç
+ANX_async_load({"url":"http://cms.quantserve.com/dpixel?source=appnexus&eid=5&id=1508740299618309148", "c":3, "tagtype":"img"});

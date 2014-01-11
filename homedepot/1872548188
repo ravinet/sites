@@ -1,0 +1,59 @@
+PHTTP107.23.130.8"Ÿ
+ÝGET /ats/ats?cmd=CP&AdvertiserID=3288&ActionID=38&ActionName=Homedepot_Container_RT_Pixel&SKU=undefined&CATEGORY=HomePage&BRAND=undefined&PAGE=HomePage&u1=undefined&u2=HomePage&u3=undefined&cachebuster=27836260 HTTP/1.1
+Host: ats.tumri.net
+Connection: keep-alive
+TAccept: text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8
+vUser-Agent: Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/31.0.1650.63 Safari/537.36
+qReferer: http://www.homedepot.com/b/webapp/catalog/servlet/HomePageView?storeId=10051&catalogId=10053&langId=-1
+$Accept-Encoding: gzip,deflate,sdch
+!Accept-Language: en-US,en;q=0.8
+
+*Æ
+HTTP/1.1 200 OK
+TCache-Control: max-age=0, no-cache, no-store, private, must-revalidate, s-maxage=0
+'Content-Type: text/html;charset=UTF-8
+%Date: Fri, 10 Jan 2014 15:07:31 GMT
+'Expires: Fri Jan 10 15:07:31 UTC 2014
+?P3P: CP="NOI CURa ADMa DEVa TAIa OUR BUS IND UNI COM NAV INT"
+Pragma: no-cache
+Server: Apache-Coyote/1.1
+hSet-Cookie: C=-1673714321|1907146048; Domain=.tumri.net; Expires=Sat, 10-Jan-2015 15:07:31 GMT; Path=/
+OSet-Cookie: JSESSIONID=484925053251661057248AD134A6470A; Path=/ats/; HttpOnly
+Content-Length: 897
+Connection: keep-alive
+ƒ
+<html>
+<head/>
+
+<script type="text/javascript">
+
+
+        var jsonString = ["http://ats.tumri.net/ats/ats?cmd=RT&AdvertiserID=3288&platform=TUMRI&ActionID=249&ActionName=Homedepot_RT_Pixel&ut1=undefined&ut2=HomePage&ut3=undefined&cachebuster=1389366451859"];
+        var len = jsonString.length
+        var count = 0;
+
+        function loadNextUrl() {
+
+            if(count < len) {
+
+                var imgUrl = jsonString[count];
+                count++;
+                var img = new Image();
+                img.onload = loadNextUrl;
+                img.src = imgUrl;
+
+
+            }
+
+        }
+
+        loadNextUrl();
+
+    </script>
+
+      <noscript>
+
+        <img border="0" src="http://ats.tumri.net/ats/ats?cmd=RT&AdvertiserID=3288&platform=TUMRI&ActionID=249&ActionName=Homedepot_RT_Pixel&ut1=undefined&ut2=HomePage&ut3=undefined&cachebuster=1389366451859">
+    </noscript>
+
+      </html>

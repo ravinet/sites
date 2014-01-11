@@ -1,0 +1,32 @@
+»HTTPS204.236.232.142"¹
+¾GET /image?u=%2Fmedia%2Fimages%2F345664-las-vegas.jpg&ho=http%3A%2F%2Fwww8.pcmag.com&s=995&h=c49343ae1ccd7333865254f5e11ccb89796a355b6d4d62f8b2bc6b5009a43bd5&size=300x&c=133949623 HTTP/1.1
+Host: media.rbl.ms
+Connection: keep-alive
+Accept: image/webp,*/*;q=0.8
+vUser-Agent: Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/31.0.1650.63 Safari/537.36
+aReferer: https://www.rebelmouse.com/embed/elite/PCMagCES?referrer=http%3A%2F%2Fwww.pcmag.com%2F
+$Accept-Encoding: gzip,deflate,sdch
+!Accept-Language: en-US,en;q=0.8
+
+*×
+ HTTP/1.1 301 Moved Permanently
+Accept-Ranges: bytes
+Age: 1370
+cache-control: max-age=0
+Content-Type: text/html
+%Date: Thu, 09 Jan 2014 01:38:10 GMT
+gLocation: https://assets-auto.rbl.ms/c49343ae1ccd7333865254f5e11ccb89796a355b6d4d62f8b2bc6b5009a43bd5
+Server: ngx_openresty
+Via: 1.1 varnish
+X-Cache: HIT
+"X-Varnish: 3315957790 3315498266
+Content-Length: 178
+Connection: keep-alive
+´
+<html>
+<head><title>301 Moved Permanently</title></head>
+<body bgcolor="white">
+<center><h1>301 Moved Permanently</h1></center>
+<hr><center>nginx</center>
+</body>
+</html>

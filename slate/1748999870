@@ -1,0 +1,214 @@
+PHTTP
+18.7.20.69"é
+
+5GET /etc/designs/slate/js/announcements.js HTTP/1.1
+Host: www.slate.com
+Connection: keep-alive
+Accept: */*
+vUser-Agent: Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/31.0.1650.63 Safari/537.36
+ Referer: http://www.slate.com/
+$Accept-Encoding: gzip,deflate,sdch
+!Accept-Language: en-US,en;q=0.8
+ˆCookie: slate_poe=true; s_pers=%20s_visit%3D1%7C1389230240082%3B%20s_nr%3D1389228440083-New%7C1391820440083%3B%20s_lv%3D1389228440083%7C1483836440083%3B%20s_lv_s%3DFirst%2520Visit%7C1389230240083%3B%20s_vmonthnum%3D1391230800085%2526vn%253D1%7C1391230800085%3B%20s_monthinvisit%3Dtrue%7C1389230240085%3B; s_sess=%20s_cc%3Dtrue%3B%20s_dslv%3DFirst%2520Visit%3B%20s_wp_ep%3Dhomepage%3B%20s._ref%3DDirect-Load%3B%20s_sq%3D%3B; __vrf=1389228440097pzFEJuPvYTypDVLhrvHQ7UD7B7dU5oQG; optimizelySegments=%7B%22301791228%22%3A%22gc%22%2C%22301851147%22%3A%22direct%22%2C%22301880060%22%3A%22false%22%2C%22540560237%22%3A%22none%22%7D; optimizelyEndUserId=oeu1389228440138r0.7728833775036037; optimizelyBuckets=%7B%22389680006%22%3A%220%22%2C%22546320965%22%3A%220%22%2C%22549094815%22%3A%220%22%7D; optimizelyPendingLogEvents=%5B%5D; wapo_vis_id=840dbedc-ab2a-466e-ab01-bf9a30dcae9b; wapo_sess_id=3c140007-fd24-457d-aa2c-05961f6943d8; wapo_last_ip=128.30.76.55; wapo_saved_ip=128.30.76.55; s_vi=[CS]v1|2966F8C585011D85-4000010280058EE5[CE]
+
+*Í3
+HTTP/1.1 200 OK
+Accept-Ranges: bytes
+Accept-Ranges: bytes
+7Cache-Control: max-age=3600, private, must-revalidate
+Content-Type: text/javascript
+#ETag: "5a4aab-1818-4ef7e8994f100"
+(Expires: Thu, 09 Jan 2014 01:32:30 GMT
+.Last-Modified: Thu, 09 Jan 2014 00:17:40 GMT
+ Server: Apache/2.2.23 (Amazon)
+X-Varnish: 1670162099
+Content-Length: 6168
+%Date: Thu, 09 Jan 2014 00:47:08 GMT
+Connection: keep-alive
+š0
+define(['jquery','libs/jquery-plugins/jquery.cookie'], function($, unused) {
+  var mod = {
+    closeBanner: function(bannerName, cookieName) {
+      $.cookie(cookieName, 99,
+               { expires: 720, domain: 'slate.com', path: '/' });
+      $("#" + bannerName + "_announcement").slideUp();      
+    },
+    showBanner: function(bannerName, cookieName,
+                         announcementText, maxDisplay) {
+      var cookieVal = parseInt($.cookie(cookieName),10);
+      var showIt = false;
+      var closeFunctionName;
+      
+      if (isNaN(cookieVal)) {
+        showIt = true;
+        $.cookie(cookieName, 1,
+                 { expires: 720, domain: 'slate.com', path: '/' });
+      } else if (cookieVal < maxDisplay) {
+        showIt = true;
+        $.cookie(cookieName, (cookieVal+1),
+                 { expires: 720, domain: 'slate.com', path: '/' });
+      } else {
+        showIt = false;
+      }
+
+      if (showIt) {
+        $('<header id="'+bannerName+'_announcement" class="notification">'
+          + announcementText
+          + '<a href="javascript:void(0)" class="close">X</a>'
+          + '</header>').hide().prependTo('body').slideDown('slow');
+        closeFunctionName = "close" + bannerName[0].toUpperCase() + bannerName.substr(1) + "Banner";
+        $("#"+bannerName+"_announcement .close").click(mod[closeFunctionName]);
+
+      }
+
+      return showIt;
+    },
+    deleteOldCookies: function() {
+      var oldCookies = [
+        "betaIntro",
+        "overlayShown",
+        "redesignIntro",
+        "Origin_Type",
+        "persistTreatment"
+      ];
+      for (c in oldCookies) {
+        $.removeCookie(oldCookies[c], { domain: 'slate.com', path: '/' });
+      }
+    },
+    closeBetaBanner: function() {
+      mod.closeBanner("beta", "betaIntro");
+      return false;
+    },
+    showBetaBanner: function() {
+      var announcementText;
+
+      announcementText = 'We&rsquo;re redesigning <strong><em>Slate</em></strong>! '
+        + 'This is a preview of our new look. '
+        + '<a target="_blank" href="/articles/briefing/slate_fare/2013/08/slate_s_redesign_previewed_we_re_beta_testing_our_new_look.html">Learn more.</a>';
+
+      return mod.showBanner("beta", "betaIntro", announcementText, 4);
+    },
+    openOverlay: function(force) {
+      var cookieName = "overlayShown";
+      var alreadyShown = $.cookie(cookieName);
+      var showOverlay = false;
+      var overlayPath;
+
+      if (force != undefined ||
+          alreadyShown != "true" ||
+          window.location.search.indexOf("showDocent=t") != -1) {
+        showOverlay = true;
+      }
+      if (!showOverlay || mobileMode()) {
+        return false;
+      }
+
+      var overlayHTML;
+      var imageWidth, imageHeight;
+      var browserWidth = $('body').width();
+      var leftOffset, backgroundSize;
+      if (tabletMode()) {
+        if (Modernizr.mq('(orientation: portrait)')) {
+          overlayPath = 'http://www.slate.com/features/docent/SlateHP-tablet-portrait.jpg';
+        } else {
+          overlayPath = 'http://www.slate.com/features/docent/SlateHP-tablet-landscape.jpg';
+        }
+        leftOffset = "0";
+        backgroundSize = "background-size: 100%;";
+
+      } else {
+        overlayPath = 'http://www.slate.com/features/docent/SlateHP-desktop.jpg';
+        imageWidth = 1440;
+        if (browserWidth < imageWidth) {
+          leftOffset = (imageWidth - browserWidth)/2;
+          leftOffset = "-" + leftOffset + "px";
+        } else {
+          leftOffset = "0";
+        }
+        if ($('body').width() > 1440) {
+          backgroundSize = "background-size: 100% 100%;";
+        } else {
+          backgroundSize = "";
+        }
+            
+      }
+
+      overlayHTML = '<style type="text/css">#redesign_overlay {'
+        + 'position:absolute;top:0;left:0;'
+        + 'width:100%;height:100%;z-index:9999;'
+        + 'background-position:'+leftOffset+' 0;'
+        + backgroundSize
+        + 'background-image:url("'+overlayPath+'")}</style> '
+        + '<div id="redesign_overlay"></div>';
+      $('body').prepend(overlayHTML);
+
+      $('#redesign_overlay').click(function() {
+        $("#redesign_overlay").hide();
+        return false;
+      });
+
+      $.cookie(cookieName, "true",
+               { expires: 3650, domain: 'slate.com', path: '/' });
+      return true;
+    },
+    closeOverlay: function() {
+      console.log('closing overlay');
+    },
+    isHomePage: function() {
+      var requestPath = window.location.pathname;
+      var debug = false;
+      var isHP = false;
+
+      if (window.location.search.indexOf("showDocent=t") != -1) {
+        debug = true;
+      }
+
+      if (debug || requestPath == "/" ||
+          requestPath == "/index.html" ||
+          requestPath == "/content/slate/index.html") {
+        isHP = true;
+      }
+      return isHP;
+    },
+    showRedesignBanner: function() {
+      var announcementText;
+      var showOverlay = false;
+      var result;
+      var articleLink = '/articles/briefing/slate_fare/2013/09/slate_s_redesign_what_we_changed_and_why.html';
+
+      showOverlay = mod.isHomePage() && !mobileMode();
+
+      if (showOverlay) {
+        announcementText = 'Welcome to <strong><em>Slate</em></strong>\'s redesigned site! '
+          + '<a href="#" class="redesign_tour">Take a quick tour</a>. '
+          + '<a target="_blank" href="'+articleLink+'">Learn more and send your feedback</a>.';
+      } else {
+        announcementText = 'Welcome to <strong><em>Slate</em></strong>\'s redesigned site! '
+          + '<a target="_blank" href="'+articleLink+'">Learn more and send your feedback</a>.';
+      }
+
+      if (mobileMode()) {
+        announcementText = announcementText.replace('! ', '<br>');
+      }
+
+      result = mod.showBanner("redesign", "redesignIntro", announcementText, 20);
+
+      if (showOverlay) {
+        $("#redesign_announcement .redesign_tour").click(function() {
+          mod.openOverlay("t");
+          return false;
+        });
+      }
+
+      return result ;
+    },
+    closeRedesignBanner: function() {
+      mod.closeBanner("redesign", "redesignIntro");
+      return false;
+    },
+    showRedesignIntro: function() {
+      mod.showRedesignBanner();
+    }
+  };
+  return mod;
+});

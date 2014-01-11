@@ -1,0 +1,52 @@
+PHTTP
+18.7.20.69"‰
+8GET /uberblog/includes/js/eol-blog/limiter.js HTTP/1.1
+Host: www.eonline.com
+Connection: keep-alive
+Accept: */*
+vUser-Agent: Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/31.0.1650.63 Safari/537.36
+"Referer: http://www.eonline.com/
+$Accept-Encoding: gzip,deflate,sdch
+!Accept-Language: en-US,en;q=0.8
+"Cookie: edition=us; adEdition=us
+
+*¿	
+HTTP/1.1 200 OK
+RServer: Apache/2.2.3 (CentOS) mod_jk/1.2.32 PHP/5.1.6 mod_perl/2.0.4 Perl/v5.8.8
+tX-Powered-By: Servlet 2.4; JBoss-4.3.0.GA_CP04 (build: SVNTag=JBPAPP_4_3_0_GA_CP04 date=200902200048)/JBossWeb-2.0
+ETag: W/"717-1388703520000"
+.Last-Modified: Thu, 02 Jan 2014 22:58:40 GMT
+Content-Length: 717
+Content-Type: text/javascript
+Cache-Control: max-age=600
+(Expires: Thu, 09 Jan 2014 01:02:41 GMT
+%Date: Thu, 09 Jan 2014 00:52:41 GMT
+Connection: keep-alive
+Ï
+function keyHolder(textAreaId) {
+	if ($F(textAreaId).length >= 1000)
+		return false;
+}
+
+function cutMsg(textAreaId, charsLeftId) {
+	enteredText = $(textAreaId).value;
+	$(charsLeftId).update((1000 - enteredText.length > 0 ? 1000 - enteredText.length : 0));
+	if (enteredText.length > 1000)
+	{
+		$(textAreaId).value = enteredText.substr(0, 1000);
+		return false;
+	}
+}
+
+
+function disableAnchor(id) {
+	if (!($(id).value.length > 0))
+		return false;
+}
+
+function submitFormLoader() {
+	// update the submit button styles and disable it to prevent any more clicks
+	$('submit_animator').style.visibility='visible';
+	$('overlay_submit_button').className ='button_send_deactive';
+	$('overlay_submit_button').disabled = 'true';
+}

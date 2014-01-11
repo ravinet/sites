@@ -1,0 +1,30 @@
+PHTTP157.166.249.204"É
+GET /crossdomain.xml HTTP/1.1
+Host: aspen.turner.com
+Connection: keep-alive
+vUser-Agent: Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/31.0.1650.63 Safari/537.36
+Accept: */*
+Referer: http://www.cnn.com/
+$Accept-Encoding: gzip,deflate,sdch
+!Accept-Language: en-US,en;q=0.8
+
+*æ
+HTTP/1.1 200 OK
+%Date: Thu, 09 Jan 2014 00:19:05 GMT
+Server: Apache
+.Last-Modified: Wed, 04 Dec 2013 20:50:58 GMT
+"ETag: "14059e-108-4ecbb91eb5080"
+Accept-Ranges: bytes
+Content-Length: 264
+ Access-Control-Allow-Origin: *
+0Access-Control-Allow-Methods: GET,POST,OPTIONS
+Connection: close
+Content-Type: application/xml
+Š
+<?xml version="1.0"?>
+<!DOCTYPE cross-domain-policy
+  SYSTEM "http://www.macromedia.com/xml/dtds/cross-domain-policy.dtd"> 
+<cross-domain-policy>
+  <allow-access-from domain="*"/>
+  <allow-http-request-headers-from domain="*" headers="*" />
+</cross-domain-policy>

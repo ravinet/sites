@@ -1,0 +1,26 @@
+PHTTP54.225.207.102"À
+ÝGET /event?a=261889587&d=261889587&y=false&s270807228=gc&s270814290=none&s270816165=false&s270818148=direct&n=http%3A%2F%2Fbleacherreport.com%2F&u=oeu1389227817232r0.076963827945292&wxhr=true&t=1389227817235&f= HTTP/1.1
+$Host: 261889587.log.optimizely.com
+Connection: keep-alive
+vUser-Agent: Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/31.0.1650.63 Safari/537.36
+#Origin: http://bleacherreport.com
+Accept: */*
+%Referer: http://bleacherreport.com/
+$Accept-Encoding: gzip,deflate,sdch
+!Accept-Language: en-US,en;q=0.8
+
+*þ
+HTTP/1.1 200 OK
+(Access-Control-Allow-Credentials: true
+)Access-Control-Allow-Methods: POST, GET
+8Access-Control-Allow-Origin: http://bleacherreport.com
+ Content-Type: application/json
+%Date: Thu, 09 Jan 2014 00:36:44 GMT
+9P3P: CP="IDC DSP COR CURa ADMa OUR IND PHY ONL COM STA"
+Server: nginx/1.2.7
+~Set-Cookie: fixed_external_261889587_end_user_id=; Domain=.optimizely.com; expires=Thu, 01 Jan 1970 00:00:00 GMT; Max-Age=-1
+‰Set-Cookie: end_user_id=oeu1389227817232r0.076963827945292; Domain=.261889587.log.optimizely.com; expires=Sun, 07 Jan 2024 00:36:44 GMT
+Content-Length: 2
+Connection: keep-alive
+
+{}

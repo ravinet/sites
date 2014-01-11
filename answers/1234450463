@@ -1,0 +1,24 @@
+PHTTP66.220.152.19"å
+$GET /promisemedia/picture HTTP/1.1
+Host: graph.facebook.com
+Connection: keep-alive
+Accept: image/webp,*/*;q=0.8
+vUser-Agent: Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/31.0.1650.63 Safari/537.36
+"Referer: http://www.answers.com/
+$Accept-Encoding: gzip,deflate,sdch
+!Accept-Language: en-US,en;q=0.8
+
+*à
+HTTP/1.1 302 forced.302
+ Access-Control-Allow-Origin: *
+=Cache-Control: private, no-cache, no-store, must-revalidate
+Content-Type: image/jpeg
+(Expires: Sat, 01 Jan 2000 00:00:00 GMT
+]Location: http://profile.ak.fbcdn.net/hprofile-ak-ash1/275590_100001405400186_4301473_q.jpg
+Pragma: no-cache
+X-FB-Rev: 1073774
+:X-FB-Debug: T1PuHE+dBRKps0UOrr/h6IVlji8TTuOICjIMYcLT2H0=
+%Date: Thu, 09 Jan 2014 00:38:47 GMT
+Connection: keep-alive
+Content-Length: 0
+

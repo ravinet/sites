@@ -1,0 +1,23 @@
+PHTTP
+18.7.20.70"’
+ÎGET /b?c1=2&c2=6034961&rn=0.5570336813107133&c7=http%3A%2F%2Fwww.imdb.com%2F&c3=&c4=http%3A%2F%2Fwww.imdb.com%2F&c5=&c6=&c10=&c15=&c16=&c8=IMDb%20-%20Movies%2C%20TV%20and%20Celebrities&c9=&cv=1.7 HTTP/1.1
+Host: b.scorecardresearch.com
+Connection: keep-alive
+Accept: image/webp,*/*;q=0.8
+vUser-Agent: Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/31.0.1650.63 Safari/537.36
+Referer: http://www.imdb.com/
+$Accept-Encoding: gzip,deflate,sdch
+!Accept-Language: en-US,en;q=0.8
+
+*è
+ HTTP/1.1 302 Moved Temporarily
+Content-Length: 0
+êLocation: http://b.scorecardresearch.com/b2?c1=2&c2=6034961&rn=0.5570336813107133&c7=http%3A%2F%2Fwww.imdb.com%2F&c3=&c4=http%3A%2F%2Fwww.imdb.com%2F&c5=&c6=&c10=&c15=&c16=&c8=IMDb%20-%20Movies%2C%20TV%20and%20Celebrities&c9=&cv=1.7
+%Date: Thu, 09 Jan 2014 00:21:20 GMT
+Connection: keep-alive
+}Set-Cookie: UID=98176e5-18.7.20.70-1389226880; expires=Wed, 30-Dec-2015 00:21:20 GMT; path=/; domain=.scorecardresearch.com
+kSet-Cookie: UIDR=1389226880; expires=Wed, 30-Dec-2015 00:21:20 GMT; path=/; domain=.scorecardresearch.com
+Pragma: no-cache
+(Expires: Mon, 01 Jan 1990 00:00:00 GMT
+SCache-Control: private, no-cache, no-cache=Set-Cookie, no-store, proxy-revalidate
+

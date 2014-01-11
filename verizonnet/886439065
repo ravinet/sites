@@ -1,0 +1,49 @@
+PHTTP23.44.122.120"®
+MGET /home/commongh?ProcessClass=all&a=3&nocache=0.7924923575483263 HTTP/1.1
+Host: www.verizon.com
+Connection: keep-alive
+Accept: */*
+vUser-Agent: Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/31.0.1650.63 Safari/537.36
+,Referer: http://entertainment.verizon.com/
+$Accept-Encoding: gzip,deflate,sdch
+!Accept-Language: en-US,en;q=0.8
+§Cookie: session=dedbc878d9a5e403b33e6cfb17ee3c4ce1602951-1389291659; AkaUTrackingID=ED9E74DB6C6A85739B059B0E3CDD66B7; AkaSTrackingID=0ED0E8BF0EBE5531153FA26810C834DF
+
+*ª
+HTTP/1.1 200 OK
+'Server: Oracle-iPlanet-Web-Server/7.0
+Content-Length: 1116
+#X-Powered-By: Servlet/2.5 JSP/2.1
+(Expires: Thu, 09 Jan 2014 18:21:00 GMT
+.Cache-Control: max-age=0, no-cache, no-store
+%Date: Thu, 09 Jan 2014 18:21:00 GMT
+Connection: keep-alive
+qSet-Cookie: ONECMS_JSESSIONID=w6tpSTyMW2GqC2nL88yt7l8pnZb2ymhn2gGBHp2WzvJpJhJrSKLc!-853871652; path=/; HttpOnly
+]Set-Cookie: NSC_xxx22_ipnf_mcw=ffffffff8f6412b245525d5f4f58455e445a4a423660;path=/;httponly
+aSet-Cookie: ak-sf=false; expires=Thu, 09-Jan-2014 18:26:00 GMT; path=/home/; domain=verizon.com
+Þ
+rewriteHTML('scbsmbzipcont','<a class="scbsmbtoprt" onclick="scbResLQ();" name="&lid=//res//enter_your_location" href="javascript:void(0);" onfocus="scbToggleSignInOff();"><span id="scbsmbloclinktext">Enter Your Location</span></a>');
+rewriteHTML('scbusername2012',unescape('Welcome '));
+rewriteHTML('scbcartpp2012','');
+
+scbAcct= "";
+scbAdm= "N";
+scbEUPAdm= "";
+scbUP= "";
+if(scbUP==''||scbUP.length<7){scbUP='UUUUUUU';}
+scbUP1=scbUP.charAt(0);scbUP2=scbUP.charAt(1);scbUP3=scbUP.charAt(2);scbUP4=scbUP.charAt(3);scbUP5=scbUP.charAt(4);scbUP6=scbUP.charAt(5);scbUP7=scbUP.charAt(6);
+
+if(typeof(scbUpdate2012Links)=='function'){
+	scbUpdate2012Links();
+}
+
+scbServiceHeaderMessage='';
+scbServiceCTA='';
+scbShopHeaderMessage='';
+scbShopCTA='';
+
+if(scbServiceHeaderMessage!=''){rewriteHTML('scbservicectaheader2012',scbServiceHeaderMessage);}
+if(scbServiceCTA!=''){rewriteHTML('scbservicectabutton2012',scbServiceCTA);}
+if(scbShopHeaderMessage!=''){rewriteHTML('scbshopctaheader2012',scbShopHeaderMessage);}
+if(scbShopCTA!=''){rewriteHTML('scbshopctabutton2012',scbShopCTA);}
+phOverlayHt='550px';

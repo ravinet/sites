@@ -1,0 +1,29 @@
+PHTTP23.75.81.207"à
+GET /cg/v5us/?fv=dmn%3Dunited.com%3Bref%3D%3Burl%3Dhttp%253A%252F%252Fwww.united.com%252Fweb%252Fen-US%252Fdefault.aspx%253Froot%253D1%3Bscrw%3D1920%3Bscrh%3D1200%3Bclrd%3D24%3Bcok%3D1%3B&tst=0.862&jsver=5.14&mmid=1804766713%7CAQAAAApgLMFCBQoAAA%3D%3D&pd=-797550137%7CAQAAAAoBQmAswUIFCvaJtO4BAGN9Anzt2tBIAAwAAABjfQJ87drQSAAAAAD%2F%2F%2F%2F%2FAP%2F%2F%2F%2F%2F%2F%2F%2F%2F%2FAAZEaXJlY3QBBQoBAAAAAAABAAAAAAB5GgAA%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F8AAAAAAAFF&srv=cg7.use&mm_session=%7B%7D&mm_sopen=1&pageid=mmevents&ri=2&rul= HTTP/1.1
+Host: service.maxymiser.net
+Connection: keep-alive
+Accept: */*
+vUser-Agent: Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/31.0.1650.63 Safari/537.36
+>Referer: http://www.united.com/web/en-US/default.aspx?root=1
+$Accept-Encoding: gzip,deflate,sdch
+!Accept-Language: en-US,en;q=0.8
+
+*«
+HTTP/1.1 200 OK
+Server: nginx
+.Content-Type: text/javascript; charset=utf-8
+Content-Length: 629
+NCache-Control: no-store, no-cache, must-revalidate,post-check=0, pre-check=0
+Pragma: no-cache
+(Expires: Sun, 06 Jan 1980 01:00:00 GMT
+$Last-Modified: 01/09/2014 01:01:38
+'P3P: CP="DEV IND NOI OTC OUR PSA PSD"
+X-Node: cg7.use
+X-Node: node2.use
+%Date: Thu, 09 Jan 2014 01:01:38 GMT
+Connection: keep-alive
+÷
+mmcore.SetCookie('mmid','-1164398812|AgAAAApgLMFCBQoAAA==',365,1);mmcore.SetCookie('pd','531978334|AgAAAAoBQmAswUIFCvaJtO4BAFsGDHzt2tBIAAwAAABjfQJ87drQSAAAAAD/////AP//////////AAZEaXJlY3QBBQoBAAAAAAABAAAAAAB5GgAA//////////8AAAAAAAFF',365);mmcore.SetCookie('srv','cg7.use',365);(function(){if(typeof(mmcore.GenInfo)!='object')mmcore.GenInfo={};mmcore.EH=function(e){var s=e.message+'\r\n';if(!window.mm_error)window.mm_error=s;else window.mm_error+=s;};
+if(typeof mmcore._callback=='object'&&typeof mmcore._callback[2]=='function'){try{mmcore._callback[2]();}catch(err){mmcore.EH(err);}
+finally{mmcore._callback[2]=null;}}
+})();

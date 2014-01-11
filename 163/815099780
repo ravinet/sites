@@ -1,0 +1,29 @@
+PHTTP180.153.97.13"•
+nGET /s?showid=8rcwsG&type=1&of=1&ref=http:%2F%2Fwww.163.com%2F&uid=13892305427297719022008286432935 HTTP/1.1
+Host: show.g.mediav.com
+Connection: keep-alive
+Accept: */*
+vUser-Agent: Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/31.0.1650.63 Safari/537.36
+hReferer: http://g.163.com/r?site=netease&affiliate=homepage&cat=homepage&type=column960x130&location=1
+$Accept-Encoding: gzip,deflate,sdch
+!Accept-Language: en-US,en;q=0.8
+0Cookie: ckmts=UrPPlLet; v=coAgFLzA`MB=0cHmSZAZ
+
+*Ñ
+HTTP/1.1 200 OK
+Server: MWS/0.8.54
+%Date: Thu, 09 Jan 2014 01:22:12 GMT
+Content-Type: text/html
+Content-Length: 541
+Connection: keep-alive
+^Set-Cookie: hideme=1; expires=Thursday, 09-Jan-2014 01:22:12 GMT; path=/; domain=.mediav.com
+Connection: Close
+Pragma: no-cache
+\P3P: CP="CURa ADMa DEVa PSAo PSDo OUR BUS UNI PUR INT DEM STA PRE COM NAV OTC NOI DSP COR"
+*Cache-Control: no-cache, must-revalidate
+Ÿ
+mvas_10854819=1023635;mv_acquire=1;mv_bid=10854819;
+mvcu_10854819='http://show.g.mediav.com/c?type=2&oimpid=sAbgQusQVR3-&pub=111756_513878_1023635&cus=25529_147594_1180923_10854819_0&fee=a6UUUUZUUUJR&pinfo=&ref=http%3A%2F%2Fwww.163.com%2F&url=http://click.union.jd.com/JdClick/?unionId=42054&siteId={source_id}&to=http%3A%2F%2Fred.jd.com%2F';
+mvctype_10854819=1;
+
+eval('mediav_fini'+mvas_10854819+'=1');mediav.makeImage("http://material.mediav.com/galileo/20140103/40db2f49207b85f6f27f89fce8f73773.jpg", mvcu_10854819, 960, 130, "10854819");

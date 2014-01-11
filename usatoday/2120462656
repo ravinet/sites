@@ -1,0 +1,29 @@
+PHTTP54.236.122.167"õ
+ŠGET /firstevent?d_nsid=0&d_ld=_ts%3D1389227672889&d_rtbd=json&d_jsonv=1&d_dst=1&d_cts=1&d_cb=demdexRequestCallback1389227672889 HTTP/1.1
+Host: gannett.demdex.net
+Connection: keep-alive
+Accept: */*
+vUser-Agent: Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/31.0.1650.63 Safari/537.36
+#Referer: http://www.usatoday.com/
+$Accept-Encoding: gzip,deflate,sdch
+!Accept-Language: en-US,en;q=0.8
+7Cookie: demdex=46925139993700108541005898521533772702
+
+*¼
+HTTP/1.1 200 OK
+bCache-Control: no-cache,no-store,must-revalidate,max-age=0,proxy-revalidate,no-transform,private
+4Content-Type: application/javascript;charset=UTF-8
+4DCS: va6-dcsAS1-10-89-2-244.va6.demdex.com 1.15.34
+(Expires: Thu, 01 Jan 2009 00:00:00 GMT
+cP3P: policyref="/w3c/p3p.xml", CP="NOI NID CURa ADMa DEVa PSAa PSDa OUR SAMa BUS PUR COM NAV INT"
+Pragma: no-cache
+ Server: Jetty(7.6.8.v20121106)
+„Set-Cookie: gannett=46925139993700108541005898521533772702;Path=/;Domain=.gannett.demdex.net;Expires=Sat, 09-Jan-2016 00:34:20 GMT
+ÓSet-Cookie: DexLifeCycle="MA==|MzIxMzUzPTE6MTgzNCwyMzI5NTQ9MToxODM0LDY3OTkzNT0xOjE4MzQsNTEzMTQ0PTE6MTgzNA==|MA==|MjAzMTU=|MA==|MA==|MA==";Path=/;Domain=.gannett.demdex.net;Expires=Sat, 09-Jan-2016 00:34:20 GMT
+sSet-Cookie: dextp=3-1-1389227660|771-1-1389227660;Path=/;Domain=.demdex.net;Expires=Sat, 09-Jan-2016 00:34:20 GMT
+RSet-Cookie: DST=;Path=/;Domain=.demdex.net;Expires=Sat, 09-Jan-2016 00:34:20 GMT
+	STS: OK
+Content-Length: 429
+Connection: keep-alive
+¯
+demdexRequestCallback1389227672889({"dests":[],"stuff":[{"cn":"aamusat","cv":"aam=100","ttl":30,"dmn":""}],"ibs":[{"id":"3","ttl":30240,"tag":"img","url":["//loadm.exelator.com/load/?p=204&g=091&j=0&bi=46925139993700108541005898521533772702"]},{"id":"771","ttl":20160,"tag":"img","url":["//cm.g.doubleclick.net/pixel?google_nid=adobe_dmp&google_cm"]}],"dpcalls":[],"uuid":"46925139993700108541005898521533772702","dcs_region":9})

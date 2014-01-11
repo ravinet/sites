@@ -1,0 +1,26 @@
+PHTTP161.150.139.129"Ü
+GET / HTTP/1.1
+Host: www.pnc.com
+Connection: keep-alive
+TAccept: text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8
+vUser-Agent: Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/31.0.1650.63 Safari/537.36
+$Accept-Encoding: gzip,deflate,sdch
+!Accept-Language: en-US,en;q=0.8
+
+*ø
+HTTP/1.1 302 Found
+%Date: Thu, 09 Jan 2014 21:24:43 GMT
+RLocation: https://www.pnc.com/webapp/unsec/Gateway.do?siteArea=/pnccorp/PNC/Home
+Content-Length: 254
+!Keep-Alive: timeout=60, max=266
+Connection: Keep-Alive
+-Content-Type: text/html; charset=iso-8859-1
+_Set-Cookie: NSC_q*epuew-w0-mc*80=ffffffff098b5a0345525d5f4f58455e445a4a4229f1;path=/;httponly
+€
+<!DOCTYPE HTML PUBLIC "-//IETF//DTD HTML 2.0//EN">
+<html><head>
+<title>302 Found</title>
+</head><body>
+<h1>Found</h1>
+<p>The document has moved <a href="https://www.pnc.com/webapp/unsec/Gateway.do?siteArea=/pnccorp/PNC/Home">here</a>.</p>
+</body></html>

@@ -1,0 +1,23 @@
+PHTTP170.149.168.130"Ë
+mGET /svc/recommendations/v3/personalized.json?access_key=71DA1628-4BDA-436F-9E36-13ED89326228&hp=1 HTTP/1.1
+Host: www.nytimes.com
+Connection: keep-alive
+DAccept: text/javascript, text/html, application/xml, text/xml, */*
+X-Prototype-Version: 1.7
+"X-Requested-With: XMLHttpRequest
+vUser-Agent: Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/31.0.1650.63 Safari/537.36
+"Referer: http://www.nytimes.com/
+$Accept-Encoding: gzip,deflate,sdch
+!Accept-Language: en-US,en;q=0.8
+8Cookie: RMID=007f01001c2352cdec08002e; adxcs=-; nyt-m=
+
+*ð
+HTTP/1.1 200 OK
+Server: nginx/1.4.1
+%Date: Thu, 09 Jan 2014 00:23:37 GMT
+/Content-Type: application/json; charset=UTF-8
+Content-Length: 156
+Connection: keep-alive
+X-Powered-By: PHP/5.3.21
+ž
+{"num_articles":0,"using_rmid_suggestions":true,"suggestions":null,"uid":null,"rmid":"007f01001c2352cdec08002e","user_pic_url":null,"user_displayname":null}

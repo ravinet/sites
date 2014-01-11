@@ -1,0 +1,78 @@
+PHTTP54.230.53.164"é
+.GET /scripts/client/64/bannerBBB.js HTTP/1.1
+Host: edge.liveclicker.net
+Connection: keep-alive
+Accept: */*
+vUser-Agent: Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/31.0.1650.63 Safari/537.36
++Referer: http://www.bedbathandbeyond.com/
+$Accept-Encoding: gzip,deflate,sdch
+!Accept-Language: en-US,en;q=0.8
+
+*¡
+HTTP/1.1 200 OK
+Content-Type: text/x-c
+Content-Length: 3451
+Connection: keep-alive
+%Date: Tue, 20 Aug 2013 04:39:14 GMT
+!x-amz-meta-s3fox-filesize: 3451
+.x-amz-meta-s3fox-modifiedtime: 1330630950673
+.Last-Modified: Thu, 01 Mar 2012 19:43:52 GMT
+*ETag: "e8823174789e713ec5fbc7d12eb70c1a"
+Accept-Ranges: bytes
+Server: AmazonS3
+Age: 73458
+X-Cache: Hit from cloudfront
+GVia: 1.1 415cd8a2a93f09d277a7045267557d8f.cloudfront.net (CloudFront)
+GX-Amz-Cf-Id: VNwSH0FnvaK5h5uvYp0QJ5Kzv-Ece9fX42Va0NC2pValj6fS_vFNSg==
+ý
+function lcCreateBanner(lcwidgetlist_div, sku) {
+
+
+			lc.account_id = 64;
+
+			lc({'dim6': sku , 'extra_options' : {'include_description' :'true'}}).isReady(function(){
+				var listLength = (lc(this).length>3)?2:lc(this).length;
+				var listOfWidgets = lc(this);
+				if (listLength > 0) {
+                                    var lcplaylist = $('<div class="lcplaylist"/>');
+                                    for (var i =0;i<listLength ; i++){
+					var widget = listOfWidgets.getByIndex(i);
+					var lcthumbnail = widget.thumbnail_normalized != undefined ? widget.thumbnail_normalized : listOfWidgets.getByIndex(i).thumbnail.src;
+                                        var lcwidget_id = widget.widget_id;
+                                        var lctitle = widget.title;
+                                        var lcinformation = widget.description;
+                                        var lcelement = $('<div class="widgetblock clickableblock " id="lc'+lcwidget_id+'" widget_id="'+lcwidget_id+'">\n\
+                                                                        <div class="thumbnailcontainer">\n\
+                                                                            <div class="lcplaybtn"></div>\n\
+                                                                            <img class="thumbnail" imgloaded="0" src="'+lcthumbnail+'">\n\
+                                                                        </div>\n\
+                                                                        <div class="videoinformation">\n\
+                                                                            <a href="javascript:void(0);" class="widgetlink">'+lctitle+'</a>\n\
+                                                                            <div class="videometa">'+lcinformation+'</div>\n\
+                                                                            <div style="clear:both;"></div>\n\
+                                                                        </div>\n\
+                                                            </div>');
+                                        lcplaylist.append(lcelement);
+                                        lcelement.click(function(){
+                                          var banner = new lcBanner({'banner_id': 501},[$(this).attr("widget_id")]);
+                                          var spanId = "lcs"+Math.floor(Math.random()*100000);
+                                          jQuery("body").append("<span id=\""+spanId+"\" style=\"display:none;\"></span>");
+                                          banner.appendBannerTo({'id' : spanId});
+                                          jQuery(this).click(function() {
+                                             var link = jQuery('a:first','#'+spanId);
+                                             if($("#LCTB_title") != null){
+                                                $("#LCTB_title").remove();
+                                             }
+                                             link.click();
+
+                                          });
+                                        });
+                                        lcelement.click();
+                                    }
+                                    lcelement.click();
+                                    $("#"+lcwidgetlist_div).append(lcplaylist);
+				}
+			});
+		
+}
+

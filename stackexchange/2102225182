@@ -1,0 +1,20 @@
+PHTTP198.252.206.25"ž
+GET / HTTP/1.1
+Upgrade: websocket
+Connection: Upgrade
+$Host: sockets.ny.stackexchange.com
+"Origin: http://stackexchange.com
+Pragma: no-cache
+Cache-Control: no-cache
+-Sec-WebSocket-Key: EqlXAFNWH3WLi2aPxrMq5w==
+Sec-WebSocket-Version: 13
+2Sec-WebSocket-Extensions: x-webkit-deflate-frame
+vUser-Agent: Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/31.0.1650.63 Safari/537.36
+çCookie: __qca=P0-69567151-1389228549784; __utma=27693923.957172962.1389228550.1389228550.1389228550.1; __utmb=27693923.1.10.1389228550; __utmc=27693923; __utmz=27693923.1389228550.1.1.utmcsr=(direct)|utmccn=(direct)|utmcmd=(none)
+
+*‹
+"HTTP/1.1 101 Switching Protocols
+Upgrade: websocket
+Connection: Upgrade
+4Sec-WebSocket-Accept: wtBOWviqpMS19REQuY89MlVTAYo=
+

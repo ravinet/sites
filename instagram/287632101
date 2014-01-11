@@ -1,0 +1,84 @@
+PHTTP54.230.52.67"ë
+2GET /bluebar/31e59dc/scripts/bluebar.js HTTP/1.1
+%Host: d36xtkk24g8jdx.cloudfront.net
+Connection: keep-alive
+Accept: */*
+vUser-Agent: Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/31.0.1650.63 Safari/537.36
+ Referer: http://instagram.com/
+$Accept-Encoding: gzip,deflate,sdch
+!Accept-Language: en-US,en;q=0.8
+
+*¿
+HTTP/1.1 200 OK
+&Content-Type: application/javascript
+Content-Length: 1971
+Connection: keep-alive
+%Date: Mon, 06 Jan 2014 21:41:33 GMT
+(Expires: Sun, 17-Jan-2038 19:14:07 GMT
+.Last-Modified: Mon, 06 Jan 2014 20:16:39 GMT
+*ETag: "31e77c74f04922911d63299d7d582927"
+Accept-Ranges: bytes
+Server: AmazonS3
+Age: 182313
+X-Cache: Hit from cloudfront
+GVia: 1.1 787ade4cc63a9175d250ad43d0d3ee3b.cloudfront.net (CloudFront)
+GX-Amz-Cf-Id: vqGnn0QteimE6TFO9ROaYhPB-TGIkuyNarieMqtzcBKPMdcEceaXsA==
+µ
+//  CSRF AJAX
+
+window.location.hash = '';
+
+jQuery(document).ajaxSend(function(event, xhr, settings) {
+    function sameOrigin(url) {
+        // url could be relative or scheme relative or absolute
+        var host = document.location.host; // host + port
+        var protocol = document.location.protocol;
+        var sr_origin = '//' + host;
+        var origin = protocol + sr_origin;
+        // Allow absolute or scheme relative URLs to same origin
+        return (url == origin || url.slice(0, origin.length + 1) == origin + '/') ||
+            (url == sr_origin || url.slice(0, sr_origin.length + 1) == sr_origin + '/') ||
+            // or any other URL that isn't scheme relative or absolute i.e relative.
+            !(/^(\/\/|http:|https:).*/.test(url));
+    }
+    function safeMethod(method) {
+        return (/^(GET|HEAD|OPTIONS|TRACE)$/.test(method));
+    }
+    if (!safeMethod(settings.type) && sameOrigin(settings.url)) {
+        var token = window._sharedData
+          ? window._sharedData.config.csrf_token
+          : window._csrf_token;
+        xhr.setRequestHeader("X-CSRFToken", token);
+    }
+});
+
+$.ajaxSetup({cache: true});
+
+//  Image Fallback
+
+function imageFallback(el) {
+    var fallbackURL = "//instagram-static.s3.amazonaws.com/bluebar/images/default-avatar.png";
+
+    if(el.parentNode.className.indexOf("img-") > -1 && el.parentNode.tagName.toLowerCase() == 'span')
+    {
+        el.parentNode.setAttribute("style", el.parentNode.getAttribute("style").split(el.src).join(fallbackURL));
+        el.src = fallbackURL;
+    }
+}
+
+function openDropdown(e) {
+    $(e.target)
+        .parents('.has-dropdown')
+        .toggleClass("dropdown-open")
+        .children('a').toggleClass("link-active");
+}
+
+$(document).ready(function() {
+    $(".has-dropdown > a").live('click', openDropdown);
+    var $html = $('html');
+    if ($.browser.msie) {
+        $html.addClass('msie');
+    } else if ($.browser.opera) {
+        $html.addClass('opera');
+    }
+});

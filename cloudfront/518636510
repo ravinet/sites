@@ -1,0 +1,152 @@
+PHTTP176.32.100.36"‰
+CGET /cloudfront/pricing/pricing-cloudfront-requests.json HTTP/1.1
+Host: aws.amazon.com
+Connection: keep-alive
+8Accept: application/json, text/javascript, */*; q=0.01
+"X-Requested-With: XMLHttpRequest
+vUser-Agent: Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/31.0.1650.63 Safari/537.36
+,Referer: http://aws.amazon.com/cloudfront/
+$Accept-Encoding: gzip,deflate,sdch
+!Accept-Language: en-US,en;q=0.8
+¾Cookie: x-wl-uid=1rJX21O2M8ShS7v+jXpD1SnsatfsJvOhycm9IyFb3OYaj2Rqt0PUrV2OEp6Zyv8UnZ6ibtZANqtY=; aws-ubid-main=178-2787844-0594645; aws-session-id-time=2082758401l; aws-session-id=175-2966859-6786824; __utma=194891197.1175320886.1389302326.1389302326.1389302326.1; __utmb=194891197; __utmc=194891197; __utmz=194891197.1389302326.1.1.utmccn=(direct)|utmcsr=(direct)|utmcmd=(none); pN=0; s_pers=%20s_vnum%3D1391894325563%2526vn%253D1%7C1391894325563%3B%20s_invisit%3Dtrue%7C1389304125563%3B%20s_nr%3D1389302325565-New%7C1397078325565%3B; s_sess=%20s_cc%3Dtrue%3B%20s_sq%3D%3B
+
+*®
+HTTP/1.1 200 OK
+%Date: Thu, 09 Jan 2014 21:18:32 GMT
+Server: Server
+"x-amz-id-1: 182CGNM1HGKPTF9JYKZD
+Fx-amz-id-2: V9o/zdhl8kZOsJNUpnvm7adJAhNYYRd2bD5pIXJn2B8ND37ria6sLw==
+X-Frame-Options: SAMEORIGIN
+Cache-Control: max-age=0
+(Expires: Thu, 09 Jan 2014 21:18:32 GMT
+(Content-Type: text/html; charset=UTF-8
+rSet-cookie: aws-ubid-main=178-2787844-0594645; path=/; domain=.amazon.com; expires=Tue, 01-Jan-2036 00:00:01 GMT
+pSet-cookie: aws-session-id-time=2082758401l; path=/; domain=.amazon.com; expires=Tue, 01-Jan-2036 00:00:01 GMT
+sSet-cookie: aws-session-id=175-2966859-6786824; path=/; domain=.amazon.com; expires=Tue, 01-Jan-2036 00:00:01 GMT
+Vary: User-Agent
+Transfer-Encoding: chunked
+×
+cc9
+
+
+  {
+    "version": "0.1",
+    "config": {
+        "currencies": ["USD"],
+        "rate": "",
+        "valueColumns": ["us",
+                         "eur",
+                         "hk-sin",
+                         "jap",
+                         "sa",
+                         "aus",
+                         "in",
+                         "reservedCapPricing"],
+        "tiers": [
+            {
+                "name": "HTTP",
+                "regions": [
+                    {
+                        "name": "us",
+                        "prices": {
+                            "USD": "0.0075"
+                        }
+                    },
+                    {
+                        "name": "eur",
+                        "prices": {
+                            "USD": "0.0090"
+                        }
+                    },
+                    {
+                        "name": "hk-sin",
+                        "prices": {
+                            "USD": "0.0090"
+                        }
+                    },
+                    {
+                        "name": "jap",
+                        "prices": {
+                            "USD": "0.0095"
+                        }
+                    },
+
+                    {
+                        "name": "sa",
+                        "prices": {
+                            "USD": "0.0160"
+                        }
+                    },
+                    {
+                        "name": "aus",
+                        "prices": {
+                            "USD": "0.0090"
+                        }
+                    },
+
+                   {
+                        "name": "in",
+                        "prices": {
+                            "USD": "0.0090"
+                        }
+                    }
+                ]
+            },
+            {
+                "name": "HTTPS",
+                "regions": [
+                    {
+                        "name": "us",
+                        "prices": {
+                            "USD": "0.0100"
+                        }
+                    },
+                    {
+                        "name": "eur",
+                        "prices": {
+                            "USD": "0.0120"
+                        }
+                    },
+                    {
+                        "name": "hk-sin",
+                        "prices": {
+                            "USD": "0.0120"
+                        }
+                    },
+                    {
+                        "name": "jap",
+                        "prices": {
+                            "USD": "0.0130"
+                        }
+                    },
+
+                    {
+                        "name": "sa",
+                        "prices": {
+                            "USD": "0.0220"
+                        }
+                    },
+                    {
+                        "name": "aus",
+                        "prices": {
+                            "USD": "0.0125"
+                        }
+                    },
+
+         {
+                        "name": "in",
+                        "prices": {
+                            "USD": "0.0120"
+                        }
+                    }
+                ]
+            }
+        ]
+    }
+}
+
+
+
+
+0
+

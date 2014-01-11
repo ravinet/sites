@@ -1,0 +1,21 @@
+PHTTP66.117.23.104"è
+èGET /m2/dellinc/mbox/standard?mboxHost=www.dell.com&mboxSession=1389229722588-259554&mboxPage=1389229722588-259554&screenHeight=1200&screenWidth=1920&browserWidth=937&browserHeight=1051&browserTimeOffset=-300&colorDepth=24&mboxXDomain=enabled&hr=20&day=3&mon=1&cookie_chmTP=undefined&pgTitle=Dell%20Official%20Site%20-%20The%20Power%20To%20Do%20More%20%7C%20Dell&pgMetrics=eiwatch%3D%2F&pgCat=off&pgCMS=Storm%20Content%20Publishing%20Engine%20v8.6.00.0001%3B%20Copyright%201999-2014%20Dell%20Inc.%20&mboxCount=4&mbox=usgen_homepage_whatsnew_group&mboxId=0&mboxTime=1389211722913&mboxURL=http%3A%2F%2Fwww.dell.com%2F&mboxReferrer=&mboxVersion=41 HTTP/1.1
+Host: dellinc.tt.omtrdc.net
+Connection: keep-alive
+Accept: */*
+vUser-Agent: Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/31.0.1650.63 Safari/537.36
+Referer: http://www.dell.com/
+$Accept-Encoding: gzip,deflate,sdch
+!Accept-Language: en-US,en;q=0.8
+MCookie: mboxSession=1389229722588-259554; mboxPC=1389229722588-259554.25_43
+
+*ç
+HTTP/1.1 200 OK
+$P3P: CP="NOI DSP CURa OUR STP COM"
+ÜSet-Cookie: mboxPC=1389229722588-259554.25_43; Domain=dellinc.tt.omtrdc.net; Expires=Thu, 23-Jan-2014 01:08:30 GMT; Path=/m2/dellinc
+2Content-Type: text/javascript;charset=ISO-8859-1
+Content-Length: 187
+%Date: Thu, 09 Jan 2014 01:08:30 GMT
+Server: Test & Target
+Ω
+mboxFactories.get('default').get('usgen_homepage_whatsnew_group',0).setOffer(new mboxOfferDefault()).loaded();mboxFactories.get('default').getPCId().forceId("1389229722588-259554.25_43");

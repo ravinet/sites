@@ -1,0 +1,35 @@
+»HTTPS216.115.210.206"ó
+1GET /images/dts/js/at/elqNow/elqImg.js HTTP/1.1
+Host: www.citrixonline.com
+Connection: keep-alive
+Accept: */*
+vUser-Agent: Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/31.0.1650.63 Safari/537.36
+IReferer: http://www.citrixonline.com/collaboration/online_collaboration
+$Accept-Encoding: gzip,deflate,sdch
+!Accept-Language: en-US,en;q=0.8
+æCookie: webSession=SessionInfo%3D16931373%253A89E2106579E2528; webVisitor=FirstVisit%3D1389229069000%26LastVisit%3D1389229069000; FEC_LOCALE=en_US; __col_first_track_GoToManageRemoteSupport=true; __col_mkt_GoToManageRemoteSupport=FIS_name%3Ddirect%26LST_name%3Ddirect; __col_track_GoToManageRemoteSupport=1; __col_visit=699ca544-d724-4450-817b-af6c52d4f3e4
+
+*¹	
+HTTP/1.1 200 OK
+%Date: Thu, 09 Jan 2014 00:57:49 GMT
+Server: Apache
+.Last-Modified: Tue, 31 Dec 2013 18:54:54 GMT
+"ETag: "340026-37e-4eed9188c3b80"
+Accept-Ranges: bytes
+Content-Length: 894
+!Keep-Alive: timeout=15, max=100
+Connection: Keep-Alive
+(Content-Type: application/x-javascript
+€
+// Copyright Eloqua Corporation.
+var elqWDt = new Date(20020101);
+var elqDt = new Date();
+var elqMs = elqDt.getMilliseconds();
+var elqTzo = elqWDt.getTimezoneOffset();
+var elqRef2 = '';
+if (typeof elqCurE != 'undefined'){
+if (document.referrer) { elqRef2 = escape(document.referrer); }
+if ((typeof elqRef2 == 'undefined') || (elqRef2 == 'undefined') || (elqRef2 == '')) { elqRef2 = 'elqNone'; }
+if (navigator.appName == 'Netscape' || navigator.userAgent.indexOf("Opera")!=-1) { document.write('<la' + 'yer hidden=true><im' + 'g src="' + elqCurE + '?pps=3&siteid=' + elqSiteID + '&ref2=' + elqRef2 + '&tzo=' + elqTzo + '&ms=' + elqMs + '" border=0 width=1 height=1 ><\/la' + 'yer>');}
+else { document.write('<im' + 'g style="display:none" src="' + elqCurE + '?pps=3&siteid=' + elqSiteID + '&ref2=' + elqRef2 + '&tzo=' + elqTzo + '&ms=' + elqMs + '" border=0 width=1 height=1 >');}
+}

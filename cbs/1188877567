@@ -1,0 +1,26 @@
+PHTTP
+18.7.20.69"´
+UGET /cnwk.1d/Ads/common/manta/isInternalUser.js?cb=cbsiMadIsInternalUserCB HTTP/1.1
+Host: i.i.cbsi.com
+Connection: keep-alive
+Accept: */*
+vUser-Agent: Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/31.0.1650.63 Safari/537.36
+Referer: http://www.cbs.com/
+$Accept-Encoding: gzip,deflate,sdch
+!Accept-Language: en-US,en;q=0.8
+¶Cookie: XCLGFbrowser=KWFY0FLN+FJfNhA23zQ; s_vi=[CS]v1|2966FC2905078B4A-40000101002692BB[CE]; MAD_BK=31234&BK39677&1467618443; apexLat=1389230164697; apexSpc=1; apexSampleHistory=""
+
+*­
+HTTP/1.0 200 OK
+Server: Apache
+Content-Length: 31
+(Content-Type: application/x-javascript
+ETag: "1c6"
+Vary: Accept-Encoding
+pP3P: CP="CAO DSP COR CURa ADMa DEVa PSAa PSDa IVAi IVDi CONi OUR OTRi IND PHY ONL UNI FIN COM NAV INT DEM STA"
+Cache-Control: max-age=86400
+(Expires: Fri, 10 Jan 2014 01:16:04 GMT
+%Date: Thu, 09 Jan 2014 01:16:04 GMT
+Connection: keep-alive
+!
+cbsiMadIsInternalUserCB(false);

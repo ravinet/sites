@@ -1,0 +1,27 @@
+PHTTP
+18.7.20.68"Ö
+1GET /?serial=&referral=&callback=json1 HTTP/1.1
+Host: tracking.conduit.com
+Connection: keep-alive
+Accept: */*
+vUser-Agent: Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/31.0.1650.63 Safari/537.36
+"Referer: http://www.conduit.com/
+$Accept-Encoding: gzip,deflate,sdch
+!Accept-Language: en-US,en;q=0.8
+qCookie: tracking_action_serial=; tracking_action_referral=; tracking_action_landingpage=http://www.conduit.com/
+
+*¡
+HTTP/1.1 200 OK
+7Content-Type: application/x-javascript; charset=utf-8
+Server: Microsoft-IIS/7.5
+X-AspNetMvc-Version: 3.0
+X-AspNet-Version: 4.0.30319
+X-Powered-By: ASP.NET
+Content-Length: 27
+(Expires: Thu, 09 Jan 2014 00:28:47 GMT
+.Cache-Control: max-age=0, no-cache, no-store
+Pragma: no-cache
+%Date: Thu, 09 Jan 2014 00:28:47 GMT
+Connection: keep-alive
+
+json1({"Serial":"1000001"})

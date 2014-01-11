@@ -1,0 +1,17 @@
+PHTTP66.117.23.107"è
+œGET /m2/tdbankfinancialgroup/mbox/standard?mboxHost=www.tdbank.com&mboxSession=1389232083293-606458&mboxPage=1389232083293-606458&screenHeight=1200&screenWidth=1920&browserWidth=937&browserHeight=1051&browserTimeOffset=-300&colorDepth=24&mboxXDomain=enabled&dcxExists=false&tdb_vistype=prospect&tdw_vistype=prospect&mboxCount=1&mbox=tdbank_homepage_top&mboxId=0&mboxTime=1389214083512&mboxURL=http%3A%2F%2Fwww.tdbank.com%2F&mboxReferrer=&mboxVersion=43 HTTP/1.1
+*Host: tdbankfinancialgroup.tt.omtrdc.net
+Connection: keep-alive
+Accept: */*
+vUser-Agent: Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/31.0.1650.63 Safari/537.36
+!Referer: http://www.tdbank.com/
+$Accept-Encoding: gzip,deflate,sdch
+!Accept-Language: en-US,en;q=0.8
+
+*“
+HTTP/1.1 200 OK
+Content-Length: 100
+%Date: Thu, 09 Jan 2014 01:47:50 GMT
+Server: Test & Target
+f
+mboxFactories.get('default').get('tdbank_homepage_top',0).setOffer(new mboxOfferDefault()).loaded();

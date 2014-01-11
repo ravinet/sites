@@ -1,0 +1,50 @@
+PHTTP216.115.210.206"Ô
+-GET /collaboration/scripts/home.js HTTP/1.1
+Host: www.citrixonline.com
+Connection: keep-alive
+Accept: */*
+vUser-Agent: Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/31.0.1650.63 Safari/537.36
+IReferer: http://www.citrixonline.com/collaboration/online_collaboration
+$Accept-Encoding: gzip,deflate,sdch
+!Accept-Language: en-US,en;q=0.8
+ÊCookie: webSession=SessionInfo%3D16931373%253A89E2106579E2528; webVisitor=FirstVisit%3D1389229069000%26LastVisit%3D1389229069000; FEC_LOCALE=en_US; __col_visit=699ca544-d724-4450-817b-af6c52d4f3e4; __col_first_track_GoToManageRemoteSupport=true; __col_mkt_GoToManageRemoteSupport=FIS_name%3Ddirect%26LST_name%3Ddirect; __col_track_GoToManageRemoteSupport=1
+
+*¥
+
+HTTP/1.1 200 OK
++Server: CouchDB/1.2.2 (Erlang OTP/R15B01)
+"ETag: "pjW04EpD0MapnjwJHAJgpQ=="
+%Date: Thu, 09 Jan 2014 00:57:49 GMT
+(Content-Type: application/x-javascript
+'Content-MD5: pjW04EpD0MapnjwJHAJgpQ==
+Content-Length: 1023
+ Cache-Control: must-revalidate
+Accept-Ranges: bytes
+Å
+function pageReadyFunction(){
+	jQuery('#menu1').ptMenu();
+	jQuery('#slider-stage').carousel('#previous', '#next');
+	jQuery('#viewport').carousel('#simplePrevious', '#simpleNext');
+	jQuery("#slider").easySlider({auto: true, continuous: true,	numeric: true});
+	jQuery().latestPost();
+}
+jQuery(function(){
+    jQuery('#homeImage div.firstHero').css('display', 'block');
+    setInterval(function(){
+      jQuery('#homeImage :first-child').fadeOut(1000)
+         .next('div').fadeIn(1000)
+         .end().appendTo('#homeImage');},
+      13000);
+});
+jQuery(function(){
+     jQuery('#homeQuote div.firstQuote').show();
+    setInterval(function(){
+      jQuery('#homeQuote div:first-child').animate({ top: 106 }, {duration: 1000}, function() {
+      	jQuery(this).fadeOut(1000);
+       })
+         .next('#homeQuote div').animate({top: 106}, {duration: 0}).fadeIn(1, function() {
+      	jQuery(this).animate({ top: 0 }, {duration: 1000, easing: 'easeOutExpo'});
+       })
+         .end().appendTo('#homeQuote');},
+      13000);
+});

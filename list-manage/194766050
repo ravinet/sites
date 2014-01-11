@@ -1,0 +1,32 @@
+»HTTPS23.202.214.165"õ
++GET /803986/626840/css/fonts.css HTTP/1.1
+Host: cloud.typography.com
+Connection: keep-alive
+Accept: text/css,*/*;q=0.1
+vUser-Agent: Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/31.0.1650.63 Safari/537.36
++Referer: http://mailchimp.com/about/mcsv/
+$Accept-Encoding: gzip,deflate,sdch
+!Accept-Language: en-US,en;q=0.8
+
+*ô
+ HTTP/1.1 302 Moved Temporarily
+Server: Apache
+Content-Length: 153
+Content-Type: text/html
+TLocation: http://static.mailchimp.com/web/assets/fonts/23036/10ED45ABD6892D61A.css
+5ETag: "026755403c4f1b011647d7fc724b777e:1367614280"
+,Expires: Thu, 09 January 2014 00:57:30 GMT
+Vary: Accept-Encoding
+.Last-Modified: Fri, 03 May 2013 20:51:21 GMT
+)Cache-Control: must-revalidate, private
+%Date: Thu, 09 Jan 2014 00:57:30 GMT
+Connection: keep-alive
+›
+<HTML>
+<HEAD>
+<TITLE>Error Page</TITLE>
+</HEAD>
+<BODY>
+An error (302 Moved Temporarily) has occured in response to this request.
+</BODY>
+</HTML>

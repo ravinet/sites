@@ -1,0 +1,29 @@
+PHTTP75.98.17.25"·
+EGET /JS/checkLogin.jsp?r=0.9039298661174142&fromHomepage=1 HTTP/1.1
+Host: members.webs.com
+Connection: keep-alive
+TAccept: text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8
+vUser-Agent: Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/31.0.1650.63 Safari/537.36
+Referer: http://www.webs.com/
+$Accept-Encoding: gzip,deflate,sdch
+!Accept-Language: en-US,en;q=0.8
+
+*Ý
+HTTP/1.1 200 OK
+%Set-Cookie: FW_=R2000894119; path=/
+Server: Apache-Coyote/1.1
+P3P: CP="Potato"
+Cache-Control: no-cache
+Pragma: no-cache
+(Expires: Thu, 01 Jan 1970 00:00:00 GMT
+Content-Type: text/html
+Content-Length: 61
+%Date: Thu, 09 Jan 2014 01:46:53 GMT
+?
+
+	if(!fwuser) {
+		var fwuser = {
+			loggedIn: false
+		};
+	}
+

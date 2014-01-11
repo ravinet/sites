@@ -1,0 +1,24 @@
+PHTTP205.203.139.53"€
+2GET /bg/api/Pickup.ashx?_=1389196337171 HTTP/1.1
+Host: www.marketwatch.com
+Connection: keep-alive
+8Accept: application/json, text/javascript, */*; q=0.01
+"X-Requested-With: XMLHttpRequest
+vUser-Agent: Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/31.0.1650.63 Safari/537.36
+MX-BGD: c={"c":"270d8f569eaf4a18a3d5d0686a50585b","s":"10.240.178.139"}&m=[]
+&Referer: http://www.marketwatch.com/
+$Accept-Encoding: gzip,deflate,sdch
+!Accept-Language: en-US,en;q=0.8
+øCookie: kayla=g=dd334b4c573d4cb898ccd2d63c32ea7c; mw5_loc={"Country":"US","Region":"MA","City":"CAMBRIDGE","Continent":"NA","County":["MIDDLESEX"]}; mw5_prefs=tmox=1/8/2014&mox=False&tth=False&exp=1/8/2016; __g_c=w%3A1%7Cb%3A2%7Cc%3A313213237331210%7Cd%3A1%7Ca%3A0%7Ce%3A0.01%7Cf%3A0; __g_u=313213237331210_1_0.01_0_5_1389628337279; s_cc=true; s_vnum=1391788337544%26vn%3D1; s_invisit=true; gpv_pn=MW_Home; s_sq=%5B%5BB%5D%5D; refresh=off; utag_main=_st:1389198138194$ses_id:1389196930440%3Bexp-session
+
+*Õ
+HTTP/1.1 200 OK
+Cache-Control: private
+ Content-Type: application/json
+Server: Microsoft-IIS/7.5
+X-Powered-By: ASP.NET
+X-MACHINE: secdbgowebp03
+%Date: Wed, 08 Jan 2014 15:52:19 GMT
+Content-Length: 369
+ó
+[{"h":{"t":"\/quotes\/nls\/bac","a":"broadcast","s":"SEC81","n":3662712},"b":{"z":"\/Date(1389196341240)\/","t":"bac","l":16.63,"v":null,"c":0.13,"y":"normal","e":-5,"b":null,"a":null}},{"h":{"t":"\/quotes\/nls\/f","a":"broadcast","s":"SEC81","n":3662740},"b":{"z":"\/Date(1389196341306)\/","t":"f","l":15.575,"v":null,"c":0.195,"y":"normal","e":-5,"b":null,"a":null}}]

@@ -1,0 +1,22 @@
+PHTTP204.79.197.200"Ù
+3GET /sa/8_01_0_2442418/homepageLike_c.js HTTP/1.1
+Host: www.bing.com
+Connection: keep-alive
+Accept: */*
+vUser-Agent: Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/31.0.1650.63 Safari/537.36
+Referer: http://www.bing.com/
+$Accept-Encoding: gzip,deflate,sdch
+!Accept-Language: en-US,en;q=0.8
+üCookie: _FS=NU=1; MUID=069DC9634FB369BD2174CCDE4EAC6954; MUIDB=069DC9634FB369BD2174CCDE4EAC6954; OrigMUID=069DC9634FB369BD2174CCDE4EAC6954%2c7561b2774acd49819defcc2a767f4879; SRCHD=D=3168016&MS=3168016&AF=NOFORM; SRCHUID=V=2&GUID=33E5226C955B40A8837DF413D49C59A4; SRCHUSR=AUTOREDIR=0&GEOVAR=&DOB=20140109; _SS=SID=6740073B9F95436698BA9C0E13B52C74&C=20; SRCHHPGUSR=CW=937&CH=1036
+
+*ë
+
+HTTP/1.1 200 OK
+)Cache-Control: public, max-age=15552000
+Content-Length: 1138
+(Content-Type: application/x-javascript
+.Last-Modified: Mon, 11 Oct 2010 19:03:29 GMT
+Server: Microsoft-IIS/8.0
+%Date: Thu, 09 Jan 2014 00:16:15 GMT
+ô
+function loadFb(){var t=document,r="script",u="facebook-jssdk",f="btn_fb-like",n,i;if(_ge(f)){if(i=t.getElementsByTagName(r)[0],t.getElementById(u))return;n=t.createElement(r),n.id=u,n.src="//connect.facebook.net/en_US/all.js",n.async=!0,i.parentNode.insertBefore(n,i),_w.fbAsyncInit=function(){FB.init({appId:"111239619098",status:!0,cookie:!0,xfbml:!0}),FB.Event.subscribe("auth.authResponseChange",function(){FB.XFBML.parse()}),FB.Event.subscribe("xfbml.render",function(){var n=_ge(f);n.className+=" btn_fb-like_show"})}}setFbSrc()}function setFbSrc(){var r,t,u,n,i,f,e;if(typeof hpl!="undefined"&&hpl&&hpl.ref){r=hpl.ref,t="http://www.bing.com/?";for(u in r)t+=u+"="+r[u]+"&";n=_ge("btn_fb-like"),n&&typeof FB!="undefined"&&(n.setAttribute("data-href",t),sb_i8l?n.style.filter="alpha(opacity=0)":n.style.opacity=0,FB.XFBML.parse()),i=_ge("sw_fbl"),i&&(i.style.display="none",f=hpl.dt?"dark":"light",e=hpl.sl?"button_count":"standard",i.src="http://www.facebook.com/plugins/like.php?action=like&font=arial&layout="+e+"&colorscheme="+f+"&href="+encodeURIComponent(t)+(hpl.sl?"":"&width=400&height=80"))}}sj_evt.bind("onBgSet",loadFb,1)

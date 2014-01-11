@@ -1,0 +1,24 @@
+PHTTP122.11.45.243"¤
+GET /crossdomain.xml HTTP/1.1
+Host: main.gslb.ku6.com
+Connection: keep-alive
+vUser-Agent: Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/31.0.1650.63 Safari/537.36
+Accept: */*
+?Referer: http://www.ku6.com/c2013/1521/s200620652/index.shtml
+$Accept-Encoding: gzip,deflate,sdch
+!Accept-Language: en-US,en;q=0.8
+7Cookie: o_b_t_s=536.933.593.170.189231123720.1; _lu=1
+
+*¹
+HTTP/1.1 200 OK
+Server: nginx
+%Date: Thu, 09 Jan 2014 01:31:57 GMT
+Content-Type: text/html
+(Expires: Fri, 09 Jan 2015 01:31:57 GMT
+!Cache-Control: max-age=31536000
+Content-Length: 107
+m
+<?xml version="1.0"?>
+ <cross-domain-policy>
+     <allow-access-from domain="*" />
+ </cross-domain-policy>

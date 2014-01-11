@@ -1,0 +1,36 @@
+PHTTP23.15.129.170"à
+GET / HTTP/1.1
+Host: www.groupon.com
+Connection: keep-alive
+TAccept: text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8
+vUser-Agent: Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/31.0.1650.63 Safari/537.36
+$Accept-Encoding: gzip,deflate,sdch
+!Accept-Language: en-US,en;q=0.8
+
+*·
+ HTTP/1.1 302 Moved Temporarily
+Server: nginx/1.2.9
+Content-Type: text/html
+Content-Length: 160
+=Location: http://www.groupon.com/app/subscriptions/new_zip?
+#X-UA-Compatible: IE=edge,chrome=1
+,X-Origin-Cache-Key: http/www.groupon.com/?
+2X-Grout-Id: 125f74e6-78c6-11e3-a359-de26511e3812
+Vary: Accept-Encoding
+%Date: Thu, 09 Jan 2014 00:36:25 GMT
+Connection: keep-alive
+oSet-Cookie: locale=en_US; Max-Age=31536000; Expires=Fri, 9-Jan-2015 0:36:25 GMT; Domain=.groupon.com; Path=/;
+RSet-Cookie: s=125f8b84-78c6-11e3-a359-de26511e3812; Domain=.groupon.com; Path=/;
+8Set-Cookie: priority=true; Path=/; Domain=.groupon.com
+xSet-Cookie: b=e3bec468-3118-0bb2-6b97-ab7fa5e0f5bb; expires=Sun, 07-Jan-2024 00:36:25 GMT; path=/; domain=.groupon.com
+\Set-Cookie: bucket=194; expires=Sun, 07-Jan-2024 00:36:25 GMT; path=/; domain=.groupon.com
+X-Treatment-Name: OUT
+X-Bucket-Value: 194
+¢
+<html>
+<head><title>302 Found</title></head>
+<body bgcolor="white">
+<center><h1>302 Found</h1></center>
+<hr><center>nginx/1.2.9</center>
+</body>
+</html>

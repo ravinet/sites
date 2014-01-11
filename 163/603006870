@@ -1,0 +1,21 @@
+PHTTP123.58.189.59"Ä
+ZGET /r?site=netease&affiliate=homepage&cat=homepage&type=logo300x250&location=3 HTTP/1.1
+Host: g.163.com
+Connection: keep-alive
+TAccept: text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8
+vUser-Agent: Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/31.0.1650.63 Safari/537.36
+Referer: http://www.163.com/
+$Accept-Encoding: gzip,deflate,sdch
+!Accept-Language: en-US,en;q=0.8
+
+*¿
+HTTP/1.1 200 OK
+Server: nginx
+%Date: Thu, 09 Jan 2014 01:22:09 GMT
+)Content-Type: text/html; charset=gb2312
+Content-Length: 228
+Connection: keep-alive
+Cache-Control: no-cache
+X-Server-ID: S69
+æ
+<a target="_blank" href="http://g.163.com/c?AID=138366&FlightID=1236&Values=1185160171&Redirect=http://126.am/d3qD01"><img src="http://img2.126.net/xoimages/mbuy/20131101/sk/300x250.jpg" border=0 height=250 width=300 alt=""></a>

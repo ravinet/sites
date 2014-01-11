@@ -1,0 +1,26 @@
+PHTTP64.41.197.44"â
+;GET /wp-includes/js/comment-reply.min.js?ver=3.8 HTTP/1.1
+Host: www.zedo.com
+Connection: keep-alive
+Accept: */*
+vUser-Agent: Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/31.0.1650.63 Safari/537.36
+Referer: http://www.zedo.com/
+$Accept-Encoding: gzip,deflate,sdch
+!Accept-Language: en-US,en;q=0.8
+
+*Þ
+HTTP/1.1 200 OK
+%Date: Thu, 09 Jan 2014 00:29:26 GMT
+Server: Apache/2.2.22
+.Last-Modified: Thu, 12 Dec 2013 18:05:56 GMT
+!ETag: "4090d-2f5-4ed5a3271c900"
+&Content-Type: application/javascript
+Content-Length: 757
+"X-Varnish: 1560811206 1560809591
+
+Age: 487
+Via: 1.1 varnish
+Keep-Alive: timeout=5, max=96
+Connection: Keep-Alive
+÷
+var addComment={moveForm:function(a,b,c,d){var e,f=this,g=f.I(a),h=f.I(c),i=f.I("cancel-comment-reply-link"),j=f.I("comment_parent"),k=f.I("comment_post_ID");if(g&&h&&i&&j){f.respondId=c,d=d||!1,f.I("wp-temp-form-div")||(e=document.createElement("div"),e.id="wp-temp-form-div",e.style.display="none",h.parentNode.insertBefore(e,h)),g.parentNode.insertBefore(h,g.nextSibling),k&&d&&(k.value=d),j.value=b,i.style.display="",i.onclick=function(){var a=addComment,b=a.I("wp-temp-form-div"),c=a.I(a.respondId);if(b&&c)return a.I("comment_parent").value="0",b.parentNode.insertBefore(c,b),b.parentNode.removeChild(b),this.style.display="none",this.onclick=null,!1};try{f.I("comment").focus()}catch(l){}return!1}},I:function(a){return document.getElementById(a)}};

@@ -1,0 +1,404 @@
+PHTTP8.27.149.126"á
+$GET /css/sharedstyles.css HTTP/1.1
+Host: vmedia.rivals.com
+Connection: keep-alive
+Accept: text/css,*/*;q=0.1
+vUser-Agent: Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/31.0.1650.63 Safari/537.36
+!Referer: http://www.rivals.com/
+$Accept-Encoding: gzip,deflate,sdch
+!Accept-Language: en-US,en;q=0.8
+
+*õµ
+HTTP/1.1 200 OK
+%Date: Thu, 09 Jan 2014 01:49:55 GMT
+(Expires: Thu, 09 Jan 2014 14:17:22 GMT
+.Last-Modified: Mon, 17 Sep 2012 10:25:57 GMT
+Content-Type: text/css
+ETag: "f6dd26d3be94cd1:37d"
+Accept-Ranges: bytes
+Server: Microsoft-IIS/6.0
+X-Powered-By: ASP.NET
+Cache-Control: max-age=86400
+Content-Length: 22939
+³
+body {background-color: white; font-family:Verdana,Arial,Helvetica,Sans-Serif; margin:0; font-size: 8.5pt;}
+/*td {font-size: 8.5pt;}*/
+img {border:0; text-decoration: none;}
+.fixed {width:980px;}
+.videofixed {width:780px;}
+.liquid {width:100%;}
+.curve {float:right; margin:0; padding-bottom: 3px;}
+.centered {text-align: center; display: block; margin-left: auto; margin-right: auto;}
+.gray {background-color: #ececec;}
+p.notop {margin-top:0;}
+p.nobottom {margin-bottom:0;}
+.tdthread a {text-decoration: underline; font-weight: bold;}
+.tdtopic { font-family: arial; font-size: 10pt; }
+.tdtopic a {text-decoration: underline;}
+
+
+/* MAIN TEMPLATE ITEMSS */
+
+#content {padding: 12px 12px 6px 20px; vertical-align: top;}
+/* #content {padding: 12px 12px 6px 6px; vertical-align: top;} */
+
+div#localexpert {width: 70px; height: 70px; background-image: url(http://vmedia.rivals.com/images/creative/bhale/prio/localexpert.png); _background-image: none; _filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(src='http://vmedia.rivals.com/images/creative/bhale/prio/localexpert.png', sizingMethod='crop'); background-repeat: no-repeat;}
+
+div#toplinks {margin: 0 10px 0 10px; white-space: nowrap;}
+div#toplinks a {color:white; text-decoration:none; font-size:7.5pt; font-weight: bold; margin-right: 8px;}
+div#toplinks a:hover {color: #999999;}
+
+/* div#toplinks {margin: 0 10px 0 20px; white-space: nowrap;} */
+
+.toplinks {margin: 0 0 0 20px; width: 708px;}
+.toplinks a {color:white; text-decoration:none; font-size:7.5pt; font-weight: bold; margin-right: 8px;}
+.toplinks a:hover {color: #999999;}
+
+div#linkscontainer {padding:0; background-color: #727272; background-image:url(http://vmedia.rivals.com/images/templates/teamsite_linkbg.gif); background-repeat: repeat-x; text-align:left; border-top: 1px solid white; border-bottom: 1px solid white; height:24px;}
+div#linkscontainer table {margin-left: 13px;}
+div#linkscontainer td {height:14px; padding: 5px 7px 5px 7px; font-size: 7.5pt; vertical-align: middle;}
+div#linkscontainer a {color:white; text-decoration:none; font-weight: bold;}
+div#linkscontainer a:hover {color: #333333;}
+
+TD.navmenu{WIDTH:980px;border-bottom:solid 1px #FFFFFF;}
+td.navmenu table {left : 0px;HEIGHT: 24px; margin-left: 12px;}
+.navmenu td {height: 24px;}
+.navmenu P{LEFT: 2px;MARGIN: 0;    POSITION: relative;TOP: 5px;FONT-WEIGHT: bold;FONT-SIZE: 7.5pt;TEXT-DECORATION: none; height:12px; padding: 1px 10px 0 0;}
+.navmenu p.last {border:0;}
+DIV.MenuItemHide{position:absolute;left:-100px;top:-100px;display:none;}
+DIV.MenuItemShow{position:absolute;display:inline;z-index:10;border: 0px ;}
+
+
+table#searchtable {margin-right: 5px;}
+table#searchtable td {padding:0 0 0 3px; vertical-align: middle;}
+table#searchtable img {margin-top: 1px;}
+table#searchtable input {font-size: 8.5pt; padding: 2px; width: 108px;}
+
+img#mainlogolink {width: 300px; height: 60px; margin: 6px;}
+
+/* div#headerbanner {text-align:center; vertical-align:bottom;} */
+/* div#headerbanner img {display:block; width:728px; margin-left:auto; margin-right:auto;} */
+
+table#headerbanner {background-image:url(http://vmedia.rivals.com/images/templates/teamsite_horizfade.gif); background-repeat:repeat-y;}
+table#headerbanner td {text-align:left; vertical-align:top; height:90px; font-size: 7.5pt;}
+table#headerbanner td#adcontainer {text-align: right; width: 728px;}
+table#headerbanner td#fadcontainer {align: right; text-align: right; width: 728px;}
+table#headerbanner p {padding: 6px 6px 0 6px; margin:0;}
+table#headerbanner p img {float:none;}
+table#headerbanner img.shield {float: left; margin-right: 12px;}
+
+div#rivalsnav {color: #646464; font-size: 7.5pt; font-weight: bold; padding: 5px 0 5px 0; border-bottom: 1px solid #646464; margin-bottom: 1px;}
+div#rivalsnav p {margin: 10px 10px 0 20px; display:inline; padding-top: 16px;}
+div#rivalsnav a {color: #646464; text-decoration: none;}
+div#rivalsnav a:visited {color: #646464;}
+div#rivalsnav a:hover {color: #646464; text-decoration: underline;}
+
+td.sitepicker {color: white; font-size: 7.5pt; font-weight: bold; padding: 16px 10px 0 20px; vertical-align: top;}
+td.sitepicker p {margin:0;}
+table.sitemenu td {paddng: 0 0 0 4px; vertical-align: top;}
+table.sitemenu td p {color: white; font-size: 7.5pt; font-weight: bold; text-align: right; height: 28px; vertical-align: top;}
+table.sitemenu td select {width: 150px;}
+td.sitepicker a {color: white;}
+td.sitepicker a:visited {color: white;}
+td.sitepicker a:hover {color: #666666;}
+
+td.videositepicker {color: white; font-size: 7.5pt; font-weight: bold; padding: 0px 0px 0 0px; vertical-align: top;}
+td.videositepicker p {margin:0;}
+table.videositemenu {width : 235px}
+table.videositemenu td {paddng: 0 0 0 0px; vertical-align: top;}
+table.videositemenu td p {color: white; font-size: 7.5pt; font-weight: bold; text-align: right; vertical-align: top; padding : 2px;}
+table.videositemenu td select {width: 150px;}
+td.videositepicker a {color: white;}
+td.videositepicker a:visited {color: white;}
+td.videositepicker a:hover {color: #666666;}
+
+p#latestfromrivals {color: #cccccc; font-size: 7.5pt; margin-top: 4px; font-weight: bold;}
+p#latestfromrivals a {color: white;}
+p#latestfromrivals a:visited {color: white;}
+p#latestfromrivals a:hover {color: #dddddd;}
+
+
+
+
+
+
+/* COMMON PAGE ELEMENTS */
+
+.memberinfo {float:right; font-size:7pt;}
+.byline {font-size:7pt; color:#666666; margin:0 0 16px 0;}
+.byline b {color:black;}
+.pictureleft {float: left; margin: 0 8px 6px 0;}
+.pictureright {float: right; margin: 0 0 6px 8px;}
+.pictureimage {border:1px solid black;}
+.picturecredit {display:block; margin:0; text-align: right; font-size: 6.5pt; text-transform:uppercase;}
+.picturecaption {display:block; margin-top: 4px; text-align: center; font-size: 7.5pt; font-weight: bold;}
+
+
+
+
+/* HEADERS */
+
+p.gradheader {text-align: left; margin: 10px 0 0 0; display:block; padding:5px; background-image: url(http://vmedia.rivals.com/images/templates/gradbg.gif); background-repeat: repeat-y; background-position: left; font-size: 7.5pt; font-weight: bold;}
+p.grayheader {display:block; font-size:10px; background-color: #d5d5d5; padding: 5px 8px 5px 8px;}
+div.grayheader {display:block; font-size:10px; background-color: #d5d5d5; padding: 5px 3px 5px 8px;}
+
+
+
+
+/* NAVIGATION */
+
+.selectorheader {background-color: #e7e7e7; display:block; margin:0; font-size: 7.5pt; padding:0; height:20px;}
+.selectorheader a.menu { font-size: 7pt; text-transform: uppercase; text-align:center; color:white; font-weight: bold; margin:0; display: block; height:20px; line-height: 20px; padding: 0 10px 0 11px; border-right: 1px solid white; background-color: #aaaaaa; text-decoration:none; float:left;}
+.selectorheader a.menu:hover {background-color: #666666;}
+.selectorheaderright {height: 30px; background-color: #e7e7e7; display: block; margin: 0; font-size: 7.5pt; padding:0;}
+.selectorheaderright p {margin: 0 0 0 6px; line-height: 30px;}
+.selectorheaderright p a {font-size: 8pt;}
+.selectorheaderright p a.selected {text-decoration: none; color: black;}
+.selectorheaderright .selectorheader {text-align: right; height: 30px;}
+.selectorheaderright .selectorheader p {height: 30px; line-height: 30px; border-right: 0; border-left: 1px solid white;padding: 0 21px 0 20px;}
+.selectorheaderright .selectorheader a.menu {height: 30px; line-height: 30px; padding: 0 21px 0 20px; border-right: 0; border-left: 1px solid white;}
+.selectorheaderright .selectorheader a.selected {height: 30px; line-height: 30px; padding: 0 21px 0 20px; border-right: 0; border-left: 1px solid white;}
+
+table.simpleborderedhoriz td {padding: 0 12px 0 12px; border-left: 1px solid #cccccc; vertical-align: top;}
+
+tr.selectorheader td { font-size: 7.5pt; height:20px;}
+tr.selectorheader a.menu { font-size: 7pt; text-transform: uppercase; text-align:center; color:white; font-weight: bold; margin:0; display: block; height:20px; line-height: 20px; padding: 0 0 0 0; border-right: 1px solid white; background-color: #878787; text-decoration:none; float:left;}
+tr.selectorheader a.menu:hover {background-color: #666666;}
+
+table.selectormenus {height:30px;}
+table.selectormenus td {height:26px; padding: 2px 0 2px 6px; vertical-align: middle;}
+
+table.fixed > tbody > tr > td.WelcomeText > a {margin: 0 2px;}
+
+/* INSETS */
+
+.graybox {background-color: #dddddd; border:1px solid black; font-size: 7.5pt; margin-top: 10px;}
+.graybox p {padding:6px; margin:0;}
+.graybox p.title {color:white; background-color: #999999; font-weight: bold;}
+.shortfade {background-image:url(http://vmedia.rivals.com/images/database/pdb05_shortfade.gif); background-repeat: repeat-x; padding: 8px; margin:0;}
+
+
+
+/* LISTS */
+
+a.indentlist {display:block; margin: 6px;}
+.basiclist td {padding: 4px 0 4px 6px; font-size: 7.5pt; vertical-align: top; height:18px;}
+.basiclist tr.gray td {background-color: #ececec;}
+.basiclist tr.header td {background-color: #bbbbbb; font-weight: bold; white-space:nowrap; vertical-align: bottom;}
+.basicheadlinelist {font-size:8.5pt; line-height: 13.5pt;}
+.basicheadlinelist span {font-size: 7.5pt;}
+.alternatelist {font-size:8.5pt;}
+.alternatelist p {padding:6px; margin:0;}
+.alternatelist span {font-size: 7.5pt;}
+table.dividedlist {margin:0;}
+table.dividedlist td {font-size:7.5pt; vertical-align:top; padding:0;}
+.simpleborderedlist {padding-bottom: 6px; margin-bottom: 16px; border-bottom: 1px solid #cccccc;}
+
+
+
+/* CONTENT RIGHT BORDER */
+
+.modulefooterlink {display:block; text-align: right; margin: 4px 6px 4px 0; font-weight: bold;}
+.contentborder {padding:0; width:300px; vertical-align:top;}
+.contentborder div {width:auto; border: 0; margin: 8px 0 0 0;}
+.contentborder div.bordered {display:block; border: 1px solid black;}
+.contentborder span.more {float:right; font-size: 7.5pt; margin:0;}
+.contentborder select {font-size: 9px;}
+.contentborder div.linklist p.free {margin-bottom: 5px;}
+
+div#sitenews {font-size:7.5pt;}
+div#sitenews p.primaryheader {text-transform: uppercase; margin-top: 0; margin-bottom: 3px;}
+div#sitenews .headlinetop {font-size: 8.5pt; margin:0 0 4px 0;}
+div#sitenews div {margin: 5px 8px 6px 3px;}
+div#sitenews div a {margin-top: 3px;}
+div#sitenews div p.blank {margin-top: 3px;}
+.contentborder p.gradheader {text-transform: uppercase;}
+
+div#nationalnews {font-size: 7.5pt; padding:0; vertical-align:top;}
+div#nationalnews div a {margin: 3px 0 0 0;}
+div#nationalnews p {margin-top: 5px;}
+div#nationalnews p.grayheader {margin-bottom: 0;}
+div#nationalnews div.shortfade {padding-top:2px;}
+div.natnewsheader {background-image:url(http://vmedia.rivals.com/images/templates/natlnews_gen.gif); background-repeat:no-repeat; background-color:black; display:block; height: 18px; margin:0;}
+
+div#featureproduct table.simpleborderedhoriz td {text-align: center; padding: 6px; width: 50%; font-size: 7.5pt;}
+
+div#featureproduct {font-size: 7.5pt;}
+div#featureproduct p.free {margin: 4px 7px 1px 7px;}
+
+div#admintools {font-size: 7.5pt; padding: 6px;}
+div#admintools .headlinetop {font-size: 8.5pt; margin:0;}
+div#admintools a.free {display:inline;}
+
+table#resources {width:280px; margin:0;}
+table#resources p.free {margin-bottom: 2px;}
+table#resources div.linklist {margin:0 0 0 2px;}
+
+
+
+
+/* CONTENT PAGE */
+
+#storydate {font-size:7pt; font-weight:bold; color:#666666; margin: 0 0 5px 0;}
+#copyfooter {font-size: 7.5pt; color: #999999; margin-left: 6px;}
+#copyfooter a {font-weight: bold;}
+#storydisclaimer {font-size: 8pt; display:block; margin: 20px 0 20px 0; font-style: italic;}
+#storydisclaimer b {font-style: normal;}
+#relatedlinks a {font-size: 7.5pt; font-weight: bold; margin-top: 8px;}
+table#storyicons {float:right;}
+table#storyicons td {padding: 0 6px 0 6px; vertical-align:bottom;}
+table#storyicons img {display:block;}
+img.fontsize {border:3px solid white; display:block;}
+#outercontainer {display:block; margin: 30px 0 20px 0; padding-right: 10px;}
+span.memberinfo {float:none; text-align:right; display:block; margin-bottom: 10px;}
+.headlinecredit {font-size: 7.5pt; font-style: italic; margin: 0 0 6px 13px;}
+.horizfade {background-image:url(http://vmedia.rivals.com/images/modules/inset_horizfade.gif); background-repeat:repeat-y; border: 1px solid #bebebe; padding:6px; background-color: white;}
+div#related a {margin-top: 3px;}
+div#related {width:185px; font-size: 8pt; margin: 0;}
+div#related p {margin:0;}
+div#related div {border-bottom: 1px solid #cccccc; padding: 0 0 8px 0; margin: 0 0 8px 0;}
+div#relatedcontainer {float:right; padding: 0 0 10px 10px; width: 200px;}
+
+
+
+/* PROSPECT DB */
+
+.pdblinks {font-size:7pt; display:block; height:16px; margin:0; padding-top: 5px;}
+.pdbname { margin:0; padding-right:0; display:block; height:30px; line-height: 30px; font-size: 12pt; font-weight: bold; background-image:url(http://vmedia.rivals.com/images/rivalshigh/rankingsheader_bg.gif); background-repeat: repeat-x; background-color: #ececec; padding-left: 6px;}
+div.mugshot {text-align:center; background-color:black; border:1px solid black; color: white; margin:0; padding:0;}
+div.mugshot p {margin: 3px 0 3px 0;}
+.vitals {background-image:url(http://vmedia.rivals.com/images/database/pdb05_verticalfade.jpg); background-repeat:repeat-x; background-position:bottom; display:block; text-align:left; font-size:8pt; line-height: 12pt; padding:4px 6px 4px 6px;}
+table.pdbheader td {padding:7px; padding-right:0; vertical-align:top;}
+table.pdbheader td.pic {padding:0; width:150px; text-align:center;}
+.largetext {font-size:9pt; line-height: 10.5pt; margin:0;}
+.largetext i.subtext {font-size:7pt;}
+table.collegechoices {width:100%; margin:0 0 0 0; float:right;}
+table.collegechoices td {padding: 3px 1px 3px 8px; font-size: 7.5pt; vertical-align:top; text-align:left}
+table.collegechoices tr.header td {background-color: #cccccc; font-weight: bold; font-size: 10px; white-space:nowrap; padding-top: 5px; padding-bottom: 5px;}
+table.collegechoices tr.header td.schools {background-color: #527a17; border-left: 0;}
+/* tr#committed td {color:#527a17; font-size:10px;} */
+.latestrankingsscouting {background-image:url(http://vmedia.rivals.com/images/database/pdb05_verticalfadedark.gif); background-repeat:repeat-x; background-position:top; display:block; padding:0; font-size:7.5pt;}
+.latestrankingsscouting td {vertical-align:top; font-size: 7.5pt;}
+.latestrankingsscouting p.grayheader {margin:0 6px 6px 6px;}
+table.stats { width:100%; display:block; margin-top: 20px;}
+table.stats td {text-align:center; padding:4px 6px 4px 6px; border-top: 1px solid #cdcdcd; font-size:7.5pt;}
+table.stats td.first {text-align:left; padding-left:0; background-color: white;}
+table.stats td.buffer {padding:4px 12px 4px 12px;}
+table.stats tr.groupheader td {background-color:#ececec; border:0;}
+table.stats tr.header td {font-weight:bold; border:0; }
+table#videoaudible td {padding:0; vertical-align:top; font-size: 7.5pt;}
+table#videoaudible {margin-top: 20px;}
+table#adticker {margin-top: 20px; margin-bottom: 20px;}
+table#adticker td {vertical-align: top;}
+table.quicksearch td {padding: 8px; border-top: 1px solid #cdcdcd; text-align: center; font-size: 7.5pt; font-weight: bold;}
+table.quicksearch tr.first td {border:0;}
+table#advancedsearch td {font-size:7.5pt; vertical-align:top; width:50%;}
+table#advancedsearch p {margin:8px 0 0 0;}
+table#advancedsearch p.grayheader {margin-top:20px; margin-bottom:0;}
+table#formtable td {vertical-align:middle; width:auto;}
+table#formtablebk td {vertical-align:middle; width:auto; padding-left:4px;}
+table.icontable td {font-size:7.5pt; padding:4px 6px 4px 0; vertical-align:top;}
+table.icontable tr.header td {background-color: #cccccc; vertical-align:bottom;border-top:1px solid white;}
+table.icontable tr.header td.first {font-size:8.5pt; text-transform:uppercase;}
+table.icontable td.first {padding-left:8px;}
+table.icontable td.centered {text-align:center;}
+table.icontable p {display: block; margin: 0; padding-left: 24px;}
+table.rivalscoach {border:2px solid black; width:100%; margin-top: 3px;}
+table.rivalscoach td {background-color: #cdcdcd; font-size: 7.5pt; text-align: center; padding: 8px;}
+div.pdbinset {float:right; width:265px; text-align: left; margin:0 0 6px 3px; font-size: 7.5pt;}
+div#scoutmenu a.selectedscout {color: black; text-decoration: none;}
+*#scoutcontent {margin-top: 6px; padding-left:5px;}
+*#scoutcontent img {float:left; margin-right: 10px;}
+*#scoutcontent td {vertical-align: top; padding:0 2px 0 0;}
+*#scoutcontent td.scoutbio {font-style:italic; font-size: 7.5pt; vertical-align:top; color: #888888; margin-left: 10px; border-left: 1px solid #cccccc; padding-left: 10px; width: 150px;}
+div.latestrankingsscouting p.grayheader {margin:0 6px 6px 6px;}
+
+div#prospectsearch p.grayheader {text-transform: uppercase; color: #676767 ; font-weight: bold; margin:20px 0 0 0;}
+div#prospectsearch p.grayheader b {color: black;}
+p.searchheader {color: #676767; padding: 8px; margin:0;}
+div#prospectsearch p {padding-left: 8px;}
+table.bulletlists {width:100%;}
+table.bulletlists td {vertical-align: top; font-size: 7.5pt; font-weight: bold; padding: 2px;}
+div#prospectsearch table.bulletlists td {padding-left: 8px;}
+table.bulletlists a {font-weight: normal; margin: 0; padding-left: 13px; background-image: url(http://vmedia.rivals.com/images/bullet.gif); background-repeat:no-repeat;}
+div#advancedsearch {padding-left: 6px;}
+
+
+/* RANKINGS */
+
+table.prospectranking {width:100%;}
+table.prospectranking tr.header td {border-top: 0; font-weight: bold; text-transform: uppercase; padding-top: 8px; padding-bottom: 8px;}
+table.prospectranking td {padding: 4px; font-size: 7.5pt; border-top: 1px solid #cdcdcd; text-align: center;}
+table.prospectranking td.position {background-color: #d2d2d2; width:50px;}
+table.prospectranking td.htwt {background-color: #e7e7e7; text-align: center; width:70px;}
+table.prospectranking td.schools {background-color: #f5f5f5; padding-left: 12px; width:100px; text-align: left;}
+table.prospectranking td.rank {font-weight: bold; vertical-align: top; text-align: right; width:15px; font-size: 8pt;}
+table.prospectranking td.name {color: #666666; text-align: left;}
+table.prospectranking td.name a {font-weight: bold; font-size: 8pt;}
+table.prospectranking tr.commentary td {border:0; text-align: left;}
+table.prospectranking tr.commentary img {border: 1px solid black; float:left; margin-right: 8px;}
+p#ranktitle {margin: 10px 0 10px 6px;}
+
+
+
+
+/* QUIZZES */
+
+.quizcheck {margin-top:8px; padding-left:16px;}
+.quizcheckright {margin-top:8px; padding-left:16px; background-image:url(http://vmedia.rivals.com/images/quiz/checkright.jpg); background-repeat:no-repeat;}
+.quizcheckwrong {margin-top:8px; padding-left:16px; background-image:url(http://vmedia.rivals.com/images/quiz/checkwrong.jpg); background-repeat:no-repeat;}
+.quiztitle {background-color: #060606; background-image:url(http://vmedia.rivals.com/images/quiz/quiztitlebg.gif); background-repeat: repeat-x; display:block; color: white; font-weight: bold;}
+.quizsubtitle {background-color:#efefef; display:block; height: 28px; margin-bottom: 16px;}
+
+
+
+
+/* MISCELLANEOUS */
+
+.headlinetop {margin: 0 0 2px 0; padding-left: 13px; color: #777777; font-weight: bold;}
+*.blank {display: block; margin: 0; padding-left: 13px;}
+div#rivals365 {float:right; height: 195px; width: 252px; margin: 0; padding: 0;}
+div#trivia {float:right; height:178px; width: 252px; text-align: center;}
+
+a.ContentDbAnchor       {text-decoration:none; font-weight:normal;}
+a:hover.ContentDbAnchor {text-decoration:underline; font-weight:normal;}
+
+
+/* DYNAMIC */
+
+DIV#comboBoxHeads { color: #FFFFFF;
+font-family: Trebuchet MS, Verdana;
+font-size: 11px;
+margin-left: 8px;
+height: 14px;
+}
+
+
+DIV.M1O{z-index:11; position:absolute; left:650px; top:24px;}
+DIV.M1C{z-index:11; position:absolute; left:650px; top:24px; clip:rect(auto auto 50px auto)}
+
+DIV.M2O{z-index:11; position:absolute; left:815px; top:24px;}
+DIV.M2C{z-index:11; position:absolute; left:815px; top:24px; clip:rect(auto auto 50px auto)}
+
+
+div#sitemenus {padding:4px;}
+div#header {background-color: black; background-repeat: no-repeat; background-position: bottom left; height:90px; overflow:hidden;}
+div#header1 {background-color: black; background-repeat: no-repeat; background-position: bottom left; height:90px; overflow:hidden;}
+div#header2 {background-color: black; background-repeat: no-repeat; background-position: bottom left; height:90px; overflow:hidden;}
+div#header3 {background-color: black; background-repeat: no-repeat; background-position: bottom left; height:90px; overflow:hidden;}
+div#header4 {background-color: black; background-repeat: no-repeat; background-position: bottom left; height:90px; overflow:hidden;}
+div#headervideo {background-color: black; background-repeat: no-repeat; background-position: bottom left; height:60px; overflow:hidden;}
+table#header {background-repeat: no-repeat; background-position: top left; height: 88px; overflow:hidden;}
+table#header1 {background-repeat: no-repeat; background-position: top left; height: 88px; overflow:hidden;}
+table#header2 {background-repeat: no-repeat; background-position: top left; height: 88px; overflow:hidden;}
+table#header3 {background-repeat: no-repeat; background-position: top left; height: 88px; overflow:hidden;}
+table#header4 {background-repeat: no-repeat; background-position: top left; height: 88px; overflow:hidden;}
+table#headervideo {background-color: black; background-repeat: no-repeat; background-position: bottom left; height:60px; overflow:hidden;}
+p.primaryheader {display:block; color: white; padding: 5px 8px 5px 8px;}
+div.selectorheader p {margin:0; text-transform: uppercase; font-size: 7pt; color:white; font-weight: bold; display: block; border-right: 1px solid white; float:left; height:20px; line-height:20px; padding: 0 11px 0 10px;}
+div.selectorheader a.selected {font-size: 7pt; text-transform: uppercase; color:white; font-weight: bold; margin:0; display: block; height:20px; line-height: 20px; padding: 0 11px 0 10px; border-right: 1px solid white; text-decoration:none; float:left;}
+img.fontnow {display:block;}
+table.collegechoices tr.header td.schools {border-left: 0;}
+tr.selectorheader p {margin:0; text-transform: uppercase; font-size: 7pt; color:white; font-weight: bold; display: block; border-right: 1px solid white; float:left; height:20px; line-height:20px; padding: 0 0px 0 4px;}
+tr.selectorheader a.selected {font-size: 7pt; text-transform: uppercase; text-align:center; color:white; font-weight: bold; margin:0; display: block; height:20px; line-height: 20px; padding: 0 0 0 0; border-right: 1px solid white; text-decoration:none; float:left;}
+tr#committed td {font-size:10px;}

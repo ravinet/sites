@@ -1,0 +1,56 @@
+PHTTP74.119.118.89"Å
+—GET /event?a=1547&v=2.0.0&p0=e%3Dexd%26ci%3D&p1=e%3Dexd%26site_type%3Dd&p2=e%3Dexd%26ui_cpm%3D%26ui_a%3D-1%26ui_lg%3D0%26ui_channel%3D3%26ui_t1%3D%26ui_t2%3D%26ui_t3%3D&p3=e%3Dvh%26si%3D0&p4=e%3Ddis HTTP/1.1
+Host: widget.criteo.com
+Connection: keep-alive
+Accept: */*
+vUser-Agent: Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/31.0.1650.63 Safari/537.36
+"Referer: http://www.booking.com/
+$Accept-Encoding: gzip,deflate,sdch
+!Accept-Language: en-US,en;q=0.8
+
+*ﬂ
+HTTP/1.1 200 OK
+Cache-Control: no-cache
+Pragma: no-cache
+7Content-Type: application/x-javascript; charset=utf-8
+Expires: -1
+Server: Microsoft-IIS/7.5
+4P3P: CP="NON DSP COR CURa PSA PSD OUR BUS NAV STA"
+ySet-Cookie: uid=21770f3a-9772-4c42-b1bf-2d2ad626fc6f; domain=.criteo.com; expires=Fri, 09-Jan-2015 13:43:04 GMT; path=/
+ySet-Cookie: uid=21770f3a-9772-4c42-b1bf-2d2ad626fc6f; domain=.criteo.com; expires=Fri, 09-Jan-2015 13:43:04 GMT; path=/
+õSet-Cookie: uic=*1MoLOqjjilK6ypD0xPW5ag4qvclDr1wH1rXKWdymR0ZyW6VZ3G6w3hRG8QbcBq5H5D6rE75yDpIigfS0b4OtEZ1zi%2bg13GFEwaDEP5GyGkzxhgO2Wss7%2f5JcVt8zVYJ7NFlCH3h%2b%2baBEF1BqwDy%2fn36V6gnr3jmAFw09n4uNmDyfxg3W4pzlA%2fWCwSi75iIywirxJ67uBnAnJll2SOlyz14%2ftNfHMW%2fe2Otkq5pLLj0TjWXDPinseKlk1uEL2z4lUe1aom0NTJ%2blJ3tmPI0yTOBfFL%2fbCtcq%2beXgoaOMMIOw%3d; domain=.criteo.com; expires=Wed, 09-Jul-2014 12:43:04 GMT; path=/
+äSet-Cookie: acdc=*1YH9eyhwwHX6YTINX5s5pGfRW%2faUe7TeHL6sxGW%2bBvDg%3d; domain=.criteo.com; expires=Wed, 09-Jul-2014 12:43:04 GMT; path=/
+wSet-Cookie: udc=*1AjVT%2bgfw%2f8PyH2Istroh8g%3d%3d; domain=.criteo.com; expires=Wed, 09-Jul-2014 12:43:04 GMT; path=/
+uSet-Cookie: udi=*1J%2fKUQwfeYqx1PVAD9MJxfg%3d%3d; domain=.criteo.com; expires=Fri, 10-Jan-2014 13:43:04 GMT; path=/
+%Date: Thu, 09 Jan 2014 13:43:04 GMT
+Content-Length: 942
+∞
+/*<!--*/(function() {
+var qss = '&cb=' + Math.floor(Math.random() * 99999999999);
+try {
+    qss += '&ref=' + encodeURIComponent(document.referrer);
+} catch (e) { }
+try {
+    qss += '&sc_r=' + encodeURIComponent(screen.width + 'x' + screen.height);
+} catch (e) { }
+try {
+    qss += '&sc_d=' + encodeURIComponent(screen.colorDepth);
+} catch (e) { }
+
+var callDis = function(pid, domain) {
+    var qr = (document.location.protocol == 'https:' ? 'https:' : 'http:') + '//' + domain + '/dis/dis.aspx';
+    var p = document.createElement('iframe');
+    p.width = p.height = '0';
+    p.style.display = 'none';
+    p.src = (qr + '?p=' + pid + qss).substring(0, 2000);
+
+    var c = document.getElementById('criteoTagsContainer');
+    if (c) {
+        c.appendChild(p);
+    } else {
+        criteo_q.push({ event: 'appendTag', element: p });
+    }
+};
+qss += '&site_type=d';
+callDis(1547, 'dis.sv.us.criteo.com');
+})();/*-->*/

@@ -1,0 +1,25 @@
+PHTTP50.18.252.211"Ý
+GET / HTTP/1.1
+Host: www.digg.com
+Connection: keep-alive
+TAccept: text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8
+vUser-Agent: Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/31.0.1650.63 Safari/537.36
+$Accept-Encoding: gzip,deflate,sdch
+!Accept-Language: en-US,en;q=0.8
+
+*‰
+ HTTP/1.1 301 Moved Permanently
+Content-Type: text/html
+%Date: Thu, 09 Jan 2014 01:16:20 GMT
+Location: http://digg.com/
+Server: nginx/1.1.19
+Content-Length: 185
+Connection: keep-alive
+»
+<html>
+<head><title>301 Moved Permanently</title></head>
+<body bgcolor="white">
+<center><h1>301 Moved Permanently</h1></center>
+<hr><center>nginx/1.1.19</center>
+</body>
+</html>

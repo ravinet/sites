@@ -1,0 +1,108 @@
+PHTTP72.21.91.19"ü
+dGET /ct/creative_add_on.js?w=728&h=90&pos=top-right&zindex=0&ci=0Cq9LrpgWJ&ei=GOOGLE&ob=1 HTTP/1.1
+Host: cti.w55c.net
+Connection: keep-alive
+Accept: */*
+vUser-Agent: Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/31.0.1650.63 Safari/537.36
+ÔReferer: http://cdn.w55c.net/i/0RjF2L1jV9_977240159.html?&rtbhost=rtb02-c.us.dataxu.net&btid=NTJDREY5NUYwMDAyRUYzNTBBMzA1ODZGMTQwMDVGQzB8R0Z6dVRKakFISnwxMzg5MjMwNDMxMjUzfDF8MEZKbTNUUUpXMnwwUmpGMkwxalY5fDk0NjgyZTliLWU3MjAtNGMyMy05MDMyLTg1MDNmNTIyYmRjZHwyNTAwMDB8fHx8MTIuMFB8VVNE&ei=GOOGLE&wp_exchange=Us35XwAC7zUKMFhvAABfwPXQgUVUnkPnoKTekA&psid=MTQwNDAwNjc3MQ&js=0&ob=1&ccw=SUFCMTktOSMwLjB8SUFCMTkjMC4wfElBQjktMzAjMC4wfElBQjkjMC4wfElBQlgzMSMxLjA&ci=0Cq9LrpgWJ&s=http%3A%2F%2Fwww.gamefaqs.com%2F&ts=1389230431269&tpce=http://adclick.g.doubleclick.net/aclk%3Fsa%3Dl%26ai%3DCqWtuX_nNUrXeC--wwQHAv4GgAbXMvpQCw-7YlQ_AjbcBEAEgAFCAx-HEBGDJlu6IhKTsD4IBF2NhLXB1Yi0xOTkxNjc5NjI0MzMxMzY5oAGxtNXsA8gBCeACAKgDAaoElQFP0B_Oqs2f81_ulQZ3uPb4EmHCZq-lIX2Ja0yhITrd01auKgQ_NNIOCXXLYY7-gdzmMWn7BBASNhG6umV1jsjMtz4Mwf9xNb09M-fcGiuv_pJR3RUSZT1WBoAbsmrci5AM1RmdFQlQovkP3qOY_2oGohIiQSI_cZ6NLe5tegvDxCSuvHqDaz_-j_NpyXT4gwpd7IENcuAEAYAGnMCpqtaP3eNooAYh%26num%3D1%26sig%3DAOD64_3lEpM47E6yQyQNYwlQ-IjMaiTDbA%26client%3Dca-pub-1991679624331369%26adurl%3D&c=US&r=MA&m=506&pc=02139&rnd=9035736835130474&l=ZW58fA&v=0&euid=LTc4NjkxMDEzNV9HRU4
+$Accept-Encoding: gzip,deflate,sdch
+!Accept-Language: en-US,en;q=0.8
+9Cookie: wfivefivec=8d79104b-071e-4f67-8763-413406b24926
+
+*³
+HTTP/1.1 200 OK
+Accept-Ranges: bytes
+*Cache-Control: no-cache, must-revalidate
+Content-Type: text/javascript
+%Date: Thu, 09 Jan 2014 01:20:32 GMT
+Etag: "500119579"
+(Expires: Fri, 01 Jan 1990 00:00:00 GMT
+.Last-Modified: Tue, 06 Sep 2011 18:49:28 GMT
+xP3P: policyref="https://cts.w55c.net/ct/p3p_policy_ref.xml", CP="UNI PUR COM INT STA OTC STP OUR CUR TAIo COR DSP NOI"
+Pragma: no-cache
+Server: ECS (ord/4CC1)
+X-Cache: HIT
+Content-Length: 2384
+Ò
+/**
+ * @author nforman
+ */
+
+(function() {
+  var script_tag = dx_find_my_script_tag();
+  var params_hash = dx_get_param_hash_from_element(script_tag);
+  
+  var oba_tag = dx_new_oba_tag(params_hash);
+  if (oba_tag) {
+    document.write(oba_tag);
+  }
+  
+  var cookie_match = dx_new_cookie_match_tag(params_hash);
+  if (cookie_match) {
+    document.write(cookie_match);
+  }
+})();
+
+function dx_new_oba_tag(params_hash) {
+  // no defaulting required params: if not present, do not add tag
+  if (!params_hash['w'] || !params_hash['h'] || !params_hash['pos'] || !params_hash['ci'] || !params_hash['ei'] || !params_hash['ob']) {
+    return;
+  }
+  if (params_hash['ob'] == '0') {
+    return;
+  }
+  var src = '<scr'+'ipt type="text/javascript" src="http://c.betrad.com/surly.js?;coid=292;nid=2532';
+  src = src + ';ad_w=' + params_hash['w'];
+  src = src + ';ad_h=' + params_hash['h'];
+  src = src + ';position=' + params_hash['pos'];
+  src = src + ';ecaid=' + params_hash['ci'];
+  if (params_hash['z-index']) {
+    src = src + ';ad_z=' + params_hash['z-index'];
+  }
+  src = src + '"></scr'+'ipt>'
+  return src;
+}
+
+function dx_new_cookie_match_tag(params_hash) {
+  // no defaulting required params: if not present, do not add tag
+  if (!params_hash['ei']) {
+    return;
+  }
+  return '<iframe width="0" height="0" border="0" frameborder="0" src="http://cti.w55c.net/ct/cms-2c.html?ei='+params_hash['ei']+'" style="display:none;" ></iframe>';
+}
+
+function dx_get_param_hash_from_element(element) {
+  var src = element.getAttribute('src');
+  return dx_get_param_hash_from_url(src);
+}
+
+function dx_get_param_hash_from_url(src) {
+  if (!src) {
+    return {};
+  }
+  var retvalue = {};
+  var src_split = src.split('?');
+  if (src_split && (src_split.length > 1)) {
+    var query_string = src_split[1];
+    var query_pairs = query_string.split('&');
+    if (query_pairs) {
+      for (var i=0; i<query_pairs.length; i++) {
+        var name_value = query_pairs[i].split('=');
+        if (name_value && (name_value.length >= 2)) {
+          retvalue[name_value[0]] = name_value[1];
+        }
+      }
+    }
+  }
+  return retvalue;
+}
+
+/**
+ * Contract: must only be called while the page is loading.
+ * Found at http://feather.elektrum.org/book/src.html.
+ */
+function dx_find_my_script_tag() {
+  var scripts = document.getElementsByTagName('script');
+  var index = scripts.length - 1;
+  return scripts[index];
+}

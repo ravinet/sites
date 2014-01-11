@@ -1,0 +1,672 @@
+PHTTP176.32.100.36"ª
+)GET /js/jquery.pricingTable.js HTTP/1.1
+Host: aws.amazon.com
+Connection: keep-alive
+Accept: */*
+vUser-Agent: Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/31.0.1650.63 Safari/537.36
+,Referer: http://aws.amazon.com/cloudfront/
+$Accept-Encoding: gzip,deflate,sdch
+!Accept-Language: en-US,en;q=0.8
+ÈCookie: x-wl-uid=1rJX21O2M8ShS7v+jXpD1SnsatfsJvOhycm9IyFb3OYaj2Rqt0PUrV2OEp6Zyv8UnZ6ibtZANqtY=; aws-ubid-main=178-2787844-0594645; aws-session-id-time=2082758401l; aws-session-id=175-2966859-6786824
+
+*Ï¦
+HTTP/1.1 200 OK
+%Date: Thu, 09 Jan 2014 21:18:32 GMT
+Server: Server
+X-Frame-Options: SAMEORIGIN
+.Last-Modified: Fri, 03 Jan 2014 22:56:25 GMT
+ETag: "51d3-4ef18d1cd7840"
+Accept-Ranges: bytes
+Content-Length: 20947
+"Cache-Control: max-age=0, public
+(Expires: Thu, 09 Jan 2014 21:18:32 GMT
+(Content-Type: application/x-javascript
+Vary: User-Agent
+Õ£
+(function($) {
+    var PRICING_COOKIE_NAME        = 'aws_pricing';
+    var PRICING_COOKIE_EXPIRY_DAYS = 30;
+    var DEFAULT_CURRENCY           = 'USD';
+    var DEFAULT_DATA_TYPE          = 'json';
+    var DEFAULT_JSONP_CALLBACK     = 'callback';
+
+    var DEFAULT_LANG               = 'en';
+    var LANGS_NUM_COMMA            = ['de', 'es', 'fr'];
+
+    var DICT_DIV_SELECTOR          = 'div.pricingTableDictionary';
+    var DICT_KEY_PREFIX            = 'dictkey-';
+
+    var hasOwn                    = Object.prototype.hasOwnProperty;
+    var registeredTableContainers = [];
+    var syncEventsRegistered      = false;
+    var preferences               = new Preferences();
+
+    $.fn.pricingTable = function(options) {
+        var tableContainers = this;
+
+        $('.progress .reload', tableContainers).live('click', function() {
+            retry.call($(this).closest('.pricingTable'));
+            return false;
+        });
+
+        if ( ! options.defaultCurrency ) {
+            options.defaultCurrency = preferences.getCurrency() ||
+                determineCurrencyFromURL() ||
+                DEFAULT_CURRENCY;
+        }
+
+        if ( ! options.dataType ) {
+            options.dataType = DEFAULT_DATA_TYPE;
+        }
+      
+        if ( ! options.jsonpCallback ) {
+            options.jsonpCallback = DEFAULT_JSONP_CALLBACK;
+        }
+
+        if ( options.dict && options.dict.jquery && options.dict.is('select') ) {
+            var newDict = {};
+            $('option', options.dict).each(function() {
+                newDict[this.value] = $.trim(this.innerHTML);
+            });
+            options.dict = newDict;
+        }
+
+        applyTableSyncEventListeners(document);
+
+        tableContainers.each(function() {
+            $(this).data('options', options)
+        });
+
+        initialize.call(tableContainers, options, true);
+
+        return tableContainers;
+    };
+
+    function retry() {
+        initialize.call(this, this.data('options'), false);
+    };
+
+    function initialize(options, registerContainers) {
+        var tableContainers = this;
+        
+        tableContainers.each(function(i, elem) {
+            var container = $(this);
+            showProgress.call(container,
+                              AWS.Dict['loadingPricingData'],
+                              {addClass: 'loading', removeClass: 'error'});
+
+            if ( registerContainers ) {
+                registeredTableContainers.push(container);
+            }
+        });
+
+        getAndApplyModel.call(tableContainers, options, function(model) {
+            tableContainers.each(function() {
+                var container = $(this);
+
+                var destination;
+                if ( options.template ) {
+                    destination = $($(options.template).html());
+                    container.append(destination);
+                }
+
+                // Isolate the things in the template div from the DOM elements
+                // that this plugin will add (e.g. currency & region controls)
+                // so that we won't have to re-render the latter over and over again.
+                container.wrapInner('<div class="puretmpl"/>');
+
+                // Unfortunately, we can't supply a jQuery object to
+                // wrapInner() and then reuse that object. Apparently
+                // the object is cloned so we lose our reference to
+                // it.
+                destination = $('div.puretmpl:first', container);
+
+
+                container.data('model', model);
+                container.data('destination', destination);
+                container.data('templateRenderer',
+                               destination.compile(options.directives));
+
+                selectCurrency.call(container, options.defaultCurrency);
+                constructTableControls.call(container);
+
+                // selectCurrency() replaces the 'destination' data
+                // member with a new object, so we have to get the
+                // destination again from the container.
+                showProgress.call(container.data('destination'),
+                                  null,
+                                  {removeClass: 'loading'});
+            });
+        });
+    }
+
+    function applyTableSyncEventListeners(to) {
+        if ( syncEventsRegistered ) {
+            return;
+        }
+
+        $(to).bind('syncCurrencies.pricingTable', function(e, currency) {
+            preferences.setCurrency(currency).save();
+
+            $.each(registeredTableContainers, function() {
+                selectCurrency.call(this, currency);
+                selectRegion.call(this);
+            });
+        });
+
+        $(to).bind('syncRegions.pricingTable', function(e, region) {
+            preferences.setRegion(region).save();
+
+            $.each(registeredTableContainers, function() {
+                selectRegion.call(this, region);
+            });
+        });
+
+        syncEventsRegistered = true;
+    }
+
+    function showProgress(msg, opts) {
+        var tryAgainText = AWS.Dict['tryAgainLink'];
+
+        this.each(function(i, container) {
+            var progDisplay = $('.progress', container);
+
+            if ( ! progDisplay.length ) {
+                progDisplay = $('<div/>').addClass('progress');
+                $(container).prepend(progDisplay);
+            }
+
+            if ( msg == null ) {
+                progDisplay.empty().hide();
+                return;
+            } else {
+                progDisplay.html(msg).show();
+            }
+
+            if ( opts.showReload ) {
+                progDisplay
+                    .append($('<span class="tryAgain"/>')
+                            .append(' (')
+                            .append($('<a href="#"/>').html(tryAgainText).addClass('reload'))
+                            .append(')'));
+            }
+
+            progDisplay
+                .removeClass(opts.removeClass)
+                .addClass(opts.addClass);
+
+            if ( opts.addClass == 'error' ) {
+                progDisplay.prepend('<span class="sprite"/>');
+            }
+        });
+
+        return this;
+    }
+
+    function getDomDict() {
+        var retval = {};
+        var regexp = new RegExp("\\b" + DICT_KEY_PREFIX + "(\\w+)\\b", "g");
+
+        $(DICT_DIV_SELECTOR).children().each(function() {
+            var item = $(this);
+            var classes = item.attr('class');
+            var match = null;
+
+            while (match = regexp.exec(classes)) {
+                retval[match[1]] = item.html();
+            }
+        });
+
+        return retval;
+    }
+
+    function getAndApplyModel(options, callback) {
+        var containers = this;
+
+        var extendAndCallback = function(model) {
+            model.dict = $.extend({}, AWS.Dict, options.dict, getDomDict());
+            extendModel(model);
+            return callback(model);
+        };
+
+        var errorCallback = function(jqXHR, textStatus, errorThrown) {
+            showProgress.call(containers,
+                              AWS.Dict['errorRetrievingPricingData'],
+                              {addClass: 'error', removeClass: 'loading', showReload: true});
+
+            if ( textStatus == 'parsererror' ) {
+                error('The document at ' + options.model + ' could not be parsed. ' +
+                      'Use a JSON validator such as http://jsonlint.com to find the error.',
+                      true);
+            } else {
+                error('Loading ' + options.model + ' failed to load (' +
+                      jqXHR.status + ' ' + jqXHR.statusText +
+                      '; textStatus: ' + textStatus +
+                      '; errorThrown: ' + errorThrown + ')');
+            }
+        };
+
+        if ( ! options.model ) {
+            throw "'model' must be either a URL to a JSON file or an Object.";
+        }
+
+        if ( $.isPlainObject(options.model) ) {
+            extendAndCallback(options.model);
+        } else if ( typeof(options.model) == 'string' && isNaN(options.model) ) {
+            var ajaxOptions = {
+                url: options.model,
+                dataType: options.dataType,
+                success: extendAndCallback,
+                error: errorCallback
+            };
+            
+            if ( options.dataType === 'jsonp' ) {
+                ajaxOptions.timeout = 5000;
+                ajaxOptions.jsonpCallback = options.jsonpCallback;
+            } else {
+                // json
+                ajaxOptions.ifModified = true;
+            }
+
+            $.ajax(ajaxOptions);
+        } else {
+            throw "Don't know what to do with supplied model";
+        }
+    }
+
+    function extendModel(model) {
+        var dictionary = new Dictionary(model.dict);
+
+        if ( hasOwn.call(model, '_lookup') ) {
+            throw "Model cannot have a '_lookup' attribute";
+        }
+        model._lookup = function(value) {
+            return dictionary.lookup(value);
+        };
+
+
+        if ( hasOwn.call(model, '_formatCurrency') ) {
+            throw "Model cannot have a '_formatCurrency' attribute";
+        }
+        model._formatCurrency = function() {
+            var currency = model._activeCurrency || options.defaultCurrency;
+            var rate     = dictionary.lookup(this.rate || model.config.rate);
+
+            return (new Currency(currency)).formatPrice(this.prices, rate, dictionary);
+        };
+    }
+
+    function getCurrency() {
+        return this.data('model')._activeCurrency;
+    }
+
+    function setCurrency(currency) {
+        this.data('model')._activeCurrency = currency;
+    }
+
+    function getRegion() {
+        return this.data('model')._selectedRegion;
+    }
+
+    function setRegion(region) {
+        this.data('model')._selectedRegion = region;
+    }
+
+    function lookup(text) {
+        return this.data('model')._lookup(text);
+    }
+
+    function renderTable(currency) {
+        var model = this.data('model');
+
+        if ( currency ) {
+            // Make sure the selected currency is in the config
+            if ( $.inArray(currency, model.config.currencies) < 0 ) {
+                currency = DEFAULT_CURRENCY;
+            }
+
+            setCurrency.call(this, currency);
+        } else {
+            currency = getCurrency.call(this);
+        }
+
+        var newDestination = $(this.data('templateRenderer')(model));
+
+        // Now that we have a new DOM element, we have to replace the
+        // existing destination in the DOM as well as the container's
+        // reference to the destination DOM element.
+        this.data('destination').replaceWith(newDestination);
+        this.data('destination', newDestination);
+
+        $('.controls .currency select', this)
+            .val(currency);
+
+        showProgress.call(this, null, {removeClass: 'loading'});
+    }
+
+    function handleRegionSelect(e) {
+        var region = $(':selected', e.target).val();
+        this.trigger('syncRegions.pricingTable', [region]);
+    }
+
+    function handleCurrencySelect(e) {
+        var currency = e.target.value;
+        this.trigger('syncCurrencies.pricingTable', [currency]);
+    }
+
+    function selectCurrency(currency) {
+        renderTable.call(this, currency);
+    }
+
+    function selectRegion(region) {
+        var regionSelector = $('.controls .reg select', this);
+
+        if ( region ) {
+            // It's conceivable, albeit unlikely, that not all tables
+            // have all the same regions (this would probably be
+            // considered a configuration error).
+            if ( ! $('option[value=' + region + ']', regionSelector).length ) {
+                return;
+            }
+
+            setRegion.call(this, region);
+        } else {
+            region = getRegion.call(this);
+        }
+
+        regionSelector.val(region);
+
+        this.find('.content.' + region).each(function() {
+            $(this).show()
+                .siblings('.content').hide();
+        });
+    }
+
+    function constructTableControls() {
+        var container = this;
+
+        var regions     = [];
+        var regionCodes = {};
+        var isFirst     = true;
+
+        var model = container.data('model');
+
+        $('.content', this).each(function() {
+            var content = $(this);
+
+            var title = $('caption', content).html() || content.attr('title');
+
+            var region = getRegionFromClass(content);
+            regionCodes[region] = true;
+
+            regions.push({
+                region: region,
+                title: $.trim(title)
+            });
+        });
+
+        var controls = $('<div class="controls"/>');
+        this.prepend(controls);
+
+        controls.append(buildRegionControl.call(this, regions));
+
+        (function() {
+            var currencyControl = buildCurrencyControl.call(container);
+            var visibility      = ( model.config.currencies.length > 1 ) ? 'visible' : 'hidden';
+
+            controls.append(currencyControl.css('visibility', visibility));
+        })();
+
+        // Make sure the preferred region is actually defined in the tables
+        selectRegion.call(this, (function() {
+            var defaultRegion = preferences.getRegion();
+            if ( regionCodes[defaultRegion] ) {
+                return defaultRegion;
+            }
+            return regions[0].region;
+        })());
+    }
+
+    function buildRegionControl(regions) {
+        var tableContainer = $(this);
+
+        var select = $('<select/>').change(function(e) {
+            handleRegionSelect.call(tableContainer, e);
+        });
+
+        $.each(regions, function(i, info) {
+            select.append($('<option/>')
+                          .val(info.region)
+                          .html(info.title));
+        });
+
+        var label = lookup.call(this, 'Region');
+        return $('<div class="reg"/>').html(label + ':').append(select);
+    }
+
+    function buildCurrencyControl() {
+        var tableContainer = $(this);
+
+        var select = $('<select/>').change(function(e) {
+            handleCurrencySelect.call(tableContainer, e);
+        });
+
+        var unknownCurrencies = {};
+        var hasUnknownCurrencies = false;
+
+        if ( ! this.data('model').config.currencies ) {
+            throw "No 'currencies' attribute could be found under 'config'";
+        }
+
+        $.each(this.data('model').config.currencies, function(i, curr) {
+            if ( ! hasOwn.call(Currency.prototype.fmts, curr) ) {
+                hasUnknownCurrencies    = true;
+                unknownCurrencies[curr] = true;
+                return;
+            }
+
+            var displayValue = lookup.call(tableContainer,
+                                           Currency.getLabel(curr));
+            select.append($('<option/>')
+                          .val(curr)
+                          .html(displayValue));
+        });
+
+        if ( hasUnknownCurrencies ) {
+            var unknowns = [];
+            $.each(unknownCurrencies, function(c) {
+                unknowns.push(c);
+            });
+
+            error('The following currencies are unknown to jquery.pricingTable.js: ' + unknowns.join(', '),
+                  true);
+        }
+
+        select.val(getCurrency.call(tableContainer));
+
+        var label = lookup.call(this, 'Currency');
+        return $('<div class="currency"/>').html(label + ':').append(select);
+    }
+
+    function getRegionFromClass(elem) {
+        return (elem.attr('class').match(/(reg-\S+)/))[1];
+    }
+
+    function error(msg, useAlertIfNoConsole) {
+        if ( window.console && console.error ) {
+            console.error(msg);
+        } else {
+            if ( useAlertIfNoConsole ) {
+                alert(msg);
+            }
+        }
+    }
+
+    function determineCurrencyFromURL() {
+        var uri = window.location.pathname;
+
+        if ( uri.match(/^\/jp\b/) ) {
+            return 'JPY';
+        }
+
+        return null;
+    }
+
+    function determineLanguageFromURL() {
+        return AWSGlobalNav.I18n.getLanguageFromPath(window.location.pathname) || DEFAULT_LANG;
+    }
+
+    function Preferences() {
+        this.cookie = JSON.parse($.cookie(PRICING_COOKIE_NAME)) || {};
+    }
+    (function() {
+        var proto = Preferences.prototype;
+
+        proto.getCurrency = function() {
+            return this.cookie.curr;
+        };
+        proto.setCurrency = function(curr) {
+            this.cookie.curr = curr;
+            return this;
+        };
+        proto.getRegion = function() {
+            return this.cookie.reg;
+        };
+        proto.setRegion = function(reg) {
+            this.cookie.reg = reg;
+            return this;
+        };
+        proto.save = function() {
+            $.cookie(PRICING_COOKIE_NAME, JSON.stringify(this.cookie), {
+                expires: PRICING_COOKIE_EXPIRY_DAYS,
+                path: '/',
+                secure: false
+            });
+        };
+    })();
+
+    /*
+     * Currency prototype
+     */
+    function Currency(currencyCode) {
+        this.currency = currencyCode;
+    }
+    Currency.getLabel = function(curr) {
+        return Currency.prototype.fmts[curr].label;
+    };
+    // Use IS0 4217 Currency Abbreviations
+    // (http://www.jhall.demon.co.uk/currency/by_abbrev.html)
+    Currency.prototype.fmts = {
+        USD: {
+            pricing: '$%s %s',
+            label: '$&nbsp;&nbsp;#{US Dollar}'
+        },
+        GBP: {
+            pricing: '&pound;%s %s',
+            label: '&pound;&nbsp;&nbsp;#{British Pound}'
+        },
+        JPY: {
+            pricing: '%s&yen; %s',
+            label: '&yen;&nbsp;&nbsp;#{Japanese Yen}'
+        },
+        EUR: {
+            pricing: '&euro;%s %s',
+            label: '&euro;&nbsp;#{Euro}'
+        }
+    };
+    Currency.prototype.formatPrice = function(valueMap, label, dictionary) {
+        var value = valueMap[this.currency];
+
+        if ( value == null ) {
+            return '<span class="notFound">unspecified</span>';
+        }
+
+        if ( ! /\d/.test(value) ) {
+            return dictionary.lookup(value);
+        }
+
+        var lang = determineLanguageFromURL();
+
+        if ( LANGS_NUM_COMMA.indexOf(lang) >= 0 ) {
+            value = value.replace(/[.,]/g, function(match) {
+                return match === "." ? "," : ".";
+            });
+        }
+
+        var format = this.fmts[this.currency].pricing;
+
+        return format.replace(/%s/, value).replace(/%s/, label || '');
+    };
+
+
+    /*
+     * Dictionary prototype
+     */
+    function Dictionary(terms) {
+        this.terms = terms || {};
+    }
+    Dictionary.prototype.lookup = function(string) {
+        if ( ! string ) {
+            return '';
+        }
+
+        if ( this.terms[string] ) {
+            return this.terms[string];
+        }
+
+        var that = this;
+        string = string.replace(/#{(.+?)}/g, function($0, $1) {
+            return that.terms[$1] || $1;
+        });
+
+        return string;
+    };
+
+
+    /*
+     * The following was lifted from jQuery 1.5 (feature was added in
+     * 1.4 but we're not up to that version just yet).
+     *
+     * TODO: I've upgraded to 1.5.1....remove this.
+     */
+    function isPlainObject(obj) {
+        var _type = function(obj) {
+		    return obj == null ?
+			    String(obj) :
+			    class2type[ toString.call(obj) ] || "object";
+	    };
+
+        var _isWindow = function( obj ) {
+		    return obj && typeof obj === "object" && "setInterval" in obj;
+	    };
+
+        // Must be an Object.
+        // Because of IE, we also have to check the presence of the constructor property.
+        // Make sure that DOM nodes and window objects don't pass through, as well
+        if ( !obj || _type(obj) !== "object" || obj.nodeType || _isWindow(obj) ) {
+            return false;
+        }
+
+        // Not own constructor property must be Object
+        if ( obj.constructor &&
+             ! hasOwn.call(obj, "constructor") &&
+             ! hasOwn.call(obj.constructor.prototype, "isPrototypeOf") )
+        {
+            return false;
+        }
+
+        // Own properties are enumerated firstly, so to speed up,
+        // if last one is own, then all properties are own.
+
+        var key;
+        for ( key in obj ) {}
+
+        return key === undefined || hasOwn.call(obj, key);
+    }
+
+    // Also lifted from jQuery 1.5, required for isPlainObject()
+    var class2type = {};
+    $.each("Boolean Number String Function Array Date RegExp Object".split(" "), function(i, name) {
+	    class2type[ "[object " + name + "]" ] = name.toLowerCase();
+    });
+})(jQuery);

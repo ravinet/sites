@@ -1,0 +1,34 @@
+PHTTP208.71.121.1"Í
+ÅGET /t/v1/imp?migAgencyId=66&migSource=mmind&migTrackDataExt=17366047;8378162&migRandom=258915440&migTrackFmtExt=ad;pl HTTP/1.1
+Host: t.mookie1.com
+Connection: keep-alive
+TAccept: text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8
+vUser-Agent: Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/31.0.1650.63 Safari/537.36
+óReferer: http://www.businessweek.com/dynamic_frames/ads-v2.html?tile=6&size=88x31%2C1x1&tz=sponsored_by_companies_and_industries&pt=t6&ord=1528370103
+$Accept-Encoding: gzip,deflate,sdch
+!Accept-Language: en-US,en;q=0.8
+
+*˝
+HTTP/1.1 302 Found
+%Date: Fri, 10 Jan 2014 16:47:59 GMT
+ Server: Apache/2.2.3 (Red Hat)
+Cache-Control: no-cache
+Pragma: no-cache
+'P3P: CP="NOI DSP COR NID CUR OUR NOR"
+jSet-Cookie: id=633768080531448; path=/; expires=Mon, 09-Feb-15 16:47:59 GMT; path=/; domain=.mookie1.com
+zSet-Cookie: mdata=1|633768080531448|1389372479; path=/; expires=Mon, 09-Feb-15 16:47:59 GMT; path=/; domain=.mookie1.com
+lSet-Cookie: OAX=FFn6YlLQJD8AACmq; path=/; expires=Mon, 09-Feb-15 16:47:59 GMT; path=/; domain=.mookie1.com
+ÅLocation: /t/v1/imp/cc?migAgencyId=66&migSource=mmind&migTrackDataExt=17366047;8378162&migRandom=258915440&migTrackFmtExt=ad;pl
+Content-Length: 396
+Connection: close
+-Content-Type: text/html; charset=iso-8859-1
+é
+<!DOCTYPE HTML PUBLIC "-//IETF//DTD HTML 2.0//EN">
+<html><head>
+<title>302 Found</title>
+</head><body>
+<h1>Found</h1>
+<p>The document has moved <a href="/t/v1/imp/cc?migAgencyId=66&amp;migSource=mmind&amp;migTrackDataExt=17366047;8378162&amp;migRandom=258915440&amp;migTrackFmtExt=ad;pl">here</a>.</p>
+<hr>
+<address>Apache/2.2.3 (Red Hat) Server at t.mookie1.com Port 80</address>
+</body></html>

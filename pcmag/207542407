@@ -1,0 +1,23 @@
+PHTTP198.101.215.162"Œ
+ßGET /page/data?referrer=&href=http%3A%2F%2Fwww.pcmag.com%2F&user=499ebfe1-73a8-440f-81c5-deab554f49aa&site_guid=&pub_id=83&uri=http%3A%2F%2Fwww.pcmag.com%2F&jsoncallback=LS_JSONCB_1&client_timestamp=1389231502976 HTTP/1.1
+Host: api.erovinmo.com
+Connection: keep-alive
+Accept: */*
+vUser-Agent: Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/31.0.1650.63 Safari/537.36
+ Referer: http://www.pcmag.com/
+$Accept-Encoding: gzip,deflate,sdch
+!Accept-Language: en-US,en;q=0.8
+
+*£	
+HTTP/1.1 200 OK
+%Date: Thu, 09 Jan 2014 01:38:10 GMT
+tSet-Cookie: _lsx0=c9026153-de29-49a8-b76a-06b33369d880; Domain=erovinmo.com; Expires=Tue, 08-Jan-2019 01:38:10 GMT
+4Cache-Control: private, max-age=0, must-revalidate
+-Content-Type: text/javascript;charset=UTF-8
+Connection: close
+Transfer-Encoding: chunked
+Ø
+34a
+LS_JSONCB_1({"message":"Initial instrumentation.","instrument":true,"discover":false,"xpaths":["//div[contains(concat(\"_\", normalize-space(@ls_content), \"_\"), \"_News_\")]\t","//div[contains(concat(\"_\", normalize-space(@ls_content), \"_\"), \"_Opinion_\")]\t","//div[contains(concat(\"_\", normalize-space(@ls_content), \"_\"), \"_Feature_\")]\t","//div[contains(concat(\"_\", normalize-space(@ls_content), \"_\"), \"_Article_\")]\t"],"valid":true,"xpath":null,"blacklisted_xpaths":null,"site_guid":"4c51550730d01976f46f43f818127317f556a7075582e0dc26e6b3e2e2c01209","pub_id":83,"impression_id":"b2b26a40-78ce-11e3-95aa-bc764e0524d4","keyword_sequence_id":null,"keywords":null,"marketplace_keywords":null,"ab_mode":0,"ab_injected":0,"page_blacklisted":false,"word_count":null,"keyword_frequency":3,"keyword_count":10,"should_execute":0})
+0
+

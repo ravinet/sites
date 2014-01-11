@@ -1,0 +1,456 @@
+PHTTP170.123.237.62"Ñ
+GET /nystate_css.css HTTP/1.1
+Host: www.ny.gov
+Connection: keep-alive
+Accept: text/css,*/*;q=0.1
+vUser-Agent: Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/31.0.1650.63 Safari/537.36
+Referer: http://www.ny.gov/
+$Accept-Encoding: gzip,deflate,sdch
+!Accept-Language: en-US,en;q=0.8
+
+*©;
+HTTP/1.1 200 OK
+%Date: Thu, 09 Jan 2014 01:28:39 GMT
+ Server: Apache/2.2.3 (Red Hat)
+.Last-Modified: Wed, 29 Dec 2010 18:09:49 GMT
+"ETag: "896df-1c4e-49890798f7540"
+Accept-Ranges: bytes
+Content-Length: 7246
+Cache-Control: max-age=60
+(Expires: Thu, 09 Jan 2014 01:29:39 GMT
+Connection: close
+Content-Type: text/css
+Ð8
+blockquote { 
+	margin: 5;
+	padding: 3;
+	border: 5;
+	}
+	
+
+.scrollLinks {
+	overflow : auto;
+	width : 170px;
+	height : 166px;
+	font-family : arial;
+	font-size: 7pt;
+	font-weight:normal;
+	padding : 5px;
+	scrollbar-base-color : #577692;
+	scrollbar-arrow-color : #ffffff;	
+	background: #0099cc url(/images/nylinksbk.gif);
+	color: #e8e8e8;
+}
+
+
+	
+	
+.scrollLinks a:link { 
+	color: #ffffff;
+	text-decoration : none;	
+	}
+.scrollLinks a:visited { 
+	color: #eaeaea;
+	text-decoration : none;	
+	}
+.scrollLinks a:hover { 
+	color: #ffffff;
+	background-color: #003399;
+	text-decoration: none;
+	}
+.scrollLinks a:active { 
+	color: #0033ff;
+	text-decoration : none;	
+	}
+	
+	
+	
+
+
+
+body {
+	/*background-image : url(cornersandedges/bluegradient.jpg);
+	background-repeat : repeat-x;	*/
+	background-color : #003366;
+	color : #49628A;
+	font-family : arial;
+	font-size: 10pt;
+}
+
+
+
+.contentarea {
+	background-color : #EAEAEA;
+	font-family : arial;
+	font-size: 10pt;
+}
+
+.menuLink {
+	color : #DFF0CE;
+	font-size:75%;
+}
+
+.footer {
+	color : #DFF0CE;
+	font-size:75%;
+}
+
+.nyToday {
+	overflow : auto;
+	width : 177px;
+	height : 75px;
+	font-family : arial;
+	font-size: 10pt;
+	padding : 0px;
+	scrollbar-base-color : #577692;
+	scrollbar-arrow-color : #ffffff;	
+}
+
+.nyToday a {
+	border : none;
+	text-decoration : none;	
+}
+
+.related {
+	height : 20px; 
+	width : 100px; 
+	font-size : 8pt;
+	text-align : center; 
+	padding : 2px;
+	background-color : #8493A6;
+/*	border-left : 1px solid black;
+	border-right : 1px solid black;
+	border-bottom : 1px solid black;	*/	
+}
+
+.related a {
+	text-decoration : none;
+	color : #DFEFBA;
+}
+
+.related a:hover {
+	color : #EAEAEA;
+}
+
+input {
+	font-family: arial;
+	font-size: 8pt;
+}
+
+.wireFrame {
+	background-color : #EAEAEA;
+}
+
+.nysBannerArea {
+	background-color : #003463;
+}
+
+.contenAreaBanner {
+	color : #DFEFCE; 
+	/*background-color : #49628A; */
+	font-size : 10pt; 
+	font-weight : bold;
+	background-image : url(/cornersandedges/topbg.gif);
+	background-repeat : repeat-x;	
+}
+
+.topCap {
+	background-image : url(/cornersandedges/topcap.gif);
+	background-repeat : no-repeat;
+	color : #E4F3CA;
+}
+
+.bottomCap {
+	background-image : url(/cornersandedges/bottomcap.gif);
+	background-repeat : no-repeat;
+	color : black;
+}
+
+.topLeft {
+	background-image : url(/cornersandedges/tl.gif);
+	background-repeat : no-repeat;
+	width : 182px;
+	height : 70px;
+	margin: 0px;
+	padding : 0px;
+	border:none;
+}
+
+.top {
+	background-image : url(/cornersandedges/top.gif);
+	background-repeat : repeat-x;
+	height : 7px;
+	margin: 0px;
+	padding : 0px;
+	border:none;
+}	
+
+.topRight {
+	background-image : url(/cornersandedges/tr.gif);
+	background-repeat : no-repeat;
+	width : 72px;
+	height : 70px;
+	margin: 0px;
+	padding : 0px;
+	border:none;
+}	
+
+.bottomLeft {
+	background-image : url(/cornersandedges/bl.gif);
+	background-repeat : no-repeat;
+	width : 182px;
+	height : 97px;
+	margin: 0px;
+	padding : 0px;
+	border:none;
+}		
+
+.bottomRight {
+	background-image : url(/cornersandedges/br.gif);
+	background-repeat : no-repeat;
+	width : 72px;
+	height : 97px;
+	margin: 0px;
+	padding : 0px;
+	border:none;
+}	
+
+.bottom {
+	background-image : url(/cornersandedges/bottom.gif);
+	background-repeat : repeat-x;
+	height : 28px;
+	margin: 0px;
+	padding : 0px;
+	border:none;
+}	
+	
+.left {
+	background-image : url(/cornersandedges/left.gif);
+	background-repeat : repeat-y;
+	width : 182px;
+	margin: 0px;
+	padding : 0px;
+	border:none;
+}		
+
+.right {
+	background-image : url(/cornersandedges/right.gif);
+	background-repeat : repeat-y;
+	width : 6px;
+}				
+	
+.scroll {font-size: 10px;  font-family:arial; font-weight:normal; color: #EBEBEB; 
+	margin-top: 0;
+	padding-top: 0;
+	}
+	
+		
+div#messages  {font-size: 10px;  font-family:arial; font-weight:normal; color: #0099cc; 
+	margin-top: 0;
+	padding-top: 0;
+	}
+	
+	
+	
+div#btmtxt TABLE {font-size: 11px; font-family:arial; font-weight:normal; color: #0099cc; 
+	margin-top: 0;
+	padding-top: 0;
+	}
+	
+	
+	
+	
+div#office TABLE {font-size: 9px; font-family:verdana; font-weight:bold; color: #000066; 
+	margin-top: 0;
+	padding-top: 0;
+	}
+	
+
+
+	
+	
+div#office a:link { 
+	color: #0033ff;
+	text-decoration : none;	
+	}
+div#office a:visited { 
+	color: #0033ff;
+	text-decoration : none;	
+	}
+div#office a:hover { 
+	color: #ffffff;
+	background-color: #0066cc;
+	text-decoration: none;
+	}
+div#office a:active { 
+	color: #0033ff;
+	text-decoration : none;	
+	}
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	div#around TABLE {font-size: 9px; font-family:verdana; font-weight:bold; color: #000066; 
+	margin-top: 0;
+	padding-top: 0;
+	}
+	div#around a:link { 
+	color: #0033ff;
+	text-decoration : none;	
+	}
+div#around  a:visited { 
+	color: #0033ff;
+	text-decoration : none;	
+	}
+div#around  a:hover { 
+	color: #ffffff;
+	background-color: #0066cc;
+	text-decoration: none;
+	}
+div#around  a:active { 
+	color: #0033ff;
+	text-decoration : none;	
+	}
+	
+	
+	
+	
+	
+div#howdoi TABLE {font-size: 10px; font-family:arial; color: #000066; 
+	line-height: 16px;
+	margin-top: 0;
+	padding-top: 0;
+	}
+	div#howdoi a:link { 
+	color: #0033ff;
+	text-decoration : none;	
+	}
+div#howdoi  a:visited { 
+	color: #0033ff;
+	text-decoration : none;	
+	}
+div#howdoi  a:hover { 
+	color: #ffffff;
+	background-color: #0066cc;
+	text-decoration: none;
+	}
+div#howdoi a:active { 
+	color: #0033ff;
+	text-decoration : none;	
+	}
+	
+	
+	
+	
+		
+div#patletter {font-size:10px; font-family:arial; color:#993366;
+margin:15 15 15 15;
+	text-align : center; 
+
+	}
+	
+	
+	
+	
+	
+		
+		
+div#bodyContent {font-size:14px; font-family:arial; color:#006699;
+	margin-top: 3;
+	padding-top: 3;
+	margin-left: 10px;
+	}
+	
+	
+	.press_date
+{
+    
+    FONT: 10px verdana, "Bitstream Vera Sans", geneva, arial, helvetica, helve, sans-serif;
+    COLOR: #5f7385;
+   	font-weight: bold;
+	TEXT-DECORATION: none;
+}
+.press_teaser
+{
+    
+    FONT: 10px verdana, "Bitstream Vera Sans", geneva, arial, helvetica, helve, sans-serif;
+    COLOR: #000000;
+	font-weight: bold;
+	TEXT-DECORATION: none;
+	line-height: 10px;
+	
+}
+.press_teaser A:link
+{
+    COLOR: #000000;
+	font-weight: bold;
+    TEXT-DECORATION: none;
+}
+.press_teaser A:visited
+{
+    COLOR: #000000;
+	font-weight: bold;
+    TEXT-DECORATION: none;
+}
+.press_teaser A:hover
+{
+    COLOR: #3e576e;
+	font-weight: bold;
+    TEXT-DECORATION: none;
+}
+.press_teaser A:active
+{
+    COLOR: #000000;
+	font-weight: bold;
+    TEXT-DECORATION: none;
+}
+.press_teaser_image {
+	padding-left: 10px;
+	padding-bottom: 2px;
+	
+}
+.press_teaser_copy
+{
+    
+    FONT: 10px verdana, "Bitstream Vera Sans", geneva, arial, helvetica, helve, sans-serif;
+    COLOR: #000000;
+    TEXT-DECORATION: none;
+    MARGIN-RIGHT: 2px;
+	
+}
+.press_teaser_copy A:link
+{
+    COLOR: #045bad;
+	text-decoration: none;
+	
+}	
+.press_teaser_copy A:visited
+{
+    COLOR: #045bad;
+	TEXT-DECORATION: none;
+	
+}
+.press_teaser_copy A:hover
+{
+    COLOR: #5f7385;
+	TEXT-DECORATION: none;
+	
+	
+}
+.press_teaser_copy A:active
+{
+    COLOR: #045bad;
+	TEXT-DECORATION: none;
+	
+}
+.mainnysback
+{
+	
+	

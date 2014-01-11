@@ -1,0 +1,21 @@
+»HTTPS66.150.102.76"…
+ËGET /services/viewer/federated_f9?&width=320&height=180&flashID=myPlayer&bgcolor=%23FFFFFF&playerID=2098531647001&playerKey=AQ~~%2CAAABDmhAyHE~%2CUBpv5ReJ-C7-rRg49IF1d-V1LSDWjKNj&isVid=true&isUI=true&dynamicStreaming=true&%40videoPlayer=2946776273001&secureConnections=true&autoStart=&debuggerID=&startTime=1389230914385 HTTP/1.1
+Host: secure.brightcove.com
+Connection: keep-alive
+vUser-Agent: Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/31.0.1650.63 Safari/537.36
+Accept: */*
+(Referer: http://www.aa.com/homePage.do
+$Accept-Encoding: gzip,deflate,sdch
+!Accept-Language: en-US,en;q=0.8
+
+*·
+HTTP/1.1 302 Found
+X-BC-Client-IP: 128.30.76.55
+"X-BC-Connecting-IP: 128.30.76.55
+.Last-Modified: Sun, 05 Jan 2014 12:05:59 GMT
+*Cache-Control: must-revalidate,max-age=0
+¨Location: https://sadmin.brightcove.com/viewer/us20131230.1216/BrightcoveBootloader.swf?playerID=2098531647001&playerKey=AQ%7E%7E%2CAAABDmhAyHE%7E%2CUBpv5ReJ-C7-rRg49IF1d-V1LSDWjKNj&secureConnections=true&purl=http%3A%2F%2Fwww.aa.com%2FhomePage.do&%40videoPlayer=2946776273001&autoStart=&bgcolor=%23FFFFFF&debuggerID=&dynamicStreaming=true&flashID=myPlayer&height=180&isUI=true&isVid=true&startTime=1389230914385&width=320
+Content-Length: 0
+%Date: Thu, 09 Jan 2014 01:28:21 GMT
+Server: brightcove
+

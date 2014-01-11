@@ -1,0 +1,27 @@
+PHTTP137.187.25.43"¿
+GET /js/tabs.js HTTP/1.1
+Host: www.nih.gov
+Connection: keep-alive
+Accept: */*
+vUser-Agent: Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/31.0.1650.63 Safari/537.36
+Referer: http://www.nih.gov/
+$Accept-Encoding: gzip,deflate,sdch
+!Accept-Language: en-US,en;q=0.8
+
+*ù
+HTTP/1.1 200 OK
+(Server: Sun-Java-System-Web-Server/7.0
+%Date: Thu, 09 Jan 2014 00:45:35 GMT
+(Content-type: application/x-javascript
+.Last-modified: Thu, 07 Apr 2011 21:22:26 GMT
+Content-length: 240
+Etag: "f0-4d9e2b12"
+Accept-ranges: bytes
+ò
+<!-- This JavaScript snippet activates those tabs -->
+
+// perform JavaScript after the document is scriptable.
+$(function() {
+	// setup ul.tabs to work as tabs for each div directly under div.panes
+	$("ul.tabs").tabs("div.panes > div");
+});

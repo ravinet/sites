@@ -1,0 +1,83 @@
+PHTTP
+23.74.28.8"◊
++GET /SRO/GetJS?url=www.chron.com HTTP/1.1
+Host: aps.hearstnp.com
+Connection: keep-alive
+Accept: */*
+vUser-Agent: Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/31.0.1650.63 Safari/537.36
+ Referer: http://www.chron.com/
+$Accept-Encoding: gzip,deflate,sdch
+!Accept-Language: en-US,en;q=0.8
+
+*è
+HTTP/1.1 200 OK
+(Content-Type: text/html; charset=utf-8
+Server: Microsoft-IIS/7.0
+X-AspNetMvc-Version: 3.0
+X-AspNet-Version: 4.0.30319
+X-Powered-By: ASP.NET
+Content-Length: 3378
+%Cache-Control: private, max-age=300
+(Expires: Fri, 10 Jan 2014 16:09:17 GMT
+%Date: Fri, 10 Jan 2014 16:04:17 GMT
+Connection: keep-alive
+¥
+var juiceservice=("https:"==document.location.protocol?"https:":"http:")+"//aps.hearstnp.com/";
+var SiteYSMAdSource="npc_hearst_houstonchronicle_t";
+var APSpageID=1845;
+var ctxt_ad_url="http://"+JuicePageUrl,ctxt_ad_interface="http://cm.npc-hearst.overture.com/js_1_0/",ctxt_ad_config="2130893885",ctxt_ad_width=728,ctxt_ad_height=90,ctxt_ad_source="npc_hearst_houstonchronicle_t2_ctxt",ctxt_ad_type="home_page",ctxt_ad_id="home_page";
+var googletag=googletag||{};
+googletag.cmd=googletag.cmd||[];
+var aps=aps||{};
+aps.page=null;
+aps.adSlots=[];
+(function(){var b="https:"==document.location.protocol;
+var a=(b?"https:":"http:")+"//www.googletagservices.com/tag/js/gpt.js";
+document.write("<scr"+'ipt src="'+a+'"></scr'+"ipt>")
+})();
+(function(){var a=juiceservice+"Scripts/initDefineAds.js";
+document.write("<scr"+'ipt src="'+a+'"></scr'+"ipt>")
+})();
+function defineTags(d){aps.page=d;
+for(var c=0;
+c<d.ads.length;
+c++){var a=d.ads[c];
+var e;
+var b=false;
+if(a.oop){e=googletag.defineOutOfPageSlot("/"+d.networkCode+"/"+d.adUnit,a.code)
+}else{e=googletag.defineSlot("/"+d.networkCode+"/"+d.adUnit,[a.width,a.height],a.code)
+}aps.adSlots.push(e);
+e.addService(googletag.pubads());
+setDFPSlotTargeting(a,e,false)
+}setDfpSearchValues();
+setPageUrlForKvpTracking();
+googletag.pubads().enableSingleRequest();
+googletag.pubads().enableSyncRendering();
+googletag.pubads().collapseEmptyDivs();
+googletag.enableServices()
+}function hearstSetAdPageType(e){if(aps.adSlots.length>0){for(var c=0;
+c<aps.adSlots.length;
+c++){var b=false;
+var a=page.ads[c];
+var f=aps.adSlots[c];
+for(var d=0;
+d<a.kvps.length;
+d++){if(a.kvps[d].key=="page_type"){b=true;
+a.kvps[d].value=e;
+break
+}}if(!b){a.kvps.push({key:"page_type",value:e})
+}setDFPSlotTargeting(a,f,true)
+}}}function setDFPSlotTargeting(a,e,b){if(b){e.clearTargeting()
+}for(var c=0;
+c<a.kvps.length;
+c++){var d=a.kvps[c];
+e.setTargeting(d.key,d.value)
+}}function hearstPlaceAd(a){try{googletag.display(a)
+}catch(b){}}function hearstRefreshAds(){googletag.pubads().refresh();
+return true
+}function hearstRefreshInterstitialAds(a){}function setDfpSearchValues(){if(typeof(aps)!="undefined"&&aps!=null){aps.key=aps.key||"";
+aps.values=aps.values||"";
+try{googletag.pubads().setTargeting(aps.key,aps.values)
+}catch(a){}}}function setPageUrlForKvpTracking(){try{googletag.pubads().setTargeting("PageUrl",getAutoKVPPageURL(JuicePageUrl))
+}catch(a){}}function setPageType(){try{googletag.pubads().setTargeting("page_type",omni_className||omni_blogusage)
+}catch(a){}}var definedTags={"networkCode":"7351","adUnit":"chron.com/Homepage","ads":[{"width":1,"height":1,"code":"RM","kvps":[{"key":"position","value":"ATF"}],"rm":true,"interstitial":false,"oop":false},{"width":300,"height":250,"code":"B300","kvps":[{"key":"position","value":"BTF"}],"rm":true,"interstitial":false,"oop":false},{"width":728,"height":90,"code":"S728","kvps":[{"key":"position","value":"STF"}],"rm":true,"interstitial":false,"oop":false},{"width":300,"height":250,"code":"A300","kvps":[{"key":"position","value":"ATF"}],"rm":true,"interstitial":false,"oop":false},{"width":234,"height":60,"code":"A234","kvps":[{"key":"position","value":"ATF"}],"rm":false,"interstitial":false,"oop":false},{"width":300,"height":250,"code":"S300","kvps":[{"key":"position","value":"STF"}],"rm":false,"interstitial":false,"oop":false}]};var aps=aps||{};aps.juiceMatchedUrl="www.chron.com";

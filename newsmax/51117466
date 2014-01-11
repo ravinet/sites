@@ -1,0 +1,26 @@
+PHTTP75.101.158.115"×
+GET /crossdomain.xml HTTP/1.1
+Host: l.ooyala.com
+Connection: keep-alive
+vUser-Agent: Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/31.0.1650.63 Safari/537.36
+Accept: */*
+0Referer: http://www.newsmax.com/live/TVwidget/
+$Accept-Encoding: gzip,deflate,sdch
+!Accept-Language: en-US,en;q=0.8
+
+*¢
+HTTP/1.1 200 OK
+Server: nginx/0.7.61
+%Date: Thu, 09 Jan 2014 01:37:31 GMT
+*Content-Type: text/x-cross-domain-policy
+Connection: close
+'Cache-Control: max-age=21600, private
+Content-Length: 330
+Ì
+<?xml version="1.0"?>
+<!DOCTYPE cross-domain-policy SYSTEM "http://www.macromedia.com/xml/dtds/cross-domain-policy.dtd">
+<cross-domain-policy>
+  <site-control permitted-cross-domain-policies="all" />
+  <allow-access-from domain="*.ooyala.com" />
+  <allow-http-request-headers-from domain="*" headers="*" />
+</cross-domain-policy>

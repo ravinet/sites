@@ -1,0 +1,24 @@
+PHTTP
+18.7.20.68"Ê
+GET /js/embed.js HTTP/1.1
+Host: launch.newsinc.com
+Connection: keep-alive
+Accept: */*
+vUser-Agent: Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/31.0.1650.63 Safari/537.36
+!Referer: http://www.usnews.com/
+$Accept-Encoding: gzip,deflate,sdch
+!Accept-Language: en-US,en;q=0.8
+
+*ª
+ HTTP/1.1 302 Moved Temporarily
+Nx-amz-id-2: hi7GpObmJDRLruy858wZGTp7S2Or+8gn3EcbDHlQLrTXVlYWU20foNoQrUTSHxSV
+$x-amz-request-id: B9DEB73BEB5447E1
+4Location: http://launch.newsinc.com/17/js/embed.js
+Content-Length: 0
+Server: AmazonS3
+(Expires: Wed, 08 Jan 2014 16:56:54 GMT
+.Cache-Control: max-age=0, no-cache, no-store
+Pragma: no-cache
+%Date: Wed, 08 Jan 2014 16:56:54 GMT
+Connection: keep-alive
+

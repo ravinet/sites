@@ -1,0 +1,42 @@
+PHTTP192.41.82.20"Í
+ GET /js/TrackingV2.js HTTP/1.1
+Host: otracking.com
+Connection: keep-alive
+Accept: */*
+vUser-Agent: Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/31.0.1650.63 Safari/537.36
+$Referer: http://www.earthlink.net/
+$Accept-Encoding: gzip,deflate,sdch
+!Accept-Language: en-US,en;q=0.8
+
+*Ä?
+HTTP/1.1 200 OK
+Cache-Control: no-cache
+(Content-Type: application/x-javascript
+.Last-Modified: Tue, 13 Dec 2011 23:22:08 GMT
+Accept-Ranges: bytes
+ETag: "050548eeb9cc1:0"
+Server: Microsoft-IIS/7.0
+X-Powered-By: ASP.NET
+3P3P: CP="DSP NON PSA PSD OUR SAM IND NAV COM UNI"
+%Date: Thu, 09 Jan 2014 01:23:01 GMT
+Content-Length: 7770
+Ü<
+var BD={browser:"unknown",version:"unknown",OS:"unknown",OSVersion:"unknown",init:function(){var a=BD.analyze(navigator.userAgent,BD.browsers);if(a.s)BD.browser=a.s;if(a.v)BD.version=a.v;a=BD.analyze(navigator.userAgent,BD.OSs);if(a.s)BD.OS=a.s;if(a.v)BD.OSVersion=a.v},analyze:function(a,b){var d={s:null,v:null},c,e;for(e in b)if(c=b[e].r.exec(a)){d.s=b[e].s||c[1];if(c&&c[2])d.v=c[2];else if(b[e].v&&(c=b[e].v.exec(a))&&c[1])d.v=c[1];if(b[e].m&&b[e].m[d.v.toLowerCase()])d.v=b[e].m[d.v.toLowerCase()];
+break}return d},browsers:[{r:/Googlebot|Slurp|AdsBot|MSNPTC|Teoma|YahooSeeker|ScoutJet|toolbar/i,s:"Bot"},{r:/(Camino|SeaMonkey|OmniWeb|iCab|Konqueror|Navigator|Silk|IEMobile|nook browser|wOSBrowser|NetFront|Opera Mini)[ \/-]{1}([0-9\.-]+)/i},{r:/(Chrome|Firefox|Netscape)[ \/-]{1}([0-9\.-]+)/i},{r:/MS(IE) ([0-9\.]+)/i},{r:/(BlackBerry)[0-9a-z]+\/([0-9\.]+)/i},{r:/(Pre|Pixi|Android|Opera|Kindle|BlackBerry)[ \/;]{1}/i,v:/Version\/([0-9\.]+)/i},{r:/(iPhone|iPad|iPod|Safari)[ \/;]{1}/i,s:"Safari",v:/Version\/([0-9\.]+)/i},
+{r:/^(Mozilla).*rv:([0-9\.]+)/i},{r:/^([a-z0-9_-]+)[ \/]{1}([0-9a-z\._-]+)/i}],OSs:[{r:/(Win)dows (nt 5\.0|nt 5\.1|nt 5\.2|nt 6\.0|nt 6\.1|CE)/i,m:{"nt 5.0":"2000","nt 5.1":"XP","nt 5.2":"Server 2003","nt 6.0":"Vista","nt 6.1":"7",ce:"CE"}},{r:/(win)(95|98)/i,s:"Win"},{r:/(Mac) OS X ([0-9\._]+)/i},{r:/(Blackberry|Nokia)[ ]{0,1}([0-9\.]+)/i},{r:/(iPhone|iPad|iPod)/i,v:/OS ([0-9_]+)/i},{r:/(Mac) OS ([a-z]+)/i,m:{x:10}},{r:/(Android|webOS|hpwOS|Kindle|SymbianOS)[ \/;]{0,1}([0-9\.]+)?/i},{r:/(Windows Phone) OS ([0-9\.]+)/i},
+{r:/SymbOS/i,s:"SymbianOS"},{r:/(SAMSUNG|HUAWEI|LG|LGE)[ \/-]{1}([0-9a-z\._-]+)/i},{r:/(Googlebot|Slurp|AdsBot|MSNPTC|msnbot|Teoma|YahooSeeker|ScoutJet)[ \/]{0,1}([0-9\.]+)?/i,v:/Version\/([0-9\.]+)/i},{r:/(Debian|Kubuntu|Ubuntu|Fedora|CentOS|Mandriva|Gentoo|Red Hat|SUSE|SunOS|BeOS|FreeBSD|Wii|PlayStation)[ \/-]{0,1}([0-9\.-]+)?/i,v:/Version\/([0-9\.]+)/i},{r:/(Linux)[ \/]{0,1}([0-9\.-]+)?/i}]},flashVersion="";
+if(navigator.plugins&&navigator.plugins.length)for(var i=0;i<navigator.plugins.length;i++){if(-1!=navigator.plugins[i].name.indexOf("Shockwave Flash")){flashVersion=navigator.plugins[i].description.split("Shockwave Flash ")[1].substring(0,3);break}}else if(window.ActiveXObject)for(i=11;2<=i;i--)try{var fl=eval("new ActiveXObject('ShockwaveFlash.ShockwaveFlash."+i+"');");if(fl){flashVersion=i+".0";break}}catch(e$$5){}BD.init();var ieVariable=0,trackType="h";
+function trackLinkClicks(){for(var a=document.getElementsByTagName("a"),b=0;b<a.length;b++)if(null!=a[b].onclick?-1==a[b].onclick.toString().indexOf("trackEvent("):1)if("IE"==BD.browser)ieVariable=b,0<trackTid.length?a[b].attachEvent("onclick",function(){trackEvent("|"+document.getElementsByTagName("a")[ieVariable].innerHTML.replace("\n"," "),"l")}):a[b].attachEvent("onclick",function(){trackEvent(document.getElementsByTagName("a")[ieVariable].innerHTML.replace("\n"," "),"l")});else{var d="";null!=
+a[b].onclick&&0<a[b].onclick.toString().length&&(d=a[b].onclick.toString().substring(a[b].onclick.toString().indexOf("{")+1,a[b].onclick.toString().length-2));0<trackTid.length?a[b].setAttribute("onclick",d+"trackEvent('|"+a[b].innerHTML.replace("\n"," ")+"','l')"):a[b].setAttribute("onclick",d+"trackEvent('"+a[b].innerHTML.replace("\n"," ")+"','l')")}}function trackEvent(a,b,d,c){createTrackingPixel(a,b,d||0,c||0)}
+function getScriptDomain(){var a=window.document.getElementsByTagName("script"),b;for(b=a.length-1;0<=b;b--){var d=a[b];if(void 0!=d&&void 0!=d.src&&null!==d.src&&0<=d.src.indexOf("Tracking"))return d.src.match(/:\/\/(.[^/]+)/)[1]}return"otracking.com"}
+function createTrackingPixel(a,b,d,c){if("undefined"!=typeof trackCid){var e=0;void 0!=d?e=d:"undefined"!=typeof qty&&null!=qty&&(e=qty);d=0;void 0!=c?d=c:"undefined"!=typeof amt&&null!=amt&&(d=amt);c="";c=window.document.location.protocol;c=("https:"==c?c:"http:")+"//"+getScriptDomain()+"/c.gif?";c+="_osbr="+BD.browser;c+="&_osbv="+BD.version;c=c+("&cid="+trackCid)+("&tid="+escape(a||trackTid));c+="&curl="+escape(document.location);c+="&_osos="+BD.OS;c+="&_ososv="+BD.OSVersion;c=c+("&qty="+e)+("&amt="+
+d)+("&_ossr="+screen.width+"x"+screen.height);c+="&_oscd="+screen.colorDepth;c+="&rurl="+escape(document.referrer);c+="&t="+(b||trackType);c+="&_osclid="+GetClickIDCookie();c+="&_osuid="+GetUserIDCookie();c+="&_osfv="+flashVersion;c+="&_osje="+navigator.javaEnabled();c+="&_ospt="+escape(document.title);c=c+"&_ostv=2.1"+("&_ostime="+(new Date).getMilliseconds());a=CheckForKeywordID();0<a.length&&(c+="&_oskwdid="+a);a=CheckForAdID();0<a.length&&(c+="&_osadid="+a);a=CheckForEngineAdID();0<a.length&&
+(c+="&_osadengid="+a);a=CheckForPlacement();0<a.length&&(c+="&_osplacement="+a);"Bot"!=BD.browser&&(a=window.document.createElement("img"),a.setAttribute("name","osTrackingPixel"),a.setAttribute("src",c))}}createTrackingPixel();function SetCookie(a,b){if(""!=b&&36==b.length){var d=new Date;d.setMonth(d.getMonth()+("os_user"==a?12:1));document.cookie=a+"="+b+"; expires="+d.toUTCString()+"; domain="+GetBaseUrl()+";path=/;"}}
+function GetUserIDCookie(){var a="";if(0<document.cookie.length)var a=document.cookie.indexOf("os_user"),b=document.cookie.lastIndexOf("os_user"),a=a!=b&&-1!=a?document.cookie.substr(b+8,36):-1!=a?document.cookie.substr(a+8,36):GenerateNewGuid();else a=GenerateNewGuid();SetCookie("os_user",a);return a}
+function GetClickIDCookie(){var a="";if(0==CheckForKeywordID().length){var b=document.cookie.indexOf("os_click"),d=document.cookie.lastIndexOf("os_click");b==d&&-1!=b?(a=document.cookie.substr(d+9,36),SetCookie("os_click",a)):-1!=d&&(a=document.cookie.substr(d+9,36))}else a=GenerateNewGuid(),SetCookie("os_click",a);return a}
+function GetAdClickIDCookie(){var a="";if(0==CheckForAdID().length){var b=document.cookie.indexOf("os_ad_click"),d=document.cookie.lastIndexOf("os_ad_click");b==d&&-1!=b?(a=document.cookie.substr(d+12,36),SetCookie("os_ad_click",a)):-1!=d&&(a=document.cookie.substr(d+12,36))}else a=GenerateNewGuid(),SetCookie("os_ad_click",a);return a}
+function CheckForKeywordID(){var a=(""+document.location).indexOf("_oskwdid="),b=(""+document.referrer).indexOf("_oskwdid="),d="";-1!=a&&-1==b&&(a+=9,b=(""+document.location).indexOf("&",a),d=b>a?(""+document.location).substring(a,b):(""+document.location).substring(a,(""+document.location).length));return d}
+function CheckForAdID(){var a=(""+document.location).indexOf("adId="),b=(""+document.referrer).indexOf("adId="),d="";-1!=a&&-1==b&&(a+=5,b=(""+document.location).indexOf("&",a),d=b>a?(""+document.location).substring(a,b):(""+document.location).substring(a,(""+document.location).length));return d}
+function CheckForEngineAdID(){var a=(""+document.location).indexOf("_engineadid="),b=(""+document.referrer).indexOf("_engineadid="),d="";-1!=a&&-1==b&&(a+=12,b=(""+document.location).indexOf("&",a),d=b>a?(""+document.location).substring(a,b):(""+document.location).substring(a,(""+document.location).length));return d}
+function CheckForPlacement(){var a=(""+document.location).indexOf("_placement="),b=(""+document.referrer).indexOf("_placement="),d="";-1!=a&&-1==b&&(a+=11,b=(""+document.location).indexOf("&",a),d=b>a?(""+document.location).substring(a,b):(""+document.location).substring(a,(""+document.location).length));return d}
+function GenerateNewGuid(){var a="",b=""+screen.width+(""+screen.height)+(""+screen.colorDepth),d="A,B,C,D,E,F".split(",");for(i=0;36>i;i++)a=8==i||13==i||18==i||23==i?a+"-":5<parseInt(b.substr(Math.floor(Math.random()*(b.length-2)),1))?a+d[Math.floor(Math.random()*(d.length-2))]:a+(""+Math.floor(9*Math.random()));return a.substring(0,36)}function GetBaseUrl(){var a=document.domain.lastIndexOf("."),a=document.domain.lastIndexOf(".",a-1);return"."+document.domain.substring(0<a?a+1:0)};

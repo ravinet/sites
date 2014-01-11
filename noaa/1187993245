@@ -1,0 +1,29 @@
+PHTTP129.15.96.11"Ä
+GET /loadEvents.js HTTP/1.1
+Host: www.noaa.gov
+Connection: keep-alive
+Accept: */*
+vUser-Agent: Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/31.0.1650.63 Safari/537.36
+Referer: http://www.noaa.gov/
+$Accept-Encoding: gzip,deflate,sdch
+!Accept-Language: en-US,en;q=0.8
+
+*À
+HTTP/1.0 200 OK
+.Last-Modified: Wed, 13 Nov 2013 19:00:18 GMT
+Accept-Ranges: bytes
+Content-Length: 56
+&Content-Type: application/javascript
+%Date: Thu, 09 Jan 2014 01:16:27 GMT
+Server: Apache
+#ETag: "b6e767a3-38-4eb13937a1480"
+(Expires: Thu, 09 Jan 2014 02:16:27 GMT
+Cache-Control: max-age=3600
+
+Age: 107
+Via: 1.0 c7.w3.woc (squid)
+Connection: keep-alive
+:
+window.onload = function() {
+	assignExploreEvents();
+}

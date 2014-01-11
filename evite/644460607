@@ -1,0 +1,26 @@
+PHTTP54.243.35.204"Ö
+ýGET /event?a=310467258&d=310467258&y=false&s310711335=direct&s310711336=gc&s310740327=false&s341605768=none&s385360252=true&n=http%3A%2F%2Fwww.evite.com%2F&u=oeu1389275290370r0.22137560043483973&wxhr=true&t=1389275290374&f=559510206,560400012 HTTP/1.1
+$Host: 310467258.log.optimizely.com
+Connection: keep-alive
+vUser-Agent: Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/31.0.1650.63 Safari/537.36
+Origin: http://www.evite.com
+Accept: */*
+ Referer: http://www.evite.com/
+$Accept-Encoding: gzip,deflate,sdch
+!Accept-Language: en-US,en;q=0.8
+
+*û
+HTTP/1.1 200 OK
+(Access-Control-Allow-Credentials: true
+)Access-Control-Allow-Methods: POST, GET
+3Access-Control-Allow-Origin: http://www.evite.com
+ Content-Type: application/json
+%Date: Thu, 09 Jan 2014 13:47:58 GMT
+9P3P: CP="IDC DSP COR CURa ADMa OUR IND PHY ONL COM STA"
+Server: nginx/1.2.7
+‹Set-Cookie: end_user_id=oeu1389275290370r0.22137560043483973; Domain=.310467258.log.optimizely.com; expires=Sun, 07 Jan 2024 13:47:58 GMT
+~Set-Cookie: fixed_external_310467258_end_user_id=; Domain=.optimizely.com; expires=Thu, 01 Jan 1970 00:00:00 GMT; Max-Age=-1
+Content-Length: 2
+Connection: keep-alive
+
+{}

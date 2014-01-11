@@ -1,0 +1,32 @@
+PHTTP54.230.52.56"Œ
+MGET /stylesheets/common/fonts/getresponse-icons-rev-1383643013.css HTTP/1.1
+Host: www.gr-cdn.com
+Connection: keep-alive
+Accept: text/css,*/*;q=0.1
+vUser-Agent: Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/31.0.1650.63 Safari/537.36
+&Referer: http://www.getresponse.com/
+$Accept-Encoding: gzip,deflate,sdch
+!Accept-Language: en-US,en;q=0.8
+
+*ä
+HTTP/1.1 200 OK
+Content-Type: text/css
+Content-Length: 580
+Connection: keep-alive
+Server: nginx
+%Date: Tue, 05 Nov 2013 10:15:49 GMT
+.Last-Modified: Tue, 05 Nov 2013 10:13:01 GMT
+ETag: "5278c4ad-244"
+(Expires: Tue, 12 Nov 2013 10:15:49 GMT
+Cache-Control: max-age=604800
+Cache-Control: public
+Accept-Ranges: bytes
+Age: 278751
+X-Cache: Hit from cloudfront
+GVia: 1.1 a536f7c9dbedc2b462a158901fcd8254.cloudfront.net (CloudFront)
+GX-Amz-Cf-Id: _Mu7EXB9omdrDe0PeNJ77HzLPACjQOK2wOaEAKJIjdtUpJG-k687bQ==
+Æ
+@font-face{font-family:'fontIcons';src:url('/images/common/fonts/getresponse-icons/gr_icons_01_02.eot');src:url('/images/common/fonts/getresponse-icons/gr_icons_01_02.eot?#iefix') format('embedded-opentype'),
+url('/images/common/fonts/getresponse-icons/gr_icons_01_02.woff') format('woff'),
+url('/images/common/fonts/getresponse-icons/gr_icons_01_02.ttf') format('truetype'),
+url('/images/common/fonts/getresponse-icons/gr_icons_01_02.svg#fontIcons') format('svg');font-weight:normal;font-style:normal}[data-icon]:before{font-family:'fontIcons';content:attr(data-icon);speak:none}

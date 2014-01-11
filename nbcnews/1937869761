@@ -1,0 +1,31 @@
+PHTTP
+18.7.20.69"Ì
+8GET /databox/data.aspx?dbid=23283610&s=10001& HTTP/1.1
+Host: www.nbcnews.com
+Connection: keep-alive
+vUser-Agent: Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/31.0.1650.63 Safari/537.36
+Accept: */*
+"Referer: http://www.nbcnews.com/
+$Accept-Encoding: gzip,deflate,sdch
+!Accept-Language: en-US,en;q=0.8
+äCookie: TZM=-300; optimizelySegments=%7B%22257578318%22%3A%22direct%22%2C%22257578319%22%3A%22gc%22%2C%22257599190%22%3A%22none%22%2C%22257609154%22%3A%22false%22%2C%22258284570%22%3A%22none%22%2C%22258355326%22%3A%22gc%22%2C%22258358316%22%3A%22false%22%2C%22258766453%22%3A%22direct%22%7D; optimizelyEndUserId=oeu1389365756334r0.33341990667395294; optimizelyBuckets=%7B%7D; optimizelyPendingLogEvents=%5B%5D; AUTOREFRESH=Fri%20Jan%2010%202014%2009%3A55%3A56%20GMT-0500%20%28EST%29
+
+*¨#
+ HTTP/1.1 302 Moved Temporarily
+Content-Length: 3868
+(Content-Type: text/html; charset=utf-8
+6Location: /databox/choices.aspx?tQSZip=02139&type=js
+Server: Microsoft-IIS/7.5
+X-AspNet-Version: 2.0.50727
+X-Powered-By: ASP.NET
+ Access-Control-Allow-Origin: *
+(Expires: Fri, 10 Jan 2014 14:55:43 GMT
+.Cache-Control: max-age=0, no-cache, no-store
+Pragma: no-cache
+%Date: Fri, 10 Jan 2014 14:55:43 GMT
+Connection: keep-alive
+Vary: Accept-Encoding
+cSet-Cookie: Q1=02139,cambridge,ma,united states,us; expires=Sun, 09-Feb-2014 14:55:43 GMT; path=/
+ESet-Cookie: p1Mark=1; expires=Sun, 09-Feb-2014 14:55:43 GMT; path=/
+ž
+{"quotes":[{"foo":"null"},{"sym":"I:DJI","name":"Dow Industrial","sname":"DJIA", "last":"16466.96", "change":"+22.20", "pct":"+0.14%","arrow":"up","lo":"16,451.37","hi":"16,487.65","vol":"9,718,745"},{"sym":"I:COMP","name":"NASDAQ","sname":"NASDAQ", "last":"4168.62", "change":"+12.42", "pct":"+0.30%","arrow":"up","lo":"4,166.02","hi":"4,172.27","vol":"129,150,376"},{"sym":"SPX.X","name":"S&P 500","sname":"S&P 500", "last":"1841.4", "change":"+3.27", "pct":"+0.18%","arrow":"up","lo":"1,840.06","hi":"1,843.15","vol":"44,593,403"}],"weather":{"city":"New York, NY","conditions":{"update":"8:49 a.m. Jan. 10, 2014","temp":"33&#186;F","cid":"14","text":"Light Snow","wind":"CALM","humid":"66%","dew":"23&#186;F","press":"30.51 in","uv":"0 Low","vis":"5.00 miles","rise":"7:19 AM","set":"4:47 PM"},"forecast":[{"foo":"null"},{"day":"TODAY", "cid":"5","cond":"Rain/Snow Showers","text":"<b>Day:</b> Some sleet or freezing rain possible early. Rain and snow showers this morning changing to rain showers for the afternoon. High 39F. Winds light and variable. Chance of precip 50%.<br/><b>Night:</b> Cloudy with showers. Low 38F. Winds SE at 10 to 15 mph. Chance of rain 50%.","hi":"39&#186;F","lo":"38&#186;F"},{"day":"Saturday, January 11", "cid":"12","cond":"Rain","text":"<b>Day:</b> Showers early, becoming a steady rain later in the day. High 56F. Winds S at 15 to 25 mph. Rainfall near a half an inch.<br/><b>Night:</b> Periods of rain. Low 38F. Winds WSW at 10 to 20 mph. Rainfall near a half an inch.","hi":"56&#186;F","lo":"38&#186;F"},{"day":"Sunday, January 12", "cid":"30","cond":"Partly Cloudy","text":"Partly cloudy. Highs in the mid 40s and lows in the low 30s.","hi":"45&#186;F","lo":"32&#186;F"},{"day":"Monday, January 13", "cid":"28","cond":"Mostly Cloudy","text":"Mostly cloudy. Highs in the upper 40s and lows in the low 40s.","hi":"49&#186;F","lo":"40&#186;F"},{"day":"Tuesday, January 14", "cid":"12","cond":"Rain","text":"Mainly cloudy and rainy. Highs in the mid 50s and lows in the low 30s.","hi":"54&#186;F","lo":"33&#186;F"}],"map":"us_ne_9regradar_medium_usen"},"local":{"city":"New York, NY","affiliate":"nbcnewyork.com","sf":"3086042/ns/local_news-new_york_ny/"},"headlines":[{"foo":"null"},{"src":"http://www.nbcnewyork.com/news/local/Chris-Christie-New-Jersey-George-Washington-Bridge-Scandal-GWB-Closure-Fort-Lee-Lawsuit-Bully-239590941.html?partner=nbcnews","headline":"Lawsuit Filed in GWB Fiasco","deck":"","abstract":""},{"src":"http://www.nbcnewyork.com/news/local/Elizabeth-New-Jersey-Woman-Robbed-Assaulted-239516921.html?partner=nbcnews","headline":"Woman, 63, Robbed on NJ Street","deck":"","abstract":""},{"src":"http://www.nbcnewyork.com/news/local/Boy-Abused-Died-Times-Square-Apartment--239485051.html?partner=nbcnews","headline":"Boy, 4, Was Abused for Days: NYPD","deck":"","abstract":""},{"src":"http://www.nbcnewyork.com/news/local/Runner-Collapse-Prospect-Park-Unconscious-Mystery-Death-Hospital-Rynn-Berry-239601181.html?partner=nbcnews","headline":"Collapsed Runner Dies","deck":"","abstract":""},{"src":"http://www.nbcnewyork.com/news/local/MetroCard-Replacement-2019-MTA--239571661.html?partner=nbcnews","headline":"MTA Looking to Replace MetroCard","deck":"","abstract":""},{"src":"http://www.nbcnewyork.com/news/local/NYPD-Reward-Killing-TV-Show-Worker-Ivan-Giovanettina-Brooklyn-Bed-Stuy-239495151.html?partner=nbcnews","headline":"Reward for Info in Brooklyn Killing","deck":"","abstract":""},{"src":"http://www.nbcnewyork.com/news/local/PSEG-Warning-Customers-Utility-Scam-Long-Island-239551111.html?partner=nbcnews","headline":"PSEG Warning Customers of Scam","deck":"","abstract":""},{"src":"http://www.nbcnewyork.com/news/local/Westchester-Therapist-Sex-Abuse-Boy-Teen-Guilty-Plea-239480221.html?partner=nbcnews","headline":"Therapist Admits Sexually Abusing Boy, Teen Patients","deck":"","abstract":""} ]}

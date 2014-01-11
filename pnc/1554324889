@@ -1,0 +1,26 @@
+»HTTPS161.150.139.129"Û
+BGET /webapp/unsec/Gateway.do?siteArea=/pnccorp/PNC/Home HTTP/1.1
+Host: www.pnc.com
+Connection: keep-alive
+TAccept: text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8
+vUser-Agent: Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/31.0.1650.63 Safari/537.36
+$Accept-Encoding: gzip,deflate,sdch
+!Accept-Language: en-US,en;q=0.8
+KCookie: NSC_q*epuew-w0-mc*80=ffffffff098b5a0345525d5f4f58455e445a4a4229f1
+
+*›
+HTTP/1.1 302 Found
+%Date: Thu, 09 Jan 2014 21:24:43 GMT
+¢X-HP-CAM-COLOR: V=1;ServerAddr=TMGW9ZofypDI/HAaruIDEQ==;GUID=1|j3jZu7GYX8yqvDh4FQGt9rHYgh7rAIvqwdUIxUhUiBy4UCylkh8B1d_Y6brkmkYG|L3dlYmFwcC91bnNlYy9HYXRld2F5LmRv
+Surrogate-Control: no-store
+\Location: https://www.pnc.com/webapp/unsec/Homepage.do?siteArea=/PNCCorp/PNC/Home/Personal
+Content-Length: 0
+fSet-Cookie: dotdvSession=0000LHeRO0wpgLKVCUGLYa1op4A:pr-rdc9101516-61027wcm-a/dotdv-ethasp13; Path=/
+(Expires: Thu, 01 Dec 1994 16:00:00 GMT
+3Cache-Control: no-cache="set-cookie, set-cookie2"
+!Keep-Alive: timeout=60, max=267
+Connection: Keep-Alive
+Content-Type: text/html
+Content-Language: en-US
+gSet-Cookie: NSC_q*epuew-w0-mc*443=ffffffff098b5a0045525d5f4f58455e445a4a422611;path=/;secure;httponly
+

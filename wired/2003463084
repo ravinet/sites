@@ -1,0 +1,26 @@
+PHTTP54.204.6.42"›
+#GET /metrics/player_load HTTP/1.1
+Host: api.cnevids.com
+Connection: keep-alive
+Accept: image/webp,*/*;q=0.8
+vUser-Agent: Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/31.0.1650.63 Safari/537.36
+\Referer: http://player.cnevids.com/embed/52af261eee3ec9855200000c/51799c3f68f9da5d48000002
+$Accept-Encoding: gzip,deflate,sdch
+!Accept-Language: en-US,en;q=0.8
+
+*Ú
+HTTP/1.1 204 No Content
+Server: nginx/1.2.9
+%Date: Fri, 10 Jan 2014 16:40:07 GMT
+Connection: close
+Status: 204 No Content
+X-Frame-Options: SAMEORIGIN
+!X-XSS-Protection: 1; mode=block
+!X-Content-Type-Options: nosniff
+X-UA-Compatible: chrome=1
+?Cache-Control: no-cache, no-store, max-age=0, must-revalidate
+Pragma: no-cache
+(Expires: Thu, 10 Jan 2013 16:40:07 GMT
+4X-Request-Id: c1ff3ded-9a08-4a5e-9691-bd562755c165
+X-Runtime: 0.003726
+

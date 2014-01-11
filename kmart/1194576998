@@ -1,0 +1,171 @@
+PHTTP
+23.0.63.23"ø
+RGET /rpx/newars/km_dod/feed.json?callback=kmartJSONFeed&_=1389229943912 HTTP/1.1
+Host: k.shld.net
+Connection: keep-alive
+Accept: */*
+vUser-Agent: Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/31.0.1650.63 Safari/537.36
+ Referer: http://www.kmart.com/
+$Accept-Encoding: gzip,deflate,sdch
+!Accept-Language: en-US,en;q=0.8
+
+*…+
+HTTP/1.1 200 OK
+Server: Apache
+5ETag: "97249af7e0afb3dfc2e8292b85ee7f01:1389229204"
+.Last-Modified: Thu, 09 Jan 2014 01:00:04 GMT
+Accept-Ranges: bytes
+Content-Length: 5223
+Content-Type: text/plain
+%Date: Thu, 09 Jan 2014 01:12:11 GMT
+Connection: keep-alive
+é(
+kmartJSONFeed({  
+	"start_time":"00:00:00",
+	"end_time":"23:59:59",
+	"sub_header":"Our best offers today, valid online only",
+	"social_header":"Kmart Deal of the Day â€“ Today Only!",
+	"future_option":"1",
+	"future_title":"And Even More Deals",
+	"related_header":"More Deals",
+	"products":
+	[
+		
+		{
+			"PartNumber":"083V005239279000P",
+			"BrandName":"",
+			"Headline":"",
+			"Subheading":"",
+			"DescriptionName":"20% OFF Custom Accessories automotive accessories",
+			"LongDescription":"",
+			"MainImageUrl":"http://c.shld.net/rpx/i/s/i/spin/image/spin_prod_721889801",
+			"ImageURLs":"http://c.shld.net/rpx/i/s/i/spin/image/spin_prod_721889801",
+			"SoldOut":"1",
+			"FreeShipping":"0",
+			"FreeShippingExclusions":"",
+			"SYWR":"0",
+			"SYWRExclusions":"",
+			"CraftsmanClub":"0",
+			"CraftsmanClubExclusions":"",
+			"ShipVantage":"0",
+			"ShipVantageExclusions":"",
+			"SalePrice":"9.59",
+			"RegularPrice":"11.99",
+			"AddToCart":"0",
+			"AddToCartLink":"http://www.kmart.com/search=custom%20accessories&Custom%20Accessories?filter=Brand&catalogId=10104&previousSort=ORIGINAL_SORT_ORDER&viewItems=50&storeId=10151&levels=Automotive",
+			"Link":"http://www.kmart.com/search=custom%20accessories&Custom%20Accessories?filter=Brand&catalogId=10104&previousSort=ORIGINAL_SORT_ORDER&viewItems=50&storeId=10151&levels=Automotive",
+			"ExtraImage":"",
+			"Storepickupeligible":"0",
+			"SRESEligible":"1",
+			"WebStatus":"1",
+			"SoldBy":"Kmart",
+			"Rating":"",
+			"Category":"",
+			"Occasion":"",
+			"IsMarketPlaceitem":false
+		},
+		
+		{
+			"PartNumber":"083V005763188000P",
+			"BrandName":"",
+			"Headline":"",
+			"Subheading":"",
+			"DescriptionName":"20% OFF Wagan Seat warmers, or Portable power units",
+			"LongDescription":"",
+			"MainImageUrl":"http://c.shld.net/rpx/i/s/i/spin/image/spin_prod_767217312",
+			"ImageURLs":"http://c.shld.net/rpx/i/s/i/spin/image/spin_prod_767217312http://c.shld.net/rpx/i/s/i/spin/image/spin_prod_767216912http://c.shld.net/rpx/i/s/i/spin/image/spin_prod_767217012http://c.shld.net/rpx/i/s/i/spin/image/spin_prod_767217112http://c.shld.net/rpx/i/s/i/spin/image/spin_prod_767217212",
+			"SoldOut":"1",
+			"FreeShipping":"0",
+			"FreeShippingExclusions":"",
+			"SYWR":"0",
+			"SYWRExclusions":"",
+			"CraftsmanClub":"0",
+			"CraftsmanClubExclusions":"",
+			"ShipVantage":"0",
+			"ShipVantageExclusions":"",
+			"SalePrice":"71.99",
+			"RegularPrice":"89.99",
+			"AddToCart":"0",
+			"AddToCartLink":"http://www.kmart.com/search=Wagan?levels=Automotive",
+			"Link":"http://www.kmart.com/search=Wagan?levels=Automotive",
+			"ExtraImage":"",
+			"Storepickupeligible":"1",
+			"SRESEligible":"1",
+			"WebStatus":"1",
+			"SoldBy":"Kmart",
+			"Rating":"",
+			"Category":"",
+			"Occasion":"",
+			"IsMarketPlaceitem":false
+		},
+		
+		{
+			"PartNumber":"083V005380864000P",
+			"BrandName":"",
+			"Headline":"",
+			"Subheading":"",
+			"DescriptionName":"20% OFF Stromberg RV accessories",
+			"LongDescription":"",
+			"MainImageUrl":"http://c.shld.net/rpx/i/s/i/spin/image/spin_prod_724023801",
+			"ImageURLs":"http://c.shld.net/rpx/i/s/i/spin/image/spin_prod_724023801",
+			"SoldOut":"1",
+			"FreeShipping":"0",
+			"FreeShippingExclusions":"",
+			"SYWR":"0",
+			"SYWRExclusions":"",
+			"CraftsmanClub":"0",
+			"CraftsmanClubExclusions":"",
+			"ShipVantage":"0",
+			"ShipVantageExclusions":"",
+			"SalePrice":"27.99",
+			"RegularPrice":"34.99",
+			"AddToCart":"0",
+			"AddToCartLink":"http://www.kmart.com/search=Stromberg?levels=Automotive",
+			"Link":"http://www.kmart.com/search=Stromberg?levels=Automotive",
+			"ExtraImage":"",
+			"Storepickupeligible":"0",
+			"SRESEligible":"1",
+			"WebStatus":"1",
+			"SoldBy":"Kmart",
+			"Rating":"",
+			"Category":"",
+			"Occasion":"",
+			"IsMarketPlaceitem":false
+		},
+		
+		{
+			"PartNumber":"083V005640314000P",
+			"BrandName":"",
+			"Headline":"",
+			"Subheading":"",
+			"DescriptionName":"20% OFF Nordic Plow attachments for your Car, ATV, or Tractor!",
+			"LongDescription":"",
+			"MainImageUrl":"http://c.shld.net/rpx/i/s/i/spin/image/spin_prod_787683312",
+			"ImageURLs":"http://c.shld.net/rpx/i/s/i/spin/image/spin_prod_787683312http://c.shld.net/rpx/i/s/i/spin/image/spin_prod_787683212",
+			"SoldOut":"1",
+			"FreeShipping":"0",
+			"FreeShippingExclusions":"",
+			"SYWR":"0",
+			"SYWRExclusions":"",
+			"CraftsmanClub":"0",
+			"CraftsmanClubExclusions":"",
+			"ShipVantage":"0",
+			"ShipVantageExclusions":"",
+			"SalePrice":"359.99",
+			"RegularPrice":"449.99",
+			"AddToCart":"0",
+			"AddToCartLink":"http://www.kmart.com/search=nordic%20plow?storeId=10151&catalogId=10104&viewItems=50&sLevel=0&levels=Automotive_Automotive+Basics_Emergency%2C+Travel+%26+General+Items_Garage+Accessories&vDropDown=defaultOpt&sLevel=0&redirectType=SKIP_LEVEL&prop17=nordic%20plow",
+			"Link":"http://www.kmart.com/search=nordic%20plow?storeId=10151&catalogId=10104&viewItems=50&sLevel=0&levels=Automotive_Automotive+Basics_Emergency%2C+Travel+%26+General+Items_Garage+Accessories&vDropDown=defaultOpt&sLevel=0&redirectType=SKIP_LEVEL&prop17=nordic%20plow",
+			"ExtraImage":"",
+			"Storepickupeligible":"1",
+			"SRESEligible":"1",
+			"WebStatus":"1",
+			"SoldBy":"Kmart",
+			"Rating":"",
+			"Category":"",
+			"Occasion":"",
+			"IsMarketPlaceitem":false
+		}
+		
+	]
+})

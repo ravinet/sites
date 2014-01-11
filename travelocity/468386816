@@ -1,0 +1,34 @@
+PHTTP23.45.42.235"Ë
+àGET /bh/rtset?do=add&pid=534889&ev=b5nv8kujpdvdv&rurl=http%3A%2F%2Fdpm.demdex.net%2Fibs%3Adpid%3D640%26dpuuid%3Db5nv8kujpdvdv HTTP/1.1
+Host: bh.contextweb.com
+Connection: keep-alive
+Accept: image/webp,*/*;q=0.8
+vUser-Agent: Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/31.0.1650.63 Safari/537.36
+AReferer: http://fast.travelocity.demdex.net/dest4.html?d_nsid=0
+$Accept-Encoding: gzip,deflate,sdch
+!Accept-Language: en-US,en;q=0.8
+
+*Œ
+ HTTP/1.1 302 Moved Temporarily
+Server: GlassFish v3
+[P3P: policyref="/bh/w3c/p3p.xml", CP="NOI DSP COR NID CURa DEVa PSAa OUR BUS COM NAV INT"
+CW-Server: lga-app600
+7Cache-Control: private, max-age=0, no-cache, no-store
+Expires: -1
+CLocation: http://dpm.demdex.net/ibs:dpid=640&dpuuid=b5nv8kujpdvdv
+,Content-Type: text/html;charset=ISO-8859-1
+Content-Language: en-US
+Content-Length: 209
+%Date: Fri, 10 Jan 2014 16:50:35 GMT
+Connection: keep-alive
+Vary: Accept-Encoding
+cSet-Cookie: V=vL3UMU2bM7qd; Domain=.contextweb.com; Expires=Mon, 05-Jan-2015 16:50:35 GMT; Path=/
+áSet-Cookie: pb_rtb_ev=2-534889.b5nv8kujpdvdv.0.0.1389372635865; Domain=.contextweb.com; Expires=Sat, 10-Jan-2015 16:50:35 GMT; Path=/
+èSet-Cookie: NSC_mhb-ci.dpoufyuxfc.dpn-iuuq=ffffffff09c11c8b45525d5f4f58455e445a4a4229a0;expires=Fri, 10-Jan-2014 16:51:27 GMT;path=/;httponly
+”
+<html>
+<head><title>Document moved</title></head>
+<body><h1>Document moved</h1>
+This document has moved <a href="http://dpm.demdex.net/ibs:dpid=640&amp;dpuuid=b5nv8kujpdvdv">here</a>.<p>
+</body>
+</html>

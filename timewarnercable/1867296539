@@ -1,0 +1,28 @@
+PHTTP107.23.244.227"Ê
+ÜGET /event?d_nsid=0&d_ld=_ts%3D1389275785626&c_eVar6=corporate&c_eVar57=shop%20snapshot%3A1%3A2%3Aget%20dvr%20service&c_eVar58=tsg2resglobal&c_eVar59=residential-home&d_rtbd=json&d_jsonv=1&d_dst=1&d_cts=1&d_cb=demdexRequestCallback_twc_0_1389275785626 HTTP/1.1
+Host: twc.demdex.net
+Connection: keep-alive
+Accept: */*
+vUser-Agent: Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/31.0.1650.63 Safari/537.36
+BReferer: http://www.timewarnercable.com/en/residential-home.html
+$Accept-Encoding: gzip,deflate,sdch
+!Accept-Language: en-US,en;q=0.8
+êCookie: demdex=36650143652311380981196468351747061309; twc=36650143652311380981196468351747061309; DexLifeCycle="MA==|NzE3Mzg4PTE6MTgzNCw3MTc0NzA9MToxODM0LDcxODc2NT0xOjE4MzQsNzE2NzQ1PTE6MTgzNCw2ODAxNzY9MToxODM0LDcxNzYxMT0xOjE4MzQ=|MA==|MA==|MA==|MA==|MA=="; dextp=; DST=
+
+*ú
+HTTP/1.1 200 OK
+bCache-Control: no-cache,no-store,must-revalidate,max-age=0,proxy-revalidate,no-transform,private
+4Content-Type: application/javascript;charset=UTF-8
+4DCS: va6-dcsAS1-10-89-2-115.va6.demdex.com 1.15.34
+(Expires: Thu, 01 Jan 2009 00:00:00 GMT
+cP3P: policyref="/w3c/p3p.xml", CP="NOI NID CURa ADMa DEVa PSAa PSDa OUR SAMa BUS PUR COM NAV INT"
+Pragma: no-cache
+ Server: Jetty(7.6.8.v20121106)
+ÔSet-Cookie: DexLifeCycle="MA==|NzE3Mzg4PTE6MTgzNCw3MTc0NzA9MToxODM0LDcxODc2NT0xOjE4MzQsNzE2NzQ1PTE6MTgzNCw2ODAxNzY9MToxODM0LDcxNzYxMT0xOjE4MzQ=|MA==|MA==|MA==|MA==|MA==";Path=/;Domain=.twc.demdex.net;Expires=Sat, 09-Jan-2016 13:56:13 GMT
+TSet-Cookie: dextp=;Path=/;Domain=.demdex.net;Expires=Sat, 09-Jan-2016 13:56:13 GMT
+RSet-Cookie: DST=;Path=/;Domain=.demdex.net;Expires=Sat, 09-Jan-2016 13:56:13 GMT
+	STS: OK
+Content-Length: 151
+Connection: keep-alive
+ô
+demdexRequestCallback_twc_0_1389275785626({"dests":[],"stuff":[],"ibs":[],"dpcalls":[],"uuid":"36650143652311380981196468351747061309","dcs_region":9})

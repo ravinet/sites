@@ -1,0 +1,19 @@
+PHTTP
+18.7.20.69"ä
+GET / HTTP/1.1
+Host: xfinity.comcast.net
+Connection: keep-alive
+TAccept: text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8
+vUser-Agent: Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/31.0.1650.63 Safari/537.36
+$Accept-Encoding: gzip,deflate,sdch
+!Accept-Language: en-US,en;q=0.8
+
+*Â
+ HTTP/1.1 302 Moved Temporarily
+Server: AkamaiGHost
+Content-Length: 0
+LLocation: http://xfinity.comcast.net/customer_check/customer_redirect.html
+%Date: Thu, 09 Jan 2014 00:27:49 GMT
+Connection: keep-alive
+_Set-Cookie: userZip=02138; expires=Sun, 08-Jan-2017 00:27:49 GMT; path=/; domain=.comcast.net
+

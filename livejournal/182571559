@@ -1,0 +1,28 @@
+PHTTP54.229.43.217"…
+"POST /AsyncHandler.ashx HTTP/1.1
+#Host: beacon.nccgroup-webperf.com
+Connection: keep-alive
+Content-Length: 446
+$Origin: http://www.livejournal.com
+vUser-Agent: Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/31.0.1650.63 Safari/537.36
+(Content-Type: text/plain;charset=UTF-8
+Accept: */*
+&Referer: http://www.livejournal.com/
+$Accept-Encoding: gzip,deflate,sdch
+!Accept-Language: en-US,en;q=0.8
+À
+{"DNS":8,"CO":0,"SSL":-1,"REQ":135,"RES":8,"DI":472,"RT":0,"U":"http%3A//www.livejournal.com/","S":-1,"LT":1389231642712,"CT":143,"N":1,"I":"daef238a-0081-13a1-28fd-ca30bab42d0d","R":"","T":300,"O":"Mozilla/5.0%20%28X11%3B%20Linux%20x86_64%29%20AppleWebKit/537.36%20%28KHTML%2C%20like%20Gecko%29%20Chrome/31.0.1650.63%20Safari/537.36","V":"31","B":"Chrome","RQ":1389231642427,"C":1389231644001,"L":1389231644001,"D":"SUP001","J":1.1,"PacketId":1}*ˆ
+HTTP/1.1 200 OK
+<Access-Control-Allow-Headers: Origin, Content-Type, Accept
+,Access-Control-Allow-Methods: POST,OPTIONS
+ Access-Control-Allow-Origin: *
+Access-Control-Max-Age: 10
+Cache-Control: private
+(Content-Type: application/x-javascript
+%Date: Thu, 09 Jan 2014 01:40:31 GMT
+Server: Microsoft-IIS/7.0
+transfer-encoding: chunked
+Connection: keep-alive
+
+0
+

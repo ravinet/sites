@@ -1,0 +1,23 @@
+PHTTP64.135.21.3"µ
+;GET /CMSPages/GetCSS.aspx?stylesheetname=Newsmax HTTP/1.1
+Host: www.newsmax.com
+Connection: keep-alive
+Accept: text/css,*/*;q=0.1
+7If-None-Match: "df736dee-917e-445d-baf8-02687f3feccb"
+2If-Modified-Since: Thu, 09 Jan 2014 01:30:26 GMT
+vUser-Agent: Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/31.0.1650.63 Safari/537.36
+"Referer: http://www.newsmax.com/
+$Accept-Encoding: gzip,deflate,sdch
+!Accept-Language: en-US,en;q=0.8
+OCookie: CMSPreferredCulture=en-US; ASP.NET_SessionId=yt4ckeewnwjrcw3z4yqjxmu2
+
+*‘
+HTTP/1.1 304 Not Modified
+(Cache-Control: public, must-revalidate
+Content-Type: text/css
+.ETag: "df736dee-917e-445d-baf8-02687f3feccb"
+Server: Microsoft-IIS/7.5
+X-AspNet-Version: 4.0.30319
+X-Powered-By: ASP.NET
+%Date: Thu, 09 Jan 2014 01:37:26 GMT
+

@@ -1,0 +1,99 @@
+PHTTP64.94.118.77"Ú
+)GET /resources/js/ntautotag.js HTTP/1.1
+Host: www.authorize.net
+Connection: keep-alive
+Accept: */*
+vUser-Agent: Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/31.0.1650.63 Safari/537.36
+$Referer: http://www.authorize.net/
+$Accept-Encoding: gzip,deflate,sdch
+!Accept-Language: en-US,en;q=0.8
+
+*«
+HTTP/1.1 200 OK
+%Date: Thu, 09 Jan 2014 13:41:42 GMT
+Server: Apache
+.Last-Modified: Mon, 14 Oct 2013 17:03:05 GMT
+ETag: "c7a2-820-525c23c9"
+Accept-Ranges: bytes
+Content-Length: 2080
+Connection: close
+&Content-Type: application/javascript
+¢
+var host = document.location.host.toString().toLowerCase();
+
+function autotag() 
+{
+	for (var i=0; i<document.links.length; i++ )
+	{
+		iLink = document.links[i];
+		if (iLink.href.toLowerCase().indexOf(host) == -1) 
+		{
+			if (iLink.target == "_blank" || popUp(iLink))
+			{
+				if(iLink.onclick == "" || iLink.onclick == null)
+				{	
+					iLink.onclick = function() {ntptEventTag('ev=externallink&externallink=' + encodeURIComponent(this.href));};
+				}	
+				else
+				{
+					if(window.attachEvent)
+					{
+						iLink.tmpclick = iLink.onclick;
+						iLink.onclick = function() {ntptEventTag('ev=externallink&externallink=' + encodeURIComponent(this.href)); return this.tmpclick();};
+					}
+					else
+						EV(iLink, "click", function() {ntptEventTag('ev=externallink&externallink=' + encodeURIComponent(this.href));});
+				}
+			}
+			else
+			{					
+				if(iLink.onclick == "" || iLink.onclick == null)
+					iLink.onclick = function() { ntptEventTag('ev=externallink&externallink=' + encodeURIComponent(this.href)); nipause(500); };
+				else
+				{
+					if (window.attachEvent)
+					{
+						iLink.tmpclick = iLink.onclick;
+						iLink.onclick = function() { ntptEventTag('ev=externallink&externallink=' + encodeURIComponent(this.href)); return this.tmpclick(); nipause(500); };
+					}
+					else
+						EV(iLink, "click", function() { ntptEventTag('ev=externallink&externallink=' + encodeURIComponent(this.href)); nipause(500); });
+				}	
+			}
+		}
+	};
+}
+
+function popUp(linkobj)
+{
+	if (linkobj.onclick != undefined)
+		if (linkobj.onclick.toString().toLowerCase().indexOf("window.open") > -1) 
+			return true; 
+		else
+			return false;
+	else
+		return false;
+}
+
+function EV(a,b,c,d)
+{
+    if(a.addEventListener)
+    {
+    	a.addEventListener(b,c,false)
+    }
+    else if(a.attachEvent)
+    {
+    	a.attachEvent(((d==1)?"":"on")+b,c)
+    }
+}
+
+function nipause(ms){
+  var date = new Date();
+  var curDate = null;
+   do {
+      curDate = new Date();
+      }
+   while(curDate-date < ms);
+}
+
+EV(window,"load", autotag);

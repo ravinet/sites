@@ -1,0 +1,27 @@
+PHTTP208.52.173.220"Ý
+!GET /?async=1&aid=1279 HTTP/1.1
+"Host: com-centurylink.netmng.com
+Connection: keep-alive
+Accept: */*
+vUser-Agent: Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/31.0.1650.63 Safari/537.36
+&Referer: http://www.centurylink.com/
+$Accept-Encoding: gzip,deflate,sdch
+!Accept-Language: en-US,en;q=0.8
+
+*í
+HTTP/1.1 200 OK
+%Date: Thu, 09 Jan 2014 13:36:51 GMT
+Server: Apache/2.2.16
+KP3P: policyref="/w3c/p3p.xml", CP="NOI DSP COR DEVa PSAa OUR BUS COM NAV"
+(Expires: Tue, 07 Jan 2014 13:36:51 GMT
+.Last-Modified: Tue, 07 Jan 2014 13:36:51 GMT
+4Cache-Control: no-store, no-cache, must-revalidate
+*Cache-Control: post-check=0, pre-check=0
+Pragma: no-cache
+ÂSet-Cookie: evo5_CENTURYLINK=u9xfmgtywc8cm%7COpulXLtI1W1P5%2B6bOsoPBtYeW0Yd%2FcIxJcwW99F7uVEVxXwqgu2gDAblLuJkdhfFcNUnHhU9%2B7IL5Mz4XbpVKM3x7jtKmENihr41yFU83ctp9QEstIDpUkkrCTYArXgev%2FWYEZ0lUqApukB3D28KKGDf0PD95Gi5g22bDbJ9J7M6UbMUxOYe9dZZLGz7sCsH38cheIOGFAG9nBLXUEAAkw%3D%3D; expires=Fri, 11-Jul-2014 13:36:51 GMT; path=/
+Content-Length: 2518
+X-Cnection: close
+.Content-Type: text/javascript; charset=UTF-8
+Ø
+
+function sendMessage(url,obj,callback){var nm_script=document.createElement("SCRIPT");if(url.indexOf("?")==-1){url+="?"}else{url+="&"}url+="rand="+Math.random();url+="&nm_input_data="+encodeURIComponent(json_encode(obj));if(typeof(callback)=="function"){if(nm_script.addEventListener){nm_script.addEventListener("load",callback,false)}else{nm_script.onreadystatechange=function(e){if(this.readyState=="loaded"){callback();nm_script=null}}}}nm_script.src=url;document.getElementsByTagName("head")[0].appendChild(nm_script)}function nm_createCookie(name,value,days,domain){if(days){var date=new Date();date.setTime(date.getTime()+(days*24*60*60*1000));var expires="; expires="+date.toGMTString()}else var expires="";if(domain){var sDomainName="; domain="+domain}else var sDomainName="";document.cookie=name+"="+value+sDomainName+expires+"; path=/"}function nm_readCookie(name){var nameEQ=name+"=";var ca=document.cookie.split(';');for(var i=0;i<ca.length;i++){var c=ca[i];while(c.charAt(0)==' ')c=c.substring(1,c.length);if(c.indexOf(nameEQ)==0)return c.substring(nameEQ.length,c.length)}return null}function nm_eraseCookie(name){nm_createCookie(name,"",-1)}(function(){var fn=function(){window.nmDocReady=1};if(window.addEventListener){window.addEventListener('load',fn,false)}else if(window.attachEvent){window.attachEvent('onload',fn)}})();function json_encode(expr){var str='';switch(typeof(expr)){case"object":if(expr==null){str="null"}else if(expr.constructor==Date){str="\""+expr.getFullYear()+"-"+String(exp.getMonth()+100).substr(1)+"-"+String(exp.getDate()+100).substr(1)+"T"+exp.toTimeString().substr(0,8)+"\""}else if(expr.constructor==Array){var tmp=[];for(var i=0;i<expr.length;i++){if(s=json_encode(expr[i]))tmp.push(s)}str="["+tmp.join(",")+"]"}else{var item,tmp=[];for(item in expr){if(expr.hasOwnProperty(item))tmp.push(json_encode(item)+":"+json_encode(expr[item]))}str="{"+tmp.join(",")+"}"}break;case"function":break;case"boolean":str=String(expr);break;case"number":str=isFinite(expr)?String(expr):"null";break;case"string":str="\""+expr.replace(/[\x00-\x1f\\"]/g,function($0,$1){return"\\u"+String(10000+String($1).charCodeAt().toString(16)).substr(1)})+"\"";break;default:}return str}function json_decode(str){return eval("("+str+")")}function nm_getReferer(){return document.referrer}sendMessage('http://com-centurylink.netmng.com/?function=browser_check&vid=u9xfmgtywc8cm','',null);sendMessage('http://com-centurylink.netmng.com/?function=getReferer&referer='+escape(nm_getReferer()),'',null);

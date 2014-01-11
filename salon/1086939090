@@ -1,0 +1,31 @@
+PHTTP4.27.18.126"Í
+GET /crossdomain.xml HTTP/1.1
+Host: pdl.warnerbros.com
+Connection: keep-alive
+vUser-Agent: Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/31.0.1650.63 Safari/537.36
+Accept: */*
+ Referer: http://www.salon.com/
+$Accept-Encoding: gzip,deflate,sdch
+!Accept-Language: en-US,en;q=0.8
+
+*Ñ
+HTTP/1.1 200 OK
+Cache-Control: max-age=300
+%Date: Thu, 09 Jan 2014 01:54:56 GMT
+Content-Length: 211
+Content-Type: text/xml
+ETag: "d3-3dc0d7fdce300"
+.Last-Modified: Fri, 04 Jun 2004 18:57:48 GMT
+Accept-Ranges: bytes
+$Server: Footprint Distributor V4.8
+ Access-Control-Allow-Origin: *
+(Expires: Thu, 09 Jan 2014 01:58:38 GMT
+Connection: keep-alive
+Õ
+<?xml version="1.0"?>
+<!DOCTYPE cross-domain-policy SYSTEM
+  "http://www.macromedia.com/xml/dtds/cross-domain-policy.dtd">
+
+<cross-domain-policy>
+  <allow-access-from domain="*" />
+</cross-domain-policy>

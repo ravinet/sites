@@ -1,0 +1,30 @@
+PHTTP173.194.43.50"ﬂ
+GET / HTTP/1.1
+Host: www.google.com
+Connection: keep-alive
+TAccept: text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8
+vUser-Agent: Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/31.0.1650.63 Safari/537.36
+$Accept-Encoding: gzip,deflate,sdch
+!Accept-Language: en-US,en;q=0.8
+
+*ó
+HTTP/1.1 302 Found
+#Location: https://www.google.com/
+Cache-Control: private
+(Content-Type: text/html; charset=UTF-8
+ùSet-Cookie: PREF=ID=0280ad039161e1a1:FF=0:TM=1389301061:LM=1389301061:S=xlBMSCqtQmDLTfGD; expires=Sat, 09-Jan-2016 20:57:41 GMT; path=/; domain=.google.com
+‚Set-Cookie: NID=67=fJwRtuxZUdyNyi61DjvFfObuspD8S0FgEDZxzo9Jtm-WKT1rTdc4wqNzTqV7HL-PIOCw0nj72y1H871ALkTPRfWGINfdo0e89dgGwCiK66SY8g6DrLjUhA_yJUECxFV5; expires=Fri, 11-Jul-2014 20:57:41 GMT; path=/; domain=.google.com; HttpOnly
+ÅP3P: CP="This is not a P3P policy! See http://www.google.com/support/accounts/bin/answer.py?hl=en&answer=151657 for more info."
+%Date: Thu, 09 Jan 2014 20:57:41 GMT
+Server: gws
+Content-Length: 220
+!X-XSS-Protection: 1; mode=block
+X-Frame-Options: SAMEORIGIN
+Alternate-Protocol: 80:quic
+ﬁ
+<HTML><HEAD><meta http-equiv="content-type" content="text/html;charset=utf-8">
+<TITLE>302 Moved</TITLE></HEAD><BODY>
+<H1>302 Moved</H1>
+The document has moved
+<A HREF="https://www.google.com/">here</A>.
+</BODY></HTML>

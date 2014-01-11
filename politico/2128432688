@@ -1,0 +1,26 @@
+PHTTP
+18.7.20.70"ý
+QGET /includes/xml/widgetColumn_hp-front.xml?cachebuster=20140101636001 HTTP/1.1
+Host: www.politico.com
+Connection: keep-alive
+Accept: */*
+"X-Requested-With: XMLHttpRequest
+vUser-Agent: Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/31.0.1650.63 Safari/537.36
+#Referer: http://www.politico.com/
+$Accept-Encoding: gzip,deflate,sdch
+!Accept-Language: en-US,en;q=0.8
+ÖCookie: optimizelySegments=%7B%22536712581%22%3A%22direct%22%2C%22538992278%22%3A%22gc%22%2C%22539001624%22%3A%22none%22%2C%22553840423%22%3A%22false%22%7D; optimizelyEndUserId=oeu1389373068874r0.9293693001382053; optimizelyBuckets=%7B%22554811171%22%3A%220%22%7D; ctopo=; optimizelyPendingLogEvents=%5B%5D; __qca=P0-622512693-1389373070594
+
+*Ÿ
+HTTP/1.1 200 OK
+Nx-amz-id-2: tCZHfscvelCkmD5msUspKblySdl6kWKS5wQq8s+N3bS0+k4a8uPxQ4poQdsZAfRD
+$x-amz-request-id: 9EC95D591350665A
+.Last-Modified: Fri, 10 Jan 2014 16:26:21 GMT
+*ETag: "1267b386d3269c86e6f6d29d3d84a5d7"
+Content-Type: text/xml
+Content-Length: 687
+Server: AmazonS3
+%Date: Fri, 10 Jan 2014 16:57:37 GMT
+Connection: keep-alive
+±
+<?xml version="1.0" encoding="UTF-8"?><home><inc divid="widgetColumn"><![CDATA[ <div class="widget-header"> <h4>POLITICO Column</h4> </div> <div class="widget-content"> <ul class="story-list"> <li> <h5><a href="http://www.politico.com/story/2014/01/i-apologize-really-sincerely-101805.html?ml=co">Roger Simon </a></h5> <a href="http://www.politico.com/story/2014/01/i-apologize-really-sincerely-101805.html?ml=co"><img width="40" height="40" src="/design/widgets/x.gif" alt="Roger Simon" class="thumbnail" /></a> <h6><a href="http://www.politico.com/story/2014/01/i-apologize-really-sincerely-101805.html?ml=co">I apologize. Really. Sincerely</a></h6> </li> </ul> </div> ]]></inc></home>

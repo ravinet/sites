@@ -1,0 +1,28 @@
+PHTTP184.84.228.74"ô
+GET /crossdomain.xml HTTP/1.1
+Host: a.collective-media.net
+Connection: keep-alive
+vUser-Agent: Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/31.0.1650.63 Safari/537.36
+Accept: */*
+CReferer: http://embed.newsinc.com/thumbnail/iframe.html?wid=13109
+$Accept-Encoding: gzip,deflate,sdch
+!Accept-Language: en-US,en;q=0.8
+
+*Ü
+HTTP/1.1 200 OK
+Server: nginx/1.4.4
+Content-Type: text/plain
+Content-Length: 187
+.Last-Modified: Wed, 02 May 2012 19:53:06 GMT
+ETag: "4fa190a2-bb"
+Accept-Ranges: bytes
+%Date: Wed, 08 Jan 2014 16:56:58 GMT
+Connection: keep-alive
+bSet-Cookie: JY57=CT; expires=Wed, 05-Feb-2014 16:56:58 GMT; path=/; domain=.collective-media.net
+9P3P: CP="DSP NOI ADM PSAo PSDo OUR BUS NAV COM UNI INT"
+½
+<?xml version="1.0" ?>
+<cross-domain-policy>
+<allow-access-from domain="*" secure="false"/>
+<allow-http-request-headers-from domain="*" headers="*" secure="true"/>
+</cross-domain-policy>

@@ -1,0 +1,29 @@
+PHTTP173.194.43.32"Í
+GET /player_api HTTP/1.1
+Host: www.youtube.com
+Connection: keep-alive
+Accept: */*
+vUser-Agent: Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/31.0.1650.63 Safari/537.36
+(Referer: http://www.thedailybeast.com/
+$Accept-Encoding: gzip,deflate,sdch
+!Accept-Language: en-US,en;q=0.8
+
+*Ý
+
+HTTP/1.1 200 OK
+%Date: Thu, 09 Jan 2014 01:47:32 GMT
+Server: gwiseguy/2.0
+&Content-Type: application/javascript
+€P3P: CP="This is not a P3P policy! See http://support.google.com/accounts/bin/answer.py?answer=151657&hl=en-US for more info."
+Cache-Control: no-cache
+(Expires: Tue, 27 Apr 1971 19:44:06 EST
+DSet-Cookie: YSC=chqvaXK4RpY; path=/; domain=.youtube.com; httponly
+pSet-Cookie: VISITOR_INFO1_LIVE=AVXs8U-bslE; path=/; domain=.youtube.com; expires=Tue, 09-Sep-2014 13:40:32 GMT
+!X-Content-Type-Options: nosniff
+cX-XSS-Protection: 1; mode=block; report=https://www.google.com/appserve/security-bugs/log/youtube
+Content-Length: 641
+X-Frame-Options: SAMEORIGIN
+Alternate-Protocol: 80:quic
+ƒ
+
+if (!window['YT']) {var YT = {loading: 0,loaded: 0};}if (!window['YTConfig']) {var YTConfig = {};}if (!YT.loading) {YT.loading = 1;(function(){var l = [];YT.ready = function(f) {if (YT.loaded) {f();} else {l.push(f);}};window.onYTReady = function() {YT.loaded = 1;for (var i = 0; i < l.length; i++) {try {l[i]();} catch (e) {}}};YT.setConfig = function(c) {for (var k in c) {if (c.hasOwnProperty(k)) {YTConfig[k] = c[k];}}};var a = document.createElement('script');a.src = 'http:' + '//s.ytimg.com/yts/jsbin/www-widgetapi-vflQsgeAN.js';a.async = true;var b = document.getElementsByTagName('script')[0];b.parentNode.insertBefore(a, b);})();}

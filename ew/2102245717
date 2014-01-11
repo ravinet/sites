@@ -1,0 +1,25 @@
+PHTTP208.111.168.6"ÿ
+%GET /e1/pd/crossdomain.xml HTTP/1.1
+Host: brightcove.vo.llnwd.net
+Connection: keep-alive
+vUser-Agent: Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/31.0.1650.63 Safari/537.36
+Accept: */*
+ Referer: http://www.ew.com/ew/
+$Accept-Encoding: gzip,deflate,sdch
+!Accept-Language: en-US,en;q=0.8
+
+*Å
+HTTP/1.1 200 OK
+Content-Type: text/xml
+(X-Permitted-Cross-Domain-Policies: all
+Cache-Control: max-age=604800
+Age: 43381
+%Date: Thu, 09 Jan 2014 13:38:53 GMT
+(Expires: Thu, 16 Jan 2014 01:35:52 GMT
+Content-Length: 117
+Connection: keep-alive
+w
+<?xml version="1.0"?>
+<cross-domain-policy>
+    <allow-access-from domain="*" secure="false"/>
+</cross-domain-policy>

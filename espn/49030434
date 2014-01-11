@@ -1,0 +1,42 @@
+PHTTP12.130.81.215"Ô
+$GET /rms/11107/nodetag.js HTTP/1.1
+Host: content.dl-rms.com
+Connection: keep-alive
+Accept: */*
+vUser-Agent: Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/31.0.1650.63 Safari/537.36
+"Referer: http://www.espn.go.com/
+$Accept-Encoding: gzip,deflate,sdch
+!Accept-Language: en-US,en;q=0.8
+
+*û
+HTTP/1.1 200 OK
+.Last-Modified: Thu, 23 Apr 2009 15:25:34 GMT
+ETag: "19f-4683a7dc07780"
+Accept-Ranges: bytes
+Vary: Accept-Encoding
+X-Host: a103 D=385
+Keep-Alive: timeout=6, max=2
+&Content-Type: application/javascript
+Connection: Keep-Alive
+%Date: Thu, 09 Jan 2014 00:19:17 GMT
+Age: 43     
+Content-Length: 415
+¡
+(function(){ 
+  var d=document,w=window;
+  function r(){
+	var z=d.createElement('SCRIPT');
+	z.src='http://content.dl-rms.com/dt/s/11107/s.js';
+	d.getElementsByTagName('head')[0].appendChild(z);
+  }
+
+ if(Math.random()<1) {
+  if (w.DL_MN||d.readyState=="complete"){
+	r();
+  } else if (w.addEventListener){ 
+	w.addEventListener("load", r, false);
+  } else if (w.attachEvent){ 
+	w.attachEvent("onload", r);
+  }
+ }
+})();

@@ -1,0 +1,33 @@
+PHTTP
+18.7.20.69"Û
+GET / HTTP/1.1
+Host: www.ew.com
+Connection: keep-alive
+TAccept: text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8
+vUser-Agent: Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/31.0.1650.63 Safari/537.36
+$Accept-Encoding: gzip,deflate,sdch
+!Accept-Language: en-US,en;q=0.8
+
+*¸
+ HTTP/1.1 301 Moved Permanently
+Server: Apache
+!Location: http://www.ew.com/ew/
+-Content-Type: text/html; charset=iso-8859-1
+Content-Length: 229
+Accept-Ranges: bytes
+X-Varnish: 1822108421
+(Expires: Thu, 09 Jan 2014 13:38:47 GMT
+.Cache-Control: max-age=0, no-cache, no-store
+Pragma: no-cache
+%Date: Thu, 09 Jan 2014 13:38:47 GMT
+Connection: keep-alive
+Vary: Accept-Encoding
+6Set-Cookie: TI_PREFS=default; path=/; domain=.ew.com
+ç
+<!DOCTYPE HTML PUBLIC "-//IETF//DTD HTML 2.0//EN">
+<html><head>
+<title>301 Moved Permanently</title>
+</head><body>
+<h1>Moved Permanently</h1>
+<p>The document has moved <a href="http://www.ew.com/ew/">here</a>.</p>
+</body></html>

@@ -1,0 +1,22 @@
+PHTTP64.94.107.32"Ã
+GGET /api/segments.json?a=p-573scDfDoUH6o&callback=qc_results HTTP/1.1
+Host: pixel.quantserve.com
+Connection: keep-alive
+Accept: */*
+vUser-Agent: Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/31.0.1650.63 Safari/537.36
+CReferer: http://embed.newsinc.com/thumbnail/iframe.html?wid=13109
+$Accept-Encoding: gzip,deflate,sdch
+!Accept-Language: en-US,en;q=0.8
+'Cookie: mc=52cd8356-6a555-a67d2-91386
+
+*§
+HTTP/1.1 200 OK
+Connection: close
+(Content-Type: application/x-javascript
+3Cache-Control: private, no-transform, max-age=600
+(Expires: Wed, 08 Jan 2014 17:06:55 GMT
+Content-Length: 39
+%Date: Wed, 08 Jan 2014 16:56:55 GMT
+Server: QS
+)
+qc_results({"segments":[{"id":"D"}]});

@@ -1,0 +1,28 @@
+»HTTPS131.253.40.12"†
+OGET /wlsignin.aspx?ru=http%3a%2f%2fwww.msn.com%2fscript.aspx&lc=1033 HTTP/1.1
+ Host: login.secure.co1.msn.com
+Connection: keep-alive
+TAccept: text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8
+vUser-Agent: Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/31.0.1650.63 Safari/537.36
+Referer: http://www.msn.com/
+$Accept-Encoding: gzip,deflate,sdch
+!Accept-Language: en-US,en;q=0.8
+»Cookie: MC1=V=3&GUID=54be901f6cb6410ea8cafcc122d357bf; mh=MSFT; CC=US; CULTURE=EN-US; _FS=NU=1; SRCHUSR=AUTOREDIR=0&GEOVAR=&DOB=20140109; Sample=94; MUID=2A5119A5F13C61E712801C18F53C6398; sfix=1; SCRHDN=ASD=0&DURL=#; SRCHD=SM=1&D=3168020&MS=3168020&AF=NOFORM; _SS=SID=B8A90352FE7D4AD4B252C1C53F313438; brdSample=0
+
+*Ÿ
+HTTP/1.1 302 Found
+#Cache-Control: no-cache, no-store
+Pragma: no-cache
+(Content-Type: text/html; charset=utf-8
+*Location: http://www.msn.com/script.aspx
+Server: Microsoft-IIS/8.0
+X-AspNet-Version: 4.0.30319
+X-Powered-By: ASP.NET
+7P3P: CP="BUS CUR CONo FIN IVDo ONL OUR PHY SAMo TELo"
+S: CH1SCH060110239
+%Date: Thu, 09 Jan 2014 00:20:26 GMT
+Content-Length: 147
+•
+<html><head><title>Object moved</title></head><body>
+<h2>Object moved to <a href="http://www.msn.com/script.aspx">here</a>.</h2>
+</body></html>

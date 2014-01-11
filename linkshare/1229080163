@@ -1,0 +1,24 @@
+PHTTP23.202.224.214"Ú
+%GET /button/checkOAuth.esi HTTP/1.1
+Host: wd-edge.sharethis.com
+Connection: keep-alive
+Accept: */*
+vUser-Agent: Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/31.0.1650.63 Safari/537.36
+$Referer: http://www.linkshare.com/
+$Accept-Encoding: gzip,deflate,sdch
+!Accept-Language: en-US,en;q=0.8
+
+*Ä
+HTTP/1.1 200 OK
+Server: nginx/1.0.15
+Content-Length: 22
+Content-Type: text/javascript
+Vary: Accept-Encoding
+(Expires: Thu, 09 Jan 2014 23:50:02 GMT
+.Cache-Control: max-age=0, no-cache, no-store
+Pragma: no-cache
+%Date: Thu, 09 Jan 2014 23:50:02 GMT
+Connection: keep-alive
+
+
+  var userDetails={};

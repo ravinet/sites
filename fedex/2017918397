@@ -1,0 +1,19 @@
+PHTTP66.117.23.104"™
+˙
+GET /m2/fedex/sc/standard?mboxHost=www.fedex.com&mboxSession=1389227438173-65420&mboxPage=1389227438173-65420&browserTimeOffset=-300&mboxCount=1&mbox=SiteCatalyst%3A%20event&mboxId=0&mboxTime=1389209440204&visitorNamespace=fedex&pageName=us%2Fen%2Ffedex%2Fglobal%2Fhomepage%2Fglobal%20home%20page&currencyCode=USD&channel=us%2Fen%2Ffedex%2Fglobal%2Fhomepage&trackDownloadLinks=true&trackExternalLinks=true&trackInlineStats=true&linkLeaveQueryString=false&linkTrackVars=None%2Cprop18%2Cprop19%2Cprop20&linkTrackEvents=None&hier1=us%2Fen%2Ffedex%2Fglobal%2Fhomepage&hier2=homepage%2Fglobal%2Ffedex%2Fen%2Fus&prop4=D%3Dv4&eVar4=Logged%20Out&prop7=6%3A00PM%7CWednesday&eVar7=6%3A00PM%7CWednesday&prop10=New&eVar10=New&prop29=1%2F8%2F2014%2019%3A30%3A38&prop31=D%3Ds_vi&prop35=D%3DAccept-Language&prop38=D%3DpageName&eVar38=D%3DpageName&prop40=D%3Devents&eVar40=D%3Devents&prop41=1&eVar41=1&prop43=D%3Dv43&eVar43=P%3Aus%2Fen%2Ffedex%2Fglobal%2Fhomepage%2Fglobal%20home%20page&prop44=us%2Fen%2Ffedex%2Fglobal%2Fhomepage%2Fglobal%20home%20page&prop46=D%3DpageName&eVar46=D%3DpageName&prop47=flash%2011&prop48=H.24.4_2.0.7_10192013.01&prop50=fedexglbl&eVar50=D%3Dg&prop52=2014-1-8&eVar52=2014-1-8&eVar53=%2B1&prop54=0&eVar54=0&prop60=undefined%3Aundefined&prop67=C%3A937%3A1051%3A1%3A1.0&prop69=1389227438173-65420&mboxURL=http%3A%2F%2Fwww.fedex.com%2F&mboxReferrer=&mboxVersion=41&scPluginVersion=1 HTTP/1.1
+Host: fedex.tt.omtrdc.net
+Connection: keep-alive
+Accept: */*
+vUser-Agent: Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/31.0.1650.63 Safari/537.36
+ Referer: http://www.fedex.com/
+$Accept-Encoding: gzip,deflate,sdch
+!Accept-Language: en-US,en;q=0.8
+
+*Å
+HTTP/1.1 200 OK
+2Content-Type: text/javascript;charset=ISO-8859-1
+Content-Length: 222
+%Date: Thu, 09 Jan 2014 00:30:27 GMT
+Server: Test & Target
+‡
+if (typeof(mboxFactories) !== 'undefined') {mboxFactories.get('default').getPCId().forceId("1389227438173-65420.25_06");mboxFactories.get('default').get('SiteCatalyst: event', 0).setOffer(new mboxOfferDefault()).loaded();}

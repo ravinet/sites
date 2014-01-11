@@ -1,0 +1,194 @@
+PHTTP23.74.28.11"Â
+$GET /css/zvents/zvent.css HTTP/1.1
+Host: extras.chron.com
+Connection: keep-alive
+Accept: text/css,*/*;q=0.1
+vUser-Agent: Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/31.0.1650.63 Safari/537.36
+ Referer: http://www.chron.com/
+$Accept-Encoding: gzip,deflate,sdch
+!Accept-Language: en-US,en;q=0.8
+àCookie: optimizelySegments=%7B%22201940924%22%3A%22direct%22%2C%22201956888%22%3A%22false%22%2C%22202001145%22%3A%22gc%22%7D; optimizelyEndUserId=oeu1389369870895r0.757340986514464; optimizelyBuckets=%7B%7D; optimizelyPendingLogEvents=%5B%5D; s_pers=%20s_fid%3D0D3A55D289F4EF95-32D86327096A47D5%7C1452441871089%3B%20s_nr%3D1389369871090-New%7C1391961871090%3B; s_sess=%20s_cc%3Dtrue%3B%20SC_LINKS%3D%3B%20s_sq%3D%3B; __utma=64689917.426683207.1389369871.1389369871.1389369871.1; __utmb=64689917.1.10.1389369871; __utmc=64689917; __utmz=64689917.1389369871.1.1.utmcsr=(direct)|utmccn=(direct)|utmcmd=(none); s_vi=[CS]v1|29680D01050112BE-6000010AE0014E2B[CE]; __gads=ID=20cf1a44759282b3:T=1389369858:S=ALNI_MaxVVfG7Fq4mlUW8KW4X3zhrSmvBA
+
+*± 
+HTTP/1.1 200 OK
+ Server: Apache/2.2.3 (Red Hat)
+.Last-Modified: Fri, 19 Aug 2011 21:34:00 GMT
+!ETag: "f8ab1-ed0-4aae27ccd4200"
+Accept-Ranges: bytes
+Content-Length: 3792
+Content-Type: text/css
+Cache-Control: max-age=1800
+(Expires: Fri, 10 Jan 2014 16:34:18 GMT
+%Date: Fri, 10 Jan 2014 16:04:18 GMT
+Connection: keep-alive
+Ò
+/* Event list styling */ .ZventsSponsoredLabel {
+    color: #888;
+} .ZventsEventList, .ZventsSponsoredList {
+    list-style-type: none;
+    margin: 0;
+    padding: 0 0 3px 0;
+} .ZventsSponsoredList {
+    border: solid 1px #ccc;
+} .ZventsEventList li, .ZventsSponsoredList li {
+    display: block;
+    margin: 0;
+    padding: 0;
+} .ZventsImage 
+{
+    vertical-align: middle;
+}
+
+/* Quick Day list styles */ .ZventsQuickDayList {
+    list-style-type: none;
+    display: block;
+    margin: 0;
+    padding: 0;
+} .ZventsQuickDayList li {
+    display: block;
+    float: left;
+    margin-right: 1px;
+} .ZventsQuickDayList * {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 12px;
+} .ZventsQuickDayList form {
+    margin: 0;
+    padding: 0;
+} .ZventsDayButton, .ZventsDayButton * {
+    display: block;
+    text-align: center;
+} .ZventsDayButton {
+    color: rgb(91, 91, 91);
+    background-color: #fff;
+    border: 1px solid #ccc;
+    text-decoration: none;
+    cursor: pointer;
+    line-height: 120%;
+    font-weight: bold;
+    margin-right: 2px;
+    padding: 2px 2px 0 2px;
+} .ZventsDayButton:hover {
+    background-color: #ccc;
+} .ZventsDayButtonDate {
+    font-size: 14px;
+} .ZventsDayButtonDay 
+{
+	font-size: 11px; font-weight: normal;
+} .ZventsDayButtonAll {
+    margin-right: 0;
+    background-color: #fff;
+    border: 1px solid #ccc;
+} .ZventsDayButtonToday 
+{
+    color: #900810;
+} .ZventsDayButtonWeekend {
+    background-color: #e4e4e4;
+}
+
+/* Weekly preview styles */ 
+#whbox {margin-top: 12px 0;}
+
+.ZventsWeeklyPreview {
+    display: block;
+    margin: 0;
+    font-family: Arial, sans-serif;
+    padding: 7px;
+} .ZventsWeeklyPreview h2 {
+    font-size: 12px; font-weight: bold; text-transform: uppercase;
+    margin: 0; padding: 0; display: none;
+}
+ .ZventsWeeklyPreviewEventHeading {
+    margin: 0; font-size: 13px;
+} .ZventsWeeklyPreviewVenueLine {
+    margin: 0;
+} .ZventsWeeklyPreviewDateLine {
+    margin: 0; 
+} .ZventsWeeklyPreviewEventInfo {
+    display: block;
+    float: left;
+    width: 225px; 
+}
+.ZventsWeeklyPreview .ZventsEventList li,
+.ZventsWeeklyPreview .ZventsSponsoredList li {
+  margin-top: 5px;
+}
+.ZventsWeeklyPreview .ZventsEventList li img,
+.ZventsWeeklyPreview .ZventsSponsoredList li img {
+    display: block;
+    float: left;
+    margin: 2px 5px 2px 0;
+} .ZventsWeeklyPreview .ZventsSponsoredList {
+    border: none;
+}
+.ZventsWeeklyPreview .ZventsQuickDayList {
+}.ZventsWeeklyPreviewSearch {
+    display: block;
+	margin: 7px 0 5px 0;
+}
+.ZventsWeeklyPreviewSearchTextInput {
+  width: 200px; font: 12px arial,sans-serif;
+}
+.ZventsWeeklyPreviewSearchSubmit {font: 12px arial,sans-serif;}
+
+.ZventsTargetedEvents {
+  width: 300px;
+  height: 250px;
+  overflow: hidden;
+  border: solid 1px #ccc;
+  padding: 3px;
+}
+
+.ZventsTargetedEvents h2 {
+  margin: 0;
+  padding: 0;
+  font-size: 13px;
+}
+
+.ZventsTargetedEvents img{
+  float: left;
+  display: block;
+}
+
+.ZventsTargetedEvents .ZventsEventList li,
+.ZventsTargetedEvents .ZventsSponsoredList li {
+    display: block;
+    margin: 0;
+    padding: 0;
+    width: 300px;
+}
+
+.ZventsTargetedEventsEventInfo {
+  width: 220px;
+  float: right;
+  text-align: left;
+  margin-top: 15px;
+  display: block;
+}
+
+.ZventsTargetedEventsEventHeading {
+  font-size: 12pt;
+  font-weight: bold;
+  margin: 0;
+  padding: 0;
+  white-space: nowrap;
+}
+
+.ZventsTargetedEventsEventHeading a {
+  text-decoration: none;
+}
+
+.ZventsTargetedEventsEventInfo p {
+  font-size: 10pt;
+  margin: 0;
+  padding: 0;
+}
+
+.ZventsTargetedEventsMore {
+  font-size: 9pt;
+  white-space: nowrap;
+  margin: 0;
+  height: 30px;
+  padding-top: 20px;
+  text-align: right;
+  padding-right: 30px;
+}

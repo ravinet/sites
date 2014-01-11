@@ -1,0 +1,23 @@
+PHTTP54.230.17.217"„
+GET /test.png HTTP/1.1
+FHost: a97c7b2726fca3faeb63faa56b49a6d75.profile.iad12.cloudfront.net
+Connection: keep-alive
+Accept: image/webp,*/*;q=0.8
+vUser-Agent: Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/31.0.1650.63 Safari/537.36
+!Referer: http://aws.amazon.com/
+$Accept-Encoding: gzip,deflate,sdch
+!Accept-Language: en-US,en;q=0.8
+
+*Ã
+HTTP/1.1 200 OK
+Content-Type: text/html
+Content-Length: 58
+Connection: keep-alive
+Server: CloudFront
+%Date: Thu, 09 Jan 2014 00:35:36 GMT
+(Expires: Thu, 09 Jan 2014 00:35:36 GMT
+,X-Cache: RoutingProfileExp from cloudfront
+GVia: 1.1 59e939f4a925e8ff57cf588ed6583be9.cloudfront.net (CloudFront)
+GX-Amz-Cf-Id: cMhu97C9XQcFxby0MRuhNj2nWXVBOH7cPRQvuKurRNMkCUVs7m_mGQ==
+<
+Standard Amazon AWS CloudFront Profile Experiment Response

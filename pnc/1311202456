@@ -1,0 +1,55 @@
+»HTTPS23.44.197.30"µ
+MGET /live/pnc/mastheads/flashMastheads/data/xml/personal_11_01.xml HTTP/1.1
+Host: content.pncmc.com
+Connection: keep-alive
+vUser-Agent: Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/31.0.1650.63 Safari/537.36
+Accept: */*
+[Referer: https://www.pnc.com/webapp/unsec/Homepage.do?siteArea=/PNCCorp/PNC/Home/Personal
+$Accept-Encoding: gzip,deflate,sdch
+!Accept-Language: en-US,en;q=0.8
+
+*£
+
+HTTP/1.1 200 OK
+Server: Apache
+5ETag: "e5b30a978501a3bab765f4ea9ee4a487:1383921597"
+.Last-Modified: Fri, 08 Nov 2013 14:39:57 GMT
+Accept-Ranges: bytes
+Content-Length: 1024
+Content-Type: application/xml
+%Date: Thu, 09 Jan 2014 21:24:45 GMT
+Connection: keep-alive
+‚
+<?xml version="1.0" encoding="UTF-8"?>
+<data name="personal">  
+
+	<item position="0" file="1013_P_RetirementIncome.swf" label="Retirement" delay="5">
+		<url>			
+			<![CDATA[https://www.pnc.com/webapp/unsec/Blank.do?siteArea=/pnccorp/pnc/home/personal/retirement+investments+wealth/Challenges+to+Your+Retirement&WT.ac=RetireIncome_1013_FL]]>		
+		</url>
+	</item> 
+
+	<item position="1" file="0613_P_financialEducation.swf" label="PNC Achievement Sessions" delay="5">
+		<url>					
+			<![CDATA[https://www.pncsites.com/achievement-sessions/index.html?WT.ac=finedu_0813_FL]]>
+		</url>
+	</item>	
+	
+	<item position="2" file="0513_P_MobileDeposit.swf" label="Mobile Deposit" delay="5">
+		<url>			
+			<![CDATA[https://www.pncsites.com/always-open/mobile-deposit.html?WT.ac=MobileDeposit_0913_FL]]>
+		</url>
+	</item> 
+	
+	<item position="3" file="1013_P_PopMoney.swf" label="popmoney" delay="5">
+		<url>			
+			<![CDATA[https://www.pncsites.com/always-open/popmoney.html?WT.ac=popmoney_1013_FL]]>
+		</url>
+	</item>
+	
+	
+	
+	  	
+	</data>
+
+

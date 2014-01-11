@@ -1,0 +1,22 @@
+PHTTP173.203.40.173"ù
+:GET /?a=noaa.gov&u=http%3A%2F%2Fwww.noaa.gov%2F HTTP/1.1
+Host: searchstats.usa.gov
+Connection: keep-alive
+Accept: image/webp,*/*;q=0.8
+vUser-Agent: Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/31.0.1650.63 Safari/537.36
+Referer: http://www.noaa.gov/
+$Accept-Encoding: gzip,deflate,sdch
+!Accept-Language: en-US,en;q=0.8
+
+*œ
+HTTP/1.1 200 OK
+Server: nginx/1.4.4
+%Date: Thu, 09 Jan 2014 01:18:14 GMT
+Content-Type: text/html
+Content-Length: 0
+.Last-Modified: Wed, 10 Oct 2012 04:34:25 GMT
+Connection: keep-alive
+ETag: "5074fad1-0"
+X-Frame-Options: SAMEORIGIN
+Accept-Ranges: bytes
+

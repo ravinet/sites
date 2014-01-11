@@ -1,0 +1,29 @@
+PHTTP54.225.139.135"ó
+ GET /hat?location=%2F HTTP/1.1
+Host: bleacherreport.com
+Connection: keep-alive
+8Accept: application/json, text/javascript, */*; q=0.01
+"X-Requested-With: XMLHttpRequest
+vUser-Agent: Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/31.0.1650.63 Safari/537.36
+%Referer: http://bleacherreport.com/
+$Accept-Encoding: gzip,deflate,sdch
+!Accept-Language: en-US,en;q=0.8
+ÎCookie: _unqid=45e0d3930c8c952deef61ef14ef0bac5; optimizelySegments=%7B%22270807228%22%3A%22gc%22%2C%22270814290%22%3A%22none%22%2C%22270816165%22%3A%22false%22%2C%22270818148%22%3A%22direct%22%7D; optimizelyEndUserId=oeu1389227817232r0.076963827945292; optimizelyBuckets=%7B%7D; optimizelyPendingLogEvents=%5B%5D; __qca=P0-1194096633-1389227817443; ads_session=8; __utma=230916684.810173113.1389227818.1389227818.1389227818.1; __utmb=230916684.1.10.1389227818; __utmc=230916684; __utmz=230916684.1389227818.1.1.utmcsr=(direct)|utmccn=(direct)|utmcmd=(none); s_cc=true; s_sq=%5B%5BB%5D%5D
+
+*È
+HTTP/1.1 200 OK
+4Cache-Control: private, max-age=0, must-revalidate
+/Content-Type: application/json; charset=utf-8
+%Date: Thu, 09 Jan 2014 00:36:45 GMT
+*ETag: "fec2ac7ac9756e3ee41ec2acc21a8cd3"
+0Server: nginx/1.2.6 + Phusion Passenger 3.0.19
+dSet-Cookie: _unqid=45e0d3930c8c952deef61ef14ef0bac5; path=/; expires=Mon, 09-Jan-2034 00:36:45 GMT
+Status: 200
+Vary: User-Agent
+=X-Powered-By: Phusion Passenger (mod_rails/mod_rack) 3.0.19
+X-Rack-Cache: pass
+X-Runtime: 12
+Content-Length: 1443
+Connection: keep-alive
+¥
+{"national_news":[{"text":"Maddux, Glavine, Thomas Inducted into MLB Hall of Fame","link":"/articles/1915311-2014-bbwaa-hall-of-fame-election-results-announced"},{"text":"Biggio Misses HOF of Fame by Two Votes","link":"/articles/1915871-craig-biggio-robbed-of-hall-of-fame-spot-why-hell-have-his-day-in-2015"},{"text":"Manziel 'Relieved' to Officially Declare for Draft","link":"/articles/1884730-johnny-manziel-reportedly-will-enter-2014-nfl-draft"},{"text":"FIFA: Qatar World Cup Moving to Winter","link":"/articles/1913932-fifa-announces-2022-world-cup-in-qatar-will-be-moved-from-summer-to-winter"},{"text":"Raiders Retain Allen as Head Coach ","link":"/articles/1913880-dennis-allen-retained-as-head-coach-of-oakland-raiders"},{"text":"Nadal, Serena Grab Top Seeds for Australian Open","link":"/articles/1915507-nadal-serena-grab-top-seeds-for-australian-open"},{"text":"Germany Star Hitzlsperger Reveals He's Gay","link":"/articles/1915250-thomas-hitzlsperger-comes-out-as-gay-footballer-according-to-report"},{"text":"Dolphins, GM Ireland Agree to Part Ways","link":"/articles/1914790-miami-dolphins-and-gm-jeff-ireland-part-ways"},{"text":"No. 5 MSU Hands No. 3 OSU First Loss","link":"/articles/1914952-ohio-state-vs-michigan-state-score-grades-and-analysis"},{"text":"CNN: College Athletes Reading at 8th-Grade Levels ","link":"/articles/1914703-cnn-some-college-athletes-play-like-adults-read-like-5th-graders"}],"breaking_news":[]}

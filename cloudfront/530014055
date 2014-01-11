@@ -1,0 +1,44 @@
+PHTTP176.32.100.36"¤
+#GET /js/dictionary-EN.js HTTP/1.1
+Host: aws.amazon.com
+Connection: keep-alive
+Accept: */*
+vUser-Agent: Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/31.0.1650.63 Safari/537.36
+,Referer: http://aws.amazon.com/cloudfront/
+$Accept-Encoding: gzip,deflate,sdch
+!Accept-Language: en-US,en;q=0.8
+ÈCookie: x-wl-uid=1rJX21O2M8ShS7v+jXpD1SnsatfsJvOhycm9IyFb3OYaj2Rqt0PUrV2OEp6Zyv8UnZ6ibtZANqtY=; aws-ubid-main=178-2787844-0594645; aws-session-id-time=2082758401l; aws-session-id=175-2966859-6786824
+
+*ù
+HTTP/1.1 200 OK
+%Date: Thu, 09 Jan 2014 21:18:32 GMT
+Server: Server
+X-Frame-Options: SAMEORIGIN
+.Last-Modified: Fri, 03 Jan 2014 22:56:23 GMT
+ETag: "281-4ef18d1aef3c0"
+Accept-Ranges: bytes
+Content-Length: 641
+"Cache-Control: max-age=0, public
+(Expires: Thu, 09 Jan 2014 21:18:32 GMT
+(Content-Type: application/x-javascript
+Vary: User-Agent
+ƒ
+AWS.namespace('AWS').Dict = {
+    'us-east'   : 'US East (N. Virginia)',
+    'us-west'   : 'US West (Northern California)',
+    'us-west-2' : 'US West (Oregon)',
+    'eu-ireland': 'EU (Ireland)',
+    'apac-sin'  : 'Asia Pacific (Singapore)',
+    'apac-tokyo': 'Asia Pacific (Tokyo)',
+    'apac-syd'  : 'Asia Pacific (Sydney)',
+
+    'Currency'  : 'Currency',
+    'Region'    : 'Region',
+
+    'perGB': 'per GB',
+    'perhr': 'per hour',
+
+    'loadingPricingData': 'Loading pricing data...',
+    'errorRetrievingPricingData': 'Sorry, an error was encountered while retrieving pricing data.',
+    'tryAgainLink': 'Try Again'
+};

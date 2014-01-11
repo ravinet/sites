@@ -1,0 +1,23 @@
+PHTTP54.230.54.207"Ü
+GET /prod/v1/ct.html HTTP/1.1
+Host: cdn.cookietrust.org
+Connection: keep-alive
+TAccept: text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8
+vUser-Agent: Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/31.0.1650.63 Safari/537.36
+$Accept-Encoding: gzip,deflate,sdch
+!Accept-Language: en-US,en;q=0.8
+3If-None-Match: "8902283054d63b4e732155a39dbb1eb7"
+2If-Modified-Since: Mon, 07 Oct 2013 19:54:01 GMT
+
+*¦
+HTTP/1.1 304 Not Modified
+Connection: keep-alive
+%Date: Thu, 09 Jan 2014 21:32:17 GMT
+&Cache-Control: max-age=86400, public
+*ETag: "8902283054d63b4e732155a39dbb1eb7"
+.Last-Modified: Mon, 07 Oct 2013 19:54:01 GMT
+Age: 16252
+X-Cache: Hit from cloudfront
+GVia: 1.1 2ad4a90eab5b7fc25ea13468e603f25f.cloudfront.net (CloudFront)
+GX-Amz-Cf-Id: JRLABeGDGjG5so0q8jumPO_urz9GhnXqj1SJo2d8HF5HQvv0Rm5fFQ==
+

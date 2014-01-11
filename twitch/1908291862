@@ -1,0 +1,38 @@
+PHTTP199.9.251.154"—
+
+çGET /select/lirik.json?p=9625460&private_code=&nauth=%7B%22user_id%22%3Anull%2C%22channel%22%3A%22lirik%22%2C%22expires%22%3A1389292402%2C%22chansub%22%3A%7B%22view_until%22%3A1924905600%2C%22restricted_bitrates%22%3A%5B%5D%7D%2C%22private%22%3A%7B%22allowed_to_view%22%3Atrue%7D%2C%22privileged%22%3Afalse%7D&allow_source=true&nauthsig=5a819e13c7ef051ec01f952430613a928bcfaf1a&type=any HTTP/1.1
+Host: usher.twitch.tv
+Connection: keep-alive
+vUser-Agent: Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/31.0.1650.63 Safari/537.36
+Accept: */*
+ Referer: http://www.twitch.tv/
+$Accept-Encoding: gzip,deflate,sdch
+!Accept-Language: en-US,en;q=0.8
+ïCookie: language=en; _twitch_session_id=6ff049b46306561cf522b47803f34d07; mp_809576468572134f909dffa6bd0dcfcf_mixpanel=%7B%22distinct_id%22%3A%20%221437835914790-059c37c5c-14281008-232800-14378359148aa9%22%2C%22%24initial_referrer%22%3A%20%22%24direct%22%2C%22%24initial_referring_domain%22%3A%20%22%24direct%22%7D; __qca=P0-1517455926-1389291213160; __utma=165406266.102143833.1389291213.1389291213.1389291213.1; __utmb=165406266.0.10.1389291213; __utmc=165406266; __utmz=165406266.1389291213.1.1.utmcsr=(direct)|utmccn=(direct)|utmcmd=(none); __gads=ID=206b779ce22a397c:T=1389291201:S=ALNI_MYfH5N9IKUN99RRoCpsRV8rIs2DOQ; unique_id=7MeCJtg; feature_bucket=59
+
+*¨
+HTTP/1.1 200 OK
+Server: nginx
+%Date: Thu, 09 Jan 2014 18:13:22 GMT
+-Content-Type: application/vnd.apple.mpegurl
+Content-Length: 2150
+Connection: keep-alive
+via: usher22:8939
+Ë
+#EXTM3U
+#EXT-X-TWITCH-INFO:NODE="video15.jfk01",CLUSTER="jfk01",MANIFEST-CLUSTER="jfk01",USER-IP="128.30.76.55",MANIFEST-NODE="video15.jfk01"
+#EXT-X-MEDIA:TYPE=VIDEO,GROUP-ID="source",NAME="Source",AUTOSELECT=YES,DEFAULT=YES
+#EXT-X-STREAM-INF:PROGRAM-ID=0,BANDWIDTH=4305734,RESOLUTION=1920x1080,VIDEO="source"
+http://video15.jfk01.hls.twitch.tv/hls17/lirik_8164433504_52855586/source/index.m3u8?token=id=1256385318270388228,bid=8164433504,exp=1389377602,node=video15-1.jfk01.hls.justin.tv,nname=video15.jfk01,fmt=source&sig=3e644868686cebb6721f8ae48367c622d3170cc9&
+#EXT-X-MEDIA:TYPE=VIDEO,GROUP-ID="high",NAME="High",AUTOSELECT=YES,DEFAULT=YES
+#EXT-X-STREAM-INF:PROGRAM-ID=1,BANDWIDTH=1760000,VIDEO="high"
+http://video15.jfk01.hls.twitch.tv/hls17/lirik_8164433504_52855586/high/index.m3u8?token=id=1256385318270388228,bid=8164433504,exp=1389377602,node=video15-1.jfk01.hls.justin.tv,nname=video15.jfk01,fmt=high&sig=89f819a89d0852450a418bc7f8003c1cd04a8fb1&
+#EXT-X-MEDIA:TYPE=VIDEO,GROUP-ID="medium",NAME="Medium",AUTOSELECT=YES,DEFAULT=YES
+#EXT-X-STREAM-INF:PROGRAM-ID=1,BANDWIDTH=928000,VIDEO="medium"
+http://video15.jfk01.hls.twitch.tv/hls17/lirik_8164433504_52855586/medium/index.m3u8?token=id=1256385318270388228,bid=8164433504,exp=1389377602,node=video15-1.jfk01.hls.justin.tv,nname=video15.jfk01,fmt=medium&sig=e3a95bfc2cf932bf24d24fe926f3023d8b7b2626&
+#EXT-X-MEDIA:TYPE=VIDEO,GROUP-ID="low",NAME="Low",AUTOSELECT=YES,DEFAULT=YES
+#EXT-X-STREAM-INF:PROGRAM-ID=1,BANDWIDTH=596000,VIDEO="low"
+http://video15.jfk01.hls.twitch.tv/hls17/lirik_8164433504_52855586/low/index.m3u8?token=id=1256385318270388228,bid=8164433504,exp=1389377602,node=video15-1.jfk01.hls.justin.tv,nname=video15.jfk01,fmt=low&sig=592d6623bffaeff1782c4f07e84f0b009d5e504d&
+#EXT-X-MEDIA:TYPE=VIDEO,GROUP-ID="mobile",NAME="Mobile",AUTOSELECT=YES,DEFAULT=YES
+#EXT-X-STREAM-INF:PROGRAM-ID=1,BANDWIDTH=164000,VIDEO="mobile"
+http://video15.jfk01.hls.twitch.tv/hls17/lirik_8164433504_52855586/mobile/index.m3u8?token=id=1256385318270388228,bid=8164433504,exp=1389377602,node=video15-1.jfk01.hls.justin.tv,nname=video15.jfk01,fmt=mobile&sig=6de5df6f0e796773b51628c4416fafb6d4656cf7&

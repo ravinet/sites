@@ -1,0 +1,23 @@
+PHTTP131.253.34.142"“
+GET /c.gif?DI=4050&did=1&t=&CtsSyncId=E90AAAF3176D46209DF3CAF0DA385B8B&RedC=c1.microsoft.com&MXFR=08F33B17A6D2640C3DA43EAAA2D26281 HTTP/1.1
+Host: c1.atdmt.com
+Connection: keep-alive
+TAccept: text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8
+vUser-Agent: Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/31.0.1650.63 Safari/537.36
+6Referer: http://www.microsoft.com/en-us/default.aspx
+$Accept-Encoding: gzip,deflate,sdch
+!Accept-Language: en-US,en;q=0.8
+
+*
+HTTP/1.1 302 Redirect
+>Cache-Control: private, no-cache, proxy-revalidate, no-store
+Pragma: no-cache
+‹Location: http://c1.microsoft.com/c.gif?DI=4050&did=1&t=&CtsSyncId=E90AAAF3176D46209DF3CAF0DA385B8B&MUID=08F33B17A6D2640C3DA43EAAA2D26281
+Server: Microsoft-IIS/8.0
+X-Powered-By: ASP.NET
+7P3P: CP="BUS CUR CONo FIN IVDo ONL OUR PHY SAMo TELo"
+vSet-Cookie: MUID=08F33B17A6D2640C3DA43EAAA2D26281; domain=.atdmt.com; expires=Sat, 09-Jan-2016 00:23:19 GMT; path=/;
+ySet-Cookie: SRM_A=08F33B17A6D2640C3DA43EAAA2D26281; domain=c1.atdmt.com; expires=Sat, 09-Jan-2016 00:23:19 GMT; path=/;
+%Date: Thu, 09 Jan 2014 00:23:18 GMT
+Content-Length: 0
+

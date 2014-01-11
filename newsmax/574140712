@@ -1,0 +1,28 @@
+PHTTP23.202.198.218"¯
+rGET /player.swf?version=2&player=22e179b044a24e9b909bb2ae6fbf7c1f&embedType=nuplayer&embedStyle=mjolnir HTTP/1.1
+Host: player.ooyala.com
+Connection: keep-alive
+vUser-Agent: Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/31.0.1650.63 Safari/537.36
+Accept: */*
+0Referer: http://www.newsmax.com/live/TVwidget/
+$Accept-Encoding: gzip,deflate,sdch
+!Accept-Language: en-US,en;q=0.8
+
+*©
+ HTTP/1.1 302 Moved Temporarily
+Server: Apache
+¼Location: http://player.ooyala.com/static/cacheable/3280e9e38589d0dbea99b7806328e0b6/player_v2.swf?version=2&player=22e179b044a24e9b909bb2ae6fbf7c1f&embedType=nuplayer&embedStyle=mjolnir
+Content-Length: 372
+-Content-Type: text/html; charset=iso-8859-1
+Cache-Control: max-age=60
+%Date: Thu, 09 Jan 2014 01:37:28 GMT
+Connection: keep-alive
+Vary: Accept-Encoding
+ö
+<!DOCTYPE HTML PUBLIC "-//IETF//DTD HTML 2.0//EN">
+<html><head>
+<title>302 Found</title>
+</head><body>
+<h1>Found</h1>
+<p>The document has moved <a href="http://player.ooyala.com/static/cacheable/3280e9e38589d0dbea99b7806328e0b6/player_v2.swf?version=2&amp;player=22e179b044a24e9b909bb2ae6fbf7c1f&amp;embedType=nuplayer&amp;embedStyle=mjolnir">here</a>.</p>
+</body></html>

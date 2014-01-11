@@ -1,0 +1,31 @@
+PHTTP173.194.43.58"›
+‰GET /pixel?google_nid=cus&google_sc=&google_ula=140602&google_cm=&CriteoUserId=cdd9dd85-6a97-4bdd-8dab-3e6d28a50f57&google_tc= HTTP/1.1
+Host: cm.g.doubleclick.net
+Connection: keep-alive
+Accept: image/webp,*/*;q=0.8
+vUser-Agent: Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/31.0.1650.63 Safari/537.36
+$Accept-Encoding: gzip,deflate,sdch
+!Accept-Language: en-US,en;q=0.8
+pCookie: id=222a0db47e0200bc||t=1389372576|et=730|cs=002213fd483b2eea13721284b2; test_cookie=CheckForPermission
+
+*³	
+HTTP/1.1 302 Found
+¥P3P: policyref="http://googleads.g.doubleclick.net/pagead/gcn_p3p_.xml", CP="CURa ADMa DEVa TAIo PSAo PSDo OUR IND UNI PUR INT DEM STA PRE COM NAV OTC NOI DSP COR"
+mSet-Cookie: test_cookie=; domain=.doubleclick.net; path=/; Max-Age=0; expires=Mon, 21 Jul 2008 23:59:00 GMT
+ÀLocation: http://dis.criteo.com/dis/rtb/google/cookiematch.aspx?id=&CriteoUserId=cdd9dd85-6a97-4bdd-8dab-3e6d28a50f57&google_gid=CAESEPSozEAfLNZb6CDhmYBB3Uc&google_cver=1&google_ula=140602,0
+%Date: Fri, 10 Jan 2014 16:49:36 GMT
+Pragma: no-cache
+(Expires: Fri, 01 Jan 1990 00:00:00 GMT
+*Cache-Control: no-cache, must-revalidate
+(Content-Type: text/html; charset=UTF-8
+Server: HTTP server (unknown)
+Content-Length: 393
+!X-XSS-Protection: 1; mode=block
+Alternate-Protocol: 80:quic
+‹
+<HTML><HEAD><meta http-equiv="content-type" content="text/html;charset=utf-8">
+<TITLE>302 Moved</TITLE></HEAD><BODY>
+<H1>302 Moved</H1>
+The document has moved
+<A HREF="http://dis.criteo.com/dis/rtb/google/cookiematch.aspx?id=&amp;CriteoUserId=cdd9dd85-6a97-4bdd-8dab-3e6d28a50f57&amp;google_gid=CAESEPSozEAfLNZb6CDhmYBB3Uc&amp;google_cver=1&amp;google_ula=140602,0">here</A>.
+</BODY></HTML>

@@ -1,0 +1,32 @@
+PHTTP208.89.14.135"û
+ÍGET /hc/37457093/?&site=37457093&cmd=mTagStartPage&lpCallId=982476475415-44919926440&protV=20&lpjson=1&page=http%3A//www.sears.com/&id=9493528203&javaSupport=false&visitorStatus=INSITE_STATUS&defInvite=chat-undefined-undefined&activePlugin=none&cobrowse=true&PV%21unit=sears&PV%21PageTitle=Sears%20-%20Online%20%26%20In-Store%20Shopping%3A%20Appliances%2C%20Clothing%20%26%20More&PV%21omVrt=general&PV%21noliveperson=0&PV%21waterheat=0&PV%21pageLoadTime=0%20sec&PV%21visitorActive=1&SV%21language=english&SV%21PageTitleS=Sears%20-%20Online%20%26%20In-Store%20Shopping%3A%20Appliances%2C%20Clothing%20%26%20More&title=Sears%20-%20Online%20%26%20In-Store%20Shopping%3A%20Appliances%2C%20Clothing%20%26%20More HTTP/1.1
+Host: sales.liveperson.net
+Connection: keep-alive
+Accept: */*
+vUser-Agent: Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/31.0.1650.63 Safari/537.36
+ Referer: http://www.sears.com/
+$Accept-Encoding: gzip,deflate,sdch
+!Accept-Language: en-US,en;q=0.8
+{Cookie: HumanClickKEY=4583048032070415784; LivePersonID=LP i=112230143193988,d=1389228157; HumanClickACTIVE=1389228157399
+
+*²
+HTTP/1.1 200 OK
+%Date: Thu, 09 Jan 2014 00:42:30 GMT
+Server: Microsoft-IIS/6.0
+GP3P: CP="NON BUS INT NAV COM ADM CON CUR IVA IVD OTP PSA PSD TEL SAM"
+X-Powered-By: ASP.NET
+ŠSet-Cookie: LivePersonID=-112230143193988-1389228157:0; expires=Fri, 09-Jan-2015 00:42:37 GMT; path=/hc/37457093; domain=.liveperson.net
+ƒSet-Cookie: LivePersonID=LP i=112230143193988,d=1389228157; expires=Fri, 09-Jan-2015 00:42:37 GMT; path=/; domain=.liveperson.net
+BSet-Cookie: HumanClickKEY=4583048032070415784; path=/hc/37457093
+NSet-Cookie: HumanClickSiteContainerID_37457093=Secondary3; path=/hc/37457093
+”Set-Cookie: LivePersonID=-112230143193988-1389228157:-1:-1:-1:-1; expires=Fri, 09-Jan-2015 00:42:37 GMT; path=/hc/37457093; domain=.liveperson.net
+ƒSet-Cookie: LivePersonID=LP i=112230143193988,d=1389228157; expires=Fri, 09-Jan-2015 00:42:37 GMT; path=/; domain=.liveperson.net
+(Content-Type: application/x-javascript
+Accept-Ranges: bytes
+.Last-Modified: Thu, 09 Jan 2014 00:42:37 GMT
+Cache-Control: no-store
+Pragma: no-cache
+(Expires: Wed, 31 Dec 1969 23:59:59 GMT
+Content-Length: 2253
+Ï
+lpConnLib.Process({"ResultSet": {"lpCallId":"982476475415-44919926440","lpCallConfirm":"","lpJS_Execute":[{"code_id": "SYSTEM!updateButtonStatic_compact.js", "js_code": "function lpUpdateStaticButton(){this.hcDate=function(){var d=new Date();return d.getTime();};this.hcGetImage=function(name){return this.hcFindImage(document,name);};this.hcFindImage=function(doc,name){var i;if(this.hcDOM){var elements=doc.getElementsByTagName('IMG');var collection=[];for(i=0;i<elements.length;i++){if((typeof(elements[i].name)!='undefined')&&(elements[i].name==name)){collection[collection.length]=elements[i];}}if(collection.length==0){return null;}if(collection.length==1){return collection[0];}return collection;}var lays=doc.layers;if(!lays){return doc[name];}for(i=0;i<doc.images.length;i++){if(doc.images[i].name==name){return doc.images[i];}}for(var l=0;l<lays.length;l++){var img=this.hcFindImage(lays[l].document,name);if(img!=null){return img;}}return null;};this.hcDOM=(document.getElementById)?true:false;this.hcimage=this.hcGetImage('hcIcon');this.hcicon=null;var i;if(this.hcimage){if(!(this.hcimage.length)){var temp=this.hcimage;this.hcimage=[];this.hcimage[0]=temp;}this.hcicon=[];for(i=0;i<this.hcimage.length;i++){this.hcicon[i]=this.hcimage[i].src;}}if(this.hcimage){for(i=0;i<this.hcimage.length;i++){this.hcimage[i].src=this.hcicon[i]+'&monitor=1&d='+this.hcDate();}}if(typeof(lpMTagStatic)!='undefined'&&typeof(lpMTagStatic.stateChangeCallbacks)!='undefined'){for(i=0;i<lpMTagStatic.stateChangeCallbacks.length;i++){var tempfunc=lpMTagStatic.stateChangeCallbacks[i];try{tempfunc();if(lpConnLib.DebugDisplay){lpMTagDebug.Display('OK Executing Static button callback function','EXEC-OK');}}catch(hcError){if(lpConnLib.DebugDisplay){lpMTagDebug.Display('ERROR Executing Static button callback function='+tempfunc+' &nbsp #'+hcError+'#','ERROR');}}}}}var lpUpdateStaticButtonObj=new lpUpdateStaticButton();"},{"code_id": "LP_REP_STATE_CHANGED", "js_code": "if(window.lpTag&&window.lpTag.events){window.lpTag.events.trigger('LPChat','LP_REP_STATE_CHANGED',{});}else if(window.lpMTag&&window.lpMTag.events){window.lpMTag.events.publish('LP_REP_STATE_CHANGED',{});}"},{"code_id": "INPAGE-DELAY-10", "js_code": "lpMTag.lpInPageRequestDelay=10;"}]}});

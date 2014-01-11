@@ -1,0 +1,196 @@
+PHTTP65.110.169.132"Û
+#GET /lib/public-safe.css HTTP/1.1
+Host: www.optmd.com
+Connection: keep-alive
+Accept: text/css,*/*;q=0.1
+vUser-Agent: Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/31.0.1650.63 Safari/537.36
+ Referer: http://www.optmd.com/
+$Accept-Encoding: gzip,deflate,sdch
+!Accept-Language: en-US,en;q=0.8
+
+*¹*
+HTTP/1.1 200 OK
+%Date: Thu, 09 Jan 2014 00:39:26 GMT
+Server: Apache
+.Last-Modified: Mon, 17 Jun 2013 21:05:57 GMT
+#ETag: "b801df-13eb-4df5ff67b3740"
+Accept-Ranges: bytes
+Content-Length: 5099
+GP3P: policyref="/w3c/p3p.xml", CP="NOI DSP COR DEVa TAIa OUR BUS UNI"
+Connection: close
+Content-Type: text/css
+í'
+BODY {
+	BACKGROUND-COLOR: #ffffff; MARGIN: 10px 0px 10px 10px
+}
+.footer {
+	FONT-FAMILY: Verdana; COLOR: #404040; FONT-SIZE: 7pt
+}
+A.footer {
+	FONT-FAMILY: Verdana; COLOR: #404040; FONT-SIZE: 7pt; TEXT-DECORATION: none
+}
+A.footer:hover {
+	FONT-FAMILY: Verdana; COLOR: #404040; FONT-SIZE: 7pt; TEXT-DECORATION: underline
+}
+.header {
+	FONT-FAMILY: Verdana; COLOR: #ffffff; FONT-SIZE: 8pt
+}
+A.header {
+	FONT-FAMILY: Verdana; COLOR: #ffffff; FONT-SIZE: 8pt; TEXT-DECORATION: none
+}
+A.header:hover {
+	FONT-FAMILY: Verdana; COLOR: #ffffff; FONT-SIZE: 8pt; TEXT-DECORATION: underline
+}
+INPUT.header {
+	HEIGHT: 16px; COLOR: #000000
+}
+INPUT.text {
+	FONT-FAMILY: Verdana; COLOR: #404040; FONT-SIZE: 8.5pt
+}
+INPUT.submit {
+	HEIGHT: 19px; COLOR: #000000; FONT-SIZE: 8pt; CURSOR: pointer; TEXT-DECORATION: none
+}
+INPUT.submit:hover {
+	COLOR: #0000cc
+}
+DIV.fileinputs {
+	POSITION: relative
+}
+DIV.fakefile {
+	Z-INDEX: 1; POSITION: absolute; TOP: 0px; LEFT: 0px
+}
+INPUT.file {
+	Z-INDEX: 2; POSITION: relative; TEXT-ALIGN: left; FILTER: alpha(opacity: 0); -moz-opacity: 0; opacity: 0
+}
+SELECT.text {
+	FONT-FAMILY: Verdana; COLOR: #404040; FONT-SIZE: 8.5pt
+}
+TEXTAREA.text {
+	FONT-FAMILY: Verdana; COLOR: #404040; FONT-SIZE: 8.5pt
+}
+A {
+	COLOR: #ff0000; TEXT-DECORATION: none
+}
+A:hover {
+	COLOR: #f00000; TEXT-DECORATION: none
+}
+A.plain {
+	COLOR: #404040; TEXT-DECORATION: none
+}
+A.plain:hover {
+	COLOR: #404040; TEXT-DECORATION: none
+}
+A.underline {
+	COLOR: #404040; TEXT-DECORATION: none
+}
+A.underline:hover {
+	COLOR: #404040; TEXT-DECORATION: underline
+}
+TD {
+	FONT-FAMILY: Verdana; COLOR: #404040; FONT-SIZE: 8.5pt
+}
+TD.hn {
+	FONT-STYLE: italic; FONT-FAMILY: Verdana; COLOR: #ffffff; FONT-SIZE: 7.5pt
+}
+.sectionTitle {
+	FONT-FAMILY: Verdana; COLOR: #484848; FONT-SIZE: 11pt; FONT-WEIGHT: bold
+}
+.sectionTitleWhite {
+	FONT-FAMILY: Verdana; COLOR: #ffffff; FONT-SIZE: 11pt; FONT-WEIGHT: bold
+}
+.articleTitle {
+	FONT-FAMILY: Verdana; COLOR: #cc0000; FONT-SIZE: 9pt; FONT-WEIGHT: bold; TEXT-DECORATION: none
+}
+A.articleTitle {
+	FONT-FAMILY: Verdana; COLOR: #000000; FONT-SIZE: 9.5pt; FONT-WEIGHT: bold; TEXT-DECORATION: none
+}
+A.articleTitle:hover {
+	FONT-FAMILY: Verdana; COLOR: #000000; FONT-SIZE: 9.5pt; FONT-WEIGHT: bold; TEXT-DECORATION: none
+}
+A.articleMore {
+	FONT-FAMILY: Verdana; COLOR: #cc0000; FONT-SIZE: 8.5pt; TEXT-DECORATION: none
+}
+A.articleMore:hover {
+	FONT-FAMILY: Verdana; COLOR: #f00000; FONT-SIZE: 8.5pt; TEXT-DECORATION: underline
+}
+A.articleTitleRed {
+	FONT-FAMILY: Verdana; COLOR: #cc0000; FONT-SIZE: 9pt; FONT-WEIGHT: bold; TEXT-DECORATION: none
+}
+A.articleTitleRed:hover {
+	FONT-FAMILY: Verdana; COLOR: #f00000; FONT-SIZE: 9pt; FONT-WEIGHT: bold; TEXT-DECORATION: underline
+}
+.red {
+	FONT-FAMILY: Verdana; COLOR: #cc0000; FONT-SIZE: 8.5pt
+}
+.introduction {
+	FONT-FAMILY: Verdana; FONT-SIZE: 8.5pt
+}
+.title {
+	FONT-FAMILY: Verdana; COLOR: #7c96a4; FONT-SIZE: 14pt
+}
+TD.navigation {
+	BACKGROUND-COLOR: #b1b3b6; FONT-FAMILY: Verdana; FONT-SIZE: 9pt
+}
+TD.navigationBold {
+	BACKGROUND-COLOR: #000000; FONT-FAMILY: Verdana; FONT-SIZE: 9pt
+}
+A.navigation {
+	FONT-FAMILY: Verdana; COLOR: #ffffff; FONT-SIZE: 9pt; FONT-WEIGHT: bold; TEXT-DECORATION: none
+}
+A.navigation:hover {
+	FONT-FAMILY: Verdana; COLOR: #cc0000; FONT-SIZE: 9pt; FONT-WEIGHT: bold; TEXT-DECORATION: none
+}
+A.navigationBold {
+	FONT-FAMILY: Verdana; COLOR: #ffffff; FONT-SIZE: 9pt; FONT-WEIGHT: bold; TEXT-DECORATION: none
+}
+A.navigationBold:hover {
+	FONT-FAMILY: Verdana; COLOR: #cc0000; FONT-SIZE: 9pt; FONT-WEIGHT: bold; TEXT-DECORATION: none
+}
+A.mainNavigation {
+	COLOR: #ff0000; FONT-SIZE: 8.5pt; TEXT-DECORATION: none
+}
+A.mainNavigation:hover {
+	COLOR: #f00000; FONT-SIZE: 8.5pt; TEXT-DECORATION: underline
+}
+A.subNavigation {
+	COLOR: #ff0000; FONT-SIZE: 8pt; TEXT-DECORATION: none
+}
+A.subNavigation:hover {
+	COLOR: #f00000; FONT-SIZE: 8pt; TEXT-DECORATION: underline
+}
+A.mainNavigationActive {
+	COLOR: #000000; FONT-SIZE: 8.5pt; FONT-WEIGHT: bold; TEXT-DECORATION: none
+}
+A.mainNavigationActive:hover {
+	COLOR: #f00000; FONT-SIZE: 8.5pt; FONT-WEIGHT: bold; TEXT-DECORATION: underline
+}
+TD.mainNavigation {
+	COLOR: #f00000; FONT-SIZE: 8.5pt
+}
+TD.mainNavigationActive {
+	COLOR: #000000; FONT-SIZE: 8.5pt; FONT-WEIGHT: bold
+}
+TD.subNavigation {
+	COLOR: #f00000; FONT-SIZE: 8pt
+}
+TD.subNavigationActive {
+	BACKGROUND: #ffffff; COLOR: #ff0000; FONT-SIZE: 8pt; FONT-WEIGHT: bold
+}
+P {
+	FONT-FAMILY: Verdana; COLOR: #404040; FONT-SIZE: 8.5pt
+}
+P.small {
+	FONT-FAMILY: Verdana; COLOR: #404040; FONT-SIZE: 8pt
+}
+A.sitemapLevel1 {
+	FONT-FAMILY: Verdana; COLOR: #cc0000; FONT-SIZE: 12pt; FONT-WEIGHT: bold; TEXT-DECORATION: none
+}
+A.sitemapLevel1:hover {
+	FONT-FAMILY: Verdana; COLOR: #cc0000; FONT-SIZE: 12pt; FONT-WEIGHT: bold; TEXT-DECORATION: none
+}
+A.sitemapLevel2 {
+	FONT-FAMILY: Verdana; COLOR: #404040; FONT-SIZE: 8.5pt; TEXT-DECORATION: none
+}
+A.sitemapLevel2:hover {
+	FONT-FAMILY: Verdana; COLOR: #404040; FONT-SIZE: 8.5pt; TEXT-DECORATION: underline
+}
