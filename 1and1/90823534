@@ -1,0 +1,231 @@
+PHTTP216.66.35.34"å
+°GET /CaptureConfigService.asmx/CaptureConfig?journeyCode=F43C730D-2C21-4AE2-A918-3A78BE67DB36&jsoncallback=VEjQuery19103259802770335227_1389803398228&_=1389803398229 HTTP/1.1
+ Host: cdsusa.veinteractive.com
+Connection: keep-alive
+Accept: */*
+vUser-Agent: Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/31.0.1650.63 Safari/537.36
+ Referer: http://www.1and1.com/
+$Accept-Encoding: gzip,deflate,sdch
+!Accept-Language: en-US,en;q=0.8
+
+* .
+HTTP/1.1 200 OK
+Cache-Control: private
+Transfer-Encoding: chunked
+/Content-Type: application/json; charset=utf-8
+Server: Microsoft-IIS/7.5
+X-AspNet-Version: 2.0.50727
+X-Powered-By: ASP.NET
+%Date: Wed, 15 Jan 2014 16:29:44 GMT
+¥,
+1616
+VEjQuery19103259802770335227_1389803398228({
+  "CaptureUrl": "cdsusa.veinteractive.com/CaptureConfigService.asmx/CaptureConfig",
+  "JourneyCode": "F43C730D-2C21-4AE2-A918-3A78BE67DB36",
+  "datareceiverurl": "cdsusa.veinteractive.com/DataReceiverService.asmx/DataReceiver",
+  "NumberIdentifiedFields": 0,
+  "JourneyId": 2089,
+  "customerid": 1000924,
+  "IdentifyAbandonmentOr": true,
+  "JourneyTimeOut": 1800,
+  "Forms": [
+    {
+      "FormId": 6961,
+      "NumberIdentifiedFields": 0,
+      "IdentifyAbandonmentOr": true,
+      "FormURLs": [
+        "website.1and1.com/costs"
+      ],
+      "Paremeter": [],
+      "FormFields": [
+        {
+          "FormMappingId": 18464,
+          "ClientFieldName": "logo",
+          "FieldTypeName": "Class",
+          "IdentifyAbandonment": false,
+          "HtmlType": "div",
+          "DomEvent": "OnLoad",
+          "HtmlAttributeTag": "Class",
+          "isEmail": false
+        }
+      ],
+      "FormTypeId": 1,
+      "ChatAgentId": 187,
+      "EmailOptOut": false,
+      "OptOuts": []
+    },
+    {
+      "FormId": 6962,
+      "NumberIdentifiedFields": 0,
+      "IdentifyAbandonmentOr": true,
+      "FormURLs": [
+        "website.1and1.com/domain"
+      ],
+      "Paremeter": [],
+      "FormFields": [
+        {
+          "FormMappingId": 18465,
+          "ClientFieldName": "logo",
+          "FieldTypeName": "Class",
+          "IdentifyAbandonment": false,
+          "HtmlType": "div",
+          "DomEvent": "OnLoad",
+          "HtmlAttributeTag": "Class",
+          "isEmail": false
+        }
+      ],
+      "FormTypeId": 1,
+      "ChatAgentId": 187,
+      "EmailOptOut": false,
+      "OptOuts": []
+    },
+    {
+      "FormId": 6963,
+      "NumberIdentifiedFields": 0,
+      "IdentifyAbandonmentOr": true,
+      "FormURLs": [
+        "website.1and1.com/finish",
+        "1and1.com/customized"
+      ],
+      "Paremeter": [],
+      "FormFields": [],
+      "FormTypeId": 2,
+      "ChatAgentId": null,
+      "EmailOptOut": false,
+      "OptOuts": []
+    },
+    {
+      "FormId": 10635,
+      "NumberIdentifiedFields": 0,
+      "IdentifyAbandonmentOr": true,
+      "FormURLs": [
+        "website.1and1.com/address"
+      ],
+      "Paremeter": [],
+      "FormFields": [
+        {
+          "FormMappingId": 18466,
+          "ClientFieldName": "[id='address.firstname']",
+          "FieldTypeName": "Raw",
+          "IdentifyAbandonment": false,
+          "HtmlType": ":text",
+          "DomEvent": "OnChange",
+          "HtmlAttributeTag": "Value",
+          "isEmail": false
+        },
+        {
+          "FormMappingId": 18467,
+          "ClientFieldName": "[id='address.email']",
+          "FieldTypeName": "Raw",
+          "IdentifyAbandonment": false,
+          "HtmlType": ":text",
+          "DomEvent": "DynamicActivity",
+          "HtmlAttributeTag": "Value",
+          "isEmail": true
+        },
+        {
+          "FormMappingId": 18468,
+          "ClientFieldName": "[id='address.lastname']",
+          "FieldTypeName": "Raw",
+          "IdentifyAbandonment": false,
+          "HtmlType": ":text",
+          "DomEvent": "OnChange",
+          "HtmlAttributeTag": "Value",
+          "isEmail": false
+        },
+        {
+          "FormMappingId": 18469,
+          "ClientFieldName": "logo",
+          "FieldTypeName": "Class",
+          "IdentifyAbandonment": false,
+          "HtmlType": "div",
+          "DomEvent": "OnLoad",
+          "HtmlAttributeTag": "Class",
+          "isEmail": false
+        }
+      ],
+      "FormTypeId": 1,
+      "ChatAgentId": 187,
+      "EmailOptOut": false,
+      "OptOuts": []
+    },
+    {
+      "FormId": 10636,
+      "NumberIdentifiedFields": 0,
+      "IdentifyAbandonmentOr": true,
+      "FormURLs": [
+        "1and1.com/costs"
+      ],
+      "Paremeter": [],
+      "FormFields": [
+        {
+          "FormMappingId": 18470,
+          "ClientFieldName": "logo",
+          "FieldTypeName": "Class",
+          "IdentifyAbandonment": false,
+          "HtmlType": "div",
+          "DomEvent": "OnLoad",
+          "HtmlAttributeTag": "Class",
+          "isEmail": false
+        }
+      ],
+      "FormTypeId": 1,
+      "ChatAgentId": 188,
+      "EmailOptOut": false,
+      "OptOuts": []
+    },
+    {
+      "FormId": 10637,
+      "NumberIdentifiedFields": 0,
+      "IdentifyAbandonmentOr": true,
+      "FormURLs": [
+        "1and1.com/enteraddress"
+      ],
+      "Paremeter": [],
+      "FormFields": [
+        {
+          "FormMappingId": 18471,
+          "ClientFieldName": "logo",
+          "FieldTypeName": "Class",
+          "IdentifyAbandonment": false,
+          "HtmlType": "div",
+          "DomEvent": "OnLoad",
+          "HtmlAttributeTag": "Class",
+          "isEmail": false
+        }
+      ],
+      "FormTypeId": 1,
+      "ChatAgentId": 188,
+      "EmailOptOut": false,
+      "OptOuts": []
+    },
+    {
+      "FormId": 10638,
+      "NumberIdentifiedFields": 0,
+      "IdentifyAbandonmentOr": true,
+      "FormURLs": [
+        "1and1.com/enterpasswordandmediacode"
+      ],
+      "Paremeter": [],
+      "FormFields": [
+        {
+          "FormMappingId": 18472,
+          "ClientFieldName": "logo",
+          "FieldTypeName": "Class",
+          "IdentifyAbandonment": false,
+          "HtmlType": "div",
+          "DomEvent": "OnLoad",
+          "HtmlAttributeTag": "Class",
+          "isEmail": false
+        }
+      ],
+      "FormTypeId": 1,
+      "ChatAgentId": 188,
+      "EmailOptOut": false,
+      "OptOuts": []
+    }
+  ],
+  "OptOutField": 0
+})
+0
+

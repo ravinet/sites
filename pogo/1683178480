@@ -1,0 +1,94 @@
+PHTTP159.153.236.12"À
+=GET /v/FtAf5w/include/js/fbconnect/new-signinJQ.js HTTP/1.1
+Host: www.pogo.com
+Connection: keep-alive
+Accept: */*
+vUser-Agent: Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/31.0.1650.63 Safari/537.36
+Referer: http://www.pogo.com/
+$Accept-Encoding: gzip,deflate,sdch
+!Accept-Language: en-US,en;q=0.8
+ZCookie: prod.JID=C816F2024A6FFAFE148716AABA2FA2A6.000163; com.pogo.unid=6711753983670030
+
+*¬
+HTTP/1.1 200 OK
+Age: 6283      
+%Date: Wed, 15 Jan 2014 14:34:07 GMT
+(Expires: Mon, 14 Jan 2019 14:34:08 GMT
+#Cache-Control: max-age=157680000 
+Connection: Keep-Alive
+Via: POGO-EDGE
+ETag: W/"2593-1329466767000"
+Server: Apache-Coyote/1.1
+Accept-Ranges: bytes
+.Last-Modified: Fri, 17 Feb 2012 08:19:27 GMT
+Content-Type: text/javascript
+Content-Length: 2593
+£
+var fbcSignInButtons = [];
+
+var FbcSignIn = FbcSignIn || {
+
+    /**
+     * Creates the popover with the given inner HTML and displays it.
+     */
+    initialize: function(prefix, omnitureTag) {
+		this.prefix = prefix;
+		this.omnitureTag = omnitureTag;
+        fbcSignInButtons.push(this);
+	},
+	
+	showButton: function() {
+        if (this.isDisplayed) return;
+
+		jQuery('#'+this.prefix + '-fb-reg-signin').show();
+		this.isDisplayed = true;
+
+        var backdrop = jQuery('#fb-reg-signin-backdrop'); 
+		// just one backdrop
+		if (backdrop.length == 0) {
+		    var backdropDiv = "<div id='fb-reg-signin-backdrop' style='display: none;position: fixed;"+
+		                      "_position: absolute;top: 0;left: 0;width: 100%;height: 100%;"+
+		                      "background-color: black;z-index: 3001;-moz-opacity: 0.7;opacity: .70;filter: alpha(opacity=70)'></div>";
+		    jQuery(document.body).append(backdropDiv);		    
+		}
+	}
+};
+
+FbcSignIn.signUserInWithFbc = function (returnType, returnValue, tag) {
+    if(typeof OmnitureCustomLink == 'function')
+    {
+        OmnitureCustomLink(tag);
+    }
+    FB.getLoginStatus(function(response) {
+        if (response.authResponse) {            
+            jQuery('#fb-reg-signin-backdrop').show();
+            // make an ajax call to attempt to authenticate the user, if account
+            // is not linked, redirect to another page
+            jQuery.ajax({
+                url: '/fbconnect/reg/signin.do',
+                data: 'returnType='+ returnType + '&returnValue=' + returnValue,
+                dataType: 'text',
+                success: function(responseText) {
+                    var forwardUrl = responseText;
+                    window.location = forwardUrl;
+                },
+                error:  function() {
+                	//There are chances that the user opened a pogo page when logged into FB,
+                	//then logged out of FB. In this case the FB api (getLoginStatus) does not re-check with
+                	//FB and returns the authresponse to indicate the user is connected. But on the server
+                	//side, when you do the actual work, you will get a "stale token" exception.
+                	//For now, silently ignore the error and keep the user on the same page                    
+                    jQuery('#fb-reg-signin-backdrop').remove();
+                }
+            });
+        } else {
+            //user cancelled login
+        }
+      });
+}
+
+FbcSignIn.showAllButtons = function () {
+	for (var i = 0; i < fbcSignInButtons.length; i++) {
+		fbcSignInButtons[i].showButton();
+    }
+}

@@ -1,0 +1,23 @@
+ªHTTPS208.184.48.39"û
+…GET /api2/metric/beacon?data=%7B%22type%22%3A%22time%22%2C%22objectName%22%3A%22%2F%22%2C%22objectType%22%3A%22PAGE%22%2C%22elapsedTimeMillis%22%3A1569%2C%22host%22%3A%22www.elance.com%22%7D HTTP/1.1
+Host: appmetrics.elance.com
+Connection: keep-alive
+Accept: image/webp,*/*;q=0.8
+vUser-Agent: Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/31.0.1650.63 Safari/537.36
+"Referer: https://www.elance.com/
+$Accept-Encoding: gzip,deflate,sdch
+!Accept-Language: en-US,en;q=0.8
+çCookie: locale=en_US; sess=nt9m8n2255usr106i9ohoc8ks7; mbox=check#true#1389744046|session#1389743985094-214171#1389745846; metric_bag=%7B%7D; __CT_Data=gpv=1&apv_9276_www07=1; WRUID=0; __utma=94180290.1348233160.1389743985.1389743985.1389743985.1; __utmb=94180290.2.9.1389743985; __utmc=94180290; __utmz=94180290.1389743985.1.1.utmcsr=(direct)|utmccn=(direct)|utmcmd=(none); emc=75852531; emc2=1
+
+*ù
+HTTP/1.1 204 No Content
+%Date: Tue, 14 Jan 2014 23:59:33 GMT
+Server: Apache
+X-Frame-Options: SAMEORIGIN
+cache-control: no-cache
+Vary: Accept-Encoding
+Content-Length: 0
+Keep-Alive: timeout=10, max=3
+Connection: Keep-Alive
+ Content-Type: application/json
+

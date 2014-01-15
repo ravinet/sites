@@ -1,0 +1,95 @@
+»HTTPS23.6.21.109"§
+´GET /event/js?01AD=3N2heTfyYExkoWZea8cparepV2iEEDyrCuxp2xXauyWib4o3uJprfkg&01RI=95AF2FAC0BE1453&01NA=na&mt_id=330576&mt_adid=110190&v1=&v2=&v3=&s1=&s2=&s3=&mm_bnc&mm_bct HTTP/1.1
+Host: pixel.mathtag.com
+Connection: keep-alive
+Accept: */*
+vUser-Agent: Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/31.0.1650.63 Safari/537.36
+¤Referer: https://4037109.fls.doubleclick.net/activityi;src=4037109;type=homep739;cat=healt332;ord=1504782567;~oref=https%3A%2F%2Fwww.healthcare.gov%2F?&_dc_ck=try
+$Accept-Encoding: gzip,deflate,sdch
+!Accept-Language: en-US,en;q=0.8
+>Cookie: uuid=52d5cf40-4008-be6d-6e67-f0a01fdee614; HRL8=CT-1
+
+*ø
+HTTP/1.1 200 OK
+Content-Type: text/javascript
+Content-Length: 2722
+\Server: mt2/2.9.1+aeb51e0 2.9.1.release Nov 15 2013 16:25:34 ewr-pixel-x3 pid 0x3f91 16273
+(Expires: Tue, 14 Jan 2014 23:58:56 GMT
+.Cache-Control: max-age=0, no-cache, no-store
+Pragma: no-cache
+%Date: Tue, 14 Jan 2014 23:58:56 GMT
+Connection: keep-alive
+]Set-Cookie: HRL8=CT-USR; expires=Tue, 11-Feb-2014 23:58:56 GMT; path=/; domain=.mathtag.com
+ZSet-Cookie: mt_misc=; domain=.mathtag.com; path=/; expires=Thu, 13-Feb-2014 23:58:56 GMT
+;P3P: CP="NON DSP ADM DEV PSD OUR IND STP PHY PRE NAV UNI"
+¤
+	/*
+	*/
+
+	var mm_ri = String( Math.random() );
+	mm_ri = mm_ri.replace( /0\./g,'' );
+	
+	var mm_protocol = location.protocol;
+	if ( mm_protocol != 'http:' && mm_protocol != 'https:' ){ mm_protocol = 'http:'; }
+	
+
+var sync_4815162342 = function()
+{
+this.urls = [
+"https://pixel.mathtag.com/misc/img?mt_id=330576&mt_adid=110190&mop_seq=0:10&mt_cb=784665&mop_top=",
+"https://cm.g.doubleclick.net/pixel?google_nid=mediamath&google_cm&google_hm=UtXPQEAIvm1uZ_CgH97mFA",
+"https://pixel.mathtag.com/misc/img?mt_id=330576&mt_adid=110190&mop_seq=1:10&mt_cb=935171&mop_top=4:1388534356|",
+"https://www.facebook.com/fr/u.php?p=418865601488577&m=52d5cf40-4008-be6d-6e67-f0a01fdee614",
+"https://pixel.mathtag.com/misc/img?mt_id=330576&mt_adid=110190&mop_seq=2:10&mt_cb=234586&mop_top=4:1388534356|23:1388534356|",
+"https://pixel.rubiconproject.com/tap.php?v=4222&nid=1512&put=52d5cf40-4008-be6d-6e67-f0a01fdee614&expires=28",
+"https://r.openx.net/set?pid=0b83a084-dd0b-4bfe-9e2e-ab3706fc9955&rtb=uuid%3D52d5cf40-4008-be6d-6e67-f0a01fdee614",
+"https://simage2.pubmatic.com/AdServer/Pug?vcode=bz0yJnR5cGU9MSZjb2RlPTM2MiZ0bD00MzIwMA==&piggybackCookie=uid:52d5cf40-4008-be6d-6e67-f0a01fdee614",
+"https://r.casalemedia.com/rum?cm_dsp_id=12345678&external_user_id=52d5cf40-4008-be6d-6e67-f0a01fdee614",
+"https://stags.bluekai.com/site/2948?id=52d5cf40-4008-be6d-6e67-f0a01fdee614",
+"https://stags.bluekai.com/site/4448?id=52d5cf40-4008-be6d-6e67-f0a01fdee614",
+"https://loadm.exelator.com/load/?p=204&g=101&buid=52d5cf40-4008-be6d-6e67-f0a01fdee614&j=0",
+"https://ad.360yield.com/match?publisher_dsp_id=5&external_user_id=52d5cf40-4008-be6d-6e67-f0a01fdee614",
+"https://pixel.mathtag.com/misc/img?mt_id=330576&mt_adid=110190&mop_seq=10:10&mt_cb=622228&check=52d5cf40-4008-be6d-6e67-f0a01fdee614&mop_top=4:1388534356|23:1388534356|9:1388534356|5:1388534356|3:1388534356|15:1388534356|10002:1388534356|10010:1388534356|10008:1388534356|16:1388534356|",
+]
+
+   this.progress = 0;
+
+   var self = this;
+
+   this.sync = function(url)
+   {
+      var e = new Image();
+      e.src = url;
+   }
+
+   this.batch = function()
+   {
+      for (var i = self.progress; i < self.urls.length; ++i)
+      {
+          self.sync(self.urls[i]);
+      }
+   }
+
+   this.final = function()
+   {
+      self.sync(self.urls[self.urls.length-1]+"&final");
+   }
+
+   this.some = function(howmany)
+   {
+      var count = 0;
+      for (var i = self.progress; i < self.urls.length && count < howmany; ++i)
+      {
+         self.sync(self.urls[self.progress++]);
+         count++;
+      }
+   }
+}
+
+
+var s_4815162342 = new sync_4815162342();
+s_4815162342.some(1);
+setTimeout('s_4815162342.some(2)', 1000);
+setTimeout(s_4815162342.batch, 3000);
+setTimeout(s_4815162342.final, 10000);
+

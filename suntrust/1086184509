@@ -1,0 +1,77 @@
+»HTTPS156.45.232.231"œ
++GET /popup/pop_suntrust_live.php HTTP/1.1
+Host: report1.maritz.com
+Connection: keep-alive
+Accept: */*
+vUser-Agent: Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/31.0.1650.63 Safari/537.36
+3Referer: https://www.suntrust.com/PersonalBanking
+$Accept-Encoding: gzip,deflate,sdch
+!Accept-Language: en-US,en;q=0.8
+.Cookie: PHPSESSID=lt1aefk10djq8jvjcqgcf2kpi1
+
+*­
+HTTP/1.1 200 OK
+%Date: Tue, 14 Jan 2014 23:59:02 GMT
+Server: Apache
+(Expires: Thu, 19 Nov 1981 08:52:00 GMT
+OCache-Control: no-store, no-cache, must-revalidate, post-check=0, pre-check=0
+Pragma: no-cache
+Content-Length: 1526
+(Content-Type: text/html; charset=UTF-8
+Connection: close
+ø
+/*jslint browser:true */
+function setCookie(cookieName, cookieValue, cookieDays, showalert) {
+    "use strict";
+    var today = new Date(),
+        expire = new Date(),
+        name = cookieName,
+        value = cookieValue;
+    expire.setTime(today.getTime() + 3600000 * 24 * cookieDays);
+    document.cookie = name + "=" + escape(value) + ";expires=" + expire.toGMTString() + ";path=/";
+}
+
+function findCookie(c_name) {
+    "use strict";
+    if (navigator.cookieEnabled) {
+        var cookieData = new String(document.cookie),
+            cookieHeader = c_name,
+            cookieStart = cookieData.indexOf(cookieHeader) + cookieHeader.length,
+            cookieEnd = cookieData.indexOf(";", cookieStart);
+        if (cookieData.indexOf(cookieHeader) === -1) {
+            return false;
+        } else {
+            return true;
+        }
+    }
+}
+
+function setDelayCookie() {
+    "use strict";
+    var cookieDate = new Date(),
+        name = "st_keepalive",
+        value = "yes";
+    cookieDate.setTime(cookieDate.getTime() + 1000 * 10);
+    document.cookie = name + "=" + escape(value) + ";expires=" + cookieDate.toGMTString() + ";path=/";
+}
+
+function setCountCookies() {
+    "use strict";
+    if ((findCookie('st_keepalive')) || (findCookie('st_invpopped'))) {
+        var invitePopped = 'y';
+        setDelayCookie();
+    } else {
+        var invitePopped = 'n';
+    }
+    var t,
+        popInvite;
+	t = setInterval(function(){
+	  if (invitePopped == 'y') {
+		setDelayCookie();
+	  }
+	  	},5000);
+	
+}
+
+
+setCountCookies();

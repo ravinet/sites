@@ -1,0 +1,19 @@
+»HTTPS66.117.23.107"»
+„GET /m2/suntrust/mbox/standard?mboxHost=www.suntrust.com&mboxSession=1389743955728-417163&mboxPage=1389743955728-417163&screenHeight=1200&screenWidth=1920&browserWidth=937&browserHeight=1051&browserTimeOffset=-300&colorDepth=24&mboxCount=1&mbox=PB_L1_Personal_Banking_Header&mboxId=0&mboxTime=1389725955880&mboxURL=https%3A%2F%2Fwww.suntrust.com%2F&mboxReferrer=&mboxVersion=41 HTTP/1.1
+Host: suntrust.tt.omtrdc.net
+Connection: keep-alive
+Accept: */*
+vUser-Agent: Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/31.0.1650.63 Safari/537.36
+$Referer: https://www.suntrust.com/
+$Accept-Encoding: gzip,deflate,sdch
+!Accept-Language: en-US,en;q=0.8
+
+*–
+HTTP/1.1 200 OK
+pragma: no-cache
+2Content-Type: text/javascript;charset=ISO-8859-1
+Content-Length: 1886
+%Date: Tue, 14 Jan 2014 23:59:00 GMT
+Server: Test & Target
+à
+var mboxCurrent=mboxFactories.get('default').get('PB_L1_Personal_Banking_Header',0);mboxCurrent.setEventTime('include.start');document.write('<div style="visibility: hidden; display: none" id="mboxImported-default-PB_L1_Personal_Banking_Header-0">');document.write('<!-- Offer Id: 65365  --><!--\r\nCAMPAIGN: Global Header - Flag Visitor If Member\r\nEXPERIENCE: Is Visitor Member?\r\n-->\r\n<script type=\"text\/javascript\">\r\n\tmboxCurrent.setOffer(new mboxOfferDefault()).loaded();\r\n<\/script>\r\n\r\n<div id=\"adobe_mbox_call\"><\/div>\r\n<script>\r\n(function(){\r\n\/\/\tvar visitor = \'\';\r\n\/\/\tif(visitor) return;\r\n\tvar val = getCookieValue(\"s_pers\");\r\n\tif(val.indexOf(\"s_ev39=c\")>-1){\r\n\t\tmboxCreate(\"mboxClickTrack\", \"profile.visitor=member\");\r\n\t}else{}\r\n\tfunction getCookieValue(name) {\r\n\t\tif(typeof(name)==\'undefined\' || ! name) return null;\r\n\t\tvar nameEQ = name + \"=\";\r\n\t\tvar ca = document.cookie.split(\';\');\r\n\t\tfor(var i=0;i < ca.length;i++) {\r\n\t\t\tvar c = ca[i];\r\n\t\t\twhile (c.charAt(0)==\' \') c = c.substring(1,c.length);\r\n\t\t\tif (c.indexOf(nameEQ) == 0) {\r\n\t\t\t\treturn decodeURIComponent(c.substr(nameEQ.length));\r\n\t\t\t}\r\n\t\t}\r\n\t}\r\n}());\r\n<\/script>');document.write('<!-- Offer Id: 66390  --><script type=\"text\/javascript\">\r\n\/*T&T to SiteCat v4 ==>Response Plugin*\/\r\nwindow.s_tnt = window.s_tnt || \'\', tntVal = \'36955:3:0,\';\r\nif (window.s_tnt.indexOf(tntVal) == -1) {\r\n    window.s_tnt += tntVal\r\n}\r\nif (mboxCurrent.getFetcher().getType() == \'ajax\'  && (window.s && window.s.tl)) {\r\n    s.tl(\'TnT\', \'o\', \'TnT\');\r\n}\r\n<\/script>');document.write('</div>');mboxCurrent.setEventTime('include.end');mboxFactories.get('default').get('PB_L1_Personal_Banking_Header',0).loaded();mboxFactories.get('default').getPCId().forceId("1389743955728-417163.25_30");
