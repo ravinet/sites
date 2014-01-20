@@ -1,24 +1,0 @@
-ªHTTPS192.33.31.50"‡
-3GET /instart/js/0/init?cb=__load_init_cb HTTP/1.1
-Host: assets.insnw.net
-Connection: keep-alive
-Accept: */*
-vUser-Agent: Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/31.0.1650.63 Safari/537.36
-!Referer: https://www.quora.com/
-$Accept-Encoding: gzip,deflate,sdch
-!Accept-Language: en-US,en;q=0.8
-
-*ê
-HTTP/1.1 200 OK
-Server: instart/94
-%Date: Tue, 14 Jan 2014 23:58:35 GMT
-&Content-Type: application/javascript
-Content-Length: 590
-Connection: keep-alive
-$Cache-Control: max-age=0, no-cache
-Vary: User-Agent
-Vary: Referer
-GX-Instart-Request-ID: 5318161684819410158:YTN01-NPPRY09:1389743915:34
-–
-__load_init_cb({"apiDomain":"assets.insnw.net","partialImage":false,"rId":"34","release":"week-85-2","rum":true,"useImageApi":false,"ver":"v3","virtualDomains":4,"virtualizeDomains":["^.*\\.quora\\.com$","^api\\.quora\\.com$","^geo\\.quora\\.com$","^qim\\.cf\\.quoracdn\\.net$","^qim\\.is\\.quoracdn\\.net$","^qlx\\.cf\\.quoracdn\\.net$","^qlx\\.is\\.quoracdn\\.net$","^qph\\.cf\\.quoracdn\\.net$","^qph\\.is\\.quoracdn\\.net$","^qsc\\.cf\\.quoracdn\\.net$","^qsc\\.is\\.quoracdn\\.net$","^qsf\\.cf\\.quoracdn\\.net$","^qsf\\.is\\.quoracdn\\.net$","^quora\\.com$","^www\\.quora\\.com$"]}
-);

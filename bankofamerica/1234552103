@@ -1,19 +1,0 @@
-»HTTPS66.117.23.106"·
-§GET /m2/bankofamerica/mbox/ajax?mboxHost=www.bankofamerica.com&mboxSession=1389301266904-628603&mboxPage=1389301266947-948463&screenHeight=1200&screenWidth=1920&browserWidth=937&browserHeight=1051&browserTimeOffset=-300&colorDepth=24&mboxXDomain=enabled&mboxCount=1&mbox=BOA_MVT_TOP&mboxId=0&mboxTime=1389283266928&mboxURL=https%3A%2F%2Fwww.bankofamerica.com%2F&mboxReferrer=&mboxVersion=41&mboxXDomainCheck=true HTTP/1.1
-#Host: bankofamerica.tt.omtrdc.net
-Connection: keep-alive
-Accept: */*
-vUser-Agent: Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/31.0.1650.63 Safari/537.36
-)Referer: https://www.bankofamerica.com/
-$Accept-Encoding: gzip,deflate,sdch
-!Accept-Language: en-US,en;q=0.8
-MCookie: mboxSession=1389301266904-628603; mboxPC=1389301266904-628603.25_26
-
-*Œ
-HTTP/1.1 200 OK
-2Content-Type: text/JavaScript;charset=ISO-8859-1
-Content-Length: 233
-%Date: Thu, 09 Jan 2014 21:00:54 GMT
-Server: Test & Target
-ë
-mboxFactories.get('default').get('BOA_MVT_TOP',0).cancelTimeout();mboxFactories.get('default').get('BOA_MVT_TOP',0).setOffer(new mboxOfferDefault()).show();mboxFactories.get('default').getPCId().forceId("1389301266904-628603.25_26");

@@ -1,26 +1,0 @@
-PHTTP159.153.236.12"•
-&GET /fbconnect/getstatus.do HTTP/1.1
-Host: www.pogo.com
-Connection: keep-alive
-!Accept: text/plain, */*; q=0.01
-"X-Requested-With: XMLHttpRequest
-vUser-Agent: Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/31.0.1650.63 Safari/537.36
-Referer: http://www.pogo.com/
-$Accept-Encoding: gzip,deflate,sdch
-!Accept-Language: en-US,en;q=0.8
-ùCookie: prod.JID=49A7278FE4645146C5D180E013537465.000272; com.pogo.unid=6712084695971357; __utma=103122817.1335396097.1389369531.1389369531.1389369531.1; __utmb=103122817.1.10.1389369531; __utmc=103122817; __utmz=103122817.1389369531.1.1.utmcsr=(direct)|utmccn=(direct)|utmcmd=(none)
-
-*˜
-HTTP/1.1 200 OK
-Server: Apache-Coyote/1.1
-Expires: 0
-#Cache-Control: max-age=0, private
-Content-Language: en-US
-'Content-Type: text/json;charset=UTF-8
-Transfer-Encoding: chunked
-%Date: Fri, 10 Jan 2014 15:58:37 GMT
-à
-7b
-({"isPogoUserLinked":false,"hasFbSession":false,"isFbUserLinked":false,"currentFbUid":0,"connected":false,"newLink":false})
-0
-

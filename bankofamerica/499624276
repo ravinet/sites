@@ -1,20 +1,0 @@
-ªHTTPS66.117.23.101"´
-ùGET /m2/bankofamerica/mbox/ajax?mboxHost=www.bankofamerica.com&mboxSession=1389743864844-67354&mboxPage=1389743864890-855351&screenHeight=1200&screenWidth=1920&browserWidth=937&browserHeight=1051&browserTimeOffset=-300&colorDepth=24&mboxXDomain=enabled&mboxCount=4&profile.tc_lang=en_US&profile.BOA_HPR=null&profile.BA_0021=null&profile.state=null&profile.BOA_0020=999&mbox=BOA_HOME_SIGNON_SERVICE_02&mboxId=0&mboxTime=1389725864871&mboxURL=https%3A%2F%2Fwww.bankofamerica.com%2F&mboxReferrer=&mboxVersion=41&mboxXDomainCheck=true HTTP/1.1
-#Host: bankofamerica.tt.omtrdc.net
-Connection: keep-alive
-Accept: */*
-vUser-Agent: Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/31.0.1650.63 Safari/537.36
-)Referer: https://www.bankofamerica.com/
-$Accept-Encoding: gzip,deflate,sdch
-!Accept-Language: en-US,en;q=0.8
-KCookie: mboxSession=1389743864844-67354; mboxPC=1389743864844-67354.25_33
-
-*ë	
-HTTP/1.1 200 OK
-pragma: no-cache
-2Content-Type: text/JavaScript;charset=ISO-8859-1
-Content-Length: 986
-%Date: Tue, 14 Jan 2014 23:57:29 GMT
-Server: Test & Target
-‹
-var mboxCurrent = mboxFactories.get('default').get('BOA_HOME_SIGNON_SERVICE_02',0);mboxCurrent.setOffer(new mboxOfferAjax('<div id=\"mboxClick-BOA_HOME_SIGNON_SERVICE_02\" onclick=\"mboxFactories.get(\'default\').getSignaler().signal(\'click\', \'BOA_HOME_SIGNON_SERVICE_02-clicked\', \'mboxTarget=41035.213\')\"><!-- Offer Id: 122761  --><div class=\'media-module\'><a href=\"http:\/\/promo.bankofamerica.com\/onlinepayments1\/?cm_sp=OLB-WebBillPay-_-OLB-BillPay-_-KDT4C279_sc_online_ar935f4e_e.gif\" name=\"KDT4C279\" target=\"_self\"><img src=\"\/content\/images\/ContextualSiteGraphics\/Marketing\/Highlights\/en_US\/sc_online_ar935f4e_e.gif\" alt=\"Online Bill Pay. Make payments when you choose. Get started\" title=\"Online Bill Pay. Make payments when you choose. Get started\" width=\"223\" height=\"115\" \/><\/a><\/div><\/div>'));mboxCurrent.getOffer().setOnLoad(function() {});mboxCurrent.loaded();mboxFactories.get('default').getPCId().forceId("1389743864844-67354.25_33");

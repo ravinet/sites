@@ -1,24 +1,0 @@
-»HTTPS23.202.200.24"å
-7GET /js_opt/logging_combined.min.js?b4c547ad HTTP/1.1
-Host: secure-a.vimeocdn.com
-Connection: keep-alive
-Accept: */*
-vUser-Agent: Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/31.0.1650.63 Safari/537.36
-Referer: https://vimeo.com/
-$Accept-Encoding: gzip,deflate,sdch
-!Accept-Language: en-US,en;q=0.8
-
-*»
-HTTP/1.1 200 OK
-Server: Apache
-.Last-Modified: Mon, 16 Dec 2013 20:58:40 GMT
-ETag: "667-4edad138d6000"
-Accept-Ranges: bytes
-Content-Length: 1639
-Content-Type: text/javascript
-Cache-Control: max-age=593404
-(Expires: Wed, 15 Jan 2014 21:22:05 GMT
-%Date: Thu, 09 Jan 2014 00:32:01 GMT
-Connection: keep-alive
-é
-!function(a){"use strict";function b(a,b){var c=this;c.url=a,c.request_data="object"==typeof b?b:{},c.logs=[]}function c(a,b){var d,e,f,g,h,i=[],j={};for(d in a)if(a.hasOwnProperty(d)){switch(e=a[d],b&&(d=b+"["+d+"]"),Object.prototype.toString.call(e)){case"[object Object]":f=c(e,d);break;case"[object Array]":for(g=0,h=e.length;h>g;g++)j[g]=e[g];f=c(j,d);break;default:f=d+"="+encodeURIComponent(e)}null!==e&&i.push(f)}return i.join("&")}b.prototype={log:function(){var b,c,d,e,f=this,g=f.logs,h="",i=arguments.length;if(0!==i){for(b=[].slice.call(arguments),c=0;i>c;c++)d=b[c],e=typeof d,h+="string"===e||"number"===e||"boolean"===e?d:"[Object object]",i-1>c&&(h+=", ");g.length>100&&g.splice(0,1),g.push(h),"undefined"!=typeof a.console&&"function"==typeof a.console.log&&a.console.log.apply(a.console,arguments)}},empty:function(){var a=this;a.logs=[]},send:function(a){var b=this,d=new XMLHttpRequest;b.request_data.console_logs=b.logs,b.request_data=c(b.request_data),d.onreadystatechange=function(){4===d.readyState&&(b.empty(),"function"==typeof a&&a())},d.open("POST",b.url,!0),d.setRequestHeader("X-Requested-With","XMLHttpRequest"),d.setRequestHeader("Content-type","application/x-www-form-urlencoded"),d.send(b.request_data)}},a.TattleTale=b}(window),function(){"use strict";var a=!1;window.onerror=function(b,c,d){if(a)return!0;if("function"!=typeof TattleTale)return!0;var e=new TattleTale("/log/js_error",{url:window.location.pathname,message:b,file:c,line_number:d,user_agent:navigator.userAgent,token:vimeo.xsrft});return e.log(b,c,d),Cookie.write("xsrft",vimeo.xsrft,{domain:vimeo.domain,path:"/"}),e.send(),a=!0,!0}}();

@@ -1,25 +1,0 @@
-»HTTPS54.225.206.210"ÿ
-0GET /logo/odesk-corporation-194009.js HTTP/1.1
-Host: seal-goldengate.bbb.org
-Connection: keep-alive
-Accept: */*
-vUser-Agent: Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/31.0.1650.63 Safari/537.36
-!Referer: https://www.odesk.com/
-$Accept-Encoding: gzip,deflate,sdch
-!Accept-Language: en-US,en;q=0.8
-Cookie: logolink=194009
-
-*¹
-HTTP/1.1 200 OK
-BContent-Disposition: inline; filename="javascript-for-194009.js"
-Content-Type: text/javascript
-%Date: Thu, 09 Jan 2014 21:14:04 GMT
-(Etag: 874860c263046c295090b890969704f2
-(Expires: Thu, 09 Jan 2014 21:35:07 GMT
-.Last-Modified: Thu, 09 Jan 2014 09:35:07 GMT
-Server: Apache
-X-Powered-By: PHP/5.1.6
-Content-Length: 1074
-Connection: keep-alive
-´
-var cp='seal-goldengate.bbb.org%2Flogo%2F2-odesk-corporation-194009.css';function addOnloadEvent(a){if(typeof window.addEventListener!="undefined")window.addEventListener("load",a,false);else if(typeof window.attachEvent!="undefined")window.attachEvent("onload",a);else{if(window.onload!=null){var b=window.onload;window.onload=function(e){b(e);window[a]()}}else window.onload=a}};addOnloadEvent(function(e){var a=document.createElement('link');a.setAttribute('rel','stylesheet');a.setAttribute('type','text/css');a.setAttribute('href',bbbprotocol+unescape(cp));document.getElementsByTagName("head")[0].appendChild(a);setTimeout("document.getElementById('bbblink').style.cssText='padding: 0px; margin: 0;';document.getElementById('bbblinkimg').style.cssText='padding: 0px; border: none;';",2000);var b=document.getElementById('bbblink');b.oncontextmenu=function(e){alert('Use without permission is prohibited. The BBB Accreditation seal is a trademark of the Council of Better Business Bureaus, Inc.');return false};if(b.captureEvents){b.captureEvents(Event.CONTEXTMENU)}});

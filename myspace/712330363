@@ -1,24 +1,0 @@
-»HTTPS72.21.91.78"‰
-^GET /new/discover/js/discoverTrendingBundle.FE7F1801B5BC50C87D9C0FC34B578167.min.js HTTP/1.1
-Host: x.myspacecdn.com
-Connection: keep-alive
-Accept: */*
-vUser-Agent: Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/31.0.1650.63 Safari/537.36
-Referer: https://myspace.com/
-$Accept-Encoding: gzip,deflate,sdch
-!Accept-Language: en-US,en;q=0.8
-
-*ž
-HTTP/1.1 200 OK
-Accept-Ranges: bytes
- Access-Control-Allow-Origin: *
-!Cache-Control: max-age=31536000
-(Content-Type: application/x-javascript
-%Date: Tue, 14 Jan 2014 23:58:40 GMT
-(Expires: Wed, 14 Jan 2015 23:58:40 GMT
-.Last-Modified: Thu, 13 Jun 2013 18:54:06 GMT
-Server: ECS (ord/26CE)
-X-Cache: HIT
-Content-Length: 701
-¿
-/* discover */(function(a){function c(){var b=a("#playCommercial").find(".playBtn").click();return!!b.length}function d(){return Cookies.check_us_out?Cookies.check_us_out.values.p!=="1":!0}function e(){Cookies.check_us_out||(Cookies.check_us_out=new Cookie("check_us_out")),Cookies.check_us_out.values={p:"1"},Cookies.save(Cookies.check_us_out,document.domain,(new Date).addDays(365))}var b=a("#welcome");b.find("a.signup").click(function(){return comm.send("signup.show",{context:{action:"trendingWelcomeSignup"}}),!1}),b.find("a.signin").click(function(){return comm.send("login.show",{context:{action:"trendingWelcomeSignin"}}),!1}),setTimeout(function(){if(d()){var a=c();a&&e()}},1e3)})(jQuery);

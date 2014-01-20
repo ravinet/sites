@@ -1,24 +1,0 @@
-»HTTPS50.17.196.70"Š
-PGET /amex/prod/code/73fd1ea2260f71dd5c1e67878f94013c.js?ruleId=258853 HTTP/1.1
-Host: nexus.ensighten.com
-Connection: keep-alive
-Accept: */*
-vUser-Agent: Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/31.0.1650.63 Safari/537.36
-+Referer: https://www.americanexpress.com/
-$Accept-Encoding: gzip,deflate,sdch
-!Accept-Language: en-US,en;q=0.8
-
-*¬
-HTTP/1.1 200 OK
-Server: nginx
-%Date: Thu, 09 Jan 2014 00:40:23 GMT
-7Content-Type: application/x-javascript; charset=utf-8
-Content-Length: 323
-Connection: keep-alive
-.Last-Modified: Fri, 20 Dec 2013 00:08:59 GMT
-(Expires: Thu, 31 Dec 2037 23:55:55 GMT
-"Cache-Control: max-age=315360000
-Cache-Control: public
-Accept-Ranges: bytes
-Å
-Bootstrapper.bindImmediate(function(){var Bootstrapper=window["Bootstrapper"];var ensightenOptions=Bootstrapper.ensightenOptions;var windUA=navigator.userAgent.toLowerCase();if(windUA.indexOf("windows phone")>-1);else Bootstrapper.insertScript("//www.aexp-static.com/api/axpi/online-opinion/oo_tab_rwd.js")},258853,141091);

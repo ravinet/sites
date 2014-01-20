@@ -1,18 +1,0 @@
-PHTTP23.45.44.238"á
-GET / HTTP/1.1
-Host: www.fidelity.com
-Connection: keep-alive
-TAccept: text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8
-vUser-Agent: Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/31.0.1650.63 Safari/537.36
-$Accept-Encoding: gzip,deflate,sdch
-!Accept-Language: en-US,en;q=0.8
-
-*¥
- HTTP/1.1 301 Moved Permanently
-Server: AkamaiGHost
-Content-Length: 0
-%Location: https://www.fidelity.com/
-%Date: Thu, 09 Jan 2014 23:57:48 GMT
-Connection: keep-alive
-iSet-Cookie: cae_browser=desktop; expires=Fri, 10-Jan-2014 23:57:48 GMT; path=/; domain=www.fidelity.com
-

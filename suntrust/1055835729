@@ -1,27 +1,0 @@
-»HTTPS208.89.14.135"Û
-§GET /hc/75520543/?&site=75520543&cmd=mTagInPage&lpCallId=349935118574-802002705400&protV=20&lpjson=1&page=https%3A//www.suntrust.com/PersonalBanking&id=4432778640&javaSupport=false&visitorStatus=INSITE_STATUS&defInvite=chat-personal-sales&activePlugin=none&cobrowse=true&cobrowse=true HTTP/1.1
-Host: sales.liveperson.net
-Connection: keep-alive
-Accept: */*
-vUser-Agent: Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/31.0.1650.63 Safari/537.36
-3Referer: https://www.suntrust.com/PersonalBanking
-$Accept-Encoding: gzip,deflate,sdch
-!Accept-Language: en-US,en;q=0.8
-íCookie: HumanClickKEY=1270131617130691156; LivePersonID=-11187045699971-1389274833:-1:-1:-1:-1; HumanClickSiteContainerID_75520543=STANDALONE; ASPSESSIONIDSCSARSRS=JIJABLCBMAFFCPHFDMIOPBPA; LivePersonID=LP i=11187045699971,d=1389274833
-
-*¬
-HTTP/1.1 200 OK
-%Date: Thu, 09 Jan 2014 13:40:57 GMT
-Server: Microsoft-IIS/6.0
-GP3P: CP="NON BUS INT NAV COM ADM CON CUR IVA IVD OTP PSA PSD TEL SAM"
-X-Powered-By: ASP.NET
-NSet-Cookie: HumanClickSiteContainerID_75520543=STANDALONE; path=/hc/75520543
-(Content-Type: application/x-javascript
-Accept-Ranges: bytes
-.Last-Modified: Thu, 09 Jan 2014 13:40:33 GMT
-Cache-Control: no-store
-Pragma: no-cache
-(Expires: Wed, 31 Dec 1969 23:59:59 GMT
-Content-Length: 188
-¾
-lpConnLib.Process({"ResultSet": {"lpCallId":"349935118574-802002705400","lpCallConfirm":"","lpJS_Execute":[{"code_id": "INPAGE-DELAY-10", "js_code": "lpMTag.lpInPageRequestDelay=10;"}]}});

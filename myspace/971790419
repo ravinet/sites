@@ -1,16 +1,0 @@
-PHTTP216.178.47.11"à
-GET / HTTP/1.1
-Host: www.myspace.com
-Connection: keep-alive
-TAccept: text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8
-vUser-Agent: Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/31.0.1650.63 Safari/537.36
-$Accept-Encoding: gzip,deflate,sdch
-!Accept-Language: en-US,en;q=0.8
-
-*Œ
- HTTP/1.1 301 Moved Permanently
- Location: https://myspace.com/
-Connection: close
-Cache-Control: no-cache
-Pragma: no-cache
-
