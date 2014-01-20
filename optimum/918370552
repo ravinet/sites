@@ -1,0 +1,20 @@
+»HTTPS205.216.26.171"§
+MGET /mpel.js?href=https%3A%2F%2Fwww.optimum.net%2F&ref=&lang=en-US HTTP/1.1
+Host: espanol.optimum.net
+Connection: keep-alive
+Accept: */*
+vUser-Agent: Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/31.0.1650.63 Safari/537.36
+#Referer: https://www.optimum.net/
+$Accept-Encoding: gzip,deflate,sdch
+!Accept-Language: en-US,en;q=0.8
+¥Cookie: site=new; cachekeys=ZIP=02139| CORP=07801| REGION=; s_pers=%20s_nr%3D1389743940006-New%7C1392335940006%3B%20s_vnum%3D1391230800008%2526vn%253D1%7C1391230800008%3B%20s_invisit%3Dtrue%7C1389745740008%3B%20s_lv%3D1389743940009%7C1484351940009%3B%20s_lv_s%3DFirst%2520Visit%7C1389745740009%3B; s_sess=%20s_cc%3Dtrue%3B%20s_ria%3Dflash%252011%257Csilverlight%2520not%2520detected%3B%20s_sq%3D%3B; fsr.a=1389743940050
+
+*›
+HTTP/1.1 200 OK
+.Cache-Control: max-age=0, no-cache, no-store
+Pragma: no-cache
+Content-Length: 228
+Server: Microsoft-IIS/7.5
+%Date: Tue, 14 Jan 2014 23:58:45 GMT
+æ
+(function(){var domain=(function(a){var b=a.match('[^.]+.(([^.]{2,3}.)?[^.]{2}|[^.]{3,})$');return b==null?a:b[0]})(location.host);document.cookie='MP_LANG=en;domain='+domain+';path=/;expires=Wed, 14 Jan 2015 17:58:45 CST';})();

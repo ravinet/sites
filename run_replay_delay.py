@@ -10,5 +10,5 @@ with open(site_list) as f:
     for line in f:
         site = line.split( " " )[0]
         folder = line.split(" ")[1].strip("\n")
-        #os.system( "replayshell /home/ravi/mahimahi/record_all/" + folder + " /usr/local/bin/delayshell " + str(delay) + " /usr/bin/python /home/ravi/mahimahi/load_page.py " + site + " " +  str(delay) + " replay"
-        os.system( "replayshell /home/ravi/mahimahi/record_all/" + folder + " /usr/local/bin/delayshell " + str(delay) + " /usr/local/bin/cellshell 12Mbps_trace.txt 12Mbps_trace.txt /usr/bin/python /home/ravi/mahimahi/load_page.py " + site + " " +  str(delay) + " replay")
+        os.system( "replayshell /home/ravi/sites/" + folder + " /usr/local/bin/delayshell " + str(delay) + " /usr/local/bin/cellshell 12Mbps_trace.txt 12Mbps_trace.txt /usr/bin/python /home/ravi/run_tests/load_page.py " + site + " " +  str(delay) + " replay")
+        os.system( "sudo rm /tmp/replayshell.*")

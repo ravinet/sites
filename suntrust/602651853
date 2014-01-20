@@ -1,0 +1,19 @@
+ªHTTPS66.117.23.107"π
+ÇGET /m2/suntrust/mbox/standard?mboxHost=www.suntrust.com&mboxSession=1389743955728-417163&mboxPage=1389743955728-417163&screenHeight=1200&screenWidth=1920&browserWidth=937&browserHeight=1051&browserTimeOffset=-300&colorDepth=24&mboxCount=2&mbox=PB_L1_Personal_Banking_Hero&mboxId=0&mboxTime=1389725956169&mboxURL=https%3A%2F%2Fwww.suntrust.com%2F&mboxReferrer=&mboxVersion=41 HTTP/1.1
+Host: suntrust.tt.omtrdc.net
+Connection: keep-alive
+Accept: */*
+vUser-Agent: Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/31.0.1650.63 Safari/537.36
+$Referer: https://www.suntrust.com/
+$Accept-Encoding: gzip,deflate,sdch
+!Accept-Language: en-US,en;q=0.8
+
+*√
+HTTP/1.1 200 OK
+pragma: no-cache
+2Content-Type: text/javascript;charset=ISO-8859-1
+Content-Length: 2699
+%Date: Tue, 14 Jan 2014 23:59:00 GMT
+Server: Test & Target
+ç
+var mboxCurrent=mboxFactories.get('default').get('PB_L1_Personal_Banking_Hero',0);mboxCurrent.setEventTime('include.start');document.write('<div style="visibility: hidden; display: none" id="mboxImported-default-PB_L1_Personal_Banking_Hero-0">');document.write('<div id=\"mboxClick-PB_L1_Personal_Banking_Hero\" onclick=\"mboxFactories.get(\'default\').getSignaler().signal(\'click\', \'PB_L1_Personal_Banking_Hero-clicked\', \'mboxTarget=48554.183448\')\">');document.write('<!-- Offer Id: 95693  --><!--Build single hero on L1 page in dev. Activate mbox on page by choosing the true radio button. Name the mbox PB_L1_Personal_Banking_Hero. Publish the page to runtime. Visit page in browser. View source. Find the hero div set. Copy all code between div id hero-slideshow through to the close div before the div class hk1. Paste where noted below. Import into static. Move along to review. -->\r\n \r\n<!--\r\nCAMPAIGN: 1.7B- Prospects - EzChecking Test - LIVE 11/12/2013 - 40%\r\nRECIPE: EZ Checking - Fees\r\n--> \r\n \r\n<div id=\"mod-hero\" class=\"mod\">\r\n    <div class=\"mod-content\">\r\n      <div id=\"hero-slideshow\">\r\n \r\n\t<div id=\"hero-nav\"><\/div><a title=\"Hero Image\" href=\"https:\/\/www.suntrust.com\/Microsites\/EZChecking\/Mobile\/index.html?icid=EZCheckingGoMob_Hero_1035_PB_Prospects\"><img class=\"first roller\" src=\"\/Static\/Images\/Hero\/Q3EZCheckingGoMobileXHeroX0913.jpg\" alt=\"Learn More\" title=\"\"><\/a><\/div>\r\n \r\n \r\n      <div class=\"hk1\"><\/div>\r\n    <\/div>\r\n  <\/div>\r\n \r\n \r\n<!--\r\nAD Edit - Define Traffic Type for Monitoring Campaign\r\n--> \r\n<script type=\"text\/javascript\"> \r\n\t\t\t\tvar trafficType = \"0\";\r\n\t\t\t\tvar idx = location.href.indexOf(\"ad_traffic_type=\");\r\n\t\t\t\tif(idx!=-1){\r\n\t\t\t\t\ttrafficType = location.href.substring(idx+16,idx+17);\r\n\t\t\t\t}\r\n\t\t\t\tmboxDefine(\"mboxData\", \"profiler\").setFetcher(new mboxAjaxFetcher());\r\n\t\t\tmboxUpdate(\"profiler\",\"campaign=1.1B\",\"trafficType=\"+trafficType);\r\n<\/script>');document.write('<\/div>');document.write('<!-- Offer Id: 66390  --><script type=\"text\/javascript\">\r\n\/*T&T to SiteCat v4 ==>Response Plugin*\/\r\nwindow.s_tnt = window.s_tnt || \'\', tntVal = \'48554:1:0,\';\r\nif (window.s_tnt.indexOf(tntVal) == -1) {\r\n    window.s_tnt += tntVal\r\n}\r\nif (mboxCurrent.getFetcher().getType() == \'ajax\'  && (window.s && window.s.tl)) {\r\n    s.tl(\'TnT\', \'o\', \'TnT\');\r\n}\r\n<\/script>');document.write('</div>');mboxCurrent.setEventTime('include.end');mboxFactories.get('default').get('PB_L1_Personal_Banking_Hero',0).loaded();mboxFactories.get('default').getPCId().forceId("1389743955728-417163.25_30");

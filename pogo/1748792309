@@ -1,0 +1,22 @@
+PHTTP159.153.236.12"Ý
+GET / HTTP/1.1
+Host: www.pogo.com
+Connection: keep-alive
+TAccept: text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8
+vUser-Agent: Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/32.0.1700.77 Safari/537.36
+$Accept-Encoding: gzip,deflate,sdch
+!Accept-Language: en-US,en;q=0.8
+
+* 
+HTTP/1.1 302 Found
+Server: Apache-Coyote/1.1
+Expires: 0
+#Cache-Control: max-age=0, private
+bSet-Cookie: prod.JID=01E04AF3B8857CC139C86143AEFEFDAD.000163; Domain=.pogo.com; Path=/; HttpOnly
+Content-Language: en-US
+mSet-Cookie: com.pogo.unid=6711753983749887; Domain=.pogo.com; Expires=Wed, 16-Jan-2019 14:54:33 GMT; Path=/
+aLocation: https://www.pogo.com/login/entry.jsp?sl=1&site=pogo&redr=http%3A%2F%2Fwww.pogo.com%2F
+'Content-Type: text/html;charset=UTF-8
+Content-Length: 0
+%Date: Fri, 17 Jan 2014 14:54:33 GMT
+

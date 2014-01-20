@@ -1,0 +1,32 @@
+»HTTPS192.30.252.128"Ñ
+POST /_stats HTTP/1.1
+Host: github.com
+Connection: keep-alive
+Content-Length: 819
+nAccept: */*;q=0.5, text/javascript, application/javascript, application/ecmascript, application/x-ecmascript
+Origin: https://github.com
+<X-CSRF-Token: OTavY1mP0nVKvLV9G/DQHu60itYs6h2dgMJ/blejdVg=
+"X-Requested-With: XMLHttpRequest
+vUser-Agent: Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/31.0.1650.63 Safari/537.36
+@Content-Type: application/x-www-form-urlencoded; charset=UTF-8
+Referer: https://github.com/
+$Accept-Encoding: gzip,deflate,sdch
+!Accept-Language: en-US,en;q=0.8
+¥Cookie: logged_in=no; _gh_sess=BAh7BzoPc2Vzc2lvbl9pZEkiJWRiM2UyYWVmMjVmMmMwZGRjYTM5ZGQzM2E4YjUwOTRmBjoGRUY6EF9jc3JmX3Rva2VuSSIxT1RhdlkxbVAwblZLdkxWOUcvRFFIdTYwaXRZczZoMmRnTUovYmxlamRWZz0GOwZG--ad019cd865e9dae31f58cef2781665ca4076d1ba; tz=America%2FNew_York; __utma=1.1287580191.1389743989.1389743989.1389743989.1; __utmb=1.1.10.1389743989; __utmc=1; __utmz=1.1389743989.1.1.utmcsr=(direct)|utmccn=(direct)|utmcmd=(none)
+µ
+timing%5BloadEventEnd%5D=1389743989654&timing%5BloadEventStart%5D=1389743989653&timing%5BdomComplete%5D=1389743989653&timing%5BdomContentLoadedEventEnd%5D=1389743989351&timing%5BdomContentLoadedEventStart%5D=1389743989342&timing%5BdomInteractive%5D=1389743989342&timing%5BdomLoading%5D=1389743988892&timing%5BresponseEnd%5D=1389743988892&timing%5BresponseStart%5D=1389743988887&timing%5BrequestStart%5D=1389743988854&timing%5BsecureConnectionStart%5D=1389743988774&timing%5BconnectEnd%5D=1389743988854&timing%5BconnectStart%5D=1389743988774&timing%5BdomainLookupEnd%5D=1389743988774&timing%5BdomainLookupStart%5D=1389743988774&timing%5BfetchStart%5D=1389743988773&timing%5BredirectEnd%5D=0&timing%5BredirectStart%5D=0&timing%5BunloadEventEnd%5D=0&timing%5BunloadEventStart%5D=0&timing%5BnavigationStart%5D=1389743988648*–
+HTTP/1.1 200 OK
+Server: GitHub.com
+%Date: Tue, 14 Jan 2014 23:59:34 GMT
+(Content-Type: text/html; charset=utf-8
+Status: 200 OK
+Cache-Control: no-cache
+X-Frame-Options: deny
+,Strict-Transport-Security: max-age=2592000
+X-Runtime: 4
+Content-Length: 1
+«Set-Cookie: _gh_sess=BAh7CDoPc2Vzc2lvbl9pZEkiJWRiM2UyYWVmMjVmMmMwZGRjYTM5ZGQzM2E4YjUwOTRmBjoGRUY6EF9jc3JmX3Rva2VuSSIxT1RhdlkxbVAwblZLdkxWOUcvRFFIdTYwaXRZczZoMmRnTUovYmxlamRWZz0GOwZGOhJyZWZlcnJhbF9jb2RlIhhodHRwczovL2dpdGh1Yi5jb20v--2788bd3e79eb49b5119668e4cf24d6f66aa557ae; path=/; secure; HttpOnly
+5X-GitHub-Request-Id: 801E4C37:4A2A:2E5F670:52D5CF66
+Vary: Accept-Encoding
+
+ 

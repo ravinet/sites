@@ -1,0 +1,27 @@
+»HTTPS72.21.91.78"½
+KGET /new/common/html/scomm.782b85c048f5996874a47f427bb592ac.html HTTP/1.1
+Host: x.myspacecdn.com
+Connection: keep-alive
+TAccept: text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8
+vUser-Agent: Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/31.0.1650.63 Safari/537.36
+Referer: https://myspace.com/
+$Accept-Encoding: gzip,deflate,sdch
+!Accept-Language: en-US,en;q=0.8
+
+*ÿ	
+HTTP/1.1 200 OK
+Accept-Ranges: bytes
+ Access-Control-Allow-Origin: *
+!Cache-Control: max-age=31536000
+Content-Type: text/html
+%Date: Tue, 14 Jan 2014 23:58:40 GMT
+(Expires: Wed, 14 Jan 2015 23:58:40 GMT
+.Last-Modified: Sat, 01 Sep 2012 01:03:33 GMT
+Server: ECS (ord/26DB)
+X-Cache: HIT
+Content-Length: 941
+¯
+<!DOCTYPE html>
+<script>
+(function(b,d,j,h,f,k,c){function g(a,b,c){a.addEventListener?a.addEventListener(b,c,!1):a.attachEvent("on"+b,c)}function i(){for(c||(c=b.length-1);c<b.length;){var a=b.getItem(c++);a&&(window.console&&console.log("processing:",a),parent.postMessage(a,"*"))}setTimeout(i,500)}window!=window.top&&(g(window,"message",function(a){var e=h.exec(a.data);if(e){e=f?e[0]:b.length;try{b[e]=a.data}catch(d){parent.postMessage('scomm_{"cmd":"clear"}',"*"),b.clear(),c=-1,b[e]=d.data}}}),j&&!f?setTimeout(i,500):g(window,"storage",function(a){h.test(a.key)&&a.newValue&&parent.postMessage(a.newValue,"*")}),parent.postMessage(d,"*"),g(window,"beforeunload",function(){b.removeItem(d);b[f?"scomm*":b.length]="scomm*"+JSON.stringify({cmd:"_remove",sender:d,ts:+new Date,to:"scomm*"})}))})(localStorage,location.hash.substr(1),!+"\u000b1",/^scomm\d{13}|scomm\*|scomm_/,!!window.addEventListener,"http://"+location.host);
+</script>

@@ -1,0 +1,25 @@
+»HTTPS173.252.100.27"Ë
+ØGET /connect/ping?client_id=294400680281&domain=www.pogo.com&origin=1&redirect_uri=http%3A%2F%2Fstatic.ak.facebook.com%2Fconnect%2Fxd_arbiter.php%3Fversion%3D28%23cb%3Df1299cf1a8%26domain%3Dwww.pogo.com%26origin%3Dhttp%253A%252F%252Fwww.pogo.com%252Ff3c041977c%26relation%3Dparent&response_type=token%2Csigned_request%2Ccode&sdk=joey HTTP/1.1
+Host: www.facebook.com
+Connection: keep-alive
+TAccept: text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8
+vUser-Agent: Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/32.0.1700.77 Safari/537.36
+Referer: http://www.pogo.com/
+$Accept-Encoding: gzip,deflate,sdch
+!Accept-Language: en-US,en;q=0.8
+
+*û
+HTTP/1.1 302 forced.302
+=Cache-Control: private, no-cache, no-store, must-revalidate
+(Expires: Sat, 01 Jan 2000 00:00:00 GMT
+¾Location: http://static.ak.facebook.com/connect/xd_arbiter.php?version=28#cb=f1299cf1a8&domain=www.pogo.com&origin=http%3A%2F%2Fwww.pogo.com%2Ff3c041977c&relation=parent&error=unknown_user
+Pragma: no-cache
+&Strict-Transport-Security: max-age=0
+!X-Content-Type-Options: nosniff
+X-XSS-Protection: 0
+(Content-Type: text/html; charset=utf-8
+:X-FB-Debug: 9ctDE/c9hh6MwiGdN9uVjPmO2zsxwZBQzTMu2JzkisY=
+%Date: Fri, 17 Jan 2014 14:54:35 GMT
+Connection: keep-alive
+Content-Length: 0
+

@@ -1,0 +1,26 @@
+ªHTTPS54.243.89.45"Ì
+àGET /event?a=105528584&d=72135589&y=false&s171845544=false&s172497335=none&s172547484=gc&s172630051=direct&n=https%3A%2F%2Fsecure.logmein.com%2F&u=oeu1389743973506r0.49193482496775687&wxhr=true&t=1389743973510&f=246722602,295622850,296346727,296402481,296460101,328830007,331461341,331539479,331544281,331544408,331561226,331584037,331594149,331595195,331628069,331657105,331660054 HTTP/1.1
+$Host: 105528584.log.optimizely.com
+Connection: keep-alive
+vUser-Agent: Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/31.0.1650.63 Safari/537.36
+$Origin: https://secure.logmein.com
+Accept: */*
+&Referer: https://secure.logmein.com/
+$Accept-Encoding: gzip,deflate,sdch
+!Accept-Language: en-US,en;q=0.8
+
+*Å
+HTTP/1.1 200 OK
+(Access-Control-Allow-Credentials: true
+)Access-Control-Allow-Methods: POST, GET
+9Access-Control-Allow-Origin: https://secure.logmein.com
+ Content-Type: application/json
+%Date: Tue, 14 Jan 2014 23:59:18 GMT
+9P3P: CP="IDC DSP COR CURa ADMa OUR IND PHY ONL COM STA"
+Server: nginx/1.2.7
+~Set-Cookie: fixed_external_105528584_end_user_id=; Domain=.optimizely.com; expires=Thu, 01 Jan 1970 00:00:00 GMT; Max-Age=-1
+ãSet-Cookie: end_user_id=oeu1389743973506r0.49193482496775687; Domain=.105528584.log.optimizely.com; expires=Fri, 12 Jan 2024 23:59:18 GMT
+Content-Length: 2
+Connection: keep-alive
+
+{}

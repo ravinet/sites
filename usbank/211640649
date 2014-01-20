@@ -1,0 +1,30 @@
+»HTTPS170.135.184.252"ø
+;GET /htmlFragments/collateral-zip-variation.html HTTP/1.1
+Host: www.usbank.com
+Connection: keep-alive
+Accept: text/html, */*
+"X-Requested-With: XMLHttpRequest
+vUser-Agent: Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/31.0.1650.63 Safari/537.36
+,Referer: https://www.usbank.com/index.html
+$Accept-Encoding: gzip,deflate,sdch
+!Accept-Language: en-US,en;q=0.8
+ÕCookie: www-OBC-https=3670114826.47873.0000; fsr.a=1389743908647; mbox=check#true#1389743969|session#1389743908774-506970#1389745769|PC#1389743908774-506970.25_17#1397519910; s_pers=%20s_fid%3D7E1B5565F17666F8-2C3A349DE221164B%7C1452815909215%3B%20s_lv%3D1389743909221%7C1484351909221%3B%20s_lv_s%3DFirst%2520Visit%7C1389745709221%3B%20s_nr%3D1389743909223-New%7C1562543909223%3B%20s_vnum%3D1562543909227%2526vn%253D1%7C1562543909227%3B%20s_invisit%3Dtrue%7C1389745709227%3B%20sc_visit_start%3D1%7C1389745709230%3B%20s_visitStart%3D1%7C1389745709233%3B%20s_prevPage%3Dusb%253Apersonal%2520home%2520page%7C1389745709234%3B; s_sess=%20s_cc%3Dtrue%3B%20s_ria%3Dflash%252011%257Csilverlight%2520not%2520detected%3B%20s_sq%3D%3B
+
+*…	
+HTTP/1.1 200 OK
+Content-Type: text/html
+.Last-Modified: Mon, 14 May 2012 18:13:04 GMT
+ETag: "0387234fd31cd1:0"
+Server:  
+X-Powered-By: ASP.NET
+-Strict-Transport-Security: max-age=31536000
+%Date: Tue, 14 Jan 2014 23:58:14 GMT
+Content-Length: 883
+õ
+<div class="height-150px collateralZip">
+<h2 class="font18px fontWeightNormal">Enter Your Property ZIP Code Information</h2>
+<div id="enterZip"><label class="fontWeightNormal floatLeft marTop-2px prepend-top-5px  marRight-5px push-right-5px" for="collateralZip">Where is your Property?</label>
+<div class="left-15px fieldItemHE"><form id="submitZip" action="javascript:alert('Internal forms can not be handled by generated pages.');" method="post"><label class="infieldLabel infieldLabel2" for="collateralZip">ZIP Code</label><input id="collateralZip" class="textInputBox1 textInput validate" maxlength="5" type="text" /> <input id="saveZipCode" class="marLeft-10px usbButtonDarkBlue_1 rounded" title="Continue" type="submit" value="Continue" /></form></div>
+</div>
+<p class="span-12 hide marTop-10px floatLeft fontSize-12px requiredField fontWeight-bold svcError">&nbsp;</p>
+</div>

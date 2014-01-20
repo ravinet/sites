@@ -1,0 +1,70 @@
+PHTTP159.153.236.12"¿
+<GET /v/GDzkLQ/include/js/home/warnExternalLink.js HTTP/1.1
+Host: www.pogo.com
+Connection: keep-alive
+Accept: */*
+vUser-Agent: Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/32.0.1700.77 Safari/537.36
+Referer: http://www.pogo.com/
+$Accept-Encoding: gzip,deflate,sdch
+!Accept-Language: en-US,en;q=0.8
+ZCookie: prod.JID=01E04AF3B8857CC139C86143AEFEFDAD.000163; com.pogo.unid=6711753983749887
+
+*¥
+HTTP/1.1 200 OK
+Age: 2697      
+%Date: Fri, 17 Jan 2014 14:10:13 GMT
+(Expires: Wed, 16 Jan 2019 14:10:14 GMT
+#Cache-Control: max-age=157680000 
+Connection: Keep-Alive
+Via: POGO-EDGE
+ETag: W/"1946-1353372117000"
+Server: Apache-Coyote/1.1
+Accept-Ranges: bytes
+.Last-Modified: Tue, 20 Nov 2012 00:41:57 GMT
+Content-Type: text/javascript
+Content-Length: 1946
+œ
+/*jslint browser: true, devel: true */
+/*global jQuery */
+/**
+ * The will take all links that have the class warnExternalLink and have the create a confirm box when clicked
+ * if the base domain of the href is not the same as the current page. The text of the message can be overridden 
+ * by using the data-message attribute of the a tag
+ */
+(function ($) {
+	'use strict';
+	function getBaseHostname() {
+		var lastIndex = 0,
+			index = 0;
+		while (location.hostname.indexOf(".", index) >= 0) {
+			lastIndex = index;
+			index = location.hostname.indexOf(".", index) + 1;
+		}
+		return location.hostname.substring(lastIndex);
+	}
+	$(document).ready(function () {
+		var baseHosename = getBaseHostname();
+		function clickEventHandler(e) {
+			var link = $(e.target).get(0).href,
+				message;
+			//need to check for current domain if this is beta/dev and they used a relative link and pogo.com if they used an absolute link
+			if (link.indexOf(baseHosename) < 0 && link.indexOf("pogo.com") < 0) {
+				message = $(e.target).attr('data-message');
+				if (!message) {
+					message = "You are about to leave Electronic Arts' website and go to a website owned by a third party. Electronic Arts is not responsible for content on third party sites, and our privacy policy does not apply to their information collection practices.\n\n Press \"OK\" to access the linked site or press \"Cancel\" to return to your original page.";
+				}
+				if (!confirm(message)) {
+					e.preventDefault();
+				}
+			}
+		}
+		$('#takeover_ad_left').attr('href', $('#takeover_ad_left_url').html());
+		$('#takeover_ad_right').attr('href', $('#takeover_ad_right_url').html());
+		//This uses event delegation so links added with ajax will still get this confirmation warning if they have the warnExternalLink class
+		if ($.fn.on) {
+			$(document).on("click", "a.warnExternalLink", clickEventHandler);
+		} else {
+			$("a.warnExternalLink").click(clickEventHandler);
+		}
+	});
+}(jQuery));

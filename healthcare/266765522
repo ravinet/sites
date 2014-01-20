@@ -1,0 +1,27 @@
+»HTTPS23.6.26.194"½
+GET /spa/spa.json HTTP/1.1
+Host: www.healthcare.gov
+Connection: keep-alive
+8Accept: application/json, text/javascript, */*; q=0.01
+"X-Requested-With: XMLHttpRequest
+vUser-Agent: Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/31.0.1650.63 Safari/537.36
+&Referer: https://www.healthcare.gov/
+$Accept-Encoding: gzip,deflate,sdch
+!Accept-Language: en-US,en;q=0.8
+›Cookie: optimizelySegments=%7B%22171652904%22%3A%22false%22%2C%22171674651%22%3A%22none%22%2C%22171946972%22%3A%22gc%22%2C%22172159083%22%3A%22direct%22%7D; optimizelyEndUserId=oeu1389743950411r0.9540807995945215; optimizelyBuckets=%7B%7D; optimizelyPendingLogEvents=%5B%22n%3Dhttps%253A%252F%252Fwww.healthcare.gov%252F%26u%3Doeu1389743950411r0.9540807995945215%26wxhr%3Dtrue%26t%3D1389743950414%26f%3D%22%5D
+
+*‰
+HTTP/1.1 200 OK
+Server: Apache
+5ETag: "3406e7b1f2319614a184e4dca90b3554:1389531464"
+.Last-Modified: Sun, 12 Jan 2014 12:57:35 GMT
+Accept-Ranges: bytes
+Content-Length: 14
+%Date: Tue, 14 Jan 2014 23:58:55 GMT
+Connection: keep-alive
+Vary: Accept-Encoding
+ Content-Type: application/json
+X-Frame-Options: SAMEORIGIN
+ access-control-allow-origin: *
+
+{"spa":"100"}

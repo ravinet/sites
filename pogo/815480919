@@ -1,0 +1,95 @@
+»HTTPS23.45.37.109" 
+´GET /event/js?01AD=3rsIMJGInGWCwunlmkJNE7-Tyc76SYjP17FKn-no0SRwjd3JbNDWu5A&01RI=3D151E6C51719C4&01NA=na&mt_id=344156&mt_adid=115722&v1=&v2=&v3=&s1=&s2=&s3=&mm_bnc&mm_bct HTTP/1.1
+Host: pixel.mathtag.com
+Connection: keep-alive
+Accept: */*
+vUser-Agent: Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/32.0.1700.77 Safari/537.36
+‚Referer: http://4112862.fls.doubleclick.net/activityi;src=4112862;type=pogor986;cat=usfoo134;u1=;u2=;ord=1;num=4475096839014.44?
+$Accept-Encoding: gzip,deflate,sdch
+!Accept-Language: en-US,en;q=0.8
+YCookie: uuid=52d9442b-b31c-e48f-f76c-eae9ab356156; HRL8=CT-1; mt_mop=; mt_misc=mt_bt:1/
+
+*€
+HTTP/1.1 200 OK
+Content-Type: text/javascript
+Content-Length: 2722
+\Server: mt2/2.9.1+aeb51e0 2.9.1.release Nov 15 2013 16:25:34 ewr-pixel-x7 pid 0x2713 10003
+(Expires: Fri, 17 Jan 2014 14:54:36 GMT
+.Cache-Control: max-age=0, no-cache, no-store
+Pragma: no-cache
+%Date: Fri, 17 Jan 2014 14:54:36 GMT
+Connection: keep-alive
+]Set-Cookie: HRL8=CT-USR; expires=Fri, 14-Feb-2014 14:54:36 GMT; path=/; domain=.mathtag.com
+bSet-Cookie: mt_misc=mt_bt:1/; domain=.mathtag.com; path=/; expires=Sun, 16-Feb-2014 14:54:36 GMT
+;P3P: CP="NON DSP ADM DEV PSD OUR IND STP PHY PRE NAV UNI"
+¤
+	/*
+	*/
+
+	var mm_ri = String( Math.random() );
+	mm_ri = mm_ri.replace( /0\./g,'' );
+	
+	var mm_protocol = location.protocol;
+	if ( mm_protocol != 'http:' && mm_protocol != 'https:' ){ mm_protocol = 'http:'; }
+	
+
+var sync_4815162342 = function()
+{
+this.urls = [
+"https://pixel.mathtag.com/misc/img?mt_id=344156&mt_adid=115722&mop_seq=0:10&mt_cb=945339&mop_top=",
+"https://cm.g.doubleclick.net/pixel?google_nid=mediamath&google_cm&google_hm=UtlEK7Mc5I_3bOrpqzVhVg",
+"https://pixel.mathtag.com/misc/img?mt_id=344156&mt_adid=115722&mop_seq=1:10&mt_cb=948629&mop_top=4:1388760896|",
+"https://www.facebook.com/fr/u.php?p=418865601488577&m=52d9442b-b31c-e48f-f76c-eae9ab356156",
+"https://pixel.mathtag.com/misc/img?mt_id=344156&mt_adid=115722&mop_seq=2:10&mt_cb=670373&mop_top=4:1388760896|23:1388760896|",
+"https://pixel.rubiconproject.com/tap.php?v=4222&nid=1512&put=52d9442b-b31c-e48f-f76c-eae9ab356156&expires=28",
+"https://r.openx.net/set?pid=0b83a084-dd0b-4bfe-9e2e-ab3706fc9955&rtb=uuid%3D52d9442b-b31c-e48f-f76c-eae9ab356156",
+"https://simage2.pubmatic.com/AdServer/Pug?vcode=bz0yJnR5cGU9MSZjb2RlPTM2MiZ0bD00MzIwMA==&piggybackCookie=uid:52d9442b-b31c-e48f-f76c-eae9ab356156",
+"https://r.casalemedia.com/rum?cm_dsp_id=12345678&external_user_id=52d9442b-b31c-e48f-f76c-eae9ab356156",
+"https://stags.bluekai.com/site/2948?id=52d9442b-b31c-e48f-f76c-eae9ab356156",
+"https://stags.bluekai.com/site/4448?id=52d9442b-b31c-e48f-f76c-eae9ab356156",
+"https://loadm.exelator.com/load/?p=204&g=101&buid=52d9442b-b31c-e48f-f76c-eae9ab356156&j=0",
+"https://ad.360yield.com/match?publisher_dsp_id=5&external_user_id=52d9442b-b31c-e48f-f76c-eae9ab356156",
+"https://pixel.mathtag.com/misc/img?mt_id=344156&mt_adid=115722&mop_seq=10:10&mt_cb=223166&check=52d9442b-b31c-e48f-f76c-eae9ab356156&mop_top=4:1388760896|23:1388760896|9:1388760896|5:1388760896|3:1388760896|15:1388760896|10002:1388760896|10010:1388760896|10008:1388760896|16:1388760896|",
+]
+
+   this.progress = 0;
+
+   var self = this;
+
+   this.sync = function(url)
+   {
+      var e = new Image();
+      e.src = url;
+   }
+
+   this.batch = function()
+   {
+      for (var i = self.progress; i < self.urls.length; ++i)
+      {
+          self.sync(self.urls[i]);
+      }
+   }
+
+   this.final = function()
+   {
+      self.sync(self.urls[self.urls.length-1]+"&final");
+   }
+
+   this.some = function(howmany)
+   {
+      var count = 0;
+      for (var i = self.progress; i < self.urls.length && count < howmany; ++i)
+      {
+         self.sync(self.urls[self.progress++]);
+         count++;
+      }
+   }
+}
+
+
+var s_4815162342 = new sync_4815162342();
+s_4815162342.some(1);
+setTimeout('s_4815162342.some(2)', 1000);
+setTimeout(s_4815162342.batch, 3000);
+setTimeout(s_4815162342.final, 10000);
+

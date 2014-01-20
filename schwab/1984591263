@@ -1,0 +1,32 @@
+»HTTPS173.194.46.124"Ø
+XGET /activityi;src=2530996;type=schwab;cat=phome;ord=1;num=3073159484192.729? HTTP/1.1
+#Host: 2530996.fls.doubleclick.net
+Connection: keep-alive
+TAccept: text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8
+vUser-Agent: Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/31.0.1650.63 Safari/537.36
+"Referer: https://www.schwab.com/
+$Accept-Encoding: gzip,deflate,sdch
+!Accept-Language: en-US,en;q=0.8
+
+*×
+HTTP/1.1 302 Found
+tSet-Cookie: test_cookie=CheckForPermission; expires=Wed, 15-Jan-2014 00:14:07 GMT; path=/; domain=.doubleclick.net
+¦P3P: policyref="https://googleads.g.doubleclick.net/pagead/gcn_p3p_.xml", CP="CURa ADMa DEVa TAIo PSAo PSDo OUR IND UNI PUR INT DEM STA PRE COM NAV OTC NOI DSP COR"
+%Date: Tue, 14 Jan 2014 23:59:07 GMT
+Pragma: no-cache
+(Expires: Fri, 01 Jan 1990 00:00:00 GMT
+*Cache-Control: no-cache, must-revalidate
+†Location: /activityi;src=2530996;type=schwab;cat=phome;ord=1;num=3073159484192.729;~oref=https%3A%2F%2Fwww.schwab.com%2F?&_dc_ck=try
+(Content-Type: text/html; charset=UTF-8
+Server: Floodlight server
+Content-Length: 323
+!X-XSS-Protection: 1; mode=block
+X-Frame-Options: SAMEORIGIN
+Alternate-Protocol: 443:quic
+Å
+<HTML><HEAD><meta http-equiv="content-type" content="text/html;charset=utf-8">
+<TITLE>302 Moved</TITLE></HEAD><BODY>
+<H1>302 Moved</H1>
+The document has moved
+<A HREF="/activityi;src=2530996;type=schwab;cat=phome;ord=1;num=3073159484192.729;~oref=https%3A%2F%2Fwww.schwab.com%2F?&amp;_dc_ck=try">here</A>.
+</BODY></HTML>

@@ -1,0 +1,93 @@
+»HTTPS23.45.37.109"ª
+ZGET /event/js?mt_id=344155&mt_adid=115722&v1=&v2=&v3=&s1=&s2=&s3=&mm_bnc&mm_bct HTTP/1.1
+Host: pixel.mathtag.com
+Connection: keep-alive
+Accept: */*
+vUser-Agent: Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/32.0.1700.77 Safari/537.36
+„Referer: http://4112862.fls.doubleclick.net/activityi;src=4112862;type=pogor986;cat=homep811;u1=;u2=;ord=1;num=1336315600201.4875?
+$Accept-Encoding: gzip,deflate,sdch
+!Accept-Language: en-US,en;q=0.8
+<Cookie: HRL8=CT; uuid=52d9442b-b31c-e48f-f76c-eae9ab356156
+
+*…
+HTTP/1.1 200 OK
+Content-Type: text/javascript
+Content-Length: 2722
+\Server: mt2/2.9.1+aeb51e0 2.9.1.release Nov 15 2013 16:25:34 ewr-pixel-x3 pid 0x74cf 29903
+Cache-Control: no-cache
+PP3P: CP="NOI DSP COR NID CURa ADMa DEVa PSAa PSDa OUR BUS COM INT OTC PUR STA"
+(Expires: Fri, 17 Jan 2014 14:54:34 GMT
+%Date: Fri, 17 Jan 2014 14:54:35 GMT
+Connection: keep-alive
+ZSet-Cookie: mt_misc=; domain=.mathtag.com; path=/; expires=Sun, 16-Feb-2014 14:54:35 GMT
+¤
+	/*
+	*/
+
+	var mm_ri = String( Math.random() );
+	mm_ri = mm_ri.replace( /0\./g,'' );
+	
+	var mm_protocol = location.protocol;
+	if ( mm_protocol != 'http:' && mm_protocol != 'https:' ){ mm_protocol = 'http:'; }
+	
+
+var sync_4815162342 = function()
+{
+this.urls = [
+"https://pixel.mathtag.com/misc/img?mt_id=344155&mt_adid=115722&mop_seq=0:10&mt_cb=859632&mop_top=",
+"https://cm.g.doubleclick.net/pixel?google_nid=mediamath&google_cm&google_hm=UtlEK7Mc5I_3bOrpqzVhVg",
+"https://pixel.mathtag.com/misc/img?mt_id=344155&mt_adid=115722&mop_seq=1:10&mt_cb=310936&mop_top=4:1388760895|",
+"https://www.facebook.com/fr/u.php?p=418865601488577&m=52d9442b-b31c-e48f-f76c-eae9ab356156",
+"https://pixel.mathtag.com/misc/img?mt_id=344155&mt_adid=115722&mop_seq=2:10&mt_cb=546480&mop_top=4:1388760895|23:1388760895|",
+"https://pixel.rubiconproject.com/tap.php?v=4222&nid=1512&put=52d9442b-b31c-e48f-f76c-eae9ab356156&expires=28",
+"https://r.openx.net/set?pid=0b83a084-dd0b-4bfe-9e2e-ab3706fc9955&rtb=uuid%3D52d9442b-b31c-e48f-f76c-eae9ab356156",
+"https://simage2.pubmatic.com/AdServer/Pug?vcode=bz0yJnR5cGU9MSZjb2RlPTM2MiZ0bD00MzIwMA==&piggybackCookie=uid:52d9442b-b31c-e48f-f76c-eae9ab356156",
+"https://r.casalemedia.com/rum?cm_dsp_id=12345678&external_user_id=52d9442b-b31c-e48f-f76c-eae9ab356156",
+"https://stags.bluekai.com/site/2948?id=52d9442b-b31c-e48f-f76c-eae9ab356156",
+"https://stags.bluekai.com/site/4448?id=52d9442b-b31c-e48f-f76c-eae9ab356156",
+"https://loadm.exelator.com/load/?p=204&g=101&buid=52d9442b-b31c-e48f-f76c-eae9ab356156&j=0",
+"https://ad.360yield.com/match?publisher_dsp_id=5&external_user_id=52d9442b-b31c-e48f-f76c-eae9ab356156",
+"https://pixel.mathtag.com/misc/img?mt_id=344155&mt_adid=115722&mop_seq=10:10&mt_cb=602793&check=52d9442b-b31c-e48f-f76c-eae9ab356156&mop_top=4:1388760895|23:1388760895|9:1388760895|5:1388760895|3:1388760895|15:1388760895|10002:1388760895|10010:1388760895|10008:1388760895|16:1388760895|",
+]
+
+   this.progress = 0;
+
+   var self = this;
+
+   this.sync = function(url)
+   {
+      var e = new Image();
+      e.src = url;
+   }
+
+   this.batch = function()
+   {
+      for (var i = self.progress; i < self.urls.length; ++i)
+      {
+          self.sync(self.urls[i]);
+      }
+   }
+
+   this.final = function()
+   {
+      self.sync(self.urls[self.urls.length-1]+"&final");
+   }
+
+   this.some = function(howmany)
+   {
+      var count = 0;
+      for (var i = self.progress; i < self.urls.length && count < howmany; ++i)
+      {
+         self.sync(self.urls[self.progress++]);
+         count++;
+      }
+   }
+}
+
+
+var s_4815162342 = new sync_4815162342();
+s_4815162342.some(1);
+setTimeout('s_4815162342.some(2)', 1000);
+setTimeout(s_4815162342.batch, 3000);
+setTimeout(s_4815162342.final, 10000);
+

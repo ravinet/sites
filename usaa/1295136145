@@ -1,0 +1,20 @@
+»HTTPS
+23.6.22.27"Ý
+GET / HTTP/1.1
+Host: www.usaa.com
+Connection: keep-alive
+TAccept: text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8
+vUser-Agent: Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/31.0.1650.63 Safari/537.36
+$Accept-Encoding: gzip,deflate,sdch
+!Accept-Language: en-US,en;q=0.8
+
+*é
+ HTTP/1.1 302 Moved Temporarily
+Server: AkamaiGHost
+Content-Length: 0
+Location: /?akredirect=true
+%Date: Tue, 14 Jan 2014 23:59:24 GMT
+Connection: keep-alive
+ŸSet-Cookie: akvalidate=1389744864~id=cookie0bWowUU3DDZuxOSw/J4UIvlxI/qCA8wBJIS+A1bsG9x0ONzd7o8BMIDnmT0YRLYEWbYWYW33RjE8fgupevFZ8g==; path=/; domain=.usaa.com
+’P3P: policyref="https://www.usaa.com/w3c/USAA_Full_P3P_Policy.xml", CP="IDC DSP COR CUR ADM DEV CUS DEV PSA IVA CON HIS TEL OPT OUR SAM IND PRE"
+

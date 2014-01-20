@@ -1,0 +1,25 @@
+ªHTTPS75.101.142.236"‚
+GET / HTTP/1.1
+Host: www.hootsuite.com
+Connection: keep-alive
+TAccept: text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8
+vUser-Agent: Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/31.0.1650.63 Safari/537.36
+$Accept-Encoding: gzip,deflate,sdch
+!Accept-Language: en-US,en;q=0.8
+
+*ç
+ HTTP/1.1 301 Moved Permanently
+Server: nginx/1.4.1
+%Date: Tue, 14 Jan 2014 23:57:52 GMT
+Content-Type: text/html
+Content-Length: 184
+Connection: keep-alive
+"Location: https://hootsuite.com/
+∫
+<html>
+<head><title>301 Moved Permanently</title></head>
+<body bgcolor="white">
+<center><h1>301 Moved Permanently</h1></center>
+<hr><center>nginx/1.4.1</center>
+</body>
+</html>

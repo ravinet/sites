@@ -1,0 +1,20 @@
+ªHTTPS66.117.23.101"´
+ùGET /m2/bankofamerica/mbox/ajax?mboxHost=www.bankofamerica.com&mboxSession=1389743864844-67354&mboxPage=1389743864890-845034&screenHeight=1200&screenWidth=1920&browserWidth=937&browserHeight=1051&browserTimeOffset=-300&colorDepth=24&mboxXDomain=enabled&mboxCount=3&profile.tc_lang=en_US&profile.BOA_HPR=null&profile.BA_0021=null&profile.state=null&profile.BOA_0020=999&mbox=BOA_HOME_SIGNON_SERVICE_01&mboxId=0&mboxTime=1389725864871&mboxURL=https%3A%2F%2Fwww.bankofamerica.com%2F&mboxReferrer=&mboxVersion=41&mboxXDomainCheck=true HTTP/1.1
+#Host: bankofamerica.tt.omtrdc.net
+Connection: keep-alive
+Accept: */*
+vUser-Agent: Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/31.0.1650.63 Safari/537.36
+)Referer: https://www.bankofamerica.com/
+$Accept-Encoding: gzip,deflate,sdch
+!Accept-Language: en-US,en;q=0.8
+KCookie: mboxSession=1389743864844-67354; mboxPC=1389743864844-67354.25_33
+
+*∏	
+HTTP/1.1 200 OK
+pragma: no-cache
+2Content-Type: text/JavaScript;charset=ISO-8859-1
+Content-Length: 1024
+%Date: Tue, 14 Jan 2014 23:57:29 GMT
+Server: Test & Target
+Ç
+var mboxCurrent = mboxFactories.get('default').get('BOA_HOME_SIGNON_SERVICE_01',0);mboxCurrent.setOffer(new mboxOfferAjax('<div id=\"mboxClick-BOA_HOME_SIGNON_SERVICE_01\" onclick=\"mboxFactories.get(\'default\').getSignaler().signal(\'click\', \'BOA_HOME_SIGNON_SERVICE_01-clicked\', \'mboxTarget=42424.213\')\"><!-- Offer Id: 121210  --><div class=\'media-module\'><a href=\"http:\/\/promo.bankofamerica.com\/onlinebanking1\/?cm_sp=OLB-General-_-OLB-General-_-OGU5C11W_sc_fullad_ar1d5cb6_s.jpg\" name=\"OGU5C11W\" target=\"_self\"><img src=\"\/content\/images\/ContextualSiteGraphics\/Marketing\/Highlights\/en_US\/sc_fullad_ar1d5cb6_s.jpg\" alt=\"Online Banking. Bank before going to lunch and have time for dessert. Enroll now\" title=\"Online Banking. Bank before going to lunch and have time for dessert. Enroll now\" width=\"223\" height=\"115\" \/><\/a><\/div><\/div>'));mboxCurrent.getOffer().setOnLoad(function() {});mboxCurrent.loaded();mboxFactories.get('default').getPCId().forceId("1389743864844-67354.25_33");

@@ -1,0 +1,26 @@
+»HTTPS174.129.5.213"ž
+ÃGET /event?a=183139605&d=183139605&y=false&s204509906=false&s204862826=gc&s204944106=direct&s208084609=none&s213359307=true&n=https%3A%2F%2Fwww.odesk.com%2F&u=oeu1389743969347r0.5577442257199436&wxhr=true&t=1389743969352&f=303346134,352480354,537422762,540282048,545180981,546800590,549623028,550650449,561900218 HTTP/1.1
+$Host: 183139605.log.optimizely.com
+Connection: keep-alive
+vUser-Agent: Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/31.0.1650.63 Safari/537.36
+Origin: https://www.odesk.com
+Accept: */*
+!Referer: https://www.odesk.com/
+$Accept-Encoding: gzip,deflate,sdch
+!Accept-Language: en-US,en;q=0.8
+
+*û
+HTTP/1.1 200 OK
+(Access-Control-Allow-Credentials: true
+)Access-Control-Allow-Methods: POST, GET
+4Access-Control-Allow-Origin: https://www.odesk.com
+ Content-Type: application/json
+%Date: Tue, 14 Jan 2014 23:59:14 GMT
+9P3P: CP="IDC DSP COR CURa ADMa OUR IND PHY ONL COM STA"
+Server: nginx/1.2.7
+ŠSet-Cookie: end_user_id=oeu1389743969347r0.5577442257199436; Domain=.183139605.log.optimizely.com; expires=Fri, 12 Jan 2024 23:59:14 GMT
+~Set-Cookie: fixed_external_183139605_end_user_id=; Domain=.optimizely.com; expires=Thu, 01 Jan 1970 00:00:00 GMT; Max-Age=-1
+Content-Length: 2
+Connection: keep-alive
+
+{}
