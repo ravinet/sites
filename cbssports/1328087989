@@ -1,0 +1,27 @@
+PHTTP199.7.167.22"¡
+?GET /?async=1&aid=2436&nm_data=click%7CProduct_ID%3D HTTP/1.1
+"Host: com-footballfan.netmng.com
+Connection: keep-alive
+Accept: */*
+vUser-Agent: Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/31.0.1650.63 Safari/537.36
+LReferer: http://shop.cbssports.com/Conference_Championship_Gear/source/box
+$Accept-Encoding: gzip,deflate,sdch
+!Accept-Language: en-US,en;q=0.8
+
+*ø
+HTTP/1.1 200 OK
+%Date: Mon, 24 Mar 2014 20:37:39 GMT
+Server: Apache/2.2.16
+KP3P: policyref="/w3c/p3p.xml", CP="NOI DSP COR DEVa PSAa OUR BUS COM NAV"
+(Expires: Sat, 22 Mar 2014 20:37:39 GMT
+.Last-Modified: Sat, 22 Mar 2014 20:37:39 GMT
+4Cache-Control: no-store, no-cache, must-revalidate
+*Cache-Control: post-check=0, pre-check=0
+Pragma: no-cache
+ÊSet-Cookie: evo5_FOOTBALLFANtemp=cp5crt7sau4tt%7C94Pa%2F9%2BppAqCgHmnCcy8Sss%2BbXJJVJM5SfZwP2yvI6ysgFQfFLCZjbMCQunxw3wYIJq9QK9pM%2Fgha6ra9pTkctSrzpvix6ptKd917AnGG10iyyfjnhV4nrlTMzhNIp8md92qVyNnUra9Ev1XTsXfZAxN82ou2tHLSLe%2BBAJ1LVRvb2R3swEwE8lxLD6b%2BDCvXe6m5ouB3xTW6hDANbCXGg%3D%3D; expires=Tue, 23-Sep-2014 20:37:39 GMT; path=/
+Content-Length: 3289
+Connection: close
+.Content-Type: text/javascript; charset=UTF-8
+Û
+
+function sendMessage(url,obj,callback){var nm_script=document.createElement("SCRIPT");if(url.indexOf("?")==-1){url+="?"}else{url+="&"}url+="rand="+Math.random();url+="&nm_input_data="+encodeURIComponent(json_encode(obj));if(typeof(callback)=="function"){if(nm_script.addEventListener){nm_script.addEventListener("load",callback,false)}else{nm_script.onreadystatechange=function(e){if(this.readyState=="loaded"){callback();nm_script=null}}}}nm_script.src=url;document.getElementsByTagName("head")[0].appendChild(nm_script)}function nm_createCookie(name,value,days,domain){if(days){var date=new Date();date.setTime(date.getTime()+(days*24*60*60*1000));var expires="; expires="+date.toGMTString()}else var expires="";if(domain){var sDomainName="; domain="+domain}else var sDomainName="";document.cookie=name+"="+value+sDomainName+expires+"; path=/"}function nm_readCookie(name){var nameEQ=name+"=";var ca=document.cookie.split(';');for(var i=0;i<ca.length;i++){var c=ca[i];while(c.charAt(0)==' ')c=c.substring(1,c.length);if(c.indexOf(nameEQ)==0)return c.substring(nameEQ.length,c.length)}return null}function nm_eraseCookie(name){nm_createCookie(name,"",-1)}(function(){var fn=function(){window.nmDocReady=1};if(window.addEventListener){window.addEventListener('load',fn,false)}else if(window.attachEvent){window.attachEvent('onload',fn)}})();function json_encode(expr){var str='';switch(typeof(expr)){case"object":if(expr==null){str="null"}else if(expr.constructor==Date){str="\""+expr.getFullYear()+"-"+String(exp.getMonth()+100).substr(1)+"-"+String(exp.getDate()+100).substr(1)+"T"+exp.toTimeString().substr(0,8)+"\""}else if(expr.constructor==Array){var tmp=[];for(var i=0;i<expr.length;i++){if(s=json_encode(expr[i]))tmp.push(s)}str="["+tmp.join(",")+"]"}else{var item,tmp=[];for(item in expr){if(expr.hasOwnProperty(item))tmp.push(json_encode(item)+":"+json_encode(expr[item]))}str="{"+tmp.join(",")+"}"}break;case"function":break;case"boolean":str=String(expr);break;case"number":str=isFinite(expr)?String(expr):"null";break;case"string":str="\""+expr.replace(/[\x00-\x1f\\"]/g,function($0,$1){return"\\u"+String(10000+String($1).charCodeAt().toString(16)).substr(1)})+"\"";break;default:}return str}function json_decode(str){return eval("("+str+")")}function nm_getReferer(){return document.referrer}if(!document.referrer||document.referrer==""){if(document.createElement&&document.getElementsByTagName("body")[0]){var sireferrer=document.createElement("IMG");sireferrer.src="http://dms.netmng.com/si/cm/tracking/DGTrackingRedirect.aspx?siclientid=9491&siredirect=http://shop.cbssports.com&sisearchengine=1055&siproduct=";sireferrer.width="0";sireferrer.height="0";sireferrer.style.display="none";document.getElementsByTagName("body")[0].appendChild(sireferrer)}}else{if(document.createElement&&document.getElementsByTagName("head")){var sireferrer=document.createElement("SCRIPT");sireferrer.src="http://dms.netmng.com/si/CM/Tracking/ClickTracking.aspx?siclientid=9350&jscript=1&timecode=1395693459000";document.getElementsByTagName("head")[0].appendChild(sireferrer)}};sendMessage('http://com-footballfan.netmng.com/?function=browser_check&vid=cp5crt7sau4tt','',null);sendMessage('http://com-footballfan.netmng.com/?function=getReferer&referer='+escape(nm_getReferer()),'',null);
