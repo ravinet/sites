@@ -1,0 +1,27 @@
+PHTTP220.181.90.24"›
+GGET /201111/ee4f7cebb2ef825bf6b3c8730c929929_10.js?t=4652318 HTTP/1.1
+Host: imp.go.sohu.com
+Connection: keep-alive
+Accept: */*
+vUser-Agent: Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/31.0.1650.63 Safari/537.36
+Referer: http://www.sohu.com/
+$Accept-Encoding: gzip,deflate,sdch
+!Accept-Language: en-US,en;q=0.8
+(Cookie: weibo_msg_version=201312131446
+
+*˜
+HTTP/1.1 200 OK
+(Content-Type: application/x-javascript
+Content-Length: 404
+Connection: keep-alive
+Server: nginx/1.4.4
+%Date: Mon, 24 Mar 2014 21:07:40 GMT
+.Last-Modified: Fri, 07 Mar 2014 22:00:00 GMT
+ETag: "531a4160-194"
+(Expires: Mon, 24 Mar 2014 21:12:40 GMT
+Cache-Control: max-age=300
+jSet-Cookie: uid=CgpS5FMwnpwYtmscyGrBAg==; expires=Tue, 24-Mar-15 21:07:40 GMT; domain=ad-plus.cn; path=/
+=P3P: policyref="/w3c/p3p.xml", CP="CUR ADM OUR NOR STA NID"
+Accept-Ranges: bytes
+–
+try{SohuAd.pv.imp("http://imp.ad-plus.cn/201111/ee4f7cebb2ef825bf6b3c8730c929929.php?a=10");var Beans = {id:'a=10',ad:[],type:'test',contain:'ad_N'};Beans.ad = [];var _timetag = new Date();if((_timetag.getHours()!='9' || _timetag.getMinutes() >10) && !navigator.userAgent.toLowerCase().match(/firefox\/([\d.]+)/) && !navigator.userAgent.toLowerCase().match(/chrome\/([\d.]+)/)){SohuAd(Beans);}}catch(e){}

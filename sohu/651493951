@@ -1,0 +1,23 @@
+PHTTP220.181.11.98"œ
+5GET /suv/?t?=1395695262987783_1280_800?r?= HTTP/1.1
+Host: pv.sohu.com
+Connection: keep-alive
+Accept: */*
+vUser-Agent: Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/31.0.1650.63 Safari/537.36
+Referer: http://www.sohu.com/
+$Accept-Encoding: gzip,deflate,sdch
+!Accept-Language: en-US,en;q=0.8
+?Cookie: weibo_msg_version=201312131446; networkmp_del=check:1
+
+*’
+HTTP/1.1 200 OK
+Server: nginx/1.0.2
+%Date: Mon, 24 Mar 2014 21:07:43 GMT
+(Content-Type: application/x-javascript
+Content-Length: 461
+Connection: keep-alive
+\P3P: CP="CURa ADMa DEVa PSAo PSDo OUR BUS UNI PUR INT DEM STA PRE COM NAV OTC NOI DSP COR"
+SSet-Cookie: IPLOC=US;expires=Wed, 23-Apr-2014 21:07:43 GMT;path=/;domain=sohu.com
+_Set-Cookie: SUV=1403250507433077;expires=Tue, 19-Jan-2038 00:00:00 GMT;path=/;domain=sohu.com
+Ï
+function gMD(d){var u;if(d==u||d==null)return null;var i=d.length,s;if(d.charAt(i-3)=='.')s=d.lastIndexOf('.',d.lastIndexOf('.',i-=(d.indexOf(".com.")>0)?8:4));else s=d.lastIndexOf('.',d.lastIndexOf('.')-1);s=(s==-1)?0:++s;return d.substring(s)}document.cookie="IPLOC=US;path=/;expires=Wed, 23-Apr-2014 21:07:43 GMT;domain="+gMD(document.domain);document.cookie="SUV=1403250507433077;path=/;expires=Tue, 19-Jan-2038 00:00:00 GMT;domain="+gMD(document.domain);
