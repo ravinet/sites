@@ -1,0 +1,23 @@
+PHTTP64.94.107.23"“
+QGET /api/segments.json?a=p-9eJ8k4iSzux46&callback=qc_results&ttl=86400 HTTP/1.1
+Host: pixel.quantserve.com
+Connection: keep-alive
+Accept: */*
+vUser-Agent: Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/31.0.1650.63 Safari/537.36
+2Referer: http://xfinity.comcast.net/tt2/?cid=BBI
+$Accept-Encoding: gzip,deflate,sdch
+!Accept-Language: en-US,en;q=0.8
+
+*è
+HTTP/1.1 200 OK
+Connection: close
+(Content-Type: application/x-javascript
+rSet-Cookie: mc=533095dd-04de3-381f0-ef8e0; expires=Wed, 23-Sep-2015 20:30:21 GMT; path=/; domain=.quantserve.com
+IP3P: CP="NOI DSP COR NID CURa ADMa DEVa PSAo PSDo OUR SAMa IND COM NAV"
+5Cache-Control: private, no-transform, max-age=86400
+(Expires: Tue, 25 Mar 2014 20:30:21 GMT
+Content-Length: 39
+%Date: Mon, 24 Mar 2014 20:30:21 GMT
+Server: QS
+)
+qc_results({"segments":[{"id":"D"}]});

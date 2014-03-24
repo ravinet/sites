@@ -1,0 +1,28 @@
+PHTTP162.150.15.200"·
+"POST /OfferFinder.cajax HTTP/1.1
+Host: www.comcast.com
+Connection: keep-alive
+Content-Length: 383
+ Origin: http://www.comcast.com
+vUser-Agent: Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/31.0.1650.63 Safari/537.36
+(Content-Type: text/plain;charset=UTF-8
+Accept: */*
+6Referer: http://www.comcast.com/?CMP=ILCXFICOMUTOL3X
+$Accept-Encoding: gzip,deflate,sdch
+!Accept-Language: en-US,en;q=0.8
+ò	Cookie: SHS=0; AD3_=set; IPE_S_114714=0; mbox=check#true#1395693083|session#1395693022382-148563#1395694883|PC#1395693022382-148563.17_45#1396902623; SC=RC.USID=656e2be3-99d0-4f7b-a464-738741b73ad8&RC.SEG=13%3d1%7c64%3d0%7c66%3d0%7c71%3d0%7c91%3d0%7c81%3d0%7c80%3d0%7c70%3d0%7c4%3d0%7c14%3d0%7c&EX=False&GEO=True&L1ID=8617&RC.AGT=670&RC.BIL=CSG&RC.CRPN=0&RC.FRCHN=0&RC.LOC=-9223372036854775808&RC.MGMTA=0&RC.MKT=8947&RC.PRIN=6000&RC.SYS=8155&RC.CORP=603&RC.FRCH=16299&L2ID=11493&L3ID=9049&L4ID=8928&RC.IFL=N&RC.VD=cmp%3dILCXFICOMUTOL3X; PSC=VA=1025&UCID=26ab7c0c-6a9b-45c7-b241-19aef60f2a9b&CTY=Berkeley&ST=CA&Z=94720&EX=False&RC.MKT=8947; BSD=1; wwwcomcast_cookie=80fe24b51320b027db4d996ae553dd62; s_pers=%20s_dfa%3Dcomcastdotcomprod%7C1395694825318%3B%20s_fid%3D248A79FD00A4F939-3D29D5AE90FE49AB%7C1458851425926%3B%20s_cpm%3D%255B%255B%2527EXT-Internal%2527%252C%25271395693025938%2527%255D%255D%7C1553459425938%3B%20gpv_07%3Dcomcast%2520%25E2%2580%2593%2520nextgen%2520%25E2%2580%2593%2520home%7C1395694825951%3B%20s_lv%3D1395693025964%7C1490301025964%3B%20s_lv_s%3DFirst%2520Visit%7C1395694825964%3B; s_sess=%20s_cc%3Dtrue%3B%20omzip%3D94720%3B%20s_sq%3D%3B; Language=en
+Å
+{"Method":"GetLowestPrice","Arg":"{\"IncludeTV\":true,\"IncludePhone\":true,\"IncludeInternet\":true,\"IncludeHome\":false,\"StartingPriceElementId\":\"starting_price\",\"PromoNoOfMonthsElementId\":\"lowest-promo-months\",\"MarketId\":\"8947\",\"TargetId\":\"00000000-0000-0000-0000-000000000000\",\"ContentPath\":\"/sitecore/content/ngbf_comcast_com/Content/Common/Offer Finder\"}"}*ì	
+HTTP/1.1 200 OK
+Cache-Control: private
+/Content-Type: application/json; charset=utf-8
+ETag:    
+Server: Microsoft-IIS/7.5
+X-AspNet-Version: 4.0.30319
+´Set-Cookie: SC=RC.USID=656e2be3-99d0-4f7b-a464-738741b73ad8&RC.SEG=13%3d1%7c64%3d0%7c66%3d0%7c71%3d0%7c91%3d0%7c81%3d0%7c80%3d0%7c70%3d0%7c4%3d0%7c14%3d0%7c&EX=False&GEO=True&L1ID=8617&RC.AGT=670&RC.BIL=CSG&RC.CRPN=0&RC.FRCHN=0&RC.LOC=-9223372036854775808&RC.MGMTA=0&RC.MKT=8947&RC.PRIN=6000&RC.SYS=8155&RC.CORP=603&RC.FRCH=16299&L2ID=11493&L3ID=9049&L4ID=8928&RC.IFL=N&RC.VD=cmp%3dILCXFICOMUTOL3X; domain=comcast.com; path=/
+∂Set-Cookie: PSC=VA=1025&UCID=26ab7c0c-6a9b-45c7-b241-19aef60f2a9b&CTY=Berkeley&ST=CA&Z=94720&EX=False&RC.MKT=8947; domain=comcast.com; expires=Tue, 24-Mar-2015 20:30:26 GMT; path=/
+%Date: Mon, 24 Mar 2014 20:30:25 GMT
+Content-Length: 248
+HSet-Cookie: wwwcomcast_cookie=80fe24b51320b027db4d996ae553dd62;path=/;
+˙
+{"Details":null,"HtmlContent":[{"key":"starting_price","value":"<sup class='dollar'>$<\/sup>89<sup class='cents'><\/sup>"},{"key":"lowest-promo-months","value":"for the first 12 months"}],"OmnitureData":[],"ResponseType":0,"ValidationSummary":null}

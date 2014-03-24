@@ -1,0 +1,21 @@
+PHTTP66.117.23.101"³
+ÇGET /m2/comcastresidentialservices/ubox/image?mbox=3rdPartySet&mboxDefault=http%3A//cimage.adobe.com/comcast/pixel.gif&mboxXDomain=enabled&mboxSession=${user.sessionId}&mboxPC=${user.pcId} HTTP/1.1
+0Host: comcastresidentialservices.tt.omtrdc.net
+Connection: keep-alive
+Accept: image/webp,*/*;q=0.8
+vUser-Agent: Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/31.0.1650.63 Safari/537.36
+6Referer: http://www.comcast.com/?CMP=ILCXFICOMUTOL3X
+$Accept-Encoding: gzip,deflate,sdch
+!Accept-Language: en-US,en;q=0.8
+
+*Ì
+HTTP/1.1 302 Found
+Server: Test & Target
+$P3P: CP="NOI DSP CURa OUR STP COM"
+$P3P: CP="NOI DSP CURa OUR STP COM"
+%Date: Mon, 24 Mar 2014 20:30:21 GMT
+‰Location: http://comcastresidentialservices.tt.omtrdc.net/m2/comcastresidentialservices/ubox/image?mbox=3rdPartySet&mboxDefault=http%3A//cimage.adobe.com/comcast/pixel.gif&mboxXDomain=enabled&mboxSession=${user.sessionId}&mboxPC=${user.pcId}&mboxXDomainCheck=true
+ÃSet-Cookie: mboxSession="${user.sessionId}"; Version=1; Domain=comcastresidentialservices.tt.omtrdc.net; Max-Age=1860; Expires=Mon, 24-Mar-2014 21:01:22 GMT; Path=/m2/comcastresidentialservices
+¼Set-Cookie: mboxPC="${user.17_43"; Version=1; Domain=comcastresidentialservices.tt.omtrdc.net; Max-Age=1209600; Expires=Mon, 07-Apr-2014 20:30:22 GMT; Path=/m2/comcastresidentialservices
+Content-Length: 0
+

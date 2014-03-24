@@ -1,0 +1,20 @@
+PHTTP63.251.249.49"í
+.GET /adscores/g.json?sid=9201482388 HTTP/1.1
+Host: adadvisor.net
+Connection: keep-alive
+Accept: */*
+vUser-Agent: Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/31.0.1650.63 Safari/537.36
+6Referer: http://www.comcast.com/?CMP=ILCXFICOMUTOL3X
+$Accept-Encoding: gzip,deflate,sdch
+!Accept-Language: en-US,en;q=0.8
+
+*‡
+HTTP/1.1 200 OK
+&Date: Mon,  24 Mar 2014 20:30:22 GMT
+Connection: close
+Server: AAWebServer
+DP3P: policyref="http://www.adadvisor.net/w3c/p3p.xml",CP="NOI NID"
+Content-Length: 156
+ Content-Type: application/json
+ž
+targusResponseHandler( { "segment": "000", "VOICE": "0", "DATA": "0", "VIDEO": "0", "CA": "0", "NSDBS": "0", "TP": "0", "VC": "0", "LV": "0", "GD": "0" } );
