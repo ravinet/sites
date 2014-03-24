@@ -1,24 +1,0 @@
-PHTTP66.220.152.19"á
- GET /elizarob/picture HTTP/1.1
-Host: graph.facebook.com
-Connection: keep-alive
-Accept: image/webp,*/*;q=0.8
-vUser-Agent: Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/31.0.1650.63 Safari/537.36
-"Referer: http://www.answers.com/
-$Accept-Encoding: gzip,deflate,sdch
-!Accept-Language: en-US,en;q=0.8
-
-*Ý
-HTTP/1.1 302 forced.302
- Access-Control-Allow-Origin: *
-=Cache-Control: private, no-cache, no-store, must-revalidate
-Content-Type: image/jpeg
-(Expires: Sat, 01 Jan 2000 00:00:00 GMT
-ZLocation: http://profile.ak.fbcdn.net/hprofile-ak-ash3/161812_1813494788_719998562_q.jpg
-Pragma: no-cache
-X-FB-Rev: 1073774
-:X-FB-Debug: 1IZ54dTtyLe6kXyURHMIIpfBKM2bkiGKHAWkeJLJzn4=
-%Date: Thu, 09 Jan 2014 00:38:47 GMT
-Connection: keep-alive
-Content-Length: 0
-
