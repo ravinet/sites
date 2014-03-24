@@ -1,0 +1,23 @@
+»HTTPS148.173.96.166"÷
+´GET /myca/shareamex/twitter/userTimeline.htm?screen_name=AmericanExpress&callback=ShareAmexTwitter1&count=3&exclude_replies=true&include_rts=false&include_entities=false HTTP/1.1
+#Host: rewards.americanexpress.com
+Connection: keep-alive
+Accept: */*
+vUser-Agent: Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/31.0.1650.63 Safari/537.36
++Referer: https://www.americanexpress.com/
+$Accept-Encoding: gzip,deflate,sdch
+!Accept-Language: en-US,en;q=0.8
+
+*È
+HTTP/1.1 200 OK
+%Date: Mon, 24 Mar 2014 20:34:50 GMT
+~Set-Cookie: SaneID=136.152.18.239-1395693290665107; Path=/; expires=Thu, 28-Mar-19 20:34:50 GMT; domain=.americanexpress.com
+X-Powered-By: Servlet/3.0
+Content-Length: 1788
+HSet-Cookie: BIGipServerme3-w-rw-shramx-a=1062342666.27021.0000; path=/
+ Keep-Alive: timeout=15, max=62
+Connection: Keep-Alive
+5Content-Type: application/javascript; charset=UTF-8
+Content-Language: en-US
+þ
+ShareAmexTwitter1([{"id_str":"448188280660832257","created_at":"Mon Mar 24 20:03:07 +0000 2014","screen_name":"AmericanExpress","profile_image_url":"http://pbs.twimg.com/profile_images/378800000830223946/9eb24e04b586c6126a0cf62fd2e90ea7_normal.png","retweet_count":19,"retweeted":false,"id":448188280660832257,"in_reply_to_user_id_str":null,"text":"Which #EveryDayMoments keep you going? Tweet w/#AmexSweeps for chance to win @DunkinDonuts giftcard Rules http://t.co/dP1ZhMgf0h NoPurNec18+","urls":[{"displayURL":"amex.co/amexsweeps","expandedURL":"http://amex.co/amexsweeps","shortenedURL":"http://t.co/dP1ZhMgf0h"}]},{"id_str":"448172703800098816","created_at":"Mon Mar 24 19:01:13 +0000 2014","screen_name":"AmericanExpress","profile_image_url":"http://pbs.twimg.com/profile_images/378800000830223946/9eb24e04b586c6126a0cf62fd2e90ea7_normal.png","retweet_count":28,"retweeted":false,"id":448172703800098816,"in_reply_to_user_id_str":null,"text":"Share sweet #EveryDayMoments w/ #AmexSweeps for a chance to win a @DunkinDonuts giftcard. Rules http://t.co/dP1ZhMgf0h NoPurNec18+","urls":[{"displayURL":"amex.co/amexsweeps","expandedURL":"http://amex.co/amexsweeps","shortenedURL":"http://t.co/dP1ZhMgf0h"}]},{"id_str":"448165190899888128","created_at":"Mon Mar 24 18:31:22 +0000 2014","screen_name":"AmericanExpress","profile_image_url":"http://pbs.twimg.com/profile_images/378800000830223946/9eb24e04b586c6126a0cf62fd2e90ea7_normal.png","retweet_count":32,"retweeted":false,"id":448165190899888128,"in_reply_to_user_id_str":null,"text":"Great #EveryDayMoments entries! Did you see our new no-annual-fee Credit Card w/rewards for EveryDay? http://t.co/equNL2h8yZ","urls":[{"displayURL":"amex.co/1mMLiu8","expandedURL":"http://amex.co/1mMLiu8","shortenedURL":"http://t.co/equNL2h8yZ"}]}])

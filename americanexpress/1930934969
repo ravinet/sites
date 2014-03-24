@@ -1,0 +1,26 @@
+ªHTTPS50.18.62.44"’
+öGET /amex/serverComponent.php?clientID=218&PageID=https%3A%2F%2Fwww.americanexpress.com%2F%3Fens_env%3D3%26e_pageId%3D7493%26deviceType%3Dlarge HTTP/1.1
+Host: nexus.ensighten.com
+Connection: keep-alive
+Accept: */*
+vUser-Agent: Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/31.0.1650.63 Safari/537.36
++Referer: https://www.americanexpress.com/
+$Accept-Encoding: gzip,deflate,sdch
+!Accept-Language: en-US,en;q=0.8
+
+*Ë
+
+HTTP/1.1 200 OK
+Server: nginx
+%Date: Mon, 24 Mar 2014 20:34:50 GMT
+Content-Type: text/javascript
+Transfer-Encoding: chunked
+Connection: keep-alive
+Cache-Control: no-cache
+Cache-Control: public
+ç	
+47f
+
+Bootstrapper._serverTime = '2014-03-24 20:33:38'; Bootstrapper._clientIP = '0.0.0.0'; var psj0 = 'https://nexus.ensighten.com/amex/prod/code/c9208fde8c68f8a931ad3e7dc526b561.js?ruleId=345773';Bootstrapper.insertScript(psj0);var psj1 = 'https://nexus.ensighten.com/amex/prod/code/5c39df2b74fcaed29d1dc7756061bfe7.js?ruleId=124663';Bootstrapper.insertScript(psj1);var psj2 = 'https://nexus.ensighten.com/amex/prod/code/87ae208462d2d32ea9ab868a8e9d9418.js?ruleId=175983';Bootstrapper.insertScript(psj2);var psj3 = 'https://nexus.ensighten.com/amex/prod/code/8ad9995d2b1adf037307b905700ffe20.js?ruleId=183420';Bootstrapper.insertScript(psj3);var psj4 = 'https://nexus.ensighten.com/amex/prod/code/b4c955842d237813f5ee8c06b9984093.js?ruleId=172833';Bootstrapper.insertScript(psj4);var psj5 = 'https://nexus.ensighten.com/amex/prod/code/81be659e6409c95912eb554c3db6c3ae.js?ruleId=163080';Bootstrapper.insertScript(psj5);var psj6 = 'https://nexus.ensighten.com/amex/prod/code/976fee0feec3f36f200373283156abde.js?ruleId=334696';Bootstrapper.loadScriptCallback(psj6, Bootstrapper.callOnPageSpecificCompletion);Bootstrapper.setPageSpecificDataDefinitionIds([])
+0
+
