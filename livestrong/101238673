@@ -1,0 +1,26 @@
+PHTTP54.243.131.152"Å
+äGET /event?a=7550209&d=1617017&y=false&s160220640=none&s160849522=false&s160892835=gc&s160966411=direct&n=http%3A%2F%2Fwww.livestrong.com%2F&u=oeu1395697218590r0.276684089563787&wxhr=true&t=1395697218640&f=627700347,637161712,649530119,650772807,651381871,651571598,656842642,657350094,671810778,673422460,674071506,675181442,689330539,723760477 HTTP/1.1
+"Host: 7550209.log.optimizely.com
+Connection: keep-alive
+vUser-Agent: Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/31.0.1650.63 Safari/537.36
+#Origin: http://www.livestrong.com
+Accept: */*
+%Referer: http://www.livestrong.com/
+$Accept-Encoding: gzip,deflate,sdch
+!Accept-Language: en-US,en;q=0.8
+
+*ú
+HTTP/1.1 200 OK
+(Access-Control-Allow-Credentials: true
+)Access-Control-Allow-Methods: POST, GET
+8Access-Control-Allow-Origin: http://www.livestrong.com
+ Content-Type: application/json
+%Date: Mon, 24 Mar 2014 21:40:19 GMT
+9P3P: CP="IDC DSP COR CURa ADMa OUR IND PHY ONL COM STA"
+Server: nginx/1.2.7
+|Set-Cookie: fixed_external_7550209_end_user_id=; Domain=.optimizely.com; expires=Thu, 01 Jan 1970 00:00:00 GMT; Max-Age=-1
+‡Set-Cookie: end_user_id=oeu1395697218590r0.276684089563787; Domain=.7550209.log.optimizely.com; expires=Thu, 21 Mar 2024 21:40:19 GMT
+Content-Length: 2
+Connection: keep-alive
+
+{}

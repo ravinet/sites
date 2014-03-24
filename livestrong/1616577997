@@ -1,0 +1,25 @@
+PHTTP
+8.37.70.24"î
+šGET /red/usync?pid=16&puid=15790522655728122491456254664005723699&url=http%3A%2F%2Fdpm.demdex.net%2Fibs%3Adpid%3D420%26dpuuid%3D%7B%7Buid%7D%7D HTTP/1.1
+Host: su.addthis.com
+Connection: keep-alive
+Accept: image/webp,*/*;q=0.8
+vUser-Agent: Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/31.0.1650.63 Safari/537.36
+8Referer: http://fast.dm.demdex.net/dest4.html?d_nsid=0
+$Accept-Encoding: gzip,deflate,sdch
+!Accept-Language: en-US,en;q=0.8
+
+*³
+HTTP/1.1 302 Found
+%Date: Mon, 24 Mar 2014 21:40:20 GMT
+.Cache-Control: max-age=0, no-cache, no-store
+Pragma: no-cache
+cSet-Cookie: uid=5330a6446d2d1df7;Path=/;Domain=.addthis.com;Expires=Wed, 23-Mar-2016 21:40:20 GMT
+|Set-Cookie: um=g.'15790522655728122491456254664005723699';Path=/;Domain=.addthis.com;Expires=Wed, 23-Mar-2016 21:40:20 GMT
+(Expires: Thu, 01 Jan 1970 00:00:00 GMT
+AP3P: policyref="/w3c/p3p.xml", CP="NON ADM OUR DEV IND COM STA"
+>Set-Cookie: di=deleted;Expires=Thu, 01-Jan-1970 00:00:00 GMT
+?Set-Cookie: uid=deleted;Expires=Thu, 01-Jan-1970 00:00:00 GMT
+FLocation: http://dpm.demdex.net/ibs:dpid=420&dpuuid=5330a6446d2d1df7
+Connection: close
+

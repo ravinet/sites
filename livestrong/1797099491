@@ -1,0 +1,25 @@
+PHTTP184.169.176.95"ê
+kGET /v1/profile.json?api_key=6332f8b7316a4d1284e9c1217a367347&callback=Demdex.parseBizo&3pc=true HTTP/1.1
+Host: api.bizographics.com
+Connection: keep-alive
+Accept: */*
+vUser-Agent: Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/31.0.1650.63 Safari/537.36
+8Referer: http://fast.dm.demdex.net/dest4.html?d_nsid=0
+$Accept-Encoding: gzip,deflate,sdch
+!Accept-Language: en-US,en;q=0.8
+5Cookie: BizoID=7c3f12a3-4715-4624-b5d6-af87a9d3ceaa
+
+*´
+HTTP/1.1 200 OK
+Cache-Control: no-cache
+ Content-Type: application/json
+%Date: Mon, 24 Mar 2014 21:40:20 GMT
+ZP3P: CP="NON DSP COR CURa ADMo DEVo TAIo PSAo PSDo OUR DELa IND PHY ONL UNI COM NAV DEM"
+Pragma: no-cache
+Server: nginx/1.2.0
+tSet-Cookie: BizoID=7c3f12a3-4715-4624-b5d6-af87a9d3ceaa;Version=0;Domain=.bizographics.com;Path=/;Max-Age=15768000
+ÜSet-Cookie: BizoData=vipSsUXrfhMAyjSpNgk6T39Qb1MaQBj6W3v2Fn8dhuBYqwKPXXDYVmhseYQgipMipNhnYraXkoBpVipdkf8kozH7KY2Z9is3qnMhjaj5XcunNcMDa7Re6IGD4lLnlRyZLIpLQAd6xyMUDLG5gCh8GmE4wmnnS9ty8xAR0zwQvdHhisgnnwCNICmFKGa6pvfuPrL6gLlop56fA3rHo818ishVohR4Lbvp0ZFdvW6klv3wQQEmtQctxq0nRhpSNqcipKwip07isn7qVakHis6aisV7T0RDp8ZEfWFHAPucDeT21H2AUlegZZd5ip8Siir5N08Sj4bIddpEGisTfkPzrOvT6EHuRZNgOOtPITNipYkdAfcKDTxUXYJQ2LgKxLXhh5HipMEouPDfgA2Yna3zMsUrkIKQl5GJeOFNTtgFsDSqDpxIm1M9ogxrKYn5g9AtAnv6KUXLDnHii2Cip8QsPMip8WtDDSUrkHb2iiJ7HeWfeGJhipkI3X1gYWgt9k4kRqJ6SSqq2SAFMY5XJMzMw5Ol6klR2DC6H52tqFg8NwiiE08lhrXsbsdHx1KWrdzgWA16LrnXis1kMWjuipmdSXGPWZOGYzFu66CUGK2RSvdeUD9xDLOUrETKPqnpBiiyipBisnWb0NrpeKvDEFXGnScisvtbeQ3kSUswkusmjE5cmLaumWmsG0t8RhK0iiBlTA9lUkQBXDCe4W2moTMMdEAfojydtzU0ObMrxnuKHdsnRGwuisv9t6lU2XYDbm6g0RbmCYcCFp4UaMHFipcKz0lXg8MBAcYvQJipLd4ekU1f7MrQxrTtB1Wxn268X1nippBqdvpctK2Np9MTZe7RE8f92f73XVpIxErLipXj6yhXJRuQoVLdmQFsQismPAipVgJLSTTyWGtexux0fHUpat3OBYDXouudfisWQxaO76Z1JcY9Zk4ZjMW7roJQYrZFK915QP3EMs5SsRMoipqekGLL4HipdZvQ2ul4q8MQVcadJzipip1t5DeRJSzCS6yaZDNmdhYte0;Version=0;Domain=.bizographics.com;Path=/;Max-Age=15768000
+Content-Length: 427
+Connection: keep-alive
+­
+Demdex.parseBizo({"bizographics":{"company_size":{"code":"xlarge","name":"XLarge (5000+)"},"group":{"code":"business_professional","name":"Business Professional"},"industry":[{"code":"education","name":"Education"},{"code":"education_colleges_universities","name":"Education Colleges & Universities","parent_code":"education"}],"location":{"code":"california","name":"USA - California"}},"third_pc_accepted":"true","usage":1});
