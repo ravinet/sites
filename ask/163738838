@@ -1,0 +1,457 @@
+PHTTP72.21.91.19"·
+,GET /pub/ask.com/zm.js?14.3.24.16 HTTP/1.1
+Host: cdn.beanstock.com
+Connection: keep-alive
+Accept: */*
+vUser-Agent: Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/31.0.1650.63 Safari/537.36
+$Accept-Encoding: gzip,deflate,sdch
+!Accept-Language: en-US,en;q=0.8
+
+*öP
+HTTP/1.1 200 OK
+Accept-Ranges: bytes
+Cache-Control: max-age=86400
+&Content-Type: application/javascript
+%Date: Mon, 24 Mar 2014 20:08:34 GMT
+*Etag: "2fad88f8dd6e59350d6746fa383d0136"
+(Expires: Tue, 25 Mar 2014 20:08:34 GMT
+.Last-Modified: Mon, 17 Mar 2014 22:56:38 GMT
+Server: ECS (lax/2850)
+Nx-amz-id-2: sMDcdircgmXQioLyUuLRqm9uhfjf5LPNrANlw11Uy55NIJ3F0yjS/DX7rFCt2e4w
+…x-amz-meta-s3cmd-attrs: uid:107/gname:nogroup/uname:jenkins/gid:65534/mode:33188/mtime:1395097025/atime:1395097030/ctime:1395097025
+$x-amz-request-id: 9279CBC90679F251
+X-Cache: HIT
+Content-Length: 9745
+“L
+/* jshint -W033, -W014, -W099 */
+(function(define){define(function(){
+return {
+    apn: 1245323,
+    rmx: 4227684,
+    cost: 2250,
+    position: 'above',
+    slot: 'atf',
+    "728x90":{oxm:414308},
+    "300x250":{
+ 	dfp: (function(rnd){
+		return rnd < 1000 ?
+			"11544728/Ask.com//display//ask.com//display//atf" :
+			"4974845/Ask/display/ask.com"
+	})(Math.floor(Math.random()*1e2))
+,
+    	oxm:414313
+    },
+    "ask.com" : {
+      ixp: "150817",
+      "/" : {
+         "position" : "above",
+         "slot" : "atf"
+      },
+      "/asection" : {
+         dfp : "11544728/Ask.com//display//ask.com//asection",
+         "position" : "above",
+         "apn" : 2261963,
+         "rmx" : 5386044,
+         "slot" : "atf",
+         "300x250" : {
+          "omk" : 547934,
+          "oxm" : 547888
+         },
+         "728x90" : {
+          "omk" : 547935,
+          "oxm" : 547889
+         }
+      },
+      "/asection/btf" : {
+         dfp : "11544728/Ask.com//display//ask.com//asection//btf",
+         "position" : "below",
+         "rmx" : 5387954,
+         "apn" : 2261964,
+         "slot" : "btf",
+         "160x600" : {
+            "omk" : 547936,
+            "oxm" : 547890
+         },
+         "728x90" : {
+            "omk": 547938,
+            "oxm": 547892
+         },
+         "300x250" : {
+            "oxm" : 547891,
+            "omk" : 547937
+         }
+      },
+      "/homepage" : {
+        dfp : "11544728/Ask.com//display//ask.com//homepage",
+        "position" : "above",
+        "rmx" : 2261994,
+        "apn" : 2261962,
+        "slot" : "atf",
+        "300x250" : {
+          "omk" : 547933,
+          "oxm" : 547887
+        }
+      },
+      "/search" : {
+        dfp: "11544728/Ask.com//display//ask.com//search",
+        "position": "above",
+        "rmx": 5424164,
+        "apn": 2305199,
+        "slot":"atf",
+         "728x90" : {
+            "omk": 550490,
+            "oxm": 550494
+         },
+         "300x250" : {
+            "oxm" : 550493,
+            "omk" : 550489
+         }
+      }
+    },
+    "jp.ask.com":{
+      ixp:null,
+      stk:null,
+      cost: 0.95,
+      strategy: "parallel",
+      "/asection" : {
+         dfp : "11544728/Ask.com//display//jp.ask.com//asection",
+         "position" : "above",
+         "rmx" : null,
+         "apn" : 2261974,
+         "slot" : "atf",
+         '300x250':{
+            oxm: 547925,
+            omk : null
+          }
+      },
+      "/asection/btf" : {
+         dfp : "11544728/Ask.com//display//jp.ask.com//asection//btf",
+         "position" : "below",
+         "rmx" : null,
+         "apn" : 2261975,
+         "slot" : "btf",
+         '300x250':{
+            oxm: 547926,
+            omk : null
+          }
+      },
+      "/qa" : {
+         dfp : "11544728/Ask.com//display//jp.ask.com//qa",
+         "position" : "above",
+         "rmx" : null,
+         "apn" : 2261972,
+         "slot" : "atf",
+         '300x250':{
+            oxm: 547923,
+            omk : null
+          }
+      },
+      "/qa/btf" : {
+         dfp : "11544728/Ask.com//display//jp.ask.com//qa//btf",
+         "position" : "below",
+         "rmx" : null,
+         "apn" : 2261973,
+         "slot" : "btf",
+         '300x250':{
+            oxm: 547924,
+            omk : null
+          }
+      },
+
+      '728x90':{
+        oxm:null
+      }
+    },
+   "intl.ask.com" : {
+      cost: 0.95,
+      "/asection" : {
+         dfp : "11544728/Ask.com//display//intl.ask.com//asection",
+         "position" : "above",
+         "rmx" : 4880413,
+         "apn" : 1687240,
+         "slot" : "atf"
+      },
+	   "728x90" : {
+		   "oxm" : 472419,
+		   "omk" : 545918
+	   },
+	   "300x250" : {
+		   "oxm" : 472418,
+		   "omk" : 545919
+	   },
+     "468x60" : {
+       "oxm" : 547929,
+       "omk" : 547967
+     },
+     "/asection/btf" : {
+         dfp : "11544728/Ask.com//display//intl.ask.com//asection//btf",
+         "position" : "below",
+         "rmx" : 5387978,
+         "apn" : 2261979,
+         "slot" : "btf",
+         "728x90" : {
+            "oxm" : 547932,
+            "omk" : 547970
+         },
+         "300x250" : {
+            "oxm" : 547931,
+            "omk" : 547969
+         },
+         "160x600" : {
+            "oxm" : 547930,
+            "omk" : 547968
+         }
+
+     },
+     "/wiki" :{
+        dfp: "11544728/Ask.com//display//intl.ask.com//wiki",
+        "position" : "above",
+        "rmx" : 5387976,
+        "apn" : 2261976,
+        "slot" : "atf",
+         "300x250" : {
+            "oxm" : 547927,
+            "omk" : 547965
+         }
+     },
+     "/wiki/btf" :{
+        dfp: "11544728/Ask.com//display//intl.ask.com//wiki//btf",
+        "position" : "below",
+        "rmx" : 5387977,
+        "apn" : 2261977,
+        "slot" : "btf",
+         "300x250" : {
+            "oxm" : 547928,
+            "omk" : 547966
+         }
+     },
+      "/search" : {
+        dfp: "11544728/Ask.com//display//intl.ask.com//search",
+        "position": "above",
+        "rmx": 5424165,
+        "apn": 2305233,
+        "slot":"atf",
+         "728x90" : {
+            "omk": 550492,
+            "oxm": 550500
+         },
+         "300x250" : {
+            "oxm" : 550499,
+            "omk" : 550491
+         }
+      }
+   },
+   "japan.ask.com" : {
+      cost: 0.95,
+      dfp: null,
+      "rmx" :  null,
+      "apn" : 1687234,
+      "/asection" : {
+         "position" : "above",
+         "slot" : "atf"
+      },
+	   "728x90" : {
+		   "oxm" : 472415,
+		   "omk" : 545913
+	   },
+	   "300x250" : {
+		   "oxm" : 472414,
+		   "omk" : 545914
+	   }
+   },
+   "uk.ask.com" : {
+      cost: 0.95,
+      "/asection" : {
+         dfp: "11544728/Ask.com//display//uk.ask.com//asection",
+         "position" : "above",
+         "rmx" :  4880364,
+         "apn" :  2261968,
+         "slot" : "atf"
+      },
+	   "728x90" : {
+		   "oxm" : 472417,
+		   "omk" : 545915
+	   },
+	   "300x250" : {
+		   "oxm" : 472416,
+		   "omk" : 545916
+	   },
+     "468x60" : {
+      "oxm" : 547918,
+      "omk" : 547949
+     },
+     "/asection/btf" : {
+       "dfp" : "11544728/Ask.com//display//uk.ask.com//asection//btf",
+       "position" : "below",
+       "rmx" :  5387971,
+       "apn" :  2261969,
+       "slot" : "btf",
+       "728x90" : {
+         "oxm" : 547921,
+         "omk" : 547952
+       },
+       "300x250" : {
+         "oxm" : 547920,
+         "omk" : 547951
+       },
+       "160x600" : {
+         "oxm" : 547919,
+         "omk" : 547950
+       }
+     },
+     "/homepage" : {
+       "dfp" : "11544728/Ask.com//display//uk.ask.com//homepage",
+       "position" : "above",
+       "slot" : "atf",
+       "rmx" : 5387970,
+       "apn" : 2261967,
+       "300x250" : {
+         "oxm" : 547917,
+         "omk" : 547948
+       }
+     }
+   },
+   "life123.com" : {
+    "/homepage" : {
+      "position":"above",
+      "slot":"atf",
+      "dfp": "11544728/Ask.com//display//life123.com//homepage",
+      "rmx": 5387957,
+      "apn": 2261965,
+      "728x90" : {
+        "oxm" : 547915,
+        "omk" : 547946
+      }
+    },
+    "/articlepages" : {
+      "position":"above",
+      "slot":"atf",
+      "dfp": "11544728/Ask.com//display//life123.com//articlepages",
+      "rmx": 5387956,
+      "apn": 2261966,
+      "300x250" : {
+        "oxm" : 547916,
+        "omk" : 547947
+      }
+    }
+   },
+   "us.ask.com" : {
+      "/wiki" : {
+         "position" : "above",
+		 "dfp": (function(rnd){
+			return rnd < 2 ?
+				"11544728//Ask.com//display//us.ask.com//wiki//atf" :
+				"/4974845/Ask/display/us.ask.com/wiki"
+			})(Math.floor(Math.random()*1e2)),
+         "rmx" : 4880349,
+         "apn" : 1687232,
+         "slot" : "atf",
+		 "728x90" : {
+			 "oxm" : 545901,
+			 "omk" : 545911
+		 },
+		 "300x250" : {
+			 "oxm" : 545902,
+			 "omk" : 545912
+		 }
+      },
+      "/community" : {
+		"dfp": (function(rnd){
+			return rnd < 200 ?
+				"11544728/Ask.com//display//us.ask.com//community" :
+				"/4974845/Ask/display/us.ask.com/community"
+			})(Math.floor(Math.random()*1e2)),
+        "position" : "above",
+        "rmx" : 4880351,
+        "apn" : 1687233,
+        "slot" : "atf",
+		"728x90" : {
+			"oxm" : 545903,
+			"omk" : 545909
+		},
+		"300x250" : {
+			"oxm" : 545904,
+			"omk" : 545910
+		}
+      },
+      "728x90" : {
+         "oxm" : 472413
+      },
+      "300x250" : {
+         "oxm" : 472412
+      },
+      "160x600" : {
+      	"oxm" : 500681
+      }
+   },
+   "urbanspoon.com" : {
+      "/asection/btf" : {
+         "dfp" : "11544728/Ask.com//display//urbanspoon.com//asection//btf",
+         "position" : "below",
+         "rmx" : 5234756,
+         "apn" : 2093768,
+	 	 "oxm": null,
+         "slot" : "btf",
+		  "728x90" : {
+			  "oxm" : 545925,
+			  "omk" : 545929
+		  },
+		  "300x250" : {
+			  "oxm" : 545927,
+			  "omk" : 545930
+		  }
+      },
+      "/asection" : {
+        "dfp" : "11544728/Ask.com//display//urbanspoon.com//asection",
+         "position" : "above",
+         "rmx" : 5234744,
+         "apn" : 2093749,
+	 	     "oxm": null,
+         "slot" : "atf"
+      },
+	  "300x250" : {
+		  "oxm" : 545926,
+		  "omk" : 545928
+	  }
+   },
+   "pronto.com" : {
+      "/asection/btf" : {
+         "position" : "below",
+         "rmx" : 5234758,
+         "apn" : 2093843,
+	 	 "oxm": null,
+         "slot" : "btf",
+		  "300x250" : {
+			  "oxm" : 545945,
+			  "omk" : 545949
+		  },
+		  "160x600" : {
+			  "oxm" : 545946,
+			  "omk" : 545950
+		  }
+	  },
+      "/asection" : {
+         "position" : "above",
+         "rmx" : 5234757,
+         "apn" : 2093802,
+	 "oxm": null,
+         "slot" : "atf"
+      },
+	   "728x90" : {
+		   "oxm" : 545943,
+		   "omk" : 545947
+	   },
+	   "300x250" : {
+		   "oxm" : 545944,
+		   "omk" : 545948
+	   }
+   }
+
+
+}
+
+})})(function(f){var tag = this['bsm_tag']= this['bsm_tag'] || {};tag['zonemap']= f();})
+;(function(c){
+	c.set('bidder_priority/oxm',5)
+})(this.BSM&&this.BSM.config.namespace('auction'));
+

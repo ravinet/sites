@@ -1,0 +1,59 @@
+PHTTP173.241.250.12"÷
+éGET /w/1.0/arj?mi=cb1b03de-a78a-4689-5e38-737fab8bb5b8&mn=1&mc=1&cc=1&auid=547887&ju=http%3A%2F%2Fwww.ask.com%2F&callback=c71609407 HTTP/1.1
+Host: tag.bstk.co
+Connection: keep-alive
+Accept: */*
+vUser-Agent: Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/31.0.1650.63 Safari/537.36
+$Accept-Encoding: gzip,deflate,sdch
+!Accept-Language: en-US,en;q=0.8
+@Cookie: OX_u=b1ae05b8-d659-0f3a-c9d8-bdc8219e3438_a_1396901314
+
+*ı 
+HTTP/1.1 200 OK
+Vary: Accept
+êSet-Cookie: OX_u=8bbe61d2-022b-090b-e176-125a000cc8a5_m_1396901314; Version=1; Expires=Tue, 24-Mar-2015 20:08:35 GMT; Max-Age=31536000; Path=/
+CServer: MochiWeb/1.1 WebMachine/1.10.0 (never breaks eye contact)
+Pragma: no-cache
+#P3P: CP="CUR ADM OUR NOR STA NID"
+(Expires: Mon, 26 Jul 1997 05:00:00 GMT
+%Date: Mon, 24 Mar 2014 20:08:35 GMT
+ Content-Type: application/json
+Content-Length: 3693
+-Cache-Control: private, max-age=0, no-cache
+Connection: close
+Ô
+c71609407({"ads":
+ {
+  "version": 1,
+  "count": 1,
+  "pixels":"http://us-u.openx.net/w/1.0/pd?plm=5&ph=40a5620c-a5a1-4f82-bf4e-6125ab877d1d",
+  "ad": [
+        {
+         "adunitid":547887,
+         "adid":1548666,
+         "type":"html",
+         "html":"<div id='beacon_R7oyfyUfK2U5voAcQBq0ZNEucz' style='position: absolute; left: 0px; top: 0px; visibility: hidden;'><img src='http://tag.bstk.co/w/1.0/ri?ts=1fHNpZD04NjAzNnxyYWlkPWVlMjgxZTg0LTVjZDItNGY4Zi05YjNjLTJhZTFkOGYxMWNmMnxhdWlkPTU0Nzg4N3x1cj1PVzFBZmxDbHF0fGFzPTMwMHgyNTB8YWlkPTE1NDg2NjZ8YXc9MTQ0MHxwdWI9MTE0OTMyfGF1bT1ETUlELldFQnxsaWQ9OTA4NjYyfHU9MXx0PTR8YXA9MnxyaWQ9NDk4MmE2MDQtMmI4Yi00MzlhLWJiZmUtMzQxYmQ4MGYzOGI3fG9pZD0xOTYyOTl8Ym09QlVZSU5HLk5PTkdVQVJBTlRFRUR8cD0xMTAwfHBjPVVTRHxhYz1VU0R8cG09UFJJQ0lORy5DUE18cnQ9MTM5NTY5MTcxNXxwcj0xMTAwfGFkdj0xMTUwNDY'/></div><script src=\"http://a1.interclick.com/getInPageJS.aspx?a=51&b=53792&cid=635001577554068701\"> </script><noscript><A HREF=\"http://a1.interclick.com/getInPageTarget.aspx?a=51&b=53792&cid=635001577554068701\"> <img src=\"http://a1.interclick.com/getInPageImage.aspx?a=51&b=53792&cid=635001577554068701\" border='0'></a></noscript>",
+         "is_fallback":0,
+         "ts":"1fHNpZD04NjAzNnxyYWlkPWVlMjgxZTg0LTVjZDItNGY4Zi05YjNjLTJhZTFkOGYxMWNmMnxhdWlkPTU0Nzg4N3x1cj1PVzFBZmxDbHF0fGFzPTMwMHgyNTB8YWlkPTE1NDg2NjZ8YXc9MTQ0MHxwdWI9MTE0OTMyfGF1bT1ETUlELldFQnxsaWQ9OTA4NjYyfHU9MXx0PTR8YXA9MnxyaWQ9NDk4MmE2MDQtMmI4Yi00MzlhLWJiZmUtMzQxYmQ4MGYzOGI3fG9pZD0xOTYyOTl8Ym09QlVZSU5HLk5PTkdVQVJBTlRFRUR8cD0xMTAwfHBjPVVTRHxhYz1VU0R8cG09UFJJQ0lORy5DUE18cnQ9MTM5NTY5MTcxNXxwcj0xMTAwfGFkdj0xMTUwNDY",
+         "cpipc":0,
+         "pub_rev":"1100",
+         "adv_id":":115046",
+         "brand_id":"",
+         "creative":[
+           {
+             "width":"300",
+             "height":"250",
+             "target":"_blank",
+             "mime":"text/html",
+             "media": "<script src=\"http://a1.interclick.com/getInPageJS.aspx?a=51&b=53792&cid=635001577554068701\"> </script><noscript><A HREF=\"http://a1.interclick.com/getInPageTarget.aspx?a=51&b=53792&cid=635001577554068701\"> <img src=\"http://a1.interclick.com/getInPageImage.aspx?a=51&b=53792&cid=635001577554068701\" border='0'></a></noscript>",
+             "tracking":{
+               "impression":"http://tag.bstk.co/w/1.0/ri?ts=1fHNpZD04NjAzNnxyYWlkPWVlMjgxZTg0LTVjZDItNGY4Zi05YjNjLTJhZTFkOGYxMWNmMnxhdWlkPTU0Nzg4N3x1cj1PVzFBZmxDbHF0fGFzPTMwMHgyNTB8YWlkPTE1NDg2NjZ8YXc9MTQ0MHxwdWI9MTE0OTMyfGF1bT1ETUlELldFQnxsaWQ9OTA4NjYyfHU9MXx0PTR8YXA9MnxyaWQ9NDk4MmE2MDQtMmI4Yi00MzlhLWJiZmUtMzQxYmQ4MGYzOGI3fG9pZD0xOTYyOTl8Ym09QlVZSU5HLk5PTkdVQVJBTlRFRUR8cD0xMTAwfHBjPVVTRHxhYz1VU0R8cG09UFJJQ0lORy5DUE18cnQ9MTM5NTY5MTcxNXxwcj0xMTAwfGFkdj0xMTUwNDY",
+               "inview":"http://tag.bstk.co/w/1.0/rvi?ts=1fHNpZD04NjAzNnxyYWlkPWVlMjgxZTg0LTVjZDItNGY4Zi05YjNjLTJhZTFkOGYxMWNmMnxhdWlkPTU0Nzg4N3x1cj1PVzFBZmxDbHF0fGFzPTMwMHgyNTB8YWlkPTE1NDg2NjZ8YXc9MTQ0MHxwdWI9MTE0OTMyfGF1bT1ETUlELldFQnxsaWQ9OTA4NjYyfHU9MXx0PTR8YXA9MnxyaWQ9NDk4MmE2MDQtMmI4Yi00MzlhLWJiZmUtMzQxYmQ4MGYzOGI3fG9pZD0xOTYyOTl8Ym09QlVZSU5HLk5PTkdVQVJBTlRFRUR8cD0xMTAwfHBjPVVTRHxhYz1VU0R8cG09UFJJQ0lORy5DUE18cnQ9MTM5NTY5MTcxNXxwcj0xMTAwfGFkdj0xMTUwNDY",
+               "click":"http://tag.bstk.co/w/1.0/rc?ts=1fHNpZD04NjAzNnxyYWlkPWVlMjgxZTg0LTVjZDItNGY4Zi05YjNjLTJhZTFkOGYxMWNmMnxhdWlkPTU0Nzg4N3x1cj1PVzFBZmxDbHF0fGFzPTMwMHgyNTB8YWlkPTE1NDg2NjZ8YXc9MTQ0MHxwdWI9MTE0OTMyfGF1bT1ETUlELldFQnxsaWQ9OTA4NjYyfHU9MXx0PTR8YXA9MnxyaWQ9NDk4MmE2MDQtMmI4Yi00MzlhLWJiZmUtMzQxYmQ4MGYzOGI3fG9pZD0xOTYyOTl8Ym09QlVZSU5HLk5PTkdVQVJBTlRFRUR8cD0xMTAwfHBjPVVTRHxhYz1VU0R8cG09UFJJQ0lORy5DUE18cnQ9MTM5NTY5MTcxNXxwcj0xMTAwfGFkdj0xMTUwNDY"
+             }
+           }
+         ]
+        }
+  ]
+ }
+});

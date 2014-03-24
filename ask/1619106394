@@ -1,0 +1,19 @@
+PHTTP50.18.252.219"˜
+ØGET /v1/profile.redirect?api_key=595bae8dbc0c4c42b4544e688b10c002&callback_url=http%3A//beacon.krxd.net/data.gif%3F_kdpid%3D890a6228-04af-4630-85b6-0b49dee6157f%26pid%3D0f61e6a9-fba5-4842-9307-d0770a82362b HTTP/1.1
+Host: api.bizographics.com
+Connection: keep-alive
+Accept: image/webp,*/*;q=0.8
+vUser-Agent: Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/31.0.1650.63 Safari/537.36
+Referer: http://www.ask.com/
+$Accept-Encoding: gzip,deflate,sdch
+!Accept-Language: en-US,en;q=0.8
+
+*ˆ
+HTTP/1.1 302 Found
+%Date: Mon, 24 Mar 2014 20:08:34 GMT
+ùLocation: http://api.bizographics.com/v1/profile.redirect?api_key=595bae8dbc0c4c42b4544e688b10c002&callback_url=http%3A//beacon.krxd.net/data.gif%3F_kdpid%3D890a6228-04af-4630-85b6-0b49dee6157f%26pid%3D0f61e6a9-fba5-4842-9307-d0770a82362b&3pc=true
+Server: nginx/1.2.0
+‚Set-Cookie: BizoID=6930f9dd-9816-44a7-9f20-25dd18b65e82; Domain=.bizographics.com; Expires=Tue, 23-Sep-2014 08:08:34 GMT; Path=/
+Content-Length: 0
+Connection: keep-alive
+
