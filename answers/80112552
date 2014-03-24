@@ -1,0 +1,33 @@
+PHTTP199.27.79.136"”
+iGET /index.php?ub=JJ5rTBEEOPM0FYSRFX3YfY_e-M3bEmeilVmFKJcrwzstqc0QLsK2ECYDIG3ojuynfnmZrwHGLnk* HTTP/1.1
+Host: www.dsply.com
+Connection: keep-alive
+Accept: */*
+vUser-Agent: Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/31.0.1650.63 Safari/537.36
+"Referer: http://www.answers.com/
+$Accept-Encoding: gzip,deflate,sdch
+!Accept-Language: en-US,en;q=0.8
+
+*Ö
+HTTP/1.1 200 OK
+Server: Apache
+(Expires: Thu, 19 Nov 1981 08:52:00 GMT
+OCache-Control: no-store, no-cache, must-revalidate, post-check=0, pre-check=0
+Pragma: no-cache
+:Set-Cookie: PHPSESSID=n0lne3cct3oubbnorvl8cj0e70; path=/
+ƒSet-Cookie: ub_uuid=0acb8bf3-ad18-4a1a-90c4-72956ac915b5; expires=Sun, 24-Mar-2024 20:32:48 GMT; path=/; domain=dsply.com; secure
+^Set-Cookie: nitpo=2; expires=Sun, 24-Mar-2024 20:32:48 GMT; path=/; domain=dsply.com; secure
+ŠP3P: policyref="http://www.dsply.com/xml/p3p.xml", CP="CURa ADMa DEVa PSAo PSDo OUR IND UNI PUR INT DEM STA PRE COM NAV OTC NOI DSP COR"
+Content-Type: text/javascript
+Content-Length: 65
+Accept-Ranges: bytes
+%Date: Mon, 24 Mar 2014 20:32:48 GMT
+Via: 1.1 varnish
+Connection: keep-alive
+ X-Served-By: cache-lax1421-LAX
+X-Cache: MISS
+X-Cache-Hits: 0
+)X-Timer: S1395693168.755195856,VS0,VE90
+Vary: Accept-Encoding
+C
+_dsply_callback({"uuid":"0acb8bf3-ad18-4a1a-90c4-72956ac915b5"});

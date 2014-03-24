@@ -1,0 +1,27 @@
+»HTTPS31.13.70.81"™
+ðGET /connect/ping?client_id=137767829572142&domain=www.answers.com&origin=1&redirect_uri=http%3A%2F%2Fstatic.ak.facebook.com%2Fconnect%2Fxd_arbiter%2FLEdxGgtB9cN.js%3Fversion%3D40%23cb%3Df2af1f1ce4%26domain%3Dwww.answers.com%26origin%3Dhttp%253A%252F%252Fwww.answers.com%252Ff5ab23eac%26relation%3Dparent&response_type=token%2Csigned_request%2Ccode&sdk=joey HTTP/1.1
+Host: www.facebook.com
+Connection: keep-alive
+TAccept: text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8
+vUser-Agent: Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/31.0.1650.63 Safari/537.36
+UReferer: http://www.answers.com/solo/social/fbappinit/initjs?app_id=137767829572142
+$Accept-Encoding: gzip,deflate,sdch
+!Accept-Language: en-US,en;q=0.8
+
+*×
+
+HTTP/1.1 302 
+Ócontent-security-policy: default-src *;script-src https://*.facebook.com http://*.facebook.com https://*.fbcdn.net http://*.fbcdn.net *.facebook.net *.google-analytics.com *.virtualearth.net *.google.com 127.0.0.1:* *.spotilocal.com:* chrome-extension://lifbcibllhkdhoafpjfnlhfpfgnpldfl 'unsafe-inline' 'unsafe-eval' https://*.akamaihd.net http://*.akamaihd.net *.atlassolutions.com;style-src * 'unsafe-inline';connect-src https://*.facebook.com http://*.facebook.com https://*.fbcdn.net http://*.fbcdn.net *.facebook.net *.spotilocal.com:* https://*.akamaihd.net ws://*.facebook.com:* http://*.akamaihd.net https://fb.scanandcleanlocal.com:* *.atlassolutions.com http://attachment.fbsbx.com https://attachment.fbsbx.com;
+=Cache-Control: private, no-cache, no-store, must-revalidate
+(Content-Type: text/html; charset=utf-8
+%Date: Mon, 24 Mar 2014 20:32:50 GMT
+(Expires: Sat, 01 Jan 2000 00:00:00 GMT
+ÎLocation: http://static.ak.facebook.com/connect/xd_arbiter/LEdxGgtB9cN.js?version=40#cb=f2af1f1ce4&domain=www.answers.com&origin=http%3A%2F%2Fwww.answers.com%2Ff5ab23eac&relation=parent&error=unknown_user
+Pragma: no-cache
+&Strict-Transport-Security: max-age=0
+!X-Content-Type-Options: nosniff
+X-XSS-Protection: 0
+:X-FB-Debug: 6Ko1msWbzev/Axwo5yyTjj6e8MRlDLc6x4KWMLNSi4E=
+Connection: keep-alive
+Content-Length: 0
+
