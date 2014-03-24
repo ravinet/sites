@@ -1,29 +1,0 @@
-PHTTP58.68.146.92"ç
-\GET /main/s?user=people|homepage|2013tonglan06&db=people&border=0&local=yes&js=ie HTTP/1.1
-Host: pmm.people.com.cn
-Connection: keep-alive
-Accept: */*
-vUser-Agent: Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/31.0.1650.63 Safari/537.36
-$Referer: http://www.people.com.cn/
-$Accept-Encoding: gzip,deflate,sdch
-!Accept-Language: en-US,en;q=0.8
-
-*é
-HTTP/1.1 200 OK
-%Date: Thu, 09 Jan 2014 00:57:53 GMT
-Server: Apache/2.2.22 (Unix)
-rSet-Cookie: ALLYESID4=07912991D9B48F88;expires=Wednesday, 02-Nov-2099 00:00:00 GMT;path=/;domain=.people.com.cn;
-P3P: CP="OTI PSA OUR"
-#Cache-Control: no-store, no-cache
-Expires: -1
-Content-Length: 679
-Connection: close
-Content-Type: text/html
-©
-document.write("<SCRIPT LANGUAGE=\"Javascript\">\n");
-document.write("ADFHOST5193=\"http://pmm.people.com.cn\";\n");
-document.write("ADFCID5193=1052;\n");
-document.write("ADFBID5193=5193;\n");
-document.write("ADFUSER5193=\"http://pmm.people.com.cn/c?d=people&i=z1052,207380,5193&k=&p=0&v=73891720&rf=http%3A%2F%2Fwww%2Epeople%2Ecom%2Ecn%2F&u=\";\n");
-document.write("</SCR"+"IPT>\n");
-document.write("<script>var mediav_ad_pub = 'cHME9n_1021879';var mediav_ad_width = '1000';var mediav_ad_height = '90';var mediav_ad_logo = false;</Scr"+"ipt><script type=\"text/javascript\" language=\"javascript\" charset=\"utf-8\"  src=\"http://static.mediav.com/js/mvf_g2.js\"></Scr"+"ipt>");

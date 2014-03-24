@@ -1,45 +1,0 @@
-PHTTP58.68.146.92"
-UGET /main/s?user=people|homepage|2013juxing03&db=people&border=0&local=yes HTTP/1.1
-Host: pmm.people.com.cn
-Connection: keep-alive
-TAccept: text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8
-vUser-Agent: Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/31.0.1650.63 Safari/537.36
-$Referer: http://www.people.com.cn/
-$Accept-Encoding: gzip,deflate,sdch
-!Accept-Language: en-US,en;q=0.8
->Cookie: _weather_ip_c_code=72509; ALLYESID4=07912991D9F90F98
-
-*Ë
-HTTP/1.1 200 OK
-%Date: Thu, 09 Jan 2014 00:57:56 GMT
-Server: Apache/2.2.22 (Unix)
-P3P: CP="OTI PSA OUR"
-#Cache-Control: no-store, no-cache
-Expires: -1
-Content-Length: 1239
-Connection: close
-Content-Type: text/html
-Ù	
-<html><head><meta http-equiv="cache-control" content="no-cache"></head><body style="BACKGROUND-COLOR:transparent">
-<SCRIPT LANGUAGE="Javascript">
-ADFHOST5234="http://pmm.people.com.cn";
-ADFCID5234=1055;
-ADFBID5234=5234;
-ADFUSER5234="http://pmm.people.com.cn/c?d=people&i=z1055,206460,5234&k=&p=0&v=76535173&rf=http%3A%2F%2Fwww%2Epeople%2Ecom%2Ecn%2F&u=";
-</SCRIPT>
-<script language=javascript src="http://pmm.people.com.cn/bnnr/alysxc_v01.js"></script>
-<script language="javascript">
-var flash_fl14010715045556=1;
-var flash_wid14010715045556=340;
-var flash_hei14010715045556=90;
-var flash_adr14010715045556="http://www.people.com.cn/adv/landiaoc30107.swf";
-var flash_trasparent14010715045556 = 0;
-var clickdiv14010715045556=1;
-var flashparam14010715045556="CLKURL";
-var flashClkTag14010715045556=1;</script>
-<SCRIPT LANGUAGE="JavaScript">
-function alysxcf(u,w,h,p){if(!p)p=0;var d="xc"+Math.ceil(Math.random()*1000000);document.write("<div id="+d+"></div>");
-p=(flash_trasparent14010715045556)?null:1;
-alysxc(u,w,h,p,d,"","523414010715045556",clickdiv14010715045556,0,ADFUSER5234,flashClkTag14010715045556,flashparam14010715045556);}
-alysxcf(flash_adr14010715045556,flash_wid14010715045556,flash_hei14010715045556);
-</SCRIPT>
