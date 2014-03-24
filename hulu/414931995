@@ -1,0 +1,23 @@
+PHTTP165.254.96.86"µ
+CGET /banner/subnavbarlogo/home?env=prod&div_id=filter-ad HTTP/1.1
+Host: p.hulu.com
+Connection: keep-alive
+Accept: */*
+vUser-Agent: Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/31.0.1650.63 Safari/537.36
+Referer: http://www.hulu.com/
+$Accept-Encoding: gzip,deflate,sdch
+!Accept-Language: en-US,en;q=0.8
+ÊCookie: guid=43BCC7EE1612CE46D8AE46AF3BE10746; _hulu_ad_state=%5Bsfch%2C%5D; ah=""; _session_referrer=; sid=9BE0DE84577B8E36B09213256DE21C27; beacon_seq=0; _ue=1395692514; locale=en; site_beacon_seq=5
+
+*ß
+HTTP/1.1 200 OK
+Server: Apache-Coyote/1.1
+4Cache-Control: no-store, no-cache, must-revalidate
+Pragma: no-cache
+Expires: -1
+6Content-Type: application/x-javascript;charset=UTF-8
+Content-Length: 0
+%Date: Mon, 24 Mar 2014 20:21:54 GMT
+Connection: keep-alive
+BSet-Cookie: ah=""; Expires=Wed, 23-Apr-2014 20:21:54 GMT; Path=/
+

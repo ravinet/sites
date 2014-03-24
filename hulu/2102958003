@@ -1,0 +1,60 @@
+PHTTP165.254.96.86"ƒ
+`GET /banner/traylogo/BEST%20IN%20SHOW:%20HULU%20SWEET%2016?env=prod&div_id=view136_ad HTTP/1.1
+Host: p.hulu.com
+Connection: keep-alive
+Accept: */*
+vUser-Agent: Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/31.0.1650.63 Safari/537.36
+Referer: http://www.hulu.com/
+$Accept-Encoding: gzip,deflate,sdch
+!Accept-Language: en-US,en;q=0.8
+ûCookie: guid=43BCC7EE1612CE46D8AE46AF3BE10746; _hulu_ad_state=%5Bsfch%2C%5D; _session_referrer=; sid=9BE0DE84577B8E36B09213256DE21C27; beacon_seq=0; _ue=1395692514; locale=en; site_beacon_seq=7; _rcsources=homepage%7C%7Cblank%7Creferral%7C%7C; ah=""
+
+*¥#
+HTTP/1.1 200 OK
+Server: Apache-Coyote/1.1
+4Cache-Control: no-store, no-cache, must-revalidate
+Pragma: no-cache
+Expires: -1
+6Content-Type: application/x-javascript;charset=UTF-8
+Content-Length: 4162
+%Date: Mon, 24 Mar 2014 20:21:54 GMT
+Connection: keep-alive
+BSet-Cookie: ah=""; Expires=Wed, 23-Apr-2014 20:21:54 GMT; Path=/
+Ä 
+var bannerRenderFunction6370292272f94456a4fa03a3b0032beb = function() {
+  var banner = $('#view136_ad');
+  if (banner.length) {
+    $('#view136_ad').empty();
+    banner.attr('adGroupId', '96564');
+    var beaconFunction = function() {
+      if (!banner.attr('firedTrackers')) {
+        banner.attr('firedTrackers', true);
+        banner.append('<a target="_blank"onclick="Hulu.Beacon.trackStandardBeacon(Hulu.Beacon.TYPES.AD_INTERACTION, Hulu.Beacon.SITE_EVENTS.CLICK, {&quot;cpidentifier&quot;:&quot;thePlatform&quot;,&quot;placementid&quot;:&quot;175017&quot;,&quot;contentid&quot;:&quot;3866144&quot;,&quot;ts&quot;:&quot;1395692514935&quot;,&quot;creativeid&quot;:&quot;758989&quot;,&quot;attr&quot;:&quot;|1|zbS0rt1e8ltspKVc+ckeUKtCOlkcKoyyVomYKw\/7\/UKqLRdbhkBeXpYtDf3vqplKPUzQgutAFLor7\/3C8UJ0Odf3fTEaB6uIFOjrlr5\/8+TOJjCKrfgeC87u9kNpprpyMGAX65Yiv4pWN54JPdNoP\/CXNM8XL56MroteczYYQ2wMsDhfiBLZjCNZ3w5LpR9DQGRoNpzssrgSZ7EhM+qCGUPtp9m8IFDwRmsNeh8DsyufmC1vSj4FNx\/Oi6tzDyFvVlx6JAhC3NEtSuLsSean8m3L\/YK3ih6GEmz7BZaYEW+oa3M4aUnR\/83V16BPvei+FM5NzUbR\/Jkxc5ehokfM5iw1zjzgQ4\/WUqCi9Yj9HOoDF4XW4xehsDi4wxiDWZ1nS11S+DrmHAWtVdSjNVzd+FIq+aGUp+qxfxIlyXiamekQwwsBQw31bXWQ5YV3Cu9xNm1eFD24wpndX3bmU463nsydnqpTkK6IEXlvMiEFBrCACP7yrqk8YJN2k1qltaD+Je1LDLBDSjau0uR7VghBsOtacDOq1mPx2eWwVSTqIJHlg1OfAnYPppajGnd7nPYcpB0iFQQciszNWzqTtcBEaEMyMUdbxIZG0NH48QGyJ6dgvcWW3iZMPa0HPu8ab1TN3mYWLgN7KrBpfTCSV1sIgbOpVu4lm0RyKxT0lid\/5zLPP9rcTJL87Fc\/+ArHmPWx\/9zbwourdcavRlpBKp0r\/Qa9noMjKymsfdaztSnyIpmEl0MCGxuAyIvzX+n4dzy1zpXRsCZbXeYM+PnUua\/0FLzkHLKjKGWDOyDwmUnlBS3G0Vv4TlqEKyCjY8GIAduleLUkQI5erLNpmJZnZhi35LAvQ6o5J7gntnY9CgmvlGmrQ2xNGO++0y0dIkAcLIOk&quot;,&quot;type&quot;:&quot;banner&quot;,&quot;pod&quot;:&quot;-2&quot;});" href="http://bs.serving-sys.com/BurstingPipe/adServer.bs?cn=tf&amp;c=20&amp;mc=click&amp;pli=9391268&amp;PluID=0&amp;ord=850647180"><img id="6370292272f94456a4fa03a3b0032beb" style="cursor: pointer;" src="http://ads-v-darwin.hulu.com/published/IO120039/ddi_200x40_v1.png" width="200" height="40"/></a>');
+        Hulu.Beacon.trackStandardBeacon(Hulu.Beacon.TYPES.REVENUE, Hulu.Beacon.SITE_EVENTS.ASSET_IMPRESSION, {"cpidentifier":"thePlatform","placementid":"175017","contentid":"3866144","ts":"1395692514935","creativeid":"758989","attr":"|1|zbS0rt1e8ltspKVc+ckeUKtCOlkcKoyyVomYKw\/7\/UKqLRdbhkBeXpYtDf3vqplKPUzQgutAFLor7\/3C8UJ0Odf3fTEaB6uIFOjrlr5\/8+TOJjCKrfgeC87u9kNpprpyMGAX65Yiv4pWN54JPdNoP\/CXNM8XL56MroteczYYQ2wMsDhfiBLZjCNZ3w5LpR9DQGRoNpzssrgSZ7EhM+qCGUPtp9m8IFDwRmsNeh8DsyufmC1vSj4FNx\/Oi6tzDyFvVlx6JAhC3NEtSuLsSean8m3L\/YK3ih6GEmz7BZaYEW+oa3M4aUnR\/83V16BPvei+FM5NzUbR\/Jkxc5ehokfM5iw1zjzgQ4\/WUqCi9Yj9HOoDF4XW4xehsDi4wxiDWZ1nS11S+DrmHAWtVdSjNVzd+FIq+aGUp+qxfxIlyXiamekQwwsBQw31bXWQ5YV3Cu9xNm1eFD24wpndX3bmU463nsydnqpTkK6IEXlvMiEFBrCACP7yrqk8YJN2k1qltaD+Je1LDLBDSjau0uR7VghBsOtacDOq1mPx2eWwVSTqIJHlg1OfAnYPppajGnd7nPYcpB0iFQQciszNWzqTtcBEaEMyMUdbxIZG0NH48QGyJ6dgvcWW3iZMPa0HPu8ab1TN3mYWLgN7KrBpfTCSV1sIgbOpVu4lm0RyKxT0lid\/5zLPP9rcTJL87Fc\/+ArHmPWx\/9zbwourdcavRlpBKp0r\/Qa9noMjKymsfdaztSnyIpmEl0MCGxuAyIvzX+n4dzy1zpXRsCZbXeYM+PnUua\/0FLzkHLKjKGWDOyDwmUnlBS3G0Vv4TlqEKyCjY8GIAduleLUkQI5erLNpmJZnZhi35LAvQ6o5J7gntnY9CgmvlGmrQ2xNGO++0y0dIkAcLIOk","type":"banner","pod":"-2"});
+        var img = new Image();
+        img.src="http:\/\/bs.serving-sys.com\/BurstingPipe\/adServer.bs?cn=tf&c=19&mc=imp&pli=9391268&PluID=0&ord=850647180&rtu=-1";
+        img.onload=function(){img.src=null;img.onload=null;};
+      }
+    }
+    if (Hulu.Utils.DOM.isInView(banner)) {
+      beaconFunction();
+    }
+    else {
+      var onScroll = function() {
+        if (Hulu.Utils.DOM.isInView(banner)) {
+          Hulu.Dispatcher.unbind(Hulu.Events.Common.PAGEWIDTH_CHANGE, onScroll, this);
+          Hulu.Dispatcher.unbind(Hulu.Events.Common.PAGE_THROTTLE_SCROLL, onScroll, this);
+          beaconFunction();
+        }
+      };
+      Hulu.Dispatcher.bind(Hulu.Events.Common.PAGEWIDTH_CHANGE, onScroll, this);
+      Hulu.Dispatcher.bind(Hulu.Events.Common.PAGE_THROTTLE_SCROLL, onScroll, this);
+    }
+  }
+};
+if (jQuery.isReady) {
+  bannerRenderFunction6370292272f94456a4fa03a3b0032beb();
+}
+else {
+  $(document).ready(bannerRenderFunction6370292272f94456a4fa03a3b0032beb);
+}
