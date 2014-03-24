@@ -1,0 +1,21 @@
+PHTTP198.189.255.217"…
+UGET /v1/beacons/initialize?u=undefined&sg=fca4fa8af1286d8a77f26033fdeed202 HTTP/1.1
+Host: rma-api.gravity.com
+Connection: keep-alive
+Accept: */*
+vUser-Agent: Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/31.0.1650.63 Safari/537.36
+!Referer: http://techcrunch.com/
+$Accept-Encoding: gzip,deflate,sdch
+!Accept-Language: en-US,en;q=0.8
+
+*¥
+HTTP/1.1 200 OK
+Server: ""
+$P3P: CP="NOI DSP COR ADMa OUR NOR"
+-Content-Type: text/javascript;charset=UTF-8
+Content-Length: 89
+%Date: Mon, 24 Mar 2014 21:00:39 GMT
+Connection: keep-alive
+ySet-Cookie: vaguid=874a42699f6d7834adee02070ac94eb0; Domain=.gravity.com; Expires=Tue, 12-Jun-2068 18:01:18 GMT; Path=/
+[
+GravityInsights.cc('grvinsights', '874a42699f6d7834adee02070ac94eb0', '.techcrunch.com');

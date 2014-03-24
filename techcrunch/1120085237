@@ -1,0 +1,24 @@
+PHTTP207.200.81.20"¼
+<GET /cfcm.ashx?providerId=1010&extMatch=1&rcode=1 HTTP/1.1
+$Host: cmap.adt.ace.advertising.com
+Connection: keep-alive
+Accept: image/webp,*/*;q=0.8
+vUser-Agent: Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/31.0.1650.63 Safari/537.36
+WReferer: http://techcrunch.com/wp-content/themes/vip/techcrunch-2013/_uac/adpage.html
+$Accept-Encoding: gzip,deflate,sdch
+!Accept-Language: en-US,en;q=0.8
+
+*’
+HTTP/1.1 302 Found
+%Date: Mon, 24 Mar 2014 21:00:39 GMT
+Server: Microsoft-IIS/6.0
+X-Powered-By: ASP.NET
+X-AspNet-Version: 2.0.50727
+FP3P: CP=NOI DSP COR LAW CURa DEVa TAIa PSAa PSDa OUR BUS UNI COM NAV
+Pragma: no-cache
+@Location: /cfcm.ashx?providerId=1010&extMatch=1&rcode=1&ctst=1
+nSet-Cookie: ACID=Rt350013956948390015; domain=advertising.com; expires=Wed, 23-Mar-2016 21:00:39 GMT; path=/
+-Cache-Control: private, no-cache, max-age=0
+(Expires: Mon, 24 Mar 2014 21:00:39 GMT
+Content-Length: 0
+

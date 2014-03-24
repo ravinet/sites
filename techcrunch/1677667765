@@ -1,0 +1,121 @@
+PHTTP204.12.68.105"Ê
+ GET /te_dsp/te_dsp.js HTTP/1.1
+Host: media.ibm.com
+Connection: keep-alive
+Accept: */*
+vUser-Agent: Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/31.0.1650.63 Safari/537.36
+WReferer: http://techcrunch.com/wp-content/themes/vip/techcrunch-2013/_uac/adpage.html
+$Accept-Encoding: gzip,deflate,sdch
+!Accept-Language: en-US,en;q=0.8
+HCookie: PrefID=14-2300979929; CSList=11295194/11295206,0/0,0/0,0/0,0/0
+
+*¿&
+HTTP/1.1 200 OK
+%Date: Mon, 24 Mar 2014 21:00:39 GMT
+Server: Apache
+gP3P: policyref="http://media.ibm.com/p3p.xml", CP="BUS COM COR DEVa DSP NAV NOI OUR PRE STA TAIa UNI"
+bSet-Cookie: PrefID=14-2300979929; expires=Thu, 24 Mar 2016 09:00:39 GMT; path=/; domain=.ibm.com
+x_transtrans: 110.2013.10.24
+&Cache-Control: public, max-age=18000
+(Expires: Tue, 25 Mar 2014 02:00:39 GMT
+.Last-Modified: Tue, 29 Oct 2013 19:46:57 GMT
+ETag: "10f7-527010b1"
+Accept-Ranges: bytes
+Content-Length: 4343
+Connection: close
+(Content-Type: application/x-javascript
+ù!
+ï»¿var te_dsp = {
+    renderBK: function (tag) {
+        if (tag["container"] == undefined || tag["container"] == null) {
+            document.write("<div id='te_dsp_" + tag.pid + "' style='height: @@HEIGHT@@; width: @@WIDTH@@;'></div>");
+            tag.container = document.getElementById('te_dsp_' + tag.pid);
+        }
+        //fix IE10 onload issue
+        if (navigator.userAgent.indexOf("MSIE 10") > -1) { setTimeout(function () { te_dsp.doRenderBK(tag); }, 5); } else { te_dsp.doRenderBK(tag); }
+    },
+    doRenderBK: function (tag) {
+        if (window['bk_results'] != undefined) {
+            var cats = {};
+            var camps = {};
+            var sep = "";
+            for (var iCamp = 0; iCamp < bk_results["campaigns"].length; iCamp++) {
+                var camp = bk_results["campaigns"][iCamp];
+                camps[camp["campaign"]] = "|";
+                for (var iCat = 0; iCat < camp["categories"].length; iCat++) {
+                    var cat = camp["categories"][iCat];
+                    cats[cat["categoryID"]] = "";
+                    camps[camp["campaign"]] += cat["categoryID"] + "|";
+                }
+            }
+            tag.overrides += "&x_bk=1&x_bk_cats=|";
+            for (var cat in cats) {
+                tag.overrides += cat + "|";
+            }
+            tag.overrides += "&x_bk_camps=|";
+            for (var camp in camps) {
+                tag.overrides += camp + "|";
+            }
+            tag.overrides = tag.overrides.replace('{overrides}', '');
+            tag.click = tag.click.replace('{click}', '');
+        } else {
+            tag.overrides += "&x_bk=0";
+        }
+        //fix IE7&8 Flash Issues
+        if (navigator.userAgent.indexOf("MSIE 8") > -1 || navigator.userAgent.indexOf("MSIE 7") > -1) { tag.type = "image"; }
+        te_dsp.render(tag);
+    },
+    render: function (tag) {
+        if (tag.domain.substr(0, 4) == 'http') { tag.domain = tag.domain.split('/')[2]; }
+        if (tag["click"] == undefined || tag["click"] == null) { tag.click = ""; }
+        switch (tag.type) {
+            case "image":
+                var clickURL = 'http://' + tag.domain + '/click?spacedesc=' + tag.pid;
+                if (tag.click != "") { clickURL = tag.click + clickURL; }
+                var click = te_dsp.createElement("a", {
+                    href: clickURL,
+                    target: tag.target
+                });
+                click.appendChild(te_dsp.createElement("img", {
+                    src: "//" + tag.domain + tag.path + "/image?spacedesc=" + tag.pid + tag.overrides,
+                    height: tag.height,
+                    width: tag.width,
+                    alt: "Click Here",
+                    border: 0
+                }));
+                tag.container.appendChild(click);
+                break;
+            case "jscript":
+                //tag.container.appendChild(te_dsp.createElement("script", {
+                //    src: "//" + tag.domain + "/jscript?spacedesc=" + tag.pid + "&target=" + tag.target + tag.overrides + "&@CPSC@=" + tag.click,
+                //    type: "text/javascript"
+                //}));
+                document.write("<script src='//" + tag.domain + tag.path + "/jscript?spacedesc=" + tag.pid + "&target=" + tag.target + tag.overrides + "&@CPSC@=" + tag.click + "' type='text/javascript'></script>");
+                break;
+            case "iframe":
+                tag.container.appendChild(te_dsp.createElement("iframe", {
+                    src: "//" + tag.domain + tag.path + "/iframe?spacedesc=" + tag.pid + "&target=" + tag.target + tag.overrides + "&@CPSC@=" + tag.click,
+                    scrolling: "No",
+                    frameborder: "0",
+                    height: tag.height,
+                    width: tag.width,
+                    marginHeight: "0",
+                    marginWidth: "0"
+                }));
+                break;
+        }
+    },
+    createElement: function (name, attrs) {
+        var node = document.createElement(name), attr;
+
+        for (attr in attrs) {
+            if (attrs.hasOwnProperty(attr)) {
+                node.setAttribute(attr, attrs[attr]);
+            }
+        }
+
+        return node;
+    },
+    debug: true,
+    console: function (message) { }
+}

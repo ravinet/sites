@@ -1,0 +1,42 @@
+PHTTP204.12.68.105"”
+GET /eolas.js HTTP/1.1
+Host: media.ibm.com
+Connection: keep-alive
+Accept: */*
+vUser-Agent: Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/31.0.1650.63 Safari/537.36
+¨Referer: http://media.ibm.com/cookE/geoip/iframe?spacedesc=11643933_11637646_728x90_11643932_11643933&target=_blank&x_bk=1&x_bk_cats=|&x_bk_camps=|&@CPSC@=http://at.atwola.com/adlink/5113/1838201/0/225/AdId=5063679;BnId=2;itime=694838623;kp=256527;nodecode=yes;impref=13956948382281726835;link=
+$Accept-Encoding: gzip,deflate,sdch
+!Accept-Language: en-US,en;q=0.8
+ÇCookie: XGIR=fXAja3tAsp+CU+oe2AUC3XAe+es+wa3Ea2ap|wa3Ea2ap|oi|NYJlD|f5|SID|RDJ|-YRD|; PrefID=14-2300979929; MLCursor=a@11666947:q@1:j@2014113; CSList=11643912/11637646,11295194/11295206,0/0,0/0,0/0
+
+*Â
+HTTP/1.1 200 OK
+%Date: Mon, 24 Mar 2014 21:00:39 GMT
+Server: Apache
+gP3P: policyref="http://media.ibm.com/p3p.xml", CP="BUS COM COR DEVa DSP NAV NOI OUR PRE STA TAIa UNI"
+bSet-Cookie: PrefID=14-2300979929; expires=Thu, 24 Mar 2016 09:00:39 GMT; path=/; domain=.ibm.com
+x_transtrans: 18.2013.10.24
+&Cache-Control: public, max-age=18000
+(Expires: Tue, 25 Mar 2014 02:00:39 GMT
+.Last-Modified: Wed, 27 May 2009 15:18:30 GMT
+ETag: "17d-4a1d59c6"
+Accept-Ranges: bytes
+Content-Length: 381
+Connection: close
+(Content-Type: application/x-javascript
+ÿ
+
+// eolas.js - workaround for Eolas
+
+if( plugin ) {
+ d.write('<OBJECT ID="'+qID+'"');
+ d.write(' DATA='+flash_name+qType+qWidth+qHeight);
+ d.write('> <PARAM NAME="movie" VALUE='+flash_name+qFlashVars+qWmode);
+ d.write('> <PARAM NAME="quality" VALUE="autohigh"');
+ d.write('> <PARAM NAME="allowScriptAccess" VALUE="always"');
+ d.write('> </OBJECT>');
+}
+else {
+ d.write(qA+qImg);
+}
+

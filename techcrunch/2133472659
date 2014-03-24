@@ -1,0 +1,21 @@
+PHTTP204.154.111.11"Õ	
+ÄGET /visit.js?ctx=607671&cmp=ATTUNIVATLASTAG&ipos=&sid=473017681&plc=473017681&adid=&crt=342436007&btreg=473017681&btadsrv=atdmt&adsrv=2&advid=1813382&num=&pid=&crtname=&unit=&chnl=&uid=1395694864400194&scusrid=&dvtagver=6.1.src&srcurlD=1&curl=&qpgid=&ssl=0&refD=2&htmlmsging=1&referrer=http%3A%2F%2Fview.atdmt.com%2FCNT%2Fiview%2F473017681%2Fdirect%3Bwi.300%3Bhi.250%2F01%2F694863524%3Fclick%3Dhttp%3A%2F%2Fat.atwola.com%2Fadlink%2F5113%2F3138355%2F0%2F170%2FAdId%3D5262104%3BBnId%3D1%3Bitime%3D694863524%3Bnodecode%3Dyes%3Bimpref%3D13956948632281743491%3Blink%3D&aUrlD=3&jsver=31&eparams=DC4FC%3Dl9EEATbpTauTauE6494CF%3F49%5D4%40%3ETauHA%5C4%40%3FE6%3FETauE96%3E6DTauG%3AATauE6494CF%3F49%5Ca_%60bTau0F24Tau25A286%5D9E%3E%3DU2%3F4r92%3A%3Fl9EEATbpTauTauE6494CF%3F49%5D4%40%3ETar9EEATbpTauTauE6494CF%3F49%5D4%40%3ETar9EEATbpTauTauG%3A6H%5D2E5%3EE%5D4%40%3EU2%26C%3Dl23%40FETbp3%3D2%3F%3C&brid=3&brver=31&tstype=128&jsCallback=dvCallback_1395694864402848 HTTP/1.1
+Host: tps30.doubleverify.com
+Connection: keep-alive
+Accept: */*
+vUser-Agent: Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/31.0.1650.63 Safari/537.36
+$Accept-Encoding: gzip,deflate,sdch
+!Accept-Language: en-US,en;q=0.8
+
+*œ
+HTTP/1.1 200 OK
+Cache-Control: max-age=0
+Pragma: no-cache
+.Content-Type: text/javascript; charset=utf-8
+Expires: 3/23/2014 9:01:04 PM
+Server: Microsoft-IIS/8.0
+X-Powered-By: ASP.NET
+%Date: Mon, 24 Mar 2014 21:01:04 GMT
+Connection: close
+“
+try{window.parent._dv_win['dvCallback_1395694864402848']($dv,window,'d9439548239d424e8e76ea6a1f2e2427','tps10205.doubleverify.com');}catch(e){try{var image=window.document.createElement('img');image.src=window.location.protocol+'//tps30.doubleverify.com/visit.jpg?ctx=818052&cmp=1619415&dvtagver=6.1.src&dvp_cbError='+encodeURIComponent(e.message)}catch(e){}}$dv.pubSub.subscribe('ImpressionServed', $uid, 'sfp', function () {var tpsServerUrl = window.location.protocol + '//' + window.$dv.tags[$uid].ServerPublicDns + '/event.gif?impid=' + $uid;var sf = (window.parent.$sf);var is_in_sf = false;if (!sf)is_in_sf = false;else if (sf.ext)is_in_sf = true;tpsServerUrl += '&dvp_sf=' + (is_in_sf ? '1' : '0');$dv.domUtilities.addImage(tpsServerUrl, $dv.tags[$uid].tagElement.parentElement);}); $dv.pubSub.subscribe ('ImpressionServed', $uid, 'SendAdEntitiesForMA', function() {var tag = $dv.tags[$uid];var targetWin = tag.t2tIframeWindow;if(!targetWin){var t2tIframeId = tag.t2tIframeId;if(t2tIframeId){var iFrame = window.parent.getElementById(t2tIframeId);if(iFrame){targetWin = iFrame.contentWindow;}}}if(targetWin){var message = {action : 'notifyAdEntityInformationReady',adEntityInformation : {comparisonItems : [{name : 'clcd', value : 607671, bitFlag : 2, maxTimeMS : 5000}],dvTagCreatedTS : tag.t2tIframeCreationTime,visitJSPostMessageTS : Date.now?Date.now():(new Date()).getCurrentTime()}};var msgString = window.JSON.stringify(message);targetWin.postMessage(msgString, '*');setTimeout(function(){targetWin.postMessage(msgString, '*');}, 100);setTimeout(function(){targetWin.postMessage(msgString, '*');}, 500);}});try{$dv.pubSub.publish('ImpressionServed', $uid);}catch(e){}

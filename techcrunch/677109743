@@ -1,0 +1,33 @@
+PHTTP12.129.199.106"Ê
+^GET /adscgen/sta.php?survey_num=1094726&site=P17193&code=56622626&ut_sys=trueeffect HTTP/1.1
+Host: amch.questionmarket.com
+Connection: keep-alive
+Accept: */*
+vUser-Agent: Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/31.0.1650.63 Safari/537.36
+¨Referer: http://media.ibm.com/cookE/geoip/iframe?spacedesc=11643933_11637646_728x90_11643932_11643933&target=_blank&x_bk=1&x_bk_cats=|&x_bk_camps=|&@CPSC@=http://at.atwola.com/adlink/5113/1838201/0/225/AdId=5063679;BnId=2;itime=694838623;kp=256527;nodecode=yes;impref=13956948382281726835;link=
+$Accept-Encoding: gzip,deflate,sdch
+!Accept-Language: en-US,en;q=0.8
+.Cookie: CS1=1108335-12-1; ES=1042020-ZHhVO-0
+
+*œ
+HTTP/1.1 200 OK
+%Date: Mon, 24 Mar 2014 21:00:39 GMT
+(Expires: Mon, 26 Jul 1997 05:00:00 GMT
+?Cache-Control: no-store, no-cache, must-revalidate, max-age=0
+Pragma: no-cache
+ŠP3P: CP="ALL DSP COR PSAa PSDa OUR IND COM NAV INT LOC OTC", policyref="http://ch.questionmarket.com/w3c/audit2007/p3p_DynamicLogic.xml"
+dSet-Cookie: CS1=deleted; expires=Thu, 01-Jan-1970 00:00:01 GMT; path=/; domain=.questionmarket.com
+{Set-Cookie: CS1=1108335-12-1_890056622626-18-1; expires=Fri, 15-May-2015 13:00:39 GMT; path=/; domain=.questionmarket.com
+|Set-Cookie: ES=1042020-ZHhVO-0_1094726-aHhVO-0; expires=Fri, 15-May-2015 13:00:39 GMT; path=/; domain=.questionmarket.com;
+*Cache-Control: post-check=0, pre-check=0
+X-Host: b105.dl D=2872
+Content-Length: 170
+Keep-Alive: timeout=6, max=1
+Connection: Keep-Alive
+-Content-Type: text/javascript;charset=utf-8
+¬
+var DL = DL || {};
+DL.placement_site = 'P17193';
+DL.placement_code = '56622626';
+(new Image).src="//amch.questionmarket.com/adsc/d1094726/18/890056622626/adscout.php";;
+

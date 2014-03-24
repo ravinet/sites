@@ -1,0 +1,22 @@
+PHTTP204.154.111.11"®
+
+GET /visit.js?ctx=589953&cmp=11643912&ipos=&sid=111637646&plc=P17193&adid=&crt=56622626&btreg=56622626&btadsrv=ibm.com&adsrv=63&advid=592075&num=&pid=&crtname=&unit=&chnl=&uid=1395694839705717&scusrid=&dvtagver=6.1.src&srcurlD=1&curl=&qpgid=&ssl=0&refD=2&htmlmsging=1&referrer=http%3A%2F%2Fmedia.ibm.com%2FcookE%2Fgeoip%2Fiframe%3Fspacedesc%3D11643933_11637646_728x90_11643932_11643933%26target%3D_blank%26x_bk%3D1%26x_bk_cats%3D%7C%26x_bk_camps%3D%7C%26%40CPSC%40%3Dhttp%3A%2F%2Fat.atwola.com%2Fadlink%2F5113%2F1838201%2F0%2F225%2FAdId%3D5063679%3BBnId%3D2%3Bitime%3D694838623%3Bkp%3D256527%3Bnodecode%3Dyes%3Bimpref%3D13956948382281726835%3Blink%3D&aUrlD=3&jsver=31&eparams=DC4FC%3Dl9EEATbpTauTauE6494CF%3F49%5D4%40%3ETauHA%5C4%40%3FE6%3FETauE96%3E6DTauG%3AATauE6494CF%3F49%5Ca_%60bTau0F24Tau25A286%5D9E%3E%3DU2%3F4r92%3A%3Fl9EEATbpTauTauE6494CF%3F49%5D4%40%3ETar9EEATbpTauTauE6494CF%3F49%5D4%40%3ETar9EEATbpTauTau%3E65%3A2%5D%3A3%3E%5D4%40%3EU2%26C%3Dl23%40FETbp3%3D2%3F%3C&brid=3&brver=31&tstype=128&jsCallback=dvCallback_1395694839706591 HTTP/1.1
+Host: tps30.doubleverify.com
+Connection: keep-alive
+Accept: */*
+vUser-Agent: Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/31.0.1650.63 Safari/537.36
+$Accept-Encoding: gzip,deflate,sdch
+!Accept-Language: en-US,en;q=0.8
+
+*Ë
+HTTP/1.1 200 OK
+Cache-Control: max-age=0
+Pragma: no-cache
+.Content-Type: text/javascript; charset=utf-8
+Expires: 3/23/2014 9:00:39 PM
+Server: Microsoft-IIS/8.0
+X-Powered-By: ASP.NET
+%Date: Mon, 24 Mar 2014 21:00:39 GMT
+Connection: close
+Â
+try{window.parent._dv_win['dvCallback_1395694839706591']($dv,window,'fd69a9e13b194b54b29660220ede4818','tps10220.doubleverify.com');}catch(e){try{var image=window.document.createElement('img');image.src=window.location.protocol+'//tps30.doubleverify.com/visit.jpg?ctx=818052&cmp=1619415&dvtagver=6.1.src&dvp_cbError='+encodeURIComponent(e.message)}catch(e){}}$dv.pubSub.subscribe('ImpressionServed', $uid, 'RTN_CollectDvtpSrcPerformanceData', function(){ try {var dvTagCreated = '';var dvTagCreatedSetInCallBack = '';var beforeVisitCall = '';var callTPSFromIframe = window.callTPSFromIframe;var beginVisitCallbackTS = '';var templateStartTime = parent.getCurrentTime();var dv_win = parent.window._dv_win;if(dv_win && dv_win.t2tTimestampData) {if (dv_win.t2tTimestampData.length >= 1) {dvTagCreated = dv_win.t2tTimestampData[0].dvTagCreated;}if (dv_win.t2tTimestampData.length >= 2) {beforeVisitCall = dv_win.t2tTimestampData[1].beforeVisitCall;}}if ($dv.tags[$uid]) {dvTagCreatedSetInCallBack = $dv.tags[$uid].t2tIframeCreationTime;beginVisitCallbackTS = $dv.tags[$uid].beginVisitCallbackTS;}var message = $dv.tags[$uid].dv_protocol + '//' + $dv.tags[$uid].ServerPublicDns + '/event.gif?impid=' + $uid;message += '&dvp_dvTagCreated='+dvTagCreated+'&dvp_dvTagCreatedSetInCallBack='+dvTagCreatedSetInCallBack+'&dvp_callTPSFromIframe='+callTPSFromIframe+'&dvp_beforeVisitCall='+beforeVisitCall+'&dvp_beginVisitCallbackTS='+beginVisitCallbackTS+'&dvp_templateStartTime='+templateStartTime+'&dvp_tpsProcessingTime=+156025';var image = window.document.createElement('img');image.src = message;} catch(e) {};});$dv.pubSub.subscribe ('ImpressionServed', $uid, 'SendAdEntitiesForMA', function() {var tag = $dv.tags[$uid];var targetWin = tag.t2tIframeWindow;if(!targetWin){var t2tIframeId = tag.t2tIframeId;if(t2tIframeId){var iFrame = window.parent.getElementById(t2tIframeId);if(iFrame){targetWin = iFrame.contentWindow;}}}if(targetWin){var message = {action : 'notifyAdEntityInformationReady',adEntityInformation : {comparisonItems : [{name : 'cmp', value : 2036194, bitFlag : 1, maxTimeMS : 5000, eventToFire : 'CampaignMultipleAd'},{name : 'clcd', value : 589953, bitFlag : 2, maxTimeMS : 5000},{name : 'plmt', value : 2095129, bitFlag : 4, maxTimeMS : 5000},{name : 'adv', value : 592075, bitFlag : 16, maxTimeMS : 5000, eventToFire : 'LobMultipleAd'}],dvTagCreatedTS : tag.t2tIframeCreationTime,visitJSPostMessageTS : Date.now?Date.now():(new Date()).getCurrentTime()}};var msgString = window.JSON.stringify(message);targetWin.postMessage(msgString, '*');setTimeout(function(){targetWin.postMessage(msgString, '*');}, 100);setTimeout(function(){targetWin.postMessage(msgString, '*');}, 500);}});try{$dv.pubSub.publish('ImpressionServed', $uid);}catch(e){}

@@ -1,0 +1,26 @@
+PHTTP204.12.68.105"ú
+~GET /xl/PROD/TrackingTags/fetch.cp?cache=no-cache&default=default_pl_cr.js&file=/11643912/PlacementTags/11643933.js HTTP/1.1
+Host: media.ibm.com
+Connection: keep-alive
+Accept: */*
+vUser-Agent: Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/31.0.1650.63 Safari/537.36
+¨Referer: http://media.ibm.com/cookE/geoip/iframe?spacedesc=11643933_11637646_728x90_11643932_11643933&target=_blank&x_bk=1&x_bk_cats=|&x_bk_camps=|&@CPSC@=http://at.atwola.com/adlink/5113/1838201/0/225/AdId=5063679;BnId=2;itime=694838623;kp=256527;nodecode=yes;impref=13956948382281726835;link=
+$Accept-Encoding: gzip,deflate,sdch
+!Accept-Language: en-US,en;q=0.8
+ÇCookie: XGIR=fXAja3tAsp+CU+oe2AUC3XAe+es+wa3Ea2ap|wa3Ea2ap|oi|NYJlD|f5|SID|RDJ|-YRD|; MLCursor=a@11666947:q@1:j@2014113; CSList=11643912/11637646,11295194/11295206,0/0,0/0,0/0; PrefID=14-2300979929
+
+*¸
+HTTP/1.1 200 OK
+%Date: Mon, 24 Mar 2014 21:00:39 GMT
+Server: Apache
+gP3P: policyref="http://media.ibm.com/p3p.xml", CP="BUS COM COR DEVa DSP NAV NOI OUR PRE STA TAIa UNI"
+bSet-Cookie: PrefID=14-2300979929; expires=Thu, 24 Mar 2016 09:00:39 GMT; path=/; domain=.ibm.com
+x_transtrans: 110.2013.10.24
+*Cache-Control: no-cache, must-revalidate
+'Expires: Tue, 1 Jan 1970 01:01:01 GMT
+Pragma: no-cache
+Content-Length: 2874
+Connection: close
+(Content-Type: application/x-javascript
+¼
+var creativeId275="##ECRID##",externIds275={"11669106":"56622703","11669162":"56570638","11669222":"56622830","11669116":"56622626","11669132":"56635215","11646147":"56635215","11669100":"56622638","11669192":"56570650","11669142":"56570626","11669091":"56622576","12218099":"57046025"},body_tag275,stxt275,txt275,tagToRender2752,tagToRender2751;externIds275[te_tags.crid]&&(creativeId275=externIds275[te_tags.crid]);body_tag275=document.getElementById("tetags_"+te_tags.ml_usec)?document.getElementById("tetags_"+te_tags.ml_usec):document.getElementsByTagName("body")[0]||document.body;document.getElementById("tead_"+te_tags.ml_usec)&&(window.location.protocol=="https:"?(stxt275='<span id="ibm01cont1"><\/span>',document.getElementById("tead_"+te_tags.ml_usec).innerHTML+=te_tags.ReplaceTokens(stxt275,creativeId275)):(txt275='<span id="ibm01cont1"><\/span>',document.getElementById("tead_"+te_tags.ml_usec).innerHTML+=te_tags.ReplaceTokens(txt275,creativeId275)));window.location.protocol=="https:"?(tagToRender2751=document.createElement("script"),tagToRender2751.src=te_tags.ReplaceTokens("https://amch.questionmarket.com/adscgen/sta.php?survey_num=1094726&site=P17193&code=##ECRID##&ut_sys=trueeffect",creativeId275),body_tag275.appendChild(tagToRender2751),tagToRender2752=document.createElement("script"),tagToRender2752.src=te_tags.ReplaceTokens("https://cdn.doubleverify.com/dvtp_src.js?ctx=589953&cmp=11643912&sid=111637646&plc=P17193&num=&adid=&advid=592075&adsrv=63&region=30&btreg=##ECRID##&btadsrv=ibm.com&crt=##ECRID##&crtname=&chnl=&unit=&pid=&uid=&dvtagver=6.1.src",creativeId275),body_tag275.appendChild(tagToRender2752)):(tagToRender2751=document.createElement("script"),tagToRender2751.src=te_tags.ReplaceTokens("http://amch.questionmarket.com/adscgen/sta.php?survey_num=1094726&site=P17193&code=##ECRID##&ut_sys=trueeffect",creativeId275),body_tag275.appendChild(tagToRender2751),tagToRender2752=document.createElement("script"),tagToRender2752.src=te_tags.ReplaceTokens("http://cdn.doubleverify.com/dvtp_src.js?ctx=589953&cmp=11643912&sid=111637646&plc=P17193&num=&adid=&advid=592075&adsrv=63&region=30&btreg=##ECRID##&btadsrv=ibm.com&crt=##ECRID##&crtname=&chnl=&unit=&pid=&uid=&dvtagver=6.1.src",creativeId275),body_tag275.appendChild(tagToRender2752));window.location.protocol=="https:"?(tagToRender2751=document.createElement("script"),tagToRender2751.src=te_tags.ReplaceTokens("https://choices.truste.com/ca?pid=ibm01&aid=ibm01&cid=0213&c=tead_@@USEC@@&w=728&h=90&plc=tl",creativeId275),document.getElementById("tead_"+te_tags.ml_usec).appendChild(tagToRender2751)):(tagToRender2751=document.createElement("script"),tagToRender2751.src=te_tags.ReplaceTokens("http://choices.truste.com/ca?pid=ibm01&aid=ibm01&cid=0213&c=tead_@@USEC@@&w=728&h=90&plc=tl",creativeId275),document.getElementById("tead_"+te_tags.ml_usec).appendChild(tagToRender2751))
