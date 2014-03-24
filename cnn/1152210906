@@ -1,0 +1,36 @@
+PHTTP157.166.248.229"ä
+POST /api/hello HTTP/1.1
+Host: aspen.turner.com
+Connection: keep-alive
+Content-Length: 852
+!Origin: http://z.cdn.turner.com
+vUser-Agent: Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/31.0.1650.63 Safari/537.36
+1Content-Type: application/x-www-form-urlencoded
+Accept: */*
+ûReferer: http://z.cdn.turner.com/xslo/cvp/core/base/0/CVPBase.swf?containerVersion=Container%20v2.0.4.0&cbb=2368&profile=desktop&context=tve_prev&isEmbedContainer=false&domId=cvp_nowPlayingThumbnail&site=cnn&cvpSessionToken=rxk7Oq6pDWn42L2nEy0TfKNrv
+$Accept-Encoding: gzip,deflate,sdch
+!Accept-Language: en-US,en;q=0.8
+Ö
+aspenJson=%257B%2522platformName%2522%253A%2522flash%2522%252C%2522deviceType%2522%253A%2522desktop%2522%252C%2522clientThrottle%2522%253A0%252C%2522sessionToken%2522%253A%2522rxk7Oq6pDWn42L2nEy0TfKNrv%2522%252C%2522profile%2522%253A%2522desktop%2522%252C%2522context%2522%253A%2522tve%5Fprev%2522%252C%2522deviceVersion%2522%253A%2522desktop%2522%252C%2522debug%2522%253A%2522false%2522%252C%2522deviceModel%2522%253A%2522desktop%2522%252C%2522propertyName%2522%253A%2522cnn%5Fpreview%2522%252C%2522applicationName%2522%253A%2522CVP%2522%252C%2522pageUrl%2522%253A%2522http%253A%2F%2Fwww%2Ecnn%2Ecom%2F%2522%252C%2522clientThrottled%2522%253Afalse%252C%2522aspenUUIDToken%2522%253A%2522392aspenUID392%2522%252C%2522applicationVersion%2522%253A%25222%2E4%2E3%2E0%2522%252C%2522protocol%2522%253A%25221%2E0%2522%252C%2522site%2522%253A%2522cnn%2522%257D*ž
+HTTP/1.1 200 OK
+%Date: Mon, 24 Mar 2014 20:02:33 GMT
+Server: Apache
+ Access-Control-Allow-Origin: *
+0Access-Control-Allow-Methods: GET,POST,OPTIONS
+Connection: close
+Transfer-Encoding: chunked
+ Content-Type: application/json
+¦
+118
+{ 
+    "throttled" : "yes",
+    "servername" : "aspen.turner.com",
+    "sessionId" : "a296ed20da3b0f35f1501c502e890dd069b4fa0c~CVP~flash~cnn_preview~2",
+    "shortId" : "E257NH",
+    "aspenUUID" : "732cddce6b8b67f666c99e4db644e8dde19fa2e7",
+    
+    "timestamp" : 1395691353930
+}
+
+0
+

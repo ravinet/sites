@@ -1,0 +1,24 @@
+PHTTP198.189.255.230"Â
+3GET /NAM/km_green/amex/HYSA_Rate.new.xml HTTP/1.1
+!Host: motifcdn2.doubleclick.net
+Connection: keep-alive
+vUser-Agent: Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/31.0.1650.63 Safari/537.36
+Accept: */*
+¨Referer: http://ads.cnn.com/html.ng/site=cnn&cnn_pagetype=main&cnn_position=300x100_bot1&cnn_rollup=homepage&page.allowcompete=no&params.styles=fs&Params.User.UserID=53308f5604427e0a3c745d5ac001a8f1&transactionID=13956913506747325609279488&tile=6600531965943&domId=1d590e2e0f3c830b&kxid=&kxseg=
+$Accept-Encoding: gzip,deflate,sdch
+!Accept-Language: en-US,en;q=0.8
+OCookie: id=c7f1db15400000a||t=1395691350|et=730|cs=002213fd48ef4bc3dfba99ca05
+
+*é
+HTTP/1.1 200 OK
+Server: Apache
+5ETag: "2074fe557f26329a87f4177c15192f6e:1394813027"
+.Last-Modified: Fri, 14 Mar 2014 16:03:47 GMT
+Accept-Ranges: bytes
+Content-Length: 73
+Content-Type: application/xml
+%Date: Mon, 24 Mar 2014 20:02:32 GMT
+Connection: keep-alive
+K
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<Rate>0.80</Rate>

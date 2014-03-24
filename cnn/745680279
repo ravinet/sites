@@ -1,0 +1,21 @@
+PHTTP204.154.111.11"Ï
+¾GET /visit.js?ctx=607671&cmp=ATTUNIVATLASTAG&ipos=&sid=473207994&plc=473207994&adid=&crt=342796420&btreg=473207994&btadsrv=atdmt&adsrv=2&advid=1813382&num=&pid=&crtname=&unit=&chnl=&uid=1395691351602834&scusrid=&dvtagver=6.1.src&srcurlD=1&curl=&qpgid=&ssl=0&refD=2&htmlmsging=1&referrer=http%3A%2F%2Fview.atdmt.com%2FCNT%2Fiview%2F473207994%2Fdirect%3Bwi.300%3Bhi.250%2F01%2Fdijrsby%2CbjtbdAwfvxIyz%3Fclick%3Dhttp%3A%2F%2Fads.cnn.com%2Fevent.ng%2FType%253dclick%2526FlightID%253d590749%2526AdID%253d801910%2526TargetID%253d186167%2526Values%253d1588%2526RawValues%253dNGUSERID%25252C53308f5604427e0a3c745d5ac001a8f1%25252CKXID%25252C%25252CTID%25252C13956913506747325609279488%25252CTIL%25252C6600531965935%2526Redirect%253d&aUrlD=3&jsver=31&eparams=DC4FC%3Dl9EEATbpTauTau25D%5D4%3F%3F%5D4%40%3ETau9E%3E%3D%5D%3F8TauD%3AE6Tbs4%3F%3FTae4%3F%3F0A286EJA6Tbs%3E2%3A%3FTae4%3F%3F0A%40D%3AE%3A%40%3FTbsb__Iad_0C8ETae4%3F%3F0C%40%3D%3DFATbs9%40%3E6A286TaeA286%5D2%3D%3D%40H4%40%3EA6E6Tbs%3F%40TaeA2C2%3ED%5DDEJ%3D6DTbs7DTae!2C2%3ED%5D%26D6C%5D%26D6CxsTbsdbb_g7de_ccaf6_2b4fcd5d24__%602g7%60TaeEC2%3FD24E%3A%40%3FxsTbs%60bhdeh%60bd_efcfbade_hafhcggTaeE%3A%3D6Tbsee__db%60hedhbdTae5%40%3Ex5Tbse7cd_%60eeg2d6h5dgTae%3CI%3A5TbsTae%3CID68TbsU2%3F4r92%3A%3Fl9EEATbpTauTauHHH%5D4%3F%3F%5D4%40%3ETar9EEATbpTauTau25D%5D4%3F%3F%5D4%40%3ETar9EEATbpTauTauG%3A6H%5D2E5%3EE%5D4%40%3EU2%26C%3Dl23%40FETbp3%3D2%3F%3C&brid=3&brver=31&tstype=128&jsCallback=dvCallback_1395691351605133 HTTP/1.1
+Host: tps30.doubleverify.com
+Connection: keep-alive
+Accept: */*
+vUser-Agent: Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/31.0.1650.63 Safari/537.36
+$Accept-Encoding: gzip,deflate,sdch
+!Accept-Language: en-US,en;q=0.8
+
+*ð
+HTTP/1.1 200 OK
+Cache-Control: max-age=0
+Pragma: no-cache
+.Content-Type: text/javascript; charset=utf-8
+Expires: 3/23/2014 8:02:32 PM
+Server: Microsoft-IIS/8.0
+X-Powered-By: ASP.NET
+%Date: Mon, 24 Mar 2014 20:02:31 GMT
+Connection: close
+ç
+try{window.parent._dv_win['dvCallback_1395691351605133']($dv,window,'192198b436314b0a8ca8bc13907df645','tps10214.doubleverify.com');}catch(e){try{var image=window.document.createElement('img');image.src=window.location.protocol+'//tps30.doubleverify.com/visit.jpg?ctx=818052&cmp=1619415&dvtagver=6.1.src&dvp_cbError='+encodeURIComponent(e.message)}catch(e){}}$dv.pubSub.subscribe ('ImpressionServed', $uid, 'SendAdEntitiesForMA', function() {var tag = $dv.tags[$uid];var targetWin = tag.t2tIframeWindow;if(!targetWin){var t2tIframeId = tag.t2tIframeId;if(t2tIframeId){var iFrame = window.parent.getElementById(t2tIframeId);if(iFrame){targetWin = iFrame.contentWindow;}}}if(targetWin){var message = {action : 'notifyAdEntityInformationReady',adEntityInformation : {comparisonItems : [{name : 'cmp', value : 2043324, bitFlag : 1, maxTimeMS : 5000, eventToFire : 'CampaignMultipleAd'},{name : 'clcd', value : 607671, bitFlag : 2, maxTimeMS : 5000},{name : 'plmt', value : 2124283, bitFlag : 4, maxTimeMS : 5000},{name : 'mp', value : 3760, bitFlag : 8, maxTimeMS : 5000},{name : 'adv', value : 607672, bitFlag : 16, maxTimeMS : 5000, eventToFire : 'LobMultipleAd'},{name : 'cmpMP', value : 612997226320, bitFlag : 32, maxTimeMS : 5000}],dvTagCreatedTS : tag.t2tIframeCreationTime,visitJSPostMessageTS : Date.now?Date.now():(new Date()).getCurrentTime()}};var msgString = window.JSON.stringify(message);targetWin.postMessage(msgString, '*');setTimeout(function(){targetWin.postMessage(msgString, '*');}, 100);setTimeout(function(){targetWin.postMessage(msgString, '*');}, 500);}});try{$dv.pubSub.publish('ImpressionServed', $uid);}catch(e){}

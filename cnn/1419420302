@@ -1,0 +1,24 @@
+PHTTP64.74.232.42"®
+{GET /?transport=jsonp&idsite=6&url=http%3A%2F%2Fwww.cnn.com%2F&content_type=utf-8&callback=_vrq.jsonp.callbackFn HTTP/1.1
+Host: p.visualrevenue.com
+Connection: keep-alive
+Accept: */*
+vUser-Agent: Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/31.0.1650.63 Safari/537.36
+Referer: http://www.cnn.com/
+$Accept-Encoding: gzip,deflate,sdch
+!Accept-Language: en-US,en;q=0.8
+
+*§
+HTTP/1.1 200 OK
+Server: nginx/1.1.19
+%Date: Mon, 24 Mar 2014 20:02:31 GMT
+Content-Type: text/javascript
+Content-Length: 667
+Accept-Ranges: bytes
+"X-Varnish: 3734311584 3728387423
+Age: 3615
+Via: 1.1 varnish
+F: 1
+Connection: close
+ù
+_vrq.jsonp.callbackFn([{"content": {"new_images": ["http://i2.cdn.turner.com/cnn/dam/assets/140321172104-250-burger-video-tease.png", "http://i2.cdn.turner.com/cnn/dam/assets/140321172104-250-burger-video-tease.png"], "new_titles": ["What's in this $250 hamburger?", "Is this $250 burger worth the dough?"], "current_image": "http://i2.cdn.turner.com/cnn/dam/assets/140321172104-250-burger-video-tease.png", "current_title": "What's in this $250 hamburger?"}, "config": {"data_vr_zone": "C2", "winner": {"image": "http://i2.cdn.turner.com/cnn/dam/assets/140321172104-250-burger-video-tease.png", "title": "What's in this $250 hamburger?"}}, "type": "content_test"}]);

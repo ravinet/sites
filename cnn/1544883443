@@ -1,0 +1,120 @@
+PHTTP198.189.255.216"·
+2GET /cnn/.element/js/3.0/csi_include.js HTTP/1.1
+Host: i.cdn.turner.com
+Connection: keep-alive
+Accept: */*
+vUser-Agent: Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/31.0.1650.63 Safari/537.36
+yReferer: http://svcs.cnn.com/weather/getForecast?time=24&mode=json_html&zipCode=30303&locCode=&celcius=false&csiID=csi2
+$Accept-Encoding: gzip,deflate,sdch
+!Accept-Language: en-US,en;q=0.8
+
+*±
+HTTP/1.1 200 OK
+Server: Apache
+.Last-Modified: Fri, 29 Oct 2010 13:42:35 GMT
+Accept-Ranges: bytes
+Content-Length: 1907
+(Content-Type: application/x-javascript
+Cache-Control: max-age=1656
+(Expires: Mon, 24 Mar 2014 20:30:07 GMT
+%Date: Mon, 24 Mar 2014 20:02:31 GMT
+Connection: keep-alive
+õ
+function cnnGetId(query) 
+{
+	var queryId = cnnGetQueryId( query);
+	var wId = cnnGetWindowNameId();
+	
+	var idsMatch = (queryId == wId);
+	
+	var imageObj = document.createElement('img');
+	imageObj.setAttribute('src','http://i.cdn.turner.com/cnn/images/1.gif?csiTestMatch='+idsMatch);
+	if(document.documentElement)
+	{
+		document.documentElement.appendChild( imageObj );
+	} 
+	return queryId;
+
+}
+function cnnGetWindowNameId()
+{
+	if(window.name && (window.name.indexOf('csiDataIframe')==0))
+	{
+		return window.name.substring(13);
+	}
+	return '';
+}
+
+function cnnGetQueryId(query)
+{
+	var keyValPairs = query.split('&');
+	if(!keyValPairs)
+	{
+		keyValPairs = new Array();
+		keyValPairs[keyValPairs.length]=query;
+	}
+	for(var counter=0;counter<keyValPairs.length;counter++) 
+	{
+		var keyVal = keyValPairs[counter].split('=');
+
+		if(keyVal[0]=='csiID') 
+		{
+			return keyVal[1];
+		}
+	}
+}
+
+function cnnSend()
+{
+	if(top.CSIManager.getInstance().handleClientData)
+	{
+		top.CSIManager.getInstance().handleClientData( window, document);
+	}
+	else
+	{
+		var paramStr = location.hash;
+		if(!paramStr)
+		{
+			paramStr = location.search.substring(1);
+		}
+		var docId = cnnGetId( paramStr 	);
+		if(document.mainForm.htmlArea && document.mainForm.htmlArea.value)
+ 	    {
+			var rawHtml = document.mainForm.htmlArea.value;
+			if(rawHtml)
+		 	{
+				top.CSIManager.getInstance().callBackHtml(rawHtml, docId);
+			}
+		}
+		else  if(document.mainForm.jsCode.value)
+ 	    {
+			var rawJS = document.mainForm.jsCode.value;
+			if(rawJS)
+		 	{
+				top.CSIManager.getInstance().callBackJS( eval('('+rawJS+')'), docId);
+			}
+		}
+	}
+}
+
+
+var oldonloadfunction = window.onunload;
+function dummyonunload(evt)
+{
+	if(oldonloadfunction)
+	{
+		oldonloadfunction(evt);
+	}
+}
+window.onunload=dummyonunload;
+
+var oldshowpagefunction = window.onshowpage;
+function cnnshowpageSend(evt)
+{
+
+        if(evt.persisted)
+	{
+		cnnSend();
+	}
+	oldshowpagefunction(evt);
+}

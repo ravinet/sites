@@ -1,0 +1,27 @@
+PHTTP50.16.212.52"º
+‹GET /user_data/segments/3?pubid=e9eaedd3-c1da-4334-82f0-d7e3ff883c87&technographics=1&callback=Krux.ns._default.kxjsonp_userData HTTP/1.1
+Host: apiservices.krxd.net
+Connection: keep-alive
+Accept: */*
+vUser-Agent: Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/31.0.1650.63 Safari/537.36
+Referer: http://www.cnn.com/
+$Accept-Encoding: gzip,deflate,sdch
+!Accept-Language: en-US,en;q=0.8
+
+* 
+HTTP/1.1 200 OK
+Accept-Ranges: bytes
+Cache-Control: max-age=0
+Content-Type: text/javascript
+%Date: Mon, 24 Mar 2014 20:02:32 GMT
+2Etag: "ec48c11db55cae9ef995d7f57c193478b19c2c6f"
+
+X-Age: 0
+X-Cache: MISS
+X-Cache-Hits: 0
+X-Request-Backend: user_data
+(X-Served-By: apiservices-a014.krxd.net
+Content-Length: 301
+Connection: keep-alive
+¯
+Krux.ns._default.kxjsonp_userData({"status": "200", "body": {"technographics": {"device": "Computer", "manufacturer": "Other", "os": "Linux", "browser": "Chrome"}, "segments": [], "code": "no_user_id", "geo": {"dma": "807", "region": "ca", "domain": "berkeley.edu", "zip": "94720", "country": "us"}}})

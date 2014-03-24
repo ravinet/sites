@@ -1,0 +1,88 @@
+PHTTP157.166.226.207"²
+šGET /html.ng/site=cnn&cnn_pagetype=main&cnn_position=300x100_bot2&cnn_rollup=homepage&page.allowcompete=no&params.styles=fs&Params.User.UserID=53308f5604427e0a3c745d5ac001a8f1&transactionID=13956913506747325609279488&tile=6600531965943&domId=9019f94d395ac7c4&kxid=&kxseg= HTTP/1.1
+Host: ads.cnn.com
+Connection: keep-alive
+TAccept: text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8
+vUser-Agent: Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/31.0.1650.63 Safari/537.36
+Referer: http://www.cnn.com/
+$Accept-Encoding: gzip,deflate,sdch
+!Accept-Language: en-US,en;q=0.8
+¨Cookie: optimizelySegments=%7B%22170962340%22%3A%22false%22%2C%22171657961%22%3A%22gc%22%2C%22172148679%22%3A%22none%22%2C%22172265329%22%3A%22direct%22%7D; optimizelyEndUserId=oeu1395691350277r0.5802714817691594; optimizelyBuckets=%7B%7D; optimizelyPendingLogEvents=%5B%22n%3Dhttp%253A%252F%252Fwww.cnn.com%252F%26u%3Doeu1395691350277r0.5802714817691594%26wxhr%3Dtrue%26t%3D1395691350432%26f%3D570640889%2C603300335%22%5D
+
+*ë
+HTTP/1.1 200 OK
+%Date: Mon, 24 Mar 2014 20:02:30 GMT
+Server: Apache
+AdServer: ad3ad7:9678:1
+%P3P: CP="NOI DEVa TAIa OUR BUS UNI"
+-Cache-Control: max-age=0, no-cache, private
+(Expires: Mon, 24 Mar 2014 20:02:30 GMT
+Pragma: no-cache
+Content-Length: 3325
+Keep-Alive: timeout=5, max=14
+Connection: Keep-Alive
+Content-Type: text/html
+ÿ
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+<head>
+
+<script>
+        function cnnad_getTld (hostname)
+        {
+               var data = hostname.split(".");
+               if (data.length >= 2)
+               {
+                       return (data[data.length-2] + "." + data[data.length-1]);
+               }
+               return(null);
+        }
+ 
+        var cnnDocDomain = cnnad_getTld(location.hostname);
+        if(cnnDocDomain) {document.domain = cnnDocDomain;}
+
+	function cnnGetId(query) {
+		var keyValPairs = query.split('&');
+		if(!keyValPairs) {
+			keyValPairs = new Array();
+			keyValPairs[keyValPairs.length]=query;
+		}
+		for(var counter=0; counter < keyValPairs.length;counter++) {
+			var keyVal = keyValPairs[counter].split('=');
+			if(keyVal[0]=='domId') {
+				//alert("returning id: " + keyVal[1]);
+				return keyVal[1];
+			}
+		}
+	}
+			
+	function cnnSendData2() {
+		var docId = cnnGetId(decodeURIComponent(location.pathname.substring(9)));
+		var height = 100;
+		var width = 300;
+		var targetWindow = top;
+		try
+		{
+			if(parent.cnnad_showAd)
+			{
+				targetWindow = parent;
+			}
+		} catch(err) {} 
+		targetWindow.cnnad_showAd(docId);
+		if ((height > 0)&&(width > 0))
+		{
+			targetWindow.cnnad_setAdSize(docId,height,width);
+		}
+	}
+</script> 
+</head>
+
+<body STYLE="background-color:transparent" onload="cnnSendData2()">
+<!--FlightID: 588213-->
+<IFRAME SRC="http://ad.doubleclick.net/adi/N3282.CNN/B7443343.5;sz=300x100;click0=http://ads.cnn.com/event.ng/Type=click&FlightID=588213&AdID=795105&TargetID=193787&Values=1588&Redirect=;ord=csdywsN,bjtbdAwfvxIzk?" WIDTH=300 HEIGHT=100 MARGINWIDTH=0 MARGINHEIGHT=0 HSPACE=0 VSPACE=0 FRAMEBORDER=0 SCROLLING=no BORDERCOLOR='#000000'>
+<SCRIPT language='JavaScript1.1' SRC="http://ad.doubleclick.net/adj/N3282.CNN/B7443343.5;abr=!ie;sz=300x100;click0=http://ads.cnn.com/event.ng/Type=click&FlightID=588213&AdID=795105&TargetID=193787&Values=1588&Redirect=;ord=csdywsN,bjtbdAwfvxIzk?">
+</SCRIPT></IFRAME><!-- WDADS-30570 -->
+<div style="position:absolute;visibility:hidden;"><img src="http://ads.cnn.com:80/event.ng/Type=count&ClientType=2&ASeg=&AMod=&AOpt=0&AdID=795105&FlightID=588213&TargetID=193787&SiteID=1588&EntityDefResetFlag=0&Segments=DECBHHicJZHJEQQxCAMT4sEhEOSf2MqzfnRRwgaBWW6ZoFVuG6Jghxs78oQNu-2y8FIYE6F4OyjepsUhzvJ4ZeU1j93-qGw5fVU5KT37IBL3eqWytS32eJtecqxUbQye6gi1ccOMXmF4aR03IrJDPMJ61qUwsq03jiaD8jPJVAyPeBzYdKNtpp4yON2ZCSn0VLw6Nhdso5cUdiyMTK2HnJWyIc_ctyZuDW2z-nEQtuWaQqzH0hRb-HRolq3uFZnzkR__yj3WF49_fPdXk26dfkPUbhcub4vnYZEZj88D3m4X9Sqj6mWR_lj9A4sCXzk.&Targets=82806,83483,192013,82549,178091,191114,193787,195361&Values=DECBHHicJY7JDQRBDAIT4mF8O__Elp79VEkIH-2YwRI0A8twHJAdoG8p2QX7Glx3eKvsk43MrA9ErjNQvjeotlpxx1FjVqiVxTEll5PibaNpe6JWokPT7-r56aRXphRqvwdiPx1feFb-VKkP2yz4l8LW5P0A25IpXw..&RawValues=NGUSERID%252C53308f5604427e0a3c745d5ac001a8f1%252CKXID%252C%252CTID%252C13956913506747325609279488%252CTIL%252C6600531965943&random=csdywsN,bjtbdAwfvxIzk&Params.tag.transactionid=13956913506747325609279488&Params.User.UserID=53308f5604427e0a3c745d5ac001a8f1" width="1" height="1" border="0" /></div>
+<script src='http://js.moatads.com/turnerd8523/moatad.js#moatClientLevel1=588213&moatClientLevel2=795105&moatClientLevel3=&moatClientLevel4=-&moatClientSlicer1=-&moatClientSlicer2=-' type='text/javascript'></script>
+</body>
+</html>

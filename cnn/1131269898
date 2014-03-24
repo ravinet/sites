@@ -1,0 +1,38 @@
+PHTTP198.189.255.138"¿
+cGET /z/tvecnn_1@135347/manifest.f4m?g=ERBQCHMORMOS&hdcore=3.1.0&plugin=aasp-3.1.0.43.124 HTTP/1.1
+Host: turnerhd-f.akamaihd.net
+Connection: keep-alive
+vUser-Agent: Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/31.0.1650.63 Safari/537.36
+Accept: */*
+Referer: http://www.cnn.com/
+$Accept-Encoding: gzip,deflate,sdch
+!Accept-Language: en-US,en;q=0.8
+)Cookie: _alid_=6x6WhOV8N97Y9B5p/tKy5g==
+
+*÷
+
+HTTP/1.1 200 OK
+Server: AkamaiGHost
+Mime-Version: 1.0
+Content-Type: video/f4m
+Content-Length: 963
+.Last-Modified: Mon, 24 Mar 2014 15:27:26 GMT
+(Expires: Mon, 24 Mar 2014 20:02:36 GMT
+$Cache-Control: max-age=0, no-cache
+Pragma: no-cache
+%Date: Mon, 24 Mar 2014 20:02:36 GMT
+Connection: keep-alive
+gSet-Cookie: _alid_=6x6WhOV8N97Y9B5p/tKy5g==; path=/z/tvecnn_1@135347/; domain=turnerhd-f.akamaihd.net
+Å
+<?xml version="1.0" encoding="UTF-8"?>
+<manifest xmlns="http://ns.adobe.com/f4m/1.0" xmlns:akamai="uri:akamai.com/f4m/1.0">
+  <akamai:version>2.0</akamai:version>
+  <akamai:bw>5000</akamai:bw>
+  <id>tvecnn_1</id>
+  <streamType>live</streamType>
+  <akamai:streamType>live</akamai:streamType>
+  <bootstrapInfo profile="named" id="bootstrap_tiny" url="tiny_2dc2fe17ee021fdd-p.bootstrap"/>
+  <media bitrate="146" url="tiny_2dc2fe17ee021fdd-p_" bootstrapInfoId="bootstrap_tiny">
+    <metadata>AgAKb25NZXRhRGF0YQMABXdpZHRoAEBywAAAAAAAAAZoZWlnaHQAQGUAAAAAAAAACWZyYW1lcmF0ZQBAPfhR64UeuAAXdmlkZW9rZXlmcmFtZV9mcmVxdWVuY3kAQAAEGaApAEIADGF1ZGlvY29kZWNpZAIABG1wNGEADWF1ZGlvZGF0YXJhdGUAQDAAAAAAAAAAD2F1ZGlvc2FtcGxlcmF0ZQBAz0AAAAAAAAANYXVkaW9jaGFubmVscwA/8AAAAAAAAAALYXVkaW9kZXZpY2UCABtFbGVtZW50YWwgVGVjaG5vbG9naWVzIExpdmUAC3ZpZGVvZGV2aWNlAgAbRWxlbWVudGFsIFRlY2hub2xvZ2llcyBMaXZlAAx2aWRlb2NvZGVjaWQCAARhdmMxAA12aWRlb2RhdGFyYXRlAEBgQAAAAAAAAAAJ</metadata>
+  </media>
+</manifest>
