@@ -1,0 +1,25 @@
+PHTTP204.79.197.200"ì
+\GET /msnhomepagehistory.aspx?sid=9DAAB8AC916A4A7BAE27EF3335CF80E3&_=1395691476175 HTTP/1.1
+Host: www.bing.com
+Connection: keep-alive
+Accept: */*
+vUser-Agent: Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/31.0.1650.63 Safari/537.36
+Referer: http://www.msn.com/
+$Accept-Encoding: gzip,deflate,sdch
+!Accept-Language: en-US,en;q=0.8
+çCookie: _FS=NU=1; _SS=SID=9DAAB8AC916A4A7BAE27EF3335CF80E3; MUIDB=119EA0C04F366A1A2339A6C74E256A08; SRCHD=D=3275764&MS=3275764&AF=MSN005; SRCHUID=V=2&GUID=8605E432837C4B3C919F88F4C0434463; SRCHUSR=AUTOREDIR=0&GEOVAR=&DOB=20140324
+
+*à
+HTTP/1.1 200 OK
+Cache-Control: private
+Content-Length: 24
+.Content-Type: text/javascript; charset=utf-8
+Server: Microsoft-IIS/8.0
+?P3P: CP="NON UNI COM NAV STA LOC CURa DEVa PSAa PSDa OUR IND"
+5Set-Cookie: _FS=MB=1&NU=1; domain=.bing.com; path=/
+sSet-Cookie: SRCHD=MS=3275764&D=3275764&AF=MSN005; expires=Wed, 23-Mar-2016 20:04:36 GMT; domain=.bing.com; path=/
+Edge-control: no-store
+ƒX-MSEdge-Ref: Ref A: 5D31A501B6BE4C35B7868A7D363B5AEB Ref B: 5B720A86F7D04B428720DE408D9C91E3 Ref C: Mon Mar 24 13:04:36 2014 PST
+%Date: Mon, 24 Mar 2014 20:04:35 GMT
+
+window.SearchHistory={};

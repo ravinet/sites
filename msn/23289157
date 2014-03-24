@@ -1,0 +1,28 @@
+»HTTPS184.85.51.182"µ
+GET /crossdomain.xml HTTP/1.1
+$Host: secure.img-cdn.mediaplex.com
+Connection: keep-alive
+vUser-Agent: Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/31.0.1650.63 Safari/537.36
+Accept: */*
+$Accept-Encoding: gzip,deflate,sdch
+!Accept-Language: en-US,en;q=0.8
+
+*¹
+HTTP/1.1 200 OK
+Server: Apache
+.Last-Modified: Tue, 23 Apr 2013 23:02:20 GMT
+ETag: "72b7-d6-4db0f2d6db700"
+Accept-Ranges: bytes
+Content-Length: 214
+ Access-Control-Allow-Origin: *
+(Access-Control-Allow-Credentials: true
+*Content-Type: text/x-cross-domain-policy
+%Date: Mon, 24 Mar 2014 20:04:36 GMT
+Connection: keep-alive
+Ø
+<?xml version="1.0"?>
+<!DOCTYPE cross-domain-policy 
+  SYSTEM "http://www.adobe.com/xml/dtds/cross-domain-policy.dtd">
+<cross-domain-policy>
+  <allow-access-from domain="*" secure="false" />
+</cross-domain-policy>

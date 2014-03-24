@@ -1,0 +1,312 @@
+ªHTTPS184.85.51.182"æ
+(GET /0/18916/lt-generator.xml HTTP/1.1
+$Host: secure.img-cdn.mediaplex.com
+Connection: keep-alive
+vUser-Agent: Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/31.0.1650.63 Safari/537.36
+Accept: */*
+$Accept-Encoding: gzip,deflate,sdch
+!Accept-Language: en-US,en;q=0.8
+
+*÷7
+HTTP/1.1 200 OK
+Server: Apache
+.Last-Modified: Fri, 21 Mar 2014 16:09:34 GMT
+$ETag: "1343377-1a7f-4f5201c9be687"
+Accept-Ranges: bytes
+Content-Length: 6783
+ Access-Control-Allow-Origin: *
+(Access-Control-Allow-Credentials: true
+Content-Type: text/xml
+%Date: Mon, 24 Mar 2014 20:04:36 GMT
+Connection: keep-alive
+Å5
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+
+<rates>
+	
+	<!-- promo -->
+	<promo>00290</promo>
+	
+	
+	<!-- loan -->
+	<item>
+		<!-- $$5_1_ARM_MONTHLY_PAYMENT_150K_INITIAL$$-->
+		<priceRange>$150k loan</priceRange>
+		<monthly>$632/mo</monthly>
+		<priceRange>$200k loan</priceRange>
+		<monthly>$843/mo</monthly>
+		<priceRange>$250k loan</priceRange>
+		<monthly>$1,054/mo</monthly>
+		<priceRange>$300k loan</priceRange>
+		<monthly>$1,245/mo</monthly>
+		<priceRange>$350k loan</priceRange>
+		<monthly>$1,453/mo</monthly>
+		<priceRange>$400k loan</priceRange>
+		<monthly>$1,686/mo</monthly>
+		<priceRange>$450k loan</priceRange>
+		<monthly>$1,958/mo</monthly>
+		<priceRange>$500k loan</priceRange>
+		<monthly>$2,143/mo</monthly>
+		<priceRange>$150,000 loan</priceRange>
+		<monthly>$632/mo</monthly>
+		<priceRange>$200,000 loan</priceRange>
+		<monthly>$843/mo</monthly>
+		<priceRange>$250,000 loan</priceRange>
+		<monthly>$1,054/mo</monthly>
+		<priceRange>$300,000 loan</priceRange>
+		<monthly>$1,245/mo</monthly>
+		<priceRange>$350,000 loan</priceRange>
+		<monthly>$1,453/mo</monthly>
+		<priceRange>$400,000 loan</priceRange>
+		<monthly>$1,686/mo</monthly>
+		<priceRange>$450,000 loan</priceRange>
+		<monthly>$1,958/mo</monthly>
+		<priceRange>$500,000 loan</priceRange>
+		<monthly>$2,143/mo</monthly>
+	</item>
+	
+	
+	<!-- start old set up -->
+	<item>
+		<!-- $$5_1_ARM_MONTHLY_PAYMENT_300K_INITIAL$$-->
+		<priceRange>$300k loan</priceRange>
+		<monthly>$1,245/mo</monthly></item>
+	<item>
+		<!-- $$5_1_ARM_MONTHLY_PAYMENT_400K_INITIAL$$-->
+		<priceRange>$400k loan</priceRange>
+		<monthly>$1,686/mo</monthly>
+	</item>
+	<!-- end old set up -->
+	
+	
+	<!-- button text -->
+	<btnText>call to action</btnText>
+	
+	
+	<!-- APR 5/1 ARM 225k -->
+	<apr>2.78% APR</apr>
+	<!-- APR 15 year 225k-->
+	<apr>3.25% APR</apr>
+	<!-- APR 30 year 225k-->
+	<apr>4.13% APR</apr>
+	<!-- rates 5/1 ARM 225k-->
+	<rates>2.75%</rates>
+	<!-- rates 15 year 225k-->
+	<rates>3.25%</rates>
+	<!-- rates 30 year 225k-->
+	<rates>4.13%</rates>
+	<!-- monthly 5/1 ARM 225k-->
+	<moPayment>$919</moPayment>
+	<!-- monthly 15 year 225k-->
+	<moPayment>$1,581</moPayment>
+	<!-- monthly 30 year 225k-->
+	<moPayment>$1,090</moPayment>
+	
+	
+	<!-- slot machine OBSOLETE AND NOT BEING USED-->
+	<slotMachine>
+		<thirtyYear_rate>0.00</thirtyYear_rate>
+		<thirtyYear_apr>0.00</thirtyYear_apr>
+		<fifteenYear_rate>0.00</fifteenYear_rate>
+		<fifteenYear_apr>0.00</fifteenYear_apr>
+		<adjustable_rate>0.00</adjustable_rate>
+		<adjustable_apr>0.00</adjustable_apr>
+	</slotMachine>
+	
+	
+	<!-- monthly savings OBSOLETE AND NOT BEING USED -->
+	<monthlySavings>$0</monthlySavings>
+	
+	
+	<!-- offers OBSOLETE AND NOT BEING USED -->
+	<offers>
+		<offer1>0.00%</offer1>
+		<offer2>0.00%</offer2>
+		<offer3>0.00%</offer3>
+	</offers>
+	
+	
+	<!-- higher APRs OBSOLETE AND NOT BEING USED -->
+	<higherRates>
+		<thirtyYear>
+			<rate>0.00%</rate>
+			<rate>0.00%</rate>
+		</thirtyYear>
+		<fifteenYear>
+			<rate>0.00%</rate>
+			<rate>0.00%</rate>
+		</fifteenYear>
+		<arm>
+			<rate>0.00%</rate>
+			<rate>0.00%</rate>
+		</arm>
+	</higherRates>
+	
+	
+	<!-- rounded up APRs -->
+	<aprRoundUp>
+		<thirtyYear>
+			<apr>4.13% APR</apr>
+		</thirtyYear>
+		<fifteenYear>
+			<apr>3.25% APR</apr>
+		</fifteenYear>
+		<arm>
+			<apr>2.78% APR</apr>
+		</arm>
+	</aprRoundUp>
+	
+	<!-- rounded up rates -->
+	<ratesRoundUp>
+		<thirtyYear>
+			<rates>4.13%</rates>
+		</thirtyYear>
+		<fifteenYear>
+			<rates>3.25%</rates>
+		</fifteenYear>
+		<arm>
+			<rates>2.75%</rates>
+		</arm>
+	</ratesRoundUp>
+	
+	
+	
+	
+	<!-- AUTO -->
+	
+	<!-- 36 months loan term interest rates -->
+	<loanTerm36rate>
+		<new>0.00%</new>
+		<used>0.00%</used>
+		<refi>0.00%</refi>
+	</loanTerm36rate>
+	
+	<!-- 36 months loan term APR -->
+	<loanTerm36APR>
+		<new>2.31% APR</new>
+		<used>2.35% APR</used>
+		<refi>2.35% APR</refi>
+	</loanTerm36APR>
+	
+	<!-- 48 months loan term interest rates -->
+	<loanTerm48rate>
+		<new>0.00%</new>
+		<used>0.00%</used>
+		<refi>0.00%</refi>
+	</loanTerm48rate>
+	
+	<!-- 48 months loan term interest APR -->
+	<loanTerm48APR>
+		<new>2.18% APR</new>
+		<used>2.24% APR</used>
+		<refi>2.24% APR</refi>
+	</loanTerm48APR>
+	
+	<!-- 60 months loan term interest rates -->
+	<loanTerm60rate>
+		<new>0.00%</new>
+		<used>0.00%</used>
+		<refi>0.00%</refi>
+	</loanTerm60rate>
+	
+	<!-- 60 months loan term interest APR -->
+	<loanTerm60APR>
+		<new>2.14% APR</new>
+		<used>1.99% APR</used>
+		<refi>2.24% APR</refi>
+	</loanTerm60APR>
+	
+	<!-- 36 months loan term credit score -->
+	<loanTerm36credit>
+		<new>765</new>
+		<used>809</used>
+		<refi>741</refi>
+	</loanTerm36credit>
+	
+	<!-- 48 months loan term credit score -->
+	<loanTerm48credit>
+		<new>809</new>
+		<used>724</used>
+		<refi>628</refi>
+	</loanTerm48credit>
+	
+	<!-- 60 months loan term credit score -->
+	<loanTerm60credit>
+		<new>592</new>
+		<used>747</used>
+		<refi>670</refi>
+	</loanTerm60credit>
+	
+    <!-- loan -->
+
+		<!-- $$Additional Loan Amounts 5/1 AMR$$-->
+		<priceRange>$175k loan</priceRange>
+		<monthly>$738/mo</monthly>
+		<priceRange>$175,000 loan</priceRange>
+		<monthly>$738/mo</monthly>
+		<priceRange>$225k loan</priceRange>
+		<monthly>$919/mo</monthly>
+		<priceRange>$225,000 loan</priceRange>
+		<monthly>$919/mo</monthly>
+		<priceRange>$700k loan</priceRange>
+		<monthly>$3,001/mo</monthly>
+		<priceRange>$700,000 loan</priceRange>
+		<monthly>$3,001/mo</monthly>
+		<priceRange>$750k loan</priceRange>
+		<monthly>$3,014/mo</monthly>
+		<priceRange>$750,000 loan</priceRange>
+		<monthly>$3,014/mo</monthly>
+		<priceRange>$950k loan</priceRange>
+		<monthly>$3,944/mo</monthly>
+		<priceRange>$950,000 loan</priceRange>
+		<monthly>$3,944/mo</monthly>
+		
+	<!-- APR 30-year 200K -->
+	<apr>4.25% APR</apr>
+	<!-- APR 30-year 250k -->
+	<apr>4.30% APR</apr>
+	<!-- APR 30-year 300k -->
+	<apr>4.27% APR</apr>
+	<!-- APR 30-year 400k -->
+	<apr>4.30% APR</apr>
+
+    <!-- monthly 30-year 200k -->
+	<moPayment>$984</moPayment>
+	<!-- monthly 30-year 250k -->
+	<moPayment>$1,230</moPayment>
+	<!-- monthly 30-year 300k -->
+	<moPayment>$1,454</moPayment>
+	<!-- monthly 30-year 400k -->
+	<moPayment>$1,968</moPayment>
+
+    <!-- APR 5/1 ARM 150K -->
+	<apr>3.18% APR</apr>
+    <!-- APR 5/1 ARM 200K -->
+	<apr>3.06% APR</apr>
+    <!-- APR 5/1 ARM 250K -->
+	<apr>3.09% APR</apr>
+    <!-- APR 5/1 ARM 300K -->
+	<apr>2.91% APR</apr>
+    <!-- APR 5/1 ARM 350K -->
+	<apr>3.22% APR</apr>
+    <!-- APR 5/1 ARM 400K -->
+	<apr>2.12% APR</apr>
+    <!-- APR 5/1 ARM 450K -->
+	<apr>3.33% APR</apr>
+    <!-- APR 5/1 ARM 500K -->
+	<apr>3.13% APR</apr>
+    <!-- APR 5/1 ARM 700K -->
+	<apr>3.13% APR</apr>
+    <!-- APR 5/1 ARM 750K -->
+	<apr>2.75% APR</apr>
+    <!-- APR 5/1 ARM 950K -->
+	<apr>2.90% APR</apr>
+    <!-- APR 5/1 ARM 175K -->
+	<apr>3.00% APR</apr>
+    
+    <!-- APR 30-year 175K -->
+	<apr>4.25% APR</apr>
+    <!-- monthly 30-year 175k -->
+	<moPayment>$861</moPayment>
+    
+</rates>

@@ -1,0 +1,26 @@
+PHTTP91.190.218.17"Ò
++GET /detection/detection_as3.swf HTTP/1.1
+Host: api.skype.com
+Connection: keep-alive
+vUser-Agent: Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/31.0.1650.63 Safari/537.36
+Accept: */*
+Referer: http://www.msn.com/
+$Accept-Encoding: gzip,deflate,sdch
+!Accept-Language: en-US,en;q=0.8
+
+*®
+ HTTP/1.1 301 Moved Permanently
+Server: nginx/1.4.2
+%Date: Mon, 24 Mar 2014 20:04:37 GMT
+Content-Type: text/html
+Content-Length: 184
+Connection: keep-alive
+CLocation: https://secure.skype.com/i/common/swf/detection_as3.swf
+º
+<html>
+<head><title>301 Moved Permanently</title></head>
+<body bgcolor="white">
+<center><h1>301 Moved Permanently</h1></center>
+<hr><center>nginx/1.4.2</center>
+</body>
+</html>
