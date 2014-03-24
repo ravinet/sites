@@ -1,0 +1,29 @@
+PHTTP64.70.28.71"«
+{GET /brands/People/sections/Polls/articles/news032414/polls?add_document_domain=true&callback=renderNewsPollTout HTTP/1.1
+Host: profiles.people.com
+Connection: keep-alive
+Accept: */*
+vUser-Agent: Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/31.0.1650.63 Safari/537.36
+(Referer: http://www.people.com/people/
+$Accept-Encoding: gzip,deflate,sdch
+!Accept-Language: en-US,en;q=0.8
+öCookie: TI_PREFS=default; s_cc=true; s_vnum_d=1395720000768%26vn%3D1; sinvisit_d=true; s_vnum_w=1396152000772%26vn%3D1; sinvisit_w=true; s_vnum_m=1396324800776%26vn%3D1; sinvisit_m=true; TICM_omni=c16%3Dhomepage%7Ec11%3D; s_sq=%5B%5BB%5D%5D; most-recently-loaded=http%3A//www.people.com/people/; __gads=ID=5dc2ebbdce0d0375:T=1395693773:S=ALNI_Mbh2o2Idd9O-w3nQIjDCiHebOCUgA
+
+*ÿ
+
+HTTP/1.1 200 
+%Date: Mon, 24 Mar 2014 20:42:53 GMT
+Server: Apache
+=X-Powered-By: Phusion Passenger (mod_rails/mod_rack) 3.0.18
+4Cache-Control: max-age=0, private, must-revalidate
+#X-UA-Compatible: IE=Edge,chrome=1
+X-Runtime: 0.014327
+QSet-Cookie: _profile_session=9f4bfdddaa0d6b73a60057a50253d36f; path=/; HttpOnly
+*ETag: "c76256e56cb30093c434c04cf58d4a54"
+Status: 200
+Content-Length: 870
+!Keep-Alive: timeout=5, max=1000
+Connection: Keep-Alive
+5Content-Type: application/javascript; charset=utf-8
+è
+renderNewsPollTout([{"description":"Stella McCartney's 'Maleficent' collection costs $75 - $145. Would you buy a costume for your kid?","id":159603,"name":"Stella McCartney's 'Maleficent' collection costs $75 - $145. Would you buy a costume for your kid?","position":0,"resource_id":835280,"starts_at":null,"stops_at":null,"vote_again_in":0,"questions":[{"id":94537,"poll_id":159603,"position":0,"text":"Stella McCartney's 'Maleficent' collection costs $75 - $145. Would you buy a costume for your kid?","total_vote_count":3357,"answers":[{"id":181928,"image_enlarge_url":null,"image_source_url":"http://img2.timeinc.net/people/i/2014/cbb/blog/140331/maleficent-300x400.jpg","position":1,"question_id":94537,"text":"Yes","vote_count":292},{"id":181929,"image_enlarge_url":null,"image_source_url":null,"position":2,"question_id":94537,"text":"No","vote_count":3065}]}]}])

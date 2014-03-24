@@ -1,0 +1,260 @@
+PHTTP198.189.255.206"¥
+jGET /prod/assets/themes/magazines/SUBS/templates/velocity/site/pe-chop190expfooter4for1/tout.js HTTP/1.1
+&Host: subscription-assets.people.com
+Connection: keep-alive
+Accept: */*
+vUser-Agent: Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/31.0.1650.63 Safari/537.36
+(Referer: http://www.people.com/people/
+$Accept-Encoding: gzip,deflate,sdch
+!Accept-Language: en-US,en;q=0.8
+öCookie: TI_PREFS=default; s_cc=true; s_vnum_d=1395720000768%26vn%3D1; sinvisit_d=true; s_vnum_w=1396152000772%26vn%3D1; sinvisit_w=true; s_vnum_m=1396324800776%26vn%3D1; sinvisit_m=true; TICM_omni=c16%3Dhomepage%7Ec11%3D; s_sq=%5B%5BB%5D%5D; most-recently-loaded=http%3A//www.people.com/people/; __gads=ID=5dc2ebbdce0d0375:T=1395693773:S=ALNI_Mbh2o2Idd9O-w3nQIjDCiHebOCUgA
+
+*÷e
+HTTP/1.1 200 OK
+Server: Apache
+.Last-Modified: Tue, 11 Mar 2014 15:06:27 GMT
+ETag: "314c-4f456107042c0"
+Accept-Ranges: bytes
+Content-Length: 12620
+”P3P: CP="PHY ONL UNI PUR FIN COM NAV INT DEM CNT STA PRE CUR ADMa DEVa TAIo PSAo PSDo IVAo IVDo CONo TELo OTPi OUR UNRo PUBi OTRo IND DSP CAO COR"
+(Content-Type: application/x-javascript
+%Date: Mon, 24 Mar 2014 20:42:54 GMT
+Connection: keep-alive
+Îb
+tcmAds.createFooterTout = function(adVars) {
+
+	if (typeof adVars.name == "undefined") { throw "You must supply a name for this tout"; } 	
+
+    var ad = {
+        "channels" : {
+            dflt: "https://subscription.people.com/storefront/subscribe-to-people/link/1020915.html",
+            Tablet: "https://subscription.people.com/storefront/subscribe-to-people/link/1020916.html",
+            Sandbox: "https://subscription.people.com/storefront/subscribe-to-people/link/1020951.html"
+		},
+        "toutName" : adVars.name,
+        "requiredFlashVersion" : 9,
+        "flash_ad" : {
+            "small" : {
+                "width" : 994,
+                "height" : 73,
+                "assetId" : "footer-small",
+                "src" : "footer-small.swf"
+            },
+            "large" : {
+                "width" : 994,
+                "height" : 242,
+                "assetId" : "footer-big",
+                "src" : "footer-big.swf"
+            }
+        },
+        "png_ad" : {
+            "small" : {
+                "width" : 994,
+                "height" : 73,
+                "assetId": 'footer_bg',
+                "src" : 'footer_sm.png'
+            },
+            "large" : {
+                "width" : 994,
+                "height" : 242,
+                "assetId": 'footer_overlay',
+                "src" : 'footer_lg.png'
+            }
+        },
+        "resources": '',
+        "clickThroughURL" : '',
+        "eligibleBrowser" : false,
+        "showFlash": false,
+        "channel":adVars.channel,
+		"dev": false, // set to true to disable tout expansion frequency constraint
+        //METHODS
+
+        "setResourcesURL" : function(_toutName){
+        var href = window.location.href,
+        _URL = "//subscription-assets.timeinc.com/prod/assets/themes/magazines/SUBS/templates/velocity/site/"+_toutName+"/resources/images/";
+        if(/tcmtools\.ecommerce\.timeinc\.com|file:\/\/\//.test(href)){_URL = _URL.replace('//subscription-assets.timeinc.com/prod/assets/themes/magazines/', '//tcmtools.ecommerce.timeinc.com/');}
+        if(/qa\/assets\//.test(href)){_URL = _URL.replace("prod/assets/","qa/assets/");}
+        this.resources = _URL;
+        },
+        "setValues" : function(){
+            this.clickThroughURL = this.formatForDoubleClick(this.channels[this.channel]);
+            this.flash_ad.large.divId = this.toutName + '-' + this.flash_ad['large'].assetId;
+            this.flash_ad.small.divId = this.toutName + '-' + this.flash_ad['small'].assetId;
+            this.png_ad.small.divId = this.toutName + '-' + this.png_ad['small'].assetId;
+            this.png_ad.large.divId = this.toutName + '-' + this.png_ad['large'].assetId;
+        },
+        "formatForDoubleClick": function (url) {
+                 
+            var tcm_dfpGet = adVars.clickTracking.dartGet,
+                extra_qs = "",
+                qs_param, qs_val;
+
+            if (tcm_dfpGet != "%c") {
+                url = tcm_dfpGet + url.replace("://","%3a%2f%2f");
+            }
+
+            for (qs_param in adVars.subs3Tracking) {
+                qs_val = adVars.subs3Tracking[qs_param];
+                
+                if (/^%%PATTERN/.test(qs_val)) qs_val = "0000"; 
+                if (qs_val == "") qs_val = "null";
+
+                extra_qs += "&" + qs_param + "=" + escape(qs_val);
+            }
+
+            // the first "&" should be a "?"
+            if(!/\?/.test(url)){
+                extra_qs = extra_qs.replace("&", "?");
+            }
+
+            return url + extra_qs;
+
+        },
+        "getBrowserEligibility": function() {
+            var ua = navigator.userAgent,  eligible = false,  version = 0;
+            if (( navigator.userAgent.indexOf('Safari') > 0 ) && !((navigator.userAgent.match('/(iPhone|iPad|iPod)/')))) { // Chrome and Safari both contain 'Safari'
+                if ( ua.indexOf('Chrome') > 0 ) { // Chrome
+                    version = ua.split('Chrome/')[1].split('.')[0];
+                    if ( version >= 7 ) {
+                        eligible = true;
+                    }
+                } else { // Safari
+                    version = ua.split('Version/')[1].split('.')[0];
+                    if ( version >= 5 ) {
+                        eligible = true;
+                    }
+                }
+            }
+            this.eligibleBrowser = eligible;
+        },
+        "getFlashVersion" : function(){ 
+          // ie
+          try {
+            try {
+              // avoid fp6 minor version lookup issues
+              // see: http://blog.deconcept.com/2006/01/11/getvariable-setvariable-crash-internet-explorer-flash-6/
+              var axo = new ActiveXObject('ShockwaveFlash.ShockwaveFlash.6');
+              try { axo.AllowScriptAccess = 'always'; }
+              catch(e) { return '6,0,0'; }
+            } catch(e) {}
+            return new ActiveXObject('ShockwaveFlash.ShockwaveFlash').GetVariable('$version').replace(/\D+/g, ',').match(/^,?(.+),?$/)[1];
+          // other browsers
+          } catch(e) {
+            try {
+              if(navigator.mimeTypes["application/x-shockwave-flash"].enabledPlugin){
+            return (navigator.plugins["Shockwave Flash 2.0"] || navigator.plugins["Shockwave Flash"]).description.replace(/\D+/g, ",").match(/^,?(.+),?$/)[1];
+              }
+            } catch(e) {}
+          }
+          return '0,0,0';
+        },
+        "getFlashEligibility": function() {
+        var version = this.getFlashVersion().split(',').shift();
+        return (version < this.requiredFlashVersion) ?
+            this.showFlash = false :
+            this.showFlash = true;
+        },
+        "build" : function(){
+            this.setResourcesURL(this.toutName);
+            this.getBrowserEligibility();
+            this.getFlashEligibility();
+            this.setValues();
+
+            if(this.showFlash) {
+                this.insertFlash('large');
+                this.insertFlash('small');
+                
+                // take up the space since the flash/jpg is absolute positioned
+                document.write("<div style='height: " + this.flash_ad.small.height + "px; width: " + this.flash_ad.small.width + "px;'></div>");
+            }else{
+                this.insertPng('large');
+                this.insertPng('small');
+                // take up the space since the flash/jpg is absolute positioned
+                document.write("<div style='height: " + this.png_ad.small.height + "px; width: " + this.png_ad.small.width + "px;'></div>");
+            }
+			this.exposeTout();
+        },
+		inIframe: function() {
+			return (window.frameElement) ? true : false;
+		},
+		exposeTout: function() {
+			tcmAds[this.toutName] = this;
+			if (this.inIframe()) {
+				if (typeof window.parent.tcmAds !== 'undefined') {
+					window.parent.tcmAds[this.toutName] = tcmAds[this.toutName];
+				} else {
+					window.parent.tcmAds = tcmAds;
+				}
+			}
+		},
+        "createCookie": function() {
+        var name = this.toutName,                                                                                                                                                 value = "true",
+            days = 1,
+        domainArray = window.location.hostname.split('.'),tcmTopLevelDomain = domainArray.slice(-2).join('.'),domain = "; domain=."+tcmTopLevelDomain;
+            if (days) {
+                var date = new Date();
+                date.setTime(date.getTime()+(days*24*60*60*1000));
+                var expires = "; expires="+date.toGMTString();                                                                                                                                                                                }
+            else var expires = "";
+            document.cookie = name+"="+value+expires+"; path=/"+domain;
+        },
+        "getCookie": function(name){
+            var nameEQ = name + "=";
+            var ca = document.cookie.split(';');
+            for(var i=0;i < ca.length;i++) {                                                                                                                                                                                                      var c = ca[i];
+                while (c.charAt(0)==' ') c = c.substring(1,c.length);
+                if (c.indexOf(nameEQ) == 0) return c.substring(nameEQ.length,c.length);
+            }                                                                                                                                                                                                                                 return null;
+        },
+        "showExpanded": function(obj_id) {
+        if((navigator.cookieEnabled && !this.getCookie(this.toutName)&&!this.inIframe())|| this.dev){
+            this.createCookie();
+            var obj = document.getElementById(obj_id);
+            if(obj.style.display=='none'){
+                obj.style.display='block';
+                setTimeout(function(){ obj.style.display='none'; }, 8000);
+            }
+        }
+        },
+        "insertFlash": function(size) {
+            var ie = navigator.userAgent.match('/(msie)/');
+            var oid = this.flash_ad[size].assetId;
+            var width = this.flash_ad[size].width;
+            var height = this.flash_ad[size].height;
+            var url = this.resources + this.flash_ad[size].src + '?clickTag='+this.clickThroughURL;
+            var div_id = this.flash_ad[size].divId; 
+            var extra = '<object type="application/x-shockwave-flash" data="'+url+'" width="'+width+'" height="'+height+'"><param name="quality" value="high"><param name="wmode" value="transparent"><param name="swfversion" value="11.0.0.0"></object>';
+            var non_ie = !ie ? extra : '';
+            var onmouseover = (size == 'small') ? ' onmouseover="tcmAds[\''+ this.toutName +'\'].showExpanded(\''+ this.toutName + '-' + this.flash_ad['large'].assetId +'\');" ': '';
+            var style = (size == 'large') ? 'style="z-index: 2; top: -15px;display:none;width:'+this.flash_ad['large'].width+'px; height: '+this.flash_ad['large'].height + 'px; overflow: hidden;top left no-repeat; position: absolute !important;"' : 'style="overflow: hidden; position: absolute;"';
+            var closebtn = (size == 'large') ? this.getCloseBtn( this.flash_ad['large'].divId ) : '';
+   
+
+            document.write('<div id="'+div_id+'" '+ onmouseover + style +'><div style="z-index:3px;position: absolute !important;top:0px;left:0px;width:100%;height:100%;cursor:pointer;"><a href="'+this.clickThroughURL+'" target="_blank"><img src="'+this.resources+'spacer.gif" style="border:none;width:100%;height:100%;" /></a></div>' + closebtn + '<object id="'+oid+'" classid="clsid:D27CDB6E-AE6D-11cf-96B8-444553540000" width="'+width+'" height="'+height+'"><param name="movie" value="'+url+'"><param name="quality" value="high"><param name="wmode" value="transparent"><param name="swfversion" value="11.0.0.0">'+non_ie+'</object></div>');
+
+        },
+        "insertPng": function(size) {
+            var oid = this.png_ad[size].assetId;
+            var width = this.png_ad[size].width;
+            var height = this.png_ad[size].height;
+            var url = this.resources + this.png_ad[size].assetId + '.jpg';
+            var div_id = this.png_ad[size].divId;
+            var onmouseover = (size == 'small') ? ' onmouseover="tcmAds[\''+ this.toutName +'\'].showExpanded(\''+ this.toutName + '-' + this.png_ad['large'].assetId +'\');" ': '';
+            var style = (size == 'large') ? 'style="z-index: 2;top: -15px;display:none;width:'+this.png_ad['large'].width+'px; height: '+this.png_ad['large'].height + 'px; overflow: hidden;top left no-repeat; position: absolute !important;"' : 'style="overflow: hidden;  position: absolute;"';
+
+            var closebtn = (size == 'large') ? this.getCloseBtn( this.png_ad['large'].divId ) : '';
+         
+            
+            document.write('<div id="'+div_id+'" '+ style +'>'+ closebtn + '<a href="'+this.clickThroughURL+'" target="_blank" '+onmouseover+'><img src="'+this.resources+this.png_ad[size].src+'" style="border:none;width:'+this.png_ad[size].width+'px;height:'+this.png_ad[size].height+'px;" /></a></div>');
+
+        },
+        getCloseBtn: function(id) {
+            return '<div id="closebtn" onclick="document.getElementById(\''+ id +'\').style.display = \'none\';" style="position: absolute; right: 0px; z-index: 9; height: 25px; width: 25px; cursor: pointer;"><img src="'+this.resources+'spacer.gif" style="border:none;width:100%;height:100%;" /></div>'
+        }
+        
+        
+    }
+    
+    ad.build();
+}
+tcmAds.createFooterTout(tcmAds['pe-chop190expfooter4for1.config']);

@@ -1,0 +1,31 @@
+PHTTP198.189.255.207"ß
+GET / HTTP/1.1
+Host: www.people.com
+Connection: keep-alive
+TAccept: text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8
+vUser-Agent: Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/31.0.1650.63 Safari/537.36
+$Accept-Encoding: gzip,deflate,sdch
+!Accept-Language: en-US,en;q=0.8
+
+*³
+ HTTP/1.1 301 Moved Permanently
+Server: Apache
+)Location: http://www.people.com/people/
+-Content-Type: text/html; charset=iso-8859-1
+Content-Length: 237
+Accept-Ranges: bytes
+X-Varnish: 1615600766
+(Expires: Mon, 24 Mar 2014 20:42:52 GMT
+.Cache-Control: max-age=0, no-cache, no-store
+Pragma: no-cache
+%Date: Mon, 24 Mar 2014 20:42:52 GMT
+Connection: keep-alive
+:Set-Cookie: TI_PREFS=default; path=/; domain=.people.com
+ï
+<!DOCTYPE HTML PUBLIC "-//IETF//DTD HTML 2.0//EN">
+<html><head>
+<title>301 Moved Permanently</title>
+</head><body>
+<h1>Moved Permanently</h1>
+<p>The document has moved <a href="http://www.people.com/people/">here</a>.</p>
+</body></html>

@@ -1,0 +1,20 @@
+PHTTP198.189.255.245"”
+GET /fcs/ident HTTP/1.1
+#Host: fms2.pointroll.speedera.net
+Connection: keep-alive
+vUser-Agent: Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/31.0.1650.63 Safari/537.36
+Accept: */*
+dReferer: http://www.people.com/people/static/h/iframe/homepage-progressive/must-see-ad-iframe.html
+$Accept-Encoding: gzip,deflate,sdch
+!Accept-Language: en-US,en;q=0.8
+
+*è
+HTTP/1.1 200 OK
+Cache-Control: no-cache
+Connection: Keep-Alive
+Content-Length: 75
+Server: FlashCom/4.5.2
+Content-Type: application/xml
+M
+<?xml version="1.0" encoding="utf-8" ?>
+<fcs><ip>198.189.255.245</ip></fcs>

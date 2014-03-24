@@ -1,0 +1,23 @@
+PHTTP198.189.255.245"€
+GET /crossdomain.xml HTTP/1.1
+#Host: fms2.pointroll.speedera.net
+Connection: keep-alive
+vUser-Agent: Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/31.0.1650.63 Safari/537.36
+Accept: */*
+ÉReferer: http://ads.pointroll.com/PortalServe/?pid=2264933R01020140319193612&cid=1840290&pos=h&redir=http://adclick.g.doubleclick.net/aclk%253Fsa%253DL%2526ai%253DBX0lIzZgwU6CtLISIkwTF-oGIA76Tqp8FAAAAEAEghsqSIDgAWL6C9oh7YMmW0YbIo6AZsgEOd3d3LnBlb3BsZS5jb226AQlnZnBfaW1hZ2XIAQnaAR1odHRwOi8vd3d3LnBlb3BsZS5jb20vcGVvcGxlL5gCwD7AAgLgAgDqAhIvODQ4NC9wZW8vaG9tZXBhZ2X4AoTSHpAD4AOYA-ADqAMB4AQBoAYW%2526num%253D0%2526sig%253DAOD64_1bLE8b6SB4RIJmDMdC9xzchyufXQ%2526client%253Dca-pub-9429333939093255%2526adurl%253D$CTURL$&time=1|16:42|-4&r=0.5749770430848002&flash=11.9&server=polRedir&cached=0
+$Accept-Encoding: gzip,deflate,sdch
+!Accept-Language: en-US,en;q=0.8
+
+*Ú
+HTTP/1.1 200 OK
+Cache-Control: no-cache
+Connection: Keep-Alive
+Content-Length: 187
+Server: FlashCom/4.5.2
+Content-Type: application/xml
+½
+<?xml version="1.0" encoding="utf-8" ?>
+<cross-domain-policy>
+    <allow-access-from domain="*"/>
+    <site-control permitted-cross-domain-policies="master-only"/>
+</cross-domain-policy>

@@ -1,0 +1,27 @@
+PHTTP54.209.16.75"Ä
+POST /vi-api HTTP/1.1
+$Host: api-dimestore.dmi.sensic.net
+Connection: keep-alive
+Content-Length: 336
+1Origin: http://content-dimestore.dmi.sensic.net
+vUser-Agent: Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/31.0.1650.63 Safari/537.36
+1Content-Type: application/x-www-form-urlencoded
+Accept: */*
+óReferer: http://content-dimestore.dmi.sensic.net/prod/swf/player/2.0/as2/V3player.swf?pid=11178&clickurl=&identifier=2264932&exposure=exposed&siteId=people&player_version=1&accountId=1090&pixelIds=4910901131&bgWidth=728&bgHeight=90&version=3
+$Accept-Encoding: gzip,deflate,sdch
+!Accept-Language: en-US,en;q=0.8
+QCookie: pixel_4910901131=1; dmisrvy_respondent=084df80671904393986638ea21419d57
+Ò
+requestID=1395693803001302FB0A320DD76EEDF8A&projectID=11178&exposure=exposed&accountID=1090&respondentID=084df80671904393986638ea21419d57&identifier=2264932&pixelIDs=4910901131&playerVersion=1&siteID=people&version=4&event=projectStart&action=projectStart&invitationValue=&onHTTPStatus=%5Btype%20Function%5D&onData=%5Btype%20Function%5D*à
+HTTP/1.1 200 OK
+ Access-Control-Allow-Origin: *
+-Content-Type: text/javascript;charset=UTF-8
+%Date: Mon, 24 Mar 2014 20:43:22 GMT
+9P3P: CP='IDC DSP COR CURa ADMa OUR IND PHY ONL COM STA'
+Server: Apache-Coyote/1.1
+ŒSet-Cookie: dmisrvy_project_data="11178:,"; Version=1; Domain=.sensic.net; Max-Age=31536000; Expires=Tue, 24-Mar-2015 20:43:23 GMT; Path=/
+Content-Length: 184
+Connection: keep-alive
+º
+<?xml version='1.0' encoding='iso-8859-1' ?>
+<response><responseSetID>baba8a2d676e412ba0072f875a355739</responseSetID><pixelExposureCount>4910901131_1</pixelExposureCount></response>
