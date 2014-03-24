@@ -1,24 +1,0 @@
-»HTTPS23.21.147.191"Š
-PGET /amex/prod/code/8ad9995d2b1adf037307b905700ffe20.js?ruleId=183420 HTTP/1.1
-Host: nexus.ensighten.com
-Connection: keep-alive
-Accept: */*
-vUser-Agent: Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/31.0.1650.63 Safari/537.36
-+Referer: https://www.americanexpress.com/
-$Accept-Encoding: gzip,deflate,sdch
-!Accept-Language: en-US,en;q=0.8
-
-*Ñ
-HTTP/1.1 200 OK
-Server: nginx
-%Date: Tue, 14 Jan 2014 23:58:08 GMT
-7Content-Type: application/x-javascript; charset=utf-8
-Content-Length: 488
-Connection: keep-alive
-.Last-Modified: Fri, 20 Dec 2013 00:08:59 GMT
-(Expires: Thu, 31 Dec 2037 23:55:55 GMT
-"Cache-Control: max-age=315360000
-Cache-Control: public
-Accept-Ranges: bytes
-ê
-Bootstrapper.bindDOMParsed(function(){var Bootstrapper=window["Bootstrapper"];var ensightenOptions=Bootstrapper.ensightenOptions;var imgB=new Image;var randNum2=Math.random()*1E13;imgB.src="//ad.doubleclick.net/activity;src\x3d1297440;type\x3dboomtags;cat\x3dhppros;ord\x3d"+randNum2;imgB.onload=function(){document.body.appendChild(imgB)};Bootstrapper.imageRequest("//ad.doubleclick.net/activity;src\x3d1297440;type\x3damex;cat\x3daxhppr2;ord\x3d1;num\x3d"+randNum2+"?")},183420,120191);
