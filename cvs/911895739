@@ -1,0 +1,35 @@
+»HTTPS208.71.122.1"à
+PGET /t/v1/event?migClientId=2295&migAction=cvs-homepage&migSource=mig HTTP/1.1
+Host: t.mookie1.com
+Connection: keep-alive
+Accept: image/webp,*/*;q=0.8
+vUser-Agent: Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/31.0.1650.63 Safari/537.36
+ÕReferer: http://b3.mookie1.com/2/cvs.com/index/216201415@x90,x94,x95?protocol=http://&pageTitle=CVS%20pharmacy%20-%20Online%20Pharmacy%20-%20Shop%20for%20Wellness%20and%20Beauty%20Products&value=0.00&_RM_HTML_ID_=2295&_RM_HTML_migTrans_=&_RM_HTML_migValue_=0.00&_RM_HTML_MP1_=&_RM_HTML_MP2_=&_RM_HTML_MP3_=&_RM_HTML_MP4_=&_RM_HTML_MP5_=&_RM_HTML_Action_=null&_RM_HTML_Medium_=&_RM_HTML_Source_=&_RM_HTML_Content_=&_RM_HTML_Term_=&_RM_HTML_Campaign_=&_RM_HTML_Keyword_=&_RM_HTML_Referral_=&_RM_HTML_SL_=http%3A//www.cvs.com/&_RM_HTML_SR_=&_RM_HTML_SV_=0&XE&LB_Site=cvs.com&if_nt_CookieAccept=Y&XE
+$Accept-Encoding: gzip,deflate,sdch
+!Accept-Language: en-US,en;q=0.8
+Cookie: OAX=8eu/p1NIWvUAABXT
+
+*’
+HTTP/1.1 302 Found
+%Date: Fri, 11 Apr 2014 21:13:25 GMT
+ Server: Apache/2.2.3 (Red Hat)
+Cache-Control: no-cache
+Pragma: no-cache
+'P3P: CP="NOI DSP COR NID CUR OUR NOR"
+jSet-Cookie: id=914914360956527; path=/; expires=Mon, 11-May-15 21:13:25 GMT; path=/; domain=.mookie1.com
+zSet-Cookie: mdata=1|914914360956527|1397250805; path=/; expires=Mon, 11-May-15 21:13:25 GMT; path=/; domain=.mookie1.com
+lSet-Cookie: OAX=8eu/p1NIWvUAABXT; path=/; expires=Mon, 11-May-15 21:13:25 GMT; path=/; domain=.mookie1.com
+PLocation: /t/v1/event/cc?migClientId=2295&migAction=cvs-homepage&migSource=mig
+Content-Length: 339
+Connection: close
+-Content-Type: text/html; charset=iso-8859-1
+Õ
+<!DOCTYPE HTML PUBLIC "-//IETF//DTD HTML 2.0//EN">
+<html><head>
+<title>302 Found</title>
+</head><body>
+<h1>Found</h1>
+<p>The document has moved <a href="/t/v1/event/cc?migClientId=2295&amp;migAction=cvs-homepage&amp;migSource=mig">here</a>.</p>
+<hr>
+<address>Apache/2.2.3 (Red Hat) Server at t.mookie1.com Port 80</address>
+</body></html>
