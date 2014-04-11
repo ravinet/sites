@@ -1,0 +1,28 @@
+PHTTP54.243.74.65"Ë
+/GET /tag?clientId=15&campaignId=1034 HTTP/1.1
+!Host: dynamic.cannedbanners.com
+Connection: keep-alive
+Accept: */*
+vUser-Agent: Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/31.0.1650.63 Safari/537.36
+$Referer: http://www.teespring.com/
+$Accept-Encoding: gzip,deflate,sdch
+!Accept-Language: en-US,en;q=0.8
+
+*è
+ HTTP/1.1 301 Moved Permanently
+-Content-Type: text/html; charset=iso-8859-1
+%Date: Tue, 08 Apr 2014 22:27:09 GMT
+MLocation: http://dynamic.cannedbanners.com/tag/?clientId=15&campaignId=1034
+ Server: Apache/2.2.26 (Amazon)
+Content-Length: 368
+Connection: keep-alive
+Ú
+<!DOCTYPE HTML PUBLIC "-//IETF//DTD HTML 2.0//EN">
+<html><head>
+<title>301 Moved Permanently</title>
+</head><body>
+<h1>Moved Permanently</h1>
+<p>The document has moved <a href="http://dynamic.cannedbanners.com/tag/?clientId=15&amp;campaignId=1034">here</a>.</p>
+<hr>
+<address>Apache/2.2.26 (Amazon) Server at dynamic.cannedbanners.com Port 80</address>
+</body></html>

@@ -1,0 +1,240 @@
+PHTTP209.207.213.228"Ó
+ GET /js/sas-public.js HTTP/1.1
+Host: www.shareasale.com
+Connection: keep-alive
+Accept: */*
+vUser-Agent: Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/31.0.1650.63 Safari/537.36
+%Referer: http://www.shareasale.com/
+$Accept-Encoding: gzip,deflate,sdch
+!Accept-Language: en-US,en;q=0.8
+
+*ˆF
+HTTP/1.1 200 OK
+(Content-Type: application/x-javascript
+.Last-Modified: Mon, 07 Oct 2013 17:00:33 GMT
+Accept-Ranges: bytes
+ETag: "f5eb78bc7ec3ce1:0"
+Server: Microsoft-IIS/7.0
+UP3P: policyref="/w3c/p3p.xml", CP="NON DSP COR CUR ADMi TAIi PSAi IVAi OUR STP NAV"
+%Date: Tue, 08 Apr 2014 22:24:49 GMT
+Content-Length: 8622
+°C
+/**
+	IE9 correction for ExtJs 3.1 (IE9 not detected/supported, falls back to IE6 mode for >IE8 )
+*/
+if(Ext.isIE)(function(){
+	try{
+		var v=document.documentMode||((/MSIE (\d+)/).test(navigator.userAgent)?parseInt(RegExp.$1):0);if(!v)return;
+		if(v<9){Ext.ltIE9=true;window.document.childNodes[1].className+=(' ltIE9');}
+		if(Ext.isIE6&&v!=6){Ext.onReady(function(){var b=document.body;b.className=b.className.replace(/ext-ie\d+/, 'ext-ie'+Ext.isIE);});}
+		for(var i=6;i<=v;i++)Ext['isIE'+v]=(i==v);
+		Ext.isIE=v;
+	}catch(e){}
+})();
+
+if(!window.console)window.console={log:function(){}}
+
+var sliderAnimation=function(el,w,t,ms,dir){
+	
+	Ext.extend(this, Ext.util.Observable);
+	this.superclass.constructor.call(this);
+	Ext.apply(this, this.superclass);
+	this.addEvents('indexchange');
+	
+	this.el=el;
+	this.w=w;
+	this.t=t;
+	this.tmr=null;
+	this.cue=[];
+	this.cur=el.childNodes[((Math.abs(parseInt(el.style.left))||0)/w)];
+	this.ix=this.cur.getAttribute('ix');
+	this.jump=(function(ix){
+		if(!isNaN(ix)&&ix>=0&&ix<this.el.childNodes.length){
+			for(var x=0,me=this,ar=me.el.childNodes;x<ar.length;x++){
+				if(ix==parseInt(ar[x].getAttribute('ix'))){
+					if(this.tmrAuto){
+						window.clearInterval(this.tmrAuto);// stop the auto-scroll
+						window.setTimeout(this.auto,this.ms);// skip one full interval before restarting (results in 2xinterval wait time)
+					}
+					var l=(parseInt(x)*-me.w);
+					me.el.style.left=l+'px';
+					this.cur=ar[x];
+					this.ix=ix;
+					this.fireEvent('indexchange',this.ix,this.cur);
+					break;
+				}
+			}
+		}
+	}).createDelegate(this);
+	this.auto=(function(ms,dir){
+		window.clearInterval(this.tmrAuto);
+		this.ms=ms||this.ms;
+		this.dir=dir||this.dir;
+		this.tmrAuto=window.setInterval(this.anim.createDelegate(this,[this.dir]),this.ms);
+		return this;//chainable
+	}).createDelegate(this);
+	this.anim=(function(dir){
+		var me=this;
+		if(me.tmr){
+			if(!me.cue.length||me.cue[me.cue.length-1]!=dir)me.cue=[dir];
+			else if(me.cue.length<2)me.cue.push(dir);
+			return;
+		}
+		var s=me.el.style,lft,l=lft=parseInt(s.left);
+		//shift cells from opposite end if at an end
+		if((l==0&&dir==1)||(l==(me.w-me.el.offsetWidth)&&dir==-1)){
+			dir==1?el.insertBefore(el.lastChild.cloneNode(true), el.firstChild):el.appendChild(el.firstChild.cloneNode(true));
+			s.left=((lft=l-dir*me.w))+'px';
+			dir==1?el.removeChild(el.lastChild):el.removeChild(el.firstChild);
+		}
+		// begin animation
+		me.tmr=window.setInterval((function(o,lftStart,lftEnd,delta){
+			var startTime=(new Date()).getTime();
+			return function(){
+				try{
+				var t=((new Date()).getTime()-startTime),l=Math.round((function (t,b,c,d){
+						//ease in//return c*(t/=d)*t+b;
+						//ease out//return -c*(t/=d)*(t-2)+b;
+						//ease out/in//
+						if((t/=d/2)<1)return c/2*t*t+b;return -c/2*((--t)*(t-2)-1)+b;
+					})(t,lftStart,delta,o.t));
+				l=(lftStart<lftEnd&&l>lftEnd)||(lftStart>lftEnd&&l<lftEnd)?lftEnd:l;
+				if(t>o.t||l==lftEnd){
+					o.tmr=window.clearTimeout(o.tmr);
+					l=lftEnd;
+					delete o.tmr;
+					// find the cell that's currently at the left=0 position;
+					o.cur=o.el.childNodes[Math.abs(Math.round(l/o.w))];
+					o.ix=o.cur.getAttribute('ix');
+					o.fireEvent('indexchange',o.ix,o.cur);
+					if(o.cue.length)window.setTimeout(function(){o.anim.call(o,o.cue.pop());}, 10);
+				}
+				o.el.style.left=l+'px';
+				}catch(e){
+					//console.log(e);
+					o.tmr=window.clearTimeout(o.tmr);
+				}
+				
+			};
+		})(me,lft,lft+(dir*me.w),(dir*me.w)),1);
+	}).createDelegate(this);
+	
+	if(!isNaN(ms))this.auto(ms,dir);	
+};
+
+var smoothScroll=function(el){
+	try{var b=Ext.get(Ext.isChrome||Ext.isSafari?document.body:(document.documentElement||document.body)),
+			t=(Ext.fly(document.getElementsByName(el.getAttribute('href').split('#').pop())[0]).getTop());
+		b.scrollTo('top', t-b.dom.scrollTop, true);
+		//Ext.get(b).scroll('down', t-b.scrollTop, true);
+		return true;
+	}catch(e){}
+	return false;
+}
+
+function showLogin(type){
+	var elAff=document.getElementById('hdLoginAffiliate'),
+		elMer=document.getElementById('hdLoginMerchant'),
+		affLogin=document.getElementById('affLogin'),
+		merLogin=document.getElementById('merLogin');
+	
+	switch(String(type).substr(0,1).toUpperCase()){
+		case 'A':
+			if(elMer)elMer.style.display='none';
+			if(!elAff)break;
+			else if(elAff.style.display != 'block'){
+				elAff.style.display='block';
+				if(affLogin)affLogin.style.paddingBottom='12px';
+				if(merLogin)merLogin.style.paddingBottom='';
+				Ext.fly(elAff).child('form').dom.elements.username.focus();
+				//document.getElementById('form1').elements.username.focus();
+				
+			}
+			else{
+				elAff.style.display='none';
+				if(affLogin)affLogin.style.paddingBottom='';
+				if(merLogin)merLogin.style.paddingBottom='';
+			}
+			break;
+		case 'M':
+			if(elAff)elAff.style.display='none';
+			if(!elMer)break;
+			else if(elMer.style.display != 'block'){
+				elMer.style.display='block';
+				if(merLogin)merLogin.style.paddingBottom='12px';
+				if(affLogin)affLogin.style.paddingBottom='';
+				Ext.fly(elMer).child('form').dom.elements.username.focus();
+				//document.getElementById('form2').elements.username.focus();
+			}
+			else{
+				elMer.style.display='none';
+				if(merLogin)merLogin.style.paddingBottom='';
+				if(affLogin)affLogin.style.paddingBottom='';
+			}
+			break;
+	}
+}
+
+//Login Div Click Listener 
+Ext.onReady(function(){
+	Ext.getBody().on('click',function(evt,el){
+		do{if(el&&(el.className=='headerLoginForm'||el.id=='hdLogin'))return;}while(el&&(el=el.parentNode));
+		var elAff=document.getElementById('hdLoginAffiliate'),
+			elMer=document.getElementById('hdLoginMerchant'),
+			affLogin=document.getElementById('affLogin'),
+			merLogin=document.getElementById('merLogin');
+		if(elAff)elAff.style.display = 'none';
+		if(elMer)elMer.style.display = 'none';
+		if(merLogin)merLogin.style.paddingBottom='';
+		if(affLogin)affLogin.style.paddingBottom='';
+		return;
+	});
+},null,{single:true});
+
+function showCallout(el,src){
+	if(window.callout_busy)return;
+	window.callout_busy=true;
+	var id=Ext.id(el),hsh=window.hshCallout=window.hshCallout||{};
+	if(window.calloutCurrent){
+		var elPop=Ext.get(hsh[window.calloutCurrent]),
+			lr=(/callout-item-(l|r)/).test(Ext.get(window.calloutCurrent).dom.className)&&RegExp.$1=='l'?'left':'right',
+			h=parseInt(elPop.dom.firstChild.firstChild.style.height);
+		Ext.fly(window.calloutCurrent).removeClass('callout-item-active');
+		Ext.get(elPop.dom.firstChild).animate({width:{to:302},height:{to:(Math.ceil(h*0.448)+21)}},0.5).animate({height:{to:0}},0.5,(function(el,src,lr){
+			//console.log(this,arguments);
+			this.setDisplayed(false);
+			window.callout_busy=false;
+			this.dom.firstChild.firstChild.style['borderTop'+(lr=='left'?'Right':'Left')+'Radius']='0';
+			if(el.id!=window.calloutCurrent)showCallout.defer(10,null,[el,src]);
+			window.calloutCurrent=null;
+			return;
+		}).createDelegate(elPop,[el,src,lr]));
+		Ext.get(elPop.dom.firstChild.firstChild).animate({width:{to:280},height:{to:Math.ceil(h*0.448)}},0.5);
+		return;
+	}
+	var lr=(/callout-item-(l|r)/).test(el.className)&&RegExp.$1=='l'?'left':'right',
+		h=(src.toLowerCase()=='merchantapi.png'||src.toLowerCase()=='segmentation.png')?400:360;
+	if(!hsh[id]){
+		Ext.fly(el.parentNode).clean();
+		hsh[id]=Ext.DomHelper.append(el.parentNode,
+			'<div style="display:none;text-align:'+lr+'">'+
+				'<div style="width:302px;height:0;position:relative;z-index:4;overflow:hidden;top:-1px;display:inline-block;background:white;">'+// container
+					'<div style="position:absolute;bottom:0;'+lr+':0;width:280px;height:'+Math.ceil(h*0.448).toString()+'px;border:1px solid #999;border-radius:0 0 5px 5px;padding:10px;">'+
+						'<img src="/siteimages2/infograph/'+src+'" style="width:100%;"/>'+
+					'</div>'+
+				'</div>'+
+			'</div>'
+			,true
+		).id;
+	}	
+	window.calloutCurrent=id;
+	Ext.get(id).addClass('callout-item-active');
+	var elPop=Ext.get(hsh[id]);
+	elPop.setDisplayed(true);
+	elPop.dom.firstChild.firstChild.style['borderTop'+(lr=='left'?'Right':'Left')+'Radius']='0';
+	Ext.get(elPop.dom.firstChild).animate({height:{from:0,to:Math.ceil((h*0.448)+21)}},0.5,(function(el,lr,h){
+		Ext.get(el).animate({width:{to:647},height:{to:h+22}},0.75,function(){window.callout_busy=false;});
+		Ext.get(el.firstChild).animate({width:{to:625},height:{to:h}},0.75);
+		el.firstChild.style['borderTop'+(lr=='left'?'Right':'Left')+'Radius']='5px';
+	}).createDelegate(elPop,[elPop.dom.firstChild,lr,h]),null,'motion');
+}

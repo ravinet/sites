@@ -1,0 +1,623 @@
+PHTTP74.201.120.19"é
+°GET /GSICookie.htm?cookieName=ub_49&orderAmt=&orderList=&pid=&cid=2255956&cartItems=&cartValue=&wishList=&sessionID=1954419152&pageOrprocessName=home&browserId=208519601605&userId=uid=0&userBehaviorSearchWords=&marketingScore=0&storeCurrencyCode=USD&orderId=0&manageWL=false&domain=toysrus.com HTTP/1.1
+Host: media.gsimedia.net
+Connection: keep-alive
+TAccept: text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8
+vUser-Agent: Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/31.0.1650.63 Safari/537.36
+CReferer: http://www.toysrus.com/shop/index.jsp?categoryId=2255956
+$Accept-Encoding: gzip,deflate,sdch
+!Accept-Language: en-US,en;q=0.8
+Cookie: PrefID=26-1649829724
+
+*Í¯
+HTTP/1.1 200 OK
+%Date: Tue, 08 Apr 2014 22:29:02 GMT
+Server: Apache
+lP3P: policyref="http://media.gsimedia.net/p3p.xml", CP="BUS COM COR DEVa DSP NAV NOI OUR PRE STA TAIa UNI"
+gSet-Cookie: PrefID=26-1649829724; expires=Fri, 08 Apr 2016 10:29:02 GMT; path=/; domain=.gsimedia.net
+x_transtrans: 124.2013.10.24
+&Cache-Control: public, max-age=18000
+(Expires: Wed, 09 Apr 2014 03:29:02 GMT
+.Last-Modified: Thu, 06 Oct 2011 18:03:02 GMT
+ETag: "5588-4e8ded56"
+Accept-Ranges: bytes
+Content-Length: 21896
+Connection: close
+Content-Type: text/html
+Š«
+<html>
+	<head><title></title></head>
+	<body>
+		<div style="display:block;">
+			<script type="text/javascript">
+				// create a CookieManager object 
+				var CookieManager = new Object();
+				
+				////////////////////////////////////////////////////////////////////////////////////////////////
+				/**
+				 * This variable enables/disabled console logging
+				*/
+				CookieManager.doLog = true;
+
+				////////////////////////////////////////////////////////////////////////////////////////////////
+				/**
+				 * This function can be used to create a cookie, read a cookie, and delete a cookie. This function 
+				 * was originally written by Klaus Hartl but was modified to work with the other functions here.
+				 *
+				 * @param String key The key of the cookie.
+				 * @return The value of the cookie.
+				 * @author Klaus Hartl/klaus.hartl@stilbuero.de
+				 */
+				CookieManager.cookie = function (key, value, options) {
+					
+					// key and at least value given, set cookie...
+					if (arguments.length > 1 && String(value) !== "[object Object]") {
+					
+						if (value === null || value === undefined) {
+							options.expires = -1;
+						}
+						if (typeof options.expires === 'number') {
+							var days = options.expires, t = options.expires = new Date();
+							t.setDate(t.getDate() + days);
+						}
+						value = String(value);
+						return (document.cookie = [
+							encodeURIComponent(key), '=',
+							options.raw ? value : encodeURIComponent(value),
+							options.expires ? '; expires=' + options.expires.toUTCString() : '', // use expires attribute, max-age is not supported by IE
+							options.path ? '; path=' + options.path : '',
+							options.domain ? '; domain=' + options.domain : '',
+							options.secure ? '; secure' : ''
+						].join(''));
+					}
+					// key and possibly options given, get cookie...
+					options = value || {};
+					var result, decode = options.raw ? function (s) { return s; } : decodeURIComponent;
+					return (result = new RegExp('(?:^|; )' + encodeURIComponent(key) + '=([^;]*)').exec(document.cookie)) ? decode(result[1]) : null;
+				};
+
+				//////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+				// does a previously created cookie exist?
+				CookieManager.hasCookie = false;
+				
+				CookieManager.userId = ''; 
+				CookieManager.browserId = ''; 
+				CookieManager.orderAmt = '';
+				CookieManager.pid = '';
+				CookieManager.cid = '';
+				CookieManager.cartItems = ''; // It will contain the Product Ids once they are added in cart; default 0
+				CookieManager.orderList = ''; // It will contain the Product Ids once they have been ordered; default 0
+				CookieManager.cartValue = ''; // monetary value of cart when last updated; default 0
+				CookieManager.wishList = '';
+				CookieManager.cookieName = ''; // cookie name set from request param
+				CookieManager.sessionID =  '';
+				CookieManager.cookieData;
+				CookieManager.previousCookieData;
+				CookieManager.pageOrprocessName =  '';
+				CookieManager.searchData =  '';
+				CookieManager.marketingScore =  '';
+				CookieManager.storeCurrencyCode =  '';
+				CookieManager.orderId =  '';
+				CookieManager.manageWL =  '';
+
+				////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+				/**
+				 * This function will read the values from the querystring and load the object.
+				 */
+				CookieManager.load = function() {
+					CookieManager.log('CookieManager.load - start');
+					var success = true;
+					var e,
+						a = /\+/g,  // Regex for replacing addition symbol with a space
+						r = /([^&=]+)=?([^&]*)/g,
+						d = function (s) { return decodeURIComponent(s.replace(a, " ")); },
+						q = window.location.search.substring(1);
+
+					while (e = r.exec(q))
+					{
+						try{
+						switch(d(e[1]).toLowerCase()){
+							case "userid":
+								CookieManager.userId = d(e[2]);
+								break;
+							case "browserid":
+								CookieManager.browserId = d(e[2]);
+								break;
+							case "orderamt":
+								CookieManager.orderAmt = d(e[2]);
+								break;
+							case "pid":
+								CookieManager.pid = d(e[2]);
+								break;
+							case "cid":
+								CookieManager.cid = d(e[2]);
+								break;
+							case "cartitems":
+								CookieManager.cartItems = d(e[2]);
+								break;
+							case "orderlist":
+								CookieManager.orderList = d(e[2]);
+								break;
+							case "cartvalue":
+								CookieManager.cartValue = d(e[2]);
+								break;
+							case "wishlist":
+								CookieManager.wishList = d(e[2]);
+								break;
+							case "cookiename":
+								CookieManager.cookieName = d(e[2]);
+								break;
+							case "sessionid":
+								CookieManager.sessionID = d(e[2]);
+								break;
+							case "pageorprocessname":
+								CookieManager.pageOrprocessName = d(e[2]);
+								break;
+							case "userbehaviorsearchwords":
+								CookieManager.searchData = d(e[2]);
+								break;
+							case "marketingscore":
+								CookieManager.marketingScore = d(e[2]);
+								break;
+							case "storecurrencycode":
+								CookieManager.storeCurrencyCode = d(e[2]);
+								break;
+							case "orderid":
+								CookieManager.orderId = d(e[2]);
+								break;
+							case "managewl":
+								CookieManager.manageWL = d(e[2]);
+								break;
+						}
+						} catch (e) {
+							CookieManager.log('CookieManager.load - error - name: ' + d(e[1]).toLowerCase() + ' - value: ' + d(e[2]));
+							success = false;
+							break;
+						}
+					}
+					CookieManager.log('CookieManager.load - complete - ' + success);
+					return success;
+				}
+				
+				////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+				/**
+				 * This function will attempt to read the values of a cookie should the cookie exist.
+				 * If the cookie exists, the values will be stored accordingly so they can be
+				 * manipulated/updated.
+				 */
+				CookieManager.get = function(){
+					CookieManager.log('CookieManager.get - start');
+					var success = false;
+					try{
+						
+						// get previous cookie data
+						cookieContents = CookieManager.cookie(CookieManager.cookieName);
+						if (cookieContents != null && cookieContents != ''){
+							CookieManager.hasCookie = true;
+							CookieManager.previousCookieData = cookieContents.split('&');
+						}
+						success = true;
+					} catch (er) {
+						alert('ERROR: CookieManager.get ' + er);
+					}
+					CookieManager.log('CookieManager.get - complete - ' + success);
+					return success;
+				}
+				
+				////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+				/**
+				 * This function manipulates/updates the data that will be stored in the cookie and 
+				 * sets the values within variables.
+				 */
+				CookieManager.set = function(){
+					CookieManager.log('CookieManager.set - start');
+					var success = false;
+					try{
+					
+						var date = new Date(); 
+						var hours = date.getHours();
+						var minutes = date.getMinutes();
+						var seconds = date.getSeconds();
+						
+						if (hours < 10){
+							hours = "0" + hours;
+						}
+						if (minutes < 10){
+							minutes = "0" + minutes;
+						}
+						if (seconds < 10){
+							seconds = "0" + seconds;
+						}
+						var timeStamp = date.getFullYear() + '-' + (parseInt(date.getMonth()) + 1) + '-' + date.getDate() + '_' + 
+							hours + ':' + minutes + ':' + seconds;
+							
+						//////Added for UNIX epoch time format////
+						var timeStampEpoch = Math.round(date.getTime()/1000.0);
+								
+						
+						var rvd = 0;
+						var pid = CookieManager.pid;
+						var cid = CookieManager.cid;
+						var rvPid =0;
+						var rvCid =0;
+
+						var searchTerm = CookieManager.searchData;
+						var rvSearchTerms = 0;
+						
+						
+						
+						// check if the cookie already exists or not////
+						if(CookieManager.hasCookie && CookieManager.previousCookieData != null){
+						
+							var previousSessionId = CookieManager.previousCookieData[16].substr(4);//Take the value of session id after 'sid='
+							var numOfVisit;
+							// check if the session is the same or a new session
+							//if (CookieManager.previousCookieData[16] != CookieManager.sessionID){
+							if (previousSessionId != CookieManager.sessionID){
+								// increment # visits
+								
+								numOfVisit = (CookieManager.previousCookieData[4]).split("=");
+								var tempNumOfVisit = parseInt(numOfVisit[1]) + 1;//changed from 0 to 4
+								CookieManager.previousCookieData[4] = numOfVisit[0] +'='+tempNumOfVisit;
+								CookieManager.previousCookieData[3] = 'lvd='+timeStampEpoch;
+								
+								// update the session ID
+								CookieManager.previousCookieData[16] = 'sId='+CookieManager.sessionID;
+							}
+							
+							// add recent PID or CID
+							if (pid != null && pid !=''){
+								var pids = CookieManager.previousCookieData[8];
+								
+								/////////added for name value pair/////
+								pids = pids.split('=')[1];
+								/////////added for name value pair/////
+								
+								
+								if (pids != 0 && pids != null && pids != ''){ // check if there were actual IDs
+									rvPid = '';
+									if (pid){ // if a product ID was passed
+										rvPid += CookieManager.updateIDs(pid, pids, ',');
+									}
+								}else{
+									rvPid = pid;
+								}
+								CookieManager.previousCookieData[8] = 'rvPid='+rvPid;
+							}
+							
+							//rvPid=
+
+							if (cid != null && cid !=''){
+								var cids = CookieManager.previousCookieData[9];
+								
+								
+								/////////added for name value pair/////
+								cids = cids.split('=')[1];
+								/////////added for name value pair/////
+								
+								if (cids != 0 && cids != null && cids != ''){ 
+									rvCid = '';
+									if (cid){ // if a category ID was passed
+										rvCid += CookieManager.updateIDs(cid, cids, ',');
+									}	
+								}else{
+									rvCid = cid;
+								}
+								CookieManager.previousCookieData[9] = 'rvCid='+rvCid;
+							}
+
+							// set the items that were in the user's cart
+							if (CookieManager.cartItems != null && CookieManager.cartItems !=''){
+
+								CookieManager.previousCookieData[11] = 'cPid='+CookieManager.cartItems;
+								
+								if(CookieManager.manageWL == "false")
+								{
+									CookieManager.previousCookieData[12] = 'cDt='+timeStampEpoch;
+								}else{
+									CookieManager.previousCookieData[12] = CookieManager.previousCookieData[12];
+								}
+								
+								
+							}
+							
+							// remove items that were ordered from they cart if they had previously existed there
+							if (CookieManager.orderList != null && CookieManager.orderList !=''){
+								if (CookieManager.previousCookieData[11] != null && CookieManager.previousCookieData[11] != ''){
+									
+									//Addedd for name value pair/////////////////
+									var orderedPIDs = (CookieManager.orderList).split(",");
+									var cartedPIDs = (CookieManager.previousCookieData[11]).split('=')[1].split(',');
+									////////////////////////////////////						
+									
+									
+									for (var i = 0; i < orderedPIDs.length; i++){
+										for (var j = 0; j < cartedPIDs.length; j++){
+											if(cartedPIDs[j] == orderedPIDs[i]){
+												cartedPIDs.splice(j, 1);
+												j--; // decrement counter since the array was shortened
+											}
+										}
+									}
+									var cartPIDList = cartedPIDs.toString();
+									if (cartPIDList != ''){
+										CookieManager.previousCookieData[11] = cartedPIDs.toString();
+										
+										///Addedd for name/value pair/////////////
+										CookieManager.previousCookieData[11] = 'cPid='+CookieManager.previousCookieData[11];
+										
+									} else {
+										CookieManager.previousCookieData[11] = 'cPid='+'0';
+									}
+								}
+							}
+
+							
+							// set the value of all of the items in the user's cart
+							if(CookieManager.cartValue != null && CookieManager.cartValue != ''){
+								CookieManager.previousCookieData[13] = 'cAmt='+CookieManager.cartValue;
+							}
+							//Added to make the cart amount == 0 on thanks page
+							if(CookieManager.pageOrprocessName == "thanks"){ 
+									CookieManager.previousCookieData[13] = 'cAmt='+'0';;
+							}
+							
+							// set the order details
+							if(CookieManager.orderAmt != null && CookieManager.orderAmt != ''){
+								
+								var previousOrderAmt = CookieManager.previousCookieData[5].split('=')[1];
+								var sum =  parseFloat(CookieManager.orderAmt);
+								var numberOfVisit = (CookieManager.previousCookieData[4]).split("=")[1];
+								
+								if(numberOfVisit == '1'){
+									CookieManager.previousCookieData[5] = 'ordAmt='+sum;
+								}
+								
+								if( ( CookieManager.orderId !=  CookieManager.previousCookieData[19].split('=')[1] ) && 
+										numberOfVisit != '1' ){	
+
+									var x =  parseFloat(previousOrderAmt);
+									sum = sum + x;
+									sum = sum.toFixed(2) ;
+									CookieManager.previousCookieData[5] = 'ordAmt='+sum; 
+								}
+								
+								
+								// Changed for UNIX time
+								CookieManager.previousCookieData[6] = 'lOrdDate='+timeStampEpoch;  
+								CookieManager.previousCookieData[7] = 'lOrdPids='+CookieManager.orderList;
+
+							}
+							
+							
+							
+							// set the wishlist
+							if(CookieManager.wishList != null && CookieManager.wishList != ''){
+								
+								var wlPids;
+								var wlDate;
+								
+								if(CookieManager.wishList == 0){
+									wlPids = 0;
+									wlDate = 0;
+								}else{
+									wlPids = (CookieManager.wishList.split('~'))[0]; // get Wishlist Pids
+									wlDate = (CookieManager.wishList.split('~'))[1]; // get Wishlist date
+								}
+
+								CookieManager.previousCookieData[14] = 'wlPids='+wlPids;
+								CookieManager.previousCookieData[15] = 'wlDate='+wlDate;
+							}
+
+							
+							
+							
+							
+							// set the items that were in the user's cart
+							if (CookieManager.userId != null && CookieManager.userId !=''){
+								CookieManager.previousCookieData[1] = CookieManager.userId;
+							}	
+							
+							
+							if (searchTerm != null && searchTerm !=''){
+								
+								var previousSearchTerms = CookieManager.previousCookieData[10].split('=')[1];
+								
+								if (previousSearchTerms != 0 && previousSearchTerms != null && previousSearchTerms != ''){ 
+									rvSearchTerms = '';
+									if (searchTerm){ // if a searchTerm was passed
+										rvSearchTerms += CookieManager.updateIDs(searchTerm, previousSearchTerms, ',');
+									}	
+								}else{
+									rvSearchTerms = searchTerm;
+								}
+								CookieManager.previousCookieData[10] = 'sKw='+rvSearchTerms;
+							}
+							
+							
+							
+							if(CookieManager.orderId != null && CookieManager.orderId != '0'){
+								CookieManager.previousCookieData[19] = 'oId='+CookieManager.orderId;
+							}
+							
+							
+						} else {
+							
+							// set RVD (if any)
+							if (pid){ 
+								rvPid = pid;
+							}
+							if(cid){
+								rvCid = cid;
+							}
+							
+							if(searchTerm){
+								rvSearchTerms = searchTerm;
+							}
+								
+
+
+							// the cookie didn't exist and therefore had no data so create data
+							CookieManager.previousCookieData = new Array();
+							CookieManager.previousCookieData[0] = 'bid='+CookieManager.browserId;
+							CookieManager.previousCookieData[1] = CookieManager.userId;
+							CookieManager.previousCookieData[2] = 'fvd='+timeStampEpoch;
+							CookieManager.previousCookieData[3] = 'lvd='+timeStampEpoch;
+							CookieManager.previousCookieData[4] = 'nov='+'1'; //number of visits
+							CookieManager.previousCookieData[5] = 'ordAmt='+'0'; // Order Amount			
+							CookieManager.previousCookieData[6] = 'lOrdDate='+'0'; // Last Order Date			
+							CookieManager.previousCookieData[7] = 'lOrdPids='+'0'; // Products in last Order	
+							CookieManager.previousCookieData[8] = 'rvPid='+rvPid; // rv pid
+							CookieManager.previousCookieData[9] = 'rvCid='+rvCid; // rv cid
+							CookieManager.previousCookieData[10] = 'sKw='+rvSearchTerms; //rv search terms
+							CookieManager.previousCookieData[11] = 'cPid='+'0'; //cart product ids
+							CookieManager.previousCookieData[12] = 'cDt='+'0'; //cart updation date
+							CookieManager.previousCookieData[13] = 'cAmt='+'0'; //cart amount value	
+							CookieManager.previousCookieData[14] = 'wlPids='+'0'; //wishlist products
+							CookieManager.previousCookieData[15] = 'wlDate='+'0'; //wishlist last visited date
+							CookieManager.previousCookieData[16] = 'sId='+CookieManager.sessionID; // session ID
+							CookieManager.previousCookieData[17] = 'mks='+CookieManager.marketingScore; // marketing score 
+							CookieManager.previousCookieData[18] = 'curr='+CookieManager.storeCurrencyCode; // store currency code 
+							CookieManager.previousCookieData[19] = 'oId='+CookieManager.orderId; // orderId
+
+
+
+						}
+						
+						// format cookie data string that will be written
+						CookieManager.cookieData = CookieManager.previousCookieData[0] + '&' + 
+							CookieManager.previousCookieData[1] + '&' + 
+							CookieManager.previousCookieData[2] + '&' + 
+							CookieManager.previousCookieData[3] + '&' + 
+							CookieManager.previousCookieData[4] + '&' + 
+							CookieManager.previousCookieData[5] + '&' + 
+							CookieManager.previousCookieData[6] + '&' + 
+							CookieManager.previousCookieData[7] + '&' + 
+							CookieManager.previousCookieData[8] + '&' + 
+							CookieManager.previousCookieData[9] + '&' + 
+							CookieManager.previousCookieData[10]+ '&' +  
+							CookieManager.previousCookieData[11] + '&' +  
+							CookieManager.previousCookieData[12] + '&' +
+							CookieManager.previousCookieData[13] + '&' +
+							CookieManager.previousCookieData[14] + '&' +
+							CookieManager.previousCookieData[15] + '&' + 
+							CookieManager.previousCookieData[16] + '&' + 
+							CookieManager.previousCookieData[17] + '&' + 
+							CookieManager.previousCookieData[18] + '&' +   
+							CookieManager.previousCookieData[19] ;  
+
+						success = true;
+					} catch (er){
+						alert('ERROR: CookieManager.set ' + er);
+					}
+					CookieManager.log('CookieManager.set - complete - ' + success);
+					return success;
+				}
+				
+				////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+				/**
+				 * This function writes the cookie as the domain in which this file resides.
+				 */
+				CookieManager.write = function(){
+					CookieManager.log('CookieManager.write - start - name: ' + CookieManager.cookieName);
+					var success = false;
+					try{
+						if(CookieManager.cookieName != null && CookieManager.cookieName != '' 
+							&& CookieManager.cookieData != null && CookieManager.cookieData != ''){
+							CookieManager.cookie(CookieManager.cookieName, CookieManager.cookieData, {expires: 10000, path: '/', raw: true});
+							success = true;
+						}
+					} catch (er) {
+						alert('ERROR: CookieManager.write ' + er);
+					}
+					CookieManager.log('CookieManager.write - complete - ' + success);
+					return success;
+				}
+				
+				////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+				/**
+				 * This function updates a set of IDs with the given ID.  # IDs is limited to 10 and
+				 * the most recent ID will be first
+				 *
+				 * @param ID - the ID to add into the set of existing IDs
+				 * @param IDs - existing set of IDs for which to update with given ID
+				 * @param delimiter - character to use as ID delimiter within return value
+				 * @return updateString - set of delimited IDs including the given ID
+				 */
+				CookieManager.updateIDs = function(ID, IDs, delimiter){
+					var updateString = '';
+					var status = false;
+					var index = 0;
+					try{
+						
+						var idArray = IDs.split(delimiter); 
+						
+						for ( var i = 0; i < idArray.length; i++){
+							if(ID == idArray[i]){
+								index = i;
+								status = true;
+							}
+						}
+
+						//If the id/word is allready there in list then remove it from previous index
+						if(status){
+							idArray.splice(index,1);
+						}
+						
+						idArray.reverse(); // sort array with most recent ID last
+						idArray.push(ID); // add ID to array
+						idArray.reverse(); // sort array with most recent ID first
+
+						// limit # IDs to 10
+						if (idArray.length > 10){
+							idArray = idArray.slice(0, 10);
+						}
+
+						// build the string of IDs
+						for ( var i = 0; i < idArray.length; i++){
+							updateString += idArray[i];
+							if(i + 1 != idArray.length){
+								updateString += delimiter; // add delimiter when not the last element
+							}
+						}
+					} catch (er){
+						alert('ERROR: CookieManager.updateIDs ' + er);
+					}
+					return updateString;
+				}
+			
+			
+				////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+				/**
+				 * This function allows debug messages to be loaded into most browsers console
+				 * @param msg - the message that should be logged
+				 */
+				CookieManager.log = function(msg) {
+					try{
+						if(CookieManager.doLog) {
+							console.log(msg);
+						}
+					}catch(e){
+						//alert(msg);
+					}
+				}
+			
+				// load cookie data from querystring
+				if(CookieManager.load()){
+					// get and store existing cookie data
+					if(CookieManager.get()){
+						// if getting the cookie data was successful, set the cookie's values
+						if(CookieManager.set()){
+							// if setting the cookie's values was successful, write the cookie
+							if(CookieManager.write()){
+								// comment/uncomment the alert message below to debug cookie contents 
+								//alert('cookie contents: ' + CookieManager.cookieData);
+							}
+						}
+					}
+				}
+
+			</script>
+		</div>
+	</body>
+</html>

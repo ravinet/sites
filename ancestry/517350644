@@ -1,0 +1,22 @@
+PHTTP66.117.23.107"ñ
+æGET /m2/myfamilycominc/mbox/standard?mboxHost=www.ancestry.com&mboxSession=1397243809373-379965&mboxPage=1397243809373-379965&screenHeight=1200&screenWidth=1920&browserWidth=1920&browserHeight=1090&browserTimeOffset=-240&colorDepth=24&mboxXDomain=enabled&baitData=none&TYPE=NRVisitor&location=www.ancestry.com%2F&force=&mboxCount=1&mbox=us_LOHP_Global&mboxId=0&mboxTime=1397229409382&mboxURL=http%3A%2F%2Fwww.ancestry.com%2F&mboxReferrer=&mboxVersion=46&mboxXDomainCheck=true HTTP/1.1
+$Host: myfamilycominc.tt.omtrdc.net
+Connection: keep-alive
+Accept: */*
+vUser-Agent: Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/31.0.1650.63 Safari/537.36
+#Referer: http://www.ancestry.com/
+$Accept-Encoding: gzip,deflate,sdch
+!Accept-Language: en-US,en;q=0.8
+MCookie: mboxSession=1397243809373-379965; mboxPC=1397243809373-379965.25_33
+
+*Š
+HTTP/1.1 200 OK
+pragma: no-cache
+$P3P: CP="NOI DSP CURa OUR STP COM"
+”Set-Cookie: mboxPC=1397243809373-379965.25_33; Domain=myfamilycominc.tt.omtrdc.net; Expires=Sun, 11-May-2014 19:16:49 GMT; Path=/m2/myfamilycominc
+-Content-Type: text/javascript;charset=UTF-8
+Content-Length: 1946
+%Date: Fri, 11 Apr 2014 19:16:49 GMT
+Server: Test & Target
+œ
+var mboxCurrent=mboxFactories.get('default').get('us_LOHP_Global',0);mboxCurrent.setEventTime('include.start');document.write('<div style="visibility: hidden; display: none" id="mboxImported-default-us_LOHP_Global-0">');document.write('<!-- Offer Id: 82508  --><script type=\"text\/javascript\">\r\n\/*mboxHighlight+ (1of2) v1 ==> Response Plugin*\/\r\nwindow.ttMETA=(typeof(window.ttMETA)!=\'undefined\')?window.ttMETA:[];window.ttMETA.push({\'mbox\':\'us_LOHP_Global\',\'campaign\':\'\',\'experience\':\'\',\'offer\':\'\'});window.ttMBX=function(x){var mbxList=[];for(i=0;i<ttMETA.length;i++){if(ttMETA[i].mbox==x.getName()){mbxList.push(ttMETA[i])}}return mbxList[x.getId()]}\r\n<\/script>');document.write('<!-- Offer Id: 118717  --><!---Hire an Expert Link --->\r\n<script type=\"text\/javascript\">\r\nvar mbox1 = mboxFactoryDefault.getMboxes().getById(0).getName();\r\n$( \"#tabExpertConnect\" ).click(function(e) {\r\n\te.preventDefault();\r\n\tvar expertUrl = $(this).attr(\'href\');\r\n\tmboxUpdate(mbox1, \"clicked=progen\");\r\n\tsetTimeout(function(){\r\n\t\twindow.location.href = expertUrl;\r\n\t},1000);\r\n});\r\n\r\n$( \"#tabPublish\" ).click(function(e) {\r\n\te.preventDefault();\r\n\tvar expertUrl = $(this).attr(\'href\');\r\n\tmboxUpdate(mbox1, \"clicked=publish\");\r\n\tsetTimeout(function(){\r\n\t\twindow.location.href = expertUrl;\r\n\t},1000);\r\n});\r\n\r\n\r\n$( \"#tabShop\" ).click(function(e) {\r\n\te.preventDefault();\r\n\tvar expertUrl = $(this).attr(\'href\');\r\n\tmboxUpdate(mbox1, \"clicked=shop\");\r\n\tsetTimeout(function(){\r\n\t\twindow.location.href = expertUrl;\r\n\t},1000);\r\n});\r\n<\/script>');mboxFactories.get('default').get('us_LOHP_Global',0).setOffer(new mboxOfferDefault()).loaded();document.write('</div>');mboxCurrent.setEventTime('include.end');mboxFactories.get('default').get('us_LOHP_Global',0).loaded();mboxFactories.get('default').getPCId().forceId("1397243809373-379965.25_33");

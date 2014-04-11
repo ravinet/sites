@@ -1,0 +1,35 @@
+PHTTP
+18.7.20.68"ç
+‰GET /AdServer/usersync/usersync.html?predirect=http%3A%2F%2Fdpm.demdex.net%2Fibs%3Adpid=466%26dpuuid=PM_UID&userIdMacro=PM_UID HTTP/1.1
+Host: image5.pubmatic.com
+Connection: keep-alive
+Accept: image/webp,*/*;q=0.8
+vUser-Agent: Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/31.0.1650.63 Safari/537.36
+=Referer: http://fast.scripps.demdex.net/dest4.html?d_nsid=0
+$Accept-Encoding: gzip,deflate,sdch
+!Accept-Language: en-US,en;q=0.8
+
+*˜
+ HTTP/1.1 302 Moved Temporarily
+SServer: Apache/2.2.24 (Unix) mod_ssl/2.2.24 OpenSSL/1.0.1e-fips mod_fastcgi/2.4.6
+Content-Length: 153
+Content-Type: text/html
+ZLocation: http://dpm.demdex.net/ibs:dpid=466&dpuuid=6F1D35D8-42FA-4F95-9690-034064BFBF21
+†Set-Cookie: KADUSERCOOKIE=6F1D35D8-42FA-4F95-9690-034064BFBF21; expires=Thu, 07 Apr 2016 21:41:25 GMT; path=/; domain=.pubmatic.com;
+#ETag: "1401593-cde-4e5b8598d0580"
+Vary: Accept-Encoding
+}P3P: CP="NOI DSP COR LAW CUR ADMo DEVo TAIo PSAo PSDo IVAo IVDo HISo OTPo OUR SAMo BUS UNI COM NAV INT DEM CNT STA PRE LOC"
+(Expires: Tue, 08 Apr 2014 21:41:25 GMT
+.Cache-Control: max-age=0, no-cache, no-store
+Pragma: no-cache
+%Date: Tue, 08 Apr 2014 21:41:25 GMT
+Connection: keep-alive
+›
+<HTML>
+<HEAD>
+<TITLE>Error Page</TITLE>
+</HEAD>
+<BODY>
+An error (302 Moved Temporarily) has occured in response to this request.
+</BODY>
+</HTML>

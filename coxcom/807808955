@@ -1,0 +1,319 @@
+PHTTP23.23.115.181"€
+zGET /t/v1/i?a=cox&ap=1&m=uui&udt=~segment/visitor;~pn/residential:home;~z/02139;~bu/residential;~ct/unknown-ZIP HTTP/1.1
+Host: vop.sundaysky.com
+Connection: keep-alive
+TAccept: text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8
+vUser-Agent: Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/31.0.1650.63 Safari/537.36
+2Referer: http://ww2.cox.com/residential/home.cox
+$Accept-Encoding: gzip,deflate,sdch
+!Accept-Language: en-US,en;q=0.8
+
+*ÑB
+HTTP/1.1 200 OK
+GCache-control: no-cache, must-revalidate, proxy-revalidate, max-age=0
+'Content-Type: text/html;charset=UTF-8
+%Date: Fri, 11 Apr 2014 14:32:22 GMT
+'Expires: Sat, 1 Apr 2000 00:00:00 GMT
+.Last-Modified: Mon, 24 Feb 2014 14:29:02 GMT
+wP3P: policyref="/w3c/p3p.xml", CP="NOI DSP COR CURa ADMa DEVa TAIa PSAa PSDa OUR IND UNI PUR COM NAV INT DEM STA PRE"
+Pragma: no-cache
+Server: Apache-Coyote/1.1
+=Set-Cookie: testpermission=1; Domain=.sundaysky.com; Path=/
+Content-Length: 7980
+Connection: keep-alive
+®>
+<html>
+<head>
+<title></title>
+</head>
+<body>
+<script type="text/javascript">
+
+	var tracker = (function() {
+		var sec = ('https:' == document.location.protocol);
+		var enc = function(val, isFull) {
+			if (encodeURIComponent instanceof Function) {
+				return isFull ? encodeURI(val) : encodeURIComponent(val);
+			} else {
+				return escape(val);
+			}
+		};
+
+		var get_param = function(q,n) {
+			var i = q.indexOf("&"+n+"=");
+			if (i != -1) {
+				i += 2 + n.length;
+				var j = q.indexOf("&",i);
+				if (j == -1) {
+					return decodeURIComponent(q.substring(i));
+				}
+				return decodeURIComponent(q.substring(i,j)); 
+			}
+			return null;
+		};
+	
+		var get_cookie = function(name) {
+			c = document.cookie;
+			if(c.length>0) {
+				var s=c.indexOf(name+"=");
+				if(s!=-1) {
+					s=s+name.length+1;
+					var e=c.indexOf(";",s);
+					if(e<0)
+						e=c.length;
+					c =  unescape(c.substring(s,e));
+					if (c.indexOf('\"')==0 && c.match('\"$')=='\"'){
+						c = c.substring(1,c.length-1);
+					}
+					return c;
+				}
+			}
+			return "";
+		};
+		
+		var CALLBACKS = {};
+		
+//		var useFormTracking = (get_cookie("testpermission") != "1");
+		var useFormTracking = false;
+
+		var nop = function() {};
+		
+		var firePixel = function(uri,callback) {
+			var i = new Image(1,1);
+			i.onload = function() {
+				i.onload = null;
+				(callback || nop)();
+			};
+			i.src = uri;
+		};
+
+		var fireHiddenForm = function(uri,id,callback) {
+			var ifr = document.createElement('iframe');
+			ifr.setAttribute("frameborder","0");
+			ifr.setAttribute("scrolling","no");
+			var st=ifr.getAttribute("style");
+			if (st&&typeof st.cssText!="undefined") 
+				st.cssText="position:absolute;top:-9999em;width:10px;height:10px";
+			else
+				ifr.style.cssText="position:absolute;top:-9999em;width:10px;height:10px";
+			ifr.src = "javascript:false";
+			var iname = "if" + id;
+			ifr.name = iname;
+			ifr.id = iname;
+			document.body.appendChild(ifr);
+
+			var form = document.createElement("form");
+			form.setAttribute("style",'display:none');
+			form.method = 'POST';
+			form.target = iname;
+			form.action = uri;
+			document.body.appendChild(form);
+
+			if (callback) {
+				CALLBACKS[id] = callback;
+			}
+			  
+			ifr.onload = function() {
+				(callback || nop)();
+			}; 
+			form.submit();
+		};
+
+		var onFormPosted = function(query) {
+			var id = get_param(query,"cb");
+			if (id != null) {
+				callback = CALLBACKS[id];
+				(callback || nop)();
+			}
+		};
+
+		var ALL_SYNC_TARGETS = ["9"];
+		var REQ_SYNC_ALL_TARGETS = ({"9":true});
+		var N_ALL_SYNC_TARGETS = ALL_SYNC_TARGETS.length;
+		var getRequiredSyncs = function(sync_state) {
+			var iCol = sync_state.indexOf(":");
+			if (iCol==-1) {
+				return REQ_SYNC_ALL_TARGETS;
+			}
+			var ver = sync_state.substring(0,iCol);
+			sync_state = sync_state.substring(iCol+1);
+			if (ver!="1") {
+				return REQ_SYNC_ALL_TARGETS;
+			}
+			sync_state = eval('(' + sync_state + ')');
+			var req_syncs = {};
+			for (var i = 0; i < N_ALL_SYNC_TARGETS; ++i) {
+				var t = ALL_SYNC_TARGETS[i];
+				if (sync_state[t] == undefined) {
+					req_syncs[t] = true;
+				}
+			}
+			return req_syncs;
+		};
+					 		
+		var Tracker = function() {
+			var m = this;
+			m.onFormPosted = onFormPosted; 
+			m.adapTvUIDSync = function(uid,callback) {
+				if (sec) {
+					return;
+				}
+				var cachebreaker = Math.round(Math.random() * 2147483647);
+				var uri = "http://sync.adap.tv/sync?type=gif&key=sundaysky&uid=" + enc(uid) + "&dcord=" + cachebreaker;
+				firePixel(uri,callback);
+			};
+	
+			m.adapTvUserDataSync = function(attrs,segments,add,callback) {
+				if (sec) {
+					return;
+				}
+				var uri = "http://segments.adap.tv/data/?p=sundaysky&type=gif";
+				var hasData = false;
+				var name;
+				var value;
+				if (segments) {
+					for (name in segments) {
+						value = segments[name];
+						if (typeof(value) == "string") {
+							uri += "&" + enc(name) + "=" + enc(value);
+							hasData = true;
+						} else if (value === null) {
+							uri += "&" + enc(name) + "=";
+							hasData = true;
+						} else if (value instanceof Array) {
+							uri += "&" + enc(name) + "=";
+							var nv = sv.length;
+							for (var i = 0; i < nv; ++i) {
+								if (i == 0) {
+									uri += enc(value[i])
+								} else {
+									uri += "," + enc(value[i]);
+								}
+							}
+							hasData = true;
+						}
+					}
+				}
+				if (attrs) {
+					for (name in attrs) {
+						value = attrs[name];
+						uri += "&" + enc(name) + "=" + enc(value);
+						hasData = true;
+					}
+				}
+				if (add) {
+					uri += "&add=true"; 
+				}
+				if (hasData) {
+					firePixel(uri,callback);
+				}
+			};
+			
+			m.googleAdxUIDAndUserListSync = function(segids,callback) {
+				var cachebreaker = Math.round(Math.random() * 2147483647);
+				var uri = (sec ? "https" : "http") + "://cm.g.doubleclick.net/pixel?google_nid=sundaysky&cb=" + cachebreaker + "&v=1.0.0&google_cm&google_sc";
+				if (segids) {
+					if (typeof(segids) == "number" || typeof(segids) == "string") {
+						segids = [segids];
+					}
+					var nsegs = segids.length;
+					for (var i = 0; i < nsegs; ++i) {
+						uri += "&google_ula=" + enc(segids[i]);
+					}
+				}
+				firePixel(uri,callback);
+			};
+
+			m.brightrollUserDataSync = function(segids,callback) {
+				if (typeof(segids) == "number" || typeof(segids) == "string") {
+					segids = [segids];
+				}
+				var sorted = [].concat(segids);
+				sorted.sort();
+				var cat_sids = "";
+				nsegs = sorted.length;
+				for (var i = 0; i < nsegs; ++i) {
+					cat_sids += "/sid." + sorted[i];
+				}
+				if (!cat_sids) {
+					return;
+				}
+				var uri = (sec ? "https://s" : "http://") + "segs.btrll.com/v1/tpix/-/-/-/-/-" + cat_sids;
+				firePixel(uri,callback);
+			};
+			
+			m.spotXchangeUIDAndDataSync = function(uid,data,callback) {
+				if (sec) {
+					return;
+				}
+				var cachebreaker = Math.round(Math.random() * 2147483647);
+				var uri = "http://sync.search.spotxchange.com/partner?adv_id=6434&uid=" + enc(uid) + "&cb="+cachebreaker;
+				if (data) {
+					uri += "&udat=" + enc(data);
+				}
+				uri += "&img=1";
+				firePixel(uri,callback);
+			};
+
+			m.fireSSPixel = function(uidSyncCallback) {
+				var query = document.location.search;
+				if (query) {
+					query = '&' + query.substring(1);
+				}
+				var cachebreaker = Math.round(Math.random() * 2147483647);
+				var sourcepage = document.referrer;
+				var hostname = document.location.hostname;
+				var l_hostname = hostname.length;
+				var dom = "sundaysky.com";
+				if (hostname.substring(l_hostname-15) == ".sundaytest.com") {
+					dom = "sundaytest.com";
+				}
+				
+				var already_called = false;
+				var postCookieFunc = function() {
+					setTimeout(function() {
+						var uid = get_cookie("sskyu");
+						if (undefined == uid || "" == uid)
+							return;
+						if (!already_called) {
+							var sync_state = get_cookie("sskyss");
+							var req_syncs = getRequiredSyncs(sync_state);
+							already_called = true;
+							(uidSyncCallback || nop)(uid,req_syncs);
+						}
+					},10);
+				};
+
+				var ssPixel =  (sec ? 
+						'https://s-' : 'http://') + 'vop.' + dom + 
+						'/t/v1/t' + (useFormTracking ? '/fcb' : '') + '?v=1.0.0&cb='+cachebreaker+'&pb=f&sp='+enc(sourcepage)+query;
+				
+				if (useFormTracking) {
+					fireHiddenForm(ssPixel,cachebreaker,postCookieFunc);
+				} else {
+					firePixel(ssPixel,postCookieFunc);
+				}
+			};
+
+		};
+		return new Tracker;
+	})();
+	
+	tracker.fireSSPixel(function(uid,req_syncs) {
+		if (req_syncs["9"]) {
+			tracker.googleAdxUIDAndUserListSync();
+		}
+		tracker.adapTvUIDSync(uid);
+		if("true"=="false"){
+			tracker.spotXchangeUIDAndDataSync(uid);
+		}
+	});
+	if("6549593"!=""){
+		tracker.brightrollUserDataSync("6549593");
+	}
+	if("8"!=""){
+		tracker.adapTvUserDataSync(null,{ssky:"8"},true);
+	}
+</script>
+</body>
+</html>

@@ -1,0 +1,27 @@
+»HTTPS74.217.148.111"Å
+`GET /query-session?callback=jQuery171038021892379038036_1396994855573&_=1396994856045 HTTP/1.1
+Host: my.outbrain.com
+Connection: keep-alive
+Accept: */*
+vUser-Agent: Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/31.0.1650.63 Safari/537.36
+#Referer: http://www.outbrain.com/
+$Accept-Encoding: gzip,deflate,sdch
+!Accept-Language: en-US,en;q=0.8
+´Cookie: optimizelySegments=%7B%22589360541%22%3A%22false%22%2C%22595160493%22%3A%22direct%22%2C%22597050539%22%3A%22gc%22%7D; optimizelyEndUserId=oeu1396994855535r0.006181344855576754; optimizelyBuckets=%7B%7D; optimizelyPendingLogEvents=%5B%5D; __utma=17407783.790517964.1396994856.1396994856.1396994856.1; __utmb=17407783.1.10.1396994856; __utmc=17407783; __utmz=17407783.1396994856.1.1.utmcsr=(direct)|utmccn=(direct)|utmcmd=(none)
+
+*
+HTTP/1.1 200 OK
+Server: nginx
+%Date: Tue, 08 Apr 2014 22:07:36 GMT
+.Content-Type: application/json;charset=UTF-8
+Content-Length: 60
+Connection: keep-alive
+>Set-Cookie: obroute=23c65fcf8e0b9e006393028e660bed3f; Path=/
+ Access-Control-Allow-Origin: *
+hP3P: policyref="http://www.outbrain.com/w3c/p3p.xml",CP="NOI NID CURa DEVa TAIa PSAa PSDa OUR IND UNI"
+ISet-Cookie: JSESSIONID=DBA14C4F468A823C6CAC6510B47E451A; Path=/; Secure
+ASet-Cookie: JSESSIONID=DBA14C4F468A823C6CAC6510B47E451A; Path=/
+Content-Language: en-US
+-Strict-Transport-Security: max-age=31536000
+>
+jQuery171038021892379038036_1396994855573({"username":null})

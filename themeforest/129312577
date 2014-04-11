@@ -1,0 +1,26 @@
+PHTTP54.230.20.74"ä
+GET /js/goal.min.js HTTP/1.1
+Host: downloads.mailchimp.com
+Connection: keep-alive
+Accept: image/webp,*/*;q=0.8
+vUser-Agent: Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/31.0.1650.63 Safari/537.36
+"Referer: http://themeforest.net/
+$Accept-Encoding: gzip,deflate,sdch
+!Accept-Language: en-US,en;q=0.8
+
+*æ
+HTTP/1.1 200 OK
+&Content-Type: application/javascript
+Content-Length: 2693
+Connection: keep-alive
+%Date: Wed, 02 Apr 2014 09:12:01 GMT
+.Last-Modified: Sat, 01 Mar 2014 00:46:12 GMT
+*ETag: "b8d6c4e4476bfbcbed4ab9841aee696c"
+Accept-Ranges: bytes
+Server: AmazonS3
+Age: 44386
+X-Cache: Hit from cloudfront
+GVia: 1.1 afcee990943d57abc1399b7045f930f1.cloudfront.net (CloudFront)
+GX-Amz-Cf-Id: S_7g389NjIWP84CW4jaZ25LlEeXidqZPztVp7ws1B8aukSoCVVyc7w==
+‡
+(function(){var goalParam=null;var goal={getUuid:function(){return $mcGoal.settings.uuid},getDC:function(){return $mcGoal.settings.dc},process:function(){goalParam=goal.getParameter('goal');if(goalParam&&goal.isValidGoal(goalParam)){goal.createCookie('goal',goalParam,365)}else{goalParam=goal.readCookie('goal')}goal.processPage()},isValidGoal:function(){if(!goalParam)return false;var regex=new RegExp("0_[a-z0-9]+-[a-z0-9]+-[0-9]+");return goalParam.search(regex)==0?true:false},isValidEvent:function(click_event){if(!click_event||click_event=="")return false;return true},isValidSettings:function(){if(!goal.getUuid()||goal.getUuid()=="")return false;if(!goal.getDC()||goal.getDC()=="")return false;return true},isDoNotTrack:function(){if(navigator.doNotTrack==="1")return true;if(navigator.msDoNotTrack==="1")return true;return false},getParameter:function(name){name=name.replace(/[\[]/,"\\\[").replace(/[\]]/,"\\\]");var regex=new RegExp("[\\?&]"+name+"=([^&#]*)");var results=regex.exec(location.search);return results==null?null:decodeURIComponent(results[1].replace(/\+/g," "))},createCookie:function(c_name,value,exdays,domain){var exdate=new Date();exdate.setDate(exdate.getDate()+exdays);var c_value=escape(value)+((exdays==null)?"":"; expires="+exdate.toUTCString());c_value+=";path=/";document.cookie=c_name+"="+c_value},readCookie:function(c_name){var nameEQ=c_name+"=";var ca=document.cookie.split(';');for(var i=0;i<ca.length;i++){var c=ca[i];while(c.charAt(0)==' ')c=c.substring(1,c.length);if(c.indexOf(nameEQ)==0)return c.substring(nameEQ.length,c.length)}return null},processPage:function(){if(!goal.isValidGoal())return;var params={"goal":goalParam};goal.sendData(params)},processEvent:function(click_event){if(!goal.isValidGoal())return;if(!goal.isValidEvent(click_event))return;var params={"goal":goalParam,"event":click_event};goal.sendData(params)},sendData:function(params){if(!goal.isValidSettings())return;if(goal.isDoNotTrack())return;params.title=document.title;params.uuid=goal.getUuid();params=goal.serializeParamters(params);var sp=document.createElement('script');sp.type='text/javascript';sp.async=true;sp.defer=true;sp.src=('https:'==document.location.protocol?'https://goal.':'http://')+goal.getDC()+'.list-manage.com/goal/event?'+params;var s=document.getElementsByTagName('script')[0];s.parentNode.insertBefore(sp,s)},serializeParamters:function(obj,prefix){var str=[];for(var p in obj){var k=prefix?prefix+"["+p+"]":p,v=obj[p];str.push(typeof v=="object"?serialize(v,k):encodeURIComponent(k)+"="+encodeURIComponent(v))}return str.join("&")}};if(window.$mcGoal){$mcGoal.process=goal.process;$mcGoal.processEvent=goal.processEvent;$mcGoal.process()}})();

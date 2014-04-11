@@ -1,0 +1,28 @@
+PHTTP212.58.246.94"Å
+GET /wwscripts/flag HTTP/1.1
+Host: www.bbc.co.uk
+Connection: keep-alive
+Accept: */*
+vUser-Agent: Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/31.0.1650.63 Safari/537.36
+Referer: http://www.bbc.com/
+$Accept-Encoding: gzip,deflate,sdch
+!Accept-Language: en-US,en;q=0.8
+
+*¼
+HTTP/1.1 200 OK
+Server: Apache
+Cache-Control: max-age=120
+Content-Type: text/javascript
+(Expires: Fri, 11 Apr 2014 19:15:57 GMT
+*Etag: "97eb2f391887a79b10304b3682065a77"
+'X-PAL-Host: pal045.cwwtf.bbc.co.uk:80
+Content-Length: 24
+%Date: Fri, 11 Apr 2014 19:15:55 GMT
+Connection: keep-alive
+X-Cache-Action: HIT
+X-Cache-Hits: 1681
+X-Cache-Age: 118
+X-LB-NoCache: true
+Vary: X-CDN
+
+bbcdotcom.flag={a:1,s:1}

@@ -1,0 +1,279 @@
+PHTTP23.208.222.193"Þ
+'GET /js/fe/polar-20140403.js HTTP/1.1
+Host: www.rollingstone.com
+Connection: keep-alive
+Accept: */*
+vUser-Agent: Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/31.0.1650.63 Safari/537.36
+'Referer: http://www.rollingstone.com/
+$Accept-Encoding: gzip,deflate,sdch
+!Accept-Language: en-US,en;q=0.8
+
+*g
+HTTP/1.1 200 OK
+Accept-Ranges: bytes
+&Content-Type: application/javascript
+#ETag: "13976a-3274-4f68dd956ab00"
+.Last-Modified: Tue, 08 Apr 2014 20:30:04 GMT
+ Server: Apache/2.2.23 (CentOS)
+Content-Length: 12916
+%Date: Tue, 08 Apr 2014 22:21:36 GMT
+Connection: keep-alive
+öd
+(function(){
+
+
+  var compiledTemplate0 = '';
+
+  var compiledTemplate1 = '';
+
+
+window.NATIVEADS = window.NATIVEADS || {};
+window.NATIVEADS.injectedAt = new Date().getTime();
+window.NATIVEADS.onReady = function(ads) {
+
+  ads.setPropertyID("NA-ROLLSTON-11235968");
+  ads.setSecondaryPageURL("/paid");
+  ads.logging.enable();
+
+  var dateFormatter = function(selector) {
+    var dateString = $(selector).html();
+    var convertedDate = new Date(dateString);
+    var d = convertedDate.getDate();
+    var m =  convertedDate.getMonth();
+    var y = convertedDate.getFullYear();
+ 
+    var monthNames = [ "January", "February", "March", "April", "May", "June", "July", "August", "September", "October", "November", "December" ];
+    var month = monthNames[m];
+ 
+    var hours = convertedDate.getHours();
+    var minutes = convertedDate.getMinutes();
+    var ampm = hours >= 12 ? 'pm' : 'am';
+    hours = hours % 12;
+    hours = hours ? hours : 12; // the hour '0' should be '12'
+    minutes = minutes < 10 ? '0'+ minutes : minutes;
+    var strTime = hours + ':' + minutes + ' ' + ampm + ' ET';
+    var formattedDate = month + " " + d + ", " + y + " " + strTime;
+ 
+    $(selector).html(formattedDate);
+  };
+
+  ads.insertPreview({
+    label: "Music Latest News",
+    unit: {"server":"dfp","id":"/4236/Polar_Native_Ads/music","size":"1x3"},
+    location: ".musicChannel .diagonalContent .dateTime:eq(5)",
+    infoText: "",
+    infoButtonText: null,
+    template: compiledTemplate0,
+    onRender: function($element) { },
+    onFill: function(data) { },
+    onError: function(error) { }
+  });
+
+  ads.injectCSS(".mv-music-latest-news { border: 1px solid #cc0000; background-color:#fbf8f1; margin-bottom:15px; } .mv-sponsor-wrap { margin-top: 10px !important; margin-bottom: 10px !important; } .mv-sponsor-wrap img { margin: 0; display: inline-block; width: auto; height: auto; max-width: 100px; max-height: 40px; vertical-align: middle; margin-left: 5px; } .mv-sponsor-label { font-family: sans-serif; font-size: 9px; font-weight: normal; text-transform: uppercase; line-height: 10px; width: 70px; display: inline-block; text-align: center; border-top: 1px solid #ccc; border-bottom: 1px solid #ccc; padding-top: 3px; padding-bottom: 3px; vertical-align: middle; } .mv-music-latest-news .news-entity-text { padding-top:12px; }", "head");
+
+
+  // Ultra Fest
+  ads.insertPreview({
+    label: "Music RS Dance Stream - Ultra Fest",
+    unit: {"server":"dfp","id":"/4236/Polar_Native_Ads/rs_dancetwo","size":"1x3"},
+    location: ".music #actualContent #main .hub-list-container ul > li:eq(2)",
+    infoText: "",
+    infoButtonText: null,
+    template: compiledTemplate1,
+    onRender: function($element) {
+      $('.music #actualContent #main .hub-list-container ul > li:eq(1)').css({"margin-bottom": "0", "border-bottom": "0"});
+    },
+    onFill: function(data) { },
+    onError: function(error) { }
+  });
+
+  ads.injectCSS(".mv-music-rs-dance-stream .mv-sponsor-wrap { display: block !important; position: absolute; right: 20px; } .mv-music-rs-dance-stream { border-bottom: 1px solid #CD0A02 !important; background-color: #FCF7E4; padding-top: 20px !important; border-top: 1px solid #CD0A02 !important; } .mv-music-rs-dance-stream .content-short .thumb { background-color: #FFFFFF; } .mv-sponsor-wrap img { margin: 0; display: inline-block; width: auto; height: auto; max-width: 100px; max-height: 40px; vertical-align: middle; margin-left: 5px; } .mv-sponsor-label { font-family: sans-serif; font-size: 9px; font-weight: normal; text-transform: uppercase; line-height: 10px; width: 70px; display: inline-block; text-align: center; border-top: 1px solid #ccc; border-bottom: 1px solid #ccc; padding-top: 3px; padding-bottom: 3px; vertical-align: middle; }", "head");
+
+  ads.insertPreview({
+    label: "Music RS Dance Stream - Bubbling Up",
+    unit: {"server":"dfp","id":"/4236/Polar_Native_Ads/rs_dance","size":"1x3"},
+    location: ".music #actualContent #main .hub-list-container ul > li:eq(6)",
+    infoText: "",
+    infoButtonText: null,
+    template: compiledTemplate1,
+    onRender: function($element) {
+      $('.music #actualContent #main .hub-list-container ul > li:eq(5)').css({"margin-bottom": "0", "border-bottom": "0"});
+    },
+    onFill: function(data) { },
+    onError: function(error) { }
+  });
+
+  ads.configureSecondaryPage({
+    binding: {
+      sponsor: {
+        link: "",
+        logo: ".promotedContent .intro-sponsor-ad",
+        name: ".promotedContent #storyTextContainer .byline strong"
+      },
+      title: ".promotedContent .intro-text h1.hed",
+      summary: "",
+      content: ".promotedContent #storyTextContainer .storyText",
+      author: "",
+      pubDate: ".promotedContent #storyTextContainer .pubdate",
+      image: {
+        href: ".promotedContent #storyTextContainer .storyMedia",
+        caption: "",
+        credits: ".promotedContent #storyTextContainer .storyMediaCredits"
+      }
+    },
+    onRender: function() { 
+$('.promotedContent .intro-sponsor-ad').prepend("<div class='intro-sponsor-label'>&nbsp;Provided By&nbsp;</div>");
+  $('.promotedContent .intro-sponsor-ad').css({"position": "relative", "z-index": "1", "overflow": "hidden", "text-align": "center"});
+  $('.promotedContent .intro-sponsor-label').css({"text-transform": "uppercase", "font-size": "10px", "color": "#7D7D7D"});
+  $('html > head').append($('<style>.promotedContent .intro-sponsor-label:before, .promotedContent .intro-sponsor-label:after { position: absolute; width: 50%; height: 1px; content: \'\a0\'; background-color: #CCCCCC; overflow: hidden; top: 5px; } .promotedContent .intro-sponsor-label:before { margin-left: -50%; text-align: right; }</style>'));
+  $('.promotedContent .intro-sponsor-ad img').css({"float": "none", "width": "auto", "height": "auto", "max-width": "100%", "max-height": "60px", "margin-top": "5px"});
+  $('.promotedContent #storyTextContainer .storyMedia iframe').css({"border": "0", "width": "100%", "height": "535px"});
+  $('.promotedContent #storyTextContainer .storyMedia img').css({"width": "100%", "height": "auto"});
+  dateFormatter('.pubdate');
+},
+    onError: function(error) { },
+    track: function() { }
+  });
+
+};
+
+
+
+  /*
+
+   This function represents a pre-compiled Handlebars template. Pre-compiled
+   templates are not pretty, but they provide a very significant performance
+   boost, especially on mobile devices. For more information, see
+   http://handlebarsjs.com/precompilation.html.
+
+   Note that this code has been generated from the following markup:
+
+<div class="mv-music-latest-news clearfix">
+  <div class="news-entity-text">
+    <p>
+      <a href="{{link}}" class="prx_viewable_title88303272" title="{{title}}" rel="nofollow">{{title}}</a>
+    </p>
+    <p class="mv-sponsor-wrap">
+      <span class="mv-sponsor-label">
+        Paid Content Provided by
+      </span>
+      <img height="35px" src="{{sponsor.logo.href}}"/>
+    </p>
+  </div>
+</div>
+
+  */
+
+  compiledTemplate0 = function (Handlebars,depth0,helpers,partials,data) {
+  this.compilerInfo = [4,'>= 1.0.0'];
+helpers = this.merge(helpers, Handlebars.helpers); data = data || {};
+  var buffer = "", stack1, functionType="function", escapeExpression=this.escapeExpression;
+
+
+  buffer += "<div class=\"mv-music-latest-news clearfix\">\n  <div class=\"news-entity-text\">\n    <p>\n      <a href=\"";
+  if (stack1 = helpers.link) { stack1 = stack1.call(depth0, {hash:{},data:data}); }
+  else { stack1 = depth0.link; stack1 = typeof stack1 === functionType ? stack1.apply(depth0) : stack1; }
+  buffer += escapeExpression(stack1)
+    + "\" class=\"prx_viewable_title88303272\" title=\"";
+  if (stack1 = helpers.title) { stack1 = stack1.call(depth0, {hash:{},data:data}); }
+  else { stack1 = depth0.title; stack1 = typeof stack1 === functionType ? stack1.apply(depth0) : stack1; }
+  buffer += escapeExpression(stack1)
+    + "\" rel=\"nofollow\">";
+  if (stack1 = helpers.title) { stack1 = stack1.call(depth0, {hash:{},data:data}); }
+  else { stack1 = depth0.title; stack1 = typeof stack1 === functionType ? stack1.apply(depth0) : stack1; }
+  buffer += escapeExpression(stack1)
+    + "</a>\n    </p>\n    <p class=\"mv-sponsor-wrap\">\n      <span class=\"mv-sponsor-label\">\n        Paid Content Provided by\n      </span>\n      <img height=\"35px\" src=\""
+    + escapeExpression(((stack1 = ((stack1 = ((stack1 = depth0.sponsor),stack1 == null || stack1 === false ? stack1 : stack1.logo)),stack1 == null || stack1 === false ? stack1 : stack1.href)),typeof stack1 === functionType ? stack1.apply(depth0) : stack1))
+    + "\"/>\n    </p>\n  </div>\n</div>";
+  return buffer;
+  };
+
+
+
+  /*
+
+   This function represents a pre-compiled Handlebars template. Pre-compiled
+   templates are not pretty, but they provide a very significant performance
+   boost, especially on mobile devices. For more information, see
+   http://handlebarsjs.com/precompilation.html.
+
+   Note that this code has been generated from the following markup:
+
+<li class="mv-music-rs-dance-stream clearfix ">
+    <div class="content-short">
+        <div class="thumb">
+            <a href="{{link}}">
+                <img alt="{{title}}" height="148" width="148" src="{{image.href}}">
+            </a>
+        </div>
+        <h3>
+            <a href="{{link}}">{{title}}</a>
+        </h3>
+        <p>
+            {{summary}}&nbsp;|&nbsp;
+            <a class="more-link" href="{{link}}">
+                More&nbsp;Â»
+            </a>
+        </p>
+        <p class="mv-sponsor-wrap">
+            <span class="mv-sponsor-label">
+                Paid Content Provided by
+            </span>
+            <img height="35px" src="{{sponsor.logo.href}}"/>
+        </p>
+    </div>
+</li>
+
+  */
+
+  compiledTemplate1 = function (Handlebars,depth0,helpers,partials,data) {
+  this.compilerInfo = [4,'>= 1.0.0'];
+helpers = this.merge(helpers, Handlebars.helpers); data = data || {};
+  var buffer = "", stack1, stack2, functionType="function", escapeExpression=this.escapeExpression;
+
+
+  buffer += "<li class=\"mv-music-rs-dance-stream clearfix \">\n    <div class=\"content-short\">\n        <div class=\"thumb\">\n            <a href=\"";
+  if (stack1 = helpers.link) { stack1 = stack1.call(depth0, {hash:{},data:data}); }
+  else { stack1 = depth0.link; stack1 = typeof stack1 === functionType ? stack1.apply(depth0) : stack1; }
+  buffer += escapeExpression(stack1)
+    + "\">\n                <img alt=\"";
+  if (stack1 = helpers.title) { stack1 = stack1.call(depth0, {hash:{},data:data}); }
+  else { stack1 = depth0.title; stack1 = typeof stack1 === functionType ? stack1.apply(depth0) : stack1; }
+  buffer += escapeExpression(stack1)
+    + "\" height=\"148\" width=\"148\" src=\""
+    + escapeExpression(((stack1 = ((stack1 = depth0.image),stack1 == null || stack1 === false ? stack1 : stack1.href)),typeof stack1 === functionType ? stack1.apply(depth0) : stack1))
+    + "\">\n            </a>\n        </div>\n        <h3>\n            <a href=\"";
+  if (stack2 = helpers.link) { stack2 = stack2.call(depth0, {hash:{},data:data}); }
+  else { stack2 = depth0.link; stack2 = typeof stack2 === functionType ? stack2.apply(depth0) : stack2; }
+  buffer += escapeExpression(stack2)
+    + "\">";
+  if (stack2 = helpers.title) { stack2 = stack2.call(depth0, {hash:{},data:data}); }
+  else { stack2 = depth0.title; stack2 = typeof stack2 === functionType ? stack2.apply(depth0) : stack2; }
+  buffer += escapeExpression(stack2)
+    + "</a>\n        </h3>\n        <p>\n            ";
+  if (stack2 = helpers.summary) { stack2 = stack2.call(depth0, {hash:{},data:data}); }
+  else { stack2 = depth0.summary; stack2 = typeof stack2 === functionType ? stack2.apply(depth0) : stack2; }
+  buffer += escapeExpression(stack2).substring(0,85)
+    + "&nbsp;|&nbsp;\n            <a class=\"more-link\" href=\"";
+  if (stack2 = helpers.link) { stack2 = stack2.call(depth0, {hash:{},data:data}); }
+  else { stack2 = depth0.link; stack2 = typeof stack2 === functionType ? stack2.apply(depth0) : stack2; }
+  buffer += escapeExpression(stack2)
+    + "\">\n                More&nbsp;Â»\n            </a>\n        </p>\n        <p class=\"mv-sponsor-wrap\">\n            <span class=\"mv-sponsor-label\">\n                Paid Content Provided by\n            </span>\n            <img height=\"35px\" src=\""
+    + escapeExpression(((stack1 = ((stack1 = ((stack1 = depth0.sponsor),stack1 == null || stack1 === false ? stack1 : stack1.logo)),stack1 == null || stack1 === false ? stack1 : stack1.href)),typeof stack1 === functionType ? stack1.apply(depth0) : stack1))
+    + "\"/>\n        </p>\n    </div>\n</li>";
+  return buffer;
+  };
+
+
+
+
+})();
+
+(function(d, s, id) {
+  var js, fjs = d.getElementsByTagName(s)[0];
+  if (d.getElementById(id)) {return;}
+  js = d.createElement(s);
+  js.id = id; js.type = "text/javascript"; js.async = true;
+  js.src = "http://plugin.mediavoice.com/plugin.js";
+  fjs.parentNode.insertBefore(js, fjs);
+})(document, "script", "nativeads-plugin");

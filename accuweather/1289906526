@@ -1,0 +1,31 @@
+PHTTP162.248.19.136"Ä
+¿GET /AdServer/Pug?vcode=bz0yJnR5cGU9MSZjb2RlPTM2MiZ0bD00MzIwMA==&piggybackCookie=uid:82805345-5542-4100-979e-0567e93c0f17&redir=http%3A%2F%2Fpixel.mathtag.com%2Fevent%2Fimg%3Fmm_bnc HTTP/1.1
+Host: image2.pubmatic.com
+Connection: keep-alive
+TAccept: text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8
+vUser-Agent: Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/31.0.1650.63 Safari/537.36
+8Referer: http://ads.pubmatic.com/AdServer/js/showad.js
+$Accept-Encoding: gzip,deflate,sdch
+!Accept-Language: en-US,en;q=0.8
+ÆCookie: KTPCACOOKIE=YES; PUBMDCID=2; pubfreq_34577=; pubtime_34577=TMC; pubfreq_34577_40506_103671374=79-1; PMDTSHR=cat:; KADUSERCOOKIE=8F288FA5-727F-403C-BAA7-26E4FC03E339
+
+*ê
+HTTP/1.1 302 Found
+%Date: Wed, 09 Apr 2014 14:12:18 GMT
+SServer: Apache/2.2.24 (Unix) mod_ssl/2.2.24 OpenSSL/1.0.1e-fips mod_fastcgi/2.4.6
+çSet-Cookie: KRTBCOOKIE_27=1216-uid:82805345-5542-4100-979e-0567e93c0f17; domain=pubmatic.com; expires=Thu, 09-Apr-2015 14:12:18 GMT; path=/
+lSet-Cookie: PUBRETARGET=362_1428588738; domain=pubmatic.com; expires=Thu, 09-Apr-2015 14:12:18 GMT; path=/
+5Location: http://pixel.mathtag.com/event/img?mm_bnc
+Content-Length: 361
+Connection: close
+-Content-Type: text/html; charset=iso-8859-1
+Î
+<!DOCTYPE HTML PUBLIC "-//IETF//DTD HTML 2.0//EN">
+<html><head>
+<title>302 Found</title>
+</head><body>
+<h1>Found</h1>
+<p>The document has moved <a href="http://pixel.mathtag.com/event/img?mm_bnc">here</a>.</p>
+<hr>
+<address>Apache/2.2.24 (Unix) mod_ssl/2.2.24 OpenSSL/1.0.1e-fips mod_fastcgi/2.4.6 Server at image2.pubmatic.com Port 80</address>
+</body></html>

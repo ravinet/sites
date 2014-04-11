@@ -1,0 +1,26 @@
+PHTTP
+18.7.20.68"²
+
+$GET /mb/Get?1396994790277 HTTP/1.1
+Host: shop.nordstrom.com
+Connection: keep-alive
+8Accept: application/json, text/javascript, */*; q=0.01
+"X-Requested-With: XMLHttpRequest
+vUser-Agent: Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/31.0.1650.63 Safari/537.36
+%Referer: http://shop.nordstrom.com/
+$Accept-Encoding: gzip,deflate,sdch
+!Accept-Language: en-US,en;q=0.8
+‰Cookie: internationalshippref=preferredcountry=US&preferredcurrency=USD; nordstrom=shopperid=996c86e446c04651affb3a2227da3322&bagcount=0&ispinned=False&isSocial=False; personalization=IsShopperInfoPrefetched=False&ShopperId=&ShopperInfoPrefetchRetryCount=0&ShopperSegment=&IsShopperPersonalizedSortEligible=False&PurchaseCount=0&RegionStyleMode=0; usersession=SessionId=e960be5a-1b9a-4b90-a1d3-7e2aba509550&CookieDomain=.nordstrom.com; mmcore.tst=0.669; mmid=528186898%7CAQAAAArU1VgzXgoAAA%3D%3D; mmcore.pd=1558465385%7CAQAAAAoBQtTVWDNeCrX+Pe0BAAXQlO2NIdFIAAwAAAAF0JTtjSHRSAAAAAD/////AP//////////AAZEaXJlY3QBXgoBAAAAAAABAAABAAD///////////////8BANoUAAB2TXUpXgr/////AF4KXgr//wEAACnjsJ8BBjgAANdbAAAAAAAAAUU%3D; mmcore.srv=cg3.use; mmcore.pgcount=1; PersonalizedSortTnT=sort=CRBS; RT=dm=nordstrom.com&si=dff78e1f-2d17-428e-8e2d-28755a6b48c3&ss=1396994789452&sl=1&tt=778&obo=0&bcn=%2F%2F36f111f4.mpstat.us%2F
+
+*©
+HTTP/1.1 200 OK
+(Cache-Control: public, max-age=5184000
+/Content-Type: application/json; charset=utf-8
+(Expires: Wed, 08 Apr 2015 22:06:29 GMT
+Server: Microsoft-IIS/7.5
+X-Powered-By: ASP.NET
+Content-Length: 382
+%Date: Tue, 08 Apr 2014 22:06:30 GMT
+Connection: keep-alive
+€
+{"CheckoutUri":"https://secure.nordstrom.com/ShoppingBag.aspx?bco=1","Hash":null,"HasItems":false,"ImageUrl":"http://i.nordstromimage.com/images/","Items":null,"JsonValue":null,"QtyAffected":0,"SecureUrl":"https://secure.nordstrom.com/","ShoppingBagCount":0,"ShoppingBagUri":"https://secure.nordstrom.com/ShoppingBag.aspx","StoreUrl":"http://shop.nordstrom.com/","SubTotal":"$0.00"}

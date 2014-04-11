@@ -1,0 +1,22 @@
+»HTTPS23.209.60.86"æ
+2GET /methods?callback=OkC.init&cache=36 HTTP/1.1
+Host: akincludes.okccdn.com
+Connection: keep-alive
+Accept: */*
+vUser-Agent: Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/31.0.1650.63 Safari/537.36
+#Referer: https://www.okcupid.com/
+$Accept-Encoding: gzip,deflate,sdch
+!Accept-Language: en-US,en;q=0.8
+
+*”
+HTTP/1.1 200 OK
++Server: PubExpress 1.0 (on OKWS 3.1.19.0)
+ Content-Type: application/json
+(Access-Control-Allow-Credentials: true
+Content-Length: 2678
+(Cache-Control: public, max-age=2592000
+%Date: Fri, 11 Apr 2014 14:27:13 GMT
+Connection: keep-alive
+X-N: S
+ø
+OkC.init({"/api/interests/query" : {}, "/profile/me/personality" : {}, "/api/interests/:intid" : {}, "/profile/me/photos" : {}, "/profile/:userid/unblock" : {"method" : "POST"}, "/social/instagram/disconnect" : {"method" : "POST"}, "/api/profile/:voteeid/rate" : {"method" : "POST"}, "/profile/me" : {}, "/profile/me/answers" : {}, "/messages/sent" : {}, "/social/instagram/connect" : {"method" : "POST", "parameters" : ["token"]}, "/questions/next" : {}, "/profile/:userid/unhide" : {"method" : "POST"}, "/match/similar_users" : {"parameters" : ["target_userid"]}, "/match/nearby" : {}, "/messages" : {}, "/match/search" : {"description" : "Find users. You know, to date and stuff.", "parameters" : ["minimum_questions", "radius", "sort_by", "education", "religion", "maximum_height", "after", "drinking", "minimum_height", "job", "maximum_age", "gentation", "offset", "userid", "looking_for", "interest_ids", "languages", "locid", "limit", "minimum_age", "diet", "last_login", "join_date", "smoking", "drugs", "before", "money", "attractiveness", "persona", "cats", "religion_intensity", "username", "availability", "ethnicity", "bodytype", "signs", "dogs"]}, "/match/percentage" : {"parameters" : ["userid"]}, "/social/fb/check" : {"method" : "POST"}, "/profile/:userid" : {}, "/profile/:userid/block" : {"method" : "POST"}, "/history" : {}, "/visitors" : {}, "/questions/clear" : {"method" : "POST"}, "/ratings/reverse" : {}, "/social/fb" : {"method" : "POST", "parameters" : ["path"]}, "/questions/search" : {"description" : "search for questions by text", "parameters" : ["query"]}, "/profile/:userid/hide" : {"method" : "POST"}, "/profile/:userid/unfavorite" : {"method" : "POST"}, "/profile/:userid/personality" : {}, "/messages/draft(|s)" : {}, "/messages/draft" : {}, "/photos/:picid" : {}, "/profile/me/interests" : {}, "/albums/:albumid" : {}, "/questions/:qid" : {"method" : "POST"}, "/messages/threads" : {}, "/profile/:userid/answers" : {}, "/methods" : {"description" : "Get a dictionary of API methods"}, "/api/overlaysearch" : {}, "/messages/drafts" : {}, "/interests/query" : {}, "/profile/:voteeid/rate" : {"method" : "POST"}, "/match/recommend" : {}, "/profile/:userid/favorite" : {"method" : "POST"}, "/location/query" : {"description" : "Free text search for a location (e.g. \"10001\", \"nyc\", or \"Malm\u00f6\")", "parameters" : ["q"]}, "/interests/:intid" : {}, "/social/save_fb_access_token" : {"method" : "POST", "parameters" : ["token", "connect_new"]}, "/profile/:userid/interests" : {}, "/ratings/locals" : {}, "/messages/send" : {"method" : "POST"}, "/ratings" : {}, "/profile/:userid/photos" : {}, "/messages/:threadid" : {"method" : "POST"}})

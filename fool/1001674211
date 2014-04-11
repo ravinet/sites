@@ -1,0 +1,23 @@
+PHTTP
+18.7.20.69"ƒ
+UGET /v1/beacons/initialize?u=undefined&sg=e108c80d4bc7cf745cebb9ad31542eec HTTP/1.1
+Host: rma-api.gravity.com
+Connection: keep-alive
+Accept: */*
+vUser-Agent: Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/31.0.1650.63 Safari/537.36
+Referer: http://www.fool.com/
+$Accept-Encoding: gzip,deflate,sdch
+!Accept-Language: en-US,en;q=0.8
+
+*²
+HTTP/1.1 200 OK
+Server: ""
+$P3P: CP="NOI DSP COR ADMa OUR NOR"
+-Content-Type: text/javascript;charset=UTF-8
+Content-Length: 83
+X-Location: SJC
+%Date: Tue, 08 Apr 2014 21:41:33 GMT
+Connection: keep-alive
+ySet-Cookie: vaguid=0df760810634759c261641140621df18; Domain=.gravity.com; Expires=Thu, 12-Jul-2068 19:23:06 GMT; Path=/
+U
+GravityInsights.cc('grvinsights', '0df760810634759c261641140621df18', '.fool.com');

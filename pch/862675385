@@ -1,0 +1,1173 @@
+PHTTP23.74.28.10"ó
+QGET /modules/mod_pch_sso/assets/js/mod_pch_sso.js?v=3.1.32.1.454-18308 HTTP/1.1
+Host: www.pch.com
+Connection: keep-alive
+Accept: */*
+vUser-Agent: Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/31.0.1650.63 Safari/537.36
+Referer: http://www.pch.com/
+$Accept-Encoding: gzip,deflate,sdch
+!Accept-Language: en-US,en;q=0.8
+úCookie: deb088d138aa52ddbeb48990e3e58a5e=k12m2f9f5ent563l9fgbgvu270; pdd=D; pci=n3qg5f4gGbPBKvNH; __utma=102336542.1157406824.1396994885.1396994885.1396994885.1; __utmb=102336542.1.10.1396994885; __utmc=102336542; __utmz=102336542.1396994885.1.1.utmcsr=(direct)|utmccn=(direct)|utmcmd=(none); _at_id.pch.production.a1c9=b2baeaeffd6ee36d.1396994885.1.1396994885.1396994885.0.0.
+
+*µË
+HTTP/1.1 200 OK
+Server: Apache
+.Last-Modified: Wed, 19 Feb 2014 17:57:50 GMT
+#ETag: "c13898-a459-4f2c62086e380"
+Accept-Ranges: bytes
+Content-Length: 42073
+GP3P: CP="CAO DSP COR CUR ADM DEV TAI PSA PSD IVA IVD CON OUR LEG UNI"
+Content-Type: text/javascript
+%Date: Tue, 08 Apr 2014 22:08:04 GMT
+Connection: keep-alive
+ÛÈ
+var PCHMINIBOOTSTRAP = PCHMINIBOOTSTRAP || {};
+if (typeof PCHMINIBOOTSTRAP.ssouserBaseURL === "undefined") PCHMINIBOOTSTRAP.ssouserBaseURL = "";
+if (typeof PCHMINIBOOTSTRAP.contentBaseURL === "undefined") PCHMINIBOOTSTRAP.contentBaseURL = "";
+
+
+var PCHSSOLightbox = PCHSSOLightbox || {};
+PCHSSOLightbox.redirectURL = "";
+PCHSSOLightbox.pageTitle = "";  // used for google analytics
+
+//check if PCH.ssoui is defined.. if not default it to desktop
+if(typeof PCH.ssoui == 'undefined') {
+	PCH.ssoui = 'desktop';
+}
+
+var tokens_tag_html = 	"<img src='/modules/mod_pch_sso/assets/images/coins.jpg' height='25' width='25' /> Tokens can be used towards EXTRA prize opportunities at our redemption center. <br />" +
+						"<img src='/modules/mod_pch_sso/assets/images/acct.jpg' height='25' width='25'/> PCH.COM, PCHlotto.com, PCHgames.com, PCHslots.com and PCHbingo.com all share the same password. ";
+
+
+PCHSSOLightbox.searchCreatePassword = function(){
+
+    try {
+        PCH.SsoLightbox.open( {
+            titleText: "Complete Your Password",
+            bodyCopy: "<p>Hi <strong>"+PCHUSER.firstName+"</strong>! " +
+                      "<br/><br/>Create your password below and you'll be entered to win an exciting $100,000.00 Cash Prize from PCH Giveaway No. 3577." +
+                      "</p>",
+            button: { type: "submit-claim-entry", callBack: function( e ) {
+                        PCHSSOProxy.createPassword('CreatePassword_completeRegistration');
+                    } },
+            fields: [ { label: "Password:", type: "password", classy: "lbpassword required", value: "" }, { label: "Confirm Password:", type: "password", classy: "lbconfirmPassword required", value: "" } ],
+            notYou: function( e ) { PCHSSOProxy.logout(); },
+            keepMeSignedIn: { classy: "remember", checked: true },
+            onClose : function(){
+                PCHSSOProxy.clearErrors();
+                PCH.SsoLightbox.close();
+                PCHGA.trackEvent('SSO', 'cancel', 'CreatePassword_completeRegistration');
+            },
+            swRulesAndFacts: [ { copy: "Official Rules", link: "/rules" }, { copy: "Sweepstakes Facts", link: "/facts" } ],
+            policy: "http://privacy.pch.com"
+        } );
+
+    } catch( e ) {
+        console.log( e );
+    }
+};
+
+PCHSSOLightbox.createPassword = function(){
+
+	try {
+        PCH.SsoLightbox.open( {
+        	titleText: "Complete Your Registration",
+        	bodyCopy: "<p>Hi <strong>"+PCHUSER.firstName+"</strong>! " +
+        			  "<br/><br/>You're just one step away from completing your registration and scoring <strong>1,000 TOKENS</strong> to use towards EXTRA prize opportunities in our Redemption Center!" +
+        			  "<br/><br/>Create a password below:<br /></p>",
+        	button: { type: "submit", callBack: function( e ) {
+        				PCHSSOProxy.createPassword('CreatePassword_completeRegistration');
+        			} },
+        	fields: [ { label: "Password:", type: "password", classy: "lbpassword required", value: "" }, { label: "Confirm Password:", type: "password", classy: "lbconfirmPassword required", value: "" } ],
+        	notYou: function( e ) { PCHSSOProxy.logout(); },
+        	keepMeSignedIn: { classy: "remember", checked: true },
+        	onClose : function(){
+        		PCHSSOProxy.clearErrors();
+        		PCH.SsoLightbox.close();
+        		PCHGA.trackEvent('SSO', 'cancel', 'CreatePassword_completeRegistration');
+        	},
+        	policy: "http://privacy.pch.com"
+        } );
+
+    } catch( e ) {
+        console.log( e );
+    }
+};
+
+//bank tokens
+PCHSSOLightbox.createPasswordToBankTokens = function(game_return_value, tokens, description){
+
+    if(tokens === undefined) tokens = 0;
+    if(game_return_value === undefined) game_return_value = "";
+    //if(tokens == 0) return false;
+
+    tokens = parseInt(tokens, 10);
+    if(typeof addCommas == 'function'){
+        tokens = addCommas(tokens);
+    }
+    //body copy based on tokens. if tokens are not available, this is use to ask user to create password
+    var createPasswordBodyCopy = "<p>Hi <strong>"+PCHUSER.firstName+"</strong>!," +
+                      "<br/><br/>You're just one step away from completing your registration and scoring <strong>1,000 TOKENS</strong> to use " +
+                      "towards EXTRA prize opportunities in our Redemption Center!" +
+                      "<br/><br/>Create a password below:<br/><br/>" +
+                      "</p>";
+    var welcomeBodyCopy = "<p>Hi <strong>"+PCHUSER.firstName+"</strong>!"+
+                          "<br/><br/>Great news!<br/><br/>"+
+                          "You've earned "+tokens+" Tokens which can be used toward EXTRA prize opportunities in our Redemption Center."+
+                          "<br/><br/>"+
+                          "Create a password here to bank your "+tokens+" Tokens now AND you'll score an additional <strong>1,000 TOKENS</strong> today!"+
+                          "<br/><br/></p>";
+    var bodyCopy = createPasswordBodyCopy;
+    if(tokens != 0){
+        bodyCopy = welcomeBodyCopy;
+    }
+    try {
+        PCH.SsoLightbox.open( {
+            titleText: "Welcome to PCH.com!",
+            bodyCopy: bodyCopy,
+            /*bodyCopy: "<p>Dummy text "+ tokens +" </p>",*/
+            button: { type: "submit", callBack: function( e ) {
+                        PCHSSOProxy.createPassword('createPasswordToBankTokens', game_return_value);
+                    } },
+            fields: [ { label: "Password:", type: "password", classy: "lbpassword required", value: "" }, { label: "Confirm Password:", type: "password", classy: "lbconfirmPassword required", value: "" } ],
+            notYou: function( e ) { PCHSSOProxy.logout(); },
+            keepMeSignedIn: { classy: "remember", checked: true },
+            onClose : function(){
+            	PCHGA.trackEvent('SSO','cancel','CreatePassword_bankedToken');
+                PCHSSOProxy.clearErrors();
+                if(game_return_value != '' && !PCHSSOLightbox.createPasswordBankTokensForPath.displayed){
+                    PCHSSOLightbox.createPasswordBankTokensForPath.displayed = 1;
+                    PCHSSOLightbox.createPasswordBankTokensForPath(game_return_value, tokens, 'replace lightbox', description);
+                    return false;
+                }
+
+                PCH.SsoLightbox.close();
+            },
+            policy: "http://privacy.pch.com"
+        } );
+
+
+    } catch( e ) {
+        console.log( e );
+    }
+
+};
+
+//bank tokens for completing the path
+PCHSSOLightbox.createPasswordBankTokensForPath = function(game_return_value, tokens, methodType, description){
+    if(tokens === undefined) tokens = 0;
+    if(game_return_value === undefined) game_return_value = "";
+    if(tokens == 0) return false;
+    PCHSSOLightbox.setGameStatusTokenCreditOffered(game_return_value);
+    if(methodType == undefined || methodType == ''){
+        tokens = parseInt(tokens, 10);
+        if(typeof addCommas == 'function'){
+            tokens = addCommas(tokens);
+        }
+    }
+    var lbtokenobj = {
+            titleText: "You've Earned Tokens!",
+            bodyCopy: "<p>Way to go <strong>"+PCHUSER.firstName+"</strong>!" +
+                      "<br/><br/>" +
+                      "You've earned "+tokens+" Tokens which can be used towards " +
+                      "EXTRA prize opportunities in the Redemption Center!<br /><br />" +
+                      "Create a password to <strong>BANK YOUR TOKENS </strong>here:"+
+                      "</p>",
+            /*bodyCopy: "<p>Dummy text "+ tokens +" </p>",*/
+            button: { type: "submit", callBack: function( e ) {
+                        PCHSSOProxy.createPassword('CreatePassword_bankTokenForPath', game_return_value);
+                    } },
+            fields: [ { label: "Password:", type: "password", classy: "lbpassword required", value: "" }, { label: "Confirm Password:", type: "password", classy: "lbconfirmPassword required", value: "" } ],
+            notYou: function( e ) { PCHSSOProxy.logout(); },
+            keepMeSignedIn: { classy: "remember", checked: true },
+            onClose : function(){
+            	PCHGA.trackEvent('SSO','cancel','CreatePassword_bankTokenForPath');
+                PCHSSOProxy.clearErrors();
+                PCH.SsoLightbox.close();
+            },
+            policy: "http://privacy.pch.com"
+        };
+
+    try {
+        if(methodType !== undefined && methodType != ''){
+            PCH.SsoLightbox.content( lbtokenobj );
+        }else{
+            PCH.SsoLightbox.open( lbtokenobj );
+        }
+
+
+        return false;
+    } catch( e ) {
+        console.log( e );
+    }
+};
+
+// @todo: update required
+PCHSSOLightbox.createPasswordForRedemption = function(){
+
+	try {
+        PCH.SsoLightbox.open( {
+        	titleText: "Complete Your Registration",
+        	bodyCopy: "<p>Hi <strong>"+PCHUSER.firstName+"</strong>, " +
+        			  "<br/><br/>You need TOKENS to get in on these EXTRA Prize Opportunities. Score 1,000 Tokens RIGHT NOW just for creating a password!" +
+        			  "<br /><br />Create a password below:</p>",
+        	button: { type: "submit", callBack: function( e ) {
+        				PCHSSOProxy.createPassword('CreatePassword_completeRegistration');
+        			} },
+        	fields: [ { label: "Password:", type: "password", classy: "lbpassword required", value: "" }, { label: "Confirm Password:", type: "password", classy: "lbconfirmPassword required", value: "" } ],
+        	notYou: function( e ) { PCHSSOProxy.logout(); },
+        	keepMeSignedIn: { classy: "remember", checked: true },
+        	onClose : function(){
+        		PCHSSOProxy.clearErrors();
+        		PCH.SsoLightbox.close();
+        	},
+        	policy: "http://privacy.pch.com"
+        } );
+
+    } catch( e ) {
+        console.log( e );
+    }
+};
+
+
+//bank tokens
+PCHSSOLightbox.welcomeGoldUserFirstTime = function(tokens){
+	if(tokens === undefined) tokens = 0;
+	if(tokens == 0) return false;
+	tokens = parseInt(tokens, 10);
+	if(typeof addCommas == 'function'){
+		tokens = addCommas(tokens);
+	}
+	try {
+        PCH.SsoLightbox.open( {
+        	titleText: "Welcome to PCH.com!",
+        	bodyCopy: "<p>Hi <strong>"+PCHUSER.firstName+"</strong>, " +
+        			  "<br/><br/>Instant-Win Cash Prizes and BIG Sweepstakes Giveaways are just a click away here at PCH.com, and to get you started we're giving you:<br/><br/>" +
+        			  "<strong>" + tokens +" TOKENS </strong><br /><br />"+
+        			  "to use towards your choice of amazing Prizes in our Redemption Center" +
+        			  "</p>",
+            noPropSprite: true,
+        	onClose : function(){
+        					PCHGA.trackEvent('SSO','cancel','welcomeGoldUserFirstTime');
+        					PCHSSOProxy.clearErrors();
+        					PCH.SsoLightbox.close();
+        	        	},
+        	button: { type: "play-more", callBack: function( e ) {
+        				PCH.SsoLightbox.close();
+        				PCHGA.trackEvent('SSO','complete','welcomeGoldUserFirstTime');
+        			} },
+            policy: "http://privacy.pch.com"
+        } );
+    } catch( e ) {
+        console.log( e );
+    }
+};
+
+
+PCHSSOLightbox.welcomeGoldUserToLotto = function(){
+
+	try {
+        PCH.SsoLightbox.open( {
+        	titleText: "Welcome To PCHlotto.com!",
+        	bodyCopy: "<p>Hi <strong>"+PCHUSER.firstName+"</strong>, " +
+        			  "<br/><br/>Pick your numbers for BIG TIME cash right here at PCHlotto where we've got winners EVERY SINGLE DAY!<br/><br/>" +
+        			  "Plus, play all your cards now and you'll receive an INSTANT WIN scratch card opportunity -- Don't miss it!<br/><br/>",
+        	optin: [ { type: "lottoOptin", checked: true, copy: "Yes, I would like to receive the PCHlotto newsletter, where I can be informed about PCHlotto " +
+        			"drawings, contests, and events, as well as special PCHslots opportunities via email. If you subscribe to our newsletter, you will have the opportunity to unsubscribe in every issue. " }],
+        	button: { type: "play-now", callBack: function( e ) {
+        				var optin = $( "input.lottoOptin" ).is(":checked");
+        				if(optin){
+        					PCHSSOProxy.addOptin();
+        				}
+        				PCH.SsoLightbox.close();
+        				PCHGA.trackEvent('SSO','complete','welcomeGoldUserToLotto');
+        			} },
+            policy: "http://lotto.pch.com/privacy"
+        } );
+    } catch( e ) {
+        console.log( e );
+    }
+};
+
+// @todo
+//Welcome search users
+PCHSSOLightbox.welcomeGoldUserToSearch = function(){
+
+	try {
+        PCH.SsoLightbox.open( {
+        	titleText: "PCHSearch.com",
+        	bodyCopy: "<p>Hi "+PCHUSER.firstName+"!, " +
+        			  "<br/><br/>Welcome to PCHSearch.com, Instant Win Prizes from Searching, Free Online Sweepstakes! <br/><br/>" +
+        			  "<strong>Action: </strong>First Time Visiting The NEW PCHSearch.com!<br/><br/>" +
+        			  "</p>",
+        	onClose : function(){
+        					PCHGA.trackEvent('SSO','cancel','welcomeGoldUserToSearch');
+        					PCHSSOProxy.clearErrors();
+        					PCH.SsoLightbox.close();
+        	        	},
+        	button: { type: "play-more", callBack: function( e ) {
+        				PCH.SsoLightbox.close();
+        				PCHGA.trackEvent('SSO','complete','welcomeGoldUserToSearch');
+        			} }
+        } );
+    } catch( e ) {
+        console.log( e );
+    }
+};
+
+//Welcome Slots Users
+PCHSSOLightbox.welcomeGoldUserToSlots = function(){
+
+	try {
+        PCH.SsoLightbox.open( {
+        	titleText: "Welcome To PCHslots.com!",
+        	bodyCopy: "<p>Hi <strong>"+PCHUSER.firstName+"</strong>, " +
+        			  "<br/><br/>Spin your way to BIG CASH PAYDAY with $1,000.00 Winning opportunities at every turn!" +
+        			  "<br/><br/>Every spin could bring you a WIN or DIAMONDS you can use for extra instant-win opportunities!",
+        	optin: [ { type: "lottoOptin",  checked: true, copy: "Yes, I would like to receive the PCHlotto newsletter, where I can be informed about PCHlotto " +
+              			"drawings, contests, and events, as well as special PCHslots opportunities via email. If you subscribe to our newsletter, you will have the opportunity to unsubscribe in every issue." }],
+        	button: { type: "play-now", callBack: function( e ) {
+		        		var optin = $( "input.lottoOptin" ).is(":checked");
+						if(optin){
+							PCHSSOProxy.addOptin();
+						}
+        				PCH.SsoLightbox.close();
+        				PCHGA.trackEvent('SSO','complete','welcomeGoldUserToSlots');
+        			} },
+            policy: "http://slots.pch.com/privacy"
+        } );
+    } catch( e ) {
+        console.log( e );
+    }
+};
+
+
+
+
+PCHSSOLightbox.tokensAwarded = function(game_return_value, tokens, description, do_not_show_gold_token_lb){
+	if(tokens === undefined) return false;
+	if(tokens == 0) return false;
+	if(typeof description === undefined) description = "Completing the path";
+	tokens = parseInt(tokens, 10);
+	var activityData ={value:tokens, description:description};
+	PCH.uniExp.tokenCenter.showLastActivity(activityData);
+};
+//email not of file lightbox
+PCHSSOLightbox.emailNotOnFile = function(){
+	try {
+        PCH.SsoLightbox.open( {
+        	titleText: "Email Not On File",
+        	bodyCopy: "<p>Sorry, the email you provided is not recognized.<br/>Please click \"Register\" to create your own account today.</p>",
+        	button: { type: "register", callBack: function( e ) {
+
+        			} }
+        } );
+
+    } catch( e ) {
+        console.log( e );
+    }
+};
+
+//email not of file lightbox
+PCHSSOLightbox.passwordNotOnFile = function(){
+	try {
+        PCH.SsoLightbox.open( {
+        	titleText: "Password Not On File",
+        	bodyCopy: "<p>A Password does not exist for this email address <br/><br/> Please click \"Submit\" and we will email you a link to easily complete your registration</p>",
+        	button: { type: "submit", callBack: function( e ) {
+
+        			} }
+        } );
+    } catch( e ) {
+        console.log( e );
+    }
+};
+
+
+//forgotpassword lightbox
+//methodType is used when we have already opened lightbox, and then want to open forgotpassword lightbox on top of it
+PCHSSOLightbox.forgotPassword = function(methodType){
+	PCHSSOProxy.clearErrors();
+	var obj = {
+        	titleText: "Password Assistance",
+        	bodyCopy: "<p>Forgot or need to reset your password?<br/>Enter your email address below, then check your inbox.</p>",
+        	button: { type: "enter", callBack: function( e ) {
+        				PCHSSOProxy.forgotpassword();
+        			} },
+        	onClose : function(){
+        		PCHSSOProxy.clearErrors();
+        		PCH.SsoLightbox.close();
+        	},
+            policy: "http://privacy.pch.com",
+        	fields: [ { label: "Email:", type: "text", classy: "forgotemail required", value: PCHUSER.email } ]
+        } ;
+
+	try {
+		if(typeof methodType !== undefined && methodType !== ""){
+			PCH.SsoLightbox.content(obj );
+
+		}else{
+			PCH.SsoLightbox.open(obj );
+		}
+                PCHSSOProxy.forgotpasswordInProgress = false;
+
+
+    } catch( e ) {
+        console.log( e );
+    }
+};
+
+//Invalid password
+PCHSSOLightbox.invalidPassword = function(){
+	try {
+        PCH.SsoLightbox.open( {
+        	titleText: "Password Not Found Or Invalid",
+        	bodyCopy: "<p>The password you entered is invalid or not found. " +
+        			"Please try again<br/>" +
+        			"<br/>Remeber: your PCH.com, PCHlotto.com, PCHgames.com, PCHslots.com, PCHbingo.com accounts are linked, so the passwords are the same. <br/>" +
+        			"<br/>Forgot or need to reset your password? " +
+        			"<a href='#' data-onclick='PCHSSOLightbox.forgotPassword(\"foo\");'>click here</a></p>"
+
+        } );
+    } catch( e ) {
+        console.log( e );
+    }
+};
+
+//Forgot Password assitance
+PCHSSOLightbox.forgotPassAssistance = function(foo){
+	var obj = {
+        	titleText: "Password Assistance",
+        	bodyCopy: "<p>Help is on the way!<br/><br/> Check your inbox for the link to reset your password</p>"
+        };
+
+	try {
+		if(foo !== undefined){
+			PCH.SsoLightbox.content( obj );
+		}else{
+			PCH.SsoLightbox.open(  obj);
+		}
+
+    } catch( e ) {
+        console.log( e );
+    }
+};
+
+PCHSSOLightbox.signInOrRegister = function(){
+	try {
+        PCH.SsoLightbox.open( {
+            titleText: "Sign In Or Create An Account",
+            bodyCopy: "<p>This email already exists in our system. Please sign in.<br/><br/>Remember: PCH.com, PCHlotto.com, PCHgames.com, PCHslots.com and PCHbingo.com all share the same password.</p>",
+            button: { type: "signin", callBack: function( e ) {  PCH.SsoLightbox.close(); } },
+            fields: [ { label: "Email", type: "text", classy: "email", value: PCHUSER.email, disabled:"disabled" }, { label: "Password", type: "password", classy: "lbpassword", value: "" } ],
+            keepMeSignedIn: { classy: "remember", checked: true },
+            forgotPassword: function( e ) {  },
+            onClose : function(){
+            	PCHSSOProxy.clearErrors();
+            	PCH.SsoLightbox.close();
+        	},
+            goRegister: "link/register.html"
+        } );
+    } catch( e ) {
+        console.log( e );
+    }
+};
+
+PCHSSOLightbox.open = function(){
+	PCH.SsoLightbox.content({
+    	titleText: "Password Assistance",
+    	bodyCopy: "<p>Forgot or need to reset your password?<br/><br/>Enter your email address below, then check your inbox.</p>",
+    	button: { type: "submit", callBack: function( e ) {
+
+    				//if forgot password is success we need to display help is on the way lightbox
+    			} },
+    	fields: [ { label: "Email:", type: "text", classy: "email required", value: PCHUSER.email } ]
+    });
+};
+
+
+PCHSSOLightbox.unrecognizedUserEarnedTokens = function(cb){
+	try{
+		PCH.SsoLightbox.open({
+			titleText: "You've Earned Tokens!",
+			bodyCopy: "<p>To earn tokens which can be  used towards EXTRA prize opportunities at our redemption center, " +
+					"please sign in or register to create an account using the links above</p>",
+			button:{ type: "close", callBack: function(e){
+				if(typeof cb == 'function'){
+					cb();
+				}
+				PCH.SsoLightbox.close();
+			}}
+		});
+	}catch(e){
+		console.log(e);
+	}
+
+	//after opening the award lightbox, lets drop the universal shelf
+	PCH.uniExp.shelf.openShelf();
+};
+
+PCHSSOLightbox.unrecognizedUserRedeemTokens = function(cb){
+	try{
+		PCH.SsoLightbox.open({
+			titleText: "Start Earning Tokens!",
+			bodyCopy: "<p>To earn tokens which can be  used towards EXTRA prize opportunities at our redemption center, " +
+					"please sign in or register to create an account using the links above</p>",
+			button:{ type: "close", callBack: function(e){
+				if(typeof cb == 'function'){
+					cb();
+				}
+				PCH.SsoLightbox.close();
+			}}
+		});
+	}catch(e){
+		console.log(e);
+	}
+
+	//after opening the award lightbox, lets drop the universal shelf
+	PCH.uniExp.shelf.openShelf();
+};
+
+PCHSSOLightbox.setGameStatusTokenCreditOffered = function(grv){
+	$.post(PCHMINIBOOTSTRAP.contentBaseURL+"index.php?option=com_pchcom_content&task=setGameStatusTokenCreditOffered&grv="+grv, function(){
+		return true;
+	});
+};
+
+PCHSSOLightbox.setGameStatusTokened = function(grv){
+	$.post(PCHMINIBOOTSTRAP.contentBaseURL+"index.php?option=com_pchcom_content&task=setGameTokened&grv="+grv, function(){
+		PCH.uniExp.tokenCenter.updateTokenBalance();
+	});
+};
+
+var PCHSSOProxy = PCHSSOProxy || {};
+
+PCHSSOProxy.controllerList =  new Array();
+
+if(typeof PCHSSOProxy.logout !='function'){
+//	logout through proxy;
+	PCHSSOProxy.logout = function(cb){
+		if(typeof cb == 'function'){
+			$.get(PCHMINIBOOTSTRAP.ssouserBaseURL+"/ssoproxy/logout?callback=callback", function() {
+				cb();
+			} );
+		}else{
+			window.location.href = "/ssoproxy/logout";
+		}
+
+		return false;
+	};
+}
+
+PCHSSOProxy.forgotpassword = function(){
+	if(PCHSSOProxy.forgotpasswordInProgress === true) return;
+    PCHSSOProxy.clearErrors();
+    var container = $(".da-box");
+    obj = this;
+	PCHSSOProxy.setButtonStatus(container.find("button.enter"),0);
+		obj.forgotPasswordController = Object.create(PCH.SSO.Controller);
+		//Register Controller
+		obj.controllerList.push(obj.forgotPasswordController);
+		obj.forgotPasswordController.init({
+			"elements" : {
+				"container": container,
+				"email": $('.forgotemail')
+			},
+			"proxy": {
+		            "forgotPassword": function login(json){
+		            	PCHSSOProxy.forgotpasswordInProgress = true;
+		            	obj.forgotPasswordController.showLoaderGraphic( true );
+		            	var req = {obj:JSON.stringify(json)};
+						$.ajax({
+							  type: "GET",
+							  url: secure_url+PCHMINIBOOTSTRAP.ssouserBaseURL+"/ssoproxy/forgotpassword"+"?app="+app,
+							  contentType: "application/json; charset=utf-8",
+							  dataType: "jsonp",
+							  data: req,
+							  jsonpCallback: 'cor',
+							  success: function(data){
+								  obj.forgotPasswordController.showLoaderGraphic( false );
+								  obj.successCallBack(data);
+							  }
+							});
+		            }
+		    },
+		    "loadingGraphic": container.find( "img.loader-icon" ),
+			"ui":PCH.ssoui,
+			"success": function(){
+
+                PCHSSOProxy.setButtonStatus(obj.forgotPasswordController._elements.container.find("button.enter"),1);
+
+				if(PCH.ssoui != "mobile")
+				{
+					PCHGA.trackEvent('SSO','submit','forgotpassword');
+					PCHSSOLightbox.forgotPassAssistance("foo");
+				}
+				else
+				{
+					if(typeof PCH.passwordsent != 'undefined') {
+						window.location.href = PCH.passwordsent;
+					}
+				}
+			},
+			"failure": function (json){
+                PCHSSOProxy.forgotpasswordInProgress = false;
+                PCHSSOProxy.setButtonStatus(obj.forgotPasswordController._elements.container.find("button.enter"),1);
+
+            },
+			"env":PCH.env
+		});
+	obj.forgotPasswordController.forgotPassword();
+	obj.successCallBack = function(json){
+		if(json.result === undefined){
+			var response = json.ValidationResponses;
+			obj.forgotPasswordController.onForgotPassword(response);
+		}else{
+		}
+	};
+};
+
+PCHSSOProxy.createPassword = function(lbName, game_return_value, container, password, confirmPassword, persist, useLB, redirectURL,success_cb_cp, isInstantWin){
+	//lets check if process of creating password is already happening.
+	if(PCHSSOProxy.createPasswordInProgress === true) return;
+
+	PCHSSOProxy.clearErrors();
+	if(typeof useLB == 'undefined') var useLB = true;
+	if(typeof container == 'undefined') var container = $(".da-box"); // if container is not passed it assumes it is lightbox
+	if(typeof password == 'undefined') var password = $('.lbpassword');
+	if(typeof confirmPassword == 'undefined') var confirmPassword = $('.lbconfirmPassword');
+	if(typeof persist == 'undefined') var persist = $( "input.remember" ).is(":checked");
+    PCHSSOProxy.setButtonStatus(container.find("button.submit"),0);
+    obj = this;
+		obj.createPasswordController = Object.create(PCH.SSO.Controller);
+		//Register Controller
+		obj.controllerList.push(obj.createPasswordController);
+		obj.createPasswordController.init({
+		//var controller = new PCH.SSO.Controller({
+			"elements" : {
+				"container": container,
+				"password": password,
+				"confirmPassword": confirmPassword
+			},
+			"proxy": {
+					"createPassword": function(json){
+						//set flag to say password creation is going on
+						PCHSSOProxy.createPasswordInProgress = true;
+
+						obj.createPasswordController.showLoaderGraphic( true );
+						json.Persist = persist;
+						if(typeof game_return_value != 'undefined'){
+							//if((typeof isInstantWin != 'undefined') && (isInstantWin === true)){
+								json.gameId = game_return_value;
+							//}else{
+							//	json.GameReturnValue = game_return_value;
+							//}
+						}
+						//var reqObj = {Password:password, ConfirmPassword:confirmPassword, Persist:persist};
+						var req = {obj:JSON.stringify(json)};
+						$.ajax({
+							  type: "GET",
+							  url: secure_url+PCHMINIBOOTSTRAP.ssouserBaseURL+"/ssoproxy/createpassword",
+							  contentType: "application/json; charset=utf-8",
+							  dataType: "jsonp",
+							  data: req,
+							  jsonpCallback: 'cor',
+							  success: function(data){
+								  obj.createPasswordController.showLoaderGraphic( false );
+								  obj.successCallBack(data);
+							  }
+							});
+					},
+					"redirect" : function (url) {
+						if(typeof url !== "undefined"){
+							window.location.href = url;
+						}
+						return false;
+					}
+		    },
+		    "loadingGraphic": container.find( "img.loader-icon" ),
+			"ui":PCH.ssoui,
+			"success": function(){
+				if (typeof success_cb_cp === 'function') {
+					success_cb_cp();
+					return;
+				}
+				PCHSSOProxy.setButtonStatus(obj.createPasswordController._elements.container.find("button.submit"),1);
+				// call only upon success
+		    	if (lbName != '')
+		    		PCHGA.trackEvent('SSO','complete',lbName);
+
+				obj.createPasswordController.showLoaderGraphic( false );
+				//refresh the page
+				if(PCHSSOLightbox.redirectURL == ""){
+					if (typeof redirectURL != 'undefined'){
+						window.location.href = redirectURL;
+					} else {
+					window.location.reload(true);
+					}
+				}else{
+					window.location.href = PCHSSOLightbox.redirectURL;
+					window.location.reload(true);
+				}
+				if (useLB){
+				PCH.SsoLightbox.close();
+				}
+				PCHSSOLightbox.redirectURL = "";
+			},
+			"failure": function (){
+				PCHSSOProxy.createPasswordInProgress = false;
+				obj.createPasswordController.showLoaderGraphic( false );
+                if(obj.createPasswordController._elements.container.hasClass("da-box")){
+                    PCHSSOProxy.setButtonStatus(obj.createPasswordController._elements.container.find("button.submit"),1);}
+                else if(obj.createPasswordController._elements.container.find(".play_more_button").length == 1){
+                    $(".play_more_button").removeClass("disabled");
+                }
+				},
+			"env":PCH.env
+		});
+
+	obj.successCallBack =  function(json){
+		if(json.result === undefined){
+			var response = json.ValidationResponses;
+			obj.createPasswordController.onCreatePassword(response);
+		}else{
+			PCHSSOProxy.createPasswordInProgress = false;//lets give the user the option to try again
+		}
+	};
+
+	obj.createPasswordController.createPassword();
+};
+
+PCHSSOProxy.login = function(container, email, password, rememberme, on_success_url, success_cb) {
+
+	//lets check if flag is set to see if login process is going on
+	if(PCHSSOProxy.loginInProgress === true) return;
+
+
+	PCHSSOProxy.clearErrors();
+	obj = this;
+		obj.loginController = Object.create(PCH.SSO.Controller);
+		//Register controller to clear errors
+		obj.controllerList.push(obj.loginController);
+
+		obj.loginController.init({
+			"elements" : {
+				"container" : container,
+				"email" : email,
+				"password" : password
+			},
+			"proxy" : {
+
+				"login" : function login(json) {
+					PCHSSOProxy.loginInProgress = true;
+					obj.loginController.showLoaderGraphic( true );
+					var persist = rememberme.is(":checked");
+					json.Persist = persist;
+					var req = {
+						obj : JSON.stringify(json)
+					};
+					$.ajax({
+						type : "GET",
+						url : secure_url+PCHMINIBOOTSTRAP.ssouserBaseURL+"/ssoproxy/login?app="+app,
+						contentType : "application/json; charset=utf-8",
+						dataType : "jsonp",
+						data : req,
+						jsonpCallback : 'cor',
+						success : function(data) {
+
+
+							obj.loginController.showLoaderGraphic( false );
+							obj.successCallBack(data);
+						}
+					});
+				},
+				"logout" : function() {
+				},
+				"performAnalytics" : function (tag) {
+					if (tag.reason == 'failure')
+						PCHGA.trackVirtualPageView(PCHSSOLightbox.pageTitle, tag.errorCode, PCHSSOProxy.login.pchTrackCallBack, tag);
+					else
+						PCHGA.trackVirtualPageView(PCHSSOLightbox.pageTitle, tag.reason, PCHSSOProxy.login.pchTrackCallBack, tag);
+
+					//tag.success();  // moved to callback function
+				},
+				"redirect" : function (url) {
+					if(typeof url !== "undefined"){
+						window.location.href = url;
+					}
+					return false;
+				}
+			},
+			"ui" : PCH.ssoui,
+			"loadingGraphic": container.find( "img.loader-icon" ),
+			"success" : function() {
+				PCHGA.trackEvent('SSO', 'complete', 'Login');
+				obj.loginController.showLoaderGraphic( false );
+				if(typeof success_cb == 'function'){
+					success_cb(obj.response);
+					return;
+				}
+
+				if(typeof on_success_url !== 'undefined'){
+					window.location.href = on_success_url;
+				}else{
+					window.location.reload(true);
+				}
+
+			},
+			"failure" : function() {
+				PCHSSOProxy.loginInProgress = false;
+				obj.loginController.showLoaderGraphic( false );
+                PCHSSOProxy.setButtonStatus($(".sign-in-btn"),1);
+			},
+			"env":PCH.env
+		});
+	obj.loginController.login();
+	obj.successCallBack = function(json) {
+		if (json.result === undefined) {
+			var response = json.ValidationResponses;
+			obj.response = "";
+			if(json.MemberDetailStatusResponse != null){
+				obj.response = json.MemberDetailStatusResponse.MemberDetailResponse;
+			}
+
+			obj.loginController.onLogin(response);
+		} else {
+		}
+	};
+	PCHSSOProxy.login.pchTrackCallBack = function (tag) {
+		tag.success();
+	};
+};
+
+PCHSSOProxy.resetPassword = function(callback, form_container){
+
+	//check flag for reset passwor plag
+	if(PCHSSOProxy.resetPasswordInProgress === true) return;
+	PCHSSOProxy.clearErrors();
+	if(typeof gmt === 'undefined') return false;
+	if(typeof access_code === 'undefined') return false;
+	if(typeof ct === 'undefined') return false;
+	if(gmt == '') return false;
+	if(access_code == '') return false;
+	// if(ct == '') return false; //removed as it won't be needed. Also testing if merging to trunk ;)
+	var container = $("#pch-form-cnt"); //might need different ids for different lightboxes
+    if(typeof form_container != 'undefined'){
+        container = form_container;
+    }
+
+	obj = this;
+		obj.resetPasswordController = Object.create(PCH.SSO.Controller);
+		//Register Controller
+		obj.controllerList.push(obj.resetPasswordController);
+		obj.resetPasswordController.init({
+		//var controller = new PCH.SSO.Controller({
+			"elements" : {
+				"container": container,
+				"password": $('.password'),
+				"confirmPassword": $('.confirmPassword')
+			},
+			"proxy": {
+					"resetPassword": function(json){
+						PCHSSOProxy.resetPasswordInProgress = true;
+						obj.resetPasswordController.showLoaderGraphic( true );
+						var persist = $("#remember" ).is(":checked");
+						json.Persist = persist;
+						json.GMT = gmt;
+						json.AC = access_code;
+						json.CT	= ct;
+						var req = {obj:JSON.stringify(json)};
+						$.ajax({
+							  type: "GET",
+							  url: secure_url+PCHMINIBOOTSTRAP.ssouserBaseURL+"/ssoproxy/resetpassword",
+							  contentType: "application/json; charset=utf-8",
+							  dataType: "jsonp",
+							  data: req,
+							  jsonpCallback: 'cor',
+							  success: function(data){
+								  obj.resetPasswordController.showLoaderGraphic( false );
+								  obj.successCallBack(data);
+							  }
+							});
+					}
+		    },
+		    "loadingGraphic": container.find( "img.loader-icon" ),
+			"ui":PCH.ssoui,
+			"success": function(){
+				PCHGA.trackEvent('SSO','complete','resetpassword');
+				if(typeof callback === 'function'){
+					callback();
+				}
+			},
+			"failure": function (){
+				PCHSSOProxy.resetPasswordInProgress = false;
+                $("#reset-password-btn").parent().removeClass("disabled");
+			},
+			"env":PCH.env
+		});
+
+	obj.successCallBack =  function(json){
+		if(json.result === undefined){
+			var response = json.ValidationResponses;
+			obj.resetPasswordController.onResetPassword(response);
+		}else{
+			//check if result has a URL to where to redirect
+			if(json.result.url !== undefined){
+				window.location.href = json.result.url;
+				return;
+			}
+		}
+	};
+	obj.resetPasswordController.resetPassword();
+};
+
+PCHSSOProxy.addOptin = function(){
+	$.ajax({
+		  type: "GET",
+		  url: secure_url+PCHMINIBOOTSTRAP.ssouserBaseURL+"/ssoproxy/addoptin",
+		  contentType: "application/json; charset=utf-8",
+		  dataType: "jsonp",
+		  jsonpCallback: "cor",
+		  success: function(data){
+
+		  }
+	});
+};
+PCHSSOProxy.register = function(container, optin, rememberme, success_cb_reg) {
+	if(PCHSSOProxy.registerInProgress === true) return;
+	PCHSSOProxy.clearErrors();
+	obj = this;
+	if(typeof obj.registerController == 'undefined'){
+		obj.registerController = Object.create(PCH.SSO.Controller);
+
+		//Register Controller
+		obj.controllerList.push(obj.registerController);
+
+		var $register = $('#pch-reg-form');
+		var $container = $('#pch-reg-form');
+
+		obj.registerController.init({
+
+			"elements" : {
+				"container" : container,
+				"title" : $register.find( ".title" ),
+				"firstName" : $register.find( ".first-name" ),
+				"lastName" : $register.find( ".last-name" ),
+				"address1" : $register.find( ".street" ),
+				"address2" : $register.find( ".apt" ),
+				//"dateOfBirth" : $( "#DOB" ),
+				"month": $register.find( ".month" ),
+				"day": $register.find( ".day" ),
+				"year": $register.find( ".year" ),
+				"city" : $register.find( ".city" ),
+				"state" : $register.find( ".state" ),
+				"zipcode" : $register.find( ".zip" ),
+				"email" : $register.find( ".email" ),
+				"confirmEmail" : $register.find( ".confirm-email" ),
+				"password" : $register.find( ".password" ),
+				"confirmPassword" : $register.find( ".confirm-password" )
+			},
+			"optins": [
+	                      { code: app, element: optin }
+	                  ],
+			"proxy" : {
+				"register" : function register(json) {
+					PCHSSOProxy.registerInProgress = true;
+					var persist = rememberme.is(":checked");
+					obj.registerController.showLoaderGraphic( true );
+					json.Persist = persist;
+					var req = {
+						obj : JSON.stringify(json)
+					};
+					$.ajax({
+						type : "GET",
+						url : secure_url+PCHMINIBOOTSTRAP.ssouserBaseURL+"/ssoproxy/register?app="+app,
+						contentType : "application/json; charset=utf-8",
+						dataType : "jsonp",
+						data : req,
+						jsonpCallback : 'cor',
+						success : function(data) {
+							obj.registerController.showLoaderGraphic( false );
+							obj.successCallBack(data);
+						},
+						error: function(response, status, errorThrown) {
+							window.location="index.php?option=pagenotfound";
+						}
+					});
+				},
+				"logout": function (cb){
+					PCHSSOProxy.logout(cb);
+				},
+				"performAnalytics" : function (tag) {
+					if (tag.reason == 'failure')
+						PCHGA.trackVirtualPageView('register', tag.errorCode, PCHSSOProxy.register.pchTrackCallBack, tag);
+					else
+						PCHGA.trackVirtualPageView('register', tag.reason, PCHSSOProxy.register.pchTrackCallBack, tag);
+
+	//				if(tag.reason == "obscene" || tag.reason == "underage"){   // moved to callback function
+	//					PCHSSOProxy.logout(tag.success);
+	//				}else{
+	//					tag.success();
+	//				}
+
+				},
+				"redirect" : function (url) {
+					if(typeof url == "undefined") return false;
+					if(typeof redirectCallback == 'function'){
+						redirectCallback(url);
+					}else{
+						window.location = url;
+					}
+
+				}
+			},
+			"ui" : PCH.ssoui,
+			"loadingGraphic": container.find( "img.loader-icon" ),
+			"success" : function() {
+
+				if(typeof success_cb_reg == 'function'){
+					success_cb_reg(obj.response, optin);
+					return;
+				}
+			},
+			"failure" : function() {
+				PCHSSOProxy.registerInProgress = false;
+			},
+			"env":PCH.env
+		});
+	}
+	obj.registerController.register();
+	obj.successCallBack = function(json) {
+		if (json.result === undefined) {
+			var response = json.ValidationResponses;
+			obj.response = "";
+			if(json.MemberDetailStatusResponse != null){
+				obj.response = json.MemberDetailStatusResponse.MemberDetailResponse;
+			}
+			obj.registerController.onRegister(response);
+		} else {
+		}
+	};
+
+	PCHSSOProxy.register.pchTrackCallBack = function (tag) {
+		if(tag.reason == "obscene" || tag.reason == "underage"){
+			PCHSSOProxy.logout(tag.success);
+		}else{
+			tag.success();
+		}
+	};
+};
+
+PCHSSOProxy.clearErrors = function() {
+	//Loop for all controllers
+	for(i=0;i<this.controllerList.length;i++)
+		this.controllerList[i].clearErrors();
+	this.controllerList = [];
+};
+
+PCHSSOProxy.setButtonStatus = function(btnElement,status) {
+    if(status){
+        btnElement.removeClass("disabled");
+        btnElement.removeAttr("disabled");
+    }
+    else if(!status){
+        btnElement.addClass("disabled");
+        btnElement.attr("disabled","disabled");
+    }
+};
+
+
+
+// Technical difficulties
+PCHSSOLightbox.technicalDifficulties = function(){
+	try {
+        PCH.SsoLightbox.open( {
+        	titleText: "PCH.com",
+        	bodyCopy: "<p>Sorry, we're experiencing technical difficulties.<br/>Please try again later.</p>",
+        	button:{ type: "close", callBack: function(e){
+				window.location = '/';
+			}},
+        	onClose : function(){
+				window.location = '/';
+        	}
+        } );
+    } catch( e ) {
+        console.log( e );
+    }
+};
+
+
+$(document).ready(function(){
+
+	// Used for GA Tagging
+	PCHSSOLightbox.pageTitle = document.title;
+
+	$(".close-x").click(function(){
+		//Clear Errors
+		PCHSSOProxy.clearErrors();
+
+	});
+	//attach login event to universal nav
+	$(".sign-in-btn").click(function(e){
+		e.preventDefault();
+        PCHSSOProxy.setButtonStatus($(this),0);
+		var container = $('#shelf-login-container').find('div.sign-in');
+		var email = $('#uni_shelf .email');
+		var password = $('#uni_shelf .password');
+		var rememberme = $('.keep_me_signed_in');
+		//function(container, email, password, rememberme, on_success_url) {
+
+		PCHSSOProxy.login(container, email, password, rememberme);
+	});
+
+	var $loginForm = $(".login_content","#lottoGameRegistration");
+	//If disabled login form and user changed text enable login button
+	$loginForm
+		.find("input")
+		.keyup(function() {
+			$(".reg_login_button").removeAttr("disabled");
+		});
+	//attach login event to slotto login page
+	$(".reg_login_button").click(function(e){
+		//Prevent double clicking
+		$(this).attr("disabled","disabled");
+		var $form = $loginForm;
+		e.preventDefault();
+		var container = $('#pch-form-cnt_login');
+		var email = $('#username');
+		var password = $('#passwd');
+		var rememberme = $('.keep_me_signed_in');
+		PCHSSOProxy.login(container, email, password, rememberme, "", success_cb);
+	});
+
+	//attach Registration event to slotto registration page
+	$(".submit_claim_form").click(function(e){
+		var $form = $loginForm;
+		e.preventDefault();
+		var container = $("#pch-reg-form");
+		var optin = $( "#optin" );
+		var rememberme = $('.signedIn');
+		PCHSSOProxy.register(container, optin, rememberme, success_cb_reg);
+	});
+
+	//enter key for forgot password lightbox
+	$(".forgotemail").live('keyup', function(e){
+		if(e.which === 13){
+			PCHSSOProxy.forgotpassword();
+		}
+	});
+
+	//login from shelf
+	$("#uni_shelf .password,#uni_shelf .email").live('keyup',function(e){
+		if(e.which === 13){
+			e.preventDefault();
+            var container = $('#shelf-login-container').find('div.sign-in');
+            var email = $('#uni_shelf .email');
+            var password = $('#uni_shelf .password');
+            var rememberme = $('.keep_me_signed_in');
+            PCHSSOProxy.setButtonStatus($(container).find(".sign-in-btn"),0);
+			//function(container, email, password, rememberme, on_success_url) {
+			PCHSSOProxy.login(container, email, password, rememberme);
+		}
+	});
+});

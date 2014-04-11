@@ -1,0 +1,90 @@
+PHTTP141.0.172.251"Ï
+"GET /js/xnxx-ads.js?v=1 HTTP/1.1
+Host: static.xvideos.com
+Connection: keep-alive
+Accept: */*
+vUser-Agent: Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/31.0.1650.63 Safari/537.36
+Referer: http://www.xnxx.com/
+$Accept-Encoding: gzip,deflate,sdch
+!Accept-Language: en-US,en;q=0.8
+
+*ë
+HTTP/1.1 200 OK
+Server: nginx/1.5.12
+%Date: Tue, 08 Apr 2014 22:36:56 GMT
+&Content-Type: application/javascript
+Content-Length: 1808
+.Last-Modified: Thu, 13 Dec 2012 14:48:58 GMT
+Connection: keep-alive
+ETag: "50c9eada-710"
+(Expires: Wed, 09 Apr 2014 22:36:56 GMT
+Cache-Control: max-age=86400
+Accept-Ranges: bytes
+’
+for (var i in wpn_ad_configuration)
+{
+	var div = document.getElementById(wpn_ad_configuration[i]["div_id"]);
+	if (! div)
+	{
+		console.log("error, div " + wpn_ad_configuration[i]["div_id"] + " is missing !!!");
+		wpn_ad_configuration.splice(i, 1);
+	}
+	div.innerHTML = "";
+}
+function detectFlash()
+{
+	if( navigator.mimeTypes.length > 0 ) {
+		if (!navigator.mimeTypes["application/x-shockwave-flash"]) {
+			return false;
+		}
+		return navigator.mimeTypes["application/x-shockwave-flash"].enabledPlugin != null;
+		} else if( window.ActiveXObject ) {
+			try {
+				new ActiveXObject( "ShockwaveFlash.ShockwaveFlash" );
+				return true;
+			}
+			catch( oError ) {
+				return false;
+			}
+		} else {
+		return false;
+	}
+}
+function readCookie(name) {
+	var nameEQ = name + "=";
+	var ca = document.cookie.split(';');
+	for(var i=0;i < ca.length;i++) {
+		var c = ca[i];
+		while (c.charAt(0)==' ') c = c.substring(1,c.length);
+		if (c.indexOf(nameEQ) == 0) return c.substring(nameEQ.length,c.length);
+	}
+	return null;
+}
+var trackerId=readCookie("wpn_ad_cookie");
+if (! trackerId)
+{
+	trackerId = "";
+}
+
+var wpn_ad_cookieDomain = window.location.hostname+"/";
+var wpn_ad_idTracker = "";
+var wpn_ad_allowFlash = 1;
+if (!detectFlash()){
+	wpn_ad_allowFlash = 0;
+}
+var script = document.createElement("script");
+var wpn_ad_zones="";
+var wpn_ad_countZones = 0;
+for (var i in wpn_ad_configuration)
+{
+	if (wpn_ad_countZones != 0)
+	{
+		wpn_ad_zones +="x";
+	}
+	wpn_ad_zones += wpn_ad_configuration[i]["type"]+"-"+wpn_ad_configuration[i]["nb_ban"];
+	wpn_ad_countZones++;
+}
+script.src = "http://rpc-php.trafficfactory.biz/"+wpn_ad_zones+"/"+trackerId+"/"+wpn_ad_allowFlash+"/"+wpn_ad_category+"/"+wpn_ad_site+"/display.js?v=" + Math.random();
+script.type = "text/javascript";
+document.getElementsByTagName("head")[0].appendChild(script);
+

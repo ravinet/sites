@@ -1,0 +1,218 @@
+PHTTP
+18.7.20.70"Ñ
+$GET /js/ForecastSearch.js HTTP/1.1
+Host: www.weather.gov
+Connection: keep-alive
+Accept: */*
+vUser-Agent: Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/31.0.1650.63 Safari/537.36
+"Referer: http://www.weather.gov/
+$Accept-Encoding: gzip,deflate,sdch
+!Accept-Language: en-US,en;q=0.8
+
+*ž1
+HTTP/1.1 200 OK
+.Last-Modified: Mon, 24 Mar 2014 20:27:01 GMT
+!Server: Apache/2.2.15 (Red Hat)
+Accept-Ranges: bytes
+Content-Length: 5977
+Content-Type: text/javascript
+Cache-Control: max-age=154
+(Expires: Tue, 08 Apr 2014 22:37:23 GMT
+%Date: Tue, 08 Apr 2014 22:34:49 GMT
+Connection: keep-alive
+Û.
+var browser = navigator.userAgent;
+var IEversion = 99; //Give a default value for non-IE browsers
+
+if (browser.indexOf("MSIE") > 1) { //Detects if IE
+    IEversion = parseInt(browser.substr(browser.indexOf("MSIE")+5, 5));
+}
+
+$(document).ready(function() {
+    var searchPerformed = false;    
+    $("#getForecast").submit(function(){
+        if (IEversion < 9 && searchPerformed === false){
+            searchPerformed = true;
+            $("#btnSearch").click();
+			return false;
+        }else{
+            return true;
+        }
+    });
+
+    $("#btnSearch").click(function() {
+        searchPerformed = true;
+        HideErrorWindow();
+        getForecastResults();
+        return false;
+    });
+    $("#inputstring").maxLength = 120;
+
+    $("#inputstring").blur(function(){
+        if ($("#inputstring").val() === ''){
+            $("#inputstring").css("color", "#999");
+            $("#inputstring").val('Enter location ...');
+        }
+        
+    });
+    $("#inputstring").focus(function(){
+        if ($("#inputstring").val() === 'Enter location ...'){
+            $("#inputstring").val('');
+        }
+        $("#inputstring").css("color", "#000");
+    });
+    
+    $("#btnCloseError").click(function() {
+        HideErrorWindow();
+    });
+    
+    if ($("#inputstring").val() !== "Enter location ..."){
+        $("#inputstring").val("Enter location ...");
+    }
+    
+});
+
+function ShowMultipleResults() {
+    $("#txtError").css('display', 'block');
+    $("#errorNoResults").css('display', 'none');
+    $("#errorMultipleResults").css('display', 'block');
+    $("#errorChoices").css('display', 'block');
+    $("#btnCloseError").css('display', 'block');
+}
+
+function ShowNoResultsError() {
+    $("#txtError").css('display', 'block');
+    $("#errorNoResults").css('display', 'block');
+    $("#errorMultipleResults").css('display', 'none');
+    $("#errorChoices").css('display', 'none');
+    $("#btnCloseError").css('display', 'block');
+}
+
+function HideErrorWindow() {
+    $("#txtError").css('display', 'none');
+    $("#errorNoResults").css('display', 'none');
+    $("#errorMultipleResults").css('display', 'none');
+    $("#errorChoices").css('display', 'none');
+    $("#btnCloseError").css('display', 'none');
+}
+
+function getForecastResults()
+{
+    var searchQuery = $("#inputstring").val();
+    var patt1 = new RegExp("^[0-9]{5}$");
+
+    if (patt1.test(searchQuery) === true)
+    {
+        useZipcodeLookup();
+    }
+    else
+    {
+        useESRIGeocode();
+    }
+}
+
+function useZipcodeLookup()
+{
+    var searchQuery = $("#inputstring").val();
+
+    $.get('/widgets/zipcodeMap.php', {zip: searchQuery, ajax: 'true'}, function(result) {
+        if (result !== 'false')
+        {
+            var resCoords;
+            try
+            {
+                resCoords = $.parseJSON(result);
+            }
+            catch (err)
+            {
+                useESRIGeocode();
+                return;
+            }
+            var link = getPointLink(resCoords.lat, resCoords.lon);
+            submitSearchForm(link);
+        }
+        else
+        {
+            useESRIGeocode();
+        }
+    }).fail(function() {
+        useESRIGeocode();
+    });
+}
+
+function useESRIGeocode()
+{
+	
+	var searchQuery = $("#inputstring").val();
+	ESRI.Geocode.Find(IEversion,
+            searchQuery,
+            ['city', 'region'],
+            5,
+            function(results, status) {
+                if (status.success === true) {
+                    HideErrorWindow();
+                    var location = {};
+                    if (results.locations.length > 1) {
+                        var choiceText = "";
+                        var innerText = "";
+                        var href = "";
+                        var atag = "";
+                        var loadedNames = [];
+                        var loadedLocations = [];
+
+                        for (var i = 0; i < results.locations.length; i++)
+                        {
+                            location = results.locations[i];
+                            	
+                            if(jQuery.inArray(location.name, loadedNames) === -1){
+                                choiceText += '<a href="' + getPointLink(location.feature.geometry.y, location.feature.geometry.x) + '">' + location.name + '</a><br />';
+                                loadedNames.push(location.name);
+                                loadedLocations.push(location);
+                            }
+                        }
+                        if (loadedNames.length === 1) {
+
+                            location = loadedLocations[0];
+                            var link = getPointLink(location.feature.geometry.y, location.feature.geometry.x);
+                            submitSearchForm(link);
+                        } else {
+                            $("#errorChoices").html(choiceText);
+                            ShowMultipleResults();
+                        }
+                    } else {
+                        location = results.locations[0];
+                        var link = getPointLink(location.feature.geometry.y, location.feature.geometry.x);
+                        submitSearchForm(link);
+                    }
+                } else {
+                    ShowNoResultsError();
+                }
+            }
+    );
+}
+
+
+function submitSearchForm(link)
+{
+    var form = $("#inputstring").closest("form");
+    form.attr("action", link);
+    form.attr("method", 'post');
+    form.submit();
+}
+
+function getPointLink(lat, lon)
+{
+    var list = '?lat=' + lat + '&lon=' + lon + '&site=' + 'all' + '&smap=1';
+    var domain = "";
+    var location = window.location.hostname;
+    if (location.indexOf("dev.nids.noaa.gov") !== -1) {
+        domain = "http://forecast.dev.nids.noaa.gov/MapClick.php";
+    } else if (location.indexOf("preview.weather.gov") !== -1) {
+        domain = "http://preview.weather.gov/wtf/MapClick.php";
+    } else {
+        domain = "http://forecast.weather.gov/MapClick.php";
+    }
+
+
+    return domain + list;
+}

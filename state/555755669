@@ -1,0 +1,26 @@
+PHTTP204.66.40.181"à
+GET / HTTP/1.1
+Host: www.state.tx.us
+Connection: keep-alive
+TAccept: text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8
+vUser-Agent: Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/31.0.1650.63 Safari/537.36
+$Accept-Encoding: gzip,deflate,sdch
+!Accept-Language: en-US,en;q=0.8
+
+*¡
+HTTP/1.1 302 Found
+%Date: Tue, 08 Apr 2014 22:26:14 GMT
+JServer: Apache/2.2.25 (Unix) mod_jk/1.2.37 mod_ssl/2.2.25 OpenSSL/1.0.1e
+1Location: http://www.texasonline.com/portal/tol
+Content-Length: 221
+!Keep-Alive: timeout=15, max=100
+Connection: Keep-Alive
+-Content-Type: text/html; charset=iso-8859-1
+ß
+<!DOCTYPE HTML PUBLIC "-//IETF//DTD HTML 2.0//EN">
+<html><head>
+<title>302 Found</title>
+</head><body>
+<h1>Found</h1>
+<p>The document has moved <a href="http://www.texasonline.com/portal/tol">here</a>.</p>
+</body></html>

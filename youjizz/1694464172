@@ -1,0 +1,35 @@
+PHTTP31.192.122.226"Ÿ
+GET /css/style.css HTTP/1.1
+Host: www.youjizz.com
+Connection: keep-alive
+Accept: text/css,*/*;q=0.1
+vUser-Agent: Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/31.0.1650.63 Safari/537.36
+"Referer: http://www.youjizz.com/
+$Accept-Encoding: gzip,deflate,sdch
+!Accept-Language: en-US,en;q=0.8
+DCookie: PHPSESSID=rqdrsda89d4f3vdc4tg1e824q3; RNLBSERVERID=ded1418
+
+*Ó
+HTTP/1.1 200 OK
+Server: nginx/1.4.4
+%Date: Tue, 08 Apr 2014 22:37:43 GMT
+Content-Type: text/css
+Content-Length: 216
+.Last-Modified: Tue, 27 Nov 2012 01:46:20 GMT
+Connection: close
+ETag: "50b41b6c-d8"
+Accept-Ranges: bytes
+Ú
+.bkg-embed {
+background: url(images/bkg-embed.png) repeat-x;
+height: 69px;
+}
+
+.corner-embed {
+position: absolute;
+top: 0;
+width: 9px;
+height: 69px;
+background: url(images/embed-sprite.png) no-repeat;
+}
+

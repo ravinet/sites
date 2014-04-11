@@ -1,0 +1,146 @@
+PHTTP54.230.21.227"í
+-GET /s/js/onebyone/css/default.css HTTP/1.1
+Host: cdn.directrev.com
+Connection: keep-alive
+Accept: text/css,*/*;q=0.1
+vUser-Agent: Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/31.0.1650.63 Safari/537.36
+$Referer: http://www.directrev.com/
+$Accept-Encoding: gzip,deflate,sdch
+!Accept-Language: en-US,en;q=0.8
+
+*í
+HTTP/1.1 200 OK
+Content-Type: text/css
+Content-Length: 3482
+Connection: keep-alive
+%Date: Tue, 08 Apr 2014 12:17:13 GMT
+.Last-Modified: Fri, 14 Sep 2012 18:04:50 GMT
+*ETag: "c9a1fba3bbe362decf4fa019e5009384"
+Accept-Ranges: bytes
+Server: AmazonS3
+Age: 33700
+X-Cache: Hit from cloudfront
+GVia: 1.1 75ca7ad837a89e7f0c66622f87e28069.cloudfront.net (CloudFront)
+GX-Amz-Cf-Id: HQ8wK9AzJ2K1f5wE5_tMTJtMyim9-XQc8mgvWqjfCIB22E0YqrR7ow==
+œ
+#banner{   
+	position: absolute;   
+}
+.oneByOne1{
+	top: 0px;
+	left: 0px;  
+	background: ;	
+	margin: 0;
+	width: 990px;
+	height: 397px;   
+	/*background: #EFEFEF url(../images/paven.png) repeat;    */
+	position: relative;
+	overflow: hidden;
+
+} 
+#banner .oneByOne_item{
+	position: absolute;
+	width: 990px;
+	height: 397px;  
+	overflow: hidden;  
+}                              
+#banner .oneByOne_item img.bigImage{ 
+	position: absolute;
+	top: 0; 
+	left: 0;
+
+}
+#banner .oneByOne_item span.slideh2{ 
+  	position: relative;
+	float: left;
+	margin: 52px 12px 0 562px;
+	padding: 8px;
+	color:#222;
+	font: bold 44px/46px 'Open Sans', Arial, Helvetica, sans-serif;
+	/*background: #FFFFFF;*/
+}
+#banner .oneByOne_item span.slideh3{ 
+  	position: relative;
+	float: left;
+	margin: 3px 12px 0 562px;
+	padding: 8px;
+	font: 300 24px/26px 'Merriweather', Arial, Helvetica, sans-serif;
+	/*background: #FFFFFF;*/
+}
+#banner .oneByOne_item span.slideparagraph{ 
+  	position: relative;
+	float: left;
+	margin: 1px 12px 0 562px;
+	padding: 8px;
+	color:#777;
+	font:14px/18px 'Open Sans', Arial, Helvetica, sans-serif;
+	/*background: #FFFFFF;*/
+}
+#banner .oneByOne_item span.slidebutton a{
+  	position: relative;
+	float: left;
+	margin: 13px 12px 0 570px;
+	font:bold 14px/40px 'Open Sans', Arial, Helvetica, sans-serif;
+	display:inline-block;
+	vertical-align:top;
+	text-transform:uppercase;
+	color:#fff;
+	text-shadow:1px 1px 0 rgba(0, 0, 0, .1);
+	padding:0 18px;
+}
+#banner .oneByOne_item span.slidebutton a:hover {
+	color:#fff;
+}
+#banner .oneByOne_item span.slideh2_left{ 
+  	position: relative;
+	float: left;
+	margin: 52px 570px 0 32px;
+	padding: 8px;
+	color:#222;
+	font: bold 44px/46px 'Open Sans', Arial, Helvetica, sans-serif;
+	/*background: #FFFFFF;*/
+}
+#banner .oneByOne_item span.slideh3_left{ 
+  	position: relative;
+	float: left;
+	margin: 3px 12px 0 32px;
+	padding: 8px;
+	font: 300 24px/26px 'Merriweather', Arial, Helvetica, sans-serif;
+	/*background: #FFFFFF;*/
+}
+#banner .oneByOne_item span.slideparagraph_left{ 
+  	position: relative;
+	float: left;
+	margin: 1px 570px 0 32px;
+	padding: 8px;
+	color:#777;
+	font:14px/18px 'Open Sans', Arial, Helvetica, sans-serif;
+	/*background: #FFFFFF;*/
+}
+#banner .oneByOne_item span.slidebutton_left a{
+  	position: relative;
+	float: left;
+	margin: 13px 570px 0 40px;
+	font:bold 14px/40px 'Open Sans', Arial, Helvetica, sans-serif;
+	display:inline-block;
+	vertical-align:top;
+	text-transform:uppercase;
+	color:#fff;
+	text-shadow:1px 1px 0 rgba(0, 0, 0, .1);
+	padding:0 18px;
+}
+#banner .oneByOne_item span.slidebutton_left a:hover {
+	color:#fff;
+}
+.oneByOne_item img {-webkit-transform:translate3d(0,0,0);}
+.oneByOne_item span.slideh2 {-webkit-transform:translate3d(0,0,0);}
+.oneByOne_item span.slideh3 {-webkit-transform:translate3d(0,0,0);}
+.oneByOne_item span.slideparagraph {-webkit-transform:translate3d(0,0,0);}
+.oneByOne_item span.slidebutton {-webkit-transform:translate3d(0,0,0);}
+.oneByOne_item span.slidebutton a {-webkit-transform:translate3d(0,0,0);}
+
+.oneByOne_item span.slideh2_left {-webkit-transform:translate3d(0,0,0);}
+.oneByOne_item span.slideh3_left {-webkit-transform:translate3d(0,0,0);}
+.oneByOne_item span.slideparagraph_left {-webkit-transform:translate3d(0,0,0);}
+.oneByOne_item span.slidebutton_left {-webkit-transform:translate3d(0,0,0);}
+.oneByOne_item span.slidebutton_left a {-webkit-transform:translate3d(0,0,0);}

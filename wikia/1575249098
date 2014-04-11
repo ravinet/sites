@@ -1,0 +1,19 @@
+PHTTP54.235.140.221"Ð	
+ÐGET /v1/profile.redirect?api_key=876f79285d88477891afb9409d8279db&callback_url=http%3A%2F%2Floadus.exelator.com%2Fload%2F%3Fp%3D177%26g%3D900&delimiter=%2C%26&functional_area_prefix=functional_area=,&functional_area_delimiter=,&industry_prefix=industry=,&industry_delimiter=,&group_prefix=group=,&group_delimiter=,&cb_param=, HTTP/1.1
+Host: api.bizographics.com
+Connection: keep-alive
+Accept: */*
+vUser-Agent: Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/31.0.1650.63 Safari/537.36
+îReferer: http://loadus.exelator.com/load/net.php?n=PHNjcmlwdCB0eXBlPSJ0ZXh0L2phdmFzY3JpcHQiIHNyYz0iaHR0cDovL2FwaS5iaXpvZ3JhcGhpY3MuY29tL3YxL3Byb2ZpbGUucmVkaXJlY3Q%2FYXBpX2tleT04NzZmNzkyODVkODg0Nzc4OTFhZmI5NDA5ZDgyNzlkYiZjYWxsYmFja191cmw9aHR0cCUzQSUyRiUyRmxvYWR1cy5leGVsYXRvci5jb20lMkZsb2FkJTJGJTNGcCUzRDE3NyUyNmclM0Q5MDAmZGVsaW1pdGVyPSUyQyUyNiZmdW5jdGlvbmFsX2FyZWFfcHJlZml4PWZ1bmN0aW9uYWxfYXJlYT0sJmZ1bmN0aW9uYWxfYXJlYV9kZWxpbWl0ZXI9LCZpbmR1c3RyeV9wcmVmaXg9aW5kdXN0cnk9LCZpbmR1c3RyeV9kZWxpbWl0ZXI9LCZncm91cF9wcmVmaXg9Z3JvdXA9LCZncm91cF9kZWxpbWl0ZXI9LCZjYl9wYXJhbT0sIiA%2BPC9zY3JpcHQ%2B&h=d8a240bc74f4a2c373473cb3e990ec4d
+$Accept-Encoding: gzip,deflate,sdch
+!Accept-Language: en-US,en;q=0.8
+
+*€
+HTTP/1.1 302 Found
+%Date: Tue, 08 Apr 2014 22:35:50 GMT
+ñLocation: http://api.bizographics.com/v1/profile.redirect?api_key=876f79285d88477891afb9409d8279db&callback_url=http%3A%2F%2Floadus.exelator.com%2Fload%2F%3Fp%3D177%26g%3D900&delimiter=%2C%26&functional_area_prefix=functional_area=,&functional_area_delimiter=,&industry_prefix=industry=,&industry_delimiter=,&group_prefix=group=,&group_delimiter=,&cb_param=,&3pc=true
+Server: nginx/1.2.0
+‚Set-Cookie: BizoID=ab18de54-128c-493b-8e01-d4fc52bc4e95; Domain=.bizographics.com; Expires=Wed, 08-Oct-2014 10:35:50 GMT; Path=/
+Content-Length: 0
+Connection: keep-alive
+

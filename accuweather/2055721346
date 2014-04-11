@@ -1,0 +1,23 @@
+PHTTP64.94.107.65"‡
+QGET /api/segments.json?a=p-4b4gl_1fWISuU&callback=aad_quantcastResults HTTP/1.1
+Host: pixel.quantserve.com
+Connection: keep-alive
+Accept: */*
+vUser-Agent: Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/31.0.1650.63 Safari/537.36
+&Referer: http://www.accuweather.com/
+$Accept-Encoding: gzip,deflate,sdch
+!Accept-Language: en-US,en;q=0.8
+
+*ð
+HTTP/1.1 200 OK
+Connection: close
+(Content-Type: application/x-javascript
+rSet-Cookie: mc=53455541-2ce82-72e9a-c8a23; expires=Fri, 09-Oct-2015 14:12:17 GMT; path=/; domain=.quantserve.com
+IP3P: CP="NOI DSP COR NID CURa ADMa DEVa PSAo PSDo OUR SAMa IND COM NAV"
+3Cache-Control: private, no-transform, max-age=600
+(Expires: Wed, 09 Apr 2014 14:22:17 GMT
+Content-Length: 49
+%Date: Wed, 09 Apr 2014 14:12:17 GMT
+Server: QS
+3
+aad_quantcastResults({"segments":[{"id":"D"}]});

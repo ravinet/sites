@@ -1,0 +1,19 @@
+PHTTP66.117.23.106"¾
+ŠGET /m2/staples/mbox/standard?mboxHost=www.staples.com&mboxSession=1396995955057-907930&mboxPage=1396995955057-907930&screenHeight=600&screenWidth=800&browserWidth=780&browserHeight=518&browserTimeOffset=-240&colorDepth=24&tier=&club=&mboxCount=3&mbox=dotcom.location.www.iPhone.LPB&mboxId=0&mboxTime=1396981555446&mboxURL=http%3A%2F%2Fwww.staples.com%2F&mboxReferrer=&mboxVersion=44 HTTP/1.1
+Host: staples.tt.omtrdc.net
+Connection: keep-alive
+Accept: */*
+vUser-Agent: Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/31.0.1650.63 Safari/537.36
+"Referer: http://www.staples.com/
+$Accept-Encoding: gzip,deflate,sdch
+!Accept-Language: en-US,en;q=0.8
+
+*³
+HTTP/1.1 200 OK
+pragma: no-cache
+-Content-Type: text/javascript;charset=UTF-8
+Content-Length: 769
+%Date: Tue, 08 Apr 2014 22:25:54 GMT
+Server: Test & Target
+ƒ
+var mboxCurrent=mboxFactories.get('default').get('dotcom.location.www.iPhone.LPB',0);mboxCurrent.setEventTime('include.start');document.write('<div style="visibility: hidden; display: none" id="mboxImported-default-dotcom.location.www.iPhone.LPB-0">');document.write('<!-- Offer Id: 156932  --><script type=\"text\/javascript\">\r\nif (typeof(tntOffer) == \'undefined\') {\r\nvar tntOffer = \'\';\r\n}\r\ntntOffer = \'\';\r\n<\/script>');mboxFactories.get('default').get('dotcom.location.www.iPhone.LPB',0).setOffer(new mboxOfferDefault()).loaded();document.write('</div>');mboxCurrent.setEventTime('include.end');mboxFactories.get('default').get('dotcom.location.www.iPhone.LPB',0).loaded();mboxFactories.get('default').getPCId().forceId("1396995955057-907930.25_34");

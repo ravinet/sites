@@ -1,0 +1,32 @@
+PHTTP199.27.76.194"Å
+‘GET /__track/view?cb=1396902294&c=80433&lc=en&lid=75&x=wikiaglobal&y=c2&u=0&a=1461&s=oasis&n=0&r=&rand=1396996548661&beacon=DMJu8mtV18 HTTP/1.1
+Host: a.wikia-beacon.com
+Connection: keep-alive
+Accept: */*
+vUser-Agent: Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/31.0.1650.63 Safari/537.36
+%Referer: http://www.wikia.com/Wikia
+$Accept-Encoding: gzip,deflate,sdch
+!Accept-Language: en-US,en;q=0.8
+
+*Ž
+HTTP/1.1 200 OK
+Server: Varnish
+Retry-After: 0
+$X-Selected-Backend: border_http_s4
+X-Restarts: 0
+ Access-Control-Allow-Origin: *
+content-type: text/javascript
+Content-Length: 80
+@Cache-Control: private, s-maxage=0, max-age=0, must-revalidate
+iSet-Cookie: beacon=DMJu8mtV18; expires=Sun, 05 Oct 2014 22:35:48 GMT; domain=.wikia-beacon.com; path=/;
+Accept-Ranges: bytes
+%Date: Tue, 08 Apr 2014 22:35:48 GMT
+Connection: close
+ X-Served-By: cache-jfk1029-JFK
+X-Cache: MISS
+X-Cache-Hits: 0
+(X-Timer: S1396996548.452058315,VS0,VE0
+Vary: Accept-Encoding
+fSet-Cookie: Geo={%22city%22:%22FIXME%22%2C%22country%22:%22US%22%2C%22continent%22:%22NA%22}; path=/
+R
+var beacon_id = "DMJu8mtV18"; var varnishTime = "Tue, 08 Apr 2014 22:35:48 GMT";

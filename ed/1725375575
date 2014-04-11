@@ -1,0 +1,349 @@
+PHTTP74.84.219.134"Ý
+:GET /sites/all/modules/nice_menus/keyboard.js?b HTTP/1.1
+Host: www.ed.gov
+Connection: keep-alive
+Accept: */*
+vUser-Agent: Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/31.0.1650.63 Safari/537.36
+Referer: http://www.ed.gov/
+$Accept-Encoding: gzip,deflate,sdch
+!Accept-Language: en-US,en;q=0.8
+
+*ŸJ
+HTTP/1.1 200 OK
+%Date: Tue, 08 Apr 2014 21:40:06 GMT
+Server: Apache
+.Last-Modified: Wed, 19 Feb 2014 07:24:00 GMT
+$ETag: "485a2ab-23e5-4f2bd45c32400"
+Accept-Ranges: bytes
+Content-Length: 9189
+Keep-Alive: timeout=5, max=94
+Connection: Keep-Alive
+&Content-Type: application/javascript
+çG
+/*
+*
+*  Author: German Moreno Perez  
+*  For: DOED Date: 20/dec/2010
+*  This script was developed for DOED.
+*  Placed in the Public Domain.
+*
+*
+*
+*/
+var Current = 0;
+var Contador = 0;
+var ContadorDown = 0;
+// document.onkeydown = KeyCheck;    
+ $(document).ready(function() {
+  $(".menuparent").bind("keydown", KeyCheck);
+ });
+
+  function KeyCheck(e) {
+   var KeyID = (window.event) ? event.keyCode : e.keyCode;
+   switch(KeyID) {    
+    
+    
+    case 27:
+      
+    ResetAll();
+    break;
+
+/*********************************************/
+      case 37:
+      
+    --Contador;
+    if (Contador == 0)
+    Contador = 5;
+    --Current;
+    
+    if (Current == 0)
+    Current = 5;
+    directionLeftMenus(Contador);
+    break;
+    
+    
+      case 39:
+      
+    ++Contador;
+    ++Current;
+    directionRightMenus(Contador);
+    break;
+
+    case 192: //Key Next 1 in alphanumeric.
+    ++ContadorDown;
+    if (ContadorDown == 24)
+    ContadorDown = 0;
+    GoingUpDown(Current, ContadorDown);
+    break; 
+   }
+   
+
+}
+function GoingUpDown(Current, ContadorDown) {
+  var Current;
+  var ContadorDown;
+  Current = Current;
+  DownCurrent = ContadorDown +4;
+  var Min= 4;
+  var Max= 7;  
+  ShowLinks(Current, DownCurrent);
+    
+}
+
+function ShowLinks(Current, DownCurrent) {
+
+//Shows the way the keybord is going we need to know if it's going Up
+var direction =  Current;
+//Ensure that the general variable of iteration is set to some value
+if (DownCurrent != null) {
+
+  //This will calculate the id of the link that is next in the iteration going up or down
+  var IdtoSetFocus;
+  IdtoSetFocus = document.getElementsByTagName('a')[DownCurrent].id;
+  }
+
+    //Ensure that we don have invalid values or null
+  if (IdtoSetFocus != null || IdtoSetFocus != 'undefined') {
+  
+    //This is to make sure that we are going to go back to the menu when reaches the last link it will return to the first link 
+    //ONLY ACTIVE when the direction is not UP
+    
+    if (DownCurrent == 28 && direction != "up") { 
+      if (DownCurrent == 28) {
+        FirstMenu(); 
+      }
+    }  
+    else{ 
+      // If the direction is UP and it's returning going back into the links
+      //then to iterate correctly first is needed to display the menu visible and also the block and then
+      //Setting the focus on the link that should be NEXT UP and also this only happens to the Menu Parent links.
+      // These would have an Specific number inside of the iteration "DownCurrent" that goes from 1 to 28
+      //1 Being the first one and 28 last one that returns to 1
+      
+      if ((DownCurrent == 27 || DownCurrent == 21 || DownCurrent == 16 ||DownCurrent == 12 ||DownCurrent == 7) && direction == "up" ) {
+      
+      switch(DownCurrent) {
+
+          case 27:
+            ShowMenusUp(5);
+            document.getElementById(IdtoSetFocus).focus();
+            
+          break; 
+
+          case 21:
+            ShowMenusUp(4);
+            document.getElementById(IdtoSetFocus).focus();
+            
+          break; 
+          
+          case 16:
+            ShowMenusUp(3);
+            document.getElementById(IdtoSetFocus).focus();
+            
+          break; 
+          
+          case 12:
+            ShowMenusUp(2);
+            document.getElementById(IdtoSetFocus).focus();
+            
+          break; 
+          
+          case 7:
+            
+            ShowMenusUp(1);
+            document.getElementById(IdtoSetFocus).focus();
+            
+          break; 
+        }
+      } 
+      else{
+        document.getElementById(IdtoSetFocus).focus();
+      }
+    }
+  }
+
+
+}
+
+function getCurrentStatus(Current) {
+  var Current;
+  alert("funcion directionRightMenus "+Current);
+}
+
+function FirstMenu() {
+    
+    ResetAll();
+    document.getElementById('ul-child-342').style.visibility = 'visible';
+    document.getElementById('ul-child-342').style.display = 'block';
+    document.getElementById('aLink-342').focus();
+    Current = 1;
+    Contador = 1;
+    ContadorDown = 0; 
+}
+
+
+function directionRightMenus(Current) {
+    var Max= 6;
+    var RightCurrent = Current;
+    if (RightCurrent == Max) {
+      FirstMenu();
+    }
+    else{  
+      ShowMenus(RightCurrent);
+    }
+}  
+
+
+function directionLeftMenus(Current) {
+    var LeftCurrent = Current;
+    if (LeftCurrent == 1) {
+    FirstMenu();  
+    
+    }
+    else{
+    
+    ShowMenus(LeftCurrent);
+    }
+}
+
+// This will be used for left to right and right to left circulation 
+// right circulation  |Menu-Parent-Link-1| -> |Menu-Parent-Link-2| -> |Menu-Parent-Link-(n-1)|
+// left circulation  |Menu-Parent-Link-1| <- |Menu-Parent-Link-2| <- |Menu-Parent-Link-(n-1)|
+// Then enable current Menu(display and make it visible) and set focus to Menu link parent
+function ShowMenus(Current) {
+
+
+switch(Current) {
+    
+    //--- This will be used for left to right circulation ---//
+    //This values are to surf through the links when the menus are displayed by left to right 
+    //and to set the ContadorDown = 4; in the correct Menu Parent link.
+    
+    case 1:
+      ResetAll();
+      document.getElementById('ul-child-342').style.visibility = 'visible';
+      document.getElementById('ul-child-342').style.display = 'block';
+      document.getElementById('aLink-342').focus();
+      Current = 1;
+      ContadorDown = 0;
+      break; 
+    
+    case 2:
+      ResetAll();
+      document.getElementById('ul-child-343').style.visibility = 'visible';
+      document.getElementById('ul-child-343').style.display = 'block';
+      document.getElementById('aLink-343').focus();
+      Current = 2;
+      ContadorDown = 4;
+      break; 
+
+    case 3:
+      ResetAll();
+      document.getElementById('ul-child-344').style.visibility = 'visible';
+      document.getElementById('ul-child-344').style.display = 'block';
+      document.getElementById('aLink-344').focus();
+      Current = 3;
+      ContadorDown = 9;
+      break; 
+
+    case 4:
+      ResetAll();
+      document.getElementById('ul-child-345').style.visibility = 'visible';
+      document.getElementById('ul-child-345').style.display = 'block';
+      document.getElementById('aLink-345').focus();
+      Current = 4;
+      ContadorDown = 13;
+      break;
+
+    case 5:
+      ResetAll();
+      document.getElementById('ul-child-2640').style.visibility = 'visible';
+      document.getElementById('ul-child-2640').style.display = 'block';
+      document.getElementById('aLink-2640').focus();
+      Current = 5;
+      ContadorDown = 18;
+      break;
+  }
+    
+}
+//This function ONLY runs when Up Arrow is hit
+function ShowMenusUp(Current) {
+
+switch(Current) {
+    
+    //This values are to surf through the links when the menus are displayed by left to right 
+    //and to set the ContadorDown = 4; in the correct Menu Parent link.
+    //This makes possible the flow of the menu going backwards  |Last-Link-in-Previous-Menu|<-|Link-Parent-Focus|
+    
+    case 1:
+      ResetAll();
+      document.getElementById('ul-child-342').style.visibility = 'visible';
+      document.getElementById('ul-child-342').style.display = 'block';
+      document.getElementById('aLink-342').focus();
+      Current = 1;
+      break; 
+
+
+    case 2:
+      ResetAll();
+      document.getElementById('ul-child-343').style.visibility = 'visible';
+      document.getElementById('ul-child-343').style.display = 'block';
+      document.getElementById('aLink-343').focus();
+      Current = 2;
+      break; 
+
+    case 3:
+      ResetAll();
+      document.getElementById('ul-child-344').style.visibility = 'visible';
+      document.getElementById('ul-child-344').style.display = 'block';
+      document.getElementById('aLink-344').focus();
+      Current = 3;
+      break; 
+
+    case 4:
+      ResetAll();
+      document.getElementById('ul-child-345').style.visibility = 'visible';
+      document.getElementById('ul-child-345').style.display = 'block';
+      document.getElementById('aLink-345').focus();
+      Current = 4;
+      break;
+
+    case 5:
+      ResetAll();
+      document.getElementById('ul-child-2640').style.visibility = 'visible';
+      document.getElementById('ul-child-2640').style.display = 'block';
+      document.getElementById('aLink-2640').focus();
+      Current = 5;
+      break;
+    
+    default:
+    FirstMenu();
+       
+  }
+    
+}
+function ResetAll() {
+    
+    document.getElementById('ul-child-342').style.visibility = 'hidden';
+    document.getElementById('ul-child-342').style.display = 'none';
+    
+    document.getElementById('ul-child-343').style.visibility = 'hidden';
+    document.getElementById('ul-child-343').style.display = 'none';
+    
+    document.getElementById('ul-child-344').style.visibility = 'hidden';
+    document.getElementById('ul-child-344').style.display = 'none';
+    
+    document.getElementById('ul-child-345').style.visibility = 'hidden';
+    document.getElementById('ul-child-345').style.display = 'none';
+    
+    document.getElementById('ul-child-2640').style.visibility = 'hidden';
+    document.getElementById('ul-child-2640').style.display = 'none';
+}
+
+function LastLink() {
+    
+    document.getElementById('ul-child-2640').style.visibility = 'visible';
+    document.getElementById('ul-child-2640').style.display = 'block';
+    document.getElementById('aLink-2640').focus();
+    Current = 5;
+}

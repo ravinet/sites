@@ -1,0 +1,57 @@
+PHTTP23.32.154.226"‰
+2POST /Analytics/Request/1397247815/Page HTTP/1.1
+Host: www.barnesandnoble.com
+Connection: keep-alive
+Content-Length: 1066
+'Origin: http://www.barnesandnoble.com
+"X-Requested-With: XMLHttpRequest
+vUser-Agent: Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/31.0.1650.63 Safari/537.36
+/Content-Type: application/json; charset=UTF-8
+Accept: */*
+)Referer: http://www.barnesandnoble.com/
+$Accept-Encoding: gzip,deflate,sdch
+!Accept-Language: en-US,en;q=0.8
+ØCookie: JSESSIONID=44owlr9khvs21q2wsgpjreg1bpnjbnflite041397247815336; pds%5Flife=d=AQB%2FV%2FS99o2xcNmBDKOilUZzQghrV1fdaXhebmCY2oY2H%2Ba5Gxh6YQK%2B773YiAu4JGA%3D&v=5; BNCAB=A; userid=cn1P1WUU4i; pds%5Fsess=d=AQDxc488NhajyOA8RDcpo9Hdwwz4gzcheChQtJ6vCI9aSk%2FQ0ph1HYHZFccY1cZPTLo%3D&v=5; bnMobile=type=&state=ignore&device=N; SSLB=0; TSdb1d86=529a3c5982220200c8ce866259b7a63c093427e1ac425a4253484f4760ac0ec5615cc449; TS74f051=9b284646fd22513b27a9d3d69bb8c575093427e1ac425a4253484f47ed034a99cd958c5c9d9f3dcb1dd429a1e6bb538b65429c989f6197d7e13adadee4f8d7c56c6dcdd381e8ea1db12f6551; bn-ua-cp=4; CoreID6=32988903376013972478164&ci=90231135; wi%3AlastRequestId=1397247815; cmTPSet=Y; 90231135_clogin=l=1397247816&v=7&e=1397249616459
+¬
+{
+    "requestId": "1397247815",
+    "lastRequestId": "",
+    "userId": "cn1P1WUU4i",
+    "ipAddress": "128.30.76.55",
+    "pageType": "www.homepage.default",
+    "url": "http://www.barnesandnoble.com/",
+    "siteId": "0001",
+    "appVersion": "2.14.3",
+    "environment": "prodnj",
+    "signedIn": "false",
+    "isRecognized": "N",
+    "parameters": {
+        "isNookOwner": false
+    },
+    "serverTime": "1397247815",
+    "isMember": false,
+    "isFromBorders": null,
+    "referrer": "",
+    "userAgent": "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/31.0.1650.63 Safari/537.36",
+    "testCell": "",
+    "testName": "",
+    "fliteTestName": "",
+    "pageAware": false,
+    "pageName": "Gateway|NonNook|Personalized",
+    "clientTime": 1397247816456,
+    "sections": [
+        "Global_Nav",
+        "Billboard",
+        "Featured Offers (PID: 42700)",
+        "New, Bestselling and in the News (PID: 42703)",
+        "CDS-module-45880-45880",
+        "CDS-module-43931-In Our Stores",
+        "Deal of the Day (PID: 43949)"
+    ]
+}*Ö
+HTTP/1.1 200 OK
+Content-Length: 0
+%Date: Fri, 11 Apr 2014 20:23:36 GMT
+Connection: keep-alive
+gSet-Cookie: TSdb1d86=529a3c5982220200c8ce866259b7a63c093427e1ac425a4253484f4760ac0ec5615cc449; Path=/
+

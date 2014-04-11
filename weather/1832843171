@@ -1,0 +1,21 @@
+PHTTP216.120.27.21"Ñ
+.GET /adscores/g.json?sid=9202507693 HTTP/1.1
+Host: adadvisor.net
+Connection: keep-alive
+Accept: */*
+vUser-Agent: Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/31.0.1650.63 Safari/537.36
+ÃReferer: http://bcp.crwdcntrl.net/5/ct=y/c=2215/rand=319858107/pv=y/seg=lang_en/seg=ampm_PM/seg=site_web_weather_us/seg=pageIdCode_home/seg=mode_default_121/seg=pageDeclaration_undc/seg=zone_home/rt=ifr
+$Accept-Encoding: gzip,deflate,sdch
+!Accept-Language: en-US,en;q=0.8
+
+*’
+HTTP/1.1 200 OK
+&Date: Tue,  08 Apr 2014 22:34:41 GMT
+Connection: close
+Server: AAWebServer
+DP3P: policyref="http://www.adadvisor.net/w3c/p3p.xml",CP="NOI NID"
+Content-Length: 103
+ Content-Type: application/json
+ÅSet-Cookie: ab=0001%3A2uc%2FizEpgrLJKuZZ8nOpEYMoMtNcgqXn; Domain=.adadvisor.net; Expires=Tue,  08 Apr 2015 22:34:41 GMT; Path=/
+i
+processTargusData({"targus": { "segment" : "000", "zip" : "", "age" : "", "gender" : "", "sk" : "" }});

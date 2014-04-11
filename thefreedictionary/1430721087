@@ -1,0 +1,25 @@
+PHTTP209.40.98.46"ä
+jGET /_/misc/track.ashx?ref=&loc=http%3A%2F%2Fwww.thefreedictionary.com%2F&r=0.08916372526437044 HTTP/1.1
+!Host: www.thefreedictionary.com
+Connection: keep-alive
+Accept: */*
+vUser-Agent: Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/31.0.1650.63 Safari/537.36
+,Referer: http://www.thefreedictionary.com/
+$Accept-Encoding: gzip,deflate,sdch
+!Accept-Language: en-US,en;q=0.8
+7Cookie: guid=04/08/2014 06:27~0~; brain=20; t2=1; h=1
+
+*‚
+HTTP/1.1 200 OK
+"Cache-Control: private, no-store
+7Content-Type: application/x-javascript; charset=utf-8
+(Expires: Tue, 08 Apr 2014 22:27:23 GMT
+Server: Microsoft-IIS/7.5
+;Set-Cookie: track=2; domain=thefreedictionary.com; path=/
+P3P: CP="CAO PSA OUR"
+‚PICS-Label: (PICS-1.1 "http://www.rsac.org/ratingsv01.html" l by "info@farlex.com" on "2009.10.07T10:15-0400" exp "2013.12.31T12:00-0400" r (n 0 s 0 v 0 l 0 oa 0 ob 0 oc 0 od 0 oe 0 of 0 og 0 oh 0 c 0)), (PICS-1.1 "http://www.rsac.org/ratingsv01.html" l by "info@farlex.com" on "2009.10.07T10:15-0400" exp "2013.12.31T12:00-0400" r (n 0 s 0 v 0 l 0 oa 0 ob 0 oc 0 od 0 oe 0 of 0 og 0 oh 0 c 0))(PICS-1.0 "http://www.rsac.org/ratingsv01.html" l by "info@farlex.com" on "2009.10.07T10:15-0400" exp "2013.12.31T12:00-0400" r (v 0 s 0 n 0 l 0)), (PICS-1.1 "http://www.rsac.org/ratingsv01.html" l by "info@farlex.com" on "2009.10.07T10:15-0400" exp "2013.12.31T12:00-0400" r (n 0 s 0 v 0 l 0 oa 0 ob 0 oc 0 od 0 oe 0 of 0 og 0 oh 0 c 0))(PICS-1.0 "http://www.rsac.org/ratingsv01.html" l by "info@farlex.com" on "2009.10.07T10:15-0400" exp "2013.12.31T12:00-0400" r (v 0 s 0 n 0 l 0))(PICS-1.1 "http://www.rsac.org/ratingsv01.html" l by "info@farlex.com" on "2009.10.07T10:15-0400" exp "2013.12.31T12:00-0400" r (l 0 s 0 v 0 o 0))
+X-Powered-By: ASP.NET
+%Date: Tue, 08 Apr 2014 22:27:22 GMT
+Content-Length: 22
+
+setCookie('track','2')

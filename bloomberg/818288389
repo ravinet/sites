@@ -1,0 +1,18 @@
+PHTTP23.15.9.153"×
+GET /crossdomain.xml HTTP/1.1
+ Host: blive_us-lh.akamaihd.net
+Connection: keep-alive
+vUser-Agent: Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/31.0.1650.63 Safari/537.36
+Accept: */*
+$Referer: http://www.bloomberg.com/
+$Accept-Encoding: gzip,deflate,sdch
+!Accept-Language: en-US,en;q=0.8
+
+*…
+HTTP/1.1 200 OK
+Content-Type: text/html
+Content-Length: 250
+%Date: Tue, 08 Apr 2014 21:31:20 GMT
+Connection: keep-alive
+ü
+<?xml version="1.0"?><!DOCTYPE cross-domain-policy SYSTEM "http://www.macromedia.com/xml/dtds/cross-domain-policy.dtd"><cross-domain-policy><allow-access-from domain="*"/><allow-http-request-headers-from domain="*" headers="*"/></cross-domain-policy>

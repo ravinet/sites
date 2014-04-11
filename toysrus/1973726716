@@ -1,0 +1,27 @@
+»HTTPS173.252.110.27"¿
+òGET /connect/ping?client_id=118407138370644&domain=cdn.strcst.net&origin=1&redirect_uri=https%3A%2F%2Fs-static.ak.facebook.com%2Fconnect%2Fxd_arbiter%2FwTH8U0osOYl.js%3Fversion%3D40%23cb%3Df17d115ee4%26domain%3Dcdn.strcst.net%26origin%3Dhttps%253A%252F%252Fcdn.strcst.net%252Ff399efd9ac%26relation%3Dparent&response_type=token%2Csigned_request%2Ccode&sdk=joey HTTP/1.1
+Host: www.facebook.com
+Connection: keep-alive
+TAccept: text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8
+vUser-Agent: Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/31.0.1650.63 Safari/537.36
+øReferer: https://cdn.strcst.net/51bf692d1df1e519329ee630/cmps/524f1249cd8a671e84d51500/p_discovery_v2.html?pid=524f1249cd8a671e84d51500&type=tru-activity&url=http%3A%2F%2Fwww.toysrus.com%2Fhome%2Findex.jsp&tag=tru&activity=1&SGC_WUID=100&sb=false
+$Accept-Encoding: gzip,deflate,sdch
+!Accept-Language: en-US,en;q=0.8
+
+*è
+
+HTTP/1.1 302 forced.302
+Ócontent-security-policy: default-src *;script-src https://*.facebook.com http://*.facebook.com https://*.fbcdn.net http://*.fbcdn.net *.facebook.net *.google-analytics.com *.virtualearth.net *.google.com 127.0.0.1:* *.spotilocal.com:* 'unsafe-inline' 'unsafe-eval' https://*.akamaihd.net http://*.akamaihd.net *.atlassolutions.com chrome-extension://lifbcibllhkdhoafpjfnlhfpfgnpldfl;style-src * 'unsafe-inline';connect-src https://*.facebook.com http://*.facebook.com https://*.fbcdn.net http://*.fbcdn.net *.facebook.net *.spotilocal.com:* https://*.akamaihd.net ws://*.facebook.com:* http://*.akamaihd.net https://fb.scanandcleanlocal.com:* *.atlassolutions.com http://attachment.fbsbx.com https://attachment.fbsbx.com;
+=Cache-Control: private, no-cache, no-store, must-revalidate
+(Content-Type: text/html; charset=utf-8
+%Date: Tue, 08 Apr 2014 22:29:05 GMT
+(Expires: Sat, 01 Jan 2000 00:00:00 GMT
+ÑLocation: https://s-static.ak.facebook.com/connect/xd_arbiter/wTH8U0osOYl.js?version=40#cb=f17d115ee4&domain=cdn.strcst.net&origin=https%3A%2F%2Fcdn.strcst.net%2Ff399efd9ac&relation=parent&error=unknown_user
+Pragma: no-cache
+*Strict-Transport-Security: max-age=86400
+!X-Content-Type-Options: nosniff
+X-XSS-Protection: 0
+:X-FB-Debug: wl8EWGctrHwSWiJS6NtCbcMGob01famION6Blrn/ZIw=
+Connection: keep-alive
+Content-Length: 0
+

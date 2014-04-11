@@ -1,0 +1,33 @@
+PHTTP72.21.92.82"è
+GET /crossdomain.xml HTTP/1.1
+Host: www.speedtest.net
+Connection: keep-alive
+vUser-Agent: Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/31.0.1650.63 Safari/537.36
+Accept: */*
+$Referer: http://www.speedtest.net/
+$Accept-Encoding: gzip,deflate,sdch
+!Accept-Language: en-US,en;q=0.8
+•Cookie: stnetsid=nhkl315c5npe971h4o1hgdgra0; __qca=P0-2046257518-1396995944326; __utma=207425361.1235381036.1396995944.1396995944.1396995944.1; __utmb=207425361.1.10.1396995944; __utmc=207425361; __utmz=207425361.1396995944.1.1.utmcsr=(direct)|utmccn=(direct)|utmcmd=(none); __ar_v4=%7CKZCLTEN6QFDENHNDXI73JE%3A20140408%3A1%7CIFZJYB3XL5FVZABFULFCRK%3A20140408%3A1%7CBVAM5MRXZFAQROQHMFPO43%3A20140408%3A1
+
+*³
+HTTP/1.1 200 OK
+Accept-Ranges: bytes
+Cache-Control: max-age=86400
+Content-Type: application/xml
+%Date: Tue, 08 Apr 2014 22:25:44 GMT
+ Etag: "e23c-1b9-4f023c4c2e52a"
+(Expires: Wed, 09 Apr 2014 22:25:44 GMT
+.Last-Modified: Fri, 17 Jan 2014 05:25:22 GMT
+MServer: Apache/2.2.25 (Unix) mod_ssl/2.2.25 OpenSSL/1.0.1e DAV/2 PHP/5.3.27
+Content-Length: 441
+»
+<?xml version="1.0"?>
+<!DOCTYPE cross-domain-policy SYSTEM "http://www.adobe.com/xml/dtds/cross-domain-policy.dtd">
+<cross-domain-policy>
+	<site-control permitted-cross-domain-policies="master-only" />
+	<allow-access-from domain="*" />
+	<allow-access-from domain="*.ookla.com" />
+	<allow-access-from domain="*.speedtest.net" />
+	<allow-access-from domain="*.cdnst.net" />
+	<allow-access-from domain="*.netindex.com" />
+</cross-domain-policy>

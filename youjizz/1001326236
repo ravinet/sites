@@ -1,0 +1,580 @@
+PHTTP31.192.122.226"ê
+GET /js/default.js HTTP/1.1
+Host: www.youjizz.com
+Connection: keep-alive
+Accept: */*
+vUser-Agent: Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/31.0.1650.63 Safari/537.36
+"Referer: http://www.youjizz.com/
+$Accept-Encoding: gzip,deflate,sdch
+!Accept-Language: en-US,en;q=0.8
+DCookie: PHPSESSID=rqdrsda89d4f3vdc4tg1e824q3; RNLBSERVERID=ded1418
+
+*˝õ
+HTTP/1.1 200 OK
+Server: nginx/1.4.4
+%Date: Tue, 08 Apr 2014 22:37:43 GMT
+(Content-Type: application/x-javascript
+Content-Length: 19693
+.Last-Modified: Mon, 23 Sep 2013 16:22:31 GMT
+Connection: close
+ETag: "52406ac7-4ced"
+Accept-Ranges: bytes
+Ôô
+/* default.js - generic stuff that could go in the framework common.js */
+
+if (typeof SpkJs == "undefined") SpkJs = {};
+
+if (typeof SpkJs.Text == "undefined") SpkJs.Text = {
+
+    /// <summary>
+    /// Method adds 'http://' to object.value if it does not exist.  Also removes extra http:// if it appears twice
+    /// </summary>
+    adjustUrl: function (e) {
+        e.value = Trim(e.value);
+        var valueLower = e.value.toLowerCase();
+        if (valueLower.substring(0, 7) != "http://") {
+            e.value = "http://" + e.value;
+        }
+        else if (valueLower.substring(0, 14) == "http://http://") {
+            e.value = e.value.substring(7);
+        }
+        return false;
+    },
+
+    // IsEmailAddress moved to SpkJs.Validation.Text
+    IsEmailAddress: function(str) { try { return (str.indexOf(".") > 2) && (str.indexOf("@") > 0); } catch (e) { return false; } },
+
+    // IsNumeric moved to SpkJs.Validation.Text
+    IsNumeric: function(sText) { var ValidChars = "0123456789"; var IsNumber = true; var Char; for (i = 0; i < sText.length && IsNumber == true; i++) { Char = sText.charAt(i); if (ValidChars.indexOf(Char) == -1) { IsNumber = false; } } return IsNumber; },
+
+    // IsDate moved to SpkJs.Validation.Text
+    IsDate: function(dateStr) { var datePat = /^(\d{1,2})(\/|-)(\d{1,2})(\/|-)(\d{4})$/; var matchArray = dateStr.match(datePat); if (matchArray == null) { return false; } month = matchArray[1]; day = matchArray[3]; year = matchArray[5]; if (month < 1 || month > 12) { return false; } if (day < 1 || day > 31) { return false; } if ((month == 4 || month == 6 || month == 9 || month == 11) && day == 31) { return false; } if (month == 2) { var isleap = (year % 4 == 0 && (year % 100 != 0 || year % 400 == 0)); if (day > 29 || (day == 29 && !isleap)) { return false; } } return true; },
+
+    // HasSpaces moved to SpkJs.Validation.Text
+    HasSpaces: function(sText) { var ValidChars = " "; var IsSpaceChar = false; var Char; var Check; for (i = 0; i < sText.length && IsSpaceChar == false; i++) { Char = sText.charAt(i).toString(); Check = Trim(Char); if (Check == "") { IsSpaceChar = true; } } return IsSpaceChar; },
+
+    // IsAlphaNum moved to SpkJs.Validation.Text
+    IsAlphaNum: function(sText) { var ValidChars = "abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789"; var IsValid = true; var Char; for (i = 0; i < sText.length && IsValid == true; i++) { Char = sText.charAt(i); if (ValidChars.indexOf(Char) == -1) { IsValid = false; } } return IsValid; },
+
+    Trim: function (STRING) { STRING = LTrim(STRING); return RTrim(STRING); },
+
+    RTrim: function (STRING) { while (STRING.charAt((STRING.length - 1)) == " ") { STRING = STRING.substring(0, STRING.length - 1); } return STRING; },
+
+    LTrim: function (STRING) { while (STRING.charAt(0) == " ") { STRING = STRING.replace(STRING.charAt(0), ""); } return STRING; },
+
+    IsFriendlyUrl: function (sText) { var ValidChars = "abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789.=/?&-"; var IsValid = true; var Char; for (i = 0; i < sText.length && IsValid == true; i++) { Char = sText.charAt(i); if (ValidChars.indexOf(Char) == -1) { IsValid = false; } } return IsValid; }
+
+};
+
+if (typeof SpkJs.Event == "undefined") SpkJs.Event = {
+
+//    cancelClick: function(event)
+//    {
+//        if (event) event.cancelBubble = true;
+//        //if (event) event.preventDefault();
+//        return false;
+//    },
+
+
+    CancelClick: function(event)
+    {
+        event = SpkJs.Event.GetEvent(event);
+        if (window.event) {
+            event.returnValue = false;
+        } else if (event) {
+            event.preventDefault();
+            event.stopPropagation();
+        }
+        return false;
+    },
+    GetEvent: function (e)
+    {
+        if (window.event) { return window.event; }
+        if (e) { return e; }
+        return null;
+    }
+};
+
+if (typeof SpkJs.Element == "undefined") SpkJs.Element = {
+    //find the postion of an html element
+    findPosX: function(obj) {
+        var curleft = 0;
+        try {
+            if (obj.offsetParent)
+                while (1) {
+                curleft += obj.offsetLeft;
+                if (!obj.offsetParent)
+                    break;
+                obj = obj.offsetParent;
+            }
+            else if (obj.x)
+                curleft += obj.x;
+        }
+        catch (e) { }
+        return curleft;
+    },
+
+    findPosY: function (obj) {
+        var curtop = 0;
+        try {
+            if (obj.offsetParent)
+                while (1) {
+                curtop += obj.offsetTop;
+                if (!obj.offsetParent)
+                    break;
+                obj = obj.offsetParent;
+            }
+            else if (obj.y)
+                curtop += obj.y;
+        }
+        catch (e) { }
+        return curtop;
+    },
+    
+    GetPosition: function(obj) {
+    
+        return { top: this.findPosY(obj), left: this.findPosX(obj) };
+    }
+    
+};
+
+if (typeof SpkJs.Flash == "undefined") SpkJs.Flash = {
+
+    SetVisibilityAll: function(display) {
+
+        function flashControl_EnableByType(displayName, typename) {
+            var objects = document.getElementsByTagName(typename);
+            for (var i = 0; i < objects.length; i++) {
+                //if (objects[i].id == 'xmoov-flv-player')
+                if (objects[i].type == "application/x-shockwave-flash" && $("[name='wmode']", objects[i]).val() != "transparent") {
+                    objects[i].style.visibility = displayName;
+                }
+            }
+        }
+
+        var displayName = display ? "visible" : "hidden";
+        flashControl_EnableByType(displayName, "object");
+        flashControl_EnableByType(displayName, "embed");
+
+        var objects = document.getElementsByTagName("iframe");
+        for (var i = 0; i < objects.length; i++) {
+            objects[i].style.visibility = displayName;
+        }
+    }
+};
+
+if (typeof SpkJs.Window == "undefined") SpkJs.Window = {
+
+    //spawn a new window and set focus to it
+    spawn: function(url) { var window_settings = ""; var popWin = window.open(url, "New", window_settings); popWin.focus(); },
+
+
+    getSize: function() {
+
+        var xScroll, yScroll;
+
+        if (window.innerHeight && window.scrollMaxY) {
+            xScroll = document.body.scrollWidth;
+            yScroll = window.innerHeight + window.scrollMaxY;
+        } else if (document.body.scrollHeight > document.body.offsetHeight) { // all but Explorer Mac
+            xScroll = document.body.scrollWidth;
+            yScroll = document.body.scrollHeight;
+        } else { // Explorer Mac...would also work in Explorer 6 Strict, Mozilla and Safari
+            xScroll = document.body.offsetWidth;
+            yScroll = document.body.offsetHeight;
+        }
+
+        var windowWidth, windowHeight;
+        if (self.innerHeight) {	// all except Explorer
+            windowWidth = self.innerWidth;
+            windowHeight = self.innerHeight;
+        } else if (document.documentElement && document.documentElement.clientHeight) { // Explorer 6 Strict Mode
+            windowWidth = document.documentElement.clientWidth;
+            windowHeight = document.documentElement.clientHeight;
+        } else if (document.body) { // other Explorers
+            windowWidth = document.body.clientWidth;
+            windowHeight = document.body.clientHeight;
+        }
+
+        // for small pages with total height less then height of the viewport
+        if (yScroll < windowHeight) {
+            pageHeight = windowHeight;
+        } else {
+            pageHeight = yScroll;
+        }
+
+        // for small pages with total width less then width of the viewport
+        if (xScroll < windowWidth) {
+            pageWidth = windowWidth;
+        } else {
+            pageWidth = xScroll;
+        }
+
+        return { pageWidth: pageWidth, pageHeight: pageHeight, windowWidth: windowWidth, windowHeight: windowHeight };
+    },
+
+    getScrollPos: function() {
+        try {
+            var scroll = { x: -1, y: -1 };
+
+            if (self.pageYOffset) {
+                scroll.y = self.pageYOffset;
+            } else if (document.documentElement && document.documentElement.scrollTop) {	 // Explorer 6 Strict
+                scroll.y = document.documentElement.scrollTop;
+            } else if (document.body) {// all other Explorers
+                scroll.y = document.body.scrollTop;
+            }
+
+            if (self.pageXOffset) {
+                scroll.x = self.pageXOffset;
+            } else if (document.documentElement && document.documentElement.scrollLeft) {	 // Explorer 6 Strict
+                scroll.x = document.documentElement.scrollLeft;
+            } else if (document.body) {// all other Explorers
+                scroll.x = document.body.scrollLeft;
+            }
+            //if (scroll.x < 0 || scroll.y < 0) return scroll;
+
+            return scroll;
+        } catch (e) { alert("SPK getScrollPos error: " + e); }
+    },
+    //change the cursor to wait
+    SetWaitCursor: function(b) { if (b) { document.body.style.cursor = 'wait'; } else { document.body.style.cursor = 'default'; } },
+
+    //checks if all images on the page loaded completely
+    AreAllImagesAreLoaded: function() {
+        try {
+            var imgs = document.getElementsByTagName("img");
+            for (var i = 0; i < imgs.length; i++) {
+                if (!imgs[i].complete)
+                { return false; }
+            }
+            return true;
+        }
+        catch (e) { return false; }
+    }
+};
+
+if (typeof SpkJs.Forms == "undefined") SpkJs.Forms = {
+
+    clickOnEnter_Target: null,
+    // Clicks the defined button on 'enter' keypress
+    ClickOnEnter: function(sender, event, targetName) {
+        // postOnEnter_Target should be defined on the calling page: 
+        //    SpkJs.Forms.ClickOnEnter_Target = document.getElementById('some_server_control.ClientID');
+        if (this.IsChar(event, 13))
+            if (typeof targetName == "function")
+                targetName(sender, event);
+            else 
+            if (typeof $(targetName)[0].onclick == "function")
+                $(targetName)[0].onclick();
+            else
+                $(targetName)[0].click();
+    },
+    ClickOnEsc: function(sender, event, targetName) {
+    
+        if (this.IsChar(event, (window.event) ? 27 : event.DOM_VK_ESCAPE))
+            if (typeof $(targetName)[0].onclick == "function")
+                $(targetName)[0].onclick();
+    },
+    IsChar: function(event, findCode) {
+    
+        var keyCode = (window.event) ? window.event.keyCode : event.keyCode;
+        if (keyCode == findCode)
+        {
+            event.returnValue = false;
+            event.cancel = true;
+            return true;
+        }
+        return false;
+        
+        
+//        if (document.all) {
+//            alert(event.keyCode);
+//            if (event.keyCode == keyCode) {
+//                event.returnValue = false;
+//                event.cancel = true;
+//                return true;
+//            }
+//        }
+//        else if (document.getElementById) {
+//        alert(event.which);
+//            if (event.which == keyCode) {
+//                event.returnValue = false;
+//                event.cancel = true;
+//                return true;
+//            }
+//        }
+//        else if (document.layers) {
+//        alert(event.which);
+//            if (event.which == keyCode) {
+//                event.returnValue = false;
+//                event.cancel = true;
+//                return true;
+//            }
+//        }
+        return false;
+    },
+    ValidateDropDownList: function(sender, args) {
+        var currentDropDownList = document.getElementById(sender.controltovalidate);
+
+        if (currentDropDownList.value === "0") {
+            args.IsValid = false
+        }
+        else {
+            args.IsValid = true;
+        }
+
+        return false;
+    },
+
+    //disable all controls in a page while waiting for an ajax response
+    SetEnabledAll: function(disable) {
+        try {
+            var buts = document.getElementsByTagName("input");
+            for (var i = 0; i < buts.length; i++) {
+                buts[i].disabled = disable;
+            }
+            var sels = document.getElementsByTagName("select");
+            for (var i = 0; i < sels.length; i++) {
+                sels[i].disabled = disable;
+            }
+            var txt = document.getElementsByTagName("textarea");
+            for (var i = 0; i < txt.length; i++) {
+                txt[i].disabled = disable;
+            }
+        }
+        catch (e) { return; }
+    },
+    //  Clear input fields on focus if the value matches the default  value
+    //  ONFOCUS="clearDefault(this)"
+    ClearDefault: function(el) {if (el.defaultValue==el.value) el.value = ""}
+};
+
+if (typeof SpkJs.Cookies == "undefined") SpkJs.Cookies = {
+
+    Create: function(name, value, days) {
+        if (days) {
+            var date = new Date();
+            date.setTime(date.getTime() + (days * 24 * 60 * 60 * 1000));
+            var expires = "; expires=" + date.toGMTString();
+        }
+        else var expires = "";
+        document.cookie = name + "=" + value + expires + "; path=/";
+    },
+
+    read: function(name) {
+        var nameEQ = name + "=";
+        var ca = document.cookie.split(';');
+        for (var i = 0; i < ca.length; i++) {
+            var c = ca[i];
+            while (c.charAt(0) == ' ') c = c.substring(1, c.length);
+            if (c.indexOf(nameEQ) == 0) return c.substring(nameEQ.length, c.length);
+        }
+        return null;
+    },
+
+    erase: function(name) {
+        this.create(name, "", -1);
+    }
+};
+
+if (typeof SpkJs.Cryptography == "undefined") SpkJs.Cryptography = {};
+
+if (typeof SpkJs.Cryptography.Hashing == "undefined") SpkJs.Cryptography.Hashing = {
+
+    /**
+    *
+    * Secure Hash Algorithm (SHA1)
+    * http://www.webtoolkit.info/
+    *
+    **/
+    SHA1: function (msg) {
+
+        function rotate_left(n, s) {
+            var t4 = (n << s) | (n >>> (32 - s));
+            return t4;
+        };
+
+        function lsb_hex(val) {
+            var str = "";
+            var i;
+            var vh;
+            var vl;
+
+            for (i = 0; i <= 6; i += 2) {
+                vh = (val >>> (i * 4 + 4)) & 0x0f;
+                vl = (val >>> (i * 4)) & 0x0f;
+                str += vh.toString(16) + vl.toString(16);
+            }
+            return str;
+        };
+
+        function cvt_hex(val) {
+            var str = "";
+            var i;
+            var v;
+
+            for (i = 7; i >= 0; i--) {
+                v = (val >>> (i * 4)) & 0x0f;
+                str += v.toString(16);
+            }
+            return str;
+        };
+
+
+        function Utf8Encode(string) {
+            string = string.replace(/\r\n/g, "\n");
+            var utftext = "";
+
+            for (var n = 0; n < string.length; n++) {
+
+                var c = string.charCodeAt(n);
+
+                if (c < 128) {
+                    utftext += String.fromCharCode(c);
+                }
+                else if ((c > 127) && (c < 2048)) {
+                    utftext += String.fromCharCode((c >> 6) | 192);
+                    utftext += String.fromCharCode((c & 63) | 128);
+                }
+                else {
+                    utftext += String.fromCharCode((c >> 12) | 224);
+                    utftext += String.fromCharCode(((c >> 6) & 63) | 128);
+                    utftext += String.fromCharCode((c & 63) | 128);
+                }
+
+            }
+
+            return utftext;
+        };
+
+        var blockstart;
+        var i, j;
+        var W = new Array(80);
+        var H0 = 0x67452301;
+        var H1 = 0xEFCDAB89;
+        var H2 = 0x98BADCFE;
+        var H3 = 0x10325476;
+        var H4 = 0xC3D2E1F0;
+        var A, B, C, D, E;
+        var temp;
+
+        msg = Utf8Encode(msg);
+
+        var msg_len = msg.length;
+
+        var word_array = new Array();
+        for (i = 0; i < msg_len - 3; i += 4) {
+            j = msg.charCodeAt(i) << 24 | msg.charCodeAt(i + 1) << 16 |
+            msg.charCodeAt(i + 2) << 8 | msg.charCodeAt(i + 3);
+            word_array.push(j);
+        }
+
+        switch (msg_len % 4) {
+            case 0:
+                i = 0x080000000;
+                break;
+            case 1:
+                i = msg.charCodeAt(msg_len - 1) << 24 | 0x0800000;
+                break;
+
+            case 2:
+                i = msg.charCodeAt(msg_len - 2) << 24 | msg.charCodeAt(msg_len - 1) << 16 | 0x08000;
+                break;
+
+            case 3:
+                i = msg.charCodeAt(msg_len - 3) << 24 | msg.charCodeAt(msg_len - 2) << 16 | msg.charCodeAt(msg_len - 1) << 8 | 0x80;
+                break;
+        }
+
+        word_array.push(i);
+
+        while ((word_array.length % 16) != 14) word_array.push(0);
+
+        word_array.push(msg_len >>> 29);
+        word_array.push((msg_len << 3) & 0x0ffffffff);
+
+
+        for (blockstart = 0; blockstart < word_array.length; blockstart += 16) {
+
+            for (i = 0; i < 16; i++) W[i] = word_array[blockstart + i];
+            for (i = 16; i <= 79; i++) W[i] = rotate_left(W[i - 3] ^ W[i - 8] ^ W[i - 14] ^ W[i - 16], 1);
+
+            A = H0;
+            B = H1;
+            C = H2;
+            D = H3;
+            E = H4;
+
+            for (i = 0; i <= 19; i++) {
+                temp = (rotate_left(A, 5) + ((B & C) | (~B & D)) + E + W[i] + 0x5A827999) & 0x0ffffffff;
+                E = D;
+                D = C;
+                C = rotate_left(B, 30);
+                B = A;
+                A = temp;
+            }
+
+            for (i = 20; i <= 39; i++) {
+                temp = (rotate_left(A, 5) + (B ^ C ^ D) + E + W[i] + 0x6ED9EBA1) & 0x0ffffffff;
+                E = D;
+                D = C;
+                C = rotate_left(B, 30);
+                B = A;
+                A = temp;
+            }
+
+            for (i = 40; i <= 59; i++) {
+                temp = (rotate_left(A, 5) + ((B & C) | (B & D) | (C & D)) + E + W[i] + 0x8F1BBCDC) & 0x0ffffffff;
+                E = D;
+                D = C;
+                C = rotate_left(B, 30);
+                B = A;
+                A = temp;
+            }
+
+            for (i = 60; i <= 79; i++) {
+                temp = (rotate_left(A, 5) + (B ^ C ^ D) + E + W[i] + 0xCA62C1D6) & 0x0ffffffff;
+                E = D;
+                D = C;
+                C = rotate_left(B, 30);
+                B = A;
+                A = temp;
+            }
+
+            H0 = (H0 + A) & 0x0ffffffff;
+            H1 = (H1 + B) & 0x0ffffffff;
+            H2 = (H2 + C) & 0x0ffffffff;
+            H3 = (H3 + D) & 0x0ffffffff;
+            H4 = (H4 + E) & 0x0ffffffff;
+
+        }
+
+        var temp = cvt_hex(H0) + cvt_hex(H1) + cvt_hex(H2) + cvt_hex(H3) + cvt_hex(H4);
+
+        return temp.toLowerCase();
+
+    }
+};
+
+if (typeof SpkJs.Math == "undefined") SpkJs.Math = {
+
+    rand: function (n) {
+        return (Math.floor(Math.random() * n + 1));
+    }
+
+};
+
+if (typeof SpkJs.Guid == "undefined") SpkJs.Guid = {
+
+    getRandom: function(length) {
+        var g = "";
+
+        for (var i = 0; i < length; i++) {
+            g += Math.floor(Math.random() * 0xF).toString(0xF) + (i == 8 || i == 12 || i == 16 || i == 20 ? "-" : "")
+        }
+
+        return g
+    }
+};
+

@@ -1,0 +1,54 @@
+PHTTP50.16.211.237"ë
+5GET /themes/vice/statics/html/tracker.html HTTP/1.1
+Host: www.vice.com
+Connection: keep-alive
+TAccept: text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8
+vUser-Agent: Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/31.0.1650.63 Safari/537.36
+$Referer: http://www.vice.com/en_us
+$Accept-Encoding: gzip,deflate,sdch
+!Accept-Language: en-US,en;q=0.8
+ÀCookie: __vrf=13969964343304bOBLfV1alcmelWLAQsGOD9hsbzdGcjL; __utma=99559065.308181915.1396996434.1396996434.1396996434.1; __utmb=99559065.3.9.1396996434; __utmc=99559065; __utmz=99559065.1396996434.1.1.utmcsr=(direct)|utmccn=(direct)|utmcmd=(none); __asc=70db95581454379ea22a3fe56e8; __auc=70db95581454379ea22a3fe56e8
+
+*Ô
+
+HTTP/1.1 200 OK
+Accept-Ranges: bytes
+(Content-Type: text/html; charset=UTF-8
+%Date: Tue, 08 Apr 2014 22:33:58 GMT
+!ETag: "62f6e-43d-4eaed832177c0"
+.Last-Modified: Mon, 11 Nov 2013 21:35:35 GMT
+Server: nginx
+Content-Length: 1085
+Connection: keep-alive
+¿
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html>
+    <head>
+    <title>VICE.com</title>
+    <META NAME="ROBOTS" CONTENT="NOINDEX, NOFOLLOW">
+        <meta http-equiv="refresh" content="55" />
+		<!-- google analytics -->
+		<script type="text/javascript">
+			var _gaq = _gaq || [];
+            _gaq.push(
+                ['_setAccount', 'UA-599058-49'],
+                ['_setDomainName', 'vice.com'],
+                ['_trackPageview'],
+                ['t2._setAccount', 'UA-37305051-1'],
+                ['t2_setDomainName', 'vice.com'],
+                ['t2._trackPageview']
+            );
+			(function() {
+				var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+				ga.src = ('https:' == document.location.protocol ? 'https://' : 'http://') + 'stats.g.doubleclick.net/dc.js';
+				var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+			})();
+		</script>
+		<!-- end google analytics -->
+    </head>
+    <body>
+
+    </body>
+</html>
+

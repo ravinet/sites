@@ -1,0 +1,40 @@
+PHTTP23.74.28.10"ä
+BGET /pch_media/js/gigya_dynamic.js?v=3.1.32.1.454-18308 HTTP/1.1
+Host: www.pch.com
+Connection: keep-alive
+Accept: */*
+vUser-Agent: Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/31.0.1650.63 Safari/537.36
+Referer: http://www.pch.com/
+$Accept-Encoding: gzip,deflate,sdch
+!Accept-Language: en-US,en;q=0.8
+úCookie: deb088d138aa52ddbeb48990e3e58a5e=k12m2f9f5ent563l9fgbgvu270; pdd=D; pci=n3qg5f4gGbPBKvNH; __utma=102336542.1157406824.1396994885.1396994885.1396994885.1; __utmb=102336542.1.10.1396994885; __utmc=102336542; __utmz=102336542.1396994885.1.1.utmcsr=(direct)|utmccn=(direct)|utmcmd=(none); _at_id.pch.production.a1c9=b2baeaeffd6ee36d.1396994885.1.1396994885.1396994885.0.0.
+
+*ž
+HTTP/1.1 200 OK
+Server: Apache
+.Last-Modified: Tue, 15 Oct 2013 13:28:46 GMT
+#ETag: "12037ba-1c5-4e8c7906c5f80"
+Accept-Ranges: bytes
+Content-Length: 453
+GP3P: CP="CAO DSP COR CUR ADM DEV TAI PSA PSD IVA IVD CON OUR LEG UNI"
+Content-Type: text/javascript
+%Date: Tue, 08 Apr 2014 22:08:04 GMT
+Connection: keep-alive
+Ç
+
+// Load Gigya dynamically 
+function loadGigyaLibrary()
+{
+	//Site Specific Gigya Library or include common gigya.js in the template before loading this file
+	
+	
+    //Load Gigya libarary
+    var s = document.createElement('script');
+    s.type = 'text/javascript';
+    s.src = "//cdn.gigya.com/js/socialize.js?apikey=" + gigyaapi;
+    document.getElementsByTagName('head')[0].appendChild(s);
+}
+
+$( document ).ready(function() {
+		loadGigyaLibrary();
+});

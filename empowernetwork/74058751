@@ -1,0 +1,26 @@
+PHTTP75.98.67.105"¢
+GET /crossdomain.xml HTTP/1.1
+Host: www.viddler.com
+Connection: keep-alive
+vUser-Agent: Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/31.0.1650.63 Safari/537.36
+Accept: */*
+¶Referer: http://www.viddler.com/embed/69c4b741/?f=1&autoplay=1&player=mini&secret=88435017&wmode=transparent&hideablecontrolbar=1&hidestats=1&disablebranding=1&loop=0&nologo=1&hd=0
+$Accept-Encoding: gzip,deflate,sdch
+!Accept-Language: en-US,en;q=0.8
+?Cookie: JSESSIONID=87B85A754872D16BB2795D5EBFE819C9.viddler_f
+
+*ó
+HTTP/1.1 200 OK
+Server: nginx
+%Date: Tue, 08 Apr 2014 21:40:18 GMT
+Content-Type: application/xml
+Connection: keep-alive
+X-Viddler-Node: viddler_f
+Accept-Ranges: bytes
+ETag: W/"80-1394727695000"
+.Last-Modified: Thu, 13 Mar 2014 16:21:35 GMT
+Content-Length: 80
+R
+<cross-domain-policy>
+<allow-access-from domain="*"/>
+</cross-domain-policy>

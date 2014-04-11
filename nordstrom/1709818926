@@ -1,0 +1,37 @@
+PHTTP208.52.173.198"É
+GET /?aid=2868 HTTP/1.1
+Host: nord.netmng.com
+Connection: keep-alive
+Accept: */*
+vUser-Agent: Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/31.0.1650.63 Safari/537.36
+%Referer: http://shop.nordstrom.com/
+$Accept-Encoding: gzip,deflate,sdch
+!Accept-Language: en-US,en;q=0.8
+
+*É	
+HTTP/1.1 200 OK
+Server: nginx
+%Date: Tue, 08 Apr 2014 22:06:30 GMT
+.Content-Type: text/javascript; charset=UTF-8
+Transfer-Encoding: chunked
+X-Cnection: close
+KP3P: policyref="/w3c/p3p.xml", CP="NOI DSP COR DEVa PSAa OUR BUS COM NAV"
+(Expires: Sun, 06 Apr 2014 22:06:30 GMT
+.Last-Modified: Sun, 06 Apr 2014 22:06:30 GMT
+4Cache-Control: no-store, no-cache, must-revalidate
+*Cache-Control: post-check=0, pre-check=0
+Pragma: no-cache
+±Access-Control-Allow-Origin: https://www.youtube.com http://www.youtube.com https://s0.2mdn.net http://s0.2mdn.net https://static.doubleclick.net http://static.doubleclick.net
+ÆSet-Cookie: evo5=qkidd5t4t0w19%7CzMGn3mtzWUDDt7syJMZc%2F1e0n2cExwHPIWxiSDYMrkDTsJU0r8m0LGhpcRn6%2FkkwravqEgFb1pq8p4VvjR1v6iRpzqx99qsYmRRO5xVW3pV4Xt5yaOt47h4qIAWVDPFj5oB6O88xjIPlfDoq6xKheL5913Ruby8Gu9FkgznV6LpHK9vw5iBSVMP6OAyhNRM7KfzdDh4H4X16NDDODyxqrg%3D%3D; expires=Wed, 08-Oct-2014 22:06:30 GMT; path=/; domain=.netmng.com
+þ
+f1
+
+			if (document.createElement && document.body) {
+				var nm_script = document.createElement('SCRIPT');
+				nm_script.src = document.location.protocol + '//nord.netmng.com/?aid=2868&cch';
+				document.body.appendChild(nm_script);
+			}
+		
+ 
+0
+

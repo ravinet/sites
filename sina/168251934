@@ -1,0 +1,26 @@
+PHTTP123.125.29.252"â
+/GET /iplookup/iplookup.php?format=js HTTP/1.1
+Host: int.dpool.sina.com.cn
+Connection: keep-alive
+Accept: */*
+vUser-Agent: Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/31.0.1650.63 Safari/537.36
+"Referer: http://www.sina.com.cn/
+$Accept-Encoding: gzip,deflate,sdch
+!Accept-Language: en-US,en;q=0.8
+
+*‚
+HTTP/1.1 200 OK
+%Date: Tue, 08 Apr 2014 22:24:58 GMT
+Server: Apache
+zSet-Cookie: U_TRS1=00000037.1b0d7d1e.5344773a.3db15b0f; path=/; expires=Fri, 05-Apr-24 22:24:58 GMT; domain=.sina.com.cn
+USet-Cookie: U_TRS2=00000037.1b167d1e.5344773a.6dbeb76b; path=/; domain=.sina.com.cn
+Cache-Control: max-age=120
+(Expires: Tue, 08 Apr 2014 22:26:58 GMT
+DPOOL_HEADER: 10.13.32.102
+Content-Length: 200
+Connection: close
+(Content-Type: text/html; charset=UTF-8
+/SINA-LB: aGEuMjEuZzEuYngubGIuc2luYW5vZGUuY29t
+'SINA-TS: OTdjMmRlY2UgMCAwIDAgNiAwCg==
+Ê
+var remote_ip_info = {"ret":1,"start":"128.30.0.0","end":"128.31.255.255","country":"\u7f8e\u56fd","province":"\u9a6c\u8428\u8bf8\u585e","city":"Cambridge","district":"","isp":"","type":"","desc":""};

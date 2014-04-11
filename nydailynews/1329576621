@@ -1,0 +1,150 @@
+»HTTPS176.32.99.39"„
+2GET /clients/nydn/iqpoll_fluid_mini.css HTTP/1.1
+)Host: civicscience-css.s3.amazonaws.com
+Connection: keep-alive
+Accept: text/css,*/*;q=0.1
+vUser-Agent: Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/31.0.1650.63 Safari/537.36
+&Referer: http://www.nydailynews.com/
+$Accept-Encoding: gzip,deflate,sdch
+!Accept-Language: en-US,en;q=0.8
+
+*•
+HTTP/1.1 200 OK
+Nx-amz-id-2: PEaK6QgFXDU2rjacVcPHWbLy3X18quQyuN37jKVc4pUbG7+z3Am5Z+U8EndI4VSg
+$x-amz-request-id: 3CC0843DFDE37646
+%Date: Fri, 11 Apr 2014 15:30:55 GMT
+.Last-Modified: Thu, 03 Oct 2013 14:06:33 GMT
+*ETag: "a689e3d8e3df2725c08b5da2fd51e855"
+Accept-Ranges: bytes
+Content-Type: text/css
+Content-Length: 3238
+Server: AmazonS3
+¨
+/* @override
+	http://civicscience-css.s3.amazonaws.com/clients/nydn/iqpoll_fluid_mini.css */
+
+div.civicscience.ballotbox {
+    font-family: Arial,  Helvetica,  Geneva,  sans-serif;
+    color: #111;
+}
+div.civicscience.ballotbox div.poll_title div.title {
+    display: block;
+}
+div.civicscience.ballotbox div.poll_title div.title span i {
+    margin: 0 1px 0 0;
+}
+div.civicscience.ballotbox div.poll_body {
+    background: #fff;
+    border: 1px solid #000;
+    margin: 0 0 10px;
+    padding: 10px 8px;
+}
+
+div.civicscience.ballotbox div.poll_body.loading{background:url(http://civicscience-css.s3.amazonaws.com/clients/civicscience/images/loading.gif) no-repeat;height:20px;width:20px;margin:10px 10px;opacity:.5; 
+}
+
+
+div.civicscience.ballotbox div.question_text {
+    font-size: 13px;
+    font-weight: 700;
+    border-bottom: 1px dashed #000;
+    margin: 0;
+    padding: 0 0 10px;
+}
+div.civicscience.ballotbox div.answer {
+    font-size: 13px;
+    clear: both;
+    border-bottom: 1px dashed #000;
+    margin: 0;
+    padding: 12px 0;
+}
+div.civicscience.ballotbox div.answer div.control {
+    float: left;
+    margin: 0 10px;
+}
+div.civicscience.ballotbox div.answer div.control input {
+    cursor: pointer;
+    margin: 0;
+    padding: 0;
+}
+div.civicscience.ballotbox div.answer div.answer_text label {
+    display: table;
+    cursor: pointer;
+}
+div.civicscience.ballotbox div.result {
+    font-size: 13px;
+    clear: both;
+    border-bottom: 1px dashed #000;
+    margin: 0;
+    padding: 12px 3px;
+}
+div.civicscience.ballotbox div.result div.percent {
+    float: left;
+    width: 50px;
+    margin: 0 0 0 10px;
+}
+div.civicscience.ballotbox div.result div.answer_text label {
+    display: table;
+}
+div.civicscience.ballotbox div.buttons {
+    display: table;
+    width: 100%;
+    margin: 15px 0 20px;
+}
+div.civicscience.ballotbox div.buttons input.vote {
+    margin: 0;
+    
+}
+div.civicscience.ballotbox div.buttons input.next {
+    float: right;
+}
+div.civicscience.ballotbox div.buttons input.previous {
+    float: left;
+}
+div.civicscience.ballotbox div.buttons div.detailed_results {
+    width: 150px;
+    float: left;
+    text-align: left;
+}
+
+div.civicscience.ballotbox div.buttons div.detailed_results a{
+   color: transparent;
+   width: 78px;
+   overflow: hidden;
+   display: block;
+   height: 14px;
+   padding: 20px 0 0 0;
+}
+
+
+div.civicscience.ballotbox div.wrap_up {
+    font-size: 12px;
+}
+div.civicscience.ballotbox div.wrap_up div.end_title {
+    font-weight: 700;
+    margin: 0 0 5px;
+}
+
+div.civicscience.ballotbox input[type=button] {
+    border: none;
+    height: 24px;
+    color: #fff;
+    font-family: Arial,  Helvetica,  Geneva,  sans-serif;
+    font-weight: 700;
+    font-size: 13px;
+    text-transform: uppercase;
+    background: url(http://civicscience-css.s3.amazonaws.com/clients/nydn/button_bg.png) 0 0 #eee;
+    border-radius: 3px;
+    padding: 2px 20px;
+}
+div.civicscience.ballotbox input[type=button]:hover {
+    cursor: pointer;
+}
+div.civicscience.ballotbox div.wrap_up div.end a, div.civicscience.ballotbox div.detailed_results a {
+    color: #015FB6;
+    text-decoration: none;
+}
+div.civicscience.ballotbox div.wrap_up div.end a:hover, div.civicscience.ballotbox div.detailed_results a:hover {
+    color: #CD0000;
+}
+

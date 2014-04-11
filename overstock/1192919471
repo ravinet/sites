@@ -1,0 +1,27 @@
+PHTTP54.236.154.154"µ
+NGET /firstevent?d_nrd=1&d_rtbd=json&d_cb=s_c_il%5B0%5D.setVisitorID HTTP/1.1
+Host: dpm.demdex.net
+Connection: keep-alive
+Accept: */*
+vUser-Agent: Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/31.0.1650.63 Safari/537.36
+$Referer: http://www.overstock.com/
+$Accept-Encoding: gzip,deflate,sdch
+!Accept-Language: en-US,en;q=0.8
+7Cookie: demdex=81316781433515744012790454455498093721
+
+*Î
+HTTP/1.1 200 OK
+bCache-Control: no-cache,no-store,must-revalidate,max-age=0,proxy-revalidate,no-transform,private
+4Content-Type: application/javascript;charset=UTF-8
+4DCS: va6-dcsas1-10-89-2-106.va6.demdex.com 1.18.47
+(Expires: Thu, 01 Jan 2009 00:00:00 GMT
+cP3P: policyref="/w3c/p3p.xml", CP="NOI NID CURa ADMa DEVa PSAa PSDa OUR SAMa BUS PUR COM NAV INT"
+Pragma: no-cache
+ Server: Jetty(7.6.8.v20121106)
+|Set-Cookie: dpm=81316781433515744012790454455498093721;Path=/;Domain=.dpm.demdex.net;Expires=Thu, 07-Apr-2016 22:07:44 GMT
+ƒSet-Cookie: DexLifeCycle="MA==|MA==|MA==|MA==|MA==|MA==|MA==";Path=/;Domain=.dpm.demdex.net;Expires=Thu, 07-Apr-2016 22:07:44 GMT
+	STS: OK
+Content-Length: 99
+Connection: keep-alive
+e
+s_c_il[0].setVisitorID({"stuff":[],"uuid":"81316781433515744012790454455498093721","dcs_region":7})

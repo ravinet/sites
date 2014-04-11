@@ -1,0 +1,28 @@
+PHTTP54.209.244.129"¨
+ºGET /firstevent?d_nsid=0&d_ld=_ts%3D1396993284004&c_pageName=%2F&c_channel=home&c_events=event1&c_prop5=home&c_prop6=home&c_prop8=home%2C%20food&c_prop9=food%7Chomepage%7Cc106c475-b1f9-4bd8-8d97-63c3f2ea8863%7C1&c_prop10=homepage&c_prop13=New&c_prop33=Tue-5.5P&c_prop40=no_match&c_prop53=food&c_prop60=web&c_prop62=CQ%2020140204&c_prop75=Logged%20Out&d_rtbd=json&d_jsonv=1&d_dst=1&d_cb=demdexRequestCallback_scripps_0_1396993284004 HTTP/1.1
+Host: scripps.demdex.net
+Connection: keep-alive
+Accept: */*
+vUser-Agent: Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/31.0.1650.63 Safari/537.36
+&Referer: http://www.foodnetwork.com/
+$Accept-Encoding: gzip,deflate,sdch
+!Accept-Language: en-US,en;q=0.8
+7Cookie: demdex=17539251520772043843230051996007526402
+
+*È
+HTTP/1.1 200 OK
+bCache-Control: no-cache,no-store,must-revalidate,max-age=0,proxy-revalidate,no-transform,private
+4Content-Type: application/javascript;charset=UTF-8
+4DCS: va6-dcsas1-10-89-0-173.va6.demdex.com 1.18.47
+(Expires: Thu, 01 Jan 2009 00:00:00 GMT
+cP3P: policyref="/w3c/p3p.xml", CP="NOI NID CURa ADMa DEVa PSAa PSDa OUR SAMa BUS PUR COM NAV INT"
+Pragma: no-cache
+ Server: Jetty(7.6.8.v20121106)
+„Set-Cookie: scripps=17539251520772043843230051996007526402;Path=/;Domain=.scripps.demdex.net;Expires=Thu, 07-Apr-2016 21:41:23 GMT
+ËSet-Cookie: DexLifeCycle="MA==|ODA3NDIxPTE6MTkyMyw3OTc0MD0xOjE5MjMsNzk3NTg9MToxOTIzLDExMDk5OD0xOjE5MjMsMTA5MDI1PTE6MTkyMywxOTEzOTU9MToxOTIzLDI2MDMxOD0xOjE5MjMsODYyOTE9MToxOTIzLDg2MzEyPTE6MTkyMyw0NjQyNTM9MToxOTIz|MA==|NDE5MTMsNTAwNzQsNTQzNTEsMTY1MjcsMjA1NzgsNDQ3NjUsMTY4NDYsNTAyMjEsNzI0NjIsMjEwODAsMTY1MTksNDgyMTcsMTU4NDUsNDQ3NjQsMTU4NDQsMzkyMDksNjM0NTMsMTYzOTUsNTAwNzM=|MA==|MA==|MA==";Path=/;Domain=.scripps.demdex.net;Expires=Thu, 07-Apr-2016 21:41:23 GMT
+RSet-Cookie: DST=;Path=/;Domain=.demdex.net;Expires=Thu, 07-Apr-2016 21:41:23 GMT
+	STS: OK
+Content-Length: 2101
+Connection: keep-alive
+·
+demdexRequestCallback_scripps_0_1396993284004({"dests":[],"stuff":[{"cn":"aam_fw","cv":"scripps=test;aam=375785;aam=260319","ttl":30,"dmn":""},{"cn":"aamscripps","cv":"aam:260319|aam:375785|aam:648004|aam:684754|aam:116979|aam:250578|aam:201588","ttl":30,"dmn":"adsremote.scrippsnetworks.com"},{"cn":"aam_tnt","cv":"test=116979","ttl":0,"dmn":""}],"ibs":[{"id":"481","ttl":14400,"tag":"img","url":["//tap.rubiconproject.com/oz/feeds/adobe/tokens?afu=17539251520772043843230051996007526402"]},{"id":"3","ttl":30240,"tag":"img","url":["//loadm.exelator.com/load/?p=204&g=091&j=0&bi=17539251520772043843230051996007526402"]},{"id":"359","ttl":30240,"tag":"img","url":["//i.w55c.net/ping_match.gif?st=dmx&rurl=http%3A%2F%2Fdpm.demdex.net%2Fibs%3Adpid%3D359%26dpuuid%3D_wfivefivec_"]},{"id":"352","ttl":30240,"tag":"img","url":["//adadvisor.net/adscores/g.pixel?sid=9211132908&aam=17539251520772043843230051996007526402"]},{"id":"60","ttl":14400,"tag":"img","url":["//p.acxiom-online.com/pixel/smt?pid=3004&t=3004&ot=pixel&uid=17539251520772043843230051996007526402"]},{"id":"466","ttl":14400,"tag":"img","url":["//image5.pubmatic.com/AdServer/usersync/usersync.html?predirect=http%3A%2F%2Fdpm.demdex.net%2Fibs%3Adpid=466%26dpuuid=PM_UID&userIdMacro=PM_UID"]},{"id":"269","ttl":10080,"tag":"img","url":["//sync.mathtag.com/sync/img?mt_exid=10004&mt_exuid=17539251520772043843230051996007526402&redir=http%3A%2F%2Fdpm.demdex.net%2Fibs%3Adpid%3D269%26dpuuid%3D[MM_UUID]%26ddsuuid%3d17539251520772043843230051996007526402"]}],"dpcalls":[{"id":"21","ttl":14400,"tag":"js","url":["//adadvisor.net/adscores/g.json?sid=9233633946"],"callback":{"obj":"Targus","fn":"parseInfo","key":"targus","tag":"img","url":"//dpm.demdex.net/demdot.jpg?et:dpm|dpid:21|data:"}},{"id":"22","ttl":14400,"tag":"js","url":["//api.bizographics.com/v1/profile.json?api_key=6332f8b7316a4d1284e9c1217a367347&callback=Demdex.parseBizo"],"callback":{"obj":"Demdex","fn":"parseBizo","key":"bizographics","tag":"img","url":"//dpm.demdex.net/demdot.jpg?et:dpm|dpid:22|data:"}}],"uuid":"17539251520772043843230051996007526402","dcs_region":7})

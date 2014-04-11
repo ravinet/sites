@@ -1,0 +1,23 @@
+»HTTPS107.20.244.110"Ë
+‚GET /v2/getuid?api_key=d3d3f1fbd45047a893dc848ec4a31cdb&redirect_url=https%3a%2f%2fcloudconnectors.eloqua.com%2fe%2fb%2fMapBizoID.aspx%3fbizo_id%3d%24UID%26e_id%3dbbAgREWaKUU4WsmZcCqOJOTVVaJgdjbSHFKSZ4nMuqbNSsxx3WhH65vaGEWaGvu%252bH55wHNbnsJU%253d HTTP/1.1
+Host: api.bizographics.com
+Connection: keep-alive
+Accept: image/webp,*/*;q=0.8
+vUser-Agent: Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/31.0.1650.63 Safari/537.36
+ Referer: http://www.prweb.com/
+$Accept-Encoding: gzip,deflate,sdch
+!Accept-Language: en-US,en;q=0.8
+„Cookie: BizoID=22bd07ef-ec36-4e7b-93c9-8d766ac3482a; BizoData=34jN9jdIFtYJeXcCzBl8KtQb1MaQBj6WAiphZG3g3wbanOGSnuTLaGuIaYTHYdz2YzisF33kNYKx0ie; BizoCustomSegments=CipHRY7ow8isoie; BizoUserMatchHistory=1oFfpT62RAr3WSGVEEUr9gR1rYcygTlqYuqj4es9Y3NLzYFJzoU1Xgieie
+
+*ü
+HTTP/1.1 302 Found
+8Cache-Control: max-age=86400, private, must-revalidate
+ Content-Type: application/json
+%Date: Tue, 08 Apr 2014 22:15:39 GMT
+ÄLocation: https://cloudconnectors.eloqua.com/e/b/MapBizoID.aspx?bizo_id=22bd07ef-ec36-4e7b-93c9-8d766ac3482a&e_id=bbAgREWaKUU4WsmZcCqOJOTVVaJgdjbSHFKSZ4nMuqbNSsxx3WhH65vaGEWaGvu%2bH55wHNbnsJU%3d
+ZP3P: CP="NON DSP COR CURa ADMo DEVo TAIo PSAo PSDo OUR DELa IND PHY ONL UNI COM NAV DEM"
+Server: nginx/1.2.0
+tSet-Cookie: BizoID=22bd07ef-ec36-4e7b-93c9-8d766ac3482a;Version=0;Domain=.bizographics.com;Path=/;Max-Age=15768000
+Content-Length: 0
+Connection: keep-alive
+

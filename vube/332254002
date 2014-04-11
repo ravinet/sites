@@ -1,0 +1,27 @@
+PHTTP54.85.117.33"õ
+-GET /static/images/ig-badge-24.png HTTP/1.1
+Host: badges.instagram.com
+Connection: keep-alive
+Accept: image/webp,*/*;q=0.8
+vUser-Agent: Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/31.0.1650.63 Safari/537.36
+'Referer: http://vube.com/trending?t=s
+$Accept-Encoding: gzip,deflate,sdch
+!Accept-Language: en-US,en;q=0.8
+
+*Ù
+HTTP/1.1 302 FOUND
+=Cache-Control: private, no-cache, no-store, must-revalidate
+Content-Language: en
+(Content-Type: text/html; charset=utf-8
+%Date: Tue, 08 Apr 2014 22:34:23 GMT
+(Expires: Sat, 01 Jan 2000 00:00:00 GMT
+iLocation: http://d36xtkk24g8jdx.cloudfront.net/bluebar/07d0b7a/thirdparty/images/badges/ig-badge-24.png
+Pragma: no-cache
+Server: nginx
+ySet-Cookie: csrftoken=50834f5c8586a8a7c1f51b7d3cb33cc7; expires=Tue, 07-Apr-2015 22:34:23 GMT; Max-Age=31449600; Path=/
+pSet-Cookie: mid=U0R5bwAEAAGdyQTaYwZsvZXAtYjc; expires=Mon, 03-Apr-2034 22:34:23 GMT; Max-Age=630720000; Path=/
+Set-Cookie: ccode=US; Path=/
+Vary: Cookie, Accept-Language
+Content-Length: 0
+Connection: keep-alive
+

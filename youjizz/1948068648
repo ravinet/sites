@@ -1,0 +1,22 @@
+PHTTP205.128.79.126"æ
+BGET /assets/utility-b27fedff5730ac295189c0ddb865b6c0.js HTTP/1.1
+ Host: sscdn.banners.advidi.com
+Connection: keep-alive
+Accept: */*
+vUser-Agent: Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/31.0.1650.63 Safari/537.36
+Referer: http://sscdn.banners.advidi.com/banners/523/18264.html?campaign_id=523&ref=http://syndication.globaltraffico.com/adserve/index.php&autorefresh=false&ident=f56d8fb5c69eb2bcec992e1c93670748&origin=banners.sexypartners.net&aff_id=12&kwd=MeRe_Youjizz_950250_Footer
+$Accept-Encoding: gzip,deflate,sdch
+!Accept-Language: en-US,en;q=0.8
+
+*ï
+HTTP/1.1 200 OK
+%Date: Tue, 08 Apr 2014 22:37:45 GMT
+(Expires: Wed, 09 Apr 2014 08:53:08 GMT
+.Last-Modified: Fri, 11 Oct 2013 15:51:19 GMT
+Cache-Control: max-age=604800
+(Content-Type: application/x-javascript
+Accept-Ranges: bytes
+Server: nginx
+Content-Length: 203
+Í
+function getUrlVars(){for(var t,e=[],i=window.location.href.slice(window.location.href.indexOf("?")+1).split("&"),n=0;i.length>n;n++)t=i[n].split("="),e.push(t[0]),e[t[0]]=t[1];return window.urlVars=e,e}

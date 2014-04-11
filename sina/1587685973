@@ -1,0 +1,88 @@
+PHTTP180.149.153.68"—
+'GET /data.html?1396995898718 HTTP/1.1
+Host: beacon.sina.com.cn
+Connection: keep-alive
+TAccept: text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8
+vUser-Agent: Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/31.0.1650.63 Safari/537.36
+"Referer: http://www.sina.com.cn/
+$Accept-Encoding: gzip,deflate,sdch
+!Accept-Language: en-US,en;q=0.8
+wCookie: U_TRS1=00000037.1b0d7d1e.5344773a.3db15b0f; U_TRS2=00000037.1b167d1e.5344773a.6dbeb76b; UOR=,www.sina.com.cn,
+
+*ï
+HTTP/1.1 200 OK
+%Date: Tue, 08 Apr 2014 22:24:59 GMT
+Content-Type: text/html
+Content-Length: 1413
+.Last-Modified: Thu, 08 Aug 2013 02:02:26 GMT
+Connection: keep-alive
+~P3P: CP="CAO DSP COR LAW CURa ADMa DEVa PSAa PSDa OUR DELa BUS IND PHY ONL UNI PUR COM NAV INT STA",policyref="/w3c/p3p.xml"
+Server: Suda/1.4.2
+Accept-Ranges: bytes
+‡
+<!DOCTYPE HTML>
+<html lang="en-US">
+<head><meta charset="UTF-8"><title></title>
+<script language="javascript" type="text/javascript">
+<!--//--><![CDATA[//><!--
+document.domain="sina.com.cn";
+var storage = (function(){
+	var objDS ,	store, STORE_NAME;	
+	function support_ls(){
+		// return  !(window.attachEvent && !window.opera);
+		return  !!(window.localStorage);
+	}
+	if (!!window.localStorage) {
+		objDS = window.localStorage
+		return {
+			get: function(key){
+				try{
+					return unescape(objDS.getItem(key));
+				}catch(e){	return	}
+			},
+			set: function(key, value){
+				try{
+					objDS.setItem(key, escape(value));
+					return true;
+				}catch(e){	return	false;}
+			}
+		};
+	}else if(window.ActiveXObject) {
+		store = document.documentElement;
+		STORE_NAME = 'localstorage';
+		try {
+			store.addBehavior('#default#userdata');
+			store.save('localstorage');
+		} 
+		catch (e) {
+			//throw "don't support userData";
+			return false;
+		}
+		return {
+			get: function(key){
+				try{
+					store.load(STORE_NAME);
+					return store.getAttribute(key);
+				}catch(e){
+					return
+				}
+			},
+			set: function(key, value){
+				try{
+					store.setAttribute(key, value);
+					store.save(STORE_NAME);
+					return true;
+				}catch(e){
+					return false;
+				}
+			}
+		};
+	} else {
+		return {
+			get:function(key){return;},
+			set:function(key,value){return false;}
+		};
+	}
+})();
+//-->
+</script></head><body></body></html>

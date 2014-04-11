@@ -1,0 +1,22 @@
+PHTTP50.17.239.15"À
+fGET /dpmpxl/index.php?q=seg&id=1076870&appnexusId=1946153502974467281&cl=78&_=1396994888899 HTTP/1.1
+Host: a.dpmsrv.com
+Connection: keep-alive
+Accept: */*
+vUser-Agent: Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/31.0.1650.63 Safari/537.36
+Referer: http://www.pch.com/
+$Accept-Encoding: gzip,deflate,sdch
+!Accept-Language: en-US,en;q=0.8
+2Cookie: dpm_pxl=38cbade101cf507a0019168b287db58c
+
+*Å
+HTTP/1.1 200 OK
+7Content-Type: application/x-javascript; charset=utf-8
+%Date: Tue, 08 Apr 2014 22:08:08 GMT
+Server: nginx/1.4.1
+ySet-Cookie: dpm_pxl=38cbade101cf507a0019168b287db58c; expires=Fri, 15-Dec-2045 23:54:47 GMT; path=/; domain=.dpmsrv.com
+dSet-Cookie: dpm_segs_78=1076870; expires=Tue, 15-Apr-2014 22:08:08 GMT; path=/; domain=.dpmsrv.com
+Content-Length: 38
+Connection: keep-alive
+(
+window.DPMSRV.setSegList(["1076870"]);

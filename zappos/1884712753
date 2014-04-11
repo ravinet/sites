@@ -1,0 +1,23 @@
+PHTTP74.119.118.99"È
+MGET /dis/optoutstatus.aspx?pidout=1731&js=1&var=zapposCriteoOptOut HTTP/1.1
+Host: info.criteo.com
+Connection: keep-alive
+Accept: */*
+vUser-Agent: Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/31.0.1650.63 Safari/537.36
+IReferer: http://d169bbxks24g2u.cloudfront.net/zappos.html?pageType=home
+$Accept-Encoding: gzip,deflate,sdch
+!Accept-Language: en-US,en;q=0.8
+¤Cookie: uid=9c70d9ec-8a88-4770-9370-bcfb3abd9ac3; uic=*1ucuTUdwKn6n9UXviaBYjIZ4u6Eom0juIRKC%2frN4C1Liwf2fq25z5LKIxmBn3sy0F; udc=*1AjVT%2bgfw%2f8PyH2Istroh8g%3d%3d
+
+*°
+HTTP/1.1 200 OK
+Cache-Control: no-cache
+Pragma: no-cache
+.Content-Type: text/javascript; charset=utf-8
+Expires: -1
+Server: Microsoft-IIS/7.5
+4P3P: CP="NON DSP COR CURa PSA PSD OUR BUS NAV STA"
+%Date: Tue, 08 Apr 2014 22:42:26 GMT
+Content-Length: 27
+
+var zapposCriteoOptOut = 0;

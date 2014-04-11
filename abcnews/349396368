@@ -1,0 +1,21 @@
+PHTTP54.225.206.142"®
+GET /redirect?ex=11 HTTP/1.1
+Host: cm.netseer.com
+Connection: keep-alive
+Accept: image/webp,*/*;q=0.8
+vUser-Agent: Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/31.0.1650.63 Safari/537.36
+uReferer: http://tap2-cdn.rubiconproject.com/partner/scripts/rubicon/emily.html?rtb_ext=1&pc=8829/21314&geo=na&co=us
+$Accept-Encoding: gzip,deflate,sdch
+!Accept-Language: en-US,en;q=0.8
+
+*ú
+ HTTP/1.1 302 Moved Temporarily
+)Content-Type: text/plain; charset=UTF-8
+%Date: Tue, 08 Apr 2014 21:25:22 GMT
+9Location: http://cm.netseer.com/redirect?ex=11&cookie=2
+LP3P: CP="IDC DSP COR ADM DEVi TAIi PSA PSD IVAi IVDi CONi HIS OUR IND CNT"
+Server: Apache-Coyote/1.1
+ªSet-Cookie: netseer_v3_vi=H4sIAAAAAAAAADOyKi0uMk4zN000SE2zNExOMTS1MLAyNLY0s7Q0MjYyNjQyBwCfnwLdIwAAAA; Domain=.netseer.com; Expires=Thu, 07-Apr-2016 21:25:23 GMT; Path=/
+Content-Length: 0
+Connection: keep-alive
+

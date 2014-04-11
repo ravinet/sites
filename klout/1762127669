@@ -1,0 +1,27 @@
+PHTTP65.50.203.210"æ
+"POST /api/events/record HTTP/1.1
+Host: klout.com
+Connection: keep-alive
+Content-Length: 151
+Accept: */*
+Origin: http://klout.com
+"X-Requested-With: XMLHttpRequest
+vUser-Agent: Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/31.0.1650.63 Safari/537.36
+@Content-Type: application/x-www-form-urlencoded; charset=UTF-8
+ Referer: http://klout.com/home
+$Accept-Encoding: gzip,deflate,sdch
+!Accept-Language: en-US,en;q=0.8
+lCookie: kvist=1; nksid=s%3AQSNghIkdcvIeLNB7GX7AcV0G.Dz992K6oOaF7SJXCJKAUDasJqAcW9jHQbFJizv0X1vw; kqst=null
+™
+events=p%3Dklout%26e%3Dvisit%26klout_url%3Dhttp%3A%2F%2Fklout.com%2Fhome%26trafficId%3D1%26utm_source%3Ddirect%26distinct_id%3Dundefined%26loc%3Dclient*¦
+HTTP/1.1 200 OK
+X-Powered-By: K2
+FSet-Cookie: kqst=null; Path=/; Expires=Tue, 08 Apr 2014 22:32:45 GMT
+¨Set-Cookie: nksid=s%3AQSNghIkdcvIeLNB7GX7AcV0G.Dz992K6oOaF7SJXCJKAUDasJqAcW9jHQbFJizv0X1vw; Domain=.klout.com; Path=/; Expires=Wed, 23 Apr 2014 22:01:36 GMT; HttpOnly
+Vary: Accept-Encoding
+Content-Type: text/plain
+Content-Length: 2
+%Date: Tue, 08 Apr 2014 22:02:45 GMT
+Connection: close
+
+OK

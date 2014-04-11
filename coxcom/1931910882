@@ -1,0 +1,24 @@
+PHTTP23.23.115.181"ì
+…GET /t/v1/t?v=1.0.0&cb=830883701&pb=f&sp=http%3A%2F%2Fww2.cox.com%2Fresidential%2Fhome.cox&a=cox&ap=1&m=uui&udt=~segment/visitor;~pn/residential:home;~z/02139;~bu/residential;~ct/unknown-ZIP HTTP/1.1
+Host: vop.sundaysky.com
+Connection: keep-alive
+Accept: image/webp,*/*;q=0.8
+vUser-Agent: Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/31.0.1650.63 Safari/537.36
+éReferer: http://vop.sundaysky.com/t/v1/i?a=cox&ap=1&m=uui&udt=~segment/visitor;~pn/residential:home;~z/02139;~bu/residential;~ct/unknown-ZIP
+$Accept-Encoding: gzip,deflate,sdch
+!Accept-Language: en-US,en;q=0.8
+Cookie: testpermission=1
+
+*ê
+HTTP/1.1 302 Found
+eCache-control: private, no-cache, no-cache=Set-Cookie, must-revalidate, proxy-revalidate, max-age=0
+%Date: Fri, 11 Apr 2014 14:32:22 GMT
+'Expires: Sat, 1 Apr 2000 00:00:00 GMT
+ÂLocation: http://vop.sundaysky.com/t/v1/t?v=1.0.0&cb=830883701&pb=f&sp=http%3A%2F%2Fww2.cox.com%2Fresidential%2Fhome.cox&a=cox&ap=1&m=uui&udt=~segment/visitor;~pn/residential:home;~z/02139;~bu/residential;~ct/unknown-ZIP&_cvt=t
+wP3P: policyref="/w3c/p3p.xml", CP="NOI DSP COR CURa ADMa DEVa TAIa PSAa PSDa OUR IND UNI PUR COM NAV INT DEM STA PRE"
+Pragma: no-cache
+Server: Apache-Coyote/1.1
+|Set-Cookie: sskyu=g.07deb0fd1ba84c15af457486a12d374a; Domain=.sundaysky.com; Expires=Mon, 11-Apr-2016 14:32:23 GMT; Path=/
+Content-Length: 0
+Connection: keep-alive
+

@@ -1,0 +1,50 @@
+PHTTP
+72.21.91.9"î
+2GET /web/css/tip.jar_20140324040907.css HTTP/1.1
+Host: edgecast.cam4s.com
+Connection: keep-alive
+Accept: text/css,*/*;q=0.1
+vUser-Agent: Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/31.0.1650.63 Safari/537.36
+Referer: http://www.cam4.com/
+$Accept-Encoding: gzip,deflate,sdch
+!Accept-Language: en-US,en;q=0.8
+
+*—
+HTTP/1.1 200 OK
+Accept-Ranges: bytes
+Cache-Control: max-age=604800
+Content-Type: text/css
+%Date: Tue, 08 Apr 2014 21:33:15 GMT
+Etag: "1432780736"
+(Expires: Tue, 15 Apr 2014 21:33:15 GMT
+.Last-Modified: Thu, 03 Apr 2014 18:32:32 GMT
+Server: ECS (ord/4CA6)
+X-Cache: HIT
+Content-Length: 2387
+Õ
+@charset "utf-8";#tippingJarDiv{clear:left}
+#tipJarWrap{border:10px solid #3190a3;width:200px;height:auto;background:#fff;font-family:Arial,Helvetica,sans-serif}
+#tipJarWrap .header{font:bold 18px Arial,Helvetica,sans-serif;height:auto;min-height:24px;padding:10px 0 0 12px;line-height:24px;color:#000;letter-spacing:-1px}
+#tipJarWrap .header em{font-weight:bold;color:#000}
+#tipJarWrap .messagebody{padding:10px 12px;padding-bottom:2px;height:auto}
+#tipJarWrap .messagebody textarea{width:165px;max-width:165px;height:40px;border:1px solid #898989;font:11px Arial,Helvetica,sans-serif;color:#8c898d;padding:5px;margin:0}
+#tipJarWrap .messagebody textarea.disabled{border:1px solid #999;background:#efefef}
+#tipJarWrap .bottom{height:12px}
+#tippingJarDiv .balance{height:20px;text-align:center;font:11px/20px Arial,Helvetica,sans-serif;margin-bottom:20px;margin-top:16px;width:225px}
+#tippingJarDiv .balance a:hover{cursor:pointer}
+#tipJarWrap .messagebody .tip{height:60px}
+#tipJarWrap .messagebody #tj3{height:auto}
+#tipJarWrap .messagebody .tip div.input{height:35px;padding-top:7px}
+#tipJarWrap .messagebody .tip div.input input{width:166px;margin:0;padding:5px;font:11px,Arial,Helvetica,sans-serif;border:1px solid #898989;color:#8c898d;vertical-align:top}
+#tipJarWrap .messagebody .send{text-align:right;margin:8px 0 0 0}
+#tipJarWrap .messagebody .send a{color:#fff;background-color:#fc531d;padding:4px;font-size:14px;text-transform:lowercase;text-transform:capitalize}
+#tipJarWrap .messagebody .send a:hover{cursor:pointer;text-decoration:none}
+#tipJarWrap .messagebody .buy{text-align:right;margin:14px 0 0 0}
+#tipJarWrap .messagebody .buy a{color:#fff;background-color:#fc531d;padding:4px;font-size:14px;text-transform:capitalize}
+#tipJarWrap .messagebody .buy a:hover{cursor:pointer;text-decoration:none}
+#tipJarWrap .messagebody .success{width:105px;height:auto;float:right;text-align:left;padding-left:10px;padding-right:5px;padding-top:4px;color:#1f1f1f;font-size:11px}
+#tipJarWrap .messagebody .success strong{font-size:12px;font-weight:bold;line-height:16px;color:#000}
+#tipJarWrap .messagebody .success a{background:#fc531d;font-weight:bold;padding:2px 4px;display:block;color:#fff;margin-top:4px;text-decoration:none}
+#tipJarWrap .messagebody .success a:hover{text-decoration:none;background:#1f1f1f}
+#tipJarWrap .messagebody .tipjarLogo{display:none}
+.clear{clear:both}

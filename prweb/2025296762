@@ -1,0 +1,28 @@
+»HTTPS208.89.13.133"†
+Ž
+GET /hc/47961680/?&visitor=121420324783405&msessionkey=999539366039510611&siteContainer=STANDALONE&site=47961680&cmd=mTagStartPage&lpCallId=805277546401-888227908406&protV=20&lpjson=1&page=http%3A//www.prweb.com/&id=2845576901&javaSupport=false&visitorStatus=INSITE_STATUS&activePlugin=none&cobrowse=true&PV%21visitorActive=1&title=Press%20Release%20Services%20-%20News%20Release%20Distribution%20Services%20-%20PRWeb&cookie=sifrFetch%3Dtrue%3B%20optimizelySegments%3D%257B%2522187539738%2522%253A%2522direct%2522%252C%2522187551915%2522%253A%2522gc%2522%252C%2522187718097%2522%253A%2522false%2522%252C%2522242037269%2522%253A%2522none%2522%257D%3B%20optimizelyEndUserId%3Doeu1396995336879r0.9428714462555945%3B%20optimizelyBuckets%3D%257B%257D%3B%20optimizelyPendingLogEvents%3D%255B%255D%3B%20__utma%3D1.1844126118.1396995337.1396995337.1396995337.1%3B%20__utmb%3D1.1.10.1396995337%3B%20__utmc%3D1%3B%20__utmz%3D1.1396995337.1.1.utmcsr%3D%28direct%29%7Cutmccn%3D%28direct%29%7Cutmcmd%3D%28none%29%3B%20_msuuid_29377q915268%3DC25BDB31-6DCB-4CCF-9C9E-A09ED58E4121%3B%20_bizo_bzid%3D22bd07ef-ec36-4e7b-93c9-8d766ac3482a%3B%20_bizo_cksm%3D84B5D8EF56BA7406%3B%2047961680-VID%3D121420324783405%3B%2047961680-SKEY%3D999539366039510611%3B%20HumanClickSiteContainerID_47961680%3DSTANDALONE HTTP/1.1
+!Host: server.iad.liveperson.net
+Connection: keep-alive
+Accept: */*
+vUser-Agent: Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/31.0.1650.63 Safari/537.36
+ Referer: http://www.prweb.com/
+$Accept-Encoding: gzip,deflate,sdch
+!Accept-Language: en-US,en;q=0.8
+¿Cookie: HumanClickKEY=999539366039510611; HumanClickSiteContainerID_47961680=STANDALONE; LivePersonID=-121420324783405-1396995338:-1:-1:-1:-1; LivePersonID=LP i=121420324783405,d=1396995338
+
+*‡
+HTTP/1.1 200 OK
+%Date: Tue, 08 Apr 2014 22:15:38 GMT
+Server: Microsoft-IIS/6.0
+GP3P: CP="NON BUS INT NAV COM ADM CON CUR IVA IVD OTP PSA PSD TEL SAM"
+X-Powered-By: ASP.NET
+NSet-Cookie: HumanClickSiteContainerID_47961680=STANDALONE; path=/hc/47961680
+(Content-Type: application/x-javascript
+Accept-Ranges: bytes
+.Last-Modified: Tue, 08 Apr 2014 22:15:38 GMT
+Cache-Control: no-store
+Pragma: no-cache
+(Expires: Wed, 31 Dec 1969 23:59:59 GMT
+Content-Length: 2582
+˜
+lpConnLib.Process({"ResultSet": {"lpCallId":"805277546401-888227908406","lpCallConfirm":"","lpJS_Execute":[{"code_id": "SYSTEM!updateButtonStatic_compact.js", "js_code": "function lpUpdateStaticButton(){this.hcDate=function(){var d=new Date();return d.getTime();};this.hcGetImage=function(name){return this.hcFindImage(document,name);};this.hcFindImage=function(doc,name){var i;if(this.hcDOM){var elements=doc.getElementsByTagName('IMG');var collection=[];for(i=0;i<elements.length;i++){if((typeof(elements[i].name)!='undefined')&&(elements[i].name==name)){collection[collection.length]=elements[i];}}if(collection.length==0){return null;}if(collection.length==1){return collection[0];}return collection;}var lays=doc.layers;if(!lays){return doc[name];}for(i=0;i<doc.images.length;i++){if(doc.images[i].name==name){return doc.images[i];}}for(var l=0;l<lays.length;l++){var img=this.hcFindImage(lays[l].document,name);if(img!=null){return img;}}return null;};this.hcDOM=(document.getElementById)?true:false;this.hcimage=this.hcGetImage('hcIcon');this.hcicon=null;var i;if(this.hcimage){if(!(this.hcimage.length)){var temp=this.hcimage;this.hcimage=[];this.hcimage[0]=temp;}this.hcicon=[];for(i=0;i<this.hcimage.length;i++){this.hcicon[i]=this.hcimage[i].src;}}if(this.hcimage){for(i=0;i<this.hcimage.length;i++){this.hcimage[i].src=this.hcicon[i]+'&monitor=1&d='+this.hcDate();}}if(typeof(lpMTagStatic)!='undefined'&&typeof(lpMTagStatic.stateChangeCallbacks)!='undefined'){for(i=0;i<lpMTagStatic.stateChangeCallbacks.length;i++){var tempfunc=lpMTagStatic.stateChangeCallbacks[i];try{tempfunc();if(lpConnLib.DebugDisplay){lpMTagDebug.Display('OK Executing Static button callback function','EXEC-OK');}}catch(hcError){if(lpConnLib.DebugDisplay){lpMTagDebug.Display('ERROR Executing Static button callback function='+tempfunc+' &nbsp #'+hcError+'#','ERROR');}}}}}var lpUpdateStaticButtonObj=new lpUpdateStaticButton();"},{"code_id": "LP_REP_STATE_CHANGED", "js_code": "if(window.lpTag&&window.lpTag.events){window.lpTag.events.trigger('LPChat','LP_REP_STATE_CHANGED',{});}else if(window.lpMTag&&window.lpMTag.events){window.lpMTag.events.publish('LP_REP_STATE_CHANGED',{});}"},{"code_id": "INPAGE-DELAY-30", "js_code": "lpMTag.lpInPageRequestDelay=30;"},{"code_id": "FPCSetVal", "js_code": "lpMTagConfig.useFirstParty = false;lpMTag.lpDeleteCookie(lpMTagConfig.FPC_VID_NAME,'/',lpMTagConfig.FPC_ParentDomain);lpMTag.lpDeleteCookie(lpMTagConfig.FPC_SKEY_NAME, '/',lpMTagConfig.FPC_ParentDomain);lpMTag.lpDeleteCookie(lpMTagConfig.FPC_CONT_NAME, '/',lpMTagConfig.FPC_ParentDomain);"}]}});

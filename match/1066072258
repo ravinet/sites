@@ -1,0 +1,30 @@
+PHTTP162.248.19.136"§
+„GET /AdServer/Pug?vcode=bz0yJnR5cGU9MSZjb2RlPTI4NzcmdGw9MTI5NjAw&piggybackCookie=B78D89C8-BF69-11E3-817C-934E41E4CE11&r=http%3A%2F%2Fudmserve.net%2Fudm%2Ffetch.pix%3Frtb%3D2%3Bu%3DB78D89C8-BF69-11E3-817C-934E41E4CE11 HTTP/1.1
+Host: image2.pubmatic.com
+Connection: keep-alive
+Accept: image/webp,*/*;q=0.8
+vUser-Agent: Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/31.0.1650.63 Safari/537.36
+ Referer: http://www.match.com/
+$Accept-Encoding: gzip,deflate,sdch
+!Accept-Language: en-US,en;q=0.8
+
+*ÿ
+HTTP/1.1 302 Found
+%Date: Tue, 08 Apr 2014 22:04:12 GMT
+SServer: Apache/2.2.24 (Unix) mod_ssl/2.2.24 OpenSSL/1.0.1e-fips mod_fastcgi/2.4.6
+äSet-Cookie: KRTBCOOKIE_378=6901-B78D89C8-BF69-11E3-817C-934E41E4CE11; domain=pubmatic.com; expires=Mon, 07-Jul-2014 22:04:12 GMT; path=/
+mSet-Cookie: PUBRETARGET=2877_1404770652; domain=pubmatic.com; expires=Mon, 07-Jul-2014 22:04:12 GMT; path=/
+ZLocation: http://udmserve.net/udm/fetch.pix?rtb=2;u=B78D89C8-BF69-11E3-817C-934E41E4CE11
+Content-Length: 398
+Connection: close
+-Content-Type: text/html; charset=iso-8859-1
+ê
+<!DOCTYPE HTML PUBLIC "-//IETF//DTD HTML 2.0//EN">
+<html><head>
+<title>302 Found</title>
+</head><body>
+<h1>Found</h1>
+<p>The document has moved <a href="http://udmserve.net/udm/fetch.pix?rtb=2;u=B78D89C8-BF69-11E3-817C-934E41E4CE11">here</a>.</p>
+<hr>
+<address>Apache/2.2.24 (Unix) mod_ssl/2.2.24 OpenSSL/1.0.1e-fips mod_fastcgi/2.4.6 Server at image2.pubmatic.com Port 80</address>
+</body></html>

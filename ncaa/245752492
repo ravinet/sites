@@ -1,0 +1,113 @@
+PHTTP157.166.224.57"–
+îGET /js.ng/site=ncaa&ncaa_pos=BG_Skin&ncaa_rollup=homepage&page.allowcompete=no&Params.User.UserID=534472c202be6f0a3c875a371403f938&kxid=&kxseg=&tile=7354574996935&transactionID=13969947558263022881538048&domId=58b67c7875099c71 HTTP/1.1
+Host: ads.ncaa.com
+Connection: keep-alive
+Accept: */*
+vUser-Agent: Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/31.0.1650.63 Safari/537.36
+Referer: http://www.ncaa.com/
+$Accept-Encoding: gzip,deflate,sdch
+!Accept-Language: en-US,en;q=0.8
+
+*†1
+HTTP/1.1 200 OK
+%Date: Tue, 08 Apr 2014 22:05:54 GMT
+Server: Apache
+"AdServer: ad8host1server1:9678:1
+%P3P: CP="NOI DEVa TAIa OUR BUS UNI"
+-Cache-Control: max-age=0, no-cache, private
+(Expires: Tue, 08 Apr 2014 22:05:54 GMT
+Pragma: no-cache
+Content-Length: 5888
+Keep-Alive: timeout=5, max=13
+Connection: Keep-Alive
+(Content-Type: application/x-javascript
+‚.
+document.write('');
+var qaBackgroundColor = "#002647"; //this should remain as #00203C for the legacy site #002647 for new site
+    var qaCreativeURL = "http://i.cdn.turner.com/ttn/ttn_adspaces/NCAA/2014/04/07/453510131DoveImage.jpg"; // Link to where the skin creative is located
+    var qaWidth = 1900; // WIDTH OF CREATIVE
+    var qaHeight = 905; // HEIGHT OF CREATIVE   
+    var qaClickThru = "https://bs.serving-sys.com/BurstingPipe/adServer.bs?cn=tf&c=20&mc=click&pli=9025152&PluID=0&ord=cmmtter,bjuiNwcbWWel"; // Redirect URL
+    var qa3PImpressions = ["https://bs.serving-sys.com/BurstingPipe/adServer.bs?cn=tf&c=19&mc=imp&pli=9025152&PluID=0&ord=cmmtter,bjuiNwcbWWel&rtu=-1","https://spixel.adsafeprotected.com/rfw/st/24334/2065959/skeleton.gif"]; // to include impressions, array must be in this format ["http://www.imp1.com","http://www.imp2.com"];
+    var qaSkinPos = "scroll"; //scroll or fixed
+
+
+     // CLICK TRACKING     
+    var qaClickTracker = "http://ads.cnn.com/event.ng/Type=click&FlightID=597537&AdID=807239&TargetID=110891&Values=63823&RawValues=NGUSERID%252C534472c202be6f0a3c875a371403f938%252CKXID%252C%252CTID%252C13969947558263022881538048%252CTIL%252C7354574996935&Redirect=";
+    var qaClickPixel = "http://i.cdn.turner.com/dr/ncaa/ncaa/release/sites/default/themes/ncaa/images/1.gif";
+
+
+    // ATTACH SKIN IMAGE TO BODY
+    var bodyTag = parent.document.getElementsByTagName('body')[0];
+    bodyTag.style.background = "url("+qaCreativeURL+") no-repeat "+qaSkinPos+" center top "+qaBackgroundColor;
+    bodyTag.style.overflowX = "hidden";
+
+    // SET CLICKABLE AREAS
+    var ncaaWingsDiv = parent.document.createElement('div');
+     ncaaWingsDiv.setAttribute('class', "ncaa-wings");
+    ncaaWingsDiv.style.width = "822px";
+    ncaaWingsDiv.style.height = "0px";
+    ncaaWingsDiv.style.top = "0px";
+    ncaaWingsDiv.style.position = (qaSkinPos=="scroll" ? "absolute":"fixed");
+    //following are only for final four pages - if body has class "final-four"    
+    if(bodyTag.className.indexOf("final-four") != -1){
+         ncaaWingsDiv.style.top = "-1700px";
+         ncaaWingsDiv.style.position = "relative";
+     }
+     bodyTag.appendChild(ncaaWingsDiv);
+
+    var ncaaShareHanger = parent.document.getElementById("ncaa-share-hanger");
+    if(ncaaShareHanger){ncaaShareHanger.style.zIndex = "1";}
+    var ncaaBGSkin = parent.document.getElementById("bg-skin");
+    if(ncaaBGSkin){ncaaBGSkin.style.backgroundImage = "none";}   
+
+    var ncaaWingsLeftDiv = parent.document.createElement('div');
+    var ncaaWingsRgtDiv = parent.document.createElement('div');
+     ncaaWingsLeftDiv.setAttribute('class', "ncaa-left-wing-ad");
+     ncaaWingsRgtDiv.setAttribute('class', "ncaa-right-wing-ad");
+     ncaaWingsDiv.appendChild(ncaaWingsLeftDiv);
+     ncaaWingsDiv.appendChild(ncaaWingsRgtDiv);
+
+    var ncaaWingsLeftLink = parent.document.createElement('a');
+    var ncaaWingsLeftImg = parent.document.createElement('img');
+    ncaaWingsLeftLink.setAttribute("href", qaClickTracker+qaClickThru);
+    ncaaWingsLeftLink.setAttribute("target", "_blank");
+    ncaaWingsLeftImg.setAttribute("src", qaClickPixel);
+    ncaaWingsLeftImg.setAttribute("height", qaHeight);
+    ncaaWingsLeftImg.setAttribute("width", "320");
+    ncaaWingsLeftImg.style.zIndex = "0";
+    ncaaWingsLeftLink.appendChild(ncaaWingsLeftImg);
+    ncaaWingsLeftDiv.appendChild(ncaaWingsLeftLink);
+
+     var ncaaWingsRgtLink = parent.document.createElement('a');
+     var ncaaWingsRgtImg = parent.document.createElement('img');
+     ncaaWingsRgtLink.setAttribute("href", qaClickTracker+qaClickThru);
+     ncaaWingsRgtLink.setAttribute("target", "_blank");
+     ncaaWingsRgtImg.setAttribute("src", qaClickPixel);
+     ncaaWingsRgtImg.setAttribute("height", qaHeight);
+     ncaaWingsRgtImg.setAttribute("width", "320");
+     ncaaWingsRgtImg.style.zIndex = "0";
+     ncaaWingsRgtLink.appendChild(ncaaWingsRgtImg);
+     ncaaWingsRgtDiv.appendChild(ncaaWingsRgtLink);
+
+
+    if(bodyTag.className.indexOf("roundbyround") != -1 || bodyTag.className.indexOf("bracketchallenge") != -1){
+         ncaaWingsDiv.style.left = "50%";
+         ncaaWingsDiv.style.marginLeft = "-820px";
+         ncaaWingsDiv.style.position = "absolute";
+         ncaaWingsDiv.style.width = "1640px";
+         ncaaWingsRgtDiv.style.cssFloat = "right";
+         ncaaWingsLeftDiv.style.cssFloat = "left";       
+     }
+
+    //BUILD THE 3RD PARTY IMPRESSION PIXELS
+    for (var index = 0; index < qa3PImpressions.length; index++){
+        var trkPixImg = document.createElement('img');
+        trkPixImg.setAttribute('src', qa3PImpressions[index]);
+        trkPixImg.setAttribute('width', "1");
+        trkPixImg.setAttribute('height', "1");
+        trkPixImg.style.position = 'absolute';
+        trkPixImg.style.visibility = 'hidden';
+        ncaaWingsDiv.appendChild(trkPixImg);
+    }    
+document.write('<!-- Ticket# - V.4 -->\n<div style=\"position:absolute;visibility:hidden;\"><img src=\"http://ads.ncaa.com:80/event.ng/Type=count&ClientType=2&ASeg=&AMod=&AOpt=0&AdID=807239&FlightID=597537&TargetID=110891&SiteID=63823&EntityDefResetFlag=0&Segments=DECBHHicHc_JDQAxCAPAhnhwmMP9N7bO5jFBJkKk8toQBQsiaDlFyWVZ5YJWdZ1WO5EGzy4D6k6SYZgh5DKtwYX1LE6eK9nItr7gWrNCOS_cJgNr0422mYqQGicnlJyODWNVU0vYeiVttaCct8_qop2rY1fuLbtPbv2Oy5uU1HzJ-oUdXJPlvTrw6ky9QVU--RKk_2oaGu_l3OvO3919-b3JuL_LfDnxcvY-V912_315-47U3z93k0ud&Targets=144332,110891,195523,196510,196616&Values=DECBHHicJY5LEgBRBAMvlIUgPve_2Hg1m26iFOXoxjhoBsqwbGxf7yOwSXDckZkN2Q1znAExc6EyzXFuQW0maM7Htkt2p1C02aNXoEI-x_FXj_TYP-tO2msYEcp7JvZuUnPDp-UL1-RPygDLLPjrwqJ8n8bmAyaqKuk.&RawValues=NGUSERID%252C534472c202be6f0a3c875a371403f938%252CKXID%252C%252CTID%252C13969947558263022881538048%252CTIL%252C7354574996935&random=cmmtter,bjuiNwcbWWel&Params.tag.transactionid=13969947558263022881538048&Params.User.UserID=534472c202be6f0a3c875a371403f938\" width=\"1\" height=\"1\" border=\"0\" /></div>');

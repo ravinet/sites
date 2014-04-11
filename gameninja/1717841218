@@ -1,0 +1,35 @@
+PHTTP
+8.18.45.90"‚
+ GET /w/get.media?sid=69824&m=1&tp=5&d=j&t=n&vcm_acv=1.3&version=1.4&c=0.3747328375466168&vcm_ifr=1&vcm_xy=-1..-1&vcm_vv=true&vcm_vm=false&vcm_pr=&vcm_tr=http://www.gameninja.com/1active/728x90first.html&vcm_cr=&vcpdid=AQEHih3PaOsKGQIBAQErAQEBAQE&no_cj_c=1&ccs_status=0&status=0 HTTP/1.1
+Host: media.fastclick.net
+Connection: keep-alive
+Accept: */*
+vUser-Agent: Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/31.0.1650.63 Safari/537.36
+<Referer: http://www.gameninja.com/1active/728x90first.html
+$Accept-Encoding: gzip,deflate,sdch
+!Accept-Language: en-US,en;q=0.8
+Cookie: cttutcid=1
+
+*Œ
+HTTP/1.1 302 Found
+%Date: Fri, 11 Apr 2014 15:35:19 GMT
+7Server: Apache/2.2.4 (Unix) mod_apreq2-20090110/2.7.1
+4Location: http://gameninja.com/activeads/vcm728.js
+Cache-Control: no-cache
+Pragma: no-cache
+Expires: 0
+Content-Length: 224
+-Content-Type: text/html; charset=iso-8859-1
+^Set-Cookie: cttutcid=|; domain=.fastclick.net; path=/; expires=Thu, 21-Dec-1972 00:00:00 GMT
+oSet-Cookie: pluto=471502258856135448|v1; domain=.fastclick.net; path=/; expires=Sun, 10-Apr-2016 15:35:19 GMT
+gP3P: policyref="/w3c/p3p.xml", CP="NOI NID DEVo TAIo PSAo HISo OTPo OUR DELo BUS COM NAV INT DSP COR"
+"Keep-Alive: timeout=5, max=19484
+Connection: Keep-Alive
+â
+<!DOCTYPE HTML PUBLIC "-//IETF//DTD HTML 2.0//EN">
+<html><head>
+<title>302 Found</title>
+</head><body>
+<h1>Found</h1>
+<p>The document has moved <a href="http://gameninja.com/activeads/vcm728.js">here</a>.</p>
+</body></html>

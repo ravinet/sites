@@ -1,0 +1,25 @@
+PHTTP23.208.222.193"Ô
+`POST /proxy.php?url=https://auth.archive.rollingstone.com/services/users/authenticate HTTP/1.1
+Host: www.rollingstone.com
+Connection: keep-alive
+Content-Length: 48
+0Accept: application/json, text/javascript, */*
+%Origin: http://www.rollingstone.com
+"X-Requested-With: XMLHttpRequest
+vUser-Agent: Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/31.0.1650.63 Safari/537.36
+1Content-Type: application/x-www-form-urlencoded
+'Referer: http://www.rollingstone.com/
+$Accept-Encoding: gzip,deflate,sdch
+!Accept-Language: en-US,en;q=0.8
+ÓCookie: optimizelySegments=%7B%22175119535%22%3A%22gc%22%2C%22175257137%22%3A%22false%22%2C%22175376848%22%3A%22direct%22%7D; optimizelyEndUserId=oeu1396995696681r0.3819851179141551; optimizelyBuckets=%7B%7D; optimizelyPendingLogEvents=%5B%5D; __qca=P0-146532790-1396995698483; __utma=54057643.98307510.1396995699.1396995699.1396995699.1; __utmb=54057643.1.10.1396995699; __utmc=54057643; __utmz=54057643.1396995699.1.1.utmcsr=(direct)|utmccn=(direct)|utmcmd=(none)
+2
+method=check_session&data%5Bsession_key%5D=false*¦
+HTTP/1.1 200 OK
+ Content-Type: application/json
+ Server: Apache/2.2.23 (CentOS)
+X-Powered-By: PHP/5.3.18
+Content-Length: 88
+%Date: Tue, 08 Apr 2014 22:21:38 GMT
+Connection: keep-alive
+Z
+{"method":"check_session","success":false,"message":"The session is invalid.","data":[]}

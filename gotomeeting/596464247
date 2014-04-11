@@ -1,0 +1,76 @@
+»HTTPS173.199.4.19"õ
+?GET /online/design/js/jquery/jquery.stationaryTip.js HTTP/1.1
+Host: l1.osdimg.com
+Connection: keep-alive
+Accept: */*
+vUser-Agent: Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/31.0.1650.63 Safari/537.36
+-Referer: http://www.gotomeeting.com/online/
+$Accept-Encoding: gzip,deflate,sdch
+!Accept-Language: en-US,en;q=0.8
+
+*¼
+HTTP/1.1 200 OK
+%Date: Tue, 08 Apr 2014 21:18:26 GMT
+Server: ATS/3.2.5
+.Last-Modified: Fri, 14 Jun 2013 16:31:51 GMT
+!ETag: "208fc-6fb-4df1fc8b30bc0"
+Accept-Ranges: bytes
+Content-Length: 1787
+ Access-Control-Allow-Origin: *
+Content-Type: text/javascript
+Age: 1975
+Connection: keep-alive
+ý
+(function(jQuery) {
+    jQuery.fn.stationaryTip = function(options) {
+        jQuery.fn.stationaryTip.defaults = {
+            tipContent: jQuery(this).attr('href'),
+            tipClass: 'stationary',
+            hideEvent: 'mouseout',
+            hideDelay: 250,
+            isFixed: true,
+            tipPositionAdjust: { x: 5, y: -12 },
+            tipPositionAt: 'right center',
+            tipPositionMy: 'left top',
+            tipPositionTarget: false,
+            tipViewPort: jQuery(window),
+            showDelay: 500,
+            caretStyle: { border: 2, corner: true, height: 13, mimic: 'left center', offset: 8, width: 7 }
+        };
+        var opts = jQuery.extend({}, jQuery.fn.stationaryTip.defaults, options);
+
+        // Create the shared properties object for the tooltips
+        var shared = {
+            content: {
+                text: jQuery(opts.tipContent).html()
+            },
+            events: {
+                render: function() {
+                    jQuery('.' + opts.tipClass);
+                }
+            },
+            hide: {
+                delay: opts.hideDelay,
+                event: opts.hideEvent,
+                fixed: opts.isFixed
+            },
+            position: {
+                adjust: opts.tipPositionAdjust,
+                at: opts.tipPositionAt,
+                my: opts.tipPositionMy,
+                target: opts.tipPositionTarget,
+                viewport: opts.tipViewPort
+            },
+            show: {
+                delay: opts.showDelay,
+                solo: true
+            },
+            style: {
+                classes: opts.tipClass,
+                tip: opts.caretStyle
+            }
+        };
+        // Render the Tooltip
+        jQuery(this).qtip(jQuery.extend(true, shared, {}));
+    }
+})(jQuery);

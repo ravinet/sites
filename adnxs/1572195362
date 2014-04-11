@@ -1,0 +1,761 @@
+PHTTP68.67.154.41"Å
+@GET /styles/main.css?3c4d97daa18c330f24e5e2eeb4f27179 HTTP/1.1
+Host: www.adnxs.com
+Connection: keep-alive
+Accept: text/css,*/*;q=0.1
+vUser-Agent: Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/31.0.1650.63 Safari/537.36
+ Referer: http://www.adnxs.com/
+$Accept-Encoding: gzip,deflate,sdch
+!Accept-Language: en-US,en;q=0.8
+KCookie: BIGipServeradnexus.prod_ttui_nym2_http.3214=2336228106.20480.0000
+
+*¨_
+HTTP/1.1 200 OK
+%Date: Tue, 08 Apr 2014 21:25:58 GMT
+Server: Apache/2.2.18 (Unix)
+.Last-Modified: Tue, 01 Apr 2014 21:56:54 GMT
+"ETag: "2a152-2e95-4f6023efd5580"
+Accept-Ranges: bytes
+Content-Length: 11925
+X-Cnection: close
+Content-Type: text/css
+—]
+
+body { 
+	position: relative;
+	font-family: "Lucida Grande", "Lucida Sans", "Lucida Sans Unicode", sans-serif; 
+}
+
+#shell {
+	position: relative;
+	width: 100%;
+	margin: 0 auto 0 auto;
+	text-align: left;
+	display: block;
+}
+
+/*********** Base tags ***********************/
+
+h1, h2, h3, h4, h5, th, .report-header {
+	font-family: Arial, Helvetica, sans-serif;
+}
+
+h1 {
+	font-size: 22px;
+	margin-bottom: 10px;
+	font-weight: normal;
+	color: #333;
+}
+
+h2 {
+	font-size: 16px;
+	color: #930;
+	margin-bottom: 4px;
+}
+
+h3 { 
+	font-weight: normal;
+	text-transform: lowercase;
+	font-variant: small-caps;
+	color: #000;
+	font-size: 15px;
+	letter-spacing: 1px;
+	margin-bottom: 2px;}
+	
+h4 { 
+	font-weight: bold;
+	border-bottom: 2px solid #930;
+	color: #930;
+	font-size: 14px;
+	padding: 2px 6px 8px 1px;
+	margin-bottom: 5px;
+}
+
+h5, th {
+	font-size: 13px;
+	font-weight: bold;
+	margin: 0;
+	margin-bottom: 10px;
+	color: #333;
+}
+
+h5 span {
+	font-weight: 400;
+}
+
+th {
+	padding: 10px 0;
+}
+
+.report-options-container h5 {
+	padding: 0;
+}
+
+th a:link,
+th a:visited {
+ color: #930;
+}
+
+th a:hover {
+ color: #333;
+}
+
+th a:active {
+	color: #c60;
+}
+
+.title {
+		font-size: 12px;
+    padding-left: 1px;
+    padding-right: 0;
+    font-weight: bold;
+    margin: 0;
+    float: right;
+    position: relative;
+    top: -18px;
+}
+
+td {
+	font-size: 11px;
+	padding: 5px 30px 5px 5px;
+}
+
+table {
+    margin-bottom: 10px;
+    padding: 0;
+}
+
+a:link, a:visited {
+	color: #930;
+	font-weight: normal;
+}
+
+a:hover { 
+	color: #333; 
+}
+
+a:active {
+	color: #c60; 
+}
+
+/*********** Layout/Positioning Elements ***********************/
+
+#hd, #bd, #ft {  /* border: 1px solid #808080; */  }
+		
+#hd h1 { 
+	font-size: 120%; 
+}
+		
+#bd { 
+	padding: 15px 20px 10px 20px;
+	border: 2px solid #bbb;
+	border-top: none;
+	margin: 0;
+}
+
+#bd p {   
+	padding: .3em 0; 
+}
+
+.bd { 
+	text-align: left; 
+}
+
+#ft {
+	text-align: center;
+}
+
+#logo_left {
+	float: left;
+	text-align: left;
+}
+
+#logo_left a {
+	background:transparent url(/images/logo.jpg) no-repeat scroll 0 0;
+	display:block;
+	height:40px;
+	overflow:hidden;
+	text-indent:-9999px;
+	width:151px;
+}
+
+#logout {
+	float: right;
+	text-align: right;
+	font-size: 11px;
+	color: #444;
+	float: right;
+	vertical-align: top;
+	line-height: 17px;
+}
+
+.clearfix:after {
+	content:".";
+	display:block;
+	height:0;
+	clear:both;
+	visibility:hidden;
+}
+
+.generic_table {}
+
+.generic_table th {
+	margin: 10px;
+	text-align: left;
+	font-weight: 800;
+	background-color: #fff;	
+	border-bottom: 2px solid #930;	
+	color: #930;
+	font-size: 13px;
+	padding: 6px 20px 8px 9px;	
+	cursor: pointer;
+}
+
+	.generic_table tr.even {
+		background-color: #FFFFFF;
+	}
+	
+	.generic_table tr.odd {
+		background-color: #EEEEEE;
+	}
+	
+	.generic_table tbody tr:hover {
+		background-color: #fd9;
+	}
+
+/* No longer used 
+#login_box {
+	background-color: #ececec;
+	border: 2px solid #ccc;
+	padding: 10px 20px;
+	margin-top: 15px;
+} */
+
+body.home #topbox {
+	border-bottom: 2px solid #999;
+}
+
+.about_text {
+	color: #3d3d3d;
+	font-family: arial, sans-serif;
+	font-size: 16px;
+	font-weight: bold;
+	line-height: 18px;
+}
+
+/***************************** NAVIGATION *************************************/
+
+#mainmenu ul {
+	height: 28px;
+	border-bottom: 2px solid #666;
+	padding-left: 20px;
+	margin: 0;
+}
+
+#mainmenu ul li {
+	float: left;
+}
+
+#mainmenu ul li a {
+	display: block;
+	border: 0;
+	height: 28px;
+	margin: -6px 3px 0 0;
+}
+
+#mainmenu ul li a img {
+	border: 0;
+}
+
+#submenu ul {
+	margin: 0;
+	height: 28px;
+	background-color: #bbb;
+	padding: 4px 0 0 0;
+	border-left: 2px solid #666;
+	border-right: 2px solid #666;
+}
+
+#submenu ul li {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 13px;
+	float: left;
+	margin: 0 -5px 0 20px;
+	line-height: 25px;
+	list-style: none;
+}
+
+#submenu ul li a:link,
+#submenu ul li a:visited {
+	font-family: "Lucida Grande", "Lucida Sans", "Lucida Sans Unicode", sans-serif;
+	font-size: 11px;
+	color: #111;
+	font-weight: normal;
+}    
+
+#submenu ul li a:hover {
+	color: #930;
+}
+
+#submenu ul li a.selected_submenu {
+	font-weight: bold;
+	font-family: Arial, Helvetica, sans-serif;
+	color: #333;
+	font-size: 13px;
+	text-decoration: none;
+}
+
+#submenu ul li a:hover.selected_submenu {
+	font-weight: bold;
+	color: #333;
+	font-size: 13px;
+}
+
+/* The following five styles comprise the original text-only (imageless) main menu */
+
+/*#mainmenu ul li {
+	float: left;
+	font-family: Arial, Helvetica, sans-serif;
+	font-weight: bold;
+	border: 0;
+	font-size: 13px;
+	line-height: 28px;
+	letter-spacing: .1em;
+	text-decoration: none; 
+}
+
+#mainmenu ul li a {
+	display: block;
+	border: 0;
+	height: 28px;
+	margin: -6px 3px 0 0;
+	color: #333;
+	background-color: #999;
+	list-style: none;
+}
+
+#mainmenu a:hover {
+	background-color: #aaa;
+}
+
+#mainmenu a:active {
+	background-color: #ccc;
+} 
+
+#mainmenu ul li a.chosen {
+	color: #fff;
+	background-color: #bbb;
+	cursor: default;
+	position: relative;
+	top: 0px;
+}*/ 
+/*End text-only main menu styles */
+
+/***** end of navigation ****//
+
+/*********** Form Elements ***********************/
+
+.form_table {
+	border:0;
+	padding: 10px;
+	background-color: #fff;
+	
+}
+
+.form_table th {
+	text-align: right;
+	padding: 3px;
+	color: #333;
+	font-family: arial, sans-serif;
+	font-size: 12px;
+	font-weight: bold;
+}
+
+.form_table td {
+	text-align: left;
+	font-weight: normal;
+}
+
+.required {
+	color:red;
+}
+
+select {
+	border: 1px inset #666;
+	font-size: 11px;
+	font-weight: normal;
+	text-align: left;
+}
+
+#custom-country-list,
+#custom-price-bucket-list,
+#custom-tags-list,
+#custom-creatives-list,
+#ad_sizes,
+#brands {
+	margin: 5px 0;
+	margin-left: 18px;
+}
+
+#custom-country-list select {
+	width: 100%;
+}
+
+textarea {
+	border: 1px inset #666;
+	margin-bottom: 2px;
+	float: none;
+	padding: 2px;
+	text-align: left;
+}
+
+input[type="button"],
+input[type="submit"],
+input[type="reset"] {
+	font-family: Arial, Helvetica, sans-serif;
+	text-decoration: none;
+	font-weight:bold;
+	font-size: 11px;
+	border: 1px outset #666;	
+	padding: 2px 6px 3px 6px;
+	background: #fff;
+	color: #930;
+	margin-bottom: 2px;
+	position: relative;
+	top: -2px;
+}
+
+input[type="button"]:hover,
+input[type="submit"]:hover,
+input[type="reset"]:hover {
+	border: 1px solid #930;	
+	color: #930;
+}
+
+input[type="button"]:active,
+input[type="submit"]:active,
+input[type="reset"]:active {
+	border: 1px solid #930;	
+	color: #333;
+}
+
+input[type="text"], input[type="password"] {
+	border: 1px inset #666;
+	margin-bottom: 2px;
+	padding: 2px;
+	text-align: left;
+}
+
+input[type="text"]:focus, textarea:focus, input[type="password"]:focus {
+	border: 1px solid #c63;
+	text-align: left;
+	padding: 2px;
+}
+
+input[type="button"], input[type="submit"] {
+	/* background: #ddd; border: 2px outset #999; padding: 2px;*/
+}
+
+.inline-input input[type="radio"],
+.inline-input input[type="checkbox"] {
+	margin-left: 10px;
+}
+
+input[type="radio"] {
+	margin-bottom: 4px;
+	margin-left: 0;
+	padding: 0;
+	vertical-align: top;
+	text-align: left;
+}
+
+input[type="checkbox"] {
+	margin: 0 0 4px 0;
+	padding: 0;
+	vertical-align: top;
+	text-align: left;
+	position: relative;
+}
+
+.error_list {
+	color:#ff0000;
+}
+
+.tagtableleft {
+	vertical-align: top;
+	font-weight: bold;
+	text-align: right;
+	font-size: 11px;
+	padding-right: 8px;
+}
+
+.tagtableright {
+	width: 200px;
+}
+
+.tagtablecomment {
+	color: #222s;
+	padding-left: 6px;
+	font-family: Arial, Helvetica, sans-serif;
+	vertical-align: top;
+	text-align: left;
+	font-weight: none;
+	font-style: italic;
+	font-size: 11px;
+	line-height: 15px;
+}
+
+/*********** Misc Elements ***********************/
+
+.info_message,
+.error_message,
+span.info_message,
+span.error_message {
+	display: block;
+	border: 2px solid #f60;
+	border-left: 2px solid #999;
+	border-right: 2px solid #999;
+	padding: 10px 20px;
+	font: bold 12px/15px Arial;
+	background: #f90;
+	color: #fff;
+}
+
+.gray_text {
+	color:#c4c4c4;
+	font-family:arial, sans-serif;
+}	
+
+div.profile_brand_trusted,
+div.creative_approved,
+div.brand_trusted {
+	border: 1px solid #9d2;
+}
+
+div.profile_brand_banned,
+div.creative_banned,
+div.brand_banned {
+	border: 1px solid #e65;
+}
+
+div.brand_case_by_case,
+profile_brand_case_by_case {
+	border: 1px solid #aaa;
+}
+
+a.pagination:link,
+a.pagination:visited {
+	text-decoration: none;
+	font-size: 11px;
+	border: 1px solid #666;	
+	padding: 2px 6px 3px 6px;
+	background: #fff;
+	color: #930;
+}
+
+a.pagination:hover,
+a.pagination:active {
+	text-decoration: none;
+	font-size: 11px;
+	border: 1px solid #930;	
+	padding: 2px 6px 3px 6px;
+	background: #fff;
+	color: #930;
+}
+
+.pagination,
+.pagination {
+	text-decoration: none;
+	font-size: 11px;
+	border: 1px solid #ccc;	
+	padding: 2px 6px 3px 6px;
+	background: none;
+	color: #999;
+}
+
+/********** Report stuff *******************/
+
+#rpt_form_container {
+	background-color: #f9f9f9;
+	padding: 16px;
+	border: 1px solid #ccc;
+	margin-top: 5px;
+}
+
+#rpt_form_container label {
+	width: 200px;;
+}
+
+#rpt_filter_table { }
+
+#rpt_filter_table th {
+	background-color: #ececec;
+	margin: 10px;
+	text-align: left;
+	font-weight: 800;
+	border-bottom: 2px solid #930;	
+	color: #930;
+	font-size: 13px;
+	padding: 6px 10px 8px 1px;	
+}
+
+.tablediv  {
+	display:  table;
+	width:600px;
+	border-spacing:5px;
+	border-collapse:separate;
+}
+
+.labelCell  {
+	float:left;
+	display:  table-cell;
+	width: 20%;
+}
+
+.celldiv  {
+	float:left;
+	display:  table-cell;
+	width: 80%;
+}
+
+.rowdiv  {
+	display: table-row;
+	width:auto;
+}
+
+.reportLabel {
+	color: #494949;
+	font-weight: bold;
+}
+
+.report-header {
+	color: #333;
+	font-weight: bold;
+}
+
+.report-column {
+	width: 44%; 
+	float: left;
+}
+
+.report-options-container {
+	margin: 10px 0 15px 0;
+}
+
+.report-options {
+	margin-left: 1px;
+	font-size: 11px;
+}
+
+/********** yui-skin-sam table (more in datatable.css stylesheets) *******************/
+
+.yui-skin-sam .yui-dt th { 
+	background:#fff url(/images/dot.gif) repeat-x 0 0; 
+	border:0; 
+	border-bottom:2px solid #930;	
+}
+
+thead .yui-dt-liner { /* Defines bottom border for yui-skin-sam <th> elements */
+	border-bottom: 2px solid #930;
+	background: none;
+}
+
+.yui-dt-first th {
+	color: #f90;
+}
+
+thead .yui-dt-liner.parent-column { /* Makes super-header <thead> elements (class "parent-column") different from regular headers */
+border-bottom: 1px solid #999;
+color: #666;
+	text-transform: lowercase;
+	font-variant: small-caps;
+	letter-spacing: .01em;
+	font-size: 12px; 
+}
+
+thead .yui-dt-liner.parent-column.yui-dt-col-imps,
+thead .yui-dt-liner.parent-column.yui-dt-col-clicks,
+thead .yui-dt-liner.parent-column.yui-dt-col-banked_imps,
+thead .yui-dt-liner.parent-column.yui-dt-col-banked_revenue,
+thead .yui-dt-liner.parent-column.yui-dt-col-banked_cpm {
+	text-transform: none;
+	font-variant: normal;
+	font-size: 13px;
+	border-bottom:2px solid #930;	
+	letter-spacing: 0;
+}
+
+/* Makes parent-column subheaders grey (to set them apart from the rest of the row) */
+thead .yui-dt-liner.parent-column.yui-dt-col-imps a,
+thead .yui-dt-liner.parent-column.yui-dt-col-clicks a,
+thead .yui-dt-liner.parent-column.yui-dt-col-banked_imps a,
+thead .yui-dt-liner.parent-column.yui-dt-col-banked_revenue a,
+thead .yui-dt-liner.parent-column.yui-dt-col-banked_cpm a {
+	color: #666;
+}
+/* End grey subheader style */
+.required {
+	color:red;
+}
+
+/**********/
+.error-box {
+	border: 1px solid #993300;
+	background: #ffebe8;
+	padding: 10px;
+	margin-bottom: 25px;
+}
+
+.error-box h3, .success-box h3 {
+	font-weight: bold;
+}
+
+.error-box ul {
+	margin-left: 20px;
+}
+
+.success-box {
+	background: #FFF9D7;
+	border: 1px solid #E2C822;
+	padding: 10px;
+	margin-bottom: 25px;
+}
+
+.json_data {
+	margin-top: 20px;
+	border: 1px solid #CCCCCC;
+	background: #eee;
+	padding: 20px;
+}
+
+
+/***** async queued reports *******/
+ul#async-queued-reports {
+	margin-top: -16px;
+	padding-bottom: 30px;
+}
+
+ul#async-queued-reports li {
+	float: left;
+	margin-right: 13px;
+	padding:8px;
+	border: 1px solid #FF6600;
+	border-top: none;
+}
+
+ul#async-queued-reports li a {
+	color: #000;
+}
+
+ul#async-queued-reports li.ready {
+	background: #FF9900;
+}
+
+ul#async-queued-reports li.pending {
+	background: #BBB;
+	border-color: #666;
+}
+
+ul#async-queued-reports li.error, ul#async-queued-reports li.deleted {
+	background: red;
+}

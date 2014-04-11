@@ -1,0 +1,36 @@
+»HTTPS74.125.193.95"º
+(GET /css?family=Gudea:400,700 HTTP/1.1
+Host: fonts.googleapis.com
+Connection: keep-alive
+Accept: text/css,*/*;q=0.1
+vUser-Agent: Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/31.0.1650.63 Safari/537.36
+sReferer: https://embed.friendbuy.com/site-82cf2017-petflow.com/page:All/widget?embed_load_code=201404081508158212
+$Accept-Encoding: gzip,deflate,sdch
+!Accept-Language: en-US,en;q=0.8
+
+*È
+HTTP/1.1 200 OK
+Content-Type: text/css
+Timing-Allow-Origin: *
+(Expires: Tue, 08 Apr 2014 22:08:16 GMT
+%Date: Tue, 08 Apr 2014 22:08:16 GMT
+'Cache-Control: private, max-age=86400
+Content-Length: 471
+!X-Content-Type-Options: nosniff
+X-Frame-Options: SAMEORIGIN
+!X-XSS-Protection: 1; mode=block
+Server: GSE
+Alternate-Protocol: 443:quic
+Ù
+@font-face {
+  font-family: 'Gudea';
+  font-style: normal;
+  font-weight: 400;
+  src: local('Gudea'), url(https://themes.googleusercontent.com/static/fonts/gudea/v2/Z6xYy_2MlN1cUISkeodEPA.woff) format('woff');
+}
+@font-face {
+  font-family: 'Gudea';
+  font-style: normal;
+  font-weight: 700;
+  src: local('Gudea Bold'), local('Gudea-Bold'), url(https://themes.googleusercontent.com/static/fonts/gudea/v2/6M2RKly85u67vSsXH0-zqvesZW2xOQ-xsNqO47m55DA.woff) format('woff');
+}

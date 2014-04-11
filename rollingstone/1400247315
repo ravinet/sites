@@ -1,0 +1,162 @@
+PHTTP23.208.222.193"Ï
+!GET /js/fe/homepage.js HTTP/1.1
+Host: www.rollingstone.com
+Connection: keep-alive
+Accept: */*
+vUser-Agent: Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/31.0.1650.63 Safari/537.36
+'Referer: http://www.rollingstone.com/
+$Accept-Encoding: gzip,deflate,sdch
+!Accept-Language: en-US,en;q=0.8
+ôCookie: optimizelySegments=%7B%22175119535%22%3A%22gc%22%2C%22175257137%22%3A%22false%22%2C%22175376848%22%3A%22direct%22%7D; optimizelyEndUserId=oeu1396995696681r0.3819851179141551; optimizelyBuckets=%7B%7D; optimizelyPendingLogEvents=%5B%5D
+
+*Ú%
+HTTP/1.1 200 OK
+Accept-Ranges: bytes
+&Content-Type: application/javascript
+#ETag: "138f46-11b2-4f6886e382100"
+.Last-Modified: Tue, 08 Apr 2014 14:02:12 GMT
+ Server: Apache/2.2.23 (CentOS)
+Content-Length: 4530
+%Date: Tue, 08 Apr 2014 22:21:37 GMT
+Connection: keep-alive
+´#
+/**
+ * We use the initCallback callback
+ * to assign functionality to the controls
+ */
+var visibleSlide = 0;
+function mycarousel_initCallback(carousel) {
+
+	var totalSlides = $('#homeHero').find('ul.belt li').length;
+	var startPosition = 1;
+	for(i=0; i<totalSlides;i++){
+		$('#homeHeroPaginate').append('<li index="'+i+'"></li>');
+	}
+	$('#homeHeroPaginate').children('li:eq(0)').addClass('highLight')
+	
+	
+	jQuery('#homeHero .jcarousel-next').bind('click', function() {
+		$('#homeHeroPaginate li').removeClass('highLight')
+		$('#homeHeroPaginate').children('li').eq(visibleSlide).addClass('highLight');
+        carousel.next();
+        return false;		
+    });
+
+    jQuery('#homeHero .jcarousel-prev').bind('click', function() {
+		//if($(this).hasClass('jcarousel-prev-disabled')) return false;
+		$('#homeHeroPaginate li').removeClass('highLight')
+      	$('#homeHeroPaginate').children('li').eq(visibleSlide-2).addClass('highLight');
+        carousel.prev();
+        return false;		
+    });
+
+    jQuery('#homeHeroPaginate li').bind('click', function() {
+		$('#homeHeroPaginate li').removeClass('highLight');
+		var pos = parseInt(jQuery(this).attr('index')*1+1);
+		carousel.scroll(jQuery.jcarousel.intval(pos));
+		carousel.stopAuto();
+        return false;
+    });
+
+
+	carousel.clip.hover(function() {
+        carousel.stopAuto();
+    }, function() {
+        carousel.startAuto();
+    });
+	
+	// Adjust position of Pagination container
+	var noOfLis =  $('#homeHeroPaginate li').length;
+	var margin = (168-noOfLis*11)*1; // Bullets are 11px wide
+	$('#homeHeroPaginate').css({'margin-left':margin});
+	
+	var beltWidth = $('.belt').width();
+	$('.belt').width(beltWidth+100);//fixes the safari/mac hero stacking issue
+
+	//Show perpared items (this prevents flashing of unprepared navigation/slides)
+    $('#homeHero li.hidden, .heroControls').removeClass('hidden');
+};
+
+/**
+ * This is the callback function which receives notification
+ * when an item becomes the first one in the visible range.
+ * Triggered after animation.
+ */
+function mycarousel_itemVisibleInCallbackAfterAnimation(carousel, item, idx, state) {
+	mod = $('#homeHeroPaginate li').removeClass('highLight').length;	
+	$('#homeHeroPaginate').children('li').eq((idx%mod)-1).addClass('highLight');	
+};
+
+
+
+function mycarousel_itemFirstInCallback(carousel, item, idx, state) {
+	mod = $('#homeHeroPaginate li').removeClass('highLight').length;
+	$('#homeHeroPaginate').children('li').eq((idx%mod)-1).addClass('highLight');
+};
+
+function mycarousel_beforeAnimation(carousel, item, idx, state) {
+	$('#homeHeroPaginate li').removeClass('highLight');
+}
+
+// function initVideosRSExclusives(){
+// 	//Allowing for multiple of these modules on a page
+// 	$('.videoPreviewModule').each(function(){
+// 		var mainLinks = $(this).find('.videoLargeImageContainer a');
+// 		var mainImage = $(this).find('.videoLargeImageContainer img');
+// 		var mainText = $(this).find('.videoLargeImageContainer a.videoHeadline');
+// 		$(this).find('.videoThumbnailsContainer li').hover(function(e){
+// 			mainImage.attr('src',$('.vid-img', this).attr('fullimgsrc'));
+// 			mainText.html($('.vid-img', this).attr('title'));
+// 			mainLinks.attr('href',$('.vid-img', this).attr('href'));
+// 			e.preventDefault();
+// 		});	
+// 	});
+//}
+
+// Ride the carousel...
+jQuery(document).ready(function() {
+
+	$('#home-insideRS .scrollShell').scrollable({items:'#home-insideRS .scrollItems',next:'.next',prev:'.prev',circular:false}).navigator({
+		navi:'.moduleFooter .navi'
+	});
+
+	if ($.tools) {
+		
+		// Custom transition effect
+		$.tools.tabs.addEffect('rsDoubleFade', function(tabIndex, done) {
+			
+			this.getPanes().fadeOut(500);
+			
+			paneToShow = this.getPanes().eq(tabIndex);
+			paneText = $('span.featureText', paneToShow).hide();
+			paneBackground = $('span.bottomBar', paneToShow).hide();
+			
+			paneToShow.fadeIn(500, function() {
+				paneText.fadeIn(500);
+				paneBackground.fadeIn(500);
+			});
+			
+			done.call();
+	
+		});
+		navWidth = $('.heroNav').width();
+		$("span.tabs")
+		.css('left', ((navWidth-(12*$(".mainFeature-container > div").length))/2))
+		.tabs(".mainFeature-container > div", {
+			effect: 'rsDoubleFade',
+			fadeOutSpeed: 'slow',
+			rotate: true
+		}).slideshow({
+			autoplay: true, 
+			interval: 4000, 
+			clickable: false, 
+			autopause: true
+		}).fadeIn(500);
+	
+	}
+
+	$('.newMusicListHomepage .info').verticalCenter();
+
+
+	//initVideosRSExclusives();
+});

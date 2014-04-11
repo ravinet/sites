@@ -1,0 +1,30 @@
+PHTTP167.8.226.13"ö
+†GET /event/?ctid=5EBBB8AC-DA7E-48DE-95F9-62EC1D76C101&av=2279&eid=1396477744818.1895&ev=&item=&q=&val=&r=0.4461065735667944 HTTP/1.1
+Host: container.pointroll.com
+Connection: keep-alive
+TAccept: text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8
+vUser-Agent: Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/31.0.1650.63 Safari/537.36
+”Referer: http://media.gsimedia.net/ipixel?spacedesc=1113305_1061349_1x1_1061349_1061349&target=_blank&db_afcr=123&group=TRUS&event=Homepage&random=1396996144653&siteid=49&pagetype=shop&REVENUE=&browserid=208519601605&ORDERID=&prodid=&catid=2255956&REFERRER=&carttotal=&pqty=
+$Accept-Encoding: gzip,deflate,sdch
+!Accept-Language: en-US,en;q=0.8
+
+*¾
+HTTP/1.1 200 OK
+Connection: close
+%Date: Tue, 08 Apr 2014 22:29:04 GMT
+Server: Microsoft-IIS/6.0
+X-Powered-By: ASP.NET
+X-AspNet-Version: 2.0.50727
+Cache-Control: private
+(Content-Type: text/html; charset=utf-8
+Content-Length: 570
+¼
+<script language='JavaScript'>
+ var prd=new Date(),pru=Date.UTC(prd.getUTCFullYear(),prd.getUTCMonth(),prd.getUTCDay(),prd.getUTCHours(),prd.getUTCMinutes(),prd.getUTCSeconds(),prd.getUTCMilliseconds());
+ var pr_eid='1396477744818.1895';
+ var pr_event='';
+ var pr_item='';
+ var pr_quantity='';
+ var pr_value='';
+ document.write("<img width='1' height='1' src='http://ev.ads.pointroll.com/event/?ss=F2A42083-6529-436D-9D07-D768C2519EFA&av=2279&eid="+pr_eid+"&ev="+pr_event+"&item="+pr_item+"&q="+pr_quantity+"&val="+pr_value+"&r="+Math.random()+"'>");
+</script>

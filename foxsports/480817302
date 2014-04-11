@@ -1,0 +1,49 @@
+PHTTP65.55.121.245"ø
+BGET /ADSAdClient31.dll?GetSAd=&DPJS=8&PG=SPTBHP&AP=1402 HTTP/1.1
+Host: rad.msn.com
+Connection: keep-alive
+Accept: */*
+vUser-Agent: Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/31.0.1650.63 Safari/537.36
+$Accept-Encoding: gzip,deflate,sdch
+!Accept-Language: en-US,en;q=0.8
+/Cookie: MUID=337C7F6685CC68ED0FA1797F81CC6A95
+
+*›
+HTTP/1.1 200 OK
+*Cache-Control: no-cache, must-revalidate
+Pragma: no-cache
+Content-Length: 1285
+(Content-Type: text/html; Charset=utf-8
+(Expires: Fri, 01 Jan 1990 00:00:00 GMT
+Server: Microsoft-IIS/7.5
+1X-RADID: P6720429-T100294094-C80000000000018486
+ Access-Control-Allow-Origin: *
+7P3P: CP="BUS CUR CONo FIN IVDo ONL OUR PHY SAMo TELo"
+%Date: Fri, 11 Apr 2014 20:36:26 GMT
+‡
+
+  
+//<![CDATA[
+function getRADIds() { return{"adid":"80000000000018486","pid":"6720429","targetid":"100294094"};}  
+
+if(typeof(inDapIF) != "undefined"){parent.dap_Resize(document.body.id, 1, 1);}  
+try
+{if(typeof(inDapIF)!="undefined")
+{parent.ShowAcb(document.body.id,80000000000018486,1,1,"g.msn.com","2AD0001R","6720429",null);}}
+catch(e){}
+
+try
+{if(typeof(inDapIF)!="undefined")
+{var cData={};cData["CID"]="80000000000018486";cData["PID"]="6720429";cData["UIT"]="G";cData["TargetID"]="100294094";cData["PG"]="SPTBHP";cData["ASID"]="51e5a6e07a5c4b53aef2cb362201100a";cData["ANID"]="";cData["MUID"]="337C7F6685CC68ED0FA1797F81CC6A95";cData["GSERV"]="http://g.msn.com";cData["DISABLEIAF"]="1";cData["FN"]="bannerimg";cData["Viewability"]="true";parent.setCreativeData(document.body.id,cData);}}
+catch(e){}
+
+
+var clkThr = 'http://g.msn.com/2AD0001R/80000000000018486.1??PID=6720429&amp;UIT=G&amp;TargetID=100294094&amp;AN=1342325330&amp;PG=SPTBHP&amp;ASID=51e5a6e07a5c4b53aef2cb362201100a';
+
+
+document.write('<div id="offsetDiv_1342325330" style="overflow:hidden;width:1px;height:1px"><a href="' + clkThr + '" target="_blank"><img src="http://h2.msn.com/CIS/20/000/000/000/001/150.gif" width="1" height="1" alt="dot" title="dot" border="0" /></a></div>');
+
+
+document.close();
+
+//]]>  

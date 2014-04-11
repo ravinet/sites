@@ -1,0 +1,273 @@
+PHTTP
+18.7.20.69"Ó
+&GET /_res/js/sifr-config.js HTTP/1.1
+Host: service.prweb.com
+Connection: keep-alive
+Accept: */*
+vUser-Agent: Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/31.0.1650.63 Safari/537.36
+ Referer: http://www.prweb.com/
+$Accept-Encoding: gzip,deflate,sdch
+!Accept-Language: en-US,en;q=0.8
+
+*Ái
+HTTP/1.1 200 OK
+Server: Apache/2.2.3 (CentOS)
+.Last-Modified: Sat, 30 Oct 2010 16:01:02 GMT
+"ETag: "8a642-3398-493d7ae844b80"
+Accept-Ranges: bytes
+Content-Length: 13208
+(Content-Type: application/x-javascript
+%Date: Tue, 08 Apr 2014 22:15:36 GMT
+Connection: keep-alive
+šg
+var tondoBold = { src: 'http://service.prweb.com/_res/js/tondo_std_bold.swf' };
+var tondo_std_bold = { src: 'http://service.prweb.com/_res/js/tondo_std_CS4.swf'};
+
+sIFR.activate(tondoBold, tondo_std_bold);
+
+//sIFR.debug.ratios({ src: '/_res/js/tondo_std_CS4.swf', selector: '.package h2' });
+
+
+sIFR.replace(tondo_std_bold, {
+  selector: 'div.distribution-package #content-feature h1, div.distribution-package #content-feature p.header-text-h1',
+  css: {
+	'.sIFR-root' : { 'color' : '#ffffff', 'leading' : -3, 'letter-spacing' : '-1' },
+	'strong' : { 'font-family' : 'Tondo Bold', 'color' : '#ffffff', 'font-weight' : 'bold', 'letter-spacing' : -1 }
+  },
+  wmode: 'transparent',
+  fitExactly: true,
+  ratios:  [8, 1.42, 9, 1.33, 12, 1.35, 21, 1.3, 31, 1.27, 32, 1.25, 36, 1.26, 37, 1.24, 42, 1.25, 57, 1.24, 60, 1.23, 61, 1.24, 69, 1.23, 70, 1.24, 101, 1.23, 102, 1.22, 106, 1.23, 107, 1.22, 110, 1.23, 111, 1.22, 113, 1.23, 116, 1.22, 117, 1.23, 118, 1.22, 119, 1.23, 121, 1.22, 122, 1.23, 1.22]
+});
+
+sIFR.replace(tondo_std_bold, {
+  selector: 'div.primary div.blank-feature #content-feature h1, div.primary div.blank-feature #content-feature p.header-text-h1',
+  css: {
+	'.sIFR-root' : { 'font-family' : 'Tondo Bold', 'color' : '#000000', 'leading' : -6, 'letter-spacing' : '0' },
+	'em' : { 'color' : '#e02129', 'font-style' : 'normal' }
+	},
+  wmode: 'transparent',
+  ratios:  [8, 1.43, 11, 1.38, 16, 1.33, 23, 1.32, 24, 1.29, 28, 1.3, 36, 1.29, 45, 1.28, 69, 1.27, 72, 1.26, 73, 1.27, 76, 1.26, 77, 1.27, 1.26]
+});
+
+sIFR.replace(tondo_std_bold, {
+  selector: 'div.primary div.blank-feature #content-feature h2, div.primary div.blank-feature #content-feature p.header-text-h2',
+  css: {
+	'.sIFR-root' : { 'color' : '#000000', 'leading' : 0, 'letter-spacing' : '0' },
+	'em' : { 'color' : '#e02129', 'font-style' : 'normal' }
+	},
+  wmode: 'transparent',
+  ratios:  [8, 1.43, 11, 1.38, 16, 1.33, 23, 1.32, 24, 1.29, 28, 1.3, 36, 1.29, 45, 1.28, 69, 1.27, 72, 1.26, 73, 1.27, 76, 1.26, 77, 1.27, 1.26]
+});
+
+
+
+sIFR.replace(tondo_std_bold, {
+  selector: '#content-feature h1, #content-feature p.header-text-h1',
+  css: {
+	'.sIFR-root' : { 'color' : '#ffffff', 'leading' : -8, 'letter-spacing' : '-1' },
+	'strong' : { 'font-family' : 'Tondo Bold', 'color' : '#ffffff', 'font-weight' : 'bold', 'letter-spacing' : -1 }
+  },
+  wmode: 'transparent',
+  fitExactly: true,
+  ratios:  [8, 1.42, 9, 1.33, 12, 1.35, 21, 1.3, 31, 1.27, 32, 1.25, 36, 1.26, 37, 1.24, 42, 1.25, 57, 1.24, 60, 1.23, 61, 1.24, 69, 1.23, 70, 1.24, 101, 1.23, 102, 1.22, 106, 1.23, 107, 1.22, 110, 1.23, 111, 1.22, 113, 1.23, 116, 1.22, 117, 1.23, 118, 1.22, 119, 1.23, 121, 1.22, 122, 1.23, 1.22]
+});
+
+sIFR.replace(tondo_std_bold, {
+  selector: '#content-feature h2, #content-feature p.header-text-h2',
+  css: {
+	'.sIFR-root' : { 'color' : '#ffffff', 'leading' : -2, 'letter-spacing' : '-1' },
+	'strong' : { 'font-family' : 'Tondo Bold', 'color' : '#ffffff', 'font-weight' : 'bold', 'letter-spacing' : '-1' }
+  },
+   wmode: 'transparent',
+  fitExactly: true,
+  ratios:  [8, 1.42, 9, 1.33, 12, 1.35, 21, 1.3, 31, 1.27, 32, 1.25, 36, 1.26, 37, 1.24, 42, 1.25, 62, 1.24, 64, 1.23, 65, 1.24, 69, 1.23, 70, 1.24, 101, 1.23, 102, 1.22, 110, 1.23, 111, 1.22, 119, 1.23, 120, 1.22, 123, 1.23, 1.22]
+});
+
+sIFR.replace(tondo_std_bold, {
+  selector: '#content-feature h3, #content-feature p.header-text-h3',
+  css: {
+	'.sIFR-root' : { 'font-family' : 'Tondo Bold', 'font-weight' : 'bold', 'color' : '#ffffff', 'leading' : 0, 'letter-spacing' : '0' }
+ },
+  wmode: 'transparent',
+  ratios:  [8, 1.42, 9, 1.33, 12, 1.35, 21, 1.3, 31, 1.27, 32, 1.25, 36, 1.26, 37, 1.24, 42, 1.25, 57, 1.24, 60, 1.23, 61, 1.24, 69, 1.23, 70, 1.24, 101, 1.23, 102, 1.22, 106, 1.23, 107, 1.22, 110, 1.23, 111, 1.22, 113, 1.23, 116, 1.22, 117, 1.23, 118, 1.22, 119, 1.23, 121, 1.22, 122, 1.23, 1.22]
+});
+
+sIFR.replace(tondo_std_bold, {
+  selector: '#content-feature span.price',
+  css: {
+	'.sIFR-root' : { 'font-family' : 'Tondo Bold', 'color' : '#52a6d4', 'letter-spacing' : '-1', 'text-align' : 'center' },
+	'em' : { 'font-size' : '70%', 'font-style' : 'normal' }
+	},
+	offsetTop: -2,
+  wmode: 'transparent',
+  ratios: [8, 1.42, 9, 1.33, 12, 1.35, 21, 1.3, 31, 1.27, 32, 1.25, 36, 1.26, 37, 1.24, 42, 1.25, 57, 1.24, 60, 1.23, 61, 1.24, 69, 1.23, 70, 1.24, 101, 1.23, 102, 1.22, 106, 1.23, 107, 1.22, 110, 1.23, 111, 1.22, 113, 1.23, 116, 1.22, 117, 1.23, 118, 1.22, 119, 1.23, 121, 1.22, 122, 1.23, 1.22]
+});
+
+sIFR.replace(tondo_std_bold, {
+  selector: '#content-feature span.quantity',
+  css: {
+	'.sIFR-root' : { 'font-family' : 'Tondo Bold', 'color' : '#000000', 'letter-spacing' : '', 'text-align' : 'center' },
+	'em' : { 'font-size' : '70%', 'font-style' : 'normal' }
+	},
+  wmode: 'transparent',
+  
+  ratios: [8, 1.42, 9, 1.33, 12, 1.35, 21, 1.3, 31, 1.27, 32, 1.25, 36, 1.26, 37, 1.24, 42, 1.25, 57, 1.24, 60, 1.23, 61, 1.24, 69, 1.23, 70, 1.24, 101, 1.23, 102, 1.22, 106, 1.23, 107, 1.22, 110, 1.23, 111, 1.22, 113, 1.23, 116, 1.22, 117, 1.23, 118, 1.22, 119, 1.23, 121, 1.22, 122, 1.23, 1.22]
+});
+
+sIFR.replace(tondo_std_bold, {
+  selector: 'p.package-price',
+  css: {
+	'.sIFR-root' : { 'font-family' : 'Tondo Bold', 'color' : '#52a6d4', 'letter-spacing' : '0', 'text-align' : 'center' },
+	'.package-quantity' : { 'font-style' : 'normal', 'color' : '#010101' }
+	},
+  wmode: 'transparent',
+  ratios:  [8, 1.42, 9, 1.33, 12, 1.35, 21, 1.3, 31, 1.27, 32, 1.25, 36, 1.26, 37, 1.24, 42, 1.25, 57, 1.24, 60, 1.23, 61, 1.24, 69, 1.23, 70, 1.24, 101, 1.23, 102, 1.22, 106, 1.23, 107, 1.22, 110, 1.23, 111, 1.22, 113, 1.23, 116, 1.22, 117, 1.23, 118, 1.22, 119, 1.23, 121, 1.22, 122, 1.23, 1.22]
+});
+
+
+sIFR.replace(tondo_std_bold, {
+  selector: 'span.price',
+  css: {
+	'.sIFR-root' : { 'font-family' : 'Tondo Bold', 'color' : '#52a6d4', 'letter-spacing' : '0' },
+	'em' : { 'font-size' : '45%', 'font-style' : 'normal' }
+	},
+  wmode: 'transparent',
+  ratios:  [8, 1.42, 9, 1.33, 12, 1.35, 21, 1.3, 31, 1.27, 32, 1.25, 36, 1.26, 37, 1.24, 42, 1.25, 57, 1.24, 60, 1.23, 61, 1.24, 69, 1.23, 70, 1.24, 101, 1.23, 102, 1.22, 106, 1.23, 107, 1.22, 110, 1.23, 111, 1.22, 113, 1.23, 116, 1.22, 117, 1.23, 118, 1.22, 119, 1.23, 121, 1.22, 122, 1.23, 1.22]
+});
+
+sIFR.replace(tondo_std_bold, {
+  selector: '#content-intro h1',
+  css: {
+	'.sIFR-root' : { 'font-family' : 'Tondo Bold', 'color' : '#000000', 'leading' : -12, 'letter-spacing' : '0', 'font-weight' : 'bold' },
+	'em' : { 'color' : '#e02129', 'font-style' : 'normal' }
+	},
+  wmode: 'transparent',
+  fitExactly: true,
+  ratios:  [8, 1.43, 11, 1.38, 16, 1.33, 23, 1.32, 24, 1.29, 28, 1.3, 36, 1.29, 45, 1.28, 69, 1.27, 72, 1.26, 73, 1.27, 76, 1.26, 77, 1.27, 1.26]
+});
+
+sIFR.replace(tondoBold, {
+  selector: 'h2.section',
+  css: {
+	'.sIFR-root' : { 'color' : '#ffffff', 'leading' : -2, 'letter-spacing' : 0 }
+	},
+  wmode: 'transparent',
+  ratios: 	[8, 1.42, 9, 1.33, 12, 1.35, 21, 1.3, 31, 1.27, 32, 1.25, 36, 1.26, 37, 1.24, 42, 1.25, 57, 1.24, 60, 1.23, 61, 1.24, 69, 1.23, 70, 1.24, 101, 1.23, 102, 1.22, 106, 1.23, 107, 1.22, 110, 1.23, 111, 1.22, 113, 1.23, 116, 1.22, 117, 1.23, 118, 1.22, 119, 1.23, 121, 1.22, 122, 1.23, 1.22]
+});
+
+
+sIFR.replace(tondo_std_bold, {
+  selector: '.get-started h3',
+  css: {
+	'.sIFR-root' : { 'color' : '#000000', 'leading' : -5 },
+	'em' : { 'font-size' : '70%', 'font-style' : 'normal' }
+	},
+  wmode: 'transparent',
+  ratios:  [8, 1.43, 11, 1.38, 16, 1.33, 23, 1.32, 24, 1.29, 28, 1.3, 36, 1.29, 45, 1.28, 69, 1.27, 72, 1.26, 73, 1.27, 76, 1.26, 77, 1.27, 1.26]
+});
+
+sIFR.replace(tondo_std_bold, {
+  selector: '.alert h3',
+  css: {
+	'.sIFR-root' : { 'color' : '#000000' },
+	'em' : { 'font-size' : '70%', 'font-style' : 'normal' }
+	},
+  wmode: 'transparent',
+  ratios:  [8, 1.43, 11, 1.38, 16, 1.33, 23, 1.32, 24, 1.29, 28, 1.3, 36, 1.29, 45, 1.28, 69, 1.27, 72, 1.26, 73, 1.27, 76, 1.26, 77, 1.27, 1.26]
+});
+
+
+sIFR.replace(tondo_std_bold, {
+  selector: '.secondary .success-story h3',
+  css: {
+	'.sIFR-root' : { 'font-family' : 'Tondo Bold', 'color' : '#e02129', 'leading' : -3, 'letter-spacing' : -1 },
+	'em' : { 'font-family' : 'Tondo Bold', 'color' : '#e02129', 'leading' : 0,  'font-style' : 'normal', 'font-weight' : 'bold' }
+	},
+  wmode: 'transparent',
+   ratios:  [8, 1.42, 9, 1.33, 12, 1.35, 21, 1.3, 31, 1.27, 32, 1.25, 36, 1.26, 37, 1.24, 42, 1.25, 57, 1.24, 60, 1.23, 61, 1.24, 69, 1.23, 70, 1.24, 101, 1.23, 102, 1.22, 106, 1.23, 107, 1.22, 110, 1.23, 111, 1.22, 113, 1.23, 116, 1.22, 117, 1.23, 118, 1.22, 119, 1.23, 121, 1.22, 122, 1.23, 1.22]
+});
+
+sIFR.replace(tondo_std_bold, {
+  selector: 'h3.idea',
+  css: {
+	'.sIFR-root' : { 'font-family' : 'Tondo Bold', 'color' : '#000000', 'leading' : -3, 'letter-spacing' : 0 },
+	'em' : { 'color' : '#e02129', 'font-style' : 'normal', 'leading' : 0, 'font-weight' : 'bold' }
+	},
+  wmode: 'transparent',
+   ratios:  [8, 1.42, 9, 1.33, 12, 1.35, 21, 1.3, 31, 1.27, 32, 1.25, 36, 1.26, 37, 1.24, 42, 1.25, 57, 1.24, 60, 1.23, 61, 1.24, 69, 1.23, 70, 1.24, 101, 1.23, 102, 1.22, 106, 1.23, 107, 1.22, 110, 1.23, 111, 1.22, 113, 1.23, 116, 1.22, 117, 1.23, 118, 1.22, 119, 1.23, 121, 1.22, 122, 1.23, 1.22]
+});
+
+sIFR.replace(tondo_std_bold, {
+  selector: 'div.three-col-home .callout-shadow h3',
+  css: {
+	'.sIFR-root' : { 'font-family' : 'Tondo Bold', 'color' : '#000000', 'leading' : -3, 'letter-spacing' : 0 },
+	'em' : { 'font-family' : 'Tondo Bold', 'color' : '#e02129', 'font-style' : 'normal', 'leading' : 0, 'font-weight' : 'bold' }
+	},
+  wmode: 'transparent',
+   ratios:  [8, 1.42, 9, 1.33, 12, 1.35, 21, 1.3, 31, 1.27, 32, 1.25, 36, 1.26, 37, 1.24, 42, 1.25, 57, 1.24, 60, 1.23, 61, 1.24, 69, 1.23, 70, 1.24, 101, 1.23, 102, 1.22, 106, 1.23, 107, 1.22, 110, 1.23, 111, 1.22, 113, 1.23, 116, 1.22, 117, 1.23, 118, 1.22, 119, 1.23, 121, 1.22, 122, 1.23, 1.22]
+});
+
+sIFR.replace(tondo_std_bold, {
+  selector: '.callout-shadow h3',
+  css: {
+	'.sIFR-root' : { 'color' : '#000000', 'leading' : -3, 'letter-spacing' : -1 },
+	'em' : { 'font-family' : 'Tondo Bold', 'color' : '#e02129', 'font-style' : 'normal', 'leading' : -6, 'font-weight' : 'bold' }
+	},
+  wmode: 'transparent',
+   ratios:  [8, 1.42, 9, 1.33, 12, 1.35, 21, 1.3, 31, 1.27, 32, 1.25, 36, 1.26, 37, 1.24, 42, 1.25, 57, 1.24, 60, 1.23, 61, 1.24, 69, 1.23, 70, 1.24, 101, 1.23, 102, 1.22, 106, 1.23, 107, 1.22, 110, 1.23, 111, 1.22, 113, 1.23, 116, 1.22, 117, 1.23, 118, 1.22, 119, 1.23, 121, 1.22, 122, 1.23, 1.22]
+});
+
+sIFR.replace(tondo_std_bold, {
+  selector: '#slider h2',
+  css: {
+	'.sIFR-root' : { 'font-family' : 'Tondo Bold', 'color' : '#e02129', 'letter-spacing' : '0' }
+	},
+  wmode: 'transparent',
+  ratios:  [8, 1.43, 11, 1.38, 16, 1.33, 23, 1.32, 24, 1.29, 28, 1.3, 36, 1.29, 45, 1.28, 69, 1.27, 72, 1.26, 73, 1.27, 76, 1.26, 77, 1.27, 1.26]
+});
+
+
+sIFR.replace(tondo_std_bold, {
+  selector: '.package h2',
+css: {
+            '.sIFR-root' : { 'font-family' : 'Tondo Bold', 'color' : '#07689b', 'leading' : -6, 'letter-spacing' : '0', 'font-weight' : 'bold' },
+            'a' : { 'text-decoration' : 'none',  'color' : '#07689b' },
+            'a:hover' : { 'color' : '#07689b' },
+            'em' : { 'color' : '#010101' }
+            },
+  wmode: 'transparent',
+  ratios:  [8, 1.42, 9, 1.33, 12, 1.35, 21, 1.3, 31, 1.27, 32, 1.25, 36, 1.26, 37, 1.24, 42, 1.25, 57, 1.24, 60, 1.23, 61, 1.24, 69, 1.23, 70, 1.24, 101, 1.23, 102, 1.22, 106, 1.23, 107, 1.22, 110, 1.23, 111, 1.22, 113, 1.23, 116, 1.22, 117, 1.23, 118, 1.22, 119, 1.23, 121, 1.22, 122, 1.23, 1.22]
+});
+
+sIFR.replace(tondo_std_bold, {
+  selector: 'h3.styled',
+  css: {
+	'.sIFR-root' : { 'color' : '#000000', 'leading' : -6, 'letter-spacing' : '0' },
+	'strong' : { 'font-family' : 'Tondo Bold', 'color' : '#000000', 'font-weight' : 'bold', 'letter-spacing' : 0 },
+	'em' : { 'color' : '#e02129' }
+  },
+  wmode: 'transparent',
+  fitExactly: true,
+  ratios:  [8, 1.42, 9, 1.33, 12, 1.35, 21, 1.3, 31, 1.27, 32, 1.25, 36, 1.26, 37, 1.24, 42, 1.25, 57, 1.24, 60, 1.23, 61, 1.24, 69, 1.23, 70, 1.24, 101, 1.23, 102, 1.22, 106, 1.23, 107, 1.22, 110, 1.23, 111, 1.22, 113, 1.23, 116, 1.22, 117, 1.23, 118, 1.22, 119, 1.23, 121, 1.22, 122, 1.23, 1.22]
+});
+
+sIFR.replace(tondo_std_bold, {
+  selector: '.primary h1, .primary h2, .secondary h2, .featured-content h2, #content-intro h2, .three-col-full h2, .primary-wide h1, .primary-wide h2',
+  css: {
+	'.sIFR-root' : { 'font-family' : 'Tondo Bold', 'color' : '#000000', 'letter-spacing' : '0' },
+	'em' : { 'color' : '#e02129', 'font-style' : 'normal' }
+	},
+  wmode: 'transparent',
+  offsetTop: -4,
+ /* fitExactly: true, */
+  ratios:  [8, 1.42, 9, 1.33, 12, 1.35, 21, 1.3, 31, 1.27, 32, 1.25, 36, 1.26, 37, 1.24, 42, 1.25, 57, 1.24, 60, 1.23, 61, 1.24, 69, 1.23, 70, 1.24, 101, 1.23, 102, 1.22, 106, 1.23, 107, 1.22, 110, 1.23, 111, 1.22, 113, 1.23, 116, 1.22, 117, 1.23, 118, 1.22, 119, 1.23, 121, 1.22, 122, 1.23, 1.22]
+});
+
+sIFR.replace(tondoBold, {
+  selector: 'p.counter b',
+  css: {
+	'.sIFR-root' : { 'color' : '#56abd9' }
+	},
+	forceWidth: true, fitExactly: true, forceSingleLine: true,
+ 	 wmode: 'transparent'
+});

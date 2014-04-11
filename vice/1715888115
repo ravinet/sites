@@ -1,0 +1,77 @@
+PHTTP50.16.211.237"î
+3GET /assets/5ca7eb07/listview/styles.css HTTP/1.1
+Host: www.vice.com
+Connection: keep-alive
+Accept: text/css,*/*;q=0.1
+vUser-Agent: Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/31.0.1650.63 Safari/537.36
+$Referer: http://www.vice.com/en_us
+$Accept-Encoding: gzip,deflate,sdch
+!Accept-Language: en-US,en;q=0.8
+
+*Ú
+HTTP/1.1 200 OK
+Accept-Ranges: bytes
+Content-Type: text/css
+%Date: Tue, 08 Apr 2014 22:33:57 GMT
+!ETag: "62990-2d4-4f67df7536d6a"
+.Last-Modified: Tue, 08 Apr 2014 01:33:07 GMT
+Server: nginx
+Content-Length: 724
+Connection: keep-alive
+Ö
+.list-view-loading
+{
+	background:url(loading.gif) no-repeat;
+}
+
+.list-view .summary
+{
+	margin: 0 0 5px 0;
+	text-align: right;
+}
+
+.list-view .sorter
+{
+	margin: 0 0 5px 0;
+	text-align: right;
+}
+
+.list-view .pager
+{
+	margin: 5px 0 0 0;
+	text-align: right;
+}
+
+.list-view .sorter
+{
+	font-size: 0.9em;
+}
+
+.list-view .sorter ul
+{
+	display: inline;
+	list-style-image:none;
+	list-style-position:outside;
+	list-style-type:none;
+	margin:0;
+	padding:0;
+}
+
+.list-view .sorter li
+{
+	display: inline;
+	margin: 0 0 0 5px;
+	padding: 0;
+}
+
+.list-view .sorter a.asc
+{
+	background:url(up.gif) right center no-repeat;
+	padding-right: 10px;
+}
+
+.list-view .sorter a.desc
+{
+	background:url(down.gif) right center no-repeat;
+	padding-right: 10px;
+}

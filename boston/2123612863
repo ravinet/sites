@@ -1,0 +1,25 @@
+PHTTP68.67.152.217"Î
+xGET /getuid?http://a.dpmsrv.com/dpmpxl/index.php?id=%24UID&cl=66&sn=boston.com&r=955327&q=imp&_=1397243623008 HTTP/1.1
+Host: ib.adnxs.com
+Connection: keep-alive
+Accept: */*
+vUser-Agent: Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/31.0.1650.63 Safari/537.36
+!Referer: http://www.boston.com/
+$Accept-Encoding: gzip,deflate,sdch
+!Accept-Language: en-US,en;q=0.8
++Cookie: uuid2=5964647939178028370; sess=1
+
+*ß
+HTTP/1.1 302 Found
+,Cache-Control: no-store, no-cache, private
+Pragma: no-cache
+(Expires: Sat, 15 Nov 2008 16:00:00 GMT
+†P3P: policyref="http://cdn.adnxs.com/w3c/policy/p3p.xml", CP="NOI DSP COR ADM PSAo PSDo OURo SAMo UNRo OTRo BUS COM NAV DEM STA PRE"
+X-XSS-Protection: 0
+sSet-Cookie: uuid2=5964647939178028370; path=/; expires=Thu, 10-Jul-2014 19:13:42 GMT; domain=.adnxs.com; HttpOnly
+`Set-Cookie: sess=1; path=/; expires=Sat, 12-Apr-2014 19:13:42 GMT; domain=.adnxs.com; HttpOnly
+zLocation: http://a.dpmsrv.com/dpmpxl/index.php?id=5964647939178028370&cl=66&sn=boston.com&r=955327&q=imp&_=1397243623008
+(Content-Type: text/html; charset=utf-8
+%Date: Fri, 11 Apr 2014 19:13:42 GMT
+Content-Length: 0
+

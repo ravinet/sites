@@ -1,0 +1,212 @@
+PHTTP54.214.46.54"Ý
+!GET /pix/1518?type=pos HTTP/1.1
+Host: tags.mediaforge.com
+Connection: keep-alive
+TAccept: text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8
+vUser-Agent: Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/31.0.1650.63 Safari/537.36
+"Referer: http://www.rakuten.com/
+$Accept-Encoding: gzip,deflate,sdch
+!Accept-Language: en-US,en;q=0.8
+BCookie: uID=hHMCcOMRa7+dAQKMmK1R6Q==; SERVERID="TV4(i-2d4bbf25)"
+
+*ªA
+HTTP/1.1 200 OK
+Accept-Ranges: bytes
+Cache-Control: no-store
+Content-Length: 7933
+Content-Type: text/html
+.Last-Modified: Tue, 08 Apr 2014 21:12:46 GMT
+OP3p: policyref="/p3p.xml", CP="DSP NOI ADM PSAo PSDo OUR BUS NAV COM UNI INT"
+Pragma: no-cache
+qSet-Cookie: uID=hHMCcOMRa7+dAQKMmK1R6Q==; Expires=Wed, 08 Apr 2015 22:16:31 UTC; Domain=.mediaforge.com; Path=/
+%Date: Tue, 08 Apr 2014 22:16:31 GMT
+ÿ=
+<html>
+  <head>
+  </head>
+  <body>  
+    <div id="mf_pix_div"></div>
+    <script type="text/javascript">
+      (function(doc) {
+        createCookie = function(name, value, days) {
+          if (days) {
+            var date = new Date();
+            date.setTime(date.getTime() + (days * 24 * 60 * 60 * 1000));
+            var expires = "; expires=" + date.toGMTString();
+          }
+          else var expires = "";
+          document.cookie = name + "=" + value + expires + ";path=/;domain=.mediaforge.com;";
+        }
+        cleanCookies = function(cookie_name) {
+          var ca = doc.cookie.split(';');
+          var cookie_array = [];
+          var max_merchant_keep = 10;
+          // find pID and split cookie value into array
+          for (var i = 0; i < ca.length; i++) {
+            var c = ca[i];
+            while (c.charAt(0) == ' ') c = c.substring(1, c.length);
+            if (c.indexOf(cookie_name) == 0) {
+              cookie_array = c.substring(cookie_name.length + 1).split('|');
+              break
+            }
+          }
+          // go through each mid,value in the cookie_array
+          var cookie_hash = {};
+          for (var count = 0; count < cookie_array.length; count++) {
+            // split the mid from the value
+            var comma_idx = cookie_array[count].indexOf(',');
+            if (comma_idx != -1) {
+              var clean_value = cookie_array[count].replace(/,{2,}/g,',');
+              if (clean_value.charAt(clean_value.length - 1) == ",") clean_value = clean_value.slice(0, -1);
+              
+              var mid = clean_value.substr(0, comma_idx);
+              var value = clean_value.substr(comma_idx + 1);
+              if (value.length > 0) {  
+                if (mid in cookie_hash) {
+                  // already have the mid in the hash table
+                  var existing_array = cookie_hash[mid];
+                  var found = false;
+                  // go through the array and only add unique entries
+                  for (var i = 0; i < existing_array.length; i++) {
+                    if (existing_array[i] == value) existing_array.splice(i, 1);
+                  }
+                  existing_array[existing_array.length] = value;
+                  cookie_hash[mid] = existing_array;
+                }
+                else {
+                  // new hash entry for mid
+                  var new_array = new Array;
+                  new_array[0] = value;
+                  cookie_hash[mid] = new_array;
+                }
+              }
+            }
+          }
+          // push the merchant_id into the array if it doesn't exist and we are cleaning the pID
+          var new_mid = '1518';
+          if (cookie_name == 'pID' && !(new_mid in cookie_hash)) {
+            cookie_hash[new_mid] = '0';
+          }
+          // go through mid hash and create the cookie string on the last 10 value if applicable
+          var new_value = '';
+          for (var mid in cookie_hash) {
+            var existing_array = cookie_hash[mid];
+            var start_count = (existing_array.length > max_merchant_keep) ? existing_array.length - max_merchant_keep : 0;
+            for (var array_count = start_count; array_count < existing_array.length; array_count++) {
+              new_value += (new_value.length == 0) ? mid + ',' + existing_array[array_count] : '|' + mid + ',' + existing_array[array_count];
+            }
+          }          
+          createCookie(cookie_name, new_value, 365);
+        }
+        checkForProductCount = function(cookie_name, min_prod_count) {
+          var result = false;
+          var nameEQ = "pID=";
+          var ca = doc.cookie.split(';');
+          for (var i = 0; i < ca.length; i++) {
+            var c = ca[i];
+            while (c.charAt(0) == ' ') c = c.substring(1, c.length);
+            if (c.indexOf(nameEQ) == 0) {
+              var cookie_array = c.substring(cookie_name.length + 1).split('|');
+              var mid = '1518';
+              var mid_count = 0;
+              for (var prod_idx in cookie_array) {
+                if (cookie_array[prod_idx].split(',')[0] == mid && cookie_array[prod_idx].split(',')[1] != 0) mid_count += 1;
+              }
+              if (mid_count >= min_prod_count) result = true;
+            }
+          }
+          return result;
+        }
+        optOut = function() {
+          var result = false;
+          var nameEQ = "opt-out=";
+          var ca = doc.cookie.split(';');
+          for (var i = 0; i < ca.length; i++) {
+            var c = ca[i];
+            while (c.charAt(0) == ' ') c = c.substring(1, c.length);
+            if (c.indexOf(nameEQ) == 0) result = true;
+          } 
+          return result;
+        }
+        processtags = function() {
+          var DIV_ID = 'mf_pix_div';
+          var content = '';
+          var parameters = location.search.split('&');
+          var mf_price = "";
+          var mf_ordernumber = "";
+          var mf_skulist = "";
+          var mf_qlist = "";
+          var mf_amtlist = "";
+          var mf_namelist = "";
+          for (var param_index = 0; param_index < parameters.length; param_index++) {
+            if (parameters[param_index].indexOf('orderNumber') != -1) {
+              var split_query = parameters[param_index].split('=');
+              if (split_query.length == 2) {
+                mf_ordernumber = split_query[1];
+              }
+            }
+            if (parameters[param_index].indexOf('price') != -1) {
+              var split_query = parameters[param_index].split('=');
+              if (split_query.length == 2) {
+                mf_price = split_query[1];
+              }
+            }
+            if (parameters[param_index].indexOf('skulist') != -1) {
+              var split_query = parameters[param_index].split('=');
+              if (split_query.length == 2) {
+                mf_skulist = split_query[1];
+              }
+            }
+            if (parameters[param_index].indexOf('qlist') != -1) {
+              var split_query = parameters[param_index].split('=');
+              if (split_query.length == 2) {
+                mf_qlist = split_query[1];
+              }
+            }
+            if (parameters[param_index].indexOf('amtlist') != -1) {
+              var split_query = parameters[param_index].split('=');
+              if (split_query.length == 2) {
+                mf_amtlist = split_query[1];
+              }
+            }
+            if (parameters[param_index].indexOf('namelist') != -1) {
+              var split_query = parameters[param_index].split('=');
+              if (split_query.length == 2) {
+                mf_namelist = split_query[1];
+              }
+            }
+          }
+          var tags = {
+            
+              
+                "1518_20":"pixel.mathtag.com/event/img?mt_id=243449&mt_adid=112854&v1=&v2=&v3=&s1=&s2=&s3=",
+              
+                "1518_33":"secure.adnxs.com/seg?add=816607&t=2"
+              
+            
+          };
+          for(var tag_id in tags) {
+            content += "<img id=\"" + tag_id + "\" src=\"//" + tags[tag_id] + "\" height=\"0\" width=\"0\"/>";
+          }
+          document.getElementById(DIV_ID).innerHTML = content;
+          // var c3script = document.createElement('script');
+          // var c3src = "//680-ct.c3tag.com/c3metrics-680.js";
+          // if (location.search.indexOf("orderNumber") != -1) c3src = c3src + "?c3_transaction=" + mf_ordernumber + "&order_amount=" + mf_price;
+          // c3script.setAttribute('type', 'text/javascript');
+          // c3script.src = c3src;
+          // document.getElementById(DIV_ID).appendChild(c3script);
+        }
+        if (optOut() == false) {
+          processtags();
+          cleanCookies('pID');
+          cleanCookies('cID');
+        }
+        else {
+          createCookie('pID', '', -1);
+          createCookie('cID', '', -1);
+          createCookie('uID', '', -1);
+        }
+      })(document);
+    </script>
+  </body>
+</html>

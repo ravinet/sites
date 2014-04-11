@@ -1,0 +1,26 @@
+PHTTP68.67.152.208"
+.GET /a_usersync?cbfn=ANX_async_load HTTP/1.1
+Host: ib.adnxs.com
+Connection: keep-alive
+Accept: */*
+vUser-Agent: Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/31.0.1650.63 Safari/537.36
+KReferer: http://ib.adnxs.com/bounce?%2Ftt%3Fid%3D2447144%26size%3D160x600
+$Accept-Encoding: gzip,deflate,sdch
+!Accept-Language: en-US,en;q=0.8
+ŒCookie: uuid2=6291422438075163582; sess=1; icu=ChIIvrwUEAoYASABKAEwiuORmgUQiuORmgUYAA..; anj=dTM7k!M4.NCxrEQDgEREfye$4n`sG>%phwSNL8fC0oLDJ
+
+*ƒ
+HTTP/1.1 200 OK
+,Cache-Control: no-store, no-cache, private
+Pragma: no-cache
+(Expires: Sat, 15 Nov 2008 16:00:00 GMT
+†P3P: policyref="http://cdn.adnxs.com/w3c/policy/p3p.xml", CP="NOI DSP COR ADM PSAo PSDo OURo SAMo UNRo OTRo BUS COM NAV DEM STA PRE"
+X-XSS-Protection: 0
+sSet-Cookie: uuid2=6291422438075163582; path=/; expires=Mon, 07-Jul-2014 22:00:42 GMT; domain=.adnxs.com; HttpOnly
+`Set-Cookie: sess=1; path=/; expires=Wed, 09-Apr-2014 22:00:42 GMT; domain=.adnxs.com; HttpOnly
+¤Set-Cookie: anj=dTM7k!M4/8DYRWSDgEREfye$4n`sG>%phwSNS+v_o5U_uNMA<KQ.PFG8B.a%!@@.+'8'Za; path=/; expires=Mon, 07-Jul-2014 22:00:42 GMT; domain=.adnxs.com; HttpOnly
+&Content-Type: application/javascript
+%Date: Tue, 08 Apr 2014 22:00:42 GMT
+Content-Length: 124
+~
+ANX_async_load({"url":"https://www.facebook.com/fr/u.php?p=391363987594223&m=6291422438075163582", "c":9, "tagtype":"img"});

@@ -1,0 +1,27 @@
+PHTTP66.102.255.51"ß
+GET / HTTP/1.1
+Host: www.taobao.com
+Connection: keep-alive
+TAccept: text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8
+vUser-Agent: Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/31.0.1650.63 Safari/537.36
+$Accept-Encoding: gzip,deflate,sdch
+!Accept-Language: en-US,en;q=0.8
+
+*Ù
+HTTP/1.1 302 Found
+Server: Tengine
+%Date: Tue, 08 Apr 2014 22:26:47 GMT
+Content-Type: text/html
+Content-Length: 260
+2Location: http://www.taobao.com/index_global.php
+Connection: keep-alive
+†
+<!DOCTYPE HTML PUBLIC "-//IETF//DTD HTML 2.0//EN">
+<html>
+<head><title>302 Found</title></head>
+<body bgcolor="white">
+<h1>302 Found</h1>
+<p>The requested resource resides temporarily under a different URI.</p>
+<hr/>Powered by Tengine
+</body>
+</html>

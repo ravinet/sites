@@ -1,0 +1,46 @@
+PHTTP69.25.24.23"ë
+•GET /a/api/ads.jsonp?enc=url&account_id=9707&site_id=17955&zone_id=50983&size_id=15&cb=0.6968126562424004&rp_floor=1.3&tk_st=1&rf=http%3A//quickmensguide.com/adserver/gla/300w.html&rp_s=c&tk_code=affiliate-1634853800&tg_i.deals=uktab%2Cb23031%2C&p_screen_res=800x600 HTTP/1.1
+'Host: optimized-by.rubiconproject.com
+Connection: keep-alive
+Accept: */*
+vUser-Agent: Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/31.0.1650.63 Safari/537.36
+:Referer: http://quickmensguide.com/adserver/gla/300.html
+$Accept-Encoding: gzip,deflate,sdch
+!Accept-Language: en-US,en;q=0.8
+
+*§
+HTTP/1.1 200 OK
+%Date: Tue, 08 Apr 2014 22:15:28 GMT
+Server: RAS
+tSet-Cookie: nus_2528=0.00; expires=Wed, 09-Apr-2014 00:15:28 GMT; max-age=7200; path=/; domain=.rubiconproject.com
+¥Set-Cookie: ruid=591e6e0753447500801e4c373902ea^1^1396995328^2149469239; Domain=.rubiconproject.com; Path=/; Expires=Mon, 07-Jul-2014 22:15:28 GMT; Max-Age=7776000
+¯Set-Cookie: rsid=C8+RQy3/opJVHvT6YQYEzrJxZbOI0QgrrOiWDk+w9yxJAt2YdR/5IMJfHKV89ZpgsrNOp3FzqHqnco4tdeVZVP8dzd1rdnqwN5iZvZeCF+xgPIt0ol6+G1VZ; Domain=.rubiconproject.com; Path=/
+sSet-Cookie: rdk=9707/17955; Domain=.rubiconproject.com; Path=/; Expires=Tue, 08-Apr-2014 22:16:28 GMT; Max-Age=60
+lSet-Cookie: rdk15=0; Domain=.rubiconproject.com; Path=/; Expires=Tue, 08-Apr-2014 22:15:38 GMT; Max-Age=10
+nSet-Cookie: ses15=; Domain=.rubiconproject.com; Path=/; Expires=Wed, 09-Apr-2014 11:59:59 GMT; Max-Age=49471
+uSet-Cookie: vis15=17955^1; Domain=.rubiconproject.com; Path=/; Expires=Wed, 09-Apr-2014 11:59:59 GMT; Max-Age=49471
+oSet-Cookie: csi15=; Domain=.rubiconproject.com; Path=/; Expires=Tue, 15-Apr-2014 22:15:28 GMT; Max-Age=604800
+oSet-Cookie: csc15=; Domain=.rubiconproject.com; Path=/; Expires=Tue, 15-Apr-2014 22:15:28 GMT; Max-Age=604800
+?P3P: CP="NOI CURa ADMa DEVa TAIa OUR BUS IND UNI COM NAV INT"
+?Cache-Control: no-cache, no-store, max-age=0, must-revalidate
+Pragma: no-cache
+(Expires: Wed, 17 Sep 1975 21:32:10 GMT
+Keep-Alive: timeout=5, max=27
+Connection: Keep-Alive
+Transfer-Encoding: chunked
+Content-Type: text/javascript
+¥
+117
+rp_ad_response={
+"status":"ok",
+"tracking":"affiliate-1634853800",
+"inventory":{"deals":"uktab,b23031,"},
+"ads":[{
+"status":"no-ads",
+"reason":"floor-not-met",
+"impression_id":"8ddf76f1-5e2f-4699-bd3e-de95628ab511"
+}]
+};
+try{rp_onAdResponseLoaded(rp_ad_response);}catch(ignore){}
+0
+

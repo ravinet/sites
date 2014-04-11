@@ -1,0 +1,26 @@
+PHTTP23.45.35.62"à
+GET / HTTP/1.1
+Host: www.toysrus.com
+Connection: keep-alive
+TAccept: text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8
+vUser-Agent: Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/31.0.1650.63 Safari/537.36
+$Accept-Encoding: gzip,deflate,sdch
+!Accept-Language: en-US,en;q=0.8
+
+*¦
+ HTTP/1.1 301 Moved Permanently
+Server: Apache/2.0.64 (Unix)
+DLocation: http://www.toysrus.com/shop/index.jsp?categoryId=2255956
+Content-Length: 264
+-Content-Type: text/html; charset=iso-8859-1
+%Date: Tue, 08 Apr 2014 22:29:01 GMT
+Connection: keep-alive
+X-N: S
+Š
+<!DOCTYPE HTML PUBLIC "-//IETF//DTD HTML 2.0//EN">
+<html><head>
+<title>301 Moved Permanently</title>
+</head><body>
+<h1>Moved Permanently</h1>
+<p>The document has moved <a href="http://www.toysrus.com/shop/index.jsp?categoryId=2255956">here</a>.</p>
+</body></html>

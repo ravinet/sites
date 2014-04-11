@@ -1,0 +1,38 @@
+PHTTP23.15.9.153"ë
+3GET /z/us_1@141015/manifest.f4m?hdcore=1 HTTP/1.1
+ Host: blive_us-lh.akamaihd.net
+Connection: keep-alive
+vUser-Agent: Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/31.0.1650.63 Safari/537.36
+Accept: */*
+$Referer: http://www.bloomberg.com/
+$Accept-Encoding: gzip,deflate,sdch
+!Accept-Language: en-US,en;q=0.8
+
+*¨	
+HTTP/1.1 200 OK
+Server: AkamaiGHost
+Mime-Version: 1.0
+Content-Type: video/f4m
+Content-Length: 759
+.Last-Modified: Tue, 08 Apr 2014 05:33:36 GMT
+(Expires: Tue, 08 Apr 2014 21:31:20 GMT
+$Cache-Control: max-age=0, no-cache
+Pragma: no-cache
+%Date: Tue, 08 Apr 2014 21:31:20 GMT
+Connection: keep-alive
+dSet-Cookie: _alid_=3Ow6z5R5PBAEbuR7udlGgA==; path=/z/us_1@141015/; domain=blive_us-lh.akamaihd.net
+ù
+<?xml version="1.0" encoding="UTF-8"?>
+<manifest xmlns="http://ns.adobe.com/f4m/1.0" xmlns:akamai="uri:akamai.com/f4m/1.0">
+  <akamai:version>2.0</akamai:version>
+  <akamai:bw>5000</akamai:bw>
+  <id>us_1</id>
+  <streamType>live</streamType>
+  <akamai:streamType>live</akamai:streamType>
+  <streamBaseTime>1379077549.637</streamBaseTime>
+  <rollingEndOffset>220</rollingEndOffset>
+  <bootstrapInfo profile="named" id="bootstrap_34" url="34_35e855951c61a01d-p.bootstrap"/>
+  <media bitrate="34" url="34_35e855951c61a01d-p_" bootstrapInfoId="bootstrap_34">
+    <metadata>AgAKb25NZXRhRGF0YQMABXdpZHRoAEB0AAAAAAAAAAZoZWlnaHQAQGaAAAAAAAAACWZyYW1lcmF0ZQBALfhT4lVrKQAMdmlkZW9jb2RlY2lkAEAcAAAAAAAAAA12aWRlb2RhdGFyYXRlAEBBAAAAAAAAAAAJ</metadata>
+  </media>
+</manifest>

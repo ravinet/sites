@@ -1,0 +1,24 @@
+PHTTP
+18.7.20.70"º
+SGET /WebResource/Scripts/USA/TP_OpinionLab/oo_conf_search.v1.w.8806.0.js HTTP/1.1
+Host: images10.newegg.com
+Connection: keep-alive
+Accept: */*
+vUser-Agent: Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/31.0.1650.63 Safari/537.36
+!Referer: http://www.newegg.com/
+$Accept-Encoding: gzip,deflate,sdch
+!Accept-Language: en-US,en;q=0.8
+´Cookie: mt.v=2.2022544403.1396994772664; NV%5FCONFIGURATION=#5%7B%22Sites%22%3A%7B%22USA%22%3A%7B%22Values%22%3A%7B%22wd%22%3A%220%22%2C%22w58%22%3A%22USD%22%2C%22w57%22%3A%22USA%22%7D%2C%22Exp%22%3A%221483394772%22%7D%7D%7D; NV%5FFV=#5%7B%22Sites%22%3A%7B%22USA%22%3A%7B%22Values%22%3A%7B%22RememberLanguage%22%3A%22en%22%7D%2C%22Exp%22%3A%221397081172%22%7D%7D%7D; NV%5FDVINFO=#5%7B%22Sites%22%3A%7B%22USA%22%3A%7B%22Values%22%3A%7B%22w19%22%3A%22Y%22%7D%2C%22Exp%22%3A%221397081172%22%7D%7D%7D; NVTC=248326808.0001.867337356.1396994772.1396994772.1396994772.1
+
+*Ó
+HTTP/1.1 200 OK
+"Cache-Control: max-age=946080000
+(Expires: Sun, 29 Nov 2043 17:12:37 GMT
+&Content-Type: application/javascript
+Content-Length: 706
+X-Served-By: e3cac05
+X-Cache-Hits: 4
+%Date: Tue, 08 Apr 2014 22:06:12 GMT
+Connection: keep-alive
+Ä
+/*Released: 7/2/2013. Compiled 07/02/2013 08:59:24 AM -0500Branch: master e8b14478ef25a43fea6f551ae5eebb8749cb8206Components: FullThe following code is Copyright 1998-2013 Opinionlab, Inc.  All rights reserved. Unauthorized use is prohibited. This product and other products of OpinionLab, Inc. are protected by U.S. Patent No. 6606581, 6421724, 6785717 B1 and other patents pending. http://www.opinionlab*//* Search configuration */var oo_search = new OOo.Ocode({onPageCard: {closeWithOverlay: {}}, referrerRewrite: {searchPattern: /:\/\/[^\/]*/, replacePattern: '://search.newegg.com'}});/*Add the following code to the click event of any element/button to trigger the appropriate card:oo_search.show()*/

@@ -1,0 +1,19 @@
+PHTTP54.243.246.193"—
+9GET /collect/?fmt=gif&url=monster.com&pid=2146 HTTP/1.1
+Host: www.bizographics.com
+Connection: keep-alive
+Accept: image/webp,*/*;q=0.8
+vUser-Agent: Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/31.0.1650.63 Safari/537.36
+=Referer: http://fast.monster.demdex.net/dest4.html?d_nsid=0
+$Accept-Encoding: gzip,deflate,sdch
+!Accept-Language: en-US,en;q=0.8
+
+*è
+HTTP/1.1 302 Found
+%Date: Tue, 08 Apr 2014 22:04:40 GMT
+ZLocation: http://www.bizographics.com/collect/?fmt=gif&url=monster.com&pid=2146&3pc=true
+Server: nginx/1.2.0
+‚Set-Cookie: BizoID=7b4f049e-a939-420b-9faf-f19ffb4ff9df; Domain=.bizographics.com; Expires=Wed, 08-Oct-2014 10:04:40 GMT; Path=/
+Content-Length: 0
+Connection: keep-alive
+

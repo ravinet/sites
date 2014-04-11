@@ -1,0 +1,137 @@
+PHTTP23.202.204.11"Ç
+LGET /sites/all/themes/omega/omega/js/omega-mediaqueries.js?n3o8vv HTTP/1.1
+Host: www.cj.com
+Connection: keep-alive
+Accept: */*
+vUser-Agent: Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/31.0.1650.63 Safari/537.36
+Referer: http://www.cj.com/
+$Accept-Encoding: gzip,deflate,sdch
+!Accept-Language: en-US,en;q=0.8
+ÕCookie: has_js=1; __utma=168269822.1249994285.1396992847.1396992847.1396992847.1; __utmb=168269822.1.10.1396992847; __utmc=168269822; __utmz=168269822.1396992847.1.1.utmcsr=(direct)|utmccn=(direct)|utmcmd=(none)
+
+*œ
+HTTP/1.1 200 OK
+Server: Apache
+.Last-Modified: Thu, 20 Dec 2012 17:02:57 GMT
+ ETag: "bdd9-d3f-4d14bb3db6369"
+Accept-Ranges: bytes
+Content-Length: 3391
+&Content-Type: application/javascript
+Cache-Control: max-age=900
+(Expires: Tue, 08 Apr 2014 21:49:06 GMT
+%Date: Tue, 08 Apr 2014 21:34:06 GMT
+Connection: keep-alive
+Á
+/**
+ * @todo
+ */
+
+Drupal.omega = Drupal.omega || {};
+
+(function($) {
+  /**
+   * @todo
+   */
+  var current;
+  var previous;
+  
+  /**
+   * @todo
+   */
+  var setCurrentLayout = function (index) {
+    index = parseInt(index);
+    previous = current;
+    current = Drupal.settings.omega.layouts.order.hasOwnProperty(index) ? Drupal.settings.omega.layouts.order[index] : 'mobile';
+
+    if (previous != current) {      
+      $('body').removeClass('responsive-layout-' + previous).addClass('responsive-layout-' + current);      
+      $.event.trigger('responsivelayout', {from: previous, to: current});
+    }
+  };
+  
+  /**
+   * @todo
+   */
+  Drupal.omega.getCurrentLayout = function () {
+    return current;
+  };
+  
+  /**
+   * @todo
+   */
+  Drupal.omega.getPreviousLayout = function () {
+    return previous;
+  };
+  
+  /**
+   * @todo
+   */
+  Drupal.omega.crappyBrowser = function () {
+    return $.browser.msie && parseInt($.browser.version, 10) < 9;
+  };
+  
+  /**
+   * @todo
+   */
+  Drupal.omega.checkLayout = function (layout) {
+    if (Drupal.settings.omega.layouts.queries.hasOwnProperty(layout) && Drupal.settings.omega.layouts.queries[layout]) {
+      var output = Drupal.omega.checkQuery(Drupal.settings.omega.layouts.queries[layout]);
+      
+      if (!output && layout == Drupal.settings.omega.layouts.primary) {
+        var dummy = $('<div id="omega-check-query"></div>').prependTo('body');       
+
+        dummy.append('<style media="all">#omega-check-query { position: relative; z-index: -1; }</style>');
+        dummy.append('<!--[if (lt IE 9)&(!IEMobile)]><style media="all">#omega-check-query { z-index: 100; }</style><![endif]-->');
+        
+        output = parseInt(dummy.css('z-index')) == 100;
+
+        dummy.remove();
+      }
+      
+      return output;
+    }
+
+    return false;
+  };
+  
+  /**
+   * @todo
+   */
+  Drupal.omega.checkQuery = function (query) {
+    var dummy = $('<div id="omega-check-query"></div>').prependTo('body');       
+    
+    dummy.append('<style media="all">#omega-check-query { position: relative; z-index: -1; }</style>');
+    dummy.append('<style media="' + query + '">#omega-check-query { z-index: 100; }</style>');
+
+    var output = parseInt(dummy.css('z-index')) == 100;
+    
+    dummy.remove();
+
+    return output;
+  };
+  
+  /**
+   * @todo
+   */
+  Drupal.behaviors.omegaMediaQueries = {
+    attach: function (context) {
+      $('body', context).once('omega-mediaqueries', function () {
+        var primary = $.inArray(Drupal.settings.omega.layouts.primary, Drupal.settings.omega.layouts.order);
+        var dummy = $('<div id="omega-media-query-dummy"></div>').prependTo('body');
+
+        dummy.append('<style media="all">#omega-media-query-dummy { position: relative; z-index: -1; }</style>');
+        dummy.append('<!--[if (lt IE 9)&(!IEMobile)]><style media="all">#omega-media-query-dummy { z-index: ' + primary + '; }</style><![endif]-->');
+
+        for (var i in Drupal.settings.omega.layouts.order) {
+          dummy.append('<style media="' + Drupal.settings.omega.layouts.queries[Drupal.settings.omega.layouts.order[i]] + '">#omega-media-query-dummy { z-index: ' + i + '; }</style>');
+        }
+
+        $(window).bind('resize.omegamediaqueries', function () {
+          setCurrentLayout(dummy.css('z-index'));
+        }).load(function () {
+          $(this).trigger('resize.omegamediaqueries');
+        });
+      });
+    }
+  };
+})(jQuery);

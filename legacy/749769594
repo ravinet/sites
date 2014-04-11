@@ -1,0 +1,23 @@
+PHTTP64.94.107.46"…
+QGET /api/segments.json?a=p-57OGVHgSOoedo&callback=aa.updatekvquantcast HTTP/1.1
+Host: pixel.quantserve.com
+Connection: keep-alive
+Accept: */*
+vUser-Agent: Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/31.0.1650.63 Safari/537.36
+$Referer: http://www.legacy.com/ns/
+$Accept-Encoding: gzip,deflate,sdch
+!Accept-Language: en-US,en;q=0.8
+
+*ð
+HTTP/1.1 200 OK
+Connection: close
+(Content-Type: application/x-javascript
+rSet-Cookie: mc=53480b0a-4e3de-01ea0-05aaa; expires=Sun, 11-Oct-2015 15:32:26 GMT; path=/; domain=.quantserve.com
+IP3P: CP="NOI DSP COR NID CURa ADMa DEVa PSAo PSDo OUR SAMa IND COM NAV"
+3Cache-Control: private, no-transform, max-age=600
+(Expires: Fri, 11 Apr 2014 15:42:26 GMT
+Content-Length: 49
+%Date: Fri, 11 Apr 2014 15:32:26 GMT
+Server: QS
+3
+aa.updatekvquantcast({"segments":[{"id":"D"}]});

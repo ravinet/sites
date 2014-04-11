@@ -1,0 +1,25 @@
+PHTTP107.20.244.110"í
+ŸGET /v2/profile.redirect?api_key=d8635cdd75eb4f83917f2c953bc214f0&callback_url=http%3A%2F%2Ftap.rubiconproject.com/oz/feeds/bizo/profile%3F&3pc=true HTTP/1.1
+Host: api.bizographics.com
+Connection: keep-alive
+Accept: image/webp,*/*;q=0.8
+vUser-Agent: Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/31.0.1650.63 Safari/537.36
+uReferer: http://tap2-cdn.rubiconproject.com/partner/scripts/rubicon/emily.html?rtb_ext=1&pc=8829/21314&geo=na&co=us
+$Accept-Encoding: gzip,deflate,sdch
+!Accept-Language: en-US,en;q=0.8
+5Cookie: BizoID=80151633-008b-4bb8-a15c-7e70ca61819a
+
+*‚
+HTTP/1.1 302 Found
+Cache-Control: no-cache
+%Date: Tue, 08 Apr 2014 21:25:22 GMT
+@Location: http://tap.rubiconproject.com/oz/feeds/bizo/profile?
+ZP3P: CP="NON DSP COR CURa ADMo DEVo TAIo PSAo PSDo OUR DELa IND PHY ONL UNI COM NAV DEM"
+Pragma: no-cache
+Server: nginx/1.2.0
+tSet-Cookie: BizoID=80151633-008b-4bb8-a15c-7e70ca61819a;Version=0;Domain=.bizographics.com;Path=/;Max-Age=15768000
+¢Set-Cookie: BizoData=vipSsUXrfhMAyjSpNgk6T39Qb1MaQBj6WAiphZG3g3wbanOGSnuTLaGrV6072jCeii2E0gtIJqCycoie;Version=0;Domain=.bizographics.com;Path=/;Max-Age=15768000
+X-Bizo-Usage: 0
+Content-Length: 0
+Connection: keep-alive
+

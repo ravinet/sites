@@ -1,0 +1,30 @@
+PHTTP
+18.7.20.69"Æ
+GET /crossdomain.xml HTTP/1.1
+Host: cdnapi.kaltura.com
+Connection: keep-alive
+vUser-Agent: Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/31.0.1650.63 Safari/537.36
+Accept: */*
+Referer: http://go.com/
+$Accept-Encoding: gzip,deflate,sdch
+!Accept-Language: en-US,en;q=0.8
+
+*è
+HTTP/1.1 200 OK
+Server: Apache
+X-Me: ny-front-api9
+.Last-Modified: Wed, 05 Feb 2014 13:21:38 GMT
+Content-Length: 392
+ Access-Control-Allow-Origin: *
+Content-Type: application/xml
+(Cache-Control: public, max-age=3383606
+(Expires: Sun, 18 May 2014 01:44:21 GMT
+%Date: Tue, 08 Apr 2014 21:50:55 GMT
+Connection: keep-alive
+Š
+<?xml version="1.0" encoding="UTF-8"?>
+<cross-domain-policy xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.adobe.com/xml/schemas/PolicyFile.xsd">
+	<allow-access-from domain="*" to-ports="*" secure="false"/>
+	<site-control permitted-cross-domain-policies="all"/>
+	<allow-http-request-headers-from domain="*" headers="*"/>
+</cross-domain-policy>

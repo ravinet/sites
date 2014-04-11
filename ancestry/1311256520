@@ -1,0 +1,24 @@
+PHTTP
+38.65.9.35"·
+uGET /Adserver/atds?getuserid=http%3A%2F%2Fums.adtechus.com%2Fmapuser%3Fproviderid%3D1027%3Buserid%3D%24UID HTTP/1.1
+Host: acuityplatform.com
+Connection: keep-alive
+Accept: image/webp,*/*;q=0.8
+vUser-Agent: Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/31.0.1650.63 Safari/537.36
+#Referer: http://www.ancestry.com/
+$Accept-Encoding: gzip,deflate,sdch
+!Accept-Language: en-US,en;q=0.8
+
+*‰
+ HTTP/1.1 302 Moved Temporarily
+Server: Apache-Coyote/1.1
+iSet-Cookie: auid=48720424023; Domain=.acuityplatform.com; Expires=Wed, 29-Apr-2082 22:30:57 GMT; Path=/
+9P3P: CP="IDC DSP COR CURa ADMa OUR IND PHY ONL COM STA"
+?Cache-Control: no-cache, no-store, max-age=0, must-revalidate
+(Expires: Thu, 01 Dec 1994 16:00:00 GMT
+Pragma: no-cache
+Connection: Close
+NLocation: http://ums.adtechus.com/mapuser?providerid=1027;userid=48720424023
+Content-Length: 0
+%Date: Fri, 11 Apr 2014 19:16:50 GMT
+

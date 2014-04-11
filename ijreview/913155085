@@ -1,0 +1,120 @@
+PHTTP69.16.175.42"ó
+/GET /slider/defs/2447144-215.css?987 HTTP/1.1
+Host: cdn.cpxinteractive.com
+Connection: keep-alive
+Accept: text/css,*/*;q=0.1
+vUser-Agent: Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/31.0.1650.63 Safari/537.36
+#Referer: http://www.ijreview.com/
+$Accept-Encoding: gzip,deflate,sdch
+!Accept-Language: en-US,en;q=0.8
+
+*“
+HTTP/1.1 200 OK
+%Date: Tue, 08 Apr 2014 22:00:41 GMT
+!Keep-Alive: timeout=10, max=100
+Connection: Keep-Alive
+Accept-Ranges: bytes
+ETag: "1395858872"
+.Last-Modified: Wed, 26 Mar 2014 18:34:32 GMT
+Cache-Control: max-age=86400
+Content-Length: 2316
+Content-Type: text/css
+7X-HW: 1396994441.dop003.ch3.t,1396994441.cds031.ch3.c
+ Access-Control-Allow-Origin: *
+Ž
+.slider * {
+  margin: 0px;
+  padding: 0px;
+}
+#slider-215.slider {
+  position: fixed;
+  z-index: 2147483647;
+  visibility: hidden;
+  width: 176px;
+  height: 602px;
+  right: 0px;
+  right: -176px;
+}
+#slider-215.slider.closed {
+  visibility: visible;
+}
+#slider-215.slider.closed.iframed {
+  right: 0px;
+}
+#slider-215.slider.open {
+  visibility: visible;
+  right: 0px;
+}
+#slider-215.slider * {
+  margin: 0px;
+  padding: 0px;
+}
+#slider-215.slider .slider-contents {
+  position: absolute;
+  z-index: 100;
+  width: 174px;
+  height: 600px;
+  right: 0px;
+  bottom: 0px;
+}
+#slider-215.slider .slider-contents > .slider-iframe {
+  position: absolute;
+  border: 1px solid #000000;
+  -webkit-box-shadow: 0 0 15px rgba(0, 0, 0, 0.25);
+  -moz-box-shadow: 0 0 15px rgba(0, 0, 0, 0.25);
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.25);
+  right: 0px;
+  bottom: 0px;
+  width: 160px;
+  height: 600px;
+}
+#slider-215.slider .slider-contents > .slider-iframe > iframe {
+  border: 0px;
+  width: 160px;
+  height: 600px;
+}
+#slider-215.slider .slider-contents > .slider-navigation {
+  position: absolute;
+  width: 14px;
+  height: 600px;
+  left: 0px;
+  top: 0px;
+}
+#slider-215.slider .slider-contents > .slider-navigation > .slider-navigation-logo {
+  display: none;
+}
+#slider-215.slider .slider-contents > .slider-navigation > .slider-toggle {
+  position: absolute;
+  width: 14px;
+  height: 32px;
+  top: -2px;
+  left: -2px;
+}
+#slider-215.slider .slider-contents > .slider-navigation > .slider-toggle > a {
+  display: block;
+  width: 14px;
+  height: 32px;
+}
+#slider-215.slider .slider-contents > .slider-navigation > .slider-toggle > a > span {
+  display: none;
+  text-indent: -9999px;
+  width: 14px;
+  height: 32px;
+  background-repeat: no-repeat;
+  background-position: top left;
+  text-align: left;
+}
+#slider-215.slider .slider-tab-toggle {
+  display: none;
+}
+#slider-215.slider .slider-tab-toggle * {
+  display: none;
+}
+#slider-215.slider.open > .slider-contents > .slider-navigation > .slider-toggle a > span.hide {
+  background-image: url(//cdn.cpxinteractive.com/slider/lib/images/hideAdLeft.gif);
+  display: block !important;
+}
+#slider-215.slider.closed > .slider-contents > .slider-navigation > .slider-toggle a > span.show {
+  background-image: url(//cdn.cpxinteractive.com/slider/lib/images/showAdLeft.gif);
+  display: block !important;
+}

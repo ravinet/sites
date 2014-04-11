@@ -1,0 +1,23 @@
+»HTTPS176.32.100.5"®
+YGET /iui3?d=3p-hbg&ex-src=www.city.com&ex-hargs=v%3D1.0%3Bc%3DCITY%3Bp%3DACQHI HTTP/1.1
+Host: s.amazon-adsystem.com
+Connection: keep-alive
+Accept: image/webp,*/*;q=0.8
+vUser-Agent: Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/31.0.1650.63 Safari/537.36
+3Referer: https://online.citibank.com/US/Welcome.c
+$Accept-Encoding: gzip,deflate,sdch
+!Accept-Language: en-US,en;q=0.8
+
+*à
+HTTP/1.1 302 Found
+%Date: Tue, 08 Apr 2014 21:33:58 GMT
+Server: Server
+TCache-Control: max-age=0, no-cache, no-store, private, must-revalidate, s-maxage=0
+Pragma: no-cache
+(Expires: Thu, 01 Jan 1970 00:00:00 GMT
+Xp3p: policyref="http://www.amazon.com/w3c/p3p.xml", CP="PSAo PSDo OUR SAM OTR DSP COR"
+yLocation: https://s.amazon-adsystem.com/iui3?d=3p-hbg&ex-src=www.city.com&ex-hargs=v%3D1.0%3Bc%3DCITY%3Bp%3DACQHI&dcc=t
+Content-Length: 0
+ySet-Cookie: ad-id=Azx1xqivCktrphXpeVV36S8|t; Domain=.amazon-adsystem.com; Expires=Thu, 01-Jan-2037 00:00:01 GMT; Path=/
+Vary: User-Agent
+

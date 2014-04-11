@@ -1,0 +1,35 @@
+ªHTTPS137.117.90.63"˘
+DGET /cobrowse/CobrowseJS.ashx?group=15362&site=production HTTP/1.1
+Host: ancestry.glancecdn.net
+Connection: keep-alive
+Accept: */*
+vUser-Agent: Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/31.0.1650.63 Safari/537.36
+#Referer: http://www.ancestry.com/
+$Accept-Encoding: gzip,deflate,sdch
+!Accept-Language: en-US,en;q=0.8
+
+*Å	
+HTTP/1.1 302 Found
+Cache-Control: max-age=86400
+Content-Length: 679
+7Content-Type: application/x-javascript; charset=utf-8
+PLocation: https://glance.blob.core.windows.net/cobrowse/js/Cobrowse_2.10.1M.js
+Server: Microsoft-IIS/8.0
+X-AspNet-Version: 4.0.30319
+X-Powered-By: ASP.NET
+Set-Cookie: ARRAffinity=1e814d08bb67a75624c49fb6d5228d18748eacdd628b2be173bc1b9bf1f4f77f;Path=/;Domain=ancestry.glancecdn.net
+%Date: Fri, 11 Apr 2014 19:16:50 GMT
+©
+<html><head><title>Object moved</title></head><body>
+<h2>Object moved to <a href="https://glance.blob.core.windows.net/cobrowse/js/Cobrowse_2.10.1M.js">here</a>.</h2>
+</body></html>
+/* CobrowseJS.ashx error: 
+System.Threading.ThreadAbortException: Thread was being aborted.
+   at System.Threading.Thread.AbortInternal()
+   at System.Threading.Thread.Abort(Object stateInfo)
+   at System.Web.HttpResponse.AbortCurrentThread()
+   at System.Web.HttpResponse.End()
+   at System.Web.HttpResponse.Redirect(String url, Boolean endResponse, Boolean permanent)
+   at System.Web.HttpResponse.Redirect(String url)
+   at glanceweb3.CoBrowseJS.ProcessRequest(HttpContext context)
+*/

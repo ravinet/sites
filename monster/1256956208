@@ -1,0 +1,50 @@
+PHTTP173.241.242.12"ç
+§GET /w/1.0/acj?mi=abf5338a-2003-486a-eaf1-adba45a91c8f&mn=1&mc=1&cc=1&ai=90d37d3c-5383-4317-8a6e-5ddce8ff00ba&o=2013005781&callback=OX_2013005781&ju=http%3A//www.monster.com/&jr=http%3A//www.monster.com/&auid=552732&res=800x600x24&plg=swf%2Cqt%2Cwmp%2Cshk%2Cpm&ch=ISO-8859-1&tz=240 HTTP/1.1
+3Host: ox-d.monetizationservices.servedbyopenx.com
+Connection: keep-alive
+Accept: */*
+vUser-Agent: Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/31.0.1650.63 Safari/537.36
+πReferer: http://oas.monster.com/RealMedia/ads/adstream_sx.ads/us.monster.en/www30/homepage/1250572661@Top,Right,Position1,Right1,Bottom1!Bottom1?site=mons&affiliate=mons&app=www&size=728x90&oas_pv=no_analytics&fb=0&XE&site=mons&affiliate=mons&app=www&size=728x90&oas_pv=no_analytics&fb=0&if_nt_CookieAccept=Y&XE
+$Accept-Encoding: gzip,deflate,sdch
+!Accept-Language: en-US,en;q=0.8
+ÑCookie: OX_u=3cc66c80-1d81-0b49-57a5-9204123658f4_a_1398204277; NSC_qspe-py3-efmjwfsz=ffffffff09091d1d45525d5f4f58455e445a4a422970
+
+*Î
+HTTP/1.1 200 OK
+Vary: Accept
+êSet-Cookie: OX_u=e4a240ad-715a-0ad2-4335-f5dbb976cb03_m_1398204277; Version=1; Expires=Wed, 08-Apr-2015 22:04:38 GMT; Max-Age=31536000; Path=/
+CServer: MochiWeb/1.1 WebMachine/1.10.0 (never breaks eye contact)
+Pragma: no-cache
+#P3P: CP="CUR ADM OUR NOR STA NID"
+(Expires: Mon, 26 Jul 1997 05:00:00 GMT
+%Date: Tue, 08 Apr 2014 22:04:38 GMT
+ Content-Type: application/json
+Content-Length: 1775
+-Cache-Control: private, max-age=0, no-cache
+ÜSet-Cookie: NSC_qspe-py3-efmjwfsz=ffffffff09091d1d45525d5f4f58455e445a4a422970;expires=Tue, 08-Apr-2014 23:04:38 GMT;path=/;httponly
+Ò
+OX_2013005781({
+  "ads":{
+    "medium":"w",
+    "record_tmpl":"http://ox-d.monetizationservices.servedbyopenx.com/{medium}/1.0/{rtype}?ts={txn_state}",
+    "pixels":"http://us-u.openx.net/w/1.0/pd?plm=5&ph=4f577327-5159-42b8-a9c4-5861fcdfd78c",
+    "adunits" : [
+      {
+        "auid":"552732",
+        "chain":[
+          {
+            "is_fallback":0,
+            "ad_id":"1730914",
+            "width":"728",
+            "height":"90",
+            "html":"<!-- begin Undertone Ad Tag for INT1353 - Leaderboard 728x90 - Monster - $1-->\n\n<script type='text/javascript'>\n   var ut_ju = 'http://ads.undertone.com/aj';\n   ut=new Object();\n   ut.zoneid=75877;\n</script>\n<script type=\"text/javascript\" src=\"http://cdn.undertone.com/js/ajs.js\"></script>\n\n<!-- end Undertone Ad Tag for INT1353 - Leaderboard 728x90 - Monster - $1-->",
+            "target":"_blank",
+            "ts":"1fHNpZD0xMTg5MjV8cmFpZD1mZDYwYTQ0NC05NWE0LTRmMjktYWI3YS1lNTdkZGYyNGMxNDZ8YXVpZD01NTI3MzJ8bHc9MTQ0MHx1cj1FVjhaTHVtTDA2fGFzPTcyOHg5MHxhaWQ9MTczMDkxNHxwdWI9MTM4OTQ5fGF1bT1ETUlELldFQnxsaWQ9MTAwNzMwN3x1PTF8dD00fHJpZD1jZGQ2MTY4MC0zYjM3LTRhZmUtOTg0Yy00YjQ1YTllZTYxYWZ8b2lkPTI3NTkzMHxibT1CVVlJTkcuTk9OR1VBUkFOVEVFRHxwPTExMDB8cGM9VVNEfGFjPVVTRHxwbT1QUklDSU5HLkNQTXxsYz0yfHJ0PTEzOTY5OTQ2Nzd8cHI9MTEwMHxhZHY9MTEyMjUy",
+            "type":"html",
+            "ad_url":"<!-- begin Undertone Ad Tag for INT1353 - Leaderboard 728x90 - Monster - $1-->\n\n<script type='text/javascript'>\n   var ut_ju = 'http://ads.undertone.com/aj';\n   ut=new Object();\n   ut.zoneid=75877;\n</script>\n<script type=\"text/javascript\" src=\"http://cdn.undertone.com/js/ajs.js\"></script>\n\n<!-- end Undertone Ad Tag for INT1353 - Leaderboard 728x90 - Monster - $1-->"
+          }
+        ]
+      }
+    ]
+  }
+});

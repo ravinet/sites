@@ -1,0 +1,27 @@
+»HTTPS208.89.13.133"à
+èGET /hc/47961680/?&site=47961680&cmd=mTagInPage&lpCallId=586084747686-858623457140&protV=20&lpjson=1&page=http%3A//www.prweb.com/&id=2845576901&javaSupport=false&visitorStatus=INSITE_STATUS&activePlugin=none&cobrowse=true HTTP/1.1
+!Host: server.iad.liveperson.net
+Connection: keep-alive
+Accept: */*
+vUser-Agent: Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/31.0.1650.63 Safari/537.36
+ Referer: http://www.prweb.com/
+$Accept-Encoding: gzip,deflate,sdch
+!Accept-Language: en-US,en;q=0.8
+¿Cookie: HumanClickKEY=999539366039510611; LivePersonID=-121420324783405-1396995338:-1:-1:-1:-1; HumanClickSiteContainerID_47961680=STANDALONE; LivePersonID=LP i=121420324783405,d=1396995338
+
+*¬
+HTTP/1.1 200 OK
+%Date: Tue, 08 Apr 2014 22:15:39 GMT
+Server: Microsoft-IIS/6.0
+GP3P: CP="NON BUS INT NAV COM ADM CON CUR IVA IVD OTP PSA PSD TEL SAM"
+X-Powered-By: ASP.NET
+NSet-Cookie: HumanClickSiteContainerID_47961680=STANDALONE; path=/hc/47961680
+(Content-Type: application/x-javascript
+Accept-Ranges: bytes
+.Last-Modified: Tue, 08 Apr 2014 22:15:38 GMT
+Cache-Control: no-store
+Pragma: no-cache
+(Expires: Wed, 31 Dec 1969 23:59:59 GMT
+Content-Length: 188
+¾
+lpConnLib.Process({"ResultSet": {"lpCallId":"586084747686-858623457140","lpCallConfirm":"","lpJS_Execute":[{"code_id": "INPAGE-DELAY-30", "js_code": "lpMTag.lpInPageRequestDelay=30;"}]}});

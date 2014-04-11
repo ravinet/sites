@@ -1,0 +1,141 @@
+PHTTP23.74.28.10"Ú
+8GET /tutorial/media/js/tutorial.js?v=2.2.19p1 HTTP/1.1
+Host: www.pch.com
+Connection: keep-alive
+Accept: */*
+vUser-Agent: Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/31.0.1650.63 Safari/537.36
+Referer: http://www.pch.com/
+$Accept-Encoding: gzip,deflate,sdch
+!Accept-Language: en-US,en;q=0.8
+úCookie: deb088d138aa52ddbeb48990e3e58a5e=k12m2f9f5ent563l9fgbgvu270; pdd=D; pci=n3qg5f4gGbPBKvNH; __utma=102336542.1157406824.1396994885.1396994885.1396994885.1; __utmb=102336542.1.10.1396994885; __utmc=102336542; __utmz=102336542.1396994885.1.1.utmcsr=(direct)|utmccn=(direct)|utmcmd=(none); _at_id.pch.production.a1c9=b2baeaeffd6ee36d.1396994885.1.1396994885.1396994885.0.0.
+
+*‰
+HTTP/1.1 200 OK
+Server: Apache
+.Last-Modified: Wed, 22 Jan 2014 21:35:31 GMT
+"ETag: "488ef7-e30-4f095e7776ec0"
+Accept-Ranges: bytes
+Content-Length: 3632
+GP3P: CP="CAO DSP COR CUR ADM DEV TAI PSA PSD IVA IVD CON OUR LEG UNI"
+Content-Type: text/javascript
+%Date: Tue, 08 Apr 2014 22:08:04 GMT
+Connection: keep-alive
+²
+var PCHMINIBOOTSTRAP = PCHMINIBOOTSTRAP || {};
+if (typeof PCHMINIBOOTSTRAP.contentBaseURL === "undefined") PCHMINIBOOTSTRAP.contentBaseURL = "";
+
+
+var invisibleDivMarkup = "<div id='invisibleDiv'></div>";
+var selectedItem = "";
+function initTutorial(){
+		// initialize scrollable together with the navigator plugin
+		$("#navigator").scrollable({
+			keyboard:false,
+			circular:true,
+			onSeek : function(){postScroll()}
+		}).navigator();
+		$("#tutorial_holder").overlay({
+			top:170,
+			left:230,
+			fixed:false,
+			mask: {
+		color: '#000',
+		loadSpeed: 20,
+		opacity: 0.7
+	    },
+	    closeOnClick: true,
+	    load: false,
+	    onClose: function(){tutorialClosed();toggleOtherLightbox(true);toggleBannerImage(true);},
+	    onBeforeLoad: function(){toggleOtherLightbox(false);toggleBannerImage(false);}
+	    });
+		$("#tutorial_holder a").click(
+				function(e){
+					e.preventDefault();
+					}
+				);
+}
+
+function postScroll(){
+			tutorialClosed();
+			var tabId = $($("#navigator .items div.maindiv")[$(".scrollable").data("scrollable").getIndex()+1]).attr("id");
+			var Tutsettings = 
+			{
+				featuredarea:{
+					shownDiv:$("html").hasClass("ie")?$("#sliderholder"):$("#mainholder"),
+					arrowClass:"featuredarr",
+					callback:function(){
+						if(!$("html").hasClass("ie")){
+					$("#invisibleDiv").addClass("featuredareainvisiblediv")}else{$("#invisibleDiv").removeClass()}},
+					invisibleDiv:$("html").hasClass("ie")?$("#sliderholder"):$("#mainholder")
+				},
+				checklist:{
+					shownDiv:$(".uni-nav-bar .content"),
+					arrowClass:"checklistarr",
+					callback:function(){
+						$("#token_center").addClass("openedFromTutorial");
+						$("#token_center").hasClass("openedFromTutorial")?PCH.uniExp.tokenCenter.toggleContainer(600):0;
+					},
+					invisibleDiv:$(".uni-nav-bar .content,#token_center .token_center,#token_center .footer,.message-center")
+				},
+				navigation:{
+					shownDiv:$(".nav-bar"),
+					arrowClass:"navigationarr",
+					callback:"",
+					invisibleDiv:$(".nav-bar")
+				}
+			}
+			selectedItem = Tutsettings[tabId];			
+			if(selectedItem.shownDiv != "" && selectedItem.arrowClass != ""){
+			selectedItem.shownDiv.addClass("higherz");
+			$(".tutorialarrow").addClass(selectedItem.arrowClass);
+			selectedItem.invisibleDiv.prepend($(invisibleDivMarkup));
+			if(typeof selectedItem.callback == 'function')selectedItem.callback();
+			}
+}
+
+
+
+function tutorialClosed(){
+	if($("#token_center").hasClass("openedFromTutorial")){
+		PCH.uniExp.tokenCenter.toggleContainer(600);
+		$("#token_center").removeClass("openedFromTutorial");
+	}
+	$(".higherz").removeClass("higherz");
+	$(".tutorialarrow").removeClass().addClass("tutorialarrow");
+	$("html #invisibleDiv").remove();
+}
+
+function toggleOtherLightbox(showHide){
+	//$("#tutorial_holder").overlay().getConf().left = ($(".accordion").offset().left-651.5)
+	//$("#tutorial_holder").overlay().getConf().top = (136 + $(".rewards-block").offset().top)
+	var lb = $(".sso-lightbox.hide");
+	if(lb.length < 1){return false;}
+	if(showHide){
+		setTimeout(function(){lb.show()},1000);
+	}
+	else{
+		lb.hide();
+	}
+}
+
+function toggleBannerImage(showHide){
+	var topBannerExists = $("#topBannerSection img").attr("src") != "/";
+	if(showHide){
+		topBannerExists?$("#topBannerSection").slideDown():0;
+	}
+	else{
+		topBannerExists?$("#topBannerSection").slideUp():0;
+	}
+}
+
+$( function( e ) {
+	initTutorial();
+	if(!PCH.tutorialShown){
+		$("#tutorial_holder").overlay().load();
+		$(".scrollable").data("scrollable").seekTo(0);
+		$.ajax({
+			url:PCHMINIBOOTSTRAP.contentBaseURL+"index.php?option=com_pchcom_content&task=setTutorialShown&format=raw"
+		});
+		PCH.tutorialShown = 1;
+	}
+});

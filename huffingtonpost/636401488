@@ -1,0 +1,19 @@
+PHTTP54.84.195.195"Ü
+-GET /socket/373/97f05f3i/websocket HTTP/1.1
+Upgrade: websocket
+Connection: Upgrade
+*Host: fiji-production-ws.use1.huffpo.net
+'Origin: http://www.huffingtonpost.com
+Pragma: no-cache
+Cache-Control: no-cache
+-Sec-WebSocket-Key: eqKa8qyAdXU6m6dhlCyAjA==
+Sec-WebSocket-Version: 13
+2Sec-WebSocket-Extensions: x-webkit-deflate-frame
+vUser-Agent: Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/31.0.1650.63 Safari/537.36
+
+*‹
+"HTTP/1.1 101 Switching Protocols
+connection: Upgrade
+upgrade: websocket
+4sec-websocket-accept: z4cN9aZbz1dhjd3Xl5RfQ6A6O30=
+

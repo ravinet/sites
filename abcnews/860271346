@@ -1,0 +1,28 @@
+PHTTP
+18.7.20.69"ì
+)GET /assets/static/ads/fwps.js HTTP/1.1
+Host: a.abcnews.go.com
+Connection: keep-alive
+Accept: */*
+vUser-Agent: Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/31.0.1650.63 Safari/537.36
+!Referer: http://abcnews.go.com/
+$Accept-Encoding: gzip,deflate,sdch
+!Accept-Language: en-US,en;q=0.8
+“Cookie: optimizelySegments=%7B%22173942781%22%3A%22gc%22%2C%22175220085%22%3A%22direct%22%2C%22175370703%22%3A%22false%22%2C%22175404369%22%3A%22none%22%7D; optimizelyEndUserId=oeu1396992320471r0.1544690385926515; optimizelyBuckets=%7B%7D; optimizelyPendingLogEvents=%5B%5D
+
+*ˆ
+HTTP/1.1 200 OK
+iServer: Apache/2.2.17 (Win32) DAV/2 mod_ssl/2.2.17 OpenSSL/0.9.8o PHP/5.3.4 mod_perl/2.0.4 Perl/v5.10.1
+.Last-Modified: Fri, 01 Jun 2012 16:46:24 GMT
+(ETag: "c000001913098-19-4c16becb83800"
+&Content-Type: application/javascript
+X-VG-WebCache: 130
+Content-Length: 25
+Accept-Ranges: bytes
+"X-Varnish: 1948047985 1902441213
+From: n7abcmwc03.starwave.com
+Cache-Control: max-age=160024
+%Date: Tue, 08 Apr 2014 21:25:20 GMT
+Connection: keep-alive
+
+document.write('</div>');

@@ -1,0 +1,609 @@
+»HTTPS176.32.112.17"á
+>GET /widget/wilshire/widget/css/main_responsive.css HTTP/1.1
+-Host: static-friendbuy-com.s3.amazonaws.com
+Connection: keep-alive
+Accept: text/css,*/*;q=0.1
+vUser-Agent: Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/31.0.1650.63 Safari/537.36
+sReferer: https://embed.friendbuy.com/site-82cf2017-petflow.com/page:All/widget?embed_load_code=201404081508158212
+$Accept-Encoding: gzip,deflate,sdch
+!Accept-Language: en-US,en;q=0.8
+
+*„[
+HTTP/1.1 200 OK
+Nx-amz-id-2: qv7pSek5s/oGYg1uCZvzFRhA2RZ46/9b28A9z522Ct732+YQWuV5K8zBASmAKli2
+$x-amz-request-id: 6FDD898B82C33C85
+%Date: Tue, 08 Apr 2014 22:08:17 GMT
+.Last-Modified: Tue, 22 Oct 2013 16:21:36 GMT
+*ETag: "60ca6aa358b97467c3fcd5c5d5ef37cb"
+Accept-Ranges: bytes
+Content-Type: text/css
+Content-Length: 11284
+Server: AmazonS3
+–X
+body {
+    color: #686868;
+    font-family: 'Gudea', sans-serif;
+    font-size: 12px;
+    margin: 0px;
+    padding: 0px;
+}
+
+form {
+    margin: 0px;
+}
+
+input, textarea {
+    border: 1px solid #ccc;
+    border-radius: 3px;
+    color: #393939;
+    font-family: 'Gudea', sans-serif;
+    height: 90px;
+    margin: 0px;
+    padding: 4px;
+}
+
+.dark {
+    color: #393939;
+}
+
+.text-right {
+    text-align: right;
+}
+
+textarea {
+    width: 570px;
+    height: 90px;
+}
+
+#row-header {
+    height: 130px;
+    max-height: 130px;
+}
+
+#preview-row {
+    margin-bottom: 16px;
+    margin-top: 20px;
+}
+
+#email-message-title {
+    margin-top: 20px;
+}
+
+.to-from {
+    line-height: 40px;
+    vertical-align: middle;
+    font-size: 23px;
+}
+
+.promotion-title {
+    height: 40px;
+    font-weight: bold;
+}
+
+.container {
+    width: auto;
+}
+
+#widget {
+    width: 680px;
+    height: 680px;
+    display: block;
+    background: #fff;
+    margin: 0px;
+    padding: 0px;
+}
+
+.main-header {
+    font-size: 36px;
+    font-weight: bold;
+    line-height: 26px;
+    margin-top: 42px;
+    text-align: center;
+}
+
+.sub-header {
+    font-size: 16px;
+    margin-top: 6px;
+    text-align: center;
+    line-height: 26px;
+}
+
+.row-details {
+    min-height: 180px;
+}
+
+#row-body {
+    width: 580px;
+    margin-left: 50px;
+}
+
+.underline {
+    margin-top: 0px;
+    margin-bottom: 5px;
+    border-bottom: 1px solid #C3C6CA;
+}
+
+.centered {
+    text-align: center;
+}
+
+.thanks #widget-body {
+    text-align: center;
+    margin-bottom: 361px;
+}
+
+._email_capture {
+    margin-bottom: 20px;
+}
+
+.thanks .contact {
+    font-weight: 200;
+    font-size: 16px;
+}
+
+/* WIDGET BODY */
+
+.messageValidation {
+    height: 14px;
+    float: left;
+}
+
+.error {
+    color: red;
+    font-size: 12px;
+    font-weight: bold;
+}
+
+#widget-body input {
+    height: 33px;
+    width: 467px;
+    margin-bottom: 19px;
+}
+
+#sharedText {
+    font-size: 14px;
+    min-height: 125px;
+}
+
+#email-body {
+    height: 132px;
+    margin-bottom: 20px;
+}
+
+#emailMessage {
+    min-height: 60px;
+}
+
+#email-state {
+    margin-top: 15px;
+    margin-bottom: 88px;
+}
+
+#email-state label {
+    font-size: 18px;
+    line-height: 28px;
+}
+
+#widget-body #emailMessage input {
+    height: 70px;
+}
+
+#widget-body #selfEmail input {
+    height: 33px;
+    margin-bottom: 6px;
+    padding-left: 10px;
+    width: 300px;
+}
+
+#widget-body .span2 {
+    margin-top: 5px;
+}
+
+/*SHARE BUTTONS*/
+#buttons {
+}
+
+.container .row-button {
+    height: 48px;
+}
+
+.container #widget-body .row-button a {
+    width: 190px;
+    margin-left: 5px;
+    height: 48px;
+    display: inline-block;
+    margin-top: 6px;
+    background-image: url(../images/steel.png);
+}
+
+.container #widget-body #buttons a {
+    margin-top: 6px;
+}
+
+.container #widget-body .row-button .facebook {
+    background-position: 0px 0px;
+    margin-left: 0px;
+}
+
+.container #widget-body .row-button .facebook:hover {
+    background-position: 0px -49px;
+    margin-left: 0px;
+}
+
+.container #widget-body .row-button .twitter {
+    background-position: -195px 0px;
+}
+
+.container #widget-body .row-button .twitter:hover {
+    background-position: -195px -49px;
+}
+
+.container #widget-body .row-button .email {
+    background-position: 580px 0px;
+}
+
+.container #widget-body .row-button .email:hover {
+    background-position: 580px -49px;
+}
+
+/*EMAIL BUTTONS*/
+.container #widget-body .row-button .send {
+    background-position: 190px 0px;
+}
+
+.container #widget-body .row-button .send:hover {
+    background-position: 190px -49px;
+}
+
+.container #widget-body .row-button .cancel {
+    background-position: 385px 0px;
+}
+
+.container #widget-body .row-button .cancel:hover {
+    background-position: 385px -49px;
+}
+
+/*SHARE LINK CSS*/
+
+#shareLink {
+    visibility: hidden;
+}
+
+.container #widget-body #shareLink {
+    margin-left: 0px;
+    margin-top: 50px;
+    margin-bottom: 7px;
+}
+
+.container #widget-body #shareLink input {
+    border-radius: 5px;
+    color: #393939;
+    font-size: 16px;
+    margin: 0px;
+    margin-bottom: 13px;
+    padding-left: 10px;
+    width: 200px;
+}
+
+/*FOOTER*/
+
+#footer {
+    height: 20px;
+    border-radius: 0 0 10px 10px;
+    padding-left: 50px;
+    width: 580px;
+}
+
+#footer a {
+    color: #56aed9;
+    text-decoration: none;
+}
+
+#footer a:hover {
+    text-decoration: underline;
+}
+
+/*THIS ROW TYPE IS FOR THE MAIN WIDGET
+SO IT CAN BE CENTERED IN THE PAGE*/
+.row-fluid .span13 {
+    width: 94.5%;
+    *width: 95.44680851063829%;
+}
+
+#email-state {
+    display: none;
+}
+
+/* BEGIN: Color Swapping */
+.container #fb-footer-logo {
+    display: inline-block;
+    height: 18px;
+    width: 80px;
+    background-image: url(../images/fb-logo-sprite.png);
+    background-position: 0px -71px;
+    overflow: hidden;
+    vertical-align: top;
+}
+
+.grape-soda #widget-body #buttons a, .grape-soda #widget-body #emailButtons a, .grape-soda #shareLink .link, .grape-soda #shareLink #links #gPlus {
+    background-image: url(../images/grape-soda.png);
+}
+
+.grape-soda #fb-footer-logo {
+    background-position: 0px 0px;
+}
+
+.bubble-gum #widget-body #buttons a, .bubble-gum #widget-body #emailButtons a, .bubble-gum #shareLink .link, .bubble-gum #shareLink #links #gPlus {
+    background-image: url(../images/bubble-gum.png);
+}
+
+.bubble-gum #fb-footer-logo {
+    background-position: 0px -143px;
+}
+
+.red-cross #widget-body #buttons a, .red-cross #widget-body #emailButtons a, .red-cross #shareLink .link, .red-cross #shareLink #links #gPlus {
+    background-image: url(../images/red-cross.png);
+}
+
+.red-cross #fb-footer-logo {
+    background-position: 0px -89px;
+}
+
+.powder #widget-body #buttons a, .powder #widget-body #emailButtons a, .powder #shareLink .link, .powder #shareLink #links #gPlus {
+    background-image: url(../images/powder.png);
+}
+
+.powder #fb-footer-logo {
+    background-position: 0px -17px;
+}
+
+.espresso #widget-body #buttons a, .espresso #widget-body #emailButtons a, .espresso #shareLink .link, .espresso #shareLink #links #gPlus {
+    background-image: url(../images/espresso.png);
+}
+
+.espresso #fb-footer-logo {
+    background-position: 0px -161px;
+}
+
+.steel #widget-body #buttons a, .steel #widget-body #emailButtons a, .steel #shareLink .link, .steel #shareLink #links #gPlus {
+    background-image: url(../images/steel.png);
+}
+
+.steel #fb-footer-logo {
+    background-position: 0px -71px;
+}
+
+.maytag #widget-body #buttons a, .maytag #widget-body #emailButtons a, .maytag #shareLink .link, .maytag #shareLink #links #gPlus {
+    background-image: url(../images/maytag.png);
+}
+
+.maytag #fb-footer-logo {
+    background-position: 0px -125px;
+}
+
+.grill-brick #widget-body #buttons a, .grill-brick #leftColumn #emailButtons a, .grill-brick #shareLink .link, .grill-brick #shareLink #links #gPlus {
+    background-image: url(../images/grill-brick.png);
+}
+
+.grill-brick #fb-footer-logo {
+    background-position: 0px 71px;
+}
+
+.sage #widget-body #buttons a, .sage #widget-body #emailButtons a, .sage #shareLink .link, .sage #shareLink #links #gPlus {
+    background-image: url(../images/sage.png);
+}
+
+.sage #fb-footer-logo {
+    background-position: 0px -53px;
+}
+
+.tangerine #widget-body #buttons a, .tangerine #widget-body #emailButtons a, .tangerine #shareLink .link, .tangerine #shareLink #links #gPlus {
+    background-image: url(../images/tangerine.png);
+}
+
+.tangerine #fb-footer-logo {
+    background-position: 0px -34px;
+}
+
+/* END: Color Swapping */
+
+/* START: mobile overrides */
+@media (max-width: 480px) {
+    body {
+        width: 320px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .row-fluid [class*="span"] {
+        min-height: inherit;
+    }
+
+    #widget, #row-body, #footer {
+        width: inherit;
+    }
+
+    #widget {
+        height: inherit;
+    }
+
+    textarea {
+        width: 290px;
+        height: 60px;
+    }
+
+    #preview-row, #choose-txt {
+        margin-top: 8px;
+        margin-bottom: 0;
+    }
+
+    #row-body {
+        margin: 0 10px;
+    }
+
+    #row-header {
+        height: inherit;
+        max-height: inherit;
+    }
+
+    #thumb, #sharedText {
+        margin-top: 12px;
+    }
+
+    #thumb {
+        margin-bottom: -50px;
+        margin-right: -55px; /* To compensate for scale. */
+        width: 44%;
+    }
+
+    #thumb > img {
+        -moz-transform: scale(0.6);
+        -moz-transform-origin: 0 0;
+        -webkit-transform: scale(0.6);
+        -webkit-transform-origin: 0 0;
+    }
+
+    #sharedText {
+        min-height: 65px;
+        width: 72%;
+    }
+
+    #footer {
+        padding: 0 10px 25px 10px;
+    }
+    
+    #footer .span6:first-child {
+        font-size: 10px;
+    }
+    
+    #footer .span6:last-child {
+        margin-right: -30px;
+        width: 170px;
+        -moz-transform: scale(0.75);
+        -webkit-transform: scale(0.75);
+    }
+
+    .main-header {
+        font-size: 20px;
+        margin-top: 18px;
+    }
+
+    .sub-header, .promotion-caption, .promotion-description,
+    #row-header + .underline, #preview-row {
+        display: none;
+    }
+
+    .container #widget-body input {
+        height: 24px;
+        padding: 0;
+    }
+
+    /* Pixel-precise! */
+    .container #widget-body .row-button {
+        height: 36px;
+        margin-bottom: 9px;
+    }
+
+    .container #widget-body .row-button a {
+        background-size: 640px;
+        border-radius: 4px;
+        width: 96px;
+        height: 24px;
+    }
+
+    .container #widget-body #buttons a {
+        margin-top: 10px;
+    }
+
+    .container #widget-body .row-button .facebook {
+        background-position: 0px -4px;
+    }
+
+    .container #widget-body .row-button .facebook:hover {
+        background-position: 0px -36px;
+    }
+
+    .container #widget-body .row-button .twitter {
+        background-position: -129px -4px;
+    }
+
+    .container #widget-body .row-button .twitter:hover {
+        background-position: -129px -36px;
+    }
+
+    .container #widget-body .row-button .email {
+        background-position: -257px -4px;
+    }
+
+    .container #widget-body .row-button .email:hover {
+        background-position: -257px -36px;
+    }
+
+    .container #widget-body #shareLink {
+        margin: 0;
+    }
+
+    .container #widget-body #shareLink > div:first-child {
+        margin-top: 5px;
+    }
+
+    /* email state styles */
+    #email-state {
+        margin-bottom: 0;
+    }
+
+    .to-from {
+        line-height: inherit;
+    }
+
+    /* This has to be specified separately so it properly overrides the
+       prior rule. */
+    .container #widget-body .to-from {
+        width: 24%;
+    }
+
+    .container #widget-body .to-from + .span10 {
+        width: 72%;
+    }
+
+    .container #widget-body .to-from + .span10 input {
+        width: 100%;
+    }
+
+    #email-message-title {
+        margin-top: 0;
+    }
+
+    #email-body {
+        height: 116px;
+        margin-bottom: 8px;
+    }
+
+    .container #widget-body .row-button .send {
+        background-position: -528px -4px;
+    }
+
+    .container #widget-body .row-button .send:hover {
+        background-position: -528px -36px;
+    }
+
+    .container #widget-body .row-button .cancel {
+        background-position: -399px -4px;
+    }
+
+    .container #widget-body .row-button .cancel:hover {
+        background-position: -399px -36px;
+    }
+
+    /* thanks (share-success) styles */
+    .thanks #widget-body {
+        margin-bottom: 102px;
+    }
+
+    #widget-body #selfEmail input {
+        padding-left: 0;
+        width: 90%;
+    }
+
+}
+/* END: mobile overrides */

@@ -1,0 +1,24 @@
+PHTTP50.31.185.42"±
+~GET /?transport=jsonp&idsite=137&url=http%3A%2F%2Fwww.vice.com%2F&content_type=utf-8&callback=_vrq.jsonp.callbackFn HTTP/1.1
+Host: p.visualrevenue.com
+Connection: keep-alive
+Accept: */*
+vUser-Agent: Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/31.0.1650.63 Safari/537.36
+$Referer: http://www.vice.com/en_us
+$Accept-Encoding: gzip,deflate,sdch
+!Accept-Language: en-US,en;q=0.8
+
+*–
+HTTP/1.1 200 OK
+Server: nginx/1.1.19
+%Date: Tue, 08 Apr 2014 22:33:53 GMT
+Content-Type: text/javascript
+Content-Length: 14
+Accept-Ranges: bytes
+"X-Varnish: 3087713111 2978818707
+Age: 95226
+Via: 1.1 varnish
+F: 1
+Connection: close
+
+// empty 137_0

@@ -1,0 +1,28 @@
+PHTTP50.17.242.30"‡
+¬GET /event?a=707992661&d=698392373&y=false&x750932744=750772610&s695096699=none&s699186558=gc&s702668938=direct&s708926439=false&n=http%3A%2F%2Fwww.trulia.com%2F&g=750932744&u=oeu1396996153863r0.6918349496554583&wxhr=true&t=1396996153869&f=750353407,750832700,750932744,757202015,791925618 HTTP/1.1
+$Host: 707992661.log.optimizely.com
+Connection: keep-alive
+vUser-Agent: Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/31.0.1650.63 Safari/537.36
+Origin: http://www.trulia.com
+Accept: */*
+!Referer: http://www.trulia.com/
+$Accept-Encoding: gzip,deflate,sdch
+!Accept-Language: en-US,en;q=0.8
+
+*÷
+HTTP/1.1 200 OK
+(Access-Control-Allow-Credentials: true
+)Access-Control-Allow-Methods: POST, GET
+4Access-Control-Allow-Origin: http://www.trulia.com
+ Content-Type: application/json
+%Date: Tue, 08 Apr 2014 22:29:13 GMT
+9P3P: CP="IDC DSP COR CURa ADMa OUR IND PHY ONL COM STA"
+Server: nginx/1.2.7
+{Set-Cookie: bucket_map=750932744%3A750772610; Domain=.707992661.log.optimizely.com; expires=Fri, 05 Apr 2024 22:29:13 GMT
+~Set-Cookie: fixed_external_707992661_end_user_id=; Domain=.optimizely.com; expires=Thu, 01 Jan 1970 00:00:00 GMT; Max-Age=-1
+}Set-Cookie: fixed_external_707992661_bucket_map=; Domain=.optimizely.com; expires=Thu, 01 Jan 1970 00:00:00 GMT; Max-Age=-1
+ŠSet-Cookie: end_user_id=oeu1396996153863r0.6918349496554583; Domain=.707992661.log.optimizely.com; expires=Fri, 05 Apr 2024 22:29:13 GMT
+Content-Length: 2
+Connection: keep-alive
+
+{}

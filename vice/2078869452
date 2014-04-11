@@ -1,0 +1,201 @@
+PHTTP50.16.211.237"õ
+:GET /themes/vice/statics/css/vice.dnd.css?v5096 HTTP/1.1
+Host: www.vice.com
+Connection: keep-alive
+Accept: text/css,*/*;q=0.1
+vUser-Agent: Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/31.0.1650.63 Safari/537.36
+$Referer: http://www.vice.com/en_us
+$Accept-Encoding: gzip,deflate,sdch
+!Accept-Language: en-US,en;q=0.8
+
+*’%
+HTTP/1.1 200 OK
+Accept-Ranges: bytes
+Content-Type: text/css
+%Date: Tue, 08 Apr 2014 22:33:53 GMT
+"ETag: "6286d-118a-4f253dc797f80"
+.Last-Modified: Fri, 14 Feb 2014 01:38:22 GMT
+Server: nginx
+Content-Length: 4490
+Connection: keep-alive
+Œ#
+/* dos n don'ts pages */
+
+.dnd_section_header {
+    margin: 0 0 8px;
+}
+.dos_n_donts_head {
+    float: left;
+    margin: 0 0 15px;
+    width: 100%;
+}
+    .dos_n_donts_head .do,
+    .dos_n_donts_head .dont {
+        float: left;
+        min-height: 230px;
+        position: relative;
+        margin: 0 0 0 17px;
+        padding: 0 0 0 164px;
+        width: 140px;
+    }
+    .dos_n_donts_head .do:first-child,
+    .dos_n_donts_head .dont:first-child {
+        margin: 0;
+    }
+        .dos_n_donts_head .do {
+        }
+        .dos_n_donts_head .dont {
+            margin-left: 20px;
+        }
+            .dos_n_donts_head .do h4,
+            .dos_n_donts_head .dont h4 {
+                color: #000;
+                font-size: 16px;
+                font-weight: bold;
+                line-height: 20px;
+                text-transform: uppercase;
+            }
+            .fontface .dos_n_donts_head .do h4,
+            .fontface .dos_n_donts_head .dont h4 {
+                font-family: 'GothicBoldCond', sans-serif;
+                font-size: 20px;
+                font-weight: normal;
+            }
+            .dos_n_donts_head .do p,
+            .dos_n_donts_head .dont p {
+                margin: 0;
+                word-wrap: break-word;
+            }
+            .dos_n_donts_head .do img,
+            .dos_n_donts_head .dont img {
+                display: block;
+                left: 0;
+                height: 230px;
+                position: absolute;
+                top: 0;
+                width: 150px;
+            }
+.dos_n_donts_gallery {
+    clear: both;
+    float: left;
+    width: 642px;
+}
+    .dos_n_donts_gallery ul.dos_n_donts_gallery_list {
+        float: left;
+        margin-left: -13px;
+        width: 655px;
+    }
+        .dos_n_donts_gallery ul.dos_n_donts_gallery_list li {
+            float: left;
+            height: 208px;
+            margin: 0 0 13px 13px;
+            width: 118px;
+        }
+            .dos_n_donts_gallery ul.dos_n_donts_gallery_list li img {
+                background: #000;
+                display: block;
+                height: 187px;
+                margin-bottom: 4px;
+                width: 118px;
+            }
+            .dos_n_donts_gallery ul.dos_n_donts_gallery_list li span.do_or_dont {
+                color: #000;
+                font-size: 12px;
+                font-weight: bold;
+                text-transform: uppercase;
+            }
+
+/* Detail pages */
+
+.dos_n_donts_detail {
+	border: 2px solid #e5e6e7;
+	float: left;
+	margin: 0 0 14px;
+	padding: 14px 14px 0;
+	position: relative;
+	width: 610px;
+}
+	.dos_n_donts_detail .detail_head {
+		margin: 0 auto;
+		padding: 28px 0;
+		position: relative;
+		width: 450px;
+	}
+		.dos_n_donts_detail .detail_head .inline_socials {
+			clear: both;
+			position: static;
+			text-align: left;
+			width: 450px;
+		}
+		.dos_n_donts_detail .detail_head h3 {
+		    color: #000;
+			clear: both;
+			font-size: 26px;
+			font-weight: bold;
+			letter-spacing: 0;
+			margin: 0 0 15px;
+		}
+		.fontface .dos_n_donts_detail .detail_head h3 {
+			font-family: "GothicBoldCond";
+			font-weight: normal;
+		}
+	.dos_n_donts_detail p {
+		font-size: 13px;
+		line-height: 19px;
+		margin-left: auto;
+		margin-right: auto;
+		width: 390px;
+	}
+	.dos_n_donts_detail .detail_img {
+		margin-bottom: 7px;
+		position: relative;
+		text-align: center;
+	}
+		.dos_n_donts_detail .detail_img a.left,
+		.dos_n_donts_detail .detail_img a.right {
+			background: url("/themes/vice/statics/img/vice_assets.png") no-repeat 0 -310px;
+			cursor: pointer;
+			display: block;
+			height: 30px;
+			left: 34px;
+			margin-top: -15px;
+			position: absolute;
+			top: 50%;
+			text-align: left;
+			text-indent: -9999em;
+			width: 52px;
+		}
+		.dos_n_donts_detail .detail_img a.right {
+			background-position: -60px -310px;
+			left: auto;
+			right: 34px;
+		}
+		.dnd_comments .section_header_wrap {
+			border-top: 0;
+		}
+	.dos_n_donts_detail .hint {
+		border-top: 1px solid #E5E6E7;
+		font-size: 10px;
+		margin: 0;
+		padding: 7px 0;
+		text-align: center;
+	}
+	.dos_n_donts_detail .dos_n_donts_navigation {
+		padding: 14px 0 42px;
+		text-align: center;
+		width: 100%;
+	}
+		.dos_n_donts_detail .dos_n_donts_navigation a {
+			background: #f3f4f2;
+			color: #42423B;
+			display: inline-block;
+			font-size: 10px;
+			font-weight: bold;
+			padding: 2px 10px;
+			margin: 0 20px;
+			text-transform: uppercase;
+		}
+			.dos_n_donts_detail .dos_n_donts_navigation a.left,
+			.dos_n_donts_detail .dos_n_donts_navigation a.right {
+				background: none;
+			}

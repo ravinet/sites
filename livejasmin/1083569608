@@ -1,0 +1,456 @@
+PHTTP
+72.21.91.9"’
+8GET /2628/memberapplet_awards/layout_16_9.xml HTTP/1.1
+$Host: flashx.new.livejasmincdn.com
+Connection: keep-alive
+vUser-Agent: Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/31.0.1650.63 Safari/537.36
+Accept: */*
+BReferer: http://new.livejasmin.com/en/?showPreviousVersionLink=0
+$Accept-Encoding: gzip,deflate,sdch
+!Accept-Language: en-US,en;q=0.8
+
+*üÀ
+HTTP/1.1 200 OK
+Accept-Ranges: bytes
+ Cache-Control: max-age=2419200
+Content-Type: text/xml
+%Date: Tue, 08 Apr 2014 22:03:39 GMT
+Etag: "53440c2e-df04"
+(Expires: Tue, 06 May 2014 22:03:39 GMT
+.Last-Modified: Tue, 08 Apr 2014 14:48:14 GMT
+Server: ECS (ord/4CA9)
+X-Cache: HIT
+,X-Real-Source: flash.new.livejasmincdn.com
+Content-Length: 57092
+†¾
+<?xml version="1.0" encoding="utf-8" ?>
+<application type="jasmin" >
+	<state id="freeChat">
+		<Canvas percentWidth="100" percentHeight="100" id="stageCanvas" name="stageCanvas" controller="CustomLayoutController" >
+			<Canvas id="streamPanel" controller="CustomLayoutController">
+				<!--<VBox percentWidth="100" percentHeight="100" gap="2" >-->
+					<Canvas id="streamContainer" percentWidth="100" percentHeight="100" controller="CustomLayoutController,IconController,GalleryController,UserInteractionController">
+						<VideoBoxBackground id="videoBoxBackground" top="0" bottom="0" left="0" right="0" percentWidth="100" percentHeight="100" controller="CustomLayoutController" />
+						<UIComponent top="0" bottom="0" left="0" right="0" id="thumbnailViewerMask" controller="GalleryController" />
+						<JasminLoadingAnimation center="0" middle="0" width="135" height="135" id="loading" controller="StreamController" />
+						<JasminStreamBox maxZoom="20" percentWidth="100" percentHeight="100" keepAspectRatio="false" wheelZoomEnabled="false" id="streamView" controller="StreamController,AutoSnapshotController,CustomLayoutController" />
+						<PulseAnimation id="pulseAnimation" controller="StreamController,CustomLayoutController" />
+						<SkinElement src="SnapshotAnim" id="snapshotFlashAnimation" percentWidth="100" percentHeight="100" center="0" middle="0" controller="SnapshotController" />
+						<Canvas percentWidth="100" percentHeight="100" id="snapshotPhotoCanvas" controller="SnapshotController" />
+						<Curtain percentWidth="100" percentHeight="100" id="curtain" controller="CustomLayoutController,StreamController,IconController,GoPrivateController" />
+						<OfflineTeaser visible="false" percentWidth="100" percentHeight="100" id="offlineTeaser" controller="CustomLayoutController,TeaserController" />
+						<Canvas percentWidth="100" percentHeight="100" id="curtainDialogStage" controller="IconController,StreamController,GoPrivateController,PurchaseController" />
+						<Jasmin2DropDownMessage percentWidth="100" height="50" bottom="0" right="0" invertAnimation="true" id="commonDropDownMessage" controller="StreamController,PurchaseController" />
+						<GoPrivateButton top="8" right="10" height="29" autoSizeMargin="10" animEnabled="false" visible="false" id="startPrivateButton" name="startPrivateButton" controller="IconController, UserInteractionController"/>
+						<BasePanel top="8" right="0" width="51" height="28" visible="false" id="liveLabel" name="liveLabel" controller="IconController"/>
+						<Canvas id="streamIconBox" controller="IconController, CustomLayoutController" >
+							<IconList id="topIconList" direction="vertical" gap="4" iconOrder="[personalInfoButton]" controller="IconController, UserInteractionController">
+								<IconButton		height="29" width="29" id="personalInfoButton" name="personalInfoButton" controller="IconController"/>
+							</IconList>
+							<IconList top="33" id="middleIconList" direction="vertical" gap="4" iconOrder="[reportChannelButton,buyCreditButton,favoriteButton,surpriseButton,awardsButton,snapshotButton,galleryButton,floatingRecommenderButton]" controller="IconController, UserInteractionController">
+								<IconButton		height="29" width="29" id="reportChannelButton" name="reportChannelButton" controller="IconController"/>
+								<IconButton		height="29" width="29" id="buyCreditButton" name="buyCreditButton" controller="IconController"/>
+								<IconButton     height="29" width="29" id="favoriteButton"  name="favoriteButton"  controller="IconController"/>
+								<IconButton  	height="29" width="29" id="surpriseButton"  name="surpriseButton"  controller="IconController"/>
+								<IconButton 	height="29" width="29" id="awardsButton"   	name="awardsButton"    controller="IconController"/>
+								<IconButton 	height="29" width="29" id="snapshotButton"  name="snapshotButton"  controller="IconController"/>
+								<IconButton 	height="29" width="29" id="galleryButton"   name="galleryButton"   controller="IconController,SnapshotController"/>
+								<IconButton		height="29" width="29" id="floatingRecommenderButton"		name="floatingRecommenderButton"       controller="IconController"/>
+							</IconList>
+							<IconList bottom="0" id="bottomIconList" direction="vertical" gap="4" iconOrder="[volumeButton,qualitySettingsButton,sizeButton]" controller="IconController, UserInteractionController">
+								<IconButton   	height="29"  width="29" id="volumeButton"	name="volumeButton"    controller="IconController"/>
+								<IconButton   	height="29"  width="29" id="qualitySettingsButton"	name="qualitySettingsButton"    controller="IconController"/>
+								<IconButton 	height="29"  width="29" id="sizeButton"     name="sizeButton"      controller="IconController"/>
+							</IconList>
+						</Canvas>
+						
+						<Canvas id="upperIconBox" controller="CustomLayoutController">
+							<IconList id="upperIconList" direction="horizontal" gap="4" iconOrder="[prevStreamButton,nextStreamButton]" controller="IconController, UserInteractionController">
+									<IconButton   	height="29"  width="29" id="prevStreamButton"	name="prevStreamButton"    controller="IconController"/>
+									<IconButton   	height="29"  width="29" id="nextStreamButton"	name="nextStreamButton"    controller="IconController"/>
+							</IconList>
+						</Canvas>
+						<SurpriseLoader center="0" middle="0" top="2" bottom="2" left="2" right="2" id="surpriseLoader" controller="SurpriseController"/>
+						<ExitButton top="10" right="10" height="29" autoSizeMargin="10" visible="false" id="exitButton" name="exitButton" controller="IconController, UserInteractionController"/>
+						<OfflineTeaserUI visible="false" percentWidth="100" percentHeight="100" id="offlineTeaserUI" controller="TeaserController" />
+						<ClosePanel visible="false" width="178" height="28" top="0" right="0" id="closePanel" controller="TeaserController"/>
+						
+						<PrivateTeaserCountdown id="privateTeaserCountdown" right="10" controller="PrivateTeaserController, CustomLayoutController" />
+					</Canvas>
+					
+				<!--</VBox>-->
+			</Canvas>
+			
+			<Canvas id="privateButtonContainer" height="38" controller="CustomLayoutController">
+				<!--<StaticMessage percentWidth="100" percentHeight="100" id="offlineStaticMessage" controller="IconController"/>-->
+				<HostedChannelInfo percentWidth="100" percentHeight="100" id="hostedChannelInfo" controller="IconController"/>
+				<GoPrivateButton percentWidth="100" percentHeight="100" id="goPrivateButton" controller="IconController"/>
+			</Canvas>
+			
+			<Canvas id="chatCanvas" controller="CustomLayoutController, UserInteractionController" >
+				<SkinElement visible="false" alpha="0.7" percentWidth="100" percentHeight="100" src="FullChatBackground" id="chatFullBackground" controller="ChatController" />
+				<VBox percentWidth="100"  percentHeight="100" id="chatContainer">
+					<Canvas percentWidth="100" percentHeight="100" left="0" right="0" top="0" bottom="0" >
+						<SkinElement percentWidth="100" percentHeight="100" src="ChatBackground" id="chatBackground" controller="ChatController" />
+						<VBox id="chatVBox" percentWidth="100" percentHeight="100" controller="ChatController">
+							<ChatHeader percentWidth="100" id="chatHeader" controller="ChatController,IconController" />
+							<Canvas percentWidth="100" percentHeight="100" >
+								<Canvas percentWidth="100" percentHeight="100" top="3">
+									<Canvas percentWidth="100" percentHeight="100" id="chatHitBox" controller="ChatController" />
+									<J2ChatBox left="2" right="2" top="0" bottom="1" id="chatView" controller="ChatController" />
+									<SkinElement percentWidth="100" height="30" left="5" right="15" src="ChatGradient" id="chatGradient" controller="ChatController"/>
+								</Canvas>
+								
+								<IconList right="20" top="0" correctSize="true" gap="1" id="chatIconList"  controller="ChatController" >
+									<IconButton  width="14" height="15"  id="sizeUpBtn" controller="ChatController" />
+									<IconButton  width="14" height="15"  id="sizeDownBtn" controller="ChatController" />
+								</IconList>
+								<SkinElement percentWidth="100" percentHeight="100" src="DisabledBottomLayer" id="disabledChatForeground" controller="ChatController" />
+							</Canvas>
+						</VBox>
+					</Canvas>
+					
+					<Canvas id="chatInterfaceCanvas" percentWidth="100" top="2" left="4" right="4" height="42" controller="CustomLayoutController" >
+						<SkinElement visible="true" percentWidth="100" height="38" id="chatInputBg" src="ChatInputBg" controller="ChatInterfaceController"/>
+						<ChatInterface percentWidth="100" height="38" id="chatInterfaceView" btnMargin="5" controller="ChatInterfaceController"/>
+						<ChatSendToogleButton style="active" right="5" middle="0" width="50" height="28" name="sendButton" id="sendButton" controller="ChatInterfaceController" />
+						<SkinElement percentWidth="100" percentHeight="100" src="DisabledFullLayer" id="disabledInputForeground" controller="ChatInterfaceController" />
+						<IconButton middle="2" name="translateButton"  id="translateButton"  controller="ChatInterfaceController"/>
+					</Canvas>
+				</VBox>
+			</Canvas>
+			
+			<Canvas id="recommenderCanvas" controller="CustomLayoutController, UserInteractionController" >
+				<Recommender percentWidth="100" percentHeight="100"  id="recommender" controller="RecommenderController" />
+			</Canvas>
+		</Canvas>
+		<Canvas left="0" top="0" percentWidth="100" percentHeight="100" id="privateEndCanvas" controller="PrivateEndController">
+			<HBox id="privateEndBox" left="0" top="0" percentWidth="100" percentHeight="100" controller="PrivateEndController">
+				<PrivateEndDisplay percentHeight="100" id="privateEndDisplay" controller="PrivateEndController" />
+				<PrivateEndTable percentHeight="100" id="privateEndTable" controller="PrivateEndController" />
+			</HBox>
+		</Canvas>
+		
+		<Dialogs>
+			<GalleryDialogContent id="galleryDialogContent" controller="GalleryController,CustomLayoutController"/>
+			<TransparentDialogData contentMargin="0" targetX="{$streamContainer}"  offsetX="0" offsetXType="left" targetY="{$streamContainer}" offsetYType="top" offsetY="0" id="galleryDialogContentData" controller="GalleryController" />
+			
+			<ThumbnailDialogContent id="thumbnailDialogContent" controller="GalleryController"/>
+			<SimpleDialogData backgroundAlpha=".85" contentMargin="20" roundValues="[3,3,3,3]" targetX="{$streamContainer}"  offsetX="0" offsetXType="center" targetY="{$streamContainer}" offsetYType="middle" offsetY="0" id="thumbnailDialogData" controller="GalleryController" />
+			
+			<SimpleMessageDialog id="teaserMessageDialogContent" controller="TeaserController"/>
+			<TransparentDialogData contentMargin="0" targetX="{$streamContainer}"  offsetX="0" offsetXType="center" targetY="{$streamContainer}" offsetYType="middle" offsetY="0" id="teaserMessageDialogData" controller="TeaserController" />
+			
+			<SurpriseDialogContent width="420" height="345" id="surpriseDialogContent" controller="IconController, PrivateEndController" />
+			<HeaderedArrowedDialogData arrowAlign="left" targetX="{$surpriseButton}" offsetXType="left" targetY="{$surpriseButton}" offsetX="35" offsetYType="top" offsetY="-40" arrowTargetX="{$surpriseButton}" arrowOffsetXType="left" arrowOffsetX="30" arrowOffsetY="NaN" arrowTargetY="{$surpriseButton}" arrowOffsetYType="middle"  id="surpriseDialogData" controller="IconController" />
+			<HeaderedSimpleDialogData targetX="{$privateEndDisplay}" offsetXType="center" targetY="{$privateEndDisplay}" offsetX="0" offsetYType="middle" offsetY="0" id="surpriseDialogPrivateEndData" controller="IconController" />
+			
+			<AwardsVoteDialogContent width="315" height="236" id="awardsVoteDialogContent" controller="AwardsController" />
+			<HeaderedArrowedDialogData autoHide="30000" arrowAlign="left" targetX="{$awardsButton}" offsetXType="left" targetY="{$awardsButton}" offsetX="35" offsetYType="top" offsetY="-40" arrowTargetX="{$awardsButton}" arrowOffsetXType="left" arrowOffsetX="30" arrowOffsetY="NaN" arrowTargetY="{$awardsButton}" arrowOffsetYType="middle"  id="awardsVoteDialogData" controller="AwardsController" />
+			
+			<AwardsVoteInfoDialogContent width="315" height="236" id="awardsVoteInfoDialogContent" controller="AwardsController" />
+			<HeaderedArrowedDialogData autoHide="30000" arrowAlign="left" targetX="{$awardsButton}" offsetXType="left" targetY="{$awardsButton}" offsetX="35" offsetYType="top" offsetY="-40" arrowTargetX="{$awardsButton}" arrowOffsetXType="left" arrowOffsetX="30" arrowOffsetY="NaN" arrowTargetY="{$awardsButton}" arrowOffsetYType="middle"  id="awardsVoteInfoDialogData" controller="AwardsController" />
+			
+			<SurpriseNotificationDialogContent width="420" height="230" id="surpriseNotificationDialogContent" controller="SurpriseController, IconController, PrivateEndController" />
+			<HeaderedArrowedDialogData arrowAlign="left" targetX="{$surpriseButton}" offsetXType="left" targetY="{$surpriseButton}" offsetX="35" offsetYType="top" offsetY="-40" arrowTargetX="{$surpriseButton}" arrowOffsetXType="left" arrowOffsetX="30" arrowOffsetY="NaN" arrowTargetY="{$surpriseButton}" arrowOffsetYType="middle"  id="surpriseNotificationDialogData" controller="SurpriseController" />
+			<HeaderedSimpleDialogData targetX="{$privateEndDisplay}" offsetXType="center" targetY="{$privateEndDisplay}" offsetX="0" offsetYType="middle" offsetY="0" id="surpriseNotificationDialogPrivateEndData" controller="SurpriseController" />
+			
+			<PersonalInfoDialogContent width="420" height="340" id="personalInfoDialogContent" controller="PersonalInfoController,IconController" />
+			<HeaderedArrowedDialogData arrowAlign="left" targetX="{$personalInfoButton}" offsetXType="left" targetY="{$personalInfoButton}" offsetX="45" offsetYType="top" offsetY="0" arrowTargetX="{$personalInfoButton}" arrowOffsetXType="left" arrowOffsetX="40" arrowOffsetY="NaN" arrowTargetY="{$personalInfoButton}" arrowOffsetYType="middle"  id="personalInfoDialogData" controller="PersonalInfoController" />
+			
+			<ReportChannelDialogContent width="300" height="360" id="reportChannelDialogContent" controller="ReportChannelController,IconController" />
+			<HeaderedArrowedDialogData arrowAlign="left" targetX="{$reportChannelButton}" offsetXType="left" targetY="{$reportChannelButton}" offsetX="45" offsetYType="top" offsetY="0" arrowTargetX="{$reportChannelButton}" arrowOffsetXType="left" arrowOffsetX="40" arrowOffsetY="NaN" arrowTargetY="{$reportChannelButton}" arrowOffsetYType="middle"  id="reportChannelDialogData" controller="ReportChannelController,IconController" />
+			
+			<VolumeDialogContent width="17" height="63" id="volumeDialogContent" controller="IconController"/>
+			<ArrowedDialogData contentMargin="6" arrowAlign="left" targetX="{$volumeButton}" offsetXType="left" targetY="{$volumeButton}" offsetX="35" offsetYType="top" offsetY="0" arrowTargetX="{$volumeButton}" arrowOffsetXType="left" arrowOffsetX="30" arrowOffsetY="NaN" arrowTargetY="{$volumeButton}" arrowOffsetYType="middle" id="volumeDialogData" controller="IconController"/>
+
+			<ScreenSizeDialogContent width="90" height="29" id="screenSizeDialogContent" controller="IconController"/>
+			<ArrowedDialogData contentMargin="0" arrowAlign="left" targetX="{$sizeButton}" offsetXType="left" targetY="{$sizeButton}" offsetX="35" offsetYType="top" offsetY="0" arrowTargetX="{$sizeButton}" arrowOffsetXType="left" arrowOffsetX="30" arrowOffsetY="NaN" arrowTargetY="{$sizeButton}" arrowOffsetYType="middle" id="screenSizeDialogData" controller="IconController"/>
+
+			<TranslationDialogContent width="106" id="translationDialogContent" controller="ChatInterfaceController" />
+			<ArrowedDialogData contentMargin="6" targetX="{$translateButton}" offsetXType="center" offsetX="0" targetY="{$translateButton}" offsetYType="bottom" offsetY="-30" arrowAlign="bottom" arrowTargetX="{$translateButton}" arrowOffsetXType="center" arrowOffsetX="0" arrowOffsetY="0" arrowTargetY="{$translateButton}" arrowOffsetYType="top" id="translationDialogData" controller="ChatInterfaceController" />
+			
+			<InfoDialog id="bandwidthWarningDialogContent" controller="IconController" />
+			<InfoDialogData arrowAlign="left" targetX="{$qualitySettingsButton}" offsetXType="left" targetY="{$qualitySettingsButton}" offsetX="42" offsetYType="middle" offsetY="2" arrowTargetX="{$qualitySettingsButton}" arrowOffsetXType="left" arrowOffsetX="37" arrowTargetY="{$qualitySettingsButton}" arrowOffsetYType="middle" backgroundAlpha="0.8" id="bandwidthWarningDialogData" controller="IconController"/>
+			
+			<InfoDialog id="tooltipDialogContent" controller="IconController" />
+			<InfoDialogData arrowAlign="left" targetX="{$buyCreditButton}" 			 offsetXType="left" targetY="{$buyCreditButton}" offsetX="42" offsetYType="middle" offsetY="2" arrowTargetX="{$buyCreditButton}" arrowOffsetXType="left" arrowOffsetX="37" arrowTargetY="{$buyCreditButton}" arrowOffsetYType="middle" backgroundAlpha="0.8" id="buyCreditInfoData" 		controller="IconController"/>
+			<InfoDialogData arrowAlign="left" targetX="{$surpriseButton}" offsetX="42" offsetXType="left" targetY="{$surpriseButton}"  			  offsetYType="middle" offsetY="2" arrowTargetX="{$surpriseButton}"  arrowOffsetXType="left" arrowOffsetX="37" arrowTargetY="{$surpriseButton}" arrowOffsetYType="middle" backgroundAlpha="0.8" id="surpriseInfoData" 		controller="IconController"/>
+			<InfoDialogData arrowAlign="left" targetX="{$galleryButton}" offsetX="42" offsetXType="left" targetY="{$galleryButton}"  			  offsetYType="middle" offsetY="2" arrowTargetX="{$galleryButton}"  arrowOffsetXType="left" arrowOffsetX="37" arrowTargetY="{$galleryButton}" arrowOffsetYType="middle" backgroundAlpha="0.8" id="galleryInfoData" 		controller="IconController"/>
+			<InfoDialogData arrowAlign="left" targetX="{$favoriteButton}" offsetX="42" offsetXType="left" targetY="{$favoriteButton}"  			  offsetYType="middle" offsetY="2" arrowTargetX="{$favoriteButton}"  arrowOffsetXType="left" arrowOffsetX="37" arrowTargetY="{$favoriteButton}" arrowOffsetYType="middle" backgroundAlpha="0.8" id="favoriteInfoData" 		controller="IconController"/>
+			<InfoDialogData arrowAlign="left" targetX="{$favoriteButton}" offsetX="42" offsetXType="left" targetY="{$favoriteButton}"  			  offsetYType="middle" offsetY="2" arrowTargetX="{$favoriteButton}"  arrowOffsetXType="left" arrowOffsetX="37" arrowTargetY="{$favoriteButton}" arrowOffsetYType="middle" backgroundAlpha="0.8" id="favoriteChangeInfoData" 		controller="IconController"/>
+			<InfoDialogData arrowAlign="left" targetX="{$snapshotButton}" 			 offsetXType="left" targetY="{$snapshotButton}"  offsetX="42" offsetYType="middle" offsetY="2" arrowTargetX="{$snapshotButton}"  arrowOffsetXType="left" arrowOffsetX="37" arrowTargetY="{$snapshotButton}" arrowOffsetYType="middle" backgroundAlpha="0.8" id="snapshotInfoData" 		controller="IconController"/>
+			<InfoDialogData arrowAlign="left" targetX="{$awardsButton}" 			 offsetXType="left" targetY="{$awardsButton}"  offsetX="35" offsetYType="middle" offsetY="2" arrowTargetX="{$awardsButton}"  arrowOffsetXType="left" arrowOffsetX="30" arrowTargetY="{$awardsButton}" arrowOffsetYType="middle" backgroundAlpha="0.8" id="awardsInfoData" 		controller="IconController"/>
+			<InfoDialogData arrowAlign="left" targetX="{$sizeButton}" 				 offsetXType="left" targetY="{$sizeButton}" 	 offsetX="42" offsetYType="middle" offsetY="2" arrowTargetX="{$sizeButton}" 	 arrowOffsetXType="left" arrowOffsetX="37" arrowTargetY="{$sizeButton}" 	arrowOffsetYType="middle" backgroundAlpha="0.8" id="sizeInfoData" 			controller="IconController"/>
+			<InfoDialogData arrowAlign="left" targetX="{$qualitySettingsButton}" 				 offsetXType="left" targetY="{$qualitySettingsButton}" 	 offsetX="42" offsetYType="middle" offsetY="2" arrowTargetX="{$qualitySettingsButton}" 	 arrowOffsetXType="left" arrowOffsetX="37" arrowTargetY="{$qualitySettingsButton}" 	arrowOffsetYType="middle" backgroundAlpha="0.8" id="qualitySettingsInfoData" 			controller="IconController"/>
+			<InfoDialogData arrowAlign="left" targetX="{$personalInfoButton}"	offsetXType="left" targetY="{$personalInfoButton}" 	 offsetX="42" offsetYType="middle" offsetY="2" arrowTargetX="{$personalInfoButton}" 	 arrowOffsetXType="left" arrowOffsetX="37" arrowTargetY="{$personalInfoButton}" 	arrowOffsetYType="middle" backgroundAlpha="0.8" id="personalInfoData" 			controller="IconController"/>
+			<InfoDialogData arrowAlign="left" targetX="{$floatingRecommenderButton}"	offsetXType="left" targetY="{$floatingRecommenderButton}" 	 offsetX="42" offsetYType="middle" offsetY="2" arrowTargetX="{$floatingRecommenderButton}" 	 arrowOffsetXType="left" arrowOffsetX="37" arrowTargetY="{$floatingRecommenderButton}" 	arrowOffsetYType="middle" backgroundAlpha="0.8" id="recommenderInfoData" 			controller="IconController"/>
+			<InfoDialogData arrowAlign="top" targetX="{$prevStreamButton}" offsetXType="left" offsetX="-5" targetY="{$prevStreamButton}" offsetYType="bottom" offsetY="42" arrowTargetX="{$prevStreamButton}" 	 arrowOffsetXType="center" arrowTargetY="{$prevStreamButton}" 	arrowOffsetYType="bottom" arrowOffsetY="5" backgroundAlpha="0.8" id="prevStreamInfoData" 			controller="IconController"/>
+			<InfoDialogData arrowAlign="top" targetX="{$nextStreamButton}" offsetXType="left" offsetX="-5" targetY="{$nextStreamButton}" offsetYType="bottom" offsetY="42" arrowTargetX="{$nextStreamButton}" 	 arrowOffsetXType="center" arrowTargetY="{$nextStreamButton}" 	arrowOffsetYType="bottom" arrowOffsetY="5" backgroundAlpha="0.8" id="nextStreamInfoData" 			controller="IconController"/>
+			
+			<InfoDialog id="chatTooltipDialogContent" controller="ChatInterfaceController" />
+			<InfoDialogData arrowAlign="bottom" targetX="{$translateButton}" offsetXType="center" offsetX="-70" targetY="{$translateButton}"  offsetYType="top" offsetY="-50" arrowTargetX="{$translateButton}" 	 arrowOffsetXType="center" arrowOffsetX="0" arrowTargetY="{$translateButton}" 	arrowOffsetYType="top" backgroundAlpha="0.8" id="translateInfoData" 			controller="ChatInterfaceController"/>
+			
+			<HeaderedMessageDialog id="activateSnapshotDialogContent" controller="SnapshotController"/>
+			<HeaderedArrowedDialogData arrowAlign="left" targetX="{$snapshotButton}" offsetXType="left" offsetX="35" targetY="{$snapshotButton}" offsetY="0" offsetYType="middle" arrowTargetX="{$snapshotButton}" arrowOffsetXType="left" arrowOffsetX="30" arrowTargetY="{$snapshotButton}" arrowOffsetYType="middle" id="activateSnapshotDialogData" controller="SnapshotController"/>
+			
+			<HeaderedMessageDialog id="noticeDialogContent"  controller="StreamController" />
+			<HeaderedSimpleDialogData modal="true" targetX="{$streamContainer}" offsetXType="center" offsetYType="middle" targetY="{$streamContainer}" id="noticeDialogData" controller="StreamController"/>
+			
+			<HeaderedMessageDialog id="wentOfflineDialogContent"  controller="StreamController" />
+			<HeaderedSimpleDialogData targetX="{$streamContainer}" offsetXType="center" offsetYType="middle" targetY="{$streamContainer}" id="wentOfflineDialogData" controller="StreamController"/>
+			
+			<QuickBuyDialogContent height="235" width="425" id="quickBuyDialogContent" controller="PurchaseController,IconController,PrivateEndController" />
+			<HeaderedArrowedDialogData arrowAlign="left" targetX="{$buyCreditButton}" offsetXType="left" targetY="{$buyCreditButton}" offsetX="35" offsetYType="top" offsetY="-32" arrowTargetX="{$buyCreditButton}" arrowOffsetXType="left" arrowOffsetX="30" arrowOffsetY="NaN" arrowTargetY="{$buyCreditButton}" arrowOffsetYType="middle"  id="quickBuyDialogData" controller="PurchaseController" />
+			<HeaderedSimpleDialogData targetX="{$privateEndDisplay}" offsetXType="center" targetY="{$privateEndDisplay}" offsetYType="middle"  id="privateEndQuickBuyDialogData"  controller="PurchaseController"/>
+			<HeaderedSimpleDialogData targetX="{$streamContainer}" offsetXType="center" targetY="{$streamContainer}" offsetYType="middle"  id="galleryQuickBuyDialogData"  controller="PurchaseController"/>
+			
+			<HeaderedMessageDialog width="425" id="addFavoritDialogContent"  controller="IconController" />
+			<HeaderedSimpleDialogData targetX="{$streamContainer}" offsetXType="center" targetY="{$streamContainer}" offsetYType="middle"  id="addFavoritDialogData"  controller="IconController"/>
+			<HeaderedSimpleDialogData targetX="{$privateEndDisplay}" offsetXType="center" targetY="{$privateEndDisplay}" offsetYType="middle"  id="addFavoritDialogPrivateEndData"  controller="IconController"/>
+			
+			<InvitationDialogContent width ="496" height="236" id="invitationDialogContent" controller="InvitationController" />
+			<InvitationDialogData targetX="{$streamContainer}" offsetXType="center" offsetYType="middle" targetY="{$streamContainer}" id="invitationDialogData" controller="InvitationController"/>
+			
+			<HeaderedMessageDialog id="privateNoticeDialogContent" controller="GoPrivateController"  />
+			<HeaderedSimpleDialogData modal="true" targetX="{$streamContainer}" offsetXType="center" offsetYType="middle" targetY="{$streamContainer}" id="privateNoticeDialogData" controller="GoPrivateController" />
+			
+			<LogPrivateChatContent id="logPrivateChatContent" controller="GoPrivateController"/>
+			<HeaderedSimpleDialogData targetX="{$streamContainer}" offsetXType="center" offsetYType="middle" targetY="{$streamContainer}" id="logPrivateChatContentData" controller="GoPrivateController"/>
+			
+			<HeaderedMessageDialog width="408" id="buyCreditDialogContent" controller="PurchaseController,PrivateEndController,IconController"  />
+			<HeaderedArrowedDialogData arrowAlign="left" targetX="{$snapshotButton}" offsetX="35" offsetXType="left" targetY="{$snapshotButton}" offsetYType="middle" offsetY="0" arrowTargetX="{$snapshotButton}"  arrowOffsetXType="left" arrowOffsetX="30" arrowTargetY="{$snapshotButton}" arrowOffsetYType="middle" id="buyCreditDialogDataSnapshot" controller="PurchaseController"/>
+			<HeaderedArrowedDialogData arrowAlign="left" targetX="{$surpriseButton}" offsetX="35" offsetXType="left" targetY="{$surpriseButton}" offsetYType="middle" offsetY="0" arrowTargetX="{$surpriseButton}"  arrowOffsetXType="left" arrowOffsetX="30" arrowTargetY="{$surpriseButton}" arrowOffsetYType="middle" id="buyCreditDialogDataSurprise" controller="PurchaseController"/>
+			<HeaderedArrowedDialogData targetX="{$streamView}" offsetXType="center" targetY="{$streamView}" offsetYType="middle" id="buyCreditDialogData" controller="PurchaseController" />
+			<HeaderedSimpleDialogData targetX="{$privateEndDisplay}" offsetXType="center" targetY="{$privateEndDisplay}" offsetYType="middle"  id="privateEndBuyCreditDialogData"  controller="PurchaseController"/>
+			
+			<InfoDialog isClose="true" width="200" id="birthdayDialogContent" controller="IconController" />
+			<InfoDialogData arrowAlign="left" targetX="{$surpriseButton}" offsetXType="left" targetY="{$surpriseButton}" offsetX="35" offsetYType="middle" offsetY="2" arrowTargetX="{$surpriseButton}" arrowOffsetXType="left" arrowOffsetX="30" arrowTargetY="{$surpriseButton}" 	arrowOffsetYType="middle" backgroundAlpha="0.8" id="birthdayDialogData" controller="IconController"/>
+			
+			<LoginNeededDialogContent width="380" height="265" id="loginNeededDialogContent" controller="LoginController"/>
+			<HeaderedSimpleDialogData targetX="{$streamContainer}" offsetXType="center" offsetYType="middle" targetY="{$streamContainer}" id="loginNeededDialogData" controller="LoginController" />
+			
+			<LoginDialogContent width="430" height="344" id="loginDialogContent" controller="LoginController"/>
+			<HeaderedSimpleDialogData targetX="{$streamContainer}" offsetXType="center" offsetYType="middle" targetY="{$streamContainer}" id="loginDialogData" controller="LoginController" />
+			
+			<FeedbackDialogContent width="420" height="344" id="feedbackDialogContent" controller="PrivateEndController"/>
+			<HeaderedSimpleDialogData targetX="{$privateEndDisplay}" offsetXType="center" offsetYType="middle" targetY="{$privateEndDisplay}" id="feedbackDialogData" controller="PrivateEndController" />
+			
+			<SignUpDialogContent width="220" height="56" id="signUpDialogContent" controller="ChatInterfaceController"/>
+			<ArrowedDialogData arrowAlign="bottom" targetX="{$chatInterfaceView}" offsetXType="center" targetY="{$chatInterfaceView}" offsetX="0" offsetYType="bottom" offsetY="-50" arrowTargetX="{$chatInterfaceView}" arrowOffsetXType="center" arrowOffsetX="0" arrowOffsetY="-10" arrowTargetY="{$chatInterfaceView}" arrowOffsetYType="top" backgroundAlpha="0.8" autoHide="10000" id="signUpDialogData" controller="ChatInterfaceController"/>
+			
+			<OfflineWarningDialogContent width="234" id="offlineWarningDialogContent" controller="ChatInterfaceController"/>
+			<ArrowedDialogData arrowAlign="bottom" targetX="{$chatInterfaceView}" offsetXType="center" targetY="{$chatInterfaceView}" offsetX="0" offsetYType="bottom" offsetY="-50" arrowTargetX="{$chatInterfaceView}" arrowOffsetXType="center" arrowOffsetX="0" arrowOffsetY="-10" arrowTargetY="{$chatInterfaceView}" arrowOffsetYType="top" backgroundAlpha="0.8" autoHide="10000" id="offlineWarningDialogData" controller="ChatInterfaceController"/>
+			
+			<SafechargeDialogContent width="430" height="178" id="safechargePopupDialogContent" controller="LoginController"/>
+			<HeaderedSimpleDialogData targetX="{$streamContainer}" offsetXType="center" offsetYType="middle" targetY="{$streamContainer}" id="safechargePopupDialogData" controller="LoginController" />
+			
+			<FloatingChatDialogContent minWidth="268" minHeight="38" id="floatingChatDialogContent" controller="ChatController, CustomLayoutController, UserInteractionController"/>
+			<TransparentDialogData id="floatingChatDialogData" contentMargin="0" targetX="{$streamContainer}"  offsetX="-10" offsetXType="right" targetY="{$streamContainer}" offsetYType="bottom" offsetY="-60" controller="ChatController" />
+			
+			<HeaderedMessageDialog width="420" height="206" hasCloseButton="true" id="updateFlashDialogContent"  controller="ChatInterfaceController" />
+			<HeaderedSimpleDialogData modal="true" targetX="{$streamContainer}" offsetXType="center" offsetYType="middle" targetY="{$streamContainer}" id="updateFlashDialogData" controller="ChatInterfaceController"/>
+			
+			<BonusesDialogContent width="430" height="245" id="bonusesDialogContent" controller="PurchaseController"/>
+			<HeaderedSimpleDialogData targetX="{$streamContainer}" offsetXType="center" targetY="{$streamContainer}" offsetYType="middle"  id="bonusesDialogData"  controller="PurchaseController"/>
+			
+			<TppInfoDialogContent id="tppInfoDialogContent" controller="StreamController"/>
+			<SimpleDialogData backgroundAlpha="0.5" contentMargin="1" roundValues="[3,3,3,3]" targetX="{$streamContainer}"  offsetX="0" offsetXType="right" targetY="{$streamContainer}" offsetYType="bottom" offsetY="-10" id="tppInfoDialogData" controller="StreamController, CustomLayoutController" />
+		
+			<PppInfoDialogContent id="pppInfoDialogContent" controller="StreamController"/>
+			<SimpleDialogData backgroundAlpha="1" contentMargin="20" roundValues="[3,3,3,3]" targetX="{$streamContainer}"  offsetX="0" offsetXType="center" targetY="{$streamContainer}" offsetYType="middle" offsetY="0" id="pppInfoDialogData" controller="StreamController" />
+			
+			<MultiStepBuyCreditDialog height="275" width="461" id="multiStepBuyCreditDialogContent" controller="PurchaseController" />
+			<HeaderedSimpleDialogData targetX="{$streamContainer}" offsetXType="center" targetY="{$streamContainer}" offsetYType="middle"  id="multiStepBuyCreditDialogData"  controller="PurchaseController"/>
+		</Dialogs>
+	</state>
+	
+	<state id="privateChat">
+		<Canvas percentWidth="100" percentHeight="100" name="stageCanvas" controller="CustomLayoutController">
+			<Canvas id="streamPanel" controller="CustomLayoutController">
+				<!-- <VBox percentWidth="100" percentHeight="100"> -->
+					<Canvas id="streamContainer" percentWidth="100" percentHeight="100" controller="CustomLayoutController,IconController,GalleryController, UserInteractionController">
+						<VideoBoxBackground id="videoBoxBackground" controller="CustomLayoutController" />
+						<UIComponent top="0" bottom="0" left="0" right="0" id="thumbnailViewerMask" controller="GalleryController" />
+						<JasminLoadingAnimation center="0" middle="0" width="135" height="135" id="loading" controller="StreamController,CustomLayoutController" />
+						<JasminStreamBox maxZoom="20" percentWidth="100" percentHeight="100" keepAspectRatio="false" wheelZoomEnabled="false" id="streamView" controller="StreamController,AutoSnapshotController,CustomLayoutController" />
+						<JasminLoadingAnimation center="0" middle="0" width="135" height="135" id="buffering" controller="StreamController" />
+						<SkinElement src="SnapshotAnim" id="snapshotFlashAnimation" percentWidth="100" percentHeight="100" center="0" middle="0" controller="SnapshotController" />
+						<Canvas percentWidth="100" percentHeight="100" id="snapshotPhotoCanvas" controller="SnapshotController" />
+						<OfflineTeaser visible="false" id="offlineTeaser" percentWidth="100" percentHeight="100" controller="CustomLayoutController,TeaserController" />
+						<Jasmin2DropDownMessage percentWidth="100" height="50" bottom="0" right="0" invertAnimation="true" id="commonDropDownMessage" controller="StreamController,PurchaseController" />
+						<ExitButton top="10" right="10" height="29" autoSizeMargin="10" visible="false" id="exitButton" name="exitButton" controller="IconController, UserInteractionController"/>
+						<LowBalanceMessage percentWidth="100" height="50" bottom="0" right="0" invertAnimation="true" id="lowBalanceMessage" controller="PurchaseController"/>
+						<BasePanel top="8" right="0" width="51" height="29" visible="false" id="liveLabel" name="liveLabel" controller="IconController"/>
+						<Canvas id="streamIconBox" controller="IconController, CustomLayoutController" >
+							<IconList id="topIconList" direction="vertical" gap="4" iconOrder="[personalInfoButton]" controller="IconController, UserInteractionController">
+								<IconButton		height="29" width="29" id="personalInfoButton" name="personalInfoButton" controller="IconController"/>
+							</IconList>
+							<IconList top="33" id="middleIconList" direction="vertical" gap="4" iconOrder="[reportChannelButton,buyCreditButton,favoriteButton,surpriseButton,awardsButton,snapshotButton,galleryButton]" controller="IconController, UserInteractionController">
+								<IconButton		height="29" width="29" id="reportChannelButton" name="reportChannelButton" controller="IconController"/>
+								<IconButton		height="29" width="29" id="buyCreditButton" name="buyCreditButton" controller="IconController"/>
+								<IconButton     height="29" width="29" id="favoriteButton"  name="favoriteButton"  controller="IconController"/>
+								<IconButton  	height="29" width="29" id="surpriseButton"  name="surpriseButton"  controller="IconController"/>
+								<IconButton 	height="29" width="29" id="awardsButton"   	name="awardsButton"    controller="IconController"/>
+								<IconButton 	height="29" width="29" id="snapshotButton"  name="snapshotButton"  controller="IconController"/>
+								<IconButton 	height="29" width="29" id="galleryButton"   name="galleryButton"   controller="IconController,SnapshotController"/>
+								<IconButton		height="29" width="29" id="camButton"		name="camButton"       controller="IconController"/>
+							</IconList>
+							<IconList bottom="0" id="bottomIconList" direction="vertical" gap="4" iconOrder="[volumeButton,qualitySettingsButton,sizeButton]" controller="IconController, UserInteractionController">
+								<IconButton   	height="29"  width="29" id="volumeButton"	name="volumeButton"    controller="IconController"/>
+								<IconButton   	height="29"  width="29" id="qualitySettingsButton"	name="qualitySettingsButton"    controller="IconController"/>
+								<IconButton 	height="29"  width="29" id="sizeButton"     name="sizeButton"      controller="IconController"/>
+							</IconList>
+						</Canvas>
+						<OfflineTeaserUI visible="false" percentWidth="100" percentHeight="100" id="offlineTeaserUI" controller="TeaserController" />
+						<ClosePanel visible="false" width="178" height="28" top="0" right="0" id="closePanel" controller="TeaserController"/>
+						<SurpriseLoader center="0" middle="0" top="2" bottom="2" left="2" right="2" id="surpriseLoader" controller="SurpriseController"/>
+						
+						<PrivateTeaserCountdown id="privateTeaserCountdown" right="10" controller="PrivateTeaserController, CustomLayoutController" />
+					</Canvas>
+				<!-- </VBox> -->
+			</Canvas>
+
+			<Canvas id="chatCanvas" controller="CustomLayoutController, UserInteractionController" >
+				<SkinElement visible="false" alpha="0.7" percentWidth="100" percentHeight="100" src="FullChatBackground" id="chatFullBackground" controller="ChatController" />
+				<VBox percentWidth="100"  percentHeight="100" id="chatContainer">
+					<Canvas percentWidth="100" percentHeight="100" left="0" right="0" top="0" bottom="0" >
+						<SkinElement percentWidth="100" percentHeight="100" src="ChatBackground" id="chatBackground" />
+						<VBox id="chatVBox" percentWidth="100" percentHeight="100" controller="ChatController">
+							<ChatHeader percentWidth="100" id="chatHeader" controller="ChatController,IconController" />
+							<Canvas percentWidth="100" percentHeight="100" >
+								<Canvas percentWidth="100" percentHeight="100" id="chatBoxContainer" controller="CustomLayoutController" >
+									<Canvas percentWidth="100" percentHeight="100" top="3">
+										<Canvas percentWidth="100" percentHeight="100" id="chatHitBox" controller="ChatController" />
+										<J2ChatBox left="2" right="2" top="0" bottom="1" id="chatView" controller="ChatController" />
+										<SkinElement percentWidth="100" height="30" left="5" right="15" src="ChatGradient" id="chatGradient" controller="ChatController"/>
+									</Canvas>
+									<IconList right="20" top="0" correctSize="true" gap="1" id="chatIconList"  controller="ChatController" >
+										<IconButton  width="14" height="15"  id="sizeUpBtn" controller="ChatController" />
+										<IconButton  width="14" height="15"  id="sizeDownBtn" controller="ChatController" />
+									</IconList>
+								</Canvas>
+								<SkinElement percentWidth="100" percentHeight="100" src="DisabledBottomLayer" id="disabledChatForeground" controller="ChatController" />
+							</Canvas>
+						</VBox>
+					</Canvas>
+					<Canvas id="chatInterfaceCanvas" percentWidth="100" top="2" left="4" right="4" height="42" controller="CustomLayoutController" >
+						<SkinElement visible="true" percentWidth="100" height="38" id="chatInputBg" src="ChatInputBg" controller="ChatInterfaceController"/>
+						<ChatInterface percentWidth="100" height="38" id="chatInterfaceView" btnMargin="5" controller="ChatInterfaceController"/>
+						<ChatSendToogleButton style="disabled" right="5" middle="0" width="50" height="28" name="sendButton" id="sendButton" controller="ChatInterfaceController" />
+						<SkinElement percentWidth="100" percentHeight="100" src="DisabledFullLayer" id="disabledInputForeground" controller="ChatInterfaceController" />
+						<IconButton middle="2" name="translateButton"  id="translateButton"  controller="ChatInterfaceController"/>
+					</Canvas>
+				</VBox>
+			</Canvas>
+			
+			<Canvas id="privateCamToCamPanel" controller="CustomLayoutController">
+				<MemberCameraPanel  percentWidth="100" percentHeight="100" margin="0" frameSize="0" id="memberCameraPanel" controller="CamToCamController" />
+			</Canvas>
+		</Canvas>
+		
+		<Dialogs>
+			<CameraDragAndDropPanel minWidth="220" minHeight="165" id="floatingMemberCameraDialogContent" controller="CamToCamController" />
+			<TransparentDialogData targetX="{$streamView}" offsetXType="left" offsetX="35" targetY="{$streamView}" offsetYType="top" offsetY="250" id="floatingMemberCameraDialogData" controller="CamToCamController" />
+			
+			<GalleryDialogContent id="galleryDialogContent" controller="GalleryController,CustomLayouController"/>
+			<TransparentDialogData contentMargin="0" targetX="{$streamContainer}"  offsetX="0" offsetXType="left" targetY="{$streamContainer}" offsetYType="top" offsetY="0" id="galleryDialogContentData" controller="GalleryController" />
+			
+			<ThumbnailDialogContent id="thumbnailDialogContent" controller="GalleryController"/>
+			<SimpleDialogData backgroundAlpha=".85" contentMargin="20" roundValues="[3,3,3,3]" targetX="{$streamContainer}"  offsetX="0" offsetXType="center" targetY="{$streamContainer}" offsetYType="middle" offsetY="0" id="thumbnailDialogData" controller="GalleryController" />
+			
+			<SimpleMessageDialog id="teaserMessageDialogContent" controller="TeaserController"/>
+			<TransparentDialogData contentMargin="0" targetX="{$streamContainer}"  offsetX="0" offsetXType="center" targetY="{$streamContainer}" offsetYType="middle" offsetY="0" id="teaserMessageDialogData" controller="TeaserController" />
+			
+			<SurpriseDialogContent width="420" height="345" id="surpriseDialogContent" controller="IconController, PrivateEndController" />
+			<HeaderedArrowedDialogData arrowAlign="left" targetX="{$surpriseButton}" offsetXType="left" targetY="{$surpriseButton}" offsetX="35" offsetYType="top" offsetY="0" arrowTargetX="{$surpriseButton}" arrowOffsetXType="left" arrowOffsetX="30" arrowOffsetY="NaN" arrowTargetY="{$surpriseButton}" arrowOffsetYType="middle"  id="surpriseDialogData" controller="IconController" />
+			
+			<AwardsVoteDialogContent width="305" height="226" id="awardsVoteDialogContent" controller="AwardsController" />
+			<HeaderedArrowedDialogData autoHide="30000" arrowAlign="left" targetX="{$awardsButton}" offsetXType="left" targetY="{$awardsButton}" offsetX="35" offsetYType="top" offsetY="-40" arrowTargetX="{$awardsButton}" arrowOffsetXType="left" arrowOffsetX="30" arrowOffsetY="NaN" arrowTargetY="{$awardsButton}" arrowOffsetYType="middle"  id="awardsVoteDialogData" controller="AwardsController" />
+			
+			<AwardsVoteInfoDialogContent width="315" height="236" id="awardsVoteInfoDialogContent" controller="AwardsController" />
+			<HeaderedArrowedDialogData autoHide="30000" arrowAlign="left" targetX="{$awardsButton}" offsetXType="left" targetY="{$awardsButton}" offsetX="35" offsetYType="top" offsetY="-40" arrowTargetX="{$awardsButton}" arrowOffsetXType="left" arrowOffsetX="30" arrowOffsetY="NaN" arrowTargetY="{$awardsButton}" arrowOffsetYType="middle"  id="awardsVoteInfoDialogData" controller="AwardsController" />
+			
+			<PersonalInfoDialogContent width="420" height="340" id="personalInfoDialogContent" controller="PersonalInfoController,IconController" />
+			<HeaderedArrowedDialogData arrowAlign="left" targetX="{$personalInfoButton}" offsetXType="left" targetY="{$personalInfoButton}" offsetX="45" offsetYType="top" offsetY="0" arrowTargetX="{$personalInfoButton}" arrowOffsetXType="left" arrowOffsetX="40" arrowOffsetY="NaN" arrowTargetY="{$personalInfoButton}" arrowOffsetYType="middle"  id="personalInfoDialogData" controller="PersonalInfoController" />
+			
+			<ReportChannelDialogContent width="300" height="360" id="reportChannelDialogContent" controller="ReportChannelController,IconController" />
+			<HeaderedArrowedDialogData arrowAlign="left" targetX="{$reportChannelButton}" offsetXType="left" targetY="{$reportChannelButton}" offsetX="45" offsetYType="top" offsetY="0" arrowTargetX="{$reportChannelButton}" arrowOffsetXType="left" arrowOffsetX="40" arrowOffsetY="NaN" arrowTargetY="{$reportChannelButton}" arrowOffsetYType="middle"  id="reportChannelDialogData" controller="ReportChannelController,IconController" />
+			
+			<VolumeDialogContent width="17" height="63" id="volumeDialogContent" controller="IconController"/>
+			<ArrowedDialogData contentMargin="6" arrowAlign="left" targetX="{$volumeButton}" offsetXType="left" targetY="{$volumeButton}" offsetX="35" offsetYType="top" offsetY="0" arrowTargetX="{$volumeButton}" arrowOffsetXType="left" arrowOffsetX="30" arrowOffsetY="NaN" arrowTargetY="{$volumeButton}" arrowOffsetYType="middle" id="volumeDialogData" controller="IconController"/>
+
+			<ScreenSizeDialogContent width="90" height="29" id="screenSizeDialogContent" controller="IconController"/>
+			<ArrowedDialogData contentMargin="0" arrowAlign="left" targetX="{$sizeButton}" offsetXType="left" targetY="{$sizeButton}" offsetX="35" offsetYType="top" offsetY="0" arrowTargetX="{$sizeButton}" arrowOffsetXType="left" arrowOffsetX="30" arrowOffsetY="NaN" arrowTargetY="{$sizeButton}" arrowOffsetYType="middle" id="screenSizeDialogData" controller="IconController"/>
+			
+			<TranslationDialogContent width="106" id="translationDialogContent" controller="ChatInterfaceController" />
+			<ArrowedDialogData contentMargin="6" targetX="{$translateButton}" offsetXType="center" offsetX="0" targetY="{$translateButton}" offsetYType="bottom" offsetY="-30" arrowAlign="bottom" arrowTargetX="{$translateButton}" arrowOffsetXType="center" arrowOffsetX="0" arrowOffsetY="0" arrowTargetY="{$translateButton}" arrowOffsetYType="top" id="translationDialogData" controller="ChatInterfaceController" />
+			
+			<InfoDialog id="bandwidthWarningDialogContent" controller="IconController" />
+			<InfoDialogData arrowAlign="left" targetX="{$qualitySettingsButton}" offsetXType="left" targetY="{$qualitySettingsButton}" offsetX="42" offsetYType="middle" offsetY="2" arrowTargetX="{$qualitySettingsButton}" arrowOffsetXType="left" arrowOffsetX="37" arrowTargetY="{$qualitySettingsButton}" arrowOffsetYType="middle" backgroundAlpha="0.8" id="bandwidthWarningDialogData" controller="IconController"/>
+			
+			<InfoDialog id="tooltipDialogContent" controller="IconController" />
+			<InfoDialogData arrowAlign="left" targetX="{$buyCreditButton}" 			 offsetXType="left" targetY="{$buyCreditButton}" offsetX="35" offsetYType="middle" offsetY="2" arrowTargetX="{$buyCreditButton}" arrowOffsetXType="left" arrowOffsetX="30" arrowTargetY="{$buyCreditButton}" arrowOffsetYType="middle" backgroundAlpha="0.8" id="buyCreditInfoData" 		controller="IconController"/>
+			<InfoDialogData arrowAlign="left" targetX="{$surpriseButton}" offsetX="35" offsetXType="left" targetY="{$surpriseButton}"  			  offsetYType="middle" offsetY="2" arrowTargetX="{$surpriseButton}"  arrowOffsetXType="left" arrowOffsetX="30" arrowTargetY="{$surpriseButton}" arrowOffsetYType="middle" backgroundAlpha="0.8" id="surpriseInfoData" 		controller="IconController"/>
+			<InfoDialogData arrowAlign="left" targetX="{$galleryButton}" offsetX="35" offsetXType="left" targetY="{$galleryButton}"  			  offsetYType="middle" offsetY="2" arrowTargetX="{$galleryButton}"  arrowOffsetXType="left" arrowOffsetX="30" arrowTargetY="{$galleryButton}" arrowOffsetYType="middle" backgroundAlpha="0.8" id="galleryInfoData" 		controller="IconController"/>
+			<InfoDialogData arrowAlign="left" targetX="{$favoriteButton}" offsetX="35" offsetXType="left" targetY="{$favoriteButton}"  			  offsetYType="middle" offsetY="2" arrowTargetX="{$favoriteButton}"  arrowOffsetXType="left" arrowOffsetX="30" arrowTargetY="{$favoriteButton}" arrowOffsetYType="middle" backgroundAlpha="0.8" id="favoriteInfoData" 		controller="IconController"/>
+			<InfoDialogData arrowAlign="left" targetX="{$favoriteButton}" offsetX="42" offsetXType="left" targetY="{$favoriteButton}"  			  offsetYType="middle" offsetY="2" arrowTargetX="{$favoriteButton}"  arrowOffsetXType="left" arrowOffsetX="37" arrowTargetY="{$favoriteButton}" arrowOffsetYType="middle" backgroundAlpha="0.8" id="favoriteChangeInfoData" 		controller="IconController"/>
+			<InfoDialogData arrowAlign="left" targetX="{$snapshotButton}" 			 offsetXType="left" targetY="{$snapshotButton}"  offsetX="35" offsetYType="middle" offsetY="2" arrowTargetX="{$snapshotButton}"  arrowOffsetXType="left" arrowOffsetX="30" arrowTargetY="{$snapshotButton}" arrowOffsetYType="middle" backgroundAlpha="0.8" id="snapshotInfoData" 		controller="IconController"/>
+			<InfoDialogData arrowAlign="left" targetX="{$awardsButton}" 			 offsetXType="left" targetY="{$awardsButton}"  offsetX="35" offsetYType="middle" offsetY="2" arrowTargetX="{$awardsButton}"  arrowOffsetXType="left" arrowOffsetX="30" arrowTargetY="{$awardsButton}" arrowOffsetYType="middle" backgroundAlpha="0.8" id="awardsInfoData" 		controller="IconController"/>
+			<InfoDialogData arrowAlign="left" targetX="{$sizeButton}" 				 offsetXType="left" targetY="{$sizeButton}" 	 offsetX="35" offsetYType="middle" offsetY="2" arrowTargetX="{$sizeButton}" 	 arrowOffsetXType="left" arrowOffsetX="30" arrowTargetY="{$sizeButton}" 	arrowOffsetYType="middle" backgroundAlpha="0.8" id="sizeInfoData" 			controller="IconController"/>
+			<InfoDialogData arrowAlign="left" targetX="{$camButton}"		 			 offsetXType="left" targetY="{$camButton}" 		 offsetX="35" offsetYType="middle" offsetY="2" arrowTargetX="{$camButton}" 		 		arrowOffsetXType="left" arrowOffsetX="30" arrowTargetY="{$camButton}" arrowOffsetYType="middle" backgroundAlpha="0.8" id="cameraInfoData"	 		controller="IconController"/>
+			<InfoDialogData arrowAlign="left" targetX="{$qualitySettingsButton}" 				 offsetXType="left" targetY="{$qualitySettingsButton}" 	 offsetX="42" offsetYType="middle" offsetY="2" arrowTargetX="{$qualitySettingsButton}" 	 arrowOffsetXType="left" arrowOffsetX="37" arrowTargetY="{$qualitySettingsButton}" 	arrowOffsetYType="middle" backgroundAlpha="0.8" id="qualitySettingsInfoData" 			controller="IconController"/>
+			<InfoDialogData arrowAlign="left" targetX="{$personalInfoButton}"	offsetXType="left" targetY="{$personalInfoButton}" 	 offsetX="35" offsetYType="middle" offsetY="2" arrowTargetX="{$personalInfoButton}" 	 arrowOffsetXType="left" arrowOffsetX="30" arrowTargetY="{$personalInfoButton}" 	arrowOffsetYType="middle" backgroundAlpha="0.8" id="personalInfoData" 			controller="IconController"/>
+			
+			<InfoDialog id="chatTooltipDialogContent" controller="ChatInterfaceController" />
+			<InfoDialogData arrowAlign="bottom" targetX="{$translateButton}" offsetXType="center" offsetX="-70" targetY="{$translateButton}"  offsetYType="top" offsetY="-50" arrowTargetX="{$translateButton}" 	 arrowOffsetXType="center" arrowOffsetX="0" arrowTargetY="{$translateButton}" 	arrowOffsetYType="top" backgroundAlpha="0.8" id="translateInfoData" 			controller="ChatInterfaceController"/>
+
+			
+			<HeaderedMessageDialog id="activateSnapshotDialogContent" controller="SnapshotController"/>
+			<HeaderedArrowedDialogData arrowAlign="left" targetX="{$snapshotButton}" offsetXType="left" offsetX="35" targetY="{$snapshotButton}" offsetY="0" offsetYType="middle" arrowTargetX="{$snapshotButton}" arrowOffsetXType="left" arrowOffsetX="30" arrowTargetY="{$snapshotButton}" arrowOffsetYType="middle" id="activateSnapshotDialogData" controller="SnapshotController"/>
+			
+			<HeaderedMessageDialog id="noticeDialogContent"  controller="StreamController" />
+			<HeaderedSimpleDialogData modal="true" targetX="{$streamContainer}" offsetXType="center" offsetYType="middle" targetY="{$streamContainer}" id="noticeDialogData" controller="StreamController"/>
+			
+			<HeaderedMessageDialog id="wentOfflineDialogContent"  controller="StreamController" />
+			<HeaderedSimpleDialogData targetX="{$streamContainer}" offsetXType="center" offsetYType="middle" targetY="{$streamContainer}" id="wentOfflineDialogData" controller="StreamController"/>
+			
+			<QuickBuyDialogContent height="235" width="425" id="quickBuyDialogContent" controller="PurchaseController,IconController,PrivateEndController" />
+			<HeaderedArrowedDialogData arrowAlign="left" targetX="{$buyCreditButton}" offsetXType="left" targetY="{$buyCreditButton}" offsetX="35" offsetYType="top" offsetY="-32" arrowTargetX="{$buyCreditButton}" arrowOffsetXType="left" arrowOffsetX="30" arrowOffsetY="NaN" arrowTargetY="{$buyCreditButton}" arrowOffsetYType="middle"  id="quickBuyDialogData" controller="PurchaseController" />
+			<HeaderedSimpleDialogData targetX="{$privateEndDisplay}" offsetXType="center" targetY="{$privateEndDisplay}" offsetYType="middle"  id="privateEndQuickBuyDialogData"  controller="PurchaseController"/>
+			
+			<HeaderedMessageDialog width="425" id="addFavoritDialogContent"  controller="IconController" />
+			<HeaderedSimpleDialogData targetX="{$streamContainer}" offsetXType="center" targetY="{$streamContainer}" offsetYType="middle"  id="addFavoritDialogData"  controller="IconController"/>
+			
+			<InvitationDialogContent width ="386" height="272" id="invitationDialogContent" controller="InvitationController" />
+			<InvitationDialogData targetX="{$streamContainer}" offsetXType="center" offsetYType="middle" targetY="{$streamContainer}" id="invitationDialogData" controller="InvitationController"/>
+			
+			<MessageDialog id="privateNoticeDialogContent" controller="GoPrivateController"  />
+			<TransparentDialogData modal="true" targetX="{$streamContainer}" offsetXType="center" offsetYType="middle" targetY="{$streamContainer}" id="privateNoticeDialogData" controller="GoPrivateController" />
+			
+			<LogPrivateChatContent id="logPrivateChatContent" controller="GoPrivateController"/>
+			<SimpleDialogData targetX="{$streamContainer}" offsetXType="center" offsetYType="middle" targetY="{$streamContainer}" id="logPrivateChatContentData" controller="GoPrivateController"/>
+			
+			<HeaderedMessageDialog width="408" id="buyCreditDialogContent" controller="PurchaseController,PrivateEndController,IconController"  />
+			<HeaderedArrowedDialogData arrowAlign="left" targetX="{$snapshotButton}" offsetX="35" offsetXType="left" targetY="{$snapshotButton}" offsetYType="middle" offsetY="0" arrowTargetX="{$snapshotButton}"  arrowOffsetXType="left" arrowOffsetX="30" arrowTargetY="{$snapshotButton}" arrowOffsetYType="middle" id="buyCreditDialogDataSnapshot" controller="PurchaseController"/>
+			<HeaderedArrowedDialogData arrowAlign="left" targetX="{$surpriseButton}" offsetX="35" offsetXType="left" targetY="{$surpriseButton}" offsetYType="middle" offsetY="0" arrowTargetX="{$surpriseButton}"  arrowOffsetXType="left" arrowOffsetX="30" arrowTargetY="{$surpriseButton}" arrowOffsetYType="middle" id="buyCreditDialogDataSurprise" controller="PurchaseController"/>
+			<HeaderedArrowedDialogData targetX="{$streamView}" offsetXType="center" targetY="{$streamView}" offsetYType="middle" id="buyCreditDialogData" controller="PurchaseController" />
+			<HeaderedSimpleDialogData targetX="{$privateEndDisplay}" offsetXType="center" targetY="{$privateEndDisplay}" offsetYType="middle"  id="privateEndBuyCreditDialogData"  controller="PurchaseController"/>
+			
+			<InfoDialog isClose="true" width="200" id="birthdayDialogContent" controller="IconController" />
+			<InfoDialogData arrowAlign="left" targetX="{$surpriseButton}" offsetXType="left" targetY="{$surpriseButton}" offsetX="35" offsetYType="middle" offsetY="2" arrowTargetX="{$surpriseButton}" arrowOffsetXType="left" arrowOffsetX="30" arrowTargetY="{$surpriseButton}" 	arrowOffsetYType="middle" backgroundAlpha="0.8" id="birthdayDialogData" controller="IconController"/>
+			
+			<FloatingChatDialogContent minWidth="268" minHeight="38" id="floatingChatDialogContent" controller="ChatController, CustomLayoutController, UserInteractionController"/>
+			<TransparentDialogData id="floatingChatDialogData" contentMargin="0" targetX="{$streamContainer}"  offsetX="-10" offsetXType="right" targetY="{$streamContainer}" offsetYType="bottom" offsetY="-60" controller="ChatController" />
+			
+			<HeaderedMessageDialog width="420" height="206" hasCloseButton="true" id="updateFlashDialogContent"  controller="ChatInterfaceController" />
+			<HeaderedSimpleDialogData modal="true" targetX="{$streamContainer}" offsetXType="center" offsetYType="middle" targetY="{$streamContainer}" id="updateFlashDialogData" controller="ChatInterfaceController"/>
+			
+			<MultiStepBuyCreditDialog height="275" width="460" id="multiStepBuyCreditDialogContent" controller="PurchaseController" />
+			<HeaderedSimpleDialogData targetX="{$streamContainer}" offsetXType="center" targetY="{$streamContainer}" offsetYType="middle"  id="multiStepBuyCreditDialogData"  controller="PurchaseController"/>
+			
+			<ExitPrivateDialogContent width="320" height="175" id="exitPrivateDialogContent" controller="IconController" />
+			<ArrowedDialogData backgroundAlpha="0.8" targetX="{$exitButton}" offsetXType="right" offsetX="-10" targetY="{$exitButton}" offsetYType="top" offsetY="40" arrowAlign="top" arrowTargetX="{$exitButton}" arrowOffsetXType="right" arrowOffsetX="-30" arrowOffsetY="35" arrowTargetY="{$exitButton}" arrowOffsetYType="top" id="exitPrivateDialogData" controller="IconController" />
+		</Dialogs>
+	</state>
+</application>

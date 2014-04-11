@@ -1,0 +1,25 @@
+PHTTP50.16.211.237"î
+BGET /themes/vice/statics/js/jquery.popupwindow.js?v5096 HTTP/1.1
+Host: www.vice.com
+Connection: keep-alive
+Accept: */*
+vUser-Agent: Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/31.0.1650.63 Safari/537.36
+$Referer: http://www.vice.com/en_us
+$Accept-Encoding: gzip,deflate,sdch
+!Accept-Language: en-US,en;q=0.8
+
+*ß
+HTTP/1.1 200 OK
+Accept-Ranges: bytes
+Content-Type: text/javascript
+%Date: Tue, 08 Apr 2014 22:33:53 GMT
+!ETag: "62901-5d1-4b0293e775bc0"
+.Last-Modified: Wed, 26 Oct 2011 01:04:55 GMT
+Server: nginx
+Content-Length: 1489
+Connection: keep-alive
+Ó
+/*
+ * jQuery popupWindow
+ */
+(function(a){a.fn.popupWindow=function(b){return this.each(function(){a(this).click(function(){a.fn.popupWindow.defaultSettings={centerBrowser:0,centerScreen:0,height:500,left:0,location:0,menubar:0,resizable:0,scrollbars:0,status:0,width:500,windowName:null,windowURL:null,top:0,toolbar:0};settings=a.extend({},a.fn.popupWindow.defaultSettings,b||{});var c="height="+settings.height+",width="+settings.width+",toolbar="+settings.toolbar+",scrollbars="+settings.scrollbars+",status="+settings.status+",resizable="+settings.resizable+",location="+settings.location+",menuBar="+settings.menubar;settings.windowName=this.name||settings.windowName;settings.windowURL=this.href||settings.windowURL;var d,e;if(settings.centerBrowser){if(a.browser.msie){d=(window.screenTop-120)+((((document.documentElement.clientHeight+120)/2)-(settings.height/2)));e=window.screenLeft+((((document.body.offsetWidth+20)/2)-(settings.width/2)))}else{d=window.screenY+(((window.outerHeight/2)-(settings.height/2)));e=window.screenX+(((window.outerWidth/2)-(settings.width/2)))}window.open(settings.windowURL,settings.windowName,c+",left="+e+",top="+d).focus()}else{if(settings.centerScreen){d=(screen.height-settings.height)/2;e=(screen.width-settings.width)/2;window.open(settings.windowURL,settings.windowName,c+",left="+e+",top="+d).focus()}else{window.open(settings.windowURL,settings.windowName,c+",left="+settings.left+",top="+settings.top).focus()}}return false})})}})(jQuery);

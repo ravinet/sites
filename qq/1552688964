@@ -1,0 +1,26 @@
+PHTTP195.27.31.250"š
+%GET /js/replace_pid.min.js HTTP/1.1
+Host: cb.alimama.cn
+Connection: keep-alive
+Accept: */*
+vUser-Agent: Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/31.0.1650.63 Safari/537.36
+ëReferer: http://www.taobao.com/go/act/sale/txsy320x3302.php?pid=mm_26051537_2367569_9302512&tanxdspv=http%3A%2F%2Frdstat.tanx.com%2Ftrd%3F%26f%3D%26k%3Da09e279ad7f7a12a%26p%3Dmm_26051537_2367569_9302512%26pvid%3D0aed111f000071a45344751d0024a533%26s%3D320x330%26d%3D88888888%26t%3D1396995357&u=http%3A%2F%2Fwww.qq.com%2F&r=&t=3&k=&pid=mm_26051537_2367569_9302512
+$Accept-Encoding: gzip,deflate,sdch
+!Accept-Language: en-US,en;q=0.8
+
+*Æ
+HTTP/1.1 200 OK
+Server: ATS/3.2.0
+%Date: Tue, 08 Apr 2014 21:01:31 GMT
+5Content-Type: application/x-javascript; charset=GBK
+Content-Length: 1935
+.Last-Modified: Tue, 15 Nov 2011 07:24:01 GMT
+(Expires: Tue, 08 Apr 2014 22:36:24 GMT
+Cache-Control: max-age=7200
+Accept-Ranges: bytes
+Age: 4470
+AVia: http/1.1 l2hk1 (ATS [cRs f ]), http/1.1 de1 (ATS [cRs f ])
+Vary: Accept-Encoding
+Connection: keep-alive
+‘
+(function(){com_alimama=window.com_alimama||{};com_alimama.util=window.com_alimama.util||{};if("function"!==typeof(com_alimama.util.domReady)){com_alimama.util.domReady=function(d){var c=com_alimama.util.domReady;if("function"!==typeof(d)){return}if(c.ready){return d()}if(c.timer){c.fns.push(d)}else{if(window.attachEvent){attachEvent("onload",c.isDomReady)}else{addEventListener("load",c.isDomReady,false)}c.fns=[d];c.isDomReady()}};com_alimama.util.domReady.isDomReady=function(){var d=com_alimama.util.domReady;if(d.ready){return false}if(document&&document.getElementsByTagName&&document.getElementById&&document.body){if("undefined"!==typeof(d.timer)){clearTimeout(d.timer)}d.timer=null;for(var c=0;c<d.fns.length;c++){d.fns[c]()}d.fns=null;d.ready=true}else{d.timer=setTimeout(d.isDomReady,50)}}}var a=false;var b=function(){if(a){return}var p=window.location.href;var m=p.match(/mm_\d{0,24}_\d{0,24}_\d{0,24}/i);var n=p.match(/[&\?](pvid=[^&]*)/i);if(n&&n[1]){n=n[1]}else{n=""}var j=p.match(/(refpos=(\d{0,24}_\d{0,24}_\d{0,24})?(,[a-z]+)?)(,[a-z]+)?/i);if(j&&j[0]){j=j[0]}else{j=""}var f=new RegExp("%3Dmm_\\d+_\\d+_\\d+","ig");var e=new RegExp("mm_\\d+_\\d+_\\d+","ig");if(m){m=m[0];var h=document.getElementsByTagName("A");for(var l=0;l<h.length;l++){h[l].href=g(h[l].href)}var k=document.getElementsByTagName("iframe"),o;for(var l=0;l<k.length;l++){o=k[l].getAttribute("goto");k[l].src=g(!!o?o:k[l].src)}var d=document.getElementsByTagName("area");for(var l=0;l<d.length;l++){d[l].href=g(d[l].href)}var q=p.match(/w=mmp4ptest[^&]{0,}/i);if(q){var c=new RegExp("w=mmp4ptest[^&]{0,}","gmi");for(var l=0;l<h.length;l++){h[l].href=h[l].href.replace(c,q[0])}for(var l=0;l<k.length;l++){k[l].src=k[l].src.replace(c,q[0])}}}a=true;function g(i){i=i.replace(/refpos[=(%3D)]\w*/ig,j).replace(f,"%3D"+m+"%26"+n.replace("=","%3D")).replace(e,m);if(n.length>0){i+="&"+n}return i}};com_alimama.util.domReady(b);setTimeout(b,3000)})();

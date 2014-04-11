@@ -1,0 +1,58 @@
+PHTTP31.192.122.226"’
+GET /js/localdata.js HTTP/1.1
+Host: www.youjizz.com
+Connection: keep-alive
+Accept: */*
+vUser-Agent: Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/31.0.1650.63 Safari/537.36
+"Referer: http://www.youjizz.com/
+$Accept-Encoding: gzip,deflate,sdch
+!Accept-Language: en-US,en;q=0.8
+DCookie: PHPSESSID=rqdrsda89d4f3vdc4tg1e824q3; RNLBSERVERID=ded1418
+
+*ÂK
+HTTP/1.1 200 OK
+Server: nginx/1.4.4
+%Date: Tue, 08 Apr 2014 22:37:44 GMT
+(Content-Type: application/x-javascript
+Content-Length: 9396
+.Last-Modified: Mon, 23 Sep 2013 16:22:38 GMT
+Connection: close
+ETag: "52406ace-24b4"
+Accept-Ranges: bytes
+¶I
+function findValue(li) {
+	if( !!li.extra ) var sValue = li.extra[0];
+	else var sValue = li.selectValue;
+}
+
+function selectItem(li) {
+	findValue(li);
+}
+
+function formatItem(row) {
+	return row[0] + " (id: " + row[1] + ")";
+}
+
+function lookupLocal(){
+	var oSuggest = $("#youjizzsearch")[0].autocompleter;
+	oSuggest.findValue();
+	return false;
+}
+
+$(document).ready(function() {
+
+	$("#youjizzsearch").autocompleteArray(
+		[
+			"mature", "hentai", "asian", "milf", "teen", "ebony", "lesbian", "amateur", "japanese", "mom", "german", "anal", "shemale", "creampie", "gay", "anime", "pov", "big", "tits", "belle", "brandi", "massage", "french", "squirt", "bbw", "teacher", "latina", "japan", "black", "tori", "interracial", "ann", "lisa", "handjob", "gangbang", "orgy", "indian", "threesome", "party", "russian", "wife", "public", "office", "virgin", "young", "lesbians", "blonde", "compilation", "mother", "school", "college", "cartoon", "group", "italian", "busty", "solo", "marie", "phoenix", "nurse", "blowjob", "fuck", "team", "hardcore", "bondage", "ass", "teens", "homemade", "rape", "priya", "rai", "dee", "sophie", "booty", "orgasm", "fox", "gabriella", "doctor", "alexis", "texas", "webcam", "brunette", "fetish", "hairy", "daughter", "incest", "squirting", "julia", "isis", "taylor", "vintage", "granny", "old", "defloration", "bukkake", "cumshot", "shower", "angelina", "eva", "jenna", "presley", "skinny", "secretary", "audrey", "bitoni", "classic", "masturbation", "redhead", "chubby", "pornstar", "tranny", "feet", "amy", "reid", "haze", "swallow", "schoolgirl", "kenner", "kinzie", "babysitter", "rachel", "starr", "benz", "nikki", "city", "titty", "karera", "asia", "brazil", "emo", "rough", "retro", "shyla", "stylez", "brazilian", "sleep", "sister", "search", "youjizz", "fat", "mandingo", "stockings", "ginger", "lee", "rayne", "veronica", "beach", "maid", "rocco", "drunk", "girlfriend", "student", "korean", "facial", "cute", "cum", "hot", "cock", "jizz", "cora", "arab", "maria", "ozawa", "son", "jay", "sara", "deepthroat", "grey", "sasha", "dad", "casting", "celebrity", "fisting", "pregnant", "ava", "devine", "monster", "goth", "thai", "sexy", "gianna", "michaels", "british", "mason", "moore", "bing", "carmella", "lane", "tory", "car", "outdoor", "lela", "star", "lexi", "latin", "gag", "pool", "huge", "oil", "bus", "strip", "euro", "couple", "dildo", "esperanza", "gomez", "bathroom", "piss", "curvy", "cheating", "jameson", "boobs", "halston", "holly", "bang", "gang", "animation", "double", "naomi", "first", "time", "sienna", "west", "home", "cougar", "cam", "strapon", "pussy", "gym", "akira", "asa", "babe", "stoya", "girl", "kitty", "lingerie", "ashlynn", "brooke", "sex", "natural", "aletta", "ocean", "faye", "foot", "dylan", "ryder", "dick", "petite", "sleeping", "jane", "jesse", "extreme", "penetration", "cherokee", "pinky", "tight", "pinay", "family", "milan", "priscilla", "turkish", "police", "latex", "deep", "throat", "bikini", "cumpilation", "panties", "blond", "machine", "and", "amature", "valentine", "on", "strap", "madison", "scott", "jap", "forced", "amber", "amatuer", "masturbate", "real", "hilton", "paris", "slave", "foursome", "reagan", "james", "jayden", "glory", "hole", "north", "peter", "mercedez", "nina", "tanaka", "tia", "spanish", "hard", "man", "voyeur", "punk", "hartley", "small", "kayden", "kross", "oral", "funny", "masturbating", "cheerleader", "italia", "mommy", "grandpa", "conner", "tied", "india", "patrick", "tera", "housewife", "milk", "roxxx", "filipina", "ricki", "white", "cumshots", "deauxma", "vega", "veronique", "johnny", "sins", "scandal", "father", "daisy", "jessica", "lynn", "korea", "stocking", "oiled", "kitchen", "model", "pee", "chinese", "money", "little", "gagging", "pissing", "tiny", "bath", "haley", "wilde", "hooker", "hand", "job", "bdsm", "step", "slut", "madelyn", "surprise", "fist", "seduce", "sadie", "taboo", "czech", "glasses", "belladonna", "swingers", "flame", "penny", "may", "whore", "reality", "twins", "faltoyano", "rita", "jenaveve", "jolie", "caught", "animal", "friend", "horse", "doggy", "beautiful", "lenee", "shawna", "uniform", "pantyhose", "banks", "briana", "austin", "daddy", "footjob", "jaymes", "bond", "tease", "smoking", "mckenzie", "scat", "katie", "kardashian", "kim", "sperm", "kagney", "toys", "morgan", "hotel", "dirty", "cheat", "mexican", "boss", "milfs", "femdom", "hanna", "love", "hidden", "linares", "rebecca", "baby", "shit", "lichelle", "kincaid", "wet", "bisexual", "audition", "nun", "duvalle", "lacey", "leon", "vanessa", "dance", "horny", "dorm", "cody", "club", "blow", "red", "delta", "head", "swinger", "fire", "jada", "gina", "wild", "brother", "nicole", "ray", "boy", "trans", "raven", "riley", "brutal", "mya", "nichole", "tit", "raped", "sunny", "bigtits", "rose", "sativa", "internal", "angel", "dark", "emma", "heart", "bald", "mariah", "milano", "barby", "lanny", "midget", "boots", "d", "katsumi", "mmf", "train", "cream", "dp", "russia", "dog", "lady", "sonia", "interview", "busting", "myth", "older", "riding", "toilet", "workout", "eve", "lawrence", "high", "pigtails", "elena", "grimaldi", "work", "shy", "celeb", "bible", "girls", "gloryhole", "charley", "chase", "pink", "mynx", "tiffany", "swedish", "greek", "keys", "london", "august", "latinas", "memphis", "monroe", "puma", "swede", "spy", "perfect", "cuckold", "pain", "ivy", "bitch", "suck", "stone", "nipples", "lily", "skirt", "brazzers", "daniels", "stormy", "heather", "hendrix", "jenny", "thailand", "muscle", "innocent", "carmel", "turk", "water", "tattoo", "blue", "hungarian", "daphne", "rosen", "karter", "linn", "knox", "diamond", "foxxx", "lesbo", "lauren", "fuentes", "monique", "mum", "naruto", "gilf", "andy", "sandimas", "anderson", "pamela", "bree", "olson", "porn", "devon", "polish", "digivanni", "tiffani", "japanes", "crazy", "sweet", "kinky", "best", "kylee", "strutt", "the", "janine", "nylon", "carmen", "luvana", "romain", "sandra", "naughty", "barbie", "roxx", "tanya", "butt", "teenager", "game", "force", "nacho", "husband", "ladyboy", "krystal", "steal", "stripper", "mff", "licking", "heels", "jenni", "titfuck", "blair", "brandy", "fingering", "boat", "movie", "savannah", "stern", "facials", "threesomes", "rain", "kelly", "moms", "aunt", "gone", "layne", "rihanna", "bride", "condom", "pie", "kox", "swap", "sybian", "webcams", "liz", "vicious", "claire", "dames", "bizarre", "ramon", "aoi", "sora", "sisters", "allie", "hayes", "hannah", "cindy", "hope", "pornstars", "renna", "ryann", "thick", "doggystyle", "shemales", "bloopers", "fake", "ashlyn", "rae", "giselle", "monet", "kristal", "summers", "missy", "arabic", "farm", "punish", "abused", "animated", "arse", "natasha", "nice", "vietnamese", "deutsch", "kissing", "bella", "brianna", "china", "lick", "abuse", "grandma", "toon", "abbey", "brooks", "storm", "bangbros", "kristina", "made", "banner", "up", "scream", "leone", "flexible", "blood", "three", "shot", "filipino", "face", "ice", "la", "street", "cop", "camgirls", "panty", "wifey", "catalina", "asshole", "gauge", "hair", "allyssa", "hall", "flower", "tucci", "titjob", "cytherea", "amore", "cyrus", "miley", "jail", "ride", "rhodes", "janet", "european", "toy", "drake", "melissa", "futanari", "indonesia", "bell", "child", "taylore", "sport", "torture", "argentina", "chick", "lupe", "punishment", "disgrace", "jordan", "kacey", "alanah", "friends", "lezzers", "mouth", "free", "videos", "adult", "video", "insertion", "freak", "upskirt", "lex", "steele", "nurses", "milking", "boyfriend", "finger", "thomas", "sarah", "vandella", "plumber", "amia", "amateurs", "kenzi", "nuns", "paes", "lolita", "amazing", "kassin", "katja", "cash", "diane", "kiara", "pussyplay", "stepmom", "mikayla", "olivia", "sitter", "beauty", "devil", "nessa", "moretti", "couch", "trina", "clara", "morgane", "frost", "stolen", "wedding", "bed", "room", "neighbor", "kianna", "kayla", "paige", "kiss", "story", "vip", "students", "bisex", "teagan", "angelika", "nylons", "spanking", "sauna", "english", "gold", "striptease", "kapri", "styles", "danielle", "derek", "dutch", "humiliated", "squirts", "wrestling", "joslyn", "lopez", "luscious", "babes", "sin", "beurette", "dominatrix", "trainer", "carrera", "ex", "olsen", "siffredi", "alektra", "graves", "courtney", "cummz", "jill", "bangbus", "gaping", "choke", "sheridan", "spank", "ashli", "orion", "jackson", "brasil", "mama", "jerk", "erotic", "sandy", "house", "henger", "kenzie", "b", "bridgette", "bi", "tarzan", "nerd", "fishnet", "gf", "seduces", "vette", "vicky", "break", "spring", "pretty", "electra", "american", "xxx", "guy", "outside", "army", "passionate", "breeze", "pizza", "luv", "saint", "silvia", "clit", "soccer", "kid", "britney", "spears", "jasmine", "cartoons", "capri", "uncle", "bigass", "nasty", "bar", "touched", "main", "mindy", "gorgeous", "talks", "gape", "bizzare", "prison", "mika", "tan", "kids", "kat", "fishnets", "tape", "teenage", "jeremy", "ron", "brynn", "tyler", "teach", "facesitting", "five", "megan", "cruz", "blackmail", "pinoy", "cry", "domina", "yasmine", "brittney", "skye", "asain", "bubble", "snow", "julian", "byrne", "vibrator", "sparxxx", "parker", "foxx"
+		],
+		{
+			delay:10,
+			minChars:1,
+			matchSubset:1,
+			onItemSelect:selectItem,
+			onFindValue:findValue,
+			autoFill:true,
+			maxItemsToShow:10
+		}
+	);
+});

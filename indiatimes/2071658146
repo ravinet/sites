@@ -1,0 +1,32 @@
+PHTTP64.12.106.9"“
+#GET /cs.ashx?site=800700 HTTP/1.1
+ Host: leadback.advertising.com
+Connection: keep-alive
+TAccept: text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8
+vUser-Agent: Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/31.0.1650.63 Safari/537.36
+$Accept-Encoding: gzip,deflate,sdch
+!Accept-Language: en-US,en;q=0.8
+”Cookie: ACID=Lb550013969944620037; ASCID=Lb550013969944620037; F1=B8ZcENlAAAAA8eDDAEAAgEABAAAABAAAAEAAgEwBAAAACRbAAEAAgEA; FC=CJ/jkZoFEgcIoAIQ1d0h
+
+*Ú
+HTTP/1.1 200 OK
+%Date: Tue, 08 Apr 2014 22:01:03 GMT
+Server: Microsoft-IIS/6.0
+X-Powered-By: ASP.NET
+X-AspNet-Version: 2.0.50727
+FP3P: CP=NOI DSP COR LAW CURa DEVa TAIa PSAa PSDa OUR BUS UNI COM NAV
+'Cache-Control: private, max-age=86400
+(Expires: Wed, 09 Apr 2014 22:01:03 GMT
+(Content-Type: text/html; charset=utf-8
+Content-Length: 490
+ì
+<script type='text/javascript'>
+    var _comscore = _comscore || [];
+    _comscore.push({ c1: "8", c2: "2115", c3: "1925", ca3: "2041", cb3: "2037" });
+
+    (function() {
+        var s = document.createElement("script"), el = document.getElementsByTagName("script")[0]; s.async = true;
+        s.src = (document.location.protocol == "https:" ? "https://secure.uac" : "http://uac") + ".advertising.com/cs/beacon.js";
+        el.parentNode.insertBefore(s, el);
+     })();
+</script>

@@ -1,0 +1,25 @@
+PHTTP74.121.139.103"ž
+NGET /sync/img?mt_exid=13&mt_exuid=2873947235734926964&mm_bnc&mm_bct HTTP/1.1
+Host: sync.mathtag.com
+Connection: keep-alive
+Accept: image/webp,*/*;q=0.8
+vUser-Agent: Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/31.0.1650.63 Safari/537.36
+$Accept-Encoding: gzip,deflate,sdch
+!Accept-Language: en-US,en;q=0.8
+3Cookie: uuid=83975348-524e-4e00-aa30-07eab4395dbb
+
+*§
+HTTP/1.1 302 Found
+%Date: Fri, 11 Apr 2014 20:36:30 GMT
+Content-Type: image/gif
+Content-Length: 0
+Connection: keep-alive
+Keep-Alive: timeout=360
+mServer: mt2/2.10.2.rc1+26c5168 CORE-1658-uuid-random-patch Mar  4 2014 19:08:19 ord-pixel-x6 pid 0xed0 3792
+Cache-Control: no-cache
+PP3P: CP="NOI DSP COR NID CURa ADMa DEVa PSAa PSDa OUR BUS COM INT OTC PUR STA"
+fSet-Cookie: mt_mop=13:1397248590; domain=.mathtag.com; path=/; expires=Sun, 11-May-2014 20:36:30 GMT
+5Location: http://pixel.mathtag.com/event/img?mm_bnc
+ZSet-Cookie: mt_misc=; domain=.mathtag.com; path=/; expires=Sun, 11-May-2014 20:36:30 GMT
+(Expires: Fri, 11 Apr 2014 20:36:29 GMT
+

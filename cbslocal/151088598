@@ -1,0 +1,32 @@
+PHTTP
+18.7.20.69"î
+GET /crossdomain.xml HTTP/1.1
+!Host: motifcdn2.doubleclick.net
+Connection: keep-alive
+vUser-Agent: Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/31.0.1650.63 Safari/537.36
+Accept: */*
+çReferer: http://ad.doubleclick.net/adi/N3753.158901.DATAXU/B7970662.10;sz=728x90;click=http://i.w55c.net/cl?t=1&btid=YWY1M2NjNzgyNDQzMWFjNjg1ZTg3ZTM2ODg3MzQ1MGQyYzhlYzhiY3xSRlRLbW5ib0pIfDEzOTY5OTI4MjY5MjR8MXwwRnk3WTdtQVZ0fDBSRkxud3dNZ1F8OTU0ZTE5ZWUtOTI1Mi00MWZkLTkxMDgtZWVjYzhhYjgzNmNhfDEwMDAwMDB8fHx8MTIuMFB8VVNE&ei=RUBICON&tpc=&rurl=;ord=6654054148721587?
+$Accept-Encoding: gzip,deflate,sdch
+!Accept-Language: en-US,en;q=0.8
+PCookie: id=22512c02e60200df||t=1396992825|et=730|cs=002213fd4814cca5c4f62e985a
+
+*õ
+HTTP/1.1 200 OK
+Server: Apache
+5ETag: "adb6a2c1ae7705ddf1599956b34e42c2:1222813852"
+.Last-Modified: Tue, 30 Sep 2008 22:30:52 GMT
+Accept-Ranges: bytes
+Content-Length: 339
+Content-Type: application/xml
+%Date: Tue, 08 Apr 2014 21:33:48 GMT
+Connection: keep-alive
+Õ
+<?xml version="1.0"?>
+<!DOCTYPE cross-domain-policy SYSTEM
+"http://www.adobe.com/xml/dtds/cross-domain-policy.dtd">
+
+<cross-domain-policy>
+	<site-control permitted-cross-domain-policies="all"/>
+	<allow-access-from domain="*" secure="false"/>
+	<allow-http-request-headers-from domain="*" headers="*" secure="false"/>
+</cross-domain-policy>

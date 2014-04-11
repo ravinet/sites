@@ -1,0 +1,42 @@
+PHTTP54.243.74.65"é
+0GET /tag/?clientId=15&campaignId=1034 HTTP/1.1
+!Host: dynamic.cannedbanners.com
+Connection: keep-alive
+Accept: */*
+vUser-Agent: Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/31.0.1650.63 Safari/537.36
+$Referer: http://www.teespring.com/
+$Accept-Encoding: gzip,deflate,sdch
+!Accept-Language: en-US,en;q=0.8
+
+*ç
+HTTP/1.1 200 OK
+5Content-Type: application/javascript; charset=utf-8
+%Date: Tue, 08 Apr 2014 22:27:09 GMT
+ Server: Apache/2.2.26 (Amazon)
+X-Powered-By: PHP/5.3.28
+Content-Length: 898
+Connection: keep-alive
+„
+
+var delay = setTimeout(function(){
+var pixelDataObject = new Object();
+pixelDataObject.window_location_pathname = window.location.pathname;
+pixelDataObject.domain = document.domain;
+pixelDataObject.document_url = document.URL;
+
+if (document.getElementById("pre_checkout_form_campaign_id") != null) {
+	var tag = document.getElementById("pre_checkout_form_campaign_id");
+	segId = tag.value;
+	pixelDataObject.segment_id = segId;
+}
+pixelDataJsonString = JSON.stringify(pixelDataObject);
+show_pixel(location.protocol+"//dynamic.cannedbanners.com/pixel/?pixelData="+encodeURIComponent(pixelDataJsonString)+"&clientId=15&campaignId=1034",1,1,"");
+},500);
+function show_pixel(src, width, height, alt) {
+    var pixel = document.createElement("img");
+    pixel.src = src;
+    pixel.width = width;
+    pixel.height = height;
+    pixel.alt = alt;
+    document.body.appendChild(pixel);
+}

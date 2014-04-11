@@ -1,0 +1,23 @@
+PHTTP64.94.107.49"â
+˜GET /seg/r;a=p-41yObSuSE7DTI;rand=241828360;redirect=http://beacon.krxd.net/data.gif?_kdpid=60658cab-0a68-42f9-a299-b4dee97e21c4&segs=!qcsegs HTTP/1.1
+Host: segapi.quantserve.com
+Connection: keep-alive
+Accept: image/webp,*/*;q=0.8
+vUser-Agent: Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/31.0.1650.63 Safari/537.36
+'Referer: http://www.rollingstone.com/
+$Accept-Encoding: gzip,deflate,sdch
+!Accept-Language: en-US,en;q=0.8
+
+*–
+HTTP/1.1 302 Found
+Connection: close
+^Location: http://beacon.krxd.net/data.gif?_kdpid=60658cab-0a68-42f9-a299-b4dee97e21c4&segs=D
+rSet-Cookie: mc=53447672-0b3f1-01d03-f7bca; expires=Thu, 08-Oct-2015 22:21:38 GMT; path=/; domain=.quantserve.com
+IP3P: CP="NOI DSP COR NID CURa ADMa DEVa PSAo PSDo OUR SAMa IND COM NAV"
+>Cache-Control: private, no-cache, no-store, proxy-revalidate
+Pragma: no-cache
+(Expires: Fri, 04 Aug 1978 12:00:00 GMT
+Content-Length: 0
+%Date: Tue, 08 Apr 2014 22:21:38 GMT
+Server: QS
+

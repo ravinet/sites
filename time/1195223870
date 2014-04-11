@@ -1,0 +1,24 @@
+PHTTP199.27.78.184"‚
+#GET /js/chartbeat_pub.js HTTP/1.1
+Host: static.chartbeat.com
+Connection: keep-alive
+Accept: */*
+vUser-Agent: Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/31.0.1650.63 Safari/537.36
+Referer: http://time.com/
+$Accept-Encoding: gzip,deflate,sdch
+!Accept-Language: en-US,en;q=0.8
+2If-Modified-Since: Wed, 02 Apr 2014 03:20:37 GMT
+
+*Ñ
+HTTP/1.1 304 Not Modified
+%Date: Tue, 08 Apr 2014 22:28:44 GMT
+Via: 1.1 varnish
+.Last-Modified: Wed, 02 Apr 2014 03:20:37 GMT
+Cache-Control: max-age=7200
+(Expires: Wed, 02 Apr 2014 05:21:01 GMT
+Connection: keep-alive
+X-Served-By: cache-at50-ATL
+X-Cache: HIT
+X-Cache-Hits: 22291784
+Vary: Accept-Encoding
+

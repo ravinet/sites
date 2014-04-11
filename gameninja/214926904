@@ -1,0 +1,26 @@
+PHTTP68.67.152.227"ê
+2GET /a_usersync?c=9&cbfn=ANX_async_load HTTP/1.1
+Host: ib.adnxs.com
+Connection: keep-alive
+Accept: */*
+vUser-Agent: Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/31.0.1650.63 Safari/537.36
+4Referer: http://gameninja.com/1active/cpmo160.html
+$Accept-Encoding: gzip,deflate,sdch
+!Accept-Language: en-US,en;q=0.8
+ùCookie: icu=ChIIu60HEAoYASABKAEwuJegmgUKEgj7ugsQChgBIAEoATC4l6CaBRC4l6CaBRgB; anj=dTM7k!M4/Acvig%e6AqeU2khs#)e<@*fUt*!j_iAf2yn7!j(`7Q.VB9W4Ai_L$t(a/)-.w2?ZFTv+nA:?pIXXQ0Wc_'5Gqb+c?XSXj=A-4O@Kf.eF6#+`mSggqMl<q=0Ou; sess=1; uuid2=8428432024626226280
+
+*Ó
+HTTP/1.1 200 OK
+,Cache-Control: no-store, no-cache, private
+Pragma: no-cache
+(Expires: Sat, 15 Nov 2008 16:00:00 GMT
+†P3P: policyref="http://cdn.adnxs.com/w3c/policy/p3p.xml", CP="NOI DSP COR ADM PSAo PSDo OURo SAMo UNRo OTRo BUS COM NAV DEM STA PRE"
+X-XSS-Protection: 0
+sSet-Cookie: uuid2=8428432024626226280; path=/; expires=Thu, 10-Jul-2014 15:35:20 GMT; domain=.adnxs.com; HttpOnly
+`Set-Cookie: sess=1; path=/; expires=Sat, 12-Apr-2014 15:35:20 GMT; domain=.adnxs.com; HttpOnly
+åSet-Cookie: anj=dTM7k!M40me8)4*e6AqeU2khs#)e<@*fUt*!j_iAf2nqgNaKu.e%K4.h7uKBlv*Yg0Q%>E0Yi'RVtu?gE.Szr:(I-3:5-8?<O)*!Gh7`qi9m6@fGmLrZfO@W.zc<S.j(U9S(WLk; path=/; expires=Thu, 10-Jul-2014 15:35:20 GMT; domain=.adnxs.com; HttpOnly
+&Content-Type: application/javascript
+%Date: Fri, 11 Apr 2014 15:35:20 GMT
+Content-Length: 138
+Œ
+ANX_async_load({"url":"http://r.openx.net/set?pid=408c9df8-85fe-6893-4938-ccbfd204601e&rtb=8428432024626226280", "c":8, "tagtype":"img"});

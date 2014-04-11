@@ -1,0 +1,35 @@
+PHTTP199.27.76.196"ÿ
+ÌGET /v1/urls/count.json?url=http%3A%2F%2Fallrecipes.com%2FRecipe%2FSpinach-and-Feta-Pita-Bake%2FDetail.aspx&ref=http%3A%2F%2Fallrecipes.com%2F&source=6&callback=PIN_1396992384625.f.callback[11] HTTP/1.1
+Host: widgets.pinterest.com
+Connection: keep-alive
+Accept: */*
+vUser-Agent: Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/31.0.1650.63 Safari/537.36
+!Referer: http://allrecipes.com/
+$Accept-Encoding: gzip,deflate,sdch
+!Accept-Language: en-US,en;q=0.8
+
+*Ž
+HTTP/1.1 200 OK
+-Cache-Control: must-revalidate, max-age=887
+&Content-Type: application/javascript
+(Expires: Tue, 08 Apr 2014 21:41:04 GMT
+Server: nginx/1.1.19
+Via: 1.1 varnish
+)X-Pinterest-Host: widgets.pinterest.com
+X-Pinterest-RID: 863419686829
+Transfer-Encoding: chunked
+%Date: Tue, 08 Apr 2014 21:26:24 GMT
+Via: 1.1 varnish
+	Age: 20
+Connection: keep-alive
+ X-Served-By: cache-jfk1035-JFK
+X-Cache: HIT
+X-Cache-Hits: 1
+(X-Timer: S1396992384.330020189,VS0,VE0
+’
+20
+PIN_1396992384625.f.callback[11]
+5f
+({"count": 2956, "url": "http://allrecipes.com/Recipe/Spinach-and-Feta-Pita-Bake/Detail.aspx"})
+0
+

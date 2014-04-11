@@ -1,0 +1,31 @@
+PHTTP66.117.23.101"ù
+éGET /m2/southwestairlines/mbox/ajax?mboxHost=www.southwest.com&mboxSession=1396995935034-300124&mboxPage=1396995935737-100177&screenHeight=600&screenWidth=800&browserWidth=780&browserHeight=518&browserTimeOffset=-240&colorDepth=24&mboxXDomain=enabled&mboxCount=5&mbox=swa_home_promo_2&mboxId=0&mboxTime=1396981535737&mboxURL=http%3A%2F%2Fwww.southwest.com%2F&mboxReferrer=&mboxVersion=41 HTTP/1.1
+'Host: southwestairlines.tt.omtrdc.net
+Connection: keep-alive
+Accept: */*
+vUser-Agent: Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/31.0.1650.63 Safari/537.36
+$Referer: http://www.southwest.com/
+$Accept-Encoding: gzip,deflate,sdch
+!Accept-Language: en-US,en;q=0.8
+MCookie: mboxSession=1396995935034-300124; mboxPC=1396995935034-300124.25_49
+
+*‹
+HTTP/1.1 200 OK
+pragma: no-cache
+-Content-Type: text/JavaScript;charset=UTF-8
+Content-Length: 810
+%Date: Tue, 08 Apr 2014 22:25:34 GMT
+Server: Test & Target
+¨
+var mboxCurrent = mboxFactories.get('default').get('swa_home_promo_2',0);mboxCurrent.setOffer(new mboxOfferAjax('<!-- Offer Id: 116533  --><div id=\"promo_2\"><\/div>\n<!-- Offer Id: 114295  -->'));mboxCurrent.getOffer().setOnLoad(function() {
+SWA.contentSwap('#promo_2', '/fragments/generated/homepage/promo_area/promo2_homepage_nm_chase.shtml', '/fragments/generated/homepage/promo_area/error_promo_segmentation.shtml');
+
+/*T&T to SiteCat v4 ==>Response Plugin*/
+window.s_tnt = window.s_tnt || '', tntVal = '67359:0:0,';
+if (window.s_tnt.indexOf(tntVal) == -1) {
+window.s_tnt += tntVal
+}
+if (mboxCurrent.getFetcher().getType() == 'ajax' && (window.s && window.s.tl)) {
+s.tl('TnT', 'o', 'TnT');
+}
+});mboxCurrent.loaded();mboxFactories.get('default').getPCId().forceId("1396995935034-300124.25_49");

@@ -1,0 +1,107 @@
+PHTTP54.230.21.227"æ
+5GET /s/js/onebyone/jquery.touchwipe.min.js HTTP/1.1
+Host: cdn.directrev.com
+Connection: keep-alive
+Accept: */*
+vUser-Agent: Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/31.0.1650.63 Safari/537.36
+$Referer: http://www.directrev.com/
+$Accept-Encoding: gzip,deflate,sdch
+!Accept-Language: en-US,en;q=0.8
+
+*á
+HTTP/1.1 200 OK
+(Content-Type: application/x-javascript
+Content-Length: 2174
+Connection: keep-alive
+%Date: Tue, 08 Apr 2014 12:17:13 GMT
+.Last-Modified: Fri, 14 Sep 2012 18:05:35 GMT
+*ETag: "f4e805b3764a24ebb12cde101e03a037"
+Accept-Ranges: bytes
+Server: AmazonS3
+Age: 33700
+X-Cache: Hit from cloudfront
+GVia: 1.1 75ca7ad837a89e7f0c66622f87e28069.cloudfront.net (CloudFront)
+GX-Amz-Cf-Id: oClp8X3sOFyQ96mpddoJX1Rxs5upEj6Pv1iEoyjftnidhtqgb-iUzA==
+€
+/**
+ * jQuery Plugin to obtain touch gestures from iPhone, iPod Touch and iPad, should also work with Android mobile phones (not tested yet!)
+ * Common usage: wipe images (left and right to show the previous or next image)
+ * 
+ * @author Andreas Waltl, netCU Internetagentur (http://www.netcu.de)
+ * @version 1.1.1 (9th December 2010) - fix bug (older IE's had problems)
+ * @version 1.1 (1st September 2010) - support wipe up and wipe down
+ * @version 1.0 (15th July 2010)
+ */
+(function($) { 
+   $.fn.touchwipe = function(settings) {
+     var config = {
+    		min_move_x: 20,
+    		min_move_y: 20,
+ 			wipeLeft: function() { },
+ 			wipeRight: function() { },
+ 			wipeUp: function() { },
+ 			wipeDown: function() { },
+			preventDefaultEvents: true
+	 };
+     
+     if (settings) $.extend(config, settings);
+ 
+     this.each(function() {
+    	 var startX;
+    	 var startY;
+		 var isMoving = false;
+
+    	 function cancelTouch() {
+    		 this.removeEventListener('touchmove', onTouchMove);
+    		 startX = null;
+    		 isMoving = false;
+    	 }	
+    	 
+    	 function onTouchMove(e) {
+    		 if(config.preventDefaultEvents) {
+    			 e.preventDefault();
+    		 }
+    		 if(isMoving) {
+	    		 var x = e.touches[0].pageX;
+	    		 var y = e.touches[0].pageY;
+	    		 var dx = startX - x;
+	    		 var dy = startY - y;
+	    		 if(Math.abs(dx) >= config.min_move_x) {
+	    			cancelTouch();
+	    			if(dx > 0) {
+	    				config.wipeLeft();
+	    			}
+	    			else {
+	    				config.wipeRight();
+	    			}
+	    		 }
+	    		 else if(Math.abs(dy) >= config.min_move_y) {
+		    			cancelTouch();
+		    			if(dy > 0) {
+		    				config.wipeDown();
+		    			}
+		    			else {
+		    				config.wipeUp();
+		    			}
+		    		 }
+    		 }
+    	 }
+    	 
+    	 function onTouchStart(e)
+    	 {
+    		 if (e.touches.length == 1) {
+    			 startX = e.touches[0].pageX;
+    			 startY = e.touches[0].pageY;
+    			 isMoving = true;
+    			 this.addEventListener('touchmove', onTouchMove, false);
+    		 }
+    	 }    	 
+    	 if ('ontouchstart' in document.documentElement) {
+    		 this.addEventListener('touchstart', onTouchStart, false);
+    	 }
+     });
+ 
+     return this;
+   };
+ 
+ })(jQuery);

@@ -1,0 +1,23 @@
+PHTTP199.233.57.11"ª
+³GET /5/c=2215/rand=319858107/pv=y/seg=lang_en/seg=ampm_PM/seg=site_web_weather_us/seg=pageIdCode_home/seg=mode_default_121/seg=pageDeclaration_undc/seg=zone_home/rt=ifr HTTP/1.1
+Host: bcp.crwdcntrl.net
+Connection: keep-alive
+TAccept: text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8
+vUser-Agent: Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/31.0.1650.63 Safari/537.36
+"Referer: http://www.weather.com/
+$Accept-Encoding: gzip,deflate,sdch
+!Accept-Language: en-US,en;q=0.8
+
+* 
+HTTP/1.1 302 Found
+%Date: Tue, 08 Apr 2014 22:34:41 GMT
+Content-Length: 0
+Connection: keep-alive
+Cache-Control: no-cache
+Pragma: no-cache
+3P3P: CP=NOI DSP COR NID PSAa PSDa OUR UNI COM NAV
+X-Server: 172.22.10.112
+5Set-Cookie: _cc_cc=ctst;Path=/;Domain=crwdcntrl.net
+(Expires: Thu, 01 Jan 1970 00:00:00 GMT
+ÍLocation: http://bcp.crwdcntrl.net/5/ct=y/c=2215/rand=319858107/pv=y/seg=lang_en/seg=ampm_PM/seg=site_web_weather_us/seg=pageIdCode_home/seg=mode_default_121/seg=pageDeclaration_undc/seg=zone_home/rt=ifr
+

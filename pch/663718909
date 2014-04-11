@@ -1,0 +1,196 @@
+PHTTP23.74.28.10"â
+YGET /templates/publishersclearinghouse4/js/jquery.main.js?v=3.1.32.1.454-18308 HTTP/1.1
+Host: www.pch.com
+Connection: keep-alive
+Accept: */*
+vUser-Agent: Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/31.0.1650.63 Safari/537.36
+Referer: http://www.pch.com/
+$Accept-Encoding: gzip,deflate,sdch
+!Accept-Language: en-US,en;q=0.8
+bCookie: deb088d138aa52ddbeb48990e3e58a5e=k12m2f9f5ent563l9fgbgvu270; pdd=D; pci=n3qg5f4gGbPBKvNH
+
+*Þ,
+HTTP/1.1 200 OK
+Server: Apache
+.Last-Modified: Tue, 04 Feb 2014 22:54:43 GMT
+$ETag: "2404c0e-1503-4f19c86a512c0"
+Accept-Ranges: bytes
+Content-Length: 5379
+GP3P: CP="CAO DSP COR CUR ADM DEV TAI PSA PSD IVA IVD CON OUR LEG UNI"
+Content-Type: text/javascript
+%Date: Tue, 08 Apr 2014 22:08:04 GMT
+Connection: keep-alive
+…*
+//set jQuery Ajax default time
+//better we have this setting in some configuration
+$.ajaxSetup({
+	timeout: 30000,
+	error: function(jqXHR, exception) {
+		if(window.console){
+			console.log(jqXHR);
+			console.log(exception);
+		}
+	}
+});
+
+if("onpropertychange" in document && !!window.matchMedia){
+	$("html").addClass("ie ie10");
+}
+if (Object.hasOwnProperty.call(window, "ActiveXObject") && !window.ActiveXObject) {
+    $("html").addClass("ie ie11");
+}
+
+$(document).ready(function(){ 
+	whatsnewpopuptrigger();	
+	
+	// nav menu ga reporting
+	$(".nav-bar span").click(function(){
+		text = $(this).text();		
+		switch(text)
+		{
+			case "Instant Win":	text = "IW"; 	break;
+			case "Sweepstakes":	text = "Sweeps";break;
+			case "Savings":		text = "Save"; 	break;
+			case "Winners":		text = "Win"; 	break;
+			default:  // nothng 
+		}
+		PCHGA.trackVirtualPageView(document.title, 'SiteNav/'+text);
+	});
+	
+	// other channels ga reporting
+	$(".footer-holder h4 a").click(function(){
+		text = $(this).text();		
+		switch(text)
+		{
+			case "PCHsearch&win.com":	text = "Search"; 	break;
+			case "PCHsearchandwin.com":	text = "Search"; 	break;
+			case "PCHgames.com":		text = "Games"; 	break;
+			case "PCHlotto.com":		text = "Lotto"; 	break;
+			case "PCHtv.com":			text = "TV"; 		break;
+			case "PCHonlinesurveys.com":text = "Survey"; 	break;
+			case "PCHsaveandwin.com":	text = "Save"; 		break;		
+			default:  // nothng 
+		}
+		PCHGA.trackVirtualPageView(document.title, 'OtherChannels/'+text);
+	});
+	
+	// other channels right section ga reporting
+	$(".footer-holder .box span").click(function(){
+		text = $(this).text();			
+		switch(text)
+		{
+			case "Customer Service / Info Center":	text = "CustServ"; 	break;
+			case "Scam Prevention":					text = "Scam"; 		break;
+			case "Pay Online":						text = "PayOnline"; break;
+			case "Media Inquiries":					text = "MediaInq"; 	break;
+			case "Sweepstakes Information":			text = "SweepsInfo";break;
+			case "Press Release":					text = "PR"; 		break;
+			case "Advertise With Us":				text = "Advertise"; break;			
+			default:  // nothng 
+		}
+		PCHGA.trackVirtualPageView(document.title, 'OtherChannels/'+text);
+	});
+	
+	// footer menu ga reporting
+	$("#footer-menu .top a").click(function(){
+		text = $(this).text();			
+		switch(text)
+		{
+			case "About PCH":							text = "About"; 	break;
+			case "Pay Online":							text = "Pay"; 		break;
+			case "Magazines":							text = "Mag"; 		break;
+			case "Merchandise":							text = "Merch"; 	break;
+			case "Canadian Residents":					text = "Canadian";	break;
+			case "Privacy Policy":						text = "Privacy"; 	break;
+			case "Terms of Use":						text = "Terms"; 	break;			
+			case "Customer Service":					text = "CustServ"; 	break;
+			case "Official Rules":						text = "Rules"; 	break;
+			case "Sweepstakes Facts":					text = "SweepsFacts"; break;	
+			case "pch.com Publishers Clearing House":	text = "Truste"; 	break;			
+			default:  // nothng 
+		}
+		PCHGA.trackVirtualPageView(document.title, 'Footer/'+text);
+	});
+	
+	// social buttons ga reporting
+	$("#footer-menu .socials a").click(function(){
+		text = $(this).find(".name").text();
+		link = $(this).attr("href");
+		
+		if (text == "PCHblog")
+		{
+			page = document.title.replace("| PCH.com", "");  
+    		page = page.split(' ').join('');    		
+    		_gaq.push(['_trackPageview', '/vp/DESKTOP/'+page+'/Footer/Blog']);
+		}
+		else
+		{			
+			_gaq.push(['_trackSocial', text+'/DESKTOP', 'follow', link]);
+		}
+			
+	});
+	
+	// truste button ga reporting
+	$("#footer-menu .logo2 a").click(function(){
+		PCHGA.trackVirtualPageView(document.title, 'Footer/Truste');
+	});
+	
+	// savings menu ga reporting
+	$(".list-row .menu a").click(function (){
+		var text = $(this).text();
+		if (text == 'Printable Coupons')
+			PCHGA.trackVirtualPageView(document.title, 'Save/Coupons/PrintableCouponsTab');
+		else
+			PCHGA.trackVirtualPageView(document.title, 'Save/Coupons/OnlineDiscountsTab');
+	});
+	
+if($("html").hasClass("ie7")){
+	var zIndexNumber = 1000;
+	$('.uni-nav-bar,.uni-nav-bar div').each(function() {
+		$(this).css('zIndex', zIndexNumber);
+		zIndexNumber -= 10;
+	});
+}
+
+});
+
+function whatsnewpopuptrigger(){	
+	$(".whatsnewpopup .open").click(function(){
+	PCHGA.trackVirtualPageView(document.title, 'SiteNav/WhatsNew');
+	$("#tutorial_holder").overlay().load();
+	$(".scrollable").data("scrollable").seekTo(0);
+	return false;
+	});
+}
+
+// Display image when clicking on more link on unrecognized page
+function toggleBubble() {
+	
+    if ($.browser.msie) $("#moreBubble").addClass("bubbleFadeFix");
+    if ($("#moreBubble").is(':visible')) {
+        $("#moreBubble").fadeOut("normal");
+    } else {        
+        var morePos = $("#more").offset();
+        $("#moreBubble").css({
+        });
+        $("#moreBubble").fadeIn("normal", function () {
+            var isIESix = false;
+            if ($.browser.msie && parseInt($.browser.version) < 7) isIESix = true;
+            if (!isIESix) $("#moreBubble").removeClass("bubbleFadeFix");
+        });
+    }
+    return false;
+}
+
+function addCommas(nStr)
+{
+	nStr += '';
+	x = nStr.split('.');
+	x1 = x[0];
+	x2 = x.length > 1 ? '.' + x[1] : '';
+	var rgx = /(\d+)(\d{3})/;
+	while (rgx.test(x1)) {
+		x1 = x1.replace(rgx, '$1' + ',' + '$2');
+	}
+	return x1 + x2;
+}

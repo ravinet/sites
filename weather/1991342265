@@ -1,0 +1,301 @@
+PHTTP
+18.7.20.70"Ó
+&GET /js/MyForecastWidget.js HTTP/1.1
+Host: www.weather.gov
+Connection: keep-alive
+Accept: */*
+vUser-Agent: Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/31.0.1650.63 Safari/537.36
+"Referer: http://www.weather.gov/
+$Accept-Encoding: gzip,deflate,sdch
+!Accept-Language: en-US,en;q=0.8
+
+*Ê<
+HTTP/1.1 200 OK
+.Last-Modified: Thu, 27 Mar 2014 20:13:21 GMT
+!Server: Apache/2.2.15 (Red Hat)
+Accept-Ranges: bytes
+Content-Length: 7429
+Content-Type: text/javascript
+Cache-Control: max-age=158
+(Expires: Tue, 08 Apr 2014 22:37:27 GMT
+%Date: Tue, 08 Apr 2014 22:34:49 GMT
+Connection: keep-alive
+‡:
+$(document).ready(function() {
+    bindSearchFormHandlers();
+    initForecast();
+});
+
+function initForecast(callback)
+{
+    var latlon = null;
+    var lat = null;
+    var lon = null;
+    var zip = null;
+    if ($.cookie('myForecast') !== null) {
+        latlon = $.cookie('myForecast').split(",");
+        lat = latlon[0];
+        lon = latlon[1];
+        if (typeof latlon[2] !== 'undefined') {
+            zip = latlon[2];
+        }
+    }
+    if ($.cookie("myForecastsess")) {
+        latlon = $.cookie('myForecastsess').split(",");
+        lat = latlon[0];
+        lon = latlon[1];
+        if (typeof latlon[2] !== 'undefined') {
+            zip = latlon[2];
+        }
+    }
+    if (latlon !== null) {
+        hideMyfcstForm();
+        showMyfcstLoading();
+        requestWidget(lat, lon, zip);
+
+    } else {
+        showMyfcstForm();
+    }
+}
+
+function bindMultiHandlers(locations) {
+    $("#myfcst .myfcst-multi").on('click', function() {
+        $("#myfcst").find("#myfcst-location-input").val(oidArray[$(this).attr('oid')].geometry.location).attr('value', oidArray[$(this).attr('oid')].geometry.location);
+        hideMyfcstMulti();
+        getForecast();
+
+        return false;
+    });
+}
+
+function bindForecastHandlers() {
+    $("#myfcst-change-location").on('click', function() {
+        changeLocation();
+    });
+}
+
+function bindSearchFormHandlers()
+{
+    /* attach a submit handler to the form */
+    $("#myfcst-form").on('submit', function(e) {
+        e.preventDefault();
+        getForecast();
+        return false;
+    });
+
+
+    $("#myfcst-location-input").on('focusin', function() {
+        if ($(this).val() === 'City, ST') {
+            $(this).val('');
+        }
+
+        return true;
+    });
+
+
+    $("#myfcst-location-input").on('focusout', function() {
+        if ($(this).val() === '') {
+            $(this).val('City, ST');
+        }
+        return true;
+    });
+}
+
+function changeLocation()
+{
+    $.removeCookie("myForecast", {
+        path: '/'
+    });
+    $.removeCookie("myForecastsess", {
+        path: '/'
+    });
+    $("#myfcst-error").html("");
+    hideMyfcstFcst();
+    hideMyfcstMulti();
+    hideMyfcstLoading();
+    showMyfcstForm();
+}
+
+function loadSingleLocation(location) {
+    var lat = location.feature.geometry.y;
+    var lon = location.feature.geometry.x;
+    var zip = $("#myfcst-location-input").val();
+
+    var patt1 = new RegExp("^[0-9]{5}$");
+    if (patt1.test(zip) === false) {
+        zip = null;
+    }
+
+    requestWidget(lat, lon, zip);
+}
+
+function loadMultipleLocations(locations) {
+    var titleSpan = $('<span />');
+    titleSpan.attr('id', 'myfcst-title');
+    titleSpan.html('More than one location matched your submission');
+
+    var line = $('<div />');
+    line.addClass('myfcst-hr');
+
+    var listUl = $('<ul />');
+    listUl.css('list-style', 'inherit');
+
+    var cancelMulti = $('<div />');
+    cancelMulti.attr('id', 'cancelMulti');
+    cancelMulti.html('Cancel');
+    cancelMulti.on('click', function() {
+        changeLocation();
+    });
+
+    $.each(locations, function(i, loc) {
+        var choiceLi = $('<li />');
+        var choice = $('<span />');
+        choice.addClass('myfcst-multi');
+        choice.html(loc.name);
+        choice.on('click', function() {
+            hideMyfcstMulti()
+            showMyfcstLoading();
+            loadSingleLocation(loc);
+        });
+        choiceLi.append(choice);
+        listUl.append(choiceLi);
+    });
+    $("#myfcst-multi-result").html("");
+    $("#myfcst-multi-result").append(titleSpan);
+    $("#myfcst-multi-result").append(line);
+    $("#myfcst-multi-result").append(listUl);
+    $("#myfcst-multi-result").append(cancelMulti);
+    showMyfcstMulti();
+    hideMyfcstLoading();
+    hideMyfcstForm();
+}
+
+function getForecast() {
+    hideMyfcstForm();
+    showMyfcstLoading();
+    var searchQuery = $("#myfcst-location-input").val();
+
+    ESRI.Geocode.Find( 99,
+        searchQuery,
+        ['city', 'region'],
+        5,
+        function(results, status) {
+            if (status.success === true) {
+                var location = {};
+                if (results.locations.length > 1) {
+                    var loadedNames = [];
+                    var loadedLocations = [];
+
+                    for (var i = 0; i < results.locations.length; i++) {
+                        location = results.locations[i];
+
+                        if (loadedNames.indexOf(location.name) === -1) {
+                            loadedNames.push(location.name);
+                            loadedLocations.push(location);
+                        }
+                    }
+
+                    if (loadedNames.length === 1) {
+                        loadSingleLocation(loadedLocations[0]);
+                    } else {
+                        loadMultipleLocations(loadedLocations);
+                    }
+
+                } else {
+                    location = results.locations[0];
+                    loadSingleLocation(location);
+                }
+            } else {
+                $("#myfcst-error").html("Location not found. Please try again.");
+                hideMyfcstLoading();
+                showMyfcstForm();
+            }
+        }
+    );
+
+}
+
+function requestWidget(lat, lon, zip)
+{
+    var myfcstRemember = ($('#myfcst-remember').is(':checked')) ? true : false;
+    var data = '&lat=' + lat + '&lon=' + lon;
+    var cookieVal = lat + "," + lon;
+    if (zip !== null) {
+        data = data + '&zip=' + zip;
+        cookieVal = cookieVal + ',' + zip;
+    }
+    $.get('/widgets/MyForecastWidget.php',
+          data,
+          function(response) {
+
+            hideMyfcstLoading();
+            if (response === "failure") {
+                //on failure
+                showMyfcstForm();
+                $.removeCookie("myForecast", {path: '/'});
+                $.removeCookie("myForecastsess", {path: '/'});
+                $("#myfcst-error").html("Sorry, no forecast found. Please try again.");
+            } else {
+                //on success
+                if (myfcstRemember === true) {
+                    //set a myForecast cookie if the user wants you too
+                    $.cookie("myForecast", cookieVal, {
+                        expires: 30,
+                        path: '/'
+                    });
+                }
+                //set a session cookie
+                $.cookie("myForecastsess", cookieVal, {path: "/"});
+                showMyfcstFcst();
+                $("#myfcst-form").css("display", "none");
+                $("#myfcst-fcst").html(response);
+                bindForecastHandlers();
+            }
+        }).fail(function(){
+            showMyfcstForm();
+                $("#myfcst-error").html("Service unavailable. Please try again.");
+        });
+}
+
+
+function showMyfcstForm()
+{
+    $("#myfcst-location-input").val("City, ST");
+    $("#myfcst-form").css("display", "block");
+}
+
+function hideMyfcstForm()
+{
+    $("#myfcst-form").css("display", "none");
+}
+
+function showMyfcstFcst()
+{
+    $("#myfcst-fcst").css("display", "block");
+}
+
+function hideMyfcstFcst()
+{
+    $("#myfcst-fcst").html("");
+    $("#myfcst-fcst").css("display", "none");
+}
+
+function showMyfcstMulti()
+{
+    $("#myfcst-multi-result").css("display", "block");
+}
+
+function hideMyfcstMulti()
+{
+    $("#myfcst-multi-result").css("display", "none");
+}
+
+function showMyfcstLoading()
+{
+    $("#myfcst-loading").css("display", "block");
+}
+
+function hideMyfcstLoading()
+{
+    $("#myfcst-loading").css("display", "none");
+}

@@ -1,0 +1,23 @@
+PHTTP216.10.120.7"•
+SGET /cgi-bin/user_ident.cgi?bidder_id=75128&bidder_user_id=qkidd5t4t0w19 HTTP/1.1
+Host: www.burstnet.com
+Connection: keep-alive
+Accept: image/webp,*/*;q=0.8
+vUser-Agent: Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/31.0.1650.63 Safari/537.36
+%Referer: http://shop.nordstrom.com/
+$Accept-Encoding: gzip,deflate,sdch
+!Accept-Language: en-US,en;q=0.8
+
+*£
+HTTP/1.1 302 Found
+%Date: Tue, 08 Apr 2014 22:06:30 GMT
+Server: Apache (Unix)
+kSet-Cookie: BI75128=qkidd5t4t0w19%3A; domain=.burstnet.com; path=/; expires=Mon, 07-Jul-2014 22:06:30 GMT
+jP3P: policyref="http://www.burstnet.com/w3c/p3p.xml", CP="NOI DSP LAW PSAa PSDa OUR IND UNI COM NAV STA"
+Location: /invisible.gif
+Connection: close
+Transfer-Encoding: chunked
+Content-Type: text/plain
+
+0
+

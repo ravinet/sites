@@ -1,0 +1,29 @@
+PHTTP50.16.211.237"à
+4GET /themes/vice/statics/js/slimscroll.js HTTP/1.1
+Host: www.vice.com
+Connection: keep-alive
+Accept: */*
+vUser-Agent: Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/31.0.1650.63 Safari/537.36
+$Referer: http://www.vice.com/en_us
+$Accept-Encoding: gzip,deflate,sdch
+!Accept-Language: en-US,en;q=0.8
+
+*Û#
+HTTP/1.1 200 OK
+Accept-Ranges: bytes
+Content-Type: text/javascript
+%Date: Tue, 08 Apr 2014 22:33:57 GMT
+"ETag: "6290b-10cc-4e4fac8489700"
+.Last-Modified: Wed, 28 Aug 2013 04:54:20 GMT
+Server: nginx
+Content-Length: 4300
+Connection: keep-alive
+Î!
+/*! Copyright (c) 2011 Piotr Rochala (http://rocha.la)
+ * Dual licensed under the MIT (http://www.opensource.org/licenses/mit-license.php)
+ * and GPL (http://www.opensource.org/licenses/gpl-license.php) licenses.
+ *
+ * Version: 1.1.0
+ *
+ */
+(function(a){jQuery.fn.extend({slimScroll:function(b){var c={width:"auto",height:"250px",size:"7px",color:"#000",position:"right",distance:"1px",start:"top",opacity:0.4,alwaysVisible:false,disableFadeOut:false,railVisible:false,railColor:"#333",railOpacity:0.2,railDraggable:true,railClass:"slimScrollRail",barClass:"slimScrollBar",wrapperClass:"slimScrollDiv",allowPageScroll:false,wheelStep:20,touchScrollStep:200};var d=a.extend(c,b);this.each(function(){var v,q,k,o,y,r,n,j,l="<div></div>",s=30,p=false;var z=a(this);if(z.parent().hasClass(d.wrapperClass)){var h=z.scrollTop();t=z.parent().find("."+d.barClass);e=z.parent().find("."+d.railClass);A();if(a.isPlainObject(b)){if("scrollTo" in b){h=parseInt(d.scrollTo)}else{if("scrollBy" in b){h+=parseInt(d.scrollBy)}else{if("destroy" in b){t.remove();e.remove();z.unwrap();return}}}u(h,false,true)}return}d.height=(d.height=="auto")?z.parent().innerHeight():d.height;var i=a(l).addClass(d.wrapperClass).css({position:"relative",overflow:"hidden",width:d.width,height:d.height});z.css({overflow:"hidden",width:d.width,height:d.height});var e=a(l).addClass(d.railClass).css({width:d.size,height:"100%",position:"absolute",top:0,display:(d.alwaysVisible&&d.railVisible)?"block":"none","border-radius":d.size,background:d.railColor,opacity:d.railOpacity,zIndex:90});var t=a(l).addClass(d.barClass).css({background:d.color,width:d.size,position:"absolute",top:0,opacity:d.opacity,display:d.alwaysVisible?"block":"none","border-radius":d.size,BorderRadius:d.size,MozBorderRadius:d.size,WebkitBorderRadius:d.size,zIndex:99});var f=(d.position=="right")?{right:d.distance}:{left:d.distance};e.css(f);t.css(f);z.wrap(i);z.parent().append(t);z.parent().append(e);if(d.railDraggable){t.draggable({axis:"y",containment:"parent",start:function(){k=true},stop:function(){k=false;m()},drag:function(B){u(0,a(this).position().top,false)}})}e.hover(function(){g()},function(){m()});t.hover(function(){q=true},function(){q=false});z.hover(function(){v=true;g();m()},function(){v=false;m()});z.bind("touchstart",function(C,B){if(C.originalEvent.touches.length){y=C.originalEvent.touches[0].pageY}});z.bind("touchmove",function(C){C.originalEvent.preventDefault();if(C.originalEvent.touches.length){var B=(y-C.originalEvent.touches[0].pageY)/d.touchScrollStep;u(B,true)}});if(d.start==="bottom"){t.css({top:z.outerHeight()-t.outerHeight()});u(0,true)}else{if(d.start!=="top"){u(a(d.start).position().top,null,true);if(!d.alwaysVisible){t.hide()}}}w();A();function x(C){if(!v){return}var C=C||window.event;var D=0;if(C.wheelDelta){D=-C.wheelDelta/120}if(C.detail){D=C.detail/3}var B=C.target||C.srcTarget;if(a(B).closest("."+d.wrapperClass).is(z.parent())){u(D,true)}if(C.preventDefault&&!p){C.preventDefault()}if(!p){C.returnValue=false}}function u(G,D,B){var F=G;var E=z.outerHeight()-t.outerHeight();if(D){F=parseInt(t.css("top"))+G*parseInt(d.wheelStep)/100*t.outerHeight();F=Math.min(Math.max(F,0),E);F=(G>0)?Math.ceil(F):Math.floor(F);t.css({top:F+"px"})}n=parseInt(t.css("top"))/(z.outerHeight()-t.outerHeight());F=n*(z[0].scrollHeight-z.outerHeight());if(B){F=G;var C=F/z[0].scrollHeight*z.outerHeight();C=Math.min(Math.max(C,0),E);t.css({top:C+"px"})}z.scrollTop(F);z.trigger("slimscrolling",~~F);g();m()}function w(){if(window.addEventListener){this.addEventListener("DOMMouseScroll",x,false);this.addEventListener("mousewheel",x,false)}else{document.attachEvent("onmousewheel",x)}}function A(){r=Math.max((z.outerHeight()/z[0].scrollHeight)*z.outerHeight(),s);t.css({height:r+"px"});var B=r==z.outerHeight()?"none":"block";t.css({display:B})}function g(){A();clearTimeout(o);if(n==~~n){p=d.allowPageScroll;if(j!=n){var B=(~~n==0)?"top":"bottom";z.trigger("slimscroll",B)}}j=n;if(r>=z.outerHeight()){p=true;return}t.stop(true,true).fadeIn("fast");if(d.railVisible){e.stop(true,true).fadeIn("fast")}}function m(){if(!d.alwaysVisible){o=setTimeout(function(){if(!(d.disableFadeOut&&v)&&!q&&!k){t.fadeOut("slow");e.fadeOut("slow")}},1000)}}});return this}});jQuery.fn.extend({slimscroll:jQuery.fn.slimScroll})})(jQuery);

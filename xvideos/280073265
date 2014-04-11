@@ -1,0 +1,47 @@
+PHTTP141.0.172.76"…
+MGET /tower-1xfooter-1//1//xvideos//display.js?v=0.6605237489566207 HTTP/1.1
+"Host: rpc-php.trafficfactory.biz
+Connection: keep-alive
+Accept: */*
+vUser-Agent: Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/31.0.1650.63 Safari/537.36
+"Referer: http://www.xvideos.com/
+$Accept-Encoding: gzip,deflate,sdch
+!Accept-Language: en-US,en;q=0.8
+
+*Á
+HTTP/1.1 200 OK
+Server: nginx
+%Date: Tue, 08 Apr 2014 22:37:18 GMT
+Content-Type: text/javascript
+Connection: keep-alive
+X-Powered-By: PHP/5.3.3
+4Cache-Control: no-store, no-cache, must-revalidate
+Content-Length: 1869
+Ï
+/*Total Duration : 34.224 ms
+*/
+trackerId = "4cd90fd0833981eddc469b285f206612";
+
+document.getElementById(wpn_ad_configuration[0]['div_id']).innerHTML = '<a href="http://rpc-php.trafficfactory.biz/click/eyJpZF90cmFja2VyIjoiNGNkOTBmZDA4MzM5ODFlZGRjNDY5YjI4NWYyMDY2MTIiLCJ0aW1lc3RhbXAiOjEzOTY5OTY2MzgsImlkX2NhbXBhaWduIjoiMTA2ODUiLCJpZF91c2VyIjoiNDk4IiwiaWRfYmFubmVyIjoyNTIwMTMsImlkX3RhcmdldCI6MzIyMjAsImJpZCI6IjAuMDgzMDAwMDAwMCIsImlzX3JvbiI6ZmFsc2UsImlkX3NpdGUiOjEsImlkX2NhdF9saXN0IjpbXSwiYmFubmVyX3R5cGVfaWQiOjAsImNvX3RyYWNrZXIiOiIifQ==/c69211aecef30f47fbc3f3ebfd9ad282" target="_blank"><img src="http://media.trafficfactory.biz//banners/498/689b5560d4f8454ee39d3b747a9f3448.gif"></a>';
+			document.getElementById(wpn_ad_configuration[1]['div_id']).innerHTML = '<a href="http://rpc-php.trafficfactory.biz/click/eyJpZF90cmFja2VyIjoiNGNkOTBmZDA4MzM5ODFlZGRjNDY5YjI4NWYyMDY2MTIiLCJ0aW1lc3RhbXAiOjEzOTY5OTY2MzgsImlkX2NhbXBhaWduIjoiMjkwMzYiLCJpZF91c2VyIjoiNDk4IiwiaWRfYmFubmVyIjoyNTE0NjMsImlkX3RhcmdldCI6MzU3NzQsImJpZCI6IjAuMDgxMDAwMDAwMCIsImlzX3JvbiI6ZmFsc2UsImlkX3NpdGUiOjEsImlkX2NhdF9saXN0IjpbXSwiYmFubmVyX3R5cGVfaWQiOjEsImNvX3RyYWNrZXIiOiIifQ==/89b1bb261599be1e0ee47cd207e283ad" target="_blank"><img src="http://media.trafficfactory.biz//banners/498/7c0e512a5834552d94c7bc1ed07e241e.jpg"></a>';
+			
+function wpn_set_cookie( name, value, expires, path, domain, secure ) {
+	var today = new Date();
+	today.setTime( today.getTime() );
+	
+	if ( expires ) {
+		expires = expires * 1000 * 60 * 60 * 24;
+	}
+	
+	var expires_date = new Date( today.getTime() + (expires) );
+	
+	var toset = name + "=" +escape( value ) +
+	( ( expires ) ? ";expires=" + expires_date.toGMTString() : "" ) +
+	( ( path ) ? ";path=" + path : "" ) +
+	( ( domain ) ? ";domain=" + domain : "" ) +
+	( ( secure ) ? ";secure" : "" )
+	document.cookie = toset;
+	
+}
+
+wpn_set_cookie('wpn_ad_cookie', trackerId, 1, "/");

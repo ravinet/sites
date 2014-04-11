@@ -1,0 +1,222 @@
+PHTTP
+72.21.91.9"ã
+6GET /web/js/directoryTabs_20140331025227.js HTTP/1.1
+Host: edgecast.cam4s.com
+Connection: keep-alive
+Accept: */*
+vUser-Agent: Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/31.0.1650.63 Safari/537.36
+Referer: http://www.cam4.com/
+$Accept-Encoding: gzip,deflate,sdch
+!Accept-Language: en-US,en;q=0.8
+
+*‹7
+HTTP/1.1 200 OK
+Accept-Ranges: bytes
+Cache-Control: max-age=604800
+Content-Type: text/javascript
+%Date: Tue, 08 Apr 2014 21:33:15 GMT
+Etag: "1768381393"
+(Expires: Tue, 15 Apr 2014 21:33:15 GMT
+.Last-Modified: Mon, 31 Mar 2014 18:52:28 GMT
+Server: ECS (ord/268F)
+X-Cache: HIT
+Content-Length: 6720
+Â4
+function submitData(event) {
+    if (undefined === $j("input[name='abuseType']:checked").val()) {
+        return false;
+    } else {
+        $j('#abuse-form form').submit();
+    }
+
+    var evt = event ? event : window.event;
+    if (evt.preventDefault)
+        evt.preventDefault();
+    evt.returnValue = false;
+
+}
+
+function closeDialog() {
+    $j(abuseDialog).dialog('close');
+    return false;
+}
+
+var plmds = 44;
+var abuseDialog;
+var marginTopButtons;
+
+function makeChoiceAbuse() {
+
+
+    var val = 0;
+    for (i = 0; i < document.reporAbuse.abuseType.length; i++) {
+        if (document.reporAbuse.abuseType[i].checked == true) {
+            val = document.reporAbuse.abuseType[i].value;
+
+            parent.document.getElementById("BroadcasterAmount").style.display = "none";
+            parent.document.getElementById("inappropriateContentSubtypes").style.display = "none";
+            parent.document.getElementById("commentBoxTitle").style.display = "block";
+            parent.document.getElementById("abuseComment").style.marginTop = "5px";
+            parent.document.getElementById("abuseComment").style.marginLeft = "10px";
+            //$j('.ui-dialog-buttonpane').css('margin-top', marginTopButtons+'px');
+            plmds = 44;
+            if (val == 'broadcasterTippingFraud') {
+                parent.document.getElementById("BroadcasterAmount").style.display = "block";
+                parent.document.getElementById("commentBoxTitle").style.display = "none";
+                parent.document.getElementById("abuseComment").style.marginTop = "-5px";
+                parent.document.getElementById("abuseComment").style.marginLeft = "40px";
+            }
+
+            if (val == 'inappropriateContent') {
+                parent.document.getElementById("inappropriateContentSubtypes").style.display = "block";
+                marginTopButtons += 40;
+                //$j('.ui-dialog-buttonpane').css('margin-top', marginTopButtons+'px');
+                plmds = 68;
+            }
+        }
+    }
+    return 0;
+}
+
+
+
+
+$j(function() {
+
+    //$j("#report-abuse").button();
+
+    $j('#abuse-form form').ajaxForm(function() {
+        $j("#abuse-form").dialog('close');
+    });
+
+    $j("#abuse-form input:radio[value^='chatter']").click(function() {
+        $j('#chatter, #chatter label, #chatter input').show();
+    });
+
+    $j("#abuse-form input:radio:not([value^='chatter'])").click(function() {
+        $j('#chatter, #chatter label, #chatter input').hide();
+    });
+
+    $j(document).ready(function() {
+        var options = {
+            target: '#output1', // target element(s) to be updated with server response
+//                beforeSubmit:  showRequest,  // pre-submit callback
+            success: showResponse  // post-submit callback
+        };
+        $j('#abuse-form form').ajaxForm(options);
+    });
+
+    function showRequest(formData, jqForm, options) {
+        var div = $j("output1");
+        div.setStyle({color: 'red'});
+        $j("#output1").html("Sending abuse report now.....");
+        // returning anything other than false will allow the form submit to continue
+        return true;
+    }
+
+    function showResponse(responseText, statusText, xhr, $form) {
+        var t = setTimeout("$j('#abuse-form').dialog('close')", 3000);
+    }
+    $j('.abuse-popup.ui-dialog').css({position: "fixed"});
+
+    $j('#report-abuse')
+            .click(function(event) {
+        /*
+         $j("#abuseChatter").autocomplete({
+         source: getChatters()
+         });
+         $j('#chatter').hide();  //closed for  abuse system change
+         */
+        //closed for abuse system change
+        openAbuseForm("", 'broadcaster');
+    });
+
+});//exit dom ready
+
+function getChatters() {
+    var users = getRoomUsers();
+    return users;
+}
+
+
+
+function openAbuseForm(reportedUserId, status, extraData) {
+    $j("#abuse-form input[name='abuseType']").attr('checked', false);
+    parent.document.getElementById("inappropriateContentSubtypes").style.display = "none";
+    $j('.ui-dialog-buttonpane').css('margin-top', '650px');
+    if (reportedUserId) {
+        $j("#abuse-form input[name='reportedUserId']").val(reportedUserId);
+    }
+    $j("#output1").text("");
+
+    $j('#abuseChatId').remove();
+    $j('#abuseOriginServerId').remove();
+
+    //extraData = chatId
+    if (status === 'viewer' && extraData) {
+        $j('form[name=reporAbuse]').append('<input id="abuseChatId" type="hidden" name="chatId" value="' + extraData + '"/> ');
+    }
+    //extraData = originServerId
+    if (status === 'broadcaster' && extraData) {
+        $j('form[name=reporAbuse]').append('<input id="abuseOriginServerId" type="hidden" name="originServerId" value="' + extraData + '"/> ');
+    }
+
+    switch (status) {
+        case 'viewer':
+            for (var i = 1; i < 5; i++) {
+                $j('#ui-lind' + i).hide();
+            }
+            for (var i = 5; i < 8; i++) {
+                $j('#ui-lind' + i).show();
+            }
+            $j('#ui-lind' + 8).hide();
+            break;
+
+        case 'broadcaster':
+            for (var i = 1; i < 5; i++) {
+                $j('#ui-lind' + i).show();
+            }
+
+            for (var i = 5; i < 8; i++) {
+                $j('#ui-lind' + i).hide();
+            }
+
+            $j('#ui-lind' + 8).show();
+            break;
+
+        default:
+            for (var i = 1; i < 9; i++) {
+                $j('#ui-lind' + i).show();
+            }
+            break;
+    }
+
+    abuseDialog = $j('#abuse-form').dialog({
+        autoOpen: true,
+        width: 520,
+        modal: true,
+        disabled: false,
+        //buttons: dialog_buttons,
+
+        open: function() {
+            $j(".ui-dialog").css("opacity", "1");
+            $j(".ui-dialog").css("position", 'fixed');
+            $j(".ui-dialog").css('top', '10%');
+            $j("#overlayWrap").css("background", "transparent");
+            //$j(".ui-dialog-buttonpane").css("margin-top", marginTopButtons+"px");
+            $j(".ui-dialog-buttonpane").css("z-index", "10000");
+            $j(".ui-resizable").resizable({disabled: true});
+            $j('.ui-dialog .ui-dialog-buttonpane').css({position: "relative"});
+            $j('.ui-dialog .ui-dialog-buttonpane').css({bottom: "75px"});
+            $j('.ui-dialog .ui-dialog-buttonpane').css({marginLeft: "53px"});
+            $j('.ui-dialog .ui-dialog-titlebar').css({display: "none"});
+            $j('.ui-widget-content').css({background: "transparent"});
+            $j('.ui-widget-content').css({border: "none"});
+            $j('.ui-dialog .ui-dialog-buttonpane button').css({float: "left"});
+            //$j("#output1").css('margin-top', plmds+'px');
+        },
+        close: function() {
+        }
+    });//exit abusefrom dialog
+    return 0;
+}

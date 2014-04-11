@@ -1,0 +1,26 @@
+PHTTP54.225.179.184"ú
+,GET /GenericUserSync.ashx?dpid=28 HTTP/1.1
+Host: sync.tidaltv.com
+Connection: keep-alive
+Accept: image/webp,*/*;q=0.8
+vUser-Agent: Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/31.0.1650.63 Safari/537.36
+SReferer: http://w.visualdna.com/analytics/?api_key=telegraph.co.uk&post_message=1
+$Accept-Encoding: gzip,deflate,sdch
+!Accept-Language: en-US,en;q=0.8
+
+*è
+HTTP/1.1 302 Found
+Cache-Control: private
+(Content-Type: text/html; charset=utf-8
+%Date: Tue, 08 Apr 2014 22:27:22 GMT
+ÑLocation: http://e.visualdna.com/conversion?api_key=videology&id=sync&partner_user_id=b90245db-5249-4658-98a6-49245d0e6479&bust=42
+Server: Microsoft-IIS/7.0
+ÄSet-Cookie: tidal_ttid=b90245db-5249-4658-98a6-49245d0e6479; domain=tidaltv.com; expires=Fri, 08-Apr-2016 22:27:22 GMT; path=/
+X-AspNet-Version: 4.0.30319
+X-Powered-By: ASP.NET
+Content-Length: 249
+Connection: keep-alive
+˚
+<html><head><title>Object moved</title></head><body>
+<h2>Object moved to <a href="http://e.visualdna.com/conversion?api_key=videology&amp;id=sync&amp;partner_user_id=b90245db-5249-4658-98a6-49245d0e6479&amp;bust=42">here</a>.</h2>
+</body></html>

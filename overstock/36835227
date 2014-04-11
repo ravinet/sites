@@ -1,0 +1,55 @@
+PHTTP74.119.118.89"–
+eGET /event?a=2364&v=3.0.0&p0=e%3Dexd%26ci%3Dundefined%26site_type%3Dd&p1=e%3Dvh&p2=e%3Ddis HTTP/1.1
+Host: widget.criteo.com
+Connection: keep-alive
+Accept: */*
+vUser-Agent: Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/31.0.1650.63 Safari/537.36
+$Referer: http://www.overstock.com/
+$Accept-Encoding: gzip,deflate,sdch
+!Accept-Language: en-US,en;q=0.8
+
+*æ
+HTTP/1.1 200 OK
+Cache-Control: no-cache
+Pragma: no-cache
+7Content-Type: application/x-javascript; charset=utf-8
+Expires: -1
+Server: Microsoft-IIS/7.5
+4P3P: CP="NON DSP COR CURa PSA PSD OUR BUS NAV STA"
+ySet-Cookie: uid=f0aae448-8850-4753-9c6a-7dff23fe674c; domain=.criteo.com; expires=Wed, 08-Apr-2015 22:07:45 GMT; path=/
+ySet-Cookie: uid=f0aae448-8850-4753-9c6a-7dff23fe674c; domain=.criteo.com; expires=Wed, 08-Apr-2015 22:07:45 GMT; path=/
+›Set-Cookie: uic=*17aIbzw1gOVYZhL%2fTslJBEJt66HcCvh2SXV3aeRJIXuFfW6MrOMfxfzw9tVF5q%2f69; domain=.criteo.com; expires=Wed, 08-Oct-2014 22:07:46 GMT; path=/
+ˆSet-Cookie: acdc=*1530FWA5tPHqFwA4EG4CTqkBUtoW%2fMvvZQHesumR9IGg%3d; domain=.criteo.com; expires=Wed, 08-Oct-2014 22:07:46 GMT; path=/
+wSet-Cookie: udc=*1AjVT%2bgfw%2f8PyH2Istroh8g%3d%3d; domain=.criteo.com; expires=Wed, 08-Oct-2014 22:07:46 GMT; path=/
+%Date: Tue, 08 Apr 2014 22:07:46 GMT
+Content-Length: 942
+°
+/*<!--*/(function() {
+var qss = '&cb=' + Math.floor(Math.random() * 99999999999);
+try {
+    qss += '&ref=' + encodeURIComponent(document.referrer);
+} catch (e) { }
+try {
+    qss += '&sc_r=' + encodeURIComponent(screen.width + 'x' + screen.height);
+} catch (e) { }
+try {
+    qss += '&sc_d=' + encodeURIComponent(screen.colorDepth);
+} catch (e) { }
+
+var callDis = function(pid, domain) {
+    var qr = (document.location.protocol == 'https:' ? 'https:' : 'http:') + '//' + domain + '/dis/dis.aspx';
+    var p = document.createElement('iframe');
+    p.width = p.height = '0';
+    p.style.display = 'none';
+    p.src = (qr + '?p=' + pid + qss).substring(0, 2000);
+
+    var c = document.getElementById('criteoTagsContainer');
+    if (c) {
+        c.appendChild(p);
+    } else {
+        criteo_q.push({ event: 'appendTag', element: p });
+    }
+};
+qss += '&site_type=d';
+callDis(2364, 'dis.ny.us.criteo.com');
+})();/*-->*/

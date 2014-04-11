@@ -1,0 +1,30 @@
+PHTTP72.21.91.109"î
+POST /init.bci HTTP/1.1
+Host: sync.graph.bluecava.com
+Connection: keep-alive
+Content-Length: 0
+(Origin: http://sync.graph.bluecava.com
+vUser-Agent: Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/31.0.1650.63 Safari/537.36
+ Content-Type: application/json
+Accept: */*
+aReferer: http://sync.graph.bluecava.com/i?p=21610488-76a4-4ec3-9682-c6860ecb5837&segment=350401
+$Accept-Encoding: gzip,deflate,sdch
+!Accept-Language: en-US,en;q=0.8
+
+*é
+HTTP/1.1 200 OK
+(Access-Control-Allow-Credentials: true
+ãAccess-Control-Allow-Headers: Accept,Accept-Charset,Accept-Encoding,Accept-Language,Accept-Datetime,Authorization,Cache-Control,Connection,Cookie,Content-Length,Content-MD5,Content-Type,Date,Expect,From,Host,If-Match,If-Modified-Since,If-None-Match,If-Range,If-Unmodified-Since,Max-Forwards,Origin,Pragma,Proxy-Authorization,Range,Referer,TE,User-Agent,Via,Warning,X-Requested-With,DNT,X-Forwarded-For,X-Forwarded-Proto,Front-End-Https,X-ATT-DeviceId,X-Wap-Profile,Proxy-Connection
+NAccess-Control-Allow-Methods: OPTIONS,GET,HEAD,POST,PUT,DELETE,TRACE,CONNECT
+ Access-Control-Allow-Origin: *
+Cache-Control: private
+/Content-Type: application/json; charset=utf-8
+%Date: Tue, 08 Apr 2014 22:35:51 GMT
+EP3P: CP="NON DSP LAW PSAo PSDo IVAo IVDo OTPo OUR SAMo BUS UNI PRE"
+Server: Microsoft-IIS/7.5
+zSet-Cookie: rn=da01cf43-ec61-4c6a-9feb-848da4f0a239; domain=.bluecava.com; expires=Sat, 07-Jun-2014 22:35:51 GMT; path=/
+X-AspNet-Version: 4.0.30319
+X-Powered-By: ASP.NET
+Content-Length: 48
+2
+{"rndm": "da01cf43-ec61-4c6a-9feb-848da4f0a239"}

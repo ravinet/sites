@@ -1,0 +1,25 @@
+PHTTP72.21.81.142"ë
+GET /crossdomain.xml HTTP/1.1
+!Host: thumbs.cdn-ec.viddler.com
+Connection: keep-alive
+vUser-Agent: Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/31.0.1650.63 Safari/537.36
+Accept: */*
+¶Referer: http://www.viddler.com/embed/69c4b741/?f=1&autoplay=1&player=mini&secret=88435017&wmode=transparent&hideablecontrolbar=1&hidestats=1&disablebranding=1&loop=0&nologo=1&hd=0
+$Accept-Encoding: gzip,deflate,sdch
+!Accept-Language: en-US,en;q=0.8
+
+*ò
+HTTP/1.1 200 OK
+Accept-Ranges: bytes
+Content-Type: application/xml
+%Date: Tue, 08 Apr 2014 21:40:19 GMT
+"Etag: "104022a-50-4bd0489f694c0"
+.Last-Modified: Fri, 06 Apr 2012 15:44:59 GMT
+Server: ECAcc (ord/57EE)
+X-Cache: HIT
+Content-Length: 80
+Connection: close
+R
+<cross-domain-policy>
+<allow-access-from domain="*"/>
+</cross-domain-policy>

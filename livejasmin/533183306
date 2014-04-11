@@ -1,0 +1,98 @@
+PHTTP
+72.21.91.9"•
+;GET /2628/memberapplet_awards/appleturl_16_9.xml HTTP/1.1
+$Host: flashx.new.livejasmincdn.com
+Connection: keep-alive
+vUser-Agent: Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/31.0.1650.63 Safari/537.36
+Accept: */*
+BReferer: http://new.livejasmin.com/en/?showPreviousVersionLink=0
+$Accept-Encoding: gzip,deflate,sdch
+!Accept-Language: en-US,en;q=0.8
+
+*»5
+HTTP/1.1 200 OK
+Accept-Ranges: bytes
+ Cache-Control: max-age=2419200
+Content-Type: text/xml
+%Date: Tue, 08 Apr 2014 22:03:39 GMT
+Etag: "53440c2e-1945"
+(Expires: Tue, 06 May 2014 22:03:39 GMT
+.Last-Modified: Tue, 08 Apr 2014 14:48:14 GMT
+Server: ECS (ord/26D0)
+X-Cache: HIT
+,X-Real-Source: flash.new.livejasmincdn.com
+Content-Length: 6469
+Ç2
+<?xml version="1.0" encoding="utf-8" ?>
+<data>
+	<!-- JSM1.0 -->
+	<snapshot_service value="http://109.71.162.220/snapshot/upload?key={$key}&private_id={$privateid}&type={$type}{$andcookiessession}" />
+	<snapshot_info value="http://members.{$site}/faq.php?part=snapshot#snapshot" />
+	<!--<topmember_signup value="topmember/index.php?{$sessionname}={$sessionid}" />-->
+	<!-- <forgot_passowrd value="forgotpass.php?psid={$psid}&pstour={$pstour}&pstool={$pstool}&psprogram={$psprogram}&campaignid={$campaignid}&psref={$psref}&wacctid={$wacctid}&macctid={$macctid}" /> -->
+	<!--<log_private_nojs value="logprivatchat.php?performerid={$performerid}&{$sessionname}={$sessionid}&tags={$tags}" />-->
+	<!--<fanclub value="perfinfo.php?performerid={$performerid}&{$sessionname}={$sessionid}&box=fanclub" target="_self" />-->
+	<sync_so_php value="http://members.{$site}/flash/shared_object.php?session_id={$sessionid}" />
+	<gravity_log value="http://members.{$site}/log_gravity_rec.php?recId={$recid}&performerid={$performerid}&recPos={$recpos}&sessionid={$sessionid}" />
+	<performer_info value="http://members.{$site}/xml/performer_info.php?performerid={$performerid}&{$sessionname}={$sessionid}" />;
+	<!--<base_location value="" />-->
+
+	<!-- JSM2.0 -->
+	<block_private value="{$siteurl}/flash/is-private-blocked" />
+	<pre_private value="{$siteurl}/flash/get-pre-private-status/{$performerid}/{$jsm2session}" />
+	<log_private_service value="{$siteurl}/flash/get-pre-private-chat-data/{$performerid}/{$jsm2session}" />
+	<gallery_service value="{$siteurl}/flash/gallery/{$performerid}/{$size}{$cookiessession}" />
+	<hash_service value="{$siteurl}/flash/get-gallery-images/{$performerid}/{$size}{$cookiessession}" />
+	<check_balance_service value="{$siteurl}/offline-surprise/get-member-balance{$cookiessession}" />
+	<send_surprise_service value="{$siteurl}/offline-surprise/send?performerId={$performerId}&chatType={$chatType}&amount={$amount}&surpriseName={$surpriseName}&isjasmin2={$isJasmin2}{$andcookiessession}" />
+	<login_captcha_service value="{$secureurl}/auth/applet-captcha{$cookiessession}" />
+	<login_service value="{$secureurl}/auth/applet-login{$cookiessession}" />
+	<forgot_password value="{$secureurl}/auth/forgot-password{$cookiessession}" />
+	<loginpage value="{$secureurl}/auth/login?performerId={$performerid}&isOverlay={$isoverlay}{$andcookiessession}" />
+	<register value="{$secureurl}/auth/sign-up?startArea={$area}&performerId={$performerid}&isOverlay={$isoverlay}{$andcookiessession}" />
+	<favorite_service_add value="{$siteurl}/favourite/add-favourite?performerId={$pid}{$andcookiessession}" />
+	<favorite_service_remove value="{$siteurl}/favourite/delete-favourite?performerId={$pid}{$andcookiessession}" />
+	<favorite_service_check value="{$siteurl}/favourite/check-favourite?performerId={$pid}{$andcookiessession}" />
+	<recommender_service value="{$siteurl}/flash/recommendations?count={$count}&category={$category}&lang={$lang}&currentperformer={$currentperformer}&listPageId={$listPageId}&performerChanged={$performerChanged}&currentPid={$currentPid}{$andcookiessession}" />
+	<timeout_service value="{$siteurl}/flash/recommendations?count={$count}&category={$category}&lang={$lang}&currentperformer={$currentperformer}&listPageId={$listPageId}&performerChanged={$performerChanged}&currentPid={$currentPid}{$andcookiessession}" />
+	<buy_credits value="{$secureurl}/auth/credit?performerId={$performerid}&isOverlay={$isoverlay}{$andcookiessession}" target="_blank" />
+	<validate_credit_card value="{$secureurl}/auth/credit?paymentMethodRedirect=1&performerId={$performerid}&isOverlay={$isoverlay}{$andcookiessession}" target="_blank" />
+	<exit_private value ="{$siteurl}/{$cookiessession}" />
+	<freechat value="{$siteurl}/chat/{$performerid}{$cookiessession}" />
+	<go_private value="{$siteurl}/chat/{$performerid}?isprivatestart={$isprivatestart}&twoway={$twoway}{$andcookiessession}" target="_self" />
+	<listpage value="{$siteurl}/{$cookiessession}" />
+	<bio_info_service value="{$siteurl}/flash/get-performer-details/{$performerid}{$cookiessession}{$needconnectionparam}" />
+	<feedback_service value="{$siteurl}/send-feedback{$cookiessession}" />
+	<credit_pack_service value="{$secureurl}/auth/quickbuy/get-credit-packs{$cookiessession}" />
+	<quick_buy_service value="{$secureurl}/auth/quickbuy/start-purchase{$cookiessession}" />
+	<check_quick_buy_service value="{$secureurl}/auth/quickbuy/check-purchase-status{$cookiessession}" />
+	<check_user value="{$siteurl}/flash/check-user{$cookiessession}" />
+	<support value="{$siteurl}/contact-us?page=online-support{$andcookiessession}" target="_blank" />
+	<open_recommended_in_tab value="{$siteurl}/chat/{$performerid}{$cookiessession}" target="_blank" />
+	<safecharge value="{$secureurl}/auth/credit?safecharge=1{$andcookiessession}" target="_self" />
+	<tpp_log value="{$siteurl}/flash/log-bonus-popup/" />
+	<awards_details_service value="{$siteurl}/flash/get-performer-awards-details/" />
+	<add_vote_service value="{$siteurl}/flash/vote/" />
+	<awards_status_service value="{$siteurl}/flash/get-performer-awards-status/" />
+	<add_rating_service value="{$siteurl}/flash/set-performer-rating/" />
+	<get_rating_service value="{$siteurl}/flash/get-performer-rating/{$performerid}" />
+
+	<!-- JS CALLS -->
+	<login_js_notify value="layout.basicController.appletLogin" type="javascript" />
+	<start_private_js_notify value="freeChatWindow.onPrivateClick" type="javascript" />
+	<end_private_js_notify value="freeChatWindow.onPrivateEndClick" type="javascript" />
+	<set_resize_params value="freeChatWindow.setResizeParams" type="javascript" />
+	<exit_chat value="freeChatWindow.onClosePopup" type="javascript" />
+	<add_favorite_js value="favHandler.onClickFavoriteButton" type="javascript" />
+	<header_scroll_handler value="freeChatWindow.headerScrollHandler" type="javascript" />
+	<applet_ready_handler value="freeChatWindow.appletReadyHandler" type="javascript" />
+	<stream_ready_handler value="streamReadyHandler" type="javascript" />
+	<performer_history value="window.freeChatWindow.getNextModel" type="javascript" />
+	<get_max_applet_size value="window.freeChatWindow.getMaxAppletSize" type="javascript" />
+	<private_teaser_left value="window.freeChatWindow.privateTeaserLeft" type="javascript" />
+
+	<!-- Static -->
+	<default_image value="{$staticurl}/image/background/new_performer_222x168.jpg" />
+	<!--Flash Player -->
+	<flash_player_link value="http://get.adobe.com/flashplayer/" target="_blank" />
+</data>

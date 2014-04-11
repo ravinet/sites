@@ -1,0 +1,26 @@
+PHTTP50.16.212.52"€
+:GET /um?partner=adnxs&r=http://ib.adnxs.com/pxj HTTP/1.1
+Host: apiservices.krxd.net
+Connection: keep-alive
+Accept: image/webp,*/*;q=0.8
+vUser-Agent: Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/31.0.1650.63 Safari/537.36
+%Referer: http://www.wikia.com/Wikia
+$Accept-Encoding: gzip,deflate,sdch
+!Accept-Language: en-US,en;q=0.8
+
+*
+HTTP/1.1 302 Found
+Accept-Ranges: bytes
+&Cache-Control: private, max-age=7200
+(Content-Type: text/html; charset=UTF-8
+%Date: Tue, 08 Apr 2014 22:35:49 GMT
+>Location: http://beacon.krxd.net/usermatch.gif?partner=adnxs
+
+X-Age: 0
+X-Cache: MISS
+X-Cache-Hits: 0
+X-Request-Backend: um
+(X-Served-By: apiservices-a008.krxd.net
+Content-Length: 0
+Connection: keep-alive
+

@@ -1,0 +1,83 @@
+PHTTP204.78.50.230"†
+ÆGET /js.ng/ADTYPE=PUSHDOWN&PAGEPOS=1&CATEGORY=HOME&SITE=FOOD&TILE=4449531301&ORD=6993283952&PAGETYPE=HOMEPAGE&UNIQUEID=FOOD_HOMEPAGE_C106C475_B1F9_4BD8_8D97_63C3F2EA8863_1&ADKEY1=NO_MATCH HTTP/1.1
+%Host: adsremote.scrippsnetworks.com
+Connection: keep-alive
+Accept: */*
+vUser-Agent: Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/31.0.1650.63 Safari/537.36
+&Referer: http://www.foodnetwork.com/
+$Accept-Encoding: gzip,deflate,sdch
+!Accept-Language: en-US,en;q=0.8
+
+*Ê)
+HTTP/1.1 200 OK
+%Date: Tue, 08 Apr 2014 21:41:23 GMT
+GServer: Apache/2.2.22 (Unix) mod_ssl/2.2.15 OpenSSL/0.9.8e-fips-rhel5
+oSet-Cookie: NGUserID=a3d01bd-28924-1151457430-1396993283; expires=Wednesday, 30-Dec-2037 16:00:00 GMT; path=/
+&AdServer: snokhlp12.snops.net:6778:1
+ŠP3P: policyref="http://adsremote.scrippsnetworks.com/w3c/p3p.xml", CP="NOI DSP COR CURa ADMa DEVa TAIa CONi OUR BUS IND UNI COM NAV INT"
+$Cache-Control: max-age=0, no-cache
+(Expires: Tue, 08 Apr 2014 21:41:23 GMT
+Pragma: no-cache
+ Access-Control-Allow-Origin: *
+(Access-Control-Allow-Credentials: true
+Content-Length: 4591
+Keep-Alive: timeout=5, max=55
+Connection: Keep-Alive
+(Content-Type: application/x-javascript
+ñ#
+document.write('<!-- 14Mar07_FOOD_Hillshire_PUSHDOWN_HPTO_4.8_cs.html -->\n<!--\nName: Pushdown Flash Creative Template\nVersion: 1.0\nSite: Food.com\nModified: 11-18-2012\n\nUsage: Placeholders are denoted by {{}}. Replace (including brackets) these with your values.\n-->\n\n <!-- Food.com uses a modified version of swfobject which hardcodes the fallback function. Here we load our own as cs_swfobject -->\n  <script src=\"http://adimages.scrippsnetworks.com/lib/swf_object/cs-swfobject-2.2.js\" type=\"text/javascript\" charset=\"utf-8\"><\/script>\n\n <style>\n  #pushdown_adtag .iax_inner {width:994px;margin:0 auto;}\n </style>\n\n <!--The path for your 1x1 goes below-->\n <img src=\"http://ads.pointroll.com/PortalServe/?pid=2246731K45720140221183723&pos=i&r=qyWNIubjuiIidbmvNIc\" border=\"0\" width=\"1\" height=\"1\" alt=\"\" style=\"display:none;\">\n\n<!-- Flash element id set by adserver to avoid conflicts with other ads -->\n<div id=\"cs2304674\"></div>\n\n');
+// Put any Javascript code inside the dominoes callback function. See comments below.
+ var requiredScripts = [
+ // Food.com uses a modified version of swfobject which hardcodes the fallback function. Here we load our own as cs_swfobject
+ "http://adimages.scrippsnetworks.com/lib/swf_object/cs-swfobject-2.2.js"];
+ // AS3 browser popup fix
+ function gotoUrlAs3(url, target) {
+   window.open(url, target);
+ }
+ // Create function in global scope which is called by the dependency script on load.
+ window.iax_run = function() {
+   dominoes(requiredScripts, function() {
+
+     //////////////////////////////
+     // Ad Creative JS Starts Here
+     //////////////////////////////
+
+     var flashvars = {};
+     flashvars.alfredoclick = escape("http://ads.pointroll.com/PortalServe/?pid=2246736X80420140221183723&pos=c&r=qyWNIubjuiIidbmvNIc");
+	 flashvars.gnocchiclick = escape("http://ads.pointroll.com/PortalServe/?pid=2246738J55820140221183723&pos=c&r=qyWNIubjuiIidbmvNIc");
+	 flashvars.hawaiianclick = escape("http://ads.pointroll.com/PortalServe/?pid=2246741I34020140221183723&pos=c&r=qyWNIubjuiIidbmvNIc");
+	 flashvars.overallclick = escape("http://ads.pointroll.com/PortalServe/?pid=2246731K45720140221183723&pos=c&r=qyWNIubjuiIidbmvNIc");
+    
+	 flashvars.sausagealfredo = escape("http://ads.pointroll.com/PortalServe/?pid=2246735S74020140221183723&pos=i&r=qyWNIubjuiIidbmvNIc");
+	 flashvars.gnocchi = escape("http://ads.pointroll.com/PortalServe/?pid=2246737G11120140221183723&pos=i&r=qyWNIubjuiIidbmvNIc");
+	 flashvars.hawaiian = escape("http://ads.pointroll.com/PortalServe/?pid=2246740O20220140221183723&pos=i&r=qyWNIubjuiIidbmvNIc");
+	 flashvars.expand = escape("http://ads.pointroll.com/PortalServe/?pid=2246732V76320140221183723&pos=i&r=qyWNIubjuiIidbmvNIc");
+	 flashvars.collapse = escape("http://ads.pointroll.com/PortalServe/?pid=2246734X46720140221183723&pos=i&r=qyWNIubjuiIidbmvNIc");
+
+     var params = {
+       allowscriptaccess: "always",
+       wmode: "opaque"
+     };
+     var attributes = {
+       id: "pushdown-swf"
+     };
+
+     function callback(e) {
+       if (e.success != true) {
+         var div = document.getElementById("cs2304674");
+         // The Path and link for your image goes below, you can also set your image height and width
+         div.innerHTML = "<a href='http://ads.pointroll.com/PortalServe/?pid=2246731K45720140221183723&pos=c&r=qyWNIubjuiIidbmvNIc' target='_blank'><img src='http://adimages.scrippsnetworks.com/iax/hillshire_farms/2014/pushdown/april/noflash_pd.jpg' alt='Dont be chicken. Cook with sausage.' /></a>";
+         div.style.width = '994px';
+         div.style.height = '66px';
+         div.style.backgroundColor = 'transparent';
+       }
+     }
+     // The path for your swf goes below, dont forget to put ?qyWNIubjuiIidbmvNIc after-->
+     cs_swfobject.embedSWF("http://adimages.scrippsnetworks.com/iax/hillshire_farms/2014/pushdown/april/hf_994x418.swf?qyWNIubjuiIidbmvNIc", "cs2304674", "994", "66", "10.0.0", null, flashvars, params, attributes, callback);
+
+     //////////////////////////////
+     // Ad Creative JS Ends Here
+     //////////////////////////////
+   });
+ }
+document.write('<!-- Load dependency script - DO NOT REMOVE -->\n<script src=\"http://adimages.scrippsnetworks.com/lib/ad-dependency.js\" type=\"text/javascript\" charset=\"utf-8\" id=\"iax-script\"><\/script>\n\n<!-- First Look Tag -->\n<div style=\"display:none;\"><iframe src=\"http://adsremote.scrippsnetworks.com/html.ng/adtype=COOKIE&userType=firstlook\" width=\"1\" height=\"1\" frameborder=\"0\" scrolling=\"no\" marginheight=\"0\" marginwidth=\"0\"></iframe></div>');

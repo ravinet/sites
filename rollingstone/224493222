@@ -1,0 +1,56 @@
+PHTTP23.208.222.193"„
+MGET /js/fe/jquery.equalHeights.db4b33c327402997e04526a2cc0e7e09.js HTTP/1.1
+Host: www.rollingstone.com
+Connection: keep-alive
+Accept: */*
+vUser-Agent: Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/31.0.1650.63 Safari/537.36
+'Referer: http://www.rollingstone.com/
+$Accept-Encoding: gzip,deflate,sdch
+!Accept-Language: en-US,en;q=0.8
+
+*Š
+HTTP/1.1 200 OK
+Accept-Ranges: bytes
+&Content-Type: application/javascript
+"ETag: "138f4e-463-4dee58873a540"
+.Last-Modified: Tue, 11 Jun 2013 19:02:05 GMT
+ Server: Apache/2.2.23 (CentOS)
+Content-Length: 1123
+%Date: Tue, 08 Apr 2014 22:21:35 GMT
+Connection: keep-alive
+å
+$.fn.equalizeChildHeights = function (options) {
+  settings = $.extend({
+    only_visible_children: false
+  }, options);
+  var result = $(this);
+  if ($.browser.msie && $.browser.version == '6.0') {
+    result.children().css("height", "auto");
+  } else {
+    result.children().css("min-height", "0px");
+  }
+  result.each(function () {
+    if (settings.only_visible_children) {
+      var childs = $(this).children(":visible")
+    } else if (settings.child_selector) {
+      var childs = $(this).children(settings.child_selector);
+    } else {
+      var childs = $(this).children();
+    }
+    var tallest = 0;
+    childs.each(function () {
+      var height = $(this).outerHeight();
+      if (height > tallest) tallest = height;
+    });
+    childs.each(function () {
+      var elem = $(this);
+      var remainder = elem.outerHeight() - elem.height();
+      var new_height = tallest - remainder;
+      if ($.browser.msie && $.browser.version == '6.0') {
+        elem.css("height", new_height + "px");
+      } else {
+        elem.css("min-height", new_height + "px");
+      }
+    });
+  });
+};

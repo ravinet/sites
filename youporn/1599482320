@@ -1,0 +1,21 @@
+PHTTP66.254.100.192"³
++GET /ads?zone_id=2547&site_id=30 HTTP/1.1
+Host: ads.trafficjunky.net
+Connection: keep-alive
+TAccept: text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8
+vUser-Agent: Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/31.0.1650.63 Safari/537.36
+1Referer: http://ss.phncdn.com/iframe-1.1.1.html
+$Accept-Encoding: gzip,deflate,sdch
+!Accept-Language: en-US,en;q=0.8
+
+*ë
+HTTP/1.1 200 OK
+%Date: Fri, 11 Apr 2014 22:18:43 GMT
+Content-Type: text/html
+Connection: close
+Content-Length: 655
+>Cache-Control: private, no-cache, no-cache, proxy-revalidate
+Server: Logger/0.1
+~Set-Cookie: tj_UUID=e05eec74-59f5-4bf6-94ba-51a784651ae9; domain=.trafficjunky.net; path=/; Expires=Mon Apr  6 18:18:43 2015
+‘
+<HTML><HEAD><TITLE>Ad delivery system</TITLE><meta name="keywords" content="107187" def="0" z_id="2547" ad_id="793765" qw="1" isave="no" /> <meta name="description" content="" /> <style type="text/css"><!-- a img   { border: 0; } body    { margin: 0; padding: 0; text-align: center;} --> </style> </HEAD><BODY style="background-color:transparent;"><iframe id="2547_1397254723" name="2547_1397254723" src="http://feeds.videosz.com/custom/youporn/950x250.php" width="950" height="250" scrolling="no" frameborder="0" allowtransparency="true" marginwidth="0" marginheight="0" z_id="2547" c_id="107187"  ad_id="793765" def="0" qw="1" ></iframe>  </BODY></HTML>

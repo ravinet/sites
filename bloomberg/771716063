@@ -1,0 +1,154 @@
+PHTTP199.127.194.40"ê
+êGET /lpconfig/cfg/c3.customerName=c3.Bloomberg&c3.sver=2.66.0.70894&c3.platform=FL&c3.token=3275541802?random=229315909&uuid=37325669 HTTP/1.1
+Host: livepass.conviva.com
+Connection: keep-alive
+vUser-Agent: Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/31.0.1650.63 Safari/537.36
+Accept: */*
+$Referer: http://www.bloomberg.com/
+$Accept-Encoding: gzip,deflate,sdch
+!Accept-Language: en-US,en;q=0.8
+ICookie: BIGipServerpool_livepass.conviva.com_http=1543634954.37151.0000
+
+*ﬂ5
+HTTP/1.1 200 OK
+Content-Type: text/xml
+Status: 200
+Content-Length: 6650
+(Expires: Wed, 09 Apr 2014 21:31:20 GMT
+Cache-Control: max-age=86400
+%Date: Tue, 08 Apr 2014 21:31:20 GMT
+Server: lighttpd/1.4.31
+¸3
+<?xml version="1.0"?>
+<livePassConfig ccsWallTimeSec="48296353" serviceConfigVersion="348141" >
+    <common>
+        <gateways>
+            <gateway protocolVersion="0" loadState="available">https://gwa.lphbs.com</gateway>
+            <gateway protocolVersion="0" loadState="available">https://gwb.lphbs.com</gateway>
+            <gateway protocolVersion="0" loadState="available">https://gwc.lphbs.com</gateway>
+            <gateway protocolVersion="0" loadState="available">https://gwd.lphbs.com</gateway>
+        </gateways>
+        <ConfigLoadIgnoreSec value="7"/>
+        <abName value="liveBufferTime5s"/>
+        <alignedHls value="false"/>
+        <bandwidthMbrSafetyPct value="110"/>
+        <baseRecoveryWaitTimeMs value="4000"/>
+        <baseSwitchLockTimeMs value="600000"/>
+        <bufferTrendExtrapolationTimeMs value="20000"/>
+        <bwUpdateIntervalSec value="10"/>
+        <bytesLoadedSwitchDownEnabled value="true"/>
+        <bytesLoadedWindowMs value="7000"/>
+        <checkpointIntervalMs value="40000"/>
+        <chunkRecoveryBufferLengthProvisionPercent value="=50"/>
+        <chunkRecoveryCheckIntervalSec value="3"/>
+        <connectionRacerMemoryEnabled value="false"/>
+        <convivaBwMeasurementEnabled value="false"/>
+        <disableFullChunkReport value="true"/>
+        <disableMonStats value="true"/>
+        <enableDebugOnClients value="2860536375.3848775481.1939848668.2611855624,3732475705.3791942952.3390573077.1301377436"/>
+        <enforcePrecision value="false"/>
+        <externalEventKeyMaxLen value="16"/>
+        <externalEventNameMaxLen value="16"/>
+        <externalEventNumEntriesMaxCount value="10"/>
+        <externalEventTokenBucketDepth value="10"/>
+        <externalEventTokenBucketIntervalSec value="10"/>
+        <externalEventTotalValLenMaxLen value="500"/>
+        <externalEventValMaxLen value="128"/>
+        <fastSwitchUpEnabled value="false"/>
+        <fcSubscribeTryTimes value="3"/>
+        <fcSubscribeUrlRegex value="llnwd\.net"/>
+        <flashAccessModuleDownloadEnabled value="true"/>
+        <flashAccessPingPct value="0"/>
+        <frameDropRatioMediumThreshold value="10"/>
+        <frameDropRatioThreshold value="25"/>
+        <hdsAudioChunkDownloadTimeoutMs value="6000"/>
+        <hdsAudioChunkFailureLockTimeMs value="4000"/>
+        <heartbeatInterval msecs="20000"/>
+        <heartbeatIntervalLightMs value="-1"/>
+        <heartbeatIntervalPauseMs value="-1"/>
+        <heartbeatIntervalUrgentFullMs value="2000"/>
+        <heartbeatIntervalUrgentLightMs value="2000"/>
+        <hlsKeyToken value=""/>
+        <httpBandwidthMbrSafetyPct value="150"/>
+        <httpBaseSwitchLockTimeMs value="60000"/>
+        <httpFrameDropRatioMediumThreshold value="100"/>
+        <httpFrameDropRatioThreshold value="100"/>
+        <httpLiveBufferTimeSec value="5"/>
+        <httpLiveMinimumOffsetSec value="40"/>
+        <httpMaxSwitchLockTimeSec value="120"/>
+        <httpOverrideExternalBufferTime value="true"/>
+        <httpSwitchLockBackoffRate value="2"/>
+        <httpVodBufferTimeMs value="1000"/>
+        <ignoreDroppedFramesIfHidden value="false"/>
+        <inferPlayingStateFromFramerate value="true"/>
+        <initSelectResourceIntervalMs value="800"/>
+        <internalEventEnabled value="true"/>
+        <internalEventKeyMaxLen value="128"/>
+        <internalEventNameMaxLen value="16"/>
+        <internalEventNumEntriesMaxCount value="100"/>
+        <internalEventTokenBucketDepth value="35"/>
+        <internalEventTokenBucketIntervalSec value="2"/>
+        <internalEventTotalValLenMaxLen value="2000"/>
+        <internalEventValMaxLen value="128"/>
+        <joinHbDelayMs value="2000"/>
+        <jsModulePath value="https://livepassdl.conviva.com/ver/2.78.0.16704/LivePassModuleMain.js"/>
+        <keepAliveEnabled value="true"/>
+        <keepAliveSecs value="200"/>
+        <lazySwitchLockEnabled value="false"/>
+        <liveBufferTimeSec value="5"/>
+        <liveLazySwitchBufferLengthThresholdMs value="25000"/>
+        <livePlay2StartTimeoutSec value="8"/>
+        <lzmaEnabled value="false"/>
+        <manifestTimeoutMs value="35000"/>
+        <maxLiveControlBufferEvent value="15"/>
+        <maxLiveControlBufferingTimeSec value="7"/>
+        <maxLiveControlDurationSec value="30"/>
+        <maxLiveControlInitBufferingTimeSec value="11"/>
+        <maxPlayerBufferingIntervalSec secs="300"/>
+        <maxPlayerErrorIntervalSec secs="30"/>
+        <maxPlayerNotMonitoredIntervalSec secs="600"/>
+        <maxPlayerPausedIntervalSec secs="600"/>
+        <maxPlayerStoppedIntervalSec secs="30"/>
+        <maxRecoveryWaitTimeMs value="120000"/>
+        <maxRepeatedEventAgeMs value="90000"/>
+        <maxRepeatedEventsPerSessInfo value="6"/>
+        <maxSwitchLockTimeSec value="1200"/>
+        <maxVodControlBufferingTimeSec value="3"/>
+        <maxVodControlInitBufferingTimeSec value="10"/>
+        <maxZeriControlBufferingTimeSec value="1"/>
+        <minStartStopIntervalMs value="-1"/>
+        <modulePath>https://livepassdl.conviva.com/hf/ver/2.80.0.17654/LivePassModuleMain_osmf.swf</modulePath>
+        <netStreamInfoEnabled value="true"/>
+        <nominalBitrateOverrideEnabled value="false"/>
+        <phtStopThresholdSec value="10"/>
+        <play2Disabled value="false"/>
+        <playStopEnabled value="true"/>
+        <protocolVersion ver="0"/>
+        <recoverForByteRuleEnabled value="true"/>
+        <recoveryWaitBackoffRate value="2"/>
+        <refreshInterval secs="300"/>
+        <resourceSwitchDampenIntervalSec value="300"/>
+        <sdmHbIntervalMs value="20000"/>
+        <selectResourceIntervalMs value="40000"/>
+        <silverModulePath>https://livepassdl.conviva.com/ver/2.78.0.16704/LivePassModuleMain.dll</silverModulePath>
+        <stageVideoEnabled value="false"/>
+        <stitchingMinKeyFrames value="1"/>
+        <stitchingOverlapMs value="0"/>
+        <switchControlCheckIntervalMs value="500"/>
+        <switchControlImpl value="3"/>
+        <switchLockBackoffRate value="2"/>
+        <switchUpMinBufferLengthMs value="14000"/>
+        <syncModeEnabled value="true"/>
+        <tokenExpiredIntervalSec value="30"/>
+        <traceOnSwitchDurationThresholdSec value="60"/>
+        <traceServerUrl value="https://staging.conviva.com"/>
+        <unpublishNotifyEnabled value="true"/>
+        <urlGeneratorTimeoutSec value="-1"/>
+        <useHistBwAtStart value="true"/>
+        <vodBufferTimeMs value="100"/>
+        <vodLazySwitchBufferLengthThresholdMs value="15000"/>
+        <zeriLazySwitchBufferLengthThresholdMs value="15000"/>
+    </common>
+    <alternative name="id" affinity="10000">
+    </alternative>
+</livePassConfig>

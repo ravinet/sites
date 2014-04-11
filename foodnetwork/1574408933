@@ -1,0 +1,26 @@
+PHTTP23.74.28.11"½
+ZGET /services/fnrblogs/rssfeed/data.4.fn-dish$category$shows-2.prod.388054.json HTTP/1.1
+Host: www.foodnetwork.com
+Connection: keep-alive
+8Accept: application/json, text/javascript, */*; q=0.01
+"X-Requested-With: XMLHttpRequest
+vUser-Agent: Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/31.0.1650.63 Safari/537.36
+&Referer: http://www.foodnetwork.com/
+$Accept-Encoding: gzip,deflate,sdch
+!Accept-Language: en-US,en;q=0.8
+]Cookie: s_cc=true; s_nr=1396993283999; gpv_pn=no%20value; s_sq=%5B%5BB%5D%5D; geoadvisory=1
+
+*ù
+HTTP/1.1 200 OK
+Accept-Ranges: bytes
+ Access-Control-Allow-Origin: *
+ Content-Type: application/json
+$ETag: "1c07f838-7a0-4f68d6f03dd97"
+.Last-Modified: Tue, 08 Apr 2014 20:00:20 GMT
+ Server: Apache/2.2.25 (Amazon)
+Content-Length: 1952
+%Date: Tue, 08 Apr 2014 21:41:23 GMT
+Connection: keep-alive
+Vary: User-Agent
+¢
+{"blog-title":"FN Dish \u2013 Food Network Blog Â» Shows","link":"http://blog.foodnetwork.com/fn-dish","lead-title":"The East\u2019s Alex Guarnaschelli Reveals Her Mentoring Strategy \u2014 America\u2019s Best Cook","lead-blog-link":"http://blog.foodnetwork.com/fn-dish/2014/04/alex-guarnaschelli-on-americas-best-cook/","lead-comments":"0","lead-comments-link":"http://blog.foodnetwork.com/fn-dish/2014/04/alex-guarnaschelli-on-americas-best-cook/#comments","lead-image-path":"http://foodnetwork.sndimg.com/content/dam/images/food/secured/fullset/2014/3/3/0/CB_mentor-Alex_s4x3.jpg.rend.snigalleryslide.jpeg","lead-published-date":"0 Hours ago","items":[{"title":"Testing the Cutthroat Sabotages: When a Standard Whisk Won\u2019t Do","blog-link":"http://blog.foodnetwork.com/fn-dish/2014/04/testing-the-sabotages-301/","image-path":"","comments":"4","comments-link":"http://blog.foodnetwork.com/fn-dish/2014/04/testing-the-sabotages-301/#comments","published-date":"Apr 06, 2014"},{"title":"Introducing the Chopped Tournament of Stars Champion","blog-link":"http://blog.foodnetwork.com/fn-dish/2014/04/michael-imperioli-chopped-tournament-of-stars-champion/","image-path":"http://foodnetwork.sndimg.com/content/dam/images/food/secured/fullset/2014/3/26/0/CQ1913_Brandi-Ted-Michael_s4x3.jpg.rend.snigalleryslide.jpeg","comments":"2","comments-link":"http://blog.foodnetwork.com/fn-dish/2014/04/michael-imperioli-chopped-tournament-of-stars-champion/#comments","published-date":"Apr 06, 2014"},{"title":"\u201cAnchovies Are Like the Bacon of the Sea\u201d","blog-link":"http://blog.foodnetwork.com/fn-dish/2014/04/anchovies-are-like-the-bacon-of-the-sea/","image-path":"http://foodnetwork.sndimg.com/content/dam/images/food/fullset/2014/4/4/0/BY0103_Bobby-Flay.jpg.rend.snigalleryslide.jpeg","comments":"1","comments-link":"http://blog.foodnetwork.com/fn-dish/2014/04/anchovies-are-like-the-bacon-of-the-sea/#comments","published-date":"Apr 05, 2014"}]}

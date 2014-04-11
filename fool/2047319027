@@ -1,0 +1,19 @@
+PHTTP54.243.70.246"Î
+%GET /controller.js?id=4903 HTTP/1.1
+Host: tags.wdsvc.net
+Connection: keep-alive
+Accept: */*
+vUser-Agent: Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/31.0.1650.63 Safari/537.36
+Referer: http://www.fool.com/
+$Accept-Encoding: gzip,deflate,sdch
+!Accept-Language: en-US,en;q=0.8
+
+*Ê
+ HTTP/1.1 302 Moved Temporarily
+>location: http://insight.fool.com/container.js?id=4903&v=1.3
+%Date: Tue, 08 Apr 2014 21:41:33 GMT
+Connection: keep-alive
+Transfer-Encoding: chunked
+
+0
+

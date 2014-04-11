@@ -1,0 +1,112 @@
+PHTTP
+18.7.20.69"Ë
+GET /_res/js/app.js HTTP/1.1
+Host: service.prweb.com
+Connection: keep-alive
+Accept: */*
+vUser-Agent: Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/31.0.1650.63 Safari/537.36
+ Referer: http://www.prweb.com/
+$Accept-Encoding: gzip,deflate,sdch
+!Accept-Language: en-US,en;q=0.8
+
+*Ò
+HTTP/1.1 200 OK
+Server: Apache/2.2.3 (CentOS)
+.Last-Modified: Tue, 18 Jan 2011 19:22:52 GMT
+!ETag: "8a643-9ab-49a23d3a23b00"
+Accept-Ranges: bytes
+Content-Length: 2475
+(Content-Type: application/x-javascript
+%Date: Tue, 08 Apr 2014 22:15:36 GMT
+Connection: keep-alive
+­
+$(function() {
+	
+		// clear default form field //
+		
+		jQuery.fn.cleardefault = function() {
+			return this.focus(function() {
+				if( this.value == this.defaultValue ) {
+					this.value = "";
+				}
+			}).blur(function() {
+				if( !this.value.length ) {
+					this.value = this.defaultValue;
+				}
+			});
+		};
+		
+		
+		(function ($) {
+			// VERTICALLY ALIGN FUNCTION
+			$.fn.vAlign = function() {
+				return this.each(function(i){
+				var ah = $(this).height();
+				var ph = $(this).parent().height();
+				var mh = (ph - ah) / 2;
+				$(this).css('margin-top', mh);
+				});
+			};
+			})(jQuery);
+		
+		jQuery("form.clearme input").cleardefault();
+		
+		if ( $('div.compare').length > 0 ) {
+			var leftMargin = ($('div#centering-content-wrapper').outerWidth() - $('div.compare div.button p a').outerWidth()) / 2;
+			$('div.compare div.button p').css({ 'margin-left' : leftMargin } );
+		}
+		
+		if ( $('#subnav div.button').length > 0 ) {
+		
+			$('#subnav div.button').css({'margin-left' : 0});
+		
+			var leftMargin = ($('div#subnav ul li a').width() - $('#subnav div.button p a').outerWidth()) / 2;
+			$('#subnav div.button p').css({ 'margin-left' : leftMargin + 10 } );
+		
+		}
+		
+		if ( $('#content-feature div.button').length > 0 ) {
+		
+			 $('#content-feature div.button').css({'margin-left' : 0});
+		
+			var leftMargin = ($('div.clean-callout').width() - $('#content-feature div.button p a').outerWidth()) / 2;
+			$('#content-feature div.button p').css({ 'margin-left' : leftMargin - 4 } );
+		
+		}
+
+		// use this for images //
+		setupZoom();
+		
+		// use this for flash //
+		$('a.zoom-alt').fancyZoom({directory: 'http://service.prweb.com/_res/js/fancyzoom-alt/images/'});
+		
+		$('.print-article a').click(function(event) { window.print(); event.preventDefault(); return false; });
+		
+		$('#feature-header-text').vAlign();
+		
+		// remove the current country //
+		var countryClass = $("#country-select dt").attr("class").split(/\s+/);
+		
+		$('#country-select dd ul li').each(function() {
+			if ($(this).hasClass(countryClass)) {
+				$(this).remove();
+				return false;
+			}
+		})
+
+		// add the dropdown
+		$("#country-select dt").click(function(e) {
+			$(this).css({ "cursor" : "pointer" });
+			$("ul.dropdown").toggle();
+			e.preventDefault();
+			return false;
+		});
+
+		// remove the dropdown on click of the window //
+		$(document).bind('click', function(e) {
+			var $clicked = $(e.target);
+			if (! $clicked.parents().hasClass("dropdown"))
+				$("ul.dropdown").hide();
+		});
+
+	});

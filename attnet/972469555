@@ -1,0 +1,19 @@
+PHTTP216.77.188.73"¾
+rGET /s/context.dll?type=page&id=10000&name=home.page.attyahoo.redirect&redirecturl=http://att.yahoo.com HTTP/1.1
+Host: www.att.net
+Connection: keep-alive
+TAccept: text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8
+vUser-Agent: Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/31.0.1650.63 Safari/537.36
+$Accept-Encoding: gzip,deflate,sdch
+!Accept-Language: en-US,en;q=0.8
+
+*®
+ HTTP/1.0 302 Moved Temporarily
+Server: ""
+%Date: Fri, 11 Apr 2014 17:28:56 GMT
+Content-length: 0
+Connection: keep-alive
+ Location: http://att.yahoo.com
+}Set-cookie: ZIP2COOKIESTR=uniqueid=041114172856803008282&ppvdr=py&userid=1&userpw=.&gloc=0&uh=1_0_; path=/; domain=.att.net
+€Set-cookie: ATTINTCOOKSTR=uniqueid=041114172856803008282; expires=Wednesday, 09-Dec-2019 23:12:40 GMT; path=/; domain=.att.net
+

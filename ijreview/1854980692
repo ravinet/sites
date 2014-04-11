@@ -1,0 +1,105 @@
+PHTTP69.16.175.42"ß
+*GET /slider/defs/2447144-215.js HTTP/1.1
+Host: cdn.cpxinteractive.com
+Connection: keep-alive
+Accept: */*
+vUser-Agent: Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/31.0.1650.63 Safari/537.36
+#Referer: http://www.ijreview.com/
+$Accept-Encoding: gzip,deflate,sdch
+!Accept-Language: en-US,en;q=0.8
+
+*ÿ
+HTTP/1.1 200 OK
+%Date: Tue, 08 Apr 2014 22:00:40 GMT
+!Keep-Alive: timeout=10, max=100
+Connection: Keep-Alive
+Accept-Ranges: bytes
+ETag: "1395858872"
+.Last-Modified: Wed, 26 Mar 2014 18:34:32 GMT
+Cache-Control: max-age=86400
+Content-Length: 2538
+&Content-Type: application/javascript
+7X-HW: 1396994440.dop001.ch3.t,1396994440.cds028.ch3.c
+ Access-Control-Allow-Origin: *
+ì
+var thisNode = document.getElementsByTagName("script")[(document.getElementsByTagName("script").length-1)];
+var src = thisNode.src;
+src = src.substring((window.location.protocol == "http:") ? 7 : 8, src.length).split("/")[0];
+
+var sliderOptions = {
+	version: "2.2.2",
+	type: "noLogo",
+	urls: {
+	    slider : src,
+	    protocol: location.protocol,
+		ad: "optimizedby.brealtime.com",
+		css: "//cdn.cpxinteractive.com/slider/defs/2447144-215.css",
+		logo: "//cdn.cpxinteractive.com/slider/defs/solidblack.jpg"
+	},
+	pid: 2447144,
+	trid: 0,
+	width: 160,
+	height: 600,
+	debug: false,
+	id: 215,
+	animationDelay: 0,
+	animationDuration: 500,
+	animationDirection: "right",
+	animationEasing: "jswing",
+	toolbarPosition: "left",
+	horizontalPosition: "right",
+	verticalPosition: "center",
+	close: {
+		permanently: 1,
+		wTab: 0
+	},
+	freqLimit: 1,
+	freqLimitTimeRange: 24,
+	reverseFreqLimit: 0,
+	reverseFreqLimitTimeRange: 24,
+	live: 1,
+	scrollingDistance: 0
+}
+
+var replaceJQuery = false;
+	if(typeof window.jQuery != "undefined" && parseFloat(window.jQuery.fn.jquery) <= 1.8) {
+		var replaceJQuery = true;
+	}
+
+if(!window.jQuery || replaceJQuery) {
+	var script = document.createElement("script");
+	script.src = "//cdnjs.cloudflare.com/ajax/libs/jquery/1.9.1/jquery.min.js";
+	script.type = 'text/javascript';
+	document.getElementsByTagName("head")[0].appendChild(script);
+}
+
+var checkReady = function(callback) { if (window.jQuery && parseFloat(window.jQuery.fn.jquery) > 1.8) { callback(jQuery); } else { window.setTimeout(function() { checkReady(callback); }, 100); } };
+
+checkReady(function() {
+	var script = document.createElement("script");
+	script.src = "//cdn.cpxinteractive.com/slider/lib/js/jquery.easing.cookie.min.js";
+	script.type = 'text/javascript';
+	document.getElementsByTagName("head")[0].appendChild(script);
+		
+	var checkReady = function(callback) { if (window.jQuery.cookie) { callback(); } else { window.setTimeout(function() { checkReady(callback); }, 100); } };
+	checkReady(function() {
+		if(replaceJQuery) {
+			window.jq = $.noConflict(true);
+		} else {
+			window.jq = $;
+		}
+		var script = document.createElement("script");
+		
+		script.src = "//cdn.cpxinteractive.com/slider/lib/js/app." + sliderOptions.version + ".js";
+			
+		// check for any params on this files src & pass em along
+		var queryString = thisNode.src.replace(/^[^\?]+\??/,'');
+		queryParams = queryString.split("&");
+		if(queryString) {
+			script.src += "?" + queryParams.join("&");
+		}
+			
+		script.type = 'text/javascript';
+		jq("body").append(script);
+	});
+});

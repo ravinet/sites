@@ -1,0 +1,26 @@
+PHTTP54.235.140.221"ê
+
+ŸGET /v1/profile.redirect?api_key=876f79285d88477891afb9409d8279db&callback_url=http%3A%2F%2Floadus.exelator.com%2Fload%2F%3Fp%3D177%26g%3D900&delimiter=%2C%26&functional_area_prefix=functional_area=,&functional_area_delimiter=,&industry_prefix=industry=,&industry_delimiter=,&group_prefix=group=,&group_delimiter=,&cb_param=,&3pc=true HTTP/1.1
+Host: api.bizographics.com
+Connection: keep-alive
+Accept: */*
+vUser-Agent: Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/31.0.1650.63 Safari/537.36
+ÓReferer: http://loadus.exelator.com/load/net.php?n=PHNjcmlwdCB0eXBlPSJ0ZXh0L2phdmFzY3JpcHQiIHNyYz0iaHR0cDovL2FwaS5iaXpvZ3JhcGhpY3MuY29tL3YxL3Byb2ZpbGUucmVkaXJlY3Q%2FYXBpX2tleT04NzZmNzkyODVkODg0Nzc4OTFhZmI5NDA5ZDgyNzlkYiZjYWxsYmFja191cmw9aHR0cCUzQSUyRiUyRmxvYWR1cy5leGVsYXRvci5jb20lMkZsb2FkJTJGJTNGcCUzRDE3NyUyNmclM0Q5MDAmZGVsaW1pdGVyPSUyQyUyNiZmdW5jdGlvbmFsX2FyZWFfcHJlZml4PWZ1bmN0aW9uYWxfYXJlYT0sJmZ1bmN0aW9uYWxfYXJlYV9kZWxpbWl0ZXI9LCZpbmR1c3RyeV9wcmVmaXg9aW5kdXN0cnk9LCZpbmR1c3RyeV9kZWxpbWl0ZXI9LCZncm91cF9wcmVmaXg9Z3JvdXA9LCZncm91cF9kZWxpbWl0ZXI9LCZjYl9wYXJhbT0sIiA%2BPC9zY3JpcHQ%2B&h=d8a240bc74f4a2c373473cb3e990ec4d
+$Accept-Encoding: gzip,deflate,sdch
+!Accept-Language: en-US,en;q=0.8
+5Cookie: BizoID=ab18de54-128c-493b-8e01-d4fc52bc4e95
+
+*˙
+HTTP/1.1 302 Found
+Cache-Control: no-cache
+%Date: Tue, 08 Apr 2014 22:35:50 GMT
+8Location: http://loadus.exelator.com/load/?p=177&g=900
+ZP3P: CP="NON DSP COR CURa ADMo DEVo TAIo PSAo PSDo OUR DELa IND PHY ONL UNI COM NAV DEM"
+Pragma: no-cache
+Server: nginx/1.2.0
+tSet-Cookie: BizoID=ab18de54-128c-493b-8e01-d4fc52bc4e95;Version=0;Domain=.bizographics.com;Path=/;Max-Age=15768000
+¢Set-Cookie: BizoData=vipSsUXrfhMAyjSpNgk6T39Qb1MaQBj6WAiphZG3g3wbanOGSnuTLaGrV6072jCeii2E0gtIJqCycoie;Version=0;Domain=.bizographics.com;Path=/;Max-Age=15768000
+X-Bizo-Usage: 0
+Content-Length: 0
+Connection: keep-alive
+

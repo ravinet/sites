@@ -1,0 +1,30 @@
+PHTTP
+18.7.20.70"¨
+GET /crossdomain.xml HTTP/1.1
+Host: ak.c.ooyala.com
+Connection: keep-alive
+vUser-Agent: Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/31.0.1650.63 Safari/537.36
+Accept: */*
+$Accept-Encoding: gzip,deflate,sdch
+!Accept-Language: en-US,en;q=0.8
+
+*þ
+HTTP/1.1 200 OK
+Nx-amz-id-2: 8mVHwpQQHB1PSKWNdyv0zd/cEnbj3y/BpiN0ID+BLK6uu+mnA57VuOs/ASoTYPK0
+$x-amz-request-id: 2A7B063AD25196B7
+.Last-Modified: Wed, 20 Nov 2013 02:50:53 GMT
+*ETag: "226787328c725eb52e28d7d9e35f52ac"
+Accept-Ranges: bytes
+*Content-Type: text/x-cross-domain-policy
+Content-Length: 172
+Server: AmazonS3
+Cache-Control: max-age=21600
+%Date: Fri, 11 Apr 2014 19:09:32 GMT
+Connection: keep-alive
+X-OY-REMOTE-CHAIN:  
+®
+<?xml version="1.0"?>
+<cross-domain-policy>
+  <site-control permitted-cross-domain-policies="all"/>
+  <allow-access-from domain="*" secure="false"/>
+</cross-domain-policy>

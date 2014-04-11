@@ -1,0 +1,32 @@
+PHTTP173.194.46.121"Ž
+9GET /pixel?google_nid=vdna&google_cm&google_sc HTTP/1.1
+Host: cm.g.doubleclick.net
+Connection: keep-alive
+Accept: image/webp,*/*;q=0.8
+vUser-Agent: Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/31.0.1650.63 Safari/537.36
+SReferer: http://w.visualdna.com/analytics/?api_key=telegraph.co.uk&post_message=1
+$Accept-Encoding: gzip,deflate,sdch
+!Accept-Language: en-US,en;q=0.8
+_Cookie: id=22365c02e60200e0||t=1396996041|et=730|cs=002213fd48fd5ae4eb59b41f2d; _drt_=NO_DATA
+
+*”
+HTTP/1.1 302 Found
+¥P3P: policyref="http://googleads.g.doubleclick.net/pagead/gcn_p3p_.xml", CP="CURa ADMa DEVa TAIo PSAo PSDo OUR IND UNI PUR INT DEM STA PRE COM NAV OTC NOI DSP COR"
+–Location: http://e.visualdna.com/conversion?api_key=doubleclick&id=sync&partner_user_id_type=id&google_gid=CAESEHo6EVHuTH9nPZ6f8e3qA8o&google_cver=1
+%Date: Tue, 08 Apr 2014 22:27:22 GMT
+Pragma: no-cache
+(Expires: Fri, 01 Jan 1990 00:00:00 GMT
+*Cache-Control: no-cache, must-revalidate
+(Content-Type: text/html; charset=UTF-8
+Server: HTTP server (unknown)
+Content-Length: 351
+!X-XSS-Protection: 1; mode=block
+Alternate-Protocol: 80:quic
+"X-Google-Cookies-Blocked: _drt_=
+á
+<HTML><HEAD><meta http-equiv="content-type" content="text/html;charset=utf-8">
+<TITLE>302 Moved</TITLE></HEAD><BODY>
+<H1>302 Moved</H1>
+The document has moved
+<A HREF="http://e.visualdna.com/conversion?api_key=doubleclick&amp;id=sync&amp;partner_user_id_type=id&amp;google_gid=CAESEHo6EVHuTH9nPZ6f8e3qA8o&amp;google_cver=1">here</A>.
+</BODY></HTML>

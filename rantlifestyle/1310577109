@@ -1,0 +1,30 @@
+PHTTP74.125.193.95"ó
+,GET /css?family=Averia+Sans+Libre HTTP/1.1
+Host: fonts.googleapis.com
+Connection: keep-alive
+Accept: text/css,*/*;q=0.1
+vUser-Agent: Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/31.0.1650.63 Safari/537.36
+(Referer: http://www.rantlifestyle.com/
+$Accept-Encoding: gzip,deflate,sdch
+!Accept-Language: en-US,en;q=0.8
+
+*¤
+HTTP/1.1 200 OK
+Content-Type: text/css
+Timing-Allow-Origin: *
+(Expires: Tue, 08 Apr 2014 22:16:40 GMT
+%Date: Tue, 08 Apr 2014 22:16:40 GMT
+'Cache-Control: private, max-age=86400
+Content-Length: 308
+!X-Content-Type-Options: nosniff
+X-Frame-Options: SAMEORIGIN
+!X-XSS-Protection: 1; mode=block
+Server: GSE
+Alternate-Protocol: 80:quic
+¶
+@font-face {
+  font-family: 'Averia Sans Libre';
+  font-style: normal;
+  font-weight: 400;
+  src: local('Averia Sans Libre Regular'), local('AveriaSansLibre-Regular'), url(http://themes.googleusercontent.com/static/fonts/averiasanslibre/v2/yRJpjT39KxACO9F31mj_LqOxStDXxcWVrHkhVmjuyZ8.woff) format('woff');
+}

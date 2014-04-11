@@ -1,0 +1,412 @@
+PHTTP
+18.7.20.69"Ý
+!GET /_res/css/sifr.css HTTP/1.1
+Host: service.prweb.com
+Connection: keep-alive
+Accept: text/css,*/*;q=0.1
+vUser-Agent: Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/31.0.1650.63 Safari/537.36
+ Referer: http://www.prweb.com/
+$Accept-Encoding: gzip,deflate,sdch
+!Accept-Language: en-US,en;q=0.8
+
+*ö@
+HTTP/1.1 200 OK
+Server: Apache/2.2.3 (CentOS)
+.Last-Modified: Fri, 28 May 2010 14:51:15 GMT
+"ETag: "8a453-1f54-487a8a38c9ec0"
+Accept-Ranges: bytes
+Content-Length: 8020
+Content-Type: text/css
+%Date: Tue, 08 Apr 2014 22:15:36 GMT
+Connection: keep-alive
+X-N: S
+Ö>
+/*****************************************************************************
+scalable Inman Flash Replacement (sIFR) version 3.
+
+Copyright 2006 Ð 2008 Mark Wubben, <http://novemberborn.net/>
+
+Older versions:
+* IFR by Shaun Inman
+* sIFR 1.0 by Mike Davidson, Shaun Inman and Tomas Jogin
+* sIFR 2.0 by Mike Davidson, Shaun Inman, Tomas Jogin and Mark Wubben
+
+See also <http://novemberborn.net/sifr3> and <http://wiki.novemberborn.net/sifr3>.
+
+This software is licensed and provided under the CC-GNU LGPL.
+See <http://creativecommons.org/licenses/LGPL/2.1/>
+*****************************************************************************/
+
+@media screen {
+  .sIFR-flash {
+    visibility: visible !important;
+    margin: 0;
+    padding: 0;
+  }
+  
+  .sIFR-replaced, .sIFR-ignore {
+    visibility: visible !important;
+  }
+  
+  .sIFR-alternate {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 0;
+    height: 0;
+    display: block;
+    overflow: hidden;
+  }
+  
+  .sIFR-replaced div.sIFR-fixfocus {
+    margin: 0pt; 
+    padding: 0pt; 
+    overflow: auto; 
+    letter-spacing: 0px; 
+    float: none;
+  }
+}
+
+@media print {
+  .sIFR-flash {
+    display    : none !important;
+    height     : 0;
+    width      : 0;
+    position   : absolute;
+    overflow   : hidden;
+  }
+  
+  .sIFR-alternate {
+    visibility : visible !important;
+    display    : block   !important;
+    position   : static  !important;
+    left       : auto    !important;
+    top        : auto    !important;
+    width      : auto    !important;
+    height     : auto    !important;
+  }
+}
+
+.sIFR-active object {
+  display: block;
+}
+
+
+/*
+Place CSS rules for to-be-replaced elements here. Prefix by.sIFR-active
+so they only apply if sIFR is active. Make sure to limit the CSS to the screen
+media type, in order not to have the printed text come out weird.
+*/
+@media screen {
+
+/* there is h1 46, h2 20 on some */
+/* there is h1 36, h2 24 standard */
+/* there is h1 36, h2 18 on how steps */
+
+.sIFR-active #content-feature h1, 
+.sIFR-active #content-feature h2,
+.sIFR-active #content-feature p.header-text-h1, 
+.sIFR-active #content-feature p.header-text-h2 {
+	font-family: verdana;
+	visibility: hidden;
+    font-size: 36px;
+  	line-height: 1em;
+  	margin-top: 0px;
+  	margin-bottom: 0;
+  	padding: 0;
+  	letter-spacing: -3px;
+  	font-weight: normal;
+ }
+ 
+ .sIFR-active div.distribution-package #content-feature h1,
+  .sIFR-active div.distribution-package #content-feature p.header-text-h1 {
+ 	font-size: 24px;
+ }
+ 
+  
+.sIFR-active div.distribution-package #content-feature h3,
+.sIFR-active div.distribution-package #content-feature p.header-text-h3{
+ 	font-family: verdana;
+	visibility: hidden;
+    font-size: 15px;
+  	line-height: 1em;
+  	margin-top: 10px;
+  	margin-bottom: 0;
+ }
+ 
+ 
+.sIFR-active #content-feature h1.giant,
+.sIFR-active #content-feature p.header-text-h1-giant {	
+ 	margin-top: -5px;
+ 	margin-bottom: 2px;
+ 	font-size: 46px;
+ 	letter-spacing: -3px;
+ }
+ 
+.sIFR-active #content-feature h2, 
+.sIFR-active #content-feature p.header-text-h2 {
+  	margin-top: -5px !important;
+  	font-size: 24px;
+ }
+ 
+.sIFR-active div.primary #content-feature h1,
+.sIFR-active div.primary #content-feature p.header-text-h1 {
+	font-size: 24px !important;
+}
+
+.sIFR-active div.learning-center #content-feature h1,
+.sIFR-active div.learning-center #content-feature p.header-text-h1 {
+	font-size: 30px;
+}
+
+.sIFR-active div.learning-center #content-feature h2,
+.sIFR-active div.learning-center #content-feature p.header-text-h2 {
+	font-size: 20px;
+}
+
+.sIFR-active div.primary-intro h1,
+.sIFR-active div.primary-intro p.header-text-h1 {
+	margin-bottom: -5px !important;
+}
+
+.sIFR-active div.primary #content-feature h2,
+.sIFR-active div.primary #content-feature p.header-text-h2 {
+	font-size: 16px !important;
+}
+ 
+.sIFR-active .featured-content h2,
+.sIFR-active .featured-content p.header-text-h2 {
+	font-family: verdana;
+	visibility: hidden;
+    font-size: 24px;
+  	line-height: 1em;
+  	margin-bottom: 5px;
+  	padding: 0;
+  	letter-spacing: -1px;
+  	font-weight: normal;
+}
+
+.sIFR-active p.package-price {
+	font-family: verdana;
+	visibility: hidden;
+    font-size: 13px;
+  	line-height: 1em;
+  	padding: 0;
+  	margin: 0;
+}
+ 
+  
+.sIFR-active .primary h1,
+.sIFR-active .primary h2,
+.sIFR-active .primary-wide h1,
+.sIFR-active .primary-wide h2,
+.sIFR-active .secondary h2,
+.sIFR-active #content-intro h2,
+ .sIFR-active .three-col-full h2 {
+	font-family: verdana;
+	visibility: hidden;
+    font-size: 18px;
+  	line-height: 1em;
+  	margin-bottom: 0;
+  	padding-bottom: 0;
+  	letter-spacing: -1px;
+  	font-weight: normal;
+ }
+ 
+ .sIFR-active .primary h1,
+ .sIFR-active .primary-wide h1, 
+ .sIFR-active .three-col-full h2 {
+  	font-size: 22px;
+  }
+
+
+ .sIFR-active .three-col-full h2 {
+  	margin-bottom: 5px;
+  }
+  
+ .sIFR-active #slider h2 {
+  	font-size: 24px;
+  	margin-top: -8px;
+  	margin-bottom: 5px;
+  	padding-top: 0;
+  }
+  
+
+.sIFR-active .secondary h3.styled {
+	font-family: verdana;
+	visibility: hidden;
+    font-size: 19px;
+  	line-height: 1em;
+  	border-top: 0;
+  	letter-spacing: -1px;
+  	font-weight: normal;
+ }
+ 
+
+  
+.sIFR-active .header-structures h3 {
+  	margin-bottom: 5px;
+}
+ 
+.sIFR-active .package h2 {
+	font-family: verdana;
+	visibility: hidden;
+    font-size: 22px;
+  	line-height: 1em;
+  	margin-bottom: 0;
+  	padding-top: 4px;
+  	letter-spacing: -3px;
+}
+
+.sIFR-active table .package h2 {
+	width: 162px;
+}
+
+.sIFR-active .package h2 {
+	zoom: 1;
+}
+
+.sIFR-active span.price {
+	font-family: verdana;
+	visibility: hidden;
+    font-size: 36px;
+  	height: 36px;
+  	margin: -4px 0 0 -2px;
+  	padding: 0;
+  	letter-spacing: -3px;
+}
+
+.sIFR-active span.quantity {
+	margin-left: 6px;
+}
+
+/* this is to combat the jumps */
+
+.sIFR-active div.capsule {
+	height: 36px;
+}
+
+.sIFR-active div.accordion div.capsule {
+	height: auto;
+}
+
+.sIFR-active #content-feature div.capsule {
+	height: 62px;
+}
+
+/* -- */
+
+.sIFR-active #content-feature span.price {
+  	 font-size: 40px;
+  	 height: 40px;
+  	 margin: 0 !important;
+ }
+ 
+.sIFR-active #content-feature span.quantity {
+ 	font-family: verdana;
+	visibility: hidden;
+    font-size: 12px;
+    height: 12px;
+  	line-height: 1em;
+  	margin-bottom: 0;
+  	padding-top: 0;
+  	letter-spacing: -1px;
+ }
+ 
+.sIFR-active #content-intro h1,
+.sIFR-active #content-intro p.header-text-h1 {
+	font-family: verdana;
+	visibility: hidden;
+    font-size: 24px;
+  	line-height: 1em;
+  	margin-bottom: 0;
+  	padding-bottom: 0;
+  	letter-spacing: -1px;
+  	font-weight: normal;
+ }
+  	
+.sIFR-active h2.section {
+	font-family: verdana;
+	visibility: hidden;
+    font-size: 18px;
+  	line-height: 1em;
+  	margin: 0 !important;
+  	padding: 0;
+  	letter-spacing: -1px;
+  	font-weight: normal;
+ }
+ 
+ .sIFR-active div.wide h2.section {
+ 	height: 29px;
+ }
+ 
+.sIFR-active .callout-wrap h3 {
+	font-family: verdana;
+	visibility: hidden;
+    font-size: 16px;
+  	line-height: 1em;
+  	margin: 0;
+  	padding: 0;
+  	letter-spacing: -1px;
+  	font-weight: normal;
+ }
+ 
+ .sIFR-active .secondary .callout-wrap h3.idea,
+  .sIFR-active .secondary .callout-wrap h3.with-icon {
+ 	font-size: 20px;
+ 	padding: 0 0 0 25px !important;
+ 	margin-bottom: 5px;
+ }
+ 
+.sIFR-active #releases h2.fn-header {
+	font-family: verdana;
+	visibility: hidden;
+    font-size: 20px;
+  	line-height: 20px;
+  	letter-spacing: -1px;
+  	height: 20px !important;
+ }
+ 
+.sIFR-active #releases h3.fn-header {
+	font-family: verdana;
+	visibility: hidden;
+    font-size: 20px;
+    letter-spacing: -1px;
+  	line-height: 20px;
+  	height: 20px !important;
+ }
+ 
+.sIFR-active p.counter b {
+ 	font-family: verdana;
+	visibility: hidden;
+    font-size: 22px;
+  	line-height: 1em;
+  	margin: 0;
+  	letter-spacing: -1px;
+  	font-weight: normal;
+ }
+ 
+.sIFR-active h1 + h2 {
+ 	margin-top: -10px;
+ }
+ 
+.sIFR-active div.small-header h2 {
+	font-size: 15px;
+	margin-bottom: 0px;
+	border-top: 0;
+	padding-top: 0;
+}
+ 
+ .sIFR-active .alert .callout-wrap h3 {
+	font-family: verdana;
+	visibility: hidden;
+    font-size: 26px;
+  	line-height: 1em;
+  	margin: 0;
+  	padding: 0;
+  	letter-spacing: -1px;
+  	font-weight: normal;
+ }
+ 
+ 
+}

@@ -1,0 +1,35 @@
+PHTTP207.229.71.147"Í
+GET /crossdomain.xml HTTP/1.1
+Host: chat39.myfreecams.com
+Connection: keep-alive
+vUser-Agent: Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/31.0.1650.63 Safari/537.36
+Accept: */*
+NReferer: http://www.myfreecams.com/mfc2/static/top.html?cache_id=1396557146&
+$Accept-Encoding: gzip,deflate,sdch
+!Accept-Language: en-US,en;q=0.8
+ÌCookie: company_id=3149; __utma=265273107.1580412667.1396994716.1396994716.1396994716.1; __utmb=265273107; __utmc=265273107; __utmz=265273107.1396994716.1.1.utmccn=(direct)|utmcsr=(direct)|utmcmd=(none)
+
+*ë
+HTTP/1.1 200 OK
+%Date: Tue, 08 Apr 2014 22:05:18 GMT
+)Server: Apache/2.2.24 (Unix) PHP/5.4.14
+.Last-Modified: Fri, 06 Jun 2008 05:59:04 GMT
+#ETag: "2d20299-320-44ef928bada00"
+Accept-Ranges: bytes
+Content-Length: 800
+ Keep-Alive: timeout=7, max=100
+Connection: Keep-Alive
+Content-Type: application/xml
+¢
+<?xml version="1.0"?>
+<!DOCTYPE cross-domain-policy SYSTEM "http://www.macromedia.com/xml/dtds/cross-domain-policy.dtd">
+<cross-domain-policy>
+  <allow-access-from domain="chat1.myfreecams.com" to-ports="5001,8100,8550" />
+  <allow-access-from domain="chat2.myfreecams.com" to-ports="5001,8100,8550" />
+  <allow-access-from domain="chat3.myfreecams.com" to-ports="5001,8100,8550" />
+  <allow-access-from domain="chat4.myfreecams.com" to-ports="5001,8100,8550" />
+  <allow-access-from domain="chat5.myfreecams.com" to-ports="5001,8100,8550" />
+  <allow-access-from domain="lunar.myfreecams.com" to-ports="5001,8100,8550" />
+  <allow-access-from domain="*.myfreecams.com" to-ports="5001,8100,8550" />
+  <allow-access-from domain="www.myfreecams.com" to-ports="5001,8100,8550" />
+</cross-domain-policy>

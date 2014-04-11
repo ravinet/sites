@@ -1,0 +1,32 @@
+PHTTP72.21.91.19"Ó
+,GET /da_custom.html?cb=1442761757 HTTP/1.1
+Host: www.da-ads.com
+Connection: keep-alive
+TAccept: text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8
+vUser-Agent: Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/31.0.1650.63 Safari/537.36
+$Accept-Encoding: gzip,deflate,sdch
+!Accept-Language: en-US,en;q=0.8
+VCookie: __gads=ID=c30c290b1f24478a:T=1396993122:S=ALNI_MYJvZE6O-GBTA3Dmy2BPbu-PpZZnA
+
+*Œ
+HTTP/1.1 200 OK
+Accept-Ranges: bytes
+ Cache-Control: max-age=2592000
+Content-Type: text/html
+%Date: Tue, 08 Apr 2014 21:38:42 GMT
+(Expires: Thu, 08 May 2014 21:38:42 GMT
+.Last-Modified: Sun, 13 Oct 2013 13:41:24 GMT
+Server: Apache
+X-Pad: avoid browser bug
+Content-Length: 2136
+Ú
+<!DOCTYPE html>
+<html><!--
+
+     DA-ADS.COM FILES ARE GENERATED, DO NOT MODIFY DIRECTLY     
+
+--><head><title>deviantART</title><meta http-equiv="content-type" content="text/html;charset=utf8" /><meta name="copyright" content="Copyright 2012 deviantART" /><style type="text/css">
+html,body{padding:0;margin:0;overflow:hidden;}body{background:#AAB1AA;color:#222;font:9pt Verdana,sans-serif;}
+</style></head><body><script language="javascript" type="text/javascript">
+var vars=window.location.hash.substr(1).split(";"),rr=vars.shift(),is_test=parseInt(vars.shift(),10)||0,ad_slot=vars.shift(),ad_creative=vars.shift(),script_cachebuster=parseInt(vars.shift(),10)||0,override_current_time=parseInt(vars.shift(),10)||0,d=document;(function(){var e=String(rr).replace(/[^\dx\,]/,"").split(","),b=e.shift(),f=parseInt(b.split("x")[0]||"",10)||0,g=parseInt(b.split("x")[1]||"",10)||1;if(f>=10){--g;b=null;if(g==1){b=f}else{if(g>1){b=f+"x"+g}}if(b){e.unshift(b)}var c=window.location.hash.substr(1).split(";");c[0]=e.join(",");var a=String(window.location).replace(/\#.*$/,"#"+c.join(";"));if(window.location.toString().match(/^[^#]*&rr=f#/)){a=a.replace(/^([^#]*)&rr=f#/,"$1#")}else{a=a.replace(/^([^#]*)#/,"$1&rr=f#")}setTimeout(function(){window.location.replace(a)},f*1000)}})();function da_adtags(f){if(!f.hasOwnProperty(ad_slot)){return}var l=f[ad_slot],m=l.creatives||{},g={},a=override_current_time||(new Date()).getTime();if(m.hasOwnProperty(ad_creative)){g=m[ad_creative];if(!is_test){if(g.start_time>a||(g.end_time>0&&g.end_time<a)){return}}}else{var k=[];for(var h in m){if(!m.hasOwnProperty(h)){continue}g=m[h];if(g.start_time>a){continue}if(g.end_time>0&&g.end_time<a){continue}for(var e=0,b=parseInt(g.weight,10)||0;e<b;++e){k.push(h)}}if(!k.length){return}ad_creative=k[Math.floor(Math.random()*k.length)]}d.write((m[ad_creative].content||"").replace("%%CACHEBUSTER%%",a))}var src=(is_test)?"http://deviantartads.com/dt/da-ad-cfg.staged.jsonp?cb="+script_cachebuster:"http://deviantartads.com/dt/da-ad-cfg.jsonp?cb="+script_cachebuster;d.write('<script type="text/javascript" src="'+src+'"><\/script>');
+</script></body></html>

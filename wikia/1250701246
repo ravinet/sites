@@ -1,0 +1,27 @@
+PHTTP50.16.212.52"Á
+‹GET /user_data/segments/3?pubid=44c1a380-770f-11df-93f2-0800200c9a66&technographics=1&callback=Krux.ns._default.kxjsonp_userData HTTP/1.1
+Host: apiservices.krxd.net
+Connection: keep-alive
+Accept: */*
+vUser-Agent: Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/31.0.1650.63 Safari/537.36
+%Referer: http://www.wikia.com/Wikia
+$Accept-Encoding: gzip,deflate,sdch
+!Accept-Language: en-US,en;q=0.8
+
+*›
+HTTP/1.1 200 OK
+Accept-Ranges: bytes
+Cache-Control: max-age=0
+Content-Type: text/javascript
+%Date: Tue, 08 Apr 2014 22:35:49 GMT
+2Etag: "cf12290a61aacf83a19a88b661f47cfd179aa373"
+
+X-Age: 0
+X-Cache: MISS
+X-Cache-Hits: 0
+X-Request-Backend: user_data
+(X-Served-By: apiservices-a005.krxd.net
+Content-Length: 296
+Connection: keep-alive
+ª
+Krux.ns._default.kxjsonp_userData({"status": "200", "body": {"technographics": {"device": "Computer", "manufacturer": "Other", "os": "Linux", "browser": "Chrome"}, "segments": [], "code": "no_user_id", "geo": {"dma": "506", "region": "ma", "domain": "mit.edu", "zip": "02139", "country": "us"}}})

@@ -1,0 +1,23 @@
+PHTTP208.89.14.135"ò
+5GET /hc/s-73849751/?cmd=lpTagGetJsSnippets HTTP/1.1
+Host: sales.liveperson.net
+Connection: keep-alive
+Accept: */*
+vUser-Agent: Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/31.0.1650.63 Safari/537.36
+-Referer: http://www.gotomeeting.com/online/
+$Accept-Encoding: gzip,deflate,sdch
+!Accept-Language: en-US,en;q=0.8
+
+*‡
+HTTP/1.1 200 OK
+%Date: Tue, 08 Apr 2014 21:51:23 GMT
+Server: Microsoft-IIS/6.0
+GP3P: CP="NON BUS INT NAV COM ADM CON CUR IVA IVD OTP PSA PSD TEL SAM"
+X-Powered-By: ASP.NET
+ƒSet-Cookie: LivePersonID=LP i=111640324057858,d=1396993883; expires=Wed, 08-Apr-2015 21:51:23 GMT; path=/; domain=.liveperson.net
+Cache-Control: no-store
+Pragma: no-cache
+(Expires: Wed, 31 Dec 1969 23:59:59 GMT
+Content-Length: 85
+W
+if(lpMTagDebug&&lpMTagDebug.Display){lpMTagDebug.Display('LPChat: disabled','WARN');}

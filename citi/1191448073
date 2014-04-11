@@ -1,0 +1,20 @@
+»HTTPS66.117.23.107"É
+—GET /m2/citicorpcreditservic/ubox/image?mbox=citi_bluekai_userid&mboxDefault=https://cimage.adobe.com/onepixel.gif&bkid=8x%2FwzOQ%2F99OrP6HE HTTP/1.1
+*Host: citicorpcreditservic.tt.omtrdc.net
+Connection: keep-alive
+Accept: image/webp,*/*;q=0.8
+vUser-Agent: Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/31.0.1650.63 Safari/537.36
+3Referer: https://online.citibank.com/US/Welcome.c
+$Accept-Encoding: gzip,deflate,sdch
+!Accept-Language: en-US,en;q=0.8
+MCookie: mboxSession=1396992836990-345405; mboxPC=1396992836990-345405.25_35
+
+*ë
+HTTP/1.1 302 Found
+$P3P: CP="NOI DSP CURa OUR STP COM"
+ Set-Cookie: mboxPC=1396992836990-345405.25_35; Domain=citicorpcreditservic.tt.omtrdc.net; Expires=Tue, 22-Apr-2014 21:33:57 GMT; Path=/m2/citicorpcreditservic
+1Location: https://cimage.adobe.com/onepixel.gif
+Content-Length: 0
+%Date: Tue, 08 Apr 2014 21:33:57 GMT
+Server: Test & Target
+

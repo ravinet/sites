@@ -1,0 +1,98 @@
+PHTTP68.232.190.10"ô
+CGET /wp-content/plugins/ShareCallout/js/modal.js?ver=1.0 HTTP/1.1
+Host: cdn.viralnova.com
+Connection: keep-alive
+Accept: */*
+vUser-Agent: Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/31.0.1650.63 Safari/537.36
+$Referer: http://www.viralnova.com/
+$Accept-Encoding: gzip,deflate,sdch
+!Accept-Language: en-US,en;q=0.8
+
+*Ç
+HTTP/1.1 200 OK
+Server: ATS/3.3.4-dev
+%Date: Tue, 08 Apr 2014 19:26:19 GMT
+(Content-Type: application/x-javascript
+Content-Length: 2767
+.Last-Modified: Mon, 21 Oct 2013 13:56:56 GMT
+(Expires: Wed, 09 Apr 2014 19:26:19 GMT
+Cache-Control: max-age=86400
+X-Cacheable: YES
+Accept-Ranges: bytes
+X-Varnish: 1727148360
+Age: 11265
+cVia: 1.1 varnish, http/1.1 cache-pnj-3 (ApacheTrafficServer/3.3.4-dev [uScHs f p eN:t cCHi p s ])
+Server-tag: ID14143
+Connection: close
+Ñ
+var modal;
+jQuery(document).ready(function(){
+	
+
+	jQuery('#vdsShare').live("click",function(event){
+		event.preventDefault();
+		var child=window.open('https://www.facebook.com/sharer/sharer.php?u='+encodeURIComponent(location.href),'facebook-share-dialog','width=626,height=436');
+		
+		
+		if(readCookie('ViralEmailOpt') === null) { 
+			var timer=setInterval(checkChild, 500);
+		}
+		function checkChild() {
+			if (child.closed) {
+				clearInterval(timer);
+				jQuery('.modalLink').trigger('click'); 
+				
+			}
+			return false;
+		}
+		
+		function readCookie(name) {
+			  var nameEQ = name + "=";
+			  var ca = document.cookie.split(';');
+			  for(var i=0;i < ca.length;i++) {
+				var c = ca[i];
+				while (c.charAt(0)==' ') c = c.substring(1,c.length);
+				if (c.indexOf(nameEQ) == 0) return c.substring(nameEQ.length,c.length);
+			  }
+			  return null;
+			}
+			return false;
+			
+	});
+
+
+    jQuery('.modalLink').modal({
+        trigger: '.modalLink',          // id or class of link or button to trigger modal
+        olay:'div.overlay',             // id or class of overlay
+        modals:'div.modal',             // id or class of modal
+        animationEffect: 'slideDown',   // overlay effect | slideDown or fadeIn | default=fadeIn
+        animationSpeed: 400,            // speed of overlay in milliseconds | default=400
+        moveModalSpeed: 'slow',         // speed of modal movement when window is resized | slow or fast | default=false
+        background: '333333',           // hexidecimal color code - DONT USE #
+        opacity: 0.7,                   // opacity of modal |  0 - 1 | default = 0.8
+        openOnLoad: false,              // open modal on page load | true or false | default=false
+        docClose: true,                 // click document to close | true or false | default=true    
+        closeByEscape: true,            // close modal by escape key | true or false | default=true
+        moveOnScroll: true,             // move modal when window is scrolled | true or false | default=false
+        resizeWindow: true,             // move modal when window is resized | true or false | default=false
+        video: 'http://player.vimeo.com/video/2355334?color=eb5a3d',    // enter the url of the video
+        videoClass:'video',             // class of video element(s)
+        close:'.closeBtn'               // id or class of close button
+    });
+	
+	
+	 	jQuery('#vdsNoMore').live('click', function() { 
+  	
+					jQuery('.closeBtn').trigger('click');
+					//setting cookie
+					var days=15;
+					var date = new Date();
+					date.setTime(date.getTime()+(days*24*60*60*1000));
+					var expires = "; expires="+date.toGMTString();
+					document.cookie = "ViralEmailOpt=1"+expires+"; path=/";
+					return false;
+        	});
+			
+			
+			
+});

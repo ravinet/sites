@@ -1,0 +1,33 @@
+PHTTP174.35.22.75"Ð
+GET /crossdomain.xml HTTP/1.1
+#Host: wtb.channelintelligence.com
+Connection: keep-alive
+vUser-Agent: Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/31.0.1650.63 Safari/537.36
+Accept: */*
+™Referer: http://pubads.g.doubleclick.net/gampad/adx?iu=2620/today/homepage&sz=300x250&c=4501776&ord=4821288&t=pm%3D1%26adg%3D46421_EpiPen_2013_Admant,cnent513%26ybot_ad300%3Dy%26ybot_slot%3D300x250%26ybot_psn%3D0a4c%26ybot_pvi%3Dhtvmfm1e9fdedadq4v%26ybot_subdomain%3Dads-useast1n
+$Accept-Encoding: gzip,deflate,sdch
+!Accept-Language: en-US,en;q=0.8
+
+*³
+HTTP/1.1 200 OK
+%Date: Fri, 11 Apr 2014 15:20:09 GMT
+Server: PWS/8.0.22
+"X-Px: ht h0-s40.p9-jfk.cdngp.net
+ETag: "b08eec5ade2cd1:4249"
+3P3P: CP="OTI DSP COR CURa ADMa DEVa OUR DELa STP"
+Cache-Control: max-age=604800
+(Expires: Wed, 16 Apr 2014 16:43:28 GMT
+Age: 167801
+Content-Length: 401
+Content-Type: text/xml
+.Last-Modified: Thu, 15 Mar 2012 19:03:49 GMT
+Connection: keep-alive
+“
+<?xml version="1.0"?>
+<!DOCTYPE cross-domain-policy SYSTEM "http://www.macromedia.com/xml/dtds/cross-domain-policy.dtd">
+<cross-domain-policy>
+  <allow-access-from domain="*" />
+  <site-control permitted-cross-domain-policies="all"/>
+  <allow-access-from domain="*" to-ports="*" secure="false"/>
+  <allow-http-request-headers-from domain="*" headers="*" secure="false"/>
+</cross-domain-policy> 

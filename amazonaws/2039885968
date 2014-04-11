@@ -1,0 +1,36 @@
+PHTTP54.230.53.247"ã
+6GET /js/28/plugins/jquery.touchSwipe.min.js HTTP/1.1
+Host: a1.awsstatic.com
+Connection: keep-alive
+Accept: */*
+vUser-Agent: Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/31.0.1650.63 Safari/537.36
+!Referer: http://aws.amazon.com/
+$Accept-Encoding: gzip,deflate,sdch
+!Accept-Language: en-US,en;q=0.8
+
+*¨%
+HTTP/1.1 200 OK
+&Content-Type: application/javascript
+Content-Length: 4295
+Connection: keep-alive
+%Date: Tue, 08 Apr 2014 03:00:22 GMT
+.Last-Modified: Wed, 26 Mar 2014 22:26:08 GMT
+*ETag: "31e0927c82b4a17af57d362c789dc2e3"
+Accept-Ranges: bytes
+Server: AmazonS3
+Age: 66371
+X-Cache: Hit from cloudfront
+GVia: 1.1 7e32d41b2a1086b0da29eb27020f9306.cloudfront.net (CloudFront)
+GX-Amz-Cf-Id: asv4AtURJpi-XndBg8NjP9YyhSnI20wWc5CLaw9XzXLe0SS4Cc2K5Q==
+É!
+/*
+* touchSwipe - jQuery Plugin
+* https://github.com/mattbryson/TouchSwipe-Jquery-Plugin
+* http://labs.skinkers.com/touchSwipe/
+* http://plugins.jquery.com/project/touchSwipe
+*
+* Copyright (c) 2010 Matt Bryson (www.skinkers.com)
+* Dual licensed under the MIT or GPL Version 2 licenses.
+*
+* $version: 1.3.3
+*/(function(e){function t(t){t&&void 0===t.allowPageScroll&&(void 0!==t.swipe||void 0!==t.swipeStatus)&&(t.allowPageScroll=u);t||(t={});t=e.extend({},e.fn.swipe.defaults,t);return this.each(function(){var r=e(this),i=r.data(g);i||(i=new n(this,t),r.data(g,i))})}function n(t,n){function k(e){var e=e.originalEvent,t,r=m?e.touches[0]:e;Y=h;m?Z=e.touches.length:e.preventDefault();$=0;J=null;K=0;!m||Z===n.fingers||n.fingers===c?(E=y=r.pageX,S=b=r.pageY,et=(new Date).getTime(),n.swipeStatus&&(t=D(e,Y))):_(e);if(!1===t)return Y=v,D(e,Y),t;Q.bind(W,L);Q.bind(X,O)}function L(e){e=e.originalEvent;if(Y!==d&&Y!==v){var t,h=m?e.touches[0]:e;y=h.pageX;b=h.pageY;tt=(new Date).getTime();J=j();m&&(Z=e.touches.length);Y=p;var h=e,g=J;if(n.allowPageScroll===u)h.preventDefault();else{var w=n.allowPageScroll===a;switch(g){case r:(n.swipeLeft&&w||!w&&n.allowPageScroll!=f)&&h.preventDefault();break;case i:(n.swipeRight&&w||!w&&n.allowPageScroll!=f)&&h.preventDefault();break;case s:(n.swipeUp&&w||!w&&n.allowPageScroll!=l)&&h.preventDefault();break;case o:(n.swipeDown&&w||!w&&n.allowPageScroll!=l)&&h.preventDefault()}}Z===n.fingers||n.fingers===c||!m?($=H(),K=tt-et,n.swipeStatus&&(t=D(e,Y,J,$,K)),n.triggerOnTouchEnd||(h=n.maxTimeThreshold?K>=n.maxTimeThreshold:!1,!0===P()?(Y=d,t=D(e,Y)):h&&(Y=v,D(e,Y)))):(Y=v,D(e,Y));!1===t&&(Y=v,D(e,Y))}}function O(e){e=e.originalEvent;e.preventDefault();tt=(new Date).getTime();$=H();J=j();K=tt-et;if(n.triggerOnTouchEnd||!1===n.triggerOnTouchEnd&&Y===p)if(Y=d,Z!==n.fingers&&n.fingers!==c&&!!m||0===y)Y=v,D(e,Y);else{var t=n.maxTimeThreshold?K>=n.maxTimeThreshold:!1;if(!0!==P()&&null!==P()||!!t){if(t||!1===P())Y=v,D(e,Y)}else D(e,Y)}else Y===p&&(Y=v,D(e,Y));Q.unbind(W,L,!1);Q.unbind(X,O,!1)}function _(){et=tt=b=y=S=E=Z=0}function D(e,t){var u=void 0;n.swipeStatus&&(u=n.swipeStatus.call(Q,e,t,J||null,$||0,K||0,Z));t===v&&n.click&&(1===Z||!m)&&(isNaN($)||0===$)&&(u=n.click.call(Q,e,e.target));if(t==d)switch(n.swipe&&(u=n.swipe.call(Q,e,J,$,K,Z)),J){case r:n.swipeLeft&&(u=n.swipeLeft.call(Q,e,J,$,K,Z));break;case i:n.swipeRight&&(u=n.swipeRight.call(Q,e,J,$,K,Z));break;case s:n.swipeUp&&(u=n.swipeUp.call(Q,e,J,$,K,Z));break;case o:n.swipeDown&&(u=n.swipeDown.call(Q,e,J,$,K,Z))}(t===v||t===d)&&_(e);return u}function P(){return null!==n.threshold?$>=n.threshold:null}function H(){return Math.round(Math.sqrt(Math.pow(y-E,2)+Math.pow(b-S,2)))}function j(){var e;e=Math.atan2(b-S,E-y);e=Math.round(180*e/Math.PI);0>e&&(e=360-Math.abs(e));return 45>=e&&0<=e?r:360>=e&&315<=e?r:135<=e&&225>=e?i:45<e&&135>e?o:s}function F(){Q.unbind(U,k);Q.unbind(V,_);Q.unbind(W,L);Q.unbind(X,O)}var y,b,E,S,I=m||!n.fallbackToMouseEvents,U=I?"touchstart":"mousedown",W=I?"touchmove":"mousemove",X=I?"touchend":"mouseup",V="touchcancel",$=0,J=null,K=0,Q=e(t),Y="start",Z=0,et=b=y=S=E=0,tt=0;try{Q.bind(U,k),Q.bind(V,_)}catch(nt){e.error("events not supported "+U+","+V+" on jQuery.swipe")}this.enable=function(){Q.bind(U,k);Q.bind(V,_);return Q};this.disable=function(){F();return Q};this.destroy=function(){F();Q.data(g,null);return Q}}var r="left",i="right",s="up",o="down",u="none",a="auto",f="horizontal",l="vertical",c="all",h="start",p="move",d="end",v="cancel",m="ontouchstart"in window,g="TouchSwipe";e.fn.swipe=function(n){var r=e(this),i=r.data(g);if(i&&"string"==typeof n){if(i[n])return i[n].apply(this,Array.prototype.slice.call(arguments,1));e.error("Method "+n+" does not exist on jQuery.swipe")}else if(!i&&("object"==typeof n||!n))return t.apply(this,arguments);return r};e.fn.swipe.defaults={fingers:1,threshold:75,maxTimeThreshold:null,swipe:null,swipeLeft:null,swipeRight:null,swipeUp:null,swipeDown:null,swipeStatus:null,click:null,triggerOnTouchEnd:!0,allowPageScroll:"auto",fallbackToMouseEvents:!0};e.fn.swipe.phases={PHASE_START:h,PHASE_MOVE:p,PHASE_END:d,PHASE_CANCEL:v};e.fn.swipe.directions={LEFT:r,RIGHT:i,UP:s,DOWN:o};e.fn.swipe.pageScroll={NONE:u,HORIZONTAL:f,VERTICAL:l,AUTO:a};e.fn.swipe.fingers={ONE:1,TWO:2,THREE:3,ALL:c}})(jQuery);

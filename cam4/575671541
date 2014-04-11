@@ -1,0 +1,96 @@
+PHTTP
+72.21.91.9"ð
+4GET /web/css/bootstrap_20130626092722.css HTTP/1.1
+Host: edgecast.cam4s.com
+Connection: keep-alive
+Accept: text/css,*/*;q=0.1
+vUser-Agent: Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/31.0.1650.63 Safari/537.36
+Referer: http://www.cam4.com/
+$Accept-Encoding: gzip,deflate,sdch
+!Accept-Language: en-US,en;q=0.8
+
+*Ý
+HTTP/1.1 200 OK
+Accept-Ranges: bytes
+Cache-Control: max-age=604800
+Content-Type: text/css
+%Date: Tue, 08 Apr 2014 21:33:15 GMT
+Etag: "3437552398"
+(Expires: Tue, 15 Apr 2014 21:33:15 GMT
+.Last-Modified: Wed, 02 Apr 2014 18:38:52 GMT
+Server: ECS (ord/26FD)
+X-Cache: HIT
+Content-Length: 3353
+›
+/*!
+ * Bootstrap v2.3.1
+ *
+ * Copyright 2012 Twitter, Inc
+ * Licensed under the Apache License v2.0
+ * http://www.apache.org/licenses/LICENSE-2.0
+ *
+ * Designed and built with all the love in the world @twitter by @mdo and @fat.
+ */.clearfix{*zoom:1}
+.clearfix:before,.clearfix:after{display:table;content:"";line-height:0}
+.clearfix:after{clear:both}
+article,aside,details,figcaption,figure,footer,header,hgroup,nav,section{display:block}
+audio,canvas,video{display:inline-block;*display:inline;*zoom:1}
+audio:not([controls]){display:none}
+html{font-size:100%;-webkit-text-size-adjust:100%;-ms-text-size-adjust:100%}
+body,div,dl,dt,dd,ul,ol,li,h1,h2,h3,h4,h5,h6,pre,code,form,fieldset,legend,input,textarea,p,blockquote,th,td{margin:0;padding:0}
+.row{margin-left:-20px;*zoom:1}
+.row:before,.row:after{display:table;content:"";line-height:0}
+.row:after{clear:both}
+[class*="span"]{float:left;min-height:1px;margin-left:20px}
+.container,.navbar-static-top .container,.navbar-fixed-top .container,.navbar-fixed-bottom .container{width:940px}
+.span12{width:940px}
+.span11{width:860px}
+.span10{width:780px}
+.span9{width:700px}
+.span8{width:620px}
+.span7{width:540px}
+.span6{width:460px}
+.span5{width:380px}
+.span4{width:300px}
+.span3{width:220px}
+.span2{width:140px}
+.span1{width:60px}
+.offset12{margin-left:980px}
+.offset11{margin-left:900px}
+.offset10{margin-left:820px}
+.offset9{margin-left:740px}
+.offset8{margin-left:660px}
+.offset7{margin-left:580px}
+.offset6{margin-left:500px}
+.offset5{margin-left:420px}
+.offset4{margin-left:340px}
+.offset3{margin-left:260px}
+.offset2{margin-left:180px}
+.offset1{margin-left:100px}
+.row-fluid{width:100%;*zoom:1}
+.row-fluid:before,.row-fluid:after{display:table;content:"";line-height:0}
+.row-fluid:after{clear:both}
+.row-fluid [class*="span"]{display:block;width:100%;-webkit-box-sizing:border-box;-moz-box-sizing:border-box;box-sizing:border-box;float:left;margin-left:0;*margin-left:0}
+.row-fluid [class*="span"]:first-child{margin-left:0}
+.row-fluid .span12{width:100%;*width:99.94680851063829%}
+.row-fluid .span11{width:93.48936170212765%;*width:93.43617021276594%}
+.row-fluid .span10{width:82.97872340425532%;*width:82.92553191489361%}
+.row-fluid .span9{width:74.46808510638297%;*width:74.41489361702126%}
+.row-fluid .span8{width:65.95744680851064%;*width:65.90425531914893%}
+.row-fluid .span7{width:59.44680851063829%;*width:59.39361702127659%}
+.row-fluid .span6{width:49.93617021276595%;*width:49.88297872340425%}
+.row-fluid .span5{width:40.42553191489362%;*width:40.37234042553192%}
+.row-fluid .span4{width:33.914893617021278%;*width:33.861702127659576%}
+.row-fluid .span3{width:25.404255319148934%;*width:25.351063829787233%}
+.row-fluid .span2{width:16.893617021276595%;*width:16.840425531914894%}
+.row-fluid .span1{width:6.382978723404255%;*width:6.329787234042553%}
+[class*="span"].hide,.row-fluid [class*="span"].hide{display:none}
+[class*="span"].pull-right,.row-fluid [class*="span"].pull-right{float:right}
+.container{margin-right:auto;margin-left:auto;*zoom:1}
+.container:before,.container:after{display:table;content:"";line-height:0}
+.container:after{clear:both}
+.container-fluid{padding-right:20px;padding-left:20px;*zoom:1}
+.container-fluid:before,.container-fluid:after{display:table;content:"";line-height:0}
+.container-fluid:after{clear:both}
+.pull-left{float:left}
+.pull-right{float:right}

@@ -1,0 +1,25 @@
+PHTTP
+72.21.91.9"ç
+:GET /web/js/signup_validation_20140324040908.js HTTP/1.1
+Host: edgecast.cam4s.com
+Connection: keep-alive
+Accept: */*
+vUser-Agent: Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/31.0.1650.63 Safari/537.36
+Referer: http://www.cam4.com/
+$Accept-Encoding: gzip,deflate,sdch
+!Accept-Language: en-US,en;q=0.8
+
+*ã
+HTTP/1.1 200 OK
+Accept-Ranges: bytes
+Cache-Control: max-age=604800
+Content-Type: text/javascript
+%Date: Tue, 08 Apr 2014 21:33:15 GMT
+Etag: "2085610625"
+(Expires: Tue, 15 Apr 2014 21:33:15 GMT
+.Last-Modified: Thu, 03 Apr 2014 18:32:08 GMT
+Server: ECS (ord/4CC8)
+X-Cache: HIT
+Content-Length: 3224
+š
+function verificationPageVerifyEmail(){var a=$j("#emailSpan");$j("#email").bind("keyup blur",function(){validate(this,a,"email");});}$j(document).ready(function(){var c=$j("#userNameSpan");$j("#userName").bind("keyup blur",function(){validate(this,c,"username");});var b=$j("#emailSpan");$j("#email").bind("keyup blur",function(){validate(this,b,"email");});var a=$j("#cardNumberSpan");$j("#cardNumber").bind("keyup blur",function(){validate(this,a,"cardNumber");});var d=$j("#accessCodeSpan");$j("#accessCode").bind("keyup blur",function(){validate2Fields(this,d,"accessCode","cardNumber",$j("#cardNumber").val());});$j("#registerForm").submit(function(){$j("#userName").unbind();$j("#email").unbind();$j("#cardNumber").unbind();$j("#accessCode").unbind();return true;});});function showMessages(){$j("#userName").each(function(){validate(this,$j("#userNameSpan"),"username");});$j("#email").each(function(){validate(this,$j("#emailSpan"),"email");});$j("#cardNumber").each(function(){validate(this,$j("#cardNumberSpan"),"cardNumber");});$j("#accessCode").each(function(){validate2Fields(this,$j("#accessCodeSpan"),"accessCode","cardNumber",$j("#cardNumber").val());});}function validate(e,a,c){var d=document.getElementById("cardNumber");usrparams=new Object();usrparams[c]=e.value;if(e==d&&(e.value==0||e.value.length==0||e.value.length>6)){updateMessage(a,false,"Please enter a valid Card Number");return;}if(e.value!=e.lastValue){if(e.timer){clearTimeout(e.timer);}e.timer=setTimeout(function(){a.removeClass("error").html('<img src="'+WEB_CDN+'/images/ajax-loader.gif" height="16" width="16" /> checking ...');usrparams=new Object();usrparams[c]=e.value;$j.ajax({url:"/signup/"+c,data:usrparams,dataType:"json",type:"POST",success:function(f){updateMessage(a,f.success,f.message);},error:function(){ajFailure(a);}});},400);e.lastValue=e.value;if(e==d){var b=document.getElementById("accessCode");b.value="";validate2Fields(b,$j("#accessCodeSpan"),"accessCode","cardNumber",$j("#cardNumber").val());}}}function validate2Fields(c,a,e,d,b){if(c.value==""){updateMessage(a,false,"Please enter a valid AccessCode");return;}if(c.value!=c.lastValue){if(c.timer){clearTimeout(c.timer);}c.timer=setTimeout(function(){a.html('<img src="'+WEB_CDN+'/images/ajax-loader.gif" height="16" width="16" /> checking ...');$j.ajax({url:"/signup/"+e,data:e+"="+c.value+"&"+d+"="+b,dataType:"json",type:"post",success:function(f){updateMessage(a,f.success,f.message);},error:function(){ajFailure(a);}});},400);c.lastValue=c.value;}}function updateMessage(c,b,a){c.html(a);if(b){setTimeout(function(){c.removeClass("error");suggestionEmailDomain();},500);}else{c.addClass("error");}}function ajFailure(a){updateMessage(a,true,"");}function suggestionEmailDomain(){if(document.getElementById("paymentForm")!=null||document.getElementById("changeEmail")!=null){$j("#email").mailcheck({suggested:function(b,a){$j("#emailSuggested").text(a.full);$j("#email_suggestion").css({display:"block"});}});}}function suggestionEmailDomainClicked(){$j("#email").val($j("#emailSuggested").text());$j("#emailSpan").css({display:"block"});$j("#email").each(function(){validate(this,$j("#emailSpan"),"email");});$j("#email_suggestion").css({display:"none"});}

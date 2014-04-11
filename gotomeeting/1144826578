@@ -1,0 +1,27 @@
+PHTTP208.89.14.135"„
+ƒGET /hc/73849751/?&site=73849751&cmd=mTagInPage&lpCallId=732222402002-880514629883&protV=20&lpjson=1&page=http%3A//www.gotomeeting.com/online/&id=7762680169&javaSupport=false&visitorStatus=INSITE_STATUS&activePlugin=none&cobrowse=true&cobrowse=true HTTP/1.1
+Host: sales.liveperson.net
+Connection: keep-alive
+Accept: */*
+vUser-Agent: Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/31.0.1650.63 Safari/537.36
+-Referer: http://www.gotomeeting.com/online/
+$Accept-Encoding: gzip,deflate,sdch
+!Accept-Language: en-US,en;q=0.8
+ÀCookie: HumanClickKEY=3326448075131914641; LivePersonID=-111640324057860-1396993883:-1:-1:-1:-1; HumanClickSiteContainerID_73849751=STANDALONE; LivePersonID=LP i=111640324057860,d=1396993883
+
+*¬
+HTTP/1.1 200 OK
+%Date: Tue, 08 Apr 2014 21:51:23 GMT
+Server: Microsoft-IIS/6.0
+GP3P: CP="NON BUS INT NAV COM ADM CON CUR IVA IVD OTP PSA PSD TEL SAM"
+X-Powered-By: ASP.NET
+NSet-Cookie: HumanClickSiteContainerID_73849751=STANDALONE; path=/hc/73849751
+(Content-Type: application/x-javascript
+Accept-Ranges: bytes
+.Last-Modified: Tue, 08 Apr 2014 21:51:23 GMT
+Cache-Control: no-store
+Pragma: no-cache
+(Expires: Wed, 31 Dec 1969 23:59:59 GMT
+Content-Length: 188
+¾
+lpConnLib.Process({"ResultSet": {"lpCallId":"732222402002-880514629883","lpCallConfirm":"","lpJS_Execute":[{"code_id": "INPAGE-DELAY-10", "js_code": "lpMTag.lpInPageRequestDelay=10;"}]}});

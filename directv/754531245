@@ -1,0 +1,39 @@
+PHTTP99.193.228.94"‚
+VGET /DIRECTV_client_installers/DIRECTV_Player_Installer/installer-v2.5.0.js HTTP/1.1
+Host: conf.dtvce.com
+Connection: keep-alive
+Accept: */*
+vUser-Agent: Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/31.0.1650.63 Safari/537.36
+"Referer: http://www.directv.com/
+$Accept-Encoding: gzip,deflate,sdch
+!Accept-Language: en-US,en;q=0.8
+
+*½
+HTTP/1.0 200 OK
+.Last-Modified: Thu, 12 Dec 2013 21:51:21 GMT
+Accept-Ranges: bytes
+Content-Length: 1026
+&Content-Type: application/javascript
+%Date: Tue, 08 Apr 2014 21:39:02 GMT
+Server: Apache/2.2.11 (Unix)
+!ETag: "f2d86-402-4ed5d589a3369"
+(Expires: Tue, 08 Apr 2014 21:39:02 GMT
+Cache-Control: max-age=0
+'X-Cache: HIT from rcache.va.dtvce.net
+&Via: 1.0 rcache.va.dtvce.net (squid)
+Connection: keep-alive
+„
+var installers = {
+	mac : "http://directv.vo.llnwd.net/e5/cinema/plugin/DIRECTV_Player_9.2.dmg",
+	win : "http://directv.vo.llnwd.net/e5/cinema/plugin/DIRECTV_Player_9.2.exe",
+	win32_activex : "http://download.macromedia.com/get/flashplayer/current/licensing/win/install_flash_player_11_active_x.exe",
+	win64_activex : "http://download.macromedia.com/get/flashplayer/current/licensing/win/install_flash_player_11_active_x.exe",
+	win32_browserPlugin : "http://download.macromedia.com/get/flashplayer/current/licensing/win/install_flash_player_11_plugin.exe",
+	win64_browserPlugin : "http://download.macromedia.com/get/flashplayer/current/licensing/win/install_flash_player_11_plugin.exe",
+	mac_browserPlugin : "http://fpdownload.macromedia.com/pub/flashplayer/current/licensing/mac/install_flash_player_11_osx.dmg",
+	metrics_url : "http://metrics.directv.com/b/ss/dtvdirectvcomprod/4/REDIR",
+	directv_player_version_windows : "9.2",
+	directv_player_version_mac : "9.2",
+	flash_player_version : "11",
+	player_version : "9,2,0"
+};

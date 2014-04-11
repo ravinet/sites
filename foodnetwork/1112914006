@@ -1,0 +1,28 @@
+PHTTP54.209.244.129"∆
+êGET /event?d_nsid=0&d_ld=_ts%3D1396993284287&d_rtbd=json&d_jsonv=1&d_dst=1&d_cts=1&d_cb=demdexRequestCallback_scripps_0_1396993284287 HTTP/1.1
+Host: scripps.demdex.net
+Connection: keep-alive
+Accept: */*
+vUser-Agent: Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/31.0.1650.63 Safari/537.36
+@Referer: http://aam.adsremote.scrippsnetworks.com/dilfire.html
+$Accept-Encoding: gzip,deflate,sdch
+!Accept-Language: en-US,en;q=0.8
+‰Cookie: demdex=21648485936224841913136698455904685049; scripps=17539251520772043843230051996007526402; DexLifeCycle="MA==|ODA3NDIxPTE6MTkyMyw3OTc0MD0xOjE5MjMsNzk3NTg9MToxOTIzLDExMDk5OD0xOjE5MjMsMTA5MDI1PTE6MTkyMywxOTEzOTU9MToxOTIzLDI2MDMxOD0xOjE5MjMsODYyOTE9MToxOTIzLDg2MzEyPTE6MTkyMyw0NjQyNTM9MToxOTIz|MA==|NDE5MTMsNTAwNzQsNTQzNTEsMTY1MjcsMjA1NzgsNDQ3NjUsMTY4NDYsNTAyMjEsNzI0NjIsMjEwODAsMTY1MTksNDgyMTcsMTU4NDUsNDQ3NjQsMTU4NDQsMzkyMDksNjM0NTMsMTYzOTUsNTAwNzM=|MA==|MA==|MA=="; DST=
+
+*ñ
+HTTP/1.1 200 OK
+bCache-Control: no-cache,no-store,must-revalidate,max-age=0,proxy-revalidate,no-transform,private
+4Content-Type: application/javascript;charset=UTF-8
+3DCS: va6-dcsas1-10-89-2-33.va6.demdex.com 1.18.47
+(Expires: Thu, 01 Jan 2009 00:00:00 GMT
+cP3P: policyref="/w3c/p3p.xml", CP="NOI NID CURa ADMa DEVa PSAa PSDa OUR SAMa BUS PUR COM NAV INT"
+Pragma: no-cache
+ Server: Jetty(7.6.8.v20121106)
+ÑSet-Cookie: scripps=21648485936224841913136698455904685049;Path=/;Domain=.scripps.demdex.net;Expires=Thu, 07-Apr-2016 21:41:23 GMT
+„Set-Cookie: DexLifeCycle="MA==|ODA3NDIxPTE6MTkyMyw3OTc1OD0xOjE5MjMsMTEwOTk4PTE6MTkyMywxMDkwMjU9MToxOTIzLDE5MTM5NT0xOjE5MjMsMjYwMzE4PTE6MTkyMyw4NjI5MT0xOjE5MjMsODYzMTI9MToxOTIzLDc5NzQwPTE6MTkyMyw0NjQyNTM9MToxOTIz|MA==|NTQzNTEsMTU4NDQsMTY1MTksNDQ3NjQsNTAyMjEsODMwMjUsMjA1NzgsNDE5MTMsMzkyMDksMTU4NDUsMTY4NDYsMjIzODMsNTAwNzQsNTAwNzMsNzI0NjIsMjEwODAsMTY1MjcsMTYzOTUsNDgyMTcsNjM0NTMsMTU4NDksNDQ3NjU=|MA==|MA==|MA==";Path=/;Domain=.scripps.demdex.net;Expires=Thu, 07-Apr-2016 21:41:23 GMT
+RSet-Cookie: DST=;Path=/;Domain=.demdex.net;Expires=Thu, 07-Apr-2016 21:41:23 GMT
+	STS: OK
+Content-Length: 2156
+Connection: keep-alive
+Ó
+demdexRequestCallback_scripps_0_1396993284287({"dests":[],"stuff":[{"cn":"aamscripps","cv":"aam:260319|aam:118661|aam:311695|aam:375785|aam:648004|aam:684754|aam:116979|aam:250578|aam:201588|aam:807144","ttl":30,"dmn":"adsremote.scrippsnetworks.com"},{"cn":"aam_tnt","cv":"test=116979","ttl":0,"dmn":""},{"cn":"aam_fw","cv":"scripps=test;aam=311695;aam=375785;aam=118661;aam=260319","ttl":30,"dmn":""}],"ibs":[{"id":"481","ttl":14400,"tag":"img","url":["//tap.rubiconproject.com/oz/feeds/adobe/tokens?afu=21648485936224841913136698455904685049"]},{"id":"3","ttl":30240,"tag":"img","url":["//loadm.exelator.com/load/?p=204&g=091&j=0&bi=21648485936224841913136698455904685049"]},{"id":"359","ttl":30240,"tag":"img","url":["//i.w55c.net/ping_match.gif?st=dmx&rurl=http%3A%2F%2Fdpm.demdex.net%2Fibs%3Adpid%3D359%26dpuuid%3D_wfivefivec_"]},{"id":"352","ttl":30240,"tag":"img","url":["//adadvisor.net/adscores/g.pixel?sid=9211132908&aam=21648485936224841913136698455904685049"]},{"id":"60","ttl":14400,"tag":"img","url":["//p.acxiom-online.com/pixel/smt?pid=3004&t=3004&ot=pixel&uid=21648485936224841913136698455904685049"]},{"id":"466","ttl":14400,"tag":"img","url":["//image5.pubmatic.com/AdServer/usersync/usersync.html?predirect=http%3A%2F%2Fdpm.demdex.net%2Fibs%3Adpid=466%26dpuuid=PM_UID&userIdMacro=PM_UID"]},{"id":"269","ttl":10080,"tag":"img","url":["//sync.mathtag.com/sync/img?mt_exid=10004&mt_exuid=21648485936224841913136698455904685049&redir=http%3A%2F%2Fdpm.demdex.net%2Fibs%3Adpid%3D269%26dpuuid%3D[MM_UUID]%26ddsuuid%3d21648485936224841913136698455904685049"]}],"dpcalls":[{"id":"21","ttl":14400,"tag":"js","url":["//adadvisor.net/adscores/g.json?sid=9233633946"],"callback":{"obj":"Targus","fn":"parseInfo","key":"targus","tag":"img","url":"//dpm.demdex.net/demdot.jpg?et:dpm|dpid:21|data:"}},{"id":"22","ttl":14400,"tag":"js","url":["//api.bizographics.com/v1/profile.json?api_key=6332f8b7316a4d1284e9c1217a367347&callback=Demdex.parseBizo"],"callback":{"obj":"Demdex","fn":"parseBizo","key":"bizographics","tag":"img","url":"//dpm.demdex.net/demdot.jpg?et:dpm|dpid:22|data:"}}],"uuid":"21648485936224841913136698455904685049","dcs_region":7})

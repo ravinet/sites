@@ -1,0 +1,277 @@
+PHTTP72.21.91.19"Á
+1GET /boxad/boston-globe-sportswriters/ HTTP/1.1
+Host: cinesport.boston.com
+Connection: keep-alive
+TAccept: text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8
+vUser-Agent: Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/31.0.1650.63 Safari/537.36
+!Referer: http://www.boston.com/
+$Accept-Encoding: gzip,deflate,sdch
+!Accept-Language: en-US,en;q=0.8
+•Cookie: pathUrl=http://www.boston.com/; __vrf=13972436197407vNvpXp3kPCmAt8PAPWZOGFxqS5B0jNC; __vrrefresh=http%3A%2F%2Fwww.boston.com%2F; __gads=ID=882902a5d6e86d38:T=1397243620:S=ALNI_MZLaIhsmhWW2Jd_OAh6wezf05LMZg; s_cc=true; s_pv=Boston.com%20home%20page; s_sq=%5B%5BB%5D%5D
+
+*ÓH
+HTTP/1.1 200 OK
+Accept-Ranges: bytes
+Cache-Control: max-age=900
+Content-Type: text/html
+%Date: Fri, 11 Apr 2014 19:13:40 GMT
+*Etag: "bbbb7931e0805ed494f51193c62afc9f"
+.Last-Modified: Fri, 04 Apr 2014 06:29:55 GMT
+Server: ECS (ord/4CC8)
+Nx-amz-id-2: 0/6RwXQLCnyum7XyeWTbjWuXIk7158u+BLGc6rwq40V1D3sGuXbC0huSVoEZtsJT
+$x-amz-request-id: 2E9EE4AA66F2B1F8
+X-Cache: HIT
+Content-Length: 8879
+±E
+<!DOCTYPE html>
+<html xmlns:fb="http://ogp.me/ns/fb#">
+    <head>
+        <meta charset="utf-8">
+        <title></title>
+        <link rel="stylesheet" href="http://edgecdn.cinesport.com/_ui/css/normalize.css">
+
+        <style>
+        .viewwindow {
+		    height: 199px;
+		}
+		.thumbtray {
+		    margin: 0 0 0 17px;
+		}
+		ul.thumblist li {
+		    margin: 0 16px 1px 0;
+		}
+		ul.thumblist li img {
+		    width: 71px;
+		    height: 40px;
+		}
+		.preroll {
+			width: 300px;
+			height: 250px;
+		}		
+        </style>
+
+        <!--[if lt IE 9]>
+		<script src="//html5shim.googlecode.com/svn/trunk/html5.js"></script>
+		<![endif]-->
+		<script language="JavaScript" type="text/javascript" src="//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+		<script language="JavaScript" type="text/javascript" src="//cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.3/jquery.easing.min.js"></script>
+		<script language="JavaScript" type="text/javascript" src="http://edgecdn.cinesport.com/v2/javascripts/jquery.jqplugin.min.js"></script>
+		<script type="text/javascript">
+		
+			/*********************
+			** START AD RELATED **
+			**********************/
+
+
+			//variables expected by lite ad player
+			var playerWidth = 300;
+			var fitToScreen = true;
+			var isUI = false;
+			var adPlayerHtml;
+			//functions expected by lite ad player
+			function getBumperUrl() {
+				return 'http://cdn.cinesport.com/bumpers/CineSport_2013.flv';
+			}
+			var baseAdVars = "key=cinesport;categories=sports;keywords=sports,basketball,baseball,hockey,nascar;context=affiliateId%3DBoston%20Globe%2CplayerTarget%3D2%2CplayerName%3DBoston-Globe-rail-boston-sportswriters;bannerAdTag=http%3A%2F%2Ft-ads.adap.tv%2Fa%2Ft%2Fcinesport%3Fspot%3Doverlay%26creativeType%3Dvast_overlay%26zid%3Dbanners%26affiliateId%3DBoston%20Globe%2CplayerName%3DBoston-Globe-rail-boston-sportswriters";
+			var currentAdVars = "key=cinesport;categories=sports;keywords=sports,basketball,baseball,hockey,nascar;context=affiliateId%3DBoston%20Globe%2CplayerTarget%3D2%2CplayerName%3DBoston-Globe-rail-boston-sportswriters;bannerAdTag=http%3A%2F%2Ft-ads.adap.tv%2Fa%2Ft%2Fcinesport%3Fspot%3Doverlay%26creativeType%3Dvast_overlay%26zid%3Dbanners%26affiliateId%3DBoston%20Globe%2CplayerName%3DBoston-Globe-rail-boston-sportswriters";
+			
+			if (window.location.hash) {
+				currentAdVars = baseAdVars.replace(/-rail-/g, '-'+window.location.hash.substr(1)+'-');
+				baseAdVars = currentAdVars;
+			}
+			
+			function getAdVars() {
+				return currentAdVars;
+			}
+			function getMuteAiAds() {
+				return true;
+			}
+			function getFold() {
+				return 'a';
+			}
+			function getPageUrl() {
+				return document.referrer;
+			}
+			function setSkinUrl(_skinUrl) {
+			}
+			// the pre roll finished, clear it off
+			function onBumperComplete() {
+				adPlayerHtml = $('.adcontainer .preroll').html(); 
+				$('.adcontainer .preroll').html('&nbsp;');
+				$('.adcontainer').hide();
+				pulse = setTimeout(flipSlide, flipDelay+1000);
+			}
+			// companion ad, generally 300x250
+			function onAdStart(adHtml, adWidth, adHeight, videoHeight) {
+				// no companion for boxad...stub
+			}
+			
+			/*******************
+			** END AD RELATED **
+			********************/
+
+
+
+
+			(function($) {
+				$.fn.thumbroll = function() {
+					 return this.each(function(idx) {
+						 $(this).mouseover(function(e){
+						 	if (promoMode) {
+								nextIdx = idx;
+								flipSlide(false);
+							 	clearTimeout(pulse);
+							}
+						 });
+						 $(this).mouseout(function(e){
+						 	flipDone();
+						 });
+					 });
+				 }
+				$.fn.slideroll = function() {
+					 return this.each(function(idx) {
+						 $(this).mouseover(function(e){
+						 	if (promoMode) {
+							 	clearTimeout(pulse);
+							}
+						 });
+						 $(this).mouseout(function(e){
+						 	flipDone();
+						 });
+					 });
+				 }
+			})(jQuery);
+
+
+
+			var pulse;
+			var flipDelay = 5000;
+			var currIdx = 0;
+			var nextIdx = 1;
+			var slideCnt;
+			var promoMode = true;
+			$(document).ready( function(){
+
+
+				var numRows = 1;//Math.floor((totalHeight-328)/60);
+				var totVids = numRows * 3;
+				
+				playerWidth = $(window).width();
+								
+				sizeUp();
+				
+				$.getJSON('/boston-globe-sportswriters/feed.json', function(data) {
+				
+					if (data.videos.length >= totVids) {
+						for (var i=0; i<totVids; i++) {
+							$('ul.slidelist').append('<li id="'+data.videos[i].bc_id+'"><a class="poster" href="'+data.videos[i].link+'" target="_blank" title="'+data.videos[i].title+'"><img class="main" src="'+data.videos[i].fullstill+'" width="'+playerWidth+'"><span>&nbsp;</span></a><div class="desc"><h2><a class="playvid" href="'+data.videos[i].link+'" target="_blank">'+data.videos[i].title+'</a></h2></div></li>');
+							$('ul.thumblist').append('<li id="nav_'+data.videos[i].bc_id+'"><a href="'+data.videos[i].link+'" target="_blank" title="'+data.videos[i].title+'"><img src="'+data.videos[i].thumb+'" alt="'+data.videos[i].title+'"/><span></span></a></li>');
+						}
+
+						$('.thumbtray').css('margin-top', 0);
+		
+						$('ul.thumblist li:eq('+currIdx+')').addClass('active');
+						slideCnt = $('ul.slidelist li').length;
+		
+						$('ul.thumblist li a').thumbroll();
+						$('ul.slidelist li a.poster').slideroll();
+						
+						sizeUp();
+						
+					}
+				});
+
+				
+				if (!($.browser.flash)) {
+					//fallback mobile 300x250 ad unit
+					var player_name = 'Boston-Globe-rail-boston-sportswriters'.replace(/-rail-/g, '-'+window.location.hash.substr(1)+'-');
+					$('.adcontainer .preroll').html('<iframe id="csprt_companion_ad_iframe" src="http://edgecdn.cinesport.com/v2/mobile_adunit.html#'+player_name+'" frameborder="0" align="top,left" marginheight="0" marginwidth="0" scrolling="no" width="300" height="250"></iframe>');
+					setTimeout(onBumperComplete, 12500);
+				}
+				
+			});
+			
+			function sizeUp() {
+				var playerHeight = (playerWidth/16)*9;
+				$('ul.slidelist li img').css('width', playerWidth);
+				$('ul.slidelist li').css('width', playerWidth);
+				$('ul.slidelist li img').css('height', playerHeight);
+				$('ul.slidelist li').css('height', playerHeight);
+				$('.viewwindow').css('width', playerWidth);		
+				$('ul.slidelist').css('width', 3*(playerWidth+5));
+				//thumbs
+				var tMargin = ((playerWidth-213)/4)-5;
+				$('.thumbtray').css('width', playerWidth);
+				$('.thumbtray').css('margin-left', tMargin);
+				$('ul.thumblist li').css('margin-right', tMargin);
+			}
+			
+			function flipSlide(loop) {
+				if (typeof(loop) === "undefined") { loop = true; }
+				xDest = nextIdx * playerWidth * -1;
+				$('ul.slidelist').stop();
+				clearTimeout(pulse);
+				$('ul.thumblist li:eq('+currIdx+')').removeClass('active');
+				$('ul.thumblist li:eq('+nextIdx+')').addClass('active');
+				currIdx = nextIdx;
+				nextIdx++;
+				nextIdx = nextIdx%slideCnt;
+				if (promoMode) {
+					if (loop)
+						$('ul.slidelist').animate({left: xDest},{duration:1200, easing:'easeInOutExpo', complete:flipDone});
+					else
+						$('ul.slidelist').animate({left: xDest},{duration:1200, easing:'easeInOutExpo'});
+				} else {
+					$('ul.slidelist').css({left:xDest});
+				}
+			}
+			function flipDone() {
+				if (promoMode)
+					pulse = setTimeout(flipSlide, flipDelay);
+			}
+		</script>
+		
+    <script>
+      (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+      (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+      m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+      })(window,document,'script','//www.google-analytics.com/analytics.js','__gaTracker');
+      __gaTracker('create', 'UA-49321904-1', 'auto');
+    </script>
+
+    <script>
+      __gaTracker('set', 'page', '/2_boston-globe-sportswriters_BOXAD');
+      __gaTracker('send', 'pageview');
+    </script>		
+		
+	</head>
+	<body style="background-color:#fff">
+		<div class="viewwindow">
+		  	<ul class="slidelist">
+
+		    </ul> 
+	    </div>
+	    <div class="thumbtray">
+			<ul class="thumblist">
+
+			</ul>
+	    </div>
+	    
+		
+		<div class="adcontainer">
+			<div class="preroll">
+			
+					<div id="cinesportliteplayer" class="liteplayer"> 
+					<object id="litePlayerSwf" type="application/x-shockwave-flash" classid="clsid:D27CDB6E-AE6D-11cf-96B8-444553540000" WIDTH="300" HEIGHT="250">
+					<param name="bgcolor" value="#ffffff" /><param name="wmode" value="transparent" />
+					<param name="allowScriptAccess" value="always" />
+					<param name="movie" value="http://edgecdn.cinesport.com/_media/flash/CsprtLitePlayer.swf">
+					<embed src="http://edgecdn.cinesport.com/_media/flash/CsprtLitePlayer.swf" name="litePlayerSwf" width="300" height="250" allowScriptAccess="always" bgcolor="#ffffff" wmode="transparent" type="application/x-shockwave-flash" pluginspage="http://www.macromedia.com/go/getflashplayer"></embed>
+					</object>
+					</div>			
+			
+			</div>
+		</div>
+			    
+	</body>
+</html><!-- generated on: 2014-04-04 02:29:54.179780 -->

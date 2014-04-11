@@ -1,0 +1,166 @@
+PHTTP23.74.28.10"Ù
+PGET /modules/mod_pch_uninav/assets/js/win-bar.js?v=3.1.32.1.454-18308 HTTP/1.1
+Host: www.pch.com
+Connection: keep-alive
+Accept: */*
+vUser-Agent: Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/31.0.1650.63 Safari/537.36
+Referer: http://www.pch.com/
+$Accept-Encoding: gzip,deflate,sdch
+!Accept-Language: en-US,en;q=0.8
+bCookie: deb088d138aa52ddbeb48990e3e58a5e=k12m2f9f5ent563l9fgbgvu270; pdd=D; pci=n3qg5f4gGbPBKvNH
+
+*¶(
+HTTP/1.1 200 OK
+Server: Apache
+.Last-Modified: Thu, 20 Jun 2013 15:22:41 GMT
+#ETag: "812717-12dc-4df9784635240"
+Accept-Ranges: bytes
+Content-Length: 4828
+GP3P: CP="CAO DSP COR CUR ADM DEV TAI PSA PSD IVA IVD CON OUR LEG UNI"
+Content-Type: text/javascript
+%Date: Tue, 08 Apr 2014 22:08:04 GMT
+Connection: keep-alive
+Þ%
+if ( typeof window.PCH !== "object") {
+	window.PCH = {};
+}
+
+if ( typeof window.PCH.uniExp !== "object") {
+	window.PCH.uniExp = {};
+}
+
+// winner feed code
+PCH.uniExp.winbar = (function(win, doc, undefined) {
+	// Finding The Win Bar Container
+	var bar = $("#win-bar");
+	if (!bar.length) {
+		if (window.console) { console.log('NO WIN BAR') };
+		return false;
+	} else {
+		var winMessages = bar.find("div.win-messages"), 
+		winDisplay = bar.find("div.winner-display"), 
+		groupBy = 4, winners = win.pchWtArrWinners, 
+		rootUL = bar.find("ul");
+
+		function buildWinners() {
+			var fragArray = [];
+			for (var w = 0, wl = winners.length; w < wl; w += groupBy) {
+				fragArray.push("<li class=\"clearfix\">");
+				remainder = Math.min((wl - w), groupBy);
+				for (var h = 0; h < remainder; h += 1) {
+					//console.log( "w: " + w + ", h: " + (h + w) );
+					fragArray.push("<div class=\"winner-group\">");
+					if (winners[h + w].imgSrc) {
+						fragArray.push('<div class="prize-pic" style="background-image:none"><img src="' + winners[h + w].imgSrc + '" alt=""/></div>');
+					} else {
+						fragArray.push("<div class=\"prize-pic\"></div>");
+					}
+					fragArray.push("<div class=\"winner-info\">");
+					fragArray.push("<span class=\"winner-name\">" + winners[h + w].name + "</span><span>,&nbsp;</span>");
+					fragArray.push("<span class=\"winner-location\">" + winners[h + w].location + "</span><br />");
+					fragArray.push("<span class=\"prize\">" + winners[h + w].prize + "</span>");
+					//fragArray.push( "<span class=\"prize\">" + winners[ h + w ].gvwy_number + "</span>" );
+					fragArray.push("</div></div>");
+				}
+				fragArray.push("</li>");
+			}
+			rootUL[0].innerHTML = fragArray.join("");
+		}
+
+		function winnersFade() {
+			var winnersGroup = bar.find("div.winner-display ul li"), winnerLength = winnersGroup.length, currentWinGroup = 0;
+
+			win.setTimeout(displayNewGroup, 8000);
+
+			/*function switchWinners() {
+			 console.log( "switchWinners" );
+			 $( winnersGroup[ currentWinGroup ] ).css( "display", "none" );
+			 if( currentWinGroup >= winnerLength - 1 ) {
+			 currentWinGroup = 0;
+			 } else {
+			 currentWinGroup += 1;
+			 }
+			 winnersGroup.unbind( "transitionend", function( e ) { switchWinners(); } );
+			 winnersGroup.unbind( "webkitTransitionEnd", function( e ) { switchWinners(); } );
+			 $( winnersGroup[ currentWinGroup ] ).css( "display", "block" );
+			 $( winnersGroup[ currentWinGroup ] ).css( "opacity", "1" );
+			 }*/
+
+			function displayNewGroup() {
+				//if( !Modernizr.csstransitions ) {
+				$(winnersGroup[currentWinGroup]).fadeOut(200, /*"easeOutCubic",*/
+				function(e) {
+					if (currentWinGroup >= winnerLength - 1) {
+						currentWinGroup = 0;
+					} else {
+						currentWinGroup += 1;
+					}
+					$(winnersGroup[currentWinGroup]).fadeIn(200/*, "easeInCubic"*/ );
+				});
+				/*} else {
+				 winnersGroup.bind( "transitionend", function( e ) { switchWinners(); } );
+				 winnersGroup.bind( "webkitTransitionEnd", function( e ) { switchWinners(); } );
+				 $( winnersGroup[ currentWinGroup ] ).css( "opacity", "0" );
+				 }*/
+				win.setTimeout(displayNewGroup, 8000);
+			}
+
+		}
+
+		function searchAndWinBox() {
+			$("#searchWinContainer input.searchWin").focus(function() {
+				$("#searchWinContainer input.searchWin").addClass("searchText");
+				if ($("#searchWinContainer input.searchWin").val() == "Search & You Could Win Instantly!") {
+					$("#searchWinContainer input.searchWin").val("");
+				}
+			});
+
+			$("#searchWinContainer input.searchWin").blur(function() {
+				if ($("#searchWinContainer input.searchWin").val() == "") {
+					$("#searchWinContainer input.searchWin").removeClass("searchText");
+					$("#searchWinContainer input.searchWin").val("Search & You Could Win Instantly!");
+				}
+			});
+
+			$("#searchWinContainer .greyX").click(function(e) {
+				$("#searchWinContainer input.searchWin").val("Search & You Could Win Instantly!");
+			});
+
+			$("img.magGlass").click(function() {
+				searchwin();
+			});
+			$("#searchWinContainer input.searchWin").keypress(function(e) {
+				if (e.which === 13) {
+					searchwin();
+				}
+			});
+			function searchwin() {
+				var searchWinBoxVal = $("#searchWinContainer input.searchWin").val();
+				if (searchWinBoxVal != "" && searchWinBoxVal != "Search & You Could Win Instantly!") {
+					window.open('http://search.pch.com/search?nfsp=pm1&q=' + $("#searchWinContainer input.searchWin").val());
+				}
+			}
+
+		}
+
+		if (winners) {
+
+			buildWinners();
+			//searchAndWinBox();
+			win.setTimeout(function(e) {
+				bar.animate({
+					"bottom" : "0"
+				}, 900, /*"easeOutCubic",*/
+				function(e) {
+				});
+
+			}, 1000);
+
+			winnersFade();
+
+		}
+
+		return true;
+	}
+
+} )(this, this.document);

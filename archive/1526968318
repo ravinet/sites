@@ -1,0 +1,27 @@
+PHTTP207.241.224.2"à
+GET / HTTP/1.1
+Host: www.archive.org
+Connection: keep-alive
+TAccept: text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8
+vUser-Agent: Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/31.0.1650.63 Safari/537.36
+$Accept-Encoding: gzip,deflate,sdch
+!Accept-Language: en-US,en;q=0.8
+
+*Ç
+ HTTP/1.1 302 Moved Temporarily
+Server: nginx/1.1.19
+%Date: Tue, 08 Apr 2014 21:26:49 GMT
+Content-Type: text/html
+Content-Length: 161
+Connection: keep-alive
+(Location: http://archive.org/index.php
+(Expires: Wed, 09 Apr 2014 03:26:49 GMT
+Cache-Control: max-age=21600
+£
+<html>
+<head><title>302 Found</title></head>
+<body bgcolor="white">
+<center><h1>302 Found</h1></center>
+<hr><center>nginx/1.1.19</center>
+</body>
+</html>

@@ -1,0 +1,86 @@
+PHTTP157.166.224.57"‰
+œGET /html.ng/site=nba&nba_pos=88x31_spon&nba_rollup=homepage&nba_section=featured_stats&params.styles=fs&page.allowcompete=no&Params.User.UserID=534472a5045f3a0a3c73c576a105b77a&transactionID=13969947263859705745113088&tile=6875274996931&domId=fea4761ca8d9463c&kxid=&kxseg= HTTP/1.1
+Host: ads.nba.com
+Connection: keep-alive
+TAccept: text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8
+vUser-Agent: Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/31.0.1650.63 Safari/537.36
+Referer: http://www.nba.com/
+$Accept-Encoding: gzip,deflate,sdch
+!Accept-Language: en-US,en;q=0.8
+
+*®"
+HTTP/1.1 200 OK
+%Date: Tue, 08 Apr 2014 22:05:25 GMT
+Server: Apache
+"AdServer: ad8host1server1:9678:1
+%P3P: CP="NOI DEVa TAIa OUR BUS UNI"
+-Cache-Control: max-age=0, no-cache, private
+(Expires: Tue, 08 Apr 2014 22:05:25 GMT
+Pragma: no-cache
+Content-Length: 4023
+Keep-Alive: timeout=5, max=11
+Connection: Keep-Alive
+Content-Type: text/html
+¹
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+<head>
+
+<script>
+        function cnnad_getTld (hostname)
+        {
+               var data = hostname.split(".");
+               if (data.length >= 2)
+               {
+                       return (data[data.length-2] + "." + data[data.length-1]);
+               }
+               return(null);
+        }
+ 
+        var cnnDocDomain = cnnad_getTld(location.hostname);
+        if(cnnDocDomain) {document.domain = cnnDocDomain;}
+
+	function cnnGetId(query) {
+		var keyValPairs = query.split('&');
+		if(!keyValPairs) {
+			keyValPairs = new Array();
+			keyValPairs[keyValPairs.length]=query;
+		}
+		for(var counter=0; counter < keyValPairs.length;counter++) {
+			var keyVal = keyValPairs[counter].split('=');
+			if(keyVal[0]=='domId') {
+				//alert("returning id: " + keyVal[1]);
+				return keyVal[1];
+			}
+		}
+	}
+			
+	function cnnSendData2() {
+		var docId = cnnGetId(decodeURIComponent(location.pathname.substring(9)));
+		var height = 31;
+		var width = 88;
+		var targetWindow = top;
+		try
+		{
+			if(parent.cnnad_showAd)
+			{
+				targetWindow = parent;
+			}
+		} catch(err) {} 
+		targetWindow.cnnad_showAd(docId);
+		if ((height > 0)&&(width > 0))
+		{
+			targetWindow.cnnad_setAdSize(docId,height,width);
+		}
+	}
+</script> 
+</head>
+
+<body STYLE="background-color:transparent" onload="cnnSendData2()">
+<!--FlightID: 572248-->
+<a target="_blank" href="http://ads.cnn.com/event.ng/Type=click&FlightID=572248&AdID=788563&TargetID=161045&Segments=DECBHHicHc_JFQAhCAPQhnJgCVv_jU0cD18eqGDGFuhJ-NmupJ88I8I2GtF5h7i5RMbwkLkVyGkP0KIS7D7KuUBlVaN4Q1QPV64pPx6FWr9B3bqhwznoingWC93pLqmO3e3KTLmqq4U-H2VOQ2DM8plxGI0s-0012g5rui1Vx6ZZyaqVk79tcjvkqaO8_CWWpi5yX-x8cYTOMFPnydBd9r6471Vn9Cb3vUPV5cXLH1_-ap6jatloqtKvP1kFS4k.&Targets=161045,195174&Values=DECBHHicJY7LEQRRCAIT8iB-Mf_Eljd7aQqVwgnbNYbB3dBuh7Vb-WAbFjAwwqpqrV3LYiCtUXXW402RCvS658d-PIhUvCknrsfj6v6OYwPniTFpkx1UpXNVGlGhZzKzSz_lqRrN5CeHNzzveNKVhlEz_qLhoOOe0O8HTjAsMw..&RawValues=NGUSERID%252C534472a5045f3a0a3c73c576a105b77a%252CKXID%252C%252CTID%252C13969947263859705745113088%252CTIL%252C6875274996931&Redirect=http://t.mookie1.com/t/v1/clk?migAgencyId=347&migSource=adsrv2&migTrackDataExt=3143259;106063847;278930938;0&migRandom=[timestamp]&migTrackFmtExt=client;io;ad;crtv&migUnencodedDest=http://ad.doubleclick.net/clk;278930938;106063847;t;pc=[TPAS_ID]"><img src="http://i.cdn.turner.com/ttn/ttn_adspaces/NBA/2013/11/05/093512473SAP Insights 88x31.png" width="88" height="31" border="0"></a>
+<img src="http://t.mookie1.com/t/v1/imp?migAgencyId=347&migSource=adsrv2&migTrackDataExt=3143259;106063847;278930938;0&migTrackFmtExt=client;io;ad;crtv&migUnencodedDest=http://ad.doubleclick.net/ad/N5072.149455.NBA.COM/B7992919.57;sz=1x1;pc=[TPAS_ID];ord=bvjWrmg,bjuiNvfbWKmg?" border="0" height="1" width="1">
+<div style="position:absolute;visibility:hidden;"><img src="http://ads.nba.com:80/event.ng/Type=count&ClientType=2&ASeg=&AMod=&AOpt=0&AdID=788563&FlightID=572248&TargetID=161045&SiteID=57003&EntityDefResetFlag=0&Segments=DECBHHicHc_JFQAhCAPQhnJgCVv_jU0cD18eqGDGFuhJ-NmupJ88I8I2GtF5h7i5RMbwkLkVyGkP0KIS7D7KuUBlVaN4Q1QPV64pPx6FWr9B3bqhwznoingWC93pLqmO3e3KTLmqq4U-H2VOQ2DM8plxGI0s-0012g5rui1Vx6ZZyaqVk79tcjvkqaO8_CWWpi5yX-x8cYTOMFPnydBd9r6471Vn9Cb3vUPV5cXLH1_-ap6jatloqtKvP1kFS4k.&Targets=161045,195174&Values=DECBHHicJY7LEQRRCAIT8iB-Mf_Eljd7aQqVwgnbNYbB3dBuh7Vb-WAbFjAwwqpqrV3LYiCtUXXW402RCvS658d-PIhUvCknrsfj6v6OYwPniTFpkx1UpXNVGlGhZzKzSz_lqRrN5CeHNzzveNKVhlEz_qLhoOOe0O8HTjAsMw..&RawValues=NGUSERID%252C534472a5045f3a0a3c73c576a105b77a%252CKXID%252C%252CTID%252C13969947263859705745113088%252CTIL%252C6875274996931&random=bvjWrmg,bjuiNvfbWKmg&Params.tag.transactionid=13969947263859705745113088&Params.User.UserID=534472a5045f3a0a3c73c576a105b77a" width="1" height="1" border="0" /></div>
+<script src='http://js.moatads.com/turnerd8523/moatad.js#moatClientLevel1=572248&moatClientLevel2=788563&moatClientLevel3=&moatClientLevel4=-&moatClientSlicer1=-&moatClientSlicer2=-' type='text/javascript'></script>
+</body>
+</html>

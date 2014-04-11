@@ -1,0 +1,35 @@
+PHTTP
+18.7.20.70"Ô
+ÅGET /adServer/adServerESI.aspx?bannerID=261732&script=false&redir=http://core.insightexpressai.com/adserver/1pixel.gif HTTP/1.1
+!Host: core.insightexpressai.com
+Connection: keep-alive
+Accept: image/webp,*/*;q=0.8
+vUser-Agent: Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/31.0.1650.63 Safari/537.36
+íReferer: http://ads.ncaa.com/html.ng/site=ncaa&ncaa_pos=300x100_spon3&ncaa_rollup=ncaa&params.styles=fs&page.allowcompete=no&Params.User.UserID=534472c202be6f0a3c875a371403f938&transactionID=13969947558263022881538048&tile=7354574996931&domId=1d0ad465e8585a77&kxid=&kxseg=
+$Accept-Encoding: gzip,deflate,sdch
+!Accept-Language: en-US,en;q=0.8
+2Cookie: DW=2c79ce01396994754; DW_Time=1396994754
+
+*Í
+ HTTP/1.1 302 Moved Temporarily
+Server: Microsoft-IIS/7.0
+Content-Length: 153
+Content-Type: text/html
+@Location: http://core.insightexpressai.com/adserver/1pixel.gif
+KP3P: CP="OTI DSP COR CUR ADMi DEVi TAI PSA PSD IVD CONi TELi OUR BUS STA"
+Vary: Accept-Encoding
+X-Powered-By: ASP.NET
+(Expires: Tue, 08 Apr 2014 22:05:55 GMT
+Pragma: no-cache
+%Date: Tue, 08 Apr 2014 22:05:55 GMT
+Connection: keep-alive
+Cache-Control: no-store
+õ
+<HTML>
+<HEAD>
+<TITLE>Error Page</TITLE>
+</HEAD>
+<BODY>
+An error (302 Moved Temporarily) has occured in response to this request.
+</BODY>
+</HTML>

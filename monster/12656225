@@ -1,0 +1,28 @@
+PHTTP54.85.30.170"Å
+çGET /event?d_px=8439&d_ld=containerid%3D735%26_ts%3D1396994678653&d_rtbd=json&d_dst=1&d_cts=1&d_cb=demdexDestCallback1396994678653 HTTP/1.1
+Host: monster.demdex.net
+Connection: keep-alive
+Accept: */*
+vUser-Agent: Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/31.0.1650.63 Safari/537.36
+"Referer: http://www.monster.com/
+$Accept-Encoding: gzip,deflate,sdch
+!Accept-Language: en-US,en;q=0.8
+¿Cookie: demdex=16473662141449707152817634169323702057; monster=16473662141449707152817634169323702057; DexLifeCycle="MA==|OTAwNz0xOjE5MjM=|MA==|NzEzOSwyMjE4OCw0ODQwOA==|MA==|MA==|MA=="; DST=
+
+*˙
+
+HTTP/1.1 200 OK
+bCache-Control: no-cache,no-store,must-revalidate,max-age=0,proxy-revalidate,no-transform,private
+4Content-Type: application/javascript;charset=UTF-8
+4DCS: va6-dcsas1-10-89-2-151.va6.demdex.com 1.18.47
+(Expires: Thu, 01 Jan 2009 00:00:00 GMT
+cP3P: policyref="/w3c/p3p.xml", CP="NOI NID CURa ADMa DEVa PSAa PSDa OUR SAMa BUS PUR COM NAV INT"
+Pragma: no-cache
+ Server: Jetty(7.6.8.v20121106)
+ßSet-Cookie: DexLifeCycle="MA==|OTAwNz0xOjE5MjM=|MA==|NzEzOSwyMjE4OCw0ODQwOA==|MA==|MA==|MA==";Path=/;Domain=.monster.demdex.net;Expires=Thu, 07-Apr-2016 22:04:38 GMT
+RSet-Cookie: DST=;Path=/;Domain=.demdex.net;Expires=Thu, 07-Apr-2016 22:04:38 GMT
+	STS: OK
+Content-Length: 659
+Connection: keep-alive
+ï
+demdexDestCallback1396994678653({"dests":[{"id":"46743-1396994678","y":"img","c":"http://b.collective-media.net/seg/cm/r1p0"},{"id":"66783-1396994678","y":"img","c":"http://pixel.quantserve.com/pixel/p-28NcPcQyMxaKw.gif"},{"id":"363648-1396994678","y":"img","c":"http://www.bizographics.com/collect/?fmt=gif&url=monster.com&pid=2146"},{"id":"363669-1396994678","y":"img","c":"http://pixel.rubiconproject.com/tap.php?v=17911"}],"stuff":[{"cn":"dxmonster","cv":"dx=1160001&dx=0000001&dx=1290002","ttl":30,"dmn":".monster.com"},{"cn":"dxmilitary","cv":"dx=1160001","ttl":30,"dmn":".military.com"}],"uuid":"16473662141449707152817634169323702057","dcs_region":7})

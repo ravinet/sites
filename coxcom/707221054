@@ -1,0 +1,27 @@
+PHTTP208.89.14.135"°
+©GET /hc/57460284/?&site=57460284&cmd=mTagInPage&lpCallId=379511812934-067393518519&protV=20&lpjson=1&page=http%3A//ww2.cox.com/residential/home.cox&id=1339597523&javaSupport=false&visitorStatus=INSITE_STATUS&defInvite=chat-cox-sales-english&activePlugin=none&cobrowse=true&cobrowse=true HTTP/1.1
+Host: sales.liveperson.net
+Connection: keep-alive
+Accept: */*
+vUser-Agent: Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/31.0.1650.63 Safari/537.36
+2Referer: http://ww2.cox.com/residential/home.cox
+$Accept-Encoding: gzip,deflate,sdch
+!Accept-Language: en-US,en;q=0.8
+ÁCookie: HumanClickKEY=514805701698305046; LivePersonID=-1114701312427546-1397226743:-1:-1:-1:-1; HumanClickSiteContainerID_57460284=STANDALONE; LivePersonID=LP i=1114701312427546,d=1397226743
+
+*¬
+HTTP/1.1 200 OK
+%Date: Fri, 11 Apr 2014 14:32:23 GMT
+Server: Microsoft-IIS/6.0
+GP3P: CP="NON BUS INT NAV COM ADM CON CUR IVA IVD OTP PSA PSD TEL SAM"
+X-Powered-By: ASP.NET
+NSet-Cookie: HumanClickSiteContainerID_57460284=STANDALONE; path=/hc/57460284
+(Content-Type: application/x-javascript
+Accept-Ranges: bytes
+.Last-Modified: Fri, 11 Apr 2014 14:32:23 GMT
+Cache-Control: no-store
+Pragma: no-cache
+(Expires: Wed, 31 Dec 1969 23:59:59 GMT
+Content-Length: 188
+¾
+lpConnLib.Process({"ResultSet": {"lpCallId":"379511812934-067393518519","lpCallConfirm":"","lpJS_Execute":[{"code_id": "INPAGE-DELAY-10", "js_code": "lpMTag.lpInPageRequestDelay=10;"}]}});

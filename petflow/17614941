@@ -1,0 +1,209 @@
+PHTTP54.204.241.146"æ
+GGET /js/doorbusters_7d8ff7d5bbd8e67633f884bf2d4c1e35_asdf.js HTTP/1.1
+Host: www.petflow.com
+Connection: keep-alive
+Accept: */*
+vUser-Agent: Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/31.0.1650.63 Safari/537.36
+"Referer: http://www.petflow.com/
+$Accept-Encoding: gzip,deflate,sdch
+!Accept-Language: en-US,en;q=0.8
+ïCookie: optimizelySegments=%7B%7D; optimizelyEndUserId=oeu1396994893740r0.7730855331756175; optimizelyBuckets=%7B%7D; optimizelyPendingLogEvents=%5B%5D; _ga=GA1.2.191234633.1396994894; _dc=1; __utma=29556542.191234633.1396994894.1396994894.1396994894.1; __utmb=29556542.1.10.1396994894; __utmc=29556542; __utmz=29556542.1396994894.1.1.utmcsr=(direct)|utmccn=(direct)|utmcmd=(none); mp_petflow_mixpanel=%7B%22distinct_id%22%3A%20%221454362692b12c0-0b27b7a0c-14281008-75300-1454362692c1424%22%7D
+
+*Ý²
+HTTP/1.1 200 OK
+Server: nginx/1.1.19
+%Date: Tue, 08 Apr 2014 22:08:13 GMT
+&Content-Type: application/javascript
+Transfer-Encoding: chunked
+Connection: keep-alive
+.Last-Modified: Thu, 03 Apr 2014 21:14:03 GMT
+!ETag: "9736-4f629e16df0f2-gzip"
+Vary: Accept-Encoding
+&Strict-Transport-Security: max-age=0
+"X-Varnish: 1335436190 1335434334
+	Age: 73
+Via: 1.1 varnish
+JX-Varnish-Asdf: /js/doorbusters_7d8ff7d5bbd8e67633f884bf2d4c1e35_asdf.js
+X-Varnish-Cache: HIT
+ì®
+1e15
+/* vendors/kkcountdown.min.js */
+/**
+ * Plugin kkcountdown counts down to specific dates in the future.
+ *
+ * @example
+ * $(".come-class").kkcountdown();
+ *
+ * @type jQuery
+ *
+ * @name kkcountdown
+ * @author Krzysztof Furtak http://krzysztof-furtak.pl/
+ * @version 1.3
+ * 
+ * Documentation: http://krzysztof-furtak.pl/2010/05/kk-countdown-jquery-plugin/
+ * 
+ */
+!function(t){t.fn.kkcountdown=function(i){var e={dayText:"day ",daysText:"days ",hoursText:":",minutesText:":",secondsText:"",textAfterCount:"---",oneDayClass:false,displayDays:true,displayZeroDays:true,addClass:false,callback:false,warnSeconds:60,warnClass:false};var i=t.extend(e,i);var a=new Array;this.each(function(){var e=t(this);var a=t(document.createElement("span")).addClass("kkcountdown-box");var s=t(document.createElement("span")).addClass("kkc-dni");var d=t(document.createElement("span")).addClass("kkc-godz");var o=t(document.createElement("span")).addClass("kkc-min");var n=t(document.createElement("span")).addClass("kkc-sec");var c=t(document.createElement("span")).addClass("kkc-dni-text");var l=t(document.createElement("span")).addClass("kkc-godz-text");var p=t(document.createElement("span")).addClass("kkc-min-text");var u=t(document.createElement("span")).addClass("kkc-sec-text");if(i.addClass!=false){a.addClass(i.addClass)}l.html(i.hoursText);p.html(i.minutesText);u.html(i.secondsText);a.append(s).append(c).append(d).append(l).append(o).append(p).append(n).append(u);e.append(a);r(e)});function r(t){var e=0;if(t.id===undefined){t.id="kk_"+Math.random((new Date).getTime())}if(t.id in a)e=a[t.id];else e=t.attr("data-seconds");if(e===undefined){var s=new Date;s=Math.floor(s.getTime()/1e3);var o=t.attr("data-time");if(o===undefined)o=t.attr("time");e=o-s}a[t.id]=e-1;if(i.warnClass&&e<i.warnSeconds){t.addClass(i.warnClass)}if(e<0){t.html(i.textAfterCount);if(i.callback){i.callback()}}else if(e<=24*60*60){setTimeout(function(){d(true,t,e);r(t)},1e3)}else{setTimeout(function(){d(false,t,e);r(t)},1e3)}}function d(t,e,a){var r=o(a%60);a=Math.floor(a/60);var s=o(a%60);a=Math.floor(a/60);var d=o(a%24);a=Math.floor(a/24);var n=a;if(t&&i.oneDayClass!=false){e.addClass(i.oneDayClass)}if(n==0&&!i.displayZeroDays){}else if(n==1){e.find(".kkc-dni").html(n);e.find(".kkc-dni-text").html(i.dayText)}else{e.find(".kkc-dni").html(n);e.find(".kkc-dni-text").html(i.daysText)}e.find(".kkc-godz").html(d);e.find(".kkc-min").html(s);e.find(".kkc-sec").html(r)}function o(t){s="";if(t<10){t="0"+t}return t}}}(jQuery);/* splash.js */
+$(document).ready(function(){var t=$("html").hasClass("ie8")?true:false;var e=false;var a=[];a["dog"]=false;a["cat"]=false;// Lazyload images
+$("img.lazy").lazyload({effect:"fadeIn"});// When we scroll, check to see if we've scrolled to a page element towards
+// the bottom of the page
+$(window).scroll(function(){// Have we scrolled to the bottom of the page?
+if($(window).scrollTop()+$(window).height()>=$("#bottom-links").offset().top){// Determine which species is being shown
+var t=$("#dog_content").css("display")=="block"?"dog":"cat";// Make sure we don't already have a request in progress and if one
+// is actually necessary
+if(!e&&!a[t]){// Get next product set
+r(t)}}});function r(r){if(!a[r]){// Set this to true so that scrolling doesn't continue to make calls
+e=true;// Show the loading spinner
+$(".loading-next-set").css("display","block")}$.ajax({type:"GET",dataType:"json",url:"/get_next_product_set",success:function(s){// Check if we've received a set of products
+if(s.message.products!=undefined){// Set this to false once we get a response (this will allow getNextProductSet to be called again)
+e=false;// Hide loading spinner for now
+$(".loading-next-set").css("display","none");// Increment the page value in the DOM
+$("#"+r+"_page").val(parseFloat($("#"+r+"_page").val())+1);// This will hold our product information
+var d={products:[]};var o=0;// Iterate over all returned products
+for(key in s.message.products){if(t){key=o}if(typeof s.message.products[key]!="undefined"){// console.log('index  - ' + (key+1));
+// console.log('length - ' + data.message.products.length);
+var n=0;var c=2;var l=0;var p=false;var u=false;var f=(parseInt(key)+1)%3==0||parseInt(key)+1==s.message.products.length?true:false;var _=[];var h={options:[]};var m={imgs:[]};// Iterate over each product option
+for(index in s.message.products[key]["product_sizes"]){if(t){index=l}if(typeof s.message.products[key]["product_sizes"][index]!="undefined"){// Calculate savings, make sure it doesn't come out to 100% off
+n=100-Math.floor(s.message.products[key]["product_sizes"][index].retail_price/s.message.products[key]["product_sizes"][index].msrp*100);n=n==100?99:n;// Check product option inventories, when we encounter one that is > 0, make it our first option
+if(s.message.products[key]["product_sizes"][index].inventory>0&&!p){p=true;_=s.message.products[key]["product_sizes"][index];s.message.products[key]["first_savings"]=n;s.message.products[key]["first_inventory"]=s.message.products[key]["product_sizes"][index].inventory}// If we do not find a product option that has inventory, set the first option to the first one in the set
+if(!p&&parseInt(index)+1==s.message.products[key]["product_sizes"].length){p=true;_=s.message.products[key]["product_sizes"][0];s.message.products[key]["first_savings"]=n;s.message.products[key]["first_inventory"]=s.message.products[key]["product_sizes"][index].inventory}// Add product option information to array
+h.options.push({product_option_id:s.message.products[key]["product_sizes"][index].product_option_id,product_option_status:s.message.products[key]["product_sizes"][index].product_option_status,max_per_order:s.message.products[key]["product_sizes"][index].max_per_order,msrp:s.message.products[key]["product_sizes"][index].msrp,retail_price:s.message.products[key]["product_sizes"][index].retail_price,price_per_can:s.message.products[key]["product_sizes"][index].price_per_can,price_per_pound:s.message.products[key]["product_sizes"][index].price_per_pound,product_slug:s.message.products[key]["product_sizes"][index].product_slug,purchasability:s.message.products[key]["product_sizes"][index].purchasability,option_description:s.message.products[key]["product_sizes"][index].size_description,sku:s.message.products[key]["product_sizes"][index].sku,requires_prescription:s.message.products[key]["product_sizes"][index].requires_prescription,inventory:s.message.products[key]["product_sizes"][index].inventory<=0?0:s.message.products[key]["product_sizes"][index].inventory,sold_out_option:s.message.products[key]["product_sizes"][index].inventory<=0?true:false,is_first_option:s.message.products[key]["product_sizes"][index]==_?true:false,savings:n});// Determine the product's prescription requirement from the product option
+s.message.products[key]["requires_prescription"]=s.message.products[key]["product_sizes"][index].requires_prescription=="t"?true:false;// Increment loop counter
+l++}}// Reset this
+l=0;// Iterate over images
+for(i in s.message.products[key]["images"]){// Check for additional images
+if(i.indexOf("medium")!=-1&&i.indexOf("front")==-1){// Add additional images to array
+m.imgs.push({index:c,img:s.message.products[key]["images"][i]});// Increment
+c++}}if(s.message.products[key]["images"]["medium_front"]!=""){u=true}// Add product information to array
+d.products.push({product_id:s.message.products[key]["product_id"],title:s.message.products[key]["title"],options:h.options,needs_extended:h.options.length>=10?true:false,status:s.message.products[key]["product_status"],status_id:s.message.products[key]["product_status_id"],product_slug:s.message.products[key]["url"],brand_slug:s.message.products[key]["brand
+2000
+_slug"],description:s.message.products[key]["description"],images:s.message.products[key]["images"],additional_images:m.imgs,has_additional_images:m.imgs.length>0?true:false,has_medium_front:u,iso_alpha_2_code:s.message.products[key]["iso_alpha_2_code"],purchasability:s.message.products[key]["purchasability"],is_sold_out:s.message.products[key]["is_sold_out"],requires_prescription:s.message.products[key]["requires_prescription"],first_product_option:_,first_savings:s.message.products[key]["first_savings"]==100?99:s.message.products[key]["first_savings"],first_inventory:s.message.products[key]["first_inventory"],needs_break:f,product_pad_right:!f?"product-pad-right":"",has_amount_left:s.message.products[key]["first_inventory"]>0&&s.message.products[key]["first_inventory"]<100?true:false});// Increment product counter
+o++}}o=0;// Generate product template
+var g=[// Foreach product
+"{{#products}}",'<div id="product-{{ product_id }}" class="product {{ product_pad_right }}">','<div class="options hide{{#needs_extended}} extended{{/needs_extended}}">',"<form>",// Foreach option
+"{{#options}}",'<div class="product-option">',"<label>",'<input class="product-option-radio" type="radio" name="option"','id="product_option_radio_for-{{ product_option_id }}"','data-product-id="{{ product_id }}"','data-max-per-order="{{ max_per_order }}"','data-retail-price="{{ retail_price }}"','data-inventory="{{ inventory }}"','data-competitor-price="{{ msrp }}"','data-savings="{{ savings }}"','value="{{ product_option_id }}"',"{{#is_first_option}}",'checked="checked"',"{{/is_first_option}}"," />","{{ option_description }}","</label>","</div>","{{/options}}","</form>","</div>",'<div class="wrap">','<div class="banner">','<div class="ribbon-outer">','<div class="ribbon-inner">{{first_savings}}% off</div>',"</div>","</div>",'<div class="ie8-banner">','<div class="ribbon-red"></div>','<div class="ie8-banner-text">{{first_savings}}% off</div>',"</div>","{{#is_sold_out}}",'<div class="sold-out-overlay">',"</div>",'<div class="sold-out-banner">','<div class="banner-outer">','<div class="banner-inner">SOLD OUT!</div>',"</div>","</div>",'<div class="ie8-sold-out-banner">','<div class="sold-out-text"></div>',"</div>","{{/is_sold_out}}",// If it has additional images
+"{{#has_additional_images}}",'<div class="arrows">','<div class="ie8-arrow-left" id="ie8_arrow_left_for-{{ product_id }}" data-product-id="{{ product_id }}">','<div class="arrow-left-sp go-left"></div>',"</div>",'<div class="arrow-left" id="arrow_left_for-{{ product_id }}" data-product-id="{{ product_id }}">','<a href="#" class="go-left"><i class="icon-caret-left"></i></a>',"</div>",'<div class="ie8-arrow-right" id="ie8_arrow_right_for-{{ product_id }}" data-product-id="{{ product_id }}">','<div class="arrow-right-sp go-right"></div>',"</div>",'<div class="arrow-right" id="arrow_right_for-{{ product_id }}" data-product-id="{{ product_id }}">','<a href="#" class="go-right"><i class="icon-caret-right"></i></a>',"</div>","</div>","{{/has_additional_images}}",'<div class="top">','<div class="starburst-wrap{{^has_amount_left}} invisible{{/has_amount_left}}">','<div class="starburst"></div>','<div class="ie8-starburst">','<div class="yellow-burst"></div>',"</div>",'<div class="starburst-text">','<div class="line-1">ONLY</div>','<div class="line-2 amount-left">{{#has_amount_left}}{{first_inventory}}{{/has_amount_left}}</div>','<div class="line-3">LEFT</div>',"</div>","</div>",'<div class="product-image" id="product_image_for-{{ product_id }}" data-iteration="1">','<a class="product-image-link" href="#">',"{{#images.medium_front}}",'<img src="{{ images.medium_front }}" alt="" />',"{{/images.medium_front}}","{{^images.medium_front}}","{{#images.large_front}}",'<img src="{{ images.large_front }}" alt="" />',"{{/images.large_front}}","{{^images.large_front}}",'<img src="{{ images.large_front_0 }}" alt="" />',"{{/images.large_front}}","{{/images.medium_front}}","</a>","</div>",// If it has additional images
+"{{#has_additional_images}}",'<div class="additional-images hide" id="additional_images_for-{{ product_id }}">',"{{#has_medium_front}}",'<img src="{{ images.medium_front }}" alt="" id="additional_image_for-{{ product_id }}-1" />',"{{/has_medium_front}}","{{^has_medium_front}}",'<img src="{{ images.large_front }}" alt="" id="additional_image_for-{{ product_id }}-1" />',"{{/has_medium_front}}","{{#additional_images}}",'<img src="{{ img }}" alt="" id="additional_image_for-{{ product_id }}-{{ index }}" />',"{{/additional_images}}","</div>","{{/has_additional_images}}",// If product requires prescription
+"{{#requires_prescription}}",'<div class="prescription-icon"><span class="rx-r">R</span><span class="rx-x">x</span></div>',"{{/requires_prescription}}",// Product title
+'<div class="product-title">','<a href="/product/{{ brand_slug }}/{{ product_slug }}">{{ title }}</a>',"</div>",// If product.iso_alpha_2_code
+"{{#iso_alpha_2_code}}",'<div class="country-of-origin">','<a href="/product/{{ brand_slug }}/{{ product_slug }}">','<img src="/images/country_bandles/{{ iso_alpha_2_code }}_small.png" alt="" />',"</a>","</div>","{{/iso_alpha_2_code}}",'<div class="clear"></div>',"</div>",'<div class="bottom">','<div class="left-side" id="meta_info_for-{{ product_id }}">','<div class="our-price">Our Price: ${{ first_product_option.retail_price }}</div>','<div class="competitor-price">Regular <span class="comp-price">(${{ first_product_option.msrp }})</span></div>',// if this option has a max per order
+"{{#first_product_option.max_per_order}}",'<div class="product-limit">(MAX {{ first_product_option.max_per_order }} PER HOUSEHOLD)</div>',"{{/first_product_option.max_per_order}}","</div>",'<div class="right-side">','<div class="quantity">','<label class="quantity">Quantity: </label>','<div class="ie8-inc-btn-sp" data-product-id="{{ product_id }}"></div>','<a href="#" class="inc-btn" data-product-id="{{ product_id }}"><i class="icon-plus-sign"></i></a>','<input type="text" maxlength="2" id="quantity_for-{{ product_id }}" class="quantity-input" name="quantity" value="1" ','data-product-id="{{ product_id }}"','data-product-option-id="{{ first_product_option.product_option_id }}"','data-limit="{{ first_product_option.max_per_order }}"'," />",'<div class="ie8-dec-btn-sp" data-product-id="{{ product_id }}"></div>','<a href="#" class="dec-btn" data-product-id="{{ product_id }}"><i class="icon-minus-sign"></i></a>',"</div>",'<div class="cart-add">','<a id="sold_out_add_to_cart_for-{{ product_id }}" href="#" class="sold-out-add-to-cart{{^is_sold_out}} noshow{{/is_sold_out}}">Sold Out!</a>','<a id="add_to_cart_for-{{ product_id }}" href="/cart_items/modify/create/{{ first_product_option.product_option_id }}/1.json" class="add-to-cart{{#is_sold_out}} noshow{{/is_sold_out}}" data-product-title="{{ title }}" rel="nofollow" data-link-type="normal"><i class="icon-shopping-cart"></i> Add to Cart</a>','<a class="normal-add" href="/cart_items/modify/create/{{ first_product_option.product_option_id }}/1.json">','<div class="ie8-add-to-cart-sp{{#is_sold_out}} noshow{{/is_sold_out}}" id="ie8_add_to_cart_for-{{ product_id }}" data-product-title="{{ title }}" rel="nofollow" data-link-type="ie8"></div>',"</a>","</div>","</div>",'<div class="cf"></div>',"</div>","</div>","</div>",// If this is the last tile in a row (divisibleby(3))
+"{{ #needs_break }}",'<div class="break"></div>',"{{ /needs_break }}","{{/products}}"].join("\n");// Render the html for cart with mustache
+var v=Mustache.render(g,d);// Finally, replace our old cart with our new cart.
+$("#"+r+"_content").append(v)}else{// Reched the end of product list, hide spinner
+e=false;a[r]=true;// Hide loading spinner for now
+$(".loading-next-set").css("display","none")}},error:function(t,i,s){// console.log(err);
+// console.log(text);
+// Reched the end of product list, hide spinner
+e=false;a[r]=true;// Hide loading spinner for now
+$(".loading-next-set").css("display","none")},data:{species:r,page:$("#"+r+"_page").val()}})}function s(i,e,a){var r=$("#page-vars").attr("data-page-type");if(r!="static"){if(t){$("#ie8_add_to_cart_for-"+i).parent().attr("href","/cart_items/modify/create/"+e+"/"+a+".json")}else{$("#a
+2000
+dd_to_cart_for-"+i).attr("href","/cart_items/modify/create/"+e+"/"+a+".json")}}else{if(t){$("#ie8_add_to_cart_for-"+i).parent().attr("href","/cart_items/create_doorbusters/"+e+"/"+a)}else{$("#add_to_cart_for-"+i).attr("href","/cart_items/create_doorbusters/"+e+"/"+a)}}}// @TODO - This really, REALLY needs a refactor.
+function d(i,e,a,r,d,o,n,c){console.log("inventory for -"+e+" is - "+c);var l=$("#page-vars").attr("data-page-type");if(r!=""){$("#meta_info_for-"+i).children(".product-limit").html("(MAX "+r+" PER HOUSEHOLD)");$("#meta_info_for-"+i).children(".product-limit").css("visibility","visible");$("#quantity_for-"+i).attr("data-limit",r)}else{$("#meta_info_for-"+i).children(".product-limit").css("visibility","hidden");$("#quantity_for-"+i).attr("data-limit","")}if(c<100&&c>0){// Display starburst
+if(l=="static"){if(t){$("#meta_info_for-"+i).siblings(".right-side").children(".cart-add").children(".static-add").children(".ie8-add-to-cart-static").css("display","block");$("#meta_info_for-"+i).siblings(".right-side").children(".cart-add").children(".static-add").children(".ie8-add-to-cart-static").removeClass("noshow")}else{$("#meta_info_for-"+i).siblings(".right-side").children(".cart-add").children(".add-to-cart-static").css("display","block");$("#meta_info_for-"+i).siblings(".right-side").children(".cart-add").children(".add-to-cart-static").removeClass("noshow")}}else{if(t){$("#meta_info_for-"+i).siblings(".right-side").children(".cart-add").children(".normal-add").children(".ie8-add-to-cart-sp").css("display","block");$("#meta_info_for-"+i).siblings(".right-side").children(".cart-add").children(".normal-add").children(".ie8-add-to-cart-sp").removeClass("noshow")}else{$("#meta_info_for-"+i).siblings(".right-side").children(".cart-add").children(".add-to-cart").css("display","block");$("#meta_info_for-"+i).siblings(".right-side").children(".cart-add").children(".add-to-cart").removeClass("noshow")}}$("#meta_info_for-"+i).siblings(".right-side").children(".cart-add").children(".sold-out-add-to-cart").hide();$("#meta_info_for-"+i).siblings(".right-side").children(".cart-add").children(".sold-out-add-to-cart").addClass("noshow");$("#product-"+i).children(".wrap").children(".top").children(".starburst-wrap").removeClass("invisible");$("#product-"+i).children(".wrap").children(".top").children(".starburst-wrap").children(".starburst-text").children(".amount-left").html(c)}else if(c<=0){// Display sold out button
+if(l=="static"){if(t){$("#meta_info_for-"+i).siblings(".right-side").children(".cart-add").children(".static-add").children(".ie8-add-to-cart-static").hide();$("#meta_info_for-"+i).siblings(".right-side").children(".cart-add").children(".static-add").children(".ie8-add-to-cart-static").addClass("noshow")}else{$("#meta_info_for-"+i).siblings(".right-side").children(".cart-add").children(".add-to-cart-static").hide();$("#meta_info_for-"+i).siblings(".right-side").children(".cart-add").children(".add-to-cart-static").addClass("noshow")}}else{if(t){$("#meta_info_for-"+i).siblings(".right-side").children(".cart-add").children(".normal-add").children(".ie8-add-to-cart-sp").hide();$("#meta_info_for-"+i).siblings(".right-side").children(".cart-add").children(".normal-add").children(".ie8-add-to-cart-sp").addClass("noshow")}else{$("#meta_info_for-"+i).siblings(".right-side").children(".cart-add").children(".add-to-cart").hide();$("#meta_info_for-"+i).siblings(".right-side").children(".cart-add").children(".add-to-cart").addClass("noshow")}}$("#meta_info_for-"+i).siblings(".right-side").children(".cart-add").children(".sold-out-add-to-cart").removeClass("noshow");$("#meta_info_for-"+i).siblings(".right-side").children(".cart-add").children(".sold-out-add-to-cart").show();$("#product-"+i).children(".wrap").children(".top").children(".starburst-wrap").addClass("invisible")}else{// Hide starburst
+if(l=="static"){if(t){$("#meta_info_for-"+i).siblings(".right-side").children(".cart-add").children(".static-add").children(".ie8-add-to-cart-static").css("display","block");$("#meta_info_for-"+i).siblings(".right-side").children(".cart-add").children(".static-add").children(".ie8-add-to-cart-static").removeClass("noshow")}else{$("#meta_info_for-"+i).siblings(".right-side").children(".cart-add").children(".add-to-cart-static").css("display","block");$("#meta_info_for-"+i).siblings(".right-side").children(".cart-add").children(".add-to-cart-static").removeClass("noshow")}}else{if(t){$("#meta_info_for-"+i).siblings(".right-side").children(".cart-add").children(".normal-add").children(".ie8-add-to-cart-sp").css("display","block");$("#meta_info_for-"+i).siblings(".right-side").children(".cart-add").children(".normal-add").children(".ie8-add-to-cart-sp").removeClass("noshow")}else{$("#meta_info_for-"+i).siblings(".right-side").children(".cart-add").children(".add-to-cart").css("display","block");$("#meta_info_for-"+i).siblings(".right-side").children(".cart-add").children(".add-to-cart").removeClass("noshow")}}$("#meta_info_for-"+i).siblings(".right-side").children(".cart-add").children(".sold-out-add-to-cart").hide();$("#meta_info_for-"+i).siblings(".right-side").children(".cart-add").children(".sold-out-add-to-cart").addClass("noshow");$("#product-"+i).children(".wrap").children(".top").children(".starburst-wrap").addClass("invisible");$("#product-"+i).children(".wrap").children(".top").children(".starburst-wrap").children(".starburst-text").children(".amount-left").html(c)}$("#meta_info_for-"+i).children(".competitor-price").children(".comp-price").html("($"+d+")");$("#meta_info_for-"+i).children(".our-price").html("Our Price: $"+n);$("#meta_info_for-"+i).parent().siblings(".banner").children(".ribbon-outer").children(".ribbon-inner").html(o+"% off");$("#meta_info_for-"+i).parent().siblings(".ie8-banner").children(".ie8-banner-text").html(o+"% off");s(i,e,a)}function o(t,i,e,a){var r=$("#quantity_for-"+t);var s=parseFloat(r.attr("data-limit"));// Make sure these are treated as numbers
+e=parseFloat(e);a=parseFloat(a);if(s){// Set limit to inventory if greater than inventory
+if(a<s){s=a}// We have a limit
+if(e>s){e=s}else if(e<1){e=1}}else{// Set new_quantity to inventory if greater than inventory
+if(a<e){e=a}// No limit
+if(e>99&&e<a){$(this).val(99);e=99}else if(e>99&&e>a){$(this).val(a);e=a}else if(e<1){$(this).val(1);e=1}}// Extra check for this.
+if(e<1){e=1}else if(e>99){e=99}return e}/*
+	function getArbitraryNumber(min, max){
+		return parseInt(Math.random() * (max - min) + min);
+	}
+
+	$('.arrow-right').each(function(){
+		var product_id = $(this).attr('data-product-id');
+		setInterval(
+			function(){
+				$('#arrow_right_for-' + product_id).click();
+			}
+		, getArbitraryNumber(4000, 6000));
+	});
+
+	*/
+// setInterval(
+// 	function(){
+// 		$('.arrow-right').click();
+// 	}, 5000
+// );
+// var page_type	= $('#page-vars').attr('data-page-type');
+// if ( page_type == 'static' ) {
+// 	var $container  = $('#dog_content');
+// 	var $container2 = $('#cat_content');
+// 	$('.sold-out-product').remove();
+// 	$('#cat_content').removeClass('hide');
+// 	$('#cat_content').show();
+// 	$container2.imagesLoaded( function() {
+// 		$container2.masonry({
+// 			columnWidth: 325,
+// 			itemSelector: '.product',
+// 			"isFitWidth": true
+// 		});
+// 		$('#cat_content').hide();
+//     });
+// 	$container.imagesLoaded( function() {
+// 		$container.masonry({
+// 			columnWidth: 325,
+// 			itemSelector: '.product',
+// 			"isFitWidth": true
+// 		});
+// 		$('.splash').css('visibility', 'visible');
+//     });
+// }
+// Check if we need to add to cart
+if($.cookie("added_from_static")!=null){// Grab and split up the cookie
+var n=$.cookie("added_from_static").split(":");// Remove the cookie immediately since we won't need it anymore
+$.removeCookie("added_from_static");// Assign values from specific array indices
+var c=n[0];var l=n[1];var p=n[2];// Assign whatever else we need
+var u=humane.create({timeout:3e3,baseCls:"humane-jackedup"});var f="/cart_items/modify/create/"+c+"/"+l+".json";var _=0;// Execute asynchronous add to cart
+$.post(f,function(t){// Check for success
+if(t.status=="success"){//var cart_items_shown = true;
+// cartItemsShown(true);
+// var cart_obj = {
+// 	products: [
+// 	]
+// };
+2000
+
+// var counter = 0;
+// Display successful cart add message to user
+u.log(t.quantity+"x "+p+" successfully added to cart!")}else{u.log("Something went wrong, please try again.")}})}$(".go-to-checkout").on("click",function(t){if($("#page-vars").attr("data-edit-program-mode")=="true"){t.preventDefault();saveProgram()}});$(".product-image-link").on("click",function(t){t.preventDefault()});$("input[type=checkbox].switch").each(function(){// Hide the checkbox
+$(this).hide();if(!$(this)[0].checked){$(this).find(".switch-background").children(".slider").css({marginLeft:"27px"})}else{$(this).find(".switch-background").children(".slider").css({marginLeft:"-22px"})}});$("span.switch").click(function(){if(!$(this).next()[0].checked){// Cat
+$(this).find(".switch-background").children(".slider").animate({marginLeft:"27px"},200);$("#dog_content").fadeOut("fast");$("#cat_content").fadeIn("slow")}else{// Dog
+$(this).find(".switch-background").children(".slider").animate({marginLeft:"-22px"},200);$("#cat_content").fadeOut("fast");$("#dog_content").fadeIn("slow")}// Toggle state of checkbox
+$(this).next()[0].checked=!$(this).next()[0].checked});$("img.dog-graphic").on("click",function(){if($(this).siblings(".switch-wrapper").children(".switch").next()[0].checked){$(this).siblings(".switch-wrapper").children(".switch").children(".switch-background").children(".slider").animate({marginLeft:"-22px"},200);$("#cat_content").fadeOut("fast");$("#dog_content").fadeIn("slow");$(this).siblings(".switch-wrapper").children(".switch").next()[0].checked=!$(this).siblings(".switch-wrapper").children(".switch").next()[0].checked}});$("img.cat-graphic").on("click",function(){if(!$(this).siblings(".switch-wrapper").children(".switch").next()[0].checked){$(this).siblings(".switch-wrapper").children(".switch").children(".switch-background").children(".slider").animate({marginLeft:"27px"},200);$("#dog_content").fadeOut("fast");$("#cat_content").fadeIn("slow");$(this).siblings(".switch-wrapper").children(".switch").next()[0].checked=!$(this).siblings(".switch-wrapper").children(".switch").next()[0].checked}});$(".product").live({mouseenter:function(){$(this).children(".wrap").css("background","#e3ebef")},mouseleave:function(){$(this).children(".wrap").css("background","#f2fbff")}});$(".top").live({mouseenter:function(){if($(this).parent().siblings(".options").css("display")!="block"){$(this).parent().siblings(".options").fadeIn("fast")}$(this).parent().css("background","#e3ebef")},mouseleave:function(){}});$(".bottom").live({mouseenter:function(){if($(this).parent().siblings(".options").css("display")=="block"){$(this).parent().siblings(".options").fadeOut("fast")}},mouseleave:function(){}});$(".content-area").hover(function(){$(".options").fadeOut("fast")},function(){$(".options").fadeOut("fast")});$(".main-box").hover(function(){$(".options").fadeOut("fast")},function(){});$(".product-image").live({mouseenter:function(){if($(this).parent().parent().siblings(".options").css("display")!="block"){$(this).parent().parent().siblings(".options").fadeIn("fast")}},mouseleave:function(){}});$(".break").live({mouseenter:function(){$(".options").fadeOut("fast")},mouseleave:function(){$(".options").fadeOut("fast")}});$(".options").live({mouseenter:function(){if($(this).siblings(".options").css("display")!="block"){$(this).siblings(".options").fadeIn("fast")}},mouseleave:function(){$(this).fadeOut("fast")}});$(".arrow-left").live({mouseenter:function(t){t.preventDefault();$(this).parent().parent().parent().siblings(".options").fadeOut("fast")},mouseleave:function(t){t.preventDefault();$(this).parent().parent().parent().siblings(".options").fadeOut("fast")}});$(".arrow-right").live({mouseenter:function(t){t.preventDefault();$(this).parent().parent().parent().siblings(".options").fadeOut("fast")},mouseleave:function(t){t.preventDefault();$(this).parent().parent().parent().siblings(".options").fadeOut("fast")}});$(".set-header").hover(function(){$(".set-wrapper").hide();$(this).siblings(".set-wrapper").show();$(this).addClass("active")},function(){$(this).removeClass("active")});$(".set-wrapper").hover(function(){$(this).siblings(".set-header").addClass("active")},function(){$(this).hide();$(this).siblings(".set-header").removeClass("active")});$(".brands-wrapper").hover(function(){},function(){$(".set-wrapper").hide();$(this).siblings(".set-header").removeClass("active")});$("#countdown").kkcountdown({dayText:"",daysText:"",displayZeroDays:false});$(".sold-out-add-to-cart").live("click",function(t){t.preventDefault()});// @TODO - Refactor all of these event handlers.
+$(".arrow-right, .ie8-arrow-right").live("click",function(t){t.preventDefault();var i=$(this).attr("data-product-id");var e=0;e=parseFloat($("#product_image_for-"+i).attr("data-iteration"));e++;if($("#additional_image_for-"+i+"-"+e).length){$("#product_image_for-"+i).attr("data-iteration",e);$("#product_image_for-"+i).fadeOut("fast");setTimeout(function(){if($("#additional_image_for-"+i+"-"+e).hasClass("lazy")){$("#product_image_for-"+i).children("a").children("img").attr("src",$("#additional_image_for-"+i+"-"+e).attr("data-original"));$("#product_image_for-"+i).fadeIn("fast")}else{$("#product_image_for-"+i).children("a").children("img").attr("src",$("#additional_image_for-"+i+"-"+e).attr("src"));$("#product_image_for-"+i).fadeIn("fast")}},200)}else{$("#product_image_for-"+i).attr("data-iteration",1);$("#product_image_for-"+i).fadeOut("fast");setTimeout(function(){if($("#additional_image_for-"+i+"-1").hasClass("lazy")){$("#product_image_for-"+i).children("a").children("img").attr("src",$("#additional_image_for-"+i+"-1").attr("data-original"));$("#product_image_for-"+i).fadeIn("fast")}else{$("#product_image_for-"+i).children("a").children("img").attr("src",$("#additional_image_for-"+i+"-1").attr("src"));$("#product_image_for-"+i).fadeIn("fast")}},200)}});$(".arrow-left, .ie8-arrow-left").live("click",function(t){t.preventDefault();var i=$(this).attr("data-product-id");var e=0;var a=0;var r="additional_image_for-"+i+"-";$("img[id^='"+r+"']").each(function(){a++});e=parseFloat($("#product_image_for-"+i).attr("data-iteration"));e--;if($("#additional_image_for-"+i+"-"+e).length){$("#product_image_for-"+i).attr("data-iteration",e);$("#product_image_for-"+i).fadeOut("fast");setTimeout(function(){if($("#additional_image_for-"+i+"-"+e).hasClass("lazy")){$("#product_image_for-"+i).children("a").children("img").attr("src",$("#additional_image_for-"+i+"-"+e).attr("data-original"));$("#product_image_for-"+i).fadeIn("fast")}else{$("#product_image_for-"+i).children("a").children("img").attr("src",$("#additional_image_for-"+i+"-"+e).attr("src"));$("#product_image_for-"+i).fadeIn("fast")}},200)}else{$("#product_image_for-"+i).attr("data-iteration",a);$("#product_image_for-"+i).fadeOut("fast");setTimeout(function(){if($("#additional_image_for-"+i+"-"+a).hasClass("lazy")){$("#product_image_for-"+i).children("a").children("img").attr("src",$("#additional_image_for-"+i+"-"+a).attr("data-original"));$("#product_image_for-"+i).fadeIn("fast")}else{$("#product_image_for-"+i).children("a").children("img").attr("src",$("#additional_image_for-"+i+"-"+a).attr("src"));$("#product_image_for-"+i).fadeIn("fast")}},200)}});$(".inc-btn, .ie8-inc-btn, .ie8-inc-btn-sp").live("click",function(t){t.preventDefault();var i=$(this).data("product-id");var e=$("#quantity_for-"+i);var a=parseFloat(e.val())+1;var r=$("#quantity_for-"+i).attr("data-product-option-id");var d=$("#product_option_radio_for-"+r).attr("data-inventory");var n=o(i,r,a,d);e.val(n);s(i,r,n)});$(".dec-btn, .ie8-dec-btn, .ie8-dec-btn-sp").live("click",function(t){t.preventDefault();var i=$(this).data("product-id");var e=$("#quantity_for-"+i);var a=parseFloat(e.val())-1;var r=e.data("limit");var d=$("#quantity_for-"+i).attr("data-product-option-id");var n=$("#product_option_radio_for-"+d).attr("data-inventory");var c=o(i,d,a,n);e.val(c);s(i,d,c)});$(".product-option-radio").live("click",function(){var t=$(this).attr("data-product-id");var i=$(this).val();var e=$(this).attr("data-retail-price");var a=$(this).attr("data-competitor-price");var r=$(this).attr("data-savings");var s=$(this).attr("data-max-p
+1000
+er-order");var o=$(this).attr("data-inventory");$("#quantity_for-"+t).attr("data-product-option-id",i);$("#quantity_for-"+t).val(1);d(t,i,1,s,a,r,e,o)});$(".quantity-input").live("change",function(){var t=$(this).attr("data-product-id");var i=$(this).attr("data-product-option-id");var e=parseFloat($(this).attr("data-limit"));var a=$(this).val();var r=$("#product_option_radio_for-"+i).attr("data-inventory");var d=o(t,i,a,r);$(this).val(d);s(t,i,d)});$('input[id^="product_quantity_"]').live("keyup",function(){var t,i,e,a;e=$(this).attr("data-product-option-id");t=$(this).attr("data-product-base-price");i=$(this).val();a="#"+$(this).attr("id");if((max=$(this).data("product-option-max-per-order"))&&i>max){alert("The order limit for this product has been exceeded.\nThe quantity for this product has been set to the maximum amount.");$(this).val(max);i=max}return setTimeout(function(){var r,s,d;if(parseFloat($(a).val())===parseFloat(i)){if(i!==""){s=t*i;r=$("#page-vars").attr("data-cart-id");d=0;// we need to set value attribute as it still
+// reflects old attribute value
+$(a)[0].setAttribute("value",i);// Display new total price for product option, and show loading graphic.
+$("#product_price_"+e).html("$"+s.toFixed(2));$("div.minicart-overlay").removeClass("noshow");$("div.minicart-loading").removeClass("noshow");$("div.minicart-overlay").css("display","block");$("div.minicart-loading").css("display","block");// first we iterate through product quantity
+$("input.product_quantity").each(function(t,i){// get new product quantity total
+d+=parseInt($(i).val())});// update cart quantity
+$(".cart-count").html(d);// finally update send request to update cart count
+return $.ajax({type:"GET",dataType:"json",accepts:{json:"application/json"},data:{quantity:i,product_option_id:e,ajax:"1"},url:$("#page-vars").attr("data-rwbase")+"cart/"+r+"/product_option/"+e+"/update",success:function(t){}})}}},200)});$(".add-to-cart, .ie8-add-to-cart, .ie8-add-to-cart-sp").live("click",function(i){i.preventDefault();var e=humane.create({timeout:3e3,baseCls:"humane-jackedup"});var a=$(this).attr("data-link-type");var r=a=="ie8"?$(this).parent().attr("href"):$(this).attr("href");var s=$(this).attr("data-product-title");var d=$(this).attr("data-product-id");var o="";var n=0;var c=$(this);if(!t){// Replace add to cart text with loading spinner
+c.html('<i class="icon-spin icon-refresh"></i>');c.css("padding-left","48px").css("padding-right","48px")}$.post(r,function(i){if(!t){// Replace loading spinner with add to cart text
+c.html('<i class="icon-shopping-cart"></i> Add to Cart');c.css("padding-left","14px").css("padding-right","14px")}// Check for success
+if(i.status=="success"){var a=0;var r=0;var d={products:[]};cartItemsShown(true);// Display successful cart add message to user
+e.log(i.quantity+"x "+s+" successfully added to cart!");// Iterate over cart items and build string of product_ids to pass to AgilOne, also
+// populate our cart object so that we can immediately display a successful addition.
+for(key in i.items){if(t){key=r}if(typeof i.items[key]!="undefined"){d.products.push({product_option_id:i.items[key]["product_option_id"],retail_price:i.items[key]["retail_price"],quantity:i.items[key]["quantity"],max_per_order:i.items[key]["max_per_order"],brand_slug:i.items[key]["brand_slug"],product_slug:i.items[key]["product_slug"],product_title:i.items[key]["product_title"],totalprice:i.items[key]["totalprice"],cart_id:i.items[key]["cart_id"]});n+=parseFloat(i.items[key]["quantity"]);// Increment counter for IE8
+r++}}// Update cart quantity if found in data.
+if(i.quantity){// Replace cart count with new cart quantity
+$(".top-cart").children(".tally").children(".cart-count").html(n);// Make appropriate changes to .top-checkout-link text
+if($("#page-vars").attr("data-edit-program-mode")=="true"){$(".top-checkout-link").html("My Program ("+n+")")}else{$(".top-checkout-link").html("Cart & Checkout ("+n+")")}}// Define template for each cart product
+var o=["{{#products}}",'<div class="cart-product">','<input maxlength="2" id="product_quantity_{{product_option
+921
+_id}}"','data-product-option-id="{{product_option_id}}"','data-product-base-price="{{retail_price}}"','type="text" value="{{quantity}}"','data-product-option-max-per-order="{{max_per_order}}"','class="product_quantity"',">",'<span class="title"><a href="/product/{{brand_slug}}/{{product_slug}}" >{{product_title}}</a></span>','<span id="product_price_{{product_option_id}}" class="price">${{totalprice}}</span>','<a href="/cart/{{cart_id}}/product_option/{{product_option_id}}/remove" class="remove-btn" rel="nofollow"><span class="remove">&times;</span></a>',"</div>","{{/products}}"].join("\n");// Render the html for cart with mustache
+var l=Mustache.render(o,d);// Finally, replace our old cart with our new cart.
+$(".cart-products-new").html(l);// Make sure we don't already have a checkout button, add one if it does not exist
+if($(".top-cart").children(".checkout-btn").length==0){$(".top-cart").append('<a href="/checkout" class="checkout-btn" >Proceed to Checkout <i class="icon-caret-right"></i></a>')}// Show minicart
+$(".top-cart-wrapper").slideDown();setTimeout(function(){// Hide minicart
+$(".top-cart-wrapper").slideUp()},5e3)}else{// Display error
+e.log("Something went wrong, please try again.")}})});// from stackoverflow: 901115
+function h(t){t=t.replace(/[\[]/,"\\[").replace(/[\]]/,"\\]");var i=new RegExp("[\\?&]"+t+"=([^&#]*)"),e=i.exec(location.search);return e==null?"":decodeURIComponent(e[1].replace(/\+/g," "))}// hack for friendbuy alerts not displaying properly due to cache issues - Cory C.
+var m=h("frb"),g=null,v="";switch(m){case"success":g="Successfully added $10 FriendBuy coupon! (reminder: $40 in products required to use at checkout)";v="alert-success";break;case"newcustomersonly":g="We're sorry, but we could not apply the FriendBuy discount to your account. This discount is for new customers only.";v="alert-error";break;case"couponalreadyattached":g="This coupon is already attached to your cart.";break;case"failed":g="Could not attach FriendBuy referral coupon.  Please contact Customer Service.";v="alert-error";break;case"nobrand":alert("Please select a brand.");break}if(g!==null){$(".main-content").prepend('<div class="message bs"><div class="alert '+v+'"><i class="icon-bullhorn"></i> '+'<button type="button" class="close" data-dismiss="alert">&times;</button>'+g+"</div></div>")}});
+0
+

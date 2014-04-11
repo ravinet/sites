@@ -1,0 +1,22 @@
+PHTTP66.117.23.101"»
+¬GET /m2/southwestairlines/mbox/standard?mboxHost=www.southwest.com&mboxSession=1396995935034-300124&mboxPage=1396995935034-300124&screenHeight=600&screenWidth=800&browserWidth=780&browserHeight=518&browserTimeOffset=-240&colorDepth=24&mboxXDomain=enabled&mboxCount=1&mbox=swa_home_global_hero&mboxId=0&mboxTime=1396981535086&mboxURL=http%3A%2F%2Fwww.southwest.com%2F&mboxReferrer=&mboxVersion=41&mboxXDomainCheck=true HTTP/1.1
+'Host: southwestairlines.tt.omtrdc.net
+Connection: keep-alive
+Accept: */*
+vUser-Agent: Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/31.0.1650.63 Safari/537.36
+$Referer: http://www.southwest.com/
+$Accept-Encoding: gzip,deflate,sdch
+!Accept-Language: en-US,en;q=0.8
+MCookie: mboxSession=1396995935034-300124; mboxPC=1396995935034-300124.25_49
+
+*ö
+HTTP/1.1 200 OK
+pragma: no-cache
+$P3P: CP="NOI DSP CURa OUR STP COM"
+šSet-Cookie: mboxPC=1396995935034-300124.25_49; Domain=southwestairlines.tt.omtrdc.net; Expires=Sat, 07-Jun-2014 22:25:34 GMT; Path=/m2/southwestairlines
+-Content-Type: text/javascript;charset=UTF-8
+Content-Length: 1152
+%Date: Tue, 08 Apr 2014 22:25:33 GMT
+Server: Test & Target
+‚	
+var mboxCurrent=mboxFactories.get('default').get('swa_home_global_hero',0);mboxCurrent.setEventTime('include.start');document.write('<div style="visibility: hidden; display: none" id="mboxImported-default-swa_home_global_hero-0">');document.write('<!-- Offer Id: 116545  --><div id=\"hero_shot\"><\/div>\r\n<script>\r\nSWA.contentSwap(\'#hero_shot\', \'\/fragments\/generated\/homepage\/hero_shots\/hero_shot_homepage_nm_air.shtml\', \'\/fragments\/generated\/homepage\/hero_shots\/error_hero_shot_segmentation.shtml\');\r\n<\/script>');document.write('<!-- Offer Id: 114295  --><script type=\"text\/javascript\">\r\n\/*T&T to SiteCat v4 ==>Response Plugin*\/\r\nwindow.s_tnt = window.s_tnt || \'\', tntVal = \'67359:0:0,\';\r\nif (window.s_tnt.indexOf(tntVal) == -1) {\r\nwindow.s_tnt += tntVal\r\n}\r\nif (mboxCurrent.getFetcher().getType() == \'ajax\' && (window.s && window.s.tl)) {\r\ns.tl(\'TnT\', \'o\', \'TnT\');\r\n}\r\n<\/script>');document.write('</div>');mboxCurrent.setEventTime('include.end');mboxFactories.get('default').get('swa_home_global_hero',0).loaded();mboxFactories.get('default').getPCId().forceId("1396995935034-300124.25_49");

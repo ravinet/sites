@@ -1,0 +1,21 @@
+PHTTP54.230.20.41"ä
+GET / HTTP/1.1
+Host: www.themeforest.net
+Connection: keep-alive
+TAccept: text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8
+vUser-Agent: Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/31.0.1650.63 Safari/537.36
+$Accept-Encoding: gzip,deflate,sdch
+!Accept-Language: en-US,en;q=0.8
+
+*õ
+ HTTP/1.1 301 Moved Permanently
+Content-Length: 0
+Connection: keep-alive
+%Date: Mon, 07 Apr 2014 23:30:06 GMT
+#Location: http://themeforest.net/
+Server: AmazonS3
+Age: 82690
+X-Cache: Hit from cloudfront
+GVia: 1.1 f65786af76195780c08b4f48452143c8.cloudfront.net (CloudFront)
+GX-Amz-Cf-Id: _eNmX6DqAsXCjHbdoRiyeajvpx72Fs0p-ziVvyKxEUHWZq-5gejuFQ==
+

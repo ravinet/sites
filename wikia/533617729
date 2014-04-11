@@ -1,0 +1,19 @@
+PHTTP74.217.78.146"ç
+#GET /visualdna_user_sync HTTP/1.1
+Host: sync.adap.tv
+Connection: keep-alive
+Accept: image/webp,*/*;q=0.8
+vUser-Agent: Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/31.0.1650.63 Safari/537.36
+QReferer: http://w.visualdna.com/analytics/?api_key=wikia&post_message=1&force=1
+$Accept-Encoding: gzip,deflate,sdch
+!Accept-Language: en-US,en;q=0.8
+XCookie: adaptv_unique_user_cookie="4432522906210905432__TIME__2014-04-08+15%3A35%3A49"
+
+*ô
+HTTP/1.1 302 Found
+Server: adaptv/1.0
+Content-Type: text/plain
+Connection: Keep-Alive
+wLocation: //e.visualdna.com/conversion?api_key=adap.tv&id=sync&partner_user_id=NAX4432522906210905432&bust=1396996550
+Content-Length: 0
+

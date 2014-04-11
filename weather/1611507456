@@ -1,0 +1,46 @@
+PHTTP
+18.7.20.70"‚
+&GET /css/ForecastSearch.css HTTP/1.1
+Host: www.weather.gov
+Connection: keep-alive
+Accept: text/css,*/*;q=0.1
+vUser-Agent: Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/31.0.1650.63 Safari/537.36
+"Referer: http://www.weather.gov/
+$Accept-Encoding: gzip,deflate,sdch
+!Accept-Language: en-US,en;q=0.8
+
+*ù
+HTTP/1.1 200 OK
+.Last-Modified: Thu, 18 Oct 2012 19:15:42 GMT
+!Server: Apache/2.2.15 (Red Hat)
+Accept-Ranges: bytes
+Content-Length: 352
+Content-Type: text/css
+Cache-Control: max-age=167
+(Expires: Tue, 08 Apr 2014 22:37:36 GMT
+%Date: Tue, 08 Apr 2014 22:34:49 GMT
+Connection: keep-alive
+‚
+#txtError 
+{
+    background-color: #B3E0F7;
+    border-radius: 5px 5px 5px 5px;
+    display: none;
+    font-size: 8pt;
+    opacity: 0.95;
+    padding: 4px;
+    position: absolute;
+    width: 320px;
+    z-index: 1000;
+}
+#inputstring
+{
+    font-size: 8pt; 
+    width: 93px; 
+    height: 23px; 
+    color: #999999;
+}
+#btnCloseError
+{
+    margin-top:3px;
+}

@@ -1,0 +1,81 @@
+»HTTPS173.199.4.19"×
+ GET /online/design/clientcontext/default/content/jcr:content/stores.init.js?path=%2Fcontent%2Fg2m%2Fen_US%2Fenter&cq_ck=1396993882596&_=1396993882598 HTTP/1.1
+Host: l1.osdimg.com
+Connection: keep-alive
+Accept: */*
+vUser-Agent: Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/31.0.1650.63 Safari/537.36
+-Referer: http://www.gotomeeting.com/online/
+$Accept-Encoding: gzip,deflate,sdch
+!Accept-Language: en-US,en;q=0.8
+
+*¸
+HTTP/1.1 200 OK
+%Date: Tue, 08 Apr 2014 21:51:22 GMT
+Server: ATS/3.2.5
+Content-Length: 1751
+ Access-Control-Allow-Origin: *
+-Content-Type: text/javascript;charset=utf-8
+Age: 0
+Connection: keep-alive
+Ù
+
+if (CQ_Analytics && CQ_Analytics.ProfileDataMgr) {
+    CQ_Analytics.ProfileDataMgr.addListener("update", function(event, property) {
+        var authorizableId = this.getProperty("authorizableId");
+        if (!authorizableId || authorizableId == "anonymous") {
+            jQuery(".cq-cc-profile-not-anonymous").hide();
+            jQuery(".cq-cc-profile-anonymous").show();
+        } else {
+            jQuery(".cq-cc-profile-not-anonymous").show();
+            jQuery(".cq-cc-profile-anonymous").hide();
+        }
+    });
+
+    
+        CQ_Analytics.ProfileDataMgr.loadInitProperties({
+  "avatar": "/etc/designs/default/images/collab/avatar.png",
+  "path": "/home/users/a/anonymous/profile",
+  "isLoggedIn": false,
+  "isLoggedIn_xss": "false",
+  "authorizableId": "anonymous",
+  "authorizableId_xss": "anonymous",
+  "formattedName": "Anonymous",
+  "formattedName_xss": "Anonymous",
+  "familyName": "Anonymous",
+  "familyName_xss": "Anonymous"
+});
+    
+
+    CQ_Analytics.ProfileDataMgr.init();
+}
+
+
+
+
+
+if( CQ_Analytics && CQ_Analytics.SurferInfoMgr) {
+    CQ_Analytics.SurferInfoMgr.loadInitProperties({
+  "IP": "10.21.240.25",
+  "keywords": ""
+}, true);
+}if( CQ_Analytics && CQ_Analytics.TagCloudMgr) {
+    CQ_Analytics.TagCloudMgr.init([
+]);
+}
+
+
+if( CQ_Analytics && CQ_Analytics.PageDataMgr) {
+    CQ_Analytics.PageDataMgr.loadInitProperties({
+  "hits": 0,
+  "title": "Easy Online Meetings With HD Video Conferencing",
+  "path": "/content/g2m/en_US/enter",
+  "navTitle": "Easy Online Meetings With HD Video Conferencing",
+  "template": "/apps/g2m/templates/oneColumn",
+  "thumbnail": "/apps/g2m/templates/oneColumn/thumbnail.png",
+  "tags": "",
+  "description": "",
+  "sitesection": "en_US",
+  "subsection": "enter",
+  "random": "0.48"
+}, true);
+}

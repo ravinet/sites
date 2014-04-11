@@ -1,0 +1,30 @@
+PHTTP
+18.7.20.69"Å
+GET /crossdomain.xml HTTP/1.1
+Host: stats.kaltura.com
+Connection: keep-alive
+vUser-Agent: Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/31.0.1650.63 Safari/537.36
+Accept: */*
+Referer: http://go.com/
+$Accept-Encoding: gzip,deflate,sdch
+!Accept-Language: en-US,en;q=0.8
+
+*ä
+HTTP/1.1 200 OK
+Server: Apache
+X-Me: pa-stats2
+.Last-Modified: Thu, 20 Feb 2014 09:52:56 GMT
+Content-Length: 392
+ Access-Control-Allow-Origin: *
+Content-Type: application/xml
+(Cache-Control: public, max-age=4027536
+(Expires: Sun, 25 May 2014 12:36:32 GMT
+%Date: Tue, 08 Apr 2014 21:50:56 GMT
+Connection: keep-alive
+Š
+<?xml version="1.0" encoding="UTF-8"?>
+<cross-domain-policy xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.adobe.com/xml/schemas/PolicyFile.xsd">
+	<allow-access-from domain="*" to-ports="*" secure="false"/>
+	<site-control permitted-cross-domain-policies="all"/>
+	<allow-http-request-headers-from domain="*" headers="*"/>
+</cross-domain-policy>

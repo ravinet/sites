@@ -1,0 +1,26 @@
+PHTTP68.67.152.73"Ü
+2GET /a_usersync?c=3&cbfn=ANX_async_load HTTP/1.1
+Host: ib.adnxs.com
+Connection: keep-alive
+Accept: */*
+vUser-Agent: Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/31.0.1650.63 Safari/537.36
+õReferer: http://bcp.crwdcntrl.net/px?Yz0yMDYmcHhpZD0zNjQwNCwxMzA4LDg3NTI2LDg3NTI5LDExMzQ3LDU5MDQ0LDc1OTk2LDM5OSw5MTg3LDE3NjI2LDM4NCwzNTkxMyw5Njc0LDk0NzksNjY4MDYsNDA4MDksNTg1LDExOTQsMTczNjIsMTczNjMsODA4ODUsNjExMyw4NzUxNCw2NjMsNjU3JnB4bGltPTE%3D
+$Accept-Encoding: gzip,deflate,sdch
+!Accept-Language: en-US,en;q=0.8
+©Cookie: uuid2=1118917356291537611; sess=1; anj=dTM7k!M41$DunaTDgEREg3kr3sN6d]$+ShSB*Ny7NI.rC>7`.<F<O5gB@gfm2=8To(#>W*pMgMTA$R[?:98)O9q'w<Ot3b!QP:NKRD(`Y8sYGd!8s*]M2o9M
+
+*Ò
+HTTP/1.1 200 OK
+,Cache-Control: no-store, no-cache, private
+Pragma: no-cache
+(Expires: Sat, 15 Nov 2008 16:00:00 GMT
+†P3P: policyref="http://cdn.adnxs.com/w3c/policy/p3p.xml", CP="NOI DSP COR ADM PSAo PSDo OURo SAMo UNRo OTRo BUS COM NAV DEM STA PRE"
+X-XSS-Protection: 0
+sSet-Cookie: uuid2=1118917356291537611; path=/; expires=Mon, 07-Jul-2014 22:35:54 GMT; domain=.adnxs.com; HttpOnly
+`Set-Cookie: sess=1; path=/; expires=Wed, 09-Apr-2014 22:35:54 GMT; domain=.adnxs.com; HttpOnly
+àSet-Cookie: anj=dTM7k!M4/Acvig%e6AqeU+!`Dn`sG>%phO*_n^qK!9?75]=0odh7_B1K'L`RAUMcr>8M!!tx8ggf9+ziQ.n6CQcIMYT?L::J$LIxi9m6@fBY!@ZfO@W.zc<S.j(U9Y+h<@; path=/; expires=Mon, 07-Jul-2014 22:35:54 GMT; domain=.adnxs.com; HttpOnly
+&Content-Type: application/javascript
+%Date: Tue, 08 Apr 2014 22:35:54 GMT
+Content-Length: 142
+
+ANX_async_load({"url":"http://tap.rubiconproject.com/oz/feeds/appnexus/tokens?token=1118917356291537611&expires=30", "c":2, "tagtype":"img"});

@@ -1,0 +1,22 @@
+PHTTP66.102.255.51"ï
+ GET /index_global.php HTTP/1.1
+Host: www.taobao.com
+Connection: keep-alive
+TAccept: text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8
+vUser-Agent: Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/31.0.1650.63 Safari/537.36
+$Accept-Encoding: gzip,deflate,sdch
+!Accept-Language: en-US,en;q=0.8
+
+*À
+ HTTP/1.1 302 Moved Temporarily
+Server: Tengine
+%Date: Tue, 08 Apr 2014 22:26:47 GMT
+Content-Type: text/html
+Transfer-Encoding: chunked
+Connection: keep-alive
+=Location: http://www.taobao.com/market/global/index_new.php
+(Expires: Tue, 08 Apr 2014 23:26:47 GMT
+Cache-Control: max-age=3600
+
+0
+

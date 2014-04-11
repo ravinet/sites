@@ -1,0 +1,198 @@
+PHTTP93.93.51.195"Ú
+*GET /Scripts/phantomPopunder.js HTTP/1.1
+Host: static.awempire.com
+Connection: keep-alive
+Accept: */*
+vUser-Agent: Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/31.0.1650.63 Safari/537.36
+!Referer: http://motherless.com/
+$Accept-Encoding: gzip,deflate,sdch
+!Accept-Language: en-US,en;q=0.8
+
+*˜3
+HTTP/1.1 200 OK
+X-Real-Source: uslax-sad-1
+Content-Type: text/javascript
+Accept-Ranges: bytes
+ETag: "1649128139"
+.Last-Modified: Tue, 18 Mar 2014 10:34:35 GMT
+Content-Length: 6289
+%Date: Tue, 08 Apr 2014 22:04:49 GMT
+Server: unknown
+“1
+Function.prototype.bind = function (element) {
+	var that = this;
+	return function () {
+		that.call(element);
+	}
+};
+
+var phantomPopunder = phantomPopunder || {};
+
+phantomPopunder = {
+	reRuntime        : phantomPopunder.reRuntime || 24,
+	url              : phantomPopunder.url || "http://creatives.livejasmin.com/pu/w2/index.php",
+	width            : phantomPopunder.width || 1100,
+	height           : phantomPopunder.height || 800,
+	top              : phantomPopunder.top || 0,
+	left             : phantomPopunder.left || 0,
+	cookieName       : phantomPopunder.cookieName || 'lj_popunder',
+	tabDisabled      : phantomPopunder.tabDisabled || false,
+	mainWindow       : top != self && typeof top.document.location.toString() == "string" ? top : self,
+	popUp            : null,
+	toleratedDomains : (function (toleratedDomains) {
+		return "(" + toleratedDomains.join("|") + ")";
+	}).call(this,
+			[
+				'creatives.livejasmin.com',
+				'static.awempire.com',
+				'promo.awempire.com',
+				'jasmin.com',
+				'live-cams-1.livejasmin.com',
+				'cameraboys.com',
+				'joyourself.com',
+				'livesexasian.com',
+				'liveprivates.com',
+				'lsawards.com',
+				'maturescam.com',
+				'mycams.com',
+				'mytrannycams.com'
+			]
+		),
+	browser : (function () {
+		"use strict";
+		var n = navigator.userAgent.toLowerCase(),
+			b = {
+				webkit   : /webkit/gi.test(n),
+				mozilla  : (/mozilla/gi.test(n)) && (!/(compatible|webkit)/.test(n)),
+				chrome   : /chrome/gi.test(n),
+				msie     : (/msie/gi.test(n)) && (!/opera/.test(n)),
+				firefox  : /firefox/gi.test(n),
+				safari   : (/safari/gi.test(n) && !(/chrome/.test(n))),
+				opera    : /opera|opr/gi.test(n),
+				macosx   : /mac os x/gi.test(n),
+				ios      : /iphone|ipad/gi.test(n),
+				winphone : /windows phone/gi.test(n)
+			};
+		b.version = (b.safari) ? (n.match(/.+(?:ri)[\/: ]([\d.]+)/) || [])[1] : (n.match(/.+(?:ox|me|ra|ie)[\/: ]([\d.]+)/) || [])[1];
+		return b;
+	})(),
+	additionalParameters : (function(){
+		var key,
+			result = "";
+		switch (typeof phantomPopunder.additionalParameters) {
+			case "string":
+				return phantomPopunder.additionalParameters;
+				break;
+			case "object":
+				for (key in phantomPopunder.additionalParameters) {
+					if (phantomPopunder.additionalParameters.hasOwnProperty(key)) {
+						result += (phantomPopunder.additionalParameters[key] === null)
+							? key + "&"
+							: key + "=" + phantomPopunder.additionalParameters[key] + "&";
+					}
+				}
+				return result.substring(0, result.length - 1);
+				break;
+			default:
+				return false;
+		}
+	})() || 'site=jsm',
+	createCookie : function (cookieName, cookieState, cookieLifetime) {
+		document.cookie = cookieName + '=' + cookieState
+			+ '; expires=' + new Date(new Date().getTime() + (cookieLifetime * 3600000)).toGMTString()
+			+ '; path=/';
+	},
+	getCookie : phantomPopunder.getCookie || function (cookieName) {
+		var resultCookie = document.cookie.match("(^|;) ?" + cookieName + "=([^;]*)(;|$)");
+		if (resultCookie) {
+			return (window.unescape(resultCookie[2]));
+		}
+		return null;
+	},
+	canPopunder : function (cookieName) {
+		return (this.getCookie(cookieName) === null && new RegExp(this.toleratedDomains, 'gi').test(this.url));
+	},
+	catchEvent : function () {
+		try {
+			this.popUp.blur();
+			this.popUp.opener.window.focus();
+			window.self.window.blur();
+			window.focus();
+			this.browser.firefox && this.firefoxEvent();
+			this.browser.webkit && this.webkitEvent();
+		} catch (e) {}
+	},
+	firefoxEvent : function () {
+		var blank = window.open("about:blank");
+		blank.focus();
+		blank.close();
+	},
+	webkitEvent : function () {
+		var a = document.createElement("a"),
+			e = document.createEvent("MouseEvents");
+		a.href = "data:text/html;charset=utf-8,%3Cscript%3Ewindow.close()%3C/script%3E";
+		document.getElementsByTagName("body")[0].appendChild(a);
+		e.initMouseEvent("click", !1, !0, window, 0, 0, 0, 0, 0, !0, !1, !1, !0, 0, null);
+		a.dispatchEvent(e);
+		a.parentNode.removeChild(a);
+	},
+	chromeEvent : function (params) {
+		var doc = document,
+			a = doc.createElement("a"),
+			e = doc.createEvent("MouseEvents");
+		if (parseInt(this.browser.version) === 30) {
+			doc.documentElement.webkitRequestFullscreen(Element.ALLOW_KEYBOARD_INPUT);
+			this.popUp = window.open("about:blank", "_blank", params, false);
+			this.popUp.location.href = this.url + '?' + this.additionalParameters + '&rnd=' + Math.random();
+			this.createCookie(this.cookieName, 1, this.reRuntime);
+			doc.webkitCancelFullScreen();
+			doc.onmouseup = function() {
+				a.href = "data:text/html;charset=utf-8,%3Cscript%3Ewindow.close()%3C/script%3E";
+				e.initMouseEvent("click", !0, !0, window, 0, 0, 0, 0, 0, !0, !1, !1, !1, 0, null);
+				a.dispatchEvent(e);
+				doc.onmouseup = null;
+			}
+		} else {
+			var o = document.createElement("object");
+			window.open(this.url + '?' + this.additionalParameters + '&rnd=' + Math.random(), '_blank', params);
+			o.setAttribute("type", "application/x-shockwave-flash");
+			document.body.appendChild(o);
+			o.focus();
+			document.body.removeChild(o);
+			window.open("", "rnd" + Math.floor(Math.random() * 99999999).toString()).close();
+			this.createCookie(this.cookieName, 1, this.reRuntime);
+		}
+	},
+	showPopunder : function () {
+		if (!this.canPopunder(this.cookieName)) {
+			return;
+		}
+		var params = "toolbar=no,scrollbars=yes,location=yes,statusbar=yes,menubar=no,resizable=1,width=" + this.width + ",height=" + this.height + ",screenX=" + this.left + ",screenY=" + this.top;
+		document.onclick = function (e) {
+			if (!this.canPopunder(this.cookieName)) {
+				return;
+			}
+			if (this.browser.chrome && parseInt(this.browser.version) >= 30 || this.browser.opera) {
+				this.chromeEvent(params);
+			} else {
+				window.open("javascript:window.focus();", "_self", "");
+				this.popUp = this.mainWindow.window.open(this.url + '?' + this.additionalParameters + '&rnd=' + Math.random() , '_blank', params);
+				if (this.popUp) {
+					this.createCookie(this.cookieName, 1, this.reRuntime);
+					if (this.browser.ios && e.target.tagName.toLowerCase() === 'img') {
+						e.preventDefault();
+					}
+					if (this.browser.msie) {
+						document.onclick = null;
+						this.popUp.blur();
+						window.focus();
+					} else {
+						this.catchEvent();
+					}
+				}
+			}
+		}.bind(phantomPopunder);
+	}
+};
+
+phantomPopunder.showPopunder();

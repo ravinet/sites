@@ -1,0 +1,31 @@
+PHTTP192.150.16.64"´
+CGET /images/shared/download_buttons/get_flash_player.gif HTTP/1.1
+Host: www.adobe.com
+Connection: keep-alive
+Accept: image/webp,*/*;q=0.8
+vUser-Agent: Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/31.0.1650.63 Safari/537.36
+WReferer: http://www.xtubecams.com/exports/videoloop/?AFNO=1-4003&format=140x140&n=1/1
+$Accept-Encoding: gzip,deflate,sdch
+!Accept-Language: en-US,en;q=0.8
+
+*ß
+ HTTP/1.1 301 Moved Permanently
+Server: Apache
+hLocation: http://wwwimages.adobe.com/www.adobe.com/images/shared/download_buttons/get_flash_player.gif
+Cache-Control: max-age=900
+Keep-Alive: timeout=2
+-Content-Type: text/html; charset=iso-8859-1
+Accept-Ranges: bytes
+Connection: Keep-Alive
+%Date: Tue, 08 Apr 2014 22:37:10 GMT
+(Expires: Tue, 08 Apr 2014 22:52:09 GMT
+Age: 0      
+Content-Length: 300
+®
+<!DOCTYPE HTML PUBLIC "-//IETF//DTD HTML 2.0//EN">
+<html><head>
+<title>301 Moved Permanently</title>
+</head><body>
+<h1>Moved Permanently</h1>
+<p>The document has moved <a href="http://wwwimages.adobe.com/www.adobe.com/images/shared/download_buttons/get_flash_player.gif">here</a>.</p>
+</body></html>

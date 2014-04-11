@@ -1,0 +1,94 @@
+PHTTP
+72.21.91.9"
+4GET /web/css/skin/cam4_20140324040907.css HTTP/1.1
+Host: edgecast.cam4s.com
+Connection: keep-alive
+Accept: text/css,*/*;q=0.1
+vUser-Agent: Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/31.0.1650.63 Safari/537.36
+Referer: http://www.cam4.com/
+$Accept-Encoding: gzip,deflate,sdch
+!Accept-Language: en-US,en;q=0.8
+
+*œ!
+HTTP/1.1 200 OK
+Accept-Ranges: bytes
+Cache-Control: max-age=604800
+Content-Type: text/css
+%Date: Tue, 08 Apr 2014 21:33:15 GMT
+Etag: "3098540875"
+(Expires: Tue, 15 Apr 2014 21:33:15 GMT
+.Last-Modified: Thu, 03 Apr 2014 18:32:30 GMT
+Server: ECS (ord/5739)
+X-Cache: HIT
+Content-Length: 3979
+ç
+h2{background:#ffe1d7}
+.maintabs{border-bottom-color:#ffe1d7}
+.maintabs li{background-color:#ffe1d7}
+.maintabs li a{color:#fc531d;border-color:#ffe1d7}
+.maintabs li.selected a{background-color:#fff}
+.maintabs li a:hover{background-color:#fc531d;color:#fff;border-color:#fc531d}
+.maintabs li.highlight{background-color:#fb971d}
+.maintabs li.highlight a{border-color:#fb971d}
+.maintabs li.highlight a:hover{background-color:#fc531d;border-color:#fc531d}
+.maintabs li h2 a:hover{color:#fff}
+.maintabs h2{background:0;color:#fc531d}
+.toggle_tabs .selected{background-color:#fc531d}
+#rating_status{color:#fc531d}
+.profileBox{background-color:#fff;border-color:#ffe1d7}
+.profileBox:hover{background-color:#ffe1d7}
+.profileBoxTitle,.profileBoxTitle a{color:#fc531d!important}
+.profileDataBox a img{border-color:#fc531d}
+#profile-left-col #mainProfilePhoto img{background-color:#fae3d8}
+.socialWrap input#t1:hover,.socialWrap textarea:hover,#profile-left-col .sendMessage textarea:hover,#profile-left-col .sendMessage input:hover,#profile-left-col .profileMenu li a:hover,#profile-left-col .profileMenu li a.active{color:#fc531d}
+#profile-left-col .sendMessage a,.socialWrap .sendMessage a{background-color:#e8602f}
+#profile-left-col .sendMessage a:hover,.socialWrap .sendMessage a:hover{background-color:#f67a2f}
+#giftShelfWrap .shelf_wrap2 p:hover .infoBalloon a.sendGift:hover,#giftShelfWrap a.sendGiftLink:hover{background:#f67a2f}
+#giftShelfWrap .shelf_wrap2 p:hover .infoBalloon .itemName,#giftShelfWrap .shelf_wrap2 p:hover .infoBalloon a.sendGift,#giftShelfWrap a.sendGiftLink{background:#fc531d}
+#tippingJarDiv .balance a{color:#fc531d}
+.disclaimer a{color:#f5511c}
+.footer a{color:#fc531c}
+.sponsorAd .removeAds,a.removeAdButton{background-color:#fc531d}
+.contest_files h1,.contest_files h3{color:#fc531d}
+#official_mail{background-color:yellow;font-weight:bold}
+#header .huser .create-account{border-color:#8bd00a;text-shadow:0 -1px 0 #3b960c;background-color:#70a60b;text-shadow:0 -1px 0 #3b960c;background-image:-moz-linear-gradient(center top,#83c30c,#70a60b)}
+#header .huser .create-account:hover{background-color:#7ab50b;background-image:-moz-linear-gradient(center top,#8bd00a,#7ab50b)}
+#header .hmenu ul li a:hover{background-color:#e83c00}
+#header .hmenu ul li a:active{background-color:#cc3500}
+#admin-dark .login{background-color:#fc531d}
+#admin-dark .login:hover{background-color:#fb971d}
+.loginbox{border-color:#fc531d}
+.log_sweet_btn{background-color:#fc531d}
+#rightSignupForm .button{background-color:#fc531d}
+.superShowsLineTitle,.SuperShowsField2 p,.SuperShowsField4 a,.supershows_top h5,.animatedtabs h5,#superShowsContent h1{color:#f67a2f}
+#superShowsContent h3{color:#fc531d}
+#superShowsContent h3 a{color:#f67a2f}
+.SuperShowsField2 img{border-color:#f67a2f}
+.contest_wrap h1,.contest_wrap_smallBG h1,.contest_copy_area h3,.winners h4{color:#fc531d}
+#faqWrap{border-bottom-color:#fc531c;border-top-color:#fc531c}
+#faqWrap dl a{color:#fc531c}
+.faqWrapSub{border-bottom-color:#fc531c}
+.disclaimer a{color:#f5511c}
+.disclaimer{border-bottom-color:#fc531c}
+.footer a{color:#fc531c}
+.footer_line_menu a{color:#f5712b}
+.txt_4{color:#fc531d}
+.cat_style,.paginator{color:#f67a2f}
+.info_row h1,.info_row h6{color:#f46c2a}
+.movie_description_box h4,.shadowbox_container_i h6,.orange_title,.related_videos h4{color:#f9641b}
+.members_search h1{color:#f67a2f}
+a.submitB{background-color:#fc531d}
+.animatedtabs{border-bottom-color:#f49364}
+.animatedtabs h5{color:#f67a2f}
+.contentTerm{color:#fc531d}
+.pager .direction,.pager a{color:#fc531d}
+.pager span{border-left-color:#fc531d}
+.button{background-color:#fc531d}
+.button:hover{background-color:#f93}
+.text strong,.text h5{color:#fc531d}
+.statusMsg,.statusMsg2 a{color:#fc531d}
+.darkBackground{background-color:#fc531d}
+.lightBackground{background-color:#ffe1d7}
+#header .hmenu ul li button:hover{background-color:#e83c00}
+#giftShelfWrap .shelf_wrap2 p:hover .infoBalloon .itemName{background:white}
+a.btn-wh{color:#555}

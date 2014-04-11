@@ -1,0 +1,32 @@
+»HTTPS204.62.114.178"œ
+nGET /downtime_events/summary.json?callback=jQuery11020635563901392743_1397226873286&_=1397226873287 HTTP/1.1
+Host: dash.37signals.com
+Connection: keep-alive
+Accept: */*
+vUser-Agent: Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/31.0.1650.63 Safari/537.36
+ Referer: https://basecamp.com/
+$Accept-Encoding: gzip,deflate,sdch
+!Accept-Language: en-US,en;q=0.8
+
+*š
+HTTP/1.1 200 OK
+Server: nginx
+%Date: Fri, 11 Apr 2014 14:34:33 GMT
+/Content-Type: application/json; charset=utf-8
+Transfer-Encoding: chunked
+Connection: keep-alive
+Status: 200 OK
+X-Frame-Options: SAMEORIGIN
+#X-UA-Compatible: IE=Edge,chrome=1
+*ETag: "63d2a79311252c7b21622670d711bdc2"
+4Cache-Control: max-age=0, private, must-revalidate
+0X-Request-Id: 9b0a871640f89f0e2728459d899c4f4c
+X-Runtime: 0.023879
+X-Rack-Cache: miss
+%X-Queue-Time: 0.0008943080902099609
+Timing-Allow-Origin: *
+‹	
+47d
+jQuery11020635563901392743_1397226873286({"BasecampProduction":{"frown":2,"flatline":5,"smile":45,"monthly_downtime":"4.0","downtime":"30.0","uptime":0.9999429223744293},"BCX":{"frown":3,"flatline":0,"smile":49,"monthly_downtime":"45.0","downtime":"64.0","uptime":0.9999419929263249},"HighriseProduction":{"frown":4,"flatline":5,"smile":43,"monthly_downtime":"44.0","downtime":"235.0","uptime":0.9995528919330289},"BackpackProduction":{"frown":2,"flatline":0,"smile":50,"monthly_downtime":"8.0","downtime":"21.0","uptime":0.9999600456621005},"CampfireProduction":{"frown":2,"flatline":4,"smile":46,"monthly_downtime":"29.0","downtime":"50.0","uptime":0.9999048706240488},"Breeze":{"frown":2,"flatline":1,"smile":49,"monthly_downtime":"9.0","downtime":"23.0","uptime":0.999965591203078},"Assistly":{"frown":24,"flatline":20,"smile":8,"monthly_downtime":"35.0","downtime":"575.0","uptime":0.9989060121765602},"Shopify":{"frown":17,"flatline":14,"smile":21,"monthly_downtime":"74.0","downtime":"546.0","uptime":0.9989611872146119},"Github":{"frown":21,"flatline":12,"smile":19,"monthly_downtime":"22.0","downtime":"572.0","uptime":0.9989117199391172}})
+0
+

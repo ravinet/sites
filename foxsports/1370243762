@@ -1,0 +1,50 @@
+PHTTP65.55.121.245"ø
+BGET /ADSAdClient31.dll?GetSAd=&DPJS=8&PG=SPTHP4&AP=1089 HTTP/1.1
+Host: rad.msn.com
+Connection: keep-alive
+Accept: */*
+vUser-Agent: Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/31.0.1650.63 Safari/537.36
+$Accept-Encoding: gzip,deflate,sdch
+!Accept-Language: en-US,en;q=0.8
+/Cookie: MUID=337C7F6685CC68ED0FA1797F81CC6A95
+
+*¼
+HTTP/1.1 200 OK
+*Cache-Control: no-cache, must-revalidate
+Pragma: no-cache
+Content-Length: 1700
+(Content-Type: text/html; Charset=utf-8
+(Expires: Fri, 01 Jan 1990 00:00:00 GMT
+Server: Microsoft-IIS/7.5
+3X-RADID: P10750695-T100496528-C119000000000107816
+ Access-Control-Allow-Origin: *
+7P3P: CP="BUS CUR CONo FIN IVDo ONL OUR PHY SAMo TELo"
+%Date: Fri, 11 Apr 2014 20:36:27 GMT
+¦
+
+//<![CDATA[
+function getRADIds() { return{"adid":"119000000000107816","pid":"10750695","targetid":"100496528"};}
+if(typeof(inDapIF)!="undefined"){parent.dap_Resize(document.body.id,300,250);}
+    
+try{if(typeof(inDapIF)!="undefined"){var cData={};cData["CID"]="119000000000107816";cData["PID"]="10750695";cData["UIT"]="G";cData["TargetID"]="100496528";cData["PG"]="SPTHP4";cData["ASID"]="c28b46be486c4db2907c5fcd911a5b6d";cData["ANID"]="";cData["MUID"]="337C7F6685CC68ED0FA1797F81CC6A95";cData["GSERV"]="http://g.msn.com";cData["DISABLEIAF"]="1";cData["FN"]="RemnantInventoryMigration";cData["Viewability"]="true";parent.setCreativeData(document.body.id,cData);}}catch(e){}
+
+var url=(0==1)?'https://secure.adnxs.com':'http://m.adnxs.com';
+url+=('js'=='js')?'/ttj':'/tt';
+url+=(0==0)?'?is_premium=0':'?is_premium=1&PGRS=&MUID=337C7F6685CC68ED0FA1797F81CC6A95&TOptOut=0&REQPARAMS=DPJS%3D8%26PG%3DSPTHP4%26AP%3D1089%26ECNTS%3D13041722188054';
+url+='&member=280';
+url+='&inv_code=SPTHP4&imp_id=c28b46be486c4db2907c5fcd911a5b6d&cb=1477134747';
+url+=(1==1)?'&reserve_encr=0004022WLjCxb8psu2QfMgpQRSYdgyHL_0T9W-w9k3l5E4l1xcw':'';
+url+=('http://msn.foxsports.com'!='')?'&referrer='+encodeURIComponent('http://msn.foxsports.com'):'';
+url+=(''!='')?'&code2='+encodeURIComponent(''):'';
+url+=(''!='')?'&ext_inv_code='+encodeURIComponent(''):'';
+url+=(''=='Above'||''=='Below')?'&position=' + ''.toLowerCase():'';
+url+='&size='+'300x250';
+url+=(''!='')?'&promo_sizes=':'';
+
+if('js'=='js') {
+	document.write('<scr' + 'ipt src="'+url+'"></scr' + 'ipt>');
+}
+else {
+	document.write('<iframe height="250" width="300" marginwidth="0" marginheight="0" frameborder="0" scrolling="no" src="'+url+'"></iframe>');
+}
+//]]>

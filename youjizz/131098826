@@ -1,0 +1,67 @@
+PHTTP31.192.122.226"˜
+%GET /js/jquery.dropdown.js HTTP/1.1
+Host: www.youjizz.com
+Connection: keep-alive
+Accept: */*
+vUser-Agent: Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/31.0.1650.63 Safari/537.36
+"Referer: http://www.youjizz.com/
+$Accept-Encoding: gzip,deflate,sdch
+!Accept-Language: en-US,en;q=0.8
+DCookie: PHPSESSID=rqdrsda89d4f3vdc4tg1e824q3; RNLBSERVERID=ded1418
+
+*à
+
+HTTP/1.1 200 OK
+Server: nginx/1.4.4
+%Date: Tue, 08 Apr 2014 22:37:43 GMT
+(Content-Type: application/x-javascript
+Content-Length: 1107
+.Last-Modified: Mon, 23 Sep 2013 16:22:34 GMT
+Connection: close
+ETag: "52406aca-453"
+Accept-Ranges: bytes
+Õ
+(function($){
+
+$.fn.extend({
+	dropdown: function(o){
+		var o = $.extend({ maxHeight: 600, buffer: 100, delay: 500 }, o);
+		
+		return this.each(function(){
+			var li = $(this),
+				a = li.find('a'),
+				liheight = li.height(),
+				ul = li.find('ul').css({ top: liheight }),
+				range = ul.height() - o.maxHeight;
+			
+			if(!ul.length){ return; }
+			
+			li.hoverdelay(function(){
+					ul.stop(true,true).slideDown('fast');
+					a.addClass('hover'); // *after* animation stop
+					if(range <= 0){ return; }
+					li.css({ height: o.maxHeight + liheight, overflow: 'hidden' });
+				},
+				function(){
+					// put things back to normal
+					ul.stop(true,true).slideUp('fast', function(){
+						li.height(liheight);
+						a.removeClass('hover');
+					});
+				},
+				{ delay: o.delay });
+			
+			if(range <= 0){ return; }
+			
+			var litop = li.offset().top;
+			
+			li.mousemove(function(e){
+					var pos = e.pageY - litop - liheight - o.buffer,
+						ratio = Math.max(pos, 0) / (o.maxHeight - liheight - 2 * o.buffer);
+					ul.css({ top: liheight - (range * Math.min(ratio, 1)) });
+				});
+		});
+	}
+});
+
+})(jQuery);

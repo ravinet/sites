@@ -1,0 +1,159 @@
+PHTTP68.67.154.41"·
+AGET /js/anx/common.js?3c4d97daa18c330f24e5e2eeb4f27179 HTTP/1.1
+Host: www.adnxs.com
+Connection: keep-alive
+Accept: */*
+vUser-Agent: Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/31.0.1650.63 Safari/537.36
+ Referer: http://www.adnxs.com/
+$Accept-Encoding: gzip,deflate,sdch
+!Accept-Language: en-US,en;q=0.8
+KCookie: BIGipServeradnexus.prod_ttui_nym2_http.3214=2336228106.20480.0000
+
+*Ï
+HTTP/1.1 200 OK
+%Date: Tue, 08 Apr 2014 21:25:58 GMT
+Server: Apache/2.2.18 (Unix)
+.Last-Modified: Tue, 01 Apr 2014 21:56:54 GMT
+!ETag: "2938d-cae-4f6023efd5580"
+Accept-Ranges: bytes
+Content-Length: 3246
+X-Cnection: close
+(Content-Type: application/x-javascript
+°
+YAHOO.namespace ("ANX");
+var anx = anx ? anx : {};
+
+anx.check_active_tokens = function()
+{
+	$.getJSON('/report/check-active-tokens', function(data) {
+		var pending_reports = false;
+		for (var i in data) {
+			if (data[i].status == 'pending') {
+				pending_reports = true;
+			} else if (data[i].status == 'ready') {
+				if ($("#report-" + data[i].token).hasClass('pending')) {
+					$("#report-" + data[i].token).removeClass('pending').addClass('ready');
+					$("#report-" + data[i].token + ' .status').html('ready');
+				}
+			}
+		}
+		
+		if (pending_reports) {
+			setTimeout(anx.check_active_tokens, 5000);
+		}
+	});
+}
+
+YAHOO.ANX.goto = function(url) {
+	document.location.href = url;
+}
+
+YAHOO.ANX.parseJson = function(jsonString)
+{
+	var resp = YAHOO.lang.JSON.parse(jsonString);
+	if (resp.login_required) {
+		document.location.href = resp.login_url;
+	}
+	
+	return resp;
+}
+
+YAHOO.ANX.checkForLoginRequired = function(obj)
+{
+	if (obj.login_required) {
+		document.location.href = obj.login_url;
+	}
+}
+
+var MyList =
+{
+    init: function() {
+        MyList.items = new Object();
+    },
+    add: function(v, o) {
+		if (typeof o == 'undefined') {
+			o = v;
+		}
+        MyList.items[v] = o;
+    },
+    contains: function(v) {
+        return (MyList.items[v] != undefined && MyList.items[v] != null);
+    },
+    remove: function(v) {
+        if (MyList.contains(v)) {
+            MyList.items[v] = null;
+        }
+    },
+    length: function() {
+        len = 0;
+        for (selectedItem in this.items) {
+            if (MyList.items[selectedItem] != undefined && MyList.items[selectedItem] != null) {
+                len++;
+            }
+        }
+        return len;
+    },
+    toString: function() {
+        s = "";
+        for (selectedItem in this.items) {
+            if (MyList.items[selectedItem] != undefined && MyList.items[selectedItem] != null) {
+                s += selectedItem + ",";
+            }
+        }
+        if (this.length() > 0) {
+            alert("" + this.length() + " row(s) selected:" + s);
+        } else {
+            alert("No rows selected.");
+        }
+        return s;
+    }
+};
+
+// TODO generalize
+function checkAll(elm) {
+	if (!elm.checked) {
+		uncheckAll(elm);
+		return false;
+	}
+	records = myDataTable.getRecordSet().getRecords();
+	for (i=0; i < records.length; i++) {
+		myDataTable.getRecordSet().updateKey(records[i], "checkall", "true");
+		MyList.add(records[i].getData('id'));
+	}
+	myDataTable.render();
+   return false;
+}
+
+// TODO generalize
+function uncheckAll(elm) {
+	records = myDataTable.getRecordSet().getRecords();
+	for (i=0; i < records.length; i++) {
+        myDataTable.getRecordSet().updateKey(records[i], "checkall", "");
+        MyList.remove(records[i].getData('id')); 
+   }
+   myDataTable.render();
+}
+
+function htmlEntities(str) {
+	return str.replace(/&/g,'&amp;').replace(/</g,'&lt;').replace(/>/g,'&gt;');
+}
+
+function getRandomNumber(max) {
+	return Math.floor(Math.random() * max);
+}
+
+String.prototype.template = function (o) {
+	if (!o) {
+		return this.toString();
+	}
+    return this.replace(/{([^{}]*)}/g,
+        function (a, b) {
+            var r = o[b];
+			if (r === null) {
+				return '';
+			} else {
+				return typeof r === 'string' || typeof r === 'number' ? r : a;
+			}
+        }
+    );
+};

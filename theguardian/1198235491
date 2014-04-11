@@ -1,0 +1,35 @@
+PHTTP173.194.46.111"˛
+GET /osd/hb.nmf?v=2 HTTP/1.1
+Host: www.gstatic.com
+Connection: keep-alive
+vUser-Agent: Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/31.0.1650.63 Safari/537.36
+,Origin: http://googleads.g.doubleclick.net
+Accept: */*
+¶Referer: http://googleads.g.doubleclick.net/pagead/ads?client=ca-pub-2012933198307164&output=html&h=250&slotname=0669883454&adk=4104100836&w=300&lmt=1397010488&ea=0&flash=11.9.900&url=http%3A%2F%2Fwww.theguardian.com%2Fus&dt=1396996088874&bpp=7&bdt=491&shv=r20140403&cbv=r20140311&saldr=sa&correlator=1396996088883&frm=23&ga_vid=1855962757.1396996089&ga_sid=1396996089&ga_hid=506515943&ga_fc=0&u_tz=-240&u_his=2&u_java=1&u_h=600&u_w=800&u_ah=600&u_aw=800&u_cd=24&u_nplug=11&u_nmime=54&dff=times%20new%20roman&dfs=16&adx=490&ady=3519&biw=765&bih=503&isw=300&ish=250&ifk=2746689700&eid=317150304&oid=3&loc=http%3A%2F%2Fwww.theguardian.com%2Fus&rx=0&eae=2&vis=1&fu=4&ifi=1&dtd=13
+$Accept-Encoding: gzip,deflate,sdch
+!Accept-Language: en-US,en;q=0.8
+
+*ê
+HTTP/1.1 200 OK
+#Content-Type: application/x-pnacl
+.Last-Modified: Tue, 28 Jan 2014 19:47:46 GMT
+%Date: Thu, 03 Apr 2014 20:54:33 GMT
+(Expires: Fri, 03 Apr 2015 20:54:33 GMT
+ Access-Control-Allow-Origin: *
+!X-Content-Type-Options: nosniff
+Server: sffe
+Content-Length: 107
+!X-XSS-Protection: 1; mode=block
+)Cache-Control: public, max-age=31536000
+Age: 437616
+Alternate-Protocol: 80:quic
+m
+{
+  "program": {
+    "portable": {
+      "pnacl-translate": {
+        "url": "hb.pexe"
+      }
+    }
+  }
+}

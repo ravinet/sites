@@ -1,0 +1,50 @@
+PHTTP173.241.242.12"é
+§GET /w/1.0/acj?mi=abf5338a-2003-486a-eaf1-adba45a91c8f&mn=1&mc=1&cc=1&ai=90d37d3c-5383-4317-8a6e-5ddce8ff00ba&o=4744045487&callback=OX_4744045487&ju=http%3A//www.monster.com/&jr=http%3A//www.monster.com/&auid=552731&res=800x600x24&plg=swf%2Cqt%2Cwmp%2Cshk%2Cpm&ch=ISO-8859-1&tz=240 HTTP/1.1
+3Host: ox-d.monetizationservices.servedbyopenx.com
+Connection: keep-alive
+Accept: */*
+vUser-Agent: Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/31.0.1650.63 Safari/537.36
+∫Referer: http://oas.monster.com/RealMedia/ads/adstream_sx.ads/us.monster.en/www30/homepage/1250572661@Top,Right,Position1,Right1,Bottom1!Right1?site=mons&affiliate=mons&app=www&size=300x250&oas_pv=no_analytics&fb=0&XE&site=mons&affiliate=mons&app=www&size=300x250&oas_pv=no_analytics&fb=0&if_nt_CookieAccept=Y&XE
+$Accept-Encoding: gzip,deflate,sdch
+!Accept-Language: en-US,en;q=0.8
+ÑCookie: OX_u=3cc66c80-1d81-0b49-57a5-9204123658f4_a_1398204277; NSC_qspe-py3-efmjwfsz=ffffffff09091d1d45525d5f4f58455e445a4a422970
+
+*ö
+HTTP/1.1 200 OK
+Vary: Accept
+êSet-Cookie: OX_u=e4a240ad-715a-0ad2-4335-f5dbb976cb03_m_1398204277; Version=1; Expires=Wed, 08-Apr-2015 22:04:38 GMT; Max-Age=31536000; Path=/
+CServer: MochiWeb/1.1 WebMachine/1.10.0 (never breaks eye contact)
+Pragma: no-cache
+#P3P: CP="CUR ADM OUR NOR STA NID"
+(Expires: Mon, 26 Jul 1997 05:00:00 GMT
+%Date: Tue, 08 Apr 2014 22:04:38 GMT
+ Content-Type: application/json
+Content-Length: 1694
+-Cache-Control: private, max-age=0, no-cache
+ÜSet-Cookie: NSC_qspe-py3-efmjwfsz=ffffffff09091d1d45525d5f4f58455e445a4a422970;expires=Tue, 08-Apr-2014 23:04:38 GMT;path=/;httponly
+†
+OX_4744045487({
+  "ads":{
+    "medium":"w",
+    "record_tmpl":"http://ox-d.monetizationservices.servedbyopenx.com/{medium}/1.0/{rtype}?ts={txn_state}",
+    "pixels":"http://us-u.openx.net/w/1.0/pd?plm=5&ph=4f577327-5159-42b8-a9c4-5861fcdfd78c",
+    "adunits" : [
+      {
+        "auid":"552731",
+        "chain":[
+          {
+            "is_fallback":0,
+            "ad_id":"1729726",
+            "width":"300",
+            "height":"250",
+            "html":"<script type=\"text/javascript\"><!--\ngoogle_ad_client = \"ca-pub-4639102848520068\";\n/* Monster 300 */\ngoogle_ad_slot = \"5159620837\";\ngoogle_ad_width = 300;\ngoogle_ad_height = 250;\ngoogle_page_url = \"monster.com\"\n//-->\n</script>\n<script type=\"text/javascript\"\nsrc=\"//pagead2.googlesyndication.com/pagead/show_ads.js\">\n</script>",
+            "target":"_blank",
+            "ts":"1fHNpZD0xMTg5MjV8cmFpZD1kZTMyNjU3Yi1lMjhkLTRiMDYtOTJlZS1mMTE4MWM5N2YzYmN8YXVpZD01NTI3MzF8dXI9RU93d3ppc2k4eXxhcz0zMDB4MjUwfGFpZD0xNzI5NzI2fHB1Yj0xMzg5NDl8YXVtPURNSUQuV0VCfGxpZD0xMDA2NzMxfHU9MXx0PTR8cmlkPWM4MDRmNTQyLTM0MzctNDg1My1hMjJhLThiMzEyZGM4NjE2NXxvaWQ9Mjc1OTI2fGJtPUJVWUlORy5OT05HVUFSQU5URUVEfHA9MTA5MXxwYz1VU0R8YWM9VVNEfHBtPVBSSUNJTkcuQ1BNfHJ0PTEzOTY5OTQ2Nzd8cHI9MTA5MXxhZHY9MTM5MDM2",
+            "type":"html",
+            "ad_url":"<script type=\"text/javascript\"><!--\ngoogle_ad_client = \"ca-pub-4639102848520068\";\n/* Monster 300 */\ngoogle_ad_slot = \"5159620837\";\ngoogle_ad_width = 300;\ngoogle_ad_height = 250;\ngoogle_page_url = \"monster.com\"\n//-->\n</script>\n<script type=\"text/javascript\"\nsrc=\"//pagead2.googlesyndication.com/pagead/show_ads.js\">\n</script>"
+          }
+        ]
+      }
+    ]
+  }
+});

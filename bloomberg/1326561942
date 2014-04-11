@@ -1,0 +1,29 @@
+PHTTP199.127.194.40"Ó
+GET /crossdomain.xml HTTP/1.1
+Host: livepass.conviva.com
+Connection: keep-alive
+vUser-Agent: Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/31.0.1650.63 Safari/537.36
+Accept: */*
+$Referer: http://www.bloomberg.com/
+$Accept-Encoding: gzip,deflate,sdch
+!Accept-Language: en-US,en;q=0.8
+
+*­
+HTTP/1.1 200 OK
+(Expires: Tue, 15 Apr 2014 21:31:20 GMT
+Cache-Control: max-age=604800
+Content-Type: text/xml
+Accept-Ranges: bytes
+ETag: "1647442918"
+.Last-Modified: Fri, 17 Jan 2014 18:58:16 GMT
+Content-Length: 290
+%Date: Tue, 08 Apr 2014 21:31:20 GMT
+Server: lighttpd/1.4.31
+USet-Cookie: BIGipServerpool_livepass.conviva.com_http=1543634954.37151.0000; path=/
+¤
+<?xml version="1.0" ?> 
+<!DOCTYPE cross-domain-policy SYSTEM "http://www.adobe.com/xml/dtds/cross-domain-policy.dtd">
+<cross-domain-policy>
+  <allow-access-from domain="*" secure="false" /> 
+  <allow-http-request-headers-from domain="*" headers="*" secure="false" />
+</cross-domain-policy>

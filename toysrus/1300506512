@@ -1,0 +1,66 @@
+PHTTP208.71.122.27"–
+bGET /RealMedia/ads/adstream_mjx.ads/tru/homepage/1301784881@Middle1,Top1?_RM_OAX_REDIR_ HTTP/1.1
+Host: rusads.toysrus.com
+Connection: keep-alive
+Accept: */*
+vUser-Agent: Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/31.0.1650.63 Safari/537.36
+CReferer: http://www.toysrus.com/shop/index.jsp?categoryId=2255956
+$Accept-Encoding: gzip,deflate,sdch
+!Accept-Language: en-US,en;q=0.8
+àCookie: mbox=check#true#1396996203|session#1396996142007-657330#1396998003; fsr.a=1396996143025; s_ppv=29; s_cc=true; s_vs=1; s_cpm=%5B%5B'Direct%2520Load'%2C'1396996143277'%5D%5D; s_nr=1396996143277; s_previousPageName=en_US%3A%20TRU%3A%20Home%20Page; s_sq=%5B%5BB%5D%5D; __utma=136881205.1563379947.1396996143.1396996143.1396996143.1; __utmb=136881205.1.10.1396996143; __utmc=136881205; __utmz=136881205.1396996143.1.1.utmcsr=(direct)|utmccn=(direct)|utmcmd=(none); s_vi=[CS]v1|29A23C1785152F93-4000018B8001352C[CE]; OAX=8WxGx1NEeC8ABAVa; NSC_d12efm_qppm_iuuq=ffffffff09419e5f45525d5f4f58455e445a4a423660
+
+*ñ
+HTTP/1.1 200 OK
+%Date: Tue, 08 Apr 2014 22:29:03 GMT
+ Server: Apache/2.2.3 (Red Hat)
+NP3P: CP="NON NID PSAa PSDa OUR IND UNI COM NAV STA",policyref="/w3c/p3p.xml"
+Pragma: no-cache
+(Expires: Fri, 30 Oct 1998 14:19:41 GMT
+*Cache-Control: no-cache,no-store,private
+Content-Length: 3040
+Keep-Alive: timeout=60
+Connection: Keep-Alive
+(Content-Type: application/x-javascript
+â
+function OAS_RICH(position) {
+if (position == 'Middle1') {
+document.write ('<A HREF="http://rusads.toysrus.com/RealMedia/ads/click_lx.ads/tru/homepage/L3/2104347843/Middle1/TRUBRU/HOUSE_ROS_11_TRU_54147_TRUfreshipHM/11_TRU_54147_TRUfreshipHM_300x250.jpg/3857784778314e456543384142415661?x" target="_self"><IMG SRC="http://imagec12.247realmedia.com/RealMedia/ads/Creatives/TRUBRU/HOUSE_ROS_11_TRU_54147_TRUfreshipHM/11_TRU_54147_TRUfreshipHM_300x250.jpg"  ALT="Click Here"  BORDER="0"></A>\n');
+document.write ('                      \n');
+document.write ('          <SCRIPT language="JavaScript1.1">\n');
+document.write ('            if(typeof oas_camp_list=="undefined" || oas_camp_list==null)\n');
+document.write ('            {\n');
+document.write ('              var oas_camp_list= "TRUBRU/HOUSE_ROS_11_TRU_54147_TRUfreshipHM^Middle1;";\n');
+document.write ('            }\n');
+document.write ('            else\n');
+document.write ('            {\n');
+document.write ('              oas_camp_list += "TRUBRU/HOUSE_ROS_11_TRU_54147_TRUfreshipHM^Middle1;";\n');
+document.write ('            }\n');
+document.write ('            var oas_d=new Date();\n');
+document.write ('            var oas_m=oas_d.getTime();\n');
+document.write ('            oas_d.setTime(oas_m+1209600000);\n');
+document.write ('            document.cookie="OAX_tmp=3857784778314e456543384142415661;expires="+oas_d.toGMTString()+";path=/;";\n');
+document.write ('           </SCRIPT>\n');
+document.write ('       \n');
+document.write ('              ');
+}
+if (position == 'Top1') {
+document.write ('<A HREF="http://rusads.toysrus.com/RealMedia/ads/click_lx.ads/tru/homepage/L3/1282037473/Top1/TRUBRU/HOUSE_ROS_TRUBRU_11_TRU_54146_TRUpickupHM/11_TRU_54147_TRUfreshipHM_728x90.jpg/3857784778314e456543384142415661?x" target="_self"><IMG SRC="http://imagec12.247realmedia.com/RealMedia/ads/Creatives/TRUBRU/HOUSE_ROS_TRUBRU_11_TRU_54146_TRUpickupHM/11_TRU_54147_TRUfreshipHM_728x90.jpg"  ALT="Click Here"  BORDER="0"></A>\n');
+document.write ('                      \n');
+document.write ('          <SCRIPT language="JavaScript1.1">\n');
+document.write ('            if(typeof oas_camp_list=="undefined" || oas_camp_list==null)\n');
+document.write ('            {\n');
+document.write ('              var oas_camp_list= "TRUBRU/HOUSE_ROS_TRUBRU_11_TRU_54146_TRUpickupHM^Top1;";\n');
+document.write ('            }\n');
+document.write ('            else\n');
+document.write ('            {\n');
+document.write ('              oas_camp_list += "TRUBRU/HOUSE_ROS_TRUBRU_11_TRU_54146_TRUpickupHM^Top1;";\n');
+document.write ('            }\n');
+document.write ('            var oas_d=new Date();\n');
+document.write ('            var oas_m=oas_d.getTime();\n');
+document.write ('            oas_d.setTime(oas_m+1209600000);\n');
+document.write ('            document.cookie="OAX_tmp=3857784778314e456543384142415661;expires="+oas_d.toGMTString()+";path=/;";\n');
+document.write ('           </SCRIPT>\n');
+document.write ('       \n');
+document.write ('              ');
+}
+}

@@ -1,0 +1,493 @@
+PHTTP69.16.175.42"ï
+:GET /slider/lib/js/app.2.2.2.js?_=1396994442311 HTTP/1.1
+Host: cdn.cpxinteractive.com
+Connection: keep-alive
+Accept: */*
+vUser-Agent: Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/31.0.1650.63 Safari/537.36
+#Referer: http://www.ijreview.com/
+$Accept-Encoding: gzip,deflate,sdch
+!Accept-Language: en-US,en;q=0.8
+
+*„w
+HTTP/1.1 200 OK
+%Date: Tue, 08 Apr 2014 22:00:41 GMT
+!Keep-Alive: timeout=10, max=100
+Connection: Keep-Alive
+Accept-Ranges: bytes
+ETag: "1396558455"
+.Last-Modified: Thu, 03 Apr 2014 20:54:15 GMT
+Cache-Control: max-age=86400
+Content-Length: 14830
+&Content-Type: application/javascript
+7X-HW: 1396994441.dop001.ch3.t,1396994441.cds005.ch3.c
+ Access-Control-Allow-Origin: *
+ðs
+var Slider = function() {
+
+	function _debug() {
+		if(typeof options == "undefined" || options.debug) {
+			console.debug(arguments);
+		}
+	}
+	
+	_debug("Slider starting...");
+	
+	var _adTemplate = "<div class='slider' style='visibility:hidden;'><div class='slider-contents'><div class='slider-iframe'><iframe marginheight='0' marginwidth='0' scrolling='no'></iframe></div><div class='slider-navigation'><div class='slider-navigation-logo'><img></div><div class='slider-toggle'><a href='#'><span class='hide'>Hide Ad</span><span class='show'>Show Ad</span></a></div></div></div><div class='slider-tab-toggle'><a href='#'><span>Show Ad</span></a></div></div>";
+	var baseOptions = {
+		version: "2.2.2",
+		type: "noLogo",
+		urls: {
+			ad: "optimizedby.brealtime.com",
+			css: "//cdn.cpxinteractive.com/slider/defs/0-0.css"
+		},
+		pid: 0,
+		trid: 0,
+		width: 728,
+		height: 90,
+		adTemplate: _adTemplate,
+		debug: true,
+		id: 1234567890,
+		animationDuration: 500,
+		animationDelay: 0,
+		animationDirection: "left",
+		animationEasing: "easeOutBack",
+		toolbarPosition: "right",
+		horizontalPosition: "left",
+		verticalPosition: "center",
+		close: {
+			permanently: false,
+			wTab: false
+		},
+		// TODO: Make the both of these work together i.e. dont show the slider until a user has hit the page three times, then only show the slider once after that, within the set time range
+		freqLimit: 0,
+		freqLimitTimeRange: 24,
+		reverseFreqLimit: 0,
+		reverseFreqLimitTimeRange: 24
+	}
+	var options = {};
+	options = jq.extend(baseOptions, options);
+	if(!window.sliderOptions) {
+		window.sliderOptions = {};
+	}
+	options = jq.extend(baseOptions, sliderOptions);
+	
+	// current time
+	var time = new Date;
+	options.time = time;
+	
+	_debug("Slider options", options);
+	
+	// functions
+	function _registerEvent(json) {
+		// TODO: switch on pid or trid
+		var payload = {
+			productKey: "slider",
+			json: json
+		};
+		if(options.debug) {
+			payload.json.debug = true;
+		}
+		try {
+			_debug("Registering Event", JSON.stringify(payload));
+			// TODO: make this dynamic based on prod or dev
+			jq.post("http://api.cpxi.com/event/create", payload);
+		} catch(e) {
+			_debug("REGISTER ERROR", e);
+		}
+	}
+	
+	function _getCookie(cookieName) {
+		var cookie = jq.cookie(cookieName);
+		if(!cookie) {
+			_debug("setting cookie...");
+			_debug("timestamp:", options.time.getTime() + (options.freqLimitTimeRange*60000*60));
+			// set a cookie that is the freqLimitTimeRange plus now, in milliseconds
+			// TODO: Should there be an expire? or only sessions based?
+			jq.cookie(
+				cookieName, 
+				JSON.stringify({
+					timeStamp: options.time.getTime() + (options.freqLimitTimeRange*60000*60), 
+					viewCount: 0
+				}), 
+				{expires:(options.freqTimeLimit/24)}
+			);
+		}
+		cookie = jq.cookie(cookieName);
+		return JSON.parse(cookie);
+	}
+	
+	function _checkFreqCap() {
+		_debug("Checking Frequnency Cap...");
+		if(parseInt(options.freqLimit)) {
+			var cookie = _getCookie("sliderFreqCap" + options.id);
+			if(time.getTime() <= cookie.timeStamp && cookie.viewCount < options.freqLimit) {
+				jq.cookie("sliderFreqCap" + options.id, JSON.stringify({timeStamp: cookie.timeStamp, viewCount: cookie.viewCount + 1}));
+				return true;
+			} else if(time.getTime() >= cookie.timeStamp) {
+				jq.removeCookie("sliderFreqCap" + options.id);
+				return true;
+			} else if(time.getTime() <= cookie.timeStamp && cookie.viewCount >= options.freqLimit) {
+				return false;
+			}
+		} else {
+			_debug("No Frequency Cap in place...");
+			return true;
+		}
+	}
+	
+	function _checkReverseFreqCap() {
+		_debug("Checking Reverse Frequency Cap...");
+		if(parseInt(options.reverseFreqLimit)) {
+			var cookie = _getCookie("sliderReverseFreqCap" + options.id);
+			if(time.getTime() <= cookie.timeStamp && cookie.viewCount >= options.reverseFreqLimit) {
+				return true;
+			} else if(time.getTime() >= cookie.timeStamp) {
+				jq.removeCookie("sliderReverseFreqCap" + options.id);
+				return true;
+			} else if(time.getTime() <= cookie.timeStamp && cookie.viewCount < options.reverseFreqLimit) {jq.cookie("sliderReverseFreqCap" + options.id, JSON.stringify({timeStamp: cookie.timeStamp, viewCount: cookie.viewCount + 1}));
+				return false;
+			}
+		} else {
+			_debug("No Reverse Frequency Cap in place...");
+			return true;
+		}
+	}
+	
+	function _checkCaps() {
+		var freqCap = _checkFreqCap();
+		var reverseFreqCap = _checkReverseFreqCap();
+		if(freqCap && reverseFreqCap) {
+			return true;
+		} else {
+			return false;
+		}
+	}
+	
+	function _init() {
+		var displayAd = true;
+		if(options.live) {
+			displayAd = _checkCaps();
+		}
+		if(!window.slider) {
+			window.slider = {};
+		}
+		window.slider[options.id] = {
+			clearCookies: function() {
+				jq.removeCookie("sliderFreqCap" + options.id);
+				jq.removeCookie("sliderReverseFreqCap" + options.id);
+			},
+			options: options
+		};
+		if(displayAd) {
+			jq(document).trigger("slider.load");
+		}
+	}
+	
+	function _triggerAnimation() {
+		jq(document).trigger("slider.animate.direction." + options.animationDirection);
+	}
+	
+	function _getSliderCloseValue() {
+		switch(options.animationDirection) {
+			case "top":
+			case "bottom":
+				if(options.close.permanently || options.close.wTab) {
+					if(options.inIframe) {
+						return (options.elm.height() - 49) * -1;
+					} else {
+						return options.elm.height() * -1;
+					}
+				} else {
+					return (options.elm.height() - options.elm.find(".slider-navigation").height()) * -1;
+				}
+			break;
+			case "right":
+			case "left":
+				if(options.close.permanently || options.close.wTab) {
+					if(options.inIframe) {
+						return (options.elm.width() - 57) * -1;
+					} else {
+						return options.elm.width() * -1;
+					}
+				} else {
+					return (options.elm.width() - options.elm.find(".slider-navigation").width()) * -1;
+				}
+			break;
+		}
+	}
+	
+	function _checkForSlider() {
+		_debug("checking for Slider...");
+		var timerID = null;
+		if(!jq("#slider-" + options.id).size()) {
+			_debug("Slider not available");
+			clearTimeout(timerID);
+			timerID = setTimeout(_checkForSlider, 100);
+		} else {
+			_debug("Slider is available", parseInt(jq("#slider-" + options.id).css("width")));
+			options.elm = jq("#slider-" + options.id);
+			options.sliderOpenValue = 0;
+			_debug("Setting options.sliderClosedValue");
+			options.sliderClosedValue = _getSliderCloseValue();
+			_debug("options.sliderClosedValue", options.sliderClosedValue);
+			/*
+			 * scrolling distance check
+			 */
+			if(options.scrollingDistance) {
+				_debug("scrollingDistance set...");
+				options.currentWindowHeight = jq(window).height();
+				options.currentScrollingDistance = 0;
+				options.targetScrollingDistance = options.currentWindowHeight * options.scrollingDistance;
+				jq(window).on("scroll", function(e) {
+					_debug("window scrolling...", jq(window).scrollTop(), options.targetScrollingDistance);
+					if(jq(window).scrollTop() >= options.targetScrollingDistance) {
+						_debug("Target Scrolling Distance achieved...");
+						jq(window).unbind("scroll");
+						jq(document).trigger("slider.open");
+					}
+				});
+				_debug("targetScrollingDistance", options.targetScrollingDistance);
+			}
+			_debug("binding events");
+			options.elm.find(".slider-toggle a, .slider-tab-toggle a").on("click", function(e) {
+				e.preventDefault();
+				_debug("Slider Toggle Clicked...");
+				_triggerAnimation();
+			});
+			options.elm.find("iframe").load(function() {
+				_debug("slider.iframe.loaded");
+				jq(document).trigger("slider.loaded");
+				if(!options.scrollingDistance) {
+					_triggerAnimation();
+				}
+			});
+		}
+	}
+	
+	function _centerSliderHorizontal() {
+		_debug("_centerSliderHorizontal()");
+    	var elm = options.elm;
+    	var value = (window.innerWidth / 2) - (elm.width() / 2);
+		if(options.inIframe) {
+			elm = options.parentElm;
+			value = (top.window.innerWidth / 2) - (elm.width() / 2);
+		}
+        elm.css({
+			left: value
+		});
+		jq(window).on("resize", function() {
+            _centerSliderHorizontal();
+		});
+	}
+	
+    function _centerSliderVertical() {
+    	_debug("_centerSliderVertical()");
+    	var elm = options.elm;
+    	var value = (window.innerHeight / 2) - (elm.height() / 2);
+		if(options.inIframe) {
+			elm = options.parentElm;
+			value = (top.window.innerHeight / 2) - (elm.height() / 2);
+		}
+        elm.css({
+            top: value
+        });
+        jq(window).on("resize", function() {
+        	_centerSliderVertical();
+		});
+    }
+	
+	function _animateSlider(dir, amount) {
+		_debug("_animateSlider()", dir, amount, "start");
+		if(options.horizontalPosition == "center") {
+			_centerSliderHorizontal();
+		}
+		if(options.verticalPosition == "center") {
+			_centerSliderVertical();
+		}
+		var animationOptions = {};
+		animationOptions[dir] = amount;
+		var elm = options.elm;
+		if(options.inIframe) {
+			elm = options.parentElm;
+			if(options.close.wTab) {
+				var opts = {};
+				switch(options.animationDirection) {
+					case "top":
+						opts["top"] = (options.elm.hasClass("open")) ? -49 : 0;
+						break;
+					case "right":
+						opts["right"] = (options.elm.hasClass("open")) ? -57 : 0;
+						break;
+					case "bottom":
+						opts["bottom"] = (options.elm.hasClass("open")) ? -49 : 0;
+						break;
+					case "left":
+						opts["left"] = (options.elm.hasClass("open")) ? -57 : 0;
+						break;
+				}
+				options.elm.find(".slider-contents").animate(opts, "fast");
+			}
+		}
+		elm
+			.delay(options.animationDelay)
+			.animate(
+				animationOptions, 
+				options.animationDuration, 
+				options.animationEasing, 
+				function() {
+					options.elm.toggleClass("closed").toggleClass("open");
+					_registerEvent({
+						id: options.id,
+						pid: options.pid,
+						trid: options.trid,
+						action: (options.elm.hasClass("closed")) ? "opened" : "closed"
+					});
+					_debug("_animateSlider()", "end");
+				}
+			);
+	}
+	
+	function _animateSliderTab(dir, amount) {
+		if(options.close.wTab) {
+			var animationOptions = {};
+			animationOptions[dir] = amount;
+			options.elm.find(".slider-tab-toggle")
+				.delay(options.animationDelay)
+				.animate(
+					animationOptions, 
+					options.animationDuration,
+					"swing"
+				);
+		}
+	}
+	
+	// bind events
+	jq(document).on("slider.load", function() {
+		_debug("slider.load", "start");
+		if(options.live){
+			options.inIframe = (top.window == self.window) ? false : true;
+		} else {
+			options.inIframe = false;
+		}
+		_debug("In and IFrame?", options.inIframe, (top.window == self.window));
+		if(options.inIframe) {
+			//top.window.jq(top.window.document).trigger("slider.load")
+			console.log(jq(top.document.getElementsByName(window.name)));
+			options.parentElm = jq(top.document.getElementsByName(window.name));
+		}
+		// TODO: Fix Generator so it clears cache and we wont have to append a new cache buster when live
+		var cssUrl = options.urls.css + "?" + (Math.floor(Math.random() * 1000) + 1);
+		var template = jq(options.adTemplate);
+		// are we using a placement id or a tag router id?
+		var src = "//" + options.urls.ad + "/tt?id=" + options.pid + "&size=" + options.width + "x" + options.height;
+		if(options.trid != 0) {
+			src = "//tr.adsplats.com/cmp/" + options.trid + "/index.html?size=" + options.width + "x" + options.height;
+		}
+		// TODO: better way to template that wont require mustache?
+		template.attr("id", "slider-" + options.id)
+			.find(".slider-iframe iframe").attr("src", src).end()
+			.find(".slider-navigation-logo img").attr("src", options.urls.logo)
+		;
+		jq("body")
+			.append(template)
+			.append("<link rel='stylesheet' type='text/css' href='" + cssUrl + "' />")
+		_checkForSlider();
+		_registerEvent({
+			id: options.id,
+			pid: options.pid,
+			trid: options.trid,
+			action: "load"
+		});
+		_debug("slider.load", "end");
+	});
+	
+	jq(document).on("slider.loaded", function() {
+		_debug("slider.loaded", "start");
+		options.elm.addClass("closed").css("visibility", "visible");
+		if(options.inIframe) {
+			options.elm.addClass("iframed");
+			options.sliderClosedValue = _getSliderCloseValue();
+			var css = {
+				width: options.elm.width(), 
+				height: options.elm.height(),
+				position: "fixed",
+				"z-index": 1234567890
+			};
+			css[options.verticalPosition] = "0px";
+			css[options.horizontalPosition] = "0px";
+			switch(options.animationDirection) {
+				case "top":
+					css["top"] = _getSliderCloseValue();
+					break;
+				case "right":
+					css["right"] = _getSliderCloseValue();
+					break;
+				case "bottom":
+					css["bottom"] = _getSliderCloseValue();
+					break;
+				case "left":
+					css["left"] = _getSliderCloseValue();
+					break;
+			}
+			_debug("css", css.width, css.height);
+			options.parentElm.css(css);
+		}
+		_registerEvent({
+			id: options.id,
+			pid: options.pid,
+			trid: options.trid,
+			action: "loaded"
+		});
+		_debug("slider.loaded", "end");
+	});
+	
+	/*
+	 * slider.animate.direction.top
+	 */
+	jq(document).on("slider.animate.direction.top", function() {
+		_debug("slider.animate.direction.top", "start");
+		_animateSlider("top", (options.elm.hasClass("closed")) ? options.sliderOpenValue : _getSliderCloseValue());
+		_animateSliderTab("bottom", (options.elm.hasClass("closed")) ? 50 : options.elm.height() * -1); // TODO: Make these params
+		_debug("slider.animate.direction.top", "end");
+	});
+	
+	/*
+	 * slider.animate.direction.right
+	 */
+	jq(document).on("slider.animate.direction.right", function() {
+		_debug("slider.animate.direction.right", "start");
+		_animateSlider("right", (options.elm.hasClass("closed")) ? options.sliderOpenValue : _getSliderCloseValue());
+		_animateSliderTab("left", (options.elm.hasClass("closed")) ? options.elm.width() : -50); // TODO: Make these params
+		_debug("slider.animate.direction.right", "end");
+	});
+	
+	/*
+	 * slider.animate.direction.bottom
+	 */
+	jq(document).on("slider.animate.direction.bottom", function() {
+		_debug("slider.animate.direction.bottom", "start");
+		_animateSlider("bottom", (options.elm.hasClass("closed")) ? options.sliderOpenValue : _getSliderCloseValue());
+		_animateSliderTab("top", (options.elm.hasClass("closed")) ? options.elm.height() : -49); // TODO: Make these params
+		_debug("slider.animate.direction.bottom", "end");
+	});
+	
+	/*
+	 * slider.animate.direction.left 
+	 */
+	jq(document).on("slider.animate.direction.left", function() {
+		_debug("slider.animate.direction.left", "start");
+		_animateSlider("left", (options.elm.hasClass("closed")) ? options.sliderOpenValue : _getSliderCloseValue());
+		_animateSliderTab("right", (options.elm.hasClass("closed")) ? -57 : (options.inIframe) ? (options.elm.width() - 57) * -1 : options.elm.width() * -1); // TODO: Make these params
+		_debug("slider.animate.direction.left", "end");
+	});
+	jq(document).on("slider.open", function() {
+		jq(document).trigger("slider.animate.direction." + options.animationDirection);
+	});
+	jq(document).on("slider.close", function() {
+		jq(document).trigger("slider.animate.direction." + options.animationDirection);
+	});
+	
+	// start the party
+	_init();
+	
+}();

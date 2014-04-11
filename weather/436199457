@@ -1,0 +1,18 @@
+PHTTP74.125.193.95" 
+ÝGET /maps/gen_204?ev=api_viewport&cad=host:www.weather.com,v:16,vr:1,r:1,mt:m,c:40.418552%2C-98.737,sp:1.54726x1.97754,size:180x185,relsize:0.08,token:3szhv0ogsm,client:gme-theweatherchannel,src:apiv3,ts:rrmv6t HTTP/1.1
+Host: maps.googleapis.com
+Connection: keep-alive
+Accept: image/webp,*/*;q=0.8
+vUser-Agent: Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/31.0.1650.63 Safari/537.36
+"Referer: http://www.weather.com/
+$Accept-Encoding: gzip,deflate,sdch
+!Accept-Language: en-US,en;q=0.8
+
+*¶
+HTTP/1.1 204 No Content
+Content-Type: image/gif
+!X-Content-Type-Options: nosniff
+%Date: Tue, 08 Apr 2014 22:34:41 GMT
+Server: GFE/2.0
+Alternate-Protocol: 80:quic
+

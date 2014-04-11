@@ -1,0 +1,85 @@
+PHTTP157.166.224.57"ò
+ƒGET /html.ng/site=ncaa&ncaa_pos=300x100_spon2&ncaa_rollup=ncaa&params.styles=fs&page.allowcompete=no&Params.User.UserID=534472c202be6f0a3c875a371403f938&transactionID=13969947558263022881538048&tile=7354574996931&domId=2167c421d4ae0bb3&kxid=&kxseg= HTTP/1.1
+Host: ads.ncaa.com
+Connection: keep-alive
+TAccept: text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8
+vUser-Agent: Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/31.0.1650.63 Safari/537.36
+Referer: http://www.ncaa.com/
+$Accept-Encoding: gzip,deflate,sdch
+!Accept-Language: en-US,en;q=0.8
+
+*õ
+HTTP/1.1 200 OK
+%Date: Tue, 08 Apr 2014 22:05:54 GMT
+Server: Apache
+"AdServer: ad8host1server1:9678:1
+%P3P: CP="NOI DEVa TAIa OUR BUS UNI"
+-Cache-Control: max-age=0, no-cache, private
+(Expires: Tue, 08 Apr 2014 22:05:54 GMT
+Pragma: no-cache
+Content-Length: 3582
+Keep-Alive: timeout=5, max=13
+Connection: Keep-Alive
+Content-Type: text/html
+€
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+<head>
+
+<script>
+        function cnnad_getTld (hostname)
+        {
+               var data = hostname.split(".");
+               if (data.length >= 2)
+               {
+                       return (data[data.length-2] + "." + data[data.length-1]);
+               }
+               return(null);
+        }
+ 
+        var cnnDocDomain = cnnad_getTld(location.hostname);
+        if(cnnDocDomain) {document.domain = cnnDocDomain;}
+
+	function cnnGetId(query) {
+		var keyValPairs = query.split('&');
+		if(!keyValPairs) {
+			keyValPairs = new Array();
+			keyValPairs[keyValPairs.length]=query;
+		}
+		for(var counter=0; counter < keyValPairs.length;counter++) {
+			var keyVal = keyValPairs[counter].split('=');
+			if(keyVal[0]=='domId') {
+				//alert("returning id: " + keyVal[1]);
+				return keyVal[1];
+			}
+		}
+	}
+			
+	function cnnSendData2() {
+		var docId = cnnGetId(decodeURIComponent(location.pathname.substring(9)));
+		var height = 100;
+		var width = 300;
+		var targetWindow = top;
+		try
+		{
+			if(parent.cnnad_showAd)
+			{
+				targetWindow = parent;
+			}
+		} catch(err) {} 
+		targetWindow.cnnad_showAd(docId);
+		if ((height > 0)&&(width > 0))
+		{
+			targetWindow.cnnad_setAdSize(docId,height,width);
+		}
+	}
+</script> 
+</head>
+
+<body STYLE="background-color:transparent" onload="cnnSendData2()">
+<!--FlightID: 582373-->
+<a target="_blank" href="http://ads.cnn.com/event.ng/Type=click&FlightID=582373&AdID=786571&TargetID=188684&Segments=DECBHHicHY9BFgAxBEMvZFGEcP-LTUwXv3mhohlTBk-YL3wtOldcbloGsZY5FZZsD8OLSkP3QuSGFZawamLEeXLoUVbjS6sdf9bhoHUVyrrTXYRSutvljI71OqVXkcaXsUatI_alU5e0Tht3ETYPTlG9NvleiVUjNlVN5mn2E6fPWeWKmz9hg6dEcU47TkeoBxlzTL0CQhPQc7r3esirzk2D6uLG-Yvzt3ikqvW07ZT-_gFJ80gK&Targets=182723,188684,195120,195166,187190,193531&Values=DECBHHicJY7JEQBBCAIT4iHe5p_YMrUPac_CdsxgHTQDy3Ac3Kj2LXBIcN2RmYMyDXOdgWLmodpqpauDGrNCrSgdU-duG03bk3oHOspXuv7ynZaN7cjIyQgoolJ_xMmOtdp5OL7mWflDpTbbLPjDH-b0f7P8HtbuA3QlKzQ.&RawValues=NGUSERID%252C534472c202be6f0a3c875a371403f938%252CKXID%252C%252CTID%252C13969947558263022881538048%252CTIL%252C7354574996931&Redirect=http://www.ncaa.com/championships/softball/d1/tickets-hospitality"><img src="http://i.cdn.turner.com/ttn/ttn_adspaces/NCAA/2013/12/10/07361054NCAA_WCWSTix_OnSaleNow_300x100_12092013.jpg" width="300" height="100" border="0"></a>
+<div style="position:absolute;visibility:hidden;"><img src="http://ads.ncaa.com:80/event.ng/Type=count&ClientType=2&ASeg=&AMod=&AOpt=0&AdID=786571&FlightID=582373&TargetID=188684&SiteID=63823&EntityDefResetFlag=0&Segments=DECBHHicHY9BFgAxBEMvZFGEcP-LTUwXv3mhohlTBk-YL3wtOldcbloGsZY5FZZsD8OLSkP3QuSGFZawamLEeXLoUVbjS6sdf9bhoHUVyrrTXYRSutvljI71OqVXkcaXsUatI_alU5e0Tht3ETYPTlG9NvleiVUjNlVN5mn2E6fPWeWKmz9hg6dEcU47TkeoBxlzTL0CQhPQc7r3esirzk2D6uLG-Yvzt3ikqvW07ZT-_gFJ80gK&Targets=182723,188684,195120,195166,187190,193531&Values=DECBHHicJY7JEQBBCAIT4iHe5p_YMrUPac_CdsxgHTQDy3Ac3Kj2LXBIcN2RmYMyDXOdgWLmodpqpauDGrNCrSgdU-duG03bk3oHOspXuv7ynZaN7cjIyQgoolJ_xMmOtdp5OL7mWflDpTbbLPjDH-b0f7P8HtbuA3QlKzQ.&RawValues=NGUSERID%252C534472c202be6f0a3c875a371403f938%252CKXID%252C%252CTID%252C13969947558263022881538048%252CTIL%252C7354574996931&random=dnxfKKR,bjuiNwcbWWdd&Params.tag.transactionid=13969947558263022881538048&Params.User.UserID=534472c202be6f0a3c875a371403f938" width="1" height="1" border="0" /></div>
+<script src='http://js.moatads.com/turnerd8523/moatad.js#moatClientLevel1=582373&moatClientLevel2=786571&moatClientLevel3=&moatClientLevel4=-&moatClientSlicer1=-&moatClientSlicer2=-' type='text/javascript'></script>
+</body>
+</html>

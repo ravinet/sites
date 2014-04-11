@@ -1,0 +1,23 @@
+PHTTP204.2.197.202"“
+0GET /orbserv/hbpix?pixId=18988&pcv=88 HTTP/1.1
+ Host: action.media6degrees.com
+Connection: keep-alive
+Accept: image/webp,*/*;q=0.8
+vUser-Agent: Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/31.0.1650.63 Safari/537.36
+>Referer: http://www.constantcontact.com/next?s_tnt=55839:4:0
+$Accept-Encoding: gzip,deflate,sdch
+!Accept-Language: en-US,en;q=0.8
+
+*’
+ HTTP/1.1 302 Moved Temporarily
+Server: Apache-Coyote/1.1
++P3P: CP="COM NAV INT STA NID OUR IND NOI"
+Pragma: no-cache
+Cache-Control: no-cache
+cSet-Cookie: cckz=1n3qemc; Domain=media6degrees.com; Expires=Tue, 08-Apr-2014 21:45:00 GMT; Path=/
+cSet-Cookie: cckz=1n3qemc; Domain=media6degrees.com; Expires=Sun, 05-Oct-2014 21:35:00 GMT; Path=/
+VLocation: http://action.media6degrees.com/orbserv/hbpix?pcv=88&pixId=18988&cckz=true
+Content-Length: 0
+%Date: Tue, 08 Apr 2014 21:35:00 GMT
+Connection: close
+

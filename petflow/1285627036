@@ -1,0 +1,34 @@
+PHTTP54.204.241.146"Ë
+,GET /js/vendors/criteo_ld_asdf.js HTTP/1.1
+Host: www.petflow.com
+Connection: keep-alive
+Accept: */*
+vUser-Agent: Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/31.0.1650.63 Safari/537.36
+"Referer: http://www.petflow.com/
+$Accept-Encoding: gzip,deflate,sdch
+!Accept-Language: en-US,en;q=0.8
+ïCookie: optimizelySegments=%7B%7D; optimizelyEndUserId=oeu1396994893740r0.7730855331756175; optimizelyBuckets=%7B%7D; optimizelyPendingLogEvents=%5B%5D; _ga=GA1.2.191234633.1396994894; _dc=1; __utma=29556542.191234633.1396994894.1396994894.1396994894.1; __utmb=29556542.1.10.1396994894; __utmc=29556542; __utmz=29556542.1396994894.1.1.utmcsr=(direct)|utmccn=(direct)|utmcmd=(none); mp_petflow_mixpanel=%7B%22distinct_id%22%3A%20%221454362692b12c0-0b27b7a0c-14281008-75300-1454362692c1424%22%7D
+
+*¸"
+HTTP/1.1 200 OK
+Server: nginx/1.1.19
+%Date: Tue, 08 Apr 2014 22:08:13 GMT
+&Content-Type: application/javascript
+Transfer-Encoding: chunked
+Connection: keep-alive
+.Last-Modified: Thu, 03 Apr 2014 21:13:59 GMT
+ ETag: "f50-4f629e13b2fee-gzip"
+Vary: Accept-Encoding
+&Strict-Transport-Security: max-age=0
+"X-Varnish: 1335436189 1335436022
+Age: 5
+Via: 1.1 varnish
+/X-Varnish-Asdf: /js/vendors/criteo_ld_asdf.js
+X-Varnish-Cache: HIT
+å
+e32
+try{var CRITEO=function(){var e="0.5.4";var t,n;var r=false;var o=false;var a={home:{eventType:"sendEvent",params:"v=2&pt1=0&pt2=1"},product:{eventType:"sendEvent",params:"v=2&pt1=2"},list:{eventType:"sendEvent",params:"v=2&pt1=3"},basket:{eventType:"transaction",params:"v=2&s=0"},confirmation:{eventType:"transaction",params:"v=2&s=1"},search:{eventType:"sendEvent",params:"v=2&pt1=4"}};function i(){return t[0]}function c(){return t[1]}function d(){var e="";if(typeof t[2]!="undefined"&&t[2]!=""){e=t[2];if(e.charAt(e.length-1)!="."){e+="."}}return e}function f(){var e=t[3].charAt(0);return typeof e!="undefined"&&e==1}function s(){var e=t[3].charAt(1);return typeof e!="undefined"&&e==1}function p(){var e=t[3].charAt(2);return!o&&typeof e!="undefined"&&e==1}function u(){return t[4]}function v(){return t[5]}function l(){return(document.location.protocol=="https:"&&"https:"||"http:")+"//dis."+d()+"criteo.com/dis/dis.aspx"}function h(e){return(document.location.protocol=="https:"?"https://sslwidget.":"http://widget.")+"criteo.com/"+c()+"/display.js?resptype="+e+"&"+y()}function m(e,t){switch(e){case"sendEvent":return t[0];case"transaction":return t[1];default:break}}function y(){var e="";var t=n&&n.length||0;var r=u();var o=1;for(var a=0;a<t;a++){for(var i=0;i<r.length;i++){if(o>1){e+="&"}e+=g(n[a],o,r[i]);o++}}return e}function g(e,t,n){var r=a[e.pageType];if(!r){return}var o=v();var i="";var c="";for(var d in o){if(!e.hasOwnProperty(d)){continue}var f=o[d][0];var s=o[d][1];var p=o[d][2];var u="";if(typeof e[d]=="function"){u=e[d]()}else{u=e[d]}if(!u){continue}switch(s){case 0:c+="&"+f+"="+u;break;case 1:var l;if(typeof u==="string"){l=u.split(e.delimiter)}else{if(Object.prototype.toString.apply(u)==="[object Array]"){l=u}}var h=l.length;if(typeof p!="undefined"&&h>p){h=p}for(var y=1;y<=h;y++){c+="&"+f+y+"="+l[y-1]}break;case 2:if(t==1){i+="&"+f+"="+encodeURIComponent(u)}break;default:break}}return"t"+t+"="+r.eventType+"&p"+t+"="+encodeURIComponent(r.params+"&wi="+m(r.eventType,n)+c)+i}function w(){var e=l()+"?p="+i()+"&cb="+Math.floor(Math.random()*99999999999);try{e+="&ref="+encodeURIComponent(document.referrer)}catch(t){}try{e+="&sc_r="+encodeURIComponent(screen.width+"x"+screen.height)}catch(t){}try{e+="&sc_d="+encodeURIComponent(screen.colorDepth)}catch(t){}return e.substring(0,2e3)}function E(){var e=l()+"?p="+i();e+="&"+y();e+="&cb="+Math.floor(Math.random()*99999999999);try{e+="&ref="+encodeURIComponent(document.referrer)}catch(t){}try{e+="&sc_r="+encodeURIComponent(screen.width+"x"+screen.height)}catch(t){}try{e+="&sc_d="+encodeURIComponent(screen.colorDepth)}catch(t){}return e.substring(0,2e3)}function C(e){if(window.addEventListener){window.addEventListener("load",e,false)}else{if(window.attachEvent){window.attachEvent("onload",e)}else{var t=window.onload;window.onload=function(){if(t&&typeof t.fired=="undefined"){t.fired=true;t()}e()}}}}function T(){var e=[];if(f()){if(document.createElement){var t=document.createElement("iframe");if(t){t.width="1px";t.height="1px";t.style.display="none";t.src=E()}e.push(t)}}else{var n=document.createElement("img");if(n){n.width="1px";n.height="1px";n.style.display="none";n.src=h("gif")}var r=document.createElement("iframe");if(r){r.width="1px";r.height="1px";r.style.display="none";r.src=w();n.onload=function(){b(r)}}e.push(n)}return e}function I(){var e=T();for(var t=0;t<e.length;t++){b(e[t])}}function b(e){var t;if(!p()){t=document.getElementsByTagName("body");if(!t||t.length==0){return}t=t[0]}else{t=document.getElementById("cto_mg_div")}if(t!=null&&t.appendChild){t.appendChild(e)}}function R(){if(p()){document.write("<div id=
+11e
+'cto_mg_div' style='display:none;'></div>")}}function _(){if(s()){C(function(){I()})}else{I()}}return{Load:function(e){if(typeof CRITEO_CONF=="undefined"||r&&document.readyState!="complete"){return}r=true;o=e;t=CRITEO_CONF[1];n=CRITEO_CONF[0];R();_()}}}()}catch(err){}CRITEO.Load(true);
+0
+

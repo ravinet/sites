@@ -1,0 +1,53 @@
+PHTTP199.27.76.153"â
+1GET /js/lib/tracking/bcom-chartbeat.js HTTP/1.1
+Host: www.boston.com
+Connection: keep-alive
+Accept: */*
+vUser-Agent: Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/31.0.1650.63 Safari/537.36
+!Referer: http://www.boston.com/
+$Accept-Encoding: gzip,deflate,sdch
+!Accept-Language: en-US,en;q=0.8
+ƒCookie: pathUrl=http://www.boston.com/; __vrf=13972436197407vNvpXp3kPCmAt8PAPWZOGFxqS5B0jNC; __vrrefresh=http%3A%2F%2Fwww.boston.com%2F; __gads=ID=882902a5d6e86d38:T=1397243620:S=ALNI_MZLaIhsmhWW2Jd_OAh6wezf05LMZg; overlay_test041014easternbank_home_11=true
+
+*¨
+
+HTTP/1.1 200 OK
+Eomportal-Instance: 16
+.Last-Modified: Fri, 11 Apr 2014 13:35:49 GMT
+/Cache-Control: max-age=86400, must-revalidate
+Content-Type: text/javascript
+Server: Boston.com Frontend
+Served-By: rikavandenhaas
+Content-Length: 824
+Accept-Ranges: bytes
+%Date: Fri, 11 Apr 2014 19:13:40 GMT
+Via: 1.1 varnish
+
+Age: 241
+Connection: keep-alive
+ X-Served-By: cache-jfk1035-JFK
+X-Cache: HIT
+X-Cache-Hits: 30
+(X-Timer: S1397243620.600681067,VS0,VE0
+º
+var _sf_startpt=(new Date()).getTime();
+var _sf_async_config={uid:8544,domain:"boston.com"};
+    _sf_async_config.path = location.pathname;
+
+    _sf_async_config.sections = s.channel.toLowerCase()+','+s.prop1.toLowerCase();
+_sf_async_config.authors = s.prop3;
+
+
+(function(){
+	function loadChartbeat() {
+	window._sf_endpt=(new Date()).getTime();
+	var e = document.createElement('script');
+	e.setAttribute('language', 'javascript');
+	e.setAttribute('type', 'text/javascript');
+	e.setAttribute('src',
+	   (("https:" == document.location.protocol) ? "https://s3.amazonaws.com/" : "http://") + "static.chartbeat.com/js/chartbeat.js");
+	    document.body.appendChild(e);
+	}
+	var oldonload = window.onload;
+	window.onload = (typeof window.onload != 'function') ?
+	loadChartbeat : function() { oldonload(); loadChartbeat(); }; })();

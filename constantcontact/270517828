@@ -1,0 +1,20 @@
+PHTTP74.209.219.102"Å
+ÔGET /commonid/match?rurl=http%3A%2F%2Fadfarm.mediaplex.com%2Fad%2Fbk%2F14302-92142-3840-0%3Fmpu_token%3DAQEHih3PaOsKGQIBAQErAQEBAQE%26Homepage%3D1%26mpuid%3D1396992899000&user_token=AQEHih3PaOsKGQIBAQErAQEBAQE&tok=gB5NcpUxlyE%3D HTTP/1.1
+Host: iad-login.dotomi.com
+Connection: keep-alive
+Accept: image/webp,*/*;q=0.8
+vUser-Agent: Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/31.0.1650.63 Safari/537.36
+pReferer: http://img-cdn.mediaplex.com/0/14302/universal.html?page_name=homepage&HomePage=1&mpuid=1396992899000
+$Accept-Encoding: gzip,deflate,sdch
+!Accept-Language: en-US,en;q=0.8
+
+* 
+HTTP/1.1 302 Found
+Server: nginx/1.4.3
+%Date: Tue, 08 Apr 2014 21:34:59 GMT
+Content-Length: 0
+Connection: keep-alive
+uSet-Cookie: DotomiUser=471502258856135448$3$42$$1; Expires=Thu, 7-Apr-2016 21:34:59 GMT; Path=/; Domain=.dotomi.com
+9P3P: policyref="/w3c/p3p.xml", CP="NOI DSP NID OUR STP"
+éLocation: http://adfarm.mediaplex.com/ad/bk/14302-92142-3840-0?mpu_token=AQEHih3PaOsKGQIBAQErAQEBAQE&Homepage=1&mpuid=1396992899000&status=0
+

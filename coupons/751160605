@@ -1,0 +1,31 @@
+PHTTP173.194.46.121"Ï
+=GET /pixel?google_nid=bluekai&google_cm&google_sc& HTTP/1.1
+Host: cm.g.doubleclick.net
+Connection: keep-alive
+Accept: image/webp,*/*;q=0.8
+vUser-Agent: Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/31.0.1650.63 Safari/537.36
+çReferer: http://tags.bluekai.com/site/3428?dt=0&r=988456238&sig=584189734&bkca=KJyguithpuMJpPcn0zpBnnWNBa9g01M1vfW+piX+uA8PBUjh2Qx98d61R9==
+$Accept-Encoding: gzip,deflate,sdch
+!Accept-Language: en-US,en;q=0.8
+
+*˜
+HTTP/1.1 302 Found
+•P3P: policyref="http://googleads.g.doubleclick.net/pagead/gcn_p3p_.xml", CP="CURa ADMa DEVa TAIo PSAo PSDo OUR IND UNI PUR INT DEM STA PRE COM NAV OTC NOI DSP COR"
+aLocation: http://cm.g.doubleclick.net/pixel?google_nid=bluekai&google_cm=&google_sc=&google_tc=
+%Date: Tue, 08 Apr 2014 21:35:16 GMT
+Pragma: no-cache
+(Expires: Fri, 01 Jan 1990 00:00:00 GMT
+*Cache-Control: no-cache, must-revalidate
+(Content-Type: text/html; charset=UTF-8
+Server: HTTP server (unknown)
+Content-Length: 294
+!X-XSS-Protection: 1; mode=block
+Alternate-Protocol: 80:quic
+tSet-Cookie: test_cookie=CheckForPermission; expires=Tue, 08-Apr-2014 21:50:16 GMT; path=/; domain=.doubleclick.net
+®
+<HTML><HEAD><meta http-equiv="content-type" content="text/html;charset=utf-8">
+<TITLE>302 Moved</TITLE></HEAD><BODY>
+<H1>302 Moved</H1>
+The document has moved
+<A HREF="http://cm.g.doubleclick.net/pixel?google_nid=bluekai&amp;google_cm=&amp;google_sc=&amp;google_tc=">here</A>.
+</BODY></HTML>

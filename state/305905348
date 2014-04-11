@@ -1,0 +1,28 @@
+PHTTP63.241.232.122"Ò
+BGET /_layouts/blank.js?rev=QGOYAJlouiWgFRlhHVlMKA%3D%3D HTTP/1.1
+Host: www.texas.gov
+Connection: keep-alive
+Accept: */*
+vUser-Agent: Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/31.0.1650.63 Safari/537.36
+5Referer: http://www.texas.gov/en/Pages/default.aspx
+$Accept-Encoding: gzip,deflate,sdch
+!Accept-Language: en-US,en;q=0.8
+PCookie: BIGipServerTX-prd-moss.pool=rd1480o00000000000000000000ffffac1f1c7bo80
+
+*²
+HTTP/1.1 200 OK
+!Cache-Control: max-age=31536000
+(Content-Type: application/x-javascript
+.Last-Modified: Sat, 27 Mar 2010 03:45:54 GMT
+Accept-Ranges: bytes
+ETag: "055b060cdca1:0"
+Server: Microsoft-IIS/7.5
+X-Powered-By: ASP.NET
+.MicrosoftSharePointTeamServices: 14.0.0.6131
+$X-MS-InvokeApp: 1; RequireReadOnly
+Connection: Keep-Alive
+%Date: Tue, 08 Apr 2014 22:26:13 GMT
+Age: 1454   
+Content-Length: 120
+z
+function ULSaew(){var o=new Object;o.ULSTeamName="Microsoft SharePoint Foundation";o.ULSFileName="blank.js";return o;}

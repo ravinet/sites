@@ -1,0 +1,30 @@
+PHTTP162.248.19.136"«
+èGET /AdServer/Pug?vcode=bz0yJnR5cGU9MSZqcz0xJmNvZGU9Mjc0NCZ0bD0xNTc2ODAw&piggybackCookie=R6_578C668C_5F3F07A8&r=http://ad.yieldmanager.com/cms/v1?esig=1~65c748d283ef3bc4e68485fe6275d8bb43ca6d1e%26nwid=10000648255%26sigv=1 HTTP/1.1
+Host: image2.pubmatic.com
+Connection: keep-alive
+Accept: image/webp,*/*;q=0.8
+vUser-Agent: Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/31.0.1650.63 Safari/537.36
+"Referer: http://www.audible.com/
+$Accept-Encoding: gzip,deflate,sdch
+!Accept-Language: en-US,en;q=0.8
+
+*ƒ
+HTTP/1.1 302 Found
+%Date: Tue, 08 Apr 2014 21:27:20 GMT
+SServer: Apache/2.2.24 (Unix) mod_ssl/2.2.24 OpenSSL/1.0.1e-fips mod_fastcgi/2.4.6
+xSet-Cookie: KRTBCOOKIE_52=614-R6_578C668C_5F3F07A8; domain=pubmatic.com; expires=Fri, 07-Apr-2017 21:27:20 GMT; path=/
+mSet-Cookie: PUBRETARGET=2744_1491600440; domain=pubmatic.com; expires=Fri, 07-Apr-2017 21:27:20 GMT; path=/
+uLocation: http://ad.yieldmanager.com/cms/v1?esig=1~65c748d283ef3bc4e68485fe6275d8bb43ca6d1e&nwid=10000648255&sigv=1
+Content-Length: 433
+Connection: close
+-Content-Type: text/html; charset=iso-8859-1
+³
+<!DOCTYPE HTML PUBLIC "-//IETF//DTD HTML 2.0//EN">
+<html><head>
+<title>302 Found</title>
+</head><body>
+<h1>Found</h1>
+<p>The document has moved <a href="http://ad.yieldmanager.com/cms/v1?esig=1~65c748d283ef3bc4e68485fe6275d8bb43ca6d1e&amp;nwid=10000648255&amp;sigv=1">here</a>.</p>
+<hr>
+<address>Apache/2.2.24 (Unix) mod_ssl/2.2.24 OpenSSL/1.0.1e-fips mod_fastcgi/2.4.6 Server at image2.pubmatic.com Port 80</address>
+</body></html>

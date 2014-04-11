@@ -1,0 +1,42 @@
+PHTTP195.8.215.138"û
+¿GET /masscast/2/dailymotion.us/home/1260961683@Middle,Top,Top3,x70,x28?WIN7=1&z=0&DMSYNDICATION=0&DMLANGNAV=en_US&DMAPIPLAYER=0&DMROUTE=home&DMLOGGED=0&DMNOADFIT=0&DMEXPLICIT=0&DMLANG=en&DMTYPE=prod&DMV3=1&DMHANDSET=desktop&DMCAPPINGLITE=1&from_request=%2Fus&_csrf=90yh4XsQSJ9jS5thI0Ext6J-5XyP_NaVBxpgnHsL0LU HTTP/1.1
+Host: www.dailymotion.com
+Connection: keep-alive
+Accept: */*
+"X-Requested-With: XMLHttpRequest
+vUser-Agent: Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/31.0.1650.63 Safari/537.36
+(Referer: http://www.dailymotion.com/us
+$Accept-Encoding: gzip,deflate,sdch
+!Accept-Language: en-US,en;q=0.8
+ÝCookie: ts=425736; dmvk=53446c57e432c; _csrf/link=90yh4XsQSJ9jS5thI0Ext6J-5XyP_NaVBxpgnHsL0LU; mc=null; hideCookiesPolicy=1; sc_ratio=25; krux_segments=; tzo=14400; _ga=GA1.2.1953146581.1396993114; v1st=EBCAC7E7DE0DC49E
+
+*½
+HTTP/1.1 200 OK
+Server: DMS/1.0.42
+0X-DM-BackNode: ad-de-04.adm.dailymotion.com:80
+(Content-Type: text/html; charset=UTF-8
+wP3p: policyref="http://www.dailymotion.com/w3c/p3p.xml", CP="IDC DSP CURa ADMa DEVa TAIa OUR BUS IND UNI COM NAV INT"
+%Date: Tue, 08 Apr 2014 21:38:36 GMT
+!Keep-Alive: timeout=4, max=9936
+X-DM-LB: 195.8.215.138
+ Access-Control-Allow-Origin: *
+#X-Response-Time: 0.005298 seconds
+Connection: Keep-Alive
+hSet-Cookie: OAX=gB5MN1NEbFwAANIF; path=/; expires=Fri, 08-Apr-16 21:38:36 GMT; domain=.dailymotion.com
+Content-Length: 1267
+õ	
+<!--OAS AD="Middle"-->// Default ad<!--OAS AD="Top"-->// Default ad<!--OAS AD="Top3"-->masscast.render(
+    'Top3',
+    {
+        'skinName'                   : '5858_marchmadness_ros',
+        'bodyClickUrl'               : 'http://www.dailymotion.com/hub/march-madness',
+        'bodyClickUrlThroughTag'     : 'http://mc.dailymotion.com/RealMedia/ads/click_lx.ads/dailymotion.us/home/L19/1838265164/Top3/OasDefault/US_House_Content_2014_PageSkins/top3_MarchMadness.html/6742354d4e314e4562467741414e4946',
+        'topBannerLink'              : '',
+        'topBannerLinkThroughTag'    : 'http://mc.dailymotion.com/RealMedia/ads/click_lx.ads/dailymotion.us/home/L19/1838265164/Top3/OasDefault/US_House_Content_2014_PageSkins/top3_MarchMadness.html/6742354d4e314e4562467741414e4946',
+        'bottomBannerLink'           : '',
+        'bottomBannerLinkThroughTag' : '',
+        'countingPixel'              : ['', 'http://mc.dailymotion.com/5/dailymotion.us/home/L19/1838265164/Top3/OasDefault/US_House_Content_2014_PageSkins/top3_MarchMadness.html/6742354d4e314e4562467741414e4946?_RM_EMPTY_'],
+        'countingPixelAlt'           : '',
+        'trackingTag'                : ''
+    }
+);<!--OAS AD="x70"-->// Default ad<!--OAS AD="x28"-->// Default ad

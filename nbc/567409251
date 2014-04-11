@@ -1,0 +1,25 @@
+PHTTP66.77.124.68"¹
+SGET /snas/api/getRemoteDomainCookies?callback=__nbcsnasadops.doSCallback HTTP/1.1
+Host: snas.nbcuni.com
+Connection: keep-alive
+Accept: */*
+vUser-Agent: Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/31.0.1650.63 Safari/537.36
+Referer: http://www.nbc.com/
+$Accept-Encoding: gzip,deflate,sdch
+!Accept-Language: en-US,en;q=0.8
+;Cookie: s_vi=[CS]v1|29A40068851D2E80-4000014AA00358B9[CE]
+
+*á
+HTTP/1.1 200 OK
+%Date: Fri, 11 Apr 2014 14:48:50 GMT
+PServer: Apache/2.2.21 (Unix) mod_ssl/2.2.21 OpenSSL/0.9.8b DAV/2 mod_jk/1.2.32
+cX-Powered-By: Servlet 2.4; JBoss-4.0.5.GA (build: CVSTag=Branch_4_0 date=200610162339)/Tomcat-5.5
+ASet-Cookie: JSESSIONID=DC85EDF50B20E839BC64C9FD9D6A33B2; Path=/
+Cache-Control: max-age=10
+(Expires: Fri, 11 Apr 2014 14:49:00 GMT
+Content-Length: 96
+ Keep-Alive: timeout=5, max=100
+Connection: Keep-Alive
+.Content-Type: application/json;charset=UTF-8
+b
+__nbcsnasadops.doSCallback({ "cookie":{"s_vi":"[CS]v1|29A40068851D2E80-4000014AA00358B9[CE]"}});

@@ -1,0 +1,22 @@
+PHTTP64.94.140.201"ã
+GET / HTTP/1.1
+Host: www.allrecipes.com
+Connection: keep-alive
+TAccept: text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8
+vUser-Agent: Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/31.0.1650.63 Safari/537.36
+$Accept-Encoding: gzip,deflate,sdch
+!Accept-Language: en-US,en;q=0.8
+
+*°
+ HTTP/1.1 301 Moved Permanently
+(Content-Type: text/html; charset=UTF-8
+"Location: http://allrecipes.com/
+Server: Microsoft-IIS/7.5
+X-Powered-By: ASP.NET
+MachineName: usseawb02
+X-UA-Compatible: IE=Edge
+%Date: Tue, 08 Apr 2014 21:26:14 GMT
+Content-Length: 145
+“
+<head><title>Document Moved</title></head>
+<body><h1>Object Moved</h1>This document may be found <a HREF="http://allrecipes.com/">here</a></body>

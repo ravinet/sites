@@ -1,0 +1,37 @@
+PHTTP199.27.76.184"„
+;GET /embed/medias/eegq0vl0b2.json?callback=json1 HTTP/1.1
+Host: fast.wistia.com
+Connection: keep-alive
+Accept: */*
+vUser-Agent: Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/31.0.1650.63 Safari/537.36
+>Referer: http://www.constantcontact.com/next?s_tnt=55839:4:0
+$Accept-Encoding: gzip,deflate,sdch
+!Accept-Language: en-US,en;q=0.8
+
+*Ý
+HTTP/1.1 200 OK
+Server: nginx/1.0.9
+/Content-Type: application/json; charset=utf-8
+Status: 200 OK
+ Access-Control-Allow-Origin: *
+!Cache-Control: public, no-cache
+#X-UA-Compatible: IE=Edge,chrome=1
+=P3P: CP="CURi ADMa DEVa IVAa IVDa CONi OUR IND DSP CAO COR"
+0X-Request-Id: 26d3a67511efa6e8fe6f471dcc3ad7ed
+X-Runtime: 0.060679
+X-Rack-Cache: miss
+Via: 1.1 varnish
+Content-Length: 2202
+Accept-Ranges: bytes
+%Date: Tue, 08 Apr 2014 21:34:55 GMT
+Via: 1.1 varnish
+Age: 84728
+Connection: keep-alive
+/X-Served-By: cache-c31-CHI, cache-jfk1033-JFK
+X-Cache: MISS, HIT
+X-Cache-Hits: 0, 2
+(X-Timer: S1396992895.835811138,VS0,VE0
+Vary: X-Forwarded-Proto
+œ
+json1({"media":{"assets":{"flv":{"type":"flv","url":"http://embed.wistia.com/deliveries/7bcdc536f8a67a23c30949b0a4eb650f61f13928.bin","width":640,"height":360,"ext":"flv","size":6266796,"2pass":true},"iphone":{"type":"iphone","url":"http://embed.wistia.com/deliveries/ef5e77db5c8e335835c1fe06b9a0061d24d4df69.bin","width":640,"height":360,"ext":"mp4","size":7846598,"2pass":"true"},"mdflv":{"type":"mdflv","url":"http://embed.wistia.com/deliveries/638ccb46ffa82c155081bff0b2452a3612df3d9a.bin","width":960,"height":540,"ext":"flv","size":10037727,"2pass":true},"mdmp4":{"type":"mdmp4","url":"http://embed.wistia.com/deliveries/97c5688286f0494cd815ece9c282f604547aece2.bin","width":960,"height":540,"ext":"mp4","size":9986925,"2pass":"true"},"hdflv":{"type":"hdflv","url":"http://embed.wistia.com/deliveries/cdfe95c5b0bbf1ee25daa5a8c4ee098286731610.bin","width":1280,"height":720,"ext":"flv","size":19721226,"2pass":true},"hdmp4":{"type":"hdmp4","url":"http://embed.wistia.com/deliveries/0b91493c56a092af0e54daf2c81b70aa5d7fe2b5.bin","width":1280,"height":720,"ext":"mp4","size":19769734,"2pass":"true"},"still":{"type":"still","url":"http://embed.wistia.com/deliveries/69f90ac198651ac47753f6ccd4b566850ef0d92d.bin","width":1920,"height":1080,"ext":"jpg","size":500266,"2pass":null},"original":{"type":"original","url":"http://embed.wistia.com/deliveries/aa12738f4dad0d9a72fda1f1ffc036517e211369.bin","width":1920,"height":1080,"ext":"mov","size":876229210,"2pass":null},"preview":{"type":"preview","url":"http://embed.wistia.com/deliveries/638ccb46ffa82c155081bff0b2452a3612df3d9a.bin","width":960,"height":540,"ext":"flv","size":10037727,"2pass":true}},"distilleryUrl":"http://distillery.wistia.com/x","accountKey":"wistia-production_13047","mediaKey":"wistia-production_5607259","name":"Constant_Contact_60sec_Version_2_1080_Prores","duration":60.0,"hashedId":"eegq0vl0b2","branding":false,"flashPlayerUrl":"http://embed.wistia.com/flash/embed_player_v2.0.swf?2013-10-04","trackingTransmitInterval":20,"showAbout":true,"playerPreference":"auto","embed_options":{"volumeControl":"true","fullscreenButton":"true","controlsVisibleOnLoad":"true","playerColor":"7b796a"}},"options":{"callback":"json1"}}
+)

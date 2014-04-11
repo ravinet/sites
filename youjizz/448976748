@@ -1,0 +1,59 @@
+PHTTP205.128.79.126"Ê
+BGET /assets/banners-6e345361d74bfd900f804a3e4a7235d1.js HTTP/1.1
+ Host: sscdn.banners.advidi.com
+Connection: keep-alive
+Accept: */*
+vUser-Agent: Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/31.0.1650.63 Safari/537.36
+èReferer: http://sscdn.banners.advidi.com/banners/523/18264.html?campaign_id=523&ref=http://syndication.globaltraffico.com/adserve/index.php&autorefresh=false&ident=f56d8fb5c69eb2bcec992e1c93670748&origin=banners.sexypartners.net&aff_id=12&kwd=MeRe_Youjizz_950250_Footer
+$Accept-Encoding: gzip,deflate,sdch
+!Accept-Language: en-US,en;q=0.8
+
+* Q
+HTTP/1.1 200 OK
+%Date: Tue, 08 Apr 2014 22:37:45 GMT
+(Expires: Mon, 14 Apr 2014 14:48:15 GMT
+.Last-Modified: Wed, 06 Nov 2013 14:33:46 GMT
+Cache-Control: max-age=604800
+(Content-Type: application/x-javascript
+Accept-Ranges: bytes
+Server: nginx
+Content-Length: 10148
+¶O
+/*
+ * ******************************************************************************
+ *  jquery.mb.components
+ *  file: jquery.mb.browser.js
+ *
+ *  Copyright (c) 2001-2013. Matteo Bicocchi (Pupunzi);
+ *  Open lab srl, Firenze - Italy
+ *  email: matteo@open-lab.com
+ *  site:   http://pupunzi.com
+ *  blog: http://pupunzi.open-lab.com
+ *  http://open-lab.com
+ *
+ *  Licences: MIT, GPL
+ *  http://www.opensource.org/licenses/mit-license.php
+ *  http://www.gnu.org/licenses/gpl.html
+ *
+ *  last modified: 02/10/13 22.42
+ *  *****************************************************************************
+ */
+(function(){if(!jQuery.browser){jQuery.browser={},jQuery.browser.mozilla=!1,jQuery.browser.webkit=!1,jQuery.browser.opera=!1,jQuery.browser.msie=!1;var t=navigator.userAgent;jQuery.browser.ua=t,jQuery.browser.name=navigator.appName,jQuery.browser.fullVersion=""+parseFloat(navigator.appVersion),jQuery.browser.majorVersion=parseInt(navigator.appVersion,10);var e,i,n;-1!=(i=t.indexOf("Opera"))?(jQuery.browser.opera=!0,jQuery.browser.name="Opera",jQuery.browser.fullVersion=t.substring(i+6),-1!=(i=t.indexOf("Version"))&&(jQuery.browser.fullVersion=t.substring(i+8))):-1!=(i=t.indexOf("MSIE"))?(jQuery.browser.msie=!0,jQuery.browser.name="Microsoft Internet Explorer",jQuery.browser.fullVersion=t.substring(i+5)):-1!=(i=t.indexOf("Chrome"))?(jQuery.browser.webkit=!0,jQuery.browser.name="Chrome",jQuery.browser.fullVersion=t.substring(i+7)):-1!=(i=t.indexOf("Safari"))?(jQuery.browser.webkit=!0,jQuery.browser.name="Safari",jQuery.browser.fullVersion=t.substring(i+7),-1!=(i=t.indexOf("Version"))&&(jQuery.browser.fullVersion=t.substring(i+8))):-1!=(i=t.indexOf("AppleWebkit"))?(jQuery.browser.webkit=!0,jQuery.browser.name="Safari",jQuery.browser.fullVersion=t.substring(i+7),-1!=(i=t.indexOf("Version"))&&(jQuery.browser.fullVersion=t.substring(i+8))):-1!=(i=t.indexOf("Firefox"))?(jQuery.browser.mozilla=!0,jQuery.browser.name="Firefox",jQuery.browser.fullVersion=t.substring(i+8)):(e=t.lastIndexOf(" ")+1)<(i=t.lastIndexOf("/"))&&(jQuery.browser.name=t.substring(e,i),jQuery.browser.fullVersion=t.substring(i+1),jQuery.browser.name.toLowerCase()==jQuery.browser.name.toUpperCase()&&(jQuery.browser.name=navigator.appName)),-1!=(n=jQuery.browser.fullVersion.indexOf(";"))&&(jQuery.browser.fullVersion=jQuery.browser.fullVersion.substring(0,n)),-1!=(n=jQuery.browser.fullVersion.indexOf(" "))&&(jQuery.browser.fullVersion=jQuery.browser.fullVersion.substring(0,n)),jQuery.browser.majorVersion=parseInt(""+jQuery.browser.fullVersion,10),isNaN(jQuery.browser.majorVersion)&&(jQuery.browser.fullVersion=""+parseFloat(navigator.appVersion),jQuery.browser.majorVersion=parseInt(navigator.appVersion,10)),jQuery.browser.version=jQuery.browser.majorVersion}})(jQuery),function(){$(function(){return"true"===campaignAutoRefreshEnabled&&"undefined"!=typeof campaignAutoRefreshTimeout?setTimeout("window.refreshBanner()",campaignAutoRefreshTimeout):void 0}),window.refreshBanner=function(){var t;return t=unescape($.param.querystring(campaign_host+("/campaigns/"+campaignId),$.param.querystring()+"&autoreloaded=true",2)),location.href=t}}.call(this);var _gaq=_gaq||[];_gaq.push(["_setAccount","UA-32559769-1"]),_gaq.push(["_trackPageview"]),function(){var t=document.createElement("script");t.type="text/javascript",t.async=!0,t.src=("https:"==document.location.protocol?"https://ssl":"http://www")+".google-analytics.com/ga.js";var e=document.getElementsByTagName("script")[0];e.parentNode.insertBefore(t,e)}(),function(){var t,e;jQuery(function(){var e,i,n;if("undefined"!=typeof advidiBannerType)return"Flash"===advidiBannerType&&renderFlashBanner(ident),("Image"===advidiBannerType||"Flash"===advidiBannerType)&&(i=jQuery("#b a"),"Image"===advidiBannerType&&(i.attr("href",unescape(flashvars.clickTAG)),i.attr("data-destination",i.attr("href")).attr("href",i.attr("data-url")).click(function(){return null==_gaq.nil&&_gaq.push(["_trackEvent","Banner Click","kwd",getUrlVars().kwd]),window.open(i.attr("data-destination"),i.attr("target")),!1}),jQuery.each(["width","height"],function(t,e){return"undefined"!=typeof getUrlVars()[e]?i.children("img").attr(e,getUrlVars()[e]):void 0}))),"HTML"===advidiBannerType&&jQuery("a[data-ident=true]").each(function(){var e,i;return i=jQuery(this).attr("href"),e=-1!==i.indexOf("?")?"&":"?",jQuery(this).attr("href",t(i+e))}),"Popunder"===advidiBannerType?(e=jQuery("#b iframe").attr("data-click"),n=jQuery("#b iframe").attr("src"),jQuery("#b iframe").attr("src",n.replace(e,unescape(flashvars.clickTAG)))):void 0}),t=function(t,e){return null==e&&(e=""),jQuery.param.querystring(t,"ident="+ident+"&campaign_id="+campaignId+"&ref="+ref+"&autoreloaded="+autoreloaded+"&aff_id="+affId)},e=function(t){return document.location=jQuery("#"+t).attr("newlink"),!1}}.call(this),/*!
+ * jQuery BBQ: Back Button & Query Library - v1.2.1 - 2/17/2010
+ * http://benalman.com/projects/jquery-bbq-plugin/
+ * 
+ * Copyright (c) 2010 "Cowboy" Ben Alman
+ * Dual licensed under the MIT and GPL licenses.
+ * http://benalman.com/about/license/
+ */
+// Copyright (c) 2010 "Cowboy" Ben Alman,
+function(t,e){"$:nomunge";function i(t){return"string"==typeof t}function n(t){var e=v.call(arguments,1);return function(){return t.apply(this,e.concat(v.call(arguments)))}}function s(t){return t.replace(/^[^#]*#?(.*)$/,"$1")}function a(t){return t.replace(/(?:^[^?#]*\?([^#]*).*$)?.*/,"$1")}function o(n,s,a,o,r){var l,h,d,p,f;return o!==u&&a!==u?(d=a.match(n?/^([^#]*)\#?(.*)$/:/^([^#?]*)\??([^#]*)(#?.*)/),f=d[3]||"",2===r&&i(o)?h=o.replace(n?A:I,""):(p=c(d[2]),o=i(o)?c[n?k:C](o):o,h=2===r?o:1===r?t.extend({},o,p):t.extend({},p,o),h=y(h),n&&(h=h.replace(g,b))),l=d[1]+(n?"#":h||!d[1]?"?":"")+h+f):l=s(a!==u?a:e[T][S]),l}function r(t,e,n){return e===u||"boolean"==typeof e?(n=e,e=y[t?k:C]()):e=i(e)?e.replace(t?A:I,""):e,c(e,n)}function l(e,n,s,a){return i(s)||"object"==typeof s||(a=s,s=n,n=u),this.each(function(){var i=t(this),o=n||m()[(this.nodeName||"").toLowerCase()]||"",r=o&&i.attr(o)||"";i.attr(o,y[e](r,s,a))})}var u,h,c,d,p,f,m,g,v=Array.prototype.slice,b=decodeURIComponent,y=t.param,_=t.bbq=t.bbq||{},w=t.event.special,x="hashchange",C="querystring",k="fragment",D="elemUrlAttr",T="location",S="href",$="src",I=/^.*\?|#.*$/g,A=/^.*\#/,N={};y[C]=n(o,0,a),y[k]=h=n(o,1,s),h.noEscape=function(e){e=e||"";var i=t.map(e.split(""),encodeURIComponent);g=new RegExp(i.join("|"),"g")},h.noEscape(",/"),t.deparam=c=function(e,i){var n={},s={"true":!0,"false":!1,"null":null};return t.each(e.replace(/\+/g," ").split("&"),function(e,a){var o,r=a.split("="),l=b(r[0]),h=n,c=0,d=l.split("]["),p=d.length-1;if(/\[/.test(d[0])&&/\]$/.test(d[p])?(d[p]=d[p].replace(/\]$/,""),d=d.shift().split("[").concat(d),p=d.length-1):p=0,2===r.length)if(o=b(r[1]),i&&(o=o&&!isNaN(o)?+o:"undefined"===o?u:s[o]!==u?s[o]:o),p)for(;p>=c;c++)l=""===d[c]?h.length:d[c],h=h[l]=p>c?h[l]||(d[c+1]&&isNaN(d[c+1])?{}:[]):o;else t.isArray(n[l])?n[l].push(o):n[l]=n[l]!==u?[n[l],o]:o;else l&&(n[l]=i?u:"")}),n},c[C]=n(r,0),c[k]=d=n(r,1),t[D]||(t[D]=function(e){return t.extend(N,e)})({a:S,base:S,iframe:$,img:$,input:$,form:"action",link:S,script:$}),m=t[D],t.fn[C]=n(l,C),t.fn[k]=n(l,k),_.pushState=p=function(t,n){i(t)&&/^#/.test(t)&&n===u&&(n=2);var s=t!==u,a=h(e[T][S],s?t:{},s?n:2);e[T][S]=a+(/#/.test(a)?"":"#")},_.getState=f=function(t,e){return t===u||"boolean"==typeof t?d(t):d(e)[t]},_.removeState=function(e){var i={};e!==u&&(i=f(),t.each(t.isArray(e)?e:arguments,function(t,e){delete i[e]})),p(i,2)},w[x]=t.extend(w[x],{add:function(e){function i(t){var e=t[k]=h();t.getState=function(t,i){return t===u||"boolean"==typeof t?c(e,t):c(e,i)[t]},n.apply(this,arguments)}var n;return t.isFunction(e)?(n=e,i):(n=e.handler,e.handler=i,void 0)}})}(jQuery,this),/*!
+ * jQuery hashchange event - v1.2 - 2/11/2010
+ * http://benalman.com/projects/jquery-hashchange-plugin/
+ * 
+ * Copyright (c) 2010 "Cowboy" Ben Alman
+ * Dual licensed under the MIT and GPL licenses.
+ * http://benalman.com/about/license/
+ */
+// Copyright (c) 2010 "Cowboy" Ben Alman,
+function(t,e,i){"$:nomunge";function n(t){return t=t||e[o][l],t.replace(/^[^#]*#?(.*)$/,"$1")}var s,a=t.event.special,o="location",r="hashchange",l="href",u=t.browser,h=document.documentMode,c=u.msie&&(h===i||8>h),d="on"+r in e&&!c;t[r+"Delay"]=100,a[r]=t.extend(a[r],{setup:function(){return d?!1:(t(s.start),void 0)},teardown:function(){return d?!1:(t(s.stop),void 0)}}),s=function(){function i(){u=h=function(t){return t},c&&(a=t('<iframe src="javascript:0"/>').hide().insertAfter("body")[0].contentWindow,h=function(){return n(a.document[o][l])},u=function(t,e){if(t!==e){var i=a.document;i.open().close(),i[o].hash="#"+t}},u(n()))}var s,a,u,h,d={};return d.start=function(){if(!s){var a=n();u||i(),function c(){var i=n(),d=h(a);i!==a?(u(a=i,d),t(e).trigger(r)):d!==a&&(e[o][l]=e[o][l].replace(/#.*/,"")+"#"+d),s=setTimeout(c,t[r+"Delay"])}()}},d.stop=function(){a||(s&&clearTimeout(s),s=0)},d}()}(jQuery,this),function(t,e){"use strict";var i="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///ywAAAAAAQABAAACAUwAOw==";t.fn.imagesLoaded=function(n){function s(){var e=t(c),i=t(d);r&&(d.length?r.reject(u,e,i):r.resolve(u)),t.isFunction(n)&&n.call(o,u,e,i)}function a(e,n){e.src!==i&&-1===t.inArray(e,h)&&(h.push(e),n?d.push(e):c.push(e),t.data(e,"imagesLoaded",{isBroken:n,src:e.src}),l&&r.notifyWith(t(e),[n,u,t(c),t(d)]),u.length===h.length&&(setTimeout(s),u.unbind(".imagesLoaded")))}var o=this,r=t.isFunction(t.Deferred)?t.Deferred():0,l=t.isFunction(r.notify),u=o.find("img").add(o.filter("img")),h=[],c=[],d=[];return u.length?u.bind("load.imagesLoaded error.imagesLoaded",function(t){a(t.target,"error"===t.type)}).each(function(n,s){var o=s.src,r=t.data(s,"imagesLoaded");return r&&r.src===o?(a(s,r.isBroken),void 0):s.complete&&s.naturalWidth!==e?(a(s,0===s.naturalWidth||0===s.naturalHeight),void 0):((s.readyState||s.complete)&&(s.src=i,s.src=o),void 0)}):s(),r?r.promise(o):o}}(jQuery),function(){$(function(){return $("#impressions_tracking_pixel").imagesLoaded(function(){return"undefined"!=typeof banner_destination_url?document.location.href=unescape(banner_destination_url):void 0})})}.call(this);

@@ -1,0 +1,17 @@
+PHTTP23.45.38.140"ß
+GET / HTTP/1.1
+Host: www.oracle.com
+Connection: keep-alive
+TAccept: text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8
+vUser-Agent: Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/31.0.1650.63 Safari/537.36
+$Accept-Encoding: gzip,deflate,sdch
+!Accept-Language: en-US,en;q=0.8
+
+*»
+ HTTP/1.1 301 Moved Permanently
+,Location: http://www.oracle.com/index.html
+Server: BigIP
+Content-Length: 0
+%Date: Tue, 08 Apr 2014 22:07:25 GMT
+Connection: keep-alive
+

@@ -1,0 +1,26 @@
+PHTTP54.225.133.52"¾
+ãGET /event?a=168844516&d=168844516&y=false&s173942781=gc&s175220085=direct&s175370703=false&s175404369=none&n=http%3A%2F%2Fabcnews.go.com%2F&u=oeu1396992320471r0.1544690385926515&wxhr=true&t=1396992320474&f=669550481 HTTP/1.1
+$Host: 168844516.log.optimizely.com
+Connection: keep-alive
+vUser-Agent: Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/31.0.1650.63 Safari/537.36
+Origin: http://abcnews.go.com
+Accept: */*
+!Referer: http://abcnews.go.com/
+$Accept-Encoding: gzip,deflate,sdch
+!Accept-Language: en-US,en;q=0.8
+
+*û
+HTTP/1.1 200 OK
+(Access-Control-Allow-Credentials: true
+)Access-Control-Allow-Methods: POST, GET
+4Access-Control-Allow-Origin: http://abcnews.go.com
+ Content-Type: application/json
+%Date: Tue, 08 Apr 2014 21:25:20 GMT
+9P3P: CP="IDC DSP COR CURa ADMa OUR IND PHY ONL COM STA"
+Server: nginx/1.2.7
+~Set-Cookie: fixed_external_168844516_end_user_id=; Domain=.optimizely.com; expires=Thu, 01 Jan 1970 00:00:00 GMT; Max-Age=-1
+ŠSet-Cookie: end_user_id=oeu1396992320471r0.1544690385926515; Domain=.168844516.log.optimizely.com; expires=Fri, 05 Apr 2024 21:25:20 GMT
+Content-Length: 2
+Connection: keep-alive
+
+{}

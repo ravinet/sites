@@ -1,0 +1,85 @@
+PHTTP199.233.57.11"∆
+∏GET /5/ct=y/c=2215/rand=319858107/pv=y/seg=lang_en/seg=ampm_PM/seg=site_web_weather_us/seg=pageIdCode_home/seg=mode_default_121/seg=pageDeclaration_undc/seg=zone_home/rt=ifr HTTP/1.1
+Host: bcp.crwdcntrl.net
+Connection: keep-alive
+TAccept: text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8
+vUser-Agent: Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/31.0.1650.63 Safari/537.36
+"Referer: http://www.weather.com/
+$Accept-Encoding: gzip,deflate,sdch
+!Accept-Language: en-US,en;q=0.8
+Cookie: _cc_cc=ctst
+
+*è"
+HTTP/1.1 200 OK
+%Date: Tue, 08 Apr 2014 22:34:41 GMT
+'Content-Type: text/html;charset=UTF-8
+Content-Length: 3256
+Connection: keep-alive
+Cache-Control: no-cache
+Pragma: no-cache
+3P3P: CP=NOI DSP COR NID PSAa PSDa OUR UNI COM NAV
+X-Server: 172.22.10.162
+ﬂSet-Cookie: _cc_aud="ABR4nGNgYGAIdqlsZIABPgaGmdPBrOl5YCrrO5gK2gmmdBeAKX82MBUnBFGZD6baFkIoiJK2%2BWCqZzmY2jkPTGVnAAkAZowPqA%3D%3D";Version=1;Path=/;Domain=crwdcntrl.net;Expires=Sat, 03-Jan-2015 22:34:41 GMT;Max-Age=23328000
+‹Set-Cookie: _cc_cc="ACN4nGNQMDYzSTaxNDZLNk00MDE1TzQ0SzZINTA2MrEwM01MSTVnAIJgl8pGBnTAvqs1gJGBYzkDw39GRgZGBgbGXS5NqAJ7Mu6jqahQQhMo%2FYYm4B2NLhCBKsAgwJ2wCyHEnbATwVnY9BHBUeZ6gOBw1TcgODeWIpkpU6eJLBOE4LQLnkfmHEZwChadQ9ajheDwVcQhWdpahuAE8HQgOJxPWBEcADYMURQ%3D";Version=1;Path=/;Domain=crwdcntrl.net;Expires=Sat, 03-Jan-2015 22:34:41 GMT;Max-Age=23328000
+wSet-Cookie: _cc_id=364c4936c5a0457a16c0e0324865ade7;Path=/;Domain=crwdcntrl.net;Expires=Sat, 03-Jan-2015 22:34:41 GMT
+XSet-Cookie: _cc_dc=0;Path=/;Domain=crwdcntrl.net;Expires=Fri, 18-Apr-2014 22:34:41 GMT
+(Expires: Thu, 01 Jan 1970 00:00:00 GMT
+∫
+<html>
+<body leftmargin='0' topmargin='0' marginwidth='0' marginheight='0' style='background-color:transparent; width: 100%; text-align: center;'>
+<html><body><div><img src="http://cm.g.doubleclick.net/pixel?google_nid=lotame_dmp&google_cm" height="1" width="1"><img src="http://idsync.rlcdn.com/362568.gif?partner_uid=364c4936c5a0457a16c0e0324865ade7" width="1" height="1"><img width="1" height="1" src="http://p.acxiom-online.com/pixel/dap?pid=3011&ord=1000&uid=364c4936c5a0457a16c0e0324865ade7&ot=pixel&redir=http%3A%2F%2Fbcp.crwdcntrl.net%2F5%2Fc%3D1205%2Fseg%3D%23DATTRIBUTES%23" /><img src="http://loadm.exelator.com/load/?p=204&g=260&buid=364c4936c5a0457a16c0e0324865ade7&j=0" height="1" width="1"><script id="LOTCC_368" src="http://tags.crwdcntrl.net/c/368/cc.js?ns=lot368"></script>
+<script id="LOTCC_796" src="http://tags.crwdcntrl.net/c/796/cc.js?ns=lot796"></script>
+<script>
+function processTargusData(json)
+{
+   if (json != null) {
+       if (json.targus != null) {
+            var fire = null;
+            if (json.targus.sk != null && json.targus.sk != "") {
+                lot368.add("tp", "TARG");
+                lot368.add("tpid", json.targus.sk);
+                fireIt = "m";
+            }
+            if (json.targus.segment != null && json.targus.segment != "000") {
+                lot368.add("genp","tiaas-" + json.targus.segment);
+                fireIt = "b";
+            }
+            if (json.targus.age != null && json.targus.age != "") {
+                lot368.add("genp", new Date().getFullYear() - json.targus.age);
+                fireIt = "b";
+            }
+            if (json.targus.gender != null && json.targus.gender != "") {
+                lot368.add("genp", "gender - " + json.targus.gender);
+                fireIt = "b";
+            }
+            if (fireIt == "b") {
+                lot368.bcpdpv();
+            } else if (fireIt == "m") {
+                var img = new Image();
+                img.src = "http://bcp.crwdcntrl.net/map/c=368/tp=TARG/tpid=" + json.targus.sk;
+                document.body.appendChild(img);
+            }
+        }
+        if (json.Client1 != null) {
+            var fireIt = false;
+            if (json.Client1.segment != null && json.Client1.segment != "000") {
+                if (json.Client1.segment instanceof Array) {
+                    for(var i =0; i < json.Client1.segment.length; i++) {
+                        lot796.add("genp","tialnt-" + json.Client1.segment[i]);
+                        fireIt = true;
+                    }
+                } else {
+                    lot796.add("genp","tialnt-" + json.Client1.segment);
+                    fireIt = true;
+                }
+            }
+            if (fireIt) {
+                lot796.bcpdpv();
+            }
+        }
+   }
+}
+</script>
+<script src="http://adadvisor.net/adscores/g.json?sid=9202507693"></script><img src="http://lotame.nexac.com/5/c=205/dc=0/pid=364c4936c5a0457a16c0e0324865ade7/tp=DLGX/tpc=na_id" height="1" width="1"><img src="http://tags.bluekai.com/site/5907?limit=0&id=9dd98ff2247900f03b8ca57c41bce6e5" width=1 height=1><iframe src='http://bcp.crwdcntrl.net/px?Yz0yMjE1JnB4aWQ9Mzg0Mjc%3D' frameborder='0' height='0' width='0' scrolling='no'></iframe></div></body></html>
+</body>
+</html>

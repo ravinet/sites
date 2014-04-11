@@ -1,0 +1,40 @@
+ªHTTPS173.252.110.27"Ú
+ùGET /fql?q=SELECT%20url,%20normalized_url,%20share_count,%20like_count,%20comment_count,%20total_count,commentsbox_count,%20comments_fbid,%20click_count%20FROM%20link_stat%20WHERE%20url='http://www.gamespot.com/videos/titanfall-x360-dark-souls-ii-pc-the-lobby/2300-6418187/' HTTP/1.1
+Host: graph.facebook.com
+Connection: keep-alive
+Accept: */*
+!Origin: http://www.gamespot.com
+vUser-Agent: Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/31.0.1650.63 Safari/537.36
+#Referer: http://www.gamespot.com/
+$Accept-Encoding: gzip,deflate,sdch
+!Accept-Language: en-US,en;q=0.8
+
+*ü
+HTTP/1.1 200 OK
+x-fb-rev: 1196466
+ Access-Control-Allow-Origin: *
+=Cache-Control: private, no-cache, no-store, must-revalidate
+/Content-Type: application/json; charset=UTF-8
+%Date: Tue, 08 Apr 2014 21:50:28 GMT
+2ETag: "d8cb7867b5dd98ad29f3a148f11814d8cd468faf"
+(Expires: Sat, 01 Jan 2000 00:00:00 GMT
+Pragma: no-cache
+:X-FB-Debug: jXkBSErsrurSSbv/sO9aoN351uUfB2pGPH65w4C5PIo=
+Connection: keep-alive
+Content-Length: 474
+‹
+{
+   "data": [
+      {
+         "url": "http://www.gamespot.com/videos/titanfall-x360-dark-souls-ii-pc-the-lobby/2300-6418187/",
+         "normalized_url": "http://www.gamespot.com/videos/titanfall-x360-dark-souls-ii-pc-the-lobby/2300-6418187/",
+         "share_count": 20,
+         "like_count": 0,
+         "comment_count": 0,
+         "total_count": 20,
+         "commentsbox_count": 0,
+         "comments_fbid": 1424498751136398,
+         "click_count": 0
+      }
+   ]
+}

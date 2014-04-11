@@ -1,0 +1,649 @@
+PHTTP54.204.241.146"Ê
+GGET /js/application_64e70fc09e37fdde5277f6f9df20ad3d_asdf.js HTTP/1.1
+Host: www.petflow.com
+Connection: keep-alive
+Accept: */*
+vUser-Agent: Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/31.0.1650.63 Safari/537.36
+"Referer: http://www.petflow.com/
+$Accept-Encoding: gzip,deflate,sdch
+!Accept-Language: en-US,en;q=0.8
+ÔCookie: optimizelySegments=%7B%7D; optimizelyEndUserId=oeu1396994893740r0.7730855331756175; optimizelyBuckets=%7B%7D; optimizelyPendingLogEvents=%5B%5D; _ga=GA1.2.191234633.1396994894; _dc=1; __utma=29556542.191234633.1396994894.1396994894.1396994894.1; __utmb=29556542.1.10.1396994894; __utmc=29556542; __utmz=29556542.1396994894.1.1.utmcsr=(direct)|utmccn=(direct)|utmcmd=(none); mp_petflow_mixpanel=%7B%22distinct_id%22%3A%20%221454362692b12c0-0b27b7a0c-14281008-75300-1454362692c1424%22%7D
+
+*∂£
+HTTP/1.1 200 OK
+Server: nginx/1.1.19
+%Date: Tue, 08 Apr 2014 22:08:13 GMT
+&Content-Type: application/javascript
+Transfer-Encoding: chunked
+Connection: keep-alive
+.Last-Modified: Thu, 03 Apr 2014 21:13:52 GMT
+"ETag: "18f4f-4f629e0c62e7a-gzip"
+Vary: Accept-Encoding
+&Strict-Transport-Security: max-age=0
+"X-Varnish: 1335436191 1335436016
+Age: 5
+Via: 1.1 varnish
+JX-Varnish-Asdf: /js/application_64e70fc09e37fdde5277f6f9df20ad3d_asdf.js
+X-Varnish-Cache: HIT
+≈ü
+1e15
+/* vendors/jquery.transform2d.js */
+/*
+ * transform: A jQuery cssHooks adding cross-browser 2d transform capabilities to $.fn.css() and $.fn.animate()
+ *
+ * limitations:
+ * - requires jQuery 1.4.3+
+ * - Should you use the *translate* property, then your elements need to be absolutely positionned in a relatively positionned wrapper **or it will fail in IE678**.
+ * - transformOrigin is not accessible
+ *
+ * latest version and complete README available on Github:
+ * https://github.com/louisremi/jquery.transform.js
+ *
+ * Copyright 2011 @louis_remi
+ * Licensed under the MIT license.
+ *
+ * This saved you an hour of work?
+ * Send me music http://www.amazon.co.uk/wishlist/HNTU0468LQON
+ *
+ */
+!function(e,t,i,s,n){/*
+ * Feature tests and global variables
+ */
+var a=i.createElement("div"),r=a.style,o="Transform",l=["O"+o,"ms"+o,"Webkit"+o,"Moz"+o],c=l.length,u,h,d="Float32Array"in t,f,p,m=/Matrix([^)]*)/,g=/^\s*matrix\(\s*1\s*,\s*0\s*,\s*0\s*,\s*1\s*(?:,\s*0(?:px)?\s*){2}\)\s*$/,v="transform",b="transformOrigin",w="translate",$="rotate",y="scale",C="skew",k="matrix";// test different vendor prefixes of these properties
+while(c--){if(l[c]in r){e.support[v]=u=l[c];e.support[b]=u+"Origin";continue}}// IE678 alternative
+if(!u){e.support.matrixFilter=h=r.filter===""}// px isn't the default unit of these properties
+e.cssNumber[v]=e.cssNumber[b]=true;/*
+ * fn.css() hooks
+ */
+if(u&&u!=v){// Modern browsers can use jQuery.cssProps as a basic hook
+e.cssProps[v]=u;e.cssProps[b]=u+"Origin";// Firefox needs a complete hook because it stuffs matrix with "px"
+if(u=="Moz"+o){f={get:function(t,i){return i?// remove "px" from the computed matrix
+e.css(t,u).split("px").join(""):t.style[u]},set:function(e,t){// add "px" to matrices
+e.style[u]=/matrix\([^)p]*\)/.test(t)?t.replace(/matrix((?:[^,]*,){4})([^,]*),([^)]*)/,k+"$1$2px,$3px"):t}}}else if(/^1\.[0-5](?:\.|$)/.test(e.fn.jquery)){f={get:function(t,i){return i?e.css(t,u.replace(/^ms/,"Ms")):t.style[u]}}}}else if(h){f={get:function(t,i,s){var a=i&&t.currentStyle?t.currentStyle:t.style,r,o;if(a&&m.test(a.filter)){r=RegExp.$1.split(",");r=[r[0].split("=")[1],r[2].split("=")[1],r[1].split("=")[1],r[3].split("=")[1]]}else{r=[1,0,0,1]}if(!e.cssHooks[b]){r[4]=a?parseInt(a.left,10)||0:0;r[5]=a?parseInt(a.top,10)||0:0}else{o=e._data(t,"transformTranslate",n);r[4]=o?o[0]:0;r[5]=o?o[1]:0}return s?r:k+"("+r+")"},set:function(t,i,s){var n=t.style,a,r,o,l;if(!s){n.zoom=1}i=x(i);// rotate, scale and skew
+r=["Matrix("+"M11="+i[0],"M12="+i[2],"M21="+i[1],"M22="+i[3],"SizingMethod='auto expand'"].join();o=(a=t.currentStyle)&&a.filter||n.filter||"";n.filter=m.test(o)?o.replace(m,r):o+" progid:DXImageTransform.Microsoft."+r+")";if(!e.cssHooks[b]){// center the transform origin, from pbakaus's Transformie http://github.com/pbakaus/transformie
+if(l=e.transform.centerOrigin){n[l=="margin"?"marginLeft":"left"]=-(t.offsetWidth/2)+t.clientWidth/2+"px";n[l=="margin"?"marginTop":"top"]=-(t.offsetHeight/2)+t.clientHeight/2+"px"}// translate
+// We assume that the elements are absolute positionned inside a relative positionned wrapper
+n.left=i[4]+"px";n.top=i[5]+"px"}else{e.cssHooks[b].set(t,i)}}}}// populate jQuery.cssHooks with the appropriate hook if necessary
+if(f){e.cssHooks[v]=f}// we need a unique setter for the animation logic
+p=f&&f.get||e.css;/*
+ * fn.animate() hooks
+ */
+e.fx.step.transform=function(t){var i=t.elem,n=t.start,a=t.end,r=t.pos,o="",l=1e5,c,d,m,g;// fx.end and fx.start need to be converted to interpolation lists
+if(!n||typeof n==="string"){// the following block can be commented out with jQuery 1.5.1+, see #7912
+if(!n){n=p(i,u)}// force layout only once per animation
+if(h){i.style.zoom=1}// replace "+=" in relative animations (-= is meaningless with transforms)
+a=a.split("+=").join(n);// parse both transform to generate interpolation list of same length
+e.extend(t,S(n,a));n=t.start;a=t.end}c=n.length;// interpolate functions of the list one by one
+while(c--){d=n[c];m=a[c];g=+false;switch(d[0]){case w:g="px";case y:g||(g="");o=d[0]+"("+s.round((d[1][0]+(m[1][0]-d[1][0])*r)*l)/l+g+","+s.round((d[1][1]+(m[1][1]-d[1][1])*r)*l)/l+g+")"+o;break;case C+"X":case C+"Y":case $:o=d[0]+"("+s.round((d[1]+(m[1]-d[1])*r)*l)/l+"rad)"+o;break}}t.origin&&(o=t.origin+o);f&&f.set?f.set(i,o,+true):i.style[u]=o};/*
+ * Utility functions
+ */
+// turns a transform string into its "matrix(A,B,C,D,X,Y)" form (as an array, though)
+function x(t){t=t.split(")");var i=e.trim,n=-1,a=t.length-1,r,o,l,c=d?new Float32Array(6):[],u=d?new Float32Array(6):[],h=d?new Float32Array(6):[1,0,0,1,0,0];c[0]=c[3]=h[0]=h[3]=1;c[1]=c[2]=c[4]=c[5]=0;// Loop through the transform properties, parse and multiply them
+while(++n<a){r=t[n].split("(");o=i(r[0]);l=r[1];u[0]=u[3]=1;u[1]=u[2]=u[4]=u[5]=0;switch(o){case w+"X":u[4]=parseInt(l,10);break;case w+"Y":u[5]=parseInt(l,10);break;case w:l=l.split(",");u[4]=parseInt(l[0],10);u[5]=parseInt(l[1]||0,10);break;case $:l=D(l);u[0]=s.cos(l);u[1]=s.sin(l);u[2]=-s.sin(l);u[3]=s.cos(l);break;case y+"X":u[0]=+l;break;case y+"Y":u[3]=l;break;case y:l=l.split(",");u[0]=l[0];u[3]=l.length>1?l[1]:l[0];break;case C+"X":u[2]=s.tan(D(l));break;case C+"Y":u[1]=s.tan(D(l));break;case k:l=l.split(",");u[0]=l[0];u[1]=l[1];u[2]=l[2];u[3]=l[3];u[4]=parseInt(l[4],10);u[5]=parseInt(l[5],10);break}// Matrix product (array in column-major order)
+h[0]=c[0]*u[0]+c[2]*u[1];h[1]=c[1]*u[0]+c[3]*u[1];h[2]=c[0]*u[2]+c[2]*u[3];h[3]=c[1]*u[2]+c[3]*u[3];h[4]=c[0]*u[4]+c[2]*u[5]+c[4];h[5]=c[1]*u[4]+c[3]*u[5]+c[5];c=[h[0],h[1],h[2],h[3],h[4],h[5]]}return h}// turns a matrix into its rotate, scale and skew components
+// algorithm from http://hg.mozilla.org/mozilla-central/file/7cb3e9795d04/layout/style/nsStyleAnimation.cpp
+function _(e){var t,i,n,a=e[0],r=e[1],o=e[2],l=e[3];// Make sure matrix is not singular
+if(a*l-r*o){// step (3)
+t=s.sqrt(a*a+r*r);a/=t;r/=t;// step (4)
+n=a*o+r*l;o-=a*n;l-=r*n;// step (5)
+i=s.sqrt(o*o+l*l);o/=i;l/=i;n/=i;// step (6)
+if(a*l<r*o){a=-a;r=-r;n=-n;t=-t}}else{// In this case the elem shouldn't be rendered, hence scale == 0
+t=i=n=0}// The recomposition order is very important
+// see http://hg.mozilla.org/mozilla-central/file/7cb3e9795d04/layout/style/nsStyleAnimation.cpp#l971
+return[[w,[+e[4],+e[5]]],[$,s.atan2(r,a)],[C+"X",s.atan(n)],[y,[t,i]]]}// build the list of transform functions to interpolate
+// use the algorithm described at http://dev.w3.org/csswg/css3-2d-transforms/#animation
+function S(t,i){var s={start:[],end:[]},n=-1,a,r,o,l;// get rid of affine transform matrix
+(t=="none"||T(t))&&(t="");(i=="none"||T(i))&&(i="");// if end starts with the current computed style, this is a relative animation
+// store computed style as the origin, remove it from start and end
+if(t&&i&&!i.indexOf("matrix")&&P(t).join()==P(i.split(")")[0]).join()){s.origin=t;t="";i=i.slice(i.indexOf(")")+1)}if(!t&&!i){return}// start or end are affine, or list of transform functions are identical
+// => functions will be interpolated individually
+if(!t||!i||I(t)==I(i)){t&&(t=t.split(")"))&&(a=t.length);i&&(i=i.split(")"))&&(a=i.length);while(++n<a-1){t[n]&&(r=t[n].split("("));i[n]&&(o=i[n].split("("));l=e.trim((r||o)[0]);j(s.start,E(l,r?r[1]:0));j(s.end,E(l,o?o[1]:0))}}else{s.start=_(x(t));s.end=_(x(i))}return s}function E(e,t){var// default value is 1 for scale, 0 otherwise
+i=+!e.indexOf(y),s,// remove X/Y from scaleX/Y & translateX/Y, not from skew
+n=e.replace(/e[XY]/,"e");switch(e){case w+"Y":case y+"Y":t=[i,t?parseFloat(t):i];break;case w+"X":case w:case y+"X":s=1;case y:t=t?(t=t.split(","))&&[parseFloat(t[0]),parseFloat(t.length>1?t[1]:e==y?s||t[0]:i+"")]:[i,i];break;case C+"X":case C+"Y":case $:t=t?D(t):0;break;case k:return _(t?P(t):[1,0,0,1,0,0]);break}return[[n,t]]}functio
+2000
+n T(e){return g.test(e)}function I(e){return e.replace(/(?:\([^)]*\))|\s/g,"")}function j(e,t,i){while(i=t.shift()){e.push(i)}}// converts an angle string in any unit to a radian Float
+function D(e){return~e.indexOf("deg")?parseInt(e,10)*(s.PI*2/360):~e.indexOf("grad")?parseInt(e,10)*(s.PI/200):parseFloat(e)}// Converts "matrix(A,B,C,D,X,Y)" to [A,B,C,D,X,Y]
+function P(e){// remove the unit of X and Y for Firefox
+e=/([^,]*),([^,]*),([^,]*),([^,]*),([^,p]*)(?:px)?,([^)p]*)(?:px)?/.exec(e);return[e[1],e[2],e[3],e[4],e[5],e[6]]}e.transform={centerOrigin:"margin"}}(jQuery,window,document,Math);/* vendors/jquery.hoverIntent.js */
+/* jshint forin:true, noarg:true, noempty:true, eqeqeq:true, bitwise:true, strict:true, undef:true, unused:true, curly:true, browser:true, devel:true, jquery:true, indent:4, maxerr:50 */
+/**
+* hoverIntent is similar to jQuery's built-in "hover" function except that
+* instead of firing the onMouseOver event immediately, hoverIntent checks
+* to see if the user's mouse has slowed down (beneath the sensitivity
+* threshold) before firing the onMouseOver event.
+* 
+* hoverIntent r6 fork // 2012.07.03 // jQuery 1.7+
+* <http://cherne.net/brian/resources/jquery.hoverIntent.html>
+* 
+* hoverIntent is currently available for use in all personal or commercial 
+* projects under both MIT and GPL licenses. This means that you can choose 
+* the license that best suits your project, and use it accordingly.
+* 
+* // basic usage (just like .hover) receives onMouseOver and onMouseOut functions
+* $("ul li").hoverIntent( showNav , hideNav );
+* 
+* // advanced usage receives configuration object only
+* $("ul li").hoverIntent({
+*	sensitivity: 7, // number = sensitivity threshold (must be 1 or higher)
+*	interval: 100,   // number = milliseconds of polling interval
+*	over: showNav,  // function = onMouseOver callback (required)
+*	timeout: 0,   // number = milliseconds delay before onMouseOut function call
+*	out: hideNav,    // function = onMouseOut callback (required)
+*	selector: null // string = subSelector for use with delegated event binding. (Like jQuery.on() syntax.)
+* });
+* 
+* @param  f  onMouseOver function || An object with configuration options
+* @param  g  onMouseOut function  || Nothing (use configuration options object)
+* @author    Brian Cherne brian(at)cherne(dot)net
+*/
+!function(e){"use strict";e.fn.hoverIntent=function(t,i){// default configuration options
+var s={sensitivity:7,interval:100,timeout:0,selector:null};// override configuration options with user supplied object
+s=e.extend(s,i?{over:t,out:i}:t);// instantiate variables
+// cX, cY = current X and Y position of mouse, updated by mousemove event
+// pX, pY = previous X and Y position of mouse, set by mouseover and polling interval
+var n,a,r,o;// A private function for getting mouse position
+var l=function(e){n=e.pageX;a=e.pageY};// A private function for comparing current and previous mouse position
+var c=function(t,i){i.hoverIntent_t=clearTimeout(i.hoverIntent_t);// compare mouse positions to see if they've crossed the threshold
+// regarding the ( cX + cY ) > 0  check: 
+//   clicking in chrome on a selectbox triggered a track event with 0x0
+//   it's very unlikely that a human would trigger a 0x0 event
+if(n+a>0&&Math.abs(r-n)+Math.abs(o-a)<s.sensitivity){e(i).unbind("mousemove",l);// set hoverIntent state to true (so mouseOut can be called)
+i.hoverIntent_s=1;return s.over.apply(i,[t])}else{// set previous coordinates for next time
+r=n;o=a;// use self-calling timeout, guarantees intervals are spaced out properly (avoids JavaScript timer bugs)
+i.hoverIntent_t=setTimeout(function(){c(t,i)},s.interval)}};// A private function for delaying the mouseOut function
+var u=function(e,t){t.hoverIntent_t=clearTimeout(t.hoverIntent_t);t.hoverIntent_s=0;return s.out.apply(t,[e])};// A private function for handling mouse 'hovering'
+var h=function(t){// copy objects to be passed into t (required for event object to be passed in IE)
+var i=jQuery.extend({},t);var n=this;// cancel hoverIntent timer if it exists
+if(n.hoverIntent_t){n.hoverIntent_t=clearTimeout(n.hoverIntent_t)}// if e.type == "mouseenter"
+if(t.type==="mouseenter"){// set "previous" X and Y position based on initial entry point
+r=i.pageX;o=i.pageY;// update "current" X and Y position based on mousemove
+e(n).bind("mousemove",l);// start polling interval (self-calling timeout) to compare mouse coordinates over time
+if(n.hoverIntent_s!==1){n.hoverIntent_t=setTimeout(function(){c(i,n)},s.interval)}}else{// unbind expensive mousemove event
+e(n).unbind("mousemove",l);// if hoverIntent state is true, then call the mouseOut function after the specified delay
+if(n.hoverIntent_s===1){n.hoverIntent_t=setTimeout(function(){u(i,n)},s.timeout)}}};// bind the function to the two event listeners
+if(s.selector===null){return this.bind("mouseenter",h).bind("mouseleave",h)}else{return this.on("mouseenter mouseleave",s.selector,h)}}}(jQuery);/* vendors/select2.js */
+/*
+ Copyright 2012 Igor Vaynberg
+
+ Version: 3.2 Timestamp: Mon Sep 10 10:38:04 PDT 2012
+
+ Licensed under the Apache License, Version 2.0 (the "License"); you may not use this work except in
+ compliance with the License. You may obtain a copy of the License in the LICENSE file, or at:
+
+ http://www.apache.org/licenses/LICENSE-2.0
+
+ Unless required by applicable law or agreed to in writing, software distributed under the License is
+ distributed on an "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+ See the License for the specific language governing permissions and limitations under the License.
+ */
+!function(e){if(typeof e.fn.each2=="undefined"){e.fn.extend({/*
+			* 4-10 times faster .each replacement
+			* use it carefully, as it overrides jQuery context of element on each iteration
+			*/
+each2:function(t){var i=e([0]),s=-1,n=this.length;while(++s<n&&(i.context=i[0]=this[s])&&t.call(i[0],s,i)!==false);return this}})}}(jQuery);!function(e,t){"use strict";/*global document, window, jQuery, console */
+if(window.Select2!==t){return}var i,s,n,a,r,o;i={TAB:9,ENTER:13,ESC:27,SPACE:32,LEFT:37,UP:38,RIGHT:39,DOWN:40,SHIFT:16,CTRL:17,ALT:18,PAGE_UP:33,PAGE_DOWN:34,HOME:36,END:35,BACKSPACE:8,DELETE:46,isArrow:function(e){e=e.which?e.which:e;switch(e){case i.LEFT:case i.RIGHT:case i.UP:case i.DOWN:return true}return false},isControl:function(e){var t=e.which;switch(t){case i.SHIFT:case i.CTRL:case i.ALT:return true}if(e.metaKey)return true;return false},isFunctionKey:function(e){e=e.which?e.which:e;return e>=112&&e<=123}};r=function(){var e=1;return function(){return e++}}();function l(e,t){var i=0,s=t.length,n;if(typeof e==="undefined"){return-1}if(e.constructor===String){for(;i<s;i=i+1)if(e.localeCompare(t[i])===0)return i}else{for(;i<s;i=i+1){n=t[i];if(n.constructor===String){if(n.localeCompare(e)===0)return i}else{if(n===e)return i}}}return-1}/**
+     * Compares equality of a and b taking into account that a and b may be strings, in which case localeCompare is used
+     * @param a
+     * @param b
+     */
+function c(e,i){if(e===i)return true;if(e===t||i===t)return false;if(e===null||i===null)return false;if(e.constructor===String)return e.localeCompare(i)===0;if(i.constructor===String)return i.localeCompare(e)===0;return false}/**
+     * Splits the string into an array of values, trimming each value. An empty array is returned for nulls or empty
+     * strings
+     * @param string
+     * @param separator
+     */
+function u(t,i){var s,n,a;if(t===null||t.length<1)return[];s=t.split(i);for(n=0,a=s.length;n<a;n=n+1)s[n]=e.trim(s[n]);return s}function h(e){return e.outerWidth()-e.width()}function d(i){var s="keyup-change-value";i.bind("keydown",function(){if(e.data(i,s)===t){e.data(i,s,i.val())}});i.bind("keyup",function(){var n=e.data(i,s);if(n!==t&&i.val()!==n){e.removeData(i,s);i.trigger("keyup-change")}})}e(document).delegate("body","mousemove",function(t){e.data(document,"select2-lastpos",{x:t.pageX,y:t.pageY})});/**
+     * filters mouse events so an event is fired only if the mouse moved.
+     *
+     * filters out mouse events that occur when mouse is stationary but
+     * the elements under the pointer are scrolled.
+     */
+function f(i){i.bind("mousemove
+2000
+",function(i){var s=e.data(document,"select2-lastpos");if(s===t||s.x!==i.pageX||s.y!==i.pageY){e(i.target).trigger("mousemove-filtered",i)}})}/**
+     * Debounces a function. Returns a function that calls the original fn function only if no invocations have been made
+     * within the last quietMillis milliseconds.
+     *
+     * @param quietMillis number of milliseconds to wait before invoking fn
+     * @param fn function to be debounced
+     * @param ctx object to be used as this reference within fn
+     * @return debounced version of fn
+     */
+function p(e,i,s){s=s||t;var n;return function(){var t=arguments;window.clearTimeout(n);n=window.setTimeout(function(){i.apply(s,t)},e)}}/**
+     * A simple implementation of a thunk
+     * @param formula function used to lazily initialize the thunk
+     * @return {Function}
+     */
+function m(e){var t=false,i;return function(){if(t===false){i=e();t=true}return i}}function g(e,t){var i=p(e,function(e){t.trigger("scroll-debounced",e)});t.bind("scroll",function(e){if(l(e.target,t.get())>=0)i(e)})}function v(e){e.preventDefault();e.stopPropagation()}function b(t){if(!o){var i=t[0].currentStyle||window.getComputedStyle(t[0],null);o=e("<div></div>").css({position:"absolute",left:"-10000px",top:"-10000px",display:"none",fontSize:i.fontSize,fontFamily:i.fontFamily,fontStyle:i.fontStyle,fontWeight:i.fontWeight,letterSpacing:i.letterSpacing,textTransform:i.textTransform,whiteSpace:"nowrap"});e("body").append(o)}o.text(t.val());return o.width()}function w(e,t,i){var s=e.toUpperCase().indexOf(t.toUpperCase()),n=t.length;if(s<0){i.push(e);return}i.push(e.substring(0,s));i.push("<span class='select2-match'>");i.push(e.substring(s,s+n));i.push("</span>");i.push(e.substring(s+n,e.length))}/**
+     * Produces an ajax-based query function
+     *
+     * @param options object containing configuration paramters
+     * @param options.transport function that will be used to execute the ajax request. must be compatible with parameters supported by $.ajax
+     * @param options.url url for the data
+     * @param options.data a function(searchTerm, pageNumber, context) that should return an object containing query string parameters for the above url.
+     * @param options.dataType request data type: ajax, jsonp, other datatatypes supported by jQuery's $.ajax function or the transport function if specified
+     * @param options.traditional a boolean flag that should be true if you wish to use the traditional style of param serialization for the ajax request
+     * @param options.quietMillis (optional) milliseconds to wait before making the ajaxRequest, helps debounce the ajax function if invoked too often
+     * @param options.results a function(remoteData, pageNumber) that converts data returned form the remote request to the format expected by Select2.
+     *      The expected format is an object containing the following keys:
+     *      results array of objects that will be used as choices
+     *      more (optional) boolean indicating whether there are more results available
+     *      Example: {results:[{id:1, text:'Red'},{id:2, text:'Blue'}], more:true}
+     */
+function $(t){var i,// current scheduled but not yet executed request
+s=0,// sequence used to drop out-of-order responses
+n=null,a=t.quietMillis||100;return function(r){window.clearTimeout(i);i=window.setTimeout(function(){s+=1;// increment the sequence
+var i=s,// this request's sequence number
+a=t.data,// ajax data function
+o=t.transport||e.ajax,l=t.traditional||false,c=t.type||"GET";// set type of request (GET or POST)
+a=a.call(this,r.term,r.page,r.context);if(null!==n){n.abort()}n=o.call(null,{url:t.url,dataType:t.dataType,data:a,type:c,traditional:l,success:function(e){if(i<s){return}// TODO 3.0 - replace query.page with query so users have access to term, page, etc.
+var n=t.results(e,r.page);r.callback(n)}})},a)}}/**
+     * Produces a query function that works with a local array
+     *
+     * @param options object containing configuration parameters. The options parameter can either be an array or an
+     * object.
+     *
+     * If the array form is used it is assumed that it contains objects with 'id' and 'text' keys.
+     *
+     * If the object form is used ti is assumed that it contains 'data' and 'text' keys. The 'data' key should contain
+     * an array of objects that will be used as choices. These objects must contain at least an 'id' key. The 'text'
+     * key can either be a String in which case it is expected that each element in the 'data' array has a key with the
+     * value of 'text' which will be used to match choices. Alternatively, text can be a function(item) that can extract
+     * the text.
+     */
+function y(t){var i=t,// data elements
+s,n=function(e){return""+e.text};// function used to retrieve the text portion of a data item that is matched against the search
+if(!e.isArray(i)){n=i.text;// if text is not a function we assume it to be a key name
+if(!e.isFunction(n)){s=i.text;// we need to store this in a separate variable because in the next step data gets reset and data.text is no longer available
+n=function(e){return e[s]}}i=i.results}return function(t){var s=t.term,a={results:[]},r;if(s===""){t.callback({results:i});return}r=function(i,a){var o,l;i=i[0];if(i.children){o={};for(l in i){if(i.hasOwnProperty(l))o[l]=i[l]}o.children=[];e(i.children).each2(function(e,t){r(t,o.children)});if(o.children.length){a.push(o)}}else{if(t.matcher(s,n(i))){a.push(i)}}};e(i).each2(function(e,t){r(t,a.results)});t.callback(a)}}// TODO javadoc
+function C(i){// TODO even for a function we should probably return a wrapper that does the same object/string check as
+// the function for arrays. otherwise only functions that return objects are supported.
+if(e.isFunction(i)){return i}// if not a function we assume it to be an array
+return function(s){var n=s.term,a={results:[]};e(i).each(function(){var e=this.text!==t,i=e?this.text:this;if(n===""||s.matcher(n,i)){a.results.push(e?this:{id:this,text:this})}});s.callback(a)}}/**
+     * Checks if the formatter function should be used.
+     *
+     * Throws an error if it is not a function. Returns true if it should be used,
+     * false if no formatting should be performed.
+     *
+     * @param formatter
+     */
+function k(t,i){if(e.isFunction(t))return true;if(!t)return false;throw new Error("formatterName must be a function or a falsy value")}function x(t){return e.isFunction(t)?t():t}function _(t){var i=0;e.each(t,function(e,t){if(t.children){i+=_(t.children)}else{i++}});return i}/**
+     * Default tokenizer. This function uses breaks the input on substring match of any string from the
+     * opts.tokenSeparators array and uses opts.createSearchChoice to create the choice object. Both of those
+     * two options have to be defined in order for the tokenizer to work.
+     *
+     * @param input text user has typed so far or pasted into the search field
+     * @param selection currently selected choices
+     * @param selectCallback function(choice) callback tho add the choice to selection
+     * @param opts select2's opts
+     * @return undefined/null to leave the current input unchanged, or a string to change the input to the returned value
+     */
+function S(e,i,s,n){var a=e,// store the original so we can compare and know if we need to tell the search to update its text
+r=false,// check for whether a token we extracted represents a duplicate selected choice
+o,// token
+l,// position at which the separator was found
+u,h,// looping variables
+d;// the matched separator
+if(!n.createSearchChoice||!n.tokenSeparators||n.tokenSeparators.length<1)return t;while(true){l=-1;for(u=0,h=n.tokenSeparators.length;u<h;u++){d=n.tokenSeparators[u];l=e.indexOf(d);if(l>=0)break}if(l<0)break;// did not find any token separator in the input string, bail
+o=e.substring(0,l);e=e.substring(l+d.length);if(o.length>0){o=n.createSearchChoice(o,i);if(o!==t&&o!==null&&n.id(o)!==t&&n.id(o)!==null){r=false;for(u=0,h=i.length;u<h;u++){if(c(n.id(o),n.id(i[u]))){r=true;break}}if(!r)s(o)}}}if(a.localeCompare(e)!=0)return e}/**
+     * blurs any Select2 container that has focus when an element outside them was clicked or received focus
+     *
+ 
+2000
+    * also takes care of clicks on label tags that point to the source element
+     */
+e(document).ready(function(){e(document).delegate("body","mousedown touchend",function(i){var s=e(i.target).closest("div.select2-container").get(0),n;if(s){e(document).find("div.select2-container-active").each(function(){if(this!==s)e(this).data("select2").blur()})}else{s=e(i.target).closest("div.select2-drop").get(0);e(document).find("div.select2-drop-active").each(function(){if(this!==s)e(this).data("select2").blur()})}s=e(i.target);n=s.attr("for");if("LABEL"===i.target.tagName&&n&&n.length>0){s=e("#"+n);s=s.data("select2");if(s!==t){s.focus();i.preventDefault()}}})});/**
+     * Creates a new class
+     *
+     * @param superClass
+     * @param methods
+     */
+function E(t,i){var s=function(){};s.prototype=new t;s.prototype.constructor=s;s.prototype.parent=t.prototype;s.prototype=e.extend(s.prototype,i);return s}s=E(Object,{// abstract
+bind:function(e){var t=this;return function(){e.apply(t,arguments)}},// abstract
+init:function(i){var s,n,a=".select2-results";// prepare options
+this.opts=i=this.prepareOpts(i);this.id=i.id;// destroy if called on an existing component
+if(i.element.data("select2")!==t&&i.element.data("select2")!==null){this.destroy()}this.enabled=true;this.container=this.createContainer();this.containerId="s2id_"+(i.element.attr("id")||"autogen"+r());this.containerSelector="#"+this.containerId.replace(/([;&,\.\+\*\~':"\!\^#$%@\[\]\(\)=>\|])/g,"\\$1");this.container.attr("id",this.containerId);// cache the body so future lookups are cheap
+this.body=m(function(){return i.element.closest("body")});if(i.element.attr("class")!==t){this.container.addClass(i.element.attr("class").replace(/validate\[[\S ]+] ?/,""))}this.container.css(x(i.containerCss));this.container.addClass(x(i.containerCssClass));// swap container for the element
+this.opts.element.data("select2",this).hide().before(this.container);this.container.data("select2",this);this.dropdown=this.container.find(".select2-drop");this.dropdown.addClass(x(i.dropdownCssClass));this.dropdown.data("select2",this);this.results=s=this.container.find(a);this.search=n=this.container.find("input.select2-input");n.attr("tabIndex",this.opts.element.attr("tabIndex"));this.resultsPage=0;this.context=null;// initialize the container
+this.initContainer();this.initContainerWidth();f(this.results);this.dropdown.delegate(a,"mousemove-filtered",this.bind(this.highlightUnderEvent));g(80,this.results);this.dropdown.delegate(a,"scroll-debounced",this.bind(this.loadMoreIfNeeded));// if jquery.mousewheel plugin is installed we can prevent out-of-bounds scrolling of results via mousewheel
+if(e.fn.mousewheel){s.mousewheel(function(e,t,i,n){var a=s.scrollTop(),r;if(n>0&&a-n<=0){s.scrollTop(0);v(e)}else if(n<0&&s.get(0).scrollHeight-s.scrollTop()+n<=s.height()){s.scrollTop(s.get(0).scrollHeight-s.height());v(e)}})}d(n);n.bind("keyup-change",this.bind(this.updateResults));n.bind("focus",function(){n.addClass("select2-focused");if(n.val()===" ")n.val("")});n.bind("blur",function(){n.removeClass("select2-focused")});this.dropdown.delegate(a,"mouseup",this.bind(function(t){if(e(t.target).closest(".select2-result-selectable:not(.select2-disabled)").length>0){this.highlightUnderEvent(t);this.selectHighlighted(t)}else{this.focusSearch()}v(t)}));// trap all mouse events from leaving the dropdown. sometimes there may be a modal that is listening
+// for mouse events outside of itself so it can close itself. since the dropdown is now outside the select2's
+// dom it will trigger the popup close, which is not what we want
+this.dropdown.bind("click mouseup mousedown",function(e){e.stopPropagation()});if(e.isFunction(this.opts.initSelection)){// initialize selection based on the current value of the source element
+this.initSelection();// if the user has provided a function that can set selection based on the value of the source element
+// we monitor the change event on the element and trigger it, allowing for two way synchronization
+this.monitorSource()}if(i.element.is(":disabled")||i.element.is("[readonly='readonly']"))this.disable()},// abstract
+destroy:function(){var e=this.opts.element.data("select2");if(e!==t){e.container.remove();e.dropdown.remove();e.opts.element.removeData("select2").unbind(".select2").show()}},// abstract
+prepareOpts:function(i){var s,n,a,r;s=i.element;if(s.get(0).tagName.toLowerCase()==="select"){this.select=n=i.element}if(n){// these options are not allowed when attached to a select because they are picked up off the element itself
+e.each(["id","multiple","ajax","query","createSearchChoice","initSelection","data","tags"],function(){if(this in i){throw new Error("Option '"+this+"' is not allowed for Select2 when attached to a <select> element.")}})}i=e.extend({},{populateResults:function(s,n,a){var r,o,l,c,u=this.opts.id,h=this;r=function(s,n,o){var l,c,d,f,p,m,g,v,b;for(l=0,c=s.length;l<c;l=l+1){d=s[l];f=u(d)!==t;p=d.children&&d.children.length>0;m=e("<li></li>");m.addClass("select2-results-dept-"+o);m.addClass("select2-result");m.addClass(f?"select2-result-selectable":"select2-result-unselectable");if(p){m.addClass("select2-result-with-children")}m.addClass(h.opts.formatResultCssClass(d));g=e("<div></div>");g.addClass("select2-result-label");b=i.formatResult(d,g,a);if(b!==t){g.html(h.opts.escapeMarkup(b))}m.append(g);if(p){v=e("<ul></ul>");v.addClass("select2-result-sub");r(d.children,v,o+1);m.append(v)}m.data("select2-data",d);n.append(m)}};r(n,s,0)}},e.fn.select2.defaults,i);if(typeof i.id!=="function"){a=i.id;i.id=function(e){return e[a]}}if(n){i.query=this.bind(function(i){var n={results:[],more:false},a=i.term,r,o,l;l=function(e,t){var s;if(e.is("option")){if(i.matcher(a,e.text(),e)){t.push({id:e.attr("value"),text:e.text(),element:e.get(),css:e.attr("class")})}}else if(e.is("optgroup")){s={text:e.attr("label"),children:[],element:e.get(),css:e.attr("class")};e.children().each2(function(e,t){l(t,s.children)});if(s.children.length>0){t.push(s)}}};r=s.children();// ignore the placeholder option if there is one
+if(this.getPlaceholder()!==t&&r.length>0){o=r[0];if(e(o).text()===""){r=r.not(o)}}r.each2(function(e,t){l(t,n.results)});i.callback(n)});// this is needed because inside val() we construct choices from options and there id is hardcoded
+i.id=function(e){return e.id};i.formatResultCssClass=function(e){return e.css}}else{if(!("query"in i)){if("ajax"in i){r=i.element.data("ajax-url");if(r&&r.length>0){i.ajax.url=r}i.query=$(i.ajax)}else if("data"in i){i.query=y(i.data)}else if("tags"in i){i.query=C(i.tags);i.createSearchChoice=function(e){return{id:e,text:e}};i.initSelection=function(t,s){var n=[];e(u(t.val(),i.separator)).each(function(){var t=this,s=this,a=i.tags;if(e.isFunction(a))a=a();e(a).each(function(){if(c(this.id,t)){s=this.text;return false}});n.push({id:t,text:s})});s(n)}}}}if(typeof i.query!=="function"){throw"query function not defined for Select2 "+i.element.attr("id")}return i},/**
+         * Monitor the original element for changes and update select2 accordingly
+         */
+// abstract
+monitorSource:function(){this.opts.element.bind("change.select2",this.bind(function(e){if(this.opts.element.data("select2-change-triggered")!==true){this.initSelection()}}))},/**
+         * Triggers the change event on the source element
+         */
+// abstract
+triggerChange:function(t){t=t||{};t=e.extend({},t,{type:"change",val:this.val()});// prevents recursive triggering
+this.opts.element.data("select2-change-triggered",true);this.opts.element.trigger(t);this.opts.element.data("select2-change-triggered",false);// some validation frameworks ignore the change event and listen instead to keyup, click for selects
+// so here we trigger the click event manually
+this.opts.element.click();// ValidationEngine ignorea the change event and listens instead to blur
+// so here we trigger the blur event manually if so desired
+if(this.opts.blurOnChange)this.opts.element.blur()},// abstract
+enable:function(){if(this.enabled)return;this.enabled=true;this.container.removeClass("select2-container-disabled")},// abstract
+disable:function(){if(!this.enabled)return;this.close();this.enabled=false;this.container.addCl
+2000
+ass("select2-container-disabled")},// abstract
+opened:function(){return this.container.hasClass("select2-dropdown-open")},// abstract
+positionDropdown:function(){var t=this.container.offset(),i=this.container.outerHeight(),s=this.container.outerWidth(),n=this.dropdown.outerHeight(),a=e(window).scrollTop()+document.documentElement.clientHeight,r=t.top+i,o=t.left,l=r+n<=a,c=t.top-n>=this.body().scrollTop(),u=this.dropdown.hasClass("select2-drop-above"),h,d,f;// console.log("below/ droptop:", dropTop, "dropHeight", dropHeight, "sum", (dropTop+dropHeight)+" viewport bottom", viewportBottom, "enough?", enoughRoomBelow);
+// console.log("above/ offset.top", offset.top, "dropHeight", dropHeight, "top", (offset.top-dropHeight), "scrollTop", this.body().scrollTop(), "enough?", enoughRoomAbove);
+// fix positioning when body has an offset and is not position: static
+if(this.body().css("position")!=="static"){h=this.body().offset();r-=h.top;o-=h.left}// always prefer the current above/below alignment, unless there is not enough room
+if(u){d=true;if(!c&&l)d=false}else{d=false;if(!l&&c)d=true}if(d){r=t.top-n;this.container.addClass("select2-drop-above");this.dropdown.addClass("select2-drop-above")}else{this.container.removeClass("select2-drop-above");this.dropdown.removeClass("select2-drop-above")}f=e.extend({top:r,left:o,width:s},x(this.opts.dropdownCss));this.dropdown.css(f)},// abstract
+shouldOpen:function(){var t;if(this.opened())return false;t=e.Event("open");this.opts.element.trigger(t);return!t.isDefaultPrevented()},// abstract
+clearDropdownAlignmentPreference:function(){// clear the classes used to figure out the preference of where the dropdown should be opened
+this.container.removeClass("select2-drop-above");this.dropdown.removeClass("select2-drop-above")},/**
+         * Opens the dropdown
+         *
+         * @return {Boolean} whether or not dropdown was opened. This method will return false if, for example,
+         * the dropdown is already open, or if the 'open' event listener on the element called preventDefault().
+         */
+// abstract
+open:function(){if(!this.shouldOpen())return false;window.setTimeout(this.bind(this.opening),1);return true},/**
+         * Performs the opening of the dropdown
+         */
+// abstract
+opening:function(){var t=this.containerId,i=this.containerSelector,s="scroll."+t,n="resize."+t;this.container.parents().each(function(){e(this).bind(s,function(){var t=e(i);if(t.length==0){e(this).unbind(s)}t.select2("close")})});e(window).bind(n,function(){var t=e(i);if(t.length==0){e(window).unbind(n)}t.select2("close")});this.clearDropdownAlignmentPreference();if(this.search.val()===" "){this.search.val("")}this.container.addClass("select2-dropdown-open").addClass("select2-container-active");this.updateResults(true);if(this.dropdown[0]!==this.body().children().last()[0]){this.dropdown.detach().appendTo(this.body())}this.dropdown.show();this.positionDropdown();this.dropdown.addClass("select2-drop-active");this.ensureHighlightVisible();this.focusSearch()},// abstract
+close:function(){if(!this.opened())return;var t=this;this.container.parents().each(function(){e(this).unbind("scroll."+t.containerId)});e(window).unbind("resize."+this.containerId);this.clearDropdownAlignmentPreference();this.dropdown.hide();this.container.removeClass("select2-dropdown-open").removeClass("select2-container-active");this.results.empty();this.clearSearch();this.opts.element.trigger(e.Event("close"))},// abstract
+clearSearch:function(){},// abstract
+ensureHighlightVisible:function(){var t=this.results,i,s,n,a,r,o,l;s=this.highlight();if(s<0)return;if(s==0){// if the first element is highlighted scroll all the way to the top,
+// that way any unselectable headers above it will also be scrolled
+// into view
+t.scrollTop(0);return}i=t.find(".select2-result-selectable");n=e(i[s]);a=n.offset().top+n.outerHeight();// if this is the last child lets also make sure select2-more-results is visible
+if(s===i.length-1){l=t.find("li.select2-more-results");if(l.length>0){a=l.offset().top+l.outerHeight()}}r=t.offset().top+t.outerHeight();if(a>r){t.scrollTop(t.scrollTop()+(a-r))}o=n.offset().top-t.offset().top;// make sure the top of the element is visible
+if(o<0){t.scrollTop(t.scrollTop()+o)}},// abstract
+moveHighlight:function(t){var i=this.results.find(".select2-result-selectable"),s=this.highlight();while(s>-1&&s<i.length){s+=t;var n=e(i[s]);if(n.hasClass("select2-result-selectable")&&!n.hasClass("select2-disabled")){this.highlight(s);break}}},// abstract
+highlight:function(t){var i=this.results.find(".select2-result-selectable").not(".select2-disabled");if(arguments.length===0){return l(i.filter(".select2-highlighted")[0],i.get())}if(t>=i.length)t=i.length-1;if(t<0)t=0;i.removeClass("select2-highlighted");e(i[t]).addClass("select2-highlighted");this.ensureHighlightVisible()},// abstract
+countSelectableResults:function(){return this.results.find(".select2-result-selectable").not(".select2-disabled").length},// abstract
+highlightUnderEvent:function(t){var i=e(t.target).closest(".select2-result-selectable");if(i.length>0&&!i.is(".select2-highlighted")){var s=this.results.find(".select2-result-selectable");this.highlight(s.index(i))}else if(i.length==0){// if we are over an unselectable item remove al highlights
+this.results.find(".select2-highlighted").removeClass("select2-highlighted")}},// abstract
+loadMoreIfNeeded:function(){var e=this.results,t=e.find("li.select2-more-results"),i,// pixels the element is below the scroll fold, below==0 is when the element is starting to be visible
+s=-1,// index of first element without data
+n=this.resultsPage+1,a=this,r=this.search.val(),o=this.context;if(t.length===0)return;i=t.offset().top-e.offset().top-e.height();if(i<=0){t.addClass("select2-active");this.opts.query({term:r,page:n,context:o,matcher:this.opts.matcher,callback:this.bind(function(i){// ignore a response if the select2 has been closed before it was received
+if(!a.opened())return;a.opts.populateResults.call(this,e,i.results,{term:r,page:n,context:o});if(i.more===true){t.detach().appendTo(e).text(a.opts.formatLoadMore(n+1));window.setTimeout(function(){a.loadMoreIfNeeded()},10)}else{t.remove()}a.positionDropdown();a.resultsPage=n})})}},/**
+         * Default tokenizer function which does nothing
+         */
+tokenize:function(){},/**
+         * @param initial whether or not this is the call to this method right after the dropdown has been opened
+         */
+// abstract
+updateResults:function(i){var s=this.search,n=this.results,a=this.opts,r,o=this,l;// if the search is currently hidden we do not alter the results
+if(i!==true&&(this.showSearchInput===false||!this.opened())){return}s.addClass("select2-active");function u(){n.scrollTop(0);s.removeClass("select2-active");o.positionDropdown()}function h(e){n.html(o.opts.escapeMarkup(e));u()}if(a.maximumSelectionSize>=1){r=this.data();if(e.isArray(r)&&r.length>=a.maximumSelectionSize&&k(a.formatSelectionTooBig,"formatSelectionTooBig")){h("<li class='select2-selection-limit'>"+a.formatSelectionTooBig(a.maximumSelectionSize)+"</li>");return}}if(s.val().length<a.minimumInputLength&&k(a.formatInputTooShort,"formatInputTooShort")){h("<li class='select2-no-results'>"+a.formatInputTooShort(s.val(),a.minimumInputLength)+"</li>");return}else{h("<li class='select2-searching'>"+a.formatSearching()+"</li>")}// give the tokenizer a chance to pre-process the input
+l=this.tokenize();if(l!=t&&l!=null){s.val(l)}this.resultsPage=1;a.query({term:s.val(),page:this.resultsPage,context:null,matcher:a.matcher,callback:this.bind(function(r){var l;// default choice
+// ignore a response if the select2 has been closed before it was received
+if(!this.opened())return;// save context, if any
+this.context=r.context===t?null:r.context;// create a default choice and prepend it to the list
+if(this.opts.createSearchChoice&&s.val()!==""){l=this.opts.createSearchChoice.call(null,s.val(),r.results);if(l!==t&&l!==null&&o.id(l)!==t&&o.id(l)!==null){if(e(r.results).filter(function(){return c(o.id(this),o.id(l))}).length===0){r.results.unshift(l)}}}if(r.results.length===0&&k(a.formatNoMatches,"formatNoMatches")){h("<li class='select2-no-results'>"+a.forma
+2000
+tNoMatches(s.val())+"</li>");return}n.empty();o.opts.populateResults.call(this,n,r.results,{term:s.val(),page:this.resultsPage,context:null});if(r.more===true&&k(a.formatLoadMore,"formatLoadMore")){n.append("<li class='select2-more-results'>"+o.opts.escapeMarkup(a.formatLoadMore(this.resultsPage))+"</li>");window.setTimeout(function(){o.loadMoreIfNeeded()},10)}this.postprocessResults(r,i);u()})})},// abstract
+cancel:function(){this.close()},// abstract
+blur:function(){this.close();this.container.removeClass("select2-container-active");this.dropdown.removeClass("select2-drop-active");// synonymous to .is(':focus'), which is available in jquery >= 1.6
+if(this.search[0]===document.activeElement){this.search.blur()}this.clearSearch();this.selection.find(".select2-search-choice-focus").removeClass("select2-search-choice-focus")},// abstract
+focusSearch:function(){// need to do it here as well as in timeout so it works in IE
+this.search.show();this.search.focus();/* we do this in a timeout so that current event processing can complete before this code is executed.
+             this makes sure the search field is focussed even if the current event would blur it */
+window.setTimeout(this.bind(function(){// reset the value so IE places the cursor at the end of the input box
+this.search.show();this.search.focus();this.search.val(this.search.val())}),10)},// abstract
+selectHighlighted:function(){var e=this.highlight(),t=this.results.find(".select2-highlighted").not(".select2-disabled"),i=t.closest(".select2-result-selectable").data("select2-data");if(i){t.addClass("select2-disabled");this.highlight(e);this.onSelect(i)}},// abstract
+getPlaceholder:function(){return this.opts.element.attr("placeholder")||this.opts.element.attr("data-placeholder")||// jquery 1.4 compat
+this.opts.element.data("placeholder")||this.opts.placeholder},/**
+         * Get the desired width for the container element.  This is
+         * derived first from option `width` passed to select2, then
+         * the inline 'style' on the original element, and finally
+         * falls back to the jQuery calculated element width.
+         */
+// abstract
+initContainerWidth:function(){function i(){var i,s,n,a,r;if(this.opts.width==="off"){return null}else if(this.opts.width==="element"){return this.opts.element.outerWidth()===0?"auto":this.opts.element.outerWidth()+"px"}else if(this.opts.width==="copy"||this.opts.width==="resolve"){// check if there is inline style on the element that contains width
+i=this.opts.element.attr("style");if(i!==t){s=i.split(";");for(a=0,r=s.length;a<r;a=a+1){n=s[a].replace(/\s/g,"").match(/width:(([-+]?([0-9]*\.)?[0-9]+)(px|em|ex|%|in|cm|mm|pt|pc))/);if(n!==null&&n.length>=1)return n[1]}}if(this.opts.width==="resolve"){// next check if css('width') can resolve a width that is percent based, this is sometimes possible
+// when attached to input type=hidden or elements hidden via css
+i=this.opts.element.css("width");if(i.indexOf("%")>0)return i;// finally, fallback on the calculated width of the element
+return this.opts.element.outerWidth()===0?"auto":this.opts.element.outerWidth()+"px"}return null}else if(e.isFunction(this.opts.width)){return this.opts.width()}else{return this.opts.width}}var s=i.call(this);if(s!==null){this.container.attr("style","width: "+s)}}});n=E(s,{// single
+createContainer:function(){var t=e("<div></div>",{"class":"select2-container"}).html(["    <a href='#' onclick='return false;' class='select2-choice'>","   <span></span><abbr class='select2-search-choice-close' style='display:none;'></abbr>","   <div><b></b></div>","</a>","    <div class='select2-drop select2-offscreen'>","   <div class='select2-search'>","       <input type='text' autocomplete='off' class='select2-input'/>","   </div>","   <ul class='select2-results'>","   </ul>","</div>"].join(""));return t},// single
+opening:function(){this.search.show();this.parent.opening.apply(this,arguments);this.dropdown.removeClass("select2-offscreen")},// single
+close:function(){if(!this.opened())return;this.parent.close.apply(this,arguments);this.dropdown.removeAttr("style").addClass("select2-offscreen").insertAfter(this.selection).show()},// single
+focus:function(){this.close();this.selection.focus()},// single
+isFocused:function(){return this.selection[0]===document.activeElement},// single
+cancel:function(){this.parent.cancel.apply(this,arguments);this.selection.focus()},// single
+initContainer:function(){var e,t=this.container,s=this.dropdown,n=false;this.selection=e=t.find(".select2-choice");this.search.bind("keydown",this.bind(function(e){if(!this.enabled)return;if(e.which===i.PAGE_UP||e.which===i.PAGE_DOWN){// prevent the page from scrolling
+v(e);return}if(this.opened()){switch(e.which){case i.UP:case i.DOWN:this.moveHighlight(e.which===i.UP?-1:1);v(e);return;case i.TAB:case i.ENTER:this.selectHighlighted();v(e);return;case i.ESC:this.cancel(e);v(e);return}}else{if(e.which===i.TAB||i.isControl(e)||i.isFunctionKey(e)||e.which===i.ESC){return}if(this.opts.openOnEnter===false&&e.which===i.ENTER){return}this.open();if(e.which===i.ENTER){// do not propagate the event otherwise we open, and propagate enter which closes
+return}}}));this.search.bind("focus",this.bind(function(){this.selection.attr("tabIndex","-1")}));this.search.bind("blur",this.bind(function(){if(!this.opened())this.container.removeClass("select2-container-active");window.setTimeout(this.bind(function(){this.selection.attr("tabIndex",this.opts.element.attr("tabIndex"))}),10)}));e.bind("mousedown",this.bind(function(e){n=true;if(this.opened()){this.close();this.selection.focus()}else if(this.enabled){this.open()}n=false}));s.bind("mousedown",this.bind(function(){this.search.focus()}));e.bind("focus",this.bind(function(){this.container.addClass("select2-container-active");// hide the search so the tab key does not focus on it
+this.search.attr("tabIndex","-1")}));e.bind("blur",this.bind(function(){if(!this.opened()){this.container.removeClass("select2-container-active")}window.setTimeout(this.bind(function(){this.search.attr("tabIndex",this.opts.element.attr("tabIndex"))}),10)}));e.bind("keydown",this.bind(function(e){if(!this.enabled)return;if(e.which===i.PAGE_UP||e.which===i.PAGE_DOWN){// prevent the page from scrolling
+v(e);return}if(e.which===i.TAB||i.isControl(e)||i.isFunctionKey(e)||e.which===i.ESC){return}if(this.opts.openOnEnter===false&&e.which===i.ENTER){return}if(e.which==i.DELETE){if(this.opts.allowClear){this.clear()}return}this.open();if(e.which===i.ENTER){// do not propagate the event otherwise we open, and propagate enter which closes
+v(e);return}// do not set the search input value for non-alpha-numeric keys
+// otherwise pressing down results in a '(' being set in the search field
+if(e.which<48){// '0' == 48
+v(e);return}var t=String.fromCharCode(e.which).toLowerCase();if(e.shiftKey){t=t.toUpperCase()}// focus the field before calling val so the cursor ends up after the value instead of before
+this.search.focus();this.search.val(t);// prevent event propagation so it doesnt replay on the now focussed search field and result in double key entry
+v(e)}));e.delegate("abbr","mousedown",this.bind(function(e){if(!this.enabled)return;this.clear();v(e);this.close();this.triggerChange();this.selection.focus()}));this.setPlaceholder();this.search.bind("focus",this.bind(function(){this.container.addClass("select2-container-active")}))},// single
+clear:function(){this.opts.element.val("");this.selection.find("span").empty();this.selection.removeData("select2-data");this.setPlaceholder()},/**
+         * Sets selection based on source element's value
+         */
+// single
+initSelection:function(){var e;if(this.opts.element.val()===""){this.close();this.setPlaceholder()}else{var i=this;this.opts.initSelection.call(null,this.opts.element,function(e){if(e!==t&&e!==null){i.updateSelection(e);i.close();i.setPlaceholder()}})}},// single
+prepareOpts:function(){var t=this.parent.prepareOpts.apply(this,arguments);if(t.element.get(0).tagName.toLowerCase()==="select"){// install the selection initializer
+t.initSelection=function(t,i){var s=t.find(":selected");// a single select box always has a value, no need to null check 'selected'
+if
+2000
+(e.isFunction(i))i({id:s.attr("value"),text:s.text()})}}return t},// single
+setPlaceholder:function(){var e=this.getPlaceholder();if(this.opts.element.val()===""&&e!==t){// check for a first blank option if attached to a select
+if(this.select&&this.select.find("option:first").text()!=="")return;this.selection.find("span").html(this.opts.escapeMarkup(e));this.selection.addClass("select2-default");this.selection.find("abbr").hide()}},// single
+postprocessResults:function(t,i){var s=0,n=this,a=true;// find the selected element in the result list
+this.results.find(".select2-result-selectable").each2(function(e,t){if(c(n.id(t.data("select2-data")),n.opts.element.val())){s=e;return false}});// and highlight it
+this.highlight(s);// hide the search box if this is the first we got the results and there are a few of them
+if(i===true){a=this.showSearchInput=_(t.results)>=this.opts.minimumResultsForSearch;this.dropdown.find(".select2-search")[a?"removeClass":"addClass"]("select2-search-hidden");//add "select2-with-searchbox" to the container if search box is shown
+e(this.dropdown,this.container)[a?"addClass":"removeClass"]("select2-with-searchbox")}},// single
+onSelect:function(e){var t=this.opts.element.val();this.opts.element.val(this.id(e));this.updateSelection(e);this.close();this.selection.focus();if(!c(t,this.id(e))){this.triggerChange()}},// single
+updateSelection:function(e){var i=this.selection.find("span"),s;this.selection.data("select2-data",e);i.empty();s=this.opts.formatSelection(e,i);if(s!==t){i.append(this.opts.escapeMarkup(s))}this.selection.removeClass("select2-default");if(this.opts.allowClear&&this.getPlaceholder()!==t){this.selection.find("abbr").show()}},// single
+val:function(){var e,i=null,s=this;if(arguments.length===0){return this.opts.element.val()}e=arguments[0];if(this.select){this.select.val(e).find(":selected").each2(function(e,t){i={id:t.attr("value"),text:t.text()};return false});this.updateSelection(i);this.setPlaceholder()}else{if(this.opts.initSelection===t){throw new Error("cannot call val() if initSelection() is not defined")}// val is an id. !val is true for [undefined,null,'']
+if(!e){this.clear();return}this.opts.element.val(e);this.opts.initSelection(this.opts.element,function(e){s.opts.element.val(!e?"":s.id(e));s.updateSelection(e);s.setPlaceholder()})}},// single
+clearSearch:function(){this.search.val("")},// single
+data:function(e){var i;if(arguments.length===0){i=this.selection.data("select2-data");if(i==t)i=null;return i}else{if(!e||e===""){this.clear()}else{this.opts.element.val(!e?"":this.id(e));this.updateSelection(e)}}}});a=E(s,{// multi
+createContainer:function(){var t=e("<div></div>",{"class":"select2-container select2-container-multi"}).html(["    <ul class='select2-choices'>",//"<li class='select2-search-choice'><span>California</span><a href="javascript:void(0)" class="select2-search-choice-close"></a></li>" ,
+"  <li class='select2-search-field'>","    <input type='text' autocomplete='off' class='select2-input'>","  </li>","</ul>","<div class='select2-drop select2-drop-multi' style='display:none;'>","   <ul class='select2-results'>","   </ul>","</div>"].join(""));return t},// multi
+prepareOpts:function(){var t=this.parent.prepareOpts.apply(this,arguments);// TODO validate placeholder is a string if specified
+if(t.element.get(0).tagName.toLowerCase()==="select"){// install sthe selection initializer
+t.initSelection=function(t,i){var s=[];t.find(":selected").each2(function(e,t){s.push({id:t.attr("value"),text:t.text()})});if(e.isFunction(i))i(s)}}return t},// multi
+initContainer:function(){var t=".select2-choices",s;this.searchContainer=this.container.find(".select2-search-field");this.selection=s=this.container.find(t);this.search.bind("keydown",this.bind(function(e){if(!this.enabled)return;if(e.which===i.BACKSPACE&&this.search.val()===""){this.close();var t,n=s.find(".select2-search-choice-focus");if(n.length>0){this.unselect(n.first());this.search.width(10);v(e);return}t=s.find(".select2-search-choice");if(t.length>0){t.last().addClass("select2-search-choice-focus")}}else{s.find(".select2-search-choice-focus").removeClass("select2-search-choice-focus")}if(this.opened()){switch(e.which){case i.UP:case i.DOWN:this.moveHighlight(e.which===i.UP?-1:1);v(e);return;case i.ENTER:case i.TAB:this.selectHighlighted();v(e);return;case i.ESC:this.cancel(e);v(e);return}}if(e.which===i.TAB||i.isControl(e)||i.isFunctionKey(e)||e.which===i.BACKSPACE||e.which===i.ESC){return}if(this.opts.openOnEnter===false&&e.which===i.ENTER){return}this.open();if(e.which===i.PAGE_UP||e.which===i.PAGE_DOWN){// prevent the page from scrolling
+v(e)}}));this.search.bind("keyup",this.bind(this.resizeSearch));this.search.bind("blur",this.bind(function(e){this.container.removeClass("select2-container-active");this.search.removeClass("select2-focused");this.clearSearch();e.stopImmediatePropagation()}));this.container.delegate(t,"mousedown",this.bind(function(t){if(!this.enabled)return;if(e(t.target).closest(".select2-search-choice").length>0){// clicked inside a select2 search choice, do not open
+return}this.clearPlaceholder();this.open();this.focusSearch();t.preventDefault()}));this.container.delegate(t,"focus",this.bind(function(){if(!this.enabled)return;this.container.addClass("select2-container-active");this.dropdown.addClass("select2-drop-active");this.clearPlaceholder()}));// set the placeholder if necessary
+this.clearSearch()},// multi
+enable:function(){if(this.enabled)return;this.parent.enable.apply(this,arguments);this.search.removeAttr("disabled")},// multi
+disable:function(){if(!this.enabled)return;this.parent.disable.apply(this,arguments);this.search.attr("disabled",true)},// multi
+initSelection:function(){var e;if(this.opts.element.val()===""){this.updateSelection([]);this.close();// set the placeholder if necessary
+this.clearSearch()}if(this.select||this.opts.element.val()!==""){var i=this;this.opts.initSelection.call(null,this.opts.element,function(e){if(e!==t&&e!==null){i.updateSelection(e);i.close();// set the placeholder if necessary
+i.clearSearch()}})}},// multi
+clearSearch:function(){var e=this.getPlaceholder();if(e!==t&&this.getVal().length===0&&this.search.hasClass("select2-focused")===false){this.search.val(e).addClass("select2-default");// stretch the search box to full width of the container so as much of the placeholder is visible as possible
+this.resizeSearch()}else{// we set this to " " instead of "" and later clear it on focus() because there is a firefox bug
+// that does not properly render the caret when the field starts out blank
+this.search.val(" ").width(10)}},// multi
+clearPlaceholder:function(){if(this.search.hasClass("select2-default")){this.search.val("").removeClass("select2-default")}else{// work around for the space character we set to avoid firefox caret bug
+if(this.search.val()===" ")this.search.val("")}},// multi
+opening:function(){this.parent.opening.apply(this,arguments);this.clearPlaceholder();this.resizeSearch();this.focusSearch()},// multi
+close:function(){if(!this.opened())return;this.parent.close.apply(this,arguments)},// multi
+focus:function(){this.close();this.search.focus()},// multi
+isFocused:function(){return this.search.hasClass("select2-focused")},// multi
+updateSelection:function(t){var i=[],s=[],n=this;// filter out duplicates
+e(t).each(function(){if(l(n.id(this),i)<0){i.push(n.id(this));s.push(this)}});t=s;this.selection.find(".select2-search-choice").remove();e(t).each(function(){n.addSelectedChoice(this)});n.postprocessResults()},tokenize:function(){var e=this.search.val();e=this.opts.tokenizer(e,this.data(),this.bind(this.onSelect),this.opts);if(e!=null&&e!=t){this.search.val(e);if(e.length>0){this.open()}}},// multi
+onSelect:function(e){this.addSelectedChoice(e);if(this.select){this.postprocessResults()}if(this.opts.closeOnSelect){this.close();this.search.width(10)}else{if(this.countSelectableResults()>0){this.search.width(10);this.resizeSearch();this.positionDropdown()}else{// if nothing left to select close
+this.close()}}// since its not possible to select an element that has already been
+// added we do not need to check if this is a new element before firing change
+t
+2000
+his.triggerChange({added:e});this.focusSearch()},// multi
+cancel:function(){this.close();this.focusSearch()},// multi
+addSelectedChoice:function(t){var i=e("<li class='select2-search-choice'>"+"    <div></div>"+"    <a href='#' onclick='return false;' class='select2-search-choice-close' tabindex='-1'></a>"+"</li>"),s=this.id(t),n=this.getVal(),a;a=this.opts.formatSelection(t,i);i.find("div").replaceWith("<div>"+this.opts.escapeMarkup(a)+"</div>");i.find(".select2-search-choice-close").bind("mousedown",v).bind("click dblclick",this.bind(function(t){if(!this.enabled)return;e(t.target).closest(".select2-search-choice").fadeOut("fast",this.bind(function(){this.unselect(e(t.target));this.selection.find(".select2-search-choice-focus").removeClass("select2-search-choice-focus");this.close();this.focusSearch()})).dequeue();v(t)})).bind("focus",this.bind(function(){if(!this.enabled)return;this.container.addClass("select2-container-active");this.dropdown.addClass("select2-drop-active")}));i.data("select2-data",t);i.insertBefore(this.searchContainer);n.push(s);this.setVal(n)},// multi
+unselect:function(e){var t=this.getVal(),i,s;e=e.closest(".select2-search-choice");if(e.length===0){throw"Invalid argument: "+e+". Must be .select2-search-choice"}i=e.data("select2-data");s=l(this.id(i),t);if(s>=0){t.splice(s,1);this.setVal(t);if(this.select)this.postprocessResults()}e.remove();this.triggerChange({removed:i})},// multi
+postprocessResults:function(){var e=this.getVal(),t=this.results.find(".select2-result-selectable"),i=this.results.find(".select2-result-with-children"),s=this;t.each2(function(t,i){var n=s.id(i.data("select2-data"));if(l(n,e)>=0){i.addClass("select2-disabled").removeClass("select2-result-selectable")}else{i.removeClass("select2-disabled").addClass("select2-result-selectable")}});i.each2(function(e,t){if(t.find(".select2-result-selectable").length==0){t.addClass("select2-disabled")}else{t.removeClass("select2-disabled")}});t.each2(function(e,t){if(!t.hasClass("select2-disabled")&&t.hasClass("select2-result-selectable")){s.highlight(0);return false}})},// multi
+resizeSearch:function(){var e,t,i,s,n,a=h(this.search);e=b(this.search)+10;t=this.search.offset().left;i=this.selection.width();s=this.selection.offset().left;n=i-(t-s)-a;if(n<e){n=i-a}if(n<40){n=i-a}this.search.width(n)},// multi
+getVal:function(){var e;if(this.select){e=this.select.val();return e===null?[]:e}else{e=this.opts.element.val();return u(e,this.opts.separator)}},// multi
+setVal:function(t){var i;if(this.select){this.select.val(t)}else{i=[];// filter out duplicates
+e(t).each(function(){if(l(this,i)<0)i.push(this)});this.opts.element.val(i.length===0?"":i.join(this.opts.separator))}},// multi
+val:function(){var i,s=[],n=this;if(arguments.length===0){return this.getVal()}i=arguments[0];if(!i){this.opts.element.val("");this.updateSelection([]);this.clearSearch();return}// val is a list of ids
+this.setVal(i);if(this.select){this.select.find(":selected").each(function(){s.push({id:e(this).attr("value"),text:e(this).text()})});this.updateSelection(s)}else{if(this.opts.initSelection===t){throw new Error("val() cannot be called if initSelection() is not defined")}this.opts.initSelection(this.opts.element,function(t){var i=e(t).map(n.id);n.setVal(i);n.updateSelection(t);n.clearSearch()})}this.clearSearch()},// multi
+onSortStart:function(){if(this.select){throw new Error("Sorting of elements is not supported when attached to <select>. Attach to <input type='hidden'/> instead.")}// collapse search field into 0 width so its container can be collapsed as well
+this.search.width(0);// hide the container
+this.searchContainer.hide()},// multi
+onSortEnd:function(){var t=[],i=this;// show search and move it to the end of the list
+this.searchContainer.show();// make sure the search container is the last item in the list
+this.searchContainer.appendTo(this.searchContainer.parent());// since we collapsed the width in dragStarted, we resize it here
+this.resizeSearch();// update selection
+this.selection.find(".select2-search-choice").each(function(){t.push(i.opts.id(e(this).data("select2-data")))});this.setVal(t);this.triggerChange()},// multi
+data:function(t){var i=this,s;if(arguments.length===0){return this.selection.find(".select2-search-choice").map(function(){return e(this).data("select2-data")}).get()}else{if(!t){t=[]}s=e.map(t,function(e){return i.opts.id(e)});this.setVal(s);this.updateSelection(t);this.clearSearch()}}});e.fn.select2=function(){var i=Array.prototype.slice.call(arguments,0),s,r,o,c,u=["val","destroy","opened","open","close","focus","isFocused","container","onSortStart","onSortEnd","enable","disable","positionDropdown","data"];this.each(function(){if(i.length===0||typeof i[0]==="object"){s=i.length===0?{}:e.extend({},i[0]);s.element=e(this);if(s.element.get(0).tagName.toLowerCase()==="select"){c=s.element.attr("multiple")}else{c=s.multiple||false;if("tags"in s){s.multiple=c=true}}r=c?new a:new n;r.init(s)}else if(typeof i[0]==="string"){if(l(i[0],u)<0){throw"Unknown method: "+i[0]}o=t;r=e(this).data("select2");if(r===t)return;if(i[0]==="container"){o=r.container}else{o=r[i[0]].apply(r,i.slice(1))}if(o!==t){return false}}else{throw"Invalid arguments to select2 plugin: "+i}});return o===t?this:o};// plugin defaults, accessible to users
+e.fn.select2.defaults={width:"copy",closeOnSelect:true,openOnEnter:true,containerCss:{},dropdownCss:{},containerCssClass:"",dropdownCssClass:"",formatResult:function(e,t,i){var s=[];w(e.text,i.term,s);return s.join("")},formatSelection:function(e,i){return e?e.text:t},formatResultCssClass:function(e){return t},formatNoMatches:function(){return"No matches found"},formatInputTooShort:function(e,t){return"Please enter "+(t-e.length)+" more characters"},formatSelectionTooBig:function(e){return"You can only select "+e+" item"+(e==1?"":"s")},formatLoadMore:function(e){return"Loading more results..."},formatSearching:function(){return"Searching..."},minimumResultsForSearch:0,minimumInputLength:0,maximumSelectionSize:0,id:function(e){return e.id},matcher:function(e,t){return t.toUpperCase().indexOf(e.toUpperCase())>=0},separator:",",tokenSeparators:[],tokenizer:S,escapeMarkup:function(e){if(e&&typeof e==="string"){return e.replace(/&/g,"&amp;")}return e},blurOnChange:false};// exports
+window.Select2={query:{ajax:$,local:y,tags:C},util:{debounce:p,markMatch:w},"class":{"abstract":s,single:n,multi:a}}}(jQuery);/* vendors/css_browser_selector.js */
+/*
+CSS Browser Selector v0.4.0 (Nov 02, 2010)
+Rafael Lima (http://rafael.adm.br)
+http://rafael.adm.br/css_browser_selector
+License: http://creativecommons.org/licenses/by/2.5/
+Contributors: http://rafael.adm.br/css_browser_selector#contributors
+*/
+function css_browser_selector(e){var t=e.toLowerCase(),i=function(e){return t.indexOf(e)>-1},s="gecko",n="webkit",a="safari",r="opera",o="mobile",l=document.documentElement,u=[!/opera|webtv/i.test(t)&&/msie\s(\d)/.test(t)?"ie ie"+RegExp.$1:i("firefox/2")?s+" ff2":i("firefox/3.5")?s+" ff3 ff3_5":i("firefox/3.6")?s+" ff3 ff3_6":i("firefox/3")?s+" ff3":i("gecko/")?s:i("opera")?r+(/version\/(\d+)/.test(t)?" "+r+RegExp.$1:/opera(\s|\/)(\d+)/.test(t)?" "+r+RegExp.$2:""):i("konqueror")?"konqueror":i("blackberry")?o+" blackberry":i("android")?o+" android":i("chrome")?n+" chrome":i("iron")?n+" iron":i("applewebkit/")?n+" "+a+(/version\/(\d+)/.test(t)?" "+a+RegExp.$1:""):i("mozilla/")?s:"",i("j2me")?o+" j2me":i("iphone")?o+" iphone":i("ipod")?o+" ipod":i("ipad")?o+" ipad":i("mac")?"mac":i("darwin")?"mac":i("webtv")?"webtv":i("win")?"win"+(i("windows nt 6.0")?" vista":""):i("freebsd")?"freebsd":i("x11")||i("linux")?"linux":"","js"];c=u.join(" ");l.className+=" "+c;return c}css_browser_selector(navigator.userAgent);/* vendors/rails.js */
+!function(e,t){/**
+ * Unobtrusive scripting adapter for jQuery
+ *
+ * Requires jQuery 1.6.0 or later.
+ * https://github.com/rails/jquery-ujs
+
+ * Uploading file using rails.js
+ * =============================
+ *
+ * By default, browsers do not allow files to be uploaded via AJAX. As a result, if there are any non-blank file fields
+ * in the remote form, this adapter aborts the AJAX submission and allows the form to submit through standard means.
+ 
+2000
+*
+ * The `ajax:aborted:file` event allows you to bind your own handler to process the form submission however you wish.
+ *
+ * Ex:
+ *     $('form').live('ajax:aborted:file', function(event, elements){
+ *       // Implement own remote file-transfer handler here for non-blank file inputs passed in `elements`.
+ *       // Returning false in this handler tells rails.js to disallow standard form submission
+ *       return false;
+ *     });
+ *
+ * The `ajax:aborted:file` event is fired when a file-type input is detected with a non-blank value.
+ *
+ * Third-party tools can use this hook to detect when an AJAX file upload is attempted, and then use
+ * techniques like the iframe method to upload the file instead.
+ *
+ * Required fields in rails.js
+ * ===========================
+ *
+ * If any blank required inputs (required="required") are detected in the remote form, the whole form submission
+ * is canceled. Note that this is unlike file inputs, which still allow standard (non-AJAX) form submission.
+ *
+ * The `ajax:aborted:required` event allows you to bind your own handler to inform the user of blank required inputs.
+ *
+ * !! Note that Opera does not fire the form's submit event if there are blank required inputs, so this event may never
+ *    get fired in Opera. This event is what causes other browsers to exhibit the same submit-aborting behavior.
+ *
+ * Ex:
+ *     $('form').live('ajax:aborted:required', function(event, elements){
+ *       // Returning false in this handler tells rails.js to submit the form anyway.
+ *       // The blank required inputs are passed to this function in `elements`.
+ *       return ! confirm("Would you like to submit the form with missing info?");
+ *     });
+ */
+// Cut down on the number if issues from people inadvertently including jquery_ujs twice
+// by detecting and raising an error when it happens.
+var i=function(){var t=e._data(document,"events");return t&&t.click&&e.grep(t.click,function(e){return e.namespace==="rails"}).length};if(i()){e.error("jquery-ujs has already been loaded!")}// Shorthand to make it a little easier to call public rails functions from within rails.js
+var s;e.rails=s={// Link elements bound by jquery-ujs
+linkClickSelector:"a[data-confirm], a[data-method], a[data-remote], a[data-disable-with]",// Select elements bound by jquery-ujs
+inputChangeSelector:"select[data-remote], input[data-remote], textarea[data-remote]",// Form elements bound by jquery-ujs
+formSubmitSelector:"form",// Form input elements bound by jquery-ujs
+formInputClickSelector:"form input[type=submit], form input[type=image], form button[type=submit], form button:not([type])",// Form input elements disabled during form submission
+disableSelector:"input[data-disable-with], button[data-disable-with], textarea[data-disable-with]",// Form input elements re-enabled after form submission
+enableSelector:"input[data-disable-with]:disabled, button[data-disable-with]:disabled, textarea[data-disable-with]:disabled",// Form required input elements
+requiredInputSelector:"input[name][required]:not([disabled]),textarea[name][required]:not([disabled])",// Form file input elements
+fileInputSelector:"input:file",// Link onClick disable selector with possible reenable after remote submission
+linkDisableSelector:"a[data-disable-with]",// Make sure that every Ajax request sends the CSRF token
+CSRFProtection:function(t){var i=e('meta[name="csrf-token"]').attr("content");if(i)t.setRequestHeader("X-CSRF-Token",i)},// Triggers an event on an element and returns false if the event result is false
+fire:function(t,i,s){var n=e.Event(i);t.trigger(n,s);return n.result!==false},// Default confirm dialog, may be overridden with custom confirm dialog in $.rails.confirm
+confirm:function(e){return confirm(e)},// Default ajax function, may be overridden with custom function in $.rails.ajax
+ajax:function(t){return e.ajax(t)},// Default way to get an element's href. May be overridden at $.rails.href.
+href:function(e){return e.attr("href")},// Submits "remote" forms and links with ajax
+handleRemote:function(i){var n,a,r,o,l,c,u,h;if(s.fire(i,"ajax:before")){o=i.data("cross-domain");l=o===t?null:o;c=i.data("with-credentials")||null;u=i.data("type")||e.ajaxSettings&&e.ajaxSettings.dataType;if(i.is("form")){n=i.attr("method");a=i.attr("action");r=i.serializeArray();// memoized value from clicked submit button
+var d=i.data("ujs:submit-button");if(d){r.push(d);i.data("ujs:submit-button",null)}}else if(i.is(s.inputChangeSelector)){n=i.data("method");a=i.data("url");r=i.serialize();if(i.data("params"))r=r+"&"+i.data("params")}else{n=i.data("method");a=s.href(i);r=i.data("params")||null}h={type:n||"GET",data:r,dataType:u,// stopping the "ajax:beforeSend" event will cancel the ajax request
+beforeSend:function(e,n){if(n.dataType===t){e.setRequestHeader("accept","*/*;q=0.5, "+n.accepts.script)}return s.fire(i,"ajax:beforeSend",[e,n])},success:function(e,t,s){i.trigger("ajax:success",[e,t,s])},complete:function(e,t){i.trigger("ajax:complete",[e,t])},error:function(e,t,s){i.trigger("ajax:error",[e,t,s])},xhrFields:{withCredentials:c},crossDomain:l};// Only pass url to `ajax` options if not blank
+if(a){h.url=a}var f=s.ajax(h);i.trigger("ajax:send",f);return f}else{return false}},// Handles "data-method" on links such as:
+// <a href="/users/5" data-method="delete" rel="nofollow" data-confirm="Are you sure?">Delete</a>
+handleMethod:function(i){var n=s.href(i),a=i.data("method"),r=i.attr("target"),o=e("meta[name=csrf-token]").attr("content"),l=e("meta[name=csrf-param]").attr("content"),c=e('<form method="post" action="'+n+'"></form>'),u='<input name="_method" value="'+a+'" type="hidden" />';if(l!==t&&o!==t){u+='<input name="'+l+'" value="'+o+'" type="hidden" />'}if(r){c.attr("target",r)}c.hide().append(u).appendTo("body");c.submit()},/* Disables form elements:
+      - Caches element value in 'ujs:enable-with' data store
+      - Replaces element text with value of 'data-disable-with' attribute
+      - Sets disabled property to true
+    */
+disableFormElements:function(t){t.find(s.disableSelector).each(function(){var t=e(this),i=t.is("button")?"html":"val";t.data("ujs:enable-with",t[i]());t[i](t.data("disable-with"));t.prop("disabled",true)})},/* Re-enables disabled form elements:
+      - Replaces element text with cached value from 'ujs:enable-with' data store (created in `disableFormElements`)
+      - Sets disabled property to false
+    */
+enableFormElements:function(t){t.find(s.enableSelector).each(function(){var t=e(this),i=t.is("button")?"html":"val";if(t.data("ujs:enable-with"))t[i](t.data("ujs:enable-with"));t.prop("disabled",false)})},/* For 'data-confirm' attribute:
+      - Fires `confirm` event
+      - Shows the confirmation dialog
+      - Fires the `confirm:complete` event
+
+      Returns `true` if no function stops the chain and user chose yes; `false` otherwise.
+      Attaching a handler to the element's `confirm` event that returns a `falsy` value cancels the confirmation dialog.
+      Attaching a handler to the element's `confirm:complete` event that returns a `falsy` value makes this function
+      return false. The `confirm:complete` event is fired whether or not the user answered true or false to the dialog.
+   */
+allowAction:function(e){var t=e.data("confirm"),i=false,n;if(!t){return true}if(s.fire(e,"confirm")){i=s.confirm(t);n=s.fire(e,"confirm:complete",[i])}return i&&n},// Helper function which checks for blank inputs in a form that match the specified CSS selector
+blankInputs:function(t,i,s){var n=e(),a,r,o=i||"input,textarea",l=t.find(o);l.each(function(){a=e(this);r=a.is(":checkbox,:radio")?a.is(":checked"):a.val();// If nonBlank and valueToCheck are both truthy, or nonBlank and valueToCheck are both falsey
+if(!r===!s){// Don't count unchecked required radio if other radio with same name is checked
+if(a.is(":radio")&&l.filter('input:radio:checked[name="'+a.attr("name")+'"]').length){return true}n=n.add(a)}});return n.length?n:false},// Helper function which checks for non-blank inputs in a form that match the specified CSS selector
+nonBlankInputs:function(e,t){return s.blankInputs(e,t,true)},// Helper function, needed to provide consistent behavior in IE
+stopEver
+2000
+ything:function(t){e(t.target).trigger("ujs:everythingStopped");t.stopImmediatePropagation();return false},// find all the submit events directly bound to the form and
+// manually invoke them. If anyone returns false then stop the loop
+callFormSubmitBindings:function(i,s){var n=i.data("events"),a=true;if(n!==t&&n["submit"]!==t){e.each(n["submit"],function(e,t){if(typeof t.handler==="function")return a=t.handler(s)})}return a},//  replace element's html with the 'data-disable-with' after storing original html
+//  and prevent clicking on it
+disableElement:function(e){e.data("ujs:enable-with",e.html());// store enabled state
+e.html(e.data("disable-with"));// set to disabled state
+e.bind("click.railsDisable",function(e){// prevent further clicking
+return s.stopEverything(e)})},// restore element to its original state which was disabled by 'disableElement' above
+enableElement:function(e){if(e.data("ujs:enable-with")!==t){e.html(e.data("ujs:enable-with"));// set to old enabled state
+// this should be element.removeData('ujs:enable-with')
+// but, there is currently a bug in jquery which makes hyphenated data attributes not get removed
+e.data("ujs:enable-with",false)}e.unbind("click.railsDisable")}};if(s.fire(e(document),"rails:attachBindings")){e.ajaxPrefilter(function(e,t,i){if(!e.crossDomain){s.CSRFProtection(i)}});e(document).delegate(s.linkDisableSelector,"ajax:complete",function(){s.enableElement(e(this))});e(document).delegate(s.linkClickSelector,"click.rails",function(i){var n=e(this),a=n.data("method"),r=n.data("params");if(!s.allowAction(n))return s.stopEverything(i);if(n.is(s.linkDisableSelector))s.disableElement(n);if(n.data("remote")!==t){if((i.metaKey||i.ctrlKey)&&(!a||a==="GET")&&!r){return true}var o=s.handleRemote(n);// response from rails.handleRemote() will either be false or a deferred object promise.
+if(o===false){s.enableElement(n)}else{o.error(function(){s.enableElement(n)})}return false}else if(n.data("method")){s.handleMethod(n);return false}});e(document).delegate(s.inputChangeSelector,"change.rails",function(t){var i=e(this);if(!s.allowAction(i))return s.stopEverything(t);s.handleRemote(i);return false});e(document).delegate(s.formSubmitSelector,"submit.rails",function(i){var n=e(this),a=n.data("remote")!==t,r=s.blankInputs(n,s.requiredInputSelector),o=s.nonBlankInputs(n,s.fileInputSelector);if(!s.allowAction(n))return s.stopEverything(i);// skip other logic when required values are missing or file upload is present
+if(r&&n.attr("novalidate")==t&&s.fire(n,"ajax:aborted:required",[r])){return s.stopEverything(i)}if(a){if(o){// slight timeout so that the submit button gets properly serialized
+// (make it easy for event handler to serialize form without disabled values)
+setTimeout(function(){s.disableFormElements(n)},13);var l=s.fire(n,"ajax:aborted:file",[o]);// re-enable form elements if event bindings return false (canceling normal form submission)
+if(!l){setTimeout(function(){s.enableFormElements(n)},13)}return l}// If browser does not support submit bubbling, then this live-binding will be called before direct
+// bindings. Therefore, we should directly call any direct bindings before remotely submitting form.
+if(!e.support.submitBubbles&&e().jquery<"1.7"&&s.callFormSubmitBindings(n,i)===false)return s.stopEverything(i);s.handleRemote(n);return false}else{// slight timeout so that the submit button gets properly serialized
+setTimeout(function(){s.disableFormElements(n)},13)}});e(document).delegate(s.formInputClickSelector,"click.rails",function(t){var i=e(this);if(!s.allowAction(i))return s.stopEverything(t);// register the pressed submit button
+var n=i.attr("name"),a=n?{name:n,value:i.val()}:null;i.closest("form").data("ujs:submit-button",a)});e(document).delegate(s.formSubmitSelector,"ajax:beforeSend.rails",function(t){if(this==t.target)s.disableFormElements(e(this))});e(document).delegate(s.formSubmitSelector,"ajax:complete.rails",function(t){if(this==t.target)s.enableFormElements(e(this))});e(function(){// making sure that all forms have actual up-to-date token(cached forms contain old one)
+csrf_token=e("meta[name=csrf-token]").attr("content");csrf_param=e("meta[name=csrf-param]").attr("content");e('form input[name="'+csrf_param+'"]').val(csrf_token)})}}(jQuery);/* application.coffee */
+var cartItemsShown,cart_items_shown,closeModal,docWidth,getCartItems,getUrlVars,positionModal,saveProgram,trackCustomEvent;cart_items_shown=false;getUrlVars=function(){var e,t,i,s,n,a;s=[];e=[];t=window.location.href.slice(window.location.href.indexOf("?")+1).split("&");for(i=n=0,a=t.length;0<=a?n<a:n>a;i=0<=a?++n:--n){e=t[i].split("=");s.push(e[0]);s[e[0]]=e[1]}return s};docWidth=function(){return Math.max($(document).width(),$(window).width(),document.documentElement.clientWidth)};positionModal=function(e){var t,i;i=parseInt($("#"+e+"_modal").css("width").replace("px",""),10);t=(docWidth()-i)/2;if(e==="shipping"){t+=235}return $("#"+e+"_modal").css("left",t)};closeModal=function(e){$("#"+e+"_modal").fadeOut("fast");$(".overlay").fadeOut("slow");return $(".overlay").attr("data-type","")};trackCustomEvent=function(e,t,i,s,n){if(s===""&&n===""){return ga("send","event",e,t,i)}else{return ga("send","event",e,t,i,s,{nonInteraction:n})}};cartItemsShown=function(e){if(e){return cart_items_shown=true}else{return cart_items_shown=false}};getCartItems=function(){var e;e="/current_cart.json";$(".cart-products-new").html('<div class="i-wrapper"><i class="icon-spin icon-refresh"></i></div>');return $.ajax({type:"GET",accepts:{json:"application/json"},dataType:"JSON",url:e,success:function(e){var t,i,s,n,a,r,o,l,c,u,h,d;if(e){s={products:[]};r=0;t=0;o=e.items;c=e.mode;if(c==="program_edit"){i="Save Changes"}else{i="Proceed to Checkout"}if(o.length!==void 0){for(h=0,d=o.length;h<d;h++){l=o[h];s.products.push({product_option_id:l.product_option_id,retail_price:l.retail_price,quantity:l.quantity,max_per_order:l.max_per_order,brand_slug:l.brand_slug,product_slug:l.product_slug,product_title:l.product_title,totalprice:l.totalprice,cart_id:l.cart_id});t+=parseFloat(l.quantity)}}else{for(l in o){u=o[l];s.products.push({product_option_id:u.product_option_id,retail_price:u.retail_price,quantity:u.quantity,max_per_order:u.max_per_order,brand_slug:u.brand_slug,product_slug:u.product_slug,product_title:u.product_title,totalprice:u.totalprice,cart_id:u.cart_id});t+=parseFloat(u.quantity)}}$(".top-cart").children(".tally").children(".cart-count").html(t);if(c==="program_edit"){$(".top-checkout-link").html("My Program ("+t+")")}else{$(".top-checkout-link").html("Cart & Checkout ("+t+")")}n=["{{#products}}",'<div class="cart-product">','<input maxlength="2" id="product_quantity_{{product_option_id}}"','data-product-option-id="{{product_option_id}}"','data-product-base-price="{{retail_price}}"','type="text" value="{{quantity}}"','data-product-option-max-per-order="{{max_per_order}}"','class="product_quantity"',">",'<span class="title"><a href="/product/{{brand_slug}}/{{product_slug}}" >{{product_title}}</a></span>','<span id="product_price_{{product_option_id}}" class="price">${{totalprice}}</span>','<a href="/cart/{{cart_id}}/product_option/{{product_option_id}}/remove" class="remove-btn" rel="nofollow"><span class="remove">&times;</span></a>',"</div>","{{/products}}"].join("\n");if(c==="program_edit"){n=["{{#products}}",'<div class="cart-product">','<input maxlength="2" id="product_quantity_{{product_option_id}}"','data-product-option-id="{{product_option_id}}"','data-product-base-price="{{retail_price}}"','type="text" value="{{quantity}}"','data-product-option-max-per-order="{{max_per_order}}"','class="product_quantity"',">",'<span class="title"><a href="/product/{{brand_slug}}/{{product_slug}}" >{{product_title}}</a></span>','<span id="product_price_{{product_option_id}}" class="price">${{totalprice}}</span>','<a href="/cart_items/modify/destroy/{{product_option_id}}" class="remove-btn" rel="nofollow"><span class="remove">&times;</span></a>',"</div>","{{/products}}"].join("\n")}a=Mustache.render(n,s);$(".cart-products-new").html(a);if($(".top-cart").children(".checkout-btn").length===0){if(c==="program_edit"){$(".top-cart").append('<a href="/checkout" cla
+2000
+ss="checkout-btn program-save-btn" >'+i+' <i class="icon-caret-right"></i></a>')}else{$(".top-cart").append('<a href="/checkout" class="checkout-btn" >'+i+' <i class="icon-caret-right"></i></a>')}}return $(".top-cart-wrapper").slideDown()}},error:function(e,t,i){},data:{}})};saveProgram=function(){$(".program-save-message-wrapper").removeClass("noshow");return $.ajax({type:"GET",dataType:"JSON",url:"/programs/get_edit_information",success:function(e){var t;$(".program-save-message-wrapper").addClass("noshow");t=humane.create({timeout:3e3,baseCls:"humane-jackedup"});if(e.status==="success"){t.log(e.message)}else{t.log("Something went wrong, please try again or contact us.")}return setTimeout(function(){return window.location="/user/1/upcoming"},4e3)},error:function(e,t,i){},data:{}})};$(function(){var e,t,i,s,n,a,r,o,l,c,u,h,d,f,p,m,g,v,b,w,y,C,k,x,_,S,E,T,I,j;$.ajax({type:"GET",accepts:{json:"application/json"},dataType:"JSON",url:"/transition/start",cache:false,success:function(e){if(e.user.id!=="0"){$("#user-top-bar-options").prepend(['<li><a href="/" title="" id="bbbdb7c2ab" class="" >Home</a></li>','<li><a href="/user/'+e.user.id+'/upcoming" title="" id="_user_'+e.user.id+'_upcoming" class="link-loading" >My Orders</a></li>','<li><a href="/user/'+e.user.id+'/summary" title="" id="_user_'+e.user.id+'_summary" class="link-loading" >Account Info</a></li>','<li><a href="/user/logout" title="" id="_user_logout" class="" >Log out</a></li>'].join("\n"))}else{$("#user-top-bar-options").prepend('<li><a href="/user/login" title="" id="_user_login" class="" >Login</a></li>')}if(e.user.has_active_recurring_program!==""){if(e.user.has_active_recurring_program===true){$("#is_recurring_customer").val("true")}else if(e.user.has_active_recurring_program==="logged_out"){$("#is_recurring_customer").val("logged_out")}else{$("#is_recurring_customer").val("false")}}if(e.oneclick!=null){g.log(e.oneclick.quantity+" products successfully added to cart!");$(".top-my-cart").addClass("active");$(".top-cart-wrapper").slideDown("fast")}events["alert"]=function(t){var i;if(e.alerts){i=Handlebars.compile($("script#user-alert-messages").html());return $("div.messages").html(i({alerts:e.alerts}))}};events["transition-end"]=function(e){return $.ajax({type:"GET",accepts:{json:"application/json"},dataType:"JSON",url:"/transition/end",cache:false})};if(e.user.is_edit_program_mode!==""){if(e.user.is_edit_program_mode===true){$(".sidebar-checkout-btn").html('Save Changes <i class="icon-caret-right"></i>');$(".sidebar-checkout-btn").addClass("program-save-btn");$(".sidebar-checkout-btn").removeClass("noshow");$(".top-checkout-link").html("My Program");$("#page-vars").attr("data-edit-program-mode","true");$(".go-to-checkout").html("Save Changes")}else{$(".sidebar-checkout-btn").removeClass("noshow");$("#page-vars").attr("data-edit-program-mode","false")}}if(v!=="refer_a_friend"&&v!=="confirmation"){if(e.user.id!=="0"){window._frnd={site:"site-82cf2017-petflow.com",page:"All",customer:{id:e.user.id,email:e.user.email_address}}}else{window._frnd={site:"site-82cf2017-petflow.com",page:"All"}}return function(e,t,i){var s,n;s=e.getElementsByTagName(i)[0];n=e.getElementsByTagName(i)[0];s=e.createElement(i);s.type="text/javascript";s.async=true;s.src=t.protocol+"//djnf6e5yyirys.cloudfront.net/js/frndby.js";return n.parentNode.insertBefore(s,n)}(document,location,"script")}},error:function(e,t,i){},data:{}});g=humane.create({timeout:3e3,baseCls:"humane-jackedup"});v=$("#page-vars").attr("data-page-title");b=$("#page-vars").attr("data-page-type");if($.cookie("added_from_explorer")!==null){k=$.cookie("added_from_explorer").split(":");$.removeCookie("added_from_explorer",{path:"/"});y=k[0];x=k[1];g.log(y+"x "+x+" successfully added to cart!")}$(".my-program-top-link").on("click",function(e){return e.preventDefault()});$(".program-save-btn").live("click",function(e){e.preventDefault();return saveProgram()});$(".rx-selector").on("click",function(e){return window.location.href=$(this).children("a").attr("href")});$(".top-bar-need-help").hover(function(){return $(".contact-pop").show()},function(){});$(".contact-pop").hover(function(){},function(){return $(this).hide()});$(".top-tell-a-friend").on("click",function(e){e.preventDefault();positionModal("friendbuy");$(".overlay").attr("data-type","friendbuy");$(".overlay").fadeIn("fast",function(){return $(".overlay").css("filter","alpha(opacity = 70)")});return $("#friendbuy_modal").fadeIn("fast")});$(".friendbuy-banner").on("click",function(){positionModal("friendbuy");$(".overlay").attr("data-type","friendbuy");$(".overlay").fadeIn("fast",function(){return $(".overlay").css("filter","alpha(opacity = 70)")});return $("#friendbuy_modal").fadeIn("fast")});$(".friendbuy-close").on("click",function(e){e.preventDefault();return closeModal("friendbuy")});w=[".trackable-ad",".header-top-right-promo",".login-promo",".top-sidebar-promo",".sidebar-ad",".trackable-impression"];for(I=0,j=w.length;I<j;I++){c=w[I];if($(c).length!==0){n=$(c).attr("data-category");u=$(c).attr("data-label");e=$(c).attr("data-impression");T="";m="";trackCustomEvent(n,e,u,T,m)}}$(".trackable-ad, .trackable-link, .trackable-ad-no-impression, .header-top-right-promo, .login-promo, .checkout-shop-dog, .checkout-shop-cat, .top-sidebar-promo").on("click",function(){n=$(this).attr("data-category");u=$(this).attr("data-label");e=$(this).attr("data-click");T="";m="";return trackCustomEvent(n,e,u,T,m)});$(".message-minicart-link").live("click",function(e){e.preventDefault();$(".top-cart-wrapper").slideDown("fast");return setTimeout(function(){return $(".top-cart-wrapper").slideUp("fast")},2e4)});$("li.top-my-cart").hover(function(){if($("#page-vars").attr("data-page-title")!=="checkout"&&$("#page-vars").attr("data-page-title")!=="confirmation"){if(cart_items_shown===false){getCartItems();cart_items_shown=true}$(".top-cart-wrapper").show();return $(this).addClass("active")}},function(){});$(".message-minicart-link").live("click",function(e){e.preventDefault();if(cart_items_shown===false){return getCartItems()}});$("#top_cart").hover(function(){},function(){$(this).parent().parent().hide();return $("li.top-my-cart").removeClass("active")});$(".top-checkout-link").hover(function(){if($("#page-vars").attr("data-page-title")!=="checkout"&&$("#page-vars").attr("data-page-title")!=="confirmation"){return $(".top-cart-wrapper").show()}},function(){});$("body").hover(function(){$(".top-cart-wrapper").hide();$("li.top-my-cart").removeClass("active");return $(".contact-pop").hide()},function(){$(".top-cart-wrapper").hide();$("li.top-my-cart").removeClass("active");return $(".contact-pop").hide()});$(".top-cart-wrapper").hover(function(){},function(){$(".top-cart-wrapper").hide();return $("li.top-my-cart").removeClass("active")});C=function(){c=document.createElement("input");return"placeholder"in c};if(!C()){l=document.getElementsByTagName("INPUT");c=0;while(c<l.length){if(l[c].hasAttribute("placeholder")){a=$(l[c]).val();l[c].defaultValue=l[c].getAttribute("placeholder");if(a!==""){$(l[c]).val(a)}if($(l[c]).val()===""){if($.browser.msie&&($.browser.version==="8.0"||$.browser.version==="9.0")){$(l[c]).val(l[c].getAttribute("placeholder"))}}l[c].onfocus=function(){if(this.value===this.defaultValue){return this.value=""}};l[c].onblur=function(){if(this.value===""){return this.value=this.defaultValue}}}if(l[c].hasAttribute("data-placeholder")){l[c].replace=l[c].getAttribute("class").replace("replace-for-","");l[c].onfocus=function(){$(this).addClass("noshow");$("."+this.replace).removeClass("noshow");return $("."+this.replace).focus()}}else if(l[c].hasAttribute("data-replacement")){l[c].replacement=l[c].getAttribute("data-replacement");l[c].onblur=function(){if($(this).val()===""){$(this).addClass("noshow");return $("."+this.replacement).removeClass("noshow")}}}c++}}else{l=document.getElementsByTagName("INPUT");c=0;while(c<l.length){if(l[c].hasAttribute("data-placeholder")){l[c].replace=l[c].getAttribute("class").replace("replace-for-","");l[c].onfocus=function(){$(this).addClass("noshow");$("."+this.replace).removeClass("noshow");return $("."+this.replace).focus()}}else if(l[c].hasAttribute("data-
+2000
+replacement")){l[c].replacement=l[c].getAttribute("data-replacement");l[c].onblur=function(){if($(this).val()===""){$(this).addClass("noshow");return $("."+this.replacement).removeClass("noshow")}}}else if(l[c].hasAttribute("placeholder")){a=$(l[c]).val();l[c].defaultValue=l[c].getAttribute("placeholder");if(a!==""){$(l[c]).val(a)}if($(l[c]).val()===""){if($.browser.msie&&($.browser.version==="8.0"||$.browser.version==="9.0")){$(l[c]).val(l[c].getAttribute("placeholder"))}}l[c].onfocus=function(){if(this.value===this.defaultValue){return this.value=""}};l[c].onblur=function(){if(this.value===""){return this.value=this.defaultValue}}}c++}}$(".go-btn").on("click",function(e){var t;e.preventDefault();t=$("#brands").val().toLowerCase();console.log($("#page-vars").attr("data-rwbase")+(""+t));return window.location=$("#page-vars").attr("data-rwbase")+(""+t)});$(".search-btn").on("click",function(e){e.preventDefault();return $(this).parent().submit()});$(".submit, .submit-btn").on("click",function(e){e.preventDefault();return $(this).parents("form").submit()});$("#search_box").autocomplete({source:"/search/autocomplete",html:true,select:function(e,t){$("#search_box").val(t.item.value);return $("#search_box").closest("form").submit()}});if(getUrlVars().length>0){if(getUrlVars()["lua"]&&getUrlVars()["po"]&&getUrlVars()["p"]&&getUrlVars()["lua"]==="add"){h=getUrlVars()["lua"];E=getUrlVars()["po"];S=getUrlVars()["p"];$.ajax({type:"GET",dataType:"json",accepts:{json:"application/json"},url:$("#page-vars").attr("data-rwbase")+"explorer/upsell",success:function(e){var t;t=Handlebars.compile($("#upsell-product-template").html());e.Treats.each(function(e){return $("#treats-upsell-holder").append(t(e))});return e.Toys.each(function(e){return $("#toys-upsell-holder").append(t(e))})},error:function(e,t,i){},data:{product_id:S,product_option_id:E,ajax:"1"}});positionModal("upsell");$(".overlay").attr("data-type","upsell");$(".overlay").fadeIn("fast",function(){return $(".overlay").css("filter","alpha(opacity = 70)")});$("#upsell_modal").fadeIn("fast")}}$(".view-grid-btn").on("click",function(e){e.preventDefault();$.cookie("explorer_type","grid");$(this).addClass("active");$(".view-list-btn").removeClass("active");$(".products-grid").removeClass("force-hidden");$(".products-grid").removeClass("force-display");$(".products-list").removeClass("force-hidden");$(".products-list").removeClass("force-display");$(".products-grid").show();return $(".products-list").hide()});$(".view-list-btn").on("click",function(e){e.preventDefault();$.cookie("explorer_type","list");$(this).addClass("active");$(".view-grid-btn").removeClass("active");$(".products-list").removeClass("force-hidden");$(".products-list").removeClass("force-display");$(".products-grid").removeClass("force-hidden");$(".products-grid").removeClass("force-display");$(".products-list").show();return $(".products-grid").hide()});if($("#explorer_data").attr("data-type")!==""){o=$("#explorer_data").attr("data-type")}else{o=$.cookie("explorer_type")}if(!o){$(".view-list-btn").click()}if(o==="grid"){$(".view-grid-btn").click()}if(o==="list"){$(".view-list-btn").click()}$(".select2").select2();$(".top-btn").on("click",function(){return $("html, body").animate({scrollTop:0},200)});$(".admin-btn").on("click",function(){var e,t;$(".admin-content").css({position:"absolute",visibility:"hidden",display:"block"});t=$(".admin-content").height();e=$(".admin-btn").height();$(".admin-content").css({position:"fixed",visibility:"visible",display:"none"});if($(this).parent().parent(".admin-wrapper").hasClass("closed")){$(".admin-content").show();$(this).parent().parent(".admin-wrapper").animate({bottom:t+e+6},200);$(this).parent().parent(".admin-wrapper").removeClass("closed");return $(this).parent().parent(".admin-wrapper").addClass("open")}else{$(this).parent().parent(".admin-wrapper").stop().animate({bottom:0},200);$(".admin-content").slideDown("fast");$(this).parent().parent(".admin-wrapper").removeClass("open");return $(this).parent().parent(".admin-wrapper").addClass("closed")}});$("li.top-level").hoverIntent({over:function(){var t,i,s,a,r,o,l;if($("html").hasClass("gecko")){if($(this).hasClass("sub-menu-left")){t=this;s=$(t).find(".sub-menu");r=$(t).css("width").replace("px","");a=s.css("width").replace("px","");o=parseFloat(s.css("padding-left").replace("px",""))+parseFloat(s.css("padding-right").replace("px",""));$(this).find(".sub-menu").css("left",this.offsetLeft-(a-r)-o-1+"px")}else{$(this).find(".sub-menu").css("left",this.offsetLeft-1+"px")}}if($(this).attr("data-name")!=="top-level-cat-beds"){$(this).find(".sub-menu").slideToggle(400,"easeOutBack")}n="Navigation Bar";i=$(this).attr("data-name");u=$(this).attr("data-label");e=$(this).attr("data-action");if($(this).attr("data-name")!=="top-level-cat-beds"){$(this).attr("data-name","")}if(i===""){l=false}else{l=true}if(l===true){T="";m="";return trackCustomEvent(n,e,u,T,m)}},out:function(){if($(this).attr("data-name")!=="top-level-cat-beds"){return $(this).find(".sub-menu").slideToggle("fast")}}});$(window).scroll(function(e){if($(window).scrollTop()>116){$(".top-btn").addClass("show")}else{$(".top-btn").removeClass("show")}if($(window).scrollTop()>1){$(".top-bar").addClass("fixed");$(".top-cart-wrapper").addClass("fixed");if($("#page-vars").attr("data-page-title")==="doorbusters"){$(".bottom-bar-wrapper").show();return $(".bottom-bar-wrapper").addClass("fixed")}}else{$(".top-bar").removeClass("fixed");$(".top-cart-wrapper").removeClass("fixed");if($("#page-vars").attr("data-page-title")==="doorbusters"){$(".bottom-bar-wrapper").hide();return $(".bottom-bar-wrapper").removeClass("fixed")}}});$(".tab").on("click",function(){var e;$(".tab").removeClass("active");$(this).addClass("active");e=$(this).data("opens");$(".tab-content").hide();return $(".tab-content[data-id='"+e+"']").show()});$(".modal-tab").click(function(){$(".modal-tab").removeClass("active");$(this).addClass("active");if($(this).hasClass("toys")){$("#treats-upsell-holder").hide();$("#toys-upsell-holder").show()}if($(this).hasClass("treats")){$("#toys-upsell-holder").hide();return $("#treats-upsell-holder").show()}});$(".prevent-default").live("click",function(e){return e.preventDefault()});$(".close-selected").live("click",function(){});$(".filters li a").on("click",function(e){});$(".tile-wrapper").on("click",function(e){e.preventDefault();return window.location.href=$(this).children("a").attr("href")});$(".dog-selector").on("click",function(e){$(".cat-selector").removeClass("active");$(this).addClass("active");$("#cat_nav").addClass("noshow");$("#dog_nav").removeClass("noshow");if($(".splash").length){if($("img.dog-graphic").siblings(".switch-wrapper").children(".switch").next()[0].checked){$("img.dog-graphic").siblings(".switch-wrapper").children(".switch").children(".switch-background").children(".slider").animate({marginLeft:"-22px"},200);$("#cat_content").fadeOut("fast");$("#dog_content").fadeIn("slow");return $("img.dog-graphic").siblings(".switch-wrapper").children(".switch").next()[0].checked=!$("img.dog-graphic").siblings(".switch-wrapper").children(".switch").next()[0].checked}}});$(".cat-selector").on("click",function(e){$(".dog-selector").removeClass("active");$(this).addClass("active");$("#dog_nav").addClass("noshow");$("#cat_nav").removeClass("noshow");if($(".splash").length){if(!$("img.cat-graphic").siblings(".switch-wrapper").children(".switch").next()[0].checked){$("img.cat-graphic").siblings(".switch-wrapper").children(".switch").children(".switch-background").children(".slider").animate({marginLeft:"27px"},200);$("#dog_content").fadeOut("fast");$("#cat_content").fadeIn("slow");return $("img.cat-graphic").siblings(".switch-wrapper").children(".switch").next()[0].checked=!$("img.cat-graphic").siblings(".switch-wrapper").children(".switch").next()[0].checked}}});$(".pop").on("click",function(){positionModal("upsell");$(".overlay").attr("data-type","upsell");$(".overlay").fadeIn("fast",function(){return $(".overlay").css("filter","alpha(opacity = 70)")});return $("#upsell_modal").fadeIn("fast")});$(".free-shipping").on("click",function(e){positionModal("shipping");$(".overlay").attr("d
+1000
+ata-type","shipping");$(".overlay").fadeIn("fast",function(){return $(".overlay").css("filter","alpha(opacity = 70)")});return $("#shipping_modal").fadeIn("fast")});$(".overlay, .close-link, .close-btn, .continue-shopping-btn").on("click",function(e){e.preventDefault();return closeModal($(".overlay").attr("data-type"))});t=1;i=3;s=887;$(".left-semi").on("click",function(){if(t===i){$(".row").animate({right:0},400);return t=1}else{$(".row").animate({right:s*t},400);return t++}});$(".right-semi").on("click",function(){if(t===i){$(".row").animate({right:0},400);return t=1}else{$(".row").animate({right:s*t},400);return t++}});$(".footer-phone").on("click",function(e){return e.preventDefault()});f=[[9,3],[11,1],[11,2],[11,28],[12,25],[1,1],[5,28],[7,4]];p=function(e){var t,i;for(c=t=0,i=f.length;0<=i?t<i:t>i;c=0<=i?++t:--t){if(e.getMonth()===f[c][0]-1&&e.getDate()===f[c][1]){return[false,f[c][1]]}}return[true,""]};r=new Date;$(".datepicker").datepicker({dateFormat:"mm-dd-yy",altField:"#startDate",beforeShowDay:function(e){var t;t=$.datepicker.noWeekends(e);if(t[0]){return p(e)}else{return t}},minDate:r,maxDate:"+16w"});$(".autoship-datepicker").datepicker({dateFormat:"mm/dd/yy",altField:"#startDate",beforeShowDay:function(e){var t;t=$.datepicker.noWeekends(e);if(t[0]){return p(e)}else{return t}},minDate:r,maxDate:"+16w"});r=new Date;_=new Date;_.setDate(_.getDate()+1);d=r.getHours()<13||r.getHours()===13&&r.getMinutes()<30?r:_;$(".special-datepicker").datepicker({dateFormat:"mm-dd-yy",altField:"#startDate",beforeShowDay:function(e){var t;t=$.datepicker.noWeekends(e);if(t[0]){return p(e)}else{return t}},minDate:d,maxDate:"+16w"});$(".password-verification").on("keyup",function(){if($(this).val()===$(".password-1").val()){$(".not-matched").hide();return $(".matched").css("display","inline-block")}else{return $(".matched").hide()}});$(".password-verification").on("blur",function(){if($(this).val()!==""&&$(this).val()!==$(".password-1").val()){$(".matched").hide();return $(".not-matched").css("display","inline-block")}});$(".submit-reset").on("click",function(e){e.preventDefault();if($(".matched").css("display")!=="none"){return $("#reset_password_form").submit()}else{return false}});return $('input[id^="product_quantity_"]').live("keyup",function(){var e,t,i,s,n;s=$(this).attr("data-product-option-id");e=$(this).attr("data-product-base-price");t=$(this).data("product-option-max-per-order");i=$(this).val();n="#"+$(this).attr("id");if(i>t){alert("The order limit for this product has been exceeded.\nThe quantity for this product has been set to the maximum amount.");$(this).val(t);i=t}return setTimeout(function(){var t,a,r;if(parseFloat($(n).val())===parseFloat(i)){if(i!==""){a=e*i;t=$("#page-vars").attr("data-cart-id");r=0;$(n)[0].setAttribute("value",i);$("#product_price_"+s).html("$"+a.toFixed(2));$("div.minicart-overlay").removeClass("noshow");$("div.minicart-loading").removeClass("noshow");$("div.minicart-overlay").css("display","block");$("div.minicart-loading").css("display","block");$("input.product_quantity").each(function(e,t){return r+=parseInt($(t).val())});$(".top-cart").children(".tally").children(".cart-count").html(r);if($("#page-vars").attr("data-edit-program-mode")==="true"){$(".top-checkout-link").html("My Program ("+r+")")}else{$(".top-checkout-link").html("Cart & Checkout ("+r+")")}return $.ajax({type:"GET",dataType:"json",accepts:{json:"application/json"},data:{quantity:i,product_option_id:s,ajax:"1"},url:$("#page-vars").attr("data-rwbase")+"cart/"+t+"/product_option/"+s+"/update",success:function(e){}})}}},200)})});/* autocomplete_extension.js */
+/*
+ * jQuery UI Autocomplete HTML Extension
+ *
+ * Copyright 2010, Scott Gonz√°lez (http://scottgonzalez.com)
+ * Dual licensed under the MIT or GPL Version 2 licenses.
+ *
+ * http://github.com/scottgonzalez/jquery-ui-extensions
+ */
+!function(e){var t=e.ui.autocomplete.prototype,i=t._initSource;function s(t,i){var s=new RegExp(e.ui.autocomplete.escapeRegex(i),"i");return e.grep(t,function(t){return s.test(e("<div>").html(t.label||t.value||t).text())})}e.extend(t,{_initS
+13a
+ource:function(){if(this.options.html&&e.isArray(this.options.source)){this.source=function(e,t){t(s(this.options.source,e.term))}}else{i.call(this)}},_renderItem:function(t,i){return e("<li></li>").data("item.autocomplete",i).append(e("<a></a>")[this.options.html?"html":"text"](i.label)).appendTo(t)}})}(jQuery);
+0
+

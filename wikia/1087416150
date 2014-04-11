@@ -1,0 +1,25 @@
+PHTTP54.72.124.84"®
+7GET /analytics/?api_key=wikia&post_message=1 HTTP/1.1
+Host: w.visualdna.com
+Connection: keep-alive
+TAccept: text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8
+vUser-Agent: Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/31.0.1650.63 Safari/537.36
+%Referer: http://www.wikia.com/Wikia
+$Accept-Encoding: gzip,deflate,sdch
+!Accept-Language: en-US,en;q=0.8
+
+*­
+HTTP/1.1 302 Found
+Cache-Control: max-age=0
+Content-Type: text/html
+%Date: Tue, 08 Apr 2014 22:35:50 GMT
+(Expires: Tue, 08 Apr 2014 22:35:50 GMT
+RLocation: http://w.visualdna.com/analytics/?api_key=wikia&post_message=1&force=1
+LP3P: CP="IDC DSP COR ADM DEVi TAIi PSA PSD IVAi IVDi CONi HIS OUR IND CNT"
+Server: Apache
+oSet-Cookie: vdnaSessionId=534479c65b483; expires=Wed, 09-Apr-2014 00:35:50 GMT; path=/; domain=.visualdna.com
+…Set-Cookie: vdnaWidgetMC=c7493e8a-d59a-4af2-8ae8-34f91d498cfe; expires=Fri, 05-Apr-2024 22:35:50 GMT; path=/; domain=.visualdna.com
+-X-Vdna-Request-Id: U0R5xn8AAQEAABGEInMAAAAy
+Content-Length: 0
+Connection: keep-alive
+

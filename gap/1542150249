@@ -1,0 +1,42 @@
+PHTTP
+23.74.28.8"õ
+"POST /browse/tealeaf.do HTTP/1.1
+Host: www.gap.com
+Connection: keep-alive
+Content-Length: 1134
+Origin: http://www.gap.com
+X-TeaLeaf: ClientEvent
+ X-TeaLeaf-Page-Cui-Bytes: 1134
+vUser-Agent: Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/31.0.1650.63 Safari/537.36
+Content-Type: text/xml
+X-TeaLeaf-Page-Dwell: 26788
+X-TeaLeaf-Screen-Res: 4
+"X-TeaLeafType: PERFORMANCE; GUI;
+&X-TeaLeafSubType: INIT; BEFOREUNLOAD
+X-TeaLeaf-Page-Url: /
+X-TeaLeaf-Page-Cui-Events: 4
+X-TeaLeaf-Browser-Res: 4
+X-TeaLeaf-Page-Render: 2180
+Accept: */*
+Referer: http://www.gap.com/
+$Accept-Encoding: gzip,deflate,sdch
+!Accept-Language: en-US,en;q=0.8
+¶Cookie: JSESSIONID=12b85f17-dc4f-4b14-a05d-af93904d643a; ASP1V=CT-USR; dtm_token=AwME-1ff6rgu9gNhzeojAwMKPQM; mktUniversalPersist=NAV2FACETS_1306A_v2_GROUP_TEST%3DnavGroupSEGB%26windyCity2014v5%3DWindyCity2014_SegJ%26GOLNAV041014%3DGOLNAV041014SEGC%26ppabtest%3DsegA%26GOL_hasSeenEmailpop%3D1; mktGlobalSession=gb_disruptor%3D1; checkoutMode=isEnhanced%3Dtrue; gcoMode=seg%3DA; gcahMode=seg%3DA; gid.h=115|||; locale=en_US|||; unknownShopperId=F92B85644C21CA81B1329772BEF26241|||; omniSession=strProductCountInBag%3D0%26firstVisit%3Dtrue; pixelManagementPersist=pixelPartnerList%3DdoubleClick_2011/10/20-2015/10/24%252CrangeDoubleClick_2011/10/20-2015/10/24%252CtrialPay_2010/11/02-2020/12/20%252CbrightTag_2011/07/19-2014/07/19; s_vi=[CS]v1|29A42960851610D1-40000184A000B022[CE]; s_pers=%20s_dfa%3Dgapproduction%252Cgapgidproduction%7C1397250506728%3B%20s_fid%3D7DA8451997125815-339B46D7A89053F2%7C1460407107738%3B; s_sess=%20s_cc%3Dtrue%3B%20s_sq%3Dgapproduction%252Cgapgidproduction%253D%252526pid%25253Dgp%2525253Abrowse%2525253AHome%252526pidt%25253D1%252526oid%25253Dhttp%2525253A%2525252F%2525252Fwww.gap.com%2525252F%25252523close%252526ot%25253DA%3B; globalSession=pm-pageLoadTimeDeltaFromPreviousPage%3Dnull%26pm-domReadyTimeDeltaFromPreviousPage%3Dnull%26pm-undefined%3Dnull%26pm-outfitPageReadyTimeDeltaFromPreviousPage%3Dnull%26pm-outfitDataRequestTimeDeltaFromPreviousPage%3Dnull%26pm-outfitDataLoadTimeDeltaFromPreviousPage%3Dnull%26pm-outfitDataLoadTimeDeltaPerProductFromPreviousPage%3Dnull%26pm-outfitAddToBagDoneTimeDeltaFromPreviousPage%3Dnull%26pm-outfitAddToBagDoneTimeDeltaPerProductFromPreviousPage%3Dnull%26previousPageUrl%3D/%26previousPageUnloadDate%3D1397248731179%26previousPageName%3Dgp%253Abrowse%253AHome%26previousPageBusinessId%3D5058%26pm-timeToReadyFromPreviousPage%3Dnull%26timeToLoadFromPreviousPage%3Dnull
+ð
+<ClientEventSet PostTimeStamp="1397248731189">
+<ClientEvent type="PERFORMANCE" subType="INIT" timeDuration="2180" count="1" PageID="ID16H38M24S400R0.4176725468132645" > <document title="Shop Clothes For Women, Men, Baby, and Kids | Free Ship on $50 | Gap" lastModified="04/11/2014 20:38:26" characterSet="UTF-8" anchors="14" embeds="0" forms="2" links="203" images="49" badImages="0" plugins="0" /> <window initialOrientation="0" WindowHref="http%3A//www.gap.com/" protocol="http:" hostName="www.gap.com" pathName="/" frames="2" /> <screen width="1920" height="1200" /> </ClientEvent>
+<ClientEvent type="GUI" subType="mousedown" timeDuration="3283" TagName="A" XPath="[['close'],['A',0]]" TimeInControl="0" count="2" PageID="ID16H38M24S400R0.4176725468132645" />
+<ClientEvent type="GUI" subType="click" timeDuration="3343" TagName="A" XPath="[['close'],['A',0]]" TimeInControl="0" count="3" PageID="ID16H38M24S400R0.4176725468132645" />
+<ClientEvent type="PERFORMANCE" subType="BEFOREUNLOAD" timeDuration="26788" MouseMove="False" Action="No Submit" Alerts="0" count="4" PageID="ID16H38M24S400R0.4176725468132645" />
+</ClientEventSet>*©
+HTTP/1.1 200 OK
+Server: Apache-Coyote/1.1
+2Cache-Control: no-cache="set-cookie,set-cookie2"
+'Content-Type: text/html;charset=UTF-8
+Content-Length: 0
+%Date: Fri, 11 Apr 2014 20:38:51 GMT
+Connection: keep-alive
+\Set-Cookie: customerId=|||; Domain=.gap.com; Expires=Thu, 01-Jan-1970 00:00:10 GMT; Path=/
+]Set-Cookie: locale=en_US|||; Domain=.gap.com; Expires=Sun, 22-Jun-2014 20:38:59 GMT; Path=/
+‚Set-Cookie: unknownShopperId=F92B85644C21CA81B1329772BEF26241|||; Domain=.gap.com; Expires=Sun, 22-Jun-2014 20:38:59 GMT; Path=/
+

@@ -1,0 +1,31 @@
+PHTTP
+18.7.20.70"ì
+GGET /WebResource/Scripts/TP_ShopRunner/shoprunner_init.v2.js HTTP/1.1
+Host: images10.newegg.com
+Connection: keep-alive
+Accept: */*
+vUser-Agent: Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/31.0.1650.63 Safari/537.36
+!Referer: http://www.newegg.com/
+$Accept-Encoding: gzip,deflate,sdch
+!Accept-Language: en-US,en;q=0.8
+òCookie: mt.v=2.2022544403.1396994772664; NV%5FCONFIGURATION=#5%7B%22Sites%22%3A%7B%22USA%22%3A%7B%22Values%22%3A%7B%22wd%22%3A%220%22%2C%22w58%22%3A%22USD%22%2C%22w57%22%3A%22USA%22%7D%2C%22Exp%22%3A%221483394772%22%7D%7D%7D; NV%5FFV=#5%7B%22Sites%22%3A%7B%22USA%22%3A%7B%22Values%22%3A%7B%22RememberLanguage%22%3A%22en%22%7D%2C%22Exp%22%3A%221397081172%22%7D%7D%7D; NV%5FDVINFO=#5%7B%22Sites%22%3A%7B%22USA%22%3A%7B%22Values%22%3A%7B%22w19%22%3A%22Y%22%7D%2C%22Exp%22%3A%221397081172%22%7D%7D%7D
+
+*µ
+HTTP/1.1 200 OK
+"Cache-Control: max-age=946080000
+(Expires: Mon, 09 Nov 2043 01:47:57 GMT
+&Content-Type: application/javascript
+Content-Length: 1699
+X-Served-By: e4cac05
+X-Cache-Hits: 4
+%Date: Tue, 08 Apr 2014 22:06:12 GMT
+Connection: keep-alive
+¥
+
+
+    /* -------------------------------------- */
+    /* DO NOT MODIFY ANYTHING BELOW THIS LINE */
+    /* -------------------------------------- */
+
+_shoprunner_com.prefix=window.parent.document.location.protocol+"//";if(_shoprunner_com.enabled){switch(_shoprunner_com.environmentID){case 1:_shoprunner_com.sr_jsContentURL=_shoprunner_com.prefix+"staging-content.shoprunner.com/staging";break;case 2:_shoprunner_com.sr_jsContentURL=_shoprunner_com.prefix+"content.shoprunner.com";break;default:_shoprunner_com.sr_jsContentURL=_shoprunner_com.prefix+"staging-content.shoprunner.com/staging";break}if(_shoprunner_com.prefix=="https://"){var sr_CSS_URL=_shoprunner_com.sr_jsContentURL+"/Secure"+_shoprunner_com.retailerID+".css"}else{var sr_CSS_URL=_shoprunner_com.sr_jsContentURL+"/"+_shoprunner_com.retailerID+".css"}var sr_js_content_el_URL=_shoprunner_com.sr_jsContentURL+"/"+_shoprunner_com.retailerID+".js";setTimeout(function(){var a=document.createElement("link");a.href=sr_CSS_URL;a.type="text/css";a.rel="stylesheet";document.getElementsByTagName("head")[0].appendChild(a);var b=document.createElement("script");b.src=sr_js_content_el_URL;b.type="text/javascript";document.getElementsByTagName("head")[0].appendChild(b)},1)}_shoprunner_com.docReady=false;function dom_loaded(){_shoprunner_com.docReady=true;if(typeof(sr_$)!=="undefined"){sr_$.run()}}if(document.addEventListener){document.addEventListener("DOMContentLoaded",dom_loaded,false)}else{if(document.attachEvent){document.attachEvent("onreadystatechange",dom_loaded)}}if(window.addEventListener){window.addEventListener("load",dom_loaded,false)}else{if(window.attachEvent){var r=window.attachEvent("onload",dom_loaded)}};
+

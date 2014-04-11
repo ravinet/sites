@@ -1,0 +1,19 @@
+PHTTP66.117.23.107"¡
+àGET /m2/registercom/mbox/standard?mboxHost=www.networksolutions.com&mboxSession=1396994763628-398030&mboxPage=1396994763628-398030&screenHeight=600&screenWidth=800&browserWidth=780&browserHeight=518&browserTimeOffset=-240&colorDepth=24&mboxCount=1&isCsr=false&isProduction=true&mbox=ns_homepage_better_tld_merchandizing&mboxId=0&mboxTime=1396980363637&mboxURL=http%3A%2F%2Fwww.networksolutions.com%2F&mboxReferrer=http%3A%2F%2Fwww.networksolutions.com%2F&mboxVersion=41 HTTP/1.1
+!Host: registercom.tt.omtrdc.net
+Connection: keep-alive
+Accept: */*
+vUser-Agent: Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/31.0.1650.63 Safari/537.36
++Referer: http://www.networksolutions.com/
+$Accept-Encoding: gzip,deflate,sdch
+!Accept-Language: en-US,en;q=0.8
+
+*Å
+HTTP/1.1 200 OK
+pragma: no-cache
+-Content-Type: text/javascript;charset=UTF-8
+Content-Length: 1682
+%Date: Tue, 08 Apr 2014 22:06:03 GMT
+Server: Test & Target
+”
+var mboxCurrent=mboxFactories.get('default').get('ns_homepage_better_tld_merchandizing',0);mboxCurrent.setEventTime('include.start');document.write('<div style="visibility: hidden; display: none" id="mboxImported-default-ns_homepage_better_tld_merchandizing-0">');document.write('<!-- Offer Id: 103882  --><script>\r\nnstt.redirect(\'\/index-v3.jsp\');\r\n<\/script>');document.write('<!-- Offer Id: 49416  --><script language=\"javascript1.2\">\r\nif(location.host.indexOf(\'csr.register.com\')!=-1||location.host.indexOf(\'csr.qa-head.register.com\' )!=-1){mboxCurrent.setOffer(new mboxOfferDefault()).loaded()}\r\n\r\n<\/script>\r\n\r\n');document.write('<!-- Offer Id: 66444  --><script type=\"text\/javascript\">\r\n\/*mboxHighlight+ (1of2) v1 ==> Response Plugin*\/\r\nwindow.ttMETA=(typeof(window.ttMETA)!=\'undefined\')?window.ttMETA:[];window.ttMETA.push({\'mbox\':\'ns_homepage_better_tld_merchandizing\',\'campaign\':\'NS | TECH-7207: Netsol- Turn On B version of homepage - New Merchandizing\',\'experience\':\'Experience A\',\'offer\':\'NS | TECH-6609: New Merchandizing (new redir)\'});window.ttMBX=function(x){var mbxList=[];for(i=0;i<ttMETA.length;i++){if(ttMETA[i].mbox==x.getName()){mbxList.push(ttMETA[i])}}return mbxList[x.getId()]}\r\n<\/script>');document.write('<!-- Offer Id: 41490  --><script type=\"text\/javascript\">\r\nif (typeof(s_tnt) == \'undefined\') {\r\nvar s_tnt = \'\';\r\n}\r\ns_tnt += \'51767:0:0,\';\r\n<\/script>');document.write('</div>');mboxCurrent.setEventTime('include.end');mboxFactories.get('default').get('ns_homepage_better_tld_merchandizing',0).loaded();mboxFactories.get('default').getPCId().forceId("1396994763628-398030.25_46");

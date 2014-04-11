@@ -1,0 +1,20 @@
+PHTTP50.17.239.15"‚
+\GET /dpmpxl/index.php?id=1946153502974467281&cl=78&r=764135&q=imp&_=1396994885896 HTTP/1.1
+Host: a.dpmsrv.com
+Connection: keep-alive
+Accept: */*
+vUser-Agent: Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/31.0.1650.63 Safari/537.36
+Referer: http://www.pch.com/
+$Accept-Encoding: gzip,deflate,sdch
+!Accept-Language: en-US,en;q=0.8
+
+*ë
+HTTP/1.1 200 OK
+7Content-Type: application/x-javascript; charset=utf-8
+%Date: Tue, 08 Apr 2014 22:08:05 GMT
+Server: nginx/1.4.1
+ySet-Cookie: dpm_pxl=38cbade101cf507a0019168b287db58c; expires=Fri, 15-Dec-2045 23:54:44 GMT; path=/; domain=.dpmsrv.com
+Content-Length: 176
+Connection: keep-alive
+²
+window.DPMSRV.setAppnexusId('1946153502974467281', {"country_code":"US","city":"Cambridge","dma":"506","latitude":"42.3646","longitude":"-71.1028","sCast":[]}, "128.30.76.55");

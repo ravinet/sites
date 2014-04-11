@@ -1,0 +1,27 @@
+PHTTP208.89.14.135"Â
+ÁGET /hc/73849751/?&visitor=111640324057860&msessionkey=3326448075131914641&siteContainer=STANDALONE&site=73849751&cmd=mTagStartPage&lpCallId=718529751058-267342334846&protV=20&lpjson=1&page=http%3A//www.gotomeeting.com/online/&id=7762680169&javaSupport=false&visitorStatus=INSITE_STATUS&activePlugin=none&cobrowse=true&PV%21unit=GoToMeeting-WW&PV%21product=g2mwt&PV%21lpTagVer=1.5.1&PV%21visitorActive=1&SV%21language=english&title=Easy%20Online%20Meetings%20With%20HD%20Video%20Conferencing%20%7C%20GoToMeeting%20%7C%20GoToWebinar%20%7C%20GoToTraining&cobrowse=true HTTP/1.1
+Host: sales.liveperson.net
+Connection: keep-alive
+Accept: */*
+vUser-Agent: Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/31.0.1650.63 Safari/537.36
+-Referer: http://www.gotomeeting.com/online/
+$Accept-Encoding: gzip,deflate,sdch
+!Accept-Language: en-US,en;q=0.8
+ÀCookie: HumanClickKEY=3326448075131914641; HumanClickSiteContainerID_73849751=STANDALONE; LivePersonID=-111640324057860-1396993883:-1:-1:-1:-1; LivePersonID=LP i=111640324057860,d=1396993883
+
+*‡
+HTTP/1.1 200 OK
+%Date: Tue, 08 Apr 2014 21:51:23 GMT
+Server: Microsoft-IIS/6.0
+GP3P: CP="NON BUS INT NAV COM ADM CON CUR IVA IVD OTP PSA PSD TEL SAM"
+X-Powered-By: ASP.NET
+NSet-Cookie: HumanClickSiteContainerID_73849751=STANDALONE; path=/hc/73849751
+(Content-Type: application/x-javascript
+Accept-Ranges: bytes
+.Last-Modified: Tue, 08 Apr 2014 21:51:23 GMT
+Cache-Control: no-store
+Pragma: no-cache
+(Expires: Wed, 31 Dec 1969 23:59:59 GMT
+Content-Length: 2582
+˜
+lpConnLib.Process({"ResultSet": {"lpCallId":"718529751058-267342334846","lpCallConfirm":"","lpJS_Execute":[{"code_id": "SYSTEM!updateButtonStatic_compact.js", "js_code": "function lpUpdateStaticButton(){this.hcDate=function(){var d=new Date();return d.getTime();};this.hcGetImage=function(name){return this.hcFindImage(document,name);};this.hcFindImage=function(doc,name){var i;if(this.hcDOM){var elements=doc.getElementsByTagName('IMG');var collection=[];for(i=0;i<elements.length;i++){if((typeof(elements[i].name)!='undefined')&&(elements[i].name==name)){collection[collection.length]=elements[i];}}if(collection.length==0){return null;}if(collection.length==1){return collection[0];}return collection;}var lays=doc.layers;if(!lays){return doc[name];}for(i=0;i<doc.images.length;i++){if(doc.images[i].name==name){return doc.images[i];}}for(var l=0;l<lays.length;l++){var img=this.hcFindImage(lays[l].document,name);if(img!=null){return img;}}return null;};this.hcDOM=(document.getElementById)?true:false;this.hcimage=this.hcGetImage('hcIcon');this.hcicon=null;var i;if(this.hcimage){if(!(this.hcimage.length)){var temp=this.hcimage;this.hcimage=[];this.hcimage[0]=temp;}this.hcicon=[];for(i=0;i<this.hcimage.length;i++){this.hcicon[i]=this.hcimage[i].src;}}if(this.hcimage){for(i=0;i<this.hcimage.length;i++){this.hcimage[i].src=this.hcicon[i]+'&monitor=1&d='+this.hcDate();}}if(typeof(lpMTagStatic)!='undefined'&&typeof(lpMTagStatic.stateChangeCallbacks)!='undefined'){for(i=0;i<lpMTagStatic.stateChangeCallbacks.length;i++){var tempfunc=lpMTagStatic.stateChangeCallbacks[i];try{tempfunc();if(lpConnLib.DebugDisplay){lpMTagDebug.Display('OK Executing Static button callback function','EXEC-OK');}}catch(hcError){if(lpConnLib.DebugDisplay){lpMTagDebug.Display('ERROR Executing Static button callback function='+tempfunc+' &nbsp #'+hcError+'#','ERROR');}}}}}var lpUpdateStaticButtonObj=new lpUpdateStaticButton();"},{"code_id": "LP_REP_STATE_CHANGED", "js_code": "if(window.lpTag&&window.lpTag.events){window.lpTag.events.trigger('LPChat','LP_REP_STATE_CHANGED',{});}else if(window.lpMTag&&window.lpMTag.events){window.lpMTag.events.publish('LP_REP_STATE_CHANGED',{});}"},{"code_id": "INPAGE-DELAY-10", "js_code": "lpMTag.lpInPageRequestDelay=10;"},{"code_id": "FPCSetVal", "js_code": "lpMTagConfig.useFirstParty = false;lpMTag.lpDeleteCookie(lpMTagConfig.FPC_VID_NAME,'/',lpMTagConfig.FPC_ParentDomain);lpMTag.lpDeleteCookie(lpMTagConfig.FPC_SKEY_NAME, '/',lpMTagConfig.FPC_ParentDomain);lpMTag.lpDeleteCookie(lpMTagConfig.FPC_CONT_NAME, '/',lpMTagConfig.FPC_ParentDomain);"}]}});

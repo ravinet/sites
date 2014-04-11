@@ -1,0 +1,25 @@
+PHTTP23.74.28.11"­
+1GET /shows.ontvnow.2014_4_8_21_30.json HTTP/1.1
+Host: www.foodnetwork.com
+Connection: keep-alive
+8Accept: application/json, text/javascript, */*; q=0.01
+"X-Requested-With: XMLHttpRequest
+vUser-Agent: Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/31.0.1650.63 Safari/537.36
+&Referer: http://www.foodnetwork.com/
+$Accept-Encoding: gzip,deflate,sdch
+!Accept-Language: en-US,en;q=0.8
+õCookie: s_cc=true; s_nr=1396993283999; gpv_pn=no%20value; s_sq=%5B%5BB%5D%5D; geoadvisory=1; aam_did=21648485936224841913136698455904685049; aam_fw=scripps%3Dtest%3Baam%3D375785%3Baam%3D260319; s_vi=[CS]v1|29A2368185013074-6000010720003772[CE]
+
+*Þ
+HTTP/1.1 200 OK
+Accept-Ranges: bytes
+ Content-Type: application/json
+#ETag: "210303d-1a9-4f68ed547b4d1"
+.Last-Modified: Tue, 08 Apr 2014 21:40:30 GMT
+ Server: Apache/2.2.25 (Amazon)
+Content-Length: 425
+%Date: Tue, 08 Apr 2014 21:41:24 GMT
+Connection: keep-alive
+Vary: User-Agent
+«
+{"scheduleData":{"moduleName":"ontvnow","parameters":{"year":2014,"month":3,"day":8,"hour":17,"minute":30},"onTVNow":[{"onAirTitle":"Trisha's Southern Kitchen","onAirUrl":"http://www.foodnetwork.com/shows/trishas-southern-kitchen","onAirText":"5:30|4:30c","airTimeHeader":"On Now"}],"featured":[{"onAirTitle":"Chopped","onAirUrl":"http://www.foodnetwork.com/shows/chopped","onAirText":"10|9c","airTimeHeader":"on tonight"}]}}

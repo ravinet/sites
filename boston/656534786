@@ -1,0 +1,32 @@
+PHTTP74.217.78.196"¦
+WGET /applist?orgId=&key=cinesport&hostname=cinesport.boston.com&placementId= HTTP/1.1
+Host: ads.adap.tv
+Connection: keep-alive
+vUser-Agent: Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/31.0.1650.63 Safari/537.36
+Accept: */*
+HReferer: http://cinesport.boston.com/boxad/boston-globe-sportswriters/
+$Accept-Encoding: gzip,deflate,sdch
+!Accept-Language: en-US,en;q=0.8
+
+*•
+HTTP/1.1 200 OK
+Server: adaptv/1.0
+Content-Type: text/xml
+Connection: Keep-Alive
+Content-Length: 284
+ž
+<?xml version="1.0" encoding="UTF-8"?>
+
+<AppList>
+	<App>
+		<Id><![CDATA[16]]></Id>
+
+		<Name><![CDATA[Viewability]]></Name>
+
+		<ShortName><![CDATA[vw]]></ShortName>
+
+		<Scripts>
+			<URL><![CDATA[classpath://tv.adap.apps.viewability.Viewability]]></URL>
+		</Scripts>
+	</App>
+</AppList>

@@ -1,0 +1,817 @@
+PHTTP68.99.123.161"È
+$GET /residential/home.cox HTTP/1.1
+Host: ww2.cox.com
+Connection: keep-alive
+TAccept: text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8
+vUser-Agent: Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/31.0.1650.63 Safari/537.36
+$Accept-Encoding: gzip,deflate,sdch
+!Accept-Language: en-US,en;q=0.8
+ÕCookie: SMIDENTITY=WQwRlyEtxh43cCHVj6tce9w3XC8Qk+T9ZV5qMvsxrQ0OigtJNoe6tvZplehSjYxBS0Xy0Vj+1ydPfpaZ+uj27QAenUJm9OAJVYO3em7NVBEeT6a9jhdlZyM2dRsXLxnFMQZU8Qa6YZLDgyN1MW2+RDO9lVXumRz5rKMaWvwUix+ppcVJV+D2bcSmucUUW8JySOChcenHCDq8/Ha/K/DOGzOqTCZLWvPm3/NLRcnGnu/FkZvmRgaIsXnRJPOrsZm5nB6zWhjA8QL/+LFFy4mXeI0sUr+ukbXgzFlE+VHrRt5t5rxg/wfiY6IMSgd63Dq3CrWLng+m5VRa9HdI/CTrxRlj08srmdx9BpLLfcP2cFP7ohzG5kU5CxV9Ye/jjPhu6meYCafNDvzq3S4t5ygje0MosgvBuyFqWVs/EzqplgYmxlOuIy983lZrd7lSRGD3PR3pOCVqmbc154z6IH/z5lobuIlGr5UwJBW0jRxmiTupeyQPuFm/sTrrx9246StsbL6IQbgKbhaV91Q9evGOlTugqJzyYtvv6i+2PkVaivLXQX/qq/r3HuUuYVYSAKWCVCQFi6R4hmGwtLuMEfGbR+XE3zna6rPCUZbTiRSbetdDMg9DM+e0sWW7Sn7SrIIqkpSkv+mvm5C/O82kPIXiVYa4kOwQnws3jiGXf+B0B6qcEwO46POg9Y6w+7mUwaTk
+
+*Î˜
+HTTP/1.1 200 OK
+%Date: Fri, 11 Apr 2014 14:32:19 GMT
+Server: Apache
+Vary: Host
+TSet-Cookie: JSESSIONID=89A6A5177A58741F1819A766D180CD92.core_05; Path=/residential
+RSet-Cookie: cox-current-zipcode=02139; Max-Age=31536000; Domain=.cox.com; Path=/
+CSet-Cookie: cox-current-site=; Max-Age=0; Domain=.cox.com; Path=/
+X-UA-Compatible: IE=edge
+Keep-Alive: timeout=10
+Connection: Keep-Alive
+Transfer-Encoding: chunked
+'Content-Type: text/html;charset=UTF-8
+ê”
+1ff8
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en">
+<!-- VERSION: RC-CLIENT-5_1_2_0 --><head><title>Cox Communications: The Official Website |  TV, Phone, Internet, Home Security and Tech Solutions services</title><link rel="shortcut icon" href="http://images.cox.com/presentation/tsw/residential/favicon.ico"/><meta http-equiv="cache-control" content="no-cache"/><meta http-equiv="Pragma" content="no-cache"/><meta http-equiv="expires" content="0"/><meta name="title" content="Cox Communications: The Official Website |  TV, Phone, Internet, Home Security and Tech Solutions services"/><!-- OPEN PF PLUGIN: head -->
+<meta http-equiv="content-type" content="application/xhtml+xml;charset=utf-8"/>
+<meta name="robots" content="all,index,follow"/>
+<meta name="description" content="TV, Phone, Internet, Home Security and Tech Solutions services from Cox Communications. Cox helps you bring your digital life to life."/>
+<meta name="keywords" content="cox communications, tv, television, cable service, cable company, cable on demand, cable plans, digital cable, telephone service, phone plans, internet service, isp"/>
+<script>
+var s_account='coxcomnew';
+var __coxOmnitureParams = 
+{
+    "articleID": "",
+    "businessUnit": "residential",
+    "campaign": "",
+    "campaignCodeInternal": "",
+    "categoryCarted": "",
+    "categoryPurchased": "",
+    "categorySubscribed": "",
+    "categoryViewed": "",
+    "channel": "home",
+    "checkoutPages": "",
+    "cidm": "",
+    "customerType": "unknown-ZIP",
+    "franchiseid": "",
+    "hier1": "residential,home",
+    "hier2": "residential,home",
+    "keyword": "",
+    "language": "en",
+    "localeName": "",
+    "logStatus": "not logged in",
+    "monthlyRecurringCharge": "",
+    "offer": "",
+    "offerCarted": "",
+    "offerPurchased": "",
+    "onetimecharge": "",
+    "orderInstallChargeProSavings": "",
+    "orderInstallChargeSelfDropShip": "",
+    "orderInstallChargeSelfDropShipSavings": "",
+    "orderInstallChargeSelfPickUp": "",
+    "orderInstallChargeSelfPickUpSavings": "",
+    "orderOneTimeServicesAmount": "",
+    "orderPastDueAmount": "",
+    "orderSavedCartStatus": "",
+    "orderTotalDueNow": "",
+    "pageName": "residential:home",
+    "productCarted": "",
+    "productPurchased": "",
+    "productSubscribed": "",
+    "productViewed": "",
+    "promoCode": "",
+    "promoCodeEntered": "",
+    "purchaseId": "",
+    "searchReferrer": "",
+    "searchResultsFlag": "false",
+    "sectionName": "",
+    "segmentMarketing": "",
+    "segmentValue": "",
+    "signintype": "Not Signed In",
+    "simplePageName": "home",
+    "siteId": "",
+    "state": "",
+    "totalOrderValue": "",
+    "totalmonthlysavings": "",
+    "totalonetimesavings": "",
+    "zip": "02139"
+};
+</script>
+<script src="/ui/emergence/corp/en/js/OmnitureLibrary.js.jgz"></script>
+<!-- headcontext generator class -CommonHeadContext -->
+<!-- Common JS Includes -->
+<script src="/ui/emergence/corp/en/js/lib.js.jgz"></script>
+<script src="/ui/emergence/corp/en/js/mojo.js.jgz"></script>
+<script src="/ui/emergence/corp/en/js/stdlib.js.jgz"></script>
+<script src="/ui/emergence/corp/en/js/cox.js.jgz"></script>
+<!-- Common CSS links -->
+<link href="/ui/tsw/css/all.css.jgz" rel="stylesheet" />
+<!-- Custom CSS links from properties file -->
+<link href="/ui/tsw/css/residential.css.jgz" rel="stylesheet" />
+<!-- Logoff link -->
+<link href="https://idm.east.cox.net/css/logoff.css" rel="stylesheet" />
+<script>lpUnit = 'sales';</script>
+<script src="/ui/emergence/corp/en/js/extlib/liveperson/mtagconfig.js"></script>
+<script>
+var LPAcctNum = '57460284';
+var CoxSiteURL = 'cox';
+lpInit();
+lpAddVars('page','OmninturePageName','residential:home');
+lpAddVars('session','SiteID','999');
+lpAddVars('page','Section','home');
+lpAddVars('session','CustomerType','unknown');
+lpAddVars('session','FranchiseID','');
+lpAddVars('session','CoxSiteURL','cox');
+lpAddVars('session','SiteName','');
+lpAddVars('page','BusinessUnit','residential');
+lpAddVars('page','ChatActive','true');
+</script>
+
+<!-- CLOSE PF PLUGIN: head --><link href="http://images.cox.com/presentation/tsw/residential/css/presentation.css.jgz" rel="stylesheet" /><script src="http://images.cox.com/presentation/tsw/residential/js/presentation.js.jgz"></script><script>var CciFrameworkUrl = "//ww2.cox.com/presentation/rest/3.0/locations/cities/";</script>
+<!-- OPEN PF PLUGIN: header-commands -->
+
+<!-- CLOSE PF PLUGIN: header-commands -->
+<style>
+.pf-constrain-width { width: 960px; } 
+</style></head>
+<body class="grid-12">
+<!-- PF-COMPONENT-BEGIN:introduction --><!-- OPEN PF PLUGIN: body-prefix -->
+<div class="mboxDefault"></div>
+<script>
+ mboxCreate('global');
+</script>
+
+<!-- CLOSE PF PLUGIN: body-prefix --><!-- PF-COMPONENT-END:introduction --><!-- PF-COMPONENT-BEGIN:container -->
+<div id="pf-container">
+<div class="pf-constrain-width pf-tsw"><div id="pf-header"><ul class="pf-tsw-titlebar-left pf-tsw-residential-active"><li class="pf-tsw-residential-tab"><a href="http://ww2.cox.com/residential/home.cox" class="pf-nav-label">Residential</a></li><li class="pf-tsw-business-tab"><a href="http://ww2.cox.com/business/" class="pf-nav-label">Business</a></li></ul><ul class="pf-tsw-titlebar-right"> 
+<li class="pf-tsw-titlebar-search" id="pf-tsw-titlebar-search"><form id="pf-search-panel" action="http://ww2.cox.com/search/residential/internal.cox" method="post" enctype="multipart/form-data"><fieldset><input type="hidden" name="crumbs" value="~/residential" /><input type="hidden" name="filter" value="cox" id="pf-search-cox" /><input type="text" id="pf-search-input" name="term" value="" class="pf-search-field" maxlength="1024" /><input type="submit" id="pf-search-submit" name="pf-search-submit" value="" /></fieldset></form></li>
+<li class="pf-tsw-titlebar-espanol"><a title="Espa&#x00F1;ol" href="http://espanol.cox.com/" id="pf-language" class="mporgnav">Espa&#x00F1;ol</a></li>
+<li class="pf-tsw-titlebar-cart"><a href="https://store.cox.com/residential-store/shoppingcart.cox" title="Cart Empty">&nbsp;</a></li>
+<li class="pf-tsw-titlebar-location"><a id="pf-btn-location" class="pf-toggle pf-nav-trigger-location" href="#" title="Cambridge, MA">Cambridge, MA</a>
+<div id="pf-location-panel" class="pf-overlay" style="display:block;">
+<form id="pf-location-zipcode-form" action="http://intercept.cox.com/dispatch/2502826274914604027/intercept.cox?lob=residential&s=pf" method="post"><fieldset><input type="hidden" name="dest" value="http://ww2.cox.com/residential/home.cox"/><input type="hidden" name="gl" value="pfgeolocation"/><span id="pf-location-close-btn"></span><div class="pf-loader"></div>
+<h3>Hello. We don't offer service in: 02139</h3><p><a href="http://cablemover.com/find?c=1734&zip=02139" target="_blank">Visit Cablemover.com to find a new cable provider for zip: 02139</a></p><div class="pf-divider"></div>
+<div id="pf-location-zipcode-form-status" class="pf-form-error"></div><p class="pf-location-intro">Let us know the location you'd like to browse.</p><div class="pf-location-panel-mid-section"><input value="02139" type="text" id="zipcode" name="zipcode" maxlength="5" data-type="zip" title="Zip Code" placeholder="Zip"/><span class="pf-location-panel-or">or</span><select id="state" name="state"><option value="" selected="selected">Choose a state</option>
+<option value="AZ">Arizona</option>
+<option value="AR">Arkansas</option>
+<option value="CA">California</option>
+<option value="CT">Connecticut</option>
+<option value="FL">Florida</option>
+<option value="GA">Georgia</option>
+<option value="ID">Idaho</option>
+<option value="IA">Iowa</option>
+<option value="KS">Kansas</option>
+<option value="LA">Louisiana</option>
+<option value="MA">Massachusetts</option>
+<option value="MO">Missouri</option>
+<option value="NE">Nebraska</option>
+<option value="NV">Nevada</option>
+<option value="NC">North Carolina</option>
+<option value="OH">Ohio</option>
+<option value="OK">Oklahoma</option>
+<option value="RI">Rhode Island</option>
+<option value="VA">Virginia</option>
+</select> 
+<select id="city" name="city"><option value="" selected="selected">City</option></select><input type="submit" class="pf-location-panel-submit-form" value="Check This Area" /></
+1ff8
+div><div class="pf-divider"></div>
+<p>Already a Cox Residential customer? <a href="#" class="pf-toggle pf-nav-trigger-signin-panel">sign in</a></p>
+<p>Looking for Business services? <a href="http://ww2.cox.com/business/">Go to Cox Business home</a></p></fieldset></form></div></li></ul></div><div id="pf-nav" class="pf-nav no-print">
+<ul class="pf-nav-groups"><li>
+<a href="http://ww2.cox.com/residential/home.cox"><img src="http://images.cox.com/presentation/tsw/residential/img/interface/header/logo-cox.png" alt="Cox Communications" /></a>
+</li>
+<li class="pf-nav-group"><ul class="pf-nav-items">
+<li class="pf-nav-item pf-nav-flyout"><a href="http://ww2.cox.com/residential/shop.cox" title="Shop" id="pf-residential-shop">Shop</a></li>
+<li class="pf-nav-item pf-nav-flyout"><a href="http://ww2.cox.com/resaccount/home.cox" title="My Account" id="pf-residential-myaccount">My Account</a></li>
+<li class="pf-nav-item pf-nav-flyout"><a href="http://ww2.cox.com/myconnection/home.cox" title="My Connection" id="pf-residential-myconnection">My Connection</a></li>
+<li class="pf-nav-item pf-nav-flyout"><a href="http://ww2.cox.com/residential/support.cox" title="Support" id="pf-residential-support">Support</a></li>
+</ul></li><li class="pf-nav-group pf-nav-triggers">
+<a class="pf-toggle pf-nav-trigger-signin" href="#" title="Sign In">Sign In</a><div id="pf-signin-panel" class="pf-overlay no-print"><form id="pf-signin-form" action="https://idm.east.cox.net/idm/coxnetlogin" enctype="application/x-www-form-urlencoded" method="post"><fieldset><input name="onsuccess" id="pf-onsuccess" value="http%3A%2F%2Fww2.cox.com%2Fresidential%2Fhome.cox" type="hidden" /><input name="onfailure" id="pf-onfailure" value="http://ww2.cox.com/residential/sign-in.cox?onsuccess=http%3A%2F%2Fww2.cox.com%2Fresidential%2Fhome.cox" type="hidden" /><input name="targetFN" value="COX.net" type="hidden" /><input name="emaildomain" value="@cox.net" type="hidden" /><div id="pf-signin-form-status" class="pf-form-error"></div><input type="text" id="username" name="username" title="User ID" placeholder="User ID" value="" /><div class="password-wrapper"><label for="password" class="display-placeholder">Password</label> 
+<input type="password" class="create-placeholder" id="password" name="password" title="Password" placeholder="Password" /></div><input type="submit" id="pf-signin-submit" name="pf-signin-submit" value="Sign In" /><span id="pf-signin-lock"></span>
+<input type="checkbox" id="rememberme" name="rememberme" />
+<label for="rememberme" id="rememberme-label">Remember User ID</label><hr/><a href="https://idm.east.cox.net/selfservice2/registerresidentialaccountholder.action">No Account? Register Now!</a><a href="https://idm.east.cox.net/selfservice2/lookupuserid.action">Forgot User ID</a> / 
+<a href="https://idm.east.cox.net/selfservice2/resetpassword.action?finalview=">Password?</a></fieldset></form></div>
+<a class="pf-toggle pf-nav-trigger-contact" href="#" title="Contact">Contact</a><div id="pf-contact-panel" class="pf-overlay no-print"> 
+<ul>
+<li>
+<strong>Customer Sales</strong>
+<span>866-961-0027</span>
+</li>
+<li>
+</li>
+<li>
+<a href="/aboutus/contact-us/cox-centers.cox" title="Retail Locations">Retail Locations</a>
+</li>
+<li>
+<a href="/residential/contact-us.cox" title="Local Service &amp; Support">Local Service &amp; Support</a>
+</li>
+</ul>
+</div></li></ul>
+<!-- mega menu --><div id="pf-mega-menu" class="pf-mega-menu-residential">
+<div id="pf-residential-shop-items" class="pf-nav-items-secondary pf-clearfix">
+<ul>
+<li><a href="http://ww2.cox.com/residential/tv.cox" class="pf-nav-items-secondary-header" title="Contour &amp; TV">Contour &amp; TV</a></li>
+<li><a href="https://store.cox.com/residential-store/shop.cox&#63;dc=w" title="TV Packages">TV Packages</a></li>
+<li><a href="http://ww2.cox.com/residential/tv/contour.cox" title="Contour">Contour</a></li>
+<li><a href="http://ww2.cox.com/residential/tv/tv-channel-options.cox" title="Channel Options">Channel Options</a></li>
+<li><a href="http://ww2.cox.com/residential/tv/dvr.cox" title="Record 6 &amp; DVR Options">Record 6 &amp; DVR Options</a></li>
+<li><a href="http://ww2.cox.com/residential/tv/sports-packages.cox" title="Sports Packages">Sports Packages</a></li>
+<li><a href="http://ww2.cox.com/residential/tv/espanol-tv.cox" title="Hispanic &amp; International">Hispanic &amp; International</a></li>
+<li><a href="http://ww2.cox.com/residential/tv/on-demand.cox" title="On Demand">On Demand</a></li>
+<li><a href="http://ww2.cox.com/residential/tv/premium-channels.cox" title="Premium Channels">Premium Channels</a></li>
+<li><a href="http://ww2.cox.com/residential/tv/pay-per-view.cox" title="Pay-Per-View Events">Pay-Per-View Events</a></li>
+<li><a href="http://ww2.cox.com/residential/tv/tv-technology.cox" title="TV Technology">TV Technology</a></li>
+<li><a href="http://ww2.cox.com/residential/tv/channel-lineup.cox" title="Channel Lineups">Channel Lineups</a></li>
+</ul>
+<ul>
+<li><a href="http://ww2.cox.com/residential/internet.cox" class="pf-nav-items-secondary-header" title="Internet">Internet</a></li>
+<li><a href="https://store.cox.com/residential-store/shop.cox&#63;hsi=w" title="Internet Packages">Internet Packages</a></li>
+<li><a href="http://ww2.cox.com/residential/internet/features.cox" title="Features">Features</a></li>
+<li><a href="http://ww2.cox.com/residential/internet/modem-wifi-in-home.cox" title="WiFi Modems">WiFi Modems</a></li>
+<li><a href="http://ww2.cox.com/residential/internet/security.cox" title="Security Software">Security Software</a></li>
+<li><a href="http://ww2.cox.com/residential/internet/speed-advisor.cox" title="Speed Advisor">Speed Advisor</a></li>
+<li><a href="http://ww2.cox.com/residential/internet/wifi-hotspots.cox" title="WiFi Hotspots">WiFi Hotspots</a></li>
+<li><a href="http://ww2.cox.com/residential/tech-solutions.cox" class="pf-nav-items-secondary-header" title="Tech Solutions">Tech Solutions</a></li>
+<li><a href="http://ww2.cox.com/residential/tech-solutions/help-desk.cox" title="24/7 Help Desk">24/7 Help Desk</a></li>
+<li><a href="http://ww2.cox.com/residential/tech-solutions/one-time-help-support.cox" title="One-Time Support">One-Time Support</a></li>
+</ul>
+<ul>
+<li><a href="http://ww2.cox.com/residential/phone.cox" class="pf-nav-items-secondary-header" title="Home Phone">Home Phone</a></li>
+<li><a href="https://store.cox.com/residential-store/shop.cox&#63;dt=w" title="Phone Packages">Phone Packages</a></li>
+<li><a href="http://ww2.cox.com/residential/phone/features.cox" title="Features">Features</a></li>
+<li><a href="http://ww2.cox.com/residential/phone/international-rates.cox" title="International Calling">International Calling</a></li>
+<li><a href="http://ww2.cox.com/residential/phone/lifeline.cox" title="Lifeline">Lifeline</a></li>
+<li><a href="http://ww2.cox.com/residential/wireless.cox" class="pf-nav-items-secondary-header" title="Verizon Wireless">Verizon Wireless</a></li>
+<li><a href="http://ww2.cox.com/residential/home-security.cox" class="pf-nav-items-secondary-header" title="Home Security">Home Security</a></li>
+<li><a href="http://ww2.cox.com/residential/home-security/prices.cox" title="Packages &amp; Prices">Packages &amp; Prices</a></li>
+<li><a href="http://ww2.cox.com/residential/home-security/features.cox" title="Features">Features</a></li>
+<li><a href="http://ww2.cox.com/residential/home-security/equipment.cox" title="Equipment">Equipment</a></li>
+</ul>
+<ul>
+<li><a href="http://ww2.cox.com/residential/shop.cox" class="pf-nav-items-secondary-header" title="Shop Home">Shop Home</a></li>
+<li><a href="https://store.cox.com/residential-store/shop.cox" title="Shop All Offers">Shop All Offers</a></li>
+<li><a href="https://store.cox.com/residential-store/shop.cox&#63;com=y" title="Compare Bundles">Compare Bundles</a></li>
+<li><a href="https://store.cox.com/residential-store/buildyourbundle.cox" title="Build Your Own Bundle">Build Your Own Bundle</a></li>
+<li><a href="http://ww2.cox.com/residential/special-offers/set-up-new-service.cox" title="Set Up New Service">Set Up New Service</a></li>
+<li><a href="https://store.cox.com/residential-store/check-order-status.cox" title="Check Order Status"
+1ff8
+>Check Order Status</a></li>
+<li><a href="http://ww2.cox.com/residential/special-offers/move.cox" title="Move My Service">Move My Service</a></li>
+</ul>
+</div>
+<div id="pf-residential-myaccount-items" class="pf-nav-items-secondary pf-clearfix">
+<ul>
+<li><a href="http://ww2.cox.com/resaccount/home.cox" class="pf-nav-items-secondary-header" title="My Account Home">My Account Home</a></li>
+<li><a href="http://ww2.cox.com/resaccount/home.cox" title="My Account Overview">My Account Overview</a></li>
+<li><a href="http://ww2.cox.com/resaccount/my-services.cox" title="Explore My Services">Explore My Services</a></li>
+<li><a href="https://store.cox.com/residential-store/transfer-services.cox" title="Move or Transfer Services">Move or Transfer Services</a></li>
+<li><a href="https://store.cox.com/residential-store/signin.cox" title="Add or Upgrade Services">Add or Upgrade Services</a></li>
+<li><a href="http://ww2.cox.com/residential/support/service-appointment.cox" title="Manage Appointments">Manage Appointments</a></li>
+</ul>
+<ul>
+<li><a href="http://ww2.cox.com/ibill/home.cox" class="pf-nav-items-secondary-header" title="View / Pay Bill">View / Pay Bill</a></li>
+<li><a href="http://ww2.cox.com/ibill/home.cox" title="View Bill">View Bill</a></li>
+<li><a href="http://ww2.cox.com/ibill/pay-bill.cox" title="Pay Bill">Pay Bill</a></li>
+<li><a href="http://ww2.cox.com/ibill/easypay-enroll.cox" title="Automatic Payments">Automatic Payments</a></li>
+<li><a href="http://ww2.cox.com/ibill/recent-activity.cox" title="View Recent Activity">View Recent Activity</a></li>
+<li><a href="https://idm.east.cox.net/selfservice2/secure/managepayment.action&#63;finalview=http://ww2.cox.com/resaccount/home.cox" title="Payment Methods">Payment Methods</a></li>
+<li><a href="http://ww2.cox.com/ibill/easypay-enroll.cox" title="Change EasyPay Settings">Change EasyPay Settings</a></li>
+<li><a href="http://ww2.cox.com/ibill/bill-delivery.cox" title="Enroll in Paperless Billing">Enroll in Paperless Billing</a></li>
+</ul>
+<ul>
+<li><a href="http://ww2.cox.com/resaccount/tools.cox" class="pf-nav-items-secondary-header" title="My Tools">My Tools</a></li>
+<li><a href="http://webmail.cox.net/do/mail/folder/view" title="WebMail Inbox">WebMail Inbox</a></li>
+<li><a href="http://ww2.cox.com/resaccount/tools.cox" title="TV Tools">TV Tools</a></li>
+<li><a href="http://ww2.cox.com/resaccount/tools.cox" title="Internet Tools">Internet Tools</a></li>
+<li><a href="http://ww2.cox.com/resaccount/tools.cox" title="Phone Tools">Phone Tools</a></li>
+<li><a href="http://ww2.cox.com/aboutus/our-story/our-services/mobile-apps.cox" title="Cox Apps">Cox Apps</a></li>
+<li><a href="https://portal.coxhomesecurity.com/sp/login.jsp" title="Home Security Portal">Home Security Portal</a></li>
+</ul>
+<ul>
+<li><a href="http://ww2.cox.com/resaccount/my-profile.cox" class="pf-nav-items-secondary-header" title="Profile &amp; Settings">Profile &amp; Settings</a></li>
+<li><a href="http://ww2.cox.com/resaccount/my-profile.cox" title="View My Account Profile">View My Account Profile</a></li>
+<li><a href="http://ww2.cox.com/resaccount/my-profile.cox" title="Change Password">Change Password</a></li>
+<li><a href="http://ww2.cox.com/resaccount/my-profile.cox" title="Identity and Preferences">Identity and Preferences</a></li>
+<li><a href="http://ww2.cox.com/resaccount/my-profile.cox" title="Privacy Preferences">Privacy Preferences</a></li>
+<li><a href="https://myaccount.cox.net/internettools/email/email.cox" title="Manage Email Boxes">Manage Email Boxes</a></li>
+</ul>
+</div>
+<div id="pf-residential-myconnection-items" class="pf-nav-items-secondary pf-clearfix">
+<ul>
+<li><a href="http://ww2.cox.com/myconnection/home.cox" class="pf-nav-items-secondary-header" title="My Connection Home">My Connection Home</a></li>
+<li><a href="http://ww2.cox.com/myconnection/today.cox" class="pf-nav-items-secondary-header" title="Today&#39;s News">Today&#39;s News</a></li>
+<li><a href="http://ww2.cox.com/myconnection/today/news.cox" title="Top Stories">Top Stories</a></li>
+<li><a href="http://ww2.cox.com/myconnection/today/news/local.cox" title="Local News">Local News</a></li>
+<li><a href="http://ww2.cox.com/myconnection/today/weather.cox" title="Weather">Weather</a></li>
+<li><a href="http://ww2.cox.com/myconnection/today/sports.cox" title="Sports">Sports</a></li>
+<li><a href="http://ww2.cox.com/myconnection/today/news/entertainment.cox" title="Entertainment">Entertainment</a></li>
+<li><a href="http://ww2.cox.com/myconnection/today/slideshow.cox" title="News in Pictures">News in Pictures</a></li>
+</ul>
+<ul>
+<li><a href="http://ww2.cox.com/myconnection/watch.cox" class="pf-nav-items-secondary-header" title="Watch">Watch</a></li>
+<li><a href="http://ww2.cox.com/myconnection/watch/entertainment/tv-connect.cox" title="Watch Live TV">Watch Live TV</a></li>
+<li><a href="http://ww2.cox.com/myconnection/watch/video-landing.cox" title="Watch TV Online">Watch TV Online</a></li>
+<li><a href="http://ww2.cox.com/myconnection/watch/entertainment/online-apps.cox" title="Network TV Apps">Network TV Apps</a></li>
+<li><a href="http://ww2.cox.com/myconnection/watch/entertainment/tv-listings.cox" title="TV Listings &amp; Set DVR">TV Listings &amp; Set DVR</a></li>
+<li><a href="http://ww2.cox.com/myconnection/watch/entertainment/on-demand.cox" title="On DEMAND">On DEMAND</a></li>
+<li><a href="http://ww2.cox.com/myconnection/watch/pay-per-view.cox" title="Pay-Per-View Events">Pay-Per-View Events</a></li>
+<li><a href="http://ww2.cox.com/myconnection/watch/entertainment/movie-finder.cox" title="Movie Finder">Movie Finder</a></li>
+<li><a href="http://ww2.cox.com/myconnection/watch/entertainment.cox" title="Featured Shows">Featured Shows</a></li>
+</ul>
+<ul>
+<li><a href="http://ww2.cox.com/myconnection/surf.cox" class="pf-nav-items-secondary-header" title="Surf">Surf</a></li>
+<li><a href="http://ww2.cox.com/myconnection/surf/espn3.cox" title="ESPN3 on WatchESPN">ESPN3 on WatchESPN</a></li>
+<li><a href="http://ww2.cox.com/myconnection/surf/nick-jr-boost.cox" title="Nick Jr. Boost">Nick Jr. Boost</a></li>
+<li><a href="http://ww2.cox.com/myconnection/surf/mobile-connect.cox" title="Mobile Connect App">Mobile Connect App</a></li>
+<li><a href="http://ww2.cox.com/myconnection/surf/pricegrabber.cox" title="PriceGrabber">PriceGrabber</a></li>
+<li><a href="http://ww2.cox.com/myconnection/surf/autos.cox" title="AutoTrader">AutoTrader</a></li>
+<li><a href="http://ww2.cox.com/myconnection/surf/kudzu.cox" title="Kudzu">Kudzu</a></li>
+</ul>
+<ul>
+<li><a href="http://ww2.cox.com/myconnection/learn.cox" class="pf-nav-items-secondary-header" title="Learn">Learn</a></li>
+<li><a href="http://ww2.cox.com/myconnection/learn/data-usage.cox" title="All About Data Usage">All About Data Usage</a></li>
+<li><a href="http://ww2.cox.com/myconnection/learn/cox-services.cox" title="Getting Started with your Cox Services">Getting Started with your Cox Services</a></li>
+<li><a href="http://ww2.cox.com/myconnection/learn/safe-and-sound.cox" title="Keep Your Family Safe &amp; Sound">Keep Your Family Safe &amp; Sound</a></li>
+<li><a href="http://ww2.cox.com/myconnection/learn/staying-connected.cox" title="Staying Connected with Your Family">Staying Connected with Your Family</a></li>
+<li><a href="http://ww2.cox.com/myconnection/learn/whats-so-hot.cox" title="What&#39;s So Hot About...">What&#39;s So Hot About...</a></li>
+<li><a href="http://ww2.cox.com/myconnection/learn/informed-shopper.cox" title="Become an Informed Shopper">Become an Informed Shopper</a></li>
+<li><a href="http://ww2.cox.com/myconnection/learn/did-you-know.cox" title="Did You Know&#63;">Did You Know&#63;</a></li>
+</ul>
+<div class="pf-clearfix"></div>
+<ul>
+<li><a href="http://ww2.cox.com/myconnection/community.cox" class="pf-nav-items-secondary-header" title="Community">Community</a></li>
+<li><a href="http://ww2.cox.com/myconnection/community/conserve.cox" title="Cox Conserves">Cox Conserves</a></li>
+<li><a href="http://ww2.cox.com/myconnection/community/awards.cox" title="Community Awards">Community Awards</a></li>
+<li><a href="http://ww2.cox.com/myconnection/community/boysandgirls.cox" title="Boys &amp; Girls Club">Boys &amp; G
+1ff8
+irls Club</a></li>
+<li><a href="http://ww2.cox.com/myconnection/community/youthandeducation.cox" title="Youth &amp; Education">Youth &amp; Education</a></li>
+</ul>
+<ul>
+<li><a href="https://myaccount.cox.net" class="pf-nav-items-secondary-header" title="Internet Tools">Internet Tools</a></li>
+<li><a href="http://webmail.cox.net" title="Email / WebMail">Email / WebMail</a></li>
+<li><a href="http://backup.cox.com" title="Online Backup">Online Backup</a></li>
+<li><a href="https://myaccount.cox.net/internettools/securitysuite/about.cox" title="Security Software">Security Software</a></li>
+<li><a href="https://myaccount.cox.net/internettools/speedcheck/speedcheck.cox" title="Speed Check">Speed Check</a></li>
+<li><a href="https://myaccount.cox.net/internettools/datausage/usage.cox" title="Data Usage Meter">Data Usage Meter</a></li>
+<li><a href="https://myaccount.cox.net/internettools/homenetworking/homenetworking.cox" title="Home Network Manager">Home Network Manager</a></li>
+<li><a href="https://myaccount.cox.net/internettools/pchealth/about.cox" title="PC Health Check">PC Health Check</a></li>
+</ul>
+<ul>
+<li><a href="https://phonetools.cox.net" class="pf-nav-items-secondary-header" title="Phone Tools">Phone Tools</a></li>
+<li><a href="https://phonetools.cox.net/phonetoolsrefresh/callhistory/phonecallhistory.cox" title="Call History">Call History</a></li>
+<li><a href="https://phonetools.cox.net/phonetoolsrefresh/messages/messages.cox" title="Voice Mail Messages">Voice Mail Messages</a></li>
+<li><a href="https://phonetools.cox.net/phonetoolsrefresh/settings/phonesettings.cox" title="Settings - Call Forwarding, Waiting and more">Settings - Call Forwarding, Waiting and more</a></li>
+</ul>
+<ul>
+<li><a href="http://ww2.cox.com/myconnection/watch/tv-tools.cox" class="pf-nav-items-secondary-header" title="TV Tools">TV Tools</a></li>
+<li><a href="http://ww2.cox.com/residential/tv/channel-lineup.cox" title="Channel Lineups">Channel Lineups</a></li>
+<li><a href="http://ww2.cox.com/myconnection/watch/entertainment/tv-listings.cox" title="TV Listings">TV Listings</a></li>
+<li><a href="http://ww2.cox.com/myconnection/watch/entertainment/tv-listings/remote-dvr-info.cox" title="Remote DVR Scheduling">Remote DVR Scheduling</a></li>
+</ul>
+</div>
+<div id="pf-residential-support-items" class="pf-nav-items-secondary pf-clearfix">
+<ul>
+<li><a href="http://ww2.cox.com/residential/support.cox" class="pf-nav-items-secondary-header" title="Help Articles">Help Articles</a></li>
+<li><a href="http://ww2.cox.com/residential/support/tv.cox" title="TV">TV</a></li>
+<li><a href="http://ww2.cox.com/residential/support/internet.cox" title="Internet">Internet</a></li>
+<li><a href="http://ww2.cox.com/residential/support/phone.cox" title="Phone">Phone</a></li>
+<li><a href="http://ww2.cox.com/residential/support/home-security.cox" title="Home Security">Home Security</a></li>
+<li><a href="http://ww2.cox.com/residential/support/billing-and-account.cox" title="Billing &amp; Account">Billing &amp; Account</a></li>
+</ul>
+<ul>
+<li><a href="http://ww2.cox.com/residential/support/step-by-step-solutions.cox" class="pf-nav-items-secondary-header" title="Step-by-Step Solutions">Step-by-Step Solutions</a></li>
+<li><a href="/residential/support/tv/guidedhelp.cox&#63;articleId=bb793bb0-db1b-11e1-6d35-000000000000" title="TV Picture Problems">TV Picture Problems</a></li>
+<li><a href="/residential/support/internet/guidedhelp.cox&#63;articleId=67a26470-d6c6-11e1-d920-000000000000" title="Email Settings">Email Settings</a></li>
+<li><a href="/residential/support/phone/guidedhelp.cox&#63;articleId=63d49390-d6c6-11e1-d920-000000000000" title="Call Forwarding">Call Forwarding</a></li>
+<li><a href="/residential/support/tv/article.cox&#63;articleId=565a9f10-69b9-11df-5fca-000000000000" title="Program Your Remote">Program Your Remote</a></li>
+</ul>
+<ul>
+<li><a href="http://forums.cox.com" class="pf-nav-items-secondary-header" title="Support Forums">Support Forums</a></li>
+<li><a href="http://forums.cox.com/login.aspx&#63;ReturnUrl=" title="Join the Discussion">Join the Discussion</a></li>
+<li><a href="http://forums.cox.com/forum_home/tv_forum/f/4/p/addpost.aspx" title="Ask a TV Question">Ask a TV Question</a></li>
+<li><a href="http://forums.cox.com/forum_home/internet_forum/f/5/p/addpost.aspx" title="Ask an Internet Question">Ask an Internet Question</a></li>
+<li><a href="http://forums.cox.com/forum_home/phone_forum/f/6.aspx" title="Ask a Phone Question">Ask a Phone Question</a></li>
+</ul>
+<ul>
+<li><a href="http://ww2.cox.com/residential/support.cox" class="pf-nav-items-secondary-header" title="Support Home">Support Home</a></li>
+</ul>
+<ul>
+<li><a href="http://ww2.cox.com/residential/special-offers/tech-solutions-deal.cox" class="pf-nav-items-secondary-header" title="Premium Support">Premium Support</a></li>
+</ul>
+</div>
+<!-- /mega menu --></div></div></div>
+<script>addCoxHeaderListeners();</script> 
+<!-- PF-COMPONENT-END:header -->
+<div id="container"><!-- PF-COMPONENT-END:breadcrumbs -->
+<!-- PF-COMPONENT-BEGIN:introduction --><!-- PF-COMPONENT-END:introduction -->
+<!-- OPEN PF PLUGIN: contentarea-prefix --><!-- CLOSE PF PLUGIN: contentarea-prefix --><!-- PF-COMPONENT-BEGIN:content -->
+
+		<div id="grid-12">
+					 	
+	<div class="cols-grid"> <!-- BEGIN SECTION: 100 , WIDGET-TYPE: hero_widget -->
+	
+	
+	
+	
+	
+	
+		<div class="flexslider col-reset" id="standard-rotator" data-slide-speed="9500" data-animation-speed="900">
+				<ul class="slides" id="rotator-slides">
+							<li class="rotator-slide item" data-slide="1">
+								<div class="text-block">
+									<div class="hero-content" style="left: 0px; top: 80px;">
+										<div class="position-content">
+											<div class="button-bottom" style="width: 340px;">
+														<h2>Take Charge of Savings</h2><p>Get the ultimate entertainment package</p> 
+ <p>Bundle TV, Internet and Home Phone</p>
+
+														<div class="pricing">
+															<p>per month for 12 months with 2-year agreement, starting at</p>
+															<div class="price-value medium">
+																<span>$</span>
+																<div>79</div>
+																<span>.99</span>
+															</div>
+														</div>
+														<div class="clear"></div>
+											</div>
+												<a class="button">
+													<span>Find Out More</span>
+												</a>
+										</div>
+									</div>
+								</div>
+									<a href="special-offers/bundle-deal.cox?campcode=home_3p_bundledeal_hero1_1" target="_self" class="hero-image" style="background-image:url(/wcm/en/residential/image/hero-home-bundle.jpg);"></a>
+							</li>
+							<li class="rotator-slide item" data-slide="2">
+								<div class="text-block">
+									<div class="hero-content" style="left: 10px; top: 180px;">
+										<div class="position-content">
+											<div class="button-bottom" style="width: 415px;">
+														<h2>Introducing Contour&#8480;</h2><p>Experience TV tailored just for you</p>
+
+											</div>
+												<a class="button">
+													<span>Find Out More</span>
+												</a>
+										</div>
+									</div>
+								</div>
+									<a href="tv/contour.cox?campcode=home_tv_contourlanding_hero2_3" target="_self" class="hero-image" style="background-image:url(/wcm/en/residential/image/hero-tv-contour-offer.jpg);"></a>
+							</li>
+							<li class="rotator-slide item" data-slide="3">
+								<div class="text-block">
+									<div class="hero-content" style="left: 0px; top: 120px;">
+										<div class="position-content">
+											<div class="button-bottom font-white" style="width: 435px;">
+														<h2>Enter a New World of Savings</h2><p>Bundle home phone service with TV &amp; Internet for the most savings</p>
+
+											</div>
+												<a class="button">
+													<span>Explore Home Phone</span>
+												</a>
+										</div>
+									</div>
+								</div>
+									<a href="phone.cox?campcode=home_dt_dtlanding_hero3_3" target="_self" class="hero-image" style="background-image:url(/wcm/en/residential/image/hero-home-phone-bundle.jpg);"></a>
+							</li>
+							<li class="rotator-slide item" data-slide="4">
+								<div class="text-block">
+									<div class="hero-conten
+1ff8
+t" style="left: 10px; top: 80px;">
+										<div class="position-content">
+											<div class="button-bottom" style="width: 320px;">
+														<h2>Check if the Back Door is Open from 1,000 Miles Away</h2><p>Manage your home from anywhere with Cox Home Security</p>
+
+											</div>
+												<a class="button">
+													<span>Explore Home Security</span>
+												</a>
+										</div>
+									</div>
+								</div>
+									<a href="home-security.cox?campcode=home_chs_chslanding_hero4_3" target="_self" class="hero-image" style="background-image:url(/wcm/en/residential/image/hero-home-home-security.jpg);"></a>
+							</li>
+							<li class="rotator-slide item" data-slide="5">
+								<div class="text-block">
+									<div class="hero-content" style="left: 25px; top: 100px;">
+										<div class="position-content">
+											<div class="button-bottom font-white" style="width: 500px;">
+														<h2>New Blazing-Fast Speeds</h2><p>Get the Internet service that keeps getting faster</p>
+
+											</div>
+												<a class="button">
+													<span>Speed Up Your Internet</span>
+												</a>
+										</div>
+									</div>
+								</div>
+									<a href="internet.cox?campcode=home_hsi_hsilanding_hero5_3" target="_self" class="hero-image" style="background-image:url(/wcm/en/residential/image/hero-home-internet-speed.jpg);"></a>
+							</li>
+					
+			 	</ul>
+		</div> <!-- END SECTION: 100 , WIDGET-TYPE: hero_widget --> <!-- BEGIN SECTION: 101 , WIDGET-TYPE:  --> <!-- END SECTION: 101 , WIDGET-TYPE:  --> <!-- BEGIN SECTION: 102 , WIDGET-TYPE:  --> <!-- END SECTION: 102 , WIDGET-TYPE:  -->
+
+		<div class="pf-constrain-width"> <!-- BEGIN SECTION: 01 , WIDGET-TYPE:  --> <!-- END SECTION: 01 , WIDGET-TYPE:  --> <!-- BEGIN SECTION: 02 , WIDGET-TYPE:  --> <!-- END SECTION: 02 , WIDGET-TYPE:  --> <!-- BEGIN SECTION: 03 , WIDGET-TYPE: page_header_widget -->
+
+	
+
+    
+    
+    
+    <div class="page-header page-header-centered">
+    	<div class="col-content">
+			<h1>TV, Internet, Home Phone, Home Security and More</h1>
+    			<a href="https://store.cox.com/residential-store/shop.cox?campcode=home_all_shop_offer2_3" class="button">Shop
+    			</a>
+		</div>
+    </div> <!-- END SECTION: 03 , WIDGET-TYPE: page_header_widget --> <!-- BEGIN SECTION: 04 , WIDGET-TYPE: feature_highlight_widget -->
+    
+    
+
+				<div class="feature-highlight">
+					
+				
+					<div class="colspan-2">
+									<img src="/wcm/en/residential/image/home-feature-tv-premiums-hbo-offer.jpg" alt="Watch Game of Thrones on HBO" class="col-content" />
+					</div>				
+					<div class="colspan-3">	
+						<div class="col-content"><h2>Catch-up on the Premiere of<br />Game of Thrones!</h2> 
+ <p>Add HBO for only $10 per month for 6 months</p> 
+ <p>&nbsp;</p>
+
+					<p><a class="button" href="https://store.cox.com/residential-store/shop.cox?pc=CoxHBOUpg&amp;campcode=home_premiums_cyf_offer2_3" target="_self">Order</a></p>
+						</div>			
+					</div>	
+					<div class="colspan-1">Â 
+					</div>
+					
+				
+					<div class="colspan-2">
+									<img src="/wcm/en/residential/image/feature-home-PacquiaoFight.jpg" alt="Don't miss Pacquiao vs. Bradley this Saturday, April 12!" class="col-content" />
+					</div>				
+					<div class="colspan-3">	
+						<div class="col-content"><h2>Don't miss Pacquiao vs. Bradley this Saturday, April 12!</h2> 
+ <p>Watch the fight live on Pay-Per-View</p> 
+ <p>&nbsp;</p>
+
+					<p><a class="button" href="http://ww2.cox.com/myconnection/watch/pay-per-view/eventdetails.cox?eventId=435868&amp;campcode=home_ppv_myconnection_offer2_3" target="_self">Find Out More</a></p>
+						</div>			
+					</div>	
+					<div class="colspan-1">Â 
+					</div>
+				</div> <!-- END SECTION: 04 , WIDGET-TYPE: feature_highlight_widget --> <!-- BEGIN SECTION: 05 , WIDGET-TYPE: section_header_widget -->
+	
+	
+	
+  	  
+	
+			<div class="section-header">
+				<div class="col-content">
+					<h2>Featured Offers</h2>
+				</div>
+			</div> <!-- END SECTION: 05 , WIDGET-TYPE: section_header_widget --> <!-- BEGIN SECTION: 06 , WIDGET-TYPE: feature_highlight_widget -->
+    
+    
+
+				<div class="feature-highlight">
+					
+				
+					<div class="colspan-2">
+									<img src="/wcm/en/residential/image/feature-tv-channels-connect.jpg" alt="TV with imagery" class="col-content" />
+					</div>				
+					<div class="colspan-3">	
+						<div class="col-content">
+								<h2>Connect to Your Favorite Shows Anytime, Anywhere</h2><p>TV packages</p>
+
+		<div class="pricing">
+					<h5>prices per month for 3 months, starting at</h5>
+			<div class="price-value small">
+				<span>$</span><div>24</div><span>.99</span>
+			</div>
+					<p><a class="button" href="tv.cox?campcode=home_tv_tvlanding_offer2_1" target="_self">Find Out More</a></p>
+		</div>
+						</div>			
+					</div>	
+					<div class="colspan-1">Â 
+					</div>
+					
+				
+					<div class="colspan-2">
+									<img src="/wcm/en/residential/image/feature-internet-features-powerboost.jpg" alt="Rocket taking off on laptop screen" class="col-content" />
+					</div>				
+					<div class="colspan-3">	
+						<div class="col-content">
+								<h2>Get the Fastest In-Home WiFi on Every Device for Less</h2><p>Internet packages</p>
+
+		<div class="pricing">
+					<h5>prices per month for 12 months with additional service & agreement, starting at</h5>
+			<div class="price-value small">
+				<span>$</span><div>19</div><span>.99</span>
+			</div>
+					<p><a class="button" href="internet.cox?campcode=home_hsi_hsilanding_offer3_1" target="_self">Find Out More</a></p>
+		</div>
+						</div>			
+					</div>	
+					<div class="colspan-1">Â 
+					</div>
+				</div> <!-- END SECTION: 06 , WIDGET-TYPE: feature_highlight_widget --> <!-- BEGIN SECTION: 07 , WIDGET-TYPE: section_header_widget -->
+	
+	
+	
+  	  
+	
+			<div class="section-header">
+				<div class="col-content">
+					<h2>Explore Our Services</h2>
+				</div>
+			</div> <!-- END SECTION: 07 , WIDGET-TYPE: section_header_widget --> <!-- BEGIN SECTION: 08 , WIDGET-TYPE: shop_feature_highlight_widget -->
+	
+	
+	
+	<div class="shop-feature-highlight">
+					<div class="colspan-4">
+						<div class="col-content">
+									<a href="tv.cox" target="_self"></a>
+								<img src="/wcm/en/residential/image/feature-home-tv-4c.jpg" alt="Men at Work on TBS" />
+								<h3>Contour and Cox TV</h3><p>Watch shows and movies wherever<br />you want, whenever you want with<br />Contour and Cox TV.</p>
+
+						</div>
+					</div>
+					<div class="colspan-4">
+						<div class="col-content">
+									<a href="internet.cox" target="_self"></a>
+								<img src="/wcm/en/residential/image/feature-home-internet-4c.jpg" alt="Laptop, tablet and mobile devices" />
+								<h3>Cox High Speed Internet</h3><p>Internet packages perfect<br />for surfing, streaming, gaming<br />and all your online activities.</p>
+
+						</div>
+					</div>
+					<div class="colspan-4">
+						<div class="col-content">
+									<a href="phone.cox" target="_self"></a>
+								<img src="/wcm/en/residential/image/feature-home-phone-4c.jpg" alt="Home phone handsets" />
+								<h3>Cox Digital Telephone</h3><p>Choose&nbsp;from local and&nbsp;long distance calling packages, plus the features you count on most to fit your needs.</p>
+
+						</div>
+					</div>
+	</div> <!-- END SECTION: 08 , WIDGET-TYPE: shop_feature_highlight_widget --> <!-- BEGIN SECTION: 09 , WIDGET-TYPE: content_widget_common --> <!-- INCLUDED CMS CONTENT: residential/htmlblock/pagedivider.xhtml -->
+	<span class="col-reset">
+<!-- CMS File Start : en/residential/htmlblock/pagedivider.xhtml -->
+<div class="page-divider"></div>
+
+<!-- CMS File End : en/residential/htmlblock/pagedivider.xhtml -->
+
+	</span> <!-- INCLUDED CMS CONTENT: residential/htmlblock/pagedivider.xhtml --> <!-- END SECTION: 09 , WIDGET-TYPE: content_widget_common --> <!-- BEGIN SECTION: 10 , WIDGET-TYPE: shop_feature_highlight_widget -->
+	
+	
+	
+	<div class="shop-feature-highlight">
+					<div class="colspan-4">
+						<div class="col-content">
+									<a href="home-security.cox" target="_self"></a>
+								<img src="/wcm/en/residential/image/feature-home-homesecurity-4c.jpg" alt="Home on a tablet with home security monitoring" />
+								<h3>Cox Home Security</h3><p
+1ff8
+>Manage your home security system from<br />anywhere. Get peace of mind by protecting<br />what matters most.</p>
+
+						</div>
+					</div>
+					<div class="colspan-4">
+						<div class="col-content">
+									<a href="wireless.cox" target="_self"></a>
+								<img src="/wcm/en/residential/image/feature-home-wireless-4c.jpg" alt="Mobile phone swooshing around laptop" />
+								<h3>Verizon Wireless</h3><p>Put the power of 4G LTE to work with America's most reliable network.</p>
+
+						</div>
+					</div>
+					<div class="colspan-4">
+						<div class="col-content">
+									<a href="tech-solutions.cox" target="_self"></a>
+								<img src="/wcm/en/residential/image/feature-home-techsolutions-4c.jpg" alt="Laptop with 24/7 helpdesk" />
+								<h3>Cox Tech Solutions</h3><p>From home networking to 24/7 support, trained technicians are ready to help you stay connected and running smoothly.</p>
+
+						</div>
+					</div>
+	</div> <!-- END SECTION: 10 , WIDGET-TYPE: shop_feature_highlight_widget --> <!-- BEGIN SECTION: 11 , WIDGET-TYPE:  --> <!-- END SECTION: 11 , WIDGET-TYPE:  --> <!-- BEGIN SECTION: 12 , WIDGET-TYPE:  --> <!-- END SECTION: 12 , WIDGET-TYPE:  --> <!-- BEGIN SECTION: 13 , WIDGET-TYPE:  --> <!-- END SECTION: 13 , WIDGET-TYPE:  --> <!-- BEGIN SECTION: 14 , WIDGET-TYPE:  --> <!-- END SECTION: 14 , WIDGET-TYPE:  --> <!-- BEGIN SECTION: 15 , WIDGET-TYPE:  --> <!-- END SECTION: 15 , WIDGET-TYPE:  --> <!-- BEGIN SECTION: 16 , WIDGET-TYPE:  --> <!-- END SECTION: 16 , WIDGET-TYPE:  --> <!-- BEGIN SECTION: 17 , WIDGET-TYPE:  --> <!-- END SECTION: 17 , WIDGET-TYPE:  --> <!-- BEGIN SECTION: 18 , WIDGET-TYPE:  --> <!-- END SECTION: 18 , WIDGET-TYPE:  --> <!-- BEGIN SECTION: 19 , WIDGET-TYPE:  --> <!-- END SECTION: 19 , WIDGET-TYPE:  --> <!-- BEGIN SECTION: 20 , WIDGET-TYPE:  --> <!-- END SECTION: 20 , WIDGET-TYPE:  --> <!-- BEGIN SECTION: 21 , WIDGET-TYPE:  --> <!-- END SECTION: 21 , WIDGET-TYPE:  --> <!-- BEGIN SECTION: 22 , WIDGET-TYPE:  --> <!-- END SECTION: 22 , WIDGET-TYPE:  --> <!-- BEGIN SECTION: 23 , WIDGET-TYPE:  --> <!-- END SECTION: 23 , WIDGET-TYPE:  --> <!-- BEGIN SECTION: 24 , WIDGET-TYPE:  --> <!-- END SECTION: 24 , WIDGET-TYPE:  --> <!-- BEGIN SECTION: 25 , WIDGET-TYPE:  --> <!-- END SECTION: 25 , WIDGET-TYPE:  --> <!-- BEGIN SECTION: 26 , WIDGET-TYPE:  --> <!-- END SECTION: 26 , WIDGET-TYPE:  --> <!-- BEGIN SECTION: 27, WIDGET-TYPE:  --> <!-- END SECTION: 27 , WIDGET-TYPE:  --> <!-- BEGIN SECTION: 28 , WIDGET-TYPE:  --> <!-- END SECTION: 28, WIDGET-TYPE:  --> <!-- BEGIN SECTION: 29 , WIDGET-TYPE:  --> <!-- END SECTION: 29 , WIDGET-TYPE:  --> <!-- BEGIN SECTION: 30 , WIDGET-TYPE:  --> <!-- END SECTION: 30 , WIDGET-TYPE:  -->
+		</div> <!-- BEGIN SECTION: 103 , WIDGET-TYPE:  --> <!-- END SECTION: 103 , WIDGET-TYPE:  --> <!-- BEGIN SECTION: 104 , WIDGET-TYPE: ankle_widget -->
+
+		
+	
+	
+	
+	
+		<div class="ankle">
+			<div class="pf-constrain-width">
+						<div class="colspan-1">
+						<img src="/wcm/en/residential/image/feature-home-move-4c.png" alt="Moving boxes on a laptop" class="col-content" />
+						</div>
+						<div class="colspan-3">
+							<div class="col-content">
+									<h3>Are You Moving?</h3><p>It's&nbsp;easy to take Cox services with you.</p>
+
+										<a href="special-offers/move.cox" target="_self">Move My Service</a>
+							</div>
+						</div>
+						<div class="colspan-1">
+						<img src="/wcm/en/residential/image/feature-home-paybill-4c.png" alt="Pay bill on laptop with credit card" class="col-content" />
+						</div>
+						<div class="colspan-3">
+							<div class="col-content">
+									<h3>View Your Bill</h3><p>You don't have to wait for the mail. See your bill online.</p>
+
+										<a href="/viewbill" target="_self">View / Pay Bill</a>
+							</div>
+						</div>
+						<div class="colspan-1">
+						<img src="/wcm/en/residential/image/feature-home-webmail-4c.png" alt="Email icon on tablet" class="col-content" />
+						</div>
+						<div class="colspan-3">
+							<div class="col-content">
+									<h3>WebMail</h3><p>Access your Cox email account online, anytime.</p>
+
+										<a href="http://webmail.cox.net/" target="_self">Sign In to WebMail</a>
+							</div>
+						</div>
+			</div>
+		</div> <!-- END SECTION: 104 , WIDGET-TYPE: ankle_widget --> <!-- BEGIN SECTION: 105 , WIDGET-TYPE:  --> <!-- END SECTION: 105 , WIDGET-TYPE:  --> <!-- BEGIN SECTION: 106 , WIDGET-TYPE:  --> <!-- END SECTION: 106 , WIDGET-TYPE:  -->
+</div>
+		</div><!-- PF-COMPONENT-END:content --><!-- OPEN PF PLUGIN: contentarea-suffix -->
+<!-- iperceptions and fetchback removed 12-12-13 --> <!-- Begin Comscore --> <script> document.write(unescape("%3Cscript src='" + (document.location.protocol == "https:" ? "https://sb" : "http://b") + ".scorecardresearch.com/beacon.js' %3E%3C/script%3E")); </script> <script> COMSCORE.beacon({ c1:"2", c2:"6035944", c3:"", c4:"", c5:"", c6:"", c15:"" }); </script> <noscript> <img src="http://b.scorecardresearch.com/p?c1=2&c2=6035944&c3=&c4=&c5=&c6=&c15=&cj=1" /> </noscript> <!-- End Comscore -->
+<!-- CLOSE PF PLUGIN: contentarea-suffix --></div>
+<!-- PF-COMPONENT-BEGIN:footer --><div id="pf-footer">
+
+
+<!-- top footer --><div class="pf-top-footer"><div class="pf-top-footer-inner pf-constrain-width"><!-- footer column content --><div class="pf-footer-content pf-clearfix">
+<ul>
+<li class="pf-footer-content-header">I want to...</li>
+<li><a href="http://ww2.cox.com/viewbill" title="View &amp; Pay My Bill">View &amp; Pay My Bill</a></li>
+<li><a href="http://ww2.cox.com/resaccount/home.cox" title="Manage My Account settings">Manage My Account</a></li>
+<li><a href="http://ww2.cox.com/resaccount/tools.cox" title="Use Phone Tools, Internet Tools and TV Tools">Use My Services Tools</a></li>
+<li><a href="http://ww2.cox.com/myconnection/watch/entertainment/tv-listings.cox" title="See TV Listings and schedule DVR recordings">See TV Listings</a></li>
+<li><a href="http://webmail.cox.net" title="Check My WebMail">Check My WebMail</a></li>
+</ul>
+<ul>
+<li class="pf-footer-content-header">&#160;</li>
+<li><a href="http://ww2.cox.com/myconnection/watch/video-landing.cox" title="Watch TV Online">Watch TV Online</a></li>
+<li><a href="http://ww2.cox.com/myconnection/watch/entertainment/tv-listings/remote-dvr-info.cox" title="Set DVR Recording">Set DVR Recording</a></li>
+<li><a href="http://ww2.cox.com/myconnection/watch/entertainment/online-apps.cox" title="Get Cox Apps">Get Cox Apps</a></li>
+<li><a href="http://ww2.cox.com/myconnection/home.cox" title="My Connection Customer home page">See What&#39;s Happening on My Connection</a></li>
+</ul>
+<ul class="pf-footer-skip-col">
+<li class="pf-footer-content-header">Shop</li>
+<li><a href="http://ww2.cox.com/residential/special-offers/bundle-deal.cox" title="Bundles &amp; Promotions">Bundles &amp; Promotions</a></li>
+<li><a href="http://ww2.cox.com/residential/tv.cox" title="Contour &amp; TV">Contour &amp; TV</a></li>
+<li><a href="http://ww2.cox.com/residential/internet.cox" title="Internet">Internet</a></li>
+<li><a href="http://ww2.cox.com/residential/phone.cox" title="Home Phone">Home Phone</a></li>
+<li><a href="http://ww2.cox.com/residential/home-security.cox" title="Cox Home Security service">Home Security</a></li>
+</ul>
+<ul class="pf-footer-skip-col">
+<li class="pf-footer-content-header">About Cox</li>
+<li><a href="http://ww2.cox.com/aboutus/home.cox" title="About Us Home Page">About Us Home</a></li>
+<li><a href="http://cox.mediaroom.com" title="Newsroom">Newsroom</a></li>
+<li><a href="http://ww2.cox.com/aboutus/takecharge.cox" title="Take Charge!">Take Charge!</a></li>
+<li><a href="http://ww2.cox.com/aboutus/careers.cox" title="Careers">Careers</a></li>
+<li><a href="http://www.zerochaos.com/cox/index.htm" title="Contract Positions at Cox">Contract Positions</a></li>
+</ul>
+<ul>
+<li class="pf-footer-content-header">&#160;</li>
+<li><a href="http://ww2.cox.com/aboutus/diversity.cox" title="Diversity">Diversity</a></li>
+<li><a href="http://ww2.cox.com/aboutus/contact-us/supplier-relations.cox" title="Supplier Relations">Supplier Relations</a></li>
+<li><a href="http://www.coxmedia.com/contact.jsp&#63;navigation=7" title="Advertise with Us for TV, Online, Digital and Print">Advertise with U
+a5c
+s</a></li>
+<li><a href="http://ww2.cox.com/aboutus/contact-us/cox-centers.cox" title="Retail &amp; Payment Locations">Retail &amp; Payment Locations</a></li>
+</ul>
+</div></div></div><!-- /top footer --><!-- bottom footer --><div class="pf-bottom-footer"><div class="pf-bottom-footer-inner pf-constrain-width"><!-- footer other businesses section --><div class="pf-other-businesses pf-clearfix"> 
+<ul>
+<li><a href="http://www.coxmedia.com" title="Cox Media">Cox Media</a></li>
+<li><a href="http://www.coxenterprises.com" title="Cox Enterprises">Cox Enterprises</a></li>
+<li><a href="http://www.kudzu.com" title="Kudzu">Kudzu</a></li>
+</ul> 
+<!-- options for easy readability like changing font size and language --> 
+<div class="pf-easy-read"><a title="Font Zoom" href="#" class="pf-text-size pf-text-active" id="pf-style-font-small">A</a><a title="Font Zoom" href="#" class="pf-text-size" id="pf-style-font-medium">A</a><a title="Font Zoom" href="#" class="pf-text-size" id="pf-style-font-large">A</a> 
+</div><!-- social media icons section --><div class="pf-social-icons">
+<a target="_blank" href="http://www.youtube.com/user/CoxCommTV" title="YouTube" class="pf-social-you-tube"></a>
+<a target="_blank" href="https://www.facebook.com/coxcommunications" title="Facebook" class="pf-social-facebook"></a>
+<a target="_blank" href="https://twitter.com/coxcomm" title="Twitter" class="pf-social-twitter"></a>
+<a target="_blank" href="https://plus.google.com/u/0/+coxcommunications/posts" title="Google+" class="pf-social-google-plus"></a>
+</div></div><!-- section containing general info like policies, agreements and copyrights --> 
+<div class="pf-general-info pf-clearfix"> 
+<ul>
+<li><a href="http://ww2.cox.com/aboutus/policies.cox" title="Policies">Policies</a></li>
+<li><a href="http://ww2.cox.com/aboutus/policies/your-privacy-rights.cox" title="Privacy Policy">Privacy Policy</a></li>
+<li><a href="http://ww2.cox.com/aboutus/policies/your-privacy-rights.cox#ads" title="About Our Advertising">About Our Ads</a></li>
+</ul><div class="pf-copyright">
+&copy; 1998-2014 Cox Communications, Inc.
+</div></div></div></div><!-- /bottom footer --></div><!-- PF-COMPONENT-END:footer -->
+<script>addCoxFooterListeners();</script>
+</div>
+<!-- PF-COMPONENT-END:container --><!-- PF-COMPONENT-BEGIN:appendix -->
+<!-- PF-COMPONENT-BEGIN:cross-domain -->
+
+<!-- PF-COMPONENT-END:cross-domain -->
+
+<!-- OPEN PF PLUGIN: footer-commands -->
+
+<!-- CLOSE PF PLUGIN: footer-commands -->
+<!-- OPEN PF PLUGIN: body-suffix -->
+<script src="/ui/emergence/corp/en/js/cox-config.js"></script>
+<!-- CLOSE PF PLUGIN: body-suffix --><!-- PF-COMPONENT-END:appendix --></body></html>
+
+0
+

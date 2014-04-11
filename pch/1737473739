@@ -1,0 +1,33 @@
+PHTTP173.241.242.12"Õ
+ÖGET /w/1.0/acj?mi=f7757f46-7bbe-45e1-fa2b-44d3c3a2e262&mn=1&mc=1&cc=1&ai=e5d03b85-9306-478c-de62-fefff803e0ca&o=717134124&callback=OX_717134124&ju=http%3A//www.pch.com/&jr=&auid=285475&res=800x600x24&plg=swf%2Cqt%2Cwmp%2Cshk%2Cpm&ch=UTF-8&tz=240&sd=1 HTTP/1.1
+Host: ox-d.mods.pch.com
+Connection: keep-alive
+Accept: */*
+vUser-Agent: Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/31.0.1650.63 Safari/537.36
+Referer: http://www.pch.com/
+$Accept-Encoding: gzip,deflate,sdch
+!Accept-Language: en-US,en;q=0.8
+ôCookie: deb088d138aa52ddbeb48990e3e58a5e=k12m2f9f5ent563l9fgbgvu270; pdd=D; pci=n3qg5f4gGbPBKvNH; __utma=102336542.1157406824.1396994885.1396994885.1396994885.1; __utmb=102336542.1.10.1396994885; __utmc=102336542; __utmz=102336542.1396994885.1.1.utmcsr=(direct)|utmccn=(direct)|utmcmd=(none); _at_id.pch.production.a1c9=b2baeaeffd6ee36d.1396994885.1.1396994885.1396994885.0.0.; __qca=P0-1512391019-1396994885160; OX_u=acc72ea9-4ed8-7613-eb8f-396a9e38fdba_a_1398204485; NSC_qspe-py3-efmjwfsz=ffffffff09095f3645525d5f4f58455e445a4a422970
+
+*ò
+HTTP/1.1 200 OK
+Vary: Accept
+êSet-Cookie: OX_u=c04c4770-428d-73d7-cb1d-72e2f697d752_m_1398204485; Version=1; Expires=Wed, 08-Apr-2015 22:08:05 GMT; Max-Age=31536000; Path=/
+CServer: MochiWeb/1.1 WebMachine/1.10.0 (never breaks eye contact)
+Pragma: no-cache
+#P3P: CP="CUR ADM OUR NOR STA NID"
+(Expires: Mon, 26 Jul 1997 05:00:00 GMT
+%Date: Tue, 08 Apr 2014 22:08:05 GMT
+ Content-Type: application/json
+Content-Length: 157
+-Cache-Control: private, max-age=0, no-cache
+ÜSet-Cookie: NSC_qspe-py3-efmjwfsz=ffffffff09095f3645525d5f4f58455e445a4a422970;expires=Tue, 08-Apr-2014 23:08:05 GMT;path=/;httponly
+ü
+OX_717134124({
+  "ads":{
+    "medium":"w",
+    "record_tmpl":"http://ox-d.mods.pch.com/{medium}/1.0/{rtype}?ts={txn_state}",
+    "adunits" : [
+    ]
+  }
+});

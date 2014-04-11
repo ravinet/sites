@@ -1,0 +1,31 @@
+»HTTPS173.252.110.27"¢
+íGET /fql?q=SELECT%20total_count%20FROM%20link_stat%20WHERE%20url=%22http%3A%2F%2Flive.nydailynews.com%2FEvent%2FOscar_Pistorius_Murder_Trial_for_Reeva_Steenkamps_Death%22&callback=gig_pc_facebook_1397230251195_2421691818162799 HTTP/1.1
+Host: graph.facebook.com
+Connection: keep-alive
+Accept: */*
+vUser-Agent: Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/31.0.1650.63 Safari/537.36
+&Referer: http://www.nydailynews.com/
+$Accept-Encoding: gzip,deflate,sdch
+!Accept-Language: en-US,en;q=0.8
+
+*º
+HTTP/1.1 200 OK
+2ETag: "cb58cb70f21102e58516c69270184570f68f0978"
+/Content-Type: application/json; charset=UTF-8
+Pragma: no-cache
+ Access-Control-Allow-Origin: *
+X-FB-Rev: 1202056
+=Cache-Control: private, no-cache, no-store, must-revalidate
+(Expires: Sat, 01 Jan 2000 00:00:00 GMT
+:X-FB-Debug: 38XfL+M7GOogwF1ItsIJ1mmIj7fZ62vYtzs1Y8XcCu4=
+%Date: Fri, 11 Apr 2014 15:30:51 GMT
+Connection: keep-alive
+Content-Length: 118
+x
+/**/ gig_pc_facebook_1397230251195_2421691818162799({
+   "data": [
+      {
+         "total_count": 56
+      }
+   ]
+});

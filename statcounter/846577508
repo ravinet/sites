@@ -1,0 +1,31 @@
+PHTTP174.35.22.169"‰
+GET / HTTP/1.1
+Host: www.statcounter.com
+Connection: keep-alive
+TAccept: text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8
+vUser-Agent: Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/31.0.1650.63 Safari/537.36
+$Accept-Encoding: gzip,deflate,sdch
+!Accept-Language: en-US,en;q=0.8
+
+*ù
+ HTTP/1.1 301 Moved Permanently
+%Date: Tue, 08 Apr 2014 22:26:03 GMT
+Server: PWS/8.0.22
+"X-Px: ht h0-s65.p9-jfk.cdngp.net
+Cache-Control: max-age=10800
+(Expires: Tue, 08 Apr 2014 23:42:44 GMT
+Age: 6199
+Content-Length: 313
+-Content-Type: text/html; charset=iso-8859-1
+#Location: http://statcounter.com/
+Connection: keep-alive
+ª
+<!DOCTYPE HTML PUBLIC "-//IETF//DTD HTML 2.0//EN">
+<html><head>
+<title>301 Moved Permanently</title>
+</head><body>
+<h1>Moved Permanently</h1>
+<p>The document has moved <a href="http://statcounter.com/">here</a>.</p>
+<hr>
+<address>Apache Server at www-cache-source.statcounter.com Port 80</address>
+</body></html>

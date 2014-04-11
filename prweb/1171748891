@@ -1,0 +1,40 @@
+PHTTP
+18.7.20.69"ß
+#GET /_res/css/filter.css HTTP/1.1
+Host: service.prweb.com
+Connection: keep-alive
+Accept: text/css,*/*;q=0.1
+vUser-Agent: Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/31.0.1650.63 Safari/537.36
+ Referer: http://www.prweb.com/
+$Accept-Encoding: gzip,deflate,sdch
+!Accept-Language: en-US,en;q=0.8
+
+*›
+HTTP/1.1 200 OK
+Server: Apache/2.2.3 (CentOS)
+.Last-Modified: Fri, 28 May 2010 14:51:15 GMT
+!ETag: "8a456-17b-487a8a38c9ec0"
+Accept-Ranges: bytes
+Content-Length: 379
+Content-Type: text/css
+%Date: Tue, 08 Apr 2014 22:15:36 GMT
+Connection: keep-alive
+X-N: S
+ý
+/* -----------------------------
+
+	Title : filter.css
+	Author : Marty Stake
+	
+	Acknowledgements: 
+	
+	Screen CSS file controller adapted from 
+	Douglas Bowman at www.stopdesign.com
+
+----------------------------- */
+
+/* Imported Styles for all standards- 
+   compliant browsers
+----------------------------------------------- */
+@import url("screen.css");
+@import url("sifr.css");

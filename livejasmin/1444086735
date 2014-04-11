@@ -1,0 +1,71 @@
+PHTTP
+72.21.91.9"˘
+GET /crossdomain.xml HTTP/1.1
+$Host: flashx.new.livejasmincdn.com
+Connection: keep-alive
+vUser-Agent: Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/31.0.1650.63 Safari/537.36
+Accept: */*
+BReferer: http://new.livejasmin.com/en/?showPreviousVersionLink=0
+$Accept-Encoding: gzip,deflate,sdch
+!Accept-Language: en-US,en;q=0.8
+
+*è 
+HTTP/1.1 200 OK
+Accept-Ranges: bytes
+ Cache-Control: max-age=2419200
+Content-Type: text/xml
+%Date: Tue, 08 Apr 2014 22:03:38 GMT
+Etag: "5343b789-e9a"
+(Expires: Tue, 06 May 2014 22:03:38 GMT
+.Last-Modified: Tue, 08 Apr 2014 08:47:05 GMT
+Server: ECS (ord/26DF)
+X-Cache: HIT
+,X-Real-Source: flash.new.livejasmincdn.com
+Content-Length: 3738
+ú
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE cross-domain-policy SYSTEM "http://www.adobe.com/xml/dtds/cross-domain-policy.dtd">
+<cross-domain-policy>
+    <allow-access-from domain="*.jasmin.com" to-ports="*" secure="false"/>
+    <allow-access-from domain="*.jasmincdn.com" to-ports="*" secure="false"/>
+    <allow-access-from domain="*.jasmincdn.test" to-ports="*" secure="false"/>
+    <allow-access-from domain="*.livejasmin.dev" to-ports="*" secure="false"/>
+    <allow-access-from domain="*.livejasmin2.dev" to-ports="*" secure="false"/>
+    <allow-access-from domain="*.livejasmin.com" to-ports="*" secure="false"/>
+    <allow-access-from domain="*.livejasmincdn.com" to-ports="*" secure="false"/>
+    <allow-access-from domain="*.livejasmin.test" to-ports="*" secure="false"/>
+    <allow-access-from domain="*.livejasmincdn.test" to-ports="*" secure="false"/>
+    <allow-access-from domain="*.jmg" to-ports="*" secure="false"/>
+    <allow-access-from domain="*.lslcdn.com" to-ports="*" secure="false"/>
+    <allow-access-from domain="*.lslcdn.test" to-ports="*" secure="false"/>
+    <allow-access-from domain="*.dtv-dev.com" secure="false" to-ports="*"/>
+    <allow-access-from domain="*.dtv-test.com" secure="false" to-ports="*"/>
+    <allow-access-from domain="*.doclertv.com" secure="false" to-ports="*"/>
+    <allow-access-from domain="*.lj.com" to-ports="*" secure="false"/>
+    <allow-access-from domain="*.jasminboys.com" to-ports="*" secure="false"/>
+    <allow-access-from domain="*.jasminfetish.com" to-ports="*" secure="false"/>
+    <allow-access-from domain="*.ljstatic.com" to-ports="*" secure="false"/>
+    <allow-access-from domain="*.jasminboysstatic.com" to-ports="*" secure="false"/>
+    <allow-access-from domain="*.jasminfetishstatic.com" to-ports="*" secure="false"/>
+    <allow-http-request-headers-from domain="*.jmg" headers="*" secure="false"/>
+    <allow-http-request-headers-from domain="*.jasmin.com" headers="*" secure="false"/>
+    <allow-http-request-headers-from domain="*.jasmincdn.com" headers="*" secure="false"/>
+    <allow-http-request-headers-from domain="*.jasmincdn.test" headers="*" secure="false"/>
+    <allow-http-request-headers-from domain="*.livejasmin.dev" headers="*" secure="false"/>
+    <allow-http-request-headers-from domain="*.livejasmin2.dev" headers="*" secure="false"/>
+    <allow-http-request-headers-from domain="*.livejasmin.test" headers="*" secure="false"/>
+    <allow-http-request-headers-from domain="*.livejasmin.com" headers="*" secure="false"/>
+    <allow-http-request-headers-from domain="*.livejasmincdn.test" headers="*" secure="false"/>
+    <allow-http-request-headers-from domain="*.livejasmincdn.com" headers="*" secure="false"/>
+    <allow-http-request-headers-from domain="*.lslcdn.com" headers="*" secure="false"/>
+    <allow-http-request-headers-from domain="*.lslcdn.test" headers="*" secure="false"/>
+    <allow-http-request-headers-from domain="*.dtv-dev.com" headers="*" secure="false"/>
+    <allow-http-request-headers-from domain="*.dtv-test.com" headers="*" secure="false"/>
+    <allow-http-request-headers-from domain="*.doclertv.com" headers="*" secure="false"/>
+    <allow-http-request-headers-from domain="*.lj.com" headers="*" secure="false"/>
+    <allow-http-request-headers-from domain="*.jasminboys.com" headers="*" secure="false"/>
+    <allow-http-request-headers-from domain="*.jasminfetish.com" headers="*" secure="false"/>
+    <allow-http-request-headers-from domain="*.ljstatic.com" headers="*" secure="false"/>
+    <allow-http-request-headers-from domain="*.jasminboysstatic.com" headers="*" secure="false"/>
+    <allow-http-request-headers-from domain="*.jasminfetishstatic.com" headers="*" secure="false"/>
+</cross-domain-policy>

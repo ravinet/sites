@@ -1,0 +1,194 @@
+PHTTP68.99.123.161"ó
+GGET /ui/emergence/corp/en/js/extlib/liveperson/mtagconfig.js HTTP/1.1
+Host: ww2.cox.com
+Connection: keep-alive
+Accept: */*
+vUser-Agent: Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/31.0.1650.63 Safari/537.36
+2Referer: http://ww2.cox.com/residential/home.cox
+$Accept-Encoding: gzip,deflate,sdch
+!Accept-Language: en-US,en;q=0.8
+ðCookie: SMIDENTITY=WQwRlyEtxh43cCHVj6tce9w3XC8Qk+T9ZV5qMvsxrQ0OigtJNoe6tvZplehSjYxBS0Xy0Vj+1ydPfpaZ+uj27QAenUJm9OAJVYO3em7NVBEeT6a9jhdlZyM2dRsXLxnFMQZU8Qa6YZLDgyN1MW2+RDO9lVXumRz5rKMaWvwUix+ppcVJV+D2bcSmucUUW8JySOChcenHCDq8/Ha/K/DOGzOqTCZLWvPm3/NLRcnGnu/FkZvmRgaIsXnRJPOrsZm5nB6zWhjA8QL/+LFFy4mXeI0sUr+ukbXgzFlE+VHrRt5t5rxg/wfiY6IMSgd63Dq3CrWLng+m5VRa9HdI/CTrxRlj08srmdx9BpLLfcP2cFP7ohzG5kU5CxV9Ye/jjPhu6meYCafNDvzq3S4t5ygje0MosgvBuyFqWVs/EzqplgYmxlOuIy983lZrd7lSRGD3PR3pOCVqmbc154z6IH/z5lobuIlGr5UwJBW0jRxmiTupeyQPuFm/sTrrx9246StsbL6IQbgKbhaV91Q9evGOlTugqJzyYtvv6i+2PkVaivLXQX/qq/r3HuUuYVYSAKWCVCQFi6R4hmGwtLuMEfGbR+XE3zna6rPCUZbTiRSbetdDMg9DM+e0sWW7Sn7SrIIqkpSkv+mvm5C/O82kPIXiVYa4kOwQnws3jiGXf+B0B6qcEwO46POg9Y6w+7mUwaTk; cox-current-zipcode=02139
+
+*†7
+HTTP/1.1 200 OK
+%Date: Fri, 11 Apr 2014 14:32:21 GMT
+Server: Apache
+Vary: Host
+.Last-Modified: Wed, 08 Jan 2014 14:24:28 GMT
+Accept-Ranges: bytes
+Content-Length: 6687
+X-UA-Compatible: IE=edge
+.Cache-Control: max-age=7200, must-revalidate
+Keep-Alive: timeout=10
+Connection: Keep-Alive
+&Content-Type: application/javascript
+¡4
+// Date last modified =  102209
+// Modified by =  Hadar Blutrich
+var lpMTagConfig = null;
+var lpUnit = 'cox-sales';
+
+function lpAddMonitorTag(src) { 
+	if (!lpMTagConfig.lpTagLoaded) {if (typeof(src) == 'undefined' || typeof(src) == 'object') {if (lpMTagConfig.lpMTagSrc) {src = lpMTagConfig.lpMTagSrc;}else {if (lpMTagConfig.lpTagSrv) {src = lpMTagConfig.lpProtocol + "://" +lpMTagConfig.lpTagSrv + '/hcp/html/mTag.js';}else {src = '/hcp/html/mTag.js';};};};if (src.indexOf("http") != 0) {src = lpMTagConfig.lpProtocol + "://" + lpMTagConfig.lpServer + src + "?site=" + lpMTagConfig.lpNumber;} else {if (src.indexOf("site=") < 0) {if (src.indexOf("?") < 0) {src = src + "?";} else{src = src + "&";} src = src + "site=" + lpMTagConfig.lpNumber;  };};var s = document.createElement("script");s.setAttribute("type", "text/javascript");s.setAttribute("charset", "iso-8859-1");s.setAttribute("src", src);document.getElementsByTagName("head").item(0).appendChild(s);}
+}
+
+//Function that sends variables to LP - By Scope
+function lpAddVars(scope,name,value) {
+	if (name.indexOf('OrderTotal')!=-1 || name.indexOf('OrderNumber')!=-1){
+		if  (value=='' || value==0) return; // pass 0 value to all but OrderTotal
+		else lpMTagConfig.sendCookies = false
+	}	
+	value=lpTrimSpaces(value.toString());
+	//Remove cut long variables names and values
+	switch (scope){
+		case 'page': lpMTagConfig.pageVar[lpMTagConfig.pageVar.length] = escape(name)+'='+escape(value); break;
+		case 'session': lpMTagConfig.sessionVar[lpMTagConfig.sessionVar.length] = escape(name)+'='+escape(value); break;
+		case 'visitor': lpMTagConfig.visitorVar[lpMTagConfig.visitorVar.length] = escape(name)+'='+escape(value); break;
+	}	
+}
+
+// Preventing long cookie transfer for IE based browsers.
+function onloadEMT() { 
+	var LPcookieLengthTest=document.cookie;
+	if (lpMTag.lpBrowser == "IE" && LPcookieLengthTest.length>1000){
+		lpMTagConfig.sendCookies=false;
+	}
+}
+
+//The Trim function returns a text value with the leading and trailing spaces removed
+function lpTrimSpaces(stringToTrim) {
+	return stringToTrim.replace(/^\s+|\s+$/g,"");
+}
+
+// Immediate Data submission function
+function lpSendData(varscope,varname,varvalue){
+	if(typeof(lpMTag)!="undefined" && typeof(lpMTag.lpSendData)!="undefined")
+		lpMTag.lpSendData(varscope.toUpperCase() +"VAR!"+ varname + "=" + varvalue, true);
+}
+
+function lpInit(){
+
+	lpMTagConfig = {
+	        "lpServer" : "sales.liveperson.net",
+	        "lpNumber" : LPAcctNum,
+	        "lpProtocol" : (document.location.toString().indexOf("https:")==0) ? "https" : "http",
+			"lpTagLoaded" : false,
+			"lpTagSrv" : "sr2.liveperson.net",
+			"pageStartTime" : (new Date()).getTime() //pageStartTime is set with a timestamp as soon as the page starts loading
+		}
+	
+	if (CoxSiteURL != ""){lpUnit=CoxSiteURL.toLowerCase()+'-sales';}
+	
+	/*
+	The code below send a PAGEVAR to LP with the time [iin seconds] it took the page to load. Code is executed in the onload event
+	*/
+	lpMTagConfig.calculateSentPageTime = function () {
+		var t = (new Date()).getTime() - lpMTagConfig.pageStartTime;
+		lpAddVars('page','pageLoadTime', Math.round(t/1000)+" sec");
+	};
+	
+	if (window.attachEvent)window.attachEvent("onload",lpMTagConfig.calculateSentPageTime);
+	else window.addEventListener("load",lpMTagConfig.calculateSentPageTime,false);
+	
+	//Load mtag.js inline if this is a Confermation Page else load it on page load event
+	if (window.attachEvent)window.attachEvent("onload",lpAddMonitorTag);
+	else window.addEventListener("load",lpAddMonitorTag,false);
+	
+	//Variables Arrays - By Scope
+	if (typeof(lpMTagConfig.pageVar)=="undefined") lpMTagConfig.pageVar = new Array();
+	if (typeof(lpMTagConfig.sessionVar)=="undefined") lpMTagConfig.sessionVar = new Array();
+	if (typeof(lpMTagConfig.visitorVar)=="undefined") lpMTagConfig.visitorVar = new Array();
+	//Extra actions to be taken once the code executes
+	if (typeof(lpMTagConfig.onLoadCode)=="undefined") lpMTagConfig.onLoadCode = new Array();
+	//Dynamic Buttons Array
+	if(typeof(lpMTagConfig.dynButton)=="undefined") lpMTagConfig.dynButton=new Array();
+	
+	
+	// This need to be add to afterStartPage will work
+	lpMTagConfig.ifVisitorCode = [];
+	
+	// The unit variable purpose is to route the chat or call to the designated skill. 
+	try{
+		if (typeof(lpUnit)=='undefined')	var lpUnit='cox-sales';
+		if (typeof(lpLanguage)=='undefined')	var lpLanguage='english';	
+		if(typeof(lpAddVars)!="undefined")	lpAddVars("page","unit",lpUnit);
+		if(typeof(lpLanguage)!="undefined")	lpAddVars("page","language",lpLanguage);
+		lpMTagConfig.defaultInvite ='chat-' + lpUnit + '-' + lpLanguage;
+		}catch(e){}
+	
+	lpMTagConfig.onLoadCode[lpMTagConfig.onLoadCode.length] = onloadEMT;
+	
+	
+	//############################
+	//# Omniture tracking calls  #
+	//############################
+	lpMTagConfig.inviteChatShown = function(objName) {
+		var inviteObj = eval(objName);
+		try{ //
+			var s=s_gi(s_account);
+			s.linkTrackVars='events';
+			s.linkTrackEvents='event25';
+			s.tl(this,'o','Invitation Displayed');
+			s.evar19 = 'Invitation Displayed';
+		} catch(e){}
+		return true;
+	};
+	lpMTagConfig.inviteChatAccept = function(objName) {
+		var inviteObj = eval(objName);
+		try{//
+			var s=s_gi(s_account);
+			s.linkTrackVars='events';
+			s.linkTrackEvents='even26';
+			s.tl(this,'o','Invitation Accepted');
+			s.evar19 = 'Invitation Accepted';
+		} catch(e){}
+		return true;
+	};
+	lpMTagConfig.inviteChatDeclined = function(objName) {
+		var inviteObj = eval(objName);
+		try{//
+			var s=s_gi(s_account);
+			s.linkTrackVars='events';
+			s.linkTrackEvents='event27';
+			s.tl(this,'o','Invitation Declined');
+			s.evar19 = 'Invitation Declined';
+		} catch(e){}
+		
+		return true;
+	};
+	lpMTagConfig.inviteChatTimeout = function(objName) {
+		var inviteObj = eval(objName);
+		try{
+			var s=s_gi(s_account);
+			s.linkTrackVars='events';
+			s.linkTrackEvents='event28';
+			s.tl(this,'o','Invitation TimedOut');
+			s.evar19 = 'Invitation Timed Out';
+		} catch(e){}
+		return true;
+	};
+	
+	if (typeof(lpMTagConfig.db1)=='undefined') {
+		lpMTagConfig.db1 = new Object();
+	}
+	
+	lpMTagConfig.db1.dbClicked = function (objName, status) {
+	    objRef = eval(objName);	
+	    if (status == 'online') {
+		try{
+			var s=s_gi(s_account);
+			s.linkTrackVars='events';
+			s.linkTrackEvents='event29';
+			s.tl(this,'o','Button Clicked');
+			s.evar19 = 'Persistent Invitation Accepted';
+		} catch(e){}
+	    }
+		return true;
+	};
+	//######################################################
+	
+	// LP Button Code-
+	if(typeof(lpMTagConfig.dynButton)!="undefined") {
+		lpMTagConfig.dynButton[lpMTagConfig.dynButton.length] = {"name":"chat-"+lpUnit+"-"+lpLanguage,"pid":"lpButton","afterStartPage": true,"ovr":"lpMTagConfig.db1"};
+	}
+}

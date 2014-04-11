@@ -1,0 +1,24 @@
+PHTTP
+38.65.9.35"°
+GET /Adserver/rds HTTP/1.1
+Host: acuityplatform.com
+Connection: keep-alive
+Accept: image/webp,*/*;q=0.8
+vUser-Agent: Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/31.0.1650.63 Safari/537.36
+uReferer: http://tap2-cdn.rubiconproject.com/partner/scripts/rubicon/emily.html?rtb_ext=1&pc=8829/21314&geo=na&co=us
+$Accept-Encoding: gzip,deflate,sdch
+!Accept-Language: en-US,en;q=0.8
+
+*™
+ HTTP/1.1 302 Moved Temporarily
+Server: Apache-Coyote/1.1
+iSet-Cookie: auid=48351059503; Domain=.acuityplatform.com; Expires=Mon, 27-Apr-2082 00:39:29 GMT; Path=/
+9P3P: CP="IDC DSP COR CURa ADMa OUR IND PHY ONL COM STA"
+?Cache-Control: no-cache, no-store, max-age=0, must-revalidate
+(Expires: Thu, 01 Dec 1994 16:00:00 GMT
+Pragma: no-cache
+Connection: Close
+^Location: http://pixel.rubiconproject.com/tap.php?v=5672&nid=2082&put=48351059503&expires=30
+Content-Length: 0
+%Date: Tue, 08 Apr 2014 21:25:21 GMT
+

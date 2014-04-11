@@ -1,0 +1,91 @@
+PHTTP157.166.224.57"ñ
+„GET /html.ng/site=nba&nba_pos=300x100_spon1&nba_rollup=homepage&params.styles=fs&page.allowcompete=no&Params.User.UserID=534472a5045f3a0a3c73c576a105b77a&transactionID=13969947263859705745113088&tile=6875274996931&domId=8e431a06e206bb27&kxid=&kxseg= HTTP/1.1
+Host: ads.nba.com
+Connection: keep-alive
+TAccept: text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8
+vUser-Agent: Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/31.0.1650.63 Safari/537.36
+Referer: http://www.nba.com/
+$Accept-Encoding: gzip,deflate,sdch
+!Accept-Language: en-US,en;q=0.8
+
+*à1
+HTTP/1.1 200 OK
+%Date: Tue, 08 Apr 2014 22:05:25 GMT
+Server: Apache
+"AdServer: ad8host1server1:9678:1
+%P3P: CP="NOI DEVa TAIa OUR BUS UNI"
+-Cache-Control: max-age=0, no-cache, private
+(Expires: Tue, 08 Apr 2014 22:05:25 GMT
+Pragma: no-cache
+Content-Length: 5993
+Keep-Alive: timeout=5, max=12
+Connection: Keep-Alive
+Content-Type: text/html
+ë.
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+<head>
+
+<script>
+        function cnnad_getTld (hostname)
+        {
+               var data = hostname.split(".");
+               if (data.length >= 2)
+               {
+                       return (data[data.length-2] + "." + data[data.length-1]);
+               }
+               return(null);
+        }
+ 
+        var cnnDocDomain = cnnad_getTld(location.hostname);
+        if(cnnDocDomain) {document.domain = cnnDocDomain;}
+
+	function cnnGetId(query) {
+		var keyValPairs = query.split('&');
+		if(!keyValPairs) {
+			keyValPairs = new Array();
+			keyValPairs[keyValPairs.length]=query;
+		}
+		for(var counter=0; counter < keyValPairs.length;counter++) {
+			var keyVal = keyValPairs[counter].split('=');
+			if(keyVal[0]=='domId') {
+				//alert("returning id: " + keyVal[1]);
+				return keyVal[1];
+			}
+		}
+	}
+			
+	function cnnSendData2() {
+		var docId = cnnGetId(decodeURIComponent(location.pathname.substring(9)));
+		var height = 100;
+		var width = 300;
+		var targetWindow = top;
+		try
+		{
+			if(parent.cnnad_showAd)
+			{
+				targetWindow = parent;
+			}
+		} catch(err) {} 
+		targetWindow.cnnad_showAd(docId);
+		if ((height > 0)&&(width > 0))
+		{
+			targetWindow.cnnad_setAdSize(docId,height,width);
+		}
+	}
+</script> 
+</head>
+
+<body STYLE="background-color:transparent" onload="cnnSendData2()">
+<!--FlightID: 580308-->
+<div style="width:300px; height:100px; margin:0; padding:0; border:0; background-color:#3B3B3B;">
+		<a href="http://ads.cnn.com/event.ng/Type=click&FlightID=580308&AdID=797162&TargetID=182901&Segments=DECBHHicHZBJEgAxCAI_xMEFt_9_bMjk0KEwKpWMLdCT8LNdkX7iGRGdd4ibS2QMD5lbgZz2AC0qwe6jOBeorGoUb4jq4Ypr8sejUOs3qFs3dDgHXcVCd7qL1K7u9udMSK8O-nzknNZjzPIxVR2rWYzCSvdLNbqklT9_EmuaJ6oDm2YlVq04-bNN3A7xlEG8_KlemvaK-7Tz6Qi9Yabek6Fe9j7d96qjPMt9c6i6ePH84_Ov5nFULRulKv3ABzODTM0.&Targets=182901&Values=DECBHHicJY7HEQRBCAMT0gPhyT-x0-x9ugtXoh0zWAfNwDIcBzeqfQscElx3ZOagTMNcZ6CYeai2WnF1UGMWH-vxiFpZHPPH0ebdNpq2J3oHOspXYbajOPdxvRERlfomTqGsjf10fM2z8qfKAFuZ_EvNZvk9rd0PSKorBA..&RawValues=NGUSERID%252C534472a5045f3a0a3c73c576a105b77a%252CKXID%252C%252CTID%252C13969947263859705745113088%252CTIL%252C6875274996931&Redirect=http://store.nba.com/Noches_Enebea_Gear/source/bm-nbacom-banners-022814-NochesEnebea_US-300x100" target="_blank" style="border-style:none;"><img src='http://i.cdn.turner.com/nba/nba/nba_adspaces/1.0/creatives/2012/10/29/72015NBA_Store-LogoOnly_90x80_101112-tbd.png' alt="HEADLINE" style="display:block; float:right; margin-top:10px; margin-right:10px; padding:0; border-style:none;" /></a>
+		<div style="float:left; width:180px; height:70px; margin:0; padding:0; border:0; background-color:#3B3B3B;">
+		<a href="http://ads.cnn.com/event.ng/Type=click&FlightID=580308&AdID=797162&TargetID=182901&Segments=DECBHHicHZBJEgAxCAI_xMEFt_9_bMjk0KEwKpWMLdCT8LNdkX7iGRGdd4ibS2QMD5lbgZz2AC0qwe6jOBeorGoUb4jq4Ypr8sejUOs3qFs3dDgHXcVCd7qL1K7u9udMSK8O-nzknNZjzPIxVR2rWYzCSvdLNbqklT9_EmuaJ6oDm2YlVq04-bNN3A7xlEG8_KlemvaK-7Tz6Qi9Yabek6Fe9j7d96qjPMt9c6i6ePH84_Ov5nFULRulKv3ABzODTM0.&Targets=182901&Values=DECBHHicJY7HEQRBCAMT0gPhyT-x0-x9ugtXoh0zWAfNwDIcBzeqfQscElx3ZOagTMNcZ6CYeai2WnF1UGMWH-vxiFpZHPPH0ebdNpq2J3oHOspXYbajOPdxvRERlfomTqGsjf10fM2z8qfKAFuZ_EvNZvk9rd0PSKorBA..&RawValues=NGUSERID%252C534472a5045f3a0a3c73c576a105b77a%252CKXID%252C%252CTID%252C13969947263859705745113088%252CTIL%252C6875274996931&Redirect=http://store.nba.com/Noches_Enebea_Gear/source/bm-nbacom-banners-022814-NochesEnebea_US-300x100" target="_blank" style="text-decoration:none"><span style="margin:13px 0px 0px 10px; padding:0; display:block; color:#fff; font-family:helvetica; font-size:9pt; font-weight:bold; line-height:1.6;">NBAStore.com </span></a>
+		<a href="http://ads.cnn.com/event.ng/Type=click&FlightID=580308&AdID=797162&TargetID=182901&Segments=DECBHHicHZBJEgAxCAI_xMEFt_9_bMjk0KEwKpWMLdCT8LNdkX7iGRGdd4ibS2QMD5lbgZz2AC0qwe6jOBeorGoUb4jq4Ypr8sejUOs3qFs3dDgHXcVCd7qL1K7u9udMSK8O-nzknNZjzPIxVR2rWYzCSvdLNbqklT9_EmuaJ6oDm2YlVq04-bNN3A7xlEG8_KlemvaK-7Tz6Qi9Yabek6Fe9j7d96qjPMt9c6i6ePH84_Ov5nFULRulKv3ABzODTM0.&Targets=182901&Values=DECBHHicJY7HEQRBCAMT0gPhyT-x0-x9ugtXoh0zWAfNwDIcBzeqfQscElx3ZOagTMNcZ6CYeai2WnF1UGMWH-vxiFpZHPPH0ebdNpq2J3oHOspXYbajOPdxvRERlfomTqGsjf10fM2z8qfKAFuZ_EvNZvk9rd0PSKorBA..&RawValues=NGUSERID%252C534472a5045f3a0a3c73c576a105b77a%252CKXID%252C%252CTID%252C13969947263859705745113088%252CTIL%252C6875274996931&Redirect=http://store.nba.com/Noches_Enebea_Gear/source/bm-nbacom-banners-022814-NochesEnebea_US-300x100" target="_blank" style="text-decoration:none"><p style="font-weight:normal; font-family:helvetica; font-size:9pt; color:#c2c2c2; margin: 0px 0px 0px 10px; line-height:1.2;">Noches &#233;ne&#8226;b&#233;&#8226;a gear
+ <br />& Free Shipping Over $50<br /> Shop Now>> </p></a>
+</div>
+<div style="position:absolute;visibility:hidden;"><img src="http://ads.nba.com:80/event.ng/Type=count&ClientType=2&ASeg=&AMod=&AOpt=0&AdID=797162&FlightID=580308&TargetID=182901&SiteID=57003&EntityDefResetFlag=0&Segments=DECBHHicHZBJEgAxCAI_xMEFt_9_bMjk0KEwKpWMLdCT8LNdkX7iGRGdd4ibS2QMD5lbgZz2AC0qwe6jOBeorGoUb4jq4Ypr8sejUOs3qFs3dDgHXcVCd7qL1K7u9udMSK8O-nzknNZjzPIxVR2rWYzCSvdLNbqklT9_EmuaJ6oDm2YlVq04-bNN3A7xlEG8_KlemvaK-7Tz6Qi9Yabek6Fe9j7d96qjPMt9c6i6ePH84_Ov5nFULRulKv3ABzODTM0.&Targets=182901&Values=DECBHHicJY7HEQRBCAMT0gPhyT-x0-x9ugtXoh0zWAfNwDIcBzeqfQscElx3ZOagTMNcZ6CYeai2WnF1UGMWH-vxiFpZHPPH0ebdNpq2J3oHOspXYbajOPdxvRERlfomTqGsjf10fM2z8qfKAFuZ_EvNZvk9rd0PSKorBA..&RawValues=NGUSERID%252C534472a5045f3a0a3c73c576a105b77a%252CKXID%252C%252CTID%252C13969947263859705745113088%252CTIL%252C6875274996931&random=cdlqwRf,bjuiNvfbWKmm&Params.tag.transactionid=13969947263859705745113088&Params.User.UserID=534472a5045f3a0a3c73c576a105b77a" width="1" height="1" border="0" /></div>
+<script src='http://js.moatads.com/turnerd8523/moatad.js#moatClientLevel1=580308&moatClientLevel2=797162&moatClientLevel3=&moatClientLevel4=-&moatClientSlicer1=-&moatClientSlicer2=-' type='text/javascript'></script>
+</body>
+</html>

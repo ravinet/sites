@@ -1,0 +1,27 @@
+PHTTP54.241.16.201"–
+IGET /track/cmb/openx?oxid=feb1d64d-eed6-7d83-f4ce-c462c58c05e3 HTTP/1.1
+Host: match.adsrvr.org
+Connection: keep-alive
+Accept: image/webp,*/*;q=0.8
+vUser-Agent: Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/31.0.1650.63 Safari/537.36
+WReferer: http://us-u.openx.net/w/1.0/pd?plm=5&ph=4f577327-5159-42b8-a9c4-5861fcdfd78c
+$Accept-Encoding: gzip,deflate,sdch
+!Accept-Language: en-US,en;q=0.8
+WCookie: TDID=bdc02207-e634-4832-bb4d-3322c520294f; TDCPM=CAEYBSgCMgsIsK+e64zm0DEQBTgB
+
+*Ï
+HTTP/1.1 302 Found
+2Cache-Control: private,no-cache, must-revalidate
+Content-Type: text/html
+%Date: Tue, 08 Apr 2014 22:04:38 GMT
+tLocation: http://r.openx.net/set?pid=b0ceb663-1089-7152-cddd-8bfc62e9c357&rtb=bdc02207-e634-4832-bb4d-3322c520294f
+DP3P: CP="NOI DSP COR CUR ADMo DEVo PSAo PSDo OUR SAMo BUS UNI NAV"
+Pragma: no-cache
+Server: Microsoft-IIS/7.5
+zSet-Cookie: TDID=bdc02207-e634-4832-bb4d-3322c520294f; domain=.adsrvr.org; expires=Wed, 08-Apr-2015 22:04:38 GMT; path=/
+“Set-Cookie: TDCPM=CAESFAoFb3BlbngSCwjo+p++9uXQMRAFGAUgASgCMgsIsK+e64zm0DEQBTgB; domain=.adsrvr.org; expires=Wed, 08-Apr-2015 22:04:38 GMT; path=/
+X-AspNet-Version: 4.0.30319
+Content-Length: 239
+Connection: keep-alive
+ñ
+Redirecting to: <a href="http://r.openx.net/set?pid=b0ceb663-1089-7152-cddd-8bfc62e9c357&rtb=bdc02207-e634-4832-bb4d-3322c520294f">http://r.openx.net/set?pid=b0ceb663-1089-7152-cddd-8bfc62e9c357&rtb=bdc02207-e634-4832-bb4d-3322c520294f</a>

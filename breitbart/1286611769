@@ -1,0 +1,26 @@
+PHTTP93.184.216.229"’
+fGET /cmspages/newsmax/feed/GetWgFeed.ashx?ClientID=211&amp;md=1&callback=NMjsonpCallback211 HTTP/1.1
+Host: cdn.nmcdn.us
+Connection: keep-alive
+Accept: */*
+vUser-Agent: Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/31.0.1650.63 Safari/537.36
+$Referer: http://www.breitbart.com/
+$Accept-Encoding: gzip,deflate,sdch
+!Accept-Language: en-US,en;q=0.8
+
+*õ
+HTTP/1.1 200 OK
+Accept-Ranges: bytes
+Cache-Control: max-age=600
+.Content-Type: text/javascript; charset=utf-8
+%Date: Fri, 11 Apr 2014 19:12:34 GMT
+'Expires: Fri, 11 Apr 2014 07:17:38 -4
+.Last-Modified: Fri, 11 Apr 2014 19:07:38 GMT
+Server: ECS (mdw/13B9)
+X-AspNet-Version: 4.0.30319
+X-Cache: HIT
+X-Frame-Options: SAMEORIGIN
+X-Powered-By: ASP.NET
+Content-Length: 2014
+à
+NMjsonpCallback211({"responseData":{"feed":{"feedUrl":"http://nmwidget.newsmax.com/","clientID":211,"header":"","logoImage":"","siteUrl":"","entries":[{"title":"Murdoch: I Could Live with Hillary","link":"http://www.newsmax.com/newswidget/Murdoch-WSJ-News-CorpJeb-Bush/2014/04/10/id/564901/","style":"NmWgDefault","target":"_top","image":"","description":"","imageFile":"","owner":"Newsmax"},{"title":"Why Did Sebelius Really Resign?","link":"http://www.newsmaxtv.com/","style":"NmWgDefault","target":"_top","image":"","description":"","imageFile":"","owner":"Newsmax"},{"title":"Should Jeb Bush Run in 2016?","link":"http://www.newsmax.com/surveys/2016GOP/GOP-s-2016-Nominee/id/113/kw/default/","style":"NmWgDefault","target":"_top","image":"","description":"","imageFile":"","owner":"Newsmax"},{"title":"Limbaugh Slams CBS Colbert Pick","link":"http://www.newsmax.com/newswidget/Rush-Limbaugh-Stephen-Colbert-Letterman/2014/04/10/id/564907/","style":"NmWgDefault","target":"_top","image":"","description":"","imageFile":"","owner":"Newsmax"},{"title":"Jesus More Popular on China's Twitter Than Mao","link":"http://www.newsmax.com/Newswidget/Weibo-China-Christianity-Mao/2014/04/09/id/564523/","style":"NmWgDefault","target":"_top","image":"","description":"","imageFile":"","owner":"Newsmax"},{"title":"7 Signs Your Thyroid is Causing Weight Gain and Fatigue","link":"https://w3.newsmax.com/LP/Health/DRB/Brownstein-Thyroid-Imb","style":"NmWgDefault","target":"_top","image":"","description":"","imageFile":"","owner":"Newsmax"},{"title":"Weird Trick Adds Up to $1,000 to Your Social Security Checks","link":"https://w3.newsmax.com/LP/Finance/FPR/FPR-Bargain-Trial","style":"NmWgDefault","target":"_top","image":"","description":"","imageFile":"","owner":"Newsmax"},{"title":"The 1 Surprising Thing Most Millionaires Have in Common","link":"https://w3.newsmax.com/LP/Finance/ABS/ABS-Richest-Man","style":"NmWgDefault","target":"_top","image":"","description":"","imageFile":"","owner":"Newsmax"}]},"error":""}})

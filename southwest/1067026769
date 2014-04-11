@@ -1,0 +1,20 @@
+PHTTP205.216.27.96"ú
+NGET /mpel.js?href=http%3A%2F%2Fwww.southwest.com%2F&ref=&lang=en-US HTTP/1.1
+Host: espanol.southwest.com
+Connection: keep-alive
+Accept: */*
+vUser-Agent: Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/31.0.1650.63 Safari/537.36
+$Referer: http://www.southwest.com/
+$Accept-Encoding: gzip,deflate,sdch
+!Accept-Language: en-US,en;q=0.8
+uCookie: mbox=check#true#1396995996|session#1396995935034-300124#1396997796|PC#1396995935034-300124.25_49#1402179936
+
+*›
+HTTP/1.1 200 OK
+.Cache-Control: max-age=0, no-cache, no-store
+Pragma: no-cache
+Content-Length: 228
+Server: Microsoft-IIS/7.5
+%Date: Tue, 08 Apr 2014 22:25:34 GMT
+æ
+(function(){var domain=(function(a){var b=a.match('[^.]+.(([^.]{2,3}.)?[^.]{2}|[^.]{3,})$');return b==null?a:b[0]})(location.host);document.cookie='MP_LANG=en;domain='+domain+';path=/;expires=Wed, 08 Apr 2015 17:25:35 CDT';})();

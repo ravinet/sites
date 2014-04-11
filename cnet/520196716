@@ -1,0 +1,23 @@
+PHTTP
+18.7.20.69"þ
+OGET /fly/102-fly/bundles/cnetjs/js-build/components/breaking-news.js HTTP/1.1
+Host: cnet4.cbsistatic.com
+Connection: keep-alive
+Accept: */*
+vUser-Agent: Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/31.0.1650.63 Safari/537.36
+Referer: http://www.cnet.com/
+$Accept-Encoding: gzip,deflate,sdch
+!Accept-Language: en-US,en;q=0.8
+
+*½
+HTTP/1.1 200 OK
+Server: nginx
+(Content-Type: application/x-javascript
+Content-Length: 790
+.Last-Modified: Tue, 08 Apr 2014 18:43:51 GMT
+2Access-Control-Allow-Origin: http://www.cnet.com
+Accept-Ranges: bytes
+%Date: Tue, 08 Apr 2014 21:34:31 GMT
+Connection: keep-alive
+˜
+define(["jquery","version!fly/managers/debug","managers/client-storage","version!fly/managers/components","version!fly/components/base"],function(e,t,n,r){t=t.init("breakingNews"),e.widget("cnet.breakingNews",e.fly.base,{options:{storedFlag:"viewedBreakingNews"},_create:function(){this._setup();var t=this;n.read(this.options.storedFlag,!0)?(e.cnet=e.extend(!0,e.cnet,{breakingNewsActive:!1}),t.$window.trigger("breakingNewsComplete")):e.ajax({url:"/promotional/breaking-news/"}).done(function(i){var s=!1;e.trim(i)&&(t.$element.append(i),e.cnet.globalModal({content:t.$element,openOnInit:!0,classModal:"modal breaking-news"}),r.process(t.$element),n.write(t.options.storedFlag,!0,!0),s=!0),e.cnet=e.extend(!0,e.cnet,{breakingNewsActive:s}),t.$window.trigger("breakingNewsComplete")})}})})

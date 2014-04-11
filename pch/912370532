@@ -1,0 +1,311 @@
+PHTTP23.74.28.10"á
+?GET /pch_media/js/data_click.js?v=3.1.32.1.454-18308 HTTP/1.1
+Host: www.pch.com
+Connection: keep-alive
+Accept: */*
+vUser-Agent: Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/31.0.1650.63 Safari/537.36
+Referer: http://www.pch.com/
+$Accept-Encoding: gzip,deflate,sdch
+!Accept-Language: en-US,en;q=0.8
+úCookie: deb088d138aa52ddbeb48990e3e58a5e=k12m2f9f5ent563l9fgbgvu270; pdd=D; pci=n3qg5f4gGbPBKvNH; __utma=102336542.1157406824.1396994885.1396994885.1396994885.1; __utmb=102336542.1.10.1396994885; __utmc=102336542; __utmz=102336542.1396994885.1.1.utmcsr=(direct)|utmccn=(direct)|utmcmd=(none); _at_id.pch.production.a1c9=b2baeaeffd6ee36d.1396994885.1.1396994885.1396994885.0.0.
+
+*¢9
+HTTP/1.1 200 OK
+Server: Apache
+.Last-Modified: Wed, 29 Jan 2014 23:00:17 GMT
+$ETag: "1e05395-1b47-4f123e7814240"
+Accept-Ranges: bytes
+Content-Length: 6983
+GP3P: CP="CAO DSP COR CUR ADM DEV TAI PSA PSD IVA IVD CON OUR LEG UNI"
+Content-Type: text/javascript
+%Date: Tue, 08 Apr 2014 22:08:04 GMT
+Connection: keep-alive
+É6
+/*Universal Click Tracking and redirection
+@Author: amourya@pch.com
+@Note: This file should be included at the end of the Page e.g. just before body tag 
+ as it may not work for the objects that will be loaded after the line where the file is included*/
+if( typeof(window.PCH) !== "object" ) {
+    window.PCH = {};
+}
+
+if( typeof(window.PCH.uniExp) !== "object" ) {
+    window.PCH.uniExp = {};
+}
+PCH.uniExp.eventMgr = (function(win, doc, undefined) {
+	var eventMgr = {};
+
+	/**
+	 * Exposed Method for Capturing Events
+	 *
+	 * @param {Object} target
+	 * @param {Number} delay
+	 */
+	var captureTracking = function(target, customAction, delay) {
+		var delay = delay || 300;
+		if (!target) {
+			return;
+		}
+		if (!PCHGA) {
+			return;
+		}
+
+		var customAction = customAction || false;
+		//let's look at what type of element it is
+		var targetData = convertData(target);
+
+		if ( typeof targetData === 'object') {
+			// calling the tracking
+			var numFns = targetData.length;
+
+			for (var i = 0; i < numFns - 1; i++) {
+				targetData[i].fn.apply(this, targetData[i].args);
+				if (window.console) {
+					console.log('firing fn: ' + i);
+				}
+			}
+			if(window.console){
+				console.log('firing delay');
+			}	
+			
+			var st = setTimeout(function() {
+				targetData[numFns - 1].fn.apply(this, targetData[i].args);
+
+			}, delay);
+
+		} 
+	};
+
+
+	/**
+	 * Get function from string, with or without scopes
+	 * @param {String} strName : Name of the Function to evaluate and return
+	 */
+	var getFunctionbyName = function(strName) {
+		var scope = window;
+		var scopeSplit = strName.split('.');
+		for ( i = 0; i < scopeSplit.length - 1; i++) {
+			scope = scope[scopeSplit[i]];
+			if (scope == undefined) {
+				return;
+			}
+		}
+		return scope[scopeSplit[scopeSplit.length - 1]];
+	}
+
+	/**
+	 * Function to process element's data attributes (jQuery)
+	 * @param {Object} data jQuery Object
+	 */
+	var processData = function(data) {
+		var toReturn = false;
+		if (data) {
+			toReturn = [];
+			if (data.category || data.action || data.page) {
+				toReturn[0] = {};
+				toReturn[0].args = [];
+				toReturn[0].args.push(data.category);
+				toReturn[0].args.push(data.action);
+				toReturn[0].args.push(data.page);
+				toReturn[0].args.join(',');
+				toReturn[0].fn = PCHGA.trackEvent;
+				toReturn[0].target = data.target || '';
+			}
+
+			toReturn[1] = {};
+			if (data.fn !== '') {
+				toReturn[1]['fn'] = window[data.fn];
+			} else {
+				if (toReturn[0].target !== '') {
+					toReturn[1]['fn'] = windowOpen;
+				} else {
+					toReturn[1]['fn'] = redirectUrl;
+				}
+			}
+			toReturn[1].url = data.url;
+		}
+
+		return toReturn;
+	};
+
+	var parseData = function(data) {
+
+	};
+
+	/**
+	 * Function to convert element attribute data to o
+	 * @param {Object} target (Event Level HTML Element)
+	 */
+	var convertData = function(target) {
+		var toReturn = false;
+		if (target) {
+			// check for onclick or data-onclick
+			if (target.attr('onclick') || target.data('onclick')) {
+				var dSource = '';
+				if (target.data('onclick')) {
+					dSource = target.data('onclick');
+				} else if (target.attr('onclick')) {
+					dSource = target.attr('onclick');
+				} else {
+					return toReturn;
+				}
+
+				if (dSource != '') {
+					toReturn = [];
+					var collections = $.trim(dSource).split(';');
+					collections = $.grep(collections, function(n, i) {
+						return (n !== "" && n != null);
+					});
+					for (var i = 0; i < collections.length; i++) {
+						var items = collections[i].split('(');
+						toReturn[i] = {};
+						//&& items[0].length > 1
+						if (items.length !== 0) {
+							var fn = $.trim(items[0]);
+							toReturn[i]['fn'] = getFunctionbyName(fn);
+							if (items[1]) {
+								var params = items[1].replace(/['"();]/g, '').split(',');
+								toReturn[i]['args'] = params;
+							}
+						}
+
+					}
+
+					// Check to see if we need to add a redirect
+					var lastIdx = toReturn.length - 1;
+					if ( (toReturn[lastIdx]['args'].length != 1) &&  (toReturn[lastIdx]['args'][0] != target.attr('href')) ) {
+						++lastIdx;
+						toReturn[lastIdx] = {};
+						if (target.attr('target') && (target.attr('target') == '_blank' )) {
+							toReturn[lastIdx]['fn'] = windowOpen;
+						} else {
+							toReturn[lastIdx]['fn'] = redirectUrl;
+						}
+						toReturn[lastIdx]['args'] = [];
+						toReturn[lastIdx]['args'].push(target[0]);
+						//toReturn[lastIdx]['args'].join('');
+					}					
+				}
+
+			}
+
+		}
+		return toReturn;
+	};
+
+	/**
+	 * Function to open href/url in existing window
+	 * @param {String} url
+	 */
+	var redirectUrl = function(url) {
+		this.name = 'redirectUrl';
+		redUrl = $(url).attr('href');
+		if(redUrl != "#"){
+		window.location = redUrl;
+		}
+	};
+
+	/**
+	 * Function to open href/url in new window
+	 * @param {String} url
+	 */
+	var windowOpen = function(url) {
+		this.name = 'windowOpen';
+		redUrl = $(url).attr('href');
+		window.open(redUrl);
+	};
+
+	eventMgr.captureTracking = captureTracking;
+
+	return eventMgr;
+
+} )(this, this.document);
+
+
+//Delegate the anchor tags under body tag having data-onclick to enable the JS code fired on click event. 
+$("body").delegate("a", 'click', function(e) {
+    var target = $(e.currentTarget);  
+    if (target.attr('data-onclick') || target.data('onclick')) {               
+        if(typeof PCHGA == 'undefined'){
+        	return;
+        }
+        
+        e.preventDefault();
+        PCH.uniExp.eventMgr.captureTracking(target,false);
+        
+    }
+}); 
+
+///////////////////////////////////////
+
+
+//All the below has to be removed after gatagging.js code is built in pchcom-mobile.js 
+//universal navs ga reporting used for both MOBILE and DESKTOP
+$("#uni_header .nav li a, #uni-nav-bottom li a").click(function(){
+	label = $(this).text();	
+	
+	switch(label) {
+		case "PCH.com":
+			label = "UniNavPCH";
+			break;
+		case "PCHsearch&win":
+		case "PCHsearch & win":
+			label = "UniNavSearch";
+			break;
+		case "PCHlotto":
+			label = "UniNavLotto";
+			break;
+		case "PCHgames":
+			label = "UniNavGames";
+			break;
+		case "PCHslots":
+			label = "UniNavSlots";
+			break;
+		case "PCHtips":
+			label = "UniNavTips";
+			break;
+		case "PCHonlinesurverys":
+			label = "UniNavSurveys";
+			break;
+		case "PCHsave&win":
+			label = "UniNavSave";
+			break;
+		default:
+		// nothng
+	}
+	
+	PCHGA.trackVirtualPageView(document.title, label);
+});
+
+$("#uni_header .top-bar a, #uni_header .uni-nav-bar .unrecognized li a, #uni-nav-top .multi-nav a").click(function(event){
+	className = event.target.className;
+	arr = className.split(' ');
+	var target;
+	
+	switch(arr[0])  // in case there are more than one class name for the link
+	{
+	case 'sign-in':
+		target = 'UniNavSignin';
+		break;
+	case 'sign-out':
+		target = 'UniNavSignout';
+	break;
+	case 'registration':
+		target = 'UniNavGoReg';
+		break;
+	case 'my-account':
+		target = 'UniNavMyAccount';
+		break;
+	case 'complete-reg':
+		target = 'UniNavCompleteReg';
+	  	break;
+	case 'not-you':
+		target = 'UniNavNotYou';
+	  	break;
+	}
+	if (typeof(target) != "undefined")
+	{    		
+		PCHGA.trackVirtualPageView(document.title, target); 
+	}
+
+});

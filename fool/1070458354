@@ -1,0 +1,33 @@
+PHTTP192.243.250.36"‚
+AGET /2368/gr?url=/static/everest/static/images/1x1.png HTTP/1.1
+Host: pixel.everesttech.net
+Connection: keep-alive
+Accept: image/webp,*/*;q=0.8
+vUser-Agent: Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/31.0.1650.63 Safari/537.36
+Referer: http://www.fool.com/
+$Accept-Encoding: gzip,deflate,sdch
+!Accept-Language: en-US,en;q=0.8
+
+*Â	
+HTTP/1.1 302 Found
+%Date: Tue, 08 Apr 2014 21:41:33 GMT
+Server: Apache
+RSet-Cookie: everest_session_v2=U0RtDQAAAS5ZzNzB; path=/; domain=.everesttech.net
+\Set-Cookie: ev_t=1; path=/; domain=.everesttech.net; expires=Thu, 08-May-2014 21:41:33 GMT
+~Set-Cookie: everest_g_v2=g_surferid~U0RtDQAAAS5ZzNzB; path=/; domain=.everesttech.net; expires=Thu, 03-Mar-2016 08:21:33 GMT
+nSet-Cookie: ev_t2=3-U0RtDQAAAS5ZzNzB; path=/; domain=.everesttech.net; expires=Thu, 08-May-2014 21:41:33 GMT
+>P3P: CP="NOI NID DEVa PSAa PSDa OUR IND PUR COM NAV INT DEM"
+Cache-Control: no-cache
+–Location: https://cm.g.doubleclick.net/pixel?google_nid=everest&google_cm&google_sc&ev_rs=1&url=/2368/gr%3furl=/static/everest/static/images/1x1.png
+Content-Length: 338
+$Keep-Alive: timeout=15, max=999146
+Connection: Keep-Alive
+-Content-Type: text/html; charset=iso-8859-1
+Ô
+<!DOCTYPE HTML PUBLIC "-//IETF//DTD HTML 2.0//EN">
+<html><head>
+<title>302 Found</title>
+</head><body>
+<h1>Found</h1>
+<p>The document has moved <a href="https://cm.g.doubleclick.net/pixel?google_nid=everest&amp;google_cm&amp;google_sc&amp;ev_rs=1&amp;url=/2368/gr%3furl=/static/everest/static/images/1x1.png">here</a>.</p>
+</body></html>

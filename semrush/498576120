@@ -1,0 +1,30 @@
+PHTTP54.230.54.228"’
+WGET /m/build/scripts/social-tracking.js?rev=04faa5084783973705d65f9b9b00de9a HTTP/1.1
+%Host: d2lrxcz2ihvajy.cloudfront.net
+Connection: keep-alive
+Accept: */*
+vUser-Agent: Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/31.0.1650.63 Safari/537.36
+"Referer: http://www.semrush.com/
+$Accept-Encoding: gzip,deflate,sdch
+!Accept-Language: en-US,en;q=0.8
+
+*ó
+HTTP/1.1 200 OK
+&Content-Type: application/javascript
+Content-Length: 1112
+Connection: keep-alive
+Server: nginx/1.5.12
+%Date: Mon, 07 Apr 2014 08:41:07 GMT
+.Last-Modified: Mon, 07 Apr 2014 08:25:42 GMT
+ETag: "53426106-458"
+(Expires: Tue, 08 Apr 2014 08:41:07 GMT
+Cache-Control: max-age=86400
+Accept-Ranges: bytes
+Age: 48112
+X-Cache: Hit from cloudfront
+GVia: 1.1 7d2b816f7fa645fc6acb3c6d524b6a9c.cloudfront.net (CloudFront)
+GX-Amz-Cf-Id: DybczuHChblOJjaeqRHFYMliDsHmOwO8UFLFDIN33aujGF27kHoemA==
+Ú
+var _ga=_ga||{},_gaq=_gaq||[];_ga.trackSocial=function(a,c,d){_ga.trackFacebook(a,c);_ga.trackTwitter(a,c)};
+_ga.trackFacebook=function(a,c){var d=_ga.buildTrackerName_(c);try{FB&&(FB.Event&&FB.Event.subscribe)&&(FB.Event.subscribe("edge.create",function(b){_gaq.push([d+"_trackSocial","facebook","like",b,a])}),FB.Event.subscribe("edge.remove",function(b){_gaq.push([d+"_trackSocial","facebook","unlike",b,a])}),FB.Event.subscribe("message.send",function(b){_gaq.push([d+"_trackSocial","facebook","send",b,a])}))}catch(e){}};_ga.buildTrackerName_=function(a){return a?a+".":""};
+_ga.trackTwitter=function(a,c){var d=_ga.buildTrackerName_(c);try{twttr&&(twttr.events&&twttr.events.bind)&&twttr.events.bind("tweet",function(b){if(b){var c;b.target&&"IFRAME"==b.target.nodeName&&(c=_ga.extractParamFromUri_(b.target.src,"url"));_gaq.push([d+"_trackSocial","twitter","tweet",c,a])}})}catch(e){}};_ga.extractParamFromUri_=function(a,c){if(a){a=a.split("#")[0];var d=a.split("?");if(1!=d.length){d=decodeURI(d[1]);c+="=";for(var d=d.split("&"),e=0,b;b=d[e];++e)if(0===b.indexOf(c))return unescape(b.split("=")[1])}}};

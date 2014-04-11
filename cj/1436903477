@@ -1,0 +1,64 @@
+PHTTP23.202.204.11"Ì
+)GET /_lang_r/include.js?n3o8vv HTTP/1.1
+Host: www.cj.com
+Connection: keep-alive
+Accept: */*
+vUser-Agent: Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/31.0.1650.63 Safari/537.36
+Referer: http://www.cj.com/
+$Accept-Encoding: gzip,deflate,sdch
+!Accept-Language: en-US,en;q=0.8
+
+*†
+HTTP/1.1 200 OK
+Server: Apache
+.Last-Modified: Tue, 15 Oct 2013 21:22:46 GMT
+ ETag: "9f8a-629-4e8ce2f973b74"
+Accept-Ranges: bytes
+Content-Length: 1577
+&Content-Type: application/javascript
+Cache-Control: max-age=900
+(Expires: Tue, 08 Apr 2014 21:49:05 GMT
+%Date: Tue, 08 Apr 2014 21:34:05 GMT
+Connection: keep-alive
+«
+docCookies = {
+    set: function (sKey, sValue, vEnd, sPath, sDomain) {
+        if (!sKey || /^(?:expires|max\-age|path|domain|secure)$/.test(sKey)) { return; }
+        var sExpires = "", d = new Date();
+        if (typeof vEnd == "number") {
+            d.setTime(d.getTime() + (vEnd * 1000));
+            sExpires = "; max-age=" + vEnd + "; expires=" + d.toGMTString();
+        }
+        document.cookie = escape(sKey) + "=" + escape(sValue) + sExpires + (sDomain ? "; domain=" + sDomain : "") + (sPath ? "; path=" + sPath : "");
+    },
+    has: function (sKey) { return (new RegExp("(?:^|;\\s*)" + escape(sKey).replace(/[\-\.\+\*]/g, "\\$&") + "\\s*\\=")).test(document.cookie); },
+    enabled: function () {
+        if (navigator.cookieEnabled) { return true; }
+        this.set('cookietest', 1);
+        var ret = this.has('cookietest');
+        this.set('cookietest', 1, -999);
+        return ret;
+    }
+};
+
+
+(function($) {
+  $(function() {
+
+    var re = /\.cj\.com$/;
+    if (re.exec(document.domain) && docCookies.enabled() && !docCookies.has('lang_r')) {
+        /* set it the first time in case it doesnt work... */
+        docCookies.set('lang_r', '0', 3600, '/', '.cj.com');
+        $.ajax({
+            url: 'http://www.cj.com/_lang_r/parse.php',
+            dataType: 'script',
+            data: 'r=' + Math.floor(Math.random() * 1000),
+            success: function () {
+                /* Set a longer cookie so they don't get reprompted */
+                docCookies.set('lang_r', '0', 604800, '/', '.cj.com');
+            }
+        });
+    }
+
+});
+})(jQuery);

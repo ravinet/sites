@@ -1,0 +1,124 @@
+PHTTP23.45.37.109"¥
+´GET /event/js?01AD=3sM_kVSrfCwOQpgJJK_OGmkqBMt46mPQ9SemTGx-Pu66OJsf1oPsk2g&01RI=6E3516DBA015423&01NA=na&mt_id=337762&mt_adid=115261&v1=&v2=&v3=&s1=&s2=&s3=&mm_bnc&mm_bct HTTP/1.1
+Host: pixel.mathtag.com
+Connection: keep-alive
+Accept: */*
+vUser-Agent: Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/31.0.1650.63 Safari/537.36
+¢Referer: http://2086659.fls.doubleclick.net/activityi;src=2086659;type=nbcsh251;cat=nbcho697;ord=5769173582084.477;~oref=http%3A%2F%2Fwww.nbc.com%2F?&_dc_ck=try
+$Accept-Encoding: gzip,deflate,sdch
+!Accept-Language: en-US,en;q=0.8
+>Cookie: uuid=40955348-00d0-4b00-b706-45102f3bec6e; HRL8=CT-1
+
+*Ù:
+HTTP/1.1 200 OK
+Content-Type: text/javascript
+Content-Length: 6898
+mServer: mt2/2.10.2.rc1+26c5168 CORE-1658-uuid-random-patch Mar  4 2014 19:08:19 ewr-pixel-x7 pid 0xd32 3378
+(Expires: Fri, 11 Apr 2014 14:48:49 GMT
+.Cache-Control: max-age=0, no-cache, no-store
+Pragma: no-cache
+%Date: Fri, 11 Apr 2014 14:48:49 GMT
+Connection: keep-alive
+]Set-Cookie: HRL8=CT-USR; expires=Fri, 09-May-2014 14:48:49 GMT; path=/; domain=.mathtag.com
+ZSet-Cookie: mt_misc=; domain=.mathtag.com; path=/; expires=Sun, 11-May-2014 14:48:49 GMT
+;P3P: CP="NON DSP ADM DEV PSD OUR IND STP PHY PRE NAV UNI"
+ô5
+	/*
+	*/
+
+	var mm_ri = String( Math.random() );
+	mm_ri = mm_ri.replace( /0\./g,'' );
+	
+	var mm_protocol = location.protocol;
+	if ( mm_protocol != 'http:' && mm_protocol != 'https:' ){ mm_protocol = 'http:'; }
+	
+
+var sync_4815162342 = function()
+{
+this.urls = [
+"http://pixel.mathtag.com/misc/img?mt_id=337762&mt_adid=115261&mop_seq=0:36&mt_cb=109909&mop_top=",
+"http://cm.g.doubleclick.net/pixel?google_nid=mediamath&google_cm&google_hm=QJVTSADQSwC3BkUQLzvsbg",
+"http://pixel.mathtag.com/misc/img?mt_id=337762&mt_adid=115261&mop_seq=1:36&mt_cb=387277&mop_top=4:1396018149|",
+"http://pixel.rubiconproject.com/tap.php?v=4222&nid=1512&put=40955348-00d0-4b00-b706-45102f3bec6e",
+"http://pixel.mathtag.com/misc/img?mt_id=337762&mt_adid=115261&mop_seq=2:36&mt_cb=385529&mop_top=4:1396018149|9:1396018149|",
+"http://www.facebook.com/fr/u.php?p=418865601488577&m=40955348-00d0-4b00-b706-45102f3bec6e",
+"http://image2.pubmatic.com/AdServer/Pug?vcode=bz0yJnR5cGU9MSZjb2RlPTM2MiZ0bD00MzIwMA==&piggybackCookie=uid:40955348-00d0-4b00-b706-45102f3bec6e",
+"http://ib.adnxs.com/getuid?http://sync.mathtag.com/sync/img?mt_exid=13&mt_mminit=1&mt_exuid=$UID",
+"http://r.openx.net/set?pid=0b83a084-dd0b-4bfe-9e2e-ab3706fc9955&rtb=uuid%3D40955348-00d0-4b00-b706-45102f3bec6e",
+"http://sync.zenoviaexchange.com/usersync/mediamath/40955348-00d0-4b00-b706-45102f3bec6e",
+"http://ads.yahoo.com/pixel?id=2172018&t=2&piggyback=http%3A%2F%2Fads.yahoo.com%2Fcms%2Fv1%3Fesig%3D1~444de053567fa80a3054a1981c8febcf1176dd9d%26nwid%3D10000355603%26sigv%3D1",
+"http://r.casalemedia.com/rum?cm_dsp_id=3&external_user_id=40955348-00d0-4b00-b706-45102f3bec6e",
+"http://bh.contextweb.com/bh/rtset?do=add&pid=530739&ev=40955348-00d0-4b00-b706-45102f3bec6e",
+"http://pixel.mathtag.com/misc/img?mt_id=337762&mt_adid=115261&mop_seq=10:36&mt_cb=701241&mop_top=4:1396018149|9:1396018149|23:1396018149|3:1396018149|13:1396018149|5:1396018149|28:1396018149|10:1396018149|15:1396018149|11:1396018149|",
+"http://delivery.swid.switchads.com/adserver/info.php?action=STORE&info=MMTH:40955348-00d0-4b00-b706-45102f3bec6e",
+"http://ce.lijit.com/merge?pid=3&3pid=40955348-00d0-4b00-b706-45102f3bec6e",
+"http://ums.adtechus.com/mapuser?providerid=1005;userid=40955348-00d0-4b00-b706-45102f3bec6e",
+"http://www.burstnet.com/user/2/bidder_id=77161&bidder_user_id=40955348-00d0-4b00-b706-45102f3bec6e",
+"http://dis.criteo.com/pump/match.aspx?c=2&uid=40955348-00d0-4b00-b706-45102f3bec6e",
+"http://sync.go.sonobi.com/us.gif?nw=mediamath&nuid=40955348-00d0-4b00-b706-45102f3bec6e",
+"http://s.kau.li/?did=21&uid=40955348-00d0-4b00-b706-45102f3bec6e",
+"http://sync.adap.tv/sync?type=gif&key=mediamathinc&uid=40955348-00d0-4b00-b706-45102f3bec6e",
+"http://pix.btrll.com/353806.png",
+"http://cs.specificclick.net/sync/?bdid=3&fr=1",
+"http://pixel.mathtag.com/misc/img?mt_id=337762&mt_adid=115261&mop_seq=20:36&mt_cb=518144&mop_top=4:1396018149|9:1396018149|23:1396018149|3:1396018149|13:1396018149|5:1396018149|28:1396018149|10:1396018149|15:1396018149|11:1396018149|29:1396018149|17:1396018149|21:1396018149|25:1396018149|20:1396018149|42:1396018149|38:1396018149|31:1396018149|32:1396018149|24:1396018149|",
+"http://ad.360yield.com/match?publisher_dsp_id=5&external_user_id=40955348-00d0-4b00-b706-45102f3bec6e",
+"http://y.one.impact-ad.jp/cs?d=70&uid=40955348-00d0-4b00-b706-45102f3bec6e&tg=2&et=30&r=no",
+"http://ih.adscale.de/adscale-ih/tpui?tpid=39&tpuid=40955348-00d0-4b00-b706-45102f3bec6e&cburl=http%3A%2F%2Fcotads.adscale.de%2Fads%2Fpixel%2F1by1.png",
+"http://rtb-csync.smartadserver.com/redir/?partnerid=25&partneruserid=40955348-00d0-4b00-b706-45102f3bec6e",
+"http://admaym.com/UserMatch.ashx?bidderid=45&bidderuid=40955348-00d0-4b00-b706-45102f3bec6e",
+"http://tags.bluekai.com/site/2948?id=40955348-00d0-4b00-b706-45102f3bec6e",
+"http://tags.bluekai.com/site/4448?id=40955348-00d0-4b00-b706-45102f3bec6e",
+"http://loadm.exelator.com/load/?p=204&g=101&buid=40955348-00d0-4b00-b706-45102f3bec6e&j=0",
+"http://e.nexac.com/e/media_math_sync.xgi?na_exid=40955348-00d0-4b00-b706-45102f3bec6e",
+"http://beacon.krxd.net/usermatch.gif?partner=mediamath&_kdpid=8dd53e69-ae3f-4829-8f12-05cc5b57b288&mmuuid=40955348-00d0-4b00-b706-45102f3bec6e",
+"http://pixel.mathtag.com/misc/img?mt_id=337762&mt_adid=115261&mop_seq=30:36&mt_cb=876708&mop_top=4:1396018149|9:1396018149|23:1396018149|3:1396018149|13:1396018149|5:1396018149|28:1396018149|10:1396018149|15:1396018149|11:1396018149|29:1396018149|17:1396018149|21:1396018149|25:1396018149|20:1396018149|42:1396018149|38:1396018149|31:1396018149|32:1396018149|24:1396018149|16:1396018149|35:1396018149|26:1396018149|39:1396018149|37:1396018149|10002:1396018149|10010:1396018149|10008:1396018149|10011:1396018149|10031:1396018149|",
+"http://idsync.rlcdn.com/361087.gif?partner_uid=40955348-00d0-4b00-b706-45102f3bec6e",
+"http://p.acxiom-online.com/pixel/ddp?pid=3006&ord=1000&uid=40955348-00d0-4b00-b706-45102f3bec6e&ot=pixel&redir=http%3A%2F%2Fpixel.mathtag.com%2Fload%2Fimg%3Fmt_segld2%3D%23DATTRIBUTES%23%26mt_exid%3D10018%26mt_pi%3Dax%26mt_exuid%3D%23COOKIEID%23",
+"http://adadvisor.net/adscores/g.pixel?sid=9211132948&_mt=40955348-00d0-4b00-b706-45102f3bec6e",
+"http://su.addthis.com/red/usync?pid=11112&puid=40955348-00d0-4b00-b706-45102f3bec6e",
+"https://analytics.twitter.com/i/adsct?p_user_id=40955348-00d0-4b00-b706-45102f3bec6e&p_id=13524",
+"http://d.agkn.com/pixel/2184/?sync=615&che=1359641939&uuid=40955348-00d0-4b00-b706-45102f3bec6e",
+"http://pixel.mathtag.com/misc/img?mt_id=337762&mt_adid=115261&mop_seq=36:36&mt_cb=501372&check=40955348-00d0-4b00-b706-45102f3bec6e&mop_top=4:1396018149|9:1396018149|23:1396018149|3:1396018149|13:1396018149|5:1396018149|28:1396018149|10:1396018149|15:1396018149|11:1396018149|29:1396018149|17:1396018149|21:1396018149|25:1396018149|20:1396018149|42:1396018149|38:1396018149|31:1396018149|32:1396018149|24:1396018149|16:1396018149|35:1396018149|26:1396018149|39:1396018149|37:1396018149|10002:1396018149|10010:1396018149|10008:1396018149|10011:1396018149|10031:1396018149|10017:1396018149|10018:1396018149|10009:1396018149|10025:1396018149|43:1396018149|10013:1396018149|",
+]
+
+   this.progress = 0;
+
+   var self = this;
+
+   this.sync = function(url)
+   {
+      var e = new Image();
+      e.src = url;
+   }
+
+   this.batch = function()
+   {
+      for (var i = self.progress; i < self.urls.length; ++i)
+      {
+          self.sync(self.urls[i]);
+      }
+   }
+
+   this.final = function()
+   {
+      self.sync(self.urls[self.urls.length-1]+"&final");
+   }
+
+   this.some = function(howmany)
+   {
+      var count = 0;
+      for (var i = self.progress; i < self.urls.length && count < howmany; ++i)
+      {
+         self.sync(self.urls[self.progress++]);
+         count++;
+      }
+   }
+}
+
+
+var s_4815162342 = new sync_4815162342();
+s_4815162342.some(1);
+setTimeout('s_4815162342.some(2)', 1000);
+setTimeout(s_4815162342.batch, 3000);
+setTimeout(s_4815162342.final, 10000);
+

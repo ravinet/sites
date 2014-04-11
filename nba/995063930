@@ -1,0 +1,489 @@
+PHTTP
+18.7.20.68"ƒ
+YGET /nba/nba/.element/js/3.0/home/nbaCountdownAutoClockPO14.js?_=1396994727126 HTTP/1.1
+Host: i.cdn.turner.com
+Connection: keep-alive
+Accept: */*
+vUser-Agent: Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/31.0.1650.63 Safari/537.36
+Referer: http://www.nba.com/
+$Accept-Encoding: gzip,deflate,sdch
+!Accept-Language: en-US,en;q=0.8
+
+*²•
+HTTP/1.1 200 OK
+Server: Apache
+.Last-Modified: Fri, 04 Apr 2014 20:48:43 GMT
+Accept-Ranges: bytes
+Content-Length: 18802
+(Content-Type: application/x-javascript
+Cache-Control: max-age=3600
+(Expires: Tue, 08 Apr 2014 23:05:26 GMT
+%Date: Tue, 08 Apr 2014 22:05:26 GMT
+Connection: keep-alive
+ô’
+/*
+	based off of nbaCountdownAutoClock v1.6 with added functionality for another countdown clock on the right side and promo banners on the left side
+
+	left side always displays a promo banner once this is deployed
+		from launch time to April 14 08:00 ET, display "BEGIN APRIL 19TH"
+		from April 14 08:00 ET to April 18 08:00 ET, display "BEGIN SATURDAY"
+		from April 18 08:00 ET to April 19 08:00 ET, display "BEGIN TOMORROW"
+		from April 19 08:00 ET to takedown, there is no text and the logo is centered
+
+	right side has three variations where the master object is the original TNT OT countdown clock object
+		if buzzer beater is active (via "Search Block Right" section in cms3)
+			display buzzer beater
+		else
+			if TNT OT clock is active
+				display TNT OT clock, Playoffs clock remains hidden
+				if TNT OT game is active
+					display TNT OT clock launch button
+				else
+					display TNT OT clock countdown
+			else
+				display Playoffs clock, TNT OT clock remains hidden
+				if after first playoffs game
+					display Playoffs clock broadcast logos
+				else
+					display Playoffs clock countdown
+*/
+var nbaCountdownClockPOPromo = (function() {
+	/* left side of searchbar contains promo banners that change at certain dates; the html never changes, just the background image */
+
+	var my = {
+		Phase2StartDate : "04/14/2014 0:00 AM EDT",
+		Phase3StartDate : "04/18/2014 0:00 AM EDT",
+		Phase4StartDate : "04/19/2014 0:00 AM EDT",
+		countActive : true,
+		countStepper : -1
+	};
+
+	my.init = function() {
+		/* inject html into nbaSkin */
+		$(".nbaSkin").html("<div class='nbaSearchPO14Left'><div class='nbaSearchPOUnlink'>&#160;</div></div>");
+
+		/* countStepper, countActive, and setTimeOutPeriod are the same as in nbaCountdownAutoClock's init */
+		this.countStepper = Math.ceil(this.countStepper);
+		if (this.countStepper == 0) this.countActive = false;
+		this.setTimeOutPeriod = (Math.abs(this.countStepper) - 1) * 1000 + 990;
+
+		/* this is similar to nbaCountdownAutoClock's init's dthen and ddiff, but for two more times */
+			/* make your new dates */
+		var dphase2 = new Date(my.Phase2StartDate);
+		var dphase3 = new Date(my.Phase3StartDate);
+		var dphase4 = new Date(my.Phase4StartDate);
+			/* use server time if available */
+		if (nbaCurrTime)
+			var dnow = nbaCurrTime;
+		else
+			var dnow = new Date();
+			/* figure out the difference depending if you're counting down or up */
+		if (this.countStepper > 0) {
+			var ddiff2 = new Date(dnow - dphase2);
+			var ddiff3 = new Date(dnow - dphase3);
+			var ddiff4 = new Date(dnow - dphase4);
+		} else {
+			var ddiff2 = new Date(dphase2 - dnow);
+			var ddiff3 = new Date(dphase3 - dnow);
+			var ddiff4 = new Date(dphase4 - dnow);
+		}
+		/* this is similar to nbaCountdownAutoClock's init's to start the counting, but I need to keep track of more times */
+			/* transform times to milliseconds then to seconds */
+		var phase2secs = Math.floor(ddiff2.valueOf() / 1000);
+		var phase3secs = Math.floor(ddiff3.valueOf() / 1000);
+		var phase4secs = Math.floor(ddiff4.valueOf() / 1000);
+			/* start the counting with the times I need to look out for */
+		this.countBack(phase2secs,phase3secs,phase4secs);
+	}
+
+	my.countBack = function(phase2secs,phase3secs,phase4secs) {
+		//console.log( "nbaSearchPO: " + "phase2 is at " + phase2secs + "; phase3 is at " + phase3secs + "; phase4 is at " + phase4secs );
+		var countStepper = this.countStepper;
+		if (phase4secs < 0) { // if time is past phase4, display the phase4 look and stop counting
+			$(".nbaSearchPO14Left DIV").addClass('nbaSearchPO14LeftPhase3');
+			$(".nbaSearchPO14Left A").addClass('nbaSearchPO14LeftPhase3');
+			return;
+		} else { // otherwise, show the correct phase and keep counting
+			if( phase2secs >= 0 ) {
+				$(".nbaSearchPO14Left DIV").addClass('nbaSearchPO14LeftPhase0');
+				$(".nbaSearchPO14Left A").addClass('nbaSearchPO14LeftPhase0');
+			} else if( phase3secs >= 0 ) {
+				$(".nbaSearchPO14Left DIV").addClass('nbaSearchPO14LeftPhase1');
+				$(".nbaSearchPO14Left A").addClass('nbaSearchPO14LeftPhase1');
+			} else {
+				$(".nbaSearchPO14Left DIV").addClass('nbaSearchPO14LeftPhase2');
+				$(".nbaSearchPO14Left A").addClass('nbaSearchPO14LeftPhase2');
+			}
+		}
+		// this is similar to nbaCountdownAutoClock's countback to keep counting, but I still need to keep track of more times
+		if (this.countActive) setTimeout(function() {
+			nbaCountdownClockPOPromo.countBack((phase2secs + countStepper),(phase3secs + countStepper),(phase4secs + countStepper))
+		}, this.setTimeOutPeriod);
+	}
+
+	return my;
+}());
+// let's start this process
+nbaCountdownClockPOPromo.init();
+
+var nbaCountdownClockPO = (function() {
+	/* playoffs clock is always active, just sometimes hidden */
+
+	var my = {
+		targetDate : "04/19/2014 12:00 PM EDT", // first playoffs game
+		countActive : true, // if this playoffs countdown clock is active
+		countStepper : -1, // add this number of seconds to clock (in this case, count down)
+		displayFormat : '<span>%%D%%</span><span>%%H%%</span><span>%%M%%</span><span>%%S%%</span>' // how the time should be displayed
+	};
+	
+	my.init = function() {
+		/* countStepper, countActive, and setTimeOutPeriod are the same as in nbaCountdownAutoClock's init */
+		this.countStepper = Math.ceil(this.countStepper);
+		if (this.countStepper == 0) this.countActive = false;
+		this.setTimeOutPeriod = (Math.abs(this.countStepper) - 1) * 1000 + 990;
+		/* this is similar to nbaCountdownAutoClock's init's dthen and ddiff, minus the ET/EDT/EST fix */
+		var dthen = new Date(my.targetDate);
+		if (nbaCurrTime)
+			var dnow = nbaCurrTime;
+		else
+			var dnow = new Date();
+		if (this.countStepper > 0)
+			var ddiff = new Date(dnow - dthen);
+		else
+			var ddiff = new Date(dthen - dnow);
+		this.countBack(Math.floor(ddiff.valueOf() / 1000));
+	}
+
+	my.calcage = function(secs, num1, num2) {
+		// determine value to show in clock, pad with zero if necessary
+		var seconds = ((Math.floor(secs / num1)) % num2).toString();
+		if (seconds.length < 2) seconds = "0" + seconds;
+		return seconds;
+	}
+
+	my.countBack = function(secs) {
+		if (secs <= 0) {
+			// if there is no time left, hide what shows before the start time and display what shows after start time
+			document.getElementById("nbaSearchPOPrestart").style.display = "none";
+			document.getElementById("nbaSearchPOPoststart").style.display = "block";
+			return;
+		} else {
+			// else display what shows before the start time and hide what shows after start time
+			document.getElementById("nbaSearchPOPrestart").style.display = "block";
+			document.getElementById("nbaSearchPOPoststart").style.display = "none";
+		}
+		var countStepper = this.countStepper;
+		var displayStr = this.displayFormat;
+		// this countdown clock has days also
+		if (secs >= 0) {
+			displayStr = displayStr.replace(/%%D%%/g, this.calcage(secs, 86400, 100000));
+			displayStr = displayStr.replace(/%%H%%/g, this.calcage(secs, 3600, 24));
+			displayStr = displayStr.replace(/%%M%%/g, this.calcage(secs, 60, 60));
+			displayStr = displayStr.replace(/%%S%%/g, this.calcage(secs, 1, 60));
+			document.getElementById("nbaSearchPOTimer").innerHTML = displayStr;
+		}
+		if (this.countActive) setTimeout(function() {
+			nbaCountdownClockPO.countBack((secs + countStepper))
+		}, this.setTimeOutPeriod);
+	}
+
+	return my;
+}());
+// since there's not an ajax call (like with nbaCountdownClock), have to init manually
+nbaCountdownClockPO.init();
+
+var nbaCountdownClock = (function() {
+	/* this is mainly unchanged from the original, but I left comments tagged with PO14 of what I changed */
+
+	var my, type;
+	//Store values from sample JSON
+	var matchup1Active = "";
+	var matchup2Active = "";
+	var theMatchup1 = "";
+	var theMatchup2 = "";
+	var matchup ="";
+	var clockType = "";
+	var OTcompat = "";
+
+	my = {
+		targetDate : "10/30/2012 7:00 PM EDT",
+		/* PO14 background should be transparent */
+		backColor : "transparent",
+		foreColor : "#fff",
+		countActive : true,
+		countStepper : -1,
+		leadingZero : true,
+		displayFormat : "%%D%% %%H%% %%M%% %%S%%",
+		finishMessage : ""
+	};
+
+	var activeOT = "false",
+	activeOT2 = "false",
+	nbaClock = " ";
+
+	$.ajax({
+		type : "GET",
+		dataType : "jsonp",
+		url : "http://data.nba.com/jsonp/1m/json/cms/2013/tntot/games.json",
+		cache : true,
+		jsonpCallback : "schedule",
+		success : loadClock
+	});
+
+	function loadClock(data) {
+		var gameOT = -1,
+			gameOT2 = -1,
+			otHour = nbaCurrHour,
+			today = nbaCurrTime,
+			currentDay = ("0" + (today.getDate())).slice(-2),
+			currentMonth = ("0" + (today.getMonth() + 1)).slice(-2),
+			currentYear = today.getFullYear(),
+			currentDate = currentYear + "-" + currentMonth + "-" + currentDay,
+			gameNext = data.sports_content.games.length;
+
+		/* PO14 error checking */
+		//console.log( "nbaSearchPO: " + "today is " + today + "; otHour is " + otHour );
+		if (otHour > 7){
+			for ( var i = 0; i < gameNext; i++) {
+
+				if (data.sports_content.games[i].gameDateTime.substring(0, 10) == currentDate && data.sports_content.games[i].tntOt == true) {
+
+					var gameDay = data.sports_content.games[i].gameDateTime.split(" "),
+						date = gameDay[0].split("-"),
+						time = gameDay[1].split(":"),
+						day = date[2],
+						month = Number(date[1]) - 1,
+						year = date[0],
+						hour = Number(time[0]) + 12,
+						minute = time[1],
+						schdOTdate = new Date(Number(year), month, Number(day), hour, Number(minute), 00);
+
+					if (gameOT != -1) {
+						var gameOne = data.sports_content.games[gameOT].gameDateTime.split(" "),
+						date = gameOne[0].split("-"),
+						time = gameOne[1].split(":"),
+						day = date[2],
+						month = Number(date[1]) - 1,
+						year = date[0],
+						hour = Number(time[0]) + 12,
+						minute = time[1],
+						firstOTgame = new Date(Number(year), month, Number(day), hour, Number(minute), 00);
+					} else {
+						var firstOTgame = today;
+					}
+
+					if (gameOT2 != -1) {
+						var gameTwo = data.sports_content.games[gameOT2].gameDateTime.split(" "),
+						date = gameTwo[0].split("-"),
+						time = gameTwo[1].split(":"),
+						day = date[2],
+						month = Number(date[1]) - 1,
+						year = date[0],
+						hour = Number(time[0]) + 12,
+						minute = time[1],
+						secondOTgame = new Date(Number(year), month, Number(day), hour, Number(minute), 00);
+					} else {
+						var secondOTgame = today;
+					}
+
+					if (schdOTdate < firstOTgame || today == firstOTgame) {
+						gameOT = i;
+						var homeOT = data.sports_content.games[gameOT].homeAbrr,
+							awayOT = data.sports_content.games[gameOT].visitorAbrr,
+							dateOT = data.sports_content.games[gameOT].gameDateTime.split(" "),
+							dayOT = dateOT[0].split("-"),
+							gameDateOT = dayOT[1] + "/" + dayOT[2] + "/" + dayOT[0],
+							timeOT = dateOT[1] + " " + dateOT[2],
+							timeOTsplit = dateOT[1].split(":"),
+							zoneOT = dateOT[3],
+							dateTimeOT = gameDateOT + " " + timeOT + " " + zoneOT,
+							gameOTtime = new Date(Number(dayOT[0]), Number(dayOT[1]) - 1, Number(dayOT[2]), Number(timeOTsplit[0]) + 12, Number(timeOTsplit[1]), 00);
+							activeOT = "true";
+					} else if (schdOTdate < secondOTgame || today == secondOTgame) {
+						gameOT2 = i;
+						var homeOT2 = data.sports_content.games[gameOT2].homeAbrr,
+							awayOT2 = data.sports_content.games[gameOT2].visitorAbrr,
+							dateOT2 = data.sports_content.games[gameOT2].gameDateTime.split(" "),
+							dayOT2 = dateOT2[0].split("-"),
+							gameDateOT2 = dayOT2[1] + "/" + dayOT2[2] + "/" + dayOT2[0],
+							timeOT2 = dateOT2[1] + " " + dateOT2[2],
+							timeOT2split = dateOT2[1].split(":"),
+							zoneOT2 = dateOT2[3],
+							dateTimeOT2 = gameDateOT2 + " " + timeOT2 + " " + zoneOT2,
+							gameOT2time = new Date(Number(dayOT2[0]), Number(dayOT2[1]) - 1, Number(dayOT2[2]), Number(timeOT2split[0]) + 12, Number(timeOT2split[1]), 00);
+							activeOT2 = "true";
+					} else {
+							activeOT = "false";
+							activeOT2 = "false";
+					}
+
+				}
+
+			}
+		} else { /* PO14: if the TNT OT clock isn't active (before 08:00), display the Playoffs clock */
+			document.getElementById("nbaSearchPO14Right").style.display = "block";
+		}
+		/* PO14 I moved the next three blocks out of the test for 08:00 or else start function complains about unitialized values */
+		if (activeOT == "true" && gameOTtime.getTime() + 3*3600*1000 < today.getTime()){
+			activeOT = "false"
+		}
+		if (activeOT2 == "true" && gameOT2time.getTime() + 3*3600*1000 < today.getTime()){
+			activeOT2 = "false"
+		}
+
+		nbaClock = {
+			"matchup1" : {
+				"home" : homeOT,
+				"away" : awayOT,
+				// 11/14/2013 7:15 PM EST
+				"time" : dateTimeOT,
+				"clockType" : "TNTOT",
+				"TNTOT" : "true",
+				"Active" : activeOT
+			},
+			"matchup2" : {
+				"home" : homeOT2,
+				"away" : awayOT2,
+				// 11/14/2013 10:30 PM EST
+				"time" : dateTimeOT2,
+				"clockType" : "TNTOT",
+				"TNTOT" : "true",
+				"Active" : activeOT2
+			}
+		};
+		my.start(nbaClock);
+		my.init();
+	}
+
+	my.start = function(nbaClock){
+		// Store values from sample JSON
+		matchup1Active = nbaClock.matchup1.Active;
+		matchup2Active = nbaClock.matchup2.Active;
+		theMatchup1 = nbaClock.matchup1;
+		theMatchup2 = nbaClock.matchup2;
+
+		if (theMatchup1 == null || theMatchup1.TNTOT == "false") {
+			matchup = theMatchup2;
+		}
+		if (theMatchup1 == null || theMatchup1.TNTOT == "true" && theMatchup1.Active == "true") {
+			matchup = theMatchup1;
+		}
+		if (theMatchup2 == null || theMatchup2.TNTOT == "false") {
+			matchup = theMatchup1;
+		}
+		if (theMatchup2 == null || theMatchup2.TNTOT == "true" && theMatchup2.Active == "true") {
+			matchup = theMatchup2;
+		}
+		if (theMatchup2 == null || theMatchup1.Active == "true" && theMatchup2.Active == "true") {
+			matchup = theMatchup1;
+		}
+		if (theMatchup2 == null || theMatchup1.Active == "false" && theMatchup2.Active == "false") {
+			document.getElementById("nbaClockClick").style.display = "none";
+		}
+		if (theMatchup2 == null || theMatchup1.TNTOT == "false" && theMatchup2.TNTOT == "false") {
+			document.getElementById("nbaClockClick").style.display = "none";
+		}
+		if (theMatchup2 == null || theMatchup1.Active == "false" && theMatchup2.Active == "false") {
+			clockType = "";
+			OTcompat = "";
+		} else {
+			clockType = matchup.clockType;
+			OTcompat = matchup.TNTOT;
+		}
+		if (clockType == "TNTOT" && OTcompat == "true") {
+			/* PO14 remove the black background, leaving only the display block */
+			document.getElementById("nbaClockClick").style.display = "block";
+			/* PO14 make sure the Playoffs countdown is hidden because the TNT OT clock should be active */
+			document.getElementById("nbaSearchPO14Right").style.display = "none";
+			/* PO14 remove anchor so accessibility doesn't tag it */
+			$('#nbaSearchPOPrestart .nbaSearchPO14Event').html($('#nbaSearchPOPrestart .nbaSearchPO14Event A').html());
+			if ($('#nbaClockBG').css('display') == 'block') {
+				$('#nbaSearch div').first().removeClass('bigIsOnRed');
+				$('#nbaSearch div').first().addClass('bigIsOn');
+				$('#body_Right_Kia').remove();
+			}
+			my.targetDate = matchup.time;
+			document.getElementById("nbaMatchup").innerHTML = 'countdown to <span>' + matchup.away
+					+ '</span> vs <span>' + matchup.home + '</span>';
+			/* PO14: change background color to transparent */
+			my.backColor = "transparent", my.foreColor = "#cc3333", my.countActive = true, my.countStepper = -1,
+					my.leadingZero = true, my.displayFormat = "%%H%% : %%M%% : %%S%%";
+			my.finishMessage = ""
+		} else { /* PO14: if the TNT OT clock isn't active, display the Playoffs clock */
+			document.getElementById("nbaSearchPO14Right").style.display = "block";
+		}
+	}
+
+	type = 'NBA Countdown Clock Module';
+
+	my.init = function() {
+		if (typeof (this.backColor) == "undefined") this.backColor = "none";
+		if (typeof (this.foreColor) == "undefined") this.foreColor = "#fff";
+		if (typeof (this.targetDate) == "undefined") this.targetDate = "10/30/2012 8:00 PM EDT";
+		if (typeof (this.displayFormat) == "undefined")
+			this.displayFormat = "%%D%% Days, %%H%% Hours, %%M%% Minutes, %%S%% Seconds.";
+		if (typeof (this.countActive) == "undefined") this.countActive = true;
+		if (typeof (this.finishMessage) == "undefined") this.finishMessage = "00 00 00 00";
+		if (typeof (this.countStepper) != "number") this.countStepper = -1;
+		if (typeof (this.leadingZero) == "undefined") this.leadingZero = true;
+		this.countStepper = Math.ceil(this.countStepper);
+		if (this.countStepper == 0) this.countActive = false;
+		this.setTimeOutPeriod = (Math.abs(this.countStepper) - 1) * 1000 + 990;
+		this.putspan(this.backColor, this.foreColor);
+		var dthen = new Date(my.targetDate.replace("ET", "EDT"));
+		if (nbaCurrTime)
+			var dnow = nbaCurrTime;
+		else
+			var dnow = new Date();
+		if (this.countStepper > 0)
+			var ddiff = new Date(dnow - dthen);
+		else
+			var ddiff = new Date(dthen - dnow);
+		this.countBack(Math.floor(ddiff.valueOf() / 1000));
+
+		/* PO14: removed most of this code; it was testing against some old dates which meant only the else part was executing */
+		if (document.getElementById("nbaClockClick").style.display == "none") {
+			document.getElementById("nbaClockBG").style.background = "transparent";
+		}
+
+	}
+
+	my.calcage = function(secs, num1, num2) {
+		var seconds = ((Math.floor(secs / num1)) % num2).toString();
+		if (this.leadingZero && seconds.length < 2) seconds = "0" + seconds;
+		return "<b style='background:none;'>" + seconds + "</b>";
+	}
+
+	my.countBack = function(secs) {
+		if (secs < 0 && clockType == "TNTOT") {
+			document.getElementById("nbaClock").innerHTML = "<img src='http://z.cdn.turner.com/nba/nba/.element/img/3.0/sect/home/tntOTLive.png' />";
+		} else if (secs < 0) {
+			document.getElementById("nbaClockCntDwn").innerHTML = this.finishMessage;
+			return;
+		}
+		var countStepper = this.countStepper;
+		var displayStr = this.displayFormat.replace(/%%D%%/g, this.calcage(secs, 86400, 100000) + "D");
+		if (secs > 0 && clockType == "TNTOT") {
+			displayStr = displayStr.replace(/%%H%%/g, this.calcage(secs, 3600, 24));
+			displayStr = displayStr.replace(/%%M%%/g, this.calcage(secs, 60, 60));
+			displayStr = displayStr.replace(/%%S%%/g, this.calcage(secs, 1, 60));
+			document.getElementById("nbaClockCntDwn").innerHTML = displayStr;
+		} else if (secs > 0) {
+			displayStr = displayStr.replace(/%%H%%/g, this.calcage(secs, 3600, 24) + "H");
+			displayStr = displayStr.replace(/%%M%%/g, this.calcage(secs, 60, 60) + "M");
+			displayStr = displayStr.replace(/%%S%%/g, this.calcage(secs, 1, 60) + "S");
+			document.getElementById("nbaClockCntDwn").innerHTML = displayStr;
+		}
+		if (this.countActive) setTimeout(function() {
+			nbaCountdownClock.countBack((secs + countStepper))
+		}, this.setTimeOutPeriod);
+	}
+
+	my.putspan = function(backcolor, forecolor) {
+		document.getElementById("nbaClock").innerHTML = "<span id=\"nbaClockCntDwn\" style=\"width:100px; background-color:"
+				+ backcolor + "; color:" + forecolor + "\"></span>";
+	}
+
+	return my;
+}());
+//nbaCountdownClock.init();

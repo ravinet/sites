@@ -1,0 +1,25 @@
+PHTTP50.17.203.49"‡
+ýGET /event?a=225629888&d=225629888&y=false&s225543798=none&s225621575=direct&s225633342=gc&s225656250=false&s238768127=true&s242548221=true&n=http%3A%2F%2Ftime.com%2F&u=oeu1396996123812r0.4164622421376407&wxhr=true&t=1396996124256&f=238325927 HTTP/1.1
+$Host: 225629888.log.optimizely.com
+Connection: keep-alive
+vUser-Agent: Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/31.0.1650.63 Safari/537.36
+Origin: http://time.com
+Accept: */*
+Referer: http://time.com/
+$Accept-Encoding: gzip,deflate,sdch
+!Accept-Language: en-US,en;q=0.8
+9Cookie: end_user_id=oeu1396996123812r0.4164622421376407
+
+*è
+HTTP/1.1 200 OK
+(Access-Control-Allow-Credentials: true
+)Access-Control-Allow-Methods: POST, GET
+.Access-Control-Allow-Origin: http://time.com
+ Content-Type: application/json
+%Date: Tue, 08 Apr 2014 22:28:43 GMT
+9P3P: CP="IDC DSP COR CURa ADMa OUR IND PHY ONL COM STA"
+Server: nginx/1.2.7
+Content-Length: 2
+Connection: keep-alive
+
+{}

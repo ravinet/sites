@@ -1,0 +1,295 @@
+»HTTPS138.91.96.142"ý
+3GET /cobrowse/styles/Cobrowse_2.10.1.css HTTP/1.1
+$Host: glance.blob.core.windows.net
+Connection: keep-alive
+Accept: text/css,*/*;q=0.1
+vUser-Agent: Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/31.0.1650.63 Safari/537.36
+#Referer: http://www.ancestry.com/
+$Accept-Encoding: gzip,deflate,sdch
+!Accept-Language: en-US,en;q=0.8
+
+*—+
+HTTP/1.1 200 OK
+)Cache-Control: public, max-age=31556926
+Content-Length: 5054
+Content-Type: text/css
+'Content-MD5: U9sE2dQTMslRfP77q1c0ow==
+.Last-Modified: Tue, 11 Mar 2014 12:57:18 GMT
+ETag: 0x8D10B40915ADAD1
+6Server: Windows-Azure-Blob/1.0 Microsoft-HTTPAPI/2.0
+7x-ms-request-id: 240d1e6b-2e25-4801-9aa0-9b11fcf72a52
+x-ms-version: 2009-09-19
+x-ms-lease-status: unlocked
+x-ms-blob-type: BlockBlob
+%Date: Fri, 11 Apr 2014 19:16:49 GMT
+À'
+ï»¿/*
+z-index order:
+glance_cobrowse_btn
+glance_msg_box
+glance_gesture
+*/
+
+div.glance_hide 
+{
+	display:		none;
+}
+
+div.glance_show 
+{
+	display:		block; /* show/stop divs should only be as wide as text */
+}
+
+div.glance_ishow 
+{
+	display:		inline-block; /* show/stop divs should only be as wide as text */
+}
+
+#glance_cobrowse_btn 
+{
+	position:		fixed;
+	z-index:		2147483645; /* maximum is ...647 but gesture must be on top of button */ 
+}
+
+#glance_cobrowse_btn, #glance_start_label, #glance_ssnkey_box, #glance_ssn_info, #glance_show_btn,
+#glance_stop_btn, #glance_in_session, #glance_msg_box, #glance_agent_msg_box, #glance_confirm {
+    -moz-box-sizing:content-box;
+    box-sizing:     content-box;
+}	
+
+#glance_start_label #glance_show_btn,
+#glance_start_label #glance_stop_btn
+{
+	cursor:			pointer;
+}
+
+#glance_show_btn:before
+{
+	content:       "show";
+}
+
+#glance_stop_btn:before
+{
+	content: "stop showing";
+}
+
+#glance_ie_xdr_proxy
+{
+	position:		fixed;
+	bottom:			0px;
+	right:			50px;
+}
+
+#glance_expand 
+{
+	background:		url(../images/expand.png) no-repeat center;
+	opacity:		0.5;		
+	cursor:			pointer;
+	height:			12px;
+	width:          12px;
+	position:		absolute;
+	top:			8px;
+	right:			5px;
+}
+
+#glance_expand:hover
+{
+	opacity:		1;		
+}
+
+#glance_expand.glance_open
+{
+	transform:		rotate(180deg);
+	-ms-transform:	rotate(180deg); /* IE 9 */
+	-moz-transform:	rotate(180deg); /* Firefox */
+	-webkit-transform:rotate(180deg); /* Safari and Chrome */
+	-o-transform:	rotate(180deg); /* Opera */
+}
+
+#glance_expand.glance_closed
+{
+}
+
+#glance_msg_box, #glance_agent_msg_box {
+	background-image:url(../images/ssnbtn_close.png);
+	background-repeat:no-repeat;
+	background-position:98% 15%;
+	cursor:			pointer;
+}
+
+#glance_msg_box, #glance_agent_msg_box, #glance_confirm
+{
+ 	z-index:		2147483646;
+	background-color:inherit;
+    position:		absolute;
+    bottom:			100px;
+    right:			110px;
+	text-align:		center;
+	padding:		10px 20px 10px 20px;
+    width:          180px;
+}
+
+#glance_keyless_prompt::before {
+    content: "Please wait for the agent to connect.";
+}
+
+#glance_key_prompt::before {
+    content: "Please give the agent this key:";
+}
+
+.not_in_session #glance_show_btn {
+    display: inline-block;
+}
+
+.session_starting .starting #glance_ssnkey_box,
+.in_session #glance_in_session,
+.in_session .keyed #glance_key_prompt,
+.in_session .keyed #glance_ssn_key,
+.in_session .integrated #glance_keyless_prompt, 
+.in_session .joined #glance_ssn_info,
+.session_starting .starting #glance_ssn_starting {
+    display:block;
+}
+
+#glance_ssn_starting::before {
+    content: "Session starting...";
+}
+
+#glance_ssn_info::before {
+    content:"The agent is viewing";
+}
+#glance_ssn_info::after {
+    content:"your browser.";
+}
+
+#glance_confirm a {
+    margin:2px 10px 0px 10px;
+}
+
+#glance_yes::before {
+    content: "Yes";
+}
+
+#glance_no::before {
+    content: "No";
+}
+
+.glance_confirm_rc::before
+{
+	content: "Allow the agent to take control?";
+}
+
+#glance_ssn_info,
+#glance_ssnkey_box 
+{
+	text-align:		center;
+	padding:		10px;
+}
+
+#glance_ssnkey_box div
+{
+	font-weight:	normal;
+	font-size:		inherit;
+	margin:			10px 0 10px 0;
+}
+
+#glance_ssnkey_box #glance_ssn_key
+{
+    font-weight:    bold;
+	width:			80px;
+	margin:			0 auto;
+}
+
+#glance_gesture
+{
+    -moz-box-sizing:content-box;
+    box-sizing:     content-box;
+	border:			solid 3px #CD0808; 
+	-moz-border-radius: 6px;
+	border-radius:	6px;	
+	z-index:		2147483647; /* above the cobrowse button and message box */ 
+	position:		absolute; 
+	top:            -999999px;
+	left:           -999999px;
+}
+
+#glance_agent_cursor 
+{
+	z-index:		2147483647; /* same as gesture */ 
+	position:		fixed; 
+	top:            -999999px;
+	left:           -999999px;
+    width:          20px;
+    height:         20px;
+    background-image: url("../images/agentcursor.png");
+	background-repeat:no-repeat;
+	pointer-events: none;
+}
+
+.glance_no_pointer_events
+{
+	pointer-events: none;
+}
+
+.glance_dim 
+{
+	position:	fixed;
+	top:		0px;
+	left:		0px;
+	width:      100%;
+	height:		100%;
+	background: black;
+	opacity:	0.2;
+	filter:alpha(opacity=20); /* for IE */
+}
+
+#glance_screenshare
+{
+	position:	fixed;
+	top:		0px;
+	left:		0px;
+	width:      100%;
+	height:		100%;
+}
+
+#glance_ssframe
+{
+	/* Horizontal and Vertical centering */
+	position:	absolute;
+	top:		0; 
+	bottom:		0; 
+	left:		0; 
+	right:		0;
+	margin:		auto;
+	
+	border:		none;
+	width:		95%;
+	height:		95%;
+}
+
+#glance_border {
+    position: fixed;
+    pointer-events:none;
+	top:		0; 
+	bottom:		0; 
+	left:		0; 
+	right:		0;
+	margin:		auto;    
+    border:     3px solid #f1d00f;
+}
+
+#glance_border.ie9 {
+    bottom:auto;
+    height:   3px;
+    width: 9999999px;
+    border:none;
+    background-color: #f1d00f;
+}
+
+#glance_border.glance_rcenabled {
+    border-color:#CD0808;
+}
+
+#glance_border.glance_rcenabled.ie9 {
+    background-color: #CD0808;
+}

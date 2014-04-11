@@ -1,0 +1,19 @@
+PHTTP23.21.133.27"›
+ØGET /v1/profile.redirect?api_key=595bae8dbc0c4c42b4544e688b10c002&callback_url=http%3A//beacon.krxd.net/data.gif%3F_kdpid%3D890a6228-04af-4630-85b6-0b49dee6157f%26pid%3D1b008fc9-b074-4b2e-8e4a-c1e1f07d344b HTTP/1.1
+Host: api.bizographics.com
+Connection: keep-alive
+Accept: image/webp,*/*;q=0.8
+vUser-Agent: Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/31.0.1650.63 Safari/537.36
+!Referer: http://allrecipes.com/
+$Accept-Encoding: gzip,deflate,sdch
+!Accept-Language: en-US,en;q=0.8
+
+*ˆ
+HTTP/1.1 302 Found
+%Date: Tue, 08 Apr 2014 21:26:24 GMT
+ùLocation: http://api.bizographics.com/v1/profile.redirect?api_key=595bae8dbc0c4c42b4544e688b10c002&callback_url=http%3A//beacon.krxd.net/data.gif%3F_kdpid%3D890a6228-04af-4630-85b6-0b49dee6157f%26pid%3D1b008fc9-b074-4b2e-8e4a-c1e1f07d344b&3pc=true
+Server: nginx/1.2.0
+‚Set-Cookie: BizoID=8acdad1a-7bac-4cd8-b145-7cb5a687795a; Domain=.bizographics.com; Expires=Wed, 08-Oct-2014 09:26:24 GMT; Path=/
+Content-Length: 0
+Connection: keep-alive
+

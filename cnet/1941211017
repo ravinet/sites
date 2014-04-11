@@ -1,0 +1,31 @@
+PHTTP173.194.46.121"á
+AGET /pixel?google_nid=bluekai&google_cm&google_sc&a=1& HTTP/1.1
+Host: cm.g.doubleclick.net
+Connection: keep-alive
+Accept: image/webp,*/*;q=0.8
+vUser-Agent: Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/31.0.1650.63 Safari/537.36
+þReferer: http://tags.bluekai.com/site/3321?dt=0&r=914631434&sig=3646996068&bkca=KJhBEXa3yp91djgANo/8b8G5zLi0+gK0x57PmnSbZe3Vz5ujd4NAZAc9QF4673E7YBumBnA0MBjE3phbSDNHFdK4bS+p8T1uoCePSKd1f3NqUcoAyTQEnc0tOBpHyt0NOdotmYiUZTLKbe5AypViJtAxTfIQvv2uSjw7Y7aznjP0rWki2umirV+V3yQda+n1uwZzvAugQV7wK1RgJHVOGzcAcu3pv9XF9SzVkUd1qfMbXIs0F7UMVtFrXiKJxkal7/h4uZZqztTNEAhnj05nfU1jtNG6E02BXdGcIN+yuQ==
+$Accept-Encoding: gzip,deflate,sdch
+!Accept-Language: en-US,en;q=0.8
+
+*ƒ
+HTTP/1.1 302 Found
+¥P3P: policyref="http://googleads.g.doubleclick.net/pagead/gcn_p3p_.xml", CP="CURa ADMa DEVa TAIo PSAo PSDo OUR IND UNI PUR INT DEM STA PRE COM NAV OTC NOI DSP COR"
+eLocation: http://cm.g.doubleclick.net/pixel?google_nid=bluekai&google_cm=&google_sc=&a=1&google_tc=
+%Date: Tue, 08 Apr 2014 21:34:32 GMT
+Pragma: no-cache
+(Expires: Fri, 01 Jan 1990 00:00:00 GMT
+*Cache-Control: no-cache, must-revalidate
+(Content-Type: text/html; charset=UTF-8
+Server: HTTP server (unknown)
+Content-Length: 302
+!X-XSS-Protection: 1; mode=block
+Alternate-Protocol: 80:quic
+tSet-Cookie: test_cookie=CheckForPermission; expires=Tue, 08-Apr-2014 21:49:32 GMT; path=/; domain=.doubleclick.net
+°
+<HTML><HEAD><meta http-equiv="content-type" content="text/html;charset=utf-8">
+<TITLE>302 Moved</TITLE></HEAD><BODY>
+<H1>302 Moved</H1>
+The document has moved
+<A HREF="http://cm.g.doubleclick.net/pixel?google_nid=bluekai&amp;google_cm=&amp;google_sc=&amp;a=1&amp;google_tc=">here</A>.
+</BODY></HTML>

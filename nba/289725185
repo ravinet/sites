@@ -1,0 +1,35 @@
+PHTTP208.71.121.1"ë
+…GET /t/v1/imp?migAgencyId=347&migSource=adsrv2&migTrackDataExt=3143259;106063847;278930938;0&migTrackFmtExt=client;io;ad;crtv&migUnencodedDest=http://ad.doubleclick.net/ad/N5072.149455.NBA.COM/B7992919.57;sz=1x1;pc=[TPAS_ID];ord=bvjWrmg,bjuiNvfbWKmg? HTTP/1.1
+Host: t.mookie1.com
+Connection: keep-alive
+Accept: image/webp,*/*;q=0.8
+vUser-Agent: Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/31.0.1650.63 Safari/537.36
+ªReferer: http://ads.nba.com/html.ng/site=nba&nba_pos=88x31_spon&nba_rollup=homepage&nba_section=featured_stats&params.styles=fs&page.allowcompete=no&Params.User.UserID=534472a5045f3a0a3c73c576a105b77a&transactionID=13969947263859705745113088&tile=6875274996931&domId=fea4761ca8d9463c&kxid=&kxseg=
+$Accept-Encoding: gzip,deflate,sdch
+!Accept-Language: en-US,en;q=0.8
+Cookie: OAX=nJ9TyVNEcqUABKLM
+
+*‡
+HTTP/1.1 302 Found
+%Date: Tue, 08 Apr 2014 22:05:26 GMT
+ Server: Apache/2.2.3 (Red Hat)
+Cache-Control: no-cache
+Pragma: no-cache
+'P3P: CP="NOI DSP COR NID CUR OUR NOR"
+kSet-Cookie: id=2040809804476871; path=/; expires=Fri, 08-May-15 22:05:26 GMT; path=/; domain=.mookie1.com
+{Set-Cookie: mdata=1|2040809804476871|1396994726; path=/; expires=Fri, 08-May-15 22:05:26 GMT; path=/; domain=.mookie1.com
+lSet-Cookie: OAX=nJ9TyVNEcqUABKLM; path=/; expires=Fri, 08-May-15 22:05:26 GMT; path=/; domain=.mookie1.com
+…Location: /t/v1/imp/cc?migAgencyId=347&migSource=adsrv2&migTrackDataExt=3143259;106063847;278930938;0&migTrackFmtExt=client;io;ad;crtv&migUnencodedDest=http://ad.doubleclick.net/ad/N5072.149455.NBA.COM/B7992919.57;sz=1x1;pc=[TPAS_ID];ord=bvjWrmg,bjuiNvfbWKmg?
+Content-Length: 528
+Connection: close
+-Content-Type: text/html; charset=iso-8859-1
+’
+<!DOCTYPE HTML PUBLIC "-//IETF//DTD HTML 2.0//EN">
+<html><head>
+<title>302 Found</title>
+</head><body>
+<h1>Found</h1>
+<p>The document has moved <a href="/t/v1/imp/cc?migAgencyId=347&amp;migSource=adsrv2&amp;migTrackDataExt=3143259;106063847;278930938;0&amp;migTrackFmtExt=client;io;ad;crtv&amp;migUnencodedDest=http://ad.doubleclick.net/ad/N5072.149455.NBA.COM/B7992919.57;sz=1x1;pc=[TPAS_ID];ord=bvjWrmg,bjuiNvfbWKmg?">here</a>.</p>
+<hr>
+<address>Apache/2.2.3 (Red Hat) Server at t.mookie1.com Port 80</address>
+</body></html>

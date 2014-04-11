@@ -1,0 +1,19 @@
+PHTTP66.117.23.100"Ð
+‚GET /m2/coxcommunications/mbox/standard?mboxHost=ww2.cox.com&mboxSession=1397226741672-954465&mboxPage=1397226741672-954465&screenHeight=1200&screenWidth=1920&browserWidth=1920&browserHeight=1090&browserTimeOffset=-240&colorDepth=24&mboxCount=1&mbox=global&mboxId=0&mboxTime=1397212341765&mboxURL=http%3A%2F%2Fww2.cox.com%2Fresidential%2Fhome.cox&mboxReferrer=&mboxVersion=41 HTTP/1.1
+'Host: coxcommunications.tt.omtrdc.net
+Connection: keep-alive
+Accept: */*
+vUser-Agent: Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/31.0.1650.63 Safari/537.36
+2Referer: http://ww2.cox.com/residential/home.cox
+$Accept-Encoding: gzip,deflate,sdch
+!Accept-Language: en-US,en;q=0.8
+
+*ì
+HTTP/1.1 200 OK
+pragma: no-cache
+-Content-Type: text/javascript;charset=UTF-8
+Content-Length: 954
+%Date: Fri, 11 Apr 2014 14:32:21 GMT
+Server: Test & Target
+¼
+var mboxCurrent=mboxFactories.get('default').get('global',0);mboxCurrent.setEventTime('include.start');document.write('<div style="visibility: hidden; display: none" id="mboxImported-default-global-0">');document.write('<!-- Offer Id: 72266  --><script type=\"text\/javascript\">\r\n\/*mboxHighlight+ (1of2) v1 ==> Response Plugin*\/\r\nwindow.ttMETA=(typeof(window.ttMETA)!=\'undefined\')?window.ttMETA:[];window.ttMETA.push({\'mbox\':\'global\',\'campaign\':\'\',\'experience\':\'\',\'offer\':\'\'});window.ttMBX=function(x){var mbxList=[];for(i=0;i<ttMETA.length;i++){if(ttMETA[i].mbox==x.getName()){mbxList.push(ttMETA[i])}}return mbxList[x.getId()]}\r\n<\/script>');mboxFactories.get('default').get('global',0).setOffer(new mboxOfferDefault()).loaded();document.write('</div>');mboxCurrent.setEventTime('include.end');mboxFactories.get('default').get('global',0).loaded();mboxFactories.get('default').getPCId().forceId("1397226741672-954465.25_12");

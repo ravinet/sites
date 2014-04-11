@@ -1,0 +1,32 @@
+PHTTP216.127.49.176"Ü
+*POST /api/video/4jWxPv0W1H/view HTTP/1.1
+Host: vube.com
+Connection: keep-alive
+Content-Length: 52
++Accept: application/json, text/plain, */*
+Origin: http://vube.com
+Accept-Language: en-us
+vUser-Agent: Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/31.0.1650.63 Safari/537.36
+.Content-Type: application/json;charset=UTF-8
+gReferer: http://vube.com/Laura+Pajaro/4jWxPv0W1H/L/vote?t=s&floatee=4jWxPv0W1H&channel=Laura%20Pajaro
+$Accept-Encoding: gzip,deflate,sdch
+šCookie: OTHERCLIENTDATA=%7B%22locale%22%3A%22en%22%2C%22pref_lang%22%3A%22en%22%7D; SESSID=UibVnTuSCV2aKkF5JhcjC2EU-7eHBlzk4gBRgiSjOWA=; T=p; P=ggo; __utma=45027747.1974965011.1396992808.1396992808.1396992808.1; __utmb=45027747.1.10.1396992808; __utmc=45027747; __utmz=45027747.1396992808.1.1.utmcsr=ad.directrev.com|utmccn=(referral)|utmcmd=referral|utmcct=/RealMedia/ads/adstream_sx.ads/S0001311/163479@x10
+6
+{"t":"p","p":"ggo","country":"US","videoLucky":true}*¹
+HTTP/1.1 201 Created
+Server: nginx/1.2.1
+%Date: Tue, 08 Apr 2014 21:33:27 GMT
+/Content-Type: application/json; charset=utf-8
+Content-Length: 0
+Connection: keep-alive
+(Expires: Thu, 19 Nov 1981 08:52:00 GMT
+OCache-Control: no-store, no-cache, must-revalidate, post-check=0, pre-check=0
+Pragma: no-cache
+Time-Sync: 1396992807
+Vash: 91.521:138.587
+/Access-Control-Allow-Origin: https://vube.com
+(Access-Control-Allow-Credentials: true
+2Access-Control-Allow-Methods: POST, GET, OPTIONS
+ŽAccess-Control-Allow-Headers: Content-Type, Origin, Accept, Accept-Language, Cache-Control, Pragma, Referer, User-Agent, Host, Authorization
+X-Frame-Options: SAMEORIGIN
+

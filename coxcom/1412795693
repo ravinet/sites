@@ -1,0 +1,30 @@
+PHTTP54.230.52.189"‹
+GET /vop/t.js HTTP/1.1
+Host: cdn1-res.sundaysky.com
+Connection: keep-alive
+Accept: */*
+vUser-Agent: Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/31.0.1650.63 Safari/537.36
+2Referer: http://ww2.cox.com/residential/home.cox
+$Accept-Encoding: gzip,deflate,sdch
+!Accept-Language: en-US,en;q=0.8
+
+*Í
+HTTP/1.1 200 OK
+&Content-Type: application/javascript
+Content-Length: 2317
+Connection: keep-alive
+Accept-Ranges: bytes
+%Date: Fri, 04 Apr 2014 12:31:14 GMT
+ETag: W/"2317-1395747460000"
+.Last-Modified: Tue, 25 Mar 2014 11:37:40 GMT
+Server: Apache-Coyote/1.1
+Age: 7267
+X-Cache: Hit from cloudfront
+GVia: 1.1 a536f7c9dbedc2b462a158901fcd8254.cloudfront.net (CloudFront)
+GX-Amz-Cf-Id: yBm1bsEu8UscBJjBNox4Y3crgWiC3LZAWnM1Xw1lLAGfx2jKBFO1oQ==
+è
+(function(k,p){k.SSKY=k.SSKY||[];if(void 0===k.SSKY.sskyinit){var q=function(){var g=encodeURIComponent,k={onboarding:"ob",bills:"bi"},b=function(a,e){var d=e.account,l=e.profile,c=a;if(!(void 0==d||""==d||void 0==l||""==l||"conv"!=a&&"atc"!=a&&"uui"!=a&&"cart"!=a&&"lc"!=a)){if("lc"==a){c=e.useCase;if(void 0==c)return;c=k[c];if(void 0===c)return;c="lc_"+c}var d=("https:"==p.location.protocol?"https://s-":"http://")+"vop.sundaysky.com/t/v1/i?a\x3d"+g(d)+"\x26ap\x3d"+g(l)+"\x26m\x3d"+c,f;void 0!=e.user_id&&
+""!=e.user_id&&(d+="\x26xu\x3d"+g(e.user_id));"conv"==a&&(void 0!=e.order_id&&""!=e.order_id)&&(d+="\x26el\x3d"+g(e.order_id));"conv"==a&&(void 0!=e.order_value&&""!=e.order_value)&&(d+="\x26ev\x3d"+g(e.order_value));"cart"==a&&(void 0!=e.cart_value&&""!=e.cart_value)&&(d+="\x26ev\x3d"+g(e.cart_value));var l=e.attrs,h,b,m,n="";if(void 0==l)f="";else{for(f in l)if(h=l[f],/^[a-z][a-z0-9]*$/.test(f)&&void 0!=h){b="";"string"==typeof h&&(h=[h]);if(h instanceof Array)for(m=0;m<h.length;++m)"string"==typeof h[m]&&
+/^[a-zA-Z0-9_\-. !\$%&\*\(\)\?\/:]+$/.test(h[m])&&(b+=(""==b?"":",")+h[m].replace(/([\\,;])/g,"\\$1"));""!=b&&(n+=(""==n?"~":";~")+f+"/"+b)}f=n}d+="\x26udt\x3d~segment/visitor"+("conv"==a?",buyer":"")+("atc"==a?",atc":"")+("cart"==a?",cart":"")+("lc"==a?","+c:"")+(""!=f?";"+f:"");c=p.createElement("iframe");c.setAttribute("frameborder","0");c.setAttribute("scrolling","no");f=(f=c.getAttribute("style"))&&"undefined"!=typeof f.cssText?f:c.style;f.cssText="position:absolute;top:-9999em;width:10px;height:10px";
+c.src=d;(d=p.body)&&d.appendChild(c)}};return{browse:function(a){b("uui",a)},addToCart:function(a){b("atc",a)},conversion:function(a){b("conv",a)},cartView:function(a){b("cart",a)},lifeCycle:function(a){b("lc",a)}}}();k.SSKY=new function(g){this.sskyinit=!0;var k={t:q};this.push=function(a){if(!a)throw"No call spec provided in call to push";if(!(a instanceof Array)||1>a.length||"string"!=typeof a[0])throw"Argument to 'push' must be array of length at least 1, and first item must be a string specifying a method";
+var e=2>a.length?{}:a[1];a=a[0].split(".");for(var d=null,b=k,c=0;c<a.length;++c)if(d=b,b=b[a[c]],void 0===b)throw"No property '"+a[c]+"'";b.apply(d,[e])};if(void 0!==g&&g instanceof Array)for(var b=0;b<g.length;++b)this.push(g[b])}(k.SSKY)}})(window,document);

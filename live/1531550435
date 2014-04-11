@@ -1,0 +1,37 @@
+PHTTP65.55.227.208"Ý
+GET / HTTP/1.1
+Host: www.live.com
+Connection: keep-alive
+TAccept: text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8
+vUser-Agent: Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/31.0.1650.63 Safari/537.36
+$Accept-Encoding: gzip,deflate,sdch
+!Accept-Language: en-US,en;q=0.8
+
+*ã
+HTTP/1.1 302 Found
+BCache-Control: no-cache, no-store, must-revalidate, no-transform
+Pragma: no-cache
+(Content-Type: text/html; charset=utf-8
+Expires: -1
+ÃLocation: https://login.live.com/login.srf?wa=wsignin1.0&rpsnv=12&ct=1396994606&rver=6.4.6456.0&wp=MBI&wreply=http:%2F%2Fmail.live.com%2Fdefault.aspx&lc=1033&id=64855&mkt=en-us&cbcxt=mai&snsc=1
+Server: Microsoft-IIS/7.5
+'X-Wlp-StartTime: 4/8/2014 10:03:26 PM
+	xxn: 14
+7P3P: CP="BUS CUR CONo FIN IVDo ONL OUR PHY SAMo TELo"
+?Set-Cookie: KVC=17.2.7517.6000; domain=.mail.live.com; path=/
+?Set-Cookie: KVC=17.2.7517.6000; domain=.mail.live.com; path=/
+XSet-Cookie: KSC=; domain=.mail.live.com; expires=Thu, 01-Jan-1970 12:00:01 GMT; path=/
+WSet-Cookie: kr=; domain=.mail.live.com; expires=Thu, 01-Jan-1970 12:00:01 GMT; path=/
+XSet-Cookie: bsc=; domain=.mail.live.com; expires=Thu, 01-Jan-1970 12:00:01 GMT; path=/
+XSet-Cookie: rru=; domain=.mail.live.com; expires=Thu, 01-Jan-1970 12:00:01 GMT; path=/
+XSet-Cookie: prc=; domain=.mail.live.com; expires=Thu, 01-Jan-1970 12:00:01 GMT; path=/
+WSet-Cookie: mt=; domain=.mail.live.com; expires=Thu, 01-Jan-1970 12:00:01 GMT; path=/
+XSet-Cookie: DWN=; domain=.mail.live.com; expires=Thu, 01-Jan-1970 12:00:01 GMT; path=/
+DMSNSERVER: H: BLU168-W114 V: 17.2.7517.6000 D: 2014-03-17T09:17:21
+X-Powered-By: ASP.NET
+%Date: Tue, 08 Apr 2014 22:03:25 GMT
+Content-Length: 340
+Ö
+<html><head><title>Object moved</title></head><body>
+<h2>Object moved to <a href="https://login.live.com/login.srf?wa=wsignin1.0&amp;rpsnv=12&amp;ct=1396994606&amp;rver=6.4.6456.0&amp;wp=MBI&amp;wreply=http:%2F%2Fmail.live.com%2Fdefault.aspx&amp;lc=1033&amp;id=64855&amp;mkt=en-us&amp;cbcxt=mai&amp;snsc=1">here</a>.</h2>
+</body></html>

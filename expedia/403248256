@@ -1,0 +1,20 @@
+PHTTP54.236.95.10"Ó
+±GET /service/userHistory/count/jsonp?guid=ea2ba619-f98c-41da-8fad-87247c505bb9&siteid=1&format=jsonp&callback=jQuery18206998362634330988_1397254081895&_=1397254082059 HTTP/1.1
+Host: userhistory.expedia.com
+Connection: keep-alive
+Accept: */*
+vUser-Agent: Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/31.0.1650.63 Safari/537.36
+"Referer: http://www.expedia.com/
+$Accept-Encoding: gzip,deflate,sdch
+!Accept-Language: en-US,en;q=0.8
+éCookie: MC1=GUID=ea2ba619f98c41da8fad87247c505bb9; JSESSION=04d30829-1e7b-4c18-8e10-665b16d0d2ab; tpid=v.1,1; iEAPID=0,; linfo=v.4,|0|0|255|1|0||||||||1033|0|0||0|0|0|-1|-1; ipsnf3=v.3|us|1|506|cambridge; SSLB=1; aspp=v.1,0|||||||||||||; s_cc=true; s_fid=4A189949F1A27583-2D45C15F8894C944; s_sq=%5B%5BB%5D%5D; s_vi=[CS]v1|29A433E0851513F1-6000018B40050B1B[CE]
+
+*‡
+HTTP/1.1 200 OK
+Content-Type: text/javascript
+%Date: Fri, 11 Apr 2014 22:08:01 GMT
+Server: Apache-Coyote/1.1
+Content-Length: 217
+Connection: keep-alive
+Û
+jQuery18206998362634330988_1397254081895({"count":0,"responsestatus":{"message":"Number of userhistory interactions for siteId:[1] tuid:[null] guid:[ea2ba619-f98c-41da-8fad-87247c505bb9] is (0)","status":"SUCCESS"}});

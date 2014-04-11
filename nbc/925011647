@@ -1,0 +1,26 @@
+PHTTP23.209.46.26"Í
+kGET /FileResource/feeds/nbc/top.json?num=100&format=json&apikey=57aea15189dc405caffe69d8b412fb37 HTTP/1.1
+Host: nbc.ramp.com
+Connection: keep-alive
++Accept: application/json, text/plain, */*
+Origin: http://www.nbc.com
+vUser-Agent: Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/31.0.1650.63 Safari/537.36
+Referer: http://www.nbc.com/
+$Accept-Encoding: gzip,deflate,sdch
+!Accept-Language: en-US,en;q=0.8
+
+*—	
+HTTP/1.1 200 OK
+Server: Apache
+.Last-Modified: Fri, 11 Apr 2014 14:43:12 GMT
+"ETag: "d47218-32e-4f6c55a5ee4f5"
+Accept-Ranges: bytes
+Content-Length: 814
+ Access-Control-Allow-Origin: *
+ Content-Type: application/json
+Cache-Control: max-age=10
+%Date: Fri, 11 Apr 2014 14:48:50 GMT
+Connection: keep-alive
+Edge-Control: no-store
+°
+{"Terms":[{"Id":24158293,"Value":"Hannibal","SiteId":1286,"List":{"Id":832,"Name":"Popular Search Terms","Description":null,"SiteId":1286},"Attributes":[],"Synonyms":[],"NegatedTerms":[]},{"Id":24158532,"Value":"Parenthood","SiteId":1286,"List":{"Id":832,"Name":"Popular Search Terms","Description":null,"SiteId":1286},"Attributes":[],"Synonyms":[],"NegatedTerms":[]},{"Id":25030198,"Value":"Parks and Recreation","SiteId":1286,"List":{"Id":832,"Name":"Popular Search Terms","Description":null,"SiteId":1286},"Attributes":[],"Synonyms":[],"NegatedTerms":[]},{"Id":24158531,"Value":"The Voice","SiteId":1286,"List":{"Id":832,"Name":"Popular Search Terms","Description":null,"SiteId":1286},"Attributes":[],"Synonyms":[],"NegatedTerms":[]}],"Paging":{"Total":4,"Start":0,"Last":4,"NextPage":null,"PreviousPage":null}}

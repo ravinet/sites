@@ -1,0 +1,19 @@
+PHTTP54.243.246.193"Î
+–GET /collect/?time=1396995698815&pid=4261&url=http%3A%2F%2Fwww.rollingstone.com%2F&pageUrl=http%3A%2F%2Fwww.rollingstone.com%2F&ref=&fmt=js HTTP/1.1
+Host: www.bizographics.com
+Connection: keep-alive
+Accept: */*
+vUser-Agent: Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/31.0.1650.63 Safari/537.36
+'Referer: http://www.rollingstone.com/
+$Accept-Encoding: gzip,deflate,sdch
+!Accept-Language: en-US,en;q=0.8
+
+*Æ
+HTTP/1.1 302 Found
+%Date: Tue, 08 Apr 2014 22:21:38 GMT
+·Location: http://www.bizographics.com/collect/?time=1396995698815&pid=4261&url=http%3A%2F%2Fwww.rollingstone.com%2F&pageUrl=http%3A%2F%2Fwww.rollingstone.com%2F&ref=&fmt=js&3pc=true
+Server: nginx/1.2.0
+‚Set-Cookie: BizoID=280b1b9b-f195-4bf2-a085-64007f195fcb; Domain=.bizographics.com; Expires=Wed, 08-Oct-2014 10:21:38 GMT; Path=/
+Content-Length: 0
+Connection: keep-alive
+

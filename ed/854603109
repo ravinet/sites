@@ -1,0 +1,26 @@
+»HTTPS74.84.219.134"‚
+PGET /sites/default/files/css/css_bab3083251af8834894fd10a4a288460.css HTTP/1.1
+Host: www.ed.gov
+Connection: keep-alive
+Accept: text/css,*/*;q=0.1
+vUser-Agent: Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/31.0.1650.63 Safari/537.36
+Referer: http://www.ed.gov/
+$Accept-Encoding: gzip,deflate,sdch
+!Accept-Language: en-US,en;q=0.8
+
+*É
+HTTP/1.1 200 OK
+%Date: Tue, 08 Apr 2014 21:40:07 GMT
+Server: Apache
+.Last-Modified: Tue, 08 Apr 2014 21:40:06 GMT
+"ETag: "31807d-29f-4f68ed3cc1980"
+Accept-Ranges: bytes
+Content-Length: 671
+ Keep-Alive: timeout=5, max=100
+Connection: Keep-Alive
+Content-Type: text/css
+¡
+
+
+
+  a:link,a:visited{text-decoration:underline !important;}#site-name a:link,#site-name a:visited{text-decoration:none !important;}#content a:link:after,#content a:visited:after{content:" (" attr(href) ") ";font-size:0.8em;font-weight:normal;}#content,#content-inner{float:none;width:100%;margin:0 !important;padding:0 !important;}body,#page,#page-inner,#main,#main-inner,#content,#content-inner{color:#000;background-color:transparent !important;background-image:none !important;}#skip-to-nav,#navbar,#sidebar-left,#sidebar-right,#footer,.breadcrumb,div.tabs,.links,.taxonomy,.book-navigation,.forum-topic-navigation,.pager,.feed-icons{visibility:hidden;display:none;}

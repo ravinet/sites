@@ -1,0 +1,32 @@
+PHTTP180.149.153.68"Š
+GET /ckctl.html HTTP/1.1
+Host: beacon.sina.com.cn
+Connection: keep-alive
+TAccept: text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8
+vUser-Agent: Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/31.0.1650.63 Safari/537.36
+"Referer: http://www.sina.com.cn/
+$Accept-Encoding: gzip,deflate,sdch
+!Accept-Language: en-US,en;q=0.8
+wCookie: U_TRS1=00000037.1b0d7d1e.5344773a.3db15b0f; U_TRS2=00000037.1b167d1e.5344773a.6dbeb76b; UOR=,www.sina.com.cn,
+
+*€
+HTTP/1.1 200 OK
+%Date: Tue, 08 Apr 2014 22:24:58 GMT
+Content-Type: text/html
+Content-Length: 1046
+.Last-Modified: Fri, 14 Mar 2014 02:12:29 GMT
+Connection: keep-alive
+~P3P: CP="CAO DSP COR LAW CURa ADMa DEVa PSAa PSDa OUR DELa BUS IND PHY ONL UNI PUR COM NAV INT STA",policyref="/w3c/p3p.xml"
+Server: Suda/1.4.2
+Accept-Ranges: bytes
+˜
+<!DOCTYPE html>
+<html lang="en"><head>
+<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+	<meta charset="UTF-8">
+	<script type="text/javascript">
+	(function(){function a(c){document.cookie=c+"=; domain=.sina.com.cn; path=/; expires=Thu, 01 Jan 1970 00:00:00 GMT;"}function b(){cklst=document.cookie.split(/; */);wlist=",,ALF,Apache,ArtiFSize,ArtiVAuto,LUE,LUP,SGUID,SINABLOGNUINFO,SINAGLOBAL,SINA_NEWS_CUSTOMIZE_city,SUE,SUP,SUS,SessionID,ULOGIN_IMG,ULV,UOR,U_TRS1,U_TRS2,VBLOG_LOGIN,__utma,__utmb,__utmc,__utmz,_ipuba,_s_upa,hqEtagMode,lxlrtst,lxlrttp,mvsign,rotatecount,sso_info,vjlast,vjuids,wapparam,admin_house_ticket,user_info,public_user_id,admin_id,dummy_ip_local_index,dummy_ip_location1,dummy_ip_location2,ustat,sinaads_entry,SUB,SUBP,sina_sc_is_first,";for(var e=0,c=cklst.length;e<c;e++){var d=cklst[e].substring(0,cklst[e].indexOf("="));var f=cklst[e].substring(cklst[e].indexOf("=")+1);if(wlist.indexOf(","+d+",")==-1){if(d.indexOf("directAd")!=0){a(d)}}}}b()})();
+	</script>
+</head>
+<body>
+</body></html>

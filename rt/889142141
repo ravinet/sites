@@ -1,0 +1,47 @@
+PHTTP62.213.85.4"�
+"GET /static/js/clock.js HTTP/1.1
+Host: rt.com
+Connection: keep-alive
+Accept: */*
+vUser-Agent: Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/31.0.1650.63 Safari/537.36
+Referer: http://rt.com/
+$Accept-Encoding: gzip,deflate,sdch
+!Accept-Language: en-US,en;q=0.8
+
+*�
+HTTP/1.1 200 OK
+Server: nginx
+%Date: Tue, 08 Apr 2014 22:21:14 GMT
+(Content-Type: application/x-javascript
+Content-Length: 724
+Connection: close
+.Last-Modified: Tue, 16 Jul 2013 11:10:23 GMT
+ETag: "51e52a1f-2d4"
+(Expires: Tue, 22 Apr 2014 22:21:14 GMT
+ Cache-Control: max-age=1209600
+Accept-Ranges: bytes
+�
+$(function () {
+	obj_hours=document.getElementById("hours");
+	 
+	name_month=new Array ("Jan","Feb","Mar", "Apr","May", "Jun","Jul","Aug","Sep", "Oct","Nov","Dec");
+	 
+	function wr_hours()
+	{
+	time=new Date();
+
+	time_min=time.getUTCMinutes();
+	time_hours=time.getUTCHours();
+	time_wr=((time_hours<10)?"0":"")+time_hours;
+	time_wr+=":";
+	time_wr+=((time_min<10)?"0":"")+time_min;
+	 
+	//time_wr="Moscow"+" "+time.getDate()+" "+name_month[time.getMonth()]+" "+time.getFullYear()+" г. Время: "+time_wr;
+	time_wr=time_wr+" GMT, "+name_month[time.getUTCMonth()]+" "+time.getUTCDate()+", "+time.getUTCFullYear();
+	 
+	obj_hours.innerHTML=time_wr;
+	}
+	 
+	wr_hours();
+	//setInterval('wr_hours()',1000);
+});

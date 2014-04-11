@@ -1,0 +1,106 @@
+»HTTPS54.230.21.227"©
+GET /js/v2/share.js HTTP/1.1
+$Host: djnf6e5yyirys.cloudfront.net
+Connection: keep-alive
+Accept: */*
+vUser-Agent: Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/31.0.1650.63 Safari/537.36
+sReferer: https://embed.friendbuy.com/site-82cf2017-petflow.com/page:All/widget?embed_load_code=201404081508158212
+$Accept-Encoding: gzip,deflate,sdch
+!Accept-Language: en-US,en;q=0.8
+
+*Ú
+HTTP/1.1 200 OK
+&Content-Type: application/javascript
+Content-Length: 2987
+Connection: keep-alive
+%Date: Sun, 06 Apr 2014 17:04:05 GMT
+#Cache-Control: max-age=790,public
+(Expires: Sun, 06 Apr 2014 17:11:24 UTC
+.Last-Modified: Sun, 06 Apr 2014 16:58:15 GMT
+*ETag: "96286a9ce33ca2977e758516a83bee71"
+Accept-Ranges: bytes
+Server: AmazonS3
+Age: 2563
+X-Cache: Hit from cloudfront
+GVia: 1.1 f8b39675eac44b97a6b28ef50d3d59db.cloudfront.net (CloudFront)
+GX-Amz-Cf-Id: Z8HEhzjfphnwtYJu2eRbRLp9RI_bh_v7E7h7DMTLy06JjJSzDy4iDA==
+­
+var _gaq = _gaq || [];
+function share(options) {
+    var data = {
+        csrf: options.csrf,
+        merchant_id: options.merchantId,
+        purchase_id: options.purchaseId,
+        product_id: options.productId,
+        item_id: options.itemId,
+        promotion_id: options.promotionId,
+        message: options.message,
+        overlay_reward: options.rewardChoice,
+        email_from: options.emailFrom,
+        email_to: options.emailTo,
+        email_body: options.emailBody
+    };
+    $.each(options.networks, function() {
+        data['share_via_' + this] = 'on';
+    });
+
+    function generateForm(data) {
+        var $form = $('<form>').attr({
+            method: 'POST',
+            action: '/handle_post?embed_load_code=' + window.embedLoadCode, // injected via javascript from filter
+            target: 'auth'
+        }).appendTo($('body'));
+        for (var key in data) {
+            var value = data[key];
+            if (value != undefined && key != 'message') {
+                $form.append('<input type="hidden" name="' + key + '" value="' + value.replace(/\"/g, "") + '" />');
+            } else if (value != undefined && key == 'message') {
+                $form.append('<textarea style="display:none;" name="' + key + '">' + value + '</textarea>');
+            }
+        }
+        return $form
+    }
+
+    var $form = generateForm(data);
+    $form.submit(function() {
+        var success = false;
+        $.ajax({
+            async: false,
+            type: 'POST',
+            url:'/handle_share',
+            data: $form.serialize(),
+            success: function(responseText) {
+                if ($.inArray('twitter', options.networks) && $.inArray('facebook', options.networks)) {
+                    _gaq.push(['_trackEvent', 'Share', 'facebook_twitter']);
+                } else if ($.inArray('twitter', options.networks)) {
+                    _gaq.push(['_trackEvent', 'Share', 'twitter']);
+                } else if ($.inArray('facebook', options.networks)) {
+                    _gaq.push(['_trackEvent', 'Share', 'facebook']);
+                } else if ($.inArray('linkedin', options.networks)) {
+                    _gaq.push(['_trackEvent', 'Share', 'linkedin']);
+                } else if ($.inArray('email', options.networks)()) {
+                    _gaq.push(['_trackEvent', 'Share', 'email']);
+                }
+                _gaq.push(['_trackEvent', 'Share', 'submit']);
+                success = true;
+            },
+            error: function(xhr) {
+                var response = eval('(' + xhr.responseText + ')');
+                options.onErrors(response);
+            }
+        });
+        if (success) {
+            openAuthWindow('');
+        }
+        return success;
+    });
+    $form.submit();
+}
+
+function openAuthWindow(url) {
+    var w = 780;
+    var h = 450;
+    var l = (screen.width - w) / 2;
+    var t = (screen.height - h) / 2;
+    window.open(url, 'auth', 'width=' + w + ',height=' + h + ',top=' + t + ',left=' + l);
+}

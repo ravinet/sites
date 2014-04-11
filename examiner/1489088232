@@ -1,0 +1,23 @@
+PHTTP64.12.245.3"Ð
+lGET /Handlers/FiveminCookieCache.ashx?name=uuid&callback=FIVEMIN.LIB.jsonpCallbacks['cache_uuid'] HTTP/1.1
+Host: syn.5min.com
+Connection: keep-alive
+Accept: image/webp,*/*;q=0.8
+vUser-Agent: Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/31.0.1650.63 Safari/537.36
+#Referer: http://www.examiner.com/
+$Accept-Encoding: gzip,deflate,sdch
+!Accept-Language: en-US,en;q=0.8
+&Cookie: storage_uuid=463138112248182
+
+*Ô
+HTTP/1.1 200 OK
+Cache-Control: private
+5Content-Type: application/javascript; charset=utf-8
+Server: Microsoft-IIS/7.5
+X-AspNet-Version: 4.0.30319
+X-Powered-By: ASP.NET
+X-Server: fmvase-m10 - syn
+%Date: Fri, 11 Apr 2014 15:36:27 GMT
+Content-Length: 60
+>
+FIVEMIN.LIB.jsonpCallbacks['cache_uuid']('463138112248182');

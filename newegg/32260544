@@ -1,0 +1,33 @@
+PHTTP23.209.66.227"Ì
+mGET /cm?id=&esi=1&pt=newegg&google_gid=CAESEEPRGVLpb7YtJvpXL78wOrI&google_cver=1&google_ula=1174,0 HTTP/1.1
+Host: px.owneriq.net
+Connection: keep-alive
+Accept: image/webp,*/*;q=0.8
+vUser-Agent: Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/31.0.1650.63 Safari/537.36
+!Referer: http://www.newegg.com/
+$Accept-Encoding: gzip,deflate,sdch
+!Accept-Language: en-US,en;q=0.8
+ Cookie: ss=jx6w9u; apq=.3065501900.3065501905.3065501910.1204606434.3065501785.; rpq=.; si=4502811731362411908; p1=3065501905.3065501785.3065501910.3065501900
+
+*¹
+ HTTP/1.1 302 Moved Temporarily
+Server: Apache/2.2.3 (CentOS)
+Content-Length: 153
+Content-Type: text/html
+,Location: http://px.owneriq.net/fr/epx.gif
+tSet-Cookie: gguuid=CAESEEPRGVLpb7YtJvpXL78wOrI; expires=Thu, 08 May 2014 22:06:13 GMT; path=/; domain=.owneriq.net
+X-Powered-By: PHP/5.2.17
+jP3P: policyref="/w3c/p3p.xml", CP="NOI DSP COR NID CURa ADMa DEVa PSAa PSDa OUR BUS COM INT OTC PUR STA"
+Vary: Accept-Encoding
+Cache-Control: max-age=34727
+%Date: Tue, 08 Apr 2014 22:06:13 GMT
+Connection: keep-alive
+›
+<HTML>
+<HEAD>
+<TITLE>Error Page</TITLE>
+</HEAD>
+<BODY>
+An error (302 Moved Temporarily) has occured in response to this request.
+</BODY>
+</HTML>

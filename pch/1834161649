@@ -1,0 +1,195 @@
+PHTTP23.74.28.10"Ü
+:GET /pch_media/js/gigya.js?v=3.1.32.1.454-18308 HTTP/1.1
+Host: www.pch.com
+Connection: keep-alive
+Accept: */*
+vUser-Agent: Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/31.0.1650.63 Safari/537.36
+Referer: http://www.pch.com/
+$Accept-Encoding: gzip,deflate,sdch
+!Accept-Language: en-US,en;q=0.8
+úCookie: deb088d138aa52ddbeb48990e3e58a5e=k12m2f9f5ent563l9fgbgvu270; pdd=D; pci=n3qg5f4gGbPBKvNH; __utma=102336542.1157406824.1396994885.1396994885.1396994885.1; __utmb=102336542.1.10.1396994885; __utmc=102336542; __utmz=102336542.1396994885.1.1.utmcsr=(direct)|utmccn=(direct)|utmcmd=(none); _at_id.pch.production.a1c9=b2baeaeffd6ee36d.1396994885.1.1396994885.1396994885.0.0.
+
+*¢9
+HTTP/1.1 200 OK
+Server: Apache
+.Last-Modified: Mon, 14 Oct 2013 18:20:28 GMT
+$ETag: "2002ed3-1b47-4e8b785c85300"
+Accept-Ranges: bytes
+Content-Length: 6983
+GP3P: CP="CAO DSP COR CUR ADM DEV TAI PSA PSD IVA IVD CON OUR LEG UNI"
+Content-Type: text/javascript
+%Date: Tue, 08 Apr 2014 22:08:04 GMT
+Connection: keep-alive
+É6
+// global namespace
+var PCHGigya = PCHGigya || {};
+// Configuration Parameters
+var conflike = {
+    "APIKey": gigyaapi
+};
+var operationMode = "multiSelect";
+//Gigya Follow Bar function for Facebook or Google plus
+/* 
+Params:-
+provider - Provider param can be facebook or googleplus
+containerID - The ID of the <DIV> element on the page in which the plugin is displayed
+iconSize - The size of the icons displayed in the plugin. The default value is 32.
+actionURL - The URL to open when the button is clicked. 
+action - The action to take when a button is clicked. Values which can be used are dialog, window or redirect
+			'window' (default) - When the button is clicked, the actionURL opens in a new window.
+			'redirect' - When the button is clicked the current page is redirected to the actionURL.
+			'dialog' - When the mouse hovers over the button, a provider-specific dialog opens. When the mouse moves away the dialog closes.
+*/
+PCHGigya.showFollowBarUI = function (provider, containerID, iconSize, actionURL, action, layout) {
+	var followBar_params = {
+		containerID: containerID,
+		layout: layout,
+		iconSize: iconSize,
+		buttons: [{
+			provider: provider,
+			actionURL: actionURL,
+			action: action
+		}],
+		onFollowClicked: onFollowClicked
+	};
+	gigya.services.socialize.showFollowBarUI(followBar_params);
+};
+//Gigya Follow Bar function for Twitter Tweet
+/* 
+Params:-
+provider - Provider param can be twitter
+containerID - The ID of the <DIV> element on the page in which the plugin is displayed
+iconSize - The size of the icons displayed in the plugin. The default value is 32.
+actionURL - The URL to open when the button is clicked. 
+action - The action to take when a button is clicked. Values which can be used are dialog, window or redirect
+			'window' (default) - When the button is clicked, the actionURL opens in a new window.
+			'redirect' - When the button is clicked the current page is redirected to the actionURL.
+			'dialog' - When the mouse hovers over the button, a provider-specific dialog opens. When the mouse moves away the dialog closes.
+*/
+PCHGigya.showFollowBarUIforTweet = function (containerID, iconSize, followUsersURL, action, layout) {
+	var followBar_params = {
+		containerID: containerID,
+		layout: layout,
+		iconSize: iconSize,
+		buttons: [{
+			provider: 'twitter',
+			followUsers: followUsersURL,
+			action: action
+		}],
+		onFollowClicked: onFollowClicked
+	};
+	gigya.services.socialize.showFollowBarUI(followBar_params);
+};
+// This will be called when a follow action has taken place
+function onFollowClicked(event){
+	if(event.providers) {
+		var providers = event.providers.split(",");
+		for(i = 0; i < providers.length; i++) {
+			var provider = providers[i];
+						// Report the event to Google Analytics using the trackSocial method
+						_gaq.push(['_trackSocial',provider,"FollowUs Published", document.title]);
+		}
+	}
+}
+/*Gigya Share Bar function 
+Params:-
+containerID - The ID of the <DIV> element on the page in which the plugin is displayed
+shareButtons - comma-separated string like facebook-like, twitter-tweet, google-plusone, etc.,
+title - Provide title to be shown on the users wall
+linkBack - Provide link back URL
+*/
+PCHGigya.showShareBarUI = function (title, linkBack, containerID, shareButtons, layout) {
+    var act = new gigya.services.socialize.UserAction();
+    act.setTitle(title);
+    act.setLinkBack(linkBack);
+    var showShareBarUI_params = {
+        containerID: containerID, 
+		layout: layout,
+        shareButtons: shareButtons, 
+        userAction: act,
+		onError: onError,
+        onSendDone: onSendDoneCallGA // onSendDone method is called after Gigya finishes the publishing process.
+    };
+    gigya.services.socialize.showShareBarUI(conflike, showShareBarUI_params)
+};
+
+/*Gigya Share function
+Params:-
+message - Provide message o be shown on the input text box
+title - Provide title to be shown on the users wall
+description - Provide relevant description to be shown on the users wall
+linkBack - Provide link back URL
+logo - Provide Logo source path
+logoLink - Provide link for the Logo
+containerID - The ID of the HTML element that triggers the Share plugin. This element determines where the multiSelect Share plugin is displayed on the screen.
+confParams - Comma separated value of any Social network you are targetting for ex:- facebook,twitter,yahoo
+*/
+PCHGigya.showShareUI = function (message, title, description, linkBack, logo, logoLink, containerID, confParams) {
+	//Config Params
+	var cParams = {
+		"APIKey": gigyaapi,
+		enabledProviders: confParams
+	};
+    var act = new gigya.services.socialize.UserAction();
+    act.setUserMessage(message);
+    act.setTitle(title);
+    act.setDescription(description);
+    act.setLinkBack(linkBack);
+    var image = {
+        type: 'image',
+        src: logo,
+        href: logoLink
+    };
+    act.addMediaItem(image);
+    var share_params = {
+        userAction: act,
+        operationMode: operationMode,//Share Plugin mode by default is used as multiSelect as per requirement
+        snapToElementID: containerID,
+        onError: onError,
+        onSendDone: onSendDone,
+        context: operationMode,
+        showMoreButton: false,
+        showEmailButton: false
+    };
+    gigya.services.socialize.showShareUI(cParams, share_params);
+};
+
+function onError(event) {
+    if (event.providers) {
+        alert("We are currently unable to sign you in using your " + event.providers + " account information. Please try again in a few minutes.")
+    } //else alert("We are currently unable to sign you in due to technical difficulties. Please try again later.")
+}
+
+function onSendDone(event) {
+    switch (event.context) {
+    case 'multiSelect':
+        document.getElementById('status').innerHTML = 'Your message has been posted to: ' + event.providers;
+        break;
+    case 'simpleShare':
+        document.getElementById('status').innerHTML = 'Clicked ' + event.providers;
+        break;
+    default:
+        document.getElementById('status').innerHTML = 'Share onSendDone'
+    }
+	if(event.providers) {
+		var providers = event.providers.split(",");
+		for(i = 0; i < providers.length; i++) {
+			var provider = providers[i];
+						// Report the event to Google Analytics using the trackSocial method                       
+						_gaq.push(['_trackSocial',provider,"ShareBar Published", document.title]);
+		}
+	}
+}
+
+// onSendDoneCallGA - event handler method, called after Gigya finishes the sharing process
+// Reports the event to Google Analytics
+function onSendDoneCallGA(event) {
+	if(event.providers) {
+		var providers = event.providers.split(",");
+		for(i = 0; i < providers.length; i++) {
+			var provider = providers[i];
+						// Report the event to Google Analytics using the trackSocial method
+						_gaq.push(['_trackSocial',provider,"Share Published", document.title]);
+		}
+	}
+} 

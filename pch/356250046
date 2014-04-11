@@ -1,0 +1,107 @@
+PHTTP23.74.28.10"á
+XGET /modules/mod_pchcom_featured/assets/js/hp_overlay.js?v=3.1.32.1.454-18308 HTTP/1.1
+Host: www.pch.com
+Connection: keep-alive
+Accept: */*
+vUser-Agent: Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/31.0.1650.63 Safari/537.36
+Referer: http://www.pch.com/
+$Accept-Encoding: gzip,deflate,sdch
+!Accept-Language: en-US,en;q=0.8
+bCookie: deb088d138aa52ddbeb48990e3e58a5e=k12m2f9f5ent563l9fgbgvu270; pdd=D; pci=n3qg5f4gGbPBKvNH
+
+*à
+HTTP/1.1 200 OK
+Server: Apache
+.Last-Modified: Mon, 13 Jan 2014 21:55:08 GMT
+"ETag: "2100e7-b87-4efe1210ca700"
+Accept-Ranges: bytes
+Content-Length: 2951
+GP3P: CP="CAO DSP COR CUR ADM DEV TAI PSA PSD IVA IVD CON OUR LEG UNI"
+Content-Type: text/javascript
+%Date: Tue, 08 Apr 2014 22:08:04 GMT
+Connection: keep-alive
+‰
+
+function initUnrecogPopup(){
+		// initialize scrollable together with the navigator plugin
+		$(".outer_hpoverlay_holder").overlay({
+			top:630,
+			left:220.5,
+			fixed:false,
+			mask: {
+		color: '#000',
+		loadSpeed: 20,
+		opacity: 0.95
+	    },
+	    closeOnClick: false,
+	    closeOnEsc: false,
+	    load: false,
+	    onLoad: function(){setupZindex();}
+	    });
+}
+
+function setupZindex(t,l){
+	var animSpeed = 800;
+	var leftPosition = typeof l === 'undefined'?($("#mainimageholder div.imagediv:first-child").offset().left+125.5):l;
+	var topPosition = typeof t === 'undefined'?$("html").hasClass("ie7")||$("html").hasClass("ie8")?580:($("#mainimageholder div.imagediv:first-child").offset().top+425):t;
+	$("#mainimageholder div.imagediv:first-child,#arrowholder,.thumb_arrow_holder.selected .thumb_image,#uni_header,.sso-lightbox.hide").addClass("higherzindex");
+	$(".nav-list").prepend("<div id='invisibleDiv'></div>")
+	$(".outer_hpoverlay_holder").animate({top:topPosition,left:leftPosition},animSpeed);
+}
+
+function ie_browser_fix(){
+		if($("html").hasClass("ie7")){
+		$("body").append($("#mainimageholder div.imagediv:first-child").clone().addClass("fakebigimage"))
+		$(".fakebigimage").css("opacity","1"); 
+		$("body").append($(".thumb_arrow_holder.selected .thumb_image").clone().addClass("fakesmallimage"));
+		$(".outer_hpoverlay_holder").css("z-index","110501"); 
+		}
+}
+
+	unrecognized_popup_msg = $("<div class='outer_hpoverlay_holder'><div id='hp_overlay_arrow'></div><div class='unrecognized_popup_msg'>"+popup_msg+"</div></div>");
+	$("body").append(unrecognized_popup_msg);
+	initUnrecogPopup();
+	ie_browser_fix();
+	$(".outer_hpoverlay_holder").overlay().load();
+	$("#exposeMask").height("2750px");
+
+		$(".keep_me_signed_in").siblings("a").live("click",function(){
+			$(".sso-lightbox.hide").addClass("higherzindex");
+		});
+	$(".sign-in.link-button,#shelf-login-container div.close-x").click(function(){
+		if($("html").hasClass("ie7") || $("html").hasClass("ie8")){
+		var downTopPos = 862;
+		var upTopPos = 580;
+		}
+		else{
+		var downTopPos = 850;
+		var upTopPos = 580;
+		}
+		if($(this).hasClass("sign-in"))
+			{
+				setupZindex(downTopPos,220.5);
+				$("#exposeMask").data("height",$("#exposeMask").height());
+				$("#exposeMask").css("height","2750px");
+			}
+			else{
+				setupZindex(upTopPos,220.5);
+				$("#exposeMask").css("height",$("#exposeMask").data("height"));
+			}
+		if($("html").hasClass("ie7")){
+			if($(this).hasClass("sign-in"))
+				{
+					$(".fakebigimage").animate({top:440},800);
+					$(".fakesmallimage").animate({top:863},800);
+				}
+				else
+				{					
+					$(".fakebigimage").animate({top:155},800);
+					$(".fakesmallimage").animate({top:575},800);
+				};
+		}
+	});
+
+	$(function () {
+		$("#footer-menu .top,#disclaimer_registers").addClass("higherzindex");
+		setTimeout(function(){$("#exposeMask").height($("body").height())},2000);
+	});

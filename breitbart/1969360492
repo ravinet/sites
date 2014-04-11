@@ -1,0 +1,26 @@
+PHTTP23.202.221.166"Í
+GET /js/embed.js HTTP/1.1
+Host: launch.newsinc.com
+Connection: keep-alive
+Accept: */*
+vUser-Agent: Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/31.0.1650.63 Safari/537.36
+$Referer: http://www.breitbart.com/
+$Accept-Encoding: gzip,deflate,sdch
+!Accept-Language: en-US,en;q=0.8
+
+*ú
+!HTTP/1.1 307 Temporary Redirect
+Accept-Ranges: bytes
+&Content-Type: application/javascript
+*ETag: "d41d8cd98f00b204e9800998ecf8427e"
+.Last-Modified: Fri, 11 Apr 2014 18:35:28 GMT
+Location: /37/js/embed.js
+ Server: Apache/2.2.25 (Amazon)
+2x-ndn-redirect-proxy: Hit from: ip-10-170-51-195
+Content-Length: 0
+(Expires: Fri, 11 Apr 2014 19:12:32 GMT
+.Cache-Control: max-age=0, no-cache, no-store
+Pragma: no-cache
+%Date: Fri, 11 Apr 2014 19:12:32 GMT
+Connection: keep-alive
+

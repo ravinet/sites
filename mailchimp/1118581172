@@ -1,0 +1,27 @@
+PHTTP54.230.54.228"Û
+2GET /web/home/animation/image-block.svg HTTP/1.1
+Host: static.mailchimp.com
+Connection: keep-alive
+Accept: image/webp,*/*;q=0.8
+vUser-Agent: Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/31.0.1650.63 Safari/537.36
+ Referer: http://mailchimp.com/
+$Accept-Encoding: gzip,deflate,sdch
+!Accept-Language: en-US,en;q=0.8
+
+*ê
+
+HTTP/1.1 200 OK
+Content-Type: image/svg+xml
+Content-Length: 835
+Connection: keep-alive
+%Date: Fri, 04 Apr 2014 13:03:25 GMT
+Server: Apache
+.Last-Modified: Wed, 26 Jun 2013 14:37:09 GMT
+"ETag: "7c0039-343-4e00f94988f40"
+Accept-Ranges: bytes
+Age: 32329
+X-Cache: Hit from cloudfront
+GVia: 1.1 7c44997480c77bb09122b4012333f707.cloudfront.net (CloudFront)
+GX-Amz-Cf-Id: HaNYdD5dVVtG99hoAnIvl01-YmYqBeUQtVx4-dWEYE_Fwxqf99Hz1Q==
+≈
+<svg xmlns="http://www.w3.org/2000/svg" width="74" height="80" viewBox="6 9 74 80" enable-background="new 6 9 74 80"><path fill="#E0E0E0" d="M80 85c0 2.209-1.791 4-4 4h-66c-2.209 0-4-1.791-4-4v-72c0-2.209 1.791-4 4-4h66c2.209 0 4 1.791 4 4v72z"/><path fill="#fff" d="M75 71h-62v-53c0-1.104.896-2 2-2h58c1.105 0 2 .896 2 2v53z"/><rect x="27" y="32" fill="#E1E1E1" width="33" height="24"/><polygon fill="#B6B7B7" points="27,53 40.156,40.67 49.126,49.641 53.748,45.02 60,51 60,56 27,56"/><circle fill="#B6B7B7" cx="49" cy="39" r="3"/><rect x="27" y="58" fill="#C6C6C7" width="33" height="2"/><rect x="23" y="29.455" fill="#C6C6C7" width="2" height="30.545"/><rect x="23" y="58" fill="#C6C6C7" width="41" height="2"/><rect x="23" y="28" fill="#C6C6C7" width="41" height="2"/><rect x="62" y="28" fill="#C6C6C7" width="2" height="32"/></svg>

@@ -1,0 +1,338 @@
+PHTTP72.21.81.253"‰
+CGET /clientscript/vbulletin_css/style-a6d04fb9-00001.css HTTP/1.1
+Host: cdn.warriorforum.com
+Connection: keep-alive
+Accept: text/css,*/*;q=0.1
+vUser-Agent: Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/31.0.1650.63 Safari/537.36
+'Referer: http://www.warriorforum.com/
+$Accept-Encoding: gzip,deflate,sdch
+!Accept-Language: en-US,en;q=0.8
+
+*Ê7
+HTTP/1.1 200 OK
+Accept-Ranges: bytes
+ Cache-Control: max-age=2592000
+Content-Type: text/css
+%Date: Tue, 08 Apr 2014 22:34:30 GMT
+(Etag: "1a6f-52ef47ee-3efcb4415734e7cf"
+(Expires: Thu, 08 May 2014 22:34:30 GMT
+.Last-Modified: Mon, 03 Feb 2014 07:40:30 GMT
+Server: ECAcc (ord/57CC)
+X-Cache: HIT
+Content-Length: 6767
+ñ4
+body
+{
+	background: #FFFFFF;
+	color: #000000;
+	font: 10pt verdana, geneva, lucida, 'lucida grande', arial, helvetica, sans-serif;
+	margin: 0px 0px 0px 0px;
+	padding: 0px;
+		background-attachment: fixed;
+		background-image: url(http://www.warriorforumsupport.com/WF/background.gif);
+		background-repeat: repeat-y;
+		background-position: center top;
+}
+a:link, body_alink
+{
+	color: #00008b;
+	text-decoration: none;
+}
+a:visited, body_avisited
+{
+	color: #00008b;
+	text-decoration: none;
+}
+a:hover, a:active, body_ahover
+{
+	color: #ce0000;
+	text-decoration: underline;
+}
+.page
+{
+	background: #FFFFFF;
+	color: #000000;
+}
+td, th, p, li
+{
+	font: 10pt verdana, geneva, lucida, 'lucida grande', arial, helvetica, sans-serif;
+}
+.tborder
+{
+	background: #000000;
+	color: #000000;
+	border: 1px solid #FFFFFF;
+}
+.tcat
+{
+	background: #000000;
+	color: #FFFFFF;
+	font: bold 10pt verdana, geneva, lucida, 'lucida grande', arial, helvetica, sans-serif;
+		background-image: url(http://cdn.warriorforum.com/images/background-tcat.gif);
+		background-repeat: repeat-x;
+		background-position: center top;
+}
+.tcat a:link, .tcat_alink
+{
+	background: #000000;
+	color: #FFFFFF;
+	text-decoration: none;
+}
+.tcat a:visited, .tcat_avisited
+{
+	background: #000000;
+	color: #FFFFFF;
+	text-decoration: none;
+}
+.tcat a:hover, .tcat a:active, .tcat_ahover
+{
+	background: #000000;
+	color: #FFFFFF;
+	text-decoration: underline;
+}
+.thead
+{
+	background: #CE0000;
+	color: #FFFFFF;
+	font: 11px tahoma, verdana, geneva, lucida, 'lucida grande', arial, helvetica, sans-serif;
+		background-image: url(http://cdn.warriorforum.com/images/background-tables.gif);
+		background-repeat: repeat-x;
+		background-position: center top;
+}
+.thead a:link, .thead_alink
+{
+	background: #ce0000;
+	color: #FFFFFF;
+}
+.thead a:visited, .thead_avisited
+{
+	background: #ce0000;
+	color: #FFFFFF;
+}
+.thead a:hover, .thead a:active, .thead_ahover
+{
+	background: #ce0000;
+	color: #FFFFFF;
+}
+.tfoot
+{
+	background: #000000;
+	color: #FFFFFF;
+}
+.tfoot a:link, .tfoot_alink
+{
+	color: #FFFFFF;
+}
+.tfoot a:visited, .tfoot_avisited
+{
+	color: #FFFFFF;
+}
+.tfoot a:hover, .tfoot a:active, .tfoot_ahover
+{
+	color: #FFFFFF;
+}
+.alt1, .alt1Active
+{
+	background: #f5f5f5;
+	color: #000000;
+}
+.alt2, .alt2Active
+{
+	background: #f5f5f5;
+	color: #000000;
+}
+.inlinemod
+{
+	background: #FFFFCC;
+	color: #000000;
+}
+.wysiwyg
+{
+	background: #FFFFFF;
+	color: #000000;
+	font: 10pt verdana, geneva, lucida, 'lucida grande', arial, helvetica, sans-serif;
+	margin: 5px 10px 10px 10px;
+	padding: 0px;
+}
+.wysiwyg a:link, .wysiwyg_alink
+{
+	color: #000000;
+}
+.wysiwyg a:visited, .wysiwyg_avisited
+{
+	color: #000000;
+}
+.wysiwyg a:hover, .wysiwyg a:active, .wysiwyg_ahover
+{
+	color: #ce0000;
+}
+textarea, .bginput
+{
+	font: 10pt verdana, geneva, lucida, 'lucida grande', arial, helvetica, sans-serif;
+}
+.bginput option, .bginput optgroup
+{
+	font-size: 10pt;
+	font-family: verdana, geneva, lucida, 'lucida grande', arial, helvetica, sans-serif;
+}
+.button
+{
+	background: #CE0000;
+	color: #FFFFFF;
+	font: 11px verdana, geneva, lucida, 'lucida grande', arial, helvetica, sans-serif;
+}
+select
+{
+	font: 11px verdana, geneva, lucida, 'lucida grande', arial, helvetica, sans-serif;
+}
+option, optgroup
+{
+	font-size: 11px;
+	font-family: verdana, geneva, lucida, 'lucida grande', arial, helvetica, sans-serif;
+}
+.smallfont
+{
+	font: 11px verdana, geneva, lucida, 'lucida grande', arial, helvetica, sans-serif;
+}
+.time
+{
+	color: #000000;
+}
+.navbar
+{
+	font: 11px verdana, geneva, lucida, 'lucida grande', arial, helvetica, sans-serif;
+}
+.highlight
+{
+	color: #FF0000;
+	font-weight: bold;
+}
+.fjsel
+{
+	background: #000000;
+	color: #FFFFFF;
+}
+.fjdpth0
+{
+	background: #F7F7F7;
+	color: #000000;
+}
+.panel
+{
+	background: #FFFFFF;
+	color: #000000;
+	padding: 10px;
+	border: 2px outset;
+}
+.panelsurround
+{
+	background: #FFFFFF;
+	color: #000000;
+}
+legend
+{
+	color: #000000;
+	font: 11px tahoma, verdana, geneva, lucida, 'lucida grande', arial, helvetica, sans-serif;
+}
+.vbmenu_control
+{
+	background: #ce0000;
+	color: #FFFFFF;
+	font: bold 11px tahoma, verdana, geneva, lucida, 'lucida grande', arial, helvetica, sans-serif;
+	padding: 3px 6px 3px 6px;
+	white-space: nowrap;
+}
+.vbmenu_control a:link, .vbmenu_control_alink
+{
+	background: #ce0000;
+	color: #FFFFFF;
+	text-decoration: none;
+}
+.vbmenu_control a:visited, .vbmenu_control_avisited
+{
+	background: #ce0000;
+	color: #FFFFFF;
+	text-decoration: none;
+}
+.vbmenu_control a:hover, .vbmenu_control a:active, .vbmenu_control_ahover
+{
+	background: #ce0000;
+	color: #FFFFFF;
+	text-decoration: none;
+}
+.vbmenu_popup
+{
+	background: #FFFFFF;
+	color: #000000;
+	border: 1px solid #000000;
+}
+.vbmenu_option
+{
+	background: #efefef;
+	color: #000000;
+	font: 11px verdana, geneva, lucida, 'lucida grande', arial, helvetica, sans-serif;
+	white-space: nowrap;
+	cursor: pointer;
+}
+.vbmenu_option a:link, .vbmenu_option_alink
+{
+	background: #efefef;
+	color: #000000;
+	text-decoration: none;
+}
+.vbmenu_option a:visited, .vbmenu_option_avisited
+{
+	background: #efefef;
+	color: #000000;
+	text-decoration: none;
+}
+.vbmenu_option a:hover, .vbmenu_option a:active, .vbmenu_option_ahover
+{
+	background: #efefef;
+	color: #000000;
+	text-decoration: none;
+}
+.vbmenu_hilite
+{
+	background: #efefef;
+	color: #000000;
+	font: 11px verdana, geneva, lucida, 'lucida grande', arial, helvetica, sans-serif;
+	white-space: nowrap;
+	cursor: pointer;
+}
+.vbmenu_hilite a:link, .vbmenu_hilite_alink
+{
+	background: #efefef;
+	color: #000000;
+	text-decoration: none;
+}
+.vbmenu_hilite a:visited, .vbmenu_hilite_avisited
+{
+	background: #efefef;
+	color: #000000;
+	text-decoration: none;
+}
+.vbmenu_hilite a:hover, .vbmenu_hilite a:active, .vbmenu_hilite_ahover
+{
+	background: #efefef;
+	color: #000000;
+	text-decoration: none;
+}
+/* ***** styling for 'big' usernames on postbit etc. ***** */
+.bigusername { font-size: 14pt; }
+
+/* ***** small padding on 'thead' elements ***** */
+td.thead, th.thead, div.thead { padding: 4px; }
+
+/* ***** basic styles for multi-page nav elements */
+.pagenav a { text-decoration: none; }
+.pagenav td { padding: 2px 4px 2px 4px; }
+
+/* ***** de-emphasized text */
+.shade, a.shade:link, a.shade:visited { color: #777777; text-decoration: none; }
+a.shade:active, a.shade:hover { color: #FF4400; text-decoration: underline; }
+.tcat .shade, .thead .shade, .tfoot .shade { color: #DDDDDD; }
+
+/* ***** define margin and font-size for elements inside panels ***** */
+.fieldset { margin-bottom: 6px; }
+.fieldset, .fieldset td, .fieldset p, .fieldset li { font-size: 11px; }

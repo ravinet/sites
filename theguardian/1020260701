@@ -1,0 +1,22 @@
+PHTTP74.217.253.61"ß
+GET /r1/ruum HTTP/1.1
+Host: rp.gwallet.com
+Connection: keep-alive
+Accept: image/webp,*/*;q=0.8
+vUser-Agent: Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/31.0.1650.63 Safari/537.36
+uReferer: http://tap2-cdn.rubiconproject.com/partner/scripts/rubicon/emily.html?rtb_ext=1&pc=7845/12566&geo=na&co=us
+$Accept-Encoding: gzip,deflate,sdch
+!Accept-Language: en-US,en;q=0.8
+
+*è
+HTTP/1.1 302 Found
+Content-Length: 0
+Server: radiumone/1.2
+ICache-control: private, no-cache, no-cache=Set-Cookie, proxy-revalidate
+(Content-type: application/octet-stream
+(Expires: Tue, 29 Oct 2002 19:50:44 GMT
+nLocation: http://pixel.rubiconproject.com/tap.php?v=7935&nid=2271&expires=30&put=S51MYcji-9li8VngWqgUU0rs3Pc
+Pragma: no-cache
+)P3p: CP="PSAo PSDo OUR BUS DSP NON COR"
+wSet-cookie: ra1_uid=5072271479259180544; Expires=Wed, 08-Apr-2015 22:28:08 GMT; Path=/; Domain=gwallet.com; Version=1
+

@@ -1,0 +1,37 @@
+PHTTP68.71.220.73"ê
+)GET /globalregsession/session? HTTP/1.1
+Host: globalregsession.go.com
+Connection: keep-alive
+vUser-Agent: Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/31.0.1650.63 Safari/537.36
+Accept: */*
+Referer: http://go.com/
+$Accept-Encoding: gzip,deflate,sdch
+!Accept-Language: en-US,en;q=0.8
+∏Cookie: __gads=ID=e28cd0b119d8ac8d:T=1396993855:S=ALNI_Mb_29g3tRcPMuZUq351rsLFVPAGpg; __utma=133755288.549501925.1396993856.1396993856.1396993856.1; __utmb=133755288.1.10.1396993856; __utmc=133755288; __utmz=133755288.1396993856.1.1.utmcsr=(direct)|utmccn=(direct)|utmcmd=(none); ctoArPageName=""; tq_rsi_segs=
+
+*Ñ
+HTTP/1.1 200 OK
+Server: Apache-Coyote/1.1
+Cache-control: no-cache
+Cache-control: no-store
+Pragma: no-cache
+Expires: 0
+ Content-Type: application/json
+Content-Length: 279
+%Date: Tue, 08 Apr 2014 21:50:55 GMT
+ô
+
+{"affiliatename":null,
+"age":null,
+"birthyear":null,
+"firstname":null,
+"gender":null,
+"lastlogindate":null,
+"loginaffiliatename":null,
+"loginstatus":"Anonymous Guest",
+"postalcode":null,
+"regioncode":null,
+"residentcountrycode":null,
+"swid":null,
+"tokens":null,
+"username":null}

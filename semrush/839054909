@@ -1,0 +1,57 @@
+PHTTP54.230.54.228"è
+TGET /m/build/scripts/autocomplete.js?rev=6c408e847f12b948027b42f1805d3ac7 HTTP/1.1
+%Host: d2lrxcz2ihvajy.cloudfront.net
+Connection: keep-alive
+Accept: */*
+vUser-Agent: Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/31.0.1650.63 Safari/537.36
+"Referer: http://www.semrush.com/
+$Accept-Encoding: gzip,deflate,sdch
+!Accept-Language: en-US,en;q=0.8
+
+*ˇM
+HTTP/1.1 200 OK
+&Content-Type: application/javascript
+Content-Length: 9443
+Connection: keep-alive
+Server: nginx/1.5.12
+%Date: Mon, 07 Apr 2014 08:41:07 GMT
+.Last-Modified: Mon, 07 Apr 2014 08:25:42 GMT
+ETag: "53426106-24e3"
+(Expires: Tue, 08 Apr 2014 08:41:07 GMT
+Cache-Control: max-age=86400
+Accept-Ranges: bytes
+Age: 48112
+X-Cache: Hit from cloudfront
+GVia: 1.1 2bb8df1aa8373d89e0b628c456af2221.cloudfront.net (CloudFront)
+GX-Amz-Cf-Id: QH-2YU7W3JTUy-M422F2hGVh3CduzPPDcG4ZkaZLlQ3428HfkQnrmg==
+ÂI
+/*
+ * jQuery Autocomplete plugin 1.1
+ *
+ * Copyright (c) 2009 J√∂rn Zaefferer
+ *
+ * Dual licensed under the MIT and GPL licenses:
+ *   http://www.opensource.org/licenses/mit-license.php
+ *   http://www.gnu.org/licenses/gpl.html
+ *
+ * Revision: $Id: jquery.autocomplete.js 15 2009-08-22 10:30:27Z joern.zaefferer $
+ */
+
+(function(d){d.extend(d.fn,{autocompleteCustom:function(a,c){var q="string"==typeof a;c=d.extend({},d.Autocompleter.defaults,{url:q?a:null,data:q?null:a,delay:q?d.Autocompleter.defaults.delay:10,max:c&&!c.scroll?10:150},c);c.highlight=c.highlight||function(a){return a};c.formatMatch=c.formatMatch||c.formatItem;return this.each(function(){new d.Autocompleter(this,c)})},result:function(a){return this.bind("result",a)},search:function(a){return this.trigger("search",[a])},flushCache:function(){return this.trigger("flushCache")},
+setOptions:function(a){return this.trigger("setOptions",[a])},unautocomplete:function(){return this.trigger("unautocomplete")}});d.fn.autocomplete=d.fn.autocompleteCustom;d.Autocompleter=function(a,c){function q(){var v=p.selected();if(!v)return!1;var b=v.result;u=b;if(c.multiple){var m=s(k.val());if(1<m.length){var g=c.multipleSeparator.length,f=d(a).selection().start,e,h=0;d.each(m,function(a,c){h+=c.length;if(f<=h)return e=a,!1;h+=g});m[e]=b;b=m.join(c.multipleSeparator)}b+=c.multipleSeparator}k.val(b);
+n();k.trigger("result",[v.data,v.value]);return!0}function l(a,d){if(m==b.DEL)p.hide();else{var e=k.val();if(d||e!=u)u=e,e=h(e),e.length>=c.minChars?(k.addClass(c.loadingClass),c.matchCase||(e=e.toLowerCase()),g(e,f,n)):(k.removeClass(c.loadingClass),p.hide())}}function s(a){return a?c.multiple?d.map(a.split(c.multipleSeparator),function(c){return d.trim(a).length?d.trim(c):null}):[d.trim(a)]:[""]}function h(b){if(!c.multiple)return b;var m=s(b);if(1==m.length)return m[0];m=d(a).selection().start;
+m=m==b.length?s(b):s(b.replace(b.substring(m),""));return m[m.length-1]}function n(){p.visible();p.hide();clearTimeout(t);k.removeClass(c.loadingClass);c.mustMatch&&k.search(function(a){a||(c.multiple?(a=s(k.val()).slice(0,-1),k.val(a.join(c.multipleSeparator)+(a.length?c.multipleSeparator:""))):(k.val(""),k.trigger("result",null)))})}function f(g,f){if(f&&f.length&&e){k.removeClass(c.loadingClass);p.display(f,g);var t=f[0].value;c.autoFill&&(h(k.val()).toLowerCase()==g.toLowerCase()&&m!=b.BACKSPACE)&&
+(k.val(k.val()+t.substring(h(u).length)),d(a).selection(u.length,u.length+t.length));p.show()}else n()}function g(b,m,g){c.matchCase||(b=b.toLowerCase());var f=r.load(b);if(f&&f.length)m(b,f);else if("string"==typeof c.url&&0<c.url.length){var e={timestamp:+new Date};d.each(c.extraParams,function(a,b){e[a]="function"==typeof b?b():b});d.ajax({mode:"abort",port:"autocomplete"+a.name,dataType:c.dataType,url:c.url,data:d.extend({q:h(b),limit:c.max},e),success:function(a){var f;if(!(f=c.parse&&c.parse(a))){f=
+[];a=a.split("\n");for(var g=0;g<a.length;g++){var e=d.trim(a[g]);e&&(e=e.split("|"),f[f.length]={data:e,value:e[0],result:c.formatResult&&c.formatResult(e,e[0])||e[0]})}}r.add(b,f);m(b,f)}})}else p.emptyList(),g(b)}var b={UP:38,DOWN:40,DEL:46,TAB:9,RETURN:13,ESC:27,COMMA:188,PAGEUP:33,PAGEDOWN:34,BACKSPACE:8},k=d(a).attr("autocomplete","off").addClass(c.inputClass),t,u="",r=d.Autocompleter.Cache(c),e=0,m,x={mouseDownOnSelect:!1},p=d.Autocompleter.Select(c,a,q,x),w;d.browser.opera&&d(a.form).bind("submit.autocomplete",
+function(){if(w)return w=!1});k.bind((d.browser.opera?"keypress":"keydown")+".autocomplete",function(a){e=1;m=a.keyCode;switch(a.keyCode){case b.UP:a.preventDefault();p.visible()?p.prev():l(0,!0);break;case b.DOWN:a.preventDefault();p.visible()?p.next():l(0,!0);break;case b.PAGEUP:a.preventDefault();p.visible()?p.pageUp():l(0,!0);break;case b.PAGEDOWN:a.preventDefault();p.visible()?p.pageDown():l(0,!0);break;case c.multiple&&","==d.trim(c.multipleSeparator)&&b.COMMA:case b.TAB:case b.RETURN:if(q())return a.preventDefault(),
+w=!0,!1;break;case b.ESC:p.hide();break;default:clearTimeout(t),t=setTimeout(l,c.delay)}}).focus(function(){e++}).blur(function(){e=0;x.mouseDownOnSelect||(clearTimeout(t),t=setTimeout(n,200))}).click(function(){1<e++&&!p.visible()&&l(0,!0)}).bind("search",function(){function a(c,m){var d;if(m&&m.length)for(var f=0;f<m.length;f++)if(m[f].result.toLowerCase()==c.toLowerCase()){d=m[f];break}"function"==typeof b?b(d):k.trigger("result",d&&[d.data,d.value])}var b=1<arguments.length?arguments[1]:null;
+d.each(s(k.val()),function(b,c){g(c,a,a)})}).bind("flushCache",function(){r.flush()}).bind("setOptions",function(a,b){d.extend(c,b);"data"in b&&r.populate()}).bind("unautocomplete",function(){p.unbind();k.unbind();d(a.form).unbind(".autocomplete")})};d.Autocompleter.defaults={inputClass:"ac_input",resultsClass:"ac_results",loadingClass:"ac_loading",minChars:1,delay:400,matchCase:!1,matchSubset:!0,matchContains:!1,cacheLength:10,max:100,mustMatch:!1,extraParams:{},selectFirst:!0,formatItem:function(a){return a[0]},
+formatMatch:null,autoFill:!1,width:0,multiple:!1,multipleSeparator:", ",highlight:function(a,c){return a.replace(RegExp("(?![^&;]+;)(?!<[^<>]*)("+c.replace(/([\^\$\(\)\[\]\{\}\*\.\+\?\|\\])/gi,"\\$1")+")(?![^<>]*>)(?![^&;]+;)","gi"),"<strong>$1</strong>")},scroll:!0,scrollHeight:180};d.Autocompleter.Cache=function(a){function c(c,d){a.matchCase||(c=c.toLowerCase());var b=c.indexOf(d);"word"==a.matchContains&&(b=c.toLowerCase().search("\\b"+d.toLowerCase()));return-1==b?!1:0==b||a.matchContains}function q(c,
+d){n>a.cacheLength&&s();h[c]||n++;h[c]=d}function l(){if(!a.data)return!1;var c={},g=0;a.url||(a.cacheLength=1);c[""]=[];for(var b=0,k=a.data.length;b<k;b++){var h=a.data[b],h="string"==typeof h?[h]:h,n=a.formatMatch(h,b+1,a.data.length);if(!1!==n){var l=n.charAt(0).toLowerCase();c[l]||(c[l]=[]);h={value:n,data:h,result:a.formatResult&&a.formatResult(h)||n};c[l].push(h);g++<a.max&&c[""].push(h)}}d.each(c,function(c,b){a.cacheLength++;q(c,b)})}function s(){h={};n=0}var h={},n=0;setTimeout(l,25);return{flush:s,
+add:q,populate:l,load:function(f){if(!a.cacheLength||!n)return null;if(!a.url&&a.matchContains){var g=[],b;for(b in h)if(0<b.length){var k=h[b];d.each(k,function(a,b){c(b.value,f)&&g.push(b)})}return g}if(h[f])return h[f];if(a.matchSubset)for(b=f.length-1;b>=a.minChars;b--)if(k=h[f.substr(0,b)])return g=[],d.each(k,function(a,b){c(b.value,f)&&(g[g.length]=b)}),g;return null}}};d.Autocompleter.Select=function(a,c,q,l){function s(){u&&(r=d("<div/>").hide().addClass(a.resultsClass).css("position","absolute").appendTo(document.body),
+e=d("<ul/>").appendTo(r).mouseover(function(a){h(a).nodeName&&"LI"==h(a).nodeName.toUpperCase()&&(b=d("li",e).removeClass(f.ACTIVE).index(h(a)),d(h(a)).addClass(f.ACTIVE))}).click(function(a){d(h(a)).addClass(f.ACTIVE);q();c.focus();return!1}).mousedown(function(){l.mouseDownOnSelect=!0}).mouseup(function(){l.mouseDownOnSelect=!1}),0<a.width&&r.css("width",a.width),u=!1)}function h(a){for(a=a.target;a&&"LI"!=a.tagName;)a=a.parentNode;return a?a:[]}function n(c){g.slice(b,b+1).removeClass(f.ACTIVE);
+b+=c;0>b?b=g.size()-1:b>=g.size()&&(b=0);c=g.slice(b,b+1).addClass(f.ACTIVE);if(a.scroll){var d=0;g.slice(0,b).each(function(){d+=this.offsetHeight});d+c[0].offsetHeight-e.scrollTop()>e[0].clientHeight?e.scrollTop(d+c[0].offsetHeight-e.innerHeight()):d<e.scrollTop()&&e.scrollTop(d)}}var f={ACTIVE:"ac_over"},g,b=-1,k,t="",u=!0,r,e;return{display:function(c,h){s();k=c;t=h;e.empty();for(var n=a.max&&a.max<k.length?a.max:k.length,l=0;l<n;l++)if(k[l]){var q=a.formatItem(k[l].data,l+1,n,k[l].value,t);!1!==
+q&&(q=d("<li/>").html(a.highlight(q,t)).addClass(0==l%2?"ac_even":"ac_odd").appendTo(e)[0],d.data(q,"ac_data",k[l]))}g=e.find("li");a.selectFirst&&(g.slice(0,1).addClass(f.ACTIVE),b=0);d.fn.bgiframe&&e.bgiframe()},next:function(){n(1)},prev:function(){n(-1)},pageUp:function(){0!=b&&0>b-8?n(-b):n(-8)},pageDown:function(){b!=g.size()-1&&b+8>g.size()?n(g.size()-1-b):n(8)},hide:function(){r&&r.hide();g&&g.removeClass(f.ACTIVE);b=-1},visible:function(){return r&&r.is(":visible")},current:function(){return this.visible()&&
+(g.filter("."+f.ACTIVE)[0]||a.selectFirst&&g[0])},show:function(){var b=d(c).offset();r.css({width:"string"==typeof a.width||0<a.width?a.width:d(c).width(),top:b.top+c.offsetHeight,left:b.left}).show();if(a.scroll&&(e.scrollTop(0),e.css({maxHeight:a.scrollHeight,overflow:"auto"}),d.browser.msie&&"undefined"===typeof document.body.style.maxHeight)){var f=0;g.each(function(){f+=this.offsetHeight});b=f>a.scrollHeight;e.css("height",b?a.scrollHeight:f);b||g.width(e.width()-parseInt(g.css("padding-left"))-
+parseInt(g.css("padding-right")))}},selected:function(){var a=g&&g.filter("."+f.ACTIVE).removeClass(f.ACTIVE);return a&&a.length&&d.data(a[0],"ac_data")},emptyList:function(){e&&e.empty()},unbind:function(){r&&r.remove()}}};d.fn.selection=function(a,c){if(void 0!==a)return this.each(function(){if(this.createTextRange){var d=this.createTextRange();void 0===c||a==c?d.move("character",a):(d.collapse(!0),d.moveStart("character",a),d.moveEnd("character",c));d.select()}else this.setSelectionRange?this.setSelectionRange(a,
+c):this.selectionStart&&(this.selectionStart=a,this.selectionEnd=c)});var d=this[0];if(d.createTextRange){var l=document.selection.createRange(),s=d.value,h=l.text.length;l.text="<->";l=d.value.indexOf("<->");d.value=s;this.selection(l,l+h);return{start:l,end:l+h}}if(void 0!==d.selectionStart)return{start:d.selectionStart,end:d.selectionEnd}}})(jQuery);

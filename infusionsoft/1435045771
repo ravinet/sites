@@ -1,0 +1,24 @@
+PHTTP69.59.169.185"ª
+dGET /trackalyze.asp?r=None&p=http%3A//www.infusionsoft.com/&i=12151&llnocookies=undefined HTTP/1.1
+Host: t4.trackalyzer.com
+Connection: keep-alive
+Accept: image/webp,*/*;q=0.8
+vUser-Agent: Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/31.0.1650.63 Safari/537.36
+'Referer: http://www.infusionsoft.com/
+$Accept-Encoding: gzip,deflate,sdch
+!Accept-Language: en-US,en;q=0.8
+
+*«
+HTTP/1.1 302 Object moved
+%Date: Tue, 08 Apr 2014 22:01:26 GMT
+Server: Microsoft-IIS/6.0
+TP3P: policyref="http://trackalyzer.com/w3c/p3p.xml", CP="NON DSP COR CURa OUR NOR"
+X-Powered-By: ASP.NET
+Location: /dot.gif
+Content-Length: 129
+Content-Type: text/html
+qSet-Cookie: trackalyzer=121512439476800; expires=Wed, 08-Apr-2015 22:01:26 GMT; domain=.trackalyzer.com; path=/
+Cache-control: private
+ƒ
+<head><title>Object moved</title></head>
+<body><h1>Object Moved</h1>This object may be found <a HREF="/dot.gif">here</a>.</body>

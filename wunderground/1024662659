@@ -1,0 +1,18 @@
+PHTTP74.125.193.95"®
+æGET /maps/gen_204?ev=api_viewport&cad=host:www.wunderground.com,v:15,vr:1,r:1,mt:m,c:42.363156%2C-71.102798,sp:0.85233x2.29614,size:418x210,relsize:0.22,token:83m0bybuxm,client:gme-weatherunderground,src:apiv3,ts:rrp5tw HTTP/1.1
+Host: maps.googleapis.com
+Connection: keep-alive
+Accept: image/webp,*/*;q=0.8
+vUser-Agent: Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/31.0.1650.63 Safari/537.36
+'Referer: http://www.wunderground.com/
+$Accept-Encoding: gzip,deflate,sdch
+!Accept-Language: en-US,en;q=0.8
+
+*¶
+HTTP/1.1 204 No Content
+Content-Type: image/gif
+!X-Content-Type-Options: nosniff
+%Date: Tue, 08 Apr 2014 22:36:28 GMT
+Server: GFE/2.0
+Alternate-Protocol: 80:quic
+

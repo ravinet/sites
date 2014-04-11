@@ -1,0 +1,23 @@
+PHTTP54.209.108.105"‘
+,GET /ul_cb/adj?s=11001&sz=300x250 HTTP/1.1
+Host: t.brand-server.com
+Connection: keep-alive
+Accept: */*
+vUser-Agent: Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/31.0.1650.63 Safari/537.36
+!Referer: http://www.boston.com/
+$Accept-Encoding: gzip,deflate,sdch
+!Accept-Language: en-US,en;q=0.8
+4Cookie: tuuid=5fd9f7ab-70cc-443c-bd23-f1052c09c900
+
+*â
+HTTP/1.1 200 OK
+gSet-Cookie: tuuid=5fd9f7ab-70cc-443c-bd23-f1052c09c900; path=/; expires=Sun, 10-Apr-2016 19:13:41 GMT
+PP3P: CP="NOI DSP COR NID CURa ADMa DEVa PSAa PSDa OUR BUS COM INT OTC PUR STA"
+.Content-Type: text/javascript; charset=UTF-8
+4Cache-Control: no-cache, no-store, must-revalidate
+(Expires: Mon, 26 Jul 1997 05:00:00 GMT
+Pragma: no-cache
+Content-Length: 2988
+%Date: Fri, 11 Apr 2014 19:13:41 GMT
+®
+document.writeln("<div id=\'div_usce\' style=\'width:0px;height:0px;visibility=hidden\'><\/div><script class=\"kxint\" data-namespace=\"centro\" type=\"text\/javascript\">\n  window.Krux||((Krux=function(){Krux.q.push(arguments);}).q=[]);\n  (function(){\n    \n    \/\/ Namespace centro\n    var Krux = this.Krux.centro = this.Krux.centro || {};\n    \n    function retrieve(n){\n      var m, k=\'kxcentro_\'+n;\n      if (window.localStorage) {\n          return window.localStorage[k] || \"\";\n      } else if (navigator.cookieEnabled) {\n          m = document.cookie.match(k+\'=([^;]*)\');\n          return (m && unescape(m[1])) || \"\";\n      } else {\n          return \'\';\n      }\n    }\n\n    Krux.user = retrieve(\'user\');\n\n    Krux.segments = retrieve(\'segs\') ? retrieve(\'segs\').split(\',\') : [];\n    \/\/ DFP \/ DART\n    var dfp = [];\n    var user_segs = []\n    for (var i = 0; i < Krux.segments.length; i++ ) {\n      dfp.push(\'ksgmnt=\' + Krux.segments[i]);\n      user_segs.push(Krux.segments[i]);\n    }\n    if (Krux.user) {\n      dfp.push(\'u=\' + Krux.user);\n      var handle_krux_user = document.createElement(\'script\');\n      handle_krux_user.setAttribute(\'type\', \'text\/javascript\');\n      handle_krux_user.setAttribute(\'src\', \'http:\/\/t.brand-server.com\/krux?kuid=\' + Krux.user + \'&s=\' + user_segs.join(\';\'));\n      document.getElementById(\"div_usce\").appendChild(handle_krux_user);\n    }\n    Krux.dartKeyValues = dfp.length ? dfp.join(\';\') + \';\' : \'\';\n\n    \/\/ APT\n    var apt = [];\n    if(Krux.user) {\n      apt.push(\'u:\' + Krux.user);\n    }\n    if(Krux.segments.length) {\n      apt.push(\'ksgmnt:\' + Krux.segments.join(\'|\'));\n    }\n    Krux.aptKeyValues = apt;\n\n  })();\n<\/script><!-- BEGIN Krux Control Tag for \"Boston.com\" --> <!-- Source: \/snippet\/controltag?confid=I3XLSHxy&site=Boston.com&edit=1 --> <script class=\"kxct\" data-id=\"I3XLSHxy\" data-timing=\"async\" data-version=\"1.9\" type=\"text\/javascript\">   window.Krux||((Krux=function(){Krux.q.push(arguments)}).q=[]);   (function(){     var k=document.createElement(\'script\');k.type=\'text\/javascript\';k.async=true;     var m,src=(m=location.href.match(\/\\bkxsrc=([^&]+)\/))&&decodeURIComponent(m[1]);     k.src = \/^https?:\\\/\\\/([^\\\/]+\\.)?krxd\\.net(:\\d{1,5})?\\\/\/i.test(src) ? src : src === \"disable\" ? \"\" :       (location.protocol===\"https:\"?\"https:\":\"http:\")+\"\/\/cdn.krxd.net\/controltag?confid=I3XLSHxy\"   ;     var s=document.getElementsByTagName(\'script\')[0];s.parentNode.insertBefore(k,s);   }()); <\/script> <!-- END Krux Controltag --><script src=\"http:\/\/www.googletagservices.com\/tag\/js\/gpt.js\">\n   googletag.pubads().definePassback(\n      \'\/61381659\/boston.com\/centro\/atf\', [300, 250]).display();\n<\/script>\n\n<img src=\"http:\/\/ib.adnxs.com\/getuid?http:\/\/t.brand-server.com\/match?bidder_id=3&amp;external_user_id=$UID\" alt=\" \" style=\"display:none\"\/>");

@@ -1,0 +1,26 @@
+PHTTP93.184.216.229"ò
+FGET /cmspages/newsmax/feed/GetScript.ashx?ClientID=211&md=1 HTTP/1.1
+Host: cdn.nmcdn.us
+Connection: keep-alive
+Accept: */*
+vUser-Agent: Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/31.0.1650.63 Safari/537.36
+$Referer: http://www.breitbart.com/
+$Accept-Encoding: gzip,deflate,sdch
+!Accept-Language: en-US,en;q=0.8
+
+*Ž
+HTTP/1.1 200 OK
+Accept-Ranges: bytes
+Cache-Control: max-age=600
+.Content-Type: text/javascript; charset=utf-8
+%Date: Fri, 11 Apr 2014 19:12:34 GMT
+'Expires: Fri, 11 Apr 2014 07:16:34 -4
+.Last-Modified: Fri, 11 Apr 2014 19:06:34 GMT
+Server: ECS (mdw/13B7)
+X-AspNet-Version: 4.0.30319
+X-Cache: HIT
+X-Frame-Options: SAMEORIGIN
+X-Powered-By: ASP.NET
+Content-Length: 3319
+ù
+(function(){var k="11550-1";var d="211";var b="8";var e="11550Breitbart";var h="cdn.nmcdn.us";var g="http://"+h+"/cmspages/newsmax/feed/GetWgFeed.ashx?ClientID="+d;if(h.indexOf("nmcdn")>0){g=g+"&amp;md=1"}var i="http://"+h+"/cmspages/newsmax/feed/GetWgImage.ashx?GUID=";j();function f(y){if(!y.error){if(y.responseData.error==""){var s=true;var l;if(jQuery("div[id=nmWidgetContainer][data-client="+y.responseData.feed.clientID+"]").length>0){l=jQuery("div[id=nmWidgetContainer][data-client="+y.responseData.feed.clientID+"]");l.addClass("cid-"+y.responseData.feed.clientID);s=false}else{l=document.getElementById("nmWidgetContainer");l.className="cid-"+y.responseData.feed.clientID}if(l==null){return}try{}catch(p){}var v=document.createElement("div");v.id="NmWgContainer";var w=document.createElement("div");w.id="NmWgHeader";if(y.responseData.feed.logoImage.length>0){var r=document.createElement("img");r.src=y.responseData.feed.logoImage;w.appendChild(r)}else{w.innerHTML=y.responseData.feed.header}v.appendChild(w);var x=document.createElement("ul");x.id="NmWgList";x.style.overflow="auto";var z=false;for(var q=0;q<y.responseData.feed.entries.length;q++){var o=y.responseData.feed.entries[q];var t=document.createElement("li");t.className=o.style;if(o.image!=""){var u=document.createElement("a");u.href=c(o.link.trim());u.target=o.target;t.appendChild(u);var r=document.createElement("img");if(o.imageFile==""){r.src=i+o.image}else{r.src="http://"+h+o.imageFile}u.appendChild(r);z=true}else{z=false}var u=document.createElement("a");u.appendChild(document.createTextNode(o.title.trim()));u.href=c(o.link.trim());u.target=o.target;t.appendChild(u);if(o.description.trim()!=""){var m=document.createElement("p");m.appendChild(document.createTextNode(o.description.trim()));t.appendChild(m)}x.appendChild(t)}if(z){var n=document.createElement("div");n.style.clear="both";x.appendChild(n)}v.appendChild(x);var B=document.createElement("div");B.id="NmWgWhatsThis";v.appendChild(B);var A=document.createElement("a");A.appendChild(document.createTextNode("What's This?"));A.href="http://www.newsmax.com/widget/whatsThis?cid="+y.responseData.feed.clientID;A.target="_blank";B.appendChild(A);if(s){l.appendChild(v)}else{l.html(v)}a()}}}function j(){var l=g;if(jNM==null){jQuery.ajax({url:l,dataType:"jsonp",cache:true,jsonpCallback:"NMjsonpCallback"+d,success:function(n){f(n)},error:function(n){console.log(n.message)}})}else{jNM.ajax({url:l,dataType:"jsonp",cache:true,jsonpCallback:"NMjsonpCallback"+d,success:function(n){f(n)},error:function(n){console.log(n.message)}})}var m=document.createElement("link");m.setAttribute("rel","stylesheet");m.setAttribute("type","text/css");m.setAttribute("href","http://"+h+"/CMSPages/newsmax/feed/GetWgCSS.ashx?ClientID="+d);(document.getElementsByTagName("head")[0]||document.documentElement).appendChild(m)}function c(l){l=l.toString();if(l.indexOf("?")<1){l=l+"?"}else{l=l+"&amp;"}if(l.search("promo_code")==-1){l=l+"promo_code="+k+"&amp;"}l=l+"utm_source="+e+"&amp;utm_medium=nmwidget&amp;utm_campaign=widgetphase1";return l}function a(){if(d!=null){var l=l||{};l.run=l.run||[];ados_setKeywords([e]);ados_addPlacement(6361,33248,"azk1",163);ados_load()}}if(typeof String.prototype.trim!="function"){String.prototype.trim=function(){return this.replace(/^\s+|\s+$/g,"")}}})();

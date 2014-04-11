@@ -1,0 +1,52 @@
+PHTTP
+18.7.20.68"ï
+;GET /ns/scripts/Watermark.js?_v=10.22.10401.1752 HTTP/1.1
+Host: ak-static.legacy.com
+Connection: keep-alive
+Accept: */*
+vUser-Agent: Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/31.0.1650.63 Safari/537.36
+$Referer: http://www.legacy.com/ns/
+$Accept-Encoding: gzip,deflate,sdch
+!Accept-Language: en-US,en;q=0.8
+
+*ë
+HTTP/1.1 200 OK
+(Content-Type: application/x-javascript
+.Last-Modified: Tue, 01 Apr 2014 15:12:14 GMT
+Accept-Ranges: bytes
+ETag: "0db21c3bc4dcf1:0"
+Server: Microsoft-IIS/7.5
+Content-Length: 592
+%Date: Fri, 11 Apr 2014 15:32:26 GMT
+Connection: keep-alive
+Ò
+ï»¿function Watermark_Focus(control, cssClass)
+{
+	if (control && (control.value == get_Watermark(control)))
+	{
+		control.value = "";
+		control.className = cssClass;
+		control.click();
+		control.select();
+	}
+}
+
+function Watermark_Blur(control, cssClass)
+{
+	if (control && (control.value == ""))
+	{
+		var watermark = get_Watermark(control);
+
+		if (watermark != "")
+		{
+			control.className = cssClass;
+			control.value = watermark;
+		}
+	}
+}
+
+function get_Watermark(control)
+{
+	var watermark = control.getAttribute("watermark");
+	return watermark ? watermark : "";
+}

@@ -1,0 +1,42 @@
+PHTTP12.130.81.215"é
+$GET /rms/28348/nodetag.js HTTP/1.1
+Host: content.dl-rms.com
+Connection: keep-alive
+Accept: */*
+vUser-Agent: Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/31.0.1650.63 Safari/537.36
+7Referer: http://travelconfidently.com/ad/127/300.html
+$Accept-Encoding: gzip,deflate,sdch
+!Accept-Language: en-US,en;q=0.8
+
+*ó
+HTTP/1.1 200 OK
+.Last-Modified: Thu, 07 Oct 2010 19:24:19 GMT
+ETag: "196-4920bd72a1ec0"
+Accept-Ranges: bytes
+Vary: Accept-Encoding
+X-Host: a113 D=2517
+Keep-Alive: timeout=6, max=2
+&Content-Type: application/javascript
+Connection: Keep-Alive
+%Date: Tue, 08 Apr 2014 22:15:28 GMT
+Age: 160    
+Content-Length: 406
+˜
+(function(){ 
+  var d=document,w=window;
+  function r(){
+	var z=d.createElement('SCRIPT');
+	z.src='http://content.dl-rms.com/dt/s/28348/s.js';
+	d.getElementsByTagName('head')[0].appendChild(z);
+  }
+
+ if(Math.random()<1) {
+  if (d.readyState=="complete"){
+	r();
+  } else if (w.addEventListener){ 
+	w.addEventListener("load", r, false);
+  } else if (w.attachEvent){ 
+	w.attachEvent("onload", r);
+  }
+ }
+})();

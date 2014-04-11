@@ -1,0 +1,19 @@
+PHTTP74.217.78.184"‹
+"GET /bluekai_user_sync? HTTP/1.1
+Host: sync.adap.tv
+Connection: keep-alive
+Accept: image/webp,*/*;q=0.8
+vUser-Agent: Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/31.0.1650.63 Safari/537.36
+PReferer: http://tags.bluekai.com/site/3428?ret=html&limit=10&phint=source%3DCI
+$Accept-Encoding: gzip,deflate,sdch
+!Accept-Language: en-US,en;q=0.8
+
+*á
+HTTP/1.1 302 Found
+Server: adaptv/1.0
+Content-Type: text/plain
+Connection: Keep-Alive
+™Set-Cookie: adaptv_unique_user_cookie="3291318244182606746__TIME__2014-04-08+14%3A35%3A18";Path=/;Domain=.adap.tv;Expires=Thu, 07-Apr-2016 21:35:18 GMT
+HLocation: http://tags.bluekai.com/site/14143?id=NAX3291318244182606746
+Content-Length: 0
+

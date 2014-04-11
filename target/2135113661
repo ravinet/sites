@@ -1,0 +1,24 @@
+PHTTP54.83.36.167"‚
+RGET /target/prod/code/d9e4acfeec2e12f95ab7dd401dc3fa28.js?ruleId=167068 HTTP/1.1
+Host: nexus.ensighten.com
+Connection: keep-alive
+Accept: */*
+vUser-Agent: Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/31.0.1650.63 Safari/537.36
+!Referer: http://www.target.com/
+$Accept-Encoding: gzip,deflate,sdch
+!Accept-Language: en-US,en;q=0.8
+
+*á
+HTTP/1.1 200 OK
+Accept-Ranges: bytes
+"Cache-Control: max-age=315360000
+Cache-Control: public
+7Content-Type: application/x-javascript; charset=utf-8
+%Date: Fri, 11 Apr 2014 15:24:17 GMT
+(Expires: Thu, 31 Dec 2037 23:55:55 GMT
+.Last-Modified: Fri, 24 Jan 2014 06:59:27 GMT
+Server: nginx
+Content-Length: 376
+Connection: keep-alive
+ú
+Bootstrapper.bindImmediate(function(){var Bootstrapper=window["Bootstrapper"];var ensightenOptions=Bootstrapper.ensightenOptions;Bootstrapper.trackerFramework.prePopulate.add(function(){var dl_obj=Bootstrapper.dataManager.getData();keys=0;for(key in Bootstrapper.s_copy)keys++;target=keys>0?Bootstrapper.s_copy:window.s;window.s_ens.prop49="D\x3dUser-Agent"})},167068,144482);

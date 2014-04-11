@@ -1,0 +1,516 @@
+PHTTP23.74.28.10"Ý
+TGET /templates/publishersclearinghouse4/js/pchads.js?v=3.1.32.1.454-18308 HTTP/1.1
+Host: www.pch.com
+Connection: keep-alive
+Accept: */*
+vUser-Agent: Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/31.0.1650.63 Safari/537.36
+Referer: http://www.pch.com/
+$Accept-Encoding: gzip,deflate,sdch
+!Accept-Language: en-US,en;q=0.8
+bCookie: deb088d138aa52ddbeb48990e3e58a5e=k12m2f9f5ent563l9fgbgvu270; pdd=D; pci=n3qg5f4gGbPBKvNH
+
+*Åz
+HTTP/1.1 200 OK
+Server: Apache
+.Last-Modified: Fri, 21 Mar 2014 18:47:49 GMT
+$ETag: "1a1ae5c-3be9-4f52252853f40"
+Accept-Ranges: bytes
+Content-Length: 15337
+GP3P: CP="CAO DSP COR CUR ADM DEV TAI PSA PSD IVA IVD CON OUR LEG UNI"
+Content-Type: text/javascript
+%Date: Tue, 08 Apr 2014 22:08:04 GMT
+Connection: keep-alive
+ëw
+var PCHMINIBOOTSTRAP = PCHMINIBOOTSTRAP || {};
+if (typeof PCHMINIBOOTSTRAP.contentBaseURL === "undefined") PCHMINIBOOTSTRAP.contentBaseURL = "";
+
+var PCHAd = PCHAd || {};
+PCHAd.maxAdDuration = 70 * 1000;
+var alfyad_options = alfyad_options || {};
+var sweepstakeURL='';
+
+var PCHAd = (function(PCHAd){
+	var adToShow = typeOfGame = url = typeOfAd = nameOfGame = "";
+	var adMap = {
+		"adquireAd":{toShow:"nonvideosurveyAd",parent:".nonvideosurveyad",target:"body",isShown:"adquireShown"},
+		"tiburonAd":{toShow:"nonvideosurveyAd",parent:".nonvideosurveyad",target:"body",isShown:"tiburonShown"}
+	};
+	PCHAd.showAd = function(adType,redirectURL,gameType,gameName){
+	url = redirectURL.trim();
+	typeOfGame = gameType.trim();
+	typeOfAd = adType.trim();
+	if(adMap[typeOfAd]){
+		adMap.subtype = typeOfAd;
+		typeOfAd = adMap[typeOfAd].toShow;
+	}
+	nameOfGame = typeof(gameName) !== "undefined"?gameName:"";
+	window.clearTimeout(PCHAd.video_ad_timeout);
+	adToShow = defaultAdToShow = adObject[typeOfGame][PCHAd.defaultAd];//eval("adObject"+"."+typeOfGame+"."+PCHAd.defaultAd);
+	if(typeOfAd == "" || typeof(typeOfAd) == "undefined"){
+		if(url != ""){
+			window.setTimeout(function(){window.location.href = url},200);
+			return false;
+		}
+		else{
+			defaultAdToShow.noAd();
+			return false;
+		}	
+	}
+
+	try {
+    	adToShow = adObject[typeOfGame][typeOfAd];//eval("adObject"+"."+typeOfGame+"."+typeOfAd);
+	} catch (e) {
+    	if (e instanceof ReferenceError) {
+        	defaultAdToShow.showAd();
+        	return false;
+    	}
+	}
+	adToShow.showAd();
+	PCHGA.trackVirtualPageView(document.title,nameOfGame+'/'+adType.trim());
+	}
+
+	PCHAd.unloadAd = function(){
+		adToShow.adFinished();
+	}
+	PCHAd.noAd = function(){
+		adToShow.noAd();
+	}
+	PCHAd.adDuration = function(adLen){
+		adToShow.adDuration(adLen);
+	}
+
+	PCHAd.resetToDefault = function(){
+		adObject.resetToDefaultAd();
+	}
+
+	var createiframe = function(parentSel,targetSel,adType){
+        var newDate = new Date().getTime();
+		dynaF = PCH.createDynaFrame( {
+					parent: $(parentSel),
+					targetSelector: targetSel,//"PD_OuterContainer",
+					url: window.location.protocol+"//"+window.location.host+"/iframe-ad/?adType="+adType+"&gameName="+nameOfGame + "&v=" + newDate,
+					poll: true,
+					callback: function( arg ) {
+						if(arg.close == true){
+							dynaF.close();
+
+						}
+					}
+				} );
+		$(dynaF.iframe).addClass(adType);
+	}
+
+	var markAsShown = function(shownFlag){
+							adObject[shownFlag] = true;
+							$.ajax({
+						url: PCHMINIBOOTSTRAP.contentBaseURL+"index.php?option=com_pchcom_content&task=advertisement.setUserAdProperty&adType="+typeOfAd+"&pchToken="+PCH.jToken+"",
+				    	dataType: "json",
+						success:function(dataObject){
+							
+						},
+						error: function(response, status, errorThrown) {
+							//Dont show alert now as this error has been loging 	    
+						}
+					});
+							
+	}
+	
+	 PCHAd.sweepsoniwcleanup = function(divToShow){
+	 	/*if(typeOfAd == "videoAd"){
+	 			divToShow = "#iw_outer_ad_holder";
+	 		}
+	 		else if(typeOfAd == "gcsAd"){
+	 			divToShow = ".gcs_wrapper";
+	 		}*/
+	 		adObject.instantwin.preAdCleanup(divToShow);
+			alfy_AdReload();
+	 }
+	 PCHAd.sweepsonlottocleanup = function(divToShow){	
+	 		adObject.lotto.preAdCleanup(divToShow);
+			alfy_AdReload();
+	 }
+	 PCHAd.sweepsdefaultcleanup = function(divToShow){
+		 	$(".main-c").slideUp("fast", function(){								
+			//Checks for Flash Player Detection
+			if(swfobject.getFlashPlayerVersion().major === 0){
+				$("#sweep_NoFlash").show();
+				return false;
+			} 									
+			// JKIM NO NEED.... 
+			//WRONG. PROBABLY SHOULDN'T TOUCH OTHER PEOPLES CODE IF YOU DONT KNOW WHAT IT DOES.
+			$(".sweeps_rightcontent_holder").find(".social-box").length < 1?$("#sidebar .custom .social-box").parent().clone().appendTo(".sweeps_rightcontent_holder"):0;
+			$(".sweeps_rightcontent_holder").find(".tokenContainer").length < 1?$("#sidebar .tokenContainer").clone().appendTo(".sweeps_rightcontent_holder"):0;
+
+			//inClickNum represents the metagame number/HP module click (as needed?)
+			//hide the MAIN module and checklist/"fridge" to allow for videoad+companion						
+			$(".whatsnewpopup,.pchad,.bannerholder").hide();
+			$(divToShow+",#PCHAdWrap").show();
+			alfy_AdReload();
+		});	
+	 }
+
+
+
+	
+
+		var adObject = {
+			videoShown : false,
+			ssShown : false,
+			gcsShown : false,
+			tiburonShown:false,
+			adquireShown:false,
+			mbShown:false,
+			resetToDefaultAd : function(){
+				adToShow = defaultAdToShow;
+				typeOfAd = PCHAd.defaultAd;
+				defaultAdToShow.showAd();
+			},
+			instantwin : {
+				videoAd: {
+					showAd : function(){
+						if(adObject.videoShown){
+							defaultAdToShow.showAd();
+							return false;
+						}
+						window.clearTimeout(PCHAd.video_ad_timeout);
+						// turn ads off for debugging
+						PCHAd.video_ad_timeout=window.setTimeout("alfyad_AdCompleted()",PCHAd.timeoutDuration);	
+						adObject.instantwin.preAdCleanup('#iw_outer_ad_holder');
+						alfy_AdReload();											
+						return false;
+					},
+					adFinished : function(){						
+						window.clearTimeout(PCHAd.video_ad_timeout);
+						if (!PCHGames.flashLoaded){
+								adObject.instantwin.postAdCleanup('#iw_outer_ad_holder');								
+								PCHGames.gameLoad();
+							PCHGames.flashLoaded = true;
+						}
+						return false;
+					},
+					noAd: function(){
+						window.clearTimeout(PCHAd.video_ad_timeout);
+							adObject.instantwin.postAdCleanup('#iw_outer_ad_holder');	
+							PCHGames.gameLoad();
+						return false;
+					},
+					adDuration:function(adDuration){						
+						window.clearTimeout(PCHAd.video_ad_timeout);
+						adDuration = (adDuration + 5) * 1000;
+						if (adDuration > PCHAd.maxAdDuration){
+							// Ad cannot be longer than the timeout
+							adDuration = PCHAd.maxAdDuration;
+						}
+						PCHAd.video_ad_timeout=window.setTimeout("alfyad_AdCompleted()",adDuration);
+						return false;
+					}
+				},
+				ssAd: {
+					showAd : function(){						
+						if(adObject.ssShown || typeof(SponsorSelectAdStart) != "function"){
+							adObject.resetToDefaultAd();
+							return false;
+						}
+						adObject.instantwin.postAdCleanup();
+						SponsorSelectAdStart(markAsShown("ssShown"));
+						PCHGames.gameLoad();
+						return false;
+					},
+					adFinished : function(){
+						return false;
+					},
+					noAd: function(){}
+				},
+				mediabrixAd: {
+					showAd : function(){						
+						if(adObject.mbShown){
+							adObject.resetToDefaultAd();
+							return false;
+						}
+						$("body").append('<div class="fulloverlay"></div>');$(".fulloverlay").height($("body").height());
+						adObject.instantwin.preAdCleanup();
+						createiframe(".nonvideosurveyad","body",typeOfAd);
+						return false;
+					},
+					adFinished : function(){
+						adObject.instantwin.postAdCleanup();
+						PCHGames.gameLoad();
+						return false;
+					},
+					noAd: function(){}
+				},
+				gcsAd: {
+					showAd : function(){
+						if(adObject.gcsShown || $(".p402_premium .t402-inline-block").length == 0){
+							adObject.resetToDefaultAd();
+							return false;
+						}
+						adObject.instantwin.preAdCleanup('.gcs_wrapper');
+						markAsShown("gcsShown");
+					},
+					adFinished : function(){
+						markAsShown("gcsShown");
+						adObject.instantwin.postAdCleanup('.gcs_wrapper');	
+						PCHGames.gameLoad();
+					},
+					noAd: function(){}					
+				},
+				nonvideosurveyAd: {
+					showAd : function(){
+						if(adObject[adMap[adMap.subtype].isShown]){
+							adObject.resetToDefaultAd();
+							return false;
+						}
+						createiframe(adMap[adMap.subtype].parent,adMap[adMap.subtype].target,adMap.subtype);
+						$(".nonvideosurveyad").addClass("loadingad");				
+						adObject.instantwin.preAdCleanup(".nonvideosurveyad");						
+					},
+					adFinished : function(){
+						adObject.instantwin.postAdCleanup(".nonvideosurveyad");	
+						PCHGames.gameLoad();
+					}					
+				},
+				preAdCleanup:function(adDiv){
+					$(PCHGames.flashContainerId+",.pchad").hide();
+					$(adDiv).show();
+						$("#iw_top_ad .visual iframe,iframe#adverFrame").each(
+							function(){
+								$(this).attr("src",$(this).attr("src"));
+							}
+							);
+						$(".iwrightnongoogle").slideUp(function(){
+							$(PCHGames.iwAdContainers).slideDown();
+						});	
+				},
+				postAdCleanup:function(adDiv){
+								$(adDiv).hide();	
+								$(PCHGames.iwAdContainers).slideUp(function(){
+								$(".iwrightnongoogle").slideDown();
+								});	
+				}
+			},
+			sweepstakes : {
+				videoAd: {
+					showAd : function(){
+						if(adObject.videoShown){
+							adObject.resetToDefaultAd();
+							return false;
+						}
+						alfyad_options['content_url'] = window.location.protocol + "//" + window.location.hostname + url;
+						alfyad_options['alfyzone'] = "Sweeps";
+						window.clearTimeout(PCHAd.video_ad_timeout);
+						var t = PCH.utilflag || 15;	
+						PCHAd.video_ad_timeout=window.setTimeout("alfyad_AdCompleted()",(t*1000));//if after 15 seconds ... goto next page
+					PCHAd.sweepsCleanup(".videoad");//"#PCHVideoAdSubWrap"				
+					return false;
+					},
+					adFinished : function(){
+						window.clearTimeout(PCHAd.video_ad_timeout);
+						document.location=url;	
+						return false;
+					},
+					noAd: function(){
+						window.clearTimeout(PCHAd.video_ad_timeout);
+						adObject.sweepstakes.videoAd.adFinished();
+						return false;
+					},
+					adDuration:function(adDuration){						
+						window.clearTimeout(PCHAd.video_ad_timeout);
+						adDuration = (adDuration + 5) * 1000;
+						if (adDuration > PCHAd.maxAdDuration){
+							// Ad cannot be longer than the timeout
+							adDuration = PCHAd.maxAdDuration;
+						}
+						PCHAd.video_ad_timeout=window.setTimeout("alfyad_AdCompleted()",adDuration);
+						return false;
+					}
+				},
+				ssAd: {
+					showAd : function(){						
+						if(adObject.ssShown || typeof(SponsorSelectAdStart) != "function"){
+							adObject.resetToDefaultAd();
+							return false;
+						}
+						SponsorSelectAdStart(adObject.sweepstakes.ssAd.adFinished);
+						return false;
+					},
+					adFinished : function(){
+						markAsShown("ssShown");
+						window.location = url;
+						return false;
+					}
+				},
+				mediabrixAd: {
+					showAd : function(){									
+						if(adObject.mbShown){
+							adObject.resetToDefaultAd();
+							return false;
+						}
+						$("body").append('<div class="fulloverlay"></div>');$(".fulloverlay").height($("body").height());
+						createiframe(".nonvideosurveyad","body",typeOfAd);
+						return false;
+					},
+					adFinished : function(){
+						window.location = url;
+						return false;
+					}
+				},
+				gcsAd: {
+					showAd : function(){
+						if(adObject.gcsShown || $(".p402_premium .t402-inline-block").length == 0 || $(".gcs_wrapper iframe").height() == 0){
+							adObject.resetToDefaultAd();
+							return false;
+						}
+						PCHAd.sweepsCleanup(".gcs_wrapper");
+						markAsShown("gcsShown");
+					},
+					adFinished : function(){
+						markAsShown("gcsShown");
+						adObject.sweepstakes.videoAd.adFinished();
+					}					
+				},
+				nonvideosurveyAd: {
+					showAd : function(){
+						if(adObject.adquireShown){
+							adObject.resetToDefaultAd();
+							return false;
+						}
+						createiframe(adMap[adMap.subtype].parent,adMap[adMap.subtype].target,adMap.subtype);
+						$(".nonvideosurveyad").addClass("loadingad");				
+						PCHAd.sweepsCleanup(".nonvideosurveyad");						
+					},
+					adFinished : function(){
+						adObject.sweepstakes.videoAd.adFinished();
+					}					
+				}
+			},
+			lotto : {
+				videoAd: {
+					showAd : function(){
+						if(adObject.videoShown){
+							adObject.resetToDefaultAd();
+							return false;
+						}
+						PCHAd.video_ad_timeout = window.setTimeout("alfyad_AdCompleted()", PCHAd.timeoutDuration);
+						adObject.lotto.preAdCleanup('#flashWrap');
+						PCHAd.timeoutclear = false;
+						alfy_AdReload();
+					},
+					adFinished : function(){
+						window.clearTimeout(PCHAd.video_ad_timeout);	
+						adObject.lotto.postAdCleanup();						
+						if(PCHAd.timeoutclear === false){
+							PCHAd.timeoutclear = true;
+								PCH.LOTTO.loadNextGame();							
+						}						
+						return false;
+					},
+					noAd: function(){
+						window.clearTimeout(PCHAd.video_ad_timeout);		
+						adObject.lotto.postAdCleanup();
+						PCH.LOTTO.loadNextGame();
+						return false;
+					},
+					adDuration:function(adDuration){						
+						window.clearTimeout(PCHAd.video_ad_timeout);
+						adDuration = (adDuration + 5) * 1000;
+						if (adDuration > PCHAd.maxAdDuration) {
+							// Ad cannot be longer than the timeout
+							PCHAd.timeoutDuration = PCHAd.maxAdDuration;
+						} else {
+							PCHAd.timeoutDuration = adDuration;
+						}
+						PCHAd.video_ad_timeout = window.setTimeout("alfyad_AdCompleted()",
+								PCHAd.timeoutDuration);
+						return false;
+					}
+				},
+				ssAd: {
+					showAd : function(){						
+						if(adObject.ssShown || typeof(SponsorSelectAdStart) != "function"){
+							adObject.resetToDefaultAd();
+							return false;
+						}
+						SponsorSelectAdStart(markAsShown("ssShown"));
+						$('.flashWrap').show();
+						return false;
+					},
+					adFinished : function(){
+						
+					}
+				},
+				mediabrixAd: {
+					showAd : function(){						
+						if(adObject.mbShown){
+							adObject.resetToDefaultAd();
+							return false;
+						}					
+						$("body").append('<div class="fulloverlay"></div>');$(".fulloverlay").height($("body").height());	
+						createiframe(".nonvideosurveyad","body",typeOfAd);
+						$('.flashWrap').show();
+						return false;
+					},
+					adFinished : function(){
+						
+					}
+				},
+				gcsAd: {
+					showAd : function(){
+						if(adObject.gcsShown || $(".p402_premium .t402-inline-block").length == 0){
+							adObject.resetToDefaultAd();
+							return false;
+						}
+						adObject.lotto.preAdCleanup('.gcs_wrapper');
+						markAsShown("gcsShown");
+					},
+					adFinished : function(){
+						markAsShown("gcsShown");	
+						adObject.lotto.postAdCleanup();
+						PCH.LOTTO.loadNextGame();
+					}					
+				},
+				nonvideosurveyAd: {
+					showAd : function(){
+						if(adObject[adMap[adMap.subtype].isShown]){
+							adObject.resetToDefaultAd();
+							return false;
+						}
+						createiframe(adMap[adMap.subtype].parent,adMap[adMap.subtype].target,adMap.subtype);
+						$(".nonvideosurveyad").addClass("loadingad");				
+						adObject.lotto.preAdCleanup(".nonvideosurveyad");						
+					},
+					adFinished : function(){
+						adObject.lotto.postAdCleanup();
+					}					
+				},
+				preAdCleanup:function(adDiv){					
+					$(".pchad,.flashWrap").hide();
+					$(adDiv+",#sidebar,#lotto_ad_holder").show();
+				},
+				postAdCleanup:function(){
+					$('#sidebar,#lotto_ad_holder').hide();	
+				}
+			}
+		}
+		return PCHAd;
+	}(PCHAd || {}))
+
+function alfyad_AdDuration(duration){
+	PCHAd.adDuration(duration);
+}
+
+function alfyad_AdCompleted(){
+	PCHAd.unloadAd();
+}
+
+function alfyad_NoAd(){
+	PCHAd.noAd();
+}
+/*END SWEEPS AD HANDLING*/
+
+/*IW AD HANDLING*/
+/*END IW AD HANDLING*/
+
+
+
+

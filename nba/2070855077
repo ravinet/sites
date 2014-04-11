@@ -1,0 +1,85 @@
+PHTTP
+18.7.20.68"‚
+IGET /nba/nba/.element/css/3.0/sect/playoffs/2014/searchbar.css HTTP/1.1
+Host: i.cdn.turner.com
+Connection: keep-alive
+Accept: text/css,*/*;q=0.1
+vUser-Agent: Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/31.0.1650.63 Safari/537.36
+Referer: http://www.nba.com/
+$Accept-Encoding: gzip,deflate,sdch
+!Accept-Language: en-US,en;q=0.8
+
+*ñ
+HTTP/1.1 200 OK
+.Last-Modified: Fri, 04 Apr 2014 20:48:43 GMT
+Server: Apache
+Accept-Ranges: bytes
+Content-Length: 2755
+Content-Type: text/css
+Cache-Control: max-age=1849
+(Expires: Tue, 08 Apr 2014 22:36:14 GMT
+%Date: Tue, 08 Apr 2014 22:05:25 GMT
+Connection: keep-alive
+Å
+/* overwrite preset styles */
+#nbaHeader #nbaSearch #nbaClockBG .nbaClockClick { cursor:default; }
+#nbaHeader #nbaSearch #nbaClockBG #nbaClockClick { cursor:pointer; }
+#nbaHeader #nbaSearch #nbaClock { white-space:nowrap; }
+#nbaHeader #nbaSearch .nbaSkin { background:transparent url('http://i.cdn.turner.com/nba/nba/.element/img/3.0/sect/searchbar/playoffs-2014/bkgd.png') no-repeat top center;height:43px; }
+
+/* left side of searchbar */
+#nbaSearch .nbaSkin .nbaSearchPO14Left DIV,
+#nbaSearch .nbaSkin .nbaSearchPO14Left A {
+	background:transparent url('http://i.cdn.turner.com/nba/nba/.element/img/3.0/sect/searchbar/playoffs-2014/left_playoffs_sprite.png') no-repeat 0px -172px;
+	display:block;
+	float:left;
+	height:43px;
+	margin-left:100px;
+	width:250px;
+}
+#nbaSearch .nbaSkin .nbaSearchPO14Left DIV.nbaSearchPO14LeftPhase0, #nbaSearch .nbaSkin .nbaSearchPO14Left A.nbaSearchPO14LeftPhase0 { background-position:0px 0px; }
+#nbaSearch .nbaSkin .nbaSearchPO14Left DIV.nbaSearchPO14LeftPhase1, #nbaSearch .nbaSkin .nbaSearchPO14Left A.nbaSearchPO14LeftPhase1 { background-position:0px -43px; }
+#nbaSearch .nbaSkin .nbaSearchPO14Left DIV.nbaSearchPO14LeftPhase2, #nbaSearch .nbaSkin .nbaSearchPO14Left A.nbaSearchPO14LeftPhase2 { background-position:0px -86px; }
+#nbaSearch .nbaSkin .nbaSearchPO14Left DIV.nbaSearchPO14LeftPhase3, #nbaSearch .nbaSkin .nbaSearchPO14Left A.nbaSearchPO14LeftPhase3 { background-position:0px -129px; }
+
+/* right side of searchbar */
+#body_Right_Tnt #nbaSearchPO14Right #nbaSearchPOPrestart,
+#body_Right_Tnt #nbaSearchPO14Right #nbaSearchPOPoststart {
+	display:none;
+}
+#body_Right_Tnt #nbaSearchPO14Right .nbaSearchPO14Event DIV,
+#body_Right_Tnt #nbaSearchPO14Right .nbaSearchPO14Event A {
+	background:transparent url('http://i.cdn.turner.com/nba/nba/.element/img/3.0/sect/searchbar/playoffs-2014/right_playoffs_countdown.png') no-repeat;
+	display:block;
+	float:left;
+	font:bold 12px "Helvetica Neue",Helvetica Neue,Helvetica,Arial,Liberation Sans,sans-serif;
+	height:43px;
+	padding-left:171px;
+	width:87px; /* 350 (for width of area) - 171 (for this padding) - 92 (for ad) */
+}
+#body_Right_Tnt #nbaSearchPO14Right .nbaSearchPO14Event span {
+	display:block;
+	float:left;
+	line-height:43px;
+}
+#body_Right_Tnt #nbaSearchPO14Right .nbaSearchPO14Event span span { /* each time segment has a pipe */
+	border-right:1px solid #737373;
+	color:#fff;
+	height:13pt;
+	line-height:13pt;
+	margin-top:15px;
+	text-align:center;
+	width:18px;
+}
+#body_Right_Tnt #nbaSearchPO14Right .nbaSearchPO14Event span span:nth-child(4) { /* seconds is red and without the pipe */
+	border-right:0px;
+	color:#e41a4c;
+}
+#body_Right_Tnt #nbaSearchPO14Right .nbaSearchPO14Ad {
+	float:left;
+	height:31px;
+	position:relative;
+	left:6px;
+	top:6px;
+	width:88px;
+}

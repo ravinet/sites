@@ -1,0 +1,24 @@
+PHTTP107.21.120.63"œ
++GET /cm/g/out?google_nid=adroll4 HTTP/1.1
+Host: d.adroll.com
+Connection: keep-alive
+Accept: image/webp,*/*;q=0.8
+vUser-Agent: Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/31.0.1650.63 Safari/537.36
+#Referer: http://www.outbrain.com/
+$Accept-Encoding: gzip,deflate,sdch
+!Accept-Language: en-US,en;q=0.8
+3Cookie: __adroll=19e30ceba859040f238e2519737757b9
+
+*Ž
+ HTTP/1.1 302 Moved Temporarily
+4Cache-Control: no-store, no-cache, must-revalidate
+%Date: Tue, 08 Apr 2014 22:07:35 GMT
+{Location: http://cm.g.doubleclick.net/pixel?google_sc&google_nid=artb&google_hm=GeMM66hZBA8jjiUZc3dXuQ&google_ula=1535926
+4P3P: CP="NON DSP COR CURa PSA PSD OUR BUS NAV STA"
+Pragma: no-cache
+Server: nginx/1.4.2
+„Set-Cookie: __adroll=19e30ceba859040f238e2519737757b9; Version=1; Expires=Fri, 01-Jan-2021 00:00:00 GMT; Max-Age=432000000; Path=/
+Content-Length: 117
+Connection: keep-alive
+w
+Go to http://cm.g.doubleclick.net/pixel?google_sc&google_nid=artb&google_hm=GeMM66hZBA8jjiUZc3dXuQ&google_ula=1535926

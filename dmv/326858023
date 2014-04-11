@@ -1,0 +1,125 @@
+»HTTPS199.7.54.232"ë
+BGET /getthawteseal?host_name=www.dmv.org&size=L&lang=en HTTP/1.1
+Host: seal.thawte.com
+Connection: keep-alive
+Accept: */*
+vUser-Agent: Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/31.0.1650.63 Safari/537.36
+Referer: http://www.dmv.org/
+$Accept-Encoding: gzip,deflate,sdch
+!Accept-Language: en-US,en;q=0.8
+
+*Ê
+HTTP/1.1 200 OK
+Server: Apache-Coyote/1.1
+.Last-Modified: Tue, 08 Apr 2014 21:39:11 GMT
+Cache-control: max-age=86400
+Content-Type: text/javascript
+Transfer-Encoding: chunked
+%Date: Tue, 08 Apr 2014 21:39:11 GMT
+á
+bd3
+<!--
+dn="WWW.DMV.ORG";
+lang="en";
+sealid=1;
+splash_url="https://sealinfo.thawte.com";
+seal_url="https://seal.thawte.com";
+var gmt_offset = (new Date()).getTimezoneOffset();
+u1 = splash_url+"/thawtesplash?form_file=fdf/thawtesplash.fdf&dn="+dn+"&lang="+lang;
+u2 = seal_url+"/getthawteseal?at=0&sealid="+sealid+"&dn="+dn+"&lang="+lang+"&gmtoff="+gmt_offset;
+// User Agent Parsing
+var ver = -1;
+var v_ua = navigator.userAgent.toLowerCase();
+var re = new RegExp("msie ([0-9]{1,}[\.0-9]{0,})");
+if (re.exec(v_ua) != null)
+ ver = parseFloat( RegExp.$1 );
+var v_old_ie = (v_ua.indexOf("msie") != -1);
+if (v_old_ie) {
+ v_old_ie = ver < 5;
+}
+// Base Open Splash Page Function
+function thawte_splash() {
+ tbar = "location=yes,status=yes,resizable=yes,scrollbars=yes,width=516,height=500";
+ sw = window.open(u1, 'THAWTE_Splash', tbar);
+ if (sw)
+  sw.focus();
+}
+// Event listener for browsers. (calls thawte_splash)
+// This is for newer browsers
+function v_mact(e) {
+ if (document.addEventListener) {
+  var s = (e.target.name == "seal");
+  if (s) {
+   thawte_splash();
+   return false;
+  }
+ } else if(document.captureEvents) {
+  var tgt = e.target.toString();
+  var s = (tgt.indexOf("splash") != -1);
+  if (s) {
+   thawte_splash();
+   return false;
+  }
+ }
+ return true;
+}
+// Function called when image is clicked (calls thawte_splash)
+// This is for older browsers
+function v_mDown(event) {
+ if (document.addEventListener)
+  return true;
+ event = event || window.event;
+ if (event) {
+  if (event.button == 1) {
+   if (v_old_ie) {
+    return true;
+   } else {
+    thawte_splash();
+    return false;
+   }
+  } else if (event.button == 2) {
+   thawte_splash();
+   return false;
+  }
+ } else {
+  return true;
+ }
+}
+document.write("<a HREF=\""+u1+"\" tabindex=\"-1\" onmousedown=\"return v_mDown(event);\" target=\"THAWTE_Splash\"><IMG NAME=\"seal\" BORDER=\"true\" SRC=\""+u2+"\" oncontextmenu=\"return false;\" alt=\"Click to Verify - This site has chosen a thawte SSL Certificate to improve Web site security\"></A>");
+// PTP
+if((v_ua.indexOf("msie") != -1) && (ver >= 7)) {
+ var plat = -1;
+ var re = new RegExp("windows nt ([0-9]{1,}[\.0-9]{0,})");
+ if (re.exec(v_ua) != null)
+  plat = parseFloat( RegExp.$1 );
+ // We might need to add "plat <= 6.x" later if we don't need to support PTP for later windows version
+ // Don't go to PTP for windows 2003, plat = 5.2
+ if ((plat >= 5.1) && (plat != 5.2)) {
+  document.write("<div style='display:none'>");
+  document.write("<img src='https://extended-validation-ssl.thawte.com/dot_clear.gif'/>");
+  document.write("</div>");
+ }
+}
+// Event listener. This is for newer browsers.
+if (document.addEventListener) {
+ document.addEventListener('mouseup', v_mact, true);
+} else {
+ if (document.layers) {
+  document.captureEvents(Event.MOUSEDOWN);
+  document.onmousedown = v_mact;
+ }
+}
+function v_resized() {
+ if(pageWidth != innerWidth || pageHeight != innerHeight){
+  self.history.go(0);
+ }
+}
+if(document.layers) {
+ pageWidth = innerWidth;
+ pageHeight = innerHeight;
+ window.onresize = v_resized;
+}
+// -->
+
+0
+

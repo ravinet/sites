@@ -1,0 +1,88 @@
+PHTTP54.230.21.227"â
+"GET /s/css/carousel.css HTTP/1.1
+Host: cdn.directrev.com
+Connection: keep-alive
+Accept: text/css,*/*;q=0.1
+vUser-Agent: Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/31.0.1650.63 Safari/537.36
+$Referer: http://www.directrev.com/
+$Accept-Encoding: gzip,deflate,sdch
+!Accept-Language: en-US,en;q=0.8
+
+*­
+HTTP/1.1 200 OK
+Content-Type: text/css
+Content-Length: 1114
+Connection: keep-alive
+%Date: Tue, 08 Apr 2014 12:17:13 GMT
+.Last-Modified: Fri, 14 Sep 2012 18:19:55 GMT
+*ETag: "8d484a00b8eb804bbbcdf14b24f9c0b6"
+Accept-Ranges: bytes
+Server: AmazonS3
+Age: 33700
+X-Cache: Hit from cloudfront
+GVia: 1.1 c24d88d9968e8768c484e817f626cb50.cloudfront.net (CloudFront)
+GX-Amz-Cf-Id: PgL5cqiAZ_85xTIDyAk9KbRSFYJMPAxNny4PlAWl_KPD1il_JTm-jg==
+Ü
+/*portfolio items carousel*/
+nav.carousel_pagination {
+	margin: -5px 0 30px 0;
+	text-align: center;
+	height: 15px;
+}
+nav.carousel_pagination a {
+	background:url(../images/bg-switcher.png) no-repeat;
+	width: 15px;
+	height: 15px;
+	margin: 0 5px 0 0;
+	display: inline-block;
+}
+nav.carousel_pagination a:hover {
+	background-position:0 -19px;
+}
+nav.carousel_pagination  a.selected {
+	background-position:0 -38px;
+}
+nav.carousel_pagination a span {
+	display: none;
+}
+
+.work-list {
+	padding:0;
+	margin:3px 0 3px 3px;
+}
+/*slider carousel*/
+.slider_list_carousel {
+	width: 990px;
+	height: 397px;
+}
+.slider_list_carousel ul {
+	margin: 0;
+	padding: 0;
+	list-style: none;
+	display: block;
+}
+.slider_list_carousel ul li {
+	font-size: 40px;
+	color: #999;
+	text-align: center;
+	background-color: #eee;
+	border: 0px solid #999;
+	width: 990px;
+	height: 397px;
+	padding: 0;
+	margin: 0px;
+	display: block;
+	float: left;
+}
+.timer {
+	background: rgba(0,0,0, .3);
+	margin-top: -5px;
+	height: 5px;
+	width: 0px;
+	position:absolute;
+}
+
+.clearfix {
+	float: none;
+	clear: both;
+}

@@ -1,0 +1,23 @@
+PHTTP204.2.197.201"¿
+(GET /orbserv/hbpix?pixId=4857 HTTP/1.1
+Host: map.media6degrees.com
+Connection: keep-alive
+Accept: image/webp,*/*;q=0.8
+vUser-Agent: Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/31.0.1650.63 Safari/537.36
+uReferer: http://tap2-cdn.rubiconproject.com/partner/scripts/rubicon/emily.html?rtb_ext=1&pc=7845/12566&geo=na&co=us
+$Accept-Encoding: gzip,deflate,sdch
+!Accept-Language: en-US,en;q=0.8
+
+*‡
+ HTTP/1.1 302 Moved Temporarily
+Server: Apache-Coyote/1.1
++P3P: CP="COM NAV INT STA NID OUR IND NOI"
+Pragma: no-cache
+Cache-Control: no-cache
+cSet-Cookie: cckz=1n3qh2x; Domain=media6degrees.com; Expires=Tue, 08-Apr-2014 22:38:09 GMT; Path=/
+cSet-Cookie: cckz=1n3qh2x; Domain=media6degrees.com; Expires=Sun, 05-Oct-2014 22:28:09 GMT; Path=/
+KLocation: http://map.media6degrees.com/orbserv/hbpix?pixId=4857&cckz=true
+Content-Length: 0
+%Date: Tue, 08 Apr 2014 22:28:08 GMT
+Connection: close
+

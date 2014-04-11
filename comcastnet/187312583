@@ -1,0 +1,21 @@
+PHTTP66.117.23.100"Ò
+ªGET /m2/comcastresidentialservices/mbox/standard?mboxHost=www.comcast.com&mboxSession=1396992884065-69146&mboxPage=1396992884065-69146&screenHeight=600&screenWidth=800&browserWidth=780&browserHeight=518&browserTimeOffset=-240&colorDepth=24&mboxXDomain=enabled&mboxCount=2&segment=000&VOICE=0&DATA=0&VIDEO=0&CA=0&NSDBS=0&TP=0&VC=0&LV=0&GD=0&mbox=comcast_targus_flags&mboxId=0&mboxTime=1396978484587&mboxURL=http%3A%2F%2Fwww.comcast.com%2F%3FCMP%3DILCXFICOMUTOL3X&mboxReferrer=http%3A%2F%2Fxfinity.comcast.net%2Ftt2%2F%3Fcid%3DBBI&mboxVersion=47 HTTP/1.1
+0Host: comcastresidentialservices.tt.omtrdc.net
+Connection: keep-alive
+Accept: */*
+vUser-Agent: Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/31.0.1650.63 Safari/537.36
+6Referer: http://www.comcast.com/?CMP=ILCXFICOMUTOL3X
+$Accept-Encoding: gzip,deflate,sdch
+!Accept-Language: en-US,en;q=0.8
+KCookie: mboxSession=1396992884065-69146; mboxPC=1396992884065-69146.25_04
+
+*¨
+HTTP/1.1 200 OK
+$P3P: CP="NOI DSP CURa OUR STP COM"
+«Set-Cookie: mboxPC=1396992884065-69146.25_04; Domain=comcastresidentialservices.tt.omtrdc.net; Expires=Tue, 22-Apr-2014 21:34:44 GMT; Path=/m2/comcastresidentialservices
+2Content-Type: text/javascript;charset=ISO-8859-1
+Content-Length: 177
+%Date: Tue, 08 Apr 2014 21:34:44 GMT
+Server: Test & Target
+³
+mboxFactories.get('default').get('comcast_targus_flags',0).setOffer(new mboxOfferDefault()).loaded();mboxFactories.get('default').getPCId().forceId("1396992884065-69146.25_04");

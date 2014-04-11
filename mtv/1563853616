@@ -1,0 +1,28 @@
+PHTTP
+18.7.20.68"›
+tGET /UI/D3FCFFFF0002D51D0002FFFFFCD3/Cookies/GetCookiesFromMasterDomain?skipCache=true&callback=F93C3F8FE HTTP/1.1
+Host: auth.flux.com
+Connection: keep-alive
+Accept: */*
+vUser-Agent: Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/31.0.1650.63 Safari/537.36
+Referer: http://www.mtv.com/
+$Accept-Encoding: gzip,deflate,sdch
+!Accept-Language: en-US,en;q=0.8
+
+*Ï
+ HTTP/1.1 302 Moved Temporarily
+(Content-Type: text/html; charset=utf-8
+Location: http://auth.mtv.com/UI/D3FCFFFF0002D51D0002FFFFFCD3/Cookies/SetCookiesOnBrandsDomain?authCookie=&callback=F93C3F8FE
+Server: Microsoft-IIS/7.5
+X-AspNetMvc-Version: 3.0
+Server: CUS-11
+Server: w11u
+7P3P: CP="NON DSP COR ADM DEV PSA PSD IVA OUR BUS STA"
+Content-Length: 236
+#Cache-Control: private, max-age=0
+%Date: Fri, 11 Apr 2014 15:31:42 GMT
+Connection: keep-alive
+î
+<html><head><title>Object moved</title></head><body>
+<h2>Object moved to <a href="http://auth.mtv.com/UI/D3FCFFFF0002D51D0002FFFFFCD3/Cookies/SetCookiesOnBrandsDomain?authCookie=&amp;callback=F93C3F8FE">here</a>.</h2>
+</body></html>

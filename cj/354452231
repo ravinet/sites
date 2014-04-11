@@ -1,0 +1,397 @@
+PHTTP23.202.204.11"í
+6GET /sites/all/themes/cj_us/js/cj.js?n3o8vv HTTP/1.1
+Host: www.cj.com
+Connection: keep-alive
+Accept: */*
+vUser-Agent: Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/31.0.1650.63 Safari/537.36
+Referer: http://www.cj.com/
+$Accept-Encoding: gzip,deflate,sdch
+!Accept-Language: en-US,en;q=0.8
+Cookie: has_js=1
+
+*–W
+HTTP/1.1 200 OK
+Server: Apache
+.Last-Modified: Tue, 04 Feb 2014 00:56:13 GMT
+!ETag: "c424-2a37-4f18a1b52d413"
+Accept-Ranges: bytes
+Content-Length: 10807
+&Content-Type: application/javascript
+Cache-Control: max-age=900
+(Expires: Tue, 08 Apr 2014 21:49:06 GMT
+%Date: Tue, 08 Apr 2014 21:34:06 GMT
+Connection: keep-alive
+¹T
+(function ($) {
+  // responsive slider
+var tpj=jQuery;
+				tpj.noConflict();
+
+				tpj(document).ready(function() {
+
+				if (tpj.fn.cssOriginal!=undefined)
+					tpj.fn.css = tpj.fn.cssOriginal;
+
+					tpj('.banner').revolution(
+						{
+							delay:7500,
+							startwidth:1280,
+							startheight:350,
+
+							onHoverStop:"on",						// Stop Banner Timet at Hover on Slide on/off
+
+							thumbWidth:100,							// Thumb With and Height and Amount (only if navigation Tyope set to thumb !)
+							thumbHeight:50,
+							thumbAmount:3,
+
+							hideThumbs:0,
+							navigationType:"none",					//bullet, thumb, none, both	 (No Shadow in Fullwidth Version !)
+							navigationArrows:"verticalcentered",		//nexttobullets, verticalcentered, none
+							navigationStyle:"round",				//round,square,navbar
+
+							touchenabled:"on",						// Enable Swipe Function : on/off
+
+							navOffsetHorizontal:0,
+							navOffsetVertical:20,
+
+							stopAtSlide:-1,							// Stop Timer if Slide "x" has been Reached. If stopAfterLoops set to 0, then it stops already in the first Loop at slide X which defined. -1 means do not stop at any slide. stopAfterLoops has no sinn in this case.
+							stopAfterLoops:-1,						// Stop Timer if All slides has been played "x" times. IT will stop at THe slide which is defined via stopAtSlide:x, if set to -1 slide never stop automatic
+
+
+
+							fullWidth:"off",
+
+							shadow:0								//0 = no Shadow, 1,2,3 = 3 Different Art of Shadows -  (No Shadow in Fullwidth Version !)
+
+						});
+
+
+
+
+			});
+			
+			
+		 Â tpj(".fire").click(function() {
+    		
+				tpj(".target").slideDown(function(){
+	tpj('.target .container .close_login').click(function(){
+		  tpj('.target').slideUp();
+		
+		})			
+		
+	 tpj(document).bind('keydown', function(e) { 
+        if (e.which == 27) {
+             tpj('.target').slideUp();
+			
+        }
+		
+	 });
+					
+					
+					});
+						 
+	
+	
+	});
+	  
+  
+ // jCarouselInit = function() {
+//	contw = $('.front #zone-front-slider-wrapper').width();
+//	$('.front #block-block-2 .content ul li').css('width',contw+'px');
+//	$('#frontsliderul').jcarousel( {
+//		'animation': {
+//			'duration': 1000,
+//			'easing':   'linear'
+//		},
+//		'wrap': 'circular'
+//		
+//	}	
+//	)
+//	.jcarouselAutoscroll({
+//            // Plugin configuration goes here
+//     }); 
+//  
+//  }
+//  jCarouselReload = function() {
+//	$('#frontsliderul').jcarousel('reload');
+//  }
+//  jCarouselDestroy = function() {
+//	$('#frontsliderul').jcarousel('destroy');
+//  }
+//  jCarouselResize = function() {
+//  	jCarouselDestroy();
+//	
+//	//jCarouselReload();
+//	
+//  /*
+//	contw = $('.front #zone-front-slider-wrapper').width();
+//	$('.front #block-block-2 .content ul li').css('width',contw+'px');
+//	*/
+//  
+//	imgw = $('.front #block-block-2 .content ul li span').width();
+//	contw = $('.front #zone-front-slider-wrapper').width();
+//	
+//	console.log(imgw);
+//	console.log(contw);
+//	
+//	neww = 1600;
+//	
+//	if(contw < neww) neww = contw;
+//	
+//	$('.front #block-block-2 .content ul li span').css('width',neww+'px');
+//	
+//	jCarouselInit();
+//  }
+  
+  
+  $(document).ready(function(){
+
+	$( "#autoscroll-carousel" ).imageScroller( {loading:'Wait please...', speed: 10000} );
+  
+	$('.front #block-block-2 .content ul li img').each(function(ix, elem) {
+		//console.log($(elem).attr('src'));
+		imgsrc = $(elem).attr('src');
+		imgw = $(elem).width();
+		imgh = $(elem).height();
+		//console.log($(elem).attr('src'));
+		$(elem).before('<span class="imgreplacer" style="margin:0 auto; display:block; background: url('+imgsrc+') 50% top no-repeat; width: '+imgw+'px; height: '+imgh+'px;">&nbsp;</span>').remove();
+	});
+	
+	//jCarouselResize();
+	//jCarouselInit();
+	
+
+/*ADVERTISER CAROUSEL*/	
+	
+	
+	$('#adv_why_slider').roundabout({
+		tilt: 0.6,
+		minScale: 0.6,
+		minOpacity: 1,
+		duration: 400,
+		easing: 'easeOutQuad',
+		dropEasing: 'easeOutBounce',
+		btnNext: '#adv_slider_next',
+		btnPrev: '#adv_slider_prev',
+		btnNextCallback: function(){
+			ix = $('#adv_why_slider').roundabout('getChildInFocus');
+			$('#adv_why_menu li').removeClass('active-trail');
+			$('#adv_why_menu li a').removeClass('active-trail');
+			
+			$('#adv_why_menu li:eq('+ix+')').addClass('active-trail');
+			$('#adv_why_menu li:eq('+ix+') a').addClass('active-trail');
+		},
+		btnPrevCallback: function(){
+			ix = $('#adv_why_slider').roundabout('getChildInFocus');
+			$('#adv_why_menu li').removeClass('active-trail');
+			$('#adv_why_menu li a').removeClass('active-trail');
+			
+			$('#adv_why_menu li:eq('+ix+')').addClass('active-trail');
+			$('#adv_why_menu li:eq('+ix+') a').addClass('active-trail');
+		}
+		
+		
+	}, function() {
+		$(this).fadeTo(500, 1);
+	});
+	
+	$('#adv_why_menu li a').click(function(){
+		ix = $(this).parent().data('ix');
+		$('#adv_why_slider').roundabout('animateToChild', ix);
+			$('#adv_why_menu li').removeClass('active-trail');
+			$('#adv_why_menu li a').removeClass('active-trail');
+			
+			$(this).addClass('active-trail');
+			$(this).parent().addClass('active-trail');
+
+		return false;
+	});
+	
+	$('#adv_why_menu li a:first').trigger('click');
+	
+	$('#adv-tbl-service tbody tr:odd').addClass('odd');
+	$('#adv-tbl-service tbody tr:even').addClass('even');
+
+	
+
+/* PUBLISHER CAROUSEL */
+	$('#pub_why_slider').roundabout({
+		tilt: 0.6,
+		minScale: 0.6,
+		minOpacity: 1,
+		duration: 400,
+		easing: 'easeOutQuad',
+		dropEasing: 'easeOutBounce',
+		btnNext: '#pub_slider_next',
+		btnPrev: '#pub_slider_prev',
+		btnNextCallback: function(){
+			ix = $('#pub_why_slider').roundabout('getChildInFocus');
+			$('#pub_why_menu li').removeClass('active-trail');
+			$('#pub_why_menu li a').removeClass('active-trail');
+			
+			$('#pub_why_menu li:eq('+ix+')').addClass('active-trail');
+			$('#pub_why_menu li:eq('+ix+') a').addClass('active-trail');
+		},
+		btnPrevCallback: function(){
+			ix = $('#pub_why_slider').roundabout('getChildInFocus');
+			$('#pub_why_menu li').removeClass('active-trail');
+			$('#pub_why_menu li a').removeClass('active-trail');
+			
+			$('#pub_why_menu li:eq('+ix+')').addClass('active-trail');
+			$('#pub_why_menu li:eq('+ix+') a').addClass('active-trail');
+		}
+		
+		
+	}, function() {
+		$(this).fadeTo(500, 1);
+	});
+	
+	$('#pub_why_menu li a').click(function(){
+		ix = $(this).parent().data('ix');
+		$('#pub_why_slider').roundabout('animateToChild', ix);
+			$('#pub_why_menu li').removeClass('active-trail');
+			$('#pub_why_menu li a').removeClass('active-trail');
+			
+			$(this).addClass('active-trail');
+			$(this).parent().addClass('active-trail');
+
+		return false;
+	});
+
+
+	$('#pub_why_menu li a:first').trigger('click');
+	
+	
+	
+	
+
+
+
+	
+   
+   $('tbody tr').each(function(ix, elem){
+		$(elem).children('td:eq(0)').addClass('zzcol02');
+		$(elem).children('td:eq(1)').addClass('zzcol03');
+		$(elem).children('td:eq(2)').addClass('zzcol04');
+	});
+
+	
+
+  });
+  
+  $(window).resize(function(){
+	//jCarouselResize();
+	
+	var $this = $( "#autoscroll-carousel" );
+	var parent = $this.parent();
+        if(parent.length) {
+            var parentClass = parent.attr('class').split(' ').join('.');
+            var containerWidth = parent.width();
+            var containerHeight = parent.height();
+            var top = (containerHeight - $this.height()) / 2;
+            var width = containerWidth * 0.9;
+            $this.css({'top': top, 'width': width});
+            $('head').append('<style>.' + parentClass + ':before{left:' + (containerWidth * 0.05 - 3) + 'px;}</style>');
+            $('head').append('<style>.' + parentClass + ':after{right:' + (containerWidth * 0.05 - 3) + 'px;}</style>');
+        }
+    });
+  
+  //jCarouselInit();
+  $(document).ready(function(){
+    $('.cj-search .search-by-page-form .form-submit').attr('value', '');
+    $('.cj-search .search-by-page-form .form-item-keys input').attr('placeholder', 'Site Search');
+    
+    $('.cj-search-blog .search-by-page-form .form-submit').attr('value', '');
+    $('.cj-search-blog .search-by-page-form .form-item-keys input').attr('placeholder', 'Search Blog...');
+    
+    $('input[placeholder], textarea[placeholder]').placeholder();
+  });
+  
+  $(function(){
+    $('#slider').slides({
+        generatePagination: false,
+        play: 5000,
+        pause: 2500,
+        hoverPause: true
+    });
+  });
+  
+  $(document).ready(function(){
+    $('.whatsnew-outer .item').mouseenter(function(){
+        $(this).children('.rel').stop().animate({"top": "-144px"}, "slow");
+      }).mouseleave(function(){
+        $(this).children('.rel').stop().animate({"top": "0px"}, "fast");
+      });
+  });
+  
+  $(document).ready(function(){
+    var fixadent = $("#zone-menu-wrapper");
+    var pos = fixadent.offset();
+    $(window).scroll(function() { 
+     if($(this).scrollTop() > pos.top && fixadent.css('position') == 'static') {
+         fixadent.addClass('fixed');
+     } 
+     else if($(this).scrollTop() <= pos.top && fixadent.hasClass('fixed')) {
+         fixadent.removeClass('fixed');
+     }
+   })
+  });
+  
+    $(document).ready(function() { 
+        $(".fcgreen").click(function() {
+            $(".target").slideDown(function(){
+                $('.target .container .close_login').click(function(){
+                    $('.target').slideUp();
+                });	
+                $(document).bind('keydown', function(e) { 
+                    if (e.which == 27) {
+                        $('.target').slideUp();
+                    }
+                });
+            });
+            return false;
+        });
+    });
+
+  $(document).ready(function(){
+      if($('#mediaplayer-whycj-1').length > 0) {
+            jwplayer('mediaplayer-whycj-1').setup({
+              'flashplayer': '/profiles/corporative_site/modules/contrib/ckeditor/plugins/jwplayer/jwplayer/player.swf',
+              'id': 'playerID',
+              'width': '535',
+              'height': '304',
+              'icons': false,
+              'file': 'http://www.youtube.com/watch?v=ZV3Jr8YqTWw',
+              'image': '/sites/default/files/whycj-video.jpg',
+              "controlbar": "over"
+        //      events: {
+        //        onPlay: function(event) {
+        //            $(".whycj-right div.inner").hide();
+        //            $("#content-cj-drives").show();
+        //        },
+        //        onPause: function(event) {
+        //            $("#content-cj-drives").hide();
+        //            $(".whycj-right div.inner").show();
+        //        },
+        //        onComplete: function(event) {
+        //            $("#content-cj-drives").hide();
+        //            $(".whycj-right div.inner").show();
+        //        }
+        //      }
+            });
+      }
+    
+    if($('body').hasClass('node-type-landing-page')) {
+        $('#fixedright').remove();
+    }
+    
+    $('.attachment .view-glossary .views-summary a').live('click', function() {
+        $('.literal-current').html($(this).html());
+    });
+    
+    
+  });
+  
+  
+  
+})(jQuery);

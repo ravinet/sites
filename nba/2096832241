@@ -1,0 +1,102 @@
+PHTTP157.166.224.57"ò
+…GET /html.ng/site=nba&nba_pos=145x250_slide5&nba_rollup=homepage&params.styles=fs&page.allowcompete=no&Params.User.UserID=534472a5045f3a0a3c73c576a105b77a&transactionID=13969947263859705745113088&tile=6875274996931&domId=1b58f52ed6ec5762&kxid=&kxseg= HTTP/1.1
+Host: ads.nba.com
+Connection: keep-alive
+TAccept: text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8
+vUser-Agent: Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/31.0.1650.63 Safari/537.36
+Referer: http://www.nba.com/
+$Accept-Encoding: gzip,deflate,sdch
+!Accept-Language: en-US,en;q=0.8
+
+*Ì#
+HTTP/1.1 200 OK
+%Date: Tue, 08 Apr 2014 22:05:25 GMT
+Server: Apache
+"AdServer: ad8host1server1:9678:1
+%P3P: CP="NOI DEVa TAIa OUR BUS UNI"
+-Cache-Control: max-age=0, no-cache, private
+(Expires: Tue, 08 Apr 2014 22:05:25 GMT
+Pragma: no-cache
+Content-Length: 4181
+Keep-Alive: timeout=5, max=13
+Connection: Keep-Alive
+Content-Type: text/html
+× 
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+<head>
+
+<script>
+        function cnnad_getTld (hostname)
+        {
+               var data = hostname.split(".");
+               if (data.length >= 2)
+               {
+                       return (data[data.length-2] + "." + data[data.length-1]);
+               }
+               return(null);
+        }
+ 
+        var cnnDocDomain = cnnad_getTld(location.hostname);
+        if(cnnDocDomain) {document.domain = cnnDocDomain;}
+
+	function cnnGetId(query) {
+		var keyValPairs = query.split('&');
+		if(!keyValPairs) {
+			keyValPairs = new Array();
+			keyValPairs[keyValPairs.length]=query;
+		}
+		for(var counter=0; counter < keyValPairs.length;counter++) {
+			var keyVal = keyValPairs[counter].split('=');
+			if(keyVal[0]=='domId') {
+				//alert("returning id: " + keyVal[1]);
+				return keyVal[1];
+			}
+		}
+	}
+			
+	function cnnSendData2() {
+		var docId = cnnGetId(decodeURIComponent(location.pathname.substring(9)));
+		var height = 250;
+		var width = 145;
+		var targetWindow = top;
+		try
+		{
+			if(parent.cnnad_showAd)
+			{
+				targetWindow = parent;
+			}
+		} catch(err) {} 
+		targetWindow.cnnad_showAd(docId);
+		if ((height > 0)&&(width > 0))
+		{
+			targetWindow.cnnad_setAdSize(docId,height,width);
+		}
+	}
+</script> 
+</head>
+
+<body STYLE="background-color:transparent" onload="cnnSendData2()">
+<!--FlightID: 597200-->
+<link rel="stylesheet" type="text/css" media="screen" href="http://z.cdn.turner.com/nba/tmpl_asset/static/nba-cms3-homepage/latest/css/pkg-min.css">
+<link rel="stylesheet" type="text/css" media="screen" href="http://i.cdn.turner.com/nba/nba/.element/css/3.0/sect/carousel/carousel_5slides.css">
+<h3>Watch Live</h3>
+<div class="nbaFlexContentAd">
+	<a title="Watch Live" href="http://ads.cnn.com/event.ng/Type=click&FlightID=597200&AdID=806587&TargetID=195223&Values=57003&RawValues=NGUSERID%252C534472a5045f3a0a3c73c576a105b77a%252CKXID%252C%252CTID%252C13969947263859705745113088%252CTIL%252C6875274996931&Redirect=http://www.nba.com/tntovertime/" target="_blank" class="nbaThumbnail"> <img src="http://i.cdn.turner.com/ttn/ttn_adspaces/NBA/2014/04/02/044111234TNTOT-141x96.jpg" alt="Advertisement"> </a>
+	<h4><a title="TNT OT" href="http://ads.cnn.com/event.ng/Type=click&FlightID=597200&AdID=806587&TargetID=195223&Values=57003&RawValues=NGUSERID%252C534472a5045f3a0a3c73c576a105b77a%252CKXID%252C%252CTID%252C13969947263859705745113088%252CTIL%252C6875274996931&Redirect=http://www.nba.com/tntovertime/" target="_blank" >TNT OT</a></h4>
+	<p>Watch the Spurs battle the Thunder live on TNT OT.</p>
+</div>
+<script type="text/javascript"> 
+	var impression = "http://";
+	if(impression.length >10){	
+		var parentIfrm = ""; 
+        parentIfrm = window.frameElement;	
+		var slidePos = parentIfrm.src.match(/145x250_slide[1-5]/g);
+		var  currentIfrmSlide = slidePos[0].charAt(slidePos[0].length-1);
+		parent.impressionPixelArray.push([false,impression,currentIfrmSlide]);
+	}
+</script>
+<div style="position:absolute;visibility:hidden;"><img src="http://ads.nba.com:80/event.ng/Type=count&ClientType=2&ASeg=&AMod=&AOpt=0&AdID=806587&FlightID=597200&TargetID=195223&SiteID=57003&EntityDefResetFlag=0&Segments=DECBHHicHc_JEcAwCAPAhvQwIK7-G4tIHhsGDNjhk6AFYftmJG3lPsIrduHbGwhvLiImHdFlDj7PAKuWsteRkVlIbhNZzZHzlG_zRI5tI3fsodzYqEwmqsJMUruqypQZfai1VrxajH4vzvBF64Ky7iat32Ke-qTqmHgvZebIjt96csrPvepqo9z4JYZq_s1zLmO82F0nGaFe0u9MzcV1c9it-ZybRtXl-uWXl9_ss1XN17ph6tUfpb1KXw..&Targets=195223,194512&Values=DECBHHicJY7HEQRBCAMT0gMBwuSf2DF7n-7ClShHN8ZBM1CGZWP7ah-BTYLjjsxsyG6Y4wyImQuVaY5zB2qz-KjHJTTnY5s_9m3uTqFos0evQIV8LsymLy4ilPdG7KVRE_Np-Zpr8idlgHVh_OuaRfk-1Xu6OLY_S0UrEQ..&RawValues=NGUSERID%252C534472a5045f3a0a3c73c576a105b77a%252CKXID%252C%252CTID%252C13969947263859705745113088%252CTIL%252C6875274996931&random=cwyevpk,bjuiNvfbWKlx&Params.tag.transactionid=13969947263859705745113088&Params.User.UserID=534472a5045f3a0a3c73c576a105b77a" width="1" height="1" border="0" /></div>
+<script src='http://js.moatads.com/turnerd8523/moatad.js#moatClientLevel1=597200&moatClientLevel2=806587&moatClientLevel3=&moatClientLevel4=-&moatClientSlicer1=-&moatClientSlicer2=-' type='text/javascript'></script>
+</body>
+</html>

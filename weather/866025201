@@ -1,0 +1,24 @@
+PHTTP50.31.185.39"≥
+ÅGET /?transport=jsonp&idsite=181&url=http%3A%2F%2Fwww.weather.com%2F&content_type=UTF-8&callback=_vrq.jsonp.callbackFn HTTP/1.1
+Host: p.visualrevenue.com
+Connection: keep-alive
+Accept: */*
+vUser-Agent: Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/31.0.1650.63 Safari/537.36
+"Referer: http://www.weather.com/
+$Accept-Encoding: gzip,deflate,sdch
+!Accept-Language: en-US,en;q=0.8
+
+*å
+HTTP/1.1 200 OK
+Server: nginx/1.1.19
+%Date: Tue, 08 Apr 2014 22:34:39 GMT
+Content-Type: text/javascript
+Content-Length: 1793
+Accept-Ranges: bytes
+"X-Varnish: 1396808326 1379866364
+Age: 12432
+Via: 1.1 varnish
+F: 1
+Connection: close
+É
+_vrq.jsonp.callbackFn([{"content": {"new_images": ["http://s.imwx.com/dru/2014/04/c8828b84-0a14-423a-8255-2b04d34a63df_320x180.jpg", "http://s.imwx.com/dru/2014/04/c8828b84-0a14-423a-8255-2b04d34a63df_320x180.jpg"], "new_titles": ["\nDo You Live in America's FATTEST City?\n", "America's Fattest City Is ....<br>"], "current_image": "http://s.imwx.com/dru/2014/04/c8828b84-0a14-423a-8255-2b04d34a63df_320x180.jpg", "current_title": "\nDo You Live in America's FATTEST City?\n"}, "config": {"data_vr_zone": "home_TopStories", "winner": {"image": "http://s.imwx.com/dru/2014/04/c8828b84-0a14-423a-8255-2b04d34a63df_320x180.jpg", "title": "America's Fattest City Is ....<br>"}}, "type": "content_test"}, {"content": {"new_images": ["http://s.imwx.com/dru/2014/04/3edb7452-6507-49f5-aec7-86d44e80d9af_320x180.jpg", "http://s.imwx.com/dru/2014/04/98e8fd4d-2464-46c3-bf14-3acee2f5c0ec_320x260.jpg"], "new_titles": ["\nSHOCKING! What You Didn't Know About Weed\n", "SHOCKING! What You Didn't Know About Weed"], "current_image": "http://s.imwx.com/dru/2014/04/3edb7452-6507-49f5-aec7-86d44e80d9af_320x180.jpg", "current_title": "\nSHOCKING! What You Didn't Know About Weed\n"}, "config": {"data_vr_zone": "home_TopStories", "winner": {"image": "http://s.imwx.com/dru/2014/04/98e8fd4d-2464-46c3-bf14-3acee2f5c0ec_320x260.jpg", "title": "SHOCKING! What You Didn't Know About Weed"}}, "type": "content_test"}, {"content": {"new_images": ["", ""], "new_titles": ["LOOK UP TONIGHT! Mars, Earth and Sun to Line Up", "LOOK UP! Rare Cosmic Alignment Tonight<br>"], "current_image": "", "current_title": "LOOK UP TONIGHT! Mars, Earth and Sun to Line Up"}, "config": {"data_vr_zone": "twc-breaking-now", "winner": {"image": "", "title": "LOOK UP! Rare Cosmic Alignment Tonight<br>"}}, "type": "content_test"}]);

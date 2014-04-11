@@ -1,0 +1,19 @@
+PHTTP66.117.23.103"ö	
+¬GET /m2/constantcontact/mbox/standard?mboxHost=www.constantcontact.com&mboxSession=1396992895045-884447&mboxPC=1396992895045-884447.25_29&mboxPage=1396992895866-91042&screenHeight=600&screenWidth=800&browserWidth=780&browserHeight=518&browserTimeOffset=-240&colorDepth=24&mboxCount=1&profile.session_partner=ROVING&profile.campaign_code=&profile.sops_em=X&profile.sops_sv=X&profile.sops_ih=X&profile.sops_ar=X&profile.sops_ev=X&profile.sops_sc=X&profile.sops_sl=X&profile.sops_l=X&profile.sops_sp=X&profile.sops_b=X&profile.visit_number=1&profile.locale=en_US&profile.relationship_marketing_code=&profile.internal_code=&mbox=first_actions&mboxId=0&mboxTime=1396978495906&mboxURL=http%3A%2F%2Fwww.constantcontact.com%2Fnext%3Fs_tnt%3D55839%3A4%3A0&mboxReferrer=http%3A%2F%2Fwww.constantcontact.com%2Findex.jsp&mboxVersion=44 HTTP/1.1
+%Host: constantcontact.tt.omtrdc.net
+Connection: keep-alive
+Accept: */*
+vUser-Agent: Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/31.0.1650.63 Safari/537.36
+>Referer: http://www.constantcontact.com/next?s_tnt=55839:4:0
+$Accept-Encoding: gzip,deflate,sdch
+!Accept-Language: en-US,en;q=0.8
+
+*ê	
+HTTP/1.1 200 OK
+pragma: no-cache
+-Content-Type: text/javascript;charset=UTF-8
+Content-Length: 990
+%Date: Tue, 08 Apr 2014 21:34:54 GMT
+Server: Test & Target
+‡
+var mboxCurrent=mboxFactories.get('default').get('first_actions',0);mboxCurrent.setEventTime('include.start');document.write('<div style="visibility: hidden; display: none" id="mboxImported-default-first_actions-0">');document.write('<!-- Offer Id: 174275  --><script type=\"text\/javascript\">\r\n\/*mboxHighlight+ (1of2) v1 ==> Response Plugin*\/\r\nwindow.ttMETA=(typeof(window.ttMETA)!=\'undefined\')?window.ttMETA:[];window.ttMETA.push({\'mbox\':\'first_actions\',\'campaign\':\'\',\'experience\':\'\',\'offer\':\'\'});window.ttMBX=function(x){var mbxList=[];for(i=0;i<ttMETA.length;i++){if(ttMETA[i].mbox==x.getName()){mbxList.push(ttMETA[i])}}return mbxList[x.getId()]}\r\n<\/script>');mboxFactories.get('default').get('first_actions',0).setOffer(new mboxOfferDefault()).loaded();document.write('</div>');mboxCurrent.setEventTime('include.end');mboxFactories.get('default').get('first_actions',0).loaded();mboxFactories.get('default').getPCId().forceId("1396992895045-884447.25_29");

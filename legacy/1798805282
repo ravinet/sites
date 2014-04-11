@@ -1,0 +1,49 @@
+PHTTP64.12.97.248"Ê
+úGET /addyn/3.0/5306.1/1369112/0/-1/size=300x250/adtech;cfp=1;rndc=1397230346;alias=legacy.legacy.home.300x250.1.1;target=_blank;kvquantcast=D;kvscreenwidth=1920;grp=764717332;misc=1196039196;adiframe=y;uuid=534803906E650EA37C93C476F0016474 HTTP/1.1
+Host: media2.legacy.com
+Connection: keep-alive
+Accept: */*
+vUser-Agent: Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/31.0.1650.63 Safari/537.36
+ÊReferer: http://media2.legacy.com/adiframe/3.0/5306.1/1369112/0/-1/size=300x250/adtech;alias=legacy.legacy.home.300x250.1.1;target=_blank;kvquantcast=D;kvscreenwidth=1920;grp=764717332;misc=1196039196
+$Accept-Encoding: gzip,deflate,sdch
+!Accept-Language: en-US,en;q=0.8
+ôCookie: __qca=P0-1704172327-1397230346557; __utma=179553081.496139641.1397230347.1397230347.1397230347.1; __utmb=179553081.1.10.1397230347; __utmc=179553081; __utmz=179553081.1397230347.1.1.utmcsr=(direct)|utmccn=(direct)|utmcmd=(none); CfP=1
+
+*ö
+HTTP/1.0 200 OK
+Connection: keep-alive
+(Expires: Mon, 15 Jun 1998 00:00:00 GMT
+Pragma: no-cache
+#Cache-Control: no-store, no-cache
+0P3P: CP="NOI DSP DEVa OUR BUS UNI COM NAV INT"
+Server: Adtech Adserver
+0P3P: CP="NOI DSP DEVa OUR BUS UNI COM NAV INT"
+(Content-Type: application/x-javascript
+Content-Length: 985
+RSet-Cookie: CS1=2;expires=Sun, 10 Apr 2016 15:32:26 GMT;domain=legacy.com;path=/
+rSet-Cookie: JEB2=534803906E650EA37C93C476F0016474;expires=Sun, 10 Apr 2016 15:32:26 GMT;domain=legacy.com;path=/
+Û
+<!--
+google_ad_client = "ca-pub-8530762022274570";
+/* Legacy_ATF */
+google_ad_slot = "7490796162";
+google_ad_width = 300;
+google_ad_height = 250;
+google_page_url = "legacy.com";
+//-->
+document.write("\n");
+document.write("<scr"+"ipt type=\"text/javascript\" src=\"http://pagead2.googlesyndication.com/pagead/show_ads.js\"></scr"+"ipt>\n");
+
+
+
+var kv1406133 ='screenwidth=1920;quantcast=d';
+if (kv1406133.indexOf("scriptcall=1") !=-1) {
+document.writeln('<scr'+'ipt type="text/javascript" src="https://adyapperstatic.blob.core.windows.net/onad/legacy2?id=legacy.legacy.home.300x250.1.1"></scr'+'ipt>');
+}
+if (kv1406133.indexOf("galib=1") !=-1) {
+	(function () {
+	 var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+	 ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+	 var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+	 })();
+}

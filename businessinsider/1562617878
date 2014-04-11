@@ -1,0 +1,26 @@
+PHTTP23.202.198.218"ü
+qGET /player.swf?version=2&player=8e324a17e4b4f929a20c0c63478ed48&embedType=nuplayer&embedStyle=mjolnir HTTP/1.1
+Host: player.ooyala.com
+Connection: keep-alive
+vUser-Agent: Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/31.0.1650.63 Safari/537.36
+Accept: */*
+$Accept-Encoding: gzip,deflate,sdch
+!Accept-Language: en-US,en;q=0.8
+
+*Ž
+ HTTP/1.1 302 Moved Temporarily
+Server: Apache
+»Location: http://player.ooyala.com/static/cacheable/5e1f5e426fe4c2e66ff29ce8f573fa12/player_v2.swf?version=2&player=8e324a17e4b4f929a20c0c63478ed48&embedType=nuplayer&embedStyle=mjolnir
+Content-Length: 371
+-Content-Type: text/html; charset=iso-8859-1
+Cache-Control: max-age=60
+%Date: Fri, 11 Apr 2014 19:09:31 GMT
+Connection: keep-alive
+õ
+<!DOCTYPE HTML PUBLIC "-//IETF//DTD HTML 2.0//EN">
+<html><head>
+<title>302 Found</title>
+</head><body>
+<h1>Found</h1>
+<p>The document has moved <a href="http://player.ooyala.com/static/cacheable/5e1f5e426fe4c2e66ff29ce8f573fa12/player_v2.swf?version=2&amp;player=8e324a17e4b4f929a20c0c63478ed48&amp;embedType=nuplayer&amp;embedStyle=mjolnir">here</a>.</p>
+</body></html>

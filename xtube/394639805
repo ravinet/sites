@@ -1,0 +1,23 @@
+PHTTP207.246.147.190"”
+GET /js/IFrameRPC.js HTTP/1.1
+Host: www.xtubecams.com
+Connection: keep-alive
+Accept: */*
+vUser-Agent: Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/31.0.1650.63 Safari/537.36
+WReferer: http://www.xtubecams.com/exports/videoloop/?AFNO=1-4003&format=140x140&n=1/1
+$Accept-Encoding: gzip,deflate,sdch
+!Accept-Language: en-US,en;q=0.8
+ŽCookie: NaiadJP=cj1odHRwJTNBJTJGJTJGYXMuc2V4YWQubmV0JTJGYXMlMkZpZiUzRnAlM0R4dHViZSUyNnclM0Q5NDAlMjZoJTNEMTUwJmU9aHR0cCUzQSUyRiUyRmV4cG9ydHMueHR1YmVjYW1zLmNvbSUyRmV4cG9ydHMlMkZnb2xpdmUlMkZqc29uJTJGJTNGbiUzRDIwJTI2anNvbnAlM0RzZXRQZXJmb3JtZXJzQ2FsbGJhY2smbz0xMzk2OTk2NjI2
+
+*¹
+HTTP/1.1 200 OK
+Server: nginx/0.7.67
+%Date: Tue, 08 Apr 2014 22:37:10 GMT
+&Content-Type: application/javascript
+Connection: keep-alive
+.Last-Modified: Wed, 21 Jul 2010 22:35:36 GMT
+Accept-Ranges: bytes
+Content-Length: 3555
+[P3P: policyref="http://(null)/p3p/ns.xml", CP="NOI DSP COR CUR ADMa DEVa OUR IND UNI STA"
+å
+function IFrameRPCRequest(a,c,b,e,d){this.IFRPCName=a;this.DOMPrefix=c;this.DOMWorkspace=b;this.ID=e;this.Handler=d;this.RequestID=null;this.IFrame=null;this.bCreated=true;this.SetHandler=function(f){this.Handler=f};this.GetHandler=function(f){return(this.RequestID==f?this.Handler:null)};this.GetIFrame=function(){if(this.IFrame){return this.IFrame}var h=this.DOMPrefix+this.ID;try{var g=document.createElement("iframe");g.setAttribute("id",h);g.style.border="0px";g.style.width="0px";g.style.height="0px";this.IFrame=this.DOMWorkspace.appendChild(g);if(document.frames){this.IFrame=document.frames[h]}}catch(i){var f='<iframe id="'+h+'" style="border:0px;width:0px;height:0px;"></iframe>';this.DOMWorkspace.innerHTML+=f;var g=new Object();g.document=new Object();g.document.location=new Object();g.document.location.iframe=document.getElementById(h);g.document.location.replace=function(j){this.iframe.src=j};this.IFrame=g}this.bCreated=true;return this.IFrame};this.Execute=function(g,f){this.RequestID=g;if(!this.GetIFrame()){return false}if(this.bCreated&&navigator.userAgent.indexOf("Gecko")!=-1&&!this.IFrame.contentDocument){setTimeout(this.IFRPCName+'.ExecuteById( "'+this.ID+'", '+this.RequestID+', "'+f+'")',10);return true}this.bCreated=false;var h=null;if(this.IFrame.contentDocument){h=this.IFrame.contentDocument}else{if(this.IFrame.contentWindow){h=this.IFrame.contentWindow.document}else{if(this.IFrame.document){h=this.IFrame.document}}}if(!h){return false}h.location.replace(f);return true};this.Reset=function(){return this.Execute(this.RequestID,"about:blank")};this.Callback=function(g,h){var f=false;try{if(this.RequestID!=g){throw {description:"IFrameRPCRequest["+this.IFRPCName+":"+this.ID+"].Callback.RequestID["+this.RequestID+"] does not match server response["+g+"]"}}if(this.Handler){f=this.Handler.Execute(h)}this.Reset()}catch(i){this.Reset();throw i}return f}}function IFrameRPC(b,a){this.VarName=b;this.DOMPrefix=b+"_RequestFrame";this.MaxThreads=10;this.DOMWorkspace=document.getElementById(a);this.CycleID=0;this.RequestID=0;this.Requests=[];this.SetDOMPrefix=function(c){this.DOMPrefix=c};this.SetMaxThreads=function(c){this.MaxThreads=c};this.Execute=function(c,d){var f=this.CycleID++;var e=++this.RequestID;if(!this.DOMWorkspace){throw {description:"IFrameRPC: "+this.VarName+".DOMWorkspace element does not exist"}}if(this.CycleID>=this.MaxThreads){this.CycleID=0}if(c.indexOf("?")==-1){c+="?IFRPC_ThreadID="+f+"&IFRPC_RequestID="+e+"&IFRPC_VarName="+escape(this.VarName)}else{if(c.indexOf("IFRPC_ThreadID=")==-1){c+="&IFRPC_ThreadID="+f+"&IFRPC_RequestID="+e+"&IFRPC_VarName="+escape(this.VarName)}else{c=c.replace("/([?&]IFRPC_ThreadID)=[^&]*/","$1="+f).replace("/([?&]IFRPC_RequestID)=[^&]*/","$1="+e).replace("/([?&]IFRPC_VarName)=[^&]*/","$1="+escape(this.VarName))}}if(f>=this.Requests.length||!this.Requests[f]){this.Requests[f]=new IFrameRPCRequest(this.VarName,this.DOMPrefix,this.DOMWorkspace,f,d)}else{this.Requests[f].SetHandler(d)}return this.Requests[f].Execute(e,c)};this.ExecuteById=function(e,d,c){if(e>=this.Requests.length||!this.Requests[e]){throw {description:this.VarName+".ExecuteById received an invalid Thread ID: "+e}}return this.Requests[e].Execute(d,c)};this.Callback=function(e,c,d){if(e>=this.Requests.length||!this.Requests[e]){throw {description:this.VarName+".Callback received an invalid Thread ID: "+e}}return this.Requests[e].Callback(c,d)};this.GetCallbackHandler=function(d,c){if(d>=this.Requests.length||!this.Requests[d]){return null}return this.Requests[d].GetHandler(c)}};

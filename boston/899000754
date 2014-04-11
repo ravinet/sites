@@ -1,0 +1,49 @@
+PHTTP199.27.76.143"ö
+OGET /r/SysConfig/WebPortal/Boston/Framework/js/bcom-insert-subnav.js HTTP/1.1
+Host: c.o0bc.com
+Connection: keep-alive
+Accept: */*
+vUser-Agent: Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/31.0.1650.63 Safari/537.36
+!Referer: http://www.boston.com/
+$Accept-Encoding: gzip,deflate,sdch
+!Accept-Language: en-US,en;q=0.8
+
+*ã
+HTTP/1.1 200 OK
+Server: Apache-Coyote/1.1
+Eomportal-Instance: 29
+ASet-Cookie: JSESSIONID=3EEA848D57D33D9A4E7A7E596177FA99; Path=/
+.Last-Modified: Mon, 30 Sep 2013 22:19:07 GMT
+/Cache-Control: max-age=86400, must-revalidate
+Content-Type: text/javascript
+'X-Powered-By: My Horse (It's amazing)
+Content-Length: 461
+Accept-Ranges: bytes
+%Date: Fri, 11 Apr 2014 19:13:39 GMT
+Via: 1.1 varnish
+Age: 98812
+Connection: keep-alive
+ X-Served-By: cache-jfk1032-JFK
+X-Cache: HIT
+X-Cache-Hits: 866
+Ï
+
+$(function() {
+	var $classified = $("#primary li.classified-nav li");
+    var $inside = $("#classyWidget ul");
+    
+    $classified
+        .hover(function() {
+        var $this = $(this);
+        
+        $classified.removeClass('active');
+		$inside.hide().removeClass("active");
+        
+        $("#classwell_" + $this.attr("class"))
+        	.css("display", "block")
+        	.addClass('active');
+            
+        $this.addClass("active");
+    });
+
+});

@@ -1,0 +1,381 @@
+PHTTP
+72.21.91.9"“
+9GET /2628/memberapplet_awards/lang/lang_en.xml HTTP/1.1
+$Host: flashx.new.livejasmincdn.com
+Connection: keep-alive
+vUser-Agent: Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/31.0.1650.63 Safari/537.36
+Accept: */*
+BReferer: http://new.livejasmin.com/en/?showPreviousVersionLink=0
+$Accept-Encoding: gzip,deflate,sdch
+!Accept-Language: en-US,en;q=0.8
+
+*ø®
+HTTP/1.1 200 OK
+Accept-Ranges: bytes
+ Cache-Control: max-age=2419200
+Content-Type: text/xml
+%Date: Tue, 08 Apr 2014 22:03:39 GMT
+Etag: "53440c39-5600"
+(Expires: Tue, 06 May 2014 22:03:39 GMT
+.Last-Modified: Tue, 08 Apr 2014 14:48:25 GMT
+Server: ECS (ord/26DB)
+X-Cache: HIT
+,X-Real-Source: flash.new.livejasmincdn.com
+Content-Length: 22016
+‚¬
+<?xml version="1.0" encoding="UTF-8"?>
+<data>
+  <button_go_private value="Start Private Show"/>
+  <button_send value="Send"/>
+  <button_confirm value="Confirm"/>
+  <button_ok value="Ok"/>
+  <button_close value="Close"/>
+  <button_close_private value="Close Private"/>
+  <button_back_to_chat value="Back to Chat"/>
+  <button_back_to_cam value="Back to Cam"/>
+  <button_back value="Back"/>
+  <cancel value="Cancel"/>
+  <info_surprise value="Surprise Model"/>
+  <info_gallery value="View Gallery"/>
+  <info_gallery_no_image value="{@performerid} has no uploaded photos yet"/>
+  <info_snapshot value="Take a Snapshot"/>
+  <info_add_fav value="Add to favorites"/>
+  <info_rem_fav value="Remove from favorites"/>
+  <info_added_fav value="Added to favorites"/>
+  <info_removed_fav value="Removed from favorites"/>
+  <info_buycredit value="Get Credits"/>
+  <info_camera_on value="Turn on your webcam"/>
+  <info_camera_off value="Turn off your webcam"/>
+  <info_size value="Change View"/>
+  <info_personalinfo value="Model bio"/>
+  <info_gallery_start_slideshow value="Start slideshow"/>
+  <info_gallery_stop_slideshow value="Stop slideshow"/>
+  <info_gallery_thumbnail value="View all Media"/>
+  <system_message value="System Message"/>
+  <go_to_main_page value="Click The Button To Go To The Main Page"/>
+  <you_have_been_kicked value="You have been disconnected."/>
+  <time_is_up value="Time is up! Top up your balance to get back!"/>
+  <timeleft_seconds value="You have {$time} seconds left!"/>
+  <timeleft_second value="You have {$time} second left!"/>
+  <login_title value="Log in to {$sitename}"/>
+  <login_username value="Username:"/>
+  <login_password value="Password:"/>
+  <login_keep_in value="Keep me logged in"/>
+  <login_forgot_pass value="Forgot your password?"/>
+  <login_reset_pass value="Reset here"/>
+  <login_bad_password value="Incorrect username or password"/>
+  <login_bad_captcha value="Incorrect security code"/>
+  <login_username_or_nick_empty value="Username or password missing"/>
+  <login_captcha_required value="Security code required"/>
+  <login_signup_link_free value="Sign up FREE!"/>
+  <login_signup_link value="Sign up!"/>
+  <login_signup_text value="Donâ€™t have a {$sitename} account?"/>
+  <login_login value="Log in"/>
+  <login_captcha value="Security code:"/>
+  <login_service_failed value="Login service error, please try again later."/>
+  <login_no_such_username_password value="No such a Username or Password."/>
+  <luxco_terms value="To improve our services, effective November 6, 2012, we will:\n\nTransfer from Lalib Lda. to Duodecad IT Services Luxembourg S.Ã  r.l.\n\n    all our rights and obligations existing under the T&amp;C you have accepted when registering on our website; and\n\n    all personal data collected through your use of our services; and\n\nmodify our Terms &amp; Conditions.\n\nBy continuing using our services after November 6, 2012 you hereby confirm having read, understood and agreeing with the above (including our new Terms &amp; Conditions). Otherwise you may cancel your subscription."/>
+  <login_login_accept value="Login &amp; Accept"/>
+  <login_needed_footer value="Already a member?"/>
+  <login_needed_login_link value="Log in now!"/>
+  <login_needed_signup_free value="Sign up FREE"/>
+  <login_needed_signup value="Sign up"/>
+  <login_needed_title value="Members Only"/>
+  <login_needed_message value="Become a {$sitename} member to use this feature!"/>
+  <login_needed_message_timeout value="Tired of getting timed out?\n Members enjoy unlimited chat!"/>
+  <timed_out value="Free Chat Time Limit"/>
+  <logprivate_running_out value="Running out of Credits?"/>
+  <logprivate_add_credit_now value="Buy Credits now"/>
+  <logprivate_add_credit value="Get credits"/>
+  <logprivate_launch_private value="Private Show with {$performerid}"/>
+  <logprivate_start_private value="Start Private Show"/>
+  <logprivate_credit_left value="You have {$credit} left on your account."/>
+  <logprivate_credit value="Credits"/>
+  <logprivate_credit_min value="{$credit} Credits per minute"/>
+  <logprivate_credit_twoway value="Enable two-way Audio for +{$credit} Credit{$s} per min."/>
+  <logprivate_low_balance value="You do not have enough Credits left to start a Private Show."/>
+  <logprivate_block_header value="Model in Private Chat"/>
+  <logprivate_two_way_block_message value="{$performerid} is currently in two-way audio room.\n Please choose another model or come back later!"/>
+  <logprivate_block_message value="{$performerid}  is currently unavailable.\n Please choose another model or come back later!"/>
+  <logprivate_no_snapshot value="{$performerid} provides no Private Snapshot service."/>
+  <logprivate_low_cam_feed value="Performer's connection is slow. Stream quality might be affected."/>
+  <logprivate_cam_3d value="For full experience You need a pair of 3D glasses"/>
+  <logprivate_non_nude value="This model is in non-nude category"/>
+  <logprivate_on_private value="Youâ€™re already in Private with a different Model."/>
+  <logprivate_private_title value="Active Private Show limit"/>
+  <back_to_models value="Back to Models"/>
+  <two_way_dialog_info value="Two-way audio allows you to speak in real time during the private show with the models. {$performerid} speaks in: {$language}"/>
+  <non_nude_dialog_info value="Models of this category are not supposed to provide or imply any sexually explicit content, be it written, image or a live camera feed."/>
+  <surp_send value="Send Surprise"/>
+  <surp_surprise_for value="Surprise {$performerid}"/>
+  <surp_exclusive value="Nice Surprise"/>
+  <surp_standard value="Little Surprise"/>
+  <surp_custom value="Great Surprise"/>
+  <surp_credit_1 value="for 1 credit"/>
+  <surp_credit_2 value="for 5 credits"/>
+  <surp_credit_3 value="for 10 credits"/>
+  <surp_choose_surprise value="To show your feelings choose a Surprise:"/>
+  <surp_send_warning value="Value of surprise is deducted from your balance"/>
+  <birthday_1 value="{$performerid}'s birthday is tomorrow.\n&lt;font color='#{$linkcolor}'&gt;Send a Birthday Surprise!&lt;/font&gt;"/>
+  <birthday_2 value="{$performerid}'s birthday is today.\n&lt;font color='#{$linkcolor}'&gt;Send a Birthday Surprise!&lt;/font&gt;"/>
+  <birthday_3 value="{$performerid}'s birthday was yesterday.\n&lt;font color='#{$linkcolor}'&gt;Send a Birthday Surprise!&lt;/font&gt;"/>
+  <surp_notification_title value="Surprise {$performerid}"/>
+  <surp_notification_message value="Surprise sent to {$performerid}"/>
+  <snapshot_chat_text value="{$usernick} took a snapshot of {$performerid}"/>
+  <snapshot_activate_button value="Activate feature"/>
+  <snapshot_activate_warning value="Each Snapshot costs 0.3 Credits"/>
+  <snapshot_saving value="Saving snapshot..."/>
+  <snapshot_saving_multiple value="Saving snapshot ( {$current} / {$all} ) ..."/>
+  <snapshot_info_message value="Join the Model in private to take Snapshots"/>
+  <snapshot_error value="Snapshot not saved. Please try again!"/>
+  <snapshot_success value="&lt;font color='#66CC00'&gt;Snapshot saved successfully&lt;/font&gt; -0.3 Credits"/>
+  <snapshot_success_multiple value="&lt;font color='#66CC00'&gt;{$snapshotcount} snapshots saved successfully&lt;/font&gt; -{$snapshotcost} Credits"/>
+  <take_snapshot value="Take a snapshot"/>
+  <allow value="Allow"/>
+  <curtain_sneakpeek value="Take a peek"/>
+  <curtain_go_private value="Let's go to private"/>
+  <curtain_memberchat value="I'm in Member Chat"/>
+  <curtain_privatechat value="Iâ€™m in Private Chat"/>
+  <curtain_groupprivatechat value="Iâ€™m in Group Private Chat."/>
+  <curtain_join value="Join {$performerid} in Private for more!"/>
+  <curtain_join_or_peek value="Peek into my room for 1 Credit."/>
+  <curtain_take_peek_into value="Peek into my room for 1 Credit."/>
+  <curtain_peek_not_allowed value="You can take a peek later."/>
+  <curtain_liked_sneakpeek value="Sneak Peek Ended"/>
+  <curtain_join_private value="Start Private Show"/>
+  <curtain_waiting_for_peek value="Sneak Peek loading..."/>
+  <curtain_want_more_fun value="Want some private fun?"/>
+  <curtain_join_to_get value="Come, join me in my room!"/>
+  <curtain_join_afterpeek value="Start Private Show"/>
+  <start_private_now value="Start Private Show "/>
+  <transaction_in_progress value="Transaction in progress"/>
+  <transaction_failed value="Transaction failed!"/>
+  <transaction_success value="Transaction successful!"/>
+  <transaction_declined value="Transaction declined!"/>
+  <invitation_ok_label value="Start Private Show"/>
+  <invitation_title value="{$performerid} invites you to a Private Chat!"/>
+  <default_invitation value="I'm so horny, Baby!\nWhat are you waiting for?"/>
+  <default_invitation_nonnude value="Hello Baby.\nLet's chat in Private!"/>
+  <popup_not_enough_credit value="Not enough Credits to use this feature"/>
+  <popup_no_free_slots value="You canâ€™t add more Models.\n Total number of Favorites reached."/>
+  <popup_favorites_title value="Favorites"/>
+  <popup_add_fav_failed value="Adding to favorite list failed!"/>
+  <popup_rem_fav_failed value="Removing from favorite list failed!"/>
+  <offline_warring_add_favorite value="Model is currently offline.\n&lt;font color='#{$linkcolor}'&gt;&lt;a href='event:addFavorite'&gt;Add&lt;/a&gt;&lt;/font&gt; {$performerid} to your Favorites\nor &lt;font color='#ffcc00'&gt;&lt;a href='event:sendSurprise'&gt;send a surprise&lt;/a&gt;&lt;/font&gt;!"/>
+  <offline_warring value="Model is currently offline.\n&lt;font color='#{$linkcolor}'&gt;&lt;a href='event:sendSurprise'&gt;send a surprise&lt;/a&gt;&lt;/font&gt; to {$performerid}!"/>
+  <enter_text value="Start chatting here..."/>
+  <auctwinn value="[Auction Winner]"/>
+  <myself value="Me"/>
+  <performer_onprivate value="{$performerid} is in Private."/>
+  <performer_membersonly value="{$performerid} is in Member Chat."/>
+  <performer_back value="{$performerid} is back."/>
+  <guest_welcome_text_free value="&lt;B&gt;Hi {$usernick}, Sign Up FREE!&lt;/B&gt;{$separator}"/>
+  <guest_welcome_text value="&lt;B&gt;Hi {$usernick}, Sign Up now!&lt;/B&gt;{$separator}"/>
+  <freemember_welcome_text value="&lt;B&gt;Hi {$usernick}! Let's have fun in private!&lt;/B&gt;{$separator}"/>
+  <member_welcome_text value="&lt;B&gt;Hi {$usernick}! Let's have fun in private!&lt;/B&gt;{$separator}"/>
+  <performer_id value="{$performerid}"/>
+  <your_nick value="Your nick is {$usernick}"/>
+  <low_cam_feed value="Model's connection is slow. Stream quality might be affected."/>
+  <already_on_private value="You're already in Private with a different Performer."/>
+  <went_offline value="{$performerid}'s gone offline"/>
+  <performer_is_offline value="{$performerid} is offline"/>
+  <chat_with_others value="Thousands of Models are ready to chat with you"/>
+  <chat_with_others_perfcount value="{$performercount} Models are ready to chat with you!"/>
+  <browse_online_models value="Browse Online Models"/>
+  <chat_with_other_performers value="Chat with other online models!"/>
+  <back_to_lispage value="Back to Listpage"/>
+  <back_to_model value="Back to Model"/>
+  <watch_teaser value="Watch Teaser"/>
+  <watching_teaser value="&lt;font color='#CCCCCC'&gt;You're watching a video intro.&lt;/font&gt;"/>
+  <loa_null value="{$performerid} is offline."/>
+  <loa_years value="{$performerid} has been offline for more than a year."/>
+  <loa_months value="{$performerid} has been offline for {$n} months."/>
+  <loa_days value="{$performerid} has been offline for {$n} days."/>
+  <loa_hours value="{$performerid} has been offline for {$n} hours."/>
+  <loa_minutes value="{$performerid} has been offline for less than an hour."/>
+  <sign_up_note_free value="How long you want be {$guest}?\n &lt;a href='event:signUpFree' &gt;&lt;font color='#{$linkcolor}' &gt;Sign up FREE for a unique username!&lt;/font&gt;&lt;/a&gt;"/>
+  <sign_up_note value="How long you want be {$guest}?\n &lt;a href='event:signUpFree' &gt;&lt;font color='#{$linkcolor}' &gt;Sign up for a unique username!&lt;/font&gt;&lt;/a&gt;"/>
+  <translate_info value="Automatic chat translation.\nChat in your own language!"/>
+  <translating value="translating...."/>
+  <buy_credits_title value="BUY CREDITS"/>
+  <private_finished value="Private Show finished"/>
+  <ready_for_more value="Ready for more?"/>
+  <top_up_balance value="Buy Credits to see more Private Shows."/>
+  <private_end_time_is_up value="Time is up!"/>
+  <show_all_models value="Show online Models"/>
+  <back_to_private value="Back to Private"/>
+  <private_end_perfcount value="{$performercount} Models are online now."/>
+  <private_end_t_performer value="Thousands of Models are ready to chat with you! "/>
+  <private_end_label value="Check out more hot models!"/>
+  <private_ended value="The Private has ended!"/>
+  <sex_male value="male"/>
+  <sex_female value="female"/>
+  <lng_ba value="Bosnian"/>
+  <lng_en value="English"/>
+  <lng_it value="Italian"/>
+  <lng_de value="German"/>
+  <lng_fr value="French"/>
+  <lng_hu value="Hungarian"/>
+  <lng_fi value="Finnish"/>
+  <lng_es value="Spanish"/>
+  <lng_cz value="Czech"/>
+  <lng_sk value="Slovak"/>
+  <lng_nl value="Dutch"/>
+  <lng_ja value="Japanese"/>
+  <lng_pl value="Polish"/>
+  <lng_pt value="Portugese"/>
+  <lng_dk value="Danish"/>
+  <lng_se value="Swedish"/>
+  <lng_no value="Norwegian"/>
+  <lng_gr value="Greek"/>
+  <lng_tr value="Turkish"/>
+  <lng_ru value="Russian"/>
+  <lng_ro value="Romanian"/>
+  <lng_cn value="Chinese"/>
+  <lng_il value="Hebrew"/>
+  <lng_lv value="Latvian"/>
+  <lng_bg value="Bulgarian"/>
+  <lng_ee value="Estonian"/>
+  <lng_lt value="Lithuanian"/>
+  <lng_by value="Belorussian"/>
+  <lng_kr value="Korean"/>
+  <lng_hr value="Croatian"/>
+  <lng_rs value="Serbian"/>
+  <lng_me value="Montenegrin"/>
+  <lng_in value="Indian"/>
+  <lng_ua value="Ukrainian"/>
+  <lng_si value="Slovenian"/>
+  <quickbuy_buy value="Buy Credits"/>
+  <quickbuy_info value="You can buy credits with a single click."/>
+  <quick_buy_title value="Quick buy"/>
+  <credits value="Credits"/>
+  <close_gallery value="Close Gallery"/>
+  <gallery value="Gallery"/>
+  <gallery_count value="{$currentcount} of {$totalcount}"/>
+  <premium_conten value="PREMIUM CONTENT"/>
+  <buy_credits_for_photo value="Buy Credits to see this photo."/>
+  <members_only value="MEMBERS ONLY"/>
+  <other_contents_premium value="All other photos are premium content."/>
+  <buy_credits value="Buy Credits"/>
+  <sign_up_free value="Sign Up FREE"/>
+  <sign_up value="Sign Up"/>
+  <two_way_enabled value="TWO-WAY AUDIO ENABLED!"/>
+  <two_way_enjoy value="Enjoy chatting without a keyboard!"/>
+  <performer_currently_offline value="Performer is currently offline"/>
+  <get_credits value="Get Credits"/>
+  <no_credits value="No Credits"/>
+  <private_started value="Your private show has started"/>
+  <twoway_private_started value="Your Private Show has started! Enjoy it with voice chat."/>
+  <my_snapshot value="My Snapshot"/>
+  <feedback_about value="If you need assistance now, contact our"/>
+  <feedback_support value="Live Chat Support."/>
+  <type_title value="Type:"/>
+  <feedback_positive_type value="Positive comment"/>
+  <feedback_negative_type value="Problem with Model"/>
+  <feedback_technical_type value="Technical problem"/>
+  <comment_title value="Comment:"/>
+  <send_a_feedback value="Send a Feedback"/>
+  <send_feedback value="Send Feedback"/>
+  <feedback_notification_title value="Thank you for your feedback."/>
+  <feedback_notification value="We appreciate your input, because it helps us\n providing you with the best {$sitename} experience."/>
+  <brightness value="Brightness"/>
+  <saturation value="Saturation"/>
+  <contrast value="Contrast"/>
+  <hue value="Hue"/>
+  <smooth value="Smooth"/>
+  <reset value="Reset"/>
+  <personal_info value="{$performerid}'s bio"/>
+  <about_me value="About me"/>
+  <about_us value="About us"/>
+  <my_bio_data value="My bio"/>
+  <performer_bio_data value="{$performerid}'s bio"/>
+  <build value="Build"/>
+  <breast_size value="Breast size"/>
+  <penis_size value="Penis size"/>
+  <height value="Height"/>
+  <weight value="Weight"/>
+  <personal_willing value="In Private Chat, I'm willing to perform"/>
+  <personal_places value="Special places"/>
+  <personal_places_bathroom value="Bathroom"/>
+  <personal_places_kitchen value="Kitchen"/>
+  <personal_places_office value="Office"/>
+  <personal_places_bar value="Bar"/>
+  <personal_places_garden value="Garden"/>
+  <group_willing value="In Private Chat, We're willing to perform"/>
+  <recommender_more value="Show more"/>
+  <safecharge_quickbuy_1 value="We're changing our payment processor. Please update your payment information."/>
+  <safecharge_quickbuy_button_1 value="Buy Credits"/>
+  <safecharge_quickbuy_1_bonus value="We're changing our payment processor. Please update your payment information NOW and receive 10 bonus Credits."/>
+  <safecharge_quickbuy_button_1_bonus value="Buy Credits  (+10 bonus)"/>
+  <safecharge_quickbuy_2 value="We're changing our payment processor. Please update your payment information."/>
+  <safecharge_quickbuy_2_bonus value="We're changing our payment processor. Please update your payment information NOW and receive 10 bonus Credits."/>
+  <safecharge_quickbuy_button_2_bonus value="Buy Credits  (+10 bonus)"/>
+  <safecharge_quickbuy_3 value="We're sorry! Due to the changing of our payment processor, your primary default payment option has been deleted and your secondary option has become active."/>
+  <safecharge_quickbuy_button_3 value="Update"/>
+  <safecharge_login_title value="Payment information update"/>
+  <safecharge_login value="In an ongoing effort to improve our services, we're changing our payment processor. Please update your payment information."/>
+  <safecharge_login_bonus value="In an ongoing effort to improve our services, we're changing our payment processor. Please update your payment information NOW and receive 10 bonus Credits in appreciation for your effort."/>
+  <safecharge_login_button value="Buy Credits"/>
+  <safecharge_login_button_bonus value="Buy Credits (+10 bonus)"/>
+  <button_exit_overlay value="Exit"/>
+  <button_exit value="Close"/>
+  <buffering_jsm2_memberapplet value="buffering..."/>
+  <low_bandwidth_warning value="Use the lower quality setting for more consistent video stream."/>
+  <low_bandwidth_autochange value="Your video setting was automatically changed to improve the stream quality."/>
+  <quickbuy_info_tpp value="Get to your FREE CREDITS!"/>
+  <quickbuy_bonus_more value="{$bonus_more} purchases to earn your bonus"/>
+  <quickbuy_info_tpp_ok value="YOU JUST EARNED YOUR FREE CREDITS!"/>
+  <quickbuy_bonus_info value="Congratulations!\nGet your bonus by choosing a package below."/>
+  <tpp_timeup_pend value="Just {$bonus_more} more buys to get your FREE Credits!"/>
+  <tpp_ok value="YES, I'll take it"/>
+  <tpp_no value="No, thanks"/>
+  <tpp_guestinfo_title value="Hey, do you want"/>
+  <tpp_guestinfo_title2 value="10.99 FREE CREDITS?"/>
+  <tpp_guestinfo_more1 value="Sign up and receive up to 10.99 free Credits"/>
+  <tpp_guestinfo_more2 value="Repeated registrations do not generate additional sign-up Credits,\nthis is a one-time offer"/>
+  <tpp_guestinfo_more3 value="Qualify to earn up to 10.99 free Credits again after every 11th\nCredit package purchase"/>
+  <tpp_guestinfo_timed_out value="Get 10.99 FREE Credits!"/>
+  <chars_left_title value="You have {$characters} characters left."/>
+  <login_needed_footer_tpp value="or log in"/>
+  <login_needed_message_tpp value="Become a Member and get 10.99 FREE Credits!"/>
+  <logprivate_running_out_tpp value="Low on Credits?"/>
+  <logprivate_add_credit_now_tpp value="Get 10.99 FREE Credits!"/>
+  <logprivate_credit_left_tpp value="You have {$credit} Credits left"/>
+  <curtain_sneakpeek_tpp value="Peek"/>
+  <curtain_join_or_peek_tpp value="Take a peek for 1 Credit"/>
+  <curtain_tpp_footer value="or &lt;a href='event:listpage'&gt;&lt;font color='#{$linkcolor}'&gt;join my Private&lt;/font&gt;&lt;/a&gt; for real fun"/>
+  <guest_welcome_text_free_tpp value="&lt;B&gt;Hi {$usernick},&lt;/B&gt; join and get 10.99 FREE Credits!{$separator}"/>
+  <chat_with_others_tpp value="More Models wait for you"/>
+  <sign_up_note_free_tpp value="&lt;a href='event:signUpFree' &gt;&lt;font color='#{$linkcolor}' &gt;Join and get 10.99 FREE Credits!&lt;/font&gt;&lt;/a&gt;"/>
+  <other_contents_premium_tpp value="Premium content"/>
+  <sign_up_free_tpp value="Sign up and get 10.99 Credits"/>
+  <login_needed_join_now value="Join now"/>
+  <no_bonus value="NO BONUS"/>
+  <free_credits value="FREE Credits"/>
+  <bonus_unlocked value="Bonus unlocked"/>
+  <more_bonus_buys value="Only {$bonus} more buys"/>
+  <ppp_free_credits value="Get to your {$bonus} FREE Credits!"/>
+  <ppp_package_free_credits value="Get the package with {$bonus} FREE Credits!"/>
+  <buy value="Buy"/>
+  <ppp_guestinfo_title value="Let's spend"/>
+  <ppp_guestinfo_title2 value="FREE minutes"/>
+  <ppp_guestinfo_question value="Private minutes together!"/>
+  <ppp_ok value="Get FREE Credits"/>
+  <ppp_no value="No, thanks"/>
+  <ppp_guestinfo_more1 value="You can get almost 27 FREE Credits by purchasing the bonus packages"/>
+  <ppp_guestinfo_more2 value="You can unlock FREE Credits regularly"/>
+  <ppp_no_credit_snapshot value="Take almost 90 FREE snapshots!"/>
+  <ppp_no_credit_surprise value="Send almost 27 FREE surprises!"/>
+  <ppp_no_credit_peek value="Take almost 27 FREE sneakpeaks!"/>
+  <ppp_no_credit_private value="Let's spend {$priv_time} FREE Private minutes together!"/>
+  <out_of_private_teaser value="Out of Private Teaser"/>
+  <out_of_private_teaser_message value="You ran out of Private Teaser! Purchase now and get FREE CREDITS!"/>
+  <are_you_sure value="Are you sure?"/>
+  <offer_one value="Purchase our package now!"/>
+  <irresistable_offer value="Irresistable Offer"/>
+  <offer_two value="Our last, irresistable offer is waiting only for you!"/>
+  <private_teaser value="Private Teaser"/>
+  <peek_into_room value="Peek into my room"/>
+  <have_private_teaser_left value="You have {$privateTeaserLeft} FREE Private Teaser left"/>
+  <curtain_free_look value="Take a FREE Look"/>
+</data>

@@ -1,0 +1,136 @@
+PHTTP68.71.220.73"†
+GET /crossdomain.xml HTTP/1.1
+Host: globalregsession.go.com
+Connection: keep-alive
+vUser-Agent: Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/31.0.1650.63 Safari/537.36
+Accept: */*
+Referer: http://go.com/
+$Accept-Encoding: gzip,deflate,sdch
+!Accept-Language: en-US,en;q=0.8
+¸Cookie: __gads=ID=e28cd0b119d8ac8d:T=1396993855:S=ALNI_Mb_29g3tRcPMuZUq351rsLFVPAGpg; __utma=133755288.549501925.1396993856.1396993856.1396993856.1; __utmb=133755288.1.10.1396993856; __utmc=133755288; __utmz=133755288.1396993856.1.1.utmcsr=(direct)|utmccn=(direct)|utmcmd=(none); ctoArPageName=""; tq_rsi_segs=
+
+*¨3
+HTTP/1.1 200 OK
+Connection: Keep-Alive
+Content-Length: 6423
+,Content-Type: text/xml; charset=iso-8859-1
+Server: Barista/3.3.5
+™2
+<?xml version="1.0"?><!DOCTYPE cross-domain-policy SYSTEM "http://www.macromedia.com/xml/dtds/cross-domain-policy.dtd">
+<cross-domain-policy>
+    <allow-access-from domain="*.go.com" />
+    <allow-access-from domain="*.disney.go.com" secure="false"/>
+	<allow-access-from domain="*.disney" />
+    <allow-access-from domain="www.disney.go.com" secure="false" />
+    <allow-access-from domain="*.disneyblast.go.com" secure="false" />
+    <allow-access-from domain="*.dmc.go.com" secure="false" />
+    <allow-access-from domain="*.playhouse.go.com" secure="false" />
+    <allow-access-from domain="adisney.go.com" />
+    <allow-access-from domain="adimages.go.com" />
+    <allow-access-from domain="bscapps.cards.go.com" />
+    <allow-access-from domain="disney.go.com" secure="false" />
+    <allow-access-from domain="ads.disney.go.com" />
+    <allow-access-from domain="ad.disney.go.com" />
+    <allow-access-from domain="Adsatt.Disney.starwave.com" />
+    <allow-access-from domain="*.starwave.com" />
+    <allow-access-from domain="*.Disney.starwave.com" />
+    <allow-access-from domain="*.disney.starwave.com" />
+    <allow-access-from domain="cablelocator.disney.go.com" />
+    <allow-access-from domain="quiz.disney.go.com" />
+    <allow-access-from domain="studio.go.com" />
+    <allow-access-from domain="psc.disney.go.com" secure="false" />
+    <allow-access-from domain="apsc.disney.go.com" secure="false" />
+    <allow-access-from domain="tv.disney.go.com" secure="false" />
+    <allow-access-from domain="atv.disney.go.com" secure="false"/>
+    <allow-access-from domain="tokenzone.go.com" secure="false" />
+    <allow-access-from domain="disney.tokenzone.com" secure="false" />
+    <allow-access-from domain="video.go.com" secure="false"/>
+    <allow-access-from domain="*.movies.go.com" secure="false" />
+    <allow-access-from domain="*.gamekingdom.go.com" secure="false" />
+    <allow-access-from domain="*.familyfun.go.com" secure="true" />
+    <allow-access-from domain="abc.go.com" secure="false" />
+    <allow-access-from domain="a.abc.com" secure="false" />
+    <allow-access-from domain="abcpreview.go.com" secure="false" />
+    <allow-access-from domain="r.abc.go.com" secure="false" />
+    <allow-access-from domain="*.dolimg.com" secure="false" /> 
+    <allow-access-from domain="dolimg.com" secure="false" />
+    <allow-access-from domain="amedia.disney.go.com" secure="false" />
+    <allow-access-from domain="assets.espn.go.com" secure="false"/>
+    <allow-access-from domain="disneydvd.disney.go.com" secure="false"/>
+    <allow-access-from domain="pollcentral.go.com" secure="false"/>
+    <allow-access-from domain="oscarpreview.go.com" secure="false" />
+    <allow-access-from domain="a.oscar.go.com" secure="false" />
+    <allow-access-from domain="*.ddb.go.com" secure="false"/>
+    <allow-access-from domain="preschooltime.go.com" secure="false" />
+    <allow-access-from domain="a.disney.go.com" secure="false"/>
+	<allow-access-from domain="cdn.tabblo.com.edgesuite.net"/>
+	<allow-access-from domain="*.clearspring.com"/>
+	<allow-access-from domain="clearspring.com"/>
+	<allow-access-from domain="*.go.com"/>
+	<allow-access-from domain="*.disney.go.com"/>
+	<allow-access-from domain="disney.go.com"/>
+	<allow-access-from domain="home.disney.go.com"/>
+	<allow-access-from domain="dolimg.com"/>
+	<allow-access-from domain="*.dolimg.com"/>
+	<allow-access-from domain="*.teamoffermatica.com"/>
+	<allow-access-from domain="teamoffermatica.com"/>
+	<allow-access-from domain="adisney.go.com"/>
+	<allow-access-from domain="adimages.go.com"/>
+	<allow-access-from domain="psc.disney.go.com"/>
+	<allow-access-from domain="bscapps.cards.go.com"/>
+	<allow-access-from domain="bscapps.disney.go.com"/>
+	<allow-access-from domain="www.disney.go.com"/>
+	<allow-access-from domain="ads.disney.go.com"/>
+	<allow-access-from domain="ad.disney.go.com"/>
+	<allow-access-from domain="Adsatt.Disney.starwave.com"/>
+	<allow-access-from domain="*.starwave.com"/>
+	<allow-access-from domain="*.Disney.starwave.com"/>
+	<allow-access-from domain="*.disney.starwave.com"/>
+	<allow-access-from domain="*.screenplayinc.com"/>
+	<allow-access-from domain="*.totaleclips.com"/>
+	<allow-access-from domain="cablelocator.disney.go.com"/>
+	<allow-access-from domain="quiz.disney.go.com"/>
+	<allow-access-from domain="studio.go.com"/>
+	<allow-access-from domain="studio.disney.go.com"/>
+	<allow-access-from domain="forums.go.com"/>
+	<allow-access-from domain="tokenzone.go.com"/>
+	<allow-access-from domain="tokenzone.disney.go.com"/>
+	<allow-access-from domain="apsc.disney.go.com"/>
+	<allow-access-from domain="a.disney.go.com"/>
+	<allow-access-from domain="tv.disney.go.com"/>
+	<allow-access-from domain="atv.disney.go.com"/>
+	<allow-access-from domain="dcapps.disney.go.com"/>
+	<allow-access-from domain="dcquiz.disney.go.com"/>
+	<allow-access-from domain="scores.disney.go.com"/>
+	<allow-access-from domain="*.kodakpirates.com"/>
+	<allow-access-from domain="register.go.com" secure="false"/>
+	<allow-access-from domain="register.disney.go.com" secure="false"/>
+	<allow-access-from domain="media.disney.go.com"/>
+	<allow-access-from domain="www.disneyfairies.com"/>
+	<allow-access-from domain="disneyfairies.com"/>
+	<allow-access-from domain="web.trailerpark.com"/>
+	<allow-access-from domain="*.verizon.net"/>
+	<allow-access-from domain="*.verizon.com"/>	
+	<allow-access-from domain="theater.disney.go.com"/>
+	<allow-access-from domain="*.pixiehollow.com"/>
+	<allow-access-from domain="*.hyfntrak.com"/>
+	<allow-access-from domain="wakingsleepingbeautymovie.com"/>
+	<allow-access-from domain="disney.it" />
+	<allow-access-from domain="disney.es" />
+	<allow-access-from domain="disney.co.uk" />
+	<allow-access-from domain="disney.fr" />
+	<allow-access-from domain="disney.com.au" />
+	<allow-access-from domain="disney.com.br" />
+	<allow-access-from domain="disneylatino.com" />
+	<allow-access-from domain="*.disney.es" />
+	<allow-access-from domain="*.disney.co.uk" />
+	<allow-access-from domain="*.disney.fr" />
+	<allow-access-from domain="*.disney.it" />
+	<allow-access-from domain="*.disney.com.au" />
+	<allow-access-from domain="*.disney.com.br" />
+	<allow-access-from domain="*.disneylatino.com" />
+	<allow-access-from domain="*.disneyinternational.com" />
+	<allow-access-from domain="*.disney" />
+	<allow-access-from domain="*.clubpenguin.com" />
+	<allow-access-from domain="clubpenguin.com" /> 
+</cross-domain-policy>

@@ -1,0 +1,31 @@
+PHTTP23.74.28.10"Ø
+OGET /modules/mod_pch_uninav/assets/js/pchcom.js?v=3.1.32.1.454-18308 HTTP/1.1
+Host: www.pch.com
+Connection: keep-alive
+Accept: */*
+vUser-Agent: Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/31.0.1650.63 Safari/537.36
+Referer: http://www.pch.com/
+$Accept-Encoding: gzip,deflate,sdch
+!Accept-Language: en-US,en;q=0.8
+bCookie: deb088d138aa52ddbeb48990e3e58a5e=k12m2f9f5ent563l9fgbgvu270; pdd=D; pci=n3qg5f4gGbPBKvNH
+
+*¨
+HTTP/1.1 200 OK
+Server: Apache
+.Last-Modified: Thu, 20 Jun 2013 15:22:41 GMT
+"ETag: "1e05ef8-d0-4df9784635240"
+Accept-Ranges: bytes
+Content-Length: 208
+GP3P: CP="CAO DSP COR CUR ADM DEV TAI PSA PSD IVA IVD CON OUR LEG UNI"
+Content-Type: text/javascript
+%Date: Tue, 08 Apr 2014 22:08:04 GMT
+Connection: keep-alive
+Ò
+if ( typeof window.PCH !== 'object') {
+	window.PCH = {};
+}
+/** pch.com specific functionatliy for universal nav **/
+PCH.completeRegister = function(e){
+	e.preventDefault();
+	PCHSSOLightbox.createPassword();
+}

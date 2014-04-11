@@ -1,0 +1,23 @@
+PHTTP
+18.7.20.69"þ
+OGET /fly/102-fly/bundles/cnetjs/js-build/components/leads-tracker.js HTTP/1.1
+Host: cnet4.cbsistatic.com
+Connection: keep-alive
+Accept: */*
+vUser-Agent: Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/31.0.1650.63 Safari/537.36
+Referer: http://www.cnet.com/
+$Accept-Encoding: gzip,deflate,sdch
+!Accept-Language: en-US,en;q=0.8
+
+*Ô
+HTTP/1.1 200 OK
+Server: nginx
+(Content-Type: application/x-javascript
+Content-Length: 685
+.Last-Modified: Tue, 08 Apr 2014 18:43:51 GMT
+2Access-Control-Allow-Origin: http://www.cnet.com
+Accept-Ranges: bytes
+%Date: Tue, 08 Apr 2014 21:34:31 GMT
+Connection: keep-alive
+¯
+define(["jquery","version!fly/managers/debug","managers/omniture","version!fly/components/base"],function(e,t,n){t=t.init("leadsTracker"),e.widget("cnet.leadsTracker",e.fly.base,{options:{},viewguid:null,_create:function(){this._setup(),this.viewguid=e("body").data("viewguid"),this.viewguid&&this.$element.attr("href",this.$element.attr("href")+"&viewguid="+this.viewguid),this._setupEvents()},_setupEvents:function(){var r=this;this.$element.on("click",function(r){try{var i=r.target.href,s=i.split("?")[1],o=s.split("&"),u={};e.each(o,function(e,t){var n=t.split("=");u[n[0]]=n[1]}),n.trackEvent("clickLead",u,r.target,null,e.noop)}catch(a){t.log("Unable to parse dw url",a)}})}})})

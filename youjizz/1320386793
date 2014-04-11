@@ -1,0 +1,26 @@
+PHTTP31.192.122.226" 
+-GET /social/2.0/js/executer-min.js HTTP/1.1
+Host: www.youjizz.com
+Connection: keep-alive
+Accept: */*
+vUser-Agent: Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/31.0.1650.63 Safari/537.36
+"Referer: http://www.youjizz.com/
+$Accept-Encoding: gzip,deflate,sdch
+!Accept-Language: en-US,en;q=0.8
+DCookie: PHPSESSID=rqdrsda89d4f3vdc4tg1e824q3; RNLBSERVERID=ded1418
+
+*Ž
+
+HTTP/1.1 200 OK
+Server: nginx/1.4.4
+%Date: Tue, 08 Apr 2014 22:37:44 GMT
+(Content-Type: application/x-javascript
+Content-Length: 1025
+.Last-Modified: Fri, 14 Mar 2014 03:23:54 GMT
+Connection: close
+ETag: "5322764a-401"
+Accept-Ranges: bytes
+ƒ
+var socialTimeoutID=undefined;
+function exec(){var service=arguments[0],command=undefined,data=undefined,url=undefined;if(arguments.length>=2&&typeof arguments[1]=="string"){command=arguments[1];if(arguments.length==3){url=arguments[1];data=arguments[2]}}else if(arguments.length==2)data=arguments[1];var dfd=$.Deferred();var args=data||{};args.service=service;if(command)args.command=command;if(!socialTimeoutID){$(".infos").toggle(false);$(".errors").toggle(false);$(".infos").text("");$(".errors").text("")}$.ajax({url:url?url:socialurl,
+type:"post",data:args,dataType:"jsonp",cache:true}).done(function(data){if(data&&data.infos){$(".infos").toggle(true);$(".infos").text(data.infos);socialTimeoutID=setTimeout(function(){$(".infos").hide("slow");socialTimeoutID=undefined},5E3)}if(data&&data.error){$(".errors").toggle(true);$(".errors").text(data.error);socialTimeoutID=setTimeout(function(){$(".errors").hide("slow");socialTimeoutID=undefined},5E3);dfd.reject()}else dfd.resolve(data)}).fail(dfd.reject);return dfd};

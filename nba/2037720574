@@ -1,0 +1,863 @@
+PHTTP
+18.7.20.68"Å
+HGET /nba/nba/.element/css/2.1/sect/allaccess/nbaAllAccess.css HTTP/1.1
+Host: i.cdn.turner.com
+Connection: keep-alive
+Accept: text/css,*/*;q=0.1
+vUser-Agent: Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/31.0.1650.63 Safari/537.36
+Referer: http://www.nba.com/
+$Accept-Encoding: gzip,deflate,sdch
+!Accept-Language: en-US,en;q=0.8
+
+*»§
+HTTP/1.1 200 OK
+.Last-Modified: Fri, 10 Aug 2012 14:55:42 GMT
+Server: Apache
+Accept-Ranges: bytes
+Content-Length: 20760
+Content-Type: text/css
+Cache-Control: max-age=1793
+(Expires: Tue, 08 Apr 2014 22:35:20 GMT
+%Date: Tue, 08 Apr 2014 22:05:27 GMT
+Connection: keep-alive
+ö¢
+/* ALL ACCESS 2011 REDESIGN CSS 
+	Contains everything used for the All Access Overlay. 
+	----------------------------------------------------------------------------
+
+	+ TABLE OF CONTENTS
+	----------------------------------------------------------------------------
+	(1) MAIN OVERLAY CONTAINER
+	(2) HEADER CONTAINER - property logo, all access logo, benefits graphics
+	(3) BODY CONTAINER
+	(4) TEXT STYLING
+	(5) FORM STYLING
+	(6) BUTTON STYLING (including Facebook Buttons)
+	PAGE-SPECIFIC: LOGIN
+	PAGE-SPECIFIC: CREATE ACCOUNT
+	PAGE-SPECIFIC: ABOUT YOURSELF
+	PAGE-SPECIFIC: WELCOME OFFERS
+	PAGE-SPECIFIC: FACEBOOK CONNECT
+	PAGE-SPECIFIC: MISSING FIELDS
+
+	+ COLOR PALETTE
+	----------------------------------------------------------------------------
+	#000		- Black (main text color)
+	#444		- Gray (alt text color)
+	#bbb		- Light Gray (column divider)
+	#0066cc		- Blue (link text, button text)
+	#d30000		- Red (error color)
+	#343434		- Gray (input label text)
+	#363636		- Gray (welcome offers text)
+*/
+
+/*  (1) MAIN OVERLAY CONTAINER / CONTAINER STRUCTURE
+	---------------------------------------------------------------------------- */
+	
+#nbaAllAccess {
+	color: #444;
+	font: 13px Arial, Helvetica, sans-serif;
+	height: 465px;
+	width: 750px;
+}
+#nbaCloseBtn {
+	position: relative;
+	left: 732px;
+	top: 18px;
+	cursor:pointer;
+	z-index:102;
+}
+#nbaAllAccess #nbaAATop {
+	background: url(http://i.cdn.turner.com/nba/nba/.element/img/2.1/sect/allaccess/bgOverlayCorners.png) 0 0 no-repeat;
+	position: relative;
+	height: 10px;
+	z-index:101;
+}
+#nbaAllAccess #nbaAAScreenWrap {
+	background: #fff;
+	height: 444px;
+}
+#nbaAllAccess #nbaAABtm {
+	background: url(http://i.cdn.turner.com/nba/nba/.element/img/2.1/sect/allaccess/bgOverlayCorners.png) 0 -10px no-repeat;
+	height: 10px;
+}
+#nbaAllAccess #nbaAASysMsg {
+    background: #fff;
+    border: #d30000 2px solid;
+    color: #d30000;
+    display: none;
+    font-size: 14px;
+    left: 65px;
+    padding: 10px;
+    position: absolute;
+    text-align: center;
+    top: 50%;
+    width: 600px;
+    z-index: 15;
+}
+#nbaAllAccess #nbaAASysMsg .nbaSysErrHdr {
+    color: #d30000;
+    font-size: 30px;
+    font-weight: bold;
+}
+#nbaResponsysWrapper {
+	display:none;
+}
+
+/*  =(2)HEADER CONTAINER
+	---------------------------------------------------------------------------- */
+	
+#nbaAllAccess #nbaAAHeader {
+	padding: 0 1px 0 1px;
+}
+#nbaAllAccess #nbaAALogos {
+	float: left;
+	height:88px;
+	margin: 0 0 2px 0;
+}
+#nbaAllAccess .nbaAAGra {
+	background: #cbcbcb url(http://i.cdn.turner.com/nba/nba/.element/img/2.1/sect/allaccess/bgAALogo.png) 0 0 no-repeat;
+	float: right;
+	height: 85px;
+	padding: 0 0 0 1px;
+	display: block;
+}
+#nbaAllAccess #nbaAAIcons {
+	float: right;
+	margin: 0;
+	padding: 0 35px 0 0;
+}
+#nbaAllAccess #nbaLoading {
+	display:none;
+	position:absolute;
+	bottom:206px;
+	left:360px;
+}
+#nbaAllAccess #nbaAAStatusBar, #nbaAllAccess #nbaAAStatusBar a {
+	background: url(http://i.cdn.turner.com/nba/nba/.element/img/2.1/sect/allaccess/bgStatusMsg.png) 0 0 no-repeat;
+	clear: both;
+	height: 33px;
+}
+
+#nbaAllAccess #nbaAALogos img, #nbaAllAccess .nbaAAGra {
+	float: left; 	
+ }
+
+/*  =(3)BODY CONTAINER
+	---------------------------------------------------------------------------- */
+#nbaAllAccess #nbaAABody {
+	padding: 25px 40px 0 40px;
+	
+	*line-height: 14px;
+}
+#nbaAllAccess .nbaAALeftCol {
+	border-right: #bbb 1px solid;
+	float: left;
+	width: 335px;
+}
+#nbaAllAccess .nbaAARightCol {
+	float: right;
+	width: 302px;
+}
+#nbaAllAccess .nbaAARow {
+	clear: both;
+}
+
+/*  =(4)TEXT STYLING
+	---------------------------------------------------------------------------- */
+
+#nbaAllAccess h1 {
+	color: #000;
+	font-size: 18px;
+	margin: 0;
+}
+#nbaAllAccess p {
+	margin: 6px 0;
+	padding: 0;
+}
+#nbaAllAccess a, #nbaAllAccess a:visited {
+	color: #0066cc;
+	outline: 0;
+	text-decoration: none;
+}
+#nbaAllAccess a:hover, #nbaAllAccess a:active {
+	color: #444;
+	text-decoration: underline;
+}
+#nbaAllAccess .nbaRequired {
+	color: #444;
+	font-size: 10px;
+	left: 255px;
+	position: absolute;
+}
+#nbaAllAccess .nbaRequired.nbaError {
+	color: #d30000;
+	font-weight: bold;
+	left: 250px;
+}
+
+
+/*  =(5)FORM STYLING
+	---------------------------------------------------------------------------- */
+
+#nbaAllAccess form {
+	margin: 20px 0 0 0;
+	padding 0;
+}
+#nbaAllAccess .nbaInputBlock {
+	color: #000;
+	margin-bottom: 6px;
+}
+#nbaAllAccess .nbaInputBlock input {
+	background: #eee;
+	border: #444 1px solid;
+	height: 17px;
+	margin: 0;
+	padding: 3px;
+	width: 197px
+}
+#nbaAllAccess .nbaInputBlock.nbaError input {
+	border: #d30000 1px solid;
+}
+#nbaAllAccess .nbaInputBlock label {
+	color: #343434;
+	display:block;
+	float: left;
+	font-size: 11px;
+	font-weight: bold;
+	padding: 6px 8px 0 0;
+	text-align: right;
+	width: 90px;
+}
+#nbaAllAccess .nbaInputBlock.nbaError label {
+	color: #d30000;
+}
+#nbaAllAccess .nbaInputBlock .nbaErrorMessage {
+	display: none;
+}
+#nbaAllAccess .nbaInputBlock.nbaError .nbaErrorMessage {
+	background: #d30000;
+	color: #fff;
+	display: block;
+	font-size: 9px;
+	margin: 0 0 0 98px;
+	padding: 4px 7px;
+	width: 191px;
+	
+    /* For IE 7 (to remove 1px space after input box)*/
+   	*margin-top: -1px;
+   	*position: relative;
+}
+#nbaAllAccess .nbaForgotPassword {
+	font-size: 11px;
+	margin: 0 0 0 105px;
+}
+
+/*  =(6)BUTTON STYLING
+	---------------------------------------------------------------------------- */
+	
+#nbaAllAccess a.nbaButton {
+    background: url(http://i.cdn.turner.com/nba/nba/.element/img/2.1/sect/allaccess/bgButton.gif) no-repeat scroll top right;
+    color: #0066cc;
+    display: inline-block;
+    font-size: 11px;
+    font-weight: bold;
+    height: 23px;
+    margin-right: 6px;
+    padding-right: 4px;
+    text-decoration: none;
+    text-transform: uppercase;
+    
+
+}
+#nbaAllAccess a.nbaButton span {
+    background: url(http://i.cdn.turner.com/nba/nba/.element/img/2.1/sect/allaccess/bgButtonSpan.gif) no-repeat;
+    display: block;
+    line-height: 13px;
+    padding: 5px 6px 5px 10px;
+}
+#nbaAllAccess a.nbaButton:hover {
+    color: #444;
+}
+#fb-auth{
+	background:url(http://i.cdn.turner.com/nba/nba/.element/img/2.1/sect/allaccess/fbSprite.png) no-repeat #5F78AB;
+	background-position:left -188px;
+	cursor:pointer;
+	display:inline-block;
+	border-bottom: 1px solid #1A356E;
+	border-top: 1px solid #879AC0;
+	color: #FFFFFF;
+	display: block;
+	font-family: "lucida grande",tahoma,verdana,arial,sans-serif;
+	font-weight: bold;
+	margin: 1px 1px 0 21px;
+	padding: 4px 26px 3px;
+	text-shadow: none;
+}
+/*  =PAGE-SPECIFIC: LOGIN <div id="nbaAAScreenWrap" class="nbaLogin">
+	---------------------------------------------------------------------------- */
+#nbaAllAccess .nbaLogin .nbaAARow {
+	padding-top: 10px;
+}
+#nbaAllAccess .nbaLogin .nbaAALeftCol {
+	height: 165px;
+}
+#nbaAllAccess .nbaLogin .nbaInputBlock label {
+	font-size: 12px;
+}
+#nbaAllAccess .nbaLogin p.nbaForgotPassword a {
+    font-size: 11px;
+}
+#nbaAllAccess .nbaLogin .nbaAALeftCol .nbaButton {
+	margin: 12px 0px 10px 98px; 
+}
+#nbaAllAccess .nbaLogin .nbaNewUser {
+	background: url(http://i.cdn.turner.com/nba/nba/.element/img/2.1/sect/allaccess/bgNewUser.png);
+	margin: 0 auto;
+	height: 64px;
+	width: 274px;
+}
+#nbaAllAccess .nbaLogin .nbaNewUser h1 {
+	float: left;
+	margin: 20px 20px 0 20px;
+	width: 100px;
+}
+#nbaAllAccess .nbaLogin .nbaNewUser .nbaButton {
+	margin: 20px 0 0 16px;
+}
+#nbaAllAccess #fb-auth {
+	margin: 20px 0;
+}
+
+
+/*  =PAGE-SPECIFIC: CREATE ACCOUNT <div id="nbaAAScreenWrap" class="nbaCreateAccount">
+	---------------------------------------------------------------------------- */
+
+#nbaAllAccess .nbaCreateAccount #nbaAAStatusBar {
+	background-position: 0 -33px;
+}
+#nbaAllAccess .nbaCreateAccount form {
+	margin: 12px 0 0 0;
+	padding 0;
+}
+#nbaAllAccess .nbaCreateAccount .nbaInputBlock label {
+	width: 92px;
+}
+#nbaAllAccess .nbaCreateAccount .nbaInputBlock.nbaTwoLines label {
+	padding-top: 0;
+}
+#nbaAllAccess .nbaCreateAccount .nbaInputBlock.nbaError .nbaErrorMessage {
+	margin: 0 0 0 100px;
+}
+#nbaAllAccess .nbaCreateAccount .nbaAALeftCol {
+	height: 280px;
+	position: relative;
+}
+#nbaAllAccess .nbaCreateAccount #nbaLegal {
+	bottom: 1px;
+	font-size: 11px;
+	position: absolute;
+}
+#nbaAllAccess .nbaCreateAccount #nbaLegal .nbaButton {
+	margin-left: 16px;
+}
+
+/*  =PAGE-SPECIFIC: ABOUT YOURSELF <div id="nbaAAScreenWrap" class="nbaAboutYourself">
+	---------------------------------------------------------------------------- */
+
+#nbaAllAccess .nbaAboutYourself #nbaAAStatusBar {
+	background-position: 0 -66px;
+}
+#nbaAllAccess .nbaAboutYourself #nbaAAStatusBar a {
+	background-position: 0 -66px;
+	display:block;
+	height: 33px;
+	width: 240px;
+}
+#nbaAllAccess .nbaAboutYourself #nbaAAStatusBar a:hover {
+	background-position: 0 -33px;
+}
+#nbaAllAccess .nbaAboutYourself .nbaAARow {
+	height: 280px;
+	position: relative;
+}
+#nbaAllAccess form {
+    margin: 12px 0 0;
+}
+#nbaAllAccess .nbaAboutYourself .nbaInputBlock {
+	margin-bottom: 7px;
+}
+#nbaAllAccess .nbaAboutYourself .nbaInputBlock label {
+	width: 115px;
+}
+#nbaAllAccess .nbaAboutYourself #nbaBirthdateBlk input {
+	width: 70px;
+}
+#nbaAllAccess .nbaAboutYourself #nbaBirthdateBlk.nbaError .nbaErrorMessage {
+	margin: 0 0 0 123px;
+	width: 64px;
+	*margin-top: -1px;
+}
+#nbaAllAccess .nbaAboutYourself #nbaBirthdateBlk .nbaExampleText {
+    color: #999999;
+    font-size: 11px;
+    left: 206px;
+    position: absolute;
+    top: 60px;
+    
+    *top: 50px;
+}
+#nbaAllAccess .nbaAboutYourself .nbaRequired {
+	*top: -6px;
+}
+#nbaAllAccess .nbaAboutYourself #nbaCountryBlk label,
+#nbaAllAccess .nbaAboutYourself #nbaFavTeamBlk label {
+	padding-top: 3px;
+}
+#nbaAllAccess .nbaAboutYourself #nbaGenderBlk input {
+	background: none;
+	border: none;
+    width: 20px;
+    vertical-align:middle;
+}
+#nbaAllAccess .nbaAboutYourself #nbaGenderBlk label {
+    vertical-align:middle;
+    padding-top: 3px !important;
+}
+#nbaAllAccess .nbaAboutYourself .nbaInputBlock .nbaGenderLabel {
+	display: inline;
+	font-size: 12px;
+	float: none;
+	font-weight: normal;
+	margin: 0 0 0 2px;
+	width: auto;
+    padding-top: 0 !important;
+}
+#nbaAllAccess .nbaAboutYourself #nbaCountryBlk select {
+    width: 160px;
+}
+#nbaAllAccess .nbaAboutYourself #nbaPostalCodeBlk input {
+    width: 80px;
+}
+#nbaAllAccess .nbaAboutYourself #nbaPostalCodeBlk .nbaErrorMessage {
+	margin: 0 0 0 123px;
+	width: 74px;
+	*margin-top: -1px;
+}
+#nbaAllAccess .nbaAboutYourself #nbaFavTeamBlk select {
+    width: 205px;
+}
+#nbaAllAccess .nbaAboutYourself #nbaSignUpBlk {
+    margin: 14px 0 0 35px;
+}
+#nbaAllAccess .nbaAboutYourself #nbaSignUpBlk label {
+	display: inline-block;
+	width: 95%;
+	
+	*width: 94%;
+}
+#nbaAllAccess .nbaAboutYourself #nbaSignUpBlk label#nbaChkLbl_MembershipEmail {
+    line-height: 25px;
+}
+#nbaAllAccess .nbaAboutYourself input {
+    margin-right: 5px;
+}
+#nbaAllAccess .nbaAboutYourself #nbaSignUpBlk a {
+	background: url(http://i.cdn.turner.com/nba/nba/.element/img/2.1/sect/allaccess/imgTooltip.png) -0 0 no-repeat;
+	height: 16px;
+	margin: -1px 0 0 6px;
+	position: absolute;
+	text-decoration: none;
+	width: 16px;
+}
+#nbaAllAccess .nbaAboutYourself #nbaSignUpBlk a span.nbaToolTip {
+	background: url(http://i.cdn.turner.com/nba/nba/.element/img/2.1/sect/allaccess/bgToolTip.png) 0 0 no-repeat;
+	color: #000;
+	display: none;
+	font-size: 11px;
+	height: 140px;
+	line-height: 14px;
+	margin: -115px 0 0 18px;
+	padding: 10px 22px 0;
+	position: absolute;
+	width: 190px;
+}
+#nbaAllAccess .nbaAboutYourself #nbaSignUpBlk a span.nbaToolTip span {
+	display:block;
+	margin-bottom: 8px;
+}
+#nbaAllAccess .nbaAboutYourself #nbaSignUpBlk a:hover {
+	color: #000;
+	background-position: -16px 0;
+	cursor: default;
+}
+#nbaAllAccess .nbaAboutYourself #nbaSignUpBlk a:hover span.nbaToolTip {
+	display: block;
+}
+#nbaAllAccess .nbaAboutYourself #nbaLegal {
+	margin-top: 10px;
+	font-size: 11px;
+}
+#nbaAllAccess .nbaAboutYourself #nbaLegal .nbaButton {
+	margin-left: 8px;
+}
+
+/*  =PAGE-SPECIFIC: WELCOME OFFERS <div id="nbaAAScreenWrap" class="nbaWelcomeOffers">
+	---------------------------------------------------------------------------- */
+	
+#nbaAllAccess .nbaWelcomeOffers #nbaAAStatusBar {
+	background-position: 0 -99px;
+}
+#nbaAllAccess .nbaWelcomeOffers .nbaAALeftCol {
+	border: none;
+	width: 195px;
+}
+#nbaAllAccess .nbaWelcomeOffers .nbaAARightCol {
+	margin-top: -10px;
+	position: relative;
+	width: 469px;
+	
+	*margin-top: -5px;
+}
+#nbaAllAccess .nbaWelcomeOffers h1 {
+	font-size: 20px;
+}
+
+#nbaAllAccess .nbaWelcomeOffers .nbaSpecialOffer {
+	margin: 15px 0 0 0;
+	text-align: center;
+}
+
+#nbaAllAccess .nbaWelcomeOffers .nbaAARightCol p {
+	color: #444;
+	margin-bottom: 12px;
+}
+#nbaAllAccess .nbaWelcomeOffers .nbaAARightCol label {
+	color: #363636;
+	display: inline-block;
+	line-height: 21px;
+	width: 95%;
+	
+	*width: 94%;
+}
+#nbaAllAccess .nbaWelcomeOffers .nbaAARightCol label strong {
+	color: #000;
+}
+#nbaAllAccess .nbaWelcomeOffers .nbaAARightCol input {
+	margin: 0 8px 0 -1px;
+}
+#nbaAllAccess .nbaWelcomeOffers #nbaLegal {
+	font-size: 11px;
+	margin: 0 0 0 28px;
+	padding: 12px 0 0 0;
+}
+#nbaAllAccess .nbaWelcomeOffers #nbaLegal .nbaButton {
+	margin-left: 8px;
+}
+
+/*  =PAGE-SPECIFIC: FACEBOOK CONNECT <div id="nbaAAScreenWrap" class="nbaFacebookConnect">
+	---------------------------------------------------------------------------- */
+	
+#nbaAllAccess .nbaFacebookConnect #nbaAAStatusBar {
+	background-position: 0 -132px;
+}
+#nbaAllAccess .nbaFacebookConnect #nbaAABody {
+	padding-top: 16px
+}
+#nbaAllAccess .nbaFacebookConnect .nbaAALeftCol form {
+	margin-top: 47px;
+	*margin-top: 97px;
+}
+#nbaAllAccess .nbaFacebookConnect .nbaAALeftCol, #nbaAllAccess .nbaFacebookConnect .nbaAARightCol  {
+	position: relative;
+}
+#nbaAllAccess .nbaFacebookConnect .nbaInputBlock.nbaError .nbaErrorMessage {
+	margin-left: 100px;
+}
+#nbaAllAccess .nbaFacebookConnect .nbaInputBlock label {
+	width: 92px;
+}
+#nbaAllAccess .nbaFacebookConnect .nbaInputBlock.nbaTwoLines label {
+	padding-top: 0;
+}
+#nbaAllAccess .nbaFacebookConnect  h1,
+#nbaAllAccess .nbaFacebookConnect .nbaAARightCol p,
+#nbaAllAccess .nbaFacebookConnect .nbaAALeftCol #nbaLegal,
+#nbaAllAccess .nbaFacebookConnect .nbaMemCredentials {
+	display:none;
+}
+#nbaAllAccess .nbaFacebookConnect .nbaAARightCol #nbaLegal {
+	display: block;
+}
+#nbaAllAccess .nbaFacebookConnect .nbaAALeftCol  {
+	height: 225px;
+	padding-top: 50px;
+	
+	*padding-top: 60px;
+}
+#nbaAllAccess .nbaFacebookConnect .nbaAARightCol  {
+	height: 275px;
+	padding-top: 12px;
+	position: relative;
+	width: 314px;
+	
+	*padding-top: 22px;
+}
+#nbaAllAccess .nbaFacebookConnect #nbaFBRegisterMessage {
+	line-height: 16px;
+	float: right;
+	margin-bottom: 6px;
+	width: 265px;
+}
+#nbaAllAccess .nbaFacebookConnect .nbaInputBlock {
+	margin-bottom: 8px;
+}
+#nbaAllAccess .nbaFacebookConnect .nbaRequired {
+	left: 374px;
+    position: absolute;
+    top: 0;
+    width: 300px;
+}
+#nbaAllAccess .nbaFacebookConnect #nbaBirthdateBlk input {
+	width: 70px;
+}
+#nbaAllAccess .nbaFacebookConnect #nbaBirthdateBlk.nbaError .nbaErrorMessage {
+	width: 64px;
+}
+#nbaAllAccess .nbaFacebookConnect #nbaBirthdateBlk .nbaExampleText {
+	color: #999;
+	font-size: 11px;
+	left: 184px;
+	position: absolute;
+	top: 32px;
+	
+	*top: 26px;
+}
+#nbaAllAccess .nbaFacebookConnect #nbaCountryBlk label {
+	padding-top: 3px;
+}
+#nbaAllAccess .nbaFacebookConnect #nbaPostalCodeBlk label,
+#nbaAllAccess .nbaFacebookConnect #nbaFavTeamBlk label {
+	padding-top: 0px;
+}
+#nbaAllAccess .nbaFacebookConnect #nbaGenderBlk input {
+	background: none;
+	border: none;
+    width: 20px;
+}
+#nbaAllAccess .nbaFacebookConnect .nbaInputBlock .nbaStatusLabel,
+#nbaAllAccess .nbaFacebookConnect .nbaInputBlock .nbaGenderLabel {
+	display: inline;
+	font-size: 12px;
+	float: none;
+	font-weight: normal;
+	margin: 0 0 0 2px;
+	width: auto;
+}
+#nbaAllAccess .nbaFacebookConnect #nbaCountryBlk select {
+    width: 160px;
+}
+#nbaAllAccess .nbaFacebookConnect #nbaPostalCodeBlk input {
+    width: 80px;
+}
+#nbaAllAccess .nbaFacebookConnect #nbaPostalCodeBlk .nbaErrorMessage {
+    width: 74px;
+}
+#nbaAllAccess .nbaFacebookConnect #nbaFavTeamBlk select {
+    width: 205px;
+}
+#nbaAllAccess .nbaFacebookConnect #nbaSignUpBlk {
+    margin: 18px 0 0 5px;
+}
+#nbaAllAccess .nbaFacebookConnect #nbaSignUpBlk input {
+    margin-right: 5px;
+}
+#nbaAllAccess .nbaFacebookConnect #nbaSignUpBlk label {
+    display: inline-block;
+	width: 90%;
+	
+	*width: 89%;
+}
+#nbaAllAccess .nbaFacebookConnect #nbaSignUpBlk label#nbaChkLbl_MembershipEmail {
+    line-height: 25px;
+}
+#nbaAllAllAccess .nbaFacebookConnect #nbaSignUpBlk label#nbaChkLbl_MembershipEmail {
+	margin-top: 6px;
+}
+#nbaAllAccess .nbaFacebookConnect #nbaSignUpBlk a {
+	background: url(http://i.cdn.turner.com/nba/nba/.element/img/2.1/sect/allaccess/imgTooltip.png) 0 0 no-repeat;
+	height: 16px;
+	margin: 0 0 0 6px;
+	position: absolute;
+	text-decoration: none;
+	width: 16px;
+}
+#nbaAllAccess .nbaFacebookConnect #nbaSignUpBlk a span.nbaToolTip {
+	background: url(http://i.cdn.turner.com/nba/nba/.element/img/2.1/sect/allaccess/bgToolTip.png) 0 -150px no-repeat;
+	color: #000;
+	display: none;
+	font-size: 11px;
+	height: 140px;
+	line-height: 14px;
+	margin: -115px 0 0 -232px;
+	padding: 10px 22px 0;
+	position: absolute;
+	width: 190px;
+}
+#nbaAllAccess .nbaFacebookConnect #nbaSignUpBlk a span.nbaToolTip span {
+	display:block;
+	margin-bottom: 8px;
+}
+#nbaAllAccess .nbaFacebookConnect #nbaSignUpBlk a:hover {
+	color: #000;
+	background-position: -16px 0;
+	cursor: default;
+}
+#nbaAllAccess .nbaFacebookConnect #nbaSignUpBlk a:hover span.nbaToolTip {
+	display: block;
+}
+#nbaAllAccess .nbaFacebookConnect #nbaLegal {
+	font-size: 11px;
+	bottom: 6px;
+	position: absolute;
+}
+#nbaAllAccess .nbaFacebookConnect #nbaLegal .nbaButton {
+	margin-left: 4px;
+}
+#nbaAllAccess .nbaFacebookConnect #nbaLegal .nbaStepOne {
+	display: none;
+}
+#nbaAllAccess .nbaFacebookConnect #nbaAALogin {
+	border: none;
+}
+#nbaAllAccess .nbaFacebookConnect .nbaAALeftCol .nbaButton {
+    margin: 12px 0 10px 98px;
+}
+
+/*Start Member Status Radio buttons*/
+#nbaAllAccess .nbaFacebookConnect #nbaAAMemberStatus {
+	left: 50px;
+	line-height: 22px;
+	position: absolute;
+	width: 300px;
+	top: 190px;
+	z-index: 10;
+	
+	*top: 192px;
+}
+#nbaAllAccess .nbaFacebookConnect #nbaAAMemberStatus form {
+	margin: 0 0 0 90px;
+	width: 200px;
+}
+#nbaAllAccess .nbaFacebookConnect #nbaAAMemberStatus input {
+	background: none;
+	border: none;
+	width: auto;
+}
+#nbaAllAccess .nbaFacebookConnect #nbaAAMemberStatus label {
+	margin: 0 0 0 7px;
+}
+/*End Member Status Radio buttons*/
+
+/*  =PAGE-SPECIFIC: MISSING FIELDS <div id="nbaAAScreenWrap" class="nbaMissingFields">
+	---------------------------------------------------------------------------- */
+	
+#nbaAllAccess .nbaMissingFields #nbaAAStatusBar {
+	background-position: 0 -165px;
+}
+#nbaAllAccess .nbaMissingFields .nbaAARow {
+	height: 294px;
+	position: relative;
+}
+#nbaAllAccess .nbaMissingFields h1 {
+	margin-bottom: 10px;
+}
+#nbaAllAccess .nbaMissingFields .nbaInputBlock {
+	margin-bottom: 12px;
+}
+#nbaAllAccess .nbaMissingFields .nbaRequired {
+	left: 362px;
+	top: 24px;
+}
+#nbaAllAccess .nbaMissingFields p.nbaMissingIntro {
+    left: 185px;
+    position: absolute;
+    top: -2px;
+}
+#nbaAllAccess .nbaMissingFields p.nbaMissingSummary {
+    left: 370px;
+    position: absolute;
+    top: 44px;
+    width: 300px;
+}
+#nbaAllAccess .nbaMissingFields form {
+	margin-top: 0;
+}
+#nbaAllAccess .nbaMissingFields .nbaInputBlock.nbaTwoLines label {
+	padding-top: 0;
+}
+#nbaAllAccess .nbaMissingFields #nbaReqBirthdateBlk input {
+	width: 70px;
+}
+#nbaAllAccess .nbaMissingFields #nbaReqBirthdateBlk.nbaError .nbaErrorMessage {
+	width: 64px;
+}
+#nbaAllAccess .nbaMissingFields #nbaReqBirthdateBlk .nbaExampleText {
+	color: #999;
+	font-size: 11px;
+	left: 184px;
+	margin-top: 5px;
+	position: absolute;
+	
+	*margin-top: 7px;
+}
+#nbaAllAccess .nbaMissingFields #nbaReqBirthdateBlk.nbaError .nbaExampleText {
+	margin-top: -36px;
+}
+#nbaAllAccess .nbaMissingFields #nbaReqGenderBlk input {
+	background: none;
+	border: none;
+    width: 20px;
+}
+#nbaAllAccess .nbaMissingFields .nbaInputBlock .nbaStatusLabel,
+#nbaAllAccess .nbaMissingFields .nbaInputBlock .nbaGenderLabel {
+	display: inline;
+	font-size: 12px;
+	float: none;
+	font-weight: normal;
+	margin: 0 0 0 2px;
+	width: auto;
+}
+#nbaAllAccess .nbaMissingFields #nbaReqCountryBlk select {
+    width: 160px;
+}
+#nbaAllAccess .nbaMissingFields #nbaReqCountryBlk label {
+	padding-top: 3px;
+}
+#nbaAllAccess .nbaMissingFields #nbaReqCountryBlk input {
+    width: 80px;
+}
+#nbaAllAccess .nbaMissingFields #nbaReqPostalCodeBlk input {
+    width: 80px;
+}
+#nbaAllAccess .nbaMissingFields #nbaReqPostalCodeBlk .nbaErrorMessage {
+    width: 74px;
+}
+#nbaAllAccess .nbaMissingFields .nbaInputBlock p {
+	color: #444;
+	font-size: 11px;
+	line-height: 10px;
+	margin: 6px 0 8px 98px;
+}
+#nbaAllAccess .nbaMissingFields #nbaLegal {
+	bottom: 15px;
+	left: 370px;
+	line-height: 24px;
+	font-size: 11px;
+	position: absolute;
+	width: 300px;
+}
+#nbaAllAccess .nbaMissingFields #nbaLegal .nbaCancel {
+	margin-right: 2px;
+	text-decoration: underline;
+}

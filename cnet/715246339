@@ -1,0 +1,23 @@
+PHTTP
+18.7.20.69"Å
+RGET /fly/102-fly/bundles/cnetjs/js-build/components/iframe-hover-fix.js HTTP/1.1
+Host: cnet4.cbsistatic.com
+Connection: keep-alive
+Accept: */*
+vUser-Agent: Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/31.0.1650.63 Safari/537.36
+Referer: http://www.cnet.com/
+$Accept-Encoding: gzip,deflate,sdch
+!Accept-Language: en-US,en;q=0.8
+
+*Ä
+HTTP/1.1 200 OK
+Server: nginx
+(Content-Type: application/x-javascript
+Content-Length: 473
+.Last-Modified: Tue, 08 Apr 2014 18:43:51 GMT
+2Access-Control-Allow-Origin: http://www.cnet.com
+Accept-Ranges: bytes
+%Date: Tue, 08 Apr 2014 21:34:31 GMT
+Connection: keep-alive
+€
+define(["jquery","version!fly/managers/debug","version!fly/components/base"],function(e,t){t=t.init("iframeHoverFix"),e.widget("cnet.iframeHoverFix",e.fly.base,{options:{},_create:function(){var t=this;this._setup(),e.browser.msie&&(this.$element.live("mouseenter",function(){t.$element.addClass("hover")}),this.$element.find("iframe").live("hover",function(){t.$element.addClass("hover")}),this.$element.live("mouseleave",function(){t.$element.removeClass("hover")}))}})})

@@ -1,0 +1,18 @@
+PHTTP75.98.67.232"ã
+ùGET /adserver/cookiematch?pnid=3000000&google_gid=CAESELIdZ5-38yuXnNz28TZTx84&google_cver=1&google_push=AHNF13KR0J1pcpenfZf7ohRE3fLhKBrCCTbLpZZgPA HTTP/1.1
+Host: google-cm.p.veruta.com
+Connection: keep-alive
+Accept: image/webp,*/*;q=0.8
+vUser-Agent: Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/31.0.1650.63 Safari/537.36
+JReferer: http://cm.g.doubleclick.net/push?client=ca-pub-9415735639897500
+$Accept-Encoding: gzip,deflate,sdch
+!Accept-Language: en-US,en;q=0.8
+
+*ë
+ HTTP/1.1 302 Moved Temporarily
+Server: Apache-Coyote/1.1
+%Date: Wed, 09 Apr 2014 14:12:19 GMT
+vLocation: http://cm.g.doubleclick.net/pixel?google_nid=mybuys&google_push=AHNF13KR0J1pcpenfZf7ohRE3fLhKBrCCTbLpZZgPA
+Connection: Keep-Alive
+Content-Length: 0
+

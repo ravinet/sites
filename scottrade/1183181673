@@ -1,0 +1,23 @@
+»HTTPS208.88.144.44"—
+;GET /Marketing/Javascript/capsLockWarning.min.js HTTP/1.1
+'Host: marketingcontent1.scottrade.com
+Connection: keep-alive
+Accept: */*
+vUser-Agent: Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/31.0.1650.63 Safari/537.36
+%Referer: https://www.scottrade.com/
+$Accept-Encoding: gzip,deflate,sdch
+!Accept-Language: en-US,en;q=0.8
+Cookie: mmcore.tst=0.465
+
+*Ï
+HTTP/1.1 200 OK
+Content-Length: 1200
+(Content-Type: application/x-javascript
+.Last-Modified: Tue, 23 Jul 2013 14:42:46 GMT
+Accept-Ranges: bytes
+ETag: "07739e5b287ce1:10508"
+Server: Microsoft-IIS/6.0
+X-Powered-By: ASP.NET
+%Date: Tue, 08 Apr 2014 22:21:58 GMT
+²	
+(function($){var $tooltip;var tooltipMarginWidth=18;var captions={"title":"Caps Lock is On","content":"Having Caps Lock on may cause you to enter an incorrect password.","tooltipTemplate":""};$.fn.capsLockWarning=function(method){if(methods[method]){return methods[method].apply(this,Array.prototype.slice.call(arguments,1))}else{return methods.init.apply(this,arguments)}};var methods={'init':function(captionMap){$.extend(true,captions,captionMap);ensureTooltip();return this.each(function(i,target){var $target=$(target);bindTooltip($target)})}};function ensureTooltip(){$tooltip=$('#capsLockWarning');if(!$tooltip.length){$('body').append(captions.tooltipTemplate);$tooltip=$('#capsLockWarning')}$('#warningTitle').text(captions.title);$('#warningContent').text(captions.content);$tooltip.hide()}function bindTooltip($target){$target.blur(function(){$tooltip.hide()}).keypress(function(e){var key=String.fromCharCode(e.which);if((key.toUpperCase()===key&&key.toLowerCase()!==key&&!e.shiftKey)||(key.toUpperCase()!==key&&key.toLowerCase()==key&&e.shiftKey)){$tooltip.show().position({my:'right center',at:'left center',offset:0-tooltipMarginWidth+' 0',of:this})}else{$tooltip.hide()}})}})(jQuery);

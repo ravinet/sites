@@ -1,0 +1,105 @@
+PHTTP
+18.7.20.69"Þ
+"GET /_res/css/print.css HTTP/1.1
+Host: service.prweb.com
+Connection: keep-alive
+Accept: text/css,*/*;q=0.1
+vUser-Agent: Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/31.0.1650.63 Safari/537.36
+ Referer: http://www.prweb.com/
+$Accept-Encoding: gzip,deflate,sdch
+!Accept-Language: en-US,en;q=0.8
+
+*ñ
+HTTP/1.1 200 OK
+Server: Apache/2.2.3 (CentOS)
+.Last-Modified: Fri, 28 May 2010 14:51:15 GMT
+!ETag: "8a457-650-487a8a38c9ec0"
+Accept-Ranges: bytes
+Content-Length: 1616
+Content-Type: text/css
+%Date: Tue, 08 Apr 2014 22:15:36 GMT
+Connection: keep-alive
+X-N: S
+Ò
+/* -----------------------------
+
+Title : print.css
+Author : Marty Stake
+
+----------------------------- */
+
+/* uncomment the rule below and add any id which you do not want to print 
+ #mainnav, #sidebar, #message, #mininav, .more, #flash  {
+	display: none;
+} */
+
+img a, img, a {
+    border: none;
+}
+
+p, h1, h2, h3, h4, h5, h6 {
+	font-family:times new roman, serif;
+}
+
+h1 em, h2 em, h3 em, h4 em, h5 em, h6 em {
+	font-style: normal;
+}
+
+/* This is the print stylesheet to hide the Flash headlines from the browser... regular browser text headlines will now print as normal */
+
+.sIFR-flash, .sIFR-flash object, .sIFR-flash embed {
+	display: none !important;
+	height: 0;
+	width: 0;
+	position: absolute;
+	overflow: hidden;
+}
+
+span.sIFR-alternate {
+	visibility: visible !important;
+	display: block !important;
+	position: static !important;
+	left: auto !important;
+	top: auto !important;
+}
+
+#mainnav, #mininav, #breadcrumb, #footer div.col-1, #footer div.col-2, #search-form, #usernav, #create-account, #content-feature img, #content-feature a, #subnav ul, div.video, .release-media, #categories, #section-intro, #carousel {
+	display: none;
+}
+
+
+div.info {
+	display: block !important;
+}
+
+#footer a:link:after, #footer a:visited:after { content:" [" attr(href) "] "; }
+
+div.quote {
+	border-top: 1px solid #000;
+	border-bottom: 1px solid #000;
+	padding: 1px 0;
+}
+
+div.quote p {
+	margin: 5px 0;
+}
+
+span.attribution {
+	font-weight: bold;
+}
+
+div.bottom-line p {
+	margin: 2px;
+}
+
+div.bottom-line p.the-total {
+	font-weight: bold;
+}
+
+div.bottom-line {
+	margin-bottom: 15px;
+}
+
+div#learn-more-wrapper {
+	display: block !important;
+}

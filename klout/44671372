@@ -1,0 +1,23 @@
+PHTTP65.50.203.210"Þ
+GET / HTTP/1.1
+Host: www.klout.com
+Connection: keep-alive
+TAccept: text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8
+vUser-Agent: Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/31.0.1650.63 Safari/537.36
+$Accept-Encoding: gzip,deflate,sdch
+!Accept-Language: en-US,en;q=0.8
+
+*õ
+ HTTP/1.1 301 Moved Permanently
+X-Powered-By: K2
+FSet-Cookie: kqst=null; Path=/; Expires=Tue, 08 Apr 2014 22:32:45 GMT
+PSet-Cookie: kvist=1; Max-Age=30; Path=/; Expires=Tue, 08 Apr 2014 22:03:15 GMT
+¨Set-Cookie: nksid=s%3AQSNghIkdcvIeLNB7GX7AcV0G.Dz992K6oOaF7SJXCJKAUDasJqAcW9jHQbFJizv0X1vw; Domain=.klout.com; Path=/; Expires=Wed, 23 Apr 2014 22:01:36 GMT; HttpOnly
+Vary: Accept
+Location: http://klout.com/
+Content-Type: text/html
+Content-Length: 90
+%Date: Tue, 08 Apr 2014 22:02:45 GMT
+Connection: close
+\
+<p>Moved Permanently. Redirecting to <a href="http://klout.com/">http://klout.com/</a></p>

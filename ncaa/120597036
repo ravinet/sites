@@ -1,0 +1,31 @@
+PHTTP
+18.7.20.70"›
+nGET /dr/ncaa/ncaa7/release/sites/default/files/js/js_X5w9nuRp8MPTSLuUSyX_6-06ogVK76hZgvtRf4xMj2c.js HTTP/1.1
+Host: i2.turner.ncaa.com
+Connection: keep-alive
+Accept: */*
+vUser-Agent: Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/31.0.1650.63 Safari/537.36
+Referer: http://www.ncaa.com/
+$Accept-Encoding: gzip,deflate,sdch
+!Accept-Language: en-US,en;q=0.8
+
+*Ë
+HTTP/1.1 200 OK
+.Last-Modified: Wed, 19 Mar 2014 20:54:51 GMT
+X-N: S
+Server: Apache
+Accept-Ranges: bytes
+Content-Length: 132
+(Content-Type: application/x-javascript
+Cache-Control: max-age=7153
+(Expires: Wed, 09 Apr 2014 00:05:07 GMT
+%Date: Tue, 08 Apr 2014 22:05:54 GMT
+Connection: keep-alive
+†
+if (typeof(cnnad_sendADMData) == 'function') {
+cnnad_sendADMData();
+}
+if (typeof(cnnad_ugsync) == 'function') {
+cnnad_ugsync();
+}
+;

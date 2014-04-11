@@ -1,0 +1,31 @@
+PHTTP199.27.76.153"€
+FGET /images/ads/coldwellbanker_2013/coldwell_hph_061813.xml HTTP/1.1
+Host: www.boston.com
+Connection: keep-alive
+0Accept: application/xml, text/xml, */*; q=0.01
+"X-Requested-With: XMLHttpRequest
+vUser-Agent: Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/31.0.1650.63 Safari/537.36
+!Referer: http://www.boston.com/
+$Accept-Encoding: gzip,deflate,sdch
+!Accept-Language: en-US,en;q=0.8
+ÅCookie: pathUrl=http://www.boston.com/; __vrf=13972436197407vNvpXp3kPCmAt8PAPWZOGFxqS5B0jNC; __vrrefresh=http%3A%2F%2Fwww.boston.com%2F; __gads=ID=882902a5d6e86d38:T=1397243620:S=ALNI_MZLaIhsmhWW2Jd_OAh6wezf05LMZg; overlay_test041014easternbank_home_11=true; s_cc=true; s_pv=Boston.com%20home%20page; s_sq=%5B%5BB%5D%5D; aam_dfp=aam%3D806611%2C806645; aam_optimizely=aam%3D806611; aam_sc=aamsc%3D806611; aam_uuid=29233288658612563353821331561073656400
+
+*¡
+HTTP/1.1 200 OK
+.Last-Modified: Fri, 14 Mar 2014 18:17:02 GMT
+Served-By: hengist
+Content-Type: text/xml
+Server: Boston.com Frontend
+Content-Length: 394
+Accept-Ranges: bytes
+%Date: Fri, 11 Apr 2014 19:13:41 GMT
+Via: 1.1 varnish
+
+Age: 277
+Connection: keep-alive
+ X-Served-By: cache-jfk1035-JFK
+X-Cache: HIT
+X-Cache-Hits: 20
+(X-Timer: S1397243621.122211695,VS0,VE0
+Œ
+<?xml version="1.0" encoding="UTF-8" standalone="no"?><item><overline>FEATURED PROPERTY</overline><image>http://cache.boston.com/images/ads/coldwellbanker_2013/coldwell061813_110x70_logo.jpg</image><title>Ready to Look or Buy?</title><description>Search Real Estate listings throughout New England</description><cta>Click here for more information.</cta><url>http://www.nemoves.com</url></item>

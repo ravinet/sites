@@ -1,0 +1,30 @@
+PHTTP12.130.81.218" 
+`GET /adscgen/st.php?survey_num=1135617&site=106141290&code=57714641&randnum=219342550 HTTP/1.1
+Host: amch.questionmarket.com
+Connection: keep-alive
+Accept: */*
+vUser-Agent: Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/31.0.1650.63 Safari/537.36
+$Accept-Encoding: gzip,deflate,sdch
+!Accept-Language: en-US,en;q=0.8
+-Cookie: CS1=1143877-4-1; ES=1132148-Z#eXO-0
+
+*é
+HTTP/1.1 200 OK
+%Date: Tue, 08 Apr 2014 21:40:26 GMT
+X-Host: a114 D=745
+ŠP3P: CP="ALL DSP COR PSAa PSDa OUR IND COM NAV INT LOC OTC", policyref="http://ch.questionmarket.com/w3c/audit2007/p3p_DynamicLogic.xml"
+Vary: Accept-Encoding
+Content-Length: 243
+Keep-Alive: timeout=6, max=1
+Connection: Keep-Alive
+(Content-Type: text/html; charset=utf-8
+õ
+var DL = DL || {};
+DL.placement_site = '106141290';
+DL.placement_code = '57714641';
+(function(){
+if(1!=4){
+	(new Image).src="//amch.questionmarket.com/adsc/d1135617/5/57714641/decide.php?ord="+Math.floor((new Date()).getTime()/1000);
+}
+})();
+

@@ -1,0 +1,46 @@
+PHTTP
+18.7.20.69"î
+.GET /css/wu3_print.css?v=2012111501 HTTP/1.1
+Host: style.wxug.com
+Connection: keep-alive
+Accept: text/css,*/*;q=0.1
+vUser-Agent: Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/31.0.1650.63 Safari/537.36
+'Referer: http://www.wunderground.com/
+$Accept-Encoding: gzip,deflate,sdch
+!Accept-Language: en-US,en;q=0.8
+
+*Æ
+HTTP/1.1 200 OK
+.Last-Modified: Thu, 26 Dec 2013 18:52:56 GMT
+(Server: Apache/1.3.42 (Unix) PHP/5.3.2
+Accept-Ranges: bytes
+Content-Length: 1278
+Content-Type: text/css
+Cache-Control: max-age=628266
+(Expires: Wed, 16 Apr 2014 05:07:31 GMT
+%Date: Tue, 08 Apr 2014 22:36:25 GMT
+Connection: keep-alive
+€
+
+/* PRINT PRETTY */
+#stations_details, #travel_details, #community_details, #region_details, #forecast, #curConds, #innerContent, #wuPage984, .primeContent636, .primeContent672, .primeContent812, #layerCurrent, #layerForecast, #layerRegional, #layerCommunity, #layerTravel, #layerStations { width: 100%; display: inline; margin: 0; float: none; }
+
+
+/* DO NOT PRINT */
+#map_header, #icon_tray, #controls_container, .ui-datepicker, #map_datepicker, #map_panel, #bannerTop, #bannerBot, #stationselector, .switch300, .switch336, #pageHeader, #AssistBar, #AdminBar, #bannerTop, #bannerBot, #stationSelect, #footer, .adCreative, .unit160, .blogMod, .noPrint { display: none; }
+
+
+/* OTHER STUFF */
+.borderBox { border: 0; }
+.contentMod { margin: 12px; }
+.onlyPrint { display: inline; }
+
+/* WUNDERMAP */
+#mapPrintArea { width: 100%; display: inline; margin: 0; float: none; clear: both; }
+#map { margin-right: 0 !important; }
+#map_wrapper { position: static !important; overflow: auto; }
+#map_container { position: static !important; height: 700px !important; page-break-after: always !important; }
+.pbAfter { page-break-after: always !important; }
+#LayerRoadTripPlanner_printArea .LayerRoadTripPlanner_alternatives { display: none; }
+.directions_step_duration { white-space: nowrap; }
+

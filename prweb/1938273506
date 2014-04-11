@@ -1,0 +1,82 @@
+PHTTP
+18.7.20.69"Õ
+(GET /_res/js/news-carousel.js HTTP/1.1
+Host: service.prweb.com
+Connection: keep-alive
+Accept: */*
+vUser-Agent: Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/31.0.1650.63 Safari/537.36
+ Referer: http://www.prweb.com/
+$Accept-Encoding: gzip,deflate,sdch
+!Accept-Language: en-US,en;q=0.8
+
+*¼
+HTTP/1.1 200 OK
+Server: Apache/2.2.3 (CentOS)
+.Last-Modified: Wed, 14 Jul 2010 03:00:59 GMT
+!ETag: "8a682-595-48b5031fab0c0"
+Accept-Ranges: bytes
+Content-Length: 1429
+(Content-Type: application/x-javascript
+%Date: Tue, 08 Apr 2014 22:15:36 GMT
+Connection: keep-alive
+—
+$(function() {
+	
+		// carousel //
+		
+		// generate auto links //
+		
+		$('#fn-controls').append('<ul id="carousel-controls">');
+		
+		var carouselElCounter = 0;
+		var btnGoArray = new Array();
+		
+		$('ul#releases-carousel li').each( function(el) { 
+			
+			var theId = 'carousel-item-' + carouselElCounter;
+			
+			var li = $(document.createElement('li')).attr( 'id', theId );
+			var a = $(document.createElement('a')).attr( 'href', '#' );
+			$(li).append(a)
+			$('#carousel-controls').append(li);
+		
+			btnGoArray.push('#' + theId);
+			carouselElCounter++;
+		
+		});		
+		
+		
+		$("#featured-news-wrap").jCarouselLite({
+			btnNext: "#carousel-next",
+			btnPrev: "#carousel-prev",
+			visible: 1,
+			speed: 300,
+			auto: 2000,
+			autoStop: 5,
+			scroll: 1,
+			btnGo: btnGoArray,
+			afterEnd: function(el) {
+				$('#carousel-controls li').removeClass('current'); 
+				var index = $('#releases-carousel li').index(el);
+				if ( index == 0 ) {
+					index = carouselElCounter - 1;
+				} else {
+					if ( index > carouselElCounter ) {
+						index = 0;
+					} else {
+						index = index - 1;
+					}
+				}
+				$('#carousel-controls li:eq(' + index + ')').addClass('current'); 
+			}
+		});
+		
+		$('#carousel-controls li:eq(0)').addClass('current');
+		
+		// if we want to do auto-rotate //
+		$('#carousel-next, #carousel-prev, #carousel-controls li').click(function() {
+			//
+		});
+
+
+	});

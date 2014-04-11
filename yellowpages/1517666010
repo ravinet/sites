@@ -1,0 +1,26 @@
+PHTTP23.45.34.116"€
+êGET /adscale-ih/tpui?tpid=39&tpuid=d3615344-7a27-4d00-a7c9-3f0613c84bf6&cburl=http%3A%2F%2Fcotads.adscale.de%2Fads%2Fpixel%2F1by1.png HTTP/1.1
+Host: ih.adscale.de
+Connection: keep-alive
+Accept: image/webp,*/*;q=0.8
+vUser-Agent: Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/31.0.1650.63 Safari/537.36
+ØReferer: http://4228695.fls.doubleclick.net/activityi;src=4228695;type=yello251;cat=hpg_y562;ord=1;num=6245220624841.75;~oref=http%3A%2F%2Fwww.yellowpages.com%2F?&_dc_ck=try
+$Accept-Encoding: gzip,deflate,sdch
+!Accept-Language: en-US,en;q=0.8
+
+*¡
+!HTTP/1.1 307 Temporary Redirect
+Server: Apache-Coyote/1.1
+P3P: CP=NOI PSA OUR
+7Location: http://cotads.adscale.de/ads/pixel/1by1.png
+Content-Length: 0
+(Expires: Tue, 08 Apr 2014 22:37:31 GMT
+.Cache-Control: max-age=0, no-cache, no-store
+Pragma: no-cache
+%Date: Tue, 08 Apr 2014 22:37:31 GMT
+Connection: keep-alive
+tSet-Cookie: tu=2#3677059488#39~d3615344-7a27-4d00-a7c9-3f0613c84bf6~16168~0; Expires=Thu, 08-May-2014 22:37:31 GMT
+fSet-Cookie: uu=425401396996651374; Domain=.adscale.de; Expires=Mon, 06-Apr-2015 15:04:11 GMT; Path=/
+PSet-Cookie: VAR=miKea9piApm4WCgJTAJpH9KIqdgg7baC; path=/; domain=ih.adscale.de
+7Set-Cookie: DCID=node25; path=/; domain=ih.adscale.de
+

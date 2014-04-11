@@ -1,0 +1,343 @@
+PHTTP199.27.76.194"�
+RGET /index.php?title=Countdown/code.js&action=raw&ctype=text/javascript HTTP/1.1
+Host: dev.wikia.com
+Connection: keep-alive
+Accept: */*
+vUser-Agent: Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/31.0.1650.63 Safari/537.36
+%Referer: http://www.wikia.com/Wikia
+$Accept-Encoding: gzip,deflate,sdch
+!Accept-Language: en-US,en;q=0.8
+�Cookie: wikia_beacon_id=DMJu8mtV18; __qca=P0-1832017502-1396996549035; __utma=251085184.2081209511.1396996549.1396996549.1396996549.1; __utmb=251085184.1.10.1396996549; __utmc=251085184; __utmz=251085184.1396996549.1.1.utmcsr=(direct)|utmccn=(direct)|utmcmd=(none)
+
+*�H
+HTTP/1.1 200 OK
+Server: Apache
+!X-Content-Type-Options: nosniff
+4Cache-Control: public, s-maxage=300, max-age=86400
+.Last-modified: Wed, 05 Mar 2014 13:00:44 GMT
+.Content-Type: text/javascript; charset=UTF-8
+X-Cacheable: YES
+Content-Length: 8645
+Accept-Ranges: bytes
+%Date: Tue, 08 Apr 2014 22:35:49 GMT
+Age: 3680
+Connection: keep-alive
+6X-Served-By: cache-wk-sjc91-WIKIA, cache-jfk1022-JFK
+X-Cache: HIT, HIT
+X-Cache-Hits: 64, 5
+;X-Timer: S1394551596.719385386,VS0,VS39,VE40,VE2444952480
+Vary: X-Vary-String,
+fSet-Cookie: Geo={%22city%22:%22FIXME%22%2C%22country%22:%22US%22%2C%22continent%22:%22NA%22}; path=/
+�C
+// __NOWYSIWYG__ <source lang="javascript">
+/**
+ * Countdown
+ *
+ * Version: 2.0
+ *
+ * Rewrite by Pecoes
+ * Original script by Splarka + Eladkse
+ *
+ * documentation and examples at:
+ * http://dev.wikia.com/wiki/Countdown
+ */
+
+/*jshint jquery:true, browser:true, devel:true, camelcase:true, curly:false, undef:true, bitwise:true, eqeqeq:true, forin:true, immed:true, latedef:true, newcap:true, noarg:true, unused:true, regexp:true, strict:true, trailing:false */
+/*global mediaWiki:true*/
+
+;(function (module, mw, $) {
+    
+    'use strict';
+    
+    var translations = $.extend(true, {
+        en: {
+            and: 'and',
+            second: 'second',
+            seconds: 'seconds',
+            minute: 'minute',
+            minutes: 'minutes',
+            hour: 'hour',
+            hours: 'hours',
+            day: 'day',
+            days: 'days'
+        },
+        fr: {
+            and: 'et',
+            second: 'seconde',
+            seconds: 'secondes',
+            minute: 'minute',
+            minutes: 'minutes',
+            hour: 'heure',
+            hours: 'heures',
+            day: 'jour',
+            days: 'jours'
+        },
+        es: {
+            and: 'y',
+            second: 'segundo',
+            seconds: 'segundos',
+            minute: 'minuto',
+            minutes: 'minutos',
+            hour: 'hora',
+            hours: 'horas',
+            day: 'día',
+            days: 'días'
+        },
+        ca: {
+            and: 'i',
+            second: 'segon',
+            seconds: 'segons',
+            minute: 'minut',
+            minutes: 'minuts',
+            hour: 'hora',
+            hours: 'hores',
+            day: 'dia',
+            days: 'dies'
+        },
+        'pt-br': {
+            and: 'e',
+            second: 'segundo',
+            seconds: 'segundos',
+            minute: 'minuto',
+            minutes: 'minutos',
+            hour: 'hora',
+            hours: 'horas',
+            day: 'dia',
+            days: 'dias'
+
+        },
+        pt: {
+            and: 'e',
+            second: 'segundo',
+            seconds: 'segundos',
+            minute: 'minuto',
+            minutes: 'minutos',
+            hour: 'hora',
+            hours: 'horas',
+            day: 'dia',
+            days: 'dias'
+
+        },
+        de: {
+            and: 'und',
+            second: 'Sekunde',
+            seconds: 'Sekunden',
+            minute: 'Minute',
+            minutes: 'Minuten',
+            hour: 'Stunde',
+            hours: 'Stunden',
+            day: 'Tag',
+            days: 'Tage'
+        },
+        it: {
+            and: 'e',
+            second: 'secondo',
+            seconds: 'secondi',
+            minute: 'minuto',
+            minutes: 'minuti',
+            hour: 'ora',
+            hours: 'ore',
+            day: 'giorno',
+            days: 'giorni'
+        },
+        nl: {
+            and: 'en',
+            second: 'seconde',
+            seconds: 'seconden',
+            minute: 'minuut',
+            minutes: 'minuten',
+            hour: 'uur',
+            hours: 'uur',
+            day: 'dag',
+            days: 'dagen'
+        },
+        pl: {
+            and: 'i',
+            second: 'sekunda',
+            seconds: 'sekund(y)',
+            minute: 'minuta',
+            minutes: 'minut(y)',
+            hour: 'godzina',
+            hours: 'godzin(y)',
+            day: 'dzień',
+            days: 'dni'
+        },
+        sr: {
+            and: 'i',
+            second: 'sekundu',
+            seconds: 'sekunde/-i',
+            minute: 'minutu',
+            minutes: 'minute/-a',
+            hour: 'sat',
+            hours: 'sata/-i',
+            day: 'dan',
+            days: 'dana'
+        },
+        zh: {
+            and: ' ',
+            second: '秒',
+            seconds: '秒',
+            minute: '分',
+            minutes: '分',
+            hour: '小时',
+            hours: '小时',
+            day: '天',
+            days: '天'
+        },
+        ru: {
+            and: 'и', 
+            second: 'секунда', 
+            seconds: 'секунд', 
+            minute: 'минута', 
+            minutes: 'минут', 
+            hour: 'час', 
+            hours: 'часов', 
+            day: 'день', 
+            days: 'дней'
+        },
+        hu: {
+            and: 'és',
+            second: 'másodperc',
+            seconds: 'másodperc',
+            minute: 'perc',
+            minutes: 'perc',
+            hour: 'óra',
+            hours: 'óra',
+            day: 'nap',
+            days: 'nap'
+        },
+        ms: {
+            and: 'dan',
+            second: 'saat',
+            seconds: 'saat',
+            minute: 'minit',
+            minutes: 'minit',
+            hour: 'jam',
+            hours: 'jam',
+            day: 'hari',
+            days: 'hari'
+        }
+    }, module.translations || {}),
+    i18n = translations[
+        mw.config.get('wgContentLanguage')
+    ] || translations.en;
+
+    var countdowns = [];
+    
+    var NO_LEADING_ZEROS = 1;
+    
+    function output (i, diff) {
+        /*jshint bitwise:false*/
+        var delta, result, parts = [];
+        delta = diff % 60;
+        parts.unshift(delta + ' ' + i18n[delta === 1 ? 'second' : 'seconds']);
+        diff = Math.floor(diff / 60);
+        delta = diff % 60;
+        parts.unshift(delta + ' ' + i18n[delta === 1 ? 'minute' : 'minutes']);
+        diff = Math.floor(diff / 60);
+        delta = diff % 24;
+        parts.unshift(delta + ' ' + i18n[delta === 1 ? 'hour'   : 'hours'  ]);
+        diff = Math.floor(diff / 24);
+        parts.unshift(diff  + ' ' + i18n[diff  === 1 ? 'day'    : 'days'   ]);
+        result = parts.pop();
+        if (countdowns[i].opts & NO_LEADING_ZEROS) {
+            while (parts.length && parts[0][0] === '0') {
+                parts.shift();
+            }
+        }
+        if (parts.length) {
+            result = parts.join(', ') + ' ' + i18n.and + ' ' + result;
+        }
+        countdowns[i].node.text(result);
+    }
+    
+    function end(i) {
+        var c = countdowns[i].node.parent();
+        switch (c.attr('data-end')) {
+            case 'remove':
+                c.remove();
+                countdowns.splice(i, 1);
+                return;
+            case 'stop':
+                output(i, 0);
+                countdowns.splice(i, 1);
+                return;
+            case 'toggle':
+                var toggle = c.attr('data-toggle');
+                if (toggle && $(toggle).length) {
+                    $(toggle).css('display', 'inline');
+                    c.css('display', 'none');
+                    countdowns.splice(i, 1);
+                    return;
+                }
+                break;
+            case 'callback':
+                var callback = c.attr('data-callback');
+                if (callback && $.isFunction(module[callback])) {
+                    output(i, 0);
+                    countdowns.splice(i, 1);
+                    module[callback].call(c);
+                    return;
+                }
+                break;
+        }
+        countdowns[i].countup = true;
+        output(i, 0);
+    }
+    
+    function update () {
+        var now = Date.now();
+        $.each(countdowns.slice(0), function (i, countdown) {
+            var diff = Math.floor((countdown.date - now) / 1000);
+            if (diff <= 0 && !countdown.countup) {
+                end(i);
+            } else {
+                output(i, Math.abs(diff));
+            }
+        });
+        if (countdowns.length) {
+            window.setTimeout(function () {
+                update();
+            }, 1000);
+        }
+    }
+    
+    function getOptions (node) {
+        /*jshint bitwise:false*/
+        var text = node.parent().attr('data-options'),
+            opts = 0;
+        if (text) {
+            if (/no-leading-zeros/.test(text)) {
+                opts |= NO_LEADING_ZEROS;
+            }
+        }
+        return opts;
+    }
+    
+    $(function () {
+        var countdown = $('.countdown');
+        if (!countdown.length) return;
+        $('.nocountdown').css('display', 'none');
+        countdown
+        .css('display', 'inline')
+        .find('.countdowndate')
+        .each(function () {
+            var $this = $(this),
+                date = (new Date($this.text())).valueOf();
+            if (isNaN(date)) {
+                $this.text('BAD DATE');
+                return;
+            }
+            countdowns.push({
+                node: $this,
+                opts: getOptions($this),
+                date: date,
+            });
+        });
+        if (countdowns.length) {
+            update();
+        }
+    });
+    
+}(window.countdownTimer = window.countdownTimer || {}, mediaWiki, jQuery));
+//</source>

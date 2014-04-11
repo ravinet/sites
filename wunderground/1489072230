@@ -1,0 +1,37 @@
+PHTTP
+18.7.20.69"ã
+ GET /css/slimbox2.css HTTP/1.1
+Host: icons-ak.wxug.com
+Connection: keep-alive
+Accept: text/css,*/*;q=0.1
+vUser-Agent: Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/31.0.1650.63 Safari/537.36
+'Referer: http://www.wunderground.com/
+$Accept-Encoding: gzip,deflate,sdch
+!Accept-Language: en-US,en;q=0.8
+
+*ö
+HTTP/1.1 200 OK
+.Last-Modified: Thu, 26 Dec 2013 18:52:56 GMT
+(Server: Apache/1.3.42 (Unix) PHP/5.3.2
+Accept-Ranges: bytes
+Content-Length: 1325
+Content-Type: text/css
+ Cache-Control: max-age=1506497
+(Expires: Sat, 26 Apr 2014 09:04:42 GMT
+%Date: Tue, 08 Apr 2014 22:36:25 GMT
+Connection: keep-alive
+¯
+
+#lbOverlay { position: fixed; z-index: 9999; left: 0; top: 0; width: 100%; height: 100%; background-color: #000; cursor: pointer; } 
+#lbCenter, #lbBottomContainer { position: absolute; z-index: 9999; overflow: hidden; background-color: #fff; }
+.lbLoading { background: #fff url(//icons.wxug.com/graphics/wu2/slimbox2_loading.gif) no-repeat center; }
+#lbImage { position: absolute; left: 0; top: 0; border: 10px solid #fff; background-repeat: no-repeat; }
+#lbPrevLink, #lbNextLink { display: block; position: absolute; top: 0; width: 50%; outline: none; }
+#lbPrevLink { left: 0; }
+#lbPrevLink:hover { background: transparent url(//icons.wxug.com/graphics/wu2/slimbox_prevlabel.gif) no-repeat 0 15%; }
+#lbNextLink { right: 0; }
+#lbNextLink:hover { background: transparent url(//icons.wxug.com/graphics/wu2/slimbox_nextlabel.gif) no-repeat 100% 15%; }
+#lbBottom { font-family: Verdana, Arial, Geneva, Helvetica, sans-serif; font-size: 10px; color: #666; line-height: 1.4em; text-align: left; border: 10px solid #fff; border-top-style: none; }
+#lbCloseLink { display: block; float: right; width: 66px; height: 22px; background: transparent url(//icons.wxug.com/graphics/wu2/slimbox2_closelabel.gif) no-repeat center; margin: 5px 0; outline: none; }
+#lbCaption, #lbNumber { margin-right: 71px; }
+#lbCaption { font-weight: bold; }

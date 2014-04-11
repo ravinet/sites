@@ -1,0 +1,26 @@
+PHTTP216.229.2.148"¾
+FGET /assets/jquery-themes/delta/js/jquery.imgpreload.min.js HTTP/1.1
+Host: www.jvzoo.com
+Connection: keep-alive
+Accept: */*
+vUser-Agent: Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/31.0.1650.63 Safari/537.36
+ Referer: http://www.jvzoo.com/
+$Accept-Encoding: gzip,deflate,sdch
+!Accept-Language: en-US,en;q=0.8
+ÌCookie: PHPSESSID=bvctb17lj36q594k6bpcl22090; jvzsession=a%3A4%3A%7Bs%3A10%3A%22session_id%22%3Bs%3A32%3A%22e0ca1929675875e688ddefbbe3ff6033%22%3Bs%3A10%3A%22ip_address%22%3Bs%3A12%3A%22128.30.76.55%22%3Bs%3A10%3A%22user_agent%22%3Bs%3A104%3A%22Mozilla%2F5.0+%28X11%3B+Linux+x86_64%29+AppleWebKit%2F537.36+%28KHTML%2C+like+Gecko%29+Chrome%2F31.0.1650.63+Safari%2F537.36%22%3Bs%3A13%3A%22last_activity%22%3Bi%3A1396994531%3B%7D8e4c46fed6808fdca404ff5589dec561
+
+*Ì
+HTTP/1.1 200 OK
+%Date: Tue, 08 Apr 2014 22:02:11 GMT
+PServer: Apache/2.2.24 (FreeBSD) PHP/5.4.16 mod_ssl/2.2.24 OpenSSL/0.9.8y DAV/2
+.Last-Modified: Mon, 31 Mar 2014 12:34:52 GMT
+#ETag: "1b18562-2d4-4f5e647291300"
+Accept-Ranges: bytes
+Content-Length: 724
+Keep-Alive: timeout=2, max=95
+Connection: Keep-Alive
+&Content-Type: application/javascript
+Ö
+/* v1.4 */
+/* https://github.com/farinspace/jquery.imgpreload */
+if("undefined"!=typeof jQuery){(function(a){a.imgpreload=function(b,c){c=a.extend({},a.fn.imgpreload.defaults,c instanceof Function?{all:c}:c);if("string"==typeof b){b=new Array(b)}var d=new Array;a.each(b,function(e,f){var g=new Image;var h=f;var i=g;if("string"!=typeof f){h=a(f).attr("src");i=f}a(g).bind("load error",function(e){d.push(i);a.data(i,"loaded","error"==e.type?false:true);if(c.each instanceof Function){c.each.call(i)}if(d.length>=b.length&&c.all instanceof Function){c.all.call(d)}a(this).unbind("load error")});g.src=h})};a.fn.imgpreload=function(b){a.imgpreload(this,b);return this};a.fn.imgpreload.defaults={each:null,all:null}})(jQuery)}

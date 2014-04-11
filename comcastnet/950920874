@@ -1,0 +1,28 @@
+PHTTP68.87.26.10"ˇ
+"POST /OfferFinder.cajax HTTP/1.1
+Host: www.comcast.com
+Connection: keep-alive
+Content-Length: 383
+ Origin: http://www.comcast.com
+vUser-Agent: Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/31.0.1650.63 Safari/537.36
+(Content-Type: text/plain;charset=UTF-8
+Accept: */*
+6Referer: http://www.comcast.com/?CMP=ILCXFICOMUTOL3X
+$Accept-Encoding: gzip,deflate,sdch
+!Accept-Language: en-US,en;q=0.8
+∂Cookie: SHS=0; neustar=NeustarResponse=segment%3d000%7cVOICE%3d0%7cDATA%3d0%7cVIDEO%3d0%7cCA%3d0%7cNSDBS%3d0%7cTP%3d0%7cVC%3d0%7cLV%3d0%7cGD%3d0; mbox=check#true#1396992945|session#1396992884065-69146#1396994745|PC#1396992884065-69146.25_04#1398202485; IPE_S_114714=0; s_sess=%20s_cc%3Dtrue%3B; s_pers=%20s_dfa%3Dcomcastdotcomprod%7C1396994684938%3B%20s_fid%3D4B61C5A0C0E7CA49-0F97D07F0D4535B4%7C1460151284946%3B; BSD=1; SC=RC.USID=0da8be47-cf5c-444b-9b96-1b701970ddbe&RC.SEG=4%3d1%7c64%3d0%7c66%3d0%7c71%3d0%7c80%3d0%7c14%3d0%7c13%3d0%7c&EX=False&GEO=True&L1ID=11599&RC.AGT=520&RC.BIL=CSG&RC.CRPN=0&RC.FRCHN=0&RC.LOC=-9223372036854775808&RC.MGMTA=0&RC.MKT=3550&RC.PRIN=2100&RC.SYS=8993&RC.CORP=512&RC.FRCH=15090&L2ID=2238&L3ID=2239&L4ID=3489&RC.IFL=N&RC.VD=cmp%3dILCXFICOMUTOL3X; PSC=VA=1025&UCID=6fcffdab-25ab-4a6f-ba14-338c0fa7563d&CTY=Cambridge&ST=MA&Z=02139&EX=False&RC.MKT=3550; wwwcomcast_cookie=b50247fa97dcf18a1ff7c01af037538f; Language=en
+Å
+{"Method":"GetLowestPrice","Arg":"{\"IncludeTV\":true,\"IncludePhone\":true,\"IncludeInternet\":true,\"IncludeHome\":false,\"StartingPriceElementId\":\"starting_price\",\"PromoNoOfMonthsElementId\":\"lowest-promo-months\",\"MarketId\":\"3550\",\"TargetId\":\"00000000-0000-0000-0000-000000000000\",\"ContentPath\":\"/sitecore/content/ngbf_comcast_com/Content/Common/Offer Finder\"}"}*˚
+HTTP/1.1 200 OK
+Cache-Control: private
+/Content-Type: application/json; charset=utf-8
+ETag:    
+Server: Microsoft-IIS/7.5
+X-AspNet-Version: 4.0.30319
+êSet-Cookie: SC=RC.USID=0da8be47-cf5c-444b-9b96-1b701970ddbe&RC.SEG=4%3d1%7c64%3d0%7c66%3d0%7c71%3d0%7c80%3d0%7c14%3d0%7c13%3d0%7c&EX=False&GEO=True&L1ID=11599&RC.AGT=520&RC.BIL=CSG&RC.CRPN=0&RC.FRCHN=0&RC.LOC=-9223372036854775808&RC.MGMTA=0&RC.MKT=3550&RC.PRIN=2100&RC.SYS=8993&RC.CORP=512&RC.FRCH=15090&L2ID=2238&L3ID=2239&L4ID=3489&RC.IFL=N&RC.VD=cmp%3dILCXFICOMUTOL3X; domain=comcast.com; path=/
+∑Set-Cookie: PSC=VA=1025&UCID=6fcffdab-25ab-4a6f-ba14-338c0fa7563d&CTY=Cambridge&ST=MA&Z=02139&EX=False&RC.MKT=3550; domain=comcast.com; expires=Wed, 08-Apr-2015 21:34:44 GMT; path=/
+%Date: Tue, 08 Apr 2014 21:34:44 GMT
+Content-Length: 250
+HSet-Cookie: wwwcomcast_cookie=b50247fa97dcf18a1ff7c01af037538f;path=/;
+¸
+{"Details":null,"HtmlContent":[{"key":"starting_price","value":"<sup class='dollar'>$<\/sup>79<sup class='cents'>99<\/sup>"},{"key":"lowest-promo-months","value":"for the first 12 months"}],"OmnitureData":[],"ResponseType":0,"ValidationSummary":null}

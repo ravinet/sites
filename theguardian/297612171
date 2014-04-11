@@ -1,0 +1,25 @@
+PHTTP54.84.148.104"±
+ GET /sync?ssp=rubicon HTTP/1.1
+Host: x.bidswitch.net
+Connection: keep-alive
+Accept: image/webp,*/*;q=0.8
+vUser-Agent: Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/31.0.1650.63 Safari/537.36
+uReferer: http://tap2-cdn.rubiconproject.com/partner/scripts/rubicon/emily.html?rtb_ext=1&pc=7845/12566&geo=na&co=us
+$Accept-Encoding: gzip,deflate,sdch
+!Accept-Language: en-US,en;q=0.8
+
+*ƒ
+ HTTP/1.1 302 Moved Temporarily
+Server: nginx/1.4.4
+%Date: Tue, 08 Apr 2014 22:28:08 GMT
+(Content-Type: text/html; charset=UTF-8
+Content-Length: 0
+Connection: keep-alive
+~Set-Cookie: tuuid=a872c424-4de9-407c-b1cf-b1c6e418d6ba; path=/; expires=Thu, 07-Apr-2016 22:28:08 GMT; domain=.bidswitch.net
+CSet-Cookie: tuuid=; path=/; expires=Mon, 01-Mar-2004 00:00:00 GMT
+PP3P: CP="NOI DSP COR NID CURa ADMa DEVa PSAa PSDa OUR BUS COM INT OTC PUR STA"
+9Location: http://x.bidswitch.net/ul_cb/sync?ssp=rubicon
+4Cache-Control: no-cache, no-store, must-revalidate
+(Expires: Mon, 26 Jul 1997 05:00:00 GMT
+Pragma: no-cache
+

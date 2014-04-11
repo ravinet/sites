@@ -1,0 +1,26 @@
+»HTTPS173.194.46.100"›
+GET /iframe_api HTTP/1.1
+Host: www.youtube.com
+Connection: keep-alive
+Accept: */*
+vUser-Agent: Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/31.0.1650.63 Safari/537.36
+¨Referer: http://ads.jetpackdigital.com/lineitems/18079/jpdi.html?u=http://adclick.g.doubleclick.net/aclk%253Fsa%253DL%2526ai%253DBSB7NUnlEU_alEsupwAHHqoHwBI217twEAAAAEAEg1eS1HTgAWOWMx9iKAWDJlu6IhKTsD7IBDHd3dy52aWNlLmNvbboBCWdmcF9pbWFnZcgBCdoBGWh0dHA6Ly93d3cudmljZS5jb20vZW5fdXPAAgLgAgDqAhsvMTY5MTYyNDUvdmljZS5jb20vaG9tZXBhZ2X4AvnRHoADAZAD4AOYA-ADqAMB4AQB0gUCCAGgBhY%2526num%253D0%2526sig%253DAOD64_1wRr2nATdg9G52hocDvfGk-1LymA%2526client%253Dca-pub-2894379734658613%2526adurl%253Dhttps://www.youtube.com/channel/UCymNHfE-n-cooJiM92IWQYg?feature=watch
+$Accept-Encoding: gzip,deflate,sdch
+!Accept-Language: en-US,en;q=0.8
+KCookie: YSC=9aQQOvRdGQc; VISITOR_INFO1_LIVE=nngHYmyPvO0; PREF=f1=50000000
+
+*Â
+HTTP/1.1 200 OK
+%Date: Tue, 08 Apr 2014 22:33:55 GMT
+Server: gwiseguy/2.0
+cX-XSS-Protection: 1; mode=block; report=https://www.google.com/appserve/security-bugs/log/youtube
+&Content-Type: application/javascript
+Cache-Control: no-cache
+(Expires: Tue, 27 Apr 1971 19:44:06 EST
+!X-Content-Type-Options: nosniff
+Content-Length: 672
+X-Frame-Options: SAMEORIGIN
+Alternate-Protocol: 443:quic
+¢
+
+if (!window['YT']) {var YT = {loading: 0,loaded: 0};}if (!window['YTConfig']) {var YTConfig = {};}if (!YT.loading) {YT.loading = 1;(function(){var l = [];YT.ready = function(f) {if (YT.loaded) {f();} else {l.push(f);}};window.onYTReady = function() {YT.loaded = 1;for (var i = 0; i < l.length; i++) {try {l[i]();} catch (e) {}}};YT.setConfig = function(c) {for (var k in c) {if (c.hasOwnProperty(k)) {YTConfig[k] = c[k];}}};var a = document.createElement('script');a.id = 'www-widgetapi-script';a.src = 'https:' + '//s.ytimg.com/yts/jsbin/www-widgetapi-vflorwMqh.js';a.async = true;var b = document.getElementsByTagName('script')[0];b.parentNode.insertBefore(a, b);})();}

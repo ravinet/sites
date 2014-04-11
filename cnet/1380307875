@@ -1,0 +1,23 @@
+PHTTP
+18.7.20.69"‡
+XGET /fly/102-fly/bundles/cnetjs/js-build/managers/third-party/social-flags.js HTTP/1.1
+Host: cnet4.cbsistatic.com
+Connection: keep-alive
+Accept: */*
+vUser-Agent: Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/31.0.1650.63 Safari/537.36
+Referer: http://www.cnet.com/
+$Accept-Encoding: gzip,deflate,sdch
+!Accept-Language: en-US,en;q=0.8
+
+*‡
+HTTP/1.1 200 OK
+Server: nginx
+(Content-Type: application/x-javascript
+Content-Length: 98
+.Last-Modified: Tue, 08 Apr 2014 18:43:51 GMT
+2Access-Control-Allow-Origin: http://www.cnet.com
+Accept-Ranges: bytes
+%Date: Tue, 08 Apr 2014 21:34:31 GMT
+Connection: keep-alive
+d
+define([],function(){return{enabled:{facebook:!0,google:!0,linkedIn:!0,pinterest:!0,twitter:!0}}})

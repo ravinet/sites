@@ -1,0 +1,49 @@
+PHTTP23.209.52.211"Ã
+GET /js/geo.js HTTP/1.1
+Host: cdn3.optimizely.com
+Connection: keep-alive
+Accept: */*
+vUser-Agent: Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/31.0.1650.63 Safari/537.36
+Referer: http://time.com/
+$Accept-Encoding: gzip,deflate,sdch
+!Accept-Language: en-US,en;q=0.8
+
+*«	
+HTTP/1.1 200 OK
+Server: AmazonS3
+Content-Length: 802
+(Content-Type: application/x-javascript
+Nx-amz-id-2: Ehw9+9D/pnnVHunwtpieRlFOLAT5adO3pq57mMLoK40T5Ka1R9txIT9Jk05vFSHN
+Vary: Accept-Encoding
+*ETag: "e48e9b55427f0b613f5ec309d97387b6"
+$x-amz-request-id: 9DF2B5BCA98AA935
+Cache-Control: max-age=34797
+%Date: Tue, 08 Apr 2014 22:28:43 GMT
+Connection: keep-alive
+¤
+//
+optimizelyGeo = {
+  'city': "CAMBRIDGE",
+  'continent': "NA",
+  'country': "US",
+  'region': "MA",
+  'ip': "128.30.76.55"
+};
+if (typeof window['optimizely'] !== "undefined" &&
+    window['optimizely'] !== null) {
+  try {
+    var visitorObj = window['optimizely']['data']['visitor'];
+    visitorObj['location']['city'] = optimizelyGeo['city'];
+    visitorObj['location']['continent'] = optimizelyGeo['continent'];
+    visitorObj['location']['country'] = optimizelyGeo['country'];
+    visitorObj['location']['region'] = optimizelyGeo['region'];
+    visitorObj['ip'] = optimizelyGeo['ip'];
+  }
+  catch(error) {}
+  if (typeof window['optimizely']['activateGeoDelayedExperiments'] !== "undefined") {
+    window['optimizely']['activateGeoDelayedExperiments']();
+  }
+  else {
+    optimizelyGeo = {};
+  }
+}

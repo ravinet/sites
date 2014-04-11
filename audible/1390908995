@@ -1,0 +1,76 @@
+PHTTP54.235.201.61"È
+GET /js/1105 HTTP/1.1
+Host: tags.mediaforge.com
+Connection: keep-alive
+Accept: */*
+vUser-Agent: Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/31.0.1650.63 Safari/537.36
+"Referer: http://www.audible.com/
+$Accept-Encoding: gzip,deflate,sdch
+!Accept-Language: en-US,en;q=0.8
+
+*ž
+HTTP/1.1 200 OK
+Accept-Ranges: bytes
+Cache-Control: no-store
+Content-Length: 1217
+Content-Type: text/html
+.Last-Modified: Tue, 08 Apr 2014 21:13:43 GMT
+OP3p: policyref="/p3p.xml", CP="DSP NOI ADM PSAo PSDo OUR BUS NAV COM UNI INT"
+Pragma: no-cache
+qSet-Cookie: uID=p+MYkeMRZL99dEmLxdRr3A==; Expires=Wed, 08 Apr 2015 21:27:20 UTC; Domain=.mediaforge.com; Path=/
+%Date: Tue, 08 Apr 2014 21:27:20 GMT
+.Set-Cookie: SERVERID=",(i-403b8a63)"; path=/
+Ã	
+_mf_tag = 
+{
+	"init": function()
+	{
+		var id = 'mf_div';
+		var div = this.create_element(document, ['div', 'id', id]);
+		if(div)
+		{
+			div.style.display = "none";
+			var body = document.getElementsByTagName('body')[0].firstChild;
+			if(body) body.parentNode.insertBefore(div, body);
+
+			var iframe = '<' + 'iframe src="' + window.location.protocol + '//tags.mediaforge.com/pix/1105?type=pos" width="0" height="0"></iframe>';
+			this.inner_html(id, iframe);
+			this.set_timeout(3000);
+		}
+	},
+	"create_element": function(doc, def, parent)
+	{
+		var el = null;
+		if(typeof doc.createElementNS != "undefined")
+		el = doc.createElementNS('http://www.w3.org/1999/xhtml', def[0]);
+		else if(typeof doc.createElement != "undefined")
+		el = doc.createElement(def[0]);
+
+		if(!el)
+		return false;
+
+		for(var i = 1; i < def.length; i++)
+		el.setAttribute(def[i++], def[i]);
+
+		if(parent)
+		parent.appendChild(el);
+
+		return el;
+	},
+	"set_timeout": function(t)
+	{
+		this.timeout = setTimeout('timeout_mf()', t ? t : 3000);
+	},
+	"inner_html": function(id, html)
+	{
+		document.getElementById(id).innerHTML = html;
+	}
+};
+
+function timeout_mf()
+{
+	var t = _mf_tag.timeout;
+	if(t) _mf_tag.inner_html('mf_div', '');
+}
+
+_mf_tag.init();

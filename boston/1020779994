@@ -1,0 +1,26 @@
+PHTTP23.209.35.163"π
+GET /crossdomain.xml HTTP/1.1
+Host: www.ally.com
+Connection: keep-alive
+vUser-Agent: Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/31.0.1650.63 Safari/537.36
+Accept: */*
+ëReferer: http://ad.doubleclick.net/adi/N5776.xplusone.comOX2561/B7949351.107332668;sz=300x250;u=1%7CNA-00000007574807523;kw=[url_encoded_publisher_data];click=;click=http://adclick.g.doubleclick.net/aclk?sa=l&ai=CWTqn5T5IU5rkLvDJwQH23YDgD8SL-5YFhPD3qokBwNGSpQQQASAAUIDH4cQEYMmW7oiEpOwPggEXY2EtcHViLTIzNzgxMTAzMDYyNjU2MzKgAfTgmewDyAEJ4AIAqAMBqgSbAU_QAbWLzAZgm0Cmc24Vb08uF4vuaYiYxKnXUZa9MVshtcWP1lHV4kjtvsJS1XivLyHHsCj0VNko7LNE1xb5fyqXhk2WXReRWIPPBNoNaDjuqIhjOlRs72RGhsXfRM6d1HEA3qEua29dFe_TboRDKbYehpeYitsyH6koc2lbCeuCmGKa5Sci21E-pB0syVmwy34UEX5FsZtCPqnv4AQBoAYh&num=1&sig=AOD64_0grXecFi_rNalKg2VT_nTKR9QcGg&client=ca-pub-2378110306265632&adurl=http://s.xp1.ru4.com/tclick?_o=41192&_t=50521748_300x250&_xt=6347ceab-61dd8ffb-3a9baaa4-7b8ef88a&_inv_o=52786&redirect=;ord=6909666;dcopt=?
+$Accept-Encoding: gzip,deflate,sdch
+!Accept-Language: en-US,en;q=0.8
+
+*Â
+HTTP/1.1 200 OK
+Server: Apache
+5ETag: "1c10f0ab14d729317d9bb253f252ad09:1350434679"
+.Last-Modified: Wed, 17 Oct 2012 00:44:39 GMT
+Accept-Ranges: bytes
+Content-Length: 142
+%Date: Fri, 11 Apr 2014 19:13:43 GMT
+Connection: keep-alive
+9Content-Type: text/x-cross-domain-policy; charset=UTF-8
+X-Powered-By: PHP/5.4.7
+ê
+<?xml version="1.0" encoding="UTF-8" ?>
+<cross-domain-policy>
+	<site-control permitted-cross-domain-policies="all"/>
+</cross-domain-policy>

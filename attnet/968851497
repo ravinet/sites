@@ -1,0 +1,17 @@
+PHTTP216.77.188.73"‹
+GET / HTTP/1.1
+Host: www.att.net
+Connection: keep-alive
+TAccept: text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8
+vUser-Agent: Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/31.0.1650.63 Safari/537.36
+$Accept-Encoding: gzip,deflate,sdch
+!Accept-Language: en-US,en;q=0.8
+
+*é
+ HTTP/1.0 302 Moved Temporarily
+Server: ""
+%Date: Fri, 11 Apr 2014 17:28:56 GMT
+ÅLocation: http://www.att.net/s/context.dll?type=page&id=10000&name=home.page.attyahoo.redirect&redirecturl=http://att.yahoo.com
+Content-length: 0
+Connection: keep-alive
+

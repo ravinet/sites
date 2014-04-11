@@ -1,0 +1,48 @@
+PHTTP68.99.123.161"¥	
+5GET /ui/emergence/corp/en/js/cox-config.js HTTP/1.1
+Host: ww2.cox.com
+Connection: keep-alive
+Accept: */*
+vUser-Agent: Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/31.0.1650.63 Safari/537.36
+2Referer: http://ww2.cox.com/residential/home.cox
+$Accept-Encoding: gzip,deflate,sdch
+!Accept-Language: en-US,en;q=0.8
+´Cookie: SMIDENTITY=WQwRlyEtxh43cCHVj6tce9w3XC8Qk+T9ZV5qMvsxrQ0OigtJNoe6tvZplehSjYxBS0Xy0Vj+1ydPfpaZ+uj27QAenUJm9OAJVYO3em7NVBEeT6a9jhdlZyM2dRsXLxnFMQZU8Qa6YZLDgyN1MW2+RDO9lVXumRz5rKMaWvwUix+ppcVJV+D2bcSmucUUW8JySOChcenHCDq8/Ha/K/DOGzOqTCZLWvPm3/NLRcnGnu/FkZvmRgaIsXnRJPOrsZm5nB6zWhjA8QL/+LFFy4mXeI0sUr+ukbXgzFlE+VHrRt5t5rxg/wfiY6IMSgd63Dq3CrWLng+m5VRa9HdI/CTrxRlj08srmdx9BpLLfcP2cFP7ohzG5kU5CxV9Ye/jjPhu6meYCafNDvzq3S4t5ygje0MosgvBuyFqWVs/EzqplgYmxlOuIy983lZrd7lSRGD3PR3pOCVqmbc154z6IH/z5lobuIlGr5UwJBW0jRxmiTupeyQPuFm/sTrrx9246StsbL6IQbgKbhaV91Q9evGOlTugqJzyYtvv6i+2PkVaivLXQX/qq/r3HuUuYVYSAKWCVCQFi6R4hmGwtLuMEfGbR+XE3zna6rPCUZbTiRSbetdDMg9DM+e0sWW7Sn7SrIIqkpSkv+mvm5C/O82kPIXiVYa4kOwQnws3jiGXf+B0B6qcEwO46POg9Y6w+7mUwaTk; cox-current-zipcode=02139; mbox=check#true#1397226802|session#1397226741672-954465#1397228602
+
+*Â
+HTTP/1.1 200 OK
+%Date: Fri, 11 Apr 2014 14:32:21 GMT
+Server: Apache
+Vary: Host
+.Last-Modified: Wed, 08 Jan 2014 14:24:31 GMT
+Accept-Ranges: bytes
+Content-Length: 732
+X-UA-Compatible: IE=edge
+.Cache-Control: max-age=7200, must-revalidate
+Keep-Alive: timeout=10
+Connection: Keep-Alive
+&Content-Type: application/javascript
+Þ
+dojo.registerModulePath("mojo", "../../src");
+dojo.registerModulePath("cox", "../../cox");
+dojo.registerModulePath("stdlib", "../../stdlib");
+dojo.registerModulePath("extLib", "../../lib");
+
+//Provides the Omniture Suite with the ability to change suiteID's between
+//different environments. Sometimes we don't want Omniture
+//receiving metrics from our dev environments 
+
+dojo.require("mojo.controller.Map");
+dojo.require("cox.SiteMap");
+
+if (typeof cox == "undefined")
+	cox = { runmode: "development" }
+else	
+	cox.runmode = "development"
+
+var init = function() {
+	var ctrlIniter = mojo.controller.Map.getInstance();
+	ctrlIniter.setSiteMap(cox.SiteMap);
+	ctrlIniter.mapControllers(window.location.href);
+}
+$(document).ready(init);

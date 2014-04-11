@@ -1,0 +1,26 @@
+PHTTP23.23.104.187"Œ
+6GET /GenericUserSync.ashx?dpid=38noredirect HTTP/1.1
+Host: sync.tidaltv.com
+Connection: keep-alive
+Accept: image/webp,*/*;q=0.8
+vUser-Agent: Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/31.0.1650.63 Safari/537.36
+9Referer: http://fast.swa.demdex.net/dest3.html?d_nsid=0
+$Accept-Encoding: gzip,deflate,sdch
+!Accept-Language: en-US,en;q=0.8
+
+*²
+HTTP/1.1 302 Found
+Cache-Control: private
+(Content-Type: text/html; charset=utf-8
+%Date: Tue, 08 Apr 2014 22:25:35 GMT
+ZLocation: http://dpm.demdex.net/ibs:dpid=445&dpuuid=6fe3b36e-8224-4adb-aa38-26d4c88eb8a9
+Server: Microsoft-IIS/7.0
+€Set-Cookie: tidal_ttid=6fe3b36e-8224-4adb-aa38-26d4c88eb8a9; domain=tidaltv.com; expires=Fri, 08-Apr-2016 22:25:35 GMT; path=/
+X-AspNet-Version: 4.0.30319
+X-Powered-By: ASP.NET
+Content-Length: 199
+Connection: keep-alive
+É
+<html><head><title>Object moved</title></head><body>
+<h2>Object moved to <a href="http://dpm.demdex.net/ibs:dpid=445&amp;dpuuid=6fe3b36e-8224-4adb-aa38-26d4c88eb8a9">here</a>.</h2>
+</body></html>

@@ -1,0 +1,144 @@
+PHTTP68.232.190.10"û
+JGET /wp-content/plugins/ShareCallout/js/jquery.modal.js?ver=1.0 HTTP/1.1
+Host: cdn.viralnova.com
+Connection: keep-alive
+Accept: */*
+vUser-Agent: Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/31.0.1650.63 Safari/537.36
+$Referer: http://www.viralnova.com/
+$Accept-Encoding: gzip,deflate,sdch
+!Accept-Language: en-US,en;q=0.8
+
+*´ 
+HTTP/1.1 200 OK
+Server: ATS/3.3.5-dev
+%Date: Tue, 08 Apr 2014 19:26:23 GMT
+(Content-Type: application/x-javascript
+Content-Length: 3644
+.Last-Modified: Mon, 21 Oct 2013 13:56:56 GMT
+(Expires: Wed, 09 Apr 2014 19:26:23 GMT
+Cache-Control: max-age=86400
+X-Cacheable: YES
+Accept-Ranges: bytes
+X-Varnish: 1727148758
+Age: 11261
+cVia: 1.1 varnish, http/1.1 cache-pnj-6 (ApacheTrafficServer/3.3.5-dev [uScHs f p eN:t cCHi p s ])
+Server-tag: ID14143
+Connection: close
+¾
+(function (e) {
+    e.fn.modal = function (t) {
+        function o() {
+            e("." + t.videoClass).attr("src", t.video);
+            r.hide();
+            if (e(window).width() < i.outerWidth()) var o = e(window).width() - i.outerWidth() / 2 + e(window).scrollLeft();
+            else var o = e(window).width() / 2 - i.outerWidth() / 2 + e(window).scrollLeft();
+            i.css({
+                top: e(window).height() / 2 - i.outerHeight() / 2 + e(window).scrollTop(),
+                left: o
+            });
+            if (s === false) {
+                n.css({
+                    opacity: t.opacity,
+                    backgroundColor: "#" + t.background
+                });
+                n[t.animationEffect](t.animationSpeed);
+                i.delay(t.animationSpeed)[t.animationEffect](t.animationSpeed)
+            } else {
+                i.show()
+            }
+            s = true
+        }
+
+        function u() {
+            if (e(window).width() < r.outerWidth()) {
+                var n = e(window).width() - r.outerWidth() / 2 + e(window).scrollLeft()
+            } else {
+                var n = e(window).width() / 2 - r.outerWidth() / 2 + e(window).scrollLeft()
+            }
+            r.stop(true).animate({
+                top: e(window).height() / 2 - r.outerHeight() / 2 + e(window).scrollTop(),
+                left: n
+            }, t.moveModalSpeed)
+        }
+
+        function a() {
+            e("." + t.videoClass).attr("src", "");
+            s = false;
+            r.fadeOut(100, function () {
+                if (t.animationEffect === "slideDown") {
+                    n.slideUp()
+                } else if (t.animationEffect === "fadeIn") {
+                    n.fadeOut()
+                }
+            });
+            return false
+        }
+        t = e.extend({
+            trigger: ".modalLink",
+            olay: "div.overlay",
+            modals: "div.modal",
+            animationEffect: "fadeIn",
+            animationSpeed: 400,
+            moveModalSpeed: "slow",
+            background: "000",
+            opacity: .8,
+            openOnLoad: false,
+            docClose: true,
+            closeByEscape: true,
+            moveOnScroll: true,
+            resizeWindow: true,
+            video: "",
+            videoClass: "video",
+            close: ".closeBtn"
+        }, t);
+        var n = e(t.olay);
+        var r = e(t.modals);
+        var i;
+        var s = false;
+        if (t.animationEffect === "fadein") {
+            t.animationEffect = "fadeIn"
+        }
+        if (t.animationEffect === "slidedown") {
+            t.animationEffect = "slideDown"
+        }
+        n.css({
+            opacity: 0
+        });
+        if (t.openOnLoad) {
+            o()
+        } else {
+            n.hide();
+            r.hide()
+        }
+        e(t.trigger).bind("click", function (t) {
+            t.preventDefault();
+            if (e(".modalLink").length > 1) {
+                getModal = e(this).attr("href");
+                i = e(getModal)
+            } else {
+                i = e(".modal")
+            }
+            o()
+        });
+        if (t.docClose) {
+            n.bind("click", a)
+        }
+        e(t.close).bind("click", a);
+        if (t.closeByEscape) {
+            e(window).bind("keyup", function (e) {
+                if (e.which === 27) {
+                    a()
+                }
+            })
+        }
+        if (t.resizeWindow) {
+            e(window).bind("resize", u)
+        } else {
+            return false
+        } if (t.moveOnScroll) {
+            e(window).bind("scroll", u)
+        } else {
+            return false
+        }
+    }
+})(jQuery)

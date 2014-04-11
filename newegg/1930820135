@@ -1,0 +1,25 @@
+PHTTP173.252.110.27"‘
+SGET /fr/u.php?p=480728871940130&m=api62093IFAL1396994773602389&t=2592000 HTTP/1.1
+Host: www.facebook.com
+Connection: keep-alive
+Accept: image/webp,*/*;q=0.8
+vUser-Agent: Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/31.0.1650.63 Safari/537.36
+!Referer: http://www.newegg.com/
+$Accept-Encoding: gzip,deflate,sdch
+!Accept-Language: en-US,en;q=0.8
+
+*ÿ
+HTTP/1.1 302 forced.302
+Ócontent-security-policy: default-src *;script-src https://*.facebook.com http://*.facebook.com https://*.fbcdn.net http://*.fbcdn.net *.facebook.net *.google-analytics.com *.virtualearth.net *.google.com 127.0.0.1:* *.spotilocal.com:* 'unsafe-inline' 'unsafe-eval' https://*.akamaihd.net http://*.akamaihd.net *.atlassolutions.com chrome-extension://lifbcibllhkdhoafpjfnlhfpfgnpldfl;style-src * 'unsafe-inline';connect-src https://*.facebook.com http://*.facebook.com https://*.fbcdn.net http://*.fbcdn.net *.facebook.net *.spotilocal.com:* https://*.akamaihd.net ws://*.facebook.com:* http://*.akamaihd.net https://fb.scanandcleanlocal.com:* *.atlassolutions.com http://attachment.fbsbx.com https://attachment.fbsbx.com;
+"Cache-Control: public, max-age=0
+(Content-Type: text/html; charset=utf-8
+%Date: Tue, 08 Apr 2014 15:06:13 PDT
+(Expires: Tue, 08 Apr 2014 15:06:13 PDT
+2Location: http://api.nanigans.com/fbx_nosync.php
+Pragma: public
+!X-Content-Type-Options: nosniff
+X-XSS-Protection: 0
+:X-FB-Debug: K0AdR0L8WLwuUL0SldLtgQCFdfKrNnIqIxKVXMIJ/rI=
+Connection: keep-alive
+Content-Length: 0
+

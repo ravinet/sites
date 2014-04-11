@@ -1,0 +1,110 @@
+PHTTP23.74.28.10"Ù
+PGET /modules/mod_pch_uninav/assets/js/uni-nav.js?v=3.1.32.1.454-18308 HTTP/1.1
+Host: www.pch.com
+Connection: keep-alive
+Accept: */*
+vUser-Agent: Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/31.0.1650.63 Safari/537.36
+Referer: http://www.pch.com/
+$Accept-Encoding: gzip,deflate,sdch
+!Accept-Language: en-US,en;q=0.8
+bCookie: deb088d138aa52ddbeb48990e3e58a5e=k12m2f9f5ent563l9fgbgvu270; pdd=D; pci=n3qg5f4gGbPBKvNH
+
+*Ø
+HTTP/1.1 200 OK
+Server: Apache
+.Last-Modified: Thu, 20 Jun 2013 15:22:41 GMT
+#ETag: "2613e44-8fe-4df9784635240"
+Accept-Ranges: bytes
+Content-Length: 2302
+GP3P: CP="CAO DSP COR CUR ADM DEV TAI PSA PSD IVA IVD CON OUR LEG UNI"
+Content-Type: text/javascript
+%Date: Tue, 08 Apr 2014 22:08:04 GMT
+Connection: keep-alive
+€
+if ( typeof window.PCH !== 'object') {
+	window.PCH = {};
+}
+
+if ( typeof window.PCH.uniExp !== 'object') {
+	window.PCH.uniExp = {};
+}
+
+// nav code
+PCH.uniExp.nav = (function(win, doc, undefined) {
+	var header = $('.header');
+	var nav = $('.nav-list');
+	if ( !nav.length || !header.length ) {
+		if (window.console) { console.log('NO UNVERSAL NAVIGATION') };
+		return false;
+	} else {
+		var nextBtn = nav.find('span.nxt'), prvBtn = nav.find('span.prv'), 
+		navWindow = nav.find('.nav'), navGroup = navWindow.find('ul'), tabs = navGroup.find('li'), 
+		tabWidth = tabs.width(), 
+		groupWidth = parseInt(navGroup.find('li').width()) * navGroup.find('li').length, 
+		shimPx = 2, 
+		windowWidth = navWindow.width() + shimPx, animate = false, calc = tabWidth;
+		navGroup.width(groupWidth);
+
+		var checkButtonStates = function() {
+			if (parseInt(navGroup.css('margin-left')) == 0) {
+				prvBtn.addClass('disabled');
+			}
+			else{
+				prvBtn.removeClass('disabled');
+			}
+			
+			if (parseInt(navGroup.css('margin-left')) == ((groupWidth - windowWidth ) * -1 )) {
+				nextBtn.addClass('disabled');
+			}
+			else{
+				nextBtn.removeClass('disabled');
+			}
+		};
+
+		var slideMenu = function(direction, cb) {
+			if (direction === 'left') {
+				if ((animate === false ) && (parseInt(navGroup.css('margin-left')) > ((groupWidth - windowWidth ) * -1 ) )) {
+					animate = true;
+					navGroup.animate({
+						'margin-left' : '-=' + calc + 'px'
+					}, 800, /*'easeOutCubic',*/ function(e) {
+						animate = false;
+						if (cb) {
+							cb();
+						}
+					});
+				}
+			} else if (direction === 'right') {
+				if ((animate === false ) && parseInt(navGroup.css('margin-left')) < 0) {
+					animate = true;
+					navGroup.animate({
+						'margin-left' : '+=' + calc + 'px'
+					}, 800, /*'easeOutCubic',*/ function(e) {
+						animate = false;
+						if (cb) {
+							cb();
+						}
+					});
+				}
+			}
+		};
+
+		prvBtn.bind('click', function(e) {
+			if (!$(this).hasClass('disabled')) {
+				slideMenu('right', checkButtonStates);
+			}
+
+		});
+
+		nextBtn.bind('click', function(e) {
+			if (!$(this).hasClass('disabled')) {
+				slideMenu('left', checkButtonStates);
+			}
+		});
+
+		checkButtonStates();
+
+		return true;
+	}
+
+} )(this, this.document);

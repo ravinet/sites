@@ -1,0 +1,26 @@
+PHTTP23.21.87.175"Í
+êGET /event?a=246059135&d=25134714&y=false&s245617832=none&s245677587=gc&s245875585=direct&s246048108=false&n=http%3A%2F%2Fwww.mozilla.org%2Fen-US%2F&u=oeu1396994698432r0.767366559477523&wxhr=true&t=1396994698436&f=780180766 HTTP/1.1
+$Host: 246059135.log.optimizely.com
+Connection: keep-alive
+vUser-Agent: Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/31.0.1650.63 Safari/537.36
+ Origin: http://www.mozilla.org
+Accept: */*
+(Referer: http://www.mozilla.org/en-US/
+$Accept-Encoding: gzip,deflate,sdch
+!Accept-Language: en-US,en;q=0.8
+
+*û
+HTTP/1.1 200 OK
+(Access-Control-Allow-Credentials: true
+)Access-Control-Allow-Methods: POST, GET
+5Access-Control-Allow-Origin: http://www.mozilla.org
+ Content-Type: application/json
+%Date: Tue, 08 Apr 2014 22:04:58 GMT
+9P3P: CP="IDC DSP COR CURa ADMa OUR IND PHY ONL COM STA"
+Server: nginx/1.2.7
+‰Set-Cookie: end_user_id=oeu1396994698432r0.767366559477523; Domain=.246059135.log.optimizely.com; expires=Fri, 05 Apr 2024 22:04:58 GMT
+~Set-Cookie: fixed_external_246059135_end_user_id=; Domain=.optimizely.com; expires=Thu, 01 Jan 1970 00:00:00 GMT; Max-Age=-1
+Content-Length: 2
+Connection: keep-alive
+
+{}

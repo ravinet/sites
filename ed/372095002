@@ -1,0 +1,50 @@
+PHTTP74.84.219.134"Ú
+7GET /sites/all/modules/panels/js/panels.js?b HTTP/1.1
+Host: www.ed.gov
+Connection: keep-alive
+Accept: */*
+vUser-Agent: Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/31.0.1650.63 Safari/537.36
+Referer: http://www.ed.gov/
+$Accept-Encoding: gzip,deflate,sdch
+!Accept-Language: en-US,en;q=0.8
+
+*‘
+HTTP/1.1 200 OK
+%Date: Tue, 08 Apr 2014 21:40:08 GMT
+Server: Apache
+.Last-Modified: Wed, 19 Feb 2014 07:24:00 GMT
+#ETag: "48683c1-2d9-4f2bd45c32400"
+Accept-Ranges: bytes
+Content-Length: 729
+Keep-Alive: timeout=5, max=99
+Connection: Keep-Alive
+&Content-Type: application/javascript
+Û
+
+(function ($) {
+  Drupal.Panels = {};
+
+  Drupal.Panels.autoAttach = function() {
+    if ($.browser.msie) {
+      // If IE, attach a hover event so we can see our admin links.
+      $("div.panel-pane").hover(
+        function() {
+          $('div.panel-hide', this).addClass("panel-hide-hover"); return true;
+        },
+        function() {
+          $('div.panel-hide', this).removeClass("panel-hide-hover"); return true;
+        }
+      );
+      $("div.admin-links").hover(
+        function() {
+          $(this).addClass("admin-links-hover"); return true;
+        },
+        function(){
+          $(this).removeClass("admin-links-hover"); return true;
+        }
+      );
+    }
+  };
+
+  $(Drupal.Panels.autoAttach);
+})(jQuery);

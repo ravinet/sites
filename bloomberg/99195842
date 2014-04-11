@@ -1,0 +1,30 @@
+PHTTP74.125.142.95"¬
+%GET /css?family=Roboto:300 HTTP/1.1
+Host: fonts.googleapis.com
+Connection: keep-alive
+Accept: text/css,*/*;q=0.1
+vUser-Agent: Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/31.0.1650.63 Safari/537.36
+çReferer: http://googleads.g.doubleclick.net/pagead/ads?client=ca-pub-1979187633561026&output=html&h=250&slotname=2495756831&adk=141513410&w=300&ea=0&flash=11.9.900&url=http%3A%2F%2Fwww.bloomberg.com%2F&dt=1396992679998&bpp=7&bdt=326&shv=r20140403&cbv=r20140311&saldr=sa&correlator=1396992680070&frm=23&ga_vid=431590962.1396992680&ga_sid=1396992680&ga_hid=1718264200&ga_fc=1&u_tz=-240&u_his=2&u_java=1&u_h=600&u_w=800&u_ah=600&u_aw=800&u_cd=24&u_nplug=11&u_nmime=54&dff=times%20new%20roman&dfs=16&adx=456&ady=7526&biw=765&bih=503&isw=310&ish=260&ifk=277696101&eid=317150304&oid=3&rx=0&eae=2&vis=1&fu=4&ifi=1&dtd=79
+$Accept-Encoding: gzip,deflate,sdch
+!Accept-Language: en-US,en;q=0.8
+
+*ù
+HTTP/1.1 200 OK
+Content-Type: text/css
+Timing-Allow-Origin: *
+(Expires: Tue, 08 Apr 2014 21:31:20 GMT
+%Date: Tue, 08 Apr 2014 21:31:20 GMT
+'Cache-Control: private, max-age=86400
+Content-Length: 265
+!X-Content-Type-Options: nosniff
+X-Frame-Options: SAMEORIGIN
+!X-XSS-Protection: 1; mode=block
+Server: GSE
+Alternate-Protocol: 80:quic
+‹
+@font-face {
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 300;
+  src: local('Roboto Light'), local('Roboto-Light'), url(http://themes.googleusercontent.com/static/fonts/roboto/v10/Hgo13k-tfSpn0qi1SFdUfT8E0i7KZn-EPnyo3HZu7kw.woff) format('woff');
+}

@@ -1,0 +1,121 @@
+PHTTP50.16.211.237"é
+=GET /themes/vice/statics/js/vice.vbs.video.js?v3.2 HTTP/1.1
+Host: www.vice.com
+Connection: keep-alive
+Accept: */*
+vUser-Agent: Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/31.0.1650.63 Safari/537.36
+$Referer: http://www.vice.com/en_us
+$Accept-Encoding: gzip,deflate,sdch
+!Accept-Language: en-US,en;q=0.8
+
+*Ç
+HTTP/1.1 200 OK
+Accept-Ranges: bytes
+Content-Type: text/javascript
+%Date: Tue, 08 Apr 2014 22:33:57 GMT
+!ETag: "6326b-d39-4e7dce7f11340"
+.Last-Modified: Thu, 03 Oct 2013 21:31:17 GMT
+Server: nginx
+Content-Length: 3385
+Connection: keep-alive
+»
+var vbsVideo = (function(){
+    var self,
+        countdownEnabled,
+        nextVideoUrl,
+        skipButtonDelay,
+        videoArea,
+        videoVisible;
+    return {
+        init: function(){
+            self             = this;
+            countdownEnabled = true;
+            nextVideoUrl     = $('#next_video').attr('value');
+            skipButtonDelay  = 6000;
+            videoArea        = $('#video_area div.innerWrapper');
+            videoVisible     = true;
+
+            $(window).bind('scroll', function(){
+                self.checkVideoVisible();
+            });
+        },
+
+        adSkipButtonClicked: function(player){
+            player.skipAd();
+        },
+
+        adSkipButtonInit: function(player){
+        },
+
+        onAdsPlayed: function(player){
+            $('#skip_ad').remove();
+        },
+
+        onWillPlayAds: function(player){
+            setTimeout(function(){
+                self.adSkipButtonInit(player)
+            }, skipButtonDelay);
+        },
+
+        onPlayed: function(player){
+            if (countdownEnabled && videoVisible && nextVideoUrl != "NULL" ) {
+                self.startVideoCountdown(player);
+            }
+        },
+
+        checkVideoVisible: function(){
+            var scrollHeight = $(window).scrollTop();
+            if (scrollHeight > 610) {
+                videoVisible = false;
+            } else {
+                videoVisible = true;
+            }
+        },
+
+        playNextVideo: function(player){
+            window.location.href = nextVideoUrl;
+        },
+
+        receiveOoyalaEvent: function(player, eventName, eventArgs) {
+            switch (eventName) {
+                case "played":
+                    self.onPlayComplete(player);
+                    break;
+                case 'adsPlayed':
+                    self.onAdCompleted(player);
+                    break;
+                case 'willPlayAds':
+                    self.onAdStarted(player);
+                    break;
+            }
+        },
+
+        startVideoCountdown: function(player){
+            var countdownCounter = 3,
+                countdownIntroCopy = $('#countdown_copy .intro').html(),
+                countdownCancelCopy = $('#countdown_copy .cancel').html();
+            countdownIntroCopy = countdownIntroCopy.replace("\{s\}",'<span id="video_area_countdown">' + countdownCounter + '</span>')
+            videoArea.append('<div id="video_area_countdown_wrap">' + countdownIntroCopy + '<span class="cancel">' + countdownCancelCopy + '</span></div>');
+            videoArea.children('object').hide();
+            var countdownWrap = $('#video_area_countdown_wrap'),
+                countdownObj = $('#video_area').find('#video_area_countdown');
+            var countdownInterval = setInterval(function(){
+                countdownCounter--;
+                countdownObj.html(countdownCounter);
+                if (countdownCounter < 1) {
+                    clearInterval(countdownInterval);
+                    self.playNextVideo(player);
+                }
+            }, 1000);
+            countdownWrap.find('.cancel').live('click', function(){
+                clearInterval(countdownInterval);
+                videoArea.children('object').show();
+                countdownWrap.remove();
+                countdownEnabled = false;
+            });
+        }
+    };
+})();
+$(document).ready(function(){
+	vbsVideo.init();
+});

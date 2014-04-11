@@ -1,0 +1,29 @@
+PHTTP
+8.18.45.90"ˆ
+=GET /w/cookie_sync?sid=69824&cb=0.3318483482580632 HTTP/1.1
+Host: media.fastclick.net
+Connection: keep-alive
+Accept: */*
+vUser-Agent: Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/31.0.1650.63 Safari/537.36
+<Referer: http://www.gameninja.com/1active/728x90first.html
+$Accept-Encoding: gzip,deflate,sdch
+!Accept-Language: en-US,en;q=0.8
+
+*ò
+HTTP/1.1 302 Found
+%Date: Fri, 11 Apr 2014 15:35:19 GMT
+BSet-Cookie: cttutcid=1; domain=.fastclick.net; path=/; expires=0
+¤Location: http://iad-login.dotomi.com/commonid/match?user_token=AQEHih3PaOsKGQIBAQErAQEBAQE&rurl=http%3A%2F%2Fmedia%2Efastclick%2Enet%2Fw%2Fcookie%5Fsync%3Fsid%3D69824%26cb%3D0%2E3318483482580632%26vcpdid%3DAQEHih3PaOsKGQIBAQErAQEBAQE%26no%5Fcj%5Fc%3D1%26ccs%5Fstatus%3D0&tok=gB5Ncocfqzw%3D
+gP3P: policyref="/w3c/p3p.xml", CP="NOI NID DEVo TAIo PSAo HISo OTPo OUR DELo BUS COM NAV INT DSP COR"
+Content-Length: 472
+"Keep-Alive: timeout=5, max=19927
+Connection: Keep-Alive
+-Content-Type: text/html; charset=iso-8859-1
+Ú
+<!DOCTYPE HTML PUBLIC "-//IETF//DTD HTML 2.0//EN">
+<html><head>
+<title>302 Found</title>
+</head><body>
+<h1>Found</h1>
+<p>The document has moved <a href="http://iad-login.dotomi.com/commonid/match?user_token=AQEHih3PaOsKGQIBAQErAQEBAQE&amp;rurl=http%3A%2F%2Fmedia%2Efastclick%2Enet%2Fw%2Fcookie%5Fsync%3Fsid%3D69824%26cb%3D0%2E3318483482580632%26vcpdid%3DAQEHih3PaOsKGQIBAQErAQEBAQE%26no%5Fcj%5Fc%3D1%26ccs%5Fstatus%3D0&amp;tok=gB5Ncocfqzw%3D">here</a>.</p>
+</body></html>

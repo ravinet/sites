@@ -1,0 +1,23 @@
+PHTTP64.12.245.3"Ö
++GET /brightcovereporter&sid=1272 HTTP/1.1
+Host: embed.5min.com
+Connection: keep-alive
+vUser-Agent: Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/31.0.1650.63 Safari/537.36
+Accept: */*
+!Referer: http://www.boston.com/
+$Accept-Encoding: gzip,deflate,sdch
+!Accept-Language: en-US,en;q=0.8
+
+*à
+!HTTP/1.1 307 Temporary Redirect
+Cache-Control: private
+Content-Type: text/html
+„Location: http://lfiles.5min.com/BrightcovePlugins/VideoBrightcoveReporter_211.swf?sid=1272&filePath=http://files.5min.com/&nielsenCaId=cmp96075&nielsenCaIdDm=cmp96394&serverPath=http://[app].5min.com&bwLogger=2147417071&partnerNetworkID=374989&partnerSKey=1
+Server: Microsoft-IIS/7.5
+JSet-Cookie: ASP.NET_SessionId=0tqojfwfsliyhgnxoewntjkz; path=/; HttpOnly
+X-AspNet-Version: 4.0.30319
+X-Powered-By: ASP.NET
+X-Server: fmvase-m01 - embed
+%Date: Fri, 11 Apr 2014 19:13:43 GMT
+Content-Length: 0
+

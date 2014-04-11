@@ -1,0 +1,170 @@
+PHTTP23.74.28.10"Û
+RGET /modules/mod_pch_uninav/assets/js/uni-shelf.js?v=3.1.32.1.454-18308 HTTP/1.1
+Host: www.pch.com
+Connection: keep-alive
+Accept: */*
+vUser-Agent: Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/31.0.1650.63 Safari/537.36
+Referer: http://www.pch.com/
+$Accept-Encoding: gzip,deflate,sdch
+!Accept-Language: en-US,en;q=0.8
+bCookie: deb088d138aa52ddbeb48990e3e58a5e=k12m2f9f5ent563l9fgbgvu270; pdd=D; pci=n3qg5f4gGbPBKvNH
+
+*û
+HTTP/1.1 200 OK
+Server: Apache
+.Last-Modified: Thu, 10 Oct 2013 19:02:54 GMT
+"ETag: "15062f-da2-4e867a62bb380"
+Accept-Ranges: bytes
+Content-Length: 3490
+GP3P: CP="CAO DSP COR CUR ADM DEV TAI PSA PSD IVA IVD CON OUR LEG UNI"
+Content-Type: text/javascript
+%Date: Tue, 08 Apr 2014 22:08:04 GMT
+Connection: keep-alive
+¤
+if ( typeof window.PCH !== 'object') {
+	window.PCH = {};
+}
+
+if ( typeof window.PCH.uniExp !== 'object') {
+	window.PCH.uniExp = {};
+}
+
+PCH.UI = {};
+
+
+
+// Creating an utilities class for re-usability
+PCH.UI.Utilites = (function(win, doc, undefined) {
+	var utilityObj = {};
+
+	var formatNumber = function(number, currency) {
+		if (!number) {
+			return false;
+		}
+
+		var n = number;
+		if ( typeof n == 'number') {
+			n = n.toString();
+		}
+		n = n.replace(/\,/g, '');
+		n = n.split('.');
+		n[0] = n[0].replace(/\B(?=(\d{3})+(?!\d))/g, ',');
+		n = n.join('.');
+
+		if (currency) {
+			n = currency + n;
+		}
+		return n;
+	}
+
+	utilityObj.formatNumber = formatNumber;
+	return utilityObj;
+
+} )(this, this.document); 
+
+// shelf code
+PCH.uniExp.shelf = (function(win, doc, undefined) {
+
+	var header = $('.header');
+	var shelf = header.find('#uni_shelf');
+	if (!shelf.length || !header.length) {
+		if (window.console) {
+			console.log('NO REGISTRATION FORM  MANAGER')
+		};
+		return false;
+	} else {
+
+		var signIn = $('.unrecognized').find('a.sign-in'), shelfObj = {},
+		// visibleWindow = shelf.find('div.cnt-window'),
+		shelfContent = shelf.find('div.content'), closeX = shelfContent.find('div.close-x'), btnLoginIn = shelfContent.find('button.btn-signin'), imgLoader = btnLoginIn.next(), maxHeight = shelf[0].scrollHeight, shelfState = (shelf.height() > 0 ) ? 'open' : 'close';
+
+		(function(collection) {
+			collection.each(function(index, element) {
+				var span = $(this).find('label span'), input = $(this).find('input[type!="checkbox"]');
+				input.val('');
+				span.bind('mouseup focus', function(e) {
+					span.addClass('light');
+					input.focus();
+				});
+				input.bind('keyup', function(e) {
+					if ($.trim($(this).val()) === '') {
+						span.removeClass('hide');
+					} else {
+						span.addClass('hide');
+					}
+				});
+				input.bind('blur', function(e) {
+					span.removeClass('light');
+				});
+				input.bind('focus', function(e) {
+					span.addClass('light');
+				});
+			});
+		} )(shelf.find('div.sign-in.section fieldset fieldset'));
+
+		var openShelf = function() {
+			//console.log( 'openShelf' );
+			if (shelfState === 'close') {
+				shelf.animate({
+					'height' : maxHeight + 'px'
+				}, 800, function(e) {
+				});
+				shelfState = 'open';
+			}
+		};
+
+		var closeShelf = function() {
+			//console.log( 'closeShelf' );
+			if (shelfState === 'open') {
+				shelf.animate({
+					'height' : 0
+				}, 800, function(e) {
+				});
+				shelfState = 'close';
+				resetForm();
+			}
+		};
+
+		var resetForm = function() {
+			imgLoader.removeClass('show');
+			btnLoginIn.removeClass('active');
+		};
+
+		closeX.bind('mouseup', function(e) {
+			signIn.removeClass('active');
+			closeShelf();
+			//console.log('close');
+		});
+
+		signIn.bind('click', function(e) {
+			e.preventDefault();
+			if ($(this).hasClass('active')) {
+				//console.log('NOT ACTIVE');
+				return;
+			} else {
+				$(this).addClass('active');
+				openShelf();
+				//console.log('opening');
+			}
+		});
+
+		btnLoginIn.bind('click', function(e) {
+			e.preventDefault();
+			if ($(this).hasClass('active')) {
+				//console.log('NOT ACTIVE');
+				return;
+			} else {
+				$(this).addClass('active');
+				imgLoader.addClass('show');
+				//console.log('opening');
+			}
+		});
+
+		shelfObj.openShelf = openShelf;
+		shelfObj.closeShelf = closeShelf;
+
+		return shelfObj;
+
+	}
+
+} )(this, this.document);

@@ -1,0 +1,29 @@
+PHTTP23.74.28.11"ß
+jGET /etc/clientcontext/default/contextstores/fbprofiledata/loader.json?authorizableId=anonymous HTTP/1.1
+Host: www.foodnetwork.com
+Connection: keep-alive
+Accept: */*
+"X-Requested-With: XMLHttpRequest
+vUser-Agent: Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/31.0.1650.63 Safari/537.36
+&Referer: http://www.foodnetwork.com/
+$Accept-Encoding: gzip,deflate,sdch
+!Accept-Language: en-US,en;q=0.8
+™Cookie: s_cc=true; s_nr=1396993283999; gpv_pn=no%20value; s_sq=%5B%5BB%5D%5D; geoadvisory=1; aam_did=21648485936224841913136698455904685049; aam_fw=scripps%3Dtest%3Baam%3D375785%3Baam%3D260319; s_vi=[CS]v1|29A2368185013074-6000010720003772[CE]; SessionPersistence=CLIENTCONTEXT%3A%3DvisitorId%253Danonymous%7CPROFILEDATA%3A%3Davatar%253D%252Fetc%252Fdesigns%252Fdefault%252Fimages%252Fsocial%252Favatar.png%252Cpath%253D%252Fhome%252Fusers%252Fa%252Fanonymous%252Fprofile%252CisLoggedIn%253Dfalse%252CisLoggedIn_xss%253Dfalse%252CauthorizableId%253Danonymous%252CauthorizableId_xss%253Danonymous%252CformattedName%253Danonymous%252CformattedName_xss%253Danonymous
+
+*ñ
+HTTP/1.1 200 OK
+Accept-Ranges: bytes
+ Content-Type: application/json
+"ETag: "8000805-3f-4f2e0892ecd30"
+.Last-Modified: Fri, 21 Feb 2014 01:28:14 GMT
+ Server: Apache/2.2.25 (Amazon)
+Content-Length: 63
+%Date: Tue, 08 Apr 2014 21:41:24 GMT
+Connection: keep-alive
+Vary: User-Agent
+A
+{"avatar":"/etc/designs/default/images/social/avatar.png"}
+
+
+
+

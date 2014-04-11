@@ -1,0 +1,370 @@
+PHTTP162.159.255.82"Õ
+GET / HTTP/1.1
+Host: www.gfycat.com
+Connection: keep-alive
+&Accept-Encoding: identity;q=1, *;q=0
+vUser-Agent: Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/31.0.1650.63 Safari/537.36
+Accept: */*
+!Referer: http://www.gfycat.com/
+!Accept-Language: en-US,en;q=0.8
+˙Cookie: __cfduid=d13a0e5d19a6c6b5a1cff50dbcb0a666b1396993845907; _ga=GA1.2.62237183.1396993847; __asc=81e4d77b14543526e83bbc31fd5; __auc=81e4d77b14543526e83bbc31fd5; __qca=P0-1481001179-1396993846919; gfypublisheradmiredheartfeltamericanmarten=FRED
+Range: bytes=0-
+
+*¶ç
+HTTP/1.1 206 Partial Content
+Server: cloudflare-nginx
+%Date: Tue, 08 Apr 2014 21:50:47 GMT
+(Content-Type: text/html; charset=UTF-8
+Transfer-Encoding: chunked
+Connection: keep-alive
+Accept-Ranges: bytes
+Age: 0
+Cache-Control: no-cache
+$Content-Range: bytes 0-17539/17540
+ESet-Cookie: gfypublisheradmiredheartfeltamericanmarten=FRED; path=/
+Via: 1.1 varnish
+X-Powered-By: PHP/5.3.28
+X-Varnish: 1125890368
+CF-RAY: 1181aeb84e25099a-ORD
+ â
+41a
+<!DOCTYPE html>
+<html lang="en" xml:lang="en" id="ng-app" ng-app="gfy">
+    <head>
+        <meta charset="utf-8">
+        <!--[if IE]><![endif]-->
+        <meta http-equiv="Content-Language" content="en" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+        <title>
+    Gfycat - jiffier gifs through HTML5 Video Conversion.  Fast, simple gif hosting without size limits.
+    </title>
+            <meta name="description" content="Jiffier gifs. share your gifs with the world on the fastest gif hosting platform. Yes to playback controls, No to size limits!" />
+                <meta name="keywords" content="gif, animated, image host, gif maker, 10mb, video, mp4,webm"/> 
+            <meta name="viewport" content="width=device-width" />
+                        <script src="//assets.gfycat.com/js/vendor-0.830.js"></script>
+        
+        <script src="//assets.gfycat.com/js/gfymain-0.830.js"></script>
+                    
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[
+5a8
+r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-40130883-1', 'gfycat.com');
+  ga('send', 'pageview');
+
+</script>
+        <meta name="google-site-verification" content="lKzNoUXSTGppiupUi6M8J5m_dNN_gWMJB7j1LQ_a1Zg" />
+        
+                
+        <link href="//assets.gfycat.com/css/gfymain-0.582.css" rel="stylesheet">
+      <link href='https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300' rel='stylesheet' type='text/css'>
+        </head>
+    <body>
+                
+        <!-- Start Alexa Certify Javascript -->
+<script type="text/javascript">
+_atrk_opts = { atrk_acct:"VZkxi1a4ZP00OV", domain:"gfycat.com",dynamic: true};
+(function() { var as = document.createElement('script'); as.type = 'text/javascript'; as.async = true; as.src = "https://d31qbv1cthcecs.cloudfront.net/atrk.js"; var s = document.getElementsByTagName('script')[0];s.parentNode.insertBefore(as, s); })();
+</script>
+<noscript><img src="https://d5nxst8fruw4z.cloudfront.net/atrk.gif?account=VZkxi1a4ZP00OV" style="display:none" height="1" width="1" alt="" /></noscript>
+<!-- End Alexa Certify Javascript -->
+        
+                        <noscript>
+        <div class="row">
+            <div class="span5"><img alt="Gfycat hosts your huge gifs, and
+b50
+ makes them faster too." src="//assets.gfycat.com/img/gfycat.01.png" width="294" height="123" />
+            </div>
+            <div class="span3">
+            <p><br>Sorry, but gfycat.com requires javascript for accounts and uploads.<br><b>  Don't worry-- any links you create and share will still work without javascript.
+
+            </div> 
+            
+        </div>
+        </noscript>
+        <div id="bodywrapper" class="ng-cloak">
+        <div class="row">
+            <div class="span5"><img alt="Gfycat hosts your huge gifs, and makes them faster too." src="//assets.gfycat.com/img/gfycat.01.png" width="294" height="123" />
+            </div>
+            <div class="span3 offset4"> 
+                                    <div ng-controller="ModalDemoCtrl">
+    <button class="btn" ng-click="open()" style="margin-top: 10px;">Sign in</button>
+    <a href="about" class="btn btn-mini btn-info"  style="margin-top: 10px;">About this site</a>
+
+    <div modal="shouldBeOpen" close="close()">
+                            <div ng-hide="isCreate||isReset">
+                        <div class="modal-header" >
+            <a ng-href="" ng-click="showCreate()" class="btn btn-primary btn-large pull-right" type="button">Create a free account</a>
+            <h4>Login or create an account</h4>
+        </div>
+        <div class="modal-body">
+                  <form name="loginForm" class="form" ng-submit="sendLogin()" style="margin-left: 40px; margin-top: 15px;">
+                                                <div class="alert alert-error" ng-show="isLoginError">
+                        
+                            {{loginError}}
+                         
+                        </div>
+                        <div class="alert alert-success" ng-show="isLoginOk">
+                        
+                            {{loginMsg}}
+                         
+                        </div>
+                        <input class="pull-left" style="float: left;" type="text" id="inputusername" placeholder="Username" ng-model="account.username" ng-init="account.username=''" required>
+                        <div style="clear: both;"></div>
+                        <input class="pull-left" style="float: left;" type="password" id="inputPassword" placeholder="Password" ng-model="account.password" required>
+                        <div style="clear: both;"></div>
+                        <table><tr>
+                        <td style="display: block; width: 150px;"><label class="control-label pull-left" for="remember_me">Remember me</label>
+                        <td><div class="controls"><input type="checkbox" style="margin-left: 10px; margin-bottom: 8px;" id="remember_me" name="_remember_me" ng-model="account.remember_me" /></div>
+                        </tr></table>
+                        <div style="clear: both;"></div>
+                        <div style="margin-top: 10px; fo
+b50
+nt-size: 13px;"><a ng-href="" ng-click="showReset()">(Password Reset)</a></div>
+                        <input type="submit" style="position: absolute; left: -9999px; width: 1px; height: 1px;"/>
+            </form>
+        </div>
+        <div class="modal-footer">
+            <button class="btn" type="button" ng-click="sendLogin()">Sign in</button>
+            <button class="btn btn-warning cancel" ng-click="close()">Cancel</button>
+        </div>
+                </div>
+                <div ng-show="isCreate">
+                        <div class="modal-header" >
+            <h4>Create an account</h4>
+        </div>
+        <div class="modal-body">
+                  <form class="form" ng-submit="sendCreate()" style="margin-top: 15px; margin-left: 40px;">
+                                                <div class="alert alert-error" ng-show="isLoginError">
+                        
+                            {{loginError}}
+                         
+                        </div>
+                        <div class="alert alert-success" ng-show="isLoginOk">
+                        
+                            {{loginMsg}}
+                         
+                        </div>
+
+                        <input class="pull-left" style="float: left;" type="text" id="email" placeholder="Email (Optional)" ng-model="account.email"> 
+                        <div style="clear: both;"></div>
+                        <input class="pull-left" style="float: left;" type="text" id="inputUsername" placeholder="Username" ng-model="account.username">
+                        <div style="clear: both;"></div>
+                        <input class="pull-left" style="float: left;" type="password" id="inputPassword" placeholder="Password" ng-model="account.password">
+                        <input type="submit" style="position: absolute; left: -9999px; width: 1px; height: 1px;"/>
+            </form>
+
+        </div>
+        <div class="modal-footer">
+            <button class="btn btn-large btn-success" type="button" ng-click="sendCreate()">Create my account</button>
+            <button class="btn btn-warning cancel" ng-click="close()">Cancel</button>
+        </div>
+                </div>
+                <div ng-show="isReset">
+                        <div class="modal-header" >
+            <h4>Request a password reset</h4>
+        </div>
+        <div class="modal-body">
+                <div ng-class="resetFeedbackClass"> 
+                        
+                            {{resetFeedback}}
+                        
+                 </div>
+
+                  <form class="form" ng-submit="sendReset()" >
+                                                <div class="alert alert-error" ng-show="isLoginError">
+                        
+                            {{loginError}}
+                         
+                        </div>
+                        <div class="alert alert-
+5a8
+success" ng-show="isLoginOk">
+                        
+                            {{loginMsg}}
+                         
+                        </div>
+                        <div style="margin: 20px; margin-left: 30px;">Enter your username or the email address associated with your account:</div>
+                        <input class="pull-left" style="float: left; margin-left: 30px;" type="text" id="email" placeholder="Email Address or username" ng-model="account.email"> 
+                        <div style="clear: both;"></div>
+                        <input type="submit" style="position: absolute; left: -9999px; width: 1px; height: 1px;"/>
+                </form>
+
+        </div>
+        <div class="modal-footer">
+            <button class="btn btn-large btn-success" type="button" ng-click="sendReset()">Reset my password</button>
+            <button class="btn btn-warning cancel" ng-click="close()">Cancel</button>
+        </div>
+                </div>
+                 </div>
+</div>
+                            </div>
+        </div>
+<div ng-controller="UploadCtrl">
+
+        <div class="row" ng-hide="isPreview||isError">
+            <div class="span4 offset4 container">
+            <div style="margin-left: -35px;text-align:center;"><h3 style="color:rgb(204,24,30);">NEW: Direct Video Uploads!</h3><div style="margin-bottom: 10px;margin-top:-8px;">(or fetch a GIF from youtube, vimeo, liveleak, and more...)</div></div>
+          
+b50
+  <div class="list-group" style="margin-left: -35px; margin-bottom: -20px; text-align: center; padding: 40px; padding-top: 25px; padding-bottom: 25px; color: #ffffff; background-color: #4c4d4c; border-radius: 4px; border-radius: 4px; border-style: solid; border-width: 1px;" >
+                    <h2 ng-init="viewCount='51241678';viewSize='436516656377730.625';timeOfEpoch='1375660800';timeOfStats='1395236107';startCounter()" style="margin-bottom: -23px;">
+
+
+{{counterText}}</h2>
+<h3>Bandwidth Saved</h3>
+Upload your gifs and grow this counter!<br>
+(<a href="http://reddit.com/r/gfycat" style="color: white;text-decoration:underline;">reddit.com/r/gfycat</a> for support and suggestions)
+
+           </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="span6 offset3 container">
+<div>
+
+
+<div id="progressText" class="container">
+<div ng-class='alertClass' ng-show="showMsg">{{prgMsg}}</div>
+</div>
+<p style="height: 40px;" /> 
+
+<div id="approvePublish" ng-show="isConverted" style="text-align: center; width: 491px;">
+    <a ng-href="" ng-click="publish()"><img src="//assets.gfycat.com/img/publish.png" ng-class="publishButtonClass" /></a>
+</div>
+<div class="progress" style="width: 490px; margin-left: 61px; display: none; ">
+  <div id="uploadProgressBar" class="bar" ng-style="{width: (progressPercent/100)*490 + 'px'};"></div>
+</div>
+
+<form id="form1" enctype="multipart/form-data" method="post">
+    <div class="upload_row" ng-hide="isPreview">
+        <img id="Web" name="Web" onclick="showUrlBox();" src="//assets.gfycat.com/img/fetch.png" onmouseover="document.Web.src='//assets.gfycat.com/img/fetch_highlighted.png';" onmouseout="document.Web.src='//assets.gfycat.com/img/fetch.png';" />
+        <div class="fileinput-container">
+            <div class="fileinput-button">
+                <img id="localbutton" name="localbutton" src="//assets.gfycat.com/img/upload.png" onmouseover="document.localbutton.src='//assets.gfycat.com/img/upload_highlighted.png';" onmouseout="document.localbutton.src='//assets.gfycat.com/img/upload.png';" />
+
+                <input type="file" id="file" name="file" onmouseover="document.localbutton.src='//assets.gfycat.com/img/upload_highlighted.png';" onmouseout="document.localbutton.src='//assets.gfycat.com/img/upload.png';">
+            </div>
+        </div>
+        <div style="float: left; margin-top: 35px; margin-left: 5px;">
+        <li class="dropdown" style="list-style-type: none;">
+            <a class="btn btn-mini drop-down-toggle dropdown-toggle" ng-href="">
+                <span class="caret"></span>
+            </a>
+            <ul class="dropdown-menu" style="padding: 5px 10px 0;">
+                <li>
+                <label class="checkbox">
+                <input name="noResize" type="checkbox" ng-model="noResize">
+                Do not resize <a href="/about#noresize" style="font-si
+5a8
+ze: x-small;">[?]</a>
+                </label>
+                <label class="checkbox">
+                <input name="noMd5" type="checkbox" ng-model="noMd5">
+                Ignore existing <a href="/about#nomd5" style="font-size: x-small;">[?]</a>
+                </label>
+                </li>
+            </ul>
+        </li>
+        </div>
+    </div>
+</form>
+<div id="previewArea" ng-show="isPreview">
+    <div id="gifPreviewWrap" ng-style="{width: gifWidth}">
+        <div style="float: left; margin-top: -30px; margin-left: -40px;" ><a ng-href="" class="btn btn-mini" ng-click="zoomGif()"><i ng-class="zoomClass" ng-init="zoomClass='icon-zoom-in'" ></i></a></div>
+        <div style="padding: 13px; font-size: 13px; width: 165px; color: white; background-color: #e23300; font-weight: bold; margin: 0;">
+            {{gifPreviewText}}
+        </div>
+        <video id="vidPreview" ng-show="vidUpload" name="gifPreview" src="#" ng-style="{float: left, width: gifWidth}" loop></video>
+        <img id="gifPreview" ng-show="gifUpload" name="gifPreview" src="#" ng-style="{float: left, width: gifWidth}" /> 
+    </div>
+    <div id="gfyPreviewWrap" ng-style="{width: gifWidth}">
+        <div style="padding: 13px; font-size: 13px; width: 165px; color: white; background-color: #e23300; font-weight: bold; margin: 0;" ng-show="isConverted">
+            {{gfyPreviewText}}
+        </div>
+        <video id="gfyPreview" ng-show="isConverted" autoplay l
+5a8
+oop ng-style="{float: left, width: gifWidth}"> 
+            <source id="gfyPreviewmp4" src="#" type="video/mp4">
+            <source id="gfyPreviewwebm" src="#" type="video/webm">
+            <p> Your browser won't play the gfy version.  The published link will automatically display the gif for browsers like yours.</p>
+        </video>
+    </div>
+ 
+</div>
+
+
+<div id="urldiv" style="display: inline-block;">
+    <div class="input-append">
+        <input name="url" size="30" class="span3" type="text" enter-key="doFetchUrl()" ng-model="fetchUrl" />
+        <button class="btn" type="button" ng-click="doFetchUrl()">Fetch</button>
+    </div>
+    <div ng-show="isYouTube">
+        <span style="float: left; margin: 5px;">
+            <input class="input" type="text" name="hours" style="width: 30px; margin-bottom:0px;" size="2" enter-key="doFetchUrl()" ng-model="fetchHours" />
+            <br><small style="font-size: 10px;">hours</small>
+        </span>
+        <span style="float: left; margin: 5px;">
+            <input class="input" type="text" name="minutes" style="width: 30px; margin-bottom:0px;" size="2" enter-key="doFetchUrl()" ng-model="fetchMinutes" />
+            <br><small style="font-size: 10px;">minutes</small>
+        </span>
+        <span style="float: left; margin: 5px;">
+            <input class="input" type="text" name="seconds" style="width: 30px; margin-bottom:0px;" size="2" enter-key="doFetchUrl()" ng-model="fetchSeco
+7da
+nds" />
+            <br><small style="font-size: 10px;">seconds</small>
+        </span>
+        <span style="float: left; margin: 5px;margin-left: 30px;">
+            <input class="input" type="text" name="length" style="width: 30px; margin-bottom:0px;" size="2" enter-key="doFetchUrl()" ng-model="fetchLength" />
+            <br><small style="font-size: 10px;"><b>length</b></small>
+        </span>
+ 
+    </div>
+</div>
+<div ng-show="isYouTube" class="span5" style="margin-left: 50px; font-family: 'Open Sans', sans-serif; font-weight: 300;">You can fetch up to 15 seconds of video<br>Enter the <strong>starting time</strong> of the clip, and the <strong>length</strong> in seconds.
+</div>
+<div ng-hide="isPreview||isYouTube" class="span5" style="position: relative; margin-left: 50px; font-family: 'Open Sans', sans-serif; font-weight: 300;"><strong>Protip:</strong> type <i>"gfycat.com/fetch/"</i> before a url to automatically fetch and convert it.<br> eg: gfycat.com/fetch/http://mygif.myhost.com/image.gif
+<div style="position: absolute; bottom:-80px;left:-20px; font-size: 9px;"><a href="/api">api</a> <span>&#149;</span> <a href="/terms" style="">terms &amp; privacy</a></div>
+</div>
+
+</div>
+</div>
+<div style="height: 600px; width: 100%; text-align: center;"></div>
+
+</div>
+</div>
+</div>
+</div>
+            <!-- Quantcast Tag -->
+<script type="text/javascript">
+var _qevents = _qevents || [];
+
+(function() {
+var elem = document.createElement('script');
+elem.src = (document.location.protocol == "https:" ? "https://secure" : "http://edge") + ".quantserve.com/quant.js";
+elem.async = true;
+elem.type = "text/javascript";
+var scpt = document.getElementsByTagName('script')[0];
+scpt.parentNode.insertBefore(elem, scpt);
+})();
+
+_qevents.push({
+qacct:"p-JLXEY2nbGDmpc"
+});
+</script>
+
+<noscript>
+<div style="display:none;">
+<img src="//pixel.quantserve.com/pixel/p-JLXEY2nbGDmpc.gif" border="0" height="1" width="1" alt="Quantcast"/>
+</div>
+</noscript>
+<!-- End Quantcast tag -->
+            </body>
+</html>
+
+0
+

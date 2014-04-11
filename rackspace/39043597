@@ -1,0 +1,28 @@
+PHTTP63.251.34.91"
+_GET /aid/181086145682362661/bc.cbhs?wdid=3585965807641389340&rdid=493576000255290256 HTTP/1.1
+Host: cbi.boldchat.com
+Connection: keep-alive
+Accept: */*
+vUser-Agent: Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/31.0.1650.63 Safari/537.36
+$Referer: http://www.rackspace.com/
+$Accept-Encoding: gzip,deflate,sdch
+!Accept-Language: en-US,en;q=0.8
+
+*í
+HTTP/1.1 200 OK
+wP3P: CP="NON BUS INT NAV COM ADM CON CUR IVA IVD OTP PSA PSD TEL SAM", policyref="http://my.boldchat.com/w3c/p3p.xml"
+>Set-Cookie: lb=-bo-app05-04.01; Domain=.boldchat.com; Path=/
+wP3P: CP="NON BUS INT NAV COM ADM CON CUR IVA IVD OTP PSA PSD TEL SAM", policyref="http://my.boldchat.com/w3c/p3p.xml"
+>Set-Cookie: lb=-bo-app05-04.01; Domain=.boldchat.com; Path=/
+"Cache-Control: no-cache,no-store
+Pragma: no-cache
+(Expires: Thu, 01 Jan 1970 00:00:00 GMT
+%Date: Tue, 08 Apr 2014 22:16:21 GMT
+ Server: Apache-Coyote/1.1/8104
+-Content-Type: text/javascript;charset=UTF-8
+Content-Length: 115
+u
+function bt_showChatHTML(bt_available,bt_unavailable) {
+  document.write(bt_available);
+}
+bt_chatAvailable = true;

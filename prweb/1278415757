@@ -1,0 +1,28 @@
+»HTTPS74.125.225.70"˜
+YGET /pixel?pixelID=117792&partnerID=77&clientID=8269&key=segment&returnType=js HTTP/1.1
+%Host: segment-pixel.invitemedia.com
+Connection: keep-alive
+Accept: */*
+vUser-Agent: Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/31.0.1650.63 Safari/537.36
+¥Referer: https://3773657.fls.doubleclick.net/activityi;src=3773657;type=prweb585;cat=prweb363;ord=8147092999424.785;~oref=http%3A%2F%2Fwww.prweb.com%2F?&_dc_ck=try
+$Accept-Encoding: gzip,deflate,sdch
+!Accept-Language: en-US,en;q=0.8
+
+*ç
+HTTP/1.1 302 Found
+„Location: https://bid.g.doubleclick.net/xbbe/invitepixel/pixel?pixelID=117792&partnerID=77&clientID=8269&key=segment&returnType=js
+Cache-Control: private
+(Content-Type: text/html; charset=UTF-8
+!X-Content-Type-Options: nosniff
+%Date: Tue, 08 Apr 2014 22:15:37 GMT
+Server: sffe
+Content-Length: 333
+!X-XSS-Protection: 1; mode=block
+Alternate-Protocol: 443:quic
+Ï
+<HTML><HEAD><meta http-equiv="content-type" content="text/html;charset=utf-8">
+<TITLE>302 Moved</TITLE></HEAD><BODY>
+<H1>302 Moved</H1>
+The document has moved
+<A HREF="https://bid.g.doubleclick.net/xbbe/invitepixel/pixel?pixelID=117792&amp;partnerID=77&amp;clientID=8269&amp;key=segment&amp;returnType=js">here</A>.
+</BODY></HTML>

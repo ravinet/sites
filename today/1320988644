@@ -1,0 +1,25 @@
+PHTTP23.45.37.109"Î
+!GET /sync/js?sync=auto HTTP/1.1
+Host: pixel.mathtag.com
+Connection: keep-alive
+Accept: */*
+vUser-Agent: Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/31.0.1650.63 Safari/537.36
+ Referer: http://www.today.com/
+$Accept-Encoding: gzip,deflate,sdch
+!Accept-Language: en-US,en;q=0.8
+
+*×
+ HTTP/1.1 302 Moved Temporarily
+Content-Type: text/javascript
+Content-Length: 0
+oServer: mt2/2.10.2.rc1+26c5168 CORE-1658-uuid-random-patch Mar  4 2014 19:08:19 ewr-pixel-x5 pid 0x7247 29255
+DLocation: http://pixel.mathtag.com/sync/js?sync=auto&mm_bnc&mm_bct
+(Expires: Fri, 11 Apr 2014 15:20:10 GMT
+.Cache-Control: max-age=0, no-cache, no-store
+Pragma: no-cache
+%Date: Fri, 11 Apr 2014 15:20:10 GMT
+Connection: keep-alive
+YSet-Cookie: HRL8=CT; expires=Fri, 09-May-2014 15:20:10 GMT; path=/; domain=.mathtag.com
+{Set-Cookie: uuid=e1515348-082a-4600-8ecd-83592f7ac87c; domain=.mathtag.com; path=/; expires=Sat, 11-Apr-2015 15:20:10 GMT
+;P3P: CP="NON DSP ADM DEV PSD OUR IND STP PHY PRE NAV UNI"
+

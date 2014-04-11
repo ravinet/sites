@@ -1,0 +1,33 @@
+PHTTP54.204.241.146"°
+.GET /transition/end?_=1396994895480 HTTP/1.1
+Host: www.petflow.com
+Connection: keep-alive
+'Accept: application/json, */*; q=0.01
+"X-Requested-With: XMLHttpRequest
+vUser-Agent: Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/31.0.1650.63 Safari/537.36
+"Referer: http://www.petflow.com/
+$Accept-Encoding: gzip,deflate,sdch
+!Accept-Language: en-US,en;q=0.8
+”Cookie: optimizelySegments=%7B%7D; optimizelyEndUserId=oeu1396994893740r0.7730855331756175; optimizelyBuckets=%7B%7D; optimizelyPendingLogEvents=%5B%5D; _ga=GA1.2.191234633.1396994894; _dc=1; __utma=29556542.191234633.1396994894.1396994894.1396994894.1; __utmb=29556542.1.10.1396994894; __utmc=29556542; __utmz=29556542.1396994894.1.1.utmcsr=(direct)|utmccn=(direct)|utmcmd=(none); mp_petflow_mixpanel=%7B%22distinct_id%22%3A%20%221454362692b12c0-0b27b7a0c-14281008-75300-1454362692c1424%22%7D; petflow3=54afdfhadk8vtth9b8i80kc8o3
+
+*é
+HTTP/1.1 200 OK
+Server: nginx/1.1.19
+%Date: Tue, 08 Apr 2014 22:08:15 GMT
+ Content-Type: application/json
+Content-Length: 17
+Connection: keep-alive
+3X-Powered-By: PHP/5.5.10-1+deb.sury.org~precise+1
+LP3P: CP="IDC DSP COR ADM DEVi TAIi PSA PSD IVAi IVDi CONi HIS OUR IND CNT"
+(Expires: Mon, 26 Jul 1997 05:00:00 GMT
+*Cache-Control: no-cache, must-revalidate
+Pragma: no-cache
+&Strict-Transport-Security: max-age=0
+Accept-Ranges: bytes
+X-Varnish: 1335436210
+Age: 0
+Via: 1.1 varnish
+1X-Varnish-Asdf: /transition/end?_=1396994895480
+X-Varnish-Cache: MISS
+
+{"finished":true}

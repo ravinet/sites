@@ -1,0 +1,19 @@
+»HTTPS66.117.23.107"¥	
+™GET /m2/windowslive/mbox/standard?mboxHost=sc.imp.live.com&mboxSession=1396994607658-782652&mboxPage=1396994607658-782652&screenHeight=600&screenWidth=800&browserWidth=475&browserHeight=490&browserTimeOffset=-240&colorDepth=24&mboxCount=1&profile.ANID=00000000000000000000000000000000&profile.mrkt=en-us&mbox=PROD-outlook_signin&mboxId=0&mboxTime=1396980207768&mboxURL=https%3A%2F%2Fsc.imp.live.com%2Fcontent%2Fdam%2Fimp%2Fsurfaces%2Fmail_signin%2Fv3%2Fmai%2FEN-US.html%3Fid%3D64855%26mkt%3DEN-US%26cbcxt%3Dmai&mboxReferrer=https%3A%2F%2Flogin.live.com%2Flogin.srf%3Fwa%3Dwsignin1.0%26rpsnv%3D12%26ct%3D1396994606%26rver%3D6.4.6456.0%26wp%3DMBI%26wreply%3Dhttp%3A%252F%252Fmail.live.com%252Fdefault.aspx%26lc%3D1033%26id%3D64855%26mkt%3Den-us%26cbcxt%3Dmai%26snsc%3D1&mboxVersion=41 HTTP/1.1
+!Host: windowslive.tt.omtrdc.net
+Connection: keep-alive
+Accept: */*
+vUser-Agent: Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/31.0.1650.63 Safari/537.36
+vReferer: https://sc.imp.live.com/content/dam/imp/surfaces/mail_signin/v3/mai/EN-US.html?id=64855&mkt=EN-US&cbcxt=mai
+$Accept-Encoding: gzip,deflate,sdch
+!Accept-Language: en-US,en;q=0.8
+
+*¢
+HTTP/1.1 200 OK
+pragma: no-cache
+-Content-Type: text/javascript;charset=UTF-8
+Content-Length: 2031
+%Date: Tue, 08 Apr 2014 22:03:27 GMT
+Server: Test & Target
+ñ
+var mboxCurrent=mboxFactories.get('default').get('PROD-outlook_signin',0);mboxCurrent.setEventTime('include.start');document.write('<div style="visibility: hidden; display: none" id="mboxImported-default-PROD-outlook_signin-0">');document.write('<!-- Offer Id: 68740  -->\r\n<div id=\"offer\"  class=\"normal outlook\">\r\n   <div class=\"logo-null\"><\/div>\r\n    <img id =\"hero\" src=\"https:\/\/sc.imp.live.com\/content\/dam\/imp\/surfaces\/mail_signin\/v3\/images\/Outlook_SISU Refresh_Mobile Lifestyle_SISU_JPEG_ENUS_475x340.jpg\"\/>\r\n    <div id=\"text\" >\r\n         <h1>Get Outlook.com on your phone.<\/h1>\r\n         <p>Get email, contacts and calendar on your mobile device.<\/p>\r\n         <a id=\"button\" href=\"http:\/\/windows.microsoft.com\/en-US\/windows\/outlook-to-go\" target=\"_blank\" onclick=\"TnTClick(this.href);\">Get started<\/a>\r\n    <\/div>\r\n<\/div>\r\n<link rel=\"stylesheet\" type=\"text\/css\" href=\"https:\/\/sc.imp.live.com\/content\/dam\/imp\/surfaces\/mail_signin\/v3\/css\/style.css\">\r\n<link rel=\"stylesheet\" type=\"text\/css\" href=\"https:\/\/sc.imp.live.com\/content\/dam\/imp\/surfaces\/mail_signin\/v3\/css\/style_win8.css\">\r\nblank.gif');document.write('<!-- Offer Id: 32903  --><script type=\"text\/javascript\">\r\nadobeCallSensor(\"https:\/\/s.imp.microsoft.com\/zag.gif?Log=1\", \"1396994607658-782652.25_42\", \"00000000000000000000000000000000\", \"1396994607658-782652\", \"86077\", \"Experiment 2?c000029524|et02|1072EB9D\", \"68740\", \"en US OL SISU Evergreen Refresh F13 Mobi Lifestyle?o00000063448|74F0CA83\", mboxCurrent.getName(), \"0\", \"EE01?ee01|A24134E2\", \"en-us\",\"true\", \"0\", mboxFactoryDefault.getPageId(), \"united states\", \"massachusetts\", \"boston (manchester)\",\"\", \"\", \"800\", \"600\",\"475\",\"490\");\r\n<\/script>');document.write('</div>');mboxCurrent.setEventTime('include.end');mboxFactories.get('default').get('PROD-outlook_signin',0).loaded();mboxFactories.get('default').getPCId().forceId("1396994607658-782652.25_42");

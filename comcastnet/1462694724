@@ -1,0 +1,20 @@
+PHTTP66.117.23.101"à
+œGET /m2/comcast/mbox/standard?mboxHost=xfinity.comcast.net&mboxSession=1396992882735-657296&mboxPage=1396992882735-657296&mboxCount=1&mbox=home_page_b&mboxId=0&mboxTime=1396978482737&mboxURL=http%3A%2F%2Fxfinity.comcast.net%2Ftt2%2F%3Fcid%3DBBI&mboxReferrer=&mboxVersion=38 HTTP/1.1
+Host: comcast.tt.omtrdc.net
+Connection: keep-alive
+Accept: */*
+vUser-Agent: Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/31.0.1650.63 Safari/537.36
+2Referer: http://xfinity.comcast.net/tt2/?cid=BBI
+$Accept-Encoding: gzip,deflate,sdch
+!Accept-Language: en-US,en;q=0.8
+
+*Æ
+HTTP/1.1 200 OK
+pragma: no-cache
+-Content-Type: text/javascript;charset=UTF-8
+Content-Length: 1299
+%Date: Tue, 08 Apr 2014 21:34:41 GMT
+Server: Test & Target
+•
+
+var mboxCurrent=mboxFactories.get('default').get('home_page_b',0);mboxCurrent.setEventTime('include.start');document.write('<div style="visibility: hidden; display: none" id="mboxImported-default-home_page_b-0">');document.write('<!-- Offer Id: 120408  --><script>\r\nwindow.location=\"http:\/\/www.comcast.com\/?CMP=ILCXFICOMUTOL3X\";\r\n<\/script>');document.write('<!-- Offer Id: 105234  --><script type=\"text\/javascript\">\r\n\/*mboxHighlight+ (1of2) v1 ==> Response Plugin*\/\r\nwindow.ttMETA=(typeof(window.ttMETA)!=\'undefined\')?window.ttMETA:[];window.ttMETA.push({\'mbox\':\'home_page_b\',\'campaign\':\'BBI - Unidentified - Redirect - Once Per UV [LIVE]\',\'experience\':\'Redirect\',\'offer\':\'BBI - Redirect to Comcast\'});window.ttMBX=function(x){var mbxList=[];for(i=0;i<ttMETA.length;i++){if(ttMETA[i].mbox==x.getName()){mbxList.push(ttMETA[i])}}return mbxList[x.getId()]}\r\n<\/script>');document.write('<!-- Offer Id: 26395  --><script type=\"text\/javascript\"> \r\nif (typeof(s_tnt) == \'undefined\') { \r\nvar s_tnt= \'\'; \r\n} \r\ns_tnt+=\'66627:3:0,\'; \r\n<\/script> ');document.write('</div>');mboxCurrent.setEventTime('include.end');mboxFactories.get('default').get('home_page_b',0).loaded();mboxFactories.get('default').getPCId().forceId("1396992882735-657296.25_33");

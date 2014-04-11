@@ -1,0 +1,23 @@
+PHTTP54.83.36.167"§
+wGET /target/prod/serverComponent.php?r=3.2824570080265403&ClientID=361&PageID=http%3A%2F%2Fwww.target.com%2F HTTP/1.1
+Host: nexus.ensighten.com
+Connection: keep-alive
+Accept: */*
+vUser-Agent: Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/31.0.1650.63 Safari/537.36
+!Referer: http://www.target.com/
+$Accept-Encoding: gzip,deflate,sdch
+!Accept-Language: en-US,en;q=0.8
+
+*í
+HTTP/1.1 200 OK
+Cache-Control: no-cache
+Cache-Control: public
+Content-Type: text/javascript
+%Date: Fri, 11 Apr 2014 15:24:17 GMT
+Server: nginx
+Content-Length: 1302
+Connection: keep-alive
+˜
+
+
+Bootstrapper._serverTime = '2014-04-11 15:24:17'; Bootstrapper._clientIP = '128.30.76.55'; var psj0 = 'http://nexus.ensighten.com/target/prod/code/d9e4acfeec2e12f95ab7dd401dc3fa28.js?ruleId=167068';Bootstrapper.insertScript(psj0);var psj1 = 'http://nexus.ensighten.com/target/prod/code/2a9c79f33a05e924fe0fd0d8b72279e5.js?ruleId=166529';Bootstrapper.insertScript(psj1);var psj2 = 'http://nexus.ensighten.com/target/prod/code/71addc18596f14e4e2017ea88eb9197d.js?ruleId=357977';Bootstrapper.insertScript(psj2);var psj3 = 'http://nexus.ensighten.com/target/prod/code/029276aea00e7e03b4cec9d0205bb893.js?ruleId=167480';Bootstrapper.insertScript(psj3);var psj4 = 'http://nexus.ensighten.com/target/prod/code/418565400bd009c358c1707fe7d97425.js?ruleId=228852';Bootstrapper.insertScript(psj4);var psj5 = 'http://nexus.ensighten.com/target/prod/code/64fc046344df67f4bc5601ae2874d044.js?ruleId=211216';Bootstrapper.insertScript(psj5);var psj6 = 'http://nexus.ensighten.com/target/prod/code/308a10e76a4ace4e812192642376c9b1.js?ruleId=226747';Bootstrapper.insertScript(psj6);var psj7 = 'http://nexus.ensighten.com/target/prod/code/838cf972230614ba3167fc57fd99c436.js?ruleId=166814';Bootstrapper.loadScriptCallback(psj7, Bootstrapper.callOnPageSpecificCompletion);Bootstrapper.setPageSpecificDataDefinitionIds([])

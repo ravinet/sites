@@ -1,0 +1,42 @@
+PHTTP23.209.49.228"…
+!GET /sites/nbc/ac.json HTTP/1.1
+Host: embed.ramp.com
+Connection: keep-alive
++Accept: application/json, text/plain, */*
+Origin: http://www.nbc.com
+vUser-Agent: Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/31.0.1650.63 Safari/537.36
+Referer: http://www.nbc.com/
+$Accept-Encoding: gzip,deflate,sdch
+!Accept-Language: en-US,en;q=0.8
+
+*¬
+HTTP/1.1 200 OK
+Server: Apache
+#ETag: "3706908-298-4f01e90fc9965"
+.Last-Modified: Thu, 16 Jan 2014 23:12:59 GMT
+Accept-Ranges: bytes
+Content-Length: 664
+ Access-Control-Allow-Origin: *
+ Content-Type: application/json
+Cache-Control: max-age=52
+(Expires: Fri, 11 Apr 2014 14:49:42 GMT
+%Date: Fri, 11 Apr 2014 14:48:50 GMT
+Connection: keep-alive
+Edge-Control: no-store
+š
+{
+    "apiKey": "9e288fdfa9b120e08715abc563d1d3ff",
+    "autoCompleteAPI": "//nbcdev.ramp.com/autocomplete",
+    "autoCompleteAPI_comment": "don't change this, nbdev is correct--nbc.ramp.com is different",
+    "searchUrl": "//www.nbc.com/search?q=",
+    "templateUrl": "//embed.ramp.com/sites/nbc/ac.tmpl.html",
+    "cssfile": "//embed.ramp.com/sites/nbc/ac.css",
+    "auxiliaryApi": {
+        "linktype": "popular_terms",
+        "key": "57aea15189dc405caffe69d8b412fb37",
+        "url": "http://nbc.ramp.com/FileResource/feeds/nbc/top.json?num=100&format=json&apikey=",
+        "filter": ".Terms|limitTo:4|asTerms:'Value':config.auxiliaryApi.linktype"
+    }
+
+}
+

@@ -1,0 +1,36 @@
+PHTTP98.137.201.232"≥
+£POST /v1/public/yql?format=json&yhlVer=2&yhlClient=rapid&yhlS=1197744451&yhlBTMS=1397237360598&yhlClientVer=3.15&yhlRnd=3tDwYoy1o9F6zXlD&yhlCompressed=3 HTTP/1.1
+Host: geo.query.yahoo.com
+Connection: keep-alive
+Content-Length: 994
+Origin: http://att.yahoo.com
+vUser-Agent: Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/31.0.1650.63 Safari/537.36
+@Content-Type: application/x-www-form-urlencoded; charset=UTF-8
+Accept: */*
+ Referer: http://att.yahoo.com/
+$Accept-Encoding: gzip,deflate,sdch
+!Accept-Language: en-US,en;q=0.8
+ÅCookie: B=2rvdjl59kg9je&b=3&s=0t; IU=d=8MhGdkwebZhvdumAg4PGXGw4XdSx&v=1; RMBX=2rvdjl59kg9je&b=3&s=0t&t=100; fsr.a=1397237360455
+‰
+q=select%20*%20from%20x%20where%20a%20%3D%20'vZjBbhMxEIZfJfKBU1qy2aQhuQVIW4kWkBJAgKposnEbE69t2d6NoigSFx6IZ%2BB9eAZmNm1VUIO6G3lvM7PWfP7t8djaDZsZNtiwqZFsEDXZcJqzAYuPoy5rMs%2BdR6%2FfaqEznZFtwYg52zaZZYOvG0YhmeNXh0YU9Xu9TqfTjTBgirTDqcPhA%2FYlPXexfpO9s%2F3lSR6PKN8K4%2BD98RoWWh8nOn1OUVuMn2XQjaTsL2%2F63ziGU7skVOYoM1mEyDlOgrkiZq%2FTiMLtuHfrtgu30711Y3Tb7Si6dTvkxr0XjCRDWmREVVOPQqK438Nv8UmrSeJIJw1QQEJl4Tu5xMh4oU1jOHk2wbh1Rrn7UZ4mA22yaB4GyKIpeG3Q5JISCp%2Fu7GIVhVqiJ3yCTgvncgdJ16EJr8WN8CAbF%2BKah%2BR8OMIdc0ERtFSNcWaMtj4k51Jb3tjBBJ6S399%2FPKAV2crD0uweFT1EgZBPlyKdfzy78etHlbzlKxcw%2FZh2IiTgVChQSYmiKk34xMEvsNWEI5xBykOu0ZnVmQkJGCq3wqMdso4Sy7kKKSHzOqgAvCuMUDcBERMLOQ%2FZK4qu95mu6%2FJtby9sT9srmutwPj%2FSqsS27Jqr79zlLX13jJzjyguQdUIvdLIs02AOAY4UajTw66cuUSmHAMf62q8AC%2BcVLmxdKodSNt5bPc8ST1X6d6EezgUp9ywuKvQgVIpayx7E%2FxL3HckRSgQvdOnWWIl2CsqDWzdeguOz3SLUBz3V2tcOrfZ%2BqYQ81xVeARVJVrtEm5pw2N6gnl27hPLPnGognYuaVu8ycyKph7TeXe61wMYcbLKop%2F5EXuHhVQk1%2BVgL5pDr7QnYf663qyZbE3az3V4Vzu4fDQ7RxuvMF6OaTOGLohj%2FBw%3D%3D'*≤
+HTTP/1.1 200 OK
+)X-YQL-Host: engine234.yql.bf1.yahoo.com
+3Access-Control-Allow-Origin: http://att.yahoo.com
+HCache-Control: private, no-cache, no-store, must-revalidate, max-age=0
+ÿP3P: policyref="http://info.yahoo.com/w3c/p3p.xml", CP="CAO DSP COR CUR ADM DEV TAI PSA PSD IVAi IVDi CONi TELo OTPi OUR DELi SAMi OTRi UNRi PUBi IND PHY ONL UNI PUR FIN COM NAV INT DEM CNT STA POL HEA PRE LOC GOV"
+Pragma: no-cache
+(Expires: Wed, 01 Mar 1995 00:00:00 GMT
+(Access-Control-Allow-Credentials: true
+NAccess-Control-Allow-Headers: Origin, X-Requested-With, Content-Type, Accept
+-Access-Control-Allow-Methods: POST, OPTIONS
+.Content-Type: application/json;charset=utf-8
+%Date: Fri, 11 Apr 2014 17:29:20 GMT
+Server: ATS
+Age: 0
+Transfer-Encoding: chunked
+Connection: keep-alive
+à
+7b
+{"query":{"count":1,"created":"2014-04-11T17:29:20Z","lang":"en-US","results":{"result":"0 ywamob, 1 geo. 1 geo, 0 ywa."}}}
+0
+

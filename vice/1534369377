@@ -1,0 +1,507 @@
+PHTTP50.16.211.237"õ
+:GET /themes/vice/statics/css/vice.vbs.css?v5096 HTTP/1.1
+Host: www.vice.com
+Connection: keep-alive
+Accept: text/css,*/*;q=0.1
+vUser-Agent: Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/31.0.1650.63 Safari/537.36
+$Referer: http://www.vice.com/en_us
+$Accept-Encoding: gzip,deflate,sdch
+!Accept-Language: en-US,en;q=0.8
+
+*ã`
+HTTP/1.1 200 OK
+Accept-Ranges: bytes
+Content-Type: text/css
+%Date: Tue, 08 Apr 2014 22:33:57 GMT
+"ETag: "62871-2f5a-4f253dc797f80"
+.Last-Modified: Fri, 14 Feb 2014 01:38:22 GMT
+Server: nginx
+Content-Length: 12122
+Connection: keep-alive
+Ü^
+/* shows pages */
+
+.vbs_header {
+
+}
+	.vbs_header h3.section_header {
+		background: url("/themes/vice/statics/img/headers/vbs_shows.jpg") no-repeat 0 0;
+		height: 98px;
+		padding: 0;
+		text-indent: -9999em;
+		width: 670px;
+	}
+.shows_list {
+    margin: 0 0 15px;
+    float: left;
+    width: 100%;
+}
+    .video_page_shows_list .shows_list {
+        border: 1px solid #e5e5e5;
+        border-width: 1px 0;
+        padding: 15px 0;
+    }
+
+/* search result pages */
+
+.a_column div.shows_grid ul.search_results span.tflag {
+	top: 77px;
+}
+div.shows_grid ul.search_results li.story .story_meta {
+	background: #fff;
+	display: block;
+	padding-top: 11px;
+	position: absolute;
+	top: 72px;
+	width: 90px;
+}
+div.search_results_section_block {
+	margin-top: 0;
+}
+div.shows_grid ul.search_results li.story {
+	height: 95px;
+	overflow: hidden;
+	min-height: 95px;
+}
+.search_header_wrap {
+	border-top: 0;
+	margin-left: 14px;
+	margin-right: 14px;
+	position: relative;
+}
+	.search_header_wrap h3 {
+		padding-right: 125px;
+	}
+	.search_header_wrap a {
+		position: absolute;
+		top: 14px;
+		right: 0;
+		display: block;
+	}
+
+/* vbs pages */
+
+h3.section_header_vbs {
+	background: url("/themes/vice/statics/img/headers/vbs.jpg") no-repeat 0 0;
+}
+.video_area_container {
+	background: #1a1718;
+	min-width: 1000px;
+	width: 100%;
+}
+	.video_area_container .wrap {
+		border: 0;
+	}
+		.video_area_container .video_area_wrap {
+			min-height: 360px;
+			padding: 17px 14px;
+			position: relative;
+		}
+		.video_area_container .video_area_wrap_center_no_ad {
+			left: 50%;
+			margin-left: -320px;
+			padding: 17px 0;
+			position: relative;
+			width: 640px;
+		}
+			.video_area_container .video_area_wrap .video_area {
+				box-shadow: 0 0 10px rgba(0,0,0,.5);
+					-moz-box-shadow: 0 0 10px rgba(0,0,0,.5);
+					-webkit-box-shadow: 0 0 10px rgba(0,0,0,.5);
+					-o-box-shadow: 0 0 10px rgba(0,0,0,.5);
+					-ms-box-shadow: 0 0 10px rgba(0,0,0,.5);
+				display: none;
+				margin: 0;
+
+			}
+			.video_area_container .video_area_wrap .video_area_ad {
+				display: none;
+				position: absolute;
+				right: 14px;
+				top: 17px;
+			}
+
+/* today on vbs */
+
+.video_header,
+.article-header {
+    padding: 0 0 15px;
+    position: relative;
+    z-index: 3;
+}
+    .video_header h3.show-info,
+    .article-header h3.column {
+        font-size: 15px;
+        font-weight: bold;
+        line-height: 1;
+        margin: 0 0 7px;
+        text-transform: uppercase;
+    }
+        .jp .video_header h3.show-info,
+        .jp .video_header h3.show-info a,
+        .jp .article-header h3.column {
+            font-size: 15px;
+        }
+    .fontface .video_header h3.show-info,
+    .fontface .article-header h3.column {
+        font-weight: normal;
+    }
+        .video_header h3.show-info a,
+        .video_header h3.column a {
+            color: #aeaeae;
+        }
+        .video_header h3.show-info .shows a,
+        .article-header h3.column .shows a {
+            color: #000;
+            margin: 0 4px 0 0;
+        }
+    .video_header h1.episode-title,
+    .article-header h1.article-title,
+    h1.article-title {
+        color: #000;
+        font-size: 34px;
+        font-weight: bold;
+        line-height: 1.1;
+        margin: 0 330px 10px 0;
+        text-transform: uppercase;
+    }
+        .fontface .gr .video_header h1.episode-title,
+        .fontface .gr .article-header h1.article-title,
+        .fontface .gr h1.article-title {
+            font-size: 38px;
+            letter-spacing: .5px;
+            text-transform: none;
+        }
+        .fontface .jp .video_header h1.episode-title,
+        .fontface .jp .article-header h1.article-title,
+        .fontface .jp h1.article-title {
+            font-size: 28px;
+            font-weight: bold;
+        }
+    h1.article-title {
+        margin: 0 0 15px;
+    }
+    .fontface .video_header h1.episode-title,
+    .fontface .article-header h1.article-title,
+    .fontface h1.article-title {
+        font-family: 'GothicBoldCond', sans-serif;
+        font-weight: normal;
+    }
+    .video_header h2.series-title,
+    .article-header h2.column,
+    .article-header h2.subtitle {
+        font-size: 18px;
+        line-height: 1;
+        margin: 0 0 15px;
+        font-weight: bold;
+        text-transform: uppercase;
+    }
+        .fontface .gr .video_header h2.series-title,
+        .fontface .gr .article-header h2.column,
+        .fontface .gr .article-header h2.subtitle {
+            text-transform: none;
+            font-size: 24px;
+            font-weight: bold;
+            letter-spacing: .5px;
+        }
+    .fontface .video_header h2.series-title,
+    .fontface .article-header h2.column,
+    .fontface .article-header h2.subtitle {
+        font-size: 22px;
+        font-family: 'GothicLight', sans-serif;
+        font-weight: normal;
+    }
+        .video_header h2.series-title a:hover,
+        .article-header h2.column a:hover,
+        .article-header h2.subtitle a:hover {
+            color: #000;
+        }
+    .video_header .inline_socials,
+    .article-header .inline_socials {
+        float: none;
+        left: auto;
+        margin: 0;
+        position: relative;
+        right: auto;
+        top: auto;
+    }
+
+/* related videos */
+
+.related_videos {
+}
+
+/* season guide */
+
+.season_guide {
+
+}
+	.season_guide h3 {
+	}
+	.season_guide p {
+		color: #000;
+		font-size: 11px;
+		font-weight: bold;
+		text-transform: uppercase;
+	}
+.vbs_show_description {
+	padding: 0 15px;
+}
+#content .video-index-wrap {
+    padding-top: 15px;
+}
+
+/* most popular videos */
+
+.most_popular_videos {
+    float: left;
+    margin: 0 0 15px;
+    width: 100%;
+}
+    div.most_popular_videos ul.most_popular_videos_list {
+        float: left;
+    }
+        div.most_popular_videos ul.most_popular_videos_list li.story {
+            border: 0;
+            clear: none;
+            height: auto;
+            float: left;
+            margin: 0 0 0 35px;
+            padding: 0;
+            position: relative;
+            width: 190px;
+        }
+			div.most_popular_videos ul.most_popular_videos_list li.story .story_meta .like_comment_share {
+				border: 0;
+				display: block;
+				margin-left: 0;
+				padding-left: 0;
+			}
+			div.most_popular_videos ul.most_popular_videos_list li.story:first-child {
+				margin-left: 0;
+			}
+			div.most_popular_videos ul.most_popular_videos_list li.story span.tflag,
+			div.most_popular_videos ul.most_popular_videos_list li.story:first-child span.tflag {
+				top: 145px;
+			}
+			div.most_popular_videos ul.most_popular_videos_list li.story span.overlay_video {
+				background: url("/themes/vice/statics/img/vice_assets.png") no-repeat -115px -470px;
+				height: 50px;
+				left: 8px;
+				position: absolute;
+				top: 113px;
+				width: 45px;
+			}
+				div.most_popular_videos ul.most_popular_videos_list li.story:hover span.overlay_video {
+					background-position: -115px -520px;
+				}
+			div.most_popular_videos ul.most_popular_videos_list li.story div.comment_like_count_wrap {
+				float: left;
+				margin: 0 0 8px;
+				width: 100%;
+			}
+				div.most_popular_videos ul.most_popular_videos_list li.story div.comment_count a,
+				div.most_popular_videos ul.most_popular_videos_list li.story div.like_count a {
+					margin-top: 8px;
+				}
+			div.most_popular_videos ul.most_popular_videos_list li.story h2 {
+				clear: both;
+				margin: 0 0 11px;
+				padding: 14px 0 0;
+			}
+			div.most_popular_videos ul.most_popular_videos_list li.story p {
+				margin: 0 0 11px;
+			}
+			div.most_popular_videos ul.most_popular_videos_list li.story div.story_meta {
+				margin: 0;
+				line-height: 17px;
+			}
+
+/* vbs grid list */
+
+.vbs_grid {
+	float: left;
+	position: relative;
+	padding: 17px 0;
+	width: 100%;
+}
+	.vbs_grid h3 {
+		padding: 0 14px;
+	}
+	.vbs_grid .section_filter {
+		padding: 0 14px 0 0;
+	}
+	div.vbs_grid ul.vbs_grid_list {
+	}
+		div.vbs_grid ul.vbs_grid_list li.story {
+			border: 0;
+			padding: 0;
+			height: 280px;
+			margin: 0 0 0 14px;
+			position: static;
+			width: 150px;
+		}
+			div.vbs_grid ul.vbs_grid_list li.story:first-child {
+			}
+			div.vbs_grid ul.vbs_grid_list li.story img {
+				margin: 0 0 8px;
+			}
+			div.vbs_grid ul.vbs_grid_list li.story p {
+				font-weight: bold;
+				margin: 0;
+			}
+
+			div.vbs_grid ul.vbs_grid_list li.story p.more {
+				font-weight: normal;
+			}
+			div.vbs_grid ul.vbs_grid_list li.story div.over {
+				background: url("/themes/vice/statics/img/vice_assets.png") no-repeat -275px -222px;
+				color: #9C9FA1;
+				*display: none !important; /* lte IE 7 */
+				height: 150px;
+				left: 34px;
+					left: -9999em\9; /* lte IE 8 */
+				opacity: 0;
+					opacity: 1\9; /* lte IE 8 */
+				position: absolute;
+				text-decoration: none !important;
+				top: 22px;
+				transition: opacity 0.300s ease 0s;
+					-moz-transition: opacity 0.300s ease 0s;
+					-webkit-transition: opacity 0.300s ease 0s;
+					-o-transition: opacity 0.300s ease 0s;
+				width: 209px;
+				z-index: 9999;
+			}
+				div.vbs_grid ul.vbs_grid_list li.story a,
+				div.vbs_grid ul.vbs_grid_list li.story a:hover {
+					display: block;
+					position: relative;
+					text-decoration: none !important;
+				}
+				div.vbs_grid ul.vbs_grid_list li.story p a:hover  {
+					text-decoration: underline !important;
+				}
+				div.vbs_grid ul.vbs_grid_list li.story:hover div.over {
+					opacity: 1;
+
+					left: 34px\9; /* lte IE 8 */
+					*left: 34px; /* lte IE 7 */
+
+				}
+					div.vbs_grid ul.vbs_grid_list li.story div.over .over_wrap {
+						padding: 22px 20px 22px 42px;
+					}
+					div.vbs_grid ul.vbs_grid_list li.story div.over h2 {
+						color: #fff;
+						margin: 0 0 8px;
+						font-size: 11px;
+					}
+					div.vbs_grid ul.vbs_grid_list li.story div.over p {
+						font-weight: normal;
+						font-size: 11px;
+						line-height: 14px;
+					}
+						div.vbs_grid ul.vbs_grid_list li.story a div.over,
+						div.vbs_grid ul.vbs_grid_list li.story div.over p {
+							text-decoration: none !important;
+						}
+
+/* vbs video page */
+
+div.video_area {
+    color: #fff;
+    background: #000;
+    height: 360px;
+    position: relative;
+    width: 640px;
+}
+    #window #video_area > div {
+        z-index: 1;
+    }
+	#video_area #skip_ad {
+		background: #000;
+		color: #09abd7;
+		display: inline-block;
+		font-size: 10px;
+		font-weight: bold;
+		left: 0;
+		line-height: 13px;
+		padding: 0 6px 0 12px;
+		position: absolute;
+		top: 50px;
+		text-transform: uppercase;
+	}
+		#video_area #skip_ad:hover {
+			color: #fff;
+			text-decoration: none !important;
+		}
+	#video_area_countdown_wrap {
+		background: rgba(0,0,0,0.60);
+			background: transparent\9;
+			-ms-filter: "progid:DXImageTransform.Microsoft.gradient(startColorstr=#60000000,endColorstr=#60000000)"; /* IE8 */
+			filter: progid:DXImageTransform.Microsoft.gradient(startColorstr=#60000000,endColorstr=#60000000);   /* IE6 & 7 */
+			zoom: 1;
+		font-size: 16px;
+		font-weight: bold;
+		height: 200px;
+		line-height: 20px;
+		left: 0;
+		padding-top: 160px;
+		position: absolute;
+		text-align: center;
+		top: 0;
+		width: 640px;
+		z-index: 99999;
+	}
+	#video_area_countdown_wrap span.cancel {
+		cursor: pointer;
+		display: block;
+		font-size: 11px;
+		text-transform: uppercase;
+	}
+	#video_area_countdown_wrap span.cancel:hover {
+		text-decoration: underline;
+	}
+#countdown_copy {
+	display: none !important;
+}
+div.video_detail {
+	border-bottom: 2px solid #E5E6E7;
+	clear: both;
+	min-height: 240px;
+	padding: 17px 14px 17px 213px;
+	position: relative;
+}
+	div.video_detail div.video_detail_thumb {
+		height: 240px;
+		left: 14px;
+		overflow: hidden;
+		position: absolute;
+		top: 17px;
+		width: 185px;
+	}
+		div.video_detail div.video_detail_thumb img {
+			display: block;
+		}
+	div.video_detail h2 a,
+	div.video_detail h2 a:hover {
+		color: #000;
+		text-decoration: none !important;
+	}
+
+/* for video thumbs on vice today section of homepage */
+.main_index .vice_today ul.story_list  li.story span.overlay_video {
+	background: url("/themes/vice/statics/img/vice_assets.png") no-repeat -115px -470px;
+	height: 50px;
+	left: 12px;
+	position: absolute;
+	top: 65px;
+	width: 45px;
+}
+	.main_index .vice_today ul.story_list  li.vt_large_img span.overlay_video {
+		top: 130px;
+	}
+		.main_index .vice_today ul.story_list li.story:hover span.overlay_video {
+			background-position: -115px -520px;
+		}

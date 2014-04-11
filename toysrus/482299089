@@ -1,0 +1,17 @@
+PHTTP66.117.23.104"„
+¯GET /m2/toysrus/mbox/standard?mboxHost=www.toysrus.com&mboxSession=1396996142007-657330&mboxPage=1396996142007-657330&screenHeight=600&screenWidth=800&browserWidth=780&browserHeight=518&browserTimeOffset=-240&colorDepth=24&mboxXDomain=enabled&mboxCount=1&referrer=&mbox=TRU_global&mboxId=0&mboxTime=1396981742202&mboxURL=http%3A%2F%2Fwww.toysrus.com%2Fshop%2Findex.jsp%3FcategoryId%3D2255956&mboxReferrer=&mboxVersion=41 HTTP/1.1
+Host: toysrus.tt.omtrdc.net
+Connection: keep-alive
+Accept: */*
+vUser-Agent: Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/31.0.1650.63 Safari/537.36
+CReferer: http://www.toysrus.com/shop/index.jsp?categoryId=2255956
+$Accept-Encoding: gzip,deflate,sdch
+!Accept-Language: en-US,en;q=0.8
+
+*È
+HTTP/1.1 200 OK
+Content-Length: 91
+%Date: Tue, 08 Apr 2014 22:29:01 GMT
+Server: Test & Target
+]
+mboxFactories.get('default').get('TRU_global',0).setOffer(new mboxOfferDefault()).loaded();

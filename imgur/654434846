@@ -1,0 +1,33 @@
+PHTTP103.31.7.32"Þ
+GET / HTTP/1.1
+Host: www.imgur.com
+Connection: keep-alive
+TAccept: text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8
+vUser-Agent: Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/31.0.1650.63 Safari/537.36
+$Accept-Encoding: gzip,deflate,sdch
+!Accept-Language: en-US,en;q=0.8
+
+*³
+ HTTP/1.1 301 Moved Permanently
+Server: cloudflare-nginx
+%Date: Tue, 08 Apr 2014 22:00:50 GMT
+Content-Type: text/html
+Transfer-Encoding: chunked
+Connection: keep-alive
+‘Set-Cookie: __cfduid=d2e68a574efc922725b9cd0ae1f5ae5b11396994450481; expires=Mon, 23-Dec-2019 23:50:00 GMT; path=/; domain=.imgur.com; HttpOnly
+Location: http://imgur.com/
+X-Imgur-Cached: 0
+OCache-Control: no-store, no-cache, must-revalidate, post-check=0, pre-check=0
+CF-RAY: 1181bd73884709ac-ORD
+¿
+b2
+<html>
+<head><title>301 Moved Permanently</title></head>
+<body bgcolor="white">
+<center><h1>301 Moved Permanently</h1></center>
+<hr><center>nginx</center>
+</body>
+</html>
+
+0
+

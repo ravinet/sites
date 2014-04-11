@@ -1,0 +1,21 @@
+PHTTP203.90.242.126"¿
+'GET /wskt?list=live_NEWSPUSH HTTP/1.1
+Upgrade: websocket
+Connection: Upgrade
+Host: newspush.sinajs.cn
+ Origin: http://www.sina.com.cn
+Pragma: no-cache
+Cache-Control: no-cache
+-Sec-WebSocket-Key: gPnDwLcbFVOStdWBVnZPgg==
+Sec-WebSocket-Version: 13
+2Sec-WebSocket-Extensions: x-webkit-deflate-frame
+vUser-Agent: Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/31.0.1650.63 Safari/537.36
+
+*Â
+"HTTP/1.1 101 Switching Protocols
+Upgrade: Websocket
+Connection: Upgrade
+Server: KUROYUKI/5.3.0
+Sec-WebSocket-Version: 13
+4Sec-WebSocket-Accept: RIS/EDLjU0JOTQ8nxIZTPozyMUE=
+

@@ -1,0 +1,26 @@
+PHTTP54.225.230.166"È
+ñGET /event?a=145865371&d=140992998&y=false&s171938911=gc&s171999777=none&s172110376=direct&s172132231=false&s791412887=true&n=http%3A%2F%2Fwww.vrbo.com%2F&u=oeu1396996453204r0.5316166828852147&wxhr=true&t=1396996453209&f=753750478 HTTP/1.1
+$Host: 145865371.log.optimizely.com
+Connection: keep-alive
+vUser-Agent: Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/31.0.1650.63 Safari/537.36
+Origin: http://www.vrbo.com
+Accept: */*
+Referer: http://www.vrbo.com/
+$Accept-Encoding: gzip,deflate,sdch
+!Accept-Language: en-US,en;q=0.8
+
+*ù
+HTTP/1.1 200 OK
+(Access-Control-Allow-Credentials: true
+)Access-Control-Allow-Methods: POST, GET
+2Access-Control-Allow-Origin: http://www.vrbo.com
+ Content-Type: application/json
+%Date: Tue, 08 Apr 2014 22:34:12 GMT
+9P3P: CP="IDC DSP COR CURa ADMa OUR IND PHY ONL COM STA"
+Server: nginx/1.2.7
+ŠSet-Cookie: end_user_id=oeu1396996453204r0.5316166828852147; Domain=.145865371.log.optimizely.com; expires=Fri, 05 Apr 2024 22:34:12 GMT
+~Set-Cookie: fixed_external_145865371_end_user_id=; Domain=.optimizely.com; expires=Thu, 01 Jan 1970 00:00:00 GMT; Max-Age=-1
+Content-Length: 2
+Connection: keep-alive
+
+{}

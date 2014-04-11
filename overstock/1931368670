@@ -1,0 +1,52 @@
+PHTTP66.117.23.107"¢
+êGET /m2/overstock/mbox/standard?mboxHost=www.overstock.com&mboxSession=1396994865352-25200&mboxPage=1396994865352-25200&screenHeight=600&screenWidth=800&browserWidth=780&browserHeight=518&browserTimeOffset=-240&colorDepth=24&mboxCount=1&mbox=Global&mboxId=0&mboxTime=1396980465353&mboxURL=http%3A%2F%2Fwww.overstock.com%2F&mboxReferrer=&mboxVersion=41 HTTP/1.1
+Host: overstock.tt.omtrdc.net
+Connection: keep-alive
+Accept: */*
+vUser-Agent: Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/31.0.1650.63 Safari/537.36
+$Referer: http://www.overstock.com/
+$Accept-Encoding: gzip,deflate,sdch
+!Accept-Language: en-US,en;q=0.8
+
+*É
+HTTP/1.1 200 OK
+pragma: no-cache
+-Content-Type: text/javascript;charset=UTF-8
+Content-Length: 1558
+%Date: Tue, 08 Apr 2014 22:07:44 GMT
+Server: Test & Target
+˜
+var mboxCurrent=mboxFactories.get('default').get('Global',0);mboxCurrent.setEventTime('include.start');document.write('<div style="visibility: hidden; display: none" id="mboxImported-default-Global-0">');/* Offer id: 49593*/ 
+
+_mboxDefaultContentOffer = function() {
+  this._onLoad = function() {};
+};
+
+_mboxDefaultContentOffer.prototype.setOnLoad = function(_onLoad) {
+  this._onLoad = _onLoad;
+};
+
+_mboxDefaultContentOffer.prototype.show = function(_mbox) {
+  var _defaultDiv = _mbox.getDefaultDiv();
+  if (_defaultDiv == null) {
+    return 0;
+  }
+  _defaultDiv.onclick = function() {
+    // just use _mbox.getName() when everyone is on mboxVersion >= 21
+    var _mboxName = _mbox.id ? _mbox.id : _mbox.getName();
+    var _clickDiv = document.getElementById('mboxClick-' + _mboxName);
+    if (_clickDiv != null) {
+      _clickDiv.onclick();
+    }
+  };
+  var _result = _mbox.hide();
+  if (_result == 1) {
+    this._onLoad();
+  }
+  return _result;
+};
+
+mboxCurrent.setOffer(new _mboxDefaultContentOffer());
+if (mboxCurrent.getFetcher && mboxCurrent.getFetcher().getType() == 'ajax') {
+  mboxCurrent.show();
+};document.write('<!-- Offer Id: 132397  --><script type=\"text\/javascript\">\r\n\/*TT>SC | v3 ==> Response Plug-ins*\/\r\nwindow.s_tnt=window.s_tnt||\'\',tntVal=\'35241:0:0,\';\r\nif(window.s_tnt.indexOf(tntVal)==-1){window.s_tnt+=tntVal}\r\n<\/script>');document.write('</div>');mboxCurrent.setEventTime('include.end');mboxFactories.get('default').get('Global',0).loaded();mboxFactories.get('default').getPCId().forceId("1396994865352-25200.25_45");

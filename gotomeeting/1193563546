@@ -1,0 +1,97 @@
+»HTTPS23.45.37.109"·
+´GET /event/js?01AD=35Pq1MOJ2WjmsWDBoutJf3OM8C0WlxXd3ynD_ijxeJobzTFqdFmBNfg&01RI=AFC4B106502D3C3&01NA=na&mt_id=392073&mt_adid=101596&v1=&v2=&v3=&s1=&s2=&s3=&mm_bnc&mm_bct HTTP/1.1
+Host: pixel.mathtag.com
+Connection: keep-alive
+Accept: */*
+vUser-Agent: Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/31.0.1650.63 Safari/537.36
+´Referer: http://2870544.fls.doubleclick.net/activityi;src=2870544;type=landi745;cat=g2m_h249;ord=4086151660885.6616;~oref=http%3A%2F%2Fwww.gotomeeting.com%2Fonline%2F?&_dc_ck=try
+$Accept-Encoding: gzip,deflate,sdch
+!Accept-Language: en-US,en;q=0.8
+>Cookie: uuid=db6c5344-6f5a-4400-998f-025673ab024a; HRL8=CT-1
+
+*ó
+HTTP/1.1 200 OK
+Content-Type: text/javascript
+Content-Length: 3082
+oServer: mt2/2.10.2.rc1+26c5168 CORE-1658-uuid-random-patch Mar  4 2014 19:08:19 ewr-pixel-x1 pid 0x40f7 16631
+(Expires: Tue, 08 Apr 2014 21:51:22 GMT
+.Cache-Control: max-age=0, no-cache, no-store
+Pragma: no-cache
+%Date: Tue, 08 Apr 2014 21:51:22 GMT
+Connection: keep-alive
+]Set-Cookie: HRL8=CT-USR; expires=Tue, 06-May-2014 21:51:22 GMT; path=/; domain=.mathtag.com
+ZSet-Cookie: mt_misc=; domain=.mathtag.com; path=/; expires=Thu, 08-May-2014 21:51:22 GMT
+;P3P: CP="NON DSP ADM DEV PSD OUR IND STP PHY PRE NAV UNI"
+Œ
+	/*
+	*/
+
+	var mm_ri = String( Math.random() );
+	mm_ri = mm_ri.replace( /0\./g,'' );
+	
+	var mm_protocol = location.protocol;
+	if ( mm_protocol != 'http:' && mm_protocol != 'https:' ){ mm_protocol = 'http:'; }
+	
+
+var sync_4815162342 = function()
+{
+this.urls = [
+"https://pixel.mathtag.com/misc/img?mt_id=392073&mt_adid=101596&mop_seq=0:11&mt_cb=427093&mop_top=",
+"https://cm.g.doubleclick.net/pixel?google_nid=mediamath&google_cm&google_hm=22xTRG9aRACZjwJWc6sCSg",
+"https://pixel.mathtag.com/misc/img?mt_id=392073&mt_adid=101596&mop_seq=1:11&mt_cb=146712&mop_top=4:1395784302|",
+"https://www.facebook.com/fr/u.php?p=418865601488577&m=db6c5344-6f5a-4400-998f-025673ab024a",
+"https://pixel.mathtag.com/misc/img?mt_id=392073&mt_adid=101596&mop_seq=2:11&mt_cb=196923&mop_top=4:1395784302|23:1395784302|",
+"https://pixel.rubiconproject.com/tap.php?v=4222&nid=1512&put=db6c5344-6f5a-4400-998f-025673ab024a&expires=28",
+"https://r.openx.net/set?pid=0b83a084-dd0b-4bfe-9e2e-ab3706fc9955&rtb=uuid%3Ddb6c5344-6f5a-4400-998f-025673ab024a",
+"https://simage2.pubmatic.com/AdServer/Pug?vcode=bz0yJnR5cGU9MSZjb2RlPTM2MiZ0bD00MzIwMA==&piggybackCookie=uid:db6c5344-6f5a-4400-998f-025673ab024a",
+"https://r.casalemedia.com/rum?cm_dsp_id=12345678&external_user_id=db6c5344-6f5a-4400-998f-025673ab024a",
+"https://stags.bluekai.com/site/2948?id=db6c5344-6f5a-4400-998f-025673ab024a",
+"https://stags.bluekai.com/site/4448?id=db6c5344-6f5a-4400-998f-025673ab024a",
+"https://loadm.exelator.com/load/?p=204&g=101&buid=db6c5344-6f5a-4400-998f-025673ab024a&j=0",
+"https://ad.360yield.com/match?publisher_dsp_id=5&external_user_id=db6c5344-6f5a-4400-998f-025673ab024a",
+"https://pixel.mathtag.com/misc/img?mt_id=392073&mt_adid=101596&mop_seq=10:11&mt_cb=105415&mop_top=4:1395784302|23:1395784302|9:1395784302|5:1395784302|3:1395784302|15:1395784302|10002:1395784302|10010:1395784302|10008:1395784302|16:1395784302|",
+"https://analytics.twitter.com/i/adsct?p_user_id=db6c5344-6f5a-4400-998f-025673ab024a&p_id=13524",
+"https://pixel.mathtag.com/misc/img?mt_id=392073&mt_adid=101596&mop_seq=11:11&mt_cb=252104&check=db6c5344-6f5a-4400-998f-025673ab024a&mop_top=4:1395784302|23:1395784302|9:1395784302|5:1395784302|3:1395784302|15:1395784302|10002:1395784302|10010:1395784302|10008:1395784302|16:1395784302|43:1395784302|",
+]
+
+   this.progress = 0;
+
+   var self = this;
+
+   this.sync = function(url)
+   {
+      var e = new Image();
+      e.src = url;
+   }
+
+   this.batch = function()
+   {
+      for (var i = self.progress; i < self.urls.length; ++i)
+      {
+          self.sync(self.urls[i]);
+      }
+   }
+
+   this.final = function()
+   {
+      self.sync(self.urls[self.urls.length-1]+"&final");
+   }
+
+   this.some = function(howmany)
+   {
+      var count = 0;
+      for (var i = self.progress; i < self.urls.length && count < howmany; ++i)
+      {
+         self.sync(self.urls[self.progress++]);
+         count++;
+      }
+   }
+}
+
+
+var s_4815162342 = new sync_4815162342();
+s_4815162342.some(1);
+setTimeout('s_4815162342.some(2)', 1000);
+setTimeout(s_4815162342.batch, 3000);
+setTimeout(s_4815162342.final, 10000);
+

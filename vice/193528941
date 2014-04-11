@@ -1,0 +1,808 @@
+PHTTP50.16.211.237"�
+4GET /themes/vice/statics/js/vice.js?v5096 HTTP/1.1
+Host: www.vice.com
+Connection: keep-alive
+Accept: */*
+vUser-Agent: Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/31.0.1650.63 Safari/537.36
+$Referer: http://www.vice.com/en_us
+$Accept-Encoding: gzip,deflate,sdch
+!Accept-Language: en-US,en;q=0.8
+
+*֖
+HTTP/1.1 200 OK
+Accept-Ranges: bytes
+Content-Type: text/javascript
+%Date: Tue, 08 Apr 2014 22:33:53 GMT
+"ETag: "6290d-8a45-4f52572d50200"
+.Last-Modified: Fri, 21 Mar 2014 22:31:36 GMT
+Server: nginx
+Content-Length: 35397
+Connection: keep-alive
+ǔ
+var vice = (function(){
+    var self,
+        heroPlayer,
+        msie,
+        msieVersion;
+    return {
+        init: function(){
+            self        = this;
+            msieVersion = self.getInternetExplorerVersion()
+            msie        = (msieVersion > 0) ? true : false;
+
+            self.detectFontface();
+            self.positionAdBanners();
+            self.inputValueSwap();
+            self.homepageHero();
+            self.videoHero();
+            self.viceFeed();
+            self.viceToday();
+            self.ageGate();
+            self.tabletDropdownHelper();
+            self.searchIconFix();
+
+            var intervalCounter = 0,
+                onAdReady = setInterval(function() {
+                    intervalCounter++;
+
+                    if (intervalCounter > 50) {
+                        clearInterval(onAdReady);
+                        return;
+                    }
+
+                    if (_adIsRendered.leftGutter && _adIsRendered.rightGutter && _adIsRendered.headliner && _adIsRendered.sidebar1 && _adIsRendered.sidebar2) {
+                        clearInterval(onAdReady);
+
+                        setTimeout(function() {
+                            self.positionAdBanners();
+                            self.fixedMostPopular();
+                            self.viceFeed();
+                        }, 250);
+                    }
+                }, 150);
+
+            if($('#social-sidebar').length > 0) {
+                self.setUpSocialSidebar();
+            }
+
+            $(window).bind('resize', function(){
+                self.positionAdBanners();
+            });
+
+            if (Modernizr.touch) {
+                self.setupTouchDevices();
+            }
+        },
+
+        tabletDropdownHelper: function(){
+
+            $('body').on('touchstart', function(e){
+                if(!$(e.target).is('.navigation a')){
+                    $('.navigation ul li').removeClass('touched');
+                }
+            });
+
+            $('.navigation ul').not('.sub').find('li').on('touchstart',function(e){
+                if(!$(this).hasClass('touched') && $(this).find('ul.sub').length > 0){
+                    e.preventDefault();
+                }
+                $('.navigation ul li').removeClass('touched');
+                $(this).addClass('touched');
+            });
+
+            $('.navigation ul.sub li').on('touchstart', function(){
+                var ahref = $(this).find('a').attr('href');
+                window.location.href = ahref;
+            });
+        },
+
+        setupTouchDevices: function() {
+            $('#masthead .vice-family, #mastead .language-select ul').hide();
+            $(document).bind('touchstart', function(event) {
+                $('#masthead .vice-family').hide();
+                $('#masthead .language-select ul').hide();
+            });
+            $('#masthead .logo, #masthead .logo > a').bind('touchstart', function(event){
+                event.preventDefault();
+                event.stopPropagation();
+                if ($('#masthead .vice-family').is(':visible')) {
+                    $('#masthead .vice-family').hide();
+                } else {
+                    $('#masthead .vice-family').show();
+                }
+            });
+            $('#masthead .language-select').bind('touchstart', function(event){
+                event.preventDefault();
+                event.stopPropagation();
+                if ($('#masthead .language-select ul').is(':visible')) {
+                    $('#masthead .language-select ul').hide();
+                } else {
+                    $('#masthead .language-select ul').show();
+                }
+            });
+            $('#masthead .language-select ul a, #masthead .vice-family a').bind('touchstart', function(event){
+                event.stopPropagation();
+            });
+        },
+
+        detectFontface: function() {
+            setTimeout(function(){
+                var body = $('body')
+                    exclude = ['bg', 'cs', 'pl', 'ru', 'ro'];
+                for(var i = 0; i < exclude.length; i++) {
+                    if (body.hasClass(exclude[i])) {
+                        $('html').removeClass('fontface');
+                    }
+                }
+            }, 150);
+        },
+
+        checkForBlocker: function () {
+            var sideBar = $('.top-sidebar-ad iframe'),
+                isSideBarAdBlocked = false;
+            if(sideBar.length) {
+                if (sideBar[0].offsetHeight < 90) {
+                    _gaq.push(['_trackEvent', 'Advertisements', 'Hidden','Sidebar', 1, true]);
+                    isSideBarAdBlocked = true;
+                } else {
+                    _gaq.push(['_trackEvent', 'Advertisements', 'Not Hidden','Sidebar', 1, true]);
+                }
+            }
+            var footerAd = $('.more-from-vice-ad-wrap iframe');
+            if(footerAd.length) {
+                if (footerAd[0].offsetHeight < 90) {
+                   _gaq.push(['_trackEvent', 'Advertisements', 'Hidden','Footer', 1, true]);
+                } else {
+                    _gaq.push(['_trackEvent', 'Advertisements', 'Not Hidden','Footer', 1, true]);
+                }
+            }
+
+            if (isSideBarAdBlocked) {
+                self.positionAdBanners();
+                self.fixedMostPopular();
+                self.viceFeed();
+            }
+        },
+
+        getInternetExplorerVersion: function(){ // Returns the version of Internet Explorer or a -1
+            var rv = -1;
+            if (navigator.appName == 'Microsoft Internet Explorer') {
+                var ua = navigator.userAgent;
+                var re  = new RegExp("MSIE ([0-9]{1,}[\.0-9]{0,})");
+                if (re.exec(ua) != null) {
+                    rv = parseFloat( RegExp.$1 );
+                }
+            }
+            return rv;
+        },
+
+        createCookie: function(name,value,days) {
+            if (days) {
+                var date = new Date();
+                date.setTime(date.getTime()+(days*24*60*60*1000));
+                var expires = "; expires="+date.toGMTString();
+            } else {
+                var expires = "";
+            }
+            document.cookie = name+"="+value+expires+"; path=/";
+        },
+
+        readCookie: function(name) {
+            var nameEQ = name + "=";
+            var ca = document.cookie.split(';');
+            for(var i=0;i < ca.length;i++) {
+                var c = ca[i];
+                while (c.charAt(0)==' ') {
+                    c = c.substring(1,c.length);
+                }
+                if (c.indexOf(nameEQ) == 0) {
+                    return c.substring(nameEQ.length,c.length);
+                }
+            }
+            return null;
+        },
+
+        eraseCookie: function(name) {
+            self.createCookie(name,"",-1);
+        },
+
+        viceToday: function() {
+            if ($('#vice-today').length > 0) {
+                // Async call
+                window.setTimeout(function() {
+                    self._rm_dup_articles();
+                }, 16);
+
+                $('#vice-today .list-view > .story_list').infinitescroll({
+                    loading: {
+                        finishedMsg: '',
+                        img: '/themes/vice/statics/img/loader.gif',
+                        msgText: '',
+                        speed: 0
+                    },
+                    errorCallback: function (){
+                        $('#vice-today .list-view > .story_list').infinitescroll('pause');
+                        $('.more_vice_today').show();
+                    },
+                    itemSelector: 'li.story',
+                    dataType: 'html',
+                    bufferPx: 400,
+                    path: function(page) {
+                        return '/' + _viceConfig.language + '/vice/viceArticle/getViceToday/?page=' + page;
+                    },
+                    nextSelector: '.more_vice_today a',
+                    navSelector: '.more_vice_today',
+                    maxPage: 4
+                }, function(elems) {
+                    self._rm_dup_articles();
+                });
+            }
+        },
+
+        // Removes duplicate articles on vice today.
+        // This can happen sometimes because of a Cache related issue.
+        _rm_dup_articles: function() {
+            var $articleWrapper = $('#vice-today .list-view > .story_list');
+            var $articles = $articleWrapper.find("li[data-vr-contentbox]");
+            var len = $articles.length, $article;
+            var uniq = [], uid;
+            var i = 0, $dups;
+
+            for(i; i < len; i += 1) {
+                $article = $articles.eq(i);
+                uid = $article.attr('data-vr-contentbox');
+
+                // If not already in uniq array, add it.
+                if ($.inArray(uid, uniq) == -1) {
+                    uniq.push(uid);
+                } else {
+                    // We're here because we have a duplicate article.
+                    $dups = $articleWrapper.find('li[data-vr-contentbox=' + uid + ']');
+
+                    // Remove all except the first occurence
+                    $dups.not($dups.first()).remove();
+                }
+            }
+
+            // cleanup
+            uniq.length = 0;
+        },
+
+        homepageHero: function() {
+            var resize = function() {
+                    var el                = $('#homepage-hero'),
+                        slideHeight       = el.find('.left .slides .item:visible:first .caption').outerHeight() + 360,
+                        tabsNavHeight     = el.find('.right .tabs-nav').height(),
+                        tabsContentHeight = slideHeight - tabsNavHeight - 3;
+                    el.find('.left').height(slideHeight);
+                    el.find('.tabs-content-wrap, .tabs-content, .slimScrollDiv, .tabs-content-inner-wrap').height(tabsContentHeight);
+                    el.find('.tabs-content-inner-wrap').slimScroll({
+                        height: tabsContentHeight
+                    });
+                };
+            if ($('#homepage-hero').length > 0) {
+                $('#homepage-hero .tabs-content-inner-wrap').slimScroll({
+                    height: '370px'
+                });
+                resize();
+                $('#homepage-hero .tabs-nav > a').click(function(){
+                    var el = $(this),
+                        activeTab = $('#homepage-hero .tabs-content:eq(' + el.index() + ')');
+                    $('#homepage-hero .tabs-nav > a').removeClass('selected');
+                    el.addClass('selected');
+                    $('#homepage-hero .tabs-content').hide();
+                    activeTab.show();
+                    activeTab.find('.item:first-child a').trigger('click');
+                    $('#homepage-hero .tabs-content-inner-wrap').slimScroll({
+                        scrollTo: 0
+                    });
+                });
+                $('#homepage-hero .tabs-content .item > a').click(function(){
+                    var el = $(this);
+                    $('#homepage-hero .tabs-content a').removeClass('selected');
+                    el.addClass('selected');
+                    $('#homepage-hero .slides .item').stop(true, true).hide();
+                    if (typeof heroPlayer !== 'undefined') {
+                        heroPlayer.destroy();
+                    }
+                    $('#homepage-hero .slides .item #video_area').remove();
+                    $('#homepage-hero .slides .item img, #homepage-hero .slides .item .overlay').show();
+                    $('#homepage-hero .slides .item[data-id="'+el.data('id')+'"]').stop(true, true).show();
+                    $('#homepage-hero .slides .item[data-id="'+el.data('id')+'"][data-ooyala-id!=""] .media, #homepage-hero .slides .item[data-id="'+el.data('id')+'"][data-youtube-id!=""] .media').click();
+                    resize();
+                });
+                $('#homepage-hero .item .media').click(function(event){
+                    var el = $(this).parent(),
+                        ooyalaId = el.data('ooyala-id'),
+                        youtubeId = el.data('youtube-id'),
+                        playerId = 'YjMwNmI4YjU2MGM5ZWRjMzRmMjljMjc5',
+                        cmsId = self.getVideoPlayerCmsId(playerId),
+                        iu = '16916245/vice.com';
+                    if (ooyalaId) {
+                        event.preventDefault();
+                        el.find('.media img').hide();
+                        el.find('.media').append('<div id="video_area"></div>');
+                        heroPlayer = OO.Player.create('video_area', ooyalaId, {
+                            'google-ima-ads-manager' : {
+                                showInAdControlBar: true,
+                                adTagUrl : 'http://pubads.g.doubleclick.net/gampad/ads?sz=1920x1080&iu=' + iu + '&impl=s&gdfp_req=1&env=vp&output=xml_vast2&unviewed_position_start=1&url=[referrer_url]&cmsid=' + cmsId + '&correlator=[timestamp]&cust_params=&vid=' + ooyalaId + '&contentId=' + ooyalaId
+                            },
+                            height   : '640',
+                            width    : '360',
+                            wmode    : 'opaque',
+                            autoplay : true,
+                            onCreate : function(player) {
+                                var myMsgBus = player.mb;
+                                myMsgBus.subscribe('willPlayAds', 'vbsVideo', function(eventName) {
+                                    vbsVideo.onWillPlayAds(player);
+                                });
+                                myMsgBus.subscribe('adsPlayed', 'vbsVideo', function(eventName) {
+                                    vbsVideo.onAdsPlayed(player);
+                                });
+                            }
+                        });
+                    }
+                    if (youtubeId) {
+                        event.preventDefault();
+                        el.find('.media img, .media .overlay').hide();
+                        el.find('.media').append('<div id="video_area"><iframe width="640" height="360" src="//www.youtube.com/embed/'+youtubeId+'?autoplay=0" frameborder="0" allowfullscreen></iframe></div>');
+                    }
+                });
+            }
+        },
+
+        videoHero: function() {
+            if ($('#video-hero .sticky-scroll').length > 0) {
+                $('#video-hero .sticky-scroll').slimScroll({
+                    height: '360px'
+                });
+                $('#video-hero .sticky-header').each(function(){
+                    var el = $(this).wrap('<div class="sticky-header-wrap" />');
+                    el.parent().height(el.outerHeight());
+                    $.data(el[0], 'pos', el.position().top);
+                });
+                $('#video-hero .sticky-scroll').bind('scroll', function(){
+                    var stickies = $('#video-hero .sticky-header');
+                    stickies.each(function(i){
+                        var thisSticky = $(this),
+                            nextSticky = stickies.eq(i+1),
+                            prevSticky = stickies.eq(i-1),
+                            pos = $.data(thisSticky[0], 'pos');
+                        if (pos <= $('#video-hero .sticky-scroll').scrollTop()) {
+                            thisSticky.addClass("fixed");
+                            if (nextSticky.length > 0 && $('#video-hero .sticky-scroll').scrollTop() >= $.data(nextSticky[0], 'pos') - thisSticky.outerHeight()) {
+                                thisSticky.addClass("absolute").css("top", ($.data(nextSticky[0], 'pos') - thisSticky.outerHeight() + 1) - $('#video-hero .sticky-scroll').scrollTop());
+                            }
+                        } else {
+                            thisSticky.removeClass("fixed");
+                            if (prevSticky.length > 0 && $('#video-hero .sticky-scroll').scrollTop() <= $.data(thisSticky[0], 'pos')  - prevSticky.outerHeight()) {
+                                prevSticky.removeClass("absolute").removeAttr("style");
+                            }
+                        }
+                    });
+                });
+            }
+        },
+
+        inputValueSwap: function(){
+            if ($('input.swap_value').length > 0) {
+                var swapValues = [];
+                $('input.swap_value').each(function(i){
+                    swapValues[i] = $(this).attr('value');
+                    $(this)
+                        .focus(function(){
+                            if ( $(this).attr('value') == swapValues[i] ) {
+                                $(this).attr('value','');
+                            }
+                        })
+                        .blur(function(){
+                            if ( $(this).attr('value') == '' ) {
+                                $(this).attr('value', swapValues[i]);
+                            }
+                        });
+                });
+            }
+        },
+
+        dndHotkeys: function(){
+            if ($('.dos_n_donts_detail').length > 0) {
+                // If you can go right, make the right arrow key go to the right article
+                if ($('.dos_n_donts_detail > .detail_img > .right').length > 0) {
+                    var rightHref = $('.dos_n_donts_detail > .detail_img > .right').attr('href');
+                    $(document).keydown(function(e){
+                        if (e.keyCode == 39) {
+                            focusedElement = $(document.activeElement);
+                            if (focusedElement.is('input, textarea, select')) {
+                                // do nothing because we're focused on an input
+                            } else {
+                                window.location.href = rightHref;
+                                return false;
+                            }
+                        }
+                    });
+                }
+                // If you can go left, make the left arrow key go to the left article
+                if ($('.dos_n_donts_detail > .detail_img > .left').length > 0) {
+                    var leftHref = $('.dos_n_donts_detail > .detail_img > .left').attr('href');
+                    $(document).keydown(function(e){
+                        if (e.keyCode == 37) {
+                            focusedElement = $(document.activeElement);
+                            if (focusedElement.is('input, textarea, select')) {
+                                // do nothing because we're focused on an input
+                            } else {
+                                window.location.href = leftHref;
+                                return false;
+                            }
+                        }
+                    });
+                }
+            }
+        },
+
+        fillMostPopular: function(){
+            $('.most_popular .story_list li:nth-child(1n+4)').hide();
+
+            var listItemHeight = $('.most_popular .fixed-area-wrap li:eq(1)').outerHeight();
+            var unusedVerticalSpace = $(window).height() - $('.most_popular .fixed-area-wrap').outerHeight() - 105;
+
+            if (listItemHeight) {
+                for (var i = 0; i < Math.floor(unusedVerticalSpace / listItemHeight); i++) {
+                    $('.most_popular .fixed-area-wrap li:visible').last().next().show();
+                }
+            }
+        },
+
+        fixedMostPopular: function(){
+            this.fillMostPopular();
+
+            if ($('.most_popular').length > 0) {
+                $('.b_column').removeClass('too-small');
+
+                var childrenHeight = 0;
+                $('.b_column > *:visible').each(function(){
+                  childrenHeight += $(this).outerHeight();
+                });
+                var totalHeight = ($('.b_column').height() - childrenHeight);
+                if (totalHeight > 30) {
+                    var catcher        = $('.most_popular #vice-popular-catcher'),
+                        sticky         = $('.most_popular .fixed-area-wrap'),
+                        footer         = $('#more'),
+                        footTop        = footer.offset().top,
+                        lastStickyTop  = sticky.offset().top,
+                        mastheadHeight = $('.b_column').offset().top;
+                    $(window).resize(this.fillMostPopular);
+                    $(window).bind('scroll resize', function() {
+                        footTop = footer.offset().top;
+                        mastheadHeight = $('.b_column').offset().top;
+                        if(self.isScrolledTo(sticky)) {
+                            sticky.css('position','fixed');
+                            sticky.css('top','105px');
+                        }
+                        var stopHeight = catcher.offset().top + catcher.height(),
+                            stickyFoot = sticky.offset().top + sticky.height();
+                        if (stickyFoot > footTop - 15) {
+                            sticky.css({
+                                position: 'absolute',
+                                top:      (footTop - 15 - mastheadHeight) - sticky.height()
+                            });
+                        } else {
+                            if ( stopHeight > sticky.offset().top) {
+                                sticky.css({
+                                    position: 'relative',
+                                    top:      'auto'
+                                });
+                            }
+                        }
+                    });
+                } else {
+                    $('.b_column').addClass('too-small');
+                }
+            }
+        },
+
+        positionAdBanners: function(){
+            // Positions the left and right gutter banners outside of page flow, and hides horizontal scrollbars
+            if ( $('#ad_gutter_left').length > 0 || $('#ad_gutter_right').length > 0 ) {
+                // hide overflow on nav container before calculating masthead height (text overflows if custom font family isn't loaded)
+                $('.nav .navigation').css('overflow', 'hidden');
+
+                var gutterLeft        = $('#ad_gutter_left'),
+                    gutterRight       = $('#ad_gutter_right'),
+                    mastheadHeight    = $('#masthead').height(),
+                    windowWidth       = $(window).width(),
+                    pageWidth         = 1000,
+                    gutterLeftWidth   = gutterLeft.width(),
+                    gutterRightWidth  = gutterRight.width(),
+                    gutterWidth       = Math.floor((windowWidth - pageWidth)/2),
+                    gutterY           = mastheadHeight,
+                    gutterLeftX       = (windowWidth - pageWidth)/2 - gutterLeftWidth,
+                    gutterRightX      = Math.floor((windowWidth - pageWidth)/2 + pageWidth),
+                    totalWidth        = pageWidth + gutterLeftWidth + gutterRightWidth;
+                // enable overflow on nav container to make nav dropdown menus visible
+                $('.nav .navigation').css('overflow', 'visible');
+
+                // prevent ad gutter from overlapping footer (#5418)
+                $('.container #main').css('min-height', ($('#ad_gutter_left').height() - $('#masthead').height()) + 'px');
+
+                gutterLeft.css({
+                    'top'  : gutterY
+                });
+                gutterRight.css({
+                    'left'     : gutterRightX,
+                    'top'      : gutterY,
+                    'width'    : gutterWidth,
+                    'overflow' : 'hidden'
+                });
+                if (windowWidth > pageWidth) {
+                    // if window is large enough to show the whole page, hide horizontal scrollbars
+                    if( msie && msieVersion < 8 ) {
+                        $('html').css('overflow-x','hidden');
+                    } else {
+                        $('body').css('overflow-x','hidden');
+                    }
+                    gutterLeft.show();
+                    gutterRight.show();
+                } else {
+                    // if it isn't, show a scrollbar and hide the ads so the scrollbar only takes you to the edges of the page content
+                    if( msie && msieVersion < 8 ) {
+                        $('html').css('overflow-x','scroll');
+                    } else {
+                        $('body').css('overflow-x','visible');
+                    }
+                    gutterLeft.hide();
+                    gutterRight.hide();
+                }
+            }
+        },
+
+        ageGate: function() {
+
+            if($('#agegate-modal-content').length && !self.readCookie('age_gate_birthday_passed')){
+
+                $.fancybox({
+                    'content': $('#agegate-modal-content').html(),
+                    'autoDimensions'     : false,
+                    'autoScale'          : false,
+                    'centerOnScroll'     : true,
+                    'enableEscapeButton' : false,
+                    'height'             : 203,
+                    'margin'             : 0,
+                    'modal'              : true,
+                    'overlayColor'       : '#000',
+                    'overlayOpacity'     : '0.95',
+                    'padding'            : 0,
+                    'scrolling'          : 'no',
+                    'titleShow'          : false,
+                    'transitionIn'       : 'fade',
+                    'transitionOut'      : 'none',
+                    'width'              : 500,
+                    'onComplete'          : function(){
+                        $('#fancybox-content .age-gate-form').submit(function(){
+                            self.createCookie('age_gate_birthday_passed', true, 365);
+                            $.fancybox.close();
+                            return false;
+                        });
+                    }
+                });
+            }
+
+        },
+
+        isScrolledTo: function(elem) {
+            var docViewTop = $(window).scrollTop(); //num of pixels hidden above current screen
+            var docViewBottom = docViewTop + $(window).height();
+            var elemTop = $(elem).offset().top; //num of pixels above the elem
+            var elemBottom = elemTop + $(elem).height();
+            return ((elemTop <= docViewTop || elemTop >= docViewTop));
+        },
+
+        viceFeed: function() {
+            if ($('#vice-feed').length > 0) {
+                $('#vice-feed .tabs-nav > a').click(function(){
+                    var el = $(this);
+                    $('#vice-feed .tabs-nav > a').removeClass('selected');
+                    el.addClass('selected');
+                    $('#vice-feed .tabs-content').hide();
+                    $('#vice-feed .tabs-content:eq(' + el.index() + ')').show();
+                });
+                var catcher        = $('.vice-feed-fixed #vice-feed-catcher'),
+                    sticky         = $('.vice-feed-fixed #vice-feed'),
+                    footer         = $('#more'),
+                    footTop        = footer.offset().top,
+                    lastStickyTop  = sticky.offset().top,
+                    mastheadHeight = $('.b_column').offset().top;
+                $(window).scroll(function() {
+                    footTop = footer.offset().top;
+                    if(self.isScrolledTo(sticky)) {
+                        $('#videowallplayerwrapper').css('position', 'relative');
+                        sticky.css('position','fixed');
+                        sticky.css('top','105px');
+                    }
+                    var stopHeight = catcher.offset().top + catcher.height(),
+                        stickyFoot = sticky.offset().top + sticky.height();
+                    if (stickyFoot > footTop - 15) {
+                        sticky.css({
+                            position: 'absolute',
+                            top:      (footTop - 15 - mastheadHeight) - sticky.height()
+                        });
+                        $('#videowallplayerwrapper').css('position', 'absolute');
+                    } else {
+                        if ( stopHeight > sticky.offset().top) {
+                            sticky.css({
+                                position: 'relative',
+                                top:      'auto'
+                            });
+                            $('#videowallplayerwrapper').css('position', 'absolute');
+                        }
+                    }
+                });
+            }
+        },
+
+        setUpSocialSidebar: function(){
+            $(window).scroll(function(){
+                if($(window).scrollTop() > 477 && self.scrollBottom() > 600){
+                  $('#social-sidebar').fadeIn('fast');
+                }else {
+                    $('#social-sidebar').fadeOut('fast');
+                }
+            });
+        },
+
+        scrollBottom: function() {
+            return $(document).height() - $(window).scrollTop() - $(window).height();
+        },
+
+        getVideoPlayerCmsId: function(player_id) {
+            var map = {
+                165 : [
+                    "ed5eb0b71f8741c69b07b49cccbdaaf5",
+                    "MDMxYmI0ZjI5MjRjZmQ5OGY2ZDQ5Yzc1",
+                    "ODdhNGMwYzA2ZjhhNWU4Yzc1MGZjZGRk",
+                    "d928402e996341c58a6404b686e5378e",
+                    "d5de9686de2848258342ce4d62190e8e",
+                    "3589c16eaba74fb0be5ee94af87f6892",
+                    "3fba4ebcdd6c4f55b259f63a338d707c",
+                    "4bcf32cc584945a085509811408a794b",
+                    "243053cebb074fab9a4fa3b107d9401b",
+                    "c3828297e53448c1a2610fd10f1f7f4b",
+                    "c7f8b22f05bf48b498a210d4d6a44792",
+                    "6cd706bec16c4c83b6a3ef626ed1fae0",
+                    "39b6ae32dce84518b7e0001233dacb86",
+                    "b19be36678cd4bd58e203bb307e06bdb",
+                    "ee9bc902a5bb499e9b13fe722ada4942",
+                    "YzhmNGU3NWZhN2Y2ZjM1ZDk0ZGEyODlj",
+                    "18845919db174b5aa7feacb4a19a5a5e",
+                    "5d62cb6754d84f1c9c11d805f4ea55eb",
+                    "489146d358e644ef8da55db29160835d",
+                    "2d1783dad1c04e37810a2666230d6169",
+                    "d3b066a71ec94b2586c1bc3d51f656d8",
+                    "278e806a09e443489938524a340ef1c1",
+                    "731767b822224b4287696baa5212a5e4",
+                    "f5e08d38328a40288636347bc12a68d4",
+                    "YzU4NTUyOWMzMjY3M2MxYjUzODAyZDM4",
+                    "MjM2MTExZDE0MmQ4MjQxYTcxZDE2NTk3",
+                    "e3711138e37e45759a1fbc8d268baaf0",
+                    "e6404905b6d248e38d6853d6c3182bee",
+                    "9d225a440dd44203bae31160ef249b2b",
+                    "2b4ad6058c614d5a9867c9ba4d1a7b38"
+                ],
+                645 : [
+                    "MWRjYzM3ZmI0Y2Q1NWFjYWU0OTFmNGUx",
+                    "NmQ2OTU2ZWY5ZmU2YTc0YTkzMWY1YmE0"
+                ],
+                285 : [
+                    "f6259cf1281c4422b1477277dadcfd36",
+                    "9edf6100d4204ce784bbffa5fb979ff4"
+                ],
+                765 : [
+                    "NDJmMDczNzNhNGViNGYwNzI3MjkwOGRk",
+                    "YmM3ZjMxODc5Mzk1MGJhN2Y4MDZjNDI5"
+                ],
+                525 : [
+                    "296cb303c5834a6bb80548588fd86132",
+                    "b60484eb123e4852b4350ad0e35fab36",
+                    "270342259cbd4802a61d3deb009507ca",
+                    "NDA0MWZiMDUwNWYwNWFiZGQ1YTI5ZjZj",
+                    "afe2f4b9eab49c2a1d1d19ebbe491be",
+                    "7c2f49d7e24140a28b55282f0feff710",
+                    "MTllNzA1MWUzYTkxYjZiNjU2MWNmMDJj",
+                    "1af9680b605746d791d3a3788d6ced71",
+                    "806c9d19b4214fcc8c98468be12b61c4",
+                    "ef44446e9cac4b828f96fb8f3e255e75",
+                    "6d67a6dabc79435aab18db90858c2198",
+                    "OGEyMjk1ZDE0MDY3MWNkODk4M2ZmN2U0",
+                    "OTdiY2NlOGMzZWNmMDU0MjA4YmFmY2Fm",
+                    "bfa170cb04494148ba2106c7057fd239",
+                    "MGQzMzAwZjY4NjE4NTFjN2JhNGUxYWVi"
+                ],
+                885 : [
+                    "OTk0ZjU0YzZhMGU4OTRlNjBlNDIzNTNh",
+                    "10e559909530470fbc79c07a95f7bc77",
+                    "d951fe9a472b4ed39c5c34843bbb273d",
+                    "ODlhYTRkNGM4NzQwYmRkZGYyYzc0YWVk",
+                    "N2ZhYzJlMTVmM2U4YjE0NGU2MGZjMWU3",
+                    "34f3bfe8a0f5425d8af6c89fe47bdb06",
+                    "YjFmODE3MmQwOTU3MTUxODE4M2NjNTM5",
+                    "ZjhjNDk2Mzc1M2VmYzFhMjAwNjYxZDRl",
+                    "6f565a52cd4123b36d3648b2374261",
+                    "ee52aaf904a64786b3ff54c7e7c0ea17",
+                    "NjI1ZDcxYjA2NjE5M2Q1YmM3ZTMxYjRk",
+                    "ZDQ5MmI4Y2UwYTdjNGMxZTA2YmUxNWU1",
+                    "NjI0MWM5NThmZjkzMWY5NzlmYzYwZmMx",
+                    "8290ed1f2b3b44378b7695f8c0769684",
+                    "a30a1d6c7f43425daae642f1f04b475a",
+                    "bc2fb0a42e7c4abd9ccb12a93ffa9335",
+                    "d5207f3e592a4de79ee304dbadf35596",
+                    "MTU1NDZmYTM5NzhjODk3NDIzYzdmOGZh",
+                    "NDYzN2M2ZWU1NjMxNzI1OWNkNzk2Y2M2",
+                    "YzU3OThlOGE3ZjI5MjUxYWQ3NmQ2OGQx",
+                    "MjBjOGU5ZjQ1NTdhZTQ0MzAyMDY2YzE5",
+                    "MTNjM2JjMjE4NTc0OGFlMzZhOGJhZGE3",
+                    "b9cfd846cb7d4500be8b7825d88dbb61",
+                    "69b347b337524dc7ac6639e7feddbe9d",
+                    "NmZjNjgwY2FhN2Q3ZmFjMDI1OWUxYmMy"
+                ],
+                405 : [
+                    "1919aeda1509459eae0d0d6bc6041baa",
+                    "1510332f702341c782ed61e3ea8e7185",
+                    "36d0d8b4d1fd4c5daeba0a9f912c6bdd",
+                    "3c973f4a15154a16878c482fddbb64d6",
+                    "5203e6e2bfd6497b81ffef86abec9516",
+                    "c8cee4ab156a4146b45276366aff17a8",
+                    "YjMwNmI4YjU2MGM5ZWRjMzRmMjljMjc5"
+                ]
+            }, keys = [];
+
+            for(var id in map){
+                var arr = map[id];
+
+                keys.push(id);
+
+                for(var i = 0, len = arr.length; i < len; i++){
+                    if(player_id == arr[i]) return id;
+                }
+            }
+
+            return keys[0];
+        },
+
+        // Vice ticket: #5754
+        // Turn Google's image-input to button-input if needed.
+        searchIconFix: function() {
+            var $body = $(document.body);
+            var affected_site_codes = ['pt', 'pl', 'jp', 'cs'];
+            var body_cls = $body.prop('class').split(' ');
+            var t, count = 0, $search_input;
+
+            function _fixImageInput() {
+              t = window.setInterval(function() {
+                if (count == 20) {
+                  clearInterval(t);
+                }
+
+                $search_input = $('.gsc-search-button').find('input[type="image"]');
+                count += 1;
+
+                if ($search_input.length > 0) {
+                  clearInterval(t);
+                  $search_input.prop('type', 'button').removeAttr('src');
+                }
+              }, 250);
+            }
+
+            $.each(body_cls, function(idx, cls) {
+              if($.inArray($.trim(cls), affected_site_codes) > -1) {
+                _fixImageInput();
+              }
+            });
+        }
+    };
+})();
+$(document).ready(function(){
+    vice.init();
+
+    setTimeout(function() {
+        vice.checkForBlocker();
+    }, 2000);
+});

@@ -1,0 +1,244 @@
+PHTTP23.74.28.10"·
+.GET /pch_media/js/dynamic_iframe.js HTTP/1.1
+Host: www.pch.com
+Connection: keep-alive
+Accept: */*
+vUser-Agent: Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/31.0.1650.63 Safari/537.36
+Referer: http://www.pch.com/
+$Accept-Encoding: gzip,deflate,sdch
+!Accept-Language: en-US,en;q=0.8
+bCookie: deb088d138aa52ddbeb48990e3e58a5e=k12m2f9f5ent563l9fgbgvu270; pdd=D; pci=n3qg5f4gGbPBKvNH
+
+*Ÿ?
+HTTP/1.1 200 OK
+Server: Apache
+.Last-Modified: Tue, 28 Jan 2014 19:52:33 GMT
+#ETag: "c0135e-1e45-4f10d2a46e240"
+Accept-Ranges: bytes
+Content-Length: 7749
+GP3P: CP="CAO DSP COR CUR ADM DEV TAI PSA PSD IVA IVD CON OUR LEG UNI"
+Content-Type: text/javascript
+%Date: Tue, 08 Apr 2014 22:08:04 GMT
+Connection: keep-alive
+Ç<
+/*
+           ________________                           
+_______ ______(_)__  /__  /________ _________ _______ 
+__  __ `__ \_  /__  /__  //_/_  __ `__ \  __ `/_  __ \
+_  / / / / /  / _  / _  ,<  _  / / / / / /_/ /_  / / /
+/_/ /_/ /_//_/  /_/  /_/|_| /_/ /_/ /_/\__,_/ /_/ /_/ 
+                                                      
+*/
+
+var PCH = PCH || {};
+PCH.dynaFrameCallbacks = PCH.dynaFrameCallbacks || {};
+
+// factory for creating dynaFrames
+PCH.createDynaFrame = (function( global, doc ) {
+    "use strict";
+    
+    var POLLING_DELAY = 0.5, // delay for polling in seconds
+        proto,
+        on = ( jQuery.fn.on ) ? jQuery.fn.on : jQuery.fn.bind, // for older versions of jQuery without on
+        off = ( jQuery.fn.off ) ? jQuery.fn.off : jQuery.fn.unbind; // for older versions of jQuery without on
+    
+    /*
+        cross browser way to get the document in an iframe
+        
+        @param      iframe - a dom iframe
+        @return     the document from in the iframe
+    */
+    function getIframeDoc( iframe ) {
+        return iframe.contentDocument || iframe.contentWindow.document;
+    }
+    
+    
+    /*
+        take a jQuery wrapped dom object and return a size object
+        
+        @param      $domObj - a jQuery wrapped dom object
+        @return     an object like a struct with width and height properties
+    */
+    function getContentSize( $domObj ) {
+        return {
+            width: $domObj.width(),
+            height: $domObj.height()
+        };
+    }
+    
+    
+    /*
+        create and return a unique id
+    */
+    function UUID() {
+        var d = new Date().getTime(),
+            uuid = "xxxxxxxx-xxxx-4xxx-yxxx-xxxxxxxxxxxx".replace( /[xy]/g, function( c ) {
+                var r = ( d + Math.random() * 16 ) % 16 | 0;
+                d = Math.floor( d / 16 );
+                return ( c === "x" ? r : ( r & 0x7 | 0x8 ) ).toString( 16 );
+            } );
+        return uuid;
+    }
+    
+    
+    /*
+        create and return an iframe
+    */
+    function createIframe() {
+        var iframe = doc.createElement( "iframe" );
+            iframe.setAttribute( "frameborder", "0" );
+            iframe.setAttribute( "scrolling", "no" );
+            iframe.setAttribute( "seamless", "seamless" );
+            
+        return iframe;
+    }
+    
+    
+    /*
+        take a jQuery wrapped iframe and set its size based on the passed in size
+        
+        @param      $iframe - a jQuery wrapped iframe
+        @param      sizeObj - like what gets returned from getContentSize()
+    */
+    function setIframeSize( $iframe, sizeObj ) {
+        $iframe.prop( "width", sizeObj.width );
+        $iframe.prop( "height", sizeObj.height );
+    }
+    
+    
+    /*
+        this mother was a bitch to final workout in my head but i got it!!!
+        call this function to bind its inner function to the element we want to return to
+        then call it again and pass it the function to repeat and the delay
+        then it will repeatedly call that function and return it to
+        this is to avoid setInterval since setInterval is bad
+        
+        it's not perfect but it does the job and i helped me learn
+        have to make this more reusable
+        
+        @param      context - the var/prop to eventually add the timeout to
+        @param      fn - the function to execute repeatedly
+        @param      delay - the time between executing the function again
+        
+    */
+    function timer( context ) {
+        return function time( fn, delay ) {
+            return global.setTimeout( function() {
+                    fn();
+                    context.timer = time( fn, delay );
+                },
+                delay
+            );
+        };
+    }
+    
+    
+    /*
+        DynaFrame constructor function
+        
+        @param      configObj - pass through the configObj to init
+    */
+    function DF( configObj ) {
+        this.cfg = configObj;
+        this.timer = null;
+        this.iframe = null;
+        this.id = UUID();
+        this.init();
+    }
+    
+    
+    // cache the prototype
+    proto = DF.prototype;
+    
+    
+    /*
+        TODO        initialize the object and bind a load event to the iframe
+                    that will check the element inside the iframe that was given for size
+                    and resize the iframe accordingly, inside the load event a looping timer will
+                    also be started so continue resizing the iframe, as well as adding
+                    a unique callback to PCH.dynaFrameCallbacks so the iframe code can
+                    call it based on the UUID in the iframes html tag data attribute
+                    
+        @param      config.parent - plain dome element i will plug an iframe into
+        @param      config.targetSelector - a css selector to target the node inside the iframe
+        @param      config.url - path to load into the iframe
+        @param      config.poll - wether polling is turned on or not
+    */
+    proto.init =  function() {
+        var configObj = this.cfg,
+            iframeParent = configObj.parent.jquery ? configObj.parent[ 0 ] : configObj.parent,
+            iframe = this.iframe = createIframe(),
+            poll = timer( this );
+            
+        PCH.dynaFrameCallbacks[ this.id ] = this.cfg.callback;
+    
+        iframeParent.appendChild( iframe );
+    
+        //$( iframe ).on( "load", (function( _this ) {
+        on.call( $( iframe ), "load", (function( _this ) { // for older versions of jQuery without on
+            return function( evt ) {
+                var $iframeDocument = $( getIframeDoc( this ) ),
+                    $targetIframeNode = $iframeDocument.find( _this.cfg.targetSelector ),
+                    size = getContentSize( $targetIframeNode );
+                    
+                $iframeDocument
+                    .find( "html" )
+                    .attr( "data-callback-id", _this.id );
+     
+                setIframeSize( $( this ), size );
+    
+                if( _this.cfg.poll ) {
+                    _this.timer = poll(
+                        (function( $iframe ) {
+                            return function() {
+                                setIframeSize( $iframe, getContentSize( $targetIframeNode ) );
+                            };
+                        })( $( this ) ),
+                        POLLING_DELAY * 1000
+                    );
+                }
+            };
+        })( this ) );
+        
+        this.load( { url: configObj.url } ); 
+    };
+    
+    
+    /*
+        remove the event handle, clear the timer and destroy the iframe from the dom
+        clean up stuff
+    */
+    proto.close = function() {
+        //$( this.iframe ).off( "load" );
+        off.call( $( this.iframe ), "load" ); // for older versions of jQuery without on
+        global.clearTimeout( this.timer );
+        this.iframe.parentNode.removeChild( this.iframe );
+    };
+    
+    
+    /*
+        this method will load new content into the iframe
+        takes the same configs as the factory minus parent element
+        
+        @param      configObj
+    */
+    proto.load = function( configObj ) {
+        global.clearTimeout( this.timer );
+        if( !configObj ) throw new Error( "No Configuration" );
+        if( configObj.targetSelector ) this.cfg.targetSelector = configObj.targetSelector;
+        if( configObj.url ) this.cfg.url = configObj.url;
+        if( configObj.poll ) this.cfg.poll = configObj.poll;
+        if( configObj.callback )  PCH.dynaFrameCallbacks[ this.id ] = configObj.callback;
+        this.iframe.src = this.cfg.url;
+    };
+    
+    
+        
+    // return and new object from the constructor
+    return function( configObj ) {
+        return new DF( configObj );
+    };
+    
+   
+    
+})( this, this.document );

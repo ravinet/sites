@@ -1,0 +1,55 @@
+PHTTP74.119.118.89"¹
+iGET /event?a=%5B6814%2C7024%5D&v=3.0.0&p0=e%3Dexd%26ci%3D%26site_type%3Dd&p1=e%3Dvh&p2=e%3Ddis HTTP/1.1
+Host: widget.criteo.com
+Connection: keep-alive
+Accept: */*
+vUser-Agent: Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/31.0.1650.63 Safari/537.36
+CReferer: http://www.toysrus.com/shop/index.jsp?categoryId=2255956
+$Accept-Encoding: gzip,deflate,sdch
+!Accept-Language: en-US,en;q=0.8
+
+*Ë
+HTTP/1.1 200 OK
+Cache-Control: no-cache
+Pragma: no-cache
+7Content-Type: application/x-javascript; charset=utf-8
+Expires: -1
+Server: Microsoft-IIS/7.5
+4P3P: CP="NON DSP COR CURa PSA PSD OUR BUS NAV STA"
+ySet-Cookie: uid=5546d5df-683b-40d2-840a-d26235e62ba9; domain=.criteo.com; expires=Wed, 08-Apr-2015 22:29:01 GMT; path=/
+ySet-Cookie: uid=5546d5df-683b-40d2-840a-d26235e62ba9; domain=.criteo.com; expires=Wed, 08-Apr-2015 22:29:01 GMT; path=/
+ãSet-Cookie: uic=*1w5aBDKzP%2bnnvS%2bOqb8sI%2bFG52Xj7fV7UoXPBt%2fsJrrOyL43bRTM1%2bhO4pRcIxsHDNQZivcrBwMYNy2Gs6JZTiypxuKctJKLgONsWsgpGTwc%2bmKAgboVVu8KFsBhXYDEs; domain=.criteo.com; expires=Wed, 08-Oct-2014 22:29:02 GMT; path=/
+wSet-Cookie: udc=*1AjVT%2bgfw%2f8PyH2Istroh8g%3d%3d; domain=.criteo.com; expires=Wed, 08-Oct-2014 22:29:02 GMT; path=/
+%Date: Tue, 08 Apr 2014 22:29:02 GMT
+Content-Length: 982
+Ø
+/*<!--*/(function() {
+var qss = '&cb=' + Math.floor(Math.random() * 99999999999);
+try {
+    qss += '&ref=' + encodeURIComponent(document.referrer);
+} catch (e) { }
+try {
+    qss += '&sc_r=' + encodeURIComponent(screen.width + 'x' + screen.height);
+} catch (e) { }
+try {
+    qss += '&sc_d=' + encodeURIComponent(screen.colorDepth);
+} catch (e) { }
+
+var callDis = function(pid, domain) {
+    var qr = (document.location.protocol == 'https:' ? 'https:' : 'http:') + '//' + domain + '/dis/dis.aspx';
+    var p = document.createElement('iframe');
+    p.width = p.height = '0';
+    p.style.display = 'none';
+    p.src = (qr + '?p=' + pid + qss).substring(0, 2000);
+
+    var c = document.getElementById('criteoTagsContainer');
+    if (c) {
+        c.appendChild(p);
+    } else {
+        criteo_q.push({ event: 'appendTag', element: p });
+    }
+};
+qss += '&site_type=d';
+callDis(6814, 'dis.ny.us.criteo.com');
+callDis(7024, 'dis.ny.us.criteo.com');
+})();/*-->*/

@@ -1,0 +1,51 @@
+PHTTP23.208.222.193"ô
+=GET /js/fe/ads.b5509cbe8e0439abf2a5228f54565749.js HTTP/1.1
+Host: www.rollingstone.com
+Connection: keep-alive
+Accept: */*
+vUser-Agent: Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/31.0.1650.63 Safari/537.36
+'Referer: http://www.rollingstone.com/
+$Accept-Encoding: gzip,deflate,sdch
+!Accept-Language: en-US,en;q=0.8
+
+*¬
+HTTP/1.1 200 OK
+Accept-Ranges: bytes
+&Content-Type: application/javascript
+"ETag: "139607-c85-4f6886e382100"
+.Last-Modified: Tue, 08 Apr 2014 14:02:12 GMT
+ Server: Apache/2.2.23 (CentOS)
+Content-Length: 3205
+%Date: Tue, 08 Apr 2014 22:21:36 GMT
+Connection: keep-alive
+‡
+function rs_renderAd(url) {
+    if (typeof googletag === 'undefined' && typeof window.Krux !== 'undefined' && window.Krux.dfppKeyValues) {
+        var pieces = url.split(';');
+        if (pieces.length > 1 && window.Krux.dfppKeyValues) {
+        	// remove final semi-colon from Krux values
+        	var kruxKeyVals = window.Krux.dfppKeyValues;
+        	pieces.splice(1, 0, kruxKeyVals.substring(0, kruxKeyVals.length - 1));
+            url = pieces.join(';');
+        }
+    }
+    document.write('<script src="'+ url +'"><\/script>');
+}
+
+/** 
+ * 
+ * Function given to us by apple to decide if their campagin can be run on the device accessing the homepage or not.
+ * I had this in the homepage.js which is supposed to be included above, but the function was never found.
+ * 
+ */
+function MALServeAd () {
+    var Environment=function(){function l(d,b,a){function m(e){for(var a=0;a<e.length;a++){var c=e[a].string,b=e[a].property;h=e[a].versionSearch||e[a].identity;if(c&&-1!==c.indexOf(e[a].subString)||b)return e[a].identity}return""}function g(a){return(a=a.match(/(?:OS|Mac[^;]+) ([0-9_.]+)/))?parseFloat(a[1].split("_").slice(0,2).join(".")):""}var h="",n=document.createElement("div"),k=["Webkit","Moz","O","ms"],f=[{string:b,subString:"Win",identity:"Windows",version:function(a){return(a=a.match(/Windows NT ([0-9.]+)/i))?
+    parseFloat(a[1]):""}},{string:b,subString:"Mac",identity:"Mac",version:g},{string:b,subString:"Android",identity:"Android"},{string:a,subString:"iPod",identity:"iPod",version:g},{string:a,subString:"iPhone",identity:"iPhone",version:g},{string:a,subString:"iPad",identity:"iPad",version:g},{string:b,subString:"Linux",identity:"Linux"}];d=m([{string:a,subString:"MSIE",identity:"MSIE",versionSearch:"MSIE"},{string:a,subString:"Trident",identity:"Trident",versionSearch:"Trident"},{string:a,subString:"Chrome",
+    identity:"Chrome"},{string:a,subString:"AdobeAIR",identity:"AdobeAIR"},{string:d,subString:"Apple",identity:"Safari",versionSearch:"Version"},{property:window.opera,identity:"Opera"},{string:a,subString:"Firefox",identity:"Firefox"},{string:a,subString:"AppleWebKit",identity:"AppleWebKit"}]).toLowerCase();b=function(a){var b=a.indexOf(h);if(-1!==b)return parseFloat(a.substring(b+h.length+1))}(a);"trident"===d&&(d="msie",b+=4);var p=m(f);a=function(a,b){for(var c=0;c<f.length;c++)if(-1!==b.indexOf(f[c].subString)&&
+    f[c].version)return f[c].version(a);return""}(a,p);var q=function(){var a=RegExp("^("+k.join("|")+")(?=[A-Z])"),b;for(b in n.style)if(a.test(b))return b.match(a)[0];for(var c in k)if(a=k[c],a+"Opacity"in n.style)return a;return""}();a={browser:d,engine:{applewebkit:"webkit",safari:"webkit",chrome:"webkit",msie:"trident",firefox:"gecko",opera:"presto",adobeair:"webkit"}[d],browserVersion:b,os:p.toLowerCase(),osVersion:a,prefix:"-"+q.toLowerCase()+"-",domPrefix:q};"msie"===d&&(a.documentMode=document.documentMode?
+    document.documentMode:document.compatMode&&"CSS1Compat"===document.compatMode?7:5);a.create=l;return a}return l(navigator.vendor,navigator.platform,navigator.userAgent)}();
+
+    return !!(
+    (Environment.os.match(/windows|mac|ipad/) && Environment.browser.match(/firefox|chrome|safari|opera|msie/))
+    );
+}

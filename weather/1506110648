@@ -1,0 +1,139 @@
+PHTTP
+18.7.20.70"Í
+ GET /js/topNavMenu.js HTTP/1.1
+Host: www.weather.gov
+Connection: keep-alive
+Accept: */*
+vUser-Agent: Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/31.0.1650.63 Safari/537.36
+"Referer: http://www.weather.gov/
+$Accept-Encoding: gzip,deflate,sdch
+!Accept-Language: en-US,en;q=0.8
+
+*ƒ
+HTTP/1.1 200 OK
+.Last-Modified: Wed, 19 Mar 2014 16:13:02 GMT
+!Server: Apache/2.2.15 (Red Hat)
+Accept-Ranges: bytes
+Content-Length: 3006
+Content-Type: text/javascript
+Cache-Control: max-age=152
+(Expires: Tue, 08 Apr 2014 22:37:21 GMT
+%Date: Tue, 08 Apr 2014 22:34:49 GMT
+Connection: keep-alive
+À
+(function(){
+    var firedOnce = false;
+    $(document).bind('pagecreate', function(){
+        if (!firedOnce){
+            InitNavMenus();
+            firedOnce = true;
+        }
+    });
+    $(document).bind('ready', function(){
+        if (!firedOnce){
+            InitNavMenus();
+            firedOnce = true;
+        }
+    });
+    
+    function InitNavMenus(){
+	function megaHoverOver(){
+		$(this).find(".sub").stop().fadeTo('fast', 1).show();
+
+		//Calculate width of all ul's
+		(function($) { 
+			jQuery.fn.calcSubWidth = function() {
+				rowWidth = 0;
+				//Calculate row
+				$(this).find("ul").each(function() {					
+					rowWidth += $(this).width(); 
+				});	
+			};
+		})(jQuery); 
+
+		if ( $(this).find(".row").length > 0 ) { 
+			//If row exists...
+			var biggestRow = 0;	
+			//Calculate each row
+			$(this).find(".row").each(function() {							   
+				$(this).calcSubWidth();
+				//Find biggest row
+				if(rowWidth > biggestRow) {
+					biggestRow = rowWidth;
+				}
+			});
+	
+			//Set width
+			$(this).find(".sub").css({'width' :biggestRow});
+			$(this).find(".row:last").css({'margin':'0'});
+		} 
+		else { 
+			//If row does not exist...
+			$(this).calcSubWidth();
+	
+			//Set Width
+			$(this).find(".sub").css({'width' : rowWidth});
+		}
+	}
+
+	function megaHoverOut(){ 
+		$(this).find(".sub").stop().fadeTo('fast', 0, function() {
+			$(this).hide(); 
+		});
+
+	}
+	
+	function openResponsiveMenu() {
+		$("#subMenuNav").toggle();
+		return false;
+	}
+	
+	function openResponsiveSubMenu() {
+		if ($(this).siblings(".sub").length > 0) {
+			$(this).siblings(".sub").toggle();
+			return false;
+		} else { 
+			//$(this).children("a").click();
+		}
+	}
+
+	function initializeMenus() { 
+		if ($(window).width() >= 1000) { 
+			$("ul#subMenuNav div.section-link").unbind("click");			
+			$("ul#topnav li").hoverIntent(config);
+			$("ul#subMenuNav li").hoverIntent(config);
+		} else {
+			$("ul#topnav li").unbind("hover");
+			$("ul#subMenuNav li").unbind("hover");
+			$("ul#subMenuNav div.section-link").click(openResponsiveSubMenu);
+		}
+	}
+
+	var config = {    
+		sensitivity: 2, // number = sensitivity threshold (must be 1 or higher)    
+		interval: 100, // number = milliseconds for onMouseOver polling interval    
+		over: megaHoverOver, // function = onMouseOver callback (REQUIRED)    
+		timeout: 500, // number = milliseconds delay before onMouseOut    
+		out: megaHoverOut // function = onMouseOut callback (REQUIRED)    
+	};
+
+
+	//$("ul#topnav li .sub").css({'opacity':'0'});
+
+	if ($("#tabs_panel") && $( "#tabs_panel" ).tabs) {
+		$( "#tabs_panel" ).tabs();
+	}
+	
+	if ($(".subMenuNav")) {
+		initializeMenus();
+		$(window).resize(initializeMenus);
+		$("#responsive_nav").click(openResponsiveMenu);
+		$("#responsive_open").click(openResponsiveMenu);
+		$("#responsive_open").css("cursor","pointer");
+		$("ul#subMenuNav li div.section-link a[href='']").parent().css("display","none");
+		
+	}
+
+
+    }
+})();

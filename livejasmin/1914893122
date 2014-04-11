@@ -1,0 +1,60 @@
+PHTTP
+72.21.91.9"è
+5GET /2628/memberapplet_awards/surprise.xml HTTP/1.1
+$Host: flashx.new.livejasmincdn.com
+Connection: keep-alive
+vUser-Agent: Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/31.0.1650.63 Safari/537.36
+Accept: */*
+BReferer: http://new.livejasmin.com/en/?showPreviousVersionLink=0
+$Accept-Encoding: gzip,deflate,sdch
+!Accept-Language: en-US,en;q=0.8
+
+*√
+HTTP/1.1 200 OK
+Accept-Ranges: bytes
+ Cache-Control: max-age=2419200
+Content-Type: text/xml
+%Date: Tue, 08 Apr 2014 22:03:40 GMT
+Etag: "53440c2e-74e"
+(Expires: Tue, 06 May 2014 22:03:40 GMT
+.Last-Modified: Tue, 08 Apr 2014 14:48:14 GMT
+Server: ECS (ord/26CE)
+X-Cache: HIT
+,X-Real-Source: flash.new.livejasmincdn.com
+Content-Length: 1870
+–
+<?xml version="1.0" encoding="utf-8" ?>
+<data>
+	<surprise rank="0" iconurl="{$flashurl}icons/surpriseIconfc1.png" swfurl="fanclub.swf" onlycustom="false" type="fanclub" />
+	<surprise rank="0" iconurl="{$flashurl}icons/surpriseIconbd1.png" swfurl="bd1.swf" onlycustom="true" type="birthday" />
+	<surprise rank="1" swfurl="tip5.swf" onlycustom="false" type="normal">
+		<iconurl url="{$flashurl}icons/surpriseIcon5_1.png" />
+		<iconurl url="{$flashurl}icons/surpriseIcon5_2.png" />
+		<iconurl url="{$flashurl}icons/surpriseIcon5_3.png" />
+	</surprise>
+	<surprise rank="2" swfurl="tip2.swf" onlycustom="false" type="normal">
+		<iconurl url="{$flashurl}icons/surpriseIcon1_1.png" />
+		<iconurl url="{$flashurl}icons/surpriseIcon1_2.png" />
+		<iconurl url="{$flashurl}icons/surpriseIcon1_3.png" />
+	</surprise>
+	<surprise rank="3" swfurl="tip3.swf" onlycustom="false" type="normal">
+		<iconurl url="{$flashurl}icons/surpriseIcon3_1.png" />
+		<iconurl url="{$flashurl}icons/surpriseIcon3_2.png" />
+		<iconurl url="{$flashurl}icons/surpriseIcon3_3.png" />
+	</surprise>
+	<surprise rank="4" swfurl="tip4.swf" onlycustom="false" type="normal">
+		<iconurl url="{$flashurl}icons/surpriseIcon4_1.png" />
+		<iconurl url="{$flashurl}icons/surpriseIcon4_2.png" />
+		<iconurl url="{$flashurl}icons/surpriseIcon4_3.png" />
+	</surprise>
+	<surprise rank="5" swfurl="tip1.swf" onlycustom="false" type="normal">
+		<iconurl url="{$flashurl}icons/surpriseIcon2_1.png" />
+		<iconurl url="{$flashurl}icons/surpriseIcon2_2.png" />
+		<iconurl url="{$flashurl}icons/surpriseIcon2_3.png" />
+	</surprise>
+	<surprise rank="6" swfurl="tip6.swf" onlycustom="false" type="normal">
+		<iconurl url="{$flashurl}icons/surpriseIcon6_1.png" />
+		<iconurl url="{$flashurl}icons/surpriseIcon6_2.png" />
+		<iconurl url="{$flashurl}icons/surpriseIcon6_3.png" />
+	</surprise>
+</data>

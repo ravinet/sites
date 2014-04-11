@@ -1,0 +1,30 @@
+PHTTP216.239.120.45"Ì
+©GET /aws/rest/v2.0/apexTarget?refUrl=&sId=6&ptId=0&onId=0&asId=0&cId=0&pId=0&nCat=&edId=&regSys=0&regId=0&lgnSts=0&t=1396993829502&callback=parseArrowResponse HTTP/1.1
+Host: apex.gamespot.com
+Connection: keep-alive
+Accept: */*
+vUser-Agent: Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/31.0.1650.63 Safari/537.36
+#Referer: http://www.gamespot.com/
+$Accept-Encoding: gzip,deflate,sdch
+!Accept-Language: en-US,en;q=0.8
+êCookie: ANON_REMEMBERME=ANON_53446f22ee0e6; AD_SESSION=c; __CT_Data=gpv=1&apv_6974_www09=1; WRUID=0; s_cc=true; s_fid=6C83B070DC059B8D-2187F16187DB62AA; s_getNewRepeat=1396993828786-New; s_lv_gamespot=1396993828787; s_lv_gamespot_s=First%20Visit; s_vnum=1399585828788%26vn%3D1; s_invisit=true; s_sq=%5B%5BB%5D%5D; __utma=14953632.30475702.1396993829.1396993829.1396993829.1; __utmb=14953632.1.10.1396993829; __utmc=14953632; __utmz=14953632.1396993829.1.1.utmcsr=(direct)|utmccn=(direct)|utmcmd=(none); __utmv=14953632.|2=UserType=Anonymous=1; __gads=ID=191c0a0f61eb9f55:T=1396993828:S=ALNI_MadPmLx2S4qSZL-2WTAccDfoHsuEQ; XCLGFbrowser=QrqCuFNEbyTfUJZG/6c
+
+*Ì
+HTTP/1.1 200 OK
+%Date: Tue, 08 Apr 2014 21:50:29 GMT
+Server: Apache-Coyote/1.1
+-Content-Type: text/javascript;charset=UTF-8
+hSet-Cookie: apexLat=1396993829312; Domain=.gamespot.com; Expires=Wed, 08-Apr-2015 21:50:29 GMT; Path=/
+\Set-Cookie: apexSpc=1; Domain=.gamespot.com; Expires=Thu, 08-May-2014 21:50:29 GMT; Path=/
+DSet-Cookie: JSESSIONID=AAB162FD3C98171F04317CF568BA5A37; Path=/aws
+gSet-Cookie: apexSampleHistory=""; Domain=.gamespot.com; Expires=Tue, 08-Apr-2014 22:20:29 GMT; Path=/
+!Keep-Alive: timeout=15, max=993
+Connection: Keep-Alive
+Transfer-Encoding: chunked
+í
+85
+// no offer available for user
+parseArrowResponse( {"XCLGFbrowser": "QrqCuFNEbyTfUJZG/6c", "tempSessionId": "","userBuckets": []} );
+
+0
+

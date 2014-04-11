@@ -1,0 +1,23 @@
+PHTTP66.254.100.203"Î
+GET /js/ads.js HTTP/1.1
+Host: static.trafficjunky.net
+Connection: keep-alive
+Accept: */*
+vUser-Agent: Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/31.0.1650.63 Safari/537.36
+"Referer: http://www.youporn.com/
+$Accept-Encoding: gzip,deflate,sdch
+!Accept-Language: en-US,en;q=0.8
+
+*ý
+HTTP/1.1 200 OK
+Server: nginx
+%Date: Fri, 11 Apr 2014 22:18:43 GMT
+(Content-Type: application/x-javascript
+Content-Length: 143
+.Last-Modified: Wed, 28 Aug 2013 17:30:45 GMT
+Connection: close
+Accept-Ranges: bytes
+‘
+var g=document.createElement('div'); g.style="display:none";
+g.setAttribute("id","test_ads_private_mp_elem");
+document.body.appendChild(g);

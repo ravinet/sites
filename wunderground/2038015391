@@ -1,0 +1,38 @@
+PHTTP
+18.7.20.69"ó
+3GET /css/wu3_videolist.css?cb=1396996584 HTTP/1.1
+Host: style.wxug.com
+Connection: keep-alive
+Accept: text/css,*/*;q=0.1
+vUser-Agent: Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/31.0.1650.63 Safari/537.36
+'Referer: http://www.wunderground.com/
+$Accept-Encoding: gzip,deflate,sdch
+!Accept-Language: en-US,en;q=0.8
+
+*Ð
+
+HTTP/1.1 200 OK
+(Server: Apache/1.3.42 (Unix) PHP/5.3.2
+.Last-Modified: Thu, 26 Dec 2013 18:52:56 GMT
+Accept-Ranges: bytes
+Content-Length: 1031
+Content-Type: text/css
+ Cache-Control: max-age=2592000
+(Expires: Thu, 08 May 2014 22:36:25 GMT
+%Date: Tue, 08 Apr 2014 22:36:25 GMT
+Connection: keep-alive
+‰
+.outerPlaylist INPUT { z-index: 200; }
+.innerPlaylist { z-index: 100; overflow: hidden; }
+
+#videos a.capture { width: 161px; text-decoration: none; position: relative; display: block; float: left; }
+#videos a.capture span.playbtn{ visibility: hidden; position: absolute; left: 0; top: 0; filter: alpha(opacity=90); -moz-opacity: 0.9; -khtml-opacity: 0.9; opacity: 0.9; }
+#videos a.capture:hover span.playbtn { visibility: visible; }
+
+a.capture { width: 120px; text-decoration: none; position: relative; display: block; float: left; }
+a.capture span.playbtn{ visibility: hidden; position: absolute; left: 0; top: 0; filter: alpha(opacity=90); -moz-opacity: 0.9; -khtml-opacity: 0.9; opacity: 0.9; }
+a.capture:hover span.playbtn { visibility: visible; }
+a.snapture { width: 100%; text-decoration: none; position: relative; }
+a.snapture span.playbtn{ visibility: hidden; vertical-align: middle; filter: alpha(opacity=90); -moz-opacity: 0.9; -khtml-opacity: 0.9; opacity: 0.9; }
+a.snapture:hover span.playbtn { visibility: visible; }
+

@@ -1,0 +1,33 @@
+PHTTP23.202.201.216"Ù
++GET /aria/uuid.html?c=9607026504 HTTP/1.1
+Host: btg.mtvnservices.com
+Connection: keep-alive
+Accept: */*
+vUser-Agent: Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/31.0.1650.63 Safari/537.36
+Referer: http://www.mtv.com/
+$Accept-Encoding: gzip,deflate,sdch
+!Accept-Language: en-US,en;q=0.8
+
+*—
+ HTTP/1.1 302 Moved Temporarily
+Server: Apache
+Content-Length: 153
+Content-Type: text/html
+7Location: //btg.mtvnservices.com/aria/uuid.html?3pc=1
+Set-Cookie: vmn_3pc=1
+5ETag: "78e61f1e6f7468663dfe9191f797d182:1386010323"
+KP3P: CP: IDC DSP COR ADM DEVi TAIi PSA PSD IVAi IVDi CONi HIS OUR IND CNT
+ÁAccess-Control-Allow-Origin: http://mtv.com http://media.nick.com http://nick.com http://comedycentral.com http://thedailyshow.com http://colbertreport.com *.mtvnservices.com *.brightcove.com
+Vary: Accept-Encoding
+Cache-Control: max-age=1302
+%Date: Fri, 11 Apr 2014 15:31:41 GMT
+Connection: keep-alive
+›
+<HTML>
+<HEAD>
+<TITLE>Error Page</TITLE>
+</HEAD>
+<BODY>
+An error (302 Moved Temporarily) has occured in response to this request.
+</BODY>
+</HTML>

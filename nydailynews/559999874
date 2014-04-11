@@ -1,0 +1,26 @@
+PHTTP23.209.61.166"Ï
+GET /js/embed.js HTTP/1.1
+Host: launch.newsinc.com
+Connection: keep-alive
+Accept: */*
+vUser-Agent: Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/31.0.1650.63 Safari/537.36
+&Referer: http://www.nydailynews.com/
+$Accept-Encoding: gzip,deflate,sdch
+!Accept-Language: en-US,en;q=0.8
+
+*ú
+!HTTP/1.1 307 Temporary Redirect
+Accept-Ranges: bytes
+&Content-Type: application/javascript
+*ETag: "d41d8cd98f00b204e9800998ecf8427e"
+.Last-Modified: Thu, 10 Apr 2014 20:06:28 GMT
+Location: /36/js/embed.js
+ Server: Apache/2.2.25 (Amazon)
+2x-ndn-redirect-proxy: Hit from: ip-10-212-182-20
+Content-Length: 0
+(Expires: Fri, 11 Apr 2014 15:30:50 GMT
+.Cache-Control: max-age=0, no-cache, no-store
+Pragma: no-cache
+%Date: Fri, 11 Apr 2014 15:30:50 GMT
+Connection: keep-alive
+

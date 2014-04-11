@@ -1,0 +1,254 @@
+PHTTP31.192.122.226" 
+GET /css/styleb.css HTTP/1.1
+Host: www.youjizz.com
+Connection: keep-alive
+Accept: text/css,*/*;q=0.1
+vUser-Agent: Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/31.0.1650.63 Safari/537.36
+"Referer: http://www.youjizz.com/
+$Accept-Encoding: gzip,deflate,sdch
+!Accept-Language: en-US,en;q=0.8
+DCookie: PHPSESSID=rqdrsda89d4f3vdc4tg1e824q3; RNLBSERVERID=ded1418
+
+*ª*
+HTTP/1.1 200 OK
+Server: nginx/1.4.4
+%Date: Tue, 08 Apr 2014 22:37:43 GMT
+Content-Type: text/css
+Content-Length: 5164
+.Last-Modified: Fri, 06 Sep 2013 22:55:44 GMT
+Connection: close
+ETag: "522a5d70-142c"
+Accept-Ranges: bytes
+®(
+@import url(social.css);
+body {
+	margin: 0 0 0 0;
+	padding: 0 0 0 0;
+	background-repeat: repeat-x;
+	text-align: center;
+	font-family: Arial, Helvetica, sans-serif;
+}
+#download-bar{clear:both;width:705px;margin:2px auto ; font-size:14px;height:22px;}
+#download-bar span{float:left;}
+#download-bar span.watch{width:280px;text-align:left;font-weight:bold;}
+#download-bar span.watch a{margin:0 0 0 5px;}
+#download-bar span.current{float:none;margin:0 0 0 10px;color:#666;text-decoration:underline;}
+#download-bar span.download{text-align:right;font-weight:bold;}
+#download-bar a{font-family: tahoma;color:#f00;font-weight:bold;text-decoration:underline;font-size:14px;}
+#download-bar ul{list-style:none;float:right;margin:0;padding:0;}
+#download-bar li{float:left;margin:0 4px;}
+#header {
+	/*width: 1000px;*/
+	height: 142px;
+	margin: 0 auto;
+	text-align: left;
+	background-image: url(logo.jpg);
+	background-repeat: no-repeat;
+	z-index: 1;
+}
+#wrap {
+	width: 1000px;
+	text-align: center;
+	margin: 0 auto;
+}
+#bannertop {
+	width: 468px;
+	height: 80px;
+	position: relative;
+	top: -25px;
+	left: 500px;
+	background-color: #ffffff;
+}
+#seotext {
+	width: 150px;
+	height: 20px;
+	position: relative;
+	top: 90px;
+	left: 150px;
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 11px;
+	font-weight: bold;
+	z-index: 2;
+}
+#loginbox {
+	width: 150px;
+	height: 20px;
+	position: relative;
+	top: 100px;
+	left: 20px;
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 11px;
+	z-index: 5;
+	margin: 0 0 0 0;
+	padding: 0 0 0 0;
+}
+#nav {
+	z-index: 3;
+	position: relative;
+	float: right;
+	top: -5px;
+}
+#todaydate {
+	float: left;
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 18px;
+	font-weight: bold;
+	margin-top: 5px;
+}
+#search {
+   float:right;
+   width:400px;
+	font-family: Arial, Helvetica, sans-serif;
+   margin-right:10px;
+   margin-top:0px;
+   border-style:none;
+   border-width:0px;
+}
+
+.search-icon {
+   background: url("/gfx_new/search.gif") no-repeat no-repeat;
+	width: 28px;
+	height: 30px;
+   display: inline;
+   float: left;
+   margin-top:2px;
+   cursor: pointer;
+}
+
+#searchform {float: right}
+
+
+#nav a {
+	margin-right: 10px;
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 11px;
+	font-weight: bold;
+	color: #000000;
+	text-decoration: none;
+}
+#nav a:hover {
+	text-decoration: underline;
+}
+#footer {
+	text-align: center;
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 12px;
+	margin-top: 10px;
+}
+
+#mainwrap {
+	text-align: left;
+	width: 1000px;
+	margin: 0 auto;
+}	
+.thumb {
+	padding-top: 15px;
+	float: left;
+	width: 250px;
+	text-align: center;
+	height: 230px;
+}
+.thumb h1 {
+	margin: 0 0 0 0;
+	padding: 0 0 0 0;
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 14px;
+	font-weight: normal;
+	color: #000000;
+}
+.thumb a {
+	color: #000000;
+	text-decoration: none;
+}
+.thumb a:visited {
+	color: #000000;
+	text-decoration: none;
+}
+.thumbleft {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 14px;
+	float: left;
+	text-align: left;
+	padding-left: 20px;
+}
+.thumbright {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 14px;
+	float: right;
+	text-align: right;
+	padding-right: 20px;
+}
+p {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 12px;
+}
+
+
+/* 
+	LEVEL ONE
+*/
+ul.dropdown                         { position: relative; }
+ul.dropdown li                      { font-weight: bold; float: left; zoom: 1; background: transparent; list-style-type: none;}
+ul.dropdown a:hover		            { color: #000; }
+ul.dropdown a:active                { color: #ffa500; }
+ul.dropdown li a                    { display: block; padding: 0px 11px; border-right: 1px solid #333;
+	 								  color: #222; }
+ul.dropdown li:last-child a         { border-right: none; } /* Doesn't work in IE */
+ul.dropdown li.hover,
+ul.dropdown li:hover                { background: transparent; color: red; position: relative; }
+ul.dropdown li.hover a              { color: black; }
+
+
+/* 
+	LEVEL TWO
+*/
+ul.dropdown ul 						{ width: 220px; visibility: hidden; position: absolute; top: 100%; left: 0; text-align: left; border-top: none;}
+ul.dropdown ul li 					{ font-weight: normal; background: transparent; color: #000; 
+									  }
+									  
+                                    /* IE 6 & 7 Needs Inline Block */
+ul.dropdown ul li a					{ border-right: none; width: 100%; display: inline-block; } 
+
+/* 
+	LEVEL THREE
+*/
+ul.dropdown ul ul 					{ left: 100%; top: 0; }
+ul.dropdown li:hover > ul 			{ visibility: visible; }
+
+
+#links #cat_list a{
+	font-size: 11px;
+	width: 85px;
+	padding: 5px;
+}
+
+.inline-block {
+   display: inline-block;
+   *display: inline;
+}
+.video-actions {
+   text-align: left;
+   display: inline-block;
+   *display: inline;
+}
+.reset {clear: both}
+
+.contener {
+	width:987px;
+	margin:  auto;
+
+}
+
+.embedInfo {
+   display: inline-block;
+   font-family: Arial, Helvetica, sans-serif;
+   font-size: 11px;
+   color: white;
+   width: 704px;
+}
+
+.embedInfo textarea {
+   width:100%;
+   resize: none;
+   overflow: hidden;
+}

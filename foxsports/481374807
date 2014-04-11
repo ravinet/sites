@@ -1,0 +1,64 @@
+PHTTP107.22.221.28"ã
+$GET /identity-services.js HTTP/1.1
+'Host: backplane1.janrainbackplane.com
+Connection: keep-alive
+Accept: */*
+vUser-Agent: Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/31.0.1650.63 Safari/537.36
+$Referer: http://msn.foxsports.com/
+$Accept-Encoding: gzip,deflate,sdch
+!Accept-Language: en-US,en;q=0.8
+
+*—
+HTTP/1.1 200 OK
+Accept-Ranges: bytes
+Content-Type: text/javascript
+%Date: Fri, 11 Apr 2014 20:36:23 GMT
+EC2-instance-id: i-0d9aa671
+ETag: W/"1464-1375288860000"
+.Last-Modified: Wed, 31 Jul 2013 16:41:00 GMT
+Server: Apache-Coyote/1.1
+'X-BP-Instance: BP1-BP_2_0.2013.26_RC2
+Content-Length: 1464
+Connection: keep-alive
+º
+/*
+ * Copyright 2011 Janrain, Inc.
+ *
+ * Licensed under the Apache License, Version 2.0 (the "License");
+ * you may not use this file except in compliance with the License.
+ * You may obtain a copy of the License at
+ *
+ *    http://www.apache.org/licenses/LICENSE-2.0
+ *
+ * Unless required by applicable law or agreed to in writing, software
+ * distributed under the License is distributed on an "AS IS" BASIS,
+ * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+ * See the License for the specific language governing permissions and
+ * limitations under the License.
+ */
+
+Backplane.identityServices = {};
+
+Backplane.identityServices.init = function(messages) {
+
+    var replayObjects = {};
+    for (var i = 0; i < messages.length; i++) {
+        if (messages[i].message.sticky && messages[i].message.sticky == true) {
+            if (typeof messages[i].message.payload.identities == "undefined") {
+                console.info("not an identity message");
+                continue;
+            }
+            var id = messages[i].message.payload.identities.entry.id;
+            if (messages[i].message.type == 'identity/logout') {
+                delete replayObjects["identity/login" + id];
+            } else {
+                replayObjects[messages[i].message.type + id] = messages[i];
+            }
+        }
+    }
+    var replay = [];
+    for (var j in replayObjects) {
+        replay.push(replayObjects[j]);
+    }
+    return replay;
+}

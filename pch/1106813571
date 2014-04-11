@@ -1,0 +1,181 @@
+PHTTP23.74.28.10"à
+WGET /modules/mod_pchcom_featured/assets/js/metagames.js?v=3.1.32.1.454-18308 HTTP/1.1
+Host: www.pch.com
+Connection: keep-alive
+Accept: */*
+vUser-Agent: Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/31.0.1650.63 Safari/537.36
+Referer: http://www.pch.com/
+$Accept-Encoding: gzip,deflate,sdch
+!Accept-Language: en-US,en;q=0.8
+bCookie: deb088d138aa52ddbeb48990e3e58a5e=k12m2f9f5ent563l9fgbgvu270; pdd=D; pci=n3qg5f4gGbPBKvNH
+
+*†<
+HTTP/1.1 200 OK
+Server: Apache
+.Last-Modified: Wed, 26 Feb 2014 22:11:37 GMT
+$ETag: "1204648-1cab-4f3567d041840"
+Accept-Ranges: bytes
+Content-Length: 7339
+GP3P: CP="CAO DSP COR CUR ADM DEV TAI PSA PSD IVA IVD CON OUR LEG UNI"
+Content-Type: text/javascript
+%Date: Tue, 08 Apr 2014 22:08:04 GMT
+Connection: keep-alive
+­9
+var METAGAME = METAGAME || {};
+METAGAME.clickTimer;
+METAGAME.doneClicking = 900;
+METAGAME.firstRun = true;
+METAGAME.looping = false;
+
+METAGAME.postScroll_cb = function(scrollIndex) {
+    if($("#mainimageholder div.imagediv").attr("id") == "allplayed"){
+
+    }
+    else if (!METAGAME.looping) {
+        var selectedMainImage = $($("#mainimageholder div.imagediv")[scrollIndex]);
+        selectedMainImage.hasClass("locked") || selectedMainImage.hasClass("played") ? $("#arrowholder").removeClass().addClass("grayarrow") : $("#arrowholder").removeClass().addClass("arrow" + scrollIndex);
+        if(!METAGAME.firstRun){
+            $("#mainimageholder div.imagediv").fadeOut();
+            selectedMainImage.fadeIn();
+        }
+        else if(METAGAME.firstRun){
+            METAGAME.firstRun = false;
+        }
+    }
+};
+
+METAGAME.clickFirstUnplayedGame = function() {
+    function sorter(a, b) {
+        return a.getAttribute('id').substring(3) - b.getAttribute('id').substring(3);
+    };
+    $($(".items_featuredarea .thumb_arrow_holder:not('.played')").toArray().sort(sorter)).eq(0).click();
+};
+
+METAGAME.progressBar = {
+    items: $(".thumb_arrow_holder"),
+    init: function(){
+        var progItem = {
+            current: 0,
+            ul:[ // ul[0] = $5,000 and ul[1] =  $10,000
+                { index: 0, elClass: [], template:"", unlocked:false, played:false },
+                { index: 0, elClass: [], template:"", unlocked:false, played:false }
+            ]
+        };
+        // read and store DOM data
+        METAGAME.progressBar.items.each(function(index) {
+            var $this = $(this);
+            if($this.has(".bonus").length){
+                progItem.ul[progItem.current].unlocked = $this.prev(METAGAME.progressBar.items).children(".thumbarrow").hasClass("unlocked"); // identify if the progress bar is "locked"
+                progItem.ul[progItem.current].played = $this.hasClass("played"); // identify if the progress bar is "played"
+                if(progItem.ul[progItem.current].played){progItem.ul[progItem.current].unlocked = false;}
+                if(progItem.current == 0) progItem.current = 1;
+            } else {
+                // build object for later use to create an element that mirrors corresponding ".thumb_arrow_holder"
+                progItem.ul[progItem.current].elClass.push($this.attr("id"));
+                if(progItem.ul[progItem.current].index == 0) progItem.ul[progItem.current].elClass[progItem.ul[progItem.current].index] += " first"; // add a first class
+                if($this.next(".thumb_arrow_holder").has(".bonus").length) progItem.ul[progItem.current].elClass[progItem.ul[progItem.current].index] += " last"; // add a last class
+                if($this.hasClass("selected")) progItem.ul[progItem.current].elClass[progItem.ul[progItem.current].index] += " active";
+                if($this.hasClass("played")) progItem.ul[progItem.current].elClass[progItem.ul[progItem.current].index] += " played";
+                progItem.ul[progItem.current].index++;
+            }
+        });
+        // loop through data, calculate widths, build progress bar element templates <ul>{{template}}</ul>
+        var buildProgBar = function(obj, el) {
+            var perc = 100 / obj.elClass.length;
+            for(var i = 0; i < obj.elClass.length; i++) { // build template
+                obj.template += '<li class="' + obj.elClass[i] + '" style="width:' + perc + '%"><span>' + parseInt(i + 1) + '</span></li>';
+            }
+            if(obj.unlocked == true) el.addClass("unlocked");
+            else if(obj.played == true) el.addClass("bonusplayed");
+            else el.addClass("locked");
+            el.append('<ul>' + obj.template + '</ul>');
+            setTimeout(function() { el.addClass("active"); }, 50); // fade it in
+        };
+        buildProgBar(progItem.ul[0], $("#progress_bonus .prog_left"));
+        buildProgBar(progItem.ul[1], $("#progress_bonus .prog_right"));
+    },
+    update : function(){
+        var selectedId = $(".thumb_arrow_holder.selected").attr("id");
+        $("#progress_bonus ul .active").removeClass("active");
+        $("#progress_bonus ul ." + selectedId).addClass("active");
+    }
+};
+METAGAME.progressBar.init();
+
+$(".scrollable_featuredarea").scrollable({
+    itemsPerFrame : 6,
+    circular : true,
+    onBeforeSeek : function(event, target) {
+        if (!METAGAME.looping) {
+            $(".items_featuredarea .thumb_arrow_holder").removeClass("selected");
+            $($(".items_featuredarea .thumb_arrow_holder")[target + 1]).addClass("selected");
+
+            if(!METAGAME.firstRun){
+                $("#arrow_animation #arrowholder").animate({
+                    top : "-20px"
+                });
+                clearTimeout(METAGAME.clickTimer);
+                METAGAME.clickTimer = setTimeout(function(){
+                    $("#arrow_animation #arrowholder").animate({
+                        top : "0px"
+                    });
+                }, METAGAME.doneClicking);
+            }
+        }
+    },
+    onSeek : function() {
+        METAGAME.postScroll_cb(this.getIndex());
+        METAGAME.progressBar.update();
+    },
+    activeClass : "active"
+});
+$(".cloned").removeClass("selected");$(".cloned img").removeClass("higherzindex");
+$(".items_featuredarea .thumb_arrow_holder:not('.selected')").live("click", function(e) {
+    var nextInLine = ($(".items_featuredarea .thumb_arrow_holder").index($(this))) - 1;
+    if (nextInLine > $(".scrollable_featuredarea").data("scrollable").getSize()) {
+        nextInLine = nextInLine - $(".scrollable_featuredarea").data("scrollable").getSize();
+        METAGAME.looping = true;
+        $(".scrollable_featuredarea").data("scrollable").seekTo(0, 0);
+        METAGAME.looping = false;
+    }
+    $(".scrollable_featuredarea").data("scrollable").seekTo(nextInLine);
+});
+
+//To allow any kind of source to land on the particular click
+if(PCH.gameClick){
+    METAGAME.firstRun = false;
+    $(".scrollable_featuredarea").data("scrollable").seekTo(PCH.gameClick);
+    $("#slidercontainer").addClass("showScroll");
+}
+else{
+    if(METAGAME.gameCompleteFlag){
+        $(".scrollable_featuredarea").data("scrollable").seekTo(METAGAME.gamePos,0);
+        METAGAME.firstRun = false;
+        $("#slidercontainer").addClass("showScroll");
+        setTimeout(function(){METAGAME.clickFirstUnplayedGame()},2000);
+    }
+    else if(METAGAME.normalOnloadFlag){
+        $(".scrollable_featuredarea").data("scrollable").seekTo(METAGAME.gamePos,0);
+        METAGAME.firstRun = false;
+        setTimeout(function(){$("#slidercontainer").addClass("showScroll")},2000);
+    }
+
+}
+
+//Now using PCH.uniExp.eventMgr.captureTracking() from data_click.js, which grabs all the anchor tag
+// ADDING EVENT DELEGATION HERE "PCH.uniExp.eventMgr" EVENT CAPTURE
+/*	$('#mainholder').delegate('div.imagediv a', 'click', function(e) {
+ // prevent Default
+ var target = $(e.currentTarget);
+ var container = target.parent();
+
+ if (!container.hasClass('locked') || !container.hasClass('played')) {
+ if (target.attr('onclick') || target.data('onclick')) {
+ e.preventDefault();
+ PCH.uniExp.eventMgr.captureTracking(target,false);
+ } else {
+ }
+ } else {
+ }
+
+ });*/

@@ -1,0 +1,43 @@
+PHTTP72.21.91.19"Î
+GET /container.js HTTP/1.1
+Host: edgecdn.cinesport.com
+Connection: keep-alive
+Accept: */*
+vUser-Agent: Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/31.0.1650.63 Safari/537.36
+!Referer: http://www.boston.com/
+$Accept-Encoding: gzip,deflate,sdch
+!Accept-Language: en-US,en;q=0.8
+
+*§
+HTTP/1.1 200 OK
+Accept-Ranges: bytes
+&Content-Type: application/javascript
+%Date: Fri, 11 Apr 2014 19:13:41 GMT
+*Etag: "247de27a9540d577fdc6123680bcd2ac"
+.Last-Modified: Thu, 27 Mar 2014 07:55:33 GMT
+Server: ECS (ord/4C9F)
+Nx-amz-id-2: /m78n4WOx9YGsUm1LVfxrbd1LwhW15ToN2muCWgNxgj8zhqCotK574QVHvO8k/Ml
+$x-amz-request-id: 121765786D9D587E
+X-Cache: HIT
+Content-Length: 661
+—
+//alert the csprt iframe of an orientation change event
+window.onorientationchange = function() {
+	
+	//landscape vs portrait
+	var event_message = '';
+	if (window.innerWidth > window.innerHeight)
+		event_message = 'onorientationchange_landscape';
+	if (window.innerWidth < window.innerHeight)
+		event_message = 'onorientationchange_portrait';
+
+	var inline_iframe = document.getElementById('inline-csprt');
+	if (inline_iframe) {
+		inline_iframe.contentWindow.postMessage(event_message,inline_iframe.src);
+	}
+	var rail_iframe = document.getElementById('rail-csprt');
+	if (rail_iframe) {
+		rail_iframe.contentWindow.postMessage(event_message,rail_iframe.src);
+	}
+}
+

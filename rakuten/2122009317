@@ -1,0 +1,97 @@
+PHTTP208.71.122.27"Î
+vGET /RealMedia/ads/adstream_jx.ads/rakuten.com/homepage/undefined@Top,Position2,x70!x70?_RM_OAX_REDIR_&null HTTP/1.1
+Host: oascentral.rakuten.com
+Connection: keep-alive
+Accept: */*
+vUser-Agent: Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/31.0.1650.63 Safari/537.36
+oReferer: http://www.rakuten.com/ads_iframe.asp?oassite=rakuten.com/homepage&pagepos=Top,Position2,x70&pos=x70
+$Accept-Encoding: gzip,deflate,sdch
+!Accept-Language: en-US,en;q=0.8
+ÔCookie: BrowserOS=Linux; BrowserClient=Mozilla; mbox=check#true#1396995451|session#1396995390782-699849#1396997251|PC#1396995390782-699849.25_51#1398204991; __utma=23342629.1862817952.1396995391.1396995391.1396995391.1; __utmb=23342629.1.10.1396995391; __utmc=23342629; __utmz=23342629.1396995391.1.1.utmcsr=(direct)|utmccn=(direct)|utmcmd=(none); s_cc=true; s_sq=%5B%5BB%5D%5D; OAX=se0QwlNEdT8AAVXK; NSC_d12efm_qppm_iuuq=ffffffff09419e4445525d5f4f58455e445a4a423660
+
+*¢
+HTTP/1.1 200 OK
+%Date: Tue, 08 Apr 2014 22:16:31 GMT
+ Server: Apache/2.2.3 (Red Hat)
+NP3P: CP="NON NID PSAa PSDa OUR IND UNI COM NAV STA",policyref="/w3c/p3p.xml"
+Pragma: no-cache
+(Expires: Fri, 30 Oct 1998 14:19:41 GMT
+*Cache-Control: no-cache,no-store,private
+Content-Length: 3473
+Keep-Alive: timeout=60
+Connection: Keep-Alive
+(Content-Type: application/x-javascript
+“
+document.write ('<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">\n');
+document.write ('<LINK rel="Stylesheet" type="text/css" media="screen" href="http://ak.buy.com/buy_assets/styles/all_noreset.css?v24">\n');
+document.write ('<SCRIPT type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.6.2/jquery.min.js"></SCRIPT>\n');
+document.write ('<SCRIPT type="text/javascript">document.domain = ');
+document.write ("'");
+document.write ('rakuten.com');
+document.write ("'");
+document.write (';\n');
+document.write ('                window.onload = function () {\n');
+document.write ('                                window.parent.$(');
+document.write ("'");
+document.write ('#HeaderAd');
+document.write ("'");
+document.write (').css({ minHeight: ');
+document.write ("'");
+document.write ('34px');
+document.write ("'");
+document.write (', width: ');
+document.write ("'");
+document.write ('1000px');
+document.write ("'");
+document.write (', height: ');
+document.write ("'");
+document.write ('34px');
+document.write ("'");
+document.write (' });\n');
+document.write ('                                window.parent.$(');
+document.write ("'");
+document.write ('.header-ad-frame');
+document.write ("'");
+document.write (').css({ ');
+document.write ("'");
+document.write ('margin-bottom');
+document.write ("'");
+document.write (': ');
+document.write ("'");
+document.write ('10px');
+document.write ("'");
+document.write (' });\n');
+document.write ('                                $(');
+document.write ("'");
+document.write ('.open-close');
+document.write ("'");
+document.write (').click(function () {\n');
+document.write ('                                               $(');
+document.write ("'");
+document.write ('.block');
+document.write ("'");
+document.write (').toggle();\n');
+document.write ('                                                var contentHeight = $(".holder-info-ad").outerHeight();\n');
+document.write ('                                                window.parent.$(');
+document.write ("'");
+document.write ('#HeaderAd');
+document.write ("'");
+document.write (').animate({ height: contentHeight + ');
+document.write ("'");
+document.write ('px');
+document.write ("'");
+document.write (' }, 500);\n');
+document.write ('                                });\n');
+document.write ('                };\n');
+document.write ('</SCRIPT>\n');
+document.write ('               <DIV class="holder-info-ad">\n');
+document.write ('                              <DIV class="slide-block-ad">\n');
+document.write ('                                             <DIV class="title" style="padding-left:0px; cursor:pointer;"><a HREF="http://oascentral.rakuten.com/RealMedia/ads/click_lx.ads/rakuten.com/homepage/undefined/L20/1517209071/x70/Buy/Rakuten_RakCard_1000x34/1000x34_Rakuten_RakCard.html/73653051776c4e45645438414156584b?\n');
+document.write ('https://secure.rakuten.com/ac/Rakutencard.aspx?sub_agent_code=101&omadtrack=RakutenCard_wb_101" target="_top"><IMG width="1000" \n');
+document.write ('\n');
+document.write ('height="34" src="http://images.rakuten.com/buy_assets/adserver/rakcard/1000x34__rakutencard.gif" alt="savings"/></A></a>\n');
+document.write ('                                             </DIV>\n');
+document.write ('                                            \n');
+document.write ('               </DIV>\n');
+document.write ('\n');
+document.write ('      </DIV>');

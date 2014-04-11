@@ -1,0 +1,108 @@
+PHTTP72.21.91.19"®
+eGET /ct/creative_add_on.js?w=728&h=90&pos=top-right&zindex=0&ci=0CHWe6oBvL&ei=RUBICON&ob=1 HTTP/1.1
+Host: cti.w55c.net
+Connection: keep-alive
+Accept: */*
+vUser-Agent: Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/31.0.1650.63 Safari/537.36
+…Referer: http://cdn.w55c.net/i/0RFLnwwMgQ_386176436.html?&rtbhost=rtb01-c.us.dataxu.net&btid=YWY1M2NjNzgyNDQzMWFjNjg1ZTg3ZTM2ODg3MzQ1MGQyYzhlYzhiY3xSRlRLbW5ib0pIfDEzOTY5OTI4MjY5MjR8MXwwRnk3WTdtQVZ0fDBSRkxud3dNZ1F8OTU0ZTE5ZWUtOTI1Mi00MWZkLTkxMDgtZWVjYzhhYjgzNmNhfDEwMDAwMDB8fHx8MTIuMFB8VVNE&ei=RUBICON&wp_exchange=015F7D5E84B1FE23&js=0&ob=1&ccw=SUFCMTIjMC4wfElBQlgzMSMxLjA&ci=0CHWe6oBvL&s=http%3A%2F%2Fcbslocal.com%2F&ts=1396992826944&tpce=&c=US&r=MA&m=506&pc=02139&rnd=6654054148721587&epid=UkI4Nzk5&esid=UkIxNzk4NQ&ct=b1cca87ae82e40c7b29b2c3e67e2cd5a&l=fGVufA&v=2&euid=NWM1NGRhNjhkM2U2MzA2NjY3ZWM1ZTllYWZkZjg2MWU3M2IyNGUwZg&fiu=MEZ5N1k3bUFWdA
+$Accept-Encoding: gzip,deflate,sdch
+!Accept-Language: en-US,en;q=0.8
+9Cookie: wfivefivec=4fbb0225-c034-4647-923e-46f67795c8f4
+
+*³
+HTTP/1.1 200 OK
+Accept-Ranges: bytes
+*Cache-Control: no-cache, must-revalidate
+Content-Type: text/javascript
+%Date: Tue, 08 Apr 2014 21:33:47 GMT
+Etag: "500119579"
+(Expires: Fri, 01 Jan 1990 00:00:00 GMT
+.Last-Modified: Tue, 06 Sep 2011 18:49:28 GMT
+xP3P: policyref="https://cts.w55c.net/ct/p3p_policy_ref.xml", CP="UNI PUR COM INT STA OTC STP OUR CUR TAIo COR DSP NOI"
+Pragma: no-cache
+Server: ECS (lax/45C8)
+X-Cache: HIT
+Content-Length: 2384
+Ò
+/**
+ * @author nforman
+ */
+
+(function() {
+  var script_tag = dx_find_my_script_tag();
+  var params_hash = dx_get_param_hash_from_element(script_tag);
+  
+  var oba_tag = dx_new_oba_tag(params_hash);
+  if (oba_tag) {
+    document.write(oba_tag);
+  }
+  
+  var cookie_match = dx_new_cookie_match_tag(params_hash);
+  if (cookie_match) {
+    document.write(cookie_match);
+  }
+})();
+
+function dx_new_oba_tag(params_hash) {
+  // no defaulting required params: if not present, do not add tag
+  if (!params_hash['w'] || !params_hash['h'] || !params_hash['pos'] || !params_hash['ci'] || !params_hash['ei'] || !params_hash['ob']) {
+    return;
+  }
+  if (params_hash['ob'] == '0') {
+    return;
+  }
+  var src = '<scr'+'ipt type="text/javascript" src="http://c.betrad.com/surly.js?;coid=292;nid=2532';
+  src = src + ';ad_w=' + params_hash['w'];
+  src = src + ';ad_h=' + params_hash['h'];
+  src = src + ';position=' + params_hash['pos'];
+  src = src + ';ecaid=' + params_hash['ci'];
+  if (params_hash['z-index']) {
+    src = src + ';ad_z=' + params_hash['z-index'];
+  }
+  src = src + '"></scr'+'ipt>'
+  return src;
+}
+
+function dx_new_cookie_match_tag(params_hash) {
+  // no defaulting required params: if not present, do not add tag
+  if (!params_hash['ei']) {
+    return;
+  }
+  return '<iframe width="0" height="0" border="0" frameborder="0" src="http://cti.w55c.net/ct/cms-2c.html?ei='+params_hash['ei']+'" style="display:none;" ></iframe>';
+}
+
+function dx_get_param_hash_from_element(element) {
+  var src = element.getAttribute('src');
+  return dx_get_param_hash_from_url(src);
+}
+
+function dx_get_param_hash_from_url(src) {
+  if (!src) {
+    return {};
+  }
+  var retvalue = {};
+  var src_split = src.split('?');
+  if (src_split && (src_split.length > 1)) {
+    var query_string = src_split[1];
+    var query_pairs = query_string.split('&');
+    if (query_pairs) {
+      for (var i=0; i<query_pairs.length; i++) {
+        var name_value = query_pairs[i].split('=');
+        if (name_value && (name_value.length >= 2)) {
+          retvalue[name_value[0]] = name_value[1];
+        }
+      }
+    }
+  }
+  return retvalue;
+}
+
+/**
+ * Contract: must only be called while the page is loading.
+ * Found at http://feather.elektrum.org/book/src.html.
+ */
+function dx_find_my_script_tag() {
+  var scripts = document.getElementsByTagName('script');
+  var index = scripts.length - 1;
+  return scripts[index];
+}

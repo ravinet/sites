@@ -1,0 +1,27 @@
+PHTTP54.243.61.166"å
+#GET /images/slider-2.png HTTP/1.1
+Host: www.directrev.com
+Connection: keep-alive
+Accept: image/webp,*/*;q=0.8
+vUser-Agent: Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/31.0.1650.63 Safari/537.36
+$Referer: http://www.directrev.com/
+$Accept-Encoding: gzip,deflate,sdch
+!Accept-Language: en-US,en;q=0.8
+
+*ï
+HTTP/1.1 404 Not Found
+%Date: Tue, 08 Apr 2014 21:38:56 GMT
+ Server: Apache/2.2.23 (Amazon)
+Content-Length: 300
+Connection: close
+-Content-Type: text/html; charset=iso-8859-1
+®
+<!DOCTYPE HTML PUBLIC "-//IETF//DTD HTML 2.0//EN">
+<html><head>
+<title>404 Not Found</title>
+</head><body>
+<h1>Not Found</h1>
+<p>The requested URL /images/slider-2.png was not found on this server.</p>
+<hr>
+<address>Apache/2.2.23 (Amazon) Server at www.directrev.com Port 80</address>
+</body></html>

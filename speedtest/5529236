@@ -1,0 +1,25 @@
+PHTTP12.130.81.218"ú
+9GET /adscgen/dv_uid.php?callback=dv_processuid HTTP/1.1
+Host: amch.questionmarket.com
+Connection: keep-alive
+Accept: */*
+vUser-Agent: Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/31.0.1650.63 Safari/537.36
+$Accept-Encoding: gzip,deflate,sdch
+!Accept-Language: en-US,en;q=0.8
+PCookie: GP=adver_id%3D3E58CD07-1448-4E12-8D53-A304E3AE5619; ES=1120128-u8fXO-0
+
+*ù
+HTTP/1.1 200 OK
+%Date: Tue, 08 Apr 2014 22:25:44 GMT
+(Expires: Mon, 26 Jul 1997 05:00:00 GMT
+*Cache-Control: no-cache, must-revalidate
+Pragma: no-cache
+äP3P: CP="ALL DSP COR PSAa PSDa OUR IND COM NAV INT LOC OTC", policyref="http://ch.questionmarket.com/w3c/audit2007/p3p_DynamicLogic.xml"
+X-Host: a107 D=200
+Vary: Accept-Encoding
+Content-Length: 65
+Keep-Alive: timeout=6, max=1
+Connection: Keep-Alive
+&Content-Type: application/javascript
+C
+dv_processuid({"UserID":"3E58CD07-1448-4E12-8D53-A304E3AE5619"});

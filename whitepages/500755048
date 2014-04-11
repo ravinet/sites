@@ -1,0 +1,182 @@
+PHTTP38.127.70.131"û
+?GET /invitations/invitationsJS/117/s117817/1_wVal.js HTTP/1.1
+#Host: ips-invite.iperceptions.com
+Connection: keep-alive
+Accept: */*
+vUser-Agent: Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/31.0.1650.63 Safari/537.36
+%Referer: http://www.whitepages.com/
+$Accept-Encoding: gzip,deflate,sdch
+!Accept-Language: en-US,en;q=0.8
+
+*ÞW
+HTTP/1.1 200 OK
+Cache-Control: no-cache
+(Content-Type: application/x-javascript
+(Expires: Thu, 01 Jan 1970 00:00:00 GMT
+.Last-Modified: Thu, 20 Feb 2014 23:29:54 GMT
+Accept-Ranges: bytes
+ETag: "f82ed1a8932ecf1:0"
+Server: Microsoft-IIS/7.0
+X-Powered-By: ASP.NET
+X-Svr-By: IPS-SAAS00003
+MP3P: policyref="/w3c/p3p.xml", CP="NOI NID ADM DEV PSA OUR IND UNI COM STA"
+%Date: Tue, 08 Apr 2014 22:38:24 GMT
+Connection: close
+Content-Length: 10749
+ÿS
+var ids = 0; var m = 3; var left = 0; var height = screen.height; var width = screen.width;
+var IPEpID = '1';
+var IPEhttp = document.location.protocol;
+var _invite = "ips-invite";
+var IPEreferrer = escape(document.location);
+if (rF == 'True') {
+    var objects = document.getElementsByTagName('object'); ids = objects.length;
+    if (brow == "IE" && vers < 7) m = 4;
+    for (var j = 0; j < m; j++) {
+        for (var i = 0; i < objects.length; i++) {
+            var obj = objects[i];
+            if (brow == "AppleMAC-Safari") { obj.style.width = "0px"; obj.style.height = "0px"; obj.style.border = "0px"; }
+            else { obj.style.display = "none"; obj.style.visibility = "hidden"; }
+        }
+        if (j == 0) { objects = document.getElementsByTagName('embed'); } else if (j == 1) { objects = document.getElementsByTagName('iframe'); } else if (j == 2) { objects = document.getElementsByTagName('select'); } ids += objects.length;
+    }
+}
+var cURL = document.domain;
+function chDisp(id1, id2) { id1.style.display = "none"; id2.style.display = ""; }
+
+function clWin() {
+    if (ids > 0) {
+        location.reload(true); 
+    };
+    var vL= document.getElementById("IPEinvL").style; 
+        vL.visibility= "hidden";
+        vL.display= "none"; 
+        document.getElementById("IPEbgCover").style.display= "none";
+    if (window.removeEventListener) { 
+        window.removeEventListener("resize", ipeSetPos, true); 
+        window.removeEventListener("scroll", ipeSetPos, true);}
+    else if (window.attachEvent) { 
+        window.detachEvent("onresize", ipeSetPos); 
+        window.detachEvent("onscroll", ipeSetPos);
+    }
+}
+
+function fOpen(){
+    var url= IPEhttp + "//ips-collect.iperceptions.com/secondInvitation/survey" + lID + ".html?" + ps + "&rn=" + sID + "&pID=" + IPEpID + "&referrer=" + IPEreferrer + "&res=" + screen.width + "x" + screen.height ;
+    if (sGA) {
+        url = setupGA(url);
+    }
+    var leftsize = width - 370 - 100;
+    var topsize = height - 400 - 150;
+    var winHdle = window.open(url, "iperceptions", "width=370, height=400, left=" + leftsize + ", top=" + topsize + ", resizable=no, toolbar=no, location=no, directories=no, status=no, menubar=no, scrollbars=yes, resizable=no, copyhistory=no");
+    clWin();
+}
+
+var winW = 0, winH = 0; var divW = 400, divH = 489;
+if (typeof (window.innerWidth) == 'number') { winW = window.innerWidth; winH = window.innerHeight; }
+else if (document.documentElement && document.documentElement.clientWidth) { winW = document.documentElement.clientWidth; winH = document.documentElement.clientHeight; }
+else if (document.body && document.body.clientWidth) { winW = document.body.clientWidth; winH = document.body.clientHeight; }
+var sdwW = Math.max(screen.width - 24, winW); var sdwH = Math.max(document.body.scrollHeight, winH);
+if (brow == "IE") sdwH += 10;  
+if (divW > winW) divW = winW; if (divH > winH) divH = winH;
+winW = parseInt((winW - divW) / 2); winH = parseInt((winH - divH) / 2);
+var sdw = '<div id="IPEbgCover" style="position: absolute; left: 0px; top: 0px; display: block; z-index: 9000; background-color: black; width: ' + sdwW + 'px; height: ' + sdwH + 'px;';
+if (brow == "IE") { sdw = sdw + ' opacity: 0.50; filter: progid:DXImageTransform.Microsoft.Alpha(opacity=50);'; }
+else { sdw = sdw + ' opacity: 0.50;';}
+sdw = sdw + '"></div>';
+
+var page = '<div id="IPEinvL" style="line-height:15px;z-index: 10000; width: 400px; left: ' + winW + 'px; top: ' + winH + 'px; background-color: white; position: absolute; margin: 0px; border: 0px; font-family:Arial; text-align: left; color: Black; font-size: 11px;">' +
+'<div style="background-color:#ffffff;width: 400px; height: 80px;"><div style="width: 199px; height: 64px; float: left; margin-top: 8px; padding-left: 22px;">' +
+'<img src="' + IPEhttp + '//' + _invite + '.iperceptions.com/uploads/wValLogos/' + Math.floor(sID / 1000) + '/logo' + sID + '_' + lID + '.jpg" alt="logo" style="float: left; border: 0px;" /></div>' +
+'<div style="float: right; margin-right: 4px; padding-top: 3px;">' +
+'<img id="bOn" name="bOn" src="' + IPEhttp + '//' + _invite + '.iperceptions.com/images/templates/Layer/theme1/close_over.png" alt="Close" style="display: none; border: 0px;" onclick="javascript:clWin()" onmouseout="chDisp(bOn, bOff)" />' +
+'<img id="bOff" name="bOff" src="' + IPEhttp + '//' + _invite + '.iperceptions.com/images/templates/Layer/theme1/close.png" alt="Close" style="border: 0px;" onclick="javascript:clWin()" onmouseover="chDisp(bOff, bOn)" /></div></div>' +
+'<div id="IPEThemeBG" style="background-color:white;">' +
+'<img src="' + IPEhttp + '//' + _invite + '.iperceptions.com/images/templates/Layer/theme1/line.png" width="400px" height="23px" alt="" style="margin-left: 0px; border: 0px;" />' +
+'<div style="padding-left: 25px; padding-right: 15px;">' +
+'<div style="font-size:18px;width:100%;line-height:100%;"><b>Welcome!</b></div>' +
+'<div style="line-height: 25px;">&nbsp;</div>' +
+'<div style="font-size:14px;width:100%;line-height:100%;"><b>Your opinion is important to us.</b></div><div style="line-height: 4px;">&nbsp;</div>' +
+'<div style="font-size:12px;width:100%;line-height:110%;">After your visit, would you take a moment to answer a few simple questions about your experience? This will help us improve our website.</div>' +
+'<div style="line-height: 25px;">&nbsp;</div>' +
+'<div style="font-size:14px;width:100%;line-height:100%;"><b>It is easy to participate:</b></div><div style="line-height: 4px;">&nbsp;</div>' +
+'<div style="font-size:12px;width:100%;line-height:110%;">Click the "Yes" button below to continue your visit as intended. When done, retrieve the window remaining on your desktop and complete the brief questionnaire.</div>' +
+'<div style="line-height: 20px;">&nbsp;</div>' +
+'<div style="font-size:14px;width:100%;line-height:100%;font-weight:bold;font-weight:bold;">Thank you for your help!</div>' +
+'<div style="line-height: 20px;">&nbsp;</div><div style="height: 26px;margin-left: 80px;"><div style="float: left;">' +
+'<a  onclick="javascript:fOpen();" >' +
+'<img id="yOff" name="yOff" src="' + IPEhttp + '//' + _invite + '.iperceptions.com/images/templates/Layer/theme1/yes_' + lID + '.png" Width="90" Height="38" style="max-width:90px;border: 0px;"  /></a></div>' +
+'<div style="float: left;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</div>' +
+'<div style="float: left;"><a  onclick="javascript:clWin()">' +
+'<img id="nOff" name="nOff" src="' + IPEhttp + '//' + _invite + '.iperceptions.com/images/templates/Layer/theme1/no_' + lID + '.png" Width="90" Height="38" style="max-width:90px;border: 0px;"  /></a></div>' +
+'</div>' +
+'<div style="width:100%;  ">' +
+'<div style="line-height: 20px;width:100%;  ">&nbsp;</div>' +
+'<div style="float: left;width:240px;margin-top: 5px;background-color:white;"></div>' +
+'<div style="float: right;background-color:white;width:220px;text-align:right;">' +
+'<a href="http://privacy-policy.truste.com/click-with-confidence/ctv/en/www.iperceptions.com" target="_blank" style="border: 0px;margin-right: 3px"><img src="' + IPEhttp + '//' + _invite + '.iperceptions.com/images/templates/Layer/theme1/truste_logo' + IPEpID + '.jpg" id="trusteLogo" width="90" height="28" style="border: 0px;" alt="" /></a>' +
+'<a href="http://www.iperceptions.com/?utm_source=link&utm_medium=survey&utm_campaign=logo" target="_blank"><img src="' + IPEhttp + '//' + _invite + '.iperceptions.com/images/templates/Layer/theme1/pIDlogo' + IPEpID + '_iperc.png" id="ipLogo" width="120" height="22" style="margin:0px; border: 0px;" alt="" /></a>' +
+'<br /><span style="margin:0px; border:0px; font-size: 10px;">iPerceptions</span> <a href="http://www.iperceptions.com/en/privacy-policy" target="_blank" style="text-decoration:none; margin:0px; border:0px; font-size: 10px;">Privacy Policy</a>' +
+'</div>' +
+'<div style="line-height: 8px;">&nbsp;</div></div>' +
+'<img id="countInvites" src="' + IPEhttp + '//IPS-IMG.iperceptions.com/Counter/counter_N.png?surveyID=' + sID + '&siteID=1&langID=' + lID + '&traceID=2" width="0" height="0" style="border: 0px; margin-top: -10px;" alt="" />' +
+'</div>'
+var doc = document;
+if (brow == "IE" && vers < 10) { doc.body.insertAdjacentHTML("beforeEnd", sdw + page ); }
+else {
+    var dL = doc.createElement("div"); dL.id = "ipeL"; dL.innerHTML = sdw + page; doc.body.appendChild(dL);
+}
+if (brow == "IE") document.getElementById('IPEbgCover').style.marginTop = "-10px";
+
+if (window.addEventListener) {
+    window.addEventListener('resize', ipeSetPos, true);
+    window.addEventListener('scroll', ipeSetPos, true);
+} else if (window.attachEvent) {
+    window.attachEvent('onresize', ipeSetPos);
+    window.attachEvent('onscroll', ipeSetPos);
+}
+
+function ipeSetPos() {
+    divW = 400; divH = 489;
+    var viewsize = ipeViewSize();
+    winW = viewsize[0]; winH = viewsize[1];
+    sdwW = Math.max(screen.width - 24, winW); sdwH = Math.max(document.body.scrollHeight, winH);
+    if (brow == "IE") sdwH += 10;
+    winW = parseInt((winW - divW) / 2); winH = parseInt((winH - divH) / 2);
+    var offset = ipeScrollOffset();
+    var page = document.getElementById('IPEinvL');
+    if (winW >= 0) page.style.left = (offset[0] + winW) + 'px'; if (winH >= 0) page.style.top = (offset[1] + winH) + 'px';
+    var sdw = document.getElementById('IPEbgCover');
+    sdw.style.width = sdwW + 'px';
+    sdw.style.height = sdwH + 'px';
+}
+
+function ipeScrollOffset() {
+    var left = 0, top = 0;
+    if (typeof (window.pageYOffset) == 'number') {
+        top = window.pageYOffset;
+        left = window.pageXOffset;
+    } else if (document.body && (document.body.scrollLeft || document.body.scrollTop)) {
+        top = document.body.scrollTop;
+        left = document.body.scrollLeft;
+    } else if (document.documentElement && (document.documentElement.scrollLeft || document.documentElement.scrollTop)) {
+        top = document.documentElement.scrollTop;
+        left = document.documentElement.scrollLeft;
+    }
+    return [left, top];
+}
+
+function ipeViewSize() {
+    var width = 0, myHeight = 0;
+    if (typeof (window.innerWidth) == 'number') {
+        width = window.innerWidth;
+        height = window.innerHeight;
+    } else if (document.documentElement && (document.documentElement.clientWidth || document.documentElement.clientHeight)) {
+        width = document.documentElement.clientWidth;
+        height = document.documentElement.clientHeight;
+    } else if (document.body && (document.body.clientWidth || document.body.clientHeight)) {
+        width = document.body.clientWidth;
+        height = document.body.clientHeight;
+    }
+    return [width, height];
+}

@@ -1,0 +1,396 @@
+PHTTP23.74.28.10"ó
+QGET /modules/mod_pch_sso/assets/js/SsoLightbox.js?v=3.1.32.1.454-18308 HTTP/1.1
+Host: www.pch.com
+Connection: keep-alive
+Accept: */*
+vUser-Agent: Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/31.0.1650.63 Safari/537.36
+Referer: http://www.pch.com/
+$Accept-Encoding: gzip,deflate,sdch
+!Accept-Language: en-US,en;q=0.8
+úCookie: deb088d138aa52ddbeb48990e3e58a5e=k12m2f9f5ent563l9fgbgvu270; pdd=D; pci=n3qg5f4gGbPBKvNH; __utma=102336542.1157406824.1396994885.1396994885.1396994885.1; __utmb=102336542.1.10.1396994885; __utmc=102336542; __utmz=102336542.1396994885.1.1.utmcsr=(direct)|utmccn=(direct)|utmcmd=(none); _at_id.pch.production.a1c9=b2baeaeffd6ee36d.1396994885.1.1396994885.1396994885.0.0.
+
+*£Š
+HTTP/1.1 200 OK
+Server: Apache
+.Last-Modified: Wed, 04 Dec 2013 19:11:36 GMT
+#ETag: "a1123a-43c7-4ecba2e8e6a00"
+Accept-Ranges: bytes
+Content-Length: 17351
+GP3P: CP="CAO DSP COR CUR ADM DEV TAI PSA PSD IVA IVD CON OUR LEG UNI"
+Content-Type: text/javascript
+%Date: Tue, 08 Apr 2014 22:08:04 GMT
+Connection: keep-alive
+É‡
+
+/*
+
+    PCH.SsoLightbox.open( {
+        titleText: "There is no one who loves pain itself",
+        bodyCopy: "<p>It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout.</p><p>The standard chunk of Lorem Ipsum used since the 1500s is reproduced below for those interested.</p>",
+        button: { type: "submit", callBack: function( e ) { console.log( "signin" ); PCH.SsoLightbox.close(); } },
+        fields: [ { label: "Email", type: "text", classy: "email", value: "email" }, { label: "Confirm Password", type: "password", classy: "password", value: "password" } ],
+        notYou: function( e ) { console.log( "not you" ); },
+        keepMeSignedIn: "remember",
+        forgotPassword: function( e ) { console.log( "forgot" ); },
+        optin: [ { type: "lotto", copy: "Yes! Please inform me of special PCHlotto drawings, contests and events via email." }, { type: "slots", copy: "Yes! Please inform me of special PCHslots drawings, contests and events via email." } ],
+        goRegister: "link/register.html",
+        policy: "link/privacy.html",
+        swRulesAndFacts: [ { copy: "Official Rules", link: "http://www.apple.com" }, { copy: "Sweepstakes Facts", link: "http://www.google.com" } ],
+        propSprite: true,
+        noMoLightbox: { classy: "no-mo", copy: "Click here to hide this message in the future.<br />Please refer to \"Token History\" under \"My Account\" for future token transaction details.", checked: true, callBack: function( e ) { console.log( "NO MO" ); } },
+        onClose: function( e ) { console.log( "lightbox closed" ); }                
+    } );
+
+    titleText: ( required ) this is the title text at the top of the lightbox, don't make it too long or it will wrap
+    bodyCopy: ( required ) this is the body copy under the title, must be valid HTML
+    button: ( optional ) this is first the button type which chooses the graphics for the button and then the callback after the button is clicked
+    fields: ( optional ) an array of field configs you can pass the label name the input type and the value in the field
+    notYou: ( optional ) the existance of a callback here will make the not you link and text appear and apply a callback to it
+    keepMeSignedIn: ( optional ) pass this a string which will assign a class to the element and also make it appear
+    forgotPassword: ( optional ) pass a callBack and it will appear and call the callBack on click
+    optin: ( optional ) an array of optin, type will be the class applied and the copy will come from the copy config
+    goRegister: ( optional ) a link to where the go reg section will go, also this param will make the section appear
+    policy: ( optional ) a link to where the go privact policy will go, also this param will make the link appear
+
+
+*/
+
+$( document ).ready( function() {
+
+    var win = window,
+        doc = win.document,
+        bd = doc.getElementsByTagName( "body" )[ 0 ],
+        lb = {},
+        ssoLightbox,
+        $ssoLightbox,
+        box,
+        $box,
+        innerBox,
+        lbNum = 0;
+    
+    function createContent( cfg ) {
+        var frag = doc.createDocumentFragment(),
+            tempNode,
+            title = createElm( "div", "title" ),
+            copy = createElm( "div", "copy" ),
+            fields = createElm( "div", "fields" );
+            
+        title.innerHTML = cfg.titleText;
+        copy.innerHTML = cfg.bodyCopy;
+        frag.appendChild( title );
+        frag.appendChild( copy );
+        frag.appendChild( fields );
+        if( cfg.fields !== undefined ) {
+            /*var temp = "";
+            //<label for="">Password:</label>
+            //<input type="text" class="" name="" />
+            for( var f = 0, fl = cfg.fields.length; f < fl; f += 1 ) {
+                temp += "<label for=\"" + cfg.fields[ f ].classy + "\">" + cfg.fields[ f ].label + ":</label><input type=\"" + cfg.fields[ f ].type + "\" class=\"" + cfg.fields[ f ].classy + "\" name=\"" + cfg.fields[ f ].classy + "\"/>";
+            }
+            fields.innerHTML = temp;*/
+            for( var f = 0, fl = cfg.fields.length; f < fl; f += 1 ) {
+                tempNode = createElm( "label" );
+                tempNode.setAttribute( "for", cfg.fields[ f ].classy );
+                tempNode.innerHTML = cfg.fields[ f ].label;
+                fields.appendChild( tempNode );
+                tempNode = createElm( "input", cfg.fields[ f ].classy );
+                tempNode.setAttribute( "type", cfg.fields[ f ].type );
+                tempNode.setAttribute( "name", cfg.fields[ f ].classy );
+                tempNode.setAttribute( "value", cfg.fields[ f ].value );
+                if( cfg.fields[ f ].disabled ) {
+                    tempNode.setAttribute( "disabled", cfg.fields[ f ].disabled );
+                }
+                tempNode.onkeydown = function( e ) {
+                    var evt = window.event || e,
+                        key = ( evt.keyCode ) ? evt.keyCode : evt.charCode;
+                        
+                    if( key === 13 ) {
+                        cfg.button.callBack( e );
+                    }
+                };
+                fields.appendChild( tempNode );
+            }
+            if( cfg.keepMeSignedIn || cfg.notYou || cfg.forgotPassword ) {
+                var tempStr = "",
+                    flag,
+                    options = createElm( "div", "options" );
+                    
+                if( typeof cfg.keepMeSignedIn === "object" ) {
+                    var keep = createElm( "input", cfg.keepMeSignedIn.classy ),
+                    	br2 = createElm( "br" ),
+                        keepText = doc.createTextNode( " Keep me signed in. " );
+                        
+                    keep.setAttribute( "type" , "checkbox" );
+                    //tempStr += "<input type=\"checkbox\" class=\"\" /> Keep me signed in. ";
+                    options.appendChild( keep );
+                    options.appendChild( keepText );
+                    options.appendChild( br2 );
+                    if( cfg.keepMeSignedIn.checked ) {
+                        keep.setAttribute( "checked", "checked" );
+                        //keep.checked = "checked";
+                    }
+                    flag = true;
+                }
+                if( typeof cfg.notYou === "function" ) {
+                    var notU = createElm( "a" ),
+                        notUtext = doc.createTextNode( "Not you? " );
+                        
+                    notU.setAttribute( "href", "#" );
+                    notU.setAttribute( "onclick", "return false;" );
+                    notU.innerHTML = "Click here";
+                    notU.onmouseup = function( e ) { cfg.notYou( e ); return false; };
+                    //tempStr += "Not you? <a href=\"\">Click here</a>.";
+                    options.appendChild( notUtext );
+                    options.appendChild( notU );
+                    flag = true;
+                }
+                if( typeof cfg.forgotPassword === "function" ) {
+                    //if( flag ) { tempStr += "<br />"; };
+                    if( flag ) {
+                        var br = createElm( "br" );
+                        options.appendChild( br );
+                    }
+                    //tempStr += "Forgot your password? <a href=\"\">Click here</a>";
+                    var forgot = createElm( "a" ),
+                        forgotText = doc.createTextNode( "Forgot or need to reset your password? " );
+                        
+                    forgot.setAttribute( "href", "#" );
+                    forgot.innerHTML = "Click here";
+                    forgot.onmouseup = function( e ) { cfg.forgotPassword( e ); return false; };
+                    //tempStr += "Not you? <a href=\"\">Click here</a>.";
+                    options.appendChild( forgotText );
+                    options.appendChild( forgot );
+                }
+                //options.innerHTML = tempStr;
+                fields.appendChild( options );
+            }
+        }
+        
+        if( cfg.optin !== undefined ) {
+            /*var temp = "<div class=\"optins\">";
+            for( var o = 0, ol = cfg.optin.length; o < ol; o += 1 ) {
+                temp += "<input type=\"checkbox\" name=\"" + cfg.optin[ o ].type + "\" class=\"" + cfg.optin[ o ].type + "\" /><label for=\"" + cfg.optin[ o ].type + "\"> " + cfg.optin[ o ].copy + "</label>";
+            }
+            temp += "</div>";
+            fields.innerHTML = temp;*/
+            var optin = createElm( "div", "optins" ),
+                nodes = [];
+                
+            for( var o = 0, ol = cfg.optin.length; o < ol; o += 1 ) {
+                tempNode = createElm( "input" );
+                tempNode.setAttribute( "type", "checkbox" );
+                tempNode.setAttribute( "name", cfg.optin[ o ].type );
+                tempNode.setAttribute( "class", cfg.optin[ o ].type );
+                nodes.push( { "node": tempNode, "checked": cfg.optin[ o ].checked } );
+                optin.appendChild( tempNode );
+                tempNode = createElm( "label" );
+                tempNode.setAttribute( "for", cfg.optin[ o ].type );
+                tempNode.innerHTML = cfg.optin[ o ].copy;
+                optin.appendChild( tempNode );
+            }
+            fields.appendChild( optin );
+            for( var n = 0, nl = nodes.length; n < nl; n += 1 ) {
+                if( nodes[ n ].checked ) {
+                    nodes[ n ].node.setAttribute( "checked", "checked" );
+                    //keep.checked = "checked";
+                }
+            }
+        }
+        if( cfg.button !== undefined ) {
+            var button = createElm( "button", cfg.button.type ),
+                loaderIcon = createElm( "img", "loader-icon" );
+            
+            if( cfg.noMoLightbox !== undefined ) {
+                var options2 = createElm( "div", "options-2" ),
+                    noMoLbInput,
+                    noMoLbLabel;
+                
+                noMoLbInput = createElm( "input" );
+                noMoLbInput.setAttribute( "type", "checkbox" );
+                noMoLbInput.setAttribute( "name", cfg.noMoLightbox.classy );
+                noMoLbInput.setAttribute( "class", cfg.noMoLightbox.classy );
+                noMoLbInput.onmouseup = function( e ) {
+                    if( !noMoLbInput.checked ) {
+                        cfg.noMoLightbox.callBack( e );
+                    }
+                };
+                options2.appendChild( noMoLbInput ),
+                noMoLbLabel = createElm( "label" );
+                noMoLbLabel.setAttribute( "for", cfg.noMoLightbox.classy );
+                noMoLbLabel.innerHTML = cfg.noMoLightbox.copy;
+                options2.appendChild( noMoLbLabel );
+                fields.appendChild( options2 );
+                if( cfg.noMoLightbox.checked ) {
+                    noMoLbInput.setAttribute( "checked", "checked" );
+                }
+            }
+            
+            loaderIcon.setAttribute( "src", "/modules/mod_pch_sso/assets/images/ajax-loader.gif" );
+            loaderIcon.setAttribute( "width", "24" );
+            loaderIcon.setAttribute( "height", "24" );
+            button.onmouseup = function( e ) {
+                //var evt = window.event || e;
+                cfg.button.callBack( e );
+                return false;
+            };
+            fields.appendChild( button );
+            fields.appendChild( loaderIcon );
+        }
+        if( cfg.policy !== undefined ) {
+            var privacy = createElm( "a", "policy" );
+            
+            privacy.innerHTML = "Privacy Policy";
+            privacy.setAttribute( "href", cfg.policy );
+            privacy.setAttribute( "target", "_blank" );
+            fields.appendChild( privacy );
+        } // PS: this code sucks, what was i thinking? now i'm just getting stupid added things like 2 to the end of things : )
+        if( cfg.swRulesAndFacts ) {
+        	var textRoot2 = createElm( "div", "sw-links" );
+        	for( var sw = 0, swl = cfg.swRulesAndFacts.length; sw < swl; sw += 1 ) {
+        		textRoot2.innerHTML += "<a href=\"" + cfg.swRulesAndFacts[ sw ].link + "\">" + cfg.swRulesAndFacts[ sw ].copy + "</a>";
+            }
+            frag.appendChild( textRoot2 );
+        }
+        if( cfg.goRegister !== undefined ) {
+            var goReg = createElm( "div", "go-reg" ),
+                b = createElm( "b", "go-reg" ),
+                text = doc.createTextNode( "Register today to enter for PCH prizes." ),
+                button = createElm( "button", "register" );
+                
+            button.onmouseup = function( e ) { win.location.href = cfg.goRegister; };
+            b.innerHTML = "Don't have an Account?";
+            goReg.appendChild( b );
+            goReg.appendChild( text );
+            goReg.appendChild( button );
+            
+            frag.appendChild( goReg );
+        }
+        if( !cfg.noPropSprite ) { // i'm going to start getting cheap and $hitty here cause i don't have a lot of time to spend on this
+        	var textRoot = createElm( "div" );
+        	
+        	textRoot.innerHTML = "<div class=\"prop-sprite\">Just One Password is All It Takes...<br /> to access any of our Publishers Clearing House sites:<div class=\"image\"</div></div>";
+        	frag.appendChild( textRoot );
+        }
+        
+        return frag;
+    }
+    
+    function createOptins() {
+        var optin = createElm( "div", "optins" );
+        
+        for( var o = 0, ol = cfg.optin.length; o < ol; o += 1 ) {
+            tempNode = createElm( "input" );
+            tempNode.setAttribute( "type", "checkbox" );
+            tempNode.setAttribute( "name", cfg.optin[ o ].type );
+            tempNode.setAttribute( "class", cfg.optin[ o ].type );
+            optin.appendChild( tempNode );
+            tempNode = createElm( "label" );
+            tempNode.setAttribute( "for", cfg.optin[ o ].type );
+            tempNode.innerHTML = cfg.optin[ o ].copy;
+            optin.appendChild( tempNode );
+        }
+        return optin;
+    }
+    
+    function createFrame( cfg ) {
+        var frag = doc.createDocumentFragment(),
+            closeBtn = createElm( "button", "close-x" );
+            
+        ssoLightbox = createElm( "div", "sso-lightbox hide" );        
+        innerBox = createElm( "div" );
+        box = createElm( "div", "da-box" );
+        if( window.$ ) {
+            $ssoLightbox = $( ssoLightbox );
+            $box = $( box );
+        }
+        box.appendChild( innerBox );
+        closeBtn.onmouseup = ( function( e ) {
+            return function( e ) {
+                if( typeof cfg.onClose === "function" ) {
+                    cfg.onClose();
+                } else { // remove the ga tags from the code
+                	close();
+                }
+                
+            }
+        } )();
+        box.appendChild( closeBtn );
+        ssoLightbox.appendChild( box );
+        frag.appendChild( ssoLightbox );
+
+        innerBox.appendChild( createContent( cfg ) );
+        bd.appendChild( frag );
+        if( window.$ ) {
+            $ssoLightbox.fadeIn( 300 );
+        } else {
+            ssoLightbox.className = "sso-lightbox";
+        }
+    }
+    
+    function createElm( elm, classy ) {
+        var elmy = doc.createElement( elm );
+        
+        if( classy ) {
+            elmy.className = classy;
+        }
+        return elmy;
+    }
+    
+    function open( cfg ) {
+        if( window.$ ) {
+            $( "html" ).addClass( "sso-lightbox" );
+        }
+        
+        if( !cfg.titleText || !cfg.bodyCopy ) {
+            throw "You need to pass at least titleText and bodyCopy";
+        }
+        if( lbNum === 0 ) {
+            lbNum += 1;
+            createFrame( cfg );
+        }
+    }
+    
+    function close() {
+        if( window.$ ) {
+            if( $( "html" ).hasClass( "sso-lightbox" ) ) {
+                $( "html" ).removeClass( "sso-lightbox" )
+            }
+        }
+        
+        if( lbNum > 0 ) {
+            lbNum -= 1;
+        }
+        if( window.$ ) {
+            $ssoLightbox.fadeOut( 300, function( e ) {
+                bd.removeChild( ssoLightbox );
+            } );
+        } else {
+            bd.removeChild( ssoLightbox );
+        }
+    }
+    
+    function content( cfg ) {
+        if( window.$ ) {
+            $box.fadeOut( 300, function( e ) {
+                innerBox.innerHTML = "";
+                innerBox.appendChild( createContent( cfg ) );        
+                ssoLightbox.appendChild( box );
+                $box.fadeIn( 300 );
+            } );
+        } else {
+            innerBox.innerHTML = "";
+            innerBox.appendChild( createContent( cfg ) );        
+            ssoLightbox.appendChild( box );
+        }
+        
+    }
+    
+    lb.open = open;
+    lb.close = close;
+    lb.content = content;
+
+    //if( PCH === undefined ) { throw "you need to have the PCH js loaded"; }
+    if( typeof window.PCH !== "object" ) { window.PCH = {}; }
+    PCH.SsoLightbox = lb;
+    
+} );

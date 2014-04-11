@@ -1,0 +1,25 @@
+PHTTP68.169.198.50"¡
+(GET /news/promoloader/pl.ashx HTTP/1.1
+Host: www.legacy.com
+Connection: keep-alive
+Accept: */*
+vUser-Agent: Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/31.0.1650.63 Safari/537.36
+$Referer: http://www.legacy.com/ns/
+$Accept-Encoding: gzip,deflate,sdch
+!Accept-Language: en-US,en;q=0.8
+ÈCookie: ASPSESSIONIDQCRASCAD=HPKKODAAIBCELCFOGCAJJJGK; ASP.NET_SessionId=jqkfxawueigivavms0mppmkw; __qca=P0-1704172327-1397230346557; __utma=179553081.496139641.1397230347.1397230347.1397230347.1; __utmb=179553081.1.10.1397230347; __utmc=179553081; __utmz=179553081.1397230347.1.1.utmcsr=(direct)|utmccn=(direct)|utmcmd=(none)
+
+*®
+HTTP/1.1 200 OK
+Cache-Control: private
+.Content-Type: text/javascript; charset=utf-8
+Server: Microsoft-IIS/7.5
+X-AspNet-Version: 4.0.30319
+X-UA-Compatible: IE=edge
+%Date: Fri, 11 Apr 2014 15:29:54 GMT
+Content-Length: 310
+¸
+var scriptRef = document.createElement('script');
+            scriptRef.setAttribute('type', 'text/javascript');
+            scriptRef.setAttribute('src', 'http://ak-static.legacy.net/news/promoloader/pl.js?v=1.13.10331.855&s=1');
+            document.getElementsByTagName('head')[0].appendChild(scriptRef);

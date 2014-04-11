@@ -1,0 +1,22 @@
+PHTTP54.209.108.105"Õ
+&GET /adj?s=11001&sz=300x250 HTTP/1.1
+Host: t.brand-server.com
+Connection: keep-alive
+Accept: */*
+vUser-Agent: Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/31.0.1650.63 Safari/537.36
+!Referer: http://www.boston.com/
+$Accept-Encoding: gzip,deflate,sdch
+!Accept-Language: en-US,en;q=0.8
+
+*ÿ
+ HTTP/1.1 302 Moved Temporarily
+gSet-Cookie: tuuid=5fd9f7ab-70cc-443c-bd23-f1052c09c900; path=/; expires=Sun, 10-Apr-2016 19:13:41 GMT
+PP3P: CP="NOI DSP COR NID CURa ADMa DEVa PSAa PSDa OUR BUS COM INT OTC PUR STA"
+BLocation: http://t.brand-server.com/ul_cb/adj?s=11001&sz=300x250
+(Content-Type: text/html; charset=UTF-8
+4Cache-Control: no-cache, no-store, must-revalidate
+(Expires: Mon, 26 Jul 1997 05:00:00 GMT
+Pragma: no-cache
+Content-Length: 0
+%Date: Fri, 11 Apr 2014 19:13:41 GMT
+

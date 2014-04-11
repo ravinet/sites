@@ -1,0 +1,34 @@
+PHTTP
+23.74.28.8"Å
+
+QGET /Asset_Archive/GPWeb/content/0007/880/958/assets/close_vector1.svg HTTP/1.1
+Host: www.gap.com
+Connection: keep-alive
+Accept: image/webp,*/*;q=0.8
+vUser-Agent: Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/31.0.1650.63 Safari/537.36
+Referer: http://www.gap.com/
+$Accept-Encoding: gzip,deflate,sdch
+!Accept-Language: en-US,en;q=0.8
+˜Cookie: globalSession=pm-pageLoadTimeDeltaFromPreviousPage%3D%26pm-domReadyTimeDeltaFromPreviousPage%3D%26pm-undefined%3D%26pm-outfitPageReadyTimeDeltaFromPreviousPage%3D%26pm-outfitDataRequestTimeDeltaFromPreviousPage%3D%26pm-outfitDataLoadTimeDeltaFromPreviousPage%3D%26pm-outfitDataLoadTimeDeltaPerProductFromPreviousPage%3D%26pm-outfitAddToBagDoneTimeDeltaFromPreviousPage%3D%26pm-outfitAddToBagDoneTimeDeltaPerProductFromPreviousPage%3D; checkoutMode=isEnhanced%3Dtrue; mktUniversalPersist=NAV2FACETS_1306A_v2_GROUP_TEST%3DnavGroupSEGB%26windyCity2014v5%3DWindyCity2014_SegA%26GOLNAV041014%3DGOLNAV041014SEGC%26ppabtest%3DsegA; ASP1V=CT-1; JSESSIONID=12b85f17-dc4f-4b14-a05d-af93904d643a; gid.h=115|||; unknownShopperId=F92B85644C21CA81B1329772BEF26241|||; locale=en_US|||; s_pers=%20s_dfa%3Dgapproduction%252Cgapgidproduction%7C1397250504664%3B; gcoMode=seg%3DA; gcahMode=seg%3DA
+
+*©
+HTTP/1.1 200 OK
+Server: Apache-Coyote/1.1
+Accept-Ranges: bytes
+ETag: W/"648-1396558471000"
+.Last-Modified: Thu, 03 Apr 2014 20:54:31 GMT
++Content-Type: image/svg+xml;charset=UTF-8
+Content-Length: 648
+%Date: Fri, 11 Apr 2014 20:38:24 GMT
+Connection: keep-alive
+ä
+<?xml version="1.0"?>
+<svg width="11" height="11" xmlns="http://www.w3.org/2000/svg">
+ <!-- Created with SVG-edit - http://svg-edit.googlecode.com/ -->
+ <g>
+  <title>Layer 1</title>
+  <g id="svg_1">
+   <path d="m5.5,0.1875c-2.933496,0 -5.3125,2.379003 -5.3125,5.3125s2.379004,5.3125 5.3125,5.3125s5.3125,-2.379004 5.3125,-5.3125s-2.379004,-5.3125 -5.3125,-5.3125zm3.097852,7.044375l-1.365976,1.365645l-1.731875,-1.731875l-1.731875,1.731875l-1.365977,-1.365645l1.731875,-1.731875l-1.731875,-1.731875l1.365977,-1.365644l1.731875,1.731875l1.731875,-1.731875l1.365976,1.365644l-1.731874,1.731875l1.731874,1.731875z" fill="#BEBAB9"/>
+  </g>
+ </g>
+</svg>

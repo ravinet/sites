@@ -1,0 +1,26 @@
+PHTTP23.209.60.81"Þ	
++GET /~/Media/error/404.aspx.ashx HTTP/1.1
+Host: cdn.comcast.com
+Connection: keep-alive
+Accept: image/webp,*/*;q=0.8
+vUser-Agent: Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/31.0.1650.63 Safari/537.36
+6Referer: http://www.comcast.com/?CMP=ILCXFICOMUTOL3X
+$Accept-Encoding: gzip,deflate,sdch
+!Accept-Language: en-US,en;q=0.8
+ÞCookie: SHS=0; PSC=VA=1025&UCID=6fcffdab-25ab-4a6f-ba14-338c0fa7563d&CTY=Cambridge&ST=MA&Z=02139&EX=False&RC.MKT=3550; SC=RC.USID=0da8be47-cf5c-444b-9b96-1b701970ddbe&RC.SEG=4%3d1%7c64%3d0%7c66%3d0%7c71%3d0%7c80%3d0%7c14%3d0%7c13%3d0%7c&EX=False&GEO=True&L1ID=11599&RC.AGT=520&RC.BIL=CSG&RC.CRPN=0&RC.FRCHN=0&RC.LOC=-9223372036854775808&RC.MGMTA=0&RC.MKT=3550&RC.PRIN=2100&RC.SYS=8993&RC.CORP=512&RC.FRCH=15090&L2ID=2238&L3ID=2239&L4ID=3489&RC.IFL=N&RC.VD=cmp%3dILCXFICOMUTOL3X; neustar=NeustarResponse=segment%3d000%7cVOICE%3d0%7cDATA%3d0%7cVIDEO%3d0%7cCA%3d0%7cNSDBS%3d0%7cTP%3d0%7cVC%3d0%7cLV%3d0%7cGD%3d0; mbox=check#true#1396992945|session#1396992884065-69146#1396994745|PC#1396992884065-69146.25_04#1398202485; s_sess=%20s_cc%3Dtrue%3B; s_pers=%20s_dfa%3Dcomcastdotcomprod%7C1396994684938%3B%20s_fid%3D4B61C5A0C0E7CA49-0F97D07F0D4535B4%7C1460151284946%3B
+
+*»
+ HTTP/1.1 302 Moved Temporarily
+(Content-Type: text/html; charset=utf-8
+	ETag:  
+Location: /error/404.aspx
+Server: Microsoft-IIS/7.5
+X-AspNet-Version: 4.0.30319
+Content-Length: 132
+(Cache-Control: private, max-age=604800
+%Date: Tue, 08 Apr 2014 21:34:45 GMT
+Connection: keep-alive
+†
+<html><head><title>Object moved</title></head><body>
+<h2>Object moved to <a href="/error/404.aspx">here</a>.</h2>
+</body></html>

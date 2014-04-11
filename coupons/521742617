@@ -1,0 +1,26 @@
+PHTTP54.225.179.184"¤
+7GET /GenericUserSync.ashx?dpid=10noredirect& HTTP/1.1
+Host: sync.tidaltv.com
+Connection: keep-alive
+Accept: image/webp,*/*;q=0.8
+vUser-Agent: Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/31.0.1650.63 Safari/537.36
+PReferer: http://tags.bluekai.com/site/3428?ret=html&limit=10&phint=source%3DCI
+$Accept-Encoding: gzip,deflate,sdch
+!Accept-Language: en-US,en;q=0.8
+
+*¤
+HTTP/1.1 302 Found
+Cache-Control: private
+(Content-Type: text/html; charset=utf-8
+%Date: Tue, 08 Apr 2014 21:35:18 GMT
+ULocation: http://tags.bluekai.com/site/5379?id=493aa00d-848b-4ed1-9a5f-96bdd3d7e271
+Server: Microsoft-IIS/7.0
+€Set-Cookie: tidal_ttid=493aa00d-848b-4ed1-9a5f-96bdd3d7e271; domain=tidaltv.com; expires=Fri, 08-Apr-2016 21:35:18 GMT; path=/
+X-AspNet-Version: 4.0.30319
+X-Powered-By: ASP.NET
+Content-Length: 190
+Connection: keep-alive
+À
+<html><head><title>Object moved</title></head><body>
+<h2>Object moved to <a href="http://tags.bluekai.com/site/5379?id=493aa00d-848b-4ed1-9a5f-96bdd3d7e271">here</a>.</h2>
+</body></html>

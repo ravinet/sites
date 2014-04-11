@@ -1,0 +1,33 @@
+PHTTP74.125.225.155"ü
+‰GET /activityi;src=abc123;type=lohp12;cat=wizremarket;ord=5414285436272.621;~oref=http%3A%2F%2Fwww.ancestry.com%2F?&_dc_ck=try HTTP/1.1
+"Host: abc123.fls.doubleclick.net
+Connection: keep-alive
+TAccept: text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8
+vUser-Agent: Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/31.0.1650.63 Safari/537.36
+#Referer: http://www.ancestry.com/
+$Accept-Encoding: gzip,deflate,sdch
+!Accept-Language: en-US,en;q=0.8
+pCookie: id=223065ad910100b2||t=1397243810|et=730|cs=002213fd48716b99e86ba3b133; test_cookie=CheckForPermission
+
+*…	
+HTTP/1.1 302 Found
+mSet-Cookie: test_cookie=; domain=.doubleclick.net; path=/; Max-Age=0; expires=Mon, 21 Jul 2008 23:59:00 GMT
+¥P3P: policyref="http://googleads.g.doubleclick.net/pagead/gcn_p3p_.xml", CP="CURa ADMa DEVa TAIo PSAo PSDo OUR IND UNI PUR INT DEM STA PRE COM NAV OTC NOI DSP COR"
+%Date: Fri, 11 Apr 2014 19:16:50 GMT
+(Expires: Fri, 11 Apr 2014 19:16:50 GMT
+#Cache-Control: private, max-age=0
+X-Frame-Options: ALLOWALL
+Server: Floodlight
+!X-Content-Type-Options: nosniff
+(Content-Type: text/html; charset=UTF-8
+¢Location: http://0.fls.doubleclick.net/activityi;src=abc123;type=lohp12;cat=wizremarket;ord=5414285436272.621;~oref=http%3A%2F%2Fwww.ancestry.com%2F?&_dc_ck=try
+Content-Length: 351
+!X-XSS-Protection: 1; mode=block
+Alternate-Protocol: 80:quic
+á
+<HTML><HEAD><meta http-equiv="content-type" content="text/html;charset=utf-8">
+<TITLE>302 Moved</TITLE></HEAD><BODY>
+<H1>302 Moved</H1>
+The document has moved
+<A HREF="http://0.fls.doubleclick.net/activityi;src=abc123;type=lohp12;cat=wizremarket;ord=5414285436272.621;~oref=http%3A%2F%2Fwww.ancestry.com%2F?&amp;_dc_ck=try">here</A>.
+</BODY></HTML>

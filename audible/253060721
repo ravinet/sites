@@ -1,0 +1,20 @@
+PHTTP
+8.18.45.80"·
+6GET /ad/bk/13001-80419-3840-0?Anon=1&mpuid= HTTP/1.1
+Host: adfarm.mediaplex.com
+Connection: keep-alive
+Accept: image/webp,*/*;q=0.8
+vUser-Agent: Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/31.0.1650.63 Safari/537.36
+`Referer: http://img-cdn.mediaplex.com/0/13001/universal.html?page_name=anon_home&Anon=1&mpuid=
+$Accept-Encoding: gzip,deflate,sdch
+!Accept-Language: en-US,en;q=0.8
+
+*“
+ HTTP/1.1 302 Moved Temporarily
+Server: Apache-Coyote/1.1
+HSet-Cookie: cttutcid=""; Expires=Tue, 08-Apr-2014 21:28:20 GMT; Path=/
+OP3P: policyref="/w3c/p3p.xml", CP="NOI DSP COR PSAo PSDo OUR IND UNI COM NAV"
+öLocation: http://iad-login.dotomi.com/commonid/match?rurl=http%3A%2F%2Fadfarm.mediaplex.com%2Fad%2Fbk%2F13001-80419-3840-0%3Fmpu_token%3DAQEHih3PaOsKGQIBAQErAQEBAQE%26Anon%3D1%26mpuid%3D&user_token=AQEHih3PaOsKGQIBAQErAQEBAQE&tok=gB5NcpVOlj0%3D
+Content-Length: 0
+%Date: Tue, 08 Apr 2014 21:27:20 GMT
+

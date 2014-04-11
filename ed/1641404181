@@ -1,0 +1,62 @@
+PHTTP74.84.219.134"ß
+<GET /sites/all/modules/img_assist/img_assist.js?b HTTP/1.1
+Host: www.ed.gov
+Connection: keep-alive
+Accept: */*
+vUser-Agent: Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/31.0.1650.63 Safari/537.36
+Referer: http://www.ed.gov/
+$Accept-Encoding: gzip,deflate,sdch
+!Accept-Language: en-US,en;q=0.8
+
+*ß
+HTTP/1.1 200 OK
+%Date: Tue, 08 Apr 2014 21:40:07 GMT
+Server: Apache
+.Last-Modified: Wed, 19 Feb 2014 07:24:00 GMT
+#ETag: "485a238-725-4f2bd45c32400"
+Accept-Ranges: bytes
+Content-Length: 1829
+ Keep-Alive: timeout=5, max=100
+Connection: Keep-Alive
+&Content-Type: application/javascript
+§
+/* $Id$ */
+
+Drupal.behaviors.img_assist = function(context) {
+  $('textarea.img_assist:not(.img_assist-processed)', context).each(function() {
+    // Drupal's teaser behavior is a destructive one and needs to be run first.
+    if ($(this).is('textarea.teaser:not(.teaser-processed)')) {
+      Drupal.behaviors.teaser(context);  
+    }
+    $(this).addClass('img_assist-processed').parent().append(Drupal.theme('img_assist_link', this));
+  });
+}
+
+Drupal.theme.prototype.img_assist_link = function(el) {
+  var html = '<div class="img_assist-button">', link = Drupal.t('Add image');
+  if (Drupal.settings.img_assist.link == 'icon') {
+    link = '<img src="'+ Drupal.settings.basePath + Drupal.settings.img_assist.icon +'" alt="'+ link +'" title="'+ link +'" />';
+  }
+  html += '<a href="'+ Drupal.settings.basePath +'index.php?q=img_assist/load/textarea&textarea='+ el.name +'" class="img_assist-link" id="img_assist-link-'+ el.id +'" title="'+ Drupal.t('Click here to add images') +'" onclick="window.open(this.href, \'img_assist_link\', \'width=600,height=350,scrollbars=yes,status=yes,resizable=yes,toolbar=no,menubar=no\'); return false;">'+ link +'</a>';
+  html += '</div>';
+  return html;
+}
+
+function launch_popup(nid, mw, mh) {
+  var ox = mw;
+  var oy = mh;
+  if((ox>=screen.width) || (oy>=screen.height)) {
+    var ox = screen.width-150;
+    var oy = screen.height-150;
+    var winx = (screen.width / 2)-(ox / 2);
+    var winy = (screen.height / 2)-(oy / 2);
+    var use_scrollbars = 1;
+  }
+  else {
+    var winx = (screen.width / 2)-(ox / 2);
+    var winy = (screen.height / 2)-(oy / 2);
+    var use_scrollbars = 0;
+  }
+  var win = window.open(Drupal.settings.basePath + 'index.php?q=img_assist/popup/' + nid, 'imagev', 'height='+oy+'-10,width='+ox+',top='+winy+',left='+winx+',scrollbars='+use_scrollbars+',resizable');
+}
+

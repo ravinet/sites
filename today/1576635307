@@ -1,0 +1,52 @@
+PHTTP54.230.55.20"¶
+-GET /js/track.js?0.529266036581248 HTTP/1.1
+Host: statictk01.bpocdn.com
+Connection: keep-alive
+Accept: */*
+vUser-Agent: Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/31.0.1650.63 Safari/537.36
+xReferer: http://assets1b.nbcnews.com/rendering/advertising/adcontent/98fcf9ab-cdca-47ea-ad55-81bc31ca1e61/Showcase%202
+$Accept-Encoding: gzip,deflate,sdch
+!Accept-Language: en-US,en;q=0.8
+
+*ª	
+HTTP/1.1 200 OK
+(Content-Type: application/x-javascript
+Content-Length: 713
+Connection: keep-alive
+%Date: Fri, 04 Apr 2014 13:14:19 GMT
+.Last-Modified: Mon, 09 Dec 2013 15:28:08 GMT
+*ETag: "8090094ded6a174404f6c1c9f217277a"
+Accept-Ranges: bytes
+Server: AmazonS3
+Age: 7337
+X-Cache: Hit from cloudfront
+GVia: 1.1 7e32d41b2a1086b0da29eb27020f9306.cloudfront.net (CloudFront)
+GX-Amz-Cf-Id: CIwiTYzujIin98tGsr2pU-VDhTbtV9UJaY_mtf9x8jWVJZlbu5sJ_Q==
+Ë
+if(typeof jQuery=='undefined'){
+	window.setTimeout(runTracker, 600);   //Run Tracker function after jQuery is loaded
+}else{
+	imp_tk();
+}
+function runTracker(){
+	imp_tk();		
+}  
+function imp_tk(){
+	$(document).ready(function(){
+		var links_url_t_a = $('a[href^="http://tracking.smartclicksystem.com"]');
+		var links_arr_t_l=new Array();        
+			for (var i = 0; i < links_url_t_a.length; i++) {     
+					links_arr_t_l.push($(links_url_t_a[i]).attr('href'));
+			}
+			
+			var _data_info_t = {'details' : links_arr_t_l.join(',')}
+			$.ajax({
+					async:true,
+					url: 'http://tracker.smartclicksystem.com/imp.php',
+					type: 'GET',
+					data:(_data_info_t),
+					dataType: 'jsonp',
+					cache:false
+			});
+	});
+}

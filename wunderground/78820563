@@ -1,0 +1,24 @@
+PHTTP138.108.7.20"¡
+ÒGET /cgi-bin/m?rnd=1396996587893&ci=us-203014h&js=1&cg=0&ts=v60.js&vn=6.0.25&cc=1&cd=24&ck=y&je=y&lg=en-US&si=http%3A//www.wunderground.com/&sr=800x600&id=lstrg-7e2cbf7155b09699da626059b741a99c&tz=-4 HTTP/1.1
+"Host: secure-us.imrworldwide.com
+Connection: keep-alive
+Accept: image/webp,*/*;q=0.8
+vUser-Agent: Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/31.0.1650.63 Safari/537.36
+'Referer: http://www.wunderground.com/
+$Accept-Encoding: gzip,deflate,sdch
+!Accept-Language: en-US,en;q=0.8
+
+*ï
+HTTP/1.1 302 Found
+Server: nginx
+%Date: Tue, 08 Apr 2014 22:36:27 GMT
+Content-Length: 0
+Connection: keep-alive
+Keep-Alive: timeout=10
+ŽSet-Cookie: IMRID=167383ce-5114-4774-8b26-5205de7ce6b0;Path=/;Domain=imrworldwide.com;Expires=Thu, 07-Apr-2016 22:36:27 GMT;Max-Age=63072000
+(Expires: Thu, 01 Dec 1994 16:00:00 GMT
+õLocation: http://secure-us.imrworldwide.com/cgi-bin/m?rnd=1396996587893&ci=us-203014h&js=1&cg=0&ts=v60.js&vn=6.0.25&cc=1&cd=24&ck=y&je=y&lg=en-US&si=http%3A//www.wunderground.com/&sr=800x600&id=lstrg-7e2cbf7155b09699da626059b741a99c&tz=-4&ja=1
+Pragma: no-cache
+Cache-Control: no-cache
+pP3P: P3P policyref="http://www.imrworldwide.com/w3c/p3p.xml", CP="NOI DSP COR NID PSA ADM OUR IND UNI NAV COM"
+

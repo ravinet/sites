@@ -1,0 +1,30 @@
+PHTTP74.125.207.95"è
+%GET /css?family=Fjalla+One HTTP/1.1
+Host: fonts.googleapis.com
+Connection: keep-alive
+Accept: text/css,*/*;q=0.1
+vUser-Agent: Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/31.0.1650.63 Safari/537.36
+$Referer: http://www.breitbart.com/
+$Accept-Encoding: gzip,deflate,sdch
+!Accept-Language: en-US,en;q=0.8
+
+*‚
+HTTP/1.1 200 OK
+Content-Type: text/css
+Timing-Allow-Origin: *
+(Expires: Fri, 11 Apr 2014 19:12:32 GMT
+%Date: Fri, 11 Apr 2014 19:12:32 GMT
+'Cache-Control: private, max-age=86400
+Content-Length: 274
+!X-Content-Type-Options: nosniff
+X-Frame-Options: SAMEORIGIN
+!X-XSS-Protection: 1; mode=block
+Server: GSE
+Alternate-Protocol: 80:quic
+”
+@font-face {
+  font-family: 'Fjalla One';
+  font-style: normal;
+  font-weight: 400;
+  src: local('Fjalla One'), local('FjallaOne-Regular'), url(http://themes.googleusercontent.com/static/fonts/fjallaone/v2/rxxXUYj4oZ6Q5oDJFtEd6hsxEYwM7FgeyaSgU71cLG0.woff) format('woff');
+}

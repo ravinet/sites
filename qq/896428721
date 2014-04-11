@@ -1,0 +1,24 @@
+PHTTP14.17.32.179"ê
+1GET /qhome_pop/qhome_pop.php?referrer= HTTP/1.1
+Host: match.qq.com
+Connection: keep-alive
+Accept: */*
+vUser-Agent: Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/31.0.1650.63 Safari/537.36
+Referer: http://www.qq.com/
+$Accept-Encoding: gzip,deflate,sdch
+!Accept-Language: en-US,en;q=0.8
+8Cookie: pgv_info=ssid=s8991333683; pgv_pvid=4413084615
+
+*Ù
+HTTP/1.1 200 OK
+Server: nginx/1.2.3
+%Date: Tue, 08 Apr 2014 22:15:53 GMT
+Content-Type: text/html
+Transfer-Encoding: chunked
+Connection: keep-alive
+X-Powered-By: PHP/5.3.10
+2
+25
+var q_home_pop = {"code":-1,"data":2}
+0
+

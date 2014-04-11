@@ -1,0 +1,26 @@
+PHTTP23.202.219.247"”
+GET /crossdomain.xml HTTP/1.1
+Host: cdn.visiblemeasures.com
+Connection: keep-alive
+vUser-Agent: Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/31.0.1650.63 Safari/537.36
+Accept: */*
+!Referer: http://www.boston.com/
+$Accept-Encoding: gzip,deflate,sdch
+!Accept-Language: en-US,en;q=0.8
+
+*∫
+HTTP/1.1 200 OK
+Server: nginx
+Content-Type: text/xml
+Content-Length: 141
+.Last-Modified: Wed, 03 Mar 2010 02:48:52 GMT
+Accept-Ranges: bytes
+Cache-Control: max-age=86400
+(Expires: Sat, 12 Apr 2014 19:13:43 GMT
+%Date: Fri, 11 Apr 2014 19:13:43 GMT
+Connection: keep-alive
+è
+<cross-domain-policy>
+	<allow-access-from domain="*" />
+	<site-control permitted-cross-domain-policies="master-only"/>
+</cross-domain-policy>

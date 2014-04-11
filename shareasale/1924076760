@@ -1,0 +1,590 @@
+PHTTP209.207.213.228"é
+6GET /CFIDE/scripts/ajax/package/cfwindow.js HTTP/1.1
+Host: www.shareasale.com
+Connection: keep-alive
+Accept: */*
+vUser-Agent: Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/31.0.1650.63 Safari/537.36
+%Referer: http://www.shareasale.com/
+$Accept-Encoding: gzip,deflate,sdch
+!Accept-Language: en-US,en;q=0.8
+
+*©~
+HTTP/1.1 200 OK
+(Content-Type: application/x-javascript
+.Last-Modified: Tue, 17 Aug 2010 10:52:14 GMT
+Accept-Ranges: bytes
+ETag: "0834b40fa3dcb1:0"
+Server: Microsoft-IIS/7.0
+UP3P: policyref="/w3c/p3p.xml", CP="NON DSP COR CUR ADMi TAIi PSAi IVAi OUR STP NAV"
+%Date: Tue, 08 Apr 2014 22:24:49 GMT
+Content-Length: 15823
+Ñ{
+/*ADOBE SYSTEMS INCORPORATED
+Copyright 2007 Adobe Systems Incorporated
+All Rights Reserved.
+
+NOTICE:  Adobe permits you to use, modify, and distribute this file in accordance with the
+terms of the Adobe license agreement accompanying it.  If you have received this file from a
+source other than Adobe, then your use, modification, or distribution of it requires the prior
+written permission of Adobe.*/
+if(!ColdFusion.Window){
+ColdFusion.Window={};
+}
+ColdFusion.Window.windowIdCounter=1;
+ColdFusion.Window.TITLE_BGCOLOR_TEMPLATE="WINDOW_DIV_ID .x-window-tc , WINDOW_DIV_ID .x-window-tl, WINDOW_DIV_ID .x-window-tr, WINDOW_DIV_ID .x-window-bc, WINDOW_DIV_ID .x-window-br, WINDOW_DIV_ID"+" .x-window-bl, WINDOW_DIV_ID  .x-window-ml, WINDOW_DIV_ID .x-window-mr { background-image: none; background-color: COLOR_ID; }";
+ColdFusion.Window.create=function(_1,_2,_3,_4){
+if(_1==null){
+ColdFusion.handleError(null,"window.create.nullname","widget",null,null,null,true);
+return;
+}
+if(_1==""){
+ColdFusion.handleError(null,"window.create.emptyname","widget",null,null,null,true);
+return;
+}
+var _5=ColdFusion.objectCache[_1];
+var _6=false;
+if(typeof (_5)!="undefined"&&_5!=null){
+if(_5.callfromtag){
+ColdFusion.handleError(null,"window.create.duplicatename","widget",[_1]);
+}
+if(typeof (_5.isConfObj)!="undefined"&&_5.isConfObj==true){
+_6=true;
+if(_4!=null&&typeof (_4.initshow)!="undefined"){
+if(_4.initshow==false){
+return;
+}
+}
+}else{
+if(!_4||(_4&&_4.initshow!==false)){
+ColdFusion.Window.show(_1);
+}
+return;
+}
+}
+if(!_5){
+ColdFusion.Log.info("window.create.creating","widget",[_1]);
+}
+var _7=ColdFusion.Window.createHTML(_1,_2,_3,_4,_6);
+var _8=ColdFusion.objectCache[_1];
+if(_8!=null&&typeof (_8.isConfObj)!="undefined"&&_8.isConfObj==true){
+return;
+}
+return ColdFusion.Window.createJSObj(_1,_3,_7);
+};
+ColdFusion.Window.createHTML=function(_9,_a,_b,_c,_d){
+var _e=null;
+var _f=null;
+if(_c&&_c.divid){
+_e=document.getElementById(_c.divid);
+}
+if(_e==null){
+_e=document.createElement("div");
+_f="cf_window"+ColdFusion.Window.windowIdCounter;
+ColdFusion.Window.windowIdCounter++;
+_e.id=_f;
+_e.className="x-hidden";
+}
+document.body.appendChild(_e);
+var _10=false;
+var _11=null;
+if(_c!=null&&typeof (_c.headerstyle)!="undefined"&&_c.headerstyle!=null){
+var _12=new String(_c.headerstyle);
+_12=_12.toLowerCase();
+var _13=_12.indexOf("background-color");
+if(_13>=0){
+_10=true;
+var _14=_12.indexOf(";",_13+17);
+if(_14<0){
+_14=_12.length;
+}
+_11=_12.substring(_13+17,_14);
+}
+}
+var _15=document.getElementById(_9+"_title");
+if(_10==true&&_11){
+var _16="#"+_c.divid;
+var _17="NAME_ID .x-window-tc , NAME_ID .x-window-tl, NAME_ID .x-window-tr, NAME_ID .x-window-bc, NAME_ID .x-window-br, NAME_ID .x-window-bl,NAME_ID .x-window-ml, NAME_ID .x-window-mr { background-image: none; background-color: COLOR_ID; }";
+var _18=ColdFusion.Util.replaceAll(ColdFusion.Window.TITLE_BGCOLOR_TEMPLATE,"WINDOW_DIV_ID",_16);
+var _18=ColdFusion.Util.replaceAll(_18,"COLOR_ID",_11);
+Ext.util.CSS.createStyleSheet(_18);
+}
+if(_15==null){
+_15=document.createElement("div");
+_15.id=_9+"_title";
+var _19="x-window-header";
+_15.className=_19;
+if(_a){
+_15.innerHTML=_a;
+}else{
+_15.innerHTML="&nbsp;";
+}
+_e.appendChild(_15);
+}
+var _1a=document.getElementById(_9+"_body");
+if(_1a==null){
+_1a=document.createElement("div");
+_1a.id=_9+"_body";
+_1a.className="x-window-body";
+_e.appendChild(_1a);
+}
+var _1b;
+_1b=ColdFusion.Window.getUpdatedConfigObj(_c,_9);
+if(typeof (_1b)=="undefined"){
+_e.innerHTML="";
+return;
+}
+if(_f){
+_1b.divid=_f;
+}
+_1b.title=_a;
+if(typeof (_1b.initshow)!="undefined"&&_1b.initshow===false){
+_1b.url=_b;
+ColdFusion.objectCache[_9]=_1b;
+ColdFusion.objectCache[_9+"_body"]=_1b;
+}
+return _1b;
+};
+ColdFusion.Window.createJSObj=function(_1c,url,_1e){
+var _1f;
+var _20=false;
+if(typeof (_1e.childlayoutid)&&_1e.childlayoutid!=null){
+_20=true;
+_1e.layout="border";
+_1e.items=ColdFusion.objectCache[_1e.childlayoutid];
+}else{
+_1e.layout="fit";
+}
+if(typeof (_1e.autoScroll)=="undefined"){
+_1e.autoScroll=true;
+}
+_1e.el=_1e.divid;
+if(_1e.onShow){
+_1e._cf_onShow=_1e.onShow;
+_1e.onShow=null;
+}
+if(_1e.onHide){
+_1e._cf_onHide=_1e.onHide;
+_1e.onHide=null;
+}
+_1f=new Ext.Window(_1e);
+_1f.cfwindowname=_1c;
+_1f.tempx=_1e.tempx;
+_1f.tempy=_1e.tempy;
+_1f.divid=_1e.divid;
+if(typeof (_1e.headerstyle)!="undefined"&&_1e.headerstyle!=null){
+var _21=document.getElementById(_1c+"_title");
+if(_21!=null){
+_21.style.cssText="background:none;"+_1e.headerstyle;
+}
+}
+if(typeof (_1e.bodystyle)!="undefined"&&_1e.bodystyle!=null){
+var _22=document.getElementById(_1c+"_body");
+var _23=_22.parentNode;
+if(_23!=null){
+_23.style.cssText=_1e.bodystyle;
+}
+}
+_1f.isConfObj=false;
+_1f._cf_body=_1c+"_body";
+ColdFusion.objectCache[_1c]=_1f;
+if(_20){
+var _24=_1f.getLayout();
+var _25=ColdFusion.objectCache[_1e.childlayoutid];
+}
+_1f.addListener("beforeclose",ColdFusion.Window.beforeCloseHandler);
+var _26=null;
+if(typeof (url)!="undefined"&&url!=""){
+_26=url;
+}
+if(_26==null){
+if(typeof (_1e.initshow)=="undefined"||_1e.initshow==true){
+_1f.addListener("beforeshow",ColdFusion.Window.beforeShowHandler);
+ColdFusion.Window.showandhide(_1f,_1e);
+}
+return;
+}
+ColdFusion.objectCache[_1c+"_body"]=_1f;
+if(typeof (_1e.callfromtag)=="undefined"){
+var _27;
+var _28;
+_1f._cf_visible=false;
+_1f._cf_dirtyview=true;
+_1f.addListener("show",ColdFusion.Window.showHandler);
+_1f.addListener("hide",ColdFusion.Window.hideHandler);
+_1f.url=_26;
+if(_1e){
+if(typeof (_1e.initshow)=="undefined"||_1e.initshow==true){
+ColdFusion.Window.showandhide(_1f,_1e);
+}
+_27=_1e.callbackHandler;
+_28=_1e.errorHandler;
+}
+}else{
+_1f.callfromtag=true;
+_1f._cf_visible=false;
+_1f._cf_dirtyview=true;
+_1f.addListener("show",ColdFusion.Window.showHandler);
+_1f.addListener("beforeshow",ColdFusion.Window.beforeShowHandler);
+_1f.addListener("hide",ColdFusion.Window.hideHandler);
+if(typeof (_1e.initshow)=="undefined"||_1e.initshow==true){
+ColdFusion.Window.showandhide(_1f,_1e);
+}
+}
+};
+ColdFusion.Window.showandhide=function(_29,_2a){
+if(typeof (_2a.tempinitshow)!="undefined"&&_2a.tempinitshow==false){
+var _2b=Ext.Element.get(_29.el);
+if(typeof _2b!="undefined"){
+_2b.show();
+}
+_2b.hide();
+}else{
+_29.show();
+}
+};
+ColdFusion.Window.destroy=function(_2c,_2d){
+if(_2c){
+var _2e=ColdFusion.Window.getWindowObject(_2c);
+if(_2e){
+if(_2d===true){
+_2e.destroy(true);
+}else{
+_2e.destroy();
+}
+ColdFusion.objectCache[_2c]=null;
+}
+}
+};
+ColdFusion.Window.resizeHandler=function(_2f,_30,_31){
+if(typeof (_2f.fixedcenter)!="undefined"&&_2f.fixedcenter==true){
+_2f.center();
+}
+};
+ColdFusion.Window.beforeShowHandler=function(_32){
+if(typeof (_32.fixedcenter)!="undefined"&&_32.fixedcenter==true){
+_32.center();
+}
+};
+ColdFusion.Window.beforeCloseHandler=function(_33){
+if(_33.destroyonclose!="undefined"&&_33.destroyonclose==true){
+ColdFusion.objectCache[_33.cfwindowname]=null;
+return true;
+}else{
+_33.hide();
+return false;
+}
+};
+ColdFusion.Window.showHandler=function(_34){
+_34._cf_visible=true;
+if(_34._cf_dirtyview){
+if(typeof (_34.callfromtag)=="undefined"){
+ColdFusion.Ajax.replaceHTML(_34._cf_body,_34.url,"GET",null,_34.callbackHandler,_34.errorHandler);
+}else{
+var _35=ColdFusion.bindHandlerCache[_34._cf_body];
+if(_35){
+_35();
+}
+}
+_34._cf_dirtyview=false;
+}
+};
+ColdFusion.Window.hideHandler=function(_36){
+_36._cf_visible=false;
+if(_36._cf_refreshOnShow){
+_36._cf_dirtyview=true;
+}
+};
+ColdFusion.Window.xPosition=50;
+ColdFusion.Window.yPosition=50;
+ColdFusion.Window.resetHTML=function(_37){
+var _38=document.getElementById(_37);
+if(_38){
+_38.innerHTML="";
+}
+};
+ColdFusion.Window.getUpdatedConfigObj=function(_39,_3a){
+var _3b={};
+if(_39!=null){
+if(typeof (_39)!="object"){
+ColdFusion.Window.resetHTML(_3a);
+ColdFusion.handleError(null,"window.getupdatedconfigobject.invalidconfig","widget",[_3a],null,null,true);
+return;
+}
+for(var key in _39){
+if(key=="center"&&ColdFusion.Util.isBoolean(_39["center"])){
+_3b["fixedcenter"]=_39["center"];
+}else{
+_3b[key]=_39[key];
+}
+}
+}
+if(typeof (_3b.initshow)!="undefined"){
+if(ColdFusion.Util.isBoolean(_3b.initshow)==false){
+ColdFusion.Window.resetHTML(_3a);
+ColdFusion.handleError(null,"window.getupdatedconfigobject.invalidinitshow","widget",[_3a],null,null,true);
+return;
+}else{
+_3b.initshow=ColdFusion.Util.castBoolean(_3b.initshow);
+_3b._cf_visible=_3b.initshow;
+}
+}
+_3b.tempcenter=null;
+if(typeof (_3b.fixedcenter)!="undefined"){
+if(ColdFusion.Util.isBoolean(_3b.fixedcenter)==false){
+ColdFusion.Window.resetHTML(_3a);
+ColdFusion.handleError(null,"window.getupdatedconfigobject.invalidcenter","widget",[_3a],null,null,true);
+return;
+}else{
+_3b.fixedcenter=ColdFusion.Util.castBoolean(_3b.fixedcenter);
+}
+}
+if(typeof (_3b.resizable)!="undefined"){
+if(ColdFusion.Util.isBoolean(_3b.resizable)==false){
+ColdFusion.Window.resetHTML(_3a);
+ColdFusion.handleError(null,"window.getupdatedconfigobject.invalidresizable","widget",[_3a],null,null,true);
+return;
+}else{
+_3b.resizable=ColdFusion.Util.castBoolean(_3b.resizable);
+}
+}
+if(typeof (_3b.draggable)!="undefined"){
+if(ColdFusion.Util.isBoolean(_3b.draggable)==false){
+ColdFusion.Window.resetHTML(_3a);
+ColdFusion.handleError(null,"window.getupdatedconfigobject.invaliddraggable","widget",[_3a],null,null,true);
+return;
+}else{
+_3b.draggable=ColdFusion.Util.castBoolean(_3b.draggable);
+}
+}
+if(typeof (_3b.closable)!="undefined"){
+if(ColdFusion.Util.isBoolean(_3b.closable)==false){
+ColdFusion.Window.resetHTML(_3a);
+ColdFusion.handleError(null,"window.getupdatedconfigobject.invalidclosable","widget",[_3a],null,null,true);
+return;
+}else{
+_3b.closable=ColdFusion.Util.castBoolean(_3b.closable);
+}
+}
+if(typeof (_3b.modal)!="undefined"){
+if(ColdFusion.Util.isBoolean(_3b.modal)==false){
+ColdFusion.Window.resetHTML(_3a);
+ColdFusion.handleError(null,"window.getupdatedconfigobject.invalidmodal","widget",[_3a],null,null,true);
+return;
+}else{
+_3b.modal=ColdFusion.Util.castBoolean(_3b.modal);
+}
+}
+if(typeof (_3b.refreshonshow)!="undefined"){
+if(ColdFusion.Util.isBoolean(_3b.refreshonshow)==false){
+ColdFusion.Window.resetHTML(_3a);
+ColdFusion.handleError(null,"window.getupdatedconfigobject.invalidrefreshonshow","widget",[_3a],null,null,true);
+return;
+}else{
+_3b._cf_refreshOnShow=ColdFusion.Util.castBoolean(_3b.refreshonshow);
+}
+}
+_3b.shadow=true;
+if(!_3b.height){
+_3b.height=300;
+}else{
+if(ColdFusion.Util.isInteger(_3b.height)==false){
+ColdFusion.Window.resetHTML(_3a);
+ColdFusion.handleError(null,"window.getupdatedconfigobject.invalidheight","widget",[_3a],null,null,true);
+return;
+}
+}
+if(!_3b.width){
+_3b.width=500;
+}else{
+if(ColdFusion.Util.isInteger(_3b.width)==false){
+ColdFusion.Window.resetHTML(_3a);
+ColdFusion.handleError(null,"window.getupdatedconfigobject.invalidwidth","widget",[_3a],null,null,true);
+return;
+}
+}
+var _3d=false;
+if(_3b.minwidth){
+if(ColdFusion.Util.isInteger(_3b.minwidth)==false){
+ColdFusion.Window.resetHTML(_3a);
+ColdFusion.handleError(null,"window.getupdatedconfigobject.invalidminwidth","widget",[_3a],null,null,true);
+return;
+}
+var _3e=_3b.minwidth;
+var _3f=_3b.width;
+if(typeof (_3e)!="number"){
+_3e=parseInt(_3e);
+}
+if(typeof (_3f)!="number"){
+_3f=parseInt(_3f);
+}
+if(_3e>_3f){
+ColdFusion.Window.resetHTML(_3a);
+ColdFusion.handleError(null,"window.getupdatedconfigobject.invalidminwidth","widget",[_3a],null,null,true);
+return;
+}
+_3b.minWidth=_3b.minwidth;
+_3d=true;
+}
+if(_3b.minheight){
+if(ColdFusion.Util.isInteger(_3b.minheight)==false){
+ColdFusion.Window.resetHTML(_3a);
+ColdFusion.handleError(null,"window.getupdatedconfigobject.invalidminheight","widget",[_3a],null,null,true);
+return;
+}
+var _40=_3b.minheight;
+var _41=_3b.height;
+if(typeof (_40)!="number"){
+_40=parseInt(_40);
+}
+if(typeof (_41)!="number"){
+_41=parseInt(_41);
+}
+if(_40>_41){
+ColdFusion.Window.resetHTML(_3a);
+ColdFusion.handleError(null,"window.getupdatedconfigobject.invalidheightvalue","widget",[_3a],null,null,true);
+return;
+}
+_3b.minHeight=_3b.minheight;
+_3d=true;
+}
+if(_3b.x){
+if(ColdFusion.Util.isInteger(_3b.x)==false){
+ColdFusion.Window.resetHTML(_3a);
+ColdFusion.handleError(null,"window.getupdatedconfigobject.invalidx","widget",[_3a],null,null,true);
+return;
+}
+}
+if(_3b.y){
+if(ColdFusion.Util.isInteger(_3b.y)==false){
+ColdFusion.Window.resetHTML(_3a);
+ColdFusion.handleError(null,"window.getupdatedconfigobject.invalidy","widget",[_3a],null,null,true);
+return;
+}
+}
+if(typeof (_3b.x)=="undefined"&&(typeof (_3b.fixedcenter)=="undefined"||_3b.fixedcenter==false)){
+_3b.x=ColdFusion.Window.xPosition;
+ColdFusion.Window.xPosition+=15;
+}
+if(typeof (_3b.y)=="undefined"&&(typeof (_3b.fixedcenter)=="undefined"||_3b.fixedcenter==false)){
+_3b.y=ColdFusion.Window.yPosition;
+ColdFusion.Window.yPosition+=15;
+}
+if(typeof (_3b.initshow)!="undefined"&&_3b.initshow===false){
+_3b.tempinitshow=false;
+if(typeof (_3b.fixedcenter)!="undefined"&&_3b.fixedcenter===true){
+_3b.tempcenter=_3b.fixedcenter;
+_3b.fixedcenter=null;
+}else{
+_3b.tempx=_3b.x;
+_3b.tempy=_3b.y;
+}
+_3b.x=-10000;
+_3b.y=-10000;
+}
+_3b.constraintoviewport=true;
+_3b.initshow=true;
+if(_3b.resizable!=null&&_3b.resizable==false&&_3d==true){
+ColdFusion.Window.resetHTML(_3a);
+ColdFusion.handleError(null,"window.getupdatedconfigobject.minhwnotallowed","widget",[_3a],null,null,true);
+return;
+}
+_3b.collapsible=false;
+_3b.shadow=true;
+_3b.isConfObj=true;
+return _3b;
+};
+ColdFusion.Window.show=function(_42){
+var _43=ColdFusion.objectCache[_42];
+if(typeof (_43)!="undefined"&&_43!=null){
+if(typeof (_43.isConfObj)!="undefined"&&_43.isConfObj==true){
+_43.initshow=true;
+var _44=ColdFusion.Window.createHTML(_42,null,_43.url,_43,true);
+ColdFusion.Window.createJSObj(_42,_43.url,_44);
+}else{
+if(_43.isVisible()==false){
+_43.show();
+ColdFusion.Log.info("window.show.shown","widget",[_42]);
+}
+if(_43.tempcenter!=null){
+_43.center();
+_43.tempcenter=null;
+}else{
+if(_43.getEl()&&_43.getEl().getX()>0&&_43.getEl().getY()>0){
+_43.tempx=null;
+_43.tempy=null;
+}else{
+if(_43.tempx!=null&&_43.tempy!=null){
+_43.setPosition(_43.tempx,_43.tempy);
+_43.tempx=null;
+_43.tempy=null;
+}else{
+var x=_43.getEl().getX();
+var y=_43.getEl().getY();
+_43.setPosition(x+1,y+1);
+_43.setPosition(x,y);
+}
+}
+}
+}
+}else{
+ColdFusion.handleError(null,"window.show.notfound","widget",[_42],null,null,true);
+}
+};
+ColdFusion.Window.hide=function(_47){
+var _48=ColdFusion.objectCache[_47];
+if(_48){
+if(_48.isVisible&&_48.isVisible()==true){
+_48.hide();
+ColdFusion.Log.info("window.hide.hidden","widget",[_47]);
+}
+}else{
+ColdFusion.handleError(null,"window.hide.notfound","widget",[_47],null,null,true);
+}
+};
+ColdFusion.Window.onShow=function(_49,_4a){
+var _4b=ColdFusion.objectCache[_49];
+if(typeof (_4b)!="undefined"&&_4b!=null){
+_4b._cf_onShow=_4a;
+if(_4b.addListener){
+_4b.addListener("show",ColdFusion.Window.onShowWrapper);
+}
+}else{
+ColdFusion.handleError(null,"window.onshow.notfound","widget",[_49],null,null,true);
+}
+};
+ColdFusion.Window.onShowWrapper=function(_4c){
+_4c._cf_onShow.call(null,_4c.cfwindowname);
+};
+ColdFusion.Window.onHide=function(_4d,_4e){
+var _4f=ColdFusion.objectCache[_4d];
+if(typeof (_4f)!="undefined"&&_4f!=null){
+_4f._cf_onHide=_4e;
+if(_4f.addListener){
+_4f.addListener("hide",ColdFusion.Window.onHideWrapper);
+}
+}else{
+ColdFusion.handleError(null,"window.onhide.notfound","widget",[_4d],null,null,true);
+}
+};
+ColdFusion.Window.onHideWrapper=function(_50){
+_50._cf_onHide.call(null,_50.cfwindowname);
+};
+ColdFusion.Window.getWindowObject=function(_51){
+if(!_51){
+ColdFusion.handleError(null,"window.getwindowobject.emptyname","widget",null,null,null,true);
+return;
+}
+var _52=ColdFusion.objectCache[_51];
+if(_52==null||(typeof (_52.isConfObj)=="undefined"&&Ext.Window.prototype.isPrototypeOf(_52)==false)){
+ColdFusion.handleError(null,"window.getwindowobject.notfound","widget",[_51],null,null,true);
+return;
+}
+if(typeof (_52.isConfObj)!="undefined"&&_52.isConfObj==true){
+_52.initshow=true;
+var _53=ColdFusion.Window.createHTML(_51,null,_52.url,_52,true);
+ColdFusion.Window.createJSObj(_51,_52.url,_53);
+ColdFusion.Window.hide(_51);
+_52=ColdFusion.objectCache[_51];
+}
+return _52;
+};

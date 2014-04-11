@@ -1,0 +1,28 @@
+PHTTP208.93.105.173"·
+ POST /lwes/impression HTTP/1.1
+Host: www.yellowpages.com
+Connection: keep-alive
+Content-Length: 1403
+Accept: */*
+$Origin: http://www.yellowpages.com
+"X-Requested-With: XMLHttpRequest
+vUser-Agent: Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/31.0.1650.63 Safari/537.36
+@Content-Type: application/x-www-form-urlencoded; charset=UTF-8
+&Referer: http://www.yellowpages.com/
+$Accept-Encoding: gzip,deflate,sdch
+!Accept-Language: en-US,en;q=0.8
+ÈCookie: vrid=93cb78b9-2a7d-4082-9dae-451606d3bb62; newb=fallback; usedMyBook=false; optimizelySegments=%7B%22355640769%22%3A%22gc%22%2C%22356170728%22%3A%22false%22%2C%22356260792%22%3A%22direct%22%2C%22376690076%22%3A%22none%22%7D; optimizelyEndUserId=oeu1396996647616r0.8194794468581676; optimizelyBuckets=%7B%22695223541%22%3A%220%22%7D; optimizelyPendingLogEvents=%5B%5D; zone=240; IPE_S_112291=0; __utma=150871230.1598246183.1396996648.1396996648.1396996648.1; __utmb=150871230.1.10.1396996648; __utmc=150871230; __utmz=150871230.1396996648.1.1.utmcsr=(direct)|utmccn=(direct)|utmcmd=(none); imageIndex=4; s_cc=true; s_nr=1396996648631; s_sq=%5B%5BB%5D%5D; connect.sess=s%3Aj%3A%7B%22dks%22%3A%22394bf003-38b6-44f3-b7a8-ea214a9c5ac2%22%7D.eF1f5xL4WnNYpqrNMbNRMGuPss9QjYF9vrpIFnu7uZg; s_vi=[CS]v1|29A23D140514A571-60000174E000ABB9[CE]; s_ppv=home_main%2C16%2C16%2C518
+˝
+
+cp1=MDM&iid1=3dedb801-ce5f-4b39-a49d-58c53c5b58d0&lid1=8058451&moi1=119&poi1=1&srid1=170d8119-8bb9-40d9-b062-36681c481a34&t1=listing&tol1=free&ypid1=8058451&lhc1=8004262&ldir1=MDEXMA&rate1=5&cp2=MDM&iid2=679938d4-772c-4774-bbdc-604f3b7de9b5&lid2=7742037&moi2=119&poi2=2&srid2=504174ec-48c0-4868-a976-9f4ae9ba37d0&t2=listing&tol2=free&ypid2=7742037&lhc2=8011539&ldir2=MDEXMA&rate2=5&cp3=MDM&iid3=dcca6099-088f-4a61-910e-cab8f50c7d89&lid3=478663&moi3=119&poi3=3&srid3=d4538aa8-8bc4-4fb9-adfe-b47e6278424a&t3=listing&tol3=free&ypid3=478663&lhc3=8002304&ldir3=MDEXMA&rate3=4&cp4=31&iid4=e731394c-9774-44cb-95ab-996b82252a37&lid4=1000240949080&moi4=114&poi4=1&srid4=16e81f72-a7d4-42ff-9957-2bd2cb30a653&t4=coupon&tol4=sub&ypid4=456282208&cp5=31&iid5=044d03a2-3d5a-4145-8703-19bbf44cff4f&lid5=201763724&moi5=114&poi5=2&srid5=0a768627-4aac-4df6-b43d-6d36e36801c3&t5=coupon&tol5=sub&ypid5=5304411&iid6=7f5fad15-8314-4e6a-96f5-53f2fafbed4c&lid6=1000416688818&moi6=114&poi6=3&srid6=a03af5dd-2e81-4e09-91b7-43dad4f2c96b&t6=coupon&tol6=sub&ypid6=12900470&aid=webyp&eaid=YPU&rid=webyp-e7ee7381-9758-4f92-9166-4a7b4673ac50&enc=1&ptid=www.yellowpages.com&referrer=&ts=145437d2d4b&ua=Mozilla%2F5.0+(X11%3B+Linux+x86_64)+AppleWebKit%2F537.36+(KHTML%2C+like+Gecko)+Chrome%2F31.0.1650.63+Safari%2F537.36&uip=128.30.76.55&url=http%3A%2F%2Fwww.yellowpages.com%2F&v=100&version=10844&vrid=93cb78b9-2a7d-4082-9dae-451606d3bb62*È
+HTTP/1.1 200 OK
+Server: nginx
+%Date: Tue, 08 Apr 2014 22:37:29 GMT
+Content-Type: text/plain
+Content-Length: 2
+Connection: keep-alive
+X-Powered-By: Express
+Vary: User-Agent
+ùSet-Cookie: connect.sess=s%3Aj%3A%7B%22dks%22%3A%22394bf003-38b6-44f3-b7a8-ea214a9c5ac2%22%7D.eF1f5xL4WnNYpqrNMbNRMGuPss9QjYF9vrpIFnu7uZg; Path=/; HttpOnly
+
+OK

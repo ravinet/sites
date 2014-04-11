@@ -1,0 +1,98 @@
+PHTTP
+18.7.20.70"±
+JGET /WebResource/Scripts/TP_CoreMetrics/cmdatatagutils.en.v3.js HTTP/1.1
+Host: images10.newegg.com
+Connection: keep-alive
+Accept: */*
+vUser-Agent: Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/31.0.1650.63 Safari/537.36
+!Referer: http://www.newegg.com/
+$Accept-Encoding: gzip,deflate,sdch
+!Accept-Language: en-US,en;q=0.8
+´Cookie: mt.v=2.2022544403.1396994772664; NV%5FCONFIGURATION=#5%7B%22Sites%22%3A%7B%22USA%22%3A%7B%22Values%22%3A%7B%22wd%22%3A%220%22%2C%22w58%22%3A%22USD%22%2C%22w57%22%3A%22USA%22%7D%2C%22Exp%22%3A%221483394772%22%7D%7D%7D; NV%5FFV=#5%7B%22Sites%22%3A%7B%22USA%22%3A%7B%22Values%22%3A%7B%22RememberLanguage%22%3A%22en%22%7D%2C%22Exp%22%3A%221397081172%22%7D%7D%7D; NV%5FDVINFO=#5%7B%22Sites%22%3A%7B%22USA%22%3A%7B%22Values%22%3A%7B%22w19%22%3A%22Y%22%7D%2C%22Exp%22%3A%221397081172%22%7D%7D%7D; NVTC=248326808.0001.867337356.1396994772.1396994772.1396994772.1
+
+*‹(
+HTTP/1.1 200 OK
+"Cache-Control: max-age=946080000
+(Expires: Wed, 02 Dec 2043 18:33:08 GMT
+&Content-Type: application/javascript
+.Last-Modified: Tue, 21 May 2013 11:40:46 GMT
+Content-Length: 4809
+X-Served-By: e3cac05
+X-Cache-Hits: 0
+%Date: Tue, 08 Apr 2014 22:06:12 GMT
+Connection: keep-alive
+Ë%
+ï»¿/*
+ * cmdatatagutils.js 
+ * $Id: cmcustom-10068177-90172959-032211.txt 167139 2011-03-24 17:22:55Z whbird $
+ * $Revision: 167139 $
+ *
+ * Version 4.1.0
+ *
+ * Coremetrics Tag v4.0, 8/7/2006
+ * COPYRIGHT 1999-2002 COREMETRICS, INC. 
+ * ALL RIGHTS RESERVED. U.S.PATENT PENDING
+ * ----------------------------------------------------------------
+ * 03/22/10	WBird		Converted to hosted libs + cmcustom
+ */
+ 
+// Set MMC cookie for use by order tags.  Store MMC values from URL in a 30-day cookie.
+var MMCValue = cmExtractParameter("cm_mmc",window.location.href);
+if (MMCValue) {
+	var expDate = new Date();
+	expDate.setTime(expDate.getTime() + 2592000000);
+	document.cookie = "cm_mmc_ck="+MMCValue+"; domain=newegg.com; path=/; expires="+expDate.toGMTString();
+}
+  
+/* TAG GENERATING FUNCTIONS */
+
+function cmCreatePageviewTag(pageID, categoryID, searchString, searchResults, serverName, attributes, extraFields) {
+	cmMakeTag(["tid","1","pi",pageID,"cg",categoryID,"se",searchString,"sr",searchResults,"pv1",serverName,"cmAttributes",attributes,"cmExtraFields",extraFields]);
+}
+
+function cmCreateProductviewTag(productID, productName, categoryID, serverName, attributes, cm_vc) {
+	cmMakeTag(["tid","5","pi",c1(cm_ClientID) ? c1(cm_ClientID) : "Product: " + productName + " (" + productID + ")","pr",productID,"pm",productName,"cg",categoryID,"pv1",serverName,"pc","Y","cm_vc",cm_vc?cm_vc:cmExtractParameter("cm_vc",document.location.href),"cmAttributes",attributes]);
+}
+
+function cmCreateShopAction5Tag(productID, productName, productQuantity, productPrice, categoryID,manufactureName,extraField,attributes,extraFields) {
+	if ((typeof(cm_currencyCode) == "undefined") || (!cm_currencyCode)) {
+		cm_currencyCode = "";
+	}
+    productPrice = productPrice.toString().replace(cmPricePattern, "");
+	productID = productID.toString().replace(cmSpacePattern, "");
+	var hashValue = "" + (attributes ? attributes + "|||" : "") + (extraFields ? "extra" + extraFields : "");
+	cmAddShop(["pr",productID,"pm",productName,"qt",productQuantity,"bp",productPrice,"cg",categoryID,"sx1",manufactureName,"sx2",extraField,"cmAttributes",attributes,"cmExtraFields",extraFields,"ha1",cm_hex_sha1(hashValue),"cc",cm_currencyCode,"at","5","tid","4","pc","N"]);
+}
+
+function cmCreateShopAction9Tag(productID, productName, productQuantity, productPrice, customerID, orderID, orderTotal, categoryID,manufactureName,extraField,attributes,extraFields) {
+	if ((typeof(cm_currencyCode) == "undefined") || (!cm_currencyCode)) {
+		cm_currencyCode = "";
+	}
+    productPrice = productPrice.toString().replace(cmPricePattern, "");
+	orderTotal = orderTotal.toString().replace(cmPricePattern, "");
+	productID = productID.toString().replace(cmSpacePattern, "");
+	var hashValue = "" + (attributes ? attributes + "|||" : "") + (extraFields ? "extra" + extraFields : "");
+	cmAddShop(["pr",productID,"pm",productName,"qt",productQuantity,"bp",productPrice,"cg",categoryID,"sx1",manufactureName,"sx2",extraField,"cmAttributes",attributes,"cmExtraFields",extraFields,"ha1",cm_hex_sha1(hashValue),"cd",customerID,"on",orderID,"tr",orderTotal,"cc",cm_currencyCode,"at","9","tid","4","pc","N"]);
+}
+
+function cmCreateOrderTag(orderID,orderTotal,orderShipping,customerID,customerCity,customerState,customerZIP,paymentType,shippingMethod,attributes,extraFields) {
+	if ((typeof(cm_currencyCode) == "undefined") || (!cm_currencyCode)) {
+		cm_currencyCode = "";
+	}
+    orderShipping = orderShipping.toString().replace(cmPricePattern, "");
+	orderTotal = orderTotal.toString().replace(cmPricePattern, "");	
+	var mmcValue = cI("cm_mmc_ck");
+	if (mmcValue) {
+		var mmcArray = mmcValue.split("-_-");
+		cmMakeTag(["tid","3","osk",cmCalcSKUString(),"on",orderID,"tr",orderTotal,"sg",orderShipping,"cd",customerID,"ct",customerCity,"sa",customerState,"zp",customerZIP,"cc",cm_currencyCode,"cmAttributes",attributes,"cmExtraFields",extraFields,"or1",paymentType,"or2",shippingMethod,"or3",mmcArray[0],"or4",mmcArray[1],"or5",mmcArray[2],"or6",mmcArray[3]]);
+	}
+	else {
+		cmMakeTag(["tid","3","osk",cmCalcSKUString(),"on",orderID,"tr",orderTotal,"sg",orderShipping,"cd",customerID,"ct",customerCity,"sa",customerState,"zp",customerZIP,"cc",cm_currencyCode,"cmAttributes",attributes,"cmExtraFields",extraFields,"or1",paymentType,"or2",shippingMethod]);
+	}
+}
+
+function cmCreateRegistrationTag(customerID, customerEmail, customerCity, customerState, customerZIP, newsletterName, subscribe, attributes, customerCountry) {
+	cmMakeTag(["tid","2","cd",customerID,"em",customerEmail,"ct",customerCity,"sa",customerState,"zp",customerZIP,"nl",newsletterName,"sd",subscribe,"cy",customerCountry,"cmAttributes",attributes]);
+}
+
+if(cm_production_on){cmSetClientID("90172959",false,"cm.newegg.com","newegg.com");}else{cmSetClientID("60172959",false,"testdata.coremetrics.com","newegg.com");};

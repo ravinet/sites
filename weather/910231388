@@ -1,0 +1,92 @@
+PHTTP
+18.7.20.70"Ë
+GET /js/NidsESRI.js HTTP/1.1
+Host: www.weather.gov
+Connection: keep-alive
+Accept: */*
+vUser-Agent: Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/31.0.1650.63 Safari/537.36
+"Referer: http://www.weather.gov/
+$Accept-Encoding: gzip,deflate,sdch
+!Accept-Language: en-US,en;q=0.8
+
+*×
+HTTP/1.1 200 OK
+.Last-Modified: Mon, 24 Mar 2014 17:17:43 GMT
+!Server: Apache/2.2.15 (Red Hat)
+Accept-Ranges: bytes
+Content-Length: 2578
+Content-Type: text/javascript
+Cache-Control: max-age=152
+(Expires: Tue, 08 Apr 2014 22:37:21 GMT
+%Date: Tue, 08 Apr 2014 22:34:49 GMT
+Connection: keep-alive
+”
+(function() {
+
+    window.ESRI = {};
+    ESRI.Geocode = {};
+    ESRI.Geocode.CreateRequestParameters = function(query, additionalOutFields, maxLocations) {
+        var rtn = {
+            sourceCountry: 'USA',
+            text: query,
+            maxLocations: maxLocations || 5,
+            f: 'json'
+        };
+
+        if (typeof additionalOutFields !== 'undefined' && additionalOutFields !== null && additionalOutFields.length > 0) {
+            var fieldsToInclude = ["Score", "Addr_Type"];
+            //var fieldsToInclude = [];
+            $.each(additionalOutFields, function (i, val){
+                if (fieldsToInclude.indexOf(val) === -1){
+                    fieldsToInclude.push(val);
+                }
+            });
+            
+            
+            var additionalFieldsCSV = fieldsToInclude.join(",");
+            rtn = $.extend(rtn, {outFields: additionalFieldsCSV});
+        }
+        
+        return rtn;
+    };
+    
+    ESRI.Geocode.Find = function(IEversion,query, additionalFields, maxLocations, callback) {
+    	
+    	if(IEversion < 10){
+    		var url = "http://geocode.arcgis.com/arcgis/rest/services/World/GeocodeServer/find?text=" + query + "&sourceCountry=USA" + "&f=json&maxLocations=5";
+    		xdr = new XDomainRequest();   // Creates a new XDR object.
+    		xdr.open("GET", url); // Creates a cross-domain connection with our target server using GET method.
+    		xdr.send(); //Send string data to server
+    		xdr.onload = function () { //After load, parse data returned by xdr.responseText           
+    			var jsonData = $.parseJSON(xdr.responseText);
+    			if(jsonData == null || typeof (jsonData) == 'undefined'){
+    				jsonData = $.parseJSON(data.firstChild.textContext);
+    			}
+    			
+    			callback(jsonData, {success:true});
+    		};
+    	}else{
+    		var params = ESRI.Geocode.CreateRequestParameters(query, additionalFields, maxLocations);
+    		$.get('http://geocode.arcgis.com/arcgis/rest/services/World/GeocodeServer/find',
+    				params,
+    				function(response) {
+                	if (typeof callback !== 'undefined') {
+                		if (response && response.locations && response.locations.length > 0){
+                			callback(response, {success:true});
+                		}else{
+                			callback(null, {success:false});
+                		}
+                	}
+            	},
+            	'json'
+            	).fail(function(){
+            		if (typeof callback !== 'undefined'){
+            			callback(null, {success:false});
+            		}
+            	}
+            );
+    	}
+    };
+
+})();
+

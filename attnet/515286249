@@ -1,0 +1,36 @@
+PHTTP98.137.201.232"”)
+£POST /v1/public/yql?format=json&yhlVer=2&yhlClient=rapid&yhlS=1197744451&yhlBTMS=1397237366844&yhlClientVer=3.15&yhlRnd=IeslMlr2lI7Qh2cQ&yhlCompressed=3 HTTP/1.1
+Host: geo.query.yahoo.com
+Connection: keep-alive
+Content-Length: 4316
+Origin: http://att.yahoo.com
+vUser-Agent: Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/31.0.1650.63 Safari/537.36
+@Content-Type: application/x-www-form-urlencoded; charset=UTF-8
+Accept: */*
+ Referer: http://att.yahoo.com/
+$Accept-Encoding: gzip,deflate,sdch
+!Accept-Language: en-US,en;q=0.8
+çCookie: B=2rvdjl59kg9je&b=3&s=0t; IU=d=8MhGdkwebZhvdumAg4PGXGw4XdSx&v=1; RMBX=2rvdjl59kg9je&b=3&s=0t&t=100; fsr.s=%7B%22rid%22%3A%22d1159f3-80363040-adc3-ce35-b2708%22%2C%22to%22%3A3%2C%22v%22%3A1%2C%22c%22%3A%22http%3A%2F%2Fatt.yahoo.com%2F%22%2C%22pv%22%3A1%2C%22lc%22%3A%7B%22d0%22%3A%7B%22v%22%3A1%2C%22s%22%3Atrue%7D%7D%2C%22cd%22%3A0%2C%22sd%22%3A0%7D
+Þ!
+q=select%20*%20from%20x%20where%20a%20%3D%20'zZvfbtvIFYdfZSBg4S3giTmc%2FwaKheNk4yBxEsTOutnuwhiSQ4k1Rark0AoRBEjv2oteFL1pX6APtg%2Bwz9AzlCVrnVgiZC2gIFBmhhRFfufwd86ZmXwcRJPB4cfB5SQfHJL9wdHl9eBwQB8RPtgfOFs76OkggM5l5NuVmWTJ4NP%2BoBoc%2FvnjoBvK4tF1ZqdwTg1dQrSUjDFOYGDSXfzosoYvHQ5%2BHJ%2FUtHzRvK70lbimT%2F1VpzBunHvUmlFZPorL8YEfrbrzo8Zwkuf6aqj%2FYmF4XF35H2xqf2Xf8j9xbeFWBnU3VqVj4odDKm%2B6Yddl%2FKZLoRuGhNx0me9SqfxPPv3to8RxmdjL7vnh9i6Hxj%2F0pYMnJFRL%2BBIVYn%2BQX3cYxv4OXDWG7%2BXdwCU8N%2FwOEMmv4FiaFaaI7dJDRnk5rA8Sk%2BUtdll8ZasDM7bw%2BwbXGNc2rqzD2MZlUY6zGE%2BtmZQFdiWGEWeyAk8aB59hQEkYCCIfjdw497c9Kb0RGIN2NGtTP2z8gyQ2NU3uvGU9JuOPuPD23p3HE%2FvjQ2hYpqjVimMuhcI0NRwrERAsUqNlIhUjQewvPTfE5Grom%2F6Xbe6JZOPhrO3ml63qSeFvqTDX0MtcDG3vW96CLPB%2FhJD0LAjI3ALL%2BOdYwznWoxmxvRr9NJgh%2B2mA5szQjNkhOjYFyhy6AYfeeHDf7RiqUZIXvwsrOmd1Zq4t%2BvVv%2F1o6xubHTsvKojy7ssiNshrO%2Bt%2FSWXx%2B1vd2aqvl0z7%2FY%2Bk0MT%2FtfGTRW5ugs%2FIDMnDd2mV5Dp8W%2FDuBbxqHDHrz9AkaNi2a5KaFUTMEy9QOjtoxAhvBv92hMk1rlBs40lpTLdmMP9xmRNNQEhNiE0QSU0It1gGXmKiUJBGNjI6Tr9iMPsxmKmRqnc3kCpupXjbTvWxGg%2FlpP4DmwbF%2FLhEWW3griOY6jVJsQSwxVZJiExGCCbdUh8RGiVgQZtsSEHgrNABmKwDThS4%2Fef4enZ2%2Ffnv07Ck6OTp%2BcTbzz4vnL1%2Bi89fnRy9fvkfnb49enX3%2F%2Bu0pev%2F63Vv04vn58cnTV%2BhbQtBkVLqy%2FsOOUdvIL%2FtgC%2B%2F3S0r7%2BCVl%2FfxyITmFndZLQZPjeGSqoU3wVZYUZjLJiiEuYjypSpD%2FxpVVjVMD4lEBLUa4ksEXgVE%2B3EKGRILGjGGdSoMpZDrY0ETgCBIfZVVsNIu2HxgV4WuEgy40mKMbUF5Mb1mhMkWvjtEtLoicM147BmizcNiD0Apppb2klfaTVraQ1vOsaNFpVhS2Lp1B46a2zRi4x6YoLURCsg%2B3jn14w2WeILgS2AWyF0gZkyWrqIdbJVWKBlwxLME4mHKiwCCQs6RUB6kJYprYr1nlgQFPUinWWIWR%2B63Cwj5WYbSfVdg9wlI3VQqi4SprXI3LaYFta72sRLkd42FmCoencG%2BY6IARyoW%2BKyv64fYRWqeJCVJ4awKOaZBAEmlT%2BM2IS5lQEcSR2LqsQKVG1plnIcdnHSZ03mFCJ4D39bRAT1uL3sxQoWnmRuiZ54UugNeOAdrMgXsQEiscWPZyYNXPgRfqU49NnkdNnYGuLHuySa6zuqwOGPhrW3sXdjZ2uC2bqrZ5iqnGI9AaB9aCMAq9qBliQvyDaq7ueDUPHm60JDZK8ESDzDANqhNQrGlEcGq1ZImGUBDz7QdLyeUam%2FGFQjNw1bZGrvRe7Gmh9ze00PdVOe6Kkb2TBbQ99LgZ7hijzeJlD0grlJn3UmbeT5n5fco8LcemwG5UldMa16PS4hGUk6ZqcZxnhSsLfG2HpsYBYeC%2FKuB3XZhswTyECxboBBurIXACN6xYDHE0tlKGFkxF6faFmfBgnXUWwnzhKaEZJeQpIahiTmag0PEMlE8Ff%2FCsdgzOZqLcg84KUea9RJn3E2W%2BEOXpdLrkumlZJgdj05ZFYbLaghNbfGVbP4kXWecg3xhWYCKQ4XhkLZygoCKHv1oG7K4Xhw83FCRihvukPKYh1JUykdgYpnBKQpYGNqFMBNv3YsrCNXYSCyE%2BXbA6RH4W6YVtvSo%2F7mChZzNY6LiDtWNsNkyN18NZIcCilwCLfgIs7k2NXWWKocVjA8V1ng1HrpuCzorGgiD7jPkKV%2BDDk9wU1mGwESQlZVFjEnBNglB8kVTQbQRMIi0zFvsJNUzTyOCIsxA%2BUiWlFoG0duu%2BrGm4bupO3KbKM2xo7xS4oZee2x46noNDZx04X4%2F7qdI3HTv0fM5ux2Bt5Nx9aK1QaNFLoUU%2FhRa%2FUWhbDE0ytK5z7xASh4OAHZDgADJp8ORx9gGHfp5pPPGmGGUTPIbb%2F66Is%2BSP7oPLi6umNmU%2B6Z6SK71krC2sJAiaqCQNNDYyopAKhhabKFVQ8ghlaSCVInr7Kg310xpbyYVKg7O26BWkFLZIyr0aVaaytUNDM7YIsgxfaaCLLEPvdgzMZhLdg8wKiZa9JFr2k2jJfmOCXz%2F%2FfYnwFhZEAtAISyHqhSr280NQY2vuZ4oMt0QIbcJ4MT9Et%2BV6JAx9dR2uArwQ1eMSUln0wtiJrYosvkIYQ3ZrsnGNzk9%2FBFEtId19XqOLqiyGOwZnI%2FfrQ2eFiMpeIir7iahciKhpXLmcIviM4aBuwCj4r00GSQCIqp%2Bqt9dVmUPXGV%2B3DccxbpsrqNgmVemn0hj1YUJ9ketuYQ1F2K5EAImwPMI0IBE2sUhwEqc0MAyKlN9hKk2Eat1EkVqo6NktLuRx%2BbR2hgude1z76NnpMXrveaGOF3xmsW13jNNmEw89QK0QVdVLVFU%2FUVX35b2QnyUtHlvw3zq39gpiHK4hCXaTUVlY7%2BIMOxw1LfZdogPBmab0rjNvYzUlkCK1UmBLUoh8gRXYcL9kHSZBLFKmouh3SAmgLltno4UuPwOv7Xj5cs0j6%2BbM5tjQLTaf8Hpy6JfP%2F0ZR43y24FdCfvn8Xwf9FhIIu2PwNksbetBboduql26rfrqtFro9HJsvdiCZKMazVlW2JofarpnkFs86tTPOjm3hcOLXRJoiAc0KKIWqOIQ6Gfsv%2B9cGxza3UZW5zNZ3X4AtLFwxZlgcK4aZMGBDo6CAYVECpQw1qQl1GiVk2y9AGGqt15hQL9T8rccF5Z1nh04N2GE2cjYHiJ4AQPTOA9wxNpv4dy84KxRc91Jw3U%2FB9ULBv9zFwrew6hRGEafSBjgmimJCLMVRJFOcBIqGkSQylmZOeHu7WHi3tWvVdgy9kN8uf3hpPzQ1evUn9C3RX25M2QkQm21M6UFihZTqXlKq%2B0mpXkjp3qlJ0Kkt9tDFyMJ1z0e2RRfQOoQ3vUBPKjNZftPFFhaJCAkM1B4KJ4pB%2FDKUAX6SYB6njEdcCRmxr7zpD1y%2BF5Kt2WMIWfy9%2BCGj7IGfBmEf%2FDSg9%2BRqswBWJklXiThrYr8FyOS5Hdokb3EMTT9Z2SQ%2Blhn8zdPwGxV8o1Vt6rqF%2FK5x8yHtp%2BkLXNnYZte2xpOmyOpRFwPLFNfZB5yYFk9MluC6qSe28BN2kA1yEXISBnein9jCAguNUyEtpTj0xqeRlFjxiOBQRzplOolS%2FjW7P3CuU5A1KToNFrp7PgOOFsBRBxzdAEcG0r3%2FdKiRRw3Jns8PCzSHjG4h%2BwQRICOAjDxkdAt5x6huNinaAytf8TaJXm%2BT7Pc2qZX1fDSe%2BsQwvqrxqE0qvwMmKmu%2F4JpmlU39hLatakw4KDTl8u6GGLGFVRkSRSKJhVc8ojFNEo0VhdwmghTUpITzSG9%2FxUqHbE1qQ4NFGHh8eoEed5DQyQzSPnrcUULfL1FCz0r01rchTlRlMxyh527HUG3mzutZkRXBgfQKDqRfcCCL4FCPsmL5v1rkfrapth8OpiPQeldOJjbBfufMEPQ898re7fvqNP5mIzoeNXVkiqSbyYJ8V93dRiq2sC4TxtoEWkMYt2GEqYD6VLGUYG5MyqwhUJ6qrbu34sGaTZKULIT9YtSi535a1SND7zyyrrI%2F67DN9oF1qn10s3%2F%2FtEUnM3I7hmqzvfo9WK1Qa9JLrclqtf55f9D6ox8%2Fffq568z%2BZxTcUjlxZeNubroo86716f8%3D'*³
+HTTP/1.1 200 OK
+*X-YQL-Host: fan1553.sports.bf1.yahoo.com
+3Access-Control-Allow-Origin: http://att.yahoo.com
+HCache-Control: private, no-cache, no-store, must-revalidate, max-age=0
+ØP3P: policyref="http://info.yahoo.com/w3c/p3p.xml", CP="CAO DSP COR CUR ADM DEV TAI PSA PSD IVAi IVDi CONi TELo OTPi OUR DELi SAMi OTRi UNRi PUBi IND PHY ONL UNI PUR FIN COM NAV INT DEM CNT STA POL HEA PRE LOC GOV"
+Pragma: no-cache
+(Expires: Wed, 01 Mar 1995 00:00:00 GMT
+(Access-Control-Allow-Credentials: true
+NAccess-Control-Allow-Headers: Origin, X-Requested-With, Content-Type, Accept
+-Access-Control-Allow-Methods: POST, OPTIONS
+.Content-Type: application/json;charset=utf-8
+%Date: Fri, 11 Apr 2014 17:29:26 GMT
+Server: ATS
+Age: 0
+Transfer-Encoding: chunked
+Connection: keep-alive
+ˆ
+7b
+{"query":{"count":1,"created":"2014-04-11T17:29:26Z","lang":"en-US","results":{"result":"0 ywamob, 1 geo. 3 geo, 0 ywa."}}}
+0
+

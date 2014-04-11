@@ -1,0 +1,606 @@
+»HTTPS208.88.144.50"°
+2GET /etc/designs/scottrade/css/tabs.css HTTP/1.1
+Host: www.scottrade.com
+Connection: keep-alive
+Accept: text/css,*/*;q=0.1
+vUser-Agent: Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/31.0.1650.63 Safari/537.36
+%Referer: https://www.scottrade.com/
+$Accept-Encoding: gzip,deflate,sdch
+!Accept-Language: en-US,en;q=0.8
+ºCookie: TS354152=709f195c96dab0d0e6ef6dd107dbbb4df092e532f2baf70353447685; mmcore.tst=0.465; mmid=195399505%7CAQAAAAqYBjdvXgoAAA%3D%3D; mmcore.pd=-1851146211%7CAQAAAAoBQpgGN29eCmrYFP4BAO3eYReQIdFIAAwAAADt3mEXkCHRSAAAAAD/////AP//////////AAZEaXJlY3QBXgoBAAAAAAABAAAAAAD///////////////8AAAAAAAFF; mmcore.srv=cg8.use
+
+*Ž«
+HTTP/1.1 200 OK
+Content-Length: 21669
+Content-Type: text/css
+.Last-Modified: Tue, 01 Apr 2014 23:15:34 GMT
+Accept-Ranges: bytes
+ETag: "1cbe44804ecf1:0"
+X-Powered-By:  
+%Date: Tue, 08 Apr 2014 22:21:57 GMT
+§©
+#tabs {margin-bottom:25px;}
+#_par_tabbedcolumns {margin-bottom:25px;}
+.ui-helper-hidden { display: none; }
+.ui-helper-hidden-accessible { position: absolute; left: -99999999px; }
+.ui-helper-reset { margin: 0; padding: 0; border: 0; outline: 0; line-height: 1.3; text-decoration: none; font-size: 100%; list-style: none; }
+.ui-helper-clearfix:after { content: "."; display: block; height: 0; clear: both; visibility: hidden; }
+.ui-helper-clearfix { display: inline-block; }
+/* required comment for clearfix to work in Opera \*/
+* html .ui-helper-clearfix { height:1%; }
+.ui-helper-clearfix { display:block; }
+/* end clearfix */
+.ui-helper-zfix { width: 100%; height: 100%; top: 0; left: 0; position: absolute; opacity: 0; filter:Alpha(Opacity=0); }
+
+.ui-widget { font-family:arial; font-size:12px; }
+.ui-widget .ui-widget { font-size: 1em; }
+.ui-widget input, .ui-widget select, .ui-widget textarea, .ui-widget button { font-family: Trebuchet MS, Tahoma, Verdana, Arial, sans-serif; font-size: 1em; }
+.ui-widget-content { border:none; }
+
+
+.ui-tabs { position: relative; zoom: 1; padding:0; } /* position: relative prevents IE scroll bug (element with position: relative inside container with overflow: auto appear as "fixed") */
+.ui-tabs-nav { background:none; }
+.ui-tabs .ui-tabs-nav li {list-style: none; float: left; position: relative; border-bottom: 0 !important; padding: 0; white-space: nowrap; margin:0; }
+.ui-tabs .ui-tabs-nav li a { float: left; padding: .5em 1em; text-decoration: none; }
+.ui-tabs .ui-tabs-nav li.ui-tabs-selected { margin-bottom: 0; padding-bottom: 1px; }
+.ui-tabs .ui-tabs-nav li.ui-tabs-selected a, .ui-tabs .ui-tabs-nav li.ui-state-disabled a, .ui-tabs .ui-tabs-nav li.ui-state-processing a { cursor: text; }
+.ui-tabs .ui-tabs-nav li a, .ui-tabs.ui-tabs-collapsible .ui-tabs-nav li.ui-tabs-selected a { cursor: pointer; } /* first selector in group seems obsolete, but required to overcome bug in Opera applying cursor: text overall if defined elsewhere... */
+.ui-tabs .ui-tabs-panel { display: block; border-width: 0; padding: 1em 1.4em; background: none; margin-top:1px; }
+.ui-state-default, .ui-widget-content .ui-state-default, .ui-widget-header .ui-state-default { border:0 }
+
+
+/*HACKs for CQ 5.6*/
+.ui-tabs .ui-tabs-hide { display: none !important; }
+.ui-state-active, .ui-widget-content .ui-state-active, .ui-widget-header .ui-state-active {border:0; }
+
+
+/* IE Hack for proper display of tabs*/
+#tabs .ui-tabs  .ui-tabs-panel {width:600px/9; float:left/9; display:block/9; margin-bottom:16px/9; margin-top:-3px/9; } 
+.ie8 #tabs .ui-tabs .ui-tabs-panel {width:600px; float:left; display:block; margin-bottom:16px; margin-top:-3px;} 
+
+.home #tabs .ui-tabs .ui-tabs-panel {width:645px\9; float:left\9; display:block\9; margin-bottom:16px\9; margin-top:-3px;\9 } 
+.ie8 .home #tabs .ui-tabs .ui-tabs-panel {width:645px; float:left; display:block; margin-bottom:16px; margin-top:-3px;} 
+
+#main-content .one-col #tabs #_margin-strategy .ui-tabs-panel {    margin-top: -2px;    width: 940px;  }
+.ie8 #main-content .one-col #tabs #_margin-strategy .ui-tabs-panel {width:940px; float:left; display:block; margin-bottom:16px; margin-top:-3px;}
+#main-content .one-col #tabs #_ira .ui-tabs-panel {    margin-top: -2px;    width: 930px;  }
+.ie8 #main-content .one-col #tabs #_ira .ui-tabs-panel {width:930px; float:left; display:block; margin-bottom:16px; margin-top:-3px;}
+
+.ie8 #adjustableContentDiv_1980 #tabs .ui-tabs .ui-tabs-panel {width:800px!important; float:left; display:block; margin-bottom:16px; margin-top:-3px;} 
+
+
+/* Override for Scottrade */
+
+.ui-widget-header {background-repeat:repeat-x; background-position:bottom;}
+.ui-widget-content { background:#ffffff; }
+
+
+.ui-tabs .ui-tabs-nav { margin: 0px; padding:0px; }
+.ui-tabs .ui-tabs-nav li a { color:#535353; font-size:15px; height:18px; padding:8px 1.80em 8px 1.80em; font-weight:bold; border-right:1px solid #d7d7d7; border-top:1px solid #d7d7d7; border-bottom:1px solid #d7d7d7; background-image:url(../images/tab-bg-inactive.gif); background-repeat:repeat-x;}
+.ui-tabs .ui-tabs-nav li.ui-tabs-selected a { color:#46166b; background-image:none; background-color:#ffffff;}
+.ui-tabs .ui-tabs-panel { padding:10px; border:1px solid #d7d7d7;}
+
+
+/* Homepage Secure Login ONA box Tabs Override */
+
+
+.secure-login .login-container{
+	padding-top:5px;
+}
+
+.secure-login .ui-tabs .ui-tabs-panel {
+    background-color: #F0F0F0;
+    border: 1px solid #D7D7D7;
+    height: 166px;
+}
+
+.secure-login .ui-widget input, .ui-widget select, .ui-widget textarea, .ui-widget button { font-family: "Open sans", sans-serif; font-size: 12px; }
+
+.secure-login .ui-tabs .ui-tabs-nav{
+    font-family: Open Sans; sans-serif;
+    height: 32px;
+    padding: 0 !important;
+    text-transform: uppercase;
+    width: 275px;
+} 
+
+.ie8 .ui-tabs .ui-tabs-nav li{
+	float:none;
+}
+
+.ie8 .secure-login a #tabs-2{
+	float:right;
+}
+
+.secure-login .ui-tabs .ui-tabs-nav li.ui-tabs-selected a  {
+    background-color: #f0f0f0;
+    background-image: none;
+    color: #111111;
+    float: right;
+    font-family: Open Sans,sans-serif;
+    font-size: 12px;
+    font-weight: 800;
+    letter-spacing: -0.5px;
+    margin-top: 0;
+    padding: 11px 14px;
+    text-transform: uppercase;
+    }
+
+.ie8 .secure-login .ui-tabs .ui-tabs-nav li.ui-tabs-selected a  {
+    font-size:11px;
+    letter-spacing:-0.25px;
+    padding:11px 7px;
+    }
+
+
+.secure-login .ui-tabs .ui-tabs-nav li a { 
+    background: none;
+    border-bottom:0;
+    border-left: 1px solid #D7D7D7;
+    border-right: 1px solid #D7D7D7;
+    border-top:1px solid #d7d7d7;
+    color: #808080;
+    font-size: 12px;
+    height: 12px;
+    margin-top: 8px;
+    padding: 6px 10px 8px;
+    }    
+
+.ie8 .secure-login .ui-tabs .ui-tabs-nav li a { 
+    font-size:11px;
+    } 
+
+
+.secure-login .ui-tabs .ui-tabs-nav li:last-child { 
+    background:none;
+    clear: none;
+    float: right;
+    } 
+
+.secure-login .ui-tabs .ui-tabs-nav li:first-child {
+    background:none!important;
+    clear: none;
+    float: left;
+    width:155px;
+}
+
+.ie8 .secure-login .ui-tabs .ui-tabs-nav li:first-child {
+	float:left;
+    left:0;
+    position:relative;
+
+}
+
+.secure-login .ui-tabs .ui-tabs-nav li.ui-tabs-selected:last-child{ 
+    margin-top: 0;;
+    }  
+
+.secure-login .ui-tabs .ui-tabs-nav li.ui-tabs-selected:first-child{
+	background: none!important);
+    clear: none;
+    float: left;
+    margin-top: 0;
+}
+
+.secure-login .ui-tabs .ui-tabs-nav li.ui-tabs-selected:first-child a {
+	border-left: 1px solid #D7D7D7;
+    border-right: 1px solid #D7D7D7;
+    border-top: 1px solid #D7D7D7;
+    float: left;
+}
+
+
+.secure-login .ui-tabs .ui-tabs-nav li.ui-tabs-selected:first-child a:focus{
+	outline:none;
+}
+
+.secure-login .ui-tabs .ui-tabs-nav li.ui-tabs-selected:last-child a {
+	border-left: 1px solid #D7D7D7;
+    border-right: 1px solid #D7D7D7;
+    border-top: 1px solid #D7D7D7;
+    float: right;
+    position: relative;
+}
+
+.secure-login .ui-tabs .ui-tabs-nav li.ui-tabs-selected {
+    margin-bottom: 0;
+    padding-bottom: 0;}
+
+
+  .secure-login .ui-tabs .ui-tabs-nav li.ui-tabs-selected{
+    margin-bottom: 0; 
+    padding-bottom: -1px; 
+}
+
+.secure-login .ui-tabs .ui-tabs-panel   {
+    background-color: #F0F0F0;
+    border-bottom: 1px solid #D2D2D2;
+    border-left: 1px solid #D2D2D2;
+    border-radius: 0;
+    border-right: 1px solid #D2D2D2;
+    height: 174px;
+    margin-top: 2px;
+}     
+
+.secure-login .login-badge{
+    float:right;
+    clear:left;
+    margin-right:-10px;
+}   
+
+.secure-login .login-title{
+    color: #5E2D91;
+    display: block;
+    float: left;
+    font-family: open sans,sans-serif;
+    font-size: 26px;
+    font-weight: 800;
+    line-height: 15px;
+    padding-bottom: 7px !important;
+    padding-right: 5px;
+    padding-top: 8px;
+    text-align: center;
+    text-transform: none;
+    width: 250px;
+} 
+
+.secure-login .login-text{
+    clear: left;
+    display: block;
+    font-family: open sans;
+    font-size: 14px;
+    font-weight: normal;
+    line-height: 22px;
+        *margin-top:-48px;
+    padding: 10px;
+    text-align: center;
+    width: 235px;
+}
+
+.secure-login .login-cta{
+    display:block;
+    float:left;
+    cursor: pointer;
+}
+
+.secure-login .homepage-cta {
+	background: #FFE67B; /* Old browsers */
+	background: -moz-linear-gradient(top, #FFE67B 0%, #FFC030 100%); /* FF3.6+ */
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#FFE67B), color-stop(100%,#FFC030)); /* Chrome,Safari4+ */
+	background: -webkit-linear-gradient(top, #FFE67B 0%,#FFC030 100%); /* Chrome10+,Safari5.1+ */
+	background: -o-linear-gradient(top, #FFE67B 0%,#FFC030 100%); /* Opera 11.10+ */
+	background: -ms-linear-gradient(top, #FFE67B 0%,#FFC030 100%); /* IE10+ */
+	background: linear-gradient(to bottom, #FFE67B 0%,#FFC030 100%); /* W3C */
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#FFE67B', endColorstr='#FFC030',GradientType=0 ); /* IE6-9 */
+    
+    border: 1px solid #D89E19;
+    border-radius: 5px;
+    color: #5E2D91;
+    cursor: pointer;
+    float: left;
+    font-size: 14px;
+    font-weight: bold;
+    height: 28px;
+    padding: 2px 10px;
+    text-decoration: none;
+}
+.secure-login .homepage-cta:hover {
+    background: linear-gradient(to bottom, #FFE67B 0%, #E49A19 100%) repeat scroll 0 0 rgba(0, 0, 0, 0);
+}
+.secure-login .open-new-account-btn {
+    color: #5E2D91;
+    float: left;
+    margin-top: 5px;
+    text-decoration: none;
+}
+.secure-login .open-new-account-btn:hover {
+    color: #401C66 !important;
+}
+.secure-login p.homepage-cta {
+    margin-left: 38px;
+}
+
+.secure-login .login-container .login-info {
+    border: 1px solid #CCCCCC;
+    color: #A5A5A5;
+    float: right;
+    font-size: 14px;
+    font-weight: 800;
+    height: 24px;
+    letter-spacing: 1px;
+    margin-bottom: 10px;
+    padding: 2px 2px 0 8px;
+    width: 150px;
+}
+
+.ie8 .secure-login .login-container .login-info {
+	padding:6px 2px 0 8px;
+}
+
+
+
+.secure-login .login-container .left {
+    border: medium none;
+    float: left;
+    width: 252px;
+}
+
+.secure-login #secureUserAccountNumberLabel, #secureUserPasswordLabel{
+    clear: left;
+    color: #6D6D6D;
+    display: block;
+    float: left;
+    font-family: 'Open Sans';
+    font-size: 14px;
+    padding: 4px 0 0;
+    text-transform: uppercase;
+	}
+
+input[type=text], textarea {
+  -webkit-transition: all 0.30s ease-in-out;
+  -moz-transition: all 0.30s ease-in-out;
+  -ms-transition: all 0.30s ease-in-out;
+  -o-transition: all 0.30s ease-in-out;
+  outline: none;
+  /*padding: 3px 0px 3px 3px;
+  margin: 5px 1px 3px 0px;*/
+  border: 1px solid #DDDDDD;
+}
+ 
+input[type=text]:focus, textarea:focus, #secureUserPassword:focus, .styled-select #firstPage:focus{
+  box-shadow: 0 0 5px rgba(81, 203, 238, 1);
+  /*padding: 3px 0px 3px 3px;
+  margin: 5px 1px 3px 0px;*/
+  border: 1px solid rgba(81, 203, 238, 1);
+}
+
+.secure-login .start-page-heading{
+    color: #999;
+    font-size: 11px;
+    font-weight: 800;
+    letter-spacing: -0.5px;
+    text-transform: uppercase;
+}
+
+.styled-select select {
+    border: 0 none;
+    border-radius: 0;
+    color: #898989;
+    font-size: 11px;
+    height: 22px;
+    line-height: 1;
+    margin-top: 0;
+    overflow: hidden;
+    padding: 2px;
+    position: relative;
+    width: 250px;
+}
+
+.styled-select select a:focus{
+	outline:none;
+}
+
+
+.styled-select {
+    border: 1px solid #CCCCCC;
+    float: right;
+    height: 22px;
+    margin: 5px 0 10px;
+    width: 250px;
+}
+
+.start-page-default{
+	background:#d7d7d7;
+    color:#4f4f4f;
+	padding-left:8px;
+	padding-top:3px;
+    padding-bottom:3px;
+}
+
+.ie8 .start-page-default{
+	background:none;
+    color:#4f4f4f;
+	padding-left:8px;
+	padding-top:3px;
+    padding-bottom:3px;
+}
+
+.start-page-dropdown{
+	background-color:#f0f0f0;
+    color:#111;
+	cursor:
+    line-height:13px;
+    padding-left:8px;
+}
+
+
+.secure-login .password-holder{
+	color: #A5A5A5 !important;
+    float: left;
+    font-size: 12px;
+    height: 24px;
+    letter-spacing: -0.5px;
+    margin-bottom: 10px;
+    text-transform: uppercase;
+    width: 252px;
+}
+
+.secure-login .placeholder-label-hidden{
+    clip: auto !important;
+    color: #A5A5A5;
+    display: block;
+    font-weight: 800;
+    height: 1px;
+    overflow: hidden !important;
+    padding-left: 8px;
+    position: absolute !important;
+    z-index: 999999;
+}
+
+.secure-login #secureUserPassword{
+	border: 1px solid #CCCCCC;
+    color: #A5A5A5;
+    float: right;
+    font-size: 13px;
+    font-weight: 800;
+    height: 24px;
+    letter-spacing: -0.5px;
+    margin-bottom: 10px;
+    padding: 2px 2px 0 8px;
+    width: 150px;
+}
+
+
+@media screen and (-webkit-min-device-pixel-ratio:0){
+.secure-login #secureUserPassword{
+    letter-spacing: 1px!important;
+        }}
+
+
+.secure-login #password-placeholder{
+	color: #A5A5A5;
+    cursor: auto;
+    font-family: "Open sans", sans-serif;
+    font-size: 12px;
+    height: 24px !important;
+    padding-top: 4px;
+    position: absolute;
+    width: 100% !important;
+    z-index: 9999;
+}
+
+
+.secure-login .secure-login-btn{
+	background: #754099; /* Old browsers */
+	background: -moz-linear-gradient(top, #754099 0%, #4b306a 100%); /* FF3.6+ */
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#754099), color-stop(100%,#4b306a)); /* Chrome,Safari4+ */
+	background: -webkit-linear-gradient(top, #754099 0%,#4b306a 100%); /* Chrome10+,Safari5.1+ */
+	background: -o-linear-gradient(top, #754099 0%,#4b306a 100%); /* Opera 11.10+ */
+	background: -ms-linear-gradient(top, #754099 0%,#4b306a 100%); /* IE10+ */
+	background: linear-gradient(to bottom, #754099 0%,#4b306a 100%); /* W3C */
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#754099', endColorstr='#4b306a',GradientType=0 ); /* IE6-9 */
+
+    border: 1px solid #404040;
+    border-radius: 5px;
+    color: #FFFFFF;
+    cursor: pointer;
+    display: inline-block;
+    font-weight: bold;
+    height: 26px;
+    text-transform: uppercase;
+    width: 85px;
+}
+
+.secure-login .secure-login-btn:hover{
+	background: #541d79; /* Old browsers */
+	background: -moz-linear-gradient(top, #541d79 0%, #2c1743 100%); /* FF3.6+ */
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#541d79), color-stop(100%,#2c1743)); /* Chrome,Safari4+ */
+	background: -webkit-linear-gradient(top, #541d79 0%,#2c1743 100%); /* Chrome10+,Safari5.1+ */
+	background: -o-linear-gradient(top, #541d79 0%,#2c1743 100%); /* Opera 11.10+ */
+	background: -ms-linear-gradient(top, #541d79 0%,#2c1743 100%); /* IE10+ */
+	background: linear-gradient(to bottom, #541d79 0%,#2c1743 100%); /* W3C */
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#541d79', endColorstr='#2c1743',GradientType=0 ); /* IE6-9 */
+}
+
+.secure-login .fa-lock:before{
+	padding-right:5px!important;
+    }
+
+.secure-login .login-links{
+	float:right;
+    padding-top: 5px;
+    }
+
+.secure-login .login-links a{
+	color:#754099;
+    padding-left: 15px;
+    text-decoration:none;
+    }
+
+.secure-login .login-links a:hover{
+	color:#4B306A ;
+    text-decoration:underline;
+    }
+
+.secure-login .login-links-cn{
+	bottom: 7px;
+    float: right;
+    position: absolute;
+    right: 14px;
+    text-align: right;
+    width: 150px;
+    }
+
+.secure-login .login-links-cn a{
+	color:#754099!important;
+    text-decoration:none;
+	}
+
+
+.secure-login .login-links-cn a:hover{
+	color:#4B306A ;
+    text-decoration:underline;
+	}
+
+/*Secure Login IE Hacks*/
+
+
+
+#main-content .two-col #tabs ul {height:35px; padding-left:0px; border-left:1px solid #d7d7d7;}
+#main-content .two-col #tabs ul {_margin-bottom:-2px;}
+#main-content .two-col #_par_tabbedcolumns ul {height:35px; padding-left:0px; border-left:1px solid #d7d7d7; margin-bottom: -1px;}
+#main-content .two-col #_par_tabbedcolumns ul {_margin-bottom:-2px;}
+
+
+#main-content .one-col .formsCenter .ui-tabs .ui-tabs-panel {border:0px; border-top:1px solid #d7d7d7;}
+#main-content .one-col #tabs #_margin-strategy .ui-tabs-nav li:first-child {border-left: 1px solid #d7d7d7;}
+#main-content .one-col #tabs #_ira .ui-tabs-nav li:first-child {border-left: 1px solid #d7d7d7;}
+#main-content .one-col .formsCenter #tabs ul {_margin-bottom:-2px;}
+#main-content .one-col .formsCenter #tabs ul {height:35px; padding-left:0px; border-left:1px solid #d7d7d7; margin-left:10px;}
+#main-content .one-col .formsCenter #fmCenterTabs ul {_margin-bottom:-2px;}
+#main-content .one-col .formsCenter #fmCenterTabs ul {height:35px; padding-left:0px; border-left:1px solid #d7d7d7; margin-bottom: -1px;}
+#main-content .one-col .formsCenter #fmCenterTabs .pagination ul {height:35px; padding-left:0px; border-left:0px solid #d7d7d7; margin-left:10px;}
+#main-content .one-col .formsCenter #fmCenterTabs ul#accordion {height:auto; border:0px; margin-left:0px;}
+#main-content .one-col .formsCenter #fmCenterTabs ul#accordion .forms-center {margin-top:15px; padding-bottom:15px;}
+#main-content .one-col .formsCenter #fmCenterTabs ul.accordion {height:auto; border:1px solid #d7d7d7; margin-left:0px;}
+#main-content .one-col .formsCenter #fmCenterTabs ul.accordion .forms-center {margin-top:15px; padding-bottom:15px;}
+
+
+.formsCenter .ui-tabs .ui-tabs-nav li a { color:#535353; font-size:12px; height:18px; padding:8px 15px 8px 15px; font-weight:bold; border-right:1px solid #d7d7d7; border-top:1px solid #d7d7d7; border-bottom:1px solid #d7d7d7; background-image:url(../images/tab-bg-inactive.gif); background-repeat:repeat-x;}
+.formsCenter .ui-tabs .ui-tabs-nav li.ui-tabs-selected a { color:#231f20; background-image:none; background-color:#ffffff; border-bottom:1px solid #ffffff;}
+
+
+#main-content .one-col .formsCenter #pagination.ui-tabs .ui-tabs-panel {border:0px; border-top:0px solid #ffffff}
+#main-content .one-col .formsCenter #pagination ul {height:35px; padding-left:0px; border-left:0px solid #d7d7d7; margin-left:10px;}
+.formsCenter #pagination.ui-tabs .ui-tabs-nav li a { background:none; color:#0033cc; font-size:12px; height:14px; width:14px; padding:4px; font-weight:bold; border:1px solid #d7d7d7; text-align:center; margin-right:5px;}
+.formsCenter #pagination.ui-tabs .ui-tabs-nav li.ui-tabs-selected a { color:#ffffff; background-image:none; background-color:#4c1c72; border:1px solid #4c1c72;}
+
+.formsCenter #pagination.ui-tabs .ui-tabs-panel { display: block; border-width: 0; padding:10px 5px 0px 5px; background: none; }
+
+.two-col .ui-tabs .ui-tabs-nav li a { color:#535353; font-size:12px; height:18px; padding:8px 9px 9px 9px; font-weight:bold; border-right:1px solid #d7d7d7; border-top:1px solid #d7d7d7; border-bottom:1px solid #d7d7d7; background-image:url(../images/tab-bg-inactive.gif); background-repeat:repeat-x;}
+.home .two-col .ui-tabs .ui-tabs-nav li a { color:#535353; font-size:12px; height:18px; padding:8px 9px 5px 9px; font-weight:bold; border-right:1px solid #d7d7d7; border-top:1px solid #d7d7d7; border-bottom:1px solid #d7d7d7; background-image:url(../images/tab-bg-inactive.gif); background-repeat:repeat-x;}
+.two-col .ui-tabs .ui-tabs-nav li.ui-tabs-selected a { color:#46166b; background-image:none; background-color:#ffffff; border-bottom:2px solid #ffffff;}
+
+
+#fmCenterTabs .ui-tabs .ui-tabs-nav li a { color:#535353; font-size:12px; height:18px; padding:8px 11px 8px 11px; font-weight:bold; border-right:1px solid #d7d7d7; border-top:1px solid #d7d7d7; border-bottom:1px solid #d7d7d7; background-image:url(../images/tab-bg-inactive.gif); background-repeat:repeat-x;}
+#fmCenterTabs .ui-tabs .ui-tabs-nav li.ui-tabs-selected a { color:#46166b; background-image:none; background-color:#ffffff; border-bottom:1px solid #ffffff;}
+#fmCenterTabs #pagination.ui-tabs .ui-tabs-nav li a { background:none; color:#0033cc; font-size:12px; height:14px; width:14px; padding:4px; font-weight:bold; border:1px solid #d7d7d7; text-align:center; margin-right:5px;}
+#fmCenterTabs #pagination.ui-tabs .ui-tabs-nav li.ui-tabs-selected a { color:#ffffff; background-image:none; background-color:#4c1c72; border:1px solid #4c1c72;}
+#fmCenterTabs #pagination.ui-tabs .ui-tabs-panel { display: block; border-width: 0; padding:10px 5px 0px 5px; background: none; }
+
+
+#fmCenterTabs .ui-tabs .ui-tabs-nav li a { color:#535353; font-size:12px; height:18px; padding:8px 11px 8px 11px; font-weight:bold; border-right:1px solid #d7d7d7; border-top:1px solid #d7d7d7; border-bottom:1px solid #d7d7d7; background-image:url(../images/tab-bg-inactive.gif); background-repeat:repeat-x;}
+.two-col .ui-tabs .ui-tabs-nav li.ui-tabs-selected a { color:#46166b; background-image:none; background-color:#ffffff; border-bottom:2px solid #ffffff;}
+
+
+/*Adjustable Content Div Tabs */
+
+#main-content .one-col .formsCenter #tabs ul {height:35px; padding-left:0px; border-left:1px solid #d7d7d7; margin-left:10px;}
+#main-content .adjustableContentDiv #tabs ul {height:35px; padding-left:0px; border-left:1px solid #d7d7d7;}
+#main-content .adjustableContentDiv #tabs ul {_margin-bottom:-2px;}
+#main-content .adjustableContentDiv #banking-products ul {height:35px; padding-left:0px; border-left:1px solid #d7d7d7;}
+#main-content .adjustableContentDiv #banking-productsul {_margin-bottom:-2px;}
+#main-content .adjustableContentDiv #_par_tabbedcolumns ul {height:35px; padding-left:0px; border-left:1px solid #d7d7d7; margin-bottom: -1px;}
+#main-content .adjustableContentDiv #_par_tabbedcolumns ul {_margin-bottom:-2px;}
+.adjustableContentDiv .ui-tabs .ui-tabs-nav li a { color:#535353; font-size:14px; height:19px; padding:8px 15px 8px 15px; font-weight:bold; border-right:1px solid #d7d7d7; border-top:1px solid #d7d7d7; border-bottom:1px solid #d7d7d7; background-image:url(../images/tab-bg-inactive.gif); background-repeat:repeat-x;}
+.adjustableContentDiv .ui-tabs .ui-tabs-nav li.ui-tabs-selected a { color:#46166b; background-image:none; background-color:#ffffff; border-bottom:2px solid #ffffff;}
