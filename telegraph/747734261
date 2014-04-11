@@ -1,0 +1,24 @@
+PHTTP209.73.224.66"Ù
+GET / HTTP/1.1
+Host: www.sothebysrealty.com
+Connection: keep-alive
+Accept: image/webp,*/*;q=0.8
+vUser-Agent: Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/31.0.1650.63 Safari/537.36
+&Referer: http://www.telegraph.co.uk/
+$Accept-Encoding: gzip,deflate,sdch
+!Accept-Language: en-US,en;q=0.8
+
+*§
+ HTTP/1.1 301 Moved Permanently
+Cache-Control: no-cache
+Pragma: no-cache
+Content-Type: text/html
+Expires: -1
+-Location: http://www.sothebysrealty.com/eng
+Server: Microsoft-IIS/8.0
+fSet-Cookie: ASP.NET_SessionId=vrdy5mf5024jpcz0nrlzdckg; domain=.sothebysrealty.com; path=/; HttpOnly
+X-AspNet-Version: 4.0.30319
+X-Powered-By: ASP.NET
+%Date: Fri, 11 Apr 2014 21:05:28 GMT
+Content-Length: 0
+

@@ -1,0 +1,29 @@
+PHTTP23.45.33.207"·
+ÿGET /cg/v5/?fv=dmn%3Dtelegraph.co.uk%3Bref%3D%3Burl%3Dhttp%253A%252F%252Fwww.telegraph.co.uk%252F%3Bscrw%3D1920%3Bscrh%3D1200%3Bclrd%3D24%3Bcok%3D1%3B&uv=T69Depth%3D1%2CSessionStart%3B&uat=entry_chan%3Dfrontpage%3B&tst=0.307&jsver=5.13&mmid=1365625372%7CAQAAAApi3JPqYQoAAA%3D%3D&pd=1800890245%7CAQAAAAoBQmLck%2BphCvpxDpUBALgi9uXgI9FIAAwAAAC4Ivbl4CPRSAAAAAD%2F%2F%2F%2F%2FAP%2F%2F%2F%2F%2F%2F%2F%2F%2F%2FAAZEaXJlY3QBYQoBAAAAAAABAQABAAARMAAAgTAAAP%2F%2F%2F%2F8BACsSAACK0BKAYQr%2F%2F%2F%2F%2FAGEKYQr%2F%2FwEAAAAAAAABx0gAAGpgAAAAAAAAAUU%3D&srv=cg3.use&pageid=events&mm_t69_session_start=http%3A%2F%2Fwww.telegraph.co.uk%2F&ri=2&rul= HTTP/1.1
+Host: service.maxymiser.net
+Connection: keep-alive
+Accept: */*
+vUser-Agent: Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/31.0.1650.63 Safari/537.36
+&Referer: http://www.telegraph.co.uk/
+$Accept-Encoding: gzip,deflate,sdch
+!Accept-Language: en-US,en;q=0.8
+
+*ß
+HTTP/1.1 200 OK
+Server: nginx
+.Content-Type: text/javascript; charset=utf-8
+Content-Length: 681
+NCache-Control: no-store, no-cache, must-revalidate,post-check=0, pre-check=0
+Pragma: no-cache
+(Expires: Sun, 06 Jan 1980 01:00:00 GMT
+$Last-Modified: 04/11/2014 21:05:30
+'P3P: CP="DEV IND NOI OTC OUR PSA PSD"
+X-Node: cg3.use
+X-Node: node3.use
+%Date: Fri, 11 Apr 2014 21:05:30 GMT
+Connection: keep-alive
+«
+mmcore.SetCookie('mmid','-425556399|AgAAAApi3JPqYQoAAA==',365,1);mmcore.SetCookie('pd','1005701565|AgAAAAoBQmLck+phCvpxDpUBAMwNt+fgI9FIAAwAAAC4Ivbl4CPRSAAAAAD/////AP//////////AAZEaXJlY3QBYQoBAAAAAAABAQAAAAARMAAAgTAAAJ9qAAABACsSAACK0BKAYQr/////AGEKYQr//wEAAAAAAAABx0gAAGpgAAAAAAAAAUU=',365);mmcore.SetCookie('srv','cg3.use',365);(function(){if(typeof(mmcore.GenInfo)!='object')mmcore.GenInfo={};mmcore.EH=function(e){var s=e.message+'\r\n';if(!window.mm_error)window.mm_error=s;else window.mm_error+=s;};
+if(typeof mmcore._callback=='object'&&typeof mmcore._callback[2]=='function'){try{mmcore._callback[2]();}catch(err){mmcore.EH(err);}
+finally{mmcore._callback[2]=null;}}
+})();

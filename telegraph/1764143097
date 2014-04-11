@@ -1,0 +1,23 @@
+PHTTP8.21.199.10"
+ GET /red/usync?pid=11146&url=http%3A%2F%2Fe.visualdna.com%2Fimport%3Fapi_key%3Dtelegraph.co.uk%26id_space%3Dat_id%26partner_user_id%3D%7B%7Buid%7D%7D HTTP/1.1
+Host: su.addthis.com
+Connection: keep-alive
+Accept: image/webp,*/*;q=0.8
+vUser-Agent: Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/31.0.1650.63 Safari/537.36
+SReferer: http://w.visualdna.com/analytics/?api_key=telegraph.co.uk&post_message=1
+$Accept-Encoding: gzip,deflate,sdch
+!Accept-Language: en-US,en;q=0.8
+
+*à
+HTTP/1.1 302 Found
+%Date: Fri, 11 Apr 2014 21:05:31 GMT
+.Cache-Control: max-age=0, no-cache, no-store
+Pragma: no-cache
+cSet-Cookie: uid=5348591bc26f1046;Path=/;Domain=.addthis.com;Expires=Sun, 10-Apr-2016 21:05:31 GMT
+(Expires: Thu, 01 Jan 1970 00:00:00 GMT
+AP3P: policyref="/w3c/p3p.xml", CP="NON ADM OUR DEV IND COM STA"
+>Set-Cookie: di=deleted;Expires=Thu, 01-Jan-1970 00:00:00 GMT
+?Set-Cookie: uid=deleted;Expires=Thu, 01-Jan-1970 00:00:00 GMT
+qLocation: http://e.visualdna.com/import?api_key=telegraph.co.uk&id_space=at_id&partner_user_id=5348591bc26f1046
+Connection: close
+

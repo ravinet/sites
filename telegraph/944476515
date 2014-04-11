@@ -1,0 +1,22 @@
+PHTTP
+23.74.28.8"è
+KGET /template/ver1-0/templates/fragments/common/tmglBrandCSS.jsp HTTP/1.1
+Host: www.telegraph.co.uk
+Connection: keep-alive
+Accept: text/css,*/*;q=0.1
+vUser-Agent: Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/31.0.1650.63 Safari/537.36
+&Referer: http://www.telegraph.co.uk/
+$Accept-Encoding: gzip,deflate,sdch
+!Accept-Language: en-US,en;q=0.8
+
+*∑
+HTTP/1.1 200 OK
+Server: Apache
+Content-Length: 136
++Content-Type: text/css;charset=ISO-8859-1
+%Date: Fri, 11 Apr 2014 21:05:27 GMT
+Connection: keep-alive
+ä
+
+		.portal #tmglBrandLarge #brand img{background:url('http://www.telegraph.co.uk/template/ver1-0/i/thetelegraph_344.gif') no-repeat}
+	

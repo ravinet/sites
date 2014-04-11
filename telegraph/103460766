@@ -1,0 +1,30 @@
+PHTTP23.74.28.11"Ž
+JGET /graphics/html/Years/2013/March/cartoonWidget2/css/main.css HTTP/1.1
+Host: s.telegraph.co.uk
+Connection: keep-alive
+Accept: text/css,*/*;q=0.1
+vUser-Agent: Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/31.0.1650.63 Safari/537.36
+&Referer: http://www.telegraph.co.uk/
+$Accept-Encoding: gzip,deflate,sdch
+!Accept-Language: en-US,en;q=0.8
+ÿCookie: mmcore.tst=0.307; WT_FPC=id=660609f5-0ddb-4545-9902-b42031532d2c:lv=1397264727845:ss=1397264727845; mmid=1365625372%7CAQAAAApi3JPqYQoAAA%3D%3D; mmcore.pd=1800890245%7CAQAAAAoBQmLck+phCvpxDpUBALgi9uXgI9FIAAwAAAC4Ivbl4CPRSAAAAAD/////AP//////////AAZEaXJlY3QBYQoBAAAAAAABAQABAAARMAAAgTAAAP////8BACsSAACK0BKAYQr/////AGEKYQr//wEAAAAAAAABx0gAAGpgAAAAAAAAAUU%3D; mmcore.srv=cg3.use
+
+*™
+HTTP/1.1 200 OK
+Server: Apache
+5ETag: "3017716459a9f9848694ddbcc9e26942:1364916846"
+.Last-Modified: Tue, 02 Apr 2013 15:34:05 GMT
+Accept-Ranges: bytes
+Content-Length: 126
+Content-Type: text/css
+%Date: Fri, 11 Apr 2014 21:05:27 GMT
+Connection: keep-alive
+€
+.graphics-interactive-container {
+	width:140px;
+}
+
+.graphics-interactive-container .marg {
+	margin: -5px 0 0 0;
+	padding: 0;
+}
