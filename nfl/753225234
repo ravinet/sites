@@ -1,0 +1,31 @@
+PHTTP74.125.225.156"ž
+XGET /activityi;src=3738527;type=nflcn285;cat=nflco092;ord=1711785078514367.2? HTTP/1.1
+Host: fls.doubleclick.net
+Connection: keep-alive
+TAccept: text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8
+vUser-Agent: Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/31.0.1650.63 Safari/537.36
+Referer: http://www.nfl.com/
+$Accept-Encoding: gzip,deflate,sdch
+!Accept-Language: en-US,en;q=0.8
+PCookie: id=229c442ae6020005||t=1397253943|et=730|cs=002213fd480ee3c38cfa84bafd
+
+*‘
+HTTP/1.1 302 Found
+X-Frame-Options: ALLOWALL
+Server: Floodlight
+%Date: Fri, 11 Apr 2014 22:05:43 GMT
+(Expires: Fri, 11 Apr 2014 22:05:43 GMT
+#Cache-Control: private, max-age=0
+!X-Content-Type-Options: nosniff
+(Content-Type: text/html; charset=UTF-8
+vLocation: http://3738527.fls.doubleclick.net/activityi;src=3738527;type=nflcn285;cat=nflco092;ord=1711785078514367.2
+Content-Length: 303
+!X-XSS-Protection: 1; mode=block
+Alternate-Protocol: 80:quic
+±
+<HTML><HEAD><meta http-equiv="content-type" content="text/html;charset=utf-8">
+<TITLE>302 Moved</TITLE></HEAD><BODY>
+<H1>302 Moved</H1>
+The document has moved
+<A HREF="http://3738527.fls.doubleclick.net/activityi;src=3738527;type=nflcn285;cat=nflco092;ord=1711785078514367.2">here</A>.
+</BODY></HTML>

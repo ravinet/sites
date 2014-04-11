@@ -1,0 +1,27 @@
+PHTTP54.209.244.129"×	
+ëGET /event?d_nsid=0&d_ld=_ts%3D1397253943048&c_pageName=nfl%3Ahome%3Alanding&c_channel=home&c_server=nfl.com&c_events=event1&c_eVar2=nfl%3Ahome%3Alanding&c_eVar3=home&c_eVar4=nfl%3Ahome%7Clanding&c_prop5=nfl%3Ahome%7Clanding&c_prop8=Friday&c_eVar8=Friday&c_prop9=6%3A00PM&c_eVar9=6%3A00PM&c_prop10=Weekday&c_eVar10=Weekday&c_prop21=First%20page%20view%20or%20cookies%20not%20supported&c_prop22=www.nfl.com&c_prop24=New&c_eVar25=D%3Dc22&c_prop27=logged%20out&c_eVar67=1920x1152%401&c_eVar68=full&c_hier1=nfl%3Ahome%7Clanding&d_rtbd=json&d_jsonv=1&d_dst=1&d_cts=1&d_cb=demdexRequestCallback_nfl_0_1397253943048 HTTP/1.1
+Host: nfl.demdex.net
+Connection: keep-alive
+Accept: */*
+vUser-Agent: Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/31.0.1650.63 Safari/537.36
+Referer: http://www.nfl.com/
+$Accept-Encoding: gzip,deflate,sdch
+!Accept-Language: en-US,en;q=0.8
+ÀCookie: demdex=55725637455726706973818656524863188715; nfl=55725637455726706973818656524863188715; DexLifeCycle="MA==|MTIwOTAyPTE6MTkyNiw3OTcwMz0xOjE5MjYsNDY5NTI5PTE6MTkyNiw3OTgwOD0xOjE5MjYsNDY0NDY4PTE6MTkyNg==|MA==|NDU2MDIsNDgwNjcsNDgxODQsNDk1MDIsNDg0MjksNDg0MzAsMTU2NTgsNDg5NTMsMTU2NTksMTQ3NTU=|MA==|MA==|MA=="; DST=
+
+*Á
+HTTP/1.1 200 OK
+bCache-Control: no-cache,no-store,must-revalidate,max-age=0,proxy-revalidate,no-transform,private
+4Content-Type: application/javascript;charset=UTF-8
+4DCS: va6-dcsas1-10-89-0-168.va6.demdex.com 1.18.47
+(Expires: Thu, 01 Jan 2009 00:00:00 GMT
+cP3P: policyref="/w3c/p3p.xml", CP="NOI NID CURa ADMa DEVa PSAa PSDa OUR SAMa BUS PUR COM NAV INT"
+Pragma: no-cache
+ Server: Jetty(7.6.8.v20121106)
+§Set-Cookie: DexLifeCycle="MA==|MTIwOTAyPTE6MTkyNiw3OTcwMz0xOjE5MjYsNDY5NTI5PTE6MTkyNiw3OTgwOD0xOjE5MjYsNDY0NDY4PTE6MTkyNg==|MA==|NDgwNjcsNDg0MzAsNDgxODQsMTU2NTgsNDg5NTMsMTU2NTksNDk1MDIsNDU2MDIsNDg0MjksMTQ3NTU=|MA==|MA==|MA==";Path=/;Domain=.nfl.demdex.net;Expires=Sun, 10-Apr-2016 22:05:43 GMT
+RSet-Cookie: DST=;Path=/;Domain=.demdex.net;Expires=Sun, 10-Apr-2016 22:05:43 GMT
+	STS: OK
+Content-Length: 1753
+Connection: keep-alive
+Û
+demdexRequestCallback_nfl_0_1397253943048({"dests":[],"stuff":[{"cn":"aam_sc","cv":"aamsc=513545","ttl":30,"dmn":""},{"cn":"aamnfl","cv":"Prod=GENDFP","ttl":90,"dmn":""}],"ibs":[{"id":"3","ttl":30240,"tag":"img","url":["//loadm.exelator.com/load/?p=204&g=091&j=0&bi=55725637455726706973818656524863188715"]},{"id":"470","ttl":30240,"tag":"img","url":["//d.turn.com/r/dd/id/L2NzaWQvMS9jaWQvMjM2NTYzMjkvdC8y/url/http%3A%2F%2Fdpm.demdex.net%2Fibs%3Adpid%3D470%26dpuuid%3D%24!%7BTURN_UUID%7D"]},{"id":"359","ttl":30240,"tag":"img","url":["//i.w55c.net/ping_match.gif?st=dmx&rurl=http%3A%2F%2Fdpm.demdex.net%2Fibs%3Adpid%3D359%26dpuuid%3D_wfivefivec_"]},{"id":"269","ttl":10080,"tag":"img","url":["//sync.mathtag.com/sync/img?mt_exid=10004&mt_exuid=55725637455726706973818656524863188715&redir=http%3A%2F%2Fdpm.demdex.net%2Fibs%3Adpid%3D269%26dpuuid%3D[MM_UUID]%26ddsuuid%3d55725637455726706973818656524863188715"]},{"id":"416","ttl":10080,"tag":"img","url":["//tacoda.at.atwola.com/atx/sync/demdex/55725637455726706973818656524863188715/defaut"]},{"id":"843","ttl":20160,"tag":"img","url":["//e.nexac.com/e/demdex_sync.xgi?na_exid=55725637455726706973818656524863188715"]}],"dpcalls":[{"id":"21","ttl":14400,"tag":"js","url":["//adadvisor.net/adscores/g.json?sid=9233633946"],"callback":{"obj":"Targus","fn":"parseInfo","key":"targus","tag":"img","url":"//dpm.demdex.net/demdot.jpg?et:dpm|dpid:21|data:"}},{"id":"22","ttl":14400,"tag":"js","url":["//api.bizographics.com/v1/profile.json?api_key=6332f8b7316a4d1284e9c1217a367347&callback=Demdex.parseBizo"],"callback":{"obj":"Demdex","fn":"parseBizo","key":"bizographics","tag":"img","url":"//dpm.demdex.net/demdot.jpg?et:dpm|dpid:22|data:"}}],"uuid":"55725637455726706973818656524863188715","dcs_region":7})

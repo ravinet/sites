@@ -1,0 +1,25 @@
+PHTTP50.19.236.43"ë
+kGET /v1/profile.json?api_key=6332f8b7316a4d1284e9c1217a367347&callback=Demdex.parseBizo&3pc=true HTTP/1.1
+Host: api.bizographics.com
+Connection: keep-alive
+Accept: */*
+vUser-Agent: Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/31.0.1650.63 Safari/537.36
+9Referer: http://fast.nfl.demdex.net/dest4.html?d_nsid=0
+$Accept-Encoding: gzip,deflate,sdch
+!Accept-Language: en-US,en;q=0.8
+5Cookie: BizoID=dd1249e2-bdc1-4040-9839-12c7f32d60ea
+
+*˜
+HTTP/1.1 200 OK
+Cache-Control: no-cache
+ Content-Type: application/json
+%Date: Fri, 11 Apr 2014 22:05:45 GMT
+ZP3P: CP="NON DSP COR CURa ADMo DEVo TAIo PSAo PSDo OUR DELa IND PHY ONL UNI COM NAV DEM"
+Pragma: no-cache
+Server: nginx/1.2.0
+tSet-Cookie: BizoID=dd1249e2-bdc1-4040-9839-12c7f32d60ea;Version=0;Domain=.bizographics.com;Path=/;Max-Age=15768000
+¢Set-Cookie: BizoData=vipSsUXrfhMAyjSpNgk6T39Qb1MaQBj6WAiphZG3g3wbanOGSnuTLaGrV6072jCeii2E0gtIJqCycoie;Version=0;Domain=.bizographics.com;Path=/;Max-Age=15768000
+Content-Length: 75
+Connection: keep-alive
+M
+Demdex.parseBizo({"bizographics":{},"third_pc_accepted":"true","usage":0});

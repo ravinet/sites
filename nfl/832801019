@@ -1,0 +1,269 @@
+PHTTP
+18.7.20.69"Ï
+
+4GET /scripts/foresee/foresee-surveydef.js HTTP/1.1
+Host: www.nfl.com
+Connection: keep-alive
+Accept: */*
+vUser-Agent: Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/31.0.1650.63 Safari/537.36
+Referer: http://www.nfl.com/
+$Accept-Encoding: gzip,deflate,sdch
+!Accept-Language: en-US,en;q=0.8
+êCookie: mbox=check#true#1397254003|session#1397253942401-628578#1397255803; ARSL=CT-USR; cvo_sid1=DK7HA8R76PFK; hpCpFrequencyCap=_ver=1.0.0&_an=%7B%22view%22%3A1%2C%22expiration%22%3A%222014-04-18T22%3A05%3A43.354Z%22%2C%22expires%22%3A%222014-07-10T22%3A05%3A43.354Z%22%2C%22expirationDay%22%3A7%7D; hpHtFrequencyCap=_ver=1.0.0&_an=%7B%22view%22%3A1%2C%22expiration%22%3A%222014-04-18T22%3A05%3A43.359Z%22%2C%22expires%22%3A%222014-07-10T22%3A05%3A43.359Z%22%2C%22expirationDay%22%3A7%7D; __psrw=6d0af3be-c1c5-11e3-991a-12313909352a; navigationTeamsDDOpen=true; headerSubProducts=preseasonLiveClass%2CgameRewindClass; s_pers=%20s_lastvisit%3D1397253943042%7C1491861943042%3B%20s_nr%3D1397253944911%7C1399845944911%3B%20s_pv%3Dnfl%253Ahome%253Alanding%7C1397255744913%3B; s_sess=%20s_cc%3Dtrue%3B%20s_sq%3D%3B; aamnfl=Prod%3DGENDFP; aam_sc=aamsc%3D513545; aam_did=55725637455726706973818656524863188715; nflpollUoF=0_0_1397073756917V0V0V0V0E; s_vi=[CS]v1|29A4339B85012814-40000146800109DB[CE]; fsr.a=1397253945179; fsr.s=%7B%22v%22%3A1%7D
+
+*‚-
+HTTP/1.1 200 OK
+Server: Apache
+Accept-Ranges: bytes
+ETag: W/"5472-1377051130000"
+.Last-Modified: Wed, 21 Aug 2013 02:12:10 GMT
+&Content-Type: application/javascript
+Content-Length: 5472
+Cache-Control: max-age=120
+(Expires: Fri, 11 Apr 2014 22:07:45 GMT
+%Date: Fri, 11 Apr 2014 22:05:45 GMT
+Connection: keep-alive
+%X-Akamai-Edgescape: country_code=US
+‚*
+FSR.surveydefs = [{
+    name: 'browse',
+    section: 'fantasy',
+    invite: {
+        when: 'onentry'
+    },
+    pin: 1,
+    pop: {
+        when: 'later',
+        what: 'qualifier'
+    },
+    qualifier: {
+        locales: [{
+            locale: 'US',
+            url: 'qualifying2.html'
+        }],
+        url: 'qualifying2_int.html'
+    },
+    criteria: {
+        sp: 2,
+        lf: 1
+    },
+    include: {
+        urls: ['fantasy']
+    }
+}, {
+    name: 'browse',
+    section: 'main',
+    invite: {
+        when: 'onentry'
+    },
+    pin: 1,
+    pop: {
+        when: 'later',
+        what: 'qualifier'
+    },
+    qualifier: {
+        url: 'qualifying.html'
+    },
+    criteria: {
+        sp: 7,
+        lf: 3
+    },
+    include: {
+        variables: [{
+            name: ['nfl.foresee.countryCode'],
+            value: ['US']
+        }]
+    }
+}, {
+    name: 'browse',
+    section: 'main_int',
+    invite: {
+        when: 'onentry'
+    },
+    pop: {
+        when: 'later',
+        what: 'qualifier'
+    },
+    qualifier: {
+        url: 'qualifying_int.html'
+    },
+    criteria: {
+        sp: 7,
+        lf: 3
+    },
+    include: {
+        urls: ['.']
+    }
+}];
+FSR.properties = {
+    repeatdays : 90,
+
+    repeatoverride : false,
+
+    altcookie : {
+    },
+
+    language: {
+        locale: 'en',
+        src: 'variable',
+        type: 'client',
+        name: 'nfl.foresee.countryCode',
+        locales: [{
+            match: 'US',
+            locale: 'US'
+        }]
+    },
+
+    exclude : {
+    },
+
+    zIndexPopup : 10000,
+
+    ignoreWindowTopCheck : false,
+
+    ipexclude : 'fsr$ip',
+
+    mobileHeartbeat : {
+        delay : 60, /*mobile on exit heartbeat delay seconds*/
+        max : 3600  /*mobile on exit heartbeat max run time seconds*/
+    },
+
+    invite : {
+
+        // Is this an MDOT Site?
+        isMDOT : false,
+
+        // Is this site zoomable? (aka pinch-able)
+        isZoomable : false,
+
+        // For no site logo, comment this line:
+        siteLogo : "sitelogo.gif",
+
+        /* Desktop */
+        dialogs : [{
+            reverseButtons: false,
+            headline: "We'd welcome your feedback!",
+            blurb: "Thank you for visiting our website. You have been selected to participate in a brief customer satisfaction survey to let us know how we can improve your experience.",
+            noticeAboutSurvey: "The survey is designed to measure your entire experience, please look for it at the <u>conclusion</u> of your visit.",
+            attribution: "This survey is conducted by an independent company ForeSee, on behalf of the site you are visiting.",
+            closeInviteButtonText: "Click to close.",
+            declineButton: "No, thanks",
+            acceptButton: "Yes, I'll give feedback"
+
+        }],
+
+        exclude : {
+            local: ['registration', 'video', 'fantasyconversion', '/team/', '/gamecenter', '/draftclient'],
+            referrer : []
+        },
+        include : {
+            local : [ '.' ]
+        },
+
+        delay : 0,
+        timeout : 0,
+
+        hideOnClick : false,
+
+        hideCloseButton : false,
+
+        css : 'foresee-dhtml.css',
+
+        hide : [],
+
+        hideFlash: false,
+
+        type : 'dhtml',
+        /* desktop */
+        // url: 'invite.html'
+        /* mobile */
+        url : 'invite-mobile.html',
+        back: 'url'
+        
+        //SurveyMutex: 'SurveyMutex'
+    },
+
+    tracker : {
+        width : '690',
+        height : '415',
+        timeout : 3,
+        adjust : true,
+        alert : {
+            enabled : true,
+            message : 'The survey is now available.'
+        },
+        url : 'tracker.html'
+    },
+
+    survey : {
+        width : 690,
+        height : 600
+    },
+
+    qualifier : {
+        footer : '<div div id=\"fsrcontainer\"><div style=\"float:left;width:80%;font-size:8pt;text-align:left;line-height:12px;\">This survey is conducted by an independent company ForeSee,<br>on behalf of the site you are visiting.</div><div style=\"float:right;font-size:8pt;\"><a target="_blank" title="Validate TRUSTe privacy certification" href="//privacy-policy.truste.com/click-with-confidence/ctv/en/www.foreseeresults.com/seal_m"><img border=\"0\" src=\"{%baseHref%}truste.png\" alt=\"Validate TRUSTe Privacy Certification\"></a></div></div>',
+        width : '690',
+        height : '500',
+        bgcolor : '#333',
+        opacity : 0.7,
+        x : 'center',
+        y : 'center',
+        delay : 0,
+        buttons : {
+            accept : 'Continue'
+        },
+        hideOnClick : false,
+        css : 'foresee-dhtml.css',
+        url : 'qualifying.html'
+    },
+
+    cancel : {
+        url : 'cancel.html',
+        width : '690',
+        height : '400'
+    },
+
+    pop : {
+        what : 'survey',
+        after : 'leaving-site',
+        pu : false,
+        tracker : true
+    },
+
+    meta : {
+        referrer : true,
+        terms : true,
+        ref_url : true,
+        url : true,
+        url_params : false,
+        user_agent : false,
+        entry : false,
+        entry_params : false
+    },
+
+    events : {
+        enabled : true,
+        id : true,
+        codes : {
+            purchase : 800,
+            items : 801,
+            dollars : 802,
+            followup : 803,
+            information : 804,
+            content : 805
+        },
+        pd : 7,
+        custom : {}
+    },
+
+    previous : false,
+
+    analytics : {
+        google_local : false,
+        google_remote : false
+    },
+
+    cpps : {},
+
+    mode : 'first-party'
+};
