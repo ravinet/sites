@@ -1,0 +1,212 @@
+PHTTP65.254.51.34"ƒ
+EGET /wp-content/themes/infowars-standard/styles/menus2.css HTTP/1.1
+Host: www.infowars.com
+Connection: keep-alive
+Accept: text/css,*/*;q=0.1
+vUser-Agent: Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/31.0.1650.63 Safari/537.36
+#Referer: http://www.infowars.com/
+$Accept-Encoding: gzip,deflate,sdch
+!Accept-Language: en-US,en;q=0.8
+
+*!
+HTTP/1.1 200 OK
+.Last-Modified: Sun, 09 Sep 2012 20:56:57 GMT
+Content-Type: text/css
+Content-Length: 3997
+Accept-Ranges: bytes
+%Date: Fri, 11 Apr 2014 21:19:37 GMT
+
+Age: 851
+Connection: keep-alive
+X-Cache: cached
+Ÿ
+/* =Menu
+-------------------------------------------------------------- */
+#nHeaderNavigation {
+  position: absolute;
+  /* top: 252px; */
+  top:162px;
+  width: 995px;
+  z-index: 100;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 80%;
+  font-weight:bold;
+  line-height: 150%;
+  border-style: solid;
+  border-width: 0px;
+  border-color: red;
+  margin: 0 auto;
+  display:block;
+  float:left;
+  padding:0px; 
+}
+
+#nHeaderNavigation .menu-header, div.menu {
+  font-size: 13px;
+  margin-left: 10px;
+  width: 994px;
+}
+
+#nHeaderNavigation .menu-header ul, div.menu ul {
+  list-style: none;
+  margin: 0;
+}
+
+#nHeaderNavigation .menu-header li, div.menu li {
+  float: left;
+  position: relative;
+}
+
+#nHeaderNavigation a {
+  color: #aaa;
+  display: block;
+  line-height: 20px;
+  padding: 0 10px;
+  padding-left:4px;
+  text-decoration: none;
+}
+
+#nHeaderNavigation ul ul {
+  box-shadow: 0px 3px 3px rgba(0,0,0,0.2);
+  -moz-box-shadow: 0px 3px 3px rgba(0,0,0,0.2);
+  -webkit-box-shadow: 0px 3px 3px rgba(0,0,0,0.2);
+  display: none;
+  position: absolute;
+  top: 20px;
+  left: 0;
+  float: left;
+  width: 180px;
+  z-index: 99999;
+}
+
+#nHeaderNavigation ul ul li {
+  min-width: 180px;
+}
+
+#nHeaderNavigation ul ul ul {
+  left: 100%;
+  top: 0;
+}
+
+#nHeaderNavigation ul ul a {
+  background: #333;
+ /*  background: #014FA4; */
+  line-height: 1em;
+  padding: 10px;
+  width: 160px;
+  height: auto;
+}
+
+#nHeaderNavigation li:hover > a, 
+  #nHeaderNavigation ul ul :hover > a {
+    background: #333;
+   /* background: #014FA4; */
+    color: #fff;
+}
+
+#nHeaderNavigation ul li:hover > ul {
+  display: block;
+}
+
+#nHeaderNavigation ul li.current_page_item > a,
+  #nHeaderNavigation ul li.current-menu-ancestor > a,
+  #nHeaderNavigation ul li.current-menu-item > a,
+  #nHeaderNavigation ul li.current-menu-parent > a {
+    color: #fff;
+  }
+
+* html #nHeaderNavigation ul li.current_page_item a,
+* html #nHeaderNavigation ul li.current-menu-ancestor a,
+* html #nHeaderNavigation ul li.current-menu-item a,
+* html #nHeaderNavigation ul li.current-menu-parent a,
+* html #nHeaderNavigation ul li a:hover {
+  color: #fff;
+}
+
+#nFooterNavigation {
+  position: relative;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 80%;
+  font-weight: bold;
+  padding-top: 10px;
+}
+
+#nFooterNavigation .menu-header, div.menu {
+  font-size: 13px;
+  margin-left: 10px;
+  width: 928px;
+}
+
+#nFooterNavigation .menu-header ul, div.menu ul {
+  list-style: none;
+  margin: 0;
+}
+
+#nFooterNavigation .menu-header li, div.menu li {
+  float: left;
+  position: relative;
+}
+
+#nFooterNavigation a {
+  color: #aaa;
+  display: block;
+  line-height: 20px;
+  padding: 0 10px;
+  text-decoration: none;
+}
+
+#nFooterNavigation ul ul {
+  display: none;
+  position: absolute;
+  top: 20px;
+  left: 0;
+  float: left;
+  width: 180px;
+  z-index: 99999;
+}
+
+#nFooterNavigation ul ul li {
+  min-width: 180px;
+}
+
+#nFooterNavigation ul ul ul {
+  left: 100%;
+  top: 0;
+}
+
+#nFooterNavigation ul ul a {
+  background: #333;
+ /*  background: #014FA4; */
+  line-height: 1em;
+  padding: 10px;
+  width: 160px;
+  height: auto;
+}
+
+#nFooterNavigation li:hover > a, 
+  #nFooterNavigation ul ul :hover > a {
+    background: #333;
+   /*  background: #014FA4; */
+    color: #fff;
+}
+
+#nFooterNavigation ul li:hover > ul {
+  display: block;
+}
+
+#nFooterNavigation ul li.current_page_item > a,
+  #nFooterNavigation ul li.current-menu-ancestor > a,
+  #nFooterNavigation ul li.current-menu-item > a,
+  #nFooterNavigation ul li.current-menu-parent > a {
+    color: #fff;
+  }
+
+* html #nFooterNavigation ul li.current_page_item a,
+* html #nFooterNavigation ul li.current-menu-ancestor a,
+* html #nFooterNavigation ul li.current-menu-item a,
+* html #nFooterNavigation ul li.current-menu-parent a,
+* html #nFooterNavigation ul li a:hover {
+  color: #fff;
+}
+
+#nHeaderNavigation { /*overflow:hidden; */ }

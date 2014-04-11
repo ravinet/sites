@@ -1,0 +1,46 @@
+PHTTP65.254.51.34"÷
+HGET /wp-content/themes/infowars-standard/js/call_fanceybox.js HTTP/1.1
+Host: www.infowars.com
+Connection: keep-alive
+Accept: */*
+vUser-Agent: Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/31.0.1650.63 Safari/537.36
+#Referer: http://www.infowars.com/
+$Accept-Encoding: gzip,deflate,sdch
+!Accept-Language: en-US,en;q=0.8
+
+*å
+HTTP/1.1 200 OK
+.Last-Modified: Mon, 14 Jan 2013 21:01:52 GMT
+(Content-Type: application/x-javascript
+Content-Length: 484
+Accept-Ranges: bytes
+%Date: Fri, 11 Apr 2014 21:19:37 GMT
+
+Age: 743
+Connection: keep-alive
+X-Cache: cached
+æ
+// JavaScript Document
+jQuery(document).ready(function() {
+
+	/* This is basic - uses default settings */
+	
+	jQuery("a#single_image").fancybox();
+	
+	/* Using custom settings */
+	
+	jQuery("a#inline").fancybox({
+		'hideOnContentClick': true
+	});
+
+	/* Apply fancybox to multiple items */
+	
+	jQuery("a.single_image").fancybox({
+		'transitionIn'	:	'elastic',
+		'transitionOut'	:	'elastic',
+		'speedIn'		:	600, 
+		'speedOut'		:	200, 
+		'overlayShow'	:	false
+	});
+	
+});

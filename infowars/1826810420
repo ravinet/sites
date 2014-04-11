@@ -1,0 +1,470 @@
+PHTTP65.254.51.34"û
+=GET /wp-content/themes/infowars-standard/style.css HTTP/1.1
+Host: www.infowars.com
+Connection: keep-alive
+Accept: text/css,*/*;q=0.1
+vUser-Agent: Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/31.0.1650.63 Safari/537.36
+#Referer: http://www.infowars.com/
+$Accept-Encoding: gzip,deflate,sdch
+!Accept-Language: en-US,en;q=0.8
+
+*ü–
+HTTP/1.1 200 OK
+.Last-Modified: Mon, 26 Aug 2013 20:39:03 GMT
+Content-Type: text/css
+Content-Length: 19080
+Accept-Ranges: bytes
+%Date: Fri, 11 Apr 2014 21:19:37 GMT
+
+Age: 851
+Connection: keep-alive
+X-Cache: cached
+Š•
+/*
+Theme Name: infowars-standard
+Theme URI: http://www.infowars.com/
+Description: The 2011 default wordpress theme for www.infowars.com.
+Author: King Donkey
+Version: 1.0 
+Tags:s
+License: GPL
+License URI: http://www.opensource.org/licenses/gpl-license.php
+
+General comments (optional).
+
+Using below trips up Android Mobile :(
+@charset "utf-8";
+*/
+@import url('styles/reset.css');
+/* @import url('styles/menus.css'); */
+@import url('styles/menus2.css');
+html, body { background: black;  }
+
+#nContainer { position: relative; width: 995px; background: #FFFFFF; text-align: left; min-height: 100%; margin: 0px auto 0px auto;  }
+#nHeader { position: relative; width: 995px; }
+#nHeaderLogo { position: relative;  width: 995px; padding: 0px; margin: 0px;  }
+#nBody { position: relative; top: -5px; width: 995px; background:#FFFFFF; border-top: 2px outset; }
+#nBodyRight { padding:15px 20px 0px 20px; width: 300px; vertical-align: top; overflow:hidden;background: #FFFFFF;}
+#nBodyRight a { color: #024384; }
+#nBodyLeft { margin: 0px; width: 640px; background:#FFF; padding: 0px 0px 15px 0px; }
+#nNewsSlide { width: 333px; padding-right: 0px; }
+#nBroadcastingSchedule { width: 222px; height: 244px; background: url(http://static.infowars.com/2010/templateimages/radioboxbk3.jpg); text-align: center; margin-right: 15px; }
+.nBannerAd { position: relative; margin: 15px 0px 0px 20px; width: 620px; }
+#nSideBar { margin-left: 0px; }
+#nArchiveContainer { position: relative; padding: 0px; margin: 15px 0px 0px 15px; }
+.nArchiveHeader a { font-family: Arial, Helvetica, sans-serif; font-size: 14px; font-weight: bold; color: #0066CC; }
+.nArchiveExcerpt { position: relative; font-family: Verdana, Arial, Helvetica, sans-serif; font-size: 12px; line-height: 1.5em; margin: 0px; padding: 10px 30px 10px 25px; }
+#nFooter { position: relative; width: 995px; margin: 0px auto 3px auto; padding-top: 10px; background-color: #336699; background-image: url(http://static.infowars.com/2010/templateimages/footerbk.png); background-repeat: repeat-x; background-position: left top; font-family: Arial, Helvetica, sans-serif; font-size: 12px; font-weight: normal; height: 75px; }
+#nFooterNavigationCopyright { position: relative; padding-left: 20px; }
+#alexjonesContainer { width: 970px; margin: 0px 20px 0px auto; }
+#alexjonesContainer p { font-family: Arial,Helvetica,sans-serif; font-size: 12px; line-height: 1.3em; margin: 0px; padding: 0px 0px 6px; }
+#alexjonesContainer table { font-family: Arial,Helvetica,sans-serif; font-size: 12px; line-height: 1.3em; margin: 0px; padding: 5px; }
+#alexjonesContainer table td { vertical-align: top; padding: 3px; }
+#alexjonesContainer a { color: #000099; font-weight: bold; }
+#alexjonesContainer .header { font-size: 120%; }
+#alexjonesLeft { width: 615px; float: left; padding-top: 0px; }
+#alexjonesLeft .ajLImage { width: 332px; float: left; }
+#alexjonesLeft .ajRImage { margin -20px 0px 0px 15px; margin-left: 15px; margin-top: -20px; width: 250px; float: right; }
+#alexjonesRight { width: 340px; margin: 0px 0px 0px auto; }
+#listenOnInternetContainer { width: 965px; padding: 0px; font-family: Arial,Helvetica,sans-serif; font-size: 12px; line-height: 1.3em; margin: 0px; }
+#listenOnInternetContainer p { font-family: Arial,Helvetica,sans-serif; font-size: 12px; line-height: 1.3em; margin: 0px; padding: 0px 0px 6px; }
+#listenOnInternetContainer a { color: #000099; font-weight: bold; }
+#listenOnInternetLeft { float: left; width: 340px; }
+#listenOnInternetRight { float: right; width: 591px; }
+.subheadline a:link { font-family: Georgia, "Times New Roman", Times, serif; font-size: 14px; color: #000000; font-weight: bold; }
+.subheadline a:visited{ font-family: Georgia, "Times New Roman", Times, serif; font-size: 14px; color: #666666; font-weight: bold; }
+.subheadlinemain a:link{ font-family: Georgia, "Times New Roman", Times, serif; font-size: 24.13px; color: #000000; font-weight: normal; text-decoration: none;line-height:120%; }
+.subheadlinemain a:visited{ font-family: Georgia, "Times New Roman", Times, serif; font-size: 24.13px; color: #000000; font-weight: normal; text-decoration: none;line-height:120%; }
+.subheadlinemain a:hover{ font-family: Georgia, "Times New Roman", Times, serif; font-size: 24.13px; color: #006699; font-weight: normal;line-height:120%; }
+
+
+
+.textsize ul { margin: 0px; padding: 0px; font-family: Arial, Helvetica, sans-serif; font-size: 12px; color: #000000; font-weight: bold; }
+.textsize li { display: inline; list-style-type: none; margin: 0px; padding: 0px; vertical-align: text-top; }
+.rightmag { padding: 0px; margin 0px 8px 0px 0px; }
+.textsize { padding: 0px; float: right; margin: 5px 0px 0px 0px; }
+.commentlist { background-color: #F3F3F3; padding: 8px; margin: 6px 0px 6px 0px; }
+.commentmetadata { margin: 0px; padding: 0px; }
+#commentform input { width: 170px; padding: 2px; margin: 5px 5px 1px 0; }
+#commentform textarea { width: 99%; padding: 2px; }
+#commentform #submit { margin: 0; float: right; }
+.commentlist li.alt { margin: 0; border:none; padding: 10px; background-color:white; }
+.commentlist { padding: 0; text-align: left; }
+.commentlist a { text-decoration:none; color:#06c; }
+.commentlist li { margin: 15px 0 3px; padding: 5px 10px 3px; list-style: none; background-color:#f3f3f3; }
+.commentlist p { margin: 10px 5px 10px 0; }
+#commentform p {margin: 5px 0; }
+.nocomments { text-align: center; margin: 0; padding: 0; }
+.commentmetadata { margin: 0; display: block; }
+.commentlist li, #commentform input, #commentform textarea { font: 11px 'Lucida Grande', Verdana, Arial, Sans-Serif; }
+.commentlist li { font-weight: bold; }
+.commentlist cite, .commentlist cite a { font-weight: bold; font-style: normal; font-size: 1.1em; }
+.commentlist p { font-weight: normal; line-height: 1.2em; text-transform: none; }
+.commentmetadata { font-weight: normal; }
+.commentlist li, #commentform input, #commentform textarea { font: 11px 'Lucida Grande', Verdana, Arial, Sans-Serif; }
+.commentlist li { font-weight: bold; }
+.commentlist cite, .commentlist cite a { font-weight: bold; font-style: normal; font-size: 1.1em; }
+.commentlist p { font-weight: normal; line-height: 1.2em; text-transform: none; }
+.commentmetadata { font-weight: normal; }
+.subarticleArchive { width: 560px; float: left; padding-top: 12px; font-family: Georgia, "Times New Roman", Times, serif; font-size: 14px; line-height: 1.5em; border-bottom: 1px solid #06c; margin: 0px 0px 15px 25px; }
+.subarticleArchive img { float:left; padding-right:12px; border:none; }
+
+.ppani {
+    padding: 12px 12px 12px 0px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 9px;
+    text-align: center;
+    font-variant: normal;
+    text-transform: capitalize;
+    float: left;
+}
+.ppani li {
+    list-style-type: none;
+    margin: 0px;
+    padding: 0px;
+}
+.subarticle p {
+    margin-bottom: 0;
+    margin-left: 0;
+    margin-right: 0;
+    margin-top: 12px;
+    padding-bottom: 0;
+    padding-left: 0;
+    padding-right: 0;
+    padding-top: 0;
+} 
+/*
+.subarticle p {
+    font-size:14px;line-height:150%;margin-bottom:20px;text-align:justify;
+font-family:Helvetica,Arial,sans-serif;}
+.nFeaturedStoriesExcerpt p { font-size:12px;line-height:150%;margin-bottom:10px;text-align:justify;
+font-family:Helvetica,Arial,sans-serif;}
+*/
+.single { font-family: Georgia,"Times New Roman",Times,serif; font-size: 13px; line-height: 1.4em; }
+
+#nFeaturedCategories { position: relative; font-family: Georgia, "Times New Roman", Times, serif; font-size: 80%;}
+#nFeaturedCategories a:link { color:#205580; text-decoration: none; font-weight: bold; text-decoration: none; font-weight: normal; padding: 0px; margin: 0px; }
+#nFeaturedCategories a:visited { color:#205580; text-decoration: none; font-weight:normal; }
+#nFeaturedCategories a:hover { color:#205580; text-decoration: underline; font-weight:normal; }
+#nFeaturedCategories ul { margin: 0px; padding: 0px; background-color: #EEEEEE; }
+#nFeaturedCategories #nSectionLeft { margin: 10px 0px 0px 20px; padding: 0px; border: 0px; width: 302px; }
+#nFeaturedCategories #nSectionRight { margin: 10px 0px 0px 0px; padding: 0px; border: 0px; width: 302px; }
+#nFeaturedCategories .cat-headline { padding: 5px 5px 5px 0px; font-weight: bold; }
+.nSectionHeadLine { background-color: #EEE; padding: 0px; margin-left: 5px; }
+.nSectionContent { background-color: white; padding: 5px; margin-left: 5px; }
+.nSectionContent div { padding: 10px 0px 10px 0px; }
+.nSectionContent div a { padding: 0px; font-family: Georgia, "Times New Roman", Times, serif; font-size: 110%; }
+#nFeaturedStories { background: #EEEEEE; font-family: Verdana, Arial, Helvetica, sans-serif; font-size: 11px; line-height: 1.3em; width: 618px; border: 1px solid #c4c4c4; margin: 10px 0px 0px 20px; height: 100%; }
+#nFeaturedStories p.nFeaturedStoriesHeadline { padding: 5px 0px 4px 10px; font-weight: bold; }
+#nFeaturedStoriesContent { background-color: white; margin: 0px 0px 0px auto; padding: 10px 0px 10px 10px; width: 97%; }
+#nFeaturedStoriesContent h2.nFeaturedStoriesTitle { padding: 5px; font-size: 160%;font-weight:normal; font-family: Georgia, "Times New Roman", Times, serif; color:#205580;line-height: 100%;}
+#nFeaturedStoriesContent a:link { color:#205580; text-decoration: none; font-weight: bold; text-decoration: none; font-weight: normal; padding: 0px; margin: 0px; }
+#nFeaturedStoriesContent a:visited { color:#205580; text-decoration: none; font-weight:normal; }
+#nFeaturedStoriesContent a:hover { color:#205580; text-decoration: underline; font-weight:normal; }
+#nFeaturedStoriesContent img.nFeaturedStoriesImage { margin: 0px; float: left; padding: 0px 12px 6px 0px; }
+#nFeaturedStoriesContent div.nFeaturedStoriesExcerpt { padding: 5px; }
+
+/* NEW TITLE STYLE */
+/*
+#nFeaturedStoriesContent h2.nFeaturedStoriesTitle a	{
+	color:#164a6e
+	font-family:Georgia,Times,serif;font-weight:200;
+	font-size:18px;
+	line-height: 110%;
+	}
+	
+.subarticle p {
+    font-size:14px;line-height:150%;margin-bottom:20px;text-align:justify;
+font-family:Helvetica,Arial,sans-serif;}
+
+.sidebarbox p, .nFeaturedStoriesExcerpt p { font-size:12px;line-height:150%;margin-bottom:10px;text-align:justify;
+font-family:Helvetica,Arial,sans-serif; margin-bottom:0px;}
+*/
+/*******************/
+
+#nFeaturedStoriesContent div.nFeaturedStoriesComments {
+    font-family: Verdana,Arial,Helvetica,sans-serif;
+    font-size: 9px;
+    font-style: normal;    
+}
+
+#nFeaturedStoriesContent div.nFeaturedStoriesComments a:link {
+  color: #0066CC;
+}
+
+#nFeaturedStoriesContent div.nFeaturedStoriesComments a:hover {
+  color: #024384;
+}
+
+#nFeaturedStoriesContent div.nFeaturedStoriesArchive { padding: 5px; }
+.sidebarbox { width: 282px; border: 1px solid #CCCCCC; padding: 6px 8px 10px 8px; background-image: url(http://static.infowars.com/2010/templateimages/greybox2.png); background-repeat: no-repeat; background-position: 0px 0px; margin: 0px 0px 5px 0px; overflow:hidden; font-family: Arial, Helvetica, sans-serif; font-size: 12px; line-height: 1.3em; }
+.sidebarbox select { border: 1px solid #999999; margin: 3px;}
+.sidebarphotobox { padding: 0px; float: left; margin: 0px 8px 6px 0px; }
+.sidebarphotobox li { list-style-type: none; margin: 0px; padding: 0px; font-family: Arial, Helvetica, sans-serif; font-size: 11px; }
+.boxheader { margin-bottom: 15px; padding: 0px; height: 15px; font-family: Verdana,Arial,Helvetica,sans-serif; font-size: 11px; font-weight: bold; font-style: normal; color: #1A1A1A; }
+.sidebarbox a:link { color: #024384; text-decoration: none; font-weight: bold; text-decoration: none; font-weight: bold; padding: 0px; margin: 0px; }
+.sidebarbox a:visited { color: #024384; text-decoration: none; font-weight: bold; }
+.sidebarbox a:hover { color: #024384; text-decoration: underline; font-weight: bold; }
+.shareinpost {margin-top:10px;}
+
+#broadcastInfo {
+	width:100%;
+	padding-top:60px;
+	padding-bottom:15px;
+}
+#broadcastInfo, #broadcastInfo a {
+	font-family:Arial, Helvetica, sans-serif;
+	font-size:12px;
+	text-align:center;
+	color:white;
+	font-weight:bold;
+	text-decoration:none;
+}
+#broadcastInfo a:hover { text-decoration:underline; }
+.sliderNew{ float:left; width:576px; height:304px; background-color:green;}
+
+@font-face {
+    font-family: 'LeagueGothicRegular';
+	src:url('http://www.infowars.com/wp-content/plugins/dynamic-content-gallery-plugin/includes/League_Gothic-webfont.eot');
+	src: local('â˜º'),
+	url('http://www.infowars.com/wp-content/plugins/dynamic-content-gallery-plugin/includes/League_Gothic-webfont.woff') format('woff'), url('http://www.infowars.com/wp-content/plugins/dynamic-content-gallery-plugin/includes/League_Gothic-webfont.ttf') format('truetype'),
+	url('http://www.infowars.com/wp-content/plugins/dynamic-content-gallery-plugin/includes/League_Gothic-webfont.svg#webfontFHzvtkso') format('svg');
+}
+/*
+@font-face {
+    font-family: 'LeagueDev';
+	src:url('http://devbox.infowars.com/wp-content/plugins/dynamic-content-gallery-plugin/includes/League_Gothic-webfont.eot');
+	src: local('â˜º'),
+	url('http://devbox.com/wp-content/plugins/dynamic-content-gallery-plugin/includes/League_Gothic-webfont.woff') format('woff'), url('http://devbox.com/wp-content/plugins/dynamic-content-gallery-plugin/includes/League_Gothic-webfont.ttf') format('truetype'),
+	url('http://devbox.com/wp-content/plugins/dynamic-content-gallery-plugin/includes/League_Gothic-webfont.svg#webfontFHzvtkso') format('svg');
+}
+*/
+.alignright {padding-left:10px;}
+.alignleft {padding-right:10px;}
+.subarticle img {padding-top:10px; padding-bottom:10px;}
+
+.wp-caption-text { font-family: Arial, sans-serif; font-size:10px; }
+.photo-caption { font-family: Arial, sans-serif; font-size:10px; }
+
+/**********MONSTER AD - NEWSLETTER PROMO*****************/
+/* body {
+	  background-image:url(http://static.infowars.com/images/paul_revere/infowars_background.jpg) !important; 
+	  background-repeat:no-repeat;  
+	  background-position:center top; 
+}  */
+/**********article photo styler*****************/
+.picture {
+	font: 11px/1.4em Arial, sans-serif;
+	padding-top: 0px;
+	padding-right: 8px;
+	padding-bottom: 0px;
+	padding-left: 0px;
+	
+}
+.picture img {
+	vertical-align: left;
+	margin-bottom: 3px;
+}
+.right { margin: 0.5em 0pt 0.5em 0.8em; float:right; }
+.left { margin: 0.5em 0.8em 0.5em 0; float:left; }
+
+.comment-body { overflow:hidden; }
+
+
+/* for the youtube channel player */
+  h1.page_title {
+	  width:100%;
+	  font-family:'LeagueGothicRegular', Arial;
+	font-weight:normal;
+	background:#231F20;
+	border-bottom:solid 1px #666;
+	border-right: solid 1px #666;
+	border-top: solid 1px #666;
+	text-transform:uppercase;
+	padding:4px;
+	padding-left:2px;
+	color:#0AA7DE;
+	font-size:28px;
+	line-height:28px;
+	letter-spacing: .1em;
+	margin-top:20px;
+	margin-bottom:20px;
+  }
+  
+  
+  
+.wp-caption {
+	/* width:auto!important; */
+}
+
+.wp-caption img {
+	padding-bottom:0px!important;
+}
+
+
+#embed #caption, #embed_wide #caption, .wp-caption-text {
+    background: none repeat scroll 0 0 #000000;
+    color: #DDDDDD;
+    font-size: 12px;
+    line-height: 15px;
+    padding: 10px;
+}
+.wp-caption-text {
+    margin: -5px 0px 0 0!important;
+	padding:12px 11px 14px 11px!important;
+}
+
+.sidebarbox, .textwidget{
+	margin-top:4px;
+	margin-bottom:4px;
+}
+
+/* new widgets */
+div.widget {
+    -moz-border-bottom-colors: none;
+    -moz-border-left-colors: none;
+    -moz-border-right-colors: none;
+    -moz-border-top-colors: none;
+    border-color: #333333 #CCCCCC #CCCCCC;
+    border-image: none;
+    border-right: 1px solid #CCCCCC;
+    border-style: solid;
+    border-width: 4px 1px 1px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    margin: 8px 0;
+	width:282px;
+	background:white!important;
+}
+
+div.widget h3, div.widget h4 {
+    margin: 5px;
+	font-family: 'LeagueGothicRegular', Arial!important;
+	font-size:33px;
+	text-transform:uppercase;
+	font-weight:normal;
+	text-align:center;
+	line-height:37px;
+	color:#F00;
+	color:#D40808;
+}
+
+ul.stansberry_list {
+	margin-left:0px;
+	padding:0px;
+}
+
+li.stansberry_item {
+	width:284px;
+	list-style-type:none;
+	margin-bottom:3px;
+}
+
+/* li.stansberry_item:before {
+	display:inline-block;
+	content: "\25BA \0020";
+	padding-right:2px;
+} */
+
+.widget h4 {
+	font-family: 'LeagueGothicRegular', Arial!important;
+	font-size:11px;
+}
+
+#rssbox { min-height:315px; }
+
+#rss_pptvbox { min-height:340px; }
+
+/************/
+@media screen and (-webkit-min-device-pixel-ratio:0) {  
+.subheadlinemain a:link{ font-family: Georgia, "Times New Roman", Times, serif; font-size: /* 24.13px*/ 160%; color: #000000; font-weight: normal; text-decoration: none;line-height:170%; }
+.subheadlinemain a:visited{ font-family: Georgia, "Times New Roman", Times, serif; font-size: /* 24.13px*/ 160%; color: #000000; font-weight: normal; text-decoration: none;line-height:170%; }
+.subheadlinemain a:hover{ font-family: Georgia, "Times New Roman", Times, serif; font-size: /* 24.13px*/ 160%; color: #006699; font-weight: normal;line-height:170%; }
+}
+
+
+@media screen and (-webkit-min-device-pixel-ratio:0) and (min-width:768px) {  
+.subheadlinemain a:link{ font-family: Georgia, "Times New Roman", Times, serif; font-size: /* 24.13px*/ 110%; color: #000000; font-weight: normal; text-decoration: none;line-height:120%; }
+.subheadlinemain a:visited{ font-family:  Georgia, "Times New Roman", Times, serif; font-size: /* 24.13px*/ 110%; color: #000000; font-weight: normal; text-decoration: none;line-height:120%; }
+.subheadlinemain a:hover{ font-family: Georgia, "Times New Roman", Times, serif; font-size: /* 24.13px*/ 110%; color: #006699; font-weight: normal;line-height:120%; }
+}
+
+
+/************/
+
+/************/
+
+.nextpage {
+    background: none repeat scroll 0 0 #fff;
+    height: 30px;
+    line-height: 25px;
+    border-top: 1px solid;
+}
+
+
+ul.page_nav13 img {
+    padding-bottom: 1px;
+    padding-top: 10px;
+}
+
+ul.page_nav13 {
+    list-style: none outside none;
+    font-family: arial;
+    font-size: 20px;
+    font-weight: bold;
+    list-style: none outside none;
+    margin: 5px;
+    float: right;
+}
+.nextpage li {
+    display:inline;
+    		width: 24px;
+padding: 5px;
+
+}
+
+.nextpage ul li a {
+    color: #000;
+    text-decoration: none;
+    padding: 1px;
+}
+
+.nextpage li.onpage{
+	width: 24px;
+	background: #fff;
+	color: #CCCCCC;
+	margin: 5px;
+	text-align: center;
+	
+	
+    border: 0.5px solid #fff !important;
+    border-radius: 3px 3px 3px 3px;
+    height: 20px;
+    margin-right: 3px;
+    text-align: center;
+    width: 20px;
+    padding-top: 4px;
+}
+
+.nextpage li.offpage{
+	color:#000;
+	margin: 5px;
+	text-align: center;
+}
+
+
+
+/*****nextpage end*****/
+
+
+.ad_in_post {
+	font-family: Verdana,Arial,Helvetica,sans-serif;
+	
+	background-color:#F0F0F0;
+	font-size:12px;
+	padding: 10px;
+	width: 100%;
+}
+
+.clearboth{
+	clear:both;
+}
