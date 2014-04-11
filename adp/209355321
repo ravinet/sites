@@ -1,0 +1,41 @@
+»HTTPS170.146.234.214"ä
+(GET /css/adp-only-content.css HTTP/1.1
+Host: www.adp.com
+Connection: keep-alive
+Accept: text/css,*/*;q=0.1
+vUser-Agent: Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/31.0.1650.63 Safari/537.36
+Referer: https://www.adp.com/
+$Accept-Encoding: gzip,deflate,sdch
+!Accept-Language: en-US,en;q=0.8
+„Cookie: ASP.NET_SessionId=lararjuohw3dki55e3vric45; ADPLeadCookie=lararjuohw3dki55e3vric45; BIGipServerp_www.adp.com=1860375724.20480.0000; BIGipServerp_www.adp.com_web=313463980.29440.0000; optimizelySegments=%7B%22198340375%22%3A%22direct%22%2C%22198416283%22%3A%22none%22%2C%22198418477%22%3A%22gc%22%2C%22198472144%22%3A%22false%22%7D; optimizelyEndUserId=oeu1397252271605r0.5070837063249201; optimizelyBuckets=%7B%7D; optimizelyPendingLogEvents=%5B%22n%3Dhttps%253A%252F%252Fwww.adp.com%252F%26u%3Doeu1397252271605r0.5070837063249201%26wxhr%3Dtrue%26t%3D1397252271609%26f%3D201675883%2C485751263%2C566330229%2C574150273%2C653310506%22%5D
+
+*²
+HTTP/1.1 200 OK
+%Date: Fri, 11 Apr 2014 21:37:51 GMT
+Server: Apache
+.Last-Modified: Wed, 02 May 2012 18:10:46 GMT
+"ETag: "3b0f7d-1bf-4bf119b32f580"
+Accept-Ranges: bytes
+Content-Length: 447
+Cache-Control: max-age=28800
+(Expires: Sat, 12 Apr 2014 05:37:51 GMT
+Keep-Alive: timeout=5, max=98
+Connection: Keep-Alive
+Content-Type: text/css
+Á
+/* Tempalte : only-content +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++*/
+/*	(only-content) */
+	/* =structure */
+	.only-content #col-body{
+		padding:0px 10px;
+	}
+		.only-content #col-body #col-content{	/* content column */
+			width:971px;
+			margin:0px;
+			padding:0px;
+			float:none;
+			min-height:400px;
+		}
+		* html .only-content #col-body #col-content{
+			height:400px;
+		}

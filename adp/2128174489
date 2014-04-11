@@ -1,0 +1,27 @@
+»HTTPS170.146.234.214"‘
+GET /css/ui.css HTTP/1.1
+Host: www.adp.com
+Connection: keep-alive
+Accept: text/css,*/*;q=0.1
+vUser-Agent: Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/31.0.1650.63 Safari/537.36
+Referer: https://www.adp.com/
+$Accept-Encoding: gzip,deflate,sdch
+!Accept-Language: en-US,en;q=0.8
+¿Cookie: ASP.NET_SessionId=lararjuohw3dki55e3vric45; ADPLeadCookie=lararjuohw3dki55e3vric45; BIGipServerp_www.adp.com=1860375724.20480.0000; BIGipServerp_www.adp.com_web=313463980.29440.0000
+
+*Ÿ
+HTTP/1.1 200 OK
+%Date: Fri, 11 Apr 2014 21:37:51 GMT
+Server: Apache
+.Last-Modified: Wed, 02 May 2012 18:10:46 GMT
+!ETag: "3b10a6-2f-4bf119b32f580"
+Accept-Ranges: bytes
+Content-Length: 47
+Cache-Control: max-age=28800
+(Expires: Sat, 12 Apr 2014 05:37:51 GMT
+Keep-Alive: timeout=5, max=26
+Connection: Keep-Alive
+Content-Type: text/css
+1
+@import "ui.base.css";
+@import "ui.theme.css";

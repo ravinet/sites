@@ -1,0 +1,24 @@
+»HTTPS209.167.231.15"‘
+TGET /visitor/v200/svrGP.aspx?pps=3&siteid=937&ref2=elqNone&tzo=300&ms=948 HTTP/1.1
+Host: secure.eloqua.com
+Connection: keep-alive
+Accept: image/webp,*/*;q=0.8
+vUser-Agent: Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/31.0.1650.63 Safari/537.36
+Referer: https://www.adp.com/
+$Accept-Encoding: gzip,deflate,sdch
+!Accept-Language: en-US,en;q=0.8
+
+*®
+HTTP/1.1 302 Found
+Cache-Control: private
+(Content-Type: text/html; charset=utf-8
+vLocation: https://secure.eloqua.com/visitor/v200/svrGP.aspx?pps=3&siteid=937&ref2=elqNone&tzo=300&ms=948&elqCookie=1
+}Set-Cookie: ELOQUA=GUID=752776E9A72E4EE7ADD535F7C81057A6; domain=.eloqua.com; expires=Mon, 11-Apr-2016 21:37:51 GMT; path=/
+]Set-Cookie: ELQSTATUS=OK; domain=.eloqua.com; expires=Mon, 11-Apr-2016 21:37:51 GMT; path=/
+FP3P: CP="IDC DSP COR DEVa TAIa OUR BUS PHY ONL UNI COM NAV CNT STA",
+%Date: Fri, 11 Apr 2014 21:37:51 GMT
+Content-Length: 243
+õ
+<html><head><title>Object moved</title></head><body>
+<h2>Object moved to <a href="https://secure.eloqua.com/visitor/v200/svrGP.aspx?pps=3&amp;siteid=937&amp;ref2=elqNone&amp;tzo=300&amp;ms=948&amp;elqCookie=1">here</a>.</h2>
+</body></html>
