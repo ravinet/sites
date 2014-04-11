@@ -1,30 +1,0 @@
-PHTTP74.125.193.95"Ø
-,GET /css?family=Libre+Baskerville HTTP/1.1
-Host: fonts.googleapis.com
-Connection: keep-alive
-Accept: text/css,*/*;q=0.1
-vUser-Agent: Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/31.0.1650.63 Safari/537.36
-ŒReferer: http://www.4chan.com/?epl=4HimtmEd43n-VAsazlaMSzm3rC-QUDhFchd_TSOUfr7MuqWE2kzArIZJzSCgAe7xLYXr2xNBAduMUepwGGADog7qTWfmOFTQMORfRF0gkjREqmhekozpzEUyW4Gd1-Jy_C1P6plqNt054LKM1E_1GEJsGio_SZM9VYOm0chAo6mnHkiPmhpyACCQ3u-_AADgfwEAAECAWwsAADm3rC9ZUyZZQTE2aFpCkgAAAPA
-$Accept-Encoding: gzip,deflate,sdch
-!Accept-Language: en-US,en;q=0.8
-
-*ž
-HTTP/1.1 200 OK
-Content-Type: text/css
-Timing-Allow-Origin: *
-(Expires: Thu, 09 Jan 2014 13:45:25 GMT
-%Date: Thu, 09 Jan 2014 13:45:25 GMT
-'Cache-Control: private, max-age=86400
-Content-Length: 302
-!X-Content-Type-Options: nosniff
-X-Frame-Options: SAMEORIGIN
-!X-XSS-Protection: 1; mode=block
-Server: GSE
-Alternate-Protocol: 80:quic
-°
-@font-face {
-  font-family: 'Libre Baskerville';
-  font-style: normal;
-  font-weight: 400;
-  src: local('Libre Baskerville'), local('LibreBaskerville-Regular'), url(http://themes.googleusercontent.com/static/fonts/librebaskerville/v2/pR0sBQVcY0JZc_ciXjFsK5Rby8KfwQsaipLBqMCVNtM.woff) format('woff');
-}
