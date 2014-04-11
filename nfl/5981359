@@ -1,33 +1,0 @@
-PHTTP173.194.43.60"¼
-VGET /activityi;src=3738527;type=nflcn285;cat=nflco092;ord=4516754755750299? HTTP/1.1
-Host: fls.doubleclick.net
-Connection: keep-alive
-TAccept: text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8
-vUser-Agent: Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/31.0.1650.63 Safari/537.36
-Referer: http://www.nfl.com/
-$Accept-Encoding: gzip,deflate,sdch
-!Accept-Language: en-US,en;q=0.8
-pCookie: id=22934e9a7e0200d6||t=1389227621|et=730|cs=002213fd48b931c4e73e3acfec; test_cookie=CheckForPermission
-
-*¤
-HTTP/1.1 302 Found
-mSet-Cookie: test_cookie=; domain=.doubleclick.net; path=/; Max-Age=0; expires=Mon, 21 Jul 2008 23:59:00 GMT
-¥P3P: policyref="http://googleads.g.doubleclick.net/pagead/gcn_p3p_.xml", CP="CURa ADMa DEVa TAIo PSAo PSDo OUR IND UNI PUR INT DEM STA PRE COM NAV OTC NOI DSP COR"
-%Date: Thu, 09 Jan 2014 00:33:42 GMT
-(Expires: Thu, 09 Jan 2014 00:33:42 GMT
-#Cache-Control: private, max-age=0
-X-Frame-Options: ALLOWALL
-Server: Floodlight
-!X-Content-Type-Options: nosniff
-(Content-Type: text/html; charset=UTF-8
-tLocation: http://3738527.fls.doubleclick.net/activityi;src=3738527;type=nflcn285;cat=nflco092;ord=4516754755750299
-Content-Length: 301
-!X-XSS-Protection: 1; mode=block
-Alternate-Protocol: 80:quic
-¯
-<HTML><HEAD><meta http-equiv="content-type" content="text/html;charset=utf-8">
-<TITLE>302 Moved</TITLE></HEAD><BODY>
-<H1>302 Moved</H1>
-The document has moved
-<A HREF="http://3738527.fls.doubleclick.net/activityi;src=3738527;type=nflcn285;cat=nflco092;ord=4516754755750299">here</A>.
-</BODY></HTML>

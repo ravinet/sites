@@ -1,28 +1,0 @@
-PHTTP107.23.98.38"±
-PGET /firstevent?d_stuff=1&d_dst=1&d_rtbd=json&d_cts=1&d_cb=aam_tnt_cb HTTP/1.1
-Host: nfl.demdex.net
-Connection: keep-alive
-Accept: */*
-vUser-Agent: Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/31.0.1650.63 Safari/537.36
-Referer: http://www.nfl.com/
-$Accept-Encoding: gzip,deflate,sdch
-!Accept-Language: en-US,en;q=0.8
-7Cookie: demdex=87216330760976652374510947020138589878
-
-*±	
-HTTP/1.1 200 OK
-bCache-Control: no-cache,no-store,must-revalidate,max-age=0,proxy-revalidate,no-transform,private
-4Content-Type: application/javascript;charset=UTF-8
-4DCS: va6-dcsAS1-10-89-2-139.va6.demdex.com 1.15.34
-(Expires: Thu, 01 Jan 2009 00:00:00 GMT
-cP3P: policyref="/w3c/p3p.xml", CP="NOI NID CURa ADMa DEVa PSAa PSDa OUR SAMa BUS PUR COM NAV INT"
-Pragma: no-cache
- Server: Jetty(7.6.8.v20121106)
-|Set-Cookie: nfl=87216330760976652374510947020138589878;Path=/;Domain=.nfl.demdex.net;Expires=Sat, 09-Jan-2016 00:33:41 GMT
-§Set-Cookie: DexLifeCycle="MA==|MTIwOTAyPTE6MTgzNCw3OTcwMz0xOjE4MzQsNDY5NTI5PTE6MTgzNCw3OTgwOD0xOjE4MzQsNDY0NDY4PTE6MTgzNA==|MA==|MTQ3NTUsNDg0MjksNDgwNjcsNDU2MDIsNDg0MzAsNDg5NTMsNDk1MDIsNDgxODQsMTU2NTgsMTU2NTk=|MA==|MA==|MA==";Path=/;Domain=.nfl.demdex.net;Expires=Sat, 09-Jan-2016 00:33:41 GMT
-RSet-Cookie: DST=;Path=/;Domain=.demdex.net;Expires=Sat, 09-Jan-2016 00:33:41 GMT
-	STS: OK
-Content-Length: 204
-Connection: keep-alive
-Î
-aam_tnt_cb({"dests":[],"stuff":[{"cn":"aamnfl","cv":"Prod=GENDFP","ttl":90,"dmn":""},{"cn":"aam_sc","cv":"aamsc=513545","ttl":30,"dmn":""}],"uuid":"87216330760976652374510947020138589878","dcs_region":7})
