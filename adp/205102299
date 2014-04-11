@@ -1,28 +1,0 @@
-PHTTP54.225.203.230"ê
-•GET /event?a=198303326&d=165817466&y=false&x526250470=519670804&s198340375=direct&s198416283=none&s198418477=gc&s198472144=false&n=http%3A%2F%2Fwww.adp.com%2F&g=526250470&u=oeu1389231447598r0.6391389577183872&wxhr=true&t=1389231447606&f=201675883,485751263,526250470 HTTP/1.1
-$Host: 198303326.log.optimizely.com
-Connection: keep-alive
-vUser-Agent: Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/31.0.1650.63 Safari/537.36
-Origin: http://www.adp.com
-Accept: */*
-Referer: http://www.adp.com/
-$Accept-Encoding: gzip,deflate,sdch
-!Accept-Language: en-US,en;q=0.8
-
-*ô
-HTTP/1.1 200 OK
-(Access-Control-Allow-Credentials: true
-)Access-Control-Allow-Methods: POST, GET
-1Access-Control-Allow-Origin: http://www.adp.com
- Content-Type: application/json
-%Date: Thu, 09 Jan 2014 01:37:15 GMT
-9P3P: CP="IDC DSP COR CURa ADMa OUR IND PHY ONL COM STA"
-Server: nginx/1.2.7
-~Set-Cookie: fixed_external_198303326_end_user_id=; Domain=.optimizely.com; expires=Thu, 01 Jan 1970 00:00:00 GMT; Max-Age=-1
-}Set-Cookie: fixed_external_198303326_bucket_map=; Domain=.optimizely.com; expires=Thu, 01 Jan 1970 00:00:00 GMT; Max-Age=-1
-{Set-Cookie: bucket_map=526250470%3A519670804; Domain=.198303326.log.optimizely.com; expires=Sun, 07 Jan 2024 01:37:15 GMT
-ŠSet-Cookie: end_user_id=oeu1389231447598r0.6391389577183872; Domain=.198303326.log.optimizely.com; expires=Sun, 07 Jan 2024 01:37:15 GMT
-Content-Length: 2
-Connection: keep-alive
-
-{}

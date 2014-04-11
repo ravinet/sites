@@ -1,40 +1,0 @@
-PHTTP170.146.234.214"·
-$GET /elqNow/MAS/elqImg.js HTTP/1.1
-Host: www.adp.com
-Connection: keep-alive
-Accept: */*
-vUser-Agent: Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/31.0.1650.63 Safari/537.36
-Referer: http://www.adp.com/
-$Accept-Encoding: gzip,deflate,sdch
-!Accept-Language: en-US,en;q=0.8
-ëCookie: ASP.NET_SessionId=vmu3yn45h5g4nleohntnuc55; ADPLeadCookie=vmu3yn45h5g4nleohntnuc55; BIGipServerp_www.adp.com=1860375724.20480.0000; BIGipServerp_www.adp.com_web=313463980.29440.0000; optimizelySegments=%7B%22198340375%22%3A%22direct%22%2C%22198416283%22%3A%22none%22%2C%22198418477%22%3A%22gc%22%2C%22198472144%22%3A%22false%22%7D; optimizelyEndUserId=oeu1389231447598r0.6391389577183872; optimizelyBuckets=%7B%22526250470%22%3A%22519670804%22%7D; optimizelyPendingLogEvents=%5B%5D
-
-*â
-
-HTTP/1.1 200 OK
-%Date: Thu, 09 Jan 2014 01:37:16 GMT
-Server: Microsoft-IIS/6.0
-Content-Length: 959
-(Content-Type: application/x-javascript
-.Last-Modified: Thu, 28 Jun 2007 17:56:44 GMT
-Accept-Ranges: bytes
-ETag: "09633b0adb9c71:16b89"
-X-Powered-By: ASP.NET
-Cache-Control: max-age=28800
-(Expires: Thu, 09 Jan 2014 09:37:16 GMT
-Keep-Alive: timeout=5, max=87
-Connection: Keep-Alive
-Á
-// Copyright Eloqua Corporation.
-var elqWDt = new Date(20020101);
-var elqDt = new Date();
-var elqMs = elqDt.getMilliseconds();
-var elqTzo = elqWDt.getTimezoneOffset();
-var elqRef2 = '';
-if (typeof elqCurE != 'undefined'){
-if (document.referrer) { elqRef2 = document.referrer; }
-if ((typeof elqRef2 == 'undefined') || (elqRef2 == 'undefined') || (elqRef2 == '')) { elqRef2 = 'elqNone'; }
-else { elqRef2 = elqReplace(elqReplace(elqRef2,'&','%26'),'#','%23'); }
-if (navigator.appName == 'Netscape' || navigator.userAgent.indexOf("Opera")!=-1) { document.write('<la' + 'yer hidden=true><im' + 'g src="' + elqCurE + '?pps=3&siteid=' + elqSiteID + '&ref2=' + elqRef2 + '&tzo=' + elqTzo + '&ms=' + elqMs + '" border=0 width=1 height=1 ><\/la' + 'yer>');}
-else { document.write('<im' + 'g style="display:none" src="' + elqCurE + '?pps=3&siteid=' + elqSiteID + '&ref2=' + elqRef2 + '&tzo=' + elqTzo + '&ms=' + elqMs + '" border=0 width=1 height=1 >');}
-}
