@@ -1,17 +1,0 @@
-»HTTPS74.125.225.142"Ä
-3GET /chrome-variations/seed?osname=linux HTTP/1.1
-Host: clients4.google.com
-Connection: keep-alive
-4If-Match: bdac8c1781d0a2e4dc29ffb56510c209a1482bac
-vUser-Agent: Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/31.0.1650.63 Safari/537.36
-$Accept-Encoding: gzip,deflate,sdch
-
-*à
-HTTP/1.1 304 Not Modified
-!X-Content-Type-Options: nosniff
-X-Frame-Options: SAMEORIGIN
-!X-Xss-Protection: 1; mode=block
-%Date: Fri, 11 Apr 2014 21:05:27 GMT
-Server: GFE/2.0
-Alternate-Protocol: 443:quic
-

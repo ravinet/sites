@@ -1,27 +1,0 @@
-PHTTP107.23.109.183"Ÿ
-POST /api/track.php HTTP/1.1
-Host: t.skimresources.net
-Connection: keep-alive
-Content-Length: 347
-$Origin: http://www.telegraph.co.uk
-vUser-Agent: Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/31.0.1650.63 Safari/537.36
-1Content-type: application/x-www-form-urlencoded
-Accept: */*
-&Referer: http://www.telegraph.co.uk/
-$Accept-Encoding: gzip,deflate,sdch
-!Accept-Language: en-US,en;q=0.8
-Ý
-data=%7B%22pag%22%3A%22http%3A%2F%2Fwww.telegraph.co.uk%2F%22%2C%22phr%22%3A%7B%7D%2C%22unl%22%3A%7B%7D%2C%22pub%22%3A%22296X467%22%2C%22slc%22%3A0%2C%22swc%22%3A0%2C%22ulc%22%3A0%2C%22jsl%22%3A887%2C%22jsf%22%3A%22%22%2C%22guid%22%3A%22e4bbcad3125f0ed83d4bee297e905efe%22%2C%22uc%22%3Afalse%2C%22t%22%3A1%2C%22tz%22%3A240%2C%22pref%22%3A%22%22%7D*·
-HTTP/1.1 200 OK
-\Access-Control-Allow-Headers: Origin, Accept, Content-Type, X-Requested-With, X-CSRF-Token
-)Access-Control-Allow-Methods: GET, POST
- Access-Control-Allow-Origin: *
-(Content-Type: text/html; charset=UTF-8
-%Date: Fri, 11 Apr 2014 21:05:33 GMT
-LP3P: CP="IDC DSP COR ADM DEVi TAIi PSA PSD IVAi IVDi CONi HIS OUR IND CNT"
-Server: nginx
-}Set-Cookie: skimGUID=8398d11fb2c1800bf22e7be5e4049086; Domain=.skimlinks.com; expires=Sat, 11 Apr 2015 21:05:33 GMT; Path=/
-Content-Length: 22
-Connection: keep-alive
-
-// Javascript Document
