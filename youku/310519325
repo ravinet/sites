@@ -1,0 +1,27 @@
+PHTTP218.60.4.52"Í
+GET /crossdomain.xml HTTP/1.1
+Host: static.atm.youku.com
+Connection: keep-alive
+vUser-Agent: Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/31.0.1650.63 Safari/537.36
+Accept: */*
+ Referer: http://www.youku.com/
+$Accept-Encoding: gzip,deflate,sdch
+!Accept-Language: en-US,en;q=0.8
+|Cookie: advideo86850_3=1; advideo87191_5=1; __ysuid=1397251035732Nz9; advideo87472_1=2; advideo87472_2=1; advideo87475_1=2
+
+*¤
+HTTP/1.1 200 OK
+(Expires: Sun, 26 Mar 2017 21:17:18 GMT
+!Cache-Control: max-age=93312000
+Content-Type: text/xml
+ETag: "2705224312"
+.Last-Modified: Thu, 27 Dec 2007 02:45:46 GMT
+Content-Length: 117
+Connection: close
+%Date: Fri, 11 Apr 2014 21:17:18 GMT
+Server: adstatic-sy1
+w
+<?xml version="1.0" encoding="UTF-8"?>
+<cross-domain-policy>
+ <allow-access-from domain="*"/>
+</cross-domain-policy>
