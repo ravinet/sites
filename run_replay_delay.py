@@ -2,11 +2,8 @@ import os
 import sys
 from time import sleep
 
-#link_speeds = [0.2, 0.34199519, 0.58480355, 1, 1.70997595, 2.92401774, 5, 8.54987973, 14.62008869, 25]
-#delays = [rtt / 2 for rtt in [30, 60, 90, 120, 150, 180, 210, 240, 270, 300]]
-
-link_speeds = [5, 25]
-delays = [rtt / 2 for rtt in [30, 90]]
+link_speeds = [0.2, 0.34199519, 0.58480355, 1, 1.70997595, 2.92401774, 5, 8.54987973, 14.62008869, 25]
+delays = [rtt / 2 for rtt in [30, 60, 90, 120, 150, 180, 210, 240, 270, 300]]
 
 site_list = sys.argv[1]
 
