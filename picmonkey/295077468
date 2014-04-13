@@ -1,23 +1,0 @@
-PHTTP54.204.19.234"·
-GET /sync?ssp=fmx HTTP/1.1
-Host: x.bidswitch.net
-Connection: keep-alive
-Accept: image/webp,*/*;q=0.8
-vUser-Agent: Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/31.0.1650.63 Safari/537.36
-þReferer: http://gslbeacon.lijit.com/beacon?viewId=1986887322_73184fd822dc4be29b21fc4ff034ee0f&rand=59&uri=http://www.lijit.com/users/Picmonkey&informer=11611244&type=fpads&loc=http%3A%2F%2Fwww.picmonkey.com%2F&v=1.0&rr=http%3A%2F%2Fwww.picmonkey.com%2F
-$Accept-Encoding: gzip,deflate,sdch
-!Accept-Language: en-US,en;q=0.8
-
-*Î
- HTTP/1.1 302 Moved Temporarily
-~Set-Cookie: tuuid=d2a6da3a-b8f6-4863-83fe-2a2714f02001; path=/; expires=Sun, 10-Jan-2016 16:54:47 GMT; domain=.bidswitch.net
-CSet-Cookie: tuuid=; path=/; expires=Mon, 01-Mar-2004 00:00:00 GMT
-PP3P: CP="NOI DSP COR NID CURa ADMa DEVa PSAa PSDa OUR BUS COM INT OTC PUR STA"
-5Location: http://x.bidswitch.net/ul_cb/sync?ssp=fmx
-(Content-Type: text/html; charset=UTF-8
-4Cache-Control: no-cache, no-store, must-revalidate
-(Expires: Mon, 26 Jul 1997 05:00:00 GMT
-Pragma: no-cache
-Content-Length: 0
-%Date: Fri, 10 Jan 2014 16:54:47 GMT
-
