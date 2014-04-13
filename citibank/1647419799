@@ -1,0 +1,23 @@
+»HTTPS66.117.23.102"Õ
+£GET /m2/citicorpcreditservic/mbox/ajax?mboxHost=online.citibank.com&mboxSession=1397415554079-373646&mboxPage=1397415554079-373646&screenHeight=800&screenWidth=1280&browserWidth=1280&browserHeight=690&browserTimeOffset=-240&colorDepth=24&mboxXDomain=enabled&mbox=cookie_data&mboxTime=1397401154979&profile.pluginRan=true&mboxURL=https%3A%2F%2Fonline.citibank.com%2FUS%2FWelcome.c&mboxReferrer=&mboxVersion=40 HTTP/1.1
+*Host: citicorpcreditservic.tt.omtrdc.net
+Connection: keep-alive
+Accept: image/webp,*/*;q=0.8
+vUser-Agent: Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/31.0.1650.63 Safari/537.36
+3Referer: https://online.citibank.com/US/Welcome.c
+$Accept-Encoding: gzip,deflate,sdch
+!Accept-Language: en-US,en;q=0.8
+MCookie: mboxSession=1397415554079-373646; mboxPC=1397415554079-373646.17_21
+
+*Ÿ
+HTTP/1.1 200 OK
+pragma: no-cache
+-Content-Type: text/JavaScript;charset=UTF-8
+Content-Length: 877
+%Date: Sun, 13 Apr 2014 18:59:14 GMT
+Server: Test & Target
+ï
+var mboxCurrent = mboxFactories.get('default').get('cookie_data',-1);mboxCurrent.setOffer(new mboxOfferAjax('<!-- Offer Id: 87616  -->'));mboxCurrent.getOffer().setOnLoad(function() {
+/*mboxHighlight+ (1of2) v1 ==> Response Plugin*/
+window.ttMETA=(typeof(window.ttMETA)!='undefined')?window.ttMETA:[];window.ttMETA.push({'mbox':'cookie_data','campaign':'','experience':'','offer':''});window.ttMBX=function(x){var mbxList=[];for(i=0;i<ttMETA.length;i++){if(ttMETA[i].mbox==x.getName()){mbxList.push(ttMETA[i])}}return mbxList[x.getId()]}
+});mboxCurrent.loaded();mboxFactories.get('default').getPCId().forceId("1397415554079-373646.17_21");mboxFactories.get('default').get('cookie_data',-1).cancelTimeout();mboxFactories.get('default').get('cookie_data',-1).setOffer(new mboxOfferDefault()).show();mboxFactories.get('default').getPCId().forceId("1397415554079-373646.17_21");
