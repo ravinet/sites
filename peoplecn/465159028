@@ -1,0 +1,61 @@
+PHTTP58.68.146.92"Ž
+VGET /main/s?user=people|homepage|2013juxing05a&db=people&border=0&local=yes HTTP/1.1
+Host: pmm.people.com.cn
+Connection: keep-alive
+TAccept: text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8
+vUser-Agent: Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/31.0.1650.63 Safari/537.36
+$Referer: http://www.people.com.cn/
+$Accept-Encoding: gzip,deflate,sdch
+!Accept-Language: en-US,en;q=0.8
+>Cookie: _weather_ip_c_code=54511; ALLYESID4=080E1587BA515140
+
+*ù
+HTTP/1.1 200 OK
+%Date: Sun, 13 Apr 2014 19:05:45 GMT
+Server: Apache/2.2.22 (Unix)
+P3P: CP="OTI PSA OUR"
+#Cache-Control: no-store, no-cache
+Expires: -1
+Content-Length: 1669
+Connection: close
+Content-Type: text/html
+‡
+<html><head><meta http-equiv="cache-control" content="no-cache"></head><body style="BACKGROUND-COLOR:transparent">
+<SCRIPT LANGUAGE="Javascript">
+ADFHOST4438="http://pmm.people.com.cn";
+ADFCID4438=1064;
+ADFBID4438=4438;
+ADFUSER4438="http://pmm.people.com.cn/c?d=people&i=z1064,163133,4438&k=&p=0&v=945361559&rf=http%3A%2F%2Fwww%2Epeople%2Ecom%2Ecn%2F&u=";
+</SCRIPT>
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title></title>
+	<script src="http://www.people.com.cn/img/2013people/p_libraryad.min.js" type="text/javascript" charset="utf-8"></script>
+        <style type="text/css">
+           body{margin:0;padding:0;}
+           ol,ul,li{list-style:none;margin:0;padding:0;}
+        </style>
+</head>
+<body>
+<div id="banner_1">
+                     <ul>
+                       <li><a href="http://dg.people.com.cn/" target="_blank"><img src="http://www.people.com.cn/adv/dg135900710.jpg" width="135" height="90" border="0" 
+
+alt=""/></a></li>
+<li><a href="http://scnews.newssc.org/system/2014/02/28/013918948.shtml"  target="_blank"><img src="http://www.people.com.cn/adv/sichuan135900303.jpg" width="135" height="90" border="0" 
+
+alt=""/></a></li>
+<li><a href="http://www.cqnews.net/"  target="_blank"><img src="http://www.people.com.cn/adv/chongqing135900801.jpg" width="135" height="90" border="0" alt=""/></a></li>
+<li><a href="http://lps.people.com.cn/"  target="_blank"><img src="http://www.people.com.cn/adv/lps13590.jpg" width="135" height="90" border="0" alt=""/></a></li>
+
+                     </ul>
+</div>
+ <script type="text/javascript">
+window.onload=function(){
+	new ad_Img("banner_1");
+}
+</script>
+</body>
+</html>

@@ -1,0 +1,24 @@
+PHTTP58.68.146.92"Ì
+[GET /main/s?user=people|homepage|2013beitougg&db=people&border=0&local=yes&js=ie HTTP/1.1
+Host: pmm.people.com.cn
+Connection: keep-alive
+Accept: */*
+vUser-Agent: Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/31.0.1650.63 Safari/537.36
+$Referer: http://www.people.com.cn/
+$Accept-Encoding: gzip,deflate,sdch
+!Accept-Language: en-US,en;q=0.8
+>Cookie: _weather_ip_c_code=54511; ALLYESID4=080E1587BA515140
+
+*É
+HTTP/1.1 200 OK
+%Date: Sun, 13 Apr 2014 19:05:45 GMT
+Server: Apache/2.2.22 (Unix)
+P3P: CP="OTI PSA OUR"
+#Cache-Control: no-store, no-cache
+Expires: -1
+Content-Length: 88
+Connection: close
+Content-Type: text/html
+Z
+document.write("<SCRIPT LANGUAGE=\"Javascript\">\n");
+document.write("</SCR"+"IPT>\n");

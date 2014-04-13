@@ -1,0 +1,19 @@
+PHTTP58.68.146.82"¬
+"GET /ip/newsLocation.do HTTP/1.1
+Host: apps.people.com.cn
+Connection: keep-alive
+Accept: */*
+vUser-Agent: Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/31.0.1650.63 Safari/537.36
+$Referer: http://www.people.com.cn/
+$Accept-Encoding: gzip,deflate,sdch
+!Accept-Language: en-US,en;q=0.8
+VCookie: _weather_ip_c_code=54511; ALLYESID4=080E1587BA515140; wdcid=2233f7d12cb93ac3
+
+*î
+HTTP/1.1 200 OK
+Server: nginx/1.2.4
+%Date: Sun, 13 Apr 2014 19:05:47 GMT
+Content-Length: 0
+Connection: close
+mSet-Cookie: _people_ip_new_code=100000; Domain=people.com.cn; Expires=Sun, 13-Apr-2014 20:05:47 GMT; Path=/
+

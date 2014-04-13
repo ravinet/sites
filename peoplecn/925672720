@@ -1,0 +1,23 @@
+PHTTP58.68.146.92"
+UGET /main/s?user=people|homepage|2013juxing06&db=people&border=0&local=yes HTTP/1.1
+Host: pmm.people.com.cn
+Connection: keep-alive
+TAccept: text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8
+vUser-Agent: Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/31.0.1650.63 Safari/537.36
+$Referer: http://www.people.com.cn/
+$Accept-Encoding: gzip,deflate,sdch
+!Accept-Language: en-US,en;q=0.8
+>Cookie: _weather_ip_c_code=54511; ALLYESID4=080E1587BA515140
+
+*¢
+HTTP/1.1 200 OK
+%Date: Sun, 13 Apr 2014 19:05:45 GMT
+Server: Apache/2.2.22 (Unix)
+P3P: CP="OTI PSA OUR"
+#Cache-Control: no-store, no-cache
+Expires: -1
+Content-Length: 431
+Connection: close
+Content-Type: text/html
+±
+<html><head><meta http-equiv="cache-control" content="no-cache"></head><body style="BACKGROUND-COLOR:transparent"><a href="http://pmm.people.com.cn/c?d=people&i=z1058,292484,6588&k=&p=0&v=945342264&rf=http%3A%2F%2Fwww%2Epeople%2Ecom%2Ecn%2F&u=http://www.people.com.cn/32306/383179/index.html" target="_blank"><img src="http://www.people.com.cn/adv/2803700411qiangguo.jpg" width="280" height="370" border=0 alt=""></a></body></html>
