@@ -1,0 +1,53 @@
+PHTTP74.119.118.89" 
+kGET /event?a=9254&v=3.0.0&p0=e%3Dvh&p1=e%3Dexd%26ref%3Dhttp%253A%252F%252Fwww.6pm.com&p2=e%3Ddis HTTP/1.1
+Host: widget.criteo.com
+Connection: keep-alive
+Accept: */*
+vUser-Agent: Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/31.0.1650.63 Safari/537.36
+FReferer: http://d169bbxks24g2u.cloudfront.net/6pm.html?pageType=home
+$Accept-Encoding: gzip,deflate,sdch
+!Accept-Language: en-US,en;q=0.8
+ßCookie: uid=81f8bd6a-94b4-42fd-989f-8078a9466e73; uic=*15DbeOqNLtQxwVvBXFG3gahXCgt7m%2fQvPrQYbwbRRc4WPwa2s2GVnMEiuLSawlHCt; acdc=*1PTJvW5iFWknD%2bLzdvEO256kia1AvJx5%2f0Q8IE2PcNBI%3d; udc=*1AjVT%2bgfw%2f8PyH2Istroh8g%3d%3d
+
+*”
+HTTP/1.1 200 OK
+Cache-Control: no-cache
+Pragma: no-cache
+7Content-Type: application/x-javascript; charset=utf-8
+Expires: -1
+Server: Microsoft-IIS/7.5
+4P3P: CP="NON DSP COR CURa PSA PSD OUR BUS NAV STA"
+ÙSet-Cookie: uic=*1SVhQVjrtIXiJ58Tv6RZ8HKw4VGhYWDy5y18QFlCTwfcpBxKWgV5Bbq27wYsjnKLr6EIsVBBvxlBI6uqxrwZJVaWKE3Ep5HhatwfxwRu07rMQTmu6OqgASsRy3TgKpF%2bp; domain=.criteo.com; expires=Mon, 13-Oct-2014 19:24:18 GMT; path=/
+†Set-Cookie: acdc=*1U8YNslUKwLI1sBj0SBpa1QcOAiHs9cWC5EjWPFIVfoM%3d; domain=.criteo.com; expires=Mon, 13-Oct-2014 19:24:18 GMT; path=/
+wSet-Cookie: udc=*1AjVT%2bgfw%2f8PyH2Istroh8g%3d%3d; domain=.criteo.com; expires=Mon, 13-Oct-2014 19:24:18 GMT; path=/
+%Date: Sun, 13 Apr 2014 19:24:17 GMT
+Content-Length: 918
+˜
+/*<!--*/(function() {
+var qss = '&cb=' + Math.floor(Math.random() * 99999999999);
+try {
+    qss += '&ref=' + encodeURIComponent(document.referrer);
+} catch (e) { }
+try {
+    qss += '&sc_r=' + encodeURIComponent(screen.width + 'x' + screen.height);
+} catch (e) { }
+try {
+    qss += '&sc_d=' + encodeURIComponent(screen.colorDepth);
+} catch (e) { }
+
+var callDis = function(pid, domain) {
+    var qr = (document.location.protocol == 'https:' ? 'https:' : 'http:') + '//' + domain + '/dis/dis.aspx';
+    var p = document.createElement('iframe');
+    p.width = p.height = '0';
+    p.style.display = 'none';
+    p.src = (qr + '?p=' + pid + qss).substring(0, 2000);
+
+    var c = document.getElementById('criteoTagsContainer');
+    if (c) {
+        c.appendChild(p);
+    } else {
+        criteo_q.push({ event: 'appendTag', element: p });
+    }
+};
+callDis(9254, 'dis.ny.us.criteo.com');
+})();/*-->*/
