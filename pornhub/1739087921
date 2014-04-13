@@ -1,0 +1,21 @@
+PHTTP66.254.100.192"ì
+dGET /ads?c=HomePage&refresh_times=2&channel[Searched_Terms]=HomePage&site_id=2&zone_id=32 HTTP/1.1
+Host: ads.trafficjunky.net
+Connection: keep-alive
+TAccept: text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8
+vUser-Agent: Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/31.0.1650.63 Safari/537.36
+1Referer: http://ss.phncdn.com/iframe-1.1.1.html
+$Accept-Encoding: gzip,deflate,sdch
+!Accept-Language: en-US,en;q=0.8
+
+*ú
+HTTP/1.1 200 OK
+%Date: Sun, 13 Apr 2014 19:29:37 GMT
+Content-Type: text/html
+Connection: close
+Content-Length: 670
+>Cache-Control: private, no-cache, no-cache, proxy-revalidate
+Server: Logger/0.1
+~Set-Cookie: tj_UUID=942e5069-f0fe-4dd7-9dde-a01e626248d5; domain=.trafficjunky.net; path=/; Expires=Wed Apr  8 15:29:37 2015
+ 
+<HTML><HEAD><TITLE>Ad delivery system</TITLE><meta name="keywords" content="28009" def="0" z_id="32" ad_id="154527" qw="1" isave="no" /> <meta name="description" content="" /> <style type="text/css"><!-- a img   { border: 0; } body    { margin: 0; padding: 0; text-align: center;} --> </style> </HEAD><BODY style="background-color:transparent;"><iframe id="32_1397417377" name="32_1397417377" src="http://ads2.contentabc.com/ads?spot_id=4206&adtool_keyword=HomePage+HomePage" width="315" height="300" scrolling="no" frameborder="0" allowtransparency="true" marginwidth="0" marginheight="0" z_id="32" c_id="28009"  ad_id="154527" def="0" qw="1" ></iframe>  </BODY></HTML>
