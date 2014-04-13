@@ -1,19 +1,0 @@
-»HTTPS66.117.23.102"Õ
-£GET /m2/citicorpcreditservic/mbox/ajax?mboxHost=online.citibank.com&mboxSession=1395697074223-377532&mboxPage=1395697074223-377532&screenHeight=800&screenWidth=1280&browserWidth=1280&browserHeight=690&browserTimeOffset=-240&colorDepth=24&mboxXDomain=enabled&mbox=cookie_data&mboxTime=1395682675253&profile.pluginRan=true&mboxURL=https%3A%2F%2Fonline.citibank.com%2FUS%2FWelcome.c&mboxReferrer=&mboxVersion=40 HTTP/1.1
-*Host: citicorpcreditservic.tt.omtrdc.net
-Connection: keep-alive
-Accept: image/webp,*/*;q=0.8
-vUser-Agent: Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/31.0.1650.63 Safari/537.36
-3Referer: https://online.citibank.com/US/Welcome.c
-$Accept-Encoding: gzip,deflate,sdch
-!Accept-Language: en-US,en;q=0.8
-MCookie: mboxSession=1395697074223-377532; mboxPC=1395697074223-377532.17_14
-
-*Ž
-HTTP/1.1 200 OK
-2Content-Type: text/JavaScript;charset=ISO-8859-1
-Content-Length: 235
-%Date: Mon, 24 Mar 2014 21:37:55 GMT
-Server: Test & Target
-í
-mboxFactories.get('default').get('cookie_data',-1).cancelTimeout();mboxFactories.get('default').get('cookie_data',-1).setOffer(new mboxOfferDefault()).show();mboxFactories.get('default').getPCId().forceId("1395697074223-377532.17_14");
