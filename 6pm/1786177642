@@ -1,23 +1,0 @@
-PHTTP
-18.7.20.70"ˆ
-FGET /p?c1=8&c2=2101&c3=1234567891234567891&c15=&cv=2.0&cj=1 HTTP/1.1
-Host: b.scorecardresearch.com
-Connection: keep-alive
-Accept: image/webp,*/*;q=0.8
-vUser-Agent: Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/31.0.1650.63 Safari/537.36
-Referer: http://www.6pm.com/
-$Accept-Encoding: gzip,deflate,sdch
-!Accept-Language: en-US,en;q=0.8
-
-*ß
- HTTP/1.1 302 Moved Temporarily
-Content-Length: 0
-bLocation: http://b.scorecardresearch.com/p2?c1=8&c2=2101&c3=1234567891234567891&c15=&cv=2.0&cj=1
-%Date: Thu, 09 Jan 2014 21:46:51 GMT
-Connection: keep-alive
-}Set-Cookie: UID=a6e8a58-18.7.20.70-1389304011; expires=Wed, 30-Dec-2015 21:46:51 GMT; path=/; domain=.scorecardresearch.com
-kSet-Cookie: UIDR=1389304011; expires=Wed, 30-Dec-2015 21:46:51 GMT; path=/; domain=.scorecardresearch.com
-Pragma: no-cache
-(Expires: Mon, 01 Jan 1990 00:00:00 GMT
-SCache-Control: private, no-cache, no-cache=Set-Cookie, no-store, proxy-revalidate
-
