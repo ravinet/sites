@@ -1,24 +1,0 @@
-»HTTPS23.202.205.95"”
-VGET /fc.php?script=profileTargetingCommon:logBeacon&cb=[timestamp]&pid=1040 HTTP/1.1
-Host: ads.undertone.com
-Connection: keep-alive
-Accept: image/webp,*/*;q=0.8
-vUser-Agent: Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/31.0.1650.63 Safari/537.36
-ŸReferer: http://2206715.fls.doubleclick.net/activityi;src=2206715;type=starb723;cat=starb998;ord=58117237;~oref=http%3A%2F%2Fwww.starbucks.com%2F?&_dc_ck=try
-$Accept-Encoding: gzip,deflate,sdch
-!Accept-Language: en-US,en;q=0.8
-
-*‚
- HTTP/1.1 302 Moved Temporarily
-Server: Apache
-Pragma: no-cache
--Cache-Control: private, max-age=0, no-cache
-(Expires: Mon, 26 Jul 1997 05:00:00 GMT
-YP3P: policyref="/w3c/p3p.xml",  CP="NOI DSP COR NID CURa DEVa PSDo OUR BUS UNI COM NAV"
-lLocation: https://segment-pixel.invitemedia.com/pixel?pixelID=17854&partnerID=73&clientID=3178&key=segment
-Content-Length: 0
-%Date: Fri, 10 Jan 2014 16:42:20 GMT
-Connection: keep-alive
-bSet-Cookie: UTID=b3ad13c7de214ef19449b80a87ddaa04; expires=Sun, 11-Jan-2015 16:42:20 GMT; path=/
-XSet-Cookie: UTPROFILES=16080%231040%3A1; expires=Thu, 10-Apr-2014 16:42:20 GMT; path=/
-
