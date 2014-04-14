@@ -1,21 +1,0 @@
-PHTTP74.209.254.70"æ
-KGET /rubicon/match?nuid=6f4d04796d4fd0c66ad87c9436c15c7f7bf6661b HTTP/1.1
- Host: rubicon-match.dotomi.com
-Connection: keep-alive
-Accept: image/webp,*/*;q=0.8
-vUser-Agent: Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/31.0.1650.63 Safari/537.36
-vReferer: http://tap2-cdn.rubiconproject.com/partner/scripts/rubicon/emily.html?rtb_ext=1&pc=10452/23631&geo=na&co=us
-$Accept-Encoding: gzip,deflate,sdch
-!Accept-Language: en-US,en;q=0.8
-
-*Ü
-HTTP/1.1 302 Found
-Server: nginx/1.4.3
-%Date: Thu, 09 Jan 2014 00:22:21 GMT
-Transfer-Encoding: chunked
-Connection: keep-alive
-aSet-Cookie: dtm_test=7e9e383d12c61c8a; Expires=Thu, 9-Jan-2014 00:22:51 GMT; Domain=.dotomi.com
-bLocation: /rubicon/match?dtm_test=7e9e383d12c61c8a&nuid=6f4d04796d4fd0c66ad87c9436c15c7f7bf6661b
-
-0
-
