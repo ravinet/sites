@@ -1,0 +1,19 @@
+PHTTP50.19.236.43"®
+–GET /v2/profile.redirect?api_key=d8635cdd75eb4f83917f2c953bc214f0&callback_url=http%3A%2F%2Ftap.rubiconproject.com/oz/feeds/bizo/profile%3F HTTP/1.1
+Host: api.bizographics.com
+Connection: keep-alive
+Accept: image/webp,*/*;q=0.8
+vUser-Agent: Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/31.0.1650.63 Safari/537.36
+vReferer: http://tap2-cdn.rubiconproject.com/partner/scripts/rubicon/emily.html?rtb_ext=1&pc=10452/23631&geo=na&co=us
+$Accept-Encoding: gzip,deflate,sdch
+!Accept-Language: en-US,en;q=0.8
+
+*Æ
+HTTP/1.1 302 Found
+%Date: Mon, 14 Apr 2014 00:56:11 GMT
+·Location: http://api.bizographics.com/v2/profile.redirect?api_key=d8635cdd75eb4f83917f2c953bc214f0&callback_url=http%3A%2F%2Ftap.rubiconproject.com/oz/feeds/bizo/profile%3F&3pc=true
+Server: nginx/1.2.0
+‚Set-Cookie: BizoID=40c08752-59e2-42b1-8815-f14f6dc53e01; Domain=.bizographics.com; Expires=Mon, 13-Oct-2014 12:56:11 GMT; Path=/
+Content-Length: 0
+Connection: keep-alive
+

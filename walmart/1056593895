@@ -1,0 +1,34 @@
+PHTTP74.125.226.90"˝
+èGET /pixel?google_nid=cus&google_sc=&google_ula=140602&CriteoUserId=d9becd21-dace-4ed5-aa5f-15c302b33e4f&w_rd=&google_cm=&google_tc= HTTP/1.1
+Host: cm.g.doubleclick.net
+Connection: keep-alive
+Accept: image/webp,*/*;q=0.8
+vUser-Agent: Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/31.0.1650.63 Safari/537.36
+"Referer: http://www.walmart.com/
+$Accept-Encoding: gzip,deflate,sdch
+!Accept-Language: en-US,en;q=0.8
+(Cookie: test_cookie=CheckForPermission
+
+*◊
+
+HTTP/1.1 302 Found
+•P3P: policyref="http://googleads.g.doubleclick.net/pagead/gcn_p3p_.xml", CP="CURa ADMa DEVa TAIo PSAo PSDo OUR IND UNI PUR INT DEM STA PRE COM NAV OTC NOI DSP COR"
+∆Location: http://dis.criteo.com/dis/rtb/google/cookiematch.aspx?id=&CriteoUserId=d9becd21-dace-4ed5-aa5f-15c302b33e4f&w_rd=&google_gid=CAESEGOhiZOU5KC1ylCzxg63MeU&google_cver=1&google_ula=140602,0
+%Date: Mon, 14 Apr 2014 00:56:10 GMT
+Pragma: no-cache
+(Expires: Fri, 01 Jan 1990 00:00:00 GMT
+*Cache-Control: no-cache, must-revalidate
+(Content-Type: text/html; charset=UTF-8
+Server: HTTP server (unknown)
+Content-Length: 403
+!X-XSS-Protection: 1; mode=block
+Alternate-Protocol: 80:quic
+úSet-Cookie: id=228d2d8686020031||t=1397436970|et=730|cs=002213fd485dd071dcb1fcac75; expires=Wed, 13-Apr-2016 00:56:10 GMT; path=/; domain=.doubleclick.net
+bSet-Cookie: test_cookie=; expires=Mon, 21-Jul-2008 23:59:00 GMT; path=/; domain=.doubleclick.net
+ï
+<HTML><HEAD><meta http-equiv="content-type" content="text/html;charset=utf-8">
+<TITLE>302 Moved</TITLE></HEAD><BODY>
+<H1>302 Moved</H1>
+The document has moved
+<A HREF="http://dis.criteo.com/dis/rtb/google/cookiematch.aspx?id=&amp;CriteoUserId=d9becd21-dace-4ed5-aa5f-15c302b33e4f&amp;w_rd=&amp;google_gid=CAESEGOhiZOU5KC1ylCzxg63MeU&amp;google_cver=1&amp;google_ula=140602,0">here</A>.
+</BODY></HTML>

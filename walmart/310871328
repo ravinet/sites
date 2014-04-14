@@ -1,0 +1,18 @@
+PHTTP166.90.142.114"Š
+RGET /tap.gif?tap=wmt-dw&r=beacon.walmart.com&btc=KvphJN34plFJF5-BZnLU0s HTTP/1.1
+Host: dw.wmt.co
+Connection: keep-alive
+Accept: image/webp,*/*;q=0.8
+vUser-Agent: Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/31.0.1650.63 Safari/537.36
+"Referer: http://www.walmart.com/
+$Accept-Encoding: gzip,deflate,sdch
+!Accept-Language: en-US,en;q=0.8
+
+*è
+HTTP/1.1 302 Found
+4Cache-Control: no-store, no-cache, must-revalidate
+VSet-Cookie: dwtc=DmTyqiQGEglJsZAY4Qcn5Q;Path=/;Expires=Sat, 13-Apr-2024 12:56:11 GMT
+(Expires: Thu, 01 Jan 1970 00:00:00 GMT
+Location: http://dw.wmt.co/confirm.gif?tap=wmt-dw&r=beacon.walmart.com&btc=KvphJN34plFJF5-BZnLU0s&dwtc=DmTyqiQGEglJsZAY4Qcn5Q
+Content-Length: 0
+
