@@ -15,4 +15,5 @@ for link_speed in link_speeds:
             for line in f:
                 site = line.split( " " )[0]
                 folder = line.split(" ")[1].strip("\n")
-                os.system( "replayshell /home/ravi/sites/" + folder + " /usr/local/bin/delayshell " + str(delay) + " /usr/local/bin/linkshell /home/ravi/sites/" + str(link_speed) + "Mbps_trace.txt /home/ravi/sites/" + str(link_speed) + "Mbps_trace.txt /usr/bin/python /home/ravi/sites/load_page.py " + site + " " + str(delay) + " " + str(link_speed) + " replay")
+                bdp = float(link_speed) * 1000 * 2 * int(delay)
+                os.system( "replayshell /home/ravi/sites/" + folder + " /usr/local/bin/delayshell " + str(delay) + " /usr/local/bin/linkshell /home/ravi/sites/" + str(link_speed) + "Mbps_trace.txt /home/ravi/sites/" + str(link_speed) + "Mbps_trace.txt " + str(bdp) + " /usr/bin/python /home/ravi/sites/load_page.py " + site + " " + str(delay) + " " + str(link_speed) + " replay")
