@@ -1,0 +1,408 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg
+   xmlns:dc="http://purl.org/dc/elements/1.1/"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:xlink="http://www.w3.org/1999/xlink"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   width="600"
+   height="480"
+   viewBox="0 0 600 480"
+   id="svg2"
+   version="1.1"
+   inkscape:version="0.48.4 r9939"
+   sodipodi:docname="spdy_plateaus.svg">
+  <metadata
+     id="metadata152">
+    <rdf:RDF>
+      <cc:Work
+         rdf:about="">
+        <dc:format>image/svg+xml</dc:format>
+        <dc:type
+           rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+      </cc:Work>
+    </rdf:RDF>
+  </metadata>
+  <defs
+     id="defs150" />
+  <sodipodi:namedview
+     pagecolor="#ffffff"
+     bordercolor="#666666"
+     borderopacity="1"
+     objecttolerance="10"
+     gridtolerance="10"
+     guidetolerance="10"
+     inkscape:pageopacity="0"
+     inkscape:pageshadow="2"
+     inkscape:window-width="1920"
+     inkscape:window-height="1124"
+     id="namedview148"
+     showgrid="false"
+     inkscape:zoom="1.9666667"
+     inkscape:cx="300"
+     inkscape:cy="240"
+     inkscape:window-x="0"
+     inkscape:window-y="24"
+     inkscape:window-maximized="1"
+     inkscape:current-layer="g29" />
+  <title
+     id="title4">Gnuplot</title>
+  <desc
+     id="desc6">Produced by GNUPLOT 4.6 patchlevel 4 </desc>
+  <g
+     id="gnuplot_canvas">
+    <rect
+       x="0"
+       y="0"
+       width="600"
+       height="480"
+       id="rect9"
+       style="fill:none" />
+    <defs
+       id="defs11">
+      <circle
+         id="gpDot"
+         r="0.5"
+         cx="0"
+         cy="0"
+         sodipodi:cx="0"
+         sodipodi:cy="0"
+         sodipodi:rx="0.5"
+         sodipodi:ry="0.5"
+         style="stroke-width:0.5" />
+      <path
+         id="gpPt0"
+         d="M -1,0 H 1 M 0,-1 v 2"
+         inkscape:connector-curvature="0"
+         style="stroke:currentColor;stroke-width:0.222" />
+      <path
+         id="gpPt1"
+         d="M -1,-1 1,1 M 1,-1 -1,1"
+         inkscape:connector-curvature="0"
+         style="stroke:currentColor;stroke-width:0.222" />
+      <path
+         id="gpPt2"
+         d="M -1,0 1,0 M 0,-1 0,1 m -1,-2 2,2 m -2,0 2,-2"
+         inkscape:connector-curvature="0"
+         style="stroke:currentColor;stroke-width:0.222" />
+      <rect
+         id="gpPt3"
+         x="-1"
+         y="-1"
+         width="2"
+         height="2"
+         style="stroke:currentColor;stroke-width:0.222" />
+      <rect
+         id="gpPt4"
+         x="-1"
+         y="-1"
+         width="2"
+         height="2"
+         style="fill:currentColor;stroke:currentColor;stroke-width:0.222" />
+      <circle
+         id="gpPt5"
+         cx="0"
+         cy="0"
+         r="1"
+         sodipodi:cx="0"
+         sodipodi:cy="0"
+         sodipodi:rx="1"
+         sodipodi:ry="1"
+         style="stroke:currentColor;stroke-width:0.222" />
+      <use
+         xlink:href="#gpPt5"
+         id="gpPt6"
+         style="fill:currentColor;stroke:none"
+         x="0"
+         y="0"
+         width="600"
+         height="480" />
+      <path
+         id="gpPt7"
+         d="m 0,-1.33 -1.33,2 2.66,0 z"
+         inkscape:connector-curvature="0"
+         style="stroke:currentColor;stroke-width:0.222" />
+      <use
+         xlink:href="#gpPt7"
+         id="gpPt8"
+         style="fill:currentColor;stroke:none"
+         x="0"
+         y="0"
+         width="600"
+         height="480" />
+      <use
+         xlink:href="#gpPt7"
+         id="gpPt9"
+         transform="scale(-1,-1)"
+         style="stroke:currentColor"
+         x="0"
+         y="0"
+         width="600"
+         height="480" />
+      <use
+         xlink:href="#gpPt9"
+         id="gpPt10"
+         style="fill:currentColor;stroke:none"
+         x="0"
+         y="0"
+         width="600"
+         height="480" />
+      <use
+         xlink:href="#gpPt3"
+         id="gpPt11"
+         transform="matrix(0.70710678,0.70710678,-0.70710678,0.70710678,0,0)"
+         style="stroke:currentColor"
+         x="0"
+         y="0"
+         width="600"
+         height="480" />
+      <use
+         xlink:href="#gpPt11"
+         id="gpPt12"
+         style="fill:currentColor;stroke:none"
+         x="0"
+         y="0"
+         width="600"
+         height="480" />
+    </defs>
+    <g
+       style="color:#ffffff;fill:none;stroke:currentColor;stroke-width:1;stroke-linecap:round;stroke-linejoin:round"
+       id="g27" />
+    <g
+       style="color:#000000;fill:none;stroke:currentColor;stroke-width:1;stroke-linecap:round;stroke-linejoin:round"
+       id="g29">
+      <path
+         d="m 88.5,422.4 9,0 m 477.5,0 -9,0 h 0.01"
+         id="path31"
+         inkscape:connector-curvature="0"
+         style="stroke:#000000" />
+      <g
+         transform="translate(80.2,428.8)"
+         style="font-size:21.25px;text-anchor:end;fill:#000000;stroke:none;font-family:Arial"
+         id="g33">
+        <text
+           id="text35">0</text>
+      </g>
+      <path
+         d="m 88.5,354.3 9,0 m 477.5,0 -9,0 h 0.01"
+         id="path37"
+         inkscape:connector-curvature="0"
+         style="stroke:#000000" />
+      <g
+         transform="translate(86.2,360.7)"
+         style="font-size:21.25px;text-anchor:end;fill:#000000;stroke:none;font-family:Arial"
+         id="g39">
+        <text
+           id="text41">10000</text>
+      </g>
+      <path
+         d="m 88.5,286.3 9,0 m 477.5,0 -9,0 h 0.01"
+         id="path43"
+         inkscape:connector-curvature="0"
+         style="stroke:#000000" />
+      <g
+         transform="translate(86.2,292.7)"
+         style="font-size:21.25px;text-anchor:end;fill:#000000;stroke:none;font-family:Arial"
+         id="g45">
+        <text
+           id="text47">20000</text>
+      </g>
+      <path
+         d="m 88.5,218.2 9,0 m 477.5,0 -9,0 h 0.01"
+         id="path49"
+         inkscape:connector-curvature="0"
+         style="stroke:#000000" />
+      <g
+         transform="translate(86.2,224.6)"
+         style="font-size:21.25px;text-anchor:end;fill:#000000;stroke:none;font-family:Arial"
+         id="g51">
+        <text
+           id="text53">30000</text>
+      </g>
+      <path
+         d="m 88.5,150.1 9,0 m 477.5,0 -9,0 h 0.01"
+         id="path55"
+         inkscape:connector-curvature="0"
+         style="stroke:#000000" />
+      <g
+         transform="translate(86.2,156.5)"
+         style="font-size:21.25px;text-anchor:end;fill:#000000;stroke:none;font-family:Arial"
+         id="g57">
+        <text
+           id="text59">40000</text>
+      </g>
+      <path
+         d="m 88.5,422.4 0,-9 m 0,-263.3 0,9 h 0.01"
+         id="path61"
+         inkscape:connector-curvature="0"
+         style="stroke:#000000" />
+      <g
+         transform="translate(88.5,446.8)"
+         style="font-size:21.25px;text-anchor:middle;fill:#000000;stroke:none;font-family:Arial"
+         id="g63">
+        <text
+           id="text65">0</text>
+      </g>
+      <path
+         d="m 185.8,422.4 0,-9 m 0,-263.3 0,9 h 0.01"
+         id="path67"
+         inkscape:connector-curvature="0"
+         style="stroke:#000000" />
+      <g
+         transform="translate(185.8,446.8)"
+         style="font-size:21.25px;text-anchor:middle;fill:#000000;stroke:none;font-family:Arial"
+         id="g69">
+        <text
+           id="text71">5</text>
+      </g>
+      <path
+         d="m 283.1,422.4 0,-9 m 0,-263.3 0,9 h 0.01"
+         id="path73"
+         inkscape:connector-curvature="0"
+         style="stroke:#000000" />
+      <g
+         transform="translate(283.1,446.8)"
+         style="font-size:21.25px;text-anchor:middle;fill:#000000;stroke:none;font-family:Arial"
+         id="g75">
+        <text
+           id="text77">10</text>
+      </g>
+      <path
+         d="m 380.4,422.4 0,-9 m 0,-263.3 0,9 h 0.01"
+         id="path79"
+         inkscape:connector-curvature="0"
+         style="stroke:#000000" />
+      <g
+         transform="translate(380.4,446.8)"
+         style="font-size:21.25px;text-anchor:middle;fill:#000000;stroke:none;font-family:Arial"
+         id="g81">
+        <text
+           id="text83">15</text>
+      </g>
+      <path
+         d="m 477.7,422.4 0,-9 m 0,-263.3 0,9 h 0.01"
+         id="path85"
+         inkscape:connector-curvature="0"
+         style="stroke:#000000" />
+      <g
+         transform="translate(477.7,446.8)"
+         style="font-size:21.25px;text-anchor:middle;fill:#000000;stroke:none;font-family:Arial"
+         id="g87">
+        <text
+           id="text89">20</text>
+      </g>
+      <path
+         d="m 575,422.4 0,-9 m 0,-263.3 0,9 h 0.01"
+         id="path91"
+         inkscape:connector-curvature="0"
+         style="stroke:#000000" />
+      <g
+         transform="translate(575,446.8)"
+         style="font-size:21.25px;text-anchor:middle;fill:#000000;stroke:none;font-family:Arial"
+         id="g93">
+        <text
+           id="text95">25</text>
+      </g>
+      <path
+         d="m 88.5,150.1 0,272.3 486.5,0 0,-272.3 -486.5,0 z m 0,0 h 0.01"
+         id="path97"
+         inkscape:connector-curvature="0"
+         style="stroke:#000000" />
+      <g
+         transform="matrix(0,-1,1,0,17.5,286.3)"
+         style="font-size:21.25px;text-anchor:middle;fill:#000000;stroke:none;font-family:Arial"
+         id="g99">
+        <text
+           id="text101">Median Page Load Time (ms)</text>
+      </g>
+      <g
+         transform="translate(331.7,473.8)"
+         style="font-size:21.25px;text-anchor:middle;fill:#000000;stroke:none;font-family:Arial"
+         id="g103">
+        <text
+           id="text105">Link Speed (Mbits/sec)</text>
+      </g>
+      <g
+         transform="translate(331.7,131.3)"
+         style="font-size:27.5px;text-anchor:middle;fill:#000000;stroke:none;font-family:Arial"
+         id="g107">
+        <text
+           id="text109">mod_spdy</text>
+      </g>
+    </g>
+    <g
+       id="gnuplot_plot_1">
+      <title
+         id="title112">gnuplot_plot_1</title>
+      <g
+         style="color:#ff0000;fill:none;stroke:currentColor;stroke-width:1;stroke-linecap:round;stroke-linejoin:round"
+         id="g114">
+        <g
+           transform="translate(507.9,180.5)"
+           style="font-size:26.25px;text-anchor:end;fill:#000000;stroke:none;font-family:Arial"
+           id="g116">
+          <text
+             id="text118">30 ms min RTT</text>
+        </g>
+        <path
+           d="m 516.2,172.6 42.2,0 m -466,60.8 2.8,85.4 4.7,43.9 8.1,21.6 13.8,13 23.6,6.4 40.4,4.4 69.1,1.2 118.1,0.9 202,0 h 0.01"
+           id="path120"
+           inkscape:connector-curvature="0" />
+      </g>
+    </g>
+    <g
+       id="gnuplot_plot_2">
+      <title
+         id="title123">gnuplot_plot_2</title>
+      <g
+         style="color:#008000;fill:none;stroke:currentColor;stroke-width:1;stroke-linecap:round;stroke-linejoin:round"
+         id="g125">
+        <g
+           transform="translate(507.9,207.5)"
+           style="font-size:26.25px;text-anchor:end;fill:#000000;stroke:none;font-family:Arial"
+           id="g127">
+          <text
+             id="text129">120 ms min RTT</text>
+        </g>
+        <path
+           d="m 516.2,199.6 42.2,0 m -464.7,-49.5 1.5,127.7 4.7,60.7 8.1,25.3 13.8,17.3 23.6,8.5 40.4,4.1 69.1,1.4 118.1,0.7 202,0.2 h 0.01"
+           id="path131"
+           inkscape:connector-curvature="0"
+           style="stroke-dasharray:5, 8" />
+      </g>
+    </g>
+    <g
+       id="gnuplot_plot_3">
+      <title
+         id="title134">gnuplot_plot_3</title>
+      <g
+         style="color:#0000ff;fill:none;stroke:currentColor;stroke-width:1;stroke-linecap:round;stroke-linejoin:round"
+         id="g136">
+        <g
+           transform="translate(507.9,234.5)"
+           style="font-size:26.25px;text-anchor:end;fill:#000000;stroke:none;font-family:Arial"
+           id="g138">
+          <text
+             id="text140">300 ms min RTT</text>
+        </g>
+        <path
+           d="m 516.2,226.6 42.2,0 m -466,37.5 2.8,45.2 4.7,37.1 8.1,22.3 13.8,3.4 23.6,4.3 40.4,2.3 69.1,1.8 118.1,0.3 202,-2.2 h 0.01"
+           id="path142"
+           inkscape:connector-curvature="0"
+           style="stroke-dasharray:2, 4" />
+      </g>
+    </g>
+    <g
+       style="color:#000000;fill:none;stroke:currentColor;stroke-width:1;stroke-linecap:round;stroke-linejoin:round"
+       id="g144">
+      <path
+         d="m 88.5,150.1 0,272.3 486.5,0 0,-272.3 -486.5,0 z m 0,0 h 0.01"
+         id="path146"
+         inkscape:connector-curvature="0"
+         style="stroke:#000000" />
+    </g>
+  </g>
+</svg>

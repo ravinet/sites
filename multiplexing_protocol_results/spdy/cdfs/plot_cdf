@@ -1,0 +1,24 @@
+set terminal svg size 640, 513
+set xlabel "Page Load Time (ms)"
+set ylabel "Cumulative Proportion"
+#set logscale x
+#set logscale y
+set yrange[0:1]
+set xrange[1: 20000]
+#set yrange[1:160000] 
+set xtics 5000
+set ytics 0.25
+
+set key bottom right
+
+set style data lines
+set terminal svg dashed rounded
+
+set output "quic1_verizon.svg"
+plot "cubic_verizon_30.txt" using 1:2 with lines lw 1 linecolor rgb "red" title "Cubic 30 ms min RTT", \
+"cubic_verizon_120.txt" using 1:2 with lines lw 1 linecolor rgb "red" title "Cubic 120 ms min RTT", \
+"cubic_verizon_300.txt" using 1:2 with lines lw 1 linecolor rgb "red" title "Cubic 300 ms min RTT", \
+"sprout_verizon_30.txt" using 1:2 with lines lw 1 linecolor rgb "blue" title "Sprout 30 ms min RTT", \
+"sprout_verizon_120.txt" using 1:2 with lines lw 1 linecolor rgb "blue" title "Sprout 120 ms min RTT", \
+"sprout_verizon_300.txt" using 1:2 with lines lw 1 linecolor rgb "blue" title "Sprout 300 ms min RTT", \
+

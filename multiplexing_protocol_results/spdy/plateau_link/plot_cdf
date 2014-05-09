@@ -1,0 +1,20 @@
+set terminal svg size 640, 513
+set xlabel "Minimum RTT (ms)"
+set ylabel "Median Page Load Time (ms)"
+
+set style data lines
+set terminal svg dashed rounded
+
+#set logscale x
+set xrange[0:300]
+set yrange[1: 15000]
+set xtics 60
+set ytics 3000
+
+set key left top
+
+set output "spdy_plateaus_link.svg"
+#set title "Page Load Time as function of Link Speed (RTT=30ms)"
+plot "median_1.txt" using 1:2 with lines lw 1 title "1 Mbit/sec", \
+"median_14.txt" using 1:2 with lines lw 1 title "14 Mbit/sec", \
+"median_25.txt" using 1:2 with lines lw 1 title "25 Mbit/sec"

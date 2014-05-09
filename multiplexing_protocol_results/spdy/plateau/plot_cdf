@@ -1,0 +1,33 @@
+set terminal svg size 640,900 dashed rounded
+set xlabel "Link Speed (Mbits/sec)"
+set ylabel "Median Page Load Time (ms)"
+
+set style data lines
+set terminal svg dashed rounded
+
+#set logscale x
+set xrange[0:25]
+set yrange[1:40000]
+set xtics 5
+set ytics 10000
+
+set size 1, 0.8
+
+set xtics font ",17"
+set ytics font ", 17"
+
+set xlabel font ",17"
+set ylabel font ",17"
+
+set key right top
+
+set key font ",21"
+set style data lines
+set key spacing 1.5
+
+set title "mod_spdy"
+set title font ",22"
+set output "spdy_plateaus.svg"
+plot "median_30.txt" using 1:2 with lines lw 1 title "30 ms min RTT", \
+"median_120.txt" using 1:2 with lines lw 1 title "120 ms min RTT", \
+"median_300.txt" using 1:2 with lines lw 1 title "300 ms min RTT"
